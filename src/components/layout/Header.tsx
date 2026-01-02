@@ -115,14 +115,27 @@ export const Header = () => {
 
             <Link
               to="/about"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === "/about" ? "text-primary" : "text-muted-foreground"
+              }`}
             >
               About
             </Link>
 
             <Link
+              to="/blog"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === "/blog" ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              Blog
+            </Link>
+
+            <Link
               to="/contact"
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === "/contact" ? "text-primary" : "text-muted-foreground"
+              }`}
             >
               Contact
             </Link>
@@ -185,6 +198,13 @@ export const Header = () => {
               </Link>
             ))}
           </div>
+          <Link
+            to="/blog"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            Blog
+          </Link>
           <Button variant="hero" size="lg" className="w-full mt-4">
             Get Free Audit
           </Button>
