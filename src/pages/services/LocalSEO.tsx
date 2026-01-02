@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { ArrowRight, MapPin, Search, Building, Star, FileText, Users } from "lucide-react";
 import localSeoImage from "@/assets/local-seo.png";
 
@@ -187,7 +188,9 @@ const LocalSEO = () => {
         </div>
       </section>
 
-      <FAQSection 
+      <PlatformAdvantagesSection variant="compact" serviceType="local" />
+
+      <FAQSection
         faqs={faqs}
         subtitle="Common questions about our local SEO services and strategies."
       />

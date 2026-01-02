@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings } from "lucide-react";
 import aeoServiceImage from "@/assets/aeo-service.png";
 
@@ -199,7 +200,9 @@ const AEO = () => {
         </div>
       </section>
 
-      <FAQSection 
+      <PlatformAdvantagesSection variant="compact" serviceType="aeo" />
+
+      <FAQSection
         faqs={faqs}
         subtitle="Learn how Answer Engine Optimization helps your brand get cited by AI."
       />

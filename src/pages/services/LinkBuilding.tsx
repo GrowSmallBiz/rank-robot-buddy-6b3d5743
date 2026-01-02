@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield } from "lucide-react";
 import linkBuildingImage from "@/assets/link-building.png";
 
@@ -200,7 +201,9 @@ const LinkBuilding = () => {
         </div>
       </section>
 
-      <FAQSection 
+      <PlatformAdvantagesSection variant="compact" serviceType="linkbuilding" />
+
+      <FAQSection
         faqs={faqs}
         subtitle="Learn about our link building approach and how it drives results."
       />
