@@ -4,12 +4,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import About from "./pages/About";
 import TechnicalSEO from "./pages/services/TechnicalSEO";
 import OnPageSEO from "./pages/services/OnPageSEO";
 import AEO from "./pages/services/AEO";
 import GEO from "./pages/services/GEO";
 import LocalSEO from "./pages/services/LocalSEO";
 import LinkBuilding from "./pages/services/LinkBuilding";
+import PaidMedia from "./pages/services/PaidMedia";
 import FreeAssessment from "./pages/FreeAssessment";
 import HVAC from "./pages/industries/HVAC";
 import Dental from "./pages/industries/Dental";
@@ -29,12 +31,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
           <Route path="/services/technical-seo" element={<TechnicalSEO />} />
           <Route path="/services/on-page-seo" element={<OnPageSEO />} />
           <Route path="/services/aeo" element={<AEO />} />
           <Route path="/services/geo" element={<GEO />} />
           <Route path="/services/local-seo" element={<LocalSEO />} />
           <Route path="/services/link-building" element={<LinkBuilding />} />
+          <Route path="/services/paid-media" element={<PaidMedia />} />
           <Route path="/free-assessment" element={<FreeAssessment />} />
           <Route path="/industries/hvac" element={<HVAC />} />
           <Route path="/industries/dental" element={<Dental />} />
