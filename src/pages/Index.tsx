@@ -6,6 +6,7 @@ import { StatsSection } from "@/components/sections/StatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { CTASection } from "@/components/sections/CTASection";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { ArrowRight, Bot, Search, Globe, MapPin, Link2, BarChart3 } from "lucide-react";
 
 import heroImage from "@/assets/hero-seo-analytics.png";
@@ -273,6 +274,46 @@ const Index = () => {
 
       {/* Testimonials */}
       <TestimonialsSection />
+
+      {/* FAQ Section */}
+      <FAQSection 
+        title="Frequently Asked Questions About AI SEO"
+        subtitle="Get answers to common questions about our AI-powered SEO services and how they can transform your digital presence."
+        faqs={[
+          {
+            question: "What is AI SEO and how does it differ from traditional SEO?",
+            answer: "AI SEO integrates traditional search optimization with Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO). While traditional SEO focuses on ranking in search results, AI SEO ensures your brand is recognized, cited, and recommended by AI platforms like ChatGPT, Gemini, Perplexity, and Claude. It combines technical excellence with entity optimization and structured data to make your content the authoritative source AI systems trust."
+          },
+          {
+            question: "Why do businesses need AI SEO services now?",
+            answer: "With the rapid adoption of AI-powered search and assistants, users increasingly get answers directly from AI without clicking through to websites. Businesses that don't optimize for AI visibility risk becoming invisible to a growing segment of their audience. AI SEO ensures your brand remains discoverable and recommended across both traditional search engines and emerging AI platforms."
+          },
+          {
+            question: "What results can I expect from your AI SEO services?",
+            answer: "Our clients typically see significant improvements in organic traffic, AI citations, and brand visibility within 3-6 months. Results include higher search rankings, increased appearances in AI-generated answers, improved featured snippet capture, and stronger entity recognition by major AI platforms. We provide detailed reporting on both traditional SEO metrics and AI visibility indicators."
+          },
+          {
+            question: "How do you measure success in AI SEO?",
+            answer: "We track a comprehensive set of metrics including traditional SEO KPIs (rankings, traffic, conversions) plus AI-specific indicators like citation frequency in AI responses, entity recognition accuracy, featured snippet ownership, and visibility across AI platforms. Our proprietary monitoring tools track how often and how accurately AI systems reference your brand."
+          },
+          {
+            question: "What's included in your managed AI SEO service?",
+            answer: "Our full-service offering includes technical SEO audits and fixes, on-page optimization, content strategy and creation, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), local SEO, link building, and ongoing performance monitoring. We handle everything from schema implementation to entity optimization, ensuring comprehensive visibility across all search and AI touchpoints."
+          },
+          {
+            question: "How long does it take to see results from AI SEO?",
+            answer: "Initial improvements in technical health and indexation typically appear within 4-6 weeks. Meaningful ranking improvements and increased AI citations usually develop over 3-6 months. Full optimization and authority building is an ongoing process, with compounding benefits as your entity recognition and content authority strengthen over time."
+          },
+          {
+            question: "Do you work with businesses of all sizes?",
+            answer: "Yes, our AI SEO services are designed to scale. We work with growing small businesses, mid-market companies, and enterprises. Our approach is tailored to each client's specific goals, competitive landscape, and resources. Whether you're looking to establish local visibility or dominate a global market, we customize our strategy accordingly."
+          },
+          {
+            question: "How is your approach different from other SEO agencies?",
+            answer: "We're pioneers in the AI SEO space, combining deep technical expertise with cutting-edge understanding of how AI systems discover and cite content. While most agencies still focus solely on traditional rankings, we optimize for the full spectrum of search visibility—including AI platforms that are rapidly becoming primary information sources. Our unified approach ensures you're not just ranking, but being actively recommended by AI."
+          }
+        ]}
+      />
 
       {/* CTA Section */}
       <CTASection />
