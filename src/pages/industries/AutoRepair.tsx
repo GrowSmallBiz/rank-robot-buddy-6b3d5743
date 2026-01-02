@@ -17,6 +17,7 @@ import {
   Wrench
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 
 const benefits = [
   {
@@ -114,6 +115,41 @@ const faqs = [
   {
     question: "How do you help us get more emergency repair calls?",
     answer: "We target high-intent emergency keywords, optimize for mobile searchers, ensure your click-to-call is prominent, and make sure your hours and emergency availability are clearly communicated across all platforms."
+  }
+];
+
+const caseStudies = [
+  {
+    company: "Rodriguez Auto Care",
+    location: "Houston, TX",
+    industry: "Full-Service Auto Repair",
+    challenge: "Losing customers to dealership service centers and national chains. Website wasn't generating enough phone calls despite 20 years of experience.",
+    timeframe: "6 months",
+    metrics: [
+      { label: "Daily Repair Jobs", before: "8-10", after: "22-25", improvement: "+150%" },
+      { label: "Monthly Phone Calls", before: "85", after: "312", improvement: "+267%" },
+      { label: "Emergency Repair Calls", before: "12/mo", after: "48/mo", improvement: "+300%" },
+      { label: "Average Ticket Value", before: "$380", after: "$520", improvement: "+37%" }
+    ],
+    quote: "We went from 8-10 repair jobs a day to consistently 20+. GrowSmallBiz made us the go-to shop in our area.",
+    quoteName: "Tony Rodriguez",
+    quoteRole: "Owner, Rodriguez Auto Care"
+  },
+  {
+    company: "Mitchell's Auto Service",
+    location: "Nashville, TN",
+    industry: "Brake & Transmission Specialists",
+    challenge: "Couldn't compete with big chains for 'brake repair' and 'transmission service' searches. Spending too much on ineffective local ads.",
+    timeframe: "7 months",
+    metrics: [
+      { label: "Brake Service Inquiries", before: "15/mo", after: "68/mo", improvement: "+353%" },
+      { label: "'Brake Repair' Ranking", before: "Page 2", after: "#1", improvement: "Top Spot" },
+      { label: "Transmission Jobs/Month", before: "4", after: "18", improvement: "+350%" },
+      { label: "Ad Spend Eliminated", before: "$2,500/mo", after: "$0/mo", improvement: "-100%" }
+    ],
+    quote: "Finally competing with the big chains. We now rank #1 for 'brake repair' and 'transmission service' in our city.",
+    quoteName: "Steve Mitchell",
+    quoteRole: "General Manager, Mitchell's Auto Service"
   }
 ];
 
@@ -301,6 +337,15 @@ const AutoRepair = () => {
           </div>
         </div>
       </section>
+
+      {/* Case Studies Section */}
+      <CaseStudySection 
+        caseStudies={caseStudies}
+        title="Auto Repair Success Stories"
+        subtitle="See how we've helped shops like yours outrank the chains"
+        ctaLink="/free-assessment?industry=auto"
+        ctaText="Get Results Like These"
+      />
 
       {/* Testimonials Section */}
       <section className="py-24 bg-card/50">

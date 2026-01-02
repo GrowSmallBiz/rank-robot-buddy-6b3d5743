@@ -17,6 +17,7 @@ import {
   Image
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 
 const benefits = [
   {
@@ -114,6 +115,41 @@ const faqs = [
   {
     question: "What makes photography SEO different from regular local SEO?",
     answer: "Photography SEO requires balancing visual portfolio presentation with search optimization, targeting style-based and event-based searches, and managing seasonal demand fluctuations. We specialize in this niche."
+  }
+];
+
+const caseStudies = [
+  {
+    company: "Sarah Williams Photography",
+    location: "San Diego, CA",
+    industry: "Wedding Photography",
+    challenge: "Beautiful portfolio but invisible on Google. Less talented photographers were ranking higher and booking the weddings she wanted.",
+    timeframe: "5 months",
+    metrics: [
+      { label: "Monthly Inquiries", before: "8", after: "42", improvement: "+425%" },
+      { label: "Wedding Bookings/Year", before: "18", after: "48", improvement: "+167%" },
+      { label: "'Wedding Photographer' Rank", before: "Page 3", after: "#1", improvement: "Top Spot" },
+      { label: "Average Package Price", before: "$3,200", after: "$5,800", improvement: "+81%" }
+    ],
+    quote: "I went from struggling to book weddings to having a waitlist. GrowSmallBiz helped me rank #1 for 'wedding photographer' in my city.",
+    quoteName: "Sarah Williams",
+    quoteRole: "Owner, Sarah Williams Photography"
+  },
+  {
+    company: "Chen Creative Studios",
+    location: "Chicago, IL",
+    industry: "Portrait & Commercial Photography",
+    challenge: "Relying too heavily on referrals and social media. Wanted to build a steady stream of organic leads for portrait and headshot sessions.",
+    timeframe: "6 months",
+    metrics: [
+      { label: "Portrait Session Inquiries", before: "12/mo", after: "56/mo", improvement: "+367%" },
+      { label: "Corporate Headshot Clients", before: "3/mo", after: "22/mo", improvement: "+633%" },
+      { label: "Calendar Booked in Advance", before: "35%", after: "85%", improvement: "+143%" },
+      { label: "Revenue Per Month", before: "$8K", after: "$28K", improvement: "+250%" }
+    ],
+    quote: "My inquiry rate tripled. Now I can be selective about the clients I take on instead of chasing every lead.",
+    quoteName: "Marcus Chen",
+    quoteRole: "Lead Photographer, Chen Creative Studios"
   }
 ];
 
@@ -301,6 +337,15 @@ const Photographers = () => {
           </div>
         </div>
       </section>
+
+      {/* Case Studies Section */}
+      <CaseStudySection 
+        caseStudies={caseStudies}
+        title="Photographer Success Stories"
+        subtitle="See how we've helped photographers like you get found and booked"
+        ctaLink="/free-assessment?industry=photographer"
+        ctaText="Get Results Like These"
+      />
 
       {/* Testimonials Section */}
       <section className="py-24 bg-card/50">
