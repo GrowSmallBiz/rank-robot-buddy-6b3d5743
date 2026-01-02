@@ -467,4 +467,55 @@ export const linkBuildingBlogPosts: BlogPost[] = [
   }
 ];
 
+export const paidMediaBlogPosts: BlogPost[] = [
+  {
+    title: "Google Ads for Local Businesses: The 2025 Playbook",
+    excerpt: "Master Google PPC campaigns that generate qualified leads while maximizing every dollar of your ad budget.",
+    category: "Google Ads",
+    author: "Marcus Johnson",
+    date: "Dec 28, 2025",
+    readTime: "9 min read"
+  },
+  {
+    title: "Meta Retargeting: Cut Your Cost Per Lead by 60%",
+    excerpt: "Learn how to build retargeting audiences from SEO traffic and dramatically reduce your advertising costs.",
+    category: "Retargeting",
+    author: "Sarah Mitchell",
+    date: "Dec 24, 2025",
+    readTime: "7 min read"
+  },
+  {
+    title: "Google LSA vs PPC: Which Is Right for Your Business?",
+    excerpt: "Compare Local Service Ads and traditional PPC to find the best advertising strategy for your industry.",
+    category: "Google Ads",
+    author: "David Chen",
+    date: "Dec 20, 2025",
+    readTime: "6 min read"
+  },
+  {
+    title: "TikTok Ads for Local Services: A Beginner's Guide",
+    excerpt: "Discover how service businesses are using TikTok advertising to reach younger demographics and build brand awareness.",
+    category: "TikTok Ads",
+    author: "Emily Rodriguez",
+    date: "Dec 16, 2025",
+    readTime: "8 min read"
+  },
+  {
+    title: "YouTube Advertising: Building Trust Through Video",
+    excerpt: "How to create YouTube ad campaigns that educate prospects and build brand authority before they need your services.",
+    category: "YouTube Ads",
+    author: "Michael Chen",
+    date: "Dec 12, 2025",
+    readTime: "7 min read"
+  },
+  {
+    title: "The Full-Funnel Strategy: SEO + Paid Media for Maximum ROI",
+    excerpt: "Combine organic traffic with strategic retargeting to create a marketing engine that reduces cost per acquisition.",
+    category: "Strategy",
+    author: "Sarah Mitchell",
+    date: "Dec 8, 2025",
+    readTime: "10 min read"
+  }
+];
+
 export default BlogSection;
