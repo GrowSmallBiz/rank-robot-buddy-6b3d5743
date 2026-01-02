@@ -4,6 +4,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import TechnicalSEO from "./pages/services/TechnicalSEO";
+import OnPageSEO from "./pages/services/OnPageSEO";
+import AEO from "./pages/services/AEO";
+import GEO from "./pages/services/GEO";
+import LocalSEO from "./pages/services/LocalSEO";
+import LinkBuilding from "./pages/services/LinkBuilding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -16,7 +22,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/services/technical-seo" element={<TechnicalSEO />} />
+          <Route path="/services/on-page-seo" element={<OnPageSEO />} />
+          <Route path="/services/aeo" element={<AEO />} />
+          <Route path="/services/geo" element={<GEO />} />
+          <Route path="/services/local-seo" element={<LocalSEO />} />
+          <Route path="/services/link-building" element={<LinkBuilding />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
