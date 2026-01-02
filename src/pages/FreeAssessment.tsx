@@ -113,15 +113,15 @@ const FreeAssessment = () => {
   const canProceed = () => {
     switch (currentStep) {
       case 1:
-        return formData.businessType !== "";
-      case 2:
-        return formData.websiteStatus !== "";
-      case 3:
-        return formData.currentMarketing.length > 0 && formData.primaryGoals.length > 0;
-      case 4:
-        return formData.monthlyBudget !== "" && formData.timeline !== "";
-      case 5:
         return formData.businessName && formData.contactName && formData.email && formData.phone;
+      case 2:
+        return formData.businessType !== "";
+      case 3:
+        return formData.websiteStatus !== "";
+      case 4:
+        return formData.currentMarketing.length > 0 && formData.primaryGoals.length > 0;
+      case 5:
+        return formData.monthlyBudget !== "" && formData.timeline !== "";
       default:
         return false;
     }
@@ -164,7 +164,7 @@ const FreeAssessment = () => {
     });
   };
 
-  const stepIcons = [Building2, Globe, Target, Users, Sparkles];
+  const stepIcons = [Users, Building2, Globe, Target, Sparkles];
 
   return (
     <div className="min-h-screen bg-background">
@@ -230,8 +230,96 @@ const FreeAssessment = () => {
 
             {/* Form Card */}
             <div className="bg-card border border-border rounded-2xl p-8 shadow-2xl animate-fade-up delay-200">
-              {/* Step 1: Business Type */}
+              {/* Step 1: Contact Information */}
               {currentStep === 1 && (
+                <div className="space-y-6">
+                  <div>
+                    <h2 className="text-2xl font-display font-bold text-foreground mb-2">
+                      Let's start with your information
+                    </h2>
+                    <p className="text-muted-foreground">
+                      Tell us about yourself so we can send your personalized assessment.
+                    </p>
+                  </div>
+
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <Label htmlFor="contactName" className="text-foreground">
+                        Your Name *
+                      </Label>
+                      <Input
+                        id="contactName"
+                        placeholder="John Smith"
+                        value={formData.contactName}
+                        onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
+                        className="mt-2"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="email" className="text-foreground">
+                        Email Address *
+                      </Label>
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="you@yourbusiness.com"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className="mt-2"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="phone" className="text-foreground">
+                        Phone Number *
+                      </Label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        placeholder="(555) 123-4567"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        className="mt-2"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="businessName" className="text-foreground">
+                        Business Name *
+                      </Label>
+                      <Input
+                        id="businessName"
+                        placeholder="Your Business Name"
+                        value={formData.businessName}
+                        onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
+                        className="mt-2"
+                        required
+                      />
+                    </div>
+
+                    <div className="sm:col-span-2">
+                      <Label htmlFor="websiteUrl" className="text-foreground">
+                        Website URL (optional)
+                      </Label>
+                      <Input
+                        id="websiteUrl"
+                        type="url"
+                        placeholder="https://yourbusiness.com"
+                        value={formData.websiteUrl}
+                        onChange={(e) => setFormData({ ...formData, websiteUrl: e.target.value })}
+                        className="mt-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Step 2: Business Type */}
+              {currentStep === 2 && (
                 <div className="space-y-6">
                   <div>
                     <h2 className="text-2xl font-display font-bold text-foreground mb-2">
@@ -261,8 +349,8 @@ const FreeAssessment = () => {
                 </div>
               )}
 
-              {/* Step 2: Website Status */}
-              {currentStep === 2 && (
+              {/* Step 3: Website Status */}
+              {currentStep === 3 && (
                 <div className="space-y-6">
                   <div>
                     <h2 className="text-2xl font-display font-bold text-foreground mb-2">
@@ -295,27 +383,11 @@ const FreeAssessment = () => {
                       </div>
                     ))}
                   </RadioGroup>
-
-                  {(formData.websiteStatus === "yes-happy" || formData.websiteStatus === "yes-outdated") && (
-                    <div className="pt-4">
-                      <Label htmlFor="websiteUrl" className="text-foreground">
-                        Website URL (optional)
-                      </Label>
-                      <Input
-                        id="websiteUrl"
-                        type="url"
-                        placeholder="https://yourbusiness.com"
-                        value={formData.websiteUrl}
-                        onChange={(e) => setFormData({ ...formData, websiteUrl: e.target.value })}
-                        className="mt-2"
-                      />
-                    </div>
-                  )}
                 </div>
               )}
 
-              {/* Step 3: Current Marketing & Goals */}
-              {currentStep === 3 && (
+              {/* Step 4: Current Marketing & Goals */}
+              {currentStep === 4 && (
                 <div className="space-y-8">
                   <div>
                     <h2 className="text-2xl font-display font-bold text-foreground mb-2">
@@ -373,8 +445,8 @@ const FreeAssessment = () => {
                 </div>
               )}
 
-              {/* Step 4: Budget & Timeline */}
-              {currentStep === 4 && (
+              {/* Step 5: Budget & Timeline */}
+              {currentStep === 5 && (
                 <div className="space-y-8">
                   <div>
                     <h2 className="text-2xl font-display font-bold text-foreground mb-2">
@@ -439,92 +511,18 @@ const FreeAssessment = () => {
                       ))}
                     </RadioGroup>
                   </div>
-                </div>
-              )}
 
-              {/* Step 5: Contact Information */}
-              {currentStep === 5 && (
-                <div className="space-y-6">
-                  <div>
-                    <h2 className="text-2xl font-display font-bold text-foreground mb-2">
-                      Almost there! How can we reach you?
-                    </h2>
-                    <p className="text-muted-foreground">
-                      We'll send your custom SEO assessment within 24 hours.
-                    </p>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="sm:col-span-2">
-                      <Label htmlFor="businessName" className="text-foreground">
-                        Business Name *
-                      </Label>
-                      <Input
-                        id="businessName"
-                        placeholder="Your Business Name"
-                        value={formData.businessName}
-                        onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-                        className="mt-2"
-                        required
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="contactName" className="text-foreground">
-                        Your Name *
-                      </Label>
-                      <Input
-                        id="contactName"
-                        placeholder="John Smith"
-                        value={formData.contactName}
-                        onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
-                        className="mt-2"
-                        required
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="phone" className="text-foreground">
-                        Phone Number *
-                      </Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="(555) 123-4567"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="mt-2"
-                        required
-                      />
-                    </div>
-
-                    <div className="sm:col-span-2">
-                      <Label htmlFor="email" className="text-foreground">
-                        Email Address *
-                      </Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="you@yourbusiness.com"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="mt-2"
-                        required
-                      />
-                    </div>
-
-                    <div className="sm:col-span-2">
-                      <Label htmlFor="additionalInfo" className="text-foreground">
-                        Anything else you'd like us to know? (optional)
-                      </Label>
-                      <Textarea
-                        id="additionalInfo"
-                        placeholder="Tell us about your biggest marketing challenges, current competitors, or specific goals..."
-                        value={formData.additionalInfo}
-                        onChange={(e) => setFormData({ ...formData, additionalInfo: e.target.value })}
-                        className="mt-2 min-h-[100px]"
-                      />
-                    </div>
+                  <div className="pt-4 border-t border-border">
+                    <Label htmlFor="additionalInfo" className="text-foreground">
+                      Anything else you'd like us to know? (optional)
+                    </Label>
+                    <Textarea
+                      id="additionalInfo"
+                      placeholder="Tell us about your biggest marketing challenges, current competitors, or specific goals..."
+                      value={formData.additionalInfo}
+                      onChange={(e) => setFormData({ ...formData, additionalInfo: e.target.value })}
+                      className="mt-2 min-h-[100px]"
+                    />
                   </div>
 
                   <p className="text-sm text-muted-foreground">
