@@ -10,6 +10,7 @@ const services = [
   { name: "Generative Engine Optimization", href: "/services/geo" },
   { name: "Local SEO", href: "/services/local-seo" },
   { name: "Link Building", href: "/services/link-building" },
+  { name: "Paid Media & Advertising", href: "/services/paid-media" },
 ];
 
 const industries = [
