@@ -9,6 +9,15 @@ const services = [
   { name: "Link Building", href: "/services/link-building" },
 ];
 
+const industries = [
+  { name: "HVAC & Plumbing", href: "/industries/hvac" },
+  { name: "Dental Practices", href: "/industries/dental" },
+  { name: "Med Spas", href: "/industries/med-spa" },
+  { name: "Chiropractors", href: "/industries/chiropractor" },
+  { name: "Auto Repair", href: "/industries/auto-repair" },
+  { name: "Photographers", href: "/industries/photographers" },
+];
+
 export const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
@@ -46,29 +55,38 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Industries */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Company</h4>
+            <h4 className="font-display font-semibold text-foreground mb-4">Industries</h4>
             <ul className="space-y-3">
-              <li>
-                <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/case-studies" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Case Studies
-                </Link>
+              {industries.map((industry) => (
+                <li key={industry.href}>
+                  <Link
+                    to={industry.href}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {industry.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-display font-semibold text-foreground mb-4">Get in Touch</h4>
+            <ul className="space-y-3 text-sm text-muted-foreground">
+              <li>hello@growsmallbiz.io</li>
+              <li>1-800-SEO-GROW</li>
+              <li className="pt-4">
+                <div className="flex gap-4">
+                  <a href="#" className="hover:text-primary transition-colors">
+                    LinkedIn
+                  </a>
+                  <a href="#" className="hover:text-primary transition-colors">
+                    Twitter
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

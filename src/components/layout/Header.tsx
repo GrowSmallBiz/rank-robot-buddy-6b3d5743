@@ -12,9 +12,19 @@ const services = [
   { name: "Link Building", href: "/services/link-building" },
 ];
 
+const industries = [
+  { name: "HVAC, Plumbing & Electrical", href: "/industries/hvac" },
+  { name: "Dental Practices", href: "/industries/dental" },
+  { name: "Med Spas & Aesthetics", href: "/industries/med-spa" },
+  { name: "Chiropractors", href: "/industries/chiropractor" },
+  { name: "Auto Repair Shops", href: "/industries/auto-repair" },
+  { name: "Photographers", href: "/industries/photographers" },
+];
+
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const location = useLocation();
 
   return (
@@ -67,6 +77,36 @@ export const Header = () => {
                     className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                   >
                     {service.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Industries Dropdown */}
+            <div className="relative group">
+              <button
+                className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                onMouseEnter={() => setIsIndustriesOpen(true)}
+                onMouseLeave={() => setIsIndustriesOpen(false)}
+              >
+                Industries
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+
+              <div
+                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isIndustriesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                }`}
+                onMouseEnter={() => setIsIndustriesOpen(true)}
+                onMouseLeave={() => setIsIndustriesOpen(false)}
+              >
+                {industries.map((industry) => (
+                  <Link
+                    key={industry.href}
+                    to={industry.href}
+                    className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  >
+                    {industry.name}
                   </Link>
                 ))}
               </div>
@@ -128,6 +168,19 @@ export const Header = () => {
                 className="block pl-4 py-2 text-foreground hover:text-primary"
               >
                 {service.name}
+              </Link>
+            ))}
+          </div>
+          <div className="space-y-2">
+            <p className="text-sm text-muted-foreground font-medium">Industries</p>
+            {industries.map((industry) => (
+              <Link
+                key={industry.href}
+                to={industry.href}
+                onClick={() => setIsOpen(false)}
+                className="block pl-4 py-2 text-foreground hover:text-primary"
+              >
+                {industry.name}
               </Link>
             ))}
           </div>

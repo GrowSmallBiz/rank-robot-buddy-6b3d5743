@@ -11,6 +11,12 @@ import GEO from "./pages/services/GEO";
 import LocalSEO from "./pages/services/LocalSEO";
 import LinkBuilding from "./pages/services/LinkBuilding";
 import FreeAssessment from "./pages/FreeAssessment";
+import HVAC from "./pages/industries/HVAC";
+import Dental from "./pages/industries/Dental";
+import MedSpa from "./pages/industries/MedSpa";
+import Chiropractor from "./pages/industries/Chiropractor";
+import AutoRepair from "./pages/industries/AutoRepair";
+import Photographers from "./pages/industries/Photographers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +36,12 @@ const App = () => (
           <Route path="/services/local-seo" element={<LocalSEO />} />
           <Route path="/services/link-building" element={<LinkBuilding />} />
           <Route path="/free-assessment" element={<FreeAssessment />} />
+          <Route path="/industries/hvac" element={<HVAC />} />
+          <Route path="/industries/dental" element={<Dental />} />
+          <Route path="/industries/med-spa" element={<MedSpa />} />
+          <Route path="/industries/chiropractor" element={<Chiropractor />} />
+          <Route path="/industries/auto-repair" element={<AutoRepair />} />
+          <Route path="/industries/photographers" element={<Photographers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

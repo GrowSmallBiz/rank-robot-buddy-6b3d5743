@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -16,6 +17,7 @@ const businessTypes = [
   { id: "medspa", label: "Med Spa / Aesthetics", icon: "✨" },
   { id: "auto", label: "Auto Repair / Body Shop", icon: "🚗" },
   { id: "chiropractic", label: "Chiropractic / Physical Therapy", icon: "💆" },
+  { id: "photographer", label: "Photography Business", icon: "📷" },
   { id: "legal", label: "Law Firm / Legal Services", icon: "⚖️" },
   { id: "other", label: "Other Local Service", icon: "🏢" },
 ];
@@ -62,6 +64,7 @@ const timeline = [
 
 const FreeAssessment = () => {
   const { toast } = useToast();
+  const [searchParams] = useSearchParams();
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     businessType: "",
@@ -77,6 +80,17 @@ const FreeAssessment = () => {
     phone: "",
     additionalInfo: "",
   });
+
+  // Auto-select industry from URL parameter
+  useEffect(() => {
+    const industry = searchParams.get("industry");
+    if (industry) {
+      const matchingType = businessTypes.find(t => t.id === industry);
+      if (matchingType) {
+        setFormData(prev => ({ ...prev, businessType: industry }));
+      }
+    }
+  }, [searchParams]);
 
   const totalSteps = 5;
 
