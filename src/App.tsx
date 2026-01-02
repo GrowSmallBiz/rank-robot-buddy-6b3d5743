@@ -14,6 +14,7 @@ import GEO from "./pages/services/GEO";
 import LocalSEO from "./pages/services/LocalSEO";
 import LinkBuilding from "./pages/services/LinkBuilding";
 import PaidMedia from "./pages/services/PaidMedia";
+import AISEOHub from "./pages/services/AISEOHub";
 import FreeAssessment from "./pages/FreeAssessment";
 import HVAC from "./pages/industries/HVAC";
 import Dental from "./pages/industries/Dental";
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/services/local-seo" element={<LocalSEO />} />
           <Route path="/services/link-building" element={<LinkBuilding />} />
           <Route path="/services/paid-media" element={<PaidMedia />} />
+          <Route path="/services/ai-seo-hub" element={<AISEOHub />} />
           <Route path="/free-assessment" element={<FreeAssessment />} />
           <Route path="/industries/hvac" element={<HVAC />} />
           <Route path="/industries/dental" element={<Dental />} />
