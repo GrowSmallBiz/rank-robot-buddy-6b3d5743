@@ -19,6 +19,7 @@ import {
   BarChart3
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 
 const benefits = [
   {
@@ -116,6 +117,41 @@ const faqs = [
   {
     question: "What makes your approach different from other SEO agencies?",
     answer: "We specialize exclusively in high-ticket local services and understand the unique needs of HVAC, plumbing, and electrical businesses. Plus, we optimize for AI search and voice assistants—not just traditional Google rankings."
+  }
+];
+
+const caseStudies = [
+  {
+    company: "Thompson HVAC Services",
+    location: "Denver, CO",
+    industry: "HVAC & Heating",
+    challenge: "Losing emergency repair calls to larger franchises who ranked higher on Google. Monthly leads had stagnated at 15-20 calls despite quality service.",
+    timeframe: "6 months",
+    metrics: [
+      { label: "Monthly Service Calls", before: "18", after: "67", improvement: "+272%" },
+      { label: "Google Map Pack Position", before: "#8", after: "#1", improvement: "Top Spot" },
+      { label: "Cost Per Lead", before: "$85", after: "$0", improvement: "Organic" },
+      { label: "Monthly Revenue", before: "$42K", after: "$128K", improvement: "+205%" }
+    ],
+    quote: "We went from 5 calls a day to 25+. GrowSmallBiz transformed our business.",
+    quoteName: "Mike Thompson",
+    quoteRole: "Owner, Thompson HVAC Services"
+  },
+  {
+    company: "AllStar Plumbing & Electric",
+    location: "Austin, TX",
+    industry: "Plumbing & Electrical",
+    challenge: "Spending $4,000/month on HomeAdvisor leads with poor quality. Wanted to build sustainable organic traffic and stop paying per lead.",
+    timeframe: "8 months",
+    metrics: [
+      { label: "Organic Leads/Month", before: "8", after: "94", improvement: "+1,075%" },
+      { label: "Lead Generation Cost", before: "$4,000/mo", after: "$0/mo", improvement: "Eliminated" },
+      { label: "First Page Keywords", before: "3", after: "47", improvement: "+1,467%" },
+      { label: "Emergency Call Volume", before: "12/mo", after: "58/mo", improvement: "+383%" }
+    ],
+    quote: "Finally stopped paying $80 per lead to HomeAdvisor. Now we get better quality leads for free.",
+    quoteName: "Sarah Chen",
+    quoteRole: "Operations Manager, AllStar Plumbing"
   }
 ];
 
@@ -304,6 +340,15 @@ const HVAC = () => {
           </div>
         </div>
       </section>
+
+      {/* Case Studies Section */}
+      <CaseStudySection 
+        caseStudies={caseStudies}
+        title="HVAC & Home Service Success Stories"
+        subtitle="See how we've helped contractors like you dominate local search"
+        ctaLink="/free-assessment?industry=hvac"
+        ctaText="Get Results Like These"
+      />
 
       {/* Testimonials Section */}
       <section className="py-24 bg-card/50">
