@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe } from "lucide-react";
 import technicalSeoImage from "@/assets/technical-seo.png";
 
@@ -235,7 +236,9 @@ const TechnicalSEO = () => {
         </div>
       </section>
 
-      <FAQSection 
+      <PlatformAdvantagesSection variant="compact" serviceType="technical" />
+
+      <FAQSection
         faqs={faqs}
         subtitle="Get answers to common questions about technical SEO services."
       />

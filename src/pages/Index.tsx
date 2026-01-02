@@ -7,6 +7,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { ArrowRight, Bot, Search, Globe, MapPin, Link2, BarChart3, TrendingUp, DollarSign, Clock, Shield, CheckCircle2, XCircle, Flame, Sparkles, Wrench, Heart } from "lucide-react";
 
 import heroImage from "@/assets/hero-seo-analytics.png";
@@ -648,6 +649,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* AI Platform Advantages Section */}
+      <PlatformAdvantagesSection variant="full" />
 
       {/* Services Grid */}
       <section className="py-24 bg-card" id="services">

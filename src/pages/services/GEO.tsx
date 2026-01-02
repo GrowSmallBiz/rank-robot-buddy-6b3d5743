@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain } from "lucide-react";
 import geoServiceImage from "@/assets/geo-service.png";
 
@@ -197,7 +198,9 @@ const GEO = () => {
         </div>
       </section>
 
-      <FAQSection 
+      <PlatformAdvantagesSection variant="compact" serviceType="geo" />
+
+      <FAQSection
         faqs={faqs}
         subtitle="Everything you need to know about Generative Engine Optimization."
       />

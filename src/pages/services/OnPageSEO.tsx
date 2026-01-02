@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search } from "lucide-react";
 import onPageSeoImage from "@/assets/on-page-seo.png";
 
@@ -216,7 +217,9 @@ const OnPageSEO = () => {
         </div>
       </section>
 
-      <FAQSection 
+      <PlatformAdvantagesSection variant="compact" serviceType="onpage" />
+
+      <FAQSection
         faqs={faqs}
         subtitle="Common questions about our on-page SEO services and approach."
       />
