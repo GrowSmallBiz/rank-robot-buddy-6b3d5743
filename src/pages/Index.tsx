@@ -10,7 +10,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
-import { ArrowRight, Bot, Search, Globe, MapPin, Link2, BarChart3, TrendingUp, DollarSign, Clock, Shield, CheckCircle2, XCircle, Flame, Sparkles, Wrench, Heart } from "lucide-react";
+import { ArrowRight, Bot, Search, Globe, MapPin, Link2, BarChart3, TrendingUp, DollarSign, Clock, Shield, CheckCircle2, XCircle, Flame, Sparkles, Wrench, Heart, RefreshCw, Target, Users, Zap } from "lucide-react";
 
 import heroImage from "@/assets/hero-seo-analytics.png";
 import technicalSeoImage from "@/assets/technical-seo.png";
@@ -375,6 +375,142 @@ const Index = () => {
                 </ul>
               </div>
             </div>
+
+            {/* SEO + Retargeting Power Section */}
+            <div className="mt-16 mb-12">
+              <div className="text-center mb-12 animate-fade-up">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-4">
+                  <RefreshCw className="w-4 h-4" />
+                  The Smart Strategy
+                </div>
+                <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+                  SEO + Retargeting: The Full-Funnel Advantage
+                </h3>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Why choose between SEO and ads when they work better together? Use SEO to attract qualified 
+                  visitors for free, then retarget only the interested ones—saving up to 70% on ad costs.
+                </p>
+              </div>
+
+              {/* Conversion Flow Diagram */}
+              <div className="bg-background border border-border rounded-2xl p-8 mb-8 animate-fade-up">
+                <div className="grid lg:grid-cols-5 gap-4 items-center">
+                  {/* Step 1 */}
+                  <div className="text-center p-4">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                      <Search className="w-8 h-8 text-primary" />
+                    </div>
+                    <p className="font-display font-semibold text-foreground text-sm mb-1">SEO Discovery</p>
+                    <p className="text-xs text-muted-foreground">Free organic traffic from Google & AI</p>
+                  </div>
+                  
+                  {/* Arrow */}
+                  <div className="hidden lg:flex items-center justify-center">
+                    <ArrowRight className="w-6 h-6 text-primary" />
+                  </div>
+
+                  {/* Step 2 */}
+                  <div className="text-center p-4">
+                    <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-3">
+                      <Users className="w-8 h-8 text-accent" />
+                    </div>
+                    <p className="font-display font-semibold text-foreground text-sm mb-1">Visitor Tracking</p>
+                    <p className="text-xs text-muted-foreground">Build warm audience (97% leave without converting)</p>
+                  </div>
+                  
+                  {/* Arrow */}
+                  <div className="hidden lg:flex items-center justify-center">
+                    <ArrowRight className="w-6 h-6 text-primary" />
+                  </div>
+
+                  {/* Step 3 */}
+                  <div className="text-center p-4">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                      <Target className="w-8 h-8 text-primary" />
+                    </div>
+                    <p className="font-display font-semibold text-foreground text-sm mb-1">Smart Retargeting</p>
+                    <p className="text-xs text-muted-foreground">Re-engage via Google & Meta ads</p>
+                  </div>
+                </div>
+
+                {/* Flow continuation */}
+                <div className="flex justify-center my-6">
+                  <div className="w-px h-8 bg-border lg:hidden" />
+                  <ArrowRight className="w-6 h-6 text-primary rotate-90 lg:rotate-0 hidden lg:block" />
+                </div>
+
+                <div className="grid lg:grid-cols-3 gap-4 items-center max-w-3xl mx-auto">
+                  {/* Step 4 */}
+                  <div className="text-center p-4 bg-primary/5 rounded-xl border border-primary/20">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center mx-auto mb-3">
+                      <Zap className="w-8 h-8 text-primary" />
+                    </div>
+                    <p className="font-display font-semibold text-foreground text-sm mb-1">Higher Conversions</p>
+                    <p className="text-xs text-muted-foreground">3-5x higher CTR on warm audiences</p>
+                  </div>
+
+                  {/* Arrow */}
+                  <div className="hidden lg:flex items-center justify-center">
+                    <ArrowRight className="w-6 h-6 text-primary" />
+                  </div>
+
+                  {/* Step 5 */}
+                  <div className="text-center p-4 bg-accent/5 rounded-xl border border-accent/20">
+                    <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mx-auto mb-3">
+                      <DollarSign className="w-8 h-8 text-accent" />
+                    </div>
+                    <p className="font-display font-semibold text-foreground text-sm mb-1">Lower Cost Per Lead</p>
+                    <p className="text-xs text-muted-foreground">Pay only to convert interested visitors</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cost Comparison Stats */}
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-6 text-center animate-fade-up">
+                  <p className="text-3xl font-display font-bold text-destructive mb-2">$50-150</p>
+                  <p className="text-sm text-muted-foreground">Avg. Cost Per Lead</p>
+                  <p className="text-xs text-destructive/80 mt-1">Cold Google/Meta Ads</p>
+                </div>
+                <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 text-center animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                  <p className="text-3xl font-display font-bold text-primary mb-2">$15-40</p>
+                  <p className="text-sm text-muted-foreground">Avg. Cost Per Lead</p>
+                  <p className="text-xs text-primary/80 mt-1">Retargeting Warm Visitors</p>
+                </div>
+                <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 text-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                  <p className="text-3xl font-display font-bold text-accent mb-2">$0</p>
+                  <p className="text-sm text-muted-foreground">Cost Per Visit</p>
+                  <p className="text-xs text-accent/80 mt-1">SEO Organic Traffic</p>
+                </div>
+              </div>
+
+              {/* Industry-Specific Retargeting */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-8 animate-fade-up">
+                <h4 className="font-display font-semibold text-foreground text-center mb-6">
+                  Best Retargeting Platforms by Industry
+                </h4>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {[
+                    { industry: "HVAC & Plumbing", platform: "Google Display", reason: "Service-based, urgent intent" },
+                    { industry: "Dental & Med Spa", platform: "Meta (Instagram)", reason: "Visual results, aspirational" },
+                    { industry: "Photographers", platform: "Meta (Instagram)", reason: "Portfolio-driven, visual-first" },
+                    { industry: "Auto Repair", platform: "Google Display", reason: "Reminder-based, local intent" },
+                    { industry: "Chiropractors", platform: "Both Platforms", reason: "Pain-point + wellness lifestyle" },
+                    { industry: "All Industries", platform: "YouTube Ads", reason: "Video testimonials, trust-building" },
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 p-3 bg-background rounded-lg">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <div>
+                        <p className="font-medium text-foreground text-sm">{item.industry}</p>
+                        <p className="text-xs text-primary">{item.platform}</p>
+                        <p className="text-xs text-muted-foreground">{item.reason}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
 
             {/* Bottom CTA */}
             <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-border rounded-2xl p-8 text-center animate-fade-up">
