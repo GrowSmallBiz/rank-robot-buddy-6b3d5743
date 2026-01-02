@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -20,13 +21,17 @@ export const CTASection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-200">
-            <Button variant="hero" size="xl">
-              Get Your Free Audit
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              Schedule a Call
-            </Button>
+            <Link to="/free-assessment">
+              <Button variant="hero" size="xl">
+                Get Your Free Audit
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
+            <Link to="/free-assessment">
+              <Button variant="heroOutline" size="xl">
+                Schedule a Call
+              </Button>
+            </Link>
           </div>
           
           <p className="text-sm text-muted-foreground animate-fade-up delay-300">
