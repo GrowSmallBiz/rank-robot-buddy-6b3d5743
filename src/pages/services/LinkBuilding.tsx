@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
+import { BlogSection, linkBuildingBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield } from "lucide-react";
 import linkBuildingImage from "@/assets/link-building.png";
 
@@ -206,6 +207,14 @@ const LinkBuilding = () => {
       <FAQSection
         faqs={faqs}
         subtitle="Learn about our link building approach and how it drives results."
+      />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={linkBuildingBlogPosts}
+        title="Link Building Insights"
+        subtitle="Expert tips to build authority and scale rankings"
+        showViewAll={false}
       />
 
       <CTASection />

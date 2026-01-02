@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
+import { BlogSection, onPageSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search } from "lucide-react";
 import onPageSeoImage from "@/assets/on-page-seo.png";
 
@@ -222,6 +223,14 @@ const OnPageSEO = () => {
       <FAQSection
         faqs={faqs}
         subtitle="Common questions about our on-page SEO services and approach."
+      />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={onPageSeoBlogPosts}
+        title="On-Page SEO Insights"
+        subtitle="Expert tips to optimize your content for search engines"
+        showViewAll={false}
       />
 
       <CTASection />

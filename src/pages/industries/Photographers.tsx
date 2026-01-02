@@ -18,6 +18,8 @@ import {
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
+import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
+import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
 
 const benefits = [
   {
@@ -165,6 +167,15 @@ const Photographers = () => {
 
       {/* Hero Section */}
       <section className="pt-32 pb-24 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src={photographerHeroImage} 
+            alt="Professional photographer shooting wedding couple" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/85" />
+        </div>
         <div className="absolute inset-0 hero-glow" />
         <div className="absolute top-1/4 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
@@ -388,6 +399,14 @@ const Photographers = () => {
         title="Photographer SEO FAQs"
         subtitle="Common questions from photographers"
         schemaType="FAQPage"
+      />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={photographerBlogPosts}
+        title="Photography SEO Insights"
+        subtitle="Expert tips to help photographers grow their business online"
+        showViewAll={false}
       />
 
       {/* CTA Section */}

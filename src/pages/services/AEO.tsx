@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
+import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings } from "lucide-react";
 import aeoServiceImage from "@/assets/aeo-service.png";
 
@@ -205,6 +206,14 @@ const AEO = () => {
       <FAQSection
         faqs={faqs}
         subtitle="Learn how Answer Engine Optimization helps your brand get cited by AI."
+      />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={aeoBlogPosts}
+        title="AEO Insights"
+        subtitle="Expert tips for optimizing your content for AI answer engines"
+        showViewAll={false}
       />
 
       <CTASection />
