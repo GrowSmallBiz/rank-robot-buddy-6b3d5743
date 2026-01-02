@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
+import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain } from "lucide-react";
 import geoServiceImage from "@/assets/geo-service.png";
 
@@ -203,6 +204,14 @@ const GEO = () => {
       <FAQSection
         faqs={faqs}
         subtitle="Everything you need to know about Generative Engine Optimization."
+      />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={geoBlogPosts}
+        title="GEO Insights"
+        subtitle="Expert tips for optimizing your content for generative AI"
+        showViewAll={false}
       />
 
       <CTASection />

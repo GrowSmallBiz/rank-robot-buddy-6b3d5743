@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
+import { BlogSection, localSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, MapPin, Search, Building, Star, FileText, Users } from "lucide-react";
 import localSeoImage from "@/assets/local-seo.png";
 
@@ -193,6 +194,14 @@ const LocalSEO = () => {
       <FAQSection
         faqs={faqs}
         subtitle="Common questions about our local SEO services and strategies."
+      />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={localSeoBlogPosts}
+        title="Local SEO Insights"
+        subtitle="Expert tips to dominate local search results"
+        showViewAll={false}
       />
 
       <CTASection />

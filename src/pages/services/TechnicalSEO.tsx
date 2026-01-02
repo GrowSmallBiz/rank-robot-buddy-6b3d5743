@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
+import { BlogSection, technicalSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe } from "lucide-react";
 import technicalSeoImage from "@/assets/technical-seo.png";
 
@@ -241,6 +242,14 @@ const TechnicalSEO = () => {
       <FAQSection
         faqs={faqs}
         subtitle="Get answers to common questions about technical SEO services."
+      />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={technicalSeoBlogPosts}
+        title="Technical SEO Insights"
+        subtitle="Expert tips to improve your website's technical foundation"
+        showViewAll={false}
       />
 
       <CTASection />

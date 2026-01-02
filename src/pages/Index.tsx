@@ -9,6 +9,7 @@ import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Bot, Search, Globe, MapPin, Link2, BarChart3, TrendingUp, DollarSign, Clock, Shield, CheckCircle2, XCircle, Flame, Sparkles, Wrench, Heart } from "lucide-react";
 
 import heroImage from "@/assets/hero-seo-analytics.png";
@@ -734,6 +735,14 @@ const Index = () => {
             answer: "We're pioneers in the AI SEO space, combining deep technical expertise with cutting-edge understanding of how AI systems discover and cite content. While most agencies still focus solely on traditional rankings, we optimize for the full spectrum of search visibility—including AI platforms that are rapidly becoming primary information sources. Our unified approach ensures you're not just ranking, but being actively recommended by AI."
           }
         ]}
+      />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={generalBlogPosts}
+        title="Latest SEO Insights"
+        subtitle="Expert tips and strategies to grow your business online"
+        showViewAll={false}
       />
 
       {/* CTA Section */}
