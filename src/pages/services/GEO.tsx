@@ -2,8 +2,44 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
+import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain } from "lucide-react";
 import geoServiceImage from "@/assets/geo-service.png";
+
+const faqs: FAQItem[] = [
+  {
+    question: "What is Generative Engine Optimization (GEO)?",
+    answer: "GEO is the practice of optimizing your content, entities, and technical signals so AI platforms like ChatGPT, Gemini, and Claude can recognize, reference, and surface your brand as an authoritative answer source."
+  },
+  {
+    question: "Why is GEO important for my business?",
+    answer: "As AI-generated responses increasingly replace traditional search clicks, GEO ensures your brand remains visible, properly cited, and trusted across generative AI platforms. Without GEO, your content may never appear in AI-generated answers."
+  },
+  {
+    question: "How does GEO differ from traditional SEO?",
+    answer: "Traditional SEO focuses on rankings in search engine results pages. GEO focuses on AI citations, entity recognition, and generative discovery—capturing new sources of visibility that didn't exist before large language models."
+  },
+  {
+    question: "Which AI platforms benefit from GEO?",
+    answer: "GEO optimization matters for all major generative AI platforms including ChatGPT, Gemini, Claude, Microsoft Copilot, Perplexity, and other LLM-powered tools and assistants."
+  },
+  {
+    question: "What GEO services do you offer?",
+    answer: "Our GEO services include entity optimization, AI-friendly content structuring, advanced schema implementation, E-E-A-T enhancement, AI citation tracking, semantic enrichment, continuous audits, and performance dashboards."
+  },
+  {
+    question: "How is GEO ROI measured?",
+    answer: "We track AI citations, entity visibility, platform-specific references, Share of Voice, Visibility Score, Sentiment analysis, rankings, and search volume to provide enterprise-grade metrics that executives can trust."
+  },
+  {
+    question: "Can GEO work for multi-location or global businesses?",
+    answer: "Yes. Our GEO workflows scale across multiple domains, brands, regions, and languages, ensuring consistent entity optimization and AI visibility across all your markets."
+  },
+  {
+    question: "How does GEO support content marketing and PR?",
+    answer: "By ensuring your brand and content entities are properly structured, authoritative, and easily cited, GEO amplifies the impact of your PR campaigns and content marketing investments."
+  },
+];
 
 const features = [
   {
@@ -160,6 +196,11 @@ const GEO = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection 
+        faqs={faqs}
+        subtitle="Everything you need to know about Generative Engine Optimization."
+      />
 
       <CTASection />
       <Footer />

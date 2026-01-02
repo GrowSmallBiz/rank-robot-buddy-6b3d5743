@@ -2,8 +2,40 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
+import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search } from "lucide-react";
 import onPageSeoImage from "@/assets/on-page-seo.png";
+
+const faqs: FAQItem[] = [
+  {
+    question: "What exactly is on-page SEO?",
+    answer: "On-page SEO involves optimizing elements within your web pages—including content, titles, meta descriptions, headings, and HTML markup—to improve search visibility and user engagement at scale."
+  },
+  {
+    question: "Why should I invest in on-page SEO?",
+    answer: "On-page SEO ensures search engines can properly understand and index your content while providing users with the best possible experience. Even exceptional content will underperform without proper optimization techniques applied."
+  },
+  {
+    question: "How does on-page SEO differ from technical SEO?",
+    answer: "On-page SEO concentrates on content and individual page elements. Technical SEO addresses site-wide performance factors like loading speed, crawlability, security protocols, and server configurations."
+  },
+  {
+    question: "What types of schema markup do you implement?",
+    answer: "We deploy various schema types including Article, FAQ, Product, Local Business, Breadcrumb, Review, and other structured data formats appropriate for your specific pages and business model."
+  },
+  {
+    question: "How do you handle duplicate content issues?",
+    answer: "We perform thorough duplicate content audits, implement canonical tags correctly, set up proper redirects, and consolidate content where needed to preserve and maximize your site's authority."
+  },
+  {
+    question: "What metrics do you track to measure success?",
+    answer: "We monitor keyword rankings, organic traffic, click-through rates, time on page, bounce rates, and conversions. Monthly reports include a prioritized 90-day roadmap with observed impact and strategic recommendations."
+  },
+  {
+    question: "Can on-page SEO work alongside link building?",
+    answer: "Absolutely. Well-optimized pages create a strong foundation that link building efforts can amplify, resulting in more powerful and sustainable ranking improvements."
+  },
+];
 
 const features = [
   {
@@ -183,6 +215,11 @@ const OnPageSEO = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection 
+        faqs={faqs}
+        subtitle="Common questions about our on-page SEO services and approach."
+      />
 
       <CTASection />
       <Footer />

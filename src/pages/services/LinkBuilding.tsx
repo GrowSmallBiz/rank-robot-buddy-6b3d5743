@@ -2,8 +2,44 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
+import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield } from "lucide-react";
 import linkBuildingImage from "@/assets/link-building.png";
+
+const faqs: FAQItem[] = [
+  {
+    question: "What is enterprise link building?",
+    answer: "Enterprise link building focuses on acquiring authoritative, editorially earned backlinks for large and complex websites. It strengthens domain authority, builds brand trust, and improves search visibility across national and global markets."
+  },
+  {
+    question: "Why is link building important for my business?",
+    answer: "High-quality backlinks remain one of the strongest ranking signals in search algorithms. Search engines use them to verify credibility and authority, especially for websites competing in saturated, high-stakes categories."
+  },
+  {
+    question: "How is link building different from on-page SEO?",
+    answer: "On-page SEO enhances your content quality and technical structure. Link building elevates your off-site authority by earning trusted endorsements from reputable publishers, industry sites, and media outlets."
+  },
+  {
+    question: "What types of links do you build?",
+    answer: "We focus exclusively on editorial, contextual backlinks from authoritative, brand-safe domains. We never use private blog networks (PBNs), link farms, or high-risk link schemes that could harm your site."
+  },
+  {
+    question: "Do I need link building if I already publish quality content?",
+    answer: "Yes. Content alone rarely ranks in competitive markets. Link building provides the external validation and authority your content needs to win top positions and maintain visibility against competitors."
+  },
+  {
+    question: "Can you help remove toxic backlinks?",
+    answer: "Absolutely. We identify toxic or risky backlinks in your profile, manage disavow files, and help protect your site from harmful link signals that could trigger penalties."
+  },
+  {
+    question: "How do you measure link building success?",
+    answer: "We track referring domains, domain authority metrics, organic visibility improvements, competitive share of voice, referral traffic, and conversions driven by off-site placements."
+  },
+  {
+    question: "Do you follow Google's link building guidelines?",
+    answer: "Yes. We exclusively use white-hat outreach and digital PR strategies aligned with Google's webmaster guidelines for safe, sustainable, long-term growth without penalty risk."
+  },
+];
 
 const features = [
   {
@@ -163,6 +199,11 @@ const LinkBuilding = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection 
+        faqs={faqs}
+        subtitle="Learn about our link building approach and how it drives results."
+      />
 
       <CTASection />
       <Footer />
