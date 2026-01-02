@@ -2,8 +2,44 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
+import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings } from "lucide-react";
 import aeoServiceImage from "@/assets/aeo-service.png";
+
+const faqs: FAQItem[] = [
+  {
+    question: "What is Answer Engine Optimization (AEO)?",
+    answer: "AEO is the practice of structuring your content, entities, and technical elements so that AI platforms like ChatGPT, Google AI Overviews, and Perplexity recognize, cite, and surface your brand as the authoritative answer to user queries."
+  },
+  {
+    question: "Why does my business need AEO?",
+    answer: "As AI-generated answers increasingly replace traditional search results, AEO ensures your brand maintains visibility, authority, and engagement within AI-driven search experiences. Without AEO, you risk becoming invisible in this new paradigm."
+  },
+  {
+    question: "How is AEO different from traditional SEO?",
+    answer: "Traditional SEO focuses on earning high rankings in search results. AEO focuses on being selected and cited by AI systems when they generate answers. Both are now essential for capturing traffic across all search modalities."
+  },
+  {
+    question: "Which AI platforms require AEO optimization?",
+    answer: "AEO is crucial for generative AI platforms including ChatGPT, Google AI Overviews, Perplexity, Microsoft Copilot, Gemini, Claude, and voice assistants that rely on large language models."
+  },
+  {
+    question: "What specific AEO services do you provide?",
+    answer: "We offer comprehensive AEO services including content optimization for AI, schema and structured data implementation, entity alignment, AI citation tracking, Q&A and snippet creation, technical AI SEO, continuous audits, and performance dashboards."
+  },
+  {
+    question: "How do you measure AI visibility and success?",
+    answer: "We track enterprise-grade metrics including AI Share of Voice (how often your brand appears in AI answers), Visibility Score (overall LLM presence), and Sentiment Analysis (tone of AI-generated references). These provide clear insight into your AI performance."
+  },
+  {
+    question: "How quickly can I expect to see AEO results?",
+    answer: "Results vary based on your site size and content depth. Continuous AEO optimization ensures your brand remains visible, cited, and authoritative as AI platforms evolve their algorithms and training data."
+  },
+  {
+    question: "Can AEO integrate with my existing SEO strategy?",
+    answer: "Yes, AEO complements traditional SEO by ensuring your high-ranking content is also optimized for AI discovery. This dual approach protects your visibility across both traditional search and AI platforms."
+  },
+];
 
 const features = [
   {
@@ -162,6 +198,11 @@ const AEO = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection 
+        faqs={faqs}
+        subtitle="Learn how Answer Engine Optimization helps your brand get cited by AI."
+      />
 
       <CTASection />
       <Footer />

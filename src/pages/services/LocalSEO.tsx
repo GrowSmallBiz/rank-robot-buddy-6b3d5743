@@ -2,8 +2,44 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
+import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ArrowRight, MapPin, Search, Building, Star, FileText, Users } from "lucide-react";
 import localSeoImage from "@/assets/local-seo.png";
+
+const faqs: FAQItem[] = [
+  {
+    question: "What is Local SEO?",
+    answer: "Local SEO optimizes your business's online presence to attract customers in specific geographic areas. It focuses on Google Business Profiles, local citations, customer reviews, and on-page signals to improve visibility in local search results and map packs."
+  },
+  {
+    question: "Why does my business need Local SEO?",
+    answer: "Local SEO ensures your business appears prominently when nearby customers search for your products or services. It drives foot traffic, increases phone calls and leads, and helps you outrank local competitors in your area."
+  },
+  {
+    question: "How is Local SEO different from general SEO?",
+    answer: "General SEO targets national or global search visibility. Local SEO focuses on hyper-local audiences by emphasizing location-based ranking signals like map listings, local citations, reviews, and geo-targeted content."
+  },
+  {
+    question: "What's included in your Local SEO services?",
+    answer: "Our Local SEO packages include Google Business Profile optimization, local citation building and management, review acquisition and reputation management, location-based content creation, local link building, and comprehensive reporting dashboards."
+  },
+  {
+    question: "How do you handle Local SEO for my business?",
+    answer: "We follow a structured workflow: Audit → Google Business Profile Optimization → Local Listings & Citations → On-Page Optimization → Review Management → Continuous Monitoring & Reporting."
+  },
+  {
+    question: "What metrics do you track for Local SEO success?",
+    answer: "We monitor local search rankings, map pack visibility, customer actions (calls, direction requests, website clicks), website traffic from local searches, and conversions to provide clear insights into your local performance."
+  },
+  {
+    question: "Is Local SEO suitable for businesses with multiple locations?",
+    answer: "Absolutely. Our strategies scale seamlessly across multiple locations, ensuring consistent optimization, brand presence, and detailed reporting for each branch or service area you operate."
+  },
+  {
+    question: "How does Local SEO help my business grow?",
+    answer: "Local SEO drives more nearby customers to your business, increases qualified leads and sales, improves your reputation through reviews, and builds stronger brand visibility in your target geographic markets."
+  },
+];
 
 const features = [
   {
@@ -150,6 +186,11 @@ const LocalSEO = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection 
+        faqs={faqs}
+        subtitle="Common questions about our local SEO services and strategies."
+      />
 
       <CTASection />
       <Footer />

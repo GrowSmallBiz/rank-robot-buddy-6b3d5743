@@ -2,8 +2,36 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
+import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe } from "lucide-react";
 import technicalSeoImage from "@/assets/technical-seo.png";
+
+const faqs: FAQItem[] = [
+  {
+    question: "What does technical SEO include?",
+    answer: "Technical SEO encompasses a wide range of backend optimizations that affect your website's search performance. This includes meta tag optimization, site architecture improvements, redirect management, URL structure refinement, image optimization, structured data implementation, content security policies, internal linking strategies, JavaScript rendering, hreflang tags for international sites, and caching configurations."
+  },
+  {
+    question: "Why is technical SEO critical for my website?",
+    answer: "Google incorporates page experience and Core Web Vitals as ranking signals in its algorithm. A poorly performing website can significantly undermine your entire marketing strategy. We strongly recommend ensuring your site meets Google's performance standards to maximize organic traffic potential. Beyond rankings, technical SEO improvements also enhance conversion rates and user satisfaction."
+  },
+  {
+    question: "How do you determine which technical fixes I need?",
+    answer: "Our team conducts a comprehensive website audit to identify all backend issues affecting your site's performance. Your dedicated account manager will review the audit findings with you and recommend specific optimizations based on priority and impact. If you already know your problem areas, you can request targeted technical SEO services directly."
+  },
+  {
+    question: "What if I need services beyond what's listed here?",
+    answer: "Contact our team to discuss custom pricing options and specialized technical SEO services tailored to your specific needs. We can also schedule a consultation to explore exactly what your website requires."
+  },
+  {
+    question: "Can technical SEO be combined with other SEO services?",
+    answer: "Absolutely. Our managed SEO campaigns are ideal for businesses seeking a comprehensive approach. We integrate technical SEO with link building, content creation, and other optimization strategies to help you achieve your complete SEO objectives."
+  },
+  {
+    question: "Do you offer additional SEO services?",
+    answer: "Yes, we're a full-service SEO agency providing link building, content creation, on-page optimization, local SEO, and more. Share your needs with us, and we'll connect you with the right specialist for your project."
+  },
+];
 
 const features = [
   {
@@ -206,6 +234,11 @@ const TechnicalSEO = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection 
+        faqs={faqs}
+        subtitle="Get answers to common questions about technical SEO services."
+      />
 
       <CTASection />
       <Footer />
