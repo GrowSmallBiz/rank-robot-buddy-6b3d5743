@@ -2,114 +2,265 @@ import { Link } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { ServiceCard } from "@/components/services/ServiceCard";
-import { StatsSection } from "@/components/sections/StatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
-import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
-import { ArrowRight, Bot, Search, Globe, MapPin, Link2, BarChart3, TrendingUp, DollarSign, Clock, Shield, CheckCircle2, XCircle, Flame, Sparkles, Wrench, Heart, RefreshCw, Target, Users, Zap } from "lucide-react";
+import { 
+  ArrowRight, 
+  Bot, 
+  Search, 
+  Globe, 
+  MapPin, 
+  BarChart3, 
+  TrendingUp, 
+  Clock, 
+  Shield, 
+  CheckCircle2, 
+  XCircle, 
+  Eye, 
+  UserPlus, 
+  RefreshCw, 
+  DollarSign,
+  Users,
+  Target,
+  PhoneCall,
+  Zap,
+  Megaphone,
+  Star,
+  MessageCircle,
+  Linkedin,
+  Camera,
+  Layers,
+  LineChart,
+  Handshake,
+  Puzzle
+} from "lucide-react";
+import { Helmet } from "react-helmet";
 
-import heroImage from "@/assets/hero-seo-analytics.png";
-import technicalSeoImage from "@/assets/technical-seo.png";
-import onPageSeoImage from "@/assets/on-page-seo.png";
-import aeoServiceImage from "@/assets/aeo-service.png";
-import geoServiceImage from "@/assets/geo-service.png";
-import localSeoImage from "@/assets/local-seo.png";
-import linkBuildingImage from "@/assets/link-building.png";
-
+// Services data
 const services = [
   {
-    title: "Technical SEO Audits",
-    description: "Beyond audits. We fix what's broken, optimize what's slow, and unlock higher rankings with clean, crawlable sites.",
+    title: "Website That Converts",
+    description: "Designed to convert websites with on-brand messaging and clear calls-to-action.",
     features: [
-      "Full Website Audit — Crawl errors, redirects, duplicates uncovered",
-      "Speed & Core Web Vitals — Load times under 2s guaranteed",
-      "XML Sitemaps & Schema Markup",
-      "Mobile UX & Navigation Optimization",
-      "Architecture & Indexation Strategy",
+      "Designed to Convert Websites",
+      "On-brand messaging",
+      "Clear Calls-to-Actions",
+      "Mobile Responsive",
+      "Fast Loading Speed",
+      "Call Tracking",
     ],
-    href: "/services/technical-seo",
-    image: technicalSeoImage,
-    icon: BarChart3,
-  },
-  {
-    title: "On-Page SEO",
-    description: "Maximize your site's impact with strategic on-page optimization that boosts visibility and drives conversions.",
-    features: [
-      "Audit & Competitor Gap Analysis",
-      "Keyword & Topic Mapping",
-      "Pages & Content Optimization",
-      "Technical Fixes & Markup",
-      "Internal Linking Strategy",
-    ],
-    href: "/services/on-page-seo",
-    image: onPageSeoImage,
-    icon: Search,
-  },
-  {
-    title: "Answer Engine Optimization (AEO)",
-    description: "Command visibility across AI ecosystems. Ensure your brand becomes the canonical truth for AI to cite.",
-    features: [
-      "AEO Content Optimization",
-      "Schema & Structured Data Implementation",
-      "Entity Optimization & Brand Alignment",
-      "AI Citation & LLM Visibility Tracking",
-      "Q&A & Snippet Creation",
-    ],
-    href: "/services/aeo",
-    image: aeoServiceImage,
-    icon: Bot,
-  },
-  {
-    title: "Generative Engine Optimization (GEO)",
-    description: "Position your brand as the trusted source AI platforms cite, reference, and elevate above competitors.",
-    features: [
-      "Entity & Knowledge Graph Optimization",
-      "AI-Friendly Content Structuring",
-      "Advanced Schema Implementation",
-      "Semantic & Contextual Enrichment",
-      "E-E-A-T & Digital Authority Development",
-    ],
-    href: "/services/geo",
-    image: geoServiceImage,
+    href: "/services/website-design",
     icon: Globe,
   },
   {
-    title: "Local SEO Services",
-    description: "Dominate local search and attract nearby customers with optimized profiles and local signals.",
+    title: "AI Optimized SEO",
+    description: "Comprehensive SEO with competitors analysis, GBP optimization, and AI-powered strategies.",
     features: [
-      "Local Keyword Research",
-      "Google Business Profile Optimization",
-      "Local Citation & Listing Management",
-      "Review & Reputation Management",
-      "Local Content Creation",
+      "Competitors Analysis & Keywords Strategy",
+      "GBP & Map Pack Optimization",
+      "Citations & Authority Building",
+      "Answer Engine Optimization (AEO)",
+      "Generative Engine Optimization (GEO)",
     ],
-    href: "/services/local-seo",
-    image: localSeoImage,
-    icon: MapPin,
+    href: "/services/technical-seo",
+    icon: Search,
   },
   {
-    title: "Link Building Service",
-    description: "Scale your brand's visibility with enterprise-grade link building and authoritative backlinks.",
+    title: "Google + Facebook/Instagram Ads",
+    description: "Strategic paid campaigns with full-funnel tracking and lead nurturing.",
     features: [
-      "Backlink Audits & Link Detox",
-      "High-Quality Link Building",
-      "Digital PR & Media Outreach",
-      "Thought Leadership & Guest Posting",
-      "Performance Tracking & Reporting",
+      "Facebook/Instagram Ads",
+      "Google Local Service Ads",
+      "Google & Bing PPC Ads",
+      "Proactive Retargeting Campaigns",
+      "Email & SMS Lead Nurturing",
+      "Transparent Dashboard",
     ],
-    href: "/services/link-building",
-    image: linkBuildingImage,
-    icon: Link2,
+    href: "/services/paid-media",
+    icon: Megaphone,
+  },
+  {
+    title: "Reputation Management",
+    description: "Build trust and control your online reputation with automated review management.",
+    features: [
+      "Build Trust Signal",
+      "Control Your Online Reputation",
+      "Review Requests & Reminders on Auto Pilot",
+      "Auto Review Reply Powered by AI",
+      "Automated Email & SMS Followups",
+    ],
+    href: "/services/reputation",
+    icon: Star,
+  },
+  {
+    title: "Social Media Management",
+    description: "Stay consistent with scheduled organic posts and platform-specific strategies.",
+    features: [
+      "Scheduled Organic Posts",
+      "Professional Content Tailored to Each Platform",
+      "Platform-Specific Strategies",
+      "Boost Engagement and Build Trust",
+      "Improve Visibility and Local SEO",
+    ],
+    href: "/services/social-media",
+    icon: MessageCircle,
+  },
+  {
+    title: "24x7 AI Employee",
+    description: "Never miss a lead with 24/7 instant responses and AI-powered automation.",
+    features: [
+      "Never Miss a Lead With 24/7 Instant Responses",
+      "Handle Calls, Chats, and DMs Automatically",
+      "Deliver Consistent, Professional Answers",
+      "Qualify Prospects & Book Appointments 24×7",
+      "Free Up Your Team's Time",
+    ],
+    href: "/services/ai-employee",
+    icon: Bot,
+  },
+  {
+    title: "AI Powered CRM 24x7",
+    description: "Convert more leads into paying customers with intelligent automation.",
+    features: [
+      "Convert More Leads Into Paying Customers",
+      "Email & SMS Templates",
+      "Automated Email & SMS followups 24×7",
+      "AI Receptionist & Chatbots",
+    ],
+    href: "/services/crm",
+    icon: Users,
+  },
+  {
+    title: "LinkedIn LeadGen",
+    description: "Connect with decision-makers and automate outreach with a personal touch.",
+    features: [
+      "Connect With The Right Decision-Makers",
+      "Build Highly Targeted Lead Lists",
+      "Automate Outreach With A Personal Touch",
+      "Nurture Leads With Consistent Follow-Ups",
+      "Stay Visible And Drive More Booked Calls",
+    ],
+    href: "/services/linkedin",
+    icon: Linkedin,
+    comingSoon: true,
+  },
+  {
+    title: "Branding Photo+Video",
+    description: "Professional headshots and branding photography that builds trust.",
+    features: [
+      "Professional Headshots",
+      "Personal Branding Portraits",
+      "Team Photography",
+      "High-Quality Images For Trust & Credibility",
+    ],
+    href: "https://www.680headshots.com/",
+    icon: Camera,
+    external: true,
+  },
+];
+
+// Homepage FAQs based on growsmallbiz.io
+const homepageFAQs = [
+  {
+    question: "What makes GrowSmallBiz different from other digital marketing agencies?",
+    answer: "As a specialized agency focused exclusively on local small businesses, we understand the unique challenges you face. Our integrated marketing ecosystem replaces fragmented tools with a cohesive system that tracks every lead from first click to final sale. Unlike general agencies, we specialize in helping local professional service businesses dominate their markets with strategy, people and process that actually work for your type of business."
+  },
+  {
+    question: "Do I really need an integrated digital marketing approach?",
+    answer: "Absolutely. Most businesses struggle with scattered tools that don't communicate, lost leads in manual handoffs, and wasted ad spend without proper tracking. Our integrated ecosystem eliminates these problems by creating a seamless customer journey from first ad click through landing page, nurturing, and final sale - all automated and trackable."
+  },
+  {
+    question: "What types of businesses do you work with?",
+    answer: "We specialize in local professional service businesses including accounting firms, law offices, consulting practices, healthcare providers, contractors, and other service-based businesses. Our clients consistently see 2x, 3x, and even 4x growth in their customer base through our proven Digital Dominance Method."
+  },
+  {
+    question: "How do you help businesses achieve 'digital dominance' in their local market?",
+    answer: "Our Digital Dominance Method combines strategic web design, aggressive SEO targeting, precision-focused local ads, community-building social media, and reputation management. When every piece of your digital presence works together with laser focus on your local market, you don't just grow – you become the obvious choice for customers in your area."
+  },
+  {
+    question: "What's included in your complete growth package?",
+    answer: "Our comprehensive package includes: conversion-optimized website design, SEO optimization with local focus, paid traffic management (Google, Facebook, Instagram, LinkedIn), AI-powered CRM with 24/7 automation, smart dashboard analytics, and professional branding photography/videography. Everything works together as one integrated system."
+  },
+  {
+    question: "How quickly can you start working on my business?",
+    answer: "After our initial consultation and agreement, we begin with a 2-3 week strategic onboarding phase. Website development and SEO optimization typically launch by week 3-4, with paid advertising campaigns going live once we have proper tracking and conversion systems in place."
+  },
+  {
+    question: "What kind of results can I expect?",
+    answer: "Our clients consistently see 2x, 3x, and even 4x growth in their customer base. While specific results vary by industry and market conditions, our integrated approach typically produces measurable improvements in visibility, lead generation, conversion rates, and revenue growth within the first 6-12 months."
+  },
+  {
+    question: "How long does it take to see results?",
+    answer: "Results timeline varies by marketing channel. Paid advertising campaigns typically show performance improvements within 3-60 days. SEO results follow a longer trajectory, with incremental improvements beginning around 60 days onwards. Most clients see meaningful, measurable results within 3 months across all channels."
+  },
+];
+
+// Why choose us data
+const whyChooseUs = [
+  {
+    title: "A Whole Team In Your Corner",
+    description: "Get a dedicated Strategic Partner who champions your success, backed by a curated network of SEO experts, PPC specialists, web developers, and copywriters working exclusively on your growth.",
+    icon: Users,
+  },
+  {
+    title: "Full Transparency",
+    description: "No black box marketing here. You'll see exactly where every dollar goes and how it's performing – because it's your money and your business.",
+    icon: Eye,
+  },
+  {
+    title: "Local SMB Marketing Experts",
+    description: "We don't chase every industry trend – we focus exclusively on helping local professional service businesses dominate their markets.",
+    icon: Target,
+  },
+  {
+    title: "Call Tracking + Reporting",
+    description: "Our advanced call tracking shows exactly which campaigns are bringing you real customers on the phone – so we can invest more in what works.",
+    icon: PhoneCall,
+  },
+  {
+    title: "Real Results for Real Businesses",
+    description: "Our clients consistently see 2x, 3x, and even 4x growth in their customer base. From accounting firms to law offices to consulting practices.",
+    icon: TrendingUp,
+  },
+  {
+    title: "Every Piece of the Puzzle",
+    description: "Your website, Google presence, reviews, and social media all work as one cohesive system to dominate your local market.",
+    icon: Puzzle,
+  },
+];
+
+// Growth steps data
+const growthSteps = [
+  {
+    title: "Increase Visibility",
+    description: "Get found across search, maps, and social media platforms",
+    icon: Eye,
+  },
+  {
+    title: "Drive Leads",
+    description: "Attract new prospects through targeted traffic generation",
+    icon: UserPlus,
+  },
+  {
+    title: "Convert Leads",
+    description: "Turn more leads into paying customers with nurturing and automation",
+    icon: RefreshCw,
+  },
+  {
+    title: "Grow Revenue",
+    description: "Boost lifetime value through upsells, reviews, and retention",
+    icon: DollarSign,
   },
 ];
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>GrowSmallBiz | Digital Marketing & AI Automation for Local Service Businesses</title>
+        <meta name="description" content="Done-for-You marketing and AI automation for local service businesses. Achieve digital dominance with AI-powered SEO, paid ads, reputation management, and 24/7 AI assistants." />
+      </Helmet>
       <Header />
 
       {/* Hero Section */}
@@ -120,414 +271,45 @@ const Index = () => {
         <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="space-y-8">
-              <div className="animate-fade-up">
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-                  <Bot className="w-4 h-4" />
-                  AI-Powered SEO Services
-                </span>
-              </div>
-
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-                Managed AI SEO Services for{" "}
-                <span className="text-gradient">Full-Funnel Visibility</span>
-              </h1>
-
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-up delay-200">
-                Rank higher, get cited, and be surfaced across AI platforms. 
-                Enterprise AI SEO that unites technical SEO, AEO, and GEO to make 
-                your brand the authoritative answer.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-up delay-300">
-                <Link to="/free-assessment">
-                  <Button variant="hero" size="xl">
-                    Start Your AI SEO Strategy
-                    <ArrowRight className="w-5 h-5" />
-                  </Button>
-                </Link>
-                <Link to="#services">
-                  <Button variant="heroOutline" size="xl">
-                    View Our Services
-                  </Button>
-                </Link>
-              </div>
-
-              {/* Trust Badges */}
-              <div className="pt-8 border-t border-border animate-fade-up delay-400">
-                <p className="text-sm text-muted-foreground mb-4">Trusted by growing businesses</p>
-                <div className="flex flex-wrap gap-6 items-center opacity-60">
-                  <span className="text-lg font-semibold text-foreground">TechCorp</span>
-                  <span className="text-lg font-semibold text-foreground">StartupXYZ</span>
-                  <span className="text-lg font-semibold text-foreground">GrowthCo</span>
-                  <span className="text-lg font-semibold text-foreground">ScaleUp</span>
-                </div>
-              </div>
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <div className="animate-fade-up">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
+                <Zap className="w-4 h-4" />
+                Done-for-You Digital Marketing
+              </span>
             </div>
 
-            {/* Right Image */}
-            <div className="relative animate-slide-in-right delay-200">
-              <div className="relative rounded-2xl overflow-hidden glow-border">
-                <img
-                  src={heroImage}
-                  alt="AI SEO Analytics Dashboard showing growth metrics and data visualization"
-                  className="w-full h-auto"
-                />
-              </div>
-              {/* Floating Stats */}
-              <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-2xl animate-float">
-                <p className="text-2xl font-display font-bold text-gradient">+247%</p>
-                <p className="text-sm text-muted-foreground">Avg. Traffic Growth</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
+              Your Partner for Digital Growth{" "}
+              <span className="text-gradient">And Dominance</span>
+            </h1>
 
-      {/* Stats Section */}
-      <StatsSection />
-
-      {/* What is AI SEO Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
-            <p className="text-primary font-medium mb-4">What is AI SEO?</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              The Future of Search Visibility
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              AI SEO combines traditional SEO, Answer Engine Optimization (AEO), and 
-              Generative Engine Optimization (GEO) to ensure your content ranks and 
-              is cited across AI platforms like ChatGPT, Gemini, and Claude. We prepare 
-              your content, entities, and structured data so AI systems interpret and 
-              trust your brand as an authoritative source.
+            <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up delay-200">
+              "Done-for-You" Marketing And AI Automation for Local Service Businesses
             </p>
-          </div>
 
-          {/* Feature Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Unified Visibility",
-                desc: "Rank in search engines and appear in AI-generated answers",
-                icon: Globe,
-              },
-              {
-                title: "Entity Optimization",
-                desc: "Get your brand clearly recognized and cited by LLMs",
-                icon: Bot,
-              },
-              {
-                title: "Content Structuring",
-                desc: "Transform content into AI-friendly formats and snippets",
-                icon: Search,
-              },
-              {
-                title: "AI Monitoring",
-                desc: "Track citations and generative model performance",
-                icon: BarChart3,
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="bg-card border border-border rounded-xl p-6 space-y-4 card-hover animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-display font-semibold text-foreground">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground">{feature.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Invest in AI SEO Section */}
-      <section className="py-24 bg-card relative overflow-hidden">
-        {/* Background Effects */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
-            <p className="text-primary font-medium mb-4">Why Invest in AI SEO?</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Your Competitors Are Already Being Found.<br />
-              <span className="text-gradient">Are You?</span>
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              For HVAC contractors, med spas, dental practices, chiropractors, and auto repair shops, 
-              visibility is everything. When homeowners need emergency repairs or patients search for 
-              treatments, they turn to Google—and increasingly, to AI assistants. If your business 
-              isn't appearing in both, you're losing high-value customers to competitors who are.
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
+              We help home service professionals, health and wellness practitioners, finance professionals, 
+              attorneys, automobile repairs and other local service businesses achieve digital dominance — 
+              becoming the #1 choice in their market.
             </p>
-          </div>
 
-          {/* Key Benefits Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-            {[
-              {
-                title: "24/7 Lead Generation",
-                desc: "Unlike ads that stop when your budget runs out, SEO works around the clock. Your website attracts qualified leads while you focus on running your business.",
-                icon: Clock,
-              },
-              {
-                title: "Higher Trust, Higher Tickets",
-                desc: "Organic search results command 70% more trust than paid ads. For high-ticket services like HVAC systems or cosmetic procedures, trust directly translates to revenue.",
-                icon: Shield,
-              },
-              {
-                title: "Compounding Returns",
-                desc: "Every dollar invested in SEO builds lasting authority. Unlike paid ads that disappear instantly, your rankings compound over time—delivering returns for years.",
-                icon: TrendingUp,
-              },
-              {
-                title: "AI-Ready Visibility",
-                desc: "Patients and homeowners increasingly ask AI for recommendations. Position your practice as the answer AI platforms cite when they search for services like yours.",
-                icon: Bot,
-              },
-            ].map((benefit, index) => (
-              <div
-                key={index}
-                className="bg-background border border-border rounded-xl p-6 space-y-4 card-hover animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <benefit.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-display font-semibold text-foreground">{benefit.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{benefit.desc}</p>
-              </div>
-            ))}
-          </div>
+            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
+              Through AI-powered SEO Optimization, AI-Optimized Facebook and Google Paid Ads, LinkedIn Outreach, 
+              Reputation Management, and a 24/7 AI Voice Receptionist & AI Conversational Assistant, we bring you 
+              more client leads and keep more customers.
+            </p>
 
-          {/* SEO vs Paid Ads Comparison */}
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12 animate-fade-up">
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-                SEO vs. Paid Ads: The Numbers Don't Lie
-              </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                For local service businesses, the choice is clear. While paid ads have their place, 
-                SEO delivers superior long-term ROI and positions your business for sustainable growth.
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8 mb-12">
-              {/* SEO Column */}
-              <div className="bg-background border-2 border-primary/30 rounded-2xl p-8 relative animate-fade-up">
-                <div className="absolute -top-4 left-8 px-4 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">
-                  Recommended
-                </div>
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <TrendingUp className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="text-xl font-display font-bold text-foreground">SEO & AI SEO</h4>
-                </div>
-                <ul className="space-y-4">
-                  {[
-                    "5.3x higher ROI than paid advertising",
-                    "Leads cost 61% less than paid channels",
-                    "Results compound—rankings build authority over time",
-                    "70% of users skip ads, trusting organic results",
-                    "Captures AI-generated recommendations",
-                    "Works 24/7 without ongoing ad spend",
-                    "Builds lasting brand authority and trust",
-                    "Higher conversion rates (14.6% vs 1.7% for outbound)",
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3 text-foreground">
-                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <span className="text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Paid Ads Column */}
-              <div className="bg-secondary/30 border border-border rounded-2xl p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center">
-                    <DollarSign className="w-6 h-6 text-muted-foreground" />
-                  </div>
-                  <h4 className="text-xl font-display font-bold text-foreground">Paid Advertising</h4>
-                </div>
-                <ul className="space-y-4">
-                  {[
-                    "Traffic stops the moment you stop paying",
-                    "Rising costs—home service CPCs up 40% yearly",
-                    "Ad fatigue reduces effectiveness over time",
-                    "No lasting equity—zero value when ads stop",
-                    "Invisible to AI-powered search assistants",
-                    "Requires constant budget and management",
-                    "Lower trust factor with potential customers",
-                    "Competitors can outbid you at any time",
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3 text-muted-foreground">
-                      <XCircle className="w-5 h-5 text-muted-foreground/60 shrink-0 mt-0.5" />
-                      <span className="text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* SEO + Retargeting Power Section */}
-            <div className="mt-16 mb-12">
-              <div className="text-center mb-12 animate-fade-up">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-4">
-                  <RefreshCw className="w-4 h-4" />
-                  The Smart Strategy
-                </div>
-                <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-                  SEO + Retargeting: The Full-Funnel Advantage
-                </h3>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Why choose between SEO and ads when they work better together? Use SEO to attract qualified 
-                  visitors for free, then retarget only the interested ones—saving up to 70% on ad costs.
-                </p>
-              </div>
-
-              {/* Conversion Flow Diagram */}
-              <div className="bg-background border border-border rounded-2xl p-8 mb-8 animate-fade-up">
-                <div className="grid lg:grid-cols-5 gap-4 items-center">
-                  {/* Step 1 */}
-                  <div className="text-center p-4">
-                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                      <Search className="w-8 h-8 text-primary" />
-                    </div>
-                    <p className="font-display font-semibold text-foreground text-sm mb-1">SEO Discovery</p>
-                    <p className="text-xs text-muted-foreground">Free organic traffic from Google & AI</p>
-                  </div>
-                  
-                  {/* Arrow */}
-                  <div className="hidden lg:flex items-center justify-center">
-                    <ArrowRight className="w-6 h-6 text-primary" />
-                  </div>
-
-                  {/* Step 2 */}
-                  <div className="text-center p-4">
-                    <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-3">
-                      <Users className="w-8 h-8 text-accent" />
-                    </div>
-                    <p className="font-display font-semibold text-foreground text-sm mb-1">Visitor Tracking</p>
-                    <p className="text-xs text-muted-foreground">Build warm audience (97% leave without converting)</p>
-                  </div>
-                  
-                  {/* Arrow */}
-                  <div className="hidden lg:flex items-center justify-center">
-                    <ArrowRight className="w-6 h-6 text-primary" />
-                  </div>
-
-                  {/* Step 3 */}
-                  <div className="text-center p-4">
-                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                      <Target className="w-8 h-8 text-primary" />
-                    </div>
-                    <p className="font-display font-semibold text-foreground text-sm mb-1">Smart Retargeting</p>
-                    <p className="text-xs text-muted-foreground">Re-engage via Google & Meta ads</p>
-                  </div>
-                </div>
-
-                {/* Flow continuation */}
-                <div className="flex justify-center my-6">
-                  <div className="w-px h-8 bg-border lg:hidden" />
-                  <ArrowRight className="w-6 h-6 text-primary rotate-90 lg:rotate-0 hidden lg:block" />
-                </div>
-
-                <div className="grid lg:grid-cols-3 gap-4 items-center max-w-3xl mx-auto">
-                  {/* Step 4 */}
-                  <div className="text-center p-4 bg-primary/5 rounded-xl border border-primary/20">
-                    <div className="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center mx-auto mb-3">
-                      <Zap className="w-8 h-8 text-primary" />
-                    </div>
-                    <p className="font-display font-semibold text-foreground text-sm mb-1">Higher Conversions</p>
-                    <p className="text-xs text-muted-foreground">3-5x higher CTR on warm audiences</p>
-                  </div>
-
-                  {/* Arrow */}
-                  <div className="hidden lg:flex items-center justify-center">
-                    <ArrowRight className="w-6 h-6 text-primary" />
-                  </div>
-
-                  {/* Step 5 */}
-                  <div className="text-center p-4 bg-accent/5 rounded-xl border border-accent/20">
-                    <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mx-auto mb-3">
-                      <DollarSign className="w-8 h-8 text-accent" />
-                    </div>
-                    <p className="font-display font-semibold text-foreground text-sm mb-1">Lower Cost Per Lead</p>
-                    <p className="text-xs text-muted-foreground">Pay only to convert interested visitors</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Cost Comparison Stats */}
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-6 text-center animate-fade-up">
-                  <p className="text-3xl font-display font-bold text-destructive mb-2">$50-150</p>
-                  <p className="text-sm text-muted-foreground">Avg. Cost Per Lead</p>
-                  <p className="text-xs text-destructive/80 mt-1">Cold Google/Meta Ads</p>
-                </div>
-                <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 text-center animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                  <p className="text-3xl font-display font-bold text-primary mb-2">$15-40</p>
-                  <p className="text-sm text-muted-foreground">Avg. Cost Per Lead</p>
-                  <p className="text-xs text-primary/80 mt-1">Retargeting Warm Visitors</p>
-                </div>
-                <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 text-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
-                  <p className="text-3xl font-display font-bold text-accent mb-2">$0</p>
-                  <p className="text-sm text-muted-foreground">Cost Per Visit</p>
-                  <p className="text-xs text-accent/80 mt-1">SEO Organic Traffic</p>
-                </div>
-              </div>
-
-              {/* Industry-Specific Retargeting */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-8 animate-fade-up">
-                <h4 className="font-display font-semibold text-foreground text-center mb-6">
-                  Best Retargeting Platforms by Industry
-                </h4>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {[
-                    { industry: "HVAC & Plumbing", platform: "Google Display", reason: "Service-based, urgent intent" },
-                    { industry: "Dental & Med Spa", platform: "Meta (Instagram)", reason: "Visual results, aspirational" },
-                    { industry: "Photographers", platform: "Meta (Instagram)", reason: "Portfolio-driven, visual-first" },
-                    { industry: "Auto Repair", platform: "Google Display", reason: "Reminder-based, local intent" },
-                    { industry: "Chiropractors", platform: "Both Platforms", reason: "Pain-point + wellness lifestyle" },
-                    { industry: "All Industries", platform: "YouTube Ads", reason: "Video testimonials, trust-building" },
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-3 p-3 bg-background rounded-lg">
-                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <div>
-                        <p className="font-medium text-foreground text-sm">{item.industry}</p>
-                        <p className="text-xs text-primary">{item.platform}</p>
-                        <p className="text-xs text-muted-foreground">{item.reason}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-
-            {/* Bottom CTA */}
-            <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-border rounded-2xl p-8 text-center animate-fade-up">
-              <h4 className="text-xl font-display font-bold text-foreground mb-3">
-                The Bottom Line for Local Service Businesses
-              </h4>
-              <p className="text-muted-foreground max-w-3xl mx-auto mb-6 leading-relaxed">
-                Whether you run a dental practice, med spa, HVAC company, or auto repair shop, your customers 
-                are searching online before they call. <strong className="text-foreground">93% of online experiences begin with a search engine.</strong> 
-                {" "}With AI platforms like ChatGPT and Gemini now influencing purchase decisions, businesses that invest in 
-                both traditional SEO and AI visibility will dominate their local markets—while competitors 
-                continue burning budget on ads that disappear overnight.
-              </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
               <Link to="/free-assessment">
                 <Button variant="hero" size="xl">
-                  Get Your Free AI SEO Assessment
+                  Schedule FREE Strategy Session
                   <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
+              <Link to="#services">
+                <Button variant="heroOutline" size="xl">
+                  View Our Services
                 </Button>
               </Link>
             </div>
@@ -535,353 +317,274 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-up">
-            <p className="text-primary font-medium mb-4">Proven Results</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Real Results for Local Service Businesses
+      {/* Fragmented vs Integrated Comparison Section */}
+      <section className="py-24 bg-card relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">From Fragmented to Focused</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              Marketing That Attracts and Retains
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              See how businesses like yours achieved measurable growth through our AI-powered SEO strategies.
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* HVAC Case Study */}
-            <div className="group bg-card border border-border rounded-2xl overflow-hidden card-hover animate-fade-up">
-              <div className="h-3 bg-gradient-to-r from-orange-500 to-red-500" />
-              <div className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                    <Flame className="w-6 h-6 text-orange-500" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">HVAC Contractor</p>
-                    <h4 className="font-display font-bold text-foreground">Comfort Pro Services</h4>
-                  </div>
+          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Fragmented Approach */}
+            <div className="bg-secondary/30 border border-border rounded-2xl p-8 animate-fade-up">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center">
+                  <XCircle className="w-6 h-6 text-destructive" />
                 </div>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+312%</p>
-                    <p className="text-xs text-muted-foreground">Organic Traffic</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+187%</p>
-                    <p className="text-xs text-muted-foreground">Service Calls</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">#1</p>
-                    <p className="text-xs text-muted-foreground">Local Rankings</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">$47K</p>
-                    <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
-                  </div>
-                </div>
-
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  "We went from invisible online to dominating 'AC repair near me' searches. 
-                  Now we're getting calls from customers who found us through ChatGPT recommendations."
-                </p>
-                <p className="text-xs text-primary font-medium">— Mike T., Owner</p>
+                <h3 className="text-xl font-display font-bold text-foreground">The Fragmented Approach</h3>
               </div>
+              <ul className="space-y-4">
+                {[
+                  { title: "Scattered Tools:", desc: "Using 8+ different platforms that don't communicate" },
+                  { title: "Lost Opportunities:", desc: "Leads entering through one channel but getting lost in manual handoffs" },
+                  { title: "Wasted Ad Spend:", desc: "Running campaigns without proper tracking from click to client" },
+                  { title: "Time Drain:", desc: "Spending 15+ hours/week managing marketing instead of serving clients" },
+                  { title: "Inconsistent Results:", desc: "Feast or famine cycles with unpredictable lead flow" },
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-muted-foreground">
+                    <XCircle className="w-5 h-5 text-destructive/60 shrink-0 mt-0.5" />
+                    <span className="text-sm"><strong className="text-foreground">{item.title}</strong> {item.desc}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            {/* Med Spa Case Study */}
-            <div className="group bg-card border border-border rounded-2xl overflow-hidden card-hover animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              <div className="h-3 bg-gradient-to-r from-pink-500 to-purple-500" />
-              <div className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center">
-                    <Sparkles className="w-6 h-6 text-pink-500" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Medical Spa</p>
-                    <h4 className="font-display font-bold text-foreground">Radiance Aesthetics</h4>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+428%</p>
-                    <p className="text-xs text-muted-foreground">Website Visitors</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+245%</p>
-                    <p className="text-xs text-muted-foreground">Consultation Bookings</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">23</p>
-                    <p className="text-xs text-muted-foreground">AI Citations/Month</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">$89K</p>
-                    <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
-                  </div>
-                </div>
-
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  "Our Botox and filler pages now rank #1 locally. We're even being recommended 
-                  by AI when people ask about 'best med spa treatments' in our area."
-                </p>
-                <p className="text-xs text-primary font-medium">— Dr. Sarah L., Medical Director</p>
+            {/* Integrated Ecosystem */}
+            <div className="bg-background border-2 border-primary/30 rounded-2xl p-8 relative animate-fade-up" style={{ animationDelay: "0.1s" }}>
+              <div className="absolute -top-4 left-8 px-4 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">
+                Our Solution
               </div>
-            </div>
-
-            {/* Dental Practice Case Study */}
-            <div className="group bg-card border border-border rounded-2xl overflow-hidden card-hover animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <div className="h-3 bg-gradient-to-r from-cyan-500 to-blue-500" />
-              <div className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center">
-                    <Heart className="w-6 h-6 text-cyan-500" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Dental Practice</p>
-                    <h4 className="font-display font-bold text-foreground">Bright Smile Dental</h4>
-                  </div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <CheckCircle2 className="w-6 h-6 text-primary" />
                 </div>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+267%</p>
-                    <p className="text-xs text-muted-foreground">Organic Traffic</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+156%</p>
-                    <p className="text-xs text-muted-foreground">New Patients</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">15</p>
-                    <p className="text-xs text-muted-foreground">Featured Snippets</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">$63K</p>
-                    <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
-                  </div>
-                </div>
-
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  "We now own the top spots for implants, veneers, and emergency dental searches. 
-                  The AI optimization has been a game-changer for attracting high-value cosmetic cases."
-                </p>
-                <p className="text-xs text-primary font-medium">— Dr. James R., DDS</p>
+                <h3 className="text-xl font-display font-bold text-foreground">Our Integrated Ecosystem</h3>
               </div>
-            </div>
-
-            {/* Auto Repair Case Study */}
-            <div className="group bg-card border border-border rounded-2xl overflow-hidden card-hover animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              <div className="h-3 bg-gradient-to-r from-slate-500 to-zinc-600" />
-              <div className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-slate-500/10 flex items-center justify-center">
-                    <Wrench className="w-6 h-6 text-slate-500" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Auto Repair Shop</p>
-                    <h4 className="font-display font-bold text-foreground">Precision Auto Care</h4>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+289%</p>
-                    <p className="text-xs text-muted-foreground">Website Traffic</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+198%</p>
-                    <p className="text-xs text-muted-foreground">Service Appointments</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">#1</p>
-                    <p className="text-xs text-muted-foreground">"Brake Repair Near Me"</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">$38K</p>
-                    <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
-                  </div>
-                </div>
-
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  "Before AI SEO, we relied on word-of-mouth. Now we rank for every major auto 
-                  repair search in our city. The phone hasn't stopped ringing."
-                </p>
-                <p className="text-xs text-primary font-medium">— Carlos M., Shop Owner</p>
-              </div>
-            </div>
-
-            {/* Chiropractor Case Study */}
-            <div className="group bg-card border border-border rounded-2xl overflow-hidden card-hover animate-fade-up" style={{ animationDelay: "0.4s" }}>
-              <div className="h-3 bg-gradient-to-r from-green-500 to-emerald-500" />
-              <div className="p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-green-500" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Chiropractic Clinic</p>
-                    <h4 className="font-display font-bold text-foreground">Align Wellness Center</h4>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+341%</p>
-                    <p className="text-xs text-muted-foreground">Organic Visibility</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">+178%</p>
-                    <p className="text-xs text-muted-foreground">New Patients</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">18</p>
-                    <p className="text-xs text-muted-foreground">AI Citations/Month</p>
-                  </div>
-                  <div className="bg-secondary/50 rounded-xl p-4 text-center">
-                    <p className="text-2xl font-display font-bold text-gradient">$52K</p>
-                    <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
-                  </div>
-                </div>
-
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  "We now rank for 'back pain treatment' and 'chiropractor near me.' Patients 
-                  tell us they found us through Google and AI assistants alike."
-                </p>
-                <p className="text-xs text-primary font-medium">— Dr. Emily K., DC</p>
-              </div>
-            </div>
-
-            {/* Summary Card */}
-            <div className="group bg-gradient-to-br from-primary/10 via-accent/10 to-primary/5 border border-primary/20 rounded-2xl overflow-hidden animate-fade-up" style={{ animationDelay: "0.5s" }}>
-              <div className="h-3 bg-gradient-to-r from-primary to-accent" />
-              <div className="p-8 flex flex-col justify-center h-full">
-                <h4 className="font-display font-bold text-foreground text-xl mb-4">
-                  Average Client Results
-                </h4>
-                <div className="space-y-4 mb-6">
-                  <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground text-sm">Organic Traffic Increase</span>
-                    <span className="font-display font-bold text-primary">+287%</span>
-                  </div>
-                  <div className="w-full bg-secondary rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: "87%" }} />
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground text-sm">Lead Generation Increase</span>
-                    <span className="font-display font-bold text-primary">+193%</span>
-                  </div>
-                  <div className="w-full bg-secondary rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: "73%" }} />
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground text-sm">AI Platform Citations</span>
-                    <span className="font-display font-bold text-primary">+17/mo</span>
-                  </div>
-                  <div className="w-full bg-secondary rounded-full h-2">
-                    <div className="bg-primary h-2 rounded-full" style={{ width: "65%" }} />
-                  </div>
-                </div>
-                <Button variant="hero" className="w-full">
-                  Get Similar Results
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
-              </div>
+              <ul className="space-y-4">
+                {[
+                  { title: "Complete Customer Journey:", desc: "From first ad click → landing page → nurturing → sale → client" },
+                  { title: "No Manual Handoffs:", desc: "Everything flows automatically through your integrated pipeline" },
+                  { title: "Full Attribution:", desc: "Track every lead from source to revenue, optimizing what works" },
+                  { title: "Hands-Off Operation:", desc: "Your marketing runs 24/7 while you focus on client delivery" },
+                  { title: "Predictable Growth:", desc: "Systematic lead generation creates consistent pipeline flow" },
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-foreground">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-sm"><strong>{item.title}</strong> {item.desc}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* AI Platform Advantages Section */}
-      <PlatformAdvantagesSection variant="full" />
-
-      {/* Services Grid */}
-      <section className="py-24 bg-card" id="services">
+      {/* Growth Steps Section */}
+      <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-up">
-            <p className="text-primary font-medium mb-4">Our Services</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Comprehensive AI SEO Solutions
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">Our Digital Dominance Method</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              We Help Local Businesses Grow Using Our{" "}
+              <span className="text-gradient">Proven Method</span>
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              From technical audits to AI visibility optimization, we cover every aspect 
-              of modern search engine optimization.
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {growthSteps.map((step, index) => (
+              <div
+                key={index}
+                className="bg-card border border-border rounded-xl p-6 text-center space-y-4 card-hover animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center">
+                  <step.icon className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="font-display font-semibold text-foreground text-lg">{step.title}</h3>
+                <p className="text-sm text-muted-foreground">{step.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lg text-muted-foreground mb-8 italic animate-fade-up">
+              Why settle for competing when you can dominate? Our all-in-one digital package is specifically 
+              designed to make you the undisputed leader in your local area. We combine strategic web design, 
+              aggressive SEO targeting, precision-focused local ads, community-building social media, and 
+              reputation management that makes competitors irrelevant.
+            </p>
+            <Link to="/free-assessment">
+              <Button variant="hero" size="lg" className="animate-fade-up">
+                Schedule FREE Strategy Session
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-24 bg-card relative overflow-hidden">
+        <div className="absolute inset-0 section-glow" />
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">Strategic Digital Marketing Solutions</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              We Deliver as Your{" "}
+              <span className="text-gradient">Growth Partner</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <ServiceCard
-                key={service.href}
-                title={service.title}
-                description={service.description}
-                features={service.features}
-                href={service.href}
-                image={service.image}
-                index={index}
-              />
+              <div
+                key={index}
+                className="bg-background border border-border rounded-xl p-6 space-y-4 card-hover animate-fade-up relative"
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                {service.comingSoon && (
+                  <div className="absolute -top-3 right-4 px-3 py-1 bg-muted text-muted-foreground text-xs font-medium rounded-full">
+                    Coming Soon
+                  </div>
+                )}
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <service.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-display font-semibold text-foreground text-lg">{service.title}</h3>
+                <p className="text-sm text-muted-foreground">{service.description}</p>
+                <ul className="space-y-2">
+                  {service.features.slice(0, 4).map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                {service.external ? (
+                  <a href={service.href} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="w-full mt-4">
+                      Learn More
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </a>
+                ) : !service.comingSoon && (
+                  <Link to={service.href}>
+                    <Button variant="outline" size="sm" className="w-full mt-4">
+                      Learn More
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </Link>
+                )}
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Comparison Section */}
-      <ComparisonSection />
+      {/* Why Choose Us Section */}
+      <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">Why Choose GrowSmallBiz</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              Your Growth Marketing Partner
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Our integrated marketing ecosystem systematically increases your visibility, generates qualified leads, 
+              converts prospects into loyal clients, and maximizes customer lifetime value.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {whyChooseUs.map((item, index) => (
+              <div
+                key={index}
+                className="bg-card border border-border rounded-xl p-6 space-y-4 card-hover animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <item.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-display font-semibold text-foreground">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 border-y border-border bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { value: "2-4x", label: "Customer Growth", icon: TrendingUp },
+              { value: "24/7", label: "AI Automation", icon: Bot },
+              { value: "100%", label: "Transparency", icon: Eye },
+              { value: "15+", label: "Hours Saved/Week", icon: Clock },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="text-center animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
+                  <stat.icon className="w-6 h-6" />
+                </div>
+                <p className="text-3xl md:text-4xl font-display font-bold text-gradient mb-2">
+                  {stat.value}
+                </p>
+                <p className="text-sm text-muted-foreground">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Transform Your Online Presence Today
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Be Found Where Your Customers Are Searching
+            </p>
+            <p className="text-base text-muted-foreground max-w-3xl mx-auto italic">
+              Why settle for competing when you can dominate? Our all-in-one digital package is specifically 
+              designed to make you the undisputed leader in your local area. When every piece of your digital 
+              presence works together with laser focus on your local market, you don't just grow – you become 
+              the obvious choice for customers in your area.
+            </p>
+            <Link to="/free-assessment">
+              <Button variant="hero" size="xl">
+                Schedule My FREE Digital Growth Strategy Session
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Testimonials */}
       <TestimonialsSection />
 
       {/* FAQ Section */}
       <FAQSection 
-        title="Frequently Asked Questions About AI SEO"
-        subtitle="Get answers to common questions about our AI-powered SEO services and how they can transform your digital presence."
-        faqs={[
-          {
-            question: "What is AI SEO and how does it differ from traditional SEO?",
-            answer: "AI SEO integrates traditional search optimization with Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO). While traditional SEO focuses on ranking in search results, AI SEO ensures your brand is recognized, cited, and recommended by AI platforms like ChatGPT, Gemini, Perplexity, and Claude. It combines technical excellence with entity optimization and structured data to make your content the authoritative source AI systems trust."
-          },
-          {
-            question: "Why do businesses need AI SEO services now?",
-            answer: "With the rapid adoption of AI-powered search and assistants, users increasingly get answers directly from AI without clicking through to websites. Businesses that don't optimize for AI visibility risk becoming invisible to a growing segment of their audience. AI SEO ensures your brand remains discoverable and recommended across both traditional search engines and emerging AI platforms."
-          },
-          {
-            question: "What results can I expect from your AI SEO services?",
-            answer: "Our clients typically see significant improvements in organic traffic, AI citations, and brand visibility within 3-6 months. Results include higher search rankings, increased appearances in AI-generated answers, improved featured snippet capture, and stronger entity recognition by major AI platforms. We provide detailed reporting on both traditional SEO metrics and AI visibility indicators."
-          },
-          {
-            question: "How do you measure success in AI SEO?",
-            answer: "We track a comprehensive set of metrics including traditional SEO KPIs (rankings, traffic, conversions) plus AI-specific indicators like citation frequency in AI responses, entity recognition accuracy, featured snippet ownership, and visibility across AI platforms. Our proprietary monitoring tools track how often and how accurately AI systems reference your brand."
-          },
-          {
-            question: "What's included in your managed AI SEO service?",
-            answer: "Our full-service offering includes technical SEO audits and fixes, on-page optimization, content strategy and creation, Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), local SEO, link building, and ongoing performance monitoring. We handle everything from schema implementation to entity optimization, ensuring comprehensive visibility across all search and AI touchpoints."
-          },
-          {
-            question: "How long does it take to see results from AI SEO?",
-            answer: "Initial improvements in technical health and indexation typically appear within 4-6 weeks. Meaningful ranking improvements and increased AI citations usually develop over 3-6 months. Full optimization and authority building is an ongoing process, with compounding benefits as your entity recognition and content authority strengthen over time."
-          },
-          {
-            question: "Do you work with businesses of all sizes?",
-            answer: "Yes, our AI SEO services are designed to scale. We work with growing small businesses, mid-market companies, and enterprises. Our approach is tailored to each client's specific goals, competitive landscape, and resources. Whether you're looking to establish local visibility or dominate a global market, we customize our strategy accordingly."
-          },
-          {
-            question: "How is your approach different from other SEO agencies?",
-            answer: "We're pioneers in the AI SEO space, combining deep technical expertise with cutting-edge understanding of how AI systems discover and cite content. While most agencies still focus solely on traditional rankings, we optimize for the full spectrum of search visibility—including AI platforms that are rapidly becoming primary information sources. Our unified approach ensures you're not just ranking, but being actively recommended by AI."
-          }
-        ]}
+        title="Frequently Asked Questions"
+        subtitle="Everything you need to know about our Digital Marketing Services"
+        faqs={homepageFAQs}
       />
 
-      {/* Blog Section */}
-      <BlogSection 
-        posts={generalBlogPosts}
-        title="Latest SEO Insights"
-        subtitle="Expert tips and strategies to grow your business online"
-        showViewAll={false}
-      />
-
-      {/* CTA Section */}
+      {/* Final CTA */}
       <CTASection />
 
       <Footer />
