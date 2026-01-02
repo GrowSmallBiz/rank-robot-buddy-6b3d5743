@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -140,13 +141,17 @@ const Index = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-up delay-300">
-                <Button variant="hero" size="xl">
-                  Start Your AI SEO Strategy
-                  <ArrowRight className="w-5 h-5" />
-                </Button>
-                <Button variant="heroOutline" size="xl">
-                  View Our Services
-                </Button>
+                <Link to="/free-assessment">
+                  <Button variant="hero" size="xl">
+                    Start Your AI SEO Strategy
+                    <ArrowRight className="w-5 h-5" />
+                  </Button>
+                </Link>
+                <Link to="#services">
+                  <Button variant="heroOutline" size="xl">
+                    View Our Services
+                  </Button>
+                </Link>
               </div>
 
               {/* Trust Badges */}
@@ -382,10 +387,12 @@ const Index = () => {
                 both traditional SEO and AI visibility will dominate their local markets—while competitors 
                 continue burning budget on ads that disappear overnight.
               </p>
-              <Button variant="hero" size="xl">
-                Get Your Free AI SEO Assessment
-                <ArrowRight className="w-5 h-5" />
-              </Button>
+              <Link to="/free-assessment">
+                <Button variant="hero" size="xl">
+                  Get Your Free AI SEO Assessment
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import AEO from "./pages/services/AEO";
 import GEO from "./pages/services/GEO";
 import LocalSEO from "./pages/services/LocalSEO";
 import LinkBuilding from "./pages/services/LinkBuilding";
+import FreeAssessment from "./pages/FreeAssessment";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/services/geo" element={<GEO />} />
           <Route path="/services/local-seo" element={<LocalSEO />} />
           <Route path="/services/link-building" element={<LinkBuilding />} />
+          <Route path="/free-assessment" element={<FreeAssessment />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
