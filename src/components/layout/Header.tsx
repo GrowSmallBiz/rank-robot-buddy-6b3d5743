@@ -3,14 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
-const services = [
+const seoServices = [
   { name: "Technical SEO", href: "/services/technical-seo" },
   { name: "On-Page SEO", href: "/services/on-page-seo" },
   { name: "Answer Engine Optimization", href: "/services/aeo" },
   { name: "Generative Engine Optimization", href: "/services/geo" },
   { name: "Local SEO", href: "/services/local-seo" },
   { name: "Link Building", href: "/services/link-building" },
-  { name: "Paid Media & Advertising", href: "/services/paid-media" },
 ];
 
 const industries = [
@@ -24,8 +23,10 @@ const industries = [
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isSEOServicesOpen, setIsSEOServicesOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+  const [mobileSEOOpen, setMobileSEOOpen] = useState(false);
+  const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
   const location = useLocation();
 
   return (
@@ -43,7 +44,7 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             <Link
               to="/"
               className={`text-sm font-medium transition-colors hover:text-primary ${
@@ -53,25 +54,44 @@ export const Header = () => {
               Home
             </Link>
 
-            {/* Services Dropdown */}
+            {/* Managed AI SEO Service Dropdown */}
             <div className="relative group">
               <button
-                className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-                onMouseEnter={() => setIsServicesOpen(true)}
-                onMouseLeave={() => setIsServicesOpen(false)}
+                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname.startsWith("/services/ai-seo") || 
+                  location.pathname.startsWith("/services/technical") ||
+                  location.pathname.startsWith("/services/on-page") ||
+                  location.pathname.startsWith("/services/aeo") ||
+                  location.pathname.startsWith("/services/geo") ||
+                  location.pathname.startsWith("/services/local") ||
+                  location.pathname.startsWith("/services/link")
+                    ? "text-primary" 
+                    : "text-muted-foreground"
+                }`}
+                onMouseEnter={() => setIsSEOServicesOpen(true)}
+                onMouseLeave={() => setIsSEOServicesOpen(false)}
               >
-                Services
+                Managed AI SEO Service
                 <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
-                  isServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                className={`absolute top-full left-0 mt-2 w-80 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isSEOServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
-                onMouseEnter={() => setIsServicesOpen(true)}
-                onMouseLeave={() => setIsServicesOpen(false)}
+                onMouseEnter={() => setIsSEOServicesOpen(true)}
+                onMouseLeave={() => setIsSEOServicesOpen(false)}
               >
-                {services.map((service) => (
+                {/* Main AI SEO Hub Link */}
+                <Link
+                  to="/services/ai-seo-hub"
+                  className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
+                >
+                  AI SEO Hub Overview
+                </Link>
+                
+                {/* SEO Sub-services */}
+                {seoServices.map((service) => (
                   <Link
                     key={service.href}
                     to={service.href}
@@ -83,10 +103,22 @@ export const Header = () => {
               </div>
             </div>
 
+            {/* Paid Media & Advertising */}
+            <Link
+              to="/services/paid-media"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === "/services/paid-media" ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              Paid Media & Advertising
+            </Link>
+
             {/* Industries Dropdown */}
             <div className="relative group">
               <button
-                className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname.startsWith("/industries") ? "text-primary" : "text-muted-foreground"
+                }`}
                 onMouseEnter={() => setIsIndustriesOpen(true)}
                 onMouseLeave={() => setIsIndustriesOpen(false)}
               >
@@ -143,8 +175,8 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="hero" size="lg">
-              Get Free Audit
+            <Button variant="hero" size="lg" asChild>
+              <Link to="/free-assessment">Get Free Audit</Link>
             </Button>
           </div>
 
@@ -160,7 +192,7 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden absolute top-full left-0 right-0 bg-background border-b border-border transition-all duration-300 ${
+        className={`lg:hidden absolute top-full left-0 right-0 bg-background border-b border-border transition-all duration-300 max-h-[calc(100vh-5rem)] overflow-y-auto ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
@@ -172,32 +204,81 @@ export const Header = () => {
           >
             Home
           </Link>
+          
+          {/* Mobile: Managed AI SEO Service */}
           <div className="space-y-2">
-            <p className="text-sm text-muted-foreground font-medium">Services</p>
-            {services.map((service) => (
-              <Link
-                key={service.href}
-                to={service.href}
-                onClick={() => setIsOpen(false)}
-                className="block pl-4 py-2 text-foreground hover:text-primary"
-              >
-                {service.name}
-              </Link>
-            ))}
+            <button
+              onClick={() => setMobileSEOOpen(!mobileSEOOpen)}
+              className="flex items-center justify-between w-full text-foreground font-medium"
+            >
+              Managed AI SEO Service
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileSEOOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileSEOOpen && (
+              <div className="pl-4 space-y-2">
+                <Link
+                  to="/services/ai-seo-hub"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-primary font-medium"
+                >
+                  AI SEO Hub Overview
+                </Link>
+                {seoServices.map((service) => (
+                  <Link
+                    key={service.href}
+                    to={service.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block py-2 text-muted-foreground hover:text-primary"
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
+
+          {/* Mobile: Paid Media */}
+          <Link
+            to="/services/paid-media"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            Paid Media & Advertising
+          </Link>
+
+          {/* Mobile: Industries */}
           <div className="space-y-2">
-            <p className="text-sm text-muted-foreground font-medium">Industries</p>
-            {industries.map((industry) => (
-              <Link
-                key={industry.href}
-                to={industry.href}
-                onClick={() => setIsOpen(false)}
-                className="block pl-4 py-2 text-foreground hover:text-primary"
-              >
-                {industry.name}
-              </Link>
-            ))}
+            <button
+              onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
+              className="flex items-center justify-between w-full text-foreground font-medium"
+            >
+              Industries
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileIndustriesOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileIndustriesOpen && (
+              <div className="pl-4 space-y-2">
+                {industries.map((industry) => (
+                  <Link
+                    key={industry.href}
+                    to={industry.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block py-2 text-muted-foreground hover:text-primary"
+                  >
+                    {industry.name}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
+
+          <Link
+            to="/about"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            About
+          </Link>
+
           <Link
             to="/blog"
             onClick={() => setIsOpen(false)}
@@ -205,8 +286,17 @@ export const Header = () => {
           >
             Blog
           </Link>
-          <Button variant="hero" size="lg" className="w-full mt-4">
-            Get Free Audit
+
+          <Link
+            to="/contact"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            Contact
+          </Link>
+
+          <Button variant="hero" size="lg" className="w-full mt-4" asChild>
+            <Link to="/free-assessment" onClick={() => setIsOpen(false)}>Get Free Audit</Link>
           </Button>
         </div>
       </div>
