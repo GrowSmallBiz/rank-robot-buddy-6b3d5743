@@ -374,6 +374,182 @@ const PaidMedia = () => {
         </div>
       </section>
 
+      {/* Case Studies Section */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">Real Results</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              SEO + Paid Media Case Studies
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              See how our full-funnel approach delivers measurable ROI across industries.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Case Study 1 - HVAC */}
+            <div className="bg-background border border-border rounded-2xl overflow-hidden card-hover animate-fade-up">
+              <div className="h-3 bg-gradient-to-r from-orange-500 to-red-500" />
+              <div className="p-6 space-y-6">
+                <div>
+                  <span className="px-3 py-1 bg-orange-500/10 text-orange-500 text-xs font-medium rounded-full">
+                    HVAC Company
+                  </span>
+                  <h3 className="text-xl font-display font-semibold text-foreground mt-3">
+                    Austin AC & Heating
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Combined Google LSA with SEO-powered retargeting to dominate local emergency repair searches.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">312%</p>
+                    <p className="text-xs text-muted-foreground">Increase in Leads</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">$23</p>
+                    <p className="text-xs text-muted-foreground">Cost Per Lead</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">4.8x</p>
+                    <p className="text-xs text-muted-foreground">ROAS</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">67%</p>
+                    <p className="text-xs text-muted-foreground">Lower CPA vs Cold</p>
+                  </div>
+                </div>
+
+                <div className="border-t border-border pt-4">
+                  <p className="text-xs text-muted-foreground">
+                    <span className="font-semibold text-foreground">Strategy:</span> Google LSA + Google PPC + Meta Retargeting from organic traffic
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Case Study 2 - Med Spa */}
+            <div className="bg-background border border-border rounded-2xl overflow-hidden card-hover animate-fade-up" style={{ animationDelay: "0.1s" }}>
+              <div className="h-3 bg-gradient-to-r from-pink-500 to-purple-500" />
+              <div className="p-6 space-y-6">
+                <div>
+                  <span className="px-3 py-1 bg-pink-500/10 text-pink-500 text-xs font-medium rounded-full">
+                    Med Spa
+                  </span>
+                  <h3 className="text-xl font-display font-semibold text-foreground mt-3">
+                    Glow Aesthetics Dallas
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Instagram-first strategy with Google PPC for high-intent Botox and filler searches.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">$127K</p>
+                    <p className="text-xs text-muted-foreground">Monthly Revenue</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">$31</p>
+                    <p className="text-xs text-muted-foreground">Cost Per Booking</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">6.2x</p>
+                    <p className="text-xs text-muted-foreground">ROAS</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">89%</p>
+                    <p className="text-xs text-muted-foreground">Booking Rate</p>
+                  </div>
+                </div>
+
+                <div className="border-t border-border pt-4">
+                  <p className="text-xs text-muted-foreground">
+                    <span className="font-semibold text-foreground">Strategy:</span> Meta (Instagram) + Google PPC + Website Retargeting
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Case Study 3 - Dental */}
+            <div className="bg-background border border-border rounded-2xl overflow-hidden card-hover animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <div className="h-3 bg-gradient-to-r from-cyan-500 to-blue-500" />
+              <div className="p-6 space-y-6">
+                <div>
+                  <span className="px-3 py-1 bg-cyan-500/10 text-cyan-500 text-xs font-medium rounded-full">
+                    Dental Practice
+                  </span>
+                  <h3 className="text-xl font-display font-semibold text-foreground mt-3">
+                    Bright Smile Dentistry
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    SEO for organic visibility combined with LSA for emergency services and YouTube for cosmetic.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">156</p>
+                    <p className="text-xs text-muted-foreground">New Patients/Mo</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">$42</p>
+                    <p className="text-xs text-muted-foreground">Cost Per Patient</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">5.1x</p>
+                    <p className="text-xs text-muted-foreground">ROAS</p>
+                  </div>
+                  <div className="bg-card rounded-lg p-3 text-center">
+                    <p className="text-2xl font-display font-bold text-primary">$2,400</p>
+                    <p className="text-xs text-muted-foreground">Avg Patient Value</p>
+                  </div>
+                </div>
+
+                <div className="border-t border-border pt-4">
+                  <p className="text-xs text-muted-foreground">
+                    <span className="font-semibold text-foreground">Strategy:</span> Google LSA + YouTube Ads + Meta Retargeting
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ROI Summary */}
+          <div className="mt-12 p-8 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10 rounded-2xl border border-primary/20 animate-fade-up">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-display font-bold text-foreground mb-2">
+                Average Client Results
+              </h3>
+              <p className="text-muted-foreground">
+                Across all industries using our SEO + Paid Media full-funnel approach
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <p className="text-3xl md:text-4xl font-display font-bold text-gradient">4.2x</p>
+                <p className="text-sm text-muted-foreground mt-1">Average ROAS</p>
+              </div>
+              <div className="text-center">
+                <p className="text-3xl md:text-4xl font-display font-bold text-gradient">63%</p>
+                <p className="text-sm text-muted-foreground mt-1">Lower CPL with Retargeting</p>
+              </div>
+              <div className="text-center">
+                <p className="text-3xl md:text-4xl font-display font-bold text-gradient">218%</p>
+                <p className="text-sm text-muted-foreground mt-1">Avg Lead Increase</p>
+              </div>
+              <div className="text-center">
+                <p className="text-3xl md:text-4xl font-display font-bold text-gradient">90 Days</p>
+                <p className="text-sm text-muted-foreground mt-1">To Full Optimization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Platform Advantages - using local since paid media complements local SEO */}
       <section className="py-16 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 border-y border-border">
         <div className="container mx-auto px-4">
