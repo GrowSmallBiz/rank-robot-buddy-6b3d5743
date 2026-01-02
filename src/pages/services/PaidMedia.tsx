@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
-import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { BlogSection, paidMediaBlogPosts } from "@/components/sections/BlogSection";
 import { 
   ArrowRight, 
   Target, 
@@ -421,7 +421,7 @@ const PaidMedia = () => {
       />
 
       <BlogSection 
-        posts={generalBlogPosts}
+        posts={paidMediaBlogPosts}
         title="Paid Media Insights"
         subtitle="Expert tips for maximizing your advertising ROI"
         showViewAll={false}
