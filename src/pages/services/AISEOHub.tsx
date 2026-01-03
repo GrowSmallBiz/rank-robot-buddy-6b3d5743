@@ -370,17 +370,67 @@ const AISEOHub = () => {
         </section>
 
         {/* Why To Invest in AI SEO Section */}
-        <section className="py-20">
+        <section className="py-20 bg-card">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <p className="text-primary font-medium mb-2">The Foundational Strategy</p>
+            <div className="text-center mb-12">
+              <p className="text-primary font-medium mb-2">Why Invest in AI SEO?</p>
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
-                Why To Invest in AI SEO
+                Your Competitors Are Already Being Found.{" "}
+                <span className="text-primary">Are You?</span>
               </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                While paid ads, referrals, and social media have their place, AI-optimized SEO delivers 
-                compounding returns that make it the foundation every serious business needs.
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+                For HVAC contractors, med spas, dental practices, chiropractors, and auto repair shops, visibility is everything. 
+                When homeowners need emergency repairs or patients search for treatments, they turn to Google—and 
+                increasingly, to AI assistants. If your business isn't appearing in both, you're losing high-value customers to 
+                competitors who are.
               </p>
+            </div>
+
+            {/* Feature Cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+              {/* 24/7 Lead Generation */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Zap className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold font-display mb-2 text-foreground">24/7 Lead Generation</h3>
+                <p className="text-sm text-muted-foreground">
+                  Unlike ads that stop when your budget runs out, SEO works around the clock. Your website attracts qualified leads while you focus on running your business.
+                </p>
+              </div>
+
+              {/* Higher Trust, Higher Tickets */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Shield className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold font-display mb-2 text-foreground">Higher Trust, Higher Tickets</h3>
+                <p className="text-sm text-muted-foreground">
+                  Organic search results command 70% more trust than paid ads. For high-ticket services like HVAC systems or cosmetic procedures, trust directly translates to revenue.
+                </p>
+              </div>
+
+              {/* Compounding Returns */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <TrendingUp className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold font-display mb-2 text-foreground">Compounding Returns</h3>
+                <p className="text-sm text-muted-foreground">
+                  Every dollar invested in SEO builds lasting authority. Unlike paid ads that disappear instantly, your rankings compound over time—delivering returns for years.
+                </p>
+              </div>
+
+              {/* AI-Ready Visibility */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Bot className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold font-display mb-2 text-foreground">AI-Ready Visibility</h3>
+                <p className="text-sm text-muted-foreground">
+                  Patients and homeowners increasingly ask AI for recommendations. Position your practice as the answer AI platforms cite when they search for services like yours.
+                </p>
+              </div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
