@@ -26,17 +26,18 @@ export const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isSEOServicesOpen, setIsSEOServicesOpen] = useState(false);
   const [isSEOIndustriesOpen, setIsSEOIndustriesOpen] = useState(false);
+  const [isGrowthSystemOpen, setIsGrowthSystemOpen] = useState(false);
   
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileSEOOpen, setMobileSEOOpen] = useState(false);
   const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
+  const [mobileGrowthSystemOpen, setMobileGrowthSystemOpen] = useState(false);
   const location = useLocation();
 
   const isServiceActive = 
     location.pathname.startsWith("/services/website") ||
     location.pathname.startsWith("/services/social") ||
     location.pathname.startsWith("/services/paid-media") ||
-    location.pathname.startsWith("/services/reputation") ||
     location.pathname.startsWith("/services/ai-seo") ||
     location.pathname.startsWith("/services/technical") ||
     location.pathname.startsWith("/services/on-page") ||
@@ -44,6 +45,9 @@ export const Header = () => {
     location.pathname.startsWith("/services/geo") ||
     location.pathname.startsWith("/services/local") ||
     location.pathname.startsWith("/services/link");
+
+  const isGrowthSystemActive = 
+    location.pathname.startsWith("/services/reputation");
 
   const isSEOActive = 
     location.pathname.startsWith("/services/ai-seo") ||
@@ -201,7 +205,29 @@ export const Header = () => {
                   Paid Media & Advertising
                 </Link>
 
-                {/* Reputation Management */}
+              </div>
+            </div>
+
+            {/* AI Client Growth System Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsGrowthSystemOpen(true)}
+              onMouseLeave={() => setIsGrowthSystemOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+                  isGrowthSystemActive ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                AI Client Growth System
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+
+              <div
+                className={`absolute top-full left-0 mt-2 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isGrowthSystemOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                }`}
+              >
                 <Link
                   to="/services/reputation-management"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
@@ -366,7 +392,21 @@ export const Header = () => {
                   Paid Media & Advertising
                 </Link>
 
-                {/* Reputation Management */}
+              </div>
+            )}
+          </div>
+
+          {/* Mobile: AI Client Growth System */}
+          <div className="space-y-2">
+            <button
+              onClick={() => setMobileGrowthSystemOpen(!mobileGrowthSystemOpen)}
+              className="flex items-center justify-between w-full text-foreground font-medium"
+            >
+              AI Client Growth System
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileGrowthSystemOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileGrowthSystemOpen && (
+              <div className="pl-4 space-y-2">
                 <Link
                   to="/services/reputation-management"
                   onClick={() => setIsOpen(false)}
