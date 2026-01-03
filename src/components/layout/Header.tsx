@@ -25,6 +25,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isSEOServicesOpen, setIsSEOServicesOpen] = useState(false);
+  const [isSEOIndustriesOpen, setIsSEOIndustriesOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileSEOOpen, setMobileSEOOpen] = useState(false);
@@ -148,14 +149,37 @@ export const Header = () => {
                       </Link>
                     ))}
 
-                    {/* Industries */}
-                    <div className="border-t border-border mt-2 pt-2">
-                      <Link
-                        to="/industries/hvac"
-                        className="block px-4 py-3 rounded-lg text-sm font-medium text-foreground hover:bg-secondary transition-colors"
+                    {/* Industries - nested submenu */}
+                    <div 
+                      className="relative border-t border-border mt-2 pt-2"
+                      onMouseEnter={() => setIsSEOIndustriesOpen(true)}
+                      onMouseLeave={() => setIsSEOIndustriesOpen(false)}
+                    >
+                      <button
+                        className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-colors hover:bg-secondary ${
+                          location.pathname.startsWith("/industries") ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                        }`}
                       >
                         Industries We Serve
-                      </Link>
+                        <ChevronRight className="w-4 h-4" />
+                      </button>
+
+                      {/* Industries Submenu */}
+                      <div
+                        className={`absolute left-full top-0 ml-2 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 z-50 ${
+                          isSEOIndustriesOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
+                        }`}
+                      >
+                        {industries.map((industry) => (
+                          <Link
+                            key={industry.href}
+                            to={industry.href}
+                            className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                          >
+                            {industry.name}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -318,13 +342,30 @@ export const Header = () => {
                           {service.name}
                         </Link>
                       ))}
-                      <Link
-                        to="/industries/hvac"
-                        onClick={() => setIsOpen(false)}
-                        className="block py-2 text-muted-foreground hover:text-primary font-medium border-t border-border pt-2 mt-2"
-                      >
-                        Industries We Serve
-                      </Link>
+                      {/* Industries nested in mobile */}
+                      <div className="border-t border-border pt-2 mt-2">
+                        <button
+                          onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
+                          className="flex items-center justify-between w-full py-2 text-muted-foreground hover:text-primary font-medium"
+                        >
+                          Industries We Serve
+                          <ChevronDown className={`w-4 h-4 transition-transform ${mobileIndustriesOpen ? "rotate-180" : ""}`} />
+                        </button>
+                        {mobileIndustriesOpen && (
+                          <div className="pl-4 space-y-2">
+                            {industries.map((industry) => (
+                              <Link
+                                key={industry.href}
+                                to={industry.href}
+                                onClick={() => setIsOpen(false)}
+                                className="block py-2 text-muted-foreground hover:text-primary"
+                              >
+                                {industry.name}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     </div>
                   )}
                 </div>
