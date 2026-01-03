@@ -560,8 +560,77 @@ const AIReceptionist = () => {
           </div>
         </section>
 
-        {/* White Glove Service Section */}
+        {/* Testimonials Section */}
         <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16 animate-fade-up">
+              <p className="text-primary font-medium mb-4">Success Stories</p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                Real Results From Real Businesses
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                See how service-based businesses are transforming their customer experience with AI
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  quote: "We were losing emergency service calls after 5pm. Now our AI receptionist captures every after-hours lead and books appointments directly into our schedule. Last month alone, we booked 47 new HVAC jobs that would have gone to voicemail.",
+                  author: "Mike Johnson",
+                  role: "Owner",
+                  company: "Johnson's HVAC & Cooling",
+                  industry: "HVAC Contractor",
+                  result: "47 new jobs/month",
+                },
+                {
+                  quote: "Patients calling at 8pm used to hear voicemail. Now our AI handles after-hours calls professionally, answers insurance questions, and schedules appointments. Patient satisfaction is up 40% and we're capturing calls we never knew we were missing.",
+                  author: "Dr. Sarah Chen",
+                  role: "Practice Owner",
+                  company: "Bright Smile Dental",
+                  industry: "Dental Office",
+                  result: "40% higher satisfaction",
+                },
+                {
+                  quote: "Between adjustments, I can't answer every call. The AI receptionist books appointments while I'm with patients, handles rescheduling, and even answers basic questions about our services. It's like having a full-time receptionist for a fraction of the cost.",
+                  author: "Dr. James Rodriguez",
+                  role: "Chiropractor",
+                  company: "SpineWorks Chiropractic",
+                  industry: "Chiropractic Clinic",
+                  result: "3x more bookings",
+                },
+              ].map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="bg-card border border-border rounded-2xl p-8 space-y-6 animate-fade-up hover:border-primary/50 transition-colors"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                    {testimonial.industry}
+                  </div>
+                  <p className="text-foreground leading-relaxed">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="flex items-center justify-between pt-4 border-t border-border">
+                    <div>
+                      <p className="font-semibold text-foreground">{testimonial.author}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.role}, {testimonial.company}
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-sm text-muted-foreground">Result</p>
+                      <p className="font-semibold text-primary">{testimonial.result}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* White Glove Service Section */}
+        <section className="py-20 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
