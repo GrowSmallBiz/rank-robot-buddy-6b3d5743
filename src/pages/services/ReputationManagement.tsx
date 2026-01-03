@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import reputationHeroBg from "@/assets/reputation-hero.jpg";
 
 // FAQs from source content
 const faqs: FAQItem[] = [
@@ -156,7 +157,11 @@ const ReputationManagement = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
-        <div className="absolute inset-0 hero-glow" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${reputationHeroBg})` }}
+        />
+        <div className="absolute inset-0 bg-background/85" />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
