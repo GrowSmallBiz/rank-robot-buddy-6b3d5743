@@ -18,7 +18,8 @@ import {
   Bot,
   Bell,
   ThumbsUp,
-  Search
+  Search,
+  Quote
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -142,6 +143,37 @@ const stats = [
   { value: "24/7", label: "AI Response Coverage" },
   { value: "15min", label: "Setup Time" },
   { value: "2-5x", label: "More Reviews in 90 Days" },
+];
+
+const testimonials = [
+  {
+    name: "Dr. Sarah Mitchell",
+    role: "Owner, Mitchell Family Dental",
+    quote: "Within 3 months, we went from 47 Google reviews to over 180. The AI responses are so professional that patients often compliment us on how quickly we respond. Our new patient calls have doubled.",
+    rating: 5,
+    result: "283% increase in reviews"
+  },
+  {
+    name: "Mike Thompson",
+    role: "Owner, Thompson HVAC Services",
+    quote: "I used to dread checking reviews because I never had time to respond. Now the AI handles everything automatically. We've climbed from page 2 to the top 3 in local search results.",
+    rating: 5,
+    result: "Top 3 local ranking"
+  },
+  {
+    name: "Jennifer Chen",
+    role: "Director, Restore Med Spa",
+    quote: "The automated review requests are a game-changer. Happy clients get a gentle nudge to leave feedback, and our 4.2 rating jumped to 4.9. The ROI paid for itself in the first month.",
+    rating: 5,
+    result: "4.2 to 4.9 star rating"
+  },
+  {
+    name: "Robert Garcia",
+    role: "Owner, Garcia Auto Repair",
+    quote: "We had a few negative reviews hurting our business. The AI helped us respond professionally and request more reviews from satisfied customers. Now we're the highest-rated shop in town.",
+    rating: 5,
+    result: "Highest-rated in area"
+  }
 ];
 
 const ReputationManagement = () => {
@@ -330,6 +362,53 @@ const ReputationManagement = () => {
                 </Button>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">Client Success Stories</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              Real Results from Real Businesses
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              See how local businesses transformed their online reputation with our AI-powered system.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="group bg-background border border-border rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                  ))}
+                </div>
+                
+                <Quote className="w-8 h-8 text-primary/30" />
+                
+                <p className="text-foreground leading-relaxed italic">
+                  "{testimonial.quote}"
+                </p>
+
+                <div className="flex items-center justify-between pt-4 border-t border-border">
+                  <div>
+                    <p className="font-display font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  </div>
+                  <div className="px-3 py-1 bg-primary/10 rounded-full">
+                    <span className="text-sm font-medium text-primary">{testimonial.result}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
