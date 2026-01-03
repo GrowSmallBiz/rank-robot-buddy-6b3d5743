@@ -262,8 +262,113 @@ const ReputationManagement = () => {
         </div>
       </section>
 
-      {/* Win More Local Business */}
+      {/* How It Works - Step by Step Process */}
       <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">How It Works</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              Your Path to 5-Star Reputation in 4 Simple Steps
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              From setup to results, here's exactly how our AI-powered system transforms your online reputation.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Step 1 */}
+              <div className="relative group animate-fade-up" style={{ animationDelay: '0.1s' }}>
+                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg z-10">
+                  1
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Clock className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-3">
+                    15-Minute Setup
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Connect your Google Business Profile and review platforms. Our team handles the technical setup so you can focus on your business.
+                  </p>
+                </div>
+                {/* Connector line - hidden on mobile */}
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative group animate-fade-up" style={{ animationDelay: '0.2s' }}>
+                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg z-10">
+                  2
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <MessageSquare className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-3">
+                    AI Learns Your Voice
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Our AI studies your brand tone and past responses to craft replies that sound authentically you—professional and consistent.
+                  </p>
+                </div>
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative group animate-fade-up" style={{ animationDelay: '0.3s' }}>
+                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg z-10">
+                  3
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Zap className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-3">
+                    Automation Activates
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Review requests go out automatically to happy customers. AI responds to incoming reviews within minutes, 24/7.
+                  </p>
+                </div>
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative group animate-fade-up" style={{ animationDelay: '0.4s' }}>
+                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg z-10">
+                  4
+                </div>
+                <div className="bg-card border border-border rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <TrendingUp className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-3">
+                    Watch Rankings Climb
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    More reviews mean higher local rankings. Track your progress in real-time as your reputation and visibility grow.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA after steps */}
+            <div className="text-center mt-12 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+              <Link to="/free-assessment">
+                <Button variant="hero" size="xl">
+                  Start My 15-Minute Setup
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Win More Local Business */}
+      <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Win More Local Business</p>
