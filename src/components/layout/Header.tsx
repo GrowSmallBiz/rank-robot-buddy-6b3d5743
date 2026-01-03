@@ -47,7 +47,8 @@ export const Header = () => {
     location.pathname.startsWith("/services/link");
 
   const isGrowthSystemActive = 
-    location.pathname.startsWith("/services/reputation");
+    location.pathname.startsWith("/services/reputation") ||
+    location.pathname.startsWith("/services/ai-receptionist");
 
   const isSEOActive = 
     location.pathname.startsWith("/services/ai-seo") ||
@@ -224,10 +225,16 @@ export const Header = () => {
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-2 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
                   isGrowthSystemOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
+                <Link
+                  to="/services/ai-receptionist"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  AI Receptionist & Conversational AI
+                </Link>
                 <Link
                   to="/services/reputation-management"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
@@ -407,6 +414,13 @@ export const Header = () => {
             </button>
             {mobileGrowthSystemOpen && (
               <div className="pl-4 space-y-2">
+                <Link
+                  to="/services/ai-receptionist"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  AI Receptionist & Conversational AI
+                </Link>
                 <Link
                   to="/services/reputation-management"
                   onClick={() => setIsOpen(false)}
