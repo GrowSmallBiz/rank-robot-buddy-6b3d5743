@@ -421,6 +421,166 @@ const ReputationManagement = () => {
         </div>
       </section>
 
+      {/* Before/After Results Table */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">Real Client Results</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              See What's Possible in 90 Days
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Average improvements across our reputation management clients
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto animate-fade-up">
+            <div className="overflow-hidden rounded-2xl border border-border bg-background">
+              {/* Table Header */}
+              <div className="grid grid-cols-3 bg-muted/50">
+                <div className="p-4 md:p-6 text-center border-r border-border">
+                  <span className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Metric</span>
+                </div>
+                <div className="p-4 md:p-6 text-center border-r border-border">
+                  <span className="text-sm font-semibold text-destructive uppercase tracking-wider">Before</span>
+                </div>
+                <div className="p-4 md:p-6 text-center">
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">After 90 Days</span>
+                </div>
+              </div>
+
+              {/* Average Star Rating */}
+              <div className="grid grid-cols-3 border-t border-border">
+                <div className="p-4 md:p-6 border-r border-border flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Star className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-sm md:text-base font-medium text-foreground">Average Star Rating</span>
+                </div>
+                <div className="p-4 md:p-6 border-r border-border flex items-center justify-center">
+                  <div className="text-center">
+                    <span className="text-2xl md:text-3xl font-display font-bold text-muted-foreground">3.2</span>
+                    <div className="flex items-center justify-center gap-0.5 mt-1">
+                      {[1, 2, 3].map((i) => (
+                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                      ))}
+                      <Star className="w-4 h-4 text-muted-foreground/30" />
+                      <Star className="w-4 h-4 text-muted-foreground/30" />
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4 md:p-6 flex items-center justify-center bg-primary/5">
+                  <div className="text-center">
+                    <span className="text-2xl md:text-3xl font-display font-bold text-primary">4.8</span>
+                    <div className="flex items-center justify-center gap-0.5 mt-1">
+                      {[1, 2, 3, 4, 5].map((i) => (
+                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Total Review Count */}
+              <div className="grid grid-cols-3 border-t border-border">
+                <div className="p-4 md:p-6 border-r border-border flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <MessageSquare className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-sm md:text-base font-medium text-foreground">Total Review Count</span>
+                </div>
+                <div className="p-4 md:p-6 border-r border-border flex items-center justify-center">
+                  <span className="text-2xl md:text-3xl font-display font-bold text-muted-foreground">23</span>
+                </div>
+                <div className="p-4 md:p-6 flex items-center justify-center bg-primary/5">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl md:text-3xl font-display font-bold text-primary">127</span>
+                    <span className="text-xs font-semibold text-primary bg-primary/20 px-2 py-1 rounded-full">+452%</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Response Time */}
+              <div className="grid grid-cols-3 border-t border-border">
+                <div className="p-4 md:p-6 border-r border-border flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-sm md:text-base font-medium text-foreground">Avg. Response Time</span>
+                </div>
+                <div className="p-4 md:p-6 border-r border-border flex items-center justify-center">
+                  <span className="text-2xl md:text-3xl font-display font-bold text-muted-foreground">3+ days</span>
+                </div>
+                <div className="p-4 md:p-6 flex items-center justify-center bg-primary/5">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl md:text-3xl font-display font-bold text-primary">&lt;2 hrs</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Response Rate */}
+              <div className="grid grid-cols-3 border-t border-border">
+                <div className="p-4 md:p-6 border-r border-border flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <BarChart3 className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-sm md:text-base font-medium text-foreground">Review Response Rate</span>
+                </div>
+                <div className="p-4 md:p-6 border-r border-border flex items-center justify-center">
+                  <span className="text-2xl md:text-3xl font-display font-bold text-muted-foreground">12%</span>
+                </div>
+                <div className="p-4 md:p-6 flex items-center justify-center bg-primary/5">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl md:text-3xl font-display font-bold text-primary">100%</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Local Search Visibility */}
+              <div className="grid grid-cols-3 border-t border-border">
+                <div className="p-4 md:p-6 border-r border-border flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <TrendingUp className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-sm md:text-base font-medium text-foreground">Local Pack Ranking</span>
+                </div>
+                <div className="p-4 md:p-6 border-r border-border flex items-center justify-center">
+                  <span className="text-2xl md:text-3xl font-display font-bold text-muted-foreground">Not Ranking</span>
+                </div>
+                <div className="p-4 md:p-6 flex items-center justify-center bg-primary/5">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl md:text-3xl font-display font-bold text-primary">Top 3</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Monthly New Reviews */}
+              <div className="grid grid-cols-3 border-t border-border">
+                <div className="p-4 md:p-6 border-r border-border flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Zap className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-sm md:text-base font-medium text-foreground">New Reviews/Month</span>
+                </div>
+                <div className="p-4 md:p-6 border-r border-border flex items-center justify-center">
+                  <span className="text-2xl md:text-3xl font-display font-bold text-muted-foreground">1-2</span>
+                </div>
+                <div className="p-4 md:p-6 flex items-center justify-center bg-primary/5">
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl md:text-3xl font-display font-bold text-primary">15-25</span>
+                    <span className="text-xs font-semibold text-primary bg-primary/20 px-2 py-1 rounded-full">10x</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-center text-sm text-muted-foreground mt-6">
+              *Results based on average client data after 90 days of active reputation management
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* System Highlights */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
