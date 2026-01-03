@@ -113,6 +113,16 @@ export const Header = () => {
               Paid Media & Advertising
             </Link>
 
+            {/* Social Media Marketing */}
+            <Link
+              to="/services/social-media"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === "/services/social-media" ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              Social Media
+            </Link>
+
             {/* Industries Dropdown */}
             <div className="relative group">
               <button
@@ -244,6 +254,15 @@ export const Header = () => {
             className="block text-foreground font-medium"
           >
             Paid Media & Advertising
+          </Link>
+
+          {/* Mobile: Social Media */}
+          <Link
+            to="/services/social-media"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            Social Media
           </Link>
 
           {/* Mobile: Industries */}

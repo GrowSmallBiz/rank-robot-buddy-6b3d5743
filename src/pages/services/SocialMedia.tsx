@@ -251,6 +251,7 @@ const testimonials = [
     role: "Owner",
     company: "Radiance Med Spa",
     rating: 5,
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face",
   },
   {
     quote: "Finally, a team that understands HIPAA compliance and still creates engaging content. Our patient engagement has increased by 300%.",
@@ -258,6 +259,7 @@ const testimonials = [
     role: "Dental Director",
     company: "Premier Dental Group",
     rating: 5,
+    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&h=150&fit=crop&crop=face",
   },
   {
     quote: "They helped us build a LinkedIn presence that positioned us as the go-to law firm in our area. We've landed several major clients through social media.",
@@ -265,6 +267,7 @@ const testimonials = [
     role: "Managing Partner",
     company: "Walsh & Associates Law",
     rating: 5,
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
   },
 ];
 
@@ -586,11 +589,18 @@ const SocialMedia = () => {
                 <p className="text-muted-foreground leading-relaxed italic">
                   "{testimonial.quote}"
                 </p>
-                <div className="pt-4 border-t border-border">
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}, {testimonial.company}
-                  </p>
+                <div className="pt-4 border-t border-border flex items-center gap-4">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.author}
+                    className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
+                  />
+                  <div>
+                    <p className="font-semibold text-foreground">{testimonial.author}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.role}, {testimonial.company}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
