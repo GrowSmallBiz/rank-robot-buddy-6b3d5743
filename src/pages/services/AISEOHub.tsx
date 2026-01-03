@@ -1066,13 +1066,14 @@ const AISEOHub = () => {
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="group p-6 rounded-xl bg-card/50 border border-border hover:border-primary/50 transition-all duration-300"
+                  className="group p-6 rounded-xl bg-card/50 border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:bg-card/80"
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center mb-4">
-                    <feature.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/20">
+                    <feature.icon className="w-6 h-6 text-primary transition-all duration-300 group-hover:scale-110" />
                   </div>
-                  <h3 className="text-lg font-bold font-display mb-3 text-foreground">{feature.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
+                  <h3 className="text-lg font-bold font-display mb-3 text-foreground transition-colors duration-300 group-hover:text-primary">{feature.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">{feature.description}</p>
                 </div>
               ))}
             </div>
