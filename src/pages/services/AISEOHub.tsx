@@ -468,6 +468,240 @@ const AISEOHub = () => {
           </div>
         </section>
 
+        {/* ROI Comparison Chart Section */}
+        <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <p className="text-primary font-medium mb-2">The Numbers Don't Lie</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
+                ROI Comparison Over 24 Months
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                See how different marketing channels perform over time. While paid channels 
+                deliver quick wins, only SEO builds lasting value.
+              </p>
+            </div>
+
+            {/* Visual Chart */}
+            <div className="max-w-5xl mx-auto mb-12">
+              <div className="bg-card border border-border rounded-2xl p-8">
+                <div className="relative h-80">
+                  {/* Y-Axis Labels */}
+                  <div className="absolute left-0 top-0 bottom-8 w-16 flex flex-col justify-between text-sm text-muted-foreground">
+                    <span>400%</span>
+                    <span>300%</span>
+                    <span>200%</span>
+                    <span>100%</span>
+                    <span>0%</span>
+                  </div>
+                  
+                  {/* Chart Area */}
+                  <div className="ml-16 h-full relative">
+                    {/* Grid Lines */}
+                    <div className="absolute inset-0 flex flex-col justify-between">
+                      {[0, 1, 2, 3, 4].map((i) => (
+                        <div key={i} className="border-b border-border/50 w-full" />
+                      ))}
+                    </div>
+                    
+                    {/* Bars Container */}
+                    <div className="absolute inset-x-0 bottom-8 top-0 flex items-end justify-around gap-4 px-4">
+                      {/* Paid Ads */}
+                      <div className="flex-1 flex flex-col items-center gap-2">
+                        <div className="w-full max-w-20 bg-destructive/60 rounded-t-lg transition-all duration-500" style={{ height: '25%' }}>
+                          <div className="text-center pt-2 text-sm font-bold text-destructive-foreground">50%</div>
+                        </div>
+                        <span className="text-xs text-muted-foreground text-center">Paid Ads</span>
+                      </div>
+                      
+                      {/* Referrals */}
+                      <div className="flex-1 flex flex-col items-center gap-2">
+                        <div className="w-full max-w-20 bg-orange-500/60 rounded-t-lg transition-all duration-500" style={{ height: '35%' }}>
+                          <div className="text-center pt-2 text-sm font-bold text-white">80%</div>
+                        </div>
+                        <span className="text-xs text-muted-foreground text-center">Referral Sites</span>
+                      </div>
+                      
+                      {/* Social Media */}
+                      <div className="flex-1 flex flex-col items-center gap-2">
+                        <div className="w-full max-w-20 bg-yellow-500/60 rounded-t-lg transition-all duration-500" style={{ height: '20%' }}>
+                          <div className="text-center pt-2 text-sm font-bold text-white">40%</div>
+                        </div>
+                        <span className="text-xs text-muted-foreground text-center">Social Media</span>
+                      </div>
+                      
+                      {/* AI SEO */}
+                      <div className="flex-1 flex flex-col items-center gap-2">
+                        <div className="w-full max-w-20 bg-gradient-to-t from-primary to-accent rounded-t-lg transition-all duration-500" style={{ height: '85%' }}>
+                          <div className="text-center pt-2 text-sm font-bold text-primary-foreground">340%</div>
+                        </div>
+                        <span className="text-xs text-muted-foreground text-center font-semibold">AI SEO</span>
+                      </div>
+                    </div>
+                    
+                    {/* X-Axis Label */}
+                    <div className="absolute bottom-0 left-0 right-0 text-center text-sm text-muted-foreground">
+                      Average ROI at 24 Months
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Comparison Table */}
+            <div className="max-w-5xl mx-auto">
+              <div className="bg-card border border-border rounded-2xl overflow-hidden">
+                {/* Header */}
+                <div className="grid grid-cols-5 bg-secondary/50 border-b border-border text-sm font-medium">
+                  <div className="p-4 text-foreground">Channel</div>
+                  <div className="p-4 text-center text-muted-foreground">Month 1-3</div>
+                  <div className="p-4 text-center text-muted-foreground">Month 6</div>
+                  <div className="p-4 text-center text-muted-foreground">Month 12</div>
+                  <div className="p-4 text-center text-muted-foreground">Month 24</div>
+                </div>
+                
+                {/* Rows */}
+                {[
+                  { channel: "Paid Ads", m3: "Fast leads", m6: "Costs rising", m12: "ROI declining", m24: "50% ROI", highlight: false },
+                  { channel: "Referral Sites", m3: "Shared leads", m6: "High competition", m12: "Price increases", m24: "80% ROI", highlight: false },
+                  { channel: "Social Media", m3: "Low reach", m6: "Inconsistent", m12: "Algorithm changes", m24: "40% ROI", highlight: false },
+                  { channel: "AI SEO", m3: "Building foundation", m6: "Rankings climbing", m12: "Leads compounding", m24: "340% ROI", highlight: true },
+                ].map((row, index) => (
+                  <div
+                    key={index}
+                    className={`grid grid-cols-5 border-b border-border last:border-b-0 ${row.highlight ? 'bg-primary/5' : 'hover:bg-secondary/30'} transition-colors`}
+                  >
+                    <div className={`p-4 ${row.highlight ? 'font-semibold text-primary' : 'text-foreground'}`}>
+                      {row.channel}
+                    </div>
+                    <div className="p-4 text-center text-sm text-muted-foreground">{row.m3}</div>
+                    <div className="p-4 text-center text-sm text-muted-foreground">{row.m6}</div>
+                    <div className="p-4 text-center text-sm text-muted-foreground">{row.m12}</div>
+                    <div className={`p-4 text-center text-sm font-semibold ${row.highlight ? 'text-primary' : 'text-muted-foreground'}`}>
+                      {row.m24}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <p className="text-sm text-muted-foreground italic">
+                *Based on industry averages for local service businesses. Individual results may vary.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Case Studies Section */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <p className="text-primary font-medium mb-2">Real Results</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
+                Client Success Stories
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                See how local service businesses transformed their online presence with our AI SEO strategies.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  industry: "HVAC Contractor",
+                  location: "Denver, CO",
+                  challenge: "Invisible online, relying 100% on paid ads and Angi leads",
+                  results: [
+                    { metric: "Organic Traffic", before: "120/mo", after: "2,400/mo", change: "+1,900%" },
+                    { metric: "Cost Per Lead", before: "$180", after: "$32", change: "-82%" },
+                    { metric: "Monthly Revenue", before: "$45K", after: "$128K", change: "+184%" },
+                  ],
+                  quote: "We went from paying $3,000/month for shared leads to owning page one. Now leads come to us.",
+                  timeline: "12 months",
+                },
+                {
+                  industry: "Dental Practice",
+                  location: "Austin, TX",
+                  challenge: "New practice struggling to compete with established competitors",
+                  results: [
+                    { metric: "Google Map Pack", before: "Not ranked", after: "#1", change: "Top 3" },
+                    { metric: "New Patients", before: "8/mo", after: "47/mo", change: "+488%" },
+                    { metric: "Practice Revenue", before: "$52K", after: "$189K", change: "+264%" },
+                  ],
+                  quote: "Within 6 months we were outranking practices that had been here for 20 years.",
+                  timeline: "9 months",
+                },
+                {
+                  industry: "Med Spa",
+                  location: "Scottsdale, AZ",
+                  challenge: "High ad spend with diminishing returns, no organic presence",
+                  results: [
+                    { metric: "Organic Keywords", before: "23", after: "340+", change: "+1,378%" },
+                    { metric: "Consultation Bookings", before: "15/mo", after: "78/mo", change: "+420%" },
+                    { metric: "Ad Spend Reduction", before: "$8,500/mo", after: "$2,000/mo", change: "-76%" },
+                  ],
+                  quote: "We cut our ad budget by 76% and tripled our leads. AI SEO changed everything.",
+                  timeline: "14 months",
+                },
+              ].map((study, index) => (
+                <div
+                  key={index}
+                  className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl"
+                >
+                  {/* Header */}
+                  <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 border-b border-border">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-sm font-medium text-primary">{study.industry}</span>
+                      <span className="text-xs text-muted-foreground">{study.timeline}</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground flex items-center gap-1">
+                      <MapPin className="w-3 h-3" />
+                      {study.location}
+                    </p>
+                  </div>
+                  
+                  {/* Challenge */}
+                  <div className="p-6 border-b border-border">
+                    <p className="text-sm text-muted-foreground">
+                      <span className="font-semibold text-foreground">Challenge:</span> {study.challenge}
+                    </p>
+                  </div>
+                  
+                  {/* Results */}
+                  <div className="p-6 space-y-4">
+                    {study.results.map((result, idx) => (
+                      <div key={idx} className="flex items-center justify-between text-sm">
+                        <span className="text-muted-foreground">{result.metric}</span>
+                        <div className="flex items-center gap-2">
+                          <span className="text-muted-foreground/60 line-through">{result.before}</span>
+                          <ArrowRight className="w-3 h-3 text-primary" />
+                          <span className="font-semibold text-foreground">{result.after}</span>
+                          <span className="text-xs text-primary font-medium">({result.change})</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  {/* Quote */}
+                  <div className="p-6 bg-secondary/30 border-t border-border">
+                    <p className="text-sm italic text-muted-foreground">"{study.quote}"</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/free-assessment">
+                  Get Results Like These
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Why AI SEO Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
