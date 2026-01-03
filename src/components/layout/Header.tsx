@@ -34,6 +34,7 @@ export const Header = () => {
   const isServiceActive = 
     location.pathname.startsWith("/services/website") ||
     location.pathname.startsWith("/services/social") ||
+    location.pathname.startsWith("/services/paid-media") ||
     location.pathname.startsWith("/services/ai-seo") ||
     location.pathname.startsWith("/services/technical") ||
     location.pathname.startsWith("/services/on-page") ||
@@ -166,18 +167,16 @@ export const Header = () => {
                 >
                   Social Media Management
                 </Link>
+
+                {/* Paid Media & Advertising */}
+                <Link
+                  to="/services/paid-media"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Paid Media & Advertising
+                </Link>
               </div>
             </div>
-
-            {/* Paid Media & Advertising */}
-            <Link
-              to="/services/paid-media"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === "/services/paid-media" ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
-              Paid Media & Advertising
-            </Link>
 
             {/* Industries Dropdown */}
             <div className="relative group">
@@ -338,18 +337,19 @@ export const Header = () => {
                 >
                   Social Media Management
                 </Link>
+
+                {/* Paid Media & Advertising */}
+                <Link
+                  to="/services/paid-media"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Paid Media & Advertising
+                </Link>
               </div>
             )}
           </div>
 
-          {/* Mobile: Paid Media */}
-          <Link
-            to="/services/paid-media"
-            onClick={() => setIsOpen(false)}
-            className="block text-foreground font-medium"
-          >
-            Paid Media & Advertising
-          </Link>
 
           {/* Mobile: Industries */}
           <div className="space-y-2">
