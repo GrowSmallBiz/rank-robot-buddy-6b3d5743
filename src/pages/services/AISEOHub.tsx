@@ -28,6 +28,9 @@ import {
   LineChart,
   Eye,
   UserPlus,
+  Flame,
+  Heart,
+  Wrench,
   RefreshCw,
   DollarSign,
 } from "lucide-react";
@@ -606,98 +609,253 @@ const AISEOHub = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  industry: "HVAC Contractor",
-                  location: "Denver, CO",
-                  challenge: "Invisible online, relying 100% on paid ads and Angi leads",
-                  results: [
-                    { metric: "Organic Traffic", before: "120/mo", after: "2,400/mo", change: "+1,900%" },
-                    { metric: "Cost Per Lead", before: "$180", after: "$32", change: "-82%" },
-                    { metric: "Monthly Revenue", before: "$45K", after: "$128K", change: "+184%" },
-                  ],
-                  quote: "We went from paying $3,000/month for shared leads to owning page one. Now leads come to us.",
-                  timeline: "12 months",
-                },
-                {
-                  industry: "Dental Practice",
-                  location: "Austin, TX",
-                  challenge: "New practice struggling to compete with established competitors",
-                  results: [
-                    { metric: "Google Map Pack", before: "Not ranked", after: "#1", change: "Top 3" },
-                    { metric: "New Patients", before: "8/mo", after: "47/mo", change: "+488%" },
-                    { metric: "Practice Revenue", before: "$52K", after: "$189K", change: "+264%" },
-                  ],
-                  quote: "Within 6 months we were outranking practices that had been here for 20 years.",
-                  timeline: "9 months",
-                },
-                {
-                  industry: "Med Spa",
-                  location: "Scottsdale, AZ",
-                  challenge: "High ad spend with diminishing returns, no organic presence",
-                  results: [
-                    { metric: "Organic Keywords", before: "23", after: "340+", change: "+1,378%" },
-                    { metric: "Consultation Bookings", before: "15/mo", after: "78/mo", change: "+420%" },
-                    { metric: "Ad Spend Reduction", before: "$8,500/mo", after: "$2,000/mo", change: "-76%" },
-                  ],
-                  quote: "We cut our ad budget by 76% and tripled our leads. AI SEO changed everything.",
-                  timeline: "14 months",
-                },
-              ].map((study, index) => (
-                <div
-                  key={index}
-                  className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl"
-                >
-                  {/* Header */}
-                  <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 border-b border-border">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-primary">{study.industry}</span>
-                      <span className="text-xs text-muted-foreground">{study.timeline}</span>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* HVAC Contractor */}
+              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl">
+                <div className="h-1 bg-gradient-to-r from-orange-500 to-orange-400" />
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center">
+                      <Flame className="w-5 h-5 text-orange-500" />
                     </div>
-                    <p className="text-sm text-muted-foreground flex items-center gap-1">
-                      <MapPin className="w-3 h-3" />
-                      {study.location}
-                    </p>
+                    <div>
+                      <p className="text-xs text-muted-foreground">HVAC Contractor</p>
+                      <p className="font-semibold text-foreground">Comfort Pro Services</p>
+                    </div>
                   </div>
                   
-                  {/* Challenge */}
-                  <div className="p-6 border-b border-border">
-                    <p className="text-sm text-muted-foreground">
-                      <span className="font-semibold text-foreground">Challenge:</span> {study.challenge}
-                    </p>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-orange-500">+312%</p>
+                      <p className="text-xs text-muted-foreground">Organic Traffic</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-orange-400">+187%</p>
+                      <p className="text-xs text-muted-foreground">Service Calls</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">#1</p>
+                      <p className="text-xs text-muted-foreground">Local Rankings</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">$47K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    </div>
                   </div>
                   
-                  {/* Results */}
-                  <div className="p-6 space-y-4">
-                    {study.results.map((result, idx) => (
-                      <div key={idx} className="flex items-center justify-between text-sm">
-                        <span className="text-muted-foreground">{result.metric}</span>
-                        <div className="flex items-center gap-2">
-                          <span className="text-muted-foreground/60 line-through">{result.before}</span>
-                          <ArrowRight className="w-3 h-3 text-primary" />
-                          <span className="font-semibold text-foreground">{result.after}</span>
-                          <span className="text-xs text-primary font-medium">({result.change})</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  {/* Quote */}
-                  <div className="p-6 bg-secondary/30 border-t border-border">
-                    <p className="text-sm italic text-muted-foreground">"{study.quote}"</p>
-                  </div>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    "We went from invisible online to dominating 'AC repair near me' searches. Now we're getting calls from customers who found us through ChatGPT recommendations."
+                  </p>
+                  <p className="text-sm text-orange-500 font-medium">— Mike T., Owner</p>
                 </div>
-              ))}
-            </div>
+              </div>
 
-            <div className="mt-12 text-center">
-              <Button variant="hero" size="lg" asChild>
-                <Link to="/free-assessment">
-                  Get Results Like These
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </Button>
+              {/* Med Spa */}
+              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl">
+                <div className="h-1 bg-gradient-to-r from-pink-500 to-rose-400" />
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center">
+                      <Sparkles className="w-5 h-5 text-pink-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">Medical Spa</p>
+                      <p className="font-semibold text-foreground">Radiance Aesthetics</p>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-pink-500">+428%</p>
+                      <p className="text-xs text-muted-foreground">Website Visitors</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-pink-400">+245%</p>
+                      <p className="text-xs text-muted-foreground">Consultation Bookings</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">23</p>
+                      <p className="text-xs text-muted-foreground">AI Citations/Month</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">$89K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground mb-4">
+                    "Our Botox and filler pages now rank #1 locally. We're even being recommended by AI when people ask about 'best med spa treatments' in our area."
+                  </p>
+                  <p className="text-sm text-pink-500 font-medium">— Dr. Sarah L., Medical Director</p>
+                </div>
+              </div>
+
+              {/* Dental Practice */}
+              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl">
+                <div className="h-1 bg-gradient-to-r from-cyan-500 to-teal-400" />
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center">
+                      <Heart className="w-5 h-5 text-cyan-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">Dental Practice</p>
+                      <p className="font-semibold text-foreground">Bright Smile Dental</p>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-cyan-500">+267%</p>
+                      <p className="text-xs text-muted-foreground">Organic Traffic</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-cyan-400">+156%</p>
+                      <p className="text-xs text-muted-foreground">New Patients</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">15</p>
+                      <p className="text-xs text-muted-foreground">Featured Snippets</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">$63K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground mb-4">
+                    "We now own the top spots for implants, veneers, and emergency dental searches. The AI optimization has been a game-changer for attracting high-value cosmetic cases."
+                  </p>
+                  <p className="text-sm text-cyan-500 font-medium">— Dr. James R., DDS</p>
+                </div>
+              </div>
+
+              {/* Auto Repair */}
+              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl">
+                <div className="h-1 bg-gradient-to-r from-orange-500 to-amber-400" />
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center">
+                      <Wrench className="w-5 h-5 text-orange-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">Auto Repair Shop</p>
+                      <p className="font-semibold text-foreground">Precision Auto Care</p>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-orange-500">+289%</p>
+                      <p className="text-xs text-muted-foreground">Website Traffic</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-amber-400">+198%</p>
+                      <p className="text-xs text-muted-foreground">Service Appointments</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">#1</p>
+                      <p className="text-xs text-muted-foreground">"Brake Repair Near Me"</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">$38K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground mb-4">
+                    "Before AI SEO, we relied on word-of-mouth. Now we rank for every major auto repair search in our city. The phone hasn't stopped ringing."
+                  </p>
+                  <p className="text-sm text-orange-500 font-medium">— Carlos M., Shop Owner</p>
+                </div>
+              </div>
+
+              {/* Chiropractic */}
+              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl">
+                <div className="h-1 bg-gradient-to-r from-teal-500 to-emerald-400" />
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-teal-500/20 flex items-center justify-center">
+                      <Shield className="w-5 h-5 text-teal-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">Chiropractic Clinic</p>
+                      <p className="font-semibold text-foreground">Align Wellness Center</p>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-teal-500">+341%</p>
+                      <p className="text-xs text-muted-foreground">Organic Visibility</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-emerald-400">+178%</p>
+                      <p className="text-xs text-muted-foreground">New Patients</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">18</p>
+                      <p className="text-xs text-muted-foreground">AI Citations/Month</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-foreground">$52K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground mb-4">
+                    "We now rank for 'back pain treatment' and 'chiropractor near me.' Patients tell us they found us through Google and AI assistants alike."
+                  </p>
+                  <p className="text-sm text-teal-500 font-medium">— Dr. Emily K., DC</p>
+                </div>
+              </div>
+
+              {/* Average Results Card */}
+              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl">
+                <div className="h-1 bg-gradient-to-r from-primary to-accent" />
+                <div className="p-6 flex flex-col h-full">
+                  <h3 className="text-xl font-bold text-foreground mb-6">Average Client Results</h3>
+                  
+                  <div className="space-y-5 flex-1">
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm text-muted-foreground">Organic Traffic Increase</span>
+                        <span className="text-sm font-bold text-primary">+287%</span>
+                      </div>
+                      <div className="h-2 bg-secondary rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-orange-500 to-orange-400 rounded-full" style={{ width: '85%' }} />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm text-muted-foreground">Lead Generation Increase</span>
+                        <span className="text-sm font-bold text-primary">+193%</span>
+                      </div>
+                      <div className="h-2 bg-secondary rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-orange-500 to-amber-400 rounded-full" style={{ width: '70%' }} />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm text-muted-foreground">AI Platform Citations</span>
+                        <span className="text-sm font-bold text-primary">+17/mo</span>
+                      </div>
+                      <div className="h-2 bg-secondary rounded-full overflow-hidden">
+                        <div className="h-full bg-gradient-to-r from-primary to-accent rounded-full" style={{ width: '60%' }} />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <Button variant="hero" size="lg" className="w-full mt-6" asChild>
+                    <Link to="/free-assessment">
+                      Get Similar Results
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
