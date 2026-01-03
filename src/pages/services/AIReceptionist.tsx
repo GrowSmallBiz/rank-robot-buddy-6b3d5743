@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { BlogSection, BlogPost } from "@/components/sections/BlogSection";
 import heroImage from "@/assets/ai-receptionist-hero.jpg";
 import {
   Phone,
@@ -127,6 +128,33 @@ const AIReceptionist = () => {
       question: "What if the AI gives wrong information to customers?",
       answer: "GrowSmallBiz extensively trains your AI on your specific business information, services, and pricing before going live. We test all responses thoroughly and program the AI to say 'Let me connect you with a team member' for any questions it's unsure about. You can review and update the AI's knowledge base anytime.",
     },
+  ];
+
+  const blogPosts: BlogPost[] = [
+    {
+      title: "How AI Receptionists Are Revolutionizing Small Business",
+      excerpt: "Discover how AI-powered virtual receptionists help small businesses capture more leads, reduce costs, and provide 24/7 customer service.",
+      category: "AI Technology",
+      author: "Sarah Mitchell",
+      date: "Dec 30, 2025",
+      readTime: "7 min read"
+    },
+    {
+      title: "The True Cost of Missed Calls for Service Businesses",
+      excerpt: "Every missed call represents lost revenue. Learn how much missed calls are really costing your business and how to prevent it.",
+      category: "Business Growth",
+      author: "Michael Chen",
+      date: "Dec 26, 2025",
+      readTime: "5 min read"
+    },
+    {
+      title: "AI vs Human Receptionists: Which Is Right for Your Business?",
+      excerpt: "Compare the pros and cons of AI and human receptionists to find the perfect solution for your business needs and budget.",
+      category: "Comparison",
+      author: "Emily Rodriguez",
+      date: "Dec 22, 2025",
+      readTime: "6 min read"
+    }
   ];
 
   // Schema markup for SEO
@@ -662,6 +690,14 @@ const AIReceptionist = () => {
             </div>
           </div>
         </section>
+
+        {/* Blog Section */}
+        <BlogSection
+          posts={blogPosts}
+          title="AI Receptionist Insights"
+          subtitle="Tips and strategies to maximize your AI-powered customer service"
+          viewAllLink="/blog"
+        />
 
         {/* FAQ Section */}
         <FAQSection
