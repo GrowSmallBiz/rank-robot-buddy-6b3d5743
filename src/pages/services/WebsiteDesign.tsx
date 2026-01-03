@@ -33,6 +33,12 @@ import websiteHeroBg from "@/assets/websites-hero.jpg";
 import caseStudyDental from "@/assets/case-study-dental.jpg";
 import caseStudyHvac from "@/assets/case-study-hvac.jpg";
 import caseStudyMedspa from "@/assets/case-study-medspa.jpg";
+import portfolioDental from "@/assets/portfolio-dental-website.jpg";
+import portfolioHvac from "@/assets/portfolio-hvac-website.jpg";
+import portfolioMedspa from "@/assets/portfolio-medspa-website.jpg";
+import portfolioLaw from "@/assets/portfolio-law-website.jpg";
+import portfolioChiro from "@/assets/portfolio-chiro-website.jpg";
+import portfolioRemodeling from "@/assets/portfolio-remodeling-website.jpg";
 
 // FAQs from source
 const faqs = [
@@ -391,6 +397,58 @@ const blogPosts = [
   },
 ];
 
+// Portfolio Items
+const portfolioItems = [
+  {
+    title: "Premier Dental Care",
+    industry: "Dental Practice",
+    description: "Complete rebrand and website redesign resulting in 625% increase in conversions",
+    image: portfolioDental,
+    tags: ["Healthcare", "Lead Generation", "Mobile-First"],
+    results: "+458% Monthly Leads",
+  },
+  {
+    title: "Comfort Pro HVAC",
+    industry: "HVAC Services",
+    description: "Custom website with emergency booking and service area pages",
+    image: portfolioHvac,
+    tags: ["Home Services", "Local SEO", "Booking Integration"],
+    results: "+276% Organic Traffic",
+  },
+  {
+    title: "Glow Medical Spa",
+    industry: "Medical Spa",
+    description: "Luxury website design reflecting premium brand positioning",
+    image: portfolioMedspa,
+    tags: ["Med Spa", "Premium Design", "Gallery"],
+    results: "+220% Premium Bookings",
+  },
+  {
+    title: "Mitchell & Associates",
+    industry: "Law Firm",
+    description: "Professional corporate website with case evaluation forms",
+    image: portfolioLaw,
+    tags: ["Legal", "Professional", "Trust Building"],
+    results: "+185% Qualified Leads",
+  },
+  {
+    title: "Coastal Chiropractic",
+    industry: "Chiropractic Care",
+    description: "Wellness-focused design with patient education resources",
+    image: portfolioChiro,
+    tags: ["Wellness", "Educational", "Appointment Booking"],
+    results: "+338% New Patients",
+  },
+  {
+    title: "Elite Home Remodeling",
+    industry: "Home Remodeling",
+    description: "Portfolio showcase with before/after galleries and project estimator",
+    image: portfolioRemodeling,
+    tags: ["Contractor", "Portfolio", "Lead Capture"],
+    results: "+167% Project Inquiries",
+  },
+];
+
 const WebsiteDesign = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -706,6 +764,88 @@ const WebsiteDesign = () => {
                 <p className="text-muted-foreground">{reason.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Gallery Section */}
+      <section className="py-20">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-block px-4 py-2 mb-4 text-sm font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">
+              Our Portfolio
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Websites That Drive Results
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Explore our collection of conversion-focused websites built for local service businesses across various industries
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {portfolioItems.map((item, index) => (
+              <div
+                key={index}
+                className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary/5"
+              >
+                {/* Image Container */}
+                <div className="relative aspect-video overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={`${item.title} website design`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  
+                  {/* Results Badge */}
+                  <div className="absolute top-4 right-4 px-3 py-1.5 bg-primary text-primary-foreground text-sm font-semibold rounded-full shadow-lg">
+                    {item.results}
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
+                      {item.industry}
+                    </span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    {item.description}
+                  </p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {item.tags.map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="text-xs px-2 py-1 rounded-full bg-secondary text-muted-foreground"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-6">
+              Ready to join our portfolio of successful businesses?
+            </p>
+            <Button variant="hero" size="lg" asChild>
+              <Link to="/free-assessment">
+                Start Your Website Project
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
