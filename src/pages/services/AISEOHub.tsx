@@ -21,6 +21,7 @@ import {
   MapPin,
   Link2,
   ArrowRight,
+  XCircle,
   CheckCircle2,
   Brain,
   Sparkles,
@@ -290,6 +291,176 @@ const AISEOHub = () => {
               <Button variant="hero" size="lg" asChild>
                 <Link to="/free-assessment">
                   Get Your Free AI SEO Audit
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Why To Invest in AI SEO Section */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <p className="text-primary font-medium mb-2">The Foundational Strategy</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
+                Why To Invest in AI SEO
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                While paid ads, referrals, and social media have their place, AI-optimized SEO delivers 
+                compounding returns that make it the foundation every serious business needs.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {/* Other Channels - Limitations */}
+              <div className="bg-card border border-border rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-full bg-destructive/10 flex items-center justify-center">
+                    <XCircle className="w-5 h-5 text-destructive" />
+                  </div>
+                  <h3 className="text-xl font-bold font-display text-foreground">Other Marketing Channels</h3>
+                </div>
+                
+                <div className="space-y-6">
+                  {/* Paid Ads */}
+                  <div className="border-b border-border pb-4">
+                    <h4 className="font-semibold text-foreground mb-2">Paid Ads (PPC, Retargeting)</h4>
+                    <ul className="space-y-2">
+                      {[
+                        "Traffic stops the moment you stop paying",
+                        "Costs increasing 15-20% year over year",
+                        "Click fraud can drain 20%+ of budget",
+                        "Declining trust—70% of users skip ads",
+                        "No lasting equity or asset building",
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <XCircle className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  {/* Referral Services */}
+                  <div className="border-b border-border pb-4">
+                    <h4 className="font-semibold text-foreground mb-2">Referral Services (Angi, Thumbtack, etc.)</h4>
+                    <ul className="space-y-2">
+                      {[
+                        "You're competing with 5+ businesses per lead",
+                        "Pay-per-lead costs are rising rapidly",
+                        "No control over lead quality or volume",
+                        "Builds their brand, not yours",
+                        "You're renting leads, not owning customers",
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <XCircle className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  {/* Organic Social Media */}
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Organic Social Media</h4>
+                    <ul className="space-y-2">
+                      {[
+                        "Algorithm changes tank reach overnight",
+                        "Only 2-5% of followers see your posts",
+                        "Requires constant content creation",
+                        "Users aren't in buying mode—they're scrolling",
+                        "Hard to track direct revenue attribution",
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <XCircle className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* AI SEO - Benefits */}
+              <div className="bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold font-display text-foreground">AI-Optimized SEO</h3>
+                </div>
+                
+                <div className="space-y-6">
+                  {/* Compounding Asset */}
+                  <div className="border-b border-primary/10 pb-4">
+                    <h4 className="font-semibold text-foreground mb-2">A Compounding Business Asset</h4>
+                    <ul className="space-y-2">
+                      {[
+                        "Rankings persist even when you scale back",
+                        "Cost per lead decreases over time",
+                        "Content works for you 24/7/365",
+                        "Builds lasting brand authority and trust",
+                        "You own the traffic—no rent to pay",
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  {/* High-Intent Traffic */}
+                  <div className="border-b border-primary/10 pb-4">
+                    <h4 className="font-semibold text-foreground mb-2">Capture High-Intent Buyers</h4>
+                    <ul className="space-y-2">
+                      {[
+                        "Reach people actively searching for your services",
+                        "53% of all website traffic comes from organic search",
+                        "Organic visitors convert 5x higher than social",
+                        "Local searches drive in-store visits and calls",
+                        "Position yourself at the moment of decision",
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  {/* Future-Proof */}
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Future-Proof Visibility</h4>
+                    <ul className="space-y-2">
+                      {[
+                        "Be cited by ChatGPT, Perplexity, and AI assistants",
+                        "Dominate voice search and smart devices",
+                        "Build knowledge graph authority",
+                        "Prepare for zero-click and AI-generated answers",
+                        "Stay visible as search evolves",
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
+                <strong className="text-foreground">The Bottom Line:</strong> Paid ads, referrals, and social media 
+                are tactics. AI SEO is the foundation. Smart businesses use all channels—but they build 
+                on organic search because it's the only one that compounds into a true business asset.
+              </p>
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/free-assessment">
+                  Get Your Free SEO Assessment
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
