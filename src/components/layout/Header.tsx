@@ -1,13 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 const seoServices = [
   { name: "Technical SEO", href: "/services/technical-seo" },
   { name: "On-Page SEO", href: "/services/on-page-seo" },
-  { name: "Answer Engine Optimization", href: "/services/aeo" },
-  { name: "Generative Engine Optimization", href: "/services/geo" },
+  { name: "Answer Engine Optimization (AEO)", href: "/services/aeo" },
+  { name: "Generative Engine Optimization (GEO)", href: "/services/geo" },
   { name: "Local SEO", href: "/services/local-seo" },
   { name: "Link Building", href: "/services/link-building" },
 ];
@@ -23,11 +23,33 @@ const industries = [
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isSEOServicesOpen, setIsSEOServicesOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileSEOOpen, setMobileSEOOpen] = useState(false);
   const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
   const location = useLocation();
+
+  const isServiceActive = 
+    location.pathname.startsWith("/services/website") ||
+    location.pathname.startsWith("/services/social") ||
+    location.pathname.startsWith("/services/ai-seo") ||
+    location.pathname.startsWith("/services/technical") ||
+    location.pathname.startsWith("/services/on-page") ||
+    location.pathname.startsWith("/services/aeo") ||
+    location.pathname.startsWith("/services/geo") ||
+    location.pathname.startsWith("/services/local") ||
+    location.pathname.startsWith("/services/link");
+
+  const isSEOActive = 
+    location.pathname.startsWith("/services/ai-seo") ||
+    location.pathname.startsWith("/services/technical") ||
+    location.pathname.startsWith("/services/on-page") ||
+    location.pathname.startsWith("/services/aeo") ||
+    location.pathname.startsWith("/services/geo") ||
+    location.pathname.startsWith("/services/local") ||
+    location.pathname.startsWith("/services/link");
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
@@ -54,52 +76,96 @@ export const Header = () => {
               Home
             </Link>
 
-            {/* Managed AI SEO Service Dropdown */}
-            <div className="relative group">
+            {/* Services Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => {
+                setIsServicesOpen(false);
+                setIsSEOServicesOpen(false);
+              }}
+            >
               <button
                 className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname.startsWith("/services/ai-seo") || 
-                  location.pathname.startsWith("/services/technical") ||
-                  location.pathname.startsWith("/services/on-page") ||
-                  location.pathname.startsWith("/services/aeo") ||
-                  location.pathname.startsWith("/services/geo") ||
-                  location.pathname.startsWith("/services/local") ||
-                  location.pathname.startsWith("/services/link")
-                    ? "text-primary" 
-                    : "text-muted-foreground"
+                  isServiceActive ? "text-primary" : "text-muted-foreground"
                 }`}
-                onMouseEnter={() => setIsSEOServicesOpen(true)}
-                onMouseLeave={() => setIsSEOServicesOpen(false)}
               >
-                Managed AI SEO Service
+                Services
                 <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-2 w-80 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
-                  isSEOServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
-                onMouseEnter={() => setIsSEOServicesOpen(true)}
-                onMouseLeave={() => setIsSEOServicesOpen(false)}
               >
-                {/* Main AI SEO Hub Link */}
+                {/* Responsive Website Design */}
                 <Link
-                  to="/services/ai-seo-hub"
-                  className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
+                  to="/services/website-design"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
-                  AI SEO Hub Overview
+                  Responsive Website Design
                 </Link>
-                
-                {/* SEO Sub-services */}
-                {seoServices.map((service) => (
-                  <Link
-                    key={service.href}
-                    to={service.href}
-                    className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+
+                {/* Managed AI SEO Services - with nested submenu */}
+                <div 
+                  className="relative"
+                  onMouseEnter={() => setIsSEOServicesOpen(true)}
+                  onMouseLeave={() => setIsSEOServicesOpen(false)}
+                >
+                  <button
+                    className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm transition-colors hover:bg-secondary ${
+                      isSEOActive ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"
+                    }`}
                   >
-                    {service.name}
-                  </Link>
-                ))}
+                    Managed AI SEO Services
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+
+                  {/* SEO Submenu */}
+                  <div
+                    className={`absolute left-full top-0 ml-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                      isSEOServicesOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
+                    }`}
+                  >
+                    {/* AI SEO Hub Overview */}
+                    <Link
+                      to="/services/ai-seo-hub"
+                      className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
+                    >
+                      AI SEO Hub Overview
+                    </Link>
+                    
+                    {/* SEO Sub-services */}
+                    {seoServices.map((service) => (
+                      <Link
+                        key={service.href}
+                        to={service.href}
+                        className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+
+                    {/* Industries */}
+                    <div className="border-t border-border mt-2 pt-2">
+                      <Link
+                        to="/industries/hvac"
+                        className="block px-4 py-3 rounded-lg text-sm font-medium text-foreground hover:bg-secondary transition-colors"
+                      >
+                        Industries We Serve
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Social Media Management */}
+                <Link
+                  to="/services/social-media"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Social Media Management
+                </Link>
               </div>
             </div>
 
@@ -111,26 +177,6 @@ export const Header = () => {
               }`}
             >
               Paid Media & Advertising
-            </Link>
-
-            {/* Social Media Marketing */}
-            <Link
-              to="/services/social-media"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === "/services/social-media" ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
-              Social Media
-            </Link>
-
-            {/* Website Design */}
-            <Link
-              to="/services/website-design"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === "/services/website-design" ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
-              Websites
             </Link>
 
             {/* Industries Dropdown */}
@@ -225,34 +271,73 @@ export const Header = () => {
             Home
           </Link>
           
-          {/* Mobile: Managed AI SEO Service */}
+          {/* Mobile: Services */}
           <div className="space-y-2">
             <button
-              onClick={() => setMobileSEOOpen(!mobileSEOOpen)}
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               className="flex items-center justify-between w-full text-foreground font-medium"
             >
-              Managed AI SEO Service
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileSEOOpen ? "rotate-180" : ""}`} />
+              Services
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`} />
             </button>
-            {mobileSEOOpen && (
+            {mobileServicesOpen && (
               <div className="pl-4 space-y-2">
+                {/* Responsive Website Design */}
                 <Link
-                  to="/services/ai-seo-hub"
+                  to="/services/website-design"
                   onClick={() => setIsOpen(false)}
-                  className="block py-2 text-primary font-medium"
+                  className="block py-2 text-muted-foreground hover:text-primary"
                 >
-                  AI SEO Hub Overview
+                  Responsive Website Design
                 </Link>
-                {seoServices.map((service) => (
-                  <Link
-                    key={service.href}
-                    to={service.href}
-                    onClick={() => setIsOpen(false)}
-                    className="block py-2 text-muted-foreground hover:text-primary"
+
+                {/* Managed AI SEO Services - nested */}
+                <div className="space-y-2">
+                  <button
+                    onClick={() => setMobileSEOOpen(!mobileSEOOpen)}
+                    className="flex items-center justify-between w-full py-2 text-muted-foreground hover:text-primary"
                   >
-                    {service.name}
-                  </Link>
-                ))}
+                    Managed AI SEO Services
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileSEOOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileSEOOpen && (
+                    <div className="pl-4 space-y-2">
+                      <Link
+                        to="/services/ai-seo-hub"
+                        onClick={() => setIsOpen(false)}
+                        className="block py-2 text-primary font-medium"
+                      >
+                        AI SEO Hub Overview
+                      </Link>
+                      {seoServices.map((service) => (
+                        <Link
+                          key={service.href}
+                          to={service.href}
+                          onClick={() => setIsOpen(false)}
+                          className="block py-2 text-muted-foreground hover:text-primary"
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
+                      <Link
+                        to="/industries/hvac"
+                        onClick={() => setIsOpen(false)}
+                        className="block py-2 text-muted-foreground hover:text-primary font-medium border-t border-border pt-2 mt-2"
+                      >
+                        Industries We Serve
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
+                {/* Social Media Management */}
+                <Link
+                  to="/services/social-media"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Social Media Management
+                </Link>
               </div>
             )}
           </div>
@@ -264,24 +349,6 @@ export const Header = () => {
             className="block text-foreground font-medium"
           >
             Paid Media & Advertising
-          </Link>
-
-          {/* Mobile: Social Media */}
-          <Link
-            to="/services/social-media"
-            onClick={() => setIsOpen(false)}
-            className="block text-foreground font-medium"
-          >
-            Social Media
-          </Link>
-
-          {/* Mobile: Website Design */}
-          <Link
-            to="/services/website-design"
-            onClick={() => setIsOpen(false)}
-            className="block text-foreground font-medium"
-          >
-            Websites
           </Link>
 
           {/* Mobile: Industries */}
