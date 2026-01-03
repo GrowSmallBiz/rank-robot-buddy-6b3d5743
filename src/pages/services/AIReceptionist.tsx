@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
+import heroImage from "@/assets/ai-receptionist-hero.jpg";
 import {
   Phone,
   MessageSquare,
@@ -187,8 +188,13 @@ const AIReceptionist = () => {
 
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
-          <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+        <section className="relative py-24 lg:py-32 overflow-hidden">
+          {/* Background Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          />
+          <div className="absolute inset-0 bg-background/85" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6 animate-fade-up">
