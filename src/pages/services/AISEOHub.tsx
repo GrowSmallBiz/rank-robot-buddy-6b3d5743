@@ -25,6 +25,10 @@ import {
   Brain,
   Sparkles,
   LineChart,
+  Eye,
+  UserPlus,
+  RefreshCw,
+  DollarSign,
 } from "lucide-react";
 
 // Import service images
@@ -34,6 +38,7 @@ import aeoServiceImage from "@/assets/aeo-service.png";
 import geoServiceImage from "@/assets/geo-service.png";
 import localSeoImage from "@/assets/local-seo.png";
 import linkBuildingImage from "@/assets/link-building.png";
+import heroSeoAnalytics from "@/assets/hero-seo-analytics.png";
 
 const services = [
   {
@@ -154,60 +159,146 @@ const whyAISEO = [
   },
 ];
 
+// Growth steps data
+const growthSteps = [
+  {
+    title: "Increase Visibility",
+    description: "Get found across search, maps, and AI platforms",
+    icon: Eye,
+  },
+  {
+    title: "Drive Leads",
+    description: "Attract new prospects through targeted traffic generation",
+    icon: UserPlus,
+  },
+  {
+    title: "Convert Leads",
+    description: "Turn more leads into paying customers with nurturing and automation",
+    icon: RefreshCw,
+  },
+  {
+    title: "Grow Revenue",
+    description: "Boost lifetime value through upsells, reviews, and retention",
+    icon: DollarSign,
+  },
+];
+
 const AISEOHub = () => {
   return (
     <>
       <Helmet>
-        <title>Managed AI SEO Services | GrowSmallBiz - Next-Gen Search Optimization</title>
-        <meta name="description" content="Transform your digital visibility with AI-powered SEO services. From Technical SEO to Answer Engine & Generative Engine Optimization, dominate search in the AI era." />
-        <meta name="keywords" content="AI SEO, managed SEO services, technical SEO, AEO, GEO, local SEO, link building, answer engine optimization, generative engine optimization" />
+        <title>Managed AI SEO Services for Full-Funnel Visibility | GrowSmallBiz</title>
+        <meta name="description" content="Rank higher, get cited, and be surfaced across AI platforms. Enterprise AI SEO that unites technical SEO, AEO, and GEO to make your brand the authoritative answer." />
+        <meta name="keywords" content="AI SEO, managed SEO services, technical SEO, AEO, GEO, local SEO, link building, answer engine optimization, generative engine optimization, full-funnel visibility" />
       </Helmet>
 
       <Header />
 
       <main className="min-h-screen bg-background pt-20">
         {/* Hero Section */}
-        <section className="relative overflow-hidden py-24 lg:py-32">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10" />
-          <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+        <section className="relative overflow-hidden py-16 lg:py-24">
+          {/* Background Effects */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+          <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary mb-6">
-                <Sparkles className="w-4 h-4" />
-                <span className="text-sm font-medium">AI-Powered SEO for the Future of Search</span>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary mb-6">
+                  <Bot className="w-4 h-4" />
+                  <span className="text-sm font-medium">AI-Powered SEO Services</span>
+                </div>
+                
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-foreground leading-tight">
+                  Managed AI SEO Services for{" "}
+                  <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                    Full-Funnel Visibility
+                  </span>
+                </h1>
+                
+                <p className="text-xl text-muted-foreground mb-8 max-w-xl">
+                  Rank higher, get cited, and be surfaced across AI platforms. 
+                  Enterprise AI SEO that unites technical SEO, AEO, and GEO to make 
+                  your brand the authoritative answer.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button variant="hero" size="lg" asChild>
+                    <Link to="/free-assessment">
+                      Start Your AI SEO Strategy
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Link>
+                  </Button>
+                  <Button variant="outline" size="lg" asChild>
+                    <Link to="#services">View Our Services</Link>
+                  </Button>
+                </div>
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-foreground">
-                Managed{" "}
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  AI SEO Services
-                </span>
-              </h1>
-              
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Dominate search engines and AI assistants with our comprehensive AI-powered SEO strategy. 
-                From technical foundations to cutting-edge Answer Engine and Generative Engine Optimization.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="hero" size="lg" asChild>
-                  <Link to="/free-assessment">
-                    Get Free SEO Audit
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/contact">Talk to an Expert</Link>
-                </Button>
+              <div className="relative">
+                <div className="relative">
+                  <img 
+                    src={heroSeoAnalytics} 
+                    alt="SEO Analytics Dashboard showing AI-powered insights and traffic growth"
+                    className="w-full rounded-2xl shadow-2xl"
+                  />
+                  {/* Stats Badge */}
+                  <div className="absolute -bottom-4 right-8 bg-card border border-border rounded-xl px-6 py-4 shadow-xl">
+                    <div className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                      +247%
+                    </div>
+                    <div className="text-sm text-muted-foreground">Avg. Traffic Growth</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Why AI SEO Section */}
+        {/* Growth Steps Section */}
         <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <p className="text-primary font-medium mb-2">Our AI SEO Method</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
+                Full-Funnel AI SEO Strategy
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {growthSteps.map((step, index) => (
+                <div
+                  key={index}
+                  className="group text-center p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
+                >
+                  <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <step.icon className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold font-display mb-2 text-foreground">{step.title}</h3>
+                  <p className="text-muted-foreground">{step.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
+                Our AI-powered SEO methodology takes your brand from invisible to indispensable. 
+                We combine cutting-edge AI analysis with proven SEO fundamentals to dominate 
+                search engines, AI assistants, and generative platforms.
+              </p>
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/free-assessment">
+                  Get Your Free AI SEO Audit
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Why AI SEO Section */}
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
@@ -237,7 +328,7 @@ const AISEOHub = () => {
         </section>
 
         {/* Services Grid Section */}
-        <section className="py-20">
+        <section id="services" className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
@@ -297,7 +388,7 @@ const AISEOHub = () => {
         </section>
 
         {/* AI Monitoring Section */}
-        <section className="py-20 bg-secondary/30">
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -368,7 +459,11 @@ const AISEOHub = () => {
         <TestimonialsSection />
 
         {/* FAQ Section */}
-        <FAQSection faqs={aiSeoFAQs} />
+        <FAQSection 
+          title="AI SEO FAQs"
+          subtitle="Common questions about our AI-powered SEO services"
+          faqs={aiSeoFAQs}
+        />
       </main>
 
       <Footer />
