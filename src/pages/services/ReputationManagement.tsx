@@ -237,6 +237,109 @@ const ReputationManagement = () => {
         </div>
       </section>
 
+      {/* Platform Trust Badges */}
+      <section className="py-16 border-b border-border">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-10 animate-fade-up">
+            <p className="text-sm text-muted-foreground uppercase tracking-wider font-medium">
+              We Monitor & Manage Reviews Across 50+ Platforms Including
+            </p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-5xl mx-auto animate-fade-up">
+            {/* Google */}
+            <div className="flex flex-col items-center gap-2 group">
+              <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+              </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Google</span>
+            </div>
+
+            {/* Facebook */}
+            <div className="flex flex-col items-center gap-2 group">
+              <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#1877F2">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Facebook</span>
+            </div>
+
+            {/* Yelp */}
+            <div className="flex flex-col items-center gap-2 group">
+              <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#FF1A1A">
+                  <path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 0 1 1.596-.206 9.194 9.194 0 0 1 2.364 3.252 1.073 1.073 0 0 1-.694 1.459zm-3.397 5.612a1.073 1.073 0 0 1-.468 1.403 9.2 9.2 0 0 1-3.926 1.182c-.678.062-1.21-.57-1.012-1.2l1.544-4.892c.302-.957 1.591-1.019 1.946-.094l1.916 3.6zm-7.226-.96l-4.063 2.92a1.073 1.073 0 0 1-1.548-.378 9.2 9.2 0 0 1-.695-4.035c.024-.68.712-1.127 1.307-.848l4.612 2.158c.91.425.85 1.716-.163 2.058v.002l.55.123zm-.12-5.596L4.15 9.99a1.073 1.073 0 0 1-.39-1.545 9.2 9.2 0 0 1 2.931-2.655c.578-.35 1.302.02 1.376.7l.575 5.255c.114 1.04-.998 1.713-1.845 1.018l-.4-.113zm2.37-7.79c.083-.666.8-1.06 1.36-.75a9.2 9.2 0 0 1 3.265 2.577c.414.524.19 1.298-.425 1.47l-4.778 1.333c-.94.26-1.638-.747-1.055-1.52l1.634-3.11z"/>
+                </svg>
+              </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Yelp</span>
+            </div>
+
+            {/* BBB */}
+            <div className="flex flex-col items-center gap-2 group">
+              <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <div className="text-center">
+                  <span className="text-xs font-bold text-[#005A8C] leading-none block">BBB</span>
+                  <span className="text-[8px] text-[#005A8C]">ACCREDITED</span>
+                </div>
+              </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">BBB</span>
+            </div>
+
+            {/* Trustpilot */}
+            <div className="flex flex-col items-center gap-2 group">
+              <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#00B67A">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+              </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Trustpilot</span>
+            </div>
+
+            {/* Healthgrades */}
+            <div className="flex flex-col items-center gap-2 group">
+              <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <div className="w-8 h-8 rounded-full bg-[#F47721] flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">H</span>
+                </div>
+              </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Healthgrades</span>
+            </div>
+
+            {/* Angi */}
+            <div className="flex flex-col items-center gap-2 group">
+              <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <div className="w-8 h-8 rounded-lg bg-[#FF6138] flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">angi</span>
+                </div>
+              </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Angi</span>
+            </div>
+
+            {/* Thumbtack */}
+            <div className="flex flex-col items-center gap-2 group">
+              <div className="w-16 h-16 rounded-2xl bg-card border border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/10">
+                <div className="w-8 h-8 rounded-full bg-[#009FD9] flex items-center justify-center">
+                  <ThumbsUp className="w-4 h-4 text-white" />
+                </div>
+              </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">Thumbtack</span>
+            </div>
+          </div>
+
+          <div className="text-center mt-8 animate-fade-up">
+            <p className="text-sm text-muted-foreground">
+              <span className="text-primary font-semibold">+ 42 more platforms</span> including industry-specific review sites
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* System Highlights */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
