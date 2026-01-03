@@ -36,6 +36,7 @@ export const Header = () => {
     location.pathname.startsWith("/services/website") ||
     location.pathname.startsWith("/services/social") ||
     location.pathname.startsWith("/services/paid-media") ||
+    location.pathname.startsWith("/services/reputation") ||
     location.pathname.startsWith("/services/ai-seo") ||
     location.pathname.startsWith("/services/technical") ||
     location.pathname.startsWith("/services/on-page") ||
@@ -199,6 +200,14 @@ export const Header = () => {
                 >
                   Paid Media & Advertising
                 </Link>
+
+                {/* Reputation Management */}
+                <Link
+                  to="/services/reputation-management"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Reputation Management
+                </Link>
               </div>
             </div>
 
@@ -355,6 +364,15 @@ export const Header = () => {
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Paid Media & Advertising
+                </Link>
+
+                {/* Reputation Management */}
+                <Link
+                  to="/services/reputation-management"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Reputation Management
                 </Link>
               </div>
             )}
