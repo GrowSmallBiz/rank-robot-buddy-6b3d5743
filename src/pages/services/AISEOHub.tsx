@@ -43,6 +43,7 @@ import geoServiceImage from "@/assets/geo-service.png";
 import localSeoImage from "@/assets/local-seo.png";
 import linkBuildingImage from "@/assets/link-building.png";
 import heroSeoAnalytics from "@/assets/hero-seo-analytics.png";
+import aiSeoHeroBg from "@/assets/ai-seo-hero-bg.jpg";
 
 const services = [
   {
@@ -201,10 +202,13 @@ const AISEOHub = () => {
       <main className="min-h-screen bg-background pt-20">
         {/* Hero Section */}
         <section className="relative overflow-hidden py-16 lg:py-24">
-          {/* Background Effects */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
-          <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+          {/* Background Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${aiSeoHeroBg})` }}
+          />
+          <div className="absolute inset-0 bg-background/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -255,6 +259,70 @@ const AISEOHub = () => {
                     <div className="text-sm text-muted-foreground">Avg. Traffic Growth</div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What is AI SEO Section */}
+        <section className="py-20 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <p className="text-primary font-medium mb-2">What is AI SEO?</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-6 text-foreground">
+                The Future of Search Visibility
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+                AI SEO combines traditional SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization 
+                (GEO) to ensure your content ranks and is cited across AI platforms like ChatGPT, Gemini, and Claude. We 
+                prepare your content, entities, and structured data so AI systems interpret and trust your brand as an 
+                authoritative source.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {/* Unified Visibility */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Globe className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold font-display mb-2 text-foreground">Unified Visibility</h3>
+                <p className="text-sm text-muted-foreground">
+                  Rank in search engines and appear in AI-generated answers
+                </p>
+              </div>
+
+              {/* Entity Optimization */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Bot className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold font-display mb-2 text-foreground">Entity Optimization</h3>
+                <p className="text-sm text-muted-foreground">
+                  Get your brand clearly recognized and cited by LLMs
+                </p>
+              </div>
+
+              {/* Content Structuring */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Search className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold font-display mb-2 text-foreground">Content Structuring</h3>
+                <p className="text-sm text-muted-foreground">
+                  Transform content into AI-friendly formats and snippets
+                </p>
+              </div>
+
+              {/* AI Monitoring */}
+              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <BarChart3 className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold font-display mb-2 text-foreground">AI Monitoring</h3>
+                <p className="text-sm text-muted-foreground">
+                  Track citations and generative model performance
+                </p>
               </div>
             </div>
           </div>
