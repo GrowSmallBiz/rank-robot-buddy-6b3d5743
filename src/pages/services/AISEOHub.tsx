@@ -33,6 +33,9 @@ import {
   Wrench,
   RefreshCw,
   DollarSign,
+  Clock,
+  Rocket,
+  CalendarDays,
 } from "lucide-react";
 
 // Import service images
@@ -1012,6 +1015,111 @@ const AISEOHub = () => {
           </div>
         </section>
 
+        {/* AI-First Advantage Section */}
+        <section className="py-20 bg-[hsl(217,33%,12%)]">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <span className="text-primary font-medium mb-4 block">Our AI-First Advantage</span>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-6 text-foreground">
+                Why GrowSmallBiz Delivers SEO Results{" "}
+                <span className="text-primary">10x Faster</span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Traditional SEO agencies rely on manual processes that take months to show results. Our AI-powered platform 
+                automates the tedious work while you maintain full control over every decision. The result? Faster rankings, 
+                more leads, and a competitive advantage your competitors can't match.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  icon: Zap,
+                  title: "AI-Powered Automation",
+                  description: "Our intelligent platform handles repetitive SEO tasks automatically—fixing technical issues, optimizing content, and building links—while you focus on running your business. You stay in control with approval workflows for every major change."
+                },
+                {
+                  icon: Brain,
+                  title: "Smart Business Intelligence",
+                  description: "Our AI learns everything about your industry, competitors, and customers. It builds a comprehensive understanding of your business to create content and optimizations that resonate with your specific audience."
+                },
+                {
+                  icon: Rocket,
+                  title: "Faster Search Engine Discovery",
+                  description: "Get found by Google faster with our proprietary technology that accelerates how quickly search engines discover and index your new content—often reducing wait times from weeks to days."
+                },
+                {
+                  icon: RefreshCw,
+                  title: "Rapid Content Distribution",
+                  description: "Your optimized content spreads across the web through our network of authority sites, building backlinks and brand mentions that traditional agencies take months to achieve."
+                },
+                {
+                  icon: Eye,
+                  title: "AI Visibility Tracking",
+                  description: "Monitor how your business appears in AI-powered search tools like ChatGPT, Gemini, and Perplexity. We track when and how AI platforms recommend your services to potential customers."
+                },
+                {
+                  icon: MapPin,
+                  title: "Local Business Profile Mastery",
+                  description: "Dominate Google Maps and local search with automated profile optimization, review management, and local citation building across hundreds of directories—all managed from one platform."
+                }
+              ].map((feature, index) => (
+                <div
+                  key={index}
+                  className="group p-6 rounded-xl bg-card/50 border border-border hover:border-primary/50 transition-all duration-300"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center mb-4">
+                    <feature.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold font-display mb-3 text-foreground">{feature.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom Highlights Bar */}
+            <div className="bg-card/30 border border-border rounded-2xl p-8 mb-10">
+              <div className="grid md:grid-cols-3 gap-8">
+                {[
+                  {
+                    icon: Clock,
+                    title: "You Stay in Control",
+                    description: "AI handles the work, but you approve every major change before it goes live"
+                  },
+                  {
+                    icon: Zap,
+                    title: "Results in Weeks, Not Months",
+                    description: "Automation accelerates every step of the SEO process"
+                  },
+                  {
+                    icon: Brain,
+                    title: "Continuous Optimization",
+                    description: "AI monitors and improves your SEO 24/7, not just during business hours"
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="text-center">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mx-auto mb-4">
+                      <item.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center">
+              <Button variant="hero" size="xl" asChild>
+                <Link to="/free-assessment">
+                  Start Your AI-Powered SEO Journey
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Why AI SEO Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
@@ -1179,6 +1287,93 @@ const AISEOHub = () => {
           subtitle="Common questions about our AI-powered SEO services"
           faqs={aiSeoFAQs}
         />
+
+        {/* Latest SEO Blog Section */}
+        <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <span className="text-primary font-medium mb-4 block">Latest Insights</span>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
+                SEO Blog & Resources
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Stay ahead with the latest AI SEO strategies, tips, and industry insights
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "How AI is Transforming Local SEO for Small Businesses",
+                  excerpt: "Discover how artificial intelligence is revolutionizing local search optimization and helping small businesses compete with larger competitors.",
+                  category: "AI & SEO",
+                  date: "Dec 28, 2024",
+                  readTime: "5 min read"
+                },
+                {
+                  title: "The Complete Guide to Answer Engine Optimization (AEO)",
+                  excerpt: "Learn how to optimize your content for AI-powered search engines like ChatGPT, Gemini, and Perplexity to capture the next generation of searchers.",
+                  category: "AEO",
+                  date: "Dec 22, 2024",
+                  readTime: "8 min read"
+                },
+                {
+                  title: "2025 SEO Trends: What Small Businesses Need to Know",
+                  excerpt: "Explore the emerging trends that will shape search engine optimization in 2025 and how to prepare your business for success.",
+                  category: "Trends",
+                  date: "Dec 15, 2024",
+                  readTime: "6 min read"
+                }
+              ].map((post, index) => (
+                <Link
+                  key={index}
+                  to="/blog"
+                  className="group block bg-card rounded-2xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                >
+                  <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                    <FileText className="w-16 h-16 text-primary/50" />
+                  </div>
+                  
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
+                        {post.category}
+                      </span>
+                      <span className="text-xs text-muted-foreground">{post.readTime}</span>
+                    </div>
+                    
+                    <h3 className="text-lg font-bold font-display mb-3 text-foreground group-hover:text-primary transition-colors line-clamp-2">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <CalendarDays className="w-4 h-4" />
+                        {post.date}
+                      </div>
+                      <div className="flex items-center gap-1 text-primary font-medium text-sm">
+                        Read More
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            
+            <div className="text-center mt-12">
+              <Button variant="heroOutline" size="lg" asChild>
+                <Link to="/blog">
+                  View All Articles
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
