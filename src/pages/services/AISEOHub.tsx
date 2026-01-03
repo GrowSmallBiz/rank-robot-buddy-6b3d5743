@@ -748,235 +748,215 @@ const AISEOHub = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* HVAC Contractor */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group">
-                <div className="relative h-32 overflow-hidden">
-                  <img 
-                    src={caseStudyHvac} 
-                    alt="HVAC technician servicing air conditioning" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
-                  <div className="absolute bottom-3 left-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center backdrop-blur-sm">
-                        <Flame className="w-4 h-4 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-muted-foreground">HVAC Contractor</p>
-                        <p className="font-semibold text-foreground text-sm">Comfort Pro Services</p>
-                      </div>
+              <div className="relative border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group min-h-[420px]">
+                <img 
+                  src={caseStudyHvac} 
+                  alt="HVAC technician servicing air conditioning" 
+                  className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/90 to-card/40" />
+                <div className="relative h-full flex flex-col justify-end p-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center backdrop-blur-sm border border-orange-500/30">
+                      <Flame className="w-5 h-5 text-orange-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">HVAC Contractor</p>
+                      <p className="font-semibold text-foreground">Comfort Pro Services</p>
                     </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-orange-500">+312%</p>
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-orange-500">+312%</p>
                       <p className="text-xs text-muted-foreground">Organic Traffic</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-orange-400">+187%</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-orange-400">+187%</p>
                       <p className="text-xs text-muted-foreground">Service Calls</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">#1</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">#1</p>
                       <p className="text-xs text-muted-foreground">Local Rankings</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">$47K</p>
-                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">$47K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    "We went from invisible online to dominating 'AC repair near me' searches. Now we're getting calls from customers who found us through ChatGPT recommendations."
+                  <p className="text-sm text-muted-foreground mb-3">
+                    "We went from invisible online to dominating 'AC repair near me' searches."
                   </p>
                   <p className="text-sm text-orange-500 font-medium">— Mike T., Owner</p>
                 </div>
               </div>
 
               {/* Med Spa */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group">
-                <div className="relative h-32 overflow-hidden">
-                  <img 
-                    src={caseStudyMedspa} 
-                    alt="Luxury medical spa treatment room" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
-                  <div className="absolute bottom-3 left-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center backdrop-blur-sm">
-                        <Sparkles className="w-4 h-4 text-pink-500" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-muted-foreground">Medical Spa</p>
-                        <p className="font-semibold text-foreground text-sm">Radiance Aesthetics</p>
-                      </div>
+              <div className="relative border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group min-h-[420px]">
+                <img 
+                  src={caseStudyMedspa} 
+                  alt="Luxury medical spa treatment room" 
+                  className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/90 to-card/40" />
+                <div className="relative h-full flex flex-col justify-end p-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center backdrop-blur-sm border border-pink-500/30">
+                      <Sparkles className="w-5 h-5 text-pink-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">Medical Spa</p>
+                      <p className="font-semibold text-foreground">Radiance Aesthetics</p>
                     </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-pink-500">+428%</p>
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-pink-500">+428%</p>
                       <p className="text-xs text-muted-foreground">Website Visitors</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-pink-400">+245%</p>
-                      <p className="text-xs text-muted-foreground">Consultation Bookings</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-pink-400">+245%</p>
+                      <p className="text-xs text-muted-foreground">Bookings</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">23</p>
-                      <p className="text-xs text-muted-foreground">AI Citations/Month</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">23</p>
+                      <p className="text-xs text-muted-foreground">AI Citations/Mo</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">$89K</p>
-                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">$89K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    "Our Botox and filler pages now rank #1 locally. We're even being recommended by AI when people ask about 'best med spa treatments' in our area."
+                  <p className="text-sm text-muted-foreground mb-3">
+                    "Our Botox pages now rank #1 locally. We're recommended by AI assistants too."
                   </p>
                   <p className="text-sm text-pink-500 font-medium">— Dr. Sarah L., Medical Director</p>
                 </div>
               </div>
 
               {/* Dental Practice */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group">
-                <div className="relative h-32 overflow-hidden">
-                  <img 
-                    src={caseStudyDental} 
-                    alt="Modern dental office treatment room" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
-                  <div className="absolute bottom-3 left-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center backdrop-blur-sm">
-                        <Heart className="w-4 h-4 text-cyan-500" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-muted-foreground">Dental Practice</p>
-                        <p className="font-semibold text-foreground text-sm">Bright Smile Dental</p>
-                      </div>
+              <div className="relative border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group min-h-[420px]">
+                <img 
+                  src={caseStudyDental} 
+                  alt="Modern dental office treatment room" 
+                  className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/90 to-card/40" />
+                <div className="relative h-full flex flex-col justify-end p-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center backdrop-blur-sm border border-cyan-500/30">
+                      <Heart className="w-5 h-5 text-cyan-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">Dental Practice</p>
+                      <p className="font-semibold text-foreground">Bright Smile Dental</p>
                     </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-cyan-500">+267%</p>
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-cyan-500">+267%</p>
                       <p className="text-xs text-muted-foreground">Organic Traffic</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-cyan-400">+156%</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-cyan-400">+156%</p>
                       <p className="text-xs text-muted-foreground">New Patients</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">15</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">15</p>
                       <p className="text-xs text-muted-foreground">Featured Snippets</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">$63K</p>
-                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">$63K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    "We now own the top spots for implants, veneers, and emergency dental searches. The AI optimization has been a game-changer for attracting high-value cosmetic cases."
+                  <p className="text-sm text-muted-foreground mb-3">
+                    "We own the top spots for implants, veneers, and emergency dental searches."
                   </p>
                   <p className="text-sm text-cyan-500 font-medium">— Dr. James R., DDS</p>
                 </div>
               </div>
 
               {/* Auto Repair */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group">
-                <div className="relative h-32 overflow-hidden">
-                  <img 
-                    src={caseStudyAutorepair} 
-                    alt="Auto repair shop with mechanic" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
-                  <div className="absolute bottom-3 left-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center backdrop-blur-sm">
-                        <Wrench className="w-4 h-4 text-orange-500" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-muted-foreground">Auto Repair Shop</p>
-                        <p className="font-semibold text-foreground text-sm">Precision Auto Care</p>
-                      </div>
+              <div className="relative border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group min-h-[420px]">
+                <img 
+                  src={caseStudyAutorepair} 
+                  alt="Auto repair shop with mechanic" 
+                  className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/90 to-card/40" />
+                <div className="relative h-full flex flex-col justify-end p-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center backdrop-blur-sm border border-orange-500/30">
+                      <Wrench className="w-5 h-5 text-orange-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">Auto Repair Shop</p>
+                      <p className="font-semibold text-foreground">Precision Auto Care</p>
                     </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-orange-500">+289%</p>
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-orange-500">+289%</p>
                       <p className="text-xs text-muted-foreground">Website Traffic</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-amber-400">+198%</p>
-                      <p className="text-xs text-muted-foreground">Service Appointments</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-amber-400">+198%</p>
+                      <p className="text-xs text-muted-foreground">Appointments</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">#1</p>
-                      <p className="text-xs text-muted-foreground">"Brake Repair Near Me"</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">#1</p>
+                      <p className="text-xs text-muted-foreground">Brake Repair</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">$38K</p>
-                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">$38K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    "Before AI SEO, we relied on word-of-mouth. Now we rank for every major auto repair search in our city. The phone hasn't stopped ringing."
+                  <p className="text-sm text-muted-foreground mb-3">
+                    "Now we rank for every major auto repair search in our city."
                   </p>
                   <p className="text-sm text-orange-500 font-medium">— Carlos M., Shop Owner</p>
                 </div>
               </div>
 
               {/* Chiropractic */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group">
-                <div className="relative h-32 overflow-hidden">
-                  <img 
-                    src={caseStudyChiro} 
-                    alt="Chiropractor treating patient" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
-                  <div className="absolute bottom-3 left-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-teal-500/20 flex items-center justify-center backdrop-blur-sm">
-                        <Shield className="w-4 h-4 text-teal-500" />
-                      </div>
-                      <div>
-                        <p className="text-xs text-muted-foreground">Chiropractic Clinic</p>
-                        <p className="font-semibold text-foreground text-sm">Align Wellness Center</p>
-                      </div>
+              <div className="relative border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group min-h-[420px]">
+                <img 
+                  src={caseStudyChiro} 
+                  alt="Chiropractor treating patient" 
+                  className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/90 to-card/40" />
+                <div className="relative h-full flex flex-col justify-end p-6">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-teal-500/20 flex items-center justify-center backdrop-blur-sm border border-teal-500/30">
+                      <Shield className="w-5 h-5 text-teal-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground">Chiropractic Clinic</p>
+                      <p className="font-semibold text-foreground">Align Wellness Center</p>
                     </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-teal-500">+341%</p>
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-teal-500">+341%</p>
                       <p className="text-xs text-muted-foreground">Organic Visibility</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-emerald-400">+178%</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-emerald-400">+178%</p>
                       <p className="text-xs text-muted-foreground">New Patients</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">18</p>
-                      <p className="text-xs text-muted-foreground">AI Citations/Month</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">18</p>
+                      <p className="text-xs text-muted-foreground">AI Citations/Mo</p>
                     </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-foreground">$52K</p>
-                      <p className="text-xs text-muted-foreground">Monthly Revenue Added</p>
+                    <div className="text-center bg-background/50 backdrop-blur-sm rounded-lg py-2">
+                      <p className="text-xl font-bold text-foreground">$52K</p>
+                      <p className="text-xs text-muted-foreground">Monthly Revenue</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    "We now rank for 'back pain treatment' and 'chiropractor near me.' Patients tell us they found us through Google and AI assistants alike."
+                  <p className="text-sm text-muted-foreground mb-3">
+                    "We rank for 'back pain treatment' and 'chiropractor near me.'"
                   </p>
                   <p className="text-sm text-teal-500 font-medium">— Dr. Emily K., DC</p>
                 </div>
