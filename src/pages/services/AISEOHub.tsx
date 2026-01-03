@@ -389,48 +389,62 @@ const AISEOHub = () => {
             {/* Feature Cards */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               {/* 24/7 Lead Generation */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+              <div className="group bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold font-display mb-2 text-foreground">24/7 Lead Generation</h3>
+                <div className="text-2xl font-bold text-primary mb-2 animate-fade-in">Always On</div>
                 <p className="text-sm text-muted-foreground">
                   Unlike ads that stop when your budget runs out, SEO works around the clock. Your website attracts qualified leads while you focus on running your business.
                 </p>
               </div>
 
               {/* Higher Trust, Higher Tickets */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+              <div className="group bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Shield className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold font-display mb-2 text-foreground">Higher Trust, Higher Tickets</h3>
+                <div className="text-2xl font-bold text-primary mb-2 animate-fade-in">70% More Trust</div>
                 <p className="text-sm text-muted-foreground">
                   Organic search results command 70% more trust than paid ads. For high-ticket services like HVAC systems or cosmetic procedures, trust directly translates to revenue.
                 </p>
               </div>
 
               {/* Compounding Returns */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+              <div className="group bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold font-display mb-2 text-foreground">Compounding Returns</h3>
+                <div className="text-2xl font-bold text-primary mb-2 animate-fade-in">Years of ROI</div>
                 <p className="text-sm text-muted-foreground">
                   Every dollar invested in SEO builds lasting authority. Unlike paid ads that disappear instantly, your rankings compound over time—delivering returns for years.
                 </p>
               </div>
 
               {/* AI-Ready Visibility */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+              <div className="group bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Bot className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold font-display mb-2 text-foreground">AI-Ready Visibility</h3>
+                <div className="text-2xl font-bold text-primary mb-2 animate-fade-in">Future-Proof</div>
                 <p className="text-sm text-muted-foreground">
                   Patients and homeowners increasingly ask AI for recommendations. Position your practice as the answer AI platforms cite when they search for services like yours.
                 </p>
               </div>
+            </div>
+
+            {/* Subheader for Comparison */}
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold font-display text-foreground mb-2">
+                The Limitations of Other Channels
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                See why paid ads, referral platforms, and social media fall short compared to AI-optimized SEO
+              </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
