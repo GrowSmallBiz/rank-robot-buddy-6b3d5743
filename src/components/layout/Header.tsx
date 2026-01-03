@@ -123,6 +123,16 @@ export const Header = () => {
               Social Media
             </Link>
 
+            {/* Website Design */}
+            <Link
+              to="/services/website-design"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === "/services/website-design" ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              Websites
+            </Link>
+
             {/* Industries Dropdown */}
             <div className="relative group">
               <button
@@ -263,6 +273,15 @@ export const Header = () => {
             className="block text-foreground font-medium"
           >
             Social Media
+          </Link>
+
+          {/* Mobile: Website Design */}
+          <Link
+            to="/services/website-design"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            Websites
           </Link>
 
           {/* Mobile: Industries */}
