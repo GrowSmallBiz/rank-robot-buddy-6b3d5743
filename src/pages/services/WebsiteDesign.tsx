@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import {
   ArrowRight,
   CheckCircle2,
@@ -391,7 +393,8 @@ const blogPosts = [
 
 const WebsiteDesign = () => {
   return (
-    <>
+    <div className="min-h-screen bg-background">
+      <Header />
       <Helmet>
         <title>Conversion Focused Website Design | Lead-Generating Websites for Local Businesses</title>
         <meta
@@ -897,12 +900,13 @@ const WebsiteDesign = () => {
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              ✓ Free consultation  ✓ Custom strategy  ✓ No commitment required
+            ✓ Free consultation  ✓ Custom strategy  ✓ No commitment required
             </p>
           </div>
         </div>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 };
 
