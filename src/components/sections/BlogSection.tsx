@@ -518,4 +518,55 @@ export const paidMediaBlogPosts: BlogPost[] = [
   }
 ];
 
+export const reputationManagementBlogPosts: BlogPost[] = [
+  {
+    title: "The Complete Guide to Google Review Management in 2025",
+    excerpt: "Learn how to build a 5-star reputation on Google, respond to reviews professionally, and turn customer feedback into your best marketing tool.",
+    category: "Reviews",
+    author: "Sarah Mitchell",
+    date: "Dec 28, 2025",
+    readTime: "9 min read"
+  },
+  {
+    title: "AI-Powered Review Response: Best Practices",
+    excerpt: "Discover how AI can help you respond to every review within minutes while maintaining your authentic brand voice.",
+    category: "AI Automation",
+    author: "Michael Chen",
+    date: "Dec 24, 2025",
+    readTime: "7 min read"
+  },
+  {
+    title: "How to Handle Negative Reviews Without Damaging Your Brand",
+    excerpt: "Turn negative feedback into opportunities. Learn the proven framework for responding to unhappy customers professionally.",
+    category: "Crisis Management",
+    author: "Dr. Emily Rodriguez",
+    date: "Dec 20, 2025",
+    readTime: "6 min read"
+  },
+  {
+    title: "Review Generation Strategies That Actually Work",
+    excerpt: "Stop leaving reviews to chance. Implement automated systems that consistently generate positive feedback from happy customers.",
+    category: "Automation",
+    author: "David Martinez",
+    date: "Dec 16, 2025",
+    readTime: "8 min read"
+  },
+  {
+    title: "Online Reputation & Local SEO: The Connection Explained",
+    excerpt: "Understand how your review profile directly impacts local search rankings and how to leverage reviews for better visibility.",
+    category: "Local SEO",
+    author: "Sarah Mitchell",
+    date: "Dec 12, 2025",
+    readTime: "7 min read"
+  },
+  {
+    title: "Multi-Platform Reputation Management: Beyond Google",
+    excerpt: "Monitor and manage your reputation across Yelp, Facebook, industry sites, and 50+ platforms from one dashboard.",
+    category: "Strategy",
+    author: "Michael Chen",
+    date: "Dec 8, 2025",
+    readTime: "6 min read"
+  }
+];
+
 export default BlogSection;
