@@ -107,12 +107,12 @@ const services = [
     icon: MessageCircle,
   },
   {
-    title: "24x7 AI Employee",
-    description: "Never miss a lead with 24/7 instant responses and AI-powered automation.",
+    title: "AI Receptionist & Conversational AI",
+    description: "Never miss a lead with 24/7 instant responses and AI-powered automation across calls, website chat, SMS, and social media.",
     features: [
       "Never Miss a Lead With 24/7 Instant Responses",
-      "Handle Calls, Chats, and DMs Automatically",
-      "Deliver Consistent, Professional Answers",
+      "AI Voice Receptionist for Inbound Calls",
+      "AI Chat on Website, SMS & Social Media",
       "Qualify Prospects & Book Appointments 24×7",
       "Free Up Your Team's Time",
     ],
@@ -120,13 +120,13 @@ const services = [
     icon: Bot,
   },
   {
-    title: "AI Powered CRM 24x7",
+    title: "AI Client Growth System",
     description: "Convert more leads into paying customers with intelligent automation.",
     features: [
       "Convert More Leads Into Paying Customers",
       "Email & SMS Templates",
       "Automated Email & SMS followups 24×7",
-      "AI Receptionist & Chatbots",
+      "Lead Nurturing & Pipeline Management",
     ],
     href: "/services/crm",
     icon: Users,
