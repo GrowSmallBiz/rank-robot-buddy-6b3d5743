@@ -25,7 +25,8 @@ import {
   Heart,
   Home,
   Briefcase,
-  GraduationCap
+  GraduationCap,
+  ArrowUpRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -323,7 +324,10 @@ const QuadBots = () => {
                     Schedule a personalized demo to see how Quad Bots can transform your sales process and boost your revenue.
                   </p>
                   <Button size="lg" variant="secondary" asChild>
-                    <Link to="/contact">{baseContactCTA.buttonText}</Link>
+                    <Link to="/contact" className="inline-flex items-center gap-2">
+                      {baseContactCTA.buttonText}
+                      <ArrowUpRight className="w-5 h-5" />
+                    </Link>
                   </Button>
                 </div>
               </div>
