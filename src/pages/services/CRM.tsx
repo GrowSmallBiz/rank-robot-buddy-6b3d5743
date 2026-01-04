@@ -811,7 +811,7 @@ const CRM = () => {
                   key={index}
                   className={`relative bg-card/95 backdrop-blur-sm border rounded-2xl p-8 animate-fade-up transition-all hover:translate-y-[-4px] ${
                     plan.popular 
-                      ? "border-primary shadow-xl shadow-primary/20 ring-1 ring-primary/30" 
+                      ? "border-primary shadow-xl shadow-primary/20 ring-1 ring-primary/30 hover:shadow-[0_0_60px_rgba(255,127,80,0.6)]" 
                       : "border-ghl-icon hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                   }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
