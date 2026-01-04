@@ -315,11 +315,11 @@ const QuadBots = () => {
                   </h3>
                   <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
                 </div>
-                <div className="flex-1 text-center md:text-left">
+                <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
                   <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
                     See These Features in Action
                   </h2>
-                  <p className="text-primary-foreground/80 mb-6 max-w-lg md:mx-0 mx-auto">
+                  <p className="text-primary-foreground/80 mb-6 max-w-lg">
                     Schedule a personalized demo to see how Quad Bots can transform your sales process and boost your revenue.
                   </p>
                   <Button size="lg" variant="secondary" asChild>
