@@ -60,6 +60,9 @@ export default {
         },
         ghl: {
           section: "hsl(var(--ghl-section-bg))",
+          "section-gray": "hsl(var(--ghl-section-gray))",
+          "section-black": "hsl(var(--ghl-section-black))",
+          "section-form": "hsl(var(--ghl-section-form))",
           card: "hsl(var(--ghl-card-bg))",
           border: "hsl(var(--ghl-card-border))",
           icon: "hsl(var(--ghl-icon))",
