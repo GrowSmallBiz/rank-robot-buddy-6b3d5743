@@ -714,7 +714,7 @@ const CRM = () => {
               {industryCategories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-card/70 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/30 hover:bg-card transition-all"
+                  className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 animate-fade-up transition-all shadow-[0_0_20px_rgba(255,127,80,0.3)] hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <h3 className="text-lg font-semibold text-foreground mb-4 pb-3 border-b border-border">{category.title}</h3>
