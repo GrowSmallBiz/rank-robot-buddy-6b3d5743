@@ -377,7 +377,7 @@ const QuadBots = () => {
         <section className="py-24 lg:py-40 section-dark">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="relative rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row" style={{ background: 'linear-gradient(135deg, hsl(24 95% 55%) 0%, hsl(24 90% 50%) 20%, hsl(190 60% 50%) 60%, hsl(195 70% 55%) 100%)' }}>
+              <div className="relative rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row" style={{ background: 'linear-gradient(135deg, hsl(195 70% 50%) 0%, hsl(190 55% 55%) 40%, hsl(30 70% 55%) 80%, hsl(24 80% 55%) 100%)' }}>
                 
                 {/* Left Section: Photo + Name/Title */}
                 <div className="flex-shrink-0 relative z-10 p-8 md:p-12 flex flex-col items-center justify-center bg-black/10 border-b md:border-b-0 md:border-r border-white/20">
