@@ -777,7 +777,7 @@ const CRM = () => {
               {demoVideos.map((video, index) => (
                 <div
                   key={index}
-                  className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-4 text-center animate-fade-up hover:border-primary/50 hover:bg-card transition-all cursor-pointer group"
+                  className="bg-card/60 backdrop-blur-sm border border-ghl-icon rounded-xl p-4 text-center animate-fade-up transition-all cursor-pointer group hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/20 transition-colors">
