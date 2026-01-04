@@ -58,7 +58,7 @@ export const FAQSection = ({
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-black border rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_30px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_30px_rgba(255,127,80,0.5)]"
+                className="bg-black border rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                 style={{ animationDelay: `${index * 0.05}s`, borderColor: '#ff7f50ff' }}
               >
                 <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-5 hover:no-underline">
