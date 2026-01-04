@@ -667,8 +667,8 @@ const CRM = () => {
         </section>
 
         {/* Industry Leading Features */}
-        <section className="relative py-20 bg-card border-t border-primary/10">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/20 to-transparent" />
+        <section className="relative py-20 bg-card/80 border-t border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -680,16 +680,14 @@ const CRM = () => {
               {industryLeadingFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 p-4 rounded-xl animate-fade-up bg-card/50 border border-border hover:border-primary/30 transition-colors"
+                  className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 animate-fade-up transition-all shadow-[0_0_20px_rgba(255,127,80,0.3)] hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="w-6 h-6 text-primary" />
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <feature.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">{feature.title}</h3>
-                    <p className="text-sm text-muted-foreground">{feature.description}</p>
-                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-4 text-center">{feature.title}</h3>
+                  <p className="text-muted-foreground text-center">{feature.description}</p>
                 </div>
               ))}
             </div>
