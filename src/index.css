@@ -88,6 +88,36 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
   }
+
+  /* Global GHL Card Styles - applies to all cards */
+  .bg-card,
+  .bg-secondary,
+  .bg-secondary\/50,
+  [class*="bg-card"],
+  [class*="bg-secondary"] {
+    background: hsl(var(--ghl-card-bg)) !important;
+    border: 1px solid hsl(var(--ghl-card-border) / 0.25) !important;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .bg-card:hover,
+  .bg-secondary:hover,
+  .bg-secondary\/50:hover,
+  [class*="bg-card"]:hover,
+  [class*="bg-secondary"]:hover {
+    box-shadow: 0 0 30px #17a2b8, 0 0 60px rgba(23, 162, 184, 0.5);
+    transform: translateY(-8px);
+  }
+
+  /* Global GHL Icon Styles */
+  .bg-primary\/10,
+  .bg-primary\/20,
+  [class*="bg-primary\\/10"],
+  [class*="bg-primary\\/20"] {
+    background: linear-gradient(135deg, #ff7f50 0%, #ff7f50 100%) !important;
+    box-shadow: 0 0 10px rgba(255, 127, 80, 0.3);
+  }
 }
 
 @layer components {
