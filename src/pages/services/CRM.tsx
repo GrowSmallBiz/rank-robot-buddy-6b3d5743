@@ -638,7 +638,7 @@ const CRM = () => {
                 <AccordionItem
                   key={category.id}
                   value={category.id}
-                  className="bg-card/70 backdrop-blur-sm border border-border rounded-2xl px-6 animate-fade-up hover:border-primary/30 transition-colors"
+                  className="ghl-card px-6 animate-fade-up"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <AccordionTrigger className="hover:no-underline py-6">
