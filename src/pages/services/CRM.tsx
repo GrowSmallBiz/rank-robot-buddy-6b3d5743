@@ -681,7 +681,7 @@ const CRM = () => {
                 <div
                   key={index}
                   className="flex items-start gap-4 p-4 rounded-xl animate-fade-up hover:bg-background/50 transition-colors"
-                  style={{ animationDelay: `${index * 0.05}s`, border: '2px solid #17a2b8ff' }}
+                  style={{ animationDelay: `${index * 0.05}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465c' }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <feature.icon className="w-6 h-6 text-primary" />
