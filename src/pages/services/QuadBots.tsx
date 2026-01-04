@@ -298,35 +298,55 @@ const QuadBots = () => {
         </section>
 
         {/* Mid-page CTA after Features */}
-        <section className="py-8">
+        <section className="py-12">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-12">
+            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-3xl p-8 md:p-12 shadow-2xl shadow-primary/30 animate-fade-up">
               <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
                 <div className="flex-shrink-0 text-center md:pl-4">
+                  {/* Animated Gradient Ring */}
                   <div className="relative inline-block">
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-foreground/30 to-primary-foreground/10 blur-sm scale-110" />
-                    <img
-                      src={baseContactCTA.image}
-                      alt={baseContactCTA.name}
-                      className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary-foreground/30"
-                    />
+                    {/* Spinning gradient ring */}
+                    <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-primary-foreground via-accent to-primary-foreground animate-ring-spin opacity-80" />
+                    {/* Pulsing glow */}
+                    <div className="absolute -inset-4 rounded-full bg-primary-foreground/20 blur-xl animate-pulse-glow" />
+                    {/* Photo container */}
+                    <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-primary-foreground/40 to-accent/40">
+                      <img
+                        src={baseContactCTA.image}
+                        alt={baseContactCTA.name}
+                        className="w-full h-full rounded-full object-cover"
+                      />
+                    </div>
                   </div>
-                  <h3 className="mt-4 text-lg font-display font-semibold text-primary-foreground">
+                  <h3 className="mt-5 text-lg font-display font-semibold text-primary-foreground">
                     {baseContactCTA.name}
                   </h3>
                   <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
                 </div>
                 <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
-                  <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
+                  <h2 className="text-2xl md:text-4xl font-display font-bold text-primary-foreground mb-3">
                     See These Features in Action
                   </h2>
-                  <p className="text-primary-foreground/80 mb-6 max-w-lg">
+                  <p className="text-primary-foreground/80 mb-4 max-w-lg">
                     Schedule a personalized demo to see how Quad Bots can transform your sales process and boost your revenue.
                   </p>
-                  <Button size="lg" variant="secondary" asChild>
+                  {/* Urgency micro-copy */}
+                  <div className="flex items-center gap-2 mb-6">
+                    <span className="relative flex h-3 w-3">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span className="text-sm text-primary-foreground/90 font-medium">Available today • Takes 2 mins to schedule</span>
+                  </div>
+                  <Button 
+                    size="lg" 
+                    variant="secondary" 
+                    asChild 
+                    className="group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/50"
+                  >
                     <Link to="/contact" className="inline-flex items-center gap-2">
                       {baseContactCTA.buttonText}
-                      <ArrowUpRight className="w-5 h-5" />
+                      <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </Link>
                   </Button>
                 </div>
