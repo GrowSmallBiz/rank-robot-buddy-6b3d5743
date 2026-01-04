@@ -373,9 +373,9 @@ const QuadBots = () => {
         />
 
         {/* CTA Section */}
-        <section className="py-24 lg:py-32 bg-gradient-primary">
+        <section className="section-dark">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto bg-card/10 backdrop-blur-sm border border-primary-foreground/20 rounded-2xl p-8 md:p-10">
+            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-10">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Left: Photo + Name */}
                 <div className="flex-shrink-0 text-center">
