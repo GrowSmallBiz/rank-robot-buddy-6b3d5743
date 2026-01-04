@@ -119,18 +119,20 @@
 
   .ghl-card {
     background: hsl(var(--ghl-card-bg));
-    border: 1px solid hsl(var(--ghl-card-border) / 0.3);
+    border: 1px solid hsl(var(--ghl-card-border) / 0.25);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 
   .ghl-card:hover {
-    border-color: hsl(var(--ghl-card-border));
+    border-color: hsl(var(--ghl-card-border) / 0.8);
     box-shadow: 
-      0 0 25px hsl(var(--ghl-card-border) / 0.5), 
-      0 0 50px hsl(var(--ghl-card-border) / 0.3),
-      0 0 75px hsl(var(--ghl-card-border) / 0.15);
-    transform: translateY(-6px) scale(1.02);
+      0 0 0 1px hsl(var(--ghl-card-border) / 0.4),
+      0 0 15px hsl(var(--ghl-card-border) / 0.2),
+      0 0 40px hsl(var(--ghl-card-border) / 0.15),
+      0 0 80px hsl(var(--ghl-card-border) / 0.1),
+      inset 0 0 30px hsl(var(--ghl-card-border) / 0.05);
+    transform: translateY(-4px);
   }
 
   .ghl-btn {
