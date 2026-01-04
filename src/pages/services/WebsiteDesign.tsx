@@ -625,11 +625,11 @@ const WebsiteDesign = () => {
             {conversionFeatures.map((feature, index) => (
               <div
                 key={index}
-                className="bg-card rounded-xl p-8 border border-border hover:border-primary/30 transition-all duration-300"
+                className="ghl-card rounded-xl p-8"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <feature.icon className="h-6 w-6 text-primary" />
+                  <div className="ghl-icon flex-shrink-0">
+                    <feature.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
@@ -663,10 +663,10 @@ const WebsiteDesign = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {localSEOFeatures.map((feature, index) => (
-              <div key={index} className="bg-card rounded-xl p-8 border border-border">
+              <div key={index} className="ghl-card rounded-xl p-8">
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 shrink-0">
-                    <feature.icon className="h-6 w-6 text-primary" />
+                  <div className="ghl-icon flex-shrink-0">
+                    <feature.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
@@ -695,7 +695,7 @@ const WebsiteDesign = () => {
             {developmentProcess.map((phase, index) => (
               <div
                 key={index}
-                className="bg-card rounded-xl p-6 border border-border hover:border-primary/30 transition-all duration-300 group"
+                className="ghl-card rounded-xl p-6"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
@@ -755,10 +755,10 @@ const WebsiteDesign = () => {
             {whyChooseUs.map((reason, index) => (
               <div
                 key={index}
-                className="text-center p-6 rounded-xl bg-card border border-border hover:border-primary/30 transition-all duration-300"
+                className="ghl-card text-center p-6 rounded-xl"
               >
-                <div className="inline-flex p-4 rounded-xl bg-primary/10 mb-4">
-                  <reason.icon className="h-8 w-8 text-primary" />
+                <div className="ghl-icon mx-auto mb-4">
+                  <reason.icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
                 <p className="text-muted-foreground">{reason.description}</p>

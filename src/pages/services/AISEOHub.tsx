@@ -397,9 +397,9 @@ const AISEOHub = () => {
             {/* Feature Cards */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               {/* 24/7 Lead Generation */}
-              <div className="group bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:scale-105">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Zap className="w-6 h-6 text-primary" />
+              <div className="ghl-card rounded-2xl p-6">
+                <div className="ghl-icon mb-4">
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold font-display mb-2 text-foreground">24/7 Lead Generation</h3>
                 <div className="text-2xl font-bold text-primary mb-2 animate-fade-in">Always On</div>
@@ -409,9 +409,9 @@ const AISEOHub = () => {
               </div>
 
               {/* Higher Trust, Higher Tickets */}
-              <div className="group bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:scale-105">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Shield className="w-6 h-6 text-primary" />
+              <div className="ghl-card rounded-2xl p-6">
+                <div className="ghl-icon mb-4">
+                  <Shield className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold font-display mb-2 text-foreground">Higher Trust, Higher Tickets</h3>
                 <div className="text-2xl font-bold text-primary mb-2 animate-fade-in">70% More Trust</div>
@@ -421,9 +421,9 @@ const AISEOHub = () => {
               </div>
 
               {/* Compounding Returns */}
-              <div className="group bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:scale-105">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <TrendingUp className="w-6 h-6 text-primary" />
+              <div className="ghl-card rounded-2xl p-6">
+                <div className="ghl-icon mb-4">
+                  <TrendingUp className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold font-display mb-2 text-foreground">Compounding Returns</h3>
                 <div className="text-2xl font-bold text-primary mb-2 animate-fade-in">Years of ROI</div>
@@ -433,9 +433,9 @@ const AISEOHub = () => {
               </div>
 
               {/* AI-Ready Visibility */}
-              <div className="group bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:scale-105">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Bot className="w-6 h-6 text-primary" />
+              <div className="ghl-card rounded-2xl p-6">
+                <div className="ghl-icon mb-4">
+                  <Bot className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-bold font-display mb-2 text-foreground">AI-Ready Visibility</h3>
                 <div className="text-2xl font-bold text-primary mb-2 animate-fade-in">Future-Proof</div>
@@ -1066,14 +1066,14 @@ const AISEOHub = () => {
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="group p-6 rounded-xl bg-card/50 border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:bg-card/80"
+                  className="ghl-card p-6 rounded-xl animate-fade-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/20">
-                    <feature.icon className="w-6 h-6 text-primary transition-all duration-300 group-hover:scale-110" />
+                  <div className="ghl-icon mb-4">
+                    <feature.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold font-display mb-3 text-foreground transition-colors duration-300 group-hover:text-primary">{feature.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">{feature.description}</p>
+                  <h3 className="text-lg font-bold font-display mb-3 text-foreground">{feature.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -1138,10 +1138,10 @@ const AISEOHub = () => {
               {whyAISEO.map((item, index) => (
                 <div
                   key={index}
-                  className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
+                  className="ghl-card p-6 rounded-2xl"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <item.icon className="w-6 h-6 text-primary-foreground" />
+                  <div className="ghl-icon mb-4">
+                    <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold font-display mb-2 text-foreground">{item.title}</h3>
                   <p className="text-muted-foreground">{item.description}</p>

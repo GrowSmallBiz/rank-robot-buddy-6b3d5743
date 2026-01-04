@@ -151,11 +151,11 @@ const TechnicalSEO = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-secondary/50 border border-border rounded-xl p-8 space-y-4 card-hover animate-fade-up"
+                className="ghl-card rounded-xl p-8 space-y-4 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <feature.icon className="w-7 h-7 text-primary" />
+                <div className="ghl-icon">
+                  <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-display font-semibold text-foreground">
                   {feature.title}
