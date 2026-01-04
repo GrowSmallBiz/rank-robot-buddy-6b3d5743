@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import crmHeroDiagram from "@/assets/crm-hero-diagram.png";
+import crmHeroBg from "@/assets/crm-hero-bg.jpg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -482,7 +482,7 @@ const CRM = () => {
         <section className="relative py-24 lg:py-32 overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${crmHeroDiagram})` }}
+            style={{ backgroundImage: `url(${crmHeroBg})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(266,27%,10%)]/60 via-[hsl(266,27%,10%)]/50 to-[hsl(266,27%,10%)]/90" />
           <div className="container mx-auto px-4 relative z-10">
