@@ -288,12 +288,12 @@
 @layer components {
   /* Section Backgrounds */
   .section-dark {
-    @apply relative;
+    @apply relative py-24 lg:py-32;
     background: linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 50% 12%) 50%, hsl(210 50% 8%) 100%);
   }
 
   .section-card {
-    @apply relative bg-card/80 border-t border-primary/10;
+    @apply relative py-24 lg:py-32 bg-card/80 border-t border-primary/10;
   }
 
   .section-overlay {
