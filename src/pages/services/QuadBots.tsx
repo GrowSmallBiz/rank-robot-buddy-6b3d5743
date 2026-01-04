@@ -205,7 +205,7 @@ const QuadBots = () => {
         <ServiceHero
           badge={{ icon: Bot, text: "AI Sales Automation" }}
           title="Your 24/7"
-          titleHighlight="AI Sales & Support Team"
+          titleHighlight="Quad Bots AI Sales Team"
           subtitle="Why hire one assistant when you can have four?"
           description="Meet the 4-Bot System — Lead Gen, Conversational AI, Voice AI, and Supervisor OS — working together to grow your business on autopilot."
           primaryCTA={{ label: "Get Started Now", href: "/free-assessment" }}
