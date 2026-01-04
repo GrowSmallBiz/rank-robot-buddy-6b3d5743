@@ -19,6 +19,7 @@ import WebsiteDesign from "./pages/services/WebsiteDesign";
 import AISEOHub from "./pages/services/AISEOHub";
 import ReputationManagement from "./pages/services/ReputationManagement";
 import AIReceptionist from "./pages/services/AIReceptionist";
+import CRM from "./pages/services/CRM";
 import FreeAssessment from "./pages/FreeAssessment";
 import HVAC from "./pages/industries/HVAC";
 import Dental from "./pages/industries/Dental";
@@ -53,6 +54,7 @@ const App = () => (
           <Route path="/services/ai-seo-hub" element={<AISEOHub />} />
           <Route path="/services/reputation-management" element={<ReputationManagement />} />
           <Route path="/services/ai-receptionist" element={<AIReceptionist />} />
+          <Route path="/services/crm" element={<CRM />} />
           <Route path="/free-assessment" element={<FreeAssessment />} />
           <Route path="/industries/hvac" element={<HVAC />} />
           <Route path="/industries/dental" element={<Dental />} />

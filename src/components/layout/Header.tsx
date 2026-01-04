@@ -48,7 +48,8 @@ export const Header = () => {
 
   const isGrowthSystemActive = 
     location.pathname.startsWith("/services/reputation") ||
-    location.pathname.startsWith("/services/ai-receptionist");
+    location.pathname.startsWith("/services/ai-receptionist") ||
+    location.pathname.startsWith("/services/crm");
 
   const isSEOActive = 
     location.pathname.startsWith("/services/ai-seo") ||
@@ -229,6 +230,12 @@ export const Header = () => {
                   isGrowthSystemOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
+                <Link
+                  to="/services/crm"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  AI-Powered CRM
+                </Link>
                 <Link
                   to="/services/ai-receptionist"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
@@ -414,6 +421,13 @@ export const Header = () => {
             </button>
             {mobileGrowthSystemOpen && (
               <div className="pl-4 space-y-2">
+                <Link
+                  to="/services/crm"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  AI-Powered CRM
+                </Link>
                 <Link
                   to="/services/ai-receptionist"
                   onClick={() => setIsOpen(false)}
