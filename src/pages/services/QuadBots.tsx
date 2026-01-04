@@ -31,10 +31,15 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import heroImage from "@/assets/quad-bots-hero.jpg";
+import botLeadGenerator from "@/assets/bot-lead-generator.png";
+import botConversationalAI from "@/assets/bot-conversational-ai.png";
+import botVoiceAI from "@/assets/bot-voice-ai.png";
+import botSupervisorOS from "@/assets/bot-supervisor-os.png";
 
 const botCards = [
   {
     icon: Users,
+    image: botLeadGenerator,
     title: "Bot 1: Lead Generator",
     subtitle: "Your tireless prospector.",
     description: "Finds and delivers qualified leads to your CRM. Targets daily or weekly searches. Keeps your sales funnel filled automatically.",
@@ -42,6 +47,7 @@ const botCards = [
   },
   {
     icon: MessageSquare,
+    image: botConversationalAI,
     title: "Bot 2: Conversational AI",
     subtitle: "Your chat + SMS + email specialist.",
     description: "Engages new leads instantly. Qualifies and follows up with prospects. Re-engages cold leads with smart reminders.",
@@ -49,6 +55,7 @@ const botCards = [
   },
   {
     icon: Phone,
+    image: botVoiceAI,
     title: "Bot 3: Voice AI",
     subtitle: "Your inbound & outbound caller.",
     description: "Books appointments instantly. Handles follow-ups, re-engagement, and upsells. Speed-to-lead calls so no customer is left waiting.",
@@ -56,6 +63,7 @@ const botCards = [
   },
   {
     icon: Settings,
+    image: botSupervisorOS,
     title: "Bot 4: Supervisor OS",
     subtitle: "Your system's manager.",
     description: "Tracks every customer interaction. Ensures no lead is missed. Provides visibility, reporting, and oversight.",
@@ -227,20 +235,26 @@ const QuadBots = () => {
               {botCards.map((bot, index) => (
                 <div 
                   key={index} 
-                  className="feature-card-teal animate-fade-up"
+                  className="feature-card-teal animate-fade-up flex flex-col md:flex-row gap-6 items-start"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="icon-container mb-4">
-                    <bot.icon className="w-6 h-6" />
+                  <div className="flex-shrink-0">
+                    <img 
+                      src={bot.image} 
+                      alt={bot.title} 
+                      className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-lg"
+                    />
                   </div>
-                  <h3 className="text-xl font-display font-semibold text-foreground mb-2">
-                    {bot.title}
-                  </h3>
-                  <p className="text-primary font-medium mb-3">{bot.subtitle}</p>
-                  <p className="text-muted-foreground mb-4">{bot.description}</p>
-                  <p className="text-sm italic text-foreground/80 border-t border-border/50 pt-4">
-                    {bot.highlight}
-                  </p>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-display font-semibold text-foreground mb-2">
+                      {bot.title}
+                    </h3>
+                    <p className="text-primary font-medium mb-3">{bot.subtitle}</p>
+                    <p className="text-muted-foreground mb-4">{bot.description}</p>
+                    <p className="text-sm italic text-foreground/80 border-t border-border/50 pt-4">
+                      {bot.highlight}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
