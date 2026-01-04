@@ -55,21 +55,22 @@ export const FAQSection = ({
   return (
     <section className="py-24 lg:py-32 bg-black">
       <div className="container mx-auto px-4">
-        <div className={`${contactCTA ? 'grid grid-cols-1 lg:grid-cols-3 gap-12' : 'max-w-4xl mx-auto'}`}>
+        {/* Centered Section Header */}
+        <div className="text-center mb-12 animate-fade-up">
+          <p className="text-primary font-medium mb-4">FAQ</p>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+            {title}
+          </h2>
+          {subtitle && (
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              {subtitle}
+            </p>
+          )}
+        </div>
+
+        <div className={`${contactCTA ? 'grid grid-cols-1 lg:grid-cols-3 gap-12 items-start' : 'max-w-4xl mx-auto'}`}>
           {/* FAQ Column */}
           <div className={contactCTA ? 'lg:col-span-2' : ''}>
-            <div className="text-center lg:text-left mb-12 animate-fade-up">
-              <p className="text-primary font-medium mb-4">FAQ</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                {title}
-              </h2>
-              {subtitle && (
-                <p className="text-muted-foreground max-w-2xl">
-                  {subtitle}
-                </p>
-              )}
-            </div>
-
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
                 <AccordionItem
@@ -92,7 +93,7 @@ export const FAQSection = ({
           {/* Contact CTA Card */}
           {contactCTA && (
             <div className="lg:col-span-1 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <div className="sticky top-24 p-8 rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm text-center">
+              <div className="sticky top-24 p-8 rounded-2xl border-2 border-primary/60 bg-card/30 backdrop-blur-sm text-center shadow-[0_0_30px_rgba(255,127,80,0.15)]">
                 {/* Avatar with gradient border */}
                 <div className="w-24 h-24 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-primary via-orange-400 to-primary">
                   <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
