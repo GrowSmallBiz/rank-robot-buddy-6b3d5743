@@ -420,13 +420,13 @@ const SocialMedia = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="group bg-background border border-border rounded-xl p-6 space-y-4 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50 animate-fade-up"
+                className="ghl-card rounded-xl p-6 space-y-4 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
-                  <benefit.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
+                <div className="ghl-icon">
+                  <benefit.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-display font-semibold text-foreground transition-colors duration-300 group-hover:text-primary">
+                <h3 className="text-lg font-display font-semibold text-foreground">
                   {benefit.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -509,13 +509,13 @@ const SocialMedia = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group bg-background border border-border rounded-xl p-6 space-y-4 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50 animate-fade-up"
+                className="ghl-card rounded-xl p-6 space-y-4 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/50">
-                  <service.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
+                <div className="ghl-icon">
+                  <service.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-display font-semibold text-foreground transition-colors duration-300 group-hover:text-primary">
+                <h3 className="text-lg font-display font-semibold text-foreground">
                   {service.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">

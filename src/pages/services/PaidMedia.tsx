@@ -216,11 +216,11 @@ const PaidMedia = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-background border border-border rounded-xl p-6 space-y-4 card-hover animate-fade-up"
+                className="ghl-card rounded-xl p-6 space-y-4 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <benefit.icon className="w-6 h-6 text-primary" />
+                <div className="ghl-icon">
+                  <benefit.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-display font-semibold text-foreground">
                   {benefit.title}
@@ -252,12 +252,12 @@ const PaidMedia = () => {
             {platforms.map((platform, index) => (
               <div
                 key={index}
-                className="bg-card border border-border rounded-xl p-6 space-y-4 card-hover animate-fade-up"
+                className="ghl-card rounded-xl p-6 space-y-4 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <platform.icon className="w-6 h-6 text-primary" />
+                  <div className="ghl-icon">
+                    <platform.icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-display font-semibold text-foreground">
                     {platform.name}
