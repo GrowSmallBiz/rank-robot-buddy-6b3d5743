@@ -50,7 +50,8 @@ export const Header = () => {
   const isGrowthSystemActive = 
     location.pathname.startsWith("/services/reputation") ||
     location.pathname.startsWith("/services/ai-receptionist") ||
-    location.pathname.startsWith("/services/crm");
+    location.pathname.startsWith("/services/crm") ||
+    location.pathname.startsWith("/services/quad-bots");
 
   const isSEOActive = 
     location.pathname.startsWith("/services/ai-seo") ||
@@ -257,6 +258,12 @@ export const Header = () => {
                 >
                   Reputation Management
                 </Link>
+                <Link
+                  to="/services/quad-bots"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Quad Bots AI Sales Team
+                </Link>
               </div>
             </div>
 
@@ -459,6 +466,13 @@ export const Header = () => {
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Reputation Management
+                </Link>
+                <Link
+                  to="/services/quad-bots"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Quad Bots AI Sales Team
                 </Link>
               </div>
             )}
