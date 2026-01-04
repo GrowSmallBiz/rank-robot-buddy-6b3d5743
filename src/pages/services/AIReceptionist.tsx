@@ -382,10 +382,10 @@ const AIReceptionist = () => {
                 <div className="space-y-4">
                   {([
                     { channel: "SMS", desc: "Instant text message responses and follow-ups", bgColor: "#0d2818", borderColor: "#22c55e", iconColor: "#22c55e", Icon: Smartphone },
-                    { channel: "Website Chat", desc: "Engage visitors the moment they arrive", bgColor: "#0d1f2d", borderColor: "#17a2b8", iconColor: "#17a2b8", Icon: Globe },
+                    { channel: "Website Live Chat", desc: "Engage visitors the moment they arrive", bgColor: "#0d1f2d", borderColor: "#17a2b8", iconColor: "#17a2b8", Icon: Globe },
                     { channel: "Facebook", desc: "Respond to Messenger inquiries automatically", bgColor: "#0d1a33", borderColor: "#1877f2", iconColor: "#1877f2", Icon: Facebook },
                     { channel: "Instagram", desc: "Handle DMs and convert followers to customers", bgColor: "#2d0d1f", borderColor: "#e1306c", iconColor: "#e1306c", Icon: Instagram },
-                    { channel: "Google Business", desc: "Manage profile messages seamlessly", bgColor: "#1a2633", borderColor: "#4285f4", iconColor: "#4285f4", Icon: MapPin },
+                    { channel: "Google Business Profile", desc: "Manage profile messages seamlessly", bgColor: "#0d1a33", borderColor: "#4285f4", iconColor: "#4285f4", Icon: MapPin },
                   ] as { channel: string; desc: string; bgColor: string; borderColor: string; iconColor: string; Icon: LucideIcon }[]).map((item, index) => (
                     <div 
                       key={index} 
