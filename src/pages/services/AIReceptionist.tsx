@@ -368,11 +368,11 @@ const AIReceptionist = () => {
         </section>
 
         {/* Conversational AI Section */}
-        <section className="relative py-20 ghl-section">
-          <div className="absolute inset-0 section-glow opacity-50" />
+        <section className="relative py-20" style={{ background: 'linear-gradient(180deg, #0a1628 0%, #0f172a 50%, #0a1628 100%)' }}>
+          <div className="absolute inset-0 opacity-30" style={{ background: 'radial-gradient(ellipse at center, #17a2b820 0%, transparent 70%)' }} />
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 backdrop-blur-sm rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]" style={{ border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}>
+              <div className="order-2 lg:order-1 backdrop-blur-sm rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_40px_#17a2b880,0_0_80px_#17a2b840]" style={{ border: '2px solid #17a2b8', backgroundColor: '#050a10', boxShadow: '0 0 30px #17a2b830' }}>
                 <h3 className="text-2xl font-semibold text-foreground mb-6">Unified Multi-Channel Platform</h3>
                 <div className="space-y-4">
                   {[
