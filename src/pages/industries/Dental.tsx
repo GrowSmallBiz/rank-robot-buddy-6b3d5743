@@ -18,6 +18,7 @@ import {
   Shield
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection";
 import dentalHeroImage from "@/assets/industry-dental-hero.jpg";
@@ -400,6 +401,16 @@ const Dental = () => {
         title="Dental SEO FAQs"
         subtitle="Common questions from dental practice owners"
         schemaType="FAQPage"
+        contactCTA={{
+          title: "Have more questions about Dental Marketing?",
+          description: "We're here to help! Reach out to us for a personalized consultation.",
+          tagline: "Let's grow your dental practice together.",
+          name: "Subrata Guha",
+          role: "Founder, GrowSmallBiz",
+          buttonText: "Book A Meeting",
+          buttonHref: "/contact",
+          image: subrataHeadshot
+        }}
       />
 
       {/* Blog Section */}

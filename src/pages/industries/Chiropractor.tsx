@@ -17,6 +17,7 @@ import {
   Activity
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSection";
 import chiroHeroImage from "@/assets/industry-chiro-hero.jpg";
@@ -399,6 +400,16 @@ const Chiropractor = () => {
         title="Chiropractic SEO FAQs"
         subtitle="Common questions from chiropractors"
         schemaType="FAQPage"
+        contactCTA={{
+          title: "Have more questions about Chiropractic Marketing?",
+          description: "We're here to help! Reach out to us for a personalized consultation.",
+          tagline: "Let's grow your chiropractic practice together.",
+          name: "Subrata Guha",
+          role: "Founder, GrowSmallBiz",
+          buttonText: "Book A Meeting",
+          buttonHref: "/contact",
+          image: subrataHeadshot
+        }}
       />
 
       {/* Blog Section */}

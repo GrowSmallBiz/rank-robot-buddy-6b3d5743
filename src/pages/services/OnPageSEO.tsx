@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, onPageSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search } from "lucide-react";
@@ -223,6 +224,16 @@ const OnPageSEO = () => {
       <FAQSection
         faqs={faqs}
         subtitle="Common questions about our on-page SEO services and approach."
+        contactCTA={{
+          title: "Have more questions about On-Page SEO?",
+          description: "We're here to help! Reach out to us for a personalized consultation.",
+          tagline: "Let's optimize your content together.",
+          name: "Subrata Guha",
+          role: "Founder, GrowSmallBiz",
+          buttonText: "Book A Meeting",
+          buttonHref: "/contact",
+          image: subrataHeadshot
+        }}
       />
 
       {/* Blog Section */}

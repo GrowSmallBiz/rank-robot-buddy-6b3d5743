@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 import { 
   ArrowRight, 
   Target, 
@@ -674,6 +675,16 @@ const SocialMedia = () => {
         title="Frequently Asked Questions"
         subtitle="Everything you need to know about our Social Media Management Services"
         faqs={faqs}
+        contactCTA={{
+          title: "Have more questions about Social Media?",
+          description: "We're here to help! Reach out to us for a personalized consultation.",
+          tagline: "Let's grow your social presence together.",
+          name: "Subrata Guha",
+          role: "Founder, GrowSmallBiz",
+          buttonText: "Book A Meeting",
+          buttonHref: "/contact",
+          image: subrataHeadshot
+        }}
       />
 
       {/* Latest Blog Section */}

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 import { 
   ArrowRight, 
   Bot, 
@@ -582,6 +583,16 @@ const Index = () => {
         title="Frequently Asked Questions"
         subtitle="Everything you need to know about our Digital Marketing Services"
         faqs={homepageFAQs}
+        contactCTA={{
+          title: "Have more questions?",
+          description: "We're here to help! Reach out to us for a personalized consultation.",
+          tagline: "Let's grow your business together.",
+          name: "Subrata Guha",
+          role: "Founder, GrowSmallBiz",
+          buttonText: "Book A Meeting",
+          buttonHref: "/contact",
+          image: subrataHeadshot
+        }}
       />
 
       {/* Final CTA */}
