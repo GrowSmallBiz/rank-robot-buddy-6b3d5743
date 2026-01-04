@@ -484,7 +484,7 @@ const CRM = () => {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${crmHeroDiagram})` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background/95" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(266,27%,10%)]/60 via-[hsl(266,27%,10%)]/50 to-[hsl(266,27%,10%)]/90" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6 animate-fade-up">
