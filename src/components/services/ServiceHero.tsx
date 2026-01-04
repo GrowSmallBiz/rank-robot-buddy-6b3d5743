@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
+import { AnimatedStat } from "./AnimatedStat";
 
 interface HeroCTA {
   label: string;
@@ -141,15 +142,12 @@ export const ServiceHero = ({
             >
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {stats.map((stat, index) => (
-                  <div key={index} className="text-center relative">
-                    <p className="text-4xl md:text-5xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-primary drop-shadow-lg">
-                      {stat.value}
-                    </p>
-                    <p className="text-sm md:text-base text-foreground/90 font-medium mt-2">{stat.label}</p>
-                    {index < stats.length - 1 && (
-                      <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-12 bg-gradient-to-b from-transparent via-primary/40 to-transparent" />
-                    )}
-                  </div>
+                  <AnimatedStat
+                    key={index}
+                    value={stat.value}
+                    label={stat.label}
+                    showDivider={index < stats.length - 1}
+                  />
                 ))}
               </div>
             </div>
