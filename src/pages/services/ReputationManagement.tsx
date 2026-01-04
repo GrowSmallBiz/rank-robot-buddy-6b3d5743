@@ -582,8 +582,9 @@ const ReputationManagement = () => {
       </section>
 
       {/* System Highlights */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
+      <section className="relative py-24 ghl-section">
+        <div className="absolute inset-0 section-glow opacity-50" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">System Automation Highlights</p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
@@ -595,8 +596,8 @@ const ReputationManagement = () => {
             {highlights.map((highlight, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 p-4 bg-background/80 border border-ghl-icon rounded-xl transition-all duration-300 animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                style={{ animationDelay: `${index * 0.05}s` }}
+                className="flex items-center gap-3 p-4 backdrop-blur-sm rounded-xl transition-all duration-300 animate-fade-up hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+                style={{ animationDelay: `${index * 0.05}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}
               >
                 <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-sm text-foreground">{highlight}</span>
@@ -607,8 +608,9 @@ const ReputationManagement = () => {
       </section>
 
       {/* How It Works - Step by Step Process */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative py-24 bg-card/80 border-t border-primary/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">How It Works</p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
@@ -626,7 +628,7 @@ const ReputationManagement = () => {
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg z-10">
                   1
                 </div>
-                <div className="bg-card border border-border rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50">
+                <div className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,127,80,0.5)] hover:-translate-y-2">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
@@ -646,7 +648,7 @@ const ReputationManagement = () => {
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg z-10">
                   2
                 </div>
-                <div className="bg-card border border-border rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50">
+                <div className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,127,80,0.5)] hover:-translate-y-2">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <MessageSquare className="w-6 h-6 text-primary" />
                   </div>
@@ -665,7 +667,7 @@ const ReputationManagement = () => {
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg z-10">
                   3
                 </div>
-                <div className="bg-card border border-border rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50">
+                <div className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,127,80,0.5)] hover:-translate-y-2">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <Zap className="w-6 h-6 text-primary" />
                   </div>
@@ -684,7 +686,7 @@ const ReputationManagement = () => {
                 <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-lg z-10">
                   4
                 </div>
-                <div className="bg-card border border-border rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50">
+                <div className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 pt-10 h-full transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,127,80,0.5)] hover:-translate-y-2">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <TrendingUp className="w-6 h-6 text-primary" />
                   </div>
@@ -712,8 +714,9 @@ const ReputationManagement = () => {
       </section>
 
       {/* Win More Local Business */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
+      <section className="relative py-24 ghl-section">
+        <div className="absolute inset-0 section-glow opacity-50" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Win More Local Business</p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
@@ -729,8 +732,8 @@ const ReputationManagement = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="group bg-card border border-ghl-icon rounded-xl p-6 space-y-4 transition-all duration-500 hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] hover:-translate-y-2 animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="group backdrop-blur-sm rounded-xl p-6 space-y-4 transition-all duration-500 hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8] hover:-translate-y-2 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
                   <benefit.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
@@ -748,8 +751,9 @@ const ReputationManagement = () => {
       </section>
 
       {/* Core Features */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
+      <section className="relative py-24 bg-card/80 border-t border-primary/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Core Features</p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
@@ -817,8 +821,9 @@ const ReputationManagement = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
+      <section className="relative py-24 ghl-section border-y border-ghl-border/20">
+        <div className="absolute inset-0 bg-gradient-to-br from-ghl-border/5 via-transparent to-transparent" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Client Success Stories</p>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
@@ -833,8 +838,8 @@ const ReputationManagement = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="group bg-background/80 border border-ghl-icon rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] hover:-translate-y-2 animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="group ghl-card rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8] hover:-translate-y-2 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s`, border: '2px solid #17a2b8ff' }}
               >
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
