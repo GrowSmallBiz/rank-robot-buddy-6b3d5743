@@ -502,7 +502,50 @@ const CRM = () => {
                 through SMS, Email, Live Chat, Phone Calls, and more!
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              {/* CRM Conversion Flow Diagram */}
+              <div className="max-w-5xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-0">
+                  {[
+                    { step: 1, title: "Lead Capture", desc: "Form, Call, Chat", icon: UserPlus },
+                    { step: 2, title: "AI Follow-Up", desc: "Instant Response", icon: Bot },
+                    { step: 3, title: "Smart Nurturing", desc: "Multi-Channel", icon: Send },
+                    { step: 4, title: "Appointment Booked", desc: "Auto-Scheduled", icon: Calendar },
+                    { step: 5, title: "Conversion", desc: "Deal Closed", icon: TrendingUp },
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center">
+                      <div className="relative group">
+                        <div className="bg-card border-2 border-primary/30 rounded-2xl p-4 lg:p-5 text-center min-w-[140px] lg:min-w-[160px] hover:border-primary/60 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
+                          <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground text-sm font-bold shadow-md">
+                            {item.step}
+                          </div>
+                          <div className="w-12 h-12 mx-auto rounded-xl bg-primary/10 flex items-center justify-center mb-3 mt-2 group-hover:bg-primary/20 transition-colors">
+                            <item.icon className="w-6 h-6 text-primary" />
+                          </div>
+                          <h4 className="font-semibold text-foreground text-sm lg:text-base mb-1">{item.title}</h4>
+                          <p className="text-xs lg:text-sm text-muted-foreground">{item.desc}</p>
+                        </div>
+                      </div>
+                      {index < 4 && (
+                        <div className="hidden lg:flex items-center px-2">
+                          <div className="w-8 h-0.5 bg-gradient-to-r from-primary/60 to-primary/30" />
+                          <ChevronRight className="w-5 h-5 text-primary/60 -ml-1" />
+                        </div>
+                      )}
+                      {index < 4 && (
+                        <div className="lg:hidden flex flex-col items-center py-1">
+                          <div className="w-0.5 h-4 bg-gradient-to-b from-primary/60 to-primary/30" />
+                          <ChevronRight className="w-4 h-4 text-primary/60 rotate-90 -mt-1" />
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+                <p className="text-center text-sm text-muted-foreground mt-6 italic">
+                  Your complete lead-to-customer journey — automated and optimized by AI
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
                 <Button variant="hero" size="lg" asChild>
                   <a href="https://lp.growsmallbiz.io/crm-demo-request-page" target="_blank" rel="noopener noreferrer">
                     Schedule A Demo
