@@ -132,7 +132,7 @@ export const FAQSection = ({
 
                 <Button 
                   size="lg" 
-                  className="w-full bg-gradient-to-r from-primary to-orange-400 hover:from-primary/90 hover:to-orange-400/90 text-primary-foreground"
+                  className="w-full bg-gradient-to-r from-[hsl(199_89%_48%)] to-primary text-white rounded-full border-none hover:shadow-[0_0_30px_rgba(255,127,80,0.5),0_0_60px_rgba(255,127,80,0.3)] hover:scale-105 transition-all duration-300"
                   asChild
                 >
                   <Link to={contactCTA.buttonHref}>
