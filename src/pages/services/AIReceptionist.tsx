@@ -376,15 +376,26 @@ const AIReceptionist = () => {
                 <h3 className="text-2xl font-semibold text-foreground mb-6">Unified Multi-Channel Platform</h3>
                 <div className="space-y-4">
                   {[
-                    { channel: "SMS", desc: "Instant text message responses and follow-ups" },
-                    { channel: "Website Chat", desc: "Engage visitors the moment they arrive" },
-                    { channel: "Facebook", desc: "Respond to Messenger inquiries automatically" },
-                    { channel: "Instagram", desc: "Handle DMs and convert followers to customers" },
-                    { channel: "Google Business", desc: "Manage profile messages seamlessly" },
+                    { channel: "SMS", desc: "Instant text message responses and follow-ups", bgColor: "#2d5c3f", borderColor: "#22c55e", iconColor: "#22c55e" },
+                    { channel: "Website Chat", desc: "Engage visitors the moment they arrive", bgColor: "#2d465c", borderColor: "#17a2b8", iconColor: "#17a2b8" },
+                    { channel: "Facebook", desc: "Respond to Messenger inquiries automatically", bgColor: "#2d3a5c", borderColor: "#1877f2", iconColor: "#1877f2" },
+                    { channel: "Instagram", desc: "Handle DMs and convert followers to customers", bgColor: "#5c2d4a", borderColor: "#e1306c", iconColor: "#e1306c" },
+                    { channel: "Google Business", desc: "Manage profile messages seamlessly", bgColor: "#5c4a2d", borderColor: "#fbbc05", iconColor: "#fbbc05" },
                   ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-4 p-4 bg-secondary/30 rounded-lg">
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <MessageSquare className="w-5 h-5 text-primary" />
+                    <div 
+                      key={index} 
+                      className="flex items-start gap-4 p-4 rounded-lg transition-all hover:scale-[1.02]"
+                      style={{ 
+                        backgroundColor: item.bgColor, 
+                        border: `1px solid ${item.borderColor}`,
+                        boxShadow: `0 0 20px ${item.borderColor}40`
+                      }}
+                    >
+                      <div 
+                        className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+                        style={{ backgroundColor: `${item.iconColor}20` }}
+                      >
+                        <MessageSquare className="w-5 h-5" style={{ color: item.iconColor }} />
                       </div>
                       <div>
                         <p className="font-medium text-foreground">{item.channel}</p>
