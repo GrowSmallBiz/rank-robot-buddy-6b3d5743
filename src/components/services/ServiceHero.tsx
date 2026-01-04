@@ -136,17 +136,22 @@ export const ServiceHero = ({
 
           {stats && stats.length > 0 && (
             <div
-              className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 animate-fade-up"
+              className="mt-12 p-8 rounded-2xl bg-background/20 backdrop-blur-md border border-primary/30 shadow-[0_0_40px_rgba(255,127,80,0.15)] animate-fade-up"
               style={{ animationDelay: "0.3s" }}
             >
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <p className="text-2xl md:text-3xl font-display font-bold text-gradient">
-                    {stat.value}
-                  </p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </div>
-              ))}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center relative">
+                    <p className="text-4xl md:text-5xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-primary drop-shadow-lg">
+                      {stat.value}
+                    </p>
+                    <p className="text-sm md:text-base text-foreground/90 font-medium mt-2">{stat.label}</p>
+                    {index < stats.length - 1 && (
+                      <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-12 bg-gradient-to-b from-transparent via-primary/40 to-transparent" />
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
