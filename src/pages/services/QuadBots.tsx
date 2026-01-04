@@ -377,45 +377,46 @@ const QuadBots = () => {
         <section className="py-24 lg:py-40 section-dark">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <div className="relative rounded-3xl bg-gradient-to-br from-card via-card to-primary/5 border border-primary/20 shadow-2xl overflow-hidden flex flex-col md:flex-row">
-                {/* Accent glow background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/5 pointer-events-none" />
+              <div className="relative rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row" style={{ background: 'linear-gradient(135deg, hsl(24 95% 55%) 0%, hsl(24 90% 50%) 20%, hsl(190 60% 50%) 60%, hsl(195 70% 55%) 100%)' }}>
                 
                 {/* Left Section: Photo + Name/Title */}
-                <div className="flex-shrink-0 relative z-10 p-8 md:p-12 flex flex-col items-center justify-center bg-gradient-to-b md:bg-gradient-to-r from-primary/10 to-transparent border-b md:border-b-0 md:border-r border-primary/10">
+                <div className="flex-shrink-0 relative z-10 p-8 md:p-12 flex flex-col items-center justify-center bg-black/10 border-b md:border-b-0 md:border-r border-white/20">
                   <div className="relative mb-6">
                     {/* Outer glow */}
-                    <div className="absolute -inset-3 rounded-full bg-gradient-to-r from-primary/40 via-primary/20 to-primary/40 blur-xl animate-pulse" />
+                    <div className="absolute -inset-3 rounded-full bg-white/30 blur-xl" />
                     {/* Ring */}
-                    <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-primary via-primary/60 to-primary" />
+                    <div className="absolute -inset-1.5 rounded-full bg-white/50" />
                     <img 
                       src={baseContactCTA.image} 
                       alt={baseContactCTA.name} 
-                      className="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover border-4 border-background"
+                      className="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover border-4 border-white/80"
                     />
                   </div>
-                  <p className="font-semibold text-foreground text-xl text-center">{baseContactCTA.name}</p>
-                  <p className="text-muted-foreground text-center">{baseContactCTA.role}</p>
+                  <p className="font-semibold text-white text-xl text-center drop-shadow-md">{baseContactCTA.name}</p>
+                  <p className="text-white/80 text-center drop-shadow-sm">{baseContactCTA.role}</p>
                 </div>
                 
                 {/* Right Section: CTA Content */}
                 <div className="flex-1 p-8 md:p-12 lg:p-16 flex flex-col justify-center relative z-10">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 text-center md:text-left">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-4 text-center md:text-left">
                     Ready to Transform Your Business?
                   </h2>
-                  <p className="text-lg text-muted-foreground mb-4 max-w-xl text-center md:text-left">
+                  <p className="text-lg text-slate-800 mb-4 max-w-xl text-center md:text-left">
                     Learn how GrowSmallBiz can customize a Quad Bots solution for your business.
                   </p>
-                  <p className="text-xl font-medium text-primary mb-8 text-center md:text-left">
-                    Let's automate your sales and grow your business together.
+                  <p className="text-xl font-medium text-slate-900 mb-8 text-center md:text-left">
+                    Let's discuss your specific needs and how our AI can revolutionize your operations.
                   </p>
                   
-                  <div className="flex justify-center md:justify-start">
-                    <Button size="xl" variant="hero" className="text-lg px-8 py-6" asChild>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <Button size="xl" className="text-lg px-8 py-6 bg-slate-900 hover:bg-slate-800 text-white" asChild>
                       <Link to="/free-assessment">
                         {baseContactCTA.buttonText}
                         <ArrowRight className="w-5 h-5 ml-2" />
                       </Link>
+                    </Button>
+                    <Button size="xl" variant="outline" className="text-lg px-8 py-6 border-slate-900/50 text-slate-900 hover:bg-white/30" asChild>
+                      <Link to="/contact">Contact Us Today</Link>
                     </Button>
                   </div>
                 </div>
