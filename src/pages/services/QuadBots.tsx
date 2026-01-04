@@ -374,21 +374,39 @@ const QuadBots = () => {
 
         {/* CTA Section */}
         <section className="py-24 lg:py-32 bg-gradient-primary">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-4">
-              Ready to Transform Your Business?
-            </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Learn how GrowSmallBiz can customize a Quad Bots solution for your business. 
-              Let's discuss your specific needs and how our AI can revolutionize your operations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
-                <Link to="/free-assessment">Get Started Now</Link>
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                <Link to="/contact">Contact Us Today</Link>
-              </Button>
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto bg-card/10 backdrop-blur-sm border border-primary-foreground/20 rounded-2xl p-8 md:p-10">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                {/* Left: Photo + Name */}
+                <div className="flex-shrink-0 text-center">
+                  <div className="relative inline-block">
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-foreground/30 to-primary-foreground/10 blur-sm scale-110" />
+                    <img
+                      src={baseContactCTA.image}
+                      alt={baseContactCTA.name}
+                      className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary-foreground/30"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-lg font-display font-semibold text-primary-foreground">
+                    {baseContactCTA.name}
+                  </h3>
+                  <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
+                </div>
+
+                {/* Right: CTA Content */}
+                <div className="flex-1 text-center md:text-left">
+                  <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
+                    Ready to Transform Your Business?
+                  </h2>
+                  <p className="text-primary-foreground/80 mb-6 max-w-lg">
+                    Learn how GrowSmallBiz can customize a Quad Bots solution for your business. 
+                    Let's discuss your specific needs and how our AI can revolutionize your operations.
+                  </p>
+                  <Button size="lg" variant="secondary" asChild>
+                    <Link to="/contact">{baseContactCTA.buttonText}</Link>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
