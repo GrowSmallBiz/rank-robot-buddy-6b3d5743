@@ -58,6 +58,12 @@ export default {
         surface: {
           elevated: "hsl(var(--surface-elevated))",
         },
+        ghl: {
+          section: "hsl(var(--ghl-section-bg))",
+          card: "hsl(var(--ghl-card-bg))",
+          border: "hsl(var(--ghl-card-border))",
+          icon: "hsl(var(--ghl-icon))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

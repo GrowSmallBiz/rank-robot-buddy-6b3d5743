@@ -553,7 +553,7 @@ const CRM = () => {
         </section>
 
         {/* Key Benefits Section */}
-        <section className="relative py-20 bg-background">
+        <section className="relative py-20 ghl-section">
           <div className="absolute inset-0 section-glow opacity-50" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
@@ -567,11 +567,11 @@ const CRM = () => {
               {keyBenefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all hover:bg-card/80"
+                  className="ghl-card rounded-2xl p-6 animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <benefit.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center mb-4">
+                    <benefit.icon className="w-6 h-6 text-ghl-icon" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">{benefit.title}</h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
@@ -582,8 +582,8 @@ const CRM = () => {
         </section>
 
         {/* AI Features Section */}
-        <section className="relative py-20 bg-secondary/30 border-y border-primary/10">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent" />
+        <section className="relative py-20 ghl-section border-y border-ghl-border/20">
+          <div className="absolute inset-0 bg-gradient-to-br from-ghl-border/5 via-transparent to-transparent" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">AI Features Overview</p>
@@ -599,11 +599,11 @@ const CRM = () => {
               {aiFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-card/80 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all group hover:shadow-lg hover:shadow-primary/10"
+                  className="ghl-card rounded-2xl p-6 animate-fade-up group"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-primary/20">
-                    <feature.icon className="w-6 h-6 text-primary-foreground" />
+                  <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <feature.icon className="w-6 h-6 text-ghl-icon" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm">{feature.description}</p>
