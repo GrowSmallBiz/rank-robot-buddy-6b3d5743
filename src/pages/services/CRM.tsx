@@ -573,7 +573,7 @@ const CRM = () => {
               {keyBenefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 animate-fade-up transition-all"
+                  className="ghl-card rounded-2xl p-6 animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center mb-4">
