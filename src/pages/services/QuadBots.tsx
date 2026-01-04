@@ -28,6 +28,7 @@ import {
   GraduationCap
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import heroImage from "@/assets/quad-bots-hero.jpg";
@@ -373,35 +374,50 @@ const QuadBots = () => {
         />
 
         {/* CTA Section */}
-        <section className="py-24 lg:py-32 section-dark">
+        <section className="py-24 lg:py-40 section-dark">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="feature-card p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-                <div className="flex-shrink-0">
-                  <img 
-                    src={baseContactCTA.image} 
-                    alt={baseContactCTA.name} 
-                    className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/20"
-                  />
+            <div className="max-w-5xl mx-auto">
+              <div className="relative p-10 md:p-16 rounded-3xl bg-gradient-to-br from-card via-card to-primary/5 border border-primary/20 shadow-2xl flex flex-col md:flex-row items-center gap-10 md:gap-14">
+                {/* Accent glow background */}
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-primary/10 via-transparent to-primary/5 pointer-events-none" />
+                
+                {/* Photo with glow ring */}
+                <div className="flex-shrink-0 relative z-10">
+                  <div className="relative">
+                    {/* Outer glow */}
+                    <div className="absolute -inset-3 rounded-full bg-gradient-to-r from-primary/40 via-primary/20 to-primary/40 blur-xl animate-pulse" />
+                    {/* Ring */}
+                    <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-primary via-primary/60 to-primary" />
+                    <img 
+                      src={baseContactCTA.image} 
+                      alt={baseContactCTA.name} 
+                      className="relative w-36 h-36 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full object-cover border-4 border-background"
+                    />
+                  </div>
                 </div>
-                <div className="flex-1 text-center md:text-left">
-                  <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-2">
+                
+                {/* Content */}
+                <div className="flex-1 text-center md:text-left relative z-10">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
                     Ready to Transform Your Business?
                   </h2>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-lg text-muted-foreground mb-4 max-w-xl">
                     Learn how GrowSmallBiz can customize a Quad Bots solution for your business.
                   </p>
-                  <p className="text-lg font-medium text-primary mb-6">
+                  <p className="text-xl font-medium text-primary mb-8">
                     Let's automate your sales and grow your business together.
                   </p>
-                  <div className="flex flex-col sm:flex-row items-center gap-4 md:justify-start justify-center">
-                    <p className="text-sm text-muted-foreground">
-                      <span className="font-semibold text-foreground">{baseContactCTA.name}</span>
-                      <span className="mx-2">•</span>
-                      {baseContactCTA.role}
-                    </p>
-                    <Button size="lg" variant="hero" asChild>
-                      <Link to="/free-assessment">{baseContactCTA.buttonText}</Link>
+                  
+                  <div className="flex flex-col sm:flex-row items-center gap-6 md:justify-start justify-center">
+                    <div className="text-center sm:text-left">
+                      <p className="font-semibold text-foreground text-lg">{baseContactCTA.name}</p>
+                      <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
+                    </div>
+                    <Button size="xl" variant="hero" className="text-lg px-8 py-6" asChild>
+                      <Link to="/free-assessment">
+                        {baseContactCTA.buttonText}
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </Link>
                     </Button>
                   </div>
                 </div>
