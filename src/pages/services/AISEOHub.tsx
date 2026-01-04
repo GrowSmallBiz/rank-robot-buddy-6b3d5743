@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 import { Helmet } from "react-helmet";
 import {
   Search,
@@ -1287,6 +1288,16 @@ const AISEOHub = () => {
           title="AI SEO FAQs"
           subtitle="Common questions about our AI-powered SEO services"
           faqs={aiSeoFAQs}
+          contactCTA={{
+            title: "Have more questions about AI SEO?",
+            description: "We're here to help! Reach out to us for a personalized consultation.",
+            tagline: "Let's dominate search with AI together.",
+            name: "Subrata Guha",
+            role: "Founder, GrowSmallBiz",
+            buttonText: "Book A Meeting",
+            buttonHref: "/contact",
+            image: subrataHeadshot
+          }}
         />
 
         {/* Latest SEO Blog Section */}

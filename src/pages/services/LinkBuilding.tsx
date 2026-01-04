@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, linkBuildingBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield } from "lucide-react";
@@ -207,6 +208,16 @@ const LinkBuilding = () => {
       <FAQSection
         faqs={faqs}
         subtitle="Learn about our link building approach and how it drives results."
+        contactCTA={{
+          title: "Have more questions about Link Building?",
+          description: "We're here to help! Reach out to us for a personalized consultation.",
+          tagline: "Let's build your authority together.",
+          name: "Subrata Guha",
+          role: "Founder, GrowSmallBiz",
+          buttonText: "Book A Meeting",
+          buttonHref: "/contact",
+          image: subrataHeadshot
+        }}
       />
 
       {/* Blog Section */}

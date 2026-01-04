@@ -19,6 +19,7 @@ import {
   BarChart3
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
 import hvacHeroImage from "@/assets/industry-hvac-hero.jpg";
@@ -402,6 +403,16 @@ const HVAC = () => {
         title="HVAC SEO FAQs"
         subtitle="Common questions from home service business owners"
         schemaType="FAQPage"
+        contactCTA={{
+          title: "Have more questions about HVAC Marketing?",
+          description: "We're here to help! Reach out to us for a personalized consultation.",
+          tagline: "Let's grow your HVAC business together.",
+          name: "Subrata Guha",
+          role: "Founder, GrowSmallBiz",
+          buttonText: "Book A Meeting",
+          buttonHref: "/contact",
+          image: subrataHeadshot
+        }}
       />
 
       {/* Blog Section */}
