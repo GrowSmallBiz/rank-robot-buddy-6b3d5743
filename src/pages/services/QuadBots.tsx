@@ -332,11 +332,11 @@ const QuadBots = () => {
         </section>
 
         {/* Mid-page CTA after Benefits */}
-        <section className="section-card">
+        <section className="py-8">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-10">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="flex-shrink-0 text-center">
+            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
+                <div className="flex-shrink-0 text-center md:pl-4">
                   <div className="relative inline-block">
                     <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-foreground/30 to-primary-foreground/10 blur-sm scale-110" />
                     <img
@@ -350,7 +350,7 @@ const QuadBots = () => {
                   </h3>
                   <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
                 </div>
-                <div className="flex-1 text-center md:text-left">
+                <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
                   <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
                     See These Benefits in Action
                   </h2>
@@ -397,11 +397,11 @@ const QuadBots = () => {
         </section>
 
         {/* CTA after Industries */}
-        <section className="section-dark">
+        <section className="py-8 bg-section-dark">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-10">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="flex-shrink-0 text-center">
+            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
+                <div className="flex-shrink-0 text-center md:pl-4">
                   <div className="relative inline-block">
                     <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-foreground/30 to-primary-foreground/10 blur-sm scale-110" />
                     <img
@@ -415,7 +415,7 @@ const QuadBots = () => {
                   </h3>
                   <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
                 </div>
-                <div className="flex-1 text-center md:text-left">
+                <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
                   <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
                     Perfect Fit for Your Industry?
                   </h2>
@@ -443,12 +443,12 @@ const QuadBots = () => {
         />
 
         {/* CTA Section */}
-        <section className="section-dark">
+        <section className="py-8 bg-section-dark">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-10">
-              <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
                 {/* Left: Photo + Name */}
-                <div className="flex-shrink-0 text-center">
+                <div className="flex-shrink-0 text-center md:pl-4">
                   <div className="relative inline-block">
                     <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-foreground/30 to-primary-foreground/10 blur-sm scale-110" />
                     <img
@@ -464,7 +464,7 @@ const QuadBots = () => {
                 </div>
 
                 {/* Right: CTA Content */}
-                <div className="flex-1 text-center md:text-left">
+                <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
                   <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
                     Ready to Transform Your Business?
                   </h2>
