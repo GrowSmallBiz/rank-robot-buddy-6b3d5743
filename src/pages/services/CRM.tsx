@@ -810,7 +810,9 @@ const CRM = () => {
                 <div
                   key={index}
                   className={`relative bg-card/95 backdrop-blur-sm border rounded-2xl p-8 animate-fade-up transition-all hover:translate-y-[-4px] ${
-                    plan.popular ? "border-primary shadow-xl shadow-primary/20 ring-1 ring-primary/30" : "border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10"
+                    plan.popular 
+                      ? "border-primary shadow-xl shadow-primary/20 ring-1 ring-primary/30" 
+                      : "border-ghl-icon hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]"
                   }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
@@ -858,14 +860,6 @@ const CRM = () => {
               ))}
             </div>
 
-            <div className="text-center mt-12 animate-fade-up">
-              <p className="text-muted-foreground mb-4">Additional Usage Costs:</p>
-              <div className="flex flex-wrap justify-center gap-6 text-sm">
-                <span className="text-foreground bg-card/80 px-3 py-1 rounded-full border border-border">Text: $0.016 ea.</span>
-                <span className="text-foreground bg-card/80 px-3 py-1 rounded-full border border-border">Email: $0.004 ea.</span>
-                <span className="text-foreground bg-card/80 px-3 py-1 rounded-full border border-border">Local Voicemail: $0.05 ea.</span>
-              </div>
-            </div>
           </div>
         </section>
 
