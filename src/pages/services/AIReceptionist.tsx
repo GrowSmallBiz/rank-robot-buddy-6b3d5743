@@ -263,8 +263,9 @@ const AIReceptionist = () => {
         </section>
 
         {/* Problem/Stats Section */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-card/80 border-t border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">The Hidden Cost of Missed Opportunities</p>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
@@ -367,10 +368,11 @@ const AIReceptionist = () => {
         </section>
 
         {/* Conversational AI Section */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 ghl-section">
+          <div className="absolute inset-0 section-glow opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 bg-background border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]">
+              <div className="order-2 lg:order-1 backdrop-blur-sm rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]" style={{ border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}>
                 <h3 className="text-2xl font-semibold text-foreground mb-6">Unified Multi-Channel Platform</h3>
                 <div className="space-y-4">
                   {[
@@ -427,8 +429,9 @@ const AIReceptionist = () => {
         </section>
 
         {/* Dashboard Metrics Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-card/80 border-y border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Performance Dashboard</p>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
@@ -473,8 +476,9 @@ const AIReceptionist = () => {
         </section>
 
         {/* Features Grid */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 ghl-section border-y border-ghl-border/20">
+          <div className="absolute inset-0 bg-gradient-to-br from-ghl-border/5 via-transparent to-transparent" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Complete Capabilities</p>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
@@ -501,8 +505,9 @@ const AIReceptionist = () => {
         </section>
 
         {/* Why Everyone Wins Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-card/80 border-t border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Why Everyone Wins With AI
@@ -510,7 +515,7 @@ const AIReceptionist = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-card border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]">
+              <div className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]">
                 <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
                   <Building2 className="w-6 h-6 text-primary" />
                   Why Your Business Will Love It
@@ -531,7 +536,7 @@ const AIReceptionist = () => {
                 </ul>
               </div>
 
-              <div className="bg-card border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]" style={{ animationDelay: "0.1s" }}>
+              <div className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]" style={{ animationDelay: "0.1s" }}>
                 <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
                   <Users className="w-6 h-6 text-primary" />
                   Why Your Customers Will Love It
@@ -556,8 +561,9 @@ const AIReceptionist = () => {
         </section>
 
         {/* Industries Section */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 ghl-section">
+          <div className="absolute inset-0 section-glow opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Industry Applications</p>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
@@ -572,8 +578,8 @@ const AIReceptionist = () => {
               {industries.map((industry, index) => (
                 <div
                   key={index}
-                  className="bg-background/80 border border-ghl-icon rounded-xl p-6 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  className="backdrop-blur-sm rounded-xl p-6 animate-fade-up transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+                  style={{ animationDelay: `${index * 0.1}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -589,8 +595,9 @@ const AIReceptionist = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-card/80 border-t border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Success Stories</p>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
@@ -628,9 +635,9 @@ const AIReceptionist = () => {
                   result: "3x more bookings",
                 },
               ].map((testimonial, index) => (
-                <div
+              <div
                   key={index}
-                  className="bg-card border border-ghl-icon rounded-2xl p-8 space-y-6 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
+                  className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-8 space-y-6 animate-fade-up transition-all hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
@@ -658,8 +665,9 @@ const AIReceptionist = () => {
         </section>
 
         {/* White Glove Service Section */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 ghl-section border-y border-ghl-border/20">
+          <div className="absolute inset-0 bg-gradient-to-br from-ghl-border/5 via-transparent to-transparent" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
                 <Clock className="w-4 h-4" />
@@ -681,8 +689,8 @@ const AIReceptionist = () => {
                   "Create custom call routing and transfer protocols",
                   "Provide ongoing optimization and 24/7 support",
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 bg-card border border-border rounded-lg p-4">
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <div key={index} className="flex items-start gap-3 ghl-card rounded-lg p-4" style={{ border: '2px solid #17a2b8ff' }}>
+                    <CheckCircle className="w-5 h-5 text-ghl-icon mt-0.5 flex-shrink-0" />
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
