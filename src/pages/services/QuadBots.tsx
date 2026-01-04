@@ -373,22 +373,39 @@ const QuadBots = () => {
         />
 
         {/* CTA Section */}
-        <section className="py-24 lg:py-32 bg-gradient-primary">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-4">
-              Ready to Transform Your Business?
-            </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Learn how GrowSmallBiz can customize a Quad Bots solution for your business. 
-              Let's discuss your specific needs and how our AI can revolutionize your operations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
-                <Link to="/free-assessment">Get Started Now</Link>
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
-                <Link to="/contact">Contact Us Today</Link>
-              </Button>
+        <section className="py-24 lg:py-32 section-dark">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="feature-card p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <img 
+                    src={baseContactCTA.image} 
+                    alt={baseContactCTA.name} 
+                    className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/20"
+                  />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-2">
+                    Ready to Transform Your Business?
+                  </h2>
+                  <p className="text-muted-foreground mb-4">
+                    Learn how GrowSmallBiz can customize a Quad Bots solution for your business.
+                  </p>
+                  <p className="text-lg font-medium text-primary mb-6">
+                    Let's automate your sales and grow your business together.
+                  </p>
+                  <div className="flex flex-col sm:flex-row items-center gap-4 md:justify-start justify-center">
+                    <p className="text-sm text-muted-foreground">
+                      <span className="font-semibold text-foreground">{baseContactCTA.name}</span>
+                      <span className="mx-2">•</span>
+                      {baseContactCTA.role}
+                    </p>
+                    <Button size="lg" variant="hero" asChild>
+                      <Link to="/free-assessment">{baseContactCTA.buttonText}</Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
