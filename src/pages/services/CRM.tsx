@@ -544,7 +544,7 @@ const CRM = () => {
               {valueProps.map((prop, index) => (
                 <div
                   key={index}
-                  className="bg-background/80 backdrop-blur-sm border border-border rounded-2xl p-8 text-center animate-fade-up hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/5"
+                  className="bg-background/80 backdrop-blur-sm border border-border rounded-2xl p-8 text-center animate-fade-up transition-all shadow-[0_0_20px_rgba(23,162,184,0.3)] hover:shadow-[0_0_30px_rgba(23,162,184,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
