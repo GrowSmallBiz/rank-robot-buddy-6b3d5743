@@ -28,7 +28,6 @@ import {
   GraduationCap
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import heroImage from "@/assets/quad-bots-hero.jpg";
@@ -374,53 +373,22 @@ const QuadBots = () => {
         />
 
         {/* CTA Section */}
-        <section className="py-24 lg:py-40 section-dark">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="relative rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row" style={{ background: 'linear-gradient(135deg, hsl(195 70% 50%) 0%, hsl(190 55% 55%) 40%, hsl(30 70% 55%) 80%, hsl(24 80% 55%) 100%)' }}>
-                
-                {/* Left Section: Photo + Name/Title */}
-                <div className="flex-shrink-0 relative z-10 p-8 md:p-12 flex flex-col items-center justify-center bg-black/10 border-b md:border-b-0 md:border-r border-white/20">
-                  <div className="relative mb-6">
-                    {/* Outer glow */}
-                    <div className="absolute -inset-3 rounded-full bg-white/30 blur-xl" />
-                    {/* Ring */}
-                    <div className="absolute -inset-1.5 rounded-full bg-white/50" />
-                    <img 
-                      src={baseContactCTA.image} 
-                      alt={baseContactCTA.name} 
-                      className="relative w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 rounded-full object-cover border-4 border-white/80"
-                    />
-                  </div>
-                  <p className="font-semibold text-white text-xl text-center drop-shadow-md">{baseContactCTA.name}</p>
-                  <p className="text-white/80 text-center drop-shadow-sm">{baseContactCTA.role}</p>
-                </div>
-                
-                {/* Right Section: CTA Content */}
-                <div className="flex-1 p-8 md:p-12 lg:p-16 flex flex-col justify-center relative z-10">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-4 text-center md:text-left">
-                    Ready to Transform Your Business?
-                  </h2>
-                  <p className="text-lg text-slate-800 mb-4 max-w-xl text-center md:text-left">
-                    Learn how GrowSmallBiz can customize a Quad Bots solution for your business.
-                  </p>
-                  <p className="text-xl font-medium text-slate-900 mb-8 text-center md:text-left">
-                    Let's discuss your specific needs and how our AI can revolutionize your operations.
-                  </p>
-                  
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <Button size="xl" className="text-lg px-8 py-6 bg-slate-900 hover:bg-slate-800 text-white" asChild>
-                      <Link to="/free-assessment">
-                        {baseContactCTA.buttonText}
-                        <ArrowRight className="w-5 h-5 ml-2" />
-                      </Link>
-                    </Button>
-                    <Button size="xl" variant="outline" className="text-lg px-8 py-6 border-slate-900/50 text-slate-900 hover:bg-white/30" asChild>
-                      <Link to="/contact">Contact Us Today</Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
+        <section className="py-24 lg:py-32 bg-gradient-primary">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-4">
+              Ready to Transform Your Business?
+            </h2>
+            <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+              Learn how GrowSmallBiz can customize a Quad Bots solution for your business. 
+              Let's discuss your specific needs and how our AI can revolutionize your operations.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" variant="secondary" asChild>
+                <Link to="/free-assessment">Get Started Now</Link>
+              </Button>
+              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <Link to="/contact">Contact Us Today</Link>
+              </Button>
             </div>
           </div>
         </section>
