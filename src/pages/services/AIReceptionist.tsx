@@ -398,9 +398,10 @@ const AIReceptionist = () => {
                     >
                       {item.isGoogle && (
                         <div 
-                          className="absolute inset-0 rounded-lg pointer-events-none"
+                          className="absolute inset-0 rounded-lg pointer-events-none animate-gradient-rotate"
                           style={{
-                            background: 'linear-gradient(90deg, #4285f4, #ea4335, #fbbc05, #34a853)',
+                            background: 'linear-gradient(90deg, #4285f4, #ea4335, #fbbc05, #34a853, #4285f4)',
+                            backgroundSize: '300% 100%',
                             padding: '1px',
                             WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                             WebkitMaskComposite: 'xor',
