@@ -532,7 +532,7 @@ const CRM = () => {
               <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Your Entire Business. Powered by AI.
               </h2>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+              <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground">
                 Simplified Into <span className="text-transparent bg-clip-text bg-gradient-primary italic">One System</span>.
               </h3>
               <p className="text-muted-foreground max-w-3xl mx-auto mt-4">
@@ -550,7 +550,7 @@ const CRM = () => {
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
                     <prop.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-4">{prop.title}</h3>
+                  <h3 className="text-2xl font-semibold text-foreground mb-4">{prop.title}</h3>
                   <p className="text-muted-foreground">{prop.description}</p>
                 </div>
               ))}
@@ -579,7 +579,7 @@ const CRM = () => {
                   <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center mb-4">
                     <benefit.icon className="w-6 h-6 text-ghl-icon" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">{benefit.title}</h3>
+                  <h3 className="text-2xl font-semibold text-foreground mb-3">{benefit.title}</h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
                 </div>
               ))}
@@ -611,7 +611,7 @@ const CRM = () => {
                   <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                     <feature.icon className="w-6 h-6 text-ghl-icon" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm">{feature.description}</p>
                 </div>
               ))}
@@ -686,7 +686,7 @@ const CRM = () => {
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
                     <feature.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-4 text-center">{feature.title}</h3>
+                  <h3 className="text-2xl font-semibold text-foreground mb-4 text-center">{feature.title}</h3>
                   <p className="text-muted-foreground text-center">{feature.description}</p>
                 </div>
               ))}
@@ -715,7 +715,7 @@ const CRM = () => {
                   className="bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 animate-fade-up transition-all hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <h3 className="text-lg font-semibold text-foreground mb-4 pb-3 border-b border-border">{category.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-4 pb-3 border-b border-border">{category.title}</h3>
                   <ul className="space-y-2">
                     {category.industries.map((industry, iIndex) => (
                       <li key={iIndex} className="text-sm text-muted-foreground flex items-center gap-2">
@@ -823,7 +823,7 @@ const CRM = () => {
                   )}
                   
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">{plan.name}</h3>
+                    <h3 className="text-3xl font-bold text-foreground mb-2">{plan.name}</h3>
                     <div className="flex items-baseline justify-center gap-1 mb-2">
                       <span className="text-4xl font-bold text-foreground">{plan.price}</span>
                       <span className="text-muted-foreground">{plan.period}</span>
