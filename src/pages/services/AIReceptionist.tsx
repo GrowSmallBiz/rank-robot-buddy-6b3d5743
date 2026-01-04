@@ -385,20 +385,36 @@ const AIReceptionist = () => {
                     { channel: "Website Live Chat", desc: "Engage visitors the moment they arrive", bgColor: "#0d1f2d", borderColor: "#17a2b8", iconColor: "#17a2b8", Icon: Globe },
                     { channel: "Facebook", desc: "Respond to Messenger inquiries automatically", bgColor: "#0d1a33", borderColor: "#1877f2", iconColor: "#1877f2", Icon: Facebook },
                     { channel: "Instagram", desc: "Handle DMs and convert followers to customers", bgColor: "#2d0d1f", borderColor: "#e1306c", iconColor: "#e1306c", Icon: Instagram },
-                    { channel: "Google Business Profile", desc: "Manage profile messages seamlessly", bgColor: "#0d1a33", borderColor: "#4285f4", iconColor: "#4285f4", Icon: MapPin },
-                  ] as { channel: string; desc: string; bgColor: string; borderColor: string; iconColor: string; Icon: LucideIcon }[]).map((item, index) => (
+                    { channel: "Google Business Profile", desc: "Manage profile messages seamlessly", bgColor: "#0f1419", borderColor: "", iconColor: "#4285f4", Icon: MapPin, isGoogle: true },
+                  ] as { channel: string; desc: string; bgColor: string; borderColor: string; iconColor: string; Icon: LucideIcon; isGoogle?: boolean }[]).map((item, index) => (
                     <div 
                       key={index} 
-                      className="flex items-start gap-4 p-4 rounded-lg transition-all hover:scale-[1.02]"
+                      className={`flex items-start gap-4 p-4 rounded-lg transition-all hover:scale-[1.02] ${item.isGoogle ? 'relative overflow-hidden' : ''}`}
                       style={{ 
-                        backgroundColor: item.bgColor, 
-                        border: `1px solid ${item.borderColor}`,
-                        boxShadow: `0 0 20px ${item.borderColor}40`
+                        background: item.isGoogle ? 'linear-gradient(135deg, rgba(66,133,244,0.12), rgba(234,67,53,0.12), rgba(251,188,5,0.12), rgba(52,168,83,0.12))' : item.bgColor,
+                        border: item.isGoogle ? 'none' : `1px solid ${item.borderColor}`,
+                        boxShadow: item.isGoogle ? '0 0 20px rgba(66,133,244,0.2), 0 0 20px rgba(234,67,53,0.1), 0 0 20px rgba(52,168,83,0.1)' : `0 0 20px ${item.borderColor}40`
                       }}
                     >
+                      {item.isGoogle && (
+                        <div 
+                          className="absolute inset-0 rounded-lg pointer-events-none"
+                          style={{
+                            background: 'linear-gradient(90deg, #4285f4, #ea4335, #fbbc05, #34a853)',
+                            padding: '1px',
+                            WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                            WebkitMaskComposite: 'xor',
+                            maskComposite: 'exclude'
+                          }}
+                        />
+                      )}
                       <div 
                         className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-                        style={{ backgroundColor: `${item.iconColor}20` }}
+                        style={{ 
+                          background: item.isGoogle 
+                            ? 'linear-gradient(135deg, rgba(66,133,244,0.3), rgba(234,67,53,0.3), rgba(251,188,5,0.3), rgba(52,168,83,0.3))' 
+                            : `${item.iconColor}20` 
+                        }}
                       >
                         <item.Icon className="w-5 h-5" style={{ color: item.iconColor }} />
                       </div>
