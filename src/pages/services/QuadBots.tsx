@@ -350,11 +350,11 @@ const QuadBots = () => {
                   </h3>
                   <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
                 </div>
-                <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
+                <div className="flex-1 text-center md:text-left">
                   <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
                     See These Benefits in Action
                   </h2>
-                  <p className="text-primary-foreground/80 mb-6 max-w-lg">
+                  <p className="text-primary-foreground/80 mb-6 max-w-lg md:mx-0 mx-auto">
                     Schedule a personalized demo to see how Quad Bots can transform your sales process and boost your revenue.
                   </p>
                   <Button size="lg" variant="secondary" asChild>
@@ -415,11 +415,11 @@ const QuadBots = () => {
                   </h3>
                   <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
                 </div>
-                <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
+                <div className="flex-1 text-center md:text-left">
                   <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
                     Perfect Fit for Your Industry?
                   </h2>
-                  <p className="text-primary-foreground/80 mb-6 max-w-lg">
+                  <p className="text-primary-foreground/80 mb-6 max-w-lg md:mx-0 mx-auto">
                     Let's discuss how we can tailor the Quad Bots system specifically for your business needs and goals.
                   </p>
                   <Button size="lg" variant="secondary" asChild>
@@ -464,11 +464,11 @@ const QuadBots = () => {
                 </div>
 
                 {/* Right: CTA Content */}
-                <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
+                <div className="flex-1 text-center md:text-left">
                   <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
                     Ready to Transform Your Business?
                   </h2>
-                  <p className="text-primary-foreground/80 mb-6 max-w-lg">
+                  <p className="text-primary-foreground/80 mb-6 max-w-lg md:mx-0 mx-auto">
                     Learn how GrowSmallBiz can customize a Quad Bots solution for your business. 
                     Let's discuss your specific needs and how our AI can revolutionize your operations.
                   </p>
