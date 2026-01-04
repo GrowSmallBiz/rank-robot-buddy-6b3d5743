@@ -331,6 +331,41 @@ const QuadBots = () => {
           </div>
         </section>
 
+        {/* Mid-page CTA after Benefits */}
+        <section className="section-card">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-10">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0 text-center">
+                  <div className="relative inline-block">
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-foreground/30 to-primary-foreground/10 blur-sm scale-110" />
+                    <img
+                      src={baseContactCTA.image}
+                      alt={baseContactCTA.name}
+                      className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary-foreground/30"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-lg font-display font-semibold text-primary-foreground">
+                    {baseContactCTA.name}
+                  </h3>
+                  <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
+                    See These Benefits in Action
+                  </h2>
+                  <p className="text-primary-foreground/80 mb-6 max-w-lg">
+                    Schedule a personalized demo to see how Quad Bots can transform your sales process and boost your revenue.
+                  </p>
+                  <Button size="lg" variant="secondary" asChild>
+                    <Link to="/contact">{baseContactCTA.buttonText}</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Industries Section */}
         <section className="section-card">
           <div className="container mx-auto px-4">
@@ -357,6 +392,41 @@ const QuadBots = () => {
                   <p className="text-xs text-muted-foreground">{industry.description}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA after Industries */}
+        <section className="section-dark">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto bg-gradient-primary rounded-2xl p-8 md:p-10">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0 text-center">
+                  <div className="relative inline-block">
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-foreground/30 to-primary-foreground/10 blur-sm scale-110" />
+                    <img
+                      src={baseContactCTA.image}
+                      alt={baseContactCTA.name}
+                      className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary-foreground/30"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-lg font-display font-semibold text-primary-foreground">
+                    {baseContactCTA.name}
+                  </h3>
+                  <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-3">
+                    Perfect Fit for Your Industry?
+                  </h2>
+                  <p className="text-primary-foreground/80 mb-6 max-w-lg">
+                    Let's discuss how we can tailor the Quad Bots system specifically for your business needs and goals.
+                  </p>
+                  <Button size="lg" variant="secondary" asChild>
+                    <Link to="/contact">{baseContactCTA.buttonText}</Link>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
