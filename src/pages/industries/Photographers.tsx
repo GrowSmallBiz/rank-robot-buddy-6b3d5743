@@ -17,7 +17,7 @@ import {
   Image
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
@@ -401,14 +401,10 @@ const Photographers = () => {
         subtitle="Common questions from photographers"
         schemaType="FAQPage"
         contactCTA={{
+          ...baseContactCTA,
           title: "Have more questions about Photography Marketing?",
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's grow your photography business together.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Book A Meeting",
-          buttonHref: "/contact",
-          image: subrataHeadshot
         }}
       />
 

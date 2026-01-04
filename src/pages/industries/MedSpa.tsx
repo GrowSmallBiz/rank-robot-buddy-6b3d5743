@@ -17,7 +17,7 @@ import {
   Heart
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection";
 import medSpaHeroImage from "@/assets/industry-medspa-hero.jpg";
@@ -401,14 +401,10 @@ const MedSpa = () => {
         subtitle="Common questions from aesthetic practice owners"
         schemaType="FAQPage"
         contactCTA={{
+          ...baseContactCTA,
           title: "Have more questions about Med Spa Marketing?",
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's grow your aesthetic practice together.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Book A Meeting",
-          buttonHref: "/contact",
-          image: subrataHeadshot
         }}
       />
 

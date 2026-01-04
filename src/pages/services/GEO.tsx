@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain } from "lucide-react";
@@ -206,14 +206,10 @@ const GEO = () => {
         faqs={faqs}
         subtitle="Everything you need to know about Generative Engine Optimization."
         contactCTA={{
+          ...baseContactCTA,
           title: "Have more questions about GEO?",
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's optimize for AI engines together.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Book A Meeting",
-          buttonHref: "/contact",
-          image: subrataHeadshot
         }}
       />
 

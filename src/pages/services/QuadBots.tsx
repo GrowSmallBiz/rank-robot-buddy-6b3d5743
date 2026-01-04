@@ -35,7 +35,7 @@ import botLeadGenerator from "@/assets/bot-lead-generator.png";
 import botConversationalAI from "@/assets/bot-conversational-ai.png";
 import botVoiceAI from "@/assets/bot-voice-ai.png";
 import botSupervisorOS from "@/assets/bot-supervisor-os.png";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 
 const botCards = [
   {
@@ -365,14 +365,10 @@ const QuadBots = () => {
         <FAQSection 
           faqs={faqs} 
           contactCTA={{
+            ...baseContactCTA,
             title: "Have more questions about Quad Bots?",
             description: "We're here to help! If you have any additional questions or need more details about our AI Sales Team, reach out to us.",
             tagline: "Let's automate your sales and grow your business.",
-            name: "Subrata Guha",
-            role: "Founder, GrowSmallBiz",
-            buttonText: "Book A Meeting",
-            buttonHref: "/contact",
-            image: subrataHeadshot
           }}
         />
 

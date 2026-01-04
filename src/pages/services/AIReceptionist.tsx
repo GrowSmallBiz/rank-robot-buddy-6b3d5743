@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, BlogPost } from "@/components/sections/BlogSection";
 import heroImage from "@/assets/ai-receptionist-hero.jpg";
 import {
@@ -747,14 +747,10 @@ const AIReceptionist = () => {
           subtitle="Everything you need to know about AI Receptionist & Conversational AI"
           faqs={faqs}
           contactCTA={{
+            ...baseContactCTA,
             title: "Have more questions about AI Receptionist?",
             description: "We're here to help! Reach out to us for a personalized consultation.",
             tagline: "Let's automate your customer service together.",
-            name: "Subrata Guha",
-            role: "Founder, GrowSmallBiz",
-            buttonText: "Book A Meeting",
-            buttonHref: "/contact",
-            image: subrataHeadshot
           }}
         />
 

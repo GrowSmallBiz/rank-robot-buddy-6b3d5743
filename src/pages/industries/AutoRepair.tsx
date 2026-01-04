@@ -17,7 +17,7 @@ import {
   Wrench
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, autoRepairBlogPosts } from "@/components/sections/BlogSection";
 import autoRepairHeroImage from "@/assets/industry-autorepair-hero.jpg";
@@ -401,14 +401,10 @@ const AutoRepair = () => {
         subtitle="Common questions from shop owners"
         schemaType="FAQPage"
         contactCTA={{
+          ...baseContactCTA,
           title: "Have more questions about Auto Repair Marketing?",
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's grow your auto shop together.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Book A Meeting",
-          buttonHref: "/contact",
-          image: subrataHeadshot
         }}
       />
 

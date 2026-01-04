@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, paidMediaBlogPosts } from "@/components/sections/BlogSection";
 import { 
@@ -596,14 +596,10 @@ const PaidMedia = () => {
         faqs={faqs}
         subtitle="Common questions about paid advertising and media management"
         contactCTA={{
+          ...baseContactCTA,
           title: "Have more questions about Paid Media?",
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's maximize your ad ROI together.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Book A Meeting",
-          buttonHref: "/contact",
-          image: subrataHeadshot
         }}
       />
 

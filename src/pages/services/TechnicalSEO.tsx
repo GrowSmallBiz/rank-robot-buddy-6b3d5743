@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, technicalSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe } from "lucide-react";
@@ -244,14 +244,10 @@ const TechnicalSEO = () => {
         faqs={faqs}
         subtitle="Get answers to common questions about technical SEO services."
         contactCTA={{
+          ...baseContactCTA,
           title: "Have more questions about Technical SEO?",
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's fix your technical SEO together.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Book A Meeting",
-          buttonHref: "/contact",
-          image: subrataHeadshot
         }}
       />
 

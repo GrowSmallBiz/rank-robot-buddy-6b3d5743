@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import {
@@ -1015,14 +1015,10 @@ const WebsiteDesign = () => {
         faqs={faqs}
         schemaType="WebPage"
         contactCTA={{
+          ...baseContactCTA,
           title: "Have more questions about Website Design?",
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's build your dream website together.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Book A Meeting",
-          buttonHref: "/contact",
-          image: subrataHeadshot
         }}
       />
 
