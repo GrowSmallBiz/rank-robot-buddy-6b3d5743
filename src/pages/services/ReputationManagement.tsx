@@ -391,7 +391,7 @@ const ReputationManagement = () => {
           {/* Platform Capabilities */}
           <div className="max-w-4xl mx-auto mt-12 animate-fade-up">
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
-              <h3 className="text-lg font-display font-semibold text-foreground text-center mb-6">
+              <h3 className="text-xl font-display font-semibold text-foreground text-center mb-6">
                 What You Can Do Across All Platforms
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -426,7 +426,7 @@ const ReputationManagement = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Real Client Results</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
               See What's Possible in 90 Days
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -586,7 +586,7 @@ const ReputationManagement = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">System Automation Highlights</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
               Everything Runs on Autopilot
             </h2>
           </div>
@@ -595,7 +595,7 @@ const ReputationManagement = () => {
             {highlights.map((highlight, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 p-4 bg-background border border-border rounded-xl hover:border-primary/50 transition-all duration-300 animate-fade-up"
+                className="flex items-center gap-3 p-4 bg-background/80 border border-ghl-icon rounded-xl transition-all duration-300 animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
@@ -611,7 +611,7 @@ const ReputationManagement = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">How It Works</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
               Your Path to 5-Star Reputation in 4 Simple Steps
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -650,7 +650,7 @@ const ReputationManagement = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <MessageSquare className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-display font-semibold text-foreground mb-3">
+                  <h3 className="text-xl font-display font-semibold text-foreground mb-3">
                     AI Learns Your Voice
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
@@ -669,7 +669,7 @@ const ReputationManagement = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <Zap className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-display font-semibold text-foreground mb-3">
+                  <h3 className="text-xl font-display font-semibold text-foreground mb-3">
                     Automation Activates
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
@@ -688,7 +688,7 @@ const ReputationManagement = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <TrendingUp className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-display font-semibold text-foreground mb-3">
+                  <h3 className="text-xl font-display font-semibold text-foreground mb-3">
                     Watch Rankings Climb
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
@@ -716,7 +716,7 @@ const ReputationManagement = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Win More Local Business</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
               Own Your Local Market with Reviews
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -729,13 +729,13 @@ const ReputationManagement = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="group bg-card border border-border rounded-xl p-6 space-y-4 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50 animate-fade-up"
+                className="group bg-card border border-ghl-icon rounded-xl p-6 space-y-4 transition-all duration-500 hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] hover:-translate-y-2 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/20">
                   <benefit.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
                 </div>
-                <h3 className="text-lg font-display font-semibold text-foreground transition-colors duration-300 group-hover:text-primary">
+                <h3 className="text-xl font-display font-semibold text-foreground transition-colors duration-300 group-hover:text-primary">
                   {benefit.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -752,7 +752,7 @@ const ReputationManagement = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Core Features</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
               Your Complete Review Automation System
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -764,7 +764,7 @@ const ReputationManagement = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group bg-background border border-border rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50 animate-fade-up"
+                className="group bg-background/80 border border-ghl-icon rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] hover:-translate-y-2 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
@@ -772,7 +772,7 @@ const ReputationManagement = () => {
                     <feature.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="text-xl font-display font-bold text-foreground transition-colors duration-300 group-hover:text-primary">
+                    <h3 className="text-2xl font-display font-bold text-foreground transition-colors duration-300 group-hover:text-primary">
                       {feature.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -791,7 +791,7 @@ const ReputationManagement = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
             <p className="text-primary font-medium">Customer Experience That Drives Revenue</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
               A Complete Local Marketing Solution Built for Small Business Success
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
@@ -821,7 +821,7 @@ const ReputationManagement = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Client Success Stories</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
               Real Results from Real Businesses
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -833,7 +833,7 @@ const ReputationManagement = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="group bg-background border border-border rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50 animate-fade-up"
+                className="group bg-background/80 border border-ghl-icon rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] hover:-translate-y-2 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center gap-1 mb-4">

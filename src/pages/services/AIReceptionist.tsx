@@ -267,7 +267,7 @@ const AIReceptionist = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">The Hidden Cost of Missed Opportunities</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Industry Statistics That Will Shock You
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -279,7 +279,7 @@ const AIReceptionist = () => {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="bg-background border border-border rounded-2xl p-6 text-center animate-fade-up hover:border-primary/50 transition-colors"
+                  className="bg-background/80 border border-ghl-icon rounded-2xl p-6 text-center animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">
@@ -292,7 +292,7 @@ const AIReceptionist = () => {
             </div>
 
             <div className="mt-12 bg-destructive/10 border border-destructive/20 rounded-2xl p-6 max-w-3xl mx-auto animate-fade-up">
-              <h3 className="text-xl font-semibold text-foreground mb-4 text-center">The Math That Matters</h3>
+              <h3 className="text-2xl font-semibold text-foreground mb-4 text-center">The Math That Matters</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="text-center">
                   <p className="text-muted-foreground mb-2"><strong>Without AI:</strong></p>
@@ -318,7 +318,7 @@ const AIReceptionist = () => {
                   <Phone className="w-4 h-4" />
                   AI Virtual Receptionist
                 </div>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+                <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
                   Never Miss Another Call, Ever Again
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
@@ -344,8 +344,8 @@ const AIReceptionist = () => {
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-2xl p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <h3 className="text-xl font-semibold text-foreground mb-6">Call Actions During Every Interaction</h3>
+              <div className="bg-card border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]" style={{ animationDelay: "0.1s" }}>
+                <h3 className="text-2xl font-semibold text-foreground mb-6">Call Actions During Every Interaction</h3>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
                     { icon: Users, label: "Update Contact Fields" },
@@ -370,8 +370,8 @@ const AIReceptionist = () => {
         <section className="py-20 bg-card">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 bg-background border border-border rounded-2xl p-8 animate-fade-up">
-                <h3 className="text-xl font-semibold text-foreground mb-6">Unified Multi-Channel Platform</h3>
+              <div className="order-2 lg:order-1 bg-background border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]">
+                <h3 className="text-2xl font-semibold text-foreground mb-6">Unified Multi-Channel Platform</h3>
                 <div className="space-y-4">
                   {[
                     { channel: "SMS", desc: "Instant text message responses and follow-ups" },
@@ -398,7 +398,7 @@ const AIReceptionist = () => {
                   <MessageSquare className="w-4 h-4" />
                   Conversational AI
                 </div>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+                <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
                   Turn Every Digital Interaction Into Revenue
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
@@ -431,7 +431,7 @@ const AIReceptionist = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Performance Dashboard</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Real Results You Can Measure
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -443,7 +443,7 @@ const AIReceptionist = () => {
               {dashboardMetrics.map((metric, index) => (
                 <div
                   key={index}
-                  className="bg-card border border-border rounded-xl p-6 text-center animate-fade-up hover:border-primary/50 transition-colors"
+                  className="bg-card border border-ghl-icon rounded-xl p-6 text-center animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <BarChart3 className="w-8 h-8 text-primary mx-auto mb-4" />
@@ -477,7 +477,7 @@ const AIReceptionist = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Complete Capabilities</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Everything You Need for 24/7 Customer Coverage
               </h2>
             </div>
@@ -486,13 +486,13 @@ const AIReceptionist = () => {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="ghl-card rounded-2xl p-6 animate-fade-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  className="backdrop-blur-sm rounded-2xl p-6 animate-fade-up transition-all hover:shadow-[0_0_60px_#17a2b8,0_0_90px_#17a2b8]"
+                  style={{ animationDelay: `${index * 0.1}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}
                 >
-                  <div className="ghl-icon mb-4">
-                    <feature.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center mb-4">
+                    <feature.icon className="w-6 h-6 text-ghl-icon" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3>
+                  <h3 className="text-2xl font-semibold text-foreground mb-3">{feature.title}</h3>
                   <p className="text-muted-foreground">{feature.description}</p>
                 </div>
               ))}
@@ -504,14 +504,14 @@ const AIReceptionist = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Why Everyone Wins With AI
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-card border border-border rounded-2xl p-8 animate-fade-up">
-                <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
+              <div className="bg-card border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]">
+                <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
                   <Building2 className="w-6 h-6 text-primary" />
                   Why Your Business Will Love It
                 </h3>
@@ -531,8 +531,8 @@ const AIReceptionist = () => {
                 </ul>
               </div>
 
-              <div className="bg-card border border-border rounded-2xl p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
+              <div className="bg-card border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]" style={{ animationDelay: "0.1s" }}>
+                <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
                   <Users className="w-6 h-6 text-primary" />
                   Why Your Customers Will Love It
                 </h3>
@@ -560,7 +560,7 @@ const AIReceptionist = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Industry Applications</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Built for Service-Based Businesses
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -572,7 +572,7 @@ const AIReceptionist = () => {
               {industries.map((industry, index) => (
                 <div
                   key={index}
-                  className="bg-background border border-border rounded-xl p-6 animate-fade-up hover:border-primary/50 transition-colors"
+                  className="bg-background/80 border border-ghl-icon rounded-xl p-6 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex items-center gap-4 mb-4">
@@ -593,7 +593,7 @@ const AIReceptionist = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Success Stories</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Real Results From Real Businesses
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -630,7 +630,7 @@ const AIReceptionist = () => {
               ].map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-card border border-border rounded-2xl p-8 space-y-6 animate-fade-up hover:border-primary/50 transition-colors"
+                  className="bg-card border border-ghl-icon rounded-2xl p-8 space-y-6 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
@@ -665,7 +665,7 @@ const AIReceptionist = () => {
                 <Clock className="w-4 h-4" />
                 Done-For-You Service
               </div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
                 White Glove Setup & Support
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
@@ -711,7 +711,7 @@ const AIReceptionist = () => {
           <div className="absolute inset-0 hero-glow" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground animate-fade-up">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground animate-fade-up">
                 Ready to Capture Every{" "}
                 <span className="text-gradient">Lead, Every Call?</span>
               </h2>
