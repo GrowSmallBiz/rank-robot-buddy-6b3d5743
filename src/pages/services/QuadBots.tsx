@@ -210,7 +210,6 @@ const QuadBots = () => {
           description="Meet the 4-Bot System — Lead Gen, Conversational AI, Voice AI, and Supervisor OS — working together to grow your business on autopilot."
           primaryCTA={{ label: "Get Started Now", href: "/free-assessment" }}
           secondaryCTA={{ label: "Book a Demo", href: "/contact" }}
-          note="No credit card required • Setup in minutes"
           backgroundImage={heroImage}
           overlayOpacity={85}
           stats={[
