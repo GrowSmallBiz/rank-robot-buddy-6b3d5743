@@ -480,6 +480,7 @@ const CRM = () => {
         {/* Hero Section */}
         <section className="relative py-24 lg:py-32 overflow-hidden">
           <div className="absolute inset-0 hero-glow" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-card/50" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6 animate-fade-up">
@@ -517,8 +518,9 @@ const CRM = () => {
         </section>
 
         {/* Why Choose Us / Value Props */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-card/80 border-t border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Why Choose Us</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -536,7 +538,7 @@ const CRM = () => {
               {valueProps.map((prop, index) => (
                 <div
                   key={index}
-                  className="bg-background border border-border rounded-2xl p-8 text-center animate-fade-up hover:border-primary/50 transition-all hover:shadow-lg"
+                  className="bg-background/80 backdrop-blur-sm border border-border rounded-2xl p-8 text-center animate-fade-up hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/5"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
@@ -551,8 +553,9 @@ const CRM = () => {
         </section>
 
         {/* Key Benefits Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-background">
+          <div className="absolute inset-0 section-glow opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Autopilot for your Business</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
@@ -564,7 +567,7 @@ const CRM = () => {
               {keyBenefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="bg-card border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all"
+                  className="bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all hover:bg-card/80"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
@@ -579,8 +582,9 @@ const CRM = () => {
         </section>
 
         {/* AI Features Section */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-secondary/30 border-y border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">AI Features Overview</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -595,10 +599,10 @@ const CRM = () => {
               {aiFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-background border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all group"
+                  className="bg-card/80 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all group hover:shadow-lg hover:shadow-primary/10"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-primary/20">
                     <feature.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
@@ -610,8 +614,9 @@ const CRM = () => {
         </section>
 
         {/* Complete Growth Suite Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-background">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(var(--primary)/0.03)_0%,_transparent_50%)]" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">COMPLETE GROWTH SUITE</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -627,7 +632,7 @@ const CRM = () => {
                 <AccordionItem
                   key={category.id}
                   value={category.id}
-                  className="bg-card border border-border rounded-2xl px-6 animate-fade-up"
+                  className="bg-card/70 backdrop-blur-sm border border-border rounded-2xl px-6 animate-fade-up hover:border-primary/30 transition-colors"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <AccordionTrigger className="hover:no-underline py-6">
@@ -641,7 +646,7 @@ const CRM = () => {
                   <AccordionContent className="pb-6">
                     <div className="grid md:grid-cols-2 gap-4 pt-4">
                       {category.features.map((feature, fIndex) => (
-                        <div key={fIndex} className="bg-background border border-border rounded-xl p-4">
+                        <div key={fIndex} className="bg-background/80 border border-border rounded-xl p-4 hover:border-primary/20 transition-colors">
                           <h4 className="font-semibold text-foreground mb-2">{feature.name}</h4>
                           <p className="text-sm text-muted-foreground mb-3">{feature.description}</p>
                           <p className="text-sm text-primary italic">"{feature.quote}"</p>
@@ -656,8 +661,9 @@ const CRM = () => {
         </section>
 
         {/* Industry Leading Features */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-card border-t border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/20 to-transparent" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
                 Industry Leading Features
@@ -668,7 +674,7 @@ const CRM = () => {
               {industryLeadingFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 p-4 animate-fade-up"
+                  className="flex items-start gap-4 p-4 rounded-xl animate-fade-up hover:bg-background/50 transition-colors"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -685,8 +691,9 @@ const CRM = () => {
         </section>
 
         {/* Industry Solutions Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-background">
+          <div className="absolute inset-0 section-glow opacity-30" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Tailored For Your Industry</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -701,7 +708,7 @@ const CRM = () => {
               {industryCategories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-card border border-border rounded-2xl p-6 animate-fade-up"
+                  className="bg-card/70 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/30 hover:bg-card transition-all"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <h3 className="text-lg font-semibold text-foreground mb-4 pb-3 border-b border-border">{category.title}</h3>
@@ -720,8 +727,9 @@ const CRM = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-secondary/40 border-y border-primary/10">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
                 Join 3,800+ GrowSmallBiz Customers!
@@ -732,7 +740,7 @@ const CRM = () => {
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-background border border-border rounded-2xl p-6 animate-fade-up"
+                  className="bg-card/90 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:shadow-lg hover:shadow-primary/5 transition-all"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex gap-1 mb-4">
@@ -752,8 +760,8 @@ const CRM = () => {
         </section>
 
         {/* Demo Videos Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-background">
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
                 Quick Demo Videos
@@ -765,7 +773,7 @@ const CRM = () => {
               {demoVideos.map((video, index) => (
                 <div
                   key={index}
-                  className="bg-card border border-border rounded-xl p-4 text-center animate-fade-up hover:border-primary/50 transition-all cursor-pointer group"
+                  className="bg-card/60 backdrop-blur-sm border border-border rounded-xl p-4 text-center animate-fade-up hover:border-primary/50 hover:bg-card transition-all cursor-pointer group"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/20 transition-colors">
@@ -779,8 +787,10 @@ const CRM = () => {
         </section>
 
         {/* Pricing Section */}
-        <section id="pricing" className="py-20 bg-card">
-          <div className="container mx-auto px-4">
+        <section id="pricing" className="relative py-20 bg-secondary/50 border-y border-primary/20">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-primary/5" />
+          <div className="absolute inset-0 section-glow" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Choose a Plan That Fits Your Growth</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
@@ -795,13 +805,13 @@ const CRM = () => {
               {pricingPlans.map((plan, index) => (
                 <div
                   key={index}
-                  className={`relative bg-background border rounded-2xl p-8 animate-fade-up ${
-                    plan.popular ? "border-primary shadow-lg shadow-primary/20" : "border-border"
+                  className={`relative bg-card/95 backdrop-blur-sm border rounded-2xl p-8 animate-fade-up transition-all hover:translate-y-[-4px] ${
+                    plan.popular ? "border-primary shadow-xl shadow-primary/20 ring-1 ring-primary/30" : "border-border hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10"
                   }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {plan.popular && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-primary text-primary-foreground text-sm font-medium rounded-full shadow-lg shadow-primary/30">
                       ★ Most Popular
                     </div>
                   )}
@@ -847,17 +857,18 @@ const CRM = () => {
             <div className="text-center mt-12 animate-fade-up">
               <p className="text-muted-foreground mb-4">Additional Usage Costs:</p>
               <div className="flex flex-wrap justify-center gap-6 text-sm">
-                <span className="text-foreground">Text: $0.016 ea.</span>
-                <span className="text-foreground">Email: $0.004 ea.</span>
-                <span className="text-foreground">Local Voicemail: $0.05 ea.</span>
+                <span className="text-foreground bg-card/80 px-3 py-1 rounded-full border border-border">Text: $0.016 ea.</span>
+                <span className="text-foreground bg-card/80 px-3 py-1 rounded-full border border-border">Email: $0.004 ea.</span>
+                <span className="text-foreground bg-card/80 px-3 py-1 rounded-full border border-border">Local Voicemail: $0.05 ea.</span>
               </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-background overflow-hidden">
+          <div className="absolute inset-0 hero-glow opacity-50" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
                 Ready to Convert More Leads Into Sales?
@@ -865,7 +876,7 @@ const CRM = () => {
               <p className="text-lg text-muted-foreground mb-8">
                 Schedule a demo to see how GrowSmallBiz can transform your business with AI-powered automation.
               </p>
-              <Button variant="hero" size="lg" asChild>
+              <Button variant="hero" size="lg" className="glow-primary" asChild>
                 <a href="https://lp.growsmallbiz.io/crm-demo-request-page" target="_blank" rel="noopener noreferrer">
                   Schedule My Demo Session
                   <ArrowRight className="w-5 h-5 ml-2" />
