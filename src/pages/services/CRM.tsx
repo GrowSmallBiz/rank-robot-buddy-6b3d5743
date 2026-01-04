@@ -573,7 +573,7 @@ const CRM = () => {
               {keyBenefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="backdrop-blur-sm rounded-2xl p-6 animate-fade-up transition-all shadow-[0_0_20px_rgba(23,162,184,0.3)] hover:shadow-[0_0_30px_rgba(23,162,184,0.5)]"
+                  className="backdrop-blur-sm rounded-2xl p-6 animate-fade-up transition-all shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8] hover:shadow-[0_0_30px_#17a2b8,0_0_60px_rgba(23,162,184,0.5)]"
                   style={{ animationDelay: `${index * 0.1}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center mb-4">
