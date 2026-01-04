@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings } from "lucide-react";
@@ -208,14 +208,10 @@ const AEO = () => {
         faqs={faqs}
         subtitle="Learn how Answer Engine Optimization helps your brand get cited by AI."
         contactCTA={{
+          ...baseContactCTA,
           title: "Have more questions about AEO?",
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's get your brand cited by AI.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Book A Meeting",
-          buttonHref: "/contact",
-          image: subrataHeadshot
         }}
       />
 
