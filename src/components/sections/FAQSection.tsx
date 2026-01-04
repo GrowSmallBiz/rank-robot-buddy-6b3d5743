@@ -21,6 +21,7 @@ export interface ContactCTA {
   role: string;
   buttonText: string;
   buttonHref: string;
+  image?: string;
 }
 
 interface FAQSectionProps {
@@ -96,11 +97,19 @@ export const FAQSection = ({
               <div className="sticky top-24 p-8 rounded-2xl border-2 border-primary/60 bg-card/30 backdrop-blur-sm text-center shadow-[0_0_30px_rgba(255,127,80,0.15)]">
                 {/* Avatar with gradient border */}
                 <div className="w-24 h-24 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-primary via-orange-400 to-primary">
-                  <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                    <span className="text-3xl font-display font-bold text-primary">
-                      {contactCTA.name.charAt(0)}
-                    </span>
-                  </div>
+                  {contactCTA.image ? (
+                    <img 
+                      src={contactCTA.image} 
+                      alt={contactCTA.name}
+                      className="w-full h-full rounded-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
+                      <span className="text-3xl font-display font-bold text-primary">
+                        {contactCTA.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 <h3 className="text-xl font-display font-bold text-foreground mb-4">
