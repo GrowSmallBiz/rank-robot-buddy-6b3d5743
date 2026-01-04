@@ -365,7 +365,7 @@ const QuadBots = () => {
         <FAQSection faqs={faqs} />
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-primary">
+        <section className="py-24 lg:py-32 bg-gradient-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-4">
               Ready to Transform Your Business?
