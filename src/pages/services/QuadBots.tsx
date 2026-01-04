@@ -361,7 +361,18 @@ const QuadBots = () => {
         </section>
 
         {/* FAQ Section */}
-        <FAQSection faqs={faqs} />
+        <FAQSection 
+          faqs={faqs} 
+          contactCTA={{
+            title: "Have more questions about Quad Bots?",
+            description: "We're here to help! If you have any additional questions or need more details about our AI Sales Team, reach out to us.",
+            tagline: "Let's automate your sales and grow your business.",
+            name: "Alex",
+            role: "AI Solutions Specialist",
+            buttonText: "Book A Meeting",
+            buttonHref: "/contact"
+          }}
+        />
 
         {/* CTA Section */}
         <section className="py-24 lg:py-32 bg-gradient-primary">
