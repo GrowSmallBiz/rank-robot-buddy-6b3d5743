@@ -529,7 +529,7 @@ const CRM = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Why Choose Us</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Your Entire Business. Powered by AI.
               </h2>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
@@ -564,7 +564,7 @@ const CRM = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Autopilot for your Business</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
                 through SMS, Email, Web Chat, Phone Calls, and much more!
               </h2>
             </div>
@@ -593,7 +593,7 @@ const CRM = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">AI Features Overview</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Work Smarter, Respond Faster, Close More Deals
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -625,7 +625,7 @@ const CRM = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">COMPLETE GROWTH SUITE</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Everything You Need to <span className="text-transparent bg-clip-text bg-gradient-primary italic">Grow Your Business</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -671,7 +671,7 @@ const CRM = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Industry Leading Features
               </h2>
             </div>
@@ -700,7 +700,7 @@ const CRM = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Tailored For Your Industry</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Solutions Built To Fit Your Business
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -735,7 +735,7 @@ const CRM = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Join 3,800+ GrowSmallBiz Customers!
               </h2>
             </div>
@@ -767,7 +767,7 @@ const CRM = () => {
         <section className="relative py-20 bg-background">
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Quick Demo Videos
               </h2>
               <p className="text-muted-foreground">See how each feature works in action</p>
@@ -797,7 +797,7 @@ const CRM = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Choose a Plan That Fits Your Growth</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
                 Win More Clients & Keep Them For Life
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -868,7 +868,7 @@ const CRM = () => {
           <div className="absolute inset-0 hero-glow opacity-50" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
                 Ready to Convert More Leads Into Sales?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
