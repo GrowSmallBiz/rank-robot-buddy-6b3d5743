@@ -573,11 +573,11 @@ const CRM = () => {
               {keyBenefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="ghl-card rounded-2xl p-6 animate-fade-up"
-                  style={{ animationDelay: `${index * 0.1}s`, border: '2px solid #17a2b8ff' }}
+                  className="bg-card/70 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:border-primary/30 transition-colors"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center mb-4">
-                    <benefit.icon className="w-6 h-6 text-ghl-icon" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <benefit.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">{benefit.title}</h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
@@ -680,8 +680,8 @@ const CRM = () => {
               {industryLeadingFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 p-4 rounded-xl animate-fade-up hover:bg-background/50 transition-colors"
-                  style={{ animationDelay: `${index * 0.05}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465c' }}
+                  className="flex items-start gap-4 p-4 rounded-xl animate-fade-up bg-card/50 border border-border hover:border-primary/30 transition-colors"
+                  style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <feature.icon className="w-6 h-6 text-primary" />
