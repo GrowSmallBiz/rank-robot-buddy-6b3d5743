@@ -38,7 +38,7 @@ export const FAQSection = ({
   };
 
   return (
-    <section className="py-24 bg-card">
+    <section className="py-24 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-up">
@@ -58,8 +58,8 @@ export const FAQSection = ({
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-secondary/50 border border-border rounded-xl px-6 data-[state=open]:bg-secondary/70 transition-colors animate-fade-up"
-                style={{ animationDelay: `${index * 0.05}s` }}
+                className="bg-black border rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_30px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_30px_rgba(255,127,80,0.5)]"
+                style={{ animationDelay: `${index * 0.05}s`, borderColor: '#ff7f50ff' }}
               >
                 <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-5 hover:no-underline">
                   {faq.question}
