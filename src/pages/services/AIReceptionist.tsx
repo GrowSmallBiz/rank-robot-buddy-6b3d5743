@@ -26,7 +26,12 @@ import {
   Stethoscope,
   Scale,
   Home,
+  Smartphone,
+  Facebook,
+  Instagram,
+  MapPin,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 const AIReceptionist = () => {
   const features = [
@@ -375,13 +380,13 @@ const AIReceptionist = () => {
               <div className="order-2 lg:order-1 backdrop-blur-sm rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_40px_#17a2b880,0_0_80px_#17a2b840]" style={{ border: '2px solid #17a2b8', backgroundColor: '#050a10', boxShadow: '0 0 30px #17a2b830' }}>
                 <h3 className="text-2xl font-semibold text-foreground mb-6">Unified Multi-Channel Platform</h3>
                 <div className="space-y-4">
-                  {[
-                    { channel: "SMS", desc: "Instant text message responses and follow-ups", bgColor: "#2d5c3f", borderColor: "#22c55e", iconColor: "#22c55e" },
-                    { channel: "Website Chat", desc: "Engage visitors the moment they arrive", bgColor: "#2d465c", borderColor: "#17a2b8", iconColor: "#17a2b8" },
-                    { channel: "Facebook", desc: "Respond to Messenger inquiries automatically", bgColor: "#2d3a5c", borderColor: "#1877f2", iconColor: "#1877f2" },
-                    { channel: "Instagram", desc: "Handle DMs and convert followers to customers", bgColor: "#5c2d4a", borderColor: "#e1306c", iconColor: "#e1306c" },
-                    { channel: "Google Business", desc: "Manage profile messages seamlessly", bgColor: "#5c4a2d", borderColor: "#fbbc05", iconColor: "#fbbc05" },
-                  ].map((item, index) => (
+                  {([
+                    { channel: "SMS", desc: "Instant text message responses and follow-ups", bgColor: "#0d2818", borderColor: "#22c55e", iconColor: "#22c55e", Icon: Smartphone },
+                    { channel: "Website Chat", desc: "Engage visitors the moment they arrive", bgColor: "#0d1f2d", borderColor: "#17a2b8", iconColor: "#17a2b8", Icon: Globe },
+                    { channel: "Facebook", desc: "Respond to Messenger inquiries automatically", bgColor: "#0d1a33", borderColor: "#1877f2", iconColor: "#1877f2", Icon: Facebook },
+                    { channel: "Instagram", desc: "Handle DMs and convert followers to customers", bgColor: "#2d0d1f", borderColor: "#e1306c", iconColor: "#e1306c", Icon: Instagram },
+                    { channel: "Google Business", desc: "Manage profile messages seamlessly", bgColor: "#1a2633", borderColor: "#4285f4", iconColor: "#4285f4", Icon: MapPin },
+                  ] as { channel: string; desc: string; bgColor: string; borderColor: string; iconColor: string; Icon: LucideIcon }[]).map((item, index) => (
                     <div 
                       key={index} 
                       className="flex items-start gap-4 p-4 rounded-lg transition-all hover:scale-[1.02]"
@@ -395,7 +400,7 @@ const AIReceptionist = () => {
                         className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
                         style={{ backgroundColor: `${item.iconColor}20` }}
                       >
-                        <MessageSquare className="w-5 h-5" style={{ color: item.iconColor }} />
+                        <item.Icon className="w-5 h-5" style={{ color: item.iconColor }} />
                       </div>
                       <div>
                         <p className="font-medium text-foreground">{item.channel}</p>
