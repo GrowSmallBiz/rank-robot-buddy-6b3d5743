@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
@@ -214,6 +215,32 @@ const AEO = () => {
       <AnimatedStatsSection stats={aeoStats} columns={4} />
 
       <PlatformAdvantagesSection variant="compact" serviceType="aeo" />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection 
+        testimonials={[
+          {
+            quote: "After implementing AEO, ChatGPT started recommending our firm when people asked about family law in our area. We've gotten 15+ new clients directly from AI referrals.",
+            author: "Jennifer Martinez",
+            role: "Managing Partner",
+            company: "Martinez Family Law",
+          },
+          {
+            quote: "Our brand is now the answer when people ask AI assistants about HVAC services in our market. The visibility boost has been incredible for lead generation.",
+            author: "Robert Chen",
+            role: "Owner",
+            company: "Premier Home Services",
+          },
+          {
+            quote: "We invested in AEO early and it's paying off. When patients ask Siri or Google Assistant about cosmetic procedures, we come up as the recommended provider.",
+            author: "Dr. Lisa Park",
+            role: "Medical Director",
+            company: "Radiance Aesthetics",
+          },
+        ]}
+        title="AEO Success Stories"
+        subtitle="See how businesses are getting cited by AI platforms"
+      />
 
       <FAQSection
         faqs={faqs}
