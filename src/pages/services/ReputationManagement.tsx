@@ -6,6 +6,7 @@ import { AnimatedStatsSection, AnimatedStatCard } from "@/components/sections/An
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, reputationManagementBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { PersonCTA } from "@/components/services";
 import { 
   ArrowRight, 
@@ -867,6 +868,35 @@ const ReputationManagement = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection
+        title="What Our Clients Say"
+        subtitle="See how businesses are transforming their online reputation"
+        testimonials={[
+          {
+            quote: "Our Google rating went from 3.8 to 4.9 stars in just 3 months. The automated review requests made all the difference. We now get 5-10 new reviews every week.",
+            author: "Lisa M.",
+            role: "Owner",
+            company: "Serenity MedSpa",
+            rating: 5,
+          },
+          {
+            quote: "The AI responses are incredible. Every review gets a professional reply within minutes. Our customers love the personal touch, and we don't lift a finger.",
+            author: "Robert H.",
+            role: "Practice Manager",
+            company: "Family Dental Care",
+            rating: 5,
+          },
+          {
+            quote: "We went from page 3 to the top 3 in local search results. The review growth directly impacted our rankings. Best investment for our reputation.",
+            author: "Amanda S.",
+            role: "Marketing Director",
+            company: "Elite Chiropractic",
+            rating: 5,
+          },
+        ]}
+      />
 
       {/* FAQ Section */}
       <FAQSection
