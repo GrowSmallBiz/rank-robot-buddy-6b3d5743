@@ -53,6 +53,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import socialMediaHero from "@/assets/social-media-hero.jpg";
 
 const socialMediaStats = [
@@ -703,6 +704,19 @@ const SocialMedia = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Social Media Partner"
+        description="We build and manage your social media presence with strategy, creativity, and consistency—helping you connect with customers and grow your brand."
+        items={[
+          { title: "Strategic Content Planning", description: "We create content calendars aligned with your business goals and audience interests.", icon: Target },
+          { title: "Multi-Platform Management", description: "We manage Instagram, Facebook, LinkedIn, and more from a unified strategy.", icon: Users },
+          { title: "Engagement & Community", description: "We actively engage with your audience to build community and brand loyalty.", icon: MessageCircle },
+          { title: "Performance Analytics", description: "Detailed reporting shows what's working and drives continuous improvement.", icon: BarChart3 },
+          { title: "Brand Voice Consistency", description: "Every post reflects your brand personality and maintains professional standards.", icon: Eye },
+          { title: "Trend Monitoring", description: "We stay on top of platform changes and trending content to maximize reach.", icon: TrendingUp },
+        ]}
+      />
 
       <AnimatedStatsSection stats={socialMediaStats} columns={4} />
 

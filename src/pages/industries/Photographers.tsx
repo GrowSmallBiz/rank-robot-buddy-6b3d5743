@@ -24,6 +24,7 @@ import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSe
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const benefits = [
   {
@@ -358,6 +359,19 @@ const Photographers = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Photography Marketing Partner"
+        description="We specialize in helping photographers get found by ideal clients, showcase their work effectively, and build a sustainable booking pipeline."
+        items={[
+          { title: "Photography Experts", description: "We focus on photographers—weddings, portraits, commercial, and events. We know your industry.", icon: Camera },
+          { title: "Portfolio Optimization", description: "Showcase your best work in a way that both clients and search engines love.", icon: Image },
+          { title: "Visual-First Marketing", description: "Leverage Instagram, Pinterest, and visual platforms to attract your ideal clients.", icon: Star },
+          { title: "Local SEO for Creatives", description: "Rank for photography searches in your city and surrounding areas.", icon: MapPin },
+          { title: "AI Search Ready", description: "Get recommended when couples ask AI for the best wedding photographer in your city.", icon: Bot },
+          { title: "Booking Growth", description: "Our photography clients typically see 2-3x more inquiries within the first season.", icon: TrendingUp },
+        ]}
+      />
 
       {/* Case Studies Section */}
       <CaseStudySection 

@@ -59,6 +59,7 @@ import {
   Linkedin,
   TrendingUp,
 } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const linkedInStats = [
   { value: "500+", label: "Targeted Prospects/Month", icon: Users },
@@ -410,6 +411,19 @@ const LinkedInOutreach = () => {
             </div>
           </div>
         </section>
+
+        <WhyChooseSection 
+          title="Your B2B Lead Generation Partner"
+          description="We build and execute LinkedIn outreach campaigns that connect you with decision-makers in your target market—generating qualified meetings on autopilot."
+          items={[
+            { title: "ICP-Aligned Targeting", description: "We identify and target decision-makers who match your ideal customer profile precisely.", icon: Target },
+            { title: "Personalized Messaging", description: "Every outreach message is crafted for the individual—no generic templates that get ignored.", icon: MessageSquare },
+            { title: "Multi-Touch Sequences", description: "Strategic follow-up sequences that nurture prospects from connection to conversation.", icon: Repeat },
+            { title: "Meeting-Focused Results", description: "Our goal is qualified meetings on your calendar, not just connections or impressions.", icon: Calendar },
+            { title: "Compliance-First Approach", description: "We operate within LinkedIn's guidelines to protect your account and reputation.", icon: TrendingUp },
+            { title: "Transparent Reporting", description: "See exactly how many prospects contacted, responses received, and meetings booked.", icon: BarChart3 },
+          ]}
+        />
 
         <AnimatedStatsSection stats={linkedInStats} columns={4} />
 

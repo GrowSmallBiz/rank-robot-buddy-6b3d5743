@@ -46,6 +46,7 @@ import {
   Clock
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const paidMediaStats = [
   { value: "4x", label: "Average ROAS", icon: TrendingUp },
@@ -623,6 +624,19 @@ const PaidMedia = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Paid Advertising Partner"
+        description="We manage strategic paid campaigns across Google, Meta, TikTok, and YouTube—maximizing every dollar of your ad budget to generate qualified leads."
+        items={[
+          { title: "Multi-Platform Expertise", description: "We manage campaigns across Google, Meta, TikTok, YouTube, and Microsoft Ads for maximum reach.", icon: Target },
+          { title: "ROI-Focused Strategy", description: "Every campaign is optimized for conversions and return on ad spend—not just clicks.", icon: DollarSign },
+          { title: "Full-Funnel Approach", description: "We combine cold traffic, retargeting, and SEO audiences for maximum cost efficiency.", icon: TrendingUp },
+          { title: "Transparent Reporting", description: "See exactly where every dollar goes and what results it generates with clear dashboards.", icon: BarChart3 },
+          { title: "Fast Campaign Launch", description: "Get campaigns live within 24 hours so you can start generating leads immediately.", icon: Clock },
+          { title: "Full Ownership", description: "You own your ad accounts, data, and audiences—always. Full transparency, no lock-in.", icon: Eye },
+        ]}
+      />
 
       <AnimatedStatsSection stats={paidMediaStats} columns={4} />
 

@@ -84,6 +84,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const crmStats = [
   { value: "24/7", label: "AI Lead Response", icon: Bot },
@@ -909,6 +910,19 @@ const CRM = () => {
 
           </div>
         </section>
+
+        <WhyChooseSection 
+          title="Your Sales & CRM Partner"
+          description="We implement and manage powerful CRM automation that captures every lead, follows up instantly, and converts more prospects into paying customers."
+          items={[
+            { title: "AI-Powered Follow-Up", description: "Instant automated responses to every lead via text, email, and voice—24/7, 365 days a year.", icon: Bot },
+            { title: "Complete Pipeline Visibility", description: "See every lead, every conversation, and every deal stage in one unified dashboard.", icon: Eye },
+            { title: "Multi-Channel Communication", description: "Text, email, calls, and social messages all managed from a single platform.", icon: MessageSquare },
+            { title: "Done-For-You Setup", description: "We configure everything—workflows, automations, integrations—so you can focus on closing deals.", icon: Settings },
+            { title: "Real-Time Analytics", description: "Track conversion rates, response times, and ROI with comprehensive reporting dashboards.", icon: BarChart3 },
+            { title: "Seamless Integrations", description: "Connect with your calendar, website, social media, and existing tools effortlessly.", icon: Zap },
+          ]}
+        />
 
         <AnimatedStatsSection stats={crmStats} columns={4} />
 

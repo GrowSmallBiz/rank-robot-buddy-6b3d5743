@@ -10,6 +10,7 @@ import { BlogSection, onPageSeoBlogPosts } from "@/components/sections/BlogSecti
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search, TrendingUp, Eye, Clock } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import onPageSeoImage from "@/assets/on-page-seo.png";
 
 const onPageSeoTestimonials = [
@@ -249,6 +250,19 @@ const OnPageSEO = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your On-Page SEO Partner"
+        description="We optimize every element of your content—from titles and meta tags to internal links and schema—to maximize your search visibility and conversions."
+        items={[
+          { title: "Content Optimization Experts", description: "We transform underperforming pages into high-ranking assets with strategic keyword optimization.", icon: FileText },
+          { title: "Data-Driven Approach", description: "Every recommendation is backed by competitor analysis, search data, and proven optimization patterns.", icon: TrendingUp },
+          { title: "User Experience Focus", description: "Our optimizations improve both rankings and user engagement metrics like time on page and bounce rate.", icon: Eye },
+          { title: "Schema Implementation", description: "We deploy structured data that helps search engines understand and feature your content prominently.", icon: Code },
+          { title: "Transparent Reporting", description: "Clear monthly reports show exactly how your content improvements translate to traffic and conversions.", icon: Target },
+          { title: "Continuous Optimization", description: "We monitor performance and continuously refine your content to maintain and improve rankings.", icon: Clock },
+        ]}
+      />
 
       <AnimatedStatsSection stats={onPageSeoStats} columns={4} />
 

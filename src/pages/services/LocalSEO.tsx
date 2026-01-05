@@ -10,6 +10,7 @@ import { BlogSection, localSeoBlogPosts } from "@/components/sections/BlogSectio
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, MapPin, Search, Building, Star, FileText, Users } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const localSeoTestimonials = [
   {
@@ -158,6 +159,19 @@ const LocalSEO = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Local Search Partner"
+        description="We specialize in helping service businesses dominate local search results, attract nearby customers, and outrank competitors in their geographic markets."
+        items={[
+          { title: "Local Search Experts", description: "We focus exclusively on local SEO strategies that drive foot traffic, phone calls, and leads from customers in your service area.", icon: MapPin },
+          { title: "Google Business Mastery", description: "Our GBP optimization strategies help you dominate the local map pack and capture high-intent local searches.", icon: Building },
+          { title: "Citation Management", description: "We build and maintain accurate business listings across 100+ directories to boost your local authority.", icon: FileText },
+          { title: "Review Generation", description: "Our automated review request systems help you build social proof and improve local rankings organically.", icon: Star },
+          { title: "Transparent Reporting", description: "See exactly how your local rankings are improving with our clear, actionable monthly reports.", icon: Users },
+          { title: "Multi-Location Expertise", description: "We scale local SEO strategies seamlessly across multiple locations while maintaining consistency.", icon: Search },
+        ]}
+      />
 
       <AnimatedStatsSection stats={stats} columns={3} />
 

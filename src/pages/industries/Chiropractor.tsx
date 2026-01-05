@@ -24,6 +24,7 @@ import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSe
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import chiroHeroImage from "@/assets/industry-chiro-hero.jpg";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const benefits = [
   {
@@ -358,6 +359,19 @@ const Chiropractor = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Chiropractic Marketing Partner"
+        description="We specialize in helping chiropractic practices attract new patients, build trust through education, and become the go-to wellness provider in your community."
+        items={[
+          { title: "Chiropractic Experts", description: "We focus exclusively on chiropractic practices—we know what works for wellness and pain relief marketing.", icon: Heart },
+          { title: "New Patient Flow", description: "Attract patients seeking back pain relief, sports injuries, wellness care, and family chiropractic.", icon: Users },
+          { title: "Educational Authority", description: "Build trust through content that positions you as the expert in spinal health and wellness.", icon: Activity },
+          { title: "Local SEO Domination", description: "Rank #1 for 'chiropractor near me' and condition-specific searches in your area.", icon: MapPin },
+          { title: "AI Search Ready", description: "Get recommended when patients ask AI assistants about back pain and chiropractic care.", icon: Bot },
+          { title: "Proven Growth", description: "Our chiropractic clients typically see 2-3x more new patient inquiries within 90 days.", icon: TrendingUp },
+        ]}
+      />
 
       {/* Case Studies Section */}
       <CaseStudySection 

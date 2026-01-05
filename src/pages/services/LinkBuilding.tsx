@@ -10,6 +10,7 @@ import { BlogSection, linkBuildingBlogPosts } from "@/components/sections/BlogSe
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield, TrendingUp, Clock, Award } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import linkBuildingImage from "@/assets/link-building.png";
 
 const linkBuildingTestimonials = [
@@ -233,6 +234,19 @@ const LinkBuilding = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Link Building Partner"
+        description="We build high-quality, brand-safe backlinks through ethical outreach and digital PR—boosting your domain authority and search rankings sustainably."
+        items={[
+          { title: "Quality Over Quantity", description: "We focus on authoritative, editorial links from reputable publishers—never PBNs or link farms.", icon: Shield },
+          { title: "White-Hat Methods", description: "100% Google-compliant strategies that build sustainable authority without penalty risk.", icon: Award },
+          { title: "Digital PR Expertise", description: "We secure placements in major publications and industry sites through strategic outreach.", icon: Megaphone },
+          { title: "Domain Authority Growth", description: "Watch your DA/DR metrics climb as we build your backlink profile with quality links.", icon: TrendingUp },
+          { title: "Transparent Reporting", description: "See every link we build with full metrics on domain authority, traffic, and relevance.", icon: BarChart3 },
+          { title: "Link Detox Services", description: "We identify and disavow toxic backlinks that could be hurting your rankings.", icon: Link2 },
+        ]}
+      />
 
       <AnimatedStatsSection stats={linkBuildingStats} columns={4} />
 
