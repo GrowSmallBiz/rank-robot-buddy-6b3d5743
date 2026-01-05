@@ -566,9 +566,9 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 border-y border-border bg-secondary/30">
+      <section className="py-20 bg-[#1a2a3a]">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {[
               { value: "2-4x", label: "Customer Growth", icon: TrendingUp },
               { value: "24/7", label: "AI Automation", icon: Bot },
@@ -577,16 +577,16 @@ const Index = () => {
             ].map((stat, index) => (
               <div
                 key={index}
-                className="text-center animate-fade-up"
+                className="text-center animate-fade-up group"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
-                  <stat.icon className="w-6 h-6" />
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-[#FC8253]/15 border border-[#FC8253]/30 mb-5 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(252,130,83,0.4)] group-hover:bg-[#FC8253]/25">
+                  <stat.icon className="w-6 h-6" style={{ color: '#FC8253' }} />
                 </div>
-                <p className="text-3xl md:text-4xl font-display font-bold text-gradient mb-2">
+                <p className="text-4xl md:text-5xl font-display font-bold mb-2 tracking-tight" style={{ color: '#FC8253' }}>
                   {stat.value}
                 </p>
-                <p className="text-sm text-muted-foreground">{stat.label}</p>
+                <p className="text-sm text-slate-400 font-medium">{stat.label}</p>
               </div>
             ))}
           </div>
