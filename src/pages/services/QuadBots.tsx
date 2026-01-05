@@ -32,6 +32,7 @@ import {
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import heroImage from "@/assets/quad-bots-hero.jpg";
 import botLeadGenerator from "@/assets/bot-lead-generator.png";
 import botConversationalAI from "@/assets/bot-conversational-ai.png";
@@ -405,6 +406,7 @@ const QuadBots = () => {
           description="Learn how GrowSmallBiz can customize a Quad Bots solution for your business. Let's discuss your specific needs and how our AI can revolutionize your operations."
           sectionClassName="py-8 bg-section-dark"
         />
+        <ConsultationFormSection />
       </main>
 
       <Footer />

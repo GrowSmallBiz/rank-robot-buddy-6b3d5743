@@ -5,6 +5,7 @@ import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { 
   ArrowRight, 
@@ -711,6 +712,7 @@ const SocialMedia = () => {
         description="Get a free 30-minute strategy session, complimentary social media audit ($500 value), and local competitor analysis report."
         sectionClassName="py-12 bg-section-dark"
       />
+      <ConsultationFormSection />
 
       <Footer />
     </div>

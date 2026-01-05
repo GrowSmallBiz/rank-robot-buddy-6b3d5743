@@ -6,6 +6,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { Helmet } from "react-helmet";
 import {
@@ -1396,6 +1397,7 @@ const AISEOHub = () => {
           description="Rank higher, get cited by AI, and dominate search across all platforms. Let's build your AI-powered SEO strategy today."
           sectionClassName="py-12 bg-section-dark"
         />
+        <ConsultationFormSection />
       </main>
 
       <Footer />

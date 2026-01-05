@@ -21,6 +21,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import dentalHeroImage from "@/assets/industry-dental-hero.jpg";
 
 const benefits = [
@@ -440,6 +441,7 @@ const Dental = () => {
         </div>
       </section>
 
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

@@ -6,6 +6,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain, TrendingUp, Eye, Clock, Zap } from "lucide-react";
 import geoServiceImage from "@/assets/geo-service.png";
@@ -236,6 +237,7 @@ const GEO = () => {
         description="Position your brand as the trusted source AI platforms cite and recommend. Future-proof your visibility in generative search."
         sectionClassName="py-12 bg-section-dark"
       />
+      <ConsultationFormSection />
       <Footer />
     </div>
   );
