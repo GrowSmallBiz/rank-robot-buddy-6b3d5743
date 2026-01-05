@@ -84,22 +84,23 @@ export const ConsultationFormSection = () => {
   return (
     <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl mx-auto text-center mb-10">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
-            Get a <span className="text-accent">Consultation</span>
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Fill out this form, and one of our account managers will reach out to you with insights on your site.
-          </p>
-        </div>
-
         {/* Form card with dark background and gradient border */}
         <div className="max-w-xl mx-auto relative rounded-2xl p-[2px] overflow-hidden">
           {/* Gradient border */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-primary opacity-60 rounded-2xl" />
           
-          {/* Form container */}
-          <form onSubmit={handleSubmit} className="relative rounded-2xl p-8 space-y-6" style={{ backgroundColor: '#191321' }}>
+          {/* Form container with header */}
+          <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-4">
+                Get a <span className="text-accent">Consultation</span>
+              </h2>
+              <p className="text-white/80 text-lg">
+                Fill out this form, and one of our account managers will reach out to you with insights on your site.
+              </p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-lg font-bold text-white">First Name <span className="text-accent">*</span></label>
@@ -185,7 +186,8 @@ export const ConsultationFormSection = () => {
               {!isSubmitting && <ArrowUpRight className="ml-2 h-5 w-5" />}
             </Button>
           </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </section>
