@@ -140,13 +140,16 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16">
+      <section className="py-16" style={{ backgroundColor: '#2d465c' }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
             <div className="lg:col-span-3">
-              <div className="bg-card border border-border rounded-2xl p-8 animate-fade-up">
-                <h2 className="text-2xl font-display font-bold text-foreground mb-6">
+              <div 
+                className="relative rounded-2xl p-8 animate-fade-up shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+                style={{ backgroundColor: '#191321', border: '2px solid #17a2b8' }}
+              >
+                <h2 className="text-2xl font-display font-bold text-white mb-6">
                   Send Us a Message
                 </h2>
 
@@ -155,15 +158,16 @@ const Contact = () => {
                     <div className="w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center mx-auto mb-4">
                       <CheckCircle2 className="w-8 h-8 text-green-500" />
                     </div>
-                    <h3 className="text-xl font-display font-semibold text-foreground mb-2">
+                    <h3 className="text-xl font-display font-semibold text-white mb-2">
                       Message Sent!
                     </h3>
-                    <p className="text-muted-foreground mb-6">
+                    <p className="text-white/70 mb-6">
                       Thank you for reaching out. We'll get back to you within 24 hours.
                     </p>
                     <Button
                       variant="outline"
                       onClick={() => setIsSubmitted(false)}
+                      className="border-white/30 text-white hover:bg-white/10"
                     >
                       Send Another Message
                     </Button>
@@ -172,22 +176,22 @@ const Contact = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Full Name *</Label>
+                        <label className="text-lg font-bold text-white">Full Name <span className="text-accent">*</span></label>
                         <Input
                           id="name"
                           name="name"
                           placeholder="John Smith"
                           value={formData.name}
                           onChange={handleChange}
-                          className={errors.name ? "border-destructive" : ""}
+                          className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
                         />
                         {errors.name && (
-                          <p className="text-sm text-destructive">{errors.name}</p>
+                          <p className="text-sm text-accent">{errors.name}</p>
                         )}
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="email">Email Address *</Label>
+                        <label className="text-lg font-bold text-white">Email Address <span className="text-accent">*</span></label>
                         <Input
                           id="email"
                           name="email"
@@ -195,17 +199,17 @@ const Contact = () => {
                           placeholder="john@company.com"
                           value={formData.email}
                           onChange={handleChange}
-                          className={errors.email ? "border-destructive" : ""}
+                          className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
                         />
                         {errors.email && (
-                          <p className="text-sm text-destructive">{errors.email}</p>
+                          <p className="text-sm text-accent">{errors.email}</p>
                         )}
                       </div>
                     </div>
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="phone">Phone Number</Label>
+                        <label className="text-lg font-bold text-white">Phone Number</label>
                         <Input
                           id="phone"
                           name="phone"
@@ -213,25 +217,25 @@ const Contact = () => {
                           placeholder="(555) 123-4567"
                           value={formData.phone}
                           onChange={handleChange}
-                          className={errors.phone ? "border-destructive" : ""}
+                          className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
                         />
                         {errors.phone && (
-                          <p className="text-sm text-destructive">{errors.phone}</p>
+                          <p className="text-sm text-accent">{errors.phone}</p>
                         )}
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="service">Service Interest</Label>
+                        <label className="text-lg font-bold text-white">Service Interest</label>
                         <select
                           id="service"
                           name="service"
                           value={formData.service}
                           onChange={handleChange}
-                          className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                          className="flex h-12 w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                         >
-                          <option value="">Select a service...</option>
+                          <option value="" className="bg-[#191321] text-white">Select a service...</option>
                           {services.map((service) => (
-                            <option key={service} value={service}>
+                            <option key={service} value={service} className="bg-[#191321] text-white">
                               {service}
                             </option>
                           ))}
@@ -240,7 +244,7 @@ const Contact = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message">Message *</Label>
+                      <label className="text-lg font-bold text-white">Message <span className="text-accent">*</span></label>
                       <Textarea
                         id="message"
                         name="message"
@@ -248,19 +252,17 @@ const Contact = () => {
                         rows={5}
                         value={formData.message}
                         onChange={handleChange}
-                        className={errors.message ? "border-destructive" : ""}
+                        className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary min-h-[120px] resize-none"
                       />
                       {errors.message && (
-                        <p className="text-sm text-destructive">{errors.message}</p>
+                        <p className="text-sm text-accent">{errors.message}</p>
                       )}
                     </div>
 
                     <Button
                       type="submit"
-                      variant="hero"
-                      size="lg"
-                      className="w-full"
                       disabled={isSubmitting}
+                      className="w-full py-6 text-lg font-bold rounded-full bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity"
                     >
                       {isSubmitting ? (
                         "Sending..."
@@ -278,42 +280,45 @@ const Contact = () => {
 
             {/* Contact Info */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="bg-card border border-border rounded-2xl p-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <h3 className="text-lg font-display font-semibold text-foreground mb-4">
+              <div 
+                className="rounded-2xl p-6 animate-fade-up shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]" 
+                style={{ animationDelay: "0.1s", backgroundColor: '#191321', border: '2px solid #17a2b8' }}
+              >
+                <h3 className="text-lg font-display font-semibold text-white mb-4">
                   Contact Information
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Email</p>
-                      <a href="mailto:hello@growsmallbiz.com" className="text-foreground hover:text-primary transition-colors">
+                      <p className="text-sm text-white/60">Email</p>
+                      <a href="mailto:hello@growsmallbiz.com" className="text-white hover:text-primary transition-colors">
                         hello@growsmallbiz.com
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Phone</p>
-                      <a href="tel:+15551234567" className="text-foreground hover:text-primary transition-colors">
+                      <p className="text-sm text-white/60">Phone</p>
+                      <a href="tel:+15551234567" className="text-white hover:text-primary transition-colors">
                         (555) 123-4567
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Office</p>
-                      <p className="text-foreground">
+                      <p className="text-sm text-white/60">Office</p>
+                      <p className="text-white">
                         123 Marketing Lane<br />
                         Austin, TX 78701
                       </p>
@@ -321,12 +326,12 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
                       <Clock className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Business Hours</p>
-                      <p className="text-foreground">
+                      <p className="text-sm text-white/60">Business Hours</p>
+                      <p className="text-white">
                         Mon - Fri: 9:00 AM - 6:00 PM<br />
                         Sat - Sun: Closed
                       </p>
@@ -336,11 +341,14 @@ const Contact = () => {
               </div>
 
               {/* Quick Response */}
-              <div className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 border border-primary/20 rounded-2xl p-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+              <div 
+                className="rounded-2xl p-6 animate-fade-up shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]" 
+                style={{ animationDelay: "0.2s", backgroundColor: '#191321', border: '2px solid #17a2b8' }}
+              >
+                <h3 className="text-lg font-display font-semibold text-white mb-2">
                   Quick Response Guarantee
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-white/70 mb-4">
                   We respond to all inquiries within 24 hours. For urgent matters, 
                   give us a call directly.
                 </p>
@@ -351,15 +359,18 @@ const Contact = () => {
               </div>
 
               {/* Free Assessment CTA */}
-              <div className="bg-card border border-border rounded-2xl p-6 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+              <div 
+                className="rounded-2xl p-6 animate-fade-up shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]" 
+                style={{ animationDelay: "0.3s", backgroundColor: '#191321', border: '2px solid #17a2b8' }}
+              >
+                <h3 className="text-lg font-display font-semibold text-white mb-2">
                   Prefer a Free Assessment?
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-white/70 mb-4">
                   Get a comprehensive SEO audit and growth strategy for your business 
                   at no cost.
                 </p>
-                <Button variant="outline" className="w-full group" asChild>
+                <Button className="w-full group rounded-full bg-gradient-to-r from-primary to-accent hover:opacity-90" asChild>
                   <a href="/free-assessment">
                     Get Free Assessment
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
