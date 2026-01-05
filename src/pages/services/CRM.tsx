@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -876,6 +877,35 @@ const CRM = () => {
         </section>
 
         <AnimatedStatsSection stats={crmStats} columns={4} />
+
+        {/* Testimonials Section */}
+        <TestimonialsSection
+          title="What Our CRM Clients Say"
+          subtitle="Hear from business owners who transformed their sales process"
+          testimonials={[
+            {
+              quote: "GrowSmallBiz CRM completely changed how we handle leads. We went from losing 40% of inquiries to converting 85% into appointments. The AI follow-up is a game-changer.",
+              author: "Michael T.",
+              role: "Owner",
+              company: "Premier Auto Services",
+              rating: 5,
+            },
+            {
+              quote: "The automated pipeline saved us 20+ hours a week. Now my team focuses on closing deals instead of chasing leads. Our revenue increased 3x in just 6 months.",
+              author: "Jennifer R.",
+              role: "Sales Director",
+              company: "Bright Smile Dental",
+              rating: 5,
+            },
+            {
+              quote: "Best CRM investment we've made. The 2-way texting and email automation keeps our customers engaged without any manual effort. Highly recommend for any small business.",
+              author: "David K.",
+              role: "General Manager",
+              company: "Comfort Zone HVAC",
+              rating: 5,
+            },
+          ]}
+        />
 
         {/* Blog Section */}
         <BlogSection
