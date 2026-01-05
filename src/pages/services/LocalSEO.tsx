@@ -6,6 +6,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, localSeoBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, MapPin, Search, Building, Star, FileText, Users } from "lucide-react";
 import localSeoImage from "@/assets/local-seo.png";
@@ -199,6 +200,7 @@ const LocalSEO = () => {
         description="Attract nearby customers, boost your Google Business Profile, and outrank local competitors. Start getting more local leads today."
         sectionClassName="py-12 bg-section-dark"
       />
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

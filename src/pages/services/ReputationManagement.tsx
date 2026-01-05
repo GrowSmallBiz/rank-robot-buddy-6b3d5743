@@ -5,6 +5,7 @@ import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection, AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, reputationManagementBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { 
   ArrowRight, 
@@ -896,6 +897,7 @@ const ReputationManagement = () => {
         description="Get AI-powered review collection, instant responses, and 24/7 monitoring. Turn your customers into your best marketing tool."
         sectionClassName="py-12 bg-section-dark"
       />
+      <ConsultationFormSection />
 
       <Footer />
     </div>

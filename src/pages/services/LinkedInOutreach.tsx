@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
@@ -417,6 +418,7 @@ const LinkedInOutreach = () => {
           description="Get your complimentary ICP-aligned lead list and see how our Done-With-You LinkedIn system can transform your B2B prospecting."
           sectionClassName="py-12 bg-section-dark"
         />
+        <ConsultationFormSection />
 
         {/* Disclaimer */}
         <section className="bg-background py-12 border-t border-border">

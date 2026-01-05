@@ -22,8 +22,8 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import hvacHeroImage from "@/assets/industry-hvac-hero.jpg";
-
 const benefits = [
   {
     icon: MapPin,
@@ -442,6 +442,7 @@ const HVAC = () => {
         </div>
       </section>
 
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

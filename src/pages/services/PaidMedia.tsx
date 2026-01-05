@@ -6,6 +6,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, paidMediaBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { 
   ArrowRight, 
@@ -626,6 +627,7 @@ const PaidMedia = () => {
         description="Get a free ad strategy call to see how we can maximize your ROI across Google, Meta, TikTok, and YouTube."
         sectionClassName="py-12 bg-section-dark"
       />
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

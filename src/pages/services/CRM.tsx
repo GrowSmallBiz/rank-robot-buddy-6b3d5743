@@ -7,6 +7,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import {
   Phone,
@@ -906,6 +907,7 @@ const CRM = () => {
           buttonText="Schedule My Demo Session"
           sectionClassName="py-12 bg-section-dark"
         />
+        <ConsultationFormSection />
       </main>
 
       <Footer />

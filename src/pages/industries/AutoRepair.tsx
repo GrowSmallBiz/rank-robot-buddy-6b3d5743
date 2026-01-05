@@ -20,6 +20,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, autoRepairBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import autoRepairHeroImage from "@/assets/industry-autorepair-hero.jpg";
 
 const benefits = [
@@ -439,6 +440,7 @@ const AutoRepair = () => {
         </div>
       </section>
 
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

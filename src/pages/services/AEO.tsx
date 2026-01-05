@@ -6,6 +6,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings, TrendingUp, Clock, Zap } from "lucide-react";
 import aeoServiceImage from "@/assets/aeo-service.png";
@@ -238,6 +239,7 @@ const AEO = () => {
         description="Let's position your brand as the authoritative source AI platforms cite and reference. Start dominating AI search results today."
         sectionClassName="py-12 bg-section-dark"
       />
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

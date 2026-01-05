@@ -6,6 +6,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, linkBuildingBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield, TrendingUp, Clock, Award } from "lucide-react";
 import linkBuildingImage from "@/assets/link-building.png";
@@ -239,6 +240,7 @@ const LinkBuilding = () => {
         description="Get high-quality, brand-safe backlinks that boost your domain authority and drive sustainable ranking improvements."
         sectionClassName="py-12 bg-section-dark"
       />
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

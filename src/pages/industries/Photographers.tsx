@@ -20,6 +20,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
 
 const benefits = [
@@ -439,6 +440,7 @@ const Photographers = () => {
         </div>
       </section>
 
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

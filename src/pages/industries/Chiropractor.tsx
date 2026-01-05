@@ -20,6 +20,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import chiroHeroImage from "@/assets/industry-chiro-hero.jpg";
 
 const benefits = [
@@ -439,6 +440,7 @@ const Chiropractor = () => {
         </div>
       </section>
 
+      <ConsultationFormSection />
       <Footer />
     </div>
   );
