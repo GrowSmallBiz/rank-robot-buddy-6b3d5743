@@ -1,11 +1,11 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, localSeoBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { ArrowRight, MapPin, Search, Building, Star, FileText, Users } from "lucide-react";
 import localSeoImage from "@/assets/local-seo.png";
 
@@ -211,7 +211,11 @@ const LocalSEO = () => {
         showViewAll={false}
       />
 
-      <CTASection />
+      <PersonCTA
+        title="Ready to Dominate Local Search Results?"
+        description="Attract nearby customers, boost your Google Business Profile, and outrank local competitors. Start getting more local leads today."
+        sectionClassName="py-12 bg-section-dark"
+      />
       <Footer />
     </div>
   );

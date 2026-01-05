@@ -1,11 +1,11 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings } from "lucide-react";
 import aeoServiceImage from "@/assets/aeo-service.png";
 
@@ -223,7 +223,11 @@ const AEO = () => {
         showViewAll={false}
       />
 
-      <CTASection />
+      <PersonCTA
+        title="Ready to Get Your Brand in AI Answers?"
+        description="Let's position your brand as the authoritative source AI platforms cite and reference. Start dominating AI search results today."
+        sectionClassName="py-12 bg-section-dark"
+      />
       <Footer />
     </div>
   );

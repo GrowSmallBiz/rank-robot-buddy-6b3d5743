@@ -1,11 +1,11 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, onPageSeoBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search } from "lucide-react";
 import onPageSeoImage from "@/assets/on-page-seo.png";
 
@@ -240,7 +240,11 @@ const OnPageSEO = () => {
         showViewAll={false}
       />
 
-      <CTASection />
+      <PersonCTA
+        title="Ready to Maximize Your Content's Impact?"
+        description="Strategic on-page optimization that boosts visibility, improves user experience, and drives more conversions."
+        sectionClassName="py-12 bg-section-dark"
+      />
       <Footer />
     </div>
   );

@@ -1,11 +1,11 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, paidMediaBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { 
   ArrowRight, 
   Target, 
@@ -610,7 +610,11 @@ const PaidMedia = () => {
         showViewAll={false}
       />
 
-      <CTASection />
+      <PersonCTA
+        title="Ready to Turn Ad Spend Into Predictable Revenue?"
+        description="Get a free ad strategy call to see how we can maximize your ROI across Google, Meta, TikTok, and YouTube."
+        sectionClassName="py-12 bg-section-dark"
+      />
       <Footer />
     </div>
   );

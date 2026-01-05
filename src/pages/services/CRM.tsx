@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PersonCTA } from "@/components/services";
 import {
@@ -865,15 +866,6 @@ const CRM = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <PersonCTA
-          title="Ready to Convert More Leads Into Sales?"
-          description="Schedule a demo to see how GrowSmallBiz can transform your business with AI-powered automation."
-          buttonHref="https://lp.growsmallbiz.io/crm-demo-request-page"
-          buttonText="Schedule My Demo Session"
-          sectionClassName="py-12"
-        />
-
         {/* FAQ Section */}
         <FAQSection
           title="Frequently Asked Questions"
@@ -885,6 +877,24 @@ const CRM = () => {
             description: "We're here to help! Reach out to us for a personalized consultation.",
             tagline: "Let's streamline your sales process together.",
           }}
+        />
+
+        {/* Blog Section */}
+        <BlogSection
+          posts={generalBlogPosts.slice(0, 3)}
+          title="CRM & Sales Automation Insights"
+          subtitle="Expert strategies to streamline your sales process and close more deals"
+          showViewAll={true}
+          viewAllLink="/blog"
+        />
+
+        {/* CTA Section */}
+        <PersonCTA
+          title="Ready to Convert More Leads Into Sales?"
+          description="Schedule a demo to see how GrowSmallBiz can transform your business with AI-powered automation."
+          buttonHref="https://lp.growsmallbiz.io/crm-demo-request-page"
+          buttonText="Schedule My Demo Session"
+          sectionClassName="py-12 bg-section-dark"
         />
       </main>
 

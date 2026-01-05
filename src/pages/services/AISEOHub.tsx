@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
+import { PersonCTA } from "@/components/services";
 import { Helmet } from "react-helmet";
 import {
   Search,
@@ -1277,9 +1277,6 @@ const AISEOHub = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <CTASection />
-
         {/* Testimonials */}
         <TestimonialsSection />
 
@@ -1382,6 +1379,13 @@ const AISEOHub = () => {
             </div>
           </div>
         </section>
+
+        {/* CTA Section */}
+        <PersonCTA
+          title="Ready for Full-Funnel AI SEO Visibility?"
+          description="Rank higher, get cited by AI, and dominate search across all platforms. Let's build your AI-powered SEO strategy today."
+          sectionClassName="py-12 bg-section-dark"
+        />
       </main>
 
       <Footer />
