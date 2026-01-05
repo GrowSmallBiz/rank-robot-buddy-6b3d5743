@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -42,6 +43,13 @@ import portfolioMedspa from "@/assets/portfolio-medspa-website.jpg";
 import portfolioLaw from "@/assets/portfolio-law-website.jpg";
 import portfolioChiro from "@/assets/portfolio-chiro-website.jpg";
 import portfolioRemodeling from "@/assets/portfolio-remodeling-website.jpg";
+
+const websiteStats = [
+  { value: "2s", label: "Avg. Load Time", icon: Zap },
+  { value: "3x", label: "More Conversions", icon: TrendingUp },
+  { value: "100%", label: "Mobile Responsive", icon: Smartphone },
+  { value: "1-2", label: "Weeks to Launch", icon: Clock },
+];
 
 // FAQs from source
 const faqs = [
@@ -967,6 +975,8 @@ const WebsiteDesign = () => {
           </div>
         </div>
       </section>
+
+      <AnimatedStatsSection stats={websiteStats} columns={4} />
 
       {/* FAQ Section */}
       <FAQSection

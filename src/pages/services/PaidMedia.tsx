@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, paidMediaBlogPosts } from "@/components/sections/BlogSection";
@@ -18,9 +19,17 @@ import {
   Search,
   ShieldCheck,
   Zap,
-  Eye
+  Eye,
+  Clock
 } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const paidMediaStats = [
+  { value: "4x", label: "Average ROAS", icon: TrendingUp },
+  { value: "60%", label: "Lower Cost Per Lead", icon: DollarSign },
+  { value: "24hr", label: "Campaign Launch Time", icon: Clock },
+  { value: "100%", label: "Transparent Reporting", icon: Eye },
+];
 
 const faqs: FAQItem[] = [
   {
@@ -591,6 +600,8 @@ const PaidMedia = () => {
           </div>
         </div>
       </section>
+
+      <AnimatedStatsSection stats={paidMediaStats} columns={4} />
 
       <FAQSection
         faqs={faqs}

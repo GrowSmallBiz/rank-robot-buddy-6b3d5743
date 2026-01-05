@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PersonCTA } from "@/components/services";
 import {
@@ -80,6 +81,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
+const crmStats = [
+  { value: "24/7", label: "AI Lead Response", icon: Bot },
+  { value: "80%", label: "Time Saved on Tasks", icon: Clock },
+  { value: "3x", label: "More Conversions", icon: TrendingUp },
+  { value: "100%", label: "Pipeline Visibility", icon: Eye },
+];
 
 const CRM = () => {
   const valueProps = [
@@ -865,6 +873,8 @@ const CRM = () => {
 
           </div>
         </section>
+
+        <AnimatedStatsSection stats={crmStats} columns={4} />
 
         {/* FAQ Section */}
         <FAQSection

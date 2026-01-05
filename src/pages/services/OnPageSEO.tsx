@@ -2,12 +2,20 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, onPageSeoBlogPosts } from "@/components/sections/BlogSection";
 import { PersonCTA } from "@/components/services";
-import { ArrowRight, Check, FileText, Target, Link2, Code, Search } from "lucide-react";
+import { ArrowRight, Check, FileText, Target, Link2, Code, Search, TrendingUp, Eye, Clock } from "lucide-react";
 import onPageSeoImage from "@/assets/on-page-seo.png";
+
+const onPageSeoStats = [
+  { value: "40%", label: "Avg. Traffic Increase", icon: TrendingUp },
+  { value: "2x", label: "Click-Through Rate Boost", icon: Eye },
+  { value: "90", label: "Days to See Results", icon: Clock },
+  { value: "100+", label: "Pages Optimized Monthly", icon: FileText },
+];
 
 const faqs: FAQItem[] = [
   {
@@ -218,6 +226,8 @@ const OnPageSEO = () => {
           </div>
         </div>
       </section>
+
+      <AnimatedStatsSection stats={onPageSeoStats} columns={4} />
 
       <PlatformAdvantagesSection variant="compact" serviceType="onpage" />
 

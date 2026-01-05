@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PersonCTA } from "@/components/services";
 import { Helmet } from "react-helmet";
@@ -53,6 +54,13 @@ import caseStudyMedspa from "@/assets/case-study-medspa.jpg";
 import caseStudyDental from "@/assets/case-study-dental.jpg";
 import caseStudyAutorepair from "@/assets/case-study-autorepair.jpg";
 import caseStudyChiro from "@/assets/case-study-chiro.jpg";
+
+const aiSeoHubStats = [
+  { value: "150%", label: "Avg. Traffic Growth", icon: TrendingUp },
+  { value: "6", label: "SEO Services Combined", icon: Zap },
+  { value: "24/7", label: "AI Monitoring", icon: Bot },
+  { value: "90", label: "Days to Results", icon: Clock },
+];
 
 const services = [
   {
@@ -1276,6 +1284,8 @@ const AISEOHub = () => {
             </div>
           </div>
         </section>
+
+        <AnimatedStatsSection stats={aiSeoHubStats} columns={4} />
 
         {/* Testimonials */}
         <TestimonialsSection />

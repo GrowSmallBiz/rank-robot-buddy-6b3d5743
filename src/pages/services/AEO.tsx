@@ -2,12 +2,20 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
 import { PersonCTA } from "@/components/services";
-import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings } from "lucide-react";
+import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings, TrendingUp, Clock, Zap } from "lucide-react";
 import aeoServiceImage from "@/assets/aeo-service.png";
+
+const aeoStats = [
+  { value: "70%", label: "AI Answer Coverage", icon: Bot },
+  { value: "5x", label: "Brand Visibility Boost", icon: Eye },
+  { value: "24/7", label: "AI Monitoring", icon: Clock },
+  { value: "100+", label: "AI Platforms Tracked", icon: Zap },
+];
 
 const faqs: FAQItem[] = [
   {
@@ -201,6 +209,8 @@ const AEO = () => {
           </div>
         </div>
       </section>
+
+      <AnimatedStatsSection stats={aeoStats} columns={4} />
 
       <PlatformAdvantagesSection variant="compact" serviceType="aeo" />
 

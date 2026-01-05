@@ -2,12 +2,20 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, linkBuildingBlogPosts } from "@/components/sections/BlogSection";
 import { PersonCTA } from "@/components/services";
-import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield } from "lucide-react";
+import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield, TrendingUp, Clock, Award } from "lucide-react";
 import linkBuildingImage from "@/assets/link-building.png";
+
+const linkBuildingStats = [
+  { value: "50+", label: "Authority Links Monthly", icon: Link2 },
+  { value: "40+", label: "Avg. Domain Authority", icon: Award },
+  { value: "100%", label: "White-Hat Methods", icon: Shield },
+  { value: "60", label: "Days to Rankings Impact", icon: Clock },
+];
 
 const faqs: FAQItem[] = [
   {
@@ -202,6 +210,8 @@ const LinkBuilding = () => {
           </div>
         </div>
       </section>
+
+      <AnimatedStatsSection stats={linkBuildingStats} columns={4} />
 
       <PlatformAdvantagesSection variant="compact" serviceType="linkbuilding" />
 

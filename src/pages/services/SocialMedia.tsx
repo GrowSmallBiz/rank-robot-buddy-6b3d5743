@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PersonCTA } from "@/components/services";
 import { 
@@ -24,11 +25,19 @@ import {
   CalendarDays,
   Building2,
   Briefcase,
-  MapPin
+  MapPin,
+  Eye
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import socialMediaHero from "@/assets/social-media-hero.jpg";
+
+const socialMediaStats = [
+  { value: "90%", label: "Consumers Research Online", icon: Users },
+  { value: "3-8x", label: "ROI in First Year", icon: TrendingUp },
+  { value: "73%", label: "Check Social Before Buying", icon: Eye },
+  { value: "30", label: "Posts Per Month", icon: Calendar },
+];
 
 // FAQs from source with enhancements
 const faqs: FAQItem[] = [
@@ -672,8 +681,10 @@ const SocialMedia = () => {
         </div>
       </section>
 
+      <AnimatedStatsSection stats={socialMediaStats} columns={4} />
+
       {/* FAQ Section */}
-      <FAQSection 
+      <FAQSection
         title="Frequently Asked Questions"
         subtitle="Everything you need to know about our Social Media Management Services"
         faqs={faqs}
