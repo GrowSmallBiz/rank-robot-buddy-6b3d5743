@@ -13,7 +13,7 @@ const consultationSchema = z.object({
   email: z.string().trim().email("Please enter a valid email").max(255, "Email must be less than 255 characters"),
   phone: z.string().trim().min(1, "Phone number is required").max(20, "Phone number must be less than 20 characters"),
   budget: z.string().min(1, "Please select a budget range"),
-  question: z.string().trim().max(1000, "Question must be less than 1000 characters").optional(),
+  question: z.string().trim().min(1, "Question is required").max(1000, "Question must be less than 1000 characters"),
 });
 
 type ConsultationFormData = z.infer<typeof consultationSchema>;
@@ -110,7 +110,7 @@ export const ConsultationFormSection = () => {
         <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="text-lg font-bold text-foreground">First Name</label>
+              <label className="text-lg font-bold text-foreground">First Name <span className="text-destructive">*</span></label>
               <Input
                 placeholder="First Name"
                 value={formData.firstName}
@@ -120,7 +120,7 @@ export const ConsultationFormSection = () => {
               {errors.firstName && <p className="text-destructive text-sm">{errors.firstName}</p>}
             </div>
             <div className="space-y-2">
-              <label className="text-lg font-bold text-foreground">Last Name</label>
+              <label className="text-lg font-bold text-foreground">Last Name <span className="text-destructive">*</span></label>
               <Input
                 placeholder="Last Name"
                 value={formData.lastName}
@@ -132,7 +132,7 @@ export const ConsultationFormSection = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-lg font-bold text-foreground">Business Email</label>
+            <label className="text-lg font-bold text-foreground">Business Email <span className="text-destructive">*</span></label>
             <Input
               type="email"
               placeholder="Business Email"
@@ -144,7 +144,7 @@ export const ConsultationFormSection = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-lg font-bold text-foreground">Phone Number</label>
+            <label className="text-lg font-bold text-foreground">Phone Number <span className="text-destructive">*</span></label>
             <Input
               type="tel"
               placeholder="Phone Number"
@@ -156,7 +156,7 @@ export const ConsultationFormSection = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-lg font-bold text-foreground">Monthly Budget</label>
+            <label className="text-lg font-bold text-foreground">Monthly Budget <span className="text-destructive">*</span></label>
             <Select value={formData.budget} onValueChange={(value) => handleChange("budget", value)}>
               <SelectTrigger className="bg-transparent border-0 border-b border-muted-foreground/30 rounded-none px-0 focus:ring-0 focus-visible:ring-0 focus-visible:border-primary">
                 <SelectValue placeholder="Please Select" />
@@ -173,7 +173,7 @@ export const ConsultationFormSection = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-lg font-bold text-foreground">Your Question (Optional)</label>
+            <label className="text-lg font-bold text-foreground">Your Question <span className="text-destructive">*</span></label>
             <Textarea
               placeholder="Have a specific question? Let us know..."
               value={formData.question}
