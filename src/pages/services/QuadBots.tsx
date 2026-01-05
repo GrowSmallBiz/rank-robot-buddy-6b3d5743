@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { 
   ServiceHero, 
   SectionHeader, 
@@ -27,6 +28,7 @@ import {
   Home,
   Briefcase,
   GraduationCap,
+  TrendingUp,
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
@@ -36,6 +38,13 @@ import botConversationalAI from "@/assets/bot-conversational-ai.png";
 import botVoiceAI from "@/assets/bot-voice-ai.png";
 import botSupervisorOS from "@/assets/bot-supervisor-os.png";
 import { baseContactCTA } from "@/config/contactCTA";
+
+const quadBotsStats = [
+  { value: "4", label: "AI Bots Working 24/7", icon: Bot },
+  { value: "85%", label: "Lead Response Automation", icon: Zap },
+  { value: "3x", label: "More Qualified Leads", icon: TrendingUp },
+  { value: "15+", label: "Hours Saved Weekly", icon: Clock },
+];
 
 const botCards = [
   {
@@ -368,8 +377,10 @@ const QuadBots = () => {
         </section>
 
 
+        <AnimatedStatsSection stats={quadBotsStats} columns={4} />
+
         {/* FAQ Section */}
-        <FAQSection 
+        <FAQSection
           faqs={faqs} 
           contactCTA={{
             ...baseContactCTA,

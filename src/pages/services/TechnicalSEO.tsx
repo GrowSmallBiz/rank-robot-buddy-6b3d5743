@@ -2,12 +2,20 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, technicalSeoBlogPosts } from "@/components/sections/BlogSection";
 import { PersonCTA } from "@/components/services";
-import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe } from "lucide-react";
+import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe, Clock, TrendingUp } from "lucide-react";
 import technicalSeoImage from "@/assets/technical-seo.png";
+
+const technicalSeoStats = [
+  { value: "2s", label: "Target Load Time", icon: Gauge },
+  { value: "90+", label: "Core Web Vitals Score", icon: TrendingUp },
+  { value: "100%", label: "Mobile Optimized", icon: Smartphone },
+  { value: "24hr", label: "Issue Response Time", icon: Clock },
+];
 
 const faqs: FAQItem[] = [
   {
@@ -207,36 +215,17 @@ const TechnicalSEO = () => {
         </div>
       </section>
 
-      {/* Results Section */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-up">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Real Results, Real Impact
-            </h2>
-            <p className="text-muted-foreground">See the transformation our clients experience</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {[
-              { value: "98%", label: "E-commerce traffic increase within months" },
-              { value: "113%", label: "Conversion rate lift post speed optimization" },
-              { value: "10x", label: "Organic sessions after architecture overhaul" },
-            ].map((stat, index) => (
-              <div
-                key={index}
-                className="text-center p-8 bg-secondary/50 border border-border rounded-xl animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <p className="text-4xl md:text-5xl font-display font-bold text-gradient mb-2">
-                  {stat.value}
-                </p>
-                <p className="text-sm text-muted-foreground">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AnimatedStatsSection 
+        stats={[
+          { value: "98%", label: "E-commerce Traffic Increase", icon: TrendingUp },
+          { value: "113%", label: "Conversion Rate Lift", icon: Gauge },
+          { value: "10x", label: "Organic Sessions Growth", icon: Zap },
+          { value: "2s", label: "Target Page Load Time", icon: Clock },
+        ]} 
+        columns={4}
+        title="Real Results, Real Impact"
+        description="See the transformation our clients experience"
+      />
 
       <PlatformAdvantagesSection variant="compact" serviceType="technical" />
 

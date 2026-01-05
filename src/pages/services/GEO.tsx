@@ -2,12 +2,20 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
 import { PersonCTA } from "@/components/services";
-import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain } from "lucide-react";
+import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain, TrendingUp, Eye, Clock, Zap } from "lucide-react";
 import geoServiceImage from "@/assets/geo-service.png";
+
+const geoStats = [
+  { value: "60%", label: "AI Citation Rate", icon: Brain },
+  { value: "4x", label: "Entity Visibility Growth", icon: TrendingUp },
+  { value: "100%", label: "Knowledge Graph Coverage", icon: Network },
+  { value: "90", label: "Days to Impact", icon: Clock },
+];
 
 const faqs: FAQItem[] = [
   {
@@ -199,6 +207,8 @@ const GEO = () => {
           </div>
         </div>
       </section>
+
+      <AnimatedStatsSection stats={geoStats} columns={4} />
 
       <PlatformAdvantagesSection variant="compact" serviceType="geo" />
 

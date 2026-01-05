@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { PersonCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
@@ -33,7 +34,15 @@ import {
   Send,
   Clock,
   Linkedin,
+  TrendingUp,
 } from "lucide-react";
+
+const linkedInStats = [
+  { value: "500+", label: "Targeted Prospects/Month", icon: Users },
+  { value: "25%", label: "Connection Accept Rate", icon: TrendingUp },
+  { value: "15+", label: "Qualified Meetings/Month", icon: Calendar },
+  { value: "100%", label: "Personalized Outreach", icon: MessageSquare },
+];
 
 const LinkedInOutreach = () => {
   const painPoints = [
@@ -378,6 +387,8 @@ const LinkedInOutreach = () => {
             </div>
           </div>
         </section>
+
+        <AnimatedStatsSection stats={linkedInStats} columns={4} />
 
         {/* FAQ Section */}
         <FAQSection
