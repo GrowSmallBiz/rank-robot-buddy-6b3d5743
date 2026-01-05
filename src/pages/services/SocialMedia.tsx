@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
+import { PersonCTA } from "@/components/services";
 import { 
   ArrowRight, 
   Target, 
@@ -744,36 +745,11 @@ const SocialMedia = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 hero-glow" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground animate-fade-up">
-              Ready to Elevate Your{" "}
-              <span className="text-gradient">Professional Brand?</span>
-            </h2>
-            
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-up delay-100">
-              Get a free 30-minute strategy session, complimentary social media audit ($500 value), 
-              and local competitor analysis report.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-200">
-              <Link to="/free-assessment">
-                <Button variant="hero" size="xl">
-                  Schedule Free Strategy Session
-                  <ArrowRight className="w-5 h-5" />
-                </Button>
-              </Link>
-            </div>
-            
-            <p className="text-sm text-muted-foreground animate-fade-up delay-300">
-              ✓ Free 30-minute session  ✓ $500 value audit  ✓ Competitor analysis included
-            </p>
-          </div>
-        </div>
-      </section>
+      <PersonCTA
+        title="Ready to Elevate Your Professional Brand?"
+        description="Get a free 30-minute strategy session, complimentary social media audit ($500 value), and local competitor analysis report."
+        sectionClassName="py-12 bg-section-dark"
+      />
 
       <Footer />
     </div>
