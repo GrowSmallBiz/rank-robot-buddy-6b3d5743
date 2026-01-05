@@ -6,6 +6,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import heroImage from "@/assets/homepage-hero-bg.jpg";
@@ -613,6 +614,9 @@ const Index = () => {
           />
         </div>
       </section>
+
+      {/* Consultation Form Section */}
+      <ConsultationFormSection />
 
       <Footer />
     </div>
