@@ -734,14 +734,6 @@ const AIReceptionist = () => {
           </div>
         </section>
 
-        {/* Blog Section */}
-        <BlogSection
-          posts={blogPosts}
-          title="AI Receptionist Insights"
-          subtitle="Tips and strategies to maximize your AI-powered customer service"
-          viewAllLink="/blog"
-        />
-
         {/* FAQ Section */}
         <FAQSection
           title="Frequently Asked Questions"
@@ -753,6 +745,14 @@ const AIReceptionist = () => {
             description: "We're here to help! Reach out to us for a personalized consultation.",
             tagline: "Let's automate your customer service together.",
           }}
+        />
+
+        {/* Blog Section */}
+        <BlogSection
+          posts={blogPosts}
+          title="AI Receptionist Insights"
+          subtitle="Tips and strategies to maximize your AI-powered customer service"
+          viewAllLink="/blog"
         />
 
         {/* CTA Section */}

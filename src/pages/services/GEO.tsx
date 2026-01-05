@@ -1,11 +1,11 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain } from "lucide-react";
 import geoServiceImage from "@/assets/geo-service.png";
 
@@ -221,7 +221,11 @@ const GEO = () => {
         showViewAll={false}
       />
 
-      <CTASection />
+      <PersonCTA
+        title="Ready to Shape the Answers AI Delivers?"
+        description="Position your brand as the trusted source AI platforms cite and recommend. Future-proof your visibility in generative search."
+        sectionClassName="py-12 bg-section-dark"
+      />
       <Footer />
     </div>
   );

@@ -1,11 +1,11 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, technicalSeoBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe } from "lucide-react";
 import technicalSeoImage from "@/assets/technical-seo.png";
 
@@ -259,7 +259,11 @@ const TechnicalSEO = () => {
         showViewAll={false}
       />
 
-      <CTASection />
+      <PersonCTA
+        title="Ready for Technical SEO That Performs?"
+        description="We fix what's broken, optimize what's slow, and unlock higher rankings with Core Web Vitals-ready sites."
+        sectionClassName="py-12 bg-section-dark"
+      />
       <Footer />
     </div>
   );

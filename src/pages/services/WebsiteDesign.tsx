@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -967,48 +968,6 @@ const WebsiteDesign = () => {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Insights</h2>
-            <p className="text-lg text-muted-foreground">
-              Tips and strategies to maximize your website's conversion potential
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {blogPosts.map((post, index) => (
-              <Link
-                key={index}
-                to={post.link}
-                className="group bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300"
-              >
-                <div className="p-6">
-                  <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary mb-4">
-                    {post.category}
-                  </span>
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    {post.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4">{post.excerpt}</p>
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">{post.date}</span>
-                    <span className="text-primary font-semibold group-hover:underline">Read More →</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg" asChild>
-              <Link to="/blog">View All Articles</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <FAQSection
         title="Frequently Asked Questions"
@@ -1021,6 +980,15 @@ const WebsiteDesign = () => {
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's build your dream website together.",
         }}
+      />
+
+      {/* Blog Section */}
+      <BlogSection
+        posts={generalBlogPosts.slice(0, 3)}
+        title="Website Design & Development Insights"
+        subtitle="Expert tips to create high-converting websites for service businesses"
+        showViewAll={true}
+        viewAllLink="/blog"
       />
 
       {/* CTA Section */}

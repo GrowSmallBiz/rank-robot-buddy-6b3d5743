@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PersonCTA } from "@/components/services";
 import { 
@@ -684,65 +685,14 @@ const SocialMedia = () => {
         }}
       />
 
-      {/* Latest Blog Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12 animate-fade-up">
-            <p className="text-primary font-medium mb-4">Latest Insights</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Social Media Marketing Blog
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Stay updated with the latest strategies and trends in social media marketing for local businesses.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {blogPosts.map((post, index) => (
-              <Link
-                key={index}
-                to={post.slug}
-                className="group bg-card border border-border rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/50 animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <MessageCircle className="w-12 h-12 text-primary/50" />
-                </div>
-                <div className="p-6 space-y-4">
-                  <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                    <span className="px-2 py-1 bg-primary/10 text-primary rounded-full">
-                      {post.category}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" />
-                      {post.readTime}
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-display font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
-                    {post.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground line-clamp-2">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground pt-2 border-t border-border">
-                    <CalendarDays className="w-3 h-3" />
-                    {post.date}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-12 animate-fade-up">
-            <Link to="/blog">
-              <Button variant="outline" size="lg">
-                View All Articles
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Blog Section */}
+      <BlogSection
+        posts={generalBlogPosts.slice(0, 3)}
+        title="Social Media Marketing Insights"
+        subtitle="Expert strategies to grow your local business through social media"
+        showViewAll={true}
+        viewAllLink="/blog"
+      />
 
       {/* CTA Section */}
       <PersonCTA

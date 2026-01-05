@@ -5,6 +5,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
   ServiceHero,
@@ -387,6 +389,22 @@ const LinkedInOutreach = () => {
             description: "We're here to help! Reach out to us for a personalized consultation.",
             tagline: "Let's generate B2B leads together.",
           }}
+        />
+
+        {/* Blog Section */}
+        <BlogSection
+          posts={generalBlogPosts.slice(0, 3)}
+          title="B2B Lead Generation Insights"
+          subtitle="Expert strategies for LinkedIn prospecting and outreach"
+          showViewAll={true}
+          viewAllLink="/blog"
+        />
+
+        {/* CTA Section */}
+        <PersonCTA
+          title="Ready to Fill Your Pipeline with Qualified Leads?"
+          description="Get your complimentary ICP-aligned lead list and see how our Done-With-You LinkedIn system can transform your B2B prospecting."
+          sectionClassName="py-12 bg-section-dark"
         />
 
         {/* Disclaimer */}

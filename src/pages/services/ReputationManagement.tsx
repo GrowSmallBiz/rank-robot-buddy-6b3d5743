@@ -3,8 +3,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
-import { CTASection } from "@/components/sections/CTASection";
 import { BlogSection, reputationManagementBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { 
   ArrowRight, 
   Star,
@@ -869,15 +869,6 @@ const ReputationManagement = () => {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <BlogSection
-        posts={reputationManagementBlogPosts.slice(0, 3)}
-        title="Latest Reputation Management Insights"
-        subtitle="Expert tips and strategies to build and protect your online reputation"
-        showViewAll={true}
-        viewAllLink="/blog"
-      />
-
       {/* FAQ Section */}
       <FAQSection
         title="Reputation Management FAQs"
@@ -892,8 +883,21 @@ const ReputationManagement = () => {
         }}
       />
 
+      {/* Blog Section */}
+      <BlogSection
+        posts={reputationManagementBlogPosts.slice(0, 3)}
+        title="Latest Reputation Management Insights"
+        subtitle="Expert tips and strategies to build and protect your online reputation"
+        showViewAll={true}
+        viewAllLink="/blog"
+      />
+
       {/* CTA Section */}
-      <CTASection />
+      <PersonCTA
+        title="Ready to Dominate Your Online Reputation?"
+        description="Get AI-powered review collection, instant responses, and 24/7 monitoring. Turn your customers into your best marketing tool."
+        sectionClassName="py-12 bg-section-dark"
+      />
 
       <Footer />
     </div>
