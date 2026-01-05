@@ -124,28 +124,29 @@ export const ConsultationFormSection = () => {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label className="text-lg font-bold text-white">Business Email <span className="text-accent">*</span></label>
-            <Input
-              type="email"
-              placeholder="Business Email"
-              value={formData.email}
-              onChange={(e) => handleChange("email", e.target.value)}
-              className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
-            />
-            {errors.email && <p className="text-accent text-sm">{errors.email}</p>}
-          </div>
-
-          <div className="space-y-2">
-            <label className="text-lg font-bold text-white">Phone Number <span className="text-accent">*</span></label>
-            <Input
-              type="tel"
-              placeholder="Phone Number"
-              value={formData.phone}
-              onChange={(e) => handleChange("phone", e.target.value)}
-              className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
-            />
-            {errors.phone && <p className="text-accent text-sm">{errors.phone}</p>}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <label className="text-lg font-bold text-white">Business Email <span className="text-accent">*</span></label>
+              <Input
+                type="email"
+                placeholder="Business Email"
+                value={formData.email}
+                onChange={(e) => handleChange("email", e.target.value)}
+                className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
+              />
+              {errors.email && <p className="text-accent text-sm">{errors.email}</p>}
+            </div>
+            <div className="space-y-2">
+              <label className="text-lg font-bold text-white">Phone Number <span className="text-accent">*</span></label>
+              <Input
+                type="tel"
+                placeholder="Phone Number"
+                value={formData.phone}
+                onChange={(e) => handleChange("phone", e.target.value)}
+                className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
+              />
+              {errors.phone && <p className="text-accent text-sm">{errors.phone}</p>}
+            </div>
           </div>
 
           <div className="space-y-2">
