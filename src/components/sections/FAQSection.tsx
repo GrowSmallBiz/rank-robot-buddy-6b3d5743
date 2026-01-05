@@ -54,8 +54,11 @@ export const FAQSection = ({
   };
 
   return (
-    <section className="py-24 lg:py-32 bg-black">
-      <div className="container mx-auto px-4">
+    <section className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      {/* Subtle glow effects */}
+      <div className="absolute top-0 right-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
+      <div className="container mx-auto px-4 relative z-10">
         {/* Centered Section Header */}
         <div className="text-center mb-12 animate-fade-up">
           <p className="text-primary font-medium mb-4">FAQ</p>
