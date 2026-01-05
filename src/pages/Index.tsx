@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -36,9 +37,73 @@ import {
   Layers,
   LineChart,
   Handshake,
-  Puzzle
+  Puzzle,
+  LucideIcon
 } from "lucide-react";
 import { Helmet } from "react-helmet";
+
+// Helper to parse stat values like "24/7", "100%", "2-4x", "15+"
+const parseStatValue = (value: string): { number: number; prefix: string; suffix: string } => {
+  if (value === "24/7") return { number: 24, prefix: "", suffix: "/7" };
+  if (value === "2-4x") return { number: 4, prefix: "2-", suffix: "x" };
+  const match = value.match(/^([^\d]*)(\d+)(.*)$/);
+  if (match) return { prefix: match[1] || "", number: parseInt(match[2], 10), suffix: match[3] || "" };
+  return { number: 0, prefix: "", suffix: value };
+};
+
+// Animated Stat Card Component
+const AnimatedStatCard = ({ stat, index }: { stat: { value: string; label: string; icon: LucideIcon }; index: number }) => {
+  const [count, setCount] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const { number: endValue, prefix, suffix } = parseStatValue(stat.value);
+  const Icon = stat.icon;
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasStarted) setHasStarted(true);
+        });
+      },
+      { threshold: 0.3 }
+    );
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [hasStarted]);
+
+  useEffect(() => {
+    if (!hasStarted) return;
+    const duration = 2000;
+    const startTime = Date.now();
+    const animate = () => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      setCount(Math.floor(endValue * easeOutQuart));
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
+  }, [hasStarted, endValue]);
+
+  return (
+    <div
+      ref={ref}
+      className="text-center animate-fade-up group"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-[#FC8253]/15 border border-[#FC8253]/30 mb-5 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(252,130,83,0.4)] group-hover:bg-[#FC8253]/25">
+        <Icon className="w-6 h-6" style={{ color: '#FC8253' }} />
+      </div>
+      <p className="text-4xl md:text-5xl font-display font-bold mb-2 tracking-tight" style={{ color: '#FC8253' }}>
+        {prefix}{count}{suffix}
+      </p>
+      <p className="text-sm text-slate-400 font-medium">{stat.label}</p>
+    </div>
+  );
+};
 
 // Services data
 const services = [
@@ -575,19 +640,7 @@ const Index = () => {
               { value: "100%", label: "Transparency", icon: Eye },
               { value: "15+", label: "Hours Saved/Week", icon: Clock },
             ].map((stat, index) => (
-              <div
-                key={index}
-                className="text-center animate-fade-up group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-[#FC8253]/15 border border-[#FC8253]/30 mb-5 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(252,130,83,0.4)] group-hover:bg-[#FC8253]/25">
-                  <stat.icon className="w-6 h-6" style={{ color: '#FC8253' }} />
-                </div>
-                <p className="text-4xl md:text-5xl font-display font-bold mb-2 tracking-tight" style={{ color: '#FC8253' }}>
-                  {stat.value}
-                </p>
-                <p className="text-sm text-slate-400 font-medium">{stat.label}</p>
-              </div>
+              <AnimatedStatCard key={index} stat={stat} index={index} />
             ))}
           </div>
         </div>
