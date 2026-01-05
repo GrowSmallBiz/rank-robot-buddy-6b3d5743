@@ -26,8 +26,10 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-24 bg-card relative overflow-hidden">
-      <div className="absolute inset-0 section-glow" />
+    <section className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 45% 16%) 0%, hsl(210 50% 12%) 50%, hsl(210 45% 16%) 100%)' }}>
+      {/* Subtle glow effects */}
+      <div className="absolute top-1/3 -left-32 w-64 h-64 bg-primary/8 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 -right-32 w-64 h-64 bg-primary/8 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-up">
