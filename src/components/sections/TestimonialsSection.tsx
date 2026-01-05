@@ -43,8 +43,8 @@ export const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-secondary/50 border border-border rounded-2xl p-8 space-y-6 animate-fade-up card-hover"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="backdrop-blur-sm rounded-2xl p-8 space-y-6 animate-fade-up transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+              style={{ animationDelay: `${index * 0.1}s`, border: '2px solid #17a2b8', backgroundColor: '#2d465c' }}
             >
               {/* Rating */}
               <div className="flex gap-1">
