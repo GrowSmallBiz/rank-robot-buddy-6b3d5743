@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection, AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, BlogPost } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -724,6 +725,32 @@ const AIReceptionist = () => {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <TestimonialsSection 
+          testimonials={[
+            {
+              quote: "We were missing about 40% of our after-hours calls. Since implementing the AI Receptionist, we've captured every single one. Our monthly revenue increased by $18,000.",
+              author: "Mike Thompson",
+              role: "Owner",
+              company: "Thompson HVAC Services",
+            },
+            {
+              quote: "The AI handles appointment booking so naturally that patients don't even realize they're talking to automation. Our front desk staff can now focus on in-person care.",
+              author: "Dr. Sarah Mitchell",
+              role: "Practice Owner",
+              company: "Mitchell Family Dental",
+            },
+            {
+              quote: "As a solo attorney, I was losing clients to firms that could answer calls 24/7. Now my AI Receptionist qualifies leads and books consultations while I'm in court.",
+              author: "James Rodriguez",
+              role: "Managing Partner",
+              company: "Rodriguez Law Group",
+            },
+          ]}
+          title="AI Receptionist Success Stories"
+          subtitle="See how businesses are capturing more leads with 24/7 AI-powered communication"
+        />
 
         {/* FAQ Section */}
         <FAQSection
