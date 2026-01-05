@@ -426,8 +426,8 @@ const Index = () => {
       </section>
 
       {/* Growth Steps Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
+      <section className="section-dark">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Our Digital Dominance Method</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
@@ -529,8 +529,8 @@ const Index = () => {
       </section>
 
       {/* Mid-Page PersonCTA - After Services */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
+      <section className="section-dark">
+        <div className="container mx-auto px-4 relative z-10">
           <PersonCTA 
             title="Ready to Dominate Your Local Market?"
             description="Get a free digital growth strategy session and discover how our integrated marketing system can help you become the #1 choice in your area."
@@ -602,8 +602,8 @@ const Index = () => {
       />
 
       {/* Final PersonCTA */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
+      <section className="section-dark">
+        <div className="container mx-auto px-4 relative z-10">
           <PersonCTA 
             title="Let's Build Your Growth Engine"
             description="Stop losing leads to competitors with faster responses. Get AI-powered marketing that works 24/7 to grow your business."
