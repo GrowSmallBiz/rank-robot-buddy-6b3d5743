@@ -82,27 +82,21 @@ export const ConsultationFormSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-background relative overflow-hidden">
-      {/* Decorative arrows */}
-      <div className="absolute top-8 left-4 md:left-12 text-primary opacity-60">
-        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" className="rotate-[30deg]">
-          <path d="M10 40 C 30 10, 60 10, 70 40" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round"/>
-          <path d="M55 35 L 70 40 L 60 52" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      </div>
-      <div className="absolute bottom-8 right-4 md:right-12 text-primary opacity-60">
-        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" className="rotate-[-30deg]">
-          <path d="M70 40 C 50 70, 20 70, 10 40" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round"/>
-          <path d="M25 45 L 10 40 L 20 28" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+    <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+      {/* Gradient border glow effect */}
+      <div className="absolute inset-0 p-[2px] rounded-lg pointer-events-none">
+        <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
+        <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-accent to-transparent opacity-60" />
+        <div className="absolute inset-y-0 left-0 w-[2px] bg-gradient-to-b from-transparent via-primary to-transparent opacity-60" />
+        <div className="absolute inset-y-0 right-0 w-[2px] bg-gradient-to-b from-transparent via-accent to-transparent opacity-60" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl mx-auto text-center mb-10">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
-            Get a Consultation
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-4">
+            Get a <span className="text-accent">Consultation</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-white/80 text-lg">
             Fill out this form, and one of our account managers will reach out to you with insights on your site.
           </p>
         </div>
@@ -110,55 +104,55 @@ export const ConsultationFormSection = () => {
         <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="text-lg font-bold text-foreground">First Name <span className="text-destructive">*</span></label>
+              <label className="text-lg font-bold text-white">First Name <span className="text-accent">*</span></label>
               <Input
                 placeholder="First Name"
                 value={formData.firstName}
                 onChange={(e) => handleChange("firstName", e.target.value)}
-                className="bg-transparent border-0 border-b border-muted-foreground/30 rounded-none px-0 focus-visible:ring-0 focus-visible:border-primary"
+                className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
               />
-              {errors.firstName && <p className="text-destructive text-sm">{errors.firstName}</p>}
+              {errors.firstName && <p className="text-accent text-sm">{errors.firstName}</p>}
             </div>
             <div className="space-y-2">
-              <label className="text-lg font-bold text-foreground">Last Name <span className="text-destructive">*</span></label>
+              <label className="text-lg font-bold text-white">Last Name <span className="text-accent">*</span></label>
               <Input
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={(e) => handleChange("lastName", e.target.value)}
-                className="bg-transparent border-0 border-b border-muted-foreground/30 rounded-none px-0 focus-visible:ring-0 focus-visible:border-primary"
+                className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
               />
-              {errors.lastName && <p className="text-destructive text-sm">{errors.lastName}</p>}
+              {errors.lastName && <p className="text-accent text-sm">{errors.lastName}</p>}
             </div>
           </div>
 
           <div className="space-y-2">
-            <label className="text-lg font-bold text-foreground">Business Email <span className="text-destructive">*</span></label>
+            <label className="text-lg font-bold text-white">Business Email <span className="text-accent">*</span></label>
             <Input
               type="email"
               placeholder="Business Email"
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
-              className="bg-transparent border-0 border-b border-muted-foreground/30 rounded-none px-0 focus-visible:ring-0 focus-visible:border-primary"
+              className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
             />
-            {errors.email && <p className="text-destructive text-sm">{errors.email}</p>}
+            {errors.email && <p className="text-accent text-sm">{errors.email}</p>}
           </div>
 
           <div className="space-y-2">
-            <label className="text-lg font-bold text-foreground">Phone Number <span className="text-destructive">*</span></label>
+            <label className="text-lg font-bold text-white">Phone Number <span className="text-accent">*</span></label>
             <Input
               type="tel"
               placeholder="Phone Number"
               value={formData.phone}
               onChange={(e) => handleChange("phone", e.target.value)}
-              className="bg-transparent border-0 border-b border-muted-foreground/30 rounded-none px-0 focus-visible:ring-0 focus-visible:border-primary"
+              className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
             />
-            {errors.phone && <p className="text-destructive text-sm">{errors.phone}</p>}
+            {errors.phone && <p className="text-accent text-sm">{errors.phone}</p>}
           </div>
 
           <div className="space-y-2">
-            <label className="text-lg font-bold text-foreground">Monthly Budget <span className="text-destructive">*</span></label>
+            <label className="text-lg font-bold text-white">Monthly Budget <span className="text-accent">*</span></label>
             <Select value={formData.budget} onValueChange={(value) => handleChange("budget", value)}>
-              <SelectTrigger className="bg-transparent border-0 border-b border-muted-foreground/30 rounded-none px-0 focus:ring-0 focus-visible:ring-0 focus-visible:border-primary">
+              <SelectTrigger className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white focus:ring-1 focus:ring-primary focus-visible:ring-1 focus-visible:ring-primary [&>span]:text-white/50 [&[data-state=open]>span]:text-white">
                 <SelectValue placeholder="Please Select" />
               </SelectTrigger>
               <SelectContent>
@@ -169,18 +163,18 @@ export const ConsultationFormSection = () => {
                 ))}
               </SelectContent>
             </Select>
-            {errors.budget && <p className="text-destructive text-sm">{errors.budget}</p>}
+            {errors.budget && <p className="text-accent text-sm">{errors.budget}</p>}
           </div>
 
           <div className="space-y-2">
-            <label className="text-lg font-bold text-foreground">Your Question <span className="text-destructive">*</span></label>
+            <label className="text-lg font-bold text-white">Your Question <span className="text-accent">*</span></label>
             <Textarea
               placeholder="Have a specific question? Let us know..."
               value={formData.question}
               onChange={(e) => handleChange("question", e.target.value)}
-              className="bg-transparent border-0 border-b border-muted-foreground/30 rounded-none px-0 focus-visible:ring-0 focus-visible:border-primary min-h-[60px] resize-none"
+              className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary min-h-[100px] resize-none"
             />
-            {errors.question && <p className="text-destructive text-sm">{errors.question}</p>}
+            {errors.question && <p className="text-accent text-sm">{errors.question}</p>}
           </div>
 
           <div className="pt-4">
