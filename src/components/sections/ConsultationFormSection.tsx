@@ -84,11 +84,11 @@ export const ConsultationFormSection = () => {
   return (
     <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
-        {/* Form card with dark background and gradient border */}
-        <div className="max-w-xl mx-auto relative rounded-2xl p-[2px] overflow-hidden">
-          {/* Gradient border */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-primary opacity-60 rounded-2xl" />
-          
+        {/* Form card with dark background and glow effect */}
+        <div 
+          className="max-w-xl mx-auto relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+          style={{ border: '2px solid #17a2b8' }}
+        >
           {/* Form container with header */}
           <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
             <div className="text-center mb-8">
