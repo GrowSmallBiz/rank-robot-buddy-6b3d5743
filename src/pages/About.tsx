@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
+import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -67,25 +68,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-card border-y border-border">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="text-center animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <p className="text-4xl md:text-5xl font-display font-bold text-gradient mb-2">
-                  {stat.value}
-                </p>
-                <p className="text-muted-foreground text-sm">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AnimatedStatsSection stats={stats} columns={4} />
 
       {/* Our Story Section */}
       <section className="py-24">

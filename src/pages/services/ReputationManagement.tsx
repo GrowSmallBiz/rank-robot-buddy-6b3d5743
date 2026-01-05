@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection, AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, reputationManagementBlogPosts } from "@/components/sections/BlogSection";
 import { PersonCTA } from "@/components/services";
@@ -229,10 +230,7 @@ const ReputationManagement = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 animate-fade-up delay-400">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <p className="text-2xl md:text-3xl font-display font-bold text-gradient">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </div>
+                <AnimatedStatCard key={index} stat={stat} index={index} variant="minimal" />
               ))}
             </div>
           </div>

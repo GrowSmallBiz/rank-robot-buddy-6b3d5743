@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { AnimatedStatsSection, AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, BlogPost } from "@/components/sections/BlogSection";
 import { PersonCTA } from "@/components/services";
@@ -270,47 +271,36 @@ const AIReceptionist = () => {
         </section>
 
         {/* Problem/Stats Section */}
-        <section className="relative py-20 bg-card/80 border-t border-primary/10">
-          <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+        <section className="relative py-20 bg-[#1a2a3a]">
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
-              <p className="text-primary font-medium mb-4">The Hidden Cost of Missed Opportunities</p>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+              <p className="font-medium mb-4" style={{ color: '#FC8253' }}>The Hidden Cost of Missed Opportunities</p>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
                 Industry Statistics That Will Shock You
               </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-slate-400 max-w-2xl mx-auto">
                 Every missed call and delayed response costs your business real money
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {stats.map((stat, index) => (
-                <div
-                  key={index}
-                  className="bg-background/80 border border-ghl-icon rounded-2xl p-6 text-center animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">
-                    {stat.value}
-                  </div>
-                  <p className="text-foreground font-medium mb-2">{stat.label}</p>
-                  <p className="text-xs text-muted-foreground">{stat.subtext}</p>
-                </div>
+                <AnimatedStatCard key={index} stat={stat} index={index} variant="card" />
               ))}
             </div>
 
             <div className="mt-12 bg-destructive/10 border border-destructive/20 rounded-2xl p-6 max-w-3xl mx-auto animate-fade-up">
-              <h3 className="text-2xl font-semibold text-foreground mb-4 text-center">The Math That Matters</h3>
+              <h3 className="text-2xl font-semibold text-white mb-4 text-center">The Math That Matters</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="text-center">
-                  <p className="text-muted-foreground mb-2"><strong>Without AI:</strong></p>
-                  <p className="text-foreground">100 calls → 47 missed → 40 lost forever</p>
+                  <p className="text-slate-400 mb-2"><strong>Without AI:</strong></p>
+                  <p className="text-white">100 calls → 47 missed → 40 lost forever</p>
                   <p className="text-destructive font-bold">= $48,000 lost monthly</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-muted-foreground mb-2"><strong>With AI:</strong></p>
-                  <p className="text-foreground">100 calls → 97 handled → 71 resolved</p>
-                  <p className="text-primary font-bold">= $0 lost revenue</p>
+                  <p className="text-slate-400 mb-2"><strong>With AI:</strong></p>
+                  <p className="text-white">100 calls → 97 handled → 71 resolved</p>
+                  <p className="font-bold" style={{ color: '#FC8253' }}>= $0 lost revenue</p>
                 </div>
               </div>
             </div>
