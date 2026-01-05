@@ -3,9 +3,11 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { CTASection } from "@/components/sections/CTASection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
+import heroImage from "@/assets/homepage-hero-bg.jpg";
 import { 
   ArrowRight, 
   Bot, 
@@ -255,6 +257,34 @@ const growthSteps = [
   },
 ];
 
+// Curated blog posts from different service areas for homepage
+const homepageBlogPosts = [
+  {
+    title: "How AI Receptionists Are Revolutionizing Small Business",
+    excerpt: "Discover how AI-powered virtual receptionists help small businesses capture more leads, reduce costs, and provide 24/7 customer service.",
+    category: "AI Automation",
+    author: "Sarah Mitchell",
+    date: "Dec 30, 2025",
+    readTime: "7 min read"
+  },
+  {
+    title: "The Complete Guide to AI SEO in 2025",
+    excerpt: "Learn how AI is transforming search engine optimization and what your business needs to do to stay ahead of the competition.",
+    category: "AI SEO",
+    author: "Michael Chen",
+    date: "Dec 28, 2025",
+    readTime: "8 min read"
+  },
+  {
+    title: "Maximizing ROI with Google and Facebook Ads",
+    excerpt: "Strategic paid campaigns with full-funnel tracking can transform your lead generation. Here's how to get the most from your ad spend.",
+    category: "Paid Media",
+    author: "Emily Rodriguez",
+    date: "Dec 22, 2025",
+    readTime: "6 min read"
+  }
+];
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -266,8 +296,14 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-background/85" />
+        
         {/* Background Effects */}
-        <div className="absolute inset-0 hero-glow" />
         <div className="absolute top-1/4 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
 
@@ -281,24 +317,17 @@ const Index = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              Your Partner for Digital Growth{" "}
-              <span className="text-gradient">And Dominance</span>
+              Dominate Your Local Market With{" "}
+              <span className="text-gradient">AI-Powered Growth</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up delay-200">
-              "Done-for-You" Marketing And AI Automation for Local Service Businesses
+              The Complete Marketing System for Local Service Businesses
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
-              We help home service professionals, health and wellness practitioners, finance professionals, 
-              attorneys, automobile repairs and other local service businesses achieve digital dominance — 
-              becoming the #1 choice in their market.
-            </p>
-
-            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
-              Through AI-powered SEO Optimization, AI-Optimized Facebook and Google Paid Ads, LinkedIn Outreach, 
-              Reputation Management, and a 24/7 AI Voice Receptionist & AI Conversational Assistant, we bring you 
-              more client leads and keep more customers.
+              AI-powered SEO, strategic paid ads, 24/7 AI receptionist, and automated CRM — 
+              all working together to make you the #1 choice in your market.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
@@ -319,7 +348,8 @@ const Index = () => {
       </section>
 
       {/* Fragmented vs Integrated Comparison Section */}
-      <section className="py-24 bg-card relative overflow-hidden">
+      <section className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
         
@@ -333,7 +363,7 @@ const Index = () => {
 
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Fragmented Approach */}
-            <div className="bg-secondary/30 border border-border rounded-2xl p-8 animate-fade-up">
+            <div className="bg-background/80 border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.3)]">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center">
                   <XCircle className="w-6 h-6 text-destructive" />
@@ -357,7 +387,7 @@ const Index = () => {
             </div>
 
             {/* Integrated Ecosystem */}
-            <div className="bg-background border-2 border-primary/30 rounded-2xl p-8 relative animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <div className="bg-background/80 border-2 border-primary/30 rounded-2xl p-8 relative animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]" style={{ animationDelay: "0.1s" }}>
               <div className="absolute -top-4 left-8 px-4 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">
                 Our Solution
               </div>
@@ -401,7 +431,7 @@ const Index = () => {
             {growthSteps.map((step, index) => (
               <div
                 key={index}
-                className="bg-card border border-border rounded-xl p-6 text-center space-y-4 card-hover animate-fade-up"
+                className="bg-background/80 border border-ghl-icon rounded-xl p-6 text-center space-y-4 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center">
@@ -431,8 +461,8 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 bg-card relative overflow-hidden">
-        <div className="absolute inset-0 section-glow" />
+      <section id="services" className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
@@ -447,7 +477,7 @@ const Index = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-background border border-border rounded-xl p-6 space-y-4 card-hover animate-fade-up relative"
+                className="bg-background/80 border border-ghl-icon rounded-xl p-6 space-y-4 animate-fade-up relative transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 {service.comingSoon && (
@@ -489,9 +519,23 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-24">
+      {/* Mid-Page PersonCTA - After Services */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
+          <PersonCTA 
+            title="Ready to Dominate Your Local Market?"
+            description="Get a free digital growth strategy session and discover how our integrated marketing system can help you become the #1 choice in your area."
+            buttonText="Schedule FREE Strategy Session"
+            buttonHref="/free-assessment"
+            urgencyText="Takes 2 mins to schedule"
+          />
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Why Choose GrowSmallBiz</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
@@ -507,7 +551,7 @@ const Index = () => {
             {whyChooseUs.map((item, index) => (
               <div
                 key={index}
-                className="bg-card border border-border rounded-xl p-6 space-y-4 card-hover animate-fade-up"
+                className="bg-background/80 border border-ghl-icon rounded-xl p-6 space-y-4 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -549,32 +593,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Transform Your Online Presence Today
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Be Found Where Your Customers Are Searching
-            </p>
-            <p className="text-base text-muted-foreground max-w-3xl mx-auto italic">
-              Why settle for competing when you can dominate? Our all-in-one digital package is specifically 
-              designed to make you the undisputed leader in your local area. When every piece of your digital 
-              presence works together with laser focus on your local market, you don't just grow – you become 
-              the obvious choice for customers in your area.
-            </p>
-            <Link to="/free-assessment">
-              <Button variant="hero" size="xl">
-                Schedule My FREE Digital Growth Strategy Session
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
       <TestimonialsSection />
 
@@ -591,8 +609,27 @@ const Index = () => {
         }}
       />
 
-      {/* Final CTA */}
-      <CTASection />
+      {/* Blog Section */}
+      <BlogSection 
+        posts={homepageBlogPosts}
+        title="Latest Insights From Our Experts"
+        subtitle="Expert tips and strategies to grow your local service business"
+        showViewAll={true}
+        viewAllLink="/blog"
+      />
+
+      {/* Final PersonCTA */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <PersonCTA 
+            title="Let's Build Your Growth Engine"
+            description="Stop losing leads to competitors with faster responses. Get AI-powered marketing that works 24/7 to grow your business."
+            buttonText="Schedule FREE Strategy Session"
+            buttonHref="/free-assessment"
+            urgencyText="Takes 2 mins to schedule"
+          />
+        </div>
+      </section>
 
       <Footer />
     </div>
