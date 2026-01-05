@@ -31,6 +31,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import heroImage from "@/assets/quad-bots-hero.jpg";
 import botLeadGenerator from "@/assets/bot-lead-generator.png";
 import botConversationalAI from "@/assets/bot-conversational-ai.png";
@@ -470,6 +471,15 @@ const QuadBots = () => {
             </div>
           </div>
         </section>
+
+        {/* Blog Section */}
+        <BlogSection
+          posts={generalBlogPosts.slice(0, 3)}
+          title="Latest Insights"
+          subtitle="Expert tips and strategies for AI-powered sales automation"
+          showViewAll={true}
+          viewAllLink="/blog"
+        />
       </main>
 
       <Footer />
