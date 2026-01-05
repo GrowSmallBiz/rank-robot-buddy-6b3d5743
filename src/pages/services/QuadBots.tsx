@@ -433,6 +433,15 @@ const QuadBots = () => {
           }}
         />
 
+        {/* Blog Section */}
+        <BlogSection
+          posts={generalBlogPosts.slice(0, 3)}
+          title="Latest Insights"
+          subtitle="Expert tips and strategies for AI-powered sales automation"
+          showViewAll={true}
+          viewAllLink="/blog"
+        />
+
         {/* CTA Section */}
         <section className="py-8 bg-section-dark">
           <div className="container mx-auto px-4">
@@ -471,15 +480,6 @@ const QuadBots = () => {
             </div>
           </div>
         </section>
-
-        {/* Blog Section */}
-        <BlogSection
-          posts={generalBlogPosts.slice(0, 3)}
-          title="Latest Insights"
-          subtitle="Expert tips and strategies for AI-powered sales automation"
-          showViewAll={true}
-          viewAllLink="/blog"
-        />
       </main>
 
       <Footer />
