@@ -5,6 +5,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { PersonCTA } from "@/components/services";
 import {
   ArrowRight,
   CheckCircle2,
@@ -1023,35 +1024,11 @@ const WebsiteDesign = () => {
       />
 
       {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 hero-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground">
-              Ready to Transform Your{" "}
-              <span className="text-gradient">Online Presence?</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Don't let another day pass with a website that fails to showcase your expertise. 
-              Join hundreds of successful service professionals who've elevated their online presence.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/free-assessment">
-                  Get Free Website Analysis
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-              <Button variant="heroOutline" size="xl" asChild>
-                <Link to="/contact">Schedule Strategy Session</Link>
-              </Button>
-            </div>
-            <p className="text-sm text-muted-foreground">
-            ✓ Free consultation  ✓ Custom strategy  ✓ No commitment required
-            </p>
-          </div>
-        </div>
-      </section>
+      <PersonCTA
+        title="Ready to Transform Your Online Presence?"
+        description="Don't let another day pass with a website that fails to showcase your expertise. Join hundreds of successful service professionals who've elevated their online presence."
+        sectionClassName="py-12 bg-section-dark"
+      />
       <Footer />
     </div>
   );

@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
+import { PersonCTA } from "@/components/services";
 import {
   Phone,
   MessageSquare,
@@ -865,25 +866,13 @@ const CRM = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="relative py-20 bg-background overflow-hidden">
-          <div className="absolute inset-0 hero-glow opacity-50" />
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl mx-auto text-center animate-fade-up">
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-                Ready to Convert More Leads Into Sales?
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Schedule a demo to see how GrowSmallBiz can transform your business with AI-powered automation.
-              </p>
-              <Button variant="hero" size="lg" className="glow-primary" asChild>
-                <a href="https://lp.growsmallbiz.io/crm-demo-request-page" target="_blank" rel="noopener noreferrer">
-                  Schedule My Demo Session
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
+        <PersonCTA
+          title="Ready to Convert More Leads Into Sales?"
+          description="Schedule a demo to see how GrowSmallBiz can transform your business with AI-powered automation."
+          buttonHref="https://lp.growsmallbiz.io/crm-demo-request-page"
+          buttonText="Schedule My Demo Session"
+          sectionClassName="py-12"
+        />
 
         {/* FAQ Section */}
         <FAQSection

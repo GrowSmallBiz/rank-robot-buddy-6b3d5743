@@ -11,3 +11,4 @@ export { ChecklistItem, Checklist } from "./ChecklistItem";
 export { ActionCard, ActionsGrid } from "./ActionCard";
 export { ComparisonBox, ComparisonSplit } from "./ComparisonBox";
 export { ServiceCard } from "./ServiceCard";
+export { PersonCTA } from "./PersonCTA";

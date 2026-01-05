@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, BlogPost } from "@/components/sections/BlogSection";
+import { PersonCTA } from "@/components/services";
 import heroImage from "@/assets/ai-receptionist-hero.jpg";
 import {
   Phone,
@@ -755,34 +756,11 @@ const AIReceptionist = () => {
         />
 
         {/* CTA Section */}
-        <section className="py-24 relative overflow-hidden">
-          <div className="absolute inset-0 hero-glow" />
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground animate-fade-up">
-                Ready to Capture Every{" "}
-                <span className="text-gradient">Lead, Every Call?</span>
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-up">
-                Your AI starts working 24/7 within days. Complete phone and digital coverage from day one.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up">
-                <Button variant="hero" size="xl" asChild>
-                  <Link to="/free-assessment">
-                    Get Started Today
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Link>
-                </Button>
-                <Button variant="heroOutline" size="xl" asChild>
-                  <Link to="/contact">Schedule Demo</Link>
-                </Button>
-              </div>
-              <p className="text-sm text-muted-foreground animate-fade-up">
-                ✓ White glove setup  ✓ 24/7 support  ✓ Works with existing systems
-              </p>
-            </div>
-          </div>
-        </section>
+        <PersonCTA
+          title="Ready to Capture Every Lead, Every Call?"
+          description="Your AI starts working 24/7 within days. Complete phone and digital coverage from day one."
+          sectionClassName="py-12 bg-section-dark"
+        />
       </main>
 
       <Footer />
