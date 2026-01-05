@@ -22,6 +22,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { PersonCTA } from "@/components/services";
 import medSpaHeroImage from "@/assets/industry-medspa-hero.jpg";
 
 const benefits = [
@@ -395,28 +396,14 @@ const MedSpa = () => {
         showViewAll={false}
       />
 
-      {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-primary opacity-10" />
-        <div className="absolute inset-0 hero-glow" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Ready to Become the Premier Med Spa?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Get a free SEO audit and discover how to attract more high-value aesthetic clients.
-            </p>
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/free-assessment?industry=medspa">
-                Get Your Free Audit
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* PersonCTA Section */}
+      <PersonCTA
+        title="Ready to Become the Premier Med Spa?"
+        description="Get a free SEO audit and discover how to attract more high-value aesthetic clients to your med spa."
+        buttonHref="/free-assessment?industry=medspa"
+        buttonText="Get Your Free Audit"
+        sectionClassName="py-12 bg-section-dark"
+      />
 
       <ConsultationFormSection />
       <Footer />

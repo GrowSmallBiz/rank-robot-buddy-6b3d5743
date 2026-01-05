@@ -22,6 +22,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { PersonCTA } from "@/components/services";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
 
 const benefits = [
@@ -395,28 +396,14 @@ const Photographers = () => {
         showViewAll={false}
       />
 
-      {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-primary opacity-10" />
-        <div className="absolute inset-0 hero-glow" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Ready to Book More Dream Clients?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Get a free SEO audit and discover how to turn your portfolio into a booking machine.
-            </p>
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/free-assessment?industry=photographer">
-                Get Your Free Portfolio Audit
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* PersonCTA Section */}
+      <PersonCTA
+        title="Ready to Book More Dream Clients?"
+        description="Get a free SEO audit and discover how to turn your portfolio into a booking machine for your photography business."
+        buttonHref="/free-assessment?industry=photographer"
+        buttonText="Get Your Free Portfolio Audit"
+        sectionClassName="py-12 bg-section-dark"
+      />
 
       <ConsultationFormSection />
       <Footer />
