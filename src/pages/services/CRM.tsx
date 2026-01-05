@@ -7,6 +7,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
@@ -89,6 +90,39 @@ const crmStats = [
   { value: "80%", label: "Time Saved on Tasks", icon: Clock },
   { value: "3x", label: "More Conversions", icon: TrendingUp },
   { value: "100%", label: "Pipeline Visibility", icon: Eye },
+];
+
+const crmCaseStudies = [
+  {
+    company: "Premier Auto Services",
+    location: "Dallas, TX",
+    industry: "Auto Repair",
+    challenge: "Losing 40% of leads due to slow follow-up. Manual lead tracking was overwhelming the team.",
+    timeframe: "4 months",
+    metrics: [
+      { label: "Lead Response Time", before: "4+ hours", after: "< 5 min", improvement: "-98%" },
+      { label: "Lead Conversion Rate", before: "22%", after: "68%", improvement: "+209%" },
+      { label: "Monthly Revenue", before: "$45K", after: "$112K", improvement: "+149%" },
+    ],
+    quote: "The AI follow-up is a game-changer. We went from losing 40% of inquiries to converting 85% into appointments.",
+    quoteName: "Michael T.",
+    quoteRole: "Owner, Premier Auto Services"
+  },
+  {
+    company: "Bright Smile Dental",
+    location: "Phoenix, AZ",
+    industry: "Dental Practice",
+    challenge: "Team spending 20+ hours weekly on manual follow-ups. No visibility into pipeline health.",
+    timeframe: "5 months",
+    metrics: [
+      { label: "Hours Saved Weekly", before: "0", after: "22+", improvement: "New" },
+      { label: "New Patients/Month", before: "28", after: "76", improvement: "+171%" },
+      { label: "Revenue Growth", before: "$85K/mo", after: "$215K/mo", improvement: "+153%" },
+    ],
+    quote: "The automated pipeline saved us 20+ hours a week. Our revenue increased 3x in just 6 months.",
+    quoteName: "Jennifer R.",
+    quoteRole: "Sales Director, Bright Smile Dental"
+  }
 ];
 
 const CRM = () => {
@@ -905,6 +939,15 @@ const CRM = () => {
               rating: 5,
             },
           ]}
+        />
+
+        {/* Case Studies Section */}
+        <CaseStudySection
+          caseStudies={crmCaseStudies}
+          title="CRM Success Stories"
+          subtitle="See how businesses transformed their sales process with GrowSmallBiz CRM"
+          ctaLink="/free-assessment"
+          ctaText="Get Results Like These"
         />
 
         {/* Blog Section */}
