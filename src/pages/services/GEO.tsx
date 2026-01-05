@@ -10,6 +10,7 @@ import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain, TrendingUp, Eye, Clock, Zap } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const geoTestimonials = [
   {
@@ -231,6 +232,19 @@ const GEO = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Generative AI Partner"
+        description="We optimize your brand's digital presence for AI platforms like ChatGPT, Gemini, and Claude—ensuring you're cited and recommended in AI-generated answers."
+        items={[
+          { title: "AI-First Expertise", description: "We specialize in the new frontier of search—optimizing for large language models and generative AI platforms.", icon: Brain },
+          { title: "Entity Optimization", description: "We strengthen your brand's digital identity so AI systems recognize you as an authoritative source.", icon: Network },
+          { title: "Citation Tracking", description: "We monitor how often AI platforms cite your content and track your visibility across generative models.", icon: Eye },
+          { title: "E-E-A-T Enhancement", description: "We boost your Experience, Expertise, Authority, and Trust signals that AI platforms use for recommendations.", icon: Award },
+          { title: "Semantic Enrichment", description: "We structure your content semantically so AI can accurately understand and reference your expertise.", icon: Globe },
+          { title: "Future-Proof Strategy", description: "Stay ahead as AI evolves with continuous optimization and platform-specific strategies.", icon: TrendingUp },
+        ]}
+      />
 
       <AnimatedStatsSection stats={geoStats} columns={4} />
 

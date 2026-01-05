@@ -10,6 +10,7 @@ import { BlogSection, technicalSeoBlogPosts } from "@/components/sections/BlogSe
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe, Clock, TrendingUp } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const technicalSeoTestimonials = [
   {
@@ -238,6 +239,19 @@ const TechnicalSEO = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Technical SEO Partner"
+        description="We fix the hidden issues that hold your site back—speed, indexing, Core Web Vitals, and more—so your content can rank where it deserves."
+        items={[
+          { title: "Deep Technical Audits", description: "We uncover every crawl error, redirect chain, duplicate page, and indexing issue holding your site back.", icon: Shield },
+          { title: "Speed Optimization Experts", description: "We guarantee sub-2-second load times on mobile with proven Core Web Vitals optimization strategies.", icon: Gauge },
+          { title: "Mobile-First Approach", description: "Every fix we implement is optimized for Google's mobile-first indexing to maximize your rankings.", icon: Smartphone },
+          { title: "Schema & Structured Data", description: "We implement advanced schema markup that helps search engines understand and feature your content.", icon: Code },
+          { title: "Transparent Reporting", description: "See exactly what we fixed and how it improved your site performance with clear, actionable reports.", icon: TrendingUp },
+          { title: "Fast Issue Response", description: "Critical issues get addressed within 24 hours to minimize any impact on your search visibility.", icon: Clock },
+        ]}
+      />
 
       <AnimatedStatsSection 
         stats={[

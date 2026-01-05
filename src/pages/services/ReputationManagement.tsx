@@ -31,6 +31,7 @@ import {
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import reputationHeroBg from "@/assets/reputation-hero.jpg";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 // FAQs from source content
 const faqs: FAQItem[] = [
@@ -902,6 +903,19 @@ const ReputationManagement = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Reputation Management Partner"
+        description="We automate review collection, AI-powered responses, and reputation monitoring—so you build trust, rank higher, and attract more customers."
+        items={[
+          { title: "Automated Review Requests", description: "Happy customers automatically receive review requests at the perfect moment—no manual effort required.", icon: Zap },
+          { title: "AI-Powered Responses", description: "Every review gets a professional, personalized response within minutes—24/7, 365 days a year.", icon: Bot },
+          { title: "Multi-Platform Monitoring", description: "Track reviews across Google, Facebook, Yelp, and 50+ platforms from one dashboard.", icon: Eye },
+          { title: "Negative Review Alerts", description: "Instant notifications for negative reviews so you can address issues before they escalate.", icon: Bell },
+          { title: "Local SEO Boost", description: "More positive reviews directly improve your local search rankings and visibility.", icon: TrendingUp },
+          { title: "Full Brand Control", description: "You maintain oversight of all responses with approval workflows for sensitive situations.", icon: Shield },
+        ]}
+      />
 
       {/* Testimonials Section */}
       <TestimonialsSection

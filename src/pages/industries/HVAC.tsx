@@ -26,6 +26,7 @@ import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import hvacHeroImage from "@/assets/industry-hvac-hero.jpg";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 const benefits = [
   {
     icon: MapPin,
@@ -360,6 +361,19 @@ const HVAC = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your HVAC Marketing Partner"
+        description="We specialize in helping HVAC, plumbing, and electrical contractors dominate local search, capture emergency calls, and outrank franchise competitors."
+        items={[
+          { title: "Home Service Experts", description: "We focus exclusively on HVAC, plumbing, and electrical—we know what works for your industry.", icon: Wrench },
+          { title: "Emergency Call Capture", description: "Rank for emergency keywords and capture urgent calls when homeowners need immediate help.", icon: Phone },
+          { title: "Local Domination", description: "Own the Google Map Pack for every service you offer in every city you serve.", icon: MapPin },
+          { title: "AI Search Ready", description: "Get recommended when homeowners ask AI assistants for HVAC help or recommendations.", icon: Bot },
+          { title: "Review Generation", description: "Automated systems turn happy customers into 5-star reviews that drive more business.", icon: Star },
+          { title: "Proven Results", description: "Our HVAC clients consistently see 3-5x more leads within the first 6 months.", icon: TrendingUp },
+        ]}
+      />
 
       {/* Case Studies Section */}
       <CaseStudySection 

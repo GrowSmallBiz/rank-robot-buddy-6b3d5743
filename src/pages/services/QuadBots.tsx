@@ -56,6 +56,7 @@ import {
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import heroImage from "@/assets/quad-bots-hero.jpg";
 import botLeadGenerator from "@/assets/bot-lead-generator.png";
 import botConversationalAI from "@/assets/bot-conversational-ai.png";
@@ -433,6 +434,19 @@ const QuadBots = () => {
           </div>
         </section>
 
+
+        <WhyChooseSection 
+          title="Your AI Automation Partner"
+          description="Four specialized AI bots work together 24/7 to capture leads, qualify prospects, book appointments, and follow up—so you can focus on closing deals."
+          items={[
+            { title: "4 AI Bots, One System", description: "Lead Generator, Conversational AI, Voice AI, and Supervisor OS work together seamlessly.", icon: Bot },
+            { title: "24/7 Lead Response", description: "Never miss a lead again. AI responds instantly to every inquiry, day or night.", icon: Clock },
+            { title: "Intelligent Qualification", description: "AI qualifies leads automatically so your team only talks to serious prospects.", icon: Users },
+            { title: "Natural Conversations", description: "AI engages leads in human-like conversations across text, chat, and voice channels.", icon: MessageSquare },
+            { title: "Self-Improving System", description: "The Supervisor OS monitors and optimizes all bots for continuous improvement.", icon: Settings },
+            { title: "Proven ROI", description: "Most clients see 3x more qualified leads within 90 days of implementation.", icon: TrendingUp },
+          ]}
+        />
 
         <AnimatedStatsSection stats={quadBotsStats} columns={4} />
 

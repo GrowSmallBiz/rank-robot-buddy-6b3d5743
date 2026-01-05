@@ -10,6 +10,7 @@ import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings, TrendingUp, Clock, Zap } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import aeoServiceImage from "@/assets/aeo-service.png";
 
 const aeoStats = [
@@ -211,6 +212,19 @@ const AEO = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Answer Engine Partner"
+        description="We optimize your content to be the answer AI platforms choose—ensuring your brand is cited in ChatGPT, Google AI Overviews, and voice assistants."
+        items={[
+          { title: "Answer Optimization Experts", description: "We structure your content to be the definitive answer AI systems surface for relevant queries.", icon: Bot },
+          { title: "AI Platform Coverage", description: "We optimize for all major AI platforms—ChatGPT, Gemini, Perplexity, Copilot, and voice assistants.", icon: MessageSquare },
+          { title: "Citation Tracking", description: "We monitor and report on how often AI platforms cite your content and recommend your brand.", icon: Eye },
+          { title: "Schema Implementation", description: "Advanced structured data helps AI systems understand and accurately reference your content.", icon: Database },
+          { title: "Enterprise Metrics", description: "Track Share of Voice, Visibility Score, and Sentiment Analysis with executive-ready dashboards.", icon: TrendingUp },
+          { title: "Continuous Optimization", description: "We continuously refine your content as AI platforms evolve their algorithms and training data.", icon: Clock },
+        ]}
+      />
 
       <AnimatedStatsSection stats={aeoStats} columns={4} />
 

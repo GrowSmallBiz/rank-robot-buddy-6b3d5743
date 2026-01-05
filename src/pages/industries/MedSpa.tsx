@@ -24,6 +24,7 @@ import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection"
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import medSpaHeroImage from "@/assets/industry-medspa-hero.jpg";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const benefits = [
   {
@@ -358,6 +359,19 @@ const MedSpa = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Med Spa Marketing Partner"
+        description="We specialize in helping aesthetic practices attract premium clients who invest in themselves—building your reputation as the luxury choice in your market."
+        items={[
+          { title: "Aesthetics Experts", description: "We focus exclusively on med spas and aesthetic practices—we know what works for premium services.", icon: Sparkles },
+          { title: "Premium Client Attraction", description: "Attract clients ready to invest in Botox, fillers, laser treatments, and body contouring.", icon: Heart },
+          { title: "Luxury Brand Positioning", description: "Position your practice as the premier aesthetic destination in your community.", icon: Star },
+          { title: "Visual-First Marketing", description: "Showcase transformative results through Instagram, before/after galleries, and video content.", icon: Target },
+          { title: "AI Search Visibility", description: "Get recommended when potential clients ask AI for the best med spa in your city.", icon: Bot },
+          { title: "Proven ROI", description: "Our med spa clients typically see 3-5x return on marketing investment within 6 months.", icon: TrendingUp },
+        ]}
+      />
 
       {/* Case Studies Section */}
       <CaseStudySection 

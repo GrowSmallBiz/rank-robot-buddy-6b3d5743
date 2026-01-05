@@ -24,6 +24,7 @@ import { BlogSection, autoRepairBlogPosts } from "@/components/sections/BlogSect
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import autoRepairHeroImage from "@/assets/industry-autorepair-hero.jpg";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const benefits = [
   {
@@ -358,6 +359,19 @@ const AutoRepair = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Auto Repair Marketing Partner"
+        description="We specialize in helping independent auto repair shops dominate local search, capture more service calls, and outrank the national chains."
+        items={[
+          { title: "Auto Industry Experts", description: "We focus exclusively on auto repair shops—we know what works for independent mechanics.", icon: Car },
+          { title: "Compete with Chains", description: "Level the playing field against national chains with superior local visibility and reputation.", icon: Wrench },
+          { title: "Emergency Visibility", description: "Capture urgent repair calls when car owners need immediate help with breakdowns.", icon: Phone },
+          { title: "Local SEO Domination", description: "Rank #1 for 'auto repair near me' and service-specific searches in your area.", icon: MapPin },
+          { title: "AI Search Ready", description: "Get recommended when car owners ask AI for the best mechanic in your city.", icon: Bot },
+          { title: "Proven Growth", description: "Our auto repair clients typically see 2-4x more service inquiries within 90 days.", icon: TrendingUp },
+        ]}
+      />
 
       {/* Case Studies Section */}
       <CaseStudySection 

@@ -25,6 +25,7 @@ import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection"
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import dentalHeroImage from "@/assets/industry-dental-hero.jpg";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const benefits = [
   {
@@ -359,6 +360,19 @@ const Dental = () => {
           </div>
         </div>
       </section>
+
+      <WhyChooseSection 
+        title="Your Dental Marketing Partner"
+        description="We specialize in helping dental practices attract high-value patients, fill appointment books, and build a reputation as the premier choice in your community."
+        items={[
+          { title: "Dental Industry Experts", description: "We focus exclusively on dental practices—we know what works for general, cosmetic, and specialty dentistry.", icon: Smile },
+          { title: "High-Value Patients", description: "Attract patients seeking implants, veneers, Invisalign, and other high-value procedures.", icon: Users },
+          { title: "Local SEO Domination", description: "Rank #1 for 'dentist near me' and procedure-specific searches in your service area.", icon: MapPin },
+          { title: "AI Search Ready", description: "Get recommended when patients ask AI assistants for the best dentist in your city.", icon: Bot },
+          { title: "Reputation Excellence", description: "Automated review systems build your 5-star reputation and trust in the community.", icon: Star },
+          { title: "Proven Patient Growth", description: "Our dental clients typically see 2-3x more new patient inquiries within 90 days.", icon: TrendingUp },
+        ]}
+      />
 
       {/* Case Studies Section */}
       <CaseStudySection 

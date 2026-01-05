@@ -38,6 +38,7 @@ import {
   MapPin,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const AIReceptionist = () => {
   const features = [
@@ -759,6 +760,19 @@ const AIReceptionist = () => {
             </div>
           </div>
         </section>
+
+        <WhyChooseSection 
+          title="Your AI Communication Partner"
+          description="Our AI Receptionist answers every call, books appointments, and qualifies leads 24/7—so you never miss an opportunity to grow your business."
+          items={[
+            { title: "24/7 Call Handling", description: "AI answers every call naturally, even after hours, holidays, and weekends—never miss a lead.", icon: Phone },
+            { title: "Multi-Channel Coverage", description: "Handle calls, texts, web chat, Facebook, Instagram, and Google Business messages from one platform.", icon: MessageSquare },
+            { title: "Natural Conversations", description: "AI engages callers in human-like conversations that feel personal and professional.", icon: Bot },
+            { title: "Calendar Integration", description: "Appointments booked directly into your calendar based on real-time availability.", icon: Calendar },
+            { title: "CRM Sync", description: "Every conversation and contact automatically saved to your CRM—zero manual data entry.", icon: Shield },
+            { title: "White Glove Setup", description: "We configure everything for you—AI training, integrations, workflows—you just start receiving leads.", icon: Clock },
+          ]}
+        />
 
         {/* Testimonials Section */}
         <TestimonialsSection 
