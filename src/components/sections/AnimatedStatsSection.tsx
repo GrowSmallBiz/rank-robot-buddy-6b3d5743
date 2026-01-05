@@ -145,8 +145,11 @@ export const AnimatedStatsSection = ({
   };
 
   return (
-    <section className={`py-20 bg-[#1a2a3a] ${className}`}>
-      <div className="container mx-auto px-4">
+    <section className={`py-20 relative overflow-hidden ${className}`} style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      {/* Subtle glow effects for visual depth */}
+      <div className="absolute top-0 left-1/4 w-96 h-48 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-48 bg-primary/5 rounded-full blur-3xl" />
+      <div className="container mx-auto px-4 relative z-10">
         {(title || subtitle || description) && (
           <div className="text-center mb-16 animate-fade-up">
             {subtitle && <p className="text-primary font-medium mb-4">{subtitle}</p>}
