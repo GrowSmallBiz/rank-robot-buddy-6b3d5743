@@ -18,6 +18,7 @@ import {
   Shield
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection";
@@ -85,19 +86,25 @@ const results = [
   { metric: "4.8", label: "Average Google rating achieved" }
 ];
 
-const testimonials = [
+const dentalTestimonials = [
   {
     quote: "We've doubled our new patient flow and are finally attracting the cosmetic cases we want. The ROI has been incredible.",
     author: "Dr. Jennifer Park",
     role: "Owner",
-    company: "Park Family Dentistry"
+    company: "Park Family Dentistry",
   },
   {
     quote: "GrowSmallBiz helped us rank #1 for 'dental implants' in our city. We're now booking implant consultations every week.",
     author: "Dr. Robert Martinez",
     role: "Lead Dentist",
-    company: "Smile Design Studio"
-  }
+    company: "Smile Design Studio",
+  },
+  {
+    quote: "Our online visibility transformed completely. New patient inquiries increased by 280% within the first 4 months.",
+    author: "Dr. Lisa Chen",
+    role: "Practice Owner",
+    company: "Bright Smile Dental",
+  },
 ];
 
 const faqs = [
@@ -361,40 +368,11 @@ const Dental = () => {
         ctaText="Get Results Like These"
       />
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-card/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              What Dentists Say About Us
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-2xl p-8"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-foreground text-lg mb-6 italic">
-                  "{testimonial.quote}"
-                </p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}, {testimonial.company}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection 
+        testimonials={dentalTestimonials}
+        title="What Dentists Say About Us"
+        subtitle="See how dental practices transform their patient acquisition"
+      />
 
       {/* FAQ Section */}
       <FAQSection 

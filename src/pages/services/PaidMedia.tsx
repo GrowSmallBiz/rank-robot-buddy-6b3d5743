@@ -3,7 +3,29 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
+
+const paidMediaTestimonials = [
+  {
+    quote: "We cut our cost per lead by 60% while tripling the number of qualified leads. The ROI tracking is incredible.",
+    author: "Jennifer Walsh",
+    role: "Marketing Director",
+    company: "Home Services Pro",
+  },
+  {
+    quote: "Google LSA + PPC combo brought us 4x more emergency calls. Best advertising investment we've made.",
+    author: "Mike Chen",
+    role: "Owner",
+    company: "24/7 HVAC Solutions",
+  },
+  {
+    quote: "Finally, an agency that understands local service ads. Our plumbing business grew 40% in 6 months.",
+    author: "Sarah Thompson",
+    role: "Operations Manager",
+    company: "Thompson Plumbing",
+  },
+];
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, paidMediaBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -603,6 +625,12 @@ const PaidMedia = () => {
       </section>
 
       <AnimatedStatsSection stats={paidMediaStats} columns={4} />
+
+      <TestimonialsSection 
+        testimonials={paidMediaTestimonials}
+        title="Paid Media Success Stories"
+        subtitle="See how businesses maximize their advertising ROI"
+      />
 
       <FAQSection
         faqs={faqs}

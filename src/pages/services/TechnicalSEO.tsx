@@ -3,12 +3,35 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, technicalSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe, Clock, TrendingUp } from "lucide-react";
+
+const technicalSeoTestimonials = [
+  {
+    quote: "Our Core Web Vitals went from red to green in 3 weeks. Page load time dropped from 8 seconds to under 2. Traffic increased 156%.",
+    author: "James Rodriguez",
+    role: "CTO",
+    company: "TechFlow Solutions",
+  },
+  {
+    quote: "They found indexing issues we'd missed for years. After the technical audit, our organic traffic jumped 89% in just 2 months.",
+    author: "Amanda Foster",
+    role: "Marketing Director",
+    company: "Enterprise Software Inc.",
+  },
+  {
+    quote: "Our site speed improvements alone brought in an extra $50K/month in conversions. Technical SEO is no longer optional.",
+    author: "David Park",
+    role: "E-commerce Director",
+    company: "Luxury Home Goods",
+  },
+];
+
 import technicalSeoImage from "@/assets/technical-seo.png";
 
 const technicalSeoStats = [
@@ -226,6 +249,12 @@ const TechnicalSEO = () => {
         columns={4}
         title="Real Results, Real Impact"
         description="See the transformation our clients experience"
+      />
+
+      <TestimonialsSection 
+        testimonials={technicalSeoTestimonials}
+        title="Technical SEO Success Stories"
+        subtitle="See how businesses transformed their site performance and rankings"
       />
 
       <PlatformAdvantagesSection variant="compact" serviceType="technical" />

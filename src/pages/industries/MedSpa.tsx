@@ -17,6 +17,7 @@ import {
   Heart
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection";
@@ -84,19 +85,25 @@ const results = [
   { metric: "4.9", label: "Average Google rating achieved" }
 ];
 
-const testimonials = [
+const medSpaTestimonials = [
   {
     quote: "Our consultation bookings tripled within 4 months. We're now fully booked for injectables and have a waitlist for laser treatments.",
     author: "Dr. Amanda Foster",
     role: "Medical Director",
-    company: "Radiance Aesthetics"
+    company: "Radiance Aesthetics",
   },
   {
     quote: "GrowSmallBiz positioned us as THE luxury med spa in our area. We're attracting exactly the high-value clients we wanted.",
     author: "Nicole Richards",
     role: "Owner",
-    company: "Glow Med Spa & Wellness"
-  }
+    company: "Glow Med Spa & Wellness",
+  },
+  {
+    quote: "Premium treatment bookings increased 280%. Our average client value doubled in just 6 months.",
+    author: "Dr. Lisa Park",
+    role: "Aesthetic Director",
+    company: "Elegance Med Spa",
+  },
 ];
 
 const faqs = [
@@ -360,40 +367,11 @@ const MedSpa = () => {
         ctaText="Get Results Like These"
       />
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-card/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              What Med Spa Owners Say
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-2xl p-8"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-foreground text-lg mb-6 italic">
-                  "{testimonial.quote}"
-                </p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}, {testimonial.company}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection 
+        testimonials={medSpaTestimonials}
+        title="What Med Spa Owners Say"
+        subtitle="See how aesthetic practices attract premium clients"
+      />
 
       {/* FAQ Section */}
       <FAQSection 

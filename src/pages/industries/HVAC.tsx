@@ -19,6 +19,7 @@ import {
   BarChart3
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
@@ -85,19 +86,25 @@ const results = [
   { metric: "$0", label: "Per-lead cost from organic" }
 ];
 
-const testimonials = [
+const hvacTestimonials = [
   {
     quote: "We went from 5 calls a day to 25+ calls. GrowSmallBiz transformed our business. Best investment we ever made.",
     author: "Mike Thompson",
     role: "Owner",
-    company: "Thompson HVAC Services"
+    company: "Thompson HVAC Services",
   },
   {
     quote: "Finally stopped paying $80 per lead to HomeAdvisor. Now we get better quality leads for free from Google.",
     author: "Sarah Chen",
     role: "Operations Manager",
-    company: "AllStar Plumbing"
-  }
+    company: "AllStar Plumbing",
+  },
+  {
+    quote: "Emergency calls increased by 400%. We're now the go-to HVAC company in our area for urgent repairs.",
+    author: "James Rodriguez",
+    role: "Owner",
+    company: "Priority Heating & Cooling",
+  },
 ];
 
 const faqs = [
@@ -362,40 +369,11 @@ const HVAC = () => {
         ctaText="Get Results Like These"
       />
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-card/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              What Contractors Say About Us
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-2xl p-8"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-foreground text-lg mb-6 italic">
-                  "{testimonial.quote}"
-                </p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}, {testimonial.company}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection 
+        testimonials={hvacTestimonials}
+        title="What Contractors Say About Us"
+        subtitle="See how home service businesses dominate their local markets"
+      />
 
       {/* FAQ Section */}
       <FAQSection 

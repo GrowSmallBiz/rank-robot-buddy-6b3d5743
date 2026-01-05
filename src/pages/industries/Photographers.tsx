@@ -17,6 +17,7 @@ import {
   Image
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
@@ -84,19 +85,25 @@ const results = [
   { metric: "4.9", label: "Average Google rating" }
 ];
 
-const testimonials = [
+const photographerTestimonials = [
   {
     quote: "I went from struggling to book weddings to having a waitlist. GrowSmallBiz helped me rank #1 for 'wedding photographer' in my city.",
     author: "Sarah Williams",
     role: "Owner",
-    company: "Sarah Williams Photography"
+    company: "Sarah Williams Photography",
   },
   {
     quote: "My inquiry rate tripled. Now I can be selective about the clients I take on instead of chasing every lead.",
     author: "Marcus Chen",
     role: "Lead Photographer",
-    company: "Chen Creative Studios"
-  }
+    company: "Chen Creative Studios",
+  },
+  {
+    quote: "Bookings increased 400%. I'm now charging premium rates and still have a full calendar.",
+    author: "Emily Foster",
+    role: "Owner",
+    company: "Foster Portrait Studio",
+  },
 ];
 
 const faqs = [
@@ -360,40 +367,11 @@ const Photographers = () => {
         ctaText="Get Results Like These"
       />
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-card/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              What Photographers Say
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-2xl p-8"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-foreground text-lg mb-6 italic">
-                  "{testimonial.quote}"
-                </p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}, {testimonial.company}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection 
+        testimonials={photographerTestimonials}
+        title="What Photographers Say"
+        subtitle="See how photographers grow their bookings and brand"
+      />
 
       {/* FAQ Section */}
       <FAQSection 

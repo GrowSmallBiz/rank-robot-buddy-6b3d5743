@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, linkBuildingBlogPosts } from "@/components/sections/BlogSection";
@@ -10,6 +11,27 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield, TrendingUp, Clock, Award } from "lucide-react";
 import linkBuildingImage from "@/assets/link-building.png";
+
+const linkBuildingTestimonials = [
+  {
+    quote: "Our domain authority jumped from 28 to 52 in 8 months. Rankings followed and we're now dominating our niche.",
+    author: "Daniel Park",
+    role: "Founder",
+    company: "FinTech Startup",
+  },
+  {
+    quote: "Quality over quantity approach paid off. We got featured in Forbes and TechCrunch through their outreach.",
+    author: "Michelle Torres",
+    role: "VP of Marketing",
+    company: "B2B Software Co.",
+  },
+  {
+    quote: "The editorial links they secured drove both rankings and referral traffic. Best link building investment we made.",
+    author: "Alex Johnson",
+    role: "Digital Director",
+    company: "E-commerce Brand",
+  },
+];
 
 const linkBuildingStats = [
   { value: "50+", label: "Authority Links Monthly", icon: Link2 },
@@ -213,6 +235,12 @@ const LinkBuilding = () => {
       </section>
 
       <AnimatedStatsSection stats={linkBuildingStats} columns={4} />
+
+      <TestimonialsSection 
+        testimonials={linkBuildingTestimonials}
+        title="Link Building Success Stories"
+        subtitle="See how quality backlinks transform rankings and authority"
+      />
 
       <PlatformAdvantagesSection variant="compact" serviceType="linkbuilding" />
 

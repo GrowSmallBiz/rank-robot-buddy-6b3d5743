@@ -7,7 +7,29 @@ import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+
+const linkedInTestimonials = [
+  {
+    quote: "15+ qualified meetings per month from LinkedIn alone. Our B2B pipeline has never been stronger.",
+    author: "David Park",
+    role: "CEO",
+    company: "TechFlow Solutions",
+  },
+  {
+    quote: "The personalized outreach approach landed us 3 enterprise clients in the first quarter. Incredible ROI.",
+    author: "Michelle Torres",
+    role: "VP of Sales",
+    company: "B2B SaaS Company",
+  },
+  {
+    quote: "We stopped cold calling entirely. LinkedIn outreach brings warmer leads with higher close rates.",
+    author: "Alex Johnson",
+    role: "Business Development",
+    company: "Consulting Firm",
+  },
+];
 import { PersonCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
@@ -390,6 +412,12 @@ const LinkedInOutreach = () => {
         </section>
 
         <AnimatedStatsSection stats={linkedInStats} columns={4} />
+
+        <TestimonialsSection 
+          testimonials={linkedInTestimonials}
+          title="LinkedIn Outreach Success Stories"
+          subtitle="See how B2B businesses fill their pipeline with qualified leads"
+        />
 
         {/* FAQ Section */}
         <FAQSection

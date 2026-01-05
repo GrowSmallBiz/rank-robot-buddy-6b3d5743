@@ -3,12 +3,34 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, localSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, MapPin, Search, Building, Star, FileText, Users } from "lucide-react";
+
+const localSeoTestimonials = [
+  {
+    quote: "We went from page 3 to dominating the local map pack. Our phone rings constantly now with qualified local leads.",
+    author: "Mike Thompson",
+    role: "Owner",
+    company: "Thompson HVAC Services",
+  },
+  {
+    quote: "GrowSmallBiz helped us rank for 'dentist near me' in our city. New patient calls increased by 340% in just 4 months.",
+    author: "Dr. Lisa Chen",
+    role: "Practice Owner",
+    company: "Bright Smile Dental",
+  },
+  {
+    quote: "Our Google Business Profile now generates more leads than all our paid advertising combined. Best investment ever.",
+    author: "Sarah Mitchell",
+    role: "Operations Manager",
+    company: "Premier Plumbing Co.",
+  },
+];
 import localSeoImage from "@/assets/local-seo.png";
 
 const faqs: FAQItem[] = [
@@ -173,6 +195,12 @@ const LocalSEO = () => {
           </div>
         </div>
       </section>
+
+      <TestimonialsSection 
+        testimonials={localSeoTestimonials}
+        title="Local SEO Success Stories"
+        subtitle="See how we've helped businesses dominate their local markets"
+      />
 
       <PlatformAdvantagesSection variant="compact" serviceType="local" />
 

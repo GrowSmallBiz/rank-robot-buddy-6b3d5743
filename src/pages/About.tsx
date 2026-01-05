@@ -3,8 +3,30 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const aboutTestimonials = [
+  {
+    quote: "GrowSmallBiz became an extension of our team. They understand our industry and deliver results month after month.",
+    author: "Dr. Jennifer Park",
+    role: "Practice Owner",
+    company: "Park Family Dentistry",
+  },
+  {
+    quote: "The transparency and communication is incredible. We always know exactly what's happening with our campaigns.",
+    author: "Mike Thompson",
+    role: "Owner",
+    company: "Thompson HVAC Services",
+  },
+  {
+    quote: "They don't just do SEO—they understand our business goals and help us achieve them. True partners.",
+    author: "Amanda Foster",
+    role: "Medical Director",
+    company: "Radiance Aesthetics",
+  },
+];
 
 const values = [
   {
@@ -228,6 +250,12 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <TestimonialsSection 
+        testimonials={aboutTestimonials}
+        title="What Our Clients Say"
+        subtitle="Hear from the businesses we've helped grow"
+      />
 
       <CTASection />
       <Footer />
