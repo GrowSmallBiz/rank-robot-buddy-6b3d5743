@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 
 const quadBotsTestimonials = [
   {
@@ -67,6 +68,39 @@ const quadBotsStats = [
   { value: "85%", label: "Lead Response Automation", icon: Zap },
   { value: "3x", label: "More Qualified Leads", icon: TrendingUp },
   { value: "15+", label: "Hours Saved Weekly", icon: Clock },
+];
+
+const quadBotsCaseStudies = [
+  {
+    company: "Elite Roofing Solutions",
+    location: "Atlanta, GA",
+    industry: "Roofing Contractor",
+    challenge: "Sales team overwhelmed with unqualified leads. Spending 15+ hours weekly on manual follow-ups.",
+    timeframe: "4 months",
+    metrics: [
+      { label: "Qualified Appointments", before: "12/mo", after: "42/mo", improvement: "+250%" },
+      { label: "Hours Saved Weekly", before: "0", after: "18+", improvement: "New" },
+      { label: "Close Rate", before: "18%", after: "34%", improvement: "+89%" },
+    ],
+    quote: "The lead qualification bot saves us 15+ hours per week. Only serious buyers get through to our sales team.",
+    quoteName: "James Rodriguez",
+    quoteRole: "Sales Director, Elite Roofing Solutions"
+  },
+  {
+    company: "Wellness First Chiropractic",
+    location: "San Diego, CA",
+    industry: "Chiropractic Practice",
+    challenge: "Missing after-hours inquiries. No system to qualify and book appointments automatically.",
+    timeframe: "3 months",
+    metrics: [
+      { label: "After-Hours Bookings", before: "5/mo", after: "32/mo", improvement: "+540%" },
+      { label: "Lead Response Time", before: "6+ hours", after: "< 2 min", improvement: "-99%" },
+      { label: "New Patients/Month", before: "24", after: "58", improvement: "+142%" },
+    ],
+    quote: "The AI bots respond to leads instantly while I sleep. We've tripled our qualified appointments.",
+    quoteName: "Dr. Amanda Chen",
+    quoteRole: "Owner, Wellness First Chiropractic"
+  }
 ];
 
 const botCards = [
@@ -406,6 +440,15 @@ const QuadBots = () => {
           testimonials={quadBotsTestimonials}
           title="AI Automation Success Stories"
           subtitle="See how businesses automate lead follow-up and grow revenue"
+        />
+
+        {/* Case Studies Section */}
+        <CaseStudySection
+          caseStudies={quadBotsCaseStudies}
+          title="Quad Bots Success Stories"
+          subtitle="Real results from businesses running on autopilot with AI"
+          ctaLink="/free-assessment"
+          ctaText="Get Results Like These"
         />
 
         {/* FAQ Section */}

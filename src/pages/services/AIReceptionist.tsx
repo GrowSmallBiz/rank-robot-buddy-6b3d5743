@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection, AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, BlogPost } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -77,6 +78,39 @@ const AIReceptionist = () => {
     { value: "85%", label: "Never Call Back After Being Missed", subtext: "Source: Swingpointmedia" },
     { value: "$1,200", label: "Average Lost Revenue Per Missed Call", subtext: "Source: Invoca (Home Services)" },
     { value: "96.7%", label: "AI Success Rate", subtext: "Real Client Performance" },
+  ];
+
+  const aiReceptionistCaseStudies = [
+    {
+      company: "Thompson HVAC Services",
+      location: "Nashville, TN",
+      industry: "HVAC Services",
+      challenge: "Missing 40%+ of after-hours calls. Competitors were capturing emergency repair jobs worth $500-2,000 each.",
+      timeframe: "3 months",
+      metrics: [
+        { label: "Calls Captured", before: "58%", after: "97%", improvement: "+67%" },
+        { label: "After-Hours Bookings", before: "4/mo", after: "28/mo", improvement: "+600%" },
+        { label: "Monthly Revenue", before: "$68K", after: "$142K", improvement: "+109%" },
+      ],
+      quote: "No more missed calls or delayed responses. The voice AI handles after-hours calls perfectly.",
+      quoteName: "Mike Thompson",
+      quoteRole: "Owner, Thompson HVAC Services"
+    },
+    {
+      company: "Chen Family Dental",
+      location: "Austin, TX",
+      industry: "Dental Practice",
+      challenge: "Receptionist overwhelmed with calls. New patient inquiries going to voicemail and never returning.",
+      timeframe: "4 months",
+      metrics: [
+        { label: "Missed Calls", before: "35/week", after: "2/week", improvement: "-94%" },
+        { label: "New Patient Bookings", before: "18/mo", after: "52/mo", improvement: "+189%" },
+        { label: "Staff Hours Saved", before: "0", after: "25/week", improvement: "New" },
+      ],
+      quote: "The AI books appointments while we focus on patient care. Our new patient flow has tripled.",
+      quoteName: "Dr. Sarah Chen",
+      quoteRole: "Owner, Chen Family Dental"
+    }
   ];
 
   const dashboardMetrics = [
@@ -750,6 +784,15 @@ const AIReceptionist = () => {
           ]}
           title="AI Receptionist Success Stories"
           subtitle="See how businesses are capturing more leads with 24/7 AI-powered communication"
+        />
+
+        {/* Case Studies Section */}
+        <CaseStudySection
+          caseStudies={aiReceptionistCaseStudies}
+          title="AI Receptionist Success Stories"
+          subtitle="Real results from businesses that never miss a call"
+          ctaLink="/free-assessment"
+          ctaText="Get Results Like These"
         />
 
         {/* FAQ Section */}

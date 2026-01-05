@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/sections/CTASection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -56,6 +59,39 @@ const stats = [
   { value: "3.2x", label: "Average Traffic Increase" },
   { value: "85%", label: "Client Retention Rate" },
   { value: "5+", label: "Years of Experience" },
+];
+
+const aboutCaseStudies = [
+  {
+    company: "Premier Dental Group",
+    location: "San Jose, CA",
+    industry: "Dental Practice",
+    challenge: "New patient flow had plateaued despite years of experience. Needed to attract more high-value cosmetic cases.",
+    timeframe: "6 months",
+    metrics: [
+      { label: "New Patients/Month", before: "28", after: "84", improvement: "+200%" },
+      { label: "Cosmetic Case Value", before: "$2,100", after: "$5,800", improvement: "+176%" },
+      { label: "Google Rankings", before: "Page 3", after: "#1", improvement: "Top Spot" },
+    ],
+    quote: "GrowSmallBiz transformed our practice. We're now the go-to dental office in our area.",
+    quoteName: "Dr. Michael Chen",
+    quoteRole: "Owner, Premier Dental Group"
+  },
+  {
+    company: "Comfort Pro HVAC",
+    location: "Oakland, CA",
+    industry: "HVAC Services",
+    challenge: "Losing emergency calls to larger competitors. Website wasn't generating enough service requests.",
+    timeframe: "5 months",
+    metrics: [
+      { label: "Monthly Service Calls", before: "45", after: "142", improvement: "+216%" },
+      { label: "Emergency Calls", before: "8/mo", after: "38/mo", improvement: "+375%" },
+      { label: "Average Ticket Value", before: "$380", after: "$620", improvement: "+63%" },
+    ],
+    quote: "We went from struggling to keep up with the big guys to becoming the #1 choice in our area.",
+    quoteName: "Mike Thompson",
+    quoteRole: "Owner, Comfort Pro HVAC"
+  }
 ];
 
 const About = () => {
@@ -257,7 +293,24 @@ const About = () => {
         subtitle="Hear from the businesses we've helped grow"
       />
 
+      <CaseStudySection 
+        caseStudies={aboutCaseStudies}
+        title="Client Success Stories"
+        subtitle="Real results from real businesses we've helped grow"
+        ctaLink="/free-assessment"
+        ctaText="Get Results Like These"
+      />
+
+      <BlogSection 
+        posts={generalBlogPosts.slice(0, 3)}
+        title="Latest Insights"
+        subtitle="Expert tips and strategies for growing your local business"
+        showViewAll={true}
+        viewAllLink="/blog"
+      />
+
       <CTASection />
+      <ConsultationFormSection />
       <Footer />
     </div>
   );

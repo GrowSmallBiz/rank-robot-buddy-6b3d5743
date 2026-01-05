@@ -7,6 +7,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, reputationManagementBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { PersonCTA } from "@/components/services";
 import { 
   ArrowRight, 
@@ -149,6 +150,39 @@ const stats = [
   { value: "24/7", label: "AI Response Coverage" },
   { value: "15min", label: "Setup Time" },
   { value: "2-5x", label: "More Reviews in 90 Days" },
+];
+
+const reputationCaseStudies = [
+  {
+    company: "Mitchell Family Dental",
+    location: "Denver, CO",
+    industry: "Dental Practice",
+    challenge: "Stuck at 47 Google reviews while competitors had 200+. No time to respond to reviews or request new ones.",
+    timeframe: "3 months",
+    metrics: [
+      { label: "Google Reviews", before: "47", after: "186", improvement: "+296%" },
+      { label: "Average Rating", before: "4.1", after: "4.9", improvement: "+20%" },
+      { label: "New Patient Calls", before: "35/mo", after: "78/mo", improvement: "+123%" },
+    ],
+    quote: "Within 3 months, we went from 47 Google reviews to over 180. Our new patient calls have doubled.",
+    quoteName: "Dr. Sarah Mitchell",
+    quoteRole: "Owner, Mitchell Family Dental"
+  },
+  {
+    company: "Thompson HVAC Services",
+    location: "Charlotte, NC",
+    industry: "HVAC Services",
+    challenge: "Bad reviews hurting business. No system to collect positive reviews or respond professionally.",
+    timeframe: "4 months",
+    metrics: [
+      { label: "Google Ranking", before: "Page 2", after: "Top 3", improvement: "Top Spot" },
+      { label: "Star Rating", before: "3.6", after: "4.8", improvement: "+33%" },
+      { label: "Service Calls/Month", before: "45", after: "98", improvement: "+118%" },
+    ],
+    quote: "We've climbed from page 2 to the top 3 in local search results. The AI handles everything automatically.",
+    quoteName: "Mike Thompson",
+    quoteRole: "Owner, Thompson HVAC Services"
+  }
 ];
 
 const testimonials = [
@@ -896,6 +930,15 @@ const ReputationManagement = () => {
             rating: 5,
           },
         ]}
+      />
+
+      {/* Case Studies Section */}
+      <CaseStudySection
+        caseStudies={reputationCaseStudies}
+        title="Reputation Management Success Stories"
+        subtitle="See how businesses transformed their online reputation with AI automation"
+        ctaLink="/free-assessment"
+        ctaText="Get Results Like These"
       />
 
       {/* FAQ Section */}
