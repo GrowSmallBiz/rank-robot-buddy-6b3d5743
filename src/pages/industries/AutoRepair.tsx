@@ -22,6 +22,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, autoRepairBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { PersonCTA } from "@/components/services";
 import autoRepairHeroImage from "@/assets/industry-autorepair-hero.jpg";
 
 const benefits = [
@@ -395,28 +396,14 @@ const AutoRepair = () => {
         showViewAll={false}
       />
 
-      {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-primary opacity-10" />
-        <div className="absolute inset-0 hero-glow" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Ready to Fill Your Bays?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Get a free SEO audit and see how to outrank chains and attract more customers.
-            </p>
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/free-assessment?industry=auto">
-                Get Your Free Shop Audit
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* PersonCTA Section */}
+      <PersonCTA
+        title="Ready to Fill Your Bays?"
+        description="Get a free SEO audit and see how to outrank chains and attract more customers to your auto repair shop."
+        buttonHref="/free-assessment?industry=auto"
+        buttonText="Get Your Free Shop Audit"
+        sectionClassName="py-12 bg-section-dark"
+      />
 
       <ConsultationFormSection />
       <Footer />
