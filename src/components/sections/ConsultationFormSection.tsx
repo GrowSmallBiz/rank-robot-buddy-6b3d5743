@@ -82,7 +82,7 @@ export const ConsultationFormSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+    <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#191321' }}>
       {/* Gradient border glow effect */}
       <div className="absolute inset-0 p-[2px] rounded-lg pointer-events-none">
         <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
