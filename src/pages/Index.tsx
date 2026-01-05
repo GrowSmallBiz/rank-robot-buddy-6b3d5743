@@ -473,41 +473,41 @@ const Index = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-background/80 border border-ghl-icon rounded-xl p-6 space-y-4 animate-fade-up relative transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                style={{ animationDelay: `${index * 0.05}s` }}
+                className="backdrop-blur-sm rounded-2xl p-6 space-y-4 animate-fade-up relative transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+                style={{ animationDelay: `${index * 0.05}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}
               >
                 {service.comingSoon && (
                   <div className="absolute -top-3 right-4 px-3 py-1 bg-muted text-muted-foreground text-xs font-medium rounded-full">
                     Coming Soon
                   </div>
                 )}
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center">
+                  <service.icon className="w-6 h-6 text-ghl-icon" />
                 </div>
-                <h3 className="font-display font-semibold text-foreground text-lg">{service.title}</h3>
+                <h3 className="font-display font-semibold text-foreground text-xl">{service.title}</h3>
                 <p className="text-sm text-muted-foreground">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.slice(0, 4).map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-ghl-icon shrink-0 mt-0.5" />
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
                 {service.external ? (
                   <a href={service.href} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm" className="w-full mt-4">
+                    <Button variant="outline" size="sm" className="w-full mt-4 border-ghl-icon/50 hover:bg-ghl-icon/10 hover:border-ghl-icon">
                       Learn More
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </a>
                 ) : !service.comingSoon && (
                   <Link to={service.href}>
-                    <Button variant="outline" size="sm" className="w-full mt-4">
+                    <Button variant="outline" size="sm" className="w-full mt-4 border-ghl-icon/50 hover:bg-ghl-icon/10 hover:border-ghl-icon">
                       Learn More
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
