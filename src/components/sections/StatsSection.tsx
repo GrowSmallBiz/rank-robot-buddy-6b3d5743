@@ -21,7 +21,7 @@ export const StatsSection = () => {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/15 border border-primary/30 text-primary mb-5 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,127,80,0.4)] group-hover:bg-primary/25">
                 <stat.icon className="w-6 h-6" />
               </div>
-              <p className="text-4xl md:text-5xl font-display font-bold text-primary mb-2 tracking-tight">
+              <p className="text-4xl md:text-5xl font-display font-bold mb-2 tracking-tight" style={{ color: '#FC8253' }}>
                 {stat.value}
               </p>
               <p className="text-sm text-slate-400 font-medium">{stat.label}</p>
