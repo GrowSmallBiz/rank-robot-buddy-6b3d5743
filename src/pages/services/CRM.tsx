@@ -877,6 +877,15 @@ const CRM = () => {
 
         <AnimatedStatsSection stats={crmStats} columns={4} />
 
+        {/* Blog Section */}
+        <BlogSection
+          posts={generalBlogPosts.slice(0, 3)}
+          title="CRM & Sales Automation Insights"
+          subtitle="Expert strategies to streamline your sales process and close more deals"
+          showViewAll={true}
+          viewAllLink="/blog"
+        />
+
         {/* FAQ Section */}
         <FAQSection
           title="Frequently Asked Questions"
@@ -888,15 +897,6 @@ const CRM = () => {
             description: "We're here to help! Reach out to us for a personalized consultation.",
             tagline: "Let's streamline your sales process together.",
           }}
-        />
-
-        {/* Blog Section */}
-        <BlogSection
-          posts={generalBlogPosts.slice(0, 3)}
-          title="CRM & Sales Automation Insights"
-          subtitle="Expert strategies to streamline your sales process and close more deals"
-          showViewAll={true}
-          viewAllLink="/blog"
         />
 
         {/* CTA Section */}
