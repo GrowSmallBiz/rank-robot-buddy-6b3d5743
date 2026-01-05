@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, onPageSeoBlogPosts } from "@/components/sections/BlogSection";
@@ -10,6 +11,27 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search, TrendingUp, Eye, Clock } from "lucide-react";
 import onPageSeoImage from "@/assets/on-page-seo.png";
+
+const onPageSeoTestimonials = [
+  {
+    quote: "Our content optimization doubled our organic traffic in 90 days. Every page now ranks for its target keywords.",
+    author: "Sarah Mitchell",
+    role: "Content Director",
+    company: "SaaS Solutions Inc.",
+  },
+  {
+    quote: "The on-page audit revealed quick wins we were missing. Simple title tag changes alone brought 40% more clicks.",
+    author: "Marcus Chen",
+    role: "Marketing Manager",
+    company: "Tech Startup Co.",
+  },
+  {
+    quote: "Our blog posts now consistently rank in the top 5. The structured approach to content optimization works.",
+    author: "Emily Rodriguez",
+    role: "Head of SEO",
+    company: "Digital Agency Pro",
+  },
+];
 
 const onPageSeoStats = [
   { value: "40%", label: "Avg. Traffic Increase", icon: TrendingUp },
@@ -229,6 +251,12 @@ const OnPageSEO = () => {
       </section>
 
       <AnimatedStatsSection stats={onPageSeoStats} columns={4} />
+
+      <TestimonialsSection 
+        testimonials={onPageSeoTestimonials}
+        title="On-Page SEO Success Stories"
+        subtitle="See how strategic content optimization drives results"
+      />
 
       <PlatformAdvantagesSection variant="compact" serviceType="onpage" />
 

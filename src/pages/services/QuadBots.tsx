@@ -2,6 +2,28 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+
+const quadBotsTestimonials = [
+  {
+    quote: "The AI bots respond to leads instantly while I sleep. We've tripled our qualified appointments without hiring anyone.",
+    author: "Mike Thompson",
+    role: "Owner",
+    company: "Thompson HVAC",
+  },
+  {
+    quote: "No more missed calls or delayed responses. The voice AI handles after-hours calls perfectly.",
+    author: "Dr. Sarah Chen",
+    role: "Practice Owner",
+    company: "Chen Family Dental",
+  },
+  {
+    quote: "The lead qualification bot saves us 15+ hours per week. Only serious buyers get through to our sales team.",
+    author: "James Rodriguez",
+    role: "Sales Director",
+    company: "Premium Roofing Co.",
+  },
+];
 import { 
   ServiceHero, 
   SectionHeader, 
@@ -379,6 +401,12 @@ const QuadBots = () => {
 
 
         <AnimatedStatsSection stats={quadBotsStats} columns={4} />
+
+        <TestimonialsSection 
+          testimonials={quadBotsTestimonials}
+          title="AI Automation Success Stories"
+          subtitle="See how businesses automate lead follow-up and grow revenue"
+        />
 
         {/* FAQ Section */}
         <FAQSection

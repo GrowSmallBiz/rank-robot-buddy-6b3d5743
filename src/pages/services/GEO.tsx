@@ -3,12 +3,35 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain, TrendingUp, Eye, Clock, Zap } from "lucide-react";
+
+const geoTestimonials = [
+  {
+    quote: "ChatGPT now recommends our law firm for personal injury cases in our city. This is the future of discovery and we're ahead of it.",
+    author: "Robert Martinez",
+    role: "Managing Partner",
+    company: "Martinez Legal Group",
+  },
+  {
+    quote: "We're getting cited by AI assistants as the go-to source for luxury home renovations. GEO has been a game-changer.",
+    author: "Jennifer Walsh",
+    role: "CEO",
+    company: "Elite Home Remodeling",
+  },
+  {
+    quote: "Our entity visibility in AI platforms went from 0 to being cited in 60% of relevant queries. Incredible ROI.",
+    author: "Dr. Michael Kim",
+    role: "Practice Owner",
+    company: "Kim Dermatology",
+  },
+];
+
 import geoServiceImage from "@/assets/geo-service.png";
 
 const geoStats = [
@@ -210,6 +233,12 @@ const GEO = () => {
       </section>
 
       <AnimatedStatsSection stats={geoStats} columns={4} />
+
+      <TestimonialsSection 
+        testimonials={geoTestimonials}
+        title="GEO Success Stories"
+        subtitle="See how businesses are winning in AI-powered search"
+      />
 
       <PlatformAdvantagesSection variant="compact" serviceType="geo" />
 

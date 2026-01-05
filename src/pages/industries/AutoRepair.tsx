@@ -17,6 +17,7 @@ import {
   Wrench
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, autoRepairBlogPosts } from "@/components/sections/BlogSection";
@@ -84,19 +85,25 @@ const results = [
   { metric: "4.8", label: "Average Google rating achieved" }
 ];
 
-const testimonials = [
+const autoRepairTestimonials = [
   {
     quote: "We went from 8-10 repair jobs a day to consistently 20+. GrowSmallBiz made us the go-to shop in our area.",
     author: "Tony Rodriguez",
     role: "Owner",
-    company: "Rodriguez Auto Care"
+    company: "Rodriguez Auto Care",
   },
   {
     quote: "Finally competing with the big chains. We now rank #1 for 'brake repair' and 'transmission service' in our city.",
     author: "Steve Mitchell",
     role: "General Manager",
-    company: "Mitchell's Auto Service"
-  }
+    company: "Mitchell's Auto Service",
+  },
+  {
+    quote: "Our service bays are now fully booked. Online leads went from 5 per week to 25+ per week.",
+    author: "Maria Garcia",
+    role: "Owner",
+    company: "Garcia's Complete Auto Care",
+  },
 ];
 
 const faqs = [
@@ -360,40 +367,11 @@ const AutoRepair = () => {
         ctaText="Get Results Like These"
       />
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-card/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              What Shop Owners Say
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-2xl p-8"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-foreground text-lg mb-6 italic">
-                  "{testimonial.quote}"
-                </p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}, {testimonial.company}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection 
+        testimonials={autoRepairTestimonials}
+        title="What Shop Owners Say"
+        subtitle="See how auto repair shops dominate their local markets"
+      />
 
       {/* FAQ Section */}
       <FAQSection 

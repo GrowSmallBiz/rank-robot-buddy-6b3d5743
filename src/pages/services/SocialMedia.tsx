@@ -4,7 +4,29 @@ import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
+
+const socialMediaTestimonials = [
+  {
+    quote: "Our Instagram went from 500 to 15,000 engaged followers. Now it's our #1 source for new patient inquiries.",
+    author: "Dr. Amanda Park",
+    role: "Medical Director",
+    company: "Glow Aesthetics",
+  },
+  {
+    quote: "The content calendar and strategy transformed our brand. We're now seen as the premium choice in our market.",
+    author: "Robert Kim",
+    role: "Owner",
+    company: "Kim Law Group",
+  },
+  {
+    quote: "Consistent posting with their strategy doubled our engagement and brought in high-quality leads every week.",
+    author: "Lisa Chen",
+    role: "Marketing Manager",
+    company: "Elite Dental Care",
+  },
+];
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { 
@@ -683,6 +705,12 @@ const SocialMedia = () => {
       </section>
 
       <AnimatedStatsSection stats={socialMediaStats} columns={4} />
+
+      <TestimonialsSection 
+        testimonials={socialMediaTestimonials}
+        title="Social Media Success Stories"
+        subtitle="See how businesses grow their brand presence and engagement"
+      />
 
       {/* FAQ Section */}
       <FAQSection
