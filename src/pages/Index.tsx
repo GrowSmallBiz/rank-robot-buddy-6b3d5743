@@ -579,6 +579,15 @@ const Index = () => {
       {/* Testimonials */}
       <TestimonialsSection />
 
+      {/* Blog Section */}
+      <BlogSection 
+        posts={homepageBlogPosts}
+        title="Latest Insights From Our Experts"
+        subtitle="Expert tips and strategies to grow your local service business"
+        showViewAll={true}
+        viewAllLink="/blog"
+      />
+
       {/* FAQ Section */}
       <FAQSection 
         title="Frequently Asked Questions"
@@ -590,15 +599,6 @@ const Index = () => {
           description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's grow your business together.",
         }}
-      />
-
-      {/* Blog Section */}
-      <BlogSection 
-        posts={homepageBlogPosts}
-        title="Latest Insights From Our Experts"
-        subtitle="Expert tips and strategies to grow your local service business"
-        showViewAll={true}
-        viewAllLink="/blog"
       />
 
       {/* Final PersonCTA */}
