@@ -1200,6 +1200,23 @@ const HomeServices = () => {
               description="Comprehensive SEO strategy covering keyword research, competitor analysis, technical optimization, and AI search visibility."
             />
 
+            {/* SEO Dashboard Metrics Image */}
+            <div className="mb-12">
+              <div className="text-center mb-6">
+                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+                  Your Complete SEO Command Center
+                </h3>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Track domain authority, AI platform visibility across ChatGPT, Gemini & more, plus holistic SEO health—all in one unified dashboard.
+                </p>
+              </div>
+              <img 
+                src={seoDashboardMetrics} 
+                alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
+                className="w-full rounded-2xl border border-primary/30 shadow-2xl"
+              />
+            </div>
+
             {/* Why AI Search Ranking Matters - Hero Banner */}
             <div className="mb-16 p-8 md:p-12 bg-gradient-to-br from-primary/20 via-purple-500/10 to-blue-500/10 rounded-3xl border border-primary/30 relative overflow-hidden">
               {/* Background Pattern */}
@@ -1326,23 +1343,6 @@ const HomeServices = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* SEO Dashboard Metrics Image */}
-            <div className="mt-12 mb-12">
-              <div className="text-center mb-6">
-                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
-                  Your Complete SEO Command Center
-                </h3>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Track domain authority, AI platform visibility across ChatGPT, Gemini & more, plus holistic SEO health—all in one unified dashboard.
-                </p>
-              </div>
-              <img 
-                src={seoDashboardMetrics} 
-                alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
-                className="w-full rounded-2xl border border-primary/30 shadow-2xl"
-              />
             </div>
 
             {/* Visual Flow Diagram */}
