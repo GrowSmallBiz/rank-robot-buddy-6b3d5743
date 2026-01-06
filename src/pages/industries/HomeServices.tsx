@@ -232,12 +232,22 @@ const colorConfig = {
   }
 };
 
-// Essential Stack Tabs Data
+// Essential Stack Tabs Data with unique colors
 const essentialStackTabs = [
   {
     id: "website-seo",
     label: "Website & SEO",
     icon: Monitor,
+    color: "blue",
+    colorClasses: {
+      bg: "bg-blue-500",
+      bgLight: "bg-blue-500/10",
+      bgGradient: "from-blue-500/20 via-blue-500/10 to-cyan-500/5",
+      text: "text-blue-500",
+      border: "border-blue-500/30",
+      hover: "hover:border-blue-500",
+      statText: "text-blue-500"
+    },
     title: "Responsive Website & AI-Powered SEO",
     subtitle: "Your Digital Foundation",
     description: "A fast, mobile-first website paired with comprehensive SEO strategy covering traditional search, local pack, and AI-powered search assistants.",
@@ -254,12 +264,22 @@ const essentialStackTabs = [
       { value: "40%", label: "AI search visibility" }
     ],
     href: "/services/ai-seo-hub",
-    image: null
+    visualIcons: [Globe, Search, BarChart3, Target]
   },
   {
     id: "paid-search",
     label: "Paid Search",
     icon: Search,
+    color: "green",
+    colorClasses: {
+      bg: "bg-green-500",
+      bgLight: "bg-green-500/10",
+      bgGradient: "from-green-500/20 via-green-500/10 to-emerald-500/5",
+      text: "text-green-500",
+      border: "border-green-500/30",
+      hover: "hover:border-green-500",
+      statText: "text-green-500"
+    },
     title: "Google PPC, LSA & Meta Ads",
     subtitle: "Immediate Visibility",
     description: "Strategic paid advertising across Google, Meta, and local platforms to generate qualified leads from day one.",
@@ -276,12 +296,22 @@ const essentialStackTabs = [
       { value: "$23", label: "Avg cost per lead" }
     ],
     href: "/services/paid-media",
-    image: null
+    visualIcons: [Megaphone, Shield, MousePointerClick, TrendingUp]
   },
   {
     id: "retargeting",
     label: "Retargeting",
     icon: RefreshCw,
+    color: "purple",
+    colorClasses: {
+      bg: "bg-purple-500",
+      bgLight: "bg-purple-500/10",
+      bgGradient: "from-purple-500/20 via-purple-500/10 to-violet-500/5",
+      text: "text-purple-500",
+      border: "border-purple-500/30",
+      hover: "hover:border-purple-500",
+      statText: "text-purple-500"
+    },
     title: "Retargeting & Remarketing",
     subtitle: "Stay Top-of-Mind",
     description: "Re-engage website visitors who didn't convert with strategic follow-up ads across all platforms. Perfect for high-ticket services with longer decision cycles.",
@@ -298,12 +328,22 @@ const essentialStackTabs = [
       { value: "50%", label: "Lower acquisition cost" }
     ],
     href: "/services/paid-media",
-    image: null
+    visualIcons: [Eye, Users, Target, RefreshCw]
   },
   {
     id: "directories",
     label: "Online Directories",
     icon: FolderOpen,
+    color: "amber",
+    colorClasses: {
+      bg: "bg-amber-500",
+      bgLight: "bg-amber-500/10",
+      bgGradient: "from-amber-500/20 via-amber-500/10 to-orange-500/5",
+      text: "text-amber-500",
+      border: "border-amber-500/30",
+      hover: "hover:border-amber-500",
+      statText: "text-amber-500"
+    },
     title: "Citation Building & Directory Management",
     subtitle: "Be Found Everywhere",
     description: "Comprehensive directory submissions and citation building to boost local search rankings and ensure consistent NAP (Name, Address, Phone) across 100+ platforms.",
@@ -320,12 +360,22 @@ const essentialStackTabs = [
       { value: "95%", label: "NAP consistency" }
     ],
     href: "/services/local-seo",
-    image: null
+    visualIcons: [MapPin, Globe, FileSearch, CheckCircle2]
   },
   {
     id: "repeat-referral",
     label: "Repeat & Referral",
     icon: Repeat,
+    color: "pink",
+    colorClasses: {
+      bg: "bg-pink-500",
+      bgLight: "bg-pink-500/10",
+      bgGradient: "from-pink-500/20 via-pink-500/10 to-rose-500/5",
+      text: "text-pink-500",
+      border: "border-pink-500/30",
+      hover: "hover:border-pink-500",
+      statText: "text-pink-500"
+    },
     title: "Repeat Business & Referral Programs",
     subtitle: "Keep Customers Coming Back",
     description: "Automated systems to turn one-time customers into loyal repeat clients and brand advocates who refer friends and family.",
@@ -342,12 +392,22 @@ const essentialStackTabs = [
       { value: "35%", label: "Referral rate increase" }
     ],
     href: "/services/reputation-management",
-    image: null
+    visualIcons: [Heart, Star, Users, MessageCircle]
   },
   {
     id: "pay-per-lead",
     label: "Pay Per Lead",
     icon: DollarSign,
+    color: "emerald",
+    colorClasses: {
+      bg: "bg-emerald-500",
+      bgLight: "bg-emerald-500/10",
+      bgGradient: "from-emerald-500/20 via-emerald-500/10 to-green-500/5",
+      text: "text-emerald-500",
+      border: "border-emerald-500/30",
+      hover: "hover:border-emerald-500",
+      statText: "text-emerald-500"
+    },
     title: "Pay-Per-Lead Platforms",
     subtitle: "Only Pay for Results",
     description: "Strategic management of pay-per-lead platforms like Google LSA, Thumbtack, and HomeAdvisor to maximize ROI while minimizing wasted spend.",
@@ -364,12 +424,22 @@ const essentialStackTabs = [
       { value: "67", label: "LSA leads/month avg" }
     ],
     href: "/services/paid-media",
-    image: null
+    visualIcons: [BadgeDollarSign, Shield, Zap, TrendingUp]
   },
   {
     id: "social-media",
     label: "Social Media",
     icon: Share2,
+    color: "cyan",
+    colorClasses: {
+      bg: "bg-cyan-500",
+      bgLight: "bg-cyan-500/10",
+      bgGradient: "from-cyan-500/20 via-cyan-500/10 to-blue-500/5",
+      text: "text-cyan-500",
+      border: "border-cyan-500/30",
+      hover: "hover:border-cyan-500",
+      statText: "text-cyan-500"
+    },
     title: "Social Media Management",
     subtitle: "Build Your Brand",
     description: "Professional social media presence across Facebook, Instagram, and YouTube to showcase your work, build trust, and stay connected with your community.",
@@ -386,12 +456,22 @@ const essentialStackTabs = [
       { value: "25%", label: "Lead attribution" }
     ],
     href: "/services/social-media",
-    image: null
+    visualIcons: [Instagram, Facebook, Play, Share2]
   },
   {
     id: "crm",
     label: "CRM",
     icon: Database,
+    color: "violet",
+    colorClasses: {
+      bg: "bg-violet-500",
+      bgLight: "bg-violet-500/10",
+      bgGradient: "from-violet-500/20 via-violet-500/10 to-purple-500/5",
+      text: "text-violet-500",
+      border: "border-violet-500/30",
+      hover: "hover:border-violet-500",
+      statText: "text-violet-500"
+    },
     title: "CRM & Marketing Automation",
     subtitle: "Never Lose a Lead",
     description: "Centralized customer relationship management with automated follow-ups, pipeline tracking, and seamless integration with all your marketing channels.",
@@ -408,7 +488,7 @@ const essentialStackTabs = [
       { value: "2x", label: "Conversion improvement" }
     ],
     href: "/services/crm",
-    image: null
+    visualIcons: [BarChart3, Smartphone, MessageCircle, Bot]
   }
 ];
 
@@ -991,16 +1071,20 @@ const HomeServices = () => {
             />
 
             <Tabs defaultValue="website-seo" className="w-full">
-              {/* Tab List - Scrollable on mobile */}
+              {/* Tab List - Scrollable on mobile with colorful icons */}
               <div className="relative mb-8">
-                <TabsList className="w-full h-auto flex flex-nowrap overflow-x-auto scrollbar-hide gap-1 bg-card/80 backdrop-blur-sm p-2 rounded-2xl border border-border justify-start lg:justify-center">
+                <TabsList className="w-full h-auto flex flex-nowrap overflow-x-auto scrollbar-hide gap-2 bg-card/80 backdrop-blur-sm p-3 rounded-2xl border border-border justify-start lg:justify-center">
                   {essentialStackTabs.map((tab) => (
                     <TabsTrigger
                       key={tab.id}
                       value={tab.id}
-                      className="flex-shrink-0 flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium transition-all data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg whitespace-nowrap"
+                      className={`flex-shrink-0 flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium transition-all whitespace-nowrap border border-transparent
+                        data-[state=inactive]:hover:bg-secondary/50
+                        data-[state=active]:${tab.colorClasses.bg} data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border-transparent`}
                     >
-                      <tab.icon className="w-4 h-4" />
+                      <div className={`w-6 h-6 rounded-lg flex items-center justify-center ${tab.colorClasses.bgLight} group-data-[state=active]:bg-white/20`}>
+                        <tab.icon className={`w-4 h-4 ${tab.colorClasses.text} data-[state=active]:text-white`} />
+                      </div>
                       <span className="hidden sm:inline">{tab.label}</span>
                       <span className="sm:hidden">{tab.label.split(' ')[0]}</span>
                     </TabsTrigger>
@@ -1013,16 +1097,16 @@ const HomeServices = () => {
               {/* Tab Content */}
               {essentialStackTabs.map((tab) => (
                 <TabsContent key={tab.id} value={tab.id} className="mt-0 animate-fade-up">
-                  <div className="bg-card rounded-2xl border border-border overflow-hidden">
+                  <div className={`bg-card rounded-2xl border ${tab.colorClasses.border} overflow-hidden`}>
                     <div className="grid lg:grid-cols-2 gap-0">
                       {/* Content Side */}
                       <div className="p-8 lg:p-10">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                            <tab.icon className="w-6 h-6 text-primary" />
+                        <div className="flex items-center gap-4 mb-6">
+                          <div className={`w-14 h-14 rounded-xl ${tab.colorClasses.bg} flex items-center justify-center shadow-lg`}>
+                            <tab.icon className="w-7 h-7 text-white" />
                           </div>
                           <div>
-                            <p className="text-xs font-semibold text-primary uppercase tracking-wider">{tab.subtitle}</p>
+                            <p className={`text-xs font-semibold ${tab.colorClasses.text} uppercase tracking-wider`}>{tab.subtitle}</p>
                             <h3 className="text-xl lg:text-2xl font-bold text-foreground">{tab.title}</h3>
                           </div>
                         </div>
@@ -1032,7 +1116,7 @@ const HomeServices = () => {
                         <ul className="space-y-3 mb-8">
                           {tab.features.map((feature, fIndex) => (
                             <li key={fIndex} className="flex items-start gap-3 text-sm text-foreground">
-                              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                              <CheckCircle2 className={`w-5 h-5 ${tab.colorClasses.text} flex-shrink-0 mt-0.5`} />
                               <span>{feature}</span>
                             </li>
                           ))}
@@ -1040,35 +1124,47 @@ const HomeServices = () => {
 
                         <Link 
                           to={tab.href}
-                          className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors"
+                          className={`inline-flex items-center gap-2 px-6 py-3 ${tab.colorClasses.bg} text-white rounded-xl font-medium hover:opacity-90 transition-all shadow-lg`}
                         >
                           Learn More
                           <ArrowRight className="w-4 h-4" />
                         </Link>
                       </div>
 
-                      {/* Stats/Visual Side */}
-                      <div className="bg-gradient-to-br from-primary/5 via-primary/10 to-accent/5 p-8 lg:p-10 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-border">
-                        <div className="grid grid-cols-2 gap-6 mb-8">
+                      {/* Stats/Visual Side with Icons Grid */}
+                      <div className={`bg-gradient-to-br ${tab.colorClasses.bgGradient} p-8 lg:p-10 flex flex-col justify-center border-t lg:border-t-0 lg:border-l ${tab.colorClasses.border}`}>
+                        {/* Visual Icons Grid */}
+                        <div className="grid grid-cols-4 gap-3 mb-8">
+                          {tab.visualIcons.map((VisualIcon, vIndex) => (
+                            <div 
+                              key={vIndex} 
+                              className={`aspect-square rounded-xl ${tab.colorClasses.bgLight} border ${tab.colorClasses.border} flex items-center justify-center transition-all hover:scale-105`}
+                            >
+                              <VisualIcon className={`w-6 h-6 ${tab.colorClasses.text}`} />
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Stats */}
+                        <div className="grid grid-cols-2 gap-4 mb-8">
                           {tab.stats.map((stat, sIndex) => (
-                            <div key={sIndex} className="text-center p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-border">
-                              <div className="text-3xl lg:text-4xl font-display font-bold text-primary mb-1">{stat.value}</div>
+                            <div key={sIndex} className={`text-center p-5 bg-card/90 backdrop-blur-sm rounded-xl border ${tab.colorClasses.border}`}>
+                              <div className={`text-3xl lg:text-4xl font-display font-bold ${tab.colorClasses.statText} mb-1`}>{stat.value}</div>
                               <div className="text-sm text-muted-foreground">{stat.label}</div>
                             </div>
                           ))}
                         </div>
                         
-                        {/* Visual Element */}
+                        {/* Pro Tip */}
                         <div className="relative">
-                          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl" />
-                          <div className="relative p-6 bg-card/90 backdrop-blur-sm rounded-2xl border border-primary/20">
-                            <div className="flex items-center gap-3 mb-4">
-                              <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
-                                <Zap className="w-5 h-5 text-green-500" />
+                          <div className={`absolute inset-0 ${tab.colorClasses.bg} opacity-10 rounded-2xl blur-xl`} />
+                          <div className={`relative p-5 bg-card/95 backdrop-blur-sm rounded-xl border ${tab.colorClasses.border}`}>
+                            <div className="flex items-center gap-3 mb-3">
+                              <div className={`w-8 h-8 rounded-lg ${tab.colorClasses.bg} flex items-center justify-center`}>
+                                <Zap className="w-4 h-4 text-white" />
                               </div>
                               <div>
                                 <div className="text-sm font-semibold text-foreground">Pro Tip</div>
-                                <div className="text-xs text-muted-foreground">From our experts</div>
                               </div>
                             </div>
                             <p className="text-sm text-muted-foreground">
