@@ -282,21 +282,51 @@ const foundationServices = [
   }
 ];
 
-// Optional Enhancement
-const enhancementService = {
-  icon: Bot,
-  title: "AI Receptionist",
-  subtitle: "Never Miss a Lead",
-  description: "24/7 AI-powered call answering that books appointments, qualifies leads, and handles emergencies—even when you're on a job.",
-  benefits: [
-    "Answer calls 24/7/365",
-    "Book appointments automatically",
-    "Handle emergency call escalation",
-    "Qualify leads before handoff",
-    "Integrate with your CRM"
-  ],
-  href: "/services/ai-receptionist"
-};
+// AI Communication Services (Core)
+const aiCommunicationServices = [
+  {
+    icon: Bot,
+    title: "AI Receptionist",
+    subtitle: "Never Miss a Lead",
+    description: "24/7 AI-powered call answering that books appointments, qualifies leads, and handles emergencies—even when you're on a job.",
+    features: [
+      "Answer calls 24/7/365",
+      "Book appointments automatically",
+      "Handle emergency call escalation",
+      "Qualify leads before handoff",
+      "Integrate with your CRM"
+    ],
+    href: "/services/ai-receptionist"
+  },
+  {
+    icon: MessageCircle,
+    title: "Conversational AI",
+    subtitle: "Engage on Every Channel",
+    description: "AI-powered chat that engages website visitors, answers questions, and converts them into qualified leads across all messaging platforms.",
+    features: [
+      "Website live chat widget",
+      "SMS text conversations",
+      "Facebook Messenger integration",
+      "Instant lead qualification",
+      "Seamless human handoff"
+    ],
+    href: "/services/ai-receptionist"
+  }
+];
+
+// Marketing Automation Network
+const automationNodes = [
+  { id: "landing", label: "Landing Page", icon: Monitor, x: 10, y: 30 },
+  { id: "forms", label: "Lead Forms", icon: FileSearch, x: 10, y: 60 },
+  { id: "ads", label: "Ad Campaign", icon: Megaphone, x: 40, y: 50 },
+  { id: "pipeline", label: "Pipeline Management", icon: TrendingUp, x: 40, y: 10 },
+  { id: "sms", label: "SMS Marketing", icon: Smartphone, x: 55, y: 25 },
+  { id: "reputation", label: "Reputation Management", icon: Star, x: 70, y: 10 },
+  { id: "social", label: "Social Media", icon: Share2, x: 80, y: 30 },
+  { id: "emails", label: "Nurturing Emails", icon: MessageCircle, x: 70, y: 60 },
+  { id: "newlead", label: "New Lead", icon: Users, x: 25, y: 45 },
+  { id: "purchase", label: "Purchase", icon: BadgeDollarSign, x: 40, y: 80 }
+];
 
 // AI SEO Details
 const aiSeoStrategy = {
@@ -779,45 +809,49 @@ const HomeServices = () => {
               ))}
             </div>
 
-            {/* Optional Enhancement - AI Receptionist */}
-            <div className="p-8 bg-gradient-to-br from-card to-secondary/50 rounded-2xl border border-border animate-fade-up">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="px-3 py-1 text-xs font-semibold bg-secondary text-muted-foreground rounded-full">
-                  Optional Enhancement
-                </span>
-              </div>
-              
-              <div className="grid lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Bot className="w-7 h-7 text-primary" />
+            {/* AI Communication Services - Core */}
+            <div className="grid md:grid-cols-2 gap-6">
+              {aiCommunicationServices.map((service, index) => (
+                <Link 
+                  key={index}
+                  to={service.href}
+                  className="group p-6 bg-gradient-to-br from-card to-primary/5 rounded-2xl border border-primary/30 hover:border-primary transition-all duration-300 hover:shadow-xl animate-fade-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full">
+                      Core Service
+                    </span>
+                  </div>
+                  
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <service.icon className="w-7 h-7 text-primary" />
                     </div>
-                    <div>
-                      <p className="text-xs font-semibold text-primary uppercase tracking-wider">{enhancementService.subtitle}</p>
-                      <h3 className="text-2xl font-bold text-foreground">{enhancementService.title}</h3>
+                    <div className="flex-1">
+                      <p className="text-xs font-semibold text-primary uppercase tracking-wider">{service.subtitle}</p>
+                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
                     </div>
                   </div>
                   
-                  <p className="text-muted-foreground mb-6">{enhancementService.description}</p>
+                  <p className="text-muted-foreground mb-4">{service.description}</p>
                   
-                  <Button variant="outline" asChild>
-                    <Link to={enhancementService.href} className="inline-flex items-center gap-2">
-                      See AI Receptionist in Action
-                      <Play className="w-4 h-4" />
-                    </Link>
-                  </Button>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  {enhancementService.benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-center gap-2 p-3 bg-background rounded-lg border border-border">
-                      <Zap className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span className="text-sm text-foreground">{benefit}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+                  <ul className="space-y-2 mb-4">
+                    {service.features.map((feature, fIndex) => (
+                      <li key={fIndex} className="flex items-center gap-2 text-sm text-foreground">
+                        <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <span className="inline-flex items-center text-primary font-medium text-sm group-hover:underline">
+                    Learn More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
@@ -995,6 +1029,147 @@ const HomeServices = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Marketing Automation Network Section */}
+        <section className="py-20 bg-gradient-to-br from-background via-primary/5 to-background overflow-hidden">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="How It All Connects"
+              title="Marketing Automation"
+              titleHighlight="Network"
+              description="See how all your marketing channels work together as an integrated system to capture, nurture, and convert leads."
+            />
+
+            {/* Network Diagram */}
+            <div className="relative max-w-5xl mx-auto">
+              {/* SVG Connection Lines */}
+              <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.3" />
+                    <stop offset="50%" stopColor="hsl(var(--primary))" stopOpacity="0.6" />
+                    <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.3" />
+                  </linearGradient>
+                </defs>
+                {/* Landing to New Lead */}
+                <line x1="18" y1="35" x2="28" y2="47" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Forms to New Lead */}
+                <line x1="18" y1="63" x2="28" y2="50" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* New Lead to Ads */}
+                <line x1="32" y1="48" x2="38" y2="52" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Ads to Pipeline */}
+                <line x1="45" y1="45" x2="45" y2="18" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Ads to SMS */}
+                <line x1="48" y1="48" x2="55" y2="32" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Pipeline to Reputation */}
+                <line x1="52" y1="15" x2="68" y2="15" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* SMS to Reputation */}
+                <line x1="62" y1="28" x2="68" y2="18" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* SMS to Social */}
+                <line x1="62" y1="28" x2="75" y2="32" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Social to Reputation */}
+                <line x1="78" y1="28" x2="75" y2="18" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Social to Emails */}
+                <line x1="80" y1="38" x2="75" y2="55" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Ads to Emails */}
+                <line x1="48" y1="55" x2="65" y2="60" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Emails to Purchase */}
+                <line x1="68" y1="65" x2="48" y2="78" stroke="url(#lineGradient)" strokeWidth="0.3" />
+                {/* Ads to Purchase */}
+                <line x1="42" y1="58" x2="42" y2="75" stroke="url(#lineGradient)" strokeWidth="0.3" />
+              </svg>
+
+              {/* Network Grid */}
+              <div className="relative aspect-[16/10] min-h-[500px]">
+                {automationNodes.map((node, index) => (
+                  <div
+                    key={node.id}
+                    className="absolute transform -translate-x-1/2 -translate-y-1/2 animate-fade-up"
+                    style={{ 
+                      left: `${node.x}%`, 
+                      top: `${node.y}%`,
+                      animationDelay: `${index * 0.08}s`
+                    }}
+                  >
+                    {/* Connection Node Circle */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-primary/50 rounded-full" />
+                    
+                    {/* Card */}
+                    <div className={`
+                      group relative px-4 py-3 bg-card/95 backdrop-blur-sm rounded-xl border border-border
+                      hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 
+                      transition-all duration-300 hover:scale-105 cursor-pointer
+                      ${node.id === 'ads' ? 'border-primary/50 shadow-lg shadow-primary/20 scale-105' : ''}
+                      ${node.id === 'purchase' ? 'border-green-500/50 bg-green-500/5' : ''}
+                    `}>
+                      <div className="flex items-center gap-2 whitespace-nowrap">
+                        <div className={`
+                          w-8 h-8 rounded-lg flex items-center justify-center
+                          ${node.id === 'ads' ? 'bg-primary text-primary-foreground' : ''}
+                          ${node.id === 'purchase' ? 'bg-green-500/20 text-green-500' : ''}
+                          ${node.id !== 'ads' && node.id !== 'purchase' ? 'bg-primary/10 text-primary group-hover:bg-primary/20' : ''}
+                        `}>
+                          <node.icon className="w-4 h-4" />
+                        </div>
+                        <span className={`
+                          text-sm font-semibold
+                          ${node.id === 'ads' ? 'text-primary' : ''}
+                          ${node.id === 'purchase' ? 'text-green-500' : ''}
+                          ${node.id !== 'ads' && node.id !== 'purchase' ? 'text-foreground' : ''}
+                        `}>
+                          {node.label}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Legend */}
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm">
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 rounded bg-primary" />
+                  <span className="text-muted-foreground">Central Hub (Ad Campaign)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 rounded bg-green-500/50" />
+                  <span className="text-muted-foreground">Conversion (Purchase)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-0.5 bg-gradient-to-r from-primary/30 via-primary/60 to-primary/30" />
+                  <span className="text-muted-foreground">Data Flow</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Automation Benefits */}
+            <div className="mt-16 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="p-6 bg-card rounded-2xl border border-border text-center animate-fade-up">
+                <div className="w-14 h-14 mx-auto rounded-xl bg-blue-500/10 flex items-center justify-center mb-4">
+                  <Zap className="w-7 h-7 text-blue-500" />
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">Instant Response</h3>
+                <p className="text-sm text-muted-foreground">Every lead gets immediate follow-up via SMS, email, or AI call—24/7.</p>
+              </div>
+              
+              <div className="p-6 bg-card rounded-2xl border border-border text-center animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                <div className="w-14 h-14 mx-auto rounded-xl bg-purple-500/10 flex items-center justify-center mb-4">
+                  <RefreshCw className="w-7 h-7 text-purple-500" />
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">Continuous Nurturing</h3>
+                <p className="text-sm text-muted-foreground">Automated sequences keep prospects engaged until they're ready to buy.</p>
+              </div>
+              
+              <div className="p-6 bg-card rounded-2xl border border-border text-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                <div className="w-14 h-14 mx-auto rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+                  <TrendingUp className="w-7 h-7 text-green-500" />
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">Higher Conversion</h3>
+                <p className="text-sm text-muted-foreground">Connected systems mean no leads fall through the cracks.</p>
+              </div>
             </div>
           </div>
         </section>
