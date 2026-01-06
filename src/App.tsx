@@ -24,6 +24,7 @@ import LinkedInOutreach from "./pages/services/LinkedInOutreach";
 import QuadBots from "./pages/services/QuadBots";
 import FreeAssessment from "./pages/FreeAssessment";
 import HVAC from "./pages/industries/HVAC";
+import HomeServices from "./pages/industries/HomeServices";
 import Dental from "./pages/industries/Dental";
 import MedSpa from "./pages/industries/MedSpa";
 import Chiropractor from "./pages/industries/Chiropractor";
@@ -61,6 +62,7 @@ const App = () => (
           <Route path="/services/quad-bots" element={<QuadBots />} />
           <Route path="/free-assessment" element={<FreeAssessment />} />
           <Route path="/industries/hvac" element={<HVAC />} />
+          <Route path="/industries/home-services" element={<HomeServices />} />
           <Route path="/industries/dental" element={<Dental />} />
           <Route path="/industries/med-spa" element={<MedSpa />} />
           <Route path="/industries/chiropractor" element={<Chiropractor />} />
