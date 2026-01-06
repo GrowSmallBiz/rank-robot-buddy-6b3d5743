@@ -7,7 +7,8 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield } from "lucide-react";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield, MapPin, Bot, Eye, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const aboutTestimonials = [
@@ -216,76 +217,19 @@ const About = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16 animate-fade-up">
-              <p className="text-primary font-medium mb-4">Why GrowSmallBiz?</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Built Different for Local Success
-              </h2>
-            </div>
-
-            <div className="space-y-6 animate-fade-up delay-100">
-              <div className="bg-card border border-border rounded-xl p-6 flex gap-6 items-start">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold">1</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
-                    Local-First Strategy
-                  </h3>
-                  <p className="text-muted-foreground">
-                    We understand the nuances of local search, Google Business Profile optimization, 
-                    and geo-targeted campaigns that drive foot traffic and local leads.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-card border border-border rounded-xl p-6 flex gap-6 items-start">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold">2</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
-                    AI-Ready Optimization
-                  </h3>
-                  <p className="text-muted-foreground">
-                    We prepare your business for the AI era with Answer Engine Optimization (AEO) 
-                    and Generative Engine Optimization (GEO), ensuring you're visible on ChatGPT, 
-                    Google AI, and other AI platforms.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-card border border-border rounded-xl p-6 flex gap-6 items-start">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                  <span className="text-primary font-bold">3</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
-                    Full-Funnel Integration
-                  </h3>
-                  <p className="text-muted-foreground">
-                    We don't just drive traffic—we combine SEO with retargeting and paid media 
-                    strategies to maximize conversions and reduce your cost per lead.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-12 animate-fade-up delay-200">
-              <Link to="/free-assessment">
-                <Button variant="hero" size="xl">
-                  Get Your Free SEO Assessment
-                  <ArrowRight className="w-5 h-5" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <WhyChooseSection 
+        title="Why Choose GrowSmallBiz for Local Business Growth"
+        subtitle="Built Different for Local Success"
+        description="We combine local-first strategy, AI-ready optimization, and full-funnel integration to help your business dominate your market."
+        items={[
+          { title: "Local-First Strategy", description: "We understand the nuances of local search, Google Business Profile optimization, and geo-targeted campaigns that drive foot traffic and local leads.", icon: MapPin },
+          { title: "AI-Ready Optimization", description: "We prepare your business for the AI era with AEO and GEO, ensuring you're visible on ChatGPT, Google AI, and other AI platforms.", icon: Bot },
+          { title: "Full-Funnel Integration", description: "We don't just drive traffic—we combine SEO with retargeting and paid media strategies to maximize conversions.", icon: TrendingUp },
+          { title: "Results-Driven Approach", description: "We measure success by your growth, not vanity metrics. Every strategy is designed to drive real business outcomes.", icon: Target },
+          { title: "Full Transparency", description: "No black boxes or hidden tactics. We explain exactly what we do, why we do it, and how it impacts your business.", icon: Eye },
+          { title: "Dedicated Support", description: "Get a dedicated Strategic Partner who champions your success, backed by a curated network of specialists.", icon: Users },
+        ]}
+      />
 
       <TestimonialsSection 
         testimonials={aboutTestimonials}
