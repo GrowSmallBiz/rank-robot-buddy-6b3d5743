@@ -405,6 +405,69 @@ const seoComponents = [
   }
 ];
 
+// Citation Directories Data
+const citationDirectories = [
+  { name: "Google Business Profile", category: "Essential", status: "submitted", da: 100 },
+  { name: "Yelp", category: "Essential", status: "submitted", da: 94 },
+  { name: "Facebook Business", category: "Essential", status: "submitted", da: 96 },
+  { name: "Apple Maps", category: "Essential", status: "submitted", da: 100 },
+  { name: "Bing Places", category: "Essential", status: "submitted", da: 93 },
+  { name: "Yellow Pages", category: "General", status: "submitted", da: 87 },
+  { name: "BBB", category: "Trust", status: "submitted", da: 91 },
+  { name: "Angi (Angie's List)", category: "Home Services", status: "submitted", da: 89 },
+  { name: "HomeAdvisor", category: "Home Services", status: "submitted", da: 88 },
+  { name: "Thumbtack", category: "Home Services", status: "submitted", da: 86 },
+  { name: "Houzz", category: "Home Services", status: "pending", da: 91 },
+  { name: "Nextdoor", category: "Local", status: "submitted", da: 92 },
+  { name: "Manta", category: "General", status: "submitted", da: 72 },
+  { name: "MapQuest", category: "Maps", status: "submitted", da: 81 },
+  { name: "Foursquare", category: "Local", status: "pending", da: 84 },
+  { name: "Superpages", category: "General", status: "submitted", da: 68 },
+  { name: "Citysearch", category: "Local", status: "submitted", da: 71 },
+  { name: "Local.com", category: "Local", status: "pending", da: 64 },
+  { name: "Hotfrog", category: "General", status: "submitted", da: 58 },
+  { name: "Brownbook", category: "General", status: "submitted", da: 61 },
+  { name: "Cylex", category: "General", status: "pending", da: 55 },
+  { name: "eLocal", category: "Local", status: "submitted", da: 52 },
+  { name: "ShowMeLocal", category: "Local", status: "submitted", da: 48 },
+  { name: "Chamber of Commerce", category: "Trust", status: "pending", da: 76 },
+  { name: "Alignable", category: "B2B", status: "submitted", da: 67 },
+  { name: "Merchantcircle", category: "General", status: "submitted", da: 54 },
+  { name: "2FindLocal", category: "Local", status: "pending", da: 41 },
+  { name: "US City", category: "Local", status: "submitted", da: 45 },
+  { name: "Tupalo", category: "General", status: "submitted", da: 52 },
+  { name: "Spoke", category: "B2B", status: "pending", da: 49 }
+];
+
+// Interactive Heatmap Data
+const heatmapData = [
+  { position: 1, rank: 1, keyword: "HVAC repair", you: 1, competitor: 3, location: "Downtown" },
+  { position: 2, rank: 2, keyword: "AC installation", you: 2, competitor: 1, location: "Midtown" },
+  { position: 3, rank: 1, keyword: "Furnace repair", you: 1, competitor: 4, location: "West Side" },
+  { position: 4, rank: 7, keyword: "HVAC maintenance", you: 7, competitor: 2, location: "North End" },
+  { position: 5, rank: 12, keyword: "Emergency AC", you: 12, competitor: 5, location: "East District" },
+  { position: 6, rank: 3, keyword: "Heating repair", you: 3, competitor: 6, location: "Suburbs North" },
+  { position: 7, rank: 1, keyword: "AC tune-up", you: 1, competitor: 8, location: "Business District" },
+  { position: 8, rank: 2, keyword: "Ductwork", you: 2, competitor: 4, location: "Industrial Zone" },
+  { position: 9, rank: 4, keyword: "Heat pump", you: 4, competitor: 1, location: "Residential East" },
+  { position: 10, rank: 6, keyword: "HVAC contractor", you: 6, competitor: 3, location: "South Side" },
+  { position: 11, rank: 1, keyword: "Furnace install", you: 1, competitor: 7, location: "Central" },
+  { position: 12, rank: 1, keyword: "AC repair near me", you: 1, competitor: 2, location: "Core Area" },
+  { position: 13, rank: 1, keyword: "24/7 HVAC", you: 1, competitor: 9, location: "Metro Center" },
+  { position: 14, rank: 2, keyword: "Cooling service", you: 2, competitor: 3, location: "Uptown" },
+  { position: 15, rank: 3, keyword: "Heating install", you: 3, competitor: 1, location: "Heights" },
+  { position: 16, rank: 8, keyword: "Commercial HVAC", you: 8, competitor: 2, location: "Warehouse Dist" },
+  { position: 17, rank: 4, keyword: "Residential AC", you: 4, competitor: 5, location: "Suburbs South" },
+  { position: 18, rank: 2, keyword: "Air quality", you: 2, competitor: 4, location: "Green Zone" },
+  { position: 19, rank: 1, keyword: "HVAC service", you: 1, competitor: 6, location: "Town Center" },
+  { position: 20, rank: 5, keyword: "Thermostat", you: 5, competitor: 2, location: "Tech Park" },
+  { position: 21, rank: 14, keyword: "Mini split", you: 14, competitor: 3, location: "Outer Ring" },
+  { position: 22, rank: 9, keyword: "Vent cleaning", you: 9, competitor: 1, location: "Airport Area" },
+  { position: 23, rank: 3, keyword: "Heating company", you: 3, competitor: 4, location: "Lakeside" },
+  { position: 24, rank: 6, keyword: "AC company", you: 6, competitor: 2, location: "Riverside" },
+  { position: 25, rank: 11, keyword: "HVAC emergency", you: 11, competitor: 4, location: "Far East" }
+];
+
 // Paid Media Details
 const paidMediaStrategy = {
   title: "Paid Media Strategy",
@@ -1068,66 +1131,238 @@ const HomeServices = () => {
                 </div>
               </div>
 
-              {/* Local SEO Heatmap Visual */}
+              {/* Interactive Local SEO Heatmap */}
               <div className="mt-12 p-8 bg-gradient-to-br from-green-500/10 via-card to-blue-500/10 rounded-2xl border border-border">
-                <div className="grid lg:grid-cols-2 gap-8 items-center">
-                  {/* Heatmap Visualization */}
+                <h4 className="text-xl font-bold mb-2 text-foreground flex items-center gap-2">
+                  <BarChart3 className="w-6 h-6 text-green-500" />
+                  Interactive Local SEO Heatmap
+                </h4>
+                <p className="text-sm text-muted-foreground mb-6">Hover over any grid cell to see ranking data and competitor positions</p>
+                
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  {/* Interactive Heatmap Grid */}
                   <div className="relative">
-                    <h4 className="text-lg font-bold mb-4 text-foreground flex items-center gap-2">
-                      <BarChart3 className="w-5 h-5 text-green-500" />
-                      Local SEO Heatmap Tracking
-                    </h4>
-                    
-                    {/* Grid Visualization */}
-                    <div className="grid grid-cols-5 gap-1 mb-4">
-                      {[
-                        "bg-green-500", "bg-green-400", "bg-green-500", "bg-yellow-400", "bg-red-400",
-                        "bg-green-400", "bg-green-500", "bg-green-500", "bg-green-400", "bg-yellow-400",
-                        "bg-green-500", "bg-green-500", "bg-green-600", "bg-green-500", "bg-green-400",
-                        "bg-yellow-400", "bg-green-400", "bg-green-500", "bg-green-500", "bg-yellow-500",
-                        "bg-red-400", "bg-yellow-500", "bg-green-400", "bg-yellow-400", "bg-red-500"
-                      ].map((color, index) => (
-                        <div 
-                          key={index}
-                          className={`aspect-square ${color} rounded-sm opacity-80 hover:opacity-100 transition-opacity cursor-pointer`}
-                          title={`Grid position ${index + 1}`}
-                        />
-                      ))}
+                    <div className="grid grid-cols-5 gap-2">
+                      {heatmapData.map((cell) => {
+                        const getRankColor = (rank: number) => {
+                          if (rank <= 3) return "bg-green-500 hover:bg-green-400";
+                          if (rank <= 10) return "bg-yellow-400 hover:bg-yellow-300";
+                          return "bg-red-400 hover:bg-red-300";
+                        };
+                        
+                        return (
+                          <div
+                            key={cell.position}
+                            className={`group relative aspect-square ${getRankColor(cell.rank)} rounded-lg cursor-pointer transition-all duration-200 hover:scale-110 hover:z-10 hover:shadow-lg flex items-center justify-center`}
+                          >
+                            <span className="text-xs font-bold text-white/90">#{cell.rank}</span>
+                            
+                            {/* Tooltip */}
+                            <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity z-50 pointer-events-none">
+                              <div className="bg-card border border-border rounded-lg shadow-xl p-3 min-w-[200px]">
+                                <div className="text-xs font-semibold text-foreground mb-2">{cell.location}</div>
+                                <div className="space-y-1.5">
+                                  <div className="flex justify-between text-xs">
+                                    <span className="text-muted-foreground">Keyword:</span>
+                                    <span className="text-foreground font-medium">{cell.keyword}</span>
+                                  </div>
+                                  <div className="flex justify-between text-xs">
+                                    <span className="text-muted-foreground">Your Rank:</span>
+                                    <span className={`font-bold ${cell.you <= 3 ? 'text-green-500' : cell.you <= 10 ? 'text-yellow-500' : 'text-red-500'}`}>
+                                      #{cell.you}
+                                    </span>
+                                  </div>
+                                  <div className="flex justify-between text-xs">
+                                    <span className="text-muted-foreground">Top Competitor:</span>
+                                    <span className="text-foreground">#{cell.competitor}</span>
+                                  </div>
+                                  <div className="pt-1 border-t border-border mt-1">
+                                    <span className={`text-xs font-medium ${cell.you < cell.competitor ? 'text-green-500' : 'text-amber-500'}`}>
+                                      {cell.you < cell.competitor ? '✓ Outranking competitor' : '↑ Opportunity to improve'}
+                                    </span>
+                                  </div>
+                                </div>
+                                {/* Arrow */}
+                                <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-8 border-transparent border-t-card" />
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                     
                     {/* Legend */}
-                    <div className="flex items-center gap-4 text-xs">
-                      <div className="flex items-center gap-1">
-                        <div className="w-3 h-3 bg-green-500 rounded-sm" />
+                    <div className="flex items-center justify-center gap-6 mt-4 text-xs">
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 bg-green-500 rounded" />
                         <span className="text-muted-foreground">Top 3</span>
                       </div>
-                      <div className="flex items-center gap-1">
-                        <div className="w-3 h-3 bg-yellow-400 rounded-sm" />
-                        <span className="text-muted-foreground">4-10</span>
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 bg-yellow-400 rounded" />
+                        <span className="text-muted-foreground">Rank 4-10</span>
                       </div>
-                      <div className="flex items-center gap-1">
-                        <div className="w-3 h-3 bg-red-400 rounded-sm" />
-                        <span className="text-muted-foreground">11+</span>
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 bg-red-400 rounded" />
+                        <span className="text-muted-foreground">Rank 11+</span>
                       </div>
                     </div>
                   </div>
                   
-                  {/* Heatmap Benefits */}
+                  {/* Heatmap Stats & Benefits */}
+                  <div className="space-y-6">
+                    {/* Quick Stats */}
+                    <div className="grid grid-cols-3 gap-3">
+                      <div className="p-3 bg-green-500/10 rounded-lg border border-green-500/30 text-center">
+                        <div className="text-2xl font-bold text-green-500">13</div>
+                        <div className="text-xs text-muted-foreground">Top 3 Rankings</div>
+                      </div>
+                      <div className="p-3 bg-yellow-400/10 rounded-lg border border-yellow-400/30 text-center">
+                        <div className="text-2xl font-bold text-yellow-500">8</div>
+                        <div className="text-xs text-muted-foreground">Page 1 (4-10)</div>
+                      </div>
+                      <div className="p-3 bg-red-400/10 rounded-lg border border-red-400/30 text-center">
+                        <div className="text-2xl font-bold text-red-400">4</div>
+                        <div className="text-xs text-muted-foreground">Needs Work</div>
+                      </div>
+                    </div>
+                    
+                    {/* Benefits */}
+                    <div>
+                      <h5 className="text-sm font-bold text-foreground mb-3">What You Get With Heatmap Tracking</h5>
+                      <ul className="space-y-2">
+                        {[
+                          "Real-time ranking visibility across your entire service area",
+                          "Competitor position tracking on every keyword",
+                          "Identify high-opportunity zones for quick wins",
+                          "Monthly progress reports with visual comparisons",
+                          "Strategic recommendations based on data patterns"
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-start gap-2 text-sm">
+                            <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                            <span className="text-foreground">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Citation Management Section */}
+              <div className="mt-12 p-8 bg-card rounded-2xl border border-border">
+                <div className="flex items-center justify-between mb-6">
                   <div>
-                    <h4 className="text-lg font-bold mb-4 text-foreground">Why Heatmap Tracking Matters</h4>
-                    <ul className="space-y-3">
-                      {[
-                        "See exactly where you rank across your entire service area",
-                        "Identify opportunity zones where you can quickly gain visibility",
-                        "Track competitor positions in real-time",
-                        "Measure the impact of local SEO efforts monthly"
-                      ].map((item, index) => (
-                        <li key={index} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                          <span className="text-sm text-foreground">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <h4 className="text-xl font-bold text-foreground flex items-center gap-2">
+                      <MapPin className="w-6 h-6 text-blue-500" />
+                      Citation Management Dashboard
+                    </h4>
+                    <p className="text-sm text-muted-foreground mt-1">100+ directory submissions for consistent NAP (Name, Address, Phone)</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="px-3 py-1.5 bg-green-500/10 text-green-500 rounded-full text-sm font-medium">
+                      {citationDirectories.filter(d => d.status === 'submitted').length} Submitted
+                    </div>
+                    <div className="px-3 py-1.5 bg-yellow-400/10 text-yellow-500 rounded-full text-sm font-medium">
+                      {citationDirectories.filter(d => d.status === 'pending').length} Pending
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Progress Bar */}
+                <div className="mb-6">
+                  <div className="flex justify-between text-xs text-muted-foreground mb-2">
+                    <span>Citation Completion Progress</span>
+                    <span>{Math.round((citationDirectories.filter(d => d.status === 'submitted').length / citationDirectories.length) * 100)}% Complete</span>
+                  </div>
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-gradient-to-r from-blue-500 to-green-500 rounded-full transition-all duration-500"
+                      style={{ width: `${(citationDirectories.filter(d => d.status === 'submitted').length / citationDirectories.length) * 100}%` }}
+                    />
+                  </div>
+                </div>
+
+                {/* Directory Categories */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                  {['Essential', 'Home Services', 'General', 'Local', 'Trust', 'B2B'].map((category) => {
+                    const categoryDirs = citationDirectories.filter(d => d.category === category);
+                    const submittedCount = categoryDirs.filter(d => d.status === 'submitted').length;
+                    return (
+                      <div key={category} className="p-4 bg-secondary/50 rounded-xl border border-border">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="font-semibold text-foreground">{category}</span>
+                          <span className="text-xs text-muted-foreground">{submittedCount}/{categoryDirs.length}</span>
+                        </div>
+                        <div className="h-2 bg-muted rounded-full overflow-hidden">
+                          <div 
+                            className="h-full bg-blue-500 rounded-full"
+                            style={{ width: `${(submittedCount / categoryDirs.length) * 100}%` }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Directory List */}
+                <div className="border border-border rounded-xl overflow-hidden">
+                  <div className="bg-muted/50 px-4 py-3 border-b border-border">
+                    <div className="grid grid-cols-12 gap-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                      <div className="col-span-5">Directory</div>
+                      <div className="col-span-3">Category</div>
+                      <div className="col-span-2 text-center">DA</div>
+                      <div className="col-span-2 text-center">Status</div>
+                    </div>
+                  </div>
+                  <div className="max-h-[300px] overflow-y-auto">
+                    {citationDirectories.map((dir, index) => (
+                      <div 
+                        key={dir.name}
+                        className={`grid grid-cols-12 gap-4 px-4 py-3 items-center text-sm ${index % 2 === 0 ? 'bg-background' : 'bg-muted/20'} hover:bg-primary/5 transition-colors`}
+                      >
+                        <div className="col-span-5 font-medium text-foreground">{dir.name}</div>
+                        <div className="col-span-3">
+                          <span className="px-2 py-1 bg-secondary rounded text-xs text-muted-foreground">{dir.category}</span>
+                        </div>
+                        <div className="col-span-2 text-center">
+                          <span className={`font-semibold ${dir.da >= 80 ? 'text-green-500' : dir.da >= 60 ? 'text-yellow-500' : 'text-muted-foreground'}`}>
+                            {dir.da}
+                          </span>
+                        </div>
+                        <div className="col-span-2 text-center">
+                          {dir.status === 'submitted' ? (
+                            <span className="inline-flex items-center gap-1 px-2 py-1 bg-green-500/10 text-green-500 rounded-full text-xs">
+                              <CheckCircle2 className="w-3 h-3" />
+                              Live
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center gap-1 px-2 py-1 bg-yellow-400/10 text-yellow-500 rounded-full text-xs">
+                              <RefreshCw className="w-3 h-3" />
+                              Pending
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Citation Benefits */}
+                <div className="mt-6 grid md:grid-cols-3 gap-4">
+                  <div className="p-4 bg-blue-500/10 rounded-xl border border-blue-500/30">
+                    <Globe className="w-8 h-8 text-blue-500 mb-2" />
+                    <h5 className="font-semibold text-foreground mb-1">NAP Consistency</h5>
+                    <p className="text-xs text-muted-foreground">Identical business info across all directories boosts local rankings</p>
+                  </div>
+                  <div className="p-4 bg-purple-500/10 rounded-xl border border-purple-500/30">
+                    <TrendingUp className="w-8 h-8 text-purple-500 mb-2" />
+                    <h5 className="font-semibold text-foreground mb-1">Domain Authority</h5>
+                    <p className="text-xs text-muted-foreground">High-DA directories pass link equity to boost your rankings</p>
+                  </div>
+                  <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/30">
+                    <MapPin className="w-8 h-8 text-green-500 mb-2" />
+                    <h5 className="font-semibold text-foreground mb-1">Local Visibility</h5>
+                    <p className="text-xs text-muted-foreground">More citation sources = more places customers can find you</p>
                   </div>
                 </div>
               </div>
