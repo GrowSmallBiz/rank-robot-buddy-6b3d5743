@@ -47,6 +47,12 @@ import {
 } from "lucide-react";
 
 import heroImage from "@/assets/industry-hvac-hero.jpg";
+import tradeHvac from "@/assets/trade-hvac.jpg";
+import tradePlumbing from "@/assets/trade-plumbing.jpg";
+import tradeElectrical from "@/assets/trade-electrical.jpg";
+import tradeRoofing from "@/assets/trade-roofing.jpg";
+import tradeRemodeling from "@/assets/trade-remodeling.jpg";
+import tradeContractor from "@/assets/trade-contractor.jpg";
 
 // Marketing Funnel Stages
 const marketingFunnel = [
@@ -113,6 +119,7 @@ const platformRecommendations = [
   {
     trade: "HVAC",
     icon: Flame,
+    image: tradeHvac,
     topPlatforms: ["Google LSA", "Google PPC", "Meta (FB)", "Nextdoor"],
     funnel: ["Lead Capture", "Quote Request", "Scheduling", "Service", "Review"],
     strategy: "Emergency-focused keywords + seasonal campaigns. Google LSA is king for urgent AC/heating repairs.",
@@ -122,6 +129,7 @@ const platformRecommendations = [
   {
     trade: "Plumbing",
     icon: Droplets,
+    image: tradePlumbing,
     topPlatforms: ["Google LSA", "Google PPC", "YouTube", "Yelp"],
     funnel: ["Emergency Call", "Dispatch", "Diagnosis", "Repair", "Review"],
     strategy: "24/7 emergency visibility is critical. LSA for urgent leads, PPC for drain cleaning & water heaters.",
@@ -131,6 +139,7 @@ const platformRecommendations = [
   {
     trade: "Electrical",
     icon: Plug,
+    image: tradeElectrical,
     topPlatforms: ["Google PPC", "Google LSA", "Meta (FB/IG)", "HomeAdvisor"],
     funnel: ["Service Request", "Consultation", "Estimate", "Installation", "Follow-up"],
     strategy: "Focus on safety-related searches and home renovation keywords. EV charger installation is a growing opportunity.",
@@ -140,6 +149,7 @@ const platformRecommendations = [
   {
     trade: "Roofing",
     icon: Home,
+    image: tradeRoofing,
     topPlatforms: ["Google PPC", "Meta (FB/IG)", "Google LSA", "Houzz"],
     funnel: ["Storm Lead", "Inspection", "Estimate", "Contract", "Project Complete"],
     strategy: "Storm damage campaigns + visual before/after content on Meta/IG. Longer sales cycle requires strong retargeting.",
@@ -149,6 +159,7 @@ const platformRecommendations = [
   {
     trade: "Remodeling",
     icon: Hammer,
+    image: tradeRemodeling,
     topPlatforms: ["Meta (FB/IG)", "Houzz", "Pinterest", "Google PPC"],
     funnel: ["Inspiration", "Consultation", "Design", "Build", "Reveal"],
     strategy: "Visual-first approach. High-quality project photos on Instagram, Pinterest, and Houzz.",
@@ -158,6 +169,7 @@ const platformRecommendations = [
   {
     trade: "General Contractor",
     icon: Wrench,
+    image: tradeContractor,
     topPlatforms: ["Google PPC", "Meta (FB)", "Houzz", "Nextdoor"],
     funnel: ["Project Inquiry", "Site Visit", "Proposal", "Build Phase", "Handover"],
     strategy: "Showcase portfolio diversity. Target homeowners planning major projects. Reviews and referrals are critical.",
@@ -786,13 +798,27 @@ const HomeServices = () => {
                     className={`group relative overflow-hidden rounded-2xl border ${colors.border} bg-gradient-to-b from-card to-background hover:border-opacity-60 transition-all duration-500 animate-fade-up`}
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    {/* Card Content */}
-                    <div className="p-6">
-                      {/* Trade Header with Icon */}
-                      <div className="flex flex-col items-center text-center mb-6">
-                        <div className={`w-12 h-12 rounded-full ${colors.bgLight} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
-                          <trade.icon className={`w-6 h-6 ${colors.text}`} />
+                    {/* Trade Image Header */}
+                    <div className="relative h-40 overflow-hidden">
+                      <img 
+                        src={trade.image} 
+                        alt={`${trade.trade} professional at work`}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                      
+                      {/* Trade Badge */}
+                      <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex items-center gap-2">
+                        <div className={`w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center shadow-lg`}>
+                          <trade.icon className="w-5 h-5 text-white" />
                         </div>
+                      </div>
+                    </div>
+
+                    {/* Card Content */}
+                    <div className="p-6 pt-4">
+                      {/* Trade Header */}
+                      <div className="text-center mb-4">
                         <h3 className="text-xl font-bold text-foreground">{trade.trade}</h3>
                         <p className="text-xs text-muted-foreground mt-1">Marketing Funnel</p>
                       </div>
