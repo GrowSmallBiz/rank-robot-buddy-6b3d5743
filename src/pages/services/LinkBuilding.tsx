@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, linkBuildingBlogPosts } from "@/components/sections/BlogSection";
@@ -255,6 +256,37 @@ const LinkBuilding = () => {
         testimonials={linkBuildingTestimonials}
         title="Link Building Success Stories"
         subtitle="See how quality backlinks transform rankings and authority"
+      />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "Summit Legal Partners",
+            location: "Chicago, IL",
+            industry: "Legal Services",
+            challenge: "Low domain authority preventing rankings for competitive keywords.",
+            timeframe: "6 months",
+            metrics: [
+              { label: "Domain Authority", before: "18", after: "42", improvement: "+133%" },
+              { label: "Referring Domains", before: "45", after: "280", improvement: "+522%" },
+              { label: "Keyword Rankings", before: "12", after: "89", improvement: "+642%" },
+            ],
+          },
+          {
+            company: "TechFlow SaaS",
+            location: "San Francisco, CA",
+            industry: "B2B Technology",
+            challenge: "Needed authority building to compete with established competitors.",
+            timeframe: "8 months",
+            metrics: [
+              { label: "DR Score", before: "24", after: "58", improvement: "+142%" },
+              { label: "Organic Traffic", before: "3,200/mo", after: "18,500/mo", improvement: "+478%" },
+              { label: "Lead Quality Score", before: "6.2", after: "8.7", improvement: "+40%" },
+            ],
+          },
+        ]}
+        title="Link Building Case Studies"
+        subtitle="See how strategic link building transforms domain authority"
       />
 
       <PlatformAdvantagesSection variant="compact" serviceType="linkbuilding" />

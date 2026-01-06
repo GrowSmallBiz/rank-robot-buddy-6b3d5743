@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -978,6 +979,37 @@ const WebsiteDesign = () => {
         </div>
       </section>
       <AnimatedStatsSection stats={websiteStats} columns={4} />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "Premier Dental Group",
+            location: "San Jose, CA",
+            industry: "Dental Practice",
+            challenge: "Outdated website failing to convert visitors into appointments despite high traffic.",
+            timeframe: "8 weeks",
+            metrics: [
+              { label: "Conversion Rate", before: "1.2%", after: "8.7%", improvement: "+625%" },
+              { label: "Monthly Leads", before: "12", after: "67", improvement: "+458%" },
+              { label: "Page Load Time", before: "6.2s", after: "1.8s", improvement: "-71%" },
+            ],
+          },
+          {
+            company: "Comfort Pro HVAC",
+            location: "Oakland, CA",
+            industry: "HVAC Services",
+            challenge: "Generic template website that looked like every other HVAC company.",
+            timeframe: "6 weeks",
+            metrics: [
+              { label: "Organic Traffic", before: "850/mo", after: "3,200/mo", improvement: "+276%" },
+              { label: "Service Calls", before: "45/mo", after: "120/mo", improvement: "+167%" },
+              { label: "Average Job Value", before: "$450", after: "$780", improvement: "+73%" },
+            ],
+          },
+        ]}
+        title="Website Design Case Studies"
+        subtitle="See how our websites transform business results"
+      />
 
       {/* FAQ Section */}
       <FAQSection

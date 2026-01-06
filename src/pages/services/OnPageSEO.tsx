@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, onPageSeoBlogPosts } from "@/components/sections/BlogSection";
@@ -271,6 +272,37 @@ const OnPageSEO = () => {
         testimonials={onPageSeoTestimonials}
         title="On-Page SEO Success Stories"
         subtitle="See how strategic content optimization drives results"
+      />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "Bright Smile Dental",
+            location: "San Diego, CA",
+            industry: "Dental Practice",
+            challenge: "Great content but poor keyword targeting and thin meta descriptions.",
+            timeframe: "3 months",
+            metrics: [
+              { label: "Organic Traffic", before: "890/mo", after: "3,450/mo", improvement: "+288%" },
+              { label: "Featured Snippets", before: "0", after: "12", improvement: "+12" },
+              { label: "Conversion Rate", before: "1.8%", after: "5.2%", improvement: "+189%" },
+            ],
+          },
+          {
+            company: "Summit Financial Advisors",
+            location: "Denver, CO",
+            industry: "Financial Services",
+            challenge: "Content not ranking despite high domain authority.",
+            timeframe: "4 months",
+            metrics: [
+              { label: "Page 1 Rankings", before: "8", after: "47", improvement: "+488%" },
+              { label: "Organic Leads", before: "12/mo", after: "58/mo", improvement: "+383%" },
+              { label: "Avg. Time on Page", before: "1:20", after: "4:45", improvement: "+255%" },
+            ],
+          },
+        ]}
+        title="On-Page SEO Case Studies"
+        subtitle="Real results from strategic content optimization"
       />
 
       <PlatformAdvantagesSection variant="compact" serviceType="onpage" />

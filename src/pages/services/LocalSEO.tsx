@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, localSeoBlogPosts } from "@/components/sections/BlogSection";
@@ -215,6 +216,37 @@ const LocalSEO = () => {
         testimonials={localSeoTestimonials}
         title="Local SEO Success Stories"
         subtitle="See how we've helped businesses dominate their local markets"
+      />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "Bay Area Dental Excellence",
+            location: "San Jose, CA",
+            industry: "Dental Practice",
+            challenge: "Invisible in local search despite 20+ years of excellent service.",
+            timeframe: "4 months",
+            metrics: [
+              { label: "Map Pack Rankings", before: "Not Ranked", after: "Top 3", improvement: "Top 3" },
+              { label: "Monthly Leads", before: "15", after: "78", improvement: "+420%" },
+              { label: "Organic Traffic", before: "450/mo", after: "2,100/mo", improvement: "+367%" },
+            ],
+          },
+          {
+            company: "Elite HVAC Services",
+            location: "Oakland, CA",
+            industry: "HVAC",
+            challenge: "Losing local jobs to competitors appearing higher in Google Maps.",
+            timeframe: "3 months",
+            metrics: [
+              { label: "Google Business Calls", before: "12/mo", after: "67/mo", improvement: "+458%" },
+              { label: "Local Keywords Ranked", before: "8", after: "47", improvement: "+488%" },
+              { label: "Service Area Coverage", before: "3 cities", after: "12 cities", improvement: "+300%" },
+            ],
+          },
+        ]}
+        title="Local SEO Case Studies"
+        subtitle="Real results from local businesses we've helped dominate their markets"
       />
 
       <PlatformAdvantagesSection variant="compact" serviceType="local" />

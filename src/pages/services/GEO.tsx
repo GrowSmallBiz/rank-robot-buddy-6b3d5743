@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
@@ -253,6 +254,37 @@ const GEO = () => {
         testimonials={geoTestimonials}
         title="GEO Success Stories"
         subtitle="See how businesses are winning in AI-powered search"
+      />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "Martinez Family Law",
+            location: "Austin, TX",
+            industry: "Legal Services",
+            challenge: "Not appearing in AI-generated search results despite strong traditional SEO.",
+            timeframe: "4 months",
+            metrics: [
+              { label: "AI Platform Citations", before: "0", after: "34", improvement: "+34" },
+              { label: "ChatGPT Mentions", before: "Never", after: "Frequent", improvement: "Cited" },
+              { label: "AI-Referred Leads", before: "0/mo", after: "18/mo", improvement: "+18" },
+            ],
+          },
+          {
+            company: "TechFlow Solutions",
+            location: "Seattle, WA",
+            industry: "B2B SaaS",
+            challenge: "Competitors being recommended by AI while brand was invisible.",
+            timeframe: "5 months",
+            metrics: [
+              { label: "Knowledge Graph Presence", before: "None", after: "Established", improvement: "Present" },
+              { label: "LLM Brand Mentions", before: "2%", after: "47%", improvement: "+2,250%" },
+              { label: "Organic Demo Requests", before: "15/mo", after: "62/mo", improvement: "+313%" },
+            ],
+          },
+        ]}
+        title="GEO Case Studies"
+        subtitle="How businesses are dominating AI-powered search"
       />
 
       <PlatformAdvantagesSection variant="compact" serviceType="geo" />

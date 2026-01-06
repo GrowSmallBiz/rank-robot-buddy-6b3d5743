@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 
 const linkedInTestimonials = [
@@ -432,6 +433,37 @@ const LinkedInOutreach = () => {
           testimonials={linkedInTestimonials}
           title="LinkedIn Outreach Success Stories"
           subtitle="See how B2B businesses fill their pipeline with qualified leads"
+        />
+
+        <CaseStudySection
+          caseStudies={[
+            {
+              company: "Apex Consulting Group",
+              location: "New York, NY",
+              industry: "Management Consulting",
+              challenge: "Struggling to reach C-level decision makers for enterprise deals.",
+              timeframe: "4 months",
+              metrics: [
+                { label: "Qualified Meetings", before: "3/mo", after: "18/mo", improvement: "+500%" },
+                { label: "Connection Accept Rate", before: "12%", after: "38%", improvement: "+217%" },
+                { label: "Pipeline Value", before: "$150K", after: "$890K", improvement: "+493%" },
+              ],
+            },
+            {
+              company: "CloudScale Technologies",
+              location: "San Francisco, CA",
+              industry: "B2B SaaS",
+              challenge: "Sales team spending too much time on cold outreach with low conversion.",
+              timeframe: "3 months",
+              metrics: [
+                { label: "Meetings Booked", before: "5/mo", after: "22/mo", improvement: "+340%" },
+                { label: "Response Rate", before: "4%", after: "18%", improvement: "+350%" },
+                { label: "Sales Cycle", before: "45 days", after: "28 days", improvement: "-38%" },
+              ],
+            },
+          ]}
+          title="LinkedIn Outreach Case Studies"
+          subtitle="Real B2B pipeline results from our outreach campaigns"
         />
 
         {/* FAQ Section */}

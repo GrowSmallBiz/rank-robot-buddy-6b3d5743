@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
@@ -1328,6 +1329,37 @@ const AISEOHub = () => {
 
         {/* Testimonials */}
         <TestimonialsSection />
+
+        <CaseStudySection
+          caseStudies={[
+            {
+              company: "Premier Dental Group",
+              location: "San Jose, CA",
+              industry: "Dental Practice",
+              challenge: "Not appearing in AI search results despite strong traditional SEO.",
+              timeframe: "5 months",
+              metrics: [
+                { label: "AI Platform Citations", before: "0", after: "42", improvement: "+42" },
+                { label: "Organic Traffic", before: "1,800/mo", after: "6,200/mo", improvement: "+244%" },
+                { label: "New Patient Leads", before: "25/mo", after: "89/mo", improvement: "+256%" },
+              ],
+            },
+            {
+              company: "Elite Home Services",
+              location: "Phoenix, AZ",
+              industry: "HVAC & Plumbing",
+              challenge: "Competitors dominating local search while AI assistants ignored their brand.",
+              timeframe: "6 months",
+              metrics: [
+                { label: "Local Pack Rankings", before: "Not Ranked", after: "Top 3", improvement: "Top 3" },
+                { label: "ChatGPT Mentions", before: "Never", after: "Consistent", improvement: "Cited" },
+                { label: "Monthly Revenue", before: "$85K", after: "$245K", improvement: "+188%" },
+              ],
+            },
+          ]}
+          title="AI SEO Success Stories"
+          subtitle="How businesses dominate both traditional and AI-powered search"
+        />
 
         {/* FAQ Section */}
         <FAQSection 
