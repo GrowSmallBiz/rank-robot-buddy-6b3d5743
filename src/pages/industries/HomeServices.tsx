@@ -1208,7 +1208,7 @@ const HomeServices = () => {
                   Your Holistic AI SEO Command Center
                 </h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Track domain authority, AI platform visibility across ChatGPT, Gemini & more, plus holistic SEO health—all in one unified dashboard.
+                  Monitor your complete digital presence in real-time—track domain authority growth, measure visibility across AI platforms like ChatGPT & Gemini, and optimize all six SEO pillars from one powerful dashboard.
                 </p>
               </div>
               <Dialog>

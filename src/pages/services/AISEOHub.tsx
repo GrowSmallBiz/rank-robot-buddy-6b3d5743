@@ -354,8 +354,8 @@ const AISEOHub = () => {
                 <h3 className="text-2xl md:text-3xl font-bold font-display mb-4 text-foreground">
                   Your Holistic AI SEO Command Center
                 </h3>
-                <p className="text-muted-foreground max-w-3xl mx-auto">
-                  Track domain authority, AI platform visibility across ChatGPT, Gemini & more, plus holistic SEO health—all in one unified dashboard.
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Monitor your complete digital presence in real-time—track domain authority growth, measure your visibility across AI platforms like ChatGPT, Gemini, Perplexity & Claude, and optimize all six SEO pillars from one powerful dashboard. Make data-driven decisions that drive measurable ROI.
                 </p>
               </div>
               <Dialog>
