@@ -823,39 +823,133 @@ const HomeServices = () => {
         </section>
 
         {/* AI SEO Strategy Deep Dive */}
-        <section className="py-20">
+        <section className="py-20 bg-gradient-to-b from-background to-secondary/20 overflow-hidden">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="AI SEO Deep Dive"
-              title="How We Approach"
-              titleHighlight="Search Optimization"
+              title="Our 3-Phase SEO"
+              titleHighlight="Process"
               description="Comprehensive SEO strategy covering keyword research, competitor analysis, technical optimization, and AI search visibility."
             />
 
-            <div className="grid lg:grid-cols-3 gap-6">
-              {aiSeoStrategy.phases.map((phase, index) => (
-                <div 
-                  key={index}
-                  className="p-6 bg-card rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 animate-fade-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
-                      {index + 1}
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground">{phase.phase}</h3>
-                  </div>
+            {/* Visual Flow Diagram */}
+            <div className="relative max-w-6xl mx-auto">
+              {/* Connecting Flow Line - Desktop */}
+              <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 transform -translate-y-1/2 z-0 rounded-full" style={{ top: '120px' }} />
+              
+              {/* Phase Cards */}
+              <div className="grid lg:grid-cols-3 gap-8 relative z-10">
+                {aiSeoStrategy.phases.map((phase, index) => {
+                  const phaseColors = [
+                    { bg: "bg-blue-500", bgLight: "bg-blue-500/10", text: "text-blue-500", border: "border-blue-500/30", gradient: "from-blue-500/20 to-blue-600/5" },
+                    { bg: "bg-purple-500", bgLight: "bg-purple-500/10", text: "text-purple-500", border: "border-purple-500/30", gradient: "from-purple-500/20 to-purple-600/5" },
+                    { bg: "bg-green-500", bgLight: "bg-green-500/10", text: "text-green-500", border: "border-green-500/30", gradient: "from-green-500/20 to-green-600/5" }
+                  ];
+                  const colors = phaseColors[index];
                   
-                  <ul className="space-y-3">
-                    {phase.items.map((item, iIndex) => (
-                      <li key={iIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  return (
+                    <div 
+                      key={index}
+                      className="group relative animate-fade-up"
+                      style={{ animationDelay: `${index * 0.15}s` }}
+                    >
+                      {/* Connector Node */}
+                      <div className={`hidden lg:flex absolute -top-4 left-1/2 transform -translate-x-1/2 w-16 h-16 ${colors.bg} rounded-full items-center justify-center shadow-lg z-20`}>
+                        <phase.icon className="w-8 h-8 text-white" />
+                      </div>
+                      
+                      {/* Arrow Between Phases - Desktop */}
+                      {index < 2 && (
+                        <div className="hidden lg:block absolute -right-4 top-1/2 transform translate-x-1/2 -translate-y-1/2 z-30" style={{ top: '120px' }}>
+                          <div className={`w-8 h-8 ${colors.bg} rounded-full flex items-center justify-center shadow-md`}>
+                            <ArrowRight className="w-5 h-5 text-white" />
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Card */}
+                      <div className={`mt-16 lg:mt-20 p-6 bg-gradient-to-br ${colors.gradient} backdrop-blur-sm rounded-2xl border ${colors.border} hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02]`}>
+                        {/* Mobile Icon */}
+                        <div className={`lg:hidden w-14 h-14 ${colors.bg} rounded-xl flex items-center justify-center mb-4`}>
+                          <phase.icon className="w-7 h-7 text-white" />
+                        </div>
+                        
+                        {/* Phase Label */}
+                        <div className="flex items-center gap-2 mb-3">
+                          <span className={`px-3 py-1 text-xs font-bold ${colors.bg} text-white rounded-full`}>
+                            Phase {index + 1}
+                          </span>
+                        </div>
+                        
+                        {/* Title */}
+                        <h3 className={`text-xl font-bold ${colors.text} mb-4`}>{phase.phase}</h3>
+                        
+                        {/* Items with flow styling */}
+                        <div className="space-y-3">
+                          {phase.items.map((item, iIndex) => (
+                            <div 
+                              key={iIndex}
+                              className="flex items-start gap-3 p-3 bg-background/60 rounded-lg border border-border/50 hover:border-border transition-colors"
+                            >
+                              <div className={`w-6 h-6 rounded-full ${colors.bgLight} flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                                <CheckCircle2 className={`w-4 h-4 ${colors.text}`} />
+                              </div>
+                              <span className="text-sm text-foreground">{item}</span>
+                            </div>
+                          ))}
+                        </div>
+                        
+                        {/* Phase Output */}
+                        <div className={`mt-4 pt-4 border-t ${colors.border}`}>
+                          <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
+                            <Zap className={`w-4 h-4 ${colors.text}`} />
+                            <span>
+                              {index === 0 && "Delivers: Strategic SEO Roadmap"}
+                              {index === 1 && "Delivers: Optimized Digital Presence"}
+                              {index === 2 && "Delivers: Measurable Growth Results"}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Mobile Arrow */}
+                      {index < 2 && (
+                        <div className="lg:hidden flex justify-center my-4">
+                          <div className={`w-10 h-10 ${colors.bg} rounded-full flex items-center justify-center animate-bounce`}>
+                            <ArrowRight className="w-5 h-5 text-white rotate-90" />
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              
+              {/* Summary Flow - Compact Visual */}
+              <div className="mt-16 p-6 bg-card rounded-2xl border border-border">
+                <h4 className="text-lg font-bold text-center mb-6 text-foreground">The Continuous SEO Cycle</h4>
+                <div className="flex flex-wrap items-center justify-center gap-4">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 rounded-full border border-blue-500/30">
+                    <FileSearch className="w-5 h-5 text-blue-500" />
+                    <span className="text-sm font-medium text-blue-500">Research</span>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-muted-foreground hidden sm:block" />
+                  <div className="flex items-center gap-2 px-4 py-2 bg-purple-500/10 rounded-full border border-purple-500/30">
+                    <Target className="w-5 h-5 text-purple-500" />
+                    <span className="text-sm font-medium text-purple-500">Optimize</span>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-muted-foreground hidden sm:block" />
+                  <div className="flex items-center gap-2 px-4 py-2 bg-green-500/10 rounded-full border border-green-500/30">
+                    <LineChart className="w-5 h-5 text-green-500" />
+                    <span className="text-sm font-medium text-green-500">Measure</span>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-muted-foreground hidden sm:block" />
+                  <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/30">
+                    <RefreshCw className="w-5 h-5 text-primary" />
+                    <span className="text-sm font-medium text-primary">Refine & Repeat</span>
+                  </div>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </section>
