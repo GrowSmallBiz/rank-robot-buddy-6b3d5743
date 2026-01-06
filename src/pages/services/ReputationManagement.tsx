@@ -905,7 +905,8 @@ const ReputationManagement = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Reputation Management Partner"
+        title="Why Choose GrowSmallBiz for Reputation Management"
+        subtitle="Your Reputation Management Partner"
         description="We automate review collection, AI-powered responses, and reputation monitoring—so you build trust, rank higher, and attract more customers."
         items={[
           { title: "Automated Review Requests", description: "Happy customers automatically receive review requests at the perfect moment—no manual effort required.", icon: Zap },

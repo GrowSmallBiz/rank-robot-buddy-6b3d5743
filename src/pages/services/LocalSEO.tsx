@@ -161,7 +161,8 @@ const LocalSEO = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Local Search Partner"
+        title="Why Choose GrowSmallBiz for Local SEO"
+        subtitle="Your Local Search Partner"
         description="We specialize in helping service businesses dominate local search results, attract nearby customers, and outrank competitors in their geographic markets."
         items={[
           { title: "Local Search Experts", description: "We focus exclusively on local SEO strategies that drive foot traffic, phone calls, and leads from customers in your service area.", icon: MapPin },

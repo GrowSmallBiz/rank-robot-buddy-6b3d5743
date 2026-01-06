@@ -626,7 +626,8 @@ const PaidMedia = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Paid Advertising Partner"
+        title="Why Choose GrowSmallBiz for Paid Media"
+        subtitle="Your Paid Advertising Partner"
         description="We manage strategic paid campaigns across Google, Meta, TikTok, and YouTube—maximizing every dollar of your ad budget to generate qualified leads."
         items={[
           { title: "Multi-Platform Expertise", description: "We manage campaigns across Google, Meta, TikTok, YouTube, and Microsoft Ads for maximum reach.", icon: Target },

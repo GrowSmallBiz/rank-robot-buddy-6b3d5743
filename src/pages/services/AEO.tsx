@@ -214,7 +214,8 @@ const AEO = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Answer Engine Partner"
+        title="Why Choose GrowSmallBiz for Answer Engine Optimization"
+        subtitle="Your Answer Engine Partner"
         description="We optimize your content to be the answer AI platforms choose—ensuring your brand is cited in ChatGPT, Google AI Overviews, and voice assistants."
         items={[
           { title: "Answer Optimization Experts", description: "We structure your content to be the definitive answer AI systems surface for relevant queries.", icon: Bot },

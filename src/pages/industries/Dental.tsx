@@ -362,7 +362,8 @@ const Dental = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Dental Marketing Partner"
+        title="Why Choose GrowSmallBiz for Dental Marketing"
+        subtitle="Your Dental Marketing Partner"
         description="We specialize in helping dental practices attract high-value patients, fill appointment books, and build a reputation as the premier choice in your community."
         items={[
           { title: "Dental Industry Experts", description: "We focus exclusively on dental practices—we know what works for general, cosmetic, and specialty dentistry.", icon: Smile },

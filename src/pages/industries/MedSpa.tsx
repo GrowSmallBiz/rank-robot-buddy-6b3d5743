@@ -361,7 +361,8 @@ const MedSpa = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Med Spa Marketing Partner"
+        title="Why Choose GrowSmallBiz for Med Spa Marketing"
+        subtitle="Your Med Spa Marketing Partner"
         description="We specialize in helping aesthetic practices attract premium clients who invest in themselves—building your reputation as the luxury choice in your market."
         items={[
           { title: "Aesthetics Experts", description: "We focus exclusively on med spas and aesthetic practices—we know what works for premium services.", icon: Sparkles },

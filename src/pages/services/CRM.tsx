@@ -912,7 +912,8 @@ const CRM = () => {
         </section>
 
         <WhyChooseSection 
-          title="Your Sales & CRM Partner"
+          title="Why Choose GrowSmallBiz for CRM Automation"
+          subtitle="Your Sales & CRM Partner"
           description="We implement and manage powerful CRM automation that captures every lead, follows up instantly, and converts more prospects into paying customers."
           items={[
             { title: "AI-Powered Follow-Up", description: "Instant automated responses to every lead via text, email, and voice—24/7, 365 days a year.", icon: Bot },

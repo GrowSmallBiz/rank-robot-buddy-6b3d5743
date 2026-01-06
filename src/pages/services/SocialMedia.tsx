@@ -706,7 +706,8 @@ const SocialMedia = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Social Media Partner"
+        title="Why Choose GrowSmallBiz for Social Media Marketing"
+        subtitle="Your Social Media Partner"
         description="We build and manage your social media presence with strategy, creativity, and consistency—helping you connect with customers and grow your brand."
         items={[
           { title: "Strategic Content Planning", description: "We create content calendars aligned with your business goals and audience interests.", icon: Target },

@@ -234,7 +234,8 @@ const GEO = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Generative AI Partner"
+        title="Why Choose GrowSmallBiz for Generative Engine Optimization"
+        subtitle="Your Generative AI Partner"
         description="We optimize your brand's digital presence for AI platforms like ChatGPT, Gemini, and Claude—ensuring you're cited and recommended in AI-generated answers."
         items={[
           { title: "AI-First Expertise", description: "We specialize in the new frontier of search—optimizing for large language models and generative AI platforms.", icon: Brain },

@@ -363,7 +363,8 @@ const HVAC = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your HVAC Marketing Partner"
+        title="Why Choose GrowSmallBiz for HVAC Marketing"
+        subtitle="Your HVAC Marketing Partner"
         description="We specialize in helping HVAC, plumbing, and electrical contractors dominate local search, capture emergency calls, and outrank franchise competitors."
         items={[
           { title: "Home Service Experts", description: "We focus exclusively on HVAC, plumbing, and electrical—we know what works for your industry.", icon: Wrench },

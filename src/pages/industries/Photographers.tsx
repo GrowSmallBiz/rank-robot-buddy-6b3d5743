@@ -361,7 +361,8 @@ const Photographers = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Photography Marketing Partner"
+        title="Why Choose GrowSmallBiz for Photography Marketing"
+        subtitle="Your Photography Marketing Partner"
         description="We specialize in helping photographers get found by ideal clients, showcase their work effectively, and build a sustainable booking pipeline."
         items={[
           { title: "Photography Experts", description: "We focus on photographers—weddings, portraits, commercial, and events. We know your industry.", icon: Camera },

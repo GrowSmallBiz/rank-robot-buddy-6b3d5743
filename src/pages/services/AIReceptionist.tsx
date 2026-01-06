@@ -762,7 +762,8 @@ const AIReceptionist = () => {
         </section>
 
         <WhyChooseSection 
-          title="Your AI Communication Partner"
+          title="Why Choose GrowSmallBiz for AI Receptionist"
+          subtitle="Your AI Communication Partner"
           description="Our AI Receptionist answers every call, books appointments, and qualifies leads 24/7—so you never miss an opportunity to grow your business."
           items={[
             { title: "24/7 Call Handling", description: "AI answers every call naturally, even after hours, holidays, and weekends—never miss a lead.", icon: Phone },
