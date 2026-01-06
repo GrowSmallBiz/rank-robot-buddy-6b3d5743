@@ -977,44 +977,6 @@ const WebsiteDesign = () => {
           </div>
         </div>
       </section>
-      <WhyChooseSection
-        title="Why Choose GrowSmallBiz for Website Design"
-        subtitle="Your Website Design Partner"
-        description="We don't just build websites – we create conversion machines that turn visitors into loyal customers. Our industry-focused approach delivers measurable results."
-        items={[
-          {
-            title: "Industry Expertise",
-            description: "Unlike generic web designers, we specialize exclusively in high-ticket service businesses. We understand the unique challenges and opportunities in your industry.",
-            icon: Award,
-          },
-          {
-            title: "Local Market Mastery",
-            description: "Our team includes local SEO specialists who know how to make your business visible to clients in your specific geographic area.",
-            icon: MapPin,
-          },
-          {
-            title: "Conversion-Focused Design",
-            description: "Every element of your website is strategically designed to convert visitors into clients using proven psychological principles.",
-            icon: Target,
-          },
-          {
-            title: "Ongoing Optimization",
-            description: "Your website launch is just the beginning. We provide ongoing support, regular updates, and continuous optimization.",
-            icon: TrendingUp,
-          },
-          {
-            title: "Transparent Reporting",
-            description: "You'll receive detailed monthly reports showing exactly how your website is performing, including traffic sources and conversion rates.",
-            icon: Eye,
-          },
-          {
-            title: "Premium Brand Positioning",
-            description: "We help you establish a strong online presence that positions you as the premium choice in your market.",
-            icon: Star,
-          },
-        ]}
-      />
-
       <AnimatedStatsSection stats={websiteStats} columns={4} />
 
       {/* FAQ Section */}
