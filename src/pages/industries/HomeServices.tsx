@@ -62,6 +62,7 @@ import {
 } from "@/components/icons/AIplatformIcons";
 
 import heroImage from "@/assets/industry-hvac-hero.jpg";
+import seoDashboardMetrics from "@/assets/seo-dashboard-metrics.png";
 // Marketing Funnel Stages
 const marketingFunnel = [
   {
@@ -1198,6 +1199,15 @@ const HomeServices = () => {
               titleHighlight="Process"
               description="Comprehensive SEO strategy covering keyword research, competitor analysis, technical optimization, and AI search visibility."
             />
+
+            {/* SEO Dashboard Metrics Image */}
+            <div className="mb-12">
+              <img 
+                src={seoDashboardMetrics} 
+                alt="SEO Dashboard showing domain metrics, LLM visibility, and holistic SEO pillars" 
+                className="w-full rounded-2xl border border-primary/30 shadow-2xl"
+              />
+            </div>
 
             {/* Why AI Search Ranking Matters - Hero Banner */}
             <div className="mb-16 p-8 md:p-12 bg-gradient-to-br from-primary/20 via-purple-500/10 to-blue-500/10 rounded-3xl border border-primary/30 relative overflow-hidden">
