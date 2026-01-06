@@ -13,6 +13,7 @@ const seoServices = [
 ];
 
 const industries = [
+  { name: "Home Services (HVAC, Plumbing, Electrical, Roofing)", href: "/industries/home-services" },
   { name: "HVAC, Plumbing & Electrical", href: "/industries/hvac" },
   { name: "Dental Practices", href: "/industries/dental" },
   { name: "Med Spas & Aesthetics", href: "/industries/med-spa" },
