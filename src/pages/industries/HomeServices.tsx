@@ -14,16 +14,15 @@ import { createIndustryContactCTA } from "@/config/contactCTA";
 import { 
   ArrowRight, 
   CheckCircle2, 
-  PhoneOff, 
-  Clock, 
-  Users, 
-  TrendingDown,
+  Target,
+  Users,
+  TrendingUp,
+  Heart,
   MapPin,
   Star,
   Bot,
   Search,
   Globe,
-  MessageSquare,
   BarChart3,
   Zap,
   Shield,
@@ -32,114 +31,304 @@ import {
   Droplets,
   Plug,
   Home,
-  Hammer
+  Hammer,
+  Megaphone,
+  MousePointerClick,
+  RefreshCw,
+  Eye,
+  FileSearch,
+  LineChart,
+  BadgeDollarSign,
+  MessageCircle,
+  Smartphone,
+  Monitor,
+  Play,
+  Share2
 } from "lucide-react";
 
-// Hero image - we'll use an existing asset or placeholder
 import heroImage from "@/assets/industry-hvac-hero.jpg";
 
-const painPoints = [
+// Marketing Funnel Stages
+const marketingFunnel = [
   {
-    icon: PhoneOff,
-    title: "Missed Calls = Lost Jobs",
-    description: "When you're on a ladder or under a sink, every missed call is $500-$5,000 walking to your competitor."
+    stage: "Awareness",
+    icon: Eye,
+    color: "text-blue-500",
+    bgColor: "bg-blue-500/10",
+    borderColor: "border-blue-500/30",
+    description: "Get discovered by homeowners actively searching for your services",
+    strategies: [
+      { name: "Local SEO", description: "Rank #1 in Google Maps & organic search" },
+      { name: "AI SEO (AEO/GEO)", description: "Get recommended by ChatGPT & AI assistants" },
+      { name: "Google PPC", description: "Appear at the top for high-intent searches" },
+      { name: "Meta Ads", description: "Reach homeowners in your service area" }
+    ]
   },
   {
-    icon: Clock,
-    title: "Seasonal Feast or Famine",
-    description: "Summer AC rush, winter heating boom—but what about the slow months? Inconsistent lead flow kills cash flow."
+    stage: "Consideration",
+    icon: FileSearch,
+    color: "text-purple-500",
+    bgColor: "bg-purple-500/10",
+    borderColor: "border-purple-500/30",
+    description: "Build trust and credibility when prospects are comparing options",
+    strategies: [
+      { name: "Professional Website", description: "Convert visitors with compelling design" },
+      { name: "Review Generation", description: "Showcase 5-star reputation" },
+      { name: "Content Marketing", description: "Educate prospects & establish expertise" },
+      { name: "Retargeting Ads", description: "Stay top-of-mind with website visitors" }
+    ]
   },
   {
-    icon: Users,
-    title: "Competing Against Giants",
-    description: "National franchises outspend you 10:1 on marketing. Without smart strategy, you're invisible online."
+    stage: "Conversion",
+    icon: MousePointerClick,
+    color: "text-primary",
+    bgColor: "bg-primary/10",
+    borderColor: "border-primary/30",
+    description: "Turn qualified leads into booked appointments and paying customers",
+    strategies: [
+      { name: "AI Receptionist", description: "Never miss a call—book 24/7" },
+      { name: "Lead Capture Forms", description: "Easy quote requests & scheduling" },
+      { name: "Local Service Ads", description: "Pay-per-lead with Google Guarantee" },
+      { name: "CRM Automation", description: "Instant follow-up on every inquiry" }
+    ]
   },
   {
-    icon: TrendingDown,
-    title: "Reviews Make or Break You",
-    description: "One bad review on Google can cost you dozens of jobs. Most happy customers never leave reviews."
-  },
-  {
-    icon: MapPin,
-    title: "Local Visibility Struggles",
-    description: "You serve 15 cities but only rank in 2. Your service area is full of customers who can't find you."
-  },
-  {
-    icon: Clock,
-    title: "No Time for Marketing",
-    description: "You're running crews, managing inventory, and handling emergencies. Who has time for SEO and ads?"
+    stage: "Retention",
+    icon: Heart,
+    color: "text-green-500",
+    bgColor: "bg-green-500/10",
+    borderColor: "border-green-500/30",
+    description: "Keep customers coming back and referring friends & family",
+    strategies: [
+      { name: "Reputation Management", description: "Monitor & respond to reviews" },
+      { name: "Email/SMS Campaigns", description: "Seasonal reminders & promotions" },
+      { name: "Referral Programs", description: "Turn happy customers into advocates" },
+      { name: "Maintenance Plans", description: "Recurring revenue & loyalty" }
+    ]
   }
 ];
 
-const services = [
+// Platform Recommendations by Trade
+const platformRecommendations = [
   {
-    icon: Bot,
-    title: "AI Receptionist",
-    description: "Never miss another call. Our AI answers 24/7, books appointments, and qualifies leads—even at 2 AM emergencies.",
-    href: "/services/ai-receptionist",
-    highlight: true
+    trade: "HVAC",
+    icon: Flame,
+    topPlatforms: ["Google LSA", "Google PPC", "Meta (FB)", "Nextdoor"],
+    strategy: "Emergency-focused keywords + seasonal campaigns. Google LSA is king for urgent AC/heating repairs. Meta excels for maintenance plan promotion.",
+    seasonality: "Peak: Summer (AC) & Winter (Heating). Use shoulder seasons for maintenance marketing.",
+    keyMetrics: ["Cost per lead: $25-75", "Close rate target: 35-50%", "Avg job value: $450-3,500"]
+  },
+  {
+    trade: "Plumbing",
+    icon: Droplets,
+    topPlatforms: ["Google LSA", "Google PPC", "YouTube", "Yelp"],
+    strategy: "24/7 emergency visibility is critical. LSA for urgent leads, PPC for drain cleaning & water heaters. YouTube how-to content builds authority.",
+    seasonality: "Year-round demand with spikes during freeze warnings and holiday gatherings.",
+    keyMetrics: ["Cost per lead: $30-80", "Close rate target: 40-55%", "Avg job value: $350-2,500"]
+  },
+  {
+    trade: "Electrical",
+    icon: Plug,
+    topPlatforms: ["Google PPC", "Google LSA", "Meta (FB/IG)", "HomeAdvisor"],
+    strategy: "Focus on safety-related searches and home renovation keywords. EV charger installation is a growing opportunity. Panel upgrades for Meta targeting.",
+    seasonality: "Steady demand. Spikes during storm season and major home projects.",
+    keyMetrics: ["Cost per lead: $35-90", "Close rate target: 30-45%", "Avg job value: $500-4,000"]
+  },
+  {
+    trade: "Roofing",
+    icon: Home,
+    topPlatforms: ["Google PPC", "Meta (FB/IG)", "Google LSA", "Houzz"],
+    strategy: "Storm damage campaigns + visual before/after content on Meta/IG. Longer sales cycle requires strong retargeting. Video testimonials convert well.",
+    seasonality: "Peak: Spring & Fall. Storm-chasing opportunities year-round.",
+    keyMetrics: ["Cost per lead: $75-200", "Close rate target: 20-30%", "Avg job value: $8,000-25,000"]
+  },
+  {
+    trade: "Remodeling",
+    icon: Hammer,
+    topPlatforms: ["Meta (FB/IG)", "Houzz", "Pinterest", "Google PPC"],
+    strategy: "Visual-first approach. High-quality project photos on Instagram, Pinterest, and Houzz. Long consideration cycle = nurture campaigns are essential.",
+    seasonality: "Peak: Spring & Fall. Kitchen/bath remodels spike in Q1.",
+    keyMetrics: ["Cost per lead: $100-300", "Close rate target: 15-25%", "Avg job value: $15,000-75,000"]
+  }
+];
+
+// Foundation Services
+const foundationServices = [
+  {
+    icon: Monitor,
+    title: "Responsive Website",
+    subtitle: "Your Digital Foundation",
+    isFoundation: true,
+    description: "A fast, mobile-first website that converts visitors into leads. This is the hub for all your marketing efforts.",
+    features: [
+      "Mobile-optimized (60%+ of traffic is mobile)",
+      "Fast loading (<3 seconds)",
+      "Clear calls-to-action",
+      "Service area pages for local SEO",
+      "Online booking integration"
+    ],
+    href: "/services/website-design"
   },
   {
     icon: Search,
-    title: "Local SEO Domination",
-    description: "Rank #1 in every city you serve. We optimize your Google Business Profile and build local authority.",
-    href: "/services/local-seo",
-    highlight: true
+    title: "AI-Powered SEO",
+    subtitle: "Be Found Everywhere",
+    isFoundation: true,
+    description: "Comprehensive SEO strategy covering traditional search, local pack, and AI-powered search assistants.",
+    features: [
+      "Keyword research & competitor analysis",
+      "Technical SEO optimization",
+      "Local SEO & Google Business Profile",
+      "AEO/GEO for ChatGPT visibility",
+      "Monthly ranking & traffic reports"
+    ],
+    href: "/services/ai-seo-hub"
   },
   {
-    icon: Globe,
-    title: "AI SEO Hub",
-    description: "Get found on Google AND AI assistants like ChatGPT. Future-proof your online presence.",
-    href: "/services/ai-seo-hub",
-    highlight: false
+    icon: Megaphone,
+    title: "Paid Media",
+    subtitle: "Immediate Visibility",
+    isFoundation: true,
+    description: "Strategic paid advertising across Google, Meta, and local platforms to generate leads immediately.",
+    features: [
+      "Google PPC (Search & Display)",
+      "Google Local Service Ads (LSA)",
+      "Meta Ads (Facebook & Instagram)",
+      "TikTok for brand awareness",
+      "Retargeting campaigns"
+    ],
+    href: "/services/paid-media"
   },
   {
     icon: Star,
     title: "Reputation Management",
-    description: "Automatically request reviews from happy customers and respond to feedback professionally.",
-    href: "/services/reputation-management",
-    highlight: true
-  },
-  {
-    icon: MessageSquare,
-    title: "Quad Bots AI Team",
-    description: "AI-powered lead nurturing that follows up with every inquiry until they book or buy.",
-    href: "/services/quad-bots",
-    highlight: false
-  },
-  {
-    icon: BarChart3,
-    title: "AI-Powered CRM",
-    description: "Track every lead, job, and customer interaction in one place. Never lose a lead again.",
-    href: "/services/crm",
-    highlight: false
+    subtitle: "Build Trust at Scale",
+    isFoundation: true,
+    description: "Automated review generation and response management to build a 5-star reputation.",
+    features: [
+      "Automated review requests",
+      "Multi-platform monitoring",
+      "AI-assisted review responses",
+      "Negative review alerts",
+      "Competitor review tracking"
+    ],
+    href: "/services/reputation-management"
   }
 ];
 
+// Optional Enhancement
+const enhancementService = {
+  icon: Bot,
+  title: "AI Receptionist",
+  subtitle: "Never Miss a Lead",
+  description: "24/7 AI-powered call answering that books appointments, qualifies leads, and handles emergencies—even when you're on a job.",
+  benefits: [
+    "Answer calls 24/7/365",
+    "Book appointments automatically",
+    "Handle emergency call escalation",
+    "Qualify leads before handoff",
+    "Integrate with your CRM"
+  ],
+  href: "/services/ai-receptionist"
+};
+
+// AI SEO Details
+const aiSeoStrategy = {
+  title: "AI SEO Strategy",
+  description: "Our comprehensive AI SEO approach ensures you're visible across all search platforms—traditional and AI-powered.",
+  phases: [
+    {
+      phase: "Discovery & Analysis",
+      icon: FileSearch,
+      items: [
+        "Deep keyword research (500+ terms per trade)",
+        "Competitor gap analysis",
+        "Current ranking audit",
+        "Technical SEO assessment",
+        "Local citation audit"
+      ]
+    },
+    {
+      phase: "Strategy & Implementation",
+      icon: Target,
+      items: [
+        "On-page optimization",
+        "Schema markup for rich snippets",
+        "Google Business Profile optimization",
+        "AEO/GEO content strategy",
+        "Local landing pages by service area"
+      ]
+    },
+    {
+      phase: "Tracking & Optimization",
+      icon: LineChart,
+      items: [
+        "Weekly ranking reports",
+        "Organic traffic monitoring",
+        "Lead attribution tracking",
+        "Monthly strategy calls",
+        "Quarterly content updates"
+      ]
+    }
+  ]
+};
+
+// Paid Media Details
+const paidMediaStrategy = {
+  title: "Paid Media Strategy",
+  description: "Multi-platform advertising strategy designed to capture leads at every stage of the customer journey.",
+  platforms: [
+    {
+      name: "Google Search (PPC)",
+      icon: Search,
+      description: "High-intent keyword targeting for people actively searching for your services.",
+      bestFor: "Emergency services, specific repairs, 'near me' searches"
+    },
+    {
+      name: "Google Local Service Ads",
+      icon: Shield,
+      description: "Pay-per-lead ads with Google Guarantee badge. Top of search results.",
+      bestFor: "All trades—especially emergency services"
+    },
+    {
+      name: "Meta (Facebook & Instagram)",
+      icon: Share2,
+      description: "Visual ads targeting homeowners in your service area by demographics and interests.",
+      bestFor: "Remodeling, HVAC maintenance plans, brand awareness"
+    },
+    {
+      name: "Retargeting",
+      icon: RefreshCw,
+      description: "Re-engage website visitors who didn't convert with follow-up ads across platforms.",
+      bestFor: "High-ticket services with longer decision cycles"
+    }
+  ]
+};
+
 const results = [
   { value: "312%", label: "Average increase in organic leads" },
-  { value: "24/7", label: "AI receptionist availability" },
+  { value: "4.2x", label: "Return on ad spend (ROAS)" },
   { value: "47", label: "Average new reviews per month" },
-  { value: "4.2x", label: "Return on marketing investment" }
+  { value: "<$45", label: "Average cost per qualified lead" }
 ];
 
 const homeServicesTestimonials = [
   {
-    quote: "We went from 50 calls a month to over 200. The AI receptionist alone paid for itself in the first week—it booked 3 emergency jobs while I was on a roof.",
+    quote: "GrowSmallBiz built us a complete marketing system—website, SEO, and Google Ads. We went from 50 calls a month to over 200. The strategy actually makes sense.",
     author: "Mike Rodriguez",
     role: "Owner",
     company: "Rodriguez Roofing & Gutters",
     rating: 5
   },
   {
-    quote: "GrowSmallBiz helped us dominate all 12 cities we serve. We're now the #1 HVAC company in our county on Google.",
+    quote: "They helped us understand which platforms work best for HVAC. We stopped wasting money on ads that didn't convert and doubled our ROI.",
     author: "Jennifer Walsh",
     role: "Marketing Director",
     company: "ComfortFirst HVAC",
     rating: 5
   },
   {
-    quote: "Our remodeling business went from 2-3 leads a week to 2-3 per DAY. The reputation management system got us 89 new 5-star reviews in 3 months.",
+    quote: "The reputation management system got us 89 new 5-star reviews in 3 months. We're now the top-rated remodeler in our county.",
     author: "David Chen",
     role: "Owner",
     company: "Chen Home Renovations",
@@ -150,27 +339,27 @@ const homeServicesTestimonials = [
 const faqs = [
   {
     question: "What types of home service businesses do you work with?",
-    answer: "We specialize in HVAC, plumbing, electrical, roofing, remodeling, and general contracting businesses. Our strategies are tailored to the unique challenges of each trade—from emergency service calls to seasonal demand fluctuations."
+    answer: "We specialize in HVAC, plumbing, electrical, roofing, and remodeling businesses. Our strategies are tailored to the unique challenges of each trade—from emergency service calls to seasonal demand fluctuations and long sales cycles."
   },
   {
-    question: "How does the AI Receptionist handle emergency calls?",
-    answer: "Our AI Receptionist is trained to recognize emergency situations (no heat in winter, flooding, electrical hazards) and can immediately escalate to your on-call technician while gathering critical information. It never tells an emergency caller to 'leave a message.'"
+    question: "How do you determine which advertising platforms are best for my business?",
+    answer: "We analyze your specific trade, service area, average job value, and competition to recommend the optimal platform mix. For example, HVAC and plumbing benefit heavily from Google LSA for emergencies, while remodelers see better ROI from visual platforms like Meta and Houzz."
   },
   {
-    question: "Can you help us rank in multiple service areas?",
-    answer: "Absolutely. We specialize in multi-location local SEO. We'll optimize your Google Business Profile, create location-specific landing pages, and build local citations to help you rank in every city and neighborhood you serve."
+    question: "What's included in your AI SEO service?",
+    answer: "Our AI SEO includes comprehensive keyword research (500+ terms), competitor analysis, technical SEO audit, on-page optimization, local SEO with Google Business Profile management, and AEO/GEO optimization to ensure visibility in AI search assistants like ChatGPT. You receive monthly reports tracking rankings, traffic, and leads."
   },
   {
-    question: "How long until we see results?",
-    answer: "Most clients see significant increases in calls within 60-90 days. AI Receptionist and reputation management show results immediately. SEO typically takes 3-6 months to show substantial ranking improvements, but we focus on quick wins first."
+    question: "How long until we see results from SEO?",
+    answer: "Paid media generates leads immediately. SEO typically shows meaningful ranking improvements within 3-6 months, with significant traffic and lead growth by month 6-12. We focus on quick wins (local SEO, Google Business Profile) while building long-term organic authority."
   },
   {
-    question: "Do you work with franchises or just independent contractors?",
-    answer: "Both! We work with single-truck operators all the way up to multi-location franchises. Our strategies scale to fit your business size and growth goals."
+    question: "Do you handle both B2B and B2C marketing?",
+    answer: "Yes! Many contractors serve both homeowners (B2C) and commercial clients or property managers (B2B). We create targeted campaigns for each audience—residential emergency services on one side, commercial maintenance contracts on the other."
   },
   {
-    question: "What makes you different from other marketing agencies?",
-    answer: "We focus exclusively on local service businesses and combine traditional SEO with AI-powered tools. Our AI Receptionist, reputation management, and CRM are built specifically for contractors—not generic solutions adapted for your industry."
+    question: "What makes your approach different from other marketing agencies?",
+    answer: "We're specialists in home services marketing, not generalists. We understand seasonal demand, emergency call patterns, and the unique buyer journey for each trade. Our strategies combine traditional marketing with AI-powered tools for SEO, reputation management, and lead qualification."
   }
 ];
 
@@ -179,14 +368,14 @@ const caseStudies = [
     company: "ComfortFirst HVAC",
     location: "Denver Metro Area",
     industry: "HVAC Services",
-    challenge: "A 3-location HVAC company was invisible in local search, losing emergency calls to competitors with better online presence.",
+    challenge: "A 3-location HVAC company was invisible in local search and wasting ad budget on low-quality leads.",
     timeframe: "6 months",
     metrics: [
       { label: "Organic Traffic", before: "1,200/mo", after: "4,600/mo", improvement: "+287%" },
-      { label: "Monthly Leads", before: "45", after: "156", improvement: "+247%" },
-      { label: "Map Pack Ranking", before: "#8", after: "#1", improvement: "Top Spot" }
+      { label: "Cost Per Lead", before: "$120", after: "$38", improvement: "-68%" },
+      { label: "Monthly Leads", before: "45", after: "156", improvement: "+247%" }
     ],
-    quote: "We went from barely showing up to dominating all 12 cities we serve. The ROI has been incredible.",
+    quote: "They restructured our entire marketing—website, SEO, and ads. We finally understand what's working and why.",
     quoteName: "Jennifer Walsh",
     quoteRole: "Marketing Director"
   },
@@ -194,45 +383,45 @@ const caseStudies = [
     company: "Elite Plumbing Solutions",
     location: "Austin, TX",
     industry: "Emergency Plumbing",
-    challenge: "After-hours emergency calls were going to voicemail, losing thousands in potential revenue to competitors who answered 24/7.",
+    challenge: "After-hours emergency calls were going to voicemail, and Google Ads budget was being wasted on irrelevant searches.",
     timeframe: "3 months",
     metrics: [
-      { label: "After-Hours Capture", before: "12%", after: "94%", improvement: "+683%" },
-      { label: "AI-Booked Revenue", before: "$0", after: "$47,000", improvement: "New Revenue" },
-      { label: "Response Time", before: "Next day", after: "<3 sec", improvement: "Instant" }
+      { label: "Google Ads ROAS", before: "1.8x", after: "5.2x", improvement: "+189%" },
+      { label: "LSA Leads/Month", before: "0", after: "67", improvement: "New Channel" },
+      { label: "5-Star Reviews", before: "42", after: "134", improvement: "+219%" }
     ],
-    quote: "The AI receptionist booked 3 emergency jobs in its first week while I was on other calls. It paid for itself immediately.",
+    quote: "The platform-specific strategy changed everything. LSA alone brings in 30% of our new business now.",
     quoteName: "Marcus Thompson",
     quoteRole: "Owner"
   }
 ];
 
-const homeServicesContactCTA = createIndustryContactCTA("Home Services", "Free marketing audit for contractors");
+const homeServicesContactCTA = createIndustryContactCTA("Home Services", "Get your free marketing strategy assessment");
 
 const homeServicesBlogPosts = [
   {
-    title: "Why HVAC Companies Are Losing Customers to AI Search",
-    excerpt: "ChatGPT and Google AI are changing how homeowners find contractors. Here's how to stay visible.",
+    title: "The Complete Marketing Funnel for Home Service Contractors",
+    excerpt: "From awareness to retention: how to build a marketing system that generates leads consistently.",
     date: "Jan 15, 2025",
     author: "Mike Thompson",
-    readTime: "7 min read",
-    category: "AI & SEO"
+    readTime: "10 min read",
+    category: "Strategy"
   },
   {
-    title: "The $500 Phone Call: What Missed Calls Really Cost Contractors",
-    excerpt: "A deep dive into the true cost of every unanswered call and how AI receptionists are changing the game.",
+    title: "Google LSA vs PPC: Which Is Better for Your Trade?",
+    excerpt: "A data-driven comparison to help you allocate your advertising budget effectively.",
     date: "Jan 10, 2025",
     author: "Sarah Chen",
-    readTime: "6 min read",
-    category: "Business Growth"
+    readTime: "7 min read",
+    category: "Paid Media"
   },
   {
-    title: "Local SEO for Multi-Location Service Businesses: A Complete Guide",
-    excerpt: "How to rank in every city you serve without creating duplicate content penalties.",
+    title: "AI SEO for Contractors: Getting Found by ChatGPT & Google",
+    excerpt: "How AI search is changing the game and what you need to do to stay visible.",
     date: "Jan 5, 2025",
     author: "David Martinez",
     readTime: "8 min read",
-    category: "Local SEO"
+    category: "AI & SEO"
   }
 ];
 
@@ -240,12 +429,12 @@ const HomeServices = () => {
   return (
     <>
       <Helmet>
-        <title>Digital Marketing for Home Service Contractors | HVAC, Plumbing, Electrical, Roofing SEO</title>
+        <title>Home Services Marketing Guide | HVAC, Plumbing, Electrical, Roofing Marketing Strategy</title>
         <meta 
           name="description" 
-          content="Grow your home service business with AI-powered marketing. SEO, AI receptionist, and reputation management for HVAC, plumbers, electricians, roofers & remodelers." 
+          content="Complete marketing guide for home service contractors. SEO, paid media, reputation management strategies for HVAC, plumbers, electricians, roofers & remodelers." 
         />
-        <meta name="keywords" content="HVAC marketing, plumber SEO, electrician marketing, roofing SEO, contractor marketing, home services digital marketing" />
+        <meta name="keywords" content="HVAC marketing, plumber SEO, electrician marketing, roofing SEO, contractor marketing, home services digital marketing, paid media contractors" />
         <link rel="canonical" href="https://growsmallbiz.com/industries/home-services" />
       </Helmet>
 
@@ -254,7 +443,6 @@ const HomeServices = () => {
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
-          {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0">
             <img 
               src={heroImage} 
@@ -266,52 +454,50 @@ const HomeServices = () => {
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl">
+            <div className="max-w-4xl">
               {/* Industry Icons */}
-              <div className="flex items-center gap-3 mb-6 animate-fade-up">
-                <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
-                  <Flame className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-medium text-primary">HVAC</span>
-                </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
-                  <Droplets className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-medium text-primary">Plumbing</span>
-                </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
-                  <Plug className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-medium text-primary">Electrical</span>
-                </div>
-                <div className="hidden sm:flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
-                  <Home className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-medium text-primary">Roofing</span>
-                </div>
-                <div className="hidden md:flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
-                  <Hammer className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-medium text-primary">Remodeling</span>
-                </div>
+              <div className="flex flex-wrap items-center gap-3 mb-6 animate-fade-up">
+                {[
+                  { icon: Flame, label: "HVAC" },
+                  { icon: Droplets, label: "Plumbing" },
+                  { icon: Plug, label: "Electrical" },
+                  { icon: Home, label: "Roofing" },
+                  { icon: Hammer, label: "Remodeling" }
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20">
+                    <item.icon className="w-5 h-5 text-primary" />
+                    <span className="text-sm font-medium text-primary">{item.label}</span>
+                  </div>
+                ))}
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                Stop Losing Jobs to
-                <span className="text-transparent bg-clip-text bg-gradient-primary"> Missed Calls</span> and
-                <span className="text-transparent bg-clip-text bg-gradient-primary"> Invisible Rankings</span>
+              <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-4 animate-fade-up">
+                The Complete Marketing Guide for Contractors
+              </p>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight" style={{ animationDelay: "0.1s" }}>
+                From <span className="text-transparent bg-clip-text bg-gradient-primary">Awareness</span> to{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary">Retention</span>:
+                <br />
+                <span className="text-3xl md:text-4xl lg:text-5xl">Strategy + Execution for Home Services</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-                AI-powered marketing built for home service contractors. Get found online, never miss a call, and turn every lead into a booked job—while you focus on the work.
+                A comprehensive marketing playbook covering SEO, paid media, reputation management, and automation. 
+                Built specifically for HVAC, plumbing, electrical, roofing, and remodeling businesses.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
                 <Button variant="hero" size="xl" asChild>
                   <Link to="/free-assessment" className="inline-flex items-center gap-2">
-                    Get Your Free Marketing Audit
+                    Get Your Free Strategy Assessment
                     <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="xl" asChild>
-                  <Link to="/services/ai-receptionist">
-                    See AI Receptionist Demo
-                  </Link>
+                  <a href="#marketing-funnel">
+                    Explore the Framework
+                  </a>
                 </Button>
               </div>
 
@@ -331,80 +517,291 @@ const HomeServices = () => {
                   <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                   <span className="text-sm text-muted-foreground">4.9/5 Average Rating</span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <BarChart3 className="w-5 h-5 text-primary" />
+                  <span className="text-sm text-muted-foreground">$2.4M+ Client Revenue Generated</span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Pain Points Section */}
-        <section className="py-20 bg-secondary/30">
+        {/* Marketing Funnel Section */}
+        <section id="marketing-funnel" className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <SectionHeader
-              subtitle="Sound Familiar?"
-              title="The Challenges Every"
-              titleHighlight="Contractor Faces"
-              description="You're great at your trade. But marketing? That's a different beast. Here's what's holding your business back."
+              subtitle="The Complete Framework"
+              title="Marketing Funnel for"
+              titleHighlight="Home Service Contractors"
+              description="From first discovery to loyal customer—every stage of the journey requires different strategies and platforms."
             />
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {painPoints.map((point, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {marketingFunnel.map((item, index) => (
                 <div 
                   key={index}
-                  className="p-6 bg-card rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 animate-fade-up group"
+                  className={`p-6 bg-card rounded-2xl border ${item.borderColor} hover:shadow-xl transition-all duration-300 animate-fade-up relative overflow-hidden`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4 group-hover:bg-destructive/20 transition-colors">
-                    <point.icon className="w-6 h-6 text-destructive" />
+                  {/* Stage Number */}
+                  <div className="absolute top-4 right-4 text-6xl font-display font-bold text-muted/10">
+                    {index + 1}
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{point.title}</h3>
-                  <p className="text-muted-foreground">{point.description}</p>
+                  
+                  <div className={`w-14 h-14 rounded-xl ${item.bgColor} flex items-center justify-center mb-4`}>
+                    <item.icon className={`w-7 h-7 ${item.color}`} />
+                  </div>
+                  
+                  <h3 className={`text-xl font-bold ${item.color} mb-2`}>{item.stage}</h3>
+                  <p className="text-muted-foreground text-sm mb-4">{item.description}</p>
+                  
+                  <div className="space-y-3">
+                    {item.strategies.map((strategy, sIndex) => (
+                      <div key={sIndex} className="flex items-start gap-2">
+                        <CheckCircle2 className={`w-4 h-4 ${item.color} mt-0.5 flex-shrink-0`} />
+                        <div>
+                          <span className="font-medium text-foreground text-sm">{strategy.name}</span>
+                          <p className="text-xs text-muted-foreground">{strategy.description}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Services Grid */}
+        {/* Platform Recommendations by Trade */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <SectionHeader
-              subtitle="Our Solutions"
-              title="Marketing Built for"
-              titleHighlight="Contractors"
-              description="Every service we offer is designed specifically for home service businesses. No generic marketing—just what works for your industry."
+              subtitle="Platform Strategy by Trade"
+              title="Which Platforms Work Best for"
+              titleHighlight="Your Business?"
+              description="Every trade has different customer behavior. Here's where to invest your marketing budget based on data from hundreds of contractors."
             />
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service, index) => (
+            <div className="space-y-6">
+              {platformRecommendations.map((trade, index) => (
+                <div 
+                  key={index}
+                  className="p-6 md:p-8 bg-card rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 animate-fade-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="grid lg:grid-cols-12 gap-6">
+                    {/* Trade Header */}
+                    <div className="lg:col-span-3 flex items-center gap-4">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+                        <trade.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground">{trade.trade}</h3>
+                        <div className="flex flex-wrap gap-1 mt-1">
+                          {trade.topPlatforms.map((platform, pIndex) => (
+                            <span key={pIndex} className="text-xs px-2 py-0.5 bg-primary/10 text-primary rounded-full">
+                              {platform}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Strategy */}
+                    <div className="lg:col-span-5">
+                      <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Strategy</h4>
+                      <p className="text-foreground text-sm">{trade.strategy}</p>
+                      <p className="text-muted-foreground text-xs mt-2 italic">{trade.seasonality}</p>
+                    </div>
+
+                    {/* Key Metrics */}
+                    <div className="lg:col-span-4">
+                      <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Benchmarks</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {trade.keyMetrics.map((metric, mIndex) => (
+                          <span key={mIndex} className="text-xs px-3 py-1.5 bg-secondary rounded-full text-foreground">
+                            {metric}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Foundation Services */}
+        <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="The Essential Stack"
+              title="Core Services Every Contractor"
+              titleHighlight="Needs"
+              description="These four pillars form the foundation of any successful home service marketing strategy."
+            />
+
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              {foundationServices.map((service, index) => (
                 <Link 
                   key={index}
                   to={service.href}
-                  className={`group p-6 rounded-2xl border transition-all duration-300 hover:shadow-xl animate-fade-up ${
-                    service.highlight 
-                      ? "bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30 hover:border-primary" 
-                      : "bg-card border-border hover:border-primary/50"
-                  }`}
+                  className="group p-6 bg-card rounded-2xl border border-primary/30 hover:border-primary transition-all duration-300 hover:shadow-xl animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  {service.highlight && (
-                    <span className="inline-block px-3 py-1 text-xs font-semibold bg-primary text-primary-foreground rounded-full mb-4">
-                      Most Popular
-                    </span>
-                  )}
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors ${
-                    service.highlight ? "bg-primary/20" : "bg-secondary"
-                  } group-hover:bg-primary/30`}>
-                    <service.icon className={`w-6 h-6 ${service.highlight ? "text-primary" : "text-foreground"}`} />
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <service.icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-xs font-semibold text-primary uppercase tracking-wider">{service.subtitle}</p>
+                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
+                  
                   <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <span className="inline-flex items-center text-primary font-medium">
+                  
+                  <ul className="space-y-2 mb-4">
+                    {service.features.map((feature, fIndex) => (
+                      <li key={fIndex} className="flex items-center gap-2 text-sm text-foreground">
+                        <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <span className="inline-flex items-center text-primary font-medium text-sm group-hover:underline">
                     Learn More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
               ))}
+            </div>
+
+            {/* Optional Enhancement - AI Receptionist */}
+            <div className="p-8 bg-gradient-to-br from-card to-secondary/50 rounded-2xl border border-border animate-fade-up">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="px-3 py-1 text-xs font-semibold bg-secondary text-muted-foreground rounded-full">
+                  Optional Enhancement
+                </span>
+              </div>
+              
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+                      <Bot className="w-7 h-7 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-primary uppercase tracking-wider">{enhancementService.subtitle}</p>
+                      <h3 className="text-2xl font-bold text-foreground">{enhancementService.title}</h3>
+                    </div>
+                  </div>
+                  
+                  <p className="text-muted-foreground mb-6">{enhancementService.description}</p>
+                  
+                  <Button variant="outline" asChild>
+                    <Link to={enhancementService.href} className="inline-flex items-center gap-2">
+                      See AI Receptionist in Action
+                      <Play className="w-4 h-4" />
+                    </Link>
+                  </Button>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-4">
+                  {enhancementService.benefits.map((benefit, index) => (
+                    <div key={index} className="flex items-center gap-2 p-3 bg-background rounded-lg border border-border">
+                      <Zap className="w-5 h-5 text-primary flex-shrink-0" />
+                      <span className="text-sm text-foreground">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* AI SEO Strategy Deep Dive */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="AI SEO Deep Dive"
+              title="How We Approach"
+              titleHighlight="Search Optimization"
+              description="Comprehensive SEO strategy covering keyword research, competitor analysis, technical optimization, and AI search visibility."
+            />
+
+            <div className="grid lg:grid-cols-3 gap-6">
+              {aiSeoStrategy.phases.map((phase, index) => (
+                <div 
+                  key={index}
+                  className="p-6 bg-card rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 animate-fade-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+                      {index + 1}
+                    </div>
+                    <h3 className="text-lg font-bold text-foreground">{phase.phase}</h3>
+                  </div>
+                  
+                  <ul className="space-y-3">
+                    {phase.items.map((item, iIndex) => (
+                      <li key={iIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Paid Media Strategy */}
+        <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="Paid Media Strategy"
+              title="Advertising Platforms for"
+              titleHighlight="Immediate Results"
+              description="Strategic paid advertising across Google, Meta, and local platforms to generate leads from day one."
+            />
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {paidMediaStrategy.platforms.map((platform, index) => (
+                <div 
+                  key={index}
+                  className="p-6 bg-card rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 animate-fade-up group"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <platform.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-foreground mb-2">{platform.name}</h3>
+                      <p className="text-muted-foreground text-sm mb-3">{platform.description}</p>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-semibold text-primary uppercase">Best For:</span>
+                        <span className="text-xs text-muted-foreground">{platform.bestFor}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/services/paid-media" className="inline-flex items-center gap-2">
+                  Learn More About Our Paid Media Services
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
@@ -440,42 +837,42 @@ const HomeServices = () => {
           </div>
         </section>
 
-        {/* Why Choose Us */}
+        {/* B2B vs B2C Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-up">
-                <p className="section-subtitle">Why GrowSmallBiz?</p>
+                <p className="section-subtitle">B2B + B2C Marketing</p>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-                  We Only Work With <span className="text-transparent bg-clip-text bg-gradient-primary">Home Service Pros</span>
+                  Reach <span className="text-transparent bg-clip-text bg-gradient-primary">Homeowners & Commercial Clients</span>
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Generic agencies don't understand emergency calls at 2 AM, seasonal demand swings, or why a 4.3-star rating is killing your business. We do.
+                  Many contractors serve both residential homeowners and commercial clients like property managers, 
+                  GCs, and facility managers. We create targeted campaigns for each audience.
                 </p>
 
-                <div className="space-y-4">
-                  {[
-                    "AI tools built specifically for contractors and tradespeople",
-                    "We understand seasonal marketing and cash flow challenges",
-                    "Multi-location SEO expertise for service area businesses",
-                    "24/7 AI receptionist trained for home service emergencies",
-                    "Reputation management that actually gets reviews",
-                    "Transparent reporting focused on leads and revenue, not vanity metrics"
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground">{item}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-8">
-                  <Button variant="hero" size="lg" asChild>
-                    <Link to="/free-assessment" className="inline-flex items-center gap-2">
-                      Get Your Free Audit
-                      <ArrowRight className="w-5 h-5" />
-                    </Link>
-                  </Button>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                    <Users className="w-8 h-8 text-primary mb-4" />
+                    <h3 className="text-lg font-bold text-foreground mb-2">B2C (Homeowners)</h3>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• Emergency service campaigns</li>
+                      <li>• Local SEO & Google Maps</li>
+                      <li>• Review generation</li>
+                      <li>• Meta ads targeting homeowners</li>
+                    </ul>
+                  </div>
+                  
+                  <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                    <BarChart3 className="w-8 h-8 text-primary mb-4" />
+                    <h3 className="text-lg font-bold text-foreground mb-2">B2B (Commercial)</h3>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• LinkedIn outreach campaigns</li>
+                      <li>• Email nurture sequences</li>
+                      <li>• Case study content</li>
+                      <li>• Maintenance contract marketing</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
@@ -487,10 +884,21 @@ const HomeServices = () => {
                         <Zap className="w-6 h-6 text-green-500" />
                       </div>
                       <div>
-                        <div className="font-semibold text-foreground">New Lead Captured</div>
-                        <div className="text-sm text-muted-foreground">AI Receptionist booked AC repair</div>
+                        <div className="font-semibold text-foreground">New Homeowner Lead</div>
+                        <div className="text-sm text-muted-foreground">Google Ads - "AC repair near me"</div>
                       </div>
                       <div className="ml-auto text-xs text-muted-foreground">Just now</div>
+                    </div>
+                    
+                    <div className="flex items-center gap-4 p-4 bg-card rounded-xl border border-border">
+                      <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center">
+                        <MessageCircle className="w-6 h-6 text-blue-500" />
+                      </div>
+                      <div>
+                        <div className="font-semibold text-foreground">LinkedIn Connection</div>
+                        <div className="text-sm text-muted-foreground">Property Manager - 42 units</div>
+                      </div>
+                      <div className="ml-auto text-xs text-muted-foreground">5 min ago</div>
                     </div>
                     
                     <div className="flex items-center gap-4 p-4 bg-card rounded-xl border border-border">
@@ -499,18 +907,7 @@ const HomeServices = () => {
                       </div>
                       <div>
                         <div className="font-semibold text-foreground">New 5-Star Review</div>
-                        <div className="text-sm text-muted-foreground">"Best plumber in town!"</div>
-                      </div>
-                      <div className="ml-auto text-xs text-muted-foreground">2 min ago</div>
-                    </div>
-                    
-                    <div className="flex items-center gap-4 p-4 bg-card rounded-xl border border-border">
-                      <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                        <TrendingDown className="w-6 h-6 text-primary rotate-180" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-foreground">Ranking Improved</div>
-                        <div className="text-sm text-muted-foreground">Now #2 for "electrician near me"</div>
+                        <div className="text-sm text-muted-foreground">"Best plumber in Austin!"</div>
                       </div>
                       <div className="ml-auto text-xs text-muted-foreground">1 hour ago</div>
                     </div>
@@ -524,8 +921,8 @@ const HomeServices = () => {
         {/* Case Studies */}
         <CaseStudySection 
           caseStudies={caseStudies}
-          title="Success Stories"
-          subtitle="From our contractor clients"
+          title="Strategy in Action"
+          subtitle="Real results from our contractor clients"
         />
 
         {/* Testimonials */}
@@ -539,22 +936,22 @@ const HomeServices = () => {
         <FAQSection 
           faqs={faqs}
           title="Frequently Asked Questions"
-          subtitle="Common questions about marketing for home service businesses"
+          subtitle="Common questions about marketing strategy for home service businesses"
           contactCTA={homeServicesContactCTA}
         />
 
         {/* Blog Section */}
         <BlogSection 
           posts={homeServicesBlogPosts}
-          title="Insights for Contractors"
-          subtitle="Tips and strategies for home service businesses"
+          title="Marketing Insights for Contractors"
+          subtitle="Strategy guides and tips for home service businesses"
           viewAllLink="/blog"
         />
 
         {/* Person CTA */}
         <PersonCTA
-          title="Ready to Grow Your Contracting Business?"
-          description="Get a free marketing audit and discover exactly how we can help you get more calls, more jobs, and more 5-star reviews."
+          title="Ready to Build Your Marketing System?"
+          description="Get a free marketing strategy assessment. We'll analyze your current efforts and show you exactly where to invest for maximum ROI."
         />
 
         {/* Consultation Form */}
