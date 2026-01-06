@@ -486,10 +486,22 @@ const paidMediaStrategy = {
       bestFor: "All trades—especially emergency services"
     },
     {
+      name: "Microsoft Bing Ads",
+      icon: Globe,
+      description: "Lower competition and CPCs than Google. Reaches older, higher-income homeowners.",
+      bestFor: "Budget-conscious campaigns, targeting 35+ demographics"
+    },
+    {
       name: "Meta (Facebook & Instagram)",
       icon: Share2,
       description: "Visual ads targeting homeowners in your service area by demographics and interests.",
       bestFor: "Remodeling, HVAC maintenance plans, brand awareness"
+    },
+    {
+      name: "TikTok Ads",
+      icon: Play,
+      description: "Short-form video ads for brand awareness and reaching younger homeowners.",
+      bestFor: "First-time homebuyers, brand building, viral before/after content"
     },
     {
       name: "Retargeting",
