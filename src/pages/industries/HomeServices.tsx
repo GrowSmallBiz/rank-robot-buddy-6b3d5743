@@ -45,8 +45,13 @@ import {
   Play,
   Share2,
   Instagram,
-  Facebook
+  Facebook,
+  FolderOpen,
+  Repeat,
+  DollarSign,
+  Database
 } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
   GeminiIcon, 
   ChatGPTIcon, 
@@ -227,99 +232,183 @@ const colorConfig = {
   }
 };
 
-// Foundation Services
-const foundationServices = [
+// Essential Stack Tabs Data
+const essentialStackTabs = [
   {
+    id: "website-seo",
+    label: "Website & SEO",
     icon: Monitor,
-    title: "Responsive Website",
+    title: "Responsive Website & AI-Powered SEO",
     subtitle: "Your Digital Foundation",
-    isFoundation: true,
-    description: "A fast, mobile-first website that converts visitors into leads. This is the hub for all your marketing efforts.",
+    description: "A fast, mobile-first website paired with comprehensive SEO strategy covering traditional search, local pack, and AI-powered search assistants.",
     features: [
-      "Mobile-optimized (60%+ of traffic is mobile)",
-      "Fast loading (<3 seconds)",
-      "Clear calls-to-action",
+      "Mobile-optimized website (<3 second load time)",
       "Service area pages for local SEO",
-      "Online booking integration"
-    ],
-    href: "/services/website-design"
-  },
-  {
-    icon: Search,
-    title: "AI-Powered SEO",
-    subtitle: "Be Found Everywhere",
-    isFoundation: true,
-    description: "Comprehensive SEO strategy covering traditional search, local pack, and AI-powered search assistants.",
-    features: [
       "Keyword research & competitor analysis",
-      "Technical SEO optimization",
-      "Local SEO & Google Business Profile",
+      "Technical SEO & schema markup",
       "AEO/GEO for ChatGPT visibility",
-      "Monthly ranking & traffic reports"
+      "Google Business Profile optimization"
     ],
-    href: "/services/ai-seo-hub"
+    stats: [
+      { value: "312%", label: "Avg organic traffic increase" },
+      { value: "40%", label: "AI search visibility" }
+    ],
+    href: "/services/ai-seo-hub",
+    image: null
   },
   {
-    icon: Megaphone,
-    title: "Paid Media",
+    id: "paid-search",
+    label: "Paid Search",
+    icon: Search,
+    title: "Google PPC, LSA & Meta Ads",
     subtitle: "Immediate Visibility",
-    isFoundation: true,
-    description: "Strategic paid advertising across Google, Meta, and local platforms to generate leads immediately.",
+    description: "Strategic paid advertising across Google, Meta, and local platforms to generate qualified leads from day one.",
     features: [
-      "Google PPC (Search & Display)",
-      "Google Local Service Ads (LSA)",
+      "Google Search & Display campaigns",
+      "Google Local Service Ads (LSA) with Google Guarantee",
+      "Microsoft Bing Ads for 35+ demographics",
       "Meta Ads (Facebook & Instagram)",
       "TikTok for brand awareness",
-      "Retargeting campaigns"
+      "Conversion tracking & optimization"
     ],
-    href: "/services/paid-media"
+    stats: [
+      { value: "4.2x", label: "Average ROAS" },
+      { value: "$23", label: "Avg cost per lead" }
+    ],
+    href: "/services/paid-media",
+    image: null
   },
   {
-    icon: Star,
-    title: "Reputation Management",
-    subtitle: "Build Trust at Scale",
-    isFoundation: true,
-    description: "Automated review generation and response management to build a 5-star reputation.",
+    id: "retargeting",
+    label: "Retargeting",
+    icon: RefreshCw,
+    title: "Retargeting & Remarketing",
+    subtitle: "Stay Top-of-Mind",
+    description: "Re-engage website visitors who didn't convert with strategic follow-up ads across all platforms. Perfect for high-ticket services with longer decision cycles.",
     features: [
-      "Automated review requests",
-      "Multi-platform monitoring",
-      "AI-assisted review responses",
-      "Negative review alerts",
-      "Competitor review tracking"
+      "Website visitor retargeting pixels",
+      "Cross-platform remarketing (Google, Meta, YouTube)",
+      "Dynamic product/service ads",
+      "Email list retargeting",
+      "Lookalike audience creation",
+      "Abandoned form follow-up"
     ],
-    href: "/services/reputation-management"
-  }
-];
-
-// AI Communication Services (Core)
-const aiCommunicationServices = [
-  {
-    icon: Bot,
-    title: "AI Receptionist",
-    subtitle: "Never Miss a Lead",
-    description: "24/7 AI-powered call answering that books appointments, qualifies leads, and handles emergencies—even when you're on a job.",
-    features: [
-      "Answer calls 24/7/365",
-      "Book appointments automatically",
-      "Handle emergency call escalation",
-      "Qualify leads before handoff",
-      "Integrate with your CRM"
+    stats: [
+      { value: "70%", label: "Higher conversion rate" },
+      { value: "50%", label: "Lower acquisition cost" }
     ],
-    href: "/services/ai-receptionist"
+    href: "/services/paid-media",
+    image: null
   },
   {
-    icon: MessageCircle,
-    title: "Conversational AI",
-    subtitle: "Engage on Every Channel",
-    description: "AI-powered chat that engages website visitors, answers questions, and converts them into qualified leads across all messaging platforms.",
+    id: "directories",
+    label: "Online Directories",
+    icon: FolderOpen,
+    title: "Citation Building & Directory Management",
+    subtitle: "Be Found Everywhere",
+    description: "Comprehensive directory submissions and citation building to boost local search rankings and ensure consistent NAP (Name, Address, Phone) across 100+ platforms.",
     features: [
-      "Website live chat widget",
-      "SMS text conversations",
-      "Facebook Messenger integration",
-      "Instant lead qualification",
-      "Seamless human handoff"
+      "100+ directory submissions",
+      "NAP consistency audit & cleanup",
+      "Industry-specific directories (Angi, HomeAdvisor, Houzz)",
+      "Apple Maps & Bing Places optimization",
+      "Review platform setup (Yelp, BBB, Thumbtack)",
+      "Monthly citation monitoring"
     ],
-    href: "/services/ai-receptionist"
+    stats: [
+      { value: "100+", label: "Directories managed" },
+      { value: "95%", label: "NAP consistency" }
+    ],
+    href: "/services/local-seo",
+    image: null
+  },
+  {
+    id: "repeat-referral",
+    label: "Repeat & Referral",
+    icon: Repeat,
+    title: "Repeat Business & Referral Programs",
+    subtitle: "Keep Customers Coming Back",
+    description: "Automated systems to turn one-time customers into loyal repeat clients and brand advocates who refer friends and family.",
+    features: [
+      "Automated review request sequences",
+      "Seasonal service reminders (HVAC tune-ups, etc.)",
+      "Referral program setup & tracking",
+      "Customer loyalty rewards",
+      "Maintenance plan marketing",
+      "Win-back campaigns for dormant customers"
+    ],
+    stats: [
+      { value: "47", label: "New reviews/month avg" },
+      { value: "35%", label: "Referral rate increase" }
+    ],
+    href: "/services/reputation-management",
+    image: null
+  },
+  {
+    id: "pay-per-lead",
+    label: "Pay Per Lead",
+    icon: DollarSign,
+    title: "Pay-Per-Lead Platforms",
+    subtitle: "Only Pay for Results",
+    description: "Strategic management of pay-per-lead platforms like Google LSA, Thumbtack, and HomeAdvisor to maximize ROI while minimizing wasted spend.",
+    features: [
+      "Google LSA setup & optimization",
+      "Thumbtack profile & response management",
+      "HomeAdvisor/Angi lead management",
+      "Lead quality filtering & disputes",
+      "Response time optimization",
+      "ROI tracking & reporting"
+    ],
+    stats: [
+      { value: "$45", label: "Avg cost per qualified lead" },
+      { value: "67", label: "LSA leads/month avg" }
+    ],
+    href: "/services/paid-media",
+    image: null
+  },
+  {
+    id: "social-media",
+    label: "Social Media",
+    icon: Share2,
+    title: "Social Media Management",
+    subtitle: "Build Your Brand",
+    description: "Professional social media presence across Facebook, Instagram, and YouTube to showcase your work, build trust, and stay connected with your community.",
+    features: [
+      "Content calendar & scheduling",
+      "Before/after project showcases",
+      "Customer testimonial videos",
+      "Community engagement & responses",
+      "Local event & promotion posts",
+      "YouTube channel management"
+    ],
+    stats: [
+      { value: "3x", label: "Engagement increase" },
+      { value: "25%", label: "Lead attribution" }
+    ],
+    href: "/services/social-media",
+    image: null
+  },
+  {
+    id: "crm",
+    label: "CRM",
+    icon: Database,
+    title: "CRM & Marketing Automation",
+    subtitle: "Never Lose a Lead",
+    description: "Centralized customer relationship management with automated follow-ups, pipeline tracking, and seamless integration with all your marketing channels.",
+    features: [
+      "All leads in one dashboard",
+      "Automated email/SMS sequences",
+      "Pipeline & job tracking",
+      "Appointment scheduling integration",
+      "AI-powered lead scoring",
+      "Revenue & ROI reporting"
+    ],
+    stats: [
+      { value: "98%", label: "Lead follow-up rate" },
+      { value: "2x", label: "Conversion improvement" }
+    ],
+    href: "/services/crm",
+    image: null
   }
 ];
 
@@ -891,98 +980,115 @@ const HomeServices = () => {
           </div>
         </section>
 
-        {/* Foundation Services */}
+        {/* Essential Stack - Tabbed Section */}
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="The Essential Stack"
-              title="Core Services Every Contractor"
-              titleHighlight="Needs"
-              description="These four pillars form the foundation of any successful home service marketing strategy."
+              title="Complete Marketing Toolkit for"
+              titleHighlight="Home Service Contractors"
+              description="Everything you need to attract, convert, and retain customers—all working together as one integrated system."
             />
 
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              {foundationServices.map((service, index) => (
-                <Link 
-                  key={index}
-                  to={service.href}
-                  className="group p-6 bg-card rounded-2xl border border-primary/30 hover:border-primary transition-all duration-300 hover:shadow-xl animate-fade-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <service.icon className="w-7 h-7 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-xs font-semibold text-primary uppercase tracking-wider">{service.subtitle}</p>
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                        {service.title}
-                      </h3>
+            <Tabs defaultValue="website-seo" className="w-full">
+              {/* Tab List - Scrollable on mobile */}
+              <div className="relative mb-8">
+                <TabsList className="w-full h-auto flex flex-nowrap overflow-x-auto scrollbar-hide gap-1 bg-card/80 backdrop-blur-sm p-2 rounded-2xl border border-border justify-start lg:justify-center">
+                  {essentialStackTabs.map((tab) => (
+                    <TabsTrigger
+                      key={tab.id}
+                      value={tab.id}
+                      className="flex-shrink-0 flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium transition-all data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg whitespace-nowrap"
+                    >
+                      <tab.icon className="w-4 h-4" />
+                      <span className="hidden sm:inline">{tab.label}</span>
+                      <span className="sm:hidden">{tab.label.split(' ')[0]}</span>
+                    </TabsTrigger>
+                  ))}
+                </TabsList>
+                {/* Scroll hint gradients */}
+                <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-secondary/30 to-transparent pointer-events-none lg:hidden" />
+              </div>
+
+              {/* Tab Content */}
+              {essentialStackTabs.map((tab) => (
+                <TabsContent key={tab.id} value={tab.id} className="mt-0 animate-fade-up">
+                  <div className="bg-card rounded-2xl border border-border overflow-hidden">
+                    <div className="grid lg:grid-cols-2 gap-0">
+                      {/* Content Side */}
+                      <div className="p-8 lg:p-10">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                            <tab.icon className="w-6 h-6 text-primary" />
+                          </div>
+                          <div>
+                            <p className="text-xs font-semibold text-primary uppercase tracking-wider">{tab.subtitle}</p>
+                            <h3 className="text-xl lg:text-2xl font-bold text-foreground">{tab.title}</h3>
+                          </div>
+                        </div>
+                        
+                        <p className="text-muted-foreground mb-6">{tab.description}</p>
+                        
+                        <ul className="space-y-3 mb-8">
+                          {tab.features.map((feature, fIndex) => (
+                            <li key={fIndex} className="flex items-start gap-3 text-sm text-foreground">
+                              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+
+                        <Link 
+                          to={tab.href}
+                          className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-colors"
+                        >
+                          Learn More
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </div>
+
+                      {/* Stats/Visual Side */}
+                      <div className="bg-gradient-to-br from-primary/5 via-primary/10 to-accent/5 p-8 lg:p-10 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-border">
+                        <div className="grid grid-cols-2 gap-6 mb-8">
+                          {tab.stats.map((stat, sIndex) => (
+                            <div key={sIndex} className="text-center p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-border">
+                              <div className="text-3xl lg:text-4xl font-display font-bold text-primary mb-1">{stat.value}</div>
+                              <div className="text-sm text-muted-foreground">{stat.label}</div>
+                            </div>
+                          ))}
+                        </div>
+                        
+                        {/* Visual Element */}
+                        <div className="relative">
+                          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl" />
+                          <div className="relative p-6 bg-card/90 backdrop-blur-sm rounded-2xl border border-primary/20">
+                            <div className="flex items-center gap-3 mb-4">
+                              <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
+                                <Zap className="w-5 h-5 text-green-500" />
+                              </div>
+                              <div>
+                                <div className="text-sm font-semibold text-foreground">Pro Tip</div>
+                                <div className="text-xs text-muted-foreground">From our experts</div>
+                              </div>
+                            </div>
+                            <p className="text-sm text-muted-foreground">
+                              {tab.id === "website-seo" && "60%+ of home service searches happen on mobile. Your website must load in under 3 seconds to keep those leads."}
+                              {tab.id === "paid-search" && "Google LSA leads cost 40% less than traditional PPC and come with the Google Guarantee badge for trust."}
+                              {tab.id === "retargeting" && "Website visitors who see retargeting ads are 70% more likely to convert than first-time visitors."}
+                              {tab.id === "directories" && "Consistent NAP (Name, Address, Phone) across all directories is the #1 factor for local pack rankings."}
+                              {tab.id === "repeat-referral" && "It costs 5x more to acquire a new customer than to retain an existing one. Invest in loyalty."}
+                              {tab.id === "pay-per-lead" && "Respond to LSA leads within 5 minutes and your booking rate increases by 400%."}
+                              {tab.id === "social-media" && "Before/after project photos get 3x more engagement than any other content type for contractors."}
+                              {tab.id === "crm" && "Businesses that follow up within 5 minutes are 100x more likely to connect with leads."}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
-                  
-                  <ul className="space-y-2 mb-4">
-                    {service.features.map((feature, fIndex) => (
-                      <li key={fIndex} className="flex items-center gap-2 text-sm text-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <span className="inline-flex items-center text-primary font-medium text-sm group-hover:underline">
-                    Learn More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Link>
+                </TabsContent>
               ))}
-            </div>
-
-            {/* AI Communication Services - Core */}
-            <div className="grid md:grid-cols-2 gap-6">
-              {aiCommunicationServices.map((service, index) => (
-                <Link 
-                  key={index}
-                  to={service.href}
-                  className="group p-6 bg-gradient-to-br from-card to-primary/5 rounded-2xl border border-primary/30 hover:border-primary transition-all duration-300 hover:shadow-xl animate-fade-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full">
-                      Core Service
-                    </span>
-                  </div>
-                  
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <service.icon className="w-7 h-7 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-xs font-semibold text-primary uppercase tracking-wider">{service.subtitle}</p>
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                        {service.title}
-                      </h3>
-                    </div>
-                  </div>
-                  
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
-                  
-                  <ul className="space-y-2 mb-4">
-                    {service.features.map((feature, fIndex) => (
-                      <li key={fIndex} className="flex items-center gap-2 text-sm text-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <span className="inline-flex items-center text-primary font-medium text-sm group-hover:underline">
-                    Learn More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Link>
-              ))}
-            </div>
+            </Tabs>
           </div>
         </section>
 
