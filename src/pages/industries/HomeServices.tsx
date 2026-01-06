@@ -1078,14 +1078,15 @@ const HomeServices = () => {
                     <TabsTrigger
                       key={tab.id}
                       value={tab.id}
-                      className={`flex-shrink-0 flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium transition-all whitespace-nowrap border border-transparent
-                        data-[state=inactive]:hover:bg-secondary/50
+                      className={`flex-shrink-0 flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold transition-all whitespace-nowrap border
+                        ${tab.colorClasses.border} ${tab.colorClasses.text}
+                        hover:${tab.colorClasses.bgLight}
                         data-[state=active]:${tab.colorClasses.bg} data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:border-transparent`}
                     >
-                      <div className={`w-6 h-6 rounded-lg flex items-center justify-center ${tab.colorClasses.bgLight} group-data-[state=active]:bg-white/20`}>
-                        <tab.icon className={`w-4 h-4 ${tab.colorClasses.text} data-[state=active]:text-white`} />
+                      <div className={`w-6 h-6 rounded-lg flex items-center justify-center ${tab.colorClasses.bgLight}`}>
+                        <tab.icon className={`w-4 h-4 ${tab.colorClasses.text}`} />
                       </div>
-                      <span className="hidden sm:inline">{tab.label}</span>
+                      <span className={`hidden sm:inline`}>{tab.label}</span>
                       <span className="sm:hidden">{tab.label.split(' ')[0]}</span>
                     </TabsTrigger>
                   ))}
