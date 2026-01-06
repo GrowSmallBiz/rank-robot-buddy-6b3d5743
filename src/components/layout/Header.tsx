@@ -12,8 +12,13 @@ const seoServices = [
   { name: "Link Building", href: "/services/link-building" },
 ];
 
-const industries = [
+// Top-level industries (shown in main Industries dropdown)
+const topLevelIndustries = [
   { name: "Home Services (HVAC, Plumbing, Electrical, Roofing)", href: "/industries/home-services" },
+];
+
+// SEO-specific industries (shown nested under SEO submenu)
+const seoIndustries = [
   { name: "HVAC, Plumbing & Electrical", href: "/industries/hvac" },
   { name: "Dental Practices", href: "/industries/dental" },
   { name: "Med Spas & Aesthetics", href: "/industries/med-spa" },
@@ -28,11 +33,13 @@ export const Header = () => {
   const [isSEOServicesOpen, setIsSEOServicesOpen] = useState(false);
   const [isSEOIndustriesOpen, setIsSEOIndustriesOpen] = useState(false);
   const [isGrowthSystemOpen, setIsGrowthSystemOpen] = useState(false);
+  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileSEOOpen, setMobileSEOOpen] = useState(false);
-  const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
+  const [mobileSEOIndustriesOpen, setMobileSEOIndustriesOpen] = useState(false);
   const [mobileGrowthSystemOpen, setMobileGrowthSystemOpen] = useState(false);
+  const [mobileTopIndustriesOpen, setMobileTopIndustriesOpen] = useState(false);
   const location = useLocation();
 
   const isServiceActive = 
@@ -180,7 +187,7 @@ export const Header = () => {
                           isSEOIndustriesOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
                         }`}
                       >
-                        {industries.map((industry) => (
+                        {seoIndustries.map((industry) => (
                           <Link
                             key={industry.href}
                             to={industry.href}
@@ -265,6 +272,38 @@ export const Header = () => {
                 >
                   Quad Bots AI Sales Team
                 </Link>
+              </div>
+            </div>
+
+            {/* Top-Level Industries Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsIndustriesOpen(true)}
+              onMouseLeave={() => setIsIndustriesOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname.startsWith("/industries/home-services") ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                Industries
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+
+              <div
+                className={`absolute top-full left-0 mt-2 w-80 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isIndustriesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                }`}
+              >
+                {topLevelIndustries.map((industry) => (
+                  <Link
+                    key={industry.href}
+                    to={industry.href}
+                    className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  >
+                    {industry.name}
+                  </Link>
+                ))}
               </div>
             </div>
 
@@ -377,18 +416,18 @@ export const Header = () => {
                           {service.name}
                         </Link>
                       ))}
-                      {/* Industries nested in mobile */}
+                      {/* SEO Industries nested in mobile */}
                       <div className="border-t border-border pt-2 mt-2">
                         <button
-                          onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
+                          onClick={() => setMobileSEOIndustriesOpen(!mobileSEOIndustriesOpen)}
                           className="flex items-center justify-between w-full py-2 text-muted-foreground hover:text-primary font-medium"
                         >
                           Industries We Serve
-                          <ChevronDown className={`w-4 h-4 transition-transform ${mobileIndustriesOpen ? "rotate-180" : ""}`} />
+                          <ChevronDown className={`w-4 h-4 transition-transform ${mobileSEOIndustriesOpen ? "rotate-180" : ""}`} />
                         </button>
-                        {mobileIndustriesOpen && (
+                        {mobileSEOIndustriesOpen && (
                           <div className="pl-4 space-y-2">
-                            {industries.map((industry) => (
+                            {seoIndustries.map((industry) => (
                               <Link
                                 key={industry.href}
                                 to={industry.href}
@@ -475,6 +514,31 @@ export const Header = () => {
                 >
                   Quad Bots AI Sales Team
                 </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Mobile: Top-Level Industries */}
+          <div className="space-y-2">
+            <button
+              onClick={() => setMobileTopIndustriesOpen(!mobileTopIndustriesOpen)}
+              className="flex items-center justify-between w-full text-foreground font-medium"
+            >
+              Industries
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileTopIndustriesOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileTopIndustriesOpen && (
+              <div className="pl-4 space-y-2">
+                {topLevelIndustries.map((industry) => (
+                  <Link
+                    key={industry.href}
+                    to={industry.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block py-2 text-muted-foreground hover:text-primary"
+                  >
+                    {industry.name}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
