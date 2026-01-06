@@ -108,63 +108,115 @@ const marketingFunnel = [
   }
 ];
 
-// Platform Recommendations by Trade - Funnel Style
+// Platform Recommendations by Trade - Funnel Style with unique colors
 const platformRecommendations = [
   {
     trade: "HVAC",
     icon: Flame,
-    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google LSA", "Google PPC", "Meta (FB)", "Nextdoor"],
     funnel: ["Lead Capture", "Quote Request", "Scheduling", "Service", "Review"],
-    strategy: "Emergency-focused keywords + seasonal campaigns. Google LSA is king for urgent AC/heating repairs. Meta excels for maintenance plan promotion.",
-    seasonality: "Peak: Summer (AC) & Winter (Heating)"
+    strategy: "Emergency-focused keywords + seasonal campaigns. Google LSA is king for urgent AC/heating repairs.",
+    seasonality: "Peak: Summer (AC) & Winter (Heating)",
+    color: "blue" as const
   },
   {
     trade: "Plumbing",
     icon: Droplets,
-    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google LSA", "Google PPC", "YouTube", "Yelp"],
     funnel: ["Emergency Call", "Dispatch", "Diagnosis", "Repair", "Review"],
     strategy: "24/7 emergency visibility is critical. LSA for urgent leads, PPC for drain cleaning & water heaters.",
-    seasonality: "Year-round with freeze & holiday spikes"
+    seasonality: "Year-round with freeze & holiday spikes",
+    color: "cyan" as const
   },
   {
     trade: "Electrical",
     icon: Plug,
-    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google PPC", "Google LSA", "Meta (FB/IG)", "HomeAdvisor"],
     funnel: ["Service Request", "Consultation", "Estimate", "Installation", "Follow-up"],
     strategy: "Focus on safety-related searches and home renovation keywords. EV charger installation is a growing opportunity.",
-    seasonality: "Steady demand, storm season spikes"
+    seasonality: "Steady demand, storm season spikes",
+    color: "amber" as const
   },
   {
     trade: "Roofing",
     icon: Home,
-    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google PPC", "Meta (FB/IG)", "Google LSA", "Houzz"],
     funnel: ["Storm Lead", "Inspection", "Estimate", "Contract", "Project Complete"],
     strategy: "Storm damage campaigns + visual before/after content on Meta/IG. Longer sales cycle requires strong retargeting.",
-    seasonality: "Peak: Spring & Fall seasons"
+    seasonality: "Peak: Spring & Fall seasons",
+    color: "emerald" as const
   },
   {
     trade: "Remodeling",
     icon: Hammer,
-    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Meta (FB/IG)", "Houzz", "Pinterest", "Google PPC"],
     funnel: ["Inspiration", "Consultation", "Design", "Build", "Reveal"],
-    strategy: "Visual-first approach. High-quality project photos on Instagram, Pinterest, and Houzz. Nurture campaigns essential.",
-    seasonality: "Peak: Spring & Fall, Q1 kitchen/bath"
+    strategy: "Visual-first approach. High-quality project photos on Instagram, Pinterest, and Houzz.",
+    seasonality: "Peak: Spring & Fall, Q1 kitchen/bath",
+    color: "pink" as const
   },
   {
     trade: "General Contractor",
     icon: Wrench,
-    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google PPC", "Meta (FB)", "Houzz", "Nextdoor"],
     funnel: ["Project Inquiry", "Site Visit", "Proposal", "Build Phase", "Handover"],
     strategy: "Showcase portfolio diversity. Target homeowners planning major projects. Reviews and referrals are critical.",
-    seasonality: "Year-round with spring surge"
+    seasonality: "Year-round with spring surge",
+    color: "violet" as const
   }
 ];
+
+// Color configurations for funnel cards
+const colorConfig = {
+  blue: {
+    gradient: "from-blue-500 to-blue-600",
+    bg: "bg-blue-500",
+    bgLight: "bg-blue-500/10",
+    text: "text-blue-500",
+    border: "border-blue-500/30",
+    steps: ["bg-blue-500", "bg-blue-500/80", "bg-blue-500/60", "bg-blue-500/40", "bg-blue-500/25"]
+  },
+  cyan: {
+    gradient: "from-cyan-500 to-cyan-600",
+    bg: "bg-cyan-500",
+    bgLight: "bg-cyan-500/10",
+    text: "text-cyan-500",
+    border: "border-cyan-500/30",
+    steps: ["bg-cyan-500", "bg-cyan-500/80", "bg-cyan-500/60", "bg-cyan-500/40", "bg-cyan-500/25"]
+  },
+  amber: {
+    gradient: "from-amber-500 to-amber-600",
+    bg: "bg-amber-500",
+    bgLight: "bg-amber-500/10",
+    text: "text-amber-500",
+    border: "border-amber-500/30",
+    steps: ["bg-amber-500", "bg-amber-500/80", "bg-amber-500/60", "bg-amber-500/40", "bg-amber-500/25"]
+  },
+  emerald: {
+    gradient: "from-emerald-500 to-emerald-600",
+    bg: "bg-emerald-500",
+    bgLight: "bg-emerald-500/10",
+    text: "text-emerald-500",
+    border: "border-emerald-500/30",
+    steps: ["bg-emerald-500", "bg-emerald-500/80", "bg-emerald-500/60", "bg-emerald-500/40", "bg-emerald-500/25"]
+  },
+  pink: {
+    gradient: "from-pink-500 to-pink-600",
+    bg: "bg-pink-500",
+    bgLight: "bg-pink-500/10",
+    text: "text-pink-500",
+    border: "border-pink-500/30",
+    steps: ["bg-pink-500", "bg-pink-500/80", "bg-pink-500/60", "bg-pink-500/40", "bg-pink-500/25"]
+  },
+  violet: {
+    gradient: "from-violet-500 to-violet-600",
+    bg: "bg-violet-500",
+    bgLight: "bg-violet-500/10",
+    text: "text-violet-500",
+    border: "border-violet-500/30",
+    steps: ["bg-violet-500", "bg-violet-500/80", "bg-violet-500/60", "bg-violet-500/40", "bg-violet-500/25"]
+  }
+};
 
 // Foundation Services
 const foundationServices = [
@@ -597,88 +649,84 @@ const HomeServices = () => {
             />
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {platformRecommendations.map((trade, index) => (
-                <div 
-                  key={index}
-                  className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-to-b from-card to-background hover:border-primary/50 transition-all duration-500 animate-fade-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {/* Card Content */}
-                  <div className="p-6">
-                    {/* Trade Header with Icon */}
-                    <div className="flex flex-col items-center text-center mb-6">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
-                        <trade.icon className="w-6 h-6 text-primary" />
-                      </div>
-                      <h3 className="text-xl font-bold text-foreground">{trade.trade}</h3>
-                      <p className="text-xs text-muted-foreground mt-1">Marketing Funnel</p>
-                    </div>
-
-                    {/* Funnel Visualization */}
-                    <div className="space-y-2 mb-6">
-                      {trade.funnel.map((step, stepIndex) => {
-                        const widthClasses = [
-                          "w-full",
-                          "w-[92%]",
-                          "w-[84%]",
-                          "w-[76%]",
-                          "w-[68%]"
-                        ];
-                        const opacityClasses = [
-                          "bg-primary text-primary-foreground",
-                          "bg-primary/80 text-primary-foreground",
-                          "bg-primary/60 text-primary-foreground",
-                          "bg-primary/40 text-foreground",
-                          "bg-primary/25 text-foreground"
-                        ];
-                        return (
-                          <div key={stepIndex} className="flex flex-col items-center">
-                            <div 
-                              className={`${widthClasses[stepIndex]} ${opacityClasses[stepIndex]} py-2.5 px-4 rounded-lg text-center text-sm font-medium transition-all duration-300 group-hover:scale-[1.02]`}
-                            >
-                              {step}
-                            </div>
-                            {stepIndex < trade.funnel.length - 1 && (
-                              <div className="text-muted-foreground text-xs my-1">↓</div>
-                            )}
-                          </div>
-                        );
-                      })}
-                    </div>
-
-                    {/* Optimized Badge */}
-                    <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground mb-4">
-                      <Zap className="w-3 h-3 text-primary" />
-                      <span>Optimized for high conversion</span>
-                    </div>
-
-                    {/* Divider */}
-                    <div className="border-t border-border pt-4">
-                      {/* Top Platforms */}
-                      <div className="mb-3">
-                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Top Platforms</p>
-                        <div className="flex flex-wrap justify-center gap-1.5">
-                          {trade.topPlatforms.map((platform, pIndex) => (
-                            <span key={pIndex} className="text-xs px-2 py-1 bg-secondary rounded-full text-foreground">
-                              {platform}
-                            </span>
-                          ))}
+              {platformRecommendations.map((trade, index) => {
+                const colors = colorConfig[trade.color];
+                return (
+                  <div 
+                    key={index}
+                    className={`group relative overflow-hidden rounded-2xl border ${colors.border} bg-gradient-to-b from-card to-background hover:border-opacity-60 transition-all duration-500 animate-fade-up`}
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    {/* Card Content */}
+                    <div className="p-6">
+                      {/* Trade Header with Icon */}
+                      <div className="flex flex-col items-center text-center mb-6">
+                        <div className={`w-12 h-12 rounded-full ${colors.bgLight} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
+                          <trade.icon className={`w-6 h-6 ${colors.text}`} />
                         </div>
+                        <h3 className="text-xl font-bold text-foreground">{trade.trade}</h3>
+                        <p className="text-xs text-muted-foreground mt-1">Marketing Funnel</p>
                       </div>
 
-                      {/* Strategy */}
-                      <p className="text-xs text-muted-foreground text-center leading-relaxed">
-                        {trade.strategy}
-                      </p>
-                      
-                      {/* Seasonality */}
-                      <p className="text-xs text-primary/80 text-center mt-2 italic">
-                        {trade.seasonality}
-                      </p>
+                      {/* Funnel Visualization */}
+                      <div className="space-y-2 mb-6">
+                        {trade.funnel.map((step, stepIndex) => {
+                          const widthClasses = [
+                            "w-full",
+                            "w-[92%]",
+                            "w-[84%]",
+                            "w-[76%]",
+                            "w-[68%]"
+                          ];
+                          return (
+                            <div key={stepIndex} className="flex flex-col items-center">
+                              <div 
+                                className={`${widthClasses[stepIndex]} ${colors.steps[stepIndex]} py-2.5 px-4 rounded-lg text-center text-sm font-medium text-white transition-all duration-300 group-hover:scale-[1.02]`}
+                              >
+                                {step}
+                              </div>
+                              {stepIndex < trade.funnel.length - 1 && (
+                                <div className="text-muted-foreground text-xs my-1">↓</div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      {/* Optimized Badge */}
+                      <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground mb-4">
+                        <Zap className={`w-3 h-3 ${colors.text}`} />
+                        <span>Optimized for high conversion</span>
+                      </div>
+
+                      {/* Divider */}
+                      <div className="border-t border-border pt-4">
+                        {/* Top Platforms */}
+                        <div className="mb-3">
+                          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Top Platforms</p>
+                          <div className="flex flex-wrap justify-center gap-1.5">
+                            {trade.topPlatforms.map((platform, pIndex) => (
+                              <span key={pIndex} className={`text-xs px-2 py-1 ${colors.bgLight} ${colors.text} rounded-full`}>
+                                {platform}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Strategy */}
+                        <p className="text-xs text-muted-foreground text-center leading-relaxed">
+                          {trade.strategy}
+                        </p>
+                        
+                        {/* Seasonality */}
+                        <p className={`text-xs ${colors.text} text-center mt-2 italic`}>
+                          {trade.seasonality}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
