@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
@@ -255,6 +256,37 @@ const AEO = () => {
         ]}
         title="AEO Success Stories"
         subtitle="See how businesses are getting cited by AI platforms"
+      />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "Martinez Family Law",
+            location: "Austin, TX",
+            industry: "Legal Services",
+            challenge: "Not appearing in AI assistant recommendations despite strong web presence.",
+            timeframe: "4 months",
+            metrics: [
+              { label: "AI Assistant Citations", before: "0", after: "28", improvement: "+28" },
+              { label: "Voice Search Appearances", before: "None", after: "Regular", improvement: "Active" },
+              { label: "AI-Referred Clients", before: "0/mo", after: "15/mo", improvement: "+15" },
+            ],
+          },
+          {
+            company: "Radiance Aesthetics",
+            location: "Miami, FL",
+            industry: "Medical Spa",
+            challenge: "Competitors being recommended by Siri and Google Assistant instead.",
+            timeframe: "5 months",
+            metrics: [
+              { label: "Featured Snippets", before: "2", after: "18", improvement: "+800%" },
+              { label: "FAQ Schema Answers", before: "0", after: "45", improvement: "+45" },
+              { label: "Voice Query Traffic", before: "120/mo", after: "890/mo", improvement: "+642%" },
+            ],
+          },
+        ]}
+        title="AEO Case Studies"
+        subtitle="How businesses are becoming the answer AI assistants recommend"
       />
 
       <FAQSection

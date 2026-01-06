@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, technicalSeoBlogPosts } from "@/components/sections/BlogSection";
@@ -270,6 +271,37 @@ const TechnicalSEO = () => {
         testimonials={technicalSeoTestimonials}
         title="Technical SEO Success Stories"
         subtitle="See how businesses transformed their site performance and rankings"
+      />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "LuxeHome Remodeling",
+            location: "San Francisco, CA",
+            industry: "Home Services",
+            challenge: "Slow website causing high bounce rates and poor mobile experience.",
+            timeframe: "6 weeks",
+            metrics: [
+              { label: "Page Load Time", before: "8.2s", after: "1.9s", improvement: "-77%" },
+              { label: "Core Web Vitals", before: "Fail", after: "Pass", improvement: "Pass" },
+              { label: "Organic Traffic", before: "1,200/mo", after: "4,800/mo", improvement: "+300%" },
+            ],
+          },
+          {
+            company: "Pacific Law Group",
+            location: "Los Angeles, CA",
+            industry: "Legal Services",
+            challenge: "Technical issues preventing Google from properly indexing key pages.",
+            timeframe: "8 weeks",
+            metrics: [
+              { label: "Indexed Pages", before: "45", after: "320", improvement: "+611%" },
+              { label: "Crawl Errors", before: "847", after: "12", improvement: "-99%" },
+              { label: "Keyword Rankings", before: "23", after: "156", improvement: "+578%" },
+            ],
+          },
+        ]}
+        title="Technical SEO Case Studies"
+        subtitle="See how technical fixes unlock massive ranking improvements"
       />
 
       <PlatformAdvantagesSection variant="compact" serviceType="technical" />

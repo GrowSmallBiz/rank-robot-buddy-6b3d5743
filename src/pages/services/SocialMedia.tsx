@@ -5,6 +5,7 @@ import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 
 const socialMediaTestimonials = [
@@ -725,6 +726,37 @@ const SocialMedia = () => {
         testimonials={socialMediaTestimonials}
         title="Social Media Success Stories"
         subtitle="See how businesses grow their brand presence and engagement"
+      />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "Glow Aesthetics",
+            location: "Los Angeles, CA",
+            industry: "Medical Spa",
+            challenge: "No social presence despite offering premium aesthetic services.",
+            timeframe: "6 months",
+            metrics: [
+              { label: "Instagram Followers", before: "500", after: "15,000", improvement: "+2,900%" },
+              { label: "Engagement Rate", before: "0.8%", after: "6.2%", improvement: "+675%" },
+              { label: "Social-Driven Leads", before: "3/mo", after: "42/mo", improvement: "+1,300%" },
+            ],
+          },
+          {
+            company: "Elite Fitness Studio",
+            location: "Miami, FL",
+            industry: "Fitness",
+            challenge: "Inconsistent posting and no strategy for member acquisition.",
+            timeframe: "4 months",
+            metrics: [
+              { label: "Monthly Reach", before: "2,500", after: "45,000", improvement: "+1,700%" },
+              { label: "New Member Signups", before: "8/mo", after: "35/mo", improvement: "+338%" },
+              { label: "Content Engagement", before: "45/post", after: "380/post", improvement: "+744%" },
+            ],
+          },
+        ]}
+        title="Social Media Case Studies"
+        subtitle="How we transform social presence into business growth"
       />
 
       {/* FAQ Section */}

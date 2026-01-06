@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 
 const paidMediaTestimonials = [
@@ -645,6 +646,37 @@ const PaidMedia = () => {
         testimonials={paidMediaTestimonials}
         title="Paid Media Success Stories"
         subtitle="See how businesses maximize their advertising ROI"
+      />
+
+      <CaseStudySection
+        caseStudies={[
+          {
+            company: "ProServ HVAC",
+            location: "Phoenix, AZ",
+            industry: "HVAC Services",
+            challenge: "High cost per lead and wasted ad spend on unqualified clicks.",
+            timeframe: "3 months",
+            metrics: [
+              { label: "Cost Per Lead", before: "$145", after: "$52", improvement: "-64%" },
+              { label: "Qualified Leads", before: "28/mo", after: "95/mo", improvement: "+239%" },
+              { label: "ROAS", before: "2.1x", after: "6.8x", improvement: "+224%" },
+            ],
+          },
+          {
+            company: "Luxe Med Spa",
+            location: "Dallas, TX",
+            industry: "Medical Spa",
+            challenge: "Facebook ads not converting despite high engagement.",
+            timeframe: "4 months",
+            metrics: [
+              { label: "Conversion Rate", before: "1.2%", after: "4.8%", improvement: "+300%" },
+              { label: "Cost Per Booking", before: "$89", after: "$31", improvement: "-65%" },
+              { label: "Monthly Revenue", before: "$45K", after: "$142K", improvement: "+216%" },
+            ],
+          },
+        ]}
+        title="Paid Media Case Studies"
+        subtitle="Real ROI results from our paid advertising campaigns"
       />
 
       <FAQSection
