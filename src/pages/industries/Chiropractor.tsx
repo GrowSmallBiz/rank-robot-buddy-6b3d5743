@@ -361,7 +361,8 @@ const Chiropractor = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Chiropractic Marketing Partner"
+        title="Why Choose GrowSmallBiz for Chiropractic Marketing"
+        subtitle="Your Chiropractic Marketing Partner"
         description="We specialize in helping chiropractic practices attract new patients, build trust through education, and become the go-to wellness provider in your community."
         items={[
           { title: "Chiropractic Experts", description: "We focus exclusively on chiropractic practices—we know what works for wellness and pain relief marketing.", icon: Heart },

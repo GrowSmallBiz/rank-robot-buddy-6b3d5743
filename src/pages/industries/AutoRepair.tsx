@@ -361,7 +361,8 @@ const AutoRepair = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Auto Repair Marketing Partner"
+        title="Why Choose GrowSmallBiz for Auto Repair Marketing"
+        subtitle="Your Auto Repair Marketing Partner"
         description="We specialize in helping independent auto repair shops dominate local search, capture more service calls, and outrank the national chains."
         items={[
           { title: "Auto Industry Experts", description: "We focus exclusively on auto repair shops—we know what works for independent mechanics.", icon: Car },

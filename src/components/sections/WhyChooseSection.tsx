@@ -48,8 +48,8 @@ const defaultWhyChooseItems: WhyChooseItem[] = [
 ];
 
 export const WhyChooseSection = ({
-  title = "Your Growth Marketing Partner",
-  subtitle = "Why Choose GrowSmallBiz",
+  title = "Why Choose GrowSmallBiz",
+  subtitle = "Your Growth Marketing Partner",
   description = "Our integrated marketing ecosystem systematically increases your visibility, generates qualified leads, converts prospects into loyal clients, and maximizes customer lifetime value.",
   items = defaultWhyChooseItems,
 }: WhyChooseSectionProps) => {

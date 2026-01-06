@@ -241,7 +241,8 @@ const TechnicalSEO = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Technical SEO Partner"
+        title="Why Choose GrowSmallBiz for Technical SEO"
+        subtitle="Your Technical SEO Partner"
         description="We fix the hidden issues that hold your site back—speed, indexing, Core Web Vitals, and more—so your content can rank where it deserves."
         items={[
           { title: "Deep Technical Audits", description: "We uncover every crawl error, redirect chain, duplicate page, and indexing issue holding your site back.", icon: Shield },

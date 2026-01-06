@@ -436,7 +436,8 @@ const QuadBots = () => {
 
 
         <WhyChooseSection 
-          title="Your AI Automation Partner"
+          title="Why Choose GrowSmallBiz for AI Automation"
+          subtitle="Your AI Automation Partner"
           description="Four specialized AI bots work together 24/7 to capture leads, qualify prospects, book appointments, and follow up—so you can focus on closing deals."
           items={[
             { title: "4 AI Bots, One System", description: "Lead Generator, Conversational AI, Voice AI, and Supervisor OS work together seamlessly.", icon: Bot },

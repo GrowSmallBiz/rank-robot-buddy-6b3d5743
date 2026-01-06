@@ -236,7 +236,8 @@ const LinkBuilding = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your Link Building Partner"
+        title="Why Choose GrowSmallBiz for Link Building"
+        subtitle="Your Link Building Partner"
         description="We build high-quality, brand-safe backlinks through ethical outreach and digital PR—boosting your domain authority and search rankings sustainably."
         items={[
           { title: "Quality Over Quantity", description: "We focus on authoritative, editorial links from reputable publishers—never PBNs or link farms.", icon: Shield },

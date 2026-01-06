@@ -252,7 +252,8 @@ const OnPageSEO = () => {
       </section>
 
       <WhyChooseSection 
-        title="Your On-Page SEO Partner"
+        title="Why Choose GrowSmallBiz for On-Page SEO"
+        subtitle="Your On-Page SEO Partner"
         description="We optimize every element of your content—from titles and meta tags to internal links and schema—to maximize your search visibility and conversions."
         items={[
           { title: "Content Optimization Experts", description: "We transform underperforming pages into high-ranking assets with strategic keyword optimization.", icon: FileText },

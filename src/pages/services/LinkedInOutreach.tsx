@@ -413,7 +413,8 @@ const LinkedInOutreach = () => {
         </section>
 
         <WhyChooseSection 
-          title="Your B2B Lead Generation Partner"
+          title="Why Choose GrowSmallBiz for LinkedIn Outreach"
+          subtitle="Your B2B Lead Generation Partner"
           description="We build and execute LinkedIn outreach campaigns that connect you with decision-makers in your target market—generating qualified meetings on autopilot."
           items={[
             { title: "ICP-Aligned Targeting", description: "We identify and target decision-makers who match your ideal customer profile precisely.", icon: Target },
