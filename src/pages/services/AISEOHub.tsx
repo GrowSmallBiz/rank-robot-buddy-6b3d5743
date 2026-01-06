@@ -9,6 +9,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { Helmet } from "react-helmet";
+import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import {
   Search,
   Bot,
@@ -1285,6 +1286,43 @@ const AISEOHub = () => {
             </div>
           </div>
         </section>
+        <WhyChooseSection
+          title="Why Choose GrowSmallBiz for AI SEO"
+          subtitle="Your AI SEO Partner"
+          description="We combine cutting-edge AI technology with proven SEO expertise to deliver results that traditional agencies can't match. Our full-funnel approach ensures visibility across all platforms."
+          items={[
+            {
+              title: "AI-Powered Analysis",
+              description: "Machine learning algorithms analyze thousands of ranking factors to identify your highest-impact opportunities.",
+              icon: Bot,
+            },
+            {
+              title: "Faster Results",
+              description: "Automated optimization and predictive modeling accelerate your path to page one rankings.",
+              icon: Zap,
+            },
+            {
+              title: "Future-Proof Strategy",
+              description: "Stay ahead of algorithm updates with proactive AEO and GEO strategies for AI-first search.",
+              icon: Shield,
+            },
+            {
+              title: "Data-Driven Decisions",
+              description: "Real-time analytics and AI insights guide every optimization decision for maximum ROI.",
+              icon: BarChart3,
+            },
+            {
+              title: "Precision Targeting",
+              description: "Identify and capture high-intent keywords that drive qualified leads and conversions.",
+              icon: Target,
+            },
+            {
+              title: "Continuous Growth",
+              description: "AI monitoring and automated alerts ensure your rankings improve month over month.",
+              icon: TrendingUp,
+            },
+          ]}
+        />
 
         <AnimatedStatsSection stats={aiSeoHubStats} columns={4} />
 
