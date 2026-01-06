@@ -8,8 +8,44 @@ import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { PersonCTA } from "@/components/services/PersonCTA";
+import { createContactCTA } from "@/config/contactCTA";
 import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield, MapPin, Bot, Eye, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const aboutFaqs = [
+  {
+    question: "What types of businesses does GrowSmallBiz work with?",
+    answer: "We specialize in helping local service-based businesses including HVAC companies, dental practices, med spas, chiropractors, auto repair shops, photographers, and similar industries. Our strategies are tailored to businesses that serve local customers and want to dominate their geographic market."
+  },
+  {
+    question: "How is GrowSmallBiz different from other digital marketing agencies?",
+    answer: "We combine traditional SEO expertise with cutting-edge AI optimization (AEO & GEO), ensuring your business is visible both on Google and AI platforms like ChatGPT. Plus, we focus exclusively on local businesses, so we understand the unique challenges and opportunities you face."
+  },
+  {
+    question: "What results can I expect and how quickly?",
+    answer: "Most clients see noticeable improvements within 3-4 months, with significant results by 6 months. Typical outcomes include 2-3x increase in organic traffic, substantial growth in leads and phone calls, and improved Google rankings. Results vary based on your starting point and competition."
+  },
+  {
+    question: "Do you require long-term contracts?",
+    answer: "We offer flexible engagement options. While SEO is a long-term strategy and we recommend a minimum 6-month commitment to see meaningful results, we don't lock you into rigid multi-year contracts. Our goal is to earn your business through results, not contracts."
+  },
+  {
+    question: "How do you measure and report success?",
+    answer: "We provide transparent monthly reports showing rankings, traffic, leads, and calls. We focus on metrics that matter to your business—not just vanity metrics. You'll always know exactly what we're doing and how it's impacting your bottom line."
+  },
+  {
+    question: "What is your pricing structure?",
+    answer: "Our pricing is customized based on your business size, competition, and goals. We offer packages starting from comprehensive local SEO to full-service digital marketing. Schedule a free assessment to get a personalized quote for your specific situation."
+  },
+];
+
+const aboutContactCTA = createContactCTA({
+  title: "Have more questions about GrowSmallBiz?",
+  description: "We're here to help!",
+  tagline: "Let's discuss how we can help grow your business together."
+});
 
 const aboutTestimonials = [
   {
@@ -251,6 +287,18 @@ const About = () => {
         subtitle="Expert tips and strategies for growing your local business"
         showViewAll={true}
         viewAllLink="/blog"
+      />
+
+      <FAQSection 
+        faqs={aboutFaqs}
+        title="Frequently Asked Questions"
+        subtitle="Common questions about working with GrowSmallBiz"
+        contactCTA={aboutContactCTA}
+      />
+
+      <PersonCTA
+        title="Let's Talk About Your Business"
+        description="Schedule a free strategy call to discuss how we can help your local business grow online."
       />
 
       <CTASection />
