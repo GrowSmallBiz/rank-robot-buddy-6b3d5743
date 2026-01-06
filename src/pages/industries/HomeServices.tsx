@@ -328,6 +328,16 @@ const automationNodes = [
   { id: "purchase", label: "Purchase", icon: BadgeDollarSign, x: 40, y: 80 }
 ];
 
+// LLM Visibility Tracking Platforms
+const llmPlatforms = [
+  { name: "Gemini", visibility: "2 topics", visibilityPct: 33, sentiment: 82, icon: "✦" },
+  { name: "ChatGPT", visibility: "2 topics", visibilityPct: 33, sentiment: 71, icon: "◎" },
+  { name: "Perplexity", visibility: "2 topics", visibilityPct: 33, sentiment: 73, icon: "✧" },
+  { name: "Grok", visibility: "0 topics", visibilityPct: 0, sentiment: 82, icon: "◈" },
+  { name: "Copilot", visibility: "1 topics", visibilityPct: 17, sentiment: 77, icon: "◇" },
+  { name: "Google AI Mode", visibility: "2 topics", visibilityPct: 33, sentiment: 78, icon: "G" }
+];
+
 // AI SEO Details
 const aiSeoStrategy = {
   title: "AI SEO Strategy",
@@ -976,6 +986,134 @@ const HomeServices = () => {
               titleHighlight="Process"
               description="Comprehensive SEO strategy covering keyword research, competitor analysis, technical optimization, and AI search visibility."
             />
+
+            {/* Why AI Search Ranking Matters - Hero Banner */}
+            <div className="mb-16 p-8 md:p-12 bg-gradient-to-br from-primary/20 via-purple-500/10 to-blue-500/10 rounded-3xl border border-primary/30 relative overflow-hidden">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute top-0 left-0 w-64 h-64 bg-primary rounded-full blur-3xl" />
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl" />
+              </div>
+              
+              <div className="relative z-10 max-w-4xl mx-auto text-center">
+                <span className="inline-block px-4 py-1 bg-primary/20 text-primary text-sm font-semibold rounded-full mb-4">
+                  ⚡ The Search Landscape is Changing
+                </span>
+                
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
+                  Ranking on Google Still Matters.<br />
+                  <span className="text-transparent bg-clip-text bg-gradient-primary">But AI Search is Becoming the New Decision-Maker.</span>
+                </h3>
+                
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                  Homeowners are asking AI who to call first—and it's not always the business ranking #1 on Google. 
+                  Your competitor may already be showing up in AI search, even if you aren't.
+                </p>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="p-4 bg-background/60 backdrop-blur-sm rounded-xl border border-border">
+                    <div className="text-3xl font-bold text-primary mb-1">40%+</div>
+                    <div className="text-sm text-muted-foreground">of consumers now use AI for local service recommendations</div>
+                  </div>
+                  <div className="p-4 bg-background/60 backdrop-blur-sm rounded-xl border border-border">
+                    <div className="text-3xl font-bold text-primary mb-1">6 Platforms</div>
+                    <div className="text-sm text-muted-foreground">AI platforms we track for your visibility</div>
+                  </div>
+                  <div className="p-4 bg-background/60 backdrop-blur-sm rounded-xl border border-border">
+                    <div className="text-3xl font-bold text-primary mb-1">24/7</div>
+                    <div className="text-sm text-muted-foreground">continuous monitoring & sentiment tracking</div>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <Button variant="hero" size="lg" asChild>
+                    <Link to="/free-assessment" className="inline-flex items-center gap-2">
+                      Free AI + Google SEO Audit
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </Button>
+                  <span className="text-sm text-muted-foreground">
+                    If you want more booked calls, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* LLM Visibility Tracking Section */}
+            <div className="mb-16 p-8 bg-card rounded-2xl border border-border">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center">
+                  <Eye className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold text-foreground">LLM Visibility & Sentiment Tracking</h4>
+                  <p className="text-sm text-muted-foreground">We monitor your brand across all major AI platforms</p>
+                </div>
+              </div>
+              
+              {/* LLM Platforms Table */}
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b border-border">
+                      <th className="text-left py-3 px-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Platform</th>
+                      <th className="text-left py-3 px-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                        Visibility
+                        <span className="ml-1 inline-block w-4 h-4 rounded-full bg-muted text-muted-foreground text-[10px] leading-4 text-center cursor-help" title="How often your brand appears in AI responses">ⓘ</span>
+                      </th>
+                      <th className="text-left py-3 px-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                        Sentiment
+                        <span className="ml-1 inline-block w-4 h-4 rounded-full bg-muted text-muted-foreground text-[10px] leading-4 text-center cursor-help" title="How positively AI platforms describe your brand">ⓘ</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {llmPlatforms.map((platform, index) => (
+                      <tr key={index} className="border-b border-border/50 hover:bg-secondary/30 transition-colors">
+                        <td className="py-4 px-4">
+                          <div className="flex items-center gap-3">
+                            <div className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center">
+                              <span className="text-lg">{platform.icon}</span>
+                            </div>
+                            <span className="font-medium text-foreground">{platform.name}</span>
+                          </div>
+                        </td>
+                        <td className="py-4 px-4">
+                          <div className="flex items-center gap-3">
+                            <span className="text-primary font-medium underline cursor-pointer">{platform.visibility}</span>
+                            <span className="text-muted-foreground">{platform.visibilityPct}%</span>
+                          </div>
+                        </td>
+                        <td className="py-4 px-4">
+                          <div className="flex items-center gap-2">
+                            <span className={`font-bold ${platform.sentiment >= 75 ? 'text-green-500' : platform.sentiment >= 50 ? 'text-yellow-500' : 'text-red-500'}`}>
+                              {platform.sentiment}%
+                            </span>
+                            <span className="text-green-500 text-xl">😊</span>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              
+              {/* Key Insight */}
+              <div className="mt-6 p-4 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-xl border border-amber-500/30">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Zap className="w-4 h-4 text-amber-500" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground mb-1">Why This Matters for Your Business</p>
+                    <p className="text-sm text-muted-foreground">
+                      The next homeowner may never scroll Google. AI may decide who gets the call first. 
+                      We track how each AI platform perceives your brand and ensure you're mentioned when customers ask "Who's the best HVAC company near me?"
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Visual Flow Diagram */}
             <div className="relative max-w-6xl mx-auto">
