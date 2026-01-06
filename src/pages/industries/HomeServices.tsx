@@ -45,9 +45,16 @@ import {
   Play,
   Share2
 } from "lucide-react";
+import { 
+  GeminiIcon, 
+  ChatGPTIcon, 
+  PerplexityIcon, 
+  GrokIcon, 
+  CopilotIcon, 
+  GoogleAIIcon 
+} from "@/components/icons/AIplatformIcons";
 
 import heroImage from "@/assets/industry-hvac-hero.jpg";
-
 // Marketing Funnel Stages
 const marketingFunnel = [
   {
@@ -330,12 +337,12 @@ const automationNodes = [
 
 // LLM Visibility Tracking Platforms
 const llmPlatforms = [
-  { name: "Gemini", visibility: "2 topics", visibilityPct: 33, sentiment: 82, icon: "✦" },
-  { name: "ChatGPT", visibility: "2 topics", visibilityPct: 33, sentiment: 71, icon: "◎" },
-  { name: "Perplexity", visibility: "2 topics", visibilityPct: 33, sentiment: 73, icon: "✧" },
-  { name: "Grok", visibility: "0 topics", visibilityPct: 0, sentiment: 82, icon: "◈" },
-  { name: "Copilot", visibility: "1 topics", visibilityPct: 17, sentiment: 77, icon: "◇" },
-  { name: "Google AI Mode", visibility: "2 topics", visibilityPct: 33, sentiment: 78, icon: "G" }
+  { name: "Gemini", visibility: "2 topics", visibilityPct: 33, sentiment: 82, IconComponent: GeminiIcon },
+  { name: "ChatGPT", visibility: "2 topics", visibilityPct: 33, sentiment: 71, IconComponent: ChatGPTIcon },
+  { name: "Perplexity", visibility: "2 topics", visibilityPct: 33, sentiment: 73, IconComponent: PerplexityIcon },
+  { name: "Grok", visibility: "0 topics", visibilityPct: 0, sentiment: 82, IconComponent: GrokIcon },
+  { name: "Copilot", visibility: "1 topics", visibilityPct: 17, sentiment: 77, IconComponent: CopilotIcon },
+  { name: "Google AI Mode", visibility: "2 topics", visibilityPct: 33, sentiment: 78, IconComponent: GoogleAIIcon }
 ];
 
 // AI SEO Details
@@ -1073,7 +1080,7 @@ const HomeServices = () => {
                         <td className="py-4 px-4">
                           <div className="flex items-center gap-3">
                             <div className="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center">
-                              <span className="text-lg">{platform.icon}</span>
+                              <platform.IconComponent size={20} />
                             </div>
                             <span className="font-medium text-foreground">{platform.name}</span>
                           </div>
