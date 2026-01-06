@@ -334,40 +334,76 @@ const aiSeoStrategy = {
   description: "Our comprehensive AI SEO approach ensures you're visible across all search platforms—traditional and AI-powered.",
   phases: [
     {
-      phase: "Discovery & Analysis",
+      phase: "Research & Analysis",
       icon: FileSearch,
       items: [
         "Deep keyword research (500+ terms per trade)",
-        "Competitor gap analysis",
-        "Current ranking audit",
+        "Competitor gap analysis & local SEO heatmap",
+        "Current ranking & citation audit",
         "Technical SEO assessment",
-        "Local citation audit"
+        "Backlink profile analysis"
       ]
     },
     {
-      phase: "Strategy & Implementation",
+      phase: "Optimization & Authority",
       icon: Target,
       items: [
-        "On-page optimization",
-        "Schema markup for rich snippets",
+        "On-page optimization & schema markup",
+        "Local directory submissions (100+ directories)",
         "Google Business Profile optimization",
         "AEO/GEO content strategy",
-        "Local landing pages by service area"
+        "Press release distribution & syndication"
       ]
     },
     {
-      phase: "Tracking & Optimization",
+      phase: "Link Building & Growth",
       icon: LineChart,
       items: [
-        "Weekly ranking reports",
-        "Organic traffic monitoring",
-        "Lead attribution tracking",
-        "Monthly strategy calls",
-        "Quarterly content updates"
+        "Strategic backlink acquisition",
+        "Guest posting & industry publications",
+        "Local citation building & cleanup",
+        "Weekly ranking & heatmap reports",
+        "Continuous content optimization"
       ]
     }
   ]
 };
+
+// SEO Components Visual
+const seoComponents = [
+  { 
+    id: "directories", 
+    label: "Local Directories", 
+    icon: MapPin, 
+    color: "blue",
+    description: "100+ directory submissions for NAP consistency",
+    examples: ["Yelp", "Yellow Pages", "Angi", "BBB", "Industry-specific"]
+  },
+  { 
+    id: "backlinks", 
+    label: "Backlink Acquisition", 
+    icon: Globe, 
+    color: "purple",
+    description: "Quality backlinks from authoritative sources",
+    examples: ["Guest posts", "Industry blogs", "Local news", "Partnerships"]
+  },
+  { 
+    id: "press", 
+    label: "Press Releases", 
+    icon: Megaphone, 
+    color: "amber",
+    description: "Syndicated across 400+ news outlets",
+    examples: ["Company news", "Awards", "Community events", "Milestones"]
+  },
+  { 
+    id: "heatmap", 
+    label: "Local SEO Heatmap", 
+    icon: BarChart3, 
+    color: "green",
+    description: "Visual ranking data across your service area",
+    examples: ["Grid-based ranking", "Competitor positions", "Opportunity zones"]
+  }
+];
 
 // Paid Media Details
 const paidMediaStrategy = {
@@ -981,6 +1017,117 @@ const HomeServices = () => {
                   <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/30">
                     <RefreshCw className="w-5 h-5 text-primary" />
                     <span className="text-sm font-medium text-primary">Refine & Repeat</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* SEO Components Grid */}
+              <div className="mt-12">
+                <h4 className="text-xl font-bold text-center mb-8 text-foreground">Key SEO Components</h4>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {seoComponents.map((component, index) => {
+                    const colorStyles = {
+                      blue: { bg: "bg-blue-500", bgLight: "bg-blue-500/10", text: "text-blue-500", border: "border-blue-500/30" },
+                      purple: { bg: "bg-purple-500", bgLight: "bg-purple-500/10", text: "text-purple-500", border: "border-purple-500/30" },
+                      amber: { bg: "bg-amber-500", bgLight: "bg-amber-500/10", text: "text-amber-500", border: "border-amber-500/30" },
+                      green: { bg: "bg-green-500", bgLight: "bg-green-500/10", text: "text-green-500", border: "border-green-500/30" }
+                    };
+                    const colors = colorStyles[component.color as keyof typeof colorStyles];
+                    
+                    return (
+                      <div 
+                        key={component.id}
+                        className={`group p-5 bg-gradient-to-br from-card to-${component.color}-500/5 rounded-xl border ${colors.border} hover:shadow-lg transition-all duration-300 animate-fade-up`}
+                        style={{ animationDelay: `${index * 0.1}s` }}
+                      >
+                        <div className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center mb-4`}>
+                          <component.icon className="w-6 h-6 text-white" />
+                        </div>
+                        
+                        <h5 className={`text-lg font-bold ${colors.text} mb-2`}>{component.label}</h5>
+                        <p className="text-sm text-muted-foreground mb-4">{component.description}</p>
+                        
+                        <div className="flex flex-wrap gap-1">
+                          {component.examples.slice(0, 3).map((example, eIndex) => (
+                            <span 
+                              key={eIndex}
+                              className={`px-2 py-1 text-xs ${colors.bgLight} ${colors.text} rounded-md`}
+                            >
+                              {example}
+                            </span>
+                          ))}
+                          {component.examples.length > 3 && (
+                            <span className="px-2 py-1 text-xs bg-muted text-muted-foreground rounded-md">
+                              +{component.examples.length - 3}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Local SEO Heatmap Visual */}
+              <div className="mt-12 p-8 bg-gradient-to-br from-green-500/10 via-card to-blue-500/10 rounded-2xl border border-border">
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  {/* Heatmap Visualization */}
+                  <div className="relative">
+                    <h4 className="text-lg font-bold mb-4 text-foreground flex items-center gap-2">
+                      <BarChart3 className="w-5 h-5 text-green-500" />
+                      Local SEO Heatmap Tracking
+                    </h4>
+                    
+                    {/* Grid Visualization */}
+                    <div className="grid grid-cols-5 gap-1 mb-4">
+                      {[
+                        "bg-green-500", "bg-green-400", "bg-green-500", "bg-yellow-400", "bg-red-400",
+                        "bg-green-400", "bg-green-500", "bg-green-500", "bg-green-400", "bg-yellow-400",
+                        "bg-green-500", "bg-green-500", "bg-green-600", "bg-green-500", "bg-green-400",
+                        "bg-yellow-400", "bg-green-400", "bg-green-500", "bg-green-500", "bg-yellow-500",
+                        "bg-red-400", "bg-yellow-500", "bg-green-400", "bg-yellow-400", "bg-red-500"
+                      ].map((color, index) => (
+                        <div 
+                          key={index}
+                          className={`aspect-square ${color} rounded-sm opacity-80 hover:opacity-100 transition-opacity cursor-pointer`}
+                          title={`Grid position ${index + 1}`}
+                        />
+                      ))}
+                    </div>
+                    
+                    {/* Legend */}
+                    <div className="flex items-center gap-4 text-xs">
+                      <div className="flex items-center gap-1">
+                        <div className="w-3 h-3 bg-green-500 rounded-sm" />
+                        <span className="text-muted-foreground">Top 3</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <div className="w-3 h-3 bg-yellow-400 rounded-sm" />
+                        <span className="text-muted-foreground">4-10</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <div className="w-3 h-3 bg-red-400 rounded-sm" />
+                        <span className="text-muted-foreground">11+</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Heatmap Benefits */}
+                  <div>
+                    <h4 className="text-lg font-bold mb-4 text-foreground">Why Heatmap Tracking Matters</h4>
+                    <ul className="space-y-3">
+                      {[
+                        "See exactly where you rank across your entire service area",
+                        "Identify opportunity zones where you can quickly gain visibility",
+                        "Track competitor positions in real-time",
+                        "Measure the impact of local SEO efforts monthly"
+                      ].map((item, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
