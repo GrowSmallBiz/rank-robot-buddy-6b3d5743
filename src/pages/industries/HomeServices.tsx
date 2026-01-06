@@ -1174,6 +1174,196 @@ const HomeServices = () => {
           </div>
         </section>
 
+        {/* CRM Integration Section */}
+        <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="The Command Center"
+              title="Central CRM"
+              titleHighlight="Dashboard"
+              description="All your marketing channels feed into one unified dashboard. Track every lead, every touchpoint, every conversion in real-time."
+            />
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              {/* CRM Dashboard Mockup */}
+              <div className="relative animate-fade-up">
+                <div className="bg-card rounded-2xl border border-border shadow-2xl overflow-hidden">
+                  {/* Dashboard Header */}
+                  <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-4 border-b border-border">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+                          <BarChart3 className="w-5 h-5 text-primary-foreground" />
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-foreground">Lead Command Center</h4>
+                          <p className="text-xs text-muted-foreground">Real-time pipeline view</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                        <span className="text-xs text-green-500 font-medium">Live</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Dashboard Content */}
+                  <div className="p-4 space-y-4">
+                    {/* Stats Row */}
+                    <div className="grid grid-cols-4 gap-3">
+                      {[
+                        { label: "Today's Leads", value: "24", color: "text-blue-500", bg: "bg-blue-500/10" },
+                        { label: "In Pipeline", value: "156", color: "text-purple-500", bg: "bg-purple-500/10" },
+                        { label: "Booked", value: "12", color: "text-green-500", bg: "bg-green-500/10" },
+                        { label: "Revenue", value: "$8.2K", color: "text-primary", bg: "bg-primary/10" }
+                      ].map((stat, i) => (
+                        <div key={i} className={`p-3 rounded-lg ${stat.bg} text-center`}>
+                          <div className={`text-lg font-bold ${stat.color}`}>{stat.value}</div>
+                          <div className="text-xs text-muted-foreground">{stat.label}</div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Live Feed */}
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                        <RefreshCw className="w-3 h-3 animate-spin" />
+                        Live Activity Feed
+                      </div>
+                      
+                      {[
+                        { source: "Google Ads", action: "New lead captured", name: "John M.", time: "Just now", icon: Search, color: "bg-blue-500" },
+                        { source: "AI Receptionist", action: "Call answered", name: "Sarah K.", time: "2 min ago", icon: Bot, color: "bg-purple-500" },
+                        { source: "Web Form", action: "Quote requested", name: "Mike T.", time: "5 min ago", icon: Monitor, color: "bg-cyan-500" },
+                        { source: "SMS", action: "Appointment confirmed", name: "Lisa R.", time: "8 min ago", icon: Smartphone, color: "bg-green-500" }
+                      ].map((activity, i) => (
+                        <div 
+                          key={i} 
+                          className="flex items-center gap-3 p-3 bg-background rounded-lg border border-border hover:border-primary/30 transition-colors"
+                        >
+                          <div className={`w-8 h-8 rounded-lg ${activity.color} flex items-center justify-center flex-shrink-0`}>
+                            <activity.icon className="w-4 h-4 text-white" />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2">
+                              <span className="text-sm font-semibold text-foreground truncate">{activity.name}</span>
+                              <span className="text-xs text-muted-foreground">•</span>
+                              <span className="text-xs text-muted-foreground">{activity.source}</span>
+                            </div>
+                            <p className="text-xs text-muted-foreground">{activity.action}</p>
+                          </div>
+                          <span className="text-xs text-muted-foreground whitespace-nowrap">{activity.time}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/20 rounded-full blur-2xl" />
+              </div>
+
+              {/* Features List */}
+              <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                <h3 className="text-2xl font-bold text-foreground">Everything Connected. Nothing Missed.</h3>
+                <p className="text-muted-foreground">
+                  Your CRM becomes the central nervous system of your business. Every lead, every call, 
+                  every appointment flows through one dashboard.
+                </p>
+
+                {/* Connection Sources */}
+                <div className="grid grid-cols-2 gap-3">
+                  {[
+                    { icon: Search, label: "Google Ads", desc: "Lead capture" },
+                    { icon: Share2, label: "Meta Ads", desc: "Social leads" },
+                    { icon: Monitor, label: "Website", desc: "Form submissions" },
+                    { icon: Bot, label: "AI Receptionist", desc: "Phone leads" },
+                    { icon: MessageCircle, label: "Chat Widget", desc: "Live inquiries" },
+                    { icon: Smartphone, label: "SMS", desc: "Text leads" },
+                    { icon: Star, label: "Reviews", desc: "Reputation data" },
+                    { icon: TrendingUp, label: "Analytics", desc: "Performance" }
+                  ].map((source, i) => (
+                    <div 
+                      key={i}
+                      className="flex items-center gap-3 p-3 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors group"
+                    >
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <source.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-foreground">{source.label}</div>
+                        <div className="text-xs text-muted-foreground">{source.desc}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA */}
+                <div className="pt-4">
+                  <Button variant="hero" size="lg" asChild>
+                    <Link to="/services/crm" className="inline-flex items-center gap-2">
+                      Explore CRM Features
+                      <ArrowRight className="w-5 h-5" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Integration Flow Visual */}
+            <div className="mt-16 p-8 bg-card rounded-2xl border border-border max-w-4xl mx-auto">
+              <h4 className="text-lg font-bold text-center text-foreground mb-8">How Data Flows Into Your CRM</h4>
+              
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                {/* Sources */}
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex items-center gap-2">
+                    {[Search, Share2, Monitor, Bot].map((Icon, i) => (
+                      <div key={i} className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/30 flex items-center justify-center">
+                        <Icon className="w-5 h-5 text-blue-500" />
+                      </div>
+                    ))}
+                  </div>
+                  <span className="text-xs text-muted-foreground">Lead Sources</span>
+                </div>
+
+                {/* Arrow */}
+                <div className="flex flex-col items-center">
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-primary" />
+                  <ArrowRight className="w-5 h-5 text-primary -mt-2.5" />
+                </div>
+
+                {/* CRM */}
+                <div className="flex flex-col items-center gap-2">
+                  <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center shadow-lg shadow-primary/30">
+                    <BarChart3 className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                  <span className="text-xs font-semibold text-primary">Central CRM</span>
+                </div>
+
+                {/* Arrow */}
+                <div className="flex flex-col items-center">
+                  <div className="w-16 h-0.5 bg-gradient-to-r from-primary to-green-500" />
+                  <ArrowRight className="w-5 h-5 text-green-500 -mt-2.5" />
+                </div>
+
+                {/* Outputs */}
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex items-center gap-2">
+                    {[MessageCircle, Smartphone, Star, TrendingUp].map((Icon, i) => (
+                      <div key={i} className="w-10 h-10 rounded-lg bg-green-500/10 border border-green-500/30 flex items-center justify-center">
+                        <Icon className="w-5 h-5 text-green-500" />
+                      </div>
+                    ))}
+                  </div>
+                  <span className="text-xs text-muted-foreground">Automated Actions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Results Section */}
         <section className="py-20 bg-gradient-primary">
           <div className="container mx-auto px-4">
