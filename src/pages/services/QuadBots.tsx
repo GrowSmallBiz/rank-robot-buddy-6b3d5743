@@ -467,6 +467,15 @@ const QuadBots = () => {
         />
 
         {/* FAQ Section */}
+        {/* Blog Section */}
+        <BlogSection
+          posts={generalBlogPosts.slice(0, 3)}
+          title="Latest Insights"
+          subtitle="Expert tips and strategies for AI-powered sales automation"
+          showViewAll={true}
+          viewAllLink="/blog"
+        />
+
         <FAQSection
           faqs={faqs} 
           contactCTA={{
@@ -475,15 +484,6 @@ const QuadBots = () => {
             description: "We're here to help! If you have any additional questions or need more details about our AI Sales Team, reach out to us.",
             tagline: "Let's automate your sales and grow your business.",
           }}
-        />
-
-        {/* Blog Section */}
-        <BlogSection
-          posts={generalBlogPosts.slice(0, 3)}
-          title="Latest Insights"
-          subtitle="Expert tips and strategies for AI-powered sales automation"
-          showViewAll={true}
-          viewAllLink="/blog"
         />
 
         {/* CTA Section */}
