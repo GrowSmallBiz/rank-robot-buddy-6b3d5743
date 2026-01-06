@@ -1210,11 +1210,15 @@ const HomeServices = () => {
                   Track domain authority, AI platform visibility across ChatGPT, Gemini & more, plus holistic SEO health—all in one unified dashboard.
                 </p>
               </div>
-              <img 
-                src={seoDashboardMetrics} 
-                alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
-                className="w-full rounded-2xl border border-primary/30 shadow-2xl"
-              />
+              <div className="relative group">
+                {/* Gradient glow effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary via-purple-500 to-cyan-500 rounded-2xl blur-md opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
+                <img 
+                  src={seoDashboardMetrics} 
+                  alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
+                  className="relative w-full rounded-2xl border border-primary/30 shadow-2xl"
+                />
+              </div>
             </div>
 
             {/* Why AI Search Ranking Matters - Hero Banner */}
