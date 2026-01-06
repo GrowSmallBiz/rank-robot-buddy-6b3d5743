@@ -1205,7 +1205,7 @@ const HomeServices = () => {
             <div className="mb-12">
               <div className="text-center mb-6">
                 <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
-                  Your Complete SEO Command Center
+                  Your Holistic AI SEO Command Center
                 </h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Track domain authority, AI platform visibility across ChatGPT, Gemini & more, plus holistic SEO health—all in one unified dashboard.
