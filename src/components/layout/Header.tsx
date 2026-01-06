@@ -147,12 +147,12 @@ export const Header = () => {
                       isSEOServicesOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
                     }`}
                   >
-                    {/* AI SEO Hub Overview */}
+                    {/* AI-Powered SEO Overview */}
                     <Link
                       to="/services/ai-seo-hub"
                       className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
                     >
-                      AI SEO Hub Overview
+                      AI-Powered SEO Services
                     </Link>
                     
                     {/* SEO Sub-services */}
@@ -404,7 +404,7 @@ export const Header = () => {
                         onClick={() => setIsOpen(false)}
                         className="block py-2 text-primary font-medium"
                       >
-                        AI SEO Hub Overview
+                        AI-Powered SEO Services
                       </Link>
                       {seoServices.map((service) => (
                         <Link

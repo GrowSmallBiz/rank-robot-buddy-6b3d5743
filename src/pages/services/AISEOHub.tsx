@@ -11,6 +11,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { PersonCTA } from "@/components/services";
 import { Helmet } from "react-helmet";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import {
   Search,
   Bot,
@@ -57,6 +58,7 @@ import caseStudyMedspa from "@/assets/case-study-medspa.jpg";
 import caseStudyDental from "@/assets/case-study-dental.jpg";
 import caseStudyAutorepair from "@/assets/case-study-autorepair.jpg";
 import caseStudyChiro from "@/assets/case-study-chiro.jpg";
+import seoDashboardMetrics from "@/assets/seo-dashboard-metrics.png";
 
 const aiSeoHubStats = [
   { value: "150%", label: "Avg. Traffic Growth", icon: TrendingUp },
@@ -212,7 +214,7 @@ const AISEOHub = () => {
   return (
     <>
       <Helmet>
-        <title>Managed AI SEO Services for Full-Funnel Visibility | GrowSmallBiz</title>
+        <title>AI-Powered SEO Services for Full-Funnel Visibility | GrowSmallBiz</title>
         <meta name="description" content="Rank higher, get cited, and be surfaced across AI platforms. Enterprise AI SEO that unites technical SEO, AEO, and GEO to make your brand the authoritative answer." />
         <meta name="keywords" content="AI SEO, managed SEO services, technical SEO, AEO, GEO, local SEO, link building, answer engine optimization, generative engine optimization, full-funnel visibility" />
       </Helmet>
@@ -344,6 +346,44 @@ const AISEOHub = () => {
                   Track citations and generative model performance
                 </p>
               </div>
+            </div>
+
+            {/* SEO Command Center Section */}
+            <div className="mt-16 max-w-5xl mx-auto">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-bold font-display mb-4 text-foreground">
+                  Your Complete SEO Command Center
+                </h3>
+                <p className="text-muted-foreground max-w-3xl mx-auto">
+                  Track domain authority, AI platform visibility across ChatGPT, Gemini & more, plus holistic SEO health—all in one unified dashboard.
+                </p>
+              </div>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <div className="relative group cursor-pointer">
+                    {/* Gradient glow effect */}
+                    <div className="absolute -inset-1 bg-gradient-to-r from-primary via-purple-500 to-cyan-500 rounded-2xl blur-md opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
+                    <img 
+                      src={seoDashboardMetrics} 
+                      alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
+                      className="relative w-full rounded-2xl border border-primary/30 shadow-2xl transition-transform duration-300 group-hover:scale-[1.01]"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-background/80 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/30 flex items-center gap-2">
+                        <Search className="w-4 h-4 text-primary" />
+                        <span className="text-sm font-medium">Click to expand</span>
+                      </div>
+                    </div>
+                  </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-[95vw] max-h-[95vh] p-2 bg-background/95 backdrop-blur-xl border-primary/30">
+                  <img 
+                    src={seoDashboardMetrics} 
+                    alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
+                    className="w-full h-auto rounded-xl"
+                  />
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </section>
