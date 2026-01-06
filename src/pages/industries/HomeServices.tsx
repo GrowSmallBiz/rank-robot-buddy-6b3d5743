@@ -108,47 +108,61 @@ const marketingFunnel = [
   }
 ];
 
-// Platform Recommendations by Trade
+// Platform Recommendations by Trade - Funnel Style
 const platformRecommendations = [
   {
     trade: "HVAC",
     icon: Flame,
+    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google LSA", "Google PPC", "Meta (FB)", "Nextdoor"],
+    funnel: ["Lead Capture", "Quote Request", "Scheduling", "Service", "Review"],
     strategy: "Emergency-focused keywords + seasonal campaigns. Google LSA is king for urgent AC/heating repairs. Meta excels for maintenance plan promotion.",
-    seasonality: "Peak: Summer (AC) & Winter (Heating). Use shoulder seasons for maintenance marketing.",
-    keyMetrics: ["Cost per lead: $25-75", "Close rate target: 35-50%", "Avg job value: $450-3,500"]
+    seasonality: "Peak: Summer (AC) & Winter (Heating)"
   },
   {
     trade: "Plumbing",
     icon: Droplets,
+    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google LSA", "Google PPC", "YouTube", "Yelp"],
-    strategy: "24/7 emergency visibility is critical. LSA for urgent leads, PPC for drain cleaning & water heaters. YouTube how-to content builds authority.",
-    seasonality: "Year-round demand with spikes during freeze warnings and holiday gatherings.",
-    keyMetrics: ["Cost per lead: $30-80", "Close rate target: 40-55%", "Avg job value: $350-2,500"]
+    funnel: ["Emergency Call", "Dispatch", "Diagnosis", "Repair", "Review"],
+    strategy: "24/7 emergency visibility is critical. LSA for urgent leads, PPC for drain cleaning & water heaters.",
+    seasonality: "Year-round with freeze & holiday spikes"
   },
   {
     trade: "Electrical",
     icon: Plug,
+    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google PPC", "Google LSA", "Meta (FB/IG)", "HomeAdvisor"],
-    strategy: "Focus on safety-related searches and home renovation keywords. EV charger installation is a growing opportunity. Panel upgrades for Meta targeting.",
-    seasonality: "Steady demand. Spikes during storm season and major home projects.",
-    keyMetrics: ["Cost per lead: $35-90", "Close rate target: 30-45%", "Avg job value: $500-4,000"]
+    funnel: ["Service Request", "Consultation", "Estimate", "Installation", "Follow-up"],
+    strategy: "Focus on safety-related searches and home renovation keywords. EV charger installation is a growing opportunity.",
+    seasonality: "Steady demand, storm season spikes"
   },
   {
     trade: "Roofing",
     icon: Home,
+    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Google PPC", "Meta (FB/IG)", "Google LSA", "Houzz"],
-    strategy: "Storm damage campaigns + visual before/after content on Meta/IG. Longer sales cycle requires strong retargeting. Video testimonials convert well.",
-    seasonality: "Peak: Spring & Fall. Storm-chasing opportunities year-round.",
-    keyMetrics: ["Cost per lead: $75-200", "Close rate target: 20-30%", "Avg job value: $8,000-25,000"]
+    funnel: ["Storm Lead", "Inspection", "Estimate", "Contract", "Project Complete"],
+    strategy: "Storm damage campaigns + visual before/after content on Meta/IG. Longer sales cycle requires strong retargeting.",
+    seasonality: "Peak: Spring & Fall seasons"
   },
   {
     trade: "Remodeling",
     icon: Hammer,
+    image: "/industry-hvac-hero.jpg",
     topPlatforms: ["Meta (FB/IG)", "Houzz", "Pinterest", "Google PPC"],
-    strategy: "Visual-first approach. High-quality project photos on Instagram, Pinterest, and Houzz. Long consideration cycle = nurture campaigns are essential.",
-    seasonality: "Peak: Spring & Fall. Kitchen/bath remodels spike in Q1.",
-    keyMetrics: ["Cost per lead: $100-300", "Close rate target: 15-25%", "Avg job value: $15,000-75,000"]
+    funnel: ["Inspiration", "Consultation", "Design", "Build", "Reveal"],
+    strategy: "Visual-first approach. High-quality project photos on Instagram, Pinterest, and Houzz. Nurture campaigns essential.",
+    seasonality: "Peak: Spring & Fall, Q1 kitchen/bath"
+  },
+  {
+    trade: "General Contractor",
+    icon: Wrench,
+    image: "/industry-hvac-hero.jpg",
+    topPlatforms: ["Google PPC", "Meta (FB)", "Houzz", "Nextdoor"],
+    funnel: ["Project Inquiry", "Site Visit", "Proposal", "Build Phase", "Handover"],
+    strategy: "Showcase portfolio diversity. Target homeowners planning major projects. Reviews and referrals are critical.",
+    seasonality: "Year-round with spring surge"
   }
 ];
 
@@ -572,58 +586,95 @@ const HomeServices = () => {
           </div>
         </section>
 
-        {/* Platform Recommendations by Trade */}
+        {/* Platform Recommendations by Trade - Funnel Style Cards */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="Platform Strategy by Trade"
-              title="Which Platforms Work Best for"
-              titleHighlight="Your Business?"
-              description="Every trade has different customer behavior. Here's where to invest your marketing budget based on data from hundreds of contractors."
+              title="Marketing Funnels for"
+              titleHighlight="Your Trade"
+              description="Every trade has different customer behavior. Here's a tailored marketing funnel and platform strategy for each."
             />
 
-            <div className="space-y-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {platformRecommendations.map((trade, index) => (
                 <div 
                   key={index}
-                  className="p-6 md:p-8 bg-card rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 animate-fade-up"
+                  className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-to-b from-card to-background hover:border-primary/50 transition-all duration-500 animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="grid lg:grid-cols-12 gap-6">
-                    {/* Trade Header */}
-                    <div className="lg:col-span-3 flex items-center gap-4">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                        <trade.icon className="w-7 h-7 text-primary" />
+                  {/* Card Content */}
+                  <div className="p-6">
+                    {/* Trade Header with Icon */}
+                    <div className="flex flex-col items-center text-center mb-6">
+                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
+                        <trade.icon className="w-6 h-6 text-primary" />
                       </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-foreground">{trade.trade}</h3>
-                        <div className="flex flex-wrap gap-1 mt-1">
+                      <h3 className="text-xl font-bold text-foreground">{trade.trade}</h3>
+                      <p className="text-xs text-muted-foreground mt-1">Marketing Funnel</p>
+                    </div>
+
+                    {/* Funnel Visualization */}
+                    <div className="space-y-2 mb-6">
+                      {trade.funnel.map((step, stepIndex) => {
+                        const widthClasses = [
+                          "w-full",
+                          "w-[92%]",
+                          "w-[84%]",
+                          "w-[76%]",
+                          "w-[68%]"
+                        ];
+                        const opacityClasses = [
+                          "bg-primary text-primary-foreground",
+                          "bg-primary/80 text-primary-foreground",
+                          "bg-primary/60 text-primary-foreground",
+                          "bg-primary/40 text-foreground",
+                          "bg-primary/25 text-foreground"
+                        ];
+                        return (
+                          <div key={stepIndex} className="flex flex-col items-center">
+                            <div 
+                              className={`${widthClasses[stepIndex]} ${opacityClasses[stepIndex]} py-2.5 px-4 rounded-lg text-center text-sm font-medium transition-all duration-300 group-hover:scale-[1.02]`}
+                            >
+                              {step}
+                            </div>
+                            {stepIndex < trade.funnel.length - 1 && (
+                              <div className="text-muted-foreground text-xs my-1">↓</div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                    {/* Optimized Badge */}
+                    <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground mb-4">
+                      <Zap className="w-3 h-3 text-primary" />
+                      <span>Optimized for high conversion</span>
+                    </div>
+
+                    {/* Divider */}
+                    <div className="border-t border-border pt-4">
+                      {/* Top Platforms */}
+                      <div className="mb-3">
+                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Top Platforms</p>
+                        <div className="flex flex-wrap justify-center gap-1.5">
                           {trade.topPlatforms.map((platform, pIndex) => (
-                            <span key={pIndex} className="text-xs px-2 py-0.5 bg-primary/10 text-primary rounded-full">
+                            <span key={pIndex} className="text-xs px-2 py-1 bg-secondary rounded-full text-foreground">
                               {platform}
                             </span>
                           ))}
                         </div>
                       </div>
-                    </div>
 
-                    {/* Strategy */}
-                    <div className="lg:col-span-5">
-                      <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Strategy</h4>
-                      <p className="text-foreground text-sm">{trade.strategy}</p>
-                      <p className="text-muted-foreground text-xs mt-2 italic">{trade.seasonality}</p>
-                    </div>
-
-                    {/* Key Metrics */}
-                    <div className="lg:col-span-4">
-                      <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Benchmarks</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {trade.keyMetrics.map((metric, mIndex) => (
-                          <span key={mIndex} className="text-xs px-3 py-1.5 bg-secondary rounded-full text-foreground">
-                            {metric}
-                          </span>
-                        ))}
-                      </div>
+                      {/* Strategy */}
+                      <p className="text-xs text-muted-foreground text-center leading-relaxed">
+                        {trade.strategy}
+                      </p>
+                      
+                      {/* Seasonality */}
+                      <p className="text-xs text-primary/80 text-center mt-2 italic">
+                        {trade.seasonality}
+                      </p>
                     </div>
                   </div>
                 </div>
