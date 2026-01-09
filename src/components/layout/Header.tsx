@@ -150,9 +150,17 @@ export const Header = () => {
                     {/* AI-Powered SEO Overview */}
                     <Link
                       to="/services/ai-seo-hub"
-                      className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
+                      className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
                       AI-Powered SEO Services
+                    </Link>
+                    
+                    {/* Managed SEO Pricing */}
+                    <Link
+                      to="/services/managed-seo-pricing"
+                      className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors border-b border-border mb-2"
+                    >
+                      SEO Packages & Pricing
                     </Link>
                     
                     {/* SEO Sub-services */}
@@ -405,6 +413,13 @@ export const Header = () => {
                         className="block py-2 text-primary font-medium"
                       >
                         AI-Powered SEO Services
+                      </Link>
+                      <Link
+                        to="/services/managed-seo-pricing"
+                        onClick={() => setIsOpen(false)}
+                        className="block py-2 text-muted-foreground hover:text-primary"
+                      >
+                        SEO Packages & Pricing
                       </Link>
                       {seoServices.map((service) => (
                         <Link
