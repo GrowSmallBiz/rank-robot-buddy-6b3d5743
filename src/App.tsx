@@ -17,6 +17,7 @@ import PaidMedia from "./pages/services/PaidMedia";
 import SocialMedia from "./pages/services/SocialMedia";
 import WebsiteDesign from "./pages/services/WebsiteDesign";
 import AISEOHub from "./pages/services/AISEOHub";
+import ManagedSEOPricing from "./pages/services/ManagedSEOPricing";
 import ReputationManagement from "./pages/services/ReputationManagement";
 import AIReceptionist from "./pages/services/AIReceptionist";
 import CRM from "./pages/services/CRM";
@@ -55,6 +56,7 @@ const App = () => (
           <Route path="/services/social-media" element={<SocialMedia />} />
           <Route path="/services/website-design" element={<WebsiteDesign />} />
           <Route path="/services/ai-seo-hub" element={<AISEOHub />} />
+          <Route path="/services/managed-seo-pricing" element={<ManagedSEOPricing />} />
           <Route path="/services/reputation-management" element={<ReputationManagement />} />
           <Route path="/services/ai-receptionist" element={<AIReceptionist />} />
           <Route path="/services/crm" element={<CRM />} />
