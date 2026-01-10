@@ -55,6 +55,9 @@ import realtorLeadGenImg from "@/assets/realtor-lead-gen.jpg";
 import realtorIdxAddonsImg from "@/assets/realtor-idx-addons.jpg";
 import realtorMarketingImg from "@/assets/realtor-marketing.jpg";
 import realtorReputationImg from "@/assets/realtor-reputation.jpg";
+import realtorSeoImg from "@/assets/realtor-seo.jpg";
+import realtorPaidAdsImg from "@/assets/realtor-paid-ads.jpg";
+import realtorSocialMediaImg from "@/assets/realtor-social-media.jpg";
 
 // Pain Points for Realtors
 const painPoints = [
@@ -80,8 +83,8 @@ const painPoints = [
   }
 ];
 
-// Services Data
-const services = [
+// Service Sections Data - Organized by category
+const websiteServices = [
   {
     id: "website",
     icon: Home,
@@ -98,6 +101,41 @@ const services = [
     color: "blue",
     image: realtorWebsiteImg
   },
+  {
+    id: "lead-gen",
+    icon: Target,
+    title: "Lead Generation Tools",
+    description: "Capture buyer and seller leads with high-converting funnels and landing pages.",
+    features: [
+      "Property Valuation Pages",
+      "Buyer/Seller Lead Funnels",
+      "Social Media Ad Integration",
+      "Landing Page Builder",
+      "QR Code Property Flyers",
+      "Open House Sign-in Forms"
+    ],
+    color: "green",
+    image: realtorLeadGenImg
+  },
+  {
+    id: "idx-addons",
+    icon: Calculator,
+    title: "IDX Add-ons & Enhancements",
+    description: "Powerful tools to enhance your property search and keep visitors engaged.",
+    features: [
+      "Mortgage Calculator Widget",
+      "School District Maps",
+      "Sold Data Display",
+      "Market Statistics",
+      "Saved Search Alerts",
+      "Zestimate Lookup"
+    ],
+    color: "amber",
+    image: realtorIdxAddonsImg
+  }
+];
+
+const crmServices = [
   {
     id: "crm",
     icon: Database,
@@ -131,38 +169,6 @@ const services = [
     image: realtorIdxIntegrationImg
   },
   {
-    id: "lead-gen",
-    icon: Target,
-    title: "Lead Generation Tools",
-    description: "Capture buyer and seller leads with high-converting funnels and landing pages.",
-    features: [
-      "Property Valuation Pages",
-      "Buyer/Seller Lead Funnels",
-      "Social Media Ad Integration",
-      "Landing Page Builder",
-      "QR Code Property Flyers",
-      "Open House Sign-in Forms"
-    ],
-    color: "green",
-    image: realtorLeadGenImg
-  },
-  {
-    id: "idx-addons",
-    icon: Calculator,
-    title: "IDX Add-ons & Enhancements",
-    description: "Powerful tools to enhance your property search and keep visitors engaged.",
-    features: [
-      "Mortgage Calculator Widget",
-      "School District Maps",
-      "Sold Data Display",
-      "Market Statistics",
-      "Saved Search Alerts",
-      "Zestimate Lookup"
-    ],
-    color: "amber",
-    image: realtorIdxAddonsImg
-  },
-  {
     id: "marketing",
     icon: Megaphone,
     title: "Marketing Automation",
@@ -191,6 +197,57 @@ const services = [
     ],
     color: "emerald",
     image: realtorReputationImg
+  }
+];
+
+const visibilityServices = [
+  {
+    id: "seo",
+    icon: Search,
+    title: "AI SEO Optimization",
+    description: "Dominate local search results with AI-powered SEO strategies tailored for real estate.",
+    features: [
+      "Local Keyword Optimization",
+      "Google Business Profile Management",
+      "Content Strategy & Blog Posts",
+      "Backlink Building",
+      "Technical SEO Audits",
+      "Competitor Analysis"
+    ],
+    color: "teal",
+    image: realtorSeoImg
+  },
+  {
+    id: "paid-ads",
+    icon: BarChart3,
+    title: "Paid Ads Management",
+    description: "Targeted Google and Meta ads that drive qualified buyer and seller leads to your listings.",
+    features: [
+      "Google PPC Campaigns",
+      "Meta (Facebook/Instagram) Ads",
+      "Retargeting Campaigns",
+      "Landing Page A/B Testing",
+      "ROI Tracking & Reporting",
+      "Budget Optimization"
+    ],
+    color: "orange",
+    image: realtorPaidAdsImg
+  },
+  {
+    id: "social-media",
+    icon: Share2,
+    title: "Organic Social Media Posts",
+    description: "Consistent, engaging content that builds your brand and attracts clients organically.",
+    features: [
+      "Content Calendar Management",
+      "Property Showcase Posts",
+      "Market Update Graphics",
+      "Community Engagement",
+      "Story & Reel Creation",
+      "Brand Voice Development"
+    ],
+    color: "indigo",
+    image: realtorSocialMediaImg
   }
 ];
 
@@ -237,6 +294,24 @@ const colorConfig: Record<string, { bg: string; bgLight: string; text: string; b
     bgLight: "bg-emerald-500/10",
     text: "text-emerald-500",
     border: "border-emerald-500/30"
+  },
+  teal: {
+    bg: "bg-teal-500",
+    bgLight: "bg-teal-500/10",
+    text: "text-teal-500",
+    border: "border-teal-500/30"
+  },
+  orange: {
+    bg: "bg-orange-500",
+    bgLight: "bg-orange-500/10",
+    text: "text-orange-500",
+    border: "border-orange-500/30"
+  },
+  indigo: {
+    bg: "bg-indigo-500",
+    bgLight: "bg-indigo-500/10",
+    text: "text-indigo-500",
+    border: "border-indigo-500/30"
   }
 };
 
@@ -543,53 +618,169 @@ const Realtors = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, i) => {
-                const colors = colorConfig[service.color];
-                return (
-                  <div 
-                    key={service.id}
-                    className={`bg-card border ${colors.border} rounded-2xl overflow-hidden hover:shadow-lg transition-all animate-fade-up group`}
-                    style={{ animationDelay: `${i * 0.1}s` }}
-                  >
-                    {/* Service Image */}
-                    <div className="relative h-44 overflow-hidden">
-                      <img 
-                        src={service.image} 
-                        alt={service.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
-                      <div className={`absolute bottom-4 left-4 w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center shadow-lg`}>
-                        <service.icon className="w-6 h-6 text-white" />
+            {/* Website Section */}
+            <div className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                  <Home className="w-5 h-5 text-blue-500" />
+                </div>
+                <h3 className="text-2xl font-display font-bold text-foreground">Website</h3>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {websiteServices.map((service, i) => {
+                  const colors = colorConfig[service.color];
+                  return (
+                    <div 
+                      key={service.id}
+                      className={`bg-card border ${colors.border} rounded-2xl overflow-hidden hover:shadow-lg transition-all animate-fade-up group`}
+                      style={{ animationDelay: `${i * 0.1}s` }}
+                    >
+                      <div className="relative h-44 overflow-hidden">
+                        <img 
+                          src={service.image} 
+                          alt={service.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
+                        <div className={`absolute bottom-4 left-4 w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center shadow-lg`}>
+                          <service.icon className="w-6 h-6 text-white" />
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-display font-bold text-foreground mb-3">
+                          {service.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm mb-5">
+                          {service.description}
+                        </p>
+                        <ul className="space-y-2">
+                          {service.features.slice(0, 4).map((feature, j) => (
+                            <li key={j} className="flex items-start gap-2 text-sm">
+                              <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
+                              <span className="text-muted-foreground">{feature}</span>
+                            </li>
+                          ))}
+                          {service.features.length > 4 && (
+                            <li className="text-sm text-muted-foreground/70 pl-6">
+                              +{service.features.length - 4} more features
+                            </li>
+                          )}
+                        </ul>
                       </div>
                     </div>
+                  );
+                })}
+              </div>
+            </div>
 
-                    <div className="p-6">
-                      <h3 className="text-xl font-display font-bold text-foreground mb-3">
-                        {service.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm mb-5">
-                        {service.description}
-                      </p>
-                      
-                      <ul className="space-y-2">
-                        {service.features.slice(0, 4).map((feature, j) => (
-                          <li key={j} className="flex items-start gap-2 text-sm">
-                            <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
-                            <span className="text-muted-foreground">{feature}</span>
-                          </li>
-                        ))}
-                        {service.features.length > 4 && (
-                          <li className="text-sm text-muted-foreground/70 pl-6">
-                            +{service.features.length - 4} more features
-                          </li>
-                        )}
-                      </ul>
+            {/* CRM & Marketing Automation Section */}
+            <div className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center">
+                  <Database className="w-5 h-5 text-violet-500" />
+                </div>
+                <h3 className="text-2xl font-display font-bold text-foreground">CRM & Marketing Automation</h3>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {crmServices.map((service, i) => {
+                  const colors = colorConfig[service.color];
+                  return (
+                    <div 
+                      key={service.id}
+                      className={`bg-card border ${colors.border} rounded-2xl overflow-hidden hover:shadow-lg transition-all animate-fade-up group`}
+                      style={{ animationDelay: `${i * 0.1}s` }}
+                    >
+                      <div className="relative h-44 overflow-hidden">
+                        <img 
+                          src={service.image} 
+                          alt={service.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
+                        <div className={`absolute bottom-4 left-4 w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center shadow-lg`}>
+                          <service.icon className="w-6 h-6 text-white" />
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-display font-bold text-foreground mb-3">
+                          {service.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm mb-5">
+                          {service.description}
+                        </p>
+                        <ul className="space-y-2">
+                          {service.features.slice(0, 4).map((feature, j) => (
+                            <li key={j} className="flex items-start gap-2 text-sm">
+                              <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
+                              <span className="text-muted-foreground">{feature}</span>
+                            </li>
+                          ))}
+                          {service.features.length > 4 && (
+                            <li className="text-sm text-muted-foreground/70 pl-6">
+                              +{service.features.length - 4} more features
+                            </li>
+                          )}
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Online Visibility Section */}
+            <div>
+              <div className="flex items-center gap-3 mb-8">
+                <div className="w-10 h-10 rounded-xl bg-teal-500/10 flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-teal-500" />
+                </div>
+                <h3 className="text-2xl font-display font-bold text-foreground">Online Visibility</h3>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {visibilityServices.map((service, i) => {
+                  const colors = colorConfig[service.color];
+                  return (
+                    <div 
+                      key={service.id}
+                      className={`bg-card border ${colors.border} rounded-2xl overflow-hidden hover:shadow-lg transition-all animate-fade-up group`}
+                      style={{ animationDelay: `${i * 0.1}s` }}
+                    >
+                      <div className="relative h-44 overflow-hidden">
+                        <img 
+                          src={service.image} 
+                          alt={service.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
+                        <div className={`absolute bottom-4 left-4 w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center shadow-lg`}>
+                          <service.icon className="w-6 h-6 text-white" />
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-display font-bold text-foreground mb-3">
+                          {service.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm mb-5">
+                          {service.description}
+                        </p>
+                        <ul className="space-y-2">
+                          {service.features.slice(0, 4).map((feature, j) => (
+                            <li key={j} className="flex items-start gap-2 text-sm">
+                              <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
+                              <span className="text-muted-foreground">{feature}</span>
+                            </li>
+                          ))}
+                          {service.features.length > 4 && (
+                            <li className="text-sm text-muted-foreground/70 pl-6">
+                              +{service.features.length - 4} more features
+                            </li>
+                          )}
+                        </ul>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </section>
