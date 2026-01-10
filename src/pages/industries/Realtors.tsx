@@ -1178,7 +1178,7 @@ const Realtors = () => {
                   </div>
 
                   <h3 className="text-xl font-display font-bold text-foreground mb-4">
-                    Have more questions about our Real Estate Solution?
+                    Have more questions about our Real Estate Marketing Solution?
                   </h3>
                   
                   <p className="text-muted-foreground mb-4">
