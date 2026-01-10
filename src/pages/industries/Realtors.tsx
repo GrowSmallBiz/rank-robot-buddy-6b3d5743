@@ -417,12 +417,21 @@ const successStories = [
   }
 ];
 
-// FAQ Categories
+// FAQ Categories with colors
 const faqCategories = [
   {
     id: "idx",
     label: "IDX & Website",
     icon: Home,
+    color: "blue",
+    colorClasses: {
+      bg: "bg-blue-500",
+      bgLight: "bg-blue-500/10",
+      text: "text-blue-500",
+      border: "border-blue-500/30",
+      activeBg: "data-[state=active]:bg-blue-500",
+      activeBorder: "data-[state=active]:border-blue-500"
+    },
     faqs: [
       {
         question: "What is IDX and why do I need it?",
@@ -446,6 +455,15 @@ const faqCategories = [
     id: "crm",
     label: "CRM & Automation",
     icon: Database,
+    color: "violet",
+    colorClasses: {
+      bg: "bg-violet-500",
+      bgLight: "bg-violet-500/10",
+      text: "text-violet-500",
+      border: "border-violet-500/30",
+      activeBg: "data-[state=active]:bg-violet-500",
+      activeBorder: "data-[state=active]:border-violet-500"
+    },
     faqs: [
       {
         question: "How does the CRM integrate with IDX?",
@@ -469,6 +487,15 @@ const faqCategories = [
     id: "leads",
     label: "Lead Generation",
     icon: Target,
+    color: "emerald",
+    colorClasses: {
+      bg: "bg-emerald-500",
+      bgLight: "bg-emerald-500/10",
+      text: "text-emerald-500",
+      border: "border-emerald-500/30",
+      activeBg: "data-[state=active]:bg-emerald-500",
+      activeBorder: "data-[state=active]:border-emerald-500"
+    },
     faqs: [
       {
         question: "How do home valuation pages work?",
@@ -492,6 +519,15 @@ const faqCategories = [
     id: "support",
     label: "Support & Setup",
     icon: Shield,
+    color: "amber",
+    colorClasses: {
+      bg: "bg-amber-500",
+      bgLight: "bg-amber-500/10",
+      text: "text-amber-500",
+      border: "border-amber-500/30",
+      activeBg: "data-[state=active]:bg-amber-500",
+      activeBorder: "data-[state=active]:border-amber-500"
+    },
     faqs: [
       {
         question: "What support is included?",
@@ -1052,16 +1088,52 @@ const Realtors = () => {
             <div className="max-w-4xl mx-auto">
               <Tabs defaultValue="idx" className="w-full">
                 <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 h-auto gap-2 bg-transparent">
-                  {faqCategories.map((category) => (
-                    <TabsTrigger 
-                      key={category.id}
-                      value={category.id}
-                      className="flex items-center gap-2 px-4 py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-xl border border-border data-[state=active]:border-primary"
-                    >
-                      <category.icon className="w-4 h-4" />
-                      <span className="hidden sm:inline">{category.label}</span>
-                    </TabsTrigger>
-                  ))}
+                  {faqCategories.map((category) => {
+                    const colorStyles = {
+                      blue: { bg: '#3b82f6', border: 'rgba(59, 130, 246, 0.3)', bgLight: 'rgba(59, 130, 246, 0.1)' },
+                      violet: { bg: '#8b5cf6', border: 'rgba(139, 92, 246, 0.3)', bgLight: 'rgba(139, 92, 246, 0.1)' },
+                      emerald: { bg: '#10b981', border: 'rgba(16, 185, 129, 0.3)', bgLight: 'rgba(16, 185, 129, 0.1)' },
+                      amber: { bg: '#f59e0b', border: 'rgba(245, 158, 11, 0.3)', bgLight: 'rgba(245, 158, 11, 0.1)' }
+                    };
+                    const colors = colorStyles[category.color as keyof typeof colorStyles];
+                    return (
+                      <TabsTrigger 
+                        key={category.id}
+                        value={category.id}
+                        className="group flex items-center gap-2 px-4 py-3 rounded-xl border transition-all data-[state=active]:text-white hover:bg-opacity-10"
+                        style={{
+                          borderColor: colors.border,
+                          ['--tab-active-bg' as string]: colors.bg,
+                        }}
+                      >
+                        <div 
+                          className="w-7 h-7 rounded-lg flex items-center justify-center transition-all group-data-[state=active]:bg-white/20"
+                          style={{ backgroundColor: colors.bgLight }}
+                        >
+                          <category.icon 
+                            className="w-4 h-4 transition-all group-data-[state=active]:text-white" 
+                            style={{ color: colors.bg }}
+                          />
+                        </div>
+                        <span 
+                          className="hidden sm:inline font-medium transition-all group-data-[state=active]:text-white"
+                          style={{ color: colors.bg }}
+                        >
+                          {category.label}
+                        </span>
+                        <style>{`
+                          [data-state="active"][value="${category.id}"] {
+                            background-color: ${colors.bg} !important;
+                            border-color: ${colors.bg} !important;
+                          }
+                          [data-state="active"][value="${category.id}"] span,
+                          [data-state="active"][value="${category.id}"] svg {
+                            color: white !important;
+                          }
+                        `}</style>
+                      </TabsTrigger>
+                    );
+                  })}
                 </TabsList>
 
                 {faqCategories.map((category) => (
