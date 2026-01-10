@@ -47,6 +47,15 @@ import {
   ChevronRight
 } from "lucide-react";
 
+// Import images for service cards
+import realtorWebsiteImg from "@/assets/realtor-website.jpg";
+import realtorCrmImg from "@/assets/realtor-crm.jpg";
+import realtorIdxIntegrationImg from "@/assets/realtor-idx-integration.jpg";
+import realtorLeadGenImg from "@/assets/realtor-lead-gen.jpg";
+import realtorIdxAddonsImg from "@/assets/realtor-idx-addons.jpg";
+import realtorMarketingImg from "@/assets/realtor-marketing.jpg";
+import realtorReputationImg from "@/assets/realtor-reputation.jpg";
+
 // Pain Points for Realtors
 const painPoints = [
   {
@@ -86,7 +95,8 @@ const services = [
       "Agent/Team Profiles",
       "Neighborhood Pages"
     ],
-    color: "blue"
+    color: "blue",
+    image: realtorWebsiteImg
   },
   {
     id: "crm",
@@ -101,7 +111,8 @@ const services = [
       "AI-Powered Conversations",
       "Missed Call Text-Back"
     ],
-    color: "violet"
+    color: "violet",
+    image: realtorCrmImg
   },
   {
     id: "idx-integration",
@@ -116,7 +127,8 @@ const services = [
       "Unified Dashboard",
       "Automated Workflow Triggers"
     ],
-    color: "cyan"
+    color: "cyan",
+    image: realtorIdxIntegrationImg
   },
   {
     id: "lead-gen",
@@ -131,7 +143,8 @@ const services = [
       "QR Code Property Flyers",
       "Open House Sign-in Forms"
     ],
-    color: "green"
+    color: "green",
+    image: realtorLeadGenImg
   },
   {
     id: "idx-addons",
@@ -146,7 +159,8 @@ const services = [
       "Saved Search Alerts",
       "Zestimate Lookup"
     ],
-    color: "amber"
+    color: "amber",
+    image: realtorIdxAddonsImg
   },
   {
     id: "marketing",
@@ -161,7 +175,8 @@ const services = [
       "Review Request Automation",
       "Social Media Scheduling"
     ],
-    color: "pink"
+    color: "pink",
+    image: realtorMarketingImg
   },
   {
     id: "reputation",
@@ -174,7 +189,8 @@ const services = [
       "Review Response Automation",
       "Rating Widgets for Website"
     ],
-    color: "emerald"
+    color: "emerald",
+    image: realtorReputationImg
   }
 ];
 
@@ -533,28 +549,44 @@ const Realtors = () => {
                 return (
                   <div 
                     key={service.id}
-                    className={`bg-card border ${colors.border} rounded-2xl p-6 hover:shadow-lg transition-all animate-fade-up group`}
+                    className={`bg-card border ${colors.border} rounded-2xl overflow-hidden hover:shadow-lg transition-all animate-fade-up group`}
                     style={{ animationDelay: `${i * 0.1}s` }}
                   >
-                    <div className={`w-14 h-14 rounded-xl ${colors.bgLight} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform`}>
-                      <service.icon className={`w-7 h-7 ${colors.text}`} />
+                    {/* Service Image */}
+                    <div className="relative h-44 overflow-hidden">
+                      <img 
+                        src={service.image} 
+                        alt={service.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-transparent to-transparent" />
+                      <div className={`absolute bottom-4 left-4 w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center shadow-lg`}>
+                        <service.icon className="w-6 h-6 text-white" />
+                      </div>
                     </div>
-                    
-                    <h3 className="text-xl font-display font-bold text-foreground mb-3">
-                      {service.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm mb-5">
-                      {service.description}
-                    </p>
-                    
-                    <ul className="space-y-2">
-                      {service.features.map((feature, j) => (
-                        <li key={j} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
-                          <span className="text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
+
+                    <div className="p-6">
+                      <h3 className="text-xl font-display font-bold text-foreground mb-3">
+                        {service.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm mb-5">
+                        {service.description}
+                      </p>
+                      
+                      <ul className="space-y-2">
+                        {service.features.slice(0, 4).map((feature, j) => (
+                          <li key={j} className="flex items-start gap-2 text-sm">
+                            <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
+                            <span className="text-muted-foreground">{feature}</span>
+                          </li>
+                        ))}
+                        {service.features.length > 4 && (
+                          <li className="text-sm text-muted-foreground/70 pl-6">
+                            +{service.features.length - 4} more features
+                          </li>
+                        )}
+                      </ul>
+                    </div>
                   </div>
                 );
               })}
