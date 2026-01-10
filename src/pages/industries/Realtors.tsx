@@ -1215,20 +1215,38 @@ const Realtors = () => {
         <section className="py-24 lg:py-32 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-violet-500/10" />
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-                Ready to Transform Your{" "}
-                <span className="text-gradient">Real Estate Business</span>?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Schedule a free strategy session and discover how our platform can help you generate more leads, close more deals, and grow your business.
-              </p>
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
-                  Schedule Strategy Session
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 md:p-12 shadow-xl">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  {/* Photo */}
+                  <div className="flex-shrink-0">
+                    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg">
+                      <img 
+                        src={subrataHeadshot} 
+                        alt="Subrata Guha" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="flex-1 text-center md:text-left">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
+                      Ready to Transform Your{" "}
+                      <span className="text-gradient">Real Estate Business</span>?
+                    </h2>
+                    <p className="text-xl text-muted-foreground mb-6">
+                      Schedule a free strategy session and discover how our platform can help you generate more leads, close more deals, and grow your business.
+                    </p>
+                    <Button variant="hero" size="xl" asChild>
+                      <Link to="/contact">
+                        Schedule Strategy Session
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
