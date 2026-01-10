@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { baseContactCTA } from "@/config/contactCTA";
 
 interface CardCTAProps {
@@ -58,19 +58,27 @@ export const CardCTA = ({
                 <p className="text-xl text-muted-foreground mb-6">
                   {description}
                 </p>
-                <Button variant="hero" size="xl" asChild>
-                  {buttonHref.startsWith('http') ? (
-                    <a href={buttonHref} target="_blank" rel="noopener noreferrer">
-                      {buttonText}
-                      <ArrowRight className="ml-2 w-5 h-5" />
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button variant="hero" size="xl" asChild>
+                    {buttonHref.startsWith('http') ? (
+                      <a href={buttonHref} target="_blank" rel="noopener noreferrer">
+                        {buttonText}
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </a>
+                    ) : (
+                      <Link to={buttonHref}>
+                        {buttonText}
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Link>
+                    )}
+                  </Button>
+                  <Button variant="outline" size="xl" asChild className="border-primary/50 hover:bg-primary/10">
+                    <a href="tel:+19258863724">
+                      <Phone className="mr-2 w-5 h-5" />
+                      Call +1 (925) 886-3724
                     </a>
-                  ) : (
-                    <Link to={buttonHref}>
-                      {buttonText}
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </Link>
-                  )}
-                </Button>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
