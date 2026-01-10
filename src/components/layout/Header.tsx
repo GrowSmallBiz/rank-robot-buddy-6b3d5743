@@ -351,7 +351,7 @@ export const Header = () => {
               href="tel:+19258863724" 
               className="flex flex-col items-center justify-center px-5 py-2 bg-primary rounded-lg hover:bg-primary/90 transition-colors"
             >
-              <span className="text-xs text-primary-foreground/80 tracking-wide uppercase">Call Now & Schedule Today</span>
+              <span className="text-sm text-primary-foreground font-semibold tracking-wide uppercase">Call Now & Schedule Today</span>
               <span className="text-primary-foreground text-lg font-bold">+1 (925) 886-3724</span>
             </a>
           </div>
