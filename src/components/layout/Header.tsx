@@ -345,11 +345,15 @@ export const Header = () => {
             </Link>
           </nav>
 
-          {/* CTA Button */}
+          {/* Phone CTA */}
           <div className="hidden lg:block">
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/free-assessment">Get Free Audit</Link>
-            </Button>
+            <a 
+              href="tel:+19258863724" 
+              className="flex items-center gap-2 text-primary font-semibold hover:text-primary/80 transition-colors"
+            >
+              <span className="text-muted-foreground text-sm">GrowSmallBiz</span>
+              <span className="text-lg font-bold">+1 (925) 886-3724</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

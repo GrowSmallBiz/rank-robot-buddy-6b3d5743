@@ -937,7 +937,7 @@ const HomeServices = () => {
               {marketingFunnel.map((item, index) => (
                 <div 
                   key={index}
-                  className={`p-6 bg-card rounded-2xl border ${item.borderColor} hover:shadow-xl transition-all duration-300 animate-fade-up relative overflow-hidden`}
+                  className={`p-6 bg-card rounded-2xl border-2 ${item.borderColor} hover:shadow-xl transition-all duration-300 animate-fade-up relative overflow-hidden hover:shadow-[0_0_30px_rgba(255,127,80,0.3)]`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Stage Number */}
@@ -985,7 +985,7 @@ const HomeServices = () => {
                 return (
                   <div 
                     key={index}
-                    className={`group relative overflow-hidden rounded-2xl border ${colors.border} bg-gradient-to-b from-card to-background hover:border-opacity-60 transition-all duration-500 animate-fade-up`}
+                    className={`group relative overflow-hidden rounded-2xl border-2 ${colors.border} bg-gradient-to-b from-card to-background hover:border-opacity-60 transition-all duration-500 animate-fade-up hover:shadow-[0_0_30px_rgba(255,127,80,0.3)]`}
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {/* Card Content */}
@@ -1100,7 +1100,7 @@ const HomeServices = () => {
               {/* Tab Content */}
               {essentialStackTabs.map((tab) => (
                 <TabsContent key={tab.id} value={tab.id} className="mt-0 animate-fade-up">
-                  <div className={`bg-card rounded-2xl border ${tab.colorClasses.border} overflow-hidden`}>
+                  <div className={`bg-card rounded-2xl border-2 ${tab.colorClasses.border} overflow-hidden hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300`}>
                     <div className="grid lg:grid-cols-2 gap-0">
                       {/* Content Side */}
                       <div className="p-8 lg:p-10">
@@ -1292,7 +1292,7 @@ const HomeServices = () => {
             </div>
 
             {/* LLM Visibility Tracking Section */}
-            <div className="mb-16 p-8 bg-card rounded-2xl border border-border">
+            <div className="mb-16 p-8 bg-card rounded-2xl border-2 border-border hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center">
                   <Eye className="w-5 h-5 text-white" />
