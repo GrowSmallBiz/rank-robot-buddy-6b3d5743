@@ -349,10 +349,10 @@ export const Header = () => {
           <div className="hidden lg:block">
             <a 
               href="tel:+19258863724" 
-              className="flex flex-col items-center justify-center px-5 py-2 bg-[hsl(215,28%,17%)] rounded-lg hover:bg-[hsl(215,28%,22%)] transition-colors"
+              className="flex flex-col items-center justify-center px-5 py-2 bg-primary rounded-lg hover:bg-primary/90 transition-colors"
             >
-              <span className="text-xs text-muted-foreground tracking-wide uppercase">Call Now & Schedule Today</span>
-              <span className="text-primary text-lg font-bold">+1 (925) 886-3724</span>
+              <span className="text-xs text-primary-foreground/80 tracking-wide uppercase">Call Now & Schedule Today</span>
+              <span className="text-primary-foreground text-lg font-bold">+1 (925) 886-3724</span>
             </a>
           </div>
 
