@@ -60,6 +60,7 @@ import realtorPaidAdsImg from "@/assets/realtor-paid-ads.jpg";
 import realtorSocialMediaImg from "@/assets/realtor-social-media.jpg";
 import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.jpg";
 import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.jpg";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 
 // Pain Points for Realtors
 const painPoints = [
@@ -1169,13 +1170,15 @@ const Realtors = () => {
                 <div className="sticky top-24 p-8 rounded-2xl border-2 border-primary/60 bg-card/30 backdrop-blur-sm text-center shadow-[0_0_30px_rgba(255,127,80,0.15)]">
                   {/* Avatar with gradient border */}
                   <div className="w-24 h-24 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-primary via-orange-400 to-primary">
-                    <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                      <Home className="w-10 h-10 text-primary" />
-                    </div>
+                    <img 
+                      src={subrataHeadshot} 
+                      alt="Subrata Guha"
+                      className="w-full h-full rounded-full object-cover"
+                    />
                   </div>
 
                   <h3 className="text-xl font-display font-bold text-foreground mb-4">
-                    Ready to Grow Your Real Estate Business?
+                    Have more questions about our Real Estate Solution?
                   </h3>
                   
                   <p className="text-muted-foreground mb-4">
