@@ -12,6 +12,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { CardCTA } from "@/components/services/CardCTA";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { createIndustryContactCTA } from "@/config/contactCTA";
+import { GlowCard } from "@/components/ui/glow-card";
 import { 
   ArrowRight, 
   CheckCircle2, 
@@ -935,9 +936,9 @@ const HomeServices = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {marketingFunnel.map((item, index) => (
-                <div 
+                <GlowCard 
                   key={index}
-                  className={`p-6 bg-card rounded-2xl border-2 ${item.borderColor} hover:shadow-xl transition-all duration-300 animate-fade-up relative overflow-hidden hover:shadow-[0_0_30px_rgba(255,127,80,0.3)]`}
+                  className={`p-6 relative overflow-hidden animate-fade-up ${item.borderColor}`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Stage Number */}
@@ -963,7 +964,7 @@ const HomeServices = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </GlowCard>
               ))}
             </div>
           </div>
@@ -983,9 +984,9 @@ const HomeServices = () => {
               {platformRecommendations.map((trade, index) => {
                 const colors = colorConfig[trade.color];
                 return (
-                  <div 
+                  <GlowCard 
                     key={index}
-                    className={`group relative overflow-hidden rounded-2xl border-2 ${colors.border} bg-gradient-to-b from-card to-background hover:border-opacity-60 transition-all duration-500 animate-fade-up hover:shadow-[0_0_30px_rgba(255,127,80,0.3)]`}
+                    className={`group relative overflow-hidden bg-gradient-to-b from-card to-background animate-fade-up ${colors.border}`}
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {/* Card Content */}
@@ -1055,7 +1056,7 @@ const HomeServices = () => {
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </GlowCard>
                 );
               })}
             </div>

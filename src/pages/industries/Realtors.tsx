@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { GlowCard } from "@/components/ui/glow-card";
 import {
   Carousel,
   CarouselContent,
@@ -701,9 +702,9 @@ const Realtors = () => {
                 {websiteServices.map((service, i) => {
                   const colors = colorConfig[service.color];
                   return (
-                    <div 
+                    <GlowCard 
                       key={service.id}
-                      className={`bg-card border ${colors.border} rounded-2xl overflow-hidden hover:shadow-lg transition-all animate-fade-up group`}
+                      className={`overflow-hidden animate-fade-up group ${colors.border}`}
                       style={{ animationDelay: `${i * 0.1}s` }}
                     >
                       <div className="relative h-44 overflow-hidden">
@@ -738,7 +739,7 @@ const Realtors = () => {
                           )}
                         </ul>
                       </div>
-                    </div>
+                    </GlowCard>
                   );
                 })}
               </div>
@@ -760,9 +761,9 @@ const Realtors = () => {
                 {crmServices.map((service, i) => {
                   const colors = colorConfig[service.color];
                   return (
-                    <div 
+                    <GlowCard 
                       key={service.id}
-                      className={`bg-card border ${colors.border} rounded-2xl overflow-hidden hover:shadow-lg transition-all animate-fade-up group`}
+                      className={`overflow-hidden animate-fade-up group ${colors.border}`}
                       style={{ animationDelay: `${i * 0.1}s` }}
                     >
                       <div className="relative h-44 overflow-hidden">
@@ -797,7 +798,7 @@ const Realtors = () => {
                           )}
                         </ul>
                       </div>
-                    </div>
+                    </GlowCard>
                   );
                 })}
               </div>
@@ -815,9 +816,9 @@ const Realtors = () => {
                 {visibilityServices.map((service, i) => {
                   const colors = colorConfig[service.color];
                   return (
-                    <div 
+                    <GlowCard 
                       key={service.id}
-                      className={`bg-card border ${colors.border} rounded-2xl overflow-hidden hover:shadow-lg transition-all animate-fade-up group`}
+                      className={`overflow-hidden animate-fade-up group ${colors.border}`}
                       style={{ animationDelay: `${i * 0.1}s` }}
                     >
                       <div className="relative h-44 overflow-hidden">
@@ -852,7 +853,7 @@ const Realtors = () => {
                           )}
                         </ul>
                       </div>
-                    </div>
+                    </GlowCard>
                   );
                 })}
               </div>
@@ -948,9 +949,9 @@ const Realtors = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {funnelStages.map((stage, i) => (
-                <div 
+                <GlowCard 
                   key={i}
-                  className="relative bg-card border-2 border-primary/30 rounded-2xl p-6 animate-fade-up hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all"
+                  className="relative p-6 animate-fade-up"
                   style={{ animationDelay: `${i * 0.15}s` }}
                 >
                   {/* Connector Line */}
@@ -974,7 +975,7 @@ const Realtors = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </GlowCard>
               ))}
             </div>
           </div>
