@@ -22,7 +22,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
@@ -411,13 +411,12 @@ const Photographers = () => {
         showViewAll={false}
       />
 
-      {/* PersonCTA Section */}
-      <PersonCTA
+      {/* CardCTA Section */}
+      <CardCTA
         title="Ready to Book More Dream Clients?"
         description="Get a free SEO audit and discover how to turn your portfolio into a booking machine for your photography business."
         buttonHref="/free-assessment?industry=photographer"
         buttonText="Get Your Free Portfolio Audit"
-        sectionClassName="py-12 bg-section-dark"
       />
 
       <ConsultationFormSection />

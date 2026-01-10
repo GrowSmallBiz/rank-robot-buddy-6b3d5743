@@ -9,7 +9,7 @@ import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { PersonCTA } from "@/components/services/PersonCTA";
+import { CardCTA } from "@/components/services/CardCTA";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { createIndustryContactCTA } from "@/config/contactCTA";
 import { 
@@ -2439,8 +2439,8 @@ const HomeServices = () => {
           viewAllLink="/blog"
         />
 
-        {/* Person CTA */}
-        <PersonCTA
+        {/* CardCTA Section */}
+        <CardCTA
           title="Ready to Build Your Marketing System?"
           description="Get a free marketing strategy assessment. We'll analyze your current efforts and show you exactly where to invest for maximum ROI."
         />

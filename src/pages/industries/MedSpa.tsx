@@ -22,7 +22,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import medSpaHeroImage from "@/assets/industry-medspa-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
@@ -411,13 +411,12 @@ const MedSpa = () => {
         showViewAll={false}
       />
 
-      {/* PersonCTA Section */}
-      <PersonCTA
+      {/* CardCTA Section */}
+      <CardCTA
         title="Ready to Become the Premier Med Spa?"
         description="Get a free SEO audit and discover how to attract more high-value aesthetic clients to your med spa."
         buttonHref="/free-assessment?industry=medspa"
         buttonText="Get Your Free Audit"
-        sectionClassName="py-12 bg-section-dark"
       />
 
       <ConsultationFormSection />

@@ -22,7 +22,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, autoRepairBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import autoRepairHeroImage from "@/assets/industry-autorepair-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
@@ -411,13 +411,12 @@ const AutoRepair = () => {
         showViewAll={false}
       />
 
-      {/* PersonCTA Section */}
-      <PersonCTA
+      {/* CardCTA Section */}
+      <CardCTA
         title="Ready to Fill Your Bays?"
         description="Get a free SEO audit and see how to outrank chains and attract more customers to your auto repair shop."
         buttonHref="/free-assessment?industry=auto"
         buttonText="Get Your Free Shop Audit"
-        sectionClassName="py-12 bg-section-dark"
       />
 
       <ConsultationFormSection />

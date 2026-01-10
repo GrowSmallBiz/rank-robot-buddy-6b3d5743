@@ -24,7 +24,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import hvacHeroImage from "@/assets/industry-hvac-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 const benefits = [
@@ -413,13 +413,12 @@ const HVAC = () => {
         showViewAll={false}
       />
 
-      {/* PersonCTA Section */}
-      <PersonCTA
+      {/* CardCTA Section */}
+      <CardCTA
         title="Ready to Dominate Your Local Market?"
         description="Get a free SEO audit and see exactly how we'll help you outrank the competition and generate more leads for your HVAC business."
         buttonHref="/free-assessment?industry=hvac"
         buttonText="Get Your Free SEO Audit"
-        sectionClassName="py-12 bg-section-dark"
       />
 
       <ConsultationFormSection />

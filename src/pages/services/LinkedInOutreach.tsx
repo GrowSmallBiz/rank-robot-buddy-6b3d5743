@@ -31,7 +31,7 @@ const linkedInTestimonials = [
     company: "Consulting Firm",
   },
 ];
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
   ServiceHero,
@@ -488,10 +488,9 @@ const LinkedInOutreach = () => {
         />
 
         {/* CTA Section */}
-        <PersonCTA
+        <CardCTA
           title="Ready to Fill Your Pipeline with Qualified Leads?"
           description="Get your complimentary ICP-aligned lead list and see how our Done-With-You LinkedIn system can transform your B2B prospecting."
-          sectionClassName="py-12 bg-section-dark"
         />
         <ConsultationFormSection />
 

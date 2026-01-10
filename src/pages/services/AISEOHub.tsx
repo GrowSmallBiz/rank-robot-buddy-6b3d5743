@@ -8,7 +8,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { Helmet } from "react-helmet";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -1502,10 +1502,9 @@ const AISEOHub = () => {
         </section>
 
         {/* CTA Section */}
-        <PersonCTA
+        <CardCTA
           title="Ready for Full-Funnel AI SEO Visibility?"
           description="Rank higher, get cited by AI, and dominate search across all platforms. Let's build your AI-powered SEO strategy today."
-          sectionClassName="py-12 bg-section-dark"
         />
         <ConsultationFormSection />
       </main>

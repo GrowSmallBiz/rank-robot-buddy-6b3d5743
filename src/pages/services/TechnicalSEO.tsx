@@ -9,7 +9,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, technicalSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe, Clock, TrendingUp } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
@@ -325,10 +325,9 @@ const TechnicalSEO = () => {
         showViewAll={false}
       />
 
-      <PersonCTA
+      <CardCTA
         title="Ready for Technical SEO That Performs?"
         description="We fix what's broken, optimize what's slow, and unlock higher rankings with Core Web Vitals-ready sites."
-        sectionClassName="py-12 bg-section-dark"
       />
       <ConsultationFormSection />
       <Footer />
