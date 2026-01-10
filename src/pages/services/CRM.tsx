@@ -792,7 +792,7 @@ const CRM = () => {
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-card/90 backdrop-blur-sm border border-border rounded-2xl p-6 animate-fade-up hover:shadow-lg hover:shadow-primary/5 transition-all"
+                  className="bg-card/90 backdrop-blur-sm border-2 border-border rounded-2xl p-6 animate-fade-up hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex gap-1 mb-4">

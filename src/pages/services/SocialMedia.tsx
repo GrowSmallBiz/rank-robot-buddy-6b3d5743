@@ -493,7 +493,7 @@ const SocialMedia = () => {
             {platforms.map((platform, index) => (
               <div
                 key={index}
-                className={`group bg-gradient-to-br ${platform.color} border border-border rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 animate-fade-up`}
+                className={`group bg-gradient-to-br ${platform.color} border-2 border-border rounded-2xl p-8 space-y-6 transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:-translate-y-2 animate-fade-up`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center gap-4">
@@ -581,7 +581,7 @@ const SocialMedia = () => {
             {industryRecommendations.map((item, index) => (
               <div
                 key={index}
-                className="group bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg animate-fade-up"
+                className="group bg-card border-2 border-border rounded-xl p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">

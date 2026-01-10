@@ -304,7 +304,7 @@ const AISEOHub = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {/* Unified Visibility */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+              <div className="bg-secondary/50 border-2 border-border rounded-2xl p-6 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Globe className="w-6 h-6 text-primary" />
                 </div>
@@ -315,7 +315,7 @@ const AISEOHub = () => {
               </div>
 
               {/* Entity Optimization */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+              <div className="bg-secondary/50 border-2 border-border rounded-2xl p-6 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Bot className="w-6 h-6 text-primary" />
                 </div>
@@ -326,7 +326,7 @@ const AISEOHub = () => {
               </div>
 
               {/* Content Structuring */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+              <div className="bg-secondary/50 border-2 border-border rounded-2xl p-6 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Search className="w-6 h-6 text-primary" />
                 </div>
@@ -337,7 +337,7 @@ const AISEOHub = () => {
               </div>
 
               {/* AI Monitoring */}
-              <div className="bg-secondary/50 border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300">
+              <div className="bg-secondary/50 border-2 border-border rounded-2xl p-6 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <BarChart3 className="w-6 h-6 text-primary" />
                 </div>
@@ -803,7 +803,7 @@ const AISEOHub = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* HVAC Contractor */}
-              <div className="relative border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group min-h-[420px]">
+              <div className="relative border-2 border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] group min-h-[420px]">
                 <img 
                   src={caseStudyHvac} 
                   alt="HVAC technician servicing air conditioning" 
@@ -846,7 +846,7 @@ const AISEOHub = () => {
               </div>
 
               {/* Med Spa */}
-              <div className="relative border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group min-h-[420px]">
+              <div className="relative border-2 border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] group min-h-[420px]">
                 <img 
                   src={caseStudyMedspa} 
                   alt="Luxury medical spa treatment room" 
@@ -889,7 +889,7 @@ const AISEOHub = () => {
               </div>
 
               {/* Dental Practice */}
-              <div className="relative border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl group min-h-[420px]">
+              <div className="relative border-2 border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] group min-h-[420px]">
                 <img 
                   src={caseStudyDental} 
                   alt="Modern dental office treatment room" 
@@ -1018,7 +1018,7 @@ const AISEOHub = () => {
               </div>
 
               {/* Average Results Card */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl">
+              <div className="bg-card border-2 border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)]">
                 <div className="h-1 bg-gradient-to-r from-primary to-accent" />
                 <div className="p-6 flex flex-col h-full">
                   <h3 className="text-xl font-bold text-foreground mb-6">Average Client Results</h3>
@@ -1221,7 +1221,7 @@ const AISEOHub = () => {
                 <Link
                   key={index}
                   to={service.link}
-                  className="group block bg-card rounded-2xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                  className="group block bg-card rounded-2xl border-2 border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:-translate-y-1"
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
@@ -1454,7 +1454,7 @@ const AISEOHub = () => {
                 <Link
                   key={index}
                   to="/blog"
-                  className="group block bg-card rounded-2xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                  className="group block bg-card rounded-2xl border-2 border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:-translate-y-1"
                 >
                   <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                     <FileText className="w-16 h-16 text-primary/50" />

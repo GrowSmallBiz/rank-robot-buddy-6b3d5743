@@ -564,7 +564,7 @@ const WebsiteDesign = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Authority Websites */}
-            <div className="bg-card rounded-2xl p-8 border border-primary/20 shadow-lg">
+            <div className="bg-card rounded-2xl p-8 border-2 border-primary/20 shadow-lg hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
               <div className="inline-block px-3 py-1 mb-4 text-xs font-semibold rounded-full bg-primary/10 text-primary">
                 Most Popular
               </div>
@@ -594,7 +594,7 @@ const WebsiteDesign = () => {
             </div>
 
             {/* Starter Websites */}
-            <div className="bg-card rounded-2xl p-8 border border-border">
+            <div className="bg-card rounded-2xl p-8 border-2 border-border hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
               <h3 className="text-2xl font-bold mb-4">Starter Template Websites</h3>
               <p className="text-muted-foreground mb-6">
                 For new business owners who need a professional presence without the full investment with 5 pages.
@@ -737,7 +737,7 @@ const WebsiteDesign = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {industriesServed.map((industry, index) => (
-              <div key={index} className="bg-card rounded-xl p-6 border border-border">
+              <div key={index} className="bg-card rounded-xl p-6 border-2 border-border hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all duration-300">
                 <h3 className="text-lg font-bold mb-4 text-primary">{industry.category}</h3>
                 <ul className="space-y-2">
                   {industry.businesses.map((business, idx) => (
@@ -801,7 +801,7 @@ const WebsiteDesign = () => {
             {portfolioItems.map((item, index) => (
               <div
                 key={index}
-                className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary/5"
+                className="group bg-card rounded-2xl overflow-hidden border-2 border-border hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)]"
               >
                 {/* Image Container */}
                 <div className="relative aspect-video overflow-hidden">
@@ -878,7 +878,7 @@ const WebsiteDesign = () => {
             {caseStudies.map((study, index) => (
               <div
                 key={index}
-                className="bg-card rounded-2xl overflow-hidden border border-border shadow-lg"
+                className="bg-card rounded-2xl overflow-hidden border-2 border-border shadow-lg hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300"
               >
                 <div className="grid lg:grid-cols-2">
                   <div className="relative h-64 lg:h-auto">
@@ -950,7 +950,7 @@ const WebsiteDesign = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-card rounded-xl p-8 border border-border hover:border-primary/30 transition-all duration-300"
+                className="bg-card rounded-xl p-8 border-2 border-border hover:border-primary/30 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
