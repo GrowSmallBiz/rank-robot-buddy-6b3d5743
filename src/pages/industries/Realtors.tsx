@@ -47,6 +47,15 @@ import {
   ChevronRight
 } from "lucide-react";
 
+// Import images
+import heroImage from "@/assets/industry-realtors-hero.jpg";
+import successConde from "@/assets/success-story-conde.png";
+import successElvin from "@/assets/success-story-elvin.png";
+import successTania from "@/assets/success-story-tania.png";
+import successSalvador from "@/assets/success-story-salvador.png";
+import successAllen from "@/assets/success-story-allen.png";
+import successKroetch from "@/assets/success-story-kroetch.png";
+
 // Pain Points for Realtors
 const painPoints = [
   {
@@ -258,37 +267,43 @@ const successStories = [
     name: "Conde Real Estate & Mortgage",
     url: "https://conde-realestate.com/",
     type: "Office",
-    description: "Full-service real estate and mortgage company"
+    description: "Full-service real estate and mortgage company",
+    image: successConde
   },
   {
     name: "Elvin Rivera",
     url: "https://elvinrivera360.com/",
     type: "Agent",
-    description: "360° real estate services"
+    description: "360° real estate services",
+    image: successElvin
   },
   {
     name: "Tania Gardère MacLeod",
     url: "https://itstheperfectspot.com/",
     type: "Agent",
-    description: "Find your perfect spot"
+    description: "Find your perfect spot",
+    image: successTania
   },
   {
     name: "Salvador Salinas",
     url: "https://salsalinashomes.com/",
     type: "Agent",
-    description: "Your trusted home expert"
+    description: "Your trusted home expert",
+    image: successSalvador
   },
   {
     name: "Allen Grealish",
     url: "https://allensellsamity.com/",
     type: "Agent",
-    description: "Local market specialist"
+    description: "Local market specialist",
+    image: successAllen
   },
   {
     name: "Kroetch Property Group",
     url: "https://kroetchpropertygroup.com/",
     type: "Team",
-    description: "Professional real estate team"
+    description: "Professional real estate team",
+    image: successKroetch
   }
 ];
 
@@ -429,7 +444,15 @@ const Realtors = () => {
       <main className="pt-20">
         {/* Hero Section */}
         <section className="relative py-24 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-background to-violet-900/20" />
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img 
+              src={heroImage} 
+              alt="Realtor with buyers and sellers" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-background/80" />
+          </div>
           <div className="hero-glow absolute inset-0" />
           
           <div className="container mx-auto px-4 relative z-10">
@@ -713,25 +736,39 @@ const Realtors = () => {
                       href={story.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block bg-card border border-border rounded-2xl p-6 h-full hover:border-emerald-500/50 transition-all group"
+                      className="block bg-card border border-border rounded-2xl overflow-hidden h-full hover:border-emerald-500/50 transition-all group"
                     >
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-medium">
-                          {story.type}
-                        </span>
-                        <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-emerald-500 transition-colors" />
+                      {/* Screenshot Image */}
+                      <div className="relative h-40 overflow-hidden">
+                        <img 
+                          src={story.image} 
+                          alt={`${story.name} website`}
+                          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
+                        <div className="absolute top-3 left-3">
+                          <span className="px-3 py-1 rounded-full bg-emerald-500/90 text-white text-xs font-medium">
+                            {story.type}
+                          </span>
+                        </div>
+                        <div className="absolute top-3 right-3">
+                          <ExternalLink className="w-4 h-4 text-white/80 group-hover:text-emerald-400 transition-colors" />
+                        </div>
                       </div>
                       
-                      <h3 className="text-lg font-display font-bold text-foreground mb-2 group-hover:text-emerald-500 transition-colors">
-                        {story.name}
-                      </h3>
-                      <p className="text-sm text-muted-foreground mb-4">
-                        {story.description}
-                      </p>
-                      
-                      <div className="flex items-center gap-2 text-sm text-emerald-500">
-                        <Globe className="w-4 h-4" />
-                        <span className="truncate">{story.url.replace('https://', '')}</span>
+                      {/* Content */}
+                      <div className="p-5">
+                        <h3 className="text-lg font-display font-bold text-foreground mb-2 group-hover:text-emerald-500 transition-colors">
+                          {story.name}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mb-4">
+                          {story.description}
+                        </p>
+                        
+                        <div className="flex items-center gap-2 text-sm text-emerald-500">
+                          <Globe className="w-4 h-4" />
+                          <span className="truncate">{story.url.replace('https://', '')}</span>
+                        </div>
                       </div>
                     </a>
                   </CarouselItem>
