@@ -81,7 +81,7 @@ export const Header = () => {
               <span className="text-primary-foreground font-bold text-xl font-display">G</span>
             </div>
             <span className="text-xl font-bold font-display text-foreground">
-              GrowSmallBiz
+              GrowSmallBiz Digital Marketing
             </span>
           </Link>
 

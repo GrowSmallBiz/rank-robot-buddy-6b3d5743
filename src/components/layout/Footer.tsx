@@ -30,7 +30,7 @@ export const Footer = () => {
                 <span className="text-primary-foreground font-bold text-xl font-display">G</span>
               </div>
               <span className="text-xl font-bold font-display text-foreground">
-                GrowSmallBiz
+                GrowSmallBiz Digital Marketing
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -113,7 +113,7 @@ export const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2026 GrowSmallBiz. All rights reserved.
+            © 2026 GrowSmallBiz Digital Marketing. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
