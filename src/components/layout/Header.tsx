@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import growsmallbizLogo from "@/assets/growsmallbiz-logo.png";
 
 const seoServices = [
   { name: "Technical SEO", href: "/services/technical-seo" },
@@ -76,13 +77,12 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl font-display">G</span>
-            </div>
-            <span className="text-xl font-bold font-display text-foreground">
-              GrowSmallBiz Digital Marketing
-            </span>
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src={growsmallbizLogo} 
+              alt="GrowSmallBiz Digital Marketing" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
