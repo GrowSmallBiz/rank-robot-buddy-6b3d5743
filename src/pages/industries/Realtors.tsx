@@ -950,7 +950,7 @@ const Realtors = () => {
               {funnelStages.map((stage, i) => (
                 <div 
                   key={i}
-                  className="relative bg-card border border-primary/30 rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all"
+                  className="relative bg-card border-2 border-primary/30 rounded-2xl p-6 animate-fade-up hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all"
                   style={{ animationDelay: `${i * 0.15}s` }}
                 >
                   {/* Connector Line */}
@@ -1011,7 +1011,7 @@ const Realtors = () => {
                       href={story.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block bg-card border border-emerald-500/30 rounded-2xl p-6 h-full hover:border-emerald-500/50 transition-all group"
+                      className="block bg-card border-2 border-emerald-500/30 rounded-2xl p-6 h-full hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all group"
                     >
                       <div className="flex items-center justify-between mb-4">
                         <span className="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-medium">
