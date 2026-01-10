@@ -10,7 +10,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import {
   Phone,
   MessageSquare,
@@ -988,12 +988,11 @@ const CRM = () => {
         />
 
         {/* CTA Section */}
-        <PersonCTA
+        <CardCTA
           title="Ready to Convert More Leads Into Sales?"
           description="Schedule a demo to see how GrowSmallBiz can transform your business with AI-powered automation."
           buttonHref="https://lp.growsmallbiz.io/crm-demo-request-page"
           buttonText="Schedule My Demo Session"
-          sectionClassName="py-12 bg-section-dark"
         />
         <ConsultationFormSection />
       </main>

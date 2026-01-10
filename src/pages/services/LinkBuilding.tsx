@@ -9,7 +9,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, linkBuildingBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { ArrowRight, Link2, Search, Megaphone, Users, FileText, BarChart3, Shield, TrendingUp, Clock, Award } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import linkBuildingImage from "@/assets/link-building.png";
@@ -310,10 +310,9 @@ const LinkBuilding = () => {
         showViewAll={false}
       />
 
-      <PersonCTA
+      <CardCTA
         title="Ready to Build Authority and Scale Rankings?"
         description="Get high-quality, brand-safe backlinks that boost your domain authority and drive sustainable ranking improvements."
-        sectionClassName="py-12 bg-section-dark"
       />
       <ConsultationFormSection />
       <Footer />

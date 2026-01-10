@@ -30,7 +30,7 @@ import {
   SectionHeader, 
   FeatureCard,
   ChecklistItem,
-  PersonCTA
+  CardCTA
 } from "@/components/services";
 import { 
   Bot, 
@@ -364,7 +364,7 @@ const QuadBots = () => {
         </section>
 
         {/* Mid-page CTA after Features */}
-        <PersonCTA
+        <CardCTA
           title="See These Features in Action"
           description="Schedule a personalized demo to see how Quad Bots can transform your sales process and boost your revenue."
         />
@@ -487,10 +487,9 @@ const QuadBots = () => {
         />
 
         {/* CTA Section */}
-        <PersonCTA
-          title="Ready to Transform Your Business?"
+        <CardCTA
+          title="Ready to Transform Your Business with AI?"
           description="Learn how GrowSmallBiz can customize a Quad Bots solution for your business. Let's discuss your specific needs and how our AI can revolutionize your operations."
-          sectionClassName="py-8 bg-section-dark"
         />
         <ConsultationFormSection />
       </main>

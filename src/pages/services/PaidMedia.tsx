@@ -30,7 +30,7 @@ const paidMediaTestimonials = [
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, paidMediaBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { 
   ArrowRight, 
   Target, 
@@ -697,10 +697,9 @@ const PaidMedia = () => {
         showViewAll={false}
       />
 
-      <PersonCTA
+      <CardCTA
         title="Ready to Turn Ad Spend Into Predictable Revenue?"
         description="Get a free ad strategy call to see how we can maximize your ROI across Google, Meta, TikTok, and YouTube."
-        sectionClassName="py-12 bg-section-dark"
       />
       <ConsultationFormSection />
       <Footer />

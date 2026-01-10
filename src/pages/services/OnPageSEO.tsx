@@ -9,7 +9,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, onPageSeoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search, TrendingUp, Eye, Clock } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import onPageSeoImage from "@/assets/on-page-seo.png";
@@ -326,10 +326,9 @@ const OnPageSEO = () => {
         showViewAll={false}
       />
 
-      <PersonCTA
+      <CardCTA
         title="Ready to Maximize Your Content's Impact?"
         description="Strategic on-page optimization that boosts visibility, improves user experience, and drives more conversions."
-        sectionClassName="py-12 bg-section-dark"
       />
       <ConsultationFormSection />
       <Footer />

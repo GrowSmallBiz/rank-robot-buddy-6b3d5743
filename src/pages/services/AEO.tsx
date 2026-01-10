@@ -9,7 +9,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, aeoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings, TrendingUp, Clock, Zap } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import aeoServiceImage from "@/assets/aeo-service.png";
@@ -308,10 +308,9 @@ const AEO = () => {
         showViewAll={false}
       />
 
-      <PersonCTA
+      <CardCTA
         title="Ready to Get Your Brand in AI Answers?"
         description="Let's position your brand as the authoritative source AI platforms cite and reference. Start dominating AI search results today."
-        sectionClassName="py-12 bg-section-dark"
       />
       <ConsultationFormSection />
       <Footer />

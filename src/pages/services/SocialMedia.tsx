@@ -29,7 +29,7 @@ const socialMediaTestimonials = [
   },
 ];
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { 
   ArrowRight, 
   Target, 
@@ -782,10 +782,9 @@ const SocialMedia = () => {
       />
 
       {/* CTA Section */}
-      <PersonCTA
+      <CardCTA
         title="Ready to Elevate Your Professional Brand?"
         description="Get a free 30-minute strategy session, complimentary social media audit ($500 value), and local competitor analysis report."
-        sectionClassName="py-12 bg-section-dark"
       />
       <ConsultationFormSection />
 

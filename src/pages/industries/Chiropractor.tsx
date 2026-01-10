@@ -22,7 +22,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import chiroHeroImage from "@/assets/industry-chiro-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
@@ -411,13 +411,12 @@ const Chiropractor = () => {
         showViewAll={false}
       />
 
-      {/* PersonCTA Section */}
-      <PersonCTA
+      {/* CardCTA Section */}
+      <CardCTA
         title="Ready to Help More Patients?"
         description="Get a free SEO audit and discover how to attract more patients seeking relief to your chiropractic practice."
         buttonHref="/free-assessment?industry=chiropractic"
         buttonText="Get Your Free Practice Audit"
-        sectionClassName="py-12 bg-section-dark"
       />
 
       <ConsultationFormSection />

@@ -7,7 +7,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
@@ -496,18 +496,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Mid-Page PersonCTA - After Services */}
-      <section className="section-dark">
-        <div className="container mx-auto px-4 relative z-10">
-          <PersonCTA 
-            title="Ready to Dominate Your Local Market?"
-            description="Get a free digital growth strategy session and discover how our integrated marketing system can help you become the #1 choice in your area."
-            buttonText="Schedule FREE Strategy Session"
-            buttonHref="/free-assessment"
-            urgencyText="Takes 2 mins to schedule"
-          />
-        </div>
-      </section>
+      {/* Mid-Page CardCTA - After Services */}
+      <CardCTA 
+        title="Ready to Dominate Your Local Market?"
+        description="Get a free digital growth strategy session and discover how our integrated marketing system can help you become the #1 choice in your area."
+        buttonText="Schedule FREE Strategy Session"
+        buttonHref="/free-assessment"
+      />
 
       <WhyChooseSection 
         title="Why Choose GrowSmallBiz for Your Business Growth"
@@ -586,18 +581,13 @@ const Index = () => {
         }}
       />
 
-      {/* Final PersonCTA */}
-      <section className="section-dark">
-        <div className="container mx-auto px-4 relative z-10">
-          <PersonCTA 
-            title="Let's Build Your Growth Engine"
-            description="Stop losing leads to competitors with faster responses. Get AI-powered marketing that works 24/7 to grow your business."
-            buttonText="Schedule FREE Strategy Session"
-            buttonHref="/free-assessment"
-            urgencyText="Takes 2 mins to schedule"
-          />
-        </div>
-      </section>
+      {/* Final CardCTA */}
+      <CardCTA 
+        title="Let's Build Your Growth Engine"
+        description="Stop losing leads to competitors with faster responses. Get AI-powered marketing that works 24/7 to grow your business."
+        buttonText="Schedule FREE Strategy Session"
+        buttonHref="/free-assessment"
+      />
 
       {/* Consultation Form Section */}
       <ConsultationFormSection />

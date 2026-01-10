@@ -9,7 +9,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { PlatformAdvantagesSection } from "@/components/sections/PlatformAdvantages";
 import { BlogSection, geoBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { ArrowRight, Globe, Network, Code, Sparkles, Award, Brain, TrendingUp, Eye, Clock, Zap } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
@@ -308,10 +308,9 @@ const GEO = () => {
         showViewAll={false}
       />
 
-      <PersonCTA
+      <CardCTA
         title="Ready to Shape the Answers AI Delivers?"
         description="Position your brand as the trusted source AI platforms cite and recommend. Future-proof your visibility in generative search."
-        sectionClassName="py-12 bg-section-dark"
       />
       <ConsultationFormSection />
       <Footer />

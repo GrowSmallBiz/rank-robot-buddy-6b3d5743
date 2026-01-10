@@ -8,7 +8,7 @@ import { BlogSection, reputationManagementBlogPosts } from "@/components/section
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import { 
   ArrowRight, 
   Star,
@@ -980,10 +980,9 @@ const ReputationManagement = () => {
       />
 
       {/* CTA Section */}
-      <PersonCTA
+      <CardCTA
         title="Ready to Dominate Your Online Reputation?"
         description="Get AI-powered review collection, instant responses, and 24/7 monitoring. Turn your customers into your best marketing tool."
-        sectionClassName="py-12 bg-section-dark"
       />
       <ConsultationFormSection />
 

@@ -23,7 +23,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { PersonCTA } from "@/components/services";
+import { CardCTA } from "@/components/services";
 import dentalHeroImage from "@/assets/industry-dental-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
@@ -412,13 +412,12 @@ const Dental = () => {
         showViewAll={false}
       />
 
-      {/* PersonCTA Section */}
-      <PersonCTA
-        title="Ready to Grow Your Practice?"
+      {/* CardCTA Section */}
+      <CardCTA
+        title="Ready to Grow Your Dental Practice?"
         description="Get a free SEO audit and see exactly how we'll help you attract more high-value patients to your dental practice."
         buttonHref="/free-assessment?industry=dental"
         buttonText="Get Your Free Practice Audit"
-        sectionClassName="py-12 bg-section-dark"
       />
 
       <ConsultationFormSection />

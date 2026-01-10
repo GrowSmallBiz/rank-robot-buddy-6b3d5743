@@ -9,7 +9,7 @@ import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { PersonCTA } from "@/components/services/PersonCTA";
+import { CardCTA } from "@/components/services/CardCTA";
 import { createContactCTA } from "@/config/contactCTA";
 import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield, MapPin, Bot, Eye, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -296,7 +296,7 @@ const About = () => {
         contactCTA={aboutContactCTA}
       />
 
-      <PersonCTA
+      <CardCTA
         title="Let's Talk About Your Business"
         description="Schedule a free strategy call to discuss how we can help your local business grow online."
       />

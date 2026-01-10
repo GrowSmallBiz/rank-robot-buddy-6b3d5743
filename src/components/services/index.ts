@@ -12,3 +12,4 @@ export { ActionCard, ActionsGrid } from "./ActionCard";
 export { ComparisonBox, ComparisonSplit } from "./ComparisonBox";
 export { ServiceCard } from "./ServiceCard";
 export { PersonCTA } from "./PersonCTA";
+export { CardCTA } from "./CardCTA";
