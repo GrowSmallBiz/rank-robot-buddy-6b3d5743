@@ -31,6 +31,7 @@ import MedSpa from "./pages/industries/MedSpa";
 import Chiropractor from "./pages/industries/Chiropractor";
 import AutoRepair from "./pages/industries/AutoRepair";
 import Photographers from "./pages/industries/Photographers";
+import Realtors from "./pages/industries/Realtors";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -70,6 +71,7 @@ const App = () => (
           <Route path="/industries/chiropractor" element={<Chiropractor />} />
           <Route path="/industries/auto-repair" element={<AutoRepair />} />
           <Route path="/industries/photographers" element={<Photographers />} />
+          <Route path="/industries/realtors" element={<Realtors />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
