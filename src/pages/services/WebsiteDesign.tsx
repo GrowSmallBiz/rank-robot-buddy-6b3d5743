@@ -11,6 +11,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { GlowCard } from "@/components/ui/glow-card";
 import {
   ArrowRight,
   CheckCircle2,

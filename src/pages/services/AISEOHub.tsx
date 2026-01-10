@@ -43,6 +43,7 @@ import {
   Rocket,
   CalendarDays,
 } from "lucide-react";
+import { GlowCard } from "@/components/ui/glow-card";
 
 // Import service images
 import technicalSeoImage from "@/assets/technical-seo.png";
@@ -304,7 +305,7 @@ const AISEOHub = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {/* Unified Visibility */}
-              <div className="bg-secondary/50 border-2 border-border rounded-2xl p-6 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
+              <GlowCard className="bg-secondary/50 p-6">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Globe className="w-6 h-6 text-primary" />
                 </div>
@@ -312,10 +313,10 @@ const AISEOHub = () => {
                 <p className="text-sm text-muted-foreground">
                   Rank in search engines and appear in AI-generated answers
                 </p>
-              </div>
+              </GlowCard>
 
               {/* Entity Optimization */}
-              <div className="bg-secondary/50 border-2 border-border rounded-2xl p-6 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
+              <GlowCard className="bg-secondary/50 p-6">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Bot className="w-6 h-6 text-primary" />
                 </div>
@@ -323,10 +324,10 @@ const AISEOHub = () => {
                 <p className="text-sm text-muted-foreground">
                   Get your brand clearly recognized and cited by LLMs
                 </p>
-              </div>
+              </GlowCard>
 
               {/* Content Structuring */}
-              <div className="bg-secondary/50 border-2 border-border rounded-2xl p-6 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
+              <GlowCard className="bg-secondary/50 p-6">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Search className="w-6 h-6 text-primary" />
                 </div>
@@ -334,10 +335,10 @@ const AISEOHub = () => {
                 <p className="text-sm text-muted-foreground">
                   Transform content into AI-friendly formats and snippets
                 </p>
-              </div>
+              </GlowCard>
 
               {/* AI Monitoring */}
-              <div className="bg-secondary/50 border-2 border-border rounded-2xl p-6 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
+              <GlowCard className="bg-secondary/50 p-6">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <BarChart3 className="w-6 h-6 text-primary" />
                 </div>
@@ -345,7 +346,7 @@ const AISEOHub = () => {
                 <p className="text-sm text-muted-foreground">
                   Track citations and generative model performance
                 </p>
-              </div>
+              </GlowCard>
             </div>
 
             {/* SEO Command Center Section */}
@@ -1116,17 +1117,17 @@ const AISEOHub = () => {
                   description: "Dominate Google Maps and local search with automated profile optimization, review management, and local citation building across hundreds of directories—all managed from one platform."
                 }
               ].map((feature, index) => (
-                <div
+                <GlowCard
                   key={index}
-                  className="ghl-card p-6 rounded-xl animate-fade-up"
+                  className="p-6 animate-fade-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="ghl-icon mb-4">
-                    <feature.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-lg font-bold font-display mb-3 text-foreground">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
-                </div>
+                </GlowCard>
               ))}
             </div>
 

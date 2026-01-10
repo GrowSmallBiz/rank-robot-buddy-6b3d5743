@@ -7,6 +7,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
+import { GlowCard } from "@/components/ui/glow-card";
 
 const socialMediaTestimonials = [
   {
@@ -544,13 +545,13 @@ const SocialMedia = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div
+              <GlowCard
                 key={index}
-                className="ghl-card rounded-xl p-6 space-y-4 animate-fade-up"
+                className="p-6 space-y-4 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="ghl-icon">
-                  <service.icon className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <service.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-display font-semibold text-foreground">
                   {service.title}
@@ -558,7 +559,7 @@ const SocialMedia = () => {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
-              </div>
+              </GlowCard>
             ))}
           </div>
         </div>
@@ -579,9 +580,9 @@ const SocialMedia = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {industryRecommendations.map((item, index) => (
-              <div
+              <GlowCard
                 key={index}
-                className="group bg-card border-2 border-border rounded-xl p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] animate-fade-up"
+                className="p-6 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
@@ -594,7 +595,7 @@ const SocialMedia = () => {
                     <p className="text-xs text-muted-foreground">{item.reason}</p>
                   </div>
                 </div>
-              </div>
+              </GlowCard>
             ))}
           </div>
         </div>
