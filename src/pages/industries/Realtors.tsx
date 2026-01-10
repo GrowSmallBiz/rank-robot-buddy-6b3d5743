@@ -621,7 +621,7 @@ const Realtors = () => {
               {painPoints.map((point, i) => (
                 <div 
                   key={i} 
-                  className="bg-background border border-border rounded-2xl p-6 hover:border-destructive/50 transition-all animate-fade-up"
+                  className="bg-background border border-destructive/30 rounded-2xl p-6 hover:border-destructive/50 transition-all animate-fade-up"
                   style={{ animationDelay: `${i * 0.1}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
@@ -913,7 +913,7 @@ const Realtors = () => {
               {funnelStages.map((stage, i) => (
                 <div 
                   key={i}
-                  className="relative bg-card border border-border rounded-2xl p-6 animate-fade-up"
+                  className="relative bg-card border border-primary/30 rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all"
                   style={{ animationDelay: `${i * 0.15}s` }}
                 >
                   {/* Connector Line */}
@@ -974,7 +974,7 @@ const Realtors = () => {
                       href={story.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block bg-card border border-border rounded-2xl p-6 h-full hover:border-emerald-500/50 transition-all group"
+                      className="block bg-card border border-emerald-500/30 rounded-2xl p-6 h-full hover:border-emerald-500/50 transition-all group"
                     >
                       <div className="flex items-center justify-between mb-4">
                         <span className="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-medium">
@@ -1017,7 +1017,7 @@ const Realtors = () => {
               {testimonials.map((testimonial, i) => (
                 <div 
                   key={i}
-                  className="bg-card border border-border rounded-2xl p-6 animate-fade-up"
+                  className="bg-card border border-primary/30 rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all"
                   style={{ animationDelay: `${i * 0.1}s` }}
                 >
                   <div className="flex gap-1 mb-4">
@@ -1069,7 +1069,8 @@ const Realtors = () => {
                     {category.faqs.map((faq, i) => (
                       <div 
                         key={i}
-                        className="bg-background border border-border rounded-xl p-6"
+                        className="bg-background border rounded-xl p-6 hover:shadow-[0_0_60px_rgba(255,127,80,0.3)] transition-all"
+                        style={{ borderColor: '#ff7f50ff' }}
                       >
                         <h3 className="text-lg font-semibold text-foreground mb-3">
                           {faq.question}
