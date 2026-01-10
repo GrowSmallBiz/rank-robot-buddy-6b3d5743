@@ -28,8 +28,8 @@ export const CardCTA = ({
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-violet-500/10" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card/80 backdrop-blur-sm border-2 border-primary/50 rounded-3xl p-10 md:p-14 lg:p-16 shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/70 group">
-            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
+          <div className="bg-card/80 backdrop-blur-sm border-2 border-primary/50 rounded-3xl p-8 md:p-12 shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/70 group">
+            <div className="flex flex-col md:flex-row items-center gap-8">
               {/* Photo with Animated Ring */}
               <div className="flex-shrink-0 text-center">
                 <div className="relative inline-block">
