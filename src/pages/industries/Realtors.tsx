@@ -1074,9 +1074,14 @@ const Realtors = () => {
         </section>
 
         {/* FAQ Section with Tabs */}
-        <section className="py-24 lg:py-32 bg-card/50">
-          <div className="container mx-auto px-4">
+        <section className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+          {/* Subtle glow effects */}
+          <div className="absolute top-0 right-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
+          
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
+              <p className="text-primary font-medium mb-4">FAQ</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
                 Frequently Asked Questions
               </h2>
@@ -1085,76 +1090,120 @@ const Realtors = () => {
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto">
-              <Tabs defaultValue="idx" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 h-auto gap-2 bg-transparent">
-                  {faqCategories.map((category) => {
-                    const colorStyles = {
-                      blue: { bg: '#3b82f6', border: 'rgba(59, 130, 246, 0.3)', bgLight: 'rgba(59, 130, 246, 0.1)' },
-                      violet: { bg: '#8b5cf6', border: 'rgba(139, 92, 246, 0.3)', bgLight: 'rgba(139, 92, 246, 0.1)' },
-                      emerald: { bg: '#10b981', border: 'rgba(16, 185, 129, 0.3)', bgLight: 'rgba(16, 185, 129, 0.1)' },
-                      amber: { bg: '#f59e0b', border: 'rgba(245, 158, 11, 0.3)', bgLight: 'rgba(245, 158, 11, 0.1)' }
-                    };
-                    const colors = colorStyles[category.color as keyof typeof colorStyles];
-                    return (
-                      <TabsTrigger 
-                        key={category.id}
-                        value={category.id}
-                        className="group flex items-center gap-2 px-4 py-3 rounded-xl border transition-all data-[state=active]:text-white hover:bg-opacity-10"
-                        style={{
-                          borderColor: colors.border,
-                          ['--tab-active-bg' as string]: colors.bg,
-                        }}
-                      >
-                        <div 
-                          className="w-7 h-7 rounded-lg flex items-center justify-center transition-all group-data-[state=active]:bg-white/20"
-                          style={{ backgroundColor: colors.bgLight }}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start max-w-6xl mx-auto">
+              {/* FAQ Column */}
+              <div className="lg:col-span-2">
+                <Tabs defaultValue="idx" className="w-full">
+                  <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 h-auto gap-2 bg-transparent">
+                    {faqCategories.map((category) => {
+                      const colorStyles = {
+                        blue: { bg: '#3b82f6', border: 'rgba(59, 130, 246, 0.3)', bgLight: 'rgba(59, 130, 246, 0.1)' },
+                        violet: { bg: '#8b5cf6', border: 'rgba(139, 92, 246, 0.3)', bgLight: 'rgba(139, 92, 246, 0.1)' },
+                        emerald: { bg: '#10b981', border: 'rgba(16, 185, 129, 0.3)', bgLight: 'rgba(16, 185, 129, 0.1)' },
+                        amber: { bg: '#f59e0b', border: 'rgba(245, 158, 11, 0.3)', bgLight: 'rgba(245, 158, 11, 0.1)' }
+                      };
+                      const colors = colorStyles[category.color as keyof typeof colorStyles];
+                      return (
+                        <TabsTrigger 
+                          key={category.id}
+                          value={category.id}
+                          className="group flex items-center gap-2 px-4 py-3 rounded-xl border transition-all data-[state=active]:text-white hover:bg-opacity-10"
+                          style={{
+                            borderColor: colors.border,
+                            ['--tab-active-bg' as string]: colors.bg,
+                          }}
                         >
-                          <category.icon 
-                            className="w-4 h-4 transition-all group-data-[state=active]:text-white" 
+                          <div 
+                            className="w-7 h-7 rounded-lg flex items-center justify-center transition-all group-data-[state=active]:bg-white/20"
+                            style={{ backgroundColor: colors.bgLight }}
+                          >
+                            <category.icon 
+                              className="w-4 h-4 transition-all group-data-[state=active]:text-white" 
+                              style={{ color: colors.bg }}
+                            />
+                          </div>
+                          <span 
+                            className="hidden sm:inline font-medium transition-all group-data-[state=active]:text-white"
                             style={{ color: colors.bg }}
-                          />
-                        </div>
-                        <span 
-                          className="hidden sm:inline font-medium transition-all group-data-[state=active]:text-white"
-                          style={{ color: colors.bg }}
-                        >
-                          {category.label}
-                        </span>
-                        <style>{`
-                          [data-state="active"][value="${category.id}"] {
-                            background-color: ${colors.bg} !important;
-                            border-color: ${colors.bg} !important;
-                          }
-                          [data-state="active"][value="${category.id}"] span,
-                          [data-state="active"][value="${category.id}"] svg {
-                            color: white !important;
-                          }
-                        `}</style>
-                      </TabsTrigger>
-                    );
-                  })}
-                </TabsList>
+                          >
+                            {category.label}
+                          </span>
+                          <style>{`
+                            [data-state="active"][value="${category.id}"] {
+                              background-color: ${colors.bg} !important;
+                              border-color: ${colors.bg} !important;
+                            }
+                            [data-state="active"][value="${category.id}"] span,
+                            [data-state="active"][value="${category.id}"] svg {
+                              color: white !important;
+                            }
+                          `}</style>
+                        </TabsTrigger>
+                      );
+                    })}
+                  </TabsList>
 
-                {faqCategories.map((category) => (
-                  <TabsContent key={category.id} value={category.id} className="space-y-4">
-                    {category.faqs.map((faq, i) => (
-                      <div 
-                        key={i}
-                        className="bg-background border rounded-xl p-6 hover:shadow-[0_0_60px_rgba(255,127,80,0.3)] transition-all"
-                        style={{ borderColor: '#ff7f50ff' }}
-                      >
-                        <h3 className="text-lg font-semibold text-foreground mb-3">
-                          {faq.question}
-                        </h3>
-                        <p className="text-muted-foreground">
-                          {faq.answer}
-                        </p>
-                      </div>
-                    ))}
-                  </TabsContent>
-                ))}
-              </Tabs>
+                  {faqCategories.map((category) => (
+                    <TabsContent key={category.id} value={category.id} className="space-y-4">
+                      {category.faqs.map((faq, i) => (
+                        <div 
+                          key={i}
+                          className="bg-black border rounded-xl p-6 hover:shadow-[0_0_60px_rgba(255,127,80,0.3)] transition-all"
+                          style={{ borderColor: '#ff7f50ff' }}
+                        >
+                          <h3 className="text-lg font-semibold text-foreground mb-3">
+                            {faq.question}
+                          </h3>
+                          <p className="text-muted-foreground">
+                            {faq.answer}
+                          </p>
+                        </div>
+                      ))}
+                    </TabsContent>
+                  ))}
+                </Tabs>
+              </div>
+
+              {/* Contact CTA Card */}
+              <div className="lg:col-span-1 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                <div className="sticky top-24 p-8 rounded-2xl border-2 border-primary/60 bg-card/30 backdrop-blur-sm text-center shadow-[0_0_30px_rgba(255,127,80,0.15)]">
+                  {/* Avatar with gradient border */}
+                  <div className="w-24 h-24 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-primary via-orange-400 to-primary">
+                    <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
+                      <Home className="w-10 h-10 text-primary" />
+                    </div>
+                  </div>
+
+                  <h3 className="text-xl font-display font-bold text-foreground mb-4">
+                    Ready to Grow Your Real Estate Business?
+                  </h3>
+                  
+                  <p className="text-muted-foreground mb-4">
+                    Get a personalized demo of our IDX website, CRM integration, and marketing automation platform.
+                  </p>
+                  
+                  <p className="text-foreground font-medium mb-6">
+                    Let's build your lead generation machine.
+                  </p>
+
+                  {/* Signature */}
+                  <div className="mb-6">
+                    <p className="font-cursive text-2xl text-foreground italic">Subrata Guha</p>
+                    <p className="text-sm text-muted-foreground">Founder, GrowSmallBiz</p>
+                  </div>
+
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-gradient-to-r from-[hsl(199_89%_48%)] to-primary text-white rounded-full border-none hover:shadow-[0_0_30px_rgba(255,127,80,0.5),0_0_60px_rgba(255,127,80,0.3)] hover:scale-105 transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/contact">
+                      Schedule a Demo
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
