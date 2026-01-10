@@ -42,6 +42,7 @@ import {
   Handshake,
   Puzzle
 } from "lucide-react";
+import { GlowCard } from "@/components/ui/glow-card";
 import { Helmet } from "react-helmet";
 
 // Stats data for homepage

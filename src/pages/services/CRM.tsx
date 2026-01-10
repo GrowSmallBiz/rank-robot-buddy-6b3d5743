@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import crmHeroBg from "@/assets/crm-hero-bg.jpg";
+import { GlowCard } from "@/components/ui/glow-card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -790,9 +791,9 @@ const CRM = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {testimonials.map((testimonial, index) => (
-                <div
+                <GlowCard
                   key={index}
-                  className="bg-card/90 backdrop-blur-sm border-2 border-border rounded-2xl p-6 animate-fade-up hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all"
+                  className="p-6 animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex gap-1 mb-4">
@@ -805,7 +806,7 @@ const CRM = () => {
                     <p className="font-semibold text-foreground">{testimonial.author}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
-                </div>
+                </GlowCard>
               ))}
             </div>
           </div>

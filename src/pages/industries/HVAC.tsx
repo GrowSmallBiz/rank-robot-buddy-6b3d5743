@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
+import { GlowCard } from "@/components/ui/glow-card";
 import { Link } from "react-router-dom";
 import { 
   Wrench, 
@@ -279,9 +280,9 @@ const HVAC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
-              <div 
+              <GlowCard 
                 key={index}
-                className="bg-card border border-border rounded-2xl p-6 card-hover"
+                className="p-6"
               >
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <benefit.icon className="w-7 h-7 text-primary" />
@@ -292,7 +293,7 @@ const HVAC = () => {
                 <p className="text-muted-foreground text-sm">
                   {benefit.description}
                 </p>
-              </div>
+              </GlowCard>
             ))}
           </div>
         </div>
@@ -312,9 +313,9 @@ const HVAC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div 
+              <GlowCard 
                 key={index}
-                className="bg-card border border-border rounded-2xl p-8 card-hover"
+                className="p-8"
               >
                 <h3 className="text-2xl font-display font-semibold text-foreground mb-3">
                   {service.title}
@@ -330,7 +331,7 @@ const HVAC = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </GlowCard>
             ))}
           </div>
         </div>
