@@ -9,7 +9,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { CardCTA } from "@/components/services";
+import { CardCTA, FloatingCTA } from "@/components/services";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { GlowCard } from "@/components/ui/glow-card";
 import {
@@ -1042,6 +1042,12 @@ const WebsiteDesign = () => {
       />
       <ConsultationFormSection />
       <Footer />
+      
+      {/* Floating CTA */}
+      <FloatingCTA
+        title="Ready to Transform Your Online Presence?"
+        description="Don't let another day pass with a website that fails to showcase your expertise. Join hundreds of successful service professionals."
+      />
     </div>
   );
 };
