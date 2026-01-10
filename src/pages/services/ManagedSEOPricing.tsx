@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { GlowCard } from "@/components/ui/glow-card";
 import { 
   CheckCircle, 
   XCircle, 
@@ -179,7 +180,7 @@ const ManagedSEOPricing = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
               {/* Starter Plan */}
-              <div className="relative bg-card border-2 border-border rounded-2xl p-8 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300 animate-fade-up">
+              <GlowCard className="relative p-8 animate-fade-up">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold font-display text-foreground mb-2">Starter</h3>
                   <p className="text-sm text-muted-foreground">Perfect for new businesses starting their SEO journey</p>
@@ -213,7 +214,7 @@ const ManagedSEOPricing = () => {
                 <Button variant="outline" size="lg" className="w-full" asChild>
                   <Link to="/free-assessment">Get Started</Link>
                 </Button>
-              </div>
+              </GlowCard>
 
               {/* Growth Plan */}
               <div className="relative bg-card border-2 border-primary rounded-2xl p-8 shadow-2xl shadow-primary/20 animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -262,7 +263,7 @@ const ManagedSEOPricing = () => {
               </div>
 
               {/* Authority Plan */}
-              <div className="relative bg-card border-2 border-border rounded-2xl p-8 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <GlowCard className="relative p-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold font-display text-foreground mb-2">Authority</h3>
                   <p className="text-sm text-muted-foreground">Maximum visibility and market domination</p>
@@ -300,7 +301,7 @@ const ManagedSEOPricing = () => {
                 <Button variant="outline" size="lg" className="w-full" asChild>
                   <Link to="/free-assessment">Get Started</Link>
                 </Button>
-              </div>
+              </GlowCard>
             </div>
           </div>
         </section>
