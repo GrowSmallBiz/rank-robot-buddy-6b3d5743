@@ -58,6 +58,8 @@ import realtorReputationImg from "@/assets/realtor-reputation.jpg";
 import realtorSeoImg from "@/assets/realtor-seo.jpg";
 import realtorPaidAdsImg from "@/assets/realtor-paid-ads.jpg";
 import realtorSocialMediaImg from "@/assets/realtor-social-media.jpg";
+import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.jpg";
+import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.jpg";
 
 // Pain Points for Realtors
 const painPoints = [
@@ -197,6 +199,38 @@ const crmServices = [
     ],
     color: "emerald",
     image: realtorReputationImg
+  },
+  {
+    id: "ai-receptionist",
+    icon: Phone,
+    title: "AI Receptionist",
+    description: "Never miss a call again. AI answers, qualifies leads, and books appointments 24/7.",
+    features: [
+      "24/7 Call Answering",
+      "Lead Qualification",
+      "Appointment Scheduling",
+      "Call Transcription & Summaries",
+      "CRM Integration",
+      "Missed Call Text-Back"
+    ],
+    color: "violet",
+    image: realtorAiReceptionistImg
+  },
+  {
+    id: "conversational-ai",
+    icon: Bot,
+    title: "Conversational AI",
+    description: "Intelligent chatbots that engage visitors, answer property questions, and capture leads.",
+    features: [
+      "Website Chat Widget",
+      "Property Q&A Automation",
+      "Lead Capture & Routing",
+      "Multi-language Support",
+      "SMS & Messenger Integration",
+      "Handoff to Human Agent"
+    ],
+    color: "cyan",
+    image: realtorConversationalAiImg
   }
 ];
 
@@ -675,13 +709,17 @@ const Realtors = () => {
 
             {/* CRM & Marketing Automation Section */}
             <div className="mb-16">
-              <div className="flex items-center gap-3 mb-8">
+              <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center">
                   <Database className="w-5 h-5 text-violet-500" />
                 </div>
                 <h3 className="text-2xl font-display font-bold text-foreground">CRM & Marketing Automation</h3>
               </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <p className="text-muted-foreground mb-8 pl-[52px]">
+                <span className="text-violet-500 font-semibold">Buyers & Sellers Funnels</span> — Automated lead nurturing paths designed specifically for buyer and seller journeys, 
+                from first inquiry to closing and beyond.
+              </p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {crmServices.map((service, i) => {
                   const colors = colorConfig[service.color];
                   return (
