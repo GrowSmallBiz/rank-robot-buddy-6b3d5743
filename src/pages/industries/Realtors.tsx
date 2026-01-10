@@ -611,7 +611,7 @@ const Realtors = () => {
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
                 Everything You Need to{" "}
-                <span className="text-gradient">Dominate Your Market</span>
+                <span className="text-gradient">Dominate Your Real Estate Market</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 From property search websites to automated nurturing—we've got every stage of your client journey covered
