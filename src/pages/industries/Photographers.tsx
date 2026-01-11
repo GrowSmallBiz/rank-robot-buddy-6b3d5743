@@ -3,6 +3,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { GlowCard } from "@/components/ui/glow-card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
   Camera,
   TrendingUp, 
@@ -14,7 +16,34 @@ import {
   CheckCircle2,
   ArrowRight,
   Bot,
-  Image
+  Image,
+  Heart,
+  Clock,
+  MessageSquare,
+  Phone,
+  Mail,
+  Gift,
+  Repeat,
+  Share2,
+  Search,
+  Globe,
+  Zap,
+  Database,
+  BarChart3,
+  Eye,
+  FileSearch,
+  MousePointerClick,
+  Megaphone,
+  RefreshCw,
+  Linkedin,
+  Instagram,
+  Facebook,
+  Video,
+  Sparkles,
+  Shield,
+  DollarSign,
+  UserPlus,
+  Mic
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -23,91 +52,500 @@ import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
-import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
+import { SectionHeader } from "@/components/services/SectionHeader";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
 
-const benefits = [
+// Pain Points / Challenges for Photographers
+const photographerChallenges = [
   {
-    icon: MapPin,
-    title: "Local Client Acquisition",
-    description: "Rank #1 for 'wedding photographer near me', 'portrait photographer', and event photography searches."
+    icon: Clock,
+    title: "Inconsistent Booking Pipeline",
+    description: "Feast-or-famine cycle where some months are packed while others have empty slots and no inquiries coming in."
   },
   {
-    icon: Calendar,
-    title: "More Bookings",
-    description: "Convert website visitors into booked sessions with portfolio-optimized pages and clear calls-to-action."
+    icon: Users,
+    title: "Over-Reliance on Referrals",
+    description: "Depending solely on word-of-mouth means unpredictable income and no control over your growth trajectory."
   },
   {
-    icon: Bot,
-    title: "AI Search Visibility",
-    description: "Get recommended when clients ask AI 'Who's the best wedding photographer in [city]?'"
+    icon: Search,
+    title: "Invisible Online Presence",
+    description: "Beautiful portfolio that sits unseen—competitors with less talent rank higher on Google and book your ideal clients."
   },
   {
-    icon: Star,
-    title: "Portfolio Authority",
-    description: "Showcase your best work in a way that both clients and search engines love."
+    icon: Target,
+    title: "Attracting Wrong Clients",
+    description: "Getting inquiries from price-shoppers instead of clients who value your artistry and are willing to pay premium rates."
   }
 ];
 
-const services = [
+// When to Consider Digital Growth
+const growthSignals = [
+  "Personal networking alone isn't filling your session calendar",
+  "Referrals are slowing down or inconsistent month-to-month",
+  "You're competing on price instead of value and artistry",
+  "Less talented photographers are outranking you on Google",
+  "You can't predict revenue more than a few weeks out",
+  "Spending hours on social media with minimal bookings"
+];
+
+// Photography Genre Strategies for SEO
+const genreStrategies = [
   {
-    title: "Photography Niche SEO",
-    description: "Dominate searches for weddings, portraits, events, commercial, and your specialty niches.",
-    features: ["Specialty-specific landing pages", "Location + niche keyword targeting", "Style-based content strategy", "Seasonal campaign optimization"]
+    id: "portrait",
+    label: "Portrait Photography",
+    icon: Users,
+    color: "pink",
+    genres: ["Family Portraits", "Maternity & Newborn", "High School Seniors"],
+    strategies: [
+      "Target seasonal keywords: 'fall family photos [city]', 'senior pictures [city]'",
+      "Create location-specific landing pages for popular shoot spots",
+      "Optimize for 'baby photographer near me' and milestone searches",
+      "Build content around seasonal mini-sessions and package offerings"
+    ],
+    localSeo: [
+      "Google Business Profile with portfolio photos",
+      "Local venue partnerships for backlink building",
+      "Reviews mentioning specific session types",
+      "Neighborhood-specific landing pages"
+    ]
   },
   {
-    title: "Local Market Visibility",
-    description: "Own the search results when clients look for photographers in your area.",
-    features: ["Google Business Profile optimization", "Local citation building", "Review generation campaigns", "Venue & vendor partnerships SEO"]
+    id: "wedding",
+    label: "Wedding Photography",
+    icon: Heart,
+    color: "rose",
+    genres: ["Wedding Day Coverage", "Engagement Sessions", "Elopements"],
+    strategies: [
+      "Long-tail keywords: 'intimate wedding photographer [city]', 'adventure elopement photographer'",
+      "Venue-specific pages linking to wedding vendors",
+      "Blog posts from real weddings optimized for venue names",
+      "Target 'wedding photographer cost' and pricing-related searches"
+    ],
+    localSeo: [
+      "Listings on The Knot, WeddingWire, Zola",
+      "Venue partnership link building",
+      "Google Business optimized for wedding searches",
+      "Wedding blog features and publications"
+    ]
   },
   {
-    title: "AI & Voice Search Ready",
-    description: "Be the recommended photographer when clients research via AI assistants.",
-    features: ["Answer Engine Optimization", "Photography FAQ schema", "Pricing & package content", "Expert positioning strategy"]
-  },
-  {
-    title: "Portfolio & Gallery SEO",
-    description: "Make your stunning work visible in image search and drive qualified traffic.",
-    features: ["Image SEO optimization", "Alt tag strategy", "Gallery page structure", "Fast-loading portfolio pages"]
+    id: "branding",
+    label: "Branding & Headshots",
+    icon: Sparkles,
+    color: "blue",
+    genres: ["Corporate Headshots", "Personal Branding", "Team Photos"],
+    strategies: [
+      "Target 'professional headshot photographer [city]', 'personal branding photographer'",
+      "LinkedIn-optimized content marketing strategy",
+      "Case studies featuring entrepreneur transformations",
+      "B2B keywords: 'corporate photographer', 'company headshots'"
+    ],
+    localSeo: [
+      "LinkedIn company page optimization",
+      "Business directory listings",
+      "Chamber of Commerce partnerships",
+      "Coworking space collaborations"
+    ]
   }
 ];
 
-const painPoints = [
-  "Talented photographers with fewer skills ranking above you",
-  "Struggling to book your calendar during slow seasons",
-  "Relying too heavily on referrals without steady organic leads",
-  "Beautiful portfolio that no one can find on Google",
-  "Wasting time on social media without seeing real bookings"
+// Color configurations
+const colorConfig: Record<string, { bg: string; bgLight: string; text: string; border: string; gradient: string }> = {
+  pink: {
+    bg: "bg-pink-500",
+    bgLight: "bg-pink-500/10",
+    text: "text-pink-500",
+    border: "border-pink-500/30",
+    gradient: "from-pink-500 to-pink-600"
+  },
+  rose: {
+    bg: "bg-rose-500",
+    bgLight: "bg-rose-500/10",
+    text: "text-rose-500",
+    border: "border-rose-500/30",
+    gradient: "from-rose-500 to-rose-600"
+  },
+  blue: {
+    bg: "bg-blue-500",
+    bgLight: "bg-blue-500/10",
+    text: "text-blue-500",
+    border: "border-blue-500/30",
+    gradient: "from-blue-500 to-blue-600"
+  },
+  violet: {
+    bg: "bg-violet-500",
+    bgLight: "bg-violet-500/10",
+    text: "text-violet-500",
+    border: "border-violet-500/30",
+    gradient: "from-violet-500 to-violet-600"
+  },
+  amber: {
+    bg: "bg-amber-500",
+    bgLight: "bg-amber-500/10",
+    text: "text-amber-500",
+    border: "border-amber-500/30",
+    gradient: "from-amber-500 to-amber-600"
+  },
+  emerald: {
+    bg: "bg-emerald-500",
+    bgLight: "bg-emerald-500/10",
+    text: "text-emerald-500",
+    border: "border-emerald-500/30",
+    gradient: "from-emerald-500 to-emerald-600"
+  },
+  cyan: {
+    bg: "bg-cyan-500",
+    bgLight: "bg-cyan-500/10",
+    text: "text-cyan-500",
+    border: "border-cyan-500/30",
+    gradient: "from-cyan-500 to-cyan-600"
+  },
+  teal: {
+    bg: "bg-teal-500",
+    bgLight: "bg-teal-500/10",
+    text: "text-teal-500",
+    border: "border-teal-500/30",
+    gradient: "from-teal-500 to-teal-600"
+  }
+};
+
+// Website Design Features
+const websiteFeatures = [
+  "Mobile-responsive portfolio galleries",
+  "Fast-loading image optimization",
+  "Session booking integration",
+  "Investment/pricing guide pages",
+  "Client testimonial displays",
+  "Blog for SEO content",
+  "Contact forms with session type selection",
+  "Social media integration"
 ];
 
-const results = [
-  { metric: "289%", label: "Increase in inquiries" },
-  { metric: "41", label: "First page keywords" },
-  { metric: "67%", label: "Calendar booked in advance" },
-  { metric: "4.9", label: "Average Google rating" }
+// Managed AI SEO Features
+const seoFeatures = [
+  "Keyword research for your photography niche",
+  "Google Business Profile optimization",
+  "Local citation building (50+ directories)",
+  "On-page SEO for all pages",
+  "Image alt-tag optimization",
+  "Schema markup for photographers",
+  "Monthly ranking reports",
+  "Competitor analysis & strategy"
 ];
 
-const photographerTestimonials = [
+// Paid Media Platform Recommendations by Genre
+const paidMediaByGenre = [
   {
-    quote: "I went from struggling to book weddings to having a waitlist. GrowSmallBiz helped me rank #1 for 'wedding photographer' in my city.",
-    author: "Sarah Williams",
-    role: "Owner",
-    company: "Sarah Williams Photography",
+    genre: "Portrait Photographers",
+    icon: Users,
+    platforms: [
+      { name: "Meta (FB/IG)", reason: "Visual platform perfect for showcasing portrait work to local parents and families" },
+      { name: "Pinterest", reason: "Inspiration-driven; ideal for family photo ideas and senior session inspiration" },
+      { name: "Google PPC", reason: "Capture high-intent 'photographer near me' searches" }
+    ],
+    color: "pink"
   },
   {
-    quote: "My inquiry rate tripled. Now I can be selective about the clients I take on instead of chasing every lead.",
-    author: "Marcus Chen",
-    role: "Lead Photographer",
-    company: "Chen Creative Studios",
+    genre: "Wedding Photographers",
+    icon: Heart,
+    platforms: [
+      { name: "Meta (FB/IG)", reason: "Target engaged couples with visual wedding portfolio ads" },
+      { name: "Pinterest", reason: "Wedding planning platform—brides actively searching for inspiration" },
+      { name: "Google PPC", reason: "Target 'wedding photographer [city]' and venue-specific searches" },
+      { name: "The Knot/Zola", reason: "Wedding-specific platforms where couples actively browse photographers" }
+    ],
+    color: "rose"
   },
   {
-    quote: "Bookings increased 400%. I'm now charging premium rates and still have a full calendar.",
-    author: "Emily Foster",
-    role: "Owner",
-    company: "Foster Portrait Studio",
-  },
+    genre: "Branding Photographers",
+    icon: Sparkles,
+    platforms: [
+      { name: "LinkedIn Ads", reason: "Target entrepreneurs, coaches, and business owners directly" },
+      { name: "Meta (FB/IG)", reason: "Reach personal brand builders and small business owners" },
+      { name: "Google PPC", reason: "Capture 'professional headshot' and 'branding photographer' searches" }
+    ],
+    color: "blue"
+  }
 ];
 
+// Retargeting & Lookalike Strategy
+const retargetingStrategy = [
+  {
+    title: "Website Visitor Retargeting",
+    description: "Show ads to people who visited your portfolio but didn't inquire. Stay top-of-mind as they compare photographers.",
+    icon: RefreshCw
+  },
+  {
+    title: "Lookalike Audiences",
+    description: "Upload your past client list. Let Facebook/Google find similar people in your area who match your ideal client profile.",
+    icon: Users
+  },
+  {
+    title: "Engagement Retargeting",
+    description: "Retarget people who engaged with your social content—liked posts, watched videos, or saved your work.",
+    icon: Eye
+  }
+];
+
+// Tracking Setup
+const trackingSetup = [
+  {
+    name: "Facebook Pixel",
+    description: "Track website visitors, measure conversions, and build retargeting audiences from your Meta ads.",
+    icon: Facebook
+  },
+  {
+    name: "Google Tag Manager",
+    description: "Centralized tag management for all your tracking codes—easy to update without touching website code.",
+    icon: Database
+  },
+  {
+    name: "Google Analytics 4",
+    description: "Understand your website traffic, see which pages drive inquiries, and track the full customer journey.",
+    icon: BarChart3
+  }
+];
+
+// Social Media Platform Strategy by Genre
+const socialMediaByGenre = [
+  {
+    genre: "Portrait Photographers",
+    platforms: [
+      { name: "Instagram", icon: Instagram, strategy: "Before/after reveals, behind-the-scenes stories, client testimonials in Reels" },
+      { name: "Facebook", icon: Facebook, strategy: "Local community groups, parent groups, mini-session announcements" },
+      { name: "Pinterest", icon: Image, strategy: "What to wear guides, location inspiration, session type boards" }
+    ],
+    color: "pink"
+  },
+  {
+    genre: "Wedding Photographers",
+    platforms: [
+      { name: "Instagram", icon: Instagram, strategy: "Full wedding galleries in carousels, Reels of ceremony moments, vendor collaborations" },
+      { name: "Pinterest", icon: Image, strategy: "Real wedding boards, venue-specific pins, wedding planning content" },
+      { name: "TikTok", icon: Video, strategy: "Wedding day clips, photographer POV content, trending audio with wedding footage" }
+    ],
+    color: "rose"
+  },
+  {
+    genre: "Branding Photographers",
+    platforms: [
+      { name: "LinkedIn", icon: Linkedin, strategy: "Thought leadership content, client success stories, business tips for personal branding" },
+      { name: "Instagram", icon: Instagram, strategy: "Professional transformation reveals, tips for looking good on camera, brand story content" }
+    ],
+    color: "blue"
+  }
+];
+
+// LinkedIn Outreach for Headshot Photographers
+const linkedInOutreach = {
+  title: "LinkedIn Outreach Automation for Headshot Photographers",
+  subtitle: "Marketing is a numbers game—here's how to scale your outreach",
+  description: "For headshot and personal branding photographers, LinkedIn is a goldmine. But manually sending connection requests doesn't scale. You need a workflow-driven automated process.",
+  benefits: [
+    "Send 100+ personalized connection requests per week (within LinkedIn's limits)",
+    "Auto-follow-up sequences after connections accept",
+    "Target by job title, industry, company size, and location",
+    "Track response rates and optimize messaging",
+    "Warm up cold prospects before pitching services"
+  ],
+  stats: [
+    { value: "100+", label: "Connections/week" },
+    { value: "25%", label: "Avg acceptance rate" },
+    { value: "8-12%", label: "Response rate" }
+  ]
+};
+
+// AI Client Growth System - Funnels by Genre
+const clientGrowthFunnels = [
+  {
+    genre: "Portrait Photography",
+    icon: Users,
+    color: "pink",
+    funnel: [
+      { stage: "Awareness", description: "Social media ads showcasing family sessions", icon: Megaphone },
+      { stage: "Interest", description: "Free 'what to wear' guide download", icon: FileSearch },
+      { stage: "Consideration", description: "Email nurture with portfolio + testimonials", icon: Mail },
+      { stage: "Decision", description: "Limited-time mini-session offer", icon: Calendar },
+      { stage: "Booking", description: "Online booking + deposit collection", icon: CheckCircle2 },
+      { stage: "Experience", description: "Pre-session prep + day-of excellence", icon: Camera },
+      { stage: "Retention", description: "Milestone reminders, referral program", icon: Repeat }
+    ]
+  },
+  {
+    genre: "Wedding Photography",
+    icon: Heart,
+    color: "rose",
+    funnel: [
+      { stage: "Discovery", description: "Pinterest ads, venue partnerships, SEO", icon: Search },
+      { stage: "Research", description: "Portfolio review, blog posts from real weddings", icon: Eye },
+      { stage: "Inquiry", description: "Contact form with date + venue details", icon: MessageSquare },
+      { stage: "Consultation", description: "Video call or in-person meeting", icon: Video },
+      { stage: "Proposal", description: "Custom collection presentation", icon: FileSearch },
+      { stage: "Booking", description: "Contract signing + retainer", icon: CheckCircle2 },
+      { stage: "Retention", description: "Anniversary session offers, referrals", icon: Heart }
+    ]
+  },
+  {
+    genre: "Branding Photography",
+    icon: Sparkles,
+    color: "blue",
+    funnel: [
+      { stage: "Outreach", description: "LinkedIn connection + nurture", icon: Linkedin },
+      { stage: "Awareness", description: "Content marketing, case studies", icon: FileSearch },
+      { stage: "Lead Magnet", description: "'Personal brand photoshoot checklist' download", icon: Gift },
+      { stage: "Nurture", description: "Email sequence with transformation stories", icon: Mail },
+      { stage: "Consultation", description: "Discovery call about brand goals", icon: Phone },
+      { stage: "Booking", description: "Session booking + brand questionnaire", icon: Calendar },
+      { stage: "Upsell", description: "Quarterly refresh sessions, team headshots", icon: TrendingUp }
+    ]
+  }
+];
+
+// Email Nurture Importance
+const emailNurturePoints = [
+  {
+    title: "Stay Top-of-Mind",
+    description: "Most photography purchases aren't impulse decisions. Email keeps you visible during their consideration period.",
+    icon: Eye
+  },
+  {
+    title: "Build Trust Over Time",
+    description: "Share your work, personality, and expertise. By the time they're ready to book, they already feel like they know you.",
+    icon: Heart
+  },
+  {
+    title: "Automate Follow-ups",
+    description: "Set it once and let automated sequences nurture leads while you focus on shooting and editing.",
+    icon: RefreshCw
+  }
+];
+
+// Seasonal Campaign Examples
+const seasonalCampaigns = [
+  {
+    campaign: "Mother's Day Special",
+    timing: "Launch 4-6 weeks before",
+    offer: "Gift cards for mom + mini-session packages",
+    channels: ["Email to past clients", "Social media ads", "Website popup"]
+  },
+  {
+    campaign: "Valentine's Couples Sessions",
+    timing: "Launch 3-4 weeks before",
+    offer: "Romantic couples mini-sessions",
+    channels: ["Instagram Reels", "Email to engagement clients", "Google ads"]
+  },
+  {
+    campaign: "Fall Family Sessions",
+    timing: "Launch mid-August",
+    offer: "Fall foliage family portraits for holiday cards",
+    channels: ["Email blast", "Facebook local groups", "Pinterest ads"]
+  },
+  {
+    campaign: "Back-to-School Senior Rush",
+    timing: "July announcement",
+    offer: "Senior portrait packages before school starts",
+    channels: ["Instagram to parents", "High school partnerships", "TikTok"]
+  },
+  {
+    campaign: "Holiday Mini-Sessions",
+    timing: "October announcement",
+    offer: "Quick holiday-themed sessions",
+    channels: ["Email to client list", "Facebook events", "Referral incentive"]
+  }
+];
+
+// Past Client Outreach
+const pastClientWorkflows = [
+  {
+    title: "Annual Check-in",
+    description: "Automated email 11 months after their session to offer an anniversary or updated session.",
+    icon: Calendar
+  },
+  {
+    title: "Milestone Triggers",
+    description: "For newborn clients, auto-send 6-month and 1-year session reminders based on baby's birthday.",
+    icon: Sparkles
+  },
+  {
+    title: "Re-engagement Campaign",
+    description: "Haven't heard from a client in 2+ years? Send a 'We miss you' offer with a special return discount.",
+    icon: Heart
+  }
+];
+
+// Reputation Management
+const reputationBenefits = [
+  "5-star reviews build instant trust with potential clients",
+  "Google reviews directly impact your local search ranking",
+  "Automated review requests sent after every session",
+  "Monitor all platforms: Google, Facebook, Yelp, The Knot",
+  "Respond to reviews quickly to show engagement"
+];
+
+// Gift Card & Referral Programs
+const giftAndReferralPrograms = [
+  {
+    title: "Gift Card Sales",
+    description: "Sell gift cards year-round, especially before holidays. Perfect for baby showers, graduations, and Mother's Day.",
+    icon: Gift,
+    features: ["Online gift card store", "Custom denominations", "Automated delivery", "Usage tracking"]
+  },
+  {
+    title: "Referral Tracking",
+    description: "Know exactly who referred each new client. Track referral sources automatically in your CRM.",
+    icon: UserPlus,
+    features: ["Unique referral links", "Referral source tagging", "Thank-you automation", "Reward tracking"]
+  },
+  {
+    title: "Referral Rewards",
+    description: "Incentivize referrals with credits, prints, or session discounts. Automate reward delivery.",
+    icon: DollarSign,
+    features: ["Automatic reward triggers", "Credit bank system", "Thank-you emails", "Referral leaderboard"]
+  }
+];
+
+// Review Request Flow
+const reviewRequestFlow = [
+  { step: "1", title: "Session Complete", description: "Client receives gallery delivery" },
+  { step: "2", title: "Happiness Check", description: "Automated email: 'How was your experience?'" },
+  { step: "3", title: "If Positive", description: "Send Google review request link" },
+  { step: "4", title: "Review Submitted", description: "Thank-you email + small gift/discount for next session" },
+  { step: "5", title: "If Neutral/Negative", description: "Private feedback form to resolve before going public" }
+];
+
+// AI Voice & Chat Features
+const aiFeatures = [
+  {
+    title: "24/7 Voice AI Receptionist",
+    description: "Never miss a booking call again. AI answers inquiries, checks your calendar availability, and books appointments even at 2am.",
+    icon: Phone,
+    features: [
+      "Answers calls in your brand voice",
+      "Checks calendar availability in real-time",
+      "Books consultations and sessions",
+      "Sends confirmation texts/emails",
+      "Transfers urgent calls to you"
+    ],
+    color: "violet"
+  },
+  {
+    title: "Conversational AI Chat",
+    description: "Intelligent chatbot that engages website visitors, answers FAQs about your services, and captures leads across all channels.",
+    icon: MessageSquare,
+    features: [
+      "Website live chat widget",
+      "SMS two-way conversations",
+      "Facebook Messenger integration",
+      "Instagram DM automation",
+      "Lead qualification & capture"
+    ],
+    color: "cyan"
+  }
+];
+
+// FAQs
 const faqs = [
   {
     question: "How long does it take to see more photography bookings from SEO?",
@@ -118,19 +556,46 @@ const faqs = [
     answer: "Absolutely! We create dedicated landing pages for each specialty you offer and target clients actively searching for those specific services in your area."
   },
   {
-    question: "How do you optimize my portfolio for search engines?",
-    answer: "We implement image SEO best practices—proper file naming, alt tags, schema markup, and page structure—so your stunning work appears in image search and drives qualified traffic."
+    question: "How does the CRM integrate with my booking workflow?",
+    answer: "Our CRM connects with your booking calendar to automatically capture inquiries, send follow-up sequences, and track where each client is in your pipeline—from initial inquiry to final gallery delivery."
   },
   {
-    question: "Do you work with photographers in competitive markets?",
-    answer: "Yes! We've helped photographers rank in highly competitive markets like Los Angeles, New York, and Chicago. We find strategic angles and niches to break through the competition."
+    question: "What's included in the LinkedIn outreach automation for headshot photographers?",
+    answer: "We set up automated connection sequences targeting your ideal clients by job title and industry, personalized messaging templates, and follow-up drips—all within LinkedIn's terms of service to protect your account."
   },
   {
-    question: "What makes photography SEO different from regular local SEO?",
-    answer: "Photography SEO requires balancing visual portfolio presentation with search optimization, targeting style-based and event-based searches, and managing seasonal demand fluctuations. We specialize in this niche."
+    question: "How do seasonal campaigns work with email automation?",
+    answer: "We pre-build campaign sequences for major opportunities (Mother's Day, fall minis, etc.) that automatically deploy at the right time. Past clients get priority access; warm leads get compelling offers."
+  },
+  {
+    question: "Can the AI really book appointments on its own?",
+    answer: "Yes! The Voice AI checks your real-time calendar availability and can book sessions directly. You'll get notifications of new bookings, and clients receive instant confirmations—no back-and-forth scheduling emails needed."
   }
 ];
 
+// Testimonials
+const photographerTestimonials = [
+  {
+    quote: "I went from struggling to book weddings to having a waitlist. GrowSmallBiz helped me rank #1 for 'wedding photographer' in my city.",
+    author: "Sarah Williams",
+    role: "Owner",
+    company: "Sarah Williams Photography",
+  },
+  {
+    quote: "The LinkedIn automation for my headshot business was a game-changer. I'm now booked out 3 weeks in advance consistently.",
+    author: "Marcus Chen",
+    role: "Lead Photographer",
+    company: "Chen Creative Studios",
+  },
+  {
+    quote: "Bookings increased 400% with the AI receptionist. Clients love that they can book a session at any time of day.",
+    author: "Emily Foster",
+    role: "Owner",
+    company: "Foster Portrait Studio",
+  },
+];
+
+// Case Studies
 const caseStudies = [
   {
     company: "Sarah Williams Photography",
@@ -144,45 +609,52 @@ const caseStudies = [
       { label: "'Wedding Photographer' Rank", before: "Page 3", after: "#1", improvement: "Top Spot" },
       { label: "Average Package Price", before: "$3,200", after: "$5,800", improvement: "+81%" }
     ],
-    quote: "I went from struggling to book weddings to having a waitlist. GrowSmallBiz helped me rank #1 for 'wedding photographer' in my city.",
+    quote: "I went from struggling to book weddings to having a waitlist.",
     quoteName: "Sarah Williams",
     quoteRole: "Owner, Sarah Williams Photography"
   },
   {
     company: "Chen Creative Studios",
     location: "Chicago, IL",
-    industry: "Portrait & Commercial Photography",
-    challenge: "Relying too heavily on referrals and social media. Wanted to build a steady stream of organic leads for portrait and headshot sessions.",
+    industry: "Headshot & Branding Photography",
+    challenge: "Relying too heavily on referrals and social media. Wanted to build a steady stream of organic leads for corporate headshots.",
     timeframe: "6 months",
     metrics: [
-      { label: "Portrait Session Inquiries", before: "12/mo", after: "56/mo", improvement: "+367%" },
-      { label: "Corporate Headshot Clients", before: "3/mo", after: "22/mo", improvement: "+633%" },
+      { label: "Monthly Inquiries", before: "12", after: "56", improvement: "+367%" },
+      { label: "Corporate Clients/Month", before: "3", after: "22", improvement: "+633%" },
       { label: "Calendar Booked in Advance", before: "35%", after: "85%", improvement: "+143%" },
       { label: "Revenue Per Month", before: "$8K", after: "$28K", improvement: "+250%" }
     ],
-    quote: "My inquiry rate tripled. Now I can be selective about the clients I take on instead of chasing every lead.",
+    quote: "LinkedIn automation filled my calendar with my ideal corporate clients.",
     quoteName: "Marcus Chen",
     quoteRole: "Lead Photographer, Chen Creative Studios"
   }
+];
+
+// Results Stats
+const results = [
+  { metric: "289%", label: "Increase in inquiries" },
+  { metric: "41", label: "First page keywords" },
+  { metric: "67%", label: "Calendar booked in advance" },
+  { metric: "4.9", label: "Average Google rating" }
 ];
 
 const Photographers = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Photographer SEO Services | Book More Clients | GrowSmallBiz</title>
-        <meta name="description" content="Grow your photography business with specialized SEO. Rank #1 for wedding, portrait, and event photographer searches. Book more clients." />
+        <title>Photography Marketing & SEO Services | Book More Clients | GrowSmallBiz</title>
+        <meta name="description" content="Complete marketing system for photographers. Website design, AI SEO, CRM, paid ads, and automation to fill your session calendar with dream clients." />
       </Helmet>
       
       <Header />
 
       {/* Hero Section */}
       <section className="pt-32 pb-24 relative overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <img 
             src={photographerHeroImage} 
-            alt="Professional photographer shooting wedding couple" 
+            alt="Professional photographer in studio" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-background/85" />
@@ -195,15 +667,16 @@ const Photographers = () => {
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-up">
               <Camera className="w-4 h-4" />
-              Photographer SEO
+              Photography Marketing & Growth System
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Get Found. <span className="text-gradient">Get Booked.</span>
+              Fill Your Calendar with{" "}
+              <span className="text-gradient">Dream Clients</span>
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 animate-fade-up delay-200 max-w-2xl mx-auto">
-              Rank #1 for photography searches in your area. Turn your stunning portfolio into a client-generating machine.
+              Stop relying solely on referrals. Build a predictable booking pipeline with AI-powered marketing designed for photographers.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
@@ -214,152 +687,657 @@ const Photographers = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link to="/services/local-seo">
-                  Learn About Local SEO
-                </Link>
+                <a href="#solutions">
+                  Explore Solutions
+                </a>
               </Button>
+            </div>
+
+            {/* Quick Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 animate-fade-up delay-400">
+              {results.map((result, i) => (
+                <div key={i} className="text-center">
+                  <div className="text-3xl md:text-4xl font-display font-bold text-primary">{result.metric}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{result.label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pain Points Section */}
+      {/* Challenges Section */}
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Sound Familiar?
-            </h2>
-            <p className="text-muted-foreground">
-              These are the challenges we hear from photographers every day.
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto space-y-4">
-            {painPoints.map((point, index) => (
-              <div 
-                key={index}
-                className="flex items-start gap-4 p-4 bg-destructive/10 border border-destructive/20 rounded-xl"
+          <SectionHeader
+            subtitle="The Reality"
+            title="Photographer's Lead Generation"
+            titleHighlight="Challenges"
+            description="These struggles keep talented photographers from reaching their full potential"
+          />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {photographerChallenges.map((challenge, i) => (
+              <GlowCard 
+                key={i} 
+                className="p-6 animate-fade-up"
+                style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-destructive text-sm font-bold">✗</span>
+                <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
+                  <challenge.icon className="w-6 h-6 text-destructive" />
                 </div>
-                <p className="text-foreground">{point}</p>
-              </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{challenge.title}</h3>
+                <p className="text-sm text-muted-foreground">{challenge.description}</p>
+              </GlowCard>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-xl font-display font-semibold text-primary mb-4">
-              Your work deserves to be seen.
-            </p>
-            <Button variant="hero" asChild>
-              <Link to="/free-assessment?industry=photographer">
-                Get Your Custom SEO Strategy
-              </Link>
-            </Button>
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* When to Consider Digital Growth */}
+      <section className="py-20 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                When Referrals Aren't Enough
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Personal networking and word-of-mouth are great—until they're not filling your calendar. 
+                If any of these sound familiar, it's time for a digital growth strategy.
+              </p>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-8">
+              <div className="grid md:grid-cols-2 gap-4">
+                {growthSignals.map((signal, i) => (
+                  <div key={i} className="flex items-start gap-3 p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl">
+                    <div className="w-6 h-6 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-amber-500 text-sm font-bold">!</span>
+                    </div>
+                    <p className="text-foreground text-sm">{signal}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-border text-center">
+                <p className="text-xl font-display font-semibold text-primary mb-4">
+                  Ready to take control of your booking pipeline?
+                </p>
+                <Button variant="hero" asChild>
+                  <Link to="/free-assessment?industry=photographer">
+                    Get Your Custom Growth Strategy
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Solutions Section */}
+      <section id="solutions" className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="Complete Solution"
+            title="Photography Business"
+            titleHighlight="Growth System"
+            description="Everything you need to attract, book, and retain dream clients"
+          />
+
+          {/* Website & AI SEO */}
+          <div className="mb-20">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Globe className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-2xl font-display font-bold text-foreground">Conversion-Focused Website & AI SEO</h3>
+            </div>
+
+            <p className="text-muted-foreground mb-8 max-w-3xl">
+              Your website is your 24/7 salesperson. We build fast, beautiful portfolio sites optimized for both 
+              search engines and conversions—so the right clients find you and book you.
+            </p>
+
+            {/* Genre-Specific SEO Strategies */}
+            <Tabs defaultValue="portrait" className="mb-12">
+              <TabsList className="w-full flex flex-wrap justify-start gap-2 bg-transparent h-auto p-0 mb-8">
+                {genreStrategies.map((strategy) => {
+                  const colors = colorConfig[strategy.color];
+                  return (
+                    <TabsTrigger
+                      key={strategy.id}
+                      value={strategy.id}
+                      className={`px-4 py-2 rounded-full border ${colors.border} data-[state=active]:${colors.bg} data-[state=active]:text-white transition-all`}
+                    >
+                      <strategy.icon className="w-4 h-4 mr-2" />
+                      {strategy.label}
+                    </TabsTrigger>
+                  );
+                })}
+              </TabsList>
+
+              {genreStrategies.map((strategy) => {
+                const colors = colorConfig[strategy.color];
+                return (
+                  <TabsContent key={strategy.id} value={strategy.id}>
+                    <div className={`bg-card rounded-2xl border-2 ${colors.border} overflow-hidden`}>
+                      <div className="grid lg:grid-cols-2 gap-0">
+                        <div className="p-8">
+                          <div className="flex items-center gap-3 mb-4">
+                            <div className={`w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center`}>
+                              <strategy.icon className="w-6 h-6 text-white" />
+                            </div>
+                            <div>
+                              <h4 className="text-lg font-bold text-foreground">{strategy.label}</h4>
+                              <p className="text-sm text-muted-foreground">{strategy.genres.join(" • ")}</p>
+                            </div>
+                          </div>
+
+                          <h5 className="font-semibold text-foreground mb-3">SEO Strategy</h5>
+                          <ul className="space-y-2 mb-6">
+                            {strategy.strategies.map((s, i) => (
+                              <li key={i} className="flex items-start gap-2 text-sm">
+                                <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
+                                <span className="text-muted-foreground">{s}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div className={`${colors.bgLight} p-8 border-t lg:border-t-0 lg:border-l ${colors.border}`}>
+                          <h5 className="font-semibold text-foreground mb-3">Local SEO Tactics</h5>
+                          <ul className="space-y-2">
+                            {strategy.localSeo.map((s, i) => (
+                              <li key={i} className="flex items-start gap-2 text-sm">
+                                <MapPin className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
+                                <span className="text-foreground">{s}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </TabsContent>
+                );
+              })}
+            </Tabs>
+
+            {/* What's Included Cards */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <GlowCard className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-blue-500 flex items-center justify-center">
+                    <Globe className="w-5 h-5 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-foreground">Responsive Website Design</h4>
+                </div>
+                <ul className="space-y-2">
+                  {websiteFeatures.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </GlowCard>
+
+              <GlowCard className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
+                    <Search className="w-5 h-5 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-foreground">Managed AI SEO Services</h4>
+                </div>
+                <ul className="space-y-2">
+                  {seoFeatures.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </GlowCard>
+            </div>
+          </div>
+
+          {/* CRM Integration */}
+          <div className="mb-20">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center">
+                <Database className="w-5 h-5 text-violet-500" />
+              </div>
+              <h3 className="text-2xl font-display font-bold text-foreground">CRM & Marketing Automation</h3>
+            </div>
+
+            <p className="text-muted-foreground mb-8 max-w-3xl">
+              The importance of real-time integration cannot be overstated. When a lead inquires, 
+              every second counts. Our CRM connects all your marketing channels and automates follow-up 
+              so no opportunity slips through the cracks.
+            </p>
+
+            <GlowCard className="p-8 border-violet-500/30">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                    <Zap className="w-5 h-5 text-violet-500" />
+                    Instant Lead Capture
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    Website inquiries, social DMs, and calls all flow into one unified inbox. 
+                    Automated responses go out in seconds—not hours.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                    <RefreshCw className="w-5 h-5 text-violet-500" />
+                    Automated Nurturing
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    Pre-built email and SMS sequences keep leads warm while you're shooting. 
+                    Personalized follow-ups based on their inquiry type.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                    <BarChart3 className="w-5 h-5 text-violet-500" />
+                    Pipeline Visibility
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    See exactly where every lead is—from inquiry to booked to gallery delivered. 
+                    Never wonder about your upcoming revenue again.
+                  </p>
+                </div>
+              </div>
+            </GlowCard>
+          </div>
+        </div>
+      </section>
+
+      {/* Paid Media Section */}
       <section className="py-24 relative">
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Why Photographers Choose Us
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We specialize in helping photographers get discovered and book more clients.
-            </p>
+          <SectionHeader
+            subtitle="Paid Media"
+            title="Advertising for"
+            titleHighlight="Photographers"
+            description="Strategic ad platform recommendations by photography genre"
+          />
+
+          {/* Platform Recommendations by Genre */}
+          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            {paidMediaByGenre.map((genre, i) => {
+              const colors = colorConfig[genre.color];
+              return (
+                <GlowCard key={i} className={`p-6 ${colors.border}`}>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className={`w-10 h-10 rounded-xl ${colors.bg} flex items-center justify-center`}>
+                      <genre.icon className="w-5 h-5 text-white" />
+                    </div>
+                    <h4 className="font-bold text-foreground">{genre.genre}</h4>
+                  </div>
+                  <ul className="space-y-3">
+                    {genre.platforms.map((platform, j) => (
+                      <li key={j} className="p-3 bg-muted/50 rounded-lg">
+                        <div className="font-medium text-foreground text-sm">{platform.name}</div>
+                        <div className="text-xs text-muted-foreground mt-1">{platform.reason}</div>
+                      </li>
+                    ))}
+                  </ul>
+                </GlowCard>
+              );
+            })}
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-2xl p-6 card-hover"
-              >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <benefit.icon className="w-7 h-7 text-primary" />
+          {/* Retargeting & Lookalike */}
+          <div className="mb-16">
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
+              Lookalike Audiences & Retargeting Strategy
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {retargetingStrategy.map((strategy, i) => (
+                <GlowCard key={i} className="p-6">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <strategy.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">{strategy.title}</h4>
+                  <p className="text-sm text-muted-foreground">{strategy.description}</p>
+                </GlowCard>
+              ))}
+            </div>
+          </div>
+
+          {/* Tracking Setup */}
+          <div className="bg-card border border-border rounded-2xl p-8">
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
+              Essential Tracking Setup
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {trackingSetup.map((item, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <item.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-1">{item.name}</h4>
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-display font-semibold text-foreground mb-2">
-                  {benefit.title}
-                </h3>
-                <p className="text-muted-foreground text-sm">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Social Media Section */}
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Our Photographer SEO Solutions
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to fill your calendar with dream clients.
-            </p>
+          <SectionHeader
+            subtitle="Organic Social"
+            title="Social Media Strategy for"
+            titleHighlight="Photographers"
+            description="Platform-specific strategies for each photography genre"
+          />
+
+          <div className="space-y-8 mb-16">
+            {socialMediaByGenre.map((genre, i) => {
+              const colors = colorConfig[genre.color];
+              return (
+                <GlowCard key={i} className={`p-6 ${colors.border}`}>
+                  <h4 className={`font-bold ${colors.text} mb-4`}>{genre.genre}</h4>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    {genre.platforms.map((platform, j) => (
+                      <div key={j} className="p-4 bg-muted/50 rounded-xl">
+                        <div className="flex items-center gap-2 mb-2">
+                          <platform.icon className={`w-5 h-5 ${colors.text}`} />
+                          <span className="font-medium text-foreground">{platform.name}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{platform.strategy}</p>
+                      </div>
+                    ))}
+                  </div>
+                </GlowCard>
+              );
+            })}
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {services.map((service, index) => (
-              <div 
-                key={index}
-                className="bg-card border border-border rounded-2xl p-8 card-hover"
-              >
-                <h3 className="text-2xl font-display font-semibold text-foreground mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  {service.description}
-                </p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, fIndex) => (
-                    <li key={fIndex} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span className="text-foreground">{feature}</span>
+          {/* LinkedIn Outreach for Headshot Photographers */}
+          <div className="bg-gradient-to-br from-blue-500/10 via-blue-500/5 to-transparent rounded-2xl border-2 border-blue-500/30 p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center">
+                <Linkedin className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-foreground">{linkedInOutreach.title}</h3>
+                <p className="text-sm text-muted-foreground">{linkedInOutreach.subtitle}</p>
+              </div>
+            </div>
+
+            <p className="text-muted-foreground mb-6">{linkedInOutreach.description}</p>
+
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-semibold text-foreground mb-3">How It Works</h4>
+                <ul className="space-y-2">
+                  {linkedInOutreach.benefits.map((benefit, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{benefit}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-            ))}
+              <div className="flex items-center justify-center">
+                <div className="grid grid-cols-3 gap-4">
+                  {linkedInOutreach.stats.map((stat, i) => (
+                    <div key={i} className="text-center p-4 bg-card rounded-xl border border-blue-500/30">
+                      <div className="text-2xl font-bold text-blue-500">{stat.value}</div>
+                      <div className="text-xs text-muted-foreground">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 pt-6 border-t border-blue-500/30">
+              <p className="text-sm text-muted-foreground italic">
+                <strong className="text-foreground">Marketing is a numbers game:</strong> You need workflow-driven 
+                automated processes to send connection requests at scale without violating LinkedIn's policies.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Results Section */}
+      {/* AI Client Growth System */}
       <section className="py-24 relative">
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Real Results for Real Photographers
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Average results from our photography clients after 6 months.
-            </p>
+          <SectionHeader
+            subtitle="AI Client Growth System"
+            title="Sample Funnels by"
+            titleHighlight="Photography Genre"
+            description="From first impression to repeat customer—automated workflows for every stage"
+          />
+
+          {/* Funnel Visualizations */}
+          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            {clientGrowthFunnels.map((funnel, i) => {
+              const colors = colorConfig[funnel.color];
+              return (
+                <GlowCard key={i} className={`p-6 ${colors.border}`}>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className={`w-10 h-10 rounded-xl ${colors.bg} flex items-center justify-center`}>
+                      <funnel.icon className="w-5 h-5 text-white" />
+                    </div>
+                    <h4 className="font-bold text-foreground">{funnel.genre}</h4>
+                  </div>
+                  <div className="space-y-3">
+                    {funnel.funnel.map((step, j) => (
+                      <div 
+                        key={j} 
+                        className={`flex items-center gap-3 p-3 rounded-lg ${colors.bgLight} border ${colors.border}`}
+                        style={{ opacity: 1 - (j * 0.08) }}
+                      >
+                        <div className={`w-8 h-8 rounded-lg ${colors.bg} flex items-center justify-center shrink-0`} style={{ opacity: 1 - (j * 0.1) }}>
+                          <step.icon className="w-4 h-4 text-white" />
+                        </div>
+                        <div>
+                          <div className={`text-xs font-semibold ${colors.text}`}>{step.stage}</div>
+                          <div className="text-xs text-muted-foreground">{step.description}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </GlowCard>
+              );
+            })}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((result, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">
-                  {result.metric}
+          {/* Email Nurture Importance */}
+          <div className="mb-16">
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
+              Why Email Nurture is <span className="text-primary">Critical</span>
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {emailNurturePoints.map((point, i) => (
+                <GlowCard key={i} className="p-6">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <point.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">{point.title}</h4>
+                  <p className="text-sm text-muted-foreground">{point.description}</p>
+                </GlowCard>
+              ))}
+            </div>
+          </div>
+
+          {/* Seasonal Campaigns */}
+          <div className="mb-16">
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
+              Automated <span className="text-primary">Seasonal Campaigns</span>
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="text-left py-3 px-4 text-sm font-semibold text-muted-foreground">Campaign</th>
+                    <th className="text-left py-3 px-4 text-sm font-semibold text-muted-foreground">Timing</th>
+                    <th className="text-left py-3 px-4 text-sm font-semibold text-muted-foreground">Offer</th>
+                    <th className="text-left py-3 px-4 text-sm font-semibold text-muted-foreground">Channels</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {seasonalCampaigns.map((campaign, i) => (
+                    <tr key={i} className="border-b border-border/50 hover:bg-muted/30 transition-colors">
+                      <td className="py-4 px-4 font-medium text-foreground">{campaign.campaign}</td>
+                      <td className="py-4 px-4 text-sm text-muted-foreground">{campaign.timing}</td>
+                      <td className="py-4 px-4 text-sm text-muted-foreground">{campaign.offer}</td>
+                      <td className="py-4 px-4">
+                        <div className="flex flex-wrap gap-1">
+                          {campaign.channels.map((channel, j) => (
+                            <span key={j} className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                              {channel}
+                            </span>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Past Client Workflows */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {pastClientWorkflows.map((workflow, i) => (
+              <GlowCard key={i} className="p-6">
+                <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center mb-4">
+                  <workflow.icon className="w-6 h-6 text-amber-500" />
                 </div>
-                <p className="text-muted-foreground">{result.label}</p>
-              </div>
+                <h4 className="font-semibold text-foreground mb-2">{workflow.title}</h4>
+                <p className="text-sm text-muted-foreground">{workflow.description}</p>
+              </GlowCard>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Reputation, Gift Cards, Referrals */}
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="Growth Tools"
+            title="Reputation, Referrals &"
+            titleHighlight="Gift Cards"
+            description="Turn happy clients into your best marketing channel"
+          />
+
+          {/* Reputation Management */}
+          <div className="mb-16">
+            <GlowCard className="p-8 border-emerald-500/30">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center">
+                  <Star className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Reputation Management Advantage</h3>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <ul className="space-y-3">
+                    {reputationBenefits.map((benefit, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="bg-muted/50 rounded-xl p-6">
+                  <h4 className="font-semibold text-foreground mb-4">Smart Review Request Flow</h4>
+                  <div className="space-y-3">
+                    {reviewRequestFlow.map((step, i) => (
+                      <div key={i} className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm font-bold shrink-0">
+                          {step.step}
+                        </div>
+                        <div>
+                          <div className="text-sm font-medium text-foreground">{step.title}</div>
+                          <div className="text-xs text-muted-foreground">{step.description}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </GlowCard>
+          </div>
+
+          {/* Gift Cards & Referrals */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {giftAndReferralPrograms.map((program, i) => (
+              <GlowCard key={i} className="p-6">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <program.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="font-bold text-foreground mb-2">{program.title}</h4>
+                <p className="text-sm text-muted-foreground mb-4">{program.description}</p>
+                <ul className="space-y-2">
+                  {program.features.map((feature, j) => (
+                    <li key={j} className="flex items-center gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </GlowCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI Voice & Chat Section */}
+      <section className="py-24 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <SectionHeader
+            subtitle="AI-Powered"
+            title="24/7 Booking &"
+            titleHighlight="Client Communication"
+            description="Never miss a booking opportunity—AI handles inquiries around the clock"
+          />
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {aiFeatures.map((feature, i) => {
+              const colors = colorConfig[feature.color];
+              return (
+                <GlowCard key={i} className={`p-8 ${colors.border}`}>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className={`w-14 h-14 rounded-xl ${colors.bg} flex items-center justify-center`}>
+                      <feature.icon className="w-7 h-7 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">{feature.title}</h3>
+                  </div>
+                  <p className="text-muted-foreground mb-6">{feature.description}</p>
+                  <ul className="space-y-3">
+                    {feature.features.map((f, j) => (
+                      <li key={j} className="flex items-center gap-2">
+                        <CheckCircle2 className={`w-5 h-5 ${colors.text} shrink-0`} />
+                        <span className="text-foreground">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </GlowCard>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Section */}
       <WhyChooseSection 
         title="Why Choose GrowSmallBiz for Photography Marketing"
         subtitle="Your Photography Marketing Partner"
@@ -392,34 +1370,27 @@ const Photographers = () => {
       {/* FAQ Section */}
       <FAQSection 
         faqs={faqs}
-        title="Photographer SEO FAQs"
+        title="Photographer Marketing FAQs"
         subtitle="Common questions from photographers"
         schemaType="FAQPage"
-        contactCTA={{
-          ...baseContactCTA,
-          title: "Have more questions about Photography Marketing?",
-          description: "We're here to help! Reach out to us for a personalized consultation.",
-          tagline: "Let's grow your photography business together.",
-        }}
       />
 
-      {/* Blog Section */}
       <BlogSection 
         posts={photographerBlogPosts}
-        title="Photography SEO Insights"
-        subtitle="Expert tips to help photographers grow their business online"
-        showViewAll={false}
+        title="Photography Marketing Insights"
+        subtitle="Tips and strategies to grow your photography business"
+        viewAllLink="/blog"
       />
 
-      {/* CardCTA Section */}
-      <CardCTA
-        title="Ready to Book More Dream Clients?"
-        description="Get a free SEO audit and discover how to turn your portfolio into a booking machine for your photography business."
+      <CardCTA 
+        title="Ready to Fill Your Calendar?"
+        description="Let's build a marketing system that brings you dream clients on autopilot."
+        buttonText="Get Your Free Assessment"
         buttonHref="/free-assessment?industry=photographer"
-        buttonText="Get Your Free Portfolio Audit"
       />
 
       <ConsultationFormSection />
+
       <Footer />
     </div>
   );
