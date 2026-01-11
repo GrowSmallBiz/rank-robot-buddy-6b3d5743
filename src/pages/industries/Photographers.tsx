@@ -55,6 +55,59 @@ import { CardCTA } from "@/components/services";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+// Ad Creative Images
+import adCreativeFamilyPortrait from "@/assets/ad-creative-portrait-family.jpg";
+import adCreativeMaternity from "@/assets/ad-creative-maternity-newborn.jpg";
+import adCreativeSenior from "@/assets/ad-creative-senior-portrait.jpg";
+import adCreativeWedding from "@/assets/ad-creative-wedding.jpg";
+import adCreativeBranding from "@/assets/ad-creative-branding-headshot.jpg";
+
+// Photography Ad Creatives Data
+const photographyAdCreatives = [
+  {
+    id: "family",
+    genre: "Family Portraits",
+    image: adCreativeFamilyPortrait,
+    platforms: ["Facebook", "Instagram"],
+    description: "Warm, emotional family moments that resonate with parents"
+  },
+  {
+    id: "maternity",
+    genre: "Maternity & Newborn",
+    image: adCreativeMaternity,
+    platforms: ["Instagram", "Pinterest"],
+    description: "Tender, soft imagery targeting expecting mothers"
+  },
+  {
+    id: "senior",
+    genre: "High School Seniors",
+    image: adCreativeSenior,
+    platforms: ["Facebook", "Instagram", "TikTok"],
+    description: "Modern, trendy vibes that appeal to teens and parents"
+  },
+  {
+    id: "wedding",
+    genre: "Wedding Photography",
+    image: adCreativeWedding,
+    platforms: ["Pinterest", "Instagram", "The Knot"],
+    description: "Romantic, aspirational content for engaged couples"
+  },
+  {
+    id: "branding",
+    genre: "Headshots & Branding",
+    image: adCreativeBranding,
+    platforms: ["LinkedIn", "Facebook"],
+    description: "Professional, polished imagery for business owners"
+  }
+];
 
 // Pain Points / Challenges for Photographers
 const photographerChallenges = [
@@ -965,6 +1018,54 @@ const Photographers = () => {
             titleHighlight="Photographers"
             description="Strategic ad platform recommendations by photography genre"
           />
+
+          {/* Ad Creatives Carousel */}
+          <div className="mb-16">
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
+              Sample Ad Creatives by Photography Genre
+            </h3>
+            <div className="relative px-12">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-4">
+                  {photographyAdCreatives.map((creative) => (
+                    <CarouselItem key={creative.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                      <GlowCard className="overflow-hidden">
+                        <div className="relative aspect-[4/5] overflow-hidden">
+                          <img 
+                            src={creative.image} 
+                            alt={`${creative.genre} ad creative example`}
+                            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                          />
+                          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <div className="flex flex-wrap gap-1 mb-2">
+                              {creative.platforms.map((platform, i) => (
+                                <span 
+                                  key={i} 
+                                  className="px-2 py-0.5 bg-primary/80 text-primary-foreground text-xs rounded-full"
+                                >
+                                  {platform}
+                                </span>
+                              ))}
+                            </div>
+                            <h4 className="font-bold text-white text-lg">{creative.genre}</h4>
+                            <p className="text-white/80 text-sm">{creative.description}</p>
+                          </div>
+                        </div>
+                      </GlowCard>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-0" />
+                <CarouselNext className="right-0" />
+              </Carousel>
+            </div>
+          </div>
 
           {/* Platform Recommendations by Genre */}
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
