@@ -935,8 +935,322 @@ const Realtors = () => {
           </div>
         </section>
 
-        {/* How It Works - Funnel Section */}
+        {/* IDX Integration Details Section */}
         <section className="py-24 lg:py-32">
+          <div className="container mx-auto px-4">
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 mb-4">
+                <Calculator className="w-4 h-4 text-amber-500" />
+                <span className="text-amber-500 text-sm font-medium">IDXAddons Platform</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                Powerful Real Estate Tools for{" "}
+                <span className="text-amber-500">IDX Broker</span> Websites
+              </h2>
+              <p className="text-muted-foreground max-w-3xl mx-auto">
+                75+ free widgets and tools to enhance your IDX experience. Automate lead capture, 
+                customize listing displays, and create stunning property search pages.
+              </p>
+            </div>
+
+            {/* Manage IDX Leads Inside CRM */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
+              <div className="order-2 lg:order-1">
+                <div className="bg-card border border-amber-500/30 rounded-2xl p-8 shadow-lg">
+                  <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
+                    <Database className="w-6 h-6 text-amber-500" />
+                    Manage Your IDX Leads Inside Your CRM
+                  </h3>
+                  <p className="text-muted-foreground mb-6">
+                    Unlock a new level of efficiency with our exclusive LeadConnector Dashboard. 
+                    Access all IDX Broker data directly inside your CRM dashboard.
+                  </p>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {[
+                      "Monitor lead activity in real-time",
+                      "View saved properties and searches",
+                      "Save time switching between platforms",
+                      "Track IDX activity for better follow-up",
+                      "Quickly filter and search leads",
+                      "See leads search preferences",
+                      "Easy agent and team access",
+                      "Stay organized in one place"
+                    ].map((feature, i) => (
+                      <div key={i} className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-amber-500 shrink-0" />
+                        <span className="text-sm text-foreground">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="bg-card border border-cyan-500/30 rounded-2xl p-8 shadow-lg">
+                  <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
+                    <Home className="w-6 h-6 text-cyan-500" />
+                    Zillow Lookup Right Inside Your CRM
+                  </h3>
+                  <p className="text-muted-foreground mb-6">
+                    Get Zestimates instantly inside your CRM. Access Zillow property data 
+                    without leaving your dashboard — fast, simple, and built for agents.
+                  </p>
+                  <div className="space-y-4">
+                    {[
+                      { icon: Search, text: "Instant Zestimate lookups" },
+                      { icon: MapPin, text: "Property details at a glance" },
+                      { icon: BarChart3, text: "Market value estimates" },
+                      { icon: Zap, text: "No platform switching required" }
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center shrink-0">
+                          <item.icon className="w-5 h-5 text-cyan-500" />
+                        </div>
+                        <span className="text-foreground">{item.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Featured Addons Carousel */}
+            <div className="mb-24">
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <h3 className="text-2xl font-display font-bold text-foreground mb-2">Featured Addons</h3>
+                  <p className="text-muted-foreground">Our most popular tools to enhance your IDX experience</p>
+                </div>
+              </div>
+              <Carousel
+                opts={{ align: "start", loop: true }}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-4">
+                  {[
+                    {
+                      title: "Home Valuation Widget",
+                      description: "Let visitors instantly estimate property values with real-time data.",
+                      icon: Calculator,
+                      color: "emerald",
+                      isFree: true
+                    },
+                    {
+                      title: "IDX Styles & Colors",
+                      description: "Easily update colors and styles of your IDX pages to match your branding.",
+                      icon: Target,
+                      color: "blue",
+                      isFree: true
+                    },
+                    {
+                      title: "Counts Widget",
+                      description: "Show total active listings by city, zip, or other criteria.",
+                      icon: BarChart3,
+                      color: "violet",
+                      isFree: true
+                    },
+                    {
+                      title: "Search Tool",
+                      description: "Fast, mobile-friendly property search bar with price, beds, and more filters.",
+                      icon: Search,
+                      color: "cyan",
+                      isFree: true
+                    },
+                    {
+                      title: "Google Map Widget",
+                      description: "Display active listings on an interactive map. Fully customizable.",
+                      icon: Map,
+                      color: "amber",
+                      isFree: true
+                    },
+                    {
+                      title: "Saved Search Alerts",
+                      description: "Automatically notify leads when new listings match their criteria.",
+                      icon: Bell,
+                      color: "pink",
+                      isFree: true
+                    }
+                  ].map((addon, i) => {
+                    const colors = colorConfig[addon.color];
+                    return (
+                      <CarouselItem key={i} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                        <GlowCard className={`h-full p-6 ${colors.border}`}>
+                          <div className="flex items-start justify-between mb-4">
+                            <div className={`w-12 h-12 rounded-xl ${colors.bgLight} flex items-center justify-center`}>
+                              <addon.icon className={`w-6 h-6 ${colors.text}`} />
+                            </div>
+                            {addon.isFree && (
+                              <span className="px-3 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/30">
+                                Free
+                              </span>
+                            )}
+                          </div>
+                          <h4 className="text-lg font-display font-bold text-foreground mb-2">
+                            {addon.title}
+                          </h4>
+                          <p className="text-sm text-muted-foreground">
+                            {addon.description}
+                          </p>
+                        </GlowCard>
+                      </CarouselItem>
+                    );
+                  })}
+                </CarouselContent>
+                <CarouselPrevious className="hidden md:flex -left-4" />
+                <CarouselNext className="hidden md:flex -right-4" />
+              </Carousel>
+            </div>
+
+            {/* Premium IDX Layouts Carousel */}
+            <div className="mb-24">
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <h3 className="text-2xl font-display font-bold text-foreground mb-2">Premium IDX Layouts</h3>
+                  <p className="text-muted-foreground">Stunning real estate layouts to enhance your IDX Broker website</p>
+                </div>
+              </div>
+              <Carousel
+                opts={{ align: "start", loop: true }}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-4">
+                  {[
+                    {
+                      title: "Results Pages",
+                      count: "30+",
+                      description: "Fast, mobile-ready grids and lists that make it easy to browse listings.",
+                      icon: FileText,
+                      color: "blue"
+                    },
+                    {
+                      title: "Search Pages",
+                      count: "25+",
+                      description: "Clean, responsive search forms with multiple layout options.",
+                      icon: Search,
+                      color: "violet"
+                    },
+                    {
+                      title: "Details Pages",
+                      count: "20+",
+                      description: "Showcase listings with grids, slideshows, and sticky CTAs.",
+                      icon: Home,
+                      color: "cyan"
+                    },
+                    {
+                      title: "Map Search Pages",
+                      count: "14+",
+                      description: "Interactive layouts with live maps for better area browsing.",
+                      icon: Map,
+                      color: "emerald"
+                    },
+                    {
+                      title: "Roster Pages",
+                      count: "5+",
+                      description: "Display agents or offices with photos, bios, and contact links.",
+                      icon: Users,
+                      color: "amber"
+                    }
+                  ].map((layout, i) => {
+                    const colors = colorConfig[layout.color];
+                    return (
+                      <CarouselItem key={i} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                        <GlowCard className={`h-full overflow-hidden group ${colors.border}`}>
+                          <div className={`h-32 ${colors.bgLight} flex items-center justify-center relative`}>
+                            <layout.icon className={`w-16 h-16 ${colors.text} opacity-30`} />
+                            <div className={`absolute top-4 right-4 px-3 py-1 text-sm font-bold rounded-full ${colors.bg} text-white`}>
+                              {layout.count} Layouts
+                            </div>
+                          </div>
+                          <div className="p-6">
+                            <h4 className="text-lg font-display font-bold text-foreground mb-2">
+                              {layout.title}
+                            </h4>
+                            <p className="text-sm text-muted-foreground">
+                              {layout.description}
+                            </p>
+                          </div>
+                        </GlowCard>
+                      </CarouselItem>
+                    );
+                  })}
+                </CarouselContent>
+                <CarouselPrevious className="hidden md:flex -left-4" />
+                <CarouselNext className="hidden md:flex -right-4" />
+              </Carousel>
+            </div>
+
+            {/* Pro Addons Options */}
+            <div>
+              <div className="text-center mb-12">
+                <h3 className="text-2xl font-display font-bold text-foreground mb-2">Pro Addons</h3>
+                <p className="text-muted-foreground">Take your real estate website to the next level with premium tools</p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  {
+                    title: "Condos Widget",
+                    description: "Displays condos information, showcasing main details in an attractive widget.",
+                    icon: Building,
+                    color: "blue"
+                  },
+                  {
+                    title: "Data Graph Widget Pro",
+                    description: "Add comprehensive charts with IDX data to keep visitors engaged.",
+                    icon: BarChart3,
+                    color: "violet"
+                  },
+                  {
+                    title: "Google Map Widget Pro",
+                    description: "Create and customize different maps with filters for featured listings.",
+                    icon: Map,
+                    color: "emerald"
+                  },
+                  {
+                    title: "Text Alerts (Daily Updates)",
+                    description: "Send daily SMS to leads when property prices change or new listings match.",
+                    icon: MessageSquare,
+                    color: "amber"
+                  }
+                ].map((addon, i) => {
+                  const colors = colorConfig[addon.color];
+                  return (
+                    <GlowCard 
+                      key={i}
+                      className={`p-6 text-center animate-fade-up ${colors.border}`}
+                      style={{ animationDelay: `${i * 0.1}s` }}
+                    >
+                      <div className={`w-14 h-14 rounded-xl ${colors.bgLight} flex items-center justify-center mx-auto mb-4`}>
+                        <addon.icon className={`w-7 h-7 ${colors.text}`} />
+                      </div>
+                      <h4 className="text-lg font-display font-bold text-foreground mb-2">
+                        {addon.title}
+                      </h4>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        {addon.description}
+                      </p>
+                      <span className={`inline-flex px-3 py-1 text-xs font-medium rounded-full ${colors.bgLight} ${colors.text}`}>
+                        Premium Feature
+                      </span>
+                    </GlowCard>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="mt-16 text-center">
+              <Button asChild size="lg" className="group">
+                <Link to="/contact">
+                  Schedule Your IDX Integration Demo
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* How It Works - Funnel Section */}
+        <section className="py-24 lg:py-32 bg-card/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
