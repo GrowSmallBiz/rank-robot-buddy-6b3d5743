@@ -100,8 +100,6 @@ import contentRefiners from "@/assets/content-refiners.png";
 // Content Insights images
 const contentInsightsImages = [
   { src: articleScoreInsights, alt: "Content scoring insights" },
-  { src: articleStructure, alt: "Article structure analysis" },
-  { src: articleKeywords, alt: "Keyword optimization" },
   { src: articleCompetitors, alt: "Competitor analysis" }
 ];
 
