@@ -121,59 +121,40 @@ const photographyAdCreatives = [
   }
 ];
 
-// Pain Points / Challenges for Photographers
-const photographerChallenges = [
-  {
-    icon: Clock,
-    title: "Inconsistent Booking Pipeline",
-    description: "Feast-or-famine cycle where some months are packed while others have empty slots and no inquiries coming in.",
-    image: challengeEmptyCalendar
-  },
-  {
-    icon: Users,
-    title: "Over-Reliance on Referrals",
-    description: "Depending solely on word-of-mouth means unpredictable income and no control over your growth trajectory.",
-    image: challengeReferralHandoff
-  },
-  {
-    icon: Search,
-    title: "Invisible Online Presence",
-    description: "Beautiful portfolio that sits unseen—competitors with less talent rank higher on Google and book your ideal clients.",
-    image: challengeGoogleRankings
-  },
-  {
-    icon: Target,
-    title: "Attracting Wrong Clients",
-    description: "Getting inquiries from price-shoppers instead of clients who value your artistry and are willing to pay premium rates.",
-    image: challengePriceShopper
-  }
-];
-
-// When to Consider Digital Growth - Condensed to 4 key signals
-const growthSignals = [
+// Merged Reality Section - 5 key challenges with mixed visual styles
+const realityChallenges = [
   {
     icon: Calendar,
     title: "Empty Calendar Syndrome",
-    description: "Personal networking alone isn't filling your session calendar—unpredictable income week to week.",
-    image: signalEmptyCalendar
+    description: "Feast-or-famine cycle where some months are packed while others have empty slots and zero inquiries.",
+    image: signalEmptyCalendar,
+    hasImage: true
   },
   {
-    icon: DollarSign,
-    title: "The Price Race to Bottom",
-    description: "Competing on price instead of value and artistry—attracting bargain hunters, not dream clients.",
-    image: signalPriceRace
+    icon: Users,
+    title: "Referral Dependency",
+    description: "Word-of-mouth is great—until it slows down. No control over your growth means unpredictable income.",
+    hasImage: false
   },
   {
     icon: Search,
-    title: "Invisible Online Presence",
-    description: "Less talented photographers outranking you on Google while your portfolio sits unseen.",
-    image: signalGoogleInvisible
+    title: "Invisible to Google",
+    description: "Less talented photographers outranking you online while your stunning portfolio sits unseen.",
+    image: signalGoogleInvisible,
+    hasImage: true
+  },
+  {
+    icon: DollarSign,
+    title: "Racing to the Bottom",
+    description: "Competing on price instead of artistry—attracting bargain hunters, not dream clients.",
+    image: signalPriceRace,
+    hasImage: true
   },
   {
     icon: Instagram,
     title: "Social Media Burnout",
-    description: "Spending hours posting content with minimal bookings—exhausting effort with little return.",
-    image: signalSocialBurnout
+    description: "Hours spent posting with minimal bookings—exhausting effort for little return.",
+    hasImage: false
   }
 ];
 
@@ -793,92 +774,76 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Challenges Section */}
-      <section className="py-20 bg-card/50">
-        <div className="container mx-auto px-4">
-          <SectionHeader
-            subtitle="The Reality"
-            title="Photographer's Lead Generation"
-            titleHighlight="Challenges"
-            description="These struggles keep talented photographers from reaching their full potential"
-          />
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {photographerChallenges.map((challenge, i) => (
-              <GlowCard 
-                key={i} 
-                className="overflow-hidden animate-fade-up"
-                style={{ animationDelay: `${i * 0.1}s` }}
-              >
-                <div className="relative h-40 overflow-hidden">
-                  <img 
-                    src={challenge.image} 
-                    alt={challenge.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
-                  <div className="absolute bottom-3 left-3 w-10 h-10 rounded-lg bg-destructive/90 flex items-center justify-center">
-                    <challenge.icon className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <div className="p-5">
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{challenge.title}</h3>
-                  <p className="text-sm text-muted-foreground">{challenge.description}</p>
-                </div>
-              </GlowCard>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* When Referrals Aren't Enough - Visual Cards */}
+      {/* The Reality - Merged Section */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-amber-500/5 to-background" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
-            subtitle="Warning Signs"
-            title="When Referrals"
-            titleHighlight="Aren't Enough"
-            description="Personal networking and word-of-mouth are great—until they're not filling your calendar. If any of these resonate, it's time for a digital growth strategy."
+            subtitle="The Reality"
+            title="Why Talent Alone"
+            titleHighlight="Isn't Enough"
+            description="Even the most talented photographers struggle to fill their calendars. If any of these resonate, it's time for a digital growth strategy."
           />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {growthSignals.map((signal, i) => (
-              <div 
-                key={i} 
-                className="group relative bg-card rounded-2xl overflow-hidden border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10"
-              >
-                {/* Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={signal.image} 
-                    alt={signal.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
-                  
-                  {/* Icon Badge */}
-                  <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-amber-500/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
-                    <signal.icon className="w-5 h-5 text-white" />
+          {/* Mixed Layout - 3 image cards top, 2 icon cards bottom */}
+          <div className="space-y-6 mb-12">
+            {/* Top Row - 3 Image Cards */}
+            <div className="grid md:grid-cols-3 gap-6">
+              {realityChallenges.filter(c => c.hasImage).map((challenge, i) => (
+                <div 
+                  key={i} 
+                  className="group relative bg-card rounded-2xl overflow-hidden border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={challenge.image} 
+                      alt={challenge.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
+                    
+                    <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-amber-500/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                      <challenge.icon className="w-5 h-5 text-white" />
+                    </div>
+
+                    <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-amber-500 flex items-center justify-center animate-pulse">
+                      <span className="text-white text-xs font-bold">!</span>
+                    </div>
                   </div>
 
-                  {/* Warning indicator */}
-                  <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-amber-500 flex items-center justify-center animate-pulse">
-                    <span className="text-white text-xs font-bold">!</span>
+                  <div className="p-5">
+                    <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-amber-500 transition-colors">
+                      {challenge.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {challenge.description}
+                    </p>
                   </div>
                 </div>
+              ))}
+            </div>
 
-                {/* Content */}
-                <div className="p-5">
-                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-amber-500 transition-colors">
-                    {signal.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {signal.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+            {/* Bottom Row - 2 Icon Cards (larger, centered) */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {realityChallenges.filter(c => !c.hasImage).map((challenge, i) => (
+                <GlowCard 
+                  key={i} 
+                  className="p-6 flex items-start gap-4 group hover:border-amber-500/50 transition-all"
+                >
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors">
+                    <challenge.icon className="w-6 h-6 text-amber-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-amber-500 transition-colors">
+                      {challenge.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {challenge.description}
+                    </p>
+                  </div>
+                </GlowCard>
+              ))}
+            </div>
           </div>
 
           {/* CTA */}
