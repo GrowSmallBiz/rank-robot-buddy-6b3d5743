@@ -87,7 +87,15 @@ import signalPriceRace from "@/assets/signal-price-race.jpg";
 import signalGoogleInvisible from "@/assets/signal-google-invisible.jpg";
 import signalSocialBurnout from "@/assets/social-media-burnout-female.jpg";
 
-// Photography Ad Creatives Data
+// Content Strategy Images
+import articleQualityMetrics from "@/assets/article-quality-metrics.png";
+import topicalMapAuthority from "@/assets/topical-map-authority.png";
+
+// Content Strategy Image Map
+const contentStrategyImages: Record<string, string> = {
+  "article-quality-metrics": articleQualityMetrics,
+  "topical-map-authority": topicalMapAuthority
+};
 const photographyAdCreatives = [
   {
     id: "family",
@@ -307,8 +315,20 @@ const technicalSEOSections = [
 
 // Content Strategy Features
 const contentStrategy = [
-  { title: "Build a Topical Map", description: "Strategic content clusters around your photography specialties", icon: Target },
-  { title: "Generate Articles", description: "AI-assisted content creation optimized for search and client education", icon: FileSearch }
+  { 
+    title: "Build a Topical Map", 
+    description: "Strategic content clusters around your photography specialties", 
+    icon: Target,
+    note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings.",
+    image: "topical-map-authority"
+  },
+  { 
+    title: "Generate Articles", 
+    description: "AI-assisted content creation optimized for search and client education", 
+    icon: FileSearch,
+    note: "Every article is measured for quality using readability scores, keyword optimization, and engagement metrics—ensuring your content ranks and converts.",
+    image: "article-quality-metrics"
+  }
 ];
 
 // Local & Google Business Profile Services
@@ -1252,7 +1272,21 @@ const Photographers = () => {
                       </div>
                       <h5 className="font-bold text-foreground">{item.title}</h5>
                     </div>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-sm text-muted-foreground mb-3">{item.description}</p>
+                    {item.note && (
+                      <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-4">
+                        {item.note}
+                      </p>
+                    )}
+                    {item.image && contentStrategyImages[item.image] && (
+                      <div className="mt-4 rounded-lg overflow-hidden border border-border/50">
+                        <img 
+                          src={contentStrategyImages[item.image]} 
+                          alt={`${item.title} illustration`}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    )}
                   </GlowCard>
                 ))}
               </div>
