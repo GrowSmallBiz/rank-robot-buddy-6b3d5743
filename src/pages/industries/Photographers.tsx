@@ -32,6 +32,7 @@ import {
   BarChart3,
   Eye,
   FileSearch,
+  FileText,
   MousePointerClick,
   Megaphone,
   RefreshCw,
@@ -235,6 +236,17 @@ const websiteOptimization = [
       "Mobile First Approach",
       "Schema & Structured Data",
       "Agentic AI SEO Workflow to deploy technical fixes"
+    ]
+  },
+  {
+    title: "On-Page Optimization",
+    icon: FileText,
+    items: [
+      "Title Tag & Meta Description Optimization",
+      "Header Structure (H1-H6) Optimization",
+      "Image Alt Text & Compression",
+      "Internal Linking Strategy",
+      "Content Optimization for Target Keywords"
     ]
   }
 ];
