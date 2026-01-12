@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { GlowCard } from "@/components/ui/glow-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { 
   Camera,
   TrendingUp, 
@@ -794,33 +800,107 @@ const aiFeatures = [
   }
 ];
 
-// FAQs
-const faqs = [
+// FAQs organized by service category
+const faqCategories = [
   {
-    question: "How long does it take to see more photography bookings from SEO?",
-    answer: "Most photographers see increased website traffic within 2-3 months and booking inquiries within 3-4 months. Wedding photography keywords often take longer due to competition but deliver high-value clients once ranking."
+    id: "ai-seo",
+    label: "AI SEO",
+    icon: Search,
+    faqs: [
+      {
+        question: "How long does it take to see more photography bookings from SEO?",
+        answer: "Most photographers see increased website traffic within 2-3 months and booking inquiries within 3-4 months. Wedding photography keywords often take longer due to competition but deliver high-value clients once ranking."
+      },
+      {
+        question: "Can you help me rank for specific photography niches like newborn or boudoir?",
+        answer: "Absolutely! We create dedicated landing pages for each specialty you offer and target clients actively searching for those specific services in your area."
+      },
+      {
+        question: "How does AI improve my SEO strategy?",
+        answer: "Our AI analyzes competitor rankings, identifies content gaps, and optimizes your pages for both Google and AI search platforms like ChatGPT and Perplexity—ensuring you're visible wherever clients search."
+      }
+    ]
   },
   {
-    question: "Can you help me rank for specific photography niches like newborn or boudoir?",
-    answer: "Absolutely! We create dedicated landing pages for each specialty you offer and target clients actively searching for those specific services in your area."
+    id: "paid-media",
+    label: "Paid Media",
+    icon: Megaphone,
+    faqs: [
+      {
+        question: "What's the minimum budget needed for photography ads?",
+        answer: "We recommend starting with $500-1,000/month for local targeting. This allows enough data collection to optimize campaigns while generating immediate inquiries for sessions."
+      },
+      {
+        question: "Which platforms work best for photographers?",
+        answer: "Meta (Facebook/Instagram) excels for visual portfolios and lifestyle photography. Google Ads captures high-intent searches like 'wedding photographer near me.' We often recommend both for maximum reach."
+      },
+      {
+        question: "How quickly will I see results from paid ads?",
+        answer: "Unlike SEO, paid ads generate immediate visibility. Most photographers see their first inquiries within the first week, with campaigns fully optimized within 30-60 days."
+      }
+    ]
   },
   {
-    question: "How does the CRM integrate with my booking workflow?",
-    answer: "Our CRM connects with your booking calendar to automatically capture inquiries, send follow-up sequences, and track where each client is in your pipeline—from initial inquiry to final gallery delivery."
+    id: "marketing-automation",
+    label: "Marketing Automation",
+    icon: RefreshCw,
+    faqs: [
+      {
+        question: "How does the CRM integrate with my booking workflow?",
+        answer: "Our CRM connects with your booking calendar to automatically capture inquiries, send follow-up sequences, and track where each client is in your pipeline—from initial inquiry to final gallery delivery."
+      },
+      {
+        question: "How do seasonal campaigns work with email automation?",
+        answer: "We pre-build campaign sequences for major opportunities (Mother's Day, fall minis, etc.) that automatically deploy at the right time. Past clients get priority access; warm leads get compelling offers."
+      },
+      {
+        question: "Can I automate my client follow-ups without sounding robotic?",
+        answer: "Yes! We craft personalized email sequences that match your brand voice. Dynamic fields insert client names, session types, and dates—making each message feel personally written."
+      }
+    ]
   },
   {
-    question: "What's included in the LinkedIn outreach automation for headshot photographers?",
-    answer: "We set up automated connection sequences targeting your ideal clients by job title and industry, personalized messaging templates, and follow-up drips—all within LinkedIn's terms of service to protect your account."
+    id: "ai-receptionist",
+    label: "AI Receptionist",
+    icon: Bot,
+    faqs: [
+      {
+        question: "Can the AI really book appointments on its own?",
+        answer: "Yes! The Voice AI checks your real-time calendar availability and can book sessions directly. You'll get notifications of new bookings, and clients receive instant confirmations—no back-and-forth scheduling emails needed."
+      },
+      {
+        question: "What happens if the AI can't answer a question?",
+        answer: "The AI gracefully hands off to you via text or email with full context of the conversation. It never leaves potential clients hanging or provides incorrect information."
+      },
+      {
+        question: "Does the AI work outside business hours?",
+        answer: "Absolutely—that's one of its biggest advantages! The AI answers calls and books sessions 24/7, capturing inquiries from busy professionals who browse late at night or on weekends."
+      }
+    ]
   },
   {
-    question: "How do seasonal campaigns work with email automation?",
-    answer: "We pre-build campaign sequences for major opportunities (Mother's Day, fall minis, etc.) that automatically deploy at the right time. Past clients get priority access; warm leads get compelling offers."
-  },
-  {
-    question: "Can the AI really book appointments on its own?",
-    answer: "Yes! The Voice AI checks your real-time calendar availability and can book sessions directly. You'll get notifications of new bookings, and clients receive instant confirmations—no back-and-forth scheduling emails needed."
+    id: "linkedin-outreach",
+    label: "LinkedIn Outreach",
+    icon: Linkedin,
+    faqs: [
+      {
+        question: "What's included in the LinkedIn outreach automation for headshot photographers?",
+        answer: "We set up automated connection sequences targeting your ideal clients by job title and industry, personalized messaging templates, and follow-up drips—all within LinkedIn's terms of service to protect your account."
+      },
+      {
+        question: "How do you target the right people for my headshot business?",
+        answer: "We build custom filters based on job titles (CEOs, realtors, executives), industries, company sizes, and locations—ensuring your outreach reaches decision-makers who need professional headshots."
+      },
+      {
+        question: "What response rates can I expect from LinkedIn outreach?",
+        answer: "Most headshot photographers see 15-25% connection acceptance rates and 5-10% positive response rates. With our optimized messaging, many close 3-8 new clients per month from LinkedIn alone."
+      }
+    ]
   }
 ];
+
+// Flat FAQs for schema (combine all categories)
+const faqs = faqCategories.flatMap(cat => cat.faqs);
 
 // Testimonials
 const photographerTestimonials = [
@@ -2018,23 +2098,131 @@ const Photographers = () => {
         subtitle="See how photographers grow their bookings and brand"
       />
 
-      {/* FAQ Section with Sidebar CTA */}
-      <FAQSection 
-        faqs={faqs}
-        title="Photographer Marketing FAQs"
-        subtitle="Common questions from photographers"
-        schemaType="FAQPage"
-        contactCTA={{
-          title: "Have more questions about our Photography Marketing Solution?",
-          description: "Get a personalized demo of our SEO, website, and marketing automation platform.",
-          tagline: "Let's build your booking machine.",
-          name: "Subrata Guha",
-          role: "Founder, GrowSmallBiz",
-          buttonText: "Schedule a Demo",
-          buttonHref: "/contact",
-          image: subrataHeadshot
-        }}
-      />
+      {/* Tabbed FAQ Section with Sidebar CTA */}
+      <section className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        {/* Subtle glow effects */}
+        <div className="absolute top-0 right-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Centered Section Header */}
+          <div className="text-center mb-12 animate-fade-up">
+            <p className="text-primary font-medium mb-4">FAQ</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              Photographer Marketing FAQs
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Common questions organized by service
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            {/* FAQ Column with Tabs */}
+            <div className="lg:col-span-2">
+              <Tabs defaultValue="ai-seo" className="w-full">
+                {/* Horizontal Tab List */}
+                <TabsList className="w-full flex flex-wrap justify-start gap-2 bg-transparent h-auto mb-8 p-0">
+                  {faqCategories.map((category) => {
+                    const IconComponent = category.icon;
+                    return (
+                      <TabsTrigger
+                        key={category.id}
+                        value={category.id}
+                        className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-primary/30 bg-card/50 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:border-primary/60 transition-all duration-300"
+                      >
+                        <IconComponent className="w-4 h-4" />
+                        <span className="text-sm font-medium">{category.label}</span>
+                      </TabsTrigger>
+                    );
+                  })}
+                </TabsList>
+
+                {/* Tab Content */}
+                {faqCategories.map((category) => (
+                  <TabsContent key={category.id} value={category.id} className="mt-0">
+                    <Accordion type="single" collapsible className="space-y-4">
+                      {category.faqs.map((faq, index) => (
+                        <AccordionItem
+                          key={index}
+                          value={`item-${index}`}
+                          className="bg-black border rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
+                          style={{ animationDelay: `${index * 0.05}s`, borderColor: '#ff7f50ff' }}
+                        >
+                          <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-5 hover:no-underline">
+                            {faq.question}
+                          </AccordionTrigger>
+                          <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                            {faq.answer}
+                          </AccordionContent>
+                        </AccordionItem>
+                      ))}
+                    </Accordion>
+                  </TabsContent>
+                ))}
+              </Tabs>
+            </div>
+
+            {/* Contact CTA Card */}
+            <div className="lg:col-span-1 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <div className="sticky top-24 p-8 rounded-2xl border-2 border-primary/60 bg-card/30 backdrop-blur-sm text-center shadow-[0_0_30px_rgba(255,127,80,0.15)]">
+                {/* Avatar with gradient border */}
+                <div className="w-24 h-24 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-primary via-orange-400 to-primary">
+                  <img 
+                    src={subrataHeadshot} 
+                    alt="Subrata Guha"
+                    className="w-full h-full rounded-full object-cover"
+                  />
+                </div>
+
+                <h3 className="text-xl font-display font-bold text-foreground mb-4">
+                  Have more questions about our Photography Marketing Solution?
+                </h3>
+                
+                <p className="text-muted-foreground mb-4">
+                  Get a personalized demo of our SEO, website, and marketing automation platform.
+                </p>
+                
+                <p className="text-foreground font-medium mb-6">
+                  Let's build your booking machine.
+                </p>
+
+                {/* Signature */}
+                <div className="mb-6">
+                  <p className="font-cursive text-2xl text-foreground italic">Subrata Guha</p>
+                  <p className="text-sm text-muted-foreground">Founder, GrowSmallBiz</p>
+                </div>
+
+                <Button 
+                  size="lg" 
+                  className="w-full bg-gradient-to-r from-[hsl(199_89%_48%)] to-primary text-white rounded-full border-none hover:shadow-[0_0_30px_rgba(255,127,80,0.5),0_0_60px_rgba(255,127,80,0.3)] hover:scale-105 transition-all duration-300"
+                  asChild
+                >
+                  <Link to="/contact">
+                    Schedule a Demo
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* JSON-LD Schema for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map((faq) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          }) }}
+        />
+      </section>
 
       {/* Human CTA Card - matching Realtors page styling */}
       <section className="py-24 relative overflow-hidden">
