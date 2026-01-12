@@ -109,6 +109,7 @@ import googlePpcScreenshot from "@/assets/ad-screenshot-google-ppc.png";
 import idxGoogleMap from "@/assets/idx-google-map.png";
 import localHeatmap from "@/assets/local-heatmap.png";
 import localCitationAggregators from "@/assets/local-citation-aggregators.png";
+import socialMediaHero from "@/assets/social-media-hero.jpg";
 
 // Content Insights images
 const contentInsightsImages = [
@@ -380,7 +381,7 @@ const contentStrategy = [
 const localGBPServices = [
   { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin, image: idxGoogleMap },
   { title: "Run Heatmap for Local Business", description: "Visualize your local search presence and identify opportunities", icon: BarChart3, image: localHeatmap },
-  { title: "Enable GBP + Social Post Automation", description: "Automated posting to keep your profile active and engaging", icon: RefreshCw, image: geoServiceImage },
+  { title: "Enable GBP + Social Post Automation", description: "Automated posting to keep your profile active and engaging", icon: RefreshCw, image: socialMediaHero },
   { title: "Local Citation Building", description: "Build consistent listings across 50+ directories", icon: Globe, image: localCitationAggregators }
 ];
 
@@ -1416,9 +1417,8 @@ const Photographers = () => {
                       <img 
                         src={service.image} 
                         alt={service.title}
-                        className="w-full h-full object-contain bg-gradient-to-b from-blue-500/10 to-transparent p-2"
+                        className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
                     </div>
                     <div className="p-5 pt-3">
                       <div className="flex items-start gap-4">
