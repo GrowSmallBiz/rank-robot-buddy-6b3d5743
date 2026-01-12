@@ -75,6 +75,7 @@ import challengeEmptyCalendar from "@/assets/challenge-empty-calendar.jpg";
 import challengeReferralHandoff from "@/assets/challenge-referral-handoff.jpg";
 import challengeGoogleRankings from "@/assets/challenge-google-rankings.jpg";
 import challengePriceShopper from "@/assets/challenge-price-shopper.jpg";
+import challengePriceWar from "@/assets/challenge-price-war.jpg";
 
 // Growth Signal Images
 import signalEmptyCalendar from "@/assets/signal-empty-calendar.jpg";
@@ -155,8 +156,8 @@ const realityChallenges = [
   },
   {
     icon: Search,
-    title: "Invisible to Google",
-    description: "Less talented photographers outranking you online while your stunning portfolio sits unseen.",
+    title: "Google Ranks Less Talented Photographers Above You",
+    description: "Your stunning portfolio sits unseen while photographers with inferior work dominate search results.",
     image: signalGoogleInvisible,
     hasImage: true,
     showAILogos: false
@@ -177,10 +178,10 @@ const realityChallenges = [
     showAILogos: false
   },
   {
-    icon: TrendingUp,
-    title: "Less Talented Photographers Outranking You",
-    description: "Photographers with inferior work are showing up first in search results because they understand SEO—and you don't.",
-    image: challengeGoogleRankings,
+    icon: DollarSign,
+    title: "Racing to the Bottom on Price",
+    description: "Competing on price instead of artistry—attracting bargain hunters who undervalue your work and squeeze your margins.",
+    image: challengePriceWar,
     hasImage: true,
     showAILogos: false
   }
