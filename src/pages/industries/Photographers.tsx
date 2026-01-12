@@ -2018,12 +2018,22 @@ const Photographers = () => {
         subtitle="See how photographers grow their bookings and brand"
       />
 
-      {/* FAQ Section */}
+      {/* FAQ Section with Sidebar CTA */}
       <FAQSection 
         faqs={faqs}
         title="Photographer Marketing FAQs"
         subtitle="Common questions from photographers"
         schemaType="FAQPage"
+        contactCTA={{
+          title: "Have more questions about our Photography Marketing Solution?",
+          description: "Get a personalized demo of our SEO, website, and marketing automation platform.",
+          tagline: "Let's build your booking machine.",
+          name: "Subrata Guha",
+          role: "Founder, GrowSmallBiz",
+          buttonText: "Schedule a Demo",
+          buttonHref: "/contact",
+          image: subrataHeadshot
+        }}
       />
 
       {/* Human CTA Card - matching Realtors page styling */}
