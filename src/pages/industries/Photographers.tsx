@@ -337,8 +337,8 @@ const technicalSEOSections = [
     icon: Bot,
     image: seoDashboardImage,
     items: [
-      "Automated Technical Fix Deployment",
       "AI-Powered Issue Detection & Resolution",
+      "Automated Technical Fix Deployment",
       "Real-Time SEO Health Monitoring",
       "Zero Manual Intervention Required"
     ],
