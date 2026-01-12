@@ -800,7 +800,7 @@ const aiFeatures = [
   }
 ];
 
-// FAQs organized by service category
+// FAQs organized by service category - 10 questions each
 const faqCategories = [
   {
     id: "ai-seo",
@@ -818,6 +818,34 @@ const faqCategories = [
       {
         question: "How does AI improve my SEO strategy?",
         answer: "Our AI analyzes competitor rankings, identifies content gaps, and optimizes your pages for both Google and AI search platforms like ChatGPT and Perplexity—ensuring you're visible wherever clients search."
+      },
+      {
+        question: "What's the difference between local SEO and regular SEO for photographers?",
+        answer: "Local SEO focuses on ranking in Google Maps and 'near me' searches—critical for photographers since clients search locally. We optimize your Google Business Profile, build local citations, and target geo-specific keywords."
+      },
+      {
+        question: "How do you optimize my photography website for AI search engines?",
+        answer: "We structure your content to be easily understood by AI platforms like ChatGPT, Perplexity, and Google SGE. This includes schema markup, conversational content, and ensuring your expertise is clearly communicated."
+      },
+      {
+        question: "Will SEO work if I'm in a competitive photography market?",
+        answer: "Yes, but strategy matters. We identify less competitive long-tail keywords first (like 'intimate elopement photographer Colorado mountains') while building authority to compete for broader terms."
+      },
+      {
+        question: "How important are blog posts for photography SEO?",
+        answer: "Very important! Blog content targeting questions like 'what to wear for engagement photos' attracts clients early in their journey and builds topical authority that boosts all your pages."
+      },
+      {
+        question: "Do you help with image SEO and alt tags?",
+        answer: "Absolutely. We optimize all images with descriptive file names, alt text, and proper compression—helping your portfolio images rank in Google Image search where many clients discover photographers."
+      },
+      {
+        question: "Can you help me rank for wedding venue-specific searches?",
+        answer: "Yes! We create dedicated pages for venues you've shot at (e.g., 'Wedding Photographer at The Grand Ballroom'). These rank well and attract couples already booked at those venues."
+      },
+      {
+        question: "How do you track and report on SEO progress?",
+        answer: "You'll receive monthly reports showing keyword rankings, organic traffic, inquiry sources, and booking conversions. We also provide a live dashboard so you can check progress anytime."
       }
     ]
   },
@@ -837,6 +865,34 @@ const faqCategories = [
       {
         question: "How quickly will I see results from paid ads?",
         answer: "Unlike SEO, paid ads generate immediate visibility. Most photographers see their first inquiries within the first week, with campaigns fully optimized within 30-60 days."
+      },
+      {
+        question: "What types of photography ads convert best?",
+        answer: "Carousel ads showcasing your best work, video testimonials from happy clients, and 'behind the scenes' content perform exceptionally well. We also use retargeting to reach visitors who didn't book."
+      },
+      {
+        question: "How do you target the right clients with Facebook/Instagram ads?",
+        answer: "We use interest targeting (recently engaged, new parents, business owners), lookalike audiences from your past clients, and geographic targeting to reach your ideal clients in your service area."
+      },
+      {
+        question: "Should I run ads during my slow season?",
+        answer: "Absolutely! Slow season ads often have lower competition and costs. Plus, many clients book months ahead—so winter ads can fill your spring/summer calendar at a discount."
+      },
+      {
+        question: "Do you create the ad images and copy for me?",
+        answer: "Yes! Our team creates scroll-stopping ad creatives using your portfolio, writes compelling copy, and designs landing pages optimized for conversions—you just approve and we launch."
+      },
+      {
+        question: "How do Google Ads work for photographers?",
+        answer: "We target high-intent keywords like 'wedding photographer [your city]' so your ad appears when someone is actively searching. These leads are often ready to book, making them highly valuable."
+      },
+      {
+        question: "Can you help with Pinterest advertising for photographers?",
+        answer: "Yes! Pinterest is excellent for wedding and lifestyle photographers. Pins have long lifespans and target users actively planning events and saving inspiration."
+      },
+      {
+        question: "How do you measure the ROI of my ad spend?",
+        answer: "We track every inquiry back to its source, so you'll know exactly how many bookings came from ads. Most photographers see 3-5x return on their ad investment within the first few months."
       }
     ]
   },
@@ -856,6 +912,34 @@ const faqCategories = [
       {
         question: "Can I automate my client follow-ups without sounding robotic?",
         answer: "Yes! We craft personalized email sequences that match your brand voice. Dynamic fields insert client names, session types, and dates—making each message feel personally written."
+      },
+      {
+        question: "What happens when a new inquiry comes in?",
+        answer: "They instantly receive a personalized welcome email with your pricing guide or booking info. Simultaneously, you get notified and the lead enters a nurture sequence until they book or you mark them closed."
+      },
+      {
+        question: "Can automation help me get more repeat clients?",
+        answer: "Absolutely! We set up anniversary reminders, milestone sequences (baby's first year, annual headshot updates), and re-engagement campaigns that bring past clients back automatically."
+      },
+      {
+        question: "How do you automate review collection?",
+        answer: "After gallery delivery, clients receive a timed sequence requesting reviews on Google, Facebook, or The Knot—with direct links and gentle reminders that maximize response rates."
+      },
+      {
+        question: "Can I see what's happening in my pipeline at a glance?",
+        answer: "Yes! The CRM dashboard shows all leads by stage: new inquiry, responded, proposal sent, booked, completed. You'll never lose track of a potential client again."
+      },
+      {
+        question: "How does text message automation work?",
+        answer: "We integrate SMS for time-sensitive messages: session reminders, weather updates, and quick follow-ups. Texts have 98% open rates—perfect for reducing no-shows and speeding up responses."
+      },
+      {
+        question: "Can I automate my mini session booking process?",
+        answer: "Yes! We create dedicated landing pages with time slot selection, automated confirmations, reminder sequences, and post-session gallery delivery—handling hundreds of bookings without manual work."
+      },
+      {
+        question: "What integrations does the CRM support?",
+        answer: "We integrate with popular tools like Calendly, HoneyBook, Dubsado, Mailchimp, QuickBooks, and most photography gallery platforms—creating a seamless workflow across all your tools."
       }
     ]
   },
@@ -875,6 +959,34 @@ const faqCategories = [
       {
         question: "Does the AI work outside business hours?",
         answer: "Absolutely—that's one of its biggest advantages! The AI answers calls and books sessions 24/7, capturing inquiries from busy professionals who browse late at night or on weekends."
+      },
+      {
+        question: "Can the AI answer questions about my pricing and packages?",
+        answer: "Yes! We train the AI on your specific packages, pricing tiers, and policies. It can explain what's included, compare options, and even qualify leads by budget before booking consultations."
+      },
+      {
+        question: "Does the AI sound natural or robotic?",
+        answer: "Our AI uses advanced voice synthesis that sounds remarkably human—with natural pauses, tone variations, and conversational flow. Most callers don't realize they're speaking with AI."
+      },
+      {
+        question: "Can I customize what the AI says about my business?",
+        answer: "Completely! We work with you to capture your brand voice, key selling points, and common objections. The AI represents your studio exactly as you would."
+      },
+      {
+        question: "How does the AI handle multiple inquiries at once?",
+        answer: "Unlike you, the AI can handle unlimited simultaneous calls and chats—ensuring no potential client ever gets a busy signal or waits for a response."
+      },
+      {
+        question: "Can the AI qualify leads before they reach me?",
+        answer: "Yes! We program qualification questions (budget, date, event type) so you only spend time on serious inquiries. Tire-kickers get helpful info; hot leads get fast-tracked to you."
+      },
+      {
+        question: "Does the AI integrate with my existing calendar?",
+        answer: "Yes! We connect with Google Calendar, Calendly, HoneyBook, Dubsado, and most scheduling tools—so bookings automatically appear and double-booking is impossible."
+      },
+      {
+        question: "What's the setup process for the AI receptionist?",
+        answer: "We handle everything: scripting responses, training on your services, integrating with your calendar, and testing thoroughly. You're up and running within 1-2 weeks with minimal effort on your part."
       }
     ]
   },
@@ -894,6 +1006,34 @@ const faqCategories = [
       {
         question: "What response rates can I expect from LinkedIn outreach?",
         answer: "Most headshot photographers see 15-25% connection acceptance rates and 5-10% positive response rates. With our optimized messaging, many close 3-8 new clients per month from LinkedIn alone."
+      },
+      {
+        question: "Is LinkedIn outreach only for headshot photographers?",
+        answer: "While headshot photographers see the best results, commercial photographers, brand photographers, and those targeting businesses (corporate events, team photos) also benefit significantly."
+      },
+      {
+        question: "Will my LinkedIn account get flagged or banned?",
+        answer: "No—we stay well within LinkedIn's daily limits and use behavior patterns that mimic natural usage. We've never had a client's account restricted using our methods."
+      },
+      {
+        question: "How personalized are the outreach messages?",
+        answer: "Very! We use dynamic fields for name, company, job title, and even recent activity. Messages feel personally written, not mass-blasted—which is why response rates are high."
+      },
+      {
+        question: "Can you help me create a LinkedIn profile that converts?",
+        answer: "Absolutely! We optimize your headline, about section, featured content, and portfolio to position you as the go-to photographer for your target market."
+      },
+      {
+        question: "How do you track which connections become clients?",
+        answer: "We tag and track every connection through the sales process. You'll see exactly how many connections converted to conversations, consultations, and booked sessions."
+      },
+      {
+        question: "Can I target specific companies I want to work with?",
+        answer: "Yes! We can create campaigns targeting employees at specific companies you'd love as clients—perfect for landing corporate contracts or breaking into new industries."
+      },
+      {
+        question: "How long until I see results from LinkedIn outreach?",
+        answer: "Most photographers see their first qualified responses within 1-2 weeks. Consistent campaigns typically yield 3-8 booked sessions per month within the first 60 days."
       }
     ]
   }
