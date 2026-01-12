@@ -63,13 +63,7 @@ export const StickyCardCTA = ({
           parts.push(result.substring(lastIndex, index));
         }
         parts.push(
-          <span 
-            key={word} 
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage: 'linear-gradient(90deg, hsl(199 89% 48%) 0%, hsl(18 85% 60%) 100%)'
-            }}
-          >
+          <span key={word} className="text-gradient">
             {result.substring(index, index + word.length)}
           </span>
         );
@@ -89,48 +83,31 @@ export const StickyCardCTA = ({
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-slide-up">
       <div className="container mx-auto max-w-5xl">
-        <div 
-          className="relative rounded-2xl p-6 md:p-8 transition-all duration-300"
-          style={{
-            backgroundColor: 'hsl(215 40% 13%)',
-            border: '1px solid hsla(18, 85%, 60%, 0.35)',
-            boxShadow: '0 -4px 40px -10px hsla(18, 85%, 60%, 0.25), 0 25px 50px -12px rgba(0, 0, 0, 0.5)'
-          }}
-        >
+        <div className="relative bg-card/80 backdrop-blur-sm border-2 border-primary/50 rounded-3xl p-6 md:p-8 shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/70 group">
           {/* Dismiss button */}
           <button
             onClick={handleDismiss}
-            className="absolute top-3 right-3 p-1.5 rounded-full bg-muted/30 hover:bg-muted/50 transition-colors text-muted-foreground hover:text-foreground"
+            className="absolute top-3 right-3 p-1.5 rounded-full bg-muted/30 hover:bg-muted/50 transition-colors text-muted-foreground hover:text-foreground z-10"
             aria-label="Dismiss"
           >
             <X className="w-4 h-4" />
           </button>
 
-          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
-            {/* Photo + Name - compact */}
-            <div className="flex-shrink-0 flex items-center gap-4">
-              <div className="relative">
-                <div 
-                  className="absolute -inset-0.5 rounded-full"
-                  style={{
-                    background: 'linear-gradient(135deg, hsl(210 20% 40%) 0%, hsl(210 20% 25%) 100%)'
-                  }}
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+            {/* Photo + Name */}
+            <div className="flex-shrink-0 text-center">
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg group-hover:border-primary/50 transition-all duration-300">
+                <img 
+                  src={baseContactCTA.image} 
+                  alt={baseContactCTA.name} 
+                  className="w-full h-full object-cover"
                 />
-                <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden">
-                  <img 
-                    src={baseContactCTA.image} 
-                    alt={baseContactCTA.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
-              <div className="hidden sm:block md:hidden lg:block">
-                <h4 className="text-sm font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
-                <p className="text-xs text-muted-foreground">{baseContactCTA.role}</p>
-              </div>
+              <h4 className="mt-2 text-sm font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
+              <p className="text-xs text-muted-foreground">{baseContactCTA.role}</p>
             </div>
             
-            {/* Content - compact */}
+            {/* Content */}
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-display font-bold text-foreground mb-2 leading-tight">
                 {renderTitle()}
@@ -140,16 +117,12 @@ export const StickyCardCTA = ({
               </p>
             </div>
 
-            {/* Buttons - compact */}
+            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
               <Button 
+                variant="hero"
                 size="lg" 
-                asChild 
-                className="border-0 px-6 py-5 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:opacity-90 hover:shadow-xl rounded-full"
-                style={{
-                  background: 'linear-gradient(90deg, hsl(25 90% 55%) 0%, hsl(35 85% 60%) 35%, hsl(199 80% 55%) 100%)',
-                  boxShadow: '0 12px 35px -8px hsla(25, 90%, 50%, 0.6)'
-                }}
+                asChild
               >
                 {buttonHref.startsWith('http') ? (
                   <a href={buttonHref} target="_blank" rel="noopener noreferrer">
@@ -167,7 +140,7 @@ export const StickyCardCTA = ({
                 variant="outline" 
                 size="lg" 
                 asChild 
-                className="border-muted-foreground/40 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent px-5 rounded-full"
+                className="border-primary/40 hover:border-primary/60 hover:bg-primary/10 rounded-full"
               >
                 <a href="tel:+19258863724">
                   <Phone className="mr-2 w-4 h-4" />
