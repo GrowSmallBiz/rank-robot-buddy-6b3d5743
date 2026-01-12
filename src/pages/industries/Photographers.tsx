@@ -52,7 +52,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { CardCTA, PersonCTA } from "@/components/services";
+import { CardCTA, PersonCTA, StickyCardCTA } from "@/components/services";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
@@ -2037,6 +2037,15 @@ const Photographers = () => {
       <ConsultationFormSection />
 
       <Footer />
+
+      {/* Sticky CTA - appears after scrolling */}
+      <StickyCardCTA
+        title="Ready for Photography Marketing That Fills Your Calendar?"
+        description="Let's discuss a custom photography marketing strategy to attract dream clients and book more sessions consistently."
+        buttonText="Get Your Custom Growth Strategy"
+        buttonHref="/contact"
+        accentWords={["Fills", "Your", "Calendar"]}
+      />
     </div>
   );
 };
