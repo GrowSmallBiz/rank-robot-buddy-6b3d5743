@@ -67,7 +67,7 @@ import {
 // Ad Creative Images
 import adCreativeFamilyPortrait from "@/assets/ad-creative-portrait-family.jpg";
 import adCreativeMaternity from "@/assets/ad-creative-maternity-newborn.jpg";
-import adCreativeSenior from "@/assets/ad-creative-senior-portrait.jpg";
+import adCreativeSenior from "@/assets/ad-creative-senior-portrait-female.jpg";
 import adCreativeWedding from "@/assets/ad-creative-wedding.jpg";
 import adCreativeBranding from "@/assets/ad-creative-branding-headshot.jpg";
 
