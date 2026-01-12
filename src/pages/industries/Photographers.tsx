@@ -269,7 +269,8 @@ const technicalSEOSections = [
       "Published Across 14 Trusted Platforms",
       "AWS, Azure, GitHub & More",
       "Full Content Control & Publishing"
-    ]
+    ],
+    note: "Build authority with high-quality backlinks from trusted cloud platforms like AWS, Azure, and GitHub—domains that search engines already trust."
   },
   {
     title: "WILDFIRE",
@@ -279,7 +280,8 @@ const technicalSEOSections = [
       "2:1 Exchange System",
       "Links from Other Users' Sites",
       "Approval System for Quality Control"
-    ]
+    ],
+    note: "Earn real backlinks from relevant websites through our community exchange—you control which links appear on your site while building domain authority."
   },
   {
     title: "Miscellaneous",
