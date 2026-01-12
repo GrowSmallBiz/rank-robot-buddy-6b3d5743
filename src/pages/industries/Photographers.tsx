@@ -375,10 +375,10 @@ const contentStrategy = [
 
 // Local & Google Business Profile Services
 const localGBPServices = [
-  { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin },
-  { title: "Run Heatmap for Local Business", description: "Visualize your local search presence and identify opportunities", icon: BarChart3 },
-  { title: "Enable GBP + Social Post Automation", description: "Automated posting to keep your profile active and engaging", icon: RefreshCw },
-  { title: "Local Citation Building", description: "Build consistent listings across 50+ directories", icon: Globe }
+  { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin, image: localSeoImage },
+  { title: "Run Heatmap for Local Business", description: "Visualize your local search presence and identify opportunities", icon: BarChart3, image: seoDashboardImage },
+  { title: "Enable GBP + Social Post Automation", description: "Automated posting to keep your profile active and engaging", icon: RefreshCw, image: geoServiceImage },
+  { title: "Local Citation Building", description: "Build consistent listings across 50+ directories", icon: Globe, image: aeoServiceImage }
 ];
 
 // LLM Visibility & Rank Tracking
@@ -1407,14 +1407,25 @@ const Photographers = () => {
               </h4>
               <div className="grid md:grid-cols-2 gap-6">
                 {localGBPServices.map((service, i) => (
-                  <GlowCard key={i} className="p-5">
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
-                        <service.icon className="w-5 h-5 text-blue-500" />
-                      </div>
-                      <div>
-                        <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
-                        <p className="text-sm text-muted-foreground">{service.description}</p>
+                  <GlowCard key={i} className="p-0 overflow-hidden">
+                    {/* Image */}
+                    <div className="relative h-32 bg-muted">
+                      <img 
+                        src={service.image} 
+                        alt={service.title}
+                        className="w-full h-full object-contain bg-gradient-to-b from-blue-500/10 to-transparent p-2"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+                    </div>
+                    <div className="p-5 pt-3">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
+                          <service.icon className="w-5 h-5 text-blue-500" />
+                        </div>
+                        <div>
+                          <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
+                          <p className="text-sm text-muted-foreground">{service.description}</p>
+                        </div>
                       </div>
                     </div>
                   </GlowCard>
