@@ -73,9 +73,9 @@ import adCreativeBranding from "@/assets/ad-creative-branding-headshot.jpg";
 // Challenge Images
 import challengeEmptyCalendar from "@/assets/challenge-empty-calendar.jpg";
 import challengeReferralHandoff from "@/assets/challenge-referral-handoff.jpg";
-import challengeGoogleRankings from "@/assets/challenge-google-rankings.jpg";
+import challengeGoogleRankings from "@/assets/challenge-google-ranking-female.jpg";
 import challengePriceShopper from "@/assets/challenge-price-shopper.jpg";
-import challengePriceWar from "@/assets/challenge-price-war.jpg";
+import challengePriceWar from "@/assets/challenge-price-war-female.jpg";
 
 // Growth Signal Images
 import signalEmptyCalendar from "@/assets/signal-empty-calendar.jpg";
@@ -158,7 +158,7 @@ const realityChallenges = [
     icon: Search,
     title: "Google Ranks Shoot & Burn Photographers Above You",
     description: "Your stunning portfolio sits unseen while photographers with inferior work dominate search results.",
-    image: signalGoogleInvisible,
+    image: challengeGoogleRankings,
     hasImage: true,
     showAILogos: false
   },
