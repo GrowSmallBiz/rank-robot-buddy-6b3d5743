@@ -298,7 +298,8 @@ const technicalSEOSections = [
       { text: "Google - GSC Instant Indexing", logo: "google" },
       { text: "Bing - IndexNow Integration", logo: "bing" }
     ],
-    hasLogos: true
+    hasLogos: true,
+    note: "Skip the waiting game—get your new pages indexed in hours instead of weeks, accelerating your SEO rankings faster than competitors."
   }
 ];
 
@@ -1224,6 +1225,11 @@ const Photographers = () => {
                         ))
                       )}
                     </div>
+                    {section.note && (
+                      <div className="mt-4 pt-3 border-t border-border">
+                        <p className="text-xs text-primary italic">{section.note}</p>
+                      </div>
+                    )}
                   </GlowCard>
                 ))}
               </div>
