@@ -406,7 +406,7 @@ const onlineAuthorityServices = [
   { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe, image: backlinkAnalyticsDashboard }
 ];
 
-// Color configurations with funnel steps
+// Color configurations with funnel steps (7 steps)
 const colorConfig = {
   pink: {
     bg: "bg-pink-500",
@@ -414,7 +414,7 @@ const colorConfig = {
     text: "text-pink-500",
     border: "border-pink-500/30",
     gradient: "from-pink-500 to-pink-600",
-    steps: ["bg-pink-500", "bg-pink-500/80", "bg-pink-500/60", "bg-pink-500/40", "bg-pink-500/25"]
+    steps: ["bg-pink-500", "bg-pink-500/85", "bg-pink-500/70", "bg-pink-500/55", "bg-pink-500/45", "bg-pink-500/35", "bg-pink-500/25"]
   },
   rose: {
     bg: "bg-rose-500",
@@ -422,7 +422,7 @@ const colorConfig = {
     text: "text-rose-500",
     border: "border-rose-500/30",
     gradient: "from-rose-500 to-rose-600",
-    steps: ["bg-rose-500", "bg-rose-500/80", "bg-rose-500/60", "bg-rose-500/40", "bg-rose-500/25"]
+    steps: ["bg-rose-500", "bg-rose-500/85", "bg-rose-500/70", "bg-rose-500/55", "bg-rose-500/45", "bg-rose-500/35", "bg-rose-500/25"]
   },
   blue: {
     bg: "bg-blue-500",
@@ -430,7 +430,7 @@ const colorConfig = {
     text: "text-blue-500",
     border: "border-blue-500/30",
     gradient: "from-blue-500 to-blue-600",
-    steps: ["bg-blue-500", "bg-blue-500/80", "bg-blue-500/60", "bg-blue-500/40", "bg-blue-500/25"]
+    steps: ["bg-blue-500", "bg-blue-500/85", "bg-blue-500/70", "bg-blue-500/55", "bg-blue-500/45", "bg-blue-500/35", "bg-blue-500/25"]
   },
   violet: {
     bg: "bg-violet-500",
@@ -438,7 +438,7 @@ const colorConfig = {
     text: "text-violet-500",
     border: "border-violet-500/30",
     gradient: "from-violet-500 to-violet-600",
-    steps: ["bg-violet-500", "bg-violet-500/80", "bg-violet-500/60", "bg-violet-500/40", "bg-violet-500/25"]
+    steps: ["bg-violet-500", "bg-violet-500/85", "bg-violet-500/70", "bg-violet-500/55", "bg-violet-500/45", "bg-violet-500/35", "bg-violet-500/25"]
   },
   amber: {
     bg: "bg-amber-500",
@@ -446,7 +446,7 @@ const colorConfig = {
     text: "text-amber-500",
     border: "border-amber-500/30",
     gradient: "from-amber-500 to-amber-600",
-    steps: ["bg-amber-500", "bg-amber-500/80", "bg-amber-500/60", "bg-amber-500/40", "bg-amber-500/25"]
+    steps: ["bg-amber-500", "bg-amber-500/85", "bg-amber-500/70", "bg-amber-500/55", "bg-amber-500/45", "bg-amber-500/35", "bg-amber-500/25"]
   },
   emerald: {
     bg: "bg-emerald-500",
@@ -454,7 +454,7 @@ const colorConfig = {
     text: "text-emerald-500",
     border: "border-emerald-500/30",
     gradient: "from-emerald-500 to-emerald-600",
-    steps: ["bg-emerald-500", "bg-emerald-500/80", "bg-emerald-500/60", "bg-emerald-500/40", "bg-emerald-500/25"]
+    steps: ["bg-emerald-500", "bg-emerald-500/85", "bg-emerald-500/70", "bg-emerald-500/55", "bg-emerald-500/45", "bg-emerald-500/35", "bg-emerald-500/25"]
   },
   cyan: {
     bg: "bg-cyan-500",
@@ -462,7 +462,7 @@ const colorConfig = {
     text: "text-cyan-500",
     border: "border-cyan-500/30",
     gradient: "from-cyan-500 to-cyan-600",
-    steps: ["bg-cyan-500", "bg-cyan-500/80", "bg-cyan-500/60", "bg-cyan-500/40", "bg-cyan-500/25"]
+    steps: ["bg-cyan-500", "bg-cyan-500/85", "bg-cyan-500/70", "bg-cyan-500/55", "bg-cyan-500/45", "bg-cyan-500/35", "bg-cyan-500/25"]
   },
   teal: {
     bg: "bg-teal-500",
@@ -470,7 +470,7 @@ const colorConfig = {
     text: "text-teal-500",
     border: "border-teal-500/30",
     gradient: "from-teal-500 to-teal-600",
-    steps: ["bg-teal-500", "bg-teal-500/80", "bg-teal-500/60", "bg-teal-500/40", "bg-teal-500/25"]
+    steps: ["bg-teal-500", "bg-teal-500/85", "bg-teal-500/70", "bg-teal-500/55", "bg-teal-500/45", "bg-teal-500/35", "bg-teal-500/25"]
   }
 };
 
@@ -620,13 +620,13 @@ const linkedInOutreach = {
   ]
 };
 
-// AI Client Growth System - Funnels by Genre (Shrinking Funnel Style)
+// AI Client Growth System - Funnels by Genre (Shrinking Funnel Style - 7 Steps)
 const clientGrowthFunnels = [
   {
     genre: "Portrait Photography",
     icon: Users,
     color: "pink" as const,
-    funnel: ["Social Media Ad", "Lead Magnet", "Email Nurture", "Mini-Session Offer", "Booking"],
+    funnel: ["Awareness", "Interest", "Consideration", "Decision", "Booking", "Experience", "Retention"],
     topPlatforms: ["Meta (FB/IG)", "Pinterest", "Google PPC", "Email"],
     strategy: "Emotional family moments + 'what to wear' lead magnets. Seasonal mini-sessions drive urgency and quick decisions.",
     seasonality: "Peak: Fall & Spring, Mother's Day"
@@ -635,7 +635,7 @@ const clientGrowthFunnels = [
     genre: "Wedding Photography",
     icon: Heart,
     color: "rose" as const,
-    funnel: ["Discovery", "Portfolio Review", "Inquiry", "Consultation", "Booking"],
+    funnel: ["Discovery", "Research", "Inquiry", "Consultation", "Proposal", "Booking", "Retention"],
     topPlatforms: ["Pinterest", "Instagram", "The Knot", "Google SEO"],
     strategy: "Visual-first approach. Venue partnerships + real wedding blog posts. Longer decision cycle requires strong nurturing.",
     seasonality: "Peak: Engagement season (Nov-Feb)"
@@ -644,7 +644,7 @@ const clientGrowthFunnels = [
     genre: "Branding Photography",
     icon: Sparkles,
     color: "blue" as const,
-    funnel: ["LinkedIn Outreach", "Lead Magnet", "Nurture Sequence", "Discovery Call", "Booking"],
+    funnel: ["Outreach", "Awareness", "Lead Magnet", "Nurture", "Consultation", "Booking", "Upsell"],
     topPlatforms: ["LinkedIn", "Google PPC", "Meta (FB)", "Email"],
     strategy: "Target entrepreneurs and small business owners. Showcase transformation stories and ROI of professional imagery.",
     seasonality: "Year-round with Q1 surge"
@@ -2044,10 +2044,12 @@ const Photographers = () => {
               const colors = colorConfig[funnel.color];
               const widthClasses = [
                 "w-full",
-                "w-[92%]",
-                "w-[84%]",
+                "w-[94%]",
+                "w-[88%]",
+                "w-[82%]",
                 "w-[76%]",
-                "w-[68%]"
+                "w-[70%]",
+                "w-[64%]"
               ];
               return (
                 <GlowCard 
