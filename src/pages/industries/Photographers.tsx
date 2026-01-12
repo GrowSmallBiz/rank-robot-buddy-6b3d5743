@@ -1119,7 +1119,7 @@ const Photographers = () => {
             <div className="mb-12">
               <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
                 <Search className="w-5 h-5 text-primary" />
-                Keyword Research
+                Keyword Research: Find What Photography Clients Search
               </h3>
               <div className="bg-muted/30 rounded-xl p-4 mb-6 border border-border">
                 <p className="text-sm text-muted-foreground">
@@ -1162,7 +1162,7 @@ const Photographers = () => {
             <div className="mb-12">
               <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
                 <Target className="w-5 h-5 text-primary" />
-                Competitor Analysis
+                Competitor Analysis: Outrank Other Photographers
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <GlowCard className="p-5">
@@ -1216,7 +1216,7 @@ const Photographers = () => {
             <div className="mb-12">
               <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                 <FileSearch className="w-5 h-5 text-primary" />
-                Technical SEO
+                Technical SEO for Photography Websites
               </h4>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {technicalSEOSections.map((section, idx) => (
@@ -1352,7 +1352,7 @@ const Photographers = () => {
             <div className="mb-12">
               <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-primary" />
-                Local & Google Business Profile
+                Local SEO & Google Business Profile for Photographers
               </h4>
               <div className="grid md:grid-cols-2 gap-6">
                 {localGBPServices.map((service, i) => (
@@ -1375,7 +1375,7 @@ const Photographers = () => {
             <div className="mb-12">
               <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                 <Bot className="w-5 h-5 text-primary" />
-                LLM Visibility & Rank Tracking
+                AI & LLM Visibility: Get Recommended by ChatGPT & Gemini
               </h4>
               <div className="grid md:grid-cols-3 gap-6">
                 {llmVisibilityServices.map((service, i) => (
@@ -1398,7 +1398,7 @@ const Photographers = () => {
             <div className="mb-8">
               <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                 <Shield className="w-5 h-5 text-primary" />
-                Online Authority
+                Build Online Authority & Photography Backlinks
               </h4>
               <div className="grid md:grid-cols-2 gap-6">
                 {onlineAuthorityServices.map((service, i) => (
