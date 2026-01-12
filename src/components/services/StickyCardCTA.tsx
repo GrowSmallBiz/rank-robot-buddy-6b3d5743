@@ -140,8 +140,8 @@ export const StickyCardCTA = ({
                   asChild 
                   className="border-0 px-8 py-5 text-base font-semibold text-gray-900 shadow-lg transition-all duration-300 hover:opacity-90 hover:shadow-xl rounded-full"
                   style={{
-                    background: 'linear-gradient(90deg, hsl(25 85% 60%) 0%, hsl(35 80% 65%) 40%, hsl(199 75% 60%) 100%)',
-                    boxShadow: '0 12px 35px -8px hsla(25, 90%, 50%, 0.5)'
+                    background: 'linear-gradient(90deg, hsl(30 80% 65%) 0%, hsl(40 75% 70%) 40%, hsl(185 60% 55%) 100%)',
+                    boxShadow: '0 12px 35px -8px hsla(30, 80%, 55%, 0.5)'
                   }}
                 >
                   {buttonHref.startsWith('http') ? (
