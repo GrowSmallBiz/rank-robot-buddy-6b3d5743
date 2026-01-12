@@ -813,7 +813,7 @@ const Photographers = () => {
             description="Even the most talented photographers struggle to fill their calendars. If any of these resonate, it's time for a digital growth strategy."
           >
             <h3 className="text-xl md:text-2xl font-display italic mt-2 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent">
-              Why Talent Alone Isn't Enough
+              Why Photography Marketing Matters More Than Talent Alone
             </h3>
           </SectionHeader>
 
