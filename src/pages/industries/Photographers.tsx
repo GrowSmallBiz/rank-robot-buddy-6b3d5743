@@ -164,14 +164,14 @@ const realityChallenges = [
   },
   {
     icon: Bot,
-    title: "AI Search Is Not Recommending You",
+    title: "AI Search Is Not Recommending Your Studio",
     description: "ChatGPT, Gemini, and Perplexity are answering 'best photographer near me'—but they're not mentioning you.",
     hasImage: false,
     showAILogos: true
   },
   {
     icon: Instagram,
-    title: "Social Media Burnout",
+    title: "Social Media Posts Not Paying The Bills",
     description: "Likes are coming, but not paying the bills. Hours spent posting with minimal bookings—exhausting effort for little return.",
     image: signalSocialBurnout,
     hasImage: true,
@@ -179,7 +179,7 @@ const realityChallenges = [
   },
   {
     icon: DollarSign,
-    title: "Racing to the Bottom on Price",
+    title: "Your Studio Racing to the Bottom on Price",
     description: "Competing on price instead of artistry—attracting bargain hunters who undervalue your work and squeeze your margins.",
     image: challengePriceWar,
     hasImage: true,
