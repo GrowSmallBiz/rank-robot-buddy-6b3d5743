@@ -331,7 +331,7 @@ const websiteFeatures = [
   "Mobile-responsive portfolio galleries",
   "Fast-loading image optimization",
   "Session booking integration",
-  "Investment/pricing guide pages",
+  "Investment/pricing guide pages (optional)",
   "Client testimonial displays",
   "Blog for SEO content",
   "Contact forms with session type selection",
