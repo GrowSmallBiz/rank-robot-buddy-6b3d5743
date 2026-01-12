@@ -1070,22 +1070,26 @@ const Photographers = () => {
                 <Zap className="w-5 h-5 text-primary" />
                 Website Optimization
               </h4>
-              <GlowCard className="p-6 border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
-                    <FileSearch className="w-5 h-5 text-white" />
-                  </div>
-                  <h5 className="font-bold text-foreground">Technical SEO</h5>
-                </div>
-                <div className="grid md:grid-cols-5 gap-4">
-                  {websiteOptimization[0].items.map((item, i) => (
-                    <div key={i} className="p-4 bg-muted/50 rounded-lg text-center">
-                      <CheckCircle2 className="w-5 h-5 text-emerald-500 mx-auto mb-2" />
-                      <p className="text-sm font-medium text-foreground">{item}</p>
+              <div className="grid md:grid-cols-2 gap-6">
+                {websiteOptimization.map((section, idx) => (
+                  <GlowCard key={idx} className="p-6 border-emerald-500/30">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
+                        <section.icon className="w-5 h-5 text-white" />
+                      </div>
+                      <h5 className="font-bold text-foreground">{section.title}</h5>
                     </div>
-                  ))}
-                </div>
-              </GlowCard>
+                    <div className="space-y-3">
+                      {section.items.map((item, i) => (
+                        <div key={i} className="flex items-start gap-2">
+                          <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                          <p className="text-sm text-muted-foreground">{item}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </GlowCard>
+                ))}
+              </div>
             </div>
 
             {/* 4. Content Strategy */}
