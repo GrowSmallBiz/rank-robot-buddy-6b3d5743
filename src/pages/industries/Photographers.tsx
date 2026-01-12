@@ -1138,11 +1138,11 @@ const Photographers = () => {
                   const IconComponent = genre.icon;
                   return (
                     <GlowCard key={key} className="overflow-hidden">
-                      <div className="relative h-32 overflow-hidden">
+                      <div className="relative h-44 overflow-hidden">
                         <img 
                           src={genre.image} 
                           alt={genre.label}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain bg-muted/30"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
                         <div className="absolute bottom-3 left-4 flex items-center gap-2">
