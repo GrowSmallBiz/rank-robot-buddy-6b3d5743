@@ -1417,7 +1417,7 @@ const Photographers = () => {
                       <img 
                         src={service.image} 
                         alt={service.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                     <div className="p-5 pt-3">
