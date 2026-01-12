@@ -257,9 +257,28 @@ const technicalSEOSections = [
     icon: Share2,
     items: [
       "Internal Linking Opportunities",
-      "WILDFIRE Link Acquisition",
       "Canonical Link Management",
       "Issues with Links Detection & Fix"
+    ]
+  },
+  {
+    title: "Cloud Stacks",
+    icon: Globe,
+    items: [
+      "AI-Generated Articles with Backlinks",
+      "Published Across 14 Trusted Platforms",
+      "AWS, Azure, GitHub & More",
+      "Full Content Control & Publishing"
+    ]
+  },
+  {
+    title: "WILDFIRE",
+    icon: Zap,
+    items: [
+      "Community Backlink Exchange Network",
+      "2:1 Exchange System",
+      "Links from Other Users' Sites",
+      "Approval System for Quality Control"
     ]
   },
   {
