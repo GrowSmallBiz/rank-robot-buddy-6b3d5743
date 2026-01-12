@@ -728,12 +728,12 @@ const caseStudies = [
   }
 ];
 
-// Results Stats
+// Results Stats - Realistic expectations based on SEO + Paid Media + Marketing Automation
 const results = [
-  { metric: "289%", label: "Increase in inquiries" },
-  { metric: "41", label: "First page keywords" },
-  { metric: "67%", label: "Calendar booked in advance" },
-  { metric: "4.9", label: "Average Google rating" }
+  { metric: "3-6mo", label: "To see SEO results" },
+  { metric: "15-25", label: "First page keywords (6-12 months)" },
+  { metric: "2-4x", label: "Inquiry increase with paid ads" },
+  { metric: "40%", label: "Time saved with automation" }
 ];
 
 const Photographers = () => {
