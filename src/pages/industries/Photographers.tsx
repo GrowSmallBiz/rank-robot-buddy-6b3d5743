@@ -187,65 +187,83 @@ const realityChallenges = [
   }
 ];
 
-// Photography Genre Strategies for SEO
-const genreStrategies = [
-  {
-    id: "portrait",
+// Strategy - Keywords & Competitors Research Examples
+const keywordExamples = {
+  portrait: {
     label: "Portrait Photography",
     icon: Users,
-    color: "pink",
-    genres: ["Family Portraits", "Maternity & Newborn", "High School Seniors"],
-    strategies: [
-      "Target seasonal keywords: 'fall family photos [city]', 'senior pictures [city]'",
-      "Create location-specific landing pages for popular shoot spots",
-      "Optimize for 'baby photographer near me' and milestone searches",
-      "Build content around seasonal mini-sessions and package offerings"
+    keywords: [
+      "family photographer [city]",
+      "newborn photographer near me", 
+      "maternity photography [city]",
+      "senior portraits [city]"
     ],
-    localSeo: [
-      "Google Business Profile with portfolio photos",
-      "Local venue partnerships for backlink building",
-      "Reviews mentioning specific session types",
-      "Neighborhood-specific landing pages"
-    ]
+    competitors: "Local portrait studios, mini-session photographers"
   },
-  {
-    id: "wedding",
+  wedding: {
     label: "Wedding Photography",
     icon: Heart,
-    color: "rose",
-    genres: ["Wedding Day Coverage", "Engagement Sessions", "Elopements"],
-    strategies: [
-      "Long-tail keywords: 'intimate wedding photographer [city]', 'adventure elopement photographer'",
-      "Venue-specific pages linking to wedding vendors",
-      "Blog posts from real weddings optimized for venue names",
-      "Target 'wedding photographer cost' and pricing-related searches"
+    keywords: [
+      "wedding photographer [city]",
+      "elopement photographer [city]",
+      "engagement photos [city]",
+      "[venue name] wedding photographer"
     ],
-    localSeo: [
-      "Listings on The Knot, WeddingWire, Zola",
-      "Venue partnership link building",
-      "Google Business optimized for wedding searches",
-      "Wedding blog features and publications"
-    ]
+    competitors: "Established wedding photographers, The Knot listings"
   },
-  {
-    id: "branding",
-    label: "Branding & Headshots",
+  headshot: {
+    label: "Headshot & Branding",
     icon: Sparkles,
-    color: "blue",
-    genres: ["Corporate Headshots", "Personal Branding", "Team Photos"],
-    strategies: [
-      "Target 'professional headshot photographer [city]', 'personal branding photographer'",
-      "LinkedIn-optimized content marketing strategy",
-      "Case studies featuring entrepreneur transformations",
-      "B2B keywords: 'corporate photographer', 'company headshots'"
+    keywords: [
+      "professional headshot photographer [city]",
+      "corporate headshots [city]",
+      "personal branding photographer",
+      "business portraits [city]"
     ],
-    localSeo: [
-      "LinkedIn company page optimization",
-      "Business directory listings",
-      "Chamber of Commerce partnerships",
-      "Coworking space collaborations"
+    competitors: "Studio headshot services, LinkedIn photo specialists"
+  }
+};
+
+// Website Optimization Services
+const websiteOptimization = [
+  {
+    title: "Technical SEO",
+    icon: FileSearch,
+    items: [
+      "Deep Technical Audit",
+      "Speed Optimization Experts",
+      "Mobile First Approach",
+      "Schema & Structured Data",
+      "Agentic AI SEO Workflow to deploy technical fixes"
     ]
   }
+];
+
+// Content Strategy Features
+const contentStrategy = [
+  { title: "Build a Topical Map", description: "Strategic content clusters around your photography specialties", icon: Target },
+  { title: "Generate Articles", description: "AI-assisted content creation optimized for search and client education", icon: FileSearch }
+];
+
+// Local & Google Business Profile Services
+const localGBPServices = [
+  { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin },
+  { title: "Run Heatmap for Local Business", description: "Visualize your local search presence and identify opportunities", icon: BarChart3 },
+  { title: "Enable GBP + Social Post Automation", description: "Automated posting to keep your profile active and engaging", icon: RefreshCw },
+  { title: "Local Citation Building", description: "Build consistent listings across 50+ directories", icon: Globe }
+];
+
+// LLM Visibility & Rank Tracking
+const llmVisibilityServices = [
+  { title: "Connect GSC to Improve Rankings", description: "Google Search Console integration for data-driven optimization", icon: BarChart3 },
+  { title: "Setup Keyword Rank Tracker", description: "Monitor your position for high-value photography keywords", icon: TrendingUp },
+  { title: "Enable LLM Visibility Tracking", description: "Track how AI platforms like ChatGPT and Gemini recommend your studio", icon: Bot }
+];
+
+// Online Authority Services
+const onlineAuthorityServices = [
+  { title: "Publish Press Release", description: "Get featured in news outlets to build credibility and backlinks", icon: Megaphone },
+  { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe }
 ];
 
 // Color configurations
@@ -959,109 +977,193 @@ const Photographers = () => {
             </div>
 
             <p className="text-muted-foreground mb-8 max-w-3xl">
-              Your website is your 24/7 salesperson. We build fast, beautiful portfolio sites optimized for both 
-              search engines and conversions—so the right clients find you and book you.
+              A comprehensive SEO and website strategy that works for all photography genres—from portrait and wedding 
+              to headshot and branding photography. We optimize every aspect of your online presence.
             </p>
 
-            {/* Genre-Specific SEO Strategies */}
-            <Tabs defaultValue="portrait" className="mb-12">
-              <TabsList className="w-full flex flex-wrap justify-start gap-2 bg-transparent h-auto p-0 mb-8">
-                {genreStrategies.map((strategy) => {
-                  const colors = colorConfig[strategy.color];
+            {/* 1. Strategy - Keywords & Competitors Research */}
+            <div className="mb-12">
+              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                <Search className="w-5 h-5 text-primary" />
+                Strategy: Keywords & Competitors Research
+              </h4>
+              <div className="grid md:grid-cols-3 gap-6">
+                {Object.entries(keywordExamples).map(([key, genre]) => {
+                  const IconComponent = genre.icon;
                   return (
-                    <TabsTrigger
-                      key={strategy.id}
-                      value={strategy.id}
-                      className={`px-4 py-2 rounded-full border ${colors.border} data-[state=active]:${colors.bg} data-[state=active]:text-white transition-all`}
-                    >
-                      <strategy.icon className="w-4 h-4 mr-2" />
-                      {strategy.label}
-                    </TabsTrigger>
+                    <GlowCard key={key} className="p-6">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                          <IconComponent className="w-5 h-5 text-primary" />
+                        </div>
+                        <h5 className="font-bold text-foreground">{genre.label}</h5>
+                      </div>
+                      <div className="mb-4">
+                        <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Sample Keywords</p>
+                        <ul className="space-y-1">
+                          {genre.keywords.map((kw, i) => (
+                            <li key={i} className="text-sm text-foreground flex items-start gap-2">
+                              <Search className="w-3 h-3 text-primary shrink-0 mt-1" />
+                              {kw}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="pt-3 border-t border-border">
+                        <p className="text-xs text-muted-foreground">
+                          <span className="font-medium">Competitors:</span> {genre.competitors}
+                        </p>
+                      </div>
+                    </GlowCard>
                   );
                 })}
-              </TabsList>
+              </div>
+            </div>
 
-              {genreStrategies.map((strategy) => {
-                const colors = colorConfig[strategy.color];
-                return (
-                  <TabsContent key={strategy.id} value={strategy.id}>
-                    <div className={`bg-card rounded-2xl border-2 ${colors.border} overflow-hidden`}>
-                      <div className="grid lg:grid-cols-2 gap-0">
-                        <div className="p-8">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className={`w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center`}>
-                              <strategy.icon className="w-6 h-6 text-white" />
-                            </div>
-                            <div>
-                              <h4 className="text-lg font-bold text-foreground">{strategy.label}</h4>
-                              <p className="text-sm text-muted-foreground">{strategy.genres.join(" • ")}</p>
-                            </div>
-                          </div>
-
-                          <h5 className="font-semibold text-foreground mb-3">SEO Strategy</h5>
-                          <ul className="space-y-2 mb-6">
-                            {strategy.strategies.map((s, i) => (
-                              <li key={i} className="flex items-start gap-2 text-sm">
-                                <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
-                                <span className="text-muted-foreground">{s}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        <div className={`${colors.bgLight} p-8 border-t lg:border-t-0 lg:border-l ${colors.border}`}>
-                          <h5 className="font-semibold text-foreground mb-3">Local SEO Tactics</h5>
-                          <ul className="space-y-2">
-                            {strategy.localSeo.map((s, i) => (
-                              <li key={i} className="flex items-start gap-2 text-sm">
-                                <MapPin className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
-                                <span className="text-foreground">{s}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </TabsContent>
-                );
-              })}
-            </Tabs>
-
-            {/* What's Included Cards */}
-            <div className="grid md:grid-cols-2 gap-8">
+            {/* 2. Conversion Focused Website Design */}
+            <div className="mb-12">
+              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                <Globe className="w-5 h-5 text-primary" />
+                Conversion Focused Website Design
+              </h4>
               <GlowCard className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-blue-500 flex items-center justify-center">
-                    <Globe className="w-5 h-5 text-white" />
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      We build fast, beautiful portfolio sites designed to convert visitors into booked clients.
+                    </p>
+                    <ul className="space-y-2">
+                      {websiteFeatures.map((feature, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm">
+                          <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                          <span className="text-muted-foreground">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <h4 className="text-lg font-bold text-foreground">Responsive Website Design</h4>
+                  <div className="flex items-center justify-center">
+                    <div className="w-full max-w-xs p-6 bg-muted/50 rounded-xl border border-border text-center">
+                      <Globe className="w-12 h-12 text-primary mx-auto mb-3" />
+                      <p className="text-sm font-medium text-foreground">Your Portfolio, Optimized</p>
+                      <p className="text-xs text-muted-foreground mt-1">Fast, mobile-first, conversion-focused</p>
+                    </div>
+                  </div>
                 </div>
-                <ul className="space-y-2">
-                  {websiteFeatures.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
               </GlowCard>
+            </div>
 
-              <GlowCard className="p-6">
+            {/* 3. Website Optimization */}
+            <div className="mb-12">
+              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                <Zap className="w-5 h-5 text-primary" />
+                Website Optimization
+              </h4>
+              <GlowCard className="p-6 border-emerald-500/30">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
-                    <Search className="w-5 h-5 text-white" />
+                    <FileSearch className="w-5 h-5 text-white" />
                   </div>
-                  <h4 className="text-lg font-bold text-foreground">Managed AI SEO Services</h4>
+                  <h5 className="font-bold text-foreground">Technical SEO</h5>
                 </div>
-                <ul className="space-y-2">
-                  {seoFeatures.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">{feature}</span>
-                    </li>
+                <div className="grid md:grid-cols-5 gap-4">
+                  {websiteOptimization[0].items.map((item, i) => (
+                    <div key={i} className="p-4 bg-muted/50 rounded-lg text-center">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-500 mx-auto mb-2" />
+                      <p className="text-sm font-medium text-foreground">{item}</p>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </GlowCard>
+            </div>
+
+            {/* 4. Content Strategy */}
+            <div className="mb-12">
+              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                <FileSearch className="w-5 h-5 text-primary" />
+                Content Strategy
+              </h4>
+              <div className="grid md:grid-cols-2 gap-6">
+                {contentStrategy.map((item, i) => (
+                  <GlowCard key={i} className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                        <item.icon className="w-5 h-5 text-amber-500" />
+                      </div>
+                      <h5 className="font-bold text-foreground">{item.title}</h5>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                  </GlowCard>
+                ))}
+              </div>
+            </div>
+
+            {/* 5. Local & Google Business Profile */}
+            <div className="mb-12">
+              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-primary" />
+                Local & Google Business Profile
+              </h4>
+              <div className="grid md:grid-cols-2 gap-6">
+                {localGBPServices.map((service, i) => (
+                  <GlowCard key={i} className="p-5">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
+                        <service.icon className="w-5 h-5 text-blue-500" />
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
+                        <p className="text-sm text-muted-foreground">{service.description}</p>
+                      </div>
+                    </div>
+                  </GlowCard>
+                ))}
+              </div>
+            </div>
+
+            {/* 6. LLM Visibility & Rank Tracking */}
+            <div className="mb-12">
+              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                <Bot className="w-5 h-5 text-primary" />
+                LLM Visibility & Rank Tracking
+              </h4>
+              <div className="grid md:grid-cols-3 gap-6">
+                {llmVisibilityServices.map((service, i) => (
+                  <GlowCard key={i} className="p-5">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center shrink-0">
+                        <service.icon className="w-5 h-5 text-violet-500" />
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
+                        <p className="text-sm text-muted-foreground">{service.description}</p>
+                      </div>
+                    </div>
+                  </GlowCard>
+                ))}
+              </div>
+            </div>
+
+            {/* 7. Online Authority */}
+            <div className="mb-8">
+              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                <Shield className="w-5 h-5 text-primary" />
+                Online Authority
+              </h4>
+              <div className="grid md:grid-cols-2 gap-6">
+                {onlineAuthorityServices.map((service, i) => (
+                  <GlowCard key={i} className="p-5 border-cyan-500/30">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
+                        <service.icon className="w-5 h-5 text-cyan-500" />
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
+                        <p className="text-sm text-muted-foreground">{service.description}</p>
+                      </div>
+                    </div>
+                  </GlowCard>
+                ))}
+              </div>
             </div>
           </div>
 
