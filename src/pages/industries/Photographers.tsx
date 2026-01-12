@@ -1314,7 +1314,7 @@ const Photographers = () => {
                     <BarChart3 className="w-4 h-4 text-amber-500" />
                     Content Insights
                   </h6>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {contentInsightsImages.map((img, i) => (
                       <div key={i} className="rounded-lg overflow-hidden border border-border/50">
                         <img 
