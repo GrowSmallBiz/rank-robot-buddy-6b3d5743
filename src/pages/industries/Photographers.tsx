@@ -96,6 +96,7 @@ import articleKeywords from "@/assets/article-keywords.png";
 import articleCompetitors from "@/assets/article-competitors.png";
 import contentAgents from "@/assets/content-agents.png";
 import contentRefiners from "@/assets/content-refiners.png";
+import seoDashboardMetrics from "@/assets/seo-dashboard-metrics.png";
 
 // Content Insights images
 const contentInsightsImages = [
@@ -1176,49 +1177,73 @@ const Photographers = () => {
                 Competitor Analysis: Outrank Other Photographers
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <GlowCard className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                      <Users className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <h5 className="font-bold text-foreground">Identify Competitors</h5>
+                <GlowCard className="overflow-hidden">
+                  <div className="relative h-32 overflow-hidden">
+                    <img src={articleCompetitors} alt="Identify Competitors" className="w-full h-full object-contain bg-muted/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    Discover who's ranking for your target keywords in your local market
-                  </p>
+                  <div className="p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center">
+                        <Users className="w-4 h-4 text-orange-500" />
+                      </div>
+                      <h5 className="font-bold text-foreground text-sm">Identify Competitors</h5>
+                    </div>
+                    <p className="text-xs text-muted-foreground">
+                      Discover who's ranking for your target keywords in your local market
+                    </p>
+                  </div>
                 </GlowCard>
-                <GlowCard className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                      <BarChart3 className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <h5 className="font-bold text-foreground">Competitor Rankings</h5>
+                <GlowCard className="overflow-hidden">
+                  <div className="relative h-32 overflow-hidden">
+                    <img src={articleKeywords} alt="Competitor Rankings" className="w-full h-full object-contain bg-muted/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    Analyze which keywords your competitors rank for and their positions
-                  </p>
+                  <div className="p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center">
+                        <BarChart3 className="w-4 h-4 text-orange-500" />
+                      </div>
+                      <h5 className="font-bold text-foreground text-sm">Competitor Rankings</h5>
+                    </div>
+                    <p className="text-xs text-muted-foreground">
+                      Analyze which keywords your competitors rank for and their positions
+                    </p>
+                  </div>
                 </GlowCard>
-                <GlowCard className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                      <Search className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <h5 className="font-bold text-foreground">Keyword Gap Analysis</h5>
+                <GlowCard className="overflow-hidden">
+                  <div className="relative h-32 overflow-hidden">
+                    <img src={articleScoreInsights} alt="Keyword Gap Analysis" className="w-full h-full object-contain bg-muted/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    Find keyword opportunities your competitors rank for but you don't
-                  </p>
+                  <div className="p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center">
+                        <Search className="w-4 h-4 text-orange-500" />
+                      </div>
+                      <h5 className="font-bold text-foreground text-sm">Keyword Gap Analysis</h5>
+                    </div>
+                    <p className="text-xs text-muted-foreground">
+                      Find keyword opportunities your competitors rank for but you don't
+                    </p>
+                  </div>
                 </GlowCard>
-                <GlowCard className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                      <TrendingUp className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <h5 className="font-bold text-foreground">Monthly Tracking</h5>
+                <GlowCard className="overflow-hidden">
+                  <div className="relative h-32 overflow-hidden">
+                    <img src={seoDashboardMetrics} alt="Monthly Tracking" className="w-full h-full object-contain bg-muted/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    Track competitor ranking changes on a monthly basis to spot trends
-                  </p>
+                  <div className="p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center">
+                        <TrendingUp className="w-4 h-4 text-orange-500" />
+                      </div>
+                      <h5 className="font-bold text-foreground text-sm">Monthly Tracking</h5>
+                    </div>
+                    <p className="text-xs text-muted-foreground">
+                      Track competitor ranking changes on a monthly basis to spot trends
+                    </p>
+                  </div>
                 </GlowCard>
               </div>
             </div>
