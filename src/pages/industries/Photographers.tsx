@@ -106,6 +106,9 @@ import seoDashboardImage from "@/assets/seo-dashboard-metrics.png";
 import aeoServiceImage from "@/assets/aeo-service.png";
 import geoServiceImage from "@/assets/geo-service.png";
 import googlePpcScreenshot from "@/assets/ad-screenshot-google-ppc.png";
+import idxGoogleMap from "@/assets/idx-google-map.png";
+import localHeatmap from "@/assets/local-heatmap.png";
+import localCitationAggregators from "@/assets/local-citation-aggregators.png";
 
 // Content Insights images
 const contentInsightsImages = [
@@ -375,10 +378,10 @@ const contentStrategy = [
 
 // Local & Google Business Profile Services
 const localGBPServices = [
-  { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin, image: localSeoImage },
-  { title: "Run Heatmap for Local Business", description: "Visualize your local search presence and identify opportunities", icon: BarChart3, image: seoDashboardImage },
+  { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin, image: idxGoogleMap },
+  { title: "Run Heatmap for Local Business", description: "Visualize your local search presence and identify opportunities", icon: BarChart3, image: localHeatmap },
   { title: "Enable GBP + Social Post Automation", description: "Automated posting to keep your profile active and engaging", icon: RefreshCw, image: geoServiceImage },
-  { title: "Local Citation Building", description: "Build consistent listings across 50+ directories", icon: Globe, image: aeoServiceImage }
+  { title: "Local Citation Building", description: "Build consistent listings across 50+ directories", icon: Globe, image: localCitationAggregators }
 ];
 
 // LLM Visibility & Rank Tracking
