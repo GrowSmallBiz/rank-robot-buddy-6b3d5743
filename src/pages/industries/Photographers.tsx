@@ -406,63 +406,71 @@ const onlineAuthorityServices = [
   { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe, image: backlinkAnalyticsDashboard }
 ];
 
-// Color configurations
-const colorConfig: Record<string, { bg: string; bgLight: string; text: string; border: string; gradient: string }> = {
+// Color configurations with funnel steps
+const colorConfig = {
   pink: {
     bg: "bg-pink-500",
     bgLight: "bg-pink-500/10",
     text: "text-pink-500",
     border: "border-pink-500/30",
-    gradient: "from-pink-500 to-pink-600"
+    gradient: "from-pink-500 to-pink-600",
+    steps: ["bg-pink-500", "bg-pink-500/80", "bg-pink-500/60", "bg-pink-500/40", "bg-pink-500/25"]
   },
   rose: {
     bg: "bg-rose-500",
     bgLight: "bg-rose-500/10",
     text: "text-rose-500",
     border: "border-rose-500/30",
-    gradient: "from-rose-500 to-rose-600"
+    gradient: "from-rose-500 to-rose-600",
+    steps: ["bg-rose-500", "bg-rose-500/80", "bg-rose-500/60", "bg-rose-500/40", "bg-rose-500/25"]
   },
   blue: {
     bg: "bg-blue-500",
     bgLight: "bg-blue-500/10",
     text: "text-blue-500",
     border: "border-blue-500/30",
-    gradient: "from-blue-500 to-blue-600"
+    gradient: "from-blue-500 to-blue-600",
+    steps: ["bg-blue-500", "bg-blue-500/80", "bg-blue-500/60", "bg-blue-500/40", "bg-blue-500/25"]
   },
   violet: {
     bg: "bg-violet-500",
     bgLight: "bg-violet-500/10",
     text: "text-violet-500",
     border: "border-violet-500/30",
-    gradient: "from-violet-500 to-violet-600"
+    gradient: "from-violet-500 to-violet-600",
+    steps: ["bg-violet-500", "bg-violet-500/80", "bg-violet-500/60", "bg-violet-500/40", "bg-violet-500/25"]
   },
   amber: {
     bg: "bg-amber-500",
     bgLight: "bg-amber-500/10",
     text: "text-amber-500",
     border: "border-amber-500/30",
-    gradient: "from-amber-500 to-amber-600"
+    gradient: "from-amber-500 to-amber-600",
+    steps: ["bg-amber-500", "bg-amber-500/80", "bg-amber-500/60", "bg-amber-500/40", "bg-amber-500/25"]
   },
   emerald: {
     bg: "bg-emerald-500",
     bgLight: "bg-emerald-500/10",
     text: "text-emerald-500",
     border: "border-emerald-500/30",
-    gradient: "from-emerald-500 to-emerald-600"
+    gradient: "from-emerald-500 to-emerald-600",
+    steps: ["bg-emerald-500", "bg-emerald-500/80", "bg-emerald-500/60", "bg-emerald-500/40", "bg-emerald-500/25"]
   },
   cyan: {
     bg: "bg-cyan-500",
     bgLight: "bg-cyan-500/10",
     text: "text-cyan-500",
     border: "border-cyan-500/30",
-    gradient: "from-cyan-500 to-cyan-600"
+    gradient: "from-cyan-500 to-cyan-600",
+    steps: ["bg-cyan-500", "bg-cyan-500/80", "bg-cyan-500/60", "bg-cyan-500/40", "bg-cyan-500/25"]
   },
   teal: {
     bg: "bg-teal-500",
     bgLight: "bg-teal-500/10",
     text: "text-teal-500",
     border: "border-teal-500/30",
-    gradient: "from-teal-500 to-teal-600"
+    gradient: "from-teal-500 to-teal-600",
+    steps: ["bg-teal-500", "bg-teal-500/80", "bg-teal-500/60", "bg-teal-500/40", "bg-teal-500/25"]
   }
 };
 
@@ -612,49 +620,34 @@ const linkedInOutreach = {
   ]
 };
 
-// AI Client Growth System - Funnels by Genre
+// AI Client Growth System - Funnels by Genre (Shrinking Funnel Style)
 const clientGrowthFunnels = [
   {
     genre: "Portrait Photography",
     icon: Users,
-    color: "pink",
-    funnel: [
-      { stage: "Awareness", description: "Social media ads showcasing family sessions", icon: Megaphone },
-      { stage: "Interest", description: "Free 'what to wear' guide download", icon: FileSearch },
-      { stage: "Consideration", description: "Email nurture with portfolio + testimonials", icon: Mail },
-      { stage: "Decision", description: "Limited-time mini-session offer", icon: Calendar },
-      { stage: "Booking", description: "Online booking + deposit collection", icon: CheckCircle2 },
-      { stage: "Experience", description: "Pre-session prep + day-of excellence", icon: Camera },
-      { stage: "Retention", description: "Milestone reminders, referral program", icon: Repeat }
-    ]
+    color: "pink" as const,
+    funnel: ["Social Media Ad", "Lead Magnet", "Email Nurture", "Mini-Session Offer", "Booking"],
+    topPlatforms: ["Meta (FB/IG)", "Pinterest", "Google PPC", "Email"],
+    strategy: "Emotional family moments + 'what to wear' lead magnets. Seasonal mini-sessions drive urgency and quick decisions.",
+    seasonality: "Peak: Fall & Spring, Mother's Day"
   },
   {
     genre: "Wedding Photography",
     icon: Heart,
-    color: "rose",
-    funnel: [
-      { stage: "Discovery", description: "Pinterest ads, venue partnerships, SEO", icon: Search },
-      { stage: "Research", description: "Portfolio review, blog posts from real weddings", icon: Eye },
-      { stage: "Inquiry", description: "Contact form with date + venue details", icon: MessageSquare },
-      { stage: "Consultation", description: "Video call or in-person meeting", icon: Video },
-      { stage: "Proposal", description: "Custom collection presentation", icon: FileSearch },
-      { stage: "Booking", description: "Contract signing + retainer", icon: CheckCircle2 },
-      { stage: "Retention", description: "Anniversary session offers, referrals", icon: Heart }
-    ]
+    color: "rose" as const,
+    funnel: ["Discovery", "Portfolio Review", "Inquiry", "Consultation", "Booking"],
+    topPlatforms: ["Pinterest", "Instagram", "The Knot", "Google SEO"],
+    strategy: "Visual-first approach. Venue partnerships + real wedding blog posts. Longer decision cycle requires strong nurturing.",
+    seasonality: "Peak: Engagement season (Nov-Feb)"
   },
   {
     genre: "Branding Photography",
     icon: Sparkles,
-    color: "blue",
-    funnel: [
-      { stage: "Outreach", description: "LinkedIn connection + nurture", icon: Linkedin },
-      { stage: "Awareness", description: "Content marketing, case studies", icon: FileSearch },
-      { stage: "Lead Magnet", description: "'Personal brand photoshoot checklist' download", icon: Gift },
-      { stage: "Nurture", description: "Email sequence with transformation stories", icon: Mail },
-      { stage: "Consultation", description: "Discovery call about brand goals", icon: Phone },
-      { stage: "Booking", description: "Session booking + brand questionnaire", icon: Calendar },
-      { stage: "Upsell", description: "Quarterly refresh sessions, team headshots", icon: TrendingUp }
-    ]
+    color: "blue" as const,
+    funnel: ["LinkedIn Outreach", "Lead Magnet", "Nurture Sequence", "Discovery Call", "Booking"],
+    topPlatforms: ["LinkedIn", "Google PPC", "Meta (FB)", "Email"],
+    strategy: "Target entrepreneurs and small business owners. Showcase transformation stories and ROI of professional imagery.",
+    seasonality: "Year-round with Q1 surge"
   }
 ];
 
@@ -2045,34 +2038,79 @@ const Photographers = () => {
             description="From first impression to repeat customer—automated workflows for every stage"
           />
 
-          {/* Funnel Visualizations */}
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {/* Funnel Visualizations - Shrinking Style */}
+          <div className="grid lg:grid-cols-3 gap-6 mb-16">
             {clientGrowthFunnels.map((funnel, i) => {
               const colors = colorConfig[funnel.color];
+              const widthClasses = [
+                "w-full",
+                "w-[92%]",
+                "w-[84%]",
+                "w-[76%]",
+                "w-[68%]"
+              ];
               return (
-                <GlowCard key={i} className={`p-6 ${colors.border}`}>
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className={`w-10 h-10 rounded-xl ${colors.bg} flex items-center justify-center`}>
-                      <funnel.icon className="w-5 h-5 text-white" />
+                <GlowCard 
+                  key={i} 
+                  className={`group relative overflow-hidden bg-gradient-to-b from-card to-background animate-fade-up ${colors.border}`}
+                  style={{ animationDelay: `${i * 0.1}s` }}
+                >
+                  <div className="p-6">
+                    {/* Genre Header with Icon */}
+                    <div className="flex flex-col items-center text-center mb-6">
+                      <div className={`w-12 h-12 rounded-full ${colors.bgLight} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
+                        <funnel.icon className={`w-6 h-6 ${colors.text}`} />
+                      </div>
+                      <h3 className="text-xl font-bold text-foreground">{funnel.genre}</h3>
+                      <p className="text-xs text-muted-foreground mt-1">Marketing Funnel</p>
                     </div>
-                    <h4 className="font-bold text-foreground">{funnel.genre}</h4>
-                  </div>
-                  <div className="space-y-3">
-                    {funnel.funnel.map((step, j) => (
-                      <div 
-                        key={j} 
-                        className={`flex items-center gap-3 p-3 rounded-lg ${colors.bgLight} border ${colors.border}`}
-                        style={{ opacity: 1 - (j * 0.08) }}
-                      >
-                        <div className={`w-8 h-8 rounded-lg ${colors.bg} flex items-center justify-center shrink-0`} style={{ opacity: 1 - (j * 0.1) }}>
-                          <step.icon className="w-4 h-4 text-white" />
+
+                    {/* Funnel Visualization - Shrinking Steps */}
+                    <div className="space-y-2 mb-6">
+                      {funnel.funnel.map((step, stepIndex) => (
+                        <div key={stepIndex} className="flex flex-col items-center">
+                          <div 
+                            className={`${widthClasses[stepIndex]} ${colors.steps[stepIndex]} py-2.5 px-4 rounded-lg text-center text-sm font-medium text-white transition-all duration-300 group-hover:scale-[1.02]`}
+                          >
+                            {step}
+                          </div>
+                          {stepIndex < funnel.funnel.length - 1 && (
+                            <div className="text-muted-foreground text-xs my-1">↓</div>
+                          )}
                         </div>
-                        <div>
-                          <div className={`text-xs font-semibold ${colors.text}`}>{step.stage}</div>
-                          <div className="text-xs text-muted-foreground">{step.description}</div>
+                      ))}
+                    </div>
+
+                    {/* Optimized Badge */}
+                    <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground mb-4">
+                      <Zap className={`w-3 h-3 ${colors.text}`} />
+                      <span>Optimized for high conversion</span>
+                    </div>
+
+                    {/* Divider */}
+                    <div className="border-t border-border pt-4">
+                      {/* Top Platforms */}
+                      <div className="mb-3">
+                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Top Platforms</p>
+                        <div className="flex flex-wrap justify-center gap-1.5">
+                          {funnel.topPlatforms.map((platform, pIndex) => (
+                            <span key={pIndex} className={`text-xs px-2 py-1 ${colors.bgLight} ${colors.text} rounded-full`}>
+                              {platform}
+                            </span>
+                          ))}
                         </div>
                       </div>
-                    ))}
+
+                      {/* Strategy */}
+                      <p className="text-xs text-muted-foreground text-center leading-relaxed">
+                        {funnel.strategy}
+                      </p>
+                      
+                      {/* Seasonality */}
+                      <p className={`text-xs ${colors.text} text-center mt-2 italic`}>
+                        {funnel.seasonality}
+                      </p>
+                    </div>
                   </div>
                 </GlowCard>
               );
