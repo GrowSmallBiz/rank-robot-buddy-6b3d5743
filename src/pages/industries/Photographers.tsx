@@ -1030,14 +1030,17 @@ const Photographers = () => {
             description="Everything you need to attract, book, and retain dream clients"
           />
 
-          {/* Section 1: Conversion-Focused Website Design for Photographers */}
-          <div className="mb-20">
-            <SectionHeader
-              subtitle="Professional Photography Websites"
-              title="High-Converting Photography Website Design"
-              titleHighlight="That Books Clients"
-              description="Custom portfolio websites built to showcase your work beautifully and convert visitors into paying clients"
-            />
+          {/* Subsection 1: Conversion-Focused Website Design for Photographers */}
+          <div className="mb-16">
+            <div className="mb-8">
+              <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Professional Photography Websites</p>
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+                High-Converting Photography Website Design <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Books Clients</span>
+              </h3>
+              <p className="text-muted-foreground mt-3 max-w-3xl">
+                Custom portfolio websites built to showcase your work beautifully and convert visitors into paying clients
+              </p>
+            </div>
 
             <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
               <div>
@@ -1067,14 +1070,17 @@ const Photographers = () => {
             </div>
           </div>
 
-          {/* Section 2: AI-Powered SEO for Photographers */}
-          <div className="mb-20">
-            <SectionHeader
-              subtitle="Photography SEO Services"
-              title="AI-Powered SEO for"
-              titleHighlight="Photographers"
-              description="Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers"
-            />
+          {/* Subsection 2: AI-Powered SEO for Photographers */}
+          <div className="mb-16">
+            <div className="mb-8">
+              <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+                AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photographers</span>
+              </h3>
+              <p className="text-muted-foreground mt-3 max-w-3xl">
+                Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers
+              </p>
+            </div>
 
             {/* Strategy - Keywords & Competitors Research */}
             <div className="mb-12">
