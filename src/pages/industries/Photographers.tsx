@@ -907,11 +907,11 @@ const Photographers = () => {
                 {/* Content */}
                 <div className="flex-1 text-center md:text-left">
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-                    Ready to take control of your{" "}
-                    <span className="text-gradient">booking pipeline</span>?
+                    Ready for Photography Marketing That{" "}
+                    <span className="text-gradient">Fills Your Calendar</span>?
                   </h2>
                   <p className="text-xl text-muted-foreground mb-6">
-                    Let's discuss how we can help you attract more dream clients and fill your calendar consistently.
+                    Let's discuss a custom photography marketing strategy to attract dream clients and book more sessions consistently.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                     <Button variant="hero" size="xl" asChild>
