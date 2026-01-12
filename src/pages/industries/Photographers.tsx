@@ -843,17 +843,22 @@ const Photographers = () => {
                   </div>
                 ) : (
                   // AI Platform Logos Card
-                  <div className="relative h-48 bg-gradient-to-br from-card via-card to-muted/50 flex items-center justify-center p-6">
-                    <div className="grid grid-cols-3 gap-4">
+                  <div className="relative h-48 bg-gradient-to-br from-card via-card to-muted/50 flex flex-col items-center justify-center p-4">
+                    {/* Search query bubble */}
+                    <div className="mb-3 px-3 py-1.5 bg-muted/80 rounded-full border border-amber-500/20">
+                      <p className="text-xs text-muted-foreground italic">"Best wedding photographer in Austin, TX?"</p>
+                    </div>
+                    
+                    <div className="grid grid-cols-3 gap-3">
                       {aiPlatforms.map((platform, idx) => {
                         const IconComponent = platform.icon;
                         return (
                           <div 
                             key={idx}
-                            className="w-12 h-12 rounded-xl bg-background/80 border border-amber-500/30 flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-300 hover:border-amber-500/60"
+                            className="w-10 h-10 rounded-xl bg-background/80 border border-amber-500/30 flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-300 hover:border-amber-500/60"
                             title={platform.name}
                           >
-                            <IconComponent size={24} />
+                            <IconComponent size={20} />
                           </div>
                         );
                       })}
