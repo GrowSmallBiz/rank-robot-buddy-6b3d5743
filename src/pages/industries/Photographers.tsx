@@ -90,12 +90,18 @@ import signalSocialBurnout from "@/assets/social-media-burnout-female.jpg";
 // Content Strategy Images
 import articleQualityMetrics from "@/assets/article-quality-metrics.png";
 import topicalMapAuthority from "@/assets/topical-map-authority.png";
+import articleScoreInsights from "@/assets/article-score-insights.png";
+import articleStructure from "@/assets/article-structure.png";
+import articleKeywords from "@/assets/article-keywords.png";
+import articleCompetitors from "@/assets/article-competitors.png";
 
-// Content Strategy Image Map
-const contentStrategyImages: Record<string, string> = {
-  "article-quality-metrics": articleQualityMetrics,
-  "topical-map-authority": topicalMapAuthority
-};
+// Article quality images for Generate Articles section
+const articleQualityImages = [
+  { src: articleScoreInsights, alt: "Content scoring insights" },
+  { src: articleStructure, alt: "Article structure analysis" },
+  { src: articleKeywords, alt: "Keyword optimization" },
+  { src: articleCompetitors, alt: "Competitor analysis" }
+];
 const photographyAdCreatives = [
   {
     id: "family",
@@ -319,15 +325,13 @@ const contentStrategy = [
     title: "Build a Topical Map", 
     description: "Strategic content clusters around your photography specialties", 
     icon: Target,
-    note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings.",
-    image: "topical-map-authority"
+    note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings."
   },
   { 
     title: "Generate Articles", 
     description: "AI-assisted content creation optimized for search and client education", 
     icon: FileSearch,
-    note: "Every article is measured for quality using readability scores, keyword optimization, and engagement metrics—ensuring your content ranks and converts.",
-    image: "article-quality-metrics"
+    note: "Every article is measured for quality using readability scores, keyword optimization, and engagement metrics—ensuring your content ranks and converts."
   }
 ];
 
@@ -1263,33 +1267,52 @@ const Photographers = () => {
                 <FileSearch className="w-5 h-5 text-primary" />
                 Content Strategy
               </h4>
-              <div className="grid md:grid-cols-2 gap-6">
-                {contentStrategy.map((item, i) => (
-                  <GlowCard key={i} className="p-6">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
-                        <item.icon className="w-5 h-5 text-amber-500" />
-                      </div>
-                      <h5 className="font-bold text-foreground">{item.title}</h5>
+              
+              {/* Build a Topical Map - Full Width */}
+              <GlowCard className="p-6 mb-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                    <Target className="w-5 h-5 text-amber-500" />
+                  </div>
+                  <h5 className="font-bold text-foreground">{contentStrategy[0].title}</h5>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">{contentStrategy[0].description}</p>
+                <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-4">
+                  {contentStrategy[0].note}
+                </p>
+                <div className="mt-4 rounded-lg overflow-hidden border border-border/50">
+                  <img 
+                    src={topicalMapAuthority} 
+                    alt="Topical map authority illustration"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </GlowCard>
+
+              {/* Generate Articles - Full Width with 4 Images */}
+              <GlowCard className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                    <FileSearch className="w-5 h-5 text-amber-500" />
+                  </div>
+                  <h5 className="font-bold text-foreground">{contentStrategy[1].title}</h5>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3">{contentStrategy[1].description}</p>
+                <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-4">
+                  {contentStrategy[1].note}
+                </p>
+                <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+                  {articleQualityImages.map((img, i) => (
+                    <div key={i} className="rounded-lg overflow-hidden border border-border/50">
+                      <img 
+                        src={img.src} 
+                        alt={img.alt}
+                        className="w-full h-auto object-cover"
+                      />
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3">{item.description}</p>
-                    {item.note && (
-                      <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-4">
-                        {item.note}
-                      </p>
-                    )}
-                    {item.image && contentStrategyImages[item.image] && (
-                      <div className="mt-4 rounded-lg overflow-hidden border border-border/50">
-                        <img 
-                          src={contentStrategyImages[item.image]} 
-                          alt={`${item.title} illustration`}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    )}
-                  </GlowCard>
-                ))}
-              </div>
+                  ))}
+                </div>
+              </GlowCard>
             </div>
 
             {/* 5. Local & Google Business Profile */}
