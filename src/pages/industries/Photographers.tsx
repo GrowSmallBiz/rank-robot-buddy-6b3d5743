@@ -767,7 +767,7 @@ const Photographers = () => {
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Fill Your Calendar with{" "}
+              Photography Marketing That Fills Your Calendar with{" "}
               <span className="text-gradient">Dream Clients</span>
             </h1>
             
