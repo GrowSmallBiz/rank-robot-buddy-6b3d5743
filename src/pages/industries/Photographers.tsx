@@ -110,6 +110,8 @@ import idxGoogleMap from "@/assets/idx-google-map.png";
 import localHeatmap from "@/assets/local-heatmap.png";
 import localCitationAggregators from "@/assets/local-citation-aggregators.png";
 import socialMediaHero from "@/assets/social-media-hero.jpg";
+import llmVisibilitySentiment from "@/assets/llm-visibility-sentiment.png";
+import llmVisibilityDashboard from "@/assets/llm-visibility-dashboard.png";
 
 // Content Insights images
 const contentInsightsImages = [
@@ -387,9 +389,7 @@ const localGBPServices = [
 
 // LLM Visibility & Rank Tracking
 const llmVisibilityServices = [
-  { title: "Connect GSC to Improve Rankings", description: "Google Search Console integration for data-driven optimization", icon: BarChart3 },
-  { title: "Setup Keyword Rank Tracker", description: "Monitor your position for high-value photography keywords", icon: TrendingUp },
-  { title: "Enable LLM Visibility Tracking", description: "Track how AI platforms like ChatGPT and Gemini recommend your studio", icon: Bot }
+  { title: "LLM Visibility & Rank Tracking", description: "Track how AI platforms like ChatGPT, Gemini, Perplexity, and Grok recommend your studio. Monitor your visibility score and sentiment across all major AI search engines.", icon: Bot, images: [llmVisibilitySentiment, llmVisibilityDashboard] }
 ];
 
 // Online Authority Services
@@ -1438,14 +1438,14 @@ const Photographers = () => {
 
             {/* 6. LLM Visibility & Rank Tracking */}
             <div className="mb-12">
-              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-                <Bot className="w-5 h-5 text-primary" />
-                AI & LLM Visibility: Get Recommended by ChatGPT & Gemini
-              </h4>
-              <div className="grid md:grid-cols-3 gap-6">
+              <h2 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+                <Bot className="w-6 h-6 text-primary" />
+                AI & LLM Visibility: Get Recommended by AI Search
+              </h2>
+              <div className="grid md:grid-cols-1 gap-6">
                 {llmVisibilityServices.map((service, i) => (
-                  <GlowCard key={i} className="p-5">
-                    <div className="flex items-start gap-4">
+                  <GlowCard key={i} className="p-6">
+                    <div className="flex items-start gap-4 mb-4">
                       <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center shrink-0">
                         <service.icon className="w-5 h-5 text-violet-500" />
                       </div>
@@ -1453,6 +1453,17 @@ const Photographers = () => {
                         <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
                         <p className="text-sm text-muted-foreground">{service.description}</p>
                       </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {service.images.map((img, idx) => (
+                        <div key={idx} className="rounded-lg overflow-hidden bg-muted/30">
+                          <img 
+                            src={img} 
+                            alt={`${service.title} - ${idx + 1}`}
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                      ))}
                     </div>
                   </GlowCard>
                 ))}
