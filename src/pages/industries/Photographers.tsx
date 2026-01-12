@@ -1361,6 +1361,58 @@ const Photographers = () => {
             </div>
           </div>
 
+          {/* Why AI Search Ranking Matters - Hero Banner */}
+          <div className="mb-16 p-8 md:p-12 bg-gradient-to-br from-primary/20 via-purple-500/10 to-blue-500/10 rounded-3xl border border-primary/30 relative overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-5">
+              <div className="absolute top-0 left-0 w-64 h-64 bg-primary rounded-full blur-3xl" />
+              <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full blur-3xl" />
+            </div>
+            
+            <div className="relative z-10 max-w-4xl mx-auto text-center">
+              <span className="inline-block px-4 py-1 bg-primary/20 text-primary text-sm font-semibold rounded-full mb-4">
+                ⚡ The Search Landscape is Changing
+              </span>
+              
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
+                Ranking on Google Still Matters.<br />
+                <span className="text-transparent bg-clip-text bg-gradient-primary">But AI Search is Becoming the New Decision-Maker.</span>
+              </h3>
+              
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                Couples planning weddings and families searching for photographers are asking AI who to hire first—and it's not always the photographer ranking #1 on Google. 
+                Your competitor may already be showing up in AI search, even if you aren't.
+              </p>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="p-4 bg-background/60 backdrop-blur-sm rounded-xl border border-border">
+                  <div className="text-3xl font-bold text-primary mb-1">40%+</div>
+                  <div className="text-sm text-muted-foreground">of consumers now use AI for local service recommendations</div>
+                </div>
+                <div className="p-4 bg-background/60 backdrop-blur-sm rounded-xl border border-border">
+                  <div className="text-3xl font-bold text-primary mb-1">6 Platforms</div>
+                  <div className="text-sm text-muted-foreground">AI platforms we track for your visibility</div>
+                </div>
+                <div className="p-4 bg-background/60 backdrop-blur-sm rounded-xl border border-border">
+                  <div className="text-3xl font-bold text-primary mb-1">24/7</div>
+                  <div className="text-sm text-muted-foreground">continuous monitoring & sentiment tracking</div>
+                </div>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Button variant="hero" size="lg" asChild>
+                  <Link to="/free-assessment?industry=photographers" className="inline-flex items-center gap-2">
+                    Free AI + Google SEO Audit
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </Button>
+                <span className="text-sm text-muted-foreground">
+                  If you want more booked sessions, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
+                </span>
+              </div>
+            </div>
+          </div>
+
           {/* Subsection 2: AI-Powered SEO for Photographers */}
           <div className="mb-16">
             <div className="mb-8">
