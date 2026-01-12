@@ -731,7 +731,7 @@ const caseStudies = [
 // Results Stats - Realistic expectations based on SEO + Paid Media + Marketing Automation
 const results = [
   { metric: "3-6mo", label: "To see SEO results" },
-  { metric: "15-25", label: "First page keywords (6-12 months)" },
+  { metric: "15-25%", label: "Improved booking rate" },
   { metric: "2-4x", label: "Inquiry increase with paid ads" },
   { metric: "40%", label: "Time saved with automation" }
 ];
