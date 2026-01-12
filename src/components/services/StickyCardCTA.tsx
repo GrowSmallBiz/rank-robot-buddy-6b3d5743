@@ -84,9 +84,9 @@ export const StickyCardCTA = ({
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-slide-up">
       <div className="container mx-auto max-w-5xl">
         <div 
-          className="relative rounded-2xl p-6 md:p-8 lg:p-10 transition-all duration-300"
+          className="relative rounded-2xl p-6 md:p-8 lg:p-10 transition-all duration-300 backdrop-blur-xl"
           style={{
-            backgroundColor: 'hsl(215 40% 13%)',
+            backgroundColor: 'hsla(215, 40%, 13%, 0.85)',
             border: '1px solid hsla(18, 85%, 60%, 0.4)',
             boxShadow: '0 -8px 40px -10px hsla(18, 85%, 60%, 0.2), 0 25px 50px -12px rgba(0, 0, 0, 0.5)'
           }}
