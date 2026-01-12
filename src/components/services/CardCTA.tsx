@@ -14,31 +14,66 @@ interface CardCTAProps {
   buttonHref?: string;
   /** Custom section class for background styling */
   sectionClassName?: string;
+  /** Accent words to highlight in title (will be colored with gradient) */
+  accentWords?: string[];
 }
 
 export const CardCTA = ({
   title,
   description,
-  buttonText = "Schedule Strategy Session",
+  buttonText = "Get Your Custom Growth Strategy",
   buttonHref = "/contact",
   sectionClassName = "py-24 lg:py-32",
+  accentWords = [],
 }: CardCTAProps) => {
+  // Helper to render title with accent words highlighted
+  const renderTitle = () => {
+    if (accentWords.length === 0) return title;
+    
+    let result = title;
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    
+    // Find and highlight each accent word
+    accentWords.forEach((word) => {
+      const index = result.toLowerCase().indexOf(word.toLowerCase());
+      if (index !== -1) {
+        // Add text before the accent word
+        if (index > lastIndex) {
+          parts.push(result.substring(lastIndex, index));
+        }
+        // Add the accent word with gradient
+        parts.push(
+          <span key={word} className="text-gradient">
+            {result.substring(index, index + word.length)}
+          </span>
+        );
+        lastIndex = index + word.length;
+      }
+    });
+    
+    // Add remaining text
+    if (lastIndex < result.length) {
+      parts.push(result.substring(lastIndex));
+    }
+    
+    return parts.length > 0 ? parts : title;
+  };
+
   return (
     <section className={`${sectionClassName} relative overflow-hidden`}>
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-violet-500/10" />
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-card/80 backdrop-blur-sm border-2 border-primary/50 rounded-3xl p-8 md:p-12 shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/70 group">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              {/* Photo with Animated Ring */}
+        <div className="max-w-5xl mx-auto">
+          {/* Dark card with subtle border */}
+          <div className="bg-[hsl(210_45%_14%)] border border-primary/30 rounded-2xl p-8 md:p-12 lg:p-14 shadow-2xl transition-all duration-300 hover:border-primary/50 group">
+            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
+              {/* Left: Photo + Name */}
               <div className="flex-shrink-0 text-center">
                 <div className="relative inline-block">
-                  {/* Spinning gradient ring */}
-                  <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-primary via-accent to-primary animate-ring-spin opacity-80" />
-                  {/* Pulsing glow */}
-                  <div className="absolute -inset-4 rounded-full bg-primary/20 blur-xl animate-pulse-glow" />
+                  {/* Subtle ring around photo */}
+                  <div className="absolute -inset-1.5 rounded-full bg-gradient-to-br from-muted-foreground/40 to-muted-foreground/20" />
                   {/* Photo container */}
-                  <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg group-hover:border-primary/50 transition-all duration-300">
+                  <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden">
                     <img 
                       src={baseContactCTA.image} 
                       alt={baseContactCTA.name} 
@@ -46,20 +81,25 @@ export const CardCTA = ({
                     />
                   </div>
                 </div>
-                <h4 className="mt-4 text-lg font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
+                <h4 className="mt-5 text-lg font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
                 <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
               </div>
               
-              {/* Content */}
+              {/* Right: Content */}
               <div className="flex-1 text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-                  {title}
+                <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-display font-bold text-foreground mb-5 leading-tight">
+                  {renderTitle()}
                 </h2>
-                <p className="text-xl text-muted-foreground mb-6">
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
                   {description}
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="hero" size="xl" asChild>
+                <div className="flex flex-col sm:flex-row gap-4 items-center md:items-start">
+                  {/* Gradient CTA Button */}
+                  <Button 
+                    size="xl" 
+                    asChild 
+                    className="bg-gradient-to-r from-primary via-[hsl(35_90%_55%)] to-[hsl(199_89%_48%)] hover:opacity-90 text-white font-semibold shadow-lg shadow-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/40 border-0 px-8"
+                  >
                     {buttonHref.startsWith('http') ? (
                       <a href={buttonHref} target="_blank" rel="noopener noreferrer">
                         {buttonText}
@@ -72,7 +112,13 @@ export const CardCTA = ({
                       </Link>
                     )}
                   </Button>
-                  <Button variant="outline" size="xl" asChild className="border-primary/50 hover:bg-primary/10">
+                  {/* Outlined Phone Button */}
+                  <Button 
+                    variant="outline" 
+                    size="xl" 
+                    asChild 
+                    className="border-muted-foreground/40 hover:border-foreground/60 hover:bg-transparent text-foreground"
+                  >
                     <a href="tel:+19258863724">
                       <Phone className="mr-2 w-5 h-5" />
                       Call +1 (925) 886-3724
