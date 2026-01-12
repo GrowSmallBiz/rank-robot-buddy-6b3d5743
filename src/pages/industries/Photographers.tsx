@@ -2034,10 +2034,11 @@ const Photographers = () => {
       />
 
       <CardCTA 
-        title="Ready to Fill Your Calendar?"
-        description="Let's build a marketing system that brings you dream clients on autopilot."
-        buttonText="Get Your Free Assessment"
+        title="Ready for Photography Marketing That Fills Your Calendar?"
+        description="Let's discuss a custom photography marketing strategy to attract dream clients and book more sessions consistently."
+        buttonText="Get Your Custom Growth Strategy"
         buttonHref="/free-assessment?industry=photographer"
+        accentWords={["Fills Your Calendar?"]}
       />
 
       <ConsultationFormSection />
