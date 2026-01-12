@@ -1084,10 +1084,19 @@ const Photographers = () => {
 
             {/* Strategy - Keywords & Competitors Research */}
             <div className="mb-12">
-              <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+              <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
                 <Search className="w-5 h-5 text-primary" />
                 Keyword Research & Competitor Analysis
               </h3>
+              <div className="bg-muted/30 rounded-xl p-4 mb-6 border border-border">
+                <p className="text-sm text-muted-foreground">
+                  <span className="font-semibold text-foreground">Keywords photographers need:</span>{" "}
+                  <span className="text-primary font-medium">Long-tail keywords</span> (e.g., "outdoor family photographer in Austin") for targeted traffic,{" "}
+                  <span className="text-primary font-medium">high-intent keywords</span> (e.g., "book wedding photographer near me") for ready-to-buy clients,{" "}
+                  <span className="text-primary font-medium">location-based keywords</span> for local SEO, and{" "}
+                  <span className="text-primary font-medium">niche-specific terms</span> that match your photography specialty.
+                </p>
+              </div>
               <div className="grid md:grid-cols-3 gap-6">
                 {Object.entries(keywordExamples).map(([key, genre]) => {
                   const IconComponent = genre.icon;
