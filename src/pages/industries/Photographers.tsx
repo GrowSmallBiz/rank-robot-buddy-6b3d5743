@@ -1082,11 +1082,11 @@ const Photographers = () => {
               </p>
             </div>
 
-            {/* Strategy - Keywords & Competitors Research */}
+            {/* Keyword Research */}
             <div className="mb-12">
               <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
                 <Search className="w-5 h-5 text-primary" />
-                Keyword Research & Competitor Analysis
+                Keyword Research
               </h3>
               <div className="bg-muted/30 rounded-xl p-4 mb-6 border border-border">
                 <p className="text-sm text-muted-foreground">
@@ -1108,7 +1108,7 @@ const Photographers = () => {
                         </div>
                         <h5 className="font-bold text-foreground">{genre.label}</h5>
                       </div>
-                      <div className="mb-4">
+                      <div>
                         <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Sample Keywords</p>
                         <ul className="space-y-1">
                           {genre.keywords.map((kw, i) => (
@@ -1119,14 +1119,63 @@ const Photographers = () => {
                           ))}
                         </ul>
                       </div>
-                      <div className="pt-3 border-t border-border">
-                        <p className="text-xs text-muted-foreground">
-                          <span className="font-medium">Competitors:</span> {genre.competitors}
-                        </p>
-                      </div>
                     </GlowCard>
                   );
                 })}
+              </div>
+            </div>
+
+            {/* Competitor Analysis */}
+            <div className="mb-12">
+              <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
+                <Target className="w-5 h-5 text-primary" />
+                Competitor Analysis
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <GlowCard className="p-5">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                      <Users className="w-5 h-5 text-orange-500" />
+                    </div>
+                    <h5 className="font-bold text-foreground">Identify Competitors</h5>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Discover who's ranking for your target keywords in your local market
+                  </p>
+                </GlowCard>
+                <GlowCard className="p-5">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                      <BarChart3 className="w-5 h-5 text-orange-500" />
+                    </div>
+                    <h5 className="font-bold text-foreground">Competitor Rankings</h5>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Analyze which keywords your competitors rank for and their positions
+                  </p>
+                </GlowCard>
+                <GlowCard className="p-5">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                      <Search className="w-5 h-5 text-orange-500" />
+                    </div>
+                    <h5 className="font-bold text-foreground">Keyword Gap Analysis</h5>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Find keyword opportunities your competitors rank for but you don't
+                  </p>
+                </GlowCard>
+                <GlowCard className="p-5">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                      <TrendingUp className="w-5 h-5 text-orange-500" />
+                    </div>
+                    <h5 className="font-bold text-foreground">Monthly Tracking</h5>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Track competitor ranking changes on a monthly basis to spot trends
+                  </p>
+                </GlowCard>
               </div>
             </div>
 
