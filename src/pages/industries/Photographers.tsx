@@ -216,6 +216,7 @@ const keywordExamples = {
   portrait: {
     label: "Portrait Photography",
     icon: Users,
+    image: adCreativeFamilyPortrait,
     keywords: [
       "family photographer [city]",
       "newborn photographer near me", 
@@ -227,6 +228,7 @@ const keywordExamples = {
   wedding: {
     label: "Wedding Photography",
     icon: Heart,
+    image: adCreativeWedding,
     keywords: [
       "wedding photographer [city]",
       "elopement photographer [city]",
@@ -238,6 +240,7 @@ const keywordExamples = {
   headshot: {
     label: "Headshot & Branding",
     icon: Sparkles,
+    image: adCreativeBranding,
     keywords: [
       "professional headshot photographer [city]",
       "corporate headshots [city]",
@@ -1134,14 +1137,22 @@ const Photographers = () => {
                 {Object.entries(keywordExamples).map(([key, genre]) => {
                   const IconComponent = genre.icon;
                   return (
-                    <GlowCard key={key} className="p-6">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                          <IconComponent className="w-5 h-5 text-primary" />
+                    <GlowCard key={key} className="overflow-hidden">
+                      <div className="relative h-32 overflow-hidden">
+                        <img 
+                          src={genre.image} 
+                          alt={genre.label}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                        <div className="absolute bottom-3 left-4 flex items-center gap-2">
+                          <div className="w-8 h-8 rounded-lg bg-primary/90 flex items-center justify-center">
+                            <IconComponent className="w-4 h-4 text-primary-foreground" />
+                          </div>
+                          <h5 className="font-bold text-foreground drop-shadow-md">{genre.label}</h5>
                         </div>
-                        <h5 className="font-bold text-foreground">{genre.label}</h5>
                       </div>
-                      <div>
+                      <div className="p-5">
                         <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Sample Keywords</p>
                         <ul className="space-y-1">
                           {genre.keywords.map((kw, i) => (
