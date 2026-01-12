@@ -394,8 +394,8 @@ const llmVisibilityServices = [
 
 // Online Authority Services
 const onlineAuthorityServices = [
-  { title: "Publish Press Release", description: "Get featured in news outlets to build credibility and backlinks", icon: Megaphone },
-  { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe }
+  { title: "Publish Press Release", description: "Get featured in news outlets to build credibility and backlinks", icon: Megaphone, image: topicalMapAuthority },
+  { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe, image: linkBuildingImage }
 ];
 
 // Color configurations
@@ -1478,14 +1478,23 @@ const Photographers = () => {
               </h4>
               <div className="grid md:grid-cols-2 gap-6">
                 {onlineAuthorityServices.map((service, i) => (
-                  <GlowCard key={i} className="p-5 border-cyan-500/30">
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
-                        <service.icon className="w-5 h-5 text-cyan-500" />
-                      </div>
-                      <div>
-                        <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
-                        <p className="text-sm text-muted-foreground">{service.description}</p>
+                  <GlowCard key={i} className="overflow-hidden border-cyan-500/30">
+                    <div className="h-40 bg-muted/30">
+                      <img 
+                        src={service.image} 
+                        alt={service.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="p-5 pt-3">
+                      <div className="flex items-start gap-4">
+                        <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
+                          <service.icon className="w-5 h-5 text-cyan-500" />
+                        </div>
+                        <div>
+                          <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
+                          <p className="text-sm text-muted-foreground">{service.description}</p>
+                        </div>
                       </div>
                     </div>
                   </GlowCard>
