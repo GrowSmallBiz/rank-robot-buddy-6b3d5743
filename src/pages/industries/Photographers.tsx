@@ -2037,15 +2037,6 @@ const Photographers = () => {
       <ConsultationFormSection />
 
       <Footer />
-
-      {/* Sticky CTA - appears after scrolling */}
-      <StickyCardCTA
-        title="Ready for Photography Marketing That Fills Your Calendar?"
-        description="Let's discuss a custom photography marketing strategy to attract dream clients and book more sessions consistently."
-        buttonText="Get Your Custom Growth Strategy"
-        buttonHref="/contact"
-        accentWords={["Fills", "Your", "Calendar"]}
-      />
     </div>
   );
 };
