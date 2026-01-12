@@ -225,10 +225,10 @@ const keywordExamples = {
   }
 };
 
-// Website Optimization Services
-const websiteOptimization = [
+// Technical SEO Services (consolidated)
+const technicalSEOSections = [
   {
-    title: "Technical SEO",
+    title: "Core Technical SEO",
     icon: FileSearch,
     items: [
       "Deep Technical Audit",
@@ -247,6 +247,34 @@ const websiteOptimization = [
       "Image Alt Text & Compression",
       "Internal Linking Strategy",
       "Content Optimization for Target Keywords"
+    ]
+  },
+  {
+    title: "Link Building",
+    icon: Share2,
+    items: [
+      "Internal Linking Opportunities",
+      "WILDFIRE Link Acquisition",
+      "Canonical Link Management",
+      "Issues with Links Detection & Fix"
+    ]
+  },
+  {
+    title: "Instant Indexing",
+    icon: Zap,
+    items: [
+      "Google - GSC Instant Indexing",
+      "Bing - IndexNow Integration"
+    ]
+  },
+  {
+    title: "Miscellaneous",
+    icon: Database,
+    items: [
+      "Open Graph Optimization",
+      "Twitter Card Setup",
+      "Missing Lang Attribute Fix",
+      "Custom HTML Content Validation"
     ]
   }
 ];
@@ -1064,14 +1092,14 @@ const Photographers = () => {
               </GlowCard>
             </div>
 
-            {/* 3. Website Optimization */}
+            {/* 3. Technical SEO */}
             <div className="mb-12">
               <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-                <Zap className="w-5 h-5 text-primary" />
-                Website Optimization
+                <FileSearch className="w-5 h-5 text-primary" />
+                Technical SEO
               </h4>
-              <div className="grid md:grid-cols-2 gap-6">
-                {websiteOptimization.map((section, idx) => (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {technicalSEOSections.map((section, idx) => (
                   <GlowCard key={idx} className="p-6 border-emerald-500/30">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
