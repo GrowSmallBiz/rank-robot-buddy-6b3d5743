@@ -15,14 +15,17 @@ interface FloatingCTAProps {
   buttonHref?: string;
   /** Show after scrolling this many pixels */
   showAfterScroll?: number;
+  /** Accent words to highlight in title */
+  accentWords?: string[];
 }
 
 export const FloatingCTA = ({
   title,
   description,
-  buttonText = "Schedule Strategy Session",
+  buttonText = "Get Your Custom Growth Strategy",
   buttonHref = "/contact",
   showAfterScroll = 400,
+  accentWords = [],
 }: FloatingCTAProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
@@ -45,29 +48,76 @@ export const FloatingCTA = ({
     setIsVisible(false);
   };
 
+  // Helper to render title with accent words highlighted
+  const renderTitle = () => {
+    if (accentWords.length === 0) return title;
+    
+    let result = title;
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    
+    accentWords.forEach((word) => {
+      const index = result.toLowerCase().indexOf(word.toLowerCase());
+      if (index !== -1) {
+        if (index > lastIndex) {
+          parts.push(result.substring(lastIndex, index));
+        }
+        parts.push(
+          <span 
+            key={word} 
+            className="bg-clip-text text-transparent"
+            style={{
+              backgroundImage: 'linear-gradient(90deg, hsl(199 89% 48%) 0%, hsl(18 85% 60%) 100%)'
+            }}
+          >
+            {result.substring(index, index + word.length)}
+          </span>
+        );
+        lastIndex = index + word.length;
+      }
+    });
+    
+    if (lastIndex < result.length) {
+      parts.push(result.substring(lastIndex));
+    }
+    
+    return parts.length > 0 ? parts : title;
+  };
+
   if (!isVisible) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-slide-up">
-      <div className="max-w-6xl mx-auto">
-        <div className="relative bg-card/95 backdrop-blur-md border border-primary/30 rounded-2xl p-4 md:p-6 shadow-2xl shadow-primary/20">
+      <div className="max-w-5xl mx-auto">
+        {/* Dark navy card with subtle orange border - matching CardCTA */}
+        <div 
+          className="relative rounded-2xl p-5 md:p-6 transition-all duration-300"
+          style={{
+            backgroundColor: 'hsl(215 40% 13%)',
+            border: '1px solid hsla(18, 85%, 60%, 0.35)',
+            boxShadow: '0 -4px 40px -10px hsla(18, 85%, 60%, 0.25), 0 10px 40px -10px rgba(0,0,0,0.5)'
+          }}
+        >
           {/* Dismiss button */}
           <button
             onClick={handleDismiss}
-            className="absolute top-2 right-2 md:top-4 md:right-4 p-1.5 rounded-full bg-muted/50 hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+            className="absolute top-3 right-3 p-1.5 rounded-full bg-muted/30 hover:bg-muted/50 transition-colors text-muted-foreground hover:text-foreground"
             aria-label="Dismiss"
           >
             <X className="w-4 h-4" />
           </button>
 
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-            {/* Photo with Ring */}
+          <div className="flex flex-col md:flex-row items-center gap-5 md:gap-8">
+            {/* Photo with subtle gray ring */}
             <div className="flex-shrink-0 hidden sm:block">
-              <div className="relative">
-                {/* Gradient ring */}
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-accent to-primary opacity-70" />
-                {/* Photo */}
-                <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-card">
+              <div className="relative inline-block">
+                <div 
+                  className="absolute -inset-1 rounded-full"
+                  style={{
+                    background: 'linear-gradient(135deg, hsl(210 20% 40%) 0%, hsl(210 20% 25%) 100%)'
+                  }}
+                />
+                <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden">
                   <img
                     src={baseContactCTA.image}
                     alt={baseContactCTA.name}
@@ -77,16 +127,16 @@ export const FloatingCTA = ({
               </div>
             </div>
 
-            {/* Person info - mobile only inline */}
-            <div className="hidden sm:flex flex-col items-center md:items-start">
+            {/* Person info */}
+            <div className="hidden sm:flex flex-col items-center md:items-start -ml-2">
               <span className="text-sm font-semibold text-foreground">{baseContactCTA.name}</span>
               <span className="text-xs text-muted-foreground">{baseContactCTA.role}</span>
             </div>
 
             {/* Content */}
-            <div className="flex-1 text-center md:text-left">
+            <div className="flex-1 text-center md:text-left pr-6">
               <h3 className="text-lg md:text-xl lg:text-2xl font-display font-bold text-foreground mb-1">
-                {title}
+                {renderTitle()}
               </h3>
               <p className="text-sm text-muted-foreground line-clamp-2 hidden md:block">
                 {description}
@@ -94,8 +144,17 @@ export const FloatingCTA = ({
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 flex-shrink-0">
-              <Button className="ghl-btn px-6 py-2.5" asChild>
+            <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+              {/* Gradient CTA Button */}
+              <Button 
+                size="lg" 
+                asChild 
+                className="border-0 px-6 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:opacity-90 rounded-full"
+                style={{
+                  background: 'linear-gradient(90deg, hsl(25 90% 55%) 0%, hsl(35 85% 60%) 35%, hsl(199 80% 55%) 100%)',
+                  boxShadow: '0 8px 25px -6px hsla(25, 90%, 50%, 0.5)'
+                }}
+              >
                 {buttonHref.startsWith("http") ? (
                   <a href={buttonHref} target="_blank" rel="noopener noreferrer">
                     {buttonText}
@@ -108,14 +167,16 @@ export const FloatingCTA = ({
                   </Link>
                 )}
               </Button>
+              {/* Outlined Phone Button */}
               <Button
                 variant="outline"
-                className="border-muted-foreground/30 hover:bg-muted/50 px-6 py-2.5"
+                size="lg"
+                className="border-muted-foreground/30 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent rounded-full"
                 asChild
               >
                 <a href="tel:+19258863724">
                   <Phone className="mr-2 w-4 h-4" />
-                  Call +1 (925) 886-3724
+                  <span className="hidden lg:inline">Call</span> +1 (925) 886-3724
                 </a>
               </Button>
             </div>
