@@ -70,6 +70,12 @@ import adCreativeSenior from "@/assets/ad-creative-senior-portrait.jpg";
 import adCreativeWedding from "@/assets/ad-creative-wedding.jpg";
 import adCreativeBranding from "@/assets/ad-creative-branding-headshot.jpg";
 
+// Challenge Images
+import challengeEmptyCalendar from "@/assets/challenge-empty-calendar.jpg";
+import challengeReferralHandoff from "@/assets/challenge-referral-handoff.jpg";
+import challengeGoogleRankings from "@/assets/challenge-google-rankings.jpg";
+import challengePriceShopper from "@/assets/challenge-price-shopper.jpg";
+
 // Photography Ad Creatives Data
 const photographyAdCreatives = [
   {
@@ -114,22 +120,26 @@ const photographerChallenges = [
   {
     icon: Clock,
     title: "Inconsistent Booking Pipeline",
-    description: "Feast-or-famine cycle where some months are packed while others have empty slots and no inquiries coming in."
+    description: "Feast-or-famine cycle where some months are packed while others have empty slots and no inquiries coming in.",
+    image: challengeEmptyCalendar
   },
   {
     icon: Users,
     title: "Over-Reliance on Referrals",
-    description: "Depending solely on word-of-mouth means unpredictable income and no control over your growth trajectory."
+    description: "Depending solely on word-of-mouth means unpredictable income and no control over your growth trajectory.",
+    image: challengeReferralHandoff
   },
   {
     icon: Search,
     title: "Invisible Online Presence",
-    description: "Beautiful portfolio that sits unseen—competitors with less talent rank higher on Google and book your ideal clients."
+    description: "Beautiful portfolio that sits unseen—competitors with less talent rank higher on Google and book your ideal clients.",
+    image: challengeGoogleRankings
   },
   {
     icon: Target,
     title: "Attracting Wrong Clients",
-    description: "Getting inquiries from price-shoppers instead of clients who value your artistry and are willing to pay premium rates."
+    description: "Getting inquiries from price-shoppers instead of clients who value your artistry and are willing to pay premium rates.",
+    image: challengePriceShopper
   }
 ];
 
@@ -773,14 +783,24 @@ const Photographers = () => {
             {photographerChallenges.map((challenge, i) => (
               <GlowCard 
                 key={i} 
-                className="p-6 animate-fade-up"
+                className="overflow-hidden animate-fade-up"
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4">
-                  <challenge.icon className="w-6 h-6 text-destructive" />
+                <div className="relative h-40 overflow-hidden">
+                  <img 
+                    src={challenge.image} 
+                    alt={challenge.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                  <div className="absolute bottom-3 left-3 w-10 h-10 rounded-lg bg-destructive/90 flex items-center justify-center">
+                    <challenge.icon className="w-5 h-5 text-white" />
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{challenge.title}</h3>
-                <p className="text-sm text-muted-foreground">{challenge.description}</p>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{challenge.title}</h3>
+                  <p className="text-sm text-muted-foreground">{challenge.description}</p>
+                </div>
               </GlowCard>
             ))}
           </div>
