@@ -116,10 +116,10 @@ export const CardCTA = ({
                   <Button 
                     size="xl" 
                     asChild 
-                    className="border-0 px-8 py-6 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:opacity-90 hover:shadow-xl"
+                    className="border-0 px-8 py-6 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:opacity-90 hover:shadow-xl rounded-full"
                     style={{
-                      background: 'linear-gradient(90deg, hsl(18 85% 55%) 0%, hsl(35 90% 55%) 40%, hsl(199 89% 48%) 100%)',
-                      boxShadow: '0 8px 30px -8px hsla(18, 85%, 50%, 0.5)'
+                      background: 'linear-gradient(90deg, hsl(25 90% 55%) 0%, hsl(35 85% 60%) 35%, hsl(199 80% 55%) 100%)',
+                      boxShadow: '0 12px 35px -8px hsla(25, 90%, 50%, 0.6)'
                     }}
                   >
                     {buttonHref.startsWith('http') ? (
@@ -139,7 +139,7 @@ export const CardCTA = ({
                     variant="outline" 
                     size="xl" 
                     asChild 
-                    className="border-muted-foreground/30 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent px-6"
+                    className="border-muted-foreground/40 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent px-6 rounded-full"
                   >
                     <a href="tel:+19258863724">
                       <Phone className="mr-2 w-5 h-5" />
