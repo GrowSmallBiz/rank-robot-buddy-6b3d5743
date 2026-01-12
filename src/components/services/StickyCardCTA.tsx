@@ -81,78 +81,93 @@ export const StickyCardCTA = ({
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-3 md:p-4 animate-slide-up">
-      <div className="container mx-auto max-w-6xl">
-        <div className="relative bg-card/95 backdrop-blur-md border-2 border-primary/50 rounded-2xl p-4 md:p-5 shadow-xl shadow-black/30 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/70 group">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-slide-up">
+      <div className="container mx-auto max-w-5xl">
+        <div 
+          className="relative rounded-2xl p-6 md:p-8 lg:p-10 transition-all duration-300"
+          style={{
+            backgroundColor: 'hsl(215 40% 13%)',
+            border: '1px solid hsla(18, 85%, 60%, 0.4)',
+            boxShadow: '0 -8px 40px -10px hsla(18, 85%, 60%, 0.2), 0 25px 50px -12px rgba(0, 0, 0, 0.5)'
+          }}
+        >
           {/* Dismiss button */}
           <button
             onClick={handleDismiss}
-            className="absolute top-2 right-2 md:top-3 md:right-3 p-1.5 rounded-full bg-muted/30 hover:bg-muted/50 transition-colors text-muted-foreground hover:text-foreground z-10"
+            className="absolute top-3 right-3 p-1.5 rounded-full bg-muted/30 hover:bg-muted/50 transition-colors text-muted-foreground hover:text-foreground z-10"
             aria-label="Dismiss"
           >
             <X className="w-4 h-4" />
           </button>
 
-          <div className="flex items-center gap-4 md:gap-6">
-            {/* Photo + Name - compact inline */}
-            <div className="flex-shrink-0 flex items-center gap-3">
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-primary/40 shadow-lg group-hover:border-primary/60 transition-all duration-300">
-                <img 
-                  src={baseContactCTA.image} 
-                  alt={baseContactCTA.name} 
-                  className="w-full h-full object-cover"
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+            {/* Left: Photo + Name (stacked) */}
+            <div className="flex-shrink-0 text-center">
+              <div className="relative inline-block">
+                {/* Subtle gray ring around photo */}
+                <div 
+                  className="absolute -inset-1 rounded-full"
+                  style={{
+                    background: 'linear-gradient(135deg, hsl(210 20% 40%) 0%, hsl(210 20% 25%) 100%)'
+                  }}
                 />
+                {/* Photo container */}
+                <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden">
+                  <img 
+                    src={baseContactCTA.image} 
+                    alt={baseContactCTA.name} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <div className="hidden sm:block">
-                <h4 className="text-sm font-display font-semibold text-foreground whitespace-nowrap">{baseContactCTA.name}</h4>
-                <p className="text-xs text-muted-foreground whitespace-nowrap">{baseContactCTA.role}</p>
-              </div>
+              <h4 className="mt-3 text-base font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
+              <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
             </div>
             
-            {/* Content - single line on desktop */}
-            <div className="flex-1 min-w-0 hidden lg:block">
-              <h2 className="text-lg xl:text-xl font-display font-bold text-foreground leading-tight truncate">
+            {/* Right: Content + Buttons */}
+            <div className="flex-1 text-center md:text-left">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-3 leading-tight">
                 {renderTitle()}
               </h2>
-              <p className="text-sm text-muted-foreground truncate">
+              <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-xl">
                 {description}
               </p>
-            </div>
-
-            {/* Buttons - always visible */}
-            <div className="flex items-center gap-2 md:gap-3 flex-shrink-0 ml-auto">
-              <Button 
-                variant="hero"
-                size="default"
-                className="text-sm px-4 md:px-6"
-                asChild
-              >
-                {buttonHref.startsWith('http') ? (
-                  <a href={buttonHref} target="_blank" rel="noopener noreferrer">
-                    <span className="hidden sm:inline">{buttonText}</span>
-                    <span className="sm:hidden">Get Started</span>
-                    <ArrowRight className="ml-2 w-4 h-4" />
+              
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                <Button 
+                  size="lg" 
+                  asChild 
+                  className="border-0 px-6 py-5 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:opacity-90 hover:shadow-xl rounded-full"
+                  style={{
+                    background: 'linear-gradient(90deg, hsl(25 90% 55%) 0%, hsl(35 85% 60%) 35%, hsl(199 80% 55%) 100%)',
+                    boxShadow: '0 12px 35px -8px hsla(25, 90%, 50%, 0.6)'
+                  }}
+                >
+                  {buttonHref.startsWith('http') ? (
+                    <a href={buttonHref} target="_blank" rel="noopener noreferrer">
+                      {buttonText}
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </a>
+                  ) : (
+                    <Link to={buttonHref}>
+                      {buttonText}
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
+                  )}
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  asChild 
+                  className="border-muted-foreground/40 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent px-6 py-5 rounded-full"
+                >
+                  <a href="tel:+19258863724">
+                    <Phone className="mr-2 w-5 h-5" />
+                    Call +1 (925) 886-3724
                   </a>
-                ) : (
-                  <Link to={buttonHref}>
-                    <span className="hidden sm:inline">{buttonText}</span>
-                    <span className="sm:hidden">Get Started</span>
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
-                )}
-              </Button>
-              <Button 
-                variant="outline" 
-                size="default"
-                asChild 
-                className="border-primary/40 hover:border-primary/60 hover:bg-primary/10 rounded-full px-4 md:px-5"
-              >
-                <a href="tel:+19258863724" className="whitespace-nowrap">
-                  <Phone className="mr-2 w-4 h-4" />
-                  <span className="hidden md:inline">Call +1 (925) 886-3724</span>
-                  <span className="md:hidden">Call</span>
-                </a>
-              </Button>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
