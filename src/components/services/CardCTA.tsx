@@ -42,9 +42,15 @@ export const CardCTA = ({
         if (index > lastIndex) {
           parts.push(result.substring(lastIndex, index));
         }
-        // Add the accent word with gradient
+        // Add the accent word with gradient (blue to orange like reference)
         parts.push(
-          <span key={word} className="text-gradient">
+          <span 
+            key={word} 
+            className="bg-clip-text text-transparent"
+            style={{
+              backgroundImage: 'linear-gradient(90deg, hsl(199 89% 48%) 0%, hsl(18 85% 60%) 100%)'
+            }}
+          >
             {result.substring(index, index + word.length)}
           </span>
         );
@@ -64,16 +70,28 @@ export const CardCTA = ({
     <section className={`${sectionClassName} relative overflow-hidden`}>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* Dark card with subtle border */}
-          <div className="bg-[hsl(210_45%_14%)] border border-primary/30 rounded-2xl p-8 md:p-12 lg:p-14 shadow-2xl transition-all duration-300 hover:border-primary/50 group">
+          {/* Dark navy card with subtle orange border - matching reference */}
+          <div 
+            className="relative rounded-2xl p-8 md:p-12 lg:p-14 transition-all duration-300 group"
+            style={{
+              backgroundColor: 'hsl(215 40% 13%)',
+              border: '1px solid hsla(18, 85%, 60%, 0.35)',
+              boxShadow: '0 0 40px -10px hsla(18, 85%, 60%, 0.15)'
+            }}
+          >
             <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
               {/* Left: Photo + Name */}
               <div className="flex-shrink-0 text-center">
                 <div className="relative inline-block">
-                  {/* Subtle ring around photo */}
-                  <div className="absolute -inset-1.5 rounded-full bg-gradient-to-br from-muted-foreground/40 to-muted-foreground/20" />
+                  {/* Subtle gray ring around photo - matching reference */}
+                  <div 
+                    className="absolute -inset-1 rounded-full"
+                    style={{
+                      background: 'linear-gradient(135deg, hsl(210 20% 40%) 0%, hsl(210 20% 25%) 100%)'
+                    }}
+                  />
                   {/* Photo container */}
-                  <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden">
+                  <div className="relative w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden">
                     <img 
                       src={baseContactCTA.image} 
                       alt={baseContactCTA.name} 
@@ -94,11 +112,15 @@ export const CardCTA = ({
                   {description}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 items-center md:items-start">
-                  {/* Gradient CTA Button */}
+                  {/* Gradient CTA Button - orange to blue like reference */}
                   <Button 
                     size="xl" 
                     asChild 
-                    className="bg-gradient-to-r from-primary via-[hsl(35_90%_55%)] to-[hsl(199_89%_48%)] hover:opacity-90 text-white font-semibold shadow-lg shadow-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/40 border-0 px-8"
+                    className="border-0 px-8 py-6 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:opacity-90 hover:shadow-xl"
+                    style={{
+                      background: 'linear-gradient(90deg, hsl(18 85% 55%) 0%, hsl(35 90% 55%) 40%, hsl(199 89% 48%) 100%)',
+                      boxShadow: '0 8px 30px -8px hsla(18, 85%, 50%, 0.5)'
+                    }}
                   >
                     {buttonHref.startsWith('http') ? (
                       <a href={buttonHref} target="_blank" rel="noopener noreferrer">
@@ -112,12 +134,12 @@ export const CardCTA = ({
                       </Link>
                     )}
                   </Button>
-                  {/* Outlined Phone Button */}
+                  {/* Outlined Phone Button - subtle border like reference */}
                   <Button 
                     variant="outline" 
                     size="xl" 
                     asChild 
-                    className="border-muted-foreground/40 hover:border-foreground/60 hover:bg-transparent text-foreground"
+                    className="border-muted-foreground/30 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent px-6"
                   >
                     <a href="tel:+19258863724">
                       <Phone className="mr-2 w-5 h-5" />
