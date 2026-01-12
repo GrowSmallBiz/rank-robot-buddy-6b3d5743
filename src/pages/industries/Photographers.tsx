@@ -121,42 +121,68 @@ const photographyAdCreatives = [
   }
 ];
 
-// Merged Reality Section - 5 key challenges with mixed visual styles
+// Import AI Platform Icons
+import { GeminiIcon, ChatGPTIcon, PerplexityIcon, GrokIcon, CopilotIcon, GoogleAIIcon } from "@/components/icons/AIplatformIcons";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+
+// AI Platforms Data
+const aiPlatforms = [
+  { name: "ChatGPT", icon: ChatGPTIcon },
+  { name: "Gemini", icon: GeminiIcon },
+  { name: "Perplexity", icon: PerplexityIcon },
+  { name: "Grok", icon: GrokIcon },
+  { name: "Copilot", icon: CopilotIcon },
+  { name: "Google AI", icon: GoogleAIIcon },
+];
+
+// Merged Reality Section - 6 key challenges with mixed visual styles
 const realityChallenges = [
   {
     icon: Calendar,
     title: "Empty Calendar Syndrome",
     description: "Feast-or-famine cycle where some months are packed while others have empty slots and zero inquiries.",
-    image: signalEmptyCalendar,
-    hasImage: true
+    image: challengeEmptyCalendar,
+    hasImage: true,
+    showAILogos: false
   },
   {
     icon: Users,
     title: "Referral Dependency",
     description: "Word-of-mouth is great—until it slows down. No control over your growth means unpredictable income.",
     image: challengeReferralHandoff,
-    hasImage: true
+    hasImage: true,
+    showAILogos: false
   },
   {
     icon: Search,
     title: "Invisible to Google",
     description: "Less talented photographers outranking you online while your stunning portfolio sits unseen.",
     image: signalGoogleInvisible,
-    hasImage: true
+    hasImage: true,
+    showAILogos: false
   },
   {
-    icon: DollarSign,
-    title: "Racing to the Bottom",
-    description: "Competing on price instead of artistry—attracting bargain hunters, not dream clients.",
-    image: signalPriceRace,
-    hasImage: true
+    icon: Bot,
+    title: "AI Search Is Not Recommending You",
+    description: "ChatGPT, Gemini, and Perplexity are answering 'best photographer near me'—but they're not mentioning you.",
+    hasImage: false,
+    showAILogos: true
   },
   {
     icon: Instagram,
     title: "Social Media Burnout",
     description: "Likes are coming, but not paying the bills. Hours spent posting with minimal bookings—exhausting effort for little return.",
     image: signalSocialBurnout,
-    hasImage: true
+    hasImage: true,
+    showAILogos: false
+  },
+  {
+    icon: TrendingUp,
+    title: "Less Talented Photographers Outranking You",
+    description: "Photographers with inferior work are showing up first in search results because they understand SEO—and you don't.",
+    image: challengeGoogleRankings,
+    hasImage: true,
+    showAILogos: false
   }
 ];
 
@@ -791,15 +817,14 @@ const Photographers = () => {
             </h3>
           </SectionHeader>
 
-          {/* All Image Cards - 3 top, 2 bottom */}
-          <div className="space-y-6 mb-12">
-            {/* Top Row - 3 Image Cards */}
-            <div className="grid md:grid-cols-3 gap-6">
-              {realityChallenges.slice(0, 3).map((challenge, i) => (
-                <div 
-                  key={i} 
-                  className="group relative bg-card rounded-2xl overflow-hidden border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10"
-                >
+          {/* All 6 Cards - 3 per row */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {realityChallenges.map((challenge, i) => (
+              <div 
+                key={i} 
+                className="group relative bg-card rounded-2xl overflow-hidden border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10"
+              >
+                {challenge.hasImage ? (
                   <div className="relative h-48 overflow-hidden">
                     <img 
                       src={challenge.image} 
@@ -816,33 +841,23 @@ const Photographers = () => {
                       <span className="text-white text-xs font-bold">!</span>
                     </div>
                   </div>
-
-                  <div className="p-5">
-                    <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-amber-500 transition-colors">
-                      {challenge.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {challenge.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Bottom Row - 2 Image Cards (centered) */}
-            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-              {realityChallenges.slice(3, 5).map((challenge, i) => (
-                <div 
-                  key={i} 
-                  className="group relative bg-card rounded-2xl overflow-hidden border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10"
-                >
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src={challenge.image} 
-                      alt={challenge.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
+                ) : (
+                  // AI Platform Logos Card
+                  <div className="relative h-48 bg-gradient-to-br from-card via-card to-muted/50 flex items-center justify-center p-6">
+                    <div className="grid grid-cols-3 gap-4">
+                      {aiPlatforms.map((platform, idx) => {
+                        const IconComponent = platform.icon;
+                        return (
+                          <div 
+                            key={idx}
+                            className="w-12 h-12 rounded-xl bg-background/80 border border-amber-500/30 flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-300 hover:border-amber-500/60"
+                            title={platform.name}
+                          >
+                            <IconComponent size={24} />
+                          </div>
+                        );
+                      })}
+                    </div>
                     
                     <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-amber-500/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
                       <challenge.icon className="w-5 h-5 text-white" />
@@ -852,80 +867,65 @@ const Photographers = () => {
                       <span className="text-white text-xs font-bold">!</span>
                     </div>
                   </div>
+                )}
 
-                  <div className="p-5">
-                    <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-amber-500 transition-colors">
-                      {challenge.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {challenge.description}
-                    </p>
-                  </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-amber-500 transition-colors">
+                    {challenge.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {challenge.description}
+                  </p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
-          {/* Human CTA Card */}
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 rounded-3xl p-8 md:p-12 shadow-2xl shadow-amber-500/30">
-            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
-              {/* Left: Photo + Name */}
-              <div className="flex-shrink-0 text-center md:pl-4">
-                <div className="relative inline-block">
-                  <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-white via-amber-200 to-white animate-ring-spin opacity-80" />
-                  <div className="absolute -inset-4 rounded-full bg-white/20 blur-xl animate-pulse-glow" />
-                  <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-white/40 to-amber-200/40">
-                    <img
-                      src={baseContactCTA.image}
-                      alt={baseContactCTA.name}
-                      className="w-full h-full rounded-full object-cover"
+          {/* Human CTA Card - matching Realtors page styling */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-card/80 backdrop-blur-sm border-2 border-primary/50 rounded-3xl p-8 md:p-12 shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/70 group">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                {/* Photo */}
+                <div className="flex-shrink-0 text-center">
+                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg group-hover:border-primary/50 transition-all duration-300">
+                    <img 
+                      src={subrataHeadshot} 
+                      alt="Subrata Guha" 
+                      className="w-full h-full object-cover"
                     />
                   </div>
+                  <h4 className="mt-4 text-lg font-display font-semibold text-foreground">Subrata Guha</h4>
+                  <p className="text-sm text-muted-foreground">Founder, GrowSmallBiz</p>
                 </div>
-                <h3 className="mt-5 text-lg font-display font-semibold text-white">
-                  {baseContactCTA.name}
-                </h3>
-                <p className="text-sm text-white/70">{baseContactCTA.role}</p>
-              </div>
-
-              {/* Right: CTA Content */}
-              <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
-                <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-3">
-                  Ready to take control of your booking pipeline?
-                </h2>
-                <p className="text-white/80 mb-4 max-w-lg">
-                  Let's discuss how we can help you attract more dream clients and fill your calendar consistently.
-                </p>
-                <div className="flex items-center gap-2 mb-6">
-                  <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-                  </span>
-                  <span className="text-sm text-white/90 font-medium">Takes 2 mins to schedule</span>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Button 
-                    size="lg" 
-                    variant="secondary" 
-                    asChild 
-                    className="group transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                  >
-                    <Link to="/free-assessment?industry=photographer" className="inline-flex items-center gap-2">
-                      Get Your Custom Growth Strategy
-                      <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
-                    </Link>
-                  </Button>
-                  <Button 
-                    size="lg" 
-                    variant="outline" 
-                    asChild 
-                    className="border-white/30 text-white hover:bg-white/10 hover:text-white transition-all duration-300"
-                  >
-                    <a href="tel:+19258863724" className="inline-flex items-center gap-2">
-                      <Phone className="w-4 h-4" />
-                      Call +1 (925) 886-3724
-                    </a>
-                  </Button>
+                
+                {/* Content */}
+                <div className="flex-1 text-center md:text-left">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
+                    Ready to take control of your{" "}
+                    <span className="text-gradient">booking pipeline</span>?
+                  </h2>
+                  <p className="text-xl text-muted-foreground mb-6">
+                    Let's discuss how we can help you attract more dream clients and fill your calendar consistently.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                    <Button variant="hero" size="xl" asChild>
+                      <Link to="/free-assessment?industry=photographer">
+                        Get Your Custom Growth Strategy
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Link>
+                    </Button>
+                    <Button 
+                      size="lg" 
+                      variant="outline" 
+                      asChild 
+                      className="border-muted-foreground/30 hover:bg-muted/50 transition-all duration-300"
+                    >
+                      <a href="tel:+19258863724" className="inline-flex items-center gap-2">
+                        <Phone className="w-4 h-4" />
+                        Call +1 (925) 886-3724
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
