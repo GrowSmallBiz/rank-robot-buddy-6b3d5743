@@ -76,6 +76,12 @@ import challengeReferralHandoff from "@/assets/challenge-referral-handoff.jpg";
 import challengeGoogleRankings from "@/assets/challenge-google-rankings.jpg";
 import challengePriceShopper from "@/assets/challenge-price-shopper.jpg";
 
+// Growth Signal Images
+import signalEmptyCalendar from "@/assets/signal-empty-calendar.jpg";
+import signalPriceRace from "@/assets/signal-price-race.jpg";
+import signalGoogleInvisible from "@/assets/signal-google-invisible.jpg";
+import signalSocialBurnout from "@/assets/signal-social-burnout.jpg";
+
 // Photography Ad Creatives Data
 const photographyAdCreatives = [
   {
@@ -143,14 +149,32 @@ const photographerChallenges = [
   }
 ];
 
-// When to Consider Digital Growth
+// When to Consider Digital Growth - Condensed to 4 key signals
 const growthSignals = [
-  "Personal networking alone isn't filling your session calendar",
-  "Referrals are slowing down or inconsistent month-to-month",
-  "You're competing on price instead of value and artistry",
-  "Less talented photographers are outranking you on Google",
-  "You can't predict revenue more than a few weeks out",
-  "Spending hours on social media with minimal bookings"
+  {
+    icon: Calendar,
+    title: "Empty Calendar Syndrome",
+    description: "Personal networking alone isn't filling your session calendar—unpredictable income week to week.",
+    image: signalEmptyCalendar
+  },
+  {
+    icon: DollarSign,
+    title: "The Price Race to Bottom",
+    description: "Competing on price instead of value and artistry—attracting bargain hunters, not dream clients.",
+    image: signalPriceRace
+  },
+  {
+    icon: Search,
+    title: "Invisible Online Presence",
+    description: "Less talented photographers outranking you on Google while your portfolio sits unseen.",
+    image: signalGoogleInvisible
+  },
+  {
+    icon: Instagram,
+    title: "Social Media Burnout",
+    description: "Spending hours posting content with minimal bookings—exhausting effort with little return.",
+    image: signalSocialBurnout
+  }
 ];
 
 // Photography Genre Strategies for SEO
@@ -807,43 +831,67 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* When to Consider Digital Growth */}
-      <section className="py-20 relative">
-        <div className="absolute inset-0 section-glow" />
+      {/* When Referrals Aren't Enough - Visual Cards */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-amber-500/5 to-background" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                When Referrals Aren't Enough
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Personal networking and word-of-mouth are great—until they're not filling your calendar. 
-                If any of these sound familiar, it's time for a digital growth strategy.
-              </p>
-            </div>
+          <SectionHeader
+            subtitle="Warning Signs"
+            title="When Referrals"
+            titleHighlight="Aren't Enough"
+            description="Personal networking and word-of-mouth are great—until they're not filling your calendar. If any of these resonate, it's time for a digital growth strategy."
+          />
 
-            <div className="bg-card border border-border rounded-2xl p-8">
-              <div className="grid md:grid-cols-2 gap-4">
-                {growthSignals.map((signal, i) => (
-                  <div key={i} className="flex items-start gap-3 p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl">
-                    <div className="w-6 h-6 rounded-full bg-amber-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-amber-500 text-sm font-bold">!</span>
-                    </div>
-                    <p className="text-foreground text-sm">{signal}</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {growthSignals.map((signal, i) => (
+              <div 
+                key={i} 
+                className="group relative bg-card rounded-2xl overflow-hidden border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/10"
+              >
+                {/* Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={signal.image} 
+                    alt={signal.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
+                  
+                  {/* Icon Badge */}
+                  <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-amber-500/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                    <signal.icon className="w-5 h-5 text-white" />
                   </div>
-                ))}
-              </div>
 
-              <div className="mt-8 pt-8 border-t border-border text-center">
-                <p className="text-xl font-display font-semibold text-primary mb-4">
-                  Ready to take control of your booking pipeline?
-                </p>
-                <Button variant="hero" asChild>
-                  <Link to="/free-assessment?industry=photographer">
-                    Get Your Custom Growth Strategy
-                  </Link>
-                </Button>
+                  {/* Warning indicator */}
+                  <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-amber-500 flex items-center justify-center animate-pulse">
+                    <span className="text-white text-xs font-bold">!</span>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-amber-500 transition-colors">
+                    {signal.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {signal.description}
+                  </p>
+                </div>
               </div>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="text-center">
+            <div className="inline-flex flex-col items-center gap-4 bg-card/80 backdrop-blur-sm border border-amber-500/30 rounded-2xl px-8 py-6">
+              <p className="text-xl font-display font-semibold text-foreground">
+                Ready to take control of your <span className="text-amber-500">booking pipeline</span>?
+              </p>
+              <Button variant="hero" size="lg" asChild className="bg-amber-500 hover:bg-amber-600">
+                <Link to="/free-assessment?industry=photographer">
+                  Get Your Custom Growth Strategy <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
