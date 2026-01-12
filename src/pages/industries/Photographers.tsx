@@ -333,6 +333,18 @@ const technicalSEOSections = [
     ]
   },
   {
+    title: "Agentic AI Workflow",
+    icon: Bot,
+    image: seoDashboardImage,
+    items: [
+      "Automated Technical Fix Deployment",
+      "AI-Powered Issue Detection & Resolution",
+      "Real-Time SEO Health Monitoring",
+      "Zero Manual Intervention Required"
+    ],
+    note: "Our AI agents continuously scan your site for technical issues and deploy fixes automatically—saving you hours of manual work while keeping your SEO in peak condition."
+  },
+  {
     title: "Instant Indexing",
     icon: Zap,
     image: googlePpcScreenshot,
