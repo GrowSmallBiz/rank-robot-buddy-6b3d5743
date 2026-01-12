@@ -52,7 +52,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, photographerBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { CardCTA, PersonCTA } from "@/components/services";
+import { CardCTA, PersonCTA, FloatingCTA } from "@/components/services";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
@@ -897,6 +897,16 @@ const Photographers = () => {
       </Helmet>
       
       <Header />
+
+      {/* Floating CTA */}
+      <FloatingCTA
+        title="Ready for Photography Marketing That Fills Your Calendar?"
+        description="Let's discuss a custom photography marketing strategy to attract dream clients and book more sessions consistently."
+        buttonText="Get Your Custom Growth Strategy"
+        buttonHref="/free-assessment?industry=photographer"
+        accentWords={["Fills Your Calendar?"]}
+        showAfterScroll={600}
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-24 relative overflow-hidden">
