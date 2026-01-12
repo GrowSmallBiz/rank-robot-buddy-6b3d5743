@@ -783,7 +783,11 @@ const Photographers = () => {
             title="Photography Marketing"
             titleHighlight="Challenges"
             description="Even the most talented photographers struggle to fill their calendars. If any of these resonate, it's time for a digital growth strategy."
-          />
+          >
+            <h3 className="text-xl md:text-2xl font-display text-muted-foreground mt-2">
+              Why Talent Alone Isn't Enough
+            </h3>
+          </SectionHeader>
 
           {/* Mixed Layout - 3 image cards top, 2 icon cards bottom */}
           <div className="space-y-6 mb-12">
