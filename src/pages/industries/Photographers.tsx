@@ -94,13 +94,21 @@ import articleScoreInsights from "@/assets/article-score-insights.png";
 import articleStructure from "@/assets/article-structure.png";
 import articleKeywords from "@/assets/article-keywords.png";
 import articleCompetitors from "@/assets/article-competitors.png";
+import contentAgents from "@/assets/content-agents.png";
+import contentRefiners from "@/assets/content-refiners.png";
 
-// Article quality images for Generate Articles section
-const articleQualityImages = [
+// Content Insights images
+const contentInsightsImages = [
   { src: articleScoreInsights, alt: "Content scoring insights" },
   { src: articleStructure, alt: "Article structure analysis" },
   { src: articleKeywords, alt: "Keyword optimization" },
   { src: articleCompetitors, alt: "Competitor analysis" }
+];
+
+// Content Agents & Refiners images
+const contentAgentsRefinersImages = [
+  { src: contentAgents, alt: "Content Agents - Create and improve content" },
+  { src: contentRefiners, alt: "Content Refiners - Polish and optimize" }
 ];
 const photographyAdCreatives = [
   {
@@ -1289,7 +1297,7 @@ const Photographers = () => {
                 </div>
               </GlowCard>
 
-              {/* Generate Articles - Full Width with 4 Images */}
+              {/* Generate Articles - Full Width with 3 Categories */}
               <GlowCard className="p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
@@ -1298,19 +1306,46 @@ const Photographers = () => {
                   <h5 className="font-bold text-foreground">{contentStrategy[1].title}</h5>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">{contentStrategy[1].description}</p>
-                <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-4">
+                <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-6">
                   {contentStrategy[1].note}
                 </p>
-                <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
-                  {articleQualityImages.map((img, i) => (
-                    <div key={i} className="rounded-lg overflow-hidden border border-border/50">
-                      <img 
-                        src={img.src} 
-                        alt={img.alt}
-                        className="w-full h-auto object-cover"
-                      />
-                    </div>
-                  ))}
+                
+                {/* Content Insights */}
+                <div className="mb-6">
+                  <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
+                    <BarChart3 className="w-4 h-4 text-amber-500" />
+                    Content Insights
+                  </h6>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    {contentInsightsImages.map((img, i) => (
+                      <div key={i} className="rounded-lg overflow-hidden border border-border/50">
+                        <img 
+                          src={img.src} 
+                          alt={img.alt}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Content Agents & Content Refiners */}
+                <div>
+                  <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-amber-500" />
+                    Content Agents & Content Refiners
+                  </h6>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {contentAgentsRefinersImages.map((img, i) => (
+                      <div key={i} className="rounded-lg overflow-hidden border border-border/50">
+                        <img 
+                          src={img.src} 
+                          alt={img.alt}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </GlowCard>
             </div>
