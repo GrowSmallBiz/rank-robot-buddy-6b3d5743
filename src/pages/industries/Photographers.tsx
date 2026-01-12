@@ -105,6 +105,7 @@ import localSeoImage from "@/assets/local-seo.png";
 import seoDashboardImage from "@/assets/seo-dashboard-metrics.png";
 import aeoServiceImage from "@/assets/aeo-service.png";
 import geoServiceImage from "@/assets/geo-service.png";
+import googlePpcScreenshot from "@/assets/ad-screenshot-google-ppc.png";
 
 // Content Insights images
 const contentInsightsImages = [
@@ -334,7 +335,7 @@ const technicalSEOSections = [
   {
     title: "Instant Indexing",
     icon: Zap,
-    image: seoDashboardImage,
+    image: googlePpcScreenshot,
     items: [
       { text: "Google - GSC Instant Indexing", logo: "google" },
       { text: "Bing - IndexNow Integration", logo: "bing" }
