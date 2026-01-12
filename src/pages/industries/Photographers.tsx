@@ -71,6 +71,9 @@ import adCreativeSenior from "@/assets/ad-creative-senior-portrait.jpg";
 import adCreativeWedding from "@/assets/ad-creative-wedding.jpg";
 import adCreativeBranding from "@/assets/ad-creative-branding-headshot.jpg";
 
+// Portfolio Website Image
+import portfolioPhotographerWebsite from "@/assets/portfolio-photographer-website.jpg";
+
 // Challenge Images
 import challengeEmptyCalendar from "@/assets/challenge-empty-calendar.jpg";
 import challengeReferralHandoff from "@/assets/challenge-referral-handoff.jpg";
@@ -1007,26 +1010,58 @@ const Photographers = () => {
             description="Everything you need to attract, book, and retain dream clients"
           />
 
-          {/* Website & AI SEO */}
+          {/* Section 1: Conversion-Focused Website Design for Photographers */}
           <div className="mb-20">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Globe className="w-5 h-5 text-primary" />
+            <SectionHeader
+              subtitle="Professional Photography Websites"
+              title="High-Converting Photography Website Design"
+              titleHighlight="That Books Clients"
+              description="Custom portfolio websites built to showcase your work beautifully and convert visitors into paying clients"
+            />
+
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+              <div>
+                <img 
+                  src={portfolioPhotographerWebsite} 
+                  alt="Photography website design example showing portfolio layout" 
+                  className="rounded-2xl shadow-2xl w-full"
+                />
               </div>
-              <h3 className="text-2xl font-display font-bold text-foreground">Conversion-Focused Website & AI SEO</h3>
+              <div>
+                <h3 className="text-xl font-display font-bold text-foreground mb-4">
+                  Portfolio Websites That Convert Visitors Into Booked Clients
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  We build fast, beautiful portfolio sites designed specifically for photographers. 
+                  Every element is optimized to showcase your work and guide potential clients toward booking.
+                </p>
+                <ul className="space-y-3">
+                  {websiteFeatures.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3 text-sm">
+                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
+          </div>
 
-            <p className="text-muted-foreground mb-8 max-w-3xl">
-              A comprehensive SEO and website strategy that works for all photography genres—from portrait and wedding 
-              to headshot and branding photography. We optimize every aspect of your online presence.
-            </p>
+          {/* Section 2: AI-Powered SEO for Photographers */}
+          <div className="mb-20">
+            <SectionHeader
+              subtitle="Photography SEO Services"
+              title="AI-Powered SEO for"
+              titleHighlight="Photographers"
+              description="Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers"
+            />
 
-            {/* 1. Strategy - Keywords & Competitors Research */}
+            {/* Strategy - Keywords & Competitors Research */}
             <div className="mb-12">
-              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+              <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                 <Search className="w-5 h-5 text-primary" />
-                Strategy: Keywords & Competitors Research
-              </h4>
+                Keyword Research & Competitor Analysis
+              </h3>
               <div className="grid md:grid-cols-3 gap-6">
                 {Object.entries(keywordExamples).map(([key, genre]) => {
                   const IconComponent = genre.icon;
@@ -1060,39 +1095,7 @@ const Photographers = () => {
               </div>
             </div>
 
-            {/* 2. Conversion Focused Website Design */}
-            <div className="mb-12">
-              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-                <Globe className="w-5 h-5 text-primary" />
-                Conversion Focused Website Design
-              </h4>
-              <GlowCard className="p-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      We build fast, beautiful portfolio sites designed to convert visitors into booked clients.
-                    </p>
-                    <ul className="space-y-2">
-                      {websiteFeatures.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm">
-                          <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                          <span className="text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <div className="w-full max-w-xs p-6 bg-muted/50 rounded-xl border border-border text-center">
-                      <Globe className="w-12 h-12 text-primary mx-auto mb-3" />
-                      <p className="text-sm font-medium text-foreground">Your Portfolio, Optimized</p>
-                      <p className="text-xs text-muted-foreground mt-1">Fast, mobile-first, conversion-focused</p>
-                    </div>
-                  </div>
-                </div>
-              </GlowCard>
-            </div>
-
-            {/* 3. Technical SEO */}
+            {/* Technical SEO */}
             <div className="mb-12">
               <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                 <FileSearch className="w-5 h-5 text-primary" />
