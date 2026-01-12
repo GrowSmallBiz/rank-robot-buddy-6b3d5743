@@ -1271,7 +1271,7 @@ const Photographers = () => {
             <div className="mb-12">
               <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
                 <FileSearch className="w-5 h-5 text-primary" />
-                Content Strategy
+                Content Strategy Google & AI Wants to Read
               </h4>
               
               {/* Build a Topical Map - Full Width */}
