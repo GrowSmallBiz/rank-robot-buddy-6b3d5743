@@ -113,6 +113,7 @@ import socialMediaHero from "@/assets/social-media-hero.jpg";
 import llmVisibilitySentiment from "@/assets/llm-visibility-sentiment.png";
 import llmVisibilityDashboard from "@/assets/llm-visibility-dashboard.png";
 import pressReleaseDistribution from "@/assets/press-release-distribution.png";
+import backlinkAnalyticsDashboard from "@/assets/backlink-analytics-dashboard.png";
 
 // Content Insights images
 const contentInsightsImages = [
@@ -396,7 +397,7 @@ const llmVisibilityServices = [
 // Online Authority Services
 const onlineAuthorityServices = [
   { title: "Publish Press Release", description: "Get featured in news outlets to build credibility and backlinks", icon: Megaphone, image: pressReleaseDistribution },
-  { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe, image: linkBuildingImage }
+  { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe, image: backlinkAnalyticsDashboard }
 ];
 
 // Color configurations
