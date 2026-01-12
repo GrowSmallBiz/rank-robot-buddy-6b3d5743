@@ -80,7 +80,7 @@ import challengePriceShopper from "@/assets/challenge-price-shopper.jpg";
 import signalEmptyCalendar from "@/assets/signal-empty-calendar.jpg";
 import signalPriceRace from "@/assets/signal-price-race.jpg";
 import signalGoogleInvisible from "@/assets/signal-google-invisible.jpg";
-import signalSocialBurnout from "@/assets/signal-social-burnout.jpg";
+import signalSocialBurnout from "@/assets/social-media-burnout-female.jpg";
 
 // Photography Ad Creatives Data
 const photographyAdCreatives = [
