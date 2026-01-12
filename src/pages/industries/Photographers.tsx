@@ -156,7 +156,7 @@ const realityChallenges = [
   },
   {
     icon: Search,
-    title: "Google Ranks Less Talented Photographers Above You",
+    title: "Google Ranks Shoot & Burn Photographers Above You",
     description: "Your stunning portfolio sits unseen while photographers with inferior work dominate search results.",
     image: signalGoogleInvisible,
     hasImage: true,
