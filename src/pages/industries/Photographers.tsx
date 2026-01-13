@@ -2602,6 +2602,156 @@ const Photographers = () => {
             </div>
           </div>
 
+          {/* Email Nurture Importance - Moved up after Autopilot */}
+          <div className="mb-16 mt-16">
+            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
+              Why Email Nurture is <span className="text-primary">Critical for Photography Business</span>
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              {emailNurturePoints.map((point, i) => (
+                <GlowCard key={i} className="p-6">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <point.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">{point.title}</h4>
+                  <p className="text-sm text-muted-foreground">{point.description}</p>
+                </GlowCard>
+              ))}
+            </div>
+
+            {/* Sample Email Nurture Workflow - 5 Day Sequence */}
+            <div className="mt-10">
+              <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-3">Sample Automation</p>
+              <h4 className="text-lg font-bold text-foreground mb-6 text-center">
+                5-Day Email Nurture Sequence: <span className="text-primary">Inquiry to Close</span>
+              </h4>
+              
+              <GlowCard className="p-6 border-purple-500/30 bg-gradient-to-b from-purple-500/5 to-transparent">
+                {/* Workflow Header */}
+                <div className="flex items-center gap-3 mb-6 pb-4 border-b border-border/50">
+                  <div className="w-10 h-10 rounded-lg bg-purple-500 flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Photography Inquiry Nurture Workflow</p>
+                    <p className="text-xs text-muted-foreground">Triggered when new inquiry is received</p>
+                  </div>
+                  <div className="ml-auto flex items-center gap-2">
+                    <span className="px-2 py-1 bg-emerald-500/20 text-emerald-400 text-xs rounded-full font-medium">Active</span>
+                  </div>
+                </div>
+
+                {/* Workflow Steps */}
+                <div className="space-y-4">
+                  {/* Day 0 - Immediate */}
+                  <div className="flex items-start gap-4">
+                    <div className="flex flex-col items-center">
+                      <div className="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center text-white font-bold text-sm">
+                        0
+                      </div>
+                      <div className="w-0.5 h-8 bg-border/50 mt-2" />
+                    </div>
+                    <div className="flex-1 bg-muted/30 rounded-lg p-4 border border-border/50">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-medium text-emerald-400 uppercase tracking-wider">Immediate</span>
+                        <span className="text-xs text-muted-foreground">Email + SMS</span>
+                      </div>
+                      <p className="font-medium text-foreground text-sm">Welcome & Availability Check</p>
+                      <p className="text-xs text-muted-foreground mt-1">Thank them for reaching out, confirm receipt, ask about their date/event details</p>
+                    </div>
+                  </div>
+
+                  {/* Day 1 */}
+                  <div className="flex items-start gap-4">
+                    <div className="flex flex-col items-center">
+                      <div className="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold text-sm">
+                        1
+                      </div>
+                      <div className="w-0.5 h-8 bg-border/50 mt-2" />
+                    </div>
+                    <div className="flex-1 bg-muted/30 rounded-lg p-4 border border-border/50">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-medium text-purple-400 uppercase tracking-wider">Day 1</span>
+                        <span className="text-xs text-muted-foreground">Email</span>
+                      </div>
+                      <p className="font-medium text-foreground text-sm">Portfolio Showcase Email</p>
+                      <p className="text-xs text-muted-foreground mt-1">Share 3-5 best images from similar sessions, link to full gallery, include client testimonial</p>
+                    </div>
+                  </div>
+
+                  {/* Day 2 */}
+                  <div className="flex items-start gap-4">
+                    <div className="flex flex-col items-center">
+                      <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold text-sm">
+                        2
+                      </div>
+                      <div className="w-0.5 h-8 bg-border/50 mt-2" />
+                    </div>
+                    <div className="flex-1 bg-muted/30 rounded-lg p-4 border border-border/50">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-medium text-blue-400 uppercase tracking-wider">Day 2</span>
+                        <span className="text-xs text-muted-foreground">Email</span>
+                      </div>
+                      <p className="font-medium text-foreground text-sm">What to Expect Guide</p>
+                      <p className="text-xs text-muted-foreground mt-1">Prep guide PDF, session timeline, what to wear tips, location suggestions</p>
+                    </div>
+                  </div>
+
+                  {/* Day 3 */}
+                  <div className="flex items-start gap-4">
+                    <div className="flex flex-col items-center">
+                      <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-white font-bold text-sm">
+                        3
+                      </div>
+                      <div className="w-0.5 h-8 bg-border/50 mt-2" />
+                    </div>
+                    <div className="flex-1 bg-muted/30 rounded-lg p-4 border border-border/50">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-medium text-amber-400 uppercase tracking-wider">Day 3</span>
+                        <span className="text-xs text-muted-foreground">Email</span>
+                      </div>
+                      <p className="font-medium text-foreground text-sm">FAQ & Social Proof</p>
+                      <p className="text-xs text-muted-foreground mt-1">Answer common questions, share Google reviews, include video testimonial if available</p>
+                    </div>
+                  </div>
+
+                  {/* Day 5 */}
+                  <div className="flex items-start gap-4">
+                    <div className="flex flex-col items-center">
+                      <div className="w-10 h-10 rounded-full bg-rose-500 flex items-center justify-center text-white font-bold text-sm">
+                        5
+                      </div>
+                    </div>
+                    <div className="flex-1 bg-gradient-to-r from-rose-500/10 to-primary/10 rounded-lg p-4 border border-rose-500/30">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-medium text-rose-400 uppercase tracking-wider">Day 5 - Final</span>
+                        <span className="text-xs text-muted-foreground">Email + SMS</span>
+                      </div>
+                      <p className="font-medium text-foreground text-sm">Limited Availability + Booking CTA</p>
+                      <p className="text-xs text-muted-foreground mt-1">Create urgency with limited spots, include direct calendar link, offer limited-time bonus</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Workflow Footer */}
+                <div className="mt-6 pt-4 border-t border-border/50 flex items-center justify-between text-xs text-muted-foreground">
+                  <div className="flex items-center gap-4">
+                    <span className="flex items-center gap-1.5">
+                      <Mail className="w-3.5 h-3.5" /> 5 Emails
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <MessageSquare className="w-3.5 h-3.5" /> 2 SMS
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Clock className="w-3.5 h-3.5" /> 5 Day Sequence
+                    </span>
+                  </div>
+                  <span className="text-purple-400 font-medium">Avg. 34% Booking Rate</span>
+                </div>
+              </GlowCard>
+            </div>
+          </div>
+
           {/* Divider before marketing campaigns */}
           <div className="border-t border-border/50 pt-16 mb-12">
             <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
@@ -2739,23 +2889,6 @@ const Photographers = () => {
             })}
           </div>
 
-          {/* Email Nurture Importance */}
-          <div className="mb-16">
-            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Why Email Nurture is <span className="text-primary">Critical for Photography Business</span>
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              {emailNurturePoints.map((point, i) => (
-                <GlowCard key={i} className="p-6">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <point.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">{point.title}</h4>
-                  <p className="text-sm text-muted-foreground">{point.description}</p>
-                </GlowCard>
-              ))}
-            </div>
-          </div>
 
           {/* Seasonal Campaigns */}
           <div className="mb-16">
