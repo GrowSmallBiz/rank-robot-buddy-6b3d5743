@@ -653,8 +653,8 @@ const marketingCampaigns = [
       headline: "Mother's Day Mini Marathon",
       tagline: "[Event Date] — Celebrate the most important woman in your life",
       price: "$249",
-      originalPrice: "$399",
-      savings: "Save $150",
+      originalPrice: "$750",
+      savings: "Save $501",
       includes: ["30-minute portrait session", "Hair & Makeup included", "1 digitally edited image", "Additional images available for purchase"],
       urgency: "Limited Spots Available",
       cta: "Claim This Offer"
