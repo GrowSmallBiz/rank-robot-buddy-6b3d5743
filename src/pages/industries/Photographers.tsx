@@ -52,7 +52,10 @@ import {
   UserPlus,
   Mic,
   X,
-  CheckCircle
+  CheckCircle,
+  AlertTriangle,
+  CalendarCheck,
+  BookOpen
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -720,6 +723,77 @@ const emailNurturePoints = [
     title: "Automate Follow-ups",
     description: "Set it once and let automated sequences nurture leads while you focus on shooting and editing.",
     icon: RefreshCw
+  }
+];
+
+// Session Reminder Workflows - No-Show Reduction
+const sessionReminderWorkflows = [
+  {
+    sessionType: "Consultation Session",
+    icon: MessageSquare,
+    color: "emerald",
+    description: "Pre-meeting reminder sequence for discovery calls and consultations",
+    noShowImpact: "Missed consultations waste your prep time and delay their booking decision",
+    reminders: [
+      { timing: "3 days before", channels: ["email"], content: "Confirmation + what to prepare (vision board, outfit ideas, questions)" },
+      { timing: "1 day before", channels: ["email", "sms"], content: "Meeting link/directions + reminder to have decision-makers present" },
+      { timing: "2 hours before", channels: ["sms"], content: "Quick reminder with click-to-join link or address" }
+    ],
+    expectedReduction: "Up to 38%"
+  },
+  {
+    sessionType: "Portrait Session",
+    icon: Camera,
+    color: "purple",
+    description: "Pre-session reminder sequence for photo sessions",
+    noShowImpact: "No-shows mean lost revenue, wasted location reservations, and scheduling gaps",
+    reminders: [
+      { timing: "5 days before", channels: ["email"], content: "What to wear guide, location details, session timeline" },
+      { timing: "2 days before", channels: ["email", "sms"], content: "Weather backup plan, parking info, prep checklist" },
+      { timing: "Morning of", channels: ["sms"], content: "\"See you at [time]!\" with location pin and contact number" }
+    ],
+    expectedReduction: "Up to 38%"
+  },
+  {
+    sessionType: "Ordering Session (IPS)",
+    icon: DollarSign,
+    color: "amber",
+    description: "Pre-sales meeting reminder for in-person ordering appointments",
+    noShowImpact: "Missed IPS = delayed revenue, gallery expiration issues, decision fatigue",
+    reminders: [
+      { timing: "3 days before", channels: ["email"], content: "Preview gallery teaser, what to expect, bring decision-makers" },
+      { timing: "1 day before", channels: ["email", "sms"], content: "Appointment value reminder + wall space measurement prompt" },
+      { timing: "2 hours before", channels: ["sms"], content: "Excited to show you your images! See you soon at [location]" }
+    ],
+    expectedReduction: "Up to 38%"
+  }
+];
+
+// Research citations for no-show statistics
+const noShowResearchCitations = [
+  {
+    stat: "SMS reminders reduce no-shows by 38%",
+    source: "Imperial College London",
+    publication: "BMC Ophthalmology",
+    year: "2008"
+  },
+  {
+    stat: "15-30% of appointments result in no-shows",
+    source: "Sheffield Hallam University",
+    publication: "Patient Preference and Adherence (PMC)",
+    year: "2016"
+  },
+  {
+    stat: "98% of text messages are opened",
+    source: "Industry Research",
+    publication: "Mobile Marketing Association",
+    year: "2023"
+  },
+  {
+    stat: "Reminder systems reduce lost-to-follow-up by 60%",
+    source: "Cochrane Reviews",
+    publication: "Systematic Review Meta-Analysis",
+    year: "2016"
   }
 ];
 
@@ -2783,6 +2857,114 @@ const Photographers = () => {
                   <span className="text-purple-400 font-medium">Avg. 34% Booking Rate</span>
                 </div>
               </GlowCard>
+            </div>
+          </div>
+
+          {/* No-Show Reduction Section */}
+          <div className="mb-16 mt-16 border-t border-border/50 pt-16">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4 text-center">
+              Minimize No-Shows with <span className="text-primary">Session Reminder Automation</span>
+            </h3>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+              Every missed appointment costs you revenue and disrupts your schedule. Automated reminders keep clients committed and prepared.
+            </p>
+            
+            {/* Research Stats Banner */}
+            <div className="bg-gradient-to-r from-red-500/10 via-amber-500/10 to-emerald-500/10 rounded-2xl border border-amber-500/30 p-6 mb-10">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <AlertTriangle className="w-5 h-5 text-amber-500" />
+                <span className="text-sm font-semibold text-foreground uppercase tracking-wider">Research-Backed Statistics</span>
+              </div>
+              <div className="grid md:grid-cols-4 gap-6">
+                {noShowResearchCitations.map((citation, i) => (
+                  <div key={i} className="text-center">
+                    <p className="text-lg md:text-xl font-bold text-foreground mb-1">{citation.stat}</p>
+                    <p className="text-xs text-muted-foreground">
+                      — {citation.source}, {citation.publication} ({citation.year})
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Three Session Type Cards */}
+            <div className="grid lg:grid-cols-3 gap-6 mb-10">
+              {sessionReminderWorkflows.map((workflow, i) => {
+                const colors = colorConfig[workflow.color as keyof typeof colorConfig];
+                return (
+                  <GlowCard key={i} className={`p-6 ${colors.border} bg-gradient-to-b ${colors.bgLight} to-transparent`}>
+                    {/* Header */}
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className={`w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center`}>
+                        <workflow.icon className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-foreground">{workflow.sessionType}</h4>
+                        <p className="text-xs text-muted-foreground">{workflow.description}</p>
+                      </div>
+                    </div>
+
+                    {/* No-Show Impact Warning */}
+                    <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3 mb-4">
+                      <p className="text-xs text-red-400 flex items-start gap-2">
+                        <AlertTriangle className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                        {workflow.noShowImpact}
+                      </p>
+                    </div>
+
+                    {/* Reminder Timeline */}
+                    <div className="space-y-3 mb-4">
+                      {workflow.reminders.map((reminder, j) => (
+                        <div key={j} className="flex items-start gap-3">
+                          <div className={`w-8 h-8 rounded-full ${colors.bg} flex items-center justify-center shrink-0`}>
+                            <Clock className="w-4 h-4 text-white" />
+                          </div>
+                          <div className="flex-1">
+                            <div className="flex items-center justify-between mb-1">
+                              <span className={`text-xs font-semibold ${colors.text} uppercase tracking-wider`}>{reminder.timing}</span>
+                              <div className="flex items-center gap-1">
+                                {reminder.channels.includes("email") && (
+                                  <span className="flex items-center gap-0.5 text-xs text-purple-400">
+                                    <Mail className="w-3 h-3" />
+                                  </span>
+                                )}
+                                {reminder.channels.includes("sms") && (
+                                  <span className="flex items-center gap-0.5 text-xs text-emerald-400">
+                                    <MessageSquare className="w-3 h-3" />
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+                            <p className="text-xs text-muted-foreground">{reminder.content}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Expected Reduction */}
+                    <div className={`bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-3 text-center`}>
+                      <p className="text-sm font-semibold text-emerald-400">
+                        <CalendarCheck className="w-4 h-4 inline mr-1" />
+                        Reduce no-shows by {workflow.expectedReduction}
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-1">Based on Imperial College London research</p>
+                    </div>
+                  </GlowCard>
+                );
+              })}
+            </div>
+
+            {/* Key Takeaway */}
+            <div className="bg-card border border-border rounded-2xl p-6 text-center">
+              <div className="flex items-center justify-center gap-2 mb-3">
+                <BookOpen className="w-5 h-5 text-primary" />
+                <span className="font-semibold text-foreground">Why This Matters</span>
+              </div>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
+                A single no-show can cost you <span className="text-foreground font-medium">$200-$2,000+</span> in lost session revenue. 
+                With automated reminders achieving <span className="text-emerald-400 font-medium">up to 38% reduction in no-shows</span>, 
+                you could recover thousands annually while providing better client experience with prep reminders they'll actually appreciate.
+              </p>
             </div>
           </div>
 
