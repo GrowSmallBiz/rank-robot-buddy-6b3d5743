@@ -2207,14 +2207,251 @@ const Photographers = () => {
       </section>
 
       {/* AI Client Growth System - DARK */}
-      <section id="client-growth" className="py-24 bg-background scroll-mt-24">
+      <section id="client-growth" className="py-24 bg-gradient-to-b from-[#0a1628] to-background scroll-mt-24">
         <div className="container mx-auto px-4">
-          <SectionHeader
-            subtitle="AI Client Growth System"
-            title="Sample Funnels by"
-            titleHighlight="Photography Genre"
-            description="From first impression to repeat customer—automated workflows for every stage"
-          />
+          {/* H2 Title */}
+          <div className="text-center mb-16 animate-fade-up">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
+              Photographer's <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI Client Growth System</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Stop chasing leads manually. Build an automated system that attracts, nurtures, converts, and retains clients—while you focus on your craft.
+            </p>
+          </div>
+
+          {/* 5-Stage Client Journey Visual */}
+          <div className="mb-20">
+            <h3 className="text-xl font-bold text-foreground mb-8 text-center">
+              The 5 Stages of Your <span className="text-primary">Client Journey</span>
+            </h3>
+            <div className="relative">
+              {/* Connection Line (Desktop) */}
+              <div className="hidden lg:block absolute top-16 left-[10%] right-[10%] h-1 bg-gradient-to-r from-blue-500 via-purple-500 via-primary via-emerald-500 to-amber-500 rounded-full" />
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4">
+                {/* Stage 1: Awareness */}
+                <div className="relative bg-card border-2 border-blue-500/30 rounded-2xl p-6 hover:border-blue-500/60 transition-all hover:-translate-y-2 group">
+                  <div className="w-14 h-14 rounded-full bg-blue-500 flex items-center justify-center mb-4 mx-auto lg:mx-0 group-hover:scale-110 transition-transform">
+                    <Eye className="w-7 h-7 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-foreground mb-2 text-center lg:text-left">Awareness</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Strangers discover your brand through <span className="text-blue-400 font-medium">Google searches</span>, <span className="text-blue-400 font-medium">social media</span>, <span className="text-blue-400 font-medium">AI recommendations</span>, and <span className="text-blue-400 font-medium">paid ads</span>. They don't know you yet—but they're searching for what you offer.
+                  </p>
+                  <div className="mt-3 pt-3 border-t border-border">
+                    <p className="text-xs text-blue-400 italic">Goal: Get discovered by your ideal clients</p>
+                  </div>
+                </div>
+
+                {/* Stage 2: Prospect */}
+                <div className="relative bg-card border-2 border-purple-500/30 rounded-2xl p-6 hover:border-purple-500/60 transition-all hover:-translate-y-2 group">
+                  <div className="w-14 h-14 rounded-full bg-purple-500 flex items-center justify-center mb-4 mx-auto lg:mx-0 group-hover:scale-110 transition-transform">
+                    <Target className="w-7 h-7 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-foreground mb-2 text-center lg:text-left">Prospect</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Interested visitors land on your website. They're browsing your <span className="text-purple-400 font-medium">portfolio</span>, checking <span className="text-purple-400 font-medium">pricing</span>, reading <span className="text-purple-400 font-medium">reviews</span>. They're evaluating if you're the right fit—often comparing you to competitors.
+                  </p>
+                  <div className="mt-3 pt-3 border-t border-border">
+                    <p className="text-xs text-purple-400 italic">Goal: Build trust and stand out</p>
+                  </div>
+                </div>
+
+                {/* Stage 3: Lead */}
+                <div className="relative bg-card border-2 border-primary/30 rounded-2xl p-6 hover:border-primary/60 transition-all hover:-translate-y-2 group">
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mb-4 mx-auto lg:mx-0 group-hover:scale-110 transition-transform">
+                    <Mail className="w-7 h-7 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-foreground mb-2 text-center lg:text-left">Lead</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    They've submitted an <span className="text-primary font-medium">inquiry form</span> or <span className="text-primary font-medium">called your studio</span>. You have their contact info. This is the critical moment—<span className="text-primary font-medium">speed and nurturing</span> determine if they book or ghost.
+                  </p>
+                  <div className="mt-3 pt-3 border-t border-border">
+                    <p className="text-xs text-primary italic">Goal: Respond fast & nurture to booking</p>
+                  </div>
+                </div>
+
+                {/* Stage 4: Customer */}
+                <div className="relative bg-card border-2 border-emerald-500/30 rounded-2xl p-6 hover:border-emerald-500/60 transition-all hover:-translate-y-2 group">
+                  <div className="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center mb-4 mx-auto lg:mx-0 group-hover:scale-110 transition-transform">
+                    <Camera className="w-7 h-7 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-foreground mb-2 text-center lg:text-left">Customer</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    They <span className="text-emerald-400 font-medium">booked and paid</span>. Session complete. Happy client. But most photographers stop here—leaving massive revenue on the table by not <span className="text-emerald-400 font-medium">maximizing the relationship</span>.
+                  </p>
+                  <div className="mt-3 pt-3 border-t border-border">
+                    <p className="text-xs text-emerald-400 italic">Goal: Deliver & collect reviews</p>
+                  </div>
+                </div>
+
+                {/* Stage 5: Retain/Growth */}
+                <div className="relative bg-card border-2 border-amber-500/30 rounded-2xl p-6 hover:border-amber-500/60 transition-all hover:-translate-y-2 group">
+                  <div className="w-14 h-14 rounded-full bg-amber-500 flex items-center justify-center mb-4 mx-auto lg:mx-0 group-hover:scale-110 transition-transform">
+                    <Repeat className="w-7 h-7 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-foreground mb-2 text-center lg:text-left">Retain & Grow</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    The gold mine. <span className="text-amber-400 font-medium">Repeat bookings</span>, <span className="text-amber-400 font-medium">referrals</span>, <span className="text-amber-400 font-medium">upsells</span>. Anniversary sessions, family growth milestones, referral bonuses. Your past clients are your <span className="text-amber-400 font-medium">lowest-cost, highest-value</span> source of revenue.
+                  </p>
+                  <div className="mt-3 pt-3 border-t border-border">
+                    <p className="text-xs text-amber-400 italic">Goal: Turn one client into lifetime value</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Why Autopilot is Critical - Educational Section */}
+          <div className="mb-20">
+            <div className="text-center mb-10">
+              <span className="inline-block px-4 py-1.5 bg-primary/20 text-primary text-sm font-semibold rounded-full mb-4">
+                📚 Why This Matters
+              </span>
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+                Why Your Photography Business Needs <span className="text-primary">Autopilot</span>
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                The difference between a struggling photographer and a thriving one isn't talent—it's systems. Here's what the research shows:
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Block A: Speed-to-Lead */}
+              <GlowCard className="p-8 border-red-500/30 bg-gradient-to-b from-red-500/5 to-transparent">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-red-500 flex items-center justify-center shrink-0">
+                    <Clock className="w-7 h-7 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground">Speed-to-Lead</h4>
+                    <p className="text-sm text-red-400">The 5-Minute Rule</p>
+                  </div>
+                </div>
+                
+                {/* Research Stat */}
+                <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4 mb-6">
+                  <p className="text-sm text-foreground leading-relaxed">
+                    <span className="font-bold text-red-400">"Responding within 5 minutes makes you 100x more likely to connect compared to 30 minutes."</span>
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-2 italic">— InsideSales.com Lead Response Study</p>
+                </div>
+
+                {/* Pain Point */}
+                <div className="mb-6">
+                  <p className="text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <span className="text-red-500">⚠️</span> The Problem:
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    You're in a 2-hour family session when an inquiry hits. By the time you check your phone, that bride has already messaged 3 other photographers—and booked the one who responded first.
+                  </p>
+                </div>
+
+                {/* Solution */}
+                <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-4">
+                  <p className="text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <span className="text-emerald-500">✅</span> The Solution:
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    <span className="text-emerald-400 font-medium">AI Receptionist</span> auto-responds to every inquiry within seconds—24/7. Answers FAQs, shares pricing, and books consultations while you shoot.
+                  </p>
+                </div>
+              </GlowCard>
+
+              {/* Block B: Nurturing */}
+              <GlowCard className="p-8 border-purple-500/30 bg-gradient-to-b from-purple-500/5 to-transparent">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-purple-500 flex items-center justify-center shrink-0">
+                    <MessageSquare className="w-7 h-7 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground">Lead Nurturing</h4>
+                    <p className="text-sm text-purple-400">Why One Email Isn't Enough</p>
+                  </div>
+                </div>
+                
+                {/* Research Stat */}
+                <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-4 mb-6">
+                  <p className="text-sm text-foreground leading-relaxed">
+                    <span className="font-bold text-purple-400">"80% of sales require 5+ follow-ups, yet 44% of salespeople give up after just one contact."</span>
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-2 italic">— HubSpot Sales Research</p>
+                </div>
+
+                {/* Pain Point */}
+                <div className="mb-6">
+                  <p className="text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <span className="text-purple-500">⚠️</span> The Problem:
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Most photographers send one email with pricing and hope the lead books. When they don't hear back, they assume the lead wasn't interested. Meanwhile, that lead just needed more time and touchpoints.
+                  </p>
+                </div>
+
+                {/* Solution */}
+                <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-4">
+                  <p className="text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <span className="text-emerald-500">✅</span> The Solution:
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    <span className="text-emerald-400 font-medium">Automated email sequences</span> that send 5-7 strategic touchpoints over 2-3 weeks—testimonials, portfolio highlights, FAQs, and urgency triggers—converting cold leads into booked sessions.
+                  </p>
+                </div>
+              </GlowCard>
+
+              {/* Block C: Past Clients */}
+              <GlowCard className="p-8 border-amber-500/30 bg-gradient-to-b from-amber-500/5 to-transparent">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-amber-500 flex items-center justify-center shrink-0">
+                    <UserPlus className="w-7 h-7 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-foreground">Past Client Gold</h4>
+                    <p className="text-sm text-amber-400">Your Hidden Revenue Source</p>
+                  </div>
+                </div>
+                
+                {/* Research Stat */}
+                <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4 mb-6">
+                  <p className="text-sm text-foreground leading-relaxed">
+                    <span className="font-bold text-amber-400">"Acquiring a new customer costs 5-25x more than retaining an existing one."</span>
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-2 italic">— Harvard Business Review</p>
+                </div>
+
+                {/* Pain Point */}
+                <div className="mb-6">
+                  <p className="text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <span className="text-amber-500">⚠️</span> The Problem:
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Photographers spend thousands on ads chasing new leads while ignoring their database of past happy clients—people who already trust them, love their work, and have families that keep growing.
+                  </p>
+                </div>
+
+                {/* Solution */}
+                <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-4">
+                  <p className="text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                    <span className="text-emerald-500">✅</span> The Solution:
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    <span className="text-emerald-400 font-medium">Automated re-engagement campaigns</span>—session anniversary reminders, "your baby is turning 1" triggers, seasonal mini-session offers, and referral incentives that turn one booking into lifetime value.
+                  </p>
+                </div>
+              </GlowCard>
+            </div>
+          </div>
+
+          {/* Divider before existing funnels */}
+          <div className="border-t border-border/50 pt-16 mb-8">
+            <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
+            <h3 className="text-2xl font-display font-bold text-foreground text-center mb-8">
+              Sample Funnels by <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photography Genre</span>
+            </h3>
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-8">
+              From first impression to repeat customer—automated workflows tailored to your specialty
+            </p>
+          </div>
 
           {/* Funnel Visualizations - Shrinking Style */}
           <div className="grid lg:grid-cols-3 gap-6 mb-16">
