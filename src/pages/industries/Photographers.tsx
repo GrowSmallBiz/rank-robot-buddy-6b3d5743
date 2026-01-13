@@ -655,11 +655,11 @@ const marketingCampaigns = [
       price: "$199",
       originalPrice: "$299",
       savings: "Save $100",
-      includes: ["30-minute portrait session", "5 digitally edited images", "Print-ready files", "Online gallery"],
+      includes: ["30-minute portrait session", "1 digitally edited image", "Additional images available for purchase"],
       urgency: "Book by May 1st",
       cta: "Claim This Offer"
     },
-    funnel: ["Meta Ad → Mother's Day Gift Guide", "Landing Page → Session Details", "Lead Magnet → What to Wear Guide", "Email Nurture → Portfolio Showcase", "Booking → Calendar Link", "Reminder → Session Prep Tips", "Follow-up → Upsell Prints"],
+    funnel: ["Meta Ad → Mother's Day Gift Guide", "Landing Page → Session Details", "Lead Magnet → What to Wear Guide", "Email Nurture → Portfolio Showcase", "Booking → Calendar Link", "Reminder → Session Prep Tips", "Post-Session → Ordering Session & Upsell"],
     topPlatforms: ["Meta (FB/IG)", "Pinterest", "Email"],
     seasonality: "Peak: Fall & Spring, Mother's Day"
   },
