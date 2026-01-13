@@ -126,6 +126,9 @@ import backlinkAnalyticsDashboard from "@/assets/backlink-analytics-dashboard.pn
 // AI Growth System Funnel
 import aiGrowthSystemFunnel from "@/assets/ai-growth-system-funnel.webp";
 
+// Email & SMS Workflow Diagram
+import emailSmsWorkflowDiagram from "@/assets/email-sms-workflow-diagram.png";
+
 // Content Insights images
 const contentInsightsImages = [
   { src: articleScoreInsights, alt: "Content scoring insights" },
@@ -2604,19 +2607,39 @@ const Photographers = () => {
 
           {/* Email Nurture Importance - Moved up after Autopilot */}
           <div className="mb-16 mt-16">
-            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Why Email Nurture is <span className="text-primary">Critical for Photography Business</span>
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-10 text-center">
+              Why Email & SMS Nurture is <span className="text-primary">Critical for Photography Business</span>
             </h3>
-            <div className="grid md:grid-cols-3 gap-6 mb-10">
-              {emailNurturePoints.map((point, i) => (
-                <GlowCard key={i} className="p-6">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <point.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">{point.title}</h4>
-                  <p className="text-sm text-muted-foreground">{point.description}</p>
-                </GlowCard>
-              ))}
+            
+            {/* Two Column Layout: Image Left, Cards Right */}
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-10">
+              {/* Left: Workflow Diagram Image */}
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-primary/20 rounded-3xl blur-xl" />
+                <img 
+                  src={emailSmsWorkflowDiagram} 
+                  alt="Email and SMS automation workflow diagram" 
+                  className="relative rounded-2xl border border-border/50 shadow-2xl w-full"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+                  5-Day Automation
+                </div>
+              </div>
+
+              {/* Right: 3 Cards Stacked Vertically */}
+              <div className="space-y-4">
+                {emailNurturePoints.map((point, i) => (
+                  <GlowCard key={i} className="p-5 flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                      <point.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">{point.title}</h4>
+                      <p className="text-sm text-muted-foreground">{point.description}</p>
+                    </div>
+                  </GlowCard>
+                ))}
+              </div>
             </div>
 
             {/* Sample Email & SMS Automation Workflow - 5 Day Sequence */}
