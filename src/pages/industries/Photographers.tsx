@@ -2068,26 +2068,26 @@ const Photographers = () => {
                   {photographyAdCreatives.map((creative) => (
                     <CarouselItem key={creative.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
                       <GlowCard className="overflow-hidden">
-                        <div className="relative aspect-[4/5] overflow-hidden">
+                        <div className="relative aspect-[4/3] overflow-hidden">
                           <img 
                             src={creative.image} 
                             alt={`${creative.genre} ad creative example`}
-                            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                            className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                           />
-                          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                            <div className="flex flex-wrap gap-1 mb-2">
-                              {creative.platforms.map((platform, i) => (
-                                <span 
-                                  key={i} 
-                                  className="px-2 py-0.5 bg-primary/80 text-primary-foreground text-xs rounded-full"
-                                >
-                                  {platform}
-                                </span>
-                              ))}
-                            </div>
-                            <h4 className="font-bold text-white text-lg">{creative.genre}</h4>
-                            <p className="text-white/80 text-sm">{creative.description}</p>
+                          <div className="absolute top-3 left-3 flex flex-wrap gap-1">
+                            {creative.platforms.map((platform, i) => (
+                              <span 
+                                key={i} 
+                                className="px-2 py-0.5 bg-black/70 text-white text-xs rounded-full backdrop-blur-sm"
+                              >
+                                {platform}
+                              </span>
+                            ))}
                           </div>
+                        </div>
+                        <div className="p-4 bg-card">
+                          <h4 className="font-bold text-foreground text-lg">{creative.genre}</h4>
+                          <p className="text-muted-foreground text-sm">{creative.description}</p>
                         </div>
                       </GlowCard>
                     </CarouselItem>
