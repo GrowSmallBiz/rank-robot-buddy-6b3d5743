@@ -1310,9 +1310,9 @@ const Photographers = () => {
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="The Reality"
-            title="Photography Business Marketing"
+            title="Photography Studio Marketing"
             titleHighlight="Challenges"
-            description="Even the most talented photography businesses struggle to fill their calendars. If any of these resonate, it's time for a digital growth strategy."
+            description="Even the most talented photography studios struggle to fill their calendars. If any of these resonate, it's time for a digital growth strategy."
           >
             <h3 className="text-xl md:text-2xl font-display italic mt-2 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent">
               Why Photography Marketing Matters More Than Talent Alone
@@ -1583,7 +1583,7 @@ const Photographers = () => {
               AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photography Studios</span>
             </h2>
             <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">
-              Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers
+              Comprehensive search engine optimization strategy designed for photography studios—from local portrait studios to destination wedding photographers
             </p>
           </div>
 
@@ -2406,7 +2406,7 @@ const Photographers = () => {
                 {/* Right: Description & Stages */}
                 <div className="space-y-6">
                   <p className="text-muted-foreground leading-relaxed">
-                    Most photography businesses use separate tools for email, booking, CRM, social media, reviews, and more. These tools don't talk to each other—leads fall through the cracks, follow-ups get missed, and you waste hours switching between platforms.
+                    Most photography studios use separate tools for email, booking, CRM, social media, reviews, and more. These tools don't talk to each other—leads fall through the cracks, follow-ups get missed, and you waste hours switching between platforms.
                   </p>
 
                   <div className="bg-card/50 border border-border/50 rounded-xl p-5">
