@@ -124,7 +124,7 @@ import pressReleaseDistribution from "@/assets/press-release-distribution.png";
 import backlinkAnalyticsDashboard from "@/assets/backlink-analytics-dashboard.png";
 
 // AI Growth System Funnel
-import aiGrowthSystemFunnel from "@/assets/ai-growth-system-funnel.png";
+import aiGrowthSystemFunnel from "@/assets/ai-growth-system-funnel.webp";
 
 // Content Insights images
 const contentInsightsImages = [
@@ -2227,13 +2227,39 @@ const Photographers = () => {
           {/* Funnel Visual - Standalone Tools to Unified System */}
           <div className="mb-20">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              {/* Left: Funnel Image */}
+              {/* Left: Funnel Image with Stage Labels */}
               <div className="relative flex justify-center">
-                <img 
-                  src={aiGrowthSystemFunnel} 
-                  alt="Standalone marketing tools converging into a unified AI Client Growth System" 
-                  className="w-full max-w-lg rounded-2xl shadow-2xl shadow-primary/20"
-                />
+                <div className="relative w-full max-w-lg">
+                  {/* Stage Labels - positioned along the funnel */}
+                  <div className="absolute -left-4 md:-left-16 top-0 flex flex-col justify-between h-full py-4 z-10">
+                    {/* Awareness - Top */}
+                    <div className="flex items-center gap-2 -translate-y-2">
+                      <span className="text-xs md:text-sm font-bold text-blue-400 uppercase tracking-wider whitespace-nowrap">Awareness</span>
+                      <div className="hidden md:block w-8 h-px bg-blue-400/50" />
+                    </div>
+                    {/* Capture - Upper Middle */}
+                    <div className="flex items-center gap-2 -translate-y-4">
+                      <span className="text-xs md:text-sm font-bold text-cyan-400 uppercase tracking-wider whitespace-nowrap">Capture</span>
+                      <div className="hidden md:block w-8 h-px bg-cyan-400/50" />
+                    </div>
+                    {/* Nurture - Lower Middle */}
+                    <div className="flex items-center gap-2 translate-y-2">
+                      <span className="text-xs md:text-sm font-bold text-purple-400 uppercase tracking-wider whitespace-nowrap">Nurture</span>
+                      <div className="hidden md:block w-8 h-px bg-purple-400/50" />
+                    </div>
+                    {/* Close - Bottom */}
+                    <div className="flex items-center gap-2 translate-y-4">
+                      <span className="text-xs md:text-sm font-bold text-emerald-400 uppercase tracking-wider whitespace-nowrap">Close</span>
+                      <div className="hidden md:block w-8 h-px bg-emerald-400/50" />
+                    </div>
+                  </div>
+                  
+                  <img 
+                    src={aiGrowthSystemFunnel} 
+                    alt="Marketing funnel stages: Awareness, Capture, Nurture, Close with standalone tools at each stage" 
+                    className="w-full rounded-2xl shadow-2xl shadow-primary/20"
+                  />
+                </div>
               </div>
 
               {/* Right: Description & Stages */}
