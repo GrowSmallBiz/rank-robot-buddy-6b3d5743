@@ -2481,17 +2481,18 @@ const Photographers = () => {
       {/* Why Choose Section */}
       <div id="why-choose" className="scroll-mt-24">
         <WhyChooseSection 
-        title="Why Choose GrowSmallBiz for Photography Marketing"
-        subtitle="Your Photography Marketing Partner"
-        description="We specialize in helping photographers get found by ideal clients, showcase their work effectively, and build a sustainable booking pipeline."
-        items={[
-          { title: "Photography Experts", description: "We focus on photographers—weddings, portraits, commercial, and events. We know your industry.", icon: Camera },
-          { title: "Portfolio Optimization", description: "Showcase your best work in a way that both clients and search engines love.", icon: Image },
-          { title: "Visual-First Marketing", description: "Leverage Instagram, Pinterest, and visual platforms to attract your ideal clients.", icon: Star },
-          { title: "Local SEO for Creatives", description: "Rank for photography searches in your city and surrounding areas.", icon: MapPin },
-          { title: "AI Search Ready", description: "Get recommended when couples ask AI for the best wedding photographer in your city.", icon: Bot },
-          { title: "Booking Growth", description: "Our photography clients typically see 2-3x more inquiries within the first season.", icon: TrendingUp },
-        ]}
+          title="Why Choose GrowSmallBiz for Photography Marketing"
+          subtitle="Your Photography Marketing Partner"
+          description="We specialize in helping photographers get found by ideal clients, showcase their work effectively, and build a sustainable booking pipeline."
+          variant="light"
+          items={[
+            { title: "Photography Experts", description: "We focus on photographers—weddings, portraits, commercial, and events. We know your industry.", icon: Camera },
+            { title: "Portfolio Optimization", description: "Showcase your best work in a way that both clients and search engines love.", icon: Image },
+            { title: "Visual-First Marketing", description: "Leverage Instagram, Pinterest, and visual platforms to attract your ideal clients.", icon: Star },
+            { title: "Local SEO for Creatives", description: "Rank for photography searches in your city and surrounding areas.", icon: MapPin },
+            { title: "AI Search Ready", description: "Get recommended when couples ask AI for the best wedding photographer in your city.", icon: Bot },
+            { title: "Booking Growth", description: "Our photography clients typically see 2-3x more inquiries within the first season.", icon: TrendingUp },
+          ]}
         />
       </div>
 
@@ -2508,21 +2509,19 @@ const Photographers = () => {
         testimonials={photographerTestimonials}
         title="What Photographers Say"
         subtitle="See how photographers grow their bookings and brand"
+        variant="light"
       />
 
       {/* Tabbed FAQ Section with Sidebar CTA */}
-      <section id="faq" className="py-24 lg:py-32 relative overflow-hidden scroll-mt-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        {/* Subtle glow effects */}
-        <div className="absolute top-0 right-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
+      <section id="faq" className="py-24 lg:py-32 relative overflow-hidden scroll-mt-24" style={{ background: 'linear-gradient(180deg, hsl(30 20% 96%) 0%, hsl(35 25% 93%) 50%, hsl(30 20% 96%) 100%)' }}>
         <div className="container mx-auto px-4 relative z-10">
           {/* Centered Section Header */}
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-4">FAQ</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-800 mb-4">
               Photographer Marketing FAQs
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-slate-600 max-w-2xl mx-auto">
               Common questions organized by service
             </p>
           </div>
@@ -2550,11 +2549,11 @@ const Photographers = () => {
                         value={category.id}
                         className={`faq-tab-${category.color} flex items-center gap-2 px-4 py-2.5 rounded-full transition-all duration-300`}
                         style={{
-                          backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                          backgroundColor: 'rgba(255, 255, 255, 0.8)',
                           borderWidth: '1px',
                           borderStyle: 'solid',
                           borderColor: colors.border,
-                          color: colors.text,
+                          color: colors.activeBg,
                         }}
                       >
                         <IconComponent className="w-4 h-4" />
@@ -2572,13 +2571,13 @@ const Photographers = () => {
                         <AccordionItem
                           key={index}
                           value={`item-${index}`}
-                          className="bg-black border rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                          style={{ animationDelay: `${index * 0.05}s`, borderColor: '#ff7f50ff' }}
+                          className="bg-white/90 border border-stone-200/70 rounded-xl px-6 transition-all animate-fade-up shadow-sm hover:shadow-md data-[state=open]:shadow-md"
+                          style={{ animationDelay: `${index * 0.05}s` }}
                         >
-                          <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-5 hover:no-underline">
+                          <AccordionTrigger className="text-left text-slate-800 hover:text-primary font-medium py-5 hover:no-underline">
                             {faq.question}
                           </AccordionTrigger>
-                          <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                          <AccordionContent className="text-slate-600 pb-5 leading-relaxed">
                             {faq.answer}
                           </AccordionContent>
                         </AccordionItem>
@@ -2591,7 +2590,7 @@ const Photographers = () => {
 
             {/* Contact CTA Card */}
             <div className="lg:col-span-1 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <div className="sticky top-24 p-8 rounded-2xl border-2 border-primary/60 bg-card/30 backdrop-blur-sm text-center shadow-[0_0_30px_rgba(255,127,80,0.15)]">
+              <div className="sticky top-24 p-8 rounded-2xl border-2 border-primary/40 bg-white/90 backdrop-blur-sm text-center shadow-md">
                 {/* Avatar with gradient border */}
                 <div className="w-24 h-24 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-primary via-orange-400 to-primary">
                   <img 
@@ -2601,22 +2600,22 @@ const Photographers = () => {
                   />
                 </div>
 
-                <h3 className="text-xl font-display font-bold text-foreground mb-4">
+                <h3 className="text-xl font-display font-bold text-slate-800 mb-4">
                   Have more questions about our Photography Marketing Solution?
                 </h3>
                 
-                <p className="text-muted-foreground mb-4">
+                <p className="text-slate-600 mb-4">
                   Get a personalized demo of our SEO, website, and marketing automation platform.
                 </p>
                 
-                <p className="text-foreground font-medium mb-6">
+                <p className="text-slate-800 font-medium mb-6">
                   Let's build your booking machine.
                 </p>
 
                 {/* Signature */}
                 <div className="mb-6">
-                  <p className="font-cursive text-2xl text-foreground italic">Subrata Guha</p>
-                  <p className="text-sm text-muted-foreground">Founder, GrowSmallBiz</p>
+                  <p className="font-cursive text-2xl text-slate-800 italic">Subrata Guha</p>
+                  <p className="text-sm text-slate-500">Founder, GrowSmallBiz</p>
                 </div>
 
                 <Button 

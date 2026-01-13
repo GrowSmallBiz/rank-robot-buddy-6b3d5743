@@ -12,6 +12,7 @@ interface TestimonialsSectionProps {
   testimonials?: Testimonial[];
   title?: string;
   subtitle?: string;
+  variant?: "dark" | "light";
 }
 
 const defaultTestimonials: Testimonial[] = [
@@ -41,22 +42,35 @@ const defaultTestimonials: Testimonial[] = [
 export const TestimonialsSection = ({ 
   testimonials = defaultTestimonials,
   title = "What Our Clients Say",
-  subtitle
+  subtitle,
+  variant = "dark",
 }: TestimonialsSectionProps) => {
+  const isLight = variant === "light";
+  
   return (
-    <section className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 45% 16%) 0%, hsl(210 50% 12%) 50%, hsl(210 45% 16%) 100%)' }}>
+    <section 
+      className={`py-24 lg:py-32 relative overflow-hidden ${isLight ? "" : ""}`} 
+      style={isLight 
+        ? { background: 'linear-gradient(180deg, hsl(30 20% 96%) 0%, hsl(35 25% 93%) 50%, hsl(30 20% 96%) 100%)' }
+        : { background: 'linear-gradient(180deg, hsl(210 45% 16%) 0%, hsl(210 50% 12%) 50%, hsl(210 45% 16%) 100%)' }
+      }
+    >
       {/* Subtle glow effects */}
-      <div className="absolute top-1/3 -left-32 w-64 h-64 bg-primary/8 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/3 -right-32 w-64 h-64 bg-primary/8 rounded-full blur-3xl" />
+      {!isLight && (
+        <>
+          <div className="absolute top-1/3 -left-32 w-64 h-64 bg-primary/8 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/3 -right-32 w-64 h-64 bg-primary/8 rounded-full blur-3xl" />
+        </>
+      )}
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-up">
           <p className="text-primary font-medium mb-4">Testimonials</p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+          <h2 className={`text-3xl md:text-4xl font-display font-bold ${isLight ? "text-slate-800" : "text-foreground"}`}>
             {title}
           </h2>
           {subtitle && (
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">{subtitle}</p>
+            <p className={`mt-4 max-w-2xl mx-auto ${isLight ? "text-slate-600" : "text-muted-foreground"}`}>{subtitle}</p>
           )}
         </div>
 
@@ -64,8 +78,15 @@ export const TestimonialsSection = ({
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="backdrop-blur-sm rounded-2xl p-8 space-y-6 animate-fade-up transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
-              style={{ animationDelay: `${index * 0.1}s`, border: '2px solid #17a2b8', backgroundColor: '#2d465c' }}
+              className={`backdrop-blur-sm rounded-2xl p-8 space-y-6 animate-fade-up transition-all ${
+                isLight 
+                  ? "bg-white/90 border-2 border-stone-200/70 shadow-sm hover:shadow-lg" 
+                  : "hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+              }`}
+              style={{ 
+                animationDelay: `${index * 0.1}s`, 
+                ...(isLight ? {} : { border: '2px solid #17a2b8', backgroundColor: '#2d465c' })
+              }}
             >
               {/* Rating */}
               <div className="flex gap-1">
@@ -75,14 +96,14 @@ export const TestimonialsSection = ({
               </div>
 
               {/* Quote */}
-              <p className="text-foreground leading-relaxed">
+              <p className={`leading-relaxed ${isLight ? "text-slate-700" : "text-foreground"}`}>
                 "{testimonial.quote}"
               </p>
 
               {/* Author */}
               <div>
-                <p className="font-semibold text-foreground">{testimonial.author}</p>
-                <p className="text-sm text-muted-foreground">
+                <p className={`font-semibold ${isLight ? "text-slate-800" : "text-foreground"}`}>{testimonial.author}</p>
+                <p className={`text-sm ${isLight ? "text-slate-500" : "text-muted-foreground"}`}>
                   {testimonial.role && `${testimonial.role}, `}{testimonial.company}
                 </p>
               </div>
