@@ -1192,7 +1192,7 @@ const Photographers = () => {
       </section>
 
       {/* The Reality - Merged Section */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden bg-card/30">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-amber-500/5 to-background" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
@@ -1328,7 +1328,7 @@ const Photographers = () => {
       </section>
 
       {/* Solutions Section */}
-      <section id="solutions" className="py-24 bg-card/50">
+      <section id="solutions" className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Complete Solution"
@@ -1847,8 +1847,8 @@ const Photographers = () => {
       </section>
 
       {/* Paid Media Section */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
+      <section className="py-24 relative bg-card/40">
+        <div className="absolute inset-0 section-glow opacity-50" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="Paid Media"
@@ -2011,7 +2011,7 @@ const Photographers = () => {
       </section>
 
       {/* Social Media Section */}
-      <section className="py-24 bg-card/50">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Organic Social"
@@ -2136,8 +2136,8 @@ const Photographers = () => {
       </section>
 
       {/* AI Client Growth System */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
+      <section className="py-24 relative bg-card/40">
+        <div className="absolute inset-0 section-glow opacity-50" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="AI Client Growth System"
@@ -2298,7 +2298,7 @@ const Photographers = () => {
       </section>
 
       {/* Reputation, Gift Cards, Referrals */}
-      <section className="py-24 bg-card/50">
+      <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Growth Tools"
@@ -2371,8 +2371,8 @@ const Photographers = () => {
       </section>
 
       {/* AI Voice & Chat Section */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
+      <section className="py-24 relative bg-card/40">
+        <div className="absolute inset-0 section-glow opacity-50" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="AI-Powered"
