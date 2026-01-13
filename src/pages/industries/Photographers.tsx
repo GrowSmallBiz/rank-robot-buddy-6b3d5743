@@ -50,7 +50,9 @@ import {
   Shield,
   DollarSign,
   UserPlus,
-  Mic
+  Mic,
+  X,
+  CheckCircle
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -120,6 +122,9 @@ import llmVisibilitySentiment from "@/assets/llm-visibility-sentiment.png";
 import llmVisibilityDashboard from "@/assets/llm-visibility-dashboard.png";
 import pressReleaseDistribution from "@/assets/press-release-distribution.png";
 import backlinkAnalyticsDashboard from "@/assets/backlink-analytics-dashboard.png";
+
+// AI Growth System Funnel
+import aiGrowthSystemFunnel from "@/assets/ai-growth-system-funnel.png";
 
 // Content Insights images
 const contentInsightsImages = [
@@ -2219,108 +2224,49 @@ const Photographers = () => {
             </p>
           </div>
 
-          {/* Funnel Visual - Inspired by Marketing Engine Style */}
+          {/* Funnel Visual - Standalone Tools to Unified System */}
           <div className="mb-20">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              {/* Left: Funnel Graphic */}
+              {/* Left: Funnel Image */}
               <div className="relative flex justify-center">
-                {/* Floating Platform Icons at Top */}
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-3 z-10">
-                  <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30 animate-float" style={{ animationDelay: '0s' }}>
-                    <Facebook className="w-5 h-5 text-white" />
-                  </div>
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 via-purple-500 to-orange-500 flex items-center justify-center shadow-lg shadow-pink-500/30 animate-float" style={{ animationDelay: '0.2s' }}>
-                    <Instagram className="w-5 h-5 text-white" />
-                  </div>
-                  <div className="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center shadow-lg shadow-red-500/30 animate-float" style={{ animationDelay: '0.4s' }}>
-                    <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
-                    </svg>
-                  </div>
-                  <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/30 animate-float" style={{ animationDelay: '0.6s' }}>
-                    <Search className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-
-                {/* The Funnel Shape */}
-                <div className="relative mt-12">
-                  {/* Tier 1: Attract (widest) */}
-                  <div className="relative">
-                    <div className="w-80 md:w-96 h-28 bg-gradient-to-b from-slate-200 to-slate-100 dark:from-slate-700 dark:to-slate-600 rounded-t-3xl border-2 border-b-0 border-slate-300/50 dark:border-slate-500/50 flex items-center justify-center px-6 relative overflow-hidden">
-                      {/* Glass shine effect */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/40 to-transparent opacity-50" />
-                      <div className="flex flex-wrap gap-2 justify-center relative z-10">
-                        <div className="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center">
-                          <Globe className="w-4 h-4 text-blue-500" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center">
-                          <Megaphone className="w-4 h-4 text-purple-500" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                          <Camera className="w-4 h-4 text-primary" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
-                          <Star className="w-4 h-4 text-emerald-500" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center">
-                          <Share2 className="w-4 h-4 text-amber-500" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Tier 2: Nurture (middle) - trapezoid shape */}
-                  <div className="relative flex justify-center">
-                    <div className="w-64 md:w-72 h-28 bg-gradient-to-b from-slate-300 to-slate-200 dark:from-slate-600 dark:to-slate-500 border-x-2 border-slate-300/50 dark:border-slate-500/50 flex items-center justify-center px-6 relative overflow-hidden" 
-                         style={{ clipPath: 'polygon(5% 0, 95% 0, 100% 100%, 0 100%)' }}>
-                      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/30 to-transparent opacity-50" />
-                      <div className="flex flex-wrap gap-2 justify-center relative z-10">
-                        <div className="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center">
-                          <Mail className="w-4 h-4 text-blue-500" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center">
-                          <MessageSquare className="w-4 h-4 text-purple-500" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                          <Bot className="w-4 h-4 text-primary" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
-                          <Phone className="w-4 h-4 text-emerald-500" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Tier 3: Convert & Retain (narrowest) */}
-                  <div className="relative flex justify-center">
-                    <div className="w-48 md:w-52 h-28 bg-gradient-to-b from-slate-400 to-slate-300 dark:from-slate-500 dark:to-slate-400 rounded-b-3xl border-2 border-t-0 border-slate-300/50 dark:border-slate-500/50 flex items-center justify-center px-6 relative overflow-hidden"
-                         style={{ clipPath: 'polygon(10% 0, 90% 0, 80% 100%, 20% 100%)' }}>
-                      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/30 to-transparent opacity-50" />
-                      <div className="flex flex-wrap gap-2 justify-center relative z-10">
-                        <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
-                          <Calendar className="w-4 h-4 text-emerald-500" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                          <DollarSign className="w-4 h-4 text-primary" />
-                        </div>
-                        <div className="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center">
-                          <Repeat className="w-4 h-4 text-amber-500" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img 
+                  src={aiGrowthSystemFunnel} 
+                  alt="Standalone marketing tools converging into a unified AI Client Growth System" 
+                  className="w-full max-w-lg rounded-2xl shadow-2xl shadow-primary/20"
+                />
               </div>
 
               {/* Right: Description & Stages */}
               <div className="space-y-6">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-                    Building Your <span className="text-transparent bg-clip-text bg-gradient-primary">Photography Growth Engine</span>
+                    Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">5+ Disconnected Tools</span>
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    All the tools you need in one integrated system—no more duct-taping 5 different platforms together!
+                    Most photographers use separate tools for email, booking, CRM, social media, reviews, and more. These tools don't talk to each other—leads fall through the cracks, follow-ups get missed, and you waste hours switching between platforms.
                   </p>
+                </div>
+
+                <div className="bg-card/50 border border-border/50 rounded-xl p-5">
+                  <p className="text-foreground font-semibold mb-3">The All-in-One Difference:</p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <X className="w-4 h-4 text-red-500" />
+                      </div>
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">Without a system:</strong> Leads get lost, responses are delayed, follow-ups forgotten, clients never rebook
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <CheckCircle className="w-4 h-4 text-emerald-500" />
+                      </div>
+                      <span className="text-sm text-muted-foreground">
+                        <strong className="text-foreground">With AI Growth System:</strong> Every lead captured instantly, automated nurturing, seamless booking, lifecycle revenue
+                      </span>
+                    </li>
+                  </ul>
                 </div>
 
                 {/* Stage Labels with Descriptions */}
