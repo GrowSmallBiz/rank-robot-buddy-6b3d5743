@@ -656,7 +656,7 @@ const marketingCampaigns = [
       originalPrice: "$750",
       savings: "Save $501",
       includes: ["30-minute portrait session", "Hair & Makeup included", "1 digitally edited image", "Additional images available for purchase"],
-      urgency: "Limited Spots Available",
+      urgency: "Limited 2026 dates available",
       cta: "Claim This Offer"
     },
     funnel: ["Meta Ad → Mother's Day Gift Guide", "Landing Page → Session Details", "Lead Magnet → What to Wear Guide", "Email Nurture → Portfolio Showcase", "Booking → Calendar Link", "Reminder → Session Prep Tips", "Post-Session → Ordering Session & Upsell"],
