@@ -2619,22 +2619,27 @@ const Photographers = () => {
               ))}
             </div>
 
-            {/* Sample Email Nurture Workflow - 5 Day Sequence */}
+            {/* Sample Email & SMS Automation Workflow - 5 Day Sequence */}
             <div className="mt-10">
               <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-3">Sample Automation</p>
               <h4 className="text-lg font-bold text-foreground mb-6 text-center">
-                5-Day Email Nurture Sequence: <span className="text-primary">Inquiry to Close</span>
+                5-Day Email & SMS Automation: <span className="text-primary">Inquiry to Close</span>
               </h4>
               
               <GlowCard className="p-6 border-purple-500/30 bg-gradient-to-b from-purple-500/5 to-transparent">
                 {/* Workflow Header */}
                 <div className="flex items-center gap-3 mb-6 pb-4 border-b border-border/50">
-                  <div className="w-10 h-10 rounded-lg bg-purple-500 flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-white" />
+                  <div className="flex items-center gap-2">
+                    <div className="w-10 h-10 rounded-lg bg-purple-500 flex items-center justify-center">
+                      <Mail className="w-5 h-5 text-white" />
+                    </div>
+                    <div className="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center">
+                      <MessageSquare className="w-5 h-5 text-white" />
+                    </div>
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Photography Inquiry Nurture Workflow</p>
-                    <p className="text-xs text-muted-foreground">Triggered when new inquiry is received</p>
+                    <p className="text-xs text-muted-foreground">Email + SMS automation triggered on new inquiry</p>
                   </div>
                   <div className="ml-auto flex items-center gap-2">
                     <span className="px-2 py-1 bg-emerald-500/20 text-emerald-400 text-xs rounded-full font-medium">Active</span>
@@ -2672,10 +2677,13 @@ const Photographers = () => {
                     <div className="flex-1 bg-muted/30 rounded-lg p-4 border border-border/50">
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-xs font-medium text-purple-400 uppercase tracking-wider">Day 1</span>
-                        <span className="text-xs text-muted-foreground">Email</span>
+                        <div className="flex items-center gap-2">
+                          <span className="flex items-center gap-1 text-xs text-purple-400"><Mail className="w-3 h-3" /> Email</span>
+                          <span className="flex items-center gap-1 text-xs text-emerald-400"><MessageSquare className="w-3 h-3" /> SMS</span>
+                        </div>
                       </div>
-                      <p className="font-medium text-foreground text-sm">Portfolio Showcase Email</p>
-                      <p className="text-xs text-muted-foreground mt-1">Share 3-5 best images from similar sessions, link to full gallery, include client testimonial</p>
+                      <p className="font-medium text-foreground text-sm">Portfolio Showcase + Check-in</p>
+                      <p className="text-xs text-muted-foreground mt-1">Email: 3-5 best images, gallery link, testimonial | SMS: "Did you get a chance to see my portfolio?"</p>
                     </div>
                   </div>
 
@@ -2690,7 +2698,7 @@ const Photographers = () => {
                     <div className="flex-1 bg-muted/30 rounded-lg p-4 border border-border/50">
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-xs font-medium text-blue-400 uppercase tracking-wider">Day 2</span>
-                        <span className="text-xs text-muted-foreground">Email</span>
+                        <span className="flex items-center gap-1 text-xs text-purple-400"><Mail className="w-3 h-3" /> Email</span>
                       </div>
                       <p className="font-medium text-foreground text-sm">What to Expect Guide</p>
                       <p className="text-xs text-muted-foreground mt-1">Prep guide PDF, session timeline, what to wear tips, location suggestions</p>
@@ -2708,10 +2716,13 @@ const Photographers = () => {
                     <div className="flex-1 bg-muted/30 rounded-lg p-4 border border-border/50">
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-xs font-medium text-amber-400 uppercase tracking-wider">Day 3</span>
-                        <span className="text-xs text-muted-foreground">Email</span>
+                        <div className="flex items-center gap-2">
+                          <span className="flex items-center gap-1 text-xs text-purple-400"><Mail className="w-3 h-3" /> Email</span>
+                          <span className="flex items-center gap-1 text-xs text-emerald-400"><MessageSquare className="w-3 h-3" /> SMS</span>
+                        </div>
                       </div>
                       <p className="font-medium text-foreground text-sm">FAQ & Social Proof</p>
-                      <p className="text-xs text-muted-foreground mt-1">Answer common questions, share Google reviews, include video testimonial if available</p>
+                      <p className="text-xs text-muted-foreground mt-1">Email: FAQ answers, Google reviews, video testimonial | SMS: "Any questions I can answer?"</p>
                     </div>
                   </div>
 
