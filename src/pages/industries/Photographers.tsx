@@ -3200,7 +3200,7 @@ const Photographers = () => {
                 <div className="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center">
                   <Star className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground">Photography Studio Reputation Management</h3>
+                <h4 className="text-xl font-bold text-foreground">Photography Studio Reputation Management</h4>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
@@ -3276,7 +3276,7 @@ const Photographers = () => {
                     <div className={`w-14 h-14 rounded-xl ${colors.bg} flex items-center justify-center`}>
                       <feature.icon className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-foreground">{feature.title}</h3>
+                    <h4 className="text-xl font-bold text-foreground">{feature.title}</h4>
                   </div>
                   <p className="text-muted-foreground mb-6">{feature.description}</p>
                   <ul className="space-y-3">
