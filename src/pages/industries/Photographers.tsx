@@ -1580,7 +1580,7 @@ const Photographers = () => {
           <div className="mb-8 text-center">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
             <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-              AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Photography Business</span>
+              AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photography Studios</span>
             </h2>
             <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">
               Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers
@@ -2167,7 +2167,7 @@ const Photographers = () => {
           {/* Retargeting & Lookalike */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Lookalike Audiences & Retargeting for Your Photography Business
+              Lookalike Audiences & Retargeting for Photography Studios
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {retargetingStrategy.map((strategy, i) => (
@@ -2561,10 +2561,10 @@ const Photographers = () => {
                 📚 Why This Matters
               </span>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-                Why Your Photography Business Needs to be on <span className="text-primary">Autopilot</span>
+                Why Photography Studios Need to be on <span className="text-primary">Autopilot</span>
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                The difference between a struggling photography business and a thriving one isn't talent—it's systems. Here's what the research shows:
+                The difference between a struggling photography studio and a thriving one isn't talent—it's systems. Here's what the research shows:
               </p>
             </div>
 
@@ -2697,7 +2697,7 @@ const Photographers = () => {
           {/* Email Nurture Importance - Moved up after Autopilot */}
           <div className="mb-16 mt-16">
             <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-10 text-center">
-              Why Email & SMS Nurture is <span className="text-primary">Critical for Photography Business</span>
+              Why Email & SMS Nurture is <span className="text-primary">Critical for Photography Studios</span>
             </h3>
             
             {/* Two Column Layout: Image Left, Cards Right */}
@@ -2994,7 +2994,7 @@ const Photographers = () => {
           <div className="border-t border-border/50 pt-16 mb-12">
             <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
             <h3 className="text-2xl font-display font-bold text-foreground text-center mb-4">
-              Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Photography Business Should Run</span>
+              Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photography Studios Should Run</span>
             </h3>
             <p className="text-center text-muted-foreground max-w-2xl mx-auto">
               Real offers paired with automated funnels—tailored to each photography specialty
@@ -3260,7 +3260,7 @@ const Photographers = () => {
       <section id="ai-communication" className="py-24 bg-background scroll-mt-24">
         <div className="container mx-auto px-4">
           <SectionHeader
-            subtitle="AI-Powered for Your Photography Business"
+            subtitle="AI-Powered for Photography Studios"
             title="24/7 Studio Booking &"
             titleHighlight="Client Communication"
             description="Never miss a photography booking—AI handles studio inquiries around the clock"
@@ -3483,7 +3483,7 @@ const Photographers = () => {
       <BlogSection 
         posts={photographerBlogPosts}
         title="Photography Marketing Insights"
-        subtitle="Tips and strategies to grow your photography business"
+        subtitle="Tips and strategies to grow your photography studio"
         viewAllLink="/blog"
       />
 
