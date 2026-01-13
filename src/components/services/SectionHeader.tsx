@@ -8,6 +8,8 @@ interface SectionHeaderProps {
   centered?: boolean;
   className?: string;
   children?: ReactNode;
+  /** Heading level - defaults to h2, use h3 for sub-sections */
+  as?: "h2" | "h3";
 }
 
 export const SectionHeader = ({
@@ -18,14 +20,19 @@ export const SectionHeader = ({
   centered = true,
   className = "",
   children,
+  as: HeadingTag = "h2",
 }: SectionHeaderProps) => {
+  const headingClass = HeadingTag === "h3" 
+    ? "text-2xl md:text-3xl font-display font-bold text-foreground"
+    : "section-title";
+
   return (
     <div
       className={`${centered ? "text-center" : ""} mb-16 animate-fade-up ${className}`}
     >
       {subtitle && <p className="section-subtitle">{subtitle}</p>}
       
-      <h2 className="section-title">
+      <HeadingTag className={headingClass}>
         {title}
         {titleHighlight && (
           <>
@@ -35,7 +42,7 @@ export const SectionHeader = ({
             </span>
           </>
         )}
-      </h2>
+      </HeadingTag>
       
       {description && (
         <p className="section-description mt-4">{description}</p>
