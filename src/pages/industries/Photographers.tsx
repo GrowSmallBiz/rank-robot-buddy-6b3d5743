@@ -2226,10 +2226,16 @@ const Photographers = () => {
 
           {/* Funnel Visual - Standalone Tools to Unified System */}
           <div className="mb-20">
-            <GlowCard className="p-8 md:p-12 bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-slate-900/90 border-primary/30 shadow-2xl shadow-primary/10">
+            <GlowCard 
+              className="p-8 md:p-12 bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-slate-900/90 border-primary/40 ring-2 ring-primary/20 ring-offset-4 ring-offset-background shadow-[0_0_60px_-15px_rgba(255,127,80,0.4)]"
+              glowOnHover={false}
+            >
+              {/* Permanent edge glow overlay */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/10 via-transparent to-primary/10 pointer-events-none" />
+              
               {/* Centered H2 Title */}
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-10">
-                Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">5+ Disconnected Tools</span>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-10 relative z-10">
+                Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">Hundreds of Disconnected Tools</span>
               </h2>
               
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
