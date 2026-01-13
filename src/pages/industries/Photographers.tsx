@@ -817,6 +817,7 @@ const faqCategories = [
     id: "ai-seo",
     label: "AI SEO",
     icon: Search,
+    color: "emerald", // Rich green
     faqs: [
       {
         question: "How long does it take to see more photography bookings from SEO?",
@@ -864,6 +865,7 @@ const faqCategories = [
     id: "paid-media",
     label: "Paid Media",
     icon: Megaphone,
+    color: "rose", // Soft pink-red
     faqs: [
       {
         question: "What's the minimum budget needed for photography ads?",
@@ -911,6 +913,7 @@ const faqCategories = [
     id: "marketing-automation",
     label: "Marketing Automation",
     icon: RefreshCw,
+    color: "amber", // Warm gold
     faqs: [
       {
         question: "How does the CRM integrate with my booking workflow?",
@@ -958,6 +961,7 @@ const faqCategories = [
     id: "ai-receptionist",
     label: "AI Receptionist",
     icon: Bot,
+    color: "sky", // Soft blue
     faqs: [
       {
         question: "Can the AI really book appointments on its own?",
@@ -1005,6 +1009,7 @@ const faqCategories = [
     id: "linkedin-outreach",
     label: "LinkedIn Outreach",
     icon: Linkedin,
+    color: "violet", // Rich purple
     faqs: [
       {
         question: "What's included in the LinkedIn outreach automation for headshot photographers?",
@@ -2458,11 +2463,27 @@ const Photographers = () => {
                 <TabsList className="w-full flex flex-wrap justify-start gap-2 bg-transparent h-auto mb-8 p-0">
                   {faqCategories.map((category) => {
                     const IconComponent = category.icon;
+                    // Color styles for each tab - tasteful, non-neon
+                    const colorStyles: Record<string, { bg: string; border: string; text: string; activeBg: string }> = {
+                      emerald: { bg: 'rgba(16, 185, 129, 0.1)', border: 'rgba(16, 185, 129, 0.4)', text: 'rgb(52, 211, 153)', activeBg: 'rgb(16, 185, 129)' },
+                      rose: { bg: 'rgba(244, 63, 94, 0.1)', border: 'rgba(244, 63, 94, 0.4)', text: 'rgb(251, 113, 133)', activeBg: 'rgb(244, 63, 94)' },
+                      amber: { bg: 'rgba(245, 158, 11, 0.1)', border: 'rgba(245, 158, 11, 0.4)', text: 'rgb(251, 191, 36)', activeBg: 'rgb(245, 158, 11)' },
+                      sky: { bg: 'rgba(14, 165, 233, 0.1)', border: 'rgba(14, 165, 233, 0.4)', text: 'rgb(56, 189, 248)', activeBg: 'rgb(14, 165, 233)' },
+                      violet: { bg: 'rgba(139, 92, 246, 0.1)', border: 'rgba(139, 92, 246, 0.4)', text: 'rgb(167, 139, 250)', activeBg: 'rgb(139, 92, 246)' },
+                    };
+                    const colors = colorStyles[category.color] || colorStyles.emerald;
                     return (
                       <TabsTrigger
                         key={category.id}
                         value={category.id}
-                        className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-primary/30 bg-card/50 data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:border-primary hover:border-primary/60 transition-all duration-300"
+                        className={`faq-tab-${category.color} flex items-center gap-2 px-4 py-2.5 rounded-full transition-all duration-300`}
+                        style={{
+                          backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                          borderWidth: '1px',
+                          borderStyle: 'solid',
+                          borderColor: colors.border,
+                          color: colors.text,
+                        }}
                       >
                         <IconComponent className="w-4 h-4" />
                         <span className="text-sm font-medium">{category.label}</span>
