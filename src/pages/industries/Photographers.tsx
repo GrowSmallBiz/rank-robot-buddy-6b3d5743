@@ -643,33 +643,60 @@ const linkedInOutreach = {
   ]
 };
 
-// AI Client Growth System - Funnels by Genre (Shrinking Funnel Style - 7 Steps)
-const clientGrowthFunnels = [
+// AI Client Growth System - Marketing Campaigns by Genre
+const marketingCampaigns = [
   {
     genre: "Portrait Photography",
     icon: Users,
     color: "pink" as const,
-    funnel: ["Awareness", "Interest", "Consideration", "Decision", "Booking", "Experience", "Retention"],
-    topPlatforms: ["Meta (FB/IG)", "Pinterest", "Google PPC", "Email"],
-    strategy: "Emotional family moments + 'what to wear' lead magnets. Seasonal mini-sessions drive urgency and quick decisions.",
+    offer: {
+      headline: "Mother's Day Special",
+      tagline: "Gift the Perfect Memory",
+      price: "$199",
+      originalPrice: "$299",
+      savings: "Save $100",
+      includes: ["30-minute portrait session", "5 digitally edited images", "Print-ready files", "Online gallery"],
+      urgency: "Book by May 1st",
+      cta: "Claim This Offer"
+    },
+    funnel: ["Meta Ad → Mother's Day Gift Guide", "Landing Page → Session Details", "Lead Magnet → What to Wear Guide", "Email Nurture → Portfolio Showcase", "Booking → Calendar Link", "Reminder → Session Prep Tips", "Follow-up → Upsell Prints"],
+    topPlatforms: ["Meta (FB/IG)", "Pinterest", "Email"],
     seasonality: "Peak: Fall & Spring, Mother's Day"
   },
   {
     genre: "Wedding Photography",
     icon: Heart,
     color: "rose" as const,
-    funnel: ["Discovery", "Research", "Inquiry", "Consultation", "Proposal", "Booking", "Retention"],
+    offer: {
+      headline: "$500 Off Engagement Session",
+      tagline: "When You Book Your Wedding Package",
+      price: "FREE",
+      originalPrice: "$500 Value",
+      savings: "Included with wedding booking",
+      includes: ["1-hour engagement session", "25+ edited images", "Location of your choice", "Use for save-the-dates"],
+      urgency: "Limited 2025 dates available",
+      cta: "Check Availability"
+    },
+    funnel: ["Pinterest Pin → Real Wedding Gallery", "Blog Post → Venue-Specific SEO", "Inquiry Form → Detailed Questionnaire", "Consultation → Video Call Booking", "Proposal → Custom Package Builder", "Contract → Secure Deposit", "Nurture → Wedding Day Timeline"],
     topPlatforms: ["Pinterest", "Instagram", "The Knot", "Google SEO"],
-    strategy: "Visual-first approach. Venue partnerships + real wedding blog posts. Longer decision cycle requires strong nurturing.",
     seasonality: "Peak: Engagement season (Nov-Feb)"
   },
   {
     genre: "Branding Photography",
     icon: Sparkles,
     color: "blue" as const,
-    funnel: ["Outreach", "Awareness", "Lead Magnet", "Nurture", "Consultation", "Booking", "Upsell"],
-    topPlatforms: ["LinkedIn", "Google PPC", "Meta (FB)", "Email"],
-    strategy: "Target entrepreneurs and small business owners. Showcase transformation stories and ROI of professional imagery.",
+    offer: {
+      headline: "$149 Express Headshot Special",
+      tagline: "Professional Headshots in 20 Minutes",
+      price: "$149",
+      originalPrice: "$299",
+      savings: "50% Off",
+      includes: ["20-minute session", "3 retouched headshots", "LinkedIn-optimized crops", "Same-week delivery"],
+      urgency: "This month only",
+      cta: "Book Your Session"
+    },
+    funnel: ["LinkedIn Outreach → Value-First Post", "Lead Magnet → Brand Photo Checklist", "Email Sequence → Transformation Stories", "Discovery Call → Needs Assessment", "Proposal → ROI Presentation", "Booking → Pre-Session Questionnaire", "Upsell → Full Brand Package"],
+    topPlatforms: ["LinkedIn", "Google PPC", "Email"],
     seasonality: "Year-round with Q1 surge"
   }
 ];
@@ -2575,21 +2602,21 @@ const Photographers = () => {
             </div>
           </div>
 
-          {/* Divider before existing funnels */}
-          <div className="border-t border-border/50 pt-16 mb-8">
+          {/* Divider before marketing campaigns */}
+          <div className="border-t border-border/50 pt-16 mb-12">
             <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
-            <h3 className="text-2xl font-display font-bold text-foreground text-center mb-8">
+            <h3 className="text-2xl font-display font-bold text-foreground text-center mb-4">
               Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Photography Business Should Run</span>
             </h3>
-            <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-8">
-              From first impression to repeat customer—automated marketing campaigns tailored to your photography specialty
+            <p className="text-center text-muted-foreground max-w-2xl mx-auto">
+              Real offers paired with automated funnels—tailored to each photography specialty
             </p>
           </div>
 
-          {/* Funnel Visualizations - Shrinking Style */}
-          <div className="grid lg:grid-cols-3 gap-6 mb-16">
-            {clientGrowthFunnels.map((funnel, i) => {
-              const colors = colorConfig[funnel.color];
+          {/* Marketing Campaigns by Genre - Offer Left, Funnel Right */}
+          <div className="space-y-12 mb-16">
+            {marketingCampaigns.map((campaign, i) => {
+              const colors = colorConfig[campaign.color];
               const widthClasses = [
                 "w-full",
                 "w-[94%]",
@@ -2600,69 +2627,114 @@ const Photographers = () => {
                 "w-[64%]"
               ];
               return (
-                <GlowCard 
+                <div 
                   key={i} 
-                  className={`group relative overflow-hidden bg-gradient-to-b from-card to-background animate-fade-up ${colors.border}`}
-                  style={{ animationDelay: `${i * 0.1}s` }}
+                  className={`grid lg:grid-cols-2 gap-6 animate-fade-up`}
+                  style={{ animationDelay: `${i * 0.15}s` }}
                 >
-                  <div className="p-6">
-                    {/* Genre Header with Icon */}
-                    <div className="flex flex-col items-center text-center mb-6">
-                      <div className={`w-12 h-12 rounded-full ${colors.bgLight} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
-                        <funnel.icon className={`w-6 h-6 ${colors.text}`} />
-                      </div>
-                      <h3 className="text-xl font-bold text-foreground">{funnel.genre}</h3>
-                      <p className="text-xs text-muted-foreground mt-1">Marketing Campaign</p>
-                    </div>
-
-                    {/* Funnel Visualization - Shrinking Steps */}
-                    <div className="space-y-2 mb-6">
-                      {funnel.funnel.map((step, stepIndex) => (
-                        <div key={stepIndex} className="flex flex-col items-center">
-                          <div 
-                            className={`${widthClasses[stepIndex]} ${colors.steps[stepIndex]} py-2.5 px-4 rounded-lg text-center text-sm font-medium text-white transition-all duration-300 group-hover:scale-[1.02]`}
-                          >
-                            {step}
-                          </div>
-                          {stepIndex < funnel.funnel.length - 1 && (
-                            <div className="text-muted-foreground text-xs my-1">↓</div>
-                          )}
+                  {/* Left: Sample Offer Card */}
+                  <GlowCard className={`overflow-hidden ${colors.border}`}>
+                    <div className={`${colors.bgLight} px-6 py-4 border-b border-border/30`}>
+                      <div className="flex items-center gap-3">
+                        <div className={`w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center`}>
+                          <campaign.icon className="w-5 h-5 text-white" />
                         </div>
-                      ))}
+                        <div>
+                          <p className={`text-xs font-medium ${colors.text} uppercase tracking-wider`}>{campaign.genre}</p>
+                          <p className="text-xs text-muted-foreground">Sample Campaign Offer</p>
+                        </div>
+                      </div>
                     </div>
+                    
+                    <div className="p-6">
+                      {/* Offer Headline */}
+                      <div className="mb-4">
+                        <h4 className="text-2xl font-bold text-foreground mb-1">{campaign.offer.headline}</h4>
+                        <p className="text-muted-foreground">{campaign.offer.tagline}</p>
+                      </div>
 
-                    {/* Optimized Badge */}
-                    <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground mb-4">
-                      <Zap className={`w-3 h-3 ${colors.text}`} />
-                      <span>Optimized for high conversion</span>
+                      {/* Pricing */}
+                      <div className="flex items-baseline gap-3 mb-4">
+                        <span className={`text-4xl font-bold ${colors.text}`}>{campaign.offer.price}</span>
+                        <span className="text-lg text-muted-foreground line-through">{campaign.offer.originalPrice}</span>
+                        <span className={`text-sm font-medium px-2 py-1 rounded-full ${colors.bgLight} ${colors.text}`}>
+                          {campaign.offer.savings}
+                        </span>
+                      </div>
+
+                      {/* What's Included */}
+                      <div className="mb-4">
+                        <p className="text-sm font-semibold text-foreground mb-2">What's Included:</p>
+                        <ul className="space-y-1.5">
+                          {campaign.offer.includes.map((item, idx) => (
+                            <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
+                              <CheckCircle className={`w-4 h-4 ${colors.text} flex-shrink-0`} />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Urgency & CTA */}
+                      <div className="pt-4 border-t border-border/50">
+                        <p className={`text-sm ${colors.text} font-medium mb-3`}>
+                          <Clock className="w-4 h-4 inline mr-1" />
+                          {campaign.offer.urgency}
+                        </p>
+                        <button className={`w-full py-3 rounded-lg font-semibold text-white transition-all hover:scale-[1.02] ${colors.bg}`}>
+                          {campaign.offer.cta}
+                        </button>
+                      </div>
                     </div>
+                  </GlowCard>
 
-                    {/* Divider */}
-                    <div className="border-t border-border pt-4">
-                      {/* Top Platforms */}
-                      <div className="mb-3">
-                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Top Platforms</p>
-                        <div className="flex flex-wrap justify-center gap-1.5">
-                          {funnel.topPlatforms.map((platform, pIndex) => (
-                            <span key={pIndex} className={`text-xs px-2 py-1 ${colors.bgLight} ${colors.text} rounded-full`}>
+                  {/* Right: Funnel Diagram */}
+                  <GlowCard className={`${colors.border}`}>
+                    <div className={`${colors.bgLight} px-6 py-4 border-b border-border/30`}>
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-sm font-semibold text-foreground">Automated Marketing Funnel</p>
+                          <p className="text-xs text-muted-foreground">How this campaign converts leads</p>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          {campaign.topPlatforms.slice(0, 3).map((platform, pIdx) => (
+                            <span key={pIdx} className={`text-xs px-2 py-1 ${colors.bgLight} ${colors.text} rounded-full border ${colors.border}`}>
                               {platform}
                             </span>
                           ))}
                         </div>
                       </div>
-
-                      {/* Strategy */}
-                      <p className="text-xs text-muted-foreground text-center leading-relaxed">
-                        {funnel.strategy}
-                      </p>
-                      
-                      {/* Seasonality */}
-                      <p className={`text-xs ${colors.text} text-center mt-2 italic`}>
-                        {funnel.seasonality}
-                      </p>
                     </div>
-                  </div>
-                </GlowCard>
+
+                    <div className="p-6">
+                      {/* Funnel Steps - Shrinking */}
+                      <div className="space-y-2">
+                        {campaign.funnel.map((step, stepIndex) => (
+                          <div key={stepIndex} className="flex flex-col items-center">
+                            <div 
+                              className={`${widthClasses[stepIndex]} ${colors.steps[stepIndex]} py-2.5 px-4 rounded-lg text-center text-sm font-medium text-white transition-all duration-300 hover:scale-[1.02]`}
+                            >
+                              <span className="opacity-60 mr-2">{stepIndex + 1}.</span>
+                              {step}
+                            </div>
+                            {stepIndex < campaign.funnel.length - 1 && (
+                              <div className="text-muted-foreground text-xs my-1">↓</div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Footer */}
+                      <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between">
+                        <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                          <Zap className={`w-3 h-3 ${colors.text}`} />
+                          <span>Fully automated workflow</span>
+                        </div>
+                        <p className={`text-xs ${colors.text} italic`}>{campaign.seasonality}</p>
+                      </div>
+                    </div>
+                  </GlowCard>
+                </div>
               );
             })}
           </div>
