@@ -1369,9 +1369,9 @@ const Photographers = () => {
         <div className="container mx-auto px-4">
           <div className="mb-8">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Professional Photography Websites</p>
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
               Photography Website Design <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Books Clients</span>
-            </h3>
+            </h2>
             <p className="text-muted-foreground mt-3 max-w-3xl">
               Custom portfolio websites built to showcase your work beautifully and convert visitors into paying clients
             </p>
