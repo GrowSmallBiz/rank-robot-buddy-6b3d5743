@@ -571,31 +571,41 @@ const trackingSetup = [
   }
 ];
 
-// Social Media Platform Strategy by Genre
+// Social Media Platform Strategy by Genre - Primary & Secondary Tiers
 const socialMediaByGenre = [
   {
     genre: "Portrait Photographers",
-    platforms: [
+    primary: [
       { name: "Instagram", icon: Instagram, strategy: "Before/after reveals, behind-the-scenes stories, client testimonials in Reels" },
-      { name: "Facebook", icon: Facebook, strategy: "Local community groups, parent groups, mini-session announcements" },
-      { name: "Pinterest", icon: Image, strategy: "What to wear guides, location inspiration, session type boards" }
+      { name: "Facebook", icon: Facebook, strategy: "Local community groups, parent groups, mini-session announcements" }
+    ],
+    secondary: [
+      { name: "Pinterest", icon: Image, strategy: "What to wear guides, location inspiration, session type boards" },
+      { name: "TikTok", icon: Video, strategy: "Day-in-the-life content, session reveals, trending sounds with family moments" }
     ],
     color: "pink"
   },
   {
     genre: "Wedding Photographers",
-    platforms: [
+    primary: [
       { name: "Instagram", icon: Instagram, strategy: "Full wedding galleries in carousels, Reels of ceremony moments, vendor collaborations" },
-      { name: "Pinterest", icon: Image, strategy: "Real wedding boards, venue-specific pins, wedding planning content" },
-      { name: "TikTok", icon: Video, strategy: "Wedding day clips, photographer POV content, trending audio with wedding footage" }
+      { name: "Pinterest", icon: Image, strategy: "Real wedding boards, venue-specific pins, wedding planning content" }
+    ],
+    secondary: [
+      { name: "TikTok", icon: Video, strategy: "Wedding day clips, photographer POV content, trending audio with wedding footage" },
+      { name: "Facebook", icon: Facebook, strategy: "Local wedding planning groups, venue community pages, vendor networking" }
     ],
     color: "rose"
   },
   {
     genre: "Branding Photographers",
-    platforms: [
+    primary: [
       { name: "LinkedIn", icon: Linkedin, strategy: "Thought leadership content, client success stories, business tips for personal branding" },
       { name: "Instagram", icon: Instagram, strategy: "Professional transformation reveals, tips for looking good on camera, brand story content" }
+    ],
+    secondary: [
+      { name: "Facebook", icon: Facebook, strategy: "Local business owner groups, entrepreneur communities, targeted ads to small business pages" },
+      { name: "YouTube", icon: Video, strategy: "Behind-the-scenes of branding sessions, tips for looking good on camera, client interviews" }
     ],
     color: "blue"
   }
@@ -1957,22 +1967,67 @@ const Photographers = () => {
             description="Platform-specific strategies for each photography genre"
           />
 
+          {/* Educational Note */}
+          <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-transparent rounded-2xl border border-primary/20 p-6 mb-12">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                <Target className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Why Primary & Secondary Platforms?</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  <strong className="text-foreground">Focus beats scatter.</strong> Primary platforms are where your ideal clients actively search for your genre—invest 80% of your time here. 
+                  Secondary platforms offer supplemental reach or work well for specific campaigns, but spreading too thin dilutes your impact. 
+                  Master 2 platforms before expanding.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="space-y-8 mb-16">
             {socialMediaByGenre.map((genre, i) => {
               const colors = colorConfig[genre.color];
               return (
                 <GlowCard key={i} className={`p-6 ${colors.border}`}>
-                  <h4 className={`font-bold ${colors.text} mb-4`}>{genre.genre}</h4>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    {genre.platforms.map((platform, j) => (
-                      <div key={j} className="p-4 bg-muted/50 rounded-xl">
-                        <div className="flex items-center gap-2 mb-2">
-                          <platform.icon className={`w-5 h-5 ${colors.text}`} />
-                          <span className="font-medium text-foreground">{platform.name}</span>
+                  <h4 className={`font-bold ${colors.text} mb-6`}>{genre.genre}</h4>
+                  
+                  {/* Primary Platforms */}
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className={`text-xs font-bold uppercase tracking-wider ${colors.text}`}>Primary Platforms</span>
+                      <span className="text-xs text-muted-foreground">— Focus 80% of effort here</span>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {genre.primary.map((platform, j) => (
+                        <div key={j} className={`p-4 rounded-xl border-2 ${colors.border} ${colors.bgLight}`}>
+                          <div className="flex items-center gap-2 mb-2">
+                            <platform.icon className={`w-5 h-5 ${colors.text}`} />
+                            <span className="font-semibold text-foreground">{platform.name}</span>
+                            <span className={`text-xs px-2 py-0.5 rounded-full ${colors.bg} text-white`}>Priority</span>
+                          </div>
+                          <p className="text-sm text-muted-foreground">{platform.strategy}</p>
                         </div>
-                        <p className="text-sm text-muted-foreground">{platform.strategy}</p>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Secondary Platforms */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Secondary Platforms</span>
+                      <span className="text-xs text-muted-foreground">— Test or use for campaigns</span>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {genre.secondary.map((platform, j) => (
+                        <div key={j} className="p-4 bg-muted/30 rounded-xl border border-border/50">
+                          <div className="flex items-center gap-2 mb-2">
+                            <platform.icon className="w-5 h-5 text-muted-foreground" />
+                            <span className="font-medium text-foreground">{platform.name}</span>
+                          </div>
+                          <p className="text-sm text-muted-foreground">{platform.strategy}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </GlowCard>
               );
