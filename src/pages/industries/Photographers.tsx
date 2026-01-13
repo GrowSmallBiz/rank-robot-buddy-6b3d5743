@@ -1471,7 +1471,7 @@ const Photographers = () => {
           <div className="mb-8 text-center">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
             <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-              AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photographers</span>
+              AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Photography Business</span>
             </h2>
             <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">
               Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers
@@ -2048,7 +2048,7 @@ const Photographers = () => {
           {/* Retargeting & Lookalike */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Photographer's Lookalike Audiences & Retargeting Strategy
+              Lookalike Audiences & Retargeting for Your Photography Business
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {retargetingStrategy.map((strategy, i) => (
@@ -2217,7 +2217,7 @@ const Photographers = () => {
           {/* H2 Title */}
           <div className="text-center mb-16 animate-fade-up">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-              Photographer's <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI Client Growth System</span>
+              Your Photography Business's <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI Client Growth System</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Stop chasing leads manually. Build an automated system that attracts, nurtures, converts, and retains clients—while you focus on your craft.
