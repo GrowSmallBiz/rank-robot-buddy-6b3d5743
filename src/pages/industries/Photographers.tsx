@@ -1327,6 +1327,42 @@ const Photographers = () => {
         </div>
       </section>
 
+      {/* Page Index / Navigation Section */}
+      <section id="page-index" className="py-16 bg-gradient-to-b from-slate-900/50 to-background border-y border-primary/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Quick Navigation</p>
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+              Jump to <span className="text-gradient">Any Section</span>
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            {[
+              { id: "solutions", label: "Growth System", icon: "🚀" },
+              { id: "paid-media", label: "Paid Media", icon: "📣" },
+              { id: "social-media", label: "Social Media", icon: "📱" },
+              { id: "client-growth", label: "Client Growth Funnels", icon: "📈" },
+              { id: "reputation", label: "Reputation & Referrals", icon: "⭐" },
+              { id: "ai-communication", label: "AI Voice & Chat", icon: "🤖" },
+              { id: "why-choose", label: "Why Choose Us", icon: "✅" },
+              { id: "faq", label: "FAQs", icon: "❓" },
+            ].map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className="group flex items-center gap-3 p-4 rounded-xl bg-card/50 border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
+              >
+                <span className="text-2xl">{item.icon}</span>
+                <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                  {item.label}
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Solutions Section - DARK */}
       <section id="solutions" className="py-24 bg-background">
         <div className="container mx-auto px-4">
@@ -1847,7 +1883,7 @@ const Photographers = () => {
       </section>
 
       {/* Paid Media Section - LIGHT */}
-      <section className="py-24 relative bg-slate-800/40">
+      <section id="paid-media" className="py-24 relative bg-slate-800/40">
         <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 via-transparent to-pink-500/5" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
@@ -2011,7 +2047,7 @@ const Photographers = () => {
       </section>
 
       {/* Social Media Section - DARK */}
-      <section className="py-24 bg-background">
+      <section id="social-media" className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Organic Social"
@@ -2136,7 +2172,7 @@ const Photographers = () => {
       </section>
 
       {/* AI Client Growth System - LIGHT */}
-      <section className="py-24 relative bg-slate-800/40">
+      <section id="client-growth" className="py-24 relative bg-slate-800/40">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-amber-500/5" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
@@ -2298,7 +2334,7 @@ const Photographers = () => {
       </section>
 
       {/* Reputation, Gift Cards, Referrals - DARK */}
-      <section className="py-24 bg-background">
+      <section id="reputation" className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Growth Tools"
@@ -2371,7 +2407,7 @@ const Photographers = () => {
       </section>
 
       {/* AI Voice & Chat Section - LIGHT */}
-      <section className="py-24 relative bg-slate-800/40">
+      <section id="ai-communication" className="py-24 relative bg-slate-800/40">
         <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 via-transparent to-cyan-500/5" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
@@ -2409,7 +2445,8 @@ const Photographers = () => {
       </section>
 
       {/* Why Choose Section */}
-      <WhyChooseSection 
+      <div id="why-choose">
+        <WhyChooseSection 
         title="Why Choose GrowSmallBiz for Photography Marketing"
         subtitle="Your Photography Marketing Partner"
         description="We specialize in helping photographers get found by ideal clients, showcase their work effectively, and build a sustainable booking pipeline."
@@ -2421,7 +2458,8 @@ const Photographers = () => {
           { title: "AI Search Ready", description: "Get recommended when couples ask AI for the best wedding photographer in your city.", icon: Bot },
           { title: "Booking Growth", description: "Our photography clients typically see 2-3x more inquiries within the first season.", icon: TrendingUp },
         ]}
-      />
+        />
+      </div>
 
       {/* Case Studies Section */}
       <CaseStudySection 
@@ -2439,7 +2477,7 @@ const Photographers = () => {
       />
 
       {/* Tabbed FAQ Section with Sidebar CTA */}
-      <section className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      <section id="faq" className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         {/* Subtle glow effects */}
         <div className="absolute top-0 right-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
@@ -2588,6 +2626,23 @@ const Photographers = () => {
       />
 
       <ConsultationFormSection />
+
+      {/* Back to Top Link */}
+      <section className="py-12 bg-background border-t border-border">
+        <div className="container mx-auto px-4 text-center">
+          <a 
+            href="#" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 group"
+          >
+            <ArrowRight className="w-4 h-4 rotate-[-90deg] group-hover:-translate-y-1 transition-transform" />
+            <span className="font-medium">Back to Top</span>
+          </a>
+        </div>
+      </section>
 
       <Footer />
 
