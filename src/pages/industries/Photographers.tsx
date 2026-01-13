@@ -2226,117 +2226,119 @@ const Photographers = () => {
 
           {/* Funnel Visual - Standalone Tools to Unified System */}
           <div className="mb-20">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              {/* Left: Funnel Image with Superimposed Stage Labels */}
-              <div className="relative flex justify-center">
-                <div className="relative w-full max-w-lg">
-                  <img 
-                    src={aiGrowthSystemFunnel} 
-                    alt="Marketing funnel stages: Awareness, Capture, Nurture, Close with standalone tools at each stage" 
-                    className="w-full rounded-2xl shadow-2xl shadow-primary/20"
-                  />
-                  
-                  {/* Superimposed Stage Labels */}
-                  {/* Awareness - Top area with floating icons */}
-                  <div className="absolute top-[2%] left-1/2 -translate-x-1/2">
-                    <span className="px-3 py-1 bg-blue-600/90 text-white text-xs md:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm">
-                      Awareness
-                    </span>
-                  </div>
-                  
-                  {/* Capture - Upper funnel tier (white section) */}
-                  <div className="absolute top-[28%] left-1/2 -translate-x-1/2">
-                    <span className="px-3 py-1 bg-slate-700/90 text-white text-xs md:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm">
-                      Capture
-                    </span>
-                  </div>
-                  
-                  {/* Nurture - Middle funnel tier (light blue section) */}
-                  <div className="absolute top-[55%] left-1/2 -translate-x-1/2">
-                    <span className="px-3 py-1 bg-indigo-600/90 text-white text-xs md:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm">
-                      Nurture
-                    </span>
-                  </div>
-                  
-                  {/* Close - Bottom funnel tier (darker blue section) */}
-                  <div className="absolute top-[78%] left-1/2 -translate-x-1/2">
-                    <span className="px-3 py-1 bg-emerald-600/90 text-white text-xs md:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm">
-                      Close
-                    </span>
+            <GlowCard className="p-8 md:p-12">
+              {/* Centered H2 Title */}
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-10">
+                Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">5+ Disconnected Tools</span>
+              </h2>
+              
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                {/* Left: Funnel Image with Superimposed Stage Labels */}
+                <div className="relative flex justify-center">
+                  <div className="relative w-full max-w-lg">
+                    <img 
+                      src={aiGrowthSystemFunnel} 
+                      alt="Marketing funnel stages: Awareness, Capture, Nurture, Close with standalone tools at each stage" 
+                      className="w-full rounded-2xl shadow-2xl shadow-primary/20"
+                    />
+                    
+                    {/* Superimposed Stage Labels */}
+                    {/* Awareness - Top area with floating icons */}
+                    <div className="absolute top-[2%] left-1/2 -translate-x-1/2">
+                      <span className="px-3 py-1 bg-blue-600/90 text-white text-xs md:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm">
+                        Awareness
+                      </span>
+                    </div>
+                    
+                    {/* Capture - Upper funnel tier (white section) */}
+                    <div className="absolute top-[28%] left-1/2 -translate-x-1/2">
+                      <span className="px-3 py-1 bg-slate-700/90 text-white text-xs md:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm">
+                        Capture
+                      </span>
+                    </div>
+                    
+                    {/* Nurture - Middle funnel tier (light blue section) */}
+                    <div className="absolute top-[55%] left-1/2 -translate-x-1/2">
+                      <span className="px-3 py-1 bg-indigo-600/90 text-white text-xs md:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm">
+                        Nurture
+                      </span>
+                    </div>
+                    
+                    {/* Close - Bottom funnel tier (darker blue section) */}
+                    <div className="absolute top-[78%] left-1/2 -translate-x-1/2">
+                      <span className="px-3 py-1 bg-emerald-600/90 text-white text-xs md:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm">
+                        Close
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Right: Description & Stages */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-                    Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">5+ Disconnected Tools</span>
-                  </h3>
+                {/* Right: Description & Stages */}
+                <div className="space-y-6">
                   <p className="text-muted-foreground leading-relaxed">
                     Most photographers use separate tools for email, booking, CRM, social media, reviews, and more. These tools don't talk to each other—leads fall through the cracks, follow-ups get missed, and you waste hours switching between platforms.
                   </p>
-                </div>
 
-                <div className="bg-card/50 border border-border/50 rounded-xl p-5">
-                  <p className="text-foreground font-semibold mb-3">The All-in-One Difference:</p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <X className="w-4 h-4 text-red-500" />
-                      </div>
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">Without a system:</strong> Leads get lost, responses are delayed, follow-ups forgotten, clients never rebook
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <CheckCircle className="w-4 h-4 text-emerald-500" />
-                      </div>
-                      <span className="text-sm text-muted-foreground">
-                        <strong className="text-foreground">With AI Growth System:</strong> Every lead captured instantly, automated nurturing, seamless booking, lifecycle revenue
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Stage Labels with Descriptions */}
-                <div className="space-y-4">
-                  {/* Attract */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-3 h-3 rounded-full bg-blue-500 mt-2 shrink-0" />
-                    <div>
-                      <h4 className="font-bold text-foreground text-lg">Attract</h4>
-                      <p className="text-sm text-muted-foreground">
-                        Draw in ideal clients through SEO, paid ads, AI search visibility, social media, and reputation management.
-                      </p>
-                    </div>
+                  <div className="bg-card/50 border border-border/50 rounded-xl p-5">
+                    <p className="text-foreground font-semibold mb-3">The All-in-One Difference:</p>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <div className="w-6 h-6 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                          <X className="w-4 h-4 text-red-500" />
+                        </div>
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">Without a system:</strong> Leads get lost, responses are delayed, follow-ups forgotten, clients never rebook
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                        </div>
+                        <span className="text-sm text-muted-foreground">
+                          <strong className="text-foreground">With AI Growth System:</strong> Every lead captured instantly, automated nurturing, seamless booking, lifecycle revenue
+                        </span>
+                      </li>
+                    </ul>
                   </div>
 
-                  {/* Nurture */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-3 h-3 rounded-full bg-purple-500 mt-2 shrink-0" />
-                    <div>
-                      <h4 className="font-bold text-foreground text-lg">Nurture</h4>
-                      <p className="text-sm text-muted-foreground">
-                        Automatically follow up with leads via email sequences, SMS, AI receptionist, and chat—while you're shooting.
-                      </p>
+                  {/* Stage Labels with Descriptions */}
+                  <div className="space-y-4">
+                    {/* Attract */}
+                    <div className="flex items-start gap-4">
+                      <div className="w-3 h-3 rounded-full bg-blue-500 mt-2 shrink-0" />
+                      <div>
+                        <h4 className="font-bold text-foreground text-lg">Attract</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Draw in ideal clients through SEO, paid ads, AI search visibility, social media, and reputation management.
+                        </p>
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Convert & Retain */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-3 h-3 rounded-full bg-primary mt-2 shrink-0" />
-                    <div>
-                      <h4 className="font-bold text-foreground text-lg">Convert & Retain</h4>
-                      <p className="text-sm text-muted-foreground">
-                        Book sessions seamlessly, collect payments, deliver galleries, gather reviews, and trigger re-engagement campaigns for repeat business.
-                      </p>
+                    {/* Nurture */}
+                    <div className="flex items-start gap-4">
+                      <div className="w-3 h-3 rounded-full bg-purple-500 mt-2 shrink-0" />
+                      <div>
+                        <h4 className="font-bold text-foreground text-lg">Nurture</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Automatically follow up with leads via email sequences, SMS, AI receptionist, and chat—while you're shooting.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Convert & Retain */}
+                    <div className="flex items-start gap-4">
+                      <div className="w-3 h-3 rounded-full bg-primary mt-2 shrink-0" />
+                      <div>
+                        <h4 className="font-bold text-foreground text-lg">Convert & Retain</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Book sessions seamlessly, collect payments, deliver galleries, gather reviews, and trigger re-engagement campaigns for repeat business.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </GlowCard>
           </div>
 
           {/* 5-Stage Client Journey Visual */}
