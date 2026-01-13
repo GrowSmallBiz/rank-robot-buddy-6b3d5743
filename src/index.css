@@ -614,3 +614,30 @@
     --v5-gradient-angle: 1turn;
   }
 }
+
+/* FAQ Tab Colors - Active States */
+.faq-tab-emerald[data-state="active"] {
+  background-color: rgb(16, 185, 129) !important;
+  border-color: rgb(16, 185, 129) !important;
+  color: white !important;
+}
+.faq-tab-rose[data-state="active"] {
+  background-color: rgb(244, 63, 94) !important;
+  border-color: rgb(244, 63, 94) !important;
+  color: white !important;
+}
+.faq-tab-amber[data-state="active"] {
+  background-color: rgb(245, 158, 11) !important;
+  border-color: rgb(245, 158, 11) !important;
+  color: white !important;
+}
+.faq-tab-sky[data-state="active"] {
+  background-color: rgb(14, 165, 233) !important;
+  border-color: rgb(14, 165, 233) !important;
+  color: white !important;
+}
+.faq-tab-violet[data-state="active"] {
+  background-color: rgb(139, 92, 246) !important;
+  border-color: rgb(139, 92, 246) !important;
+  color: white !important;
+}
