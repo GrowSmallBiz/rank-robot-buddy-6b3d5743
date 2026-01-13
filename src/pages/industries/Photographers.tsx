@@ -2226,7 +2226,7 @@ const Photographers = () => {
 
           {/* Funnel Visual - Standalone Tools to Unified System */}
           <div className="mb-20">
-            <GlowCard className="p-8 md:p-12">
+            <GlowCard className="p-8 md:p-12 bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-slate-900/90 border-primary/30 shadow-2xl shadow-primary/10">
               {/* Centered H2 Title */}
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-10">
                 Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">5+ Disconnected Tools</span>
