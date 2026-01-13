@@ -2667,7 +2667,7 @@ const Photographers = () => {
           {/* Email Nurture Importance */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Why Email Nurture is <span className="text-primary">Critical for Photographers</span>
+              Why Email Nurture is <span className="text-primary">Critical for Photography Business</span>
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {emailNurturePoints.map((point, i) => (
