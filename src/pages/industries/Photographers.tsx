@@ -656,7 +656,7 @@ const marketingCampaigns = [
       originalPrice: "$750",
       savings: "Save $501",
       includes: ["30-minute portrait session", "Hair & Makeup included", "1 digitally edited image", "Additional images available for purchase"],
-      urgency: "Limited 2026 dates available",
+      urgency: "One Day Only Event",
       cta: "Claim This Offer"
     },
     funnel: ["Meta Ad → Mother's Day Gift Guide", "Landing Page → Session Details", "Lead Magnet → What to Wear Guide", "Email Nurture → Portfolio Showcase", "Booking → Calendar Link", "Reminder → Session Prep Tips", "Post-Session → Ordering Session & Upsell"],
@@ -674,7 +674,7 @@ const marketingCampaigns = [
       originalPrice: "$500 Value",
       savings: "Included with wedding booking",
       includes: ["1-hour engagement session", "25+ edited images", "Location of your choice", "Use for save-the-dates"],
-      urgency: "Limited 2025 dates available",
+      urgency: "Limited 2026 dates available",
       cta: "Check Availability"
     },
     funnel: ["Pinterest Pin → Real Wedding Gallery", "Blog Post → Venue-Specific SEO", "Inquiry Form → Detailed Questionnaire", "Consultation → Video Call Booking", "Proposal → Custom Package Builder", "Contract → Secure Deposit", "Nurture → Wedding Day Timeline"],
