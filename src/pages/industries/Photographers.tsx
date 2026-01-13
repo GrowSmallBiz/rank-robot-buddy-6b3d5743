@@ -2236,9 +2236,12 @@ const Photographers = () => {
             >
               
               {/* Centered H2 Title */}
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-10 relative z-10">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-4 relative z-10">
                 Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">Hundreds of Disconnected Tools</span>
               </h2>
+              <p className="text-lg md:text-xl text-muted-foreground text-center mb-10 relative z-10">
+                All the tools you need in one platform without having to "duct-tape" multiple platforms together!
+              </p>
               
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 {/* Left: Funnel Image with Superimposed Stage Labels */}
