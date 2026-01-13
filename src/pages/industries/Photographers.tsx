@@ -1900,6 +1900,17 @@ const Photographers = () => {
               </div>
             </GlowCard>
           </div>
+
+          {/* Back to SEO Top */}
+          <div className="text-center pt-8 border-t border-border/50">
+            <a 
+              href="#seo"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 text-sm group"
+            >
+              <ArrowRight className="w-4 h-4 rotate-[-90deg] group-hover:-translate-y-1 transition-transform" />
+              Back to SEO Navigation
+            </a>
+          </div>
         </div>
       </section>
 
