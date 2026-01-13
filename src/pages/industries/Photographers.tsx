@@ -769,31 +769,35 @@ const sessionReminderWorkflows = [
   }
 ];
 
-// Research citations for no-show statistics
+// Research citations for no-show statistics (ordered: problem → mechanism → solution)
 const noShowResearchCitations = [
-  {
-    stat: "SMS reminders reduce no-shows by 38%",
-    source: "Imperial College London",
-    publication: "BMC Ophthalmology",
-    year: "2008"
-  },
   {
     stat: "15-30% of appointments result in no-shows",
     source: "Sheffield Hallam University",
     publication: "Patient Preference and Adherence (PMC)",
-    year: "2016"
+    year: "2016",
+    label: "The Problem"
   },
   {
     stat: "98% of text messages are opened",
     source: "Industry Research",
     publication: "Mobile Marketing Association",
-    year: "2023"
+    year: "2023",
+    label: "Why SMS Works"
+  },
+  {
+    stat: "SMS reminders reduce no-shows by 38%",
+    source: "Imperial College London",
+    publication: "BMC Ophthalmology",
+    year: "2008",
+    label: "The Result"
   },
   {
     stat: "Reminder systems reduce lost-to-follow-up by 60%",
     source: "Cochrane Reviews",
     publication: "Systematic Review Meta-Analysis",
-    year: "2016"
+    year: "2016",
+    label: "Long-Term Impact"
   }
 ];
 
@@ -2878,6 +2882,13 @@ const Photographers = () => {
               <div className="grid md:grid-cols-4 gap-6">
                 {noShowResearchCitations.map((citation, i) => (
                   <div key={i} className="text-center">
+                    <p className={`text-xs font-semibold uppercase tracking-wider mb-2 ${
+                      i === 0 ? "text-red-400" : 
+                      i === 1 ? "text-blue-400" : 
+                      i === 2 ? "text-emerald-400" : "text-amber-400"
+                    }`}>
+                      {citation.label}
+                    </p>
                     <p className="text-lg md:text-xl font-bold text-foreground mb-1">{citation.stat}</p>
                     <p className="text-xs text-muted-foreground">
                       — {citation.source}, {citation.publication} ({citation.year})
