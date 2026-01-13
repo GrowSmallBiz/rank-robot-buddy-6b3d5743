@@ -1191,9 +1191,9 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* The Reality - Merged Section */}
-      <section className="py-24 relative overflow-hidden bg-card/30">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-amber-500/5 to-background" />
+      {/* The Reality - Merged Section - LIGHT */}
+      <section className="py-24 relative overflow-hidden bg-slate-900/50">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-500/5 to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="The Reality"
@@ -1327,7 +1327,7 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Solutions Section */}
+      {/* Solutions Section - DARK */}
       <section id="solutions" className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
@@ -1846,9 +1846,9 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Paid Media Section */}
-      <section className="py-24 relative bg-card/40">
-        <div className="absolute inset-0 section-glow opacity-50" />
+      {/* Paid Media Section - LIGHT */}
+      <section className="py-24 relative bg-slate-800/40">
+        <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 via-transparent to-pink-500/5" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="Paid Media"
@@ -2010,7 +2010,7 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Social Media Section */}
+      {/* Social Media Section - DARK */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
@@ -2135,9 +2135,9 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* AI Client Growth System */}
-      <section className="py-24 relative bg-card/40">
-        <div className="absolute inset-0 section-glow opacity-50" />
+      {/* AI Client Growth System - LIGHT */}
+      <section className="py-24 relative bg-slate-800/40">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-amber-500/5" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="AI Client Growth System"
@@ -2297,7 +2297,7 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Reputation, Gift Cards, Referrals */}
+      {/* Reputation, Gift Cards, Referrals - DARK */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
@@ -2370,9 +2370,9 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* AI Voice & Chat Section */}
-      <section className="py-24 relative bg-card/40">
-        <div className="absolute inset-0 section-glow opacity-50" />
+      {/* AI Voice & Chat Section - LIGHT */}
+      <section className="py-24 relative bg-slate-800/40">
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 via-transparent to-cyan-500/5" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="AI-Powered"
