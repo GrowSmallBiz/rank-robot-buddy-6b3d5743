@@ -1332,14 +1332,15 @@ const Photographers = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Quick Navigation</p>
-            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
               Jump to <span className="text-gradient">Any Section</span>
-            </h2>
+            </h3>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
             {[
-              { id: "solutions", label: "Growth System", icon: "🚀" },
+              { id: "website-design", label: "Photography Website Design That Books Clients", icon: "🌐" },
+              { id: "seo", label: "AI-Powered SEO for Photographers", icon: "🔍" },
               { id: "paid-media", label: "Paid Media", icon: "📣" },
               { id: "social-media", label: "Social Media", icon: "📱" },
               { id: "client-growth", label: "Client Growth Funnels", icon: "📈" },
@@ -1374,7 +1375,7 @@ const Photographers = () => {
           />
 
           {/* Subsection 1: Conversion-Focused Website Design for Photographers */}
-          <div className="mb-16">
+          <div id="website-design" className="mb-16 scroll-mt-24">
             <div className="mb-8">
               <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Professional Photography Websites</p>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
@@ -1466,7 +1467,7 @@ const Photographers = () => {
           </div>
 
           {/* Subsection 2: AI-Powered SEO for Photographers */}
-          <div className="mb-16">
+          <div id="seo" className="mb-16 scroll-mt-24">
             <div className="mb-8">
               <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
