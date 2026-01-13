@@ -1197,7 +1197,7 @@ const Photographers = () => {
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="The Reality"
-            title="Photography Marketing"
+            title="Photographer's Marketing"
             titleHighlight="Challenges"
             description="Even the most talented photographers struggle to fill their calendars. If any of these resonate, it's time for a digital growth strategy."
           >
