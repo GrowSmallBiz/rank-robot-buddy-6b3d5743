@@ -2226,12 +2226,14 @@ const Photographers = () => {
 
           {/* Funnel Visual - Standalone Tools to Unified System */}
           <div className="mb-20">
-            <GlowCard 
-              className="p-8 md:p-12 bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-slate-900/90 border-primary/40 ring-2 ring-primary/20 ring-offset-4 ring-offset-background shadow-[0_0_60px_-15px_rgba(255,127,80,0.4)]"
-              glowOnHover={false}
+            <div 
+              className="p-8 md:p-12 rounded-2xl shadow-[0_0_30px_rgba(255,127,80,0.6),0_0_60px_rgba(255,127,80,0.4)]"
+              style={{ 
+                border: '2px solid rgb(255, 127, 80)', 
+                backgroundColor: 'rgba(25, 19, 33, 0.95)',
+                backgroundImage: 'linear-gradient(to bottom right, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.9))'
+              }}
             >
-              {/* Permanent edge glow overlay */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/10 via-transparent to-primary/10 pointer-events-none" />
               
               {/* Centered H2 Title */}
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-10 relative z-10">
@@ -2344,7 +2346,7 @@ const Photographers = () => {
                   </div>
                 </div>
               </div>
-            </GlowCard>
+            </div>
           </div>
 
           {/* 5-Stage Client Journey Visual */}
