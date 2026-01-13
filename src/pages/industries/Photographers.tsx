@@ -1473,8 +1473,34 @@ const Photographers = () => {
             </p>
           </div>
 
+          {/* SEO Sub-Navigation */}
+          <div className="mb-12 p-6 bg-background/50 rounded-2xl border border-border">
+            <p className="text-sm text-muted-foreground mb-4 text-center">Jump to SEO Topic:</p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {[
+                { id: "seo-keywords", label: "Keyword Research", icon: "🔑" },
+                { id: "seo-competitors", label: "Competitor Analysis", icon: "🎯" },
+                { id: "seo-technical", label: "Technical SEO", icon: "⚙️" },
+                { id: "seo-content", label: "Content Strategy", icon: "📝" },
+                { id: "seo-local", label: "Local SEO & GBP", icon: "📍" },
+                { id: "seo-ai-visibility", label: "AI Visibility", icon: "🤖" },
+                { id: "seo-authority", label: "Backlinks", icon: "🔗" },
+                { id: "seo-crm", label: "CRM & Automation", icon: "💼" },
+              ].map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-card/50 border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 text-sm"
+                >
+                  <span>{item.icon}</span>
+                  <span className="text-foreground hover:text-primary transition-colors">{item.label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
           {/* Keyword Research */}
-          <div className="mb-12">
+          <div id="seo-keywords" className="mb-12 scroll-mt-24">
             <h4 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
               <Search className="w-5 h-5 text-primary" />
               Keyword Research: Find What Photography Clients Search
@@ -1525,7 +1551,7 @@ const Photographers = () => {
           </div>
 
           {/* Competitor Analysis */}
-          <div className="mb-12">
+          <div id="seo-competitors" className="mb-12 scroll-mt-24">
             <h4 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
               <Target className="w-5 h-5 text-primary" />
               Competitor Analysis: Outrank Other Photographers
@@ -1579,7 +1605,7 @@ const Photographers = () => {
           </div>
 
           {/* Technical SEO */}
-          <div className="mb-12">
+          <div id="seo-technical" className="mb-12 scroll-mt-24">
             <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <FileSearch className="w-5 h-5 text-primary" />
               Technical SEO for Photography Websites
@@ -1645,7 +1671,7 @@ const Photographers = () => {
           </div>
 
           {/* 4. Content Strategy */}
-          <div className="mb-12">
+          <div id="seo-content" className="mb-12 scroll-mt-24">
             <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <FileSearch className="w-5 h-5 text-primary" />
               Content Strategy That Ranks on Google & AI Recommendations
@@ -1726,7 +1752,7 @@ const Photographers = () => {
           </div>
 
           {/* 5. Local & Google Business Profile */}
-          <div className="mb-12">
+          <div id="seo-local" className="mb-12 scroll-mt-24">
             <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <MapPin className="w-5 h-5 text-primary" />
               Local SEO & Google Business Profile for Photographers
@@ -1759,7 +1785,7 @@ const Photographers = () => {
           </div>
 
           {/* 6. LLM Visibility & Rank Tracking */}
-          <div className="mb-12">
+          <div id="seo-ai-visibility" className="mb-12 scroll-mt-24">
             <h4 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <Bot className="w-6 h-6 text-primary" />
               AI & LLM Visibility: Get Recommended by AI Search
@@ -1793,7 +1819,7 @@ const Photographers = () => {
           </div>
 
           {/* 7. Online Authority */}
-          <div className="mb-12">
+          <div id="seo-authority" className="mb-12 scroll-mt-24">
             <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <Shield className="w-5 h-5 text-primary" />
               Build Online Authority & Photography Backlinks
@@ -1825,7 +1851,7 @@ const Photographers = () => {
           </div>
 
           {/* CRM Integration */}
-          <div className="mb-8">
+          <div id="seo-crm" className="mb-8 scroll-mt-24">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center">
                 <Database className="w-5 h-5 text-violet-500" />
