@@ -498,24 +498,29 @@ const seoFeatures = [
   "Competitor analysis & strategy"
 ];
 
-// Paid Media Platform Recommendations by Genre
+// Paid Media Platform Recommendations by Genre (Primary/Secondary)
 const paidMediaByGenre = [
   {
     genre: "Portrait Photographers",
     icon: Users,
-    platforms: [
+    primary: [
       { name: "Meta (FB/IG)", reason: "Visual platform perfect for showcasing portrait work to local parents and families" },
-      { name: "Pinterest", reason: "Inspiration-driven; ideal for family photo ideas and senior session inspiration" },
-      { name: "Google PPC", reason: "Capture high-intent 'photographer near me' searches" }
+      { name: "Google PPC", reason: "Capture high-intent 'photographer near me' searches—highest conversion intent" }
+    ],
+    secondary: [
+      { name: "Pinterest Ads", reason: "Inspiration-driven; great for 'what to wear' guides and mini-session promos" },
+      { name: "YouTube Ads", reason: "Behind-the-scenes content builds trust; good for session previews" }
     ],
     color: "pink"
   },
   {
     genre: "Wedding Photographers",
     icon: Heart,
-    platforms: [
-      { name: "Meta (FB/IG)", reason: "Target engaged couples with visual wedding portfolio ads" },
-      { name: "Pinterest", reason: "Wedding planning platform—brides actively searching for inspiration" },
+    primary: [
+      { name: "Pinterest Ads", reason: "Wedding planning platform—brides actively searching for inspiration (highest ROI)" },
+      { name: "Meta (FB/IG)", reason: "Target engaged couples with visual wedding portfolio ads" }
+    ],
+    secondary: [
       { name: "Google PPC", reason: "Target 'wedding photographer [city]' and venue-specific searches" },
       { name: "The Knot/Zola", reason: "Wedding-specific platforms where couples actively browse photographers" }
     ],
@@ -524,10 +529,13 @@ const paidMediaByGenre = [
   {
     genre: "Branding Photographers",
     icon: Sparkles,
-    platforms: [
-      { name: "LinkedIn Ads", reason: "Target entrepreneurs, coaches, and business owners directly" },
-      { name: "Meta (FB/IG)", reason: "Reach personal brand builders and small business owners" },
+    primary: [
+      { name: "LinkedIn Ads", reason: "Target entrepreneurs, coaches, and business owners directly—best B2B targeting" },
       { name: "Google PPC", reason: "Capture 'professional headshot' and 'branding photographer' searches" }
+    ],
+    secondary: [
+      { name: "Meta (FB/IG)", reason: "Reach personal brand builders via interest-based targeting; lower CPM but less precise" },
+      { name: "YouTube Ads", reason: "Showcase transformation stories and behind-the-scenes of branding sessions" }
     ],
     color: "blue"
   }
@@ -1892,26 +1900,66 @@ const Photographers = () => {
             </div>
           </div>
 
+          {/* Educational Note */}
+          <div className="bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent rounded-2xl border border-amber-500/20 p-6 mb-12">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center shrink-0">
+                <Target className="w-5 h-5 text-amber-500" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Why Primary & Secondary Ad Platforms?</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  <strong className="text-foreground">Budget allocation matters.</strong> Primary platforms have the highest ROI for your genre—allocate 70-80% of your ad spend here. 
+                  Secondary platforms are for testing, seasonal campaigns, or retargeting. Starting with $500-1,000/month? Focus exclusively on primary platforms until you've optimized those results.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Platform Recommendations by Genre */}
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="space-y-8 mb-16">
             {paidMediaByGenre.map((genre, i) => {
               const colors = colorConfig[genre.color];
               return (
                 <GlowCard key={i} className={`p-6 ${colors.border}`}>
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-3 mb-6">
                     <div className={`w-10 h-10 rounded-xl ${colors.bg} flex items-center justify-center`}>
                       <genre.icon className="w-5 h-5 text-white" />
                     </div>
                     <h4 className="font-bold text-foreground">{genre.genre}</h4>
                   </div>
-                  <ul className="space-y-3">
-                    {genre.platforms.map((platform, j) => (
-                      <li key={j} className="p-3 bg-muted/50 rounded-lg">
-                        <div className="font-medium text-foreground text-sm">{platform.name}</div>
-                        <div className="text-xs text-muted-foreground mt-1">{platform.reason}</div>
-                      </li>
-                    ))}
-                  </ul>
+
+                  {/* Primary Platforms */}
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className={`text-xs font-bold uppercase tracking-wider ${colors.text}`}>Primary Platforms</span>
+                      <span className="text-xs text-muted-foreground">— Allocate 70-80% of ad budget</span>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {genre.primary.map((platform, j) => (
+                        <div key={j} className={`p-4 rounded-xl ${colors.bgLight} border ${colors.border}`}>
+                          <div className={`font-medium ${colors.text} text-sm mb-1`}>{platform.name}</div>
+                          <div className="text-xs text-muted-foreground">{platform.reason}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Secondary Platforms */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Secondary Platforms</span>
+                      <span className="text-xs text-muted-foreground">— Testing & retargeting</span>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {genre.secondary.map((platform, j) => (
+                        <div key={j} className="p-4 rounded-xl bg-muted/30 border border-border">
+                          <div className="font-medium text-foreground text-sm mb-1">{platform.name}</div>
+                          <div className="text-xs text-muted-foreground">{platform.reason}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </GlowCard>
               );
             })}
