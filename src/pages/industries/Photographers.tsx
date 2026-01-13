@@ -3180,15 +3180,6 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* CTA: AI Growth System Demo - After AI Client Growth Section */}
-      <CardCTA
-        title="See the AI Client Growth System in Action"
-        description="Watch how automated follow-ups, smart scheduling, and AI-powered nurturing can transform your photography business. Book a personalized demo."
-        buttonText="Book Your Demo"
-        buttonHref="/contact"
-        accentWords={["AI Client Growth System", "Action"]}
-        sectionClassName="py-16"
-      />
 
       {/* Reputation, Gift Cards, Referrals - LIGHT */}
       <section id="reputation" className="py-24 relative bg-slate-800/40 scroll-mt-24">
@@ -3300,6 +3291,16 @@ const Photographers = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA: AI Growth System Demo - After all AI Client Growth System sections */}
+      <CardCTA
+        title="See the AI Client Growth System in Action"
+        description="Watch how automated follow-ups, smart scheduling, and AI-powered nurturing can transform your photography business. Book a personalized demo."
+        buttonText="Book Your Demo"
+        buttonHref="/contact"
+        accentWords={["AI Client Growth System", "Action"]}
+        sectionClassName="py-16"
+      />
 
       {/* Why Choose Section */}
       <div id="why-choose" className="scroll-mt-24">
