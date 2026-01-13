@@ -772,9 +772,9 @@ const sessionReminderWorkflows = [
 // Research citations for no-show statistics (ordered: problem → mechanism → solution)
 const noShowResearchCitations = [
   {
-    stat: "15-30% of appointments result in no-shows",
-    source: "Sheffield Hallam University",
-    publication: "Patient Preference and Adherence (PMC)",
+    stat: "15-30% of appointments are missed industry-wide",
+    source: "Service Industry Research",
+    publication: "Healthcare & appointment-based businesses (PMC)",
     year: "2016",
     label: "The Problem"
   },
