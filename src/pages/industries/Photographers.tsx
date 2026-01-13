@@ -2240,7 +2240,7 @@ const Photographers = () => {
                 Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">Hundreds of Disconnected Tools</span>
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground text-center mb-10 relative z-10">
-                All the tools you need in one platform without having to "duct-tape" multiple platforms together!
+                All the tools you need in one platform without having to <span className="text-primary font-semibold italic">"duct-tape"</span> multiple platforms together!
               </p>
               
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
