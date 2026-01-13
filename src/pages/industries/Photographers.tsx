@@ -2439,7 +2439,7 @@ const Photographers = () => {
       </section>
 
       {/* Why Choose Section */}
-      <div id="why-choose">
+      <div id="why-choose" className="scroll-mt-24">
         <WhyChooseSection 
         title="Why Choose GrowSmallBiz for Photography Marketing"
         subtitle="Your Photography Marketing Partner"
@@ -2471,7 +2471,7 @@ const Photographers = () => {
       />
 
       {/* Tabbed FAQ Section with Sidebar CTA */}
-      <section id="faq" className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      <section id="faq" className="py-24 lg:py-32 relative overflow-hidden scroll-mt-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         {/* Subtle glow effects */}
         <div className="absolute top-0 right-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
