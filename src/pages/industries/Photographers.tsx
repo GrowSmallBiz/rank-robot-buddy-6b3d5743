@@ -1935,7 +1935,7 @@ const Photographers = () => {
           {/* Ad Creatives Carousel */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Sample Ad Creatives by Photography Genre
+              Photography Ad Creatives by Genre
             </h3>
             <div className="relative px-12">
               <Carousel
@@ -2048,7 +2048,7 @@ const Photographers = () => {
           {/* Retargeting & Lookalike */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Lookalike Audiences & Retargeting Strategy
+              Photographer's Lookalike Audiences & Retargeting Strategy
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {retargetingStrategy.map((strategy, i) => (
@@ -2066,7 +2066,7 @@ const Photographers = () => {
           {/* Tracking Setup */}
           <div className="bg-card border border-border rounded-2xl p-8">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Essential Tracking Setup
+              Essential Tracking Setup for Photography Studios
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {trackingSetup.map((item, i) => (
@@ -2352,7 +2352,7 @@ const Photographers = () => {
           {/* 5-Stage Client Journey Visual */}
           <div className="mb-20">
             <h3 className="text-xl font-bold text-foreground mb-8 text-center">
-              The 5 Stages of Your <span className="text-primary">Client Journey</span>
+              The 5 Stages of Your <span className="text-primary">Photography Studio's Client Journey</span>
             </h3>
             <div className="relative">
               {/* Connection Line (Desktop) */}
@@ -2667,7 +2667,7 @@ const Photographers = () => {
           {/* Email Nurture Importance */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Why Email Nurture is <span className="text-primary">Critical</span>
+              Why Email Nurture is <span className="text-primary">Critical for Photographers</span>
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {emailNurturePoints.map((point, i) => (
@@ -2685,7 +2685,7 @@ const Photographers = () => {
           {/* Seasonal Campaigns */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Automated <span className="text-primary">Seasonal Campaigns</span>
+              Automated <span className="text-primary">Seasonal Campaigns for Photography Studios</span>
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -2739,10 +2739,10 @@ const Photographers = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-yellow-500/5" />
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
-            subtitle="Growth Tools"
+            subtitle="Photography Studio Growth Tools"
             title="Reputation, Referrals &"
             titleHighlight="Gift Cards"
-            description="Turn happy clients into your best marketing channel"
+            description="Turn happy photography clients into your studio's best marketing channel"
           />
 
           {/* Reputation Management */}
@@ -2752,7 +2752,7 @@ const Photographers = () => {
                 <div className="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center">
                   <Star className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground">Reputation Management Advantage</h3>
+                <h3 className="text-xl font-bold text-foreground">Photography Studio Reputation Management</h3>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
@@ -2812,10 +2812,10 @@ const Photographers = () => {
       <section id="ai-communication" className="py-24 bg-background scroll-mt-24">
         <div className="container mx-auto px-4">
           <SectionHeader
-            subtitle="AI-Powered"
-            title="24/7 Booking &"
+            subtitle="AI-Powered for Photographers"
+            title="24/7 Studio Booking &"
             titleHighlight="Client Communication"
-            description="Never miss a booking opportunity—AI handles inquiries around the clock"
+            description="Never miss a photography booking—AI handles studio inquiries around the clock"
           />
 
           <div className="grid md:grid-cols-2 gap-8">
