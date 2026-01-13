@@ -2579,10 +2579,10 @@ const Photographers = () => {
           <div className="border-t border-border/50 pt-16 mb-8">
             <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
             <h3 className="text-2xl font-display font-bold text-foreground text-center mb-8">
-              Sample Funnels by <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photography Genre</span>
+              Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Photography Business Should Run</span>
             </h3>
             <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-8">
-              From first impression to repeat customer—automated workflows tailored to your specialty
+              From first impression to repeat customer—automated marketing campaigns tailored to your photography specialty
             </p>
           </div>
 
@@ -2612,7 +2612,7 @@ const Photographers = () => {
                         <funnel.icon className={`w-6 h-6 ${colors.text}`} />
                       </div>
                       <h3 className="text-xl font-bold text-foreground">{funnel.genre}</h3>
-                      <p className="text-xs text-muted-foreground mt-1">Marketing Funnel</p>
+                      <p className="text-xs text-muted-foreground mt-1">Marketing Campaign</p>
                     </div>
 
                     {/* Funnel Visualization - Shrinking Steps */}
