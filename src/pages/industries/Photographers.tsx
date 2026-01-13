@@ -3296,11 +3296,11 @@ const Photographers = () => {
 
       {/* CTA: AI Growth System Demo - After all AI Client Growth System sections */}
       <CardCTA
-        title="See the AI Client Growth System in Action"
-        description="Watch how automated follow-ups, smart scheduling, and AI-powered nurturing can transform your photography business. Book a personalized demo."
+        title="See Photography Studios's AI Client Growth System in Action"
+        description="Watch how automated follow-ups, smart scheduling, and AI-powered nurturing can transform your photography studio. Book a personalized demo."
         buttonText="Book Your Demo"
         buttonHref="/contact"
-        accentWords={["AI Client Growth System", "Action"]}
+        accentWords={["Photography Studios's AI Client Growth System", "Action"]}
         sectionClassName="py-16"
       />
 
