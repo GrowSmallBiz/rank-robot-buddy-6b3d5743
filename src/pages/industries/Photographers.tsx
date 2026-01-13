@@ -2074,20 +2074,20 @@ const Photographers = () => {
                             alt={`${creative.genre} ad creative example`}
                             className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                           />
-                        </div>
-                        <div className="p-4 bg-card">
-                          <h4 className="font-bold text-foreground text-lg">{creative.genre}</h4>
-                          <p className="text-muted-foreground text-sm mb-3">{creative.description}</p>
-                          <div className="flex flex-wrap gap-1">
+                          <div className="absolute top-3 left-3 flex flex-wrap gap-1">
                             {creative.platforms.map((platform, i) => (
                               <span 
                                 key={i} 
-                                className="px-2 py-0.5 bg-primary/20 text-primary text-xs rounded-full"
+                                className="px-2 py-0.5 bg-black/70 text-white text-xs rounded-full backdrop-blur-sm"
                               >
                                 {platform}
                               </span>
                             ))}
                           </div>
+                        </div>
+                        <div className="p-4 bg-card">
+                          <h4 className="font-bold text-foreground text-lg">{creative.genre}</h4>
+                          <p className="text-muted-foreground text-sm">{creative.description}</p>
                         </div>
                       </GlowCard>
                     </CarouselItem>
