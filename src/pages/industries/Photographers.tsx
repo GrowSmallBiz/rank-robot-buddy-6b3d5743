@@ -1364,56 +1364,52 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Solutions Section - DARK */}
-      <section id="solutions" className="py-24 bg-background">
+      {/* Website Design Section - DARK */}
+      <section id="website-design" className="py-24 bg-background scroll-mt-24">
         <div className="container mx-auto px-4">
-          <SectionHeader
-            subtitle="Complete Solution"
-            title="Photography Business"
-            titleHighlight="Growth System"
-            description="Everything you need to attract, book, and retain dream clients"
-          />
-
-          {/* Subsection 1: Conversion-Focused Website Design for Photographers */}
-          <div id="website-design" className="mb-16 scroll-mt-24">
-            <div className="mb-8">
-              <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Professional Photography Websites</p>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-                Photography Website Design <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Books Clients</span>
-              </h3>
-              <p className="text-muted-foreground mt-3 max-w-3xl">
-                Custom portfolio websites built to showcase your work beautifully and convert visitors into paying clients
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
-              <div>
-                <img 
-                  src={portfolioPhotographerWebsite} 
-                  alt="Photography website design example showing portfolio layout" 
-                  className="rounded-2xl shadow-2xl w-full"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl font-display font-bold text-foreground mb-4">
-                  Portfolio Websites That Convert Visitors Into Booked Clients
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  We build fast, beautiful portfolio sites designed specifically for photographers. 
-                  Every element is optimized to showcase your work and guide potential clients toward booking.
-                </p>
-                <ul className="space-y-3">
-                  {websiteFeatures.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <span className="text-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+          <div className="mb-8">
+            <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Professional Photography Websites</p>
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+              Photography Website Design <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Books Clients</span>
+            </h3>
+            <p className="text-muted-foreground mt-3 max-w-3xl">
+              Custom portfolio websites built to showcase your work beautifully and convert visitors into paying clients
+            </p>
           </div>
 
+          <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            <div>
+              <img 
+                src={portfolioPhotographerWebsite} 
+                alt="Photography website design example showing portfolio layout" 
+                className="rounded-2xl shadow-2xl w-full"
+              />
+            </div>
+            <div>
+              <h4 className="text-xl font-display font-bold text-foreground mb-4">
+                Portfolio Websites That Convert Visitors Into Booked Clients
+              </h4>
+              <p className="text-muted-foreground mb-6">
+                We build fast, beautiful portfolio sites designed specifically for photographers. 
+                Every element is optimized to showcase your work and guide potential clients toward booking.
+              </p>
+              <ul className="space-y-3">
+                {websiteFeatures.map((feature, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-foreground">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Section - LIGHT */}
+      <section id="seo" className="py-24 relative bg-slate-800/40 scroll-mt-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-teal-500/5" />
+        <div className="container mx-auto px-4 relative z-10">
           {/* Why AI Search Ranking Matters - Hero Banner */}
           <div className="mb-16 p-8 md:p-12 bg-gradient-to-br from-primary/20 via-purple-500/10 to-blue-500/10 rounded-3xl border border-primary/30 relative overflow-hidden">
             {/* Background Pattern */}
@@ -1466,377 +1462,375 @@ const Photographers = () => {
             </div>
           </div>
 
-          {/* Subsection 2: AI-Powered SEO for Photographers */}
-          <div id="seo" className="mb-16 scroll-mt-24">
-            <div className="mb-8">
-              <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-                AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photographers</span>
-              </h3>
-              <p className="text-muted-foreground mt-3 max-w-3xl">
-                Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers
+          {/* SEO Content */}
+          <div className="mb-8">
+            <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+              AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photographers</span>
+            </h3>
+            <p className="text-muted-foreground mt-3 max-w-3xl">
+              Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers
+            </p>
+          </div>
+
+          {/* Keyword Research */}
+          <div className="mb-12">
+            <h4 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
+              <Search className="w-5 h-5 text-primary" />
+              Keyword Research: Find What Photography Clients Search
+            </h4>
+            <div className="bg-muted/30 rounded-xl p-4 mb-6 border border-border">
+              <p className="text-sm text-muted-foreground">
+                <span className="font-semibold text-foreground">Keywords photographers need:</span>{" "}
+                <span className="text-primary font-medium">Long-tail keywords</span> (e.g., "outdoor family photographer in Austin") for targeted traffic,{" "}
+                <span className="text-primary font-medium">high-intent keywords</span> (e.g., "book wedding photographer near me") for ready-to-buy clients,{" "}
+                <span className="text-primary font-medium">location-based keywords</span> for local SEO, and{" "}
+                <span className="text-primary font-medium">niche-specific terms</span> that match your photography specialty.
               </p>
             </div>
-
-            {/* Keyword Research */}
-            <div className="mb-12">
-              <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
-                <Search className="w-5 h-5 text-primary" />
-                Keyword Research: Find What Photography Clients Search
-              </h3>
-              <div className="bg-muted/30 rounded-xl p-4 mb-6 border border-border">
-                <p className="text-sm text-muted-foreground">
-                  <span className="font-semibold text-foreground">Keywords photographers need:</span>{" "}
-                  <span className="text-primary font-medium">Long-tail keywords</span> (e.g., "outdoor family photographer in Austin") for targeted traffic,{" "}
-                  <span className="text-primary font-medium">high-intent keywords</span> (e.g., "book wedding photographer near me") for ready-to-buy clients,{" "}
-                  <span className="text-primary font-medium">location-based keywords</span> for local SEO, and{" "}
-                  <span className="text-primary font-medium">niche-specific terms</span> that match your photography specialty.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                {Object.entries(keywordExamples).map(([key, genre]) => {
-                  const IconComponent = genre.icon;
-                  return (
-                    <GlowCard key={key} className="overflow-hidden">
-                      <div className="relative h-44 overflow-hidden">
-                        <img 
-                          src={genre.image} 
-                          alt={genre.label}
-                          className="w-full h-full object-contain bg-muted/30"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
-                        <div className="absolute bottom-3 left-4 flex items-center gap-2">
-                          <div className="w-8 h-8 rounded-lg bg-primary/90 flex items-center justify-center">
-                            <IconComponent className="w-4 h-4 text-primary-foreground" />
-                          </div>
-                          <h5 className="font-bold text-foreground drop-shadow-md">{genre.label}</h5>
-                        </div>
-                      </div>
-                      <div className="p-5">
-                        <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Sample Keywords</p>
-                        <ul className="space-y-1">
-                          {genre.keywords.map((kw, i) => (
-                            <li key={i} className="text-sm text-foreground flex items-start gap-2">
-                              <Search className="w-3 h-3 text-primary shrink-0 mt-1" />
-                              {kw}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </GlowCard>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Competitor Analysis */}
-            <div className="mb-12">
-              <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
-                <Target className="w-5 h-5 text-primary" />
-                Competitor Analysis: Outrank Other Photographers
-              </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <GlowCard className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                      <Users className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <h5 className="font-bold text-foreground">Identify Competitors</h5>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Discover who's ranking for your target keywords in your local market
-                  </p>
-                </GlowCard>
-                <GlowCard className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                      <BarChart3 className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <h5 className="font-bold text-foreground">Competitor Rankings</h5>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Analyze which keywords your competitors rank for and their positions
-                  </p>
-                </GlowCard>
-                <GlowCard className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                      <Search className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <h5 className="font-bold text-foreground">Keyword Gap Analysis</h5>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Find keyword opportunities your competitors rank for but you don't
-                  </p>
-                </GlowCard>
-                <GlowCard className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
-                      <TrendingUp className="w-5 h-5 text-orange-500" />
-                    </div>
-                    <h5 className="font-bold text-foreground">Monthly Tracking</h5>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Track competitor ranking changes on a monthly basis to spot trends
-                  </p>
-                </GlowCard>
-              </div>
-            </div>
-
-            {/* Technical SEO */}
-            <div className="mb-12">
-              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-                <FileSearch className="w-5 h-5 text-primary" />
-                Technical SEO for Photography Websites
-              </h4>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {technicalSEOSections.map((section, idx) => (
-                  <GlowCard key={idx} className="p-0 overflow-hidden border-emerald-500/30">
-                    {/* Image */}
-                    <div className="relative h-36 bg-muted">
+            <div className="grid md:grid-cols-3 gap-6">
+              {Object.entries(keywordExamples).map(([key, genre]) => {
+                const IconComponent = genre.icon;
+                return (
+                  <GlowCard key={key} className="overflow-hidden">
+                    <div className="relative h-44 overflow-hidden">
                       <img 
-                        src={section.image} 
-                        alt={section.title}
-                        className="w-full h-full object-contain bg-gradient-to-b from-emerald-500/10 to-transparent p-2"
+                        src={genre.image} 
+                        alt={genre.label}
+                        className="w-full h-full object-contain bg-muted/30"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                      <div className="absolute bottom-3 left-4 flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-lg bg-primary/90 flex items-center justify-center">
+                          <IconComponent className="w-4 h-4 text-primary-foreground" />
+                        </div>
+                        <h5 className="font-bold text-foreground drop-shadow-md">{genre.label}</h5>
+                      </div>
                     </div>
-                    <div className="p-6 pt-4">
-                      <div className="flex items-center gap-3 mb-4">
-                        <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
-                          <section.icon className="w-5 h-5 text-white" />
-                        </div>
-                        <h5 className="font-bold text-foreground">{section.title}</h5>
+                    <div className="p-5">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Sample Keywords</p>
+                      <ul className="space-y-1">
+                        {genre.keywords.map((kw, i) => (
+                          <li key={i} className="text-sm text-foreground flex items-start gap-2">
+                            <Search className="w-3 h-3 text-primary shrink-0 mt-1" />
+                            {kw}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </GlowCard>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Competitor Analysis */}
+          <div className="mb-12">
+            <h4 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
+              <Target className="w-5 h-5 text-primary" />
+              Competitor Analysis: Outrank Other Photographers
+            </h4>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <GlowCard className="p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                    <Users className="w-5 h-5 text-orange-500" />
+                  </div>
+                  <h5 className="font-bold text-foreground">Identify Competitors</h5>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Discover who's ranking for your target keywords in your local market
+                </p>
+              </GlowCard>
+              <GlowCard className="p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                    <BarChart3 className="w-5 h-5 text-orange-500" />
+                  </div>
+                  <h5 className="font-bold text-foreground">Competitor Rankings</h5>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Analyze which keywords your competitors rank for and their positions
+                </p>
+              </GlowCard>
+              <GlowCard className="p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                    <Search className="w-5 h-5 text-orange-500" />
+                  </div>
+                  <h5 className="font-bold text-foreground">Keyword Gap Analysis</h5>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Find keyword opportunities your competitors rank for but you don't
+                </p>
+              </GlowCard>
+              <GlowCard className="p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center">
+                    <TrendingUp className="w-5 h-5 text-orange-500" />
+                  </div>
+                  <h5 className="font-bold text-foreground">Monthly Tracking</h5>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Track competitor ranking changes on a monthly basis to spot trends
+                </p>
+              </GlowCard>
+            </div>
+          </div>
+
+          {/* Technical SEO */}
+          <div className="mb-12">
+            <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+              <FileSearch className="w-5 h-5 text-primary" />
+              Technical SEO for Photography Websites
+            </h4>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {technicalSEOSections.map((section, idx) => (
+                <GlowCard key={idx} className="p-0 overflow-hidden border-emerald-500/30">
+                  {/* Image */}
+                  <div className="relative h-36 bg-muted">
+                    <img 
+                      src={section.image} 
+                      alt={section.title}
+                      className="w-full h-full object-contain bg-gradient-to-b from-emerald-500/10 to-transparent p-2"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+                  </div>
+                  <div className="p-6 pt-4">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
+                        <section.icon className="w-5 h-5 text-white" />
                       </div>
-                      <div className="space-y-3">
-                        {section.hasLogos ? (
-                          (section.items as Array<{ text: string; logo: string }>).map((item, i) => (
-                            <div key={i} className="flex items-center gap-3">
-                              {item.logo === "google" && (
-                                <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
-                                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-                                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-                                </svg>
-                              )}
-                              {item.logo === "bing" && (
-                                <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
-                                  <path fill="#008373" d="M5 3v16.5l4.5 2.5 8-4.5v-5L10 9V3.5L5 3z"/>
-                                  <path fill="#00A68E" d="M10 9l7.5 3.5-8 4.5-4.5-2.5V9l5-2.5V9z"/>
-                                </svg>
-                              )}
-                              <p className="text-sm text-muted-foreground">{item.text}</p>
-                            </div>
-                          ))
-                        ) : (
-                          (section.items as string[]).map((item, i) => (
-                            <div key={i} className="flex items-start gap-2">
-                              <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                              <p className="text-sm text-muted-foreground">{item}</p>
-                            </div>
-                          ))
-                        )}
-                      </div>
-                      {section.note && (
-                        <div className="mt-4 pt-3 border-t border-border">
-                          <p className="text-xs text-primary italic">{section.note}</p>
-                        </div>
+                      <h5 className="font-bold text-foreground">{section.title}</h5>
+                    </div>
+                    <div className="space-y-3">
+                      {section.hasLogos ? (
+                        (section.items as Array<{ text: string; logo: string }>).map((item, i) => (
+                          <div key={i} className="flex items-center gap-3">
+                            {item.logo === "google" && (
+                              <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
+                                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                              </svg>
+                            )}
+                            {item.logo === "bing" && (
+                              <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
+                                <path fill="#008373" d="M5 3v16.5l4.5 2.5 8-4.5v-5L10 9V3.5L5 3z"/>
+                                <path fill="#00A68E" d="M10 9l7.5 3.5-8 4.5-4.5-2.5V9l5-2.5V9z"/>
+                              </svg>
+                            )}
+                            <p className="text-sm text-muted-foreground">{item.text}</p>
+                          </div>
+                        ))
+                      ) : (
+                        (section.items as string[]).map((item, i) => (
+                          <div key={i} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                            <p className="text-sm text-muted-foreground">{item}</p>
+                          </div>
+                        ))
                       )}
                     </div>
-                  </GlowCard>
-                ))}
+                    {section.note && (
+                      <div className="mt-4 pt-3 border-t border-border">
+                        <p className="text-xs text-primary italic">{section.note}</p>
+                      </div>
+                    )}
+                  </div>
+                </GlowCard>
+              ))}
+            </div>
+          </div>
+
+          {/* 4. Content Strategy */}
+          <div className="mb-12">
+            <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+              <FileSearch className="w-5 h-5 text-primary" />
+              Content Strategy That Ranks on Google & AI Recommendations
+            </h4>
+            
+            {/* Build a Topical Map - Full Width */}
+            <GlowCard className="p-6 mb-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                  <Target className="w-5 h-5 text-amber-500" />
+                </div>
+                <h5 className="font-bold text-foreground">{contentStrategy[0].title}</h5>
               </div>
-            </div>
+              <p className="text-sm text-muted-foreground mb-3">{contentStrategy[0].description}</p>
+              <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-4">
+                {contentStrategy[0].note}
+              </p>
+              <div className="mt-4 rounded-lg overflow-hidden border border-border/50">
+                <img 
+                  src={topicalMapAuthority} 
+                  alt="Topical map authority illustration"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </GlowCard>
 
-            {/* 4. Content Strategy */}
-            <div className="mb-12">
-              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-                <FileSearch className="w-5 h-5 text-primary" />
-                Content Strategy That Ranks on Google & AI Recommendations
-              </h4>
+            {/* Generate Articles - Full Width with 3 Categories */}
+            <GlowCard className="p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                  <FileSearch className="w-5 h-5 text-amber-500" />
+                </div>
+                <h5 className="font-bold text-foreground">{contentStrategy[1].title}</h5>
+              </div>
+              <p className="text-sm text-muted-foreground mb-3">{contentStrategy[1].description}</p>
+              <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-6">
+                {contentStrategy[1].note}
+              </p>
               
-              {/* Build a Topical Map - Full Width */}
-              <GlowCard className="p-6 mb-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
-                    <Target className="w-5 h-5 text-amber-500" />
-                  </div>
-                  <h5 className="font-bold text-foreground">{contentStrategy[0].title}</h5>
-                </div>
-                <p className="text-sm text-muted-foreground mb-3">{contentStrategy[0].description}</p>
-                <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-4">
-                  {contentStrategy[0].note}
-                </p>
-                <div className="mt-4 rounded-lg overflow-hidden border border-border/50">
-                  <img 
-                    src={topicalMapAuthority} 
-                    alt="Topical map authority illustration"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              </GlowCard>
-
-              {/* Generate Articles - Full Width with 3 Categories */}
-              <GlowCard className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
-                    <FileSearch className="w-5 h-5 text-amber-500" />
-                  </div>
-                  <h5 className="font-bold text-foreground">{contentStrategy[1].title}</h5>
-                </div>
-                <p className="text-sm text-muted-foreground mb-3">{contentStrategy[1].description}</p>
-                <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-6">
-                  {contentStrategy[1].note}
-                </p>
-                
-                {/* Content Insights */}
-                <div className="mb-6">
-                  <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
-                    <BarChart3 className="w-4 h-4 text-amber-500" />
-                    Content Insights
-                  </h6>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {contentInsightsImages.map((img, i) => (
-                      <div key={i} className="rounded-lg overflow-hidden border border-border/50">
-                        <img 
-                          src={img.src} 
-                          alt={img.alt}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Content Agents & Content Refiners */}
-                <div>
-                  <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-amber-500" />
-                    Content Agents & Content Refiners
-                  </h6>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {contentAgentsRefinersImages.map((img, i) => (
-                      <div key={i} className="rounded-lg overflow-hidden border border-border/50">
-                        <img 
-                          src={img.src} 
-                          alt={img.alt}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </GlowCard>
-            </div>
-
-            {/* 5. Local & Google Business Profile */}
-            <div className="mb-12">
-              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-primary" />
-                Local SEO & Google Business Profile for Photographers
-              </h4>
-              <div className="grid md:grid-cols-2 gap-6">
-                {localGBPServices.map((service, i) => (
-                  <GlowCard key={i} className="p-0 overflow-hidden">
-                    {/* Image */}
-                    <div className="relative h-32 bg-muted">
+              {/* Content Insights */}
+              <div className="mb-6">
+                <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <BarChart3 className="w-4 h-4 text-amber-500" />
+                  Content Insights
+                </h6>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {contentInsightsImages.map((img, i) => (
+                    <div key={i} className="rounded-lg overflow-hidden border border-border/50">
                       <img 
-                        src={service.image} 
-                        alt={service.title}
-                        className="w-full h-full object-contain"
+                        src={img.src} 
+                        alt={img.alt}
+                        className="w-full h-auto object-cover"
                       />
                     </div>
-                    <div className="p-5 pt-3">
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
-                          <service.icon className="w-5 h-5 text-blue-500" />
-                        </div>
-                        <div>
-                          <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
-                          <p className="text-sm text-muted-foreground">{service.description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </GlowCard>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
 
-            {/* 6. LLM Visibility & Rank Tracking */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-                <Bot className="w-6 h-6 text-primary" />
-                AI & LLM Visibility: Get Recommended by AI Search
-              </h2>
-              <div className="grid md:grid-cols-1 gap-6">
-                {llmVisibilityServices.map((service, i) => (
-                  <GlowCard key={i} className="p-6">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center shrink-0">
-                        <service.icon className="w-5 h-5 text-violet-500" />
+              {/* Content Agents & Content Refiners */}
+              <div>
+                <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-amber-500" />
+                  Content Agents & Content Refiners
+                </h6>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {contentAgentsRefinersImages.map((img, i) => (
+                    <div key={i} className="rounded-lg overflow-hidden border border-border/50">
+                      <img 
+                        src={img.src} 
+                        alt={img.alt}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </GlowCard>
+          </div>
+
+          {/* 5. Local & Google Business Profile */}
+          <div className="mb-12">
+            <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+              <MapPin className="w-5 h-5 text-primary" />
+              Local SEO & Google Business Profile for Photographers
+            </h4>
+            <div className="grid md:grid-cols-2 gap-6">
+              {localGBPServices.map((service, i) => (
+                <GlowCard key={i} className="p-0 overflow-hidden">
+                  {/* Image */}
+                  <div className="relative h-32 bg-muted">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="p-5 pt-3">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
+                        <service.icon className="w-5 h-5 text-blue-500" />
                       </div>
                       <div>
                         <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
                         <p className="text-sm text-muted-foreground">{service.description}</p>
                       </div>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {service.images.map((img, idx) => (
-                        <div key={idx} className="rounded-lg overflow-hidden bg-muted/30">
-                          <img 
-                            src={img} 
-                            alt={`${service.title} - ${idx + 1}`}
-                            className="w-full h-auto object-contain"
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </GlowCard>
-                ))}
-              </div>
+                  </div>
+                </GlowCard>
+              ))}
             </div>
+          </div>
 
-            {/* 7. Online Authority */}
-            <div className="mb-8">
-              <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-                <Shield className="w-5 h-5 text-primary" />
-                Build Online Authority & Photography Backlinks
-              </h4>
-              <div className="grid md:grid-cols-2 gap-6">
-                {onlineAuthorityServices.map((service, i) => (
-                  <GlowCard key={i} className="overflow-hidden border-cyan-500/30">
-                    <div className="h-40 bg-muted/30">
-                      <img 
-                        src={service.image} 
-                        alt={service.title}
-                        className="w-full h-full object-contain"
-                      />
+          {/* 6. LLM Visibility & Rank Tracking */}
+          <div className="mb-12">
+            <h4 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+              <Bot className="w-6 h-6 text-primary" />
+              AI & LLM Visibility: Get Recommended by AI Search
+            </h4>
+            <div className="grid md:grid-cols-1 gap-6">
+              {llmVisibilityServices.map((service, i) => (
+                <GlowCard key={i} className="p-6">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center shrink-0">
+                      <service.icon className="w-5 h-5 text-violet-500" />
                     </div>
-                    <div className="p-5 pt-3">
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
-                          <service.icon className="w-5 h-5 text-cyan-500" />
-                        </div>
-                        <div>
-                          <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
-                          <p className="text-sm text-muted-foreground">{service.description}</p>
-                        </div>
+                    <div>
+                      <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
+                      <p className="text-sm text-muted-foreground">{service.description}</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {service.images.map((img, idx) => (
+                      <div key={idx} className="rounded-lg overflow-hidden bg-muted/30">
+                        <img 
+                          src={img} 
+                          alt={`${service.title} - ${idx + 1}`}
+                          className="w-full h-auto object-contain"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </GlowCard>
+              ))}
+            </div>
+          </div>
+
+          {/* 7. Online Authority */}
+          <div className="mb-12">
+            <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+              <Shield className="w-5 h-5 text-primary" />
+              Build Online Authority & Photography Backlinks
+            </h4>
+            <div className="grid md:grid-cols-2 gap-6">
+              {onlineAuthorityServices.map((service, i) => (
+                <GlowCard key={i} className="overflow-hidden border-cyan-500/30">
+                  <div className="h-40 bg-muted/30">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="p-5 pt-3">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
+                        <service.icon className="w-5 h-5 text-cyan-500" />
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
+                        <p className="text-sm text-muted-foreground">{service.description}</p>
                       </div>
                     </div>
-                  </GlowCard>
-                ))}
-              </div>
+                  </div>
+                </GlowCard>
+              ))}
             </div>
           </div>
 
           {/* CRM Integration */}
-          <div className="mb-20">
+          <div className="mb-8">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center">
                 <Database className="w-5 h-5 text-violet-500" />
               </div>
-              <h3 className="text-2xl font-display font-bold text-foreground">CRM & Marketing Automation</h3>
+              <h4 className="text-2xl font-display font-bold text-foreground">CRM & Marketing Automation</h4>
             </div>
 
             <p className="text-muted-foreground mb-8 max-w-3xl">
@@ -1848,30 +1842,30 @@ const Photographers = () => {
             <GlowCard className="p-8 border-violet-500/30">
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <h5 className="font-semibold text-foreground mb-3 flex items-center gap-2">
                     <Zap className="w-5 h-5 text-violet-500" />
                     Instant Lead Capture
-                  </h4>
+                  </h5>
                   <p className="text-sm text-muted-foreground">
                     Website inquiries, social DMs, and calls all flow into one unified inbox. 
                     Automated responses go out in seconds—not hours.
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <h5 className="font-semibold text-foreground mb-3 flex items-center gap-2">
                     <RefreshCw className="w-5 h-5 text-violet-500" />
                     Automated Nurturing
-                  </h4>
+                  </h5>
                   <p className="text-sm text-muted-foreground">
                     Pre-built email and SMS sequences keep leads warm while you're shooting. 
                     Personalized follow-ups based on their inquiry type.
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <h5 className="font-semibold text-foreground mb-3 flex items-center gap-2">
                     <BarChart3 className="w-5 h-5 text-violet-500" />
                     Pipeline Visibility
-                  </h4>
+                  </h5>
                   <p className="text-sm text-muted-foreground">
                     See exactly where every lead is—from inquiry to booked to gallery delivered. 
                     Never wonder about your upcoming revenue again.
