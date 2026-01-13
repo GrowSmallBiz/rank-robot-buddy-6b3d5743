@@ -2336,7 +2336,7 @@ const Photographers = () => {
           {/* H2 Title */}
           <div className="text-center mb-16 animate-fade-up">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-              Your Photography Business's <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI Client Growth System</span>
+              Photography Studios's <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI Client Growth System</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Stop chasing leads manually. Build an automated system that attracts, nurtures, converts, and retains clients—while you focus on your craft.
