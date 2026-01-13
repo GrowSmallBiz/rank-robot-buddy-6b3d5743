@@ -1339,12 +1339,12 @@ const Photographers = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
             {[
-              { id: "website-design", label: "Photography Website Design That Books Clients", icon: "🌐" },
-              { id: "seo", label: "AI-Powered SEO for Photographers", icon: "🔍" },
+              { id: "website-design", label: "Website Design", icon: "🌐" },
+              { id: "seo", label: "AI SEO", icon: "🔍" },
               { id: "paid-media", label: "Paid Media", icon: "📣" },
               { id: "social-media", label: "Social Media", icon: "📱" },
-              { id: "client-growth", label: "Client Growth Funnels", icon: "📈" },
-              { id: "reputation", label: "Reputation & Referrals", icon: "⭐" },
+              { id: "client-growth", label: "Growth Funnels", icon: "📈" },
+              { id: "reputation", label: "Reputation", icon: "⭐" },
               { id: "ai-communication", label: "AI Voice & Chat", icon: "🤖" },
               { id: "why-choose", label: "Why Choose Us", icon: "✅" },
               { id: "faq", label: "FAQs", icon: "❓" },
