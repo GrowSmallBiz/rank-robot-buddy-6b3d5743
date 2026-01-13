@@ -1440,15 +1440,6 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* CTA: Marketing Audit - After Reality/Challenges Section */}
-      <CardCTA
-        title="Get Your Free Photography Marketing Audit"
-        description="Discover what's holding your studio back. We'll analyze your online presence, identify gaps, and show you exactly where to focus for maximum bookings."
-        buttonText="Request Marketing Audit"
-        buttonHref="/free-assessment"
-        accentWords={["Free", "Marketing Audit"]}
-        sectionClassName="py-16"
-      />
 
       {/* Page Index / Navigation Section */}
       <section id="page-index" className="py-16 bg-gradient-to-b from-stone-50 to-stone-100/80 border-y border-stone-200/60">
