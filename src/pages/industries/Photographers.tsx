@@ -2442,7 +2442,7 @@ const Photographers = () => {
                 📚 Why This Matters
               </span>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-                Why Your Photography Business Needs <span className="text-primary">Autopilot</span>
+                Why Your Photography Business Needs to be on <span className="text-primary">Autopilot</span>
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 The difference between a struggling photographer and a thriving one isn't talent—it's systems. Here's what the research shows:
