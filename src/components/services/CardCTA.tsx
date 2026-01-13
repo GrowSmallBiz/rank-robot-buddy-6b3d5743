@@ -75,8 +75,8 @@ export const CardCTA = ({
             className="relative rounded-2xl p-8 md:p-12 lg:p-14 transition-all duration-300 group"
             style={{
               backgroundColor: 'hsl(215 40% 13%)',
-              border: '1px solid hsla(18, 85%, 60%, 0.35)',
-              boxShadow: '0 0 40px -10px hsla(18, 85%, 60%, 0.15)'
+              border: '1px solid hsla(25, 90%, 55%, 0.5)',
+              boxShadow: '0 0 50px -10px hsla(25, 90%, 55%, 0.25)'
             }}
           >
             <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
