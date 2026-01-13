@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { baseContactCTA } from "@/config/contactCTA";
 
 interface PersonCTAProps {
@@ -24,86 +24,101 @@ export const PersonCTA = ({
   buttonText = baseContactCTA.buttonText,
   buttonHref = baseContactCTA.buttonHref,
   animated = true,
-  showUrgency = true,
+  showUrgency = false,
   urgencyText = "Takes 2 mins to schedule",
   sectionClassName = "py-12",
 }: PersonCTAProps) => {
   return (
     <section className={sectionClassName}>
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-gradient-primary rounded-3xl p-8 md:p-12 shadow-2xl shadow-primary/30 animate-fade-up">
-          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
-            {/* Left: Photo + Name */}
-            <div className="flex-shrink-0 text-center md:pl-4">
-              {animated ? (
-                <>
-                  {/* Animated Gradient Ring */}
-                  <div className="relative inline-block">
-                    {/* Spinning gradient ring */}
-                    <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-primary-foreground via-accent to-primary-foreground animate-ring-spin opacity-80" />
-                    {/* Pulsing glow */}
-                    <div className="absolute -inset-4 rounded-full bg-primary-foreground/20 blur-xl animate-pulse-glow" />
-                    {/* Photo container */}
-                    <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-br from-primary-foreground/40 to-accent/40">
-                      <img
-                        src={baseContactCTA.image}
-                        alt={baseContactCTA.name}
-                        className="w-full h-full rounded-full object-cover"
-                      />
-                    </div>
-                  </div>
-                </>
-              ) : (
+        <div className="max-w-5xl mx-auto">
+          {/* Dark navy card with orange border - matching CardCTA */}
+          <div 
+            className="relative rounded-2xl p-8 md:p-12 lg:p-14 transition-all duration-300 group"
+            style={{
+              backgroundColor: 'hsl(215 40% 13%)',
+              border: '1px solid hsla(25, 90%, 55%, 0.5)',
+              boxShadow: '0 0 50px -10px hsla(25, 90%, 55%, 0.25)'
+            }}
+          >
+            <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14">
+              {/* Left: Photo + Name */}
+              <div className="flex-shrink-0 text-center">
                 <div className="relative inline-block">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-foreground/30 to-primary-foreground/10 blur-sm scale-110" />
-                  <img
-                    src={baseContactCTA.image}
-                    alt={baseContactCTA.name}
-                    className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary-foreground/30"
+                  {/* Subtle gray ring around photo - matching CardCTA */}
+                  <div 
+                    className="absolute -inset-1 rounded-full"
+                    style={{
+                      background: 'linear-gradient(135deg, hsl(210 20% 40%) 0%, hsl(210 20% 25%) 100%)'
+                    }}
                   />
+                  {/* Photo container */}
+                  <div className="relative w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden">
+                    <img 
+                      src={baseContactCTA.image} 
+                      alt={baseContactCTA.name} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-              )}
-              <h3 className="mt-5 text-lg font-display font-semibold text-primary-foreground">
-                {baseContactCTA.name}
-              </h3>
-              <p className="text-sm text-primary-foreground/70">{baseContactCTA.role}</p>
-            </div>
-
-            {/* Right: CTA Content */}
-            <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
-              <h2 className="text-2xl md:text-4xl font-display font-bold text-primary-foreground mb-3">
-                {title}
-              </h2>
-              <p className="text-primary-foreground/80 mb-4 max-w-lg">
-                {description}
-              </p>
-              {showUrgency && (
-                <div className="flex items-center gap-2 mb-6">
-                  <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-                  </span>
-                  <span className="text-sm text-primary-foreground/90 font-medium">{urgencyText}</span>
-                </div>
-              )}
-              <Button 
-                size="lg" 
-                variant="secondary" 
-                asChild 
-                className="group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/50"
-              >
-                {buttonHref.startsWith('http') ? (
-                  <a href={buttonHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
-                    {buttonText}
-                    <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </a>
-                ) : (
-                  <Link to={buttonHref} className="inline-flex items-center gap-2">
-                    {buttonText}
-                    <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </Link>
+                <h4 className="mt-5 text-lg font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
+                <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
+              </div>
+              
+              {/* Right: Content */}
+              <div className="flex-1 text-center md:text-left">
+                <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-display font-bold text-foreground mb-5 leading-tight">
+                  {title}
+                </h2>
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
+                  {description}
+                </p>
+                {showUrgency && (
+                  <div className="flex items-center justify-center md:justify-start gap-2 mb-6">
+                    <span className="relative flex h-3 w-3">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span className="text-sm text-muted-foreground font-medium">{urgencyText}</span>
+                  </div>
                 )}
-              </Button>
+                <div className="flex flex-col sm:flex-row gap-4 items-center md:items-start">
+                  {/* Gradient CTA Button - orange to blue like CardCTA */}
+                  <Button 
+                    size="xl" 
+                    asChild 
+                    className="border-0 px-8 py-6 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:opacity-90 hover:shadow-xl rounded-full"
+                    style={{
+                      background: 'linear-gradient(90deg, hsl(25 90% 55%) 0%, hsl(35 85% 60%) 35%, hsl(199 80% 55%) 100%)',
+                      boxShadow: '0 12px 35px -8px hsla(25, 90%, 50%, 0.6)'
+                    }}
+                  >
+                    {buttonHref.startsWith('http') ? (
+                      <a href={buttonHref} target="_blank" rel="noopener noreferrer">
+                        {buttonText}
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </a>
+                    ) : (
+                      <Link to={buttonHref}>
+                        {buttonText}
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Link>
+                    )}
+                  </Button>
+                  {/* Outlined Phone Button - subtle border like CardCTA */}
+                  <Button 
+                    variant="outline" 
+                    size="xl" 
+                    asChild 
+                    className="border-muted-foreground/40 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent px-6 rounded-full"
+                  >
+                    <a href="tel:+19258863724">
+                      <Phone className="mr-2 w-5 h-5" />
+                      Call +1 (925) 886-3724
+                    </a>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
