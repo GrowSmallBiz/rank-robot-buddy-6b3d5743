@@ -1202,9 +1202,9 @@ const Photographers = () => {
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="The Reality"
-            title="Photographer's Marketing"
+            title="Photography Business Marketing"
             titleHighlight="Challenges"
-            description="Even the most talented photographers struggle to fill their calendars. If any of these resonate, it's time for a digital growth strategy."
+            description="Even the most talented photography businesses struggle to fill their calendars. If any of these resonate, it's time for a digital growth strategy."
           >
             <h3 className="text-xl md:text-2xl font-display italic mt-2 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent">
               Why Photography Marketing Matters More Than Talent Alone
@@ -2287,7 +2287,7 @@ const Photographers = () => {
                 {/* Right: Description & Stages */}
                 <div className="space-y-6">
                   <p className="text-muted-foreground leading-relaxed">
-                    Most photographers use separate tools for email, booking, CRM, social media, reviews, and more. These tools don't talk to each other—leads fall through the cracks, follow-ups get missed, and you waste hours switching between platforms.
+                    Most photography businesses use separate tools for email, booking, CRM, social media, reviews, and more. These tools don't talk to each other—leads fall through the cracks, follow-ups get missed, and you waste hours switching between platforms.
                   </p>
 
                   <div className="bg-card/50 border border-border/50 rounded-xl p-5">
@@ -2445,7 +2445,7 @@ const Photographers = () => {
                 Why Your Photography Business Needs to be on <span className="text-primary">Autopilot</span>
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                The difference between a struggling photographer and a thriving one isn't talent—it's systems. Here's what the research shows:
+                The difference between a struggling photography business and a thriving one isn't talent—it's systems. Here's what the research shows:
               </p>
             </div>
 
@@ -2815,7 +2815,7 @@ const Photographers = () => {
       <section id="ai-communication" className="py-24 bg-background scroll-mt-24">
         <div className="container mx-auto px-4">
           <SectionHeader
-            subtitle="AI-Powered for Photographers"
+            subtitle="AI-Powered for Your Photography Business"
             title="24/7 Studio Booking &"
             titleHighlight="Client Communication"
             description="Never miss a photography booking—AI handles studio inquiries around the clock"
