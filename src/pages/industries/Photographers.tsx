@@ -1367,7 +1367,7 @@ const Photographers = () => {
       {/* Website Design Section - DARK */}
       <section id="website-design" className="py-24 bg-background scroll-mt-24">
         <div className="container mx-auto px-4">
-          <div className="mb-8">
+          <div className="mb-8 text-center">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Professional Photography Websites</p>
             <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
               Photography Website Design <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Books Clients</span>
@@ -1463,7 +1463,7 @@ const Photographers = () => {
           </div>
 
           {/* SEO Content */}
-          <div className="mb-8">
+          <div className="mb-8 text-center">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
             <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
               AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photographers</span>
