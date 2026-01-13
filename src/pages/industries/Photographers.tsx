@@ -1372,7 +1372,7 @@ const Photographers = () => {
             <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
               Photography Website Design <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Books Clients</span>
             </h2>
-            <p className="text-muted-foreground mt-3 max-w-3xl">
+            <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">
               Custom portfolio websites built to showcase your work beautifully and convert visitors into paying clients
             </p>
           </div>
@@ -1468,7 +1468,7 @@ const Photographers = () => {
             <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
               AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photographers</span>
             </h2>
-            <p className="text-muted-foreground mt-3 max-w-3xl">
+            <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">
               Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers
             </p>
           </div>
