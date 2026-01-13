@@ -1440,6 +1440,16 @@ const Photographers = () => {
         </div>
       </section>
 
+      {/* CTA: Marketing Audit - After Reality/Challenges Section */}
+      <CardCTA
+        title="Get Your Free Photography Marketing Audit"
+        description="Discover what's holding your studio back. We'll analyze your online presence, identify gaps, and show you exactly where to focus for maximum bookings."
+        buttonText="Request Marketing Audit"
+        buttonHref="/free-assessment"
+        accentWords={["Free", "Marketing Audit"]}
+        sectionClassName="py-16"
+      />
+
       {/* Page Index / Navigation Section */}
       <section id="page-index" className="py-16 bg-gradient-to-b from-stone-50 to-stone-100/80 border-y border-stone-200/60">
         <div className="container mx-auto px-4">
@@ -2029,6 +2039,16 @@ const Photographers = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA: SEO Audit - After SEO Section */}
+      <CardCTA
+        title="See Where You Rank — Free SEO Visibility Audit"
+        description="Find out exactly where your photography studio appears in local search results. Get a detailed report showing your rankings, competitors, and quick wins to climb higher."
+        buttonText="Get SEO Visibility Report"
+        buttonHref="/free-assessment"
+        accentWords={["Free", "SEO Visibility Audit"]}
+        sectionClassName="py-16"
+      />
 
       {/* Paid Media Section - DARK */}
       <section id="paid-media" className="py-24 bg-background scroll-mt-24">
@@ -3168,6 +3188,16 @@ const Photographers = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA: AI Growth System Demo - After AI Client Growth Section */}
+      <CardCTA
+        title="See the AI Client Growth System in Action"
+        description="Watch how automated follow-ups, smart scheduling, and AI-powered nurturing can transform your photography business. Book a personalized demo."
+        buttonText="Book Your Demo"
+        buttonHref="/contact"
+        accentWords={["AI Client Growth System", "Action"]}
+        sectionClassName="py-16"
+      />
 
       {/* Reputation, Gift Cards, Referrals - LIGHT */}
       <section id="reputation" className="py-24 relative bg-slate-800/40 scroll-mt-24">
