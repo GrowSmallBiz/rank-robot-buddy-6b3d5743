@@ -3190,6 +3190,7 @@ const Photographers = () => {
             title="Reputation, Referrals &"
             titleHighlight="Gift Cards"
             description="Turn happy photography clients into your studio's best marketing channel"
+            as="h3"
           />
 
           {/* Reputation Management */}
@@ -3263,6 +3264,7 @@ const Photographers = () => {
             title="24/7 Studio Booking &"
             titleHighlight="Client Communication"
             description="Never miss a photography booking—AI handles studio inquiries around the clock"
+            as="h3"
           />
 
           <div className="grid md:grid-cols-2 gap-8">
