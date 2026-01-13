@@ -1465,9 +1465,9 @@ const Photographers = () => {
           {/* SEO Content */}
           <div className="mb-8">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
               AI-Powered SEO for <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photographers</span>
-            </h3>
+            </h2>
             <p className="text-muted-foreground mt-3 max-w-3xl">
               Comprehensive search engine optimization strategy designed for photography businesses—from local portrait studios to destination wedding photographers
             </p>
