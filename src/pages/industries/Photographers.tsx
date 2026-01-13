@@ -744,7 +744,7 @@ const sessionReminderWorkflows = [
   {
     sessionType: "Portrait Session",
     icon: Camera,
-    color: "purple",
+    color: "violet",
     description: "Pre-session reminder sequence for photo sessions",
     noShowImpact: "No-shows mean lost revenue, wasted location reservations, and scheduling gaps",
     reminders: [
