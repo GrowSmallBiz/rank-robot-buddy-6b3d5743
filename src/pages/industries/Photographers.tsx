@@ -1333,7 +1333,7 @@ const Photographers = () => {
           <div className="text-center mb-8">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Quick Navigation</p>
             <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-              Jump to <span className="text-gradient">Any Section</span>
+              On This <span className="text-gradient">Page</span>
             </h3>
           </div>
           
