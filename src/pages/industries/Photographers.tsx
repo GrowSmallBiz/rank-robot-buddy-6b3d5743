@@ -1474,9 +1474,12 @@ const Photographers = () => {
           </div>
 
           {/* SEO Sub-Navigation */}
-          <div className="mb-12 p-6 bg-background/50 rounded-2xl border border-border">
-            <p className="text-sm text-muted-foreground mb-4 text-center">Jump to SEO Topic:</p>
-            <div className="flex flex-wrap justify-center gap-2">
+          <div className="mb-12 p-8 bg-gradient-to-br from-primary/10 via-emerald-500/5 to-teal-500/10 rounded-2xl border-2 border-primary/30 shadow-lg shadow-primary/5">
+            <div className="text-center mb-5">
+              <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-semibold rounded-full mb-2">📚 Quick Navigation</span>
+              <h4 className="text-lg font-display font-bold text-foreground">Jump to SEO Topic</h4>
+            </div>
+            <div className="flex flex-wrap justify-center gap-3">
               {[
                 { id: "seo-keywords", label: "Keyword Research", icon: "🔑" },
                 { id: "seo-competitors", label: "Competitor Analysis", icon: "🎯" },
@@ -1490,10 +1493,10 @@ const Photographers = () => {
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-card/50 border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 text-sm"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-background/80 border border-border hover:border-primary hover:bg-primary/10 hover:shadow-md hover:shadow-primary/10 transition-all duration-300 text-sm font-medium group"
                 >
-                  <span>{item.icon}</span>
-                  <span className="text-foreground hover:text-primary transition-colors">{item.label}</span>
+                  <span className="text-lg">{item.icon}</span>
+                  <span className="text-foreground group-hover:text-primary transition-colors">{item.label}</span>
                 </a>
               ))}
             </div>
