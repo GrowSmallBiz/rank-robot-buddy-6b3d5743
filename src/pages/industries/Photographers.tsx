@@ -1877,10 +1877,9 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Paid Media Section - LIGHT */}
-      <section id="paid-media" className="py-24 relative bg-slate-800/40">
-        <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 via-transparent to-pink-500/5" />
-        <div className="container mx-auto px-4 relative z-10">
+      {/* Paid Media Section - DARK */}
+      <section id="paid-media" className="py-24 bg-background scroll-mt-24">
+        <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Paid Media"
             title="Advertising for"
@@ -2041,9 +2040,10 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Social Media Section - DARK */}
-      <section id="social-media" className="py-24 bg-background">
-        <div className="container mx-auto px-4">
+      {/* Social Media Section - LIGHT */}
+      <section id="social-media" className="py-24 relative bg-slate-800/40 scroll-mt-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5" />
+        <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="Organic Social"
             title="Social Media Strategy for"
@@ -2166,10 +2166,9 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* AI Client Growth System - LIGHT */}
-      <section id="client-growth" className="py-24 relative bg-slate-800/40">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-amber-500/5" />
-        <div className="container mx-auto px-4 relative z-10">
+      {/* AI Client Growth System - DARK */}
+      <section id="client-growth" className="py-24 bg-background scroll-mt-24">
+        <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="AI Client Growth System"
             title="Sample Funnels by"
@@ -2328,9 +2327,10 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* Reputation, Gift Cards, Referrals - DARK */}
-      <section id="reputation" className="py-24 bg-background">
-        <div className="container mx-auto px-4">
+      {/* Reputation, Gift Cards, Referrals - LIGHT */}
+      <section id="reputation" className="py-24 relative bg-slate-800/40 scroll-mt-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-yellow-500/5" />
+        <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="Growth Tools"
             title="Reputation, Referrals &"
@@ -2401,10 +2401,9 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* AI Voice & Chat Section - LIGHT */}
-      <section id="ai-communication" className="py-24 relative bg-slate-800/40">
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 via-transparent to-cyan-500/5" />
-        <div className="container mx-auto px-4 relative z-10">
+      {/* AI Voice & Chat Section - DARK */}
+      <section id="ai-communication" className="py-24 bg-background scroll-mt-24">
+        <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="AI-Powered"
             title="24/7 Booking &"
