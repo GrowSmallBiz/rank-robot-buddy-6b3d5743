@@ -682,7 +682,7 @@ const marketingCampaigns = [
     seasonality: "Peak: Engagement season (Nov-Feb)"
   },
   {
-    genre: "Branding Photography",
+    genre: "Headshot Photography",
     icon: Sparkles,
     color: "blue" as const,
     offer: {
@@ -691,7 +691,7 @@ const marketingCampaigns = [
       price: "$149",
       originalPrice: "$299",
       savings: "50% Off",
-      includes: ["20-minute session", "3 retouched headshots", "LinkedIn-optimized crops", "Same-week delivery"],
+      includes: ["1 retouched image", "Facial expression coaching", "Same day guided ordering session", "Same day delivery"],
       urgency: "This month only",
       cta: "Book Your Session"
     },
