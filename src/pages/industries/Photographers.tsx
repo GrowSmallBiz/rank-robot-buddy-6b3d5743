@@ -2908,7 +2908,7 @@ const Photographers = () => {
           {/* Email Nurture Importance - Moved up after Autopilot */}
           <div className="mb-16 mt-16">
             <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-10 text-center">
-              Why Email & SMS Nurture is <span className="text-primary">Critical for Photography Studios</span>
+              We Build <span className="text-primary">Email & SMS Nurture Systems</span> for Your Photography Studio
             </h3>
             
             {/* Two Column Layout: Image Left, Cards Right */}
@@ -3100,7 +3100,7 @@ const Photographers = () => {
               </div>
             </div>
             <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4 text-center">
-              Minimize No-Shows with <span className="text-primary">Photo Session Reminder Automation</span>
+              We Help You <span className="text-primary">Minimize No-Shows</span> with Automated Session Reminders
             </h3>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
               Every missed appointment costs you revenue and disrupts your schedule. Automated reminders keep clients committed and prepared.
@@ -3216,7 +3216,7 @@ const Photographers = () => {
           <div className="border-t border-border/50 pt-16 mb-12">
             <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
             <h3 className="text-2xl font-display font-bold text-foreground text-center mb-4">
-              Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">Photography Studios Should Run</span>
+              Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">We Build for Your Photography Studio</span>
             </h3>
             <p className="text-center text-muted-foreground max-w-2xl mx-auto">
               Real offers paired with automated funnels—tailored to each photography specialty
@@ -3353,7 +3353,7 @@ const Photographers = () => {
           {/* Seasonal Campaigns */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Automated <span className="text-primary">Seasonal Campaigns for Photography Studios</span>
+              <span className="text-primary">Seasonal Campaigns</span> We Automate for Your Studio
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -3409,8 +3409,8 @@ const Photographers = () => {
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="Photography Studio Growth Tools"
-            title="Reputation, Referrals &"
-            titleHighlight="Gift Cards"
+            title="We Manage Your Reputation,"
+            titleHighlight="Referrals & Gift Cards"
             description="Turn happy photography clients into your studio's best marketing channel"
             as="h3"
           />
@@ -3422,7 +3422,7 @@ const Photographers = () => {
                 <div className="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center">
                   <Star className="w-6 h-6 text-white" />
                 </div>
-                <h4 className="text-xl font-bold text-foreground">Photography Studio Reputation Management</h4>
+                <h4 className="text-xl font-bold text-foreground">We Handle Your Studio's Reputation Management</h4>
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
@@ -3483,8 +3483,8 @@ const Photographers = () => {
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="AI-Powered for Photography Studios"
-            title="24/7 Studio Booking &"
-            titleHighlight="Client Communication"
+            title="We Power Your 24/7 Studio"
+            titleHighlight="Booking & Communication"
             description="Never miss a photography booking—AI handles studio inquiries around the clock"
             as="h3"
           />
