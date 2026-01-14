@@ -2122,53 +2122,70 @@ const Photographers = () => {
             </div>
           </div>
 
-          {/* Platform Recommendations by Genre */}
-          <div className="space-y-8 mb-16">
-            {paidMediaByGenre.map((genre, i) => {
-              const colors = colorConfig[genre.color];
-              return (
-                <GlowCard key={i} className={`p-6 ${colors.border}`}>
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className={`w-10 h-10 rounded-xl ${colors.bg} flex items-center justify-center`}>
-                      <genre.icon className="w-5 h-5 text-white" />
-                    </div>
-                    <h4 className="font-bold text-foreground">{genre.genre}</h4>
-                  </div>
-
-                  {/* Primary Platforms */}
-                  <div className="mb-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className={`text-xs font-bold uppercase tracking-wider ${colors.text}`}>Primary Platforms</span>
-                      <span className="text-xs text-muted-foreground">— Allocate 70-80% of ad budget</span>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {genre.primary.map((platform, j) => (
-                        <div key={j} className={`p-4 rounded-xl ${colors.bgLight} border ${colors.border}`}>
-                          <div className={`font-medium ${colors.text} text-sm mb-1`}>{platform.name}</div>
-                          <div className="text-xs text-muted-foreground">{platform.reason}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Secondary Platforms */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Secondary Platforms</span>
-                      <span className="text-xs text-muted-foreground">— Testing & retargeting</span>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {genre.secondary.map((platform, j) => (
-                        <div key={j} className="p-4 rounded-xl bg-muted/30 border border-border">
-                          <div className="font-medium text-foreground text-sm mb-1">{platform.name}</div>
-                          <div className="text-xs text-muted-foreground">{platform.reason}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </GlowCard>
-              );
-            })}
+          {/* Platform Recommendations by Genre - Table Format */}
+          <div className="mb-16">
+            <div className="bg-card border border-border rounded-2xl overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b border-border bg-muted/30">
+                      <th className="px-6 py-4 text-left text-sm font-bold text-foreground">Genre</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-primary">
+                        Primary Platforms
+                        <span className="block text-xs font-normal text-muted-foreground mt-0.5">70-80% of budget</span>
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-muted-foreground">
+                        Secondary Platforms
+                        <span className="block text-xs font-normal text-muted-foreground mt-0.5">Testing & retargeting</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    {paidMediaByGenre.map((genre, i) => {
+                      const colors = colorConfig[genre.color];
+                      return (
+                        <tr key={i} className="hover:bg-muted/20 transition-colors">
+                          <td className="px-6 py-4">
+                            <div className="flex items-center gap-3">
+                              <div className={`w-8 h-8 rounded-lg ${colors.bg} flex items-center justify-center shrink-0`}>
+                                <genre.icon className="w-4 h-4 text-white" />
+                              </div>
+                              <span className={`font-semibold ${colors.text} text-sm`}>{genre.genre}</span>
+                            </div>
+                          </td>
+                          <td className="px-6 py-4">
+                            <div className="space-y-2">
+                              {genre.primary.map((platform, j) => (
+                                <div key={j} className="flex items-start gap-2">
+                                  <CheckCircle2 className={`w-4 h-4 ${colors.text} shrink-0 mt-0.5`} />
+                                  <div>
+                                    <span className="font-medium text-foreground text-sm">{platform.name}</span>
+                                    <p className="text-xs text-muted-foreground">{platform.reason}</p>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </td>
+                          <td className="px-6 py-4">
+                            <div className="space-y-2">
+                              {genre.secondary.map((platform, j) => (
+                                <div key={j} className="flex items-start gap-2">
+                                  <div className="w-4 h-4 rounded-full border border-muted-foreground/50 shrink-0 mt-0.5" />
+                                  <div>
+                                    <span className="font-medium text-muted-foreground text-sm">{platform.name}</span>
+                                    <p className="text-xs text-muted-foreground/70">{platform.reason}</p>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
           {/* Retargeting & Lookalike */}
