@@ -2439,55 +2439,67 @@ const Photographers = () => {
             </div>
           </div>
 
-          <div className="space-y-8 mb-16">
-            {socialMediaByGenre.map((genre, i) => {
-              const colors = colorConfig[genre.color];
-              return (
-                <GlowCard key={i} className={`p-6 ${colors.border}`}>
-                  <h4 className={`font-bold ${colors.text} mb-6`}>{genre.genre}</h4>
-                  
-                  {/* Primary Platforms */}
-                  <div className="mb-6">
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className={`text-xs font-bold uppercase tracking-wider ${colors.text}`}>Primary Platforms</span>
-                      <span className="text-xs text-muted-foreground">— Focus 80% of effort here</span>
+          {/* Social Media Strategy Table */}
+          <GlowCard className="p-6 overflow-x-auto mb-16">
+            <table className="w-full min-w-[800px]">
+              <thead>
+                <tr className="border-b border-border">
+                  <th className="text-left py-3 px-4 font-semibold text-foreground">Genre</th>
+                  <th className="text-left py-3 px-4 font-semibold text-foreground">
+                    <div className="flex items-center gap-2">
+                      <span>Primary Platforms</span>
+                      <span className="text-xs text-muted-foreground font-normal">— Focus 80%</span>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {genre.primary.map((platform, j) => (
-                        <div key={j} className={`p-4 rounded-xl border-2 ${colors.border} ${colors.bgLight}`}>
-                          <div className="flex items-center gap-2 mb-2">
-                            <platform.icon className={`w-5 h-5 ${colors.text}`} />
-                            <span className="font-semibold text-foreground">{platform.name}</span>
-                            <span className={`text-xs px-2 py-0.5 rounded-full ${colors.bg} text-white`}>Priority</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{platform.strategy}</p>
+                  </th>
+                  <th className="text-left py-3 px-4 font-semibold text-foreground">
+                    <div className="flex items-center gap-2">
+                      <span>Secondary Platforms</span>
+                      <span className="text-xs text-muted-foreground font-normal">— Test/Campaigns</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {socialMediaByGenre.map((genre, i) => {
+                  const colors = colorConfig[genre.color];
+                  return (
+                    <tr key={i} className="border-b border-border/50 last:border-0">
+                      <td className={`py-4 px-4 font-semibold ${colors.text} whitespace-nowrap`}>
+                        {genre.genre}
+                      </td>
+                      <td className="py-4 px-4">
+                        <div className="space-y-3">
+                          {genre.primary.map((platform, j) => (
+                            <div key={j} className={`p-3 rounded-lg border ${colors.border} ${colors.bgLight}`}>
+                              <div className="flex items-center gap-2 mb-1">
+                                <platform.icon className={`w-4 h-4 ${colors.text}`} />
+                                <span className="font-medium text-foreground text-sm">{platform.name}</span>
+                                <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${colors.bg} text-white`}>Priority</span>
+                              </div>
+                              <p className="text-xs text-muted-foreground">{platform.strategy}</p>
+                            </div>
+                          ))}
                         </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Secondary Platforms */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Secondary Platforms</span>
-                      <span className="text-xs text-muted-foreground">— Test or use for campaigns</span>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {genre.secondary.map((platform, j) => (
-                        <div key={j} className="p-4 bg-muted/30 rounded-xl border border-border/50">
-                          <div className="flex items-center gap-2 mb-2">
-                            <platform.icon className="w-5 h-5 text-muted-foreground" />
-                            <span className="font-medium text-foreground">{platform.name}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">{platform.strategy}</p>
+                      </td>
+                      <td className="py-4 px-4">
+                        <div className="space-y-3">
+                          {genre.secondary.map((platform, j) => (
+                            <div key={j} className="p-3 bg-muted/30 rounded-lg border border-border/50">
+                              <div className="flex items-center gap-2 mb-1">
+                                <platform.icon className="w-4 h-4 text-muted-foreground" />
+                                <span className="font-medium text-foreground text-sm">{platform.name}</span>
+                              </div>
+                              <p className="text-xs text-muted-foreground">{platform.strategy}</p>
+                            </div>
+                          ))}
                         </div>
-                      ))}
-                    </div>
-                  </div>
-                </GlowCard>
-              );
-            })}
-          </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </GlowCard>
 
           {/* LinkedIn Outreach for Headshot Photographers */}
           <div className="bg-gradient-to-br from-blue-500/10 via-blue-500/5 to-transparent rounded-2xl border-2 border-blue-500/30 p-8">
