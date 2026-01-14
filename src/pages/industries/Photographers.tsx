@@ -55,7 +55,8 @@ import {
   CheckCircle,
   AlertTriangle,
   CalendarCheck,
-  BookOpen
+  BookOpen,
+  Settings
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -2269,6 +2270,99 @@ const Photographers = () => {
                       <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
                       <div>
                         <span className="text-foreground text-sm">Monthly reporting</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </GlowCard>
+          </div>
+
+          {/* Google Ad Campaign Management */}
+          <div className="mb-16">
+            <GlowCard className="p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Search className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground">
+                  How We Help Photographers with Google Ad Campaign Management
+                </h3>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Campaign Setup */}
+                <div>
+                  <h4 className="font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Settings className="w-5 h-5" />
+                    Campaign Setup
+                  </h4>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Setup price varies based on the monthly plan chosen. It will automatically get added when you select the plan.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Campaign Creation</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Copywriting</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">A/B Testing of Copy</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Offer Creation</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Conversion Optimization</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Landing Page */}
+                <div>
+                  <h4 className="font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Globe className="w-5 h-5" />
+                    Landing Page
+                  </h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Conversion Landing Page</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Thank You Page</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Development & Layout Only</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Copy Pulled From Existing Site</span>
                       </div>
                     </li>
                   </ul>
