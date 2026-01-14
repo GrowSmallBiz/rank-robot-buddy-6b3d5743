@@ -2272,7 +2272,7 @@ const Photographers = () => {
           {/* Google Ad Campaign Management */}
           <div className="mb-16">
             <GlowCard className="p-8 bg-gradient-to-br from-blue-950/60 via-slate-900/80 to-blue-950/60 border-blue-500/20">
-              <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
                   <svg className="w-7 h-7" viewBox="0 0 24 24">
                     <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
@@ -2285,6 +2285,9 @@ const Photographers = () => {
                   How We Help Photographers with Google Ad Campaign Management
                 </h3>
               </div>
+              <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
+                Google Ads (also known as AdWords, Paid Search, & PPC) lets you "rent" the top spot on search results for your target keywords instead of earning it organically. Our PPC campaigns are built to test and optimize around each keyword set—ensuring you attract the highest quality clicks from engaged clients ready to book your photography services.
+              </p>
               
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Campaign Setup */}
