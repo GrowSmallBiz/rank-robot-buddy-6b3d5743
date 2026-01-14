@@ -395,8 +395,8 @@ const technicalSEOSections = [
 // Content Strategy Features
 const contentStrategy = [
   { 
-    title: "Build a Topical Map", 
-    description: "Strategic content clusters around your photography specialties", 
+    title: "Build a Topical Map—Interconnected Content Clusters Boosting Your Entire Site's Rankings", 
+    description: "Strategic content clusters around your photography specialties",
     icon: Target,
     note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings."
   },
