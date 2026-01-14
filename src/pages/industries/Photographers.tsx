@@ -2182,7 +2182,8 @@ const Photographers = () => {
                   </svg>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-1">How We Help Photographers with Meta Ad Setup</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">How We Help Photographers with Meta Ad Setup</h3>
+                  <p className="text-muted-foreground max-w-2xl mx-auto">Reach your ideal clients where they scroll most. We build scroll-stopping campaigns on Facebook and Instagram that turn engagement into booked sessions.</p>
                 </div>
               </div>
               
