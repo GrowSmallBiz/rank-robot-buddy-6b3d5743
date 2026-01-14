@@ -2274,26 +2274,6 @@ const Photographers = () => {
                   </ul>
                 </div>
               </div>
-
-              {/* Bottom Notes */}
-              <div className="mt-8 pt-6 border-t border-border/50 grid md:grid-cols-2 gap-4">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                  <span>No setup fees</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                  <span>Free Basic ClientCare™ (Optional)</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                  <span>Campaigns must be live before checkout</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                  <span>You set up the ads, initial creative & copy, and we'll take it from there!</span>
-                </div>
-              </div>
             </GlowCard>
           </div>
 
