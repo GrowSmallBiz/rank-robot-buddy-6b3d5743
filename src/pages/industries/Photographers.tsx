@@ -2125,6 +2125,7 @@ const Photographers = () => {
 
           {/* Platform Recommendations by Genre - Table Format */}
           <div className="mb-16">
+            <h3 className="text-2xl font-bold text-foreground text-center mb-6">Ad Platform Recommendations by Photography Genre</h3>
             <div className="bg-card border border-border rounded-2xl overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
