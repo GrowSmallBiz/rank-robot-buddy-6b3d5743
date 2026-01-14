@@ -1669,11 +1669,11 @@ const Photographers = () => {
           <div id="seo-keywords" className="mb-12 scroll-mt-24">
             <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
               <Search className="w-5 h-5 text-primary" />
-              Keyword Research: Find What Photography Clients Search
+              We Target the Keywords Your Ideal Clients Are Searching
             </h3>
             <div className="bg-muted/30 rounded-xl p-4 mb-6 border border-border">
               <p className="text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground">Keywords photographers need:</span>{" "}
+                <span className="font-semibold text-foreground">We research and target:</span>{" "}
                 <span className="text-primary font-medium">Long-tail keywords</span> (e.g., "outdoor family photographer in Austin") for targeted traffic,{" "}
                 <span className="text-primary font-medium">high-intent keywords</span> (e.g., "book wedding photographer near me") for ready-to-buy clients,{" "}
                 <span className="text-primary font-medium">location-based keywords</span> for local SEO, and{" "}
@@ -1720,7 +1720,7 @@ const Photographers = () => {
           <div id="seo-competitors" className="mb-12 scroll-mt-24">
             <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
               <Target className="w-5 h-5 text-primary" />
-              Competitor Analysis: Outrank Other Photographers
+              We Analyze & Track Your Competition & Position You Above Them
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <GlowCard className="p-5">
@@ -1840,7 +1840,7 @@ const Photographers = () => {
           <div id="seo-content" className="mb-12 scroll-mt-24">
             <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <FileSearch className="w-5 h-5 text-primary" />
-              Content Strategy That Ranks on Google & AI Recommendations
+              Content Strategy Designed to Rank on Google & AI
             </h3>
             
             {/* Build a Topical Map - Full Width */}
@@ -1953,7 +1953,7 @@ const Photographers = () => {
           <div id="seo-ai-visibility" className="mb-12 scroll-mt-24">
             <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <Bot className="w-6 h-6 text-primary" />
-              AI & LLM Visibility: Get Recommended by AI Search
+              We Get Your Studio Recommended by AI Search Engines
             </h3>
             <div className="grid md:grid-cols-1 gap-6">
               {llmVisibilityServices.map((service, i) => (
@@ -1987,7 +1987,7 @@ const Photographers = () => {
           <div id="seo-authority" className="mb-12 scroll-mt-24">
             <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <Shield className="w-5 h-5 text-primary" />
-              Build Online Authority & Photography Backlinks
+              We Build Your Online Authority & Backlink Profile
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {onlineAuthorityServices.map((service, i) => (
