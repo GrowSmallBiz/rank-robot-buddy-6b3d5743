@@ -3126,6 +3126,17 @@ const Photographers = () => {
 
           {/* No-Show Reduction Section */}
           <div className="mb-16 mt-16 border-t border-border/50 pt-16">
+            {/* Camera Icon Illustration */}
+            <div className="flex justify-center mb-6">
+              <div className="relative">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+                  <Aperture className="w-8 h-8 text-primary" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center">
+                  <CalendarCheck className="w-3 h-3 text-white" />
+                </div>
+              </div>
+            </div>
             <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4 text-center">
               Minimize No-Shows with <span className="text-primary">Photo Session Reminder Automation</span>
             </h3>
