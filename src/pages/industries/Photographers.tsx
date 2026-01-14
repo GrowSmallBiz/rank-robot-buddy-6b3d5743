@@ -3125,7 +3125,7 @@ const Photographers = () => {
           {/* No-Show Reduction Section */}
           <div className="mb-16 mt-16 border-t border-border/50 pt-16">
             <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4 text-center">
-              Minimize No-Shows with <span className="text-primary">Session Reminder Automation</span>
+              Minimize No-Shows with <span className="text-primary">Photo Session Reminder Automation</span>
             </h3>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
               Every missed appointment costs you revenue and disrupts your schedule. Automated reminders keep clients committed and prepared.
