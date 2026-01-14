@@ -55,8 +55,10 @@ import {
   CheckCircle,
   AlertTriangle,
   CalendarCheck,
-  BookOpen,
-  Settings
+  Settings,
+  Aperture,
+  Images,
+  Focus
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -719,7 +721,7 @@ const emailNurturePoints = [
 const sessionReminderWorkflows = [
   {
     sessionType: "Consultation Session",
-    icon: MessageSquare,
+    icon: Focus,
     color: "emerald",
     description: "Pre-meeting reminder sequence for discovery calls and consultations",
     noShowImpact: "Missed consultations waste your prep time and delay their booking decision",
@@ -732,7 +734,7 @@ const sessionReminderWorkflows = [
   },
   {
     sessionType: "Portrait Session",
-    icon: Camera,
+    icon: Aperture,
     color: "violet",
     description: "Pre-session reminder sequence for photo sessions",
     noShowImpact: "No-shows mean lost revenue, wasted location reservations, and scheduling gaps",
@@ -745,7 +747,7 @@ const sessionReminderWorkflows = [
   },
   {
     sessionType: "Ordering Session (IPS)",
-    icon: DollarSign,
+    icon: Images,
     color: "amber",
     description: "Pre-sales meeting reminder for in-person ordering appointments",
     noShowImpact: "Missed IPS = delayed revenue, gallery expiration issues, decision fatigue",
@@ -3226,8 +3228,8 @@ const Photographers = () => {
             {/* Key Takeaway */}
             <div className="bg-card border border-border rounded-2xl p-6 text-center">
               <div className="flex items-center justify-center gap-2 mb-3">
-                <BookOpen className="w-5 h-5 text-primary" />
-                <span className="font-semibold text-foreground">Why This Matters</span>
+                <Camera className="w-5 h-5 text-primary" />
+                <span className="font-semibold text-foreground">Why This Matters for Photographers</span>
               </div>
               <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
                 A single no-show can cost you <span className="text-foreground font-medium">$200-$2,000+</span> in lost session revenue. 
