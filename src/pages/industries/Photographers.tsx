@@ -58,7 +58,8 @@ import {
   Settings,
   Aperture,
   Images,
-  Focus
+  Focus,
+  ArrowDown
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -1377,6 +1378,27 @@ const Photographers = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Visual Transition: From Problems to Solution */}
+          <div className="relative py-12">
+            {/* Connecting line */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-amber-500/50 via-primary to-primary/50" />
+            
+            {/* Transition message */}
+            <div className="relative z-10 flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-primary flex items-center justify-center shadow-lg shadow-primary/30 mb-4">
+                <ArrowDown className="w-6 h-6 text-white animate-bounce" />
+              </div>
+              <div className="bg-card/90 backdrop-blur-sm border border-primary/30 rounded-2xl px-8 py-4 text-center max-w-xl shadow-xl">
+                <p className="text-lg font-semibold text-foreground mb-1">
+                  Sound familiar? <span className="text-primary">There's a better way.</span>
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Instead of juggling disconnected tools, imagine one integrated system handling it all.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* See the Complete Picture - Predictable Marketing System */}
