@@ -2286,7 +2286,7 @@ const Photographers = () => {
                 </h3>
               </div>
               <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Skip the SEO wait—pay to appear at the top when couples and families search for photographers. We continuously test and refine your campaigns to maximize bookings, not just clicks.
+                "Pay rent" to acquire the top spot for your photography business keywords, instead of earning it through SEO rankings. We test and optimize every campaign to maximize quality bookings.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8">
