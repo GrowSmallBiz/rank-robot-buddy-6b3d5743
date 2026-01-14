@@ -75,12 +75,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-// Ad Creative Images (Genre Section)
-import adCreativeFamilyOutdoor from "@/assets/ad-creative-family-outdoor-cta.jpg";
+// Ad Creative Images
+import adCreativeFamilyPortrait from "@/assets/ad-creative-portrait-family.jpg";
 import adCreativeMaternity from "@/assets/ad-creative-maternity-newborn.jpg";
-import adCreativeSeniorFashion from "@/assets/ad-creative-senior-fashion-cta.jpg";
-import adCreativeWeddingCta from "@/assets/ad-creative-wedding-cta.jpg";
-import adCreativeHeadshotMale from "@/assets/ad-creative-headshot-male-cta.jpg";
+import adCreativeSenior from "@/assets/ad-creative-senior-portrait-female.jpg";
+import adCreativeWedding from "@/assets/ad-creative-wedding.jpg";
+import adCreativeBranding from "@/assets/ad-creative-branding-headshot.jpg";
 // Keyword Research Section Images
 import adCreativePortraitStudio from "@/assets/ad-creative-portrait-family-studio.jpg";
 import adCreativeWeddingClean from "@/assets/ad-creative-wedding-clean.jpg";
@@ -154,9 +154,9 @@ const photographyAdCreatives = [
   {
     id: "family",
     genre: "Family Portraits",
-    image: adCreativeFamilyOutdoor,
+    image: adCreativeFamilyPortrait,
     platforms: ["Facebook", "Instagram"],
-    description: "High-end outdoor family portraits with golden hour lighting"
+    description: "Warm, emotional family moments that resonate with parents"
   },
   {
     id: "maternity",
@@ -168,23 +168,23 @@ const photographyAdCreatives = [
   {
     id: "senior",
     genre: "High School Seniors",
-    image: adCreativeSeniorFashion,
+    image: adCreativeSenior,
     platforms: ["Facebook", "Instagram", "TikTok"],
-    description: "Full-body fashion poses with trendy urban vibes"
+    description: "Modern, trendy vibes that appeal to teens and parents"
   },
   {
     id: "wedding",
     genre: "Wedding Photography",
-    image: adCreativeWeddingCta,
+    image: adCreativeWedding,
     platforms: ["Pinterest", "Instagram", "The Knot"],
-    description: "Romantic golden hour moments for engaged couples"
+    description: "Romantic, aspirational content for engaged couples"
   },
   {
     id: "branding",
     genre: "Headshots & Branding",
-    image: adCreativeHeadshotMale,
+    image: adCreativeBranding,
     platforms: ["LinkedIn", "Facebook"],
-    description: "Executive headshots for business professionals"
+    description: "Professional, polished imagery for business owners"
   }
 ];
 
