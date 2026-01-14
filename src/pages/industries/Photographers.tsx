@@ -2416,6 +2416,9 @@ const Photographers = () => {
           </div>
 
           {/* Social Media Strategy Table */}
+          <h3 className="text-xl font-bold text-foreground mb-6 text-center">
+            Social Media Platform Recommendations by Photography Genre
+          </h3>
           <GlowCard className="p-6 overflow-x-auto mb-16">
             <table className="w-full min-w-[800px]">
               <thead>
