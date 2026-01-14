@@ -1570,26 +1570,12 @@ const Photographers = () => {
         </div>
       </section>
 
-      {/* SEO Section - EMERALD/TEAL THEME */}
-      <section id="seo" className="py-24 relative scroll-mt-24">
-        {/* Distinct Section Background - Emerald Theme */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/80 via-teal-950/60 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent" />
-        
-        {/* Section Identifier Banner */}
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-500 via-teal-400 to-emerald-500" />
-        
+      {/* SEO Section - LIGHT */}
+      <section id="seo" className="py-24 relative bg-slate-800/40 scroll-mt-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-teal-500/5" />
         <div className="container mx-auto px-4 relative z-10">
-          {/* Section Badge */}
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/20 border border-emerald-500/30 rounded-full backdrop-blur-sm">
-              <Search className="w-4 h-4 text-emerald-400" />
-              <span className="text-sm font-semibold text-emerald-400 uppercase tracking-wider">Organic Search Strategy</span>
-            </div>
-          </div>
-          
           {/* Why AI Search Ranking Matters - Hero Banner */}
-          <div className="mb-16 p-8 md:p-12 bg-gradient-to-br from-emerald-500/20 via-teal-500/10 to-cyan-500/10 rounded-3xl border border-emerald-500/30 relative overflow-hidden">
+          <div className="mb-16 p-8 md:p-12 bg-gradient-to-br from-primary/20 via-purple-500/10 to-blue-500/10 rounded-3xl border border-primary/30 relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
               <div className="absolute top-0 left-0 w-64 h-64 bg-primary rounded-full blur-3xl" />
@@ -2053,24 +2039,9 @@ const Photographers = () => {
         sectionClassName="py-16"
       />
 
-      {/* Paid Media Section - AMBER/ORANGE THEME */}
-      <section id="paid-media" className="py-24 relative scroll-mt-24">
-        {/* Distinct Section Background - Amber Theme */}
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-950/80 via-orange-950/60 to-background" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent" />
-        
-        {/* Section Identifier Banner */}
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 via-orange-400 to-amber-500" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          {/* Section Badge */}
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-full backdrop-blur-sm">
-              <Megaphone className="w-4 h-4 text-amber-400" />
-              <span className="text-sm font-semibold text-amber-400 uppercase tracking-wider">Paid Advertising Strategy</span>
-            </div>
-          </div>
-          
+      {/* Paid Media Section - DARK */}
+      <section id="paid-media" className="py-24 bg-background scroll-mt-24">
+        <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Paid Media"
             title="Advertising for"
