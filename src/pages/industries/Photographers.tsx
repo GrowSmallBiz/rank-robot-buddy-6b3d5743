@@ -1794,7 +1794,7 @@ const Photographers = () => {
                 <h5 className="font-bold text-foreground">{contentStrategy[0].title}</h5>
               </div>
               <p className="text-sm text-muted-foreground mb-3">{contentStrategy[0].description}</p>
-              <p className="text-xs text-primary/80 italic border-l-2 border-primary/30 pl-3 mb-4">
+              <p className="text-sm text-muted-foreground border-l-2 border-primary/30 pl-3 mb-4">
                 {contentStrategy[0].note}
               </p>
               <div className="mt-4 rounded-lg overflow-hidden border border-border/50">
