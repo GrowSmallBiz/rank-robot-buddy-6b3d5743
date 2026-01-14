@@ -402,7 +402,7 @@ const contentStrategy = [
     note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings."
   },
   { 
-    title: "Generate Articles Google & AI Platforms Want to Read", 
+    title: "We Create Articles That Rank on Google & AI Search", 
     description: "AI-assisted content creation optimized for search and client education", 
     icon: FileSearch,
     note: "Every article is measured for quality using readability scores, keyword optimization, and engagement metrics—ensuring your content ranks and converts."
@@ -1880,7 +1880,7 @@ const Photographers = () => {
               <div className="mb-6">
                 <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
                   <BarChart3 className="w-4 h-4 text-amber-500" />
-                  Content Insights
+                  Content Insights — How We Measure What Works
                 </h6>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {contentInsightsImages.map((img, i) => (
@@ -1899,7 +1899,7 @@ const Photographers = () => {
               <div>
                 <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-amber-500" />
-                  Content Agents & Content Refiners
+                  Human Strategy + AI Tools for Content Excellence
                 </h6>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {contentAgentsRefinersImages.map((img, i) => (
@@ -1920,7 +1920,7 @@ const Photographers = () => {
           <div id="seo-local" className="mb-12 scroll-mt-24">
             <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <MapPin className="w-5 h-5 text-primary" />
-              Local SEO & Google Business Profile for Photographers
+              We Optimize Your Local SEO & Google Business Profile
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {localGBPServices.map((service, i) => (
