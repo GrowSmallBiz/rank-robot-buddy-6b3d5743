@@ -1840,7 +1840,7 @@ const Photographers = () => {
           <div id="seo-content" className="mb-12 scroll-mt-24">
             <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <FileSearch className="w-5 h-5 text-primary" />
-              Content Strategy Designed to Rank on Google & AI
+              Content Strategy Designed to Rank on Google & AI Search
             </h3>
             
             {/* Build a Topical Map - Full Width */}
