@@ -560,40 +560,21 @@ const paidMediaByGenre = [
   }
 ];
 
-// Retargeting & Lookalike Strategy
-const retargetingStrategy = [
+// Tracking & Retargeting Essentials - Combined
+const trackingRetargetingEssentials = [
   {
-    title: "Website Visitor Retargeting",
-    description: "Show ads to people who visited your portfolio but didn't inquire. Stay top-of-mind as they compare photographers.",
-    icon: RefreshCw
-  },
-  {
-    title: "Lookalike Audiences",
-    description: "Upload your past client list. Let Facebook/Google find similar people in your area who match your ideal client profile.",
-    icon: Users
-  },
-  {
-    title: "Engagement Retargeting",
-    description: "Retarget people who engaged with your social content—liked posts, watched videos, or saved your work.",
-    icon: Eye
-  }
-];
-
-// Tracking Setup
-const trackingSetup = [
-  {
-    name: "Facebook Pixel",
-    description: "Track website visitors, measure conversions, and build retargeting audiences from your Meta ads.",
+    title: "Facebook Pixel + Retargeting",
+    description: "Track visitors, build retargeting audiences, and show ads to people who viewed your portfolio but didn't inquire.",
     icon: Facebook
   },
   {
-    name: "Google Tag Manager",
-    description: "Centralized tag management for all your tracking codes—easy to update without touching website code.",
-    icon: Database
+    title: "Lookalike Audiences",
+    description: "Upload your client list—let Facebook/Google find similar people in your area who match your ideal client.",
+    icon: Users
   },
   {
-    name: "Google Analytics 4",
-    description: "Understand your website traffic, see which pages drive inquiries, and track the full customer journey.",
+    title: "Google Analytics & GTM",
+    description: "Track your full customer journey, see which pages drive inquiries, and manage all tracking codes centrally.",
     icon: BarChart3
   }
 ];
@@ -2384,37 +2365,19 @@ const Photographers = () => {
             </GlowCard>
           </div>
 
-          {/* Retargeting & Lookalike */}
-          <div className="mb-16">
-            <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Lookalike Audiences & Retargeting for Photography Studios
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              {retargetingStrategy.map((strategy, i) => (
-                <GlowCard key={i} className="p-6">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <strategy.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="font-semibold text-foreground mb-2">{strategy.title}</h4>
-                  <p className="text-sm text-muted-foreground">{strategy.description}</p>
-                </GlowCard>
-              ))}
-            </div>
-          </div>
-
-          {/* Tracking Setup */}
+          {/* Tracking & Retargeting Essentials - Merged */}
           <div className="bg-card border border-border rounded-2xl p-8">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Essential Tracking Setup for Photography Studios
+              Tracking & Retargeting Essentials
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              {trackingSetup.map((item, i) => (
+              {trackingRetargetingEssentials.map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
                     <item.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">{item.name}</h4>
+                    <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>
                     <p className="text-sm text-muted-foreground">{item.description}</p>
                   </div>
                 </div>
