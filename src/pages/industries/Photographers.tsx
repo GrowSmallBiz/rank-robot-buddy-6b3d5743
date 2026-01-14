@@ -80,7 +80,7 @@ import adCreativeFamilyOutdoor from "@/assets/ad-creative-family-outdoor-cta.jpg
 import adCreativeMaternity from "@/assets/ad-creative-maternity-newborn.jpg";
 import adCreativeSeniorFashion from "@/assets/ad-creative-senior-fashion-cta.jpg";
 import adCreativeWeddingCta from "@/assets/ad-creative-wedding-cta.jpg";
-import adCreativeHeadshotMale from "@/assets/ad-creative-headshot-male-cta.jpg";
+import adCreativeHeadshotMale from "@/assets/ad-creative-headshot-female.jpg";
 // Keyword Research Section Images
 import adCreativePortraitStudio from "@/assets/ad-creative-portrait-family-studio.jpg";
 import adCreativeWeddingClean from "@/assets/ad-creative-wedding-clean.jpg";
