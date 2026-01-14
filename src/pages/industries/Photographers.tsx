@@ -1593,7 +1593,6 @@ const Photographers = () => {
                 { id: "seo-local", label: "Local SEO & GBP", icon: "📍" },
                 { id: "seo-ai-visibility", label: "AI Visibility", icon: "🤖" },
                 { id: "seo-authority", label: "Backlinks", icon: "🔗" },
-                { id: "seo-crm", label: "CRM & Automation", icon: "💼" },
               ].map((item) => (
                 <a
                   key={item.id}
@@ -1957,56 +1956,6 @@ const Photographers = () => {
             </div>
           </div>
 
-          {/* CRM Integration */}
-          <div id="seo-crm" className="mb-8 scroll-mt-24">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center">
-                <Database className="w-5 h-5 text-violet-500" />
-              </div>
-              <h2 className="text-2xl font-display font-bold text-foreground">CRM & Marketing Automation</h2>
-            </div>
-
-            <p className="text-muted-foreground mb-8 max-w-3xl">
-              The importance of real-time integration cannot be overstated. When a lead inquires, 
-              every second counts. Our CRM connects all your marketing channels and automates follow-up 
-              so no opportunity slips through the cracks.
-            </p>
-
-            <GlowCard className="p-8 border-violet-500/30">
-              <div className="grid md:grid-cols-3 gap-8">
-                <div>
-                  <h5 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                    <Zap className="w-5 h-5 text-violet-500" />
-                    Instant Lead Capture
-                  </h5>
-                  <p className="text-sm text-muted-foreground">
-                    Website inquiries, social DMs, and calls all flow into one unified inbox. 
-                    Automated responses go out in seconds—not hours.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                    <RefreshCw className="w-5 h-5 text-violet-500" />
-                    Automated Nurturing
-                  </h5>
-                  <p className="text-sm text-muted-foreground">
-                    Pre-built email and SMS sequences keep leads warm while you're shooting. 
-                    Personalized follow-ups based on their inquiry type.
-                  </p>
-                </div>
-                <div>
-                  <h5 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                    <BarChart3 className="w-5 h-5 text-violet-500" />
-                    Pipeline Visibility
-                  </h5>
-                  <p className="text-sm text-muted-foreground">
-                    See exactly where every lead is—from inquiry to booked to gallery delivered. 
-                    Never wonder about your upcoming revenue again.
-                  </p>
-                </div>
-              </div>
-            </GlowCard>
-          </div>
 
           {/* Back to SEO Top */}
           <div className="text-center pt-8 border-t border-border/50">
