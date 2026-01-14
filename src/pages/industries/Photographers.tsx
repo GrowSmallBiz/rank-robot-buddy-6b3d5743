@@ -1609,10 +1609,10 @@ const Photographers = () => {
 
           {/* Keyword Research */}
           <div id="seo-keywords" className="mb-12 scroll-mt-24">
-            <h4 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
+            <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
               <Search className="w-5 h-5 text-primary" />
               Keyword Research: Find What Photography Clients Search
-            </h4>
+            </h3>
             <div className="bg-muted/30 rounded-xl p-4 mb-6 border border-border">
               <p className="text-sm text-muted-foreground">
                 <span className="font-semibold text-foreground">Keywords photographers need:</span>{" "}
@@ -1660,10 +1660,10 @@ const Photographers = () => {
 
           {/* Competitor Analysis */}
           <div id="seo-competitors" className="mb-12 scroll-mt-24">
-            <h4 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
+            <h3 className="text-xl font-display font-bold text-foreground mb-4 flex items-center gap-2">
               <Target className="w-5 h-5 text-primary" />
               Competitor Analysis: Outrank Other Photographers
-            </h4>
+            </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <GlowCard className="p-5">
                 <div className="flex items-center gap-3 mb-3">
@@ -1714,10 +1714,10 @@ const Photographers = () => {
 
           {/* Technical SEO */}
           <div id="seo-technical" className="mb-12 scroll-mt-24">
-            <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <FileSearch className="w-5 h-5 text-primary" />
               Technical SEO for Photography Websites
-            </h4>
+            </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {technicalSEOSections.map((section, idx) => (
                 <GlowCard key={idx} className="p-0 overflow-hidden border-emerald-500/30">
@@ -1780,10 +1780,10 @@ const Photographers = () => {
 
           {/* 4. Content Strategy */}
           <div id="seo-content" className="mb-12 scroll-mt-24">
-            <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <FileSearch className="w-5 h-5 text-primary" />
               Content Strategy That Ranks on Google & AI Recommendations
-            </h4>
+            </h3>
             
             {/* Build a Topical Map - Full Width */}
             <GlowCard className="p-6 mb-6">
@@ -1860,10 +1860,10 @@ const Photographers = () => {
 
           {/* 5. Local & Google Business Profile */}
           <div id="seo-local" className="mb-12 scroll-mt-24">
-            <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <MapPin className="w-5 h-5 text-primary" />
               Local SEO & Google Business Profile for Photographers
-            </h4>
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {localGBPServices.map((service, i) => (
                 <GlowCard key={i} className="p-0 overflow-hidden">
@@ -1893,10 +1893,10 @@ const Photographers = () => {
 
           {/* 6. LLM Visibility & Rank Tracking */}
           <div id="seo-ai-visibility" className="mb-12 scroll-mt-24">
-            <h4 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+            <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <Bot className="w-6 h-6 text-primary" />
               AI & LLM Visibility: Get Recommended by AI Search
-            </h4>
+            </h3>
             <div className="grid md:grid-cols-1 gap-6">
               {llmVisibilityServices.map((service, i) => (
                 <GlowCard key={i} className="p-6">
@@ -1927,10 +1927,10 @@ const Photographers = () => {
 
           {/* 7. Online Authority */}
           <div id="seo-authority" className="mb-12 scroll-mt-24">
-            <h4 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
               <Shield className="w-5 h-5 text-primary" />
               Build Online Authority & Photography Backlinks
-            </h4>
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               {onlineAuthorityServices.map((service, i) => (
                 <GlowCard key={i} className="overflow-hidden border-cyan-500/30">
@@ -1963,7 +1963,7 @@ const Photographers = () => {
               <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center">
                 <Database className="w-5 h-5 text-violet-500" />
               </div>
-              <h4 className="text-2xl font-display font-bold text-foreground">CRM & Marketing Automation</h4>
+              <h2 className="text-2xl font-display font-bold text-foreground">CRM & Marketing Automation</h2>
             </div>
 
             <p className="text-muted-foreground mb-8 max-w-3xl">
