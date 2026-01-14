@@ -401,7 +401,7 @@ const contentStrategy = [
     note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings."
   },
   { 
-    title: "Generate Articles", 
+    title: "Generate Articles Google & AI Platforms Want to Read", 
     description: "AI-assisted content creation optimized for search and client education", 
     icon: FileSearch,
     note: "Every article is measured for quality using readability scores, keyword optimization, and engagement metrics—ensuring your content ranks and converts."
