@@ -2183,7 +2183,6 @@ const Photographers = () => {
                 </div>
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-foreground mb-1">How We Help Photographers with Meta Ad Setup</h3>
-                  <p className="text-muted-foreground">Minimum Ad Spend of $1,500</p>
                 </div>
               </div>
               
