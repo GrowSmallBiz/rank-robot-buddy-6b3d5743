@@ -129,6 +129,9 @@ import backlinkAnalyticsDashboard from "@/assets/backlink-analytics-dashboard.pn
 // AI Growth System Funnel
 import aiGrowthSystemFunnel from "@/assets/ai-growth-system-funnel.webp";
 
+// Predictable Marketing System
+import predictableMarketingSystem from "@/assets/predictable-marketing-system.png";
+
 // Email & SMS Workflow Diagram
 import emailSmsWorkflowDiagram from "@/assets/email-sms-workflow-diagram.png";
 
@@ -2074,20 +2077,20 @@ const Photographers = () => {
                             alt={`${creative.genre} ad creative example`}
                             className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
                           />
-                          <div className="absolute top-3 left-3 flex flex-wrap gap-1">
+                        </div>
+                        <div className="p-4 bg-card">
+                          <h4 className="font-bold text-foreground text-lg">{creative.genre}</h4>
+                          <p className="text-muted-foreground text-sm mb-3">{creative.description}</p>
+                          <div className="flex flex-wrap gap-1">
                             {creative.platforms.map((platform, i) => (
                               <span 
                                 key={i} 
-                                className="px-2 py-0.5 bg-black/70 text-white text-xs rounded-full backdrop-blur-sm"
+                                className="px-2 py-0.5 bg-primary/20 text-primary text-xs rounded-full"
                               >
                                 {platform}
                               </span>
                             ))}
                           </div>
-                        </div>
-                        <div className="p-4 bg-card">
-                          <h4 className="font-bold text-foreground text-lg">{creative.genre}</h4>
-                          <p className="text-muted-foreground text-sm">{creative.description}</p>
                         </div>
                       </GlowCard>
                     </CarouselItem>
@@ -2467,6 +2470,55 @@ const Photographers = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* See the Complete Picture - Predictable Marketing System */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <span className="inline-block px-4 py-1.5 bg-primary/20 text-primary text-sm font-semibold rounded-full mb-4">
+                🎯 The Complete Picture
+              </span>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4">
+                See How It All <span className="text-transparent bg-clip-text bg-gradient-primary italic">Works Together</span>
+              </h3>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                A predictable marketing system that attracts new clients, nurtures leads automatically, and turns one-time sessions into lifelong relationships—all working in perfect harmony.
+              </p>
+            </div>
+
+            <div 
+              className="relative p-6 md:p-10 rounded-2xl overflow-hidden"
+              style={{ 
+                border: '2px solid rgba(255, 127, 80, 0.4)', 
+                backgroundColor: 'rgba(15, 23, 42, 0.95)',
+                boxShadow: '0 0 40px rgba(255, 127, 80, 0.15), 0 0 80px rgba(255, 127, 80, 0.1)'
+              }}
+            >
+              {/* Subtle glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 pointer-events-none" />
+              
+              {/* Main Image */}
+              <div className="relative z-10 flex justify-center">
+                <img 
+                  src={predictableMarketingSystem} 
+                  alt="Predictable Marketing System showing the complete client acquisition and retention funnel for photography studios" 
+                  className="w-full max-w-5xl rounded-xl shadow-2xl shadow-primary/10"
+                />
+              </div>
+
+              {/* Bottom CTA */}
+              <div className="relative z-10 mt-8 text-center">
+                <p className="text-muted-foreground mb-4">
+                  Ready to build your own predictable marketing machine?
+                </p>
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <Link to="/free-assessment">
+                    Get Your Free Strategy Session
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
