@@ -1435,18 +1435,6 @@ const Photographers = () => {
                 />
               </div>
 
-              {/* Bottom CTA */}
-              <div className="relative z-10 mt-8 text-center">
-                <p className="text-muted-foreground mb-4">
-                  Ready to build your own predictable marketing machine?
-                </p>
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link to="/free-assessment">
-                    Get Your Free Strategy Session
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
             </div>
           </div>
 
@@ -1479,7 +1467,7 @@ const Photographers = () => {
                   <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                     <Button variant="hero" size="xl" asChild>
                       <Link to="/free-assessment?industry=photographer">
-                        Get Your Custom Growth Strategy
+                        Get Your Free Strategy Session
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </Link>
                     </Button>
