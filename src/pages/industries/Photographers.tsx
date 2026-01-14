@@ -2188,6 +2188,115 @@ const Photographers = () => {
             </div>
           </div>
 
+          {/* How We Help With Meta Ad Setup */}
+          <div className="mb-16">
+            <GlowCard className="p-8 bg-slate-900/80 border-primary/20">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-foreground mb-2">How We Help Photographers with Meta Ad Setup</h3>
+                <p className="text-muted-foreground">Minimum Ad Spend of $1,500</p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Campaign Management */}
+                <div>
+                  <h4 className="font-semibold text-primary mb-4 flex items-center gap-2">
+                    <Target className="w-5 h-5" />
+                    Campaign Management
+                  </h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Management of 1 campaign and up to 5 ad sets</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Max 4 new ad copy tests per month</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Max 4 new creatives per month</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Weekly optimization for 1-2 offers</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Monthly reporting</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Lead Gen Campaign Setup */}
+                <div>
+                  <h4 className="font-semibold text-primary mb-4 flex items-center gap-2">
+                    <UserPlus className="w-5 h-5" />
+                    Lead Gen Campaign Setup (Add-On)
+                  </h4>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Let our experts set up a lead-generating campaign for you. This add-on can be bundled with our monthly management plan if you'd like us to handle the initial setup.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Includes setup of 1 ad campaign</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">New creatives as needed (3-4 on avg.)</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Copywriting included</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Retargeting pixel & Lead form setup</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Bottom Notes */}
+              <div className="mt-8 pt-6 border-t border-border/50 grid md:grid-cols-2 gap-4">
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                  <span>No setup fees</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                  <span>Free Basic ClientCare™ (Optional)</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                  <span>Campaigns must be live before checkout</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                  <span>You set up the ads, initial creative & copy, and we'll take it from there!</span>
+                </div>
+              </div>
+            </GlowCard>
+          </div>
+
           {/* Retargeting & Lookalike */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
