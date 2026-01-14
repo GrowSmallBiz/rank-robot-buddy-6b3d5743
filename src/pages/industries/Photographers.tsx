@@ -2044,7 +2044,7 @@ const Photographers = () => {
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Paid Media"
-            title="Advertising for"
+            title="We Run High-Converting Ads for"
             titleHighlight="Photographers"
             description="Strategic ad platform recommendations by photography genre"
           />
@@ -2052,7 +2052,7 @@ const Photographers = () => {
           {/* Ad Creatives Carousel */}
           <div className="mb-16">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Photography Ad Creatives by Genre
+              Ad Creatives We Design for Your Genre
             </h3>
             <div className="relative px-12">
               <Carousel
@@ -2115,7 +2115,7 @@ const Photographers = () => {
 
           {/* Platform Recommendations by Genre - Table Format */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-foreground text-center mb-6">Ad Platform Recommendations by Photography Genre</h3>
+            <h3 className="text-2xl font-bold text-foreground text-center mb-6">Where We Run Your Ads — Platform Strategy by Genre</h3>
             <div className="bg-card border border-border rounded-2xl overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
@@ -2380,7 +2380,7 @@ const Photographers = () => {
           {/* Tracking & Retargeting Essentials - Merged */}
           <div className="bg-card border border-border rounded-2xl p-8">
             <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-              Tracking & Retargeting Essentials
+              We Set Up Tracking & Retargeting for You
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {trackingRetargetingEssentials.map((item, i) => (
@@ -2405,8 +2405,8 @@ const Photographers = () => {
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="Organic Social"
-            title="Social Media Strategy for"
-            titleHighlight="Photographers"
+            title="We Build Your Social Media"
+            titleHighlight="Strategy"
             description="Platform-specific strategies for each photography genre"
           />
 
@@ -2429,7 +2429,7 @@ const Photographers = () => {
 
           {/* Social Media Strategy Table */}
           <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-            Social Media Platform Recommendations by Photography Genre
+            Where We Focus Your Social Presence — By Genre
           </h3>
           <GlowCard className="p-6 overflow-x-auto mb-16">
             <table className="w-full min-w-[800px]">
@@ -2546,7 +2546,7 @@ const Photographers = () => {
           {/* H2 Title */}
           <div className="text-center mb-16 animate-fade-up">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-              Photography Studios's <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI Client Growth System</span>
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI Client Growth System</span> for Photography Studios
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Stop chasing leads manually. Build an automated system that attracts, nurtures, converts, and retains clients—while you focus on your craft.
