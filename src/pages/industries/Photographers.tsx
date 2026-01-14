@@ -2285,8 +2285,8 @@ const Photographers = () => {
                   How We Help Photographers with Google Ad Campaign Management
                 </h3>
               </div>
-              <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Google Ads (also known as AdWords, Paid Search, & PPC) lets you "rent" the top spot on search results for your target keywords instead of earning it organically. Our PPC campaigns are built to test and optimize around each keyword set—ensuring you attract the highest quality clicks from engaged clients ready to book your photography services.
+              <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Skip the SEO wait—pay to appear at the top when couples and families search for photographers. We continuously test and refine your campaigns to maximize bookings, not just clicks.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8">
