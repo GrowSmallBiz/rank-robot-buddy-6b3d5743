@@ -2197,6 +2197,43 @@ const Photographers = () => {
               </div>
               
               <div className="grid md:grid-cols-2 gap-8">
+                {/* Lead Gen Campaign Setup */}
+                <div>
+                  <h4 className="font-semibold text-primary mb-4 flex items-center gap-2">
+                    <UserPlus className="w-5 h-5" />
+                    Lead Gen Campaign Setup
+                  </h4>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Let our experts set up a lead-generating campaign for you. This can be bundled with our monthly management plan if you'd like us to handle the initial setup.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Includes setup of 1 ad campaign</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">New creatives as needed (3-4 on avg.)</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Copywriting included</span>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
+                      <div>
+                        <span className="text-foreground text-sm">Retargeting pixel & Lead form setup</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
                 {/* Campaign Management */}
                 <div>
                   <h4 className="font-semibold text-primary mb-4 flex items-center gap-2">
@@ -2232,43 +2269,6 @@ const Photographers = () => {
                       <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
                       <div>
                         <span className="text-foreground text-sm">Monthly reporting</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Lead Gen Campaign Setup */}
-                <div>
-                  <h4 className="font-semibold text-primary mb-4 flex items-center gap-2">
-                    <UserPlus className="w-5 h-5" />
-                    Lead Gen Campaign Setup (Add-On)
-                  </h4>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Let our experts set up a lead-generating campaign for you. This add-on can be bundled with our monthly management plan if you'd like us to handle the initial setup.
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
-                      <div>
-                        <span className="text-foreground text-sm">Includes setup of 1 ad campaign</span>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
-                      <div>
-                        <span className="text-foreground text-sm">New creatives as needed (3-4 on avg.)</span>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
-                      <div>
-                        <span className="text-foreground text-sm">Copywriting included</span>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1" />
-                      <div>
-                        <span className="text-foreground text-sm">Retargeting pixel & Lead form setup</span>
                       </div>
                     </li>
                   </ul>
