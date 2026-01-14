@@ -81,6 +81,10 @@ import adCreativeMaternity from "@/assets/ad-creative-maternity-newborn.jpg";
 import adCreativeSenior from "@/assets/ad-creative-senior-portrait-female.jpg";
 import adCreativeWedding from "@/assets/ad-creative-wedding.jpg";
 import adCreativeBranding from "@/assets/ad-creative-branding-headshot.jpg";
+// Keyword Research Section Images
+import adCreativePortraitStudio from "@/assets/ad-creative-portrait-family-studio.jpg";
+import adCreativeWeddingClean from "@/assets/ad-creative-wedding-clean.jpg";
+import adCreativeHeadshotPro from "@/assets/ad-creative-headshot-professional.jpg";
 
 // Portfolio Website Image
 import portfolioPhotographerWebsite from "@/assets/portfolio-photographer-website.jpg";
@@ -254,7 +258,7 @@ const keywordExamples = {
   portrait: {
     label: "Portrait Photography",
     icon: Users,
-    image: adCreativeFamilyPortrait,
+    image: adCreativePortraitStudio,
     keywords: [
       "family photographer [city]",
       "newborn photographer near me", 
@@ -266,7 +270,7 @@ const keywordExamples = {
   wedding: {
     label: "Wedding Photography",
     icon: Heart,
-    image: adCreativeWedding,
+    image: adCreativeWeddingClean,
     keywords: [
       "wedding photographer [city]",
       "elopement photographer [city]",
@@ -278,7 +282,7 @@ const keywordExamples = {
   headshot: {
     label: "Headshot & Branding",
     icon: Sparkles,
-    image: adCreativeBranding,
+    image: adCreativeHeadshotPro,
     keywords: [
       "professional headshot photographer [city]",
       "corporate headshots [city]",
