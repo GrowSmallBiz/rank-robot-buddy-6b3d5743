@@ -2413,7 +2413,7 @@ const Photographers = () => {
             </h3>
 
             {/* Unified Card with Timeline + Insight */}
-            <div className="relative max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+            <div className="relative animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
               {/* Subtle gradient glow */}
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-2xl blur-md opacity-20 animate-pulse" style={{ animationDuration: '3s' }} />
               <div className="relative bg-card border border-primary/30 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
