@@ -2401,32 +2401,105 @@ const Photographers = () => {
 
       {/* SEO + Retargeting Section - TRANSITIONAL */}
       <section className="py-24 relative bg-gradient-to-b from-background to-slate-800/40 scroll-mt-24">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-center mb-8">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-center mb-4">
               Be Found Once. <span className="text-transparent bg-clip-text bg-gradient-primary italic">Remembered Until They're Ready.</span>
             </h2>
             
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center">
-                Most photographers aren't invisible — they're just forgotten too soon.
-              </h3>
+            <h3 className="text-xl md:text-2xl font-display font-medium text-muted-foreground text-center mb-12">
+              Most photographers aren't invisible — they're just <span className="text-foreground">forgotten too soon.</span>
+            </h3>
+
+            {/* Timeline Flow Visual */}
+            <div className="relative mb-16">
+              {/* Connection Line (Desktop) */}
+              <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 via-primary to-emerald-500 rounded-full" />
               
-              <p>
-                A potential client finds your work while searching for a photographer. They love your style. They explore your site. Then life gets busy… and the moment passes.
-              </p>
-              
-              <p>
-                <strong className="text-foreground">SEO helps your photography business show up when someone is actively looking.</strong> But retargeting is what keeps the connection alive. When visitors leave your site, your images naturally reappear across Instagram, Facebook, and Google — not as pushy ads, but as gentle reminders of the work they already liked.
-              </p>
-              
-              <p>
-                Over time, familiarity builds trust. Trust turns into confidence. And when they're finally ready to book, your name feels familiar — not random.
-              </p>
-              
-              <p>
-                This approach lets your work stay visible without constant posting, chasing trends, or selling yourself every day. Your photography continues the conversation quietly in the background, until the timing feels right for them.
-              </p>
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-2">
+                {/* Step 1: Visit */}
+                <div className="relative text-center group">
+                  <div className="w-24 h-24 rounded-full bg-blue-500/20 border-2 border-blue-500 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <Search className="w-10 h-10 text-blue-500" />
+                  </div>
+                  <h4 className="font-bold text-foreground mb-1">They Find You</h4>
+                  <p className="text-xs text-muted-foreground">Search for a photographer, love your work</p>
+                </div>
+
+                {/* Arrow (Mobile) */}
+                <div className="md:hidden flex justify-center py-2">
+                  <ArrowDown className="w-6 h-6 text-muted-foreground/50" />
+                </div>
+
+                {/* Step 2: Leave */}
+                <div className="relative text-center group">
+                  <div className="w-24 h-24 rounded-full bg-slate-500/20 border-2 border-slate-500 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <Clock className="w-10 h-10 text-slate-400" />
+                  </div>
+                  <h4 className="font-bold text-foreground mb-1">Life Happens</h4>
+                  <p className="text-xs text-muted-foreground">They leave, get busy, and the moment passes</p>
+                </div>
+
+                {/* Arrow (Mobile) */}
+                <div className="md:hidden flex justify-center py-2">
+                  <ArrowDown className="w-6 h-6 text-muted-foreground/50" />
+                </div>
+
+                {/* Step 3: Retargeted */}
+                <div className="relative text-center group">
+                  <div className="w-24 h-24 rounded-full bg-purple-500/20 border-2 border-purple-500 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <RefreshCw className="w-10 h-10 text-purple-500" />
+                  </div>
+                  <h4 className="font-bold text-foreground mb-1">Your Work Reappears</h4>
+                  <p className="text-xs text-muted-foreground">Gentle reminders on Instagram, Facebook, Google</p>
+                  <div className="flex justify-center gap-2 mt-2">
+                    <Instagram className="w-4 h-4 text-pink-500" />
+                    <Facebook className="w-4 h-4 text-blue-500" />
+                    <Globe className="w-4 h-4 text-emerald-500" />
+                  </div>
+                </div>
+
+                {/* Arrow (Mobile) */}
+                <div className="md:hidden flex justify-center py-2">
+                  <ArrowDown className="w-6 h-6 text-muted-foreground/50" />
+                </div>
+
+                {/* Step 4: Return */}
+                <div className="relative text-center group">
+                  <div className="w-24 h-24 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <Heart className="w-10 h-10 text-primary" />
+                  </div>
+                  <h4 className="font-bold text-foreground mb-1">Trust Builds</h4>
+                  <p className="text-xs text-muted-foreground">Familiarity turns into confidence over time</p>
+                </div>
+
+                {/* Arrow (Mobile) */}
+                <div className="md:hidden flex justify-center py-2">
+                  <ArrowDown className="w-6 h-6 text-muted-foreground/50" />
+                </div>
+
+                {/* Step 5: Book */}
+                <div className="relative text-center group">
+                  <div className="w-24 h-24 rounded-full bg-emerald-500/20 border-2 border-emerald-500 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <CalendarCheck className="w-10 h-10 text-emerald-500" />
+                  </div>
+                  <h4 className="font-bold text-foreground mb-1">They Book</h4>
+                  <p className="text-xs text-muted-foreground">When ready, your name feels familiar — not random</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Supporting Text */}
+            <div className="bg-card/50 border border-border/50 rounded-2xl p-8 max-w-3xl mx-auto">
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  <strong className="text-foreground">SEO helps your photography business show up when someone is actively looking.</strong> But retargeting is what keeps the connection alive — your images naturally reappear across their feeds, not as pushy ads, but as gentle reminders of the work they already liked.
+                </p>
+                <p>
+                  This approach lets your work stay visible without constant posting, chasing trends, or selling yourself every day. Your photography continues the conversation quietly in the background, until the timing feels right for them.
+                </p>
+              </div>
             </div>
           </div>
         </div>
