@@ -2490,11 +2490,14 @@ const Photographers = () => {
               </div>
             </div>
 
-            {/* Featured Quote - Eye Catching */}
-            <div className="relative max-w-4xl mx-auto mb-10">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-2xl blur-lg opacity-30" />
-              <div className="relative bg-card border border-primary/30 rounded-2xl p-8 md:p-10">
-                <div className="absolute -top-4 left-8 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+            {/* Featured Quote - Eye Catching with Animation */}
+            <div className="relative max-w-4xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+              {/* Pulsing gradient glow */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-2xl blur-lg opacity-30 animate-pulse" style={{ animationDuration: '3s' }} />
+              {/* Secondary rotating gradient for shimmer effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 via-primary to-blue-500 rounded-2xl blur-md opacity-20 animate-pulse" style={{ animationDuration: '4s', animationDelay: '1.5s' }} />
+              <div className="relative bg-card border border-primary/30 rounded-2xl p-8 md:p-10 backdrop-blur-sm">
+                <div className="absolute -top-4 left-8 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold shadow-lg shadow-primary/25">
                   The Key Insight
                 </div>
                 <p className="text-xl md:text-2xl lg:text-3xl font-display leading-relaxed text-center">
