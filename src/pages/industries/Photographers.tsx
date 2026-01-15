@@ -2408,9 +2408,9 @@ const Photographers = () => {
             </h2>
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p className="text-xl text-foreground/90 font-medium text-center">
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center">
                 Most photographers aren't invisible — they're just forgotten too soon.
-              </p>
+              </h3>
               
               <p>
                 A potential client finds your work while searching for a photographer. They love your style. They explore your site. Then life gets busy… and the moment passes.
