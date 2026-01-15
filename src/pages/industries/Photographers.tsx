@@ -2409,7 +2409,7 @@ const Photographers = () => {
             </h2>
             
             <h3 className="text-xl md:text-2xl font-display font-medium text-muted-foreground text-center mb-12">
-              Most photographers aren't invisible — they're just <span className="text-foreground">forgotten too soon.</span>
+              SEO brings them in. <span className="text-foreground">Retargeting brings them back.</span>
             </h3>
 
             {/* Unified Card with Timeline + Insight */}
