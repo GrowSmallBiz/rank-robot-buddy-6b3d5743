@@ -2490,11 +2490,28 @@ const Photographers = () => {
               </div>
             </div>
 
+            {/* Featured Quote - Eye Catching */}
+            <div className="relative max-w-4xl mx-auto mb-10">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-2xl blur-lg opacity-30" />
+              <div className="relative bg-card border border-primary/30 rounded-2xl p-8 md:p-10">
+                <div className="absolute -top-4 left-8 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+                  The Key Insight
+                </div>
+                <p className="text-xl md:text-2xl lg:text-3xl font-display leading-relaxed text-center">
+                  <span className="text-foreground font-semibold">SEO helps your photography business show up</span>{" "}
+                  <span className="text-muted-foreground">when someone is actively looking.</span>
+                  <br className="hidden md:block" />
+                  <span className="text-muted-foreground">But </span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-500 font-bold italic">retargeting is what keeps the connection alive.</span>
+                </p>
+              </div>
+            </div>
+
             {/* Supporting Text */}
             <div className="bg-card/50 border border-border/50 rounded-2xl p-8 max-w-3xl mx-auto">
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  <strong className="text-foreground">SEO helps your photography business show up when someone is actively looking.</strong> But retargeting is what keeps the connection alive — your images naturally reappear across their feeds, not as pushy ads, but as gentle reminders of the work they already liked.
+                  Your images naturally reappear across their feeds — not as pushy ads, but as gentle reminders of the work they already liked.
                 </p>
                 <p>
                   This approach lets your work stay visible without constant posting, chasing trends, or selling yourself every day. Your photography continues the conversation quietly in the background, until the timing feels right for them.
