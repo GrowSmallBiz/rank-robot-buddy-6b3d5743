@@ -2515,13 +2515,24 @@ const Photographers = () => {
                 <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent mx-auto mb-5" />
                 
                 {/* Supporting Text */}
-                <div className="space-y-3 text-muted-foreground text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center">
+                <div className="space-y-3 text-muted-foreground text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center mb-6">
                   <p>
                     Your images naturally reappear across their feeds — not as pushy ads, but as gentle reminders of the work they already liked.
                   </p>
                   <p>
                     This approach lets your work stay visible without constant posting, chasing trends, or selling yourself every day. Your photography continues the conversation quietly in the background, until the timing feels right for them.
                   </p>
+                </div>
+                
+                {/* CTA Button */}
+                <div className="flex justify-center">
+                  <Link 
+                    to="/contact" 
+                    className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg shadow-primary/25"
+                  >
+                    Get Your SEO + Retargeting Strategy
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </div>
             </div>
