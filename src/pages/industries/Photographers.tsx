@@ -3550,7 +3550,7 @@ const Photographers = () => {
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeader
             subtitle="Photography Studio Growth Tools"
-            title="We Manage Your Reputation,"
+            title="We Set Up Your Reputation,"
             titleHighlight="Referrals & Gift Cards"
             description="Turn happy photography clients into your studio's best marketing channel"
             as="h3"
