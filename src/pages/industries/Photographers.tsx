@@ -2399,6 +2399,39 @@ const Photographers = () => {
         </div>
       </section>
 
+      {/* SEO + Retargeting Section - TRANSITIONAL */}
+      <section className="py-24 relative bg-gradient-to-b from-background to-slate-800/40 scroll-mt-24">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-center mb-8">
+              Be Found Once. <span className="text-transparent bg-clip-text bg-gradient-primary italic">Remembered Until They're Ready.</span>
+            </h2>
+            
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <p className="text-xl text-foreground/90 font-medium text-center">
+                Most photographers aren't invisible — they're just forgotten too soon.
+              </p>
+              
+              <p>
+                A potential client finds your work while searching for a photographer. They love your style. They explore your site. Then life gets busy… and the moment passes.
+              </p>
+              
+              <p>
+                <strong className="text-foreground">SEO helps your photography business show up when someone is actively looking.</strong> But retargeting is what keeps the connection alive. When visitors leave your site, your images naturally reappear across Instagram, Facebook, and Google — not as pushy ads, but as gentle reminders of the work they already liked.
+              </p>
+              
+              <p>
+                Over time, familiarity builds trust. Trust turns into confidence. And when they're finally ready to book, your name feels familiar — not random.
+              </p>
+              
+              <p>
+                This approach lets your work stay visible without constant posting, chasing trends, or selling yourself every day. Your photography continues the conversation quietly in the background, until the timing feels right for them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Social Media Section - LIGHT */}
       <section id="social-media" className="py-24 relative bg-slate-800/40 scroll-mt-24">
         <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5" />
