@@ -2490,33 +2490,36 @@ const Photographers = () => {
               </div>
             </div>
 
-            {/* Featured Quote - Eye Catching with Animation */}
-            <div className="relative max-w-4xl mx-auto mb-5 animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-              {/* Pulsing gradient glow - reduced intensity */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-xl blur-md opacity-25 animate-pulse" style={{ animationDuration: '3s' }} />
-              <div className="relative bg-card border border-primary/30 rounded-xl p-5 md:p-6 backdrop-blur-sm">
+            {/* Combined Insight Card */}
+            <div className="relative max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+              {/* Subtle gradient glow */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-xl blur-md opacity-20 animate-pulse" style={{ animationDuration: '3s' }} />
+              <div className="relative bg-card border border-primary/30 rounded-xl p-6 md:p-8 backdrop-blur-sm">
                 <div className="absolute -top-3 left-6 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-xs font-semibold shadow-lg shadow-primary/25">
                   The Key Insight
                 </div>
-                <p className="text-lg md:text-xl lg:text-2xl font-display leading-relaxed text-center pt-1">
+                
+                {/* Main Quote */}
+                <p className="text-lg md:text-xl font-display leading-relaxed text-center pt-2 mb-6">
                   <span className="text-foreground font-semibold">SEO helps your photography business show up</span>{" "}
                   <span className="text-muted-foreground">when someone is actively looking.</span>
                   <br className="hidden md:block" />
                   <span className="text-muted-foreground">But </span>
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-500 font-bold italic">retargeting is what keeps the connection alive.</span>
                 </p>
-              </div>
-            </div>
-
-            {/* Supporting Text - Strengthened styling */}
-            <div className="bg-card/80 border border-primary/20 rounded-xl p-6 max-w-3xl mx-auto">
-              <div className="space-y-3 text-muted-foreground text-base leading-relaxed">
-                <p>
-                  Your images naturally reappear across their feeds — not as pushy ads, but as gentle reminders of the work they already liked.
-                </p>
-                <p>
-                  This approach lets your work stay visible without constant posting, chasing trends, or selling yourself every day. Your photography continues the conversation quietly in the background, until the timing feels right for them.
-                </p>
+                
+                {/* Divider */}
+                <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent mx-auto mb-5" />
+                
+                {/* Supporting Text */}
+                <div className="space-y-3 text-muted-foreground text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
+                  <p>
+                    Your images naturally reappear across their feeds — not as pushy ads, but as gentle reminders of the work they already liked.
+                  </p>
+                  <p>
+                    This approach lets your work stay visible without constant posting, chasing trends, or selling yourself every day. Your photography continues the conversation quietly in the background, until the timing feels right for them.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
