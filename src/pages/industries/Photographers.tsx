@@ -2496,7 +2496,7 @@ const Photographers = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-xl blur-md opacity-20 animate-pulse" style={{ animationDuration: '3s' }} />
               <div className="relative bg-card border border-primary/30 rounded-xl p-6 md:p-8 backdrop-blur-sm">
                 <div className="absolute -top-3 left-6 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-xs font-semibold shadow-lg shadow-primary/25">
-                  SEO + Retargeting Meta/Google Ads
+                  AI SEO + Retargeting Meta/Google Ads
                 </div>
                 
                 {/* Main Quote */}
