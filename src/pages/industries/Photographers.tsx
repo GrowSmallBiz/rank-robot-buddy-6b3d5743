@@ -2412,95 +2412,98 @@ const Photographers = () => {
               Most photographers aren't invisible — they're just <span className="text-foreground">forgotten too soon.</span>
             </h3>
 
-            {/* Timeline Flow Visual */}
-            <div className="relative mb-10">
-              {/* Connection Line (Desktop) */}
-              <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 via-primary to-emerald-500 rounded-full" />
-              
-              <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-2">
-                {/* Step 1: Visit */}
-                <div className="relative text-center group">
-                  <div className="w-24 h-24 rounded-full bg-blue-500/20 border-2 border-blue-500 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <Search className="w-10 h-10 text-blue-500" />
-                  </div>
-                  <h4 className="font-bold text-foreground mb-1">They Find You</h4>
-                  <p className="text-xs text-muted-foreground">Search for a photographer, love your work</p>
-                </div>
-
-                {/* Arrow (Mobile) */}
-                <div className="md:hidden flex justify-center py-2">
-                  <ArrowDown className="w-6 h-6 text-muted-foreground/50" />
-                </div>
-
-                {/* Step 2: Leave */}
-                <div className="relative text-center group">
-                  <div className="w-24 h-24 rounded-full bg-slate-500/20 border-2 border-slate-500 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <Clock className="w-10 h-10 text-slate-400" />
-                  </div>
-                  <h4 className="font-bold text-foreground mb-1">Life Happens</h4>
-                  <p className="text-xs text-muted-foreground">They leave, get busy, and the moment passes</p>
-                </div>
-
-                {/* Arrow (Mobile) */}
-                <div className="md:hidden flex justify-center py-2">
-                  <ArrowDown className="w-6 h-6 text-muted-foreground/50" />
-                </div>
-
-                {/* Step 3: Retargeted */}
-                <div className="relative text-center group">
-                  <div className="w-24 h-24 rounded-full bg-purple-500/20 border-2 border-purple-500 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <RefreshCw className="w-10 h-10 text-purple-500" />
-                  </div>
-                  <h4 className="font-bold text-foreground mb-1">Your Work Reappears</h4>
-                  <p className="text-xs text-muted-foreground">Gentle reminders on Instagram, Facebook, Google</p>
-                  <div className="flex justify-center gap-2 mt-2">
-                    <Instagram className="w-4 h-4 text-pink-500" />
-                    <Facebook className="w-4 h-4 text-blue-500" />
-                    <Globe className="w-4 h-4 text-emerald-500" />
-                  </div>
-                </div>
-
-                {/* Arrow (Mobile) */}
-                <div className="md:hidden flex justify-center py-2">
-                  <ArrowDown className="w-6 h-6 text-muted-foreground/50" />
-                </div>
-
-                {/* Step 4: Return */}
-                <div className="relative text-center group">
-                  <div className="w-24 h-24 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <Heart className="w-10 h-10 text-primary" />
-                  </div>
-                  <h4 className="font-bold text-foreground mb-1">Trust Builds</h4>
-                  <p className="text-xs text-muted-foreground">Familiarity turns into confidence over time</p>
-                </div>
-
-                {/* Arrow (Mobile) */}
-                <div className="md:hidden flex justify-center py-2">
-                  <ArrowDown className="w-6 h-6 text-muted-foreground/50" />
-                </div>
-
-                {/* Step 5: Book */}
-                <div className="relative text-center group">
-                  <div className="w-24 h-24 rounded-full bg-emerald-500/20 border-2 border-emerald-500 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <CalendarCheck className="w-10 h-10 text-emerald-500" />
-                  </div>
-                  <h4 className="font-bold text-foreground mb-1">They Book</h4>
-                  <p className="text-xs text-muted-foreground">When ready, your name feels familiar — not random</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Combined Insight Card */}
-            <div className="relative max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+            {/* Unified Card with Timeline + Insight */}
+            <div className="relative max-w-5xl mx-auto animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
               {/* Subtle gradient glow */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-xl blur-md opacity-20 animate-pulse" style={{ animationDuration: '3s' }} />
-              <div className="relative bg-card border border-primary/30 rounded-xl p-6 md:p-8 backdrop-blur-sm">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-primary to-emerald-500 rounded-2xl blur-md opacity-20 animate-pulse" style={{ animationDuration: '3s' }} />
+              <div className="relative bg-card border border-primary/30 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
                 <div className="absolute -top-3 left-6 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-xs font-semibold shadow-lg shadow-primary/25">
                   AI SEO + Retargeting Meta/Google Ads
                 </div>
                 
+                {/* Timeline inside card */}
+                <div className="relative pt-4 pb-6">
+                  {/* Connection Line (Desktop) */}
+                  <div className="hidden md:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 via-primary to-emerald-500 rounded-full" />
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-2">
+                    {/* Step 1: Visit */}
+                    <div className="relative text-center group">
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-blue-500/20 border-2 border-blue-500 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                        <Search className="w-7 h-7 md:w-8 md:h-8 text-blue-500" />
+                      </div>
+                      <h4 className="font-bold text-foreground text-sm mb-0.5">They Find You</h4>
+                      <p className="text-xs text-muted-foreground leading-tight">Search for a photographer, love your work</p>
+                    </div>
+
+                    {/* Arrow (Mobile) */}
+                    <div className="md:hidden flex justify-center py-1">
+                      <ArrowDown className="w-5 h-5 text-muted-foreground/50" />
+                    </div>
+
+                    {/* Step 2: Leave */}
+                    <div className="relative text-center group">
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-slate-500/20 border-2 border-slate-500 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                        <Clock className="w-7 h-7 md:w-8 md:h-8 text-slate-400" />
+                      </div>
+                      <h4 className="font-bold text-foreground text-sm mb-0.5">Life Happens</h4>
+                      <p className="text-xs text-muted-foreground leading-tight">They leave, get busy, and the moment passes</p>
+                    </div>
+
+                    {/* Arrow (Mobile) */}
+                    <div className="md:hidden flex justify-center py-1">
+                      <ArrowDown className="w-5 h-5 text-muted-foreground/50" />
+                    </div>
+
+                    {/* Step 3: Retargeted */}
+                    <div className="relative text-center group">
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-purple-500/20 border-2 border-purple-500 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                        <RefreshCw className="w-7 h-7 md:w-8 md:h-8 text-purple-500" />
+                      </div>
+                      <h4 className="font-bold text-foreground text-sm mb-0.5">Your Work Reappears</h4>
+                      <p className="text-xs text-muted-foreground leading-tight">Gentle reminders on Instagram, Facebook, Google</p>
+                      <div className="flex justify-center gap-1.5 mt-1.5">
+                        <Instagram className="w-3.5 h-3.5 text-pink-500" />
+                        <Facebook className="w-3.5 h-3.5 text-blue-500" />
+                        <Globe className="w-3.5 h-3.5 text-emerald-500" />
+                      </div>
+                    </div>
+
+                    {/* Arrow (Mobile) */}
+                    <div className="md:hidden flex justify-center py-1">
+                      <ArrowDown className="w-5 h-5 text-muted-foreground/50" />
+                    </div>
+
+                    {/* Step 4: Return */}
+                    <div className="relative text-center group">
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                        <Heart className="w-7 h-7 md:w-8 md:h-8 text-primary" />
+                      </div>
+                      <h4 className="font-bold text-foreground text-sm mb-0.5">Trust Builds</h4>
+                      <p className="text-xs text-muted-foreground leading-tight">Familiarity turns into confidence over time</p>
+                    </div>
+
+                    {/* Arrow (Mobile) */}
+                    <div className="md:hidden flex justify-center py-1">
+                      <ArrowDown className="w-5 h-5 text-muted-foreground/50" />
+                    </div>
+
+                    {/* Step 5: Book */}
+                    <div className="relative text-center group">
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-emerald-500/20 border-2 border-emerald-500 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                        <CalendarCheck className="w-7 h-7 md:w-8 md:h-8 text-emerald-500" />
+                      </div>
+                      <h4 className="font-bold text-foreground text-sm mb-0.5">They Book</h4>
+                      <p className="text-xs text-muted-foreground leading-tight">When ready, your name feels familiar — not random</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Divider */}
+                <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mb-5" />
+                
                 {/* Main Quote */}
-                <p className="text-lg md:text-xl font-display leading-relaxed text-center pt-2 mb-6">
+                <p className="text-lg md:text-xl font-display leading-relaxed text-center mb-5">
                   <span className="text-foreground font-semibold">SEO helps your photography business show up</span>{" "}
                   <span className="text-muted-foreground">when someone is actively looking.</span>
                   <br className="hidden md:block" />
@@ -2512,7 +2515,7 @@ const Photographers = () => {
                 <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent mx-auto mb-5" />
                 
                 {/* Supporting Text */}
-                <div className="space-y-3 text-muted-foreground text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
+                <div className="space-y-3 text-muted-foreground text-sm md:text-base leading-relaxed max-w-3xl mx-auto text-center">
                   <p>
                     Your images naturally reappear across their feeds — not as pushy ads, but as gentle reminders of the work they already liked.
                   </p>
