@@ -1627,9 +1627,13 @@ const Photographers = () => {
           </div>
 
           {/* Why Photography SEO Works Differently */}
-          <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="text-lg md:text-xl font-display font-medium text-muted-foreground mb-6">
-              Why Photography SEO Works Differently Than Other Local Businesses
+          <div className="mb-16 max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-8">
+              Why Photography SEO Works{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">
+                Differently
+              </span>{" "}
+              Than Other Local Businesses
             </h2>
             
             <div className="space-y-4 text-foreground/90 leading-relaxed">
