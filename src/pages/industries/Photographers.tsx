@@ -1628,7 +1628,7 @@ const Photographers = () => {
 
           {/* Why Photography SEO Works Differently */}
           <div className="mb-16 max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-8">
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8">
               Why Photography SEO Works{" "}
               <span className="text-transparent bg-clip-text bg-gradient-primary italic">
                 Differently
