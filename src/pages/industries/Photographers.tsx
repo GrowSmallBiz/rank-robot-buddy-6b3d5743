@@ -1638,11 +1638,15 @@ const Photographers = () => {
             
             <div className="space-y-4 text-foreground/90 leading-relaxed">
               <p>
-                <span className="font-semibold text-foreground">Photography is a considered purchase</span> — not an emergency decision.
+                <span className="font-semibold text-foreground">Photography is a considered purchase</span> — with moments of urgency.
               </p>
               
               <p className="text-muted-foreground">
                 Unlike services where someone searches and calls immediately, photography clients take time. They browse portfolios, compare styles, read reviews, follow on social, and wait for the right moment — a milestone, a season, or a life event.
+              </p>
+              
+              <p className="text-muted-foreground">
+                Some services, like professional headshots for job changes or media appearances, can be time-sensitive — which is why immediate visibility still matters.
               </p>
               
               <p className="text-muted-foreground">
