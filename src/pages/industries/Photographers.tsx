@@ -1626,6 +1626,31 @@ const Photographers = () => {
             </div>
           </div>
 
+          {/* Why Photography SEO Works Differently */}
+          <div className="mb-16 max-w-4xl mx-auto">
+            <h3 className="text-lg md:text-xl font-display font-medium text-muted-foreground mb-6">
+              Why Photography SEO Works Differently Than Other Local Businesses
+            </h3>
+            
+            <div className="space-y-4 text-foreground/90 leading-relaxed">
+              <p>
+                <span className="font-semibold text-foreground">Photography is a considered purchase</span> — not an emergency decision.
+              </p>
+              
+              <p className="text-muted-foreground">
+                Unlike services where someone searches and calls immediately, photography clients take time. They browse portfolios, compare styles, read reviews, follow on social, and wait for the right moment — a milestone, a season, or a life event.
+              </p>
+              
+              <p className="text-muted-foreground">
+                Because of this, search volume for photography is naturally lower than emergency or transactional services. People don't search often — but when they do, <span className="text-foreground font-medium">intent is high</span>. The goal of SEO here isn't mass traffic. It's being the studio they recognize, trust, and remember when they're ready to book.
+              </p>
+              
+              <p className="text-foreground/80 border-l-2 border-primary pl-4 mt-6">
+                That's why our approach combines <span className="text-primary font-medium">Google + AI search visibility</span> with <span className="text-primary font-medium">retargeting and follow-up</span> — so your studio stays top-of-mind long after the first visit.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="mb-8 text-center">
             <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">Photography SEO Services</p>
