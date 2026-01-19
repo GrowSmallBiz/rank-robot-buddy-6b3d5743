@@ -79,8 +79,8 @@ import whoWeHelpDeckPatio from "@/assets/who-we-help-deck-patio.jpg";
 import whoWeHelpHvac from "@/assets/who-we-help-hvac.jpg";
 import whoWeHelpElectrician from "@/assets/who-we-help-electrician.jpg";
 import whoWeHelpPainter from "@/assets/who-we-help-painter.jpg";
-import whoWeHelpDogGroomer from "@/assets/who-we-help-dog-groomer.jpg";
-import whoWeHelpHomeBuilder from "@/assets/who-we-help-home-builder.jpg";
+import whoWeHelpPoolSpa from "@/assets/who-we-help-pool-spa.jpg";
+import whoWeHelpFencing from "@/assets/who-we-help-fencing.jpg";
 import whoWeHelpTreeService from "@/assets/who-we-help-tree-service.jpg";
 
 // Who We Help Data - 15 trades matching reference
@@ -97,8 +97,8 @@ const whoWeHelp = [
   { name: "HVAC", image: whoWeHelpHvac, description: "Web Design | Marketing" },
   { name: "Electrician", image: whoWeHelpElectrician, description: "Web Design | Marketing" },
   { name: "Painters", image: whoWeHelpPainter, description: "Web Design | Marketing" },
-  { name: "Dog Groomers", image: whoWeHelpDogGroomer, description: "Web Design | Marketing" },
-  { name: "Home Builders", image: whoWeHelpHomeBuilder, description: "Web Design | Marketing" },
+  { name: "Pool & Spa", image: whoWeHelpPoolSpa, description: "Web Design | Marketing" },
+  { name: "Fencing", image: whoWeHelpFencing, description: "Web Design | Marketing" },
   { name: "Tree Service", image: whoWeHelpTreeService, description: "Web Design | Marketing" },
 ];
 
