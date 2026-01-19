@@ -67,33 +67,39 @@ import heroImage from "@/assets/industry-hvac-hero.jpg";
 import seoDashboardMetrics from "@/assets/seo-dashboard-metrics.png";
 
 // Who We Help Images
-import whoWeHelpHvac from "@/assets/who-we-help-hvac.jpg";
-import whoWeHelpPlumber from "@/assets/who-we-help-plumber.jpg";
-import whoWeHelpElectrician from "@/assets/who-we-help-electrician.jpg";
-import whoWeHelpRoofer from "@/assets/who-we-help-roofer.jpg";
-import whoWeHelpRemodeling from "@/assets/who-we-help-remodeling.jpg";
-import whoWeHelpLandscaper from "@/assets/who-we-help-landscaper.jpg";
 import whoWeHelpGeneralContractor from "@/assets/who-we-help-general-contractor.jpg";
-import whoWeHelpPainter from "@/assets/who-we-help-painter.jpg";
-import whoWeHelpCleaner from "@/assets/who-we-help-cleaner.jpg";
+import whoWeHelpRemodeling from "@/assets/who-we-help-remodeling.jpg";
+import whoWeHelpPlumber from "@/assets/who-we-help-plumber.jpg";
+import whoWeHelpLandscaper from "@/assets/who-we-help-landscaper.jpg";
+import whoWeHelpPressureWasher from "@/assets/who-we-help-pressure-washer.jpg";
+import whoWeHelpMovingCompany from "@/assets/who-we-help-moving-company.jpg";
 import whoWeHelpPestControl from "@/assets/who-we-help-pest-control.jpg";
 import whoWeHelpFlooring from "@/assets/who-we-help-flooring.jpg";
-import whoWeHelpWindowCleaning from "@/assets/who-we-help-window-cleaning.jpg";
+import whoWeHelpDeckPatio from "@/assets/who-we-help-deck-patio.jpg";
+import whoWeHelpHvac from "@/assets/who-we-help-hvac.jpg";
+import whoWeHelpElectrician from "@/assets/who-we-help-electrician.jpg";
+import whoWeHelpPainter from "@/assets/who-we-help-painter.jpg";
+import whoWeHelpDogGroomer from "@/assets/who-we-help-dog-groomer.jpg";
+import whoWeHelpHomeBuilder from "@/assets/who-we-help-home-builder.jpg";
+import whoWeHelpTreeService from "@/assets/who-we-help-tree-service.jpg";
 
-// Who We Help Data
+// Who We Help Data - 15 trades matching reference
 const whoWeHelp = [
-  { name: "HVAC", image: whoWeHelpHvac, description: "Heating & Cooling" },
-  { name: "Plumbing", image: whoWeHelpPlumber, description: "Pipes & Fixtures" },
-  { name: "Electrician", image: whoWeHelpElectrician, description: "Wiring & Panels" },
-  { name: "Roofing", image: whoWeHelpRoofer, description: "Shingles & Repairs" },
-  { name: "Remodeling", image: whoWeHelpRemodeling, description: "Kitchen & Bath" },
-  { name: "Landscaping", image: whoWeHelpLandscaper, description: "Lawn & Garden" },
-  { name: "General Contractor", image: whoWeHelpGeneralContractor, description: "New Construction" },
-  { name: "Painters", image: whoWeHelpPainter, description: "Interior & Exterior" },
-  { name: "Cleaning Services", image: whoWeHelpCleaner, description: "Residential & Commercial" },
-  { name: "Pest Control", image: whoWeHelpPestControl, description: "Extermination & Prevention" },
-  { name: "Flooring", image: whoWeHelpFlooring, description: "Hardwood & Tile" },
-  { name: "Window Cleaning", image: whoWeHelpWindowCleaning, description: "Residential & Commercial" },
+  { name: "General Contractors", image: whoWeHelpGeneralContractor, description: "Web Design | Marketing" },
+  { name: "Remodeling", image: whoWeHelpRemodeling, description: "Web Design | Marketing" },
+  { name: "Plumbing", image: whoWeHelpPlumber, description: "Web Design | Marketing" },
+  { name: "Landscapers", image: whoWeHelpLandscaper, description: "Web Design | Marketing" },
+  { name: "Pressure Washer", image: whoWeHelpPressureWasher, description: "Web Design | Marketing" },
+  { name: "Moving Companies", image: whoWeHelpMovingCompany, description: "Web Design | Marketing" },
+  { name: "Pest Control", image: whoWeHelpPestControl, description: "Web Design | Marketing" },
+  { name: "Flooring & Carpet Cleaning", image: whoWeHelpFlooring, description: "Web Design | Marketing" },
+  { name: "Decks & Patios", image: whoWeHelpDeckPatio, description: "Web Design | Marketing" },
+  { name: "HVAC", image: whoWeHelpHvac, description: "Web Design | Marketing" },
+  { name: "Electrician", image: whoWeHelpElectrician, description: "Web Design | Marketing" },
+  { name: "Painters", image: whoWeHelpPainter, description: "Web Design | Marketing" },
+  { name: "Dog Groomers", image: whoWeHelpDogGroomer, description: "Web Design | Marketing" },
+  { name: "Home Builders", image: whoWeHelpHomeBuilder, description: "Web Design | Marketing" },
+  { name: "Tree Service", image: whoWeHelpTreeService, description: "Web Design | Marketing" },
 ];
 
 // Marketing Funnel Stages
