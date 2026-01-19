@@ -971,7 +971,7 @@ const HomeServices = () => {
               description="GrowSmallBiz has been passionately collaborating with home service contractors and independent tradespeople. We understand the complexities of running your business and deliver tailored marketing solutions for every trade."
             />
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {whoWeHelp.map((business, index) => (
                 <div
                   key={index}
