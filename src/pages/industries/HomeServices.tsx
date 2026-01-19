@@ -65,6 +65,37 @@ import {
 
 import heroImage from "@/assets/industry-hvac-hero.jpg";
 import seoDashboardMetrics from "@/assets/seo-dashboard-metrics.png";
+
+// Who We Help Images
+import whoWeHelpHvac from "@/assets/who-we-help-hvac.jpg";
+import whoWeHelpPlumber from "@/assets/who-we-help-plumber.jpg";
+import whoWeHelpElectrician from "@/assets/who-we-help-electrician.jpg";
+import whoWeHelpRoofer from "@/assets/who-we-help-roofer.jpg";
+import whoWeHelpRemodeling from "@/assets/who-we-help-remodeling.jpg";
+import whoWeHelpLandscaper from "@/assets/who-we-help-landscaper.jpg";
+import whoWeHelpGeneralContractor from "@/assets/who-we-help-general-contractor.jpg";
+import whoWeHelpPainter from "@/assets/who-we-help-painter.jpg";
+import whoWeHelpCleaner from "@/assets/who-we-help-cleaner.jpg";
+import whoWeHelpPestControl from "@/assets/who-we-help-pest-control.jpg";
+import whoWeHelpFlooring from "@/assets/who-we-help-flooring.jpg";
+import whoWeHelpWindowCleaning from "@/assets/who-we-help-window-cleaning.jpg";
+
+// Who We Help Data
+const whoWeHelp = [
+  { name: "HVAC", image: whoWeHelpHvac, description: "Heating & Cooling" },
+  { name: "Plumbing", image: whoWeHelpPlumber, description: "Pipes & Fixtures" },
+  { name: "Electrician", image: whoWeHelpElectrician, description: "Wiring & Panels" },
+  { name: "Roofing", image: whoWeHelpRoofer, description: "Shingles & Repairs" },
+  { name: "Remodeling", image: whoWeHelpRemodeling, description: "Kitchen & Bath" },
+  { name: "Landscaping", image: whoWeHelpLandscaper, description: "Lawn & Garden" },
+  { name: "General Contractor", image: whoWeHelpGeneralContractor, description: "New Construction" },
+  { name: "Painters", image: whoWeHelpPainter, description: "Interior & Exterior" },
+  { name: "Cleaning Services", image: whoWeHelpCleaner, description: "Residential & Commercial" },
+  { name: "Pest Control", image: whoWeHelpPestControl, description: "Extermination & Prevention" },
+  { name: "Flooring", image: whoWeHelpFlooring, description: "Hardwood & Tile" },
+  { name: "Window Cleaning", image: whoWeHelpWindowCleaning, description: "Residential & Commercial" },
+];
+
 // Marketing Funnel Stages
 const marketingFunnel = [
   {
@@ -924,8 +955,59 @@ const HomeServices = () => {
           </div>
         </section>
 
+        {/* Who We Help Section */}
+        <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="Industries We Serve"
+              title="Who We"
+              titleHighlight="Help!"
+              description="GrowSmallBiz has been passionately collaborating with home service contractors and independent tradespeople. We understand the complexities of running your business and deliver tailored marketing solutions for every trade."
+            />
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {whoWeHelp.map((business, index) => (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-2xl bg-card border border-border card-hover animate-fade-up"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  {/* Image */}
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={business.image}
+                      alt={`${business.name} marketing services`}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+                  </div>
+
+                  {/* Content */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-lg font-display font-bold text-foreground group-hover:text-primary transition-colors">
+                      {business.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {business.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-12 animate-fade-up" style={{ animationDelay: "0.6s" }}>
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/contact" className="inline-flex items-center gap-2">
+                  View All Trades We Partner With
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Marketing Funnel Section */}
-        <section id="marketing-funnel" className="py-20 bg-secondary/30">
+        <section id="marketing-funnel" className="py-20">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="The Complete Framework"
