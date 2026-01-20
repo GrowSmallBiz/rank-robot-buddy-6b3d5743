@@ -64,6 +64,13 @@ import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.jpg";
 import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.jpg";
 import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 
+// IDXAddons Featured Addon images
+import idxSearchTool from "@/assets/idx-search-tool.png";
+import idxGoogleMap from "@/assets/idx-google-map.png";
+import idxPlunkValuation from "@/assets/idx-plunk-valuation.png";
+import idxStylesColors from "@/assets/idx-styles-colors.png";
+import idxCountsWidget from "@/assets/idx-counts-widget.png";
+
 // Pain Points for Realtors
 const painPoints = [
   {
@@ -1122,31 +1129,31 @@ const Realtors = () => {
                     {
                       title: "Plunk Home Valuation Widget",
                       description: "Let visitors instantly estimate property values with real-time data.",
-                      image: "/src/assets/idx-plunk-valuation.png",
+                      image: idxPlunkValuation,
                       isFree: true
                     },
                     {
                       title: "IDX Styles & Colors",
                       description: "Easily update the colors and styles of your IDX Broker pages to match your branding — no coding needed.",
-                      image: "/src/assets/idx-styles-colors.png",
+                      image: idxStylesColors,
                       isFree: true
                     },
                     {
                       title: "Counts Widget",
                       description: "Show total active listings by city, zip, or other criteria. Perfect for dynamic market pages.",
-                      image: "/src/assets/idx-counts-widget.png",
+                      image: idxCountsWidget,
                       isFree: true
                     },
                     {
                       title: "Search Tool",
                       description: "Add a fast, mobile-friendly property search bar to any page — complete with price, beds, and more filters.",
-                      image: "/src/assets/idx-search-tool.png",
+                      image: idxSearchTool,
                       isFree: true
                     },
                     {
                       title: "Google Map Widget",
                       description: "Display active listings on an interactive map. Fully customizable.",
-                      image: "/src/assets/idx-google-map.png",
+                      image: idxGoogleMap,
                       isFree: true
                     }
                   ].map((addon, i) => (
