@@ -19,9 +19,14 @@ import {
 } from "lucide-react";
 
 const contactSchema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
+  firstName: z.string().trim().min(1, "First name is required").max(50, "First name must be less than 50 characters"),
+  lastName: z.string().trim().min(1, "Last name is required").max(50, "Last name must be less than 50 characters"),
   email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
   phone: z.string().trim().max(20, "Phone must be less than 20 characters").optional(),
+  businessName: z.string().trim().min(1, "Business name is required").max(100, "Business name must be less than 100 characters"),
+  industry: z.string().trim().min(1, "Industry is required"),
+  zipCode: z.string().trim().min(5, "Valid zip code is required").max(10, "Zip code must be less than 10 characters"),
+  website: z.string().trim().max(255, "Website must be less than 255 characters").optional(),
   service: z.string().optional(),
   message: z.string().trim().min(1, "Message is required").max(2000, "Message must be less than 2000 characters"),
 });
@@ -39,14 +44,39 @@ const services = [
   "Other",
 ];
 
+const industries = [
+  "HVAC",
+  "Plumbing",
+  "Electrical",
+  "Roofing",
+  "General Contractor",
+  "Remodeling",
+  "Landscaping",
+  "Pest Control",
+  "Cleaning Services",
+  "Auto Repair",
+  "Dental",
+  "Chiropractic",
+  "Med Spa",
+  "Real Estate",
+  "Photography",
+  "Other Home Services",
+  "Other",
+];
+
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState<ContactFormData>({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
+    businessName: "",
+    industry: "",
+    zipCode: "",
+    website: "",
     service: "",
     message: "",
   });
@@ -83,9 +113,14 @@ const Contact = () => {
 
       // Reset form
       setFormData({
-        name: "",
+        firstName: "",
+        lastName: "",
         email: "",
         phone: "",
+        businessName: "",
+        industry: "",
+        zipCode: "",
+        website: "",
         service: "",
         message: "",
       });
@@ -174,22 +209,41 @@ const Contact = () => {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {/* First & Last Name */}
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="text-lg font-bold text-white">Full Name <span className="text-accent">*</span></label>
+                        <label className="text-lg font-bold text-white">First Name <span className="text-accent">*</span></label>
                         <Input
-                          id="name"
-                          name="name"
-                          placeholder="John Smith"
-                          value={formData.name}
+                          id="firstName"
+                          name="firstName"
+                          placeholder="John"
+                          value={formData.firstName}
                           onChange={handleChange}
                           className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
                         />
-                        {errors.name && (
-                          <p className="text-sm text-accent">{errors.name}</p>
+                        {errors.firstName && (
+                          <p className="text-sm text-accent">{errors.firstName}</p>
                         )}
                       </div>
 
+                      <div className="space-y-2">
+                        <label className="text-lg font-bold text-white">Last Name <span className="text-accent">*</span></label>
+                        <Input
+                          id="lastName"
+                          name="lastName"
+                          placeholder="Smith"
+                          value={formData.lastName}
+                          onChange={handleChange}
+                          className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
+                        />
+                        {errors.lastName && (
+                          <p className="text-sm text-accent">{errors.lastName}</p>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Email & Phone */}
+                    <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label className="text-lg font-bold text-white">Email Address <span className="text-accent">*</span></label>
                         <Input
@@ -205,9 +259,7 @@ const Contact = () => {
                           <p className="text-sm text-accent">{errors.email}</p>
                         )}
                       </div>
-                    </div>
 
-                    <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label className="text-lg font-bold text-white">Phone Number</label>
                         <Input
@@ -223,24 +275,97 @@ const Contact = () => {
                           <p className="text-sm text-accent">{errors.phone}</p>
                         )}
                       </div>
+                    </div>
+
+                    {/* Business Name & Industry */}
+                    <div className="grid sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-lg font-bold text-white">Business Name <span className="text-accent">*</span></label>
+                        <Input
+                          id="businessName"
+                          name="businessName"
+                          placeholder="ABC Home Services"
+                          value={formData.businessName}
+                          onChange={handleChange}
+                          className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
+                        />
+                        {errors.businessName && (
+                          <p className="text-sm text-accent">{errors.businessName}</p>
+                        )}
+                      </div>
 
                       <div className="space-y-2">
-                        <label className="text-lg font-bold text-white">Service Interest</label>
+                        <label className="text-lg font-bold text-white">Niche/Industry <span className="text-accent">*</span></label>
                         <select
-                          id="service"
-                          name="service"
-                          value={formData.service}
+                          id="industry"
+                          name="industry"
+                          value={formData.industry}
                           onChange={handleChange}
                           className="flex h-12 w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:ring-1 focus:ring-primary"
                         >
-                          <option value="" className="bg-[#191321] text-white">Select a service...</option>
-                          {services.map((service) => (
-                            <option key={service} value={service} className="bg-[#191321] text-white">
-                              {service}
+                          <option value="" className="bg-[#191321] text-white">Select your industry...</option>
+                          {industries.map((ind) => (
+                            <option key={ind} value={ind} className="bg-[#191321] text-white">
+                              {ind}
                             </option>
                           ))}
                         </select>
+                        {errors.industry && (
+                          <p className="text-sm text-accent">{errors.industry}</p>
+                        )}
                       </div>
+                    </div>
+
+                    {/* Zip Code & Website */}
+                    <div className="grid sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-lg font-bold text-white">Business Zip Code <span className="text-accent">*</span></label>
+                        <Input
+                          id="zipCode"
+                          name="zipCode"
+                          placeholder="78701"
+                          value={formData.zipCode}
+                          onChange={handleChange}
+                          className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
+                        />
+                        {errors.zipCode && (
+                          <p className="text-sm text-accent">{errors.zipCode}</p>
+                        )}
+                      </div>
+
+                      <div className="space-y-2">
+                        <label className="text-lg font-bold text-white">Business Website</label>
+                        <Input
+                          id="website"
+                          name="website"
+                          placeholder="https://yourwebsite.com"
+                          value={formData.website}
+                          onChange={handleChange}
+                          className="bg-white/10 border border-white/30 rounded-lg px-4 py-3 text-white placeholder:text-white/50 focus-visible:ring-1 focus-visible:ring-primary focus-visible:border-primary"
+                        />
+                        {errors.website && (
+                          <p className="text-sm text-accent">{errors.website}</p>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Service Interest */}
+                    <div className="space-y-2">
+                      <label className="text-lg font-bold text-white">Service Interest</label>
+                      <select
+                        id="service"
+                        name="service"
+                        value={formData.service}
+                        onChange={handleChange}
+                        className="flex h-12 w-full rounded-lg border border-white/30 bg-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+                      >
+                        <option value="" className="bg-[#191321] text-white">Select a service...</option>
+                        {services.map((service) => (
+                          <option key={service} value={service} className="bg-[#191321] text-white">
+                            {service}
+                          </option>
+                        ))}
+                      </select>
                     </div>
 
                     <div className="space-y-2">
