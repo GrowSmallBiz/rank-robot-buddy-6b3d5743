@@ -85,23 +85,25 @@ import whoWeHelpRoofer from "@/assets/who-we-help-roofer.jpg";
 import whoWeHelpPoolSpa from "@/assets/who-we-help-pool-spa.jpg";
 
 // Who We Help Data - 16 trades matching reference
+const serviceDescription = "Websites • Local SEO • PPC\nAI Receptionist • CRM";
+
 const whoWeHelp = [
-  { name: "General Contractors", image: whoWeHelpGeneralContractor, description: "Web Design | Marketing" },
-  { name: "Remodeling", image: whoWeHelpRemodeling, description: "Web Design | Marketing" },
-  { name: "Plumbing", image: whoWeHelpPlumber, description: "Web Design | Marketing" },
-  { name: "Landscapers", image: whoWeHelpLandscaper, description: "Web Design | Marketing" },
-  { name: "Pressure Washer", image: whoWeHelpPressureWasher, description: "Web Design | Marketing" },
-  { name: "Moving Companies", image: whoWeHelpMovingCompany, description: "Web Design | Marketing" },
-  { name: "Pest Control", image: whoWeHelpPestControl, description: "Web Design | Marketing" },
-  { name: "Flooring & Carpet Cleaning", image: whoWeHelpFlooring, description: "Web Design | Marketing" },
-  { name: "Decks & Patios", image: whoWeHelpDeckPatio, description: "Web Design | Marketing" },
-  { name: "HVAC", image: whoWeHelpHvac, description: "Web Design | Marketing" },
-  { name: "Electrician", image: whoWeHelpElectrician, description: "Web Design | Marketing" },
-  { name: "Painters", image: whoWeHelpPainter, description: "Web Design | Marketing" },
-  { name: "Roofers", image: whoWeHelpRoofer, description: "Web Design | Marketing" },
-  { name: "Pool & Spa", image: whoWeHelpPoolSpa, description: "Web Design | Marketing" },
-  { name: "Home Builders", image: whoWeHelpHomeBuilder, description: "Web Design | Marketing" },
-  { name: "Tree Service", image: whoWeHelpTreeService, description: "Web Design | Marketing" },
+  { name: "General Contractors", image: whoWeHelpGeneralContractor, description: serviceDescription },
+  { name: "Remodeling", image: whoWeHelpRemodeling, description: serviceDescription },
+  { name: "Plumbing", image: whoWeHelpPlumber, description: serviceDescription },
+  { name: "Landscapers", image: whoWeHelpLandscaper, description: serviceDescription },
+  { name: "Pressure Washer", image: whoWeHelpPressureWasher, description: serviceDescription },
+  { name: "Moving Companies", image: whoWeHelpMovingCompany, description: serviceDescription },
+  { name: "Pest Control", image: whoWeHelpPestControl, description: serviceDescription },
+  { name: "Flooring & Carpet Cleaning", image: whoWeHelpFlooring, description: serviceDescription },
+  { name: "Decks & Patios", image: whoWeHelpDeckPatio, description: serviceDescription },
+  { name: "HVAC", image: whoWeHelpHvac, description: serviceDescription },
+  { name: "Electrician", image: whoWeHelpElectrician, description: serviceDescription },
+  { name: "Painters", image: whoWeHelpPainter, description: serviceDescription },
+  { name: "Roofers", image: whoWeHelpRoofer, description: serviceDescription },
+  { name: "Pool & Spa", image: whoWeHelpPoolSpa, description: serviceDescription },
+  { name: "Home Builders", image: whoWeHelpHomeBuilder, description: serviceDescription },
+  { name: "Tree Service", image: whoWeHelpTreeService, description: serviceDescription },
 ];
 
 // Marketing Funnel Stages
@@ -995,7 +997,7 @@ const HomeServices = () => {
                     <h3 className="text-lg font-display font-bold text-foreground group-hover:text-primary transition-colors">
                       {business.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground whitespace-pre-line">
                       {business.description}
                     </p>
                   </div>
