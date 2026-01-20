@@ -965,13 +965,13 @@ const HomeServices = () => {
           </div>
         </section>
 
-        {/* Who We Help Section */}
+        {/* Industries We Serve Section */}
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <SectionHeader
-              subtitle="Industries We Serve"
-              title="Who We"
-              titleHighlight="Help!"
+              subtitle="Home Service Contractors"
+              title="Industries We"
+              titleHighlight="Serve"
               description="GrowSmallBiz has been passionately collaborating with home service contractors and independent tradespeople. We understand the complexities of running your business and deliver tailored marketing solutions for every trade."
             />
 
@@ -997,7 +997,7 @@ const HomeServices = () => {
                     <h3 className="text-lg font-display font-bold text-foreground group-hover:text-primary transition-colors">
                       {business.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground whitespace-pre-line">
+                    <p className="text-sm text-primary whitespace-pre-line">
                       {business.description}
                     </p>
                   </div>
