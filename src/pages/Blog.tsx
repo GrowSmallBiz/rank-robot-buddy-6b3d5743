@@ -108,7 +108,7 @@ const Blog = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              The <span className="text-gradient">Growth Blog</span>
+              Local Service Business <span className="text-gradient">Growth Blog</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed animate-fade-up delay-200">
