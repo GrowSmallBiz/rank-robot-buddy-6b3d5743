@@ -301,7 +301,6 @@ const About = () => {
         description="Schedule a free strategy call to discuss how we can help your local business grow online."
       />
 
-      <CTASection />
       <ConsultationFormSection />
       <Footer />
     </div>
