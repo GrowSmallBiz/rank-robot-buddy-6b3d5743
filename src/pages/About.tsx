@@ -150,7 +150,7 @@ const About = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              Helping Local Businesses{" "}
+              Helping Local Service Businesses{" "}
               <span className="text-gradient">Dominate Online</span>
             </h1>
 
