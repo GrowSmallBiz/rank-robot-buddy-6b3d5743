@@ -71,6 +71,13 @@ import idxPlunkValuation from "@/assets/idx-plunk-valuation.png";
 import idxStylesColors from "@/assets/idx-styles-colors.png";
 import idxCountsWidget from "@/assets/idx-counts-widget.png";
 
+// IDX Premium Layouts images
+import idxTemplateResults from "@/assets/idx-template-results.png";
+import idxTemplateRoster from "@/assets/idx-template-roster.jpg";
+import idxTemplateSearch from "@/assets/idx-template-search.jpg";
+import idxTemplateDetails from "@/assets/idx-template-details.jpg";
+import idxTemplateMap from "@/assets/idx-template-map.jpg";
+
 // Pain Points for Realtors
 const painPoints = [
   {
@@ -1204,31 +1211,31 @@ const Realtors = () => {
                       title: "Results Pages",
                       count: "+30 Layouts",
                       description: "Fast, mobile-ready grids and lists that make it easy to browse listings and view key info at a glance.",
-                      image: "/src/assets/idx-template-results.png"
+                      image: idxTemplateResults
                     },
                     {
                       title: "Roster Pages",
                       count: "+5 Layouts",
                       description: "Display agents or offices with photos, bios, and contact links. Easy to customize and perfect for building trust.",
-                      image: "/src/assets/idx-template-roster.jpg"
+                      image: idxTemplateRoster
                     },
                     {
                       title: "Search Pages",
                       count: "+25 Layouts",
                       description: "Clean, responsive search forms with multiple layout options to filter by location, price, beds, baths, and more.",
-                      image: "/src/assets/idx-template-search.jpg"
+                      image: idxTemplateSearch
                     },
                     {
                       title: "Details Pages",
                       count: "+20 Layouts",
                       description: "Showcase listings with grids, slideshows, sticky CTAs, and more. Multiple layouts designed to highlight properties and drive leads.",
-                      image: "/src/assets/idx-template-details.jpg"
+                      image: idxTemplateDetails
                     },
                     {
                       title: "Map Search Pages",
                       count: "+14 Layouts",
                       description: "Interactive layouts with live maps and listing data for a better browsing experience by area or neighborhood.",
-                      image: "/src/assets/idx-template-map.jpg"
+                      image: idxTemplateMap
                     }
                   ].map((layout, i) => (
                     <CarouselItem key={i} className="pl-4 md:basis-1/2 lg:basis-1/3">
