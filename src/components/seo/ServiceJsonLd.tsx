@@ -10,7 +10,7 @@ interface ServiceJsonLdProps {
   rating?: { ratingValue: string; reviewCount: string };
 }
 
-const BASE_URL = "https://growsmallbiz-ai-seo.lovable.app";
+const BASE_URL = "https://grow-small-biz.org";
 
 export const ServiceJsonLd = ({
   serviceName,
