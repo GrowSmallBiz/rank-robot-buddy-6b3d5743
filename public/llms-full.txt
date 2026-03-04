@@ -1,0 +1,84 @@
+# GrowSmallBiz Digital Marketing — LLM Full Content
+
+Last updated: 2026-03-04
+Canonical website: https://growsmallbiz-ai-seo.lovable.app/
+
+## Brand Summary
+GrowSmallBiz helps local service businesses grow with an integrated, done-for-you marketing system. The model combines SEO, paid ads, social media, website conversion design, AI receptionist, CRM workflows, and reputation management.
+
+## Who This Is For
+- Local service businesses that need consistent lead flow
+- Teams struggling with fragmented tools and manual handoffs
+- Businesses that want end-to-end attribution from click to client
+
+## Core Value Proposition
+- One integrated system instead of disconnected marketing tools
+- Automated lead handling and follow-up
+- Predictable pipeline growth through multi-channel acquisition and conversion optimization
+
+## Main Navigation
+- Home: https://growsmallbiz-ai-seo.lovable.app/
+- About: https://growsmallbiz-ai-seo.lovable.app/about
+- Blog: https://growsmallbiz-ai-seo.lovable.app/blog
+- Contact: https://growsmallbiz-ai-seo.lovable.app/contact
+- Free Assessment: https://growsmallbiz-ai-seo.lovable.app/free-assessment
+
+## Services Directory
+
+### SEO & Organic Growth
+- Technical SEO — Improve crawlability, speed, and technical performance
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/technical-seo
+- On-Page SEO — Optimize content, metadata, topical relevance, and intent matching
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/on-page-seo
+- AEO (Answer Engine Optimization) — Structure content for answer engines and AI summaries
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/aeo
+- GEO (Generative Engine Optimization) — Improve visibility in generative AI discovery systems
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/geo
+- Local SEO — Improve map pack presence, Google Business Profile performance, and local citations
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/local-seo
+- Link Building — Increase authority through backlinks and digital PR
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/link-building
+
+### Paid & Social Acquisition
+- Paid Media — Manage performance campaigns for lead generation
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/paid-media
+- Social Media — Build audience awareness and ongoing engagement
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/social-media
+- LinkedIn Outreach — B2B outreach and pipeline support
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/linkedin-outreach
+
+### Conversion, Operations & Retention
+- Website Design — Conversion-focused web design and user journeys
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/website-design
+- AI Receptionist — 24/7 lead response and qualification workflows
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/ai-receptionist
+- CRM — Automation, pipeline visibility, and follow-up systems
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/crm
+- Reputation Management — Review generation and trust building
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/reputation-management
+- Quad Bots — Conversational, voice, lead generation, and supervisor automation bots
+  URL: https://growsmallbiz-ai-seo.lovable.app/services/quad-bots
+
+### Supporting Service Pages
+- AI SEO Hub — https://growsmallbiz-ai-seo.lovable.app/services/ai-seo-hub
+- Managed SEO Pricing — https://growsmallbiz-ai-seo.lovable.app/services/managed-seo-pricing
+
+## Industry Pages
+- HVAC — https://growsmallbiz-ai-seo.lovable.app/industries/hvac
+- Home Services — https://growsmallbiz-ai-seo.lovable.app/industries/home-services
+- Dental — https://growsmallbiz-ai-seo.lovable.app/industries/dental
+- Med Spa — https://growsmallbiz-ai-seo.lovable.app/industries/med-spa
+- Chiropractor — https://growsmallbiz-ai-seo.lovable.app/industries/chiropractor
+- Auto Repair — https://growsmallbiz-ai-seo.lovable.app/industries/auto-repair
+- Photographers — https://growsmallbiz-ai-seo.lovable.app/industries/photographers
+- Realtors — https://growsmallbiz-ai-seo.lovable.app/industries/realtors
+
+## Contact & Conversion Paths
+- Contact page: https://growsmallbiz-ai-seo.lovable.app/contact
+- Free assessment page: https://growsmallbiz-ai-seo.lovable.app/free-assessment
+
+## Machine-Readable Endpoints
+- robots.txt: https://growsmallbiz-ai-seo.lovable.app/robots.txt
+- sitemap.xml: https://growsmallbiz-ai-seo.lovable.app/sitemap.xml
+- llms.txt: https://growsmallbiz-ai-seo.lovable.app/llms.txt
+- llms-full.txt: https://growsmallbiz-ai-seo.lovable.app/llms-full.txt

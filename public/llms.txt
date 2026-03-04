@@ -1,0 +1,44 @@
+# GrowSmallBiz Digital Marketing
+
+> AI-powered digital marketing for local service businesses. We provide integrated website design, SEO, paid media, social media, AI receptionist, CRM, and lead nurturing services.
+
+Canonical: https://growsmallbiz-ai-seo.lovable.app/
+
+## Read this first
+- Full machine-readable content: https://growsmallbiz-ai-seo.lovable.app/llms-full.txt
+- XML sitemap: https://growsmallbiz-ai-seo.lovable.app/sitemap.xml
+
+## Primary Pages
+- Home: https://growsmallbiz-ai-seo.lovable.app/
+- About: https://growsmallbiz-ai-seo.lovable.app/about
+- Blog: https://growsmallbiz-ai-seo.lovable.app/blog
+- Contact: https://growsmallbiz-ai-seo.lovable.app/contact
+- Free Assessment: https://growsmallbiz-ai-seo.lovable.app/free-assessment
+
+## Services
+- Technical SEO: https://growsmallbiz-ai-seo.lovable.app/services/technical-seo
+- On-Page SEO: https://growsmallbiz-ai-seo.lovable.app/services/on-page-seo
+- AEO: https://growsmallbiz-ai-seo.lovable.app/services/aeo
+- GEO: https://growsmallbiz-ai-seo.lovable.app/services/geo
+- Local SEO: https://growsmallbiz-ai-seo.lovable.app/services/local-seo
+- Link Building: https://growsmallbiz-ai-seo.lovable.app/services/link-building
+- Paid Media: https://growsmallbiz-ai-seo.lovable.app/services/paid-media
+- Social Media: https://growsmallbiz-ai-seo.lovable.app/services/social-media
+- Website Design: https://growsmallbiz-ai-seo.lovable.app/services/website-design
+- AI SEO Hub: https://growsmallbiz-ai-seo.lovable.app/services/ai-seo-hub
+- Managed SEO Pricing: https://growsmallbiz-ai-seo.lovable.app/services/managed-seo-pricing
+- Reputation Management: https://growsmallbiz-ai-seo.lovable.app/services/reputation-management
+- AI Receptionist: https://growsmallbiz-ai-seo.lovable.app/services/ai-receptionist
+- CRM: https://growsmallbiz-ai-seo.lovable.app/services/crm
+- LinkedIn Outreach: https://growsmallbiz-ai-seo.lovable.app/services/linkedin-outreach
+- Quad Bots: https://growsmallbiz-ai-seo.lovable.app/services/quad-bots
+
+## Industries
+- HVAC: https://growsmallbiz-ai-seo.lovable.app/industries/hvac
+- Home Services: https://growsmallbiz-ai-seo.lovable.app/industries/home-services
+- Dental: https://growsmallbiz-ai-seo.lovable.app/industries/dental
+- Med Spa: https://growsmallbiz-ai-seo.lovable.app/industries/med-spa
+- Chiropractor: https://growsmallbiz-ai-seo.lovable.app/industries/chiropractor
+- Auto Repair: https://growsmallbiz-ai-seo.lovable.app/industries/auto-repair
+- Photographers: https://growsmallbiz-ai-seo.lovable.app/industries/photographers
+- Realtors: https://growsmallbiz-ai-seo.lovable.app/industries/realtors
