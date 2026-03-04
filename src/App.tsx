@@ -2,7 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import type { RouteRecord } from "vite-react-ssg";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
@@ -36,47 +37,54 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+const AppLayout = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services/technical-seo" element={<TechnicalSEO />} />
-          <Route path="/services/on-page-seo" element={<OnPageSEO />} />
-          <Route path="/services/aeo" element={<AEO />} />
-          <Route path="/services/geo" element={<GEO />} />
-          <Route path="/services/local-seo" element={<LocalSEO />} />
-          <Route path="/services/link-building" element={<LinkBuilding />} />
-          <Route path="/services/paid-media" element={<PaidMedia />} />
-          <Route path="/services/social-media" element={<SocialMedia />} />
-          <Route path="/services/website-design" element={<WebsiteDesign />} />
-          <Route path="/services/ai-seo-hub" element={<AISEOHub />} />
-          <Route path="/services/managed-seo-pricing" element={<ManagedSEOPricing />} />
-          <Route path="/services/reputation-management" element={<ReputationManagement />} />
-          <Route path="/services/ai-receptionist" element={<AIReceptionist />} />
-          <Route path="/services/crm" element={<CRM />} />
-          <Route path="/services/linkedin-outreach" element={<LinkedInOutreach />} />
-          <Route path="/services/quad-bots" element={<QuadBots />} />
-          <Route path="/free-assessment" element={<FreeAssessment />} />
-          <Route path="/industries/hvac" element={<HVAC />} />
-          <Route path="/industries/home-services" element={<HomeServices />} />
-          <Route path="/industries/dental" element={<Dental />} />
-          <Route path="/industries/med-spa" element={<MedSpa />} />
-          <Route path="/industries/chiropractor" element={<Chiropractor />} />
-          <Route path="/industries/auto-repair" element={<AutoRepair />} />
-          <Route path="/industries/photographers" element={<Photographers />} />
-          <Route path="/industries/realtors" element={<Realtors />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <Outlet />
     </TooltipProvider>
   </QueryClientProvider>
 );
 
-export default App;
+export const routes: RouteRecord[] = [
+  {
+    path: "/",
+    Component: AppLayout,
+    children: [
+      { index: true, Component: Index },
+      { path: "about", Component: About },
+      { path: "blog", Component: Blog },
+      { path: "contact", Component: Contact },
+      { path: "services/technical-seo", Component: TechnicalSEO },
+      { path: "services/on-page-seo", Component: OnPageSEO },
+      { path: "services/aeo", Component: AEO },
+      { path: "services/geo", Component: GEO },
+      { path: "services/local-seo", Component: LocalSEO },
+      { path: "services/link-building", Component: LinkBuilding },
+      { path: "services/paid-media", Component: PaidMedia },
+      { path: "services/social-media", Component: SocialMedia },
+      { path: "services/website-design", Component: WebsiteDesign },
+      { path: "services/ai-seo-hub", Component: AISEOHub },
+      { path: "services/managed-seo-pricing", Component: ManagedSEOPricing },
+      { path: "services/reputation-management", Component: ReputationManagement },
+      { path: "services/ai-receptionist", Component: AIReceptionist },
+      { path: "services/crm", Component: CRM },
+      { path: "services/linkedin-outreach", Component: LinkedInOutreach },
+      { path: "services/quad-bots", Component: QuadBots },
+      { path: "free-assessment", Component: FreeAssessment },
+      { path: "industries/hvac", Component: HVAC },
+      { path: "industries/home-services", Component: HomeServices },
+      { path: "industries/dental", Component: Dental },
+      { path: "industries/med-spa", Component: MedSpa },
+      { path: "industries/chiropractor", Component: Chiropractor },
+      { path: "industries/auto-repair", Component: AutoRepair },
+      { path: "industries/photographers", Component: Photographers },
+      { path: "industries/realtors", Component: Realtors },
+      { path: "404", Component: NotFound },
+      { path: "*", Component: NotFound },
+    ],
+  },
+];
+
+export default AppLayout;
