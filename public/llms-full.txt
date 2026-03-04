@@ -618,7 +618,7 @@ Google Business Profile optimization, meta tag optimization, schema markup, inte
 ---
 
 # PAGE: AI SEO Hub
-URL: https://growsmallbiz-ai-seo.lovable.app/services/ai-seo-hub
+URL: https://grow-small-biz.org/services/ai-seo-hub
 
 ## What We Do
 Six SEO services combined into one AI-powered platform: Technical SEO, On-Page SEO, AEO, GEO, Local SEO, and Link Building.
@@ -642,7 +642,7 @@ Six SEO services combined into one AI-powered platform: Technical SEO, On-Page S
 # INDUSTRY PAGES
 
 ## HVAC Marketing
-URL: https://growsmallbiz-ai-seo.lovable.app/industries/hvac
+URL: https://grow-small-biz.org/industries/hvac
 
 AI-powered digital marketing designed specifically for HVAC businesses. Dominate local search, capture emergency calls, and grow your service business.
 
@@ -690,7 +690,7 @@ A: We specialize exclusively in high-ticket local services and optimize for AI s
 ---
 
 ## Home Services Marketing
-URL: https://growsmallbiz-ai-seo.lovable.app/industries/home-services
+URL: https://grow-small-biz.org/industries/home-services
 
 Complete digital marketing for home service contractors. From SEO and paid ads to AI automation and reputation management — everything you need to dominate your local market.
 
@@ -733,7 +733,7 @@ A: We're specialists in home services marketing — we understand seasonal deman
 ---
 
 ## Dental Marketing
-URL: https://growsmallbiz-ai-seo.lovable.app/industries/dental
+URL: https://grow-small-biz.org/industries/dental
 
 Attract more patients, fill your schedule, and grow your dental practice with AI-powered digital marketing designed specifically for dentists.
 
@@ -781,7 +781,7 @@ A: Dental SEO requires understanding patient psychology, procedure-specific sear
 ---
 
 ## Med Spa Marketing
-URL: https://growsmallbiz-ai-seo.lovable.app/industries/med-spa
+URL: https://grow-small-biz.org/industries/med-spa
 
 Attract high-value aesthetic clients with AI-powered digital marketing designed for med spas. From Botox to body contouring, we fill your treatment rooms.
 
@@ -829,7 +829,7 @@ A: Most clients see increased traffic within 2-3 months and measurable consultat
 ---
 
 ## Chiropractor Marketing
-URL: https://growsmallbiz-ai-seo.lovable.app/industries/chiropractor
+URL: https://grow-small-biz.org/industries/chiropractor
 
 Grow your chiropractic practice with AI-powered digital marketing. Attract new patients, build your reputation, and dominate local search.
 
@@ -877,7 +877,7 @@ A: It requires understanding patient pain points, treatment-seeking behavior, an
 ---
 
 ## Auto Repair Marketing
-URL: https://growsmallbiz-ai-seo.lovable.app/industries/auto-repair
+URL: https://grow-small-biz.org/industries/auto-repair
 
 Drive more customers to your auto repair shop with AI-powered digital marketing. Capture emergency repair calls, build reviews, and dominate local search.
 
@@ -925,7 +925,7 @@ A: We target emergency keywords, optimize for mobile, and ensure click-to-call a
 ---
 
 ## Photographer Marketing
-URL: https://growsmallbiz-ai-seo.lovable.app/industries/photographers
+URL: https://grow-small-biz.org/industries/photographers
 
 Attract more clients and book more sessions with AI-powered digital marketing designed for photographers. From weddings to portraits, we fill your calendar.
 
@@ -965,7 +965,7 @@ We power your studio's booking and client communication with AI receptionist, au
 ---
 
 ## Realtor Marketing
-URL: https://growsmallbiz-ai-seo.lovable.app/industries/realtors
+URL: https://grow-small-biz.org/industries/realtors
 
 Generate more leads, build your brand, and close more deals with AI-powered digital marketing designed for real estate professionals.
 
