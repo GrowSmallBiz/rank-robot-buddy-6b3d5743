@@ -191,6 +191,7 @@ const BrandingGuidelines = () => {
               { label: "Layout", value: "Centered container (max 1400px), generous vertical padding (96px / 128px on sections)" },
               { label: "Border radius", value: "Default 12px, cards use 16px (rounded-2xl)" },
             ]} />
+            <ExampleImage src="/screenshots/section-header-hero.png" alt="GrowSmallBiz homepage showing dark-mode design philosophy" caption="Homepage hero — dark navy background with warm coral/orange accents and gradient text" />
           </Section>
 
           {/* 2. Color Palette */}
@@ -416,6 +417,7 @@ const BrandingGuidelines = () => {
                 { label: "CTA (desktop)", value: "Phone number button with primary orange background, shows 'Call Now & Schedule Today' + phone number" },
                 { label: "Mobile", value: "Hamburger menu, full-width dropdown below header, collapsible accordion sub-menus" },
               ]} />
+              <ExampleImage src="/screenshots/growsmallbiz-logo.png" alt="GrowSmallBiz logo in header" caption="Header with logo, navigation dropdowns, and orange CTA button" />
             </SubSection>
 
             <SubSection num="5.2" title="Hero Section">
@@ -431,6 +433,7 @@ const BrandingGuidelines = () => {
                 { label: "CTA buttons", value: "Flex row on desktop, column on mobile, 16px gap. Primary: hero gradient variant, XL size with arrow. Secondary: heroOutline variant, XL size" },
                 { label: "Animation", value: "Staggered fade-up animation with 100ms–400ms delays" },
               ]} />
+              <ExampleImage src="/screenshots/homepage-hero-bg.jpg" alt="Hero section background image" caption="Hero section — full-bleed background image with dark overlay, gradient text, and dual CTA buttons" />
             </SubSection>
 
             <SubSection num="5.3" title="Comparison Section (Fragmented vs Integrated)">
@@ -600,6 +603,7 @@ const BrandingGuidelines = () => {
                 { label: "Bottom bar", value: "Top border, copyright text + Privacy / Terms links" },
                 { label: "Padding", value: "64px vertical for content, 48px top margin + 32px top padding for bottom bar" },
               ]} />
+              <ExampleImage src="/screenshots/growsmallbiz-logo.png" alt="Footer with logo and link columns" caption="Footer — 4-column grid with gradient logo, link columns, and bottom bar" />
             </SubSection>
           </Section>
 
@@ -892,6 +896,15 @@ const CodeBlock = ({ label, code }: { label: string; code: string }) => (
   <div className="mt-4">
     <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">{label}</span>
     <pre className="mt-1 bg-gray-900 text-gray-100 text-xs rounded-lg p-4 overflow-x-auto whitespace-pre-wrap font-mono">{code}</pre>
+  </div>
+);
+
+const ExampleImage = ({ src, alt, caption }: { src: string; alt: string; caption?: string }) => (
+  <div className="mt-4 mb-2">
+    <div className="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+      <img src={src} alt={alt} className="w-full h-auto" loading="lazy" />
+    </div>
+    {caption && <p className="text-xs text-gray-400 mt-2 italic text-center">{caption}</p>}
   </div>
 );
 
