@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -174,6 +175,16 @@ const Dental = () => {
         <title>Dental Practice SEO Services | Attract More Patients | GrowSmallBiz</title>
         <meta name="description" content="Grow your dental practice with specialized SEO. Rank #1 for cosmetic dentistry, dental implants, and 'dentist near me' searches. Get more new patients." />
       </Helmet>
+      <ServiceJsonLd
+        serviceName="Dental Practice Marketing"
+        serviceType="Digital Marketing for Dentists"
+        description="SEO, reputation management, and digital marketing to attract more dental patients."
+        url="/industries/dental"
+        breadcrumbs={[
+          { name: "Industries", url: "/industries/home-services" },
+          { name: "Dental", url: "/industries/dental" },
+        ]}
+      />
       
       <Header />
 

@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -173,6 +174,16 @@ const AutoRepair = () => {
         <title>Auto Repair Shop SEO Services | Get More Customers | GrowSmallBiz</title>
         <meta name="description" content="Grow your auto repair shop with specialized SEO. Rank #1 for auto repair, brake service, and oil change searches. Beat the dealerships and chains." />
       </Helmet>
+      <ServiceJsonLd
+        serviceName="Auto Repair Shop Marketing"
+        serviceType="Digital Marketing for Auto Repair"
+        description="SEO and digital marketing to help auto repair shops beat dealerships and chains."
+        url="/industries/auto-repair"
+        breadcrumbs={[
+          { name: "Industries", url: "/industries/home-services" },
+          { name: "Auto Repair", url: "/industries/auto-repair" },
+        ]}
+      />
       
       <Header />
 

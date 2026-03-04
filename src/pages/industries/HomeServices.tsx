@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -877,6 +878,15 @@ const HomeServices = () => {
         <link rel="canonical" href="https://growsmallbiz.com/industries/home-services" />
       </Helmet>
 
+      <ServiceJsonLd
+        serviceName="Home Services Marketing"
+        serviceType="Digital Marketing for Home Service Contractors"
+        description="Complete marketing strategy for HVAC, plumbing, electrical, roofing, and remodeling contractors."
+        url="/industries/home-services"
+        breadcrumbs={[
+          { name: "Industries", url: "/industries/home-services" },
+        ]}
+      />
       <Header />
       
       <main className="min-h-screen">
