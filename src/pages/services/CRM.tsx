@@ -524,6 +524,16 @@ const CRM = () => {
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 
+      <ServiceJsonLd
+        serviceName="AI-Powered CRM for Small Business"
+        serviceType="CRM Solutions"
+        description="All-in-one CRM with automated SMS, Email, Live Chat & Phone follow-ups and 24/7 AI lead nurturing."
+        url="/services/crm"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "CRM", url: "/services/crm" },
+        ]}
+      />
       <Header />
 
       <main className="pt-20">

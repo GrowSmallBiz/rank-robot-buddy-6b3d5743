@@ -115,6 +115,16 @@ const features = [
 const GEO = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceJsonLd
+        serviceName="Generative Engine Optimization (GEO)"
+        serviceType="Generative Engine Optimization"
+        description="Get your brand cited in ChatGPT, Gemini, Perplexity, and AI-powered search results."
+        url="/services/geo"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "GEO", url: "/services/geo" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}

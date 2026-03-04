@@ -147,6 +147,16 @@ const ManagedSEOPricing = () => {
         />
       </Helmet>
 
+      <ServiceJsonLd
+        serviceName="Managed AI SEO Service Packages"
+        serviceType="Managed SEO"
+        description="Transparent pricing for managed AI SEO services from Starter to Authority plans."
+        url="/services/managed-seo-pricing"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Managed SEO Pricing", url: "/services/managed-seo-pricing" },
+        ]}
+      />
       <Header />
 
       <main className="pt-20">
