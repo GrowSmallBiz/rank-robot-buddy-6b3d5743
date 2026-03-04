@@ -12,6 +12,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings, TrendingUp, Clock, Zap } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import aeoServiceImage from "@/assets/aeo-service.png";
 
 const aeoStats = [
