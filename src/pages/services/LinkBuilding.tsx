@@ -119,6 +119,16 @@ const features = [
 const LinkBuilding = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceJsonLd
+        serviceName="Link Building Services"
+        serviceType="Link Building"
+        description="High-quality backlink acquisition, digital PR, and authority building for local businesses."
+        url="/services/link-building"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Link Building", url: "/services/link-building" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}

@@ -133,6 +133,16 @@ const process = [
 const OnPageSEO = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceJsonLd
+        serviceName="On-Page SEO Services"
+        serviceType="On-Page SEO"
+        description="Content optimization, keyword targeting, meta tag management, and internal linking for local businesses."
+        url="/services/on-page-seo"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "On-Page SEO", url: "/services/on-page-seo" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}

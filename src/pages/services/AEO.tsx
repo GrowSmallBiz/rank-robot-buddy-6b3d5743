@@ -102,6 +102,16 @@ const platforms = [
 const AEO = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceJsonLd
+        serviceName="Answer Engine Optimization (AEO)"
+        serviceType="Answer Engine Optimization"
+        description="Optimize your content for AI-powered answer engines and featured snippets across ChatGPT, Perplexity, and Google AI."
+        url="/services/aeo"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "AEO", url: "/services/aeo" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}

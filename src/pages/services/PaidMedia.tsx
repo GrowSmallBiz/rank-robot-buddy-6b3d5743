@@ -179,6 +179,16 @@ const comparisonData = [
 const PaidMedia = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceJsonLd
+        serviceName="Paid Media & Advertising"
+        serviceType="Paid Advertising"
+        description="Google Ads, Meta Ads, TikTok Ads, and PPC management for local service businesses."
+        url="/services/paid-media"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Paid Media", url: "/services/paid-media" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}
