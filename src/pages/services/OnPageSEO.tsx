@@ -12,6 +12,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import { ArrowRight, Check, FileText, Target, Link2, Code, Search, TrendingUp, Eye, Clock } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import onPageSeoImage from "@/assets/on-page-seo.png";
 
 const onPageSeoTestimonials = [
