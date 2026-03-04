@@ -17,6 +17,7 @@ import {
   ArrowRight,
   CheckCircle2
 } from "lucide-react";
+import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 const contactSchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(50, "First name must be less than 50 characters"),
@@ -147,6 +148,13 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageJsonLd
+        pageType="ContactPage"
+        name="Contact GrowSmallBiz Digital Marketing"
+        description="Get in touch for a free marketing assessment."
+        url="/contact"
+        breadcrumbs={[{ name: "Contact", url: "/contact" }]}
+      />
       <Header />
 
       {/* Hero Section */}

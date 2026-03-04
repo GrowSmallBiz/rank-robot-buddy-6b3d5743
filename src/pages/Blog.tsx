@@ -28,6 +28,7 @@ import {
   paidMediaBlogPosts,
   BlogPost
 } from "@/components/sections/BlogSection";
+import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 // Combine all blog posts with their source category
 const allBlogPosts: (BlogPost & { sourceCategory: string })[] = [
@@ -92,6 +93,13 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageJsonLd
+        pageType="Blog"
+        name="Blog | GrowSmallBiz Digital Marketing"
+        description="Digital marketing insights, SEO tips, and AI strategies for local businesses."
+        url="/blog"
+        breadcrumbs={[{ name: "Blog", url: "/blog" }]}
+      />
       <Header />
 
       {/* Hero Section */}

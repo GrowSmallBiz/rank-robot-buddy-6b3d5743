@@ -13,6 +13,7 @@ import { CardCTA } from "@/components/services/CardCTA";
 import { createContactCTA } from "@/config/contactCTA";
 import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield, MapPin, Bot, Eye, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
+import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 const aboutFaqs = [
   {
@@ -134,6 +135,13 @@ const aboutCaseStudies = [
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageJsonLd
+        pageType="AboutPage"
+        name="About GrowSmallBiz Digital Marketing"
+        description="AI-powered SEO and digital marketing for local service businesses."
+        url="/about"
+        breadcrumbs={[{ name: "About", url: "/about" }]}
+      />
       <Header />
 
       {/* Hero Section */}
