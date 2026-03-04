@@ -144,6 +144,22 @@ Backend optimizations that affect your website's search performance: meta tags, 
 - Architecture & Indexation: Clean site structure for search engines
 - Performance Monitoring: Continuous tracking and optimization
 
+## What's Included
+- Comprehensive crawl analysis
+- Core Web Vitals optimization
+- Mobile-first indexing compliance
+- Schema markup implementation
+- Site speed optimization and caching
+- Security audit and HTTPS
+- Duplicate content resolution
+- URL structure optimization
+
+## Results
+- 98% E-commerce Traffic Increase
+- 113% Conversion Rate Lift
+- 10x Organic Sessions Growth
+- 2s Target Page Load Time
+
 ## FAQs
 Q: What does technical SEO include?
 A: Meta tag optimization, site architecture, redirect management, URL structure, image optimization, structured data, internal linking, JavaScript rendering, hreflang tags, caching configurations.
@@ -188,7 +204,7 @@ Optimizing elements within your web pages — content, titles, meta descriptions
 - 10x Organic Sessions Growth
 - 2s Target Page Load Time
 
-
+## FAQs
 Q: What exactly is on-page SEO?
 A: Optimizing content, titles, meta descriptions, headings, and HTML markup to improve search visibility at scale.
 
@@ -247,13 +263,17 @@ Optimizing content, entities, and technical signals so AI platforms like ChatGPT
 - 100% Knowledge Graph Coverage
 - 90 Days to Impact
 
+## GEO vs Traditional SEO
+- Traditional SEO: Optimizes for search engine crawlers, keyword rankings, SERP positions
+- GEO: Optimizes for AI understanding, entity recognition, AI citations & mentions
+
 ## Features
 - Entity & Knowledge Graph Optimization
 - AI-Friendly Content Structuring
 - Advanced Schema Implementation
 - Semantic & Contextual Enrichment
-- E-E-A-T Enhancement
-- AI Citation Tracking
+- E-E-A-T & Digital Authority Development
+- LLM Training Data Optimization
 
 ## FAQs
 Q: What is GEO?
@@ -405,6 +425,16 @@ Conversion-optimized website design with on-brand messaging, clear CTAs, mobile 
 - 100% Mobile Responsive
 - 1-2 Weeks to Launch
 
+## What's Included
+- Conversion-focused design
+- SEO-optimized structure
+- Mobile-first responsive
+- Fast loading speed
+- Call tracking integration
+- Google Analytics setup
+- Local schema markup
+- Content creation
+
 ## FAQs
 Q: How long does a website project take?
 A: 1-2 weeks for template websites, 6-8 weeks for premium authority websites.
@@ -429,11 +459,10 @@ URL: https://growsmallbiz-ai-seo.lovable.app/services/ai-receptionist
 ## What We Do
 24/7 AI-powered phone answering, lead qualification, appointment booking, and multi-channel conversation handling.
 
-## Key Stats
-- 47% of Small Businesses Miss Calls
-- 85% Never Call Back After Being Missed
-- $1,200 Average Lost Revenue Per Missed Call
-- 96.7% AI Success Rate
+## The Problem
+- 47% of small businesses miss calls
+- 85% of callers never call back after being missed
+- $1,200 average lost revenue per missed call
 
 ## Features
 - 24/7 Inbound Call Handling — AI answers every call naturally
