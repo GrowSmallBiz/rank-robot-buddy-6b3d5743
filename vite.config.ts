@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import prerenderStatic from "vite-plugin-prerender-static";
+import { getRouteHtml } from "./prerender-content";
 
 const allRoutes = [
   { path: "/", tags: { title: "Managed AI SEO Services | GrowSmallBiz Digital Marketing", description: "Professional AI-powered SEO services to grow your business. Technical SEO, On-Page SEO, AEO, GEO, Local SEO and Link Building." } },
@@ -49,10 +50,7 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     prerenderStatic({
       routes: allRoutes,
-      render: (route) => {
-        const tags = typeof route.tags === 'string' ? { title: route.tags, description: '' } : route.tags;
-        return `<div id="root"><h1>${tags.title}</h1><p>${tags.description}</p><p>Loading...</p></div>`;
-      },
+      render: (route) => getRouteHtml(route.path),
       headTags: '',
     }),
   ].filter(Boolean),
