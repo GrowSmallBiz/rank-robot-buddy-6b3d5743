@@ -497,10 +497,32 @@ export const routeContent: Record<string, RouteContent> = {
       ${nav}
       <h1>HVAC Marketing — Digital Marketing for HVAC Companies</h1>
       <p>AI-powered digital marketing designed specifically for HVAC businesses. Dominate local search, capture emergency calls, and grow your service business.</p>
-      <h2>Services for HVAC Companies</h2>
-      <ul><li>Local SEO & Google Business Profile optimization</li><li>Google Ads & LSA management</li><li>Website design optimized for HVAC</li><li>Reputation management</li><li>AI receptionist for after-hours calls</li><li>CRM & lead nurturing</li></ul>
       <h2>Why HVAC Companies Choose Us</h2>
-      <ul><li>Emergency call capture 24/7</li><li>Seasonal campaign management</li><li>Service area optimization</li><li>Competitor displacement strategies</li></ul>
+      <ul>
+        <li><strong>Dominate Local Search</strong> — Rank #1 for 'HVAC near me', 'plumber in [city]', and 'emergency electrician' searches in your service area.</li>
+        <li><strong>More Emergency Calls</strong> — Capture urgent service calls when homeowners need immediate help with broken AC, burst pipes, or electrical issues.</li>
+        <li><strong>AI Search Visibility</strong> — Get recommended by ChatGPT, Google AI, and voice assistants when homeowners ask 'Who's the best HVAC company?'</li>
+        <li><strong>5-Star Reputation</strong> — Build and showcase your reviews to become the trusted choice for home service needs.</li>
+      </ul>
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Local SEO Domination</strong> — Own the Google Map Pack for every service you offer. Google Business Profile optimization, local citation building, service area targeting, multi-location management.</li>
+        <li><strong>Emergency Service Visibility</strong> — Be the first call when someone's AC breaks at midnight. 24/7 emergency keywords, mobile-first optimization, click-to-call integration.</li>
+        <li><strong>AI & Voice Search Ready</strong> — Get recommended when homeowners ask Alexa, Siri, or ChatGPT for HVAC help. Answer Engine Optimization, FAQ schema markup, featured snippet targeting.</li>
+        <li><strong>Review & Reputation Building</strong> — Turn happy customers into 5-star reviews. Review generation system, response templates, reputation monitoring.</li>
+      </ul>
+      <h2>Common Pain Points We Solve</h2>
+      <ul><li>Losing jobs to competitors who rank higher on Google</li><li>Paying too much for leads from HomeAdvisor or Angi</li><li>Emergency calls going to competitors</li><li>Struggling to compete with franchise operations</li><li>Website not generating enough phone calls</li></ul>
+      <h2>Results</h2>
+      <ul><li>312% increase in organic leads</li><li>47 first page keywords</li><li>4.2x ROI on marketing spend</li><li>$0 per-lead cost from organic</li></ul>
+      <h2>FAQs</h2>
+      <dl>
+        <dt>How long does it take to see results for HVAC SEO?</dt><dd>Most HVAC clients see significant improvements within 3-4 months. Local map pack results typically improve within 6-8 weeks.</dd>
+        <dt>Can you help us rank in multiple service areas?</dt><dd>Yes! We specialize in multi-location and multi-service-area SEO with location-specific landing pages.</dd>
+        <dt>How do you help us get more emergency service calls?</dt><dd>We target high-intent emergency keywords like 'emergency AC repair' and 'furnace repair near me now', optimize for mobile, and ensure click-to-call buttons are prominent.</dd>
+        <dt>Do you work with franchises or just independent contractors?</dt><dd>We work with both independent HVAC companies and franchise locations.</dd>
+        <dt>What makes your approach different?</dt><dd>We specialize exclusively in high-ticket local services and optimize for AI search and voice assistants — not just traditional Google rankings.</dd>
+      </dl>
       ${cta}
       ${footer}
     `,
@@ -510,11 +532,34 @@ export const routeContent: Record<string, RouteContent> = {
     body: `
       ${nav}
       <h1>Home Services Marketing — Digital Marketing for Contractors</h1>
-      <p>Complete digital marketing for home service contractors including plumbers, electricians, roofers, remodelers, landscapers, and more.</p>
-      <h2>Industries We Serve</h2>
-      <ul><li>Plumbing</li><li>Electrical</li><li>Roofing</li><li>Remodeling</li><li>HVAC</li><li>Landscaping</li><li>Pest Control</li><li>Cleaning Services</li><li>Pool & Spa</li><li>Tree Service</li><li>Painting</li><li>Flooring</li></ul>
-      <h2>Services</h2>
-      <ul><li>SEO & Local Search Optimization</li><li>Google Ads & LSA</li><li>Website Design</li><li>Reputation Management</li><li>Social Media</li><li>AI Automation</li></ul>
+      <p>Complete digital marketing for home service contractors. From SEO and paid ads to AI automation and reputation management — everything you need to dominate your local market.</p>
+      <h2>Who We Help</h2>
+      <ul><li>General Contractors</li><li>Remodeling</li><li>Plumbing</li><li>Landscapers</li><li>Pressure Washers</li><li>Moving Companies</li><li>Pest Control</li><li>Flooring & Carpet Cleaning</li><li>Decks & Patios</li><li>HVAC</li><li>Electricians</li><li>Painters</li><li>Roofers</li><li>Pool & Spa</li><li>Home Builders</li><li>Tree Service</li></ul>
+      <h2>Marketing Funnel</h2>
+      <ol>
+        <li><strong>Awareness</strong> — Get discovered: Local SEO, AI SEO (AEO/GEO), Google PPC, Meta Ads</li>
+        <li><strong>Consideration</strong> — Build trust: Professional Website, Review Generation, Content Marketing, Retargeting Ads</li>
+        <li><strong>Conversion</strong> — Turn leads into customers: AI Receptionist, Lead Capture Forms, Local Service Ads, CRM Automation</li>
+        <li><strong>Retention</strong> — Keep customers coming back: Reputation Management, Email/SMS Campaigns, Referral Programs, Maintenance Plans</li>
+      </ol>
+      <h2>Platform Recommendations by Trade</h2>
+      <ul>
+        <li><strong>HVAC</strong> — Google LSA, Google PPC, Meta, Nextdoor. Emergency-focused keywords + seasonal campaigns.</li>
+        <li><strong>Plumbing</strong> — Google LSA, Google PPC, YouTube, Yelp. 24/7 emergency visibility is critical.</li>
+        <li><strong>Electrical</strong> — Google PPC, Google LSA, Meta, HomeAdvisor. Safety-related searches and EV charger installation.</li>
+        <li><strong>Roofing</strong> — Google PPC, Meta, Google LSA, Houzz. Storm damage campaigns + visual before/after content.</li>
+        <li><strong>Remodeling</strong> — Meta, Houzz, Pinterest, Google PPC. Visual-first approach with project photos.</li>
+        <li><strong>General Contractor</strong> — Google PPC, Meta, Houzz, Nextdoor. Portfolio diversity and reviews are critical.</li>
+      </ul>
+      <h2>FAQs</h2>
+      <dl>
+        <dt>What types of home service businesses do you work with?</dt><dd>We specialize in HVAC, plumbing, electrical, roofing, and remodeling with strategies tailored to each trade.</dd>
+        <dt>How do you determine which advertising platforms are best?</dt><dd>We analyze your trade, service area, average job value, and competition to recommend the optimal platform mix.</dd>
+        <dt>What's included in your AI SEO service?</dt><dd>Keyword research (500+ terms), competitor analysis, technical SEO audit, on-page optimization, local SEO with GBP management, and AEO/GEO optimization for AI search visibility.</dd>
+        <dt>How long until we see results from SEO?</dt><dd>Paid media generates leads immediately. SEO shows meaningful improvements within 3-6 months, with significant growth by month 6-12.</dd>
+        <dt>Do you handle both B2B and B2C marketing?</dt><dd>Yes! We create targeted campaigns for homeowners (B2C) and commercial clients or property managers (B2B).</dd>
+        <dt>What makes your approach different?</dt><dd>We're specialists in home services marketing — we understand seasonal demand, emergency call patterns, and the unique buyer journey for each trade.</dd>
+      </dl>
       ${cta}
       ${footer}
     `,
@@ -525,10 +570,32 @@ export const routeContent: Record<string, RouteContent> = {
       ${nav}
       <h1>Dental Marketing — Digital Marketing for Dental Practices</h1>
       <p>Attract more patients, fill your schedule, and grow your dental practice with AI-powered digital marketing designed specifically for dentists.</p>
-      <h2>Services for Dental Practices</h2>
-      <ul><li>Local SEO for dentists</li><li>Google Ads targeting dental keywords</li><li>Patient review management</li><li>Website design for dental practices</li><li>Social media management</li><li>AI receptionist for patient inquiries</li></ul>
+      <h2>Why Dental Practices Choose Us</h2>
+      <ul>
+        <li><strong>Local Patient Acquisition</strong> — Rank #1 for 'dentist near me', 'emergency dentist', and cosmetic procedure searches.</li>
+        <li><strong>More Appointment Bookings</strong> — Convert website visitors into booked appointments with optimized landing pages.</li>
+        <li><strong>AI Search Visibility</strong> — Get recommended when patients ask AI 'Who's the best dentist for veneers in [city]?'</li>
+        <li><strong>Reputation Excellence</strong> — Build and showcase 5-star reviews to become the most trusted practice.</li>
+      </ul>
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>New Patient SEO</strong> — High-intent keyword targeting, procedure-specific landing pages, before/after gallery optimization, insurance & financing page SEO.</li>
+        <li><strong>Local Map Pack Domination</strong> — Google Business Profile optimization, local citation consistency, review generation campaigns, competitor displacement.</li>
+        <li><strong>AI & Voice Search Ready</strong> — Answer Engine Optimization, FAQ schema, conversational content strategy, featured snippet targeting.</li>
+        <li><strong>Conversion Optimization</strong> — Online booking integration, mobile optimization, trust signal placement, patient journey optimization.</li>
+      </ul>
+      <h2>Common Pain Points We Solve</h2>
+      <ul><li>New patient flow has stagnated or declined</li><li>Competitors outranking you for key searches</li><li>Website isn't generating enough appointment requests</li><li>Struggling to attract high-value cosmetic patients</li><li>Paying too much for ineffective marketing</li></ul>
       <h2>Results</h2>
-      <ul><li>+200% new patients per month</li><li>+176% cosmetic case value</li><li>#1 Google rankings</li></ul>
+      <ul><li>287% increase in new patients</li><li>52 first page keywords</li><li>$85K average monthly production increase</li><li>4.8 average Google rating achieved</li></ul>
+      <h2>FAQs</h2>
+      <dl>
+        <dt>How long does it take to see more new patients from SEO?</dt><dd>Most dental practices see measurable increases within 3-4 months. Significant new patient growth within 6 months.</dd>
+        <dt>Can you help us rank for high-value procedures like implants?</dt><dd>Yes! We create dedicated landing pages for each service and optimize them for both patients and search engines.</dd>
+        <dt>Do you work with multi-location dental groups?</dt><dd>Yes, we have extensive experience with DSOs and multi-location practices.</dd>
+        <dt>How do you help us get more Google reviews?</dt><dd>We implement review generation systems with automated follow-up sequences, review request templates, and response strategies.</dd>
+        <dt>What makes dental SEO different?</dt><dd>Dental SEO requires understanding patient psychology, procedure-specific search intent, and healthcare compliance.</dd>
+      </dl>
       ${cta}
       ${footer}
     `,
@@ -539,8 +606,32 @@ export const routeContent: Record<string, RouteContent> = {
       ${nav}
       <h1>Med Spa Marketing — Digital Marketing for Medical Spas</h1>
       <p>Attract high-value aesthetic clients with AI-powered digital marketing designed for med spas. From Botox to body contouring, we fill your treatment rooms.</p>
-      <h2>Services for Med Spas</h2>
-      <ul><li>Local SEO for med spas</li><li>Instagram & Facebook marketing</li><li>Google Ads for aesthetic treatments</li><li>Before/after portfolio management</li><li>Patient review generation</li><li>AI receptionist and booking</li></ul>
+      <h2>Why Med Spas Choose Us</h2>
+      <ul>
+        <li><strong>Luxury Local Presence</strong> — Rank #1 for 'Botox near me', 'lip fillers [city]', and high-value aesthetic searches.</li>
+        <li><strong>Premium Consultations</strong> — Attract qualified clients ready to invest with optimized conversion funnels.</li>
+        <li><strong>AI-Powered Discovery</strong> — Get recommended when clients ask AI 'What's the best med spa for laser treatments?'</li>
+        <li><strong>5-Star Reputation</strong> — Showcase transformative results and glowing reviews to build trust.</li>
+      </ul>
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Aesthetic Procedure SEO</strong> — Dominate searches for Botox, fillers, laser treatments, body contouring. Procedure-specific landing pages, before/after gallery SEO.</li>
+        <li><strong>Local Luxury Positioning</strong> — Google Business Profile luxury positioning, high-end local citations, upscale review strategy, competitor differentiation.</li>
+        <li><strong>AI & Voice Search Optimization</strong> — Answer Engine Optimization, treatment FAQ schema, expert positioning content.</li>
+        <li><strong>Consultation Conversion</strong> — Online booking optimization, lead magnet creation, trust signal integration, patient journey mapping.</li>
+      </ul>
+      <h2>Common Pain Points We Solve</h2>
+      <ul><li>Competitors with less experience outranking you</li><li>Struggling to attract high-value injectable and laser clients</li><li>Social media isn't generating enough consultations</li><li>Website traffic isn't converting into appointments</li><li>Wasting money on ads without sustainable growth</li></ul>
+      <h2>Results</h2>
+      <ul><li>324% increase in consultations</li><li>67 first page keywords</li><li>$127K average monthly revenue increase</li><li>4.9 average Google rating achieved</li></ul>
+      <h2>FAQs</h2>
+      <dl>
+        <dt>How is med spa SEO different from regular healthcare SEO?</dt><dd>Med spa SEO requires balancing medical credibility with luxury lifestyle marketing while maintaining advertising compliance.</dd>
+        <dt>Can you help us rank for competitive terms like 'Botox'?</dt><dd>Yes! We develop comprehensive strategies for high-value procedure keywords with location-specific targeting.</dd>
+        <dt>How do you handle before/after image SEO?</dt><dd>We optimize galleries with proper alt tags, schema markup, and page structure to rank in image search.</dd>
+        <dt>Do you work with multi-location med spa brands?</dt><dd>Yes, we work with both boutique med spas and multi-location brands with scalable strategies.</dd>
+        <dt>How long until we see more consultations?</dt><dd>Most clients see increased traffic within 2-3 months and measurable consultation growth within 4-6 months.</dd>
+      </dl>
       ${cta}
       ${footer}
     `,
@@ -551,8 +642,32 @@ export const routeContent: Record<string, RouteContent> = {
       ${nav}
       <h1>Chiropractor Marketing — Digital Marketing for Chiropractic Practices</h1>
       <p>Grow your chiropractic practice with AI-powered digital marketing. Attract new patients, build your reputation, and dominate local search.</p>
-      <h2>Services for Chiropractors</h2>
-      <ul><li>Local SEO for chiropractors</li><li>Google Ads targeting chiropractic keywords</li><li>Patient review management</li><li>Website design for chiropractic practices</li><li>Social media management</li><li>AI receptionist for patient scheduling</li></ul>
+      <h2>Why Chiropractic Practices Choose Us</h2>
+      <ul>
+        <li><strong>Local Patient Acquisition</strong> — Rank #1 for 'chiropractor near me', 'back pain relief', and wellness searches.</li>
+        <li><strong>New Patient Flow</strong> — Convert searchers into scheduled appointments with optimized landing pages.</li>
+        <li><strong>AI Search Visibility</strong> — Get recommended when patients ask AI 'Who's the best chiropractor for lower back pain?'</li>
+        <li><strong>Trust & Authority</strong> — Build credibility with patient reviews and educational content.</li>
+      </ul>
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Condition-Based SEO</strong> — Rank for back pain, neck pain, sports injuries, sciatica. Condition-specific landing pages, symptom-based keyword targeting.</li>
+        <li><strong>Local Practice Visibility</strong> — Google Business Profile optimization, local citation consistency, review generation, community authority building.</li>
+        <li><strong>AI & Voice Search Ready</strong> — FAQ schema, conversational content strategy, featured snippet targeting.</li>
+        <li><strong>Patient Journey Optimization</strong> — Online scheduling, new patient specials pages, insurance information SEO, first visit preparation content.</li>
+      </ul>
+      <h2>Common Pain Points We Solve</h2>
+      <ul><li>New patient numbers have plateaued or declined</li><li>Competitors ranking above you</li><li>Website isn't generating enough appointment requests</li><li>Struggling to attract patients seeking specific treatments</li><li>Dependent on referrals without a steady organic pipeline</li></ul>
+      <h2>Results</h2>
+      <ul><li>256% increase in new patients</li><li>43 first page keywords</li><li>48% reduction in cost per lead</li><li>4.9 average Google rating achieved</li></ul>
+      <h2>FAQs</h2>
+      <dl>
+        <dt>How long does it take to see more new patients?</dt><dd>Most practices see measurable increases within 2-3 months and growth within 4-6 months.</dd>
+        <dt>Can you help us rank for specific conditions like sciatica?</dt><dd>Yes! We create dedicated landing pages targeting patients actively searching for relief.</dd>
+        <dt>Do you work with multi-location chiropractic groups?</dt><dd>Yes, with location-specific strategies while maintaining brand consistency.</dd>
+        <dt>How do you help us compete with larger chains?</dt><dd>We focus on your unique strengths — personalized care, specialties, community presence.</dd>
+        <dt>What makes chiropractic SEO different?</dt><dd>It requires understanding patient pain points, treatment-seeking behavior, and wellness vs. medical positioning.</dd>
+      </dl>
       ${cta}
       ${footer}
     `,
@@ -563,8 +678,32 @@ export const routeContent: Record<string, RouteContent> = {
       ${nav}
       <h1>Auto Repair Marketing — Digital Marketing for Auto Repair Shops</h1>
       <p>Drive more customers to your auto repair shop with AI-powered digital marketing. Capture emergency repair calls, build reviews, and dominate local search.</p>
-      <h2>Services for Auto Repair Shops</h2>
-      <ul><li>Local SEO for auto repair</li><li>Google Ads & LSA for mechanics</li><li>Review management</li><li>Website design for auto shops</li><li>AI receptionist for service scheduling</li><li>CRM & follow-up automation</li></ul>
+      <h2>Why Auto Repair Shops Choose Us</h2>
+      <ul>
+        <li><strong>Local Search Domination</strong> — Rank #1 for 'auto repair near me', 'oil change', 'brake service', and all service searches.</li>
+        <li><strong>More Service Calls</strong> — Capture urgent repair calls when car owners need immediate help.</li>
+        <li><strong>AI Search Ready</strong> — Get recommended when car owners ask AI 'What's the best mechanic for transmission repair near me?'</li>
+        <li><strong>Trust & Reviews</strong> — Build a 5-star reputation that makes you the obvious choice over competitors and chains.</li>
+      </ul>
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>Service-Based SEO</strong> — Rank for every service from oil changes to engine rebuilds. Service-specific landing pages, make/model keyword targeting.</li>
+        <li><strong>Local Shop Visibility</strong> — Google Business Profile optimization, local citation building, review generation, competitor tracking.</li>
+        <li><strong>AI & Voice Search Ready</strong> — Common car problem FAQs, diagnostic content strategy, featured snippet targeting.</li>
+        <li><strong>Customer Conversion</strong> — Online scheduling, click-to-call optimization, service menu & pricing SEO.</li>
+      </ul>
+      <h2>Common Pain Points We Solve</h2>
+      <ul><li>Losing customers to dealership service centers</li><li>National chains outranking you on Google</li><li>Emergency repair calls going to competitors</li><li>Website not generating enough phone calls</li><li>Spending money on ads without sustainable results</li></ul>
+      <h2>Results</h2>
+      <ul><li>267% increase in service calls</li><li>38 first page keywords</li><li>3.8x ROI on marketing spend</li><li>4.8 average Google rating achieved</li></ul>
+      <h2>FAQs</h2>
+      <dl>
+        <dt>How long does it take to see more customers?</dt><dd>Most shops see increased traffic and calls within 2-3 months. Significant growth within 4-6 months.</dd>
+        <dt>Can you help us rank for specific services like transmission repair?</dt><dd>Yes! We create dedicated pages for each service, targeting general terms and make/model combinations.</dd>
+        <dt>How do you help us compete with dealerships and chains?</dt><dd>We highlight personalized service, honest pricing, and expertise to position you as the trusted local expert.</dd>
+        <dt>Do you work with specialty shops?</dt><dd>Yes! General repair, collision/body shops, performance shops, tire centers, and specialty providers.</dd>
+        <dt>How do you help us get more emergency repair calls?</dt><dd>We target emergency keywords, optimize for mobile, and ensure click-to-call and emergency availability are prominent.</dd>
+      </dl>
       ${cta}
       ${footer}
     `,
