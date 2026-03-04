@@ -175,7 +175,20 @@ Optimizing elements within your web pages — content, titles, meta descriptions
 - Technical Fixes & Markup (structured data, canonical tags)
 - Internal Linking Strategy
 
-## FAQs
+## Our Process
+1. Content Audit
+2. Keyword Research
+3. Optimization Plan
+4. Implementation
+5. Performance Tracking
+
+## Results
+- 98% E-commerce Traffic Increase
+- 113% Conversion Rate Lift
+- 10x Organic Sessions Growth
+- 2s Target Page Load Time
+
+
 Q: What exactly is on-page SEO?
 A: Optimizing content, titles, meta descriptions, headings, and HTML markup to improve search visibility at scale.
 
