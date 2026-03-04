@@ -33,6 +33,7 @@ import Chiropractor from "./pages/industries/Chiropractor";
 import AutoRepair from "./pages/industries/AutoRepair";
 import Photographers from "./pages/industries/Photographers";
 import Realtors from "./pages/industries/Realtors";
+import BrandingGuidelines from "./pages/BrandingGuidelines";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
