@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import crmHeroBg from "@/assets/crm-hero-bg.jpg";
 import { GlowCard } from "@/components/ui/glow-card";
