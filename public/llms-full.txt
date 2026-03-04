@@ -1,84 +1,541 @@
-# GrowSmallBiz Digital Marketing — LLM Full Content
+# GrowSmallBiz Digital Marketing — Full Site Content for LLMs
 
 Last updated: 2026-03-04
 Canonical website: https://growsmallbiz-ai-seo.lovable.app/
 
-## Brand Summary
-GrowSmallBiz helps local service businesses grow with an integrated, done-for-you marketing system. The model combines SEO, paid ads, social media, website conversion design, AI receptionist, CRM workflows, and reputation management.
+NOTE: This site is a React single-page application. AI tools that cannot execute JavaScript should use this file to understand all page content. Each section below corresponds to a route on the website.
 
-## Who This Is For
-- Local service businesses that need consistent lead flow
-- Teams struggling with fragmented tools and manual handoffs
-- Businesses that want end-to-end attribution from click to client
-
-## Core Value Proposition
-- One integrated system instead of disconnected marketing tools
-- Automated lead handling and follow-up
-- Predictable pipeline growth through multi-channel acquisition and conversion optimization
-
-## Main Navigation
-- Home: https://growsmallbiz-ai-seo.lovable.app/
-- About: https://growsmallbiz-ai-seo.lovable.app/about
-- Blog: https://growsmallbiz-ai-seo.lovable.app/blog
-- Contact: https://growsmallbiz-ai-seo.lovable.app/contact
-- Free Assessment: https://growsmallbiz-ai-seo.lovable.app/free-assessment
-
-## Services Directory
-
-### SEO & Organic Growth
-- Technical SEO — Improve crawlability, speed, and technical performance
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/technical-seo
-- On-Page SEO — Optimize content, metadata, topical relevance, and intent matching
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/on-page-seo
-- AEO (Answer Engine Optimization) — Structure content for answer engines and AI summaries
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/aeo
-- GEO (Generative Engine Optimization) — Improve visibility in generative AI discovery systems
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/geo
-- Local SEO — Improve map pack presence, Google Business Profile performance, and local citations
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/local-seo
-- Link Building — Increase authority through backlinks and digital PR
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/link-building
-
-### Paid & Social Acquisition
-- Paid Media — Manage performance campaigns for lead generation
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/paid-media
-- Social Media — Build audience awareness and ongoing engagement
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/social-media
-- LinkedIn Outreach — B2B outreach and pipeline support
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/linkedin-outreach
-
-### Conversion, Operations & Retention
-- Website Design — Conversion-focused web design and user journeys
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/website-design
-- AI Receptionist — 24/7 lead response and qualification workflows
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/ai-receptionist
-- CRM — Automation, pipeline visibility, and follow-up systems
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/crm
-- Reputation Management — Review generation and trust building
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/reputation-management
-- Quad Bots — Conversational, voice, lead generation, and supervisor automation bots
-  URL: https://growsmallbiz-ai-seo.lovable.app/services/quad-bots
-
-### Supporting Service Pages
-- AI SEO Hub — https://growsmallbiz-ai-seo.lovable.app/services/ai-seo-hub
-- Managed SEO Pricing — https://growsmallbiz-ai-seo.lovable.app/services/managed-seo-pricing
-
-## Industry Pages
-- HVAC — https://growsmallbiz-ai-seo.lovable.app/industries/hvac
-- Home Services — https://growsmallbiz-ai-seo.lovable.app/industries/home-services
-- Dental — https://growsmallbiz-ai-seo.lovable.app/industries/dental
-- Med Spa — https://growsmallbiz-ai-seo.lovable.app/industries/med-spa
-- Chiropractor — https://growsmallbiz-ai-seo.lovable.app/industries/chiropractor
-- Auto Repair — https://growsmallbiz-ai-seo.lovable.app/industries/auto-repair
-- Photographers — https://growsmallbiz-ai-seo.lovable.app/industries/photographers
-- Realtors — https://growsmallbiz-ai-seo.lovable.app/industries/realtors
-
-## Contact & Conversion Paths
-- Contact page: https://growsmallbiz-ai-seo.lovable.app/contact
-- Free assessment page: https://growsmallbiz-ai-seo.lovable.app/free-assessment
+---
 
 ## Machine-Readable Endpoints
 - robots.txt: https://growsmallbiz-ai-seo.lovable.app/robots.txt
 - sitemap.xml: https://growsmallbiz-ai-seo.lovable.app/sitemap.xml
-- llms.txt: https://growsmallbiz-ai-seo.lovable.app/llms.txt
-- llms-full.txt: https://growsmallbiz-ai-seo.lovable.app/llms-full.txt
+- llms.txt (index): https://growsmallbiz-ai-seo.lovable.app/llms.txt
+- llms-full.txt (this file): https://growsmallbiz-ai-seo.lovable.app/llms-full.txt
+
+---
+
+# PAGE: Homepage
+URL: https://growsmallbiz-ai-seo.lovable.app/
+
+## Headline
+Dominate Your Local Market With AI-Powered Growth
+
+## Subheadline
+The Complete Marketing System for Local Service Businesses. AI-powered SEO, strategic paid ads, 24/7 AI receptionist, and automated CRM — all working together to make you the #1 choice in your market.
+
+## Key Stats
+- 2-4x Customer Growth
+- 24/7 AI Automation
+- 100% Transparency
+- 15+ Hours Saved/Week
+
+## The Problem: Fragmented Marketing
+- Scattered Tools: Using 8+ different platforms that don't communicate
+- Lost Opportunities: Leads entering through one channel but getting lost in manual handoffs
+- Wasted Ad Spend: Running campaigns without proper tracking from click to client
+- Time Drain: Spending 15+ hours/week managing marketing instead of serving clients
+- Inconsistent Results: Feast or famine cycles with unpredictable lead flow
+
+## Our Solution: Integrated Ecosystem
+- Complete Customer Journey: From first ad click → landing page → nurturing → sale → client
+- No Manual Handoffs: Everything flows automatically through your integrated pipeline
+- Full Attribution: Track every lead from source to revenue, optimizing what works
+- Hands-Off Operation: Your marketing runs 24/7 while you focus on client delivery
+- Predictable Growth: Systematic lead generation creates consistent pipeline flow
+
+## Digital Dominance Method (4 Steps)
+1. Increase Visibility — Get found across search, maps, and social media platforms
+2. Drive Leads — Attract new prospects through targeted traffic generation
+3. Convert Leads — Turn more leads into paying customers with nurturing and automation
+4. Grow Revenue — Boost lifetime value through upsells, reviews, and retention
+
+## Services Overview
+- Website That Converts: On-brand messaging, clear CTAs, mobile responsive, fast loading, call tracking
+- AI Optimized SEO: Competitors analysis, GBP optimization, citations, AEO, GEO
+- Google + Facebook/Instagram Ads: LSA, PPC, retargeting, email/SMS nurturing
+- Reputation Management: Review requests on autopilot, AI review replies, automated followups
+- Social Media Management: Scheduled posts, platform-specific strategies, engagement building
+- AI Receptionist & Conversational AI: 24/7 voice AI, website chat, SMS, social media
+- AI Client Growth System (CRM): Email/SMS templates, automated followups, pipeline management
+- LinkedIn LeadGen: Targeted outreach, lead lists, consistent follow-ups
+- Branding Photo+Video: Professional headshots, personal branding, team photography
+
+## Homepage FAQs
+Q: What makes GrowSmallBiz different from other digital marketing agencies?
+A: We specialize exclusively in local small businesses with an integrated marketing ecosystem that tracks every lead from first click to final sale.
+
+Q: Do I really need an integrated digital marketing approach?
+A: Yes. Most businesses struggle with scattered tools, lost leads, and wasted ad spend. Our integrated ecosystem creates a seamless customer journey.
+
+Q: What types of businesses do you work with?
+A: Local professional service businesses including accounting firms, law offices, consulting practices, healthcare providers, contractors, and other service-based businesses.
+
+Q: How do you help businesses achieve 'digital dominance'?
+A: Our Digital Dominance Method combines strategic web design, aggressive SEO targeting, precision-focused local ads, community-building social media, and reputation management.
+
+Q: What's included in your complete growth package?
+A: Conversion-optimized website, SEO with local focus, paid traffic management, AI-powered CRM with 24/7 automation, smart dashboard analytics, and professional branding photography/videography.
+
+Q: How quickly can you start?
+A: After consultation and agreement, we begin with a 2-3 week strategic onboarding phase. Website and SEO launch by week 3-4, paid ads go live once tracking is in place.
+
+Q: What results can I expect?
+A: Clients consistently see 2x, 3x, and even 4x growth in their customer base within 6-12 months.
+
+Q: How long to see results?
+A: Paid ads show improvements within 3-60 days. SEO improvements begin around 60 days onwards. Most clients see meaningful results within 3 months.
+
+---
+
+# PAGE: About
+URL: https://growsmallbiz-ai-seo.lovable.app/about
+
+## Brand Summary
+GrowSmallBiz helps local service businesses grow with an integrated, done-for-you marketing system combining SEO, paid ads, social media, website design, AI receptionist, CRM workflows, and reputation management.
+
+## Core Values
+- Results-Driven: We measure success by your growth, not vanity metrics
+- Transparency First: No black boxes or hidden tactics
+- Local Expertise: Specializing in helping small and medium local businesses compete
+- AI-Forward Approach: Integrating AI tools and optimizing for AI platforms
+
+## Stats
+- 150+ Local Businesses Served
+- 3.2x Average Traffic Increase
+- 85% Client Retention Rate
+- 5+ Years of Experience
+
+## Who We Work With
+HVAC companies, dental practices, med spas, chiropractors, auto repair shops, photographers, and similar local service industries.
+
+## About FAQs
+Q: How is GrowSmallBiz different from other agencies?
+A: We combine traditional SEO with cutting-edge AI optimization (AEO & GEO) and focus exclusively on local businesses.
+
+Q: What results can I expect?
+A: Most clients see noticeable improvements within 3-4 months, with significant results by 6 months. Typical: 2-3x increase in organic traffic.
+
+Q: Do you require long-term contracts?
+A: We offer flexible engagement options. We recommend a minimum 6-month commitment but don't lock you into multi-year contracts.
+
+Q: What is your pricing structure?
+A: Customized based on your business size, competition, and goals. Schedule a free assessment for a personalized quote.
+
+---
+
+# PAGE: Technical SEO
+URL: https://growsmallbiz-ai-seo.lovable.app/services/technical-seo
+
+## What We Do
+Backend optimizations that affect your website's search performance: meta tags, site architecture, redirect management, URL structure, image optimization, structured data, internal linking, JavaScript rendering, caching configurations.
+
+## Key Stats
+- 2s Target Load Time
+- 90+ Core Web Vitals Score
+- 100% Mobile Optimized
+- 24hr Issue Response Time
+
+## Features
+- Full Website Audit: Crawl errors, redirects, duplicates
+- Speed & Core Web Vitals: Load times under 2 seconds on mobile
+- XML Sitemaps & Schema: Structured data implementation
+- Mobile UX & Navigation: Revenue-driving mobile experience
+- Architecture & Indexation: Clean site structure for search engines
+- Performance Monitoring: Continuous tracking and optimization
+
+## FAQs
+Q: What does technical SEO include?
+A: Meta tag optimization, site architecture, redirect management, URL structure, image optimization, structured data, internal linking, JavaScript rendering, hreflang tags, caching configurations.
+
+Q: Why is technical SEO critical?
+A: Google incorporates page experience and Core Web Vitals as ranking signals. A poorly performing website can undermine your entire marketing strategy.
+
+Q: Can technical SEO be combined with other SEO services?
+A: Yes. Our managed SEO campaigns integrate technical SEO with link building, content creation, and other optimization strategies.
+
+---
+
+# PAGE: On-Page SEO
+URL: https://growsmallbiz-ai-seo.lovable.app/services/on-page-seo
+
+## What We Do
+Optimizing elements within your web pages — content, titles, meta descriptions, headings, and HTML markup — to improve search visibility and user engagement.
+
+## Key Stats
+- 40% Avg. Traffic Increase
+- 2x Click-Through Rate Boost
+- 90 Days to See Results
+- 100+ Pages Optimized Monthly
+
+## Features
+- Audit & Competitor Gap Analysis
+- Keyword & Topic Mapping
+- Pages & Content Optimization
+- Technical Fixes & Markup (structured data, canonical tags)
+- Internal Linking Strategy
+
+## FAQs
+Q: What exactly is on-page SEO?
+A: Optimizing content, titles, meta descriptions, headings, and HTML markup to improve search visibility at scale.
+
+Q: How does on-page SEO differ from technical SEO?
+A: On-page focuses on content and individual page elements. Technical SEO addresses site-wide performance like speed, crawlability, and security.
+
+Q: What schema markup do you implement?
+A: Article, FAQ, Product, Local Business, Breadcrumb, Review, and other structured data formats appropriate for your pages.
+
+---
+
+# PAGE: Answer Engine Optimization (AEO)
+URL: https://growsmallbiz-ai-seo.lovable.app/services/aeo
+
+## What We Do
+Structuring content, entities, and technical elements so AI platforms like ChatGPT, Google AI Overviews, and Perplexity recognize, cite, and surface your brand as the authoritative answer.
+
+## Key Stats
+- 70% AI Answer Coverage
+- 5x Brand Visibility Boost
+- 24/7 AI Monitoring
+- 100+ AI Platforms Tracked
+
+## Features
+- AEO Content Optimization for AI platforms
+- Schema & Structured Data Implementation
+- Entity Optimization & Brand Alignment
+- AI Citation & LLM Visibility Tracking
+- Q&A & Snippet Creation
+- Technical SEO for AI crawlers
+
+## Platforms Optimized For
+ChatGPT, Google AI Overview, Perplexity, Claude, Gemini, Microsoft Copilot
+
+## FAQs
+Q: What is AEO?
+A: The practice of structuring content so AI platforms recognize, cite, and surface your brand as the authoritative answer to user queries.
+
+Q: How is AEO different from traditional SEO?
+A: Traditional SEO focuses on rankings. AEO focuses on being selected and cited by AI systems when they generate answers.
+
+Q: How do you measure AI visibility?
+A: AI Share of Voice, Visibility Score, and Sentiment Analysis across LLM platforms.
+
+---
+
+# PAGE: Generative Engine Optimization (GEO)
+URL: https://growsmallbiz-ai-seo.lovable.app/services/geo
+
+## What We Do
+Optimizing content, entities, and technical signals so AI platforms like ChatGPT, Gemini, and Claude can recognize, reference, and surface your brand.
+
+## Key Stats
+- 60% AI Citation Rate
+- 4x Entity Visibility Growth
+- 100% Knowledge Graph Coverage
+- 90 Days to Impact
+
+## Features
+- Entity & Knowledge Graph Optimization
+- AI-Friendly Content Structuring
+- Advanced Schema Implementation
+- Semantic & Contextual Enrichment
+- E-E-A-T Enhancement
+- AI Citation Tracking
+
+## FAQs
+Q: What is GEO?
+A: Optimizing so AI platforms can recognize, reference, and surface your brand as an authoritative answer source.
+
+Q: How does GEO differ from traditional SEO?
+A: Traditional SEO focuses on SERP rankings. GEO focuses on AI citations, entity recognition, and generative discovery.
+
+Q: Can GEO work for multi-location businesses?
+A: Yes. Our workflows scale across multiple domains, brands, regions, and languages.
+
+---
+
+# PAGE: Local SEO
+URL: https://growsmallbiz-ai-seo.lovable.app/services/local-seo
+
+## What We Do
+Optimize your business's online presence to attract customers in specific geographic areas through Google Business Profiles, local citations, reviews, and geo-targeted content.
+
+## Features
+- Local Keyword Research
+- Google Business Profile Optimization
+- Local Citation & Listing Management (NAP consistency)
+- On-Page Local SEO Optimization
+- Review & Reputation Management
+- Local Content Creation
+
+## FAQs
+Q: What is Local SEO?
+A: Optimizing your online presence to attract customers in specific geographic areas through GBP, citations, reviews, and local signals.
+
+Q: How is Local SEO different from general SEO?
+A: General SEO targets national/global visibility. Local SEO focuses on hyper-local audiences with map listings, citations, reviews, and geo-targeted content.
+
+Q: Is Local SEO suitable for multi-location businesses?
+A: Yes. Our strategies scale across multiple locations with consistent optimization and reporting for each branch.
+
+---
+
+# PAGE: Link Building
+URL: https://growsmallbiz-ai-seo.lovable.app/services/link-building
+
+## What We Do
+Acquiring authoritative, editorially earned backlinks to strengthen domain authority, build brand trust, and improve search visibility.
+
+## Key Stats
+- 50+ Authority Links Monthly
+- 40+ Avg. Domain Authority
+- 100% White-Hat Methods
+- 60 Days to Rankings Impact
+
+## Features
+- Backlink Audits & Link Detox
+- High-Quality Link Building
+- Digital PR & Media Outreach
+- Thought Leadership & Guest Posting
+- Press Release Distribution
+- Content-Driven Link Acquisition
+
+## FAQs
+Q: What types of links do you build?
+A: Exclusively editorial, contextual backlinks from authoritative, brand-safe domains. Never PBNs, link farms, or high-risk schemes.
+
+Q: Do I need link building if I already publish quality content?
+A: Yes. Content alone rarely ranks in competitive markets. Link building provides external validation and authority.
+
+---
+
+# PAGE: Paid Media & Advertising
+URL: https://growsmallbiz-ai-seo.lovable.app/services/paid-media
+
+## What We Do
+Strategic paid campaigns across Google PPC, Google LSA, Meta (Facebook/Instagram), TikTok, YouTube, and Bing with full-funnel tracking.
+
+## Key Stats
+- 4x Average ROAS
+- 60% Lower Cost Per Lead
+- 24hr Campaign Launch Time
+- 100% Transparent Reporting
+
+## Platforms
+- Google PPC: Search Ads, Display Network, Shopping, Performance Max
+- Google LSA: Google Guaranteed badge, pay-per-lead
+- Meta (Facebook/Instagram): Lead generation, retargeting, lookalike audiences
+- TikTok Ads: Short-form video ads, younger demographics
+- YouTube Ads: Pre-roll, in-stream, discovery ads
+- Bing Ads: Lower competition, higher conversion rates
+
+## FAQs
+Q: What's the difference between Google PPC and LSA?
+A: PPC charges per click and appears at top of search. LSA appears above PPC with "Google Guaranteed" badge and charges per lead.
+
+Q: How much should I budget?
+A: $1,500-3,000/month recommended for most local businesses to gather enough data for optimization.
+
+Q: How quickly will I see results?
+A: Leads can come immediately, but optimization takes 2-4 weeks. Best ROI after 60-90 days of continuous optimization.
+
+---
+
+# PAGE: Social Media Management
+URL: https://growsmallbiz-ai-seo.lovable.app/services/social-media
+
+## What We Do
+Strategic social media management for high-ticket service professionals focused on building trust, demonstrating expertise, and attracting quality prospects.
+
+## Key Stats
+- 90% of Consumers Research Online
+- 3-8x ROI in First Year
+- 73% Check Social Before Buying
+- 30 Posts Per Month
+
+## FAQs
+Q: Do my clients really use social media?
+A: Over 90% of affluent consumers research professionals online before decisions, and 73% check social media profiles as part of vetting.
+
+Q: How is social media different for high-ticket professionals?
+A: Focus on building trust, demonstrating expertise, and attracting quality over quantity with professional credibility and educational content.
+
+---
+
+# PAGE: Website Design
+URL: https://growsmallbiz-ai-seo.lovable.app/services/website-design
+
+## What We Do
+Conversion-optimized website design with on-brand messaging, clear CTAs, mobile responsiveness, and SEO foundation built in.
+
+## Key Stats
+- 2s Avg. Load Time
+- 3x More Conversions
+- 100% Mobile Responsive
+- 1-2 Weeks to Launch
+
+## FAQs
+Q: How long does a website project take?
+A: 1-2 weeks for template websites, 6-8 weeks for premium authority websites.
+
+Q: Do you provide the content?
+A: Yes. Our copywriting specialists craft compelling, SEO-optimized content.
+
+Q: Will my website work on mobile?
+A: Every website is fully responsive and mobile-optimized with a mobile-first approach.
+
+Q: How do you handle SEO?
+A: Local SEO foundation built into every website: optimized structure, meta tags, schema markup, Google Analytics, site speed optimization, GBP optimization, and citation building.
+
+Q: What's the difference between template and custom?
+A: Authority Websites: 5 unique page templates, up to 25 pages, SEO optimized, monthly updates included. Quick Template: existing assets in a new theme in about a week, up to 10 pages.
+
+---
+
+# PAGE: AI Receptionist
+URL: https://growsmallbiz-ai-seo.lovable.app/services/ai-receptionist
+
+## What We Do
+24/7 AI-powered phone answering, lead qualification, appointment booking, and multi-channel conversation handling.
+
+## Key Stats
+- 47% of Small Businesses Miss Calls
+- 85% Never Call Back After Being Missed
+- $1,200 Average Lost Revenue Per Missed Call
+- 96.7% AI Success Rate
+
+## Features
+- 24/7 Inbound Call Handling
+- Intelligent Lead Qualification
+- Automated Appointment Booking (Google Calendar integration)
+- Multi-Channel Conversations (SMS, Facebook, Instagram, website chat, GBP)
+- Workflow Automation (follow-ups, confirmations, reminders)
+- CRM Integration
+
+## Case Studies
+- Thompson HVAC: Calls captured went from 58% to 97%, monthly revenue from $68K to $142K (+109%)
+- Bright Smile Dental: After-hours bookings from 2/mo to 18/mo, revenue from $45K to $89K (+98%)
+
+---
+
+# PAGE: CRM Solutions
+URL: https://growsmallbiz-ai-seo.lovable.app/services/crm
+
+## What We Do
+Customer relationship management with automated email/SMS workflows, lead nurturing, pipeline management, and follow-up sequences.
+
+## Features
+- Email & SMS Templates and Automation
+- Lead Nurturing & Pipeline Management
+- Automated Follow-ups 24/7
+- Contact Management
+- Conversion Tracking
+
+---
+
+# PAGE: Reputation Management
+URL: https://growsmallbiz-ai-seo.lovable.app/services/reputation-management
+
+## What We Do
+AI-powered reputation management that monitors reviews across Google, Facebook, Yelp, and 50+ platforms with automated responses and review requests.
+
+## FAQs
+Q: How does AI-powered reputation management work?
+A: Automatically monitors reviews, crafts personalized responses, and requests reviews from happy customers.
+
+Q: How quickly will I see more reviews?
+A: Increased volume within 2-4 weeks, typically 2-5x more reviews within 90 days.
+
+Q: Can this help rank higher in local search?
+A: Yes. More positive reviews directly improve local search rankings within 30-60 days.
+
+Q: How much does it cost?
+A: Most small businesses invest $297-497/month, which pays for itself through 1-2 additional customers.
+
+---
+
+# PAGE: LinkedIn Outreach
+URL: https://growsmallbiz-ai-seo.lovable.app/services/linkedin-outreach
+
+## What We Do
+B2B lead generation through targeted LinkedIn outreach with personalized messaging and follow-up sequences.
+
+## Key Stats
+- 500+ Targeted Prospects/Month
+- 25% Connection Accept Rate
+- 15+ Qualified Meetings/Month
+- 100% Personalized Outreach
+
+---
+
+# PAGE: AI QuadBots
+URL: https://growsmallbiz-ai-seo.lovable.app/services/quad-bots
+
+## What We Do
+Four AI bots working 24/7: Conversational AI, Voice AI, Lead Generator, and Supervisor OS for automated lead handling and qualification.
+
+## Key Stats
+- 4 AI Bots Working 24/7
+- 85% Lead Response Automation
+- 3x More Qualified Leads
+- 15+ Hours Saved Weekly
+
+## Case Studies
+- Elite Roofing Solutions: Overwhelmed sales team saved 15+ hours/week with automated lead qualification
+
+---
+
+# PAGE: Contact
+URL: https://growsmallbiz-ai-seo.lovable.app/contact
+
+Contact page with consultation form for free strategy session.
+
+---
+
+# PAGE: Free Assessment
+URL: https://growsmallbiz-ai-seo.lovable.app/free-assessment
+
+Free marketing assessment form to get a personalized growth plan.
+
+---
+
+# INDUSTRY PAGES
+
+## HVAC
+URL: https://growsmallbiz-ai-seo.lovable.app/industries/hvac
+Digital marketing services tailored for HVAC companies including SEO, paid ads, reputation management, and AI automation.
+
+## Home Services
+URL: https://growsmallbiz-ai-seo.lovable.app/industries/home-services
+Marketing solutions for home service contractors: plumbers, electricians, roofers, remodelers, painters, landscapers, and more.
+
+## Dental
+URL: https://growsmallbiz-ai-seo.lovable.app/industries/dental
+Patient acquisition and practice growth marketing for dental offices including local SEO, Google Ads, and reputation management.
+
+## Med Spa
+URL: https://growsmallbiz-ai-seo.lovable.app/industries/med-spa
+Marketing for medical spas and aesthetic practices focused on attracting high-value clients through digital channels.
+
+## Chiropractor
+URL: https://growsmallbiz-ai-seo.lovable.app/industries/chiropractor
+New patient generation strategies for chiropractic practices with local SEO, paid advertising, and automated follow-up.
+
+## Auto Repair
+URL: https://growsmallbiz-ai-seo.lovable.app/industries/auto-repair
+Customer acquisition marketing for auto repair shops including local search optimization and review management.
+
+## Photographers
+URL: https://growsmallbiz-ai-seo.lovable.app/industries/photographers
+Marketing for photography businesses to attract wedding, portrait, commercial, and event clients.
+
+## Realtors
+URL: https://growsmallbiz-ai-seo.lovable.app/industries/realtors
+Lead generation and brand building for real estate agents with IDX integration, SEO, paid ads, and CRM automation.
+
+---
+
+# CONTACT INFORMATION
+- Website: https://growsmallbiz-ai-seo.lovable.app
+- Free Assessment: https://growsmallbiz-ai-seo.lovable.app/free-assessment
+- Contact: https://growsmallbiz-ai-seo.lovable.app/contact
