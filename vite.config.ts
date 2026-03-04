@@ -47,7 +47,14 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === "development" && componentTagger(),
-    prerenderStatic({ routes: allRoutes }),
+    prerenderStatic({
+      routes: allRoutes,
+      render: (route) => {
+        const tags = typeof route.tags === 'string' ? { title: route.tags, description: '' } : route.tags;
+        return `<div id="root"><h1>${tags.title}</h1><p>${tags.description}</p><p>Loading...</p></div>`;
+      },
+      headTags: '',
+    }),
   ].filter(Boolean),
   resolve: {
     alias: {
