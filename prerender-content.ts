@@ -577,6 +577,19 @@ export const routeContent: Record<string, RouteContent> = {
       <p>Attract more clients and book more sessions with AI-powered digital marketing designed for photographers. From weddings to portraits, we fill your calendar.</p>
       <h2>Services for Photographers</h2>
       <ul><li>SEO for photography businesses</li><li>Instagram & Pinterest marketing</li><li>Google Ads for photography</li><li>Portfolio website design</li><li>Review management</li><li>Social media content strategy</li></ul>
+      <h2>Email & SMS Automation Workflows</h2>
+      <p>Automated client nurturing sequences that turn inquiries into booked sessions — from initial contact through post-session follow-up.</p>
+      <ul>
+        <li><strong>Inquiry Auto-Response</strong> — Instant email & SMS reply within seconds of a new lead</li>
+        <li><strong>Nurture Sequences</strong> — Multi-step follow-up campaigns for wedding, portrait, and family photography</li>
+        <li><strong>Booking Reminders</strong> — Automated session reminders and preparation guides</li>
+        <li><strong>Post-Session Follow-Up</strong> — Review requests, gallery delivery, and upsell campaigns</li>
+        <li><strong>Seasonal Campaigns</strong> — Mini-session promotions, holiday specials, and back-to-school offers</li>
+      </ul>
+      <h2>AI-Powered Content System</h2>
+      <ul><li>Content Agents — Research, write, and optimize blog posts, social captions, and website copy</li><li>Content Refiners — Tone matching, SEO optimization, and brand voice consistency</li><li>Topical Authority — Build search authority with pillar content and supporting articles</li></ul>
+      <h2>Predictable Marketing System</h2>
+      <ol><li>Get Found — SEO, Google Business Profile, paid ads</li><li>Get Chosen — Portfolio, reviews, social proof</li><li>Get Booked — AI receptionist, automated follow-up, CRM</li><li>Get Referrals — Review requests, referral programs, repeat client campaigns</li></ol>
       ${cta}
       ${footer}
     `,
@@ -589,6 +602,26 @@ export const routeContent: Record<string, RouteContent> = {
       <p>Generate more leads, build your brand, and close more deals with AI-powered digital marketing designed for real estate professionals.</p>
       <h2>Services for Realtors</h2>
       <ul><li>Local SEO for real estate</li><li>Google & Facebook Ads for listings</li><li>IDX website integration</li><li>Social media management</li><li>AI receptionist for lead capture</li><li>CRM & lead nurturing</li><li>LinkedIn outreach for networking</li></ul>
+      <h2>IDXAddons Platform — Real Estate Tools for IDX Broker Websites</h2>
+      <p>IDXAddons is our all-in-one platform for IDX Broker users with 75+ tools to enhance real estate websites on WordPress, Wix, Duda, or any builder.</p>
+      <ul>
+        <li><strong>IDX Search Tools</strong> — Advanced property search with map-based, polygon, and radius search</li>
+        <li><strong>Google Map Search</strong> — Interactive map with MLS data overlay and neighborhood insights</li>
+        <li><strong>Home Valuation Tool</strong> — Plunk-powered instant property valuations for lead capture</li>
+        <li><strong>Listing Showcase Widgets</strong> — Featured listings, new listings, open houses, and sold properties</li>
+        <li><strong>Agent Roster Pages</strong> — Team pages with bio, listings, and contact forms</li>
+        <li><strong>Customizable Layouts & Templates</strong> — Search results, listing details, and agent pages with full style control</li>
+        <li><strong>Lead Capture Integration</strong> — Forced registration, saved searches, and CRM sync</li>
+      </ul>
+      <h2>Realtor Growth System</h2>
+      <ul>
+        <li><strong>Website & IDX</strong> — Conversion-optimized real estate website with IDX integration</li>
+        <li><strong>SEO & Content</strong> — Neighborhood pages, market reports, and local keyword targeting</li>
+        <li><strong>Paid Advertising</strong> — Google, Facebook, and Instagram ads for buyer and seller leads</li>
+        <li><strong>Reputation Management</strong> — Automated review requests and response management</li>
+        <li><strong>AI Receptionist</strong> — 24/7 lead capture and appointment scheduling</li>
+        <li><strong>CRM & Nurturing</strong> — Automated drip campaigns, pipeline tracking, and lead scoring</li>
+      </ul>
       ${cta}
       ${footer}
     `,
