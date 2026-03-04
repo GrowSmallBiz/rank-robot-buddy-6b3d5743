@@ -358,12 +358,25 @@ Strategic social media management for high-ticket service professionals focused 
 - 73% Check Social Before Buying
 - 30 Posts Per Month
 
+## What We Handle
+- Content strategy and creation
+- Platform-specific optimization
+- Community management
+- Performance analytics
+- Compliance and ethics review
+
 ## FAQs
 Q: Do my clients really use social media?
 A: Over 90% of affluent consumers research professionals online before decisions, and 73% check social media profiles as part of vetting.
 
+Q: Which platforms should I be on?
+A: Depends on your audience. LinkedIn for B2B, Facebook for local reach, Instagram for visual services, Google Business Profile for all local professionals.
+
 Q: How is social media different for high-ticket professionals?
 A: Focus on building trust, demonstrating expertise, and attracting quality over quantity with professional credibility and educational content.
+
+Q: How long to see results?
+A: Brand awareness begins immediately. Lead generation typically starts within 3-6 months. Significant ROI by month 6-12.
 
 ---
 
@@ -410,12 +423,18 @@ URL: https://growsmallbiz-ai-seo.lovable.app/services/ai-receptionist
 - 96.7% AI Success Rate
 
 ## Features
-- 24/7 Inbound Call Handling
-- Intelligent Lead Qualification
+- 24/7 Inbound Call Handling — AI answers every call naturally
+- Intelligent Lead Qualification — Gathers info, assesses needs, prioritizes leads
 - Automated Appointment Booking (Google Calendar integration)
 - Multi-Channel Conversations (SMS, Facebook, Instagram, website chat, GBP)
 - Workflow Automation (follow-ups, confirmations, reminders)
-- CRM Integration
+- CRM Integration — Auto-collects contact info, saves call history
+
+## Results
+- 96.7% AI success rate
+- 67% more calls captured
+- 600% increase in after-hours bookings
+- 109% revenue increase
 
 ## Case Studies
 - Thompson HVAC: Calls captured went from 58% to 97%, monthly revenue from $68K to $142K (+109%)
@@ -427,14 +446,26 @@ URL: https://growsmallbiz-ai-seo.lovable.app/services/ai-receptionist
 URL: https://growsmallbiz-ai-seo.lovable.app/services/crm
 
 ## What We Do
-Customer relationship management with automated email/SMS workflows, lead nurturing, pipeline management, and follow-up sequences.
+Convert more leads into paying customers with AI-powered CRM, automated email & SMS followups, pipeline management, and 24/7 lead response.
+
+## Key Stats
+- 24/7 AI Lead Response
+- 80% Time Saved on Tasks
+- 3x More Conversions
+- 100% Pipeline Visibility
 
 ## Features
-- Email & SMS Templates and Automation
-- Lead Nurturing & Pipeline Management
-- Automated Follow-ups 24/7
-- Contact Management
-- Conversion Tracking
+- AI-powered lead response in under 5 minutes
+- Automated email & SMS follow-up sequences
+- Pipeline management and tracking
+- Appointment scheduling integration
+- Contact management
+- Performance dashboards
+
+## Results
+- -98% lead response time (from 4+ hours to under 5 min)
+- +209% lead conversion rate
+- +149% monthly revenue
 
 ---
 
@@ -443,6 +474,18 @@ URL: https://growsmallbiz-ai-seo.lovable.app/services/reputation-management
 
 ## What We Do
 AI-powered reputation management that monitors reviews across Google, Facebook, Yelp, and 50+ platforms with automated responses and review requests.
+
+## Features
+- Direct Google Reviews — Reviews land on your Google Business Profile
+- Complete Autopilot Collection — Automatic outreach to happy customers
+- AI-Powered Review Response — Professional responses within minutes
+- Review Monitoring Dashboard — Google, Facebook, Yelp, 50+ sites
+
+## Benefits
+- 2-5x more reviews within 90 days
+- Improved local search rankings within 30-60 days
+- 24/7 automated monitoring and response
+- 15-minute setup, no technical skills required
 
 ## FAQs
 Q: How does AI-powered reputation management work?
@@ -471,6 +514,12 @@ B2B lead generation through targeted LinkedIn outreach with personalized messagi
 - 15+ Qualified Meetings/Month
 - 100% Personalized Outreach
 
+## What Makes Us Different
+- Done-With-You, Not DIY — We build and execute the strategy with you
+- AI-Assisted, Human-Reviewed — Technology handles research, humans ensure authenticity
+- Conversion-Focused — Goal is consultations that turn into clients
+- Proven Playbook — Refined across dozens of industries
+
 ---
 
 # PAGE: AI QuadBots
@@ -484,6 +533,12 @@ Four AI bots working 24/7: Conversational AI, Voice AI, Lead Generator, and Supe
 - 85% Lead Response Automation
 - 3x More Qualified Leads
 - 15+ Hours Saved Weekly
+
+## The Four Bots
+- Conversational AI — Website chat, SMS, and social media messaging
+- Voice AI — Natural-sounding phone conversations for inbound calls
+- Lead Generator Bot — Proactive outreach and lead qualification
+- Supervisor OS — Orchestrates all bots, escalates to humans when needed
 
 ## Case Studies
 - Elite Roofing Solutions: Overwhelmed sales team saved 15+ hours/week with automated lead qualification
