@@ -33,6 +33,7 @@ import Chiropractor from "./pages/industries/Chiropractor";
 import AutoRepair from "./pages/industries/AutoRepair";
 import Photographers from "./pages/industries/Photographers";
 import Realtors from "./pages/industries/Realtors";
+import BrandingGuidelines from "./pages/BrandingGuidelines";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -81,6 +82,7 @@ export const routes: RouteRecord[] = [
       { path: "industries/auto-repair", Component: AutoRepair },
       { path: "industries/photographers", Component: Photographers },
       { path: "industries/realtors", Component: Realtors },
+      { path: "branding-guidelines", Component: BrandingGuidelines },
       { path: "404", Component: NotFound },
       { path: "*", Component: NotFound },
     ],
