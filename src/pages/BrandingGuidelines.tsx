@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
-import { Document, Packer, Paragraph, TextRun, HeadingLevel, TableRow, TableCell, Table, WidthType, BorderStyle, AlignmentType } from "docx";
-import { saveAs } from "file-saver";
 
 const generateDocx = async () => {
+  const { Document, Packer, Paragraph, TextRun, HeadingLevel, TableRow, TableCell, Table, WidthType, BorderStyle } = await import("docx");
+  const { saveAs } = await import("file-saver");
   const res = await fetch("/branding-guidelines.md");
   const md = await res.text();
   const lines = md.split("\n");
-  const children: Paragraph[] = [];
+  const children: (typeof Paragraph.prototype)[] = [];
 
   let inCodeBlock = false;
   let codeLines: string[] = [];
