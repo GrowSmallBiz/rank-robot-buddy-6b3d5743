@@ -138,6 +138,12 @@ const BrandingGuidelines = () => {
             >
               Print / Save as PDF
             </button>
+            <button
+              onClick={generateDocx}
+              className="px-4 py-1.5 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition-colors"
+            >
+              Download .docx
+            </button>
             <a
               href="/branding-guidelines.md"
               download
