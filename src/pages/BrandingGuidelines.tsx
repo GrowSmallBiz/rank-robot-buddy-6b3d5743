@@ -449,8 +449,8 @@ const BrandingGuidelines = () => {
                 { label: "List items — negative", value: "X circle icon in destructive/red at 60% opacity" },
                 { label: "List items — positive", value: "Check circle icon in primary orange" },
               ]} />
+              <ExampleImage src="/screenshots/predictable-marketing-system.png" alt="Comparison section layout" caption="Comparison section — fragmented vs integrated approach with orange/teal bordered cards" />
             </SubSection>
-
             <SubSection num="5.4" title="Growth Steps Section (Digital Dominance Method)">
               <SpecList items={[
                 { label: "Background", value: "Triple gradient: very dark navy → standard navy → very dark navy (vertical)" },
