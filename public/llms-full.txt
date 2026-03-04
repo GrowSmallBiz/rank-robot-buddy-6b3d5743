@@ -499,39 +499,400 @@ Free marketing assessment form to get a personalized growth plan.
 
 ---
 
+# PAGE: Managed SEO Pricing
+URL: https://growsmallbiz-ai-seo.lovable.app/services/managed-seo-pricing
+
+## What We Do
+Transparent, tiered pricing for managed SEO services. Choose from Starter, Growth, or Authority packages — all include website design, local SEO, technical SEO, on-page SEO, content creation, and authority building.
+
+## Package Tiers
+- Starter: 5-10 page website, 25 citations, 2 blog posts/month, 1 PR campaign
+- Growth: 25-page authority website, 50 citations, 4 blog posts/month, 3-channel PR
+- Authority: Full authority website, 100+ citations, 10 blog posts/month, all-channel PR
+
+## All Packages Include
+Google Business Profile optimization, meta tag optimization, schema markup, internal linking, content creation, link building.
+
+---
+
+# PAGE: AI SEO Hub
+URL: https://growsmallbiz-ai-seo.lovable.app/services/ai-seo-hub
+
+## What We Do
+Six SEO services combined into one AI-powered platform: Technical SEO, On-Page SEO, AEO, GEO, Local SEO, and Link Building.
+
+## Key Stats
+- 150% Avg. Traffic Growth
+- 6 SEO Services Combined
+- 24/7 AI Monitoring
+- 90 Days to Results
+
+## Services Included
+- Technical SEO — Site audits, Core Web Vitals, crawlability
+- On-Page SEO — Content optimization, keyword research
+- Answer Engine Optimization — AI assistant visibility
+- Generative Engine Optimization — AI citation building
+- Local SEO — Google Business Profile, citations
+- Link Building — Digital PR, guest posting
+
+---
+
 # INDUSTRY PAGES
 
-## HVAC
+## HVAC Marketing
 URL: https://growsmallbiz-ai-seo.lovable.app/industries/hvac
-Digital marketing services tailored for HVAC companies including SEO, paid ads, reputation management, and AI automation.
 
-## Home Services
+AI-powered digital marketing designed specifically for HVAC businesses. Dominate local search, capture emergency calls, and grow your service business.
+
+### Why HVAC Companies Choose Us
+- Dominate Local Search — Rank #1 for 'HVAC near me', 'plumber in [city]', and 'emergency electrician' searches
+- More Emergency Calls — Capture urgent service calls when homeowners need immediate help with broken AC, burst pipes, or electrical issues
+- AI Search Visibility — Get recommended by ChatGPT, Google AI, and voice assistants
+- 5-Star Reputation — Build and showcase reviews to become the trusted choice
+
+### Services
+- Local SEO Domination: Google Business Profile optimization, local citation building, service area targeting, multi-location management
+- Emergency Service Visibility: 24/7 emergency keywords, mobile-first optimization, click-to-call integration
+- AI & Voice Search Ready: Answer Engine Optimization, FAQ schema markup, featured snippet targeting
+- Review & Reputation Building: Review generation system, response templates, reputation monitoring
+
+### Pain Points We Solve
+- Losing jobs to competitors who rank higher on Google
+- Paying too much for leads from HomeAdvisor or Angi
+- Emergency calls going to competitors
+- Struggling to compete with franchise operations
+- Website not generating enough phone calls
+
+### Results
+- 312% increase in organic leads
+- 47 first page keywords
+- 4.2x ROI on marketing spend
+- $0 per-lead cost from organic
+
+### FAQs
+Q: How long does it take to see results for HVAC SEO?
+A: Most HVAC clients see significant improvements within 3-4 months. Local map pack results typically improve within 6-8 weeks.
+
+Q: Can you help us rank in multiple service areas?
+A: Yes! We specialize in multi-location and multi-service-area SEO with location-specific landing pages.
+
+Q: How do you help us get more emergency service calls?
+A: We target high-intent emergency keywords like 'emergency AC repair' and 'furnace repair near me now', optimize for mobile, and ensure click-to-call buttons are prominent.
+
+Q: Do you work with franchises or just independent contractors?
+A: We work with both independent HVAC companies and franchise locations.
+
+Q: What makes your approach different?
+A: We specialize exclusively in high-ticket local services and optimize for AI search and voice assistants — not just traditional Google rankings.
+
+---
+
+## Home Services Marketing
 URL: https://growsmallbiz-ai-seo.lovable.app/industries/home-services
-Marketing solutions for home service contractors: plumbers, electricians, roofers, remodelers, painters, landscapers, and more.
 
-## Dental
+Complete digital marketing for home service contractors. From SEO and paid ads to AI automation and reputation management — everything you need to dominate your local market.
+
+### Who We Help
+General Contractors, Remodeling, Plumbing, Landscapers, Pressure Washers, Moving Companies, Pest Control, Flooring & Carpet Cleaning, Decks & Patios, HVAC, Electricians, Painters, Roofers, Pool & Spa, Home Builders, Tree Service.
+
+### Marketing Funnel
+1. Awareness — Local SEO, AI SEO (AEO/GEO), Google PPC, Meta Ads
+2. Consideration — Professional Website, Review Generation, Content Marketing, Retargeting Ads
+3. Conversion — AI Receptionist, Lead Capture Forms, Local Service Ads, CRM Automation
+4. Retention — Reputation Management, Email/SMS Campaigns, Referral Programs, Maintenance Plans
+
+### Platform Recommendations by Trade
+- HVAC: Google LSA, Google PPC, Meta, Nextdoor. Emergency-focused keywords + seasonal campaigns.
+- Plumbing: Google LSA, Google PPC, YouTube, Yelp. 24/7 emergency visibility is critical.
+- Electrical: Google PPC, Google LSA, Meta, HomeAdvisor. Safety-related searches and EV charger installation.
+- Roofing: Google PPC, Meta, Google LSA, Houzz. Storm damage campaigns + visual before/after content.
+- Remodeling: Meta, Houzz, Pinterest, Google PPC. Visual-first approach with project photos.
+- General Contractor: Google PPC, Meta, Houzz, Nextdoor. Portfolio diversity and reviews are critical.
+
+### FAQs
+Q: What types of home service businesses do you work with?
+A: We specialize in HVAC, plumbing, electrical, roofing, and remodeling with strategies tailored to each trade.
+
+Q: How do you determine which advertising platforms are best?
+A: We analyze your trade, service area, average job value, and competition to recommend the optimal platform mix.
+
+Q: What's included in your AI SEO service?
+A: Keyword research (500+ terms), competitor analysis, technical SEO audit, on-page optimization, local SEO with GBP management, and AEO/GEO optimization for AI search visibility.
+
+Q: How long until we see results from SEO?
+A: Paid media generates leads immediately. SEO shows meaningful improvements within 3-6 months, with significant growth by month 6-12.
+
+Q: Do you handle both B2B and B2C marketing?
+A: Yes! We create targeted campaigns for homeowners (B2C) and commercial clients or property managers (B2B).
+
+Q: What makes your approach different?
+A: We're specialists in home services marketing — we understand seasonal demand, emergency call patterns, and the unique buyer journey for each trade.
+
+---
+
+## Dental Marketing
 URL: https://growsmallbiz-ai-seo.lovable.app/industries/dental
-Patient acquisition and practice growth marketing for dental offices including local SEO, Google Ads, and reputation management.
 
-## Med Spa
+Attract more patients, fill your schedule, and grow your dental practice with AI-powered digital marketing designed specifically for dentists.
+
+### Why Dental Practices Choose Us
+- Local Patient Acquisition — Rank #1 for 'dentist near me', 'emergency dentist', and cosmetic procedure searches
+- More Appointment Bookings — Convert website visitors into booked appointments with optimized landing pages
+- AI Search Visibility — Get recommended when patients ask AI 'Who's the best dentist for veneers in [city]?'
+- Reputation Excellence — Build and showcase 5-star reviews to become the most trusted practice
+
+### Services
+- New Patient SEO: High-intent keyword targeting, procedure-specific landing pages, before/after gallery optimization, insurance & financing page SEO
+- Local Map Pack Domination: Google Business Profile optimization, local citation consistency, review generation campaigns, competitor displacement
+- AI & Voice Search Ready: Answer Engine Optimization, FAQ schema, conversational content strategy, featured snippet targeting
+- Conversion Optimization: Online booking integration, mobile optimization, trust signal placement, patient journey optimization
+
+### Pain Points We Solve
+- New patient flow has stagnated or declined
+- Competitors outranking you for key searches
+- Website isn't generating enough appointment requests
+- Struggling to attract high-value cosmetic patients
+- Paying too much for ineffective marketing
+
+### Results
+- 287% increase in new patients
+- 52 first page keywords
+- $85K average monthly production increase
+- 4.8 average Google rating achieved
+
+### FAQs
+Q: How long does it take to see more new patients from SEO?
+A: Most dental practices see measurable increases within 3-4 months. Significant new patient growth within 6 months.
+
+Q: Can you help us rank for high-value procedures like implants?
+A: Yes! We create dedicated landing pages for each service and optimize them for both patients and search engines.
+
+Q: Do you work with multi-location dental groups?
+A: Yes, we have extensive experience with DSOs and multi-location practices.
+
+Q: How do you help us get more Google reviews?
+A: We implement review generation systems with automated follow-up sequences, review request templates, and response strategies.
+
+Q: What makes dental SEO different?
+A: Dental SEO requires understanding patient psychology, procedure-specific search intent, and healthcare compliance.
+
+---
+
+## Med Spa Marketing
 URL: https://growsmallbiz-ai-seo.lovable.app/industries/med-spa
-Marketing for medical spas and aesthetic practices focused on attracting high-value clients through digital channels.
 
-## Chiropractor
+Attract high-value aesthetic clients with AI-powered digital marketing designed for med spas. From Botox to body contouring, we fill your treatment rooms.
+
+### Why Med Spas Choose Us
+- Luxury Local Presence — Rank #1 for 'Botox near me', 'lip fillers [city]', and high-value aesthetic searches
+- Premium Consultations — Attract qualified clients ready to invest with optimized conversion funnels
+- AI-Powered Discovery — Get recommended when clients ask AI 'What's the best med spa for laser treatments?'
+- 5-Star Reputation — Showcase transformative results and glowing reviews to build trust
+
+### Services
+- Aesthetic Procedure SEO: Dominate searches for Botox, fillers, laser treatments, body contouring. Procedure-specific landing pages, before/after gallery SEO
+- Local Luxury Positioning: Google Business Profile luxury positioning, high-end local citations, upscale review strategy, competitor differentiation
+- AI & Voice Search Optimization: Answer Engine Optimization, treatment FAQ schema, expert positioning content
+- Consultation Conversion: Online booking optimization, lead magnet creation, trust signal integration, patient journey mapping
+
+### Pain Points We Solve
+- Competitors with less experience outranking you
+- Struggling to attract high-value injectable and laser clients
+- Social media isn't generating enough consultations
+- Website traffic isn't converting into appointments
+- Wasting money on ads without sustainable growth
+
+### Results
+- 324% increase in consultations
+- 67 first page keywords
+- $127K average monthly revenue increase
+- 4.9 average Google rating achieved
+
+### FAQs
+Q: How is med spa SEO different from regular healthcare SEO?
+A: Med spa SEO requires balancing medical credibility with luxury lifestyle marketing while maintaining advertising compliance.
+
+Q: Can you help us rank for competitive terms like 'Botox'?
+A: Yes! We develop comprehensive strategies for high-value procedure keywords with location-specific targeting.
+
+Q: How do you handle before/after image SEO?
+A: We optimize galleries with proper alt tags, schema markup, and page structure to rank in image search.
+
+Q: Do you work with multi-location med spa brands?
+A: Yes, we work with both boutique med spas and multi-location brands with scalable strategies.
+
+Q: How long until we see more consultations?
+A: Most clients see increased traffic within 2-3 months and measurable consultation growth within 4-6 months.
+
+---
+
+## Chiropractor Marketing
 URL: https://growsmallbiz-ai-seo.lovable.app/industries/chiropractor
-New patient generation strategies for chiropractic practices with local SEO, paid advertising, and automated follow-up.
 
-## Auto Repair
+Grow your chiropractic practice with AI-powered digital marketing. Attract new patients, build your reputation, and dominate local search.
+
+### Why Chiropractic Practices Choose Us
+- Local Patient Acquisition — Rank #1 for 'chiropractor near me', 'back pain relief', and wellness searches
+- New Patient Flow — Convert searchers into scheduled appointments with optimized landing pages
+- AI Search Visibility — Get recommended when patients ask AI 'Who's the best chiropractor for lower back pain?'
+- Trust & Authority — Build credibility with patient reviews and educational content
+
+### Services
+- Condition-Based SEO: Rank for back pain, neck pain, sports injuries, sciatica. Condition-specific landing pages, symptom-based keyword targeting
+- Local Practice Visibility: Google Business Profile optimization, local citation consistency, review generation, community authority building
+- AI & Voice Search Ready: FAQ schema, conversational content strategy, featured snippet targeting
+- Patient Journey Optimization: Online scheduling, new patient specials pages, insurance information SEO, first visit preparation content
+
+### Pain Points We Solve
+- New patient numbers have plateaued or declined
+- Competitors ranking above you
+- Website isn't generating enough appointment requests
+- Struggling to attract patients seeking specific treatments
+- Dependent on referrals without a steady organic pipeline
+
+### Results
+- 256% increase in new patients
+- 43 first page keywords
+- 48% reduction in cost per lead
+- 4.9 average Google rating achieved
+
+### FAQs
+Q: How long does it take to see more new patients?
+A: Most practices see measurable increases within 2-3 months and growth within 4-6 months.
+
+Q: Can you help us rank for specific conditions like sciatica?
+A: Yes! We create dedicated landing pages targeting patients actively searching for relief.
+
+Q: Do you work with multi-location chiropractic groups?
+A: Yes, with location-specific strategies while maintaining brand consistency.
+
+Q: How do you help us compete with larger chains?
+A: We focus on your unique strengths — personalized care, specialties, community presence.
+
+Q: What makes chiropractic SEO different?
+A: It requires understanding patient pain points, treatment-seeking behavior, and wellness vs. medical positioning.
+
+---
+
+## Auto Repair Marketing
 URL: https://growsmallbiz-ai-seo.lovable.app/industries/auto-repair
-Customer acquisition marketing for auto repair shops including local search optimization and review management.
 
-## Photographers
+Drive more customers to your auto repair shop with AI-powered digital marketing. Capture emergency repair calls, build reviews, and dominate local search.
+
+### Why Auto Repair Shops Choose Us
+- Local Search Domination — Rank #1 for 'auto repair near me', 'oil change', 'brake service', and all service searches
+- More Service Calls — Capture urgent repair calls when car owners need immediate help
+- AI Search Ready — Get recommended when car owners ask AI 'What's the best mechanic for transmission repair near me?'
+- Trust & Reviews — Build a 5-star reputation that makes you the obvious choice over competitors and chains
+
+### Services
+- Service-Based SEO: Rank for every service from oil changes to engine rebuilds. Service-specific landing pages, make/model keyword targeting
+- Local Shop Visibility: Google Business Profile optimization, local citation building, review generation, competitor tracking
+- AI & Voice Search Ready: Common car problem FAQs, diagnostic content strategy, featured snippet targeting
+- Customer Conversion: Online scheduling, click-to-call optimization, service menu & pricing SEO
+
+### Pain Points We Solve
+- Losing customers to dealership service centers
+- National chains outranking you on Google
+- Emergency repair calls going to competitors
+- Website not generating enough phone calls
+- Spending money on ads without sustainable results
+
+### Results
+- 267% increase in service calls
+- 38 first page keywords
+- 3.8x ROI on marketing spend
+- 4.8 average Google rating achieved
+
+### FAQs
+Q: How long does it take to see more customers?
+A: Most shops see increased traffic and calls within 2-3 months. Significant growth within 4-6 months.
+
+Q: Can you help us rank for specific services like transmission repair?
+A: Yes! We create dedicated pages for each service, targeting general terms and make/model combinations.
+
+Q: How do you help us compete with dealerships and chains?
+A: We highlight personalized service, honest pricing, and expertise to position you as the trusted local expert.
+
+Q: Do you work with specialty shops?
+A: Yes! General repair, collision/body shops, performance shops, tire centers, and specialty providers.
+
+Q: How do you help us get more emergency repair calls?
+A: We target emergency keywords, optimize for mobile, and ensure click-to-call and emergency availability are prominent.
+
+---
+
+## Photographer Marketing
 URL: https://growsmallbiz-ai-seo.lovable.app/industries/photographers
-Marketing for photography businesses to attract wedding, portrait, commercial, and event clients.
 
-## Realtors
+Attract more clients and book more sessions with AI-powered digital marketing designed for photographers. From weddings to portraits, we fill your calendar.
+
+### Services
+- SEO for photography businesses
+- Instagram & Pinterest marketing
+- Google Ads for photography
+- Portfolio website design
+- Review management
+- Social media content strategy
+
+### Email & SMS Automation Workflows
+Automated client nurturing sequences that turn inquiries into booked sessions — from initial contact through post-session follow-up.
+- Inquiry Auto-Response — Instant email & SMS reply within seconds of a new lead
+- Nurture Sequences — Multi-step follow-up campaigns for wedding, portrait, and family photography
+- Booking Reminders — Automated session reminders and preparation guides
+- Post-Session Follow-Up — Review requests, gallery delivery, and upsell campaigns
+- Seasonal Campaigns — Mini-session promotions, holiday specials, and back-to-school offers
+
+### Reputation, Referrals & Gift Cards
+We set up your reputation management, referral programs, and gift card systems to drive repeat business and word-of-mouth growth.
+
+### 24/7 Studio Booking & Client Communication
+We power your studio's booking and client communication with AI receptionist, automated scheduling, and multi-channel messaging.
+
+### AI-Powered Content System
+- Content Agents — Research, write, and optimize blog posts, social captions, and website copy
+- Content Refiners — Tone matching, SEO optimization, and brand voice consistency
+- Topical Authority — Build search authority with pillar content and supporting articles
+
+### Predictable Marketing System
+1. Get Found — SEO, Google Business Profile, paid ads
+2. Get Chosen — Portfolio, reviews, social proof
+3. Get Booked — AI receptionist, automated follow-up, CRM
+4. Get Referrals — Review requests, referral programs, repeat client campaigns
+
+---
+
+## Realtor Marketing
 URL: https://growsmallbiz-ai-seo.lovable.app/industries/realtors
-Lead generation and brand building for real estate agents with IDX integration, SEO, paid ads, and CRM automation.
+
+Generate more leads, build your brand, and close more deals with AI-powered digital marketing designed for real estate professionals.
+
+### Services
+- Local SEO for real estate
+- Google & Facebook Ads for listings
+- IDX website integration
+- Social media management
+- AI receptionist for lead capture
+- CRM & lead nurturing
+- LinkedIn outreach for networking
+
+### IDXAddons Platform — Real Estate Tools for IDX Broker Websites
+IDXAddons is our all-in-one platform for IDX Broker users with 75+ tools to enhance real estate websites on WordPress, Wix, Duda, or any builder.
+- IDX Search Tools — Advanced property search with map-based, polygon, and radius search
+- Google Map Search — Interactive map with MLS data overlay and neighborhood insights
+- Home Valuation Tool — Plunk-powered instant property valuations for lead capture
+- Listing Showcase Widgets — Featured listings, new listings, open houses, and sold properties
+- Agent Roster Pages — Team pages with bio, listings, and contact forms
+- Customizable Layouts & Templates — Search results, listing details, and agent pages with full style control
+- Lead Capture Integration — Forced registration, saved searches, and CRM sync
+
+### Realtor Growth System
+- Website & IDX — Conversion-optimized real estate website with IDX integration
+- SEO & Content — Neighborhood pages, market reports, and local keyword targeting
+- Paid Advertising — Google, Facebook, and Instagram ads for buyer and seller leads
+- Reputation Management — Automated review requests and response management
+- AI Receptionist — 24/7 lead capture and appointment scheduling
+- CRM & Nurturing — Automated drip campaigns, pipeline tracking, and lead scoring
 
 ---
 
