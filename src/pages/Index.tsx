@@ -44,6 +44,7 @@ import {
 } from "lucide-react";
 import { GlowCard } from "@/components/ui/glow-card";
 import { Helmet } from "react-helmet";
+import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 // Stats data for homepage
 const homepageStats = [
@@ -269,6 +270,35 @@ const Index = () => {
       <Helmet>
         <title>GrowSmallBiz | Digital Marketing & AI Automation for Local Service Businesses</title>
         <meta name="description" content="Done-for-You marketing and AI automation for local service businesses. Achieve digital dominance with AI-powered SEO, paid ads, reputation management, and 24/7 AI assistants." />
+      </Helmet>
+      <PageJsonLd
+        pageType="WebPage"
+        name="GrowSmallBiz | Digital Marketing & AI Automation for Local Service Businesses"
+        description="Done-for-You marketing and AI automation for local service businesses. AI-powered SEO, paid ads, reputation management, and 24/7 AI assistants."
+        url="/"
+        breadcrumbs={[]}
+      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "GrowSmallBiz Digital Marketing",
+            "url": "https://growsmallbiz-ai-seo.lovable.app",
+            "telephone": "+1-925-886-3724",
+            "description": "AI-powered SEO and digital marketing agency specializing in local service businesses.",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "US"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "United States"
+            },
+            "sameAs": []
+          })}
+        </script>
       </Helmet>
       <Header />
 
