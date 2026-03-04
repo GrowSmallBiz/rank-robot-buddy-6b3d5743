@@ -34,6 +34,7 @@ import AutoRepair from "./pages/industries/AutoRepair";
 import Photographers from "./pages/industries/Photographers";
 import Realtors from "./pages/industries/Realtors";
 import BrandingGuidelines from "./pages/BrandingGuidelines";
+import DownloadBrandingDocx from "./pages/DownloadBrandingDocx";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -83,6 +84,7 @@ export const routes: RouteRecord[] = [
       { path: "industries/photographers", Component: Photographers },
       { path: "industries/realtors", Component: Realtors },
       { path: "branding-guidelines", Component: BrandingGuidelines },
+      { path: "download-branding-docx", Component: DownloadBrandingDocx },
       { path: "404", Component: NotFound },
       { path: "*", Component: NotFound },
     ],
