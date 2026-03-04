@@ -10,6 +10,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { ArrowRight, ArrowLeft, CheckCircle2, Building2, Globe, Target, Users, Sparkles } from "lucide-react";
+import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 const businessTypes = [
   { id: "hvac", label: "HVAC / Plumbing / Electrical", icon: "🔧" },
@@ -182,6 +183,13 @@ const FreeAssessment = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageJsonLd
+        pageType="WebPage"
+        name="Free Marketing Assessment | GrowSmallBiz"
+        description="Request your free AI-powered marketing assessment today."
+        url="/free-assessment"
+        breadcrumbs={[{ name: "Free Assessment", url: "/free-assessment" }]}
+      />
       <Header />
 
       <section className="pt-32 pb-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
