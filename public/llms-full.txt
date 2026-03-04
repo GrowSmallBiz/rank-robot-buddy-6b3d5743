@@ -260,6 +260,11 @@ URL: https://growsmallbiz-ai-seo.lovable.app/services/local-seo
 ## What We Do
 Optimize your business's online presence to attract customers in specific geographic areas through Google Business Profiles, local citations, reviews, and geo-targeted content.
 
+## Key Stats
+- 46% of Google searches have local intent
+- 76% of local searches visit a business within 24 hours
+- 28% of local searches result in a purchase
+
 ## Features
 - Local Keyword Research
 - Google Business Profile Optimization
