@@ -1,17 +1,17 @@
 # GrowSmallBiz Digital Marketing — Full Site Content for LLMs
 
 Last updated: 2026-03-04
-Canonical website: https://growsmallbiz-ai-seo.lovable.app/
+Canonical website: https://grow-small-biz.org/
 
 NOTE: This site is a React single-page application. AI tools that cannot execute JavaScript should use this file to understand all page content. Each section below corresponds to a route on the website.
 
 ---
 
 ## Machine-Readable Endpoints
-- robots.txt: https://growsmallbiz-ai-seo.lovable.app/robots.txt
-- sitemap.xml: https://growsmallbiz-ai-seo.lovable.app/sitemap.xml
-- llms.txt (index): https://growsmallbiz-ai-seo.lovable.app/llms.txt
-- llms-full.txt (this file): https://growsmallbiz-ai-seo.lovable.app/llms-full.txt
+- robots.txt: https://grow-small-biz.org/robots.txt
+- sitemap.xml: https://grow-small-biz.org/sitemap.xml
+- llms.txt (index): https://grow-small-biz.org/llms.txt
+- llms-full.txt (this file): https://grow-small-biz.org/llms-full.txt
 
 ---
 
