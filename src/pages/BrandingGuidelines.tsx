@@ -191,6 +191,7 @@ const BrandingGuidelines = () => {
               { label: "Layout", value: "Centered container (max 1400px), generous vertical padding (96px / 128px on sections)" },
               { label: "Border radius", value: "Default 12px, cards use 16px (rounded-2xl)" },
             ]} />
+            <ExampleImage src="/screenshots/section-header-hero.png" alt="GrowSmallBiz homepage showing dark-mode design philosophy" caption="Homepage hero — dark navy background with warm coral/orange accents and gradient text" />
           </Section>
 
           {/* 2. Color Palette */}
@@ -416,6 +417,7 @@ const BrandingGuidelines = () => {
                 { label: "CTA (desktop)", value: "Phone number button with primary orange background, shows 'Call Now & Schedule Today' + phone number" },
                 { label: "Mobile", value: "Hamburger menu, full-width dropdown below header, collapsible accordion sub-menus" },
               ]} />
+              <ExampleImage src="/screenshots/growsmallbiz-logo.png" alt="GrowSmallBiz logo in header" caption="Header with logo, navigation dropdowns, and orange CTA button" />
             </SubSection>
 
             <SubSection num="5.2" title="Hero Section">
@@ -431,6 +433,7 @@ const BrandingGuidelines = () => {
                 { label: "CTA buttons", value: "Flex row on desktop, column on mobile, 16px gap. Primary: hero gradient variant, XL size with arrow. Secondary: heroOutline variant, XL size" },
                 { label: "Animation", value: "Staggered fade-up animation with 100ms–400ms delays" },
               ]} />
+              <ExampleImage src="/screenshots/homepage-hero-bg.jpg" alt="Hero section background image" caption="Hero section — full-bleed background image with dark overlay, gradient text, and dual CTA buttons" />
             </SubSection>
 
             <SubSection num="5.3" title="Comparison Section (Fragmented vs Integrated)">
@@ -446,8 +449,8 @@ const BrandingGuidelines = () => {
                 { label: "List items — negative", value: "X circle icon in destructive/red at 60% opacity" },
                 { label: "List items — positive", value: "Check circle icon in primary orange" },
               ]} />
+              <ExampleImage src="/screenshots/predictable-marketing-system.png" alt="Comparison section layout" caption="Comparison section — fragmented vs integrated approach with orange/teal bordered cards" />
             </SubSection>
-
             <SubSection num="5.4" title="Growth Steps Section (Digital Dominance Method)">
               <SpecList items={[
                 { label: "Background", value: "Triple gradient: very dark navy → standard navy → very dark navy (vertical)" },
@@ -460,6 +463,7 @@ const BrandingGuidelines = () => {
                 { label: "Description", value: "14px, muted foreground color" },
                 { label: "Below cards", value: "Italic testimonial quote + hero CTA button" },
               ]} />
+              <ExampleImage src="/screenshots/ai-growth-system-funnel.webp" alt="Growth steps funnel diagram" caption="Growth Steps — 4-column card grid with icon containers and orange glow hover" />
             </SubSection>
 
             <SubSection num="5.5" title="Services Grid Section">
@@ -475,6 +479,7 @@ const BrandingGuidelines = () => {
                 { label: "Button", value: "Outline variant, teal border at 50%, full width" },
                 { label: "'Coming Soon' badge", value: "Absolute positioned, -12px top, muted background, 12px font, rounded full" },
               ]} />
+              <ExampleImage src="/screenshots/on-page-seo.png" alt="Services grid teal cards" caption="Services Grid — teal-bordered cards with backdrop blur and glow hover effects" />
             </SubSection>
 
             <SubSection num="5.6" title="Card CTA (Mid-page Call-to-Action)">
@@ -490,6 +495,7 @@ const BrandingGuidelines = () => {
                 { label: "Primary button", value: "Gradient orange → gold → blue, fully rounded, strong shadow" },
                 { label: "Secondary button", value: "Outline with phone icon, fully rounded" },
               ]} />
+              <ExampleImage src="/screenshots/subrata-guha-headshot.jpg" alt="Card CTA headshot" caption="Card CTA — circular headshot with gradient ring, gradient CTA button, dark card with orange border" />
             </SubSection>
 
             <SubSection num="5.7" title="Why Choose Section">
@@ -504,6 +510,7 @@ const BrandingGuidelines = () => {
                 { label: "Title", value: "Montserrat semibold, near-white" },
                 { label: "Description", value: "14px, relaxed leading, muted foreground" },
               ]} />
+              <ExampleImage src="/screenshots/content-agents.png" alt="Why Choose card grid" caption="Why Choose — orange-bordered cards with icon containers and glow hover effects" />
             </SubSection>
 
             <SubSection num="5.8" title="Animated Stats Section">
@@ -519,6 +526,7 @@ const BrandingGuidelines = () => {
                 { label: "Label", value: "14px, slate-400 color, medium weight" },
                 { label: "Card variant", value: "Background at 80%, teal border, 16px rounded, 24px padding, centered, hover orange glow" },
               ]} />
+              <ExampleImage src="/screenshots/seo-dashboard-metrics.png" alt="Animated stats" caption="Animated Stats — count-up numbers in #FC8253 with icon containers and glow hover" />
             </SubSection>
 
             <SubSection num="5.9" title="Testimonials Section">
@@ -534,6 +542,7 @@ const BrandingGuidelines = () => {
                 { label: "Hover effect", value: "Teal glow: 30px + 60px combined shadow" },
                 { label: "Content order", value: "Star rating (filled primary stars) → quote text → author name + role/company" },
               ]} />
+              <ExampleImage src="/screenshots/reputation-hero.jpg" alt="Testimonials section" caption="Testimonials — teal-bordered cards with star ratings and customer quotes" />
             </SubSection>
 
             <SubSection num="5.10" title="Case Study Section">
@@ -547,6 +556,7 @@ const BrandingGuidelines = () => {
                 { label: "Improvement badge", value: "12px font, bold, primary color, primary at 10% background, rounded full" },
                 { label: "CTA button below", value: "Hero variant, large size" },
               ]} />
+              <ExampleImage src="/screenshots/case-study-dental.jpg" alt="Case study card" caption="Case Study — gradient header bar, before/after metrics, improvement badges" />
             </SubSection>
 
             <SubSection num="5.11" title="Blog Section">
@@ -561,6 +571,7 @@ const BrandingGuidelines = () => {
                 { label: "Meta row", value: "Author + Date + Read time with small icons" },
                 { label: "'Read More' link", value: "Animated arrow slides right on hover" },
               ]} />
+              <ExampleImage src="/screenshots/article-score-insights.png" alt="Blog section" caption="Blog Section — cards with gradient image areas, category badges, and hover effects" />
             </SubSection>
 
             <SubSection num="5.12" title="FAQ Section">
@@ -575,6 +586,7 @@ const BrandingGuidelines = () => {
                 { label: "Sidebar avatar", value: "Circular with gradient border ring" },
                 { label: "Sidebar CTA button", value: "Gradient from blue to primary orange, fully rounded" },
               ]} />
+              <ExampleImage src="/screenshots/backlink-analytics-dashboard.png" alt="FAQ section" caption="FAQ — orange-bordered accordions with glow hover, sticky sidebar CTA" />
             </SubSection>
 
             <SubSection num="5.13" title="Consultation Form Section">
@@ -589,6 +601,7 @@ const BrandingGuidelines = () => {
                 { label: "Focus state", value: "1px primary ring, primary border color" },
                 { label: "Submit button", value: "Full width, fully rounded, gradient from primary to accent, 24px vertical padding, 18px bold text" },
               ]} />
+              <ExampleImage src="/screenshots/crm-hero-bg.jpg" alt="Consultation form" caption="Consultation Form — deep purple-black inner bg, teal outer bg, gradient submit button" />
             </SubSection>
 
             <SubSection num="5.14" title="Footer">
@@ -600,6 +613,7 @@ const BrandingGuidelines = () => {
                 { label: "Bottom bar", value: "Top border, copyright text + Privacy / Terms links" },
                 { label: "Padding", value: "64px vertical for content, 48px top margin + 32px top padding for bottom bar" },
               ]} />
+              <ExampleImage src="/screenshots/growsmallbiz-logo.png" alt="Footer with logo and link columns" caption="Footer — 4-column grid with gradient logo, link columns, and bottom bar" />
             </SubSection>
           </Section>
 
@@ -892,6 +906,15 @@ const CodeBlock = ({ label, code }: { label: string; code: string }) => (
   <div className="mt-4">
     <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">{label}</span>
     <pre className="mt-1 bg-gray-900 text-gray-100 text-xs rounded-lg p-4 overflow-x-auto whitespace-pre-wrap font-mono">{code}</pre>
+  </div>
+);
+
+const ExampleImage = ({ src, alt, caption }: { src: string; alt: string; caption?: string }) => (
+  <div className="mt-4 mb-2">
+    <div className="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+      <img src={src} alt={alt} className="w-full h-auto" loading="lazy" />
+    </div>
+    {caption && <p className="text-xs text-gray-400 mt-2 italic text-center">{caption}</p>}
   </div>
 );
 
