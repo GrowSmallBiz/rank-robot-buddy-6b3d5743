@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -496,6 +497,16 @@ const WebsiteDesign = () => {
         </script>
       </Helmet>
 
+      <ServiceJsonLd
+        serviceName="Conversion Focused Website Design"
+        serviceType="Website Design"
+        description="Lead-generating website design for local service businesses with SEO and conversion optimization."
+        url="/services/website-design"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Website Design", url: "/services/website-design" },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         {/* Background Image */}

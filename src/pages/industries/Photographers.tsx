@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -1236,6 +1237,16 @@ const Photographers = () => {
         <title>Photography Marketing & SEO Services | Book More Clients | GrowSmallBiz</title>
         <meta name="description" content="Complete marketing system for photographers. Website design, AI SEO, CRM, paid ads, and automation to fill your session calendar with dream clients." />
       </Helmet>
+      <ServiceJsonLd
+        serviceName="Photography Marketing & SEO"
+        serviceType="Digital Marketing for Photographers"
+        description="Complete marketing system for photographers including website design, AI SEO, CRM, and automation."
+        url="/industries/photographers"
+        breadcrumbs={[
+          { name: "Industries", url: "/industries/home-services" },
+          { name: "Photographers", url: "/industries/photographers" },
+        ]}
+      />
       
       <Header />
 

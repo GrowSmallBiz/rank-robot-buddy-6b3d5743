@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -173,6 +174,16 @@ const Chiropractor = () => {
         <title>Chiropractor SEO Services | Grow Your Practice | GrowSmallBiz</title>
         <meta name="description" content="Grow your chiropractic practice with specialized SEO. Rank #1 for back pain, neck pain, and 'chiropractor near me' searches. Get more new patients." />
       </Helmet>
+      <ServiceJsonLd
+        serviceName="Chiropractor Marketing"
+        serviceType="Digital Marketing for Chiropractors"
+        description="SEO and digital marketing to grow your chiropractic practice and attract new patients."
+        url="/industries/chiropractor"
+        breadcrumbs={[
+          { name: "Industries", url: "/industries/home-services" },
+          { name: "Chiropractor", url: "/industries/chiropractor" },
+        ]}
+      />
       
       <Header />
 

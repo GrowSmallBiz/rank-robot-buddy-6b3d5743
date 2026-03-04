@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -173,6 +174,16 @@ const MedSpa = () => {
         <title>Med Spa SEO Services | Attract Aesthetic Clients | GrowSmallBiz</title>
         <meta name="description" content="Grow your med spa with specialized SEO. Rank #1 for Botox, fillers, laser treatments, and aesthetic services. Attract high-value clients." />
       </Helmet>
+      <ServiceJsonLd
+        serviceName="Med Spa Marketing"
+        serviceType="Digital Marketing for Med Spas"
+        description="SEO and digital marketing for Botox, fillers, laser treatments, and aesthetic services."
+        url="/industries/med-spa"
+        breadcrumbs={[
+          { name: "Industries", url: "/industries/home-services" },
+          { name: "Med Spa", url: "/industries/med-spa" },
+        ]}
+      />
       
       <Header />
 

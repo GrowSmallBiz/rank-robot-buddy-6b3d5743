@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import linkedinHeroBg from "@/assets/linkedin-outreach-hero.jpg";
@@ -220,6 +221,16 @@ const LinkedInOutreach = () => {
         <meta name="keywords" content="LinkedIn outreach, B2B lead generation, LinkedIn automation, sales prospecting, LinkedIn marketing, done with you LinkedIn" />
       </Helmet>
 
+      <ServiceJsonLd
+        serviceName="LinkedIn Outreach Automation"
+        serviceType="LinkedIn Outreach"
+        description="Done-With-You B2B lead generation with AI-assisted targeting and personalized messaging."
+        url="/services/linkedin-outreach"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "LinkedIn Outreach", url: "/services/linkedin-outreach" },
+        ]}
+      />
       <Header />
 
       <main className="pt-20">

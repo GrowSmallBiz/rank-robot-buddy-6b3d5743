@@ -12,6 +12,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import { ArrowRight, Bot, MessageSquare, Database, Eye, HelpCircle, Settings, TrendingUp, Clock, Zap } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import aeoServiceImage from "@/assets/aeo-service.png";
 
 const aeoStats = [
@@ -101,6 +102,16 @@ const platforms = [
 const AEO = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceJsonLd
+        serviceName="Answer Engine Optimization (AEO)"
+        serviceType="Answer Engine Optimization"
+        description="Optimize your content for AI-powered answer engines and featured snippets across ChatGPT, Perplexity, and Google AI."
+        url="/services/aeo"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "AEO", url: "/services/aeo" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}

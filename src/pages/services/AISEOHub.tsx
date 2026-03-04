@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/Header";
@@ -220,6 +221,15 @@ const AISEOHub = () => {
         <meta name="keywords" content="AI SEO, managed SEO services, technical SEO, AEO, GEO, local SEO, link building, answer engine optimization, generative engine optimization, full-funnel visibility" />
       </Helmet>
 
+      <ServiceJsonLd
+        serviceName="AI-Powered SEO Services"
+        serviceType="AI SEO"
+        description="Full-funnel AI SEO uniting technical SEO, AEO, GEO, local SEO, and link building."
+        url="/services/ai-seo-hub"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+        ]}
+      />
       <Header />
 
       <main className="min-h-screen bg-background pt-20">

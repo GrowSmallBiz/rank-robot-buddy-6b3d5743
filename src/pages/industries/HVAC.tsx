@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -175,6 +176,16 @@ const HVAC = () => {
         <title>HVAC, Plumbing & Electrical SEO Services | GrowSmallBiz</title>
         <meta name="description" content="Dominate local search for HVAC, plumbing, and electrical services. Get more emergency calls, rank #1 on Google Maps, and stop paying for leads." />
       </Helmet>
+      <ServiceJsonLd
+        serviceName="HVAC, Plumbing & Electrical Marketing"
+        serviceType="Digital Marketing for HVAC"
+        description="Local SEO, Google Ads, and digital marketing for HVAC, plumbing, and electrical companies."
+        url="/industries/hvac"
+        breadcrumbs={[
+          { name: "Industries", url: "/industries/home-services" },
+          { name: "HVAC", url: "/industries/hvac" },
+        ]}
+      />
       
       <Header />
 

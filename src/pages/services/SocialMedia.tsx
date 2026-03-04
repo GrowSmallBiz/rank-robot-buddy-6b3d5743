@@ -55,6 +55,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import socialMediaHero from "@/assets/social-media-hero.jpg";
 
@@ -382,6 +383,16 @@ const SocialMedia = () => {
         <title>Social Media Marketing for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Strategic social media marketing for local service professionals. From paid advertising to organic engagement, we elevate your brand and connect you with local clients." />
       </Helmet>
+      <ServiceJsonLd
+        serviceName="Social Media Marketing"
+        serviceType="Social Media Management"
+        description="Strategic social media marketing for local service professionals with paid advertising and organic engagement."
+        url="/services/social-media"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Social Media", url: "/services/social-media" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section with Background Image */}

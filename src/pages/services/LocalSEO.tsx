@@ -12,6 +12,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import { ArrowRight, MapPin, Search, Building, Star, FileText, Users } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 
 const localSeoTestimonials = [
   {
@@ -112,6 +113,16 @@ const stats = [
 const LocalSEO = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceJsonLd
+        serviceName="Local SEO Services"
+        serviceType="Local SEO"
+        description="Google Business Profile optimization, local citations, map pack rankings, and service area targeting."
+        url="/services/local-seo"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Local SEO", url: "/services/local-seo" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}

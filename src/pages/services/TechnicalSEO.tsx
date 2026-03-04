@@ -12,6 +12,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import { ArrowRight, Check, Zap, Shield, Gauge, Code, Smartphone, Globe, Clock, TrendingUp } from "lucide-react";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 
 const technicalSeoTestimonials = [
   {
@@ -117,6 +118,16 @@ const benefits = [
 const TechnicalSEO = () => {
   return (
     <div className="min-h-screen bg-background">
+      <ServiceJsonLd
+        serviceName="Technical SEO Services"
+        serviceType="Technical SEO"
+        description="Site speed, crawlability, Core Web Vitals optimization, and technical foundation for local businesses."
+        url="/services/technical-seo"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Technical SEO", url: "/services/technical-seo" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}

@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -602,6 +603,16 @@ const Realtors = () => {
         />
       </Helmet>
 
+      <ServiceJsonLd
+        serviceName="Real Estate Marketing Solutions"
+        serviceType="Digital Marketing for Realtors"
+        description="IDX-integrated websites, AI-powered CRM, automated follow-ups, and lead generation for realtors."
+        url="/industries/realtors"
+        breadcrumbs={[
+          { name: "Industries", url: "/industries/home-services" },
+          { name: "Realtors", url: "/industries/realtors" },
+        ]}
+      />
       <Header />
       
       <main className="pt-20">

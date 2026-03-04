@@ -1,3 +1,4 @@
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -257,6 +258,16 @@ const AIReceptionist = () => {
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 
+      <ServiceJsonLd
+        serviceName="AI Receptionist & Conversational AI"
+        serviceType="AI Receptionist"
+        description="24/7 AI-powered phone answering, SMS, and chat automation for lead capture and appointment booking."
+        url="/services/ai-receptionist"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "AI Receptionist", url: "/services/ai-receptionist" },
+        ]}
+      />
       <Header />
 
       <main className="pt-20">

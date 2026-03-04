@@ -29,6 +29,7 @@ import {
   Heart
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import reputationHeroBg from "@/assets/reputation-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
@@ -226,6 +227,16 @@ const ReputationManagement = () => {
         <meta name="keywords" content="reputation management, online reviews, Google reviews, AI review response, review automation, local SEO, review monitoring, customer feedback" />
         <link rel="canonical" href="https://growsmallbiz.io/services/reputation-management" />
       </Helmet>
+      <ServiceJsonLd
+        serviceName="AI-Powered Reputation Management"
+        serviceType="Reputation Management"
+        description="Automated review collection, AI-powered responses, and monitoring across 50+ platforms."
+        url="/services/reputation-management"
+        breadcrumbs={[
+          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Reputation Management", url: "/services/reputation-management" },
+        ]}
+      />
       <Header />
 
       {/* Hero Section */}
