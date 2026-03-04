@@ -82,6 +82,7 @@ export const routes: RouteRecord[] = [
       { path: "industries/auto-repair", Component: AutoRepair },
       { path: "industries/photographers", Component: Photographers },
       { path: "industries/realtors", Component: Realtors },
+      { path: "branding-guidelines", Component: BrandingGuidelines },
       { path: "404", Component: NotFound },
       { path: "*", Component: NotFound },
     ],
