@@ -1,492 +1,342 @@
-# GrowSmallBiz — Complete Branding & UX Guidelines
+# GrowSmallBiz — Brand Identity & Design Guidelines
 
-> Use this document to replicate the GrowSmallBiz website design system on any new project.
-
----
-
-## 1. GLOBAL DESIGN PHILOSOPHY
-
-- **Theme:** Dark-mode-first, professional agency aesthetic
-- **Tone:** Confident, authoritative, results-driven — speaks as a marketing agency executing for clients
-- **Mood:** Premium tech meets warm approachability — dark navy backgrounds with warm coral/orange accents
-- **Layout:** Centered container (max `1400px`), generous vertical padding (`py-24` / `py-32` on sections)
-- **Border radius:** Default `0.75rem` (12px), cards use `rounded-2xl` (1rem / 16px)
+> This guide defines the visual identity of GrowSmallBiz. Use it to maintain consistency across all touchpoints — web, print, social, and partner materials.
 
 ---
 
-## 2. COLOR PALETTE
+## 1. Brand Personality
 
-### Primary Colors (HSL format for CSS variables)
+- **Voice:** Confident, knowledgeable, and results-driven — we speak as trusted advisors who deliver measurable growth
+- **Tone:** Professional yet approachable — authoritative without being cold
+- **Feeling:** Premium technology meets human warmth
+- **Promise:** We turn small businesses into local market leaders through intelligent marketing systems
 
-| Token | HSL Value | Hex (approx) | Usage |
-|---|---|---|---|
-| `--background` | `210 50% 12%` | `#152233` | Page background — dark navy |
-| `--foreground` | `210 20% 98%` | `#F8FAFB` | Primary text — near-white |
-| `--card` | `210 45% 16%` | `#1A2D42` | Card/elevated surface |
-| `--primary` | `18 85% 60%` | `#E8723A` | Primary action color — warm coral/orange |
-| `--primary-foreground` | `210 50% 12%` | `#152233` | Text on primary buttons |
-| `--secondary` | `210 40% 20%` | `#1F3347` | Secondary backgrounds |
-| `--muted` | `210 35% 22%` | `#243A4F` | Subtle backgrounds |
-| `--muted-foreground` | `210 20% 70%` | `#A3B1BF` | Secondary text |
-| `--destructive` | `0 84% 60%` | `#EF4444` | Error/negative state |
-| `--border` | `210 35% 22%` | `#243A4F` | Default border color |
+---
 
-### Accent & Glow Colors
+## 2. Color Palette
 
-| Token | Value | Usage |
+Our palette balances a deep, sophisticated navy foundation with energetic warm accents that convey action and results.
+
+### Primary Colors
+
+| Color | Hex | Role |
 |---|---|---|
-| `--glow-primary` | `18 85% 60%` | Orange glow on hover effects |
-| `--glow-accent` | `188 78% 41%` | Teal/cyan glow accent |
-| `--ghl-card-border` | `188 78% 41%` | Teal card borders — `#17a2b8` |
-| `--ghl-icon` | `16 100% 66%` | Icon container orange — `#FF7F50` |
+| **Dark Navy** | `#152233` | Primary background — creates depth and professionalism |
+| **Near White** | `#F8FAFB` | Primary text — crisp and readable against dark backgrounds |
+| **Coral Orange** | `#E8723A` | Brand accent — used for calls-to-action, highlights, and key moments |
+| **Deep Navy** | `#1A2D42` | Card and surface backgrounds — subtle elevation from the base |
+| **Steel Blue** | `#1F3347` | Secondary surfaces and section dividers |
+| **Soft Navy** | `#243A4F` | Muted backgrounds and borders |
+| **Blue Gray** | `#A3B1BF` | Secondary text — descriptions, captions, and supporting copy |
 
-### Key Hardcoded Colors
+### Accent Colors
 
-| Color | Hex | Usage |
+| Color | Hex | Role |
 |---|---|---|
-| Stat value orange | `#FC8253` | Large stat numbers |
-| Teal accent | `#17a2b8` | Card borders, glow effects, feature card borders |
-| Teal card bg | `#2d465c` | Feature card & testimonial card backgrounds |
-| Dark purple section | `#191321` | Consultation form inner background |
-| Form section bg | `#2d465c` | Consultation form outer background |
+| **Teal** | `#17A2B8` | Feature highlights, card borders, and technology-forward accents |
+| **Warm Orange** | `#FF7F50` | Icon containers and decorative elements |
+| **Stat Orange** | `#FC8253` | Large numbers, data points, and performance metrics |
+| **Error Red** | `#EF4444` | Error states and negative indicators only |
+
+### Color Usage Rules
+
+- **Backgrounds** always use the dark navy family — never white or light gray as a page background
+- **Coral Orange** is reserved for interactive elements (buttons, links, highlights) — don't overuse it
+- **Teal** signals technology and features — use for card borders and feature grids
+- **Text** should only appear in near-white (primary) or blue-gray (secondary) — avoid pure white (#FFFFFF)
+- When orange and teal appear together, orange takes visual priority as the brand color
+
+### Brand Gradients
+
+| Gradient | Colors | Where to Use |
+|---|---|---|
+| **Primary Gradient** | Coral Orange → Sky Blue (`#E8723A` → `#2CA6E0`) | Hero buttons, section headers, highlight text |
+| **CTA Gradient** | Warm Orange → Gold → Sky Blue | Primary call-to-action buttons |
+| **Dark Section** | Deep Navy → Navy → Deep Navy | Alternating section backgrounds for rhythm |
 
 ---
 
-## 3. TYPOGRAPHY
+## 3. Typography
 
-### Font Stack
+### Font Pairing
 
-| Role | Font Family | Weight Range | Tailwind Class |
-|---|---|---|---|
-| **Body text** | `Poppins` | 300–900 | `font-sans` (default) |
-| **Headings / Display** | `Montserrat` | 400–800 | `font-display` |
+| Role | Typeface | Weights Used |
+|---|---|---|
+| **Headings & Display** | **Montserrat** | Medium (500), Semibold (600), Bold (700), Extra Bold (800) |
+| **Body & Interface** | **Poppins** | Light (300), Regular (400), Medium (500), Semibold (600), Bold (700) |
 
-### Import
-```css
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap');
-```
+Both fonts are available from Google Fonts.
 
-### Type Scale
+### Type Hierarchy
 
-| Element | Size | Font | Weight | Notes |
+| Element | Typeface | Size | Weight | Notes |
 |---|---|---|---|---|
-| **H1 (Hero)** | `text-4xl md:text-5xl lg:text-6xl` | Montserrat | 700 (`font-bold`) | `leading-tight`, single per page |
-| **H2 (Section)** | `text-3xl md:text-4xl` | Montserrat | 700 | Section titles |
-| **H3 (Card)** | `text-xl` or `text-2xl` | Montserrat | 600 (`font-semibold`) | Card/feature titles |
-| **Body large** | `text-xl md:text-2xl` | Poppins | 500 (`font-medium`) | Hero subheadline |
-| **Body** | `text-lg` | Poppins | 400 | Descriptions |
-| **Body small** | `text-sm` | Poppins | 400 | Card descriptions, list items |
-| **Label/Meta** | `text-xs` | Poppins | 500 | Badges, timestamps, uppercase labels |
-| **Stat values** | `text-4xl md:text-5xl` | Montserrat | 700 | Colored `#FC8253` |
+| **Page Title (H1)** | Montserrat | 36–60px (scales with screen) | Bold | One per page. Tight line spacing. |
+| **Section Title (H2)** | Montserrat | 30–36px | Bold | Marks major content sections |
+| **Card Title (H3)** | Montserrat | 20–24px | Semibold | Feature cards, service cards |
+| **Hero Subtitle** | Poppins | 20–24px | Medium | Below the page title |
+| **Body Text** | Poppins | 18px | Regular | Standard paragraphs and descriptions |
+| **Small Body** | Poppins | 14px | Regular | Card descriptions, list items |
+| **Labels & Tags** | Poppins | 12px | Medium | Badges, dates, categories — often uppercase |
+| **Stat Numbers** | Montserrat | 36–48px | Bold | Always in Stat Orange (`#FC8253`) |
 
-### Text Color Classes
+### Text Colors
 
-- **Primary text:** `text-foreground` (near-white)
-- **Secondary text:** `text-muted-foreground` (blue-gray)
-- **Accent text:** `text-primary` (coral/orange)
-- **Gradient text:** `.text-gradient` class → `linear-gradient(135deg, primary 0%, hsl(199 89% 48%) 100%)`
+- **Primary text:** Near White on dark backgrounds
+- **Secondary text:** Blue Gray for supporting information
+- **Accent text:** Coral Orange for links, labels, and highlighted words
+- **Gradient text:** The Primary Gradient applied to text for emphasis (hero headlines, section title keywords)
 
 ---
 
-## 4. BUTTONS
+## 4. Logo & Brand Mark
 
-### Variants (via `class-variance-authority`)
+- The logo appears at 48px height in the navigation header
+- Always maintain clear space equal to the logo height on all sides
+- On dark backgrounds, use the standard (light) logo
+- Never stretch, rotate, or apply effects to the logo
+- Minimum display size: 32px height
 
-| Variant | Style | Usage |
+---
+
+## 5. Buttons & Calls to Action
+
+### Button Styles
+
+| Style | Look | When to Use |
 |---|---|---|
-| `default` | Solid primary bg, dark text | Standard actions |
-| `hero` | Gradient `from-primary to-[hsl(199_89%_48%)]`, shadow | Primary CTAs in hero sections |
-| `heroOutline` | 2px primary/50 border, transparent bg | Secondary CTAs in hero sections |
-| `outline` | 1px border, transparent bg | Tertiary actions, "Learn More" |
-| `ghost` | No bg, hover shows secondary | Navigation items |
-| `glow` | Solid primary with animated glow pulse | Attention-grabbing actions |
+| **Hero Button** | Gradient fill (orange → blue), strong shadow, large size | Primary action in hero sections — one per screen |
+| **Hero Outline** | Transparent with orange border | Secondary action paired with a hero button |
+| **Solid** | Coral Orange fill with dark text | Standard actions throughout the page |
+| **Outline** | Transparent with subtle border | Tertiary actions, "Learn More" links |
+| **Glow** | Coral Orange with pulsing glow animation | High-attention actions (limited use) |
 
-### Sizes
+### Button Sizes
 
-| Size | Height | Padding | Text |
-|---|---|---|---|
-| `sm` | `h-9` | `px-3` | Default `text-sm` |
-| `default` | `h-10` | `px-4` | `text-sm` |
-| `lg` | `h-12` | `px-8` | `text-base` |
-| `xl` | `h-14` | `px-10` | `text-lg` |
-
-### CTA Button Pattern (CardCTA gradient)
-```css
-background: linear-gradient(90deg, hsl(25 90% 55%) 0%, hsl(35 85% 60%) 35%, hsl(199 80% 55%) 100%);
-box-shadow: 0 12px 35px -8px hsla(25, 90%, 50%, 0.6);
-border-radius: 9999px; /* fully rounded */
-```
-
----
-
-## 5. SECTION-BY-SECTION UX SPECIFICATIONS
-
----
-
-### 5.1 HEADER (Fixed Navigation)
-
-- **Position:** Fixed top, `z-50`
-- **Background:** `bg-background/80 backdrop-blur-xl`
-- **Border:** `border-b border-border`
-- **Height:** `h-20` (80px)
-- **Logo:** Image logo, `h-12`
-- **Nav links:** `text-sm font-medium text-muted-foreground`, active state: `text-primary`
-- **Dropdowns:** `bg-card border border-border rounded-xl shadow-2xl p-2`, appear on hover with fade+slide animation (`opacity-100 translate-y-0`)
-- **CTA (desktop):** Phone number button — `bg-primary rounded-lg`, shows "Call Now & Schedule Today" + phone number
-- **Mobile:** Hamburger menu, full-width dropdown below header, collapsible accordion sub-menus
-
----
-
-### 5.2 HERO SECTION
-
-- **Padding:** `pt-32 pb-24` (accounts for fixed header)
-- **Background:** Full-bleed background image with `bg-background/85` overlay
-- **Decorative:** Two blurred circles (`w-80 h-80 bg-primary/10 rounded-full blur-3xl`) positioned top-right and bottom-left
-- **Badge/Pill:** `inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium` with icon
-- **H1:** `text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight`
-- **Highlight span:** `.text-gradient` — gradient text from orange to blue
-- **Subheadline:** `text-xl md:text-2xl text-muted-foreground font-medium`
-- **Body:** `text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto`
-- **CTA group:** `flex flex-col sm:flex-row gap-4 justify-center`
-  - Primary: `variant="hero" size="xl"` with arrow icon
-  - Secondary: `variant="heroOutline" size="xl"`
-- **Animation:** Staggered `animate-fade-up` with `delay-100` through `delay-400`
-
----
-
-### 5.3 COMPARISON SECTION (Fragmented vs Integrated)
-
-- **Background:** `bg-card/80 border-t border-primary/10`
-- **Overlay:** `bg-gradient-to-b from-card/50 to-transparent opacity-50`
-- **Decorative:** Two blurred circles (`w-96 h-96 bg-primary/5` and `bg-accent/5`)
-- **Header:** Centered, orange subtitle + bold H2
-- **Layout:** `grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto`
-- **Card style:** `bg-background/80 border border-ghl-icon rounded-2xl p-8`
-  - Hover: `shadow-[0_0_60px_rgba(255,127,80,0.3)]`
-- **"Our Solution" card:** `border-2 border-primary/30` + floating badge (`absolute -top-4 left-8 px-4 py-1 bg-primary text-primary-foreground rounded-full`)
-- **List items:** Icon + bold title + description pattern
-  - Negative: `XCircle` icon in `text-destructive/60`
-  - Positive: `CheckCircle2` icon in `text-primary`
-
----
-
-### 5.4 GROWTH STEPS SECTION (Digital Dominance Method)
-
-- **Background class:** `.section-dark` — triple-gradient: `hsl(210 50% 8%) → hsl(210 50% 12%) → hsl(210 50% 8%)`
-- **Header:** Orange subtitle + H2 with `.text-gradient` highlight
-- **Grid:** `md:grid-cols-2 lg:grid-cols-4 gap-6`
-- **Cards:** `bg-background/80 border border-ghl-icon rounded-xl p-6 text-center space-y-4`
-  - Hover: `shadow-[0_0_60px_rgba(255,127,80,0.5)]`
-  - Icon container: `w-16 h-16 mx-auto rounded-2xl bg-primary/10` with `text-primary` icon
-  - Title: `font-display font-semibold text-foreground text-lg`
-  - Description: `text-sm text-muted-foreground`
-- **Below cards:** Italic testimonial quote + hero CTA button
-
----
-
-### 5.5 SERVICES GRID SECTION
-
-- **Background:** `bg-card/80 border-t border-primary/10` with gradient overlay
-- **Header:** Orange subtitle + H2 with `.text-gradient` span
-- **Grid:** `md:grid-cols-2 lg:grid-cols-3 gap-8`
-- **Card style (Teal variant):**
-  - Border: `2px solid #17a2b8`
-  - Background: `#2d465c`
-  - Hover: `shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]`
-  - `backdrop-blur-sm rounded-2xl p-6 space-y-4`
-- **Icon container:** `w-12 h-12 rounded-xl bg-ghl-icon/20` with `text-ghl-icon` icon
-- **Feature list:** `CheckCircle2` icon in `text-ghl-icon` + `text-sm text-muted-foreground`
-- **Button:** `variant="outline"` with `border-ghl-icon/50 hover:bg-ghl-icon/10 hover:border-ghl-icon`, full width
-- **"Coming Soon" badge:** `absolute -top-3 right-4 px-3 py-1 bg-muted text-muted-foreground text-xs rounded-full`
-
----
-
-### 5.6 CARD CTA (Mid-page Call-to-Action)
-
-- **Layout:** Full-width section with centered `max-w-5xl` card
-- **Card style:**
-  - Background: `hsl(215 40% 13%)`
-  - Border: `1px solid hsla(25, 90%, 55%, 0.5)`
-  - Shadow: `0 0 50px -10px hsla(25, 90%, 55%, 0.25)`
-  - `rounded-2xl p-8 md:p-12 lg:p-14`
-- **Layout inside:** `flex flex-col md:flex-row items-center gap-10 md:gap-14`
-- **Left:** Photo with gray gradient ring (`w-36 h-36 md:w-40 md:h-40 rounded-full`) + name/role below
-- **Right:** H2 title (can have gradient accent words) + description + two buttons
-  - Primary button: Gradient `orange → gold → blue`, fully rounded, strong shadow
-  - Secondary button: Outline with phone icon, fully rounded
-
----
-
-### 5.7 WHY CHOOSE SECTION
-
-- **Background:** `bg-card/80 border-t border-primary/10`
-- **Has light variant** with `bg-stone-50/stone-100` for alternate pages
-- **Header:** Orange subtitle + bold H2 + description paragraph
-- **Grid:** `md:grid-cols-2 lg:grid-cols-3 gap-6`
-- **Cards:** `rounded-xl p-6 space-y-4 bg-background/80 border border-ghl-icon`
-  - Hover: `shadow-[0_0_60px_rgba(255,127,80,0.5)]`
-  - Icon container: `w-12 h-12 rounded-xl bg-primary/10`
-  - Title: `font-display font-semibold text-foreground`
-  - Description: `text-sm leading-relaxed text-muted-foreground`
-
----
-
-### 5.8 ANIMATED STATS SECTION
-
-- **Background:** Triple-gradient: `hsl(210 50% 8%) → hsl(210 45% 14%) → hsl(210 50% 8%)`
-- **Decorative:** Two blurred circles at top-left and bottom-right
-- **Padding:** `py-20`
-- **Grid:** `grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12`
-- **Animation:** Intersection Observer triggers count-up animation on scroll (2s duration, ease-out-quart easing)
-- **Default variant (with icons):**
-  - Icon container: `w-14 h-14 rounded-xl bg-[#FC8253]/15 border border-[#FC8253]/30`
-  - Hover glow: `shadow-[0_0_25px_rgba(252,130,83,0.4)] bg-[#FC8253]/25`
-  - Stat value: `text-4xl md:text-5xl font-display font-bold` in `#FC8253`
-  - Label: `text-sm text-slate-400 font-medium`
-- **Card variant:** `bg-background/80 border border-ghl-icon rounded-2xl p-6 text-center`, hover orange glow
-
----
-
-### 5.9 TESTIMONIALS SECTION
-
-- **Background:** Gradient: `hsl(210 45% 16%) → hsl(210 50% 12%) → hsl(210 45% 16%)`
-- **Has light variant** with warm stone tones for alternate pages
-- **Decorative:** Two offset blurred circles
-- **Header:** "Testimonials" label in primary + bold H2
-- **Grid:** `md:grid-cols-2 lg:grid-cols-3 gap-8`
-- **Card style (Teal):** `border: 2px solid #17a2b8`, bg `#2d465c`, `backdrop-blur-sm rounded-2xl p-8 space-y-6`
-  - Hover: `shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]`
-- **Content:** Star rating (filled primary stars) → quote text → author name + role/company
-
----
-
-### 5.10 CASE STUDY SECTION
-
-- **Background:** Default with `.section-glow` overlay (radial gradient)
-- **Grid:** `lg:grid-cols-2 gap-8 max-w-6xl mx-auto`
-- **Card structure:**
-  - Header bar: `.bg-gradient-primary` (orange→blue gradient) with company name, location, industry, timeframe
-  - Challenge section: `p-6 border-b border-border`
-  - Metrics section: `p-6 bg-muted/30`
-    - Before/after with `TrendingDown` (destructive) → `ArrowRight` → `TrendingUp` (primary)
-    - Improvement badge: `text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded-full`
-  - Optional quote section
-- **CTA button below:** `variant="hero" size="lg"`
-
----
-
-### 5.11 BLOG SECTION
-
-- **Background:** Default with `.section-glow` overlay
-- **Grid:** `md:grid-cols-2 lg:grid-cols-3 gap-8`
-- **Card:** `bg-card border border-border rounded-2xl overflow-hidden .card-hover group`
-  - Image area: `h-48 bg-gradient-to-br from-primary/20 via-accent/10 to-primary/5`
-  - Category badge: `px-3 py-1 bg-primary/90 text-primary-foreground text-xs rounded-full` (top-left)
-  - Content: `p-6 space-y-4`
-  - Title: `text-xl font-display font-semibold`, group-hover → `text-primary`
-  - Meta row: Author + Date + Read time with small icons
-  - "Read More" link with animated arrow on hover
-
----
-
-### 5.12 FAQ SECTION
-
-- **Background:** Triple-gradient same as stats section
-- **Layout:** 2-column with CTA sidebar (`grid-cols-1 lg:grid-cols-3`) or full-width if no CTA
-- **Accordion items:**
-  - Container: `bg-black border rounded-xl px-6` with `borderColor: #ff7f50`
-  - Hover & open: `shadow-[0_0_60px_rgba(255,127,80,0.5)]`
-  - Trigger: `text-foreground hover:text-primary font-medium py-5 hover:no-underline`
-  - Content: `text-muted-foreground pb-5 leading-relaxed`
-- **Contact CTA sidebar (sticky):**
-  - `sticky top-24 p-8 rounded-2xl border-2 border-primary/60 bg-card/30 backdrop-blur-sm`
-  - Avatar with gradient border ring
-  - CTA button: gradient `from-[hsl(199_89%_48%)] to-primary`, fully rounded
-
----
-
-### 5.13 CONSULTATION FORM SECTION
-
-- **Outer background:** `#2d465c` (teal-navy)
-- **Form card:** `rounded-2xl border: 2px solid #17a2b8`, teal glow shadow
-- **Inner background:** `#191321` (deep purple-black)
-- **Title:** `text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight`
-  - Accent word: `text-accent` (coral)
-- **Labels:** `text-lg font-bold text-white`, required asterisks in `text-accent`
-- **Inputs:** `bg-white/10 border border-white/30 rounded-lg text-white placeholder:text-white/50`
-  - Focus: `ring-1 ring-primary border-primary`
-- **Submit button:** Full-width, `rounded-full bg-gradient-to-r from-primary to-accent`, `py-6 text-lg font-bold`
-
----
-
-### 5.14 FOOTER
-
-- **Background:** `bg-card border-t border-border`
-- **Layout:** `grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12`
-- **Logo block:** Gradient icon square + brand name
-- **Link columns:** `text-sm text-muted-foreground hover:text-primary`
-- **Bottom bar:** `border-t border-border`, copyright + Privacy/Terms links
-- **Padding:** `py-16` for content, `mt-12 pt-8` for bottom bar
-
----
-
-## 6. ANIMATION SYSTEM
-
-### Entry Animations
-
-| Class | Effect | Duration |
+| Size | Height | Use Case |
 |---|---|---|
-| `animate-fade-up` | Fade in + translate Y(30px→0) | 0.6s ease-out |
-| `animate-fade-in` | Opacity 0→1 | 0.8s ease-out |
-| `animate-slide-in-left` | Fade + translate X(-40px→0) | 0.6s ease-out |
-| `animate-slide-in-right` | Fade + translate X(40px→0) | 0.6s ease-out |
+| **Small** | 36px | Compact layouts, card footers |
+| **Default** | 40px | Most interface actions |
+| **Large** | 48px | Section CTAs, form submissions |
+| **Extra Large** | 56px | Hero section primary actions |
 
-### Stagger Delays
+### CTA Button Styling
 
-Use `delay-100` through `delay-600` (in 100ms increments) or inline `animationDelay` for list items (typically `index * 0.1s`).
-
-### Hover Animations
-
-| Effect | CSS |
-|---|---|
-| **Card lift** | `hover:-translate-y-2` or `hover:translateY(-8px)` |
-| **Orange glow** | `hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]` |
-| **Teal glow** | `hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]` |
-| **Scale up** | `hover:scale(1.05)` |
-| **Glow pulse** | `animate-glow-pulse` — 3s infinite box-shadow pulse |
-
-### Scroll-triggered
-
-- **Count-up stats:** IntersectionObserver at 0.3 threshold triggers 2s number animation with `ease-out-quart` easing
+The signature CTA button uses a three-color gradient (warm orange → gold → sky blue) with a fully rounded shape and a warm drop shadow. This button style is distinctive to the brand — use it consistently for primary conversion actions.
 
 ---
 
-## 7. CARD SYSTEM
+## 6. Card System
 
-### Card Variants
+Cards are the primary content container throughout the site. They create visual hierarchy and group related information.
 
-| Variant | Border | Background | Hover Effect |
-|---|---|---|---|
-| **Orange-bordered** | `border border-ghl-icon` (#FF7F50) | `bg-background/80` | Orange glow `60px` |
-| **Teal-bordered** | `2px solid #17a2b8` | `#2d465c` | Teal glow `30px + 60px` |
-| **Standard** | `border border-border` | `bg-card` | `border-primary/30` + subtle shadow |
-| **GlowCard** | `border-2 border-border/50` | `bg-card` | Primary glow + lift |
-| **Animated border** | Rotating conic-gradient (orange+teal) | `bg-card` | Teal glow + lift |
+### Card Styles
 
-### Card Padding
+| Style | Border | Background | Hover Effect | Use For |
+|---|---|---|---|---|
+| **Orange Card** | 1px Warm Orange border | Semi-transparent dark navy | Warm orange glow | Stats, growth steps, "why choose us" |
+| **Teal Card** | 2px Teal border | Steel blue (`#2D465C`) | Teal glow | Services, features, testimonials |
+| **Standard Card** | 1px subtle border | Card navy | Border brightens to orange | Blog posts, general content |
+| **Glow Card** | 2px subtle border | Card navy | Primary glow + slight lift | Premium/highlighted content |
 
-- Standard: `p-6` or `p-8`
-- Large CTA cards: `p-8 md:p-12 lg:p-14`
+### Card Design Rules
 
----
-
-## 8. ICON SYSTEM
-
-- **Library:** Lucide React
-- **Size in cards:** `w-6 h-6`
-- **Size in stat icons:** `w-6 h-6` (inside 14×14 container)
-- **Size in growth steps:** `w-8 h-8` (inside 16×16 container)
-- **Icon container patterns:**
-  - Small: `w-12 h-12 rounded-xl bg-primary/10` → icon in `text-primary`
-  - Large: `w-16 h-16 rounded-2xl bg-primary/10` → icon in `text-primary`
-  - GHL style: `w-12 h-12 rounded-xl bg-ghl-icon/20` → icon in `text-ghl-icon`
-  - Stat: `w-14 h-14 rounded-xl bg-[#FC8253]/15 border border-[#FC8253]/30`
+- Corners are always rounded (12–16px radius)
+- Internal padding: 24px standard, up to 56px for large CTA cards
+- Cards lift slightly on hover (move up 8px) with a colored glow
+- Content inside cards uses consistent vertical spacing (16–24px between elements)
+- Icon containers inside cards: rounded square, tinted background matching the card's accent color
 
 ---
 
-## 9. GRADIENT SYSTEM
+## 7. Page Layout & Spacing
 
-| Name | CSS | Usage |
-|---|---|---|
-| **Primary gradient** | `linear-gradient(135deg, primary 0%, hsl(199 89% 48%) 100%)` | Buttons, case study headers |
-| **Text gradient** | Same as above, applied via `bg-clip-text text-transparent` | Highlight words in headings |
-| **CTA button gradient** | `linear-gradient(90deg, hsl(25 90% 55%) → hsl(35 85% 60%) → hsl(199 80% 55%))` | Primary CTA buttons |
-| **Section dark gradient** | `linear-gradient(180deg, hsl(210 50% 8%) → 12% → 8%)` | Dark section backgrounds |
-| **Hero glow** | `radial-gradient(ellipse 80% 50%, primary/15, transparent)` | Subtle hero glow |
-| **Section glow** | `radial-gradient(ellipse 50% 30%, primary/8, transparent)` | Subtle section glow |
+### Layout Structure
 
----
+- **Maximum content width:** 1400px, centered on the page
+- **Horizontal padding:** 16px on all screen sizes
+- **Navigation:** Fixed at the top, 80px tall, with a blurred semi-transparent background
 
-## 10. SECTION HEADER PATTERN
-
-Every section follows a consistent header pattern:
-
-```
-Subtitle (text-primary font-medium mb-4)  ← Optional
-H2 Title (text-3xl md:text-4xl font-display font-bold text-foreground mb-6)
-  └── Optional gradient span for highlight words
-Description (text-muted-foreground max-w-2xl mx-auto)  ← Optional
-```
-
-Container: `max-w-4xl mx-auto text-center mb-16 animate-fade-up`
-
----
-
-## 11. SPACING & LAYOUT CONVENTIONS
+### Section Spacing
 
 | Element | Spacing |
 |---|---|
-| **Section vertical padding** | `py-24` or `py-24 lg:py-32` |
-| **Container** | `container mx-auto px-4` (centered, max 1400px, 16px horizontal padding) |
-| **Section header bottom margin** | `mb-16` |
-| **Card grid gap** | `gap-6` or `gap-8` |
-| **Inside card spacing** | `space-y-4` or `space-y-6` |
-| **List item spacing** | `space-y-2` to `space-y-4` |
+| **Between sections** | 96–128px vertical padding |
+| **Section header to content** | 64px |
+| **Between cards in a grid** | 24–32px |
+| **Inside cards** | 16–24px between elements |
 
----
+### Grid Patterns
 
-## 12. RESPONSIVE BREAKPOINTS
-
-| Breakpoint | Width | Common Usage |
+| Screen Size | Typical Columns | Examples |
 |---|---|---|
-| Default (mobile) | `<768px` | Single column, stacked layout |
-| `md` | `768px+` | 2-column grids, side-by-side CTAs |
-| `lg` | `1024px+` | 3-4 column grids, desktop nav visible |
-| `2xl` | `1400px` | Container max-width |
+| **Mobile** (under 768px) | 1 column, stacked | All grids collapse to single column |
+| **Tablet** (768px+) | 2 columns | Service cards, testimonials |
+| **Desktop** (1024px+) | 3–4 columns | Service grid, stats, blog posts |
 
 ---
 
-## 13. SEO PATTERNS
+## 8. Photography & Imagery
 
-- **Helmet:** `react-helmet` for per-page `<title>` and `<meta description>`
-- **JSON-LD:** FAQ schema auto-generated from FAQ data, LocalBusiness schema on homepage
-- **Heading hierarchy:** Single `<h1>` per page, `<h2>` for sections, `<h3>` for cards
-- **Semantic HTML:** `<section>`, `<article>` (blog), `<nav>`, `<header>`, `<footer>`
-- **Image alt text:** Descriptive alt on all `<img>` tags
+### Hero Images
+
+- Full-width background images with a dark navy overlay (85% opacity) to maintain text readability
+- Decorative blurred circles (large, tinted orange or teal, very low opacity) add depth without distraction
+
+### Headshot Photos
+
+- Circular crop with a gradient border ring (gray tones)
+- Used in CTA sections paired with a name and title
+- Standard size: 144–160px diameter
+
+### Alt Text
+
+Every image must have descriptive alt text that conveys its content and purpose for accessibility and SEO.
 
 ---
 
-## 14. HOMEPAGE SECTION ORDER
+## 9. Icons
 
-1. Header (fixed)
+- **Icon library:** Lucide (consistent line-weight, modern geometric style)
+- **Standard icon size:** 24px (inside cards and lists)
+- **Large icon size:** 32px (inside growth step and feature containers)
+- **Icon containers:** Rounded squares with a tinted background matching the section's accent color
+  - Orange-accent sections: Light orange tint background, coral orange icon
+  - Teal-accent sections: Light teal tint background, teal icon
+
+---
+
+## 10. Animation & Motion
+
+### Page Entry Animations
+
+| Effect | Description | Duration |
+|---|---|---|
+| **Fade Up** | Content fades in while sliding upward | 0.6 seconds |
+| **Fade In** | Simple opacity fade | 0.8 seconds |
+| **Slide In (Left/Right)** | Content slides in from the side | 0.6 seconds |
+
+- Entry animations are staggered — each item in a grid starts slightly after the previous one (100ms apart)
+- Animations trigger when content scrolls into view, not on page load
+
+### Hover Effects
+
+| Effect | Description |
+|---|---|
+| **Card Lift** | Card moves up 8px |
+| **Orange Glow** | Warm orange shadow appears around the card |
+| **Teal Glow** | Teal shadow appears (for teal-bordered cards) |
+| **Scale** | Element grows slightly (5%) |
+| **Glow Pulse** | Repeating glow animation for attention (3-second cycle) |
+
+### Data Animation
+
+- Statistics count up from zero when they scroll into view
+- Animation duration: 2 seconds with a smooth deceleration curve
+- Numbers display in Stat Orange with Montserrat Bold
+
+---
+
+## 11. Page Sections — Design Patterns
+
+Every page follows a consistent rhythm of sections. Here's how each type should look and feel:
+
+### Hero Section
+The hero is the first thing visitors see. It features a full-width background image, a gradient-text headline, a supporting subtitle, and one or two CTA buttons. A small badge/pill above the headline establishes the page topic. Staggered fade-up animations bring elements in sequentially.
+
+### Comparison Section
+A two-column layout that contrasts the "old way" vs. "our way." The preferred solution card has a highlighted border and a floating badge. Uses checkmarks (green/orange) for positives and X marks (red) for negatives.
+
+### Services Grid
+A 3-column grid of teal-bordered cards, each with an icon container, title, feature list with checkmarks, and an outline button. Cards glow teal on hover.
+
+### Stats Section
+A 4-column grid of animated numbers. Each stat has an icon in an orange-tinted container, a large animated number in Stat Orange, and a label. Numbers count up when scrolled into view.
+
+### Testimonials
+A 3-column grid of teal-bordered cards with star ratings, a quote, and an author attribution. Cards glow teal on hover.
+
+### Case Studies
+A 2-column grid of structured cards showing before/after metrics. Each card has a gradient header bar, challenge description, and metrics with improvement badges in orange.
+
+### FAQ Section
+An accordion layout with orange-bordered items that glow on hover and expand to reveal answers. Often paired with a sticky sidebar CTA featuring a headshot and contact button.
+
+### Mid-Page CTA
+A centered card with a headshot photo on the left and persuasive copy with gradient CTA buttons on the right. The card has a subtle orange border glow.
+
+### Consultation Form
+The final conversion section. Dark purple-black background inside a teal-bordered outer container. Bold uppercase headline with an accent-colored keyword. White text labels, translucent input fields, and a full-width gradient submit button.
+
+---
+
+## 12. Navigation
+
+### Desktop
+- Fixed header with logo left, navigation links center, and a CTA button (phone number) right
+- Dropdown menus appear on hover with a fade + slide animation
+- Semi-transparent background with blur effect for depth
+
+### Mobile
+- Hamburger menu icon replaces navigation links
+- Full-width dropdown panel with collapsible accordion sub-menus
+- Same CTA button prominence as desktop
+
+---
+
+## 13. Footer
+
+- Dark card-colored background with a top border
+- 4-column grid: Brand info, Services links, Industries links, and Company links
+- Links are in secondary text color and turn coral orange on hover
+- Bottom bar with copyright and legal links, separated by a border
+
+---
+
+## 14. SEO & Accessibility
+
+- Every page has a unique title and meta description
+- One H1 heading per page, followed by H2 for sections and H3 for cards
+- Structured data (JSON-LD) for FAQ and local business information
+- Semantic HTML elements: sections, articles, nav, header, footer
+- All images have descriptive alt text
+- Color contrast meets WCAG AA standards on all text
+
+---
+
+## 15. Homepage Section Order
+
+1. Navigation Header (fixed)
 2. Hero Section
-3. Comparison Section (Fragmented vs Integrated)
+3. Comparison (Fragmented vs. Integrated)
 4. Growth Steps (Digital Dominance Method)
 5. Services Grid
-6. Mid-page CardCTA
-7. Why Choose Section
+6. Mid-Page CTA
+7. Why Choose Us
 8. Animated Stats
 9. Testimonials
 10. Case Studies
-11. Blog Section
-12. FAQ Section
-13. Final CardCTA
+11. Blog Highlights
+12. FAQ
+13. Final CTA
 14. Consultation Form
 15. Footer
 
 ---
 
-## 15. REPLICATION CHECKLIST
+## 16. Brand Replication Checklist
 
-To replicate this design on a new project:
+To recreate this design system for a new project:
 
-- [ ] Install: `tailwindcss`, `tailwindcss-animate`, `class-variance-authority`, `lucide-react`, `@radix-ui/*`
-- [ ] Set up `index.css` with all HSL CSS variables listed above
-- [ ] Configure `tailwind.config.ts` with `fontFamily`, extended `colors` mapping to CSS vars, custom `keyframes` and `animation`
-- [ ] Import Poppins + Montserrat from Google Fonts
-- [ ] Create button component with `hero`, `heroOutline`, `outline`, `glow` variants
-- [ ] Build reusable section components: `SectionHeader`, `AnimatedStatsSection`, `FAQSection`, `TestimonialsSection`, `BlogSection`, `CaseStudySection`, `CardCTA`, `ConsultationFormSection`
-- [ ] Use dark-mode-first theming (all colors via CSS variables)
-- [ ] Apply staggered `animate-fade-up` on all card grids
-- [ ] Use teal-bordered cards for service/feature grids, orange-bordered for stat/step cards
-- [ ] Implement IntersectionObserver count-up for stat values
+- [ ] Set up the dark navy color palette with coral orange and teal accents
+- [ ] Import Montserrat (headings) and Poppins (body) from Google Fonts
+- [ ] Create button styles: hero gradient, outline, solid, and glow variants
+- [ ] Build the card system with orange-bordered and teal-bordered variants
+- [ ] Design section headers: optional subtitle in orange, bold H2, optional description
+- [ ] Implement hover effects: card lift, orange glow, and teal glow
+- [ ] Add scroll-triggered entry animations with staggered timing
+- [ ] Set up the stats count-up animation triggered by scroll
+- [ ] Use teal cards for services/features and orange cards for stats/steps
+- [ ] Ensure all text uses semantic color roles (primary, secondary, accent)
+- [ ] Maintain the section rhythm and spacing system
+- [ ] Test responsive behavior across mobile, tablet, and desktop
