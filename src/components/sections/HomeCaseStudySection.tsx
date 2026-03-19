@@ -119,10 +119,10 @@ export const HomeCaseStudySection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            Growth Results Across Home Service Campaigns
+            Real Results Across Home Service Campaigns
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            See how PPC and AI SEO work together to generate more calls, more leads, and stronger local visibility for home service businesses.
+            See how paid ads and AI SEO work together to generate more leads, improve local visibility, and lower acquisition costs.
           </p>
         </div>
 
