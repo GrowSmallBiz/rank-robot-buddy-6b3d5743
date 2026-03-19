@@ -59,15 +59,17 @@ export const CaseStudySection = ({
                   <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
                     Case Study
                   </span>
-                  <span className="text-xs text-primary-foreground/60">
-                    {study.timeframe}
-                  </span>
+                  {study.timeframe && (
+                    <span className="text-xs text-primary-foreground/60">
+                      {study.timeframe}
+                    </span>
+                  )}
                 </div>
                 <h3 className="text-xl font-display font-bold text-primary-foreground mb-1">
                   {study.company}
                 </h3>
                 <p className="text-sm text-primary-foreground/80">
-                  {study.location} • {study.industry}
+                  {[study.location, study.industry].filter(Boolean).join(" • ")}
                 </p>
               </div>
 
