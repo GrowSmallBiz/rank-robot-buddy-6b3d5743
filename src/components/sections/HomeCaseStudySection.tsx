@@ -27,8 +27,8 @@ interface CampaignCard {
 
 const campaigns: CampaignCard[] = [
   {
-    title: "HVAC Growth Campaign",
-    subtitle: "Home Service Business",
+    title: "HVAC Growth",
+    subtitle: "PPC + AI SEO Campaign",
     challenge: "Needed more qualified leads, lower acquisition costs, and stronger local visibility.",
     resultGroups: [
       {
@@ -42,21 +42,21 @@ const campaigns: CampaignCard[] = [
       {
         title: "AI SEO Impact",
         metrics: [
-          { label: "Phone Calls", value: "+1395.2%", isPositive: true },
+          { label: "Phone Calls", value: "+1395%", isPositive: true },
           { label: "GBP Website Actions", value: "+520%", isPositive: true },
           { label: "Search Impressions", value: "+91.47%", isPositive: true },
         ],
       },
     ],
     overallImpact: [
-      { text: "More qualified calls" },
-      { text: "Better local visibility" },
-      { text: "Lower cost per lead" },
+      { text: "More qualified inbound leads" },
+      { text: "Stronger local search visibility" },
+      { text: "Lower acquisition costs" },
     ],
   },
   {
-    title: "Roofing Growth Campaign",
-    subtitle: "Home Service Business",
+    title: "Roofing Growth",
+    subtitle: "PPC + AI SEO Campaign",
     challenge: "Needed stronger lead flow from paid ads and better organic visibility in a competitive home service market.",
     resultGroups: [
       {
@@ -77,14 +77,14 @@ const campaigns: CampaignCard[] = [
       },
     ],
     overallImpact: [
-      { text: "Higher lead volume" },
-      { text: "Better efficiency" },
-      { text: "Stronger search presence" },
+      { text: "Increased lead volume" },
+      { text: "Improved campaign efficiency" },
+      { text: "Better organic visibility" },
     ],
   },
   {
-    title: "Home Remodeling Growth Campaign",
-    subtitle: "Home Service Business",
+    title: "Home Remodeling Growth",
+    subtitle: "SEO + Lead Growth Campaign",
     challenge: "Needed better search visibility, more conversion actions, and stronger local market presence.",
     resultGroups: [
       {
@@ -105,8 +105,8 @@ const campaigns: CampaignCard[] = [
       },
     ],
     overallImpact: [
-      { text: "More inquiries" },
-      { text: "More website engagement" },
+      { text: "More qualified inquiries" },
+      { text: "Stronger organic engagement" },
       { text: "More conversion opportunities" },
     ],
   },
@@ -119,10 +119,10 @@ export const HomeCaseStudySection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            Growth Results Across Home Service Campaigns
+            Real Results Across Home Service Campaigns
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            See how PPC and AI SEO work together to generate more calls, more leads, and stronger local visibility for home service businesses.
+            See how paid ads and AI SEO work together to generate more leads, improve local visibility, and lower acquisition costs.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export const HomeCaseStudySection = () => {
               {/* Header */}
               <div className="bg-gradient-primary p-6">
                 <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
-                  Case Study
+                  Campaign Results
                 </span>
                 <h3 className="text-xl font-display font-bold text-primary-foreground mt-2 mb-1">
                   {campaign.title}
