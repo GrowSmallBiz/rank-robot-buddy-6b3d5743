@@ -10,7 +10,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-import { CaseStudySection } from "@/components/sections/CaseStudySection";
+import { HomeCaseStudySection } from "@/components/sections/HomeCaseStudySection";
 import heroImage from "@/assets/homepage-hero-bg.jpg";
 import { 
   ArrowRight, 
