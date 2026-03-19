@@ -59,17 +59,15 @@ export const CaseStudySection = ({
                   <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
                     Case Study
                   </span>
-                  {study.timeframe && (
-                    <span className="text-xs text-primary-foreground/60">
-                      {study.timeframe}
-                    </span>
-                  )}
+                  <span className="text-xs text-primary-foreground/60">
+                    {study.timeframe}
+                  </span>
                 </div>
                 <h3 className="text-xl font-display font-bold text-primary-foreground mb-1">
                   {study.company}
                 </h3>
                 <p className="text-sm text-primary-foreground/80">
-                  {[study.location, study.industry].filter(Boolean).join(" • ")}
+                  {study.location} • {study.industry}
                 </p>
               </div>
 
@@ -92,27 +90,17 @@ export const CaseStudySection = ({
                   {study.metrics.map((metric, mIndex) => (
                     <div key={mIndex} className="flex items-center justify-between">
                       <span className="text-sm text-muted-foreground">{metric.label}</span>
-                      <div className="flex items-center gap-3">
-                        {metric.before && metric.after ? (
-                          <>
-                            <div className="flex items-center gap-2">
-                              <TrendingDown className="w-4 h-4 text-destructive" />
-                              <span className="text-sm text-muted-foreground line-through">{metric.before}</span>
-                            </div>
-                            <ArrowRight className="w-4 h-4 text-muted-foreground" />
-                            <div className="flex items-center gap-2">
-                              <TrendingUp className="w-4 h-4 text-primary" />
-                              <span className="text-sm font-semibold text-foreground">{metric.after}</span>
-                            </div>
-                          </>
-                        ) : (
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-2">
+                          <TrendingDown className="w-4 h-4 text-destructive" />
+                          <span className="text-sm text-muted-foreground line-through">{metric.before}</span>
+                        </div>
+                        <ArrowRight className="w-4 h-4 text-muted-foreground" />
+                        <div className="flex items-center gap-2">
                           <TrendingUp className="w-4 h-4 text-primary" />
-                        )}
-                        <span className={`text-xs font-bold px-2 py-1 rounded-full ${
-                          metric.improvement.startsWith("-") 
-                            ? "text-emerald-400 bg-emerald-400/10" 
-                            : "text-primary bg-primary/10"
-                        }`}>
+                          <span className="text-sm font-semibold text-foreground">{metric.after}</span>
+                        </div>
+                        <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded-full">
                           {metric.improvement}
                         </span>
                       </div>
