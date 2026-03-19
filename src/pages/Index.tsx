@@ -546,49 +546,9 @@ const Index = () => {
       {/* Testimonials */}
       <TestimonialsSection />
 
+
       {/* Case Studies */}
-      <CaseStudySection
-        caseStudies={[
-          {
-            company: "Premier Dental Group",
-            location: "San Jose, CA",
-            industry: "Dental Practice",
-            challenge: "Struggling to attract new patients despite quality service and experienced staff.",
-            timeframe: "6 months",
-            metrics: [
-              { label: "New Patients/Month", before: "12", after: "67", improvement: "+458%" },
-              { label: "Google Rankings", before: "Page 3", after: "Top 3", improvement: "Top 3" },
-              { label: "Monthly Revenue", before: "$45K", after: "$128K", improvement: "+184%" },
-            ],
-          },
-          {
-            company: "Comfort Pro HVAC",
-            location: "Oakland, CA",
-            industry: "HVAC Services",
-            challenge: "Losing leads to larger competitors with bigger marketing budgets.",
-            timeframe: "4 months",
-            metrics: [
-              { label: "Service Calls", before: "45/mo", after: "120/mo", improvement: "+167%" },
-              { label: "Cost Per Lead", before: "$85", after: "$32", improvement: "-62%" },
-              { label: "Annual Revenue", before: "$480K", after: "$1.2M", improvement: "+150%" },
-            ],
-          },
-          {
-            company: "Radiance Med Spa",
-            location: "Palo Alto, CA",
-            industry: "Medical Spa",
-            challenge: "Website was not converting visitors and brand lacked premium positioning.",
-            timeframe: "5 months",
-            metrics: [
-              { label: "Consultation Requests", before: "25/mo", after: "85/mo", improvement: "+240%" },
-              { label: "Avg. Treatment Value", before: "$320", after: "$580", improvement: "+81%" },
-              { label: "Monthly Revenue", before: "$52K", after: "$145K", improvement: "+179%" },
-            ],
-          },
-        ]}
-        title="Client Success Stories"
-        subtitle="See how we help local businesses dominate their markets"
-      />
+      <HomeCaseStudySection />
 
       {/* Blog Section */}
       <BlogSection 
