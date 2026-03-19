@@ -135,7 +135,7 @@ export const HomeCaseStudySection = () => {
               {/* Header */}
               <div className="bg-gradient-primary p-6">
                 <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
-                  Case Study
+                  Campaign Results
                 </span>
                 <h3 className="text-xl font-display font-bold text-primary-foreground mt-2 mb-1">
                   {campaign.title}
