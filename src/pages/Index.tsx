@@ -550,44 +550,48 @@ const Index = () => {
       <CaseStudySection
         caseStudies={[
           {
-            company: "Premier Dental Group",
-            location: "San Jose, CA",
-            industry: "Dental Practice",
-            challenge: "Struggling to attract new patients despite quality service and experienced staff.",
-            timeframe: "6 months",
+            company: "HVAC Google Ads Campaign",
+            location: "",
+            industry: "Home Service Business",
+            challenge: "Needed more qualified leads from Google Ads while reducing wasted spend and improving conversion efficiency.",
+            timeframe: "",
             metrics: [
-              { label: "New Patients/Month", before: "12", after: "67", improvement: "+458%" },
-              { label: "Google Rankings", before: "Page 3", after: "Top 3", improvement: "Top 3" },
-              { label: "Monthly Revenue", before: "$45K", after: "$128K", improvement: "+184%" },
+              { label: "Click-Through Rate", before: "", after: "", improvement: "+50.23%" },
+              { label: "Conversions", before: "", after: "", improvement: "+83%" },
+              { label: "Conversion Rate", before: "", after: "", improvement: "+56.3%" },
+              { label: "Cost Per Acquisition", before: "", after: "", improvement: "-41%" },
             ],
           },
           {
-            company: "Comfort Pro HVAC",
-            location: "Oakland, CA",
-            industry: "HVAC Services",
-            challenge: "Losing leads to larger competitors with bigger marketing budgets.",
-            timeframe: "4 months",
+            company: "Roofing PPC + SEO Growth",
+            location: "",
+            industry: "Home Service Business",
+            challenge: "Needed stronger lead flow from both paid ads and local organic visibility in a highly competitive market.",
+            timeframe: "",
             metrics: [
-              { label: "Service Calls", before: "45/mo", after: "120/mo", improvement: "+167%" },
-              { label: "Cost Per Lead", before: "$85", after: "$32", improvement: "-62%" },
-              { label: "Annual Revenue", before: "$480K", after: "$1.2M", improvement: "+150%" },
+              { label: "Conversions", before: "", after: "", improvement: "+93.3%" },
+              { label: "Cost Per Conversion", before: "", after: "", improvement: "-48.9%" },
+              { label: "Organic Conversions", before: "", after: "", improvement: "+26%" },
+              { label: "Google Business Profile Views", before: "", after: "", improvement: "+127%" },
             ],
           },
           {
-            company: "Radiance Med Spa",
-            location: "Palo Alto, CA",
-            industry: "Medical Spa",
-            challenge: "Website was not converting visitors and brand lacked premium positioning.",
-            timeframe: "5 months",
+            company: "Home Remodeling SEO Campaign",
+            location: "",
+            industry: "Home Renovation Business",
+            challenge: "Needed stronger search visibility, more website engagement, and more conversion actions from organic traffic.",
+            timeframe: "",
             metrics: [
-              { label: "Consultation Requests", before: "25/mo", after: "85/mo", improvement: "+240%" },
-              { label: "Avg. Treatment Value", before: "$320", after: "$580", improvement: "+81%" },
-              { label: "Monthly Revenue", before: "$52K", after: "$145K", improvement: "+179%" },
+              { label: "Goal Completions", before: "", after: "", improvement: "+366.67%" },
+              { label: "Organic Goal Completions", before: "", after: "", improvement: "+125%" },
+              { label: "Website Clicks", before: "", after: "", improvement: "+382.11%" },
+              { label: "Tracked Phone Calls", before: "", after: "", improvement: "+88.89%" },
             ],
           },
         ]}
-        title="Client Success Stories"
-        subtitle="See how we help local businesses dominate their markets"
+        title="Results for Home Service Businesses"
+        subtitle="See how strategic PPC and AI SEO campaigns can drive more calls, more leads, and better marketing efficiency."
+        ctaText="See How We Can Grow Your Business"
       />
 
       {/* Blog Section */}
