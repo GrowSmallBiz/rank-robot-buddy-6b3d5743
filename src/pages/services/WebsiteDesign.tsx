@@ -33,6 +33,7 @@ import {
   Scale,
   Building,
   CheckCircle2,
+  Clock,
 } from "lucide-react";
 
 const CTA_URL =
@@ -292,19 +293,46 @@ const WebsiteDesign = () => {
       {/* Hero extended body copy */}
       <section className="py-16 lg:py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
-            <p>
-              When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else.
-            </p>
-            <p>
-              Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them.
-            </p>
-            <p>
-              At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you.
-            </p>
-            <p>
-              But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call.
-            </p>
+          <div className="max-w-5xl mx-auto">
+            {/* Lead statement */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 animate-fade-up">
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
+                    <Clock className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else.
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
+                    <TrendingUp className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them.
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
+                    <Wrench className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you.
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
+                    <Layers className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -319,28 +347,41 @@ const WebsiteDesign = () => {
             description="There's a difference between a website that looks good and a website that works. Most local businesses have the first kind."
           />
 
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
-            <p>
-              Here's how most local business websites get built: a developer creates something visually clean, the owner approves it, and it goes live. Nobody asks whether the page structure guides visitors toward a decision. Nobody asks whether trust is being established quickly enough — or whether a prospect on a mobile phone at 9pm can find a phone number in under three seconds.
-            </p>
-            <p>
-              The result is a site that sits there — looking fine, doing nothing.
-            </p>
-            <p>
-              This is not a minor issue. Every visitor who lands on your site and leaves without contacting you is a missed opportunity. And when you're running Google Ads, investing in SEO, or counting on referrals to drive traffic, a website that doesn't convert is quietly draining every dollar you spend on marketing.
-            </p>
-            <p className="font-medium text-foreground">Here's what a non-converting website typically looks like:</p>
-            <ul className="space-y-3">
-              {problemBullets.map((bullet, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <AlertTriangle className="h-5 w-5 text-primary mt-1 shrink-0" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-            <p>
-              A website that doesn't convert isn't a neutral investment. It's an active liability — costing you leads, bookings, and revenue every day it stays the way it is. And it's undermining every other marketing channel you're running at the same time.
-            </p>
+          <div className="max-w-5xl mx-auto animate-fade-up">
+            {/* Two-column narrative */}
+            <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 mb-12">
+              <div className="lg:col-span-3 space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  Here's how most local business websites get built: a developer creates something visually clean, the owner approves it, and it goes live. Nobody asks whether the page structure guides visitors toward a decision. Nobody asks whether trust is being established quickly enough — or whether a prospect on a mobile phone at 9pm can find a phone number in under three seconds.
+                </p>
+                <p>
+                  The result is a site that sits there — looking fine, doing nothing.
+                </p>
+                <p>
+                  This is not a minor issue. Every visitor who lands on your site and leaves without contacting you is a missed opportunity. And when you're running Google Ads, investing in SEO, or counting on referrals to drive traffic, a website that doesn't convert is quietly draining every dollar you spend on marketing.
+                </p>
+              </div>
+              <div className="lg:col-span-2">
+                <div className="rounded-2xl border-2 border-destructive/30 bg-destructive/5 p-6 lg:p-8 h-full">
+                  <p className="font-semibold text-foreground mb-4 text-lg">Here's what a non-converting website typically looks like:</p>
+                  <ul className="space-y-3">
+                    {problemBullets.map((bullet, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <AlertTriangle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                        <span className="text-muted-foreground text-sm leading-relaxed">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Closing callout */}
+            <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 lg:p-8 text-center">
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
+                A website that doesn't convert isn't a neutral investment. It's an active liability — costing you leads, bookings, and revenue every day it stays the way it is. And it's undermining every other marketing channel you're running at the same time.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -355,35 +396,73 @@ const WebsiteDesign = () => {
             description="Every site we deliver is purpose-built around one question: what do you need a visitor to do — and what does it take to make that easy? The answer to that question shapes your website. And your website shapes everything else."
           />
 
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
-            <p>
-              Before we touch a design or write a line of copy, we do strategy. We look at your business, your market, your ideal customer, and the specific action you need your website to drive — whether that's a phone call, a form submission, a booking, or a quote request. Every decision after that is made in service of that outcome.
-            </p>
-            <p>
-              That means your website isn't built around what looks attractive to a designer. It's built around what moves a real person — someone who found you on Google or clicked your ad — to trust you quickly, understand your value clearly, and take the next step without friction.
-            </p>
-            <p>
-              In practice, that looks like this: your homepage communicates exactly what you do and who you serve within seconds of arrival. Your services are described in terms of outcomes, not just tasks. Your credibility is established through proof — real reviews, verifiable credentials, and specifics that matter to a buyer in your market. Your calls to action are clear, well-placed, and written to reduce hesitation. And your site performs just as well on a phone as it does on a desktop.
-            </p>
-            <p>
-              Your website is also built from day one to integrate with the rest of your marketing — connecting to your CRM, booking system, and tracking tools. It's the conversion hub of the Digital Dominance Method, designed to work alongside your SEO, paid advertising, and lead generation efforts — not as a standalone project handed off and forgotten.
-            </p>
-          </div>
+          <div className="max-w-5xl mx-auto animate-fade-up">
+            {/* Staggered two-column narrative */}
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2.5 rounded-lg bg-primary/10">
+                    <Search className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">Strategy First</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Before we touch a design or write a line of copy, we do strategy. We look at your business, your market, your ideal customer, and the specific action you need your website to drive — whether that's a phone call, a form submission, a booking, or a quote request. Every decision after that is made in service of that outcome.
+                </p>
+              </GlowCard>
 
-          {/* Callout boxes */}
-          <div className="max-w-4xl mx-auto mt-12 space-y-8">
-            <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up">
-              <h3 className="text-xl font-bold text-foreground mb-4">A note on how we work:</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                GrowSmallBiz builds websites as part of a broader digital growth engagement. We don't take on design-only or website-only projects. The reason is straightforward: a high-converting website, built in isolation from your SEO strategy, your paid traffic, and your lead generation infrastructure, is a foundation with nothing built on top of it. Our clients get the website and the growth system it's designed to support. If you're looking for that kind of partnership — not just a new site — the strategy call is the right place to start.
-              </p>
+              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2.5 rounded-lg bg-primary/10">
+                    <MousePointerClick className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">Built for Real People</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  That means your website isn't built around what looks attractive to a designer. It's built around what moves a real person — someone who found you on Google or clicked your ad — to trust you quickly, understand your value clearly, and take the next step without friction.
+                </p>
+              </GlowCard>
+
+              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2.5 rounded-lg bg-primary/10">
+                    <CheckCircle2 className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">Clarity at Every Level</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  In practice, that looks like this: your homepage communicates exactly what you do and who you serve within seconds of arrival. Your services are described in terms of outcomes, not just tasks. Your credibility is established through proof — real reviews, verifiable credentials, and specifics that matter to a buyer in your market. Your calls to action are clear, well-placed, and written to reduce hesitation. And your site performs just as well on a phone as it does on a desktop.
+                </p>
+              </GlowCard>
+
+              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2.5 rounded-lg bg-primary/10">
+                    <Link2 className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">Connected From Day One</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Your website is also built from day one to integrate with the rest of your marketing — connecting to your CRM, booking system, and tracking tools. It's the conversion hub of the Digital Dominance Method, designed to work alongside your SEO, paid advertising, and lead generation efforts — not as a standalone project handed off and forgotten.
+                </p>
+              </GlowCard>
             </div>
 
-            <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              <h3 className="text-xl font-bold text-foreground mb-4">Why GrowSmallBiz:</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Most web design agencies hand you a finished site and move on. GrowSmallBiz works exclusively with local service businesses — which means we're not learning your industry on your dime. We know what makes a roofing lead different from a med spa inquiry. We know what trust signals matter to a patient choosing a specialist versus a homeowner vetting a contractor. That specificity is what separates a website that looks right from one that actually performs — and it's built into every engagement we take on.
-              </p>
+            {/* Callout boxes */}
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up">
+                <h3 className="text-xl font-bold text-foreground mb-4">A note on how we work:</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  GrowSmallBiz builds websites as part of a broader digital growth engagement. We don't take on design-only or website-only projects. The reason is straightforward: a high-converting website, built in isolation from your SEO strategy, your paid traffic, and your lead generation infrastructure, is a foundation with nothing built on top of it. Our clients get the website and the growth system it's designed to support. If you're looking for that kind of partnership — not just a new site — the strategy call is the right place to start.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                <h3 className="text-xl font-bold text-foreground mb-4">Why GrowSmallBiz:</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Most web design agencies hand you a finished site and move on. GrowSmallBiz works exclusively with local service businesses — which means we're not learning your industry on your dime. We know what makes a roofing lead different from a med spa inquiry. We know what trust signals matter to a patient choosing a specialist versus a homeowner vetting a contractor. That specificity is what separates a website that looks right from one that actually performs — and it's built into every engagement we take on.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -436,25 +515,40 @@ const WebsiteDesign = () => {
             description="Google Ads, SEO, referrals, social media — however a prospect finds you, what happens when they arrive on your website determines whether they become a customer."
           />
 
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
-            <p>
-              Think through the path a new customer takes before they contact you. Maybe they searched for a service in your area and found you on Google. Maybe a neighbor mentioned your name. Maybe they clicked your ad. In almost every case, the next thing they do is visit your website. That visit is the moment. And it's almost entirely within your control.
-            </p>
-            <p>
-              If your site communicates clearly — here's who we are, here's what we do, here's why we're the right choice, here's how to reach us — a meaningful percentage of those visitors will contact you. If it doesn't, they'll hesitate. And hesitation almost always ends the same way: a closed tab and a competitor's number getting dialed instead.
-            </p>
-            <p>
-              This is why your website isn't just one marketing asset among many — it's the conversion layer that your entire growth strategy runs through. Every channel feeds it. Every dollar you spend on visibility, traffic, and reach either pays off or gets wasted based on what happens when a prospect arrives.
-            </p>
-            <p>
-              A strong website makes your Google Ads more profitable — because the traffic you're paying for actually converts. It makes your SEO investment produce real leads instead of just rankings. It makes your referrals close faster, because the prospect arrives informed and leaves ready to book. It gives your social media a destination worth sending people to.
-            </p>
-            <p>
-              A weak website does the opposite to all of it. It doesn't just underperform on its own — it degrades every other marketing investment you're making at the same time.
-            </p>
-            <p>
-              This is why, at GrowSmallBiz, the website is always the first piece of the conversation — and why we build it as the foundation of a full growth system, not as a standalone deliverable. When the hub is strong, everything connected to it performs better.
-            </p>
+          <div className="max-w-5xl mx-auto animate-fade-up">
+            {/* Opening narrative — two-column */}
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  Think through the path a new customer takes before they contact you. Maybe they searched for a service in your area and found you on Google. Maybe a neighbor mentioned your name. Maybe they clicked your ad. In almost every case, the next thing they do is visit your website. That visit is the moment. And it's almost entirely within your control.
+                </p>
+                <p>
+                  If your site communicates clearly — here's who we are, here's what we do, here's why we're the right choice, here's how to reach us — a meaningful percentage of those visitors will contact you. If it doesn't, they'll hesitate. And hesitation almost always ends the same way: a closed tab and a competitor's number getting dialed instead.
+                </p>
+              </div>
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  This is why your website isn't just one marketing asset among many — it's the conversion layer that your entire growth strategy runs through. Every channel feeds it. Every dollar you spend on visibility, traffic, and reach either pays off or gets wasted based on what happens when a prospect arrives.
+                </p>
+                <p>
+                  A strong website makes your Google Ads more profitable — because the traffic you're paying for actually converts. It makes your SEO investment produce real leads instead of just rankings. It makes your referrals close faster, because the prospect arrives informed and leaves ready to book. It gives your social media a destination worth sending people to.
+                </p>
+              </div>
+            </div>
+
+            {/* Contrast callouts */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="rounded-2xl border border-destructive/20 bg-destructive/5 p-6 lg:p-8">
+                <p className="text-muted-foreground leading-relaxed">
+                  A weak website does the opposite to all of it. It doesn't just underperform on its own — it degrades every other marketing investment you're making at the same time.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 lg:p-8">
+                <p className="text-muted-foreground leading-relaxed">
+                  This is why, at GrowSmallBiz, the website is always the first piece of the conversation — and why we build it as the foundation of a full growth system, not as a standalone deliverable. When the hub is strong, everything connected to it performs better.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -587,15 +681,23 @@ const WebsiteDesign = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <p>That's what the free growth strategy call is for.</p>
-            <p>
-              In 30 minutes, we'll look at your current website, identify the specific gaps that are costing you leads, and walk you through what a conversion-focused rebuild would look like for your business. We'll also look at the bigger picture: how your website connects to your SEO, your paid traffic, and your lead generation system — and where the highest-leverage opportunities are in your specific market.
-            </p>
-            <p>
-              This isn't a website consultation. It's a growth strategy conversation. The website is almost always where it starts — because without a strong conversion foundation, nothing else performs the way it should. But the call covers the full picture: website, AI SEO, paid search, conversion strategy, and what a complete digital growth system looks like for a business like yours.
-            </p>
-            <p>No pitch deck. No pressure. No obligation. Just clarity on where you are, where you could be, and what it would take to get there.</p>
+          <div className="max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+              <div className="space-y-6">
+                <p className="text-xl font-semibold text-foreground">That's what the free growth strategy call is for.</p>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  In 30 minutes, we'll look at your current website, identify the specific gaps that are costing you leads, and walk you through what a conversion-focused rebuild would look like for your business. We'll also look at the bigger picture: how your website connects to your SEO, your paid traffic, and your lead generation system — and where the highest-leverage opportunities are in your specific market.
+                </p>
+              </div>
+              <div className="space-y-6">
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  This isn't a website consultation. It's a growth strategy conversation. The website is almost always where it starts — because without a strong conversion foundation, nothing else performs the way it should. But the call covers the full picture: website, AI SEO, paid search, conversion strategy, and what a complete digital growth system looks like for a business like yours.
+                </p>
+                <p className="text-lg font-medium text-foreground border-l-4 border-primary pl-4">
+                  No pitch deck. No pressure. No obligation. Just clarity on where you are, where you could be, and what it would take to get there.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-up" style={{ animationDelay: "0.2s" }}>
