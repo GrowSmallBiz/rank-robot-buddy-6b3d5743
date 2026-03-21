@@ -194,7 +194,7 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "GrowSmallBiz Digital Marketing",
-            "url": "https://grow-small-biz.org",
+            "url": "https://growsmallbiz.work",
             "telephone": "+1-925-886-3724",
             "description": "AI-powered SEO and digital marketing agency specializing in local service businesses.",
             "priceRange": "$$",
