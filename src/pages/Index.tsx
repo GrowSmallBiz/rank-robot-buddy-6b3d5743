@@ -373,7 +373,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg" className="animate-fade-up">
-                Schedule My Digital Growth Strategy Session
+                Schedule Strategy Call
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </a>
