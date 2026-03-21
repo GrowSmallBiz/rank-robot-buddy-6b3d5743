@@ -1,468 +1,251 @@
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
-import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
-import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { CardCTA, FloatingCTA } from "@/components/services";
-import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { ServiceHero } from "@/components/services/ServiceHero";
+import { SectionHeader } from "@/components/services/SectionHeader";
+import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { GlowCard } from "@/components/ui/glow-card";
 import {
   ArrowRight,
-  CheckCircle2,
-  Smartphone,
-  Search,
-  Users,
-  BarChart3,
-  Shield,
-  Clock,
-  Star,
   Globe,
+  AlertTriangle,
+  Wrench,
+  Smartphone,
   Zap,
-  Target,
-  Award,
-  TrendingUp,
-  MapPin,
-  FileText,
-  Settings,
-  Rocket,
-  RefreshCw,
-  Eye,
+  MessageSquare,
   Layout,
-  Code,
+  Shield,
+  MousePointerClick,
+  Search,
+  Link2,
+  TrendingUp,
+  Eye,
+  BarChart3,
   Layers,
+  Home,
+  Heart,
+  Sparkles,
+  Scale,
+  Building,
+  CheckCircle2,
 } from "lucide-react";
-import websiteHeroBg from "@/assets/websites-hero.jpg";
-import caseStudyDental from "@/assets/case-study-dental.jpg";
-import caseStudyHvac from "@/assets/case-study-hvac.jpg";
-import caseStudyMedspa from "@/assets/case-study-medspa.jpg";
-import portfolioDental from "@/assets/portfolio-dental-website.jpg";
-import portfolioHvac from "@/assets/portfolio-hvac-website.jpg";
-import portfolioMedspa from "@/assets/portfolio-medspa-website.jpg";
-import portfolioLaw from "@/assets/portfolio-law-website.jpg";
-import portfolioChiro from "@/assets/portfolio-chiro-website.jpg";
-import portfolioRemodeling from "@/assets/portfolio-remodeling-website.jpg";
 
-const websiteStats = [
-  { value: "2s", label: "Avg. Load Time", icon: Zap },
-  { value: "3x", label: "More Conversions", icon: TrendingUp },
-  { value: "100%", label: "Mobile Responsive", icon: Smartphone },
-  { value: "1-2", label: "Weeks to Launch", icon: Clock },
-];
+const CTA_URL =
+  "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=web-design&utm_campaign=strategy-session";
 
-// FAQs from source
 const faqs = [
   {
-    question: "How long does it take to complete a website project?",
+    question: "Do you offer standalone website projects?",
     answer:
-      "Our typical timeline is 1-2 weeks for starter template websites and 6-8 weeks for premium authority websites. This includes discovery, design, development, content creation, and testing phases. Complex integrations or extensive content requirements may extend the timeline, which we'll discuss upfront during your consultation.",
+      "No. GrowSmallBiz builds websites as part of a broader digital growth engagement. That may include website strategy, AI SEO, paid search, conversion optimization, and lead capture systems. We do not take on design-only or website-only projects.",
   },
   {
-    question: "Do you provide the content, or do I need to write it myself?",
+    question: "What happens on the free growth strategy call?",
     answer:
-      "We handle all content creation as part of our service. Our copywriting specialists will craft compelling, SEO-optimized content that resonates with your target audience. We'll need you to provide basic information about your services, team, and any specific messaging preferences, but we do the heavy lifting of writing conversion-focused content.",
+      "We review your current website, look at where leads may be leaking, and talk through how your site, SEO, paid traffic, and conversion strategy work together. The goal is clarity, not pressure.",
   },
   {
-    question: "What happens if I need changes after the website launches?",
+    question: "Can you redesign my current website instead of building a new one?",
     answer:
-      "For authority websites (up to 25 pages), the project includes up to 3 rounds of edits (up to 4 hours) to the development site before launch. We include one round of minor revisions within 30 days of launch at no additional cost. For ongoing updates and maintenance, monthly maintenance packages are included in your monthly fee, which includes content updates, security monitoring, performance optimization, and technical support.",
+      "Sometimes, yes. If the current platform and structure are workable, a strategic redesign may be the right move. If the foundation is too limited, a rebuild is often the smarter long-term decision.",
   },
   {
-    question: "Will my website work on mobile devices?",
+    question: "Is SEO included when you build a website?",
     answer:
-      "Absolutely! Every website we create is fully responsive and mobile-optimized. With over 60% of searches happening on mobile devices, we design with a mobile-first approach to ensure your site looks and functions perfectly on smartphones, tablets, and desktops.",
+      "Every website includes SEO-ready architecture and technical best practices. Full SEO execution is handled as part of the broader growth engagement, not as a disconnected add-on.",
   },
   {
-    question: "How do you handle SEO and local search optimization?",
+    question: "How is this different from hiring a typical web design agency?",
     answer:
-      "Local SEO foundation is built into every website we create. Website SEO optimization includes optimized page structure, SEO optimized titles, meta tags, internal page linking, location-based schema markup, sitemap submission, conversion rate optimization, local keywords, NAP (Name, Address, Phone) consistency, Google Analytics setup, and site speed optimization. Our off-page SEO optimization includes Google Business Profile optimization, external link building, and citation building.",
+      "Most agencies deliver a finished website. We build a conversion foundation tied to lead generation, CRM capture, tracking, SEO support, and paid traffic performance.",
   },
   {
-    question: "Can I update the website myself after it's completed?",
+    question: "What types of businesses are the best fit?",
     answer:
-      "While we build websites using user-friendly platforms, we're responsible for delivering optimal SEO performance and maintaining your site's professional standards. Website updates are best handled by our experienced team members to ensure consistency and search engine optimization. Monthly updates are included in our retainer packages.",
+      "Local service businesses where leads matter: home services, healthcare and wellness, med spas, legal and financial professionals, and real estate-related businesses.",
   },
   {
-    question: "Do you work with businesses outside the Bay Area?",
+    question: "Will the website connect with CRM, forms, booking tools, and lead tracking?",
     answer:
-      "While we're based in the San Francisco Bay Area, we work with premium service professionals nationwide. Our virtual consultation process and local research capabilities ensure we can effectively serve clients anywhere in the country while helping them dominate their local markets.",
+      "Yes. That integration is part of the point. A website should not just look better — it should capture, route, and support follow-up on every lead.",
   },
   {
-    question: "What's the difference between your template and custom website options?",
+    question: "Why does the website need to be part of a broader growth system?",
     answer:
-      "For Authority Websites, we offer development of 5 unique page templates/designs (contact us page & blog post included complimentary), up to 25 pages, SEO optimized, hyper-optimized hosting included, monthly updates and optimization included, and AI-powered SEO monitoring. For Quick Template Websites, we can add all your existing assets to a fresh new theme in about a week, including up to 10 pages and 1 round of revisions.",
-  },
-  {
-    question: "How much input do I have in the design process?",
-    answer:
-      "We believe in collaborative design. After our discovery phase, we'll present initial concepts and gather your feedback. You'll have opportunities to review and request changes during the design phase, and we'll ensure the final result aligns with your vision and business goals.",
-  },
-  {
-    question: "What if I'm not satisfied with the website?",
-    answer:
-      "We stand behind our work with a 30-day satisfaction guarantee. If you're not completely satisfied with your website within the first 30 days after launch, we'll work with you to make it right. Our goal is to create a website that exceeds your expectations and drives real results for your business.",
-  },
-  {
-    question: "Do you provide analytics and reporting?",
-    answer:
-      "Yes! We set up Google Analytics and provide you with login credentials so you can monitor your website's performance. Our premium packages include monthly performance reports showing traffic, leads, and conversion metrics. We also provide recommendations for ongoing optimization based on the data.",
+      "Because traffic alone doesn't create revenue. SEO, Google Ads, referrals, and visibility only work when the website converts the visit into a real next step.",
   },
 ];
 
-// Testimonials
-const testimonials = [
-  {
-    quote:
-      "Our new website has completely transformed our practice. We went from getting 2-3 leads per week to 15+ qualified inquiries. The ROI has been incredible.",
-    author: "Dr. Michael Chen",
-    role: "Owner",
-    company: "Bay Area Dental Excellence",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&h=150&fit=crop&crop=face",
-  },
-  {
-    quote:
-      "They understood exactly what our law firm needed. The website positions us as the premium choice in our market, and we're attracting higher-value cases than ever before.",
-    author: "Sarah Mitchell",
-    role: "Managing Partner",
-    company: "Mitchell & Associates Law",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
-  },
-  {
-    quote:
-      "As a contractor, I was skeptical about investing in a premium website. But the results speak for themselves – we've landed three six-figure projects directly from website leads.",
-    author: "James Rodriguez",
-    role: "Owner",
-    company: "Elite Home Remodeling",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-  },
-];
-
-// Case Studies
-const caseStudies = [
-  {
-    company: "Premier Dental Group",
-    location: "San Jose, CA",
-    industry: "Dental Practice",
-    challenge:
-      "Outdated website failing to convert visitors into appointments despite high traffic from existing marketing efforts.",
-    timeframe: "8 weeks",
-    image: caseStudyDental,
-    metrics: [
-      { label: "Conversion Rate", before: "1.2%", after: "8.7%", improvement: "+625%" },
-      { label: "Monthly Leads", before: "12", after: "67", improvement: "+458%" },
-      { label: "Page Load Time", before: "6.2s", after: "1.8s", improvement: "-71%" },
-    ],
-    quote: {
-      text: "The new website paid for itself within the first month. We're now booking more high-value procedures than ever.",
-      author: "Dr. Robert Kim",
-      role: "Practice Owner",
-    },
-  },
-  {
-    company: "Comfort Pro HVAC",
-    location: "Oakland, CA",
-    industry: "HVAC Services",
-    challenge:
-      "Generic template website that looked like every other HVAC company, making it impossible to stand out in a competitive market.",
-    timeframe: "6 weeks",
-    image: caseStudyHvac,
-    metrics: [
-      { label: "Organic Traffic", before: "850/mo", after: "3,200/mo", improvement: "+276%" },
-      { label: "Service Calls", before: "45/mo", after: "120/mo", improvement: "+167%" },
-      { label: "Average Job Value", before: "$450", after: "$780", improvement: "+73%" },
-    ],
-    quote: {
-      text: "Our website now reflects the premium service we provide. Customers comment on how professional we look compared to competitors.",
-      author: "Mike Thompson",
-      role: "Owner",
-    },
-  },
-  {
-    company: "Glow Medical Spa",
-    location: "Palo Alto, CA",
-    industry: "Medical Spa",
-    challenge:
-      "Website didn't convey the luxury experience of the spa, resulting in price-sensitive inquiries rather than premium clients.",
-    timeframe: "7 weeks",
-    image: caseStudyMedspa,
-    metrics: [
-      { label: "Premium Bookings", before: "15/mo", after: "48/mo", improvement: "+220%" },
-      { label: "Avg. Treatment Value", before: "$320", after: "$580", improvement: "+81%" },
-      { label: "Consultation Requests", before: "25/mo", after: "85/mo", improvement: "+240%" },
-    ],
-    quote: {
-      text: "The website perfectly captures our brand's elegance. We're attracting the exact clientele we want.",
-      author: "Dr. Lisa Park",
-      role: "Medical Director",
-    },
-  },
-];
-
-// Website Features
-const conversionFeatures = [
-  {
-    icon: Target,
-    title: "Lead Capture & Conversion Tools",
-    features: [
-      "Custom contact forms with smart routing",
-      "Online appointment booking integration",
-      "Live chat functionality for immediate engagement",
-      "Strategic call-to-action placement throughout",
-    ],
-  },
-  {
-    icon: Award,
-    title: "Professional Credibility Elements",
-    features: [
-      "Client testimonials and case studies",
-      "Professional certifications and awards display",
-      "Before/after galleries (where applicable)",
-      "Trust badges and security indicators",
-    ],
-  },
-  {
-    icon: BarChart3,
-    title: "Performance & Analytics",
-    features: [
-      "Lightning-fast loading speeds (under 3 seconds)",
-      "Comprehensive analytics and reporting",
-      "Heat mapping and user behavior tracking",
-      "Conversion rate optimization tools",
-    ],
-  },
-  {
-    icon: MapPin,
-    title: "Local Business Integration",
-    features: [
-      "Google Maps integration",
-      "Local business schema markup",
-      "Service area pages for multiple locations",
-      "Emergency contact features",
-    ],
-  },
-];
-
-// Local SEO Features
-const localSEOFeatures = [
-  {
-    icon: Layout,
-    title: "Location-Based Page Structure",
-    description:
-      "Every page is strategically designed with location-specific content and keywords that your ideal clients are searching for. We create dedicated service area pages and optimize your site architecture for local search visibility.",
-  },
-  {
-    icon: Code,
-    title: "Local Schema Markup Integration",
-    description:
-      "We embed structured data directly into your website code that helps Google understand your business location, services, and contact information. This technical foundation improves your chances of appearing in local search results.",
-  },
+const includedFeatures = [
   {
     icon: Smartphone,
-    title: "Mobile-First Local Design",
+    title: "Mobile-First Design",
     description:
-      'With over 60% of local searches happening on mobile devices, we ensure your website delivers a flawless experience that converts "near me" searches into paying clients through optimized contact forms and click-to-call functionality.',
+      "More than 60% of local service business traffic comes from mobile devices. We design for the phone first — meaning your layout, navigation, click-to-call buttons, and contact forms are optimized for a visitor using their thumb, not a mouse. Desktop looks great too. But mobile is where you win or lose most of your leads, and we treat it that way from the first wireframe.",
   },
   {
-    icon: FileText,
-    title: "NAP Consistency",
+    icon: Zap,
+    title: "Fast Load Speed",
     description:
-      "We ensure your business information (Name, Address, Phone) is consistently formatted across every page of your website, creating a solid foundation for local search credibility and making it easy for search engines to verify your location.",
+      "A slow website doesn't just frustrate visitors — it actively loses them. Most mobile users will abandon a page that takes more than three seconds to load. We build for performance: compressed images, clean code, minimal bloat, and hosting infrastructure that supports fast delivery. Speed is not a feature we add — it's a standard we build to.",
   },
-];
-
-// Development Process
-const developmentProcess = [
   {
-    phase: "Phase 1",
-    title: "Discovery & Strategy",
+    icon: MessageSquare,
+    title: "Clear Messaging and Service Clarity",
     description:
-      "We begin with an in-depth consultation to understand your practice, target clientele, and competitive landscape. This foundation ensures every design decision aligns with your business goals and local market opportunities.",
+      "Within the first few seconds of arriving on your site, a visitor should know exactly what you do, who you serve, and why you're the right choice. We write the copy — or work with your existing messaging — to make that clarity immediate. No guessing. No scrolling for answers. No vague taglines that could apply to any business in your category.",
+  },
+  {
+    icon: Layout,
+    title: "Conversion-Focused Page Structure",
+    description:
+      "Every page on your website has a job to do. We structure each page around a defined conversion path — logical visual hierarchy, strategic placement of calls to action, friction-reducing layout choices, and page flow that guides a visitor toward contacting you without feeling pushy or cluttered.",
+  },
+  {
+    icon: Shield,
+    title: "Local Trust Signals and Proof Elements",
+    description:
+      "Trust is the conversion variable most websites ignore. We build it in deliberately — through real customer reviews presented prominently, verifiable credentials and certifications, licensing and insurance information, years in business, and photography and specifics that signal you're a real, established operation in your local market. A visitor who trusts you calls. A visitor who isn't sure doesn't.",
+  },
+  {
+    icon: MousePointerClick,
+    title: "Strategic Calls to Action",
+    description:
+      "A call to action is not just a button. It's a specific prompt, placed at the right moment in the visitor's experience, written in a way that reduces hesitation and makes the next step feel easy. We place CTAs strategically throughout your site and write them to reflect what your ideal customer actually needs to hear before they reach out.",
+  },
+  {
     icon: Search,
+    title: "SEO-Ready Architecture",
+    description:
+      "Your website is the foundation your SEO strategy builds on. We build every site with clean URL structure, proper heading hierarchy, schema markup, fast load speeds, and technical fundamentals that allow search engines to crawl, understand, and rank your content. When SEO is part of your broader growth engagement, this foundation means your SEO investment works from day one — not after months of remediation.",
   },
   {
-    phase: "Phase 2",
-    title: "Custom Design & UX",
+    icon: Link2,
+    title: "CRM, Booking, and Lead Capture Integration",
     description:
-      "Our design team creates a unique, professional website that reflects your brand's premium positioning. We focus on user experience elements that guide visitors toward taking action.",
-    icon: Layers,
-  },
-  {
-    phase: "Phase 3",
-    title: "SEO Optimized Content",
-    description:
-      "Our copywriting specialists craft compelling, conversion-focused content that resonates with your target audience while incorporating local SEO best practices.",
-    icon: FileText,
-  },
-  {
-    phase: "Phase 4",
-    title: "Development & Integration",
-    description:
-      "We build your website using the latest technologies and integrate essential features like appointment booking, contact forms, and analytics tracking.",
-    icon: Settings,
-  },
-  {
-    phase: "Phase 5",
-    title: "Testing & Launch",
-    description:
-      "Before going live, we conduct thorough testing across all devices and browsers. We verify every form, button, and feature works perfectly.",
-    icon: Rocket,
-  },
-  {
-    phase: "Phase 6",
-    title: "Ongoing Optimization",
-    description:
-      "Your website launch is just the beginning. We provide monthly content updates, security patches, performance monitoring, and continuous optimization.",
-    icon: RefreshCw,
+      "A lead that doesn't get captured and routed quickly is a lead that goes cold. We integrate your website with your CRM, booking system, and lead notification workflows so that when someone fills out a form or books an appointment, the right person in your business knows immediately — and the lead is logged where your team can follow up. The website generates the lead. The integration makes sure it doesn't fall through the cracks.",
   },
 ];
 
-// Why Choose Us
-const whyChooseUs = [
+const processSteps = [
   {
-    icon: Award,
-    title: "Industry Expertise",
+    step: "Step 1",
+    title: "Strategy and Discovery",
     description:
-      "Unlike generic web designers, we specialize exclusively in high-ticket service businesses. We understand the unique challenges and opportunities in your industry.",
+      "Before anything is designed or written, we spend time understanding your business, your market, and your goals. We look at who your ideal customer is, what they need to see and hear before they trust you enough to reach out, and what specific actions you need your website to drive. We also look at the broader growth picture — how your website will connect to your SEO, your paid advertising, and your lead generation infrastructure.",
+    deliverable:
+      "Deliverable: A clear conversion strategy and sitemap that defines the structure, page hierarchy, and goals for every key page on the site.",
   },
   {
-    icon: MapPin,
-    title: "Local Market Mastery",
+    step: "Step 2",
+    title: "Structure and Copy",
     description:
-      "Our team includes local SEO specialists who know how to make your business visible to clients in your specific geographic area.",
+      "We build the wireframes before a single color is chosen or a font is considered. This forces every layout decision to be made on the basis of conversion logic, not visual preference. Alongside the structure, we develop the copy: headlines, service descriptions, trust language, and calls to action, all written to move your specific customer toward contacting you.",
+    deliverable:
+      "Deliverable: Wireframes and copy for all primary pages, reviewed and approved before design begins.",
   },
   {
-    icon: Target,
-    title: "Conversion-Focused Design",
+    step: "Step 3",
+    title: "Design and Build",
     description:
-      "Every element of your website is strategically designed to convert visitors into clients using proven psychological principles.",
+      "Once strategy, structure, and copy are locked, design begins. Your site is built to reflect your brand with intention — not with generic templates adapted to fit. We build for mobile-first performance, fast load speed, and the technical standards required for clean SEO architecture. Every design decision is made in service of the conversion goal.",
+    deliverable:
+      "Deliverable: A fully designed, fully built website — mobile-optimized, fast-loading, and technically sound — ready for final review and launch.",
   },
+  {
+    step: "Step 4",
+    title: "Launch and Integration",
+    description:
+      "Before we go live, we connect your site to the systems it needs to function as a lead generation asset: your CRM, booking platform, analytics tools, and any campaign-specific integrations tied to your paid or SEO programs. For clients in a full growth engagement, this is also when the SEO and paid traffic strategies go live on top of the new foundation.",
+    deliverable:
+      "Deliverable: A live, fully integrated website connected to your lead capture and marketing infrastructure — with conversion tracking in place from day one.",
+  },
+];
+
+const afterLaunchItems = [
   {
     icon: TrendingUp,
-    title: "Ongoing Optimization",
+    title: "More Consistent Lead Flow",
     description:
-      "Your website launch is just the beginning. We provide ongoing support, regular updates, and continuous optimization.",
+      "When your website is built to convert — not just to exist — you stop depending on luck, referral timing, or ad spend surges to generate inquiries. Visitors who arrive from any channel have a clear, trust-building experience that gives them a reason to reach out. The result is leads that come in more predictably, from more sources, more consistently than a passive site ever produces.",
   },
   {
     icon: Eye,
-    title: "Transparent Reporting",
+    title: "A Credible First Impression That Closes Faster",
     description:
-      "You'll receive detailed monthly reports showing exactly how your website is performing, including traffic sources and conversion rates.",
+      "Your website is often the first detailed interaction a prospect has with your business. When it communicates clearly, looks professionally done, and establishes trust through real proof — reviews, credentials, specifics — the prospect arrives at the conversation already sold on the idea of working with you. That shortens the sales cycle. It also means fewer tire-kickers and more contacts who are ready to move.",
   },
   {
-    icon: Star,
-    title: "Premium Brand Positioning",
+    icon: BarChart3,
+    title: "Better Returns on Every Other Marketing Channel",
     description:
-      "We help you establish a strong online presence that positions you as the premium choice in your market.",
+      "A stronger website makes every other marketing investment more efficient. Your Google Ads cost per lead drops because the traffic you're paying for actually converts. Your SEO rankings start producing revenue instead of just visits. Your referrals close faster. The same budget, directed at a high-converting website, produces a meaningfully different return.",
+  },
+  {
+    icon: Link2,
+    title: "Leads That Don't Fall Through the Cracks",
+    description:
+      "When your site is integrated with your CRM and lead notification systems, every inquiry is logged, every form submission triggers follow-up, and no lead sits unattended because someone didn't check their email in time. The website generates the opportunity. The integration protects it.",
+  },
+  {
+    icon: Layers,
+    title: "Visibility Into What's Working",
+    description:
+      "With proper analytics and conversion tracking in place from launch day, you stop guessing about what's driving results. You can see which pages are converting, where visitors are dropping off, which traffic sources are producing leads versus just visits, and what's happening to your paid traffic after the click.",
+  },
+  {
+    icon: Wrench,
+    title: "A Foundation That Supports Real Growth",
+    description:
+      "A high-converting website isn't a destination — it's a starting point. Once the conversion foundation is solid, every growth initiative you layer on top — AI-driven SEO, Google Ads, reputation building, market expansion — works better because it has something strong to land on. This is the model behind the Digital Dominance Method: build the foundation right, then build on it.",
   },
 ];
 
-// Industries Served
-const industriesServed = [
+const industries = [
   {
-    category: "Health & Wellness",
-    businesses: ["Plastic Surgeons", "Medical Spas", "Dentists", "Chiropractors", "Fitness Centers"],
+    icon: Home,
+    title: "Home Services and Contractors",
+    description:
+      "Roofing, HVAC, plumbing, electrical, landscaping, remodeling — businesses where the job ticket is high, the competition is local, and the customer needs to trust you before they hand over access to their home. We build sites that establish credibility fast: licensed and insured signals front and center, real customer reviews from recognizable neighborhoods, clear service areas, and calls to action written for a homeowner who has three contractors open in different tabs and needs a reason to choose you.",
   },
   {
-    category: "Legal & Professional",
-    businesses: ["Personal Injury", "Family Law", "Estate Planning", "Criminal Defense", "Business Law"],
+    icon: Heart,
+    title: "Healthcare and Wellness Practices",
+    description:
+      "Primary care, dental, chiropractic, physical therapy, mental health — practices where the decision is personal, trust is everything, and patients are often anxious before they've made the call. We build sites that reduce friction and build reassurance: clear descriptions of what to expect, provider credentials with context, easy appointment booking, and messaging calibrated for a patient who needs to feel confident they're in the right place.",
   },
   {
-    category: "Home Services",
-    businesses: ["HVAC & Plumbing", "Roofing", "Remodeling", "Landscaping", "Electrical"],
+    icon: Sparkles,
+    title: "Med Spas and Aesthetic Practices",
+    description:
+      "In aesthetics, the website is often the first and most important impression of what the experience will feel like. Prospective patients are evaluating your taste, your expertise, and your results before they ever contact you. We build sites that reflect the quality of the experience you deliver — visually elevated, trust-rich with real results and credentials, and structured around the specific services that drive the most revenue for your practice.",
   },
   {
-    category: "Other Services",
-    businesses: ["Financial Advisors", "Real Estate", "Auto Repair", "Insurance", "Photography"],
-  },
-];
-
-// Blog Posts
-const blogPosts = [
-  {
-    title: "7 Website Elements That Convert Visitors Into Paying Customers",
-    excerpt:
-      "Discover the essential design and content elements that turn your website into a 24/7 lead generation machine for your local business.",
-    date: "December 28, 2024",
-    category: "Conversion Optimization",
-    link: "/blog/website-conversion-elements",
+    icon: Scale,
+    title: "Legal and Financial Professionals",
+    description:
+      "Attorneys, CPAs, financial advisors, and consultants operate in categories where credibility is the entire sale. We build sites that communicate authority without arrogance: clear practice areas or service descriptions, credentials and experience presented substantively, social proof that speaks to outcomes, and consultation requests that feel like a professional process from the first click.",
   },
   {
-    title: "Why Your Outdated Website Is Costing You Premium Clients",
-    excerpt:
-      "Learn how an outdated website design can hurt your credibility and drive potential customers to your competitors.",
-    date: "December 20, 2024",
-    category: "Website Design",
-    link: "/blog/outdated-website-cost",
-  },
-  {
-    title: "Mobile-First Design: Why It's Critical for Local Service Businesses",
-    excerpt:
-      "With 60%+ of local searches on mobile, discover why mobile-first design is essential for capturing local leads.",
-    date: "December 15, 2024",
-    category: "Mobile Optimization",
-    link: "/blog/mobile-first-design",
+    icon: Building,
+    title: "Real Estate Agents & Brokers",
+    description:
+      "Real estate professionals compete in one of the most crowded local search categories online — and most agents' websites look nearly identical. We build sites that give buyers and sellers a clear reason to choose you specifically: strong personal branding, neighborhood and market expertise positioned prominently, listings integration where applicable, and lead capture built around the way real estate clients actually search — often on mobile, often late at night, and often comparing multiple agents before making contact.",
   },
 ];
 
-// Portfolio Items
-const portfolioItems = [
-  {
-    title: "Premier Dental Care",
-    industry: "Dental Practice",
-    description: "Complete rebrand and website redesign resulting in 625% increase in conversions",
-    image: portfolioDental,
-    tags: ["Healthcare", "Lead Generation", "Mobile-First"],
-    results: "+458% Monthly Leads",
-  },
-  {
-    title: "Comfort Pro HVAC",
-    industry: "HVAC Services",
-    description: "Custom website with emergency booking and service area pages",
-    image: portfolioHvac,
-    tags: ["Home Services", "Local SEO", "Booking Integration"],
-    results: "+276% Organic Traffic",
-  },
-  {
-    title: "Glow Medical Spa",
-    industry: "Medical Spa",
-    description: "Luxury website design reflecting premium brand positioning",
-    image: portfolioMedspa,
-    tags: ["Med Spa", "Premium Design", "Gallery"],
-    results: "+220% Premium Bookings",
-  },
-  {
-    title: "Mitchell & Associates",
-    industry: "Law Firm",
-    description: "Professional corporate website with case evaluation forms",
-    image: portfolioLaw,
-    tags: ["Legal", "Professional", "Trust Building"],
-    results: "+185% Qualified Leads",
-  },
-  {
-    title: "Coastal Chiropractic",
-    industry: "Chiropractic Care",
-    description: "Wellness-focused design with patient education resources",
-    image: portfolioChiro,
-    tags: ["Wellness", "Educational", "Appointment Booking"],
-    results: "+338% New Patients",
-  },
-  {
-    title: "Elite Home Remodeling",
-    industry: "Home Remodeling",
-    description: "Portfolio showcase with before/after galleries and project estimator",
-    image: portfolioRemodeling,
-    tags: ["Contractor", "Portfolio", "Lead Capture"],
-    results: "+167% Project Inquiries",
-  },
+const problemBullets = [
+  "It loads slowly — especially on mobile — and visitors leave before seeing anything",
+  "It's unclear within the first few seconds what you do, who you serve, or why you're the right choice",
+  "There's no natural next step — no strong call to action, no clear path to contact",
+  "There's nothing that builds trust: no reviews, no credentials, no tangible proof",
+  "It isn't connected to your CRM, booking system, or anything that captures and routes leads",
+  "Mobile is an afterthought — and more than 60% of your visitors are on a phone",
 ];
 
 const WebsiteDesign = () => {
@@ -470,595 +253,372 @@ const WebsiteDesign = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <Helmet>
-        <title>Conversion Focused Website Design | Lead-Generating Websites for Local Businesses</title>
+        <title>Website Design for Local Businesses | Conversion-Focused Websites | GrowSmallBiz</title>
         <meta
           name="description"
-          content="Transform your online presence with conversion-focused responsive website design. We build lead-generating websites for local service businesses that attract premium clients and convert visitors into customers."
-        />
-        <meta
-          name="keywords"
-          content="website design, conversion optimization, local business website, responsive web design, lead generation website, SEO website, service business website"
+          content="GrowSmallBiz builds conversion-focused websites for local service businesses — designed to turn visitors into calls, bookings, and leads. Schedule a free strategy call."
         />
         <link rel="canonical" href="https://growsmallbiz.io/services/website-design" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Conversion Focused Website Design",
-            description:
-              "Professional website design services for local service businesses focused on lead generation and conversions.",
-            provider: {
-              "@type": "Organization",
-              name: "GrowSmallBiz",
-            },
-            serviceType: "Website Design",
-            areaServed: "United States",
-          })}
-        </script>
       </Helmet>
 
       <ServiceJsonLd
-        serviceName="Conversion Focused Website Design"
+        serviceName="Website Design for Local Service Businesses"
         serviceType="Website Design"
-        description="Lead-generating website design for local service businesses with SEO and conversion optimization."
+        description="Conversion-focused website design for local service businesses — built to turn visitors into calls, bookings, and leads."
         url="/services/website-design"
         breadcrumbs={[
           { name: "Services", url: "/services/ai-seo-hub" },
           { name: "Website Design", url: "/services/website-design" },
         ]}
       />
-      {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${websiteHeroBg})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
 
-        <div className="container relative z-10 py-20 md:py-32">
-          <div className="max-w-3xl">
-            <span className="inline-block px-4 py-2 mb-6 text-sm font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">
-              Conversion-Focused Website Design
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Responsive Website Design for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[hsl(199_89%_48%)]">
-                Local Service Businesses
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Transform your online presence into a lead-generating machine that attracts premium clients in your local
-              market and converts visitors into customers.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/free-assessment">
-                  Get Free Website Analysis
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button variant="heroOutline" size="xl" asChild>
-                <Link to="/contact">Schedule Strategy Session</Link>
-              </Button>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border/50">
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary">625%</div>
-                <div className="text-sm text-muted-foreground">Avg. Conversion Increase</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary">1.8s</div>
-                <div className="text-sm text-muted-foreground">Avg. Page Load Time</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Websites Launched</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Website Packages Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              From Authority Websites to Starter Templates
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Premium solutions for established professionals and cost-effective options for new businesses
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Authority Websites */}
-            <div className="bg-card rounded-2xl p-8 border-2 border-primary/20 shadow-lg hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
-              <div className="inline-block px-3 py-1 mb-4 text-xs font-semibold rounded-full bg-primary/10 text-primary">
-                Most Popular
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Premium Authority Websites</h3>
-              <p className="text-muted-foreground mb-6">
-                For established high-ticket service professionals who want to dominate their local market with 25+ pages.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "5 unique page template designs",
-                  "Up to 25 fully optimized pages",
-                  "Complete SEO optimization",
-                  "Hyper-optimized hosting included",
-                  "Monthly updates & optimization",
-                  "AI-powered SEO monitoring",
-                  "30-day satisfaction guarantee",
-                ].map((feature, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button variant="hero" className="w-full" asChild>
-                <Link to="/contact">Get Started</Link>
-              </Button>
-            </div>
-
-            {/* Starter Websites */}
-            <div className="bg-card rounded-2xl p-8 border-2 border-border hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300">
-              <h3 className="text-2xl font-bold mb-4">Starter Template Websites</h3>
-              <p className="text-muted-foreground mb-6">
-                For new business owners who need a professional presence without the full investment with 5 pages.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Up to 10 pages",
-                  "Fresh, modern theme",
-                  "1 round of revisions",
-                  "Titles & meta descriptions",
-                  "Mobile responsive design",
-                  "One-time fee (no retainer)",
-                  "Ready in ~1 week",
-                ].map((feature, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-muted-foreground mt-0.5 shrink-0" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button variant="outline" className="w-full" asChild>
-                <Link to="/contact">Learn More</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Conversion Features Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Advanced Features That Convert Visitors Into Clients
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Every website we build includes powerful tools designed to capture leads and drive conversions
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {conversionFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="ghl-card rounded-xl p-8"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="ghl-icon flex-shrink-0">
-                    <feature.icon className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                    <ul className="space-y-2">
-                      {feature.features.map((item, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-muted-foreground">
-                          <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Local SEO Foundation Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Website Design Built on Local SEO Foundation
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Your authority website is the foundation of local SEO – we build it right from the start
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {localSEOFeatures.map((feature, index) => (
-              <div key={index} className="ghl-card rounded-xl p-8">
-                <div className="flex items-start gap-4">
-                  <div className="ghl-icon flex-shrink-0">
-                    <feature.icon className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                    <p className="text-muted-foreground">{feature.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Development Process Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our Proven 6-Phase Development Process
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              A systematic approach that ensures your website is built right from discovery to launch and beyond
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {developmentProcess.map((phase, index) => (
-              <div
-                key={index}
-                className="ghl-card rounded-xl p-6"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                    <phase.icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <span className="text-sm font-semibold text-primary">{phase.phase}</span>
-                </div>
-                <h3 className="text-lg font-bold mb-2">{phase.title}</h3>
-                <p className="text-sm text-muted-foreground">{phase.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Industries Served Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Industries We Serve</h2>
-            <p className="text-lg text-muted-foreground">
-              Specialized website design for high-ticket local service professionals
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {industriesServed.map((industry, index) => (
-              <div key={index} className="bg-card rounded-xl p-6 border-2 border-border hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all duration-300">
-                <h3 className="text-lg font-bold mb-4 text-primary">{industry.category}</h3>
-                <ul className="space-y-2">
-                  {industry.businesses.map((business, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-muted-foreground">
-                      <CheckCircle2 className="h-4 w-4 text-primary/60 shrink-0" />
-                      {business}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Service Professionals Choose Us
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              We specialize exclusively in high-ticket service businesses and understand your unique needs
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {whyChooseUs.map((reason, index) => (
-              <div
-                key={index}
-                className="ghl-card text-center p-6 rounded-xl"
-              >
-                <div className="ghl-icon mx-auto mb-4">
-                  <reason.icon className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
-                <p className="text-muted-foreground">{reason.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio Gallery Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-4 py-2 mb-4 text-sm font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">
-              Our Portfolio
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Websites That Drive Results
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Explore our collection of conversion-focused websites built for local service businesses across various industries
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {portfolioItems.map((item, index) => (
-              <div
-                key={index}
-                className="group bg-card rounded-2xl overflow-hidden border-2 border-border hover:border-primary/30 transition-all duration-500 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)]"
-              >
-                {/* Image Container */}
-                <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={`${item.title} website design`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  
-                  {/* Results Badge */}
-                  <div className="absolute top-4 right-4 px-3 py-1.5 bg-primary text-primary-foreground text-sm font-semibold rounded-full shadow-lg">
-                    {item.results}
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
-                      {item.industry}
-                    </span>
-                  </div>
-                  
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    {item.description}
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {item.tags.map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="text-xs px-2 py-1 rounded-full bg-secondary text-muted-foreground"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-6">
-              Ready to join our portfolio of successful businesses?
-            </p>
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/free-assessment">
-                Start Your Website Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Case Studies Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Real Results for Real Businesses</h2>
-            <p className="text-lg text-muted-foreground">
-              See how our conversion-focused websites have transformed local service businesses
-            </p>
-          </div>
-
-          <div className="space-y-12">
-            {caseStudies.map((study, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-2xl overflow-hidden border-2 border-border shadow-lg hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300"
-              >
-                <div className="grid lg:grid-cols-2">
-                  <div className="relative h-64 lg:h-auto">
-                    <img
-                      src={study.image}
-                      alt={study.company}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-transparent lg:hidden" />
-                  </div>
-                  <div className="p-8 lg:p-10">
-                    <div className="flex items-center gap-2 mb-4">
-                      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-primary/10 text-primary">
-                        {study.industry}
-                      </span>
-                      <span className="text-sm text-muted-foreground">{study.location}</span>
-                    </div>
-                    <h3 className="text-2xl font-bold mb-3">{study.company}</h3>
-                    <p className="text-muted-foreground mb-6">{study.challenge}</p>
-
-                    <div className="grid grid-cols-3 gap-4 mb-6">
-                      {study.metrics.map((metric, idx) => (
-                        <div key={idx} className="text-center p-3 rounded-lg bg-secondary/50">
-                          <div className="text-xs text-muted-foreground mb-1">{metric.label}</div>
-                          <div className="text-lg font-bold text-primary">{metric.improvement}</div>
-                          <div className="text-xs text-muted-foreground">
-                            {metric.before} → {metric.after}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    {study.quote && (
-                      <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
-                        "{study.quote.text}"
-                        <footer className="mt-2 text-sm font-semibold text-foreground">
-                          — {study.quote.author}, {study.quote.role}
-                        </footer>
-                      </blockquote>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/free-assessment">
-                Get Your Free Website Analysis
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
-            <p className="text-lg text-muted-foreground">
-              Trusted by local service professionals across the country
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-8 border-2 border-border hover:border-primary/30 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] transition-all duration-300"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground leading-relaxed italic mb-6">
-                  "{testimonial.quote}"
-                </p>
-                <div className="flex items-center gap-4 pt-4 border-t border-border">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
-                  />
-                  <div>
-                    <p className="font-semibold text-foreground">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.role}, {testimonial.company}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <AnimatedStatsSection stats={websiteStats} columns={4} />
-
-      <CaseStudySection
-        caseStudies={[
-          {
-            company: "Premier Dental Group",
-            location: "San Jose, CA",
-            industry: "Dental Practice",
-            challenge: "Outdated website failing to convert visitors into appointments despite high traffic.",
-            timeframe: "8 weeks",
-            metrics: [
-              { label: "Conversion Rate", before: "1.2%", after: "8.7%", improvement: "+625%" },
-              { label: "Monthly Leads", before: "12", after: "67", improvement: "+458%" },
-              { label: "Page Load Time", before: "6.2s", after: "1.8s", improvement: "-71%" },
-            ],
-          },
-          {
-            company: "Comfort Pro HVAC",
-            location: "Oakland, CA",
-            industry: "HVAC Services",
-            challenge: "Generic template website that looked like every other HVAC company.",
-            timeframe: "6 weeks",
-            metrics: [
-              { label: "Organic Traffic", before: "850/mo", after: "3,200/mo", improvement: "+276%" },
-              { label: "Service Calls", before: "45/mo", after: "120/mo", improvement: "+167%" },
-              { label: "Average Job Value", before: "$450", after: "$780", improvement: "+73%" },
-            ],
-          },
-        ]}
-        title="Website Design Case Studies"
-        subtitle="See how our websites transform business results"
-      />
-
-      {/* FAQ Section */}
-      <FAQSection
-        title="Frequently Asked Questions"
-        subtitle="Common questions about our website development process"
-        faqs={faqs}
-        schemaType="WebPage"
-        contactCTA={{
-          ...baseContactCTA,
-          title: "Have more questions about Website Design?",
-          description: "We're here to help! Reach out to us for a personalized consultation.",
-          tagline: "Let's build your dream website together.",
+      {/* SECTION 1 — HERO */}
+      <ServiceHero
+        badge={{ icon: Globe, text: "WEBSITE THAT CONVERTS" }}
+        title="Websites Built to Turn Visitors Into Calls, Bookings, and"
+        titleHighlight="Leads."
+        subtitle="Most local service business websites look the part. The problem is they were built to impress — not to convert. GrowSmallBiz designs and builds websites engineered around a single outcome: turning visitors into calls, bookings, and quote requests. And for our clients, the website is never the end of the conversation — it's the beginning."
+        primaryCTA={{
+          label: "Schedule Strategy Call",
+          href: CTA_URL,
+          external: true,
+        }}
+        secondaryCTA={{
+          label: "Explore All Services",
+          href: "/services/ai-seo-hub",
         }}
       />
 
-      {/* Blog Section */}
-      <BlogSection
-        posts={generalBlogPosts.slice(0, 3)}
-        title="Website Design & Development Insights"
-        subtitle="Expert tips to create high-converting websites for service businesses"
-        showViewAll={true}
-        viewAllLink="/blog"
+      {/* Hero extended body copy */}
+      <section className="py-16 lg:py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
+            <p>
+              When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else.
+            </p>
+            <p>
+              Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them.
+            </p>
+            <p>
+              At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you.
+            </p>
+            <p>
+              But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2 — THE PROBLEM */}
+      <section className="py-20 lg:py-28">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="THE PROBLEM"
+            title="Most Local Business Websites Were Built to Exist —"
+            titleHighlight="Not to Convert"
+            description="There's a difference between a website that looks good and a website that works. Most local businesses have the first kind."
+          />
+
+          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
+            <p>
+              Here's how most local business websites get built: a developer creates something visually clean, the owner approves it, and it goes live. Nobody asks whether the page structure guides visitors toward a decision. Nobody asks whether trust is being established quickly enough — or whether a prospect on a mobile phone at 9pm can find a phone number in under three seconds.
+            </p>
+            <p>
+              The result is a site that sits there — looking fine, doing nothing.
+            </p>
+            <p>
+              This is not a minor issue. Every visitor who lands on your site and leaves without contacting you is a missed opportunity. And when you're running Google Ads, investing in SEO, or counting on referrals to drive traffic, a website that doesn't convert is quietly draining every dollar you spend on marketing.
+            </p>
+            <p className="font-medium text-foreground">Here's what a non-converting website typically looks like:</p>
+            <ul className="space-y-3">
+              {problemBullets.map((bullet, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-primary mt-1 shrink-0" />
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <p>
+              A website that doesn't convert isn't a neutral investment. It's an active liability — costing you leads, bookings, and revenue every day it stays the way it is. And it's undermining every other marketing channel you're running at the same time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3 — WHAT WE BUILD */}
+      <section className="py-20 lg:py-28 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="WHAT WE BUILD"
+            title="We Don't Build Websites. We Build the Conversion Foundation Your Entire Growth Strategy"
+            titleHighlight="Runs On."
+            description="Every site we deliver is purpose-built around one question: what do you need a visitor to do — and what does it take to make that easy? The answer to that question shapes your website. And your website shapes everything else."
+          />
+
+          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
+            <p>
+              Before we touch a design or write a line of copy, we do strategy. We look at your business, your market, your ideal customer, and the specific action you need your website to drive — whether that's a phone call, a form submission, a booking, or a quote request. Every decision after that is made in service of that outcome.
+            </p>
+            <p>
+              That means your website isn't built around what looks attractive to a designer. It's built around what moves a real person — someone who found you on Google or clicked your ad — to trust you quickly, understand your value clearly, and take the next step without friction.
+            </p>
+            <p>
+              In practice, that looks like this: your homepage communicates exactly what you do and who you serve within seconds of arrival. Your services are described in terms of outcomes, not just tasks. Your credibility is established through proof — real reviews, verifiable credentials, and specifics that matter to a buyer in your market. Your calls to action are clear, well-placed, and written to reduce hesitation. And your site performs just as well on a phone as it does on a desktop.
+            </p>
+            <p>
+              Your website is also built from day one to integrate with the rest of your marketing — connecting to your CRM, booking system, and tracking tools. It's the conversion hub of the Digital Dominance Method, designed to work alongside your SEO, paid advertising, and lead generation efforts — not as a standalone project handed off and forgotten.
+            </p>
+          </div>
+
+          {/* Callout boxes */}
+          <div className="max-w-4xl mx-auto mt-12 space-y-8">
+            <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up">
+              <h3 className="text-xl font-bold text-foreground mb-4">A note on how we work:</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                GrowSmallBiz builds websites as part of a broader digital growth engagement. We don't take on design-only or website-only projects. The reason is straightforward: a high-converting website, built in isolation from your SEO strategy, your paid traffic, and your lead generation infrastructure, is a foundation with nothing built on top of it. Our clients get the website and the growth system it's designed to support. If you're looking for that kind of partnership — not just a new site — the strategy call is the right place to start.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+              <h3 className="text-xl font-bold text-foreground mb-4">Why GrowSmallBiz:</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Most web design agencies hand you a finished site and move on. GrowSmallBiz works exclusively with local service businesses — which means we're not learning your industry on your dime. We know what makes a roofing lead different from a med spa inquiry. We know what trust signals matter to a patient choosing a specialist versus a homeowner vetting a contractor. That specificity is what separates a website that looks right from one that actually performs — and it's built into every engagement we take on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4 — WHAT'S INCLUDED */}
+      <section className="py-20 lg:py-28">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="WHAT'S INCLUDED"
+            title="What's Built Into Every Website"
+            titleHighlight="We Deliver"
+            description="These aren't add-ons or upgrade tiers. Every site we build includes the full conversion architecture — because a website missing any of these elements has a hole in it. And because every site we deliver is designed to function as the foundation of a larger growth system, the bar for what "complete" means is set accordingly."
+          />
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {includedFeatures.map((feature, index) => (
+              <GlowCard key={index} className="p-8 animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0">
+                    <feature.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-3">{feature.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                  </div>
+                </div>
+              </GlowCard>
+            ))}
+          </div>
+
+          <div className="text-center mt-12 animate-fade-up">
+            <Button variant="hero" size="lg" asChild>
+              <a href={CTA_URL} target="_blank" rel="noopener noreferrer">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5 — WHY THIS MATTERS */}
+      <section className="py-20 lg:py-28 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="WHY THIS MATTERS"
+            title="Every Marketing Dollar You Spend Eventually Lands on"
+            titleHighlight="Your Website"
+            description="Google Ads, SEO, referrals, social media — however a prospect finds you, what happens when they arrive on your website determines whether they become a customer."
+          />
+
+          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
+            <p>
+              Think through the path a new customer takes before they contact you. Maybe they searched for a service in your area and found you on Google. Maybe a neighbor mentioned your name. Maybe they clicked your ad. In almost every case, the next thing they do is visit your website. That visit is the moment. And it's almost entirely within your control.
+            </p>
+            <p>
+              If your site communicates clearly — here's who we are, here's what we do, here's why we're the right choice, here's how to reach us — a meaningful percentage of those visitors will contact you. If it doesn't, they'll hesitate. And hesitation almost always ends the same way: a closed tab and a competitor's number getting dialed instead.
+            </p>
+            <p>
+              This is why your website isn't just one marketing asset among many — it's the conversion layer that your entire growth strategy runs through. Every channel feeds it. Every dollar you spend on visibility, traffic, and reach either pays off or gets wasted based on what happens when a prospect arrives.
+            </p>
+            <p>
+              A strong website makes your Google Ads more profitable — because the traffic you're paying for actually converts. It makes your SEO investment produce real leads instead of just rankings. It makes your referrals close faster, because the prospect arrives informed and leaves ready to book. It gives your social media a destination worth sending people to.
+            </p>
+            <p>
+              A weak website does the opposite to all of it. It doesn't just underperform on its own — it degrades every other marketing investment you're making at the same time.
+            </p>
+            <p>
+              This is why, at GrowSmallBiz, the website is always the first piece of the conversation — and why we build it as the foundation of a full growth system, not as a standalone deliverable. When the hub is strong, everything connected to it performs better.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 6 — HOW IT WORKS */}
+      <section className="py-20 lg:py-28">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="HOW IT WORKS"
+            title="From Strategy to Launch: What the Process"
+            titleHighlight="Looks Like"
+            description="Every project follows the same four-phase process — because the order matters. Strategy before design. Structure before aesthetics. Launch into a connected system, not into a vacuum."
+          />
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            {processSteps.map((step, index) => (
+              <div
+                key={index}
+                className="relative pl-8 border-l-2 border-primary/30 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center">
+                  <span className="text-xs font-bold text-primary-foreground">{index + 1}</span>
+                </div>
+                <div className="bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] transition-all duration-300">
+                  <span className="text-sm font-semibold text-primary">{step.step}</span>
+                  <h3 className="text-xl font-bold text-foreground mt-2 mb-4">{step.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-4">{step.description}</p>
+                  <p className="text-sm font-medium text-primary/80 italic">{step.deliverable}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-up">
+            <Button variant="hero" size="lg" asChild>
+              <a href={CTA_URL} target="_blank" rel="noopener noreferrer">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="heroOutline" size="lg" asChild>
+              <Link to="/industries/home-services">View Industries We Serve</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 7 — AFTER LAUNCH */}
+      <section className="py-20 lg:py-28 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="AFTER LAUNCH"
+            title="What Changes After Your New Website"
+            titleHighlight="Goes Live"
+            description="A high-converting website doesn't just perform better in isolation. It raises the performance ceiling on every other part of your marketing."
+          />
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {afterLaunchItems.map((item, index) => (
+              <GlowCard key={index} className="p-8 animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
+                <div className="p-3 rounded-xl bg-primary/10 w-fit mb-4">
+                  <item.icon className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">{item.description}</p>
+              </GlowCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 8 — WHO THIS IS FOR */}
+      <section className="py-20 lg:py-28">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="WHO THIS IS FOR"
+            title="Built for Local Service Businesses Where Every Lead"
+            titleHighlight="Matters"
+            description="We work exclusively with local service businesses — which means every framework we apply, every trust signal we build in, and every conversion decision we make is based on what actually moves customers in your category. Not generic best practices. Specific, earned knowledge of what works in your market."
+          />
+
+          <div className="space-y-6 max-w-4xl mx-auto">
+            {industries.map((industry, index) => (
+              <div
+                key={index}
+                className="bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] hover:border-primary/30 transition-all duration-300 animate-fade-up"
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0">
+                    <industry.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-3">{industry.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{industry.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 9 — FAQ */}
+      <FAQSection
+        title="Common Questions About Our Website Strategy"
+        subtitle="These are the questions most business owners ask once they realize the issue is not just design — it is how the website fits into the broader growth system."
+        faqs={faqs}
+        schemaType="FAQPage"
+        contactCTA={{
+          ...baseContactCTA,
+          title: "Have questions about website strategy?",
+          description: "We're here to help. Let's talk about how a conversion-focused website fits into your growth plan.",
+          tagline: "The conversation starts here.",
+        }}
       />
 
-      {/* CTA Section */}
-      <CardCTA
-        title="Ready to Transform Your Online Presence?"
-        description="Don't let another day pass with a website that fails to showcase your expertise. Join hundreds of successful service professionals who've elevated their online presence."
-      />
+      {/* SECTION 10 — FINAL CTA */}
+      <section className="py-20 lg:py-28" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center animate-fade-up">
+            <p className="text-primary font-medium mb-4">READY TO TALK STRATEGY?</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
+              If Your Website Isn't Generating Leads, That's a Solvable Problem — and It's Usually Just the{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Beginning.</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+              Many local businesses have been sitting on underperforming websites for years — not because there's no solution, but because no one showed them what a strategically built site looks like, what it can do, or how it fits into a growth strategy that actually compounds over time.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <p>That's what the free growth strategy call is for.</p>
+            <p>
+              In 30 minutes, we'll look at your current website, identify the specific gaps that are costing you leads, and walk you through what a conversion-focused rebuild would look like for your business. We'll also look at the bigger picture: how your website connects to your SEO, your paid traffic, and your lead generation system — and where the highest-leverage opportunities are in your specific market.
+            </p>
+            <p>
+              This isn't a website consultation. It's a growth strategy conversation. The website is almost always where it starts — because without a strong conversion foundation, nothing else performs the way it should. But the call covers the full picture: website, AI SEO, paid search, conversion strategy, and what a complete digital growth system looks like for a business like yours.
+            </p>
+            <p>No pitch deck. No pressure. No obligation. Just clarity on where you are, where you could be, and what it would take to get there.</p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <Button variant="hero" size="xl" asChild>
+              <a href={CTA_URL} target="_blank" rel="noopener noreferrer">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="heroOutline" size="xl" asChild>
+              <Link to="/services/ai-seo-hub">Explore All Services</Link>
+            </Button>
+          </div>
+
+          <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
+            <p>The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI.</p>
+          </div>
+        </div>
+      </section>
+
       <ConsultationFormSection />
       <Footer />
-      
-      {/* Floating CTA */}
-      <FloatingCTA
-        title="Ready to Transform Your Online Presence?"
-        description="Don't let another day pass with a website that fails to showcase your expertise. Join hundreds of successful service professionals."
-      />
     </div>
   );
 };
