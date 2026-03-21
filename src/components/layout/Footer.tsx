@@ -34,7 +34,7 @@ export const Footer = () => {
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              AI-powered SEO services that drive real results. Rank higher, get cited, and dominate search visibility.
+              GrowSmallBiz helps local service businesses attract more qualified leads, improve conversions, and streamline follow-up through websites, SEO, paid ads, CRM systems, automation, and AI-powered customer communication.
             </p>
           </div>
 

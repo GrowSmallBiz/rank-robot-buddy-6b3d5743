@@ -92,11 +92,12 @@ export const ConsultationFormSection = () => {
           {/* Form container with header */}
           <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
             <div className="text-center mb-8">
+              <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-4">
                 Get a <span className="text-accent">Consultation</span>
               </h2>
               <p className="text-white/80 text-lg">
-                Fill out this form, and one of our account managers will reach out to you with insights on your site.
+                Tell us a little about your business and what kind of growth support you need. We will review your inquiry and follow up with the next best step.
               </p>
             </div>
 
@@ -183,7 +184,7 @@ export const ConsultationFormSection = () => {
               disabled={isSubmitting}
               className="w-full py-6 text-lg font-bold rounded-full bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity"
             >
-              {isSubmitting ? "Submitting..." : "Submit!"} 
+              {isSubmitting ? "Submitting..." : "Request My Strategy Call"} 
               {!isSubmitting && <ArrowUpRight className="ml-2 h-5 w-5" />}
             </Button>
           </div>
