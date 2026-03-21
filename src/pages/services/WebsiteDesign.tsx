@@ -396,7 +396,7 @@ const WebsiteDesign = () => {
             subtitle="WHAT'S INCLUDED"
             title="What's Built Into Every Website"
             titleHighlight="We Deliver"
-            description="These aren't add-ons or upgrade tiers. Every site we build includes the full conversion architecture — because a website missing any of these elements has a hole in it. And because every site we deliver is designed to function as the foundation of a larger growth system, the bar for what "complete" means is set accordingly."
+            description={`These aren't add-ons or upgrade tiers. Every site we build includes the full conversion architecture — because a website missing any of these elements has a hole in it. And because every site we deliver is designed to function as the foundation of a larger growth system, the bar for what \u201Ccomplete\u201D means is set accordingly.`}
           />
 
           <div className="grid md:grid-cols-2 gap-8">
