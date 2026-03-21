@@ -36,6 +36,7 @@ import Realtors from "./pages/industries/Realtors";
 import BrandingGuidelines from "./pages/BrandingGuidelines";
 import DownloadBrandingDocx from "./pages/DownloadBrandingDocx";
 import NotFound from "./pages/NotFound";
+import IndexBackup from "./pages/IndexBackup";
 
 const queryClient = new QueryClient();
 
