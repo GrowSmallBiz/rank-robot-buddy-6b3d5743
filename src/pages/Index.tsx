@@ -513,7 +513,7 @@ const Index = () => {
       <CardCTA 
         title="Let's Build Your Growth Engine"
         description="If you want clearer strategy, stronger visibility, and better follow-up without patching together disconnected tools, start with a free strategy call."
-        buttonText="Schedule My Digital Growth Strategy Session"
+        buttonText="Schedule Strategy Call"
         buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
       />
 
