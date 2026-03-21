@@ -393,13 +393,13 @@ export const Header = () => {
             </button>
             {mobileServicesOpen && (
               <div className="pl-4 space-y-2">
-                {/* Responsive Website Design */}
+                {/* Website That Converts */}
                 <Link
                   to="/services/website-design"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
-                  Responsive Website Design
+                  Website That Converts
                 </Link>
 
                 {/* Managed AI SEO Services - nested */}

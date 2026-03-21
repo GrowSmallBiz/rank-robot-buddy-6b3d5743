@@ -680,15 +680,23 @@ const WebsiteDesign = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <p>That's what the free growth strategy call is for.</p>
-            <p>
-              In 30 minutes, we'll look at your current website, identify the specific gaps that are costing you leads, and walk you through what a conversion-focused rebuild would look like for your business. We'll also look at the bigger picture: how your website connects to your SEO, your paid traffic, and your lead generation system — and where the highest-leverage opportunities are in your specific market.
-            </p>
-            <p>
-              This isn't a website consultation. It's a growth strategy conversation. The website is almost always where it starts — because without a strong conversion foundation, nothing else performs the way it should. But the call covers the full picture: website, AI SEO, paid search, conversion strategy, and what a complete digital growth system looks like for a business like yours.
-            </p>
-            <p>No pitch deck. No pressure. No obligation. Just clarity on where you are, where you could be, and what it would take to get there.</p>
+          <div className="max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+              <div className="space-y-6">
+                <p className="text-xl font-semibold text-foreground">That's what the free growth strategy call is for.</p>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  In 30 minutes, we'll look at your current website, identify the specific gaps that are costing you leads, and walk you through what a conversion-focused rebuild would look like for your business. We'll also look at the bigger picture: how your website connects to your SEO, your paid traffic, and your lead generation system — and where the highest-leverage opportunities are in your specific market.
+                </p>
+              </div>
+              <div className="space-y-6">
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  This isn't a website consultation. It's a growth strategy conversation. The website is almost always where it starts — because without a strong conversion foundation, nothing else performs the way it should. But the call covers the full picture: website, AI SEO, paid search, conversion strategy, and what a complete digital growth system looks like for a business like yours.
+                </p>
+                <p className="text-lg font-medium text-foreground border-l-4 border-primary pl-4">
+                  No pitch deck. No pressure. No obligation. Just clarity on where you are, where you could be, and what it would take to get there.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-up" style={{ animationDelay: "0.2s" }}>
