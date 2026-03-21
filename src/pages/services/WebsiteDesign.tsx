@@ -395,35 +395,73 @@ const WebsiteDesign = () => {
             description="Every site we deliver is purpose-built around one question: what do you need a visitor to do — and what does it take to make that easy? The answer to that question shapes your website. And your website shapes everything else."
           />
 
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
-            <p>
-              Before we touch a design or write a line of copy, we do strategy. We look at your business, your market, your ideal customer, and the specific action you need your website to drive — whether that's a phone call, a form submission, a booking, or a quote request. Every decision after that is made in service of that outcome.
-            </p>
-            <p>
-              That means your website isn't built around what looks attractive to a designer. It's built around what moves a real person — someone who found you on Google or clicked your ad — to trust you quickly, understand your value clearly, and take the next step without friction.
-            </p>
-            <p>
-              In practice, that looks like this: your homepage communicates exactly what you do and who you serve within seconds of arrival. Your services are described in terms of outcomes, not just tasks. Your credibility is established through proof — real reviews, verifiable credentials, and specifics that matter to a buyer in your market. Your calls to action are clear, well-placed, and written to reduce hesitation. And your site performs just as well on a phone as it does on a desktop.
-            </p>
-            <p>
-              Your website is also built from day one to integrate with the rest of your marketing — connecting to your CRM, booking system, and tracking tools. It's the conversion hub of the Digital Dominance Method, designed to work alongside your SEO, paid advertising, and lead generation efforts — not as a standalone project handed off and forgotten.
-            </p>
-          </div>
+          <div className="max-w-5xl mx-auto animate-fade-up">
+            {/* Staggered two-column narrative */}
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2.5 rounded-lg bg-primary/10">
+                    <Search className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">Strategy First</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Before we touch a design or write a line of copy, we do strategy. We look at your business, your market, your ideal customer, and the specific action you need your website to drive — whether that's a phone call, a form submission, a booking, or a quote request. Every decision after that is made in service of that outcome.
+                </p>
+              </GlowCard>
 
-          {/* Callout boxes */}
-          <div className="max-w-4xl mx-auto mt-12 space-y-8">
-            <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up">
-              <h3 className="text-xl font-bold text-foreground mb-4">A note on how we work:</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                GrowSmallBiz builds websites as part of a broader digital growth engagement. We don't take on design-only or website-only projects. The reason is straightforward: a high-converting website, built in isolation from your SEO strategy, your paid traffic, and your lead generation infrastructure, is a foundation with nothing built on top of it. Our clients get the website and the growth system it's designed to support. If you're looking for that kind of partnership — not just a new site — the strategy call is the right place to start.
-              </p>
+              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2.5 rounded-lg bg-primary/10">
+                    <MousePointerClick className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">Built for Real People</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  That means your website isn't built around what looks attractive to a designer. It's built around what moves a real person — someone who found you on Google or clicked your ad — to trust you quickly, understand your value clearly, and take the next step without friction.
+                </p>
+              </GlowCard>
+
+              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2.5 rounded-lg bg-primary/10">
+                    <CheckCircle2 className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">Clarity at Every Level</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  In practice, that looks like this: your homepage communicates exactly what you do and who you serve within seconds of arrival. Your services are described in terms of outcomes, not just tasks. Your credibility is established through proof — real reviews, verifiable credentials, and specifics that matter to a buyer in your market. Your calls to action are clear, well-placed, and written to reduce hesitation. And your site performs just as well on a phone as it does on a desktop.
+                </p>
+              </GlowCard>
+
+              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2.5 rounded-lg bg-primary/10">
+                    <Link2 className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">Connected From Day One</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Your website is also built from day one to integrate with the rest of your marketing — connecting to your CRM, booking system, and tracking tools. It's the conversion hub of the Digital Dominance Method, designed to work alongside your SEO, paid advertising, and lead generation efforts — not as a standalone project handed off and forgotten.
+                </p>
+              </GlowCard>
             </div>
 
-            <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              <h3 className="text-xl font-bold text-foreground mb-4">Why GrowSmallBiz:</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Most web design agencies hand you a finished site and move on. GrowSmallBiz works exclusively with local service businesses — which means we're not learning your industry on your dime. We know what makes a roofing lead different from a med spa inquiry. We know what trust signals matter to a patient choosing a specialist versus a homeowner vetting a contractor. That specificity is what separates a website that looks right from one that actually performs — and it's built into every engagement we take on.
-              </p>
+            {/* Callout boxes */}
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up">
+                <h3 className="text-xl font-bold text-foreground mb-4">A note on how we work:</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  GrowSmallBiz builds websites as part of a broader digital growth engagement. We don't take on design-only or website-only projects. The reason is straightforward: a high-converting website, built in isolation from your SEO strategy, your paid traffic, and your lead generation infrastructure, is a foundation with nothing built on top of it. Our clients get the website and the growth system it's designed to support. If you're looking for that kind of partnership — not just a new site — the strategy call is the right place to start.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                <h3 className="text-xl font-bold text-foreground mb-4">Why GrowSmallBiz:</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Most web design agencies hand you a finished site and move on. GrowSmallBiz works exclusively with local service businesses — which means we're not learning your industry on your dime. We know what makes a roofing lead different from a med spa inquiry. We know what trust signals matter to a patient choosing a specialist versus a homeowner vetting a contractor. That specificity is what separates a website that looks right from one that actually performs — and it's built into every engagement we take on.
+                </p>
+              </div>
             </div>
           </div>
         </div>
