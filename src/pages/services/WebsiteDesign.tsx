@@ -292,19 +292,46 @@ const WebsiteDesign = () => {
       {/* Hero extended body copy */}
       <section className="py-16 lg:py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
-            <p>
-              When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else.
-            </p>
-            <p>
-              Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them.
-            </p>
-            <p>
-              At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you.
-            </p>
-            <p>
-              But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call.
-            </p>
+          <div className="max-w-5xl mx-auto">
+            {/* Lead statement */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 animate-fade-up">
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
+                    <Clock className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else.
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
+                    <TrendingUp className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them.
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
+                    <Wrench className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you.
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
+                    <Layers className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
