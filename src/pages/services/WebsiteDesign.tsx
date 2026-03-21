@@ -514,25 +514,40 @@ const WebsiteDesign = () => {
             description="Google Ads, SEO, referrals, social media — however a prospect finds you, what happens when they arrive on your website determines whether they become a customer."
           />
 
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
-            <p>
-              Think through the path a new customer takes before they contact you. Maybe they searched for a service in your area and found you on Google. Maybe a neighbor mentioned your name. Maybe they clicked your ad. In almost every case, the next thing they do is visit your website. That visit is the moment. And it's almost entirely within your control.
-            </p>
-            <p>
-              If your site communicates clearly — here's who we are, here's what we do, here's why we're the right choice, here's how to reach us — a meaningful percentage of those visitors will contact you. If it doesn't, they'll hesitate. And hesitation almost always ends the same way: a closed tab and a competitor's number getting dialed instead.
-            </p>
-            <p>
-              This is why your website isn't just one marketing asset among many — it's the conversion layer that your entire growth strategy runs through. Every channel feeds it. Every dollar you spend on visibility, traffic, and reach either pays off or gets wasted based on what happens when a prospect arrives.
-            </p>
-            <p>
-              A strong website makes your Google Ads more profitable — because the traffic you're paying for actually converts. It makes your SEO investment produce real leads instead of just rankings. It makes your referrals close faster, because the prospect arrives informed and leaves ready to book. It gives your social media a destination worth sending people to.
-            </p>
-            <p>
-              A weak website does the opposite to all of it. It doesn't just underperform on its own — it degrades every other marketing investment you're making at the same time.
-            </p>
-            <p>
-              This is why, at GrowSmallBiz, the website is always the first piece of the conversation — and why we build it as the foundation of a full growth system, not as a standalone deliverable. When the hub is strong, everything connected to it performs better.
-            </p>
+          <div className="max-w-5xl mx-auto animate-fade-up">
+            {/* Opening narrative — two-column */}
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  Think through the path a new customer takes before they contact you. Maybe they searched for a service in your area and found you on Google. Maybe a neighbor mentioned your name. Maybe they clicked your ad. In almost every case, the next thing they do is visit your website. That visit is the moment. And it's almost entirely within your control.
+                </p>
+                <p>
+                  If your site communicates clearly — here's who we are, here's what we do, here's why we're the right choice, here's how to reach us — a meaningful percentage of those visitors will contact you. If it doesn't, they'll hesitate. And hesitation almost always ends the same way: a closed tab and a competitor's number getting dialed instead.
+                </p>
+              </div>
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  This is why your website isn't just one marketing asset among many — it's the conversion layer that your entire growth strategy runs through. Every channel feeds it. Every dollar you spend on visibility, traffic, and reach either pays off or gets wasted based on what happens when a prospect arrives.
+                </p>
+                <p>
+                  A strong website makes your Google Ads more profitable — because the traffic you're paying for actually converts. It makes your SEO investment produce real leads instead of just rankings. It makes your referrals close faster, because the prospect arrives informed and leaves ready to book. It gives your social media a destination worth sending people to.
+                </p>
+              </div>
+            </div>
+
+            {/* Contrast callouts */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="rounded-2xl border border-destructive/20 bg-destructive/5 p-6 lg:p-8">
+                <p className="text-muted-foreground leading-relaxed">
+                  A weak website does the opposite to all of it. It doesn't just underperform on its own — it degrades every other marketing investment you're making at the same time.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 lg:p-8">
+                <p className="text-muted-foreground leading-relaxed">
+                  This is why, at GrowSmallBiz, the website is always the first piece of the conversation — and why we build it as the foundation of a full growth system, not as a standalone deliverable. When the hub is strong, everything connected to it performs better.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
