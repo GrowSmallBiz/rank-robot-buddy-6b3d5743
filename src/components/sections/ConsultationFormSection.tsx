@@ -184,7 +184,7 @@ export const ConsultationFormSection = () => {
               disabled={isSubmitting}
               className="w-full py-6 text-lg font-bold rounded-full bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity"
             >
-              {isSubmitting ? "Submitting..." : "Submit!"} 
+              {isSubmitting ? "Submitting..." : "Request My Strategy Call"} 
               {!isSubmitting && <ArrowUpRight className="ml-2 h-5 w-5" />}
             </Button>
           </div>
