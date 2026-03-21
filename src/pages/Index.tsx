@@ -250,7 +250,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
               <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl">
-                  Get Free Strategy Call
+                  Schedule Strategy Call
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
@@ -373,7 +373,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg" className="animate-fade-up">
-                Schedule My Digital Growth Strategy Session
+                Schedule Strategy Call
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </a>
@@ -442,7 +442,7 @@ const Index = () => {
       <CardCTA 
         title="Ready to Build a Smarter Growth System?"
         description="Book a free strategy call to review your current marketing, identify missed opportunities, and see what the next best steps could look like for your business."
-        buttonText="Schedule My Digital Growth Strategy Session"
+        buttonText="Schedule Strategy Call"
         buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
       />
 
@@ -513,7 +513,7 @@ const Index = () => {
       <CardCTA 
         title="Let's Build Your Growth Engine"
         description="If you want clearer strategy, stronger visibility, and better follow-up without patching together disconnected tools, start with a free strategy call."
-        buttonText="Schedule My Digital Growth Strategy Session"
+        buttonText="Schedule Strategy Call"
         buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
       />
 
