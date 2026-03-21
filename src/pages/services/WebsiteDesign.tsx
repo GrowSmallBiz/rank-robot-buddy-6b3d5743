@@ -33,6 +33,7 @@ import {
   Scale,
   Building,
   CheckCircle2,
+  Clock,
 } from "lucide-react";
 
 const CTA_URL =
