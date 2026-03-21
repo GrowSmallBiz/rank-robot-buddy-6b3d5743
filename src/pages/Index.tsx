@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
@@ -33,16 +34,15 @@ import {
   Zap,
   Megaphone,
   Star,
-  Puzzle,
+  MessageCircle,
+  Linkedin,
+  Camera,
   Layers,
   LineChart,
   Handshake,
-  Wrench,
-  HeartPulse,
-  Scale,
-  Calculator,
-  Briefcase
+  Puzzle
 } from "lucide-react";
+import { GlowCard } from "@/components/ui/glow-card";
 import { Helmet } from "react-helmet";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
@@ -54,183 +54,227 @@ const homepageStats = [
   { value: "15+", label: "Hours Saved/Week", icon: Clock },
 ];
 
-// Homepage-priority services only (per blueprint)
+// Services data
 const services = [
   {
-    title: "Website Design",
-    description: "Conversion-focused websites with clear messaging and calls-to-action built for local service businesses.",
+    title: "Website That Converts",
+    description: "Designed to convert websites with on-brand messaging and clear calls-to-action.",
     features: [
-      "Designed to Convert Visitors Into Leads",
-      "On-Brand Messaging & Clear CTAs",
-      "Mobile Responsive & Fast Loading",
-      "Built-In Call Tracking",
+      "Designed to Convert Websites",
+      "On-brand messaging",
+      "Clear Calls-to-Actions",
+      "Mobile Responsive",
+      "Fast Loading Speed",
+      "Call Tracking",
     ],
     href: "/services/website-design",
     icon: Globe,
   },
   {
-    title: "Local SEO",
-    description: "AI-powered SEO with Google Business Profile optimization, citations, and local search strategies.",
+    title: "AI Optimized SEO",
+    description: "Comprehensive SEO with competitors analysis, GBP optimization, and AI-powered strategies.",
     features: [
-      "Google Business Profile Optimization",
-      "Local Citation Building",
-      "AI-Powered Keyword Strategy",
-      "Answer & Generative Engine Optimization",
+      "Competitors Analysis & Keywords Strategy",
+      "GBP & Map Pack Optimization",
+      "Citations & Authority Building",
+      "Answer Engine Optimization (AEO)",
+      "Generative Engine Optimization (GEO)",
     ],
-    href: "/services/local-seo",
-    icon: MapPin,
+    href: "/services/technical-seo",
+    icon: Search,
   },
   {
-    title: "Google & Meta Ads",
-    description: "Strategic paid campaigns with full-funnel tracking to generate qualified leads consistently.",
+    title: "Google + Facebook/Instagram Ads",
+    description: "Strategic paid campaigns with full-funnel tracking and lead nurturing.",
     features: [
-      "Google & Bing PPC Campaigns",
-      "Facebook & Instagram Ads",
-      "Retargeting & Lead Nurturing",
-      "Transparent Performance Dashboard",
+      "Facebook/Instagram Ads",
+      "Google Local Service Ads",
+      "Google & Bing PPC Ads",
+      "Proactive Retargeting Campaigns",
+      "Email & SMS Lead Nurturing",
+      "Transparent Dashboard",
     ],
     href: "/services/paid-media",
     icon: Megaphone,
   },
   {
     title: "Reputation Management",
-    description: "Build trust and grow your online reputation with automated review collection and AI-powered responses.",
+    description: "Build trust and control your online reputation with automated review management.",
     features: [
-      "Automated Review Requests",
-      "AI-Powered Review Responses",
-      "Monitor & Manage Online Reputation",
-      "Build Trust Signals for Search",
+      "Build Trust Signal",
+      "Control Your Online Reputation",
+      "Review Requests & Reminders on Auto Pilot",
+      "Auto Review Reply Powered by AI",
+      "Automated Email & SMS Followups",
     ],
     href: "/services/reputation",
     icon: Star,
   },
   {
-    title: "CRM & Automation",
-    description: "Convert more leads into paying customers with intelligent follow-up and pipeline management.",
+    title: "Social Media Management",
+    description: "Stay consistent with scheduled organic posts and platform-specific strategies.",
     features: [
-      "Automated Email & SMS Follow-Ups",
-      "Lead Nurturing & Pipeline Management",
-      "Smart Templates & Sequences",
-      "Never Lose a Lead Again",
+      "Scheduled Organic Posts",
+      "Professional Content Tailored to Each Platform",
+      "Platform-Specific Strategies",
+      "Boost Engagement and Build Trust",
+      "Improve Visibility and Local SEO",
     ],
-    href: "/services/crm",
-    icon: Users,
+    href: "/services/social-media",
+    icon: MessageCircle,
   },
   {
-    title: "AI Receptionist",
-    description: "Never miss a lead with 24/7 AI-powered responses across calls, chat, SMS, and social media.",
+    title: "AI Receptionist & Conversational AI",
+    description: "Never miss a lead with 24/7 instant responses and AI-powered automation across calls, website chat, SMS, and social media.",
     features: [
+      "Never Miss a Lead With 24/7 Instant Responses",
       "AI Voice Receptionist for Inbound Calls",
-      "Website Chat, SMS & Social Messaging",
-      "Qualify & Book Appointments 24/7",
+      "AI Chat on Website, SMS & Social Media",
+      "Qualify Prospects & Book Appointments 24×7",
       "Free Up Your Team's Time",
     ],
     href: "/services/ai-employee",
     icon: Bot,
   },
-];
-
-// Industries (focused, per blueprint)
-const industries = [
   {
-    title: "Home Services",
-    description: "HVAC, plumbing, roofing, remodeling, and more — get found and booked by homeowners in your area.",
-    icon: Wrench,
-    href: "/industries/home-services",
+    title: "AI Client Growth System",
+    description: "Convert more leads into paying customers with intelligent automation.",
+    features: [
+      "Convert More Leads Into Paying Customers",
+      "Email & SMS Templates",
+      "Automated Email & SMS followups 24×7",
+      "Lead Nurturing & Pipeline Management",
+    ],
+    href: "/services/crm",
+    icon: Users,
   },
   {
-    title: "Healthcare & Wellness",
-    description: "Dental, chiropractic, med spa, and wellness practices — attract and retain more patients.",
-    icon: HeartPulse,
-    href: "/industries/dental",
+    title: "LinkedIn LeadGen",
+    description: "Connect with decision-makers and automate outreach with a personal touch.",
+    features: [
+      "Connect With The Right Decision-Makers",
+      "Build Highly Targeted Lead Lists",
+      "Automate Outreach With A Personal Touch",
+      "Nurture Leads With Consistent Follow-Ups",
+      "Stay Visible And Drive More Booked Calls",
+    ],
+    href: "/services/linkedin",
+    icon: Linkedin,
+    comingSoon: true,
   },
   {
-    title: "Legal",
-    description: "Law firms and attorneys — build authority, generate consultations, and grow your practice.",
-    icon: Scale,
-    href: "/industries/realtors",
-  },
-  {
-    title: "Accounting & Financial Services",
-    description: "CPAs, bookkeepers, and financial advisors — become the trusted local choice.",
-    icon: Calculator,
-    href: "/industries/realtors",
-  },
-  {
-    title: "Professional Services",
-    description: "Consultants, agencies, and B2B service providers — stand out and win more clients.",
-    icon: Briefcase,
-    href: "/industries/realtors",
-  },
-];
-
-// How It Works steps (per blueprint)
-const processSteps = [
-  {
-    step: "01",
-    title: "Free Strategy Call",
-    description: "We learn about your business, goals, and current marketing. No pressure, just clarity.",
-    icon: PhoneCall,
-  },
-  {
-    step: "02",
-    title: "Review & Analysis",
-    description: "We audit your online presence, competitors, and opportunities to find quick wins and long-term growth paths.",
-    icon: Search,
-  },
-  {
-    step: "03",
-    title: "Custom Growth Plan",
-    description: "You receive a tailored marketing plan with clear priorities, timelines, and expected outcomes.",
-    icon: Target,
-  },
-  {
-    step: "04",
-    title: "Implementation & Optimization",
-    description: "We execute, monitor, and continuously optimize your campaigns to maximize results.",
-    icon: TrendingUp,
+    title: "Branding Photo+Video",
+    description: "Professional headshots and branding photography that builds trust.",
+    features: [
+      "Professional Headshots",
+      "Personal Branding Portraits",
+      "Team Photography",
+      "High-Quality Images For Trust & Credibility",
+    ],
+    href: "https://www.680headshots.com/",
+    icon: Camera,
+    external: true,
   },
 ];
 
-// Homepage FAQs (high-intent, concise per blueprint)
+// Homepage FAQs based on growsmallbiz.io
 const homepageFAQs = [
   {
-    question: "What services does GrowSmallBiz offer?",
-    answer: "We provide an integrated digital marketing system for local service businesses: website design, local SEO, Google and Meta ads, reputation management, CRM and automation, and AI-powered lead handling — all working together as one connected platform."
+    question: "What makes GrowSmallBiz different from other digital marketing agencies?",
+    answer: "As a specialized agency focused exclusively on local small businesses, we understand the unique challenges you face. Our integrated marketing ecosystem replaces fragmented tools with a cohesive system that tracks every lead from first click to final sale. Unlike general agencies, we specialize in helping local professional service businesses dominate their markets with strategy, people and process that actually work for your type of business."
   },
   {
-    question: "Who do you work with?",
-    answer: "We specialize in local service businesses — home services, healthcare and wellness practices, legal firms, accounting and financial services, and professional service providers. If you serve customers in a local area, we can help you grow."
+    question: "Do I really need an integrated digital marketing approach?",
+    answer: "Absolutely. Most businesses struggle with scattered tools that don't communicate, lost leads in manual handoffs, and wasted ad spend without proper tracking. Our integrated ecosystem eliminates these problems by creating a seamless customer journey from first ad click through landing page, nurturing, and final sale - all automated and trackable."
+  },
+  {
+    question: "What types of businesses do you work with?",
+    answer: "We specialize in local professional service businesses including accounting firms, law offices, consulting practices, healthcare providers, contractors, and other service-based businesses. Our clients consistently see 2x, 3x, and even 4x growth in their customer base through our proven Digital Dominance Method."
+  },
+  {
+    question: "How do you help businesses achieve 'digital dominance' in their local market?",
+    answer: "Our Digital Dominance Method combines strategic web design, aggressive SEO targeting, precision-focused local ads, community-building social media, and reputation management. When every piece of your digital presence works together with laser focus on your local market, you don't just grow – you become the obvious choice for customers in your area."
+  },
+  {
+    question: "What's included in your complete growth package?",
+    answer: "Our comprehensive package includes: conversion-optimized website design, SEO optimization with local focus, paid traffic management (Google, Facebook, Instagram, LinkedIn), AI-powered CRM with 24/7 automation, smart dashboard analytics, and professional branding photography/videography. Everything works together as one integrated system."
+  },
+  {
+    question: "How quickly can you start working on my business?",
+    answer: "After our initial consultation and agreement, we begin with a 2-3 week strategic onboarding phase. Website development and SEO optimization typically launch by week 3-4, with paid advertising campaigns going live once we have proper tracking and conversion systems in place."
+  },
+  {
+    question: "What kind of results can I expect?",
+    answer: "Our clients consistently see 2x, 3x, and even 4x growth in their customer base. While specific results vary by industry and market conditions, our integrated approach typically produces measurable improvements in visibility, lead generation, conversion rates, and revenue growth within the first 6-12 months."
   },
   {
     question: "How long does it take to see results?",
-    answer: "Paid advertising campaigns typically show improvements within 2–4 weeks. SEO results build over 60–90 days. Most clients see meaningful, measurable growth within the first 3 months across all channels."
+    answer: "Results timeline varies by marketing channel. Paid advertising campaigns typically show performance improvements within 3-60 days. SEO results follow a longer trajectory, with incremental improvements beginning around 60 days onwards. Most clients see meaningful, measurable results within 3 months across all channels."
+  },
+];
+// Growth steps data
+const growthSteps = [
+  {
+    title: "Increase Visibility",
+    description: "Get found across search, maps, and social media platforms",
+    icon: Eye,
   },
   {
-    question: "Do I need to use all your services together?",
-    answer: "No — we tailor your plan to your needs and budget. That said, our clients see the best results when their marketing channels work together as a connected system rather than in isolation."
+    title: "Drive Leads",
+    description: "Attract new prospects through targeted traffic generation",
+    icon: UserPlus,
   },
   {
-    question: "What happens on the free strategy call?",
-    answer: "We review your current online presence, discuss your goals, and identify the biggest opportunities for growth. You'll leave the call with clear next steps — whether or not you decide to work with us."
+    title: "Convert Leads",
+    description: "Turn more leads into paying customers with nurturing and automation",
+    icon: RefreshCw,
   },
   {
-    question: "How is GrowSmallBiz different from other agencies?",
-    answer: "We focus exclusively on local service businesses. Our connected system replaces fragmented tools with one integrated platform — so nothing falls through the cracks. You get full transparency, real reporting, and a dedicated team that understands your market."
+    title: "Grow Revenue",
+    description: "Boost lifetime value through upsells, reviews, and retention",
+    icon: DollarSign,
   },
+];
+
+// Curated blog posts from different service areas for homepage
+const homepageBlogPosts = [
+  {
+    title: "How AI Receptionists Are Revolutionizing Small Business",
+    excerpt: "Discover how AI-powered virtual receptionists help small businesses capture more leads, reduce costs, and provide 24/7 customer service.",
+    category: "AI Automation",
+    author: "Sarah Mitchell",
+    date: "Dec 30, 2025",
+    readTime: "7 min read"
+  },
+  {
+    title: "The Complete Guide to AI SEO in 2025",
+    excerpt: "Learn how AI is transforming search engine optimization and what your business needs to do to stay ahead of the competition.",
+    category: "AI SEO",
+    author: "Michael Chen",
+    date: "Dec 28, 2025",
+    readTime: "8 min read"
+  },
+  {
+    title: "Maximizing ROI with Google and Facebook Ads",
+    excerpt: "Strategic paid campaigns with full-funnel tracking can transform your lead generation. Here's how to get the most from your ad spend.",
+    category: "Paid Media",
+    author: "Emily Rodriguez",
+    date: "Dec 22, 2025",
+    readTime: "6 min read"
+  }
 ];
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>GrowSmallBiz | AI-Powered Digital Marketing for Local Service Businesses</title>
-        <meta name="description" content="Get more leads, stronger visibility, and better conversion with AI-powered digital marketing built for local service businesses. Website design, SEO, ads, CRM, and AI automation — all in one connected system." />
+        <title>GrowSmallBiz | Digital Marketing & AI Automation for Local Service Businesses</title>
+        <meta name="description" content="Done-for-You marketing and AI automation for local service businesses. Achieve digital dominance with AI-powered SEO, paid ads, reputation management, and 24/7 AI assistants." />
       </Helmet>
       <PageJsonLd
         pageType="WebPage"
-        name="GrowSmallBiz | AI-Powered Digital Marketing for Local Service Businesses"
-        description="Get more leads, stronger visibility, and better conversion with AI-powered digital marketing built for local service businesses."
+        name="GrowSmallBiz | Digital Marketing & AI Automation for Local Service Businesses"
+        description="Done-for-You marketing and AI automation for local service businesses. AI-powered SEO, paid ads, reputation management, and 24/7 AI assistants."
         url="/"
         breadcrumbs={[]}
       />
@@ -242,7 +286,7 @@ const Index = () => {
             "name": "GrowSmallBiz Digital Marketing",
             "url": "https://grow-small-biz.org",
             "telephone": "+1-925-886-3724",
-            "description": "AI-powered digital marketing agency specializing in local service businesses.",
+            "description": "AI-powered SEO and digital marketing agency specializing in local service businesses.",
             "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
@@ -258,13 +302,16 @@ const Index = () => {
       </Helmet>
       <Header />
 
-      {/* ========== 1. HERO SECTION ========== */}
+      {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
+        {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
         <div className="absolute inset-0 bg-background/85" />
+        
+        {/* Background Effects */}
         <div className="absolute top-1/4 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
 
@@ -273,28 +320,28 @@ const Index = () => {
             <div className="animate-fade-up">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
                 <Zap className="w-4 h-4" />
-                AI-Powered Marketing for Local Businesses
+                Done-for-You Digital Marketing
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              More Leads. Stronger Visibility.{" "}
-              <span className="text-gradient">Faster Growth.</span>
+              Dominate Your Local Market With{" "}
+              <span className="text-gradient">AI-Powered Growth</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up delay-200">
-              The Connected Digital Marketing System Built for Local Service Businesses
+              The Complete Marketing System for Local Service Businesses
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
-              AI-powered SEO, strategic paid ads, reputation management, 24/7 AI receptionist, 
-              and automated CRM — all working together so you get found, get chosen, and grow.
+              AI-powered SEO, strategic paid ads, 24/7 AI receptionist, and automated CRM — 
+              all working together to make you the #1 choice in your market.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
               <Link to="/free-assessment">
                 <Button variant="hero" size="xl">
-                  Get Free Strategy Call
+                  Schedule FREE Strategy Session
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
@@ -308,7 +355,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ========== 2. PROBLEM → SOLUTION COMPARISON ========== */}
+      {/* Fragmented vs Integrated Comparison Section */}
       <section className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10">
         <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -318,26 +365,26 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">From Fragmented to Focused</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Stop Juggling Tools. Start Growing.
+              Marketing That Attracts and Retains
             </h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Fragmented Marketing */}
+            {/* Fragmented Approach */}
             <div className="bg-background/80 border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.3)]">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center">
                   <XCircle className="w-6 h-6 text-destructive" />
                 </div>
-                <h3 className="text-xl font-display font-bold text-foreground">Fragmented Marketing</h3>
+                <h3 className="text-xl font-display font-bold text-foreground">The Fragmented Approach</h3>
               </div>
               <ul className="space-y-4">
                 {[
-                  { title: "Too Many Tools:", desc: "Juggling 5–8 platforms that don't talk to each other" },
-                  { title: "Leads Slip Through:", desc: "Prospects enter one channel and get lost before anyone follows up" },
-                  { title: "Wasted Ad Budget:", desc: "Running campaigns without knowing what's actually driving revenue" },
-                  { title: "Time Drain:", desc: "Spending 15+ hours a week managing marketing instead of serving clients" },
-                  { title: "Inconsistent Results:", desc: "Feast-or-famine lead flow with no predictable pipeline" },
+                  { title: "Scattered Tools:", desc: "Using 8+ different platforms that don't communicate" },
+                  { title: "Lost Opportunities:", desc: "Leads entering through one channel but getting lost in manual handoffs" },
+                  { title: "Wasted Ad Spend:", desc: "Running campaigns without proper tracking from click to client" },
+                  { title: "Time Drain:", desc: "Spending 15+ hours/week managing marketing instead of serving clients" },
+                  { title: "Inconsistent Results:", desc: "Feast or famine cycles with unpredictable lead flow" },
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-muted-foreground">
                     <XCircle className="w-5 h-5 text-destructive/60 shrink-0 mt-0.5" />
@@ -347,7 +394,7 @@ const Index = () => {
               </ul>
             </div>
 
-            {/* Connected Growth System */}
+            {/* Integrated Ecosystem */}
             <div className="bg-background/80 border-2 border-primary/30 rounded-2xl p-8 relative animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]" style={{ animationDelay: "0.1s" }}>
               <div className="absolute -top-4 left-8 px-4 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">
                 Our Solution
@@ -356,15 +403,15 @@ const Index = () => {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                   <CheckCircle2 className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-display font-bold text-foreground">Connected Growth System</h3>
+                <h3 className="text-xl font-display font-bold text-foreground">Our Integrated Ecosystem</h3>
               </div>
               <ul className="space-y-4">
                 {[
-                  { title: "One Connected Platform:", desc: "Every channel feeds the same pipeline — no gaps, no handoffs" },
-                  { title: "Automated Follow-Up:", desc: "Leads get instant responses 24/7, even when your team is off the clock" },
-                  { title: "Full Attribution:", desc: "See exactly which campaigns bring real customers so you invest in what works" },
-                  { title: "Hands-Off Operation:", desc: "Your marketing runs automatically while you focus on your business" },
-                  { title: "Predictable Growth:", desc: "Consistent lead flow that builds a reliable, growing pipeline" },
+                  { title: "Complete Customer Journey:", desc: "From first ad click → landing page → nurturing → sale → client" },
+                  { title: "No Manual Handoffs:", desc: "Everything flows automatically through your integrated pipeline" },
+                  { title: "Full Attribution:", desc: "Track every lead from source to revenue, optimizing what works" },
+                  { title: "Hands-Off Operation:", desc: "Your marketing runs 24/7 while you focus on client delivery" },
+                  { title: "Predictable Growth:", desc: "Systematic lead generation creates consistent pipeline flow" },
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-foreground">
                     <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -377,159 +424,24 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ========== 3. CORE SERVICES OVERVIEW ========== */}
-      <section id="services" className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10">
-        <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
-            <p className="text-primary font-medium mb-4">What We Do</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Everything You Need to{" "}
-              <span className="text-gradient">Grow Locally</span>
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Six core services that work together as one connected system — so nothing falls through the cracks.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="backdrop-blur-sm rounded-2xl p-6 space-y-4 animate-fade-up relative transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
-                style={{ animationDelay: `${index * 0.05}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}
-              >
-                <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-ghl-icon" />
-                </div>
-                <h3 className="font-display font-semibold text-foreground text-xl">{service.title}</h3>
-                <p className="text-sm text-muted-foreground">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <CheckCircle2 className="w-4 h-4 text-ghl-icon shrink-0 mt-0.5" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to={service.href}>
-                  <Button variant="outline" size="sm" className="w-full mt-4 border-ghl-icon/50 hover:bg-ghl-icon/10 hover:border-ghl-icon">
-                    Learn More
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ========== 4. INDUSTRIES WE SERVE ========== */}
+      {/* Growth Steps Section */}
       <section className="section-dark">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
-            <p className="text-primary font-medium mb-4">Industries We Serve</p>
+            <p className="text-primary font-medium mb-4">Our Digital Dominance Method</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Built for{" "}
-              <span className="text-gradient">Local Service Businesses</span>
+              We Help Local Businesses Grow Using Our{" "}
+              <span className="text-gradient">Proven Method</span>
             </h2>
-            <p className="text-lg text-muted-foreground">
-              We understand your market, your customers, and what it takes to win locally.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-6xl mx-auto">
-            {industries.map((industry, index) => (
-              <Link
-                key={index}
-                to={industry.href}
-                className="bg-background/80 border border-ghl-icon rounded-xl p-6 text-center space-y-4 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-14 h-14 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <industry.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="font-display font-semibold text-foreground text-base">{industry.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{industry.description}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ========== 5. WHY GROWSMALLBIZ / DIFFERENTIATORS + STATS ========== */}
-      <WhyChooseSection 
-        title="Why Local Businesses Choose GrowSmallBiz"
-        subtitle="Your Connected Growth Partner"
-        description="We replace fragmented marketing with one integrated system — built for local service businesses that want real results, real transparency, and real growth."
-        items={[
-          {
-            title: "One Connected System",
-            description: "Your website, SEO, ads, CRM, and AI tools all work together in one platform — no gaps, no data silos.",
-            icon: Layers,
-          },
-          {
-            title: "Speed to Lead",
-            description: "AI-powered follow-up ensures every lead gets an instant response — 24/7, even after hours.",
-            icon: Zap,
-          },
-          {
-            title: "Full Transparency",
-            description: "You see exactly where every dollar goes and how it performs. No black box reporting.",
-            icon: Eye,
-          },
-          {
-            title: "Local Business Experts",
-            description: "We focus exclusively on local service businesses. We know your market, your customers, and what works.",
-            icon: Target,
-          },
-          {
-            title: "Measurable Results",
-            description: "Advanced call tracking and attribution show which campaigns bring real customers — so we double down on what works.",
-            icon: LineChart,
-          },
-          {
-            title: "Automation That Saves Time",
-            description: "From review requests to lead follow-up to appointment booking — we automate the tasks that drain your time.",
-            icon: RefreshCw,
-          },
-        ]}
-      />
-
-      <AnimatedStatsSection stats={homepageStats} columns={4} />
-
-      {/* ========== 6. SOCIAL PROOF: TESTIMONIALS + CASE STUDIES ========== */}
-      <TestimonialsSection 
-        title="What Our Clients Say"
-        subtitle="Real Results, Real Businesses"
-      />
-
-      {/* Real Results Across Home Service Campaigns — PRESERVED */}
-      <HomeCaseStudySection />
-
-      {/* ========== 7. HOW IT WORKS ========== */}
-      <section className="section-dark">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
-            <p className="text-primary font-medium mb-4">How It Works</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              From Strategy Call to{" "}
-              <span className="text-gradient">Measurable Growth</span>
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              A simple, proven process to get your marketing working — without the guesswork.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {processSteps.map((step, index) => (
+            {growthSteps.map((step, index) => (
               <div
                 key={index}
                 className="bg-background/80 border border-ghl-icon rounded-xl p-6 text-center space-y-4 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-primary/30 font-display font-bold text-4xl">{step.step}</div>
                 <div className="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center">
                   <step.icon className="w-8 h-8 text-primary" />
                 </div>
@@ -540,9 +452,15 @@ const Index = () => {
           </div>
 
           <div className="max-w-3xl mx-auto text-center">
+            <p className="text-lg text-muted-foreground mb-8 italic animate-fade-up">
+              Why settle for competing when you can dominate? Our all-in-one digital package is specifically 
+              designed to make you the undisputed leader in your local area. We combine strategic web design, 
+              aggressive SEO targeting, precision-focused local ads, community-building social media, and 
+              reputation management that makes competitors irrelevant.
+            </p>
             <Link to="/free-assessment">
               <Button variant="hero" size="lg" className="animate-fade-up">
-                Get Free Strategy Call
+                Schedule FREE Strategy Session
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
@@ -550,35 +468,119 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ========== 8. FOUNDER CREDIBILITY + MID-PAGE CTA ========== */}
+      {/* Services Section */}
+      <section id="services" className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">Strategic Digital Marketing Solutions</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+              We Deliver as Your{" "}
+              <span className="text-gradient">Growth Partner</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="backdrop-blur-sm rounded-2xl p-6 space-y-4 animate-fade-up relative transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+                style={{ animationDelay: `${index * 0.05}s`, border: '2px solid #17a2b8ff', backgroundColor: '#2d465cff' }}
+              >
+                {service.comingSoon && (
+                  <div className="absolute -top-3 right-4 px-3 py-1 bg-muted text-muted-foreground text-xs font-medium rounded-full">
+                    Coming Soon
+                  </div>
+                )}
+                <div className="w-12 h-12 rounded-xl bg-ghl-icon/20 flex items-center justify-center">
+                  <service.icon className="w-6 h-6 text-ghl-icon" />
+                </div>
+                <h3 className="font-display font-semibold text-foreground text-xl">{service.title}</h3>
+                <p className="text-sm text-muted-foreground">{service.description}</p>
+                <ul className="space-y-2">
+                  {service.features.slice(0, 4).map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-ghl-icon shrink-0 mt-0.5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                {service.external ? (
+                  <a href={service.href} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="w-full mt-4 border-ghl-icon/50 hover:bg-ghl-icon/10 hover:border-ghl-icon">
+                      Learn More
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </a>
+                ) : !service.comingSoon && (
+                  <Link to={service.href}>
+                    <Button variant="outline" size="sm" className="w-full mt-4 border-ghl-icon/50 hover:bg-ghl-icon/10 hover:border-ghl-icon">
+                      Learn More
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mid-Page CardCTA - After Services */}
       <CardCTA 
-        title="Let's Build Your Growth Engine"
-        description="Get a free strategy call and discover how our connected marketing system can help your local business get more leads, better visibility, and stronger conversion."
-        buttonText="Get Free Strategy Call"
+        title="Ready to Dominate Your Local Market?"
+        description="Get a free digital growth strategy session and discover how our integrated marketing system can help you become the #1 choice in your area."
+        buttonText="Schedule FREE Strategy Session"
         buttonHref="/free-assessment"
       />
 
-      {/* ========== 9. FAQ ACCORDION ========== */}
+      <WhyChooseSection 
+        title="Why Choose GrowSmallBiz for Your Business Growth"
+        subtitle="Your Growth Marketing Partner"
+        description="Our integrated marketing ecosystem systematically increases your visibility, generates qualified leads, converts prospects into loyal clients, and maximizes customer lifetime value."
+      />
+
+      <AnimatedStatsSection stats={homepageStats} columns={4} />
+
+      {/* Testimonials */}
+      <TestimonialsSection />
+
+
+      {/* Case Studies */}
+      <HomeCaseStudySection />
+
+      {/* Blog Section */}
+      <BlogSection 
+        posts={homepageBlogPosts}
+        title="Latest Insights From Our Experts"
+        subtitle="Expert tips and strategies to grow your local service business"
+        showViewAll={true}
+        viewAllLink="/blog"
+      />
+
+      {/* FAQ Section */}
       <FAQSection 
         title="Frequently Asked Questions"
-        subtitle="Answers to the most common questions from local business owners"
+        subtitle="Everything you need to know about our Digital Marketing Services"
         faqs={homepageFAQs}
         contactCTA={{
           ...baseContactCTA,
           title: "Have more questions?",
-          description: "We're here to help. Let's talk about what's possible for your business.",
+          description: "We're here to help! Reach out to us for a personalized consultation.",
           tagline: "Let's grow your business together.",
         }}
       />
 
-      {/* ========== 10. FINAL CTA + CONSULTATION FORM ========== */}
+      {/* Final CardCTA */}
       <CardCTA 
-        title="Ready to Grow Your Local Business?"
+        title="Let's Build Your Growth Engine"
         description="Stop losing leads to competitors with faster responses. Get AI-powered marketing that works 24/7 to grow your business."
-        buttonText="Get Free Strategy Call"
+        buttonText="Schedule FREE Strategy Session"
         buttonHref="/free-assessment"
       />
 
+      {/* Consultation Form Section */}
       <ConsultationFormSection />
 
       <Footer />
