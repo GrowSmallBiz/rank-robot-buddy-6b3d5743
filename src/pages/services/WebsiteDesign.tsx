@@ -346,28 +346,41 @@ const WebsiteDesign = () => {
             description="There's a difference between a website that looks good and a website that works. Most local businesses have the first kind."
           />
 
-          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
-            <p>
-              Here's how most local business websites get built: a developer creates something visually clean, the owner approves it, and it goes live. Nobody asks whether the page structure guides visitors toward a decision. Nobody asks whether trust is being established quickly enough — or whether a prospect on a mobile phone at 9pm can find a phone number in under three seconds.
-            </p>
-            <p>
-              The result is a site that sits there — looking fine, doing nothing.
-            </p>
-            <p>
-              This is not a minor issue. Every visitor who lands on your site and leaves without contacting you is a missed opportunity. And when you're running Google Ads, investing in SEO, or counting on referrals to drive traffic, a website that doesn't convert is quietly draining every dollar you spend on marketing.
-            </p>
-            <p className="font-medium text-foreground">Here's what a non-converting website typically looks like:</p>
-            <ul className="space-y-3">
-              {problemBullets.map((bullet, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <AlertTriangle className="h-5 w-5 text-primary mt-1 shrink-0" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-            <p>
-              A website that doesn't convert isn't a neutral investment. It's an active liability — costing you leads, bookings, and revenue every day it stays the way it is. And it's undermining every other marketing channel you're running at the same time.
-            </p>
+          <div className="max-w-5xl mx-auto animate-fade-up">
+            {/* Two-column narrative */}
+            <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 mb-12">
+              <div className="lg:col-span-3 space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  Here's how most local business websites get built: a developer creates something visually clean, the owner approves it, and it goes live. Nobody asks whether the page structure guides visitors toward a decision. Nobody asks whether trust is being established quickly enough — or whether a prospect on a mobile phone at 9pm can find a phone number in under three seconds.
+                </p>
+                <p>
+                  The result is a site that sits there — looking fine, doing nothing.
+                </p>
+                <p>
+                  This is not a minor issue. Every visitor who lands on your site and leaves without contacting you is a missed opportunity. And when you're running Google Ads, investing in SEO, or counting on referrals to drive traffic, a website that doesn't convert is quietly draining every dollar you spend on marketing.
+                </p>
+              </div>
+              <div className="lg:col-span-2">
+                <div className="rounded-2xl border-2 border-destructive/30 bg-destructive/5 p-6 lg:p-8 h-full">
+                  <p className="font-semibold text-foreground mb-4 text-lg">Here's what a non-converting website typically looks like:</p>
+                  <ul className="space-y-3">
+                    {problemBullets.map((bullet, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <AlertTriangle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                        <span className="text-muted-foreground text-sm leading-relaxed">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Closing callout */}
+            <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 lg:p-8 text-center">
+              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
+                A website that doesn't convert isn't a neutral investment. It's an active liability — costing you leads, bookings, and revenue every day it stays the way it is. And it's undermining every other marketing channel you're running at the same time.
+              </p>
+            </div>
           </div>
         </div>
       </section>
