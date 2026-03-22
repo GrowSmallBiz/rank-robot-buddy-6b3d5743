@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -5,39 +6,41 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
 import Index from "./pages/Index";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import TechnicalSEO from "./pages/services/TechnicalSEO";
-import OnPageSEO from "./pages/services/OnPageSEO";
-import AEO from "./pages/services/AEO";
-import GEO from "./pages/services/GEO";
-import LocalSEO from "./pages/services/LocalSEO";
-import LinkBuilding from "./pages/services/LinkBuilding";
-import PaidMedia from "./pages/services/PaidMedia";
-import SocialMedia from "./pages/services/SocialMedia";
-import WebsiteDesign from "./pages/services/WebsiteDesign";
-import ManagedAISEO from "./pages/services/ManagedAISEO";
-import ManagedSEOPricing from "./pages/services/ManagedSEOPricing";
-import ReputationManagement from "./pages/services/ReputationManagement";
-import AIReceptionist from "./pages/services/AIReceptionist";
-import CRM from "./pages/services/CRM";
-import LinkedInOutreach from "./pages/services/LinkedInOutreach";
-import QuadBots from "./pages/services/QuadBots";
-import FreeAssessment from "./pages/FreeAssessment";
-import HVAC from "./pages/industries/HVAC";
-import HomeServices from "./pages/industries/HomeServices";
-import Dental from "./pages/industries/Dental";
-import MedSpa from "./pages/industries/MedSpa";
-import Chiropractor from "./pages/industries/Chiropractor";
-import AutoRepair from "./pages/industries/AutoRepair";
-import Photographers from "./pages/industries/Photographers";
-import Realtors from "./pages/industries/Realtors";
-import BrandingGuidelines from "./pages/BrandingGuidelines";
-import DownloadBrandingDocx from "./pages/DownloadBrandingDocx";
-import NotFound from "./pages/NotFound";
-import IndexBackup from "./pages/IndexBackup";
-import Services from "./pages/Services";
+
+// Lazy-load all non-homepage routes for code splitting
+const About = lazy(() => import("./pages/About"));
+const Blog = lazy(() => import("./pages/Blog"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Services = lazy(() => import("./pages/Services"));
+const TechnicalSEO = lazy(() => import("./pages/services/TechnicalSEO"));
+const OnPageSEO = lazy(() => import("./pages/services/OnPageSEO"));
+const AEO = lazy(() => import("./pages/services/AEO"));
+const GEO = lazy(() => import("./pages/services/GEO"));
+const LocalSEO = lazy(() => import("./pages/services/LocalSEO"));
+const LinkBuilding = lazy(() => import("./pages/services/LinkBuilding"));
+const PaidMedia = lazy(() => import("./pages/services/PaidMedia"));
+const SocialMedia = lazy(() => import("./pages/services/SocialMedia"));
+const WebsiteDesign = lazy(() => import("./pages/services/WebsiteDesign"));
+const ManagedAISEO = lazy(() => import("./pages/services/ManagedAISEO"));
+const ManagedSEOPricing = lazy(() => import("./pages/services/ManagedSEOPricing"));
+const ReputationManagement = lazy(() => import("./pages/services/ReputationManagement"));
+const AIReceptionist = lazy(() => import("./pages/services/AIReceptionist"));
+const CRM = lazy(() => import("./pages/services/CRM"));
+const LinkedInOutreach = lazy(() => import("./pages/services/LinkedInOutreach"));
+const QuadBots = lazy(() => import("./pages/services/QuadBots"));
+const FreeAssessment = lazy(() => import("./pages/FreeAssessment"));
+const HVAC = lazy(() => import("./pages/industries/HVAC"));
+const HomeServices = lazy(() => import("./pages/industries/HomeServices"));
+const Dental = lazy(() => import("./pages/industries/Dental"));
+const MedSpa = lazy(() => import("./pages/industries/MedSpa"));
+const Chiropractor = lazy(() => import("./pages/industries/Chiropractor"));
+const AutoRepair = lazy(() => import("./pages/industries/AutoRepair"));
+const Photographers = lazy(() => import("./pages/industries/Photographers"));
+const Realtors = lazy(() => import("./pages/industries/Realtors"));
+const BrandingGuidelines = lazy(() => import("./pages/BrandingGuidelines"));
+const DownloadBrandingDocx = lazy(() => import("./pages/DownloadBrandingDocx"));
+const IndexBackup = lazy(() => import("./pages/IndexBackup"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
@@ -46,7 +49,9 @@ const AppLayout = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <Outlet />
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
     </TooltipProvider>
   </QueryClientProvider>
 );
