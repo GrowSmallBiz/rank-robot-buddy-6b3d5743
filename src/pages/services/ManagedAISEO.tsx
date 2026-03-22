@@ -216,7 +216,7 @@ const ManagedAISEO = () => {
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-foreground leading-tight animate-fade-up">
                 The Complete Managed AI SEO System for{" "}
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <span className="text-transparent bg-clip-text bg-gradient-primary">
                   Local Service Businesses
                 </span>
               </h1>

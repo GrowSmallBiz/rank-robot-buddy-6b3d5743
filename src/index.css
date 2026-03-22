@@ -100,7 +100,7 @@
   }
 
   .bg-gradient-primary {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(199 89% 48%) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(210 35% 62%) 100%);
   }
 
   .bg-gradient-dark {
