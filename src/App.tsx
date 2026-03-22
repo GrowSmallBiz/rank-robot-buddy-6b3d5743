@@ -17,7 +17,7 @@ import LinkBuilding from "./pages/services/LinkBuilding";
 import PaidMedia from "./pages/services/PaidMedia";
 import SocialMedia from "./pages/services/SocialMedia";
 import WebsiteDesign from "./pages/services/WebsiteDesign";
-import AISEOHub from "./pages/services/AISEOHub";
+import ManagedAISEO from "./pages/services/ManagedAISEO";
 import ManagedSEOPricing from "./pages/services/ManagedSEOPricing";
 import ReputationManagement from "./pages/services/ReputationManagement";
 import AIReceptionist from "./pages/services/AIReceptionist";
