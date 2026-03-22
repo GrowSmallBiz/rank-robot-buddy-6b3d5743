@@ -83,12 +83,9 @@ export const CardCTA = ({
               {/* Left: Photo + Name */}
               <div className="flex-shrink-0 text-center">
                 <div className="relative inline-block">
-                  {/* Subtle gray ring around photo - matching reference */}
+                  {/* Orange gradient ring around photo - matching FAQ contact CTA */}
                   <div 
-                    className="absolute -inset-1 rounded-full"
-                    style={{
-                      background: 'linear-gradient(135deg, hsl(210 20% 40%) 0%, hsl(210 20% 25%) 100%)'
-                    }}
+                    className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary via-orange-400 to-primary"
                   />
                   {/* Photo container */}
                   <div className="relative w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden">
@@ -115,12 +112,9 @@ export const CardCTA = ({
                   {/* Gradient CTA Button - orange to blue like reference */}
                   <Button 
                     size="xl" 
+                    variant="hero"
                     asChild 
-                    className="border-0 px-8 py-6 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:opacity-90 hover:shadow-xl rounded-full"
-                    style={{
-                      background: 'linear-gradient(90deg, hsl(25 90% 55%) 0%, hsl(35 85% 60%) 35%, hsl(199 80% 55%) 100%)',
-                      boxShadow: '0 12px 35px -8px hsla(25, 90%, 50%, 0.6)'
-                    }}
+                    className="border-0 px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl rounded-full"
                   >
                     {buttonHref.startsWith('http') ? (
                       <a href={buttonHref} target="_blank" rel="noopener noreferrer">
