@@ -22,22 +22,6 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Services</h4>
-            <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service.href}>
-                  <Link
-                    to={service.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           {/* Quick Links */}
           <div>
