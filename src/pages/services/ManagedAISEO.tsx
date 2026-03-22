@@ -57,6 +57,17 @@ import {
 const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=managed-ai-seo&utm_campaign=strategy-session";
 const SECONDARY_CTA_URL = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page?utm_source=website&utm_medium=managed-ai-seo&utm_campaign=free-seo-audit";
 
+const pillarImages = [
+  pillarTechnicalSeo,
+  pillarOnPageSeo,
+  pillarLocalSeo,
+  pillarTopicalAuthority,
+  pillarAeo,
+  pillarGeo,
+  pillarLinkBuilding,
+  pillarReporting,
+];
+
 const pillars = [
   {
     icon: Code,
