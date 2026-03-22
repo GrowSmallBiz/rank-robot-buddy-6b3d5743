@@ -416,11 +416,11 @@ export const Header = () => {
                   {mobileSEOOpen && (
                     <div className="pl-4 space-y-2">
                       <Link
-                        to="/services/ai-seo-hub"
+                        to="/services/managed-ai-seo"
                         onClick={() => setIsOpen(false)}
                         className="block py-2 text-primary font-medium"
                       >
-                        AI-Powered SEO Services
+                        Managed AI SEO
                       </Link>
                       <Link
                         to="/services/managed-seo-pricing"
