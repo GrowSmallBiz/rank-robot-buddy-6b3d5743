@@ -1,13 +1,5 @@
 import { Link } from "react-router-dom";
 
-const services = [
-  { name: "Technical SEO", href: "/services/technical-seo" },
-  { name: "On-Page SEO", href: "/services/on-page-seo" },
-  { name: "Answer Engine Optimization", href: "/services/aeo" },
-  { name: "Generative Engine Optimization", href: "/services/geo" },
-  { name: "Local SEO", href: "/services/local-seo" },
-  { name: "Link Building", href: "/services/link-building" },
-];
 
 
 export const Footer = () => {
