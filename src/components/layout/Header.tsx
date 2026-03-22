@@ -37,7 +37,7 @@ export const Header = () => {
   const [mobileSEOOpen, setMobileSEOOpen] = useState(false);
   const [mobileSEOIndustriesOpen, setMobileSEOIndustriesOpen] = useState(false);
   const [mobileGrowthSystemOpen, setMobileGrowthSystemOpen] = useState(false);
-  const [mobileTopIndustriesOpen, setMobileTopIndustriesOpen] = useState(false);
+  
   const location = useLocation();
 
   const isServiceActive = 
