@@ -403,6 +403,15 @@ export const Header = () => {
             </button>
             {mobileServicesOpen && (
               <div className="pl-4 space-y-2">
+                {/* Service Overview */}
+                <Link
+                  to="/services"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-primary font-medium"
+                >
+                  Service Overview
+                </Link>
+
                 {/* Website That Converts */}
                 <Link
                   to="/services/website-design"
