@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import growsmallbizLogo from "@/assets/growsmallbiz-logo.png";
+import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 
 const seoServices = [
   { name: "Technical SEO", href: "/services/technical-seo" },
