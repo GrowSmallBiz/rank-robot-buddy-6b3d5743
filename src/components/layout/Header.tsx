@@ -13,12 +13,7 @@ const seoServices = [
   { name: "Link Building", href: "/services/link-building" },
 ];
 
-// Top-level industries (shown in main Industries dropdown)
-const topLevelIndustries = [
-  { name: "Home Services (HVAC, Plumbing, Electrical, Roofing)", href: "/industries/home-services" },
-  { name: "Realtors & Real Estate Brokers", href: "/industries/realtors" },
-  { name: "Photographers", href: "/industries/photographers" },
-];
+// SEO-specific industries (shown nested under SEO submenu)
 
 // SEO-specific industries (shown nested under SEO submenu)
 const seoIndustries = [
