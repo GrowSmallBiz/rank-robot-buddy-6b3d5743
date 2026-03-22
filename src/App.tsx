@@ -37,6 +37,7 @@ import BrandingGuidelines from "./pages/BrandingGuidelines";
 import DownloadBrandingDocx from "./pages/DownloadBrandingDocx";
 import NotFound from "./pages/NotFound";
 import IndexBackup from "./pages/IndexBackup";
+import Services from "./pages/Services";
 
 const queryClient = new QueryClient();
 
@@ -57,6 +58,7 @@ export const routes: RouteRecord[] = [
     children: [
       { index: true, Component: Index },
       { path: "about", Component: About },
+      { path: "services", Component: Services },
       { path: "blog", Component: Blog },
       { path: "contact", Component: Contact },
       { path: "services/technical-seo", Component: TechnicalSEO },
