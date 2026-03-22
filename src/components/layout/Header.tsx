@@ -67,6 +67,7 @@ export const Header = () => {
 
   const isSEOActive = 
     location.pathname.startsWith("/services/ai-seo") ||
+    location.pathname.startsWith("/services/managed-ai-seo") ||
     location.pathname.startsWith("/services/technical") ||
     location.pathname.startsWith("/services/on-page") ||
     location.pathname.startsWith("/services/aeo") ||
