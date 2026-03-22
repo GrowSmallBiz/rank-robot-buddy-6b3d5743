@@ -12,7 +12,15 @@ import { GlowCard } from "@/components/ui/glow-card";
 import { Button } from "@/components/ui/button";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
-import aiSeoHeroBg from "@/assets/ai-seo-hero-bg.jpg";
+import managedAiSeoHeroBg from "@/assets/managed-ai-seo-hero-bg.jpg";
+import pillarTechnicalSeo from "@/assets/pillar-technical-seo.jpg";
+import pillarOnPageSeo from "@/assets/pillar-on-page-seo.jpg";
+import pillarLocalSeo from "@/assets/pillar-local-seo.jpg";
+import pillarTopicalAuthority from "@/assets/pillar-topical-authority.jpg";
+import pillarAeo from "@/assets/pillar-aeo.jpg";
+import pillarGeo from "@/assets/pillar-geo.jpg";
+import pillarLinkBuilding from "@/assets/pillar-link-building.jpg";
+import pillarReporting from "@/assets/pillar-reporting.jpg";
 import {
   Bot,
   ArrowRight,
