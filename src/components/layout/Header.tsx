@@ -518,32 +518,6 @@ export const Header = () => {
             )}
           </div>
 
-          {/* Mobile: Top-Level Industries */}
-          <div className="space-y-2">
-            <button
-              onClick={() => setMobileTopIndustriesOpen(!mobileTopIndustriesOpen)}
-              className="flex items-center justify-between w-full text-foreground font-medium"
-            >
-              Industries
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileTopIndustriesOpen ? "rotate-180" : ""}`} />
-            </button>
-            {mobileTopIndustriesOpen && (
-              <div className="pl-4 space-y-2">
-                {topLevelIndustries.map((industry) => (
-                  <Link
-                    key={industry.href}
-                    to={industry.href}
-                    onClick={() => setIsOpen(false)}
-                    className="block py-2 text-muted-foreground hover:text-primary"
-                  >
-                    {industry.name}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-
           <Link
             to="/about"
             onClick={() => setIsOpen(false)}
