@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import websiteDesignHeroBg from "@/assets/website-design-hero-bg.jpg";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -288,6 +289,8 @@ const WebsiteDesign = () => {
           label: "Explore All Services",
           href: "/services/ai-seo-hub",
         }}
+        backgroundImage={websiteDesignHeroBg}
+        overlayOpacity={88}
       />
 
       {/* Hero extended body copy */}
