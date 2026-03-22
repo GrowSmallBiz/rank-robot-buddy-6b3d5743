@@ -455,7 +455,7 @@ const ManagedAISEO = () => {
               {whyAIPowered.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-background/80 border border-border rounded-xl p-6 space-y-4 animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] transition-all"
+                  className="bg-background/80 border-2 border-border/60 rounded-xl p-6 space-y-4 animate-fade-up hover:shadow-[0_0_40px_rgba(255,127,80,0.4)] hover:border-primary/50 transition-all duration-300"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
