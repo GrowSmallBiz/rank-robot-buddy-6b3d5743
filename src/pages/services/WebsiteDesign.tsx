@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { CardCTA } from "@/components/services/CardCTA";
 import websiteDesignHeroBg from "@/assets/website-design-hero-bg.jpg";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -703,17 +704,13 @@ const WebsiteDesign = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            <Button variant="hero" size="xl" asChild>
-              <a href={CTA_URL} target="_blank" rel="noopener noreferrer">
-                Schedule Strategy Call
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              <Link to="/services/ai-seo-hub">Explore All Services</Link>
-            </Button>
-          </div>
+          <CardCTA
+            title="Let's Build Your Growth Engine"
+            description="If you want clearer strategy, stronger visibility, and better follow-up without patching together disconnected tools, start with a free strategy call."
+            buttonText="Schedule Strategy Call"
+            buttonHref={CTA_URL}
+            sectionClassName="pt-12 pb-0"
+          />
 
           <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
