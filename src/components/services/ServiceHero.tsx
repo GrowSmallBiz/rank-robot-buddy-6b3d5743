@@ -16,7 +16,7 @@ interface ServiceHeroProps {
     icon: LucideIcon;
     text: string;
   };
-  title: string;
+  title: ReactNode;
   titleHighlight?: string;
   subtitle: string;
   description?: string;
