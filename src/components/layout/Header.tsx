@@ -424,48 +424,6 @@ export const Header = () => {
             )}
           </div>
 
-          {/* Mobile: AI Client Growth System */}
-          <div className="space-y-2">
-            <button
-              onClick={() => setMobileGrowthSystemOpen(!mobileGrowthSystemOpen)}
-              className="flex items-center justify-between w-full text-foreground font-medium"
-            >
-              AI Client Growth System
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileGrowthSystemOpen ? "rotate-180" : ""}`} />
-            </button>
-            {mobileGrowthSystemOpen && (
-              <div className="pl-4 space-y-2">
-                <Link
-                  to="/services/crm"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
-                >
-                  AI-Powered CRM
-                </Link>
-                <Link
-                  to="/services/ai-receptionist"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
-                >
-                  AI Receptionist & Conversational AI
-                </Link>
-                <Link
-                  to="/services/reputation-management"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
-                >
-                  Reputation Management
-                </Link>
-                <Link
-                  to="/services/quad-bots"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
-                >
-                  Quad Bots AI Sales Team
-                </Link>
-              </div>
-            )}
-          </div>
 
           <Link
             to="/about"
