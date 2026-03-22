@@ -55,20 +55,25 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Industries */}
+          {/* Quick Links */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Industries</h4>
+            <h4 className="font-display font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              {industries.map((industry) => (
-                <li key={industry.href}>
-                  <Link
-                    to={industry.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {industry.name}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  All Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/free-assessment" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Free Assessment
+                </Link>
+              </li>
             </ul>
           </div>
 
