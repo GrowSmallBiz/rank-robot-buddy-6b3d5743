@@ -1,16 +1,19 @@
+import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { FAQSection } from "@/components/sections/FAQSection";
-import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
-import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
-import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-import { HomeCaseStudySection } from "@/components/sections/HomeCaseStudySection";
 import heroImage from "@/assets/homepage-hero-bg.jpg";
+
+// Lazy-load below-the-fold sections to improve FCP
+const TestimonialsSection = lazy(() => import("@/components/sections/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
+const FAQSection = lazy(() => import("@/components/sections/FAQSection").then(m => ({ default: m.FAQSection })));
+const AnimatedStatsSection = lazy(() => import("@/components/sections/AnimatedStatsSection").then(m => ({ default: m.AnimatedStatsSection })));
+const ConsultationFormSection = lazy(() => import("@/components/sections/ConsultationFormSection").then(m => ({ default: m.ConsultationFormSection })));
+const CardCTA = lazy(() => import("@/components/services").then(m => ({ default: m.CardCTA })));
+const WhyChooseSection = lazy(() => import("@/components/sections/WhyChooseSection").then(m => ({ default: m.WhyChooseSection })));
+const HomeCaseStudySection = lazy(() => import("@/components/sections/HomeCaseStudySection").then(m => ({ default: m.HomeCaseStudySection })));
 import { 
   ArrowRight, 
   Bot, 
@@ -442,87 +445,89 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Founder CTA Banner */}
-      <CardCTA 
-        title="Ready to Build a Smarter Growth System?"
-        description="Book a free strategy call to review your current marketing, identify missed opportunities, and see what the next best steps could look like for your business."
-        buttonText="Schedule Strategy Call"
-        buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
-      />
+      <Suspense fallback={null}>
+        {/* Founder CTA Banner */}
+        <CardCTA 
+          title="Ready to Build a Smarter Growth System?"
+          description="Book a free strategy call to review your current marketing, identify missed opportunities, and see what the next best steps could look like for your business."
+          buttonText="Schedule Strategy Call"
+          buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
+        />
 
-      {/* Why Choose GrowSmallBiz */}
-      <WhyChooseSection 
-        title="Why Local Service Businesses Choose GrowSmallBiz"
-        subtitle="Why GrowSmallBiz"
-        description="GrowSmallBiz is built around one idea: your marketing should work as a system, not a collection of disconnected tactics."
-        items={[
-          {
-            title: "Strategy + Execution Together",
-            description: "You get practical planning and real implementation support, not just recommendations.",
-            icon: Handshake,
-          },
-          {
-            title: "Built for Local Growth",
-            description: "The messaging, channels, and conversion flow are designed for local business growth.",
-            icon: TrendingUp,
-          },
-          {
-            title: "One Connected System",
-            description: "Your website, SEO, ads, reviews, and follow-up should support the same goal.",
-            icon: Layers,
-          },
-          {
-            title: "Faster Lead Response",
-            description: "Automation and AI help you respond while interest is still high.",
-            icon: Zap,
-          },
-          {
-            title: "Clear Reporting & Attribution",
-            description: "Know where inquiries are coming from and what is producing results.",
-            icon: BarChart3,
-          },
-          {
-            title: "Bay Area-Based, Relationship-Driven",
-            description: "A more practical, collaborative approach built around real business needs.",
-            icon: Shield,
-          },
-        ]}
-      />
+        {/* Why Choose GrowSmallBiz */}
+        <WhyChooseSection 
+          title="Why Local Service Businesses Choose GrowSmallBiz"
+          subtitle="Why GrowSmallBiz"
+          description="GrowSmallBiz is built around one idea: your marketing should work as a system, not a collection of disconnected tactics."
+          items={[
+            {
+              title: "Strategy + Execution Together",
+              description: "You get practical planning and real implementation support, not just recommendations.",
+              icon: Handshake,
+            },
+            {
+              title: "Built for Local Growth",
+              description: "The messaging, channels, and conversion flow are designed for local business growth.",
+              icon: TrendingUp,
+            },
+            {
+              title: "One Connected System",
+              description: "Your website, SEO, ads, reviews, and follow-up should support the same goal.",
+              icon: Layers,
+            },
+            {
+              title: "Faster Lead Response",
+              description: "Automation and AI help you respond while interest is still high.",
+              icon: Zap,
+            },
+            {
+              title: "Clear Reporting & Attribution",
+              description: "Know where inquiries are coming from and what is producing results.",
+              icon: BarChart3,
+            },
+            {
+              title: "Bay Area-Based, Relationship-Driven",
+              description: "A more practical, collaborative approach built around real business needs.",
+              icon: Shield,
+            },
+          ]}
+        />
 
-      {/* Stats */}
-      <AnimatedStatsSection stats={homepageStats} columns={4} />
+        {/* Stats */}
+        <AnimatedStatsSection stats={homepageStats} columns={4} />
 
-      {/* Testimonials */}
-      <TestimonialsSection 
-        subtitle="Real feedback from business owners who wanted better visibility, better systems, and better follow-up."
-      />
+        {/* Testimonials */}
+        <TestimonialsSection 
+          subtitle="Real feedback from business owners who wanted better visibility, better systems, and better follow-up."
+        />
 
-      {/* Real Results Across Home Service Campaigns */}
-      <HomeCaseStudySection />
+        {/* Real Results Across Home Service Campaigns */}
+        <HomeCaseStudySection />
 
-      {/* FAQ Section */}
-      <FAQSection 
-        title="Frequently Asked Questions"
-        subtitle="Answers to common questions local service business owners ask before getting started."
-        faqs={homepageFAQs}
-        contactCTA={{
-          ...baseContactCTA,
-          title: "Have more questions?",
-          description: "We're here to help! Reach out to us for a personalized consultation.",
-          tagline: "Let's grow your business together.",
-        }}
-      />
+        {/* FAQ Section */}
+        <FAQSection 
+          title="Frequently Asked Questions"
+          subtitle="Answers to common questions local service business owners ask before getting started."
+          faqs={homepageFAQs}
+          contactCTA={{
+            ...baseContactCTA,
+            title: "Have more questions?",
+            description: "We're here to help! Reach out to us for a personalized consultation.",
+            tagline: "Let's grow your business together.",
+          }}
+        />
 
-      {/* Final CTA Strip */}
-      <CardCTA 
-        title="Let's Build Your Growth Engine"
-        description="If you want clearer strategy, stronger visibility, and better follow-up without patching together disconnected tools, start with a free strategy call."
-        buttonText="Schedule Strategy Call"
-        buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
-      />
+        {/* Final CTA Strip */}
+        <CardCTA 
+          title="Let's Build Your Growth Engine"
+          description="If you want clearer strategy, stronger visibility, and better follow-up without patching together disconnected tools, start with a free strategy call."
+          buttonText="Schedule Strategy Call"
+          buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
+        />
 
-      {/* Consultation Form Section */}
-      <ConsultationFormSection />
+        {/* Consultation Form Section */}
+        <ConsultationFormSection />
+      </Suspense>
 
       <Footer />
     </div>
