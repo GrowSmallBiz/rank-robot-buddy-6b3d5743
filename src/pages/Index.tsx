@@ -220,16 +220,16 @@ const Index = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              Turn More Leads Into{" "}
-              <span className="text-gradient">Booked Jobs</span>
+              More Leads. Stronger Visibility.{" "}
+              <span className="text-gradient">A System That Works While You Work.</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up delay-200">
-              Capture more leads, nurture them automatically, and convert more of them into booked jobs.
+              GrowSmallBiz helps local service businesses attract qualified leads, show up in local search, follow up faster, and convert more opportunities using one connected, AI-powered growth system.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
-              GrowSmallBiz is a done-for-you growth system for local service businesses. We handle the moving parts of your website, SEO, paid ads, CRM automation, AI follow-up, and lead handling so you can spend less time managing marketing and more time focusing on your business, your clients, and your family. You also get a clear multi-channel performance dashboard so you can see what is working across search, ads, follow-up, and lead generation.
+              We handle the moving parts of your website, SEO, paid ads, CRM automation, and AI-powered follow-up so you can spend less time managing marketing and more time focusing on your business, your clients, and your family.
             </p>
 
             <p className="text-base text-muted-foreground/80 italic max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.35s" }}>
