@@ -37,6 +37,7 @@ import BrandingGuidelines from "./pages/BrandingGuidelines";
 import DownloadBrandingDocx from "./pages/DownloadBrandingDocx";
 import NotFound from "./pages/NotFound";
 import IndexBackup from "./pages/IndexBackup";
+import Services from "./pages/Services";
 
 const queryClient = new QueryClient();
 
