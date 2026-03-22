@@ -567,24 +567,33 @@ const WebsiteDesign = () => {
             description="Every project follows the same four-phase process — because the order matters. Strategy before design. Structure before aesthetics. Launch into a connected system, not into a vacuum."
           />
 
-          <div className="max-w-4xl mx-auto space-y-8">
-            {processSteps.map((step, index) => (
-              <div
-                key={index}
-                className="relative pl-8 border-l-2 border-primary/30 animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center">
-                  <span className="text-xs font-bold text-primary-foreground">{index + 1}</span>
+          <div className="max-w-5xl mx-auto space-y-12">
+            {processSteps.map((step, index) => {
+              const isLeft = index % 2 === 0;
+              return (
+                <div
+                  key={index}
+                  className={`relative flex items-start gap-6 animate-fade-up ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {/* Card */}
+                  <div className="flex-1 bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] transition-all duration-300">
+                    <span className="text-sm font-semibold text-primary">{step.step}</span>
+                    <h3 className="text-xl font-bold text-foreground mt-2 mb-4">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed mb-4">{step.description}</p>
+                    <p className="text-sm font-medium text-primary/80 italic">{step.deliverable}</p>
+                  </div>
+
+                  {/* Number circle in the middle */}
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center mt-2">
+                    <span className="text-sm font-bold text-primary-foreground">{index + 1}</span>
+                  </div>
+
+                  {/* Spacer for the other side */}
+                  <div className="flex-1 hidden md:block" />
                 </div>
-                <div className="bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] transition-all duration-300">
-                  <span className="text-sm font-semibold text-primary">{step.step}</span>
-                  <h3 className="text-xl font-bold text-foreground mt-2 mb-4">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-4">{step.description}</p>
-                  <p className="text-sm font-medium text-primary/80 italic">{step.deliverable}</p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-up">
