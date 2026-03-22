@@ -296,29 +296,39 @@ const ManagedAISEO = () => {
 
             <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
               {pillars.map((pillar, index) => (
-                <GlowCard key={index} className="p-8 animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="p-3 rounded-xl bg-primary/10 shrink-0">
-                      <pillar.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground">{pillar.title}</h3>
-                    </div>
+                <GlowCard key={index} className="border-2 border-border/60 p-0 overflow-hidden animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
+                  <div className="h-40 overflow-hidden">
+                    <img
+                      src={pillarImages[index]}
+                      alt={pillar.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4 text-sm">{pillar.description}</p>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
-                    {pillar.covers.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  {pillar.link && (
-                    <Link to={pillar.link} className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-                      Learn more <ArrowRight className="w-3.5 h-3.5" />
-                    </Link>
-                  )}
+                  <div className="p-8">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="p-3 rounded-xl bg-primary/10 shrink-0">
+                        <pillar.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground">{pillar.title}</h3>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-4 text-sm">{pillar.description}</p>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
+                      {pillar.covers.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    {pillar.link && (
+                      <Link to={pillar.link} className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
+                        Learn more <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    )}
+                  </div>
                 </GlowCard>
               ))}
             </div>
