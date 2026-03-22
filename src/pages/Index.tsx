@@ -220,12 +220,12 @@ const Index = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              Capture More Leads, Nurture Them Automatically, and Convert More of Them Into{" "}
+              Turn More Leads Into{" "}
               <span className="text-gradient">Booked Jobs</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up delay-200">
-              We use AI-powered systems at every stage of client acquisition — from getting your business found, to following up faster, to helping turn more opportunities into booked jobs.
+              Capture more leads, nurture them automatically, and convert more of them into booked jobs.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
