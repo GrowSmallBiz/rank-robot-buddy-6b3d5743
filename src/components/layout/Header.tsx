@@ -1,42 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
-
-const seoServices = [
-  { name: "Technical SEO", href: "/services/technical-seo" },
-  { name: "On-Page SEO", href: "/services/on-page-seo" },
-  { name: "Answer Engine Optimization (AEO)", href: "/services/aeo" },
-  { name: "Generative Engine Optimization (GEO)", href: "/services/geo" },
-  { name: "Local SEO", href: "/services/local-seo" },
-  { name: "Link Building", href: "/services/link-building" },
-];
-
-// SEO-specific industries (shown nested under SEO submenu)
-
-// SEO-specific industries (shown nested under SEO submenu)
-const seoIndustries = [
-  { name: "HVAC, Plumbing & Electrical", href: "/industries/hvac" },
-  { name: "Dental Practices", href: "/industries/dental" },
-  { name: "Med Spas & Aesthetics", href: "/industries/med-spa" },
-  { name: "Chiropractors", href: "/industries/chiropractor" },
-  { name: "Auto Repair Shops", href: "/industries/auto-repair" },
-  { name: "Photographers", href: "/industries/photographers" },
-];
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isSEOServicesOpen, setIsSEOServicesOpen] = useState(false);
-  const [isSEOIndustriesOpen, setIsSEOIndustriesOpen] = useState(false);
-  const [isGrowthSystemOpen, setIsGrowthSystemOpen] = useState(false);
-  
-  
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const [mobileSEOOpen, setMobileSEOOpen] = useState(false);
-  const [mobileSEOIndustriesOpen, setMobileSEOIndustriesOpen] = useState(false);
-  const [mobileGrowthSystemOpen, setMobileGrowthSystemOpen] = useState(false);
   
   const location = useLocation();
 
@@ -53,22 +24,6 @@ export const Header = () => {
     location.pathname.startsWith("/services/local") ||
     location.pathname.startsWith("/services/link") ||
     location.pathname.startsWith("/services/linkedin-outreach");
-
-  const isGrowthSystemActive = 
-    location.pathname.startsWith("/services/reputation") ||
-    location.pathname.startsWith("/services/ai-receptionist") ||
-    location.pathname.startsWith("/services/crm") ||
-    location.pathname.startsWith("/services/quad-bots");
-
-  const isSEOActive = 
-    location.pathname.startsWith("/services/ai-seo") ||
-    location.pathname.startsWith("/services/managed-ai-seo") ||
-    location.pathname.startsWith("/services/technical") ||
-    location.pathname.startsWith("/services/on-page") ||
-    location.pathname.startsWith("/services/aeo") ||
-    location.pathname.startsWith("/services/geo") ||
-    location.pathname.startsWith("/services/local") ||
-    location.pathname.startsWith("/services/link");
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
@@ -100,10 +55,7 @@ export const Header = () => {
             <div 
               className="relative group"
               onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => {
-                setIsServicesOpen(false);
-                setIsSEOServicesOpen(false);
-              }}
+              onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
                 className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
@@ -135,88 +87,13 @@ export const Header = () => {
                   Website That Converts
                 </Link>
 
-                {/* Managed AI SEO Services - with nested submenu */}
-                <div 
-                  className="relative"
-                  onMouseEnter={() => setIsSEOServicesOpen(true)}
-                  onMouseLeave={() => setIsSEOServicesOpen(false)}
+                {/* Managed AI SEO */}
+                <Link
+                  to="/services/managed-ai-seo"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
-                  <button
-                    className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm transition-colors hover:bg-secondary ${
-                      isSEOActive ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    Managed AI SEO Services
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
-
-                  {/* SEO Submenu */}
-                  <div
-                    className={`absolute left-full top-0 ml-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
-                      isSEOServicesOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
-                    }`}
-                  >
-                    {/* AI-Powered SEO Overview */}
-                    <Link
-                      to="/services/managed-ai-seo"
-                      className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                    >
-                      Managed AI SEO
-                    </Link>
-                    
-                    {/* Managed SEO Pricing */}
-                    <Link
-                      to="/services/managed-seo-pricing"
-                      className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors border-b border-border mb-2"
-                    >
-                      SEO Packages & Pricing
-                    </Link>
-                    
-                    {/* SEO Sub-services */}
-                    {seoServices.map((service) => (
-                      <Link
-                        key={service.href}
-                        to={service.href}
-                        className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                      >
-                        {service.name}
-                      </Link>
-                    ))}
-
-                    {/* Industries - nested submenu */}
-                    <div 
-                      className="relative border-t border-border mt-2 pt-2"
-                      onMouseEnter={() => setIsSEOIndustriesOpen(true)}
-                      onMouseLeave={() => setIsSEOIndustriesOpen(false)}
-                    >
-                      <button
-                        className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-colors hover:bg-secondary ${
-                          location.pathname.startsWith("/industries") ? "text-foreground" : "text-muted-foreground hover:text-foreground"
-                        }`}
-                      >
-                        Industries We Serve
-                        <ChevronRight className="w-4 h-4" />
-                      </button>
-
-                      {/* Industries Submenu */}
-                      <div
-                        className={`absolute left-full top-0 ml-2 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 z-50 ${
-                          isSEOIndustriesOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
-                        }`}
-                      >
-                        {seoIndustries.map((industry) => (
-                          <Link
-                            key={industry.href}
-                            to={industry.href}
-                            className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                          >
-                            {industry.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  Managed AI SEO Services
+                </Link>
 
                 {/* Social Media Management */}
                 <Link
@@ -330,68 +207,14 @@ export const Header = () => {
                   Website That Converts
                 </Link>
 
-                {/* Managed AI SEO Services - nested */}
-                <div className="space-y-2">
-                  <button
-                    onClick={() => setMobileSEOOpen(!mobileSEOOpen)}
-                    className="flex items-center justify-between w-full py-2 text-muted-foreground hover:text-primary"
-                  >
-                    Managed AI SEO Services
-                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileSEOOpen ? "rotate-180" : ""}`} />
-                  </button>
-                  {mobileSEOOpen && (
-                    <div className="pl-4 space-y-2">
-                      <Link
-                        to="/services/managed-ai-seo"
-                        onClick={() => setIsOpen(false)}
-                        className="block py-2 text-primary font-medium"
-                      >
-                        Managed AI SEO
-                      </Link>
-                      <Link
-                        to="/services/managed-seo-pricing"
-                        onClick={() => setIsOpen(false)}
-                        className="block py-2 text-muted-foreground hover:text-primary"
-                      >
-                        SEO Packages & Pricing
-                      </Link>
-                      {seoServices.map((service) => (
-                        <Link
-                          key={service.href}
-                          to={service.href}
-                          onClick={() => setIsOpen(false)}
-                          className="block py-2 text-muted-foreground hover:text-primary"
-                        >
-                          {service.name}
-                        </Link>
-                      ))}
-                      {/* SEO Industries nested in mobile */}
-                      <div className="border-t border-border pt-2 mt-2">
-                        <button
-                          onClick={() => setMobileSEOIndustriesOpen(!mobileSEOIndustriesOpen)}
-                          className="flex items-center justify-between w-full py-2 text-muted-foreground hover:text-primary font-medium"
-                        >
-                          Industries We Serve
-                          <ChevronDown className={`w-4 h-4 transition-transform ${mobileSEOIndustriesOpen ? "rotate-180" : ""}`} />
-                        </button>
-                        {mobileSEOIndustriesOpen && (
-                          <div className="pl-4 space-y-2">
-                            {seoIndustries.map((industry) => (
-                              <Link
-                                key={industry.href}
-                                to={industry.href}
-                                onClick={() => setIsOpen(false)}
-                                className="block py-2 text-muted-foreground hover:text-primary"
-                              >
-                                {industry.name}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  )}
-                </div>
+                {/* Managed AI SEO */}
+                <Link
+                  to="/services/managed-ai-seo"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Managed AI SEO Services
+                </Link>
 
                 {/* Social Media Management */}
                 <Link
