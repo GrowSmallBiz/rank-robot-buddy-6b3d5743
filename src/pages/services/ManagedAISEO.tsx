@@ -12,7 +12,15 @@ import { GlowCard } from "@/components/ui/glow-card";
 import { Button } from "@/components/ui/button";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
-import aiSeoHeroBg from "@/assets/ai-seo-hero-bg.jpg";
+import managedAiSeoHeroBg from "@/assets/managed-ai-seo-hero-bg.jpg";
+import pillarTechnicalSeo from "@/assets/pillar-technical-seo.jpg";
+import pillarOnPageSeo from "@/assets/pillar-on-page-seo.jpg";
+import pillarLocalSeo from "@/assets/pillar-local-seo.jpg";
+import pillarTopicalAuthority from "@/assets/pillar-topical-authority.jpg";
+import pillarAeo from "@/assets/pillar-aeo.jpg";
+import pillarGeo from "@/assets/pillar-geo.jpg";
+import pillarLinkBuilding from "@/assets/pillar-link-building.jpg";
+import pillarReporting from "@/assets/pillar-reporting.jpg";
 import {
   Bot,
   ArrowRight,
@@ -48,6 +56,17 @@ import {
 
 const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=managed-ai-seo&utm_campaign=strategy-session";
 const SECONDARY_CTA_URL = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page?utm_source=website&utm_medium=managed-ai-seo&utm_campaign=free-seo-audit";
+
+const pillarImages = [
+  pillarTechnicalSeo,
+  pillarOnPageSeo,
+  pillarLocalSeo,
+  pillarTopicalAuthority,
+  pillarAeo,
+  pillarGeo,
+  pillarLinkBuilding,
+  pillarReporting,
+];
 
 const pillars = [
   {
@@ -183,7 +202,7 @@ const ManagedAISEO = () => {
         <section className="relative overflow-hidden py-16 lg:py-24">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${aiSeoHeroBg})` }}
+            style={{ backgroundImage: `url(${managedAiSeoHeroBg})` }}
           />
           <div className="absolute inset-0 bg-background/85" />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
@@ -232,24 +251,28 @@ const ManagedAISEO = () => {
               titleHighlight="Matter Now?"
             />
 
-            <div className="max-w-5xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 animate-fade-up">
-                <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                  <p>
-                    Traditional SEO was a project. You hired someone to optimize a few pages, build some links, maybe write some blog posts — and hoped it held. That model no longer works in a search environment that changes faster than any single consultant can manually track.
-                  </p>
-                  <p>
-                    Managed AI SEO is a different model: an ongoing, fully managed service in which AI-assisted tools and strategic human oversight work together to continuously audit, optimize, and expand your search presence — across every layer that matters.
-                  </p>
+            <div className="max-w-5xl mx-auto animate-fade-up">
+              <div className="rounded-2xl border border-border bg-card/40 p-8 md:p-12">
+                <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Traditional SEO was a project. You hired someone to optimize a few pages, build some links, maybe write some blog posts — and hoped it held. That model no longer works in a search environment that changes faster than any single consultant can manually track.
+                    </p>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Managed AI SEO is a different model: an ongoing, fully managed service in which AI-assisted tools and strategic human oversight work together to continuously audit, optimize, and expand your search presence — across every layer that matters.
+                    </p>
+                  </div>
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      For local service businesses, that means your website, Google Business Profile, service pages, content, local citations, and off-site authority are all being monitored and improved on an ongoing basis — not just when something breaks.
+                    </p>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      GrowSmallBiz owns strategy, implementation, optimization, and reporting. You get a clear, consistent picture of what is working and where you are growing — without becoming an SEO expert.
+                    </p>
+                  </div>
                 </div>
-                <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                  <p>
-                    For local service businesses, that means your website, Google Business Profile, service pages, content, local citations, and off-site authority are all being monitored and improved on an ongoing basis — not just when something breaks.
-                  </p>
-                  <p>
-                    GrowSmallBiz owns strategy, implementation, optimization, and reporting. You get a clear, consistent picture of what is working and where you are growing — without becoming an SEO expert.
-                  </p>
-                  <p className="font-medium text-foreground">
+                <div className="mt-8 pt-8 border-t border-border">
+                  <p className="text-lg font-medium text-foreground text-center max-w-3xl mx-auto">
                     The result is a search presence that compounds month over month, building lasting visibility and a reliable flow of qualified local leads.
                   </p>
                 </div>
@@ -273,29 +296,39 @@ const ManagedAISEO = () => {
 
             <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
               {pillars.map((pillar, index) => (
-                <GlowCard key={index} className="p-8 animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="p-3 rounded-xl bg-primary/10 shrink-0">
-                      <pillar.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground">{pillar.title}</h3>
-                    </div>
+                <GlowCard key={index} className="border-2 border-border/60 p-0 overflow-hidden animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
+                  <div className="h-40 overflow-hidden">
+                    <img
+                      src={pillarImages[index]}
+                      alt={pillar.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
-                  <p className="text-muted-foreground leading-relaxed mb-4 text-sm">{pillar.description}</p>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
-                    {pillar.covers.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  {pillar.link && (
-                    <Link to={pillar.link} className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-                      Learn more <ArrowRight className="w-3.5 h-3.5" />
-                    </Link>
-                  )}
+                  <div className="p-8">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="p-3 rounded-xl bg-primary/10 shrink-0">
+                        <pillar.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground">{pillar.title}</h3>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-4 text-sm">{pillar.description}</p>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
+                      {pillar.covers.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    {pillar.link && (
+                      <Link to={pillar.link} className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
+                        Learn more <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    )}
+                  </div>
                 </GlowCard>
               ))}
             </div>
@@ -346,9 +379,19 @@ const ManagedAISEO = () => {
                   </div>
                   <h3 className="text-xl font-bold font-display text-foreground">Not the Right Fit</h3>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  You are a national e-commerce brand, a startup without an established service area, a business seeking one-time consulting only, or a business where per-transaction margin does not support an ongoing SEO investment.
-                </p>
+                <ul className="space-y-3">
+                  {[
+                    "National e-commerce brands",
+                    "Startups without an established service area",
+                    "Businesses seeking one-time consulting only",
+                    "Businesses where per-transaction margin does not support an ongoing SEO investment",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50 shrink-0 mt-1.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -375,7 +418,7 @@ const ManagedAISEO = () => {
                       <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 h-px bg-primary/30 ${isLeft ? 'right-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]' : 'left-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]'}`} />
 
                       <div className={`md:w-[calc(50%-2rem)] ${isLeft ? 'md:mr-auto' : 'md:ml-auto'}`}>
-                        <div className="bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] transition-all duration-300">
+                        <div className="bg-card/50 border-2 border-border/60 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all duration-300">
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
                               <span className="text-sm font-bold text-primary-foreground">{index + 1}</span>
@@ -412,7 +455,7 @@ const ManagedAISEO = () => {
               {whyAIPowered.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-background/80 border border-border rounded-xl p-6 space-y-4 animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] transition-all"
+                  className="bg-background/80 border-2 border-border/60 rounded-xl p-6 space-y-4 animate-fade-up hover:shadow-[0_0_40px_rgba(255,127,80,0.4)] hover:border-primary/50 transition-all duration-300"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -439,7 +482,7 @@ const ManagedAISEO = () => {
               {industries.map((industry, index) => (
                 <div
                   key={index}
-                  className="bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] hover:border-primary/30 transition-all duration-300 animate-fade-up"
+                  className="bg-card/50 border-2 border-border/60 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all duration-300 animate-fade-up"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <div className="flex items-start gap-4">
