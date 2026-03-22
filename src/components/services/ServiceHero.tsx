@@ -7,7 +7,7 @@ import { AnimatedStat } from "./AnimatedStat";
 interface HeroCTA {
   label: string;
   href: string;
-  variant?: "hero" | "outline";
+  variant?: "hero" | "outline" | "heroOutline";
   external?: boolean;
 }
 
