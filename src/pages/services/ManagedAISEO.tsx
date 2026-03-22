@@ -202,7 +202,7 @@ const ManagedAISEO = () => {
         <section className="relative overflow-hidden py-16 lg:py-24">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${aiSeoHeroBg})` }}
+            style={{ backgroundImage: `url(${managedAiSeoHeroBg})` }}
           />
           <div className="absolute inset-0 bg-background/85" />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
