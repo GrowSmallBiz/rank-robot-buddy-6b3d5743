@@ -21,15 +21,9 @@ import {
   Globe, 
   BarChart3, 
   TrendingUp, 
-  Shield, 
   CheckCircle2, 
   XCircle, 
-  Eye, 
-  Star,
-  MessageCircle,
   Layers,
-  Handshake,
-  Puzzle,
   Zap,
   Megaphone,
   Users,
@@ -37,123 +31,109 @@ import {
   ClipboardCheck,
   Rocket,
   Settings,
+  Brain,
+  Wrench,
+  Heart,
+  Target,
+  LayoutDashboard,
+  Award,
 } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
-// Stats data for homepage — supportable values
+// Stats data for homepage
 const homepageStats = [
   { value: "1", label: "Connected System", icon: Layers },
-  { value: "6", label: "Core Services", icon: Puzzle },
-  { value: "24/7", label: "AI Lead Response", icon: Bot },
-  { value: "100%", label: "Transparent Reporting", icon: Eye },
+  { value: "AI", label: "Powered at Every Stage", icon: Brain },
+  { value: "DFY", label: "Done-for-You Execution", icon: Wrench },
+  { value: "1", label: "Multi-Channel Dashboard", icon: LayoutDashboard },
 ];
 
-// Services data — reduced to 6 core services per document
-const services = [
+// Core Services — 4 system stages
+const coreServices = [
   {
-    title: "Website Design",
-    description: "Build trust quickly and turn more visitors into calls, form submissions, and booked appointments.",
+    title: "Capture",
+    description: "Get found, build trust quickly, and turn visitors into inquiries.",
     features: [
-      "Conversion-focused design",
-      "On-brand messaging",
-      "Clear calls-to-action",
-      "Mobile responsive",
+      "Website Design",
+      "Managed AI SEO",
+      "Google & Meta Ads",
     ],
-    href: "/services/website-design",
-    icon: Globe,
+    icon: Target,
   },
   {
-    title: "Managed AI SEO",
-    description: "Improve your visibility when nearby customers are searching for your services.",
+    title: "Nurture",
+    description: "Keep leads engaged with automated follow-up so interest does not go cold.",
     features: [
-      "Local search optimization",
-      "GBP & Map Pack optimization",
-      "Answer Engine Optimization (AEO)",
-      "Generative Engine Optimization (GEO)",
+      "CRM & Marketing Automation",
+      "Automated Email & SMS Follow-Up",
+      "Missed-Call Capture / AI Follow-Up",
     ],
-    href: "/services/technical-seo",
-    icon: Search,
+    icon: Heart,
   },
   {
-    title: "Google & Meta Ads",
-    description: "Generate qualified inquiries with campaigns aligned to the right landing experience and follow-up.",
+    title: "Convert",
+    description: "Move more leads into booked calls, appointments, and sales opportunities.",
     features: [
-      "Google & Meta ad campaigns",
-      "Landing page alignment",
-      "Full-funnel tracking",
-      "Retargeting campaigns",
+      "Pipeline Management",
+      "Booking / Appointment Flows",
+      "AI Lead Handling",
     ],
-    href: "/services/paid-media",
-    icon: Megaphone,
+    icon: TrendingUp,
   },
   {
-    title: "Reputation Management",
-    description: "Strengthen trust with systems that help you earn and showcase reviews consistently.",
+    title: "Retain",
+    description: "Strengthen loyalty, trust, and repeat business with better post-conversion systems.",
     features: [
-      "Automated review requests",
-      "AI-powered review replies",
-      "Reputation monitoring",
-      "Trust signal building",
+      "Review Request Workflows",
+      "Review Response Workflows",
+      "Ongoing Customer Follow-Up",
     ],
-    href: "/services/reputation-management",
-    icon: Star,
-  },
-  {
-    title: "CRM & Marketing Automation",
-    description: "Organize leads, automate follow-up, and reduce missed opportunities.",
-    features: [
-      "Lead pipeline management",
-      "Automated email & SMS follow-up",
-      "Appointment scheduling",
-      "Performance dashboards",
-    ],
-    href: "/services/crm",
     icon: Users,
   },
-  {
-    title: "AI Receptionist & Lead Handling",
-    description: "Stay responsive even when you are busy with AI-powered voice and chat support.",
-    features: [
-      "AI voice receptionist",
-      "Website, SMS & social chat",
-      "24/7 lead qualification",
-      "Automated appointment booking",
-    ],
-    href: "/services/ai-receptionist",
-    icon: Bot,
-  },
 ];
 
-// Homepage FAQs — high-intent questions per document
+// Homepage FAQs
 const homepageFAQs = [
   {
     question: "What types of businesses do you work with?",
-    answer: "We primarily work with local service businesses, including home services, healthcare, legal, accounting, and other professional service businesses."
+    answer: "We work primarily with local service businesses, including home services, healthcare, legal, accounting, and other businesses that rely on visibility, trust, and fast lead follow-up."
   },
   {
     question: "Do I need every service at once?",
-    answer: "No. We focus on the priorities most likely to create meaningful impact first, then expand as needed."
+    answer: "No. We focus first on the areas most likely to create impact, then build from there as your growth system matures."
   },
   {
     question: "How soon can we get started?",
-    answer: "That depends on the scope, but the first step is a strategy call so we can understand your goals and identify the best next steps."
+    answer: "We can usually begin with a strategy call and initial review quickly, then prioritize the right next steps based on your goals and current setup."
   },
   {
     question: "How long does it take to see results?",
-    answer: "Some improvements, such as lead-response workflows or landing-page fixes, can help quickly. SEO and broader growth systems typically take longer and improve over time."
+    answer: "Timelines vary by service. Paid ads and follow-up improvements can create results faster, while SEO and long-term visibility strategies build over time."
   },
   {
-    question: "Do you only help with SEO?",
-    answer: "No. GrowSmallBiz helps with websites, SEO, paid ads, reviews, CRM automation, and AI-powered lead handling."
+    question: "Is this done-for-you or do I have to manage it myself?",
+    answer: "GrowSmallBiz is designed as a done-for-you service. We handle the strategy, setup, execution, and optimization so you do not have to juggle the marketing systems yourself."
   },
   {
-    question: "Can you help us follow up with leads faster?",
-    answer: "Yes. That is one of the biggest opportunities for many local businesses. CRM automation and AI-powered lead handling can dramatically improve response times and reduce missed opportunities."
+    question: "How do you use AI in the system?",
+    answer: "We use AI-powered systems across the client acquisition process, including search visibility support, follow-up automation, AI lead handling, and faster response workflows."
+  },
+  {
+    question: "Will I be able to see what is working?",
+    answer: "Yes. We provide a clear multi-channel performance dashboard so you can track how your visibility, leads, follow-up, and conversion activity are performing."
+  },
+  {
+    question: "Is marketing performance guaranteed?",
+    answer: "No marketing channel performs perfectly all the time. That is why we track performance closely, recalibrate strategy when needed, and keep improving the system based on real data."
+  },
+  {
+    question: "Do you offer any kind of performance guarantee?",
+    answer: "Yes. If we do not generate leads within a pre-agreed timeframe and scope, we continue working at no additional management fee until results are delivered."
   },
 ];
 
-// How It Works steps per document
+// How It Works steps
 const howItWorksSteps = [
   {
     title: "Strategy Call",
@@ -217,7 +197,6 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
-        {/* Background Image — using <img> for LCP discoverability */}
         <img
           src={heroImage}
           alt=""
@@ -228,7 +207,6 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-background/85" />
         
-        {/* Background Effects */}
         <div className="absolute top-1/4 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
 
@@ -237,27 +215,31 @@ const Index = () => {
             <div className="animate-fade-up">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
                 <Zap className="w-4 h-4" />
-                AI-Powered Digital Marketing for Local Service Businesses
+                AI-Powered Growth System for Local Service Businesses
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              Get More Qualified Local Leads With a{" "}
-              <span className="text-gradient">Smarter Marketing System</span>
+              Capture More Leads, Nurture Them Automatically, and Convert More of Them Into{" "}
+              <span className="text-gradient">Booked Jobs</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up delay-200">
-              Websites, SEO, paid ads, CRM automation, and AI-powered follow-up — working together to help your business get found, respond faster, and convert more opportunities.
+              We use AI-powered systems at every stage of client acquisition — from getting your business found, to following up faster, to helping turn more opportunities into booked jobs.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
-              You started your business to serve clients — not to spend nights chasing leads, fixing disconnected tools, or guessing which marketing channel is actually working. GrowSmallBiz helps local service businesses build a connected growth system so your website, visibility, follow-up, and reputation all support the same goal: steady, measurable growth.
+              GrowSmallBiz is a done-for-you growth system for local service businesses. We handle the moving parts of your website, SEO, paid ads, CRM automation, AI follow-up, and lead handling so you can spend less time managing marketing and more time focusing on your business, your clients, and your family. You also get a clear multi-channel performance dashboard so you can see what is working across search, ads, follow-up, and lead generation.
+            </p>
+
+            <p className="text-base text-muted-foreground/80 italic max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.35s" }}>
+              No marketing channel performs perfectly all the time. When something is not producing the right results, we review the data, recalibrate the strategy, and keep improving the system.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
               <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl">
-                  Schedule Strategy Call
+                  Get Free Strategy Call
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
@@ -380,7 +362,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg" className="animate-fade-up">
-                Schedule Strategy Call
+                Get Free Strategy Call
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </a>
@@ -388,7 +370,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section — 6 Core Services */}
+      {/* Core Services Section — 4 System Stages */}
       <section id="services" className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10">
         <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
         
@@ -396,16 +378,16 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Core Services</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Everything Your Business Needs to Grow —{" "}
-              <span className="text-gradient">In One Place</span>
+              A Connected Growth System for{" "}
+              <span className="text-gradient">Local Service Businesses</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              GrowSmallBiz brings together the core services local businesses need to attract leads, improve conversions, and stay organized as they grow.
+              GrowSmallBiz combines AI-powered systems and done-for-you services to help you capture leads, nurture them automatically, convert more of them into booked jobs, and retain more customers — without forcing you to manage a stack of disconnected tools yourself.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {coreServices.map((service, index) => (
               <div
                 key={index}
                 className="backdrop-blur-sm rounded-2xl p-6 space-y-4 animate-fade-up relative transition-all hover:shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
@@ -417,25 +399,19 @@ const Index = () => {
                 <h3 className="font-display font-semibold text-foreground text-xl">{service.title}</h3>
                 <p className="text-sm text-muted-foreground">{service.description}</p>
                 <ul className="space-y-2">
-                  {service.features.slice(0, 4).map((feature, featureIndex) => (
+                  {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
                       <CheckCircle2 className="w-4 h-4 text-ghl-icon shrink-0 mt-0.5" />
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <Link to={service.href} aria-label={`Learn more about ${service.title}`}>
-                  <Button variant="outline" size="sm" className="w-full mt-4 border-ghl-icon/50 hover:bg-ghl-icon/10 hover:border-ghl-icon">
-                    Learn More<span className="sr-only"> about {service.title}</span>
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12 animate-fade-up">
-            <Link to="/services/technical-seo">
+            <Link to="/services">
               <Button variant="heroOutline" size="lg">
                 Explore All Services
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -449,8 +425,8 @@ const Index = () => {
         {/* Founder CTA Banner */}
         <CardCTA 
           title="Ready to Build a Smarter Growth System?"
-          description="Book a free strategy call to review your current marketing, identify missed opportunities, and see what the next best steps could look like for your business."
-          buttonText="Schedule Strategy Call"
+          description="Book a free strategy call to see how our done-for-you, AI-powered growth system can take marketing and follow-up off your plate, so you can focus more on running your business and spending time where it matters most. We also provide a clear dashboard view of performance and continuously recalibrate the strategy when results need improvement."
+          buttonText="Get Free Strategy Call"
           buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
         />
 
@@ -458,37 +434,37 @@ const Index = () => {
         <WhyChooseSection 
           title="Why Local Service Businesses Choose GrowSmallBiz"
           subtitle="Why GrowSmallBiz"
-          description="GrowSmallBiz is built around one idea: your marketing should work as a system, not a collection of disconnected tactics."
+          description="GrowSmallBiz is built around one idea: local businesses grow faster when AI-powered systems, done-for-you execution, adaptive strategy, and clear reporting all work together as one connected client acquisition engine."
           items={[
             {
-              title: "Strategy + Execution Together",
-              description: "You get practical planning and real implementation support, not just recommendations.",
-              icon: Handshake,
+              title: "AI at Every Stage",
+              description: "We use AI-powered systems across visibility, follow-up, lead handling, and conversion support.",
+              icon: Brain,
+            },
+            {
+              title: "Done-for-You Execution",
+              description: "We do the heavy lifting so you do not have to manage websites, SEO, ads, and automation yourself.",
+              icon: Wrench,
             },
             {
               title: "Built for Local Growth",
-              description: "The messaging, channels, and conversion flow are designed for local business growth.",
+              description: "The messaging, channels, and conversion flow are designed for local service business growth.",
               icon: TrendingUp,
             },
             {
-              title: "One Connected System",
-              description: "Your website, SEO, ads, reviews, and follow-up should support the same goal.",
-              icon: Layers,
+              title: "Adaptive Strategy",
+              description: "When a channel or campaign is not performing as expected, we review the data and recalibrate the strategy.",
+              icon: Settings,
             },
             {
-              title: "Faster Lead Response",
-              description: "Automation and AI help you respond while interest is still high.",
-              icon: Zap,
-            },
-            {
-              title: "Clear Reporting & Attribution",
-              description: "Know where inquiries are coming from and what is producing results.",
+              title: "Multi-Channel Dashboard",
+              description: "See lead generation and performance across SEO, ads, follow-up, and conversion activity in one place.",
               icon: BarChart3,
             },
             {
-              title: "Bay Area-Based, Relationship-Driven",
-              description: "A more practical, collaborative approach built around real business needs.",
-              icon: Shield,
+              title: "Performance Commitment",
+              description: "We stand behind our work with a performance guarantee. If we do not generate leads within a pre-agreed timeframe and scope, we continue working at no additional management fee until results are delivered.",
+              icon: Award,
             },
           ]}
         />
@@ -498,6 +474,7 @@ const Index = () => {
 
         {/* Testimonials */}
         <TestimonialsSection 
+          title="What Our Clients Say"
           subtitle="Real feedback from business owners who wanted better visibility, better systems, and better follow-up."
         />
 
@@ -512,7 +489,7 @@ const Index = () => {
           contactCTA={{
             ...baseContactCTA,
             title: "Have more questions?",
-            description: "We're here to help! Reach out to us for a personalized consultation.",
+            description: "We're here to help. Reach out to us for a personalized consultation.",
             tagline: "Let's grow your business together.",
           }}
         />
@@ -520,8 +497,8 @@ const Index = () => {
         {/* Final CTA Strip */}
         <CardCTA 
           title="Let's Build Your Growth Engine"
-          description="If you want clearer strategy, stronger visibility, and better follow-up without patching together disconnected tools, start with a free strategy call."
-          buttonText="Schedule Strategy Call"
+          description="If you want AI-powered client acquisition systems, done-for-you execution, adaptive strategy, and a clear multi-channel dashboard without patching together disconnected tools, start with a free strategy call."
+          buttonText="Get Free Strategy Call"
           buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
         />
 
