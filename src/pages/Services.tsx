@@ -260,6 +260,10 @@ const Services = () => {
 
       {/* ─── SECTION 1: HERO ─── */}
       <section className="hero-section">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${servicesHeroBg})` }}
+        />
         <div className="absolute inset-0" style={{ backgroundColor: "hsl(var(--background) / 0.85)" }} />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
