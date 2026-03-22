@@ -9,14 +9,6 @@ const services = [
   { name: "Link Building", href: "/services/link-building" },
 ];
 
-const industries = [
-  { name: "HVAC & Plumbing", href: "/industries/hvac" },
-  { name: "Dental Practices", href: "/industries/dental" },
-  { name: "Med Spas", href: "/industries/med-spa" },
-  { name: "Chiropractors", href: "/industries/chiropractor" },
-  { name: "Auto Repair", href: "/industries/auto-repair" },
-  { name: "Photographers", href: "/industries/photographers" },
-];
 
 export const Footer = () => {
   return (
@@ -55,38 +47,24 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Industries */}
+          {/* Quick Links */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Industries</h4>
+            <h4 className="font-display font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              {industries.map((industry) => (
-                <li key={industry.href}>
-                  <Link
-                    to={industry.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {industry.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Get in Touch</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>hello@growsmallbiz.io</li>
-              <li>1-800-SEO-GROW</li>
-              <li className="pt-4">
-                <div className="flex gap-4">
-                  <a href="#" className="hover:text-primary transition-colors">
-                    LinkedIn
-                  </a>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Twitter
-                  </a>
-                </div>
+              <li>
+                <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  All Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/free-assessment" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Free Assessment
+                </Link>
               </li>
             </ul>
           </div>
@@ -109,6 +87,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+
         </div>
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
