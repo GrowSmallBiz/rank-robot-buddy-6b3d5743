@@ -122,6 +122,14 @@ export const Header = () => {
                   isServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
+                {/* Service Overview */}
+                <Link
+                  to="/services"
+                  className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
+                >
+                  Service Overview
+                </Link>
+
                 {/* Website That Converts */}
                 <Link
                   to="/services/website-design"
