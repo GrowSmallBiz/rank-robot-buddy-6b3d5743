@@ -439,7 +439,47 @@ const ManagedAISEO = () => {
           </div>
         </section>
 
-        {/* SECTION 6 — WHY AI-POWERED SEO */}
+        {/* COMMAND CENTER SECTION */}
+        <section className="py-20 lg:py-28 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-bold font-display mb-4 text-foreground">
+                  Your Holistic AI SEO Command Center
+                </h3>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Monitor your complete digital presence in real-time—track domain authority growth, measure your visibility across AI platforms like ChatGPT, Gemini, Perplexity & Claude, and optimize all eight SEO pillars from one powerful dashboard. Make data-driven decisions that drive measurable ROI.
+                </p>
+              </div>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <div className="relative group cursor-pointer">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-primary via-purple-500 to-cyan-500 rounded-2xl blur-md opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
+                    <img 
+                      src={seoDashboardMetrics} 
+                      alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
+                      className="relative w-full rounded-2xl border border-primary/30 shadow-2xl transition-transform duration-300 group-hover:scale-[1.01]"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="bg-background/80 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/30 flex items-center gap-2">
+                        <Search className="w-4 h-4 text-primary" />
+                        <span className="text-sm font-medium">Click to expand</span>
+                      </div>
+                    </div>
+                  </div>
+                </DialogTrigger>
+                <DialogContent className="max-w-[95vw] max-h-[95vh] p-2 bg-background/95 backdrop-blur-xl border-primary/30">
+                  <img 
+                    src={seoDashboardMetrics} 
+                    alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
+                    className="w-full h-auto rounded-xl"
+                  />
+                </DialogContent>
+              </Dialog>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 lg:py-28 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
