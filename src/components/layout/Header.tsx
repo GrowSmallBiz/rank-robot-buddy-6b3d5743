@@ -245,52 +245,6 @@ export const Header = () => {
               </div>
             </div>
 
-            {/* AI Client Growth System Dropdown */}
-            <div 
-              className="relative group"
-              onMouseEnter={() => setIsGrowthSystemOpen(true)}
-              onMouseLeave={() => setIsGrowthSystemOpen(false)}
-            >
-              <button
-                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
-                  isGrowthSystemActive ? "text-primary" : "text-muted-foreground"
-                }`}
-              >
-                AI Client Growth System
-                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-              </button>
-
-              <div
-                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
-                  isGrowthSystemOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
-                }`}
-              >
-                <Link
-                  to="/services/crm"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  AI-Powered CRM
-                </Link>
-                <Link
-                  to="/services/ai-receptionist"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  AI Receptionist & Conversational AI
-                </Link>
-                <Link
-                  to="/services/reputation-management"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Reputation Management
-                </Link>
-                <Link
-                  to="/services/quad-bots"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Quad Bots AI Sales Team
-                </Link>
-              </div>
-            </div>
 
             <Link
               to="/about"
