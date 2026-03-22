@@ -1,16 +1,19 @@
+import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { FAQSection } from "@/components/sections/FAQSection";
-import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
-import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
-import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-import { HomeCaseStudySection } from "@/components/sections/HomeCaseStudySection";
 import heroImage from "@/assets/homepage-hero-bg.jpg";
+
+// Lazy-load below-the-fold sections to improve FCP
+const TestimonialsSection = lazy(() => import("@/components/sections/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
+const FAQSection = lazy(() => import("@/components/sections/FAQSection").then(m => ({ default: m.FAQSection })));
+const AnimatedStatsSection = lazy(() => import("@/components/sections/AnimatedStatsSection").then(m => ({ default: m.AnimatedStatsSection })));
+const ConsultationFormSection = lazy(() => import("@/components/sections/ConsultationFormSection").then(m => ({ default: m.ConsultationFormSection })));
+const CardCTA = lazy(() => import("@/components/services").then(m => ({ default: m.CardCTA })));
+const WhyChooseSection = lazy(() => import("@/components/sections/WhyChooseSection").then(m => ({ default: m.WhyChooseSection })));
+const HomeCaseStudySection = lazy(() => import("@/components/sections/HomeCaseStudySection").then(m => ({ default: m.HomeCaseStudySection })));
 import { 
   ArrowRight, 
   Bot, 
