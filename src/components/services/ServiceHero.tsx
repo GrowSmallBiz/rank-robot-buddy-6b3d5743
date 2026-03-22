@@ -120,7 +120,7 @@ export const ServiceHero = ({
           )}
 
           <div
-            className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up"
+            className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
             {renderCTA(primaryCTA, true)}
