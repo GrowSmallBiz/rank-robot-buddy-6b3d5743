@@ -307,15 +307,6 @@ export const Header = () => {
             </Link>
 
             <Link
-              to="/blog"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === "/blog" ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
-              Blog
-            </Link>
-
-            <Link
               to="/contact"
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 location.pathname === "/contact" ? "text-primary" : "text-muted-foreground"
