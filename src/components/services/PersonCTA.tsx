@@ -45,12 +45,9 @@ export const PersonCTA = ({
               {/* Left: Photo + Name */}
               <div className="flex-shrink-0 text-center">
                 <div className="relative inline-block">
-                  {/* Subtle gray ring around photo - matching CardCTA */}
+                  {/* Orange gradient ring around photo - matching FAQ contact CTA */}
                   <div 
-                    className="absolute -inset-1 rounded-full"
-                    style={{
-                      background: 'linear-gradient(135deg, hsl(210 20% 40%) 0%, hsl(210 20% 25%) 100%)'
-                    }}
+                    className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary via-orange-400 to-primary"
                   />
                   {/* Photo container */}
                   <div className="relative w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden">
