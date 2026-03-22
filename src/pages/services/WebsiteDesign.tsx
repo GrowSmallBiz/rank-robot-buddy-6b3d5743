@@ -289,6 +289,8 @@ const WebsiteDesign = () => {
           label: "Explore All Services",
           href: "/services/ai-seo-hub",
         }}
+        backgroundImage={websiteDesignHeroBg}
+        overlayOpacity={88}
       />
 
       {/* Hero extended body copy */}
