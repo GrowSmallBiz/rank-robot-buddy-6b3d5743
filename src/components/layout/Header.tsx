@@ -297,39 +297,6 @@ export const Header = () => {
               </div>
             </div>
 
-            {/* Top-Level Industries Dropdown */}
-            <div 
-              className="relative group"
-              onMouseEnter={() => setIsIndustriesOpen(true)}
-              onMouseLeave={() => setIsIndustriesOpen(false)}
-            >
-              <button
-                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname.startsWith("/industries/home-services") ? "text-primary" : "text-muted-foreground"
-                }`}
-              >
-                Industries
-                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-              </button>
-
-              <div
-                className={`absolute top-full left-0 mt-2 w-80 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
-                  isIndustriesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
-                }`}
-              >
-                {topLevelIndustries.map((industry) => (
-                  <Link
-                    key={industry.href}
-                    to={industry.href}
-                    className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                  >
-                    {industry.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-
             <Link
               to="/about"
               className={`text-sm font-medium transition-colors hover:text-primary ${
