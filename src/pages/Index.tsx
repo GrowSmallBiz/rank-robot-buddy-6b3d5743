@@ -424,9 +424,9 @@ const Index = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to={service.href}>
+                <Link to={service.href} aria-label={`Learn more about ${service.title}`}>
                   <Button variant="outline" size="sm" className="w-full mt-4 border-ghl-icon/50 hover:bg-ghl-icon/10 hover:border-ghl-icon">
-                    Learn More
+                    Learn More<span className="sr-only"> about {service.title}</span>
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
