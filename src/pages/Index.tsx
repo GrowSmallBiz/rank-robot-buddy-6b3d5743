@@ -214,10 +214,14 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+        {/* Background Image — using <img> for LCP discoverability */}
+        <img
+          src={heroImage}
+          alt=""
+          role="presentation"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-background/85" />
         

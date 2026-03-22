@@ -54,6 +54,7 @@ export const PersonCTA = ({
                     <img 
                       src={baseContactCTA.image} 
                       alt={baseContactCTA.name} 
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </div>
