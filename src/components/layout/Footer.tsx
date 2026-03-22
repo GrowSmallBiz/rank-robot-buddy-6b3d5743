@@ -88,24 +88,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Get in Touch</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>hello@growsmallbiz.io</li>
-              <li>1-800-SEO-GROW</li>
-              <li className="pt-4">
-                <div className="flex gap-4">
-                  <a href="#" className="hover:text-primary transition-colors">
-                    LinkedIn
-                  </a>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Twitter
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
