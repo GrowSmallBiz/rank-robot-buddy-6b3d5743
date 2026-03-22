@@ -1,20 +1,12 @@
 import { Link } from "react-router-dom";
 
-const services = [
-  { name: "Technical SEO", href: "/services/technical-seo" },
-  { name: "On-Page SEO", href: "/services/on-page-seo" },
-  { name: "Answer Engine Optimization", href: "/services/aeo" },
-  { name: "Generative Engine Optimization", href: "/services/geo" },
-  { name: "Local SEO", href: "/services/local-seo" },
-  { name: "Link Building", href: "/services/link-building" },
-];
 
 
 export const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
@@ -30,22 +22,6 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Services</h4>
-            <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service.href}>
-                  <Link
-                    to={service.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           {/* Quick Links */}
           <div>
@@ -61,11 +37,6 @@ export const Footer = () => {
                   All Services
                 </Link>
               </li>
-              <li>
-                <Link to="/free-assessment" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Free Assessment
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -73,8 +44,8 @@ export const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-foreground mb-4">Get in Touch</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>hello@growsmallbiz.io</li>
-              <li>1-800-SEO-GROW</li>
+              <li>contact@growsmallbiz.io</li>
+              <li>+1 (925) 886-3724</li>
               <li className="pt-4">
                 <div className="flex gap-4">
                   <a href="#" className="hover:text-primary transition-colors">
