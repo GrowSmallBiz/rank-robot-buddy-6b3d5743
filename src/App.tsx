@@ -68,7 +68,7 @@ export const routes: RouteRecord[] = [
       { path: "services/paid-media", Component: PaidMedia },
       { path: "services/social-media", Component: SocialMedia },
       { path: "services/website-design", Component: WebsiteDesign },
-      { path: "services/ai-seo-hub", Component: AISEOHub },
+      { path: "services/managed-ai-seo", Component: ManagedAISEO },
       { path: "services/managed-seo-pricing", Component: ManagedSEOPricing },
       { path: "services/reputation-management", Component: ReputationManagement },
       { path: "services/ai-receptionist", Component: AIReceptionist },
