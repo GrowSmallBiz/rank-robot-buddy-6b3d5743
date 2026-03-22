@@ -389,7 +389,7 @@ const SocialMedia = () => {
         description="Strategic social media marketing for local service professionals with paid advertising and organic engagement."
         url="/services/social-media"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Social Media", url: "/services/social-media" },
         ]}
       />

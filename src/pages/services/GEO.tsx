@@ -121,7 +121,7 @@ const GEO = () => {
         description="Get your brand cited in ChatGPT, Gemini, Perplexity, and AI-powered search results."
         url="/services/geo"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "GEO", url: "/services/geo" },
         ]}
       />

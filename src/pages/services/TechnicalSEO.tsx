@@ -124,7 +124,7 @@ const TechnicalSEO = () => {
         description="Site speed, crawlability, Core Web Vitals optimization, and technical foundation for local businesses."
         url="/services/technical-seo"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Technical SEO", url: "/services/technical-seo" },
         ]}
       />

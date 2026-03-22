@@ -119,7 +119,7 @@ const LocalSEO = () => {
         description="Google Business Profile optimization, local citations, map pack rankings, and service area targeting."
         url="/services/local-seo"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Local SEO", url: "/services/local-seo" },
         ]}
       />

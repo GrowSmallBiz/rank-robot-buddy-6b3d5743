@@ -108,7 +108,7 @@ const AEO = () => {
         description="Optimize your content for AI-powered answer engines and featured snippets across ChatGPT, Perplexity, and Google AI."
         url="/services/aeo"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "AEO", url: "/services/aeo" },
         ]}
       />

@@ -308,7 +308,7 @@ const essentialStackTabs = [
       { value: "312%", label: "Avg organic traffic increase" },
       { value: "40%", label: "AI search visibility" }
     ],
-    href: "/services/ai-seo-hub",
+    href: "/services/managed-ai-seo",
     visualIcons: [Globe, Search, BarChart3, Target]
   },
   {

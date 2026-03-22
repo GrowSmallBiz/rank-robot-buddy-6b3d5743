@@ -17,7 +17,7 @@ import LinkBuilding from "./pages/services/LinkBuilding";
 import PaidMedia from "./pages/services/PaidMedia";
 import SocialMedia from "./pages/services/SocialMedia";
 import WebsiteDesign from "./pages/services/WebsiteDesign";
-import AISEOHub from "./pages/services/AISEOHub";
+import ManagedAISEO from "./pages/services/ManagedAISEO";
 import ManagedSEOPricing from "./pages/services/ManagedSEOPricing";
 import ReputationManagement from "./pages/services/ReputationManagement";
 import AIReceptionist from "./pages/services/AIReceptionist";
@@ -68,7 +68,7 @@ export const routes: RouteRecord[] = [
       { path: "services/paid-media", Component: PaidMedia },
       { path: "services/social-media", Component: SocialMedia },
       { path: "services/website-design", Component: WebsiteDesign },
-      { path: "services/ai-seo-hub", Component: AISEOHub },
+      { path: "services/managed-ai-seo", Component: ManagedAISEO },
       { path: "services/managed-seo-pricing", Component: ManagedSEOPricing },
       { path: "services/reputation-management", Component: ReputationManagement },
       { path: "services/ai-receptionist", Component: AIReceptionist },

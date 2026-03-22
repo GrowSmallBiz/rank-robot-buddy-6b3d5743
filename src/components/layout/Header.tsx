@@ -50,6 +50,7 @@ export const Header = () => {
     location.pathname.startsWith("/services/social") ||
     location.pathname.startsWith("/services/paid-media") ||
     location.pathname.startsWith("/services/ai-seo") ||
+    location.pathname.startsWith("/services/managed-ai-seo") ||
     location.pathname.startsWith("/services/technical") ||
     location.pathname.startsWith("/services/on-page") ||
     location.pathname.startsWith("/services/aeo") ||
@@ -66,6 +67,7 @@ export const Header = () => {
 
   const isSEOActive = 
     location.pathname.startsWith("/services/ai-seo") ||
+    location.pathname.startsWith("/services/managed-ai-seo") ||
     location.pathname.startsWith("/services/technical") ||
     location.pathname.startsWith("/services/on-page") ||
     location.pathname.startsWith("/services/aeo") ||
@@ -151,10 +153,10 @@ export const Header = () => {
                   >
                     {/* AI-Powered SEO Overview */}
                     <Link
-                      to="/services/ai-seo-hub"
+                      to="/services/managed-ai-seo"
                       className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
-                      AI-Powered SEO Services
+                      Managed AI SEO
                     </Link>
                     
                     {/* Managed SEO Pricing */}
@@ -414,11 +416,11 @@ export const Header = () => {
                   {mobileSEOOpen && (
                     <div className="pl-4 space-y-2">
                       <Link
-                        to="/services/ai-seo-hub"
+                        to="/services/managed-ai-seo"
                         onClick={() => setIsOpen(false)}
                         className="block py-2 text-primary font-medium"
                       >
-                        AI-Powered SEO Services
+                        Managed AI SEO
                       </Link>
                       <Link
                         to="/services/managed-seo-pricing"

@@ -270,7 +270,7 @@ const WebsiteDesign = () => {
         description="Conversion-focused website design for local service businesses — built to turn visitors into calls, bookings, and leads."
         url="/services/website-design"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Website Design", url: "/services/website-design" },
         ]}
       />
@@ -287,7 +287,7 @@ const WebsiteDesign = () => {
         }}
         secondaryCTA={{
           label: "Explore All Services",
-          href: "/services/ai-seo-hub",
+          href: "/services/managed-ai-seo",
           variant: "heroOutline",
         }}
         backgroundImage={websiteDesignHeroBg}

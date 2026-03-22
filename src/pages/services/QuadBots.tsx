@@ -273,7 +273,7 @@ const QuadBots = () => {
         description="4-Bot System with Lead Gen, Conversational AI, Voice AI, and Supervisor OS for 24/7 sales automation."
         url="/services/quad-bots"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "AI QuadBots", url: "/services/quad-bots" },
         ]}
       />

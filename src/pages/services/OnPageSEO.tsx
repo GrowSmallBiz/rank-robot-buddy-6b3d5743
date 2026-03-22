@@ -139,7 +139,7 @@ const OnPageSEO = () => {
         description="Content optimization, keyword targeting, meta tag management, and internal linking for local businesses."
         url="/services/on-page-seo"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "On-Page SEO", url: "/services/on-page-seo" },
         ]}
       />

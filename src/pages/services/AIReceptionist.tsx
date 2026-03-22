@@ -264,7 +264,7 @@ const AIReceptionist = () => {
         description="24/7 AI-powered phone answering, SMS, and chat automation for lead capture and appointment booking."
         url="/services/ai-receptionist"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "AI Receptionist", url: "/services/ai-receptionist" },
         ]}
       />
