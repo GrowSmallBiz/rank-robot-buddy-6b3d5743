@@ -186,7 +186,7 @@ const PaidMedia = () => {
         description="Google Ads, Meta Ads, TikTok Ads, and PPC management for local service businesses."
         url="/services/paid-media"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Paid Media", url: "/services/paid-media" },
         ]}
       />

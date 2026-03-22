@@ -125,7 +125,7 @@ const LinkBuilding = () => {
         description="High-quality backlink acquisition, digital PR, and authority building for local businesses."
         url="/services/link-building"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Link Building", url: "/services/link-building" },
         ]}
       />

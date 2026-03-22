@@ -531,7 +531,7 @@ const CRM = () => {
         description="All-in-one CRM with automated SMS, Email, Live Chat & Phone follow-ups and 24/7 AI lead nurturing."
         url="/services/crm"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "CRM", url: "/services/crm" },
         ]}
       />

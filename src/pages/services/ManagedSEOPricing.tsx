@@ -154,7 +154,7 @@ const ManagedSEOPricing = () => {
         description="Transparent pricing for managed AI SEO services from Starter to Authority plans."
         url="/services/managed-seo-pricing"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Managed SEO Pricing", url: "/services/managed-seo-pricing" },
         ]}
       />

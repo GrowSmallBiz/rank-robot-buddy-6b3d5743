@@ -227,7 +227,7 @@ const LinkedInOutreach = () => {
         description="Done-With-You B2B lead generation with AI-assisted targeting and personalized messaging."
         url="/services/linkedin-outreach"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "LinkedIn Outreach", url: "/services/linkedin-outreach" },
         ]}
       />

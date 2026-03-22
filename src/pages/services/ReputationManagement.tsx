@@ -233,7 +233,7 @@ const ReputationManagement = () => {
         description="Automated review collection, AI-powered responses, and monitoring across 50+ platforms."
         url="/services/reputation-management"
         breadcrumbs={[
-          { name: "Services", url: "/services/ai-seo-hub" },
+          { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Reputation Management", url: "/services/reputation-management" },
         ]}
       />
