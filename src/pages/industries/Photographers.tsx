@@ -195,7 +195,7 @@ const photographyAdCreatives = [
 
 // Import AI Platform Icons
 import { GeminiIcon, ChatGPTIcon, PerplexityIcon, GrokIcon, CopilotIcon, GoogleAIIcon } from "@/components/icons/AIplatformIcons";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import subrataHeadshot from "@/assets/subrata-guha-headshot-sm.jpg";
 
 // AI Platforms Data
 const aiPlatforms = [

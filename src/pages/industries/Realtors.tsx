@@ -63,7 +63,7 @@ import realtorPaidAdsImg from "@/assets/realtor-paid-ads.jpg";
 import realtorSocialMediaImg from "@/assets/realtor-social-media.jpg";
 import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.jpg";
 import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.jpg";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import subrataHeadshot from "@/assets/subrata-guha-headshot-sm.jpg";
 
 // IDXAddons Featured Addon images
 import idxSearchTool from "@/assets/idx-search-tool.png";
