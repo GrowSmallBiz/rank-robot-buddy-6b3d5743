@@ -304,7 +304,6 @@
   /* Hero Section Styles */
   .hero-section {
     @apply relative py-24 lg:py-32 overflow-hidden;
-    background: linear-gradient(180deg, hsl(210 50% 6%) 0%, hsl(210 50% 10%) 40%, hsl(210 50% 8%) 100%);
   }
 
   .hero-bg-overlay {
