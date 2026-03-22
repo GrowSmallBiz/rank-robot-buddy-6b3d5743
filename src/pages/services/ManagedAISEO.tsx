@@ -251,24 +251,28 @@ const ManagedAISEO = () => {
               titleHighlight="Matter Now?"
             />
 
-            <div className="max-w-5xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 animate-fade-up">
-                <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                  <p>
-                    Traditional SEO was a project. You hired someone to optimize a few pages, build some links, maybe write some blog posts — and hoped it held. That model no longer works in a search environment that changes faster than any single consultant can manually track.
-                  </p>
-                  <p>
-                    Managed AI SEO is a different model: an ongoing, fully managed service in which AI-assisted tools and strategic human oversight work together to continuously audit, optimize, and expand your search presence — across every layer that matters.
-                  </p>
+            <div className="max-w-5xl mx-auto animate-fade-up">
+              <div className="rounded-2xl border border-border bg-card/40 p-8 md:p-12">
+                <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Traditional SEO was a project. You hired someone to optimize a few pages, build some links, maybe write some blog posts — and hoped it held. That model no longer works in a search environment that changes faster than any single consultant can manually track.
+                    </p>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Managed AI SEO is a different model: an ongoing, fully managed service in which AI-assisted tools and strategic human oversight work together to continuously audit, optimize, and expand your search presence — across every layer that matters.
+                    </p>
+                  </div>
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      For local service businesses, that means your website, Google Business Profile, service pages, content, local citations, and off-site authority are all being monitored and improved on an ongoing basis — not just when something breaks.
+                    </p>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      GrowSmallBiz owns strategy, implementation, optimization, and reporting. You get a clear, consistent picture of what is working and where you are growing — without becoming an SEO expert.
+                    </p>
+                  </div>
                 </div>
-                <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                  <p>
-                    For local service businesses, that means your website, Google Business Profile, service pages, content, local citations, and off-site authority are all being monitored and improved on an ongoing basis — not just when something breaks.
-                  </p>
-                  <p>
-                    GrowSmallBiz owns strategy, implementation, optimization, and reporting. You get a clear, consistent picture of what is working and where you are growing — without becoming an SEO expert.
-                  </p>
-                  <p className="font-medium text-foreground">
+                <div className="mt-8 pt-8 border-t border-border">
+                  <p className="text-lg font-medium text-foreground text-center max-w-3xl mx-auto">
                     The result is a search presence that compounds month over month, building lasting visibility and a reliable flow of qualified local leads.
                   </p>
                 </div>
