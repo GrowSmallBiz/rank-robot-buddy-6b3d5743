@@ -225,15 +225,15 @@ const Index = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up delay-200">
-              GrowSmallBiz helps local service businesses attract qualified leads, show up in local search, follow up faster, and convert more opportunities using one connected, AI-powered growth system.
+              GrowSmallBiz helps local service businesses attract qualified leads, show up in local search, follow up faster, and convert more opportunities with one connected, AI-powered growth system.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
-              We handle the moving parts of your website, SEO, paid ads, CRM automation, and AI-powered follow-up so you can spend less time managing marketing and more time focusing on your business, your clients, and your family.
+              We handle your website, SEO, paid ads, CRM automation, and AI-powered follow-up so you can spend less time managing marketing and more time focusing on your business, your clients, and your family.
             </p>
 
             <p className="text-base text-muted-foreground/80 italic max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.35s" }}>
-              No marketing channel performs perfectly all the time. When something is not producing the right results, we review the data, recalibrate the strategy, and keep improving the system.
+              When performance needs improvement, we review the data, recalibrate the strategy, and keep optimizing the system.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
