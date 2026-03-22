@@ -50,6 +50,7 @@ export const Header = () => {
     location.pathname.startsWith("/services/social") ||
     location.pathname.startsWith("/services/paid-media") ||
     location.pathname.startsWith("/services/ai-seo") ||
+    location.pathname.startsWith("/services/managed-ai-seo") ||
     location.pathname.startsWith("/services/technical") ||
     location.pathname.startsWith("/services/on-page") ||
     location.pathname.startsWith("/services/aeo") ||
