@@ -122,6 +122,14 @@ export const Header = () => {
                   isServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
+                {/* Service Overview */}
+                <Link
+                  to="/services"
+                  className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
+                >
+                  Service Overview
+                </Link>
+
                 {/* Website That Converts */}
                 <Link
                   to="/services/website-design"
@@ -395,6 +403,15 @@ export const Header = () => {
             </button>
             {mobileServicesOpen && (
               <div className="pl-4 space-y-2">
+                {/* Service Overview */}
+                <Link
+                  to="/services"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-primary font-medium"
+                >
+                  Service Overview
+                </Link>
+
                 {/* Website That Converts */}
                 <Link
                   to="/services/website-design"
