@@ -7,7 +7,7 @@ import { AnimatedStat } from "./AnimatedStat";
 interface HeroCTA {
   label: string;
   href: string;
-  variant?: "hero" | "outline";
+  variant?: "hero" | "outline" | "heroOutline";
   external?: boolean;
 }
 
@@ -104,15 +104,15 @@ export const ServiceHero = ({
             )}
           </h1>
 
-          <p
-            className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-up"
+          <div
+            className="text-lg md:text-xl text-foreground/80 mb-4 animate-fade-up max-w-3xl mx-auto leading-relaxed"
             style={{ animationDelay: "0.1s" }}
             dangerouslySetInnerHTML={{ __html: subtitle }}
           />
 
           {description && (
             <p
-              className="text-lg text-muted-foreground mb-8 animate-fade-up"
+              className="text-lg text-muted-foreground mb-10 animate-fade-up"
               style={{ animationDelay: "0.15s" }}
             >
               {description}
@@ -120,7 +120,7 @@ export const ServiceHero = ({
           )}
 
           <div
-            className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up"
+            className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
             {renderCTA(primaryCTA, true)}
