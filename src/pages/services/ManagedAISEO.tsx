@@ -379,9 +379,19 @@ const ManagedAISEO = () => {
                   </div>
                   <h3 className="text-xl font-bold font-display text-foreground">Not the Right Fit</h3>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  You are a national e-commerce brand, a startup without an established service area, a business seeking one-time consulting only, or a business where per-transaction margin does not support an ongoing SEO investment.
-                </p>
+                <ul className="space-y-3">
+                  {[
+                    "National e-commerce brands",
+                    "Startups without an established service area",
+                    "Businesses seeking one-time consulting only",
+                    "Businesses where per-transaction margin does not support an ongoing SEO investment",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50 shrink-0 mt-1.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
