@@ -9,14 +9,6 @@ const services = [
   { name: "Link Building", href: "/services/link-building" },
 ];
 
-const industries = [
-  { name: "HVAC & Plumbing", href: "/industries/hvac" },
-  { name: "Dental Practices", href: "/industries/dental" },
-  { name: "Med Spas", href: "/industries/med-spa" },
-  { name: "Chiropractors", href: "/industries/chiropractor" },
-  { name: "Auto Repair", href: "/industries/auto-repair" },
-  { name: "Photographers", href: "/industries/photographers" },
-];
 
 export const Footer = () => {
   return (

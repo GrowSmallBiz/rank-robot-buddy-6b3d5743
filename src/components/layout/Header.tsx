@@ -527,14 +527,6 @@ export const Header = () => {
           </Link>
 
           <Link
-            to="/blog"
-            onClick={() => setIsOpen(false)}
-            className="block text-foreground font-medium"
-          >
-            Blog
-          </Link>
-
-          <Link
             to="/contact"
             onClick={() => setIsOpen(false)}
             className="block text-foreground font-medium"
