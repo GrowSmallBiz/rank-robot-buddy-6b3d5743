@@ -37,11 +37,6 @@ export const Footer = () => {
                   All Services
                 </Link>
               </li>
-              <li>
-                <Link to="/free-assessment" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Free Assessment
-                </Link>
-              </li>
             </ul>
           </div>
 
