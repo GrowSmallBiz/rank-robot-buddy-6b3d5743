@@ -2,7 +2,6 @@ import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
 import Index from "./pages/Index";
@@ -41,19 +40,16 @@ const BrandingGuidelines = lazy(() => import("./pages/BrandingGuidelines"));
 const DownloadBrandingDocx = lazy(() => import("./pages/DownloadBrandingDocx"));
 const IndexBackup = lazy(() => import("./pages/IndexBackup"));
 const NotFound = lazy(() => import("./pages/NotFound"));
-
-const queryClient = new QueryClient();
+const AISEOHub = lazy(() => import("./pages/services/AISEOHub"));
 
 const AppLayout = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <TooltipProvider>
+    <Toaster />
+    <Sonner />
+    <Suspense fallback={null}>
+      <Outlet />
+    </Suspense>
+  </TooltipProvider>
 );
 
 export const routes: RouteRecord[] = [
