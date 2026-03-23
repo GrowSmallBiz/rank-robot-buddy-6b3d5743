@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 
-const BASE_URL = "https://growsmallbiz.work";
+const BASE_URL = "https://growsmallbiz.io";
 
 interface PageJsonLdProps {
   pageType: "AboutPage" | "ContactPage" | "Blog" | "WebPage";

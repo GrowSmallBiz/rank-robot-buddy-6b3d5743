@@ -248,7 +248,7 @@ const Services = () => {
       <Helmet>
         <title>Services | AI-Powered Growth System for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="One connected system — websites, Managed AI SEO, paid ads, CRM automation, and growth campaigns — built to help local service businesses capture more leads and convert more opportunities." />
-        <link rel="canonical" href="https://growsmallbiz.work/services" />
+        <link rel="canonical" href="https://growsmallbiz.io/services" />
       </Helmet>
       <PageJsonLd
         pageType="WebPage"
