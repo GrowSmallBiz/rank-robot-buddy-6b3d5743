@@ -223,7 +223,7 @@ export const Header = () => {
           </Link>
 
           <Button variant="hero" size="lg" className="w-full mt-4" asChild>
-            <Link to="/free-assessment" onClick={() => setIsOpen(false)}>Get Free Audit</Link>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>Get Free Audit</Link>
           </Button>
         </div>
       </div>
