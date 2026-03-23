@@ -186,14 +186,14 @@ const ManagedAISEO = () => {
         <title>Managed AI SEO for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="The complete Managed AI SEO system for local service businesses. GrowSmallBiz runs your entire SEO program — technical, local, content, AEO, GEO, link building, and reporting — so you can focus on running your business." />
         <meta name="keywords" content="managed AI SEO, local SEO services, AI-powered SEO, local service business SEO, managed SEO program, technical SEO, on-page SEO, local SEO, AEO, GEO, link building, SEO for contractors, SEO for dentists, SEO for HVAC, GrowSmallBiz" />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo" />
+        <link rel="canonical" href="https://growsmallbiz.io/managed-ai-seo" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Managed AI SEO for Local Service Businesses"
         serviceType="Managed SEO"
         description="The complete Managed AI SEO system for local service businesses — covering technical SEO, on-page, local SEO, topical authority, AEO, GEO, link building, and monthly reporting."
-        url="/services/managed-ai-seo"
+        url="/managed-ai-seo"
         breadcrumbs={[
           { name: "Services", url: "/services/managed-ai-seo" },
         ]}
