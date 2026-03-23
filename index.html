@@ -85,21 +85,28 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 
-    <script
-      src="https://botdisplay.com/chat-widget.js"
-      data-color="#3d71bf"
-      data-assistant-id="1763509281876x767403296729333800"
-      data-account-id="4KL47iKeJZ2Ee05j7FBh"
-      data-position="bottom-right"
-      data-theme="light"
-      data-show-prompt="true"
-      data-auto-open="true"
-      data-prompt-message="Hi, I'm Juhi, Juhi AI Concierge, You Can Ask Questions Here + schedule a discovery call"
-      data-assistant-name="Juhi AI Concierge"
-      data-button-icon=""
-      data-greeting-message="Hi there! My name is {assistant_name} AI Concierge. How can I help today?"
-      data-prompts='[]'
-    ></script>
+    <script>
+      // Defer chatbot loading until after page is interactive
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var s = document.createElement('script');
+          s.src = 'https://botdisplay.com/chat-widget.js';
+          s.setAttribute('data-color', '#3d71bf');
+          s.setAttribute('data-assistant-id', '1763509281876x767403296729333800');
+          s.setAttribute('data-account-id', '4KL47iKeJZ2Ee05j7FBh');
+          s.setAttribute('data-position', 'bottom-right');
+          s.setAttribute('data-theme', 'light');
+          s.setAttribute('data-show-prompt', 'true');
+          s.setAttribute('data-auto-open', 'true');
+          s.setAttribute('data-prompt-message', 'Hi, I\'m Juhi, Juhi AI Concierge, You Can Ask Questions Here + schedule a discovery call');
+          s.setAttribute('data-assistant-name', 'Juhi AI Concierge');
+          s.setAttribute('data-button-icon', '');
+          s.setAttribute('data-greeting-message', 'Hi there! My name is {assistant_name} AI Concierge. How can I help today?');
+          s.setAttribute('data-prompts', '[]');
+          document.body.appendChild(s);
+        }, 3000);
+      });
+    </script>
 
     <!-- Fallback content for crawlers that don't execute JavaScript -->
     <noscript>

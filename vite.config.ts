@@ -17,5 +17,6 @@ export default defineConfig(({ mode }) => ({
   },
   ssgOptions: {
     dirStyle: "nested",
+    script: "async",
   },
 }));
