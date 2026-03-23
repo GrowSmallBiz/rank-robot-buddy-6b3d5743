@@ -134,6 +134,10 @@ const process = [
 const OnPageSEO = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>On-Page SEO Services | Content Optimization | GrowSmallBiz</title>
+        <meta name="description" content="Optimize your website content, meta tags, and structure for higher rankings. On-page SEO services designed for local service businesses." />
+      </Helmet>
       <ServiceJsonLd
         serviceName="On-Page SEO Services"
         serviceType="On-Page SEO"

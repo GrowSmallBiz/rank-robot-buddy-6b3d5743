@@ -120,6 +120,10 @@ const features = [
 const LinkBuilding = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Link Building Services for Local Businesses | GrowSmallBiz</title>
+        <meta name="description" content="Build high-quality backlinks that boost your local search rankings. White-hat link building strategies tailored for service businesses." />
+      </Helmet>
       <ServiceJsonLd
         serviceName="Link Building Services"
         serviceType="Link Building"

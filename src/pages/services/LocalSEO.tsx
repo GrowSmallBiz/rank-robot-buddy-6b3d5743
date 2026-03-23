@@ -114,6 +114,10 @@ const stats = [
 const LocalSEO = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Local SEO Services | Dominate Local Search | GrowSmallBiz</title>
+        <meta name="description" content="Rank higher in local search results and Google Maps. Our local SEO services help service businesses attract nearby customers and dominate their market." />
+      </Helmet>
       <ServiceJsonLd
         serviceName="Local SEO Services"
         serviceType="Local SEO"

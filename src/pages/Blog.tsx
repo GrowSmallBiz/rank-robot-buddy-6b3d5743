@@ -94,6 +94,10 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Blog | Digital Marketing Tips & SEO Insights | GrowSmallBiz</title>
+        <meta name="description" content="Expert digital marketing tips, SEO strategies, and AI automation insights for local service businesses. Stay ahead with GrowSmallBiz." />
+      </Helmet>
       <PageJsonLd
         pageType="Blog"
         name="Blog | GrowSmallBiz Digital Marketing"

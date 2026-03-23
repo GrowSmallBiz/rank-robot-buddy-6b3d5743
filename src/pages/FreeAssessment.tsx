@@ -184,6 +184,10 @@ const FreeAssessment = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Free Marketing Assessment | GrowSmallBiz</title>
+        <meta name="description" content="Get a free digital marketing assessment for your local business. Discover growth opportunities with AI-powered SEO, ads, and automation strategies." />
+      </Helmet>
       <PageJsonLd
         pageType="WebPage"
         name="Free Marketing Assessment | GrowSmallBiz"
