@@ -33,14 +33,11 @@ export const SectionHeader = ({
       {subtitle && <p className="section-subtitle">{subtitle}</p>}
       
       <HeadingTag className={headingClass}>
-        {title}
+        {titleHighlight ? `${title} ` : title}
         {titleHighlight && (
-          <>
-            {" "}
-            <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-              {titleHighlight}
-            </span>
-          </>
+          <span className="text-transparent bg-clip-text bg-gradient-primary italic">
+            {titleHighlight}
+          </span>
         )}
       </HeadingTag>
       
