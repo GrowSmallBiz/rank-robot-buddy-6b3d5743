@@ -2,43 +2,43 @@
 
 > AI-powered digital marketing for local service businesses. We provide integrated website design, SEO, paid media, social media, AI receptionist, CRM, and lead nurturing services.
 
-Canonical: https://growsmallbiz.work/
+Canonical: https://growsmallbiz.io/
 
 ## Read this first
-- Full machine-readable content: https://growsmallbiz.work/llms-full.txt
-- XML sitemap: https://growsmallbiz.work/sitemap.xml
+- Full machine-readable content: https://growsmallbiz.io/llms-full.txt
+- XML sitemap: https://growsmallbiz.io/sitemap.xml
 
 ## Primary Pages
-- Home: https://growsmallbiz.work/
-- About: https://growsmallbiz.work/about
-- Blog: https://growsmallbiz.work/blog
-- Contact: https://growsmallbiz.work/contact
-- Free Assessment: https://growsmallbiz.work/free-assessment
+- Home: https://growsmallbiz.io/
+- About: https://growsmallbiz.io/about
+- Blog: https://growsmallbiz.io/blog
+- Contact: https://growsmallbiz.io/contact
+- Free Assessment: https://growsmallbiz.io/free-assessment
 
 ## Services
-- Technical SEO: https://growsmallbiz.work/services/technical-seo
-- On-Page SEO: https://growsmallbiz.work/services/on-page-seo
-- AEO: https://growsmallbiz.work/services/aeo
-- GEO: https://growsmallbiz.work/services/geo
-- Local SEO: https://growsmallbiz.work/services/local-seo
-- Link Building: https://growsmallbiz.work/services/link-building
-- Paid Media: https://growsmallbiz.work/services/paid-media
-- Social Media: https://growsmallbiz.work/services/social-media
-- Website Design: https://growsmallbiz.work/services/website-design
-- AI SEO Hub: https://growsmallbiz.work/services/ai-seo-hub
-- Managed SEO Pricing: https://growsmallbiz.work/services/managed-seo-pricing
-- Reputation Management: https://growsmallbiz.work/services/reputation-management
-- AI Receptionist: https://growsmallbiz.work/services/ai-receptionist
-- CRM: https://growsmallbiz.work/services/crm
-- LinkedIn Outreach: https://growsmallbiz.work/services/linkedin-outreach
-- Quad Bots: https://growsmallbiz.work/services/quad-bots
+- Technical SEO: https://growsmallbiz.io/services/technical-seo
+- On-Page SEO: https://growsmallbiz.io/services/on-page-seo
+- AEO: https://growsmallbiz.io/services/aeo
+- GEO: https://growsmallbiz.io/services/geo
+- Local SEO: https://growsmallbiz.io/services/local-seo
+- Link Building: https://growsmallbiz.io/services/link-building
+- Paid Media: https://growsmallbiz.io/services/paid-media
+- Social Media: https://growsmallbiz.io/services/social-media
+- Website Design: https://growsmallbiz.io/services/website-design
+- AI SEO Hub: https://growsmallbiz.io/services/ai-seo-hub
+- Managed SEO Pricing: https://growsmallbiz.io/services/managed-seo-pricing
+- Reputation Management: https://growsmallbiz.io/services/reputation-management
+- AI Receptionist: https://growsmallbiz.io/services/ai-receptionist
+- CRM: https://growsmallbiz.io/services/crm
+- LinkedIn Outreach: https://growsmallbiz.io/services/linkedin-outreach
+- Quad Bots: https://growsmallbiz.io/services/quad-bots
 
 ## Industries
-- HVAC: https://growsmallbiz.work/industries/hvac
-- Home Services: https://growsmallbiz.work/industries/home-services
-- Dental: https://growsmallbiz.work/industries/dental
-- Med Spa: https://growsmallbiz.work/industries/med-spa
-- Chiropractor: https://growsmallbiz.work/industries/chiropractor
-- Auto Repair: https://growsmallbiz.work/industries/auto-repair
-- Photographers: https://growsmallbiz.work/industries/photographers
-- Realtors: https://growsmallbiz.work/industries/realtors
+- HVAC: https://growsmallbiz.io/industries/hvac
+- Home Services: https://growsmallbiz.io/industries/home-services
+- Dental: https://growsmallbiz.io/industries/dental
+- Med Spa: https://growsmallbiz.io/industries/med-spa
+- Chiropractor: https://growsmallbiz.io/industries/chiropractor
+- Auto Repair: https://growsmallbiz.io/industries/auto-repair
+- Photographers: https://growsmallbiz.io/industries/photographers
+- Realtors: https://growsmallbiz.io/industries/realtors
