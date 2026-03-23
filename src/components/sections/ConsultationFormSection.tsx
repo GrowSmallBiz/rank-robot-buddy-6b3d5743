@@ -3,7 +3,7 @@ export const ConsultationFormSection = () => {
     <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
         <div
-          className="max-w-5xl mx-auto relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+          className="max-w-3xl mx-auto relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
           style={{ border: '2px solid #17a2b8' }}
         >
           <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
