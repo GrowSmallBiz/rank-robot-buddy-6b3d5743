@@ -1,1 +1,11 @@
+# Trailing slash redirects to prevent duplicate pages
+/privacy-policy/  /privacy-policy  301
+/blog/            /blog            301
+/about/           /about           301
+/contact/         /contact         301
+/terms-of-service/ /terms-of-service 301
+/services/        /services        301
+/free-assessment/ /free-assessment 301
+
+# SPA fallback
 /*  /index.html  200!
