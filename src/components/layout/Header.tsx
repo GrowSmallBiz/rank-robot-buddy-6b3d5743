@@ -73,7 +73,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/services/website-design"
+                  to="/website-design"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Website That Converts
