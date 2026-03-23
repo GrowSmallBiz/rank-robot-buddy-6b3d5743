@@ -319,11 +319,10 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-                How Paid Traffic Becomes Booked Jobs
-              </h2>
-            </div>
+            <SectionHeader
+              title="How Paid Traffic Becomes"
+              titleHighlight="Booked Jobs"
+            />
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
               {processSteps.map((step, i) => (
