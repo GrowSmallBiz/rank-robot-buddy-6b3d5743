@@ -11,7 +11,7 @@ const TermsOfService = () => {
       </Helmet>
       <Header />
       <main className="pt-20">
-        <div className="container mx-auto px-4 py-16 max-w-4xl">
+        <div className="container mx-auto px-4 pt-16 pb-8 max-w-4xl">
           <h1 className="text-4xl font-bold font-display text-foreground mb-8">Terms &amp; Conditions</h1>
           
           <div className="prose prose-lg dark:prose-invert max-w-none space-y-6 text-muted-foreground">
