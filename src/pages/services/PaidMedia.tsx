@@ -571,33 +571,16 @@ const PaidMedia = () => {
       />
 
       {/* SECTION 11 — FINAL CTA */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-up">
-            <SectionHeader
-              title="Ready to Run Ads That Actually"
-              titleHighlight="Generate Leads?"
-              className="mb-0"
-            />
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Stop guessing. Stop wasting budget. Start building a paid advertising system that turns visibility into qualified leads, better follow-up, and clearer ROI.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
-                  Book Your Free Ad Strategy Call
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-              <Button variant="heroOutline" size="xl" asChild>
-                <Link to="/contact">
-                  Review My Current Campaigns
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PersonCTA
+        title="Ready to Run Ads That Actually Generate Leads?"
+        description="Stop guessing. Stop wasting budget. Start building a paid advertising system that turns visibility into qualified leads, better follow-up, and clearer ROI."
+        buttonText="Schedule Strategy Session"
+        buttonHref="/contact"
+        sectionClassName="py-24"
+      />
+
+      {/* CONSULTATION FORM */}
+      <ConsultationFormSection />
 
       <Footer />
     </div>
