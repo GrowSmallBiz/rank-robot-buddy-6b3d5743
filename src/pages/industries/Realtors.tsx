@@ -597,6 +597,7 @@ const Realtors = () => {
     <>
       <Head>
         <title>Real Estate Marketing Solutions | GrowSmallBiz</title>
+        <meta name="robots" content="noindex, nofollow" />
         <meta 
           name="description" 
           content="Grow your real estate business with IDX-integrated websites, AI-powered CRM, automated follow-ups, and lead generation tools. Built for realtors and brokers." 

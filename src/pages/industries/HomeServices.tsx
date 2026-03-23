@@ -870,6 +870,7 @@ const HomeServices = () => {
     <>
       <Head>
         <title>Home Services Marketing & SEO Guide | GrowSmallBiz</title>
+        <meta name="robots" content="noindex, nofollow" />
         <meta 
           name="description" 
           content="Complete marketing guide for home service contractors. SEO, paid media, reputation management strategies for HVAC, plumbers, electricians, roofers & remodelers." 
