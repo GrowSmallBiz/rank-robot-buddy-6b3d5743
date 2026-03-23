@@ -92,6 +92,8 @@ export const routes: RouteRecord[] = [
       { path: "branding-guidelines", Component: BrandingGuidelines },
       { path: "download-branding-docx", Component: DownloadBrandingDocx },
       { path: "homepage-backup", Component: IndexBackup },
+      { path: "privacy-policy", Component: PrivacyPolicy },
+      { path: "terms-of-service", Component: TermsOfService },
       { path: "404", Component: NotFound },
       { path: "*", Component: NotFound },
     ],
