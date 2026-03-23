@@ -90,7 +90,7 @@ const accelerationServices = [
       "Social presence that reinforces trust across your full digital footprint",
       "Community-facing campaigns designed for the markets you actually serve",
     ],
-    href: "/services/social-media",
+    href: "/contact",
     cta: "Learn More",
     icon: Megaphone,
   },
