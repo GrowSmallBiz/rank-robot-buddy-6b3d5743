@@ -221,7 +221,7 @@ const PaidMedia = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
-              <Link to="/free-assessment">
+              <Link to="/contact">
                 <Button variant="hero" size="xl">
                   Get Free Ad Strategy Call
                   <ArrowRight className="w-5 h-5" />
