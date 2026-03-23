@@ -28,4 +28,4 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-Sitemap: https://growsmallbiz.work/sitemap.xml
+Sitemap: https://growsmallbiz.io/sitemap.xml
