@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,23 @@ import {
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 const Contact = () => {
+  const [showIframe, setShowIframe] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowIframe(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    if (formRef.current) observer.observe(formRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <PageJsonLd
