@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import servicesHeroBg from "@/assets/services-hero-bg.jpg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -551,14 +552,8 @@ const Services = () => {
       {/* ─── SECTION 9: FAQ ─── */}
       <FAQSection title="Frequently Asked Questions" faqs={faqs} />
 
-      {/* ─── SECTION 10: FINAL CTA ─── */}
-      <PersonCTA
-        title="Build a Smarter Growth System for Your Business"
-        description="Whether you need a stronger website, better visibility in search, more consistent lead flow, or a connected system to follow up and convert opportunities — GrowSmallBiz helps local service businesses put the right pieces in place."
-        buttonText="Schedule Strategy Call"
-        buttonHref="/contact"
-        sectionClassName="py-24"
-      />
+      {/* ─── SECTION 10: CONSULTATION FORM ─── */}
+      <ConsultationFormSection />
 
       <Footer />
     </>
