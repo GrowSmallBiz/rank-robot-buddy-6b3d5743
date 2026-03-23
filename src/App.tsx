@@ -2,15 +2,18 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Outlet } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import type { RouteRecord } from "vite-react-ssg";
 import Index from "./pages/Index";
 
 const AppLayout = () => (
-  <TooltipProvider>
-    <Toaster />
-    <Sonner />
-    <Outlet />
-  </TooltipProvider>
+  <HelmetProvider>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <Outlet />
+    </TooltipProvider>
+  </HelmetProvider>
 );
 
 const lazy = (importFn: () => Promise<{ default: React.ComponentType }>) =>
