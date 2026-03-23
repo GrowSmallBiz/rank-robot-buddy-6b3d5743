@@ -72,7 +72,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
             {/* GHL Contact Form */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3" ref={formRef}>
               <div 
                 className="relative rounded-2xl p-8 animate-fade-up shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
                 style={{ backgroundColor: '#191321', border: '2px solid #17a2b8' }}
@@ -81,23 +81,30 @@ const Contact = () => {
                   Send Us a Message
                 </h2>
 
-                <iframe
-                  src="https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV"
-                  style={{ width: "100%", height: "1100px", border: "none", borderRadius: "0px" }}
-                  id="contact-inline-8qUn6xE0v2Jwcs63q0uV"
-                  data-layout="{'id':'INLINE'}"
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="GrowSmallBiz Website Contact"
-                  data-height="1126"
-                  data-layout-iframe-id="contact-inline-8qUn6xE0v2Jwcs63q0uV"
-                  data-form-id="8qUn6xE0v2Jwcs63q0uV"
-                  title="GrowSmallBiz Website Contact"
-                />
+                {showIframe ? (
+                  <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV"
+                    style={{ width: "100%", height: "1100px", border: "none", borderRadius: "0px" }}
+                    id="contact-inline-8qUn6xE0v2Jwcs63q0uV"
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="GrowSmallBiz Website Contact"
+                    data-height="1126"
+                    data-layout-iframe-id="contact-inline-8qUn6xE0v2Jwcs63q0uV"
+                    data-form-id="8qUn6xE0v2Jwcs63q0uV"
+                    title="GrowSmallBiz Website Contact"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div style={{ width: "100%", height: "1100px" }} className="flex items-center justify-center">
+                    <p className="text-white/50">Loading form...</p>
+                  </div>
+                )}
               </div>
             </div>
 
