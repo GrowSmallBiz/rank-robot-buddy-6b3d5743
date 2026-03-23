@@ -113,7 +113,7 @@ const accelerationServices = [
       "Personalized messaging built around your offer and target audience",
       "Scalable B2B prospecting without the manual time investment",
     ],
-    href: "/services/linkedin-outreach",
+    href: "/contact",
     cta: "Ask About This Service",
     icon: Users,
   },
