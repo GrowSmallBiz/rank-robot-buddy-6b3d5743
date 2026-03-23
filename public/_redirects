@@ -7,5 +7,5 @@
 /services/        /services        301
 /free-assessment/ /free-assessment 301
 
-# SPA fallback
-/*  /index.html  200!
+# SPA fallback (no ! flag so SSG static files take priority)
+/*  /index.html  200
