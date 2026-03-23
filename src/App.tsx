@@ -41,6 +41,8 @@ const DownloadBrandingDocx = lazy(() => import("./pages/DownloadBrandingDocx"));
 const IndexBackup = lazy(() => import("./pages/IndexBackup"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const AISEOHub = lazy(() => import("./pages/services/AISEOHub"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 
 const AppLayout = () => (
   <TooltipProvider>
@@ -90,6 +92,8 @@ export const routes: RouteRecord[] = [
       { path: "branding-guidelines", Component: BrandingGuidelines },
       { path: "download-branding-docx", Component: DownloadBrandingDocx },
       { path: "homepage-backup", Component: IndexBackup },
+      { path: "privacy-policy", Component: PrivacyPolicy },
+      { path: "terms-of-service", Component: TermsOfService },
       { path: "404", Component: NotFound },
       { path: "*", Component: NotFound },
     ],
