@@ -194,7 +194,7 @@ export const Header = () => {
 
                 {/* Paid Media & Advertising */}
                 <Link
-                  to="/services/paid-media"
+                  to="/paid-ads"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
