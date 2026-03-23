@@ -274,14 +274,11 @@ const PaidMedia = () => {
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                A Complete Paid Advertising System — Not Just Ad Setup
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Every engagement includes both channel management and the performance infrastructure that makes campaigns convert.
-              </p>
-            </div>
+            <SectionHeader
+              title="A Complete Paid Advertising System —"
+              titleHighlight="Not Just Ad Setup"
+              description="Every engagement includes both channel management and the performance infrastructure that makes campaigns convert."
+            />
 
             {/* Row 1 — Ad Channels */}
             <div className="mb-12">
