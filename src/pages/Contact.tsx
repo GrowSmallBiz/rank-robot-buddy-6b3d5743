@@ -34,6 +34,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Contact Us | GrowSmallBiz Digital Marketing</title>
+        <meta name="description" content="Get in touch with GrowSmallBiz for a free consultation. Let us help your local service business grow with AI-powered marketing and SEO strategies." />
+      </Helmet>
       <PageJsonLd
         pageType="ContactPage"
         name="Contact GrowSmallBiz Digital Marketing"
