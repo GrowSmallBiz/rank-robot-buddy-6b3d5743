@@ -26,6 +26,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SectionHeader } from "@/components/services/SectionHeader";
 
 const faqs: FAQItem[] = [
   {
@@ -238,11 +239,11 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-                Built for Local Service Businesses That Need Better Leads, Not Just More Clicks
-              </h2>
-            </div>
+            <SectionHeader
+              title="Built for Local Service Businesses That Need"
+              titleHighlight="Better Leads, Not Just More Clicks"
+              className="mb-12"
+            />
 
             <div className="space-y-4 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               {[
@@ -273,14 +274,11 @@ const PaidMedia = () => {
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                A Complete Paid Advertising System — Not Just Ad Setup
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Every engagement includes both channel management and the performance infrastructure that makes campaigns convert.
-              </p>
-            </div>
+            <SectionHeader
+              title="A Complete Paid Advertising System —"
+              titleHighlight="Not Just Ad Setup"
+              description="Every engagement includes both channel management and the performance infrastructure that makes campaigns convert."
+            />
 
             {/* Row 1 — Ad Channels */}
             <div className="mb-12">
@@ -321,11 +319,10 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-                How Paid Traffic Becomes Booked Jobs
-              </h2>
-            </div>
+            <SectionHeader
+              title="How Paid Traffic Becomes"
+              titleHighlight="Booked Jobs"
+            />
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
               {processSteps.map((step, i) => (
@@ -352,11 +349,11 @@ const PaidMedia = () => {
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-                It's Not the Budget. It's the System.
-              </h2>
-            </div>
+            <SectionHeader
+              title="It's Not the Budget."
+              titleHighlight="It's the System."
+              className="mb-12"
+            />
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
               {failureReasons.map((reason, i) => (
@@ -378,14 +375,12 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-6 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Real Results Across Local Service Campaigns
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                These examples show what happens when paid ads are paired with better structure, sharper targeting, and stronger conversion systems.
-              </p>
-            </div>
+            <SectionHeader
+              title="Real Results Across"
+              titleHighlight="Local Service Campaigns"
+              description="These examples show what happens when paid ads are paired with better structure, sharper targeting, and stronger conversion systems."
+              className="mb-6"
+            />
 
             <div className="grid lg:grid-cols-3 gap-8 mt-12">
               {/* HVAC */}
@@ -496,9 +491,12 @@ const PaidMedia = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-up">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-                  Visibility Gets You Seen. Trust Gets You Chosen.
-                </h2>
+                <SectionHeader
+                  title="Visibility Gets You Seen."
+                  titleHighlight="Trust Gets You Chosen."
+                  centered={false}
+                  className="mb-6"
+                />
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     Paid ads create immediate visibility, but many buyers do not act on the first visit. SEO helps your business show up organically as prospects continue researching. Retargeting keeps you visible after they leave.
@@ -532,11 +530,11 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-                Why Local Businesses Choose GrowSmallBiz for Paid Ads
-              </h2>
-            </div>
+            <SectionHeader
+              title="Why Local Businesses Choose GrowSmallBiz for"
+              titleHighlight="Paid Ads"
+              className="mb-12"
+            />
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -574,9 +572,11 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-up">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Ready to Run Ads That Actually Generate Leads?
-            </h2>
+            <SectionHeader
+              title="Ready to Run Ads That Actually"
+              titleHighlight="Generate Leads?"
+              className="mb-0"
+            />
             <p className="text-lg text-muted-foreground leading-relaxed">
               Stop guessing. Stop wasting budget. Start building a paid advertising system that turns visibility into qualified leads, better follow-up, and clearer ROI.
             </p>
