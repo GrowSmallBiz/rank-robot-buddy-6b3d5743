@@ -1235,6 +1235,7 @@ const Photographers = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Photography Marketing & SEO Services | GrowSmallBiz</title>
+        <meta name="robots" content="noindex, nofollow" />
         <meta name="description" content="Complete marketing system for photographers. Website design, AI SEO, CRM, paid ads, and automation to fill your session calendar with dream clients." />
       </Head>
       <ServiceJsonLd
