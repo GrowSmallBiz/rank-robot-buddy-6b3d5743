@@ -239,11 +239,11 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-                Built for Local Service Businesses That Need Better Leads, Not Just More Clicks
-              </h2>
-            </div>
+            <SectionHeader
+              title="Built for Local Service Businesses That Need"
+              titleHighlight="Better Leads, Not Just More Clicks"
+              className="mb-12"
+            />
 
             <div className="space-y-4 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               {[
