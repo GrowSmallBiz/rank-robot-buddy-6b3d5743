@@ -4,42 +4,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
 import Index from "./pages/Index";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import Services from "./pages/Services";
-import TechnicalSEO from "./pages/services/TechnicalSEO";
-import OnPageSEO from "./pages/services/OnPageSEO";
-import AEO from "./pages/services/AEO";
-import GEO from "./pages/services/GEO";
-import LocalSEO from "./pages/services/LocalSEO";
-import LinkBuilding from "./pages/services/LinkBuilding";
-import PaidMedia from "./pages/services/PaidMedia";
-import SocialMedia from "./pages/services/SocialMedia";
-import WebsiteDesign from "./pages/services/WebsiteDesign";
-import ManagedAISEO from "./pages/services/ManagedAISEO";
-import ManagedSEOPricing from "./pages/services/ManagedSEOPricing";
-import ReputationManagement from "./pages/services/ReputationManagement";
-import AIReceptionist from "./pages/services/AIReceptionist";
-import CRM from "./pages/services/CRM";
-import LinkedInOutreach from "./pages/services/LinkedInOutreach";
-import QuadBots from "./pages/services/QuadBots";
-import FreeAssessment from "./pages/FreeAssessment";
-import HVAC from "./pages/industries/HVAC";
-import HomeServices from "./pages/industries/HomeServices";
-import Dental from "./pages/industries/Dental";
-import MedSpa from "./pages/industries/MedSpa";
-import Chiropractor from "./pages/industries/Chiropractor";
-import AutoRepair from "./pages/industries/AutoRepair";
-import Photographers from "./pages/industries/Photographers";
-import Realtors from "./pages/industries/Realtors";
-import BrandingGuidelines from "./pages/BrandingGuidelines";
-import DownloadBrandingDocx from "./pages/DownloadBrandingDocx";
-import IndexBackup from "./pages/IndexBackup";
-import NotFound from "./pages/NotFound";
-import AISEOHub from "./pages/services/AISEOHub";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TermsOfService";
 
 const AppLayout = () => (
   <TooltipProvider>
@@ -55,43 +19,44 @@ export const routes: RouteRecord[] = [
     Component: AppLayout,
     children: [
       { index: true, Component: Index },
-      { path: "about", Component: About },
-      { path: "services", Component: Services },
-      { path: "service", Component: Services },
-      { path: "blog", Component: Blog },
-      { path: "contact", Component: Contact },
-      { path: "services/technical-seo", Component: TechnicalSEO },
-      { path: "services/on-page-seo", Component: OnPageSEO },
-      { path: "services/aeo", Component: AEO },
-      { path: "services/geo", Component: GEO },
-      { path: "services/local-seo", Component: LocalSEO },
-      { path: "services/link-building", Component: LinkBuilding },
-      { path: "services/paid-media", Component: PaidMedia },
-      { path: "services/social-media", Component: SocialMedia },
-      { path: "services/website-design", Component: WebsiteDesign },
-      { path: "services/managed-ai-seo", Component: ManagedAISEO },
-      { path: "services/managed-seo-pricing", Component: ManagedSEOPricing },
-      { path: "services/reputation-management", Component: ReputationManagement },
-      { path: "services/ai-receptionist", Component: AIReceptionist },
-      { path: "services/crm", Component: CRM },
-      { path: "services/linkedin-outreach", Component: LinkedInOutreach },
-      { path: "services/quad-bots", Component: QuadBots },
-      { path: "free-assessment", Component: FreeAssessment },
-      { path: "industries/hvac", Component: HVAC },
-      { path: "industries/home-services", Component: HomeServices },
-      { path: "industries/dental", Component: Dental },
-      { path: "industries/med-spa", Component: MedSpa },
-      { path: "industries/chiropractor", Component: Chiropractor },
-      { path: "industries/auto-repair", Component: AutoRepair },
-      { path: "industries/photographers", Component: Photographers },
-      { path: "industries/realtors", Component: Realtors },
-      { path: "branding-guidelines", Component: BrandingGuidelines },
-      { path: "download-branding-docx", Component: DownloadBrandingDocx },
-      { path: "homepage-backup", Component: IndexBackup },
-      { path: "privacy-policy", Component: PrivacyPolicy },
-      { path: "terms-of-service", Component: TermsOfService },
-      { path: "404", Component: NotFound },
-      { path: "*", Component: NotFound },
+      { path: "about", lazy: () => import("./pages/About") },
+      { path: "services", lazy: () => import("./pages/Services") },
+      { path: "service", lazy: () => import("./pages/Services") },
+      { path: "blog", lazy: () => import("./pages/Blog") },
+      { path: "contact", lazy: () => import("./pages/Contact") },
+      { path: "services/technical-seo", lazy: () => import("./pages/services/TechnicalSEO") },
+      { path: "services/on-page-seo", lazy: () => import("./pages/services/OnPageSEO") },
+      { path: "services/aeo", lazy: () => import("./pages/services/AEO") },
+      { path: "services/geo", lazy: () => import("./pages/services/GEO") },
+      { path: "services/local-seo", lazy: () => import("./pages/services/LocalSEO") },
+      { path: "services/link-building", lazy: () => import("./pages/services/LinkBuilding") },
+      { path: "services/paid-media", lazy: () => import("./pages/services/PaidMedia") },
+      { path: "services/social-media", lazy: () => import("./pages/services/SocialMedia") },
+      { path: "services/website-design", lazy: () => import("./pages/services/WebsiteDesign") },
+      { path: "services/managed-ai-seo", lazy: () => import("./pages/services/ManagedAISEO") },
+      { path: "services/managed-seo-pricing", lazy: () => import("./pages/services/ManagedSEOPricing") },
+      { path: "services/reputation-management", lazy: () => import("./pages/services/ReputationManagement") },
+      { path: "services/ai-receptionist", lazy: () => import("./pages/services/AIReceptionist") },
+      { path: "services/crm", lazy: () => import("./pages/services/CRM") },
+      { path: "services/linkedin-outreach", lazy: () => import("./pages/services/LinkedInOutreach") },
+      { path: "services/quad-bots", lazy: () => import("./pages/services/QuadBots") },
+      { path: "free-assessment", lazy: () => import("./pages/FreeAssessment") },
+      { path: "industries/hvac", lazy: () => import("./pages/industries/HVAC") },
+      { path: "industries/home-services", lazy: () => import("./pages/industries/HomeServices") },
+      { path: "industries/dental", lazy: () => import("./pages/industries/Dental") },
+      { path: "industries/med-spa", lazy: () => import("./pages/industries/MedSpa") },
+      { path: "industries/chiropractor", lazy: () => import("./pages/industries/Chiropractor") },
+      { path: "industries/auto-repair", lazy: () => import("./pages/industries/AutoRepair") },
+      { path: "industries/photographers", lazy: () => import("./pages/industries/Photographers") },
+      { path: "industries/realtors", lazy: () => import("./pages/industries/Realtors") },
+      { path: "branding-guidelines", lazy: () => import("./pages/BrandingGuidelines") },
+      { path: "download-branding-docx", lazy: () => import("./pages/DownloadBrandingDocx") },
+      { path: "homepage-backup", lazy: () => import("./pages/IndexBackup") },
+      { path: "privacy-policy", lazy: () => import("./pages/PrivacyPolicy") },
+      { path: "terms-of-service", lazy: () => import("./pages/TermsOfService") },
+      { path: "services/ai-seo-hub", lazy: () => import("./pages/services/AISEOHub") },
+      { path: "404", lazy: () => import("./pages/NotFound") },
+      { path: "*", lazy: () => import("./pages/NotFound") },
     ],
   },
 ];
