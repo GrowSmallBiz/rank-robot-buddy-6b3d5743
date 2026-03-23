@@ -491,9 +491,12 @@ const PaidMedia = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-up">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-                  Visibility Gets You Seen. Trust Gets You Chosen.
-                </h2>
+                <SectionHeader
+                  title="Visibility Gets You Seen."
+                  titleHighlight="Trust Gets You Chosen."
+                  centered={false}
+                  className="mb-6"
+                />
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     Paid ads create immediate visibility, but many buyers do not act on the first visit. SEO helps your business show up organically as prospects continue researching. Retargeting keeps you visible after they leave.
