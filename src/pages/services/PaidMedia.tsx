@@ -572,9 +572,11 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-up">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Ready to Run Ads That Actually Generate Leads?
-            </h2>
+            <SectionHeader
+              title="Ready to Run Ads That Actually"
+              titleHighlight="Generate Leads?"
+              className="mb-0"
+            />
             <p className="text-lg text-muted-foreground leading-relaxed">
               Stop guessing. Stop wasting budget. Start building a paid advertising system that turns visibility into qualified leads, better follow-up, and clearer ROI.
             </p>
