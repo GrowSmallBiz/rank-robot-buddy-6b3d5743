@@ -546,6 +546,7 @@ const PaidMedia = () => {
                 { icon: BarChart3, title: "Tracking and transparency from click to lead" },
                 { icon: Link2, title: "Campaigns connected to follow-up and CRM systems" },
                 { icon: Target, title: "Practical strategy with ongoing optimization" },
+                { icon: RefreshCw, title: "Retargeting strategy to recapture warm visitors and increase conversions" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4 bg-card border border-border rounded-xl p-5 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                   <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
