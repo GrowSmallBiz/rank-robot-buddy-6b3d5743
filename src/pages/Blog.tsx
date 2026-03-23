@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CTASection } from "@/components/sections/CTASection";
@@ -94,10 +94,10 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Blog | Marketing Tips & SEO Insights | GrowSmallBiz</title>
         <meta name="description" content="Expert digital marketing tips, SEO strategies, and AI automation insights for local service businesses. Stay ahead with GrowSmallBiz." />
-      </Helmet>
+      </Head>
       <PageJsonLd
         pageType="Blog"
         name="Blog | GrowSmallBiz Digital Marketing"

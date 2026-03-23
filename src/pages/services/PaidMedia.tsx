@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -181,10 +181,10 @@ const comparisonData = [
 const PaidMedia = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Paid Media & PPC Management | GrowSmallBiz</title>
         <meta name="description" content="Drive qualified leads with targeted paid media campaigns. Google Ads, Meta Ads, and multi-channel PPC management for local service businesses." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Paid Media & Advertising"
         serviceType="Paid Advertising"

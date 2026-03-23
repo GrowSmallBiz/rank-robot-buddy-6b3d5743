@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -119,10 +119,10 @@ const benefits = [
 const TechnicalSEO = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Technical SEO Services & Site Optimization | GrowSmallBiz</title>
         <meta name="description" content="Fix technical SEO issues holding back your rankings. Site speed optimization, crawlability, schema markup, and Core Web Vitals for local businesses." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Technical SEO Services"
         serviceType="Technical SEO"

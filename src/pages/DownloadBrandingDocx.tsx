@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 
 const DownloadBrandingDocx = () => {
   const [status, setStatus] = useState<"generating" | "done" | "error">("generating");
@@ -122,10 +122,10 @@ const DownloadBrandingDocx = () => {
 
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Download Branding Guidelines | GrowSmallBiz</title>
         <meta name="robots" content="noindex" />
-      </Helmet>
+      </Head>
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center space-y-4">
           {status === "generating" && (

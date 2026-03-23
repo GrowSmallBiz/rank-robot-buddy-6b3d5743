@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 
 const generateDocx = async () => {
   const { Document, Packer, Paragraph, TextRun, HeadingLevel, TableRow, TableCell, Table, WidthType, BorderStyle } = await import("docx");
@@ -109,10 +109,10 @@ const generateDocx = async () => {
 const BrandingGuidelines = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>GrowSmallBiz — Branding & UX Guidelines</title>
         <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
+      </Head>
 
       {/* Print-friendly styles */}
       <style>{`

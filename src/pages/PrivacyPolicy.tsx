@@ -1,14 +1,14 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Privacy Policy | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Privacy Policy for GrowSmallBiz Digital Marketing. Learn how we collect, use, and protect your personal information." />
-      </Helmet>
+      </Head>
       <Header />
       <main className="pt-20">
         <div className="container mx-auto px-4 pt-16 pb-8 max-w-4xl">

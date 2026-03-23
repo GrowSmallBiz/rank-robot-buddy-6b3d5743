@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -170,10 +170,10 @@ const caseStudies = [
 const MedSpa = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Med Spa SEO & Marketing Services | GrowSmallBiz</title>
         <meta name="description" content="Grow your med spa with specialized SEO. Rank #1 for Botox, fillers, laser treatments, and aesthetic services. Attract high-value clients." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Med Spa Marketing"
         serviceType="Digital Marketing for Med Spas"

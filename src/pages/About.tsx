@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -136,10 +136,10 @@ const aboutCaseStudies = [
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>About GrowSmallBiz | AI-Powered Marketing Agency</title>
         <meta name="description" content="Learn about GrowSmallBiz — a digital marketing agency helping local service businesses grow with AI-powered SEO, automation, and lead generation strategies." />
-      </Helmet>
+      </Head>
       <PageJsonLd
         pageType="AboutPage"
         name="About GrowSmallBiz Digital Marketing"

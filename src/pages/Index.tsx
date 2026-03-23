@@ -38,7 +38,7 @@ import {
   LayoutDashboard,
   Award,
 } from "lucide-react";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 // Stats data for homepage
@@ -160,10 +160,10 @@ const howItWorksSteps = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>AI Digital Marketing for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Get more qualified local leads with a smarter marketing system. Websites, SEO, paid ads, CRM automation, and AI-powered follow-up working together for local service businesses." />
-      </Helmet>
+      </Head>
       <PageJsonLd
         pageType="WebPage"
         name="GrowSmallBiz | AI-Powered Digital Marketing for Local Service Businesses"
@@ -171,7 +171,7 @@ const Index = () => {
         url="/"
         breadcrumbs={[]}
       />
-      <Helmet>
+      <Head>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -192,7 +192,7 @@ const Index = () => {
             "sameAs": []
           })}
         </script>
-      </Helmet>
+      </Head>
       <Header />
 
       {/* Hero Section */}

@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import reputationHeroBg from "@/assets/reputation-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
@@ -221,12 +221,12 @@ const testimonials = [
 const ReputationManagement = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>AI Reputation Management & Reviews | GrowSmallBiz</title>
         <meta name="description" content="Automate your online reputation with AI-powered review collection, instant responses, and monitoring across 50+ platforms. Build trust, increase local SEO rankings, and dominate your local market." />
         <meta name="keywords" content="reputation management, online reviews, Google reviews, AI review response, review automation, local SEO, review monitoring, customer feedback" />
         <link rel="canonical" href="https://growsmallbiz.io/services/reputation-management" />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="AI-Powered Reputation Management"
         serviceType="Reputation Management"

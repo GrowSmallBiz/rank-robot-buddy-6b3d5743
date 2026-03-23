@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 
 interface ServiceJsonLdProps {
   serviceName: string;
@@ -70,13 +70,13 @@ export const ServiceJsonLd = ({
   };
 
   return (
-    <Helmet>
+    <Head>
       <script type="application/ld+json">
         {JSON.stringify(serviceSchema)}
       </script>
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
       </script>
-    </Helmet>
+    </Head>
   );
 };

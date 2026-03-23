@@ -54,7 +54,7 @@ import {
   Eye
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import socialMediaHero from "@/assets/social-media-hero.jpg";
@@ -379,10 +379,10 @@ const blogPosts = [
 const SocialMedia = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Social Media Marketing for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Strategic social media marketing for local service professionals. From paid advertising to organic engagement, we elevate your brand and connect you with local clients." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Social Media Marketing"
         serviceType="Social Media Management"

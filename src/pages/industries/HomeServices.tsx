@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/Header";
@@ -868,7 +868,7 @@ const homeServicesBlogPosts = [
 const HomeServices = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Home Services Marketing & SEO Guide | GrowSmallBiz</title>
         <meta 
           name="description" 
@@ -876,7 +876,7 @@ const HomeServices = () => {
         />
         <meta name="keywords" content="HVAC marketing, plumber SEO, electrician marketing, roofing SEO, contractor marketing, home services digital marketing, paid media contractors" />
         <link rel="canonical" href="https://growsmallbiz.com/industries/home-services" />
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="Home Services Marketing"

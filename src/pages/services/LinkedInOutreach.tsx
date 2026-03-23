@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet";
+import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import linkedinHeroBg from "@/assets/linkedin-outreach-hero.jpg";
 import { Header } from "@/components/layout/Header";
@@ -212,14 +212,14 @@ const LinkedInOutreach = () => {
 
   return (
     <>
-      <Helmet>
+      <Head>
         <title>LinkedIn Outreach & B2B Lead Generation | GrowSmallBiz</title>
         <meta
           name="description"
           content="Transform your LinkedIn prospecting with our Done-With-You outreach system. AI-assisted targeting, personalized messaging, and conversion-focused strategies to book more consultations."
         />
         <meta name="keywords" content="LinkedIn outreach, B2B lead generation, LinkedIn automation, sales prospecting, LinkedIn marketing, done with you LinkedIn" />
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="LinkedIn Outreach Automation"
