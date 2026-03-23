@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -182,11 +182,11 @@ const faqs = [
 const ManagedAISEO = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Managed AI SEO for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="The complete Managed AI SEO system for local service businesses. GrowSmallBiz runs your entire SEO program — technical, local, content, AEO, GEO, link building, and reporting — so you can focus on running your business." />
         <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo" />
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="Managed AI SEO for Local Service Businesses"

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { CardCTA } from "@/components/services/CardCTA";
 import websiteDesignHeroBg from "@/assets/website-design-hero-bg.jpg";
 import { Link } from "react-router-dom";
@@ -255,14 +255,14 @@ const WebsiteDesign = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <Helmet>
+      <Head>
         <title>Website Design for Local Businesses | GrowSmallBiz</title>
         <meta
           name="description"
           content="GrowSmallBiz builds conversion-focused websites for local service businesses — designed to turn visitors into calls, bookings, and leads. Schedule a free strategy call."
         />
         <link rel="canonical" href="https://growsmallbiz.io/services/website-design" />
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="Website Design for Local Service Businesses"

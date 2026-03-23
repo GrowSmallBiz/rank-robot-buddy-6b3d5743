@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import crmHeroBg from "@/assets/crm-hero-bg.jpg";
 import { GlowCard } from "@/components/ui/glow-card";
 import { Header } from "@/components/layout/Header";
@@ -508,7 +508,7 @@ const CRM = () => {
 
   return (
     <>
-      <Helmet>
+      <Head>
         <title>AI-Powered CRM for Small Business | GrowSmallBiz</title>
         <meta
           name="description"
@@ -523,7 +523,7 @@ const CRM = () => {
         <meta property="og:description" content="Convert more leads into sales with automated SMS, Email, Live Chat & Phone follow-ups. 24/7 AI-powered lead nurturing." />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="AI-Powered CRM for Small Business"

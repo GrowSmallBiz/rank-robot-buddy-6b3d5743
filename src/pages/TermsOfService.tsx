@@ -1,14 +1,14 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 
 const TermsOfService = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Terms of Service | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Terms and Conditions for GrowSmallBiz Digital Marketing. Read our terms governing the use of our services and website." />
-      </Helmet>
+      </Head>
       <Header />
       <main className="pt-20">
         <div className="container mx-auto px-4 pt-16 pb-8 max-w-4xl">

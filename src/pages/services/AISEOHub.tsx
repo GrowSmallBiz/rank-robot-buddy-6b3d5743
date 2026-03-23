@@ -10,7 +10,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { baseContactCTA } from "@/config/contactCTA";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import {
@@ -215,11 +215,11 @@ const growthSteps = [
 const AISEOHub = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>AI-Powered SEO Services | Full-Funnel | GrowSmallBiz</title>
         <meta name="description" content="Rank higher, get cited, and be surfaced across AI platforms. Enterprise AI SEO that unites technical SEO, AEO, and GEO to make your brand the authoritative answer." />
         <meta name="keywords" content="AI SEO, managed SEO services, technical SEO, AEO, GEO, local SEO, link building, answer engine optimization, generative engine optimization, full-funnel visibility" />
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="AI-Powered SEO Services"

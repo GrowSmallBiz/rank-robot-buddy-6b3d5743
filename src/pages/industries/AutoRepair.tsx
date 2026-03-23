@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -170,10 +170,10 @@ const caseStudies = [
 const AutoRepair = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Auto Repair Shop SEO & Marketing | GrowSmallBiz</title>
         <meta name="description" content="Grow your auto repair shop with specialized SEO. Rank #1 for auto repair, brake service, and oil change searches. Beat the dealerships and chains." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Auto Repair Shop Marketing"
         serviceType="Digital Marketing for Auto Repair"

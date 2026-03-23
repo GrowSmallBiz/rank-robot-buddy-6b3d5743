@@ -43,7 +43,7 @@ import {
   Puzzle
 } from "lucide-react";
 import { GlowCard } from "@/components/ui/glow-card";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 // Stats data for homepage
@@ -267,10 +267,10 @@ const homepageBlogPosts = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>GrowSmallBiz | Digital Marketing & AI Automation for Local Service Businesses</title>
         <meta name="description" content="Done-for-You marketing and AI automation for local service businesses. Achieve digital dominance with AI-powered SEO, paid ads, reputation management, and 24/7 AI assistants." />
-      </Helmet>
+      </Head>
       <PageJsonLd
         pageType="WebPage"
         name="GrowSmallBiz | Digital Marketing & AI Automation for Local Service Businesses"
@@ -278,7 +278,7 @@ const Index = () => {
         url="/"
         breadcrumbs={[]}
       />
-      <Helmet>
+      <Head>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -299,7 +299,7 @@ const Index = () => {
             "sameAs": []
           })}
         </script>
-      </Helmet>
+      </Head>
       <Header />
 
       {/* Hero Section */}

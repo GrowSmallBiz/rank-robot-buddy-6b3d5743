@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -1233,10 +1233,10 @@ const results = [
 const Photographers = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Photography Marketing & SEO Services | GrowSmallBiz</title>
         <meta name="description" content="Complete marketing system for photographers. Website design, AI SEO, CRM, paid ads, and automation to fill your session calendar with dream clients." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Photography Marketing & SEO"
         serviceType="Digital Marketing for Photographers"

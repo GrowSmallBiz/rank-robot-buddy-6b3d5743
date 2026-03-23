@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -134,10 +134,10 @@ const process = [
 const OnPageSEO = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>On-Page SEO Services | Content Optimization | GrowSmallBiz</title>
         <meta name="description" content="Optimize your website content, meta tags, and structure for higher rankings. On-page SEO services designed for local service businesses." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="On-Page SEO Services"
         serviceType="On-Page SEO"

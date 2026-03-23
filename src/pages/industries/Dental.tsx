@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -171,10 +171,10 @@ const caseStudies = [
 const Dental = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Dental Practice SEO & Marketing | GrowSmallBiz</title>
         <meta name="description" content="Grow your dental practice with specialized SEO. Rank #1 for cosmetic dentistry, dental implants, and 'dentist near me' searches. Get more new patients." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Dental Practice Marketing"
         serviceType="Digital Marketing for Dentists"

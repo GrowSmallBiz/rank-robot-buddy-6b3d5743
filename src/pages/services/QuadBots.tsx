@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection";
@@ -258,14 +258,14 @@ const faqs = [
 const QuadBots = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Quad Bots AI Sales Team | 24/7 Support | GrowSmallBiz</title>
         <meta
           name="description"
           content="Meet the 4-Bot System: Lead Gen, Conversational AI, Voice AI, and Supervisor OS working together to grow your business on autopilot. 24/7 AI sales and support team."
         />
         <meta name="keywords" content="AI sales team, quad bots, voice AI, conversational AI, lead generation, AI automation, sales automation, customer support AI" />
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="Quad Bots AI Sales Team"

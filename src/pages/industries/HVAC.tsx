@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -172,10 +172,10 @@ const caseStudies = [
 const HVAC = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>HVAC, Plumbing & Electrical SEO Services | GrowSmallBiz</title>
         <meta name="description" content="Dominate local search for HVAC, plumbing, and electrical services. Get more emergency calls, rank #1 on Google Maps, and stop paying for leads." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="HVAC, Plumbing & Electrical Marketing"
         serviceType="Digital Marketing for HVAC"

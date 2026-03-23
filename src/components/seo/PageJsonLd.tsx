@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 
 const BASE_URL = "https://growsmallbiz.io";
 
@@ -50,13 +50,13 @@ export const PageJsonLd = ({
   };
 
   return (
-    <Helmet>
+    <Head>
       <script type="application/ld+json">
         {JSON.stringify(pageSchema)}
       </script>
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
       </script>
-    </Helmet>
+    </Head>
   );
 };

@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -241,7 +241,7 @@ const AIReceptionist = () => {
 
   return (
     <>
-      <Helmet>
+      <Head>
         <title>AI Receptionist | 24/7 Virtual Assistant | GrowSmallBiz</title>
         <meta
           name="description"
@@ -256,7 +256,7 @@ const AIReceptionist = () => {
         <meta property="og:description" content="Deploy AI Receptionist that handles every call 24/7 and Conversational AI for SMS, Facebook, Instagram & website chat. Never miss a lead again." />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="AI Receptionist & Conversational AI"

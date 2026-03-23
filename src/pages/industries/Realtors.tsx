@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/layout/Header";
@@ -595,13 +595,13 @@ const testimonials = [
 const Realtors = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Real Estate Marketing Solutions | GrowSmallBiz</title>
         <meta 
           name="description" 
           content="Grow your real estate business with IDX-integrated websites, AI-powered CRM, automated follow-ups, and lead generation tools. Built for realtors and brokers." 
         />
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="Real Estate Marketing Solutions"

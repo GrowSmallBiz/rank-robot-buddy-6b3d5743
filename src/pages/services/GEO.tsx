@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -116,10 +116,10 @@ const features = [
 const GEO = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Generative Engine Optimization (GEO) Services | GrowSmallBiz</title>
         <meta name="description" content="Optimize your brand for AI-generated search results. Our GEO services ensure visibility across ChatGPT, Perplexity, Google SGE, and other generative platforms." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Generative Engine Optimization (GEO)"
         serviceType="Generative Engine Optimization"

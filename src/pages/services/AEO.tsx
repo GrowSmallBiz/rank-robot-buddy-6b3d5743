@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -103,10 +103,10 @@ const platforms = [
 const AEO = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Answer Engine Optimization (AEO) Services | GrowSmallBiz</title>
         <meta name="description" content="Get your business cited as the answer in AI search results. Our AEO services optimize your content for ChatGPT, Google AI, and voice assistants." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Answer Engine Optimization (AEO)"
         serviceType="Answer Engine Optimization"

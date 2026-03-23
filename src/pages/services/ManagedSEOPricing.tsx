@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -140,13 +140,13 @@ const FeatureValue = ({ value }: { value: string | boolean }) => {
 const ManagedSEOPricing = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Managed AI SEO Service Packages | GrowSmallBiz</title>
         <meta 
           name="description" 
           content="Compare our Managed AI SEO Service packages. From Starter to Authority plans, find the right SEO solution to grow your local business online presence." 
         />
-      </Helmet>
+      </Head>
 
       <ServiceJsonLd
         serviceName="Managed AI SEO Service Packages"
