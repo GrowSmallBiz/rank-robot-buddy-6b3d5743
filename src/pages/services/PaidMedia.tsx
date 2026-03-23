@@ -4,6 +4,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { PersonCTA } from "@/components/services/PersonCTA";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
   ArrowRight,
