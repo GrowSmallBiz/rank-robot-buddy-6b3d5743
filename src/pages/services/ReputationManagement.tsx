@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import reputationHeroBg from "@/assets/reputation-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 

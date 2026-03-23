@@ -43,7 +43,7 @@ import {
   Puzzle
 } from "lucide-react";
 import { GlowCard } from "@/components/ui/glow-card";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 // Stats data for homepage

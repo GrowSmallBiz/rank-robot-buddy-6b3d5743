@@ -10,7 +10,7 @@ import { AnimatedStatsSection } from "@/components/sections/AnimatedStatsSection
 import { baseContactCTA } from "@/config/contactCTA";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import {

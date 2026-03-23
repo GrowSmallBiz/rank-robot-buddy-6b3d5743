@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { PersonCTA } from "@/components/services/PersonCTA";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import {
   ArrowRight,

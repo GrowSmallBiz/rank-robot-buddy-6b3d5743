@@ -38,7 +38,7 @@ import {
   LayoutDashboard,
   Award,
 } from "lucide-react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 // Stats data for homepage

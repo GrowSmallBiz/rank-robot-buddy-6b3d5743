@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import linkedinHeroBg from "@/assets/linkedin-outreach-hero.jpg";
 import { Header } from "@/components/layout/Header";

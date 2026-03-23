@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { CardCTA } from "@/components/services/CardCTA";
 import websiteDesignHeroBg from "@/assets/website-design-hero-bg.jpg";
 import { Link } from "react-router-dom";

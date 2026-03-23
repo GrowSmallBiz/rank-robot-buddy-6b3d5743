@@ -1,5 +1,5 @@
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import crmHeroBg from "@/assets/crm-hero-bg.jpg";
 import { GlowCard } from "@/components/ui/glow-card";
 import { Header } from "@/components/layout/Header";

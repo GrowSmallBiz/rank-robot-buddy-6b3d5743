@@ -54,7 +54,7 @@ import {
   Eye
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import socialMediaHero from "@/assets/social-media-hero.jpg";
