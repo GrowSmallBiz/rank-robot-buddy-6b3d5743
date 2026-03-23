@@ -120,7 +120,7 @@ const TechnicalSEO = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Technical SEO Services | Site Speed & Crawlability | GrowSmallBiz</title>
+        <title>Technical SEO Services & Site Optimization | GrowSmallBiz</title>
         <meta name="description" content="Fix technical SEO issues holding back your rankings. Site speed optimization, crawlability, schema markup, and Core Web Vitals for local businesses." />
       </Helmet>
       <ServiceJsonLd

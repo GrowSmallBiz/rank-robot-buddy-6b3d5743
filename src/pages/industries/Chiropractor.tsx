@@ -171,7 +171,7 @@ const Chiropractor = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Chiropractor SEO Services | Grow Your Practice | GrowSmallBiz</title>
+        <title>Chiropractor SEO & Marketing Services | GrowSmallBiz</title>
         <meta name="description" content="Grow your chiropractic practice with specialized SEO. Rank #1 for back pain, neck pain, and 'chiropractor near me' searches. Get more new patients." />
       </Helmet>
       <ServiceJsonLd

@@ -259,7 +259,7 @@ const QuadBots = () => {
   return (
     <>
       <Helmet>
-        <title>Quad Bots AI Sales Team | 24/7 AI Sales & Support | GrowSmallBiz</title>
+        <title>Quad Bots AI Sales Team | 24/7 Support | GrowSmallBiz</title>
         <meta
           name="description"
           content="Meet the 4-Bot System: Lead Gen, Conversational AI, Voice AI, and Supervisor OS working together to grow your business on autopilot. 24/7 AI sales and support team."

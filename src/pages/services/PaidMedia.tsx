@@ -182,7 +182,7 @@ const PaidMedia = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Paid Media & PPC Advertising | Google & Meta Ads | GrowSmallBiz</title>
+        <title>Paid Media & PPC Management | GrowSmallBiz</title>
         <meta name="description" content="Drive qualified leads with targeted paid media campaigns. Google Ads, Meta Ads, and multi-channel PPC management for local service businesses." />
       </Helmet>
       <ServiceJsonLd

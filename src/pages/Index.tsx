@@ -161,7 +161,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>GrowSmallBiz | AI-Powered Digital Marketing for Local Service Businesses</title>
+        <title>AI Digital Marketing for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Get more qualified local leads with a smarter marketing system. Websites, SEO, paid ads, CRM automation, and AI-powered follow-up working together for local service businesses." />
       </Helmet>
       <PageJsonLd
