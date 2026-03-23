@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useSearchParams } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -183,6 +184,10 @@ const FreeAssessment = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Free Marketing Assessment | GrowSmallBiz</title>
+        <meta name="description" content="Get a free digital marketing assessment for your local business. Discover growth opportunities with AI-powered SEO, ads, and automation strategies." />
+      </Helmet>
       <PageJsonLd
         pageType="WebPage"
         name="Free Marketing Assessment | GrowSmallBiz"
