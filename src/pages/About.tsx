@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -135,6 +136,10 @@ const aboutCaseStudies = [
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>About GrowSmallBiz | AI-Powered Marketing Agency</title>
+        <meta name="description" content="Learn about GrowSmallBiz — a digital marketing agency helping local service businesses grow with AI-powered SEO, automation, and lead generation strategies." />
+      </Helmet>
       <PageJsonLd
         pageType="AboutPage"
         name="About GrowSmallBiz Digital Marketing"
