@@ -12,18 +12,10 @@ export const Header = () => {
   const location = useLocation();
 
   const isServiceActive = 
-    location.pathname.startsWith("/services/website") ||
-    location.pathname.startsWith("/services/social") ||
-    location.pathname.startsWith("/services/paid-media") ||
-    location.pathname.startsWith("/services/ai-seo") ||
-    location.pathname.startsWith("/services/managed-ai-seo") ||
-    location.pathname.startsWith("/services/technical") ||
-    location.pathname.startsWith("/services/on-page") ||
-    location.pathname.startsWith("/services/aeo") ||
-    location.pathname.startsWith("/services/geo") ||
-    location.pathname.startsWith("/services/local") ||
-    location.pathname.startsWith("/services/link") ||
-    location.pathname.startsWith("/services/linkedin-outreach");
+    location.pathname === "/paid-ads" ||
+    location.pathname === "/website-design" ||
+    location.pathname === "/managed-ai-seo" ||
+    location.pathname === "/services";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
@@ -81,7 +73,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/services/website-design"
+                  to="/website-design"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Website That Converts
@@ -89,7 +81,7 @@ export const Header = () => {
 
                 {/* Managed AI SEO */}
                 <Link
-                  to="/services/managed-ai-seo"
+                  to="/managed-ai-seo"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Managed AI SEO Services
@@ -97,7 +89,7 @@ export const Header = () => {
 
                 {/* Paid Media & Advertising */}
                 <Link
-                  to="/services/paid-media"
+                  to="/paid-ads"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Paid Media & Advertising
@@ -184,7 +176,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/services/website-design"
+                  to="/website-design"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -193,7 +185,7 @@ export const Header = () => {
 
                 {/* Managed AI SEO */}
                 <Link
-                  to="/services/managed-ai-seo"
+                  to="/managed-ai-seo"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -202,7 +194,7 @@ export const Header = () => {
 
                 {/* Paid Media & Advertising */}
                 <Link
-                  to="/services/paid-media"
+                  to="/paid-ads"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -231,7 +223,7 @@ export const Header = () => {
           </Link>
 
           <Button variant="hero" size="lg" className="w-full mt-4" asChild>
-            <Link to="/free-assessment" onClick={() => setIsOpen(false)}>Get Free Audit</Link>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>Get Free Audit</Link>
           </Button>
         </div>
       </div>

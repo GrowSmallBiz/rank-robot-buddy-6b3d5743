@@ -189,7 +189,7 @@ const PaidMedia = () => {
         serviceName="Paid Media & Advertising"
         serviceType="Paid Advertising"
         description="Google Ads, Meta Ads, TikTok Ads, and PPC management for local service businesses."
-        url="/services/paid-media"
+        url="/paid-ads"
         breadcrumbs={[
           { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Paid Media", url: "/services/paid-media" },
@@ -221,7 +221,7 @@ const PaidMedia = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
-              <Link to="/free-assessment">
+              <Link to="/contact">
                 <Button variant="hero" size="xl">
                   Get Free Ad Strategy Call
                   <ArrowRight className="w-5 h-5" />

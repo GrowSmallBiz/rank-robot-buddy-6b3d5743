@@ -43,7 +43,7 @@ const coreServices = [
       "Mobile-optimized design that works for customers searching on the go",
       "Trust-building structure that positions your business credibly from the first visit",
     ],
-    href: "/services/website-design",
+    href: "/website-design",
     icon: Globe,
   },
   {
@@ -54,7 +54,7 @@ const coreServices = [
       "Ongoing technical and on-page optimization across your full site",
       "Content and authority strategy built for both traditional and AI-powered search",
     ],
-    href: "/services/managed-ai-seo",
+    href: "/managed-ai-seo",
     icon: Search,
   },
   {
@@ -65,7 +65,7 @@ const coreServices = [
       "Conversion tracking and landing page alignment that turns clicks into leads",
       "Ongoing optimization focused on cost-per-lead and return on ad spend",
     ],
-    href: "/services/paid-media",
+    href: "/paid-ads",
     icon: BarChart3,
   },
   {
@@ -76,7 +76,7 @@ const coreServices = [
       "Missed call text-back and nurture workflows that keep prospects warm",
       "Pipeline visibility and booking automation that streamlines conversion",
     ],
-    href: "/services/crm",
+    href: "/contact",
     icon: Bot,
   },
 ];
@@ -90,7 +90,7 @@ const accelerationServices = [
       "Social presence that reinforces trust across your full digital footprint",
       "Community-facing campaigns designed for the markets you actually serve",
     ],
-    href: "/services/social-media",
+    href: "/contact",
     cta: "Learn More",
     icon: Megaphone,
   },
@@ -113,7 +113,7 @@ const accelerationServices = [
       "Personalized messaging built around your offer and target audience",
       "Scalable B2B prospecting without the manual time investment",
     ],
-    href: "/services/linkedin-outreach",
+    href: "/contact",
     cta: "Ask About This Service",
     icon: Users,
   },
