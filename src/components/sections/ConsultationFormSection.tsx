@@ -19,7 +19,7 @@ export const ConsultationFormSection = () => {
 
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV"
-              style={{ width: "100%", height: "1126px", border: "none", borderRadius: "0px" }}
+              style={{ width: "100%", height: "900px", border: "none", borderRadius: "0px" }}
               id="inline-8qUn6xE0v2Jwcs63q0uV"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
