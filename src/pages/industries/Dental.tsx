@@ -173,6 +173,7 @@ const Dental = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Dental Practice SEO & Marketing | GrowSmallBiz</title>
+        <meta name="robots" content="noindex, nofollow" />
         <meta name="description" content="Grow your dental practice with specialized SEO. Rank #1 for cosmetic dentistry, dental implants, and 'dentist near me' searches. Get more new patients." />
       </Head>
       <ServiceJsonLd
