@@ -81,7 +81,7 @@ export const Header = () => {
 
                 {/* Managed AI SEO */}
                 <Link
-                  to="/services/managed-ai-seo"
+                  to="/managed-ai-seo"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Managed AI SEO Services
