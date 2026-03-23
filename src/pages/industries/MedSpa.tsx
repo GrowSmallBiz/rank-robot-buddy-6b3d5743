@@ -171,7 +171,7 @@ const MedSpa = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Med Spa SEO Services | Attract Aesthetic Clients | GrowSmallBiz</title>
+        <title>Med Spa SEO & Marketing Services | GrowSmallBiz</title>
         <meta name="description" content="Grow your med spa with specialized SEO. Rank #1 for Botox, fillers, laser treatments, and aesthetic services. Attract high-value clients." />
       </Helmet>
       <ServiceJsonLd

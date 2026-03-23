@@ -216,7 +216,7 @@ const AISEOHub = () => {
   return (
     <>
       <Helmet>
-        <title>AI-Powered SEO Services for Full-Funnel Visibility | GrowSmallBiz</title>
+        <title>AI-Powered SEO Services | Full-Funnel | GrowSmallBiz</title>
         <meta name="description" content="Rank higher, get cited, and be surfaced across AI platforms. Enterprise AI SEO that unites technical SEO, AEO, and GEO to make your brand the authoritative answer." />
         <meta name="keywords" content="AI SEO, managed SEO services, technical SEO, AEO, GEO, local SEO, link building, answer engine optimization, generative engine optimization, full-funnel visibility" />
       </Helmet>

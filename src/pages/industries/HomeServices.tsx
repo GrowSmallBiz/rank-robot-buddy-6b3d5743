@@ -869,7 +869,7 @@ const HomeServices = () => {
   return (
     <>
       <Helmet>
-        <title>Home Services Marketing Guide | HVAC, Plumbing, Electrical, Roofing Marketing Strategy</title>
+        <title>Home Services Marketing & SEO Guide | GrowSmallBiz</title>
         <meta 
           name="description" 
           content="Complete marketing guide for home service contractors. SEO, paid media, reputation management strategies for HVAC, plumbers, electricians, roofers & remodelers." 

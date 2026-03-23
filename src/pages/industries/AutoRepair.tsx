@@ -171,7 +171,7 @@ const AutoRepair = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Auto Repair Shop SEO Services | Get More Customers | GrowSmallBiz</title>
+        <title>Auto Repair Shop SEO & Marketing | GrowSmallBiz</title>
         <meta name="description" content="Grow your auto repair shop with specialized SEO. Rank #1 for auto repair, brake service, and oil change searches. Beat the dealerships and chains." />
       </Helmet>
       <ServiceJsonLd

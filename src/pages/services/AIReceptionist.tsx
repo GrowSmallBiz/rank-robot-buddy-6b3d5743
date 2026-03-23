@@ -242,7 +242,7 @@ const AIReceptionist = () => {
   return (
     <>
       <Helmet>
-        <title>AI Receptionist & Conversational AI | 24/7 Virtual Receptionist | GrowSmallBiz</title>
+        <title>AI Receptionist | 24/7 Virtual Assistant | GrowSmallBiz</title>
         <meta
           name="description"
           content="Deploy AI Receptionist that handles every call 24/7 and Conversational AI that manages SMS, Facebook, Instagram & website chat. Never miss a lead again. Complete setup included."

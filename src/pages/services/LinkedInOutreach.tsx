@@ -213,7 +213,7 @@ const LinkedInOutreach = () => {
   return (
     <>
       <Helmet>
-        <title>LinkedIn Outreach Automation | Done-With-You B2B Lead Generation | GrowSmallBiz</title>
+        <title>LinkedIn Outreach & B2B Lead Generation | GrowSmallBiz</title>
         <meta
           name="description"
           content="Transform your LinkedIn prospecting with our Done-With-You outreach system. AI-assisted targeting, personalized messaging, and conversion-focused strategies to book more consultations."

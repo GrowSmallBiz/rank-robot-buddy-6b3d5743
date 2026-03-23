@@ -509,7 +509,7 @@ const CRM = () => {
   return (
     <>
       <Helmet>
-        <title>AI-Powered CRM for Small Business | Automate Sales & Marketing | GrowSmallBiz</title>
+        <title>AI-Powered CRM for Small Business | GrowSmallBiz</title>
         <meta
           name="description"
           content="Convert more leads into sales with GrowSmallBiz CRM. All-in-one platform for automated SMS, Email, Live Chat & Phone follow-ups. 24/7 AI-powered lead nurturing. Start at $97/mo."
