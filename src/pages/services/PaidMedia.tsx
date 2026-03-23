@@ -186,14 +186,15 @@ const PaidMedia = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <Button variant="hero" size="xl" asChild>
                 <Link to="/contact">
-                  Book Your Free Ad Strategy Call
+                  Schedule Strategy Session
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <Link to="/contact">
-                  Review My Current Campaigns
-                </Link>
+                <a href="tel:+19258863724">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call +1 (925) 886-3724
+                </a>
               </Button>
             </div>
           </div>
