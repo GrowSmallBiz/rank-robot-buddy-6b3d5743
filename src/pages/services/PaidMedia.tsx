@@ -375,14 +375,12 @@ const PaidMedia = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-6 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Real Results Across Local Service Campaigns
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                These examples show what happens when paid ads are paired with better structure, sharper targeting, and stronger conversion systems.
-              </p>
-            </div>
+            <SectionHeader
+              title="Real Results Across"
+              titleHighlight="Local Service Campaigns"
+              description="These examples show what happens when paid ads are paired with better structure, sharper targeting, and stronger conversion systems."
+              className="mb-6"
+            />
 
             <div className="grid lg:grid-cols-3 gap-8 mt-12">
               {/* HVAC */}
