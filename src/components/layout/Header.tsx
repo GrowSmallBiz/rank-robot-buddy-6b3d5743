@@ -95,28 +95,12 @@ export const Header = () => {
                   Managed AI SEO Services
                 </Link>
 
-                {/* Social Media Management */}
-                <Link
-                  to="/services/social-media"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Social Media Management
-                </Link>
-
                 {/* Paid Media & Advertising */}
                 <Link
                   to="/services/paid-media"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Paid Media & Advertising
-                </Link>
-
-                {/* LinkedIn Outreach Automation */}
-                <Link
-                  to="/services/linkedin-outreach"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  LinkedIn Outreach Automation
                 </Link>
 
               </div>
