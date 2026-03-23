@@ -12,18 +12,10 @@ export const Header = () => {
   const location = useLocation();
 
   const isServiceActive = 
-    location.pathname.startsWith("/services/website") ||
-    location.pathname.startsWith("/services/social") ||
-    location.pathname.startsWith("/services/paid-media") ||
-    location.pathname.startsWith("/services/ai-seo") ||
-    location.pathname.startsWith("/services/managed-ai-seo") ||
-    location.pathname.startsWith("/services/technical") ||
-    location.pathname.startsWith("/services/on-page") ||
-    location.pathname.startsWith("/services/aeo") ||
-    location.pathname.startsWith("/services/geo") ||
-    location.pathname.startsWith("/services/local") ||
-    location.pathname.startsWith("/services/link") ||
-    location.pathname.startsWith("/services/linkedin-outreach");
+    location.pathname === "/paid-ads" ||
+    location.pathname === "/website-design" ||
+    location.pathname === "/managed-ai-seo" ||
+    location.pathname === "/services";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
