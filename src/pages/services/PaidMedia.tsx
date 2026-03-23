@@ -26,6 +26,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SectionHeader } from "@/components/services/SectionHeader";
 
 const faqs: FAQItem[] = [
   {
