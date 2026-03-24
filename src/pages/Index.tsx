@@ -429,7 +429,7 @@ const Index = () => {
           title="Ready to Build a Smarter Growth System?"
           description="Book a free strategy call to see how our done-for-you, AI-powered growth system can take marketing and follow-up off your plate, so you can focus more on running your business and spending time where it matters most. We also provide a clear dashboard view of performance and continuously recalibrate the strategy when results need improvement."
           buttonText="Get Free Strategy Call"
-          buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
+          buttonHref={strategySessionUrl}
         />
 
         {/* Why Choose GrowSmallBiz */}
