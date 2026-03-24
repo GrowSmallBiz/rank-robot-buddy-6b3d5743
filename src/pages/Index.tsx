@@ -501,7 +501,7 @@ const Index = () => {
           title="Let's Build Your Growth Engine"
           description="If you want AI-powered client acquisition systems, done-for-you execution, adaptive strategy, and a clear multi-channel dashboard without patching together disconnected tools, start with a free strategy call."
           buttonText="Get Free Strategy Call"
-          buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
+          buttonHref={strategySessionUrl}
         />
 
         {/* Consultation Form Section */}
