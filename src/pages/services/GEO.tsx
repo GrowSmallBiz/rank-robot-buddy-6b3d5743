@@ -201,11 +201,17 @@ const GEO = () => {
                 <p>
                   For a local service business, that distinction matters enormously.
                 </p>
-                <p>
-                  When AI systems answer questions like <strong className="text-foreground">"Who is the best HVAC company near me?"</strong> or <strong className="text-foreground">"Which plumber in Danville offers same-day service?"</strong>, they rely on businesses with clear entity signals, consistent citations, structured content, and credible authority markers. If your business lacks those signals, AI tools will simply recommend someone else — often a competitor who is not better, just better structured for AI discovery.
-                </p>
-                <p>
-                  <strong className="text-foreground">GEO is how GrowSmallBiz closes that gap.</strong>
+
+                {/* Callout card for the key questions */}
+                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                  <p className="text-foreground leading-relaxed">
+                    When AI systems answer questions like <strong>"Who is the best HVAC company near me?"</strong> or <strong>"Which plumber in Danville offers same-day service?"</strong>, they rely on businesses with clear entity signals, consistent citations, structured content, and credible authority markers. If your business lacks those signals, AI tools will simply recommend someone else — often a competitor who is not better, just better structured for AI discovery.
+                  </p>
+                </div>
+
+                {/* Pull-quote closing line */}
+                <p className="text-xl md:text-2xl font-display font-bold text-foreground text-center pt-4">
+                  GEO is how GrowSmallBiz closes that gap.
                 </p>
               </div>
             </div>
