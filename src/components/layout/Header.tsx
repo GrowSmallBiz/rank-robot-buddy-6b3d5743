@@ -86,6 +86,12 @@ export const Header = () => {
                 >
                   Managed AI SEO Services
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/aeo"
+                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Answer Engine Optimization (AEO)
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
@@ -190,6 +196,13 @@ export const Header = () => {
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Managed AI SEO Services
+                </Link>
+                <Link
+                  to="/services/managed-ai-seo/aeo"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
+                >
+                  Answer Engine Optimization (AEO)
                 </Link>
 
                 {/* Paid Media & Advertising */}
