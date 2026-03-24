@@ -239,7 +239,7 @@ const Index = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session" target="_blank" rel="noopener noreferrer">
+              <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl">
                   Get Free Strategy Call
                   <ArrowRight className="w-5 h-5" />
