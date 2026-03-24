@@ -92,6 +92,12 @@ export const Header = () => {
                 >
                   Answer Engine Optimization (AEO)
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/geo"
+                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Generative Engine Optimization (GEO)
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
