@@ -207,6 +207,8 @@ const AEO = () => {
             variant: "heroOutline",
             external: true,
           }}
+          backgroundImage={aeoHeroBg}
+          overlayOpacity={88}
         />
 
         {/* SECTION 2 — WHAT IS AEO */}
