@@ -104,6 +104,12 @@ export const Header = () => {
                 >
                   Local SEO
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/authority-building"
+                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Authority Building
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
