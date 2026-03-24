@@ -225,11 +225,14 @@ const GEO = () => {
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="THE SHIFT"
-                title="The Shift Is Already Happening — Here Is What It Means for Your"
-                titleHighlight="Business"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE SHIFT</p>
+                <h2 className="section-title">
+                  The Shift Is{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Already Happening</span>
+                  {" "}— Here Is What It Means for Your Business
+                </h2>
+              </div>
 
               <div className="space-y-0 max-w-3xl mx-auto">
                 {/* Sub-block 1 */}
