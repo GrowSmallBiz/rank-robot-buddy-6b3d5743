@@ -103,7 +103,7 @@ const pillars = [
     title: "AEO (Answer Engine Optimization)",
     description: "Search behavior has shifted. People ask questions and expect direct answers — in featured snippets, in People Also Ask results, and increasingly through AI-assisted search interfaces. GrowSmallBiz structures your content to be surfaced as the answer.",
     covers: ["FAQ optimization", "Question-and-answer content structure", "Featured snippet targeting", "Direct-answer formatting", "Semantic answer blocks", "Structured response formatting", "Content optimized for answer engines and AI assistants"],
-    link: "/services/managed-ai-seo",
+    link: "/services/managed-ai-seo/aeo",
   },
   {
     icon: Globe,
