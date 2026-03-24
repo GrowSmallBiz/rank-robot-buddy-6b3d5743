@@ -185,11 +185,14 @@ const GEO = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="THE FUNDAMENTALS"
-                title="What Is Generative Engine Optimization — and Why Should You"
-                titleHighlight="Care?"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE FUNDAMENTALS</p>
+                <h2 className="section-title">
+                  What Is{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Generative Engine Optimization</span>
+                  {" "}— and Why Should You Care?
+                </h2>
+              </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
@@ -222,11 +225,14 @@ const GEO = () => {
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="THE SHIFT"
-                title="The Shift Is Already Happening — Here Is What It Means for Your"
-                titleHighlight="Business"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE SHIFT</p>
+                <h2 className="section-title">
+                  The Shift Is{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Already Happening</span>
+                  {" "}— Here Is What It Means for Your Business
+                </h2>
+              </div>
 
               <div className="space-y-0 max-w-3xl mx-auto">
                 {/* Sub-block 1 */}
@@ -302,12 +308,15 @@ const GEO = () => {
         {/* SECTION 4 — WHAT GROWSMALLBIZ INCLUDES UNDER GEO */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="OUR GEO METHODOLOGY"
-              title="What GrowSmallBiz's GEO Methodology"
-              titleHighlight="Includes"
-              description="GEO at GrowSmallBiz is a coordinated set of actions that work together to make your business easier for AI systems to find, understand, and recommend. Every component is managed as part of your ongoing AI SEO engagement."
-            />
+            <div className="text-center mb-16 animate-fade-up">
+              <p className="section-subtitle">OUR GEO METHODOLOGY</p>
+              <h2 className="section-title">
+                What GrowSmallBiz's{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO Methodology</span>
+                {" "}Includes
+              </h2>
+              <p className="section-description mt-4">GEO at GrowSmallBiz is a coordinated set of actions that work together to make your business easier for AI systems to find, understand, and recommend. Every component is managed as part of your ongoing AI SEO engagement.</p>
+            </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {geoServices.map((service, index) => (
@@ -383,11 +392,14 @@ const GEO = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="THE STAKES"
-                title="Why GEO Matters for Local Service"
-                titleHighlight="Businesses"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE STAKES</p>
+                <h2 className="section-title">
+                  Why{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO Matters</span>
+                  {" "}for Local Service Businesses
+                </h2>
+              </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
