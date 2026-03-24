@@ -12,7 +12,7 @@ import { GlowCard } from "@/components/ui/glow-card";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
 import aeoHeroBg from "@/assets/aeo-hero-bg.jpg";
-import { AISearchGrowthChart } from "@/components/services/AISearchGrowthChart";
+import aeoSearchGrowthChart from "@/assets/aeo-search-growth-chart.png";
 import {
   Bot,
   ArrowRight,
