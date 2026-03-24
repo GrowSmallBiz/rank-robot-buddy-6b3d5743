@@ -308,12 +308,15 @@ const GEO = () => {
         {/* SECTION 4 — WHAT GROWSMALLBIZ INCLUDES UNDER GEO */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="OUR GEO METHODOLOGY"
-              title="What GrowSmallBiz's GEO Methodology"
-              titleHighlight="Includes"
-              description="GEO at GrowSmallBiz is a coordinated set of actions that work together to make your business easier for AI systems to find, understand, and recommend. Every component is managed as part of your ongoing AI SEO engagement."
-            />
+            <div className="text-center mb-16 animate-fade-up">
+              <p className="section-subtitle">OUR GEO METHODOLOGY</p>
+              <h2 className="section-title">
+                What GrowSmallBiz's{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO Methodology</span>
+                {" "}Includes
+              </h2>
+              <p className="section-description mt-4">GEO at GrowSmallBiz is a coordinated set of actions that work together to make your business easier for AI systems to find, understand, and recommend. Every component is managed as part of your ongoing AI SEO engagement.</p>
+            </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {geoServices.map((service, index) => (
