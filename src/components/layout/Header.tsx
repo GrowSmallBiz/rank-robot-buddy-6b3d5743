@@ -197,6 +197,13 @@ export const Header = () => {
                 >
                   Managed AI SEO Services
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/aeo"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
+                >
+                  Answer Engine Optimization (AEO)
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
