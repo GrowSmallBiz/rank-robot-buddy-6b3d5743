@@ -228,9 +228,9 @@ const GEO = () => {
                 titleHighlight="Business"
               />
 
-              {/* Sub-block 1 */}
-              <div className="space-y-12 max-w-3xl mx-auto">
-                <div className="animate-fade-up">
+              <div className="space-y-0 max-w-3xl mx-auto">
+                {/* Sub-block 1 */}
+                <div className="animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50">
                   <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4 flex items-start gap-3">
                     <Search className="w-6 h-6 text-primary mt-1 shrink-0" />
                     From Search Results Pages to AI-Generated Answers
@@ -248,8 +248,11 @@ const GEO = () => {
                   </div>
                 </div>
 
+                {/* Divider */}
+                <div className="border-b border-primary/10 mx-8" />
+
                 {/* Sub-block 2 */}
-                <div className="animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                <div className="animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50" style={{ animationDelay: "0.1s" }}>
                   <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4 flex items-start gap-3">
                     <AlertTriangle className="w-6 h-6 text-primary mt-1 shrink-0" />
                     What Happens to Businesses That Are Not Visible to AI
@@ -265,7 +268,7 @@ const GEO = () => {
                         "Prospective customers using AI discovery tools never encounter your business.",
                       ].map((item, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                          <XCircle className="w-4 h-4 text-destructive mt-0.5 shrink-0" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -276,8 +279,11 @@ const GEO = () => {
                   </div>
                 </div>
 
+                {/* Divider */}
+                <div className="border-b border-primary/10 mx-8" />
+
                 {/* Sub-block 3 */}
-                <div className="animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                <div className="animate-fade-up p-8" style={{ animationDelay: "0.2s" }}>
                   <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
                     <h3 className="text-xl font-display font-bold text-foreground flex items-start gap-3">
                       <TrendingUp className="w-6 h-6 text-primary mt-0.5 shrink-0" />
