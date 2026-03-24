@@ -331,13 +331,14 @@ const GEO = () => {
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="OUR APPROACH"
-                title="How GrowSmallBiz Uses"
-                titleHighlight="Agentic AI"
-              >
-                <span className="section-title mt-0"> to Accelerate GEO</span>
-              </SectionHeader>
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">OUR APPROACH</p>
+                <h2 className="section-title">
+                  How GrowSmallBiz Uses{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI</span>
+                  {" "}to Accelerate GEO
+                </h2>
+              </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
