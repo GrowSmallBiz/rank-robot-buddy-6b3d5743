@@ -261,7 +261,7 @@ const WebsiteDesign = () => {
           name="description"
           content="GrowSmallBiz builds conversion-focused websites for local service businesses — designed to turn visitors into calls, bookings, and leads. Schedule a free strategy call."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/website-design" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/website-design" />
       </Head>
 
       <ServiceJsonLd
