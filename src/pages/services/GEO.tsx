@@ -392,11 +392,14 @@ const GEO = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="THE STAKES"
-                title="Why GEO Matters for Local Service"
-                titleHighlight="Businesses"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE STAKES</p>
+                <h2 className="section-title">
+                  Why{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO Matters</span>
+                  {" "}for Local Service Businesses
+                </h2>
+              </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
