@@ -34,6 +34,7 @@ import {
   Scale,
   Home,
   Sparkles,
+  ChevronRight,
 } from "lucide-react";
 
 const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=local-seo&utm_campaign=strategy-session";
@@ -221,6 +222,7 @@ const LocalSEO = () => {
         />
 
         {/* SECTION 2 — WHY LOCAL SEO MATTERS */}
+        {/* Improvement #8: Break wall of text with icon lead-in and two-column layout */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -233,15 +235,27 @@ const LocalSEO = () => {
                 </h2>
               </div>
 
-              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
-                <p>
-                  Local search is one of the highest-intent traffic sources a service business can access. When someone searches for a plumber, HVAC company, med spa, chiropractor, attorney, or roofer near them, they are usually not browsing casually. They are evaluating who looks credible, who serves their area, and who appears easiest to trust.
-                </p>
-                <p>
-                  That is why Local SEO matters so much. Visibility in Google Business Profile, the map pack, and local organic results directly influences who gets considered first. Businesses that show up clearly, consistently, and credibly in those environments are more likely to earn the call, the form fill, or the booking.
-                </p>
+              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto animate-fade-up">
+                <div className="space-y-4">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <Search className="w-5 h-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Local search is one of the highest-intent traffic sources a service business can access. When someone searches for a plumber, HVAC company, med spa, chiropractor, attorney, or roofer near them, they are usually not browsing casually. They are evaluating who looks credible, who serves their area, and who appears easiest to trust.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    That is why Local SEO matters so much. Visibility in Google Business Profile, the map pack, and local organic results directly influences who gets considered first. Businesses that show up clearly, consistently, and credibly in those environments are more likely to earn the call, the form fill, or the booking.
+                  </p>
+                </div>
+              </div>
 
-                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+              <div className="mt-10 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary bg-secondary">
                   <p className="text-foreground leading-relaxed">
                     GrowSmallBiz helps local service businesses improve that visibility through a <strong>managed Local SEO system</strong> built to strengthen local relevance, trust signals, and discoverability where buying intent is already high.
                   </p>
@@ -252,6 +266,7 @@ const LocalSEO = () => {
         </section>
 
         {/* SECTION 3 — WHAT GROWSMALLBIZ INCLUDES IN LOCAL SEO */}
+        {/* Improvement #7: Larger icon containers (w-12 h-12 / w-6 h-6) */}
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
@@ -270,8 +285,8 @@ const LocalSEO = () => {
                   className="p-6 animate-fade-up"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <service.icon className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <service.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-base font-semibold text-foreground mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
@@ -282,6 +297,7 @@ const LocalSEO = () => {
         </section>
 
         {/* SECTION 4 — WHY GBP, CITATIONS, AND LOCAL LANDING PAGES WORK BETTER TOGETHER */}
+        {/* Improvement #3: Upgrade summary cards to GlowCards with connecting arrows */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -301,25 +317,30 @@ const LocalSEO = () => {
                   When these elements work together, the result is stronger local relevance and a more credible local presence. When one of them is weak, the others are limited.
                 </p>
 
-                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary bg-secondary">
                   <p className="text-foreground leading-relaxed">
                     GrowSmallBiz manages these components as a <strong>connected system</strong> — so your local search presence becomes clearer, more consistent, and more competitive over time.
                   </p>
                 </div>
               </div>
 
-              <div className="mt-12 grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+              <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
                 {[
                   { icon: MapPin, label: "Google Business Profile", desc: "Map pack & local discovery" },
                   { icon: Globe, label: "Citation Network", desc: "Trust & identity consistency" },
                   { icon: FileText, label: "Local Landing Pages", desc: "Service-area relevance" },
                 ].map((item, i) => (
-                  <div key={i} className="text-center p-5 rounded-xl bg-card border border-border">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                      <item.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <p className="text-sm font-semibold text-foreground mb-1">{item.label}</p>
-                    <p className="text-xs text-muted-foreground">{item.desc}</p>
+                  <div key={i} className="flex items-center gap-4">
+                    <GlowCard className="text-center p-6 min-w-[200px]">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                        <item.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <p className="text-sm font-semibold text-foreground mb-1">{item.label}</p>
+                      <p className="text-xs text-muted-foreground">{item.desc}</p>
+                    </GlowCard>
+                    {i < 2 && (
+                      <ChevronRight className="w-5 h-5 text-primary shrink-0 hidden sm:block" />
+                    )}
                   </div>
                 ))}
               </div>
@@ -328,6 +349,7 @@ const LocalSEO = () => {
         </section>
 
         {/* SECTION 5 — AI-POWERED WORKFLOWS */}
+        {/* Improvement #6: Add numbered badges to workflow pills for process flow */}
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -361,8 +383,9 @@ const LocalSEO = () => {
                   "Gap Identification",
                 ].map((step, i) => (
                   <div key={i} className="flex items-center gap-2 bg-background border border-border rounded-full px-4 py-2">
-                    <Zap className="w-3.5 h-3.5 text-primary" />
+                    <span className="w-5 h-5 rounded-full bg-primary/20 text-primary text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
                     <span className="text-sm font-medium text-foreground">{step}</span>
+                    {i < 4 && <ChevronRight className="w-3.5 h-3.5 text-muted-foreground ml-1 hidden sm:block" />}
                   </div>
                 ))}
               </div>
@@ -380,6 +403,7 @@ const LocalSEO = () => {
         />
 
         {/* SECTION 6 — INDUSTRY USE CASES */}
+        {/* Improvement #1: Fix orphan row — use flex wrap with centered items */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
@@ -391,15 +415,15 @@ const LocalSEO = () => {
               </h2>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
               {industryCards.map((card, index) => (
                 <GlowCard
                   key={index}
-                  className="p-6 animate-fade-up"
+                  className="p-6 animate-fade-up w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <card.icon className="w-5 h-5 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <card.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-base font-semibold text-foreground mb-2">{card.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{card.description}</p>
@@ -410,6 +434,7 @@ const LocalSEO = () => {
         </section>
 
         {/* SECTION 7 — WHY GROWSMALLBIZ */}
+        {/* Improvement #1 (orphan), #4 (text-sm), #5 (GlowCard upgrade) */}
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <SectionHeader
@@ -418,26 +443,26 @@ const LocalSEO = () => {
               titleHighlight="Local SEO"
             />
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
               {whyGSBItems.map((item, i) => (
-                <div
+                <GlowCard
                   key={i}
-                  className="flex items-start gap-4 bg-background border border-border rounded-xl p-5 animate-fade-up"
+                  className="flex items-start gap-4 p-5 animate-fade-up w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
                   style={{ animationDelay: `${i * 0.05}s` }}
                 >
-                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <item.icon className="w-4 h-4 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <item.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-foreground mb-1">{item.title}</p>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                   </div>
-                </div>
+                </GlowCard>
               ))}
             </div>
 
             <div className="max-w-3xl mx-auto mt-10 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-              <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+              <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary bg-secondary">
                 <p className="text-muted-foreground leading-relaxed">
                   GrowSmallBiz brings local-service specialization, managed execution, and a systems-based approach to Local SEO. We do not treat your Google Business Profile, citations, service-area pages, and local trust signals as disconnected tasks. We manage them together so your business is easier to find, easier to trust, and easier to choose.
                 </p>
@@ -471,7 +496,8 @@ const LocalSEO = () => {
         />
 
         {/* SECTION 9 — FINAL CTA */}
-        <section id="final-cta" className="py-20 lg:py-28" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        {/* Improvement #2: Remove double-boxed CTA, place buttons directly */}
+        <section id="final-cta" className="py-20 lg:py-28 bg-gradient-to-b from-background via-card to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
@@ -479,28 +505,25 @@ const LocalSEO = () => {
                 Local Customers Are Already Searching.{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-primary italic">Make Sure They Find You First.</span>
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
                 If your business depends on calls, bookings, and inquiries from people in your service area, Local SEO is not optional. It is how you become more visible in the places where local buyers are already deciding who looks credible enough to contact.
               </p>
               <p className="text-base text-muted-foreground mb-10 max-w-3xl mx-auto">
                 GrowSmallBiz helps local service businesses strengthen map visibility, local trust signals, and search relevance through a managed Local SEO system built for real growth.
               </p>
-            </div>
 
-            <CardCTA
-              title="Let's Build Your Local Search Visibility"
-              description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Session"
-              buttonHref={PRIMARY_CTA_URL}
-              sectionClassName="pt-0 pb-0"
-            />
-
-            <div className="flex justify-center mt-6 animate-fade-up">
-              <Button variant="heroOutline" size="lg" asChild>
-                <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                  Free SEO Audit
-                </a>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="hero" size="lg" asChild>
+                  <a href={PRIMARY_CTA_URL} target="_blank" rel="noopener noreferrer">
+                    Schedule Strategy Session <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                </Button>
+                <Button variant="heroOutline" size="lg" asChild>
+                  <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
+                    Free SEO Audit
+                  </a>
+                </Button>
+              </div>
             </div>
 
             <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
