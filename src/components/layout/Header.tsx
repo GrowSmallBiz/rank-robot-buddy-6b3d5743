@@ -210,6 +210,13 @@ export const Header = () => {
                 >
                   Answer Engine Optimization (AEO)
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/geo"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
+                >
+                  Generative Engine Optimization (GEO)
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
