@@ -335,7 +335,9 @@ const GEO = () => {
                 subtitle="OUR APPROACH"
                 title="How GrowSmallBiz Uses"
                 titleHighlight="Agentic AI"
-                description=""
+              >
+                <span className="section-title mt-0"> to Accelerate GEO</span>
+              </SectionHeader>
               />
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
