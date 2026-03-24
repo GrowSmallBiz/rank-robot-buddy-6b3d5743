@@ -209,7 +209,7 @@ const AEO = () => {
             external: true,
           }}
           backgroundImage={aeoHeroBg}
-          overlayOpacity={88}
+          overlayOpacity={82}
         />
 
         {/* SECTION 2 — WHAT IS AEO */}
