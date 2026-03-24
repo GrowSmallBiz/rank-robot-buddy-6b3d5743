@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 
 
 
@@ -9,10 +10,14 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl font-display">G</span>
-              </div>
+            <Link to="/" className="flex items-center gap-3">
+              <img 
+                src={growsmallbizLogo} 
+                alt="GrowSmallBiz Digital Marketing" 
+                className="h-12 w-auto"
+                width={48}
+                height={48}
+              />
               <span className="text-xl font-bold font-display text-foreground">
                 GrowSmallBiz Digital Marketing
               </span>
