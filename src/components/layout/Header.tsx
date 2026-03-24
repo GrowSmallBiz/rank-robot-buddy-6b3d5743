@@ -12,10 +12,10 @@ export const Header = () => {
   const location = useLocation();
 
   const isServiceActive = 
+    location.pathname.startsWith("/services") ||
     location.pathname === "/paid-ads" ||
     location.pathname === "/website-design" ||
-    location.pathname === "/managed-ai-seo" ||
-    location.pathname === "/services";
+    location.pathname === "/managed-ai-seo";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
@@ -73,7 +73,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/website-design"
+                  to="/services/website-design"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Website That Converts
@@ -81,7 +81,7 @@ export const Header = () => {
 
                 {/* Managed AI SEO */}
                 <Link
-                  to="/managed-ai-seo"
+                  to="/services/managed-ai-seo"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Managed AI SEO Services
@@ -89,7 +89,7 @@ export const Header = () => {
 
                 {/* Paid Media & Advertising */}
                 <Link
-                  to="/paid-ads"
+                  to="/services/paid-ads"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Paid Media & Advertising
@@ -176,7 +176,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/website-design"
+                  to="/services/website-design"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -185,7 +185,7 @@ export const Header = () => {
 
                 {/* Managed AI SEO */}
                 <Link
-                  to="/managed-ai-seo"
+                  to="/services/managed-ai-seo"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -194,7 +194,7 @@ export const Header = () => {
 
                 {/* Paid Media & Advertising */}
                 <Link
-                  to="/paid-ads"
+                  to="/services/paid-ads"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >

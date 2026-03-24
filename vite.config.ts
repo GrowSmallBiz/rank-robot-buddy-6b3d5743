@@ -40,9 +40,9 @@ export default defineConfig(({ mode }) => ({
       "/services/crm",
       "/services/linkedin-outreach",
       "/services/quad-bots",
-      "/paid-ads",
-      "/website-design",
-      "/managed-ai-seo",
+      "/services/paid-ads",
+      "/services/website-design",
+      "/services/managed-ai-seo",
     ],
   },
 }));

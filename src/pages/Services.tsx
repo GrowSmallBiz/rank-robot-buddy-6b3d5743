@@ -43,7 +43,7 @@ const coreServices = [
       "Mobile-optimized design that works for customers searching on the go",
       "Trust-building structure that positions your business credibly from the first visit",
     ],
-    href: "/website-design",
+    href: "/services/website-design",
     icon: Globe,
   },
   {
@@ -54,7 +54,7 @@ const coreServices = [
       "Ongoing technical and on-page optimization across your full site",
       "Content and authority strategy built for both traditional and AI-powered search",
     ],
-    href: "/managed-ai-seo",
+    href: "/services/managed-ai-seo",
     icon: Search,
   },
   {
@@ -65,7 +65,7 @@ const coreServices = [
       "Conversion tracking and landing page alignment that turns clicks into leads",
       "Ongoing optimization focused on cost-per-lead and return on ad spend",
     ],
-    href: "/paid-ads",
+    href: "/services/paid-ads",
     icon: BarChart3,
   },
   {
