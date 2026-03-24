@@ -26,6 +26,14 @@ import {
   Zap,
   MapPin,
   TrendingUp,
+  Clock,
+  MessageSquare,
+  Megaphone,
+  MousePointerClick,
+  Home,
+  Heart,
+  Scale,
+  Car,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
@@ -70,6 +78,14 @@ const faqs: FAQItem[] = [
   {
     question: "Is paid advertising the right fit for my business?",
     answer: "Paid ads work best for local service businesses with meaningful customer value — HVAC, roofing, legal, dental, med spa, and similar industries. If you have strong unit economics and want predictable lead flow with clear tracking, paid advertising is likely a strong fit. We'll help you evaluate during a strategy call."
+  },
+  {
+    question: "What's the difference between pay-per-click and pay-per-lead?",
+    answer: "Pay-per-click means you pay when someone clicks your ad. This usually gives you more control over keywords, landing pages, messaging, and conversion tracking. Pay-per-lead means you pay when a lead comes through, which is commonly associated with Local Service Ads. The right model depends on your business category, service area, lead quality, and how well your campaigns are being tracked and managed."
+  },
+  {
+    question: "Which ad platform is usually the best fit for my business?",
+    answer: "It depends on how your customers search and how quickly they are ready to act. Google Search Ads are usually best for high-intent demand. Local Service Ads can work well for eligible service categories that want direct calls and leads. Meta Ads are useful for awareness, offer promotion, and retargeting. In many cases, the strongest results come from using the right combination rather than relying on one platform alone."
   },
 ];
 
@@ -238,8 +254,95 @@ const PaidMedia = () => {
         </div>
       </section>
 
-      {/* SECTION 3 — WHO THIS IS FOR */}
+      {/* NEW SECTION — WHY LOCAL SERVICE BUSINESSES INVEST IN PAID ADS */}
       <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <SectionHeader
+              title="Why Local Service Businesses Invest in"
+              titleHighlight="Paid Ads"
+              description="Paid ads are not the only way to grow, but they are often the fastest way to create visibility when timing matters. SEO builds momentum over time. Referrals are valuable, but unpredictable. Organic social can support awareness, but it does not always create immediate demand. Paid ads help local businesses show up when people are actively searching, comparing, or ready to take action."
+            />
+
+            {/* 4 Comparison Cards */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+              {[
+                { icon: Clock, title: "SEO Builds Over Time", body: "SEO is essential for long-term visibility, but it usually takes time to build rankings, authority, and traffic. Paid ads can help create demand while SEO gains momentum." },
+                { icon: MessageSquare, title: "Referrals Are Valuable, But Unpredictable", body: "Word-of-mouth leads can be strong, but they are hard to scale consistently. Paid ads give you more control over timing, targeting, and lead flow." },
+                { icon: Megaphone, title: "Organic Social Builds Awareness", body: "Social media helps people notice your brand, but not every local business owner has time to create content consistently. Paid campaigns help put the right offer in front of the right audience faster." },
+                { icon: MousePointerClick, title: "Paid Ads Create Faster Market Visibility", body: "When campaigns are built correctly, paid ads help you test offers, target service areas, control budgets, and generate qualified calls or leads with much more predictability." },
+              ].map((card, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <card.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{card.body}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* 2 Educational Sub-Blocks */}
+            <div className="grid md:grid-cols-2 gap-6 mb-16">
+              <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
+                <h4 className="text-base font-display font-semibold text-foreground mb-3">How Google PPC Works</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Google Search Ads help you appear when people are actively searching for services like yours. You bid on relevant keywords, control where your ads appear, and send traffic to focused pages built to convert. This is usually the strongest fit when demand already exists and you want to capture it quickly.
+                </p>
+              </div>
+              <div className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: "0.05s" }}>
+                <h4 className="text-base font-display font-semibold text-foreground mb-3">How Meta Retargeting Works</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Most visitors do not contact a business the first time they land on a website. Meta retargeting helps you stay visible on Facebook and Instagram after they leave. That repeated exposure builds familiarity, supports trust, and brings warm prospects back when they are ready to act.
+                </p>
+              </div>
+            </div>
+
+            {/* PPC vs PPL Comparison */}
+            <div className="mb-16">
+              <h4 className="text-lg font-display font-semibold text-foreground text-center mb-6 animate-fade-up">Pay-Per-Click vs Pay-Per-Lead</h4>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
+                  <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Click</h5>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    With PPC, you pay for the click and control the landing page, targeting, messaging, and conversion path. This usually gives you more flexibility and better optimization potential when the campaign structure is strong.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: "0.05s" }}>
+                  <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Lead</h5>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    With pay-per-lead, you pay when a lead comes through rather than for every click. This model is most commonly associated with Local Service Ads. For eligible businesses, it can work well when lead quality is strong and the category is a good fit.
+                  </p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground text-center mt-6 max-w-3xl mx-auto animate-fade-up">
+                For many local service businesses, the best approach is not choosing only one model. It is choosing the right mix based on your niche, service area, urgency of demand, and how your leads are tracked and followed up.
+              </p>
+            </div>
+
+            {/* Best Fit by Business Type */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { icon: Home, title: "Home Services", body: "Best fit: Google Search Ads, Local Service Ads when eligible, and retargeting." },
+                { icon: Heart, title: "Health & Wellness", body: "Best fit: Google Search Ads, Meta Ads, and retargeting for repeat exposure and nurturing." },
+                { icon: Scale, title: "Legal", body: "Best fit: Google Search Ads, Local Service Ads when eligible, and retargeting." },
+                { icon: Car, title: "Automotive / Repair", body: "Best fit: Google Search Ads and retargeting, with Meta used when offer-driven promotion makes sense." },
+              ].map((card, i) => (
+                <div key={i} className="bg-primary/5 border border-primary/20 rounded-xl p-5 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
+                    <card.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <h5 className="text-sm font-display font-semibold text-foreground mb-1">{card.title}</h5>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{card.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3 — WHO THIS IS FOR */}
+      <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <SectionHeader
