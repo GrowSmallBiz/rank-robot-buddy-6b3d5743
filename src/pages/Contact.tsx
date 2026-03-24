@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useUtm } from "@/hooks/use-utm";
 import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
