@@ -31,6 +31,7 @@ export const routes: RouteRecord[] = [
       { path: "services/paid-ads", lazy: lazy(() => import("./pages/services/PaidMedia")) },
       { path: "services/website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
       { path: "services/managed-ai-seo", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
+      { path: "services/managed-ai-seo/aeo", lazy: lazy(() => import("./pages/services/AEO")) },
       { path: "paid-ads", lazy: lazy(() => import("./pages/services/PaidMedia")) },
       { path: "website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
       { path: "managed-ai-seo", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
