@@ -38,8 +38,8 @@ import {
   Clock,
 } from "lucide-react";
 
-const CTA_URL =
-  "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=web-design&utm_campaign=strategy-session";
+const CTA_BASE =
+  "https://lp.growsmallbiz.io/digital-growth-strategy-session";
 
 const faqs = [
   {

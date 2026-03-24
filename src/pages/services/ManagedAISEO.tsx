@@ -56,8 +56,8 @@ import {
   Puzzle,
 } from "lucide-react";
 
-const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=managed-ai-seo&utm_campaign=strategy-session";
-const SECONDARY_CTA_URL = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page?utm_source=website&utm_medium=managed-ai-seo&utm_campaign=free-seo-audit";
+const PRIMARY_CTA_BASE = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
+const SECONDARY_CTA_BASE = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page";
 
 const pillarImages = [
   pillarTechnicalSeo,
