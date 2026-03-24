@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
+import { useUtm } from "@/hooks/use-utm";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
