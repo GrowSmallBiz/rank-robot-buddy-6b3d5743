@@ -12,10 +12,10 @@ export const Header = () => {
   const location = useLocation();
 
   const isServiceActive = 
+    location.pathname.startsWith("/services") ||
     location.pathname === "/paid-ads" ||
     location.pathname === "/website-design" ||
-    location.pathname === "/managed-ai-seo" ||
-    location.pathname === "/services";
+    location.pathname === "/managed-ai-seo";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
