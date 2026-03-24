@@ -26,9 +26,9 @@ export const Header = () => {
             <img 
               src={growsmallbizLogo} 
               alt="GrowSmallBiz Digital Marketing" 
-              className="h-12 w-auto"
-              width={48}
-              height={48}
+              className="h-16 w-auto"
+              width={64}
+              height={64}
             />
           </Link>
 
