@@ -30,6 +30,7 @@ export default defineConfig(({ mode }) => ({
       "/services/website-design",
       "/services/managed-ai-seo",
       "/services/managed-ai-seo/aeo",
+      "/services/managed-ai-seo/geo",
     ],
   },
 }));
