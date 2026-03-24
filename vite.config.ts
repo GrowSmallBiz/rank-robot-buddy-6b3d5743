@@ -29,6 +29,7 @@ export default defineConfig(({ mode }) => ({
       "/services/paid-ads",
       "/services/website-design",
       "/services/managed-ai-seo",
+      "/services/managed-ai-seo/aeo",
     ],
   },
 }));
