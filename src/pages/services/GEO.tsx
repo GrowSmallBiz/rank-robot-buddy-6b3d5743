@@ -333,8 +333,9 @@ const GEO = () => {
             <div className="max-w-4xl mx-auto">
               <SectionHeader
                 subtitle="OUR APPROACH"
-                title="How GrowSmallBiz Uses Agentic AI to Accelerate"
-                titleHighlight="GEO"
+                title="How GrowSmallBiz Uses"
+                titleHighlight="Agentic AI"
+                description=""
               />
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
