@@ -159,6 +159,7 @@ const howItWorksSteps = [
 ];
 
 const Index = () => {
+  const { strategySessionUrl } = useUtm();
   return (
     <div className="min-h-screen bg-background">
       <Head>
