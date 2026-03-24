@@ -160,10 +160,10 @@ const GEO = () => {
       <main>
         {/* SECTION 1 — HERO */}
         <ServiceHero
-          badge={{ icon: Globe, text: "GEO Services for Local Businesses" }}
-          title={<>Get Found Where Your Next Customer Is{" "}<br className="hidden md:inline" />Already </>}
-          titleHighlight="Searching"
-          subtitle="Search behavior is shifting. More consumers are turning to AI-powered tools — Google AI Overviews, conversational search assistants, and generative discovery engines — to find, compare, and choose local service providers. If your business is not visible in those environments, competitors who are will take the work.<br /><br />GrowSmallBiz helps local service businesses become easier for AI systems to identify, understand, and surface — through a managed methodology built for the new reality of search."
+          badge={{ icon: Globe, text: "Generative Engine Optimization (GEO) for Local Service Businesses" }}
+          title={<>If AI Search Can't Understand Your Business,{" "}<br className="hidden md:inline" />It Won't </>}
+          titleHighlight="Recommend It"
+          subtitle="GrowSmallBiz helps local service businesses strengthen entity clarity, trust signals, and AI-search visibility so they are easier for AI systems to identify, interpret, and surface."
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
@@ -177,7 +177,7 @@ const GEO = () => {
             external: true,
           }}
           backgroundImage={geoHeroBg}
-          overlayOpacity={82}
+          overlayOpacity={88}
         />
 
         {/* SECTION 2 — WHAT GEO IS AND WHY IT MATTERS */}
