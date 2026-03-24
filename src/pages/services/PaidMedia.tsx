@@ -26,6 +26,14 @@ import {
   Zap,
   MapPin,
   TrendingUp,
+  Clock,
+  MessageSquare,
+  Megaphone,
+  MousePointerClick,
+  Home,
+  Heart,
+  Scale,
+  Car,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
