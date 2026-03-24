@@ -313,7 +313,7 @@ const AEO = () => {
                 <div className="animate-fade-up">
                   <p className="section-subtitle">Consumer Search Behavior Shift</p>
                   <h2 className="section-title mb-6">
-                    AI Search Is Growing Fast.
+                    AI Search Is Growing At An Extraordinary Rate.
                     <br />
                     <span className="text-transparent bg-clip-text bg-gradient-primary italic">Will Your Business Stay Visible?</span>
                   </h2>
