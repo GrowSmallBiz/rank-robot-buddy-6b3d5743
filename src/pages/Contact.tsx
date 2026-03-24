@@ -16,6 +16,7 @@ import {
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 const Contact = () => {
+  const { buildUrl } = useUtm();
   const [showIframe, setShowIframe] = useState(false);
   const formRef = useRef<HTMLDivElement>(null);
 
