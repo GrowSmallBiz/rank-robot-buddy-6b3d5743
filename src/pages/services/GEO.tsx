@@ -185,11 +185,14 @@ const GEO = () => {
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="THE FUNDAMENTALS"
-                title="What Is Generative Engine Optimization — and Why Should You"
-                titleHighlight="Care?"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE FUNDAMENTALS</p>
+                <h2 className="section-title">
+                  What Is{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Generative Engine Optimization</span>
+                  {" "}— and Why Should You Care?
+                </h2>
+              </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
