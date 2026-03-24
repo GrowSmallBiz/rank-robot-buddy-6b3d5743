@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { useUtm } from "@/hooks/use-utm";
 import { CardCTA } from "@/components/services/CardCTA";
 import websiteDesignHeroBg from "@/assets/website-design-hero-bg.jpg";
 import { Link } from "react-router-dom";
@@ -38,8 +39,8 @@ import {
   Clock,
 } from "lucide-react";
 
-const CTA_URL =
-  "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=web-design&utm_campaign=strategy-session";
+const CTA_BASE =
+  "https://lp.growsmallbiz.io/digital-growth-strategy-session";
 
 const faqs = [
   {
@@ -252,6 +253,8 @@ const problemBullets = [
 ];
 
 const WebsiteDesign = () => {
+  const { buildUrl } = useUtm();
+  const CTA_URL = buildUrl(CTA_BASE, "strategy-session");
   return (
     <div className="min-h-screen bg-background">
       <Header />

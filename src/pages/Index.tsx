@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
+import { useUtm } from "@/hooks/use-utm";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -158,6 +159,7 @@ const howItWorksSteps = [
 ];
 
 const Index = () => {
+  const { strategySessionUrl } = useUtm();
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -237,7 +239,7 @@ const Index = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session" target="_blank" rel="noopener noreferrer">
+              <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl">
                   Get Free Strategy Call
                   <ArrowRight className="w-5 h-5" />
@@ -360,7 +362,7 @@ const Index = () => {
           </div>
 
           <div className="max-w-3xl mx-auto text-center">
-            <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session" target="_blank" rel="noopener noreferrer">
+            <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg" className="animate-fade-up">
                 Get Free Strategy Call
                 <ArrowRight className="w-5 h-5" />
@@ -427,7 +429,7 @@ const Index = () => {
           title="Ready to Build a Smarter Growth System?"
           description="Book a free strategy call to see how our done-for-you, AI-powered growth system can take marketing and follow-up off your plate, so you can focus more on running your business and spending time where it matters most. We also provide a clear dashboard view of performance and continuously recalibrate the strategy when results need improvement."
           buttonText="Get Free Strategy Call"
-          buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
+          buttonHref={strategySessionUrl}
         />
 
         {/* Why Choose GrowSmallBiz */}
@@ -499,7 +501,7 @@ const Index = () => {
           title="Let's Build Your Growth Engine"
           description="If you want AI-powered client acquisition systems, done-for-you execution, adaptive strategy, and a clear multi-channel dashboard without patching together disconnected tools, start with a free strategy call."
           buttonText="Get Free Strategy Call"
-          buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=home&utm_campaign=strategy-session"
+          buttonHref={strategySessionUrl}
         />
 
         {/* Consultation Form Section */}

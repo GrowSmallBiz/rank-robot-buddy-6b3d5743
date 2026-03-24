@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useUtm } from "@/hooks/use-utm";
 import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -15,6 +16,7 @@ import {
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 const Contact = () => {
+  const { buildUrl } = useUtm();
   const [showIframe, setShowIframe] = useState(false);
   const formRef = useRef<HTMLDivElement>(null);
 
@@ -193,7 +195,7 @@ const Contact = () => {
                   at no cost.
                 </p>
                 <Button className="w-full group rounded-full bg-gradient-to-r from-primary to-accent hover:opacity-90" asChild>
-                  <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=contact-from&utm_campaign=seo-audit-offer" target="_blank" rel="noopener noreferrer">
+                  <a href={buildUrl("https://lp.growsmallbiz.io/digital-growth-strategy-session", "seo-audit-offer")} target="_blank" rel="noopener noreferrer">
                     Get Free Assessment
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>

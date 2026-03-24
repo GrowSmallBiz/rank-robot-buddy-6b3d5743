@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -56,8 +57,8 @@ import {
   Puzzle,
 } from "lucide-react";
 
-const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=managed-ai-seo&utm_campaign=strategy-session";
-const SECONDARY_CTA_URL = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page?utm_source=website&utm_medium=managed-ai-seo&utm_campaign=free-seo-audit";
+const PRIMARY_CTA_BASE = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
+const SECONDARY_CTA_BASE = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page";
 
 const pillarImages = [
   pillarTechnicalSeo,
@@ -180,6 +181,9 @@ const faqs = [
 ];
 
 const ManagedAISEO = () => {
+  const { buildUrl } = useUtm();
+  const PRIMARY_CTA_URL = buildUrl(PRIMARY_CTA_BASE, "strategy-session");
+  const SECONDARY_CTA_URL = buildUrl(SECONDARY_CTA_BASE, "free-seo-audit");
   return (
     <div className="min-h-screen bg-background">
       <Head>

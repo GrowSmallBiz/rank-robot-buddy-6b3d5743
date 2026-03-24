@@ -1,5 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { useUtm } from "@/hooks/use-utm";
+import { CTA_URLS } from "@/lib/utm";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -37,8 +39,6 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=local-seo&utm_campaign=strategy-session";
-const SECONDARY_CTA_URL = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page?utm_source=website&utm_medium=local-seo&utm_campaign=free-seo-audit";
 
 const localSeoServices = [
   {
@@ -176,6 +176,7 @@ const faqs = [
 ];
 
 const LocalSEO = () => {
+  const { strategySessionUrl: PRIMARY_CTA_URL, freeAuditUrl: SECONDARY_CTA_URL } = useUtm();
   return (
     <div className="min-h-screen bg-background">
       <Head>
