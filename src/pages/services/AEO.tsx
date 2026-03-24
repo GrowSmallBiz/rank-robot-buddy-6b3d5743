@@ -192,10 +192,10 @@ const AEO = () => {
       <main>
         {/* SECTION 1 — HERO */}
         <ServiceHero
-          badge={{ icon: MessageCircleQuestion, text: "Answer Engine Optimization" }}
-          title="Become the Answer."
-          titleHighlight="Not Just Another Search Result."
-          subtitle="Search behavior is changing. People are no longer just typing keywords — they are asking direct questions and expecting immediate answers. GrowSmallBiz helps local service businesses structure their content to show up in featured snippets, People Also Ask results, and AI-assisted search experiences so your business becomes the answer buyers see first."
+          badge={{ icon: MessageCircleQuestion, text: "Answer Engine Optimization (AEO) for Local Service Businesses" }}
+          title={<>If AI Search Can't Find Your Business,{" "}<br className="hidden md:inline" />It Will Surface Your </>}
+          titleHighlight="Competitors"
+          subtitle="GrowSmallBiz helps local service businesses structure their content for direct answers, featured snippets, voice search, and AI search visibility — so they are seen earlier, trusted faster, and chosen more often."
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
