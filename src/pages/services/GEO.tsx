@@ -176,7 +176,8 @@ const GEO = () => {
             variant: "heroOutline",
             external: true,
           }}
-          overlayOpacity={88}
+          backgroundImage={geoHeroBg}
+          overlayOpacity={82}
         />
 
         {/* SECTION 2 — WHAT GEO IS AND WHY IT MATTERS */}
