@@ -335,7 +335,7 @@ const LocalSEO = () => {
                 <p className="section-subtitle">OUR APPROACH</p>
                 <h2 className="section-title">
                   How GrowSmallBiz Uses{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI-Powered Workflows</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI Playbooks</span>
                   {" "}for Local SEO
                 </h2>
               </div>
