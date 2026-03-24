@@ -98,6 +98,12 @@ export const Header = () => {
                 >
                   Generative Engine Optimization (GEO)
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/local-seo"
+                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Local SEO
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
