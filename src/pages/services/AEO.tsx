@@ -239,7 +239,7 @@ const AEO = () => {
 
               {/* Cited insights */}
               <div className="mt-12 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <div className="bg-card border border-border rounded-2xl p-6 space-y-4">
+                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
                   <p className="text-xs font-semibold text-primary uppercase tracking-wider">Industry Insights</p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
@@ -313,7 +313,7 @@ const AEO = () => {
                 <div className="animate-fade-up">
                   <p className="section-subtitle">Consumer Search Behavior Shift</p>
                   <h2 className="section-title mb-6">
-                    AI Search Is Growing Fast.
+                    AI Search Is Growing At An Extraordinary Rate.
                     <br />
                     <span className="text-transparent bg-clip-text bg-gradient-primary italic">Will Your Business Stay Visible?</span>
                   </h2>
