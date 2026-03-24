@@ -185,7 +185,7 @@ export const Header = () => {
 
                 {/* Managed AI SEO */}
                 <Link
-                  to="/managed-ai-seo"
+                  to="/services/managed-ai-seo"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
