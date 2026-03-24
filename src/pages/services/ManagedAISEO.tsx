@@ -193,9 +193,9 @@ const ManagedAISEO = () => {
         serviceName="Managed AI SEO for Local Service Businesses"
         serviceType="Managed SEO"
         description="The complete Managed AI SEO system for local service businesses — covering technical SEO, on-page, local SEO, topical authority, AEO, GEO, link building, and monthly reporting."
-        url="/managed-ai-seo"
+        url="/services/managed-ai-seo"
         breadcrumbs={[
-          { name: "Services", url: "/services/managed-ai-seo" },
+          { name: "Services", url: "/services" },
         ]}
       />
       <Header />

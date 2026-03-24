@@ -268,7 +268,7 @@ const WebsiteDesign = () => {
         serviceName="Website Design for Local Service Businesses"
         serviceType="Website Design"
         description="Conversion-focused website design for local service businesses — built to turn visitors into calls, bookings, and leads."
-        url="/website-design"
+        url="/services/website-design"
         breadcrumbs={[
           { name: "Services", url: "/services/managed-ai-seo" },
           { name: "Website Design", url: "/services/website-design" },
