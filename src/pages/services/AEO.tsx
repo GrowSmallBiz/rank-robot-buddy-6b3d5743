@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
