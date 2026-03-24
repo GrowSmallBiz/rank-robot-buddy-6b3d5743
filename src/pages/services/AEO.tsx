@@ -348,7 +348,17 @@ const AEO = () => {
 
                 {/* Right column — chart */}
                 <div className="animate-fade-up" style={{ animationDelay: "0.15s" }}>
-                  <AISearchGrowthChart />
+                  <div className="bg-card border border-border rounded-2xl p-4 md:p-6 shadow-lg overflow-hidden">
+                    <img
+                      src={aeoSearchGrowthChart}
+                      alt="Search Engine Growth Rate chart comparing traditional search engines like Google, YouTube, and Bing with AI platforms like ChatGPT, Gemini, Claude, and Perplexity"
+                      className="w-full h-auto rounded-lg"
+                      loading="lazy"
+                    />
+                    <p className="text-[10px] text-muted-foreground/50 mt-3 leading-relaxed px-2">
+                      Source: Third-party industry research compiled for illustrative purposes. Exact platform shares and growth rates may evolve over time.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
