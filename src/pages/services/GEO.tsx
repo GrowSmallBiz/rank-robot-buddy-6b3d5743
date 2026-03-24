@@ -20,6 +20,7 @@ import {
   Layers,
   Zap,
   CheckCircle2,
+  XCircle,
   Shield,
   Users,
   BarChart3,
