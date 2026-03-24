@@ -180,6 +180,9 @@ const faqs = [
 ];
 
 const ManagedAISEO = () => {
+  const { buildUrl } = useUtm();
+  const PRIMARY_CTA_URL = buildUrl(PRIMARY_CTA_BASE, "strategy-session");
+  const SECONDARY_CTA_URL = buildUrl(SECONDARY_CTA_BASE, "free-seo-audit");
   return (
     <div className="min-h-screen bg-background">
       <Head>

@@ -252,6 +252,8 @@ const problemBullets = [
 ];
 
 const WebsiteDesign = () => {
+  const { buildUrl } = useUtm();
+  const CTA_URL = buildUrl(CTA_BASE, "strategy-session");
   return (
     <div className="min-h-screen bg-background">
       <Header />

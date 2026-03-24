@@ -176,6 +176,7 @@ const faqs = [
 ];
 
 const LocalSEO = () => {
+  const { strategySessionUrl: PRIMARY_CTA_URL, freeAuditUrl: SECONDARY_CTA_URL } = useUtm();
   return (
     <div className="min-h-screen bg-background">
       <Head>
