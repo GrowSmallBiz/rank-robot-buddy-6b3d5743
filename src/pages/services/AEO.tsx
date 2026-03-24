@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
+import aeoHeroBg from "@/assets/aeo-hero-bg.jpg";
 import {
   Bot,
   ArrowRight,
@@ -206,6 +207,8 @@ const AEO = () => {
             variant: "heroOutline",
             external: true,
           }}
+          backgroundImage={aeoHeroBg}
+          overlayOpacity={88}
         />
 
         {/* SECTION 2 — WHAT IS AEO */}
