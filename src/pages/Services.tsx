@@ -65,7 +65,7 @@ const coreServices = [
       "Conversion tracking and landing page alignment that turns clicks into leads",
       "Ongoing optimization focused on cost-per-lead and return on ad spend",
     ],
-    href: "/paid-ads",
+    href: "/services/paid-ads",
     icon: BarChart3,
   },
   {
