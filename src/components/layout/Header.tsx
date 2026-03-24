@@ -89,7 +89,7 @@ export const Header = () => {
 
                 {/* Paid Media & Advertising */}
                 <Link
-                  to="/paid-ads"
+                  to="/services/paid-ads"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Paid Media & Advertising
