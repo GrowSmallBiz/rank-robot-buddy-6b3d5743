@@ -195,7 +195,7 @@ const Contact = () => {
                   at no cost.
                 </p>
                 <Button className="w-full group rounded-full bg-gradient-to-r from-primary to-accent hover:opacity-90" asChild>
-                  <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session?utm_source=website&utm_medium=contact-from&utm_campaign=seo-audit-offer" target="_blank" rel="noopener noreferrer">
+                  <a href={buildUrl("https://lp.growsmallbiz.io/digital-growth-strategy-session", "seo-audit-offer")} target="_blank" rel="noopener noreferrer">
                     Get Free Assessment
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </a>
