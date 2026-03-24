@@ -303,6 +303,57 @@ const AEO = () => {
           </div>
         </section>
 
+        {/* SECTION 3B — AI SEARCH GROWTH */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                {/* Left column — text */}
+                <div className="animate-fade-up">
+                  <p className="section-subtitle">Consumer Search Behavior Shift</p>
+                  <h2 className="section-title mb-6">
+                    AI Search Is Growing Fast — and Buyers Are Learning to{" "}
+                    <span className="text-transparent bg-clip-text bg-gradient-primary italic">Use It</span>
+                  </h2>
+                  <div className="space-y-4 text-muted-foreground leading-relaxed">
+                    <p>
+                      Consumers are no longer relying only on traditional search results. They are asking longer, more specific questions in AI tools and using those answers to compare businesses faster. For local service companies, that means visibility is no longer just about ranking a page — it is about being present when the question gets answered.
+                    </p>
+                  </div>
+
+                  <ul className="mt-8 space-y-4">
+                    {[
+                      "Buyers are asking more detailed pre-sale questions",
+                      "AI tools help users compare businesses faster",
+                      "AEO improves your chance of being seen in those early answer moments",
+                    ].map((point, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                        <span className="text-foreground/90 text-sm">{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-8">
+                    <a
+                      href="#final-cta"
+                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium text-sm transition-colors"
+                    >
+                      See How AEO Fits Into Your SEO Strategy
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+
+                {/* Right column — chart */}
+                <div className="animate-fade-up" style={{ animationDelay: "0.15s" }}>
+                  <AISearchGrowthChart />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* SECTION 4 — WHAT GSB INCLUDES IN AEO */}
         <section className="py-24">
           <div className="container mx-auto px-4">
