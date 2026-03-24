@@ -201,7 +201,7 @@ const AuthorityBuilding = () => {
             external: true,
           }}
           backgroundImage={authorityHeroBg}
-          overlayOpacity={50}
+          overlayOpacity={60}
         />
 
         {/* SECTION 2 — WHAT AUTHORITY BUILDING MEANS IN MODERN SEO */}
