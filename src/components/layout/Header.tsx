@@ -262,6 +262,13 @@ export const Header = () => {
                 >
                   Link Building
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/technical-seo"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
+                >
+                  Technical SEO
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
