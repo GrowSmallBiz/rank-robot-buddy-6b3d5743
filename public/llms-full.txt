@@ -8,10 +8,10 @@ NOTE: This site is a React single-page application. AI tools that cannot execute
 ---
 
 ## Machine-Readable Endpoints
-- robots.txt: https://growsmallbiz.io/robots.txt
-- sitemap.xml: https://growsmallbiz.io/sitemap.xml
-- llms.txt (index): https://growsmallbiz.io/llms.txt
-- llms-full.txt (this file): https://growsmallbiz.io/llms-full.txt
+- robots.txt: https://growsmallbiz.io/robots.txt/
+- sitemap.xml: https://growsmallbiz.io/sitemap.xml/
+- llms.txt (index): https://growsmallbiz.io/llms.txt/
+- llms-full.txt (this file): https://growsmallbiz.io/llms-full.txt/
 
 ---
 
@@ -89,7 +89,7 @@ A: Paid ads show improvements within 3-60 days. SEO improvements begin around 60
 ---
 
 # PAGE: About
-URL: https://growsmallbiz.io/about
+URL: https://growsmallbiz.io/about/
 
 ## Brand Summary
 GrowSmallBiz helps local service businesses grow with an integrated, done-for-you marketing system combining SEO, paid ads, social media, website design, AI receptionist, CRM workflows, and reputation management.
@@ -125,7 +125,7 @@ A: Customized based on your business size, competition, and goals. Schedule a fr
 ---
 
 # PAGE: Technical SEO
-URL: https://growsmallbiz.io/services/technical-seo
+URL: https://growsmallbiz.io/services/technical-seo/
 
 ## What We Do
 Backend optimizations that affect your website's search performance: meta tags, site architecture, redirect management, URL structure, image optimization, structured data, internal linking, JavaScript rendering, caching configurations.
@@ -173,7 +173,7 @@ A: Yes. Our managed SEO campaigns integrate technical SEO with link building, co
 ---
 
 # PAGE: On-Page SEO
-URL: https://growsmallbiz.io/services/on-page-seo
+URL: https://growsmallbiz.io/services/on-page-seo/
 
 ## What We Do
 Optimizing elements within your web pages — content, titles, meta descriptions, headings, and HTML markup — to improve search visibility and user engagement.
@@ -217,7 +217,7 @@ A: Article, FAQ, Product, Local Business, Breadcrumb, Review, and other structur
 ---
 
 # PAGE: Answer Engine Optimization (AEO)
-URL: https://growsmallbiz.io/services/aeo
+URL: https://growsmallbiz.io/services/aeo/
 
 ## What We Do
 Structuring content, entities, and technical elements so AI platforms like ChatGPT, Google AI Overviews, and Perplexity recognize, cite, and surface your brand as the authoritative answer.
@@ -252,7 +252,7 @@ A: AI Share of Voice, Visibility Score, and Sentiment Analysis across LLM platfo
 ---
 
 # PAGE: Generative Engine Optimization (GEO)
-URL: https://growsmallbiz.io/services/geo
+URL: https://growsmallbiz.io/services/geo/
 
 ## What We Do
 Optimizing content, entities, and technical signals so AI platforms like ChatGPT, Gemini, and Claude can recognize, reference, and surface your brand.
@@ -288,7 +288,7 @@ A: Yes. Our workflows scale across multiple domains, brands, regions, and langua
 ---
 
 # PAGE: Local SEO
-URL: https://growsmallbiz.io/services/local-seo
+URL: https://growsmallbiz.io/services/local-seo/
 
 ## What We Do
 Optimize your business's online presence to attract customers in specific geographic areas through Google Business Profiles, local citations, reviews, and geo-targeted content.
@@ -319,7 +319,7 @@ A: Yes. Our strategies scale across multiple locations with consistent optimizat
 ---
 
 # PAGE: Authority Building
-URL: https://growsmallbiz.io/services/managed-ai-seo/authority-building
+URL: https://growsmallbiz.io/services/managed-ai-seo/authority-building/
 
 ## What We Do
 Systematic authority building for local service businesses through DKN-driven planning, topical maps, authority blogs, press releases, brand mentions, and digital trust signals.
@@ -384,7 +384,7 @@ A: GrowSmallBiz handles the full authority-building process — from DKN develop
 ---
 
 # PAGE: Link Building
-URL: https://growsmallbiz.io/services/managed-ai-seo/link-building
+URL: https://growsmallbiz.io/services/managed-ai-seo/link-building/
 
 ## What We Do
 Strategic link building for local service businesses through press releases, guest placements, digital PR, partnerships, and linkable asset creation. Every link is earned through legitimate, white-hat methods.
@@ -452,7 +452,7 @@ A: You can, but effective link building requires significant time, expertise, re
 ---
 
 # PAGE: Paid Media & Advertising
-URL: https://growsmallbiz.io/services/paid-media
+URL: https://growsmallbiz.io/services/paid-media/
 
 ## What We Do
 Strategic paid campaigns across Google PPC, Google LSA, Meta (Facebook/Instagram), TikTok, YouTube, and Bing with full-funnel tracking.
@@ -484,7 +484,7 @@ A: Leads can come immediately, but optimization takes 2-4 weeks. Best ROI after 
 ---
 
 # PAGE: Social Media Management
-URL: https://growsmallbiz.io/services/social-media
+URL: https://growsmallbiz.io/services/social-media/
 
 ## What We Do
 Strategic social media management for high-ticket service professionals focused on building trust, demonstrating expertise, and attracting quality prospects.
@@ -518,7 +518,7 @@ A: Brand awareness begins immediately. Lead generation typically starts within 3
 ---
 
 # PAGE: Website Design
-URL: https://growsmallbiz.io/services/website-design
+URL: https://growsmallbiz.io/services/website-design/
 
 ## What We Do
 Conversion-optimized website design with on-brand messaging, clear CTAs, mobile responsiveness, and SEO foundation built in.
@@ -558,7 +558,7 @@ A: Authority Websites: 5 unique page templates, up to 25 pages, SEO optimized, m
 ---
 
 # PAGE: AI Receptionist
-URL: https://growsmallbiz.io/services/ai-receptionist
+URL: https://growsmallbiz.io/services/ai-receptionist/
 
 ## What We Do
 24/7 AI-powered phone answering, lead qualification, appointment booking, and multi-channel conversation handling.
@@ -589,7 +589,7 @@ URL: https://growsmallbiz.io/services/ai-receptionist
 ---
 
 # PAGE: CRM Solutions
-URL: https://growsmallbiz.io/services/crm
+URL: https://growsmallbiz.io/services/crm/
 
 ## What We Do
 Convert more leads into paying customers with AI-powered CRM, automated email & SMS followups, pipeline management, and 24/7 lead response.
@@ -616,7 +616,7 @@ Convert more leads into paying customers with AI-powered CRM, automated email & 
 ---
 
 # PAGE: Reputation Management
-URL: https://growsmallbiz.io/services/reputation-management
+URL: https://growsmallbiz.io/services/reputation-management/
 
 ## What We Do
 AI-powered reputation management that monitors reviews across Google, Facebook, Yelp, and 50+ platforms with automated responses and review requests.
@@ -649,7 +649,7 @@ A: Most small businesses invest $297-497/month, which pays for itself through 1-
 ---
 
 # PAGE: LinkedIn Outreach
-URL: https://growsmallbiz.io/services/linkedin-outreach
+URL: https://growsmallbiz.io/services/linkedin-outreach/
 
 ## What We Do
 B2B lead generation through targeted LinkedIn outreach with personalized messaging and follow-up sequences.
@@ -669,7 +669,7 @@ B2B lead generation through targeted LinkedIn outreach with personalized messagi
 ---
 
 # PAGE: AI QuadBots
-URL: https://growsmallbiz.io/services/quad-bots
+URL: https://growsmallbiz.io/services/quad-bots/
 
 ## What We Do
 Four AI bots working 24/7: Conversational AI, Voice AI, Lead Generator, and Supervisor OS for automated lead handling and qualification.
@@ -692,21 +692,21 @@ Four AI bots working 24/7: Conversational AI, Voice AI, Lead Generator, and Supe
 ---
 
 # PAGE: Contact
-URL: https://growsmallbiz.io/contact
+URL: https://growsmallbiz.io/contact/
 
 Contact page with consultation form for free strategy session.
 
 ---
 
 # PAGE: Free Assessment
-URL: https://growsmallbiz.io/free-assessment
+URL: https://growsmallbiz.io/free-assessment/
 
 Free marketing assessment form to get a personalized growth plan.
 
 ---
 
 # PAGE: Managed SEO Pricing
-URL: https://growsmallbiz.io/services/managed-seo-pricing
+URL: https://growsmallbiz.io/services/managed-seo-pricing/
 
 ## What We Do
 Transparent, tiered pricing for managed SEO services. Choose from Starter, Growth, or Authority packages — all include website design, local SEO, technical SEO, on-page SEO, content creation, and authority building.
@@ -722,7 +722,7 @@ Google Business Profile optimization, meta tag optimization, schema markup, inte
 ---
 
 # PAGE: AI SEO Hub
-URL: https://growsmallbiz.io/services/ai-seo-hub
+URL: https://growsmallbiz.io/services/ai-seo-hub/
 
 ## What We Do
 Six SEO services combined into one AI-powered platform: Technical SEO, On-Page SEO, AEO, GEO, Local SEO, and Link Building.
@@ -746,7 +746,7 @@ Six SEO services combined into one AI-powered platform: Technical SEO, On-Page S
 # INDUSTRY PAGES
 
 ## HVAC Marketing
-URL: https://growsmallbiz.io/industries/hvac
+URL: https://growsmallbiz.io/industries/hvac/
 
 AI-powered digital marketing designed specifically for HVAC businesses. Dominate local search, capture emergency calls, and grow your service business.
 
@@ -794,7 +794,7 @@ A: We specialize exclusively in high-ticket local services and optimize for AI s
 ---
 
 ## Home Services Marketing
-URL: https://growsmallbiz.io/industries/home-services
+URL: https://growsmallbiz.io/industries/home-services/
 
 Complete digital marketing for home service contractors. From SEO and paid ads to AI automation and reputation management — everything you need to dominate your local market.
 
@@ -837,7 +837,7 @@ A: We're specialists in home services marketing — we understand seasonal deman
 ---
 
 ## Dental Marketing
-URL: https://growsmallbiz.io/industries/dental
+URL: https://growsmallbiz.io/industries/dental/
 
 Attract more patients, fill your schedule, and grow your dental practice with AI-powered digital marketing designed specifically for dentists.
 
@@ -885,7 +885,7 @@ A: Dental SEO requires understanding patient psychology, procedure-specific sear
 ---
 
 ## Med Spa Marketing
-URL: https://growsmallbiz.io/industries/med-spa
+URL: https://growsmallbiz.io/industries/med-spa/
 
 Attract high-value aesthetic clients with AI-powered digital marketing designed for med spas. From Botox to body contouring, we fill your treatment rooms.
 
@@ -933,7 +933,7 @@ A: Most clients see increased traffic within 2-3 months and measurable consultat
 ---
 
 ## Chiropractor Marketing
-URL: https://growsmallbiz.io/industries/chiropractor
+URL: https://growsmallbiz.io/industries/chiropractor/
 
 Grow your chiropractic practice with AI-powered digital marketing. Attract new patients, build your reputation, and dominate local search.
 
@@ -981,7 +981,7 @@ A: It requires understanding patient pain points, treatment-seeking behavior, an
 ---
 
 ## Auto Repair Marketing
-URL: https://growsmallbiz.io/industries/auto-repair
+URL: https://growsmallbiz.io/industries/auto-repair/
 
 Drive more customers to your auto repair shop with AI-powered digital marketing. Capture emergency repair calls, build reviews, and dominate local search.
 
@@ -1029,7 +1029,7 @@ A: We target emergency keywords, optimize for mobile, and ensure click-to-call a
 ---
 
 ## Photographer Marketing
-URL: https://growsmallbiz.io/industries/photographers
+URL: https://growsmallbiz.io/industries/photographers/
 
 Attract more clients and book more sessions with AI-powered digital marketing designed for photographers. From weddings to portraits, we fill your calendar.
 
@@ -1069,7 +1069,7 @@ We power your studio's booking and client communication with AI receptionist, au
 ---
 
 ## Realtor Marketing
-URL: https://growsmallbiz.io/industries/realtors
+URL: https://growsmallbiz.io/industries/realtors/
 
 Generate more leads, build your brand, and close more deals with AI-powered digital marketing designed for real estate professionals.
 
@@ -1104,5 +1104,5 @@ IDXAddons is our all-in-one platform for IDX Broker users with 75+ tools to enha
 
 # CONTACT INFORMATION
 - Website: https://growsmallbiz.io
-- Free Assessment: https://growsmallbiz.io/free-assessment
-- Contact: https://growsmallbiz.io/contact
+- Free Assessment: https://growsmallbiz.io/free-assessment/
+- Contact: https://growsmallbiz.io/contact/

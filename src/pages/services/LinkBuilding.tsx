@@ -156,7 +156,7 @@ const LinkBuilding = () => {
       <Head>
         <title>Link Building for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz earns high-quality backlinks for local service businesses through press releases, guest placements, digital PR, strategic partnerships, and linkable asset creation." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/link-building" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/link-building/" />
       </Head>
 
       <ServiceJsonLd

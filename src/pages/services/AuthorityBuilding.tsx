@@ -164,7 +164,7 @@ const AuthorityBuilding = () => {
       <Head>
         <title>Authority Building for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz builds search authority for local service businesses through DKN planning, topical maps, authority blogs, press releases, brand mentions, and digital trust signals." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/authority-building" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/authority-building/" />
       </Head>
 
       <ServiceJsonLd

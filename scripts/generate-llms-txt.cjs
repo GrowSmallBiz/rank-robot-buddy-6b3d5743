@@ -70,18 +70,19 @@ Canonical: ${BASE_URL}/
 `;
 
 for (const route of primaryPages.sort()) {
-  output += `- ${routeToName(route)}: ${BASE_URL}${route}\n`;
+  const url = route === '/' ? `${BASE_URL}/` : `${BASE_URL}${route}/`;
+  output += `- ${routeToName(route)}: ${url}\n`;
 }
 
 output += `\n## Services\n`;
 for (const route of servicePages.sort()) {
-  output += `- ${routeToName(route)}: ${BASE_URL}${route}\n`;
+  output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
 }
 
 if (legalPages.length) {
   output += `\n## Legal\n`;
   for (const route of legalPages.sort()) {
-    output += `- ${routeToName(route)}: ${BASE_URL}${route}\n`;
+    output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
   }
 }
 

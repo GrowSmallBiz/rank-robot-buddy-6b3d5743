@@ -145,7 +145,7 @@ const GEO = () => {
       <Head>
         <title>GEO — Generative Engine Optimization for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps local service businesses become visible in AI-powered search. GEO makes your business easier for AI systems to find, understand, and recommend." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/geo" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/geo/" />
       </Head>
 
       <ServiceJsonLd

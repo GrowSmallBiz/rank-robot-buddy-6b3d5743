@@ -248,7 +248,7 @@ const Services = () => {
       <Head>
         <title>Our Services | AI Marketing Solutions | GrowSmallBiz</title>
         <meta name="description" content="One connected system — websites, Managed AI SEO, paid ads, CRM automation, and growth campaigns — built to help local service businesses capture more leads and convert more opportunities." />
-        <link rel="canonical" href="https://growsmallbiz.io/services" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"

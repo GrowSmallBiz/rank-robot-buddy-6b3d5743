@@ -10,20 +10,20 @@ Canonical: https://growsmallbiz.io/
 
 ## Primary Pages
 - Home: https://growsmallbiz.io/
-- About: https://growsmallbiz.io/about
-- Contact: https://growsmallbiz.io/contact
+- About: https://growsmallbiz.io/about/
+- Contact: https://growsmallbiz.io/contact/
 
 ## Services
-- Services: https://growsmallbiz.io/services
-- Managed AI SEO: https://growsmallbiz.io/services/managed-ai-seo
-- AEO: https://growsmallbiz.io/services/managed-ai-seo/aeo
-- Authority Building: https://growsmallbiz.io/services/managed-ai-seo/authority-building
-- GEO: https://growsmallbiz.io/services/managed-ai-seo/geo
-- Link Building: https://growsmallbiz.io/services/managed-ai-seo/link-building
-- Local SEO: https://growsmallbiz.io/services/managed-ai-seo/local-seo
-- Paid Ads: https://growsmallbiz.io/services/paid-ads
-- Website Design: https://growsmallbiz.io/services/website-design
+- Services: https://growsmallbiz.io/services/
+- Managed AI SEO: https://growsmallbiz.io/services/managed-ai-seo/
+- AEO: https://growsmallbiz.io/services/managed-ai-seo/aeo/
+- Authority Building: https://growsmallbiz.io/services/managed-ai-seo/authority-building/
+- GEO: https://growsmallbiz.io/services/managed-ai-seo/geo/
+- Link Building: https://growsmallbiz.io/services/managed-ai-seo/link-building/
+- Local SEO: https://growsmallbiz.io/services/managed-ai-seo/local-seo/
+- Paid Ads: https://growsmallbiz.io/services/paid-ads/
+- Website Design: https://growsmallbiz.io/services/website-design/
 
 ## Legal
-- Privacy Policy: https://growsmallbiz.io/privacy-policy
-- Terms Of Service: https://growsmallbiz.io/terms-of-service
+- Privacy Policy: https://growsmallbiz.io/privacy-policy/
+- Terms Of Service: https://growsmallbiz.io/terms-of-service/
