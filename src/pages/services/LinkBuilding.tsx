@@ -210,7 +210,7 @@ const LinkBuilding = () => {
             external: true,
           }}
           backgroundImage={linkBuildingHeroBg}
-          overlayOpacity={12}
+          overlayOpacity={90}
         />
 
         {/* SECTION 2 — WHY LINK BUILDING STILL MATTERS */}
