@@ -249,6 +249,13 @@ export const Header = () => {
                 >
                   Authority Building
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/link-building"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
+                >
+                  Link Building
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
