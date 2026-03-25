@@ -11,34 +11,19 @@ Canonical: https://growsmallbiz.io/
 ## Primary Pages
 - Home: https://growsmallbiz.io/
 - About: https://growsmallbiz.io/about
-- Blog: https://growsmallbiz.io/blog
 - Contact: https://growsmallbiz.io/contact
-- Free Assessment: https://growsmallbiz.io/free-assessment
 
 ## Services
-- Technical SEO: https://growsmallbiz.io/services/technical-seo
-- On-Page SEO: https://growsmallbiz.io/services/on-page-seo
-- AEO: https://growsmallbiz.io/services/aeo
-- GEO: https://growsmallbiz.io/services/geo
-- Local SEO: https://growsmallbiz.io/services/local-seo
-- Link Building: https://growsmallbiz.io/services/link-building
-- Paid Media: https://growsmallbiz.io/services/paid-media
-- Social Media: https://growsmallbiz.io/services/social-media
+- Services: https://growsmallbiz.io/services
+- Managed AI SEO: https://growsmallbiz.io/services/managed-ai-seo
+- AEO: https://growsmallbiz.io/services/managed-ai-seo/aeo
+- Authority Building: https://growsmallbiz.io/services/managed-ai-seo/authority-building
+- GEO: https://growsmallbiz.io/services/managed-ai-seo/geo
+- Link Building: https://growsmallbiz.io/services/managed-ai-seo/link-building
+- Local SEO: https://growsmallbiz.io/services/managed-ai-seo/local-seo
+- Paid Ads: https://growsmallbiz.io/services/paid-ads
 - Website Design: https://growsmallbiz.io/services/website-design
-- AI SEO Hub: https://growsmallbiz.io/services/ai-seo-hub
-- Managed SEO Pricing: https://growsmallbiz.io/services/managed-seo-pricing
-- Reputation Management: https://growsmallbiz.io/services/reputation-management
-- AI Receptionist: https://growsmallbiz.io/services/ai-receptionist
-- CRM: https://growsmallbiz.io/services/crm
-- LinkedIn Outreach: https://growsmallbiz.io/services/linkedin-outreach
-- Quad Bots: https://growsmallbiz.io/services/quad-bots
 
-## Industries
-- HVAC: https://growsmallbiz.io/industries/hvac
-- Home Services: https://growsmallbiz.io/industries/home-services
-- Dental: https://growsmallbiz.io/industries/dental
-- Med Spa: https://growsmallbiz.io/industries/med-spa
-- Chiropractor: https://growsmallbiz.io/industries/chiropractor
-- Auto Repair: https://growsmallbiz.io/industries/auto-repair
-- Photographers: https://growsmallbiz.io/industries/photographers
-- Realtors: https://growsmallbiz.io/industries/realtors
+## Legal
+- Privacy Policy: https://growsmallbiz.io/privacy-policy
+- Terms Of Service: https://growsmallbiz.io/terms-of-service
