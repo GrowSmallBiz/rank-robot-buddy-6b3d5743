@@ -575,7 +575,6 @@ const LocalSEO = () => {
             <p className="text-sm text-muted-foreground mt-4 max-w-2xl mx-auto text-center">
               and we'll show you where your local visibility is strong, where opportunity is being lost, and what should be fixed first.
             </p>
-            </div>
 
             <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
