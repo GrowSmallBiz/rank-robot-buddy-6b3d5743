@@ -176,7 +176,7 @@ const AEO = () => {
       <Head>
         <title>AEO — Answer Engine Optimization for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps local service businesses become the answer in search. AEO structures your content for featured snippets, People Also Ask, and AI-assisted search visibility." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/aeo" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/aeo/" />
       </Head>
 
       <ServiceJsonLd
