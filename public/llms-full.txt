@@ -1,6 +1,6 @@
 # GrowSmallBiz Digital Marketing — Full Site Content for LLMs
 
-Last updated: 2026-03-04
+Last updated: 2026-03-25
 Canonical website: https://growsmallbiz.io/
 
 NOTE: This site is a React single-page application. AI tools that cannot execute JavaScript should use this file to understand all page content. Each section below corresponds to a route on the website.
