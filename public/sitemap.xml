@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://growsmallbiz.io/</loc><priority>1.0</priority></url>
-  <url><loc>https://growsmallbiz.io/llms.txt</loc><priority>0.6</priority></url>
-  <url><loc>https://growsmallbiz.io/llms-full.txt</loc><priority>0.6</priority></url>
+  <url><loc>https://growsmallbiz.io/about</loc><priority>0.8</priority></url>
   <url><loc>https://growsmallbiz.io/services</loc><priority>0.9</priority></url>
   <url><loc>https://growsmallbiz.io/services/paid-ads</loc><priority>0.8</priority></url>
   <url><loc>https://growsmallbiz.io/services/website-design</loc><priority>0.8</priority></url>
   <url><loc>https://growsmallbiz.io/services/managed-ai-seo</loc><priority>0.8</priority></url>
   <url><loc>https://growsmallbiz.io/services/managed-ai-seo/aeo</loc><priority>0.7</priority></url>
+  <url><loc>https://growsmallbiz.io/services/managed-ai-seo/geo</loc><priority>0.7</priority></url>
+  <url><loc>https://growsmallbiz.io/services/managed-ai-seo/local-seo</loc><priority>0.7</priority></url>
+  <url><loc>https://growsmallbiz.io/services/managed-ai-seo/authority-building</loc><priority>0.7</priority></url>
+  <url><loc>https://growsmallbiz.io/services/managed-ai-seo/link-building</loc><priority>0.7</priority></url>
   <url><loc>https://growsmallbiz.io/contact</loc><priority>0.8</priority></url>
   <url><loc>https://growsmallbiz.io/privacy-policy</loc><priority>0.4</priority></url>
   <url><loc>https://growsmallbiz.io/terms-of-service</loc><priority>0.4</priority></url>
+  <url><loc>https://growsmallbiz.io/llms.txt</loc><priority>0.6</priority></url>
+  <url><loc>https://growsmallbiz.io/llms-full.txt</loc><priority>0.6</priority></url>
 </urlset>
