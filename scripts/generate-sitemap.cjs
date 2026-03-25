@@ -23,8 +23,8 @@ while ((match = pathRegex.exec(appFile)) !== null) {
   }
 }
 
-// Deduplicate and add home
-const uniqueRoutes = ['/', ...new Set(routes)];
+// Deduplicate and ensure home is included
+const uniqueRoutes = [...new Set(['/', ...routes])];
 
 // Priority rules
 function getPriority(route) {
