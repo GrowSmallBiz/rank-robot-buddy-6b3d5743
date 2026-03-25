@@ -10,7 +10,6 @@ Canonical: https://growsmallbiz.io/
 
 ## Primary Pages
 - Home: https://growsmallbiz.io/
-- Home: https://growsmallbiz.io/
 - About: https://growsmallbiz.io/about
 - Contact: https://growsmallbiz.io/contact
 
