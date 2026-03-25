@@ -208,14 +208,17 @@ const LocalSEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MapPin, text: "Local SEO for Local Service Businesses" }}
-          title={<>Local SEO That Makes Your Local Service Business the First Call
-            <h2 className="flex flex-wrap justify-center gap-x-6 gap-y-3 mt-4 text-2xl md:text-3xl font-display font-bold">
-              <span className="flex items-center gap-2 text-transparent bg-clip-text bg-gradient-primary"><CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" /> Get Found</span>
-              <span className="flex items-center gap-2 text-transparent bg-clip-text bg-gradient-primary"><CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" /> Get Trusted</span>
-              <span className="flex items-center gap-2 text-transparent bg-clip-text bg-gradient-primary"><CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" /> Get Chosen</span>
-            </h2>
+          title={<>Local SEO That Makes Your Local Service Business the{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-primary">First Call</span>
           </>}
           subtitle="Show up where local buying decisions happen — and turn more visibility into calls, inquiries, and booked jobs."
+          preCtaContent={
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mt-2 mb-2">
+              <span className="flex items-center gap-2 text-lg md:text-xl font-semibold text-foreground/90"><CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" /> Get Found</span>
+              <span className="flex items-center gap-2 text-lg md:text-xl font-semibold text-foreground/90"><CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" /> Get Trusted</span>
+              <span className="flex items-center gap-2 text-lg md:text-xl font-semibold text-foreground/90"><CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" /> Get Chosen</span>
+            </div>
+          }
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
