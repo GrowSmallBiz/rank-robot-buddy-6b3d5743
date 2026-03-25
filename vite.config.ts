@@ -18,19 +18,6 @@ export default defineConfig(({ mode }) => ({
   ssgOptions: {
     dirStyle: "nested",
     script: "async",
-    includedRoutes: (paths: string[]) => [
-      "/",
-      "/about",
-      "/services",
-      "/contact",
-      "/blog",
-      "/privacy-policy",
-      "/terms-of-service",
-      "/services/paid-ads",
-      "/services/website-design",
-      "/services/managed-ai-seo",
-      "/services/managed-ai-seo/aeo",
-      "/services/managed-ai-seo/geo",
-    ],
+    includedRoutes: (paths: string[]) => paths,
   },
 }));
