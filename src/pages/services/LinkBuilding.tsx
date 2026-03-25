@@ -67,7 +67,7 @@ const campaignItems = [
   {
     icon: BarChart3,
     title: "Link Monitoring and Reporting",
-    description: "Every link we earn is tracked. You receive clear, plain-language reporting that shows what was placed, where, and what it is worth.",
+    description: "Every link we earn is tracked. You receive clear, plain-language reporting that shows what was placed, where it appeared, and how it supports your broader SEO visibility.",
   },
   {
     icon: AlertTriangle,
@@ -101,40 +101,45 @@ const whatWeAvoid = [
 
 const whyGSBItems = [
   {
-    icon: Eye,
-    title: "We only build links we would be comfortable putting our own name on.",
-    description: "Every site we target is reviewed by a human before outreach begins. If we would not want a link from a site pointing to our own domain, we will not pursue it for yours.",
-  },
-  {
-    icon: BarChart3,
-    title: "You always know exactly what is happening.",
-    description: "No black boxes. No vague \"we're working on it\" updates. You receive clear, plain-language reporting each month that shows every link placed, the domain it came from, and its authority metrics.",
+    icon: Layers,
+    num: "1",
+    title: "Link building supports a bigger SEO system.",
+    description: "We connect authority building to your content, on-page SEO, local visibility, and conversion goals so the work supports a broader growth strategy.",
   },
   {
     icon: Building2,
-    title: "We are built for small and local businesses, not enterprise clients.",
-    description: "Our pricing, campaign structures, and reporting are designed for businesses with real-world budgets and goals — not Fortune 500 companies with seven-figure marketing departments.",
-  },
-  {
-    icon: Layers,
-    title: "Our campaigns are coordinated, not siloed.",
-    description: "Link building does not happen in isolation at GrowSmallBiz. It is integrated with your broader SEO strategy — your content, your on-page optimization, and your local presence — so every piece reinforces the others.",
+    num: "2",
+    title: "Built for local service businesses.",
+    description: "Our campaigns are designed around real local competition, real service-market search behavior, and real-world business goals — not enterprise assumptions.",
   },
   {
     icon: Bot,
-    title: "Agentic AI makes us faster and more precise without cutting corners.",
-    description: "We use AI to surface better prospects, improve outreach quality, and monitor your link profile health — so you get more value from every dollar, without sacrificing the editorial standards that make links worth having.",
+    num: "3",
+    title: "Agentic AI playbooks + human strategy.",
+    description: "We use AI where it improves speed, pattern recognition, and monitoring, while keeping strategic judgment and quality control in human hands.",
+  },
+  {
+    icon: BarChart3,
+    num: "4",
+    title: "Transparent reporting with context.",
+    description: "You see what was earned, why it matters, and how it fits the bigger picture. No black-box campaigns. No vague updates.",
+  },
+  {
+    icon: TrendingUp,
+    num: "5",
+    title: "Focused on business impact.",
+    description: "The goal is not just more links. The goal is stronger authority that improves visibility, supports your revenue-producing pages, and contributes to long-term growth.",
   },
 ];
 
 const faqs = [
   {
     question: "How long does it take to see results from link building?",
-    answer: "Link Building timelines depend on your starting authority, competition, industry, and the quality of opportunities available in your market. Many businesses begin seeing early authority gains within the first few months, with stronger impact building over time as relevant placements, mentions, and off-site trust signals accumulate.",
+    answer: "Link building timelines depend on your starting authority, competition, industry, and the quality of opportunities available in your market. Many businesses begin seeing early authority gains within the first few months, with stronger impact building over time as relevant placements, mentions, and off-site trust signals accumulate.",
   },
   {
     question: "How many links will I get per month?",
-    answer: "Volume depends on your service plan and campaign scope. More important than raw numbers is the quality and relevance of each placement. One link from a high-authority, niche-relevant site is worth more than twenty links from low-quality directories. We focus on earning the links that move rankings, not padding reports with links that do not.",
+    answer: "Volume depends on your service plan and campaign scope. More important than raw numbers is the quality and relevance of each placement. One link from a high-authority, niche-relevant site is worth more than many low-quality links that do little to support visibility. We focus on earning the links that move performance, not padding reports with links that do not.",
   },
   {
     question: "Will I be able to see the links you build for me?",
@@ -146,19 +151,23 @@ const faqs = [
   },
   {
     question: "What is the difference between Link Building and Authority Building?",
-    answer: "Link Building focuses specifically on acquiring individual backlinks from external websites. Authority Building is a broader strategy that includes link building but also encompasses your overall domain strength, brand mentions, digital PR, content depth, and internal linking structure. Our Managed AI SEO plans include both. If you are asking specifically about which plan covers which, your account manager can walk you through the breakdown during your strategy session.",
+    answer: "Link building is one part of authority building. It focuses on earning relevant backlinks from external websites. Authority building is broader — it also includes the strength of your service pages, content depth, brand signals, local relevance, mentions, internal linking, and the overall trust your website earns over time. GrowSmallBiz treats link building as one component inside a broader Managed AI SEO strategy, not as a disconnected activity.",
   },
   {
     question: "Is link building safe? Can it hurt my rankings?",
-    answer: "High-quality, editorial link building is safe and is exactly what Google's own guidelines encourage. The tactics that hurt rankings — paid link schemes, private blog networks, automated link blasts — are what you need to avoid. We never use those methods. Every link we build is designed to pass a Google audit.",
+    answer: "High-quality, editorial link building is safe when it is done with strong quality standards, relevance, and long-term search health in mind. The tactics that cause problems are the ones we avoid — paid schemes, private blog networks, automated spam, and manipulative anchor abuse. Our process is designed to support sustainable authority growth, not short-term shortcuts.",
   },
   {
     question: "What kinds of sites will you get links from?",
-    answer: "We target sites that are topically relevant to your industry, have real organic traffic, and have domain authority metrics that indicate genuine credibility. This includes industry publications, local and regional outlets, relevant blogs, business associations, and resource pages. We do not use link farms, private blog networks, or sites that exist solely to sell links.",
+    answer: "We target sites that are topically relevant to your industry, have real organic traffic, and show signals of genuine credibility. This may include industry publications, local and regional outlets, relevant blogs, business associations, and resource pages. We do not use link farms, private blog networks, or sites that exist solely to sell links.",
   },
   {
     question: "Can you build links if my site is brand new?",
-    answer: "Yes, though we will be transparent that newer domains take longer to see authority gains. A fresh domain benefits from link building from day one — it establishes trust signals early and accelerates the timeline to competitive rankings. We adjust campaign pacing and targeting for newer sites to build a natural, credible profile from the start.",
+    answer: "Yes, though we will be transparent that newer domains often take longer to see authority gains. A fresh domain can still benefit from link building early because it helps establish trust signals and supports a more credible long-term growth path. We adjust campaign pacing and targeting to build a natural profile from the start.",
+  },
+  {
+    question: "Is link building enough on its own to improve rankings?",
+    answer: "Usually not by itself. Link building works best when it supports a broader SEO foundation — strong service pages, local intent targeting, technical health, trust signals, and clear conversion paths. That is why GrowSmallBiz treats link building as one part of a larger Managed AI SEO strategy.",
   },
 ];
 
@@ -195,8 +204,7 @@ const LinkBuilding = () => {
           badge={{ icon: LinkIcon, text: "Link Building for Local Service Businesses" }}
           title={<>Build the Backlink Profile Your Competitors{" "}<br className="hidden md:inline" />Wish They </>}
           titleHighlight="Had"
-          subtitle="Your website can be perfectly optimized on every page — but if it lacks off-site credibility, it will keep losing ground to competitors that search engines simply trust more.<br /><br />High-authority backlinks are still one of the strongest signals Google uses to rank pages. GrowSmallBiz's managed link-building service earns you real, editorially placed links from relevant sites — so you rank higher, attract more qualified traffic, and grow your local authority without lifting a finger."
-          description="At GrowSmallBiz, link building isn't a checkbox. It's a managed, strategic component of our Managed AI SEO system — built specifically for local service businesses that need to compete and win in their markets."
+          subtitle="Build the Backlink Profile That Helps Local Service Businesses Rank, Get Discovered, and Earn Trust<br /><br />Link building is one part of a stronger SEO system. GrowSmallBiz helps local service businesses earn relevant, editorially placed links that strengthen local authority, support visibility across search ecosystems, and reinforce the pages that drive leads, calls, and booked jobs."
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
@@ -220,21 +228,18 @@ const LinkBuilding = () => {
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE FUNDAMENTALS</p>
                 <h2 className="section-title">
-                  Backlinks Remain One of Google's Strongest{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Ranking Signals</span>
+                  Why Link Building Still Matters Inside a{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Holistic SEO Strategy</span>
                 </h2>
               </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  Despite every algorithm update, the research is consistent: pages with strong backlink profiles outrank pages without them. A link from a credible, relevant site tells Google your content is trustworthy and worth surfacing to searchers.
-                </p>
-                <p>
-                  For small and local businesses, that signal is even more valuable. You are not competing with national brands on ad spend. You are competing on authority — and backlinks are how you build it.
+                  Links still matter because authority still matters. But for local service businesses, links work best when they reinforce a broader SEO system — strong service pages, local intent targeting, topical authority, trust signals, and conversion-ready site structure. The goal is not just to get links. The goal is to strengthen the credibility behind the pages that help your business rank, get discovered, and grow.
                 </p>
 
                 <p className="text-xl md:text-2xl font-display font-bold text-foreground text-center pt-4">
-                  Three reasons link building still moves the needle:
+                  Three reasons link building still matters:
                 </p>
               </div>
 
@@ -243,20 +248,20 @@ const LinkBuilding = () => {
                   {
                     icon: TrendingUp,
                     num: "01",
-                    title: "Authority transfers directly.",
-                    desc: "When a respected site links to yours, a portion of that site's authority flows to your page. Google uses this signal to determine how much trust to place in your content relative to competing pages.",
+                    title: "Authority strengthens visibility.",
+                    desc: "Relevant backlinks remain one of the clearest external trust signals search systems can evaluate. When credible, relevant websites reference your business, they strengthen the authority behind your domain and the pages you want surfaced.",
                   },
                   {
                     icon: Search,
                     num: "02",
-                    title: "Rankings follow authority.",
-                    desc: "Higher authority pages rank higher, more consistently, for more queries — including the local and service-based searches your customers are running right now.",
+                    title: "Strong authority helps good pages perform better.",
+                    desc: "Links work best when they support well-optimized service pages, location pages, and supporting content. They do not replace good SEO foundations, but they can make strong pages more competitive and more durable.",
                   },
                   {
                     icon: Sparkles,
                     num: "03",
-                    title: "Authority compounds over time.",
-                    desc: "Unlike paid traffic that stops the moment you stop paying, a strong backlink profile keeps working. Every high-quality link you earn today continues to support your rankings for months and years ahead.",
+                    title: "The value compounds over time.",
+                    desc: "Unlike paid traffic that disappears the moment spend stops, authority can continue supporting search visibility long after the placement is earned. The right links keep contributing to your broader SEO performance over time.",
                   },
                 ].map((step, i) => (
                   <div key={i}>
@@ -282,11 +287,15 @@ const LinkBuilding = () => {
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">COMPLETE CAMPAIGN</p>
               <h2 className="section-title">
-                Everything You Need for a Complete{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Link-Building Campaign</span>
+                What GrowSmallBiz Includes in Your{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Link Building Campaign</span>
               </h2>
-              <p className="section-description mt-4">Link building is not a single tactic. It is a coordinated set of activities that, when executed together, build the kind of backlink profile that sustains long-term rankings. Our managed service covers all of it.</p>
+              <p className="section-description mt-4">Link building is not treated here as a disconnected tactic. It supports the broader Managed AI SEO strategy by strengthening the authority behind your service pages, location pages, and supporting content. Our campaign includes the research, outreach, content support, profile monitoring, and ongoing optimization needed to make link acquisition contribute to broader visibility and business growth.</p>
             </div>
+
+            <p className="text-center text-lg font-display font-semibold text-foreground mb-10 animate-fade-up">
+              What is included in your campaign:
+            </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {campaignItems.map((item, index) => (
@@ -303,6 +312,10 @@ const LinkBuilding = () => {
                 </GlowCard>
               ))}
             </div>
+
+            <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
+              Note: Specific deliverable volumes and campaign scope are defined in your service plan. Contact us to discuss what is right for your business.
+            </p>
           </div>
         </section>
 
@@ -370,14 +383,17 @@ const LinkBuilding = () => {
                 <p className="section-subtitle">OUR APPROACH</p>
                 <h2 className="section-title">
                   How GrowSmallBiz Uses{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI</span>
-                  {" "}to Strengthen Link Building
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI Playbooks</span>
+                  {" "}+ Human Strategy
                 </h2>
               </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  AI does not replace the human judgment and relationship-building that great link acquisition requires. What it does is make every part of the process sharper, faster, and more consistently executed. Here is how agentic AI works inside our campaigns.
+                  We use agentic AI to improve research, prioritization, monitoring, and reporting — while human strategy stays in control of quality thresholds, outreach judgment, brand alignment, and business relevance.
+                </p>
+                <p>
+                  That means faster research, smarter decisions, cleaner execution, and reporting that helps you understand not just what was done, but why it matters.
                 </p>
               </div>
 
@@ -385,23 +401,23 @@ const LinkBuilding = () => {
                 {[
                   {
                     icon: Search,
-                    title: "Smarter prospect identification.",
-                    desc: "Our AI analyzes thousands of potential linking domains against your niche, your competitors' backlink profiles, and current authority metrics — surfacing the highest-value targets faster than any manual process. You get a vetted, prioritized prospect list from day one.",
+                    title: "Faster prospect discovery, better prioritization.",
+                    desc: "Our agentic AI playbooks help analyze large sets of potential linking domains against your niche, competitors, and authority indicators so we can identify stronger opportunities faster.",
                   },
                   {
                     icon: Users,
-                    title: "Outreach that sounds like a person, because it is.",
-                    desc: "AI helps our team draft personalized outreach at scale — but every message is reviewed, refined, and sent by a human. The result is outreach that reads naturally, references the target site specifically, and earns higher reply rates.",
+                    title: "Human-reviewed outreach, not AI spam.",
+                    desc: "AI can support drafting and pattern recognition, but every outreach message is reviewed, refined, and guided by a human. That keeps the communication more relevant, more natural, and more aligned with your brand.",
                   },
                   {
                     icon: Shield,
-                    title: "Anchor text and profile health monitoring.",
-                    desc: "Our AI continuously monitors your growing link profile for anchor text distribution, link velocity, and domain diversity — flagging anything that could signal an unnatural pattern before it becomes a problem.",
+                    title: "Profile monitoring that protects long-term growth.",
+                    desc: "We use AI-assisted monitoring to track anchor text distribution, link velocity, and domain diversity so unnatural patterns can be flagged early and long-term authority growth stays healthier.",
                   },
                   {
                     icon: BarChart3,
-                    title: "Reporting that is actually readable.",
-                    desc: "Instead of raw data exports, our AI synthesizes your campaign results into plain-language summaries that tell you what was earned, what it means for your rankings, and what is coming next.",
+                    title: "Reporting tied to strategy, visibility, and business impact.",
+                    desc: "Instead of overwhelming you with raw exports, we use AI-supported analysis to turn campaign activity into reporting that is clearer, more strategic, and easier to act on.",
                   },
                 ].map((item, i) => (
                   <div key={i}>
@@ -425,33 +441,33 @@ const LinkBuilding = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
-                <p className="section-subtitle">THE STAKES</p>
+                <p className="section-subtitle">LOCAL IMPACT</p>
                 <h2 className="section-title">
-                  Local Rankings Are Won on Authority — and Authority Comes from{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Links</span>
+                  Why Local Service Businesses Benefit From{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Link Building</span>
                 </h2>
               </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  If you run a local service business — HVAC, landscaping, law, dental, home services, or anything in between — your customers are searching with phrases like "best [service] near me" or "[service] in [city]." The businesses that appear at the top of those results did not get there by accident.
+                  Local service businesses rarely need more SEO activity for the sake of activity. They need stronger visibility where real buyers search, stronger trust behind their service pages, and a better chance of outranking competitors who stop at the basics.
                 </p>
                 <p>
-                  Local rankings depend on three interconnected factors: your Google Business Profile, your on-page optimization, and your off-page authority. Most businesses invest in the first two and ignore the third. That is a significant missed opportunity.
+                  That is where link building helps. As part of a broader SEO system, it can strengthen the authority behind your service pages and location pages, reinforce local relevance, support long-term ranking stability, and make the rest of your SEO work harder.
                 </p>
 
                 <p className="text-xl md:text-2xl font-display font-bold text-foreground text-center pt-4">
-                  Why local businesses see outsized returns from link building:
+                  For local service businesses, the upside is practical:
                 </p>
               </div>
 
               <div className="mt-10 max-w-3xl mx-auto">
                 <ul className="space-y-4 animate-fade-up" style={{ animationDelay: "0.1s" }}>
                   {[
-                    { bold: "Your competitors are underinvesting.", text: "Most local businesses do not run active link-building campaigns. A modest but consistent effort puts you ahead of the majority of your market." },
-                    { bold: "Local relevance amplifies authority.", text: "A link from a local business association, regional publication, or city-based directory carries extra weight for local search because it signals geographic relevance to Google." },
-                    { bold: "It protects your rankings long term.", text: "Algorithm updates frequently shuffle businesses that rank on content alone. A strong backlink profile provides a buffer that keeps you stable when others drop." },
-                    { bold: "It supports every other part of your SEO.", text: "Better domain authority means your new pages rank faster, your existing content holds position longer, and your local map pack visibility improves." },
+                    { bold: "Stronger authority in competitive local markets.", text: "Many local businesses invest in basic on-page SEO and Google Business Profile work, but far fewer invest consistently in authority building. That creates opportunity for businesses that do." },
+                    { bold: "More support for service pages and city pages.", text: "Relevant backlinks can strengthen the credibility behind the pages that target your core services and locations, helping those pages compete more effectively." },
+                    { bold: "Better long-term visibility durability.", text: "Businesses that rely only on thin content or surface-level optimization are often more vulnerable to fluctuations. Stronger authority creates a more durable foundation." },
+                    { bold: "Stronger support for broader SEO performance.", text: "Link building helps more than one page. When done well, it supports your wider content ecosystem, strengthens overall trust, and reinforces the broader visibility strategy." },
                   ].map((point, i) => (
                     <li key={i} className="flex items-start gap-3 rounded-2xl p-6 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
@@ -471,36 +487,36 @@ const LinkBuilding = () => {
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="OUR DIFFERENCE"
-              title="Why Small and Local Businesses Choose GrowSmallBiz for"
-              titleHighlight="Link Building"
+              title="Why Local Service Businesses Choose GrowSmallBiz"
             />
             <p className="text-center text-muted-foreground max-w-3xl mx-auto -mt-10 mb-12 animate-fade-up">
-              There is no shortage of agencies promising to build your backlinks. Most of them either sell you volume without quality, lock you into black-box campaigns you cannot see, or charge enterprise prices for work that should cost a fraction of that. GrowSmallBiz was built to be different.
+              We are not trying to be a bulk link vendor. We are building authority as part of a broader Managed AI SEO strategy designed to help local service businesses rank, get discovered, and convert more of the right traffic.
             </p>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <p className="text-center text-lg font-display font-semibold text-foreground mb-10 animate-fade-up">
+              What makes our approach different:
+            </p>
+
+            <div className="space-y-0 max-w-3xl mx-auto">
               {whyGSBItems.map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-start gap-4 bg-background border border-border rounded-xl p-5 animate-fade-up"
-                  style={{ animationDelay: `${i * 0.05}s` }}
-                >
-                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <item.icon className="w-4 h-4 text-primary" />
+                <div key={i}>
+                  <div
+                    className="animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50"
+                    style={{ animationDelay: `${i * 0.08}s` }}
+                  >
+                    <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4 flex items-start gap-3">
+                      <span className="text-primary font-mono text-lg mt-0.5">{item.num}.</span>
+                      <item.icon className="w-6 h-6 text-primary mt-1 shrink-0" />
+                      {item.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed pl-16">{item.description}</p>
                   </div>
-                  <div>
-                    <p className="text-sm font-semibold text-foreground mb-1">{item.title}</p>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
-                  </div>
+                  {i < whyGSBItems.length - 1 && <div className="border-b border-primary/10 mx-8" />}
                 </div>
               ))}
             </div>
 
-            <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
-            </p>
-
-            <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
+            <div className="text-center mt-12 animate-fade-up" style={{ animationDelay: "0.45s" }}>
               <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
               </Link>
