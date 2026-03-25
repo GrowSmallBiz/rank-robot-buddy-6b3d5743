@@ -22,7 +22,7 @@ export const PageJsonLd = ({
     "@type": pageType,
     name,
     description,
-    url: `${BASE_URL}${url}`,
+    url: `${BASE_URL}${url}${url.endsWith('/') ? '' : '/'}`,
     publisher: {
       "@type": "Organization",
       name: "GrowSmallBiz Digital Marketing",
