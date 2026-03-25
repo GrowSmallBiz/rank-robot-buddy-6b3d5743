@@ -80,34 +80,34 @@ const authorityServices = [
 
 const whyGSBItems = [
   {
-    icon: Target,
-    title: "Built for Local Service Businesses",
-    description: "Authority strategies designed specifically for local markets, service categories, and how local consumers and AI systems evaluate trust.",
-  },
-  {
     icon: Layers,
-    title: "Broader Than Link Building",
-    description: "We address every dimension of search authority — topical depth, entity clarity, brand presence, and trust signals — not just backlinks.",
+    title: "We build systems, not disconnected campaigns.",
+    description: "Many authority services are sold as batches of links, press releases, or content. GrowSmallBiz builds a structured authority system designed to strengthen rankings, trust, and long-term visibility over time.",
   },
   {
     icon: FileText,
-    title: "Planning Before Execution",
-    description: "Every strategy starts with DKN-driven planning and topical mapping before any content or off-site work begins.",
+    title: "We start with planning, not random execution.",
+    description: "The most common failure in authority building is doing tactics without a strategic foundation. We build the planning layer first so content, mentions, press activity, and authority signals work together instead of creating scattered results.",
+  },
+  {
+    icon: Target,
+    title: "We understand local business economics.",
+    description: "GrowSmallBiz is built for local service businesses, not enterprise marketing departments. That affects how we prioritize, how we execute, and how we build strategies that support real business growth.",
   },
   {
     icon: Bot,
-    title: "Agentic AI Efficiency with Human Judgment",
-    description: "AI-powered workflows accelerate planning and gap analysis while human oversight ensures editorial quality and brand credibility.",
+    title: "We combine agentic AI efficiency with human judgment.",
+    description: "We use AI to accelerate research, mapping, prioritization, and scale. We use human judgment to protect quality, strategy, credibility, and business alignment.",
   },
   {
     icon: Users,
-    title: "Fully Managed, Done-for-You Execution",
-    description: "We manage the full authority-building process — from strategy through content creation, press distribution, and placement management.",
+    title: "We are managed and done-for-you.",
+    description: "You do not need to coordinate vendors, manage an SEO content machine, or learn authority strategy yourself. GrowSmallBiz manages the process for you as part of the broader Managed AI SEO system.",
   },
   {
     icon: Shield,
-    title: "Part of a Broader Managed AI SEO System",
-    description: "Authority Building integrates with AEO, GEO, Local SEO, and technical SEO so every pillar reinforces the others.",
+    title: "We keep the work transparent.",
+    description: "You should always understand what is being done, why it matters, and how it supports the bigger search strategy.",
   },
 ];
 
@@ -187,7 +187,7 @@ const AuthorityBuilding = () => {
           badge={{ icon: Shield, text: "Authority Building for Local Service Businesses" }}
           title={<>Build the Authority That Turns Search Visibility Into{" "}<br className="hidden md:inline" /></>}
           titleHighlight="Market Trust"
-          subtitle="Most local service businesses do not have a keyword problem. They have an authority problem. Their competitors are not always better — they are simply seen as more established, more credible, and more trustworthy by search engines, AI systems, and prospective customers.<br/><br/>GrowSmallBiz helps local service businesses build that authority systematically through DKN-driven planning, topical maps, topical authority blogs, press releases, brand mentions, and broader digital trust signals — all managed for you as part of a long-term AI SEO system."
+          subtitle="Most local service businesses do not have a keyword problem. They have an authority problem. Their competitors are not always better — they are simply seen as more established, more credible, and more trustworthy by search engines, AI systems, and prospective customers.<br/><br/>As one strategic pillar of our Managed AI SEO system, Authority Building is the coordinated process of making your business the obvious, trusted expert in your local market — across search results, across the broader web, and in the perception of every prospective customer who encounters your brand.<br/><br/>This is not about buying links. It is not about gaming algorithms. It is about building something real: a deep, consistent, credible presence that signals expertise, earns trust, and compounds in value over time."
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
@@ -218,17 +218,30 @@ const AuthorityBuilding = () => {
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  Authority in SEO is no longer measured by backlinks alone. Modern search authority is built across multiple interconnected signals: topical depth, entity clarity, content breadth, brand presence, trust signals, and semantic relevance.
+                  Authority in SEO is no longer measured by backlinks alone. While links still matter, modern search authority is built through multiple interconnected signals — and that makes it far more achievable for local service businesses that approach it strategically.
+                </p>
+                <p className="text-foreground font-semibold">Search systems evaluate authority through:</p>
+                <div className="space-y-4">
+                  {[
+                    { label: "Topical depth", text: "Does your website demonstrate genuine expertise across the services, problems, and questions your audience cares about?" },
+                    { label: "Entity clarity", text: "Is it clear who you are, what you do, where you operate, and how your business connects to your market?" },
+                    { label: "Content breadth", text: "Do you cover your topic space with enough depth and range to be viewed as a reliable resource?" },
+                    { label: "Brand presence", text: "Do reputable sources across the web mention, reference, or connect with your business?" },
+                    { label: "Trust signals", text: "Are there consistent, credible references to your business across media, associations, press, and community platforms?" },
+                    { label: "Semantic relevance", text: "Does your overall digital presence send cohesive signals about your expertise, services, locations, and market relevance?" },
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                      <p><strong className="text-foreground">{item.label}</strong> — {item.text}</p>
+                    </div>
+                  ))}
+                </div>
+                <p>
+                  Authority building is not a single tactic. It is a coordinated system that strengthens how your business is understood, trusted, and surfaced across modern search environments. That coordinated system is what GrowSmallBiz builds as part of your broader Managed AI SEO strategy.
                 </p>
                 <p>
-                  For local service businesses, that means becoming the business that search engines, AI systems, and prospective customers all view as the established expert in the market — not because of one tactic, but because of a coordinated authority system.
+                  For a local roofing contractor, HVAC company, plumbing business, med spa, personal injury attorney, or real estate team, authority building is not a single tactic. It is a coordinated system that helps your business cover its topic space more deeply, reinforce brand credibility beyond your website, and build the trust signals that influence both visibility and conversion in competitive local markets.
                 </p>
-
-                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
-                  <p className="text-foreground leading-relaxed">
-                    <strong>GrowSmallBiz builds that system for you.</strong> We map the full territory of your category, create the content architecture, strengthen off-site signals, and manage every component so your authority compounds over time — not through random tactics, but through strategic, interconnected execution.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -248,36 +261,35 @@ const AuthorityBuilding = () => {
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  In competitive local markets, the businesses that win are not always the ones with the most optimized pages. They are the ones search engines and AI systems have learned to trust.
+                  Local service businesses operate in one of the most competitive search environments that exists. You are not just competing against nearby providers. You are also competing against directories, marketplaces, aggregators, and established brands that already have stronger trust signals across the web.
                 </p>
                 <p>
-                  Authority improves more than rankings. It improves how your brand is perceived before a prospect ever contacts you. It increases the chance that AI systems and search engines surface your business in the first place. And it helps visitors arrive with greater confidence because they have already seen signals of expertise, credibility, and consistency around your brand.
+                  In that environment, the businesses that win are not always the ones with the most optimized pages. They are the ones search systems have more reason to trust.
                 </p>
-              </div>
 
-              <div className="mt-12 grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                {[
-                  { icon: TrendingUp, title: "Higher Rankings", text: "Authority signals directly influence how search engines rank your pages against competitors." },
-                  { icon: Award, title: "Stronger Trust", text: "Prospects arrive with greater confidence when they see consistent expertise signals across the web." },
-                  { icon: Sparkles, title: "AI Visibility", text: "AI systems and answer engines favor sources with broad topic coverage and trusted references." },
-                  { icon: BarChart3, title: "Better Conversion", text: "Authority-driven traffic converts better because visitors already perceive your business as credible." },
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="rounded-2xl p-6 border-l-4 border-primary animate-fade-up"
-                    style={{ backgroundColor: 'hsl(210 40% 16%)', animationDelay: `${i * 0.05}s` }}
-                  >
-                    <div className="flex items-start gap-3">
-                      <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                        <item.icon className="w-4 h-4 text-primary" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-foreground mb-1">{item.title}</p>
-                        <p className="text-xs text-muted-foreground leading-relaxed">{item.text}</p>
-                      </div>
-                    </div>
+                <p className="text-foreground font-display font-bold text-xl mt-8">Rankings are only part of the story.</p>
+                <p>High authority improves every downstream metric that matters to your business.</p>
+
+                <div className="space-y-6 mt-4">
+                  <div className="rounded-2xl p-6 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                    <p className="text-foreground font-semibold mb-2">Conversion rates improve</p>
+                    <p>because prospective customers who encounter your brand through trusted sources, stronger content coverage, and credible third-party references often arrive with greater confidence before they ever contact you.</p>
                   </div>
-                ))}
+                  <div className="rounded-2xl p-6 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                    <p className="text-foreground font-semibold mb-2">AI visibility improves</p>
+                    <p>because AI-assisted discovery and answer-generation systems tend to favor businesses with broader, more consistent, and more credible authority signals — not just a single well-optimized page. The stronger your authority footprint, the easier it becomes for your business to be understood, cited, and surfaced across newer search experiences as well as traditional search.</p>
+                  </div>
+                  <div className="rounded-2xl p-6 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                    <p className="text-foreground font-semibold mb-2">Long-term stability improves</p>
+                    <p>because authority creates staying power. It is harder to displace a business with real topical depth, brand presence, and off-site trust than one relying on thin on-page optimization alone.</p>
+                  </div>
+                </div>
+
+                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary mt-4" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                  <p className="text-foreground font-semibold">The opportunity most local businesses are missing</p>
+                  <p>is that many still have only a shallow authority footprint: a website, a few citations, and some basic SEO. The deeper structure of topical coverage, brand reinforcement, and off-site trust is often missing. That is not just a weakness. It is a competitive opportunity for businesses willing to build authority systematically.</p>
+                  <p className="text-foreground font-medium">GrowSmallBiz exists to close that gap efficiently, intelligently, and sustainably.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -453,26 +465,30 @@ const AuthorityBuilding = () => {
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  Authority Building requires broad topic coverage, strategic planning, and steady execution across multiple signals at once. GrowSmallBiz uses agentic AI workflows plus strategic human oversight to identify topic gaps faster, build smarter topical maps, plan authority-supporting content more efficiently, surface entity and reputation gaps earlier, and accelerate authority-asset planning across the system.
+                  Building real authority at the scale required to move the needle in competitive local markets has historically been slow, fragmented, and resource-intensive. Many providers either charge rates that are difficult for local businesses to justify or cut corners in ways that produce shallow, inconsistent results.
                 </p>
                 <p>
-                  This lets us move faster and cover more ground than slow manual execution alone — while still applying human judgment where editorial quality, market understanding, and brand credibility matter most.
+                  GrowSmallBiz solves this by using agentic AI playbooks and AI-assisted workflows — combined with human strategy, editorial judgment, and quality control at every stage.
                 </p>
-              </div>
-
-              <div className="mt-12 flex flex-wrap gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                {[
-                  "Topic Gap Analysis",
-                  "Topical Map Building",
-                  "Content Planning",
-                  "Entity Gap Detection",
-                  "Authority Signal Monitoring",
-                ].map((step, i) => (
-                  <div key={i} className="flex items-center gap-2 bg-background border border-border rounded-full px-4 py-2">
-                    <Zap className="w-3.5 h-3.5 text-primary" />
-                    <span className="text-sm font-medium text-foreground">{step}</span>
-                  </div>
-                ))}
+                <p className="text-foreground font-semibold">Here is what that means in practice:</p>
+                <div className="space-y-4">
+                  {[
+                    { label: "Identify topic gaps faster", text: "Our AI-assisted planning systems help map your topic territory more comprehensively and efficiently than manual research alone, surfacing authority gaps that might otherwise take weeks to uncover." },
+                    { label: "Build smarter topical maps", text: "AI workflows help us organize and refine topical structures that better support how modern search systems evaluate depth, relevance, and coverage." },
+                    { label: "Plan authority-supporting content more efficiently", text: "We can align supporting content, authority assets, and topical priorities faster without sacrificing strategy or editorial standards." },
+                    { label: "Surface entity and reputation gaps", text: "By analyzing competitive positioning and off-site presence at scale, AI-assisted workflows help identify brand, entity, and credibility gaps that manual review can miss." },
+                    { label: "Accelerate authority-asset planning", text: "Press release angles, digital PR opportunities, mention opportunities, and supporting authority assets can be prioritized faster, helping the program move with greater consistency." },
+                    { label: "Maintain broader monthly coverage", text: "AI-assisted management helps keep content, press, mentions, and link opportunities aligned so the authority strategy stays coherent as it grows." },
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3 rounded-xl p-4 bg-background/60 border border-border/50">
+                      <Zap className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                      <p><strong className="text-foreground">{item.label}</strong> — {item.text}</p>
+                    </div>
+                  ))}
+                </div>
+                <p>
+                  The result is an authority-building program that delivers more coverage, more consistency, and more strategic depth than a traditionally resourced program of similar cost — without sacrificing the human judgment and editorial quality that genuine authority requires.
+                </p>
               </div>
             </div>
           </div>
@@ -492,9 +508,15 @@ const AuthorityBuilding = () => {
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="OUR DIFFERENCE"
-              title="Why GrowSmallBiz for"
-              titleHighlight="Authority Building"
+              title="Why"
+              titleHighlight="GrowSmallBiz"
             />
+
+            <div className="max-w-3xl mx-auto mb-12 animate-fade-up">
+              <p className="text-muted-foreground leading-relaxed text-center">
+                There is no shortage of agencies offering some version of link building, content marketing, or digital PR. What makes GrowSmallBiz different is that we do not treat authority building as an isolated tactic. We build it as part of a broader Managed AI SEO system designed specifically for local service businesses.
+              </p>
+            </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {whyGSBItems.map((item, i) => (
@@ -512,16 +534,6 @@ const AuthorityBuilding = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
-            </p>
-
-            <div className="text-center mt-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <p className="text-muted-foreground text-sm max-w-2xl mx-auto">
-                GrowSmallBiz does not treat authority as a batch of tactics. We build systems — structured, strategic, and designed to compound over time. We start with planning, not random execution. And we manage the full process for local service businesses that need real expertise signals in competitive markets.
-              </p>
             </div>
 
             {/* Internal link back to parent */}
