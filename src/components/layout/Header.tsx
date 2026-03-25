@@ -116,6 +116,12 @@ export const Header = () => {
                 >
                   Link Building
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/technical-seo"
+                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Technical SEO
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
