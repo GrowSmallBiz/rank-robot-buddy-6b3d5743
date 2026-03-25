@@ -208,7 +208,13 @@ const LocalSEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MapPin, text: "Local SEO for Local Service Businesses" }}
-          title={<>Local SEO That Helps Local Service Businesses</>}
+          title={<>Local SEO That Helps Local Service Businesses
+            <h2 className="flex flex-wrap justify-center gap-x-6 gap-y-3 mt-4 text-2xl md:text-3xl font-display font-bold">
+              <span className="flex items-center gap-2 text-transparent bg-clip-text bg-gradient-primary"><CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" /> Get Found</span>
+              <span className="flex items-center gap-2 text-transparent bg-clip-text bg-gradient-primary"><CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" /> Get Trusted</span>
+              <span className="flex items-center gap-2 text-transparent bg-clip-text bg-gradient-primary"><CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" /> Get Chosen</span>
+            </h2>
+          </>}
           subtitle="When people search for a provider in their area, they are often close to taking action. They may search by service and city, compare businesses in map results, or validate who looks most credible before they call.<br/><br/>If your business is not visible in those moments, you do not just lose rankings. You lose calls, quote requests, appointments, and booked jobs to competitors who are easier to find and easier to trust.<br/><br/>GrowSmallBiz manages Local SEO for local service businesses as part of a broader Managed AI SEO system. We strengthen your Google Business Profile, service area signals, citation consistency, local landing pages, reviews, and on-site relevance so your business can compete more effectively across local search, map results, and modern discovery journeys.<br/><br/>This is not a one-time setup or a disconnected checklist. It is an ongoing local visibility system guided by human SEO strategy and accelerated by agentic AI playbooks."
           primaryCTA={{
             label: "Schedule Strategy Session",
