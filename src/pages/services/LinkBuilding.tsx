@@ -447,7 +447,7 @@ const LinkBuilding = () => {
         </section>
 
         {/* CONSULTATION FORM */}
-        <ConsultationFormSection {...baseContactCTA} />
+        <ConsultationFormSection />
       </main>
 
       <Footer />
