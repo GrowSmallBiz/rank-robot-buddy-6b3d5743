@@ -82,7 +82,7 @@ for (const route of servicePages.sort()) {
 if (legalPages.length) {
   output += `\n## Legal\n`;
   for (const route of legalPages.sort()) {
-    output += `- ${routeToName(route)}: ${BASE_URL}${route}\n`;
+    output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
   }
 }
 

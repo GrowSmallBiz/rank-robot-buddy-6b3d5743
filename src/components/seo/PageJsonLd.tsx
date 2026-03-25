@@ -44,7 +44,7 @@ export const PageJsonLd = ({
         "@type": "ListItem",
         position: index + 2,
         name: crumb.name,
-        item: `${BASE_URL}${crumb.url}`,
+        item: `${BASE_URL}${crumb.url}${crumb.url.endsWith('/') ? '' : '/'}`,
       })),
     ],
   };

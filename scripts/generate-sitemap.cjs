@@ -46,7 +46,8 @@ let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
 xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
 for (const route of filteredRoutes.sort()) {
-  xml += `  <url><loc>${BASE_URL}${route}</loc><priority>${getPriority(route)}</priority></url>\n`;
+  const loc = route === '/' ? BASE_URL + '/' : BASE_URL + route + '/';
+  xml += `  <url><loc>${loc}</loc><priority>${getPriority(route)}</priority></url>\n`;
 }
 
 // Static assets
