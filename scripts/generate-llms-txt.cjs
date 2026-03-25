@@ -76,7 +76,7 @@ for (const route of primaryPages.sort()) {
 
 output += `\n## Services\n`;
 for (const route of servicePages.sort()) {
-  output += `- ${routeToName(route)}: ${BASE_URL}${route}\n`;
+  output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
 }
 
 if (legalPages.length) {
