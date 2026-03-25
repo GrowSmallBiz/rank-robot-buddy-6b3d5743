@@ -195,7 +195,7 @@ const LinkBuilding = () => {
           badge={{ icon: LinkIcon, text: "Link Building for Local Service Businesses" }}
           title={<>Build the Backlink Profile Your Competitors{" "}<br className="hidden md:inline" />Wish They </>}
           titleHighlight="Had"
-          subtitle="High-authority backlinks are still one of the strongest signals Google uses to rank pages. GrowSmallBiz's managed link-building service earns you real, editorially placed links from relevant sites — so you rank higher, attract more qualified traffic, and grow your local authority without lifting a finger.<br /><br /><strong>Your website can be perfectly optimized on every page — but if it lacks off-site credibility, it will keep losing ground to competitors that search engines simply trust more.</strong>"
+          subtitle="Your website can be perfectly optimized on every page — but if it lacks off-site credibility, it will keep losing ground to competitors that search engines simply trust more.<br /><br />High-authority backlinks are still one of the strongest signals Google uses to rank pages. GrowSmallBiz's managed link-building service earns you real, editorially placed links from relevant sites — so you rank higher, attract more qualified traffic, and grow your local authority without lifting a finger."
           description="At GrowSmallBiz, link building isn't a checkbox. It's a managed, strategic component of our Managed AI SEO system — built specifically for local service businesses that need to compete and win in their markets."
           primaryCTA={{
             label: "Schedule Strategy Session",
