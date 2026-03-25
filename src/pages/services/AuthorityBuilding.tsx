@@ -508,9 +508,15 @@ const AuthorityBuilding = () => {
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="OUR DIFFERENCE"
-              title="Why GrowSmallBiz for"
-              titleHighlight="Authority Building"
+              title="Why"
+              titleHighlight="GrowSmallBiz"
             />
+
+            <div className="max-w-3xl mx-auto mb-12 animate-fade-up">
+              <p className="text-muted-foreground leading-relaxed text-center">
+                There is no shortage of agencies offering some version of link building, content marketing, or digital PR. What makes GrowSmallBiz different is that we do not treat authority building as an isolated tactic. We build it as part of a broader Managed AI SEO system designed specifically for local service businesses.
+              </p>
+            </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {whyGSBItems.map((item, i) => (
@@ -528,16 +534,6 @@ const AuthorityBuilding = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
-            </p>
-
-            <div className="text-center mt-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <p className="text-muted-foreground text-sm max-w-2xl mx-auto">
-                GrowSmallBiz does not treat authority as a batch of tactics. We build systems — structured, strategic, and designed to compound over time. We start with planning, not random execution. And we manage the full process for local service businesses that need real expertise signals in competitive markets.
-              </p>
             </div>
 
             {/* Internal link back to parent */}
