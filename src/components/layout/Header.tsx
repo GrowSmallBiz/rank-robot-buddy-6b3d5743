@@ -110,6 +110,12 @@ export const Header = () => {
                 >
                   Authority Building
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/link-building"
+                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Link Building
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
@@ -242,6 +248,13 @@ export const Header = () => {
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >
                   Authority Building
+                </Link>
+                <Link
+                  to="/services/managed-ai-seo/link-building"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
+                >
+                  Link Building
                 </Link>
 
                 {/* Paid Media & Advertising */}
