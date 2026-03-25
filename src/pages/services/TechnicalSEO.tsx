@@ -6,11 +6,13 @@ import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
+import techSeoHeroBg from "@/assets/technical-seo-hero-bg.jpg";
 import {
   Wrench,
   ArrowRight,
@@ -41,23 +43,24 @@ import {
   FileCheck,
   ShieldCheck,
   Eye,
+  TrendingUp,
 } from "lucide-react";
 
 const PRIMARY_CTA_BASE = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
 const SECONDARY_CTA_BASE = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page";
 
 const technicalServices = [
-  { icon: ScanSearch, text: "Crawlability diagnostics and issue detection" },
-  { icon: FileCheck, text: "Indexation analysis and page discovery review" },
-  { icon: FileText, text: "XML sitemap and robots.txt review" },
-  { icon: Network, text: "Core page architecture and internal linking evaluation" },
-  { icon: Code, text: "Schema markup review and implementation support" },
-  { icon: Gauge, text: "Page speed and performance issue monitoring" },
-  { icon: Copy, text: "Duplicate content and canonicalization review" },
-  { icon: ArrowRightLeft, text: "Redirect review and technical cleanup" },
-  { icon: Tag, text: "Title tag, meta description, and heading structure checks" },
-  { icon: ShieldCheck, text: "Trust-related on-page signal reviews" },
-  { icon: RefreshCw, text: "Ongoing technical monitoring and prioritization" },
+  { icon: ScanSearch, title: "Crawlability Diagnostics", description: "Crawlability diagnostics and issue detection" },
+  { icon: FileCheck, title: "Indexation Analysis", description: "Indexation analysis and page discovery review" },
+  { icon: FileText, title: "Sitemap & Robots.txt", description: "XML sitemap and robots.txt review" },
+  { icon: Network, title: "Page Architecture", description: "Core page architecture and internal linking evaluation" },
+  { icon: Code, title: "Schema Markup", description: "Schema markup review and implementation support" },
+  { icon: Gauge, title: "Page Speed", description: "Page speed and performance issue monitoring" },
+  { icon: Copy, title: "Canonicalization", description: "Duplicate content and canonicalization review" },
+  { icon: ArrowRightLeft, title: "Redirect Cleanup", description: "Redirect review and technical cleanup" },
+  { icon: Tag, title: "On-Page Structure", description: "Title tag, meta description, and heading structure checks" },
+  { icon: ShieldCheck, title: "Trust Signals", description: "Trust-related on-page signal reviews" },
+  { icon: RefreshCw, title: "Ongoing Monitoring", description: "Ongoing technical monitoring and prioritization" },
 ];
 
 const processSteps = [
@@ -156,7 +159,8 @@ const TechnicalSEO = () => {
             variant: "heroOutline",
             external: true,
           }}
-          overlayOpacity={85}
+          backgroundImage={techSeoHeroBg}
+          overlayOpacity={50}
         />
 
         {/* SECTION 2 — WHY TECHNICAL SEO STILL MATTERS */}
@@ -172,50 +176,55 @@ const TechnicalSEO = () => {
                 </h2>
               </div>
 
-              <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                <p>
                   Technical SEO is the foundation that helps every other SEO effort perform the way it should. If search engines cannot properly crawl your site, understand your page structure, access important content, interpret key business information, or move efficiently through your internal architecture, rankings can stall even when the rest of the strategy is strong.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p>
                   For local service businesses, technical weaknesses often go unnoticed for long periods. A site may look fine on the surface while deeper problems limit visibility behind the scenes. Pages may not be indexed correctly. Important service content may be hard to discover. Schema may be missing or invalid. Internal links may be weak. Site performance may create friction for both users and search engines.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Technical SEO matters because it improves the conditions required for stronger visibility. It supports crawlability, indexation, speed, structural clarity, and machine-readable understanding — all of which influence how effectively search engines can process and trust your site.
-                </p>
+
+                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                  <p className="text-foreground leading-relaxed">
+                    Technical SEO matters because it improves the conditions required for stronger visibility. It supports crawlability, indexation, speed, structural clarity, and machine-readable understanding — all of which influence how effectively search engines can process and trust your site.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* SECTION 3 — WHAT GROWSMALLBIZ HANDLES UNDER TECHNICAL SEO */}
-        <section className="py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-16 animate-fade-up">
-                <p className="section-subtitle">THE SCOPE</p>
-                <h2 className="section-title">
-                  What GrowSmallBiz Handles Under{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Technical SEO</span>
-                </h2>
-                <p className="section-description mt-4">
-                  Technical SEO is more than a one-time cleanup. GrowSmallBiz manages the technical foundation that helps your website support stronger rankings, cleaner crawl paths, better search understanding, and a more stable base for long-term SEO performance.
-                </p>
-              </div>
+            <div className="text-center mb-16 animate-fade-up">
+              <p className="section-subtitle">THE SCOPE</p>
+              <h2 className="section-title">
+                What GrowSmallBiz Handles Under{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Technical SEO</span>
+              </h2>
+              <p className="section-description mt-4">
+                Technical SEO is more than a one-time cleanup. GrowSmallBiz manages the technical foundation that helps your website support stronger rankings, cleaner crawl paths, better search understanding, and a more stable base for long-term SEO performance.
+              </p>
+            </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                {technicalServices.map((service, index) => {
-                  const Icon = service.icon;
-                  return (
-                    <div
-                      key={index}
-                      className="flex items-start gap-4 p-5 rounded-xl border border-border/50 bg-card/30 backdrop-blur-sm hover:border-primary/40 transition-colors"
-                    >
-                      <Icon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                      <span className="text-foreground font-medium">{service.text}</span>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {technicalServices.map((service, index) => {
+                const Icon = service.icon;
+                return (
+                  <GlowCard
+                    key={index}
+                    className="p-6 animate-fade-up"
+                    style={{ animationDelay: `${index * 0.05}s` }}
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                      <Icon className="w-5 h-5 text-primary" />
                     </div>
-                  );
-                })}
-              </div>
+                    <h3 className="text-base font-semibold text-foreground mb-2">{service.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                  </GlowCard>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -252,8 +261,8 @@ const TechnicalSEO = () => {
                   ))}
                 </div>
 
-                <p className="text-lg text-muted-foreground leading-relaxed pt-4">
-                  When these problems stack up, the result is simple: the site underperforms relative to its actual potential.
+                <p className="text-xl md:text-2xl font-display font-bold text-foreground text-center pt-4">
+                  When these problems stack up, the site underperforms relative to its actual potential.
                 </p>
               </div>
             </div>
@@ -261,7 +270,7 @@ const TechnicalSEO = () => {
         </section>
 
         {/* SECTION 5 — AGENTIC AI PLAYBOOKS */}
-        <section className="py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
@@ -275,8 +284,8 @@ const TechnicalSEO = () => {
                 </p>
               </div>
 
-              <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                <p>
                   Traditional technical SEO relies on a practitioner manually running tools, interpreting reports, and working through a list of issues over weeks or months. The problem is not effort — it is capacity. A human analyst can only review so many signals at once, and the volume of technical data a modern website generates exceeds what manual workflows can keep up with efficiently.
                 </p>
 
@@ -284,31 +293,56 @@ const TechnicalSEO = () => {
                   GrowSmallBiz uses Agentic AI Playbooks to change that equation.
                 </p>
 
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p>
                   Instead of relying on one generic automation layer, several specialized AI agents perform distinct technical SEO tasks within an integrated framework. These agents continuously monitor site health, detect emerging issues, evaluate patterns across multiple signal types, prioritize fixes by likely impact, and support faster execution across repeatable technical tasks. This creates a more systematic process than isolated manual audits or disconnected software tools.
                 </p>
 
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p>
                   Our system continuously monitors your site's technical health across dozens of signal categories simultaneously. Instead of waiting for a scheduled audit, issues are surfaced as they emerge. Instead of manually triaging a list, the playbook framework prioritizes issues by their likely impact on rankings, crawl efficiency, indexation, and user experience — so the most consequential problems are addressed first.
                 </p>
 
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p>
                   Agentic AI Playbooks reduce audit latency from months to minutes. Instead of waiting for slow, periodic manual reviews, GrowSmallBiz can detect technical issues quickly across title tags, meta descriptions, heading structure, schema markup, crawlability, internal linking, semantic coverage, and trust-related on-page signals. Many approved fixes can then be prioritized and implemented far faster than a traditional manual workflow. That shorter detection-to-resolution cycle can materially accelerate SEO progress.
                 </p>
 
-                <div className="p-6 rounded-2xl border border-primary/30 bg-card/20 backdrop-blur-sm my-8">
-                  <p className="text-lg text-foreground leading-relaxed">
+                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                  <p className="text-foreground leading-relaxed">
                     This is not unsupervised software making blind changes. Every technical finding is reviewed by an experienced strategist who confirms priority, validates the recommended resolution, and oversees implementation. The agentic AI layer provides speed, scale, and pattern detection. The human layer provides judgment, context, and quality control.
                   </p>
                 </div>
 
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p>
                   The result is a technical SEO practice that operates at a pace and monitoring depth that manual-only execution often struggles to match consistently. And when the other core SEO pillars are also being executed systematically, businesses can often reach meaningful traction faster than they would under a fragmented, slower-moving process.
                 </p>
+              </div>
+
+              {/* Pill tags — matching GEO pattern */}
+              <div className="mt-12 flex flex-wrap gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                {[
+                  "Crawl Monitoring",
+                  "Index Management",
+                  "Schema Validation",
+                  "Speed Optimization",
+                  "Signal Prioritization",
+                ].map((step, i) => (
+                  <div key={i} className="flex items-center gap-2 bg-background border border-border rounded-full px-4 py-2">
+                    <Zap className="w-3.5 h-3.5 text-primary" />
+                    <span className="text-sm font-medium text-foreground">{step}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
+
+        {/* MID-PAGE CTA */}
+        <CardCTA
+          title="Ready to Fix Your Technical Foundation?"
+          description="Schedule a strategy session to learn how technical SEO fits into your growth plan."
+          buttonText="Schedule Strategy Session"
+          buttonHref={PRIMARY_CTA_URL}
+          sectionClassName="py-16"
+        />
 
         {/* SECTION 6 — HOW THE TECHNICAL SEO PROCESS WORKS */}
         <section className="py-24">
@@ -351,7 +385,7 @@ const TechnicalSEO = () => {
         </section>
 
         {/* SECTION 7 — WHO THIS IS FOR */}
-        <section className="py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12 animate-fade-up">
@@ -363,7 +397,7 @@ const TechnicalSEO = () => {
               </div>
 
               <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <div className="p-6 rounded-2xl border border-border/50 bg-card/20 backdrop-blur-sm">
+                <div className="p-6 rounded-2xl border border-border/50 bg-background/60 backdrop-blur-sm">
                   <div className="flex items-start gap-4">
                     <Target className="w-6 h-6 text-primary mt-1 shrink-0" />
                     <p className="text-lg text-muted-foreground leading-relaxed">
@@ -372,7 +406,7 @@ const TechnicalSEO = () => {
                   </div>
                 </div>
 
-                <div className="p-6 rounded-2xl border border-border/50 bg-card/20 backdrop-blur-sm">
+                <div className="p-6 rounded-2xl border border-border/50 bg-background/60 backdrop-blur-sm">
                   <div className="flex items-start gap-4">
                     <Users className="w-6 h-6 text-primary mt-1 shrink-0" />
                     <p className="text-lg text-muted-foreground leading-relaxed">
@@ -397,20 +431,24 @@ const TechnicalSEO = () => {
                 </h2>
               </div>
 
-              <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
                 <p className="text-lg text-foreground font-semibold">
                   Technical SEO works best when it is connected to the rest of the SEO strategy.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p>
                   A technically improved website still needs strong content, clear service-page targeting, local relevance, authority development, and consistent strategic direction. Technical cleanup alone does not create full SEO momentum. It removes friction, strengthens the foundation, and helps the rest of the system perform more effectively.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p>
                   That is why GrowSmallBiz treats technical SEO as one part of a broader Managed AI SEO approach rather than an isolated service activity.
                 </p>
               </div>
 
+              <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
+              </p>
+
               {/* Internal link back to parent */}
-              <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.25s" }}>
                 <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                   ← Back to Managed AI SEO Overview
                 </Link>
@@ -468,6 +506,9 @@ const TechnicalSEO = () => {
             </div>
           </div>
         </section>
+
+        {/* CONSULTATION FORM */}
+        <ConsultationFormSection />
       </main>
 
       <Footer />
