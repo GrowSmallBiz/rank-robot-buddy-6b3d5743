@@ -334,7 +334,8 @@ const LocalSEO = () => {
                 <p className="section-subtitle">THE STRATEGY</p>
                 <h2 className="section-title">
                   Why GBP, Citations, and Local Landing Pages{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Work Better Together as a Connected System</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic whitespace-nowrap">Work Better Together</span>
+                  {" "}as a Connected System
                 </h2>
               </div>
 
