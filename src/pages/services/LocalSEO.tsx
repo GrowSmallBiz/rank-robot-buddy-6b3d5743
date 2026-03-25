@@ -315,8 +315,8 @@ const LocalSEO = () => {
                   className="p-6 animate-fade-up"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <service.icon className="w-6 h-6 text-primary" />
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <service.icon className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="text-base font-semibold text-foreground mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
@@ -431,9 +431,8 @@ const LocalSEO = () => {
                   "Gap Identification",
                 ].map((step, i) => (
                   <div key={i} className="flex items-center gap-2 bg-background border border-border rounded-full px-4 py-2">
-                    <span className="w-5 h-5 rounded-full bg-primary/20 text-primary text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                    <Zap className="w-3.5 h-3.5 text-primary" />
                     <span className="text-sm font-medium text-foreground">{step}</span>
-                    {i < 4 && <ChevronRight className="w-3.5 h-3.5 text-muted-foreground ml-1 hidden sm:block" />}
                   </div>
                 ))}
               </div>
@@ -491,23 +490,27 @@ const LocalSEO = () => {
               titleHighlight="Local SEO"
             />
 
-            <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {whyGSBItems.map((item, i) => (
-                <GlowCard
+                <div
                   key={i}
-                  className="flex items-start gap-4 p-5 animate-fade-up w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+                  className="flex items-start gap-4 bg-background border border-border rounded-xl p-5 animate-fade-up"
                   style={{ animationDelay: `${i * 0.05}s` }}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <item.icon className="w-5 h-5 text-primary" />
+                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <item.icon className="w-4 h-4 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-foreground mb-1">{item.title}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
                   </div>
-                </GlowCard>
+                </div>
               ))}
             </div>
+
+            <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
+              Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
+            </p>
 
             {/* Internal link back to parent */}
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
@@ -532,7 +535,7 @@ const LocalSEO = () => {
         />
 
         {/* SECTION 9 — FINAL CTA */}
-        <section id="final-cta" className="py-20 lg:py-28 bg-gradient-to-b from-background via-card to-background">
+        <section id="final-cta" className="py-20 lg:py-28" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
@@ -552,23 +555,26 @@ const LocalSEO = () => {
               <p className="text-base text-muted-foreground mb-10 max-w-3xl mx-auto">
                 You focus on running the business and serving customers. We focus on helping the right prospects find you and feel confident contacting you.
               </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="hero" size="lg" asChild>
-                  <a href={PRIMARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                    Schedule Strategy Session <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
-                </Button>
-                <Button variant="heroOutline" size="lg" asChild>
-                  <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                    Start with a Free SEO Audit
-                  </a>
-                </Button>
-              </div>
-              <p className="text-sm text-muted-foreground mt-4 max-w-2xl mx-auto">
-                and we'll show you where your local visibility is strong, where opportunity is being lost, and what should be fixed first.
-              </p>
             </div>
+
+            <CardCTA
+              title="Let's Build Your Local Search Visibility"
+              description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
+              buttonText="Schedule Strategy Session"
+              buttonHref={PRIMARY_CTA_URL}
+              sectionClassName="pt-0 pb-0"
+            />
+
+            <div className="flex justify-center mt-6 animate-fade-up">
+              <Button variant="heroOutline" size="lg" asChild>
+                <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
+                  Start with a Free SEO Audit
+                </a>
+              </Button>
+            </div>
+            <p className="text-sm text-muted-foreground mt-4 max-w-2xl mx-auto text-center">
+              and we'll show you where your local visibility is strong, where opportunity is being lost, and what should be fixed first.
+            </p>
 
             <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
