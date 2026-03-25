@@ -39,6 +39,7 @@ export const ServiceHero = ({
   titleHighlight,
   subtitle,
   description,
+  preCtaContent,
   primaryCTA,
   secondaryCTA,
   note,
