@@ -119,28 +119,33 @@ const industryCards = [
 const whyGSBItems = [
   {
     icon: Target,
-    title: "Built for Local Service Businesses",
-    description: "Our Local SEO strategies are designed specifically for service-area businesses, local markets, and the search behaviors of local buyers.",
+    title: "Built for local service businesses",
+    description: "GrowSmallBiz is designed around the way local service businesses actually compete: defined service areas, high-intent local demand, reputation-sensitive buying decisions, and the need to turn visibility into calls, leads, and booked work.",
   },
   {
     icon: Users,
-    title: "Managed Execution, Not DIY Guesswork",
-    description: "We manage every element of your Local SEO for you — no templates, no self-service portals, no guesswork.",
+    title: "Managed execution, not software access",
+    description: "You are not paying for another dashboard to manage yourself. We handle the research, optimization, content coordination, monitoring, and reporting so your team can stay focused on the business.",
   },
   {
     icon: Layers,
-    title: "GBP, Citations, and Local Content Managed as One System",
-    description: "We treat your Google Business Profile, citations, and local pages as interconnected — not disconnected tasks.",
+    title: "Local SEO inside a broader Managed AI SEO system",
+    description: "Local SEO performs better when it is supported by strong technical foundations, better service pages, authority signals, trust content, and conversion-focused website improvements. We manage Local SEO as one important part of that larger system.",
+  },
+  {
+    icon: Zap,
+    title: "Agentic AI playbooks plus human strategy",
+    description: "Our playbooks help us move faster and work more efficiently, but strategy is still directed by experienced humans who understand local search, local competition, and commercial intent.",
   },
   {
     icon: BarChart3,
-    title: "Part of a Broader Managed AI SEO Strategy",
-    description: "Local SEO integrates with our broader Managed AI SEO system so every pillar of your digital presence reinforces the others.",
+    title: "Reporting tied to local opportunity",
+    description: "We focus on metrics that matter to local businesses: visibility in priority areas, map performance, local traffic quality, and the signals that help drive inquiries and booked jobs.",
   },
   {
     icon: Shield,
-    title: "Transparent Reporting and Ongoing Optimization",
-    description: "Clear reporting on what's being done, what's changing, and what the next priorities are — in plain language you can act on.",
+    title: "No long-term lock-in",
+    description: "We believe this relationship should be earned through execution quality, communication, and measurable progress — not forced through a long contract.",
   },
 ];
 
@@ -203,9 +208,9 @@ const LocalSEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MapPin, text: "Local SEO for Local Service Businesses" }}
-          title={<>Local SEO That Makes Your Business the First Call,{" "}<br className="hidden md:inline" />Not the </>}
-          titleHighlight="Second Choice"
-          subtitle="When local customers search for a service provider, they usually do not compare every option. They call the businesses that appear first, look credible, and clearly serve their area. GrowSmallBiz helps local service businesses strengthen their visibility across Google Business Profile, citations, local landing pages, and map-driven search results — so your business gets seen, trusted, and contacted sooner."
+          title={<>Local SEO That Helps Local Service Businesses Get Found, Trusted, and{" "}<br className="hidden md:inline" /></>}
+          titleHighlight="Chosen"
+          subtitle="When people search for a provider in their area, they are often close to taking action. They may search by service and city, compare businesses in map results, or validate who looks most credible before they call.<br/><br/>If your business is not visible in those moments, you do not just lose rankings. You lose calls, quote requests, appointments, and booked jobs to competitors who are easier to find and easier to trust.<br/><br/>GrowSmallBiz manages Local SEO for local service businesses as part of a broader Managed AI SEO system. We strengthen your Google Business Profile, service area signals, citation consistency, local landing pages, reviews, and on-site relevance so your business can compete more effectively across local search, map results, and modern discovery journeys.<br/><br/>This is not a one-time setup or a disconnected checklist. It is an ongoing local visibility system guided by human SEO strategy and accelerated by agentic AI playbooks."
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
@@ -223,7 +228,6 @@ const LocalSEO = () => {
         />
 
         {/* SECTION 2 — WHY LOCAL SEO MATTERS */}
-        {/* Improvement #8: Break wall of text with icon lead-in and two-column layout */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -232,35 +236,31 @@ const LocalSEO = () => {
                 <h2 className="section-title">
                   Why{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO</span>
-                  {" "}Matters for Local Service Businesses
+                  {" "}Still Drives Some of the Highest-Intent Opportunities for Local Service Businesses
                 </h2>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto animate-fade-up">
-                <div className="space-y-4">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <Search className="w-5 h-5 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Local search is one of the highest-intent traffic sources a service business can access. When someone searches for a plumber, HVAC company, med spa, chiropractor, attorney, or roofer near them, they are usually not browsing casually. They are evaluating who looks credible, who serves their area, and who appears easiest to trust.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    That is why Local SEO matters so much. Visibility in Google Business Profile, the map pack, and local organic results directly influences who gets considered first. Businesses that show up clearly, consistently, and credibly in those environments are more likely to earn the call, the form fill, or the booking.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-10 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary bg-secondary">
-                  <p className="text-foreground leading-relaxed">
-                    GrowSmallBiz helps local service businesses improve that visibility through a <strong>managed Local SEO system</strong> built to strengthen local relevance, trust signals, and discoverability where buying intent is already high.
-                  </p>
-                </div>
+              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
+                <p>
+                  When someone needs a plumber, a landscaper, a dentist, or a cleaning service, they are not browsing social media. They are searching — with intent to hire, often within hours.
+                </p>
+                <p>
+                  That is why Local SEO matters. It helps your business appear when demand already exists. It gives you a better chance to show up when prospects are actively comparing providers, validating service areas, checking reviews, and deciding who to call now.
+                </p>
+                <p className="font-semibold text-foreground">Here is what the data consistently shows:</p>
+                <ul className="space-y-3 list-none pl-0">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" /><span>The Google Map Pack captures the majority of clicks for local service queries — more than the organic results below it</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" /><span>"Near me" searches now dominate how people discover local service providers</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" /><span>Appearing in the top three local positions signals authority before anyone clicks through to your website</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" /><span>Local search drives high-intent actions: phone calls, direction requests, appointment bookings, and form fills</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" /><span>Voice/text search on AI platforms like ChatGPT, Claude, Google Gemini, etc.</span></li>
+                </ul>
+                <p>
+                  For local service businesses, this is not just about rankings. It is about turning local visibility into real business outcomes: calls, quote requests, consultations, appointments, and booked jobs.
+                </p>
+                <p>
+                  Ranking well in local results does not happen by accident. It requires consistent relevance, trust, accuracy, and visibility across your profile, website, citations, reviews, and supporting local pages. Businesses that win locally usually do not treat this as a one-time task. They treat it as an ongoing growth channel.
+                </p>
               </div>
             </div>
           </div>
@@ -276,7 +276,9 @@ const LocalSEO = () => {
                 What GrowSmallBiz Includes in{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO</span>
               </h2>
-              <p className="section-description mt-4">Local SEO is not a single setup task. It is a coordinated system that helps search engines and real customers understand where you operate, what services you offer, and why your business is a trustworthy local option.</p>
+              <p className="section-description mt-4">Local SEO is one of the core pillars inside GrowSmallBiz's Managed AI SEO system. On its own, it improves local visibility. Connected with technical SEO, authority building, service-page strategy, and conversion-focused website improvements, it becomes stronger, more durable, and more commercially useful.</p>
+              <p className="section-description mt-3">Within the Local SEO pillar, we manage the assets and signals that help local service businesses become easier to find, easier to trust, and easier to choose in their service area.</p>
+              <p className="section-description mt-3 font-semibold">Here is what we manage on your behalf:</p>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -298,7 +300,6 @@ const LocalSEO = () => {
         </section>
 
         {/* SECTION 4 — WHY GBP, CITATIONS, AND LOCAL LANDING PAGES WORK BETTER TOGETHER */}
-        {/* Improvement #3: Upgrade summary cards to GlowCards with connecting arrows */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -306,21 +307,38 @@ const LocalSEO = () => {
                 <p className="section-subtitle">THE STRATEGY</p>
                 <h2 className="section-title">
                   Why GBP, Citations, and Local Landing Pages{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Work Better Together</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Work Better Together as a Connected System</span>
                 </h2>
               </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  Strong local visibility rarely comes from one isolated tactic. A well-optimized Google Business Profile helps your business appear in local map-driven results. Citation consistency reinforces trust and confirms your business identity across the web. Local landing pages help search engines connect your services to the exact locations you serve.
+                  One of the biggest reasons Local SEO underperforms is fragmentation. A business may have a partly optimized Google Business Profile, inconsistent citations, a few city pages, and scattered reviews — but the signals do not fully support one another.
                 </p>
                 <p>
-                  When these elements work together, the result is stronger local relevance and a more credible local presence. When one of them is weak, the others are limited.
+                  GrowSmallBiz treats Local SEO as a connected visibility system. Your GBP, citations, local landing pages, schema markup, reviews, and on-site trust signals should reinforce the same locations, services, and credibility story across the web.
                 </p>
-
-                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary bg-secondary">
+                <p className="font-semibold text-foreground">Here is why the integration matters:</p>
+                <div className="space-y-4">
+                  <p>
+                    <strong className="text-foreground">GBP without a supporting website</strong> limits your ability to rank for service-plus-location queries beyond your primary category. A strong profile needs equally strong web presence behind it.
+                  </p>
+                  <p>
+                    <strong className="text-foreground">Citations without NAP consistency</strong> send conflicting signals that undermine the authority you are building. Every inconsistency reduces Google's confidence in your business data — and that reduced confidence shows up in your rankings.
+                  </p>
+                  <p>
+                    <strong className="text-foreground">Local landing pages without GBP alignment</strong> miss the opportunity to reinforce your location signals across both platforms. Your website and your profile should tell the same story, in the same terms, to the same geographic audience.
+                  </p>
+                  <p>
+                    <strong className="text-foreground">Reviews without a response strategy</strong> leave trust signals on the table and signal to Google that your business is not actively engaged with its customers.
+                  </p>
+                </div>
+                <p>
+                  When these elements work in concert — when your GBP, citations, local pages, schema markup, and review profile all reinforce the same location and service signals — the effect on local ranking is multiplicative, not additive.
+                </p>
+                <div className="rounded-2xl p-6 border-l-4 border-primary bg-secondary">
                   <p className="text-foreground leading-relaxed">
-                    GrowSmallBiz manages these components as a <strong>connected system</strong> — so your local search presence becomes clearer, more consistent, and more competitive over time.
+                    That is the advantage GrowSmallBiz is building: not isolated tasks, but a <strong>local visibility system that compounds</strong>.
                   </p>
                 </div>
               </div>
@@ -349,8 +367,7 @@ const LocalSEO = () => {
           </div>
         </section>
 
-        {/* SECTION 5 — AI-POWERED WORKFLOWS */}
-        {/* Improvement #6: Add numbered badges to workflow pills for process flow */}
+        {/* SECTION 5 — AGENTIC AI PLAYBOOKS */}
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -365,10 +382,13 @@ const LocalSEO = () => {
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  Local SEO is not static. Listings change, competitors move, opportunities appear, and gaps in your local presence can cost visibility quickly. GrowSmallBiz uses AI-powered workflows with strategic human oversight to identify those gaps faster, prioritize improvements more intelligently, and maintain stronger local visibility over time.
+                  Local SEO is not static. Listings change, competitors move, opportunities appear, and gaps in your local presence can cost visibility quickly. GrowSmallBiz uses agentic AI playbooks with strategic human oversight to identify those gaps faster, prioritize improvements more intelligently, and maintain stronger local visibility over time.
                 </p>
                 <p>
                   This allows us to move faster on profile improvements, citation issues, service-area content opportunities, and ongoing optimization tasks — while still applying <strong className="text-foreground">real business judgment</strong> to the decisions that matter most.
+                </p>
+                <p>
+                  Our playbooks allow us to research, draft, and optimize location-specific content at a pace traditional agencies cannot match — while maintaining the quality and specificity search engines and visitors expect.
                 </p>
                 <p>
                   The result is a Local SEO system that is more consistent, more responsive, and more capable of compounding over time than a slow manual process.
@@ -404,16 +424,17 @@ const LocalSEO = () => {
         />
 
         {/* SECTION 6 — INDUSTRY USE CASES */}
-        {/* Improvement #1: Fix orphan row — use flex wrap with centered items */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">INDUSTRY RELEVANCE</p>
               <h2 className="section-title">
-                Why{" "}
+                How{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO</span>
-                {" "}Matters Across Local Service Industries
+                {" "}Impacts Different Types of Local Service Businesses
               </h2>
+              <p className="section-description mt-4">The mechanics of Local SEO are similar across industries, but buyer behavior is not. The way someone chooses an HVAC company, med spa, dentist, attorney, or real estate professional can vary significantly based on urgency, trust, price sensitivity, and how much comparison happens before contact.</p>
+              <p className="section-description mt-3">That is why GrowSmallBiz approaches Local SEO with a repeatable system, but not a one-size-fits-all message. The goal is always the same: stronger visibility, stronger trust, and stronger conversion in the markets you serve.</p>
             </div>
 
             <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
@@ -435,12 +456,11 @@ const LocalSEO = () => {
         </section>
 
         {/* SECTION 7 — WHY GROWSMALLBIZ */}
-        {/* Improvement #1 (orphan), #4 (text-sm), #5 (GlowCard upgrade) */}
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="OUR DIFFERENCE"
-              title="Why GrowSmallBiz for"
+              title="Why Local Service Businesses Choose GrowSmallBiz for"
               titleHighlight="Local SEO"
             />
 
@@ -461,18 +481,6 @@ const LocalSEO = () => {
                 </GlowCard>
               ))}
             </div>
-
-            <div className="max-w-3xl mx-auto mt-10 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-              <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary bg-secondary">
-                <p className="text-muted-foreground leading-relaxed">
-                  GrowSmallBiz brings local-service specialization, managed execution, and a systems-based approach to Local SEO. We do not treat your Google Business Profile, citations, service-area pages, and local trust signals as disconnected tasks. We manage them together so your business is easier to find, easier to trust, and easier to choose.
-                </p>
-              </div>
-            </div>
-
-            <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
-            </p>
 
             {/* Internal link back to parent */}
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
@@ -497,20 +505,25 @@ const LocalSEO = () => {
         />
 
         {/* SECTION 9 — FINAL CTA */}
-        {/* Improvement #2: Remove double-boxed CTA, place buttons directly */}
         <section id="final-cta" className="py-20 lg:py-28 bg-gradient-to-b from-background via-card to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Local Customers Are Already Searching.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Make Sure They Find You First.</span>
+                Ready to Strengthen Your Local Visibility Where{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Buying Decisions Happen?</span>
               </h2>
-              <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
-                If your business depends on calls, bookings, and inquiries from people in your service area, Local SEO is not optional. It is how you become more visible in the places where local buyers are already deciding who looks credible enough to contact.
+              <p className="text-lg text-muted-foreground mb-4 max-w-3xl mx-auto">
+                If your business is not consistently showing up for your priority local searches, the problem is usually not one isolated issue. It is the combined effect of profile gaps, weak local pages, inconsistent citations, limited review momentum, or missing trust signals.
+              </p>
+              <p className="text-base text-muted-foreground mb-4 max-w-3xl mx-auto">
+                GrowSmallBiz's Local SEO service is built to fix that — with a managed, ongoing system that handles your Google Business Profile, citations, local landing pages, trust signals, and map pack performance as part of the broader Managed AI SEO system.
+              </p>
+              <p className="text-base text-muted-foreground mb-4 max-w-3xl mx-auto">
+                GrowSmallBiz addresses those issues as part of a managed Local SEO system within your broader Managed AI SEO strategy. We help local service businesses improve visibility, strengthen trust, and compete more effectively in the areas that matter most.
               </p>
               <p className="text-base text-muted-foreground mb-10 max-w-3xl mx-auto">
-                GrowSmallBiz helps local service businesses strengthen map visibility, local trust signals, and search relevance through a managed Local SEO system built for real growth.
+                You focus on running the business and serving customers. We focus on helping the right prospects find you and feel confident contacting you.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -521,10 +534,13 @@ const LocalSEO = () => {
                 </Button>
                 <Button variant="heroOutline" size="lg" asChild>
                   <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                    Free SEO Audit
+                    Start with a Free SEO Audit
                   </a>
                 </Button>
               </div>
+              <p className="text-sm text-muted-foreground mt-4 max-w-2xl mx-auto">
+                and we'll show you where your local visibility is strong, where opportunity is being lost, and what should be fixed first.
+              </p>
             </div>
 
             <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
