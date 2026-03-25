@@ -20,6 +20,7 @@ interface ServiceHeroProps {
   titleHighlight?: string;
   subtitle: string;
   description?: string;
+  preCtaContent?: ReactNode;
   primaryCTA: HeroCTA;
   secondaryCTA?: HeroCTA;
   note?: string;
@@ -38,6 +39,7 @@ export const ServiceHero = ({
   titleHighlight,
   subtitle,
   description,
+  preCtaContent,
   primaryCTA,
   secondaryCTA,
   note,
@@ -117,6 +119,12 @@ export const ServiceHero = ({
             >
               {description}
             </p>
+          )}
+
+          {preCtaContent && (
+            <div className="animate-fade-up" style={{ animationDelay: "0.18s" }}>
+              {preCtaContent}
+            </div>
           )}
 
           <div
