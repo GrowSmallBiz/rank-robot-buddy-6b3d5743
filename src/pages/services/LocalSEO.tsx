@@ -458,7 +458,7 @@ const LocalSEO = () => {
               <h2 className="section-title">
                 How{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO</span>
-                {" "}Impacts Different Types of Local Service Businesses
+                {" "}Impacts Different Types of Service Businesses
               </h2>
               <p className="section-description mt-4">The mechanics of Local SEO are similar across industries, but buyer behavior is not. The way someone chooses an HVAC company, med spa, dentist, attorney, or real estate professional can vary significantly based on urgency, trust, price sensitivity, and how much comparison happens before contact.</p>
               <p className="section-description mt-3">That is why GrowSmallBiz approaches Local SEO with a repeatable system, but not a one-size-fits-all message. The goal is always the same: stronger visibility, stronger trust, and stronger conversion in the markets you serve.</p>
