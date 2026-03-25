@@ -20,6 +20,7 @@ interface ServiceHeroProps {
   titleHighlight?: string;
   subtitle: string;
   description?: string;
+  preCtaContent?: ReactNode;
   primaryCTA: HeroCTA;
   secondaryCTA?: HeroCTA;
   note?: string;
