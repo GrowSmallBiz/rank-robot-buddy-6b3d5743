@@ -222,18 +222,18 @@ const AEO = () => {
       <Head>
         <title>Answer Engine Optimization (AEO) Services | GrowSmallBiz Managed AI SEO</title>
         <meta name="description" content="GrowSmallBiz structures your content to become the answer in featured snippets, People Also Ask, and AI-assisted search. AEO services built for local service businesses." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/aeo/" />
+        <link rel="canonical" href="https://growsmallbiz.io/local-seo-services/aeo/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Answer Engine Optimization (AEO)"
         serviceType="Answer Engine Optimization"
         description="GrowSmallBiz structures your content to become the answer in featured snippets, People Also Ask, and AI-assisted search. AEO services built for local service businesses."
-        url="/services/managed-ai-seo/aeo"
+        url="/local-seo-services/aeo"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/managed-ai-seo" },
-          { name: "Answer Engine Optimization", url: "/services/managed-ai-seo/aeo" },
+          { name: "Managed AI SEO", url: "/local-seo-services" },
+          { name: "Answer Engine Optimization", url: "/local-seo-services/aeo" },
         ]}
       />
 
@@ -520,7 +520,7 @@ const AEO = () => {
             </div>
 
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
-              <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+              <Link to="/local-seo-services" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
               </Link>
             </div>

@@ -249,18 +249,18 @@ const TechnicalSEO = () => {
       <Head>
         <title>Technical SEO for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz provides managed technical SEO for local service businesses. Crawlability, indexation, schema, site speed, and ongoing monitoring powered by Agentic AI Playbooks." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/technical-seo/" />
+        <link rel="canonical" href="https://growsmallbiz.io/local-seo-services/technical-seo/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Technical SEO for Local Service Businesses"
         serviceType="Technical SEO"
         description="Managed technical SEO services for local service businesses. Crawlability diagnostics, indexation analysis, schema markup, site speed optimization, and ongoing monitoring powered by Agentic AI Playbooks."
-        url="/services/managed-ai-seo/technical-seo"
+        url="/local-seo-services/technical-seo"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/managed-ai-seo" },
-          { name: "Technical SEO", url: "/services/managed-ai-seo/technical-seo" },
+          { name: "Managed AI SEO", url: "/local-seo-services" },
+          { name: "Technical SEO", url: "/local-seo-services/technical-seo" },
         ]}
       />
 
@@ -579,7 +579,7 @@ const TechnicalSEO = () => {
             </p>
 
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
-              <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+              <Link to="/local-seo-services" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
               </Link>
             </div>

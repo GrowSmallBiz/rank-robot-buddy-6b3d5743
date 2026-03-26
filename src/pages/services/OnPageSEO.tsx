@@ -242,18 +242,18 @@ const OnPageSEO = () => {
       <Head>
         <title>On-Page SEO for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="Managed on-page SEO execution for local service businesses. GrowSmallBiz optimizes title tags, headings, content, internal links, and page structure to improve rankings and conversions." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/on-page-seo/" />
+        <link rel="canonical" href="https://growsmallbiz.io/local-seo-services/on-page-seo/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="On-Page SEO"
         serviceType="On-Page Search Engine Optimization"
         description="Managed on-page SEO execution for local service businesses. Optimize title tags, headings, content structure, internal linking, and conversion elements across service and location pages."
-        url="/services/managed-ai-seo/on-page-seo"
+        url="/local-seo-services/on-page-seo"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/managed-ai-seo" },
-          { name: "On-Page SEO", url: "/services/managed-ai-seo/on-page-seo" },
+          { name: "Managed AI SEO", url: "/local-seo-services" },
+          { name: "On-Page SEO", url: "/local-seo-services/on-page-seo" },
         ]}
       />
 
@@ -593,7 +593,7 @@ const OnPageSEO = () => {
 
               {/* Internal link back to parent */}
               <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-                <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+                <Link to="/local-seo-services" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                   ← Back to Managed AI SEO Overview
                 </Link>
               </div>

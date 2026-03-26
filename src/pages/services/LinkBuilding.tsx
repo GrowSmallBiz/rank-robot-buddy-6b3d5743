@@ -181,18 +181,18 @@ const LinkBuilding = () => {
       <Head>
         <title>Premium SEO Link Building Services For Local Service Businesses: Build Authority in Your Local Market | GrowSmallBiz</title>
         <meta name="description" content="High-authority backlinks are still one of the strongest signals Google uses to rank pages. GrowSmallBiz earns real, editorially placed links from relevant sites for local service businesses." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/link-building/" />
+        <link rel="canonical" href="https://growsmallbiz.io/local-seo-services/link-building/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Link Building for Local Service Businesses"
         serviceType="Link Building SEO"
         description="GrowSmallBiz's managed link-building service earns real, editorially placed links from relevant sites — so you rank higher, attract more qualified traffic, and grow your local authority."
-        url="/services/managed-ai-seo/link-building"
+        url="/local-seo-services/link-building"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/managed-ai-seo" },
-          { name: "Link Building", url: "/services/managed-ai-seo/link-building" },
+          { name: "Managed AI SEO", url: "/local-seo-services" },
+          { name: "Link Building", url: "/local-seo-services/link-building" },
         ]}
       />
 
@@ -517,7 +517,7 @@ const LinkBuilding = () => {
             </div>
 
             <div className="text-center mt-12 animate-fade-up" style={{ animationDelay: "0.45s" }}>
-              <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+              <Link to="/local-seo-services" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
               </Link>
             </div>

@@ -15,12 +15,12 @@ Canonical: https://growsmallbiz.io/
 
 ## Services
 - Services: https://growsmallbiz.io/services/
-- Managed AI SEO: https://growsmallbiz.io/services/managed-ai-seo/
-- AEO: https://growsmallbiz.io/services/managed-ai-seo/aeo/
-- Authority Building: https://growsmallbiz.io/services/managed-ai-seo/authority-building/
-- GEO: https://growsmallbiz.io/services/managed-ai-seo/geo/
-- Link Building: https://growsmallbiz.io/services/managed-ai-seo/link-building/
-- Local SEO: https://growsmallbiz.io/services/managed-ai-seo/local-seo/
+- Managed AI SEO: https://growsmallbiz.io/local-seo-services/
+- AEO: https://growsmallbiz.io/local-seo-services/aeo/
+- Authority Building: https://growsmallbiz.io/local-seo-services/authority-building/
+- GEO: https://growsmallbiz.io/local-seo-services/geo/
+- Link Building: https://growsmallbiz.io/local-seo-services/link-building/
+- Local SEO: https://growsmallbiz.io/local-seo-services/local-seo/
 - Paid Ads: https://growsmallbiz.io/services/paid-ads/
 - Website Design: https://growsmallbiz.io/services/website-design/
 
