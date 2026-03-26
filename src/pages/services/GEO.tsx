@@ -7,9 +7,12 @@ import { ServiceHero } from "@/components/services/ServiceHero";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { CardCTA } from "@/components/services";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import { baseContactCTA } from "@/config/contactCTA";
+import { Link } from "react-router-dom";
+import geoHeroBg from "@/assets/geo-hero-bg.jpg";
 import {
   Globe,
   ArrowRight,
@@ -28,6 +31,7 @@ import {
   Award,
   ClipboardCheck,
   Code2,
+  AlertTriangle,
 } from "lucide-react";
 
 const PRIMARY_CTA_BASE = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
@@ -79,6 +83,29 @@ const geoIncludes = [
     paragraphs: [
       "Large language models powering tools like Google AI Overviews extract and synthesize information from structured, well-presented sources. GrowSmallBiz applies specific formatting methodologies to your service descriptions, FAQs, and supporting content — improving their suitability for LLM-based discovery without sacrificing readability for the human visitors who land on your pages.",
     ],
+  },
+];
+
+const whyGeoMatters = [
+  {
+    icon: Eye,
+    title: "Get Considered Earlier",
+    description: "When search systems can clearly understand your services, locations, and credibility, your business has a better chance of being surfaced earlier in the buying journey.",
+  },
+  {
+    icon: Award,
+    title: "Build Trust Before the First Click",
+    description: "Strong GEO supports the same signals people use to judge credibility: accurate service information, clear answers, consistent citations, strong reviews, and a reliable web presence.",
+  },
+  {
+    icon: AlertTriangle,
+    title: "Reduce Visibility Gaps",
+    description: "Many local businesses do strong work offline but send mixed signals online. GEO helps close that gap so your digital presence better reflects the quality of your business.",
+  },
+  {
+    icon: Target,
+    title: "Support Calls, Leads, and Booked Jobs",
+    description: "The goal is not abstract visibility. The goal is stronger discoverability that contributes to more qualified inquiries and more opportunities to win work.",
   },
 ];
 
@@ -169,36 +196,37 @@ const GEO = () => {
           badge={{ icon: Globe, text: "Managed AI SEO" }}
           title={<>Managed GEO Services for Local{" "}<br className="hidden md:inline" /></>}
           titleHighlight="Service Businesses"
-          subtitle=""
-          preCtaContent={
-            <div className="space-y-6 max-w-3xl mx-auto text-center mb-4">
-              <h2 className="text-xl md:text-2xl font-display font-semibold text-foreground">
-                Get Found Where Your Next Customer Is Already Searching
-              </h2>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Search behavior is shifting. More consumers are turning to AI-powered tools — Google AI Overviews, conversational search assistants, generative discovery engines — to find, compare, and choose local service providers. If your business is not visible in those environments, competitors who are will take the work.
-              </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                GrowSmallBiz helps local service businesses become easier for AI systems to identify, understand, and surface — through a managed methodology built for the new reality of search.
-              </p>
-            </div>
-          }
+          subtitle="Get Found Where Your Next Customer Is Already Searching"
+          description="Search behavior is shifting. More consumers are turning to AI-powered tools — Google AI Overviews, conversational search assistants, generative discovery engines — to find, compare, and choose local service providers. If your business is not visible in those environments, competitors who are will take the work."
+          note="GrowSmallBiz helps local service businesses become easier for AI systems to identify, understand, and surface — through a managed methodology built for the new reality of search."
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
             variant: "hero",
             external: true,
           }}
-          overlayOpacity={85}
+          secondaryCTA={{
+            label: "Get Your Free SEO Audit",
+            href: SECONDARY_CTA_URL,
+            variant: "heroOutline",
+            external: true,
+          }}
+          backgroundImage={geoHeroBg}
+          overlayOpacity={82}
         />
 
         {/* SECTION 2 — WHAT IS GEO AND WHY IT MATTERS */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                title="What Is Generative Engine Optimization — and Why Should You Care?"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE FOUNDATION</p>
+                <h2 className="section-title">
+                  What Is{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Generative Engine Optimization</span>
+                  {" "}— and Why Should You Care?
+                </h2>
+              </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
@@ -225,9 +253,13 @@ const GEO = () => {
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                title="The Shift Is Already Happening — Here Is What It Means for Your Business"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE SHIFT</p>
+                <h2 className="section-title">
+                  The Shift Is Already Happening — Here Is What It Means for{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Business</span>
+                </h2>
+              </div>
 
               <div className="space-y-8 max-w-3xl mx-auto animate-fade-up">
                 <div>
@@ -251,11 +283,18 @@ const GEO = () => {
                     <p>
                       If your business has unclear entity signals, inconsistent citations, or content that AI systems cannot confidently interpret, the result is predictable:
                     </p>
-                    <ul className="list-disc list-inside space-y-2 pl-2">
-                      <li>Your competitors are mentioned in AI-generated answers. You are not.</li>
-                      <li>AI-assisted searches in your category return other businesses by name. Yours is absent.</li>
-                      <li>Prospective customers using AI discovery tools never encounter your business.</li>
-                    </ul>
+                    <div className="space-y-3">
+                      {[
+                        "Your competitors are mentioned in AI-generated answers. You are not.",
+                        "AI-assisted searches in your category return other businesses by name. Yours is absent.",
+                        "Prospective customers using AI discovery tools never encounter your business.",
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-3 p-4 rounded-xl border border-border/50 bg-background/60">
+                          <AlertTriangle className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                          <p className="text-foreground/90">{item}</p>
+                        </div>
+                      ))}
+                    </div>
                     <p>
                       Ignoring AI-search visibility is not maintaining the status quo. It is falling behind at a moment when the gap between AI-visible and AI-invisible businesses is widening.
                     </p>
@@ -276,10 +315,17 @@ const GEO = () => {
         {/* SECTION 4 — WHAT GROWSMALLBIZ INCLUDES UNDER GEO */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              title="What GrowSmallBiz's GEO Methodology Includes"
-              description="GEO at GrowSmallBiz is a coordinated set of actions that work together to make your business easier for AI systems to find, understand, and recommend. Every component is managed as part of your ongoing AI SEO engagement."
-            />
+            <div className="text-center mb-16 animate-fade-up">
+              <p className="section-subtitle">WHAT WE BUILD</p>
+              <h2 className="section-title">
+                What GrowSmallBiz's{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO Methodology</span>
+                {" "}Includes
+              </h2>
+              <p className="section-description mt-4">
+                GEO at GrowSmallBiz is a coordinated set of actions that work together to make your business easier for AI systems to find, understand, and recommend. Every component is managed as part of your ongoing AI SEO engagement.
+              </p>
+            </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {geoIncludes.map((item, index) => (
@@ -307,9 +353,13 @@ const GEO = () => {
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                title="Managed GEO — Expert Strategy Backed by Agentic AI SEO Playbook"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">THE EXECUTION</p>
+                <h2 className="section-title">
+                  Managed GEO — Expert Strategy Backed by{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI SEO Playbook</span>
+                </h2>
+              </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
@@ -327,39 +377,54 @@ const GEO = () => {
                 <p>
                   GrowSmallBiz founder Subrata Guha brings more than 30 years of Fortune 500 experience in marketing, sales, and digital transformation to this work — shaping an approach that is strategic, systematic, and grounded in real business outcomes.
                 </p>
-                <p>
-                  What you get is a partner who understands both the technical requirements of AI-search visibility and the practical realities of running a local service business.
-                </p>
+
+                <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
+                  <p className="text-foreground leading-relaxed">
+                    What you get is a partner who understands both the technical requirements of AI-search visibility and the practical realities of running a local service business.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
+        {/* MID-PAGE CTA */}
+        <CardCTA
+          title="Ready to Strengthen Your AI-Search Visibility?"
+          description="Schedule a strategy session to learn how managed GEO fits into your growth plan."
+          buttonText="Schedule Strategy Session"
+          buttonHref={PRIMARY_CTA_URL}
+          sectionClassName="py-16"
+        />
+
         {/* SECTION 6 — WHY GEO MATTERS FOR LOCAL SERVICE BUSINESSES */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                title="AI Search Does Not Just Drive Clicks — It Shapes Who Gets Considered"
-              />
+            <div className="text-center mb-16 animate-fade-up">
+              <p className="section-subtitle">WHY IT MATTERS</p>
+              <h2 className="section-title">
+                Why GEO Matters for{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local Service Businesses</span>
+              </h2>
+              <p className="section-description mt-4">
+                For local service businesses, visibility is not just about traffic. It is about being included in the consideration set when someone nearby needs help.
+              </p>
+            </div>
 
-              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
-                <p>
-                  One of the most important things to understand about GEO is that AI-search visibility influences who gets seen, trusted, and shortlisted — often before a prospect ever clicks through to a website.
-                </p>
-                <p>
-                  When AI systems generate answers to questions like "Which [service] provider in [city] is most trusted?", they are not just listing options. They are conferring credibility. Being surfaced in that answer positions your business as a legitimate, authoritative choice. Being absent means your competitors may be building trust with your ideal customers at the exact moment those customers are forming their decision.
-                </p>
-                <p>
-                  The work required for AI visibility also makes your business more credible to human searchers. Entity clarity strengthens your Google Business Profile and your citations. Structured content gives prospective customers clear, specific answers to pre-hire questions. Trust signals that AI systems evaluate — reviews, consistent citations, authoritative mentions — are the same signals that build confidence with human buyers.
-                </p>
-                <p>
-                  This is not a trade-off between optimizing for AI and optimizing for people. The two are aligned. A business that is clear, consistent, and well-structured across its digital presence is compelling to both.
-                </p>
-                <p>
-                  That is what makes GEO a long-term investment. The stronger your entity clarity, content structure, and trust signals become, the more durable your visibility — across today's AI-assisted search landscape and whatever comes next.
-                </p>
-              </div>
+            <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {whyGeoMatters.map((item, i) => (
+                <GlowCard
+                  key={i}
+                  className="p-6 animate-fade-up"
+                  style={{ animationDelay: `${i * 0.05}s` }}
+                >
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <item.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-base font-semibold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                </GlowCard>
+              ))}
             </div>
           </div>
         </section>
@@ -367,12 +432,26 @@ const GEO = () => {
         {/* SECTION 7 — WHY GROWSMALLBIZ FOR GEO */}
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              title="Why Local Service Businesses Choose GrowSmallBiz for GEO"
-              description="There are general marketing agencies, SEO-focused firms, and AI tools that promise to automate everything. GrowSmallBiz is none of those things. We are a specialized, managed AI SEO agency built exclusively for local service businesses — and that focus matters when it comes to GEO."
-            />
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">OUR DIFFERENCE</p>
+                <h2 className="section-title">
+                  Why Local Service Businesses Choose GrowSmallBiz for{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO</span>
+                </h2>
+              </div>
 
-            <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
+                <p>
+                  There are general marketing agencies, SEO-focused firms, and AI tools that promise to automate everything. GrowSmallBiz is none of those things.
+                </p>
+                <p>
+                  We are a specialized, managed AI SEO agency built exclusively for local service businesses — and that focus matters when it comes to GEO.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto mt-10">
               {whyGSBItems.map((item, i) => (
                 <GlowCard
                   key={i}
@@ -388,6 +467,16 @@ const GEO = () => {
                   ))}
                 </GlowCard>
               ))}
+            </div>
+
+            <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
+              Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
+            </p>
+
+            <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
+              <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+                ← Back to Managed AI SEO Overview
+              </Link>
             </div>
           </div>
         </section>
@@ -412,6 +501,7 @@ const GEO = () => {
         <section id="final-cta" className="py-20 lg:py-28" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
+              <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
                 Your Customers Are Already Using AI to Find Local Businesses.{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-primary italic">Is Yours Easy to Find?</span>
@@ -422,24 +512,31 @@ const GEO = () => {
               <p className="text-base text-muted-foreground mb-10 max-w-3xl mx-auto">
                 Whether you are just beginning to explore what GEO means for your business or you already know you need to close an AI-visibility gap, the next step is the same: a conversation with a strategist who specializes in local service businesses and knows exactly how to make yours more visible in the AI-driven environments where your next client is searching.
               </p>
+            </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="hero" size="lg" asChild>
-                  <a href={PRIMARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                    Schedule Your Strategy Session
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </a>
-                </Button>
-                <Button variant="heroOutline" size="lg" asChild>
-                  <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                    Get Your Free SEO Audit
-                  </a>
-                </Button>
-              </div>
+            <CardCTA
+              title="Let's Strengthen Your GEO Visibility"
+              description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
+              buttonText="Schedule Strategy Session"
+              buttonHref={PRIMARY_CTA_URL}
+              sectionClassName="pt-0 pb-0"
+            />
 
-              <p className="text-sm text-muted-foreground mt-6 max-w-2xl mx-auto">
-                Not ready for a full session? Start with a free analysis of your current SEO and AI-search visibility.
-              </p>
+            <div className="flex justify-center mt-6 animate-fade-up">
+              <Button variant="heroOutline" size="lg" asChild>
+                <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
+                  Get Your Free SEO Audit
+                </a>
+              </Button>
+            </div>
+
+            <p className="text-sm text-muted-foreground mt-6 text-center max-w-2xl mx-auto">
+              Not ready for a full session? Start with a free analysis of your current SEO and AI-search visibility.
+            </p>
+
+            <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+              <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
+              <p>The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI.</p>
             </div>
           </div>
         </section>
