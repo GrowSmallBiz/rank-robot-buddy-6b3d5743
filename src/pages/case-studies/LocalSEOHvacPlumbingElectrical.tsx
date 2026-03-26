@@ -173,6 +173,42 @@ const LocalSEOHvacPlumbingElectrical = () => {
           overlayOpacity={85}
         />
 
+        {/* ═══ STICKY JUMP NAV ═══ */}
+        <div
+          ref={navRef}
+          className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
+        >
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-center gap-2 py-3">
+              <button
+                onClick={() => scrollTo("local-seo")}
+                className={`px-5 py-2.5 rounded-full text-sm font-display font-semibold transition-all duration-300 ${
+                  activeSection === "local-seo"
+                    ? "bg-primary text-primary-foreground shadow-md"
+                    : "bg-card text-muted-foreground hover:text-foreground hover:bg-secondary border border-border"
+                }`}
+              >
+                <Search className="inline-block w-4 h-4 mr-2 -mt-0.5" />
+                Local SEO Results
+              </button>
+              <button
+                onClick={() => scrollTo("google-ppc")}
+                className={`px-5 py-2.5 rounded-full text-sm font-display font-semibold transition-all duration-300 ${
+                  activeSection === "google-ppc"
+                    ? "bg-primary text-primary-foreground shadow-md"
+                    : "bg-card text-muted-foreground hover:text-foreground hover:bg-secondary border border-border"
+                }`}
+              >
+                <MousePointerClick className="inline-block w-4 h-4 mr-2 -mt-0.5" />
+                Google PPC Results
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* ═══ LOCAL SEO SECTION ═══ */}
+        <div id="local-seo">
+
         {/* ═══ SECTION 2: SUMMARY PROOF CARDS ═══ */}
         <section className="py-20 relative">
           <div className="absolute inset-0 section-glow" />
