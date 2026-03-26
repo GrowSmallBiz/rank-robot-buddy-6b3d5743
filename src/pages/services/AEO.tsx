@@ -4,7 +4,6 @@ import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
-import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
@@ -133,15 +132,6 @@ const aiPlaybookItems = [
   },
 ];
 
-const processSteps = [
-  "Question Discovery — Map what buyers in your category are asking",
-  "Intent Classification — Sort questions by stage: awareness, comparison, decision",
-  "Answer Content Creation — Write direct-answer content using structured formatting",
-  "Schema Application — Mark up all FAQ and structured content for search engines",
-  "Placement Monitoring — Track snippets, PAA placements, and AI mentions",
-  "Coverage Expansion — Add new questions continuously as search behavior evolves",
-];
-
 const useCases = [
   {
     icon: Heart,
@@ -253,7 +243,7 @@ const AEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MessageCircleQuestion, text: "Managed AI SEO — AEO Pillar" }}
-          title={<>AEO Services That Help Local Service Businesses Become the </>}
+          title={<>AEO Services That Help Local Service Businesses Become the{" "}</>}
           titleHighlight="Answer"
           subtitle="Search behavior has shifted. Local buyers are asking full questions, and modern search experiences increasingly surface direct answers instead of just lists of links."
           description="GrowSmallBiz helps local service businesses build answer-ready content architecture that improves visibility across search ecosystems, strengthens trust early, and turns more search impressions into calls, inquiries, and booked jobs."
@@ -431,7 +421,7 @@ const AEO = () => {
                 </p>
               </div>
 
-              {/* 5 execution elements as cards */}
+              {/* 5 execution elements */}
               <div className="space-y-0 max-w-3xl mx-auto mt-12">
                 {aiPlaybookItems.map((item, index) => (
                   <div key={index}>
@@ -453,36 +443,9 @@ const AEO = () => {
                   </div>
                 ))}
               </div>
-
-              {/* Process Steps */}
-              <div className="mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
-                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-6 text-center">AEO Execution Process</p>
-                <div className="space-y-0">
-                  {processSteps.map((step, index) => (
-                    <div key={index}>
-                      <div className="flex items-start gap-4 py-4 px-6">
-                        <span className="text-2xl font-display font-bold text-primary shrink-0">{index + 1}</span>
-                        <p className="text-foreground/90 leading-relaxed pt-1">{step.substring(2)}</p>
-                      </div>
-                      {index < processSteps.length - 1 && (
-                        <div className="border-b border-primary/10 mx-6" />
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </section>
-
-        {/* MID-PAGE CTA */}
-        <CardCTA
-          title="Ready to Become the Answer in Search?"
-          description="Schedule a strategy session to learn how AEO fits into your growth plan."
-          buttonText="Schedule Strategy Session"
-          buttonHref={PRIMARY_CTA_URL}
-          sectionClassName="py-16"
-        />
 
         {/* SECTION 6 — USE CASES FOR LOCAL SERVICE BUSINESSES */}
         <section className="py-24">
@@ -556,10 +519,6 @@ const AEO = () => {
               ))}
             </div>
 
-            <p className="text-center text-sm text-muted-foreground mt-10 italic max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
-            </p>
-
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
               <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
@@ -570,7 +529,7 @@ const AEO = () => {
 
         {/* SECTION 8 — FAQ */}
         <FAQSection
-          title="Frequently Asked Questions About AEO"
+          title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">AEO</span></>}
           faqs={faqs}
           schemaType="FAQPage"
           contactCTA={{
@@ -595,15 +554,12 @@ const AEO = () => {
               </p>
             </div>
 
-            <CardCTA
-              title="Schedule Your Strategy Session"
-              description="See how AEO fits into a broader managed AI SEO system for your business."
-              buttonText="Schedule Strategy Session"
-              buttonHref={PRIMARY_CTA_URL}
-              sectionClassName="pt-0 pb-0"
-            />
-
-            <div className="flex justify-center mt-6 animate-fade-up">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up">
+              <Button variant="hero" size="lg" asChild>
+                <a href={PRIMARY_CTA_URL} target="_blank" rel="noopener noreferrer">
+                  Schedule Strategy Session
+                </a>
+              </Button>
               <Button variant="heroOutline" size="lg" asChild>
                 <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
                   Free SEO Audit
@@ -615,7 +571,7 @@ const AEO = () => {
               <p>AEO is one pillar of the GrowSmallBiz Managed AI SEO system. Schedule a session to see how all components work together for your business.</p>
             </div>
 
-            <div className="text-center mt-8 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
               <p>The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI.</p>
             </div>
