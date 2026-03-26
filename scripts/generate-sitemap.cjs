@@ -33,7 +33,7 @@ function getPriority(route) {
   if (['/about', '/contact'].includes(route)) return '0.8';
   if (route.startsWith('/services/') && !route.includes('/managed-ai-seo/')) return '0.8';
   if (route === '/services/managed-ai-seo') return '0.8';
-  if (route.startsWith('/services/managed-ai-seo/')) return '0.7';
+  if (route.startsWith('/local-seo-services/')) return '0.7';
   if (['/privacy-policy', '/terms-of-service'].includes(route)) return '0.4';
   return '0.6';
 }

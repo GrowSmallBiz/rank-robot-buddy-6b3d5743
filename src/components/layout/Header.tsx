@@ -81,49 +81,49 @@ export const Header = () => {
 
                 {/* Managed AI SEO */}
                 <Link
-                  to="/services/managed-ai-seo"
+                  to="/local-seo-services"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Managed AI SEO Services
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/aeo"
+                  to="/local-seo-services/aeo"
                   className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Answer Engine Optimization (AEO)
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/geo"
+                  to="/local-seo-services/geo"
                   className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Generative Engine Optimization (GEO)
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/local-seo"
+                  to="/local-seo-services/local-seo"
                   className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Local SEO
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/authority-building"
+                  to="/local-seo-services/authority-building"
                   className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Authority Building
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/link-building"
+                  to="/local-seo-services/link-building"
                   className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Link Building
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/technical-seo"
+                  to="/local-seo-services/technical-seo"
                   className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Technical SEO
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/on-page-seo"
+                  to="/local-seo-services/on-page-seo"
                   className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   On-Page SEO
@@ -227,56 +227,56 @@ export const Header = () => {
 
                 {/* Managed AI SEO */}
                 <Link
-                  to="/services/managed-ai-seo"
+                  to="/local-seo-services"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Managed AI SEO Services
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/aeo"
+                  to="/local-seo-services/aeo"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >
                   Answer Engine Optimization (AEO)
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/geo"
+                  to="/local-seo-services/geo"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >
                   Generative Engine Optimization (GEO)
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/local-seo"
+                  to="/local-seo-services/local-seo"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >
                   Local SEO
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/authority-building"
+                  to="/local-seo-services/authority-building"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >
                   Authority Building
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/link-building"
+                  to="/local-seo-services/link-building"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >
                   Link Building
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/technical-seo"
+                  to="/local-seo-services/technical-seo"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >
                   Technical SEO
                 </Link>
                 <Link
-                  to="/services/managed-ai-seo/on-page-seo"
+                  to="/local-seo-services/on-page-seo"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >

@@ -187,18 +187,18 @@ const LocalSEO = () => {
       <Head>
         <title>Local SEO for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps local service businesses improve visibility in Google Business Profile, map pack, and local search results through managed Local SEO." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/local-seo/" />
+        <link rel="canonical" href="https://growsmallbiz.io/local-seo-services/local-seo/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Local SEO for Local Service Businesses"
         serviceType="Local Search Engine Optimization"
         description="Managed Local SEO services for local service businesses. Improve visibility in Google Business Profile, map pack, citations, and local organic results."
-        url="/services/managed-ai-seo/local-seo"
+        url="/local-seo-services/local-seo"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/managed-ai-seo" },
-          { name: "Local SEO", url: "/services/managed-ai-seo/local-seo" },
+          { name: "Managed AI SEO", url: "/local-seo-services" },
+          { name: "Local SEO", url: "/local-seo-services/local-seo" },
         ]}
       />
 
@@ -518,7 +518,7 @@ const LocalSEO = () => {
 
             {/* Internal link back to parent */}
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
-              <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+              <Link to="/local-seo-services" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
               </Link>
             </div>
