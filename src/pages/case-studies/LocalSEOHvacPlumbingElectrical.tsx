@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import {
   ArrowRight,
   TrendingUp,
-  BarChart3,
   Search,
 } from "lucide-react";
 import { PdfViewer } from "@/components/PdfViewerWrapper";
@@ -17,6 +16,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ServiceHero } from "@/components/services/ServiceHero";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { CardCTA } from "@/components/services";
+import heroBg from "@/assets/case-studies-hvac-hero-bg.jpg";
 
 /* ─── Summary Proof Cards ─── */
 const summaryCards = [
@@ -52,33 +56,7 @@ const summaryCards = [
   },
 ];
 
-/* ─── Image placeholder ─── */
-const CaseImage = ({ name }: { name: string }) => (
-  <div className="my-8 mx-auto max-w-4xl rounded-xl border border-border bg-muted/30 p-8 text-center">
-    <div className="flex flex-col items-center gap-2 text-muted-foreground">
-      <BarChart3 className="w-10 h-10 opacity-40" />
-      <span className="text-sm font-medium">{name}</span>
-      <span className="text-xs opacity-60">Image placeholder — upload to display</span>
-    </div>
-  </div>
-);
-
-/* ─── Case Block Component ─── */
-const CaseBlock = ({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) => (
-  <div className="mb-16 last:mb-0">
-    <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-      {title}
-    </h3>
-    <div className="prose-custom space-y-6">{children}</div>
-  </div>
-);
-
+/* ─── Typography helpers ─── */
 const P = ({ children }: { children: React.ReactNode }) => (
   <p className="text-foreground/85 leading-relaxed">{children}</p>
 );
@@ -124,6 +102,22 @@ const MicroCTA = () => (
   </div>
 );
 
+/* ─── PDF Accordion Block ─── */
+const PdfAccordion = ({ id, src }: { id: string; src: string }) => (
+  <div className="mt-10">
+    <Accordion type="single" collapsible>
+      <AccordionItem value={id} className="border border-border rounded-xl overflow-hidden">
+        <AccordionTrigger className="px-6 py-4 text-base font-display font-semibold text-foreground hover:no-underline bg-card hover:bg-secondary/50">
+          View Full Case Study Report
+        </AccordionTrigger>
+        <AccordionContent className="p-0">
+          <PdfViewer src={src} />
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  </div>
+);
+
 /* ═══════════════════════════════════════════════════════
    PAGE COMPONENT
    ═══════════════════════════════════════════════════════ */
@@ -153,26 +147,15 @@ const LocalSEOHvacPlumbingElectrical = () => {
       <Header />
       <main>
         {/* ═══ SECTION 1: HERO ═══ */}
-        <section className="hero-section">
-          <div className="absolute inset-0" style={{ backgroundColor: "hsl(var(--background) / 0.85)" }} />
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="service-badge mb-6 animate-fade-up">
-                <Search className="w-4 h-4" />
-                <span>Case Studies / Local SEO</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight">
-                Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses
-              </h1>
-              <div
-                className="text-lg md:text-xl text-foreground/80 mb-8 animate-fade-up max-w-3xl mx-auto leading-relaxed"
-                style={{ animationDelay: "0.1s" }}
-              >
-                Explore documented local SEO campaign results for HVAC, plumbing, and electrical businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused local SEO execution.
-              </div>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          badge={{ icon: Search, text: "Case Studies / Local SEO" }}
+          title="Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses"
+          subtitle="Explore documented local SEO campaign results for HVAC, plumbing, and electrical businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused local SEO execution."
+          primaryCTA={{ label: "Book a Strategy Session", href: "/contact" }}
+          secondaryCTA={{ label: "Request a Website & SEO Audit", href: "/contact" }}
+          backgroundImage={heroBg}
+          overlayOpacity={85}
+        />
 
         {/* ═══ SECTION 2: SUMMARY PROOF CARDS ═══ */}
         <section className="py-20 relative">
@@ -223,310 +206,279 @@ const LocalSEOHvacPlumbingElectrical = () => {
           </div>
         </section>
 
-        {/* ═══ SECTION 4: CASE STUDIES ═══ */}
-        <section className="py-16 relative">
+        {/* ═══ SECTION 4: TABBED CASE STUDIES ═══ */}
+        <section className="py-16 relative bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
+              <Tabs defaultValue="hvac-sacramento" className="w-full">
+                <TabsList className="w-full h-auto flex-wrap bg-card/80 backdrop-blur-sm border border-border rounded-xl p-2 mb-10">
+                  <TabsTrigger
+                    value="hvac-sacramento"
+                    className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
+                  >
+                    HVAC — Sacramento
+                  </TabsTrigger>
+                  <TabsTrigger
+                    value="hvac-plumbing-fairbanks"
+                    className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
+                  >
+                    HVAC & Plumbing — Fairbanks
+                  </TabsTrigger>
+                  <TabsTrigger
+                    value="electrical-oahu"
+                    className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
+                  >
+                    Electrical — Oahu
+                  </TabsTrigger>
+                </TabsList>
 
-              {/* ──────────────────────────────────────────────
-                   CASE 1: HVAC — Sacramento
-                 ────────────────────────────────────────────── */}
-              <CaseBlock title="HVAC — Sacramento">
-                <DetailLabel>Goals</DetailLabel>
-                <BulletList
-                  items={[
-                    "Enhance Keyword Performance",
-                    "Increase Engagement and Visibility",
-                    "20-40% Lead Generation (combo of both GBP calls + onsite conversions (forms/calls depending on the tracking setup)",
-                  ]}
-                />
+                {/* ── TAB 1: HVAC — Sacramento ── */}
+                <TabsContent value="hvac-sacramento">
+                  <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
+                    <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
+                      HVAC — Sacramento
+                    </h3>
+                    <div className="space-y-6">
+                      <DetailLabel>Goals</DetailLabel>
+                      <BulletList
+                        items={[
+                          "Enhance Keyword Performance",
+                          "Increase Engagement and Visibility",
+                          "20-40% Lead Generation (combo of both GBP calls + onsite conversions (forms/calls depending on the tracking setup)",
+                        ]}
+                      />
 
-                <DetailLabel>Action Plan</DetailLabel>
-                <BulletList
-                  items={[
-                    "Extensive keyword research to find relevant keywords including competitive analysis",
-                    "Optimize GMB profile from top to bottom",
-                    "Built relevant niche and local citations",
-                    "Optimized onsite for location signals",
-                    "Post weekly on their GMB profile to increase additional signals",
-                    "Evaluate the site's content silo for content strategy",
-                    "Create and publish monthly blogs as supplementary content for target keywords",
-                  ]}
-                />
+                      <DetailLabel>Action Plan</DetailLabel>
+                      <BulletList
+                        items={[
+                          "Extensive keyword research to find relevant keywords including competitive analysis",
+                          "Optimize GMB profile from top to bottom",
+                          "Built relevant niche and local citations",
+                          "Optimized onsite for location signals",
+                          "Post weekly on their GMB profile to increase additional signals",
+                          "Evaluate the site's content silo for content strategy",
+                          "Create and publish monthly blogs as supplementary content for target keywords",
+                        ]}
+                      />
 
-                <P>
-                  We have used Ahrefs, a trusted third-party tool, to check a website's organic traffic performance. As seen, we have seen an increase in average organic traffic, average organic traffic value, and organic pages in April - July. In August, we saw a decline. This decline can be attributed to the recent August 2023 Core Update. To recover, we encourage updating pages with helpful content to improve the user experience on the website.
-                </P>
+                      <P>
+                        We have used Ahrefs, a trusted third-party tool, to check a website's organic traffic performance. As seen, we have seen an increase in average organic traffic, average organic traffic value, and organic pages in April - July. In August, we saw a decline. This decline can be attributed to the recent August 2023 Core Update. To recover, we encourage updating pages with helpful content to improve the user experience on the website.
+                      </P>
 
-                <CaseImage name="hvac-ga-ahrefs.png" />
+                      <SubHead>Google Search Console</SubHead>
+                      <P>
+                        Here is the website's Google Sarch Console metrics. In June - November 2023, total clicks increased by 30.23% and total impressions by 91.47%. The average position also improved from 42.6 to 38.7.
+                      </P>
 
-                <SubHead>Google Search Console</SubHead>
-                <P>
-                  Here is the website's Google Sarch Console metrics. In June - November 2023, total clicks increased by 30.23% and total impressions by 91.47%. The average position also improved from 42.6 to 38.7.
-                </P>
+                      <SubHead>Google Business Profile</SubHead>
 
-                <SubHead>Google Business Profile</SubHead>
+                      <DetailLabel>GBP Profile Interactions</DetailLabel>
+                      <P>
+                        In July - November 2023, Google Business Profile interactions increased by 5.5% as compared to interactions in July - November 2022.
+                      </P>
 
-                <DetailLabel>GBP Profile Interactions</DetailLabel>
-                <P>
-                  In July - November 2023, Google Business Profile interactions increased by 5.5% as compared to interactions in July - November 2022.
-                </P>
+                      <DetailLabel>GBP Calls</DetailLabel>
+                      <P>
+                        In July - November 2023, Google Business Profile calls increased by 4.8% as compared to calls in July - November 2022.
+                      </P>
 
-                <DetailLabel>GBP Calls</DetailLabel>
-                <P>
-                  In July - November 2023, Google Business Profile calls increased by 4.8% as compared to calls in July - November 2022.
-                </P>
+                      <DetailLabel>GBP Direction Requests</DetailLabel>
+                      <P>
+                        In July - November 2023, Google Business Profile direction requests increased by 58.7% as compared to direction requests in July - November 2022.
+                      </P>
 
-                <DetailLabel>GBP Direction Requests</DetailLabel>
-                <P>
-                  In July - November 2023, Google Business Profile direction requests increased by 58.7% as compared to direction requests in July - November 2022.
-                </P>
+                      <SubHead>Keyword</SubHead>
 
-                <CaseImage name="hvac-gsc-gbp-interactions.png" />
-                <CaseImage name="hvac-gbp-calls-directions.png" />
+                      <DetailLabel>Tracked Keyword</DetailLabel>
+                      <P>
+                        Here are the improvements to the keywords we track. As seen, we had the following keyword position increase:
+                      </P>
+                      <BulletList
+                        items={[
+                          "ac maintenance services increased by 21 positions in the local finder",
+                          "ac installation service increased by 18 positions in the local finder",
+                          "ac maintenance near me increased by 18 positions in local finder",
+                          "ac service maintenance increased by 12 positions in local finder",
+                          "ac repair services sacramento increased by 1 positions in local finder",
+                        ]}
+                      />
 
-                <SubHead>Keyword</SubHead>
+                      <DetailLabel>LSI Keyword</DetailLabel>
+                      <P>
+                        Additionally, here are the LSI keywords the website gained in addition to the ones we track. LSI (latent semantic indexing) keywords are words or phrases that are conceptually related to a target keyword.
+                      </P>
 
-                <DetailLabel>Tracked Keyword</DetailLabel>
-                <P>
-                  Here are the improvements to the keywords we track. As seen, we had the following keyword position increase:
-                </P>
-                <BulletList
-                  items={[
-                    "ac maintenance services increased by 21 positions in the local finder",
-                    "ac installation service increased by 18 positions in the local finder",
-                    "ac maintenance near me increased by 18 positions in local finder",
-                    "ac service maintenance increased by 12 positions in local finder",
-                    "ac repair services sacramento increased by 1 positions in local finder",
-                  ]}
-                />
+                      <PdfAccordion id="hvac-pdf" src="/case-studies/hvac-sacramento-case-study.pdf" />
+                      <MicroCTA />
+                    </div>
+                  </div>
+                </TabsContent>
 
-                <CaseImage name="hvac-tracked-keywords.png" />
+                {/* ── TAB 2: HVAC & Plumbing — Fairbanks ── */}
+                <TabsContent value="hvac-plumbing-fairbanks">
+                  <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
+                    <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
+                      HVAC & Plumbing — Fairbanks
+                    </h3>
+                    <div className="space-y-6">
+                      <DetailLabel>Synopsis</DetailLabel>
+                      <P>
+                        This HVAC & Plumbing company was in dire need of leads when they came to us in May of 2021. In this industry, most leads are coming from GMB phone calls or Google Ads. We were brought on to improve their GMB visibility and lead generation.
+                      </P>
 
-                <DetailLabel>LSI Keyword</DetailLabel>
-                <P>
-                  Additionally, here are the LSI keywords the website gained in addition to the ones we track. LSI (latent semantic indexing) keywords are words or phrases that are conceptually related to a target keyword.
-                </P>
+                      <DetailLabel>Goal</DetailLabel>
+                      <P>Qualified Leads & Conversions</P>
 
-                <CaseImage name="hvac-lsi-keywords-1.png" />
-                <CaseImage name="hvac-lsi-keywords-2.png" />
-                <CaseImage name="hvac-lsi-keywords-3.png" />
-                <CaseImage name="hvac-lsi-keywords-4.png" />
+                      <DetailLabel>Action Plan</DetailLabel>
+                      <BulletList
+                        items={[
+                          "Extensive keyword research to find relevant keywords including competitive analysis",
+                          "Optimize GMB profile from top to bottom",
+                          "Built relevant niche and local citations",
+                          "Optimized onsite for location signals",
+                          "Posted weekly on their GMB profile to increase additional signals",
+                        ]}
+                      />
 
-                {/* PDF Viewer */}
-                <div className="mt-10">
-                  <Accordion type="single" collapsible>
-                    <AccordionItem value="hvac-pdf" className="border border-border rounded-xl overflow-hidden">
-                      <AccordionTrigger className="px-6 py-4 text-base font-display font-semibold text-foreground hover:no-underline bg-card hover:bg-secondary/50">
-                        View Full Case Study Report
-                      </AccordionTrigger>
-                      <AccordionContent className="p-0">
-                        <PdfViewer src="/case-studies/hvac-sacramento-case-study.pdf" />
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
+                      <DetailLabel>Outcome</DetailLabel>
+                      <BulletList
+                        items={[
+                          "Significant improvement for top service keywords",
+                          "Core plumbing + location map pack rankings",
+                          "1395.2% increase in phone calls",
+                          "520% increase in GMB actions to the website",
+                        ]}
+                      />
 
-                <MicroCTA />
-              </CaseBlock>
+                      <PdfAccordion id="hvac-plumbing-pdf" src="/case-studies/hvac-plumbing-fairbanks-case-study.pdf" />
+                      <MicroCTA />
+                    </div>
+                  </div>
+                </TabsContent>
 
-              {/* ──────────────────────────────────────────────
-                   CASE 2: HVAC & Plumbing — Fairbanks
-                 ────────────────────────────────────────────── */}
-              <CaseBlock title="HVAC & Plumbing — Fairbanks">
-                <DetailLabel>Synopsis</DetailLabel>
-                <P>
-                  This HVAC & Plumbing company was in dire need of leads when they came to us in May of 2021. In this industry, most leads are coming from GMB phone calls or Google Ads. We were brought on to improve their GMB visibility and lead generation.
-                </P>
+                {/* ── TAB 3: Electrical — Oahu ── */}
+                <TabsContent value="electrical-oahu">
+                  <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
+                    <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
+                      Electrical — Oahu
+                    </h3>
+                    <div className="space-y-6">
+                      <DetailLabel>Goal</DetailLabel>
+                      <BulletList
+                        items={[
+                          "Enhance Keyword Performance",
+                          "Increase Engagement and Visibility",
+                          "20-40% increase in conversions/goal completions",
+                        ]}
+                      />
 
-                <DetailLabel>Goal</DetailLabel>
-                <P>Qualified Leads & Conversions</P>
+                      <DetailLabel>Action Plan</DetailLabel>
+                      <BulletList
+                        items={[
+                          "Extensive keyword research to find relevant keyword s including competitive analysis",
+                          "Optimize GMB profile from top to bottom",
+                          "Built relevant niche and local citations",
+                          "Optimized onsite for location signals",
+                          "Post weekly on their GMB profile to increase additional signals",
+                          "Evaluate the site's content silo for content strategy",
+                          "Create and publish monthly blogs as supplementary content for target keywords",
+                        ]}
+                      />
 
-                <DetailLabel>Action Plan</DetailLabel>
-                <BulletList
-                  items={[
-                    "Extensive keyword research to find relevant keywords including competitive analysis",
-                    "Optimize GMB profile from top to bottom",
-                    "Built relevant niche and local citations",
-                    "Optimized onsite for location signals",
-                    "Posted weekly on their GMB profile to increase additional signals",
-                  ]}
-                />
+                      <SubHead>Google Analytics</SubHead>
 
-                <DetailLabel>Outcome</DetailLabel>
-                <BulletList
-                  items={[
-                    "Significant improvement for top service keywords",
-                    "Core plumbing + location map pack rankings",
-                    "1395.2% increase in phone calls",
-                    "520% increase in GMB actions to the website",
-                  ]}
-                />
+                      <DetailLabel>User Acquisition</DetailLabel>
+                      <P>Date Range: December 2023–July 2024</P>
+                      <P>
+                        Here are the user acquisition metrics for the client's website. As seen, organic search is the channel that brings the highest number of new users to the website. Out of 711 new users, organic search contributed 45.29% of the total new users. 44.02% of new users' engaged sessions also came from organic search.
+                      </P>
 
-                <CaseImage name="hvac-plumbing-summary-board.png" />
+                      <DetailLabel>COMPARISON</DetailLabel>
+                      <P>Date Range: December 2023–March 2024 vs. April 2024–July 2024</P>
+                      <P>
+                        If we compare how our strategy improved, we can see an improvement in user acquisition metrics. Below is a comparison of the first half of the campaign vs. the second half of the campaign (December 2023–March 2024 vs. April 2024–July 2024). As seen, new users from organic search increased by 485.11%, and new users' engaged sessions from organic search increased by 218.97%.
+                      </P>
 
-                {/* PDF Viewer */}
-                <div className="mt-10">
-                  <Accordion type="single" collapsible>
-                    <AccordionItem value="hvac-plumbing-pdf" className="border border-border rounded-xl overflow-hidden">
-                      <AccordionTrigger className="px-6 py-4 text-base font-display font-semibold text-foreground hover:no-underline bg-card hover:bg-secondary/50">
-                        View Full Case Study Report
-                      </AccordionTrigger>
-                      <AccordionContent className="p-0">
-                        <PdfViewer src="/case-studies/hvac-plumbing-fairbanks-case-study.pdf" />
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
+                      <SubHead>Traffic Acquisition</SubHead>
+                      <P>Date Range: December 2023–July 2024</P>
+                      <P>
+                        Here are the traffic acquisition metrics for the client's website. Similar to the user acquisition metrics, organic search is the channel that brings the highest number of users and sessions to the website. Out of 711 users and 901 sessions, organic search contributed 46.13% of the total users and 46.84% of the total sessions. Additionally, organic search also contributed to 47.10% of engaged sessions. 43.09% of the total events and 53.62% of the total key events also came from organic search.
+                      </P>
 
-                <MicroCTA />
-              </CaseBlock>
+                      <DetailLabel>COMPARISON</DetailLabel>
+                      <P>Date Range: December 2023–March 2024 vs. April 2024–July 2024</P>
+                      <P>
+                        If we compare how our strategy improved, we can see an improvement in traffic acquisition metrics. Below is a comparison of the first half of the campaign versus the second half of the campaign (December 2023–March 2024 vs. April 2024–July 2024). As seen, users from organic search increased by 447.06%, sessions from organic search increased by 252.69%, and engaged sessions from organic search increased by 226.23%. Additionally, event counts improved by 851.94% and key events improved by 725%.
+                      </P>
 
-              {/* ──────────────────────────────────────────────
-                   CASE 3: Electrical — Oahu
-                 ────────────────────────────────────────────── */}
-              <CaseBlock title="Electrical — Oahu">
-                <DetailLabel>Goal</DetailLabel>
-                <BulletList
-                  items={[
-                    "Enhance Keyword Performance",
-                    "Increase Engagement and Visibility",
-                    "20-40% increase in conversions/goal completions",
-                  ]}
-                />
+                      <SubHead>Google Search Console</SubHead>
 
-                <DetailLabel>Action Plan</DetailLabel>
-                <BulletList
-                  items={[
-                    "Extensive keyword research to find relevant keyword s including competitive analysis",
-                    "Optimize GMB profile from top to bottom",
-                    "Built relevant niche and local citations",
-                    "Optimized onsite for location signals",
-                    "Post weekly on their GMB profile to increase additional signals",
-                    "Evaluate the site's content silo for content strategy",
-                    "Create and publish monthly blogs as supplementary content for target keywords",
-                  ]}
-                />
+                      <DetailLabel>Clicks, Impressions, CTR and Position</DetailLabel>
+                      <P>Date Range: December 2023–July 2024</P>
+                      <P>
+                        Here are the Google Search Console metrics for the client's website. In December 2023–July 2024, the website recorded 240 total clicks, 4.86K total impressions, 4.9% average click-through rates and 23.1 average positions.
+                      </P>
 
-                <SubHead>Google Analytics</SubHead>
+                      <DetailLabel>COMPARISON</DetailLabel>
+                      <P>Date Range: December 2023–March 2024 vs. April 2024–July 2024</P>
+                      <P>
+                        If we compare how our strategy improved, we can see an improvement in the metrics measured in the Google Search Console. Below is a comparison of the first half of the campaign versus the second half of the campaign (December 2023–March 2024 vs. April 2024–July 2024). As seen, total clicks on the website increased by 63.73% from 91 to 149. Impressions of the website also increased by 185.71%, from 1.26K to 3.6K total impressions.
+                      </P>
 
-                <DetailLabel>User Acquisition</DetailLabel>
-                <P>Date Range: December 2023–July 2024</P>
-                <P>
-                  Here are the user acquisition metrics for the client's website. As seen, organic search is the channel that brings the highest number of new users to the website. Out of 711 new users, organic search contributed 45.29% of the total new users. 44.02% of new users' engaged sessions also came from organic search.
-                </P>
+                      <SubHead>Keywords</SubHead>
+                      <P>
+                        Here is the average Google position from December 2023–July 2024. We have seen an increase in March.
+                      </P>
 
-                <CaseImage name="electrical-ga-user-acquisition.png" />
+                      <DetailLabel>Organic Desktop Results (Tracked Keywords)</DetailLabel>
+                      <P>
+                        Here are some recent improvements to the keywords we track. For organic desktop, we saw an increase in the following keywords:
+                      </P>
+                      <BulletList
+                        items={[
+                          "fan installation oahu increased by 5 positions on organic desktop",
+                          "house fan installation oahu increased by 4 positions on organic desktop",
+                          "light fixture installer oahu increased by 1 position on organic desktop",
+                          "electrical service upgrades oahu increased by 1 position on organic desktop",
+                          "electrical service upgrade oahu increased by 1 position on organic desktop",
+                          "ceiling fan installation oahu increased by 1 position on organic desktop",
+                        ]}
+                      />
 
-                <DetailLabel>COMPARISON</DetailLabel>
-                <P>Date Range: December 2023–March 2024 vs. April 2024–July 2024</P>
-                <P>
-                  If we compare how our strategy improved, we can see an improvement in user acquisition metrics. Below is a comparison of the first half of the campaign vs. the second half of the campaign (December 2023–March 2024 vs. April 2024–July 2024). As seen, new users from organic search increased by 485.11%, and new users' engaged sessions from organic search increased by 218.97%.
-                </P>
+                      <DetailLabel>Organic Mobile Results (Tracked Keywords)</DetailLabel>
+                      <P>
+                        Here are some recent improvements to the keywords we track. For organic mobile, we saw an increase in the following keywords:
+                      </P>
+                      <BulletList
+                        items={[
+                          "fan installation oahu increased by 6 positions on organic mobile",
+                          "house fan installation oahu increased by 3 positions on organic mobile",
+                          "electrical service upgrades oahu increased by 2 positions on organic mobile",
+                          "light fixture installer oahu increased by 1 position on organic mobile",
+                          "light fixture installation oahu increased by 1 position on organic mobile",
+                          "electrical panel replacement oahu increased by 1 position on organic mobile",
+                          "electrical service upgrade oahu increased by 1 position on organic mobile",
+                          "ceiling fan installation oahu increased by 1 position on organic mobile",
+                        ]}
+                      />
 
-                <SubHead>Traffic Acquisition</SubHead>
-                <P>Date Range: December 2023–July 2024</P>
-                <P>
-                  Here are the traffic acquisition metrics for the client's website. Similar to the user acquisition metrics, organic search is the channel that brings the highest number of users and sessions to the website. Out of 711 users and 901 sessions, organic search contributed 46.13% of the total users and 46.84% of the total sessions. Additionally, organic search also contributed to 47.10% of engaged sessions. 43.09% of the total events and 53.62% of the total key events also came from organic search.
-                </P>
+                      <SubHead>Google Business Profile</SubHead>
 
-                <DetailLabel>COMPARISON</DetailLabel>
-                <P>Date Range: December 2023–March 2024 vs. April 2024–July 2024</P>
-                <P>
-                  If we compare how our strategy improved, we can see an improvement in traffic acquisition metrics. Below is a comparison of the first half of the campaign versus the second half of the campaign (December 2023–March 2024 vs. April 2024–July 2024). As seen, users from organic search increased by 447.06%, sessions from organic search increased by 252.69%, and engaged sessions from organic search increased by 226.23%. Additionally, event counts improved by 851.94% and key events improved by 725%.
-                </P>
+                      <DetailLabel>Search and Map Views</DetailLabel>
+                      <P>Date Range: March 2024–August 2024</P>
+                      <P>
+                        Here are the metrics for the client's Google Business Profile listing. In March 2024–August 2024, the listing had 1.20K total views. Out of these total views, 444 came from desktop search view results, 641 came from mobile search view results, 104 came from desktop map view results, and 14K came from mobile map view results.
+                      </P>
+                      <P>
+                        Additionally, the listing had 158 total business profile interactions. There were 124 total website clicks and 34 calls.
+                      </P>
 
-                <CaseImage name="electrical-comparison-traffic.png" />
-
-                <SubHead>Google Search Console</SubHead>
-
-                <DetailLabel>Clicks, Impressions, CTR and Position</DetailLabel>
-                <P>Date Range: December 2023–July 2024</P>
-                <P>
-                  Here are the Google Search Console metrics for the client's website. In December 2023–July 2024, the website recorded 240 total clicks, 4.86K total impressions, 4.9% average click-through rates and 23.1 average positions.
-                </P>
-
-                <DetailLabel>COMPARISON</DetailLabel>
-                <P>Date Range: December 2023–March 2024 vs. April 2024–July 2024</P>
-                <P>
-                  If we compare how our strategy improved, we can see an improvement in the metrics measured in the Google Search Console. Below is a comparison of the first half of the campaign versus the second half of the campaign (December 2023–March 2024 vs. April 2024–July 2024). As seen, total clicks on the website increased by 63.73% from 91 to 149. Impressions of the website also increased by 185.71%, from 1.26K to 3.6K total impressions.
-                </P>
-
-                <CaseImage name="electrical-comparison-gsc.png" />
-
-                <SubHead>Keywords</SubHead>
-                <P>
-                  Here is the average Google position from December 2023–July 2024. We have seen an increase in March.
-                </P>
-
-                <CaseImage name="electrical-gsc-position.png" />
-
-                <DetailLabel>Organic Desktop Results (Tracked Keywords)</DetailLabel>
-                <P>
-                  Here are some recent improvements to the keywords we track. For organic desktop, we saw an increase in the following keywords:
-                </P>
-                <BulletList
-                  items={[
-                    "fan installation oahu increased by 5 positions on organic desktop",
-                    "house fan installation oahu increased by 4 positions on organic desktop",
-                    "light fixture installer oahu increased by 1 position on organic desktop",
-                    "electrical service upgrades oahu increased by 1 position on organic desktop",
-                    "electrical service upgrade oahu increased by 1 position on organic desktop",
-                    "ceiling fan installation oahu increased by 1 position on organic desktop",
-                  ]}
-                />
-
-                <CaseImage name="electrical-desktop-keywords.png" />
-
-                <DetailLabel>Organic Mobile Results (Tracked Keywords)</DetailLabel>
-                <P>
-                  Here are some recent improvements to the keywords we track. For organic mobile, we saw an increase in the following keywords:
-                </P>
-                <BulletList
-                  items={[
-                    "fan installation oahu increased by 6 positions on organic mobile",
-                    "house fan installation oahu increased by 3 positions on organic mobile",
-                    "electrical service upgrades oahu increased by 2 positions on organic mobile",
-                    "light fixture installer oahu increased by 1 position on organic mobile",
-                    "light fixture installation oahu increased by 1 position on organic mobile",
-                    "electrical panel replacement oahu increased by 1 position on organic mobile",
-                    "electrical service upgrade oahu increased by 1 position on organic mobile",
-                    "ceiling fan installation oahu increased by 1 position on organic mobile",
-                  ]}
-                />
-
-                <CaseImage name="electrical-mobile-keywords.png" />
-
-                <SubHead>Google Business Profile</SubHead>
-
-                <DetailLabel>Search and Map Views</DetailLabel>
-                <P>Date Range: March 2024–August 2024</P>
-                <P>
-                  Here are the metrics for the client's Google Business Profile listing. In March 2024–August 2024, the listing had 1.20K total views. Out of these total views, 444 came from desktop search view results, 641 came from mobile search view results, 104 came from desktop map view results, and 14K came from mobile map view results.
-                </P>
-                <P>
-                  Additionally, the listing had 158 total business profile interactions. There were 124 total website clicks and 34 calls.
-                </P>
-
-                <CaseImage name="electrical-gbp-views-actions.png" />
-
-                {/* PDF Viewer */}
-                <div className="mt-10">
-                  <Accordion type="single" collapsible>
-                    <AccordionItem value="electrical-pdf" className="border border-border rounded-xl overflow-hidden">
-                      <AccordionTrigger className="px-6 py-4 text-base font-display font-semibold text-foreground hover:no-underline bg-card hover:bg-secondary/50">
-                        View Full Case Study Report
-                      </AccordionTrigger>
-                      <AccordionContent className="p-0">
-                        <PdfViewer src="/case-studies/electrical-oahu-case-study.pdf" />
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
-
-                <MicroCTA />
-              </CaseBlock>
-
+                      <PdfAccordion id="electrical-pdf" src="/case-studies/electrical-oahu-case-study.pdf" />
+                      <MicroCTA />
+                    </div>
+                  </div>
+                </TabsContent>
+              </Tabs>
             </div>
           </div>
         </section>
@@ -545,20 +497,14 @@ const LocalSEOHvacPlumbingElectrical = () => {
               <p className="text-sm text-muted-foreground mt-4 mb-8">
                 See where your visibility, website structure, and conversion paths may be holding back growth.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button variant="hero" size="lg" asChild>
-                  <Link to="/contact">
-                    Book a Strategy Session
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/contact">
-                    Request a Website & SEO Audit
-                  </Link>
-                </Button>
-              </div>
             </div>
+            <CardCTA
+              title="Let's Build Your Local Search Visibility"
+              description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
+              buttonText="Book a Strategy Session"
+              buttonHref="/contact"
+              sectionClassName="pt-0 pb-0"
+            />
           </div>
         </section>
 
@@ -572,6 +518,9 @@ const LocalSEOHvacPlumbingElectrical = () => {
             </div>
           </div>
         </section>
+
+        {/* ═══ CONSULTATION FORM ═══ */}
+        <ConsultationFormSection />
       </main>
       <Footer />
     </>
