@@ -554,12 +554,15 @@ const AEO = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up">
-              <Button variant="hero" size="lg" asChild>
-                <a href={PRIMARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                  Schedule Strategy Session
-                </a>
-              </Button>
+            <CardCTA
+              title="Let's Build Your Answer Visibility"
+              description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
+              buttonText="Schedule Strategy Session"
+              buttonHref={PRIMARY_CTA_URL}
+              sectionClassName="pt-0 pb-0"
+            />
+
+            <div className="flex justify-center mt-6 animate-fade-up">
               <Button variant="heroOutline" size="lg" asChild>
                 <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
                   Free SEO Audit
@@ -567,9 +570,9 @@ const AEO = () => {
               </Button>
             </div>
 
-            <div className="text-center mt-8 text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <p>AEO is one pillar of the GrowSmallBiz Managed AI SEO system. Schedule a session to see how all components work together for your business.</p>
-            </div>
+            <p className="text-sm text-muted-foreground mt-6 text-center max-w-2xl mx-auto">
+              AEO is one pillar of the GrowSmallBiz Managed AI SEO system. Schedule a session to see how all components work together for your business.
+            </p>
 
             <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
