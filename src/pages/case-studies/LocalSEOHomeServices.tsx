@@ -14,7 +14,7 @@ import {
   Search,
   Layers,
 } from "lucide-react";
-import { PdfViewer } from "@/components/PdfViewer";
+import { PdfViewer } from "@/components/PdfViewerWrapper";
 
 /* ─── Summary Proof Cards ─── */
 const summaryCards = [
