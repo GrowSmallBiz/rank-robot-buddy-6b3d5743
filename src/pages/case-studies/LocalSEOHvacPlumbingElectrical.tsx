@@ -9,10 +9,11 @@ import {
   TrendingUp,
   Search,
   ChevronDown,
+  MousePointerClick,
 } from "lucide-react";
 import { PdfViewer } from "@/components/PdfViewerWrapper";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
