@@ -115,6 +115,31 @@ const PdfBlock = ({ src }: { src: string }) => (
 
 const LocalSEOHvacPlumbingElectrical = () => {
   const [activeTab, setActiveTab] = useState("hvac-sacramento");
+  const [activeSection, setActiveSection] = useState("local-seo");
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const seoSection = document.getElementById("local-seo");
+      const ppcSection = document.getElementById("google-ppc");
+      if (seoSection && ppcSection) {
+        const ppcTop = ppcSection.getBoundingClientRect().top;
+        setActiveSection(ppcTop <= 120 ? "google-ppc" : "local-seo");
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const offset = navRef.current?.offsetHeight || 56;
+      const y = el.getBoundingClientRect().top + window.scrollY - offset - 16;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Head>
