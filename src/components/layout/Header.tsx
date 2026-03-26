@@ -13,7 +13,7 @@ export const Header = () => {
 
   const isServiceActive = 
     location.pathname.startsWith("/services") ||
-    location.pathname === "/paid-ads" ||
+    location.pathname === "/paid-advertising-services" ||
     location.pathname === "/website-design" ||
     location.pathname === "/local-seo-services";
 
@@ -131,7 +131,7 @@ export const Header = () => {
 
                 {/* Paid Media & Advertising */}
                 <Link
-                  to="/services/paid-ads"
+                  to="/paid-advertising-services"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Paid Media & Advertising
@@ -285,7 +285,7 @@ export const Header = () => {
 
                 {/* Paid Media & Advertising */}
                 <Link
-                  to="/services/paid-ads"
+                  to="/paid-advertising-services"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
