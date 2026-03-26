@@ -8,15 +8,11 @@ import {
   ArrowRight,
   TrendingUp,
   Search,
+  ChevronDown,
 } from "lucide-react";
 import { PdfViewer } from "@/components/PdfViewerWrapper";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState } from "react";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
@@ -102,19 +98,13 @@ const MicroCTA = () => (
   </div>
 );
 
-/* ─── PDF Accordion Block ─── */
-const PdfAccordion = ({ id, src }: { id: string; src: string }) => (
+/* ─── PDF Viewer Block ─── */
+const PdfBlock = ({ src }: { src: string }) => (
   <div className="mt-10">
-    <Accordion type="single" collapsible>
-      <AccordionItem value={id} className="border border-border rounded-xl overflow-hidden">
-        <AccordionTrigger className="px-6 py-4 text-base font-display font-semibold text-foreground hover:no-underline bg-card hover:bg-secondary/50">
-          View Full Case Study Report
-        </AccordionTrigger>
-        <AccordionContent className="p-0">
-          <PdfViewer src={src} />
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+    <h4 className="text-lg font-display font-semibold text-foreground mb-4">
+      View Full Case Study Report
+    </h4>
+    <PdfViewer src={src} />
   </div>
 );
 
@@ -123,6 +113,7 @@ const PdfAccordion = ({ id, src }: { id: string; src: string }) => (
    ═══════════════════════════════════════════════════════ */
 
 const LocalSEOHvacPlumbingElectrical = () => {
+  const [activeTab, setActiveTab] = useState("hvac-sacramento");
   return (
     <>
       <Head>
@@ -189,6 +180,12 @@ const LocalSEOHvacPlumbingElectrical = () => {
                 </div>
               ))}
             </div>
+
+            {/* Scroll Down Prompt */}
+            <div className="flex flex-col items-center mt-12 text-muted-foreground animate-bounce">
+              <p className="text-sm font-medium mb-2">Scroll Down to Read Full Case Studies</p>
+              <ChevronDown className="w-5 h-5" />
+            </div>
           </div>
         </section>
 
@@ -207,10 +204,10 @@ const LocalSEOHvacPlumbingElectrical = () => {
         </section>
 
         {/* ═══ SECTION 4: TABBED CASE STUDIES ═══ */}
-        <section className="py-16 relative bg-secondary/30">
+        <section className="py-16 relative" style={{ backgroundColor: 'hsl(210 30% 12%)' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <Tabs defaultValue="hvac-sacramento" className="w-full">
+              <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
                 <TabsList className="w-full h-auto flex-wrap bg-card/80 backdrop-blur-sm border border-border rounded-xl p-2 mb-10">
                   <TabsTrigger
                     value="hvac-sacramento"
