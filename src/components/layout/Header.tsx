@@ -168,7 +168,7 @@ export const Header = () => {
                   Home Service Businesses
                 </Link>
                 <Link
-                  to="/case-studies/local-seo/hvac-plumbing-electrical"
+                  to="/case-studies/hvac-plumbing-electrical"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   HVAC, Plumbing & Electrical
@@ -350,7 +350,7 @@ export const Header = () => {
                   Home Service Businesses
                 </Link>
                 <Link
-                  to="/case-studies/local-seo/hvac-plumbing-electrical"
+                  to="/case-studies/hvac-plumbing-electrical"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
