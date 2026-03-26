@@ -436,9 +436,9 @@ const GEO = () => {
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OUR DIFFERENCE</p>
                 <h2 className="section-title">
-                  Why Local Service Businesses Choose GrowSmallBiz for{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO</span>
-                </h2>
+                   Why Local Service Businesses Choose{" "}
+                   <span className="text-transparent bg-clip-text bg-gradient-primary italic">GrowSmallBiz for GEO</span>
+                 </h2>
               </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
