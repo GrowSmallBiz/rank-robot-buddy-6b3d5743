@@ -4,6 +4,7 @@ import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import geoHeroBg from "@/assets/geo-hero-bg.jpg";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -265,6 +266,7 @@ const OnPageSEO = () => {
           title={<>On-Page SEO That Makes Every Important Page Easier to Rank — and Easier to{" "}</>}
           titleHighlight="Choose"
           subtitle="Your website may already have the right services. But if your key pages do not clearly communicate what you do, where you do it, and why a prospect should trust you, they can underperform in search and lose leads after the click."
+          description="GrowSmallBiz uses Agentic AI SEO Playbooks with expert human oversight to strengthen the on-page signals that influence rankings, improve clarity for potential customers, and build a stronger foundation for both traditional search visibility and AI-assisted discovery. This is managed, ongoing execution for local service businesses — not a one-time audit with recommendations left for you to implement."
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
@@ -277,6 +279,8 @@ const OnPageSEO = () => {
             variant: "heroOutline",
             external: true,
           }}
+          backgroundImage={geoHeroBg}
+          overlayOpacity={50}
         />
 
         {/* SECTION 2 — WHY ON-PAGE SEO MATTERS */}
@@ -378,14 +382,19 @@ const OnPageSEO = () => {
                   Most local business websites have not been touched since they were built. And most were never optimized for search to begin with — they were built to look good, not to rank. These are the on-page issues we see most consistently, and they quietly cost businesses rankings and leads every single month.
                 </p>
 
-                <ul className="space-y-4">
+                <div className="space-y-0">
                   {commonMistakes.map((mistake, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <XCircle className="w-4 h-4 text-destructive mt-0.5 shrink-0" />
-                      <span>{mistake}</span>
-                    </li>
+                    <div key={i}>
+                      <div className="flex items-start gap-3 rounded-2xl p-6 bg-background/60 border border-border/50">
+                        <XCircle className="w-5 h-5 text-destructive mt-0.5 shrink-0" />
+                        <span className="text-foreground/90">{mistake}</span>
+                      </div>
+                      {i < commonMistakes.length - 1 && (
+                        <div className="border-b border-primary/10 mx-8" />
+                      )}
+                    </div>
                   ))}
-                </ul>
+                </div>
 
                 <p className="text-xl md:text-2xl font-display font-bold text-foreground text-center pt-4">
                   None of these are unusual. They are the default state of most local business websites. The good news is that every one of them is fixable, and fixing them produces measurable results.
@@ -483,12 +492,17 @@ const OnPageSEO = () => {
 
               <div className="space-y-0 max-w-3xl mx-auto">
                 {processSteps.map((item, i) => (
-                  <div key={i} className="animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50" style={{ animationDelay: `${i * 0.05}s` }}>
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-xs font-bold text-primary bg-primary/10 rounded-full px-3 py-1">{item.step}</span>
+                  <div key={i}>
+                    <div className="animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50" style={{ animationDelay: `${i * 0.05}s` }}>
+                      <div className="flex items-center gap-3 mb-3">
+                        <span className="text-xs font-bold text-primary bg-primary/10 rounded-full px-3 py-1">{item.step}</span>
+                      </div>
+                      <h3 className="text-xl font-display font-bold text-foreground mb-3">{item.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                     </div>
-                    <h3 className="text-xl font-display font-bold text-foreground mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                    {i < processSteps.length - 1 && (
+                      <div className="border-b border-primary/10 mx-8" />
+                    )}
                   </div>
                 ))}
               </div>
@@ -535,7 +549,7 @@ const OnPageSEO = () => {
         </section>
 
         {/* SECTION 8 — WHY GROWSMALLBIZ */}
-        <section className="py-24">
+        <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
@@ -555,11 +569,11 @@ const OnPageSEO = () => {
                 </p>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto mt-10">
+              <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto mt-10">
                 {whyGSBItems.map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-4 bg-card border border-border rounded-xl p-5 animate-fade-up"
+                    className="flex items-start gap-4 bg-background border border-border rounded-xl p-5 animate-fade-up"
                     style={{ animationDelay: `${i * 0.05}s` }}
                   >
                     <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
