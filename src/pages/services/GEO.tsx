@@ -504,7 +504,7 @@ const GEO = () => {
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
                 Your Customers Are Already Using AI to Find Local Businesses.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Is Yours Easy to Find?</span>
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Is AI Recommending Your Business?</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
                 AI-assisted discovery is not a trend to monitor from a distance. It is happening now, and the businesses building strong GEO foundations today will hold a compounding advantage over those that wait.
