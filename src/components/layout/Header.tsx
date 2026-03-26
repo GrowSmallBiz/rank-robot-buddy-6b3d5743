@@ -140,6 +140,14 @@ export const Header = () => {
               </div>
             </div>
 
+            <Link
+              to="/case-studies/local-seo/home-service-businesses"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname.startsWith("/case-studies") ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              Case Studies
+            </Link>
 
             <Link
               to="/about"
@@ -296,6 +304,13 @@ export const Header = () => {
             )}
           </div>
 
+          <Link
+            to="/case-studies/local-seo/home-service-businesses"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            Case Studies
+          </Link>
 
           <Link
             to="/about"
