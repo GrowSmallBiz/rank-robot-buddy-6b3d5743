@@ -9,10 +9,11 @@ import {
   TrendingUp,
   Search,
   ChevronDown,
+  MousePointerClick,
 } from "lucide-react";
 import { PdfViewer } from "@/components/PdfViewerWrapper";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
@@ -114,6 +115,31 @@ const PdfBlock = ({ src }: { src: string }) => (
 
 const LocalSEOHvacPlumbingElectrical = () => {
   const [activeTab, setActiveTab] = useState("hvac-sacramento");
+  const [activeSection, setActiveSection] = useState("local-seo");
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const seoSection = document.getElementById("local-seo");
+      const ppcSection = document.getElementById("google-ppc");
+      if (seoSection && ppcSection) {
+        const ppcTop = ppcSection.getBoundingClientRect().top;
+        setActiveSection(ppcTop <= 120 ? "google-ppc" : "local-seo");
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const offset = navRef.current?.offsetHeight || 56;
+      const y = el.getBoundingClientRect().top + window.scrollY - offset - 16;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Head>
@@ -146,6 +172,42 @@ const LocalSEOHvacPlumbingElectrical = () => {
           backgroundImage={heroBg}
           overlayOpacity={85}
         />
+
+        {/* ═══ STICKY JUMP NAV ═══ */}
+        <div
+          ref={navRef}
+          className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border shadow-lg"
+        >
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-center gap-2 py-3">
+              <button
+                onClick={() => scrollTo("local-seo")}
+                className={`px-5 py-2.5 rounded-full text-sm font-display font-semibold transition-all duration-300 ${
+                  activeSection === "local-seo"
+                    ? "bg-primary text-primary-foreground shadow-md"
+                    : "bg-card text-muted-foreground hover:text-foreground hover:bg-secondary border border-border"
+                }`}
+              >
+                <Search className="inline-block w-4 h-4 mr-2 -mt-0.5" />
+                Local SEO Results
+              </button>
+              <button
+                onClick={() => scrollTo("google-ppc")}
+                className={`px-5 py-2.5 rounded-full text-sm font-display font-semibold transition-all duration-300 ${
+                  activeSection === "google-ppc"
+                    ? "bg-primary text-primary-foreground shadow-md"
+                    : "bg-card text-muted-foreground hover:text-foreground hover:bg-secondary border border-border"
+                }`}
+              >
+                <MousePointerClick className="inline-block w-4 h-4 mr-2 -mt-0.5" />
+                Google PPC Results
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* ═══ LOCAL SEO SECTION ═══ */}
+        <div id="local-seo">
 
         {/* ═══ SECTION 2: SUMMARY PROOF CARDS ═══ */}
         <section className="py-20 relative">
@@ -478,6 +540,27 @@ const LocalSEOHvacPlumbingElectrical = () => {
             </div>
           </div>
         </section>
+        </div>{/* end #local-seo */}
+
+        {/* ═══ GOOGLE PPC SECTION ═══ */}
+        <div id="google-ppc">
+          <section className="py-20 relative" style={{ backgroundColor: 'hsl(210 25% 10%)' }}>
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto text-center">
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
+                  <MousePointerClick className="w-4 h-4" />
+                  Google PPC Case Studies
+                </span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                  Google PPC Results for HVAC, Plumbing & Electrical Businesses
+                </h2>
+                <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
+                  Paid search campaign results coming soon. Check back for documented Google Ads performance data across HVAC, plumbing, and electrical verticals.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>{/* end #google-ppc */}
 
         {/* ═══ SECTION 5: CTA SECTION ═══ */}
         <section className="py-20 relative">
