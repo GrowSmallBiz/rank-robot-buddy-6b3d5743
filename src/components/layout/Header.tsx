@@ -122,6 +122,12 @@ export const Header = () => {
                 >
                   Technical SEO
                 </Link>
+                <Link
+                  to="/services/managed-ai-seo/on-page-seo"
+                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  On-Page SEO
+                </Link>
 
                 {/* Paid Media & Advertising */}
                 <Link
@@ -268,6 +274,13 @@ export const Header = () => {
                   className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
                 >
                   Technical SEO
+                </Link>
+                <Link
+                  to="/services/managed-ai-seo/on-page-seo"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary"
+                >
+                  On-Page SEO
                 </Link>
 
                 {/* Paid Media & Advertising */}
