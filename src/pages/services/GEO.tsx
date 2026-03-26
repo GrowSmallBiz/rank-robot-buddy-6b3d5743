@@ -256,8 +256,8 @@ const GEO = () => {
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE SHIFT</p>
                 <h2 className="section-title">
-                  The Shift Is Already Happening — Here Is What It Means for{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Business</span>
+                   The AI Search Shift Is Already Happening — What It Means for{" "}
+                   <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Business</span>
                 </h2>
               </div>
 
