@@ -305,7 +305,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
                         Additionally, here are the LSI keywords the website gained in addition to the ones we track. LSI (latent semantic indexing) keywords are words or phrases that are conceptually related to a target keyword.
                       </P>
 
-                      <PdfAccordion id="hvac-pdf" src="/case-studies/hvac-sacramento-case-study.pdf" />
+                      <PdfBlock src="/case-studies/hvac-sacramento-case-study.pdf" />
                       <MicroCTA />
                     </div>
                   </div>
@@ -347,7 +347,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
                         ]}
                       />
 
-                      <PdfAccordion id="hvac-plumbing-pdf" src="/case-studies/hvac-plumbing-fairbanks-case-study.pdf" />
+                      <PdfBlock src="/case-studies/hvac-plumbing-fairbanks-case-study.pdf" />
                       <MicroCTA />
                     </div>
                   </div>
@@ -470,7 +470,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
                         Additionally, the listing had 158 total business profile interactions. There were 124 total website clicks and 34 calls.
                       </P>
 
-                      <PdfAccordion id="electrical-pdf" src="/case-studies/electrical-oahu-case-study.pdf" />
+                      <PdfBlock src="/case-studies/electrical-oahu-case-study.pdf" />
                       <MicroCTA />
                     </div>
                   </div>
