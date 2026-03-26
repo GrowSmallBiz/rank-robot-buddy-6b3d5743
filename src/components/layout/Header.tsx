@@ -7,7 +7,9 @@ import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isCaseStudiesOpen, setIsCaseStudiesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileCaseStudiesOpen, setMobileCaseStudiesOpen] = useState(false);
   
   const location = useLocation();
 
@@ -140,14 +142,39 @@ export const Header = () => {
               </div>
             </div>
 
-            <Link
-              to="/case-studies/local-seo/home-service-businesses"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname.startsWith("/case-studies") ? "text-primary" : "text-muted-foreground"
-              }`}
+            {/* Case Studies Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsCaseStudiesOpen(true)}
+              onMouseLeave={() => setIsCaseStudiesOpen(false)}
             >
-              Case Studies
-            </Link>
+              <button
+                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname.startsWith("/case-studies") ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                Case Studies
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+              <div
+                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isCaseStudiesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                }`}
+              >
+                <Link
+                  to="/case-studies/local-seo/home-service-businesses"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Home Service Businesses
+                </Link>
+                <Link
+                  to="/case-studies/local-seo/hvac-plumbing-electrical"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  HVAC, Plumbing & Electrical
+                </Link>
+              </div>
+            </div>
 
             <Link
               to="/about"
@@ -304,13 +331,34 @@ export const Header = () => {
             )}
           </div>
 
-          <Link
-            to="/case-studies/local-seo/home-service-businesses"
-            onClick={() => setIsOpen(false)}
-            className="block text-foreground font-medium"
-          >
-            Case Studies
-          </Link>
+          {/* Mobile: Case Studies */}
+          <div className="space-y-2">
+            <button
+              onClick={() => setMobileCaseStudiesOpen(!mobileCaseStudiesOpen)}
+              className="flex items-center justify-between w-full text-foreground font-medium"
+            >
+              Case Studies
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileCaseStudiesOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileCaseStudiesOpen && (
+              <div className="pl-4 space-y-2">
+                <Link
+                  to="/case-studies/local-seo/home-service-businesses"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Home Service Businesses
+                </Link>
+                <Link
+                  to="/case-studies/local-seo/hvac-plumbing-electrical"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  HVAC, Plumbing & Electrical
+                </Link>
+              </div>
+            )}
+          </div>
 
           <Link
             to="/about"
