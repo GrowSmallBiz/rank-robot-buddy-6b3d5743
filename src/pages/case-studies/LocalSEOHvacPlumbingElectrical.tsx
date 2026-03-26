@@ -122,17 +122,16 @@ const LocalSEOHvacPlumbingElectrical = () => {
           name="description"
           content="Explore documented local SEO campaign results for HVAC, plumbing, and electrical businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversions."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/case-studies/local-seo/hvac-plumbing-electrical" />
+        <link rel="canonical" href="https://growsmallbiz.io/case-studies/hvac-plumbing-electrical" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses"
         description="Explore documented local SEO campaign results for HVAC, plumbing, and electrical businesses."
-        url="/case-studies/local-seo/hvac-plumbing-electrical"
+        url="/case-studies/hvac-plumbing-electrical"
         breadcrumbs={[
           { name: "Case Studies", url: "/case-studies" },
-          { name: "Local SEO", url: "/case-studies/local-seo" },
-          { name: "HVAC, Plumbing & Electrical", url: "/case-studies/local-seo/hvac-plumbing-electrical" },
+          { name: "HVAC, Plumbing & Electrical", url: "/case-studies/hvac-plumbing-electrical" },
         ]}
       />
       <Header />
