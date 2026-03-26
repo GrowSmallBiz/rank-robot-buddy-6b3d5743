@@ -547,7 +547,7 @@ const AEO = () => {
               <p className="text-primary font-medium mb-4">Ready to Become the Answer?</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
                 Your Buyers Are Already Asking the Questions.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Make Sure Your Business Is the Answer.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Make Sure Your Business Is (AEO) Answer Engine Optimized.</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-10 max-w-3xl mx-auto">
                 GrowSmallBiz will map the questions your buyers are asking, structure content that positions your business as the authoritative answer, and build the coverage that earns featured placement across modern search environments. Start with a strategy session or let us audit what you have right now.
