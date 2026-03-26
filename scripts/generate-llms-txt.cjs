@@ -28,7 +28,7 @@ while ((match = pathRegex.exec(appFile)) !== null) {
 const uniqueRoutes = [...new Set(['/', ...routes])];
 
 // Filter out shortcut aliases
-const serviceAliases = ['/service', '/paid-ads', '/website-design', '/local-seo-services'];
+const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/local-seo-services'];
 const filteredRoutes = uniqueRoutes.filter(r => !serviceAliases.includes(r));
 
 // Categorize routes

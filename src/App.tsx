@@ -28,7 +28,7 @@ export const routes: RouteRecord[] = [
       { path: "about", lazy: lazy(() => import("./pages/About")) },
       { path: "services", lazy: lazy(() => import("./pages/Services")) },
       { path: "service", lazy: lazy(() => import("./pages/Services")) },
-      { path: "services/paid-ads", lazy: lazy(() => import("./pages/services/PaidMedia")) },
+      { path: "paid-advertising-services", lazy: lazy(() => import("./pages/services/PaidMedia")) },
       { path: "services/website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
       { path: "local-seo-services", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
       { path: "local-seo-services/aeo", lazy: lazy(() => import("./pages/services/AEO")) },
@@ -38,7 +38,7 @@ export const routes: RouteRecord[] = [
       { path: "local-seo-services/link-building", lazy: lazy(() => import("./pages/services/LinkBuilding")) },
       { path: "local-seo-services/technical-seo", lazy: lazy(() => import("./pages/services/TechnicalSEO")) },
       { path: "local-seo-services/on-page-seo", lazy: lazy(() => import("./pages/services/OnPageSEO")) },
-      { path: "paid-ads", lazy: lazy(() => import("./pages/services/PaidMedia")) },
+      { path: "services/paid-ads", lazy: lazy(() => import("./pages/services/PaidMedia")) },
       { path: "website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
       { path: "local-seo-services", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
       
