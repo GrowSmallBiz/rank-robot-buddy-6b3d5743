@@ -13,157 +13,213 @@ import { GlowCard } from "@/components/ui/glow-card";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
 import aeoHeroBg from "@/assets/aeo-hero-bg.jpg";
-import aeoSearchGrowthChart from "@/assets/aeo-search-growth-chart.png";
 import {
-  Bot,
-  ArrowRight,
   MessageCircleQuestion,
-  Target,
+  ArrowRight,
   Search,
   FileText,
   Layers,
   Zap,
   CheckCircle2,
+  Target,
+  Bot,
+  Eye,
+  Globe,
+  RefreshCw,
+  Shield,
+  Users,
+  BarChart3,
+  Sparkles,
+  BookOpen,
   Home,
   Heart,
   Scale,
   Dumbbell,
-  Eye,
-  Shield,
-  Users,
-  BarChart3,
-  RefreshCw,
-  Globe,
-  Sparkles,
-  BookOpen,
-  ExternalLink,
 } from "lucide-react";
 
 const PRIMARY_CTA_BASE = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
 const SECONDARY_CTA_BASE = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page";
 
-const aeoServices = [
+const aeoIncludes = [
   {
-    icon: Search,
+    num: "01",
     title: "Service-Specific Question Mapping",
-    description: "We research and map the real questions your prospects are asking — organized by service, intent, and buying stage.",
+    description: "We identify the real questions your target customers ask about your service category — from basic awareness queries to high-intent comparison and hiring questions. This mapping becomes the foundation for all AEO content produced for your business.",
   },
   {
-    icon: FileText,
+    num: "02",
     title: "Direct-Answer Content Formatting",
-    description: "Content is structured so search engines can extract clear, concise answers directly from your pages.",
+    description: "We write content that opens with a clear, concise answer before expanding into supporting detail. This format is the primary signal search engines use to evaluate content for featured snippet eligibility and AI-generated answer inclusion.",
   },
   {
-    icon: MessageCircleQuestion,
-    title: "FAQ Optimization & Placement",
-    description: "Strategic FAQ sections built with proper schema markup and positioned for maximum search visibility.",
+    num: "03",
+    title: "FAQ Optimization and Placement",
+    description: "We build and optimize FAQ sections that target People Also Ask placements and voice-search responses. Questions are selected for commercial relevance, search volume, and the ability to establish your authority on service-specific topics. All FAQ content is marked up with proper schema for maximum search engine readability.",
   },
   {
-    icon: Layers,
+    num: "04",
     title: "Semantic Answer Blocks",
-    description: "Structured content blocks that connect related questions, topics, and entities to strengthen topical depth.",
+    description: "Beyond FAQs, we embed answer-structured content blocks within service pages, about pages, and blog content — formatted for extraction by answer engines without disrupting the reading flow for human visitors.",
   },
   {
-    icon: Target,
+    num: "05",
     title: "Intent-Based Answer Creation",
-    description: "Each answer is crafted around a specific user intent — informational, comparative, or transactional — to match how people search.",
+    description: "We map content to the three primary intent categories — informational, comparative, and transactional — and ensure your site has clear, well-structured answers at each stage of the buyer journey. This breadth of coverage increases your eligibility across a wider range of answer placements.",
   },
   {
-    icon: Eye,
+    num: "06",
     title: "Featured Snippet Targeting",
-    description: "Content formatted and optimized to earn featured snippet placements for high-value queries in your service area.",
+    description: "We identify existing keyword positions where featured snippet opportunities exist and restructure or add content to compete for those placements. Snippet targeting includes paragraph snippets, list snippets, and table snippets depending on the query type.",
   },
   {
-    icon: Globe,
+    num: "07",
     title: "Structured Response Formatting",
-    description: "Answers follow structured formatting patterns that search engines and AI systems prefer when surfacing direct results.",
+    description: "We apply consistent formatting guidelines across all answer content — proper heading hierarchy, concise opening sentences, numbered and bulleted structures where appropriate — to ensure readability by both humans and answer-engine crawlers.",
   },
   {
-    icon: RefreshCw,
+    num: "08",
     title: "Ongoing Question Coverage Expansion",
-    description: "Continuous identification of new questions emerging in your market, keeping your answer coverage current and competitive.",
+    description: "Search behavior evolves. New questions emerge as services change, seasons shift, and buyer expectations develop. We continuously expand your question coverage to capture emerging answer opportunities before competitors address them.",
   },
+];
+
+const searchBehaviorItems = [
+  {
+    title: "Question-Led Discovery",
+    description: 'Searches like "what should I look for in a local SEO company," "how much does med spa treatment cost," or "what questions should I ask before hiring a roofer" often happen near the consideration stage. The business that answers well earns trust before the sales conversation starts.',
+  },
+  {
+    title: "AI-Assisted Discovery",
+    description: "Modern search experiences increasingly summarize, extract, and recommend content from pages that are well structured and easy to interpret. If your website is not organized as a credible knowledge source, it is less likely to earn those answer-driven placements.",
+  },
+  {
+    title: "Trust Before the Click",
+    description: "When your content is surfaced as the answer, it does more than generate visibility. It helps establish credibility before a prospect visits your site, fills out a form, or calls your office.",
+  },
+  {
+    title: "Single-Answer Interfaces",
+    description: "Voice search, assistant-led search, and many AI-assisted experiences often compress choice. Instead of presenting ten equally visible blue links, they elevate fewer answers. Structured content gives your business a better chance to be one of them.",
+  },
+  {
+    title: "Higher Intent, Better Leads",
+    description: "Question-led searchers are often closer to action. A person asking how to choose, compare, price, or prepare is usually further along than someone typing a broad service term.",
+  },
+  {
+    title: "Opportunity While Many Competitors Stay Generic",
+    description: "Many local service businesses still rely on thin service pages and unstructured FAQs. That leaves room for businesses with stronger answer architecture to earn visibility and trust earlier in the buying journey.",
+  },
+];
+
+const aiPlaybookItems = [
+  {
+    title: "Automated Question Research",
+    description: "Our playbook surfaces real question patterns tied to your service category, market, and buyer intent, helping us focus on what prospects are actually asking before they choose a provider.",
+  },
+  {
+    title: "Structured Content Frameworks",
+    description: "We use AI-assisted drafting and formatting systems built around direct-answer structure, semantic clarity, and search-readability. Human review ensures the final content stays useful, accurate, and aligned with your brand and services.",
+  },
+  {
+    title: "Snippet and Answer-Gap Identification",
+    description: "We analyze where your site is already close to answer visibility and where stronger structure, clarity, or coverage can improve eligibility for snippets, PAA results, and other answer-driven placements.",
+  },
+  {
+    title: "Schema and Search-Readiness Implementation",
+    description: "Structured data helps search systems interpret your pages more clearly. We apply the relevant markup and formatting so new content is easier to understand, organize, and surface.",
+  },
+  {
+    title: "Coverage Monitoring and Expansion",
+    description: "We track which questions your site addresses, where new gaps exist, and how visibility evolves over time. This keeps AEO as an active managed process rather than a one-time content exercise.",
+  },
+];
+
+const processSteps = [
+  "Question Discovery — Map what buyers in your category are asking",
+  "Intent Classification — Sort questions by stage: awareness, comparison, decision",
+  "Answer Content Creation — Write direct-answer content using structured formatting",
+  "Schema Application — Mark up all FAQ and structured content for search engines",
+  "Placement Monitoring — Track snippets, PAA placements, and AI mentions",
+  "Coverage Expansion — Add new questions continuously as search behavior evolves",
 ];
 
 const useCases = [
   {
-    icon: Home,
-    title: "Home Services",
-    description: "Answering urgent service questions — costs, timelines, availability — before the customer picks up the phone.",
+    icon: Heart,
+    category: "Medical Aesthetics / Med Spa",
+    title: "Answering Treatment Questions That Drive Bookings",
+    description: 'A med spa with structured FAQ content covering questions like "how long does Botox last," "what is the difference between a chemical peel and a HydraFacial," and "is CoolSculpting painful" becomes the trusted resource that buyers consult before booking. Those answer placements build credibility before the first call.',
+    result: "Result: More informed, higher-intent booking inquiries",
   },
   {
-    icon: Heart,
-    title: "Med Spas & Aesthetic Practices",
-    description: "Answering treatment, pricing, and expectation-based questions that drive consultation bookings.",
+    icon: Home,
+    category: "Home Services (HVAC, Plumbing, Electrical)",
+    title: "Owning the \"How to Choose\" Search Moment",
+    description: 'Home service buyers routinely search "how to find a trustworthy HVAC company" or "what questions should I ask a plumber before hiring." A business that answers these questions directly — and appears in the featured snippet — has already positioned itself as the credible choice before the buyer visits a single competitor page.',
+    result: "Result: Branded trust established at the research stage",
   },
   {
     icon: Scale,
-    title: "Legal & Financial Professionals",
-    description: "Answering trust-sensitive informational questions that establish credibility before the first conversation.",
+    category: "Professional Services (Legal, Financial, Dental)",
+    title: "Earning Credibility Through Answer Authority",
+    description: "For professionals where trust is the primary buying criterion, appearing as the source of a clear, expert answer to a legal question, dental concern, or financial query builds authority that a standard listing cannot. AEO positions professional service businesses as educators first, which accelerates buyer trust.",
+    result: "Result: Higher-quality consultations, shorter sales cycles",
   },
   {
     icon: Dumbbell,
-    title: "Fitness, Wellness & Healthcare",
-    description: "Answering service, condition, and appointment-related questions that reduce friction and build confidence.",
+    category: "Fitness and Wellness",
+    title: "Surfacing for Goal-Oriented Question Searches",
+    description: 'Fitness and wellness buyers search around goals — "how many sessions does it take to see results," "what should I eat before a personal training session," "is yoga or pilates better for back pain." Content structured to answer these questions captures traffic at the consideration stage and moves buyers toward contact.',
+    result: "Result: Search visibility aligned with buyer motivation",
   },
 ];
 
 const whyGSBItems = [
   {
-    icon: Target,
-    title: "Built for Local Service Businesses",
-    description: "AEO strategies designed specifically for how local customers search and make decisions.",
+    title: "Local Service Business Focus",
+    description: "Our SEO strategy is built around the way local service buyers actually search, compare, and choose providers. That means question mapping, answer architecture, and content planning shaped by real service-category buying behavior.",
   },
   {
-    icon: Layers,
-    title: "Part of a Broader Managed AI SEO System",
-    description: "AEO is integrated into a complete SEO program — not an isolated tactic.",
+    title: "Managed Execution, Not Advice Alone",
+    description: "AEO works best when it is maintained, expanded, and refined over time. GrowSmallBiz manages the research, structuring, implementation, and ongoing improvement so your team does not have to turn this into another internal project.",
   },
   {
-    icon: Bot,
-    title: "AI-Powered Execution with Strategic Oversight",
-    description: "AI handles scale and speed. Strategy and quality control stay human.",
+    title: "Integrated SEO, Not a Standalone Tactic",
+    description: "AEO performs best when it is connected to strong service pages, technical SEO, authority building, local relevance, and broader content strategy. That is why it sits inside the GrowSmallBiz Managed AI SEO system rather than being sold as an isolated deliverable.",
   },
   {
-    icon: BarChart3,
-    title: "Clear Reporting & Practical Execution",
-    description: "You see what's being done, what's working, and what's next — in plain language.",
+    title: "Agentic AI + Human Oversight",
+    description: "We use an Agentic AI SEO Playbook to accelerate research, pattern detection, and structured execution, while human strategy guides judgment, quality control, and alignment with your business goals.",
   },
   {
-    icon: Sparkles,
-    title: "Built for Visibility, Trust & Conversion",
-    description: "Not just rankings — answer-focused visibility that builds buyer confidence and drives action.",
+    title: "Business-Focused Reporting",
+    description: "You should be able to see not just what content was published, but what questions are being covered, where answer visibility is improving, and how that work supports qualified traffic, inquiries, and pipeline growth.",
+  },
+  {
+    title: "Experienced Commercial Perspective",
+    description: "GrowSmallBiz brings senior sales, marketing, and digital transformation experience into a local-business context, helping translate SEO activity into practical growth priorities.",
+  },
+  {
+    title: "Bay Area Roots, National Reach",
+    description: "Based in Danville, California, GrowSmallBiz understands local market dynamics while supporting service businesses across the Bay Area and beyond.",
   },
 ];
 
 const faqs = [
   {
-    question: "What is AEO?",
-    answer: "AEO stands for Answer Engine Optimization. It is the practice of structuring content so search engines and AI-assisted search experiences can surface your business as the direct answer to relevant questions.",
-  },
-  {
     question: "How is AEO different from traditional SEO?",
-    answer: "Traditional SEO focuses on helping pages rank. AEO focuses on helping your content become the answer surfaced in featured snippets, People Also Ask, and other answer-driven search formats. The two work together.",
+    answer: "Traditional SEO focuses on ranking a page for a keyword. AEO goes a step further — it structures content so your business becomes the answer to a question, not just a result on a list. This matters because search behavior has shifted toward question-led queries, and answer engines reward content that is clearly formatted to respond to those questions directly and credibly.",
   },
   {
-    question: "How long does it take to see results from AEO?",
-    answer: "AEO timelines depend on your starting content quality, site authority, competition, and how quickly search engines crawl and test your updated content. Many businesses begin to see early movement in answer-oriented visibility within the first few months, with stronger gains building over time as content depth and authority improve.",
+    question: "Why should a local service business care about AEO?",
+    answer: 'Local service buyers increasingly search by asking questions — "What is the best plumber near me?", "How much does a med spa facial cost?", "Should I use Botox or fillers?" Businesses whose content directly answers these questions are more likely to be surfaced, trusted, and contacted before competitors who rely on traditional keyword-match pages alone.',
   },
   {
-    question: "Is AEO only for AI search?",
-    answer: "No. AEO also supports visibility in featured snippets, People Also Ask, and other direct-answer search formats. It helps across both traditional search and newer AI-assisted search environments.",
+    question: "How does AEO connect to getting more leads?",
+    answer: 'When your business appears as the answer to a specific service question, you earn visibility at the highest point of buyer intent. Someone asking "how do I choose a local SEO company" is much closer to making a decision than someone browsing generic results. AEO puts your business in front of those high-intent moments, which increases qualified traffic and consultation requests.',
   },
   {
-    question: "What is the difference between AEO and GEO?",
-    answer: "AEO focuses on becoming the answer to specific questions. GEO focuses more broadly on improving visibility in generative and AI-driven search environments. AEO is one important part of a broader AI SEO strategy.",
-  },
-  {
-    question: "Do I need a lot of blog content for AEO?",
-    answer: "Not necessarily. What matters most is having the right questions answered clearly and structurally across your service pages, support pages, FAQs, and broader content ecosystem.",
-  },
-  {
-    question: "Does AEO help conversion too?",
-    answer: "Yes. When your content answers real pre-sale questions clearly, prospects arrive better informed and with stronger intent, which can improve lead quality and conversion readiness.",
+    question: "Is AEO the same as GEO (Generative Engine Optimization)?",
+    answer: "They are related but distinct. AEO focuses specifically on structuring content to win direct-answer placements — featured snippets, People Also Ask, voice results. GEO is broader, focusing on ensuring your business is understood and cited by AI-generated search experiences overall. GrowSmallBiz includes both as separate pillars within its Managed AI SEO system, with each targeting a different layer of modern search visibility.",
   },
 ];
 
@@ -174,20 +230,20 @@ const AEO = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>AEO — Answer Engine Optimization for Local Businesses | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps local service businesses become the answer in search. AEO structures your content for featured snippets, People Also Ask, and AI-assisted search visibility." />
+        <title>Answer Engine Optimization (AEO) Services | GrowSmallBiz Managed AI SEO</title>
+        <meta name="description" content="GrowSmallBiz structures your content to become the answer in featured snippets, People Also Ask, and AI-assisted search. AEO services built for local service businesses." />
         <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/aeo/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Answer Engine Optimization (AEO)"
         serviceType="Answer Engine Optimization"
-        description="AEO services for local service businesses. Structure your content to become the answer in featured snippets, People Also Ask, and AI-assisted search."
+        description="GrowSmallBiz structures your content to become the answer in featured snippets, People Also Ask, and AI-assisted search. AEO services built for local service businesses."
         url="/services/managed-ai-seo/aeo"
         breadcrumbs={[
           { name: "Services", url: "/services" },
           { name: "Managed AI SEO", url: "/services/managed-ai-seo" },
-          { name: "AEO", url: "/services/managed-ai-seo/aeo" },
+          { name: "Answer Engine Optimization", url: "/services/managed-ai-seo/aeo" },
         ]}
       />
 
@@ -196,10 +252,11 @@ const AEO = () => {
       <main>
         {/* SECTION 1 — HERO */}
         <ServiceHero
-          badge={{ icon: MessageCircleQuestion, text: "Answer Engine Optimization (AEO) for Local Service Businesses" }}
-          title={<>If AI Search Misses You,{" "}<br className="hidden md:inline" />Your Competitors </>}
-          titleHighlight="Win"
-          subtitle="GrowSmallBiz helps local service businesses structure their content for direct answers, featured snippets, voice search, and AI search visibility — so they are seen earlier, trusted faster, and chosen more often."
+          badge={{ icon: MessageCircleQuestion, text: "Managed AI SEO — AEO Pillar" }}
+          title={<>AEO Services That Help Local Service Businesses Become the </>}
+          titleHighlight="Answer"
+          subtitle="Search behavior has shifted. Local buyers are asking full questions, and modern search experiences increasingly surface direct answers instead of just lists of links."
+          description="GrowSmallBiz helps local service businesses build answer-ready content architecture that improves visibility across search ecosystems, strengthens trust early, and turns more search impressions into calls, inquiries, and booked jobs."
           primaryCTA={{
             label: "Schedule Strategy Session",
             href: PRIMARY_CTA_URL,
@@ -212,225 +269,115 @@ const AEO = () => {
             variant: "heroOutline",
             external: true,
           }}
+          note="AEO is one pillar of the GrowSmallBiz Managed AI SEO system — a broader SEO strategy built to help local service businesses earn visibility, trust, and qualified demand."
           backgroundImage={aeoHeroBg}
           overlayOpacity={82}
         />
 
-        {/* SECTION 2 — WHAT IS AEO */}
+        {/* SECTION 2 — WHAT IS AEO AND WHY IT MATTERS */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="THE SHIFT"
-                title="What Is AEO — and Why Does It Matter for"
-                titleHighlight="Local Service Businesses?"
-              />
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">The Shift You Cannot Ignore</p>
+                <h2 className="section-title">
+                  What Is{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Answer Engine Optimization</span>
+                  ?
+                </h2>
+              </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
                 <p>
-                  AEO stands for <strong className="text-foreground">Answer Engine Optimization</strong>. It is the process of structuring your content so search engines and AI-assisted search experiences can easily identify, interpret, and surface your content as the direct answer to a user's question.
+                  Answer Engine Optimization, or AEO, is the practice of structuring your website content so search engines and AI-assisted discovery systems can interpret, extract, and surface your business as a credible answer to specific buyer questions.
                 </p>
                 <p>
-                  Traditional SEO helps your pages rank. <strong className="text-foreground">AEO helps your business get surfaced as the answer.</strong>
+                  When a homeowner searches "how do I choose a reliable plumber" or "what should I ask before hiring an HVAC company," they are not casually browsing. They are evaluating options. The businesses that answer clearly, directly, and credibly are better positioned to earn prominent visibility, early trust, and stronger consideration.
                 </p>
                 <p>
-                  For local service businesses, this matters because buyers increasingly begin their research by asking highly specific questions — about costs, services, timelines, qualifications, locations, and what to expect. If your content is not structured to answer those questions clearly, search engines may source answers from competitors instead.
+                  That visibility can appear in featured snippets, People Also Ask results, voice responses, and AI-assisted answer summaries. But the real value is not just placement. It is what that placement does for your business: it helps you enter the buyer's decision process earlier and with more authority.
                 </p>
                 <p>
-                  GrowSmallBiz helps local businesses adapt to this shift by building answer-focused content structures that support visibility, trust, and better-qualified traffic.
+                  AEO is not a shortcut or a standalone trick. It is disciplined content architecture: clear question targeting, direct-answer formatting, strong topical coverage, and structured signals that help modern search systems understand what your business knows and whom it serves.
+                </p>
+                <p>
+                  In practical terms, AEO helps local service businesses move from being one option in a list to being seen as a trusted source before the prospect ever reaches out.
                 </p>
               </div>
 
-              {/* Cited insights */}
+              {/* Key Stats */}
               <div className="mt-12 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
                 <div className="rounded-2xl p-6 space-y-4 border-l-4 border-primary" style={{ backgroundColor: 'hsl(210 40% 16%)' }}>
-                  <p className="text-xs font-semibold text-primary uppercase tracking-wider">Industry Insights</p>
-                  <ul className="space-y-3">
+                  <p className="text-xs font-semibold text-primary uppercase tracking-wider">Key Stats</p>
+                  <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <p className="text-sm text-muted-foreground">
-                        Google's Year in Search 2025 reported that searches for "Tell me about…" rose <strong className="text-foreground">70% year over year</strong>.{" "}
-                        <a href="https://blog.google/products-and-platforms/products/search/year-in-search-2025/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
-                          Source <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </p>
+                      <div>
+                        <p className="text-sm text-muted-foreground">
+                          ~43% of Google SERPs include a People Also Ask box, making question-based content one of the highest-leverage placements in search today.
+                        </p>
+                        <p className="text-xs text-muted-foreground/60 italic mt-1">Source: Similarweb SERP Features Study, 2023</p>
+                      </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <p className="text-sm text-muted-foreground">
-                        Google's Year in Search 2025 also reported that searches beginning with "How do I…" reached an all-time high with a <strong className="text-foreground">25% increase</strong>.{" "}
-                        <a href="https://blog.google/products-and-platforms/products/search/year-in-search-2025/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
-                          Source <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </p>
+                      <div>
+                        <p className="text-sm text-muted-foreground">
+                          Conversational and question-based searches have grown steadily over the past decade, with Google publicly reporting year-over-year increases in long-form, question-phrased queries as users adopt more natural language search behavior.
+                        </p>
+                        <p className="text-xs text-muted-foreground/60 italic mt-1">Source: Google Trends; Google's Year in Search annual reports</p>
+                      </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <p className="text-sm text-muted-foreground">
-                        Backlinko industry research found that featured snippets can materially improve visibility and click-through opportunity for qualifying queries.{" "}
-                        <a href="https://backlinko.com/google-ctr-stats" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">
-                          Source <ExternalLink className="w-3 h-3" />
-                        </a>
-                      </p>
+                      <div>
+                        <p className="text-sm text-muted-foreground">
+                          Featured snippets (Position Zero) appear above all organic results — including the #1 ranked page. An independent study found that pages holding a featured snippet capture a measurably higher click-through rate on informational queries compared to the standard #1 position when no snippet is present.
+                        </p>
+                        <p className="text-xs text-muted-foreground/60 italic mt-1">Source: Backlinko, "Featured Snippets: The Definitive Guide," 2022</p>
+                      </div>
                     </li>
                   </ul>
-                  <p className="text-xs text-muted-foreground/60 italic">
-                    Sources reflect publicly available industry research and Google-published information available at the time of publication.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* SECTION 3 — HOW SEARCH IS CHANGING */}
+        {/* SECTION 3 — HOW SEARCH BEHAVIOR IS CHANGING */}
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="THE OPPORTUNITY"
-                title="Search Is Becoming More"
-                titleHighlight="Answer-Driven"
-              />
-
-              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
-                <p>
-                  People increasingly search in question form and expect clear, immediate answers before deciding which business to contact. Search engines now highlight featured snippets, People Also Ask results, AI-generated summaries, and direct-answer formats that reduce friction for the user.
-                </p>
-                <p>
-                  That shift creates a new opportunity for local service businesses. If your content is structured around real customer questions and clear answer formatting, your business can earn visibility earlier in the decision process — before a prospect even clicks through to compare providers in depth.
-                </p>
-                <p>
-                  For local businesses, that means <strong className="text-foreground">stronger visibility, better trust signals, and more qualified visitors</strong> arriving on your site with clearer intent.
-                </p>
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">Search Has Changed</p>
+                <h2 className="section-title">
+                  How Local Service Buyers Research and Choose{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Providers Now</span>
+                </h2>
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* SECTION 3B — AI SEARCH GROWTH */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                {/* Left column — text */}
-                <div className="animate-fade-up">
-                  <p className="section-subtitle">Consumer Search Behavior Shift</p>
-                  <h2 className="section-title mb-6">
-                    AI Search Is Growing At An Extraordinary Rate.
-                    <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-primary italic">Will Your Business Stay Visible?</span>
-                  </h2>
-                  <div className="space-y-4 text-muted-foreground leading-relaxed">
-                    <p>
-                      Consumers are no longer relying only on traditional search results. They are asking longer, more specific questions in AI tools and using those answers to compare businesses faster. For local service companies, that means visibility is no longer just about ranking a page — it is about being present when the question gets answered.
-                    </p>
-                  </div>
+              <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12 animate-fade-up text-center">
+                Local buyers increasingly search the way they think: in questions, comparisons, and problem-based language. They want quick clarity, signs of credibility, and confidence that they are choosing the right business.
+              </p>
 
-                  <ul className="mt-8 space-y-4">
-                    {[
-                      "Buyers are asking more detailed pre-sale questions",
-                      "AI tools help users compare businesses faster",
-                      "AEO improves your chance of being seen in those early answer moments",
-                    ].map((point, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                        <span className="text-foreground/90 text-sm">{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-8">
-                    <a
-                      href="#final-cta"
-                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium text-sm transition-colors"
+              <div className="space-y-0 max-w-3xl mx-auto">
+                {searchBehaviorItems.map((item, index) => (
+                  <div key={index}>
+                    <div
+                      className="animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50"
+                      style={{ animationDelay: `${index * 0.05}s` }}
                     >
-                      See How AEO Fits Into Your SEO Strategy
-                      <ArrowRight className="w-4 h-4" />
-                    </a>
-                  </div>
-                </div>
-
-                {/* Right column — chart */}
-                <div className="animate-fade-up" style={{ animationDelay: "0.15s" }}>
-                  <div className="bg-card border border-border rounded-2xl p-4 md:p-6 shadow-lg overflow-hidden">
-                    <img
-                      src={aeoSearchGrowthChart}
-                      alt="Search Engine Growth Rate chart comparing traditional search engines like Google, YouTube, and Bing with AI platforms like ChatGPT, Gemini, Claude, and Perplexity"
-                      className="w-full h-auto rounded-lg"
-                      loading="lazy"
-                    />
-                    <p className="text-[10px] text-muted-foreground/50 mt-3 leading-relaxed px-2">
-                      Source: Third-party industry research compiled for illustrative purposes. Exact platform shares and growth rates may evolve over time.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION 4 — WHAT GSB INCLUDES IN AEO */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="OUR AEO FRAMEWORK"
-              title="What GrowSmallBiz Includes in"
-              titleHighlight="AEO"
-              description="AEO is not just writing FAQs. It is a structured content system built to help search engines and AI-driven interfaces understand exactly what your business answers, who it serves, and when your content is the right result to surface."
-            />
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {aeoServices.map((service, index) => (
-                <GlowCard
-                  key={index}
-                  className="p-6 animate-fade-up"
-                  style={{ animationDelay: `${index * 0.05}s` }}
-                >
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <service.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <h3 className="text-base font-semibold text-foreground mb-2">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
-                </GlowCard>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION 5 — AI-POWERED EXECUTION */}
-        <section className="py-24 bg-card">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <SectionHeader
-                subtitle="OUR APPROACH"
-                title="Why GrowSmallBiz Uses AI-Powered Workflows for"
-                titleHighlight="AEO"
-              />
-
-              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
-                <p>
-                  AEO requires speed, scale, and precision. Local businesses need more than a few manually written FAQ sections — they need a system that continuously identifies new customer questions, maps them to real intent, and turns them into content structures search engines can use.
-                </p>
-                <p>
-                  GrowSmallBiz combines <strong className="text-foreground">AI-powered workflows with strategic human oversight</strong> to move faster and cover more ground. This allows us to identify question opportunities more efficiently, structure content more consistently, and expand answer coverage without relying on slow, manual execution alone.
-                </p>
-                <p>
-                  The result is a more scalable answer-focused SEO process that keeps pace with how search behavior is changing.
-                </p>
-              </div>
-
-              <div className="mt-12 flex flex-wrap gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                {[
-                  "Question Discovery",
-                  "Intent Mapping",
-                  "Content Structuring",
-                  "Schema Implementation",
-                  "Performance Monitoring",
-                ].map((step, i) => (
-                  <div key={i} className="flex items-center gap-2 bg-background border border-border rounded-full px-4 py-2">
-                    <Zap className="w-3.5 h-3.5 text-primary" />
-                    <span className="text-sm font-medium text-foreground">{step}</span>
+                      <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4 flex items-start gap-3">
+                        <Search className="w-6 h-6 text-primary mt-1 shrink-0" />
+                        {item.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed pl-9">
+                        {item.description}
+                      </p>
+                    </div>
+                    {index < searchBehaviorItems.length - 1 && (
+                      <div className="border-b border-primary/10 mx-8" />
+                    )}
                   </div>
                 ))}
               </div>
@@ -438,38 +385,146 @@ const AEO = () => {
           </div>
         </section>
 
+        {/* SECTION 4 — WHAT GROWSMALLBIZ INCLUDES IN AEO */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16 animate-fade-up">
+              <p className="section-subtitle">What We Build</p>
+              <h2 className="section-title">
+                What GrowSmallBiz Includes in{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">AEO</span>
+              </h2>
+              <p className="section-description mt-4">Our AEO work is not a checklist or a one-time content drop. It is an ongoing content structuring process built around how your specific buyers search.</p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {aeoIncludes.map((item, index) => (
+                <GlowCard
+                  key={index}
+                  className="p-6 animate-fade-up"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <p className="text-xs font-bold text-primary mb-3">{item.num}</p>
+                  <h3 className="text-base font-semibold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                </GlowCard>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 5 — AGENTIC AI SEO PLAYBOOK */}
+        <section className="py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">Faster. Broader. More Consistent.</p>
+                <h2 className="section-title">
+                  How GrowSmallBiz Executes AEO with an{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI SEO Playbook</span>
+                </h2>
+              </div>
+
+              <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up">
+                <p>
+                  Effective AEO is not just about producing more FAQ content. It requires disciplined question research, intent mapping, content structuring, schema implementation, editorial judgment, and continuous refinement. GrowSmallBiz uses an Agentic AI SEO Playbook to accelerate research and execution, with human strategy guiding priorities, quality, and business alignment.
+                </p>
+              </div>
+
+              {/* 5 execution elements as cards */}
+              <div className="space-y-0 max-w-3xl mx-auto mt-12">
+                {aiPlaybookItems.map((item, index) => (
+                  <div key={index}>
+                    <div
+                      className="animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50"
+                      style={{ animationDelay: `${index * 0.05}s` }}
+                    >
+                      <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4 flex items-start gap-3">
+                        <Zap className="w-6 h-6 text-primary mt-1 shrink-0" />
+                        {item.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed pl-9">
+                        {item.description}
+                      </p>
+                    </div>
+                    {index < aiPlaybookItems.length - 1 && (
+                      <div className="border-b border-primary/10 mx-8" />
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Process Steps */}
+              <div className="mt-16 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.3s" }}>
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-6 text-center">AEO Execution Process</p>
+                <div className="space-y-0">
+                  {processSteps.map((step, index) => (
+                    <div key={index}>
+                      <div className="flex items-start gap-4 py-4 px-6">
+                        <span className="text-2xl font-display font-bold text-primary shrink-0">{index + 1}</span>
+                        <p className="text-foreground/90 leading-relaxed pt-1">{step.substring(2)}</p>
+                      </div>
+                      {index < processSteps.length - 1 && (
+                        <div className="border-b border-primary/10 mx-6" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* MID-PAGE CTA */}
         <CardCTA
-          title="Ready to Structure Your Content for Answer Visibility?"
+          title="Ready to Become the Answer in Search?"
           description="Schedule a strategy session to learn how AEO fits into your growth plan."
           buttonText="Schedule Strategy Session"
           buttonHref={PRIMARY_CTA_URL}
           sectionClassName="py-16"
         />
 
-        {/* SECTION 6 — USE CASES */}
+        {/* SECTION 6 — USE CASES FOR LOCAL SERVICE BUSINESSES */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="WHO IT'S FOR"
-              title="How AEO Helps Local Service Businesses"
-              titleHighlight="Get Found Earlier"
-            />
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16 animate-fade-up">
+                <p className="section-subtitle">Real-World Application</p>
+                <h2 className="section-title">
+                  What AEO Looks Like in{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Real Local Buying Situations</span>
+                </h2>
+              </div>
 
-            <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {useCases.map((uc, index) => (
-                <div
-                  key={index}
-                  className="bg-card border-2 border-border rounded-2xl p-6 animate-fade-up hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)]"
-                  style={{ animationDelay: `${index * 0.05}s` }}
-                >
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <uc.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">{uc.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{uc.description}</p>
-                </div>
-              ))}
+              <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12 animate-fade-up text-center">
+                <p>
+                  AEO is not theoretical. It affects the exact moments when local buyers are comparing providers, evaluating trust, and deciding whom to contact.
+                </p>
+                <p>
+                  Answer-ready content can include FAQ sections, service-page answer blocks, "how to choose" guides, pricing or treatment explainers, comparison content, and snippet-ready Q&A modules built around real buyer questions.
+                </p>
+                <p>
+                  Here is how answer-ready content can support visibility and credibility across common local service categories.
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {useCases.map((uc, index) => (
+                  <GlowCard
+                    key={index}
+                    className="p-6 animate-fade-up"
+                    style={{ animationDelay: `${index * 0.05}s` }}
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                      <uc.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">{uc.category}</p>
+                    <h3 className="text-lg font-semibold text-foreground mb-3">{uc.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{uc.description}</p>
+                    <p className="text-sm font-medium text-foreground italic">{uc.result}</p>
+                  </GlowCard>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -477,11 +532,14 @@ const AEO = () => {
         {/* SECTION 7 — WHY GROWSMALLBIZ */}
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="OUR DIFFERENCE"
-              title="Why GrowSmallBiz for"
-              titleHighlight="AEO"
-            />
+            <div className="text-center mb-16 animate-fade-up">
+              <p className="section-subtitle">Why GrowSmallBiz</p>
+              <h2 className="section-title">
+                Built for Local Service Businesses.{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Designed to Improve Visibility Where Buying Decisions Start.</span>
+              </h2>
+              <p className="section-description mt-4">GrowSmallBiz does not treat AEO as a disconnected tactic. We treat it as one part of a broader managed SEO system built to help local service businesses earn trust, visibility, and qualified inquiries across modern search environments.</p>
+            </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {whyGSBItems.map((item, i) => (
@@ -490,9 +548,6 @@ const AEO = () => {
                   className="flex items-start gap-4 bg-background border border-border rounded-xl p-5 animate-fade-up"
                   style={{ animationDelay: `${i * 0.05}s` }}
                 >
-                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <item.icon className="w-4 h-4 text-primary" />
-                  </div>
                   <div>
                     <p className="text-sm font-semibold text-foreground mb-1">{item.title}</p>
                     <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
@@ -505,7 +560,6 @@ const AEO = () => {
               Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth.
             </p>
 
-            {/* Internal link back to parent */}
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
               <Link to="/services/managed-ai-seo" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
@@ -516,7 +570,7 @@ const AEO = () => {
 
         {/* SECTION 8 — FAQ */}
         <FAQSection
-          title="Frequently Asked Questions"
+          title="Frequently Asked Questions About AEO"
           faqs={faqs}
           schemaType="FAQPage"
           contactCTA={{
@@ -531,19 +585,19 @@ const AEO = () => {
         <section id="final-cta" className="py-20 lg:py-28" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
-              <p className="text-primary font-medium mb-4">READY TO BECOME THE ANSWER?</p>
+              <p className="text-primary font-medium mb-4">Ready to Become the Answer?</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Ready to Become the Answer in{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Search?</span>
+                Your Buyers Are Already Asking the Questions.{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Make Sure Your Business Is the Answer.</span>
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-                If your prospects are asking questions before they contact a provider, your content needs to be ready with clear answers. GrowSmallBiz helps local service businesses build answer-focused visibility that supports trust, qualified traffic, and conversion.
+              <p className="text-lg text-muted-foreground mb-10 max-w-3xl mx-auto">
+                GrowSmallBiz will map the questions your buyers are asking, structure content that positions your business as the authoritative answer, and build the coverage that earns featured placement across modern search environments. Start with a strategy session or let us audit what you have right now.
               </p>
             </div>
 
             <CardCTA
-              title="Let's Build Your Answer Visibility"
-              description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
+              title="Schedule Your Strategy Session"
+              description="See how AEO fits into a broader managed AI SEO system for your business."
               buttonText="Schedule Strategy Session"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
@@ -557,14 +611,18 @@ const AEO = () => {
               </Button>
             </div>
 
-            <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <div className="text-center mt-8 text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <p>AEO is one pillar of the GrowSmallBiz Managed AI SEO system. Schedule a session to see how all components work together for your business.</p>
+            </div>
+
+            <div className="text-center mt-8 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
               <p>The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI.</p>
             </div>
           </div>
         </section>
 
-        {/* SECTION 10 — CONSULTATION FORM */}
+        {/* CONSULTATION FORM */}
         <ConsultationFormSection />
       </main>
 
