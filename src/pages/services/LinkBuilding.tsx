@@ -179,7 +179,7 @@ const LinkBuilding = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Link Building for Local Service Businesses | GrowSmallBiz</title>
+        <title>Premium SEO Link Building Services For Local Service Businesses: Build Authority in Your Local Market | GrowSmallBiz</title>
         <meta name="description" content="High-authority backlinks are still one of the strongest signals Google uses to rank pages. GrowSmallBiz earns real, editorially placed links from relevant sites for local service businesses." />
         <link rel="canonical" href="https://growsmallbiz.io/services/managed-ai-seo/link-building/" />
       </Head>
