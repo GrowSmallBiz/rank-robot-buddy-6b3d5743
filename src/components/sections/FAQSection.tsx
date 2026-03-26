@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -25,7 +26,7 @@ export interface ContactCTA {
 }
 
 interface FAQSectionProps {
-  title?: string;
+  title?: ReactNode;
   subtitle?: string;
   faqs: FAQItem[];
   schemaType?: string;
