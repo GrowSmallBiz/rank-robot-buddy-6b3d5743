@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { PdfViewer } from "@/components/PdfViewerWrapper";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useState, useEffect, useRef } from "react";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
