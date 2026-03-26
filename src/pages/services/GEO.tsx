@@ -319,7 +319,7 @@ const GEO = () => {
               <p className="section-subtitle">WHAT WE BUILD</p>
               <h2 className="section-title">
                 What GrowSmallBiz's{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO Methodology</span>
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO Optimization Methodology</span>
                 {" "}Includes
               </h2>
               <p className="section-description mt-4">
