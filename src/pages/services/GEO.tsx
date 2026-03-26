@@ -403,7 +403,7 @@ const GEO = () => {
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">WHY IT MATTERS</p>
               <h2 className="section-title">
-                Why GEO Matters for{" "}
+                Why GEO Optimization Matters for{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local Service Businesses</span>
               </h2>
               <p className="section-description mt-4">
