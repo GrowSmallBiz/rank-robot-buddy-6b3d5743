@@ -458,7 +458,7 @@ const AuthorityBuilding = () => {
                 <p className="section-subtitle">OUR APPROACH</p>
                 <h2 className="section-title">
                   How GrowSmallBiz Uses{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI SEO Playbook</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI SEO Playbooks</span>
                   {" "}to Accelerate Authority Building
                 </h2>
               </div>
