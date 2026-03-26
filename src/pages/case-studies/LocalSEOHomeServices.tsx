@@ -14,6 +14,7 @@ import {
   Search,
   Layers,
 } from "lucide-react";
+import { PdfViewer } from "@/components/PdfViewer";
 
 /* ─── Summary Proof Cards ─── */
 const summaryCards = [
@@ -258,8 +259,7 @@ const LocalSEOHomeServices = () => {
                   <P>We worked on developing content on the site and building out service pages. We optimized the homepage for search to increase traffic.</P>
                   <DetailLabel>The Results:</DetailLabel>
                   <P>Our efforts greatly impacted the traffic and helped contribute to new keyword rankings on site.</P>
-                  <CaseImage name="roofing-content-traffic-trend.png" />
-                  <CaseImage name="roofing-content-keyword-table.png" />
+                  <PdfViewer src="/case-studies/roofing-content-rankings.pdf" />
                 </CaseBlock>
 
                 <CaseBlock title="Roofing — Restoration / Florida">
