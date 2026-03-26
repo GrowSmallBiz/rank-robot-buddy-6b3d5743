@@ -42,6 +42,7 @@ export const routes: RouteRecord[] = [
       { path: "website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
       { path: "local-seo-services", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
       
+      { path: "case-studies/local-seo/home-service-businesses", lazy: lazy(() => import("./pages/case-studies/LocalSEOHomeServices")) },
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
       { path: "terms-of-service", lazy: lazy(() => import("./pages/TermsOfService")) },
