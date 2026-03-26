@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { PdfViewer } from "@/components/PdfViewerWrapper";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useState, useEffect, useRef } from "react";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -143,17 +144,17 @@ const LocalSEOHvacPlumbingElectrical = () => {
   return (
     <>
       <Head>
-        <title>Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses | GrowSmallBiz</title>
+        <title>Case Studies for HVAC, Plumbing & Electrical Businesses | GrowSmallBiz</title>
         <meta
           name="description"
-          content="Explore documented local SEO campaign results for HVAC, plumbing, and electrical businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversions."
+          content="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
         />
         <link rel="canonical" href="https://growsmallbiz.io/case-studies/hvac-plumbing-electrical" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses"
-        description="Explore documented local SEO campaign results for HVAC, plumbing, and electrical businesses."
+        name="Case Studies for HVAC, Plumbing & Electrical Businesses"
+        description="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and PPC campaigns."
         url="/case-studies/hvac-plumbing-electrical"
         breadcrumbs={[
           { name: "Case Studies", url: "/case-studies" },
@@ -164,9 +165,9 @@ const LocalSEOHvacPlumbingElectrical = () => {
       <main>
         {/* ═══ SECTION 1: HERO ═══ */}
         <ServiceHero
-          badge={{ icon: Search, text: "Case Studies / Local SEO" }}
-          title="Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses"
-          subtitle="Explore documented local SEO campaign results for HVAC, plumbing, and electrical businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused local SEO execution."
+          badge={{ icon: Search, text: "Case Studies / Local SEO + PPC" }}
+          title="Case Studies for HVAC, Plumbing & Electrical Businesses"
+          subtitle="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and PPC campaigns. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Book a Strategy Session", href: "/contact" }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: "/contact" }}
           backgroundImage={heroBg}
@@ -546,48 +547,162 @@ const LocalSEOHvacPlumbingElectrical = () => {
         <div id="google-ppc">
           <section className="py-20 relative" style={{ backgroundColor: 'hsl(210 25% 10%)' }}>
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
-                  <MousePointerClick className="w-4 h-4" />
-                  Google PPC Case Studies
-                </span>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  Google PPC Results for HVAC, Plumbing & Electrical Businesses
-                </h2>
-                <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-                  Paid search campaign results coming soon. Check back for documented Google Ads performance data across HVAC, plumbing, and electrical verticals.
-                </p>
+              <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-12">
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
+                    <MousePointerClick className="w-4 h-4" />
+                    PPC Case Studies
+                  </span>
+                  <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                    PPC Case Studies
+                  </h2>
+                  <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
+                    This section highlights paid search campaign performance for HVAC, plumbing, and electrical businesses, with a focus on lead generation, conversion efficiency, and cost-effective growth through Google Ads.
+                  </p>
+                </div>
+
+                {/* ── HVAC PPC Case Study ── */}
+                <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
+                  <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
+                    HVAC PPC Case Study
+                  </h3>
+                  <div className="space-y-6">
+                    <DetailLabel>Synopsis</DetailLabel>
+                    <P>
+                      PPC case study content will be injected here. Please provide the exact HVAC PPC case study content to populate this section.
+                    </P>
+
+                    <DetailLabel>Challenges</DetailLabel>
+                    <P>Content pending — awaiting approved PPC case study text.</P>
+
+                    <DetailLabel>Objective</DetailLabel>
+                    <P>Content pending — awaiting approved PPC case study text.</P>
+
+                    <DetailLabel>Campaign Strategy</DetailLabel>
+                    <P>Content pending — awaiting approved PPC case study text.</P>
+
+                    <DetailLabel>Results</DetailLabel>
+                    <P>Content pending — awaiting approved PPC case study text.</P>
+
+                    <DetailLabel>Conclusion</DetailLabel>
+                    <P>Content pending — awaiting approved PPC case study text.</P>
+
+                    <div className="mt-10">
+                      <h4 className="text-lg font-display font-semibold text-foreground mb-4">
+                        View Full PPC Case Study Report
+                      </h4>
+                      <p className="text-muted-foreground text-sm italic">PDF will be loaded once the PPC case study PDF is uploaded.</p>
+                    </div>
+
+                    <MicroCTA />
+                  </div>
+                </div>
               </div>
             </div>
           </section>
         </div>{/* end #google-ppc */}
 
-        {/* ═══ SECTION 5: CTA SECTION ═══ */}
-        <section className="py-20 relative">
-          <div className="absolute inset-0 section-glow" />
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-                Want Similar Local SEO Results for Your HVAC, Plumbing, or Electrical Business?
-              </h2>
-              <P>
-                If your business depends on calls, map visibility, and high-intent local search traffic, GrowSmallBiz can help you strengthen your local SEO foundation and improve lead flow with a more strategic, conversion-focused approach.
-              </P>
-              <p className="text-sm text-muted-foreground mt-4 mb-8">
-                See where your visibility, website structure, and conversion paths may be holding back growth.
-              </p>
+        {/* ═══ FAQ SECTION ═══ */}
+        <section className="py-20 relative" style={{ backgroundColor: 'hsl(215 30% 14%)' }}>
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
+                  Answers to common questions about how GrowSmallBiz approaches Local SEO and PPC strategy for HVAC, plumbing, and electrical businesses.
+                </p>
+              </div>
+
+              <div className="grid lg:grid-cols-5 gap-10">
+                {/* LEFT: FAQ Accordion */}
+                <div className="lg:col-span-3">
+                  <Accordion type="single" collapsible className="space-y-4">
+                    <AccordionItem value="q1" className="bg-card border border-border rounded-xl px-6">
+                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
+                        Are these results from GrowSmallBiz clients?
+                      </AccordionTrigger>
+                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
+                        These case studies reflect campaigns executed in a white-label fulfillment capacity prior to the launch of GrowSmallBiz. The methodology and execution experience now inform GrowSmallBiz's current client work.
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="q2" className="bg-card border border-border rounded-xl px-6">
+                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
+                        Can Local SEO really help HVAC, plumbing, and electrical businesses get more calls?
+                      </AccordionTrigger>
+                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
+                        Yes. Local SEO improves visibility in map results, Google Business Profile, and localized search—helping generate high-intent calls and inquiries.
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="q3" className="bg-card border border-border rounded-xl px-6">
+                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
+                        Can PPC help HVAC businesses generate leads faster?
+                      </AccordionTrigger>
+                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
+                        Yes. PPC enables immediate visibility for high-intent searches, helping generate qualified leads quickly while supporting broader marketing efforts.
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="q4" className="bg-card border border-border rounded-xl px-6">
+                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
+                        How long does it take to see results from Local SEO or PPC?
+                      </AccordionTrigger>
+                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
+                        PPC can generate faster initial results, while Local SEO builds momentum over time depending on competition, website quality, and local authority.
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="q5" className="bg-card border border-border rounded-xl px-6">
+                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
+                        What is included in your Local SEO strategy?
+                      </AccordionTrigger>
+                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
+                        Keyword research, Google Business Profile optimization, citations, onsite optimization, content support, and ongoing performance improvements.
+                      </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="q6" className="bg-card border border-border rounded-xl px-6">
+                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
+                        Can you review my current marketing performance?
+                      </AccordionTrigger>
+                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
+                        Yes. You can request a website and SEO audit or book a strategy session to identify improvement opportunities.
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+
+                {/* RIGHT: CTA Panel */}
+                <div className="lg:col-span-2">
+                  <div className="bg-card border border-border rounded-2xl p-8 sticky top-24">
+                    <h3 className="text-xl font-display font-bold text-foreground mb-4">
+                      Need Better Lead Flow from Search?
+                    </h3>
+                    <p className="text-foreground/80 leading-relaxed mb-6">
+                      If your HVAC, plumbing, or electrical business depends on calls, form fills, and high-intent search traffic, GrowSmallBiz can help identify where Local SEO or PPC improvements can drive better results.
+                    </p>
+                    <div className="space-y-3">
+                      <Button variant="hero" size="lg" className="w-full" asChild>
+                        <Link to="/contact">
+                          Book a Strategy Session
+                          <ArrowRight className="ml-2 w-4 h-4" />
+                        </Link>
+                      </Button>
+                      <Button variant="outline" size="lg" className="w-full" asChild>
+                        <Link to="/contact">
+                          Request a Website & SEO Audit
+                        </Link>
+                      </Button>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-4 text-center">
+                      Get clarity on your visibility, traffic quality, and conversion performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <CardCTA
-              title="Let's Build Your Local Search Visibility"
-              description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Book a Strategy Session"
-              buttonHref="/contact"
-              sectionClassName="pt-0 pb-0"
-            />
           </div>
         </section>
 
-        {/* ═══ SECTION 6: DISCLOSURE ═══ */}
+        {/* ═══ DISCLOSURE ═══ */}
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
