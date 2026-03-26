@@ -26,7 +26,7 @@ export interface ContactCTA {
 }
 
 interface FAQSectionProps {
-  title?: string;
+  title?: ReactNode;
   subtitle?: string;
   faqs: FAQItem[];
   schemaType?: string;
