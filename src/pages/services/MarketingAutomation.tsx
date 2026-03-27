@@ -556,6 +556,9 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
+        {/* Integrations Section */}
+        <IntegrationsSection />
+
         {/* Industries Section */}
         <section className="section-padding">
           <div className="container mx-auto px-4">
