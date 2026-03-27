@@ -82,6 +82,13 @@ for (const route of servicePages.sort()) {
   output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
 }
 
+if (caseStudyPages.length) {
+  output += `\n## Case Studies\n`;
+  for (const route of caseStudyPages.sort()) {
+    output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
+  }
+}
+
 if (legalPages.length) {
   output += `\n## Legal\n`;
   for (const route of legalPages.sort()) {
