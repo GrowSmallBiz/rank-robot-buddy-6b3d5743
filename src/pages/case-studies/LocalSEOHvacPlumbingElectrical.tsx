@@ -103,6 +103,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
   const [activeTab, setActiveTab] = useState("hvac-sacramento");
   const [activeSection, setActiveSection] = useState("local-seo");
   const navRef = useRef<HTMLDivElement>(null);
+  const { strategySessionUrl, freeAuditUrl } = useUtm();
 
   useEffect(() => {
     const handleScroll = () => {
