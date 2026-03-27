@@ -191,6 +191,12 @@ export const Header = () => {
                 >
                   Home Remodeling
                 </Link>
+                <Link
+                  to="/case-studies/cleaning-services"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Cleaning Services
+                </Link>
               </div>
             </div>
 
@@ -394,6 +400,13 @@ export const Header = () => {
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Home Remodeling
+                </Link>
+                <Link
+                  to="/case-studies/cleaning-services"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Cleaning Services
                 </Link>
               </div>
             )}
