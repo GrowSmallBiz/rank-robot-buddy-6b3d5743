@@ -162,10 +162,16 @@ export const Header = () => {
                 }`}
               >
                 <Link
-                  to="/case-studies/hvac-plumbing-electrical"
+                  to="/case-studies/local-seo-service/hvac-plumbing-electrical"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
-                  HVAC, Plumbing & Electrical
+                  HVAC, Plumbing & Electrical — Local SEO
+                </Link>
+                <Link
+                  to="/case-studies/google-ads-for-local-businesses/hvac-plumbing-electrical"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  HVAC, Plumbing & Electrical — Google Ads
                 </Link>
                 <Link
                   to="/case-studies/roofers"
@@ -361,11 +367,18 @@ export const Header = () => {
             {mobileCaseStudiesOpen && (
               <div className="pl-4 space-y-2">
                 <Link
-                  to="/case-studies/hvac-plumbing-electrical"
+                  to="/case-studies/local-seo-service/hvac-plumbing-electrical"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
-                  HVAC, Plumbing & Electrical
+                  HVAC, Plumbing & Electrical — Local SEO
+                </Link>
+                <Link
+                  to="/case-studies/google-ads-for-local-businesses/hvac-plumbing-electrical"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  HVAC, Plumbing & Electrical — Google Ads
                 </Link>
                 <Link
                   to="/case-studies/roofers"
