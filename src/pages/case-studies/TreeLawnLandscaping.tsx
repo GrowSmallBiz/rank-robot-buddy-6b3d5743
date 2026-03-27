@@ -573,7 +573,7 @@ const TreeLawnLandscaping = () => {
                       Campaign Results
                     </span>
                     <h3 className="text-lg font-display font-bold text-primary-foreground mt-2 mb-1">
-                      Tree & Lawn Google PPC Growth
+                      Tree & Lawn <GoogleColoredText /> PPC Growth
                     </h3>
                     <p className="text-xs text-primary-foreground/70">Google Ads Lead Generation Campaign</p>
                   </div>
@@ -624,7 +624,7 @@ const TreeLawnLandscaping = () => {
               <div className="max-w-4xl mx-auto">
                 <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                    Tree & Lawn Google PPC Case Study
+                    Tree & Lawn <GoogleColoredText /> PPC Case Study
                   </h3>
                   <div className="space-y-6">
                     <DetailLabel>Synopsis</DetailLabel>
