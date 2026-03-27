@@ -515,6 +515,9 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
+        {/* Funnel Builder Section */}
+        <FunnelBuilderSection />
+
         {/* Complete Growth Suite */}
         <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
