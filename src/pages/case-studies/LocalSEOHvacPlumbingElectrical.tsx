@@ -588,6 +588,39 @@ const LocalSEOHvacPlumbingElectrical = () => {
                   </p>
                 </div>
 
+                {/* ── PPC Summary Proof Card ── */}
+                <div className="max-w-sm mx-auto mb-12">
+                  <div className="bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col">
+                    <div className="bg-gradient-primary p-5">
+                      <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
+                        Campaign Results
+                      </span>
+                      <h3 className="text-lg font-display font-bold text-primary-foreground mt-2 mb-1">
+                        HVAC PPC Growth
+                      </h3>
+                      <p className="text-xs text-primary-foreground/70">Google Ads Campaign</p>
+                    </div>
+                    <div className="p-5 flex-1">
+                      <div className="space-y-3">
+                        {[
+                          "+50.23% CTR",
+                          "+83% Conversions",
+                          "+56.3% Conversion Rate",
+                          "-41% Cost Per Acquisition",
+                        ].map((metric, mIndex) => (
+                          <div key={mIndex} className="flex items-start gap-2">
+                            <TrendingUp className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                            <span className="text-sm text-foreground/85">{metric}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-xs text-muted-foreground mt-4">
+                        Improved lead volume and cost efficiency from paid search
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
                 {/* ── HVAC PPC Case Study ── */}
                 <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
