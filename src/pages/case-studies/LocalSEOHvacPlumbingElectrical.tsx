@@ -574,7 +574,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
           <section className="py-16 relative">
             <div className="absolute inset-0 section-glow" />
             <div className="container mx-auto px-4 relative z-10">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <div className="flex justify-center max-w-5xl mx-auto">
                 <div className="bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col">
                   <div className="bg-gradient-primary p-5">
                     <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
