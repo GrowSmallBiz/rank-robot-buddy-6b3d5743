@@ -162,12 +162,6 @@ export const Header = () => {
                 }`}
               >
                 <Link
-                  to="/case-studies/local-seo/home-service-businesses"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Home Service Businesses
-                </Link>
-                <Link
                   to="/case-studies/hvac-plumbing-electrical"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
@@ -366,13 +360,6 @@ export const Header = () => {
             </button>
             {mobileCaseStudiesOpen && (
               <div className="pl-4 space-y-2">
-                <Link
-                  to="/case-studies/local-seo/home-service-businesses"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
-                >
-                  Home Service Businesses
-                </Link>
                 <Link
                   to="/case-studies/hvac-plumbing-electrical"
                   onClick={() => setIsOpen(false)}

@@ -42,7 +42,7 @@ export const routes: RouteRecord[] = [
       { path: "website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
       { path: "local-seo-services", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
       
-      { path: "case-studies/local-seo/home-service-businesses", lazy: lazy(() => import("./pages/case-studies/LocalSEOHomeServices")) },
+      
       { path: "case-studies/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/LocalSEOHvacPlumbingElectrical")) },
       { path: "case-studies/roofers", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
       { path: "case-studies/tree-lawn-landscaping", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
