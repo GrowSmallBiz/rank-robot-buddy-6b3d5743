@@ -372,6 +372,13 @@ const LocalSEOHvacPlumbingElectrical = () => {
                       </P>
 
                       <PdfBlock src="/case-studies/hvac-sacramento-case-study.pdf" />
+                      <div className="mt-8 flex justify-center">
+                        <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
+                          <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">
+                            Request a Website &amp; SEO Audit
+                          </a>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </TabsContent>
@@ -413,6 +420,13 @@ const LocalSEOHvacPlumbingElectrical = () => {
                       />
 
                       <PdfBlock src="/case-studies/hvac-plumbing-fairbanks-case-study.pdf" />
+                      <div className="mt-8 flex justify-center">
+                        <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
+                          <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">
+                            Request a Website &amp; SEO Audit
+                          </a>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </TabsContent>
@@ -535,6 +549,13 @@ const LocalSEOHvacPlumbingElectrical = () => {
                       </P>
 
                       <PdfBlock src="/case-studies/electrical-oahu-case-study.pdf" />
+                      <div className="mt-8 flex justify-center">
+                        <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
+                          <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">
+                            Request a Website &amp; SEO Audit
+                          </a>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </TabsContent>
