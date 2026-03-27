@@ -2,10 +2,10 @@ import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
-import { Button } from "@/components/ui/button";
+
 import { Link } from "react-router-dom";
 import {
-  ArrowRight,
+  
   TrendingUp,
   Search,
   ChevronDown,
@@ -82,24 +82,6 @@ const BulletList = ({ items }: { items: string[] }) => (
       </li>
     ))}
   </ul>
-);
-
-/* ─── Micro CTA Row ─── */
-const MicroCTA = () => (
-  <div className="mt-10 flex flex-wrap items-center gap-4">
-    <Button variant="hero" size="lg" asChild>
-      <Link to="/contact">
-        Book a Strategy Session
-        <ArrowRight className="ml-2 w-4 h-4" />
-      </Link>
-    </Button>
-    <Link
-      to="/contact"
-      className="text-sm text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
-    >
-      Request a Website & SEO Audit
-    </Link>
-  </div>
 );
 
 /* ─── PDF Viewer Block ─── */
@@ -388,7 +370,6 @@ const LocalSEOHvacPlumbingElectrical = () => {
                       </P>
 
                       <PdfBlock src="/case-studies/hvac-sacramento-case-study.pdf" />
-                      <MicroCTA />
                     </div>
                   </div>
                 </TabsContent>
@@ -430,7 +411,6 @@ const LocalSEOHvacPlumbingElectrical = () => {
                       />
 
                       <PdfBlock src="/case-studies/hvac-plumbing-fairbanks-case-study.pdf" />
-                      <MicroCTA />
                     </div>
                   </div>
                 </TabsContent>
@@ -553,7 +533,6 @@ const LocalSEOHvacPlumbingElectrical = () => {
                       </P>
 
                       <PdfBlock src="/case-studies/electrical-oahu-case-study.pdf" />
-                      <MicroCTA />
                     </div>
                   </div>
                 </TabsContent>
@@ -654,7 +633,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
                       <p className="text-muted-foreground text-sm italic">PDF will be loaded once the PPC case study PDF is uploaded.</p>
                     </div>
 
-                    <MicroCTA />
+                    
                   </div>
                 </div>
               </div>
