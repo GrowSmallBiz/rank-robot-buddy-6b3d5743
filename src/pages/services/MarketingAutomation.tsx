@@ -360,21 +360,21 @@ const testimonials = [
   {
     quote:
       "GrowSmallBiz made building and launching campaigns unbelievably smooth. The clean interface removes all the clutter so I can focus on strategy, not setup. It saves me hours every week.",
-    name: "Ethan Brooks",
+    author: "Ethan Brooks",
     role: "Owner, SunPeak Home Services",
     rating: 5,
   },
   {
     quote:
       "The tools, documentation, and support are outstanding. Everything integrates seamlessly into my workflow, helping me ship faster and stay organized across multiple projects.",
-    name: "Mia Carter",
+    author: "Mia Carter",
     role: "Agency Director, Grant Digital",
     rating: 5,
   },
   {
     quote:
       "The platform scales effortlessly. We went from idea to thousands of users without stress. It gives our team the confidence to innovate without worrying about tech limitations.",
-    name: "Liam Rivera",
+    author: "Liam Rivera",
     role: "Managing Director, Roofing Company",
     rating: 5,
   },
