@@ -45,6 +45,7 @@ export const routes: RouteRecord[] = [
       { path: "case-studies/local-seo/home-service-businesses", lazy: lazy(() => import("./pages/case-studies/LocalSEOHomeServices")) },
       { path: "case-studies/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/LocalSEOHvacPlumbingElectrical")) },
       { path: "case-studies/roofers", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
+      { path: "case-studies/tree-lawn-landscaping", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
       { path: "terms-of-service", lazy: lazy(() => import("./pages/TermsOfService")) },
