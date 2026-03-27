@@ -539,6 +539,17 @@ const LocalSEOHvacPlumbingElectrical = () => {
                   </div>
                 </TabsContent>
               </Tabs>
+
+              {/* CTA under case study tabs — visible for all tabs */}
+              <div className="mt-12">
+                <PersonCTA
+                  title="Want Results Like These for Your Business?"
+                  description="Book a free strategy session and let's map out a growth plan tailored to your market."
+                  buttonText="Book a Strategy Session"
+                  buttonHref={strategySessionUrl}
+                  sectionClassName="py-0"
+                />
+              </div>
             </div>
           </div>
         </section>
