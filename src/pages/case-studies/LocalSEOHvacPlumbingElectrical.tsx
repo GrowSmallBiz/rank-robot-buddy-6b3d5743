@@ -2,10 +2,10 @@ import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
-
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
-  
+  ArrowRight,
   TrendingUp,
   Search,
   ChevronDown,
