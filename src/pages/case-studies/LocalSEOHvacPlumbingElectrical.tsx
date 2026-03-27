@@ -260,7 +260,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
-                Consistent Local SEO Methodology Across Trades Campaigns
+                Consistent Local SEO <span className="text-transparent bg-clip-text bg-gradient-primary">Methodology</span> Across Trades Campaigns
               </h2>
               <P>
                 Across these campaigns, the work consistently included extensive keyword research, Google Business Profile optimization, local and niche citation building, onsite location signal improvements, content support, and local visibility enhancements designed to improve rankings, engagement, and lead generation for high-intent service businesses.
