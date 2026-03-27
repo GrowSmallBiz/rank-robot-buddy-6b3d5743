@@ -11,6 +11,9 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { TestimonialCard, TestimonialsGrid } from "@/components/services/TestimonialCard";
 import { createServiceContactCTA } from "@/config/contactCTA";
+import { FunnelBuilderSection } from "@/components/sections/FunnelBuilderSection";
+import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
+import { AutopilotCTASection } from "@/components/sections/AutopilotCTASection";
 import heroImage from "@/assets/marketing-automation-hero.jpg";
 import {
   Bot,
