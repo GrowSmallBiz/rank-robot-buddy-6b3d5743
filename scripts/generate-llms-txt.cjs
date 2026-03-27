@@ -36,7 +36,10 @@ const primaryPages = filteredRoutes.filter(r =>
   ['/', '/about', '/contact'].includes(r)
 );
 const servicePages = filteredRoutes.filter(r =>
-  r.startsWith('/services')
+  r.startsWith('/services') || r.startsWith('/local-seo-services/') || r === '/paid-advertising-services'
+);
+const caseStudyPages = filteredRoutes.filter(r =>
+  r.startsWith('/case-studies/')
 );
 const legalPages = filteredRoutes.filter(r =>
   ['/privacy-policy', '/terms-of-service'].includes(r)
