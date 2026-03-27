@@ -553,13 +553,6 @@ const LocalSEOHvacPlumbingElectrical = () => {
         </section>
         </div>{/* end #local-seo */}
 
-        {/* ═══ CTA BETWEEN SECTIONS ═══ */}
-        <CardCTA
-          title="Ready to Grow Your HVAC, Plumbing, or Electrical Business?"
-          description="Get a comprehensive AI-powered audit and discover untapped opportunities to grow your business. No obligations, just actionable insights."
-          buttonText="Book a Strategy Session"
-          accentWords={["Grow"]}
-        />
 
         {/* ═══ GOOGLE PPC SECTION ═══ */}
         <div id="google-ppc">
