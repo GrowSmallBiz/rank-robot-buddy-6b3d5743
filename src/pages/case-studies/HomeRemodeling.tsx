@@ -217,19 +217,19 @@ const HomeRemodeling = () => {
                     value="home-remodeling-long-term"
                     className="flex-1 min-w-[120px] py-3 text-xs sm:text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                   >
-                    Remodeling — Long-Term
+                    Home Remodeling
                   </TabsTrigger>
                   <TabsTrigger
                     value="home-renovation-organic"
                     className="flex-1 min-w-[120px] py-3 text-xs sm:text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                   >
-                    Renovation — Organic
+                    Home Renovation
                   </TabsTrigger>
                   <TabsTrigger
                     value="dallas-home-renovation"
                     className="flex-1 min-w-[120px] py-3 text-xs sm:text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                   >
-                    Dallas — Visibility
+                    Home Remodeling — Dallas
                   </TabsTrigger>
                 </TabsList>
 
