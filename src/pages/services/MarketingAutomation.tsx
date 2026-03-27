@@ -11,6 +11,9 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { TestimonialCard, TestimonialsGrid } from "@/components/services/TestimonialCard";
 import { createServiceContactCTA } from "@/config/contactCTA";
+import { FunnelBuilderSection } from "@/components/sections/FunnelBuilderSection";
+import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
+import { AutopilotCTASection } from "@/components/sections/AutopilotCTASection";
 import heroImage from "@/assets/marketing-automation-hero.jpg";
 import {
   Bot,
@@ -512,6 +515,9 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
+        {/* Funnel Builder Section */}
+        <FunnelBuilderSection />
+
         {/* Complete Growth Suite */}
         <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
@@ -549,6 +555,9 @@ const MarketingAutomation = () => {
             </div>
           </div>
         </section>
+
+        {/* Integrations Section */}
+        <IntegrationsSection />
 
         {/* Industries Section */}
         <section className="section-padding">
@@ -619,6 +628,9 @@ const MarketingAutomation = () => {
             <FAQSection faqs={faqs} />
           </div>
         </section>
+
+        {/* Autopilot CTA */}
+        <AutopilotCTASection />
 
         {/* Final CTA */}
         <PersonCTA {...contactCTA} />
