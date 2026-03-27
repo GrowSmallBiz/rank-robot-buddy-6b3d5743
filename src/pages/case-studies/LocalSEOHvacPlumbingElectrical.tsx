@@ -618,31 +618,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
                     HVAC PPC Case Study
                   </h3>
-                  <div className="space-y-6">
-                    <DetailLabel>Synopsis</DetailLabel>
-                    <P>
-                      PPC case study content will be injected here. Please provide the exact HVAC PPC case study content to populate this section.
-                    </P>
-
-                    <DetailLabel>Challenges</DetailLabel>
-                    <P>Content pending — awaiting approved PPC case study text.</P>
-
-                    <DetailLabel>Objective</DetailLabel>
-                    <P>Content pending — awaiting approved PPC case study text.</P>
-
-                    <DetailLabel>Campaign Strategy</DetailLabel>
-                    <P>Content pending — awaiting approved PPC case study text.</P>
-
-                    <DetailLabel>Results</DetailLabel>
-                    <P>Content pending — awaiting approved PPC case study text.</P>
-
-                    <DetailLabel>Conclusion</DetailLabel>
-                    <P>Content pending — awaiting approved PPC case study text.</P>
-
-                    <PdfBlock src="/case-studies/ppc-hvac-case-study.pdf" />
-
-                    
-                  </div>
+                  <PdfBlock src="/case-studies/ppc-hvac-case-study.pdf" />
                 </div>
               </div>
             </div>
