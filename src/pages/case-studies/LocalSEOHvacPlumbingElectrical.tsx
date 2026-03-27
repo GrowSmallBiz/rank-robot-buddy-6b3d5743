@@ -779,19 +779,8 @@ const LocalSEOHvacPlumbingElectrical = () => {
           })}
         />
 
-        {/* ═══ DISCLOSURE ═══ */}
-        <section className="py-12">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <p className="text-sm text-muted-foreground text-center italic">
-                These campaigns were executed in a white-label fulfillment capacity prior to the launch of GrowSmallBiz.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ═══ CONCLUSION SECTION ═══ */}
-        <section className="py-20">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
