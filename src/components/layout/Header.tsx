@@ -185,6 +185,12 @@ export const Header = () => {
                 >
                   Tree Care, Lawn Care & Landscaping
                 </Link>
+                <Link
+                  to="/case-studies/home-remodeling"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Home Remodeling
+                </Link>
               </div>
             </div>
 
@@ -381,6 +387,13 @@ export const Header = () => {
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Tree Care, Lawn Care & Landscaping
+                </Link>
+                <Link
+                  to="/case-studies/home-remodeling"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Home Remodeling
                 </Link>
               </div>
             )}
