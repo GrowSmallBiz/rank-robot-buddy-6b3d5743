@@ -541,14 +541,12 @@ const LocalSEOHvacPlumbingElectrical = () => {
               </Tabs>
 
               {/* CTA under case study tabs — visible for all tabs */}
-              <div className="mt-12">
-                <PersonCTA
-                  title="Want Results Like These for Your Business?"
-                  description="Book a free strategy session and let's map out a growth plan tailored to your market."
-                  buttonText="Book a Strategy Session"
-                  buttonHref={strategySessionUrl}
-                  sectionClassName="py-0"
-                />
+              <div className="mt-12 flex justify-center">
+                <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
+                  <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">
+                    Request a Website &amp; SEO Audit
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -740,6 +738,15 @@ const LocalSEOHvacPlumbingElectrical = () => {
                     </P>
 
                     <PdfBlock src="/case-studies/ppc-hvac-case-study.pdf" />
+
+                    {/* CTA under PDF viewer */}
+                    <div className="mt-8 flex justify-center">
+                      <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
+                        <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">
+                          Request a Website &amp; SEO Audit
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
