@@ -212,8 +212,26 @@ const LocalSEOHvacPlumbingElectrical = () => {
         {/* ═══ LOCAL SEO SECTION ═══ */}
         <div id="local-seo">
 
+        {/* ═══ LOCAL SEO SECTION HEADING ═══ */}
+        <section className="pt-20 pb-4 relative">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
+                <Search className="w-4 h-4" />
+                Local SEO Case Studies
+              </span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                Local SEO Case Studies
+              </h2>
+              <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
+                This section highlights local SEO campaign performance for HVAC, plumbing, and electrical businesses, with a focus on Google Business Profile visibility, map rankings, organic search growth, keyword movement, calls, and conversion-focused lead generation.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ═══ SECTION 2: SUMMARY PROOF CARDS ═══ */}
-        <section className="py-20 relative">
+        <section className="py-16 relative">
           <div className="absolute inset-0 section-glow" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
