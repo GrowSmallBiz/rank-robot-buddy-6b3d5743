@@ -634,7 +634,100 @@ const LocalSEOHvacPlumbingElectrical = () => {
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
                     HVAC PPC Case Study
                   </h3>
-                  <PdfBlock src="/case-studies/ppc-hvac-case-study.pdf" />
+                  <div className="space-y-6">
+                    <DetailLabel>Synopsis</DetailLabel>
+                    <P>
+                      In the dynamic landscape of HVAC services, an industry player sought to amplify its digital footprint and connect with a broader audience. The objective was clear: leverage Google Ads to strategically position its services, captivate potential clients, and foster meaningful engagements.
+                    </P>
+
+                    <DetailLabel>Challenges</DetailLabel>
+                    <P>
+                      The primary objective was to enhance online visibility, attract qualified leads, reduce the average CPC &amp; CPA, and improve conversion rates through the company's website. For any new campaign, we request to wait for 45 days for the campaign to start performing as Google's algorithm takes time to collect data and we get a clear picture of how and what needs to be done for that campaign. For a campaign far lower than the suggested budget can take a bit more time for data collection. This can be applied to an old campaign as well if the campaign needs to be rebuilt or significant changes are needed to be made for that campaign.
+                    </P>
+
+                    <DetailLabel>Objective</DetailLabel>
+                    <P>
+                      The overarching goal was to augment brand exposure, cultivate high-quality leads, and ultimately drive conversions for HVAC services.
+                    </P>
+
+                    <DetailLabel>Campaign Strategy</DetailLabel>
+
+                    <SubHead>Keyword Precision</SubHead>
+                    <P>
+                      Meticulously researched and selected keywords were instrumental in ensuring the ads surfaced during relevant searches, targeting users actively seeking HVAC solutions.
+                    </P>
+
+                    <SubHead>Geographic Focus</SubHead>
+                    <P>
+                      Tailored campaigns were deployed with a keen focus on areas exhibiting a heightened demand for HVAC services. This approach optimized the campaign for specific regions, maximizing impact within the designated budget.
+                    </P>
+
+                    <SubHead>Compelling Ad Copy</SubHead>
+                    <P>
+                      Compelling ad copy was crafted to highlight the company's unique value propositions, aiming to capture users' attention and entice them to click through to the website.
+                    </P>
+
+                    <SubHead>Ad Extensions Integration</SubHead>
+                    <P>
+                      Implemented diverse ad extensions, such as site-link extensions and callout extensions, to furnish additional information and encourage user interaction.
+                    </P>
+
+                    <SubHead>Targeted Campaigns</SubHead>
+                    <P>
+                      The campaigns were segmented to target specific demographics and interests, ensuring that the ads reached the most relevant audience likely to convert.
+                    </P>
+
+                    <SubHead>Continuous Refinement through A/B Testing</SubHead>
+                    <P>
+                      Regular A/B testing facilitated the refinement of ad copies, visuals, and landing pages based on real-time data. This iterative approach ensured that the campaign evolved in response to user preferences.
+                    </P>
+
+                    <SubHead>Continuous Optimization</SubHead>
+                    <P>
+                      The campaign performance was regularly monitored, and adjustments were made based on insights gathered from data analytics. This included refining targeting parameters, testing different ad creatives, and bidding strategy.
+                    </P>
+
+                    <DetailLabel>Results</DetailLabel>
+
+                    <SubHead>Notable Click-Through Rate Increase</SubHead>
+                    <P>
+                      The optimized campaign witnessed a substantial boost in the Click-Through Rate (CTR), signifying heightened engagement from users actively interested in HVAC services. CTR was increased by 50.23%.
+                    </P>
+
+                    <SubHead>Robust Lead Generation</SubHead>
+                    <P>
+                      The Google Ads initiative yielded a significant uptick in qualified leads, showcasing a genuine interest from users in exploring the featured HVAC services. Our approach resulted in an 83% increase in total conversions.
+                    </P>
+
+                    <SubHead>Enhanced Conversion Rates</SubHead>
+                    <P>
+                      Ongoing refinement through A/B testing contributed to a marked improvement in conversion rates, translating into a higher volume of clients actively seeking HVAC services. The conversion rate was increased by 56.3%.
+                    </P>
+
+                    <SubHead>Cost-Effective Acquisition</SubHead>
+                    <P>
+                      Strategic targeting and continuous optimization led to a cost-effective outcome, ensuring a positive return on investment for the advertising budget. CPA decreased by 41% from the time frame including both phone calls and form submissions before our thorough account reorganization.
+                    </P>
+
+                    <SubHead>Results Obtained For an HVAC Company in Florida</SubHead>
+                    <P>From August 25, 2022, to January 24, 2023:</P>
+                    <BulletList
+                      items={[
+                        "Clicks: 546",
+                        "Conversions: 158",
+                        "CPA: $36.80",
+                        "Conversion rate: 28.94%",
+                        "Avg. CPC: $10.65",
+                      ]}
+                    />
+
+                    <DetailLabel>Conclusion</DetailLabel>
+                    <P>
+                      This Google Ads campaign exemplifies the effectiveness of PPC strategies within the HVAC sector. By strategically navigating the online landscape, the campaign successfully elevated the visibility of HVAC services, fostering engagement, and driving growth in a competitive industry.
+                    </P>
+
+                    <PdfBlock src="/case-studies/ppc-hvac-case-study.pdf" />
+                  </div>
                 </div>
               </div>
             </div>
