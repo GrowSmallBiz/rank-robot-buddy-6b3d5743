@@ -188,7 +188,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
                 }`}
               >
                 <MousePointerClick className="inline-block w-4 h-4 mr-2 -mt-0.5" />
-                Google PPC Results
+                <GoogleColoredText /> PPC Results
               </button>
             </div>
           </div>
@@ -575,7 +575,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
               <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
                   <MousePointerClick className="w-4 h-4" />
-                  Google PPC Case Studies
+                  <GoogleColoredText /> PPC Case Studies
                 </span>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
                   <GoogleColoredText /> PPC <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>

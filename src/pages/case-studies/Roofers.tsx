@@ -214,7 +214,7 @@ const Roofers = () => {
                 }`}
               >
                 <MousePointerClick className="inline-block w-4 h-4 mr-2 -mt-0.5" />
-                Google PPC Results
+                <GoogleColoredText /> PPC Results
               </button>
             </div>
           </div>
