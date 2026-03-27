@@ -139,6 +139,14 @@ export const Header = () => {
                   Paid Media & Advertising
                 </Link>
 
+                {/* Marketing Automation */}
+                <Link
+                  to="/services/marketing-automation-for-small-business"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Marketing Automation
+                </Link>
+
               </div>
             </div>
 
@@ -349,6 +357,15 @@ export const Header = () => {
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Paid Media & Advertising
+                </Link>
+
+                {/* Marketing Automation */}
+                <Link
+                  to="/services/marketing-automation-for-small-business"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Marketing Automation
                 </Link>
 
               </div>
