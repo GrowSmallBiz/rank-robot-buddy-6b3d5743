@@ -577,7 +577,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
                   Google PPC Case Studies
                 </span>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  Google PPC <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+                  <GoogleColoredText /> PPC <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
                 </h2>
                 <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                   This section highlights paid search campaign performance for HVAC, plumbing, and electrical businesses, with a focus on lead generation, conversion efficiency, and cost-effective growth through Google Ads.
