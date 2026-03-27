@@ -279,7 +279,7 @@ const TreeLawnLandscaping = () => {
                     value="landscape-design-build"
                     className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                   >
-                    Landscape Design-Build — Residential Backyards
+                    Landscape Design-Build — Residential
                   </TabsTrigger>
                   <TabsTrigger
                     value="landscaping-ashland"
@@ -295,11 +295,11 @@ const TreeLawnLandscaping = () => {
                   </TabsTrigger>
                 </TabsList>
 
-                {/* ── TAB 1: Landscape Design-Build — Residential Backyards ── */}
+                {/* ── TAB 1: Landscape Design-Build — Residential ── */}
                 <TabsContent value="landscape-design-build">
                   <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                     <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                      Landscape Design-Build — Residential Backyards
+                      Landscape Design-Build — Residential
                     </h3>
                     <div className="space-y-6">
                       <DetailLabel>Client</DetailLabel>
