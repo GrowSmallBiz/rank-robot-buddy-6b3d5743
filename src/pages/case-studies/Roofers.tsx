@@ -311,7 +311,7 @@ const Roofers = () => {
                     value="roofing-bellevue"
                     className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                   >
-                    Roofing SEO Growth — Bellevue / Kent / Seattle
+                    Roofing SEO Growth — Greater Seattle
                   </TabsTrigger>
                   <TabsTrigger
                     value="roofing-atlanta"
@@ -386,11 +386,11 @@ const Roofers = () => {
                   </div>
                 </TabsContent>
 
-                {/* ── TAB 2: Roofing SEO Growth — Bellevue / Kent / Seattle ── */}
+                {/* ── TAB 2: Roofing SEO Growth — Greater Seattle ── */}
                 <TabsContent value="roofing-bellevue">
                   <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                     <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                      Roofing SEO Growth — Bellevue / Kent / Seattle
+                      Roofing SEO Growth — Greater Seattle
                     </h3>
                     <div className="space-y-6">
                       <DetailLabel>Goals</DetailLabel>
