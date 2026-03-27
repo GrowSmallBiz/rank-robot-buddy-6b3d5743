@@ -27,8 +27,9 @@ Canonical: https://growsmallbiz.io/
 
 ## Case Studies
 - Cleaning Services: https://growsmallbiz.io/case-studies/cleaning-services/
+- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/google-ads-for-local-businesses/hvac-plumbing-electrical/
 - Home Remodeling: https://growsmallbiz.io/case-studies/home-remodeling/
-- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/hvac-plumbing-electrical/
+- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/local-seo-service/hvac-plumbing-electrical/
 - Roofers: https://growsmallbiz.io/case-studies/roofers/
 - Tree Lawn Landscaping: https://growsmallbiz.io/case-studies/tree-lawn-landscaping/
 
