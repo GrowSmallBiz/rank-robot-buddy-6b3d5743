@@ -627,12 +627,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
                     <DetailLabel>Conclusion</DetailLabel>
                     <P>Content pending — awaiting approved PPC case study text.</P>
 
-                    <div className="mt-10">
-                      <h4 className="text-lg font-display font-semibold text-foreground mb-4">
-                        View Full PPC Case Study Report
-                      </h4>
-                      <p className="text-muted-foreground text-sm italic">PDF will be loaded once the PPC case study PDF is uploaded.</p>
-                    </div>
+                    <PdfBlock src="/case-studies/ppc-hvac-case-study.pdf" />
 
                     
                   </div>
