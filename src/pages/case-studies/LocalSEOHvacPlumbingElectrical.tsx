@@ -552,68 +552,84 @@ const LocalSEOHvacPlumbingElectrical = () => {
 
         {/* ═══ GOOGLE PPC SECTION ═══ */}
         <div id="google-ppc">
-          <section className="py-20 relative" style={{ backgroundColor: 'hsl(210 25% 10%)' }}>
+          {/* ═══ PPC SECTION HEADING ═══ */}
+          <section className="pt-20 pb-4 relative">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-12">
-                  <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
-                    <MousePointerClick className="w-4 h-4" />
-                    PPC Case Studies
-                  </span>
-                  <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                    PPC Case Studies
-                  </h2>
-                  <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-                    This section highlights paid search campaign performance for HVAC, plumbing, and electrical businesses, with a focus on lead generation, conversion efficiency, and cost-effective growth through Google Ads.
-                  </p>
-                </div>
+              <div className="max-w-4xl mx-auto text-center">
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
+                  <MousePointerClick className="w-4 h-4" />
+                  PPC Case Studies
+                </span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                  PPC Case Studies
+                </h2>
+                <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
+                  This section highlights paid search campaign performance for HVAC, plumbing, and electrical businesses, with a focus on lead generation, conversion efficiency, and cost-effective growth through Google Ads.
+                </p>
+              </div>
+            </div>
+          </section>
 
-                {/* ── PPC Summary Proof Card ── */}
-                <div className="max-w-sm mx-auto mb-12">
-                  <div className="bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col">
-                    <div className="bg-gradient-primary p-5">
-                      <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
-                        Campaign Results
-                      </span>
-                      <h3 className="text-lg font-display font-bold text-primary-foreground mt-2 mb-1">
-                        HVAC PPC Growth
-                      </h3>
-                      <p className="text-xs text-primary-foreground/70">Google Ads Lead Generation Campaign</p>
+          {/* ═══ PPC SUMMARY PROOF CARDS ═══ */}
+          <section className="py-16 relative">
+            <div className="absolute inset-0 section-glow" />
+            <div className="container mx-auto px-4 relative z-10">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div className="bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col">
+                  <div className="bg-gradient-primary p-5">
+                    <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
+                      Campaign Results
+                    </span>
+                    <h3 className="text-lg font-display font-bold text-primary-foreground mt-2 mb-1">
+                      HVAC PPC Growth
+                    </h3>
+                    <p className="text-xs text-primary-foreground/70">Google Ads Lead Generation Campaign</p>
+                  </div>
+                  <div className="p-5 flex-1">
+                    <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Paid Ads Impact</h4>
+                    <div className="space-y-3">
+                      {[
+                        "CTR → +50.23%",
+                        "Conversions → +83%",
+                        "Conversion Rate → +56.3%",
+                        "CPA → -41%",
+                      ].map((metric, mIndex) => (
+                        <div key={mIndex} className="flex items-start gap-2">
+                          <TrendingUp className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                          <span className="text-sm text-foreground/85">{metric}</span>
+                        </div>
+                      ))}
                     </div>
-                    <div className="p-5 flex-1">
-                      <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Paid Ads Impact</h4>
-                      <div className="space-y-3">
-                        {[
-                          "CTR → +50.23%",
-                          "Conversions → +83%",
-                          "Conversion Rate → +56.3%",
-                          "CPA → -41%",
-                        ].map((metric, mIndex) => (
-                          <div key={mIndex} className="flex items-start gap-2">
-                            <TrendingUp className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                            <span className="text-sm text-foreground/85">{metric}</span>
-                          </div>
-                        ))}
-                      </div>
-                      <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-5 mb-3">Campaign Outcome</h4>
-                      <div className="space-y-3">
-                        {[
-                          "Increased qualified lead volume",
-                          "Improved conversion efficiency",
-                          "Reduced cost per acquisition",
-                          "Stronger campaign performance consistency",
-                        ].map((outcome, oIndex) => (
-                          <div key={oIndex} className="flex items-start gap-2">
-                            <TrendingUp className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
-                            <span className="text-sm text-foreground/85">{outcome}</span>
-                          </div>
-                        ))}
-                      </div>
+                    <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-5 mb-3">Campaign Outcome</h4>
+                    <div className="space-y-3">
+                      {[
+                        "Increased qualified lead volume",
+                        "Improved conversion efficiency",
+                        "Reduced cost per acquisition",
+                        "Stronger campaign performance consistency",
+                      ].map((outcome, oIndex) => (
+                        <div key={oIndex} className="flex items-start gap-2">
+                          <TrendingUp className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                          <span className="text-sm text-foreground/85">{outcome}</span>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
+              </div>
 
-                {/* ── HVAC PPC Case Study ── */}
+              {/* Scroll Down Prompt */}
+              <div className="flex flex-col items-center mt-12 animate-bounce">
+                <p className="text-sm font-semibold mb-2 text-primary">Scroll Down to Read Full Case Studies</p>
+                <ChevronDown className="w-5 h-5 text-primary" />
+              </div>
+            </div>
+          </section>
+
+          {/* ═══ PPC CASE STUDY DETAIL ═══ */}
+          <section className="py-16 relative">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
                 <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
                     HVAC PPC Case Study
