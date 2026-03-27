@@ -1,6 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { GoogleColoredText } from "@/components/GoogleColoredText";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -59,7 +60,7 @@ const seoSummaryCards = [
 
 const ppcSummaryCards = [
   {
-    title: "Roofing PPC Growth",
+    title: "Roofing Google PPC Growth",
     subtitle: "Google Ads Campaign",
     metrics: [
       "+93.3% Conversions",
@@ -70,7 +71,7 @@ const ppcSummaryCards = [
     supportLine: "Improved conversion efficiency and stronger year-over-year paid search performance",
   },
   {
-    title: "Multi-City Roofing PPC Growth",
+    title: "Multi-City Roofing Google PPC Growth",
     subtitle: "Google Ads Campaign",
     metrics: [
       "+62.2% Conversions",
@@ -547,10 +548,10 @@ const Roofers = () => {
               <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
                   <MousePointerClick className="w-4 h-4" />
-                  PPC Case Studies
+                  <GoogleColoredText /> PPC Case Studies
                 </span>
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  PPC <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+                  <GoogleColoredText /> PPC <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
                 </h2>
                 <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                   This section highlights paid search campaign performance for roofing businesses, with a focus on lead generation, conversion efficiency, and cost-effective growth through Google Ads.
@@ -574,7 +575,9 @@ const Roofers = () => {
                         Campaign Results
                       </span>
                       <h3 className="text-lg font-display font-bold text-primary-foreground mt-2 mb-1">
-                        {card.title}
+                        {card.title.includes("Google") ? (
+                          <>{card.title.split("Google")[0]}<GoogleColoredText /> {card.title.split("Google")[1].trimStart()}</>
+                        ) : card.title}
                       </h3>
                       <p className="text-xs text-primary-foreground/70">{card.subtitle}</p>
                     </div>
@@ -615,13 +618,13 @@ const Roofers = () => {
                       value="ppc-roofing-1"
                       className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                     >
-                      Roofing PPC — Efficiency Gains
+                      Roofing <GoogleColoredText /> PPC — Efficiency Gains
                     </TabsTrigger>
                     <TabsTrigger
                       value="ppc-roofing-2"
                       className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                     >
-                      Multi-City Roofing PPC — Florida
+                      Multi-City Roofing <GoogleColoredText /> PPC — Florida
                     </TabsTrigger>
                   </TabsList>
 
@@ -629,7 +632,7 @@ const Roofers = () => {
                   <TabsContent value="ppc-roofing-1">
                     <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                       <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                        Roofing PPC Case Study — Monthly + Year-over-Year Efficiency Gains
+                        Roofing <GoogleColoredText /> PPC Case Study — Monthly + Year-over-Year Efficiency Gains
                       </h3>
                       <div className="space-y-6">
                         <DetailLabel>Synopsis</DetailLabel>
@@ -697,7 +700,7 @@ const Roofers = () => {
                   <TabsContent value="ppc-roofing-2">
                     <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                       <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                        Multi-City Roofing PPC Case Study — Florida Markets
+                        Multi-City Roofing <GoogleColoredText /> PPC Case Study — Florida Markets
                       </h3>
                       <div className="space-y-6">
                         <DetailLabel>Synopsis</DetailLabel>
