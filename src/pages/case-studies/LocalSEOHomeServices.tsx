@@ -954,14 +954,6 @@ const LocalSEOHomeServices = () => {
           </div>
         </section>
 
-        {/* ═══ SECTION 6: DISCLOSURE ═══ */}
-        <section className="py-12 bg-card/30 border-t border-border">
-          <div className="container mx-auto px-4">
-            <p className="text-center text-sm text-muted-foreground italic max-w-3xl mx-auto">
-              These campaigns were executed in a white-label fulfillment capacity prior to the launch of GrowSmallBiz.
-            </p>
-          </div>
-        </section>
 
         {/* Contact Form */}
         <ConsultationFormSection />
