@@ -19,6 +19,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { createContactCTA } from "@/config/contactCTA";
+import heroBg from "@/assets/case-studies-cleaning-hero-bg.jpg";
 
 /* ─── Summary Proof Cards ─── */
 const summaryCards = [
@@ -119,6 +120,7 @@ const CleaningServices = () => {
           subtitle="Explore documented local SEO case study results for cleaning service businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Book a Strategy Session", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
+          backgroundImage={heroBg}
           overlayOpacity={85}
         />
 
