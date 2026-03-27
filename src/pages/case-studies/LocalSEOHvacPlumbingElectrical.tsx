@@ -18,6 +18,8 @@ import { useState, useEffect, useRef } from "react";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { createContactCTA } from "@/config/contactCTA";
 import heroBg from "@/assets/case-studies-hvac-hero-bg.jpg";
 
 /* ─── Summary Proof Cards ─── */
@@ -603,104 +605,23 @@ const LocalSEOHvacPlumbingElectrical = () => {
         </div>{/* end #google-ppc */}
 
         {/* ═══ FAQ SECTION ═══ */}
-        <section className="py-20 relative" style={{ backgroundColor: 'hsl(215 30% 14%)' }}>
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  Frequently Asked Questions
-                </h2>
-                <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-                  Answers to common questions about how GrowSmallBiz approaches Local SEO and PPC strategy for HVAC, plumbing, and electrical businesses.
-                </p>
-              </div>
-
-              <div className="grid lg:grid-cols-5 gap-10">
-                {/* LEFT: FAQ Accordion */}
-                <div className="lg:col-span-3">
-                  <Accordion type="single" collapsible className="space-y-4">
-                    <AccordionItem value="q1" className="bg-card border border-border rounded-xl px-6">
-                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
-                        Are these results from GrowSmallBiz clients?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
-                        These case studies reflect campaigns executed in a white-label fulfillment capacity prior to the launch of GrowSmallBiz. The methodology and execution experience now inform GrowSmallBiz's current client work.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="q2" className="bg-card border border-border rounded-xl px-6">
-                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
-                        Can Local SEO really help HVAC, plumbing, and electrical businesses get more calls?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
-                        Yes. Local SEO improves visibility in map results, Google Business Profile, and localized search—helping generate high-intent calls and inquiries.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="q3" className="bg-card border border-border rounded-xl px-6">
-                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
-                        Can PPC help HVAC businesses generate leads faster?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
-                        Yes. PPC enables immediate visibility for high-intent searches, helping generate qualified leads quickly while supporting broader marketing efforts.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="q4" className="bg-card border border-border rounded-xl px-6">
-                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
-                        How long does it take to see results from Local SEO or PPC?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
-                        PPC can generate faster initial results, while Local SEO builds momentum over time depending on competition, website quality, and local authority.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="q5" className="bg-card border border-border rounded-xl px-6">
-                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
-                        What is included in your Local SEO strategy?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
-                        Keyword research, Google Business Profile optimization, citations, onsite optimization, content support, and ongoing performance improvements.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="q6" className="bg-card border border-border rounded-xl px-6">
-                      <AccordionTrigger className="text-foreground font-display font-semibold text-left py-5 hover:no-underline">
-                        Can you review my current marketing performance?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-foreground/80 pb-5 leading-relaxed">
-                        Yes. You can request a website and SEO audit or book a strategy session to identify improvement opportunities.
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
-
-                {/* RIGHT: CTA Panel */}
-                <div className="lg:col-span-2">
-                  <div className="bg-card border border-border rounded-2xl p-8 sticky top-24">
-                    <h3 className="text-xl font-display font-bold text-foreground mb-4">
-                      Need Better Lead Flow from Search?
-                    </h3>
-                    <p className="text-foreground/80 leading-relaxed mb-6">
-                      If your HVAC, plumbing, or electrical business depends on calls, form fills, and high-intent search traffic, GrowSmallBiz can help identify where Local SEO or PPC improvements can drive better results.
-                    </p>
-                    <div className="space-y-3">
-                      <Button variant="hero" size="lg" className="w-full" asChild>
-                        <Link to="/contact">
-                          Book a Strategy Session
-                          <ArrowRight className="ml-2 w-4 h-4" />
-                        </Link>
-                      </Button>
-                      <Button variant="outline" size="lg" className="w-full" asChild>
-                        <Link to="/contact">
-                          Request a Website & SEO Audit
-                        </Link>
-                      </Button>
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-4 text-center">
-                      Get clarity on your visibility, traffic quality, and conversion performance.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FAQSection
+          title="Frequently Asked Questions"
+          subtitle="Answers to common questions about how GrowSmallBiz approaches Local SEO and PPC strategy for HVAC, plumbing, and electrical businesses."
+          faqs={[
+            { question: "Are these results from GrowSmallBiz clients?", answer: "These case studies reflect campaigns executed in a white-label fulfillment capacity prior to the launch of GrowSmallBiz. The methodology and execution experience now inform GrowSmallBiz's current client work." },
+            { question: "Can Local SEO really help HVAC, plumbing, and electrical businesses get more calls?", answer: "Yes. Local SEO improves visibility in map results, Google Business Profile, and localized search—helping generate high-intent calls and inquiries." },
+            { question: "Can PPC help HVAC businesses generate leads faster?", answer: "Yes. PPC enables immediate visibility for high-intent searches, helping generate qualified leads quickly while supporting broader marketing efforts." },
+            { question: "How long does it take to see results from Local SEO or PPC?", answer: "PPC can generate faster initial results, while Local SEO builds momentum over time depending on competition, website quality, and local authority." },
+            { question: "What is included in your Local SEO strategy?", answer: "Keyword research, Google Business Profile optimization, citations, onsite optimization, content support, and ongoing performance improvements." },
+            { question: "Can you review my current marketing performance?", answer: "Yes. You can request a website and SEO audit or book a strategy session to identify improvement opportunities." },
+          ]}
+          contactCTA={createContactCTA({
+            title: "Need Better Lead Flow from Search?",
+            description: "If your HVAC, plumbing, or electrical business depends on calls, form fills, and high-intent search traffic, GrowSmallBiz can help identify where Local SEO or PPC improvements can drive better results.",
+            tagline: "Get clarity on your visibility, traffic quality, and conversion performance.",
+          })}
+        />
 
         {/* ═══ DISCLOSURE ═══ */}
         <section className="py-12">
