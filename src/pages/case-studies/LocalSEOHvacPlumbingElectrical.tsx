@@ -578,15 +578,16 @@ const LocalSEOHvacPlumbingElectrical = () => {
                       <h3 className="text-lg font-display font-bold text-primary-foreground mt-2 mb-1">
                         HVAC PPC Growth
                       </h3>
-                      <p className="text-xs text-primary-foreground/70">Google Ads Campaign</p>
+                      <p className="text-xs text-primary-foreground/70">Google Ads Lead Generation Campaign</p>
                     </div>
                     <div className="p-5 flex-1">
+                      <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Paid Ads Impact</h4>
                       <div className="space-y-3">
                         {[
-                          "+50.23% CTR",
-                          "+83% Conversions",
-                          "+56.3% Conversion Rate",
-                          "-41% Cost Per Acquisition",
+                          "CTR → +50.23%",
+                          "Conversions → +83%",
+                          "Conversion Rate → +56.3%",
+                          "CPA → -41%",
                         ].map((metric, mIndex) => (
                           <div key={mIndex} className="flex items-start gap-2">
                             <TrendingUp className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
@@ -594,9 +595,20 @@ const LocalSEOHvacPlumbingElectrical = () => {
                           </div>
                         ))}
                       </div>
-                      <p className="text-xs text-muted-foreground mt-4">
-                        Improved lead volume and cost efficiency from paid search
-                      </p>
+                      <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-5 mb-3">Campaign Outcome</h4>
+                      <div className="space-y-3">
+                        {[
+                          "Increased qualified lead volume",
+                          "Improved conversion efficiency",
+                          "Reduced cost per acquisition",
+                          "Stronger campaign performance consistency",
+                        ].map((outcome, oIndex) => (
+                          <div key={oIndex} className="flex items-start gap-2">
+                            <TrendingUp className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                            <span className="text-sm text-foreground/85">{outcome}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
