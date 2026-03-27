@@ -43,7 +43,8 @@ export const routes: RouteRecord[] = [
       { path: "local-seo-services", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
       
       
-      { path: "case-studies/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/LocalSEOHvacPlumbingElectrical")) },
+      { path: "case-studies/local-seo-service/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
+      { path: "case-studies/google-ads-for-local-businesses/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/google-ads-for-local-businesses/HvacPlumbingElectrical")) },
       { path: "case-studies/roofers", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
       { path: "case-studies/tree-lawn-landscaping", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
       { path: "case-studies/home-remodeling", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
