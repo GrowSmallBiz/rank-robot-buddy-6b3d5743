@@ -788,27 +788,32 @@ const LocalSEOHvacPlumbingElectrical = () => {
               {/* CTA Row */}
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Button variant="hero" size="lg" asChild>
-                  <Link to="/contact">
+                  <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                     Book a Strategy Session
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
+                  </a>
                 </Button>
-                <Link
-                  to="/contact"
-                  className="text-sm text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
-                >
-                  Request a Website &amp; SEO Audit
-                </Link>
+                <Button variant="heroOutline" size="lg" asChild>
+                  <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">
+                    Request a Website &amp; SEO Audit
+                  </a>
+                </Button>
               </div>
 
               <p className="mt-8 text-muted-foreground text-sm leading-relaxed">
                 If you want to understand how these approaches could apply to your business, the next step is a focused review of your current visibility, competition, and conversion path.
               </p>
+
+              <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+                <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
+                <p>The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI.</p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* consultation form removed per request */}
+        {/* ═══ CONSULTATION FORM ═══ */}
+        <ConsultationFormSection />
       </main>
       <Footer />
     </>
