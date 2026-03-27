@@ -120,6 +120,7 @@ const CleaningServices = () => {
           subtitle="Explore documented local SEO case study results for cleaning service businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Book a Strategy Session", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
+          backgroundImage={heroBg}
           overlayOpacity={85}
         />
 
