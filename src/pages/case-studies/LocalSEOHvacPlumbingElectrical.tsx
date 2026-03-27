@@ -2,10 +2,10 @@ import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
-
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
-  
+  ArrowRight,
   TrendingUp,
   Search,
   ChevronDown,
@@ -546,6 +546,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
         <CardCTA
           title="Ready to Grow Your HVAC, Plumbing, or Electrical Business?"
           description="Get a comprehensive AI-powered audit and discover untapped opportunities to grow your business. No obligations, just actionable insights."
+          buttonText="Book a Strategy Session"
           accentWords={["Grow"]}
         />
 
@@ -666,6 +667,48 @@ const LocalSEOHvacPlumbingElectrical = () => {
             <div className="max-w-4xl mx-auto">
               <p className="text-sm text-muted-foreground text-center italic">
                 These campaigns were executed in a white-label fulfillment capacity prior to the launch of GrowSmallBiz.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ═══ CONCLUSION SECTION ═══ */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
+                What These Case Studies Show
+              </h2>
+              <div className="space-y-6 text-foreground/85 leading-relaxed text-lg">
+                <p>
+                  Across HVAC, plumbing, and electrical campaigns, one pattern remains consistent — businesses that invest in structured local visibility and high-intent search strategy tend to see measurable improvements in calls, engagement, and lead flow over time.
+                </p>
+                <p>
+                  These case studies reflect different starting points, markets, and levels of competition, but the underlying approach remains consistent: improving how a business appears, competes, and converts in search environments where customers are actively looking for services.
+                </p>
+                <p>
+                  Whether through Local SEO, PPC, or a combination of both, the goal is not just visibility — it is connecting that visibility to real business outcomes.
+                </p>
+              </div>
+
+              {/* CTA Row */}
+              <div className="mt-10 flex flex-wrap items-center gap-4">
+                <Button variant="hero" size="lg" asChild>
+                  <Link to="/contact">
+                    Book a Strategy Session
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
+                </Button>
+                <Link
+                  to="/contact"
+                  className="text-sm text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
+                >
+                  Request a Website &amp; SEO Audit
+                </Link>
+              </div>
+
+              <p className="mt-8 text-muted-foreground text-sm leading-relaxed">
+                If you want to understand how these approaches could apply to your business, the next step is a focused review of your current visibility, competition, and conversion path.
               </p>
             </div>
           </div>
