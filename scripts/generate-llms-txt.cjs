@@ -36,7 +36,10 @@ const primaryPages = filteredRoutes.filter(r =>
   ['/', '/about', '/contact'].includes(r)
 );
 const servicePages = filteredRoutes.filter(r =>
-  r.startsWith('/services')
+  r.startsWith('/services') || r.startsWith('/local-seo-services/') || r === '/paid-advertising-services'
+);
+const caseStudyPages = filteredRoutes.filter(r =>
+  r.startsWith('/case-studies/')
 );
 const legalPages = filteredRoutes.filter(r =>
   ['/privacy-policy', '/terms-of-service'].includes(r)
@@ -77,6 +80,13 @@ for (const route of primaryPages.sort()) {
 output += `\n## Services\n`;
 for (const route of servicePages.sort()) {
   output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
+}
+
+if (caseStudyPages.length) {
+  output += `\n## Case Studies\n`;
+  for (const route of caseStudyPages.sort()) {
+    output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
+  }
 }
 
 if (legalPages.length) {
