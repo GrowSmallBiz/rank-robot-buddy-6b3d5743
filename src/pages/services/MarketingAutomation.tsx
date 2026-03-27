@@ -629,6 +629,9 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
+        {/* Autopilot CTA */}
+        <AutopilotCTASection />
+
         {/* Final CTA */}
         <PersonCTA {...contactCTA} />
       </main>
