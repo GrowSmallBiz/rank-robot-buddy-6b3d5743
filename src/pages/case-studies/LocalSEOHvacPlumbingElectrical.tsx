@@ -246,9 +246,9 @@ const LocalSEOHvacPlumbingElectrical = () => {
             </div>
 
             {/* Scroll Down Prompt */}
-            <div className="flex flex-col items-center mt-12 text-muted-foreground animate-bounce">
-              <p className="text-sm font-medium mb-2">Scroll Down to Read Full Case Studies</p>
-              <ChevronDown className="w-5 h-5" />
+            <div className="flex flex-col items-center mt-12 animate-bounce">
+              <p className="text-sm font-semibold mb-2 text-primary">Scroll Down to Read Full Case Studies</p>
+              <ChevronDown className="w-5 h-5 text-primary" />
             </div>
           </div>
         </section>
@@ -545,6 +545,13 @@ const LocalSEOHvacPlumbingElectrical = () => {
         </section>
         </div>{/* end #local-seo */}
 
+        {/* ═══ CTA BETWEEN SECTIONS ═══ */}
+        <CardCTA
+          title="Ready to Grow Your HVAC, Plumbing, or Electrical Business?"
+          description="Get a comprehensive AI-powered audit and discover untapped opportunities to grow your business. No obligations, just actionable insights."
+          accentWords={["Grow"]}
+        />
+
         {/* ═══ GOOGLE PPC SECTION ═══ */}
         <div id="google-ppc">
           <section className="py-20 relative" style={{ backgroundColor: 'hsl(210 25% 10%)' }}>
@@ -634,8 +641,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
           </div>
         </section>
 
-        {/* ═══ CONSULTATION FORM ═══ */}
-        <ConsultationFormSection />
+        {/* consultation form removed per request */}
       </main>
       <Footer />
     </>
