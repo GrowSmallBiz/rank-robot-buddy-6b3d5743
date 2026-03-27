@@ -215,21 +215,21 @@ const HomeRemodeling = () => {
                 <TabsList className="w-full h-auto flex-wrap bg-card/80 backdrop-blur-sm border border-border rounded-xl p-2 mb-10">
                   <TabsTrigger
                     value="home-remodeling-long-term"
-                    className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
+                    className="flex-1 min-w-[120px] py-3 text-xs sm:text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                   >
-                    Home Remodeling — Long-Term
+                    Remodeling — Long-Term
                   </TabsTrigger>
                   <TabsTrigger
                     value="home-renovation-organic"
-                    className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
+                    className="flex-1 min-w-[120px] py-3 text-xs sm:text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                   >
-                    Home Renovation — Organic Contribution
+                    Renovation — Organic
                   </TabsTrigger>
                   <TabsTrigger
                     value="dallas-home-renovation"
-                    className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
+                    className="flex-1 min-w-[120px] py-3 text-xs sm:text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg"
                   >
-                    Dallas Home Renovation — Visibility
+                    Dallas — Visibility
                   </TabsTrigger>
                 </TabsList>
 
