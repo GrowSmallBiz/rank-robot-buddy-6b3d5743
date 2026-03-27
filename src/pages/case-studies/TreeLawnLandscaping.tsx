@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { GoogleColoredText } from "@/components/GoogleColoredText";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
