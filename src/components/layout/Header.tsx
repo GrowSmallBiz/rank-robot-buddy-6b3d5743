@@ -173,6 +173,12 @@ export const Header = () => {
                 >
                   HVAC, Plumbing & Electrical
                 </Link>
+                <Link
+                  to="/case-studies/roofers"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Roofers
+                </Link>
               </div>
             </div>
 
@@ -355,6 +361,13 @@ export const Header = () => {
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   HVAC, Plumbing & Electrical
+                </Link>
+                <Link
+                  to="/case-studies/roofers"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Roofers
                 </Link>
               </div>
             )}
