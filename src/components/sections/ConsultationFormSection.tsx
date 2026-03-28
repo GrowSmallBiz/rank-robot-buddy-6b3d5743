@@ -7,7 +7,7 @@ export const ConsultationFormSection = () => {
           style={{ border: '2px solid #17a2b8' }}
         >
           <div className="relative rounded-2xl px-8 pt-5 pb-4" style={{ backgroundColor: '#191321' }}>
-            <div className="text-center mb-8">
+            <div className="text-center mb-4">
               <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-4">
                 Get a <span className="text-accent">Consultation</span>
