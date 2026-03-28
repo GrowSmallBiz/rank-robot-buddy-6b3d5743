@@ -13,6 +13,7 @@ interface PricingCardProps {
   note?: string;
   delay?: number;
   className?: string;
+  cardStyle?: string;
 }
 
 export const PricingCard = ({
@@ -27,11 +28,12 @@ export const PricingCard = ({
   note,
   delay = 0,
   className = "",
+  cardStyle,
 }: PricingCardProps) => {
   return (
     <div
       className={`pricing-card ${popular ? "pricing-card-popular" : ""} animate-fade-up ${className}`}
-      style={{ animationDelay: `${delay}s` }}
+      style={{ animationDelay: `${delay}s`, ...(cardStyle ? { background: cardStyle } : {}) }}
     >
       {popular && <span className="pricing-badge">Most Popular</span>}
 
@@ -89,6 +91,7 @@ interface PricingGridProps {
     ctaLink: string;
     popular?: boolean;
     note?: string;
+    cardStyle?: string;
   }>;
   columns?: 2 | 3 | 4;
   className?: string;
