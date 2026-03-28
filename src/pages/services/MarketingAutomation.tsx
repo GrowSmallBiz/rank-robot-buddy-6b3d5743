@@ -763,17 +763,10 @@ const MarketingAutomation = () => {
                     className="group feature-card-teal animate-fade-up flex flex-col items-center text-center"
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
-                    <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-4 border border-border/50">
-                      <img
-                        src={demo.thumbnail}
-                        alt={demo.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
-                        <div className="w-12 h-12 rounded-full bg-primary/90 flex items-center justify-center">
-                          <Play className="w-5 h-5 text-white ml-0.5" />
-                        </div>
+                    <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-4 border border-border/50 flex items-center justify-center" style={{ backgroundColor: demo.color }}>
+                      <Icon className="w-12 h-12 text-white/90" />
+                      <div className="absolute bottom-2 right-2 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                        <Play className="w-4 h-4 text-white ml-0.5" />
                       </div>
                     </div>
                     <div className="flex items-center gap-2 mb-1">
