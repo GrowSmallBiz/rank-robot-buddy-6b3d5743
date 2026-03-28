@@ -275,70 +275,70 @@ const growthSuiteCategories = [
     title: "Lead Communication",
     icon: MessageSquare,
     services: [
-      "Missed-Call Text-Back System",
-      "Lead Nurture & Follow-Up Automation",
-      "Quote Follow-Up System",
-      "No-Show Recovery Automation",
+      { name: "Missed-Call Text-Back System", desc: "Automatically text back missed calls so no lead slips away.", tagline: "Never lose a customer because you missed a call again." },
+      { name: "Lead Nurture & Follow-Up Automation", desc: "Automatic multi-channel follow-up for all new leads via SMS, email, and voicemail sequences.", tagline: "Every lead gets followed up until they convert — automatically." },
+      { name: "Quote Follow-Up System", desc: "Automated follow-up designed to close open quotes and estimates.", tagline: "Close more open quotes without lifting a finger." },
+      { name: "No-Show Recovery Automation", desc: "Converts no-shows into rescheduled appointments with automated prompts.", tagline: "Turn no-shows into booked appointments automatically." },
     ],
   },
   {
     title: "Reputation",
     icon: Star,
     services: [
-      "Review Request Automation",
-      "Review Response Service",
-      "Reputation Monitoring & Alerts",
-      "Testimonial & Case Study Engine",
+      { name: "Review Request Automation", desc: "Automatic review generation from every new customer.", tagline: "Generate 5-star reviews every week — automatically." },
+      { name: "Review Response Service", desc: "Respond to all customer reviews with professional templates.", tagline: "Every review gets a professional response — like clockwork." },
+      { name: "Reputation Monitoring & Alerts", desc: "Monitor new reviews and get alerts for negative ratings.", tagline: "Never get blindsided by a bad review again." },
+      { name: "Testimonial & Case Study Engine", desc: "Automated system for collecting new testimonials and stories.", tagline: "Collect powerful testimonials automatically." },
     ],
   },
   {
     title: "Scheduling",
     icon: CalendarCheck,
     services: [
-      "Appointment Reminder Sequences",
-      "Booking Calendar Optimization",
-      "VIP Waitlist & Priority Scheduling",
-      "Membership & Subscription Billing",
+      { name: "Appointment Reminder Sequences", desc: "Automated reminders via SMS and email to reduce no-shows dramatically.", tagline: "Cut no-shows with automatic reminders." },
+      { name: "Booking Calendar Optimization", desc: "Monthly tuning to keep calendars functioning correctly with buffer optimization.", tagline: "Your calendar will always work the way it should." },
+      { name: "VIP Waitlist & Priority Scheduling", desc: "Notify VIPs about early openings or new availability.", tagline: "Keep your best customers coming back first." },
+      { name: "Membership & Subscription Billing", desc: "Automates billing reminders, failed payment recovery, and renewals.", tagline: "Never lose revenue to failed membership payments again." },
     ],
   },
   {
     title: "Retention",
     icon: Heart,
     services: [
-      "Upsell & Cross-Sell Automation",
-      "Customer Loyalty Program Engine",
-      "Birthday & Anniversary Offers",
-      "Win-Back & Churn Prevention",
+      { name: "Upsell & Cross-Sell Automation", desc: "Automatically promote higher-value services or products.", tagline: "Increase revenue per customer automatically." },
+      { name: "Customer Loyalty Program Engine", desc: "Points, rewards, and incentives delivered automatically.", tagline: "Turn customers into loyal regulars with a simple rewards system." },
+      { name: "Birthday & Anniversary Offers", desc: "Special offers sent automatically on important dates.", tagline: "Celebrate customers and drive repeat visits." },
+      { name: "Win-Back & Churn Prevention", desc: "Detect and recover at-risk customers with targeted messaging.", tagline: "Stop customers from slipping away." },
     ],
   },
   {
     title: "Content",
     icon: PenTool,
     services: [
-      "Auto-Reposting Social Content",
-      "Monthly Content Calendar",
-      "Review-to-Content Engine",
-      "Customer Newsletter",
+      { name: "Auto-Reposting Social Content", desc: "Reposts existing content across social channels automatically.", tagline: "Stay active online without creating new content." },
+      { name: "Monthly Content Calendar", desc: "Pre-scheduled 30 days of content posts with auto-posting setup.", tagline: "A full month of content, done for you." },
+      { name: "Review-to-Content Engine", desc: "Turn customer reviews into social proof posts.", tagline: "Turn your 5-star reviews into daily social proof." },
+      { name: "Customer Newsletter", desc: "Send branded newsletters with helpful content and offers.", tagline: "Build loyalty with a valuable monthly newsletter." },
     ],
   },
   {
     title: "Advertising",
     icon: TrendingUp,
     services: [
-      "Monthly Ad Angle Refresh",
-      "Retargeting Audience Builder",
-      "Landing Page Optimization",
-      "Lead Magnet Delivery & Follow-Up",
+      { name: "Monthly Ad Angle Refresh", desc: "New hooks, creative angles, and copy every month.", tagline: "Keep your ads fresh and performing well." },
+      { name: "Retargeting Audience Builder", desc: "Build custom audiences from site visitors and leads.", tagline: "Re-engage visitors who didn't convert the first time." },
+      { name: "Landing Page Optimization", desc: "Monthly testing and refinement of landing pages.", tagline: "Higher conversions from the same traffic." },
+      { name: "Lead Magnet Delivery & Follow-Up", desc: "Automated delivery and nurturing after lead magnet download.", tagline: "Turn downloads into booked calls." },
     ],
   },
   {
     title: "Analytics",
     icon: BarChart3,
     services: [
-      "Monthly Performance Report",
-      "Customer Journey Dashboard",
-      "Pipeline Cleanup & Optimization",
-      "Compliance & Deliverability Monitoring",
+      { name: "Monthly Performance Report", desc: "Clear monthly breakdown of all campaign performance.", tagline: "Always know what's working and what's not." },
+      { name: "Customer Journey Dashboard", desc: "Visualize how leads move through your pipeline.", tagline: "See every touchpoint from lead to customer." },
+      { name: "Pipeline Cleanup & Optimization", desc: "Regular cleanup of stale leads and pipeline health.", tagline: "A clean pipeline means better forecasting." },
+      { name: "Compliance & Deliverability Monitoring", desc: "Ensure emails and texts reach inboxes reliably.", tagline: "Stay compliant and keep deliverability high." },
     ],
   },
 ];
@@ -568,29 +568,42 @@ const MarketingAutomation = () => {
               titleHighlight="Grow Your Business"
               description="7 powerful categories of automation services designed to attract leads, build your reputation, and retain customers for life."
             />
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="space-y-12">
               {growthSuiteCategories.map((category, index) => (
                 <div
                   key={index}
-                  className="ghl-card p-6 animate-fade-up"
+                  className="animate-fade-up"
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="icon-container-ghl">
-                      <category.icon className="w-5 h-5 text-ghl-icon" />
+                  {/* Category Title Badge */}
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="bg-primary rounded-xl p-2.5">
+                      <category.icon className="w-5 h-5 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-foreground">
+                    <h3 className="text-xl font-bold text-foreground">
                       {category.title}
                     </h3>
                   </div>
-                  <ul className="space-y-2">
+
+                  {/* 4 Service Cards in a Row */}
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {category.services.map((service, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                        {service}
-                      </li>
+                      <div
+                        key={i}
+                        className="bg-card/60 border border-border rounded-xl p-5 hover:border-primary/30 transition-all"
+                      >
+                        <h4 className="text-sm font-bold text-foreground mb-2">
+                          {service.name}
+                        </h4>
+                        <p className="text-xs text-muted-foreground mb-3">
+                          {service.desc}
+                        </p>
+                        <p className="text-xs text-primary italic">
+                          "{service.tagline}"
+                        </p>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               ))}
             </div>
