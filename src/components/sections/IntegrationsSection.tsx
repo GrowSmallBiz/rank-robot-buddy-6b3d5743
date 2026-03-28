@@ -1,30 +1,33 @@
 import { SectionHeader } from "@/components/services/SectionHeader";
 
 const integrationLogos = [
-  { name: "Google", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" },
-  { name: "Facebook", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" },
-  { name: "Instagram", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" },
-  { name: "Stripe", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" },
-  { name: "Slack", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/slack.svg" },
-  { name: "Shopify", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/shopify.svg" },
-  { name: "HubSpot", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hubspot.svg" },
-  { name: "Zapier", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/zapier.svg" },
-  { name: "Mailchimp", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mailchimp.svg" },
-  { name: "Salesforce", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/salesforce.svg" },
-  { name: "WordPress", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wordpress.svg" },
-  { name: "TikTok", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" },
-  { name: "LinkedIn", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" },
-  { name: "YouTube", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" },
-  { name: "Twilio", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twilio.svg" },
-  { name: "Calendly", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/calendly.svg" },
-  { name: "Zoom", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/zoom.svg" },
-  { name: "PayPal", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/paypal.svg" },
-  { name: "QuickBooks", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/quickbooks.svg" },
-  { name: "WhatsApp", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" },
+  { name: "Google", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg", showName: false },
+  { name: "Facebook", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg", showName: false },
+  { name: "Slack", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg", showName: false },
+  { name: "LinkedIn", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg", showName: false },
+  { name: "Twitter", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg", showName: false },
+  { name: "WordPress", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg", showName: false },
+  { name: "Salesforce", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg", showName: false },
+  { name: "Shopify", logo: "https://cdn.simpleicons.org/shopify", showName: false },
+  { name: "Stripe", logo: "https://cdn.simpleicons.org/stripe", showName: false },
+  { name: "PayPal", logo: "https://cdn.simpleicons.org/paypal", showName: false },
+  { name: "HubSpot", logo: "https://cdn.simpleicons.org/hubspot", showName: false },
+  { name: "Zapier", logo: "https://cdn.simpleicons.org/zapier", showName: false },
+  { name: "Mailchimp", logo: "https://cdn.simpleicons.org/mailchimp", showName: false },
+  { name: "Twilio", logo: "https://cdn.simpleicons.org/twilio", showName: false },
+  { name: "Calendly", logo: "https://cdn.simpleicons.org/calendly", showName: false },
+  { name: "Zoom", logo: "https://cdn.simpleicons.org/zoom", showName: false },
+  { name: "YouTube", logo: "https://cdn.simpleicons.org/youtube", showName: false },
+  { name: "WhatsApp", logo: "https://cdn.simpleicons.org/whatsapp", showName: false },
+  { name: "TikTok", logo: "https://cdn.simpleicons.org/tiktok", showName: false },
+  { name: "Instagram", logo: "https://cdn.simpleicons.org/instagram", showName: false },
+  { name: "Telegram", logo: "https://cdn.simpleicons.org/telegram", showName: false },
+  { name: "QuickBooks", logo: "https://cdn.simpleicons.org/quickbooks", showName: true },
+  { name: "ActiveCampaign", logo: "https://cdn.simpleicons.org/activecampaign", showName: true },
+  { name: "Webflow", logo: "https://cdn.simpleicons.org/webflow", showName: true },
 ];
 
 export const IntegrationsSection = () => {
-  // Double the logos for seamless infinite scroll
   const doubledLogos = [...integrationLogos, ...integrationLogos];
 
   return (
@@ -36,28 +39,31 @@ export const IntegrationsSection = () => {
         />
       </div>
 
-      {/* Scrolling marquee strip */}
       <div className="relative w-full">
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-[hsl(var(--ghl-section-bg))] to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-[hsl(var(--ghl-section-bg))] to-transparent pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-[hsl(var(--ghl-section-bg))] to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-[hsl(var(--ghl-section-bg))] to-transparent pointer-events-none" />
 
-        <div className="flex animate-marquee gap-12 items-center py-6">
-          {doubledLogos.map((app, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 flex items-center gap-3 bg-card/40 border border-white/10 rounded-xl px-6 py-4 hover:border-primary/40 transition-colors"
-            >
-              <img
-                src={app.logo}
-                alt={app.name}
-                className="w-8 h-8 invert opacity-80"
-              />
-              <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-                {app.name}
-              </span>
-            </div>
-          ))}
+        <div className="bg-white py-5">
+          <div className="flex animate-marquee gap-10 items-center">
+            {doubledLogos.map((app, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 flex items-center gap-2"
+              >
+                <img
+                  src={app.logo}
+                  alt={app.name}
+                  className="w-10 h-10 object-contain"
+                />
+                {app.showName && (
+                  <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">
+                    {app.name}
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
