@@ -732,78 +732,76 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
-        {/* Demo Form - Two Column */}
+        {/* Demo Form - Single Column */}
         <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-              {/* Left Column - Video & CTA */}
-              <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
-                  See How It <span className="text-accent">Works</span>
-                </h2>
-                <p className="text-muted-foreground text-lg mb-8 max-w-lg">
-                  Watch a quick overview of how GrowSmallBiz helps local service businesses attract more leads and grow faster.
-                </p>
+          <div className="container mx-auto px-4 relative z-10 max-w-4xl">
+            {/* Heading & Video */}
+            <div className="flex flex-col items-center text-center mb-12">
+              <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
+                See How It <span className="text-accent">Works</span>
+              </h2>
+              <p className="text-muted-foreground text-lg mb-8 max-w-2xl">
+                Watch a quick overview of how GrowSmallBiz helps local service businesses attract more leads and grow faster.
+              </p>
 
-                {/* YouTube Video */}
-                <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_#17a2b850] mb-8" style={{ border: '2px solid #17a2b8' }}>
-                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                    <iframe
-                      className="absolute inset-0 w-full h-full"
-                      src="https://www.youtube.com/embed/IkA8jPWgHxk"
-                      title="GrowSmallBiz Overview"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
-                </div>
-
-                {/* Schedule Now Button */}
-                <a
-                  href="https://link.growsmallbiz.io/widget/booking/BItMexXVhoWvQOVKgmfH"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ghl-btn inline-flex items-center gap-3 px-8 py-4 text-lg font-bold"
-                >
-                  Schedule Now
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </div>
-
-              {/* Right Column - Form */}
-              <div
-                className="relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
-                style={{ border: '2px solid #17a2b8' }}
-              >
-                <div className="relative rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#191321' }}>
-                  <div className="text-center mb-6">
-                    <h3 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-3">
-                      Schedule A <span className="text-accent">Demo</span>
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Tell us about your business and we'll follow up with the next best step.
-                    </p>
-                  </div>
+              {/* YouTube Video */}
+              <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_#17a2b850] mb-8" style={{ border: '2px solid #17a2b8' }}>
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                   <iframe
-                    src="https://api.leadconnectorhq.com/widget/form/vRKH9AO2IToQ38j4hyaN"
-                    style={{ width: "100%", height: "1645px", border: "none", borderRadius: "3px" }}
-                    id="inline-vRKH9AO2IToQ38j4hyaN"
-                    loading="lazy"
-                    data-layout="{'id':'INLINE'}"
-                    data-trigger-type="alwaysShow"
-                    data-trigger-value=""
-                    data-activation-type="alwaysActivated"
-                    data-activation-value=""
-                    data-deactivation-type="neverDeactivate"
-                    data-deactivation-value=""
-                    data-form-name="GrowSmallBiz SaaS Demo Form"
-                    data-height="1645"
-                    data-layout-iframe-id="inline-vRKH9AO2IToQ38j4hyaN"
-                    data-form-id="vRKH9AO2IToQ38j4hyaN"
-                    title="GrowSmallBiz SaaS Demo Form"
+                    className="absolute inset-0 w-full h-full"
+                    src="https://www.youtube.com/embed/IkA8jPWgHxk"
+                    title="GrowSmallBiz Overview"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
                   />
                 </div>
+              </div>
+
+              {/* Schedule Now Button */}
+              <a
+                href="https://link.growsmallbiz.io/widget/booking/BItMexXVhoWvQOVKgmfH"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ghl-btn inline-flex items-center gap-3 px-8 py-4 text-lg font-bold"
+              >
+                Schedule Now
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
+
+            {/* Form */}
+            <div
+              className="relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+              style={{ border: '2px solid #17a2b8' }}
+            >
+              <div className="relative rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#191321' }}>
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-3">
+                    Schedule A <span className="text-accent">Demo</span>
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Tell us about your business and we'll follow up with the next best step.
+                  </p>
+                </div>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/vRKH9AO2IToQ38j4hyaN"
+                  style={{ width: "100%", height: "1645px", border: "none", borderRadius: "3px" }}
+                  id="inline-vRKH9AO2IToQ38j4hyaN"
+                  loading="lazy"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="GrowSmallBiz SaaS Demo Form"
+                  data-height="1645"
+                  data-layout-iframe-id="inline-vRKH9AO2IToQ38j4hyaN"
+                  data-form-id="vRKH9AO2IToQ38j4hyaN"
+                  title="GrowSmallBiz SaaS Demo Form"
+                />
               </div>
             </div>
           </div>
