@@ -118,12 +118,12 @@ export const FunnelBuilderSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-3 gap-8 max-w-4xl mx-auto">
           {bottomFeatures.map((feat, i) => (
             <div key={i} className="text-center animate-fade-up" style={{ animationDelay: `${(i + 3) * 0.1}s` }}>
-              <feat.icon className="w-5 h-5 text-primary mx-auto mb-1" />
-              <p className="font-bold text-foreground text-sm">{feat.title}</p>
-              <p className="text-xs text-muted-foreground">{feat.subtitle}</p>
+              <feat.icon className="w-7 h-7 text-primary mx-auto mb-3" />
+              <p className="font-bold text-foreground text-base">{feat.title}</p>
+              <p className="text-sm text-muted-foreground mt-1">{feat.subtitle}</p>
             </div>
           ))}
         </div>
