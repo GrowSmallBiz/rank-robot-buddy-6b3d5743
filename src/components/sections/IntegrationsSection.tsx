@@ -31,18 +31,20 @@ export const IntegrationsSection = () => {
   const doubledLogos = [...integrationLogos, ...integrationLogos];
 
   return (
-    <section className="section-padding overflow-hidden" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+    <section className="section-padding overflow-hidden bg-white">
       <div className="container mx-auto px-4 mb-10">
-        <SectionHeader
-          title="Easily Integrates With"
-          titleHighlight="100+ Leading Apps"
-        />
+        <div className="[&_h2]:text-gray-900 [&_p]:text-gray-600 [&_span]:text-primary">
+          <SectionHeader
+            title="Easily Integrates With"
+            titleHighlight="100+ Leading Apps"
+          />
+        </div>
       </div>
 
       <div className="relative w-full">
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-[hsl(var(--ghl-section-bg))] to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-[hsl(var(--ghl-section-bg))] to-transparent pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
 
         <div className="bg-white py-5">
           <div className="flex animate-marquee gap-10 items-center">
