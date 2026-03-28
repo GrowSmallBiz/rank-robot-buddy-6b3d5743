@@ -498,6 +498,11 @@ const MarketingAutomation = () => {
                     />
                   )}
                   <div>
+                    {(feature as any).label && (
+                      <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded mb-3">
+                        {(feature as any).label}
+                      </span>
+                    )}
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       {feature.title}
                     </h3>
