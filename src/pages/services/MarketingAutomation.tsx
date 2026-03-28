@@ -1,5 +1,5 @@
 import { Head } from "vite-react-ssg";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowDown } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -766,7 +766,7 @@ const MarketingAutomation = () => {
                 className="ghl-btn inline-flex items-center gap-3 px-8 py-4 text-lg font-bold"
               >
                 Schedule Now
-                <ArrowRight className="w-5 h-5" />
+                <ArrowDown className="w-5 h-5" />
               </a>
             </div>
 
