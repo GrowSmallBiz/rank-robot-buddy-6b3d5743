@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Head } from "vite-react-ssg";
 import { ArrowRight, ArrowDown, ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -494,6 +496,22 @@ const testimonials = [
 ];
 
 const MarketingAutomation = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      // Wait for content (including iframes) to render before scrolling
+      const timer = setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 500);
+      return () => clearTimeout(timer);
+    }
+  }, [hash]);
+
   return (
     <>
       <Head>
