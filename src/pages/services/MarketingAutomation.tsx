@@ -567,7 +567,7 @@ const MarketingAutomation = () => {
         />
 
         {/* Section Index Tabs */}
-        <nav id="page-top" className="sticky top-16 z-40 shadow-lg shadow-black/20 border-b border-primary/20" style={{ background: "linear-gradient(180deg, hsl(var(--card)) 0%, hsl(var(--background)) 100%)" }}>
+        <nav id="page-top" className="sticky top-16 z-40 shadow-lg shadow-black/30 border-b border-primary/20" style={{ background: "hsl(210 50% 8%)" }}>
           <div className="container mx-auto px-4 text-center">
             <p className="text-[10px] uppercase tracking-widest text-accent font-semibold pt-2 pb-0.5">Quick Navigation</p>
             <div className="flex justify-center gap-1 overflow-x-auto pb-3 scrollbar-hide">
