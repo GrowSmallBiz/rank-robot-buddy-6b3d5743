@@ -19,8 +19,8 @@ const variantStyles: Record<CardVariant, { card: string; icon: string; iconColor
   },
   teal: {
     card: "feature-card-teal",
-    icon: "icon-container-ghl mb-4",
-    iconColor: "text-ghl-icon",
+    icon: "bg-primary rounded-xl p-2.5 w-fit mb-4",
+    iconColor: "text-white",
   },
   orange: {
     card: "bg-background/80 backdrop-blur-sm border border-ghl-icon rounded-2xl p-6 transition-all hover:shadow-[0_0_30px_rgba(255,127,80,0.5)]",
