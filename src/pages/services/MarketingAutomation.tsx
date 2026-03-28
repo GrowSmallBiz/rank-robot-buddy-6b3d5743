@@ -487,7 +487,7 @@ const MarketingAutomation = () => {
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-40 h-40 object-contain mx-auto mb-5"
+                    className="w-[300px] h-[300px] object-contain mx-auto mb-5"
                   />
                   <h3 className="text-xl font-semibold text-foreground mb-3">
                     {feature.title}
