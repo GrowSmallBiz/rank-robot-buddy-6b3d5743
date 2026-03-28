@@ -487,33 +487,44 @@ const MarketingAutomation = () => {
               {benefitFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className={`text-center animate-fade-up ${(feature as any).textAbove ? "flex flex-col-reverse" : ""}`}
+                  className={`text-center animate-fade-up ${(feature as any).textAbove ? "" : ""}`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  {!(feature as any).textAbove && (
-                    <img
-                      src={feature.image}
-                      alt={feature.title}
-                      className="w-[300px] h-[300px] object-contain mx-auto mb-5"
-                    />
-                  )}
-                  <div>
-                    {(feature as any).label && (
-                      <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded mb-3">
-                        {(feature as any).label}
-                      </span>
-                    )}
-                    <h3 className="text-xl font-semibold text-foreground mb-3">
-                      {feature.title}
-                    </h3>
-                    <p className="text-muted-foreground">{feature.description}</p>
-                  </div>
-                  {(feature as any).textAbove && (
-                    <img
-                      src={feature.image}
-                      alt={feature.title}
-                      className="w-[300px] h-[300px] object-contain mx-auto mb-5"
-                    />
+                  {(feature as any).textAbove ? (
+                    <div className="border-2 border-white/20 rounded-2xl p-6 flex flex-col items-center">
+                      <div className="mb-6">
+                        <h3 className="text-2xl font-bold text-foreground leading-snug">
+                          Autopilot for your{" "}
+                          <span className="text-primary italic">Business</span> through{" "}
+                          <span className="text-primary italic">SMS, Email, Web Chat, Phone Calls,</span>{" "}
+                          and much more!
+                        </h3>
+                      </div>
+                      <img
+                        src={feature.image}
+                        alt={feature.title}
+                        className="w-[300px] h-[300px] object-contain"
+                      />
+                    </div>
+                  ) : (
+                    <>
+                      <img
+                        src={feature.image}
+                        alt={feature.title}
+                        className="w-[300px] h-[300px] object-contain mx-auto mb-5"
+                      />
+                      <div>
+                        {(feature as any).label && (
+                          <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded mb-3">
+                            {(feature as any).label}
+                          </span>
+                        )}
+                        <h3 className="text-xl font-semibold text-foreground mb-3">
+                          {feature.title}
+                        </h3>
+                        <p className="text-muted-foreground">{feature.description}</p>
+                      </div>
+                    </>
                   )}
                 </div>
               ))}
