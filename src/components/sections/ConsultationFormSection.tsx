@@ -1,13 +1,13 @@
 export const ConsultationFormSection = () => {
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+    <section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
         <div
           className="max-w-3xl mx-auto relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
           style={{ border: '2px solid #17a2b8' }}
         >
-          <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
-            <div className="text-center mb-8">
+          <div className="relative rounded-2xl px-8 pt-5 pb-4" style={{ backgroundColor: '#191321' }}>
+            <div className="text-center mb-4">
               <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-4">
                 Get a <span className="text-accent">Consultation</span>
