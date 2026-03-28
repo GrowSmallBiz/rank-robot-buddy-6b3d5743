@@ -620,24 +620,28 @@ const MarketingAutomation = () => {
               subtitle="TAILORED FOR YOUR INDUSTRY"
               title="Solutions Built To Fit"
               titleHighlight="Your Business"
-              description="Whether you are scheduling jobs, booking clients, managing leads, or closing deals — the platform adjusts to your industry needs."
+              description="Whether you are scheduling jobs, booking clients, managing leads, or closing deals, the platform adjusts to your industry needs while keeping everything fast, simple, and automated."
             />
             <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {industries.map((industry, index) => (
                 <div
                   key={index}
-                  className="bg-card border border-border rounded-2xl p-6 text-center card-hover animate-fade-up"
+                  className="bg-card border border-border rounded-2xl p-6 card-hover animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="icon-container-lg mx-auto mb-4">
-                    <industry.icon className="w-8 h-8 text-primary" />
+                  <div className="bg-primary rounded-xl p-2.5 w-fit mb-4">
+                    <industry.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">
+                  <h3 className="text-lg font-bold text-foreground mb-3">
                     {industry.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {industry.examples}
-                  </p>
+                  <ul className="space-y-1.5">
+                    {industry.services.map((service, i) => (
+                      <li key={i} className="text-sm text-muted-foreground">
+                        {service}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
