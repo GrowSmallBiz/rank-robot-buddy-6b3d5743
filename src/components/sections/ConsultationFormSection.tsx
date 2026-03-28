@@ -1,4 +1,8 @@
-export const ConsultationFormSection = () => {
+interface ConsultationFormSectionProps {
+  iframeHeight?: string;
+}
+
+export const ConsultationFormSection = ({ iframeHeight = "1006px" }: ConsultationFormSectionProps) => {
   return (
     <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
@@ -19,7 +23,7 @@ export const ConsultationFormSection = () => {
 
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV"
-              style={{ width: "100%", height: "1006px", border: "none", borderRadius: "0px" }}
+              style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: "0px" }}
               id="inline-8qUn6xE0v2Jwcs63q0uV"
               loading="lazy"
               data-layout="{'id':'INLINE'}"
