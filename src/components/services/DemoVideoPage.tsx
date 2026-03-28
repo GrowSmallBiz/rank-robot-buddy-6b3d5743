@@ -1,5 +1,5 @@
 import { Head } from "vite-react-ssg";
-import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -19,7 +19,8 @@ export const DemoVideoPage = ({ title, sourceUrl, metaDescription }: DemoVideoPa
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={`https://growsmallbiz.io/services/marketing-automation-for-small-business/demo/${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")}`} />
       </Head>
-      <main>
+      <Header />
+      <main className="pt-20">
         <iframe
           src={sourceUrl}
           style={{ width: "100%", height: "100vh", border: "none", minHeight: "2400px" }}
@@ -35,7 +36,6 @@ export const DemoVideoPage = ({ title, sourceUrl, metaDescription }: DemoVideoPa
           </Button>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

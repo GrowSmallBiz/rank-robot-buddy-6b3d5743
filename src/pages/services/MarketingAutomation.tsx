@@ -530,7 +530,7 @@ const MarketingAutomation = () => {
           titleHighlight="Leads Into Sales"
           subtitle="GrowSmallBiz Digital Marketing helps you capture, nurture, and close leads on autopilot through SMS, Email, Live Chat, Phone Calls, and more!"
           primaryCTA={{
-            label: "Schedule A Demo",
+            label: "Schedule A Consultation",
             href: "/contact",
           }}
           secondaryCTA={{
@@ -587,7 +587,7 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Benefits Section */}
@@ -646,7 +646,7 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* AI Features Section */}
@@ -671,13 +671,13 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Funnel Builder Section */}
         <div id="funnel-builder">
           <FunnelBuilderSection />
-          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </div>
 
         {/* Industries Section */}
@@ -714,13 +714,13 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Integrations Section */}
         <div id="integrations">
           <IntegrationsSection />
-          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </div>
 
         {/* Quick Demo Videos Section */}
@@ -736,9 +736,11 @@ const MarketingAutomation = () => {
               {demoVideos.map((demo, index) => {
                 const Icon = demo.icon;
                 return (
-                  <Link
+                  <a
                     key={index}
-                    to={`/services/marketing-automation-for-small-business/demo/${demo.slug}`}
+                    href={`/services/marketing-automation-for-small-business/demo/${demo.slug}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group feature-card-teal animate-fade-up flex flex-col items-center text-center"
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
@@ -762,11 +764,11 @@ const MarketingAutomation = () => {
                       </h3>
                     </div>
                     <span className="text-xs text-primary font-medium">See More →</span>
-                  </Link>
+                  </a>
                 );
               })}
             </div>
-            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
@@ -779,7 +781,7 @@ const MarketingAutomation = () => {
               titleHighlight="Real Teams"
             />
             <TestimonialsGrid testimonials={testimonials} columns={3} />
-            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
@@ -797,7 +799,7 @@ const MarketingAutomation = () => {
               <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
               30 Days Money Back Guarantee
             </p>
-            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
@@ -847,7 +849,7 @@ const MarketingAutomation = () => {
               <div className="relative rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#191321' }}>
                 <div className="text-center mb-6">
                   <h3 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-3">
-                    Schedule A <span className="text-accent">Demo</span>
+                    Schedule A <span className="text-accent">Consultation</span>
                   </h3>
                   <p className="text-muted-foreground">
                     Tell us about your business and we'll follow up with the next best step.
@@ -925,14 +927,14 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* FAQ */}
         <section id="faq" className="section-padding">
           <div className="container mx-auto px-4">
             <FAQSection faqs={faqs} />
-            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
