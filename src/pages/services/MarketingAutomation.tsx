@@ -568,29 +568,42 @@ const MarketingAutomation = () => {
               titleHighlight="Grow Your Business"
               description="7 powerful categories of automation services designed to attract leads, build your reputation, and retain customers for life."
             />
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="space-y-12">
               {growthSuiteCategories.map((category, index) => (
                 <div
                   key={index}
-                  className="ghl-card p-6 animate-fade-up"
+                  className="animate-fade-up"
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="icon-container-ghl">
-                      <category.icon className="w-5 h-5 text-ghl-icon" />
+                  {/* Category Title Badge */}
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="bg-primary rounded-xl p-2.5">
+                      <category.icon className="w-5 h-5 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-foreground">
+                    <h3 className="text-xl font-bold text-foreground">
                       {category.title}
                     </h3>
                   </div>
-                  <ul className="space-y-2">
+
+                  {/* 4 Service Cards in a Row */}
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {category.services.map((service, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                        {service}
-                      </li>
+                      <div
+                        key={i}
+                        className="bg-card/60 border border-border rounded-xl p-5 hover:border-primary/30 transition-all"
+                      >
+                        <h4 className="text-sm font-bold text-foreground mb-2">
+                          {service.name}
+                        </h4>
+                        <p className="text-xs text-muted-foreground mb-3">
+                          {service.desc}
+                        </p>
+                        <p className="text-xs text-primary italic">
+                          "{service.tagline}"
+                        </p>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               ))}
             </div>
