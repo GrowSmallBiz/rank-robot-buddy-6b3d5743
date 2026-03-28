@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Head } from "vite-react-ssg";
 import { ArrowRight, ArrowDown, ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
