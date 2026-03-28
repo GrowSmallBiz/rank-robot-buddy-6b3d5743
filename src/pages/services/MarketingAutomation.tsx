@@ -74,22 +74,22 @@ import {
 } from "lucide-react";
 
 const demoVideos = [
-  { title: "Universal Inbox", slug: "universal-inbox", icon: Inbox, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/8b97f6f4-709f-492d-9dd7-9e8452077e3b.png" },
-  { title: "Workflow Automations", slug: "workflow-automations", icon: Zap, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/51d6500b-ec0c-46b0-8fb0-5ea314a4f0b3.png" },
-  { title: "Website Builder", slug: "website-builder", icon: Monitor, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/37a7b14a-9580-49d5-94d4-493c497c1bbc.png" },
-  { title: "Email & SMS Marketing", slug: "email-sms-marketing", icon: Mail, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/3dac32c6-a259-4b4d-9fcb-656d83a58626.png" },
-  { title: "Integrated Payments", slug: "integrated-payments", icon: CreditCard, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/d43150ac-3b0d-4dac-9b3b-e579d5ad5ca0.png" },
-  { title: "Social Media Planner", slug: "social-media-planner", icon: Share2, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/bec46156-5038-4d59-9d9f-2f1d736d384c.png" },
-  { title: "Calendar Scheduling", slug: "calendar-scheduling", icon: CalendarCheck, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/93b6bffa-c897-45fe-9e16-dc9bc6613078.png" },
-  { title: "Sales Tracker", slug: "sales-tracker", icon: TrendingUp, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/51670e0a-5b78-426b-b607-f1a585584d4e.png" },
-  { title: "Forms & Surveys", slug: "forms-surveys", icon: ClipboardList, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/6a3bb8e8-97fd-4043-8356-ebf4b74305a7.png" },
-  { title: "Reviews", slug: "reviews", icon: Star, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/db047e52-f52e-41d0-b848-3751241372ee.png" },
-  { title: "Call Tracking", slug: "call-tracking", icon: PhoneCall, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/afbaffd4-634f-4d3a-8f73-ebba46d8e1b8.png" },
-  { title: "CRM", slug: "crm", icon: Users, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/e68e91e0-b1d6-41c0-bc26-51252255bf69.png" },
-  { title: "Sales Funnels", slug: "sales-funnels", icon: Layers, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/84eaa97c-e429-48fb-8661-8ab0d668b8b9.png" },
-  { title: "Memberships", slug: "memberships", icon: Lock, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/09d333ae-49ad-495c-97a0-f6b56a42ba4d.png" },
-  { title: "Webchat", slug: "webchat", icon: MessagesSquare, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/4d1baef4-dcf2-4be2-93ab-7ded2564fa9d.png" },
-  { title: "Generate Leads Live", slug: "generate-leads", icon: Megaphone, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/6d4cc8e0-cc1a-4087-a3ef-3dfbe6aa0099.png" },
+  { title: "Universal Inbox", slug: "universal-inbox", icon: Inbox, color: "hsl(195 80% 30%)" },
+  { title: "Workflow Automations", slug: "workflow-automations", icon: Zap, color: "hsl(35 90% 45%)" },
+  { title: "Website Builder", slug: "website-builder", icon: Monitor, color: "hsl(210 60% 35%)" },
+  { title: "Email & SMS Marketing", slug: "email-sms-marketing", icon: Mail, color: "hsl(160 60% 30%)" },
+  { title: "Integrated Payments", slug: "integrated-payments", icon: CreditCard, color: "hsl(260 50% 40%)" },
+  { title: "Social Media Planner", slug: "social-media-planner", icon: Share2, color: "hsl(330 55% 40%)" },
+  { title: "Calendar Scheduling", slug: "calendar-scheduling", icon: CalendarCheck, color: "hsl(180 65% 28%)" },
+  { title: "Sales Tracker", slug: "sales-tracker", icon: TrendingUp, color: "hsl(145 55% 32%)" },
+  { title: "Forms & Surveys", slug: "forms-surveys", icon: ClipboardList, color: "hsl(220 55% 42%)" },
+  { title: "Reviews", slug: "reviews", icon: Star, color: "hsl(40 85% 45%)" },
+  { title: "Call Tracking", slug: "call-tracking", icon: PhoneCall, color: "hsl(0 60% 42%)" },
+  { title: "CRM", slug: "crm", icon: Users, color: "hsl(200 65% 35%)" },
+  { title: "Sales Funnels", slug: "sales-funnels", icon: Layers, color: "hsl(270 45% 38%)" },
+  { title: "Memberships", slug: "memberships", icon: Lock, color: "hsl(15 70% 40%)" },
+  { title: "Webchat", slug: "webchat", icon: MessagesSquare, color: "hsl(175 60% 30%)" },
+  { title: "Generate Leads Live", slug: "generate-leads", icon: Megaphone, color: "hsl(50 75% 40%)" },
 ];
 
 const sectionNav = [
@@ -763,17 +763,10 @@ const MarketingAutomation = () => {
                     className="group feature-card-teal animate-fade-up flex flex-col items-center text-center"
                     style={{ animationDelay: `${index * 0.05}s` }}
                   >
-                    <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-4 border border-border/50">
-                      <img
-                        src={demo.thumbnail}
-                        alt={demo.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
-                        <div className="w-12 h-12 rounded-full bg-primary/90 flex items-center justify-center">
-                          <Play className="w-5 h-5 text-white ml-0.5" />
-                        </div>
+                    <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-4 border border-border/50 flex items-center justify-center" style={{ backgroundColor: demo.color }}>
+                      <Icon className="w-12 h-12 text-white/90" />
+                      <div className="absolute bottom-2 right-2 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                        <Play className="w-4 h-4 text-white ml-0.5" />
                       </div>
                     </div>
                     <div className="flex items-center gap-2 mb-1">
