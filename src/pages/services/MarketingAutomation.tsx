@@ -869,7 +869,7 @@ const MarketingAutomation = () => {
                 </div>
                 <iframe
                   src="https://api.leadconnectorhq.com/widget/form/vRKH9AO2IToQ38j4hyaN"
-                  style={{ width: "100%", height: "1645px", border: "none", borderRadius: "3px" }}
+                  style={{ width: "100%", height: "900px", border: "none", borderRadius: "3px" }}
                   id="inline-vRKH9AO2IToQ38j4hyaN"
                   loading="lazy"
                   data-layout="{'id':'INLINE'}"
