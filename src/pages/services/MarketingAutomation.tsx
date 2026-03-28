@@ -491,7 +491,7 @@ const MarketingAutomation = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {(feature as any).textAbove ? (
-                    <div className="border-2 border-white/20 rounded-2xl p-6 flex flex-col items-center">
+                    <div className="border-2 border-white rounded-2xl p-6 flex flex-col items-center" style={{ backgroundColor: "#2C485B" }}>
                       <div className="mb-6">
                         <h3 className="text-2xl font-bold text-foreground leading-snug">
                           Autopilot for your{" "}
