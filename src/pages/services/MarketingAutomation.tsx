@@ -779,7 +779,7 @@ const MarketingAutomation = () => {
                 <div className="relative rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#191321' }}>
                   <div className="text-center mb-6">
                     <h3 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-3">
-                      Get a <span className="text-accent">Consultation</span>
+                      Schedule A <span className="text-accent">Demo</span>
                     </h3>
                     <p className="text-muted-foreground">
                       Tell us about your business and we'll follow up with the next best step.
