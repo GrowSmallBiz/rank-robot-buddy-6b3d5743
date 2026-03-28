@@ -816,7 +816,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* Demo Form - Single Column */}
-        <section id="ready-to-talk" className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+        <section id="ready-to-talk" className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
           <div className="container mx-auto px-4 relative z-10 max-w-4xl">
             {/* Heading & Video */}
             <div className="flex flex-col items-center text-center mb-12">
