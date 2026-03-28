@@ -16,11 +16,11 @@ import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { AutopilotCTASection } from "@/components/sections/AutopilotCTASection";
 import heroImage from "@/assets/marketing-automation-hero.jpg";
 import whatYouGetSpeed from "@/assets/what-you-get-speed.svg";
-import whatYouGetCalendar from "@/assets/what-you-get-calendar.png";
-import whatYouGetCalls from "@/assets/what-you-get-calls.png";
-import whatYouGetSmart from "@/assets/what-you-get-smart.png";
-import whatYouGetPerformance from "@/assets/what-you-get-performance.png";
-import whatYouGetAutopilot from "@/assets/what-you-get-autopilot.png";
+import whatYouGetCalendar from "@/assets/what-you-get-calendar.svg";
+import whatYouGetCalls from "@/assets/what-you-get-calls.svg";
+import whatYouGetSmart from "@/assets/what-you-get-smart.svg";
+import whatYouGetPerformance from "@/assets/what-you-get-performance.svg";
+import whatYouGetAutopilot from "@/assets/what-you-get-autopilot.svg";
 import {
   Bot,
   Zap,
@@ -222,6 +222,7 @@ const benefitFeatures = [
     title: "Autopilot for Your Business",
     description:
       "Put SMS, Email, Web Chat, Phone Calls, and much more on complete autopilot so you can focus on what matters most.",
+    textAbove: true,
   },
 ];
 
@@ -481,18 +482,29 @@ const MarketingAutomation = () => {
               {benefitFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="text-center animate-fade-up"
+                  className={`text-center animate-fade-up ${(feature as any).textAbove ? "flex flex-col-reverse" : ""}`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-[300px] h-[300px] object-contain mx-auto mb-5"
-                  />
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  {!(feature as any).textAbove && (
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className="w-[300px] h-[300px] object-contain mx-auto mb-5"
+                    />
+                  )}
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">
+                      {feature.title}
+                    </h3>
+                    <p className="text-muted-foreground">{feature.description}</p>
+                  </div>
+                  {(feature as any).textAbove && (
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className="w-[300px] h-[300px] object-contain mx-auto mb-5"
+                    />
+                  )}
                 </div>
               ))}
             </div>
