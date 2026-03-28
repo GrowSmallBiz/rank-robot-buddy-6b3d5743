@@ -1,4 +1,8 @@
-export const ConsultationFormSection = () => {
+interface ConsultationFormSectionProps {
+  iframeHeight?: string;
+}
+
+export const ConsultationFormSection = ({ iframeHeight = "1006px" }: ConsultationFormSectionProps) => {
   return (
     <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
