@@ -347,27 +347,27 @@ const industries = [
   {
     icon: Home,
     name: "Home Service",
-    examples: "HVAC, Plumbing, Roofing, Landscaping, Electricians, Pest Control",
+    services: ["Kitchen Remodeling", "AC Repair", "Plumbing", "Landscaping", "Roofing", "Electricians", "Pest Control", "Locksmith", "Painting", "Flooring Installation", "Damage Restoration", "Garage Door Repair"],
   },
   {
     icon: Stethoscope,
     name: "Healthcare",
-    examples: "Dentists, Chiropractors, Day Spas, Fitness Centers, Veterinarians",
+    services: ["Dentists", "Chiropractors", "Cosmetic Surgery", "Weight Loss Centers", "Eye Doctors", "Day Spas", "Veterinarians", "Fitness Centers"],
   },
   {
     icon: Scale,
     name: "Legal",
-    examples: "Personal Injury, Bankruptcy, Divorce, Criminal, Traffic",
+    services: ["Bankruptcy", "Personal Injury", "Divorce", "Criminal", "Traffic"],
   },
   {
     icon: Car,
     name: "Automotive",
-    examples: "Auto Repair Shops, Auto Body Shops, Auto Dealers",
+    services: ["Auto Repair Shops", "Auto Body Shops", "Auto Dealers"],
   },
   {
     icon: Briefcase,
     name: "Professional Services",
-    examples: "Real Estate, Mortgage Brokers, Insurance Agents, CPA/Tax",
+    services: ["Real Estate Brokers", "Mortgage Brokers", "Insurance Agents", "CPA/Tax Consultants"],
   },
 ];
 
