@@ -1,5 +1,4 @@
 import { Head } from "vite-react-ssg";
-import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -7,7 +6,7 @@ import { Link } from "react-router-dom";
 
 interface DemoVideoPageProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   sourceUrl: string;
   metaDescription: string;
 }
