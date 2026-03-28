@@ -11,7 +11,7 @@ export default function ReviewsDemo() {
       <Head>
         <title>Reviews Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Reviews helps you generate 5-star reviews and manage your online reputation." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/demo/reviews" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/reviews" />
       </Head>
       <Header />
       <main className="pt-20">

@@ -11,7 +11,7 @@ export default function WebchatDemo() {
       <Head>
         <title>Webchat Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Webchat converts website visitors into leads with live chat and AI chatbots." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/demo/webchat" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/webchat" />
       </Head>
       <Header />
       <main className="pt-20">

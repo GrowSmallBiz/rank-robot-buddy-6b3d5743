@@ -11,7 +11,7 @@ export default function IntegratedPaymentsDemo() {
       <Head>
         <title>Payments &amp; Invoicing Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Integrated Payments streamlines billing, invoicing, and payment collection." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/demo/integrated-payments" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/integrated-payments" />
       </Head>
       <Header />
       <main className="pt-20">

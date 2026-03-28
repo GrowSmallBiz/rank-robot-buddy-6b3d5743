@@ -11,7 +11,7 @@ export default function SalesTrackerDemo() {
       <Head>
         <title>Sales Pipeline Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Sales Pipeline helps you see where every prospect is and close more deals." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/demo/sales-tracker" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-tracker" />
       </Head>
       <Header />
       <main className="pt-20">

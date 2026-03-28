@@ -37,7 +37,7 @@ export const DemoVideoPage = ({
       <Head>
         <title>{title} Demo | GrowSmallBiz</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://growsmallbiz.io/services/marketing-automation-for-small-business/demo/${slug}`} />
+        <link rel="canonical" href={`https://growsmallbiz.io/services/marketing-automation-for-small-business/${slug}`} />
       </Head>
       <Header />
       <main className="pt-20">
