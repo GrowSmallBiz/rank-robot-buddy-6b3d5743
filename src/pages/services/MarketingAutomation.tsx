@@ -587,7 +587,7 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Benefits Section */}
@@ -646,7 +646,7 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* AI Features Section */}
@@ -671,13 +671,13 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Funnel Builder Section */}
         <div id="funnel-builder">
           <FunnelBuilderSection />
-          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </div>
 
         {/* Industries Section */}
@@ -714,13 +714,13 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Integrations Section */}
         <div id="integrations">
           <IntegrationsSection />
-          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </div>
 
         {/* Quick Demo Videos Section */}
@@ -768,7 +768,7 @@ const MarketingAutomation = () => {
                 );
               })}
             </div>
-            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
@@ -781,7 +781,7 @@ const MarketingAutomation = () => {
               titleHighlight="Real Teams"
             />
             <TestimonialsGrid testimonials={testimonials} columns={3} />
-            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
@@ -799,7 +799,7 @@ const MarketingAutomation = () => {
               <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
               30 Days Money Back Guarantee
             </p>
-            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
@@ -927,14 +927,14 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
-          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* FAQ */}
         <section id="faq" className="section-padding">
           <div className="container mx-auto px-4">
             <FAQSection faqs={faqs} />
-            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
