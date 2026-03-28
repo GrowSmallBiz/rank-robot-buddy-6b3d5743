@@ -660,6 +660,23 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
+        {/* Pricing Section */}
+        <section id="pricing" className="section-padding">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="CHOOSE A PLAN THAT FITS YOUR GROWTH"
+              title="Win More Clients &"
+              titleHighlight="Keep Them For Life"
+              description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
+            />
+            <PricingGrid plans={pricingPlans} columns={3} />
+            <p className="text-center mt-8 text-muted-foreground animate-fade-up">
+              <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
+              30 Days Money Back Guarantee
+            </p>
+          </div>
+        </section>
+
         {/* Complete Growth Suite */}
         <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
@@ -708,23 +725,6 @@ const MarketingAutomation = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* Pricing Section */}
-        <section id="pricing" className="section-padding">
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="CHOOSE A PLAN THAT FITS YOUR GROWTH"
-              title="Win More Clients &"
-              titleHighlight="Keep Them For Life"
-              description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
-            />
-            <PricingGrid plans={pricingPlans} columns={3} />
-            <p className="text-center mt-8 text-muted-foreground animate-fade-up">
-              <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
-              30 Days Money Back Guarantee
-            </p>
           </div>
         </section>
 
