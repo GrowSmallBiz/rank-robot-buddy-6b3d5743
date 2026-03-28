@@ -274,6 +274,10 @@
 }
 
 @layer utilities {
+  .section-padding {
+    @apply py-20 lg:py-28 my-2;
+  }
+
   .delay-100 { animation-delay: 0.1s; }
   .delay-200 { animation-delay: 0.2s; }
   .delay-300 { animation-delay: 0.3s; }
