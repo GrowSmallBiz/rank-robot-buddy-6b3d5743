@@ -83,55 +83,42 @@ export const Header = () => {
                   Website That Converts
                 </Link>
 
-                {/* Managed AI SEO */}
-                <Link
-                  to="/local-seo-services"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Managed AI SEO Services
-                </Link>
-                <Link
-                  to="/local-seo-services/aeo"
-                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Answer Engine Optimization (AEO)
-                </Link>
-                <Link
-                  to="/local-seo-services/geo"
-                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Generative Engine Optimization (GEO)
-                </Link>
-                <Link
-                  to="/local-seo-services/local-seo"
-                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Local SEO
-                </Link>
-                <Link
-                  to="/local-seo-services/authority-building"
-                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Authority Building
-                </Link>
-                <Link
-                  to="/local-seo-services/link-building"
-                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Link Building
-                </Link>
-                <Link
-                  to="/local-seo-services/technical-seo"
-                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Technical SEO
-                </Link>
-                <Link
-                  to="/local-seo-services/on-page-seo"
-                  className="block px-4 py-3 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  On-Page SEO
-                </Link>
+                {/* Managed AI SEO - Collapsible */}
+                <div>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setIsSeoSubOpen(!isSeoSubOpen); }}
+                    className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  >
+                    Managed AI SEO Services
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isSeoSubOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  <div className={`overflow-hidden transition-all duration-200 ${isSeoSubOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+                    <Link to="/local-seo-services" className="block px-4 py-2.5 pl-8 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                      Overview
+                    </Link>
+                    <Link to="/local-seo-services/aeo" className="block px-4 py-2.5 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Answer Engine Optimization (AEO)
+                    </Link>
+                    <Link to="/local-seo-services/geo" className="block px-4 py-2.5 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Generative Engine Optimization (GEO)
+                    </Link>
+                    <Link to="/local-seo-services/local-seo" className="block px-4 py-2.5 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Local SEO
+                    </Link>
+                    <Link to="/local-seo-services/authority-building" className="block px-4 py-2.5 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Authority Building
+                    </Link>
+                    <Link to="/local-seo-services/link-building" className="block px-4 py-2.5 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Link Building
+                    </Link>
+                    <Link to="/local-seo-services/technical-seo" className="block px-4 py-2.5 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Technical SEO
+                    </Link>
+                    <Link to="/local-seo-services/on-page-seo" className="block px-4 py-2.5 pl-8 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      On-Page SEO
+                    </Link>
+                  </div>
+                </div>
 
                 {/* Paid Media & Advertising */}
                 <Link
