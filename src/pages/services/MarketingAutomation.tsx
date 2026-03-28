@@ -609,6 +609,42 @@ const MarketingAutomation = () => {
         {/* Funnel Builder Section */}
         <FunnelBuilderSection />
 
+        {/* Industries Section */}
+        <section className="section-padding">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="TAILORED FOR YOUR INDUSTRY"
+              title="Solutions Built To Fit"
+              titleHighlight="Your Business"
+              description="Whether you are scheduling jobs, booking clients, managing leads, or closing deals, the platform adjusts to your industry needs while keeping everything fast, simple, and automated."
+            />
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+              {industries.map((industry, index) => (
+                <div
+                  key={index}
+                  className="feature-card-teal animate-fade-up"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="bg-primary rounded-xl p-2.5 w-fit mb-4">
+                    <industry.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground mb-3">
+                    {industry.name}
+                  </h3>
+                  <ul className="space-y-2">
+                    {industry.services.map((service, i) => (
+                      <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <service.icon className="w-4 h-4 text-primary shrink-0" />
+                        {service.name}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Complete Growth Suite */}
         <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
@@ -662,42 +698,6 @@ const MarketingAutomation = () => {
 
         {/* Integrations Section */}
         <IntegrationsSection />
-
-        {/* Industries Section */}
-        <section className="section-padding">
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="TAILORED FOR YOUR INDUSTRY"
-              title="Solutions Built To Fit"
-              titleHighlight="Your Business"
-              description="Whether you are scheduling jobs, booking clients, managing leads, or closing deals, the platform adjusts to your industry needs while keeping everything fast, simple, and automated."
-            />
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-              {industries.map((industry, index) => (
-                <div
-                  key={index}
-                  className="feature-card-teal animate-fade-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="bg-primary rounded-xl p-2.5 w-fit mb-4">
-                    <industry.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3">
-                    {industry.name}
-                  </h3>
-                  <ul className="space-y-2">
-                    {industry.services.map((service, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <service.icon className="w-4 h-4 text-primary shrink-0" />
-                        {service.name}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Testimonials */}
         <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
