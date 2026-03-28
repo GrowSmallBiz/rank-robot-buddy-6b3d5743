@@ -764,7 +764,7 @@ const MarketingAutomation = () => {
                 return (
                   <a
                     key={index}
-                    href={`/services/marketing-automation-for-small-business/demo/${demo.slug}`}
+                    href={`/services/marketing-automation-for-small-business/${demo.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group feature-card-teal animate-fade-up flex flex-col items-center text-center"

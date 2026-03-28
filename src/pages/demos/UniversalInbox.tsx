@@ -11,7 +11,7 @@ export default function UniversalInboxDemo() {
       <Head>
         <title>Universal Inbox Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Universal Inbox consolidates SMS, email, social media, webchat and calls into one place." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/demo/universal-inbox" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/universal-inbox" />
       </Head>
       <Header />
       <main className="pt-20">
