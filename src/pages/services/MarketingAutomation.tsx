@@ -732,7 +732,44 @@ const MarketingAutomation = () => {
         </section>
 
         {/* Demo Form */}
-        <ConsultationFormSection />
+        <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+          <div className="container mx-auto px-4 relative z-10">
+            <div
+              className="max-w-3xl mx-auto relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
+              style={{ border: '2px solid #17a2b8' }}
+            >
+              <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
+                <div className="text-center mb-8">
+                  <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
+                    Get a <span className="text-accent">Consultation</span>
+                  </h2>
+                  <p className="text-muted-foreground text-lg">
+                    Tell us a little about your business and what kind of growth support you need. We will review your inquiry and follow up with the next best step.
+                  </p>
+                </div>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/vRKH9AO2IToQ38j4hyaN"
+                  style={{ width: "100%", height: "1645px", border: "none", borderRadius: "3px" }}
+                  id="inline-vRKH9AO2IToQ38j4hyaN"
+                  loading="lazy"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="GrowSmallBiz SaaS Demo Form"
+                  data-height="1645"
+                  data-layout-iframe-id="inline-vRKH9AO2IToQ38j4hyaN"
+                  data-form-id="vRKH9AO2IToQ38j4hyaN"
+                  title="GrowSmallBiz SaaS Demo Form"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* FAQ */}
         <section className="section-padding">
