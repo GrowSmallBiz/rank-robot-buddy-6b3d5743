@@ -766,7 +766,7 @@ const MarketingAutomation = () => {
                 className="ghl-btn inline-flex items-center gap-3 px-8 py-4 text-lg font-bold"
               >
                 Schedule Now
-                <ArrowRight className="w-5 h-5" />
+                <ArrowDown className="w-5 h-5" />
               </a>
             </div>
 
