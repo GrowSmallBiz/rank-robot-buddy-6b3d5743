@@ -681,57 +681,6 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
-        {/* Complete Growth Suite */}
-        <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="COMPLETE GROWTH SUITE"
-              title="Everything You Need to"
-              titleHighlight="Grow Your Business"
-              description="7 powerful categories of automation services designed to attract leads, build your reputation, and retain customers for life."
-            />
-            <div className="space-y-12">
-              {growthSuiteCategories.map((category, index) => (
-                <div
-                  key={index}
-                  className="animate-fade-up"
-                  style={{ animationDelay: `${index * 0.08}s` }}
-                >
-                  {/* Category Title Badge */}
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="bg-primary rounded-xl p-2.5">
-                      <category.icon className="w-5 h-5 text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground">
-                      {category.title}
-                    </h3>
-                  </div>
-
-                  {/* 4 Service Cards in a Row */}
-                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {category.services.map((service, i) => (
-                      <div
-                        key={i}
-                        className="bg-card/60 border border-border rounded-xl p-5 hover:border-primary/30 transition-all"
-                      >
-                        <h4 className="text-sm font-bold text-foreground mb-2">
-                          {service.name}
-                        </h4>
-                        <p className="text-xs text-muted-foreground mb-3">
-                          {service.desc}
-                        </p>
-                        <p className="text-xs text-primary italic">
-                          "{service.tagline}"
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Demo Form - Single Column */}
         <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
           <div className="container mx-auto px-4 relative z-10 max-w-4xl">
@@ -803,6 +752,57 @@ const MarketingAutomation = () => {
                   title="GrowSmallBiz SaaS Demo Form"
                 />
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Complete Growth Suite */}
+        <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="COMPLETE GROWTH SUITE"
+              title="Everything You Need to"
+              titleHighlight="Grow Your Business"
+              description="7 powerful categories of automation services designed to attract leads, build your reputation, and retain customers for life."
+            />
+            <div className="space-y-12">
+              {growthSuiteCategories.map((category, index) => (
+                <div
+                  key={index}
+                  className="animate-fade-up"
+                  style={{ animationDelay: `${index * 0.08}s` }}
+                >
+                  {/* Category Title Badge */}
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="bg-primary rounded-xl p-2.5">
+                      <category.icon className="w-5 h-5 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">
+                      {category.title}
+                    </h3>
+                  </div>
+
+                  {/* 4 Service Cards in a Row */}
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {category.services.map((service, i) => (
+                      <div
+                        key={i}
+                        className="bg-card/60 border border-border rounded-xl p-5 hover:border-primary/30 transition-all"
+                      >
+                        <h4 className="text-sm font-bold text-foreground mb-2">
+                          {service.name}
+                        </h4>
+                        <p className="text-xs text-muted-foreground mb-3">
+                          {service.desc}
+                        </p>
+                        <p className="text-xs text-primary italic">
+                          "{service.tagline}"
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
