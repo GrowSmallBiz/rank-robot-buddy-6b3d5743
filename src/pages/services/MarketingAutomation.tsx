@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { ArrowRight } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
