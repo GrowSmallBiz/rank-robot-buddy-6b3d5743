@@ -1,5 +1,6 @@
 import { Head } from "vite-react-ssg";
-import { ArrowRight, ArrowDown } from "lucide-react";
+import { ArrowRight, ArrowDown, ArrowUp } from "lucide-react";
+import { Link } from "react-router-dom";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -59,7 +60,50 @@ import {
   FileText,
   DollarSign,
   Calculator,
+  Play,
+  Inbox,
+  CreditCard,
+  Share2,
+  ClipboardList,
+  PhoneCall,
+  Monitor,
+  Megaphone,
+  MessagesSquare,
 } from "lucide-react";
+
+const demoVideos = [
+  { title: "Universal Inbox", slug: "universal-inbox", icon: Inbox, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/8b97f6f4-709f-492d-9dd7-9e8452077e3b.png" },
+  { title: "Workflow Automations", slug: "workflow-automations", icon: Zap, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/51d6500b-ec0c-46b0-8fb0-5ea314a4f0b3.png" },
+  { title: "Website Builder", slug: "website-builder", icon: Monitor, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/37a7b14a-9580-49d5-94d4-493c497c1bbc.png" },
+  { title: "Email & SMS Marketing", slug: "email-sms-marketing", icon: Mail, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/3dac32c6-a259-4b4d-9fcb-656d83a58626.png" },
+  { title: "Integrated Payments", slug: "integrated-payments", icon: CreditCard, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/d43150ac-3b0d-4dac-9b3b-e579d5ad5ca0.png" },
+  { title: "Social Media Planner", slug: "social-media-planner", icon: Share2, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/bec46156-5038-4d59-9d9f-2f1d736d384c.png" },
+  { title: "Calendar Scheduling", slug: "calendar-scheduling", icon: CalendarCheck, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/93b6bffa-c897-45fe-9e16-dc9bc6613078.png" },
+  { title: "Sales Tracker", slug: "sales-tracker", icon: TrendingUp, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/51670e0a-5b78-426b-b607-f1a585584d4e.png" },
+  { title: "Forms & Surveys", slug: "forms-surveys", icon: ClipboardList, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/6a3bb8e8-97fd-4043-8356-ebf4b74305a7.png" },
+  { title: "Reviews", slug: "reviews", icon: Star, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/db047e52-f52e-41d0-b848-3751241372ee.png" },
+  { title: "Call Tracking", slug: "call-tracking", icon: PhoneCall, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/afbaffd4-634f-4d3a-8f73-ebba46d8e1b8.png" },
+  { title: "CRM", slug: "crm", icon: Users, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/e68e91e0-b1d6-41c0-bc26-51252255bf69.png" },
+  { title: "Sales Funnels", slug: "sales-funnels", icon: Layers, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/84eaa97c-e429-48fb-8661-8ab0d668b8b9.png" },
+  { title: "Memberships", slug: "memberships", icon: Lock, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/09d333ae-49ad-495c-97a0-f6b56a42ba4d.png" },
+  { title: "Webchat", slug: "webchat", icon: MessagesSquare, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/4d1baef4-dcf2-4be2-93ab-7ded2564fa9d.png" },
+  { title: "Generate Leads Live", slug: "generate-leads", icon: Megaphone, thumbnail: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/6d4cc8e0-cc1a-4087-a3ef-3dfbe6aa0099.png" },
+];
+
+const sectionNav = [
+  { id: "why-choose", label: "Why Choose Us" },
+  { id: "what-you-get", label: "What You Get" },
+  { id: "ai-features", label: "AI Features" },
+  { id: "funnel-builder", label: "Funnels" },
+  { id: "industries", label: "Industries" },
+  { id: "integrations", label: "Integrations" },
+  { id: "demo-videos", label: "Demo Videos" },
+  { id: "ready-to-talk", label: "Schedule Demo" },
+  { id: "testimonials", label: "Testimonials" },
+  { id: "pricing", label: "Pricing" },
+  { id: "growth-suite", label: "Growth Suite" },
+  { id: "faq", label: "FAQ" },
+];
 
 const contactCTA = createServiceContactCTA(
   "Marketing Automation",
@@ -504,8 +548,25 @@ const MarketingAutomation = () => {
           ]}
         />
 
+        {/* Section Index Tabs */}
+        <nav id="page-top" className="sticky top-16 z-40 border-b border-border/50 backdrop-blur-md" style={{ backgroundColor: "hsl(var(--background) / 0.9)" }}>
+          <div className="container mx-auto px-4">
+            <div className="flex gap-1 overflow-x-auto py-2 scrollbar-hide">
+              {sectionNav.map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className="whitespace-nowrap px-3 py-1.5 rounded-md text-xs font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors shrink-0"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </nav>
+
         {/* Why Choose Section */}
-        <section className="section-padding">
+        <section id="why-choose" className="section-padding">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="WHY CHOOSE US"
@@ -526,10 +587,11 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Benefits Section */}
-        <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="what-you-get" className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="WHAT YOU GET"
@@ -584,10 +646,11 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* AI Features Section */}
-        <section className="py-12">
+        <section id="ai-features" className="py-12">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="AI FEATURES OVERVIEW"
@@ -608,13 +671,17 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Funnel Builder Section */}
-        <FunnelBuilderSection />
+        <div id="funnel-builder">
+          <FunnelBuilderSection />
+          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+        </div>
 
         {/* Industries Section */}
-        <section className="py-12" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="industries" className="py-12" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="TAILORED FOR YOUR INDUSTRY"
@@ -647,13 +714,64 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* Integrations Section */}
-        <IntegrationsSection />
+        <div id="integrations">
+          <IntegrationsSection />
+          <div className="text-center pb-8"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+        </div>
+
+        {/* Quick Demo Videos Section */}
+        <section id="demo-videos" className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="QUICK DEMO VIDEOS"
+              title="See Each Feature"
+              titleHighlight="In Action"
+              description="Watch short demos of every major feature to see exactly how GrowSmallBiz powers your business."
+            />
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {demoVideos.map((demo, index) => {
+                const Icon = demo.icon;
+                return (
+                  <Link
+                    key={index}
+                    to={`/services/marketing-automation-for-small-business/demo/${demo.slug}`}
+                    className="group feature-card-teal animate-fade-up flex flex-col items-center text-center"
+                    style={{ animationDelay: `${index * 0.05}s` }}
+                  >
+                    <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-4 border border-border/50">
+                      <img
+                        src={demo.thumbnail}
+                        alt={demo.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+                        <div className="w-12 h-12 rounded-full bg-primary/90 flex items-center justify-center">
+                          <Play className="w-5 h-5 text-white ml-0.5" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 mb-1">
+                      <Icon className="w-4 h-4 text-primary shrink-0" />
+                      <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors">
+                        {demo.title}
+                      </h3>
+                    </div>
+                    <span className="text-xs text-primary font-medium">See More →</span>
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
+          </div>
+        </section>
 
         {/* Testimonials */}
-        <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="testimonials" className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="CLIENT SUCCESS STORIES"
@@ -661,6 +779,7 @@ const MarketingAutomation = () => {
               titleHighlight="Real Teams"
             />
             <TestimonialsGrid testimonials={testimonials} columns={3} />
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
@@ -678,11 +797,12 @@ const MarketingAutomation = () => {
               <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
               30 Days Money Back Guarantee
             </p>
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
         {/* Demo Form - Single Column */}
-        <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+        <section id="ready-to-talk" className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
           <div className="container mx-auto px-4 relative z-10 max-w-4xl">
             {/* Heading & Video */}
             <div className="flex flex-col items-center text-center mb-12">
@@ -757,7 +877,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* Complete Growth Suite */}
-        <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="growth-suite" className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="COMPLETE GROWTH SUITE"
@@ -805,12 +925,14 @@ const MarketingAutomation = () => {
               ))}
             </div>
           </div>
+          <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
         </section>
 
         {/* FAQ */}
-        <section className="section-padding">
+        <section id="faq" className="section-padding">
           <div className="container mx-auto px-4">
             <FAQSection faqs={faqs} />
+            <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
 
