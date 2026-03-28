@@ -645,6 +645,9 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
+        {/* Integrations Section */}
+        <IntegrationsSection />
+
         {/* Complete Growth Suite */}
         <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
@@ -695,9 +698,6 @@ const MarketingAutomation = () => {
             </div>
           </div>
         </section>
-
-        {/* Integrations Section */}
-        <IntegrationsSection />
 
         {/* Testimonials */}
         <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
