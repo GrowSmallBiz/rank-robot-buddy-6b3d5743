@@ -15,7 +15,7 @@ import { FunnelBuilderSection } from "@/components/sections/FunnelBuilderSection
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { AutopilotCTASection } from "@/components/sections/AutopilotCTASection";
 import heroImage from "@/assets/marketing-automation-hero.jpg";
-import whatYouGetSpeed from "@/assets/what-you-get-speed.png";
+import whatYouGetSpeed from "@/assets/what-you-get-speed.svg";
 import whatYouGetCalendar from "@/assets/what-you-get-calendar.png";
 import whatYouGetCalls from "@/assets/what-you-get-calls.png";
 import whatYouGetSmart from "@/assets/what-you-get-smart.png";
