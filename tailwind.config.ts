@@ -119,6 +119,10 @@ export default {
             "0%": { opacity: "0", transform: "translateY(20px)" },
             "100%": { opacity: "1", transform: "translateY(0)" },
           },
+          marquee: {
+            "0%": { transform: "translateX(0)" },
+            "100%": { transform: "translateX(-50%)" },
+          },
         },
         animation: {
           "accordion-down": "accordion-down 0.2s ease-out",
@@ -129,6 +133,7 @@ export default {
           "ring-spin": "ring-spin 4s linear infinite",
           "pulse-glow": "pulse-glow 2s ease-in-out infinite",
           "fade-up": "fade-up 0.6s ease-out forwards",
+          marquee: "marquee 30s linear infinite",
         },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
