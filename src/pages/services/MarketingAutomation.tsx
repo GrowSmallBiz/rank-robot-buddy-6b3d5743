@@ -45,6 +45,19 @@ import {
   Car,
   Briefcase,
   Stethoscope,
+  Thermometer,
+  Wrench,
+  TreePine,
+  Bug,
+  Lock,
+  Paintbrush,
+  ShieldCheck,
+  Activity,
+  Eye,
+  Dumbbell,
+  FileText,
+  DollarSign,
+  Calculator,
 } from "lucide-react";
 
 const contactCTA = createServiceContactCTA(
@@ -663,7 +676,7 @@ const MarketingAutomation = () => {
               {industries.map((industry, index) => (
                 <div
                   key={index}
-                  className="bg-card border border-border rounded-2xl p-6 card-hover animate-fade-up"
+                  className="feature-card-teal animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="bg-primary rounded-xl p-2.5 w-fit mb-4">
@@ -672,10 +685,11 @@ const MarketingAutomation = () => {
                   <h3 className="text-lg font-bold text-foreground mb-3">
                     {industry.name}
                   </h3>
-                  <ul className="space-y-1.5">
+                  <ul className="space-y-2">
                     {industry.services.map((service, i) => (
-                      <li key={i} className="text-sm text-muted-foreground">
-                        {service}
+                      <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <service.icon className="w-4 h-4 text-primary shrink-0" />
+                        {service.name}
                       </li>
                     ))}
                   </ul>
