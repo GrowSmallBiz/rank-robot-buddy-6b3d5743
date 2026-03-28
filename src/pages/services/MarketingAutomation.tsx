@@ -481,12 +481,14 @@ const MarketingAutomation = () => {
               {benefitFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="ghl-card-animated p-6 animate-fade-up"
+                  className="ghl-card-animated p-6 animate-fade-up text-center"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="icon-container-ghl mb-4">
-                    <feature.icon className="w-6 h-6 text-ghl-icon" />
-                  </div>
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-24 h-24 object-contain mx-auto mb-4"
+                  />
                   <h3 className="text-xl font-semibold text-foreground mb-3">
                     {feature.title}
                   </h3>
