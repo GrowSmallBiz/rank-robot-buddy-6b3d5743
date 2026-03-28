@@ -142,6 +142,7 @@ const pricingPlans = [
     cta: "Get Started",
     ctaLink: "https://lp.growsmallbiz.io/ai-client-growth-system",
     note: "No contracts. Cancel anytime.",
+    cardStyle: "linear-gradient(160deg, hsl(210 45% 18%) 0%, hsl(210 50% 12%) 100%)",
   },
   {
     name: "Unlimited",
@@ -159,6 +160,7 @@ const pricingPlans = [
     ctaLink: "https://lp.growsmallbiz.io/ai-client-growth-system",
     popular: true,
     note: "Zero AI overage fees. Cancel anytime.",
+    cardStyle: "linear-gradient(160deg, hsl(18 85% 20%) 0%, hsl(18 60% 12%) 60%, hsl(210 50% 10%) 100%)",
   },
   {
     name: "Growth",
