@@ -21,7 +21,7 @@ export const AutopilotCTASection = () => {
           </Button>
           <Button size="lg" variant="outline" asChild>
             <Link to="/contact">
-              Schedule A Demo
+              Schedule A Consultation
             </Link>
           </Button>
         </div>
