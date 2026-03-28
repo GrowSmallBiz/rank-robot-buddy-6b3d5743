@@ -568,9 +568,9 @@ const MarketingAutomation = () => {
 
         {/* Section Index Tabs */}
         <nav id="page-top" className="sticky top-16 z-40 shadow-lg shadow-black/20 border-b border-primary/20" style={{ background: "linear-gradient(180deg, hsl(var(--card)) 0%, hsl(var(--background)) 100%)" }}>
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 text-center">
             <p className="text-[10px] uppercase tracking-widest text-accent font-semibold pt-2 pb-0.5">Quick Navigation</p>
-            <div className="flex gap-1 overflow-x-auto pb-3 scrollbar-hide">
+            <div className="flex justify-center gap-1 overflow-x-auto pb-3 scrollbar-hide">
               {sectionNav.map((item) => (
                 <a
                   key={item.id}
@@ -589,7 +589,7 @@ const MarketingAutomation = () => {
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="WHY CHOOSE US"
-              title="Your Entire Business. Powered by AI."
+              title="Your Entire Business — Powered by AI."
               titleHighlight="Simplified Into One System."
               description="GrowSmallBiz gives small businesses the power to capture more leads, close more deals, and automate their entire customer journey — all in one place."
             />
