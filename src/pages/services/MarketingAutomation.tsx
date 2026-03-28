@@ -477,17 +477,17 @@ const MarketingAutomation = () => {
               titleHighlight="You Can"
               description="Automate your entire customer journey from first touch to loyal repeat customer."
             />
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
               {benefitFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="ghl-card-animated p-6 animate-fade-up text-center"
+                  className="text-center animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-24 h-24 object-contain mx-auto mb-4"
+                    className="w-40 h-40 object-contain mx-auto mb-5"
                   />
                   <h3 className="text-xl font-semibold text-foreground mb-3">
                     {feature.title}
