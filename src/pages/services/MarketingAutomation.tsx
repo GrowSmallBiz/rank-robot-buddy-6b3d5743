@@ -583,7 +583,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* AI Features Section */}
-        <section className="section-padding">
+        <section className="py-12">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="AI FEATURES OVERVIEW"
@@ -610,7 +610,7 @@ const MarketingAutomation = () => {
         <FunnelBuilderSection />
 
         {/* Industries Section */}
-        <section className="section-padding">
+        <section className="py-12" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="TAILORED FOR YOUR INDUSTRY"

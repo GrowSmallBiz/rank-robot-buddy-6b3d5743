@@ -101,7 +101,7 @@ const FunnelCard = ({ funnel }: { funnel: FunnelData }) => {
 
 export const FunnelBuilderSection = () => {
   return (
-    <section className="section-padding">
+    <section className="py-12 bg-gradient-to-b from-primary/5 to-transparent">
       <div className="container mx-auto px-4">
         <SectionHeader
           subtitle="FUNNEL BUILDER & UNLIMITED FUNNELS"
