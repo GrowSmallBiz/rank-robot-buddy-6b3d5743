@@ -23,7 +23,7 @@ export const ConsultationFormSection = ({ iframeHeight = "1006px" }: Consultatio
 
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV"
-              style={{ width: "100%", height: "1006px", border: "none", borderRadius: "0px" }}
+              style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: "0px" }}
               id="inline-8qUn6xE0v2Jwcs63q0uV"
               loading="lazy"
               data-layout="{'id':'INLINE'}"
