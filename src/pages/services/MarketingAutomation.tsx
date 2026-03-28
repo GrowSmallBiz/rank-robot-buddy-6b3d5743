@@ -15,6 +15,12 @@ import { FunnelBuilderSection } from "@/components/sections/FunnelBuilderSection
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { AutopilotCTASection } from "@/components/sections/AutopilotCTASection";
 import heroImage from "@/assets/marketing-automation-hero.jpg";
+import whatYouGetSpeed from "@/assets/what-you-get-speed.png";
+import whatYouGetCalendar from "@/assets/what-you-get-calendar.png";
+import whatYouGetCalls from "@/assets/what-you-get-calls.png";
+import whatYouGetSmart from "@/assets/what-you-get-smart.png";
+import whatYouGetPerformance from "@/assets/what-you-get-performance.png";
+import whatYouGetAutopilot from "@/assets/what-you-get-autopilot.png";
 import {
   Bot,
   Zap,
@@ -182,37 +188,37 @@ const whyChooseFeatures = [
 
 const benefitFeatures = [
   {
-    icon: Clock,
+    image: whatYouGetSpeed,
     title: "Double Your Speed To Lead",
     description:
       "Streamline all your communication in one place so that you can double your speed to lead and fill your pipeline!",
   },
   {
-    icon: CalendarCheck,
+    image: whatYouGetCalendar,
     title: "Instantly Fill Your Calendar",
     description:
       "GrowSmallBiz schedules appointments for you automatically so that you can close more deals!",
   },
   {
-    icon: Phone,
+    image: whatYouGetCalls,
     title: "Drive More Phone Calls",
     description:
       "Automatically route calls and convert inbound leads to sales opportunities by connecting you directly with leads who want to talk right now!",
   },
   {
-    icon: MessageSquare,
+    image: whatYouGetSmart,
     title: "Build SMART Nurture Campaigns",
     description:
       "Get up to an 80% response rate with SMART automation campaigns that interact across multiple channels!",
   },
   {
-    icon: BarChart3,
+    image: whatYouGetPerformance,
     title: "Gain Key Insights Into Performance",
     description:
       "Easily see how well your campaigns and sales team are performing so that you can increase your opportunities and sales!",
   },
   {
-    icon: Mail,
+    image: whatYouGetAutopilot,
     title: "Autopilot for Your Business",
     description:
       "Put SMS, Email, Web Chat, Phone Calls, and much more on complete autopilot so you can focus on what matters most.",
@@ -475,12 +481,14 @@ const MarketingAutomation = () => {
               {benefitFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="ghl-card-animated p-6 animate-fade-up"
+                  className="ghl-card-animated p-6 animate-fade-up text-center"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="icon-container-ghl mb-4">
-                    <feature.icon className="w-6 h-6 text-ghl-icon" />
-                  </div>
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-24 h-24 object-contain mx-auto mb-4"
+                  />
                   <h3 className="text-xl font-semibold text-foreground mb-3">
                     {feature.title}
                   </h3>
