@@ -177,6 +177,7 @@ const pricingPlans = [
     cta: "Unlock Growth",
     ctaLink: "https://lp.growsmallbiz.io/ai-client-growth-system",
     note: "Save on Hosting & Ads. Cancel anytime.",
+    cardStyle: "linear-gradient(160deg, hsl(188 50% 15%) 0%, hsl(200 45% 10%) 60%, hsl(210 50% 8%) 100%)",
   },
 ];
 
