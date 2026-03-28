@@ -190,30 +190,35 @@ const benefitFeatures = [
   {
     image: whatYouGetSpeed,
     title: "Double Your Speed To Lead",
+    label: "Speed",
     description:
       "Streamline all your communication in one place so that you can double your speed to lead and fill your pipeline!",
   },
   {
     image: whatYouGetCalendar,
     title: "Instantly Fill Your Calendar",
+    label: "Calendar",
     description:
       "GrowSmallBiz schedules appointments for you automatically so that you can close more deals!",
   },
   {
     image: whatYouGetCalls,
     title: "Drive More Phone Calls",
+    label: "Calls",
     description:
       "Automatically route calls and convert inbound leads to sales opportunities by connecting you directly with leads who want to talk right now!",
   },
   {
     image: whatYouGetSmart,
     title: "Build SMART Nurture Campaigns",
+    label: "SMART",
     description:
       "Get up to an 80% response rate with SMART automation campaigns that interact across multiple channels!",
   },
   {
     image: whatYouGetPerformance,
     title: "Gain Key Insights Into Performance",
+    label: "Performance",
     description:
       "Easily see how well your campaigns and sales team are performing so that you can increase your opportunities and sales!",
   },
