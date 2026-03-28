@@ -33,11 +33,12 @@ export const IntegrationsSection = () => {
   return (
     <section className="section-padding overflow-hidden bg-white">
       <div className="container mx-auto px-4 mb-10">
-        <SectionHeader
-          title="Easily Integrates With"
-          titleHighlight="100+ Leading Apps"
-          darkText
-        />
+        <div className="[&_h2]:text-gray-900 [&_p]:text-gray-600 [&_span]:text-primary">
+          <SectionHeader
+            title="Easily Integrates With"
+            titleHighlight="100+ Leading Apps"
+          />
+        </div>
       </div>
 
       <div className="relative w-full">
