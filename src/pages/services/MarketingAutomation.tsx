@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
+import { useUtm } from "@/hooks/use-utm";
 import { useLocation } from "react-router-dom";
 import { Head } from "vite-react-ssg";
 import { ArrowRight, ArrowDown, ArrowUp } from "lucide-react";
@@ -497,6 +498,12 @@ const testimonials = [
 
 const MarketingAutomation = () => {
   const { hash } = useLocation();
+  const { buildUrl } = useUtm();
+
+  const formUrl = useMemo(() => 
+    buildUrl("https://api.leadconnectorhq.com/widget/form/vRKH9AO2IToQ38j4hyaN", "ma-consultation"),
+    [buildUrl]
+  );
 
   useEffect(() => {
     if (hash) {
@@ -868,7 +875,7 @@ const MarketingAutomation = () => {
                   </p>
                 </div>
                 <iframe
-                  src="https://api.leadconnectorhq.com/widget/form/vRKH9AO2IToQ38j4hyaN"
+                  src={formUrl}
                   style={{ width: "100%", height: "900px", border: "none", borderRadius: "3px" }}
                   id="inline-vRKH9AO2IToQ38j4hyaN"
                   loading="lazy"
