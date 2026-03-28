@@ -648,6 +648,18 @@ const MarketingAutomation = () => {
         {/* Integrations Section */}
         <IntegrationsSection />
 
+        {/* Testimonials */}
+        <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="CLIENT SUCCESS STORIES"
+              title="Real Stories From"
+              titleHighlight="Real Teams"
+            />
+            <TestimonialsGrid testimonials={testimonials} columns={3} />
+          </div>
+        </section>
+
         {/* Complete Growth Suite */}
         <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
@@ -696,18 +708,6 @@ const MarketingAutomation = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* Testimonials */}
-        <section className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="CLIENT SUCCESS STORIES"
-              title="Real Stories From"
-              titleHighlight="Real Teams"
-            />
-            <TestimonialsGrid testimonials={testimonials} columns={3} />
           </div>
         </section>
 
