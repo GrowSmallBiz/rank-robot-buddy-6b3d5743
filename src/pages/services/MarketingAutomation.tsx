@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
+import { useUtm } from "@/hooks/use-utm";
 import { useLocation } from "react-router-dom";
 import { Head } from "vite-react-ssg";
 import { ArrowRight, ArrowDown, ArrowUp } from "lucide-react";
