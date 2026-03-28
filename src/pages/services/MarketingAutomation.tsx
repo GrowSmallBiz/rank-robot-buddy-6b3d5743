@@ -188,37 +188,37 @@ const whyChooseFeatures = [
 
 const benefitFeatures = [
   {
-    icon: Clock,
+    image: whatYouGetSpeed,
     title: "Double Your Speed To Lead",
     description:
       "Streamline all your communication in one place so that you can double your speed to lead and fill your pipeline!",
   },
   {
-    icon: CalendarCheck,
+    image: whatYouGetCalendar,
     title: "Instantly Fill Your Calendar",
     description:
       "GrowSmallBiz schedules appointments for you automatically so that you can close more deals!",
   },
   {
-    icon: Phone,
+    image: whatYouGetCalls,
     title: "Drive More Phone Calls",
     description:
       "Automatically route calls and convert inbound leads to sales opportunities by connecting you directly with leads who want to talk right now!",
   },
   {
-    icon: MessageSquare,
+    image: whatYouGetSmart,
     title: "Build SMART Nurture Campaigns",
     description:
       "Get up to an 80% response rate with SMART automation campaigns that interact across multiple channels!",
   },
   {
-    icon: BarChart3,
+    image: whatYouGetPerformance,
     title: "Gain Key Insights Into Performance",
     description:
       "Easily see how well your campaigns and sales team are performing so that you can increase your opportunities and sales!",
   },
   {
-    icon: Mail,
+    image: whatYouGetAutopilot,
     title: "Autopilot for Your Business",
     description:
       "Put SMS, Email, Web Chat, Phone Calls, and much more on complete autopilot so you can focus on what matters most.",
