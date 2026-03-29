@@ -17,5 +17,10 @@
 # Old demo URL redirects (removed /demo/ segment)
 /services/marketing-automation-for-small-business/demo/*  /services/marketing-automation-for-small-business/:splat  301
 
+# Old google-ads URL redirect
+/services/google-ads-for-local-businesses/*  /services/google-ads-for-small-businesses/:splat  301
+/services/google-ads-for-local-businesses    /services/google-ads-for-small-businesses          301
+/case-studies/google-ads-for-local-businesses/*  /case-studies/google-ads-for-small-businesses/:splat  301
+
 # SPA fallback
 /*  /index.html  200
