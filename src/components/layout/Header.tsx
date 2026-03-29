@@ -148,7 +148,7 @@ export const Header = () => {
                     <Link to="/services/paid-advertising-services" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
                       Paid Advertising Overview
                     </Link>
-                    <Link to="/services/google-ads-for-local-businesses" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/google-ads-for-small-businesses" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Google PPC Ads
                     </Link>
                     <Link to="/services/google-local-services-ads-management" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
@@ -197,7 +197,7 @@ export const Header = () => {
                   HVAC, Plumbing & Electrical — Local SEO
                 </Link>
                 <Link
-                  to="/case-studies/google-ads-for-local-businesses/hvac-plumbing-electrical"
+                  to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   HVAC, Plumbing & Electrical — Google Ads
@@ -363,7 +363,7 @@ export const Header = () => {
                     <Link to="/services/paid-advertising-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
                       Paid Advertising Overview
                     </Link>
-                    <Link to="/services/google-ads-for-local-businesses" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/google-ads-for-small-businesses" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Google PPC Ads
                     </Link>
                     <Link to="/services/google-local-services-ads-management" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
@@ -407,7 +407,7 @@ export const Header = () => {
                   HVAC, Plumbing & Electrical — Local SEO
                 </Link>
                 <Link
-                  to="/case-studies/google-ads-for-local-businesses/hvac-plumbing-electrical"
+                  to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >

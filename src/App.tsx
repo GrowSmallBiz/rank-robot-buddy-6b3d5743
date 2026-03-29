@@ -29,7 +29,7 @@ export const routes: RouteRecord[] = [
       { path: "services", lazy: lazy(() => import("./pages/Services")) },
       { path: "service", lazy: lazy(() => import("./pages/Services")) },
       { path: "services/paid-advertising-services", lazy: lazy(() => import("./pages/services/PaidMedia")) },
-      { path: "services/google-ads-for-local-businesses", lazy: lazy(() => import("./pages/services/GoogleAds")) },
+      { path: "services/google-ads-for-small-businesses", lazy: lazy(() => import("./pages/services/GoogleAds")) },
       { path: "services/google-local-services-ads-management", lazy: lazy(() => import("./pages/services/LSA")) },
       { path: "services/facebook-ads-management-services", lazy: lazy(() => import("./pages/services/FacebookAds")) },
       { path: "services/website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
@@ -64,7 +64,7 @@ export const routes: RouteRecord[] = [
       
       
       { path: "case-studies/local-seo-service/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
-      { path: "case-studies/google-ads-for-local-businesses/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/google-ads-for-local-businesses/HvacPlumbingElectrical")) },
+      { path: "case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
       { path: "case-studies/roofers", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
       { path: "case-studies/tree-lawn-landscaping", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
       { path: "case-studies/home-remodeling", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
