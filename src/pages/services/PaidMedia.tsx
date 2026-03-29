@@ -692,7 +692,7 @@ const PaidMedia = () => {
               </div>
               <div className="space-y-4 animate-fade-up" style={{ animationDelay: "0.1s" }}>
                 {[
-                  { icon: Search, label: "SEO builds organic trust over time" },
+                  { icon: Eye, label: "SEO builds organic trust over time" },
                   { icon: Target, label: "Paid ads capture high-intent demand now" },
                   { icon: RefreshCw, label: "Retargeting keeps you top-of-mind" },
                   { icon: TrendingUp, label: "Multiple touchpoints increase conversion" },
