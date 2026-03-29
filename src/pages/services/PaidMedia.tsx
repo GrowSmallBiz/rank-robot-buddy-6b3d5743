@@ -12,9 +12,6 @@ import { CTA_URLS } from "@/lib/utm";
 import {
   ArrowRight,
   Target,
-  Search,
-  ShieldCheck,
-  Users,
   RefreshCw,
   LayoutTemplate,
   PenTool,
