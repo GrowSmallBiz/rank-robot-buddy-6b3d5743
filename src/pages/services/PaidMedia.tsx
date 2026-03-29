@@ -442,16 +442,41 @@ const PaidMedia = () => {
               description="Every engagement includes both channel management and the performance infrastructure that makes campaigns convert."
             />
 
-            {/* Row 1 — Ad Channels */}
-            <div className="mb-12">
-              <h3 className="text-lg font-display font-semibold text-primary mb-6 animate-fade-up">Ad Channels</h3>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {adChannels.map((card, i) => (
-                  <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-3 animate-fade-up flex flex-col" style={{ animationDelay: `${i * 0.05}s` }}>
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <card.icon className="w-5 h-5 text-primary" />
+            {/* Row 1 — Primary Ad Channels (with links) */}
+            <div className="mb-8">
+              <h3 className="text-lg font-display font-semibold text-primary mb-6 animate-fade-up">Ad Channels We Manage</h3>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {adChannelsPrimary.map((card, i) => (
+                  <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-4 animate-fade-up flex flex-col" style={{ animationDelay: `${i * 0.05}s`, borderTopColor: card.borderColor, borderTopWidth: '3px' }}>
+                    <div className="flex items-center gap-3">
+                      {card.brandLogo}
+                      <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
                     </div>
-                    <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                    <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
+                    <Button variant="outline" size="sm" asChild className="w-fit">
+                      <Link to={card.href}>
+                        Explore Service <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </Button>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Row 2 — Secondary Ad Channels (retargeting + coming soon) */}
+            <div className="mb-12">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {adChannelsSecondary.map((card, i) => (
+                  <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-4 animate-fade-up flex flex-col relative overflow-hidden" style={{ animationDelay: `${(i + 3) * 0.05}s` }}>
+                    {'comingSoon' in card && card.comingSoon && (
+                      <span className="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                        Coming Soon
+                      </span>
+                    )}
+                    <div className="flex items-center gap-3">
+                      {card.brandLogo}
+                      <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                    </div>
                     <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
                   </div>
                 ))}
