@@ -285,28 +285,29 @@ const PaidMedia = () => {
             <div className="flex animate-marquee gap-16 items-center">
               {[0, 1].map((dupeIdx) => (
                 <React.Fragment key={dupeIdx}>
+                  {/* Google Ads - Official logo */}
                   <div className="flex-shrink-0 flex items-center gap-2">
-                    <svg className="w-8 h-8" viewBox="0 0 256 256" fill="none">
-                      <path d="M5.7 142.9c-7.6 13.1-7.6 29.2 0 42.4 7.6 13.1 21.5 21.2 36.7 21.2h.1c15.2 0 29.1-8 36.7-21.2L116 120l-36.8-63.6L5.7 142.9z" fill="#FBBC04"/>
-                      <path d="M250.3 142.9L176.8 16.1C169.2 3 155.3-5 140.1-5h-.1c-15.2 0-29.1 8-36.7 21.2L66.5 77.4l36.8 63.6 73.2-21.2 73.8 22.1z" fill="#4285F4"/>
-                      <path d="M213.6 206.5c15.2 0 29.1-8 36.7-21.2L176.8 16.1C169.2 3 155.3-5 140.1-5L103.3 56.4l36.8 63.6 73.5 86.5z" fill="#34A853"/>
+                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#4285F4" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z"/>
                     </svg>
                     <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google Ads</span>
                   </div>
+                  {/* Google LSA - Google Guaranteed checkmark shield */}
                   <div className="flex-shrink-0 flex items-center gap-2">
                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
-                      <circle cx="12" cy="12" r="11" stroke="#34A853" strokeWidth="2" fill="none"/>
-                      <path d="M12 6a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z" fill="#34A853"/>
-                      <circle cx="12" cy="10" r="1.5" fill="white"/>
+                      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#34A853"/>
+                      <path d="M10.5 15.5l-3-3 1.41-1.41L10.5 12.67l4.59-4.58L16.5 9.5l-6 6z" fill="white"/>
                     </svg>
                     <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google LSA</span>
                   </div>
+                  {/* Facebook - Official logo */}
                   <div className="flex-shrink-0 flex items-center gap-2">
                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#1877F2">
                       <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.017 1.793-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
                     </svg>
                     <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Facebook Ads</span>
                   </div>
+                  {/* Instagram - Gradient logo */}
                   <div className="flex-shrink-0 flex items-center gap-2">
                     <svg className="w-8 h-8" viewBox="0 0 24 24">
                       <defs>
@@ -324,6 +325,7 @@ const PaidMedia = () => {
                     </svg>
                     <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Instagram Ads</span>
                   </div>
+                  {/* TikTok */}
                   <div className="flex-shrink-0 flex items-center gap-2">
                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
                       <rect width="24" height="24" rx="6" fill="#010101"/>
@@ -332,9 +334,12 @@ const PaidMedia = () => {
                     </svg>
                     <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">TikTok Ads</span>
                   </div>
+                  {/* Bing / Microsoft Ads */}
                   <div className="flex-shrink-0 flex items-center gap-2">
                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
-                      <path d="M4 2l4.5 1.6v14.8l6-3.5-4-1.8L8.5 7.5 18 11v5.5L10.5 21 4 17.5V2z" fill="#008373"/>
+                      <path d="M4 0v17.5l4.5 2.5 7.5-4.5v-4L8.5 8V0H4z" fill="#00897B"/>
+                      <path d="M8.5 8l7.5 3.5v4l-7.5 4.5L4 17.5" fill="#00ACC1"/>
+                      <path d="M4 0l4.5 3v5L4 5.5V0z" fill="#004D40"/>
                     </svg>
                     <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Bing Ads</span>
                   </div>
