@@ -7,6 +7,8 @@ import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { baseContactCTA } from "@/config/contactCTA";
+import { useUtm } from "@/hooks/use-utm";
+import { CTA_URLS } from "@/lib/utm";
 import {
   ArrowRight,
   Target,
@@ -67,7 +69,8 @@ const faqs: FAQItem[] = [
 ];
 
 const FacebookAds = () => {
-  return (
+  const { buildUrl, pageMedium } = useUtm();
+  const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
     <div className="min-h-screen bg-background">
       <Head>
         <title>Facebook Ads Management for Local Businesses — GrowSmallBiz</title>
@@ -114,10 +117,10 @@ const FacebookAds = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.25s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Get My Free Facebook Ads Strategy Session
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="#how-it-works">
@@ -389,10 +392,10 @@ const FacebookAds = () => {
             <div className="text-center">
               <p className="text-sm text-muted-foreground mb-4">No contracts. No pressure. Just strategy.</p>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Book My Free Strategy Session
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
@@ -428,10 +431,10 @@ const FacebookAds = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Get My Free Facebook Ads Strategy Session
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="tel:+19258863724">
@@ -444,7 +447,7 @@ const FacebookAds = () => {
         </div>
       </section>
 
-      <ConsultationFormSection />
+      <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
       <Footer />
     </div>
   );
