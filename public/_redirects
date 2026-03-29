@@ -7,8 +7,9 @@
 /managed-ai-seo             /local-seo-services          301
 
 # Old paid-ads redirects
-/services/paid-ads    /paid-advertising-services  301
-/paid-ads             /paid-advertising-services  301
+/services/paid-ads    /services/paid-advertising-services  301
+/paid-ads             /services/paid-advertising-services  301
+/paid-advertising-services  /services/paid-advertising-services  301
 
 # Old combined HVAC case study redirect
 /case-studies/hvac-plumbing-electrical  /case-studies/local-seo-service/hvac-plumbing-electrical  301

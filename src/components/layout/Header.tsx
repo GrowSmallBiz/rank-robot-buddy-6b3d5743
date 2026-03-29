@@ -9,15 +9,16 @@ export const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isCaseStudiesOpen, setIsCaseStudiesOpen] = useState(false);
   const [isSeoSubOpen, setIsSeoSubOpen] = useState(false);
+  const [isAdsSubOpen, setIsAdsSubOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileCaseStudiesOpen, setMobileCaseStudiesOpen] = useState(false);
   const [mobileSeoSubOpen, setMobileSeoSubOpen] = useState(false);
+  const [mobileAdsSubOpen, setMobileAdsSubOpen] = useState(false);
   
   const location = useLocation();
 
   const isServiceActive = 
     location.pathname.startsWith("/services") ||
-    location.pathname === "/paid-advertising-services" ||
     location.pathname === "/website-design" ||
     location.pathname === "/local-seo-services";
 
@@ -127,13 +128,37 @@ export const Header = () => {
                   </div>
                 </div>
 
-                {/* Paid Media & Advertising */}
-                <Link
-                  to="/paid-advertising-services"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                {/* Paid Advertising - Flyout Right */}
+                <div
+                  className="relative group/ads"
+                  onMouseEnter={() => setIsAdsSubOpen(true)}
+                  onMouseLeave={() => setIsAdsSubOpen(false)}
                 >
-                  Paid Media & Advertising
-                </Link>
+                  <button
+                    className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  >
+                    Paid Advertising
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${
+                      isAdsSubOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
+                    }`}
+                  >
+                    <Link to="/services/paid-advertising-services" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                      Paid Advertising Overview
+                    </Link>
+                    <Link to="/services/google-ads-for-local-businesses" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Google PPC Ads
+                    </Link>
+                    <Link to="/services/google-local-services-ads-management" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Google Local Service Ads
+                    </Link>
+                    <Link to="/services/facebook-ads-management-services" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Meta & Facebook Ads
+                    </Link>
+                  </div>
+                </div>
 
                 {/* Marketing Automation */}
                 <Link
@@ -325,14 +350,30 @@ export const Header = () => {
                   </div>
                 </div>
 
-                {/* Paid Media & Advertising */}
-                <Link
-                  to="/paid-advertising-services"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
-                >
-                  Paid Media & Advertising
-                </Link>
+                {/* Paid Advertising - Collapsible */}
+                <div>
+                  <button
+                    onClick={() => setMobileAdsSubOpen(!mobileAdsSubOpen)}
+                    className="flex items-center justify-between w-full py-2 text-muted-foreground hover:text-primary"
+                  >
+                    Paid Advertising
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${mobileAdsSubOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  <div className={`overflow-hidden transition-all duration-200 ${mobileAdsSubOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+                    <Link to="/services/paid-advertising-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
+                      Paid Advertising Overview
+                    </Link>
+                    <Link to="/services/google-ads-for-local-businesses" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                      Google PPC Ads
+                    </Link>
+                    <Link to="/services/google-local-services-ads-management" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                      Google Local Service Ads
+                    </Link>
+                    <Link to="/services/facebook-ads-management-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                      Meta & Facebook Ads
+                    </Link>
+                  </div>
+                </div>
 
                 {/* Marketing Automation */}
                 <Link
