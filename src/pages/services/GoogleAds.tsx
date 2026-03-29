@@ -7,6 +7,8 @@ import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { baseContactCTA } from "@/config/contactCTA";
+import { useUtm } from "@/hooks/use-utm";
+import { CTA_URLS } from "@/lib/utm";
 import {
   ArrowRight,
   Target,
@@ -66,6 +68,8 @@ const faqs: FAQItem[] = [
 ];
 
 const GoogleAds = () => {
+  const { buildUrl, pageMedium } = useUtm();
+  const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -113,10 +117,10 @@ const GoogleAds = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.25s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Get Your Free Ad Strategy Session
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="#how-it-works">
@@ -385,7 +389,7 @@ const GoogleAds = () => {
         title="Ready to Turn Google Searches Into Paying Customers?"
         description="Every day you are not running optimized Google Ads, your competitors are collecting the leads you should be getting. Let us change that. Book your free Google Ads strategy session with GrowSmallBiz. We will audit your current situation, identify your biggest opportunities, and show you exactly what a local PPC campaign would look like for your business — at no cost and no obligation."
         buttonText="Book My Free Strategy Session"
-        buttonHref="/contact"
+        buttonHref={strategyUrl}
         sectionClassName="py-24"
       />
 
@@ -416,10 +420,10 @@ const GoogleAds = () => {
             <p className="text-sm text-muted-foreground">No contracts. No fluff. Just leads.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Get Started Today
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="tel:+19258863724">
@@ -432,7 +436,7 @@ const GoogleAds = () => {
         </div>
       </section>
 
-      <ConsultationFormSection />
+      <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
       <Footer />
     </div>
   );

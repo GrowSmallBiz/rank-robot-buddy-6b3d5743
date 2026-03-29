@@ -7,6 +7,8 @@ import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { baseContactCTA } from "@/config/contactCTA";
+import { useUtm } from "@/hooks/use-utm";
+import { CTA_URLS } from "@/lib/utm";
 import {
   ArrowRight,
   Target,
@@ -68,6 +70,8 @@ const faqs: FAQItem[] = [
 ];
 
 const LSA = () => {
+  const { buildUrl, pageMedium } = useUtm();
+  const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -118,10 +122,10 @@ const LSA = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Get Your Free LSA Strategy Call
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="#how-lsa-works">
@@ -376,10 +380,10 @@ const LSA = () => {
             </div>
             <div className="text-center">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Book My Free LSA Strategy Call
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
@@ -439,10 +443,10 @@ const LSA = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Get My Free Strategy Call
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="tel:+19258863724">
@@ -455,7 +459,7 @@ const LSA = () => {
         </div>
       </section>
 
-      <ConsultationFormSection />
+      <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
       <Footer />
     </div>
   );

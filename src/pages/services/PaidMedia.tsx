@@ -7,6 +7,8 @@ import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { baseContactCTA } from "@/config/contactCTA";
+import { useUtm } from "@/hooks/use-utm";
+import { CTA_URLS } from "@/lib/utm";
 import {
   ArrowRight,
   Target,
@@ -158,6 +160,8 @@ const failureReasons = [
 ];
 
 const PaidMedia = () => {
+  const { buildUrl, pageMedium } = useUtm();
+  const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -202,10 +206,10 @@ const PaidMedia = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Schedule Strategy Session
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="tel:+19258863724">
@@ -681,12 +685,12 @@ const PaidMedia = () => {
         title="Ready to Run Ads That Actually Generate Leads?"
         description="Stop guessing. Stop wasting budget. Start building a paid advertising system that turns visibility into qualified leads, better follow-up, and clearer ROI."
         buttonText="Schedule Strategy Session"
-        buttonHref="/contact"
+        buttonHref={strategyUrl}
         sectionClassName="py-24"
       />
 
       {/* CONSULTATION FORM */}
-      <ConsultationFormSection />
+      <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
 
       <Footer />
     </div>

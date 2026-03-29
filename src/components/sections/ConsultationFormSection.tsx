@@ -1,8 +1,26 @@
+import { useMemo } from "react";
+import { buildCtaUrl } from "@/lib/utm";
+
 interface ConsultationFormSectionProps {
   iframeHeight?: string;
+  /** Optional UTM campaign label for this form */
+  utmCampaign?: string;
+  /** Optional UTM medium override */
+  utmMedium?: string;
 }
 
-export const ConsultationFormSection = ({ iframeHeight = "1006px" }: ConsultationFormSectionProps) => {
+const BASE_FORM_URL = "https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV";
+
+export const ConsultationFormSection = ({
+  iframeHeight = "1006px",
+  utmCampaign = "consultation-form",
+  utmMedium,
+}: ConsultationFormSectionProps) => {
+  const iframeSrc = useMemo(
+    () => buildCtaUrl(BASE_FORM_URL, utmCampaign, utmMedium),
+    [utmCampaign, utmMedium]
+  );
+
   return (
     <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
@@ -22,7 +40,7 @@ export const ConsultationFormSection = ({ iframeHeight = "1006px" }: Consultatio
             </div>
 
             <iframe
-              src="https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV"
+              src={iframeSrc}
               style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: "0px" }}
               id="inline-8qUn6xE0v2Jwcs63q0uV"
               loading="lazy"
