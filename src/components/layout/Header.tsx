@@ -9,9 +9,11 @@ export const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isCaseStudiesOpen, setIsCaseStudiesOpen] = useState(false);
   const [isSeoSubOpen, setIsSeoSubOpen] = useState(false);
+  const [isAdsSubOpen, setIsAdsSubOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileCaseStudiesOpen, setMobileCaseStudiesOpen] = useState(false);
   const [mobileSeoSubOpen, setMobileSeoSubOpen] = useState(false);
+  const [mobileAdsSubOpen, setMobileAdsSubOpen] = useState(false);
   
   const location = useLocation();
 
