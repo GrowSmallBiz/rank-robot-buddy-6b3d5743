@@ -351,14 +351,30 @@ export const Header = () => {
                   </div>
                 </div>
 
-                {/* Paid Media & Advertising */}
-                <Link
-                  to="/paid-advertising-services"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
-                >
-                  Paid Media & Advertising
-                </Link>
+                {/* Paid Advertising - Collapsible */}
+                <div>
+                  <button
+                    onClick={() => setMobileAdsSubOpen(!mobileAdsSubOpen)}
+                    className="flex items-center justify-between w-full py-2 text-muted-foreground hover:text-primary"
+                  >
+                    Paid Advertising
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${mobileAdsSubOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  <div className={`overflow-hidden transition-all duration-200 ${mobileAdsSubOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+                    <Link to="/services/paid-advertising-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
+                      Paid Advertising Overview
+                    </Link>
+                    <Link to="/services/google-ads-for-local-businesses" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                      Google PPC Ads
+                    </Link>
+                    <Link to="/services/google-local-services-ads-management" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                      Google Local Service Ads
+                    </Link>
+                    <Link to="/services/facebook-ads-management-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                      Meta & Facebook Ads
+                    </Link>
+                  </div>
+                </div>
 
                 {/* Marketing Automation */}
                 <Link
