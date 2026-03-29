@@ -162,6 +162,7 @@ const failureReasons = [
 const PaidMedia = () => {
   const { buildUrl, pageMedium } = useUtm();
   const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
+  return (
     <div className="min-h-screen bg-background">
       <Head>
         <title>Paid Advertising for Local Service Businesses | GrowSmallBiz</title>

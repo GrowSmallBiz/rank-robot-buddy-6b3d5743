@@ -70,6 +70,7 @@ const faqs: FAQItem[] = [
 const GoogleAds = () => {
   const { buildUrl, pageMedium } = useUtm();
   const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
+  return (
     <div className="min-h-screen bg-background">
       <Head>
         <title>Google Ads for Local Businesses | Local PPC Management | GrowSmallBiz</title>

@@ -72,6 +72,7 @@ const faqs: FAQItem[] = [
 const LSA = () => {
   const { buildUrl, pageMedium } = useUtm();
   const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
+  return (
     <div className="min-h-screen bg-background">
       <Head>
         <title>Google Local Service Ads Management | LSA Agency for Local Businesses | GrowSmallBiz</title>

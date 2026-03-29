@@ -71,6 +71,7 @@ const faqs: FAQItem[] = [
 const FacebookAds = () => {
   const { buildUrl, pageMedium } = useUtm();
   const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
+  return (
     <div className="min-h-screen bg-background">
       <Head>
         <title>Facebook Ads Management for Local Businesses — GrowSmallBiz</title>
