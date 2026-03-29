@@ -136,7 +136,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
           <div className="container mx-auto px-4 text-center">
             <p className="text-muted-foreground text-sm">
               Also see:{" "}
-              <Link to="/case-studies/google-ads-for-local-businesses/hvac-plumbing-electrical" className="text-primary hover:underline font-medium">
+              <Link to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical" className="text-primary hover:underline font-medium">
                 Google PPC Case Studies for HVAC, Plumbing & Electrical →
               </Link>
             </p>
