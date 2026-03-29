@@ -19,7 +19,6 @@ export const Header = () => {
 
   const isServiceActive = 
     location.pathname.startsWith("/services") ||
-    location.pathname === "/paid-advertising-services" ||
     location.pathname === "/website-design" ||
     location.pathname === "/local-seo-services";
 
