@@ -127,13 +127,37 @@ export const Header = () => {
                   </div>
                 </div>
 
-                {/* Paid Media & Advertising */}
-                <Link
-                  to="/paid-advertising-services"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                {/* Paid Advertising - Flyout Right */}
+                <div
+                  className="relative group/ads"
+                  onMouseEnter={() => setIsAdsSubOpen(true)}
+                  onMouseLeave={() => setIsAdsSubOpen(false)}
                 >
-                  Paid Media & Advertising
-                </Link>
+                  <button
+                    className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  >
+                    Paid Advertising
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${
+                      isAdsSubOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
+                    }`}
+                  >
+                    <Link to="/services/paid-advertising-services" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                      Paid Advertising Overview
+                    </Link>
+                    <Link to="/services/google-ads-for-local-businesses" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Google PPC Ads
+                    </Link>
+                    <Link to="/services/google-local-services-ads-management" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Google Local Service Ads
+                    </Link>
+                    <Link to="/services/facebook-ads-management-services" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Meta & Facebook Ads
+                    </Link>
+                  </div>
+                </div>
 
                 {/* Marketing Automation */}
                 <Link
