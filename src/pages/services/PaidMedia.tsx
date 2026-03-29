@@ -274,7 +274,7 @@ const PaidMedia = () => {
       {/* AD PLATFORMS SCROLLING BAR */}
       <section className="py-4 overflow-hidden bg-white">
         <div className="container mx-auto px-4 mb-4">
-          <p className="text-center text-sm font-medium text-muted-foreground tracking-wide uppercase">
+          <p className="text-center text-sm font-bold text-primary tracking-wide uppercase">
             Platforms We Manage
           </p>
         </div>
