@@ -270,6 +270,73 @@ const PaidMedia = () => {
         </div>
       </section>
 
+      {/* AD PLATFORMS SCROLLING BAR */}
+      <section className="py-4 overflow-hidden bg-white">
+        <div className="container mx-auto px-4 mb-4">
+          <p className="text-center text-sm font-medium text-muted-foreground tracking-wide uppercase">
+            Platforms We Manage
+          </p>
+        </div>
+        <div className="relative w-full">
+          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
+          <div className="py-4">
+            <div className="flex animate-marquee gap-16 items-center">
+              {[...Array(2)].flatMap((_, dupeIdx) => [
+                { name: "Google Ads", logo: (
+                  <svg key={`google-${dupeIdx}`} className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 11.5v4.5h6.47c-.27 1.4-1.06 2.58-2.25 3.38l3.63 2.82c2.12-1.96 3.35-4.84 3.35-8.26 0-.8-.07-1.56-.21-2.3H12v-.14z" fill="#4285F4"/>
+                    <path d="M5.27 14.27l-.82.63-2.9 2.26C3.73 20.65 7.6 23 12 23c3.24 0 5.95-1.07 7.85-2.9l-3.63-2.82c-1.05.7-2.4 1.12-4.22 1.12-3.24 0-5.98-2.19-6.96-5.13h-.77z" fill="#34A853"/>
+                    <path d="M1.55 6.84C.56 8.79 0 10.83 0 13s.56 4.21 1.55 6.16l3.72-2.89A7.96 7.96 0 014.64 13c0-.84.16-1.64.43-2.39L1.55 6.84z" fill="#FBBC05"/>
+                    <path d="M12 4.84c1.83 0 3.47.63 4.76 1.86L20.27 3.2C18.1 1.22 15.24 0 12 0 7.6 0 3.73 2.35 1.55 5.84l3.72 2.89C6.25 5.69 8.76 4.84 12 4.84z" fill="#EA4335"/>
+                  </svg>
+                )},
+                { name: "Google LSA", logo: (
+                  <svg key={`lsa-${dupeIdx}`} className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11" stroke="#34A853" strokeWidth="2" fill="none"/>
+                    <path d="M12 6a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z" fill="#34A853"/>
+                    <circle cx="12" cy="10" r="1.5" fill="white"/>
+                  </svg>
+                )},
+                { name: "Facebook Ads", logo: (
+                  <svg key={`fb-${dupeIdx}`} className="w-8 h-8" viewBox="0 0 24 24" fill="#1877F2">
+                    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.017 1.793-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                  </svg>
+                )},
+                { name: "Instagram Ads", logo: (
+                  <svg key={`ig-${dupeIdx}`} className="w-8 h-8" viewBox="0 0 24 24">
+                    <defs>
+                      <radialGradient id={`ig-grad-${dupeIdx}`} cx="30%" cy="107%" r="150%">
+                        <stop offset="0%" stopColor="#fdf497"/>
+                        <stop offset="5%" stopColor="#fdf497"/>
+                        <stop offset="45%" stopColor="#fd5949"/>
+                        <stop offset="60%" stopColor="#d6249f"/>
+                        <stop offset="90%" stopColor="#285AEB"/>
+                      </radialGradient>
+                    </defs>
+                    <rect width="24" height="24" rx="6" fill={`url(#ig-grad-${dupeIdx})`}/>
+                    <circle cx="12" cy="12" r="4.5" stroke="white" strokeWidth="1.5" fill="none"/>
+                    <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+                  </svg>
+                )},
+                { name: "TikTok Ads", logo: (
+                  <svg key={`tt-${dupeIdx}`} className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                    <rect width="24" height="24" rx="6" fill="#010101"/>
+                    <path d="M16.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S5.5 11 5.5 8.5 7.5 4 10 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S2.5 16 2.5 13 5 7.5 8 7.5" fill="#25F4EE"/>
+                    <path d="M17.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S6.5 11 6.5 8.5 8.5 4 11 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S3.5 16 3.5 13 6 7.5 9 7.5" fill="#FE2C55"/>
+                  </svg>
+                )},
+                { name: "Bing Ads", logo: (
+                  <svg key={`bing-${dupeIdx}`} className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 2l4.5 1.6v14.8l6-3.5-4-1.8L8.5 7.5 18 11v5.5L10.5 21 4 17.5V2z" fill="#008373"/>
+                  </svg>
+                )},
+              ])}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 2 — THE REAL PROBLEM */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
