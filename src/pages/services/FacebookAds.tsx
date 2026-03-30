@@ -76,16 +76,16 @@ const FacebookAds = () => {
       <Head>
         <title>Facebook Ads Management for Local Businesses — GrowSmallBiz</title>
         <meta name="description" content="Stop wasting ad spend on clicks that never convert. GrowSmallBiz manages your Facebook & Instagram Ads with precision targeting, conversion-focused creative, and full-funnel tracking — so every dollar drives real leads for your local business." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising-services/facebook-ads/" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/facebook-ads/" />
       </Head>
       <ServiceJsonLd
         serviceName="Facebook Ads Management"
         serviceType="Facebook Ads Management"
         description="Facebook & Instagram Ads management for local service businesses. Precision targeting, conversion-focused creative, full-funnel tracking, and retargeting."
-        url="/services/paid-advertising-services/facebook-ads"
+        url="/services/paid-advertising/facebook-ads"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Facebook Ads Management", url: "/services/paid-advertising-services/facebook-ads" },
+          { name: "Facebook Ads Management", url: "/services/paid-advertising/facebook-ads" },
         ]}
       />
       <Header />
