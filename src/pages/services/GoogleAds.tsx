@@ -75,16 +75,16 @@ const GoogleAds = () => {
       <Head>
         <title>Google Ads for Local Businesses | Local PPC Management | GrowSmallBiz</title>
         <meta name="description" content="Stop paying for clicks that go nowhere. GrowSmallBiz builds and manages Google Ads campaigns for local service businesses — so every dollar you spend works harder to fill your calendar, your phone line, and your revenue goals." />
-        <link rel="canonical" href="https://growsmallbiz.io/google-ads-for-small-businesses/" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/google-ads/" />
       </Head>
       <ServiceJsonLd
         serviceName="Google Ads for Local Businesses"
         serviceType="Google Ads Management"
         description="Google Ads campaigns built and managed specifically for local service businesses. High-intent keyword targeting, conversion tracking, and ongoing optimization."
-        url="/google-ads-for-small-businesses"
+        url="/services/paid-advertising/google-ads"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Google Ads for Local Businesses", url: "/google-ads-for-small-businesses" },
+          { name: "Google Ads for Local Businesses", url: "/services/paid-advertising/google-ads" },
         ]}
       />
       <Header />
