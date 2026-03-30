@@ -32,7 +32,7 @@ export const routes: RouteRecord[] = [
       { path: "services/google-ads-for-small-businesses", lazy: lazy(() => import("./pages/services/GoogleAds")) },
       { path: "services/google-local-services-ads-management", lazy: lazy(() => import("./pages/services/LSA")) },
       { path: "services/facebook-ads-management-services", lazy: lazy(() => import("./pages/services/FacebookAds")) },
-      { path: "services/website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
+      { path: "services/small-business-website-design-services", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
       { path: "local-seo-services", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
       { path: "local-seo-services/aeo", lazy: lazy(() => import("./pages/services/AEO")) },
       { path: "local-seo-services/geo", lazy: lazy(() => import("./pages/services/GEO")) },
@@ -60,6 +60,7 @@ export const routes: RouteRecord[] = [
       { path: "services/marketing-automation-for-small-business/webchat", lazy: lazy(() => import("./pages/demos/Webchat")) },
       { path: "services/marketing-automation-for-small-business/generate-leads", lazy: lazy(() => import("./pages/demos/GenerateLeads")) },
       { path: "website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
+      { path: "services/website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
       { path: "local-seo-services", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
       
       
