@@ -173,18 +173,18 @@ const GEO = () => {
       <Head>
         <title>Managed GEO Services for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps local service businesses become easier for AI systems to identify, understand, and surface — through managed GEO built for the new reality of search." />
-        <link rel="canonical" href="https://growsmallbiz.io/local-seo-services/geo/" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/local-seo-services/geo/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Managed GEO Services"
         serviceType="Generative Engine Optimization"
         description="Managed GEO services for local service businesses. Become easier for AI systems to identify, understand, and surface through managed GEO built for the new reality of search."
-        url="/local-seo-services/geo"
+        url="/services/local-seo-services/geo"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/local-seo-services" },
-          { name: "GEO", url: "/local-seo-services/geo" },
+          { name: "Managed AI SEO", url: "/services/local-seo-services" },
+          { name: "GEO", url: "/services/local-seo-services/geo" },
         ]}
       />
 
@@ -474,7 +474,7 @@ const GEO = () => {
             </p>
 
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
-              <Link to="/local-seo-services" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+              <Link to="/services/local-seo-services" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
               </Link>
             </div>
