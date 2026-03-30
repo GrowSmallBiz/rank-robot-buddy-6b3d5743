@@ -264,17 +264,17 @@ const WebsiteDesign = () => {
           name="description"
           content="GrowSmallBiz builds conversion-focused websites for local service businesses — designed to turn visitors into calls, bookings, and leads. Schedule a free strategy call."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/services/website-design/" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/small-business-website-design-services/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Website Design for Local Service Businesses"
         serviceType="Website Design"
         description="Conversion-focused website design for local service businesses — built to turn visitors into calls, bookings, and leads."
-        url="/services/website-design"
+        url="/services/small-business-website-design-services"
         breadcrumbs={[
           { name: "Services", url: "/local-seo-services" },
-          { name: "Website Design", url: "/services/website-design" },
+          { name: "Website Design", url: "/services/small-business-website-design-services" },
         ]}
       />
 

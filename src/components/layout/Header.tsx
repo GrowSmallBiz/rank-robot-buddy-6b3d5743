@@ -78,7 +78,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/services/website-design"
+                  to="/services/small-business-website-design-services"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Website That Converts
@@ -306,7 +306,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/services/website-design"
+                  to="/services/small-business-website-design-services"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
