@@ -164,18 +164,18 @@ const AuthorityBuilding = () => {
       <Head>
         <title>Authority Building for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz builds search authority for local service businesses through DKN planning, topical maps, authority blogs, press releases, brand mentions, and digital trust signals." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/local-seo-services/authority-building/" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/authority-building/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Authority Building for Local Service Businesses"
         serviceType="Authority Building SEO"
         description="Systematic authority building for local service businesses through DKN-driven planning, topical maps, authority blogs, press releases, brand mentions, and digital trust signals."
-        url="/services/local-seo-services/authority-building"
+        url="/services/seo-agency/authority-building"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/local-seo-services" },
-          { name: "Authority Building", url: "/services/local-seo-services/authority-building" },
+          { name: "Managed AI SEO", url: "/services/seo-agency" },
+          { name: "Authority Building", url: "/services/seo-agency/authority-building" },
         ]}
       />
 
@@ -538,7 +538,7 @@ const AuthorityBuilding = () => {
 
             {/* Internal link back to parent */}
             <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.35s" }}>
-              <Link to="/services/local-seo-services" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+              <Link to="/services/seo-agency" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                 ← Back to Managed AI SEO Overview
               </Link>
             </div>
