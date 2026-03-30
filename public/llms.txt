@@ -32,7 +32,7 @@ Canonical: https://growsmallbiz.io/
 - Webchat: https://growsmallbiz.io/services/marketing-automation-for-small-business/webchat/
 - Website Builder: https://growsmallbiz.io/services/marketing-automation-for-small-business/website-builder/
 - Workflow Automations: https://growsmallbiz.io/services/marketing-automation-for-small-business/workflow-automations/
-- Paid Advertising Services: https://growsmallbiz.io/services/paid-advertising-services/
+- Paid Advertising: https://growsmallbiz.io/services/paid-advertising/
 - Facebook Ads: https://growsmallbiz.io/services/paid-advertising/facebook-ads/
 - Google Ads: https://growsmallbiz.io/services/paid-advertising/google-ads/
 - Google Local Services Ads: https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/
