@@ -14,16 +14,37 @@ Canonical: https://growsmallbiz.io/
 - Contact: https://growsmallbiz.io/contact/
 
 ## Services
-- AEO: https://growsmallbiz.io/local-seo-services/aeo/
-- Authority Building: https://growsmallbiz.io/local-seo-services/authority-building/
-- GEO: https://growsmallbiz.io/local-seo-services/geo/
-- Link Building: https://growsmallbiz.io/local-seo-services/link-building/
-- Local SEO: https://growsmallbiz.io/local-seo-services/local-seo/
-- On Page SEO: https://growsmallbiz.io/local-seo-services/on-page-seo/
-- Technical SEO: https://growsmallbiz.io/local-seo-services/technical-seo/
-- Paid Advertising Services: https://growsmallbiz.io/paid-advertising-services/
 - Services: https://growsmallbiz.io/services/
-- Website Design: https://growsmallbiz.io/services/website-design/
+- Facebook Ads Management Services: https://growsmallbiz.io/services/facebook-ads-management-services/
+- Google Ads For Small Businesses: https://growsmallbiz.io/services/google-ads-for-small-businesses/
+- Google Local Services Ads Management: https://growsmallbiz.io/services/google-local-services-ads-management/
+- Marketing Automation For Small Business: https://growsmallbiz.io/services/marketing-automation-for-small-business/
+- Calendar Scheduling: https://growsmallbiz.io/services/marketing-automation-for-small-business/calendar-scheduling/
+- Call Tracking: https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking/
+- Crm: https://growsmallbiz.io/services/marketing-automation-for-small-business/crm/
+- Email Sms Marketing: https://growsmallbiz.io/services/marketing-automation-for-small-business/email-sms-marketing/
+- Forms Surveys: https://growsmallbiz.io/services/marketing-automation-for-small-business/forms-surveys/
+- Generate Leads: https://growsmallbiz.io/services/marketing-automation-for-small-business/generate-leads/
+- Integrated Payments: https://growsmallbiz.io/services/marketing-automation-for-small-business/integrated-payments/
+- Memberships: https://growsmallbiz.io/services/marketing-automation-for-small-business/memberships/
+- Reviews: https://growsmallbiz.io/services/marketing-automation-for-small-business/reviews/
+- Sales Funnels: https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-funnels/
+- Sales Tracker: https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-tracker/
+- Social Media Planner: https://growsmallbiz.io/services/marketing-automation-for-small-business/social-media-planner/
+- Universal Inbox: https://growsmallbiz.io/services/marketing-automation-for-small-business/universal-inbox/
+- Webchat: https://growsmallbiz.io/services/marketing-automation-for-small-business/webchat/
+- Website Builder: https://growsmallbiz.io/services/marketing-automation-for-small-business/website-builder/
+- Workflow Automations: https://growsmallbiz.io/services/marketing-automation-for-small-business/workflow-automations/
+- Paid Advertising Services: https://growsmallbiz.io/services/paid-advertising-services/
+- SEO Agency: https://growsmallbiz.io/services/seo-agency/
+- AEO: https://growsmallbiz.io/services/seo-agency/aeo/
+- Authority Building: https://growsmallbiz.io/services/seo-agency/authority-building/
+- GEO: https://growsmallbiz.io/services/seo-agency/geo/
+- Link Building: https://growsmallbiz.io/services/seo-agency/link-building/
+- Local SEO: https://growsmallbiz.io/services/seo-agency/local-seo/
+- On Page SEO: https://growsmallbiz.io/services/seo-agency/on-page-seo/
+- Technical SEO: https://growsmallbiz.io/services/seo-agency/technical-seo/
+- Small Business Website Design Services: https://growsmallbiz.io/services/small-business-website-design-services/
 
 ## Case Studies
 - Cleaning Services: https://growsmallbiz.io/case-studies/cleaning-services/

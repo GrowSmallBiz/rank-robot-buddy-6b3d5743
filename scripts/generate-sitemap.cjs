@@ -31,15 +31,15 @@ function getPriority(route) {
   if (route === '/') return '1.0';
   if (route === '/services') return '0.9';
   if (['/about', '/contact'].includes(route)) return '0.8';
-  if (route.startsWith('/services/') && !route.includes('/local-seo-services/')) return '0.8';
-  if (route === '/services/local-seo-services') return '0.8';
-  if (route.startsWith('/services/local-seo-services/')) return '0.7';
+  if (route.startsWith('/services/') && !route.includes('/seo-agency/')) return '0.8';
+  if (route === '/services/seo-agency') return '0.8';
+  if (route.startsWith('/services/seo-agency/')) return '0.7';
   if (['/privacy-policy', '/terms-of-service'].includes(route)) return '0.4';
   return '0.6';
 }
 
 // Filter out shortcut/alias routes (top-level duplicates of nested service pages)
-const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/services/website-design', '/local-seo-services', '/local-seo-services/aeo', '/local-seo-services/geo', '/local-seo-services/local-seo', '/local-seo-services/authority-building', '/local-seo-services/link-building', '/local-seo-services/technical-seo', '/local-seo-services/on-page-seo'];
+const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/services/website-design', '/seo-agency', '/seo-agency/aeo', '/seo-agency/geo', '/seo-agency/local-seo', '/seo-agency/authority-building', '/seo-agency/link-building', '/seo-agency/technical-seo', '/seo-agency/on-page-seo'];
 const filteredRoutes = uniqueRoutes.filter(r => !serviceAliases.includes(r));
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
