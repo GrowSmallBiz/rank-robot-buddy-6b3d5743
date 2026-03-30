@@ -19,8 +19,7 @@ export const Header = () => {
 
   const isServiceActive = 
     location.pathname.startsWith("/services") ||
-    location.pathname === "/website-design" ||
-    location.pathname === "/services/local-seo-services";
+    location.pathname === "/website-design";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
