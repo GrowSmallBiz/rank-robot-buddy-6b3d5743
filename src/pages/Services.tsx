@@ -54,7 +54,7 @@ const coreServices = [
       "Ongoing technical and on-page optimization across your full site",
       "Content and authority strategy built for both traditional and AI-powered search",
     ],
-    href: "/local-seo-services",
+    href: "/services/local-seo-services",
     icon: Search,
   },
   {

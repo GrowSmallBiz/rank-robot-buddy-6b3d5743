@@ -28,7 +28,7 @@ while ((match = pathRegex.exec(appFile)) !== null) {
 const uniqueRoutes = [...new Set(['/', ...routes])];
 
 // Filter out shortcut aliases
-const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/local-seo-services'];
+const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/services/website-design', '/local-seo-services', '/local-seo-services/aeo', '/local-seo-services/geo', '/local-seo-services/local-seo', '/local-seo-services/authority-building', '/local-seo-services/link-building', '/local-seo-services/technical-seo', '/local-seo-services/on-page-seo'];
 const filteredRoutes = uniqueRoutes.filter(r => !serviceAliases.includes(r));
 
 // Categorize routes
@@ -36,7 +36,7 @@ const primaryPages = filteredRoutes.filter(r =>
   ['/', '/about', '/contact'].includes(r)
 );
 const servicePages = filteredRoutes.filter(r =>
-  r.startsWith('/services') || r.startsWith('/local-seo-services/') || r === '/paid-advertising-services'
+  r.startsWith('/services') || r === '/paid-advertising-services'
 );
 const caseStudyPages = filteredRoutes.filter(r =>
   r.startsWith('/case-studies/')

@@ -33,13 +33,13 @@ function getPriority(route) {
   if (['/about', '/contact'].includes(route)) return '0.8';
   if (route.startsWith('/services/') && !route.includes('/local-seo-services/')) return '0.8';
   if (route === '/services/local-seo-services') return '0.8';
-  if (route.startsWith('/local-seo-services/')) return '0.7';
+  if (route.startsWith('/services/local-seo-services/')) return '0.7';
   if (['/privacy-policy', '/terms-of-service'].includes(route)) return '0.4';
   return '0.6';
 }
 
 // Filter out shortcut/alias routes (top-level duplicates of nested service pages)
-const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/local-seo-services'];
+const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/services/website-design', '/local-seo-services', '/local-seo-services/aeo', '/local-seo-services/geo', '/local-seo-services/local-seo', '/local-seo-services/authority-building', '/local-seo-services/link-building', '/local-seo-services/technical-seo', '/local-seo-services/on-page-seo'];
 const filteredRoutes = uniqueRoutes.filter(r => !serviceAliases.includes(r));
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;

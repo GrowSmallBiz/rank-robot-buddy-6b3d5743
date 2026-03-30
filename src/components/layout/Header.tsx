@@ -19,8 +19,7 @@ export const Header = () => {
 
   const isServiceActive = 
     location.pathname.startsWith("/services") ||
-    location.pathname === "/website-design" ||
-    location.pathname === "/local-seo-services";
+    location.pathname === "/website-design";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
@@ -101,28 +100,28 @@ export const Header = () => {
                       isSeoSubOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
                     }`}
                   >
-                    <Link to="/local-seo-services" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                    <Link to="/services/local-seo-services" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
                       Overview
                     </Link>
-                    <Link to="/local-seo-services/aeo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/local-seo-services/aeo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Answer Engine Optimization (AEO)
                     </Link>
-                    <Link to="/local-seo-services/geo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/local-seo-services/geo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Generative Engine Optimization (GEO)
                     </Link>
-                    <Link to="/local-seo-services/local-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/local-seo-services/local-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Local SEO
                     </Link>
-                    <Link to="/local-seo-services/authority-building" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/local-seo-services/authority-building" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Authority Building
                     </Link>
-                    <Link to="/local-seo-services/link-building" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/local-seo-services/link-building" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Link Building
                     </Link>
-                    <Link to="/local-seo-services/technical-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/local-seo-services/technical-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Technical SEO
                     </Link>
-                    <Link to="/local-seo-services/on-page-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/local-seo-services/on-page-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       On-Page SEO
                     </Link>
                   </div>
@@ -323,28 +322,28 @@ export const Header = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${mobileSeoSubOpen ? "rotate-180" : ""}`} />
                   </button>
                   <div className={`overflow-hidden transition-all duration-200 ${mobileSeoSubOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
-                    <Link to="/local-seo-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
+                    <Link to="/services/local-seo-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
                       Overview
                     </Link>
-                    <Link to="/local-seo-services/aeo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/local-seo-services/aeo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Answer Engine Optimization (AEO)
                     </Link>
-                    <Link to="/local-seo-services/geo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/local-seo-services/geo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Generative Engine Optimization (GEO)
                     </Link>
-                    <Link to="/local-seo-services/local-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/local-seo-services/local-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Local SEO
                     </Link>
-                    <Link to="/local-seo-services/authority-building" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/local-seo-services/authority-building" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Authority Building
                     </Link>
-                    <Link to="/local-seo-services/link-building" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/local-seo-services/link-building" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Link Building
                     </Link>
-                    <Link to="/local-seo-services/technical-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/local-seo-services/technical-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Technical SEO
                     </Link>
-                    <Link to="/local-seo-services/on-page-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/local-seo-services/on-page-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       On-Page SEO
                     </Link>
                   </div>
