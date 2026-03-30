@@ -93,7 +93,7 @@ const adChannelsPrimary = [
   {
     title: "Google PPC Ads Management",
     description: "Capture high-intent demand when people are actively searching for your service.",
-    href: "/services/paid-advertising/google-ads",
+    href: "/services/paid-advertising-services/google-ads",
     brandLogo: (
       <svg viewBox="0 0 24 24" className="w-7 h-7" fill="none">
         <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/>
@@ -107,7 +107,7 @@ const adChannelsPrimary = [
   {
     title: "Google Local Service Ads Management",
     description: "Show up in Google's high-visibility local placement with setup, verification, budget guidance, and ongoing optimization.",
-    href: "/services/paid-advertising/google-local-services-ads",
+    href: "/services/paid-advertising-services/google-local-services-ads",
     brandLogo: (
       <svg viewBox="0 0 24 24" className="w-7 h-7" fill="none">
         <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#34A853" opacity="0.2"/>
@@ -119,7 +119,7 @@ const adChannelsPrimary = [
   {
     title: "Facebook & Instagram Ads Management",
     description: "Reach local audiences across Facebook and Instagram for awareness, lead generation, and remarketing.",
-    href: "/services/paid-advertising/facebook-ads",
+    href: "/services/paid-advertising-services/facebook-ads",
     brandLogo: (
       <svg viewBox="0 0 24 24" className="w-7 h-7" fill="none">
         <path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.875V12h3.328l-.532 3.47h-2.796v8.385C19.612 22.954 24 17.99 24 12z" fill="#1877F2"/>

@@ -77,16 +77,16 @@ const LSA = () => {
       <Head>
         <title>Google Local Service Ads Management | LSA Agency for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Stop paying for clicks that never convert. GrowSmallBiz manages your Google Local Service Ads so you pay only for real, verified leads. Google Guarantee badge included. Get started today." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising-services/google-local-services-ads/" />
       </Head>
       <ServiceJsonLd
         serviceName="Google Local Service Ads Management"
         serviceType="LSA Management"
         description="Complete Google Local Service Ads management for local businesses. Google Guarantee verification, profile optimization, lead review, dispute management, and performance reporting."
-        url="/services/paid-advertising/google-local-services-ads"
+        url="/services/paid-advertising-services/google-local-services-ads"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Google Local Service Ads Management", url: "/services/paid-advertising/google-local-services-ads" },
+          { name: "Google Local Service Ads Management", url: "/services/paid-advertising-services/google-local-services-ads" },
         ]}
       />
       <Header />
