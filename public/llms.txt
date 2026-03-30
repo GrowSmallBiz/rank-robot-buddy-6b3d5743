@@ -15,9 +15,6 @@ Canonical: https://growsmallbiz.io/
 
 ## Services
 - Services: https://growsmallbiz.io/services/
-- Facebook Ads Management Services: https://growsmallbiz.io/services/facebook-ads-management-services/
-- Google Ads For Small Businesses: https://growsmallbiz.io/services/google-ads-for-small-businesses/
-- Google Local Services Ads Management: https://growsmallbiz.io/services/google-local-services-ads-management/
 - Marketing Automation For Small Business: https://growsmallbiz.io/services/marketing-automation-for-small-business/
 - Calendar Scheduling: https://growsmallbiz.io/services/marketing-automation-for-small-business/calendar-scheduling/
 - Call Tracking: https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking/
@@ -36,6 +33,9 @@ Canonical: https://growsmallbiz.io/
 - Website Builder: https://growsmallbiz.io/services/marketing-automation-for-small-business/website-builder/
 - Workflow Automations: https://growsmallbiz.io/services/marketing-automation-for-small-business/workflow-automations/
 - Paid Advertising Services: https://growsmallbiz.io/services/paid-advertising-services/
+- Facebook Ads: https://growsmallbiz.io/services/paid-advertising/facebook-ads/
+- Google Ads: https://growsmallbiz.io/services/paid-advertising/google-ads/
+- Google Local Services Ads: https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/
 - SEO Agency: https://growsmallbiz.io/services/seo-agency/
 - AEO: https://growsmallbiz.io/services/seo-agency/aeo/
 - Authority Building: https://growsmallbiz.io/services/seo-agency/authority-building/
