@@ -43,7 +43,7 @@ const coreServices = [
       "Mobile-optimized design that works for customers searching on the go",
       "Trust-building structure that positions your business credibly from the first visit",
     ],
-    href: "/services/small-business-website-design-services",
+    href: "/services/website-design",
     icon: Globe,
   },
   {
