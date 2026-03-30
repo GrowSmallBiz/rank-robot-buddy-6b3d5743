@@ -147,13 +147,13 @@ export const Header = () => {
                     <Link to="/services/paid-advertising-services" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
                       Paid Advertising Overview
                     </Link>
-                    <Link to="/services/google-ads-for-small-businesses" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/paid-advertising/google-ads" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Google PPC Ads
                     </Link>
-                    <Link to="/services/google-local-services-ads-management" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/paid-advertising/google-local-services-ads" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Google Local Service Ads
                     </Link>
-                    <Link to="/services/facebook-ads-management-services" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/paid-advertising/facebook-ads" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Meta & Facebook Ads
                     </Link>
                   </div>
@@ -362,13 +362,13 @@ export const Header = () => {
                     <Link to="/services/paid-advertising-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
                       Paid Advertising Overview
                     </Link>
-                    <Link to="/services/google-ads-for-small-businesses" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/paid-advertising/google-ads" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Google PPC Ads
                     </Link>
-                    <Link to="/services/google-local-services-ads-management" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/paid-advertising/google-local-services-ads" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Google Local Service Ads
                     </Link>
-                    <Link to="/services/facebook-ads-management-services" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/paid-advertising/facebook-ads" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Meta & Facebook Ads
                     </Link>
                   </div>
