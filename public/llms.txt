@@ -44,6 +44,7 @@ Canonical: https://growsmallbiz.io/
 - Local SEO: https://growsmallbiz.io/services/seo-agency/local-seo/
 - On Page SEO: https://growsmallbiz.io/services/seo-agency/on-page-seo/
 - Technical SEO: https://growsmallbiz.io/services/seo-agency/technical-seo/
+- Website Design: https://growsmallbiz.io/services/website-design/
 
 ## Case Studies
 - Cleaning Services: https://growsmallbiz.io/case-studies/cleaning-services/

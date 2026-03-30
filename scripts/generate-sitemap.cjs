@@ -39,7 +39,7 @@ function getPriority(route) {
 }
 
 // Filter out shortcut/alias routes (top-level duplicates of nested service pages)
-const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/services/website-design', '/seo-agency', '/seo-agency/aeo', '/seo-agency/geo', '/seo-agency/local-seo', '/seo-agency/authority-building', '/seo-agency/link-building', '/seo-agency/technical-seo', '/seo-agency/on-page-seo'];
+const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/seo-agency', '/seo-agency/aeo', '/seo-agency/geo', '/seo-agency/local-seo', '/seo-agency/authority-building', '/seo-agency/link-building', '/seo-agency/technical-seo', '/seo-agency/on-page-seo'];
 const filteredRoutes = uniqueRoutes.filter(r => !serviceAliases.includes(r));
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
