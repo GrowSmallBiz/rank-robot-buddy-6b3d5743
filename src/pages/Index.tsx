@@ -511,8 +511,6 @@ const Index = () => {
           buttonHref={strategySessionUrl}
         />
 
-        {/* Consultation Form Section */}
-        <ConsultationFormSection />
       </Suspense>
 
       </main>
