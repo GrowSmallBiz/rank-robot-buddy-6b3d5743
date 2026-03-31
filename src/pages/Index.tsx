@@ -11,7 +11,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 const TestimonialsSection = lazy(() => import("@/components/sections/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
 const FAQSection = lazy(() => import("@/components/sections/FAQSection").then(m => ({ default: m.FAQSection })));
 const AnimatedStatsSection = lazy(() => import("@/components/sections/AnimatedStatsSection").then(m => ({ default: m.AnimatedStatsSection })));
-const ConsultationFormSection = lazy(() => import("@/components/sections/ConsultationFormSection").then(m => ({ default: m.ConsultationFormSection })));
+
 const CardCTA = lazy(() => import("@/components/services").then(m => ({ default: m.CardCTA })));
 const WhyChooseSection = lazy(() => import("@/components/sections/WhyChooseSection").then(m => ({ default: m.WhyChooseSection })));
 const HomeCaseStudySection = lazy(() => import("@/components/sections/HomeCaseStudySection").then(m => ({ default: m.HomeCaseStudySection })));
@@ -511,8 +511,6 @@ const Index = () => {
           buttonHref={strategySessionUrl}
         />
 
-        {/* Consultation Form Section */}
-        <ConsultationFormSection />
       </Suspense>
 
       </main>
