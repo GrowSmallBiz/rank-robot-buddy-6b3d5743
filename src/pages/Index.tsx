@@ -515,8 +515,8 @@ const Index = () => {
         <ConsultationFormSection />
       </Suspense>
 
+      </main>
       <Footer />
-    </main>
     </div>
   );
 };
