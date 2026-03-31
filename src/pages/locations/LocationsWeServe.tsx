@@ -27,14 +27,14 @@ import {
 const LocationsWeServe = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Digital Marketing Agency Bay Area — Local Marketing Services by City</title>
         <meta
           name="description"
           content="GrowSmallBiz Digital Marketing serves Bay Area cities including San Francisco, San Jose, Oakland, Fremont, Danville, San Ramon, Walnut Creek, and more. Tailored local marketing strategies for your city."
         />
         <link rel="canonical" href="https://growsmallbiz.io/locations/locations-we-serve" />
-      </Helmet>
+      </Head>
 
       <Header />
 
