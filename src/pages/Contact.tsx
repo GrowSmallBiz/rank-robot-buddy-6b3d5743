@@ -48,7 +48,7 @@ const Contact = () => {
         breadcrumbs={[{ name: "Contact", url: "/contact" }]}
       />
       <Header />
-
+      <main>
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 hero-glow" />
@@ -205,7 +205,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
+      </main>
       <Footer />
     </div>
   );

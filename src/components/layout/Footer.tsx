@@ -5,7 +5,7 @@ import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 
 export const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="bg-card border-t border-border" role="contentinfo">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
@@ -59,9 +59,9 @@ export const Footer = () => {
               <li className="pt-4">
                 <div className="flex gap-4">
                   <a href="#" className="hover:text-primary transition-colors">
-                    LinkedIn
+                   LinkedIn
                   </a>
-                  <a href="#" className="hover:text-primary transition-colors">
+                  <a href="#" className="hover:text-primary transition-colors" aria-label="Follow us on Twitter">
                     Twitter
                   </a>
                 </div>
