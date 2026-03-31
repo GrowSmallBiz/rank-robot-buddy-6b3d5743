@@ -61,7 +61,7 @@ export const Footer = () => {
                   <a href="#" className="hover:text-primary transition-colors">
                    LinkedIn
                   </a>
-                  <a href="#" className="hover:text-primary transition-colors" aria-label="Follow us on Twitter">
+                  <a href="#" className="hover:text-primary transition-colors" aria-label="Twitter">
                     Twitter
                   </a>
                 </div>
