@@ -137,7 +137,7 @@ export const DemoVideoPage = ({
               className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-8 py-4 h-auto"
               asChild
             >
-              <Link to="/services/marketing-automation-for-small-business#ready-to-talk">
+              <Link to="/services/marketing-automation-for-small-business/#ready-to-talk">
                 <Shield className="w-5 h-5 mr-2" />
                 100% SATISFACTION GUARANTEE
               </Link>
@@ -152,7 +152,7 @@ export const DemoVideoPage = ({
         <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <Button variant="hero" size="xl" asChild>
-              <Link to="/services/marketing-automation-for-small-business#ready-to-talk">
+              <Link to="/services/marketing-automation-for-small-business/#ready-to-talk">
                 Schedule a Consultation
               </Link>
             </Button>
@@ -162,7 +162,7 @@ export const DemoVideoPage = ({
         {/* Back to All Demos */}
         <div className="text-center py-8" style={{ backgroundColor: "hsl(var(--background))" }}>
           <Button variant="heroOutline" size="lg" asChild>
-            <Link to="/services/marketing-automation-for-small-business#demo-videos">
+            <Link to="/services/marketing-automation-for-small-business/#demo-videos">
               <ArrowLeft className="w-5 h-5 mr-2" />
               View All Demo Videos
             </Link>

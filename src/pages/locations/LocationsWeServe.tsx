@@ -843,7 +843,7 @@ const LocationsWeServe = () => {
             </p>
 
             <Button variant="hero" size="lg" asChild>
-              <Link to="/contact">
+              <Link to="/contact/">
                 Book Your Free Marketing Assessment
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>

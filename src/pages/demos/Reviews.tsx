@@ -51,7 +51,7 @@ export default function ReviewsDemo() {
                   93% of customers say online reviews had an impact on their buying decisions. With GrowSmallBiz, you'll bring more customers in the door with better and more frequent reviews, just by texting and automating review requests.
                 </p>
                 <Link
-                  to="/services/marketing-automation-for-small-business#ready-to-talk"
+                  to="/services/marketing-automation-for-small-business/#ready-to-talk"
                   className="text-primary font-semibold hover:underline text-lg"
                 >
                   Watch a demo ➡️
@@ -113,7 +113,7 @@ export default function ReviewsDemo() {
                   When people search for businesses on Facebook, they're going to find and choose the one with the best reviews—and with Reviews, that'll be your business.
                 </p>
                 <Link
-                  to="/services/marketing-automation-for-small-business#ready-to-talk"
+                  to="/services/marketing-automation-for-small-business/#ready-to-talk"
                   className="text-primary font-semibold hover:underline text-lg"
                 >
                   Watch a demo ➡️
@@ -135,7 +135,7 @@ export default function ReviewsDemo() {
                   Beyond Google and Facebook, connect all of your key review sites, like Yellow Pages, BBB, Yahoo, Amazon, Apple, DealerRater, and more, so you can keep track of all your customer feedback in one place.
                 </p>
                 <Link
-                  to="/services/marketing-automation-for-small-business#ready-to-talk"
+                  to="/services/marketing-automation-for-small-business/#ready-to-talk"
                   className="text-primary font-semibold hover:underline text-lg"
                 >
                   Watch a demo ➡️

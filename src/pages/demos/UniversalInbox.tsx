@@ -114,7 +114,7 @@ export default function UniversalInboxDemo() {
 
             <div className="text-center">
               <Link
-                to="/services/marketing-automation-for-small-business#ready-to-talk"
+                to="/services/marketing-automation-for-small-business/#ready-to-talk"
                 className="inline-block bg-primary text-primary-foreground font-bold text-lg px-8 py-4 rounded-xl hover:opacity-90 transition-all"
               >
                 Watch A Demo

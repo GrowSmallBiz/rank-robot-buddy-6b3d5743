@@ -281,7 +281,7 @@ const Services = () => {
             </p>
             <div className="flex justify-center pt-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact">
+                <Link to="/contact/">
                   Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
@@ -394,7 +394,7 @@ const Services = () => {
               The system works better when the pieces are connected. Great Managed AI SEO loses its value if leads land on a page that does not convert. A strong website means nothing if there is no follow-up. When each element is built to work with the others, results compound.
             </p>
             <Button variant="hero" size="xl" asChild>
-              <Link to="/contact">
+              <Link to="/contact/">
                 Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
@@ -438,7 +438,7 @@ const Services = () => {
                       {s.cta} <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   ) : (
-                    <Link to="/contact">
+                    <Link to="/contact/">
                       {s.cta} <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   )}
@@ -479,7 +479,7 @@ const Services = () => {
                 <p className="text-sm text-foreground font-semibold mb-5">{pkg.includes}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-8 flex-1">{pkg.body}</p>
                 <Button variant={pkg.popular ? "hero" : "outline"} size="lg" asChild className="w-full">
-                  <Link to="/contact">
+                  <Link to="/contact/">
                     Schedule Strategy Call <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
