@@ -12,7 +12,7 @@ export default function CallTrackingDemo() {
       <Head>
         <title>Call Tracking Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Call Tracking helps you monitor calls, record conversations, and track lead sources." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking/" />
       </Head>
       <Header />
       <main id="main-content" className="pt-20">

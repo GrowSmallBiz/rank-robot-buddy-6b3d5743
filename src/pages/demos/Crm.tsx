@@ -11,7 +11,7 @@ export default function CrmDemo() {
       <Head>
         <title>CRM Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz CRM keeps all your customers and prospects organized in one place." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/crm" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/crm/" />
       </Head>
       <Header />
       <main id="main-content" className="pt-20">

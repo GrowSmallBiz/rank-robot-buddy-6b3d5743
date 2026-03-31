@@ -10,7 +10,7 @@ export default function SocialMediaPlannerDemo() {
       <Head>
         <title>Social Media Automation Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Social Media Planner helps you schedule and manage social content effortlessly." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/social-media-planner" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/social-media-planner/" />
       </Head>
       <Header />
       <main id="main-content" className="pt-20">

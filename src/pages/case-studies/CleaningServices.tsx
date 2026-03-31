@@ -99,7 +99,7 @@ const CleaningServices = () => {
           name="description"
           content="Explore documented local SEO case study results for cleaning service businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/case-studies/cleaning-services" />
+        <link rel="canonical" href="https://growsmallbiz.io/case-studies/cleaning-services/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"

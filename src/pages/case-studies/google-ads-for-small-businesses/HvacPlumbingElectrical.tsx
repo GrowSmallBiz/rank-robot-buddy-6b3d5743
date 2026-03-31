@@ -69,7 +69,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
           name="description"
           content="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses. Real proof from paid search performance, conversions, cost per acquisition, and conversion-focused lead generation strategy."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical" />
+        <link rel="canonical" href="https://growsmallbiz.io/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"

@@ -109,7 +109,7 @@ const HomeRemodeling = () => {
           name="description"
           content="Explore documented Local SEO case study results for home remodeling and home renovation businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, conversions, and conversion-focused lead generation strategy."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/case-studies/home-remodeling" />
+        <link rel="canonical" href="https://growsmallbiz.io/case-studies/home-remodeling/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"

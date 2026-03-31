@@ -10,7 +10,7 @@ export default function MembershipsDemo() {
       <Head>
         <title>Memberships & Courses Demo | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Memberships lets you create courses and membership sites effortlessly." />
-        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/memberships" />
+        <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/memberships/" />
       </Head>
       <Header />
       <main id="main-content" className="pt-20">
