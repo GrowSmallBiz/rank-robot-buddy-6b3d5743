@@ -136,7 +136,7 @@ const TreeLawnLandscaping = () => {
           name="description"
           content="Explore documented case study results for tree care, lawn care, and landscaping businesses across Local SEO and Google PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/case-studies/tree-lawn-landscaping" />
+        <link rel="canonical" href="https://growsmallbiz.io/case-studies/tree-lawn-landscaping/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
