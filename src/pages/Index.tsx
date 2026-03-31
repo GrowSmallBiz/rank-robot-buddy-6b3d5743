@@ -380,7 +380,7 @@ const Index = () => {
       </section>
 
       {/* Core Services Section — 4 System Stages */}
-      <section id="services" className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10">
+      <section id="services" className="py-24 bg-card/80 relative overflow-hidden border-t border-primary/10 cv-auto">
         <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
         
         <div className="container mx-auto px-4 relative z-10">
