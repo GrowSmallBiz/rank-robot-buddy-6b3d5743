@@ -4,7 +4,7 @@ import { ServiceHero } from "@/components/services/ServiceHero";
 import { StickyCardCTA } from "@/components/services/StickyCardCTA";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import {
   MapPin,
   Building2,
