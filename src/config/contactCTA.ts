@@ -11,7 +11,7 @@ export const baseContactCTA = {
   name: "Subrata Guha",
   role: "Founder, GrowSmallBiz",
   buttonText: "Book A Meeting",
-  buttonHref: "/contact",
+  buttonHref: "/contact/",
   image: subrataHeadshot,
 };
 

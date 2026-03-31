@@ -44,8 +44,8 @@ const Contact = () => {
         pageType="ContactPage"
         name="Contact GrowSmallBiz Digital Marketing"
         description="Get in touch for a free marketing assessment."
-        url="/contact"
-        breadcrumbs={[{ name: "Contact", url: "/contact" }]}
+        url="/contact/"
+        breadcrumbs={[{ name: "Contact", url: "/contact/" }]}
       />
       <Header />
       <main id="main-content">

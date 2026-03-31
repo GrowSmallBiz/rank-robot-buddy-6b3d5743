@@ -556,7 +556,7 @@ const MarketingAutomation = () => {
           subtitle="GrowSmallBiz Digital Marketing helps you capture, nurture, and close leads on autopilot through SMS, Email, Live Chat, Phone Calls, and more!"
           primaryCTA={{
             label: "Schedule A Consultation",
-            href: "/contact",
+            href: "/contact/",
           }}
           secondaryCTA={{
             label: "See Pricing",

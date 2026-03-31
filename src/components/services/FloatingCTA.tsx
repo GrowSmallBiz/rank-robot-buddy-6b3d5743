@@ -21,7 +21,7 @@ export const FloatingCTA = ({
   title,
   description,
   buttonText = "Schedule Strategy Session",
-  buttonHref = "/contact",
+  buttonHref = "/contact/",
   showAfterScroll = 400,
 }: FloatingCTAProps) => {
   const [isVisible, setIsVisible] = useState(false);
