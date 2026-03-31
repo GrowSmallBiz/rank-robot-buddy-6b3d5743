@@ -230,6 +230,33 @@ export const Header = () => {
               </div>
             </div>
 
+            {/* Locations Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsLocationsOpen(true)}
+              onMouseLeave={() => setIsLocationsOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname.startsWith("/locations") ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                Locations
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+              <div
+                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isLocationsOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                }`}
+              >
+                <Link
+                  to="/locations/locations-we-serve"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Locations We Serve
+                </Link>
+              </div>
+
             <Link
               to="/about"
               className={`text-sm font-medium transition-colors hover:text-primary ${
