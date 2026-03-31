@@ -256,6 +256,7 @@ export const Header = () => {
                   Locations We Serve
                 </Link>
               </div>
+            </div>
 
             <Link
               to="/about"
