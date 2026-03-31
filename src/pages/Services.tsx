@@ -76,7 +76,7 @@ const coreServices = [
       "Missed call text-back and nurture workflows that keep prospects warm",
       "Pipeline visibility and booking automation that streamlines conversion",
     ],
-    href: "/contact",
+    href: "/contact/",
     icon: Bot,
   },
 ];
