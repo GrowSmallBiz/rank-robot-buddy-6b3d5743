@@ -204,7 +204,7 @@ const LocalSEO = () => {
 
       <Header />
 
-      <main>
+      <main id="main-content">
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MapPin, text: "Local SEO for Local Service Businesses" }}

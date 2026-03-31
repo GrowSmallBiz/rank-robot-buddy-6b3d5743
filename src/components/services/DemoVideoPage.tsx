@@ -40,7 +40,7 @@ export const DemoVideoPage = ({
         <link rel="canonical" href={`https://growsmallbiz.io/services/marketing-automation-for-small-business/${slug}`} />
       </Head>
       <Header />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         {/* Hero + Video Section */}
         <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">

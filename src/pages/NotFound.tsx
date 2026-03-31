@@ -10,7 +10,7 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-muted">
+    <main id="main-content" className="flex min-h-screen items-center justify-center bg-muted">
       <Head>
         <title>Page Not Found | GrowSmallBiz</title>
         <meta name="robots" content="noindex, nofollow" />
@@ -22,7 +22,7 @@ const NotFound = () => {
           Return to Home
         </a>
       </div>
-    </div>
+    </main>
   );
 };
 

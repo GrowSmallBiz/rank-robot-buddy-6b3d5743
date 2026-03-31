@@ -190,7 +190,7 @@ const GEO = () => {
 
       <Header />
 
-      <main>
+      <main id="main-content">
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: Globe, text: "Managed AI SEO" }}

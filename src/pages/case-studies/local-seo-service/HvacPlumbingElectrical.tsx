@@ -119,7 +119,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
         ]}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* ═══ HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}

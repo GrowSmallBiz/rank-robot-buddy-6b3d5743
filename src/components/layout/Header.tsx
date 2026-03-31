@@ -24,6 +24,13 @@ export const Header = () => {
     location.pathname === "/website-design";
 
   return (
+    <>
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-background focus:text-foreground focus:px-4 focus:py-2 focus:rounded focus:shadow-lg focus:ring-2 focus:ring-primary"
+    >
+      Skip to main content
+    </a>
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -39,7 +46,7 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
             <Link
               to="/"
               className={`text-sm font-medium transition-colors hover:text-primary ${
@@ -59,6 +66,8 @@ export const Header = () => {
                 className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
                   isServiceActive ? "text-primary" : "text-muted-foreground"
                 }`}
+               aria-expanded={isServicesOpen}
+               aria-haspopup="true"
               >
                 Services
                 <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
@@ -292,6 +301,8 @@ export const Header = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 text-foreground"
+           aria-label={isOpen ? "Close menu" : "Open menu"}
+           aria-expanded={isOpen}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -303,6 +314,8 @@ export const Header = () => {
         className={`lg:hidden absolute top-full left-0 right-0 bg-background border-b border-border transition-all duration-300 max-h-[calc(100vh-5rem)] overflow-y-auto ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
+       role="navigation"
+       aria-label="Mobile navigation"
       >
         <div className="container mx-auto px-4 py-6 space-y-4">
           <Link
@@ -518,5 +531,6 @@ export const Header = () => {
         </div>
       </div>
     </header>
+    </>
   );
 };

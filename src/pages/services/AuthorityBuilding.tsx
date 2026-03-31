@@ -181,7 +181,7 @@ const AuthorityBuilding = () => {
 
       <Header />
 
-      <main>
+      <main id="main-content">
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: Shield, text: "Authority Building for Local Service Businesses" }}

@@ -239,7 +239,7 @@ const AEO = () => {
 
       <Header />
 
-      <main>
+      <main id="main-content">
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MessageCircleQuestion, text: "Managed AI SEO — AEO Pillar" }}

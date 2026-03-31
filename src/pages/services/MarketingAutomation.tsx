@@ -547,7 +547,7 @@ const MarketingAutomation = () => {
         rating={{ ratingValue: "4.9", reviewCount: "127" }}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero Section */}
         <ServiceHero
           badge={{ icon: Bot, text: "START CLOSING MORE DEALS!" }}
