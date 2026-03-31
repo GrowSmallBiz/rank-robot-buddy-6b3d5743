@@ -31,7 +31,7 @@ export const CaseStudySection = ({
   caseStudies,
   title = "Real Results, Real Businesses",
   subtitle = "See how we've helped businesses like yours achieve measurable growth",
-  ctaLink = "/contact",
+  ctaLink = "/contact/",
   ctaText = "Get Results Like These"
 }: CaseStudySectionProps) => {
   return (

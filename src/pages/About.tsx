@@ -290,7 +290,7 @@ const About = () => {
         caseStudies={aboutCaseStudies}
         title="Client Success Stories"
         subtitle="Real results from real businesses we've helped grow"
-        ctaLink="/contact"
+        ctaLink="/contact/"
         ctaText="Get Results Like These"
       />
 

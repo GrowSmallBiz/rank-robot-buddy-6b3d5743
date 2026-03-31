@@ -23,7 +23,7 @@ export const StickyCardCTA = ({
   title,
   description,
   buttonText = "Get Your Custom Growth Strategy",
-  buttonHref = "/contact",
+  buttonHref = "/contact/",
   accentWords = [],
   showAfterScroll = 600,
 }: StickyCardCTAProps) => {

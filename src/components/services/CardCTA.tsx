@@ -22,7 +22,7 @@ export const CardCTA = ({
   title,
   description,
   buttonText = "Get Your Custom Growth Strategy",
-  buttonHref = "/contact",
+  buttonHref = "/contact/",
   sectionClassName = "py-24 lg:py-32",
   accentWords = [],
 }: CardCTAProps) => {
