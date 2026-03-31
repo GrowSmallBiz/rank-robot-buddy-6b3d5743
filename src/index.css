@@ -283,6 +283,12 @@
     @apply py-20 lg:py-28 my-2;
   }
 
+  /* Reduce rendering work for off-screen sections */
+  .cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+  }
+
   .delay-100 { animation-delay: 0.1s; }
   .delay-200 { animation-delay: 0.2s; }
   .delay-300 { animation-delay: 0.3s; }
