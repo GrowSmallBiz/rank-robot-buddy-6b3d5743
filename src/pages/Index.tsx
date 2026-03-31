@@ -196,7 +196,7 @@ const Index = () => {
         </script>
       </Head>
       <Header />
-      <main>
+      <main id="main-content">
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <picture>

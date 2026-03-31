@@ -148,7 +148,7 @@ const About = () => {
         breadcrumbs={[{ name: "About", url: "/about" }]}
       />
       <Header />
-      <main>
+      <main id="main-content">
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 hero-glow" />

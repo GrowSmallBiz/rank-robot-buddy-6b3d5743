@@ -258,7 +258,7 @@ const Services = () => {
         breadcrumbs={[{ name: "Services", url: "/services" }]}
       />
       <Header />
-      <main>
+      <main id="main-content">
       {/* ─── SECTION 1: HERO ─── */}
       <section className="hero-section">
         <div
