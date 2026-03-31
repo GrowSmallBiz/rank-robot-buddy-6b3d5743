@@ -205,40 +205,43 @@ const Index = () => {
           role="presentation"
           fetchPriority="high"
           decoding="async"
+          width={1920}
+          height={1080}
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-background/85" />
         
-        <div className="absolute top-1/4 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
+        {/* Decorative blurs hidden on mobile for performance */}
+        <div className="absolute top-1/4 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl hidden md:block" />
+        <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl hidden md:block" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="animate-fade-up">
+            <div className="animate-fade-up-safe">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
                 <Zap className="w-4 h-4" />
                 AI-Powered Growth System for Local Service Businesses
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up-safe delay-100">
               More Leads. Stronger Visibility.{" "}
               <span className="text-gradient">A System That Works While You Work.</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up delay-200">
+            <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up-safe delay-200">
               GrowSmallBiz helps local service businesses attract qualified leads, show up in local search, follow up faster, and convert more opportunities with one connected, AI-powered growth system.
             </p>
 
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-300">
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up-safe delay-300">
               We handle your website, SEO, paid ads, CRM automation, and AI-powered follow-up so you can spend less time managing marketing and more time focusing on your business, your clients, and your family.
             </p>
 
-            <p className="text-base text-muted-foreground/80 italic max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.35s" }}>
+            <p className="text-base text-muted-foreground/80 italic max-w-3xl mx-auto animate-fade-up-safe" style={{ animationDelay: "0.35s" }}>
               When performance needs improvement, we review the data, recalibrate the strategy, and keep optimizing the system.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-400">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up-safe delay-400">
               <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl">
                   Get Free Strategy Call
@@ -252,7 +255,7 @@ const Index = () => {
               </Link>
             </div>
 
-            <p className="text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.5s" }}>
+            <p className="text-sm text-muted-foreground animate-fade-up-safe" style={{ animationDelay: "0.5s" }}>
               Built for home services, healthcare, legal, accounting, and other local service businesses.
             </p>
           </div>
