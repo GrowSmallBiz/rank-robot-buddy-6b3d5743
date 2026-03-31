@@ -77,27 +77,34 @@
     <!-- Search Atlas OTTO Pixel -->
     <script nowprocket nitro-exclude type="text/javascript" id="sa-dynamic-optimization" data-uuid="9ba8cedd-4a1d-4db5-8ef4-0961cd84b3af" src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vbmV4YS1kYXNoYm9hcmQuZ3Jvd3NtYWxsYml6LmlvL3NjcmlwdHMvZHluYW1pY19vcHRpbWl6YXRpb24uanMiO3NjcmlwdC5kYXRhc2V0LnV1aWQgPSAiOWJhOGNlZGQtNGExZC00ZGI1LThlZjQtMDk2MWNkODRiM2FmIjtzY3JpcHQuaWQgPSAic2EtZHluYW1pYy1vcHRpbWl6YXRpb24tbG9hZGVyIjtkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKHNjcmlwdCk7"></script>
 
-    <!-- Juhi AI Concierge Chatbot - deferred -->
+    <!-- Juhi AI Concierge Chatbot - heavily deferred for performance -->
     <script>
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          var s = document.createElement('script');
-          s.src = 'https://botdisplay.com/chat-widget.js';
-          s.dataset.color = '#3d71bf';
-          s.dataset.assistantId = '1763509281876x767403296729333800';
-          s.dataset.accountId = '4KL47iKeJZ2Ee05j7FBh';
-          s.dataset.position = 'bottom-right';
-          s.dataset.theme = 'light';
-          s.dataset.showPrompt = 'true';
-          s.dataset.autoOpen = 'false';
-          s.dataset.promptMessage = "Hi, I'm Juhi, Juhi AI Concierge, You Can Ask Questions Here + schedule a discovery call";
-          s.dataset.assistantName = 'Juhi AI Concierge';
-          s.dataset.buttonIcon = '';
-          s.dataset.greetingMessage = 'Hi there! My name is {assistant_name} AI Concierge. How can I help today?';
-          s.dataset.prompts = '[]';
-          document.body.appendChild(s);
-        }, 3000);
-      });
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() {
+          loadChatWidget();
+        }, { timeout: 10000 });
+      } else {
+        window.addEventListener('load', function() {
+          setTimeout(loadChatWidget, 8000);
+        });
+      }
+      function loadChatWidget() {
+        var s = document.createElement('script');
+        s.src = 'https://botdisplay.com/chat-widget.js';
+        s.dataset.color = '#3d71bf';
+        s.dataset.assistantId = '1763509281876x767403296729333800';
+        s.dataset.accountId = '4KL47iKeJZ2Ee05j7FBh';
+        s.dataset.position = 'bottom-right';
+        s.dataset.theme = 'light';
+        s.dataset.showPrompt = 'true';
+        s.dataset.autoOpen = 'false';
+        s.dataset.promptMessage = "Hi, I'm Juhi, Juhi AI Concierge, You Can Ask Questions Here + schedule a discovery call";
+        s.dataset.assistantName = 'Juhi AI Concierge';
+        s.dataset.buttonIcon = '';
+        s.dataset.greetingMessage = 'Hi there! My name is {assistant_name} AI Concierge. How can I help today?';
+        s.dataset.prompts = '[]';
+        document.body.appendChild(s);
+      }
     </script>
 </head>
 
