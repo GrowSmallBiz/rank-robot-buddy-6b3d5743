@@ -113,7 +113,7 @@ export default function SalesTrackerDemo() {
               Automate leads moving through the process via workflow automations or manually with the drag-and-drop feature, moving them from step to step, or do a little of both.
             </p>
             <Link
-              to="/services/marketing-automation-for-small-business#ready-to-talk"
+              to="/services/marketing-automation-for-small-business/#ready-to-talk"
               className="text-primary font-semibold hover:underline text-lg"
             >
               Watch A Demo ➡️

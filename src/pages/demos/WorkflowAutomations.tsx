@@ -104,7 +104,7 @@ export default function WorkflowAutomationsDemo() {
                   From creating simple recurring reminders to complete project management flows, you can automate large portions of your business to make sure things never fall through the cracks.
                 </p>
                 <Link
-                  to="/services/marketing-automation-for-small-business#ready-to-talk"
+                  to="/services/marketing-automation-for-small-business/#ready-to-talk"
                   className="inline-block bg-primary text-primary-foreground font-bold text-lg px-8 py-4 rounded-xl hover:opacity-90 transition-all"
                 >
                   Watch A Demo

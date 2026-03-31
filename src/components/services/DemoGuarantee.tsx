@@ -24,7 +24,7 @@ export const DemoGuarantee = () => (
         className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-8 py-4 h-auto"
         asChild
       >
-        <Link to="/services/marketing-automation-for-small-business#ready-to-talk">
+        <Link to="/services/marketing-automation-for-small-business/#ready-to-talk">
           <Shield className="w-5 h-5 mr-2" />
           100% SATISFACTION GUARANTEE
         </Link>

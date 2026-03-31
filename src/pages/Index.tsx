@@ -420,7 +420,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-12 animate-fade-up">
-            <Link to="/services">
+            <Link to="/services/">
               <Button variant="heroOutline" size="lg">
                 Explore All Services
                 <ArrowRight className="w-5 h-5 ml-2" />

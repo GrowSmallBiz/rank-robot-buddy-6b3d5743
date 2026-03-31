@@ -593,7 +593,7 @@ const OnPageSEO = () => {
 
               {/* Internal link back to parent */}
               <div className="text-center mt-8 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-                <Link to="/services/seo-agency" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
+                <Link to="/services/seo-agency/" className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1">
                   ← Back to Managed AI SEO Overview
                 </Link>
               </div>
