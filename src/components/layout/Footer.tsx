@@ -34,17 +34,17 @@ export const Footer = () => {
             <h4 className="font-display font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/about/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/services/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   All Services
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/contact/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </Link>
               </li>
@@ -89,8 +89,8 @@ export const Footer = () => {
             © 2026 GrowSmallBiz Digital Marketing. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <Link to="/privacy-policy/" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service/" className="hover:text-primary transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

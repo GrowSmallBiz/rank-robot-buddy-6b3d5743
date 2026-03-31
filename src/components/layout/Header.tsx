@@ -80,7 +80,7 @@ export const Header = () => {
               >
                 {/* Service Overview */}
                 <Link
-                  to="/services"
+                  to="/services/"
                   className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
                 >
                   Service Overview
@@ -88,7 +88,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/services/website-design"
+                  to="/services/website-design/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Website That Converts
@@ -111,28 +111,28 @@ export const Header = () => {
                       isSeoSubOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
                     }`}
                   >
-                    <Link to="/services/seo-agency" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                    <Link to="/services/seo-agency/" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
                       Overview
                     </Link>
-                    <Link to="/services/seo-agency/aeo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/seo-agency/aeo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Answer Engine Optimization (AEO)
                     </Link>
-                    <Link to="/services/seo-agency/geo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/seo-agency/geo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Generative Engine Optimization (GEO)
                     </Link>
-                    <Link to="/services/seo-agency/local-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/seo-agency/local-seo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Local SEO
                     </Link>
-                    <Link to="/services/seo-agency/authority-building" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/seo-agency/authority-building/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Authority Building
                     </Link>
-                    <Link to="/services/seo-agency/link-building" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/seo-agency/link-building/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Link Building
                     </Link>
-                    <Link to="/services/seo-agency/technical-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/seo-agency/technical-seo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Technical SEO
                     </Link>
-                    <Link to="/services/seo-agency/on-page-seo" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/seo-agency/on-page-seo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       On-Page SEO
                     </Link>
                   </div>
@@ -155,16 +155,16 @@ export const Header = () => {
                       isAdsSubOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"
                     }`}
                   >
-                    <Link to="/services/paid-advertising" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                    <Link to="/services/paid-advertising/" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
                       Paid Advertising Overview
                     </Link>
-                    <Link to="/services/paid-advertising/google-ads" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/paid-advertising/google-ads/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Google PPC Ads
                     </Link>
-                    <Link to="/services/paid-advertising/google-local-services-ads" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/paid-advertising/google-local-services-ads/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Google Local Service Ads
                     </Link>
-                    <Link to="/services/paid-advertising/facebook-ads" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/services/paid-advertising/facebook-ads/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Meta & Facebook Ads
                     </Link>
                   </div>
@@ -172,7 +172,7 @@ export const Header = () => {
 
                 {/* Marketing Automation */}
                 <Link
-                  to="/services/marketing-automation-for-small-business"
+                  to="/services/marketing-automation-for-small-business/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Marketing Automation
@@ -201,37 +201,37 @@ export const Header = () => {
                 }`}
               >
                 <Link
-                  to="/case-studies/local-seo-service/hvac-plumbing-electrical"
+                  to="/case-studies/local-seo-service/hvac-plumbing-electrical/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   HVAC, Plumbing & Electrical — Local SEO
                 </Link>
                 <Link
-                  to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical"
+                  to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   HVAC, Plumbing & Electrical — Google Ads
                 </Link>
                 <Link
-                  to="/case-studies/roofers"
+                  to="/case-studies/roofers/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Roofers
                 </Link>
                 <Link
-                  to="/case-studies/tree-lawn-landscaping"
+                  to="/case-studies/tree-lawn-landscaping/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Tree Care, Lawn Care & Landscaping
                 </Link>
                 <Link
-                  to="/case-studies/home-remodeling"
+                  to="/case-studies/home-remodeling/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Home Remodeling
                 </Link>
                 <Link
-                  to="/case-studies/cleaning-services"
+                  to="/case-studies/cleaning-services/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Cleaning Services
@@ -259,7 +259,7 @@ export const Header = () => {
                 }`}
               >
                 <Link
-                  to="/locations/locations-we-serve"
+                  to="/locations/locations-we-serve/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Locations We Serve
@@ -268,7 +268,7 @@ export const Header = () => {
             </div>
 
             <Link
-              to="/about"
+              to="/about/"
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 location.pathname === "/about" ? "text-primary" : "text-muted-foreground"
               }`}
@@ -277,7 +277,7 @@ export const Header = () => {
             </Link>
 
             <Link
-              to="/contact"
+              to="/contact/"
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 location.pathname === "/contact" ? "text-primary" : "text-muted-foreground"
               }`}
@@ -339,7 +339,7 @@ export const Header = () => {
               <div className="pl-4 space-y-2">
                 {/* Service Overview */}
                 <Link
-                  to="/services"
+                  to="/services/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-primary font-medium"
                 >
@@ -348,7 +348,7 @@ export const Header = () => {
 
                 {/* Website That Converts */}
                 <Link
-                  to="/services/website-design"
+                  to="/services/website-design/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -365,28 +365,28 @@ export const Header = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${mobileSeoSubOpen ? "rotate-180" : ""}`} />
                   </button>
                   <div className={`overflow-hidden transition-all duration-200 ${mobileSeoSubOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
-                    <Link to="/services/seo-agency" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
+                    <Link to="/services/seo-agency/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
                       Overview
                     </Link>
-                    <Link to="/services/seo-agency/aeo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/seo-agency/aeo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Answer Engine Optimization (AEO)
                     </Link>
-                    <Link to="/services/seo-agency/geo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/seo-agency/geo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Generative Engine Optimization (GEO)
                     </Link>
-                    <Link to="/services/seo-agency/local-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/seo-agency/local-seo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Local SEO
                     </Link>
-                    <Link to="/services/seo-agency/authority-building" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/seo-agency/authority-building/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Authority Building
                     </Link>
-                    <Link to="/services/seo-agency/link-building" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/seo-agency/link-building/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Link Building
                     </Link>
-                    <Link to="/services/seo-agency/technical-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/seo-agency/technical-seo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Technical SEO
                     </Link>
-                    <Link to="/services/seo-agency/on-page-seo" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/seo-agency/on-page-seo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       On-Page SEO
                     </Link>
                   </div>
@@ -402,16 +402,16 @@ export const Header = () => {
                     <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${mobileAdsSubOpen ? "rotate-180" : ""}`} />
                   </button>
                   <div className={`overflow-hidden transition-all duration-200 ${mobileAdsSubOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
-                    <Link to="/services/paid-advertising" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
+                    <Link to="/services/paid-advertising/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
                       Paid Advertising Overview
                     </Link>
-                    <Link to="/services/paid-advertising/google-ads" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/paid-advertising/google-ads/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Google PPC Ads
                     </Link>
-                    <Link to="/services/paid-advertising/google-local-services-ads" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/paid-advertising/google-local-services-ads/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Google Local Service Ads
                     </Link>
-                    <Link to="/services/paid-advertising/facebook-ads" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                    <Link to="/services/paid-advertising/facebook-ads/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Meta & Facebook Ads
                     </Link>
                   </div>
@@ -419,7 +419,7 @@ export const Header = () => {
 
                 {/* Marketing Automation */}
                 <Link
-                  to="/services/marketing-automation-for-small-business"
+                  to="/services/marketing-automation-for-small-business/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -442,42 +442,42 @@ export const Header = () => {
             {mobileCaseStudiesOpen && (
               <div className="pl-4 space-y-2">
                 <Link
-                  to="/case-studies/local-seo-service/hvac-plumbing-electrical"
+                  to="/case-studies/local-seo-service/hvac-plumbing-electrical/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   HVAC, Plumbing & Electrical — Local SEO
                 </Link>
                 <Link
-                  to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical"
+                  to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   HVAC, Plumbing & Electrical — Google Ads
                 </Link>
                 <Link
-                  to="/case-studies/roofers"
+                  to="/case-studies/roofers/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Roofers
                 </Link>
                 <Link
-                  to="/case-studies/tree-lawn-landscaping"
+                  to="/case-studies/tree-lawn-landscaping/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Tree Care, Lawn Care & Landscaping
                 </Link>
                 <Link
-                  to="/case-studies/home-remodeling"
+                  to="/case-studies/home-remodeling/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Home Remodeling
                 </Link>
                 <Link
-                  to="/case-studies/cleaning-services"
+                  to="/case-studies/cleaning-services/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -499,7 +499,7 @@ export const Header = () => {
             {mobileLocationsOpen && (
               <div className="pl-4 space-y-2">
                 <Link
-                  to="/locations/locations-we-serve"
+                  to="/locations/locations-we-serve/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
@@ -510,7 +510,7 @@ export const Header = () => {
           </div>
 
           <Link
-            to="/about"
+            to="/about/"
             onClick={() => setIsOpen(false)}
             className="block text-foreground font-medium"
           >
@@ -518,7 +518,7 @@ export const Header = () => {
           </Link>
 
           <Link
-            to="/contact"
+            to="/contact/"
             onClick={() => setIsOpen(false)}
             className="block text-foreground font-medium"
           >
@@ -526,7 +526,7 @@ export const Header = () => {
           </Link>
 
           <Button variant="hero" size="lg" className="w-full mt-4" asChild>
-            <Link to="/contact" onClick={() => setIsOpen(false)}>Get Free Audit</Link>
+            <Link to="/contact/" onClick={() => setIsOpen(false)}>Get Free Audit</Link>
           </Button>
         </div>
       </div>
