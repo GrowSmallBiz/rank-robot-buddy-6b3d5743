@@ -339,7 +339,7 @@ const Index = () => {
       </section>
 
       {/* How It Works — 4-Card Method Section */}
-      <section className="section-dark">
+      <section className="section-dark cv-auto">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">How It Works</p>
