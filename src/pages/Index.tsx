@@ -15,39 +15,30 @@ const ConsultationFormSection = lazy(() => import("@/components/sections/Consult
 const CardCTA = lazy(() => import("@/components/services").then(m => ({ default: m.CardCTA })));
 const WhyChooseSection = lazy(() => import("@/components/sections/WhyChooseSection").then(m => ({ default: m.WhyChooseSection })));
 const HomeCaseStudySection = lazy(() => import("@/components/sections/HomeCaseStudySection").then(m => ({ default: m.HomeCaseStudySection })));
-import { ArrowRight, Zap, CheckCircle2, XCircle } from "lucide-react";
-import { lazy as lazyIcon } from "react";
-import { Head } from "vite-react-ssg";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
-
-// Lazy-load icons only used below the fold
-import type { LucideIcon } from "lucide-react";
-const lazyLucide = (name: string): LucideIcon => {
-  // These are resolved at render time for below-fold sections
-  const icons: Record<string, () => Promise<{ default: LucideIcon }>> = {
-    Bot: () => import("lucide-react").then(m => ({ default: m.Bot })),
-    Search: () => import("lucide-react").then(m => ({ default: m.Search })),
-    Globe: () => import("lucide-react").then(m => ({ default: m.Globe })),
-    BarChart3: () => import("lucide-react").then(m => ({ default: m.BarChart3 })),
-    TrendingUp: () => import("lucide-react").then(m => ({ default: m.TrendingUp })),
-    Layers: () => import("lucide-react").then(m => ({ default: m.Layers })),
-    Megaphone: () => import("lucide-react").then(m => ({ default: m.Megaphone })),
-    Users: () => import("lucide-react").then(m => ({ default: m.Users })),
-    PhoneCall: () => import("lucide-react").then(m => ({ default: m.PhoneCall })),
-    ClipboardCheck: () => import("lucide-react").then(m => ({ default: m.ClipboardCheck })),
-    Rocket: () => import("lucide-react").then(m => ({ default: m.Rocket })),
-    Settings: () => import("lucide-react").then(m => ({ default: m.Settings })),
-    Brain: () => import("lucide-react").then(m => ({ default: m.Brain })),
-    Wrench: () => import("lucide-react").then(m => ({ default: m.Wrench })),
-    Heart: () => import("lucide-react").then(m => ({ default: m.Heart })),
-    Target: () => import("lucide-react").then(m => ({ default: m.Target })),
-    LayoutDashboard: () => import("lucide-react").then(m => ({ default: m.LayoutDashboard })),
-    Award: () => import("lucide-react").then(m => ({ default: m.Award })),
-  };
-  // For SSG/initial render, just return a placeholder that resolves synchronously
-  // since these are only used in below-fold lazy sections
-  return icons[name] ? require("lucide-react")[name] : CheckCircle2;
-};
+import { 
+  ArrowRight, 
+  Bot, 
+  Search, 
+  Globe, 
+  BarChart3, 
+  TrendingUp, 
+  CheckCircle2, 
+  XCircle, 
+  Layers,
+  Zap,
+  Megaphone,
+  Users,
+  PhoneCall,
+  ClipboardCheck,
+  Rocket,
+  Settings,
+  Brain,
+  Wrench,
+  Heart,
+  Target,
+  LayoutDashboard,
+  Award,
+} from "lucide-react";
 import { Head } from "vite-react-ssg";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
