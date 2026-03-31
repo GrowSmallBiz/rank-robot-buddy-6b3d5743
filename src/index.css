@@ -256,6 +256,11 @@
     animation: fadeUp 0.6s ease-out forwards;
   }
 
+  /* Use on above-the-fold elements to avoid CLS */
+  .animate-fade-up-safe {
+    animation: fadeUpSafe 0.6s ease-out forwards;
+  }
+
   .animate-fade-in {
     animation: fadeIn 0.8s ease-out forwards;
   }
