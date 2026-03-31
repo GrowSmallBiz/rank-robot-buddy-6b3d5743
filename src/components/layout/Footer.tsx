@@ -58,12 +58,24 @@ export const Footer = () => {
               <li>contact@growsmallbiz.io</li>
               <li>+1 (925) 886-3724</li>
               <li className="pt-4">
-                <div className="flex gap-4">
-                  <a href="#" className="hover:text-primary transition-colors">
-                   LinkedIn
+                <div className="flex gap-3">
+                  <a href="https://maps.app.goo.gl/oSLNhYTJwXn4ixuX8" target="_blank" rel="noopener noreferrer" aria-label="Google Business Profile" className="transition-colors" style={{ color: '#4285F4' }}>
+                    <MapPin size={20} />
                   </a>
-                  <a href="#" className="hover:text-primary transition-colors" aria-label="Twitter">
-                    Twitter
+                  <a href="https://www.facebook.com/growsmallbizDM/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors" style={{ color: '#1877F2' }}>
+                    <Facebook size={20} />
+                  </a>
+                  <a href="https://www.youtube.com/@GrowSmallBizDM" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="transition-colors" style={{ color: '#FF0000' }}>
+                    <Youtube size={20} />
+                  </a>
+                  <a href="https://www.instagram.com/growsmallbiz.io/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors" style={{ color: '#E4405F' }}>
+                    <Instagram size={20} />
+                  </a>
+                  <a href="https://www.linkedin.com/company/growsmallbiz-dm/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-colors" style={{ color: '#0A66C2' }}>
+                    <Linkedin size={20} />
+                  </a>
+                  <a href="https://x.com/GrowSmallBizDM" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" className="transition-colors" style={{ color: '#1DA1F2' }}>
+                    <Twitter size={20} />
                   </a>
                 </div>
               </li>
