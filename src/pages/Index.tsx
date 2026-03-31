@@ -199,16 +199,20 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
-        <img
-          src={heroImage}
-          alt=""
-          role="presentation"
-          fetchPriority="high"
-          decoding="async"
-          width={1920}
-          height={1080}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/homepage-hero-bg-mobile.webp" />
+          <source media="(min-width: 769px)" srcSet="/images/homepage-hero-bg.webp" />
+          <img
+            src="/images/homepage-hero-bg.webp"
+            alt=""
+            role="presentation"
+            fetchPriority="high"
+            decoding="async"
+            width={1920}
+            height={1080}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-background/85" />
         
         {/* Decorative blurs hidden on mobile for performance */}
