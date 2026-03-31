@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { baseContactCTA } from "@/config/contactCTA";
-import heroImage from "@/assets/homepage-hero-bg.webp";
+
 
 // Lazy-load below-the-fold sections to improve FCP
 const TestimonialsSection = lazy(() => import("@/components/sections/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
