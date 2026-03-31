@@ -474,6 +474,28 @@ export const Header = () => {
             )}
           </div>
 
+          {/* Mobile: Locations */}
+          <div className="space-y-2">
+            <button
+              onClick={() => setMobileLocationsOpen(!mobileLocationsOpen)}
+              className="flex items-center justify-between w-full text-foreground font-medium"
+            >
+              Locations
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileLocationsOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileLocationsOpen && (
+              <div className="pl-4 space-y-2">
+                <Link
+                  to="/locations/locations-we-serve"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Locations We Serve
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link
             to="/about"
             onClick={() => setIsOpen(false)}
