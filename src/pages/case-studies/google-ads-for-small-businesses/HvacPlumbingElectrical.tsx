@@ -83,7 +83,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
         ]}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* ═══ HERO ═══ */}
         <ServiceHero
           badge={{ icon: MousePointerClick, text: "Case Studies / Google PPC" }}

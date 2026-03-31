@@ -266,7 +266,7 @@ const TechnicalSEO = () => {
 
       <Header />
 
-      <main>
+      <main id="main-content">
         {/* SECTION 1 — HERO (APPROVED REPLACEMENT) */}
         <ServiceHero
           badge={{ icon: Wrench, text: "Technical SEO for Local Service Businesses" }}

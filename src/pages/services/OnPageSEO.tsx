@@ -259,7 +259,7 @@ const OnPageSEO = () => {
 
       <Header />
 
-      <main>
+      <main id="main-content">
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: FileText, text: "On-Page SEO for Local Service Businesses" }}

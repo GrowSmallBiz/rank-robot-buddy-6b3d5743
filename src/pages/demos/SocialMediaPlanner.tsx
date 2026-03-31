@@ -13,7 +13,7 @@ export default function SocialMediaPlannerDemo() {
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/social-media-planner" />
       </Head>
       <Header />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Social Media Automation</h1>

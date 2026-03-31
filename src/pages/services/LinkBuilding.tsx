@@ -198,7 +198,7 @@ const LinkBuilding = () => {
 
       <Header />
 
-      <main>
+      <main id="main-content">
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: LinkIcon, text: "Link Building for Local Service Businesses" }}

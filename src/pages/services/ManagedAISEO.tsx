@@ -204,7 +204,7 @@ const ManagedAISEO = () => {
       />
       <Header />
 
-      <main className="min-h-screen bg-background pt-20">
+      <main id="main-content" className="min-h-screen bg-background pt-20">
         {/* SECTION 1 — HERO */}
         <section className="relative overflow-hidden py-16 lg:py-24">
           <div

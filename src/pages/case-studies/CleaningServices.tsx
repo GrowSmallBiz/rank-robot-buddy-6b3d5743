@@ -112,7 +112,7 @@ const CleaningServices = () => {
         ]}
       />
       <Header />
-      <main>
+      <main id="main-content">
         {/* ═══ SECTION 1: HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}

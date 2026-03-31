@@ -10,7 +10,7 @@ const TermsOfService = () => {
         <meta name="description" content="Terms and Conditions for GrowSmallBiz Digital Marketing. Read our terms governing the use of our services and website." />
       </Head>
       <Header />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         <div className="container mx-auto px-4 pt-16 pb-8 max-w-4xl">
           <h1 className="text-4xl font-bold font-display text-foreground mb-8">Terms &amp; Conditions</h1>
           
