@@ -70,7 +70,8 @@ export const routes: RouteRecord[] = [
       { path: "seo-agency/technical-seo", lazy: lazy(() => import("./pages/services/TechnicalSEO")) },
       { path: "seo-agency/on-page-seo", lazy: lazy(() => import("./pages/services/OnPageSEO")) },
       
-      
+      { path: "locations/locations-we-serve", lazy: lazy(() => import("./pages/locations/LocationsWeServe")) },
+
       { path: "case-studies/local-seo-service/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
       { path: "case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
       { path: "case-studies/roofers", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
