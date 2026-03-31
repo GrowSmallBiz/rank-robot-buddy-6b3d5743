@@ -59,16 +59,6 @@ export const routes: RouteRecord[] = [
       { path: "services/marketing-automation-for-small-business/memberships", lazy: lazy(() => import("./pages/demos/Memberships")) },
       { path: "services/marketing-automation-for-small-business/webchat", lazy: lazy(() => import("./pages/demos/Webchat")) },
       { path: "services/marketing-automation-for-small-business/generate-leads", lazy: lazy(() => import("./pages/demos/GenerateLeads")) },
-      { path: "website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
-      { path: "services/website-design", lazy: lazy(() => import("./pages/services/WebsiteDesign")) },
-      { path: "seo-agency", lazy: lazy(() => import("./pages/services/ManagedAISEO")) },
-      { path: "seo-agency/aeo", lazy: lazy(() => import("./pages/services/AEO")) },
-      { path: "seo-agency/geo", lazy: lazy(() => import("./pages/services/GEO")) },
-      { path: "seo-agency/local-seo", lazy: lazy(() => import("./pages/services/LocalSEO")) },
-      { path: "seo-agency/authority-building", lazy: lazy(() => import("./pages/services/AuthorityBuilding")) },
-      { path: "seo-agency/link-building", lazy: lazy(() => import("./pages/services/LinkBuilding")) },
-      { path: "seo-agency/technical-seo", lazy: lazy(() => import("./pages/services/TechnicalSEO")) },
-      { path: "seo-agency/on-page-seo", lazy: lazy(() => import("./pages/services/OnPageSEO")) },
       
       { path: "locations/locations-we-serve", lazy: lazy(() => import("./pages/locations/LocationsWeServe")) },
 
