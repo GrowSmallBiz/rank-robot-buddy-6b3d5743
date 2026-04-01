@@ -254,7 +254,7 @@ const Services = () => {
         pageType="WebPage"
         name="Services - GrowSmallBiz"
         description="AI-Powered Growth System for Local Service Businesses"
-        Rl="/services/"
+        url="/services/"
         breadcrumbs={[{ name: "Services", url: "/services/" }]}
       />
       <Header />

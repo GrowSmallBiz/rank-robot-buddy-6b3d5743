@@ -142,7 +142,7 @@ const TreeLawnLandscaping = () => {
         pageType="WebPage"
         name="Case Studies for Tree Care, Lawn Care & Landscaping Businesses"
         description="Explore documented case study results for tree care, lawn care, and landscaping businesses across Local SEO and Google PPC campaigns."
-        Rl="/case-studies/tree-lawn-landscaping/"
+        url="/case-studies/tree-lawn-landscaping/"
         breadcrumbs={[
           { name: "Case Studies", url: "/case-studies/" },
           { name: "Tree Care, Lawn Care & Landscaping", url: "/case-studies/tree-lawn-landscaping/" },
