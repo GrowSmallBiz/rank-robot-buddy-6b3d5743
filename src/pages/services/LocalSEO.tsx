@@ -196,7 +196,7 @@ const LocalSEO = () => {
         description="Managed Local SEO services for local service businesses. Improve visibility in Google Business Profile, map pack, citations, and local organic results."
         url="/services/seo-agency/local-seo/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
           { name: "Managed AI SEO", url: "/services/seo-agency/" },
           { name: "Local SEO", url: "/services/seo-agency/local-seo/" },
         ]}

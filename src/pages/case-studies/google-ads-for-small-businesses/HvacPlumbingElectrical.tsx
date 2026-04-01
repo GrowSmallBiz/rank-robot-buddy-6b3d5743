@@ -75,11 +75,11 @@ const GoogleAdsHvacPlumbingElectrical = () => {
         pageType="WebPage"
         name="Google Ads Case Studies for HVAC, Plumbing & Electrical Businesses"
         description="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses."
-        url="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical"
+        Rl="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies" },
-          { name: "Google Ads", url: "/case-studies/google-ads-for-small-businesses" },
-          { name: "HVAC, Plumbing & Electrical", url: "/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical" },
+          { name: "Case Studies", url: "/case-studies/" },
+          { name: "Google Ads", url: "/case-studies/google-ads-for-small-businesses/" },
+          { name: "HVAC, Plumbing & Electrical", url: "/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/" },
         ]}
       />
       <Header />

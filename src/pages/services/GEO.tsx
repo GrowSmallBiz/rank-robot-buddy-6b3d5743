@@ -182,7 +182,7 @@ const GEO = () => {
         description="Managed GEO services for local service businesses. Become easier for AI systems to identify, understand, and surface through managed GEO built for the new reality of search."
         url="/services/seo-agency/geo/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
           { name: "Managed AI SEO", url: "/services/seo-agency/" },
           { name: "GEO", url: "/services/seo-agency/geo/" },
         ]}

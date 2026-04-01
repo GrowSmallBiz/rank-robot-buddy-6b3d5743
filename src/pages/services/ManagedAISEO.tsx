@@ -199,7 +199,7 @@ const ManagedAISEO = () => {
         description="The complete Managed AI SEO system for local service businesses — covering technical SEO, on-page, local SEO, topical authority, AEO, GEO, link building, and monthly reporting."
         url="/services/seo-agency/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
         ]}
       />
       <Header />

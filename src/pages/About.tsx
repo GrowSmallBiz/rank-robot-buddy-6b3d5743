@@ -144,8 +144,8 @@ const About = () => {
         pageType="AboutPage"
         name="About GrowSmallBiz Digital Marketing"
         description="AI-powered SEO and digital marketing for local service businesses."
-        url="/about"
-        breadcrumbs={[{ name: "About", url: "/about" }]}
+        Rl="/about/"
+        breadcrumbs={[{ name: "About", url: "/about/" }]}
       />
       <Header />
       <main id="main-content">

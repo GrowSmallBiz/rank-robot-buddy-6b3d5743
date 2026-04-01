@@ -168,10 +168,10 @@ const Roofers = () => {
         pageType="WebPage"
         name="Case Studies for Roofing Businesses"
         description="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns."
-        url="/case-studies/roofers"
+        Rl="/case-studies/roofers/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies" },
-          { name: "Roofers", url: "/case-studies/roofers" },
+          { name: "Case Studies", url: "/case-studies/" },
+          { name: "Roofers", url: "/case-studies/roofers/" },
         ]}
       />
       <Header />

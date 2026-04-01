@@ -84,7 +84,7 @@ const FacebookAds = () => {
         description="Facebook & Instagram Ads management for local service businesses. Precision targeting, conversion-focused creative, full-funnel tracking, and retargeting."
         url="/services/paid-advertising/facebook-ads/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
           { name: "Facebook Ads Management", url: "/services/paid-advertising/facebook-ads/" },
         ]}
       />

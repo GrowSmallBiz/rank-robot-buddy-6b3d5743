@@ -231,7 +231,7 @@ const AEO = () => {
         description="GrowSmallBiz structures your content to become the answer in featured snippets, People Also Ask, and AI-assisted search. AEO services built for local service businesses."
         url="/services/seo-agency/aeo/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
           { name: "Managed AI SEO", url: "/services/seo-agency/" },
           { name: "Answer Engine Optimization", url: "/services/seo-agency/aeo/" },
         ]}

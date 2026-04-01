@@ -224,7 +224,7 @@ const PaidMedia = () => {
         description="Full-funnel paid ad systems for local service businesses including Google Ads, Local Service Ads, Meta Ads, retargeting, and conversion tracking."
         url="/services/paid-advertising/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
           { name: "Paid Advertising", url: "/services/paid-advertising/" },
         ]}
       />

@@ -115,10 +115,10 @@ const HomeRemodeling = () => {
         pageType="WebPage"
         name="Case Studies for Home Remodeling Businesses"
         description="Explore documented Local SEO case study results for home remodeling and home renovation businesses."
-        url="/case-studies/home-remodeling"
+        Rl="/case-studies/home-remodeling/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies" },
-          { name: "Home Remodeling", url: "/case-studies/home-remodeling" },
+          { name: "Case Studies", url: "/case-studies/" },
+          { name: "Home Remodeling", url: "/case-studies/home-remodeling/" },
         ]}
       />
       <Header />

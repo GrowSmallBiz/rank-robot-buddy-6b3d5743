@@ -538,7 +538,7 @@ const MarketingAutomation = () => {
         description="AI-powered client growth system that helps small businesses capture, nurture, and close leads on autopilot."
         url="/services/marketing-automation-for-small-business/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
           {
             name: "Marketing Automation",
             url: "/services/marketing-automation-for-small-business/",
