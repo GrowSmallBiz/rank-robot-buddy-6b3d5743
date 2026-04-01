@@ -15,6 +15,7 @@ const AnimatedStatsSection = lazy(() => import("@/components/sections/AnimatedSt
 const CardCTA = lazy(() => import("@/components/services").then(m => ({ default: m.CardCTA })));
 const WhyChooseSection = lazy(() => import("@/components/sections/WhyChooseSection").then(m => ({ default: m.WhyChooseSection })));
 const HomeCaseStudySection = lazy(() => import("@/components/sections/HomeCaseStudySection").then(m => ({ default: m.HomeCaseStudySection })));
+const ConsultationFormSection = lazy(() => import("@/components/sections/ConsultationFormSection").then(m => ({ default: m.ConsultationFormSection })));
 import { 
   ArrowRight, 
   Bot, 
@@ -511,6 +512,8 @@ const Index = () => {
           buttonText="Get Free Strategy Call"
           buttonHref={strategySessionUrl}
         />
+
+        <ConsultationFormSection utmCampaign="home-consultation" utmMedium="home" />
 
       </Suspense>
 
