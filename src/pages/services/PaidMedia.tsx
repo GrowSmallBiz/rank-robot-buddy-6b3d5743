@@ -107,7 +107,7 @@ const adChannelsPrimary = [
   {
     title: "Google Local Service Ads Management",
     description: "Show up in Google's high-visibility local placement with setup, verification, budget guidance, and ongoing optimization.",
-    href: "/services/paid-advertising/google-local-services-ads",
+    href: "/services/paid-advertising/google-local-services-ads/",
     brandLogo: (
       <svg viewBox="0 0 24 24" className="w-7 h-7" fill="none">
         <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="#34A853" opacity="0.2"/>

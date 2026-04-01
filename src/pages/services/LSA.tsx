@@ -83,10 +83,10 @@ const LSA = () => {
         serviceName="Google Local Service Ads Management"
         serviceType="LSA Management"
         description="Complete Google Local Service Ads management for local businesses. Google Guarantee verification, profile optimization, lead review, dispute management, and performance reporting."
-        url="/services/paid-advertising/google-local-services-ads"
+        url="/services/paid-advertising/google-local-services-ads/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
-          { name: "Google Local Service Ads Management", url: "/services/paid-advertising/google-local-services-ads" },
+          { name: "Services", url: "/services/" },
+          { name: "Google Local Service Ads Management", url: "/services/paid-advertising/google-local-services-ads/" },
         ]}
       />
       <Header />
