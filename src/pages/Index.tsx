@@ -513,6 +513,8 @@ const Index = () => {
           buttonHref={strategySessionUrl}
         />
 
+        <ConsultationFormSection utmCampaign="home-consultation" utmMedium="home" />
+
       </Suspense>
 
       </main>
