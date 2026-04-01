@@ -105,7 +105,7 @@ const CleaningServices = () => {
         pageType="WebPage"
         name="Case Studies for Cleaning Services Businesses"
         description="Explore documented local SEO case study results for cleaning service businesses."
-        Rl="/case-studies/cleaning-services/"
+        url="/case-studies/cleaning-services/"
         breadcrumbs={[
           { name: "Case Studies", url: "/case-studies/" },
           { name: "Cleaning Services", url: "/case-studies/cleaning-services/" },
