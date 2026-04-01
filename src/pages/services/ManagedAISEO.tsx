@@ -118,7 +118,7 @@ const pillars = [
     title: "Authority Building, Link Building, Press Releases & Brand Mentions",
     description: "Your rankings reflect how the broader internet perceives your authority. GrowSmallBiz builds off-site authority through a deliberate, quality-first approach — earning links and mentions from local sources, niche-relevant directories, industry associations, chambers of commerce, and digital PR.",
     covers: ["Backlink strategy", "Link acquisition", "Local authority links", "Niche-relevant links", "Partner / association / chamber links", "Brand mentions", "Digital PR", "Press release strategy", "Press release distribution support", "Off-site authority signals"],
-    link: "/services/seo-agency",
+    link: "/services/seo-agency/authority-building/",
   },
   {
     icon: BarChart3,
