@@ -91,7 +91,7 @@ const pillars = [
     title: "Local SEO",
     description: "For local service businesses, local SEO is the most direct path to new customers. GrowSmallBiz manages the full local SEO ecosystem: your Google Business Profile, local citations, service area pages, and the trust signals that establish your business as the credible, established provider in your market.",
     covers: ["Google Business Profile optimization", "Citation building", "Citation cleanup / NAP consistency", "Local landing pages", "Local relevance optimization", "Service area optimization", "Local trust signals", "Review signal support"],
-    link: "/services/seo-agency",
+    link: "/services/seo-agency/local-seo/",
   },
   {
     icon: BookOpen,
