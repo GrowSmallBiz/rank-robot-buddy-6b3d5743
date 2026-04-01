@@ -18,21 +18,13 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          "vendor-react": ["react", "react-dom", "react-router-dom"],
-          "vendor-radix": [
-            "@radix-ui/react-accordion",
-            "@radix-ui/react-dialog",
-            "@radix-ui/react-dropdown-menu",
-            "@radix-ui/react-navigation-menu",
-            "@radix-ui/react-popover",
-            "@radix-ui/react-scroll-area",
-            "@radix-ui/react-select",
-            "@radix-ui/react-tabs",
-            "@radix-ui/react-toast",
-            "@radix-ui/react-tooltip",
-          ],
-          "vendor-ui": ["class-variance-authority", "clsx", "tailwind-merge", "lucide-react"],
+        manualChunks(id) {
+          // Skip anything marked external by vite-react-ssg
+          if (id.includes("node_modules")) {
+            if (id.includes("lucide-react")) return "vendor-icons";
+            if (id.includes("@radix-ui")) return "vendor-radix";
+            if (id.includes("class-variance-authority") || id.includes("tailwind-merge") || id.includes("clsx")) return "vendor-ui";
+          }
         },
       },
     },
