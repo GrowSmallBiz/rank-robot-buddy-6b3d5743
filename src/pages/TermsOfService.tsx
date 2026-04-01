@@ -8,6 +8,7 @@ const TermsOfService = () => {
       <Head>
         <title>Terms of Service | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Terms and Conditions for GrowSmallBiz Digital Marketing. Read our terms governing the use of our services and website." />
+        <link rel="canonical" href="https://growsmallbiz.io/terms-of-service/" />
       </Head>
       <Header />
       <main id="main-content" className="pt-20">
