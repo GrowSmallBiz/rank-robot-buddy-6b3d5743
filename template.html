@@ -1,10 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager - deferred to not block rendering -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() { loadGTM(); }, { timeout: 3000 });
+      } else {
+        window.addEventListener('load', function() { setTimeout(loadGTM, 1500); });
+      }
+      function loadGTM() {
+        window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var j = document.createElement('script');
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NPBB7NHJ';
+        document.head.appendChild(j);
+      }
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="GrowSmallBiz Digital Marketing" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://growsmallbiz.io/" />
+    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8e092966-c718-4bf0-a0e3-2de8ef029b58/id-preview-200cfc41--9fbe2ca3-4084-400e-a8a4-35fee5032fdf.lovable.app-1774136419789.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GrowSmallBiz" />
+    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8e092966-c718-4bf0-a0e3-2de8ef029b58/id-preview-200cfc41--9fbe2ca3-4084-400e-a8a4-35fee5032fdf.lovable.app-1774136419789.png">
+
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" href="/images/homepage-hero-bg-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
+    <link rel="preload" href="/images/homepage-hero-bg.webp" as="image" type="image/webp" media="(min-width: 769px)">
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload only the primary heading font; others load via stylesheet -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@500;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@500;700;800&display=swap"></noscript>
+
     %LINKS%
     <title>%TITLE%</title>
+
+    <!-- Juhi AI Concierge Chatbot - deferred until after user interaction -->
+    <script>
+      (function() {
+        var chatLoaded = false;
+        function loadChatWidget() {
+          if (chatLoaded) return;
+          chatLoaded = true;
+          var s = document.createElement('script');
+          s.src = 'https://botdisplay.com/chat-widget.js';
+          s.dataset.color = '#3d71bf';
+          s.dataset.assistantId = '1763509281876x767403296729333800';
+          s.dataset.accountId = '4KL47iKeJZ2Ee05j7FBh';
+          s.dataset.position = 'bottom-right';
+          s.dataset.theme = 'light';
+          s.dataset.showPrompt = 'true';
+          s.dataset.autoOpen = 'false';
+          s.dataset.promptMessage = "Hi, I'm Juhi, Juhi AI Concierge, You Can Ask Questions Here + schedule a discovery call";
+          s.dataset.assistantName = 'Juhi AI Concierge';
+          s.dataset.buttonIcon = '';
+          s.dataset.greetingMessage = 'Hi there! My name is {assistant_name} AI Concierge. How can I help today?';
+          s.dataset.prompts = '[]';
+          document.body.appendChild(s);
+        }
+        var events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+        function onInteraction() {
+          events.forEach(function(e) { window.removeEventListener(e, onInteraction); });
+          setTimeout(loadChatWidget, 2000);
+        }
+        events.forEach(function(e) { window.addEventListener(e, onInteraction, { once: false, passive: true }); });
+        setTimeout(loadChatWidget, 15000);
+      })();
+    </script>
   </head>
+
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPBB7NHJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root">%APP%</div>
   </body>
 </html>
