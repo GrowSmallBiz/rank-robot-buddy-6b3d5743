@@ -16,6 +16,25 @@ export const ConsultationFormSection = ({
   utmCampaign = "consultation-form",
   utmMedium,
 }: ConsultationFormSectionProps) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   const iframeSrc = useMemo(
     () => buildCtaUrl(BASE_FORM_URL, utmCampaign, utmMedium),
     [utmCampaign, utmMedium]
