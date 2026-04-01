@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 import { buildCtaUrl } from "@/lib/utm";
 
 interface ConsultationFormSectionProps {
@@ -16,13 +16,32 @@ export const ConsultationFormSection = ({
   utmCampaign = "consultation-form",
   utmMedium,
 }: ConsultationFormSectionProps) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   const iframeSrc = useMemo(
     () => buildCtaUrl(BASE_FORM_URL, utmCampaign, utmMedium),
     [utmCampaign, utmMedium]
   );
 
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+    <section ref={sectionRef} className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
         <div
           className="max-w-3xl mx-auto relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
@@ -39,24 +58,28 @@ export const ConsultationFormSection = ({
               </p>
             </div>
 
-            <iframe
-              src={iframeSrc}
-              style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: "0px" }}
-              id="inline-8qUn6xE0v2Jwcs63q0uV"
-              loading="lazy"
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="GrowSmallBiz Website Contact"
-              data-height="1126"
-              data-layout-iframe-id="inline-8qUn6xE0v2Jwcs63q0uV"
-              data-form-id="8qUn6xE0v2Jwcs63q0uV"
-              title="GrowSmallBiz Website Contact"
-            />
+            {isVisible ? (
+              <iframe
+                src={iframeSrc}
+                style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: "0px" }}
+                id="inline-8qUn6xE0v2Jwcs63q0uV"
+                loading="lazy"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="GrowSmallBiz Website Contact"
+                data-height="1126"
+                data-layout-iframe-id="inline-8qUn6xE0v2Jwcs63q0uV"
+                data-form-id="8qUn6xE0v2Jwcs63q0uV"
+                title="GrowSmallBiz Website Contact"
+              />
+            ) : (
+              <div style={{ width: "100%", height: iframeHeight }} />
+            )}
           </div>
         </div>
       </div>
