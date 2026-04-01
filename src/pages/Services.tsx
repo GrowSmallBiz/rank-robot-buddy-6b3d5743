@@ -54,7 +54,7 @@ const coreServices = [
       "Ongoing technical and on-page optimization across your full site",
       "Content and authority strategy built for both traditional and AI-powered search",
     ],
-    href: "/services/seo-agency",
+    href: "/services/seo-agency/",
     icon: Search,
   },
   {
@@ -65,7 +65,7 @@ const coreServices = [
       "Conversion tracking and landing page alignment that turns clicks into leads",
       "Ongoing optimization focused on cost-per-lead and return on ad spend",
     ],
-    href: "/services/paid-advertising",
+    href: "/services/paid-advertising/",
     icon: BarChart3,
   },
   {
