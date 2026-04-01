@@ -1,14 +1,18 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
+import { lazy as reactLazy, Suspense } from "react";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
-import Index from "./pages/Index";
+
+// Lazy-load toast components — they're rarely needed on initial render
+const Toaster = reactLazy(() => import("@/components/ui/toaster").then(m => ({ default: m.Toaster })));
+const Sonner = reactLazy(() => import("@/components/ui/sonner").then(m => ({ default: m.Toaster })));
 
 const AppLayout = () => (
   <TooltipProvider>
-    <Toaster />
-    <Sonner />
+    <Suspense fallback={null}>
+      <Toaster />
+      <Sonner />
+    </Suspense>
     <Outlet />
   </TooltipProvider>
 );
@@ -24,7 +28,7 @@ export const routes: RouteRecord[] = [
     path: "/",
     Component: AppLayout,
     children: [
-      { index: true, Component: Index },
+      { index: true, lazy: lazy(() => import("./pages/Index")) },
       { path: "about", lazy: lazy(() => import("./pages/About")) },
       { path: "services", lazy: lazy(() => import("./pages/Services")) },
       { path: "service", lazy: lazy(() => import("./pages/Services")) },
