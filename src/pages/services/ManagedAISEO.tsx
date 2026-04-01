@@ -77,7 +77,7 @@ const pillars = [
     title: "Technical SEO",
     description: "If your website's foundation is broken, nothing else in your SEO program will perform. Technical SEO is the infrastructure layer — ensuring search engines can properly access, crawl, index, and understand your site. GrowSmallBiz conducts ongoing technical audits using AI-assisted tools to identify and resolve issues before they suppress your rankings.",
     covers: ["Site health audits", "Crawlability", "Indexation", "Page speed / Core Web Vitals", "Schema markup", "Internal site structure", "Technical issue cleanup", "Mobile usability", "Canonicalization and duplicate-content controls"],
-    link: "/services/seo-agency",
+    link: "/services/seo-agency/technical-seo/",
   },
   {
     icon: FileText,
