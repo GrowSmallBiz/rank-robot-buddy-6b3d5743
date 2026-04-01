@@ -41,7 +41,7 @@ export const ConsultationFormSection = ({
   );
 
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+    <section ref={sectionRef} className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
       <div className="container mx-auto px-4 relative z-10">
         <div
           className="max-w-3xl mx-auto relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
