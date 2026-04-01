@@ -171,11 +171,11 @@ const AuthorityBuilding = () => {
         serviceName="Authority Building for Local Service Businesses"
         serviceType="Authority Building SEO"
         description="Systematic authority building for local service businesses through DKN-driven planning, topical maps, authority blogs, press releases, brand mentions, and digital trust signals."
-        url="/services/seo-agency/authority-building"
+        url="/services/seo-agency/authority-building/"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/seo-agency" },
-          { name: "Authority Building", url: "/services/seo-agency/authority-building" },
+          { name: "Managed AI SEO", url: "/services/seo-agency/" },
+          { name: "Authority Building", url: "/services/seo-agency/authority-building/" },
         ]}
       />
 

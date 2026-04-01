@@ -82,10 +82,10 @@ const FacebookAds = () => {
         serviceName="Facebook Ads Management"
         serviceType="Facebook Ads Management"
         description="Facebook & Instagram Ads management for local service businesses. Precision targeting, conversion-focused creative, full-funnel tracking, and retargeting."
-        url="/services/paid-advertising/facebook-ads"
+        url="/services/paid-advertising/facebook-ads/"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Facebook Ads Management", url: "/services/paid-advertising/facebook-ads" },
+          { name: "Facebook Ads Management", url: "/services/paid-advertising/facebook-ads/" },
         ]}
       />
       <Header />

@@ -249,11 +249,11 @@ const OnPageSEO = () => {
         serviceName="On-Page SEO"
         serviceType="On-Page Search Engine Optimization"
         description="Managed on-page SEO execution for local service businesses. Optimize title tags, headings, content structure, internal linking, and conversion elements across service and location pages."
-        url="/services/seo-agency/on-page-seo"
+        url="/services/seo-agency/on-page-seo/"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/seo-agency" },
-          { name: "On-Page SEO", url: "/services/seo-agency/on-page-seo" },
+          { name: "Managed AI SEO", url: "/services/seo-agency/" },
+          { name: "On-Page SEO", url: "/services/seo-agency/on-page-seo/" },
         ]}
       />
 

@@ -188,11 +188,11 @@ const LinkBuilding = () => {
         serviceName="Link Building for Local Service Businesses"
         serviceType="Link Building SEO"
         description="GrowSmallBiz's managed link-building service earns real, editorially placed links from relevant sites — so you rank higher, attract more qualified traffic, and grow your local authority."
-        url="/services/seo-agency/link-building"
+        url="/services/seo-agency/link-building/"
         breadcrumbs={[
           { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/seo-agency" },
-          { name: "Link Building", url: "/services/seo-agency/link-building" },
+          { name: "Managed AI SEO", url: "/services/seo-agency/" },
+          { name: "Link Building", url: "/services/seo-agency/link-building/" },
         ]}
       />
 
