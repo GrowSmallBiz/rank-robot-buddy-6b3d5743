@@ -111,7 +111,7 @@ const pillars = [
     title: "GEO / AI-Search Visibility",
     description: "AI-driven search is no longer a future consideration — it is here. Generative Engine Optimization (GEO) is the discipline of ensuring your business is visible and credible within AI-driven search environments. GrowSmallBiz structures your content, entities, and online presence so AI search systems can accurately identify what you do, where you operate, and why you are a trusted choice.",
     covers: ["AI-search readiness", "Entity clarity", "Structured content for AI discovery", "Brand/entity reinforcement", "Citation-worthy content structure", "Content formatting for LLM discovery", "Visibility across emerging AI-driven search environments"],
-    link: "/services/seo-agency",
+    link: "/services/seo-agency/geo/",
   },
   {
     icon: Link2,
