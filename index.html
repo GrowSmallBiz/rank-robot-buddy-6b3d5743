@@ -91,34 +91,39 @@
 
 
 
-    <!-- Juhi AI Concierge Chatbot - heavily deferred for performance -->
+    <!-- Juhi AI Concierge Chatbot - deferred until after user interaction to avoid forced reflow -->
     <script>
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(function() {
-          loadChatWidget();
-        }, { timeout: 10000 });
-      } else {
-        window.addEventListener('load', function() {
-          setTimeout(loadChatWidget, 8000);
-        });
-      }
-      function loadChatWidget() {
-        var s = document.createElement('script');
-        s.src = 'https://botdisplay.com/chat-widget.js';
-        s.dataset.color = '#3d71bf';
-        s.dataset.assistantId = '1763509281876x767403296729333800';
-        s.dataset.accountId = '4KL47iKeJZ2Ee05j7FBh';
-        s.dataset.position = 'bottom-right';
-        s.dataset.theme = 'light';
-        s.dataset.showPrompt = 'true';
-        s.dataset.autoOpen = 'false';
-        s.dataset.promptMessage = "Hi, I'm Juhi, Juhi AI Concierge, You Can Ask Questions Here + schedule a discovery call";
-        s.dataset.assistantName = 'Juhi AI Concierge';
-        s.dataset.buttonIcon = '';
-        s.dataset.greetingMessage = 'Hi there! My name is {assistant_name} AI Concierge. How can I help today?';
-        s.dataset.prompts = '[]';
-        document.body.appendChild(s);
-      }
+      (function() {
+        var chatLoaded = false;
+        function loadChatWidget() {
+          if (chatLoaded) return;
+          chatLoaded = true;
+          var s = document.createElement('script');
+          s.src = 'https://botdisplay.com/chat-widget.js';
+          s.dataset.color = '#3d71bf';
+          s.dataset.assistantId = '1763509281876x767403296729333800';
+          s.dataset.accountId = '4KL47iKeJZ2Ee05j7FBh';
+          s.dataset.position = 'bottom-right';
+          s.dataset.theme = 'light';
+          s.dataset.showPrompt = 'true';
+          s.dataset.autoOpen = 'false';
+          s.dataset.promptMessage = "Hi, I'm Juhi, Juhi AI Concierge, You Can Ask Questions Here + schedule a discovery call";
+          s.dataset.assistantName = 'Juhi AI Concierge';
+          s.dataset.buttonIcon = '';
+          s.dataset.greetingMessage = 'Hi there! My name is {assistant_name} AI Concierge. How can I help today?';
+          s.dataset.prompts = '[]';
+          document.body.appendChild(s);
+        }
+        // Only load after first user interaction (scroll, click, touch, or mousemove)
+        var events = ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'];
+        function onInteraction() {
+          events.forEach(function(e) { window.removeEventListener(e, onInteraction); });
+          setTimeout(loadChatWidget, 2000);
+        }
+        events.forEach(function(e) { window.addEventListener(e, onInteraction, { once: false, passive: true }); });
+        // Fallback: load after 15s even without interaction
+        setTimeout(loadChatWidget, 15000);
+      })();
     </script>
 </head>
 
