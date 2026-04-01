@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 import { buildCtaUrl } from "@/lib/utm";
 
 interface ConsultationFormSectionProps {
