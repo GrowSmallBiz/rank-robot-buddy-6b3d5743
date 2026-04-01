@@ -84,7 +84,7 @@ const pillars = [
     title: "On-Page SEO",
     description: "On-page SEO is how your website communicates relevance to both search engines and real people. GrowSmallBiz optimizes your pages for keyword alignment, search intent, and conversion — improving how they are structured, how they communicate value, and how they guide visitors toward action.",
     covers: ["Title tags", "Meta descriptions", "Header structure", "Keyword-to-page alignment", "Service page optimization", "Internal linking", "Image optimization", "Semantic content improvements", "Conversion-focused page enhancements"],
-    link: "/services/seo-agency",
+    link: "/services/seo-agency/on-page-seo/",
   },
   {
     icon: MapPin,
