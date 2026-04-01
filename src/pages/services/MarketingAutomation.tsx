@@ -536,12 +536,12 @@ const MarketingAutomation = () => {
         serviceName="Marketing Automation for Small Business"
         serviceType="Marketing Automation Service"
         description="AI-powered client growth system that helps small businesses capture, nurture, and close leads on autopilot."
-        url="/services/marketing-automation-for-small-business"
+        url="/services/marketing-automation-for-small-business/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
           {
             name: "Marketing Automation",
-            url: "/services/marketing-automation-for-small-business",
+            url: "/services/marketing-automation-for-small-business/",
           },
         ]}
         rating={{ ratingValue: "4.9", reviewCount: "127" }}
@@ -764,7 +764,7 @@ const MarketingAutomation = () => {
                 return (
                   <a
                     key={index}
-                    href={`/services/marketing-automation-for-small-business/${demo.slug}`}
+                    href={`/services/marketing-automation-for-small-business/${demo.slug}/`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group feature-card-teal animate-fade-up flex flex-col items-center text-center"

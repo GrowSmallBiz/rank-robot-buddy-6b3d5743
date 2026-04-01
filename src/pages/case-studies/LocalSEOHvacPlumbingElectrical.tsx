@@ -142,10 +142,10 @@ const LocalSEOHvacPlumbingElectrical = () => {
         pageType="WebPage"
         name="Case Studies for HVAC, Plumbing & Electrical Businesses"
         description="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and Google PPC campaigns."
-        url="/case-studies/hvac-plumbing-electrical"
+        Rl="/case-studies/hvac-plumbing-electrical/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies" },
-          { name: "HVAC, Plumbing & Electrical", url: "/case-studies/hvac-plumbing-electrical" },
+          { name: "Case Studies", url: "/case-studies/" },
+          { name: "HVAC, Plumbing & Electrical", url: "/case-studies/hvac-plumbing-electrical/" },
         ]}
       />
       <Header />

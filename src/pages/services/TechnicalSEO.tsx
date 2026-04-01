@@ -256,11 +256,11 @@ const TechnicalSEO = () => {
         serviceName="Technical SEO for Local Service Businesses"
         serviceType="Technical SEO"
         description="Managed technical SEO services for local service businesses. Crawlability diagnostics, indexation analysis, schema markup, site speed optimization, and ongoing monitoring powered by Agentic AI Playbooks."
-        url="/services/seo-agency/technical-seo"
+        url="/services/seo-agency/technical-seo/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
-          { name: "Managed AI SEO", url: "/services/seo-agency" },
-          { name: "Technical SEO", url: "/services/seo-agency/technical-seo" },
+          { name: "Services", url: "/services/" },
+          { name: "Managed AI SEO", url: "/services/seo-agency/" },
+          { name: "Technical SEO", url: "/services/seo-agency/technical-seo/" },
         ]}
       />
 

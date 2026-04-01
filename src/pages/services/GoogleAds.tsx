@@ -81,10 +81,10 @@ const GoogleAds = () => {
         serviceName="Google Ads for Local Businesses"
         serviceType="Google Ads Management"
         description="Google Ads campaigns built and managed specifically for local service businesses. High-intent keyword targeting, conversion tracking, and ongoing optimization."
-        url="/services/paid-advertising/google-ads"
+        url="/services/paid-advertising/google-ads/"
         breadcrumbs={[
-          { name: "Services", url: "/services" },
-          { name: "Google Ads for Local Businesses", url: "/services/paid-advertising/google-ads" },
+          { name: "Services", url: "/services/" },
+          { name: "Google Ads for Local Businesses", url: "/services/paid-advertising/google-ads/" },
         ]}
       />
       <Header />
