@@ -6,16 +6,16 @@ import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { CardCTA } from "@/components/services";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { useUtm } from "@/hooks/use-utm";
+import { baseContactCTA } from "@/config/contactCTA";
 
 const DanvilleCA = () => {
+  const { buildUrl } = useUtm();
   return (
-    <>
+    <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Danville CA | GrowSmallBiz</title>
         <meta
@@ -36,6 +36,9 @@ const DanvilleCA = () => {
       />
 
       <Header />
+
+
+      <main id="main-content">
 
       <ServiceHero
         badge={{ icon: MapPin, text: "Danville, CA" }}
@@ -208,45 +211,55 @@ const DanvilleCA = () => {
             </ul>
 
             <p>If your business also serves nearby communities, explore our pages for <Link to="/locations/san-ramon-ca/" className="text-primary hover:underline">San Ramon</Link>, <Link to="/locations/dublin-ca/" className="text-primary hover:underline">Dublin</Link>, <Link to="/locations/pleasanton-ca/" className="text-primary hover:underline">Pleasanton</Link>, <Link to="/locations/walnut-creek-ca/" className="text-primary hover:underline">Walnut Creek</Link>, <Link to="/locations/livermore-ca/" className="text-primary hover:underline">Livermore</Link>, and <Link to="/locations/concord-ca/" className="text-primary hover:underline">Concord</Link>.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Frequently Asked Questions About Small Business Marketing in Danville, CA</h2>
-
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="q1">
-                <AccordionTrigger className="text-left text-foreground font-semibold">What types of businesses does GrowSmallBiz work with in Danville, CA?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, realtors, restaurants, and other Danville-area companies that depend on visibility, lead flow, follow-up, and retention.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q2">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Is GrowSmallBiz only an SEO company?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">No. GrowSmallBiz is not just an SEO company. We combine website design, SEO and local SEO, paid ads, marketing automation, and AI-assisted lead handling into one connected growth system.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q3">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Can GrowSmallBiz help if my business already has a website?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Yes. Many businesses already have a website but still need better messaging, stronger conversion flow, stronger local visibility, cleaner landing pages, or better CRM follow-up. We can improve what exists and connect it more effectively to lead generation and conversion.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q4">
-                <AccordionTrigger className="text-left text-foreground font-semibold">How does AI improve digital marketing for small businesses?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">AI improves local marketing when it is used for faster lead response, smarter follow-up, more efficient optimization, and better customer communication. The value is practical: fewer missed opportunities, more consistent handling of inquiries, and better leverage from the marketing you are already paying for.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q5">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Do you work with restaurants that want more repeat business?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Yes. Restaurants can benefit from retention-focused marketing such as promotions, email and SMS offers, reactivation campaigns, and VIP club membership systems that increase repeat visits and customer value.</AccordionContent>
-              </AccordionItem>
-            </Accordion>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Ready to Build a Smarter Marketing System for Your Danville Business?</h2>
-
-            <p>GrowSmallBiz helps Danville businesses connect website performance, search visibility, paid ads, follow-up, conversion, retention, and AI-assisted marketing into one practical system. That is the difference between paying for activity and building a platform that supports real growth.</p>
-
-            <p>If you want a marketing agency in Danville, CA that goes beyond disconnected tactics, GrowSmallBiz is built for that next step. Schedule a strategy conversation or marketing assessment to see where your current system is leaking leads and what a stronger local growth engine could look like.</p>
-
           </div>
         </div>
       </div>
 
+      <FAQSection
+        title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Small Business Marketing in Danville, CA</span></>}
+        faqs={[
+          { question: "What types of businesses does GrowSmallBiz work with in Danville, CA?", answer: "GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, realtors, restaurants, and other Danville-area companies that depend on visibility, lead flow, follow-up, and retention." },
+          { question: "Is GrowSmallBiz only an SEO company?", answer: "No. GrowSmallBiz is not just an SEO company. We combine website design, SEO and local SEO, paid ads, marketing automation, and AI-assisted lead handling into one connected growth system." },
+          { question: "Can GrowSmallBiz help if my business already has a website?", answer: "Yes. Many businesses already have a website but still need better messaging, stronger conversion flow, stronger local visibility, cleaner landing pages, or better CRM follow-up. We can improve what exists and connect it more effectively to lead generation and conversion." },
+          { question: "How does AI improve digital marketing for small businesses?", answer: "AI improves local marketing when it is used for faster lead response, smarter follow-up, more efficient optimization, and better customer communication. The value is practical: fewer missed opportunities, more consistent handling of inquiries, and better leverage from the marketing you are already paying for." },
+          { question: "Do you work with restaurants that want more repeat business?", answer: "Yes. Restaurants can benefit from retention-focused marketing such as promotions, email and SMS offers, reactivation campaigns, and VIP club membership systems that increase repeat visits and customer value." }
+        ]}
+        schemaType="FAQPage"
+        contactCTA={{
+          ...baseContactCTA,
+          title: "Have questions about marketing in Danville?",
+          description: "We're here to help you find the right strategy.",
+          tagline: "Let's grow your Danville business together.",
+        }}
+      />
 
-      <Footer />
-    </>
+      <section id="final-cta" className="py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center animate-fade-up">
+            <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
+            <h2 className="section-title">
+              Ready to Build a Smarter Marketing System for Your{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville Business</span>?
+            </h2>
+            <p className="section-description mt-4 mb-8">
+              GrowSmallBiz helps Danville businesses connect website performance, search visibility, paid ads, follow-up, conversion, retention, and AI-assisted marketing into one practical system. That is the difference between paying for activity and building a platform that supports real growth.
+            </p>
+          </div>
+          <CardCTA
+            title="Schedule Your Free Marketing Assessment"
+            description="If you want a marketing agency in Danville, CA that goes beyond disconnected tactics, GrowSmallBiz is built for that next step. Schedule a strategy conversation or marketing assessment to see where your current system is leaking leads and what a stronger local growth engine could look like."
+            buttonText="Book Your Free Assessment"
+            buttonHref="/contact/"
+            sectionClassName="pt-0 pb-0"
+          />
+        </div>
+      </section>
+
+      <ConsultationFormSection />
+    </main>
+
+    <Footer />
+  </div>
   );
 };
 

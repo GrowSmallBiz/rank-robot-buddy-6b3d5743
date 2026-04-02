@@ -6,11 +6,16 @@ import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { CardCTA } from "@/components/services";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { useUtm } from "@/hooks/use-utm";
+import { baseContactCTA } from "@/config/contactCTA";
 
 const PleasantonCA = () => {
+  const { buildUrl } = useUtm();
   return (
-    <>
+    <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Pleasanton CA | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps Pleasanton, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems." />
@@ -28,6 +33,9 @@ const PleasantonCA = () => {
       />
 
       <Header />
+
+
+      <main id="main-content">
 
       <ServiceHero
         badge={{ icon: MapPin, text: "Pleasanton, CA" }}
@@ -176,47 +184,56 @@ const PleasantonCA = () => {
             <p><strong>Step 3: Launch</strong><br />Improve the website, visibility, campaigns, and lead-handling workflows.</p>
             <p><strong>Step 4: Track and Refine</strong><br />Measure inquiry flow, identify friction points, and improve what is actually influencing results.</p>
             <p><strong>Step 5: Scale</strong><br />Strengthen the pieces that are producing better lead quality, better conversion, and better customer value.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Frequently Asked Questions</h2>
-
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="q1">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Can I rank in Pleasanton without a Pleasanton address?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Yes. Service-area businesses can still build strong local relevance through service areas, geo-targeted landing pages, citations, reviews, and stronger service-page content. A physical address can help on proximity, but <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google</a> still weighs relevance and popularity too.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q2">
-                <AccordionTrigger className="text-left text-foreground font-semibold">I have a Pleasanton address but I am not in the map pack. Why?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Because an address alone does not solve relevance or prominence. Businesses often underperform because their Google Business Profile is incomplete, their categories are weak, their review activity is stale, or their website does not clearly support Pleasanton-specific service relevance. <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google's guidance</a> points directly to relevance, distance, and popularity as the main local factors.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q3">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Do Google Local Services Ads work for Pleasanton contractors?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">They can be strong for eligible categories because they place the business prominently in local results and use Google's verification framework as a trust signal. But they work best when paired with strong lead handling, accurate setup, and ongoing management.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q4">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Do I need a new website before starting SEO or ads?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Not always. Many businesses need targeted improvements more than a full rebuild. The real question is whether the site can support trust, mobile usability, and lead capture well enough that more traffic will not just leak away.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q5">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Can the AI Receptionist work with my existing phone setup?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Usually yes. The value is that it helps reduce missed opportunities by handling after-hours or overflow situations more consistently and by supporting follow-up across channels.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q6">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Do you manage all channels together, or do I have to coordinate vendors?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">The whole point is to avoid fragmented execution. GrowSmallBiz is positioned around one strategy that connects website performance, local SEO, paid ads, follow-up, conversion, and retention so the channels reinforce one another instead of competing for attention.</AccordionContent>
-              </AccordionItem>
-            </Accordion>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Ready to Grow Your Pleasanton Service Business?</h2>
-            <p>GrowSmallBiz helps Pleasanton businesses connect website performance, search visibility, paid ads, follow-up, conversion, and retention into one practical system. That is the difference between paying for marketing activity and building a structure that supports real business growth.</p>
-            <p>If you want a smarter, more connected approach to digital marketing in Pleasanton, GrowSmallBiz is built for that next step. Schedule a strategy conversation or marketing assessment to see where your current system is leaking leads and what a stronger local growth engine could look like.</p>
-
           </div>
         </div>
       </div>
 
+      <FAQSection
+        title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Marketing in Pleasanton, CA</span></>}
+        faqs={[
+          { question: "Can I rank in Pleasanton without a Pleasanton address?", answer: "Yes. Service-area businesses can still build strong local relevance through service areas, geo-targeted landing pages, citations, reviews, and stronger service-page content. A physical address can help on proximity, but Google still weighs relevance and popularity too." },
+          { question: "I have a Pleasanton address but I am not in the map pack. Why?", answer: "Because an address alone does not solve relevance or prominence. Businesses often underperform because their Google Business Profile is incomplete, their categories are weak, their review activity is stale, or their website does not clearly support Pleasanton-specific service relevance. Google's guidance points directly to relevance, distance, and popularity as the main local factors." },
+          { question: "Do Google Local Services Ads work for Pleasanton contractors?", answer: "They can be strong for eligible categories because they place the business prominently in local results and use Google's verification framework as a trust signal. But they work best when paired with strong lead handling, accurate setup, and ongoing management." },
+          { question: "Do I need a new website before starting SEO or ads?", answer: "Not always. Many businesses need targeted improvements more than a full rebuild. The real question is whether the site can support trust, mobile usability, and lead capture well enough that more traffic will not just leak away." },
+          { question: "Can the AI Receptionist work with my existing phone setup?", answer: "Usually yes. The value is that it helps reduce missed opportunities by handling after-hours or overflow situations more consistently and by supporting follow-up across channels." },
+          { question: "Do you manage all channels together, or do I have to coordinate vendors?", answer: "The whole point is to avoid fragmented execution. GrowSmallBiz is positioned around one strategy that connects website performance, local SEO, paid ads, follow-up, conversion, and retention so the channels reinforce one another instead of competing for attention." }
+        ]}
+        schemaType="FAQPage"
+        contactCTA={{
+          ...baseContactCTA,
+          title: "Have questions about marketing in Pleasanton?",
+          description: "We're here to help you find the right strategy.",
+          tagline: "Let's grow your Pleasanton business together.",
+        }}
+      />
 
-      <Footer />
-    </>
+      <section id="final-cta" className="py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center animate-fade-up">
+            <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
+            <h2 className="section-title">
+              Ready to Build a Smarter Marketing System for Your{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Pleasanton Business</span>?
+            </h2>
+            <p className="section-description mt-4 mb-8">
+              GrowSmallBiz helps Pleasanton businesses connect website performance, search visibility, paid ads, follow-up, conversion, and retention into one practical system. That is the difference between paying for marketing activity and building a structure that supports real business growth.
+            </p>
+          </div>
+          <CardCTA
+            title="Schedule Your Free Marketing Assessment"
+            description="If you want a smarter, more connected approach to digital marketing in Pleasanton, GrowSmallBiz is built for that next step. Schedule a strategy conversation or marketing assessment to see where your current system is leaking leads and what a stronger local growth engine could look like."
+            buttonText="Book Your Free Assessment"
+            buttonHref="/contact/"
+            sectionClassName="pt-0 pb-0"
+          />
+        </div>
+      </section>
+
+      <ConsultationFormSection />
+    </main>
+
+    <Footer />
+  </div>
   );
 };
 
