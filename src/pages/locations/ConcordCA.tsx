@@ -6,11 +6,16 @@ import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { CardCTA } from "@/components/services";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { useUtm } from "@/hooks/use-utm";
+import { baseContactCTA } from "@/config/contactCTA";
 
 const ConcordCA = () => {
+  const { buildUrl } = useUtm();
   return (
-    <>
+    <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Concord CA | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps Concord, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems." />
@@ -28,6 +33,9 @@ const ConcordCA = () => {
       />
 
       <Header />
+
+
+      <main id="main-content">
 
       <ServiceHero
         badge={{ icon: MapPin, text: "Concord, CA" }}
@@ -212,47 +220,56 @@ const ConcordCA = () => {
 
             <h2 className="text-3xl font-display font-bold text-foreground mt-16">Serving Concord and the Wider East Bay</h2>
             <p>GrowSmallBiz supports businesses in Concord as well as nearby East Bay and Contra Costa communities including Walnut Creek, Pleasant Hill, Martinez, Pittsburg, Brentwood, Antioch, and surrounding service areas. That overlap matters because buyers often compare across city lines even when local trust still drives the final decision.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Frequently Asked Questions</h2>
-
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="q1">
-                <AccordionTrigger className="text-left text-foreground font-semibold">What types of businesses does GrowSmallBiz work with in Concord, CA?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, chiropractors, real estate professionals, restaurants, and other businesses that rely on local visibility, qualified inquiries, and consistent follow-up.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q2">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Is GrowSmallBiz only an SEO company?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">No. SEO is one important part of the system, but GrowSmallBiz is not positioned as an SEO-only provider. The broader model includes website design, SEO, paid ads, marketing automation, and lead-handling improvements.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q3">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Can GrowSmallBiz help if my business already has a website?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Yes. Many businesses already have a website but still need stronger messaging, cleaner landing pages, better local visibility, stronger calls to action, or more effective follow-up. An existing website can often be improved rather than replaced immediately.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q4">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Do you offer Google Ads and Local Services Ads for Concord businesses?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Yes. GrowSmallBiz can support paid lead generation through Google Ads and Local Services Ads as part of a broader system that also includes landing pages, tracking, and lead follow-up.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q5">
-                <AccordionTrigger className="text-left text-foreground font-semibold">How does AI improve local marketing for small businesses?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">AI improves local marketing when it is used for practical business functions such as faster lead response, smarter follow-up, better workflow consistency, and more efficient optimization. The value is not the label. The value is better execution.</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="q6">
-                <AccordionTrigger className="text-left text-foreground font-semibold">Why does local SEO still matter if search is becoming more AI-driven?</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">Because <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google</a> says the same foundational SEO best practices still apply to AI features, and local search visibility still depends on factors such as relevance, distance, and popularity. Strong local SEO and strong AI visibility increasingly reinforce each other instead of competing with each other.</AccordionContent>
-              </AccordionItem>
-            </Accordion>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Ready to Build a Stronger Growth System for Concord?</h2>
-            <p>GrowSmallBiz helps Concord businesses connect website performance, search visibility, paid ads, follow-up, conversion, and retention into one practical system. That is the difference between paying for marketing activity and building a structure that supports real business growth.</p>
-            <p>If you want a smarter, more connected approach to digital marketing in Concord, CA, GrowSmallBiz is built for that next step. We can look at where your current system is losing visibility, losing trust, or losing leads — and what a stronger local growth engine could look like.</p>
-
           </div>
         </div>
       </div>
 
+      <FAQSection
+        title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Marketing in Concord, CA</span></>}
+        faqs={[
+          { question: "What types of businesses does GrowSmallBiz work with in Concord, CA?", answer: "GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, chiropractors, real estate professionals, restaurants, and other businesses that rely on local visibility, qualified inquiries, and consistent follow-up." },
+          { question: "Is GrowSmallBiz only an SEO company?", answer: "No. SEO is one important part of the system, but GrowSmallBiz is not positioned as an SEO-only provider. The broader model includes website design, SEO, paid ads, marketing automation, and lead-handling improvements." },
+          { question: "Can GrowSmallBiz help if my business already has a website?", answer: "Yes. Many businesses already have a website but still need stronger messaging, cleaner landing pages, better local visibility, stronger calls to action, or more effective follow-up. An existing website can often be improved rather than replaced immediately." },
+          { question: "Do you offer Google Ads and Local Services Ads for Concord businesses?", answer: "Yes. GrowSmallBiz can support paid lead generation through Google Ads and Local Services Ads as part of a broader system that also includes landing pages, tracking, and lead follow-up." },
+          { question: "How does AI improve local marketing for small businesses?", answer: "AI improves local marketing when it is used for practical business functions such as faster lead response, smarter follow-up, better workflow consistency, and more efficient optimization. The value is not the label. The value is better execution." },
+          { question: "Why does local SEO still matter if search is becoming more AI-driven?", answer: "Because Google says the same foundational SEO best practices still apply to AI features, and local search visibility still depends on factors such as relevance, distance, and popularity. Strong local SEO and strong AI visibility increasingly reinforce each other instead of competing with each other." }
+        ]}
+        schemaType="FAQPage"
+        contactCTA={{
+          ...baseContactCTA,
+          title: "Have questions about marketing in Concord?",
+          description: "We're here to help you find the right strategy.",
+          tagline: "Let's grow your Concord business together.",
+        }}
+      />
 
-      <Footer />
-    </>
+      <section id="final-cta" className="py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center animate-fade-up">
+            <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
+            <h2 className="section-title">
+              Ready to Build a Smarter Marketing System for Your{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Concord Business</span>?
+            </h2>
+            <p className="section-description mt-4 mb-8">
+              GrowSmallBiz helps Concord businesses connect website performance, search visibility, paid ads, follow-up, conversion, and retention into one practical system. That is the difference between paying for marketing activity and building a structure that supports real business growth.
+            </p>
+          </div>
+          <CardCTA
+            title="Schedule Your Free Marketing Assessment"
+            description="If you want a smarter, more connected approach to digital marketing in Concord, CA, GrowSmallBiz is built for that next step. We can look at where your current system is losing visibility, losing trust, or losing leads — and what a stronger local growth engine could look like."
+            buttonText="Book Your Free Assessment"
+            buttonHref="/contact/"
+            sectionClassName="pt-0 pb-0"
+          />
+        </div>
+      </section>
+
+      <ConsultationFormSection />
+    </main>
+
+    <Footer />
+  </div>
   );
 };
 
