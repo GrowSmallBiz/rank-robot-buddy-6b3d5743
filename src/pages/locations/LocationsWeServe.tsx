@@ -137,7 +137,7 @@ const LocationsWeServe = () => {
                   <Link
                     key={item.city}
                     to={item.slug}
-                    className="group block p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.1)] hover:-translate-y-1"
+                    className="group block p-6 feature-card-teal rounded-2xl transition-all duration-300 hover:-translate-y-1"
                   >
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
