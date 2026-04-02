@@ -19,8 +19,18 @@ const AppLayout = () => (
 
 const lazy = (importFn: () => Promise<{ default: React.ComponentType }>) =>
   async () => {
-    const mod = await importFn();
-    return { Component: mod.default };
+    try {
+      const mod = await importFn();
+      return { Component: mod.default };
+    } catch (err) {
+      // Stale chunk after deploy — reload once to fetch fresh assets
+      const key = "chunk-reload";
+      if (!sessionStorage.getItem(key)) {
+        sessionStorage.setItem(key, "1");
+        window.location.reload();
+      }
+      throw err;
+    }
   };
 
 export const routes: RouteRecord[] = [
