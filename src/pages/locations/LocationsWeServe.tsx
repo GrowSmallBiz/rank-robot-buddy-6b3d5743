@@ -90,7 +90,7 @@ const LocationsWeServe = () => {
         />
 
         {/* East Bay Section */}
-        <section className="py-24 bg-background">
+        <section className="pt-8 pb-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-16">
               <div className="service-badge mb-4">
