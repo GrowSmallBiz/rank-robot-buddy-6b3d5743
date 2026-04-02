@@ -861,11 +861,6 @@ const LocationsWeServe = () => {
         </div>
       </section>
 
-      <StickyCardCTA
-        title="Ready to Grow Your Bay Area Business?"
-        description="Get a free marketing assessment tailored to your local market. Our Bay Area experts will identify growth opportunities for your business."
-        accentWords={["Bay Area"]}
-      />
       <Footer />
     </>
   );

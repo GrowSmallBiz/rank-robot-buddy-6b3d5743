@@ -263,13 +263,6 @@ const WalnutCreekCA = () => {
         </div>
       </div>
 
-      <StickyCardCTA
-        title="Ready to Grow Your Walnut Creek Business?"
-        description="Get a free marketing assessment and discover how a connected growth system can help your Walnut Creek business generate more leads."
-        buttonText="Book Free Assessment"
-        buttonHref="/contact/"
-        accentWords={["Walnut Creek"]}
-      />
 
       <Footer />
     </>

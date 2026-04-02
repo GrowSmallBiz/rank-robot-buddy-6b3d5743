@@ -251,13 +251,6 @@ const DublinCA = () => {
         </div>
       </div>
 
-      <StickyCardCTA
-        title="Ready to Grow Your Dublin Business?"
-        description="Get a free marketing assessment and discover how a connected growth system can help your Dublin business generate more leads."
-        buttonText="Book Free Assessment"
-        buttonHref="/contact/"
-        accentWords={["Dublin"]}
-      />
 
       <Footer />
     </>

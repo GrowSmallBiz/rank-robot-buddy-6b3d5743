@@ -214,13 +214,6 @@ const PleasantonCA = () => {
         </div>
       </div>
 
-      <StickyCardCTA
-        title="Ready to Grow Your Pleasanton Business?"
-        description="Get a free marketing assessment and discover how a connected growth system can help your Pleasanton business generate more leads."
-        buttonText="Book Free Assessment"
-        buttonHref="/contact/"
-        accentWords={["Pleasanton"]}
-      />
 
       <Footer />
     </>

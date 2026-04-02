@@ -250,13 +250,6 @@ const ConcordCA = () => {
         </div>
       </div>
 
-      <StickyCardCTA
-        title="Ready to Grow Your Concord Business?"
-        description="Get a free marketing assessment and discover how a connected growth system can help your Concord business generate more leads."
-        buttonText="Book Free Assessment"
-        buttonHref="/contact/"
-        accentWords={["Concord"]}
-      />
 
       <Footer />
     </>

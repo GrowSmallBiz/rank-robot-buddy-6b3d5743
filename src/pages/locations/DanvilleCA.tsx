@@ -244,13 +244,6 @@ const DanvilleCA = () => {
         </div>
       </div>
 
-      <StickyCardCTA
-        title="Ready to Grow Your Danville Business?"
-        description="Get a free marketing assessment and discover how a connected growth system can help your Danville business generate more leads."
-        buttonText="Book Free Assessment"
-        buttonHref="/contact/"
-        accentWords={["Danville"]}
-      />
 
       <Footer />
     </>
