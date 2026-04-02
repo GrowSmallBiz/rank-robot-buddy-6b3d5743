@@ -163,7 +163,7 @@ const PleasantonCA = () => {
                 { title: "Health & Wellness Practice Manager", quote: "What stood out was the focus on the full inquiry experience, not just traffic. The recommendations felt practical for a local business that depends on trust and consistency." },
                 { title: "Tri-Valley Business Owner", quote: "They understood that visibility is only one part of the equation. The follow-up side matters just as much, and their approach reflected that." },
               ].map((t, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-card border border-border">
+                <div key={i} className="p-6 feature-card-teal rounded-2xl">
                   <h4 className="text-lg font-bold text-foreground mb-3">{t.title}</h4>
                   <p className="text-foreground/90 italic">"{t.quote}"</p>
                 </div>

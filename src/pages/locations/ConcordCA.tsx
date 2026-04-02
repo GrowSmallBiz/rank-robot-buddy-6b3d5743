@@ -193,7 +193,7 @@ const ConcordCA = () => {
                 { title: "Concord Wellness Practice Manager", quote: "The recommendations felt practical for a local business that needs both trust and consistency. It was less about marketing buzzwords and more about making the customer journey work." },
                 { title: "Concord-Area Professional Services Owner", quote: "They understood that visibility is only one part of the problem. The bigger change came from improving how the business responded and followed through." },
               ].map((t, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-card border border-border">
+                <div key={i} className="p-6 feature-card-teal rounded-2xl">
                   <h4 className="text-lg font-bold text-foreground mb-3">{t.title}</h4>
                   <p className="text-foreground/90 italic">"{t.quote}"</p>
                 </div>

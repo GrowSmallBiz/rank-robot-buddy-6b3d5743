@@ -358,7 +358,7 @@ const Index = () => {
             {howItWorksSteps.map((step, index) => (
               <div
                 key={index}
-                className="bg-background/80 border border-ghl-icon rounded-xl p-6 text-center space-y-4 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
+                className="feature-card-teal rounded-xl p-6 text-center space-y-4 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center">

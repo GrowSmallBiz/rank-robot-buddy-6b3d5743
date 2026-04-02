@@ -190,7 +190,7 @@ const LivermoreCA = () => {
                 { title: "Tri-Valley Health & Wellness Manager", quote: "The recommendations felt practical for a local business that needs both trust and consistency. It was less about marketing jargon and more about making the customer journey work." },
                 { title: "East Bay Repeat-Visit Business Owner", quote: "They understood that getting found is only one part of the job. The bigger difference came from improving how the business followed up and stayed in front of people over time." },
               ].map((t, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-card border border-border">
+                <div key={i} className="p-6 feature-card-teal rounded-2xl">
                   <h4 className="text-lg font-bold text-foreground mb-3">{t.title}</h4>
                   <p className="text-foreground/90 italic">"{t.quote}"</p>
                 </div>

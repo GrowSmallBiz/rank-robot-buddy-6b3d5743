@@ -372,7 +372,7 @@ const Services = () => {
           />
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
             {systemStages.map((stage, si) => (
-              <div key={stage.label} className="bg-card border border-border rounded-2xl overflow-hidden animate-fade-up" style={{ animationDelay: `${si * 0.1}s` }}>
+              <div key={stage.label} className="feature-card-teal rounded-2xl overflow-hidden animate-fade-up" style={{ animationDelay: `${si * 0.1}s` }}>
                 <div className={`h-2 bg-gradient-to-r ${stage.color}`} />
                 <div className="p-8">
                   <h3 className="text-2xl font-display font-bold text-foreground mb-6">{stage.label}</h3>

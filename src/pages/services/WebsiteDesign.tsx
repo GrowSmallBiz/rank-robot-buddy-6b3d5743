@@ -590,7 +590,7 @@ const WebsiteDesign = () => {
                     <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 h-px bg-primary/30 ${isLeft ? 'right-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]' : 'left-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]'}`} />
 
                     <div className={`md:w-[calc(50%-2rem)] ${isLeft ? 'md:mr-auto' : 'md:ml-auto'}`}>
-                      <div className="bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] transition-all duration-300">
+                      <div className="feature-card-teal rounded-2xl p-8">
                         <div className="flex items-center gap-3 mb-4">
                           <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
                             <span className="text-sm font-bold text-primary-foreground">{index + 1}</span>
@@ -660,7 +660,7 @@ const WebsiteDesign = () => {
             {industries.map((industry, index) => (
               <div
                 key={index}
-                className="bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] hover:border-primary/30 transition-all duration-300 animate-fade-up"
+                className="feature-card-teal rounded-2xl p-8 animate-fade-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <div className="flex items-start gap-4">
