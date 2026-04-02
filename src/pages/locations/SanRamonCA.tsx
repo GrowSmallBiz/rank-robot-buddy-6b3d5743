@@ -253,7 +253,7 @@ const SanRamonCA = () => {
                 { title: "Tri-Valley Practice Manager", quote: "The recommendations felt practical for a local business that needs both trust and consistency. It was less about marketing jargon and more about making the system work." },
                 { title: "East Bay Professional Services Owner", quote: "They understood that in a market like San Ramon, looking credible is only one part of the job. The bigger value came from improving response, follow-through, and coordination." },
               ].map((t, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-card border border-border">
+                <div key={i} className="p-6 feature-card-teal rounded-2xl">
                   <h4 className="text-lg font-bold text-foreground mb-3">{t.title}</h4>
                   <p className="text-foreground/90 italic">"{t.quote}"</p>
                 </div>

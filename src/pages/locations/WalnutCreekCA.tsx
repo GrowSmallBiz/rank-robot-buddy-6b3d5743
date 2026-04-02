@@ -206,7 +206,7 @@ const WalnutCreekCA = () => {
                 { title: "East Bay Wellness Practice Manager", quote: "What stood out was the focus on trust and follow-through. The recommendations felt built for a market where buyers are comparing carefully, not just clicking around." },
                 { title: "Tri-Valley Professional Services Owner", quote: "They understood that visibility alone does not win in a place like Walnut Creek. The way they tied together presentation, follow-up, and conversion made the strategy feel much more complete." },
               ].map((t, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-card border border-border">
+                <div key={i} className="p-6 feature-card-teal rounded-2xl">
                   <h4 className="text-lg font-bold text-foreground mb-3">{t.title}</h4>
                   <p className="text-foreground/90 italic">"{t.quote}"</p>
                 </div>

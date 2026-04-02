@@ -194,7 +194,7 @@ const DublinCA = () => {
                 { title: "Tri-Valley Health & Wellness Manager", quote: "The recommendations felt practical for a local business that needs both trust and consistency. It was less about marketing jargon and more about making the customer journey work." },
                 { title: "East Bay Real Estate Professional", quote: "They understood that visibility is only part of the job. The bigger value came from improving how the business handled and followed up on leads over time." },
               ].map((t, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-card border border-border">
+                <div key={i} className="p-6 feature-card-teal rounded-2xl">
                   <h4 className="text-lg font-bold text-foreground mb-3">{t.title}</h4>
                   <p className="text-foreground/90 italic">"{t.quote}"</p>
                 </div>

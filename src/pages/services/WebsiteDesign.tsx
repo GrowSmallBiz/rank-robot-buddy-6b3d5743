@@ -660,7 +660,7 @@ const WebsiteDesign = () => {
             {industries.map((industry, index) => (
               <div
                 key={index}
-                className="bg-card/50 border border-border rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.15)] hover:border-primary/30 transition-all duration-300 animate-fade-up"
+                className="feature-card-teal rounded-2xl p-8 animate-fade-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <div className="flex items-start gap-4">

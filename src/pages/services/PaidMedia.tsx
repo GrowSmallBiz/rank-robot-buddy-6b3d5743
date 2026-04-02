@@ -405,7 +405,7 @@ const PaidMedia = () => {
                 { icon: Megaphone, title: "Organic Social Builds Awareness", body: "Social media helps people notice your brand, but not every local business owner has time to create content consistently. Paid campaigns help put the right offer in front of the right audience faster." },
                 { icon: MousePointerClick, title: "Paid Ads Create Faster Market Visibility", body: "When campaigns are built correctly, paid ads help you test offers, target service areas, control budgets, and generate qualified calls or leads with much more predictability." },
               ].map((card, i) => (
-                <div key={i} className="bg-card border border-border rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <card.icon className="w-5 h-5 text-primary" />
                   </div>

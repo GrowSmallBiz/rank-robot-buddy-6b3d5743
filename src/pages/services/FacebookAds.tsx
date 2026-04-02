@@ -296,7 +296,7 @@ const FacebookAds = () => {
                 { icon: Camera, title: "Photographers & Creative Professionals", desc: "Showcase your work with visually-led ad campaigns designed to book consultations, sessions, and engagements." },
                 { icon: Briefcase, title: "Other Local Professional Services", desc: "CPAs, attorneys, financial advisors, consultants, and other local professionals — if you serve a local market and need a consistent pipeline of qualified leads, we can build and manage the campaigns that deliver them." },
               ].map((ind, i) => (
-                <div key={i} className="bg-card border border-border rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <ind.icon className="w-5 h-5 text-primary" />

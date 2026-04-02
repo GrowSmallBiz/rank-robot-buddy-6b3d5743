@@ -177,7 +177,7 @@ const DanvilleCA = () => {
                 { initials: "KR", role: "Broker Associate", company: "Danville-Area Real Estate Business", quote: "They understood that consistent visibility is only one part of the equation. The way they think about follow-up, communication, and long-term lead handling made the overall approach feel much more useful." },
                 { initials: "ST", role: "Operator", company: "Danville-Area Restaurant", quote: "The conversation felt grounded in real business needs, not generic marketing talk. Their ideas around customer communication, promotions, and repeat-visit strategy were especially relevant for a local restaurant." },
               ].map((t, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-card border border-border">
+                <div key={i} className="p-6 feature-card-teal rounded-2xl">
                   <p className="text-foreground/90 italic mb-4">"{t.quote}"</p>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">{t.initials}</div>
