@@ -77,43 +77,48 @@ const LocationsWeServe = () => {
             <h3 className="text-2xl font-display font-bold text-foreground mb-8 text-center">
               <span className="text-transparent bg-clip-text bg-gradient-primary">Diablo Valley</span> Region
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
                   city: "Danville",
+                  slug: "/locations/danville-ca/",
                   desc: "Danville's affluent market supports high-value service businesses, making targeted digital marketing strategies focused on premium branding and lead generation essential for success.",
                 },
                 {
                   city: "San Ramon",
+                  slug: "/locations/san-ramon-ca/",
                   desc: "With a strong corporate and B2B presence, San Ramon businesses benefit from AI-driven marketing systems and professional content marketing to engage decision-makers effectively.",
                 },
                 {
                   city: "Walnut Creek",
+                  slug: "/locations/walnut-creek-ca/",
                   desc: "Walnut Creek's vibrant retail and professional services sectors require comprehensive local SEO and reputation management to capture both foot traffic and online leads.",
                 },
                 {
                   city: "Concord",
+                  slug: "/locations/concord-ca/",
                   desc: "Concord's diverse small and medium business market thrives with localized SEO, social media engagement, and targeted advertising campaigns tailored to varied industries.",
                 },
-                {
-                  city: "Martinez",
-                  desc: "As a hub for government and healthcare services, Martinez businesses gain from reputation management and specialized content marketing to build trust and community presence.",
-                },
               ].map((item) => (
-                <div
+                <Link
                   key={item.city}
-                  className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.1)]"
+                  to={item.slug}
+                  className="group block p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.1)] hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
-                    <h4 className="text-lg font-bold text-foreground">
+                    <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
                       Digital Marketing in {item.city}, CA
                     </h4>
                   </div>
                   <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
-                </div>
+                  <div className="flex items-center gap-2 text-primary font-medium pt-4 group-hover:gap-3 transition-all">
+                    Learn More
+                    <ArrowRight className="w-4 h-4" />
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -123,39 +128,43 @@ const LocationsWeServe = () => {
             <h3 className="text-2xl font-display font-bold text-foreground mb-8 text-center">
               <span className="text-transparent bg-clip-text bg-gradient-primary">Tri-Valley</span> Region
             </h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               {[
                 {
                   city: "Dublin",
+                  slug: "/locations/dublin-ca/",
                   desc: "Dublin's fast-growing residential and retail markets demand dynamic digital marketing strategies that combine local SEO with social media advertising to attract new residents and shoppers.",
                 },
                 {
                   city: "Pleasanton",
+                  slug: "/locations/pleasanton-ca/",
                   desc: "Known as a small business hub, Pleasanton businesses benefit from integrated marketing approaches including PPC, content marketing, and reputation management to drive growth.",
                 },
                 {
                   city: "Livermore",
+                  slug: "/locations/livermore-ca/",
                   desc: "Livermore's unique blend of wine country tourism and industrial sectors requires specialized marketing strategies that highlight local attractions and B2B services.",
                 },
-                {
-                  city: "Tracy",
-                  desc: "Tracy's logistics industry and expanding residential communities thrive with targeted local SEO and digital advertising campaigns designed to capture both commercial and consumer markets.",
-                },
               ].map((item) => (
-                <div
+                <Link
                   key={item.city}
-                  className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.1)]"
+                  to={item.slug}
+                  className="group block p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.1)] hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
-                    <h4 className="text-lg font-bold text-foreground">
+                    <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
                       Digital Marketing in {item.city}, CA
                     </h4>
                   </div>
                   <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
-                </div>
+                  <div className="flex items-center gap-2 text-primary font-medium pt-4 group-hover:gap-3 transition-all">
+                    Learn More
+                    <ArrowRight className="w-4 h-4" />
+                  </div>
+                </Link>
               ))}
             </div>
           </div>

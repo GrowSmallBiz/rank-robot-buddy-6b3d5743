@@ -65,6 +65,13 @@ export const routes: RouteRecord[] = [
       { path: "services/marketing-automation-for-small-business/generate-leads", lazy: lazy(() => import("./pages/demos/GenerateLeads")) },
       
       { path: "locations/locations-we-serve", lazy: lazy(() => import("./pages/locations/LocationsWeServe")) },
+      { path: "locations/danville-ca", lazy: lazy(() => import("./pages/locations/DanvilleCA")) },
+      { path: "locations/san-ramon-ca", lazy: lazy(() => import("./pages/locations/SanRamonCA")) },
+      { path: "locations/walnut-creek-ca", lazy: lazy(() => import("./pages/locations/WalnutCreekCA")) },
+      { path: "locations/concord-ca", lazy: lazy(() => import("./pages/locations/ConcordCA")) },
+      { path: "locations/dublin-ca", lazy: lazy(() => import("./pages/locations/DublinCA")) },
+      { path: "locations/pleasanton-ca", lazy: lazy(() => import("./pages/locations/PleasantonCA")) },
+      { path: "locations/livermore-ca", lazy: lazy(() => import("./pages/locations/LivermoreCA")) },
 
       { path: "case-studies/local-seo-service/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
       { path: "case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
