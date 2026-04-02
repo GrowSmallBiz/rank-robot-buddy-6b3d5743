@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
-import { StickyCardCTA } from "@/components/services/StickyCardCTA";
+
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
@@ -214,13 +214,6 @@ const PleasantonCA = () => {
         </div>
       </div>
 
-      <StickyCardCTA
-        title="Ready to Grow Your Pleasanton Business?"
-        description="Get a free marketing assessment and discover how a connected growth system can help your Pleasanton business generate more leads."
-        buttonText="Book Free Assessment"
-        buttonHref="/contact/"
-        accentWords={["Pleasanton"]}
-      />
 
       <Footer />
     </>

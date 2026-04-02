@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
-import { StickyCardCTA } from "@/components/services/StickyCardCTA";
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Head } from "vite-react-ssg";
@@ -861,11 +861,6 @@ const LocationsWeServe = () => {
         </div>
       </section>
 
-      <StickyCardCTA
-        title="Ready to Grow Your Bay Area Business?"
-        description="Get a free marketing assessment tailored to your local market. Our Bay Area experts will identify growth opportunities for your business."
-        accentWords={["Bay Area"]}
-      />
       <Footer />
     </>
   );
