@@ -321,7 +321,7 @@ const GoogleAds = () => {
                 { icon: Users, title: "Realtors" },
                 { icon: Camera, title: "Photographers" },
               ].map((ind, i) => (
-                <div key={i} className="bg-card border border-border rounded-xl p-5 text-center space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                <div key={i} className="feature-card-teal rounded-xl p-5 text-center space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                   <div className="w-10 h-10 mx-auto rounded-lg bg-primary/10 flex items-center justify-center">
                     <ind.icon className="w-5 h-5 text-primary" />
                   </div>
