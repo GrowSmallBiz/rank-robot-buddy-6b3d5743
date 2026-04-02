@@ -232,7 +232,7 @@ const FacebookAds = () => {
                 { title: "Monthly Performance Reporting", desc: "Clear monthly reports covering key metrics: cost per lead, lead volume, click-through rate, reach, frequency, and ROAS. Plus a summary of optimizations made and the plan for the following month." },
                 { title: "Lead Follow-Up Integration", desc: "We connect your ads to your CRM or lead notification system so new leads are followed up with immediately. Speed to lead is one of the biggest drivers of conversion — we make sure no lead goes cold." },
               ].map((svc, i) => (
-                <div key={i} className="bg-card border border-border rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                   <h4 className="text-base font-display font-semibold text-foreground">{svc.title}</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">{svc.desc}</p>
                 </div>
