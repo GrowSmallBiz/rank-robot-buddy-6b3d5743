@@ -15,6 +15,8 @@ import { createContactCTA } from "@/config/contactCTA";
 import { ArrowRight, Target, Users, Zap, Award, TrendingUp, Shield, MapPin, Bot, Eye, PhoneCall } from "lucide-react";
 import { Link } from "react-router-dom";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { useUtm } from "@/hooks/use-utm";
+import { CTA_URLS } from "@/lib/utm";
 
 const aboutFaqs = [
   {
