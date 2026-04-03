@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout/Header";
+import danvilleHero from "@/assets/danville-hero.jpg";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 
@@ -42,7 +43,8 @@ const DanvilleCA = () => {
 
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="absolute inset-0" style={{ backgroundColor: `hsl(var(--background) / 0.85)` }} />
+        <img src={danvilleHero} alt="Danville California rolling hills with Mount Diablo in the background at golden hour" width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0" style={{ backgroundColor: `hsl(var(--background) / 0.82)` }} />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* City pill */}
