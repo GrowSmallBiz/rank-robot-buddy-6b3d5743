@@ -318,6 +318,7 @@ const About = () => {
       <CardCTA
         title="Let's Talk About Your Business"
         description="Schedule a free strategy call to discuss how we can help your local business grow online."
+        buttonHref={strategyCallUrl}
       />
 
       <ConsultationFormSection />
