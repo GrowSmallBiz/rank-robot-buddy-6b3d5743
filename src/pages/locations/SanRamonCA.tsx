@@ -42,7 +42,7 @@ const SanRamonCA = () => {
         title="Digital Marketing for San Ramon, CA Local Service Businesses —"
         titleHighlight="Built for a Market That Expects Speed, Trust, and Professionalism"
         subtitle="San Ramon is not a market where a business can rely on a basic website and inconsistent follow-up and still expect strong growth."
-        primaryCTA={{ label: "Schedule Strategy Call", href: "/contact/" }}
+        primaryCTA={{ label: "Schedule Strategy Call", href: "https://lp.growsmallbiz.io/digital-growth-strategy-session", external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
       />
 
@@ -321,7 +321,7 @@ const SanRamonCA = () => {
             title="Schedule Your Free Marketing Assessment"
             description="If you want a smarter, more connected approach to digital marketing in San Ramon, GrowSmallBiz is built for that next step. We can look at where your current system is losing visibility, losing trust, or losing leads — and what a stronger local growth engine could look like."
             buttonText="Schedule Strategy Call"
-            buttonHref="/contact/"
+            buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
             sectionClassName="pt-0 pb-0"
           />
         </div>

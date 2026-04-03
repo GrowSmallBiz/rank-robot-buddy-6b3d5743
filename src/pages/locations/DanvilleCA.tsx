@@ -45,7 +45,7 @@ const DanvilleCA = () => {
         title="Digital Marketing Danville, CA Businesses Can Use to"
         titleHighlight="Generate More Leads and Grow Smarter"
         subtitle="If you are a Danville business owner tired of paying for disconnected marketing that does not consistently produce leads, you are not alone. Too many companies end up with a website from one vendor, SEO from another, ads from someone else, and no real system tying it all together."
-        primaryCTA={{ label: "Schedule Strategy Call", href: "/contact/" }}
+        primaryCTA={{ label: "Schedule Strategy Call", href: "https://lp.growsmallbiz.io/digital-growth-strategy-session", external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
       />
 
@@ -272,7 +272,7 @@ const DanvilleCA = () => {
             title="Schedule Your Free Marketing Assessment"
             description="If you want a marketing agency in Danville, CA that goes beyond disconnected tactics, GrowSmallBiz is built for that next step. Schedule a strategy conversation or marketing assessment to see where your current system is leaking leads and what a stronger local growth engine could look like."
             buttonText="Schedule Strategy Call"
-            buttonHref="/contact/"
+            buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
             sectionClassName="pt-0 pb-0"
           />
         </div>
