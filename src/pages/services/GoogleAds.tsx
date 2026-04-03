@@ -388,7 +388,7 @@ const GoogleAds = () => {
       <PersonCTA
         title="Ready to Turn Google Searches Into Paying Customers?"
         description="Every day you are not running optimized Google Ads, your competitors are collecting the leads you should be getting. Let us change that. Book your free Google Ads strategy session with GrowSmallBiz. We will audit your current situation, identify your biggest opportunities, and show you exactly what a local PPC campaign would look like for your business — at no cost and no obligation."
-        buttonText="Book My Free Strategy Session"
+        buttonText="Schedule Strategy Call"
         buttonHref={strategyUrl}
         sectionClassName="py-24"
       />

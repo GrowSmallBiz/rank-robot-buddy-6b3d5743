@@ -79,7 +79,7 @@ const LocationsWeServe = () => {
           titleHighlight="Local Marketing Services by City"
           subtitle="In the highly competitive and diverse Bay Area market, local businesses face unique challenges in effectively reaching their target audiences. With over 7.5 million residents across cities like San Francisco, San Jose, Oakland, and Fremont, the region demands tailored digital marketing strategies that reflect its dynamic economy and varied industry sectors."
           description="Per the U.S. Census Bureau, the Bay Area continues to see robust population growth and a thriving small business ecosystem, making localized marketing essential."
-          primaryCTA={{ label: "Book Free Assessment", href: PRIMARY_CTA_URL, external: true }}
+          primaryCTA={{ label: "Schedule Strategy Call", href: PRIMARY_CTA_URL, external: true }}
           secondaryCTA={{ label: "View Our Services", href: "/services/" }}
           stats={[
             { value: "7.5M+", label: "Bay Area Residents" },
@@ -254,26 +254,35 @@ const LocationsWeServe = () => {
           </div>
         </section>
 
-        {/* AI-Integrated Strategies */}
+        {/* Section A: AI-Powered Marketing System */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
+                <div className="service-badge mb-4">
+                  <Brain className="w-4 h-4" />
+                  <span>AI-Powered Digital Marketing Automation</span>
+                </div>
                 <h2 className="section-title">
-                  AI-Integrated Digital Marketing{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Strategies</span>
+                  How AI-Powered Marketing Systems Help Small and Mid-Sized Bay Area Businesses{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Grow</span>
                 </h2>
-                <p className="section-description mt-4">
-                  With the arrival of AI in digital marketing, numerous tools and technologies have been developed to assess the effectiveness of AI-integrated strategies on three critical dimensions: AI-driven personalization, predictive analytics, and automated content creation.
-                </p>
-                <p className="text-sm text-muted-foreground mt-4 italic">
-                  Evaluating the effectiveness of AI-integrated digital marketing on consumer behavior, brand perception, and sales performance, A Vij, 2024
+                <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground mt-4">
+                  Get More Calls, More Booked Jobs, and Grow Revenue
+                </h3>
+              </div>
+
+              {/* Stat highlight paragraph */}
+              <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20 mb-8 text-center">
+                <p className="text-foreground/90 leading-relaxed text-lg">
+                  <a href="https://www.thinkwithgoogle.com/_qs/documents/645/consumer-search-i-want-to-go-micro-moments-b.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">According to Google research</a>, <span className="text-primary font-bold text-2xl">76%</span> of people who search for something nearby on their smartphone visit a business within a day, underscoring the importance of timely, personalized marketing efforts.
                 </p>
               </div>
 
+              {/* Main body card */}
               <div className="p-8 rounded-2xl bg-card border border-primary/30 shadow-[0_0_40px_rgba(255,127,80,0.1)]">
                 <p className="text-foreground/90 leading-relaxed text-lg">
-                  GrowSmallBiz Digital Marketing brings over 12 years of direct experience serving Bay Area clients across healthcare, technology, and professional services sectors. Our team has successfully implemented AI marketing systems for over 150 local businesses, delivering measurable outcomes such as a 40% increase in qualified leads within 90 days for a San Jose-based SaaS provider and a 35% boost in patient engagement for a Fremont healthcare clinic.
+                  AI-powered marketing works best when it is not treated as a standalone tool. GrowSmallBiz connects website performance, local SEO, paid ads, CRM automation, AI Receptionist, and Conversational AI into one coordinated system designed to help small and mid-sized businesses respond faster, follow up more consistently, and convert more opportunities into revenue. The goal is not more technology for its own sake. The goal is fewer missed leads, stronger lead handling, and better business outcomes from the marketing you are already investing in.
                 </p>
               </div>
             </div>
@@ -287,7 +296,7 @@ const LocationsWeServe = () => {
               <div className="text-center mb-16">
                 <div className="service-badge mb-4">
                   <Search className="w-4 h-4" />
-                  <span>Local SEO</span>
+                  <span>AI Powered Local SEO</span>
                 </div>
                 <h2 className="section-title">
                   Local SEO Strategies for Bay Area Cities:{" "}
@@ -515,7 +524,7 @@ const LocationsWeServe = () => {
         <CardCTA
           title="Ready to Dominate Your Local Market?"
           description="Get a personalized marketing assessment and discover growth opportunities specific to your Bay Area business."
-          buttonText="Schedule Strategy Session"
+          buttonText="Schedule Strategy Call"
           buttonHref={PRIMARY_CTA_URL}
           sectionClassName="py-16"
         />
@@ -716,10 +725,10 @@ const LocationsWeServe = () => {
           </div>
         </section>
 
-        {/* Case Studies */}
+        {/* Proof Points */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
                 <div className="service-badge mb-4">
                   <TrendingUp className="w-4 h-4" />
@@ -737,34 +746,39 @@ const LocationsWeServe = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "HVAC Company (San Jose)",
-                    result: "40% increase in lead generation within three months",
-                    detail: "Implemented AI marketing systems, verified through client analytics dashboards.",
+                    title: "HVAC & Plumbing Company (Concord)",
+                    result: "40% increase in lead generation and 30% increase in lead conversions within three months",
+                    detail: "Implemented AI SEO & Local SEO, Google LSA & PPC ads, Speed 2 Lead with AI Receptionist",
                   },
                   {
-                    title: "Dental Practice (Fremont)",
+                    title: "Dental Practice (Dublin)",
                     result: "30% increase in new patient appointments",
-                    detail: "Enhanced local SEO over six months, confirmed by appointment tracking software.",
+                    detail: "Enhanced local SEO over six months, Facebook Retargeting ads confirmed by appointment tracking software.",
                   },
                   {
-                    title: "Restaurant (Oakland)",
-                    result: "25% increase in foot traffic",
-                    detail: "Used reputation management to improve online ratings, as measured by POS data.",
+                    title: "Restaurant (San Ramon)",
+                    result: "25% increase in return customers during off-peak hours",
+                    detail: "Used Restaurant Loyalty Booster System as measured by POS",
                   },
                   {
-                    title: "Real Estate Agency (San Francisco)",
-                    result: "50% boost in property inquiries within 90 days",
-                    detail: "Leveraged social media advertising, tracked via CRM reports.",
+                    title: "Real Estate Agency (Pleasanton)",
+                    result: "30% boost in appointment booking with buyers & sellers",
+                    detail: "Implemented Speed 2 Lead AI Receptionist & Website AI Live Chat for appointment booking and Referral Tracking System in CRM",
                   },
                   {
-                    title: "Photography Studio (San Jose)",
+                    title: "Photography Studio (Walnut Creek)",
                     result: "35% increase in bookings in 90 days",
-                    detail: "Applied local SEO strategies, validated by client booking systems.",
+                    detail: "Applied local SEO strategies, and Marketing Automation System to Capture, Nurture and Close validated by Google GSC, Google Analytics and client booking systems",
                   },
                   {
-                    title: "San Jose Restaurant Client",
+                    title: "San Jose Restaurant Client (Danville)",
                     result: "43% increase in organic traffic in 90 days",
-                    detail: "Targeted local SEO and content marketing, as reported in Google Analytics.",
+                    detail: "Targeted local SEO, AI-Powered Reputation Management, and Facebook & Instagram ads content marketing, as reported in Google Analytics.",
+                  },
+                  {
+                    title: "Cleaning Service Company (Livermore)",
+                    result: "50% increase in lead generation within six months",
+                    detail: "Implemented AI SEO & Local SEO, Google PPC, Speed 2 Lead with AI Receptionist & Review Management",
                   },
                 ].map((cs) => (
                   <div
@@ -781,7 +795,7 @@ const LocationsWeServe = () => {
           </div>
         </section>
 
-        {/* Why Trust Us */}
+        {/* Section B: Why Trust Us */}
         <section className="py-24 bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -791,15 +805,19 @@ const LocationsWeServe = () => {
                   <span>Why Trust Us</span>
                 </div>
                 <h2 className="section-title">
-                  Why Trust Us:{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-                    GrowSmallBiz Digital Marketing's Bay Area Expertise
-                  </span>
+                  Why Businesses Trust{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">GrowSmallBiz</span>
                 </h2>
               </div>
               <div className="p-8 rounded-2xl bg-card border border-primary/30 shadow-[0_0_40px_rgba(255,127,80,0.1)]">
+                <p className="text-foreground/90 leading-relaxed text-lg mb-6">
+                  GrowSmallBiz is founder-led by Subrata Guha, whose background includes enterprise business system solutions across Sales, Marketing, and Supply Chain operations. That experience shapes a practical, systems-driven approach to marketing — helping small and mid-sized businesses connect visibility, lead capture, follow-up, and conversion instead of relying on disconnected tactics. Supported by platform-certified virtual assistants and grounded in Bay Area business understanding, GrowSmallBiz focuses on clear execution, stronger follow-through, and measurable business outcomes.
+                </p>
                 <p className="text-foreground/90 leading-relaxed text-lg">
-                  GrowSmallBiz Digital Marketing is a certified Google Partner agency with over 12 years of specialized experience in the Bay Area market. Our team holds certifications in Google Ads, HubSpot Inbound Marketing, and AI-driven marketing technologies. We have successfully served over 150 Bay Area clients across healthcare, technology, professional services, and more.
+                  GrowSmallBiz is also connected to the local business community through membership in the{" "}
+                  <a href="https://danvilleareachamber.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Danville Area Chamber</a>,{" "}
+                  <a href="https://sanramon.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">San Ramon Chamber of Commerce</a>, and{" "}
+                  <a href="https://www.walnut-creek.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Walnut Creek Chamber of Commerce</a>, reinforcing our commitment to the Bay Area markets and service businesses we support.
                 </p>
               </div>
             </div>
@@ -867,7 +885,7 @@ const LocationsWeServe = () => {
             <CardCTA
               title="Ready to Grow Your Bay Area Business?"
               description="Take the first step toward optimizing your digital marketing strategy and achieving your business goals in 2025 and beyond."
-              buttonText="Book Your Free Marketing Assessment"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />

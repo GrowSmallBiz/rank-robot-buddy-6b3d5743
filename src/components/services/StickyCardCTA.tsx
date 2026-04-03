@@ -22,7 +22,7 @@ interface StickyCardCTAProps {
 export const StickyCardCTA = ({
   title,
   description,
-  buttonText = "Get Your Custom Growth Strategy",
+  buttonText = "Schedule Strategy Call",
   buttonHref = "/contact/",
   accentWords = [],
   showAfterScroll = 600,

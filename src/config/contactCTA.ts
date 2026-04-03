@@ -10,8 +10,8 @@ import subrataHeadshot from "@/assets/subrata-guha-headshot-sm.jpg";
 export const baseContactCTA = {
   name: "Subrata Guha",
   role: "Founder, GrowSmallBiz",
-  buttonText: "Book A Meeting",
-  buttonHref: "/contact/",
+  buttonText: "Schedule Strategy Call",
+  buttonHref: "https://lp.growsmallbiz.io/digital-growth-strategy-session",
   image: subrataHeadshot,
 };
 

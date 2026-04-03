@@ -125,7 +125,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}
           title="Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses"
           subtitle="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused lead generation strategy."
-          primaryCTA={{ label: "Book a Strategy Session", href: strategySessionUrl }}
+          primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
           backgroundImage={heroBg}
           overlayOpacity={85}

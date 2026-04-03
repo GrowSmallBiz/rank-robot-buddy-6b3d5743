@@ -206,7 +206,7 @@ const LinkBuilding = () => {
           titleHighlight="Had"
           subtitle="Build the Backlink Profile That Helps Local Service Businesses Rank, Get Discovered, and Earn Trust<br /><br />Link building is one part of a stronger SEO system. GrowSmallBiz helps local service businesses earn relevant, editorially placed links that strengthen local authority, support visibility across search ecosystems, and reinforce the pages that drive leads, calls, and booked jobs."
           primaryCTA={{
-            label: "Schedule Strategy Session",
+            label: "Schedule Strategy Call",
             href: PRIMARY_CTA_URL,
             variant: "hero",
             external: true,
@@ -557,7 +557,7 @@ const LinkBuilding = () => {
             <CardCTA
               title="Let's Build Your Authority with Quality Links"
               description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Session"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />

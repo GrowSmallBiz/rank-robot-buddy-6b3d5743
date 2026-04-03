@@ -89,7 +89,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
           badge={{ icon: MousePointerClick, text: "Case Studies / Google PPC" }}
           title="Google Ads Case Studies for HVAC, Plumbing & Electrical Businesses"
           subtitle="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses. This page showcases real proof from paid search performance, lead generation, conversion efficiency, and cost-effective growth through Google Ads."
-          primaryCTA={{ label: "Book a Strategy Session", href: strategySessionUrl }}
+          primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
           backgroundImage={heroBg}
           overlayOpacity={85}
