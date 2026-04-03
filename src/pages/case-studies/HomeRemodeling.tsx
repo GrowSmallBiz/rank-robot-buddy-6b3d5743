@@ -128,7 +128,7 @@ const HomeRemodeling = () => {
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}
           title="Case Studies for Home Remodeling Businesses"
           subtitle="Explore documented Local SEO case study results for home remodeling and home renovation businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, calls, conversions, and conversion-focused lead generation strategy."
-          primaryCTA={{ label: "Book a Strategy Session", href: strategySessionUrl }}
+          primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
           backgroundImage={heroBg}
           overlayOpacity={85}

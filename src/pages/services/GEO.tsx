@@ -200,7 +200,7 @@ const GEO = () => {
           description="Search behavior is shifting. More consumers are turning to AI-powered tools — Google AI Overviews, conversational search assistants, generative discovery engines — to find, compare, and choose local service providers. If your business is not visible in those environments, competitors who are will take the work."
           note="GrowSmallBiz helps local service businesses become easier for AI systems to identify, understand, and surface — through a managed methodology built for the new reality of search."
           primaryCTA={{
-            label: "Schedule Strategy Session",
+            label: "Schedule Strategy Call",
             href: PRIMARY_CTA_URL,
             variant: "hero",
             external: true,
@@ -392,7 +392,7 @@ const GEO = () => {
         <CardCTA
           title="Ready to Strengthen Your AI-Search Visibility?"
           description="Schedule a strategy session to learn how managed GEO fits into your growth plan."
-          buttonText="Schedule Strategy Session"
+          buttonText="Schedule Strategy Call"
           buttonHref={PRIMARY_CTA_URL}
           sectionClassName="py-16"
         />
@@ -517,7 +517,7 @@ const GEO = () => {
             <CardCTA
               title="Let's Strengthen Your GEO Visibility"
               description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Session"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />

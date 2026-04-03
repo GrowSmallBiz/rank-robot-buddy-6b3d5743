@@ -21,7 +21,7 @@ interface CardCTAProps {
 export const CardCTA = ({
   title,
   description,
-  buttonText = "Get Your Custom Growth Strategy",
+  buttonText = "Schedule Strategy Call",
   buttonHref = "/contact/",
   sectionClassName = "py-24 lg:py-32",
   accentWords = [],

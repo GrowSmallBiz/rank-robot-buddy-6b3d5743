@@ -79,7 +79,7 @@ const LocationsWeServe = () => {
           titleHighlight="Local Marketing Services by City"
           subtitle="In the highly competitive and diverse Bay Area market, local businesses face unique challenges in effectively reaching their target audiences. With over 7.5 million residents across cities like San Francisco, San Jose, Oakland, and Fremont, the region demands tailored digital marketing strategies that reflect its dynamic economy and varied industry sectors."
           description="Per the U.S. Census Bureau, the Bay Area continues to see robust population growth and a thriving small business ecosystem, making localized marketing essential."
-          primaryCTA={{ label: "Book Free Assessment", href: PRIMARY_CTA_URL, external: true }}
+          primaryCTA={{ label: "Schedule Strategy Call", href: PRIMARY_CTA_URL, external: true }}
           secondaryCTA={{ label: "View Our Services", href: "/services/" }}
           stats={[
             { value: "7.5M+", label: "Bay Area Residents" },
@@ -515,7 +515,7 @@ const LocationsWeServe = () => {
         <CardCTA
           title="Ready to Dominate Your Local Market?"
           description="Get a personalized marketing assessment and discover growth opportunities specific to your Bay Area business."
-          buttonText="Schedule Strategy Session"
+          buttonText="Schedule Strategy Call"
           buttonHref={PRIMARY_CTA_URL}
           sectionClassName="py-16"
         />
@@ -867,7 +867,7 @@ const LocationsWeServe = () => {
             <CardCTA
               title="Ready to Grow Your Bay Area Business?"
               description="Take the first step toward optimizing your digital marketing strategy and achieving your business goals in 2025 and beyond."
-              buttonText="Book Your Free Marketing Assessment"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />

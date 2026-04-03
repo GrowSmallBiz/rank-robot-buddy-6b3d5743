@@ -42,7 +42,7 @@ const PleasantonCA = () => {
         title="Digital Marketing for Pleasanton, CA Local Service Businesses —"
         titleHighlight="More Calls. More Bookings. More Revenue."
         subtitle="If you run a local service business in Pleasanton, you already know how easy it is for marketing to become fragmented."
-        primaryCTA={{ label: "Book Free Assessment", href: "/contact/" }}
+        primaryCTA={{ label: "Schedule Strategy Call", href: "/contact/" }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
       />
 
@@ -222,7 +222,7 @@ const PleasantonCA = () => {
           <CardCTA
             title="Schedule Your Free Marketing Assessment"
             description="If you want a smarter, more connected approach to digital marketing in Pleasanton, GrowSmallBiz is built for that next step. Schedule a strategy conversation or marketing assessment to see where your current system is leaking leads and what a stronger local growth engine could look like."
-            buttonText="Book Your Free Assessment"
+            buttonText="Schedule Strategy Call"
             buttonHref="/contact/"
             sectionClassName="pt-0 pb-0"
           />

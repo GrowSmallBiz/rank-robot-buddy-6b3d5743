@@ -42,7 +42,7 @@ const DublinCA = () => {
         title="Digital Marketing for Dublin, CA Local Service Businesses —"
         titleHighlight="Built for a Fast-Growth Market Where Visibility Has to Convert"
         subtitle="Dublin is not a market where a business can stay average online and still expect steady growth. It is a city shaped by newer growth, regional overlap, strong household income, and buyers who move fast."
-        primaryCTA={{ label: "Book Free Assessment", href: "/contact/" }}
+        primaryCTA={{ label: "Schedule Strategy Call", href: "/contact/" }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
       />
 
@@ -259,7 +259,7 @@ const DublinCA = () => {
           <CardCTA
             title="Schedule Your Free Marketing Assessment"
             description="If you want a smarter, more connected approach to digital marketing in Dublin, CA, GrowSmallBiz is built for that next step. We can look at where your current system is losing visibility, losing trust, or losing leads — and what a stronger local growth engine could look like."
-            buttonText="Book Your Free Assessment"
+            buttonText="Schedule Strategy Call"
             buttonHref="/contact/"
             sectionClassName="pt-0 pb-0"
           />

@@ -248,7 +248,7 @@ const AEO = () => {
           subtitle="Search behavior has shifted. Local buyers are asking full questions, and modern search experiences increasingly surface direct answers instead of just lists of links."
           description="GrowSmallBiz helps local service businesses build answer-ready content architecture that improves visibility across search ecosystems, strengthens trust early, and turns more search impressions into calls, inquiries, and booked jobs."
           primaryCTA={{
-            label: "Schedule Strategy Session",
+            label: "Schedule Strategy Call",
             href: PRIMARY_CTA_URL,
             variant: "hero",
             external: true,
@@ -557,7 +557,7 @@ const AEO = () => {
             <CardCTA
               title="Let's Build Your Answer Visibility"
               description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Session"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />

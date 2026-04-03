@@ -118,7 +118,7 @@ const CleaningServices = () => {
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}
           title="Case Studies for Cleaning Services Businesses"
           subtitle="Explore documented local SEO case study results for cleaning service businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."
-          primaryCTA={{ label: "Book a Strategy Session", href: strategySessionUrl }}
+          primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
           backgroundImage={heroBg}
           overlayOpacity={85}

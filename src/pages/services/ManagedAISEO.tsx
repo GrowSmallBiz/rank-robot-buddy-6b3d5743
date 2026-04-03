@@ -625,7 +625,7 @@ const ManagedAISEO = () => {
             <CardCTA
               title="Let's Build Your SEO Growth Engine"
               description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Session"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />

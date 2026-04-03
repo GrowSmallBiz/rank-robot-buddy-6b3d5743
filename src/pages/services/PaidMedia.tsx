@@ -837,7 +837,7 @@ const PaidMedia = () => {
       <PersonCTA
         title="Ready to Run Ads That Actually Generate Leads?"
         description="Stop guessing. Stop wasting budget. Start building a paid advertising system that turns visibility into qualified leads, better follow-up, and clearer ROI."
-        buttonText="Schedule Strategy Session"
+        buttonText="Schedule Strategy Call"
         buttonHref={strategyUrl}
         sectionClassName="py-24"
       />

@@ -189,7 +189,7 @@ const AuthorityBuilding = () => {
           titleHighlight="Market Trust"
           subtitle='<h2 class="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">Most local service businesses do not have a keyword problem. They have an authority problem.</h2>Your competitors are <strong>NOT</strong> always better — they are simply seen as more established, more credible, and more trustworthy by search engines, AI systems, and prospective customers.<br/><br/>As one strategic pillar of our Managed AI SEO system, Authority Building helps position your business as the trusted local expert across search results, the broader web, and the minds of prospective customers.<br/><br/>This is not about buying links or gaming algorithms. It is about building a credible presence that signals expertise, earns trust, and compounds over time.'
           primaryCTA={{
-            label: "Schedule Strategy Session",
+            label: "Schedule Strategy Call",
             href: PRIMARY_CTA_URL,
             variant: "hero",
             external: true,
@@ -498,7 +498,7 @@ const AuthorityBuilding = () => {
         <CardCTA
           title="Ready to Build Real Search Authority?"
           description="Schedule a strategy session to learn how Authority Building fits into your growth plan."
-          buttonText="Schedule Strategy Session"
+          buttonText="Schedule Strategy Call"
           buttonHref={PRIMARY_CTA_URL}
           sectionClassName="py-16"
         />
@@ -578,7 +578,7 @@ const AuthorityBuilding = () => {
             <CardCTA
               title="Let's Build Your Search Authority"
               description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Session"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />

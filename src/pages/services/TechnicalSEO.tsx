@@ -274,7 +274,7 @@ const TechnicalSEO = () => {
           titleHighlight="3 Months"
           subtitle="Traditional SEO often slows down because technical issues sit undetected for weeks or months. GrowSmallBiz uses Agentic AI Playbooks - an integrated framework where several specialized AI agents perform technical SEO tasks continuously - to detect issues faster, prioritize what matters, and accelerate implementation. When technical SEO is handled alongside the other core SEO pillars through a systematic strategy, businesses can often gain traction faster than with a slower, manual process."
           primaryCTA={{
-            label: "Schedule Strategy Session",
+            label: "Schedule Strategy Call",
             href: PRIMARY_CTA_URL,
             variant: "hero",
             external: true,
@@ -470,7 +470,7 @@ const TechnicalSEO = () => {
         <CardCTA
           title="Ready to Fix Your Technical Foundation?"
           description="Schedule a strategy session to learn how technical SEO fits into your growth plan."
-          buttonText="Schedule Strategy Session"
+          buttonText="Schedule Strategy Call"
           buttonHref={PRIMARY_CTA_URL}
           sectionClassName="py-16"
         />
@@ -625,7 +625,7 @@ const TechnicalSEO = () => {
             <CardCTA
               title="Let's Fix Your Technical Foundation"
               description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Session"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />

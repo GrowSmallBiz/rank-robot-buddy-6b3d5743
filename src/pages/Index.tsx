@@ -437,7 +437,7 @@ const Index = () => {
         <CardCTA 
           title="Ready to Build a Smarter Growth System?"
           description="Book a free strategy call to see how our done-for-you, AI-powered growth system can take marketing and follow-up off your plate, so you can focus more on running your business and spending time where it matters most. We also provide a clear dashboard view of performance and continuously recalibrate the strategy when results need improvement."
-          buttonText="Get Free Strategy Call"
+          buttonText="Schedule Strategy Call"
           buttonHref={strategySessionUrl}
         />
 
@@ -509,7 +509,7 @@ const Index = () => {
         <CardCTA 
           title="Let's Build Your Growth Engine"
           description="If you want AI-powered client acquisition systems, done-for-you execution, adaptive strategy, and a clear multi-channel dashboard without patching together disconnected tools, start with a free strategy call."
-          buttonText="Get Free Strategy Call"
+          buttonText="Schedule Strategy Call"
           buttonHref={strategySessionUrl}
         />
 

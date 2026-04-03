@@ -220,7 +220,7 @@ const LocalSEO = () => {
             </div>
           }
           primaryCTA={{
-            label: "Schedule Strategy Session",
+            label: "Schedule Strategy Call",
             href: PRIMARY_CTA_URL,
             variant: "hero",
             external: true,
@@ -445,7 +445,7 @@ const LocalSEO = () => {
         <CardCTA
           title="Ready to Strengthen Your Local Search Visibility?"
           description="Schedule a strategy session to learn how Local SEO fits into your growth plan."
-          buttonText="Schedule Strategy Session"
+          buttonText="Schedule Strategy Call"
           buttonHref={PRIMARY_CTA_URL}
           sectionClassName="py-16"
         />
@@ -564,7 +564,7 @@ const LocalSEO = () => {
             <CardCTA
               title="Let's Build Your Local Search Visibility"
               description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Session"
+              buttonText="Schedule Strategy Call"
               buttonHref={PRIMARY_CTA_URL}
               sectionClassName="pt-0 pb-0"
             />
