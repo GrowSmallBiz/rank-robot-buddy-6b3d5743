@@ -108,7 +108,7 @@ const DanvilleCA = () => {
 
       {/* Section: Why Danville Is a Market Worth Winning */}
       <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
@@ -118,12 +118,41 @@ const DanvilleCA = () => {
               <span className="text-transparent bg-clip-text bg-gradient-primary italic">Worth Winning</span>
             </h2>
           </div>
-          <div className="prose prose-lg prose-invert max-w-none space-y-8">
-            <p>Danville gives local businesses a strong commercial base to compete for. The <a href="https://www.census.gov/quickfacts/fact/table/danvilletowncalifornia/INC110224" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">U.S. Census Bureau</a> reports Danville's 2020–2024 median household income at $232,216, with 2022 retail sales of about $769.9 million and accommodation and food services sales of about $177.0 million. Those numbers matter because they point to real consumer spending power for home services, health and wellness, restaurants, and other local businesses that depend on trust and local intent.</p>
 
-            <p>The local business ecosystem is also active and organized. The <a href="https://www.danville.ca.gov/267/Economic-Development" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville</a> says it re-organized its Economic Development Program in 2024/25 to focus on engaging with and empowering small businesses, and the <a href="https://danvilleareachamber.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Danville Area Chamber</a> says it connects nearly 500 members across the greater Danville and San Ramon Valley area. That is good news for serious operators, but it also means visibility, differentiation, and follow-up matter more. A business that is merely present online is not the same as a business that is easy to find, easy to trust, and easy to contact.</p>
+          {/* Market Snapshot Stat Band */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
+            {[
+              { figure: "$232,216", line: "Danville's 2020–2024 median household income" },
+              { figure: "$769.9 million", line: "2022 retail sales" },
+              { figure: "$177.0 million", line: "accommodation and food services sales" },
+              { figure: "nearly 500", line: "members across the greater Danville and San Ramon Valley area" },
+            ].map((stat, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 text-center">
+                <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-2">{stat.figure}</p>
+                <p className="text-xs md:text-sm text-muted-foreground leading-snug">{stat.line}</p>
+              </div>
+            ))}
+          </div>
 
-            <p>Because GrowSmallBiz is based in Danville, we understand the local business environment beyond generic Bay Area marketing advice. Danville businesses can also tap into resources from the Town of Danville's Economic Development Division, Business Resources hub, and Business Library for market analysis, business guidance, and permitting support. As a Danville Area Chamber member, GrowSmallBiz stays connected to the local business community while helping service businesses across Danville and the Tri-Valley improve visibility, lead flow, and follow-up.</p>
+          {/* Body Copy — Editorial Card Layout */}
+          <div className="max-w-4xl mx-auto space-y-6">
+            {/* Paragraph 1 — Full-width lead card */}
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Market Snapshot</p>
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Danville gives local businesses a strong commercial base to compete for. The <a href="https://www.census.gov/quickfacts/fact/table/danvilletowncalifornia/INC110224" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">U.S. Census Bureau</a> reports Danville's 2020–2024 median household income at $232,216, with 2022 retail sales of about $769.9 million and accommodation and food services sales of about $177.0 million. Those numbers matter because they point to real consumer spending power for home services, health and wellness, restaurants, and other local businesses that depend on trust and local intent.</p>
+            </div>
+
+            {/* Paragraphs 2 & 3 — Two-column row */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Business Ecosystem</p>
+                <p className="text-base text-foreground/90 leading-relaxed">The local business ecosystem is also active and organized. The <a href="https://www.danville.ca.gov/267/Economic-Development" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville</a> says it re-organized its Economic Development Program in 2024/25 to focus on engaging with and empowering small businesses, and the <a href="https://danvilleareachamber.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Danville Area Chamber</a> says it connects nearly 500 members across the greater Danville and San Ramon Valley area. That is good news for serious operators, but it also means visibility, differentiation, and follow-up matter more. A business that is merely present online is not the same as a business that is easy to find, easy to trust, and easy to contact.</p>
+              </div>
+              <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Local Perspective</p>
+                <p className="text-base text-foreground/90 leading-relaxed">Because GrowSmallBiz is based in Danville, we understand the local business environment beyond generic Bay Area marketing advice. Danville businesses can also tap into resources from the Town of Danville's Economic Development Division, Business Resources hub, and Business Library for market analysis, business guidance, and permitting support. As a Danville Area Chamber member, GrowSmallBiz stays connected to the local business community while helping service businesses across Danville and the Tri-Valley improve visibility, lead flow, and follow-up.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
