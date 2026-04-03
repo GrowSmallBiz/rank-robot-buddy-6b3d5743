@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import livermoreHero from "@/assets/livermore-hero.jpg";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
@@ -45,6 +46,8 @@ const LivermoreCA = () => {
         subtitle="Livermore is the kind of market where businesses can lose opportunities without realizing it. A company may be doing good work, have a decent reputation, and even get some traffic, yet still struggle to turn visibility into consistent revenue."
         primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
+        backgroundImage={livermoreHero}
+        overlayOpacity={80}
       />
 
       <div className="bg-background">
