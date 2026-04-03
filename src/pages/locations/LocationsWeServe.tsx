@@ -725,10 +725,10 @@ const LocationsWeServe = () => {
           </div>
         </section>
 
-        {/* Case Studies */}
+        {/* Proof Points */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
                 <div className="service-badge mb-4">
                   <TrendingUp className="w-4 h-4" />
@@ -746,34 +746,39 @@ const LocationsWeServe = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "HVAC Company (San Jose)",
-                    result: "40% increase in lead generation within three months",
-                    detail: "Implemented AI marketing systems, verified through client analytics dashboards.",
+                    title: "HVAC & Plumbing Company (Concord)",
+                    result: "40% increase in lead generation and 30% increase in lead conversions within three months",
+                    detail: "Implemented AI SEO & Local SEO, Google LSA & PPC ads, Speed 2 Lead with AI Receptionist",
                   },
                   {
-                    title: "Dental Practice (Fremont)",
+                    title: "Dental Practice (Dublin)",
                     result: "30% increase in new patient appointments",
-                    detail: "Enhanced local SEO over six months, confirmed by appointment tracking software.",
+                    detail: "Enhanced local SEO over six months, Facebook Retargeting ads confirmed by appointment tracking software.",
                   },
                   {
-                    title: "Restaurant (Oakland)",
-                    result: "25% increase in foot traffic",
-                    detail: "Used reputation management to improve online ratings, as measured by POS data.",
+                    title: "Restaurant (San Ramon)",
+                    result: "25% increase in return customers during off-peak hours",
+                    detail: "Used Restaurant Loyalty Booster System as measured by POS",
                   },
                   {
-                    title: "Real Estate Agency (San Francisco)",
-                    result: "50% boost in property inquiries within 90 days",
-                    detail: "Leveraged social media advertising, tracked via CRM reports.",
+                    title: "Real Estate Agency (Pleasanton)",
+                    result: "30% boost in appointment booking with buyers & sellers",
+                    detail: "Implemented Speed 2 Lead AI Receptionist & Website AI Live Chat for appointment booking and Referral Tracking System in CRM",
                   },
                   {
-                    title: "Photography Studio (San Jose)",
+                    title: "Photography Studio (Walnut Creek)",
                     result: "35% increase in bookings in 90 days",
-                    detail: "Applied local SEO strategies, validated by client booking systems.",
+                    detail: "Applied local SEO strategies, and Marketing Automation System to Capture, Nurture and Close validated by Google GSC, Google Analytics and client booking systems",
                   },
                   {
-                    title: "San Jose Restaurant Client",
+                    title: "San Jose Restaurant Client (Danville)",
                     result: "43% increase in organic traffic in 90 days",
-                    detail: "Targeted local SEO and content marketing, as reported in Google Analytics.",
+                    detail: "Targeted local SEO, AI-Powered Reputation Management, and Facebook & Instagram ads content marketing, as reported in Google Analytics.",
+                  },
+                  {
+                    title: "Cleaning Service Company (Livermore)",
+                    result: "50% increase in lead generation within six months",
+                    detail: "Implemented AI SEO & Local SEO, Google PPC, Speed 2 Lead with AI Receptionist & Review Management",
                   },
                 ].map((cs) => (
                   <div
