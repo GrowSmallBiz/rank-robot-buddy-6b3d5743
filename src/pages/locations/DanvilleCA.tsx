@@ -203,12 +203,35 @@ const DanvilleCA = () => {
 
             <p>Danville business owners can explore these local resources as they plan growth, expansion, or visibility improvements:</p>
 
-            <ul className="space-y-2">
-              <li><a href="https://www.danville.ca.gov/267/Economic-Development" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Economic Development</a></li>
-              <li><a href="https://www.danville.ca.gov/270/Business-Resources" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Business Resources</a></li>
-              <li><a href="https://www.danville.ca.gov/818/Business-Library" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Business Library</a></li>
-              <li><a href="https://danvilleareachamber.com/business-resources/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Danville Area Chamber Business Resources</a></li>
-            </ul>
+            <div className="space-y-4 mt-6 not-prose">
+              <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                  <a href="https://www.danville.ca.gov/267/Economic-Development" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Economic Development</a>
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">The Town of Danville's Economic Development Division is a strong starting point for business owners who want to understand how Danville supports business growth. The Town says this division helps companies start, connect, and grow in Danville, and its Business Concierge can help businesses navigate the Town's development review process. That makes this a useful resource for owners who want a clearer path through local approvals, planning questions, or expansion-related steps.</p>
+              </div>
+
+              <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                  <a href="https://www.danville.ca.gov/270/Business-Resources" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Business Resources</a>
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">Danville's Business Resources page is useful for owners who need practical help beyond general marketing advice. It brings together items such as business funding support, permitting-related tools, startup guidance, and other assistance resources in one place. For a small business trying to move from idea to action, this page works well as a central operational reference rather than just a generic city information page.</p>
+              </div>
+
+              <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                  <a href="https://www.danville.ca.gov/818/Business-Library" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Business Library</a>
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">The Town's Business Library is especially helpful for small businesses that want to make better decisions before launching, relocating, or expanding. Danville describes it as a place for guiding documents, community information, market analysis, and regional business support tools. In practical terms, that means it can help owners research the local market, review planning materials, and get more context before investing in a new location or growth initiative.</p>
+              </div>
+
+              <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                  <a href="https://danvilleareachamber.com/business-resources/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Danville Area Chamber Business Resources</a>
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">The Danville Area Chamber's business resources are useful for owners who want stronger local connections in addition to Town resources. The Chamber highlights business resources, community connections, and visibility opportunities, and says it helps members connect with nearly 500 businesses across the greater Danville area and San Ramon Valley. For small businesses, that can support networking, referrals, regional awareness, and a better understanding of the local business ecosystem.</p>
+              </div>
+            </div>
 
             <p>If your business also serves nearby communities, explore our pages for <Link to="/locations/san-ramon-ca/" className="text-primary hover:underline">San Ramon</Link>, <Link to="/locations/dublin-ca/" className="text-primary hover:underline">Dublin</Link>, <Link to="/locations/pleasanton-ca/" className="text-primary hover:underline">Pleasanton</Link>, <Link to="/locations/walnut-creek-ca/" className="text-primary hover:underline">Walnut Creek</Link>, <Link to="/locations/livermore-ca/" className="text-primary hover:underline">Livermore</Link>, and <Link to="/locations/concord-ca/" className="text-primary hover:underline">Concord</Link>.</p>
           </div>
