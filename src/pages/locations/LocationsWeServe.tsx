@@ -296,7 +296,7 @@ const LocationsWeServe = () => {
               <div className="text-center mb-16">
                 <div className="service-badge mb-4">
                   <Search className="w-4 h-4" />
-                  <span>Local SEO</span>
+                  <span>AI Powered Local SEO</span>
                 </div>
                 <h2 className="section-title">
                   Local SEO Strategies for Bay Area Cities:{" "}
