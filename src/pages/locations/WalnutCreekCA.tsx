@@ -5,7 +5,7 @@ import walnutCreekHero from "@/assets/walnut-creek-hero.jpg";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Brain, Eye, BarChart3, Users, Star, Home, Heart, Building2, Calendar, ArrowRight } from "lucide-react";
+import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Brain, Eye, BarChart3, Users, Star, Home, Heart, Building2, Shield, ArrowRight, CheckCircle } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -19,14 +19,14 @@ const WalnutCreekCA = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing Walnut Creek CA | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps Walnut Creek, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems." />
+        <title>Digital Marketing Agency in Walnut Creek, CA | GrowSmallBiz</title>
+        <meta name="description" content="GrowSmallBiz is Walnut Creek's specialized digital marketing agency for local service businesses. Local SEO, Google Ads, reputation management & AI automation. Get your free strategy session today." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/walnut-creek-ca/" />
       </Head>
       <ServiceJsonLd
-        serviceName="Digital Marketing Walnut Creek CA"
+        serviceName="Digital Marketing Agency in Walnut Creek, CA"
         serviceType="Digital Marketing"
-        description="GrowSmallBiz helps Walnut Creek, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems."
+        description="GrowSmallBiz is Walnut Creek's specialized digital marketing agency for local service businesses. Local SEO, Google Ads, reputation management & AI automation."
         url="/locations/walnut-creek-ca/"
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
@@ -52,21 +52,21 @@ const WalnutCreekCA = () => {
 
             {/* H1 */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Digital Marketing for Walnut Creek, CA Local Service Businesses —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Built for a Market Where Buyers Judge Quality Fast</span>
+              Stop Losing Walnut Creek Leads to Competitors —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
             </h1>
 
-            {/* Opening paragraph */}
-            <p
-              className="max-w-3xl mx-auto text-base md:text-lg text-foreground/80 leading-relaxed mb-4 animate-fade-up"
+            {/* H2 */}
+            <h2
+              className="text-2xl md:text-3xl font-display font-semibold text-foreground/90 mb-8 animate-fade-up"
               style={{ animationDelay: "0.1s" }}
             >
-              Walnut Creek is not a market where a business wins just because it shows up. Buyers here often compare carefully, expect professionalism quickly, and make decisions based on more than price.
-            </p>
+              Turns Visibility Into Calls, Leads, and Revenue
+            </h2>
 
             {/* Trust line */}
             <p className="max-w-3xl mx-auto text-sm md:text-base text-muted-foreground leading-relaxed animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              As a Walnut Creek Chamber member, GrowSmallBiz stays connected to the local business community while helping local service businesses compete in Walnut Creek and the wider East Bay.
+              Walnut Creek · Danville · San Ramon Chamber Member | Certified Strategists | No Long-Term Contracts | Month-to-Month
             </p>
 
             {/* CTA row */}
@@ -94,498 +94,20 @@ const WalnutCreekCA = () => {
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
               <h3 className="text-lg font-display font-semibold text-primary mb-3">The Disconnected Marketing Problem</h3>
               <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                Walnut Creek is not a market where a business wins just because it shows up. Buyers here often compare carefully, expect professionalism quickly, and make decisions based on more than price. They look at the website, the reviews, the business profile, the tone, the speed of response, and how easy the business feels to trust. That is especially true for local service businesses in categories where the wrong choice feels costly.
+                Every day your competitors are capturing the leads that should belong to your business. In Walnut Creek's competitive East Bay market, the difference between a full appointment calendar and an empty phone isn't the quality of your work — it's your visibility online.
               </p>
             </div>
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
               <h3 className="text-lg font-display font-semibold text-primary mb-3">One Connected Growth System</h3>
               <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                GrowSmallBiz is a digital marketing agency serving Walnut Creek and the wider East Bay with one connected system built for local service businesses. We provide digital marketing services and marketing services that help businesses turn visibility into trust, trust into inquiry, and inquiry into revenue without relying on disconnected vendors or scattered tools.
+                GrowSmallBiz is the digital marketing agency in Walnut Creek, CA built exclusively for local service businesses. We don't serve eCommerce brands, SaaS startups, or national retail chains. We serve HVAC contractors, plumbers, electricians, roofers, dentists, med spa owners, chiropractors, physical therapists, and real estate professionals — the businesses that power Walnut Creek's communities and economy.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section: Why Walnut Creek Raises the Standard */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <AlertTriangle className="w-4 h-4" /> THE CHALLENGE
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Walnut Creek{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Raises the Standard</span>
-            </h2>
-          </div>
-          <div className="space-y-6 max-w-4xl mx-auto">
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Some cities reward basic visibility. Walnut Creek usually rewards stronger positioning.</p>
-            </div>
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base text-foreground/90 leading-relaxed">This is a market with affluence, density, established neighborhoods, active retail and commercial life, and buyers who are used to comparing options. That creates opportunity, but it also means average marketing becomes easier to ignore. A business may appear in search results, have a few decent reviews, and still lose because a competitor presents itself with more clarity and more confidence.</p>
-            </div>
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base text-foreground/90 leading-relaxed">That is why local marketing in Walnut Creek often fails in a quieter way than in smaller cities. The business is not invisible. It just is not compelling enough, coordinated enough, or polished enough to become the obvious choice.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: What Usually Holds Walnut Creek Businesses Back */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <AlertTriangle className="w-4 h-4" /> THE PROBLEM
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Usually Holds Walnut Creek{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Businesses Back</span>
-            </h2>
-          </div>
-
-          <div className="space-y-6 max-w-4xl mx-auto">
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-4">The problem is often not a lack of effort. It is that the effort does not build enough confidence.</p>
-              <p className="text-base text-foreground/90 leading-relaxed mb-3">A business may have:</p>
-              <ul className="space-y-2 text-foreground/80">
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>a site that looks acceptable but does not feel strong enough</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>local SEO that improves visibility without improving trust</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>ads that create clicks without improving lead quality</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>reviews that are respectable but not actively reinforced</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>follow-up that feels slower than the market expects</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>too many separate tools shaping one customer experience</li>
-              </ul>
-            </div>
-
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base text-foreground/90 leading-relaxed">That creates a common pattern. The business gets looked at, but not chosen often enough. It gets attention, but not enough of the best inquiries. It spends money, but not enough of that spend compounds into stronger positioning.</p>
-            </div>
-
-            {/* Where Walnut Creek Businesses Most Often Lose Revenue */}
-            <div className="mt-8">
-              <h3 className="text-2xl font-display font-bold text-foreground mb-6 text-center">Where Walnut Creek Businesses Most Often Lose Revenue</h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                {[
-                  { title: "They look available, but not clearly better.", desc: "A buyer sees the business, but nothing creates enough confidence to make the next step obvious." },
-                  { title: "They underestimate how much perception shapes conversion.", desc: "In a comparison-driven market, trust signals matter more than many owners realize." },
-                  { title: "They treat channels separately.", desc: "Website, SEO, ads, and follow-up each get attention, but not as one system." },
-                  { title: "They answer acceptably, not quickly.", desc: "In a market where buyers compare fast, good enough response speed still loses leads." },
-                  { title: "They spend for acquisition but underuse retention.", desc: "That forces the business to keep buying attention it could have kept warmer." },
-                ].map((item, i) => (
-                  <div key={i} className="feature-card-teal rounded-2xl p-5">
-                    <p className="text-foreground font-semibold mb-2">{item.title}</p>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-card/50 border border-border/60 rounded-xl p-6 mt-6 text-center">
-                <p className="text-foreground/90">That is why GrowSmallBiz is built around one connected growth system instead of isolated tactics.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Why Walnut Creek Is a Market Worth Winning */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <TrendingUp className="w-4 h-4" /> LOCAL MARKET
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Walnut Creek Is a Market{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Worth Winning</span>
-            </h2>
-          </div>
-
-          {/* Market Signal Band */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
-            {[
-              { line: "strong homeowner demand" },
-              { line: "premium service expectations" },
-              { line: "appointment-driven health and wellness demand" },
-              { line: "cross-city buyer comparison throughout the East Bay" },
-            ].map((signal, i) => (
-              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 text-center">
-                <p className="text-sm md:text-base font-display font-semibold text-primary leading-snug">{signal.line}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Body Copy — Editorial Card Layout */}
-          <div className="max-w-4xl mx-auto space-y-6">
-            {/* Full-width lead card */}
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Market Snapshot</p>
-              <p className="text-base md:text-lg text-foreground/90 leading-relaxed"><a href="https://www.walnutcreekconnected.com/home/showdocument?id=31673&t=638580174769484169" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Walnut Creek</a> is a meaningful market for local businesses that can turn visibility into trust and trust into action. The city combines strong household economics, an active business environment, established residential demand, and buyers who are used to evaluating quality.</p>
-            </div>
-
-            {/* Ecosystem card */}
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Business Ecosystem</p>
-              <p className="text-base text-foreground/90 leading-relaxed"><a href="https://www.walnutcreekconnected.com/business-support/resources-and-partnerships" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">City of Walnut Creek's economic development materials</a> point to a supportive business environment and a strong network of local partners. The City's business-support pages specifically reference <a href="https://walnutcreekdowntown.com/about/who-we-are" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Walnut Creek Downtown</a> and the <a href="https://www.walnut-creek.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Walnut Creek Chamber</a> as part of that ecosystem. Walnut Creek Downtown describes itself as a Business Improvement District that promotes the downtown business community, while the Walnut Creek Chamber says it attracts, supports, and grows business in the Walnut Creek region through advocacy and inclusive economic and business development.</p>
-            </div>
-
-            {/* What the Market Supports */}
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">What the Market Supports</p>
-              <p className="text-base text-foreground/90 leading-relaxed mb-3">For a local service business, that matters because Walnut Creek supports:</p>
-              <ul className="space-y-2 text-foreground/80">
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>strong homeowner demand</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>premium service expectations</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>appointment-driven health and wellness demand</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>consultation-driven professional services</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>repeat-visit local business opportunity</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>and cross-city buyer comparison throughout the East Bay</li>
-              </ul>
-              <p className="text-base text-foreground/90 leading-relaxed mt-4">This is especially important in categories where buyers decide based on professionalism before they ever call.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Digital Marketing Services — Card Grid */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Briefcase className="w-4 h-4" /> SERVICES
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Digital Marketing Services for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Walnut Creek, CA Local Businesses</span>
-            </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz provides the digital marketing services most local businesses actually need, but as one connected system rather than separate projects.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                icon: Globe,
-                title: "Website Design for Small Businesses",
-                description: <>A website should do more than describe what a business does. It should help the business feel trustworthy, clear, and easy to choose. Our <Link to="/services/website-design/" className="text-primary hover:underline">website design for small businesses</Link> focuses on stronger structure, better calls to action, mobile responsiveness, and cleaner inquiry flow.<br /><br />For Walnut Creek businesses, that often means improving how the business is perceived in the first few seconds, not just making the design look more updated.</>
-              },
-              {
-                icon: Search,
-                title: "SEO and Local SEO Services",
-                description: <>Our <Link to="/services/seo-agency/" className="text-primary hover:underline">SEO and local SEO services</Link> help Walnut Creek businesses improve visibility where local buyers are already comparing options. That includes Google Business Profile support, local landing-page relevance, content strength, technical structure, and trust signals that help a business earn the click or call.<br /><br />Local SEO and search engine optimization work best when they are tied directly to confidence-building. Ranking alone is not enough here. The business has to look worth contacting once it is found.</>
-              },
-              {
-                icon: Target,
-                title: "Paid Ads Management with Google Ads, Local Services Ads, and Meta Ads",
-                description: <><Link to="/services/paid-advertising/" className="text-primary hover:underline">Paid ads management</Link> helps Walnut Creek businesses create faster visibility and more controlled lead generation. Google Ads can capture high-intent demand. Local Services Ads can strengthen trust in eligible categories. Meta Ads can support remarketing, selective local reach, and awareness where the business model fits.<br /><br />Paid campaigns work best when they reinforce the rest of the system. Without strong landing pages and strong follow-up, traffic becomes expensive attention instead of useful opportunity.</>
-              },
-              {
-                icon: Zap,
-                title: "Marketing Automation, AI Receptionist, and Better Follow-Up",
-                description: <><Link to="/services/marketing-automation-for-small-business/" className="text-primary hover:underline">Marketing automation</Link> helps businesses respond faster, nurture leads more consistently, and convert more opportunities without relying only on manual follow-up. That can include CRM workflows, AI Receptionist support, missed-call text-back, email and SMS follow-up, and reactivation systems.<br /><br />For many Walnut Creek businesses, this is where the hidden lift is found. The difference between a lead and a lost lead often comes down to how quickly and how professionally the next step happens.</>
-              },
-            ].map((service, i) => (
-              <div key={i} className="feature-card-teal rounded-2xl p-6">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <service.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-display font-bold text-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Built for How Walnut Creek Buyers Actually Decide */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Users className="w-4 h-4" /> BUYER BEHAVIOR
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for How Walnut Creek Buyers{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Actually Decide</span>
-            </h2>
-          </div>
-          <div className="space-y-6 max-w-4xl mx-auto">
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base md:text-lg text-foreground/90 leading-relaxed mb-3">Walnut Creek buyers often decide through comparison, not impulse. They look at:</p>
-              <ul className="space-y-2 text-foreground/80 mb-4">
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>reviews</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>business profiles</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>websites</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>professionalism</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>service clarity</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>and how easy the business feels to contact</li>
-              </ul>
-              <p className="text-base text-foreground/90 leading-relaxed">That means local marketing has to do more than create visibility. It has to strengthen perceived quality.</p>
-            </div>
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base text-foreground/90 leading-relaxed">A business can show up in search and still underperform if the site feels thin, the message feels vague, or the follow-up path feels uncertain. The businesses that do best in a market like Walnut Creek usually create confidence before the first conversation even happens.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Built for Walnut Creek's Most Important Local Categories */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Users className="w-4 h-4" /> INDUSTRIES
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Walnut Creek's Most Important{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local Categories</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="feature-card-teal rounded-2xl p-6">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <Home className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">Home Service Contractors</h3>
-              <p className="text-muted-foreground leading-relaxed mb-3">Walnut Creek homeowners often compare providers on responsiveness, credibility, reviews, and professionalism, not just price.</p>
-              <p className="text-muted-foreground leading-relaxed">GrowSmallBiz helps home service businesses improve local visibility, stronger lead capture, and better speed to lead so more searches become booked work.</p>
-            </div>
-
-            <div className="feature-card-teal rounded-2xl p-6">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <Heart className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">Health and Wellness Businesses</h3>
-              <p className="text-muted-foreground leading-relaxed mb-3">Dentists, med spas, chiropractors, and related providers compete in categories where trust and perception matter heavily. A business may be technically strong and still lose if the digital experience feels weaker than the competition.</p>
-              <p className="text-muted-foreground leading-relaxed">GrowSmallBiz helps strengthen that path from discovery to inquiry so the business feels more credible before the prospect even reaches out.</p>
-            </div>
-
-            <div className="feature-card-teal rounded-2xl p-6">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <Building2 className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">Real Estate and Professional Services</h3>
-              <p className="text-muted-foreground leading-relaxed">Walnut Creek professionals compete in a market where trust, familiarity, and consistency matter. One burst of attention is rarely enough. Stronger long-term visibility and better lead handling both matter.</p>
-            </div>
-
-            <div className="feature-card-teal rounded-2xl p-6">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <Calendar className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">Appointment-Driven and Repeat-Visit Local Businesses</h3>
-              <p className="text-muted-foreground leading-relaxed">Some local businesses win by building repeat trust over time. Promotions, reactivation, customer communication, and better follow-up can matter just as much as first-time discovery.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Why Walnut Creek Businesses Need an AI-First Marketing Platform */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Brain className="w-4 h-4" /> AI-FIRST PLATFORM
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Walnut Creek Businesses Need an{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI-First Marketing Platform</span>
-            </h2>
-          </div>
-
-          <div className="space-y-5 max-w-4xl mx-auto">
-            {/* Intro paragraph */}
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <p className="text-muted-foreground leading-relaxed">An AI-first marketing platform should not mean replacing people with gimmicks. It should mean using <a href="https://www.census.gov/newsroom/blogs/research-matters/2024/12/ai-use-small-businesses.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">AI</a> where it creates practical leverage in a market that expects speed, consistency, and professionalism.</p>
-            </div>
-
-            {/* Operational gap card */}
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Why It Matters</span>
-              <p className="text-muted-foreground leading-relaxed mb-3">In Walnut Creek, that matters because the gap between good business and chosen business is often operational:</p>
-              <ul className="space-y-2 text-foreground/80">
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>who answered faster</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>who followed up better</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>who seemed more organized</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>who looked easier to trust</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>who made the next step simpler</li>
-              </ul>
-              <p className="text-muted-foreground leading-relaxed mt-4">AI helps close those gaps when it is used well.</p>
-            </div>
-
-            {/* Where AI Helps Most */}
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-4 block">Where AI Helps Most in Walnut Creek</span>
-              <div className="grid sm:grid-cols-2 gap-4">
-                {[
-                  { title: "Faster first response", desc: "A prospect comparing options is easier to keep when the business responds quickly." },
-                  { title: "More polished follow-up", desc: "The business feels more consistent and more professional across touchpoints." },
-                  { title: "Less operational leakage", desc: "Fewer good leads disappear because a call, form, or text was handled too slowly." },
-                  { title: "More reliable workflow execution", desc: "Important follow-up steps happen more consistently instead of relying on memory and availability." },
-                  { title: "Smarter campaign support", desc: "Optimization becomes more disciplined and less reactive." },
-                ].map((item, i) => (
-                  <div key={i} className="feature-card-teal rounded-xl p-4">
-                    <p className="text-foreground font-semibold text-sm mb-1">{item.title}</p>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Closing card */}
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <p className="text-muted-foreground leading-relaxed">The value of AI here is not novelty. It is that it helps a business meet the standard buyers already expect.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: AI Search Visibility Also Matters in Walnut Creek */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Eye className="w-4 h-4" /> AI SEARCH
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              AI Search Visibility Also Matters in{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Walnut Creek</span>
-            </h2>
-          </div>
-          <div className="space-y-6 max-w-4xl mx-auto">
-            {/* Opening paragraph */}
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Search Behavior Is Changing</span>
-              <p className="text-foreground/90 leading-relaxed">AI search visibility is becoming part of local visibility, not a separate channel. <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google</a> says the same foundational SEO best practices still apply to AI features such as AI Overviews and AI Mode. That means the businesses most likely to benefit are still the ones with stronger fundamentals:</p>
-            </div>
-
-            {/* Fundamentals card */}
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-3 block">Stronger Fundamentals Win</span>
-              <ul className="space-y-2 text-foreground/80">
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>better service pages</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>clearer local relevance</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>accurate business information</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>stronger trust signals</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>helpful content</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>and a technically sound site</li>
-              </ul>
-            </div>
-
-            {/* Concluding card */}
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">What This Means for Walnut Creek</span>
-              <p className="text-foreground/90 leading-relaxed">For Walnut Creek businesses, that matters because buyers are already comparison-oriented. Thin local content does not help much in that environment. Clearer, more trustworthy content does.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Why Local Visibility Still Matters */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Eye className="w-4 h-4" /> LOCAL VISIBILITY
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Local Visibility Still Matters for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Walnut Creek Businesses</span>
-            </h2>
-          </div>
-          <div className="space-y-6 max-w-4xl mx-auto">
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base text-foreground/90 leading-relaxed"><a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google's Business Profile guidance</a> says businesses with complete and accurate information are more likely to appear in local search results, and that local results are mainly based on relevance, distance, and popularity.</p>
-            </div>
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base text-foreground/90 leading-relaxed">In Walnut Creek, local visibility still affects who gets the inquiry. Buyers compare quickly and often pick the business that looks most credible with the least friction. Strong local visibility matters because it creates the first opportunity to be considered at all.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: How GrowSmallBiz Helps Turn Attention Into Revenue */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <BarChart3 className="w-4 h-4" /> GROWTH MODEL
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              How GrowSmallBiz Helps Turn Attention Into{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Revenue</span>
-            </h2>
-          </div>
-          <div className="space-y-6 max-w-4xl mx-auto">
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base text-foreground/90 leading-relaxed">GrowSmallBiz is built around a connected model: Discovery, Trust, Contact, Conversion, and Retention.</p>
-            </div>
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-base text-foreground/90 leading-relaxed">Discovery comes from search visibility, paid reach, stronger positioning, and selective social media marketing support when it helps reinforce local recognition. Trust grows when the website, reviews, business profile, and service pages all tell the same credible story. Contact improves when forms, calls, and messaging paths reduce friction. Conversion improves when response is faster and follow-through is stronger. Retention grows through review generation, reactivation campaigns, ongoing customer communication, and reputation management that keeps the business top of mind.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: What Businesses Usually Want to Improve */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <TrendingUp className="w-4 h-4" /> GAINS
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Businesses Usually Want to Improve in{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Walnut Creek</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
-            {[
-              { title: "A stronger first impression against stronger competition", desc: "Because the business often needs to feel more premium and more trustworthy, not just more visible." },
-              { title: "More consistency between traffic and conversion", desc: "So the business gets more value from the visibility it already earns." },
-              { title: "Faster and more polished lead handling", desc: "Especially when buyer comparison happens quickly." },
-              { title: "Stronger review and reputation support", desc: "Because perception matters more in a higher-choice market." },
-              { title: "More value from retained customers and warm leads", desc: "Instead of paying to reacquire demand from scratch every month." },
-            ].map((gain, i) => (
-              <div key={i} className="feature-card-teal rounded-2xl p-6">
-                <p className="text-foreground font-display font-semibold mb-2">{gain.title}</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">{gain.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Testimonials */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Users className="w-4 h-4" /> TESTIMONIALS
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Representative{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Client Feedback</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "Walnut Creek-Area Home Services Owner", quote: "The most useful part was realizing that our problem was not just traffic. We needed the whole experience to feel stronger and more coordinated once people found us." },
-              { title: "East Bay Wellness Practice Manager", quote: "What stood out was the focus on trust and follow-through. The recommendations felt built for a market where buyers are comparing carefully, not just clicking around." },
-              { title: "Tri-Valley Professional Services Owner", quote: "They understood that visibility alone does not win in a place like Walnut Creek. The way they tied together presentation, follow-up, and conversion made the strategy feel much more complete." },
-            ].map((t, i) => (
-              <div key={i} className="p-6 feature-card-teal rounded-2xl">
-                <p className="text-foreground/90 italic mb-4">"{t.quote}"</p>
-                <p className="text-sm font-semibold text-primary">{t.title}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Why Walnut Creek Businesses Choose GrowSmallBiz */}
+      {/* Section: What Makes GrowSmallBiz Different */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
@@ -593,23 +115,534 @@ const WalnutCreekCA = () => {
               <Star className="w-4 h-4" /> WHY US
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Walnut Creek Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Choose GrowSmallBiz</span>
+              What Makes GrowSmallBiz Different — And Why It Matters for{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Bottom Line</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Choosing the right digital marketing partner is one of the most important decisions you'll make for your business. Here's what sets GrowSmallBiz apart from general-purpose agencies:</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-5">
+            {[
+              { label: "Exclusive vertical focus:", body: "We only serve contractors, health & wellness professionals, and real estate pros — not one of dozens of industries." },
+              { label: "Deep East Bay market knowledge:", body: "We understand Walnut Creek's competitive landscape, seasonal demand cycles, and neighborhood-level search behavior." },
+              { label: "Proven local results:", body: "HVAC clients rank in the Google local 3-pack within 90 days; dental practices average 30+ new patient inquiries per month." },
+              { label: "Integrated, not siloed:", body: "Every channel — SEO, Ads, Reputation, AI — feeds one coordinated goal: your growth." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to results. We earn your business every single month." },
+              { label: "AI-powered speed:", body: "Our AI Receptionist technology responds to missed leads within minutes — because in competitive trades, the first responder wins the job." },
+            ].map((item, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
+                <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-foreground">{item.label}</span> {item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Why Walnut Creek Is a Market Worth Winning */}
+      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <TrendingUp className="w-4 h-4" /> LOCAL MARKET
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Your Competitors Are Winning in Walnut Creek Search Results.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          {/* Market Snapshot Stat Band */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
             {[
-              { title: "Built for Local Service Businesses", desc: "GrowSmallBiz is built for businesses that depend on visibility, trust, and measurable lead flow." },
-              { title: "Better Fit for Comparison-Driven Markets", desc: "Walnut Creek is a market where buyers evaluate quality quickly. Stronger systems create a stronger edge." },
-              { title: "Less Fragmentation, More Coordination", desc: "The goal is not one more tactic. It is to make the whole growth system work together." },
-              { title: "Measured by Business Movement", desc: "The focus is not vanity metrics. It is better inquiries, better follow-up, better conversion, and better customer value." },
-            ].map((item, i) => (
-              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-                <h3 className="text-lg font-display font-semibold text-foreground mb-3">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+              { line: "50%+ homeownership rate" },
+              { line: "Highest median household incomes in Contra Costa County" },
+              { line: "Active real estate market" },
+              { line: "Distinct seasonal demand cycles" },
+            ].map((signal, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 text-center">
+                <p className="text-sm md:text-base font-display font-semibold text-primary leading-snug">{signal.line}</p>
               </div>
             ))}
+          </div>
+
+          {/* Body Copy */}
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Market Overview</p>
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Walnut Creek and the surrounding Contra Costa County region represent one of the most attractive markets for local service businesses in the entire Bay Area — and one of the most competitive. Understanding what makes this market unique is the foundation of every marketing strategy we build.</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Why Walnut Creek Is One of the Best — and Most Competitive — Markets</p>
+              <ul className="space-y-3 text-foreground/80">
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><span><strong className="text-foreground">High homeownership rate:</strong> With over 50% of Walnut Creek residents owning their homes, demand for HVAC maintenance, roofing, plumbing, and electrical services is consistent and year-round — not seasonal spikes.</span></li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><span><strong className="text-foreground">Affluent consumer base:</strong> Walnut Creek has one of the highest median household incomes in Contra Costa County, making it an ideal market for premium dental care, med spa treatments, cosmetic procedures, and home improvement services. Price-sensitive leads are less of a challenge here — quality and credibility win.</span></li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><span><strong className="text-foreground">Active real estate market:</strong> Contra Costa County's real estate market drives steady demand for agents, brokers, and mortgage professionals. Listing visibility and lead generation are mission-critical for professionals competing in this market.</span></li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><span><strong className="text-foreground">Distinct seasonal demand cycles:</strong> Walnut Creek's inland East Bay climate creates predictable HVAC peaks — AC emergency calls spike in summer heat waves, heating system tune-ups surge in fall and winter. Marketing campaigns built around these cycles dramatically outperform generic, always-on approaches.</span></li>
+              </ul>
+            </div>
+
+            {/* Local Search Gap */}
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">The Local Search Gap</p>
+              <p className="text-base text-foreground/90 leading-relaxed mb-4">Here's a number that should concern every Walnut Creek service business: according to <a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal's Local Consumer Review Survey</a>, 81% of consumers use Google to evaluate local businesses — and <a href="https://www.brightlocal.com/resources/local-seo-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">80% of US consumers search for local businesses on a weekly basis</a>. Yet <a href="https://www.brightlocal.com/resources/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal research</a> also shows that 56% of businesses still haven't fully optimized their Google Business Profile. That gap represents a significant competitive advantage for the businesses willing to claim it.</p>
+              <p className="text-base text-foreground/90 leading-relaxed">Generic marketing agencies miss this opportunity because they lack the industry-specific knowledge to navigate Walnut Creek's dynamics. Local SEO for an HVAC company is not the same as local SEO for a dental practice — the keyword strategies, review management tactics, and conversion pages are entirely different. GrowSmallBiz is built to execute on both with equal precision.</p>
+            </div>
+
+            {/* Pull Quote */}
+            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg px-6 py-5">
+              <p className="text-lg md:text-xl font-semibold italic text-foreground/90 text-center md:text-left">"81% of consumers use Google to evaluate local businesses — yet 56% of businesses still haven't fully optimized their Google Business Profile. That gap is your competitive advantage." — BrightLocal Local Consumer Review Survey, 2024</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Services Overview Table */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Briefcase className="w-4 h-4" /> SERVICES
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Our Integrated Marketing System —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Just Your Dashboard</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Our services are not sold as isolated tactics. They are delivered as an integrated system, designed so that each channel amplifies the others. Here is what's included and what it means for your business:</p>
+          </div>
+
+          <div className="grid gap-4">
+            {[
+              { title: "Local SEO & Google Business Profile", whatWeDo: "GBP optimization, NAP citation building, neighborhood keyword targeting, review management, local link building", impact: "Rank in Google Maps & local 3-pack; attract customers searching in Rossmoor, Northgate, Saranap, and surrounding neighborhoods" },
+              { title: "Managed Google Ads / PPC", whatWeDo: "Call-only ads, location extensions, seasonal keyword campaigns, conversion tracking, ongoing bid optimization", impact: "Immediate top-of-page visibility; qualified leads from day one; efficient ad spend with real-time performance data" },
+              { title: "Google Local Service Ads (LSA)", whatWeDo: "Background check coordination, license verification, budget management, Google Guaranteed badge setup", impact: "Appear above standard search ads with a trust badge that turns clicks into verified phone leads" },
+              { title: "Social Media & Meta Ads", whatWeDo: "Geo-targeted Facebook & Instagram campaigns for 94596, 94597, 94598 ZIP codes; retargeting sequences; creative development", impact: "Build brand awareness and re-engage warm prospects who visited your site but did not convert" },
+              { title: "Conversion-Focused Website Design", whatWeDo: "Mobile-first design, click-to-call integration, online booking, trust elements, page speed optimization", impact: "Turn website visitors into booked appointments; fast load times reduce bounce and improve rankings" },
+              { title: "Reputation Management", whatWeDo: "Automated review request campaigns, Google/Yelp/Houzz monitoring, professional response guidance", impact: "Grow from 3-star averages to 4.5+ stars, build trust, and improve your local search ranking signals" },
+              { title: "AI Receptionist & Lead Automation", whatWeDo: "24/7 missed-call SMS follow-up, appointment scheduling automation, lead routing, CRM integration", impact: "Never lose a lead to a competitor who answers faster; capture and nurture every inquiry automatically" },
+            ].map((service, i) => (
+              <div key={i} className="feature-card-teal rounded-2xl p-5 md:p-6">
+                <h3 className="text-lg font-display font-bold text-foreground mb-3">{service.title}</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">What We Do</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{service.whatWeDo}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">Walnut Creek Impact</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{service.impact}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Local SEO */}
+      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Search className="w-4 h-4" /> LOCAL SEO
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Get Found First When Walnut Creek Customers Search for Your Services —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO & Google Maps Domination</span>
+            </h2>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Local SEO is the single most powerful long-term investment a Walnut Creek service business can make. According to <a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Think with Google</a>, 76% of consumers who perform a local search on their smartphone visit or contact a business within 24 hours — making first-page Google visibility a direct revenue driver, not a vanity metric.</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Our Local SEO Approach for Walnut Creek</p>
+              <ul className="space-y-3 text-foreground/80">
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Complete Google Business Profile (GBP) audit, optimization, and ongoing management — including accurate NAP consistency across all citations</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Category and service area selection tailored to Walnut Creek neighborhoods: Rossmoor, Saranap, Northgate, Lakewood, and surrounding East Bay communities</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>High-conversion service and geo-targeted landing pages that match how Walnut Creek residents actually search — terms like 'AC repair Walnut Creek,' 'dentist accepting new patients 94596,' and 'roofer near Rossmoor'</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Local citation building across authoritative directories to strengthen domain authority and local search ranking signals</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Structured review generation and management campaigns that improve your star rating and send powerful local relevance signals to Google</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Monthly performance reporting — rankings, impressions, calls, and direction requests — so you always know exactly what your investment is producing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Google Ads */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Target className="w-4 h-4" /> GOOGLE ADS
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Need Leads This Week, Not This Quarter?{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Google Ads That Deliver Walnut Creek Customers on Day One.</span>
+            </h2>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Organic search rankings take time to build. Google Ads deliver qualified leads from day one. For Walnut Creek service businesses that need to fill their calendars now — not in three months — a well-managed PPC campaign is the fastest path to inbound calls and booked appointments.</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Our Walnut Creek Google Ads Management</p>
+              <ul className="space-y-3 text-foreground/80">
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Call-only campaigns designed for home service contractors where phone calls are the primary conversion — critical for emergency HVAC repairs, plumbing calls, and urgent electrical service requests</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Location-targeted campaigns covering Walnut Creek's ZIP codes (94596, 94597, 94598) and adjacent service areas including Pleasant Hill, Concord, Lafayette, and Danville</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Seasonal keyword campaigns aligned to Walnut Creek's demand cycles — 'AC tune-up Walnut Creek' in spring, 'heating repair near me' in fall, 'emergency plumber Walnut Creek' year-round</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Comprehensive conversion tracking for phone calls, form submissions, and appointment bookings — so every dollar of ad spend is accountable to a measurable outcome</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Continuous campaign optimization: A/B testing ad copy, refining bid strategies, adding negative keywords, and improving landing page conversion rates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Google LSA */}
+      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Shield className="w-4 h-4" /> GOOGLE LSA
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Show Up Above Every Competitor With a Google Trust Badge —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Walnut Creek Leads, Pre-Qualified Before They Call</span>
+            </h2>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Google Local Service Ads (LSA) represent one of the most powerful lead generation tools available to licensed home service contractors. These pay-per-lead ads appear above traditional Google Ads in search results and carry the Google Guaranteed badge — a trust signal that significantly increases the likelihood a prospect picks up the phone.</p>
+              <p className="text-base text-foreground/90 leading-relaxed mt-4">For Walnut Creek HVAC companies, plumbers, electricians, roofers, and similar contractors, LSA can be the difference between a phone that rings consistently and one that doesn't. GrowSmallBiz manages the entire LSA process:</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <ul className="space-y-3 text-foreground/80">
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Background check coordination and professional license verification for all relevant trade categories</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Budget optimization to maximize verified lead volume while controlling cost-per-lead</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Dispute management for invalid or low-quality leads to protect your advertising investment</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Compliance maintenance with Google's ongoing requirements to preserve your Google Guaranteed status</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Social Media & Meta Ads */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Users className="w-4 h-4" /> SOCIAL MEDIA
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Reach Walnut Creek Homeowners Before They Need You —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">And Be the First Call When They Do</span>
+            </h2>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Facebook and Instagram give Walnut Creek service businesses a direct channel to reach their exact target audience — homeowners in specific ZIP codes, residents in particular age and income brackets, and users who have already visited your website but didn't convert. Our geo-targeted Meta Ads campaigns are built around the neighborhoods and ZIP codes where your ideal customers live.</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Our Social Media Marketing Approach</p>
+              <ul className="space-y-3 text-foreground/80">
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Geo-targeted Facebook and Instagram campaigns covering Walnut Creek ZIP codes 94596, 94597, and 94598 — ensuring your budget reaches residents in your actual service area, not the broader Bay Area</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Before-and-after visual campaigns for roofers, HVAC companies, and home improvement contractors that demonstrate real service quality and drive engagement</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Patient transformation stories and testimonial campaigns for dentists, med spa owners, and wellness professionals that build credibility and appointment bookings</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Retargeting sequences that re-engage website visitors who did not convert on their first visit — keeping your business top of mind through the decision cycle</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Seasonal and promotional campaign calendars aligned to your peak service periods and slow-season fill-up goals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Reputation Management */}
+      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Star className="w-4 h-4" /> REPUTATION
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              A 3-Star Rating Is Silently Killing Your Walnut Creek Business.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's How We Fix It in 90 Days.</span>
+            </h2>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">In Walnut Creek's high-income, high-discernment market, your online reputation is as important as the quality of your work. Consumers considering premium home improvement, dental care, or wellness services routinely read a dozen or more reviews before making contact. A 3.8-star rating in a market where competitors are at 4.7 stars can cost you more leads per month than any advertising gap. GrowSmallBiz's reputation management system is built to systematically improve your rating and protect your brand:</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <ul className="space-y-3 text-foreground/80">
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Automated review request campaigns sent to satisfied customers immediately after service completion — capturing feedback while the experience is fresh</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Multi-platform monitoring across Google, Yelp, Houzz, Healthgrades, Zocdoc, and Realtor.com — ensuring no review goes unnoticed</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Professional response guidance and templates for negative reviews — turning difficult situations into trust-building demonstrations of your commitment to customer service</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Reputation reporting showing your rating trajectory, review velocity, and competitive position in the Walnut Creek market</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Custom strategies for healthcare and wellness professionals that comply with HIPAA guidelines while still building a compelling, authentic review profile</li>
+              </ul>
+            </div>
+
+            <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg px-6 py-5">
+              <p className="text-base text-foreground/90 leading-relaxed">The stakes are high: <a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal's 2024 Local Consumer Review Survey</a> found that 88% of consumers say they would use a business that responds to all of its reviews — compared to just 47% who would consider a business that does not respond at all. Active reputation management is not optional for Walnut Creek service businesses competing for high-value clients.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Website Design */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Globe className="w-4 h-4" /> WEBSITE DESIGN
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Your Website Should Be Your Best Salesperson.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">If It's Not Generating Walnut Creek Leads Daily, It's Costing You Money.</span>
+            </h2>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Your website is working — or it isn't. For most local service businesses in Walnut Creek, it isn't. Generic websites built on templates fail on three dimensions simultaneously: they load too slowly to retain mobile visitors, they lack the trust elements that convert skeptical prospects, and they bury the actions you want visitors to take. GrowSmallBiz builds mobile-first, conversion-optimized websites specifically for local service businesses:</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-5">
+              <div className="bg-card/50 border border-border/60 rounded-xl p-5">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Performance & Mobile</p>
+                <ul className="space-y-2 text-foreground/80 text-sm">
+                  <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Fast-loading, mobile-first design — because the majority of local searches happen on smartphones and Google penalizes slow sites with lower rankings</li>
+                  <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Click-to-call buttons and tap-to-text functionality prominently placed above the fold for immediate customer contact</li>
+                  <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Online booking integrations for appointment-driven businesses — dentists, med spas, chiropractors, and physical therapists benefit immediately from reduced friction in the scheduling process</li>
+                </ul>
+              </div>
+              <div className="bg-card/50 border border-border/60 rounded-xl p-5">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Trust Architecture</p>
+                <ul className="space-y-2 text-foreground/80 text-sm">
+                  <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Professional headshots, licensing credentials, Google review widgets, before-and-after galleries, and transparent pricing information that eliminate objections before they arise</li>
+                  <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Walnut Creek-specific landing pages for each service and neighborhood, capturing hyper-local search intent with geo-targeted content that generic agency websites never build</li>
+                  <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Conversion rate optimization — ongoing testing of headlines, CTAs, form design, and page layout to improve the percentage of visitors who become leads</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: AI Receptionist & Automation */}
+      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Zap className="w-4 h-4" /> AI AUTOMATION
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Every Missed Call Is a Lost Job.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Our AI Receptionist Follows Up in Seconds.</span>
+            </h2>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Here is a fact that most Walnut Creek service businesses don't want to think about: according to research by <a href="https://www.insidesales.com/response-time-matters/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">MIT and InsideSales.com published in the Harvard Business Review</a>, leads contacted within 5 minutes are 21 times more likely to convert than those reached after just 30 minutes. Wait an hour and the odds drop by 10 times. In competitive trades where multiple businesses receive the same inquiry, the first to respond wins — almost every time. Speed-to-lead is one of the most powerful conversion factors in local service business marketing, and it's one that AI automation solves completely.</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">GrowSmallBiz AI Receptionist & Automation</p>
+              <ul className="space-y-3 text-foreground/80">
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><strong className="text-foreground">Missed-call text-back:</strong> When a lead calls and you can't answer, an automated SMS is sent within seconds — acknowledging the inquiry and asking how you can help, keeping the conversation alive</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><strong className="text-foreground">Conversational AI for lead qualification:</strong> Your AI Receptionist can answer FAQs, collect service details, and schedule appointments without human intervention — around the clock</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><strong className="text-foreground">Automated appointment reminders:</strong> Confirmation sequences that reduce no-shows for dentists, med spas, and other appointment-based businesses</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><strong className="text-foreground">CRM integration and lead tracking:</strong> Every inquiry is captured, tagged, and tracked from first contact through closed job, giving you complete visibility into your marketing ROI</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span><strong className="text-foreground">Lead routing:</strong> High-priority or emergency inquiries are escalated immediately to the right team member, ensuring urgent service requests are never lost in a queue</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mid-page CTA */}
+      <section className="py-16" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4">
+          <CardCTA
+            title="Get Your Free Marketing Assessment"
+            description="Receive a personalized strategy session — local SEO audit, competitive analysis, and a clear growth roadmap built specifically for your Walnut Creek service business."
+            buttonText="Schedule Strategy Call"
+            buttonHref={strategyCallUrl}
+            sectionClassName="pt-0 pb-0"
+          />
+        </div>
+      </section>
+
+      {/* Section: Who We Serve */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Users className="w-4 h-4" /> INDUSTRIES
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Built for Your Industry, Not Adapted From{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Someone Else's Playbook</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz serves a focused set of local service business verticals in Walnut Creek and surrounding East Bay communities. Our specialization means deeper expertise, faster results, and strategies that reflect real market knowledge — not generic agency assumptions.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="feature-card-teal rounded-2xl p-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Home className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Home Service Contractors</h3>
+              <p className="text-sm font-semibold text-primary mb-2">HVAC, Roofing, Plumbing & Electrical</p>
+              <p className="text-muted-foreground leading-relaxed text-sm">HVAC companies, roofing contractors, plumbers, electricians, landscapers, pest control services, window and door companies. We build marketing systems around seasonal demand cycles, emergency search behavior, and neighborhood-level lead generation — delivering booked jobs, not just website traffic.</p>
+            </div>
+
+            <div className="feature-card-teal rounded-2xl p-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Dentists, Med Spas & Wellness</h3>
+              <p className="text-sm font-semibold text-primary mb-2">Attract High-Value Patients Who Book and Stay</p>
+              <p className="text-muted-foreground leading-relaxed text-sm">Dentists and dental practices, med spa owners, cosmetic surgeons, chiropractors, and physical therapists. We specialize in appointment-driven conversion funnels, HIPAA-aware reputation management, and attracting the high-value patients that Walnut Creek's affluent demographic represents.</p>
+            </div>
+
+            <div className="feature-card-teal rounded-2xl p-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Building2 className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Real Estate Agents & Brokers</h3>
+              <p className="text-sm font-semibold text-primary mb-2">Own Your Local Market & Build a Referral Engine</p>
+              <p className="text-muted-foreground leading-relaxed text-sm">Real estate brokers, agents, and mortgage brokers competing in Contra Costa County's active market. We build visibility for listings, generate qualified buyer and seller leads through local SEO and paid advertising, and establish lasting local authority through content and reputation marketing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Real Results */}
+      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <BarChart3 className="w-4 h-4" /> RESULTS
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Real Results for Walnut Creek Service Businesses:{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">The following results were achieved by GrowSmallBiz clients operating in Walnut Creek and the greater East Bay market. Individual results vary based on industry, competition, and starting conditions — but these outcomes represent what a properly integrated marketing system delivers when all channels work together.</p>
+          </div>
+
+          {/* Case Studies */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {[
+              { title: "Walnut Creek HVAC Company", metric: "Page 3 → Local 3-Pack in 11 Weeks", story: "After a comprehensive Google Business Profile optimization and local citation cleanup campaign, this HVAC contractor moved from page 3 obscurity to a top-3 local map pack position — capturing significantly more inbound calls during peak summer AC season." },
+              { title: "Contra Costa County Dental Practice", metric: "+34 New Patient Leads in Month 1", story: "Combining a targeted Google Ads launch with a proactive reputation management campaign, this dental practice generated 34 qualified new patient inquiries in its first full month — more than double its previous monthly average. The practice grew from a 3.8 to a 4.7-star Google rating within 6 months." },
+              { title: "Bay Area Real Estate Agent", metric: "2× Listing Inquiry Volume in 90 Days", story: "A coordinated local SEO and Meta Ads strategy doubled this agent's monthly listing inquiries from 50 to 100 within 90 days — establishing a consistent pipeline of qualified buyer and seller leads across Contra Costa County." },
+            ].map((cs, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-6">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">CLIENT RESULT</p>
+                <h3 className="text-lg font-display font-bold text-foreground mb-2">{cs.title}</h3>
+                <p className="text-primary font-semibold mb-3">{cs.metric}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{cs.story}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Performance Table */}
+          <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8 mb-12">
+            <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-4">What Happens After 90 Days with GrowSmallBiz</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border/60">
+                    <th className="text-left py-3 px-4 text-foreground font-semibold">Performance Metric</th>
+                    <th className="text-left py-3 px-4 text-muted-foreground font-semibold">Before GrowSmallBiz</th>
+                    <th className="text-left py-3 px-4 text-primary font-semibold">After 90 Days</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Google Local 3-Pack Ranking", "Page 3", "Top 3 — Local Map Pack"],
+                    ["Monthly Inbound Calls", "120 calls / mo", "210 calls / mo (+75%)"],
+                    ["New Patient Leads (Dental)", "15 leads / mo", "34 leads / mo (+127%)"],
+                    ["Real Estate Listing Inquiries", "50 inquiries / mo", "100 inquiries / mo (+100%)"],
+                    ["Avg. Google Review Rating", "3.8 stars", "4.7 stars (+0.9 stars)"],
+                  ].map(([metric, before, after], i) => (
+                    <tr key={i} className="border-b border-border/30">
+                      <td className="py-3 px-4 text-foreground/90 font-medium">{metric}</td>
+                      <td className="py-3 px-4 text-muted-foreground">{before}</td>
+                      <td className="py-3 px-4 text-primary font-semibold">{after}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Channel Comparison */}
+          <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+            <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Channel Comparison</p>
+            <h3 className="text-xl font-display font-bold text-foreground mb-4">Single-Channel Marketing Doesn't Win in Walnut Creek Anymore.</h3>
+            <p className="text-muted-foreground mb-6">The most effective Walnut Creek service business marketing strategies combine multiple channels — each one amplifying the others. Here's how the primary channels compare:</p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border/60">
+                    <th className="text-left py-3 px-4 text-foreground font-semibold">Channel</th>
+                    <th className="text-left py-3 px-4 text-foreground font-semibold">Best For</th>
+                    <th className="text-left py-3 px-4 text-foreground font-semibold">Time to Results</th>
+                    <th className="text-left py-3 px-4 text-foreground font-semibold">Long-Term Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Local SEO", "Sustainable organic rankings & trust signals", "3–6 months for full impact", "High — compounds over time"],
+                    ["Google Ads / PPC", "Immediate lead flow & seasonal peaks", "Day 1", "Medium — requires ongoing investment"],
+                    ["Google LSA", "Pay-per-verified-lead with Google trust badge", "2–4 weeks setup", "High — top search placement"],
+                    ["Meta / Social Ads", "Retargeting & brand awareness", "1–2 weeks", "Medium — audience building"],
+                    ["Reputation Mgmt", "Conversion lift & local ranking signals", "30–90 days for rating lift", "High — trust drives decisions"],
+                    ["AI Automation", "Lead capture speed & follow-up consistency", "Immediate after setup", "High — multiplies every other channel"],
+                  ].map(([channel, bestFor, time, value], i) => (
+                    <tr key={i} className="border-b border-border/30">
+                      <td className="py-3 px-4 text-primary font-semibold">{channel}</td>
+                      <td className="py-3 px-4 text-foreground/90">{bestFor}</td>
+                      <td className="py-3 px-4 text-muted-foreground">{time}</td>
+                      <td className="py-3 px-4 text-muted-foreground">{value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Why GrowSmallBiz Outperforms */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Star className="w-4 h-4" /> DIFFERENTIATORS
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              No Templates. No Generalists. No Excuses.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Why GrowSmallBiz Outperforms Every Agency That's Failed You Before.</span>
+            </h2>
+          </div>
+          <div className="space-y-6 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">There is no shortage of digital marketing agencies in the East Bay. Most will promise similar results with similar services. Here is why the marketing system GrowSmallBiz builds for Walnut Creek service businesses consistently outperforms what general-purpose agencies deliver:</p>
+            </div>
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <p className="text-base text-foreground/90 leading-relaxed">We don't use templates. We don't assign junior account managers to your campaign and move on. Every strategy is built from your specific competitive landscape, your service area, your verticals, and your revenue goals. Our certified marketing strategists carry your account from day one through sustained growth.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -620,11 +653,11 @@ const WalnutCreekCA = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
               Serving Walnut Creek and the{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Wider East Bay</span>
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Surrounding East Bay</span>
             </h2>
           </div>
           <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8 mb-10">
-            <p className="text-base text-foreground/90 leading-relaxed text-center">GrowSmallBiz supports businesses in Walnut Creek as well as nearby East Bay communities including Concord, Pleasant Hill, Martinez, Danville, San Ramon, Pleasanton, and surrounding service areas. That overlap matters because buyers often compare across city lines even when local trust still drives the final choice.</p>
+            <p className="text-base text-foreground/90 leading-relaxed text-center">GrowSmallBiz specializes exclusively in digital marketing for local service businesses in Walnut Creek, CA, and the surrounding East Bay. Service Area: Walnut Creek, Danville, San Ramon, Pleasant Hill, Concord, Lafayette, Alamo, and Greater East Bay.</p>
           </div>
 
           <div className="text-center">
@@ -653,14 +686,16 @@ const WalnutCreekCA = () => {
       </section>
 
       <FAQSection
-        title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Marketing in Walnut Creek, CA</span></>}
+        title={<>Your Questions Answered — <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Walnut Creek</span></>}
         faqs={[
-          { question: "What types of businesses does GrowSmallBiz work with in Walnut Creek, CA?", answer: "GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, chiropractors, real estate professionals, restaurants, and other businesses that rely on local visibility, qualified inquiries, and consistent follow-up." },
-          { question: "Is GrowSmallBiz only an SEO company?", answer: "No. SEO is one important part of the system, but GrowSmallBiz is not positioned as an SEO-only provider. The broader model includes website design, SEO, paid ads, marketing automation, and lead-handling improvements." },
-          { question: "Can GrowSmallBiz help if my business already has a website?", answer: "Yes. Many businesses already have a website but still need stronger messaging, cleaner landing pages, better local visibility, stronger calls to action, or more effective follow-up. An existing website can often be improved rather than replaced immediately." },
-          { question: "Do you offer Google Ads and Local Services Ads for Walnut Creek businesses?", answer: "Yes. GrowSmallBiz can support paid lead generation through Google Ads and Local Services Ads as part of a broader system that also includes landing pages, tracking, and lead follow-up." },
-          { question: "How does AI improve local marketing for small businesses?", answer: "AI improves local marketing when it is used for practical business functions such as faster lead response, smarter follow-up, better workflow consistency, and more efficient optimization. The value is not the label. The value is better execution." },
-          { question: "Why does local SEO still matter if search is becoming more AI-driven?", answer: "Because Google says the same foundational SEO best practices still apply to AI features, and local search visibility still depends on factors such as relevance, distance, and popularity. Strong local SEO and strong AI visibility increasingly reinforce each other instead of competing with each other." }
+          { question: "How much does digital marketing cost for a Walnut Creek local service business?", answer: "Investment levels vary based on your business size, revenue goals, competitive landscape, and the combination of services you need. Most Walnut Creek service businesses in our client portfolio invest between $1,000 and $5,000 per month across SEO, Google Ads, reputation management, and AI automation — with our core AI Client Growth System starting at $797 per month plus a one-time setup fee. We build custom packages aligned to your goals and service area to ensure maximum return on marketing investment." },
+          { question: "How long does it take to see results from local SEO in Walnut Creek?", answer: "Google Business Profile optimizations typically show measurable movement within 4 to 8 weeks. Full local 3-pack rankings for competitive Walnut Creek search terms are usually achieved within 3 to 6 months, depending on your industry and starting position. Google Ads campaigns generate qualified leads from day one. A combined SEO and Ads strategy delivers both immediate lead flow and sustainable long-term organic growth." },
+          { question: "Do I need both SEO and Google Ads, or can I choose just one?", answer: "Both channels serve different objectives. Google Ads delivers immediate, controllable lead flow — ideal when you need to fill your calendar now, launch into a new service area, or capitalize on seasonal demand spikes. SEO builds sustainable organic visibility that doesn't disappear when you stop paying per click. Used together, they create a full-funnel approach: Ads capture demand immediately, while SEO compounds your visibility and reduces your cost-per-lead over time. We help you determine the right balance based on your budget and growth stage." },
+          { question: "What makes a good digital marketing agency for a Walnut Creek service business?", answer: "The single most important factor is vertical specialization. A good agency for your business understands your industry's buyer psychology, seasonal patterns, competitive dynamics, and conversion drivers — not just the technical mechanics of SEO or PPC. Beyond specialization, look for certified strategists with verified local results, transparent reporting, integrated strategy across channels, and accountability through month-to-month agreements. If an agency primarily serves eCommerce brands or national clients, their frameworks will not translate well to local service business marketing." },
+          { question: "How can I measure the ROI of my digital marketing investment?", answer: "ROI measurement starts with proper conversion tracking — phone calls, form submissions, appointment bookings, and ultimately jobs booked and revenue generated. GrowSmallBiz implements comprehensive tracking across every channel and provides transparent monthly reports that connect marketing activity to business outcomes. Our clients know exactly how many leads each channel generated, what those leads cost, and how they translate to revenue. If a campaign is not performing, we know immediately and adjust — you are never in the dark about your investment." },
+          { question: "Why do Walnut Creek businesses specifically benefit from local digital marketing?", answer: "Walnut Creek's combination of affluent homeowners, a high homeownership rate above 50%, active real estate market, and intense local competition creates an environment where local digital marketing delivers outsized returns. BrightLocal research shows that 81% of consumers use Google to evaluate local businesses and 80% search for local businesses every week. Businesses that rank prominently in local search capture a disproportionate share of high-quality, high-intent leads. The opportunity gap — 56% of businesses haven't fully optimized their Google Business Profile (BrightLocal) — means the businesses that invest are not just competing; they are dominating." },
+          { question: "Can digital marketing help my seasonal service business in Walnut Creek?", answer: "Seasonal demand cycles are one of GrowSmallBiz's core specializations. We build campaigns that anticipate and capitalize on Walnut Creek's predictable seasonal patterns — HVAC marketing that ramps up before summer heat waves and fall heating season, dental and wellness promotional campaigns designed to fill slower winter months, and real estate lead generation aligned to the spring and fall transaction peaks. Data-driven campaign timing and seasonal keyword targeting ensure your marketing spend works hardest exactly when demand is highest." },
+          { question: "How does AI automation help my Walnut Creek service business compete?", answer: "Speed is the most underappreciated competitive advantage in local service business marketing. Studies consistently show that leads contacted within 5 minutes of inquiry convert at dramatically higher rates than those contacted after an hour or more. For busy Walnut Creek contractors and professionals who cannot answer every call, AI Receptionist technology closes the response gap — automatically following up with missed calls via SMS within seconds, answering common questions, and scheduling appointments without human intervention. The result is that your business effectively competes 24 hours a day, 7 days a week — even when you're on a job site." },
         ]}
         schemaType="FAQPage"
         contactCTA={{
@@ -676,16 +711,16 @@ const WalnutCreekCA = () => {
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
             <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
             <h2 className="section-title">
-              Ready to Build a Smarter Marketing System for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Walnut Creek Business</span>?
+              Every Day You Wait, Your Competitors Book Another Walnut Creek Customer{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Should Have Been Yours.</span>
             </h2>
             <p className="section-description mt-4 mb-8">
-              GrowSmallBiz helps Walnut Creek businesses connect website performance, search visibility, paid ads, follow-up, conversion, and retention into one practical system. That is the difference between paying for marketing activity and building a structure that supports real business growth.
+              Every day without a comprehensive marketing strategy is another day your competitors capture the leads that should belong to you. Walnut Creek's local service market rewards the businesses with the strongest digital presence — and penalizes those who remain invisible online. No long-term contracts. No cookie-cutter templates. No generalist agency assumptions. Just a focused team that builds the marketing system your Walnut Creek business deserves.
             </p>
           </div>
           <CardCTA
-            title="Schedule Your Free Marketing Assessment"
-            description="If you want a smarter, more connected approach to digital marketing in Walnut Creek, GrowSmallBiz is built for that next step. We can look at where your current system is losing visibility, losing trust, or losing leads — and what a stronger local growth engine could look like."
+            title="Get Your Free Marketing Assessment"
+            description="Receive a personalized strategy session — local SEO audit, competitive analysis, and a clear growth roadmap built specifically for your Walnut Creek service business."
             buttonText="Schedule Strategy Call"
             buttonHref={strategyCallUrl}
             sectionClassName="pt-0 pb-0"
