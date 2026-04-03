@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import concordHero from "@/assets/concord-hero.jpg";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
