@@ -14,6 +14,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 
 const LivermoreCA = () => {
   const { buildUrl } = useUtm();
+  const strategyCallUrl = buildUrl("https://lp.growsmallbiz.io/digital-growth-strategy-session", "schedule-strategy-call");
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -42,7 +43,7 @@ const LivermoreCA = () => {
         title="Digital Marketing for Livermore, CA Local Service Businesses —"
         titleHighlight="Built for a Market That Spreads Out and Compares Options Fast"
         subtitle="Livermore is the kind of market where businesses can lose opportunities without realizing it. A company may be doing good work, have a decent reputation, and even get some traffic, yet still struggle to turn visibility into consistent revenue."
-        primaryCTA={{ label: "Schedule Strategy Call", href: "https://lp.growsmallbiz.io/digital-growth-strategy-session", external: true }}
+        primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
       />
 
@@ -256,7 +257,7 @@ const LivermoreCA = () => {
             title="Schedule Your Free Marketing Assessment"
             description="If you want a smarter, more connected approach to digital marketing in Livermore, CA, GrowSmallBiz is built for that next step. We can look at where your current system is losing visibility, losing trust, or losing leads — and what a stronger local growth engine could look like."
             buttonText="Schedule Strategy Call"
-            buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+            buttonHref={strategyCallUrl}
             sectionClassName="pt-0 pb-0"
           />
         </div>

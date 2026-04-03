@@ -14,6 +14,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 
 const DublinCA = () => {
   const { buildUrl } = useUtm();
+  const strategyCallUrl = buildUrl("https://lp.growsmallbiz.io/digital-growth-strategy-session", "schedule-strategy-call");
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -42,7 +43,7 @@ const DublinCA = () => {
         title="Digital Marketing for Dublin, CA Local Service Businesses —"
         titleHighlight="Built for a Fast-Growth Market Where Visibility Has to Convert"
         subtitle="Dublin is not a market where a business can stay average online and still expect steady growth. It is a city shaped by newer growth, regional overlap, strong household income, and buyers who move fast."
-        primaryCTA={{ label: "Schedule Strategy Call", href: "https://lp.growsmallbiz.io/digital-growth-strategy-session", external: true }}
+        primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
       />
 
@@ -260,7 +261,7 @@ const DublinCA = () => {
             title="Schedule Your Free Marketing Assessment"
             description="If you want a smarter, more connected approach to digital marketing in Dublin, CA, GrowSmallBiz is built for that next step. We can look at where your current system is losing visibility, losing trust, or losing leads — and what a stronger local growth engine could look like."
             buttonText="Schedule Strategy Call"
-            buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+            buttonHref={strategyCallUrl}
             sectionClassName="pt-0 pb-0"
           />
         </div>
