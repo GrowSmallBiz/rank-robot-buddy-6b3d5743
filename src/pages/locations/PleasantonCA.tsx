@@ -46,6 +46,8 @@ const PleasantonCA = () => {
         subtitle="If you run a local service business in Pleasanton, you already know how easy it is for marketing to become fragmented."
         primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
+        backgroundImage={pleasantonHero}
+        overlayOpacity={80}
       />
 
       <div className="bg-background">
