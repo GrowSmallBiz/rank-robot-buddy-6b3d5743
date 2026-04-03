@@ -2,6 +2,7 @@ import { lazy as reactLazy, Suspense } from "react";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
+import ScrollToTop from "@/components/ScrollToTop";
 
 // Lazy-load toast components — they're rarely needed on initial render
 const Toaster = reactLazy(() => import("@/components/ui/toaster").then(m => ({ default: m.Toaster })));
@@ -9,6 +10,7 @@ const Sonner = reactLazy(() => import("@/components/ui/sonner").then(m => ({ def
 
 const AppLayout = () => (
   <TooltipProvider>
+    <ScrollToTop />
     <Suspense fallback={null}>
       <Toaster />
       <Sonner />
