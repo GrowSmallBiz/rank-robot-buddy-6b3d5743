@@ -46,6 +46,8 @@ const DublinCA = () => {
         subtitle="Dublin is not a market where a business can stay average online and still expect steady growth. It is a city shaped by newer growth, regional overlap, strong household income, and buyers who move fast."
         primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
+        backgroundImage={dublinHero}
+        overlayOpacity={80}
       />
 
       <div className="bg-background">
