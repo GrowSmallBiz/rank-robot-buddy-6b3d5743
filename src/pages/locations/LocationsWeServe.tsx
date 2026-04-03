@@ -254,26 +254,35 @@ const LocationsWeServe = () => {
           </div>
         </section>
 
-        {/* AI-Integrated Strategies */}
+        {/* Section A: AI-Powered Marketing System */}
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
+                <div className="service-badge mb-4">
+                  <Brain className="w-4 h-4" />
+                  <span>AI-Powered Digital Marketing Automation</span>
+                </div>
                 <h2 className="section-title">
-                  AI-Integrated Digital Marketing{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Strategies</span>
+                  How AI-Powered Marketing Systems Help Small and Mid-Sized Bay Area Businesses{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Grow</span>
                 </h2>
-                <p className="section-description mt-4">
-                  With the arrival of AI in digital marketing, numerous tools and technologies have been developed to assess the effectiveness of AI-integrated strategies on three critical dimensions: AI-driven personalization, predictive analytics, and automated content creation.
-                </p>
-                <p className="text-sm text-muted-foreground mt-4 italic">
-                  Evaluating the effectiveness of AI-integrated digital marketing on consumer behavior, brand perception, and sales performance, A Vij, 2024
+                <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground mt-4">
+                  Get More Calls, More Booked Jobs, and Grow Revenue
+                </h3>
+              </div>
+
+              {/* Stat highlight paragraph */}
+              <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20 mb-8 text-center">
+                <p className="text-foreground/90 leading-relaxed text-lg">
+                  <a href="https://www.thinkwithgoogle.com/_qs/documents/645/consumer-search-i-want-to-go-micro-moments-b.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">According to Google research</a>, <span className="text-primary font-bold text-2xl">76%</span> of people who search for something nearby on their smartphone visit a business within a day, underscoring the importance of timely, personalized marketing efforts.
                 </p>
               </div>
 
+              {/* Main body card */}
               <div className="p-8 rounded-2xl bg-card border border-primary/30 shadow-[0_0_40px_rgba(255,127,80,0.1)]">
                 <p className="text-foreground/90 leading-relaxed text-lg">
-                  GrowSmallBiz Digital Marketing brings over 12 years of direct experience serving Bay Area clients across healthcare, technology, and professional services sectors. Our team has successfully implemented AI marketing systems for over 150 local businesses, delivering measurable outcomes such as a 40% increase in qualified leads within 90 days for a San Jose-based SaaS provider and a 35% boost in patient engagement for a Fremont healthcare clinic.
+                  AI-powered marketing works best when it is not treated as a standalone tool. GrowSmallBiz connects website performance, local SEO, paid ads, CRM automation, AI Receptionist, and Conversational AI into one coordinated system designed to help small and mid-sized businesses respond faster, follow up more consistently, and convert more opportunities into revenue. The goal is not more technology for its own sake. The goal is fewer missed leads, stronger lead handling, and better business outcomes from the marketing you are already investing in.
                 </p>
               </div>
             </div>
