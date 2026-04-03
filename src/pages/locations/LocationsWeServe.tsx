@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import eastBayHero from "@/assets/east-bay-tri-valley-hero.jpg";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -87,6 +88,8 @@ const LocationsWeServe = () => {
             { value: "40%", label: "Avg Lead Increase" },
             { value: "12+", label: "Years Experience" },
           ]}
+          backgroundImage={eastBayHero}
+          overlayOpacity={80}
         />
 
         {/* East Bay Section */}
