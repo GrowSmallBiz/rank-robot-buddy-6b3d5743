@@ -181,7 +181,7 @@ const DanvilleCA = () => {
               },
               {
                 icon: Zap,
-                title: "Marketing Automation for Speed to Lead and Better Conversion",
+                title: "Marketing Automation for Speed to Lead, Nurture & Close, and Retentions",
                 description: <><Link to="/services/marketing-automation-for-small-business/" className="text-primary hover:underline">Marketing automation</Link> helps Danville businesses respond faster and convert more of the demand they already create. That includes AI Receptionist support, Conversational AI, CRM workflows, email and SMS follow-up, and capture-to-nurture systems that keep leads moving. When response time improves and follow-up becomes consistent, more opportunities turn into revenue.</>
               },
             ].map((service, i) => (
