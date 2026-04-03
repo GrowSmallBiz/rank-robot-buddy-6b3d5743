@@ -233,10 +233,21 @@ const DanvilleCA = () => {
               <span className="text-transparent bg-clip-text bg-gradient-primary italic">Now Matters</span>
             </h2>
           </div>
-          <div className="prose prose-lg prose-invert max-w-none space-y-8">
-            <p>AI search visibility is becoming part of local visibility, not a separate channel. <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google</a> says AI Overviews and AI Mode can surface links from a wider and more diverse set of helpful pages, and may use query fan-out by issuing multiple related searches across subtopics and sources to build a response. Google also says these experiences create opportunities for more types of sites to appear, especially when the content is helpful, unique, and built for real users.</p>
+          <div className="prose prose-lg prose-invert max-w-none space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold text-primary mb-2">Search Behavior Is Changing Fast</h3>
+              <p className="mt-0">Search behavior is changing as people ask longer, more specific questions and increasingly use AI-assisted search experiences to compare providers before they call or book. <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google</a> says AI features like AI Overviews and AI Mode can surface links from a wider and more diverse set of helpful pages, which creates more opportunities for businesses whose content is useful, unique, and built for real users.</p>
+            </div>
 
-            <p>For a local service business, that means your visibility can no longer depend only on one short keyword and one thin city page. You need strong service pages, credible local signals, helpful content, a technically sound site, and complete business information. <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google's Business Profile documentation</a> says businesses with complete and accurate information are more likely to show up in local search results, and local results are mainly based on relevance, distance, and popularity. In practical terms, AI search visibility for local businesses is strengthened by the same fundamentals that strengthen local SEO: clear service relevance, trustworthy content, complete profiles, reviews, and indexed pages that genuinely answer real buyer questions.</p>
+            <div>
+              <h3 className="text-lg font-semibold text-primary mb-2">Invisible in AI Search Means Lost Opportunities</h3>
+              <p className="mt-0">If your business is not visible when AI-assisted search experiences summarize options, compare providers, or narrow the field, you may lose trust and high-intent leads before the traditional website click even happens. For local service businesses, that means visibility now depends on more than a thin city page or a single keyword. <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google's Business Profile documentation</a> still emphasizes complete and accurate business information, and those local trust signals still shape who gets found and who gets contacted.</p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-primary mb-2">Want the Full Strategy?</h3>
+              <p className="mt-0">To learn how GrowSmallBiz approaches this in more depth, explore our <a href="https://www.growsmallbiz.io/services/managed-ai-seo/" className="text-primary hover:underline">AI SEO page</a>.</p>
+            </div>
           </div>
         </div>
       </section>
