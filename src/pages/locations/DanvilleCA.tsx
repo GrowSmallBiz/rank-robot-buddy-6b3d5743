@@ -67,28 +67,10 @@ const DanvilleCA = () => {
               Turns Visibility Into Calls, Leads, and Revenue
             </h2>
 
-            {/* Paragraph 1 */}
-            <div className="max-w-3xl mx-auto text-left space-y-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              <div>
-                <h3 className="text-lg font-display font-semibold text-primary mb-2">The Disconnected Marketing Problem</h3>
-                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                  If you are a Danville business owner tired of paying for disconnected marketing that does not consistently produce leads, you are not alone. Too many companies end up with a website from one vendor, SEO from another, ads from someone else, and no real system tying it all together.
-                </p>
-              </div>
-
-              {/* Paragraph 2 */}
-              <div>
-                <h3 className="text-lg font-display font-semibold text-primary mb-2">One Connected Growth System</h3>
-                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                  GrowSmallBiz is a marketing agency in Danville, CA built to solve that problem with one connected growth system. We help local service businesses improve visibility, capture more qualified leads, follow up faster, convert more opportunities, and strengthen retention through a practical mix of website design, SEO, paid ads, CRM automation, and AI-assisted lead handling.
-                </p>
-              </div>
-
-              {/* Trust line */}
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                GrowSmallBiz is based in Danville and serves local service businesses across Danville, <Link to="/locations/san-ramon-ca/" className="text-primary hover:underline">San Ramon</Link>, <Link to="/locations/dublin-ca/" className="text-primary hover:underline">Dublin</Link>, <Link to="/locations/pleasanton-ca/" className="text-primary hover:underline">Pleasanton</Link>, and the wider Tri-Valley.
-              </p>
-            </div>
+            {/* Trust line */}
+            <p className="max-w-3xl mx-auto text-sm md:text-base text-muted-foreground leading-relaxed animate-fade-up" style={{ animationDelay: "0.15s" }}>
+              GrowSmallBiz is based in Danville and serves local service businesses across Danville, <Link to="/locations/san-ramon-ca/" className="text-primary hover:underline">San Ramon</Link>, <Link to="/locations/dublin-ca/" className="text-primary hover:underline">Dublin</Link>, <Link to="/locations/pleasanton-ca/" className="text-primary hover:underline">Pleasanton</Link>, and the wider Tri-Valley.
+            </p>
 
             {/* CTA row */}
             <div
@@ -103,6 +85,26 @@ const DanvilleCA = () => {
               <Button variant="heroOutline" size="lg" asChild>
                 <Link to="/services/">View Our Services</Link>
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem / Solution Section */}
+      <section className="py-16" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 12%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <h3 className="text-lg font-display font-semibold text-primary mb-3">The Disconnected Marketing Problem</h3>
+              <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                If you are a Danville business owner tired of paying for disconnected marketing that does not consistently produce leads, you are not alone. Too many companies end up with a website from one vendor, SEO from another, ads from someone else, and no real system tying it all together.
+              </p>
+            </div>
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <h3 className="text-lg font-display font-semibold text-primary mb-3">One Connected Growth System</h3>
+              <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                GrowSmallBiz is a marketing agency in Danville, CA built to solve that problem with one connected growth system. We help local service businesses improve visibility, capture more qualified leads, follow up faster, convert more opportunities, and strengthen retention through a practical mix of website design, SEO, paid ads, CRM automation, and AI-assisted lead handling.
+              </p>
             </div>
           </div>
         </div>
