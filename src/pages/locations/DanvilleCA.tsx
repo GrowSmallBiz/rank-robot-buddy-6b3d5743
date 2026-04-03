@@ -426,7 +426,7 @@ const DanvilleCA = () => {
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Danville business owners can explore these local resources as they plan growth, expansion, or visibility improvements:</p>
           </div>
 
-          <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
               <h3 className="text-lg font-display font-semibold text-foreground mb-2">
                 <a href="https://www.danville.ca.gov/267/Economic-Development" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Economic Development</a>
