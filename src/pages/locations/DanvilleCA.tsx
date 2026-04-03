@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout/Header";
+import danvilleHero from "@/assets/danville-hero.jpg";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 
