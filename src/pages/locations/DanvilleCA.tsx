@@ -1,10 +1,10 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ServiceHero } from "@/components/services/ServiceHero";
+import { Button } from "@/components/ui/button";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, Eye, BarChart3, Users, Star, BookOpen } from "lucide-react";
+import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, Eye, BarChart3, Users, Star, BookOpen, ArrowRight } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -40,22 +40,68 @@ const DanvilleCA = () => {
 
       <main id="main-content">
 
-      <ServiceHero
-        badge={{ icon: MapPin, text: "Danville, CA" }}
-        title="Digital Marketing Danville, CA Businesses Can Use to"
-        titleHighlight="Generate More Leads and Grow Smarter"
-        subtitle="If you are a Danville business owner tired of paying for disconnected marketing that does not consistently produce leads, you are not alone. Too many companies end up with a website from one vendor, SEO from another, ads from someone else, and no real system tying it all together."
-        primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
-        secondaryCTA={{ label: "View Our Services", href: "/services/" }}
-      />
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="absolute inset-0" style={{ backgroundColor: `hsl(var(--background) / 0.85)` }} />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* City pill */}
+            <div className="service-badge mb-4 animate-fade-up">
+              <MapPin className="w-4 h-4" />
+              <span>Danville, CA</span>
+            </div>
 
-      {/* Section: Intro */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="prose prose-lg prose-invert max-w-none space-y-8">
-            <p>GrowSmallBiz is a marketing agency in Danville, CA built to solve that problem with one connected growth system. We help local service businesses improve visibility, capture more qualified leads, follow up faster, convert more opportunities, and strengthen retention through a practical mix of website design, SEO, paid ads, CRM automation, and AI-assisted lead handling.</p>
+            {/* H1 */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
+              Digital Marketing Services for{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Danville Local Service Businesses</span>
+            </h1>
 
-            <p>GrowSmallBiz is based in Danville and serves local service businesses across Danville, <Link to="/locations/san-ramon-ca/" className="text-primary hover:underline">San Ramon</Link>, <Link to="/locations/dublin-ca/" className="text-primary hover:underline">Dublin</Link>, <Link to="/locations/pleasanton-ca/" className="text-primary hover:underline">Pleasanton</Link>, and the wider Tri-Valley.</p>
+            {/* H2 */}
+            <h2
+              className="text-2xl md:text-3xl font-display font-semibold text-foreground/90 mb-8 animate-fade-up"
+              style={{ animationDelay: "0.1s" }}
+            >
+              Turns Visibility Into Calls, Leads, and Revenue
+            </h2>
+
+            {/* Paragraph 1 */}
+            <div className="max-w-3xl mx-auto text-left space-y-6 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+              <div>
+                <h3 className="text-lg font-display font-semibold text-primary mb-2">The Disconnected Marketing Problem</h3>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  If you are a Danville business owner tired of paying for disconnected marketing that does not consistently produce leads, you are not alone. Too many companies end up with a website from one vendor, SEO from another, ads from someone else, and no real system tying it all together.
+                </p>
+              </div>
+
+              {/* Paragraph 2 */}
+              <div>
+                <h3 className="text-lg font-display font-semibold text-primary mb-2">One Connected Growth System</h3>
+                <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
+                  GrowSmallBiz is a marketing agency in Danville, CA built to solve that problem with one connected growth system. We help local service businesses improve visibility, capture more qualified leads, follow up faster, convert more opportunities, and strengthen retention through a practical mix of website design, SEO, paid ads, CRM automation, and AI-assisted lead handling.
+                </p>
+              </div>
+
+              {/* Trust line */}
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                GrowSmallBiz is based in Danville and serves local service businesses across Danville, <Link to="/locations/san-ramon-ca/" className="text-primary hover:underline">San Ramon</Link>, <Link to="/locations/dublin-ca/" className="text-primary hover:underline">Dublin</Link>, <Link to="/locations/pleasanton-ca/" className="text-primary hover:underline">Pleasanton</Link>, and the wider Tri-Valley.
+              </p>
+            </div>
+
+            {/* CTA row */}
+            <div
+              className="flex flex-col sm:flex-row gap-4 justify-center pt-8 animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <Button variant="hero" size="lg" asChild>
+                <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer">
+                  Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
+              </Button>
+              <Button variant="heroOutline" size="lg" asChild>
+                <Link to="/services/">View Our Services</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
