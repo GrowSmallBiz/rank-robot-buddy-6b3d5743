@@ -77,11 +77,15 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: clip;
+    overscroll-behavior-x: none;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Poppins', sans-serif;
+    overflow-x: clip;
+    overscroll-behavior-x: none;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -279,6 +283,11 @@
 }
 
 @layer utilities {
+  .overflow-x-auto,
+  .overflow-x-scroll {
+    overscroll-behavior-x: contain;
+  }
+
   .section-padding {
     @apply py-20 lg:py-28 my-2;
   }
