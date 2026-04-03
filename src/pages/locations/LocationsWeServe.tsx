@@ -88,6 +88,8 @@ const LocationsWeServe = () => {
             { value: "40%", label: "Avg Lead Increase" },
             { value: "12+", label: "Years Experience" },
           ]}
+          backgroundImage={eastBayHero}
+          overlayOpacity={80}
         />
 
         {/* East Bay Section */}
