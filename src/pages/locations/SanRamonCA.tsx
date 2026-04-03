@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import sanRamonHero from "@/assets/san-ramon-hero.jpg";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
@@ -45,6 +46,8 @@ const SanRamonCA = () => {
         subtitle="San Ramon is not a market where a business can rely on a basic website and inconsistent follow-up and still expect strong growth."
         primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
+        backgroundImage={sanRamonHero}
+        overlayOpacity={80}
       />
 
       <div className="bg-background">
