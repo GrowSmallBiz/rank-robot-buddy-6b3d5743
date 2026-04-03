@@ -795,7 +795,7 @@ const LocationsWeServe = () => {
           </div>
         </section>
 
-        {/* Why Trust Us */}
+        {/* Section B: Why Trust Us */}
         <section className="py-24 bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -805,15 +805,19 @@ const LocationsWeServe = () => {
                   <span>Why Trust Us</span>
                 </div>
                 <h2 className="section-title">
-                  Why Trust Us:{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-                    GrowSmallBiz Digital Marketing's Bay Area Expertise
-                  </span>
+                  Why Businesses Trust{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">GrowSmallBiz</span>
                 </h2>
               </div>
               <div className="p-8 rounded-2xl bg-card border border-primary/30 shadow-[0_0_40px_rgba(255,127,80,0.1)]">
+                <p className="text-foreground/90 leading-relaxed text-lg mb-6">
+                  GrowSmallBiz is founder-led by Subrata Guha, whose background includes enterprise business system solutions across Sales, Marketing, and Supply Chain operations. That experience shapes a practical, systems-driven approach to marketing — helping small and mid-sized businesses connect visibility, lead capture, follow-up, and conversion instead of relying on disconnected tactics. Supported by platform-certified virtual assistants and grounded in Bay Area business understanding, GrowSmallBiz focuses on clear execution, stronger follow-through, and measurable business outcomes.
+                </p>
                 <p className="text-foreground/90 leading-relaxed text-lg">
-                  GrowSmallBiz Digital Marketing is a certified Google Partner agency with over 12 years of specialized experience in the Bay Area market. Our team holds certifications in Google Ads, HubSpot Inbound Marketing, and AI-driven marketing technologies. We have successfully served over 150 Bay Area clients across healthcare, technology, professional services, and more.
+                  GrowSmallBiz is also connected to the local business community through membership in the{" "}
+                  <a href="https://danvilleareachamber.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Danville Area Chamber</a>,{" "}
+                  <a href="https://sanramon.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">San Ramon Chamber of Commerce</a>, and{" "}
+                  <a href="https://www.walnut-creek.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Walnut Creek Chamber of Commerce</a>, reinforcing our commitment to the Bay Area markets and service businesses we support.
                 </p>
               </div>
             </div>
