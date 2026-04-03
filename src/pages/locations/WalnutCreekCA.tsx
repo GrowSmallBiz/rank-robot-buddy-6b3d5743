@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import walnutCreekHero from "@/assets/walnut-creek-hero.jpg";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
@@ -45,6 +46,8 @@ const WalnutCreekCA = () => {
         subtitle="Walnut Creek is not a market where a business wins just because it shows up. Buyers here often compare carefully, expect professionalism quickly, and make decisions based on more than price."
         primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
+        backgroundImage={walnutCreekHero}
+        overlayOpacity={80}
       />
 
       <div className="bg-background">
