@@ -136,6 +136,9 @@ const aboutCaseStudies = [
 ];
 
 const About = () => {
+  const { buildUrl } = useUtm();
+  const strategyCallUrl = buildUrl(CTA_URLS.strategySession, "schedule-strategy-call");
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
