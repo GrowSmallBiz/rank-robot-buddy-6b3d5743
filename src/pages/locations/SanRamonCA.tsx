@@ -46,6 +46,8 @@ const SanRamonCA = () => {
         subtitle="San Ramon is not a market where a business can rely on a basic website and inconsistent follow-up and still expect strong growth."
         primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
+        backgroundImage={sanRamonHero}
+        overlayOpacity={80}
       />
 
       <div className="bg-background">
