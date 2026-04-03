@@ -46,6 +46,8 @@ const ConcordCA = () => {
         subtitle="Concord is not a tiny local market where a business can rely on a basic website and occasional referrals forever. It is one of the larger cities in Contra Costa County."
         primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
         secondaryCTA={{ label: "View Our Services", href: "/services/" }}
+        backgroundImage={concordHero}
+        overlayOpacity={80}
       />
 
       <div className="bg-background">
