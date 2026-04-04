@@ -113,6 +113,9 @@ export const PersonCTA = ({
                     </a>
                   </Button>
                 </div>
+                <p className="mt-4 text-sm text-primary font-medium">
+                  No commitment. No pressure. Just a clear path forward for your business.
+                </p>
               </div>
             </div>
           </div>
