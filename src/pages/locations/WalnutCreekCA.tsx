@@ -95,25 +95,6 @@ const WalnutCreekCA = () => {
         </div>
       </section>
 
-      {/* Problem / Solution Section */}
-      <section className="py-16" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 12%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <h3 className="text-lg font-display font-semibold text-primary mb-3">The Disconnected Marketing Problem</h3>
-              <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                Every day your competitors are capturing the leads that should belong to your business. In Walnut Creek's competitive East Bay market, the difference between a full appointment calendar and an empty phone isn't the quality of your work — it's your visibility online.
-              </p>
-            </div>
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <h3 className="text-lg font-display font-semibold text-primary mb-3">One Connected Growth System</h3>
-              <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                GrowSmallBiz is the digital marketing agency in Walnut Creek, CA built exclusively for local service businesses. We don't serve eCommerce brands, SaaS startups, or national retail chains. We serve HVAC contractors, plumbers, electricians, roofers, dentists, med spa owners, chiropractors, physical therapists, and real estate professionals — the businesses that power Walnut Creek's communities and economy.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Section: What Makes GrowSmallBiz Different */}
       <section className="py-20 bg-background">
