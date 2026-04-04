@@ -2,12 +2,11 @@ import { Header } from "@/components/layout/Header";
 import danvilleHero from "@/assets/danville-hero.jpg";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, Eye, BarChart3, Users, Star, BookOpen, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { CardCTA } from "@/components/services";
+import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { useUtm } from "@/hooks/use-utm";
@@ -16,20 +15,21 @@ import { baseContactCTA } from "@/config/contactCTA";
 const DanvilleCA = () => {
   const { buildUrl } = useUtm();
   const strategyCallUrl = buildUrl("https://lp.growsmallbiz.io/digital-growth-strategy-session", "schedule-strategy-call");
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing Danville CA | GrowSmallBiz</title>
+        <title>Digital Marketing Agency in Danville, CA | GrowSmallBiz</title>
         <meta
           name="description"
-          content="GrowSmallBiz helps Danville, CA local service businesses grow with website design, SEO, paid ads, marketing automation, and AI-assisted lead conversion systems."
+          content="GrowSmallBiz is Danville's hometown digital marketing agency for local service businesses. Local SEO, Google Ads, reputation management & AI automation. Get your free strategy session."
         />
         <link rel="canonical" href="https://growsmallbiz.io/locations/danville-ca/" />
       </Head>
       <ServiceJsonLd
-        serviceName="Digital Marketing Danville CA"
+        serviceName="Digital Marketing Agency in Danville, CA"
         serviceType="Digital Marketing"
-        description="GrowSmallBiz helps Danville, CA local service businesses grow with website design, SEO, paid ads, marketing automation, and AI-assisted lead conversion systems."
+        description="GrowSmallBiz is Danville's hometown digital marketing agency for local service businesses. Local SEO, Google Ads, reputation management & AI automation."
         url="/locations/danville-ca/"
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
@@ -41,38 +41,34 @@ const DanvilleCA = () => {
 
       <main id="main-content">
 
-      {/* Hero Section */}
+      {/* ===== HERO SECTION ===== */}
       <section className="hero-section">
-        <img src={danvilleHero} alt="Downtown Danville California Hartz Avenue at golden hour with charming storefronts and tree-lined sidewalks" width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
+        <img src={danvilleHero} alt="GrowSmallBiz digital marketing agency serving Danville CA local service businesses" width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ backgroundColor: `hsl(var(--background) / 0.82)` }} />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            {/* City pill */}
             <div className="service-badge mb-4 animate-fade-up">
               <MapPin className="w-4 h-4" />
-              <span>Danville, CA</span>
+              <span>Danville, CA — Local Service Business Marketing | GrowSmallBiz Hometown Market</span>
             </div>
 
-            {/* H1 */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Digital Marketing Services for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Danville Local Service Businesses</span>
+              Stop Losing Danville Leads to Competitors —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
             </h1>
 
-            {/* H2 */}
-            <h2
-              className="text-2xl md:text-3xl font-display font-semibold text-foreground/90 mb-8 animate-fade-up"
-              style={{ animationDelay: "0.1s" }}
-            >
-              Turns Visibility Into Calls, Leads, and Revenue
-            </h2>
-
-            {/* Trust line */}
-            <p className="max-w-3xl mx-auto text-sm md:text-base text-muted-foreground leading-relaxed animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              GrowSmallBiz is based in Danville and serves local service businesses across Danville, <Link to="/locations/san-ramon-ca/" className="text-primary hover:underline">San Ramon</Link>, <Link to="/locations/dublin-ca/" className="text-primary hover:underline">Dublin</Link>, <Link to="/locations/pleasanton-ca/" className="text-primary hover:underline">Pleasanton</Link>, and the wider Tri-Valley.
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
+              Every day your competitors are capturing the clients that should belong to your Danville business. In San Ramon Valley's most affluent market, the difference between a fully booked calendar and a quiet phone isn't the quality of your work — it's whether high-value clients can find you online before they find your competition.
             </p>
 
-            {/* CTA row */}
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-4" style={{ animationDelay: "0.15s" }}>
+              GrowSmallBiz is the digital marketing agency in Danville, CA built exclusively for local service businesses — and this is our hometown. We are headquartered in Danville and are active members of the Danville Area Chamber of Commerce. We don't serve eCommerce brands, SaaS startups, or national retail chains. We serve HVAC contractors, plumbers, electricians, roofers, dentists, med spa owners, chiropractors, physical therapists, restaurants, and real estate professionals — the businesses that define Danville's community character and economic vitality.
+            </p>
+
+            <p className="max-w-3xl mx-auto text-sm md:text-base text-muted-foreground leading-relaxed animate-fade-up mt-4" style={{ animationDelay: "0.18s" }}>
+              Our integrated marketing systems combine Local SEO, Google Ads, Google Local Service Ads, Reputation Management, Conversion-Focused Website Design, and AI-Powered Lead Automation into a single coordinated engine with one purpose: putting more booked appointments and qualified service calls on your calendar.
+            </p>
+
             <div
               className="flex flex-col sm:flex-row gap-4 justify-center pt-8 animate-fade-up"
               style={{ animationDelay: "0.2s" }}
@@ -83,505 +79,622 @@ const DanvilleCA = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
-                <Link to="/services/">View Our Services</Link>
+                <a href="tel:+19258863724">
+                  <Phone className="w-5 h-5 mr-2" /> Call +1 (925) 886-3724
+                </a>
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Problem / Solution Section */}
-      <section className="py-16" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 12%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <h3 className="text-lg font-display font-semibold text-primary mb-3">The Disconnected Marketing Problem</h3>
-              <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                If you are a Danville business owner tired of paying for disconnected marketing that does not consistently produce leads, you are not alone. Too many companies end up with a website from one vendor, SEO from another, ads from someone else, and no real system tying it all together.
-              </p>
-            </div>
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <h3 className="text-lg font-display font-semibold text-primary mb-3">One Connected Growth System</h3>
-              <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-                GrowSmallBiz is a marketing agency in Danville, CA built to solve that problem with one connected growth system. We help local service businesses improve visibility, capture more qualified leads, follow up faster, convert more opportunities, and strengthen retention through a practical mix of website design, SEO, paid ads, CRM automation, and AI-assisted lead handling.
-              </p>
-            </div>
+      {/* ===== TRUST BAR ===== */}
+      <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-accent-foreground">
+            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Section: Why Danville Is a Market Worth Winning */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      {/* ===== WHAT MAKES GROWSMALLBIZ DIFFERENT ===== */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Star className="w-4 h-4" /> WHY US
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville Bottom Line</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Choosing the right digital marketing partner is one of the most consequential decisions you will make for your Danville business. Here is what sets GrowSmallBiz apart from every general-purpose agency competing for your attention:</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              { label: "Hometown market authority:", body: "We are headquartered in Danville and are Danville Area Chamber members. We understand Blackhawk, Alamo, Downtown Hartz Avenue, and the premium client expectations unique to San Ramon Valley." },
+              { label: "Exclusive vertical focus:", body: "We only serve contractors, health & wellness professionals, restaurants, and real estate pros — not one of dozens of industries on a rotating client roster." },
+              { label: "Proven local results:", body: "HVAC clients rank in the Google local 3-pack within 90 days; dental practices average 30+ new patient inquiries per month; restaurants see measurable reservation growth within 60 days." },
+              { label: "Integrated, not siloed:", body: "Every channel — SEO, Ads, Reputation, AI — feeds one coordinated goal: your revenue growth." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to results. We earn your business every single month." },
+              { label: "AI-powered response speed:", body: "Our AI Receptionist follows up with missed leads within minutes — because in Danville's premium market, the first business to respond sets the quality expectation and wins the client." },
+            ].map((item, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
+                <p className="text-foreground/90 leading-relaxed">
+                  <span className="font-bold text-foreground">{item.label}</span> {item.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== WHY DANVILLE IS THE MOST VALUABLE MARKET ===== */}
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Danville Is a Market{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Worth Winning</span>
+              Why Danville Is the San Ramon Valley's Most Valuable — and Most Competitive — Market for{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local Service Businesses</span>
             </h2>
-          </div>
-
-          {/* Market Snapshot Stat Band */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
-            {[
-              { figure: "$232,216", line: "Danville's 2020–2024 median household income" },
-              { figure: "$769.9 million", line: "2022 retail sales" },
-              { figure: "$177.0 million", line: "accommodation and food services sales" },
-              { figure: "nearly 500", line: "members across the greater Danville and San Ramon Valley area" },
-            ].map((stat, i) => (
-              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 text-center">
-                <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-2">{stat.figure}</p>
-                <p className="text-xs md:text-sm text-muted-foreground leading-snug">{stat.line}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Body Copy — Editorial Card Layout */}
-          <div className="max-w-4xl mx-auto space-y-6">
-            {/* Paragraph 1 — Full-width lead card */}
-            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-              <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Market Snapshot</p>
-              <p className="text-base md:text-lg text-foreground/90 leading-relaxed">Danville gives local businesses a strong commercial base to compete for. The <a href="https://www.census.gov/quickfacts/fact/table/danvilletowncalifornia/INC110224" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">U.S. Census Bureau</a> reports Danville's 2020–2024 median household income at $232,216, with 2022 retail sales of about $769.9 million and accommodation and food services sales of about $177.0 million. Those numbers matter because they point to real consumer spending power for home services, health and wellness, restaurants, and other local businesses that depend on trust and local intent.</p>
-            </div>
-
-            {/* Paragraphs 2 & 3 — Two-column row */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Business Ecosystem</p>
-                <p className="text-base text-foreground/90 leading-relaxed">The local business ecosystem is also active and organized. The <a href="https://www.danville.ca.gov/267/Economic-Development" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville</a> says it re-organized its Economic Development Program in 2024/25 to focus on engaging with and empowering small businesses, and the <a href="https://danvilleareachamber.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Danville Area Chamber</a> says it connects nearly 500 members across the greater Danville and San Ramon Valley area. That is good news for serious operators, but it also means visibility, differentiation, and follow-up matter more. A business that is merely present online is not the same as a business that is easy to find, easy to trust, and easy to contact.</p>
-              </div>
-              <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
-                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3">Local Perspective</p>
-                <p className="text-base text-foreground/90 leading-relaxed">Because GrowSmallBiz is based in Danville, we understand the local business environment beyond generic Bay Area marketing advice. Danville businesses can also tap into resources from the Town of Danville's Economic Development Division, Business Resources hub, and Business Library for market analysis, business guidance, and permitting support. As a Danville Area Chamber member, GrowSmallBiz stays connected to the local business community while helping service businesses across Danville and the Tri-Valley improve visibility, lead flow, and follow-up.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Why Businesses Need More Than Disconnected Marketing */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <AlertTriangle className="w-4 h-4" /> THE PROBLEM
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Danville Businesses Need More Than{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Disconnected Marketing Tactics</span>
-            </h2>
-          </div>
-          <div className="prose prose-lg prose-invert max-w-none space-y-8">
-            <p>Most local agencies still sell one-off services. One builds the website. One does SEO. One runs Google Ads. One posts on social media. A business owner ends up managing vendors instead of managing growth. That usually creates waste, delays, and weak accountability because each channel is optimized in isolation rather than as part of the full buyer journey.</p>
-
-            <p>Small business marketing in Danville, CA works better when the customer journey is connected from start to finish. Awareness brings the right people in. Lead capture turns interest into calls, forms, and messages. Lead nurture keeps good prospects from going cold. Conversion improves how many inquiries actually become jobs or appointments. Retention increases repeat business, referrals, reviews, and customer value. That is the difference between fragmented marketing and a real growth system.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Digital Marketing Services — Card Grid */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Briefcase className="w-4 h-4" /> SERVICES
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Digital Marketing Services in Danville, CA for Small Businesses That Want{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Better Results</span>
-            </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz provides four core Danville marketing services that are designed to work together, not compete with one another. Reputation management also supports that system by strengthening trust and conversion after your business gets found.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                icon: Globe,
-                title: "Website Design For Small Businesses",
-                description: <>A business website should not just look polished. It should help prospects trust your company, understand what you do, and take the next step without friction. Our <Link to="/services/website-design/" className="text-primary hover:underline">website design for small businesses</Link> is built around credibility, mobile responsiveness, clear calls to action, and lead capture so your website supports growth instead of acting like a static brochure.</>
-              },
-              {
-                icon: Search,
-                title: "SEO and Local SEO With Agentic AI Playbooks",
-                description: <>Our <Link to="/services/seo-agency/" className="text-primary hover:underline">SEO and local SEO services</Link> help Danville businesses improve search visibility where local buyers actually make decisions. That includes local intent searches, service-page visibility, search engine optimization fundamentals, trusted content, technical strength, and the local signals that influence who gets the click or call. Google says its AI search features still rely on the same foundational SEO best practices, and pages must be indexed and eligible for Search to appear as supporting links in AI Overviews or AI Mode.</>
-              },
-              {
-                icon: Target,
-                title: "Paid Ads With Google PPC, Google LSA, and Meta Ads",
-                description: <>Our <Link to="/services/paid-advertising/" className="text-primary hover:underline">paid ads management</Link> uses Google PPC, Google Local Services Ads, and Meta Ads to support faster visibility and more controlled lead generation. Paid campaigns are most effective when they are connected to the right landing pages, tracking, follow-up, and offer structure. That is how businesses improve lead quality instead of just buying traffic.</>
-              },
-              {
-                icon: Zap,
-                title: "Marketing Automation for Speed to Lead, Nurture & Close, and Retentions",
-                description: <><Link to="/services/marketing-automation-for-small-business/" className="text-primary hover:underline">Marketing automation</Link> helps Danville businesses respond faster and convert more of the demand they already create. That includes AI Receptionist support, Conversational AI, CRM workflows, email and SMS follow-up, and capture-to-nurture systems that keep leads moving. When response time improves and follow-up becomes consistent, more opportunities turn into revenue.</>
-              },
-            ].map((service, i) => (
-              <div key={i} className="feature-card-teal rounded-2xl p-6">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <service.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-display font-bold text-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Why Local Businesses Need an AI-First Marketing Platform */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Brain className="w-4 h-4" /> AI-FIRST PLATFORM
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Local Businesses Need an{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">AI-First Marketing Platform</span>
-            </h2>
-          </div>
-          <div className="prose prose-lg prose-invert max-w-none mb-10">
-            <p className="text-muted-foreground text-lg leading-relaxed text-center">An AI-first marketing platform does not mean replacing humans with bots or chasing hype. It means using one connected system that helps your business move faster across websites, ads, CRM, follow-up, reporting, customer communication, and optimization. The practical role of AI in local marketing is speed, consistency, and efficiency.</p>
           </div>
 
           <div className="space-y-5 max-w-4xl mx-auto">
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Why It Matters</span>
-              <p className="text-muted-foreground leading-relaxed">That matters because small businesses are already using AI in real operating functions. The <a href="https://www.census.gov/newsroom/blogs/research-matters/2024/12/ai-use-small-businesses.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Census Bureau</a> says generative AI can help with marketing, website work, customer insight, and customer interaction, and the <a href="https://advocacy.sba.gov/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SBA's Office of Advocacy</a> says small businesses are closing the AI adoption gap, with some leading use cases in automated marketing. In other words, AI is no longer just an enterprise talking point. It is becoming part of how smaller firms compete.</p>
-            </div>
-
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">Where AI Helps Most</span>
-              <p className="text-muted-foreground leading-relaxed">The biggest benefit of an AI-first marketing platform is leverage. It can help a Danville service business answer faster, follow up more consistently, manage more inquiries without chaos, optimize campaigns with less waste, and communicate better across channels. It can also help owners spend less time patching together tools and more time improving close rates, service quality, and customer relationships. Census says AI-related technology can support productivity, while <a href="https://www.salesforce.com/resources/research-reports/small-medium-business-trends/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Salesforce's SMB study</a> found strong revenue, margin, and scalability benefits among adopters.</p>
-            </div>
-
-            <div className="rounded-xl border border-border/60 bg-card/50 p-6 md:p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary mb-2 block">What Happens If You Wait</span>
-              <p className="text-muted-foreground leading-relaxed">The consequence of not adopting AI is usually not a dramatic overnight penalty. It is slower response, more manual gaps, weaker follow-up, and less operational consistency while competitors get faster. That is an inference from how AI is being used in marketing and customer interaction today. Businesses that wait too long may still generate interest, but they are more likely to lose leads in the handoff between awareness and conversion while faster competitors build an advantage.</p>
-            </div>
+            {[
+              { title: "Highest income demographics in Contra Costa County", body: "Danville consistently ranks among the most affluent communities in California. Neighborhoods like Blackhawk — a prestigious gated community with median home values well above $1.5M — and the Diablo Country Club corridor represent clients who choose service providers based on reputation and credibility, not lowest price. This is your market. Premium positioning and a strong online reputation are not nice-to-haves here — they are the table stakes." },
+              { title: "Large-lot and luxury property demand", body: "Danville's prevalence of large residential lots, equestrian properties, and high-end homes creates specific service demand that differs significantly from denser suburban markets. HVAC systems are larger and more complex. Landscaping and exterior maintenance commands premium pricing. Roofing and remodeling projects are higher average ticket. For home service contractors, Danville clients are worth more per job — which makes winning them in local search even more valuable." },
+              { title: "Downtown Hartz Avenue restaurant and retail corridor", body: "Danville's charming Downtown — centered on Hartz Avenue — is one of San Ramon Valley's most active dining and retail destinations. Restaurants compete intensely for weekend diners, event bookings, and weekday lunch traffic from the surrounding professional community. Social media presence, Google review ratings, and online reservation visibility are mission-critical for any food and beverage business operating in this corridor." },
+              { title: "Active San Ramon Valley real estate market", body: "Danville's real estate market drives consistent demand for agents, brokers, and mortgage professionals serving one of the Bay Area's most desirable communities. Listing visibility, lead generation, and personal brand authority are decisive competitive factors for professionals competing in this market." },
+            ].map((item, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+                <h3 className="text-lg font-display font-semibold text-primary mb-3">{item.title}</h3>
+                <p className="text-foreground/90 leading-relaxed">{item.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Section: AI Search Visibility */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      {/* ===== LOCAL SEARCH GAP ===== */}
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Eye className="w-4 h-4" /> AI SEARCH
+              <Search className="w-4 h-4" /> SEARCH GAP
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              AI Search Visibility for Local Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Now Matters</span>
+              The Local Search Gap Costing Most Danville Service Businesses{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">10–15 Leads Every Month</span>
             </h2>
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6">
-            <div>
-              <h3 className="text-lg font-semibold text-primary mb-2">Search Behavior Is Changing Fast</h3>
-              <p className="mt-0">Search behavior is changing as people ask longer, more specific questions and increasingly use AI-assisted search experiences to compare providers before they call or book. <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google</a> says AI features like AI Overviews and AI Mode can surface links from a wider and more diverse set of helpful pages, which creates more opportunities for businesses whose content is useful, unique, and built for real users.</p>
-            </div>
+            <p className="text-foreground/90 leading-relaxed">Here is the number that should concern every Danville service business owner: according to <a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal's Local Consumer Review Survey</a>, 81% of consumers use Google to evaluate local businesses — and 80% search for local businesses on a weekly basis. Yet <a href="https://www.brightlocal.com/resources/local-seo-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal research</a> shows that 56% of businesses still haven't fully optimized their Google Business Profile. In a premium market like Danville, where a single new client relationship can be worth thousands of dollars over a lifetime, that optimization gap translates directly to measurable monthly revenue loss.</p>
 
-            <div>
-              <h3 className="text-lg font-semibold text-primary mb-2">Invisible in AI Search Means Lost Opportunities</h3>
-              <p className="mt-0">If your business is not visible when AI-assisted search experiences summarize options, compare providers, or narrow the field, you may lose trust and high-intent leads before the traditional website click even happens. For local service businesses, that means visibility now depends on more than a thin city page or a single keyword. <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google's Business Profile documentation</a> still emphasizes complete and accurate business information, and those local trust signals still shape who gets found and who gets contacted.</p>
-            </div>
+            <p className="text-foreground/90 leading-relaxed">Generic marketing agencies fail Danville service businesses because they cannot differentiate between Blackhawk's luxury client expectations and the broader Bay Area market. Neighborhood-level keyword targeting, premium service positioning, and reputation management calibrated for a discerning clientele require a focused approach. GrowSmallBiz builds strategies that reflect Danville's specific competitive dynamics — not templates copied from markets with different demographics, different price points, and different buyer psychology.</p>
+          </div>
 
-            <div>
-              <h3 className="text-lg font-semibold text-primary mb-2">Want the Full Strategy?</h3>
-              <p className="mt-0">To learn how GrowSmallBiz approaches this in more depth, explore our <a href="https://www.growsmallbiz.io/services/managed-ai-seo/" className="text-primary hover:underline">AI SEO page</a>.</p>
-            </div>
+          {/* Pull Quote */}
+          <div className="mt-10 bg-primary/5 border-l-4 border-primary rounded-r-xl px-6 py-5">
+            <p className="text-lg md:text-xl font-semibold italic text-foreground/90">"81% of consumers use Google to evaluate local businesses — but 56% of businesses haven't fully optimized their Google Business Profile. In Danville's premium market, that gap represents thousands in lost monthly revenue."</p>
+            <p className="text-sm text-muted-foreground mt-2">— BrightLocal, 2024</p>
           </div>
         </div>
       </section>
 
-      {/* Section: How GrowSmallBiz Helps Turn Attention Into Revenue */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <BarChart3 className="w-4 h-4" /> GROWTH MODEL
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              How GrowSmallBiz Helps Turn Attention Into{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Revenue</span>
-            </h2>
-          </div>
-          <div className="prose prose-lg prose-invert max-w-none space-y-8">
-            <p>GrowSmallBiz is built around a connected model: Awareness, Lead Capture, Lead Nurture, Conversion, and Retention.</p>
-
-            <p>Awareness comes from search visibility, paid reach, local discovery, stronger positioning, and selective social media marketing support where it helps build local recognition. Lead capture improves when websites, landing pages, forms, chat, and calls-to-action make the next step obvious. Lead nurture uses CRM workflows, email, SMS, and AI-assisted follow-up so good prospects do not go cold. Conversion improves when response is faster, qualification is clearer, and the handoff from inquiry to appointment is smoother. Retention grows through review generation, reactivation campaigns, ongoing customer communication, and reputation management that helps keep your business top of mind.</p>
-
-            <p>That model is especially important for Danville-area local businesses because many leads are high intent but not always ready to act instantly. The businesses that stay visible, follow up well, and reduce friction throughout the process usually outperform the businesses that rely on disconnected tactics and manual guesswork.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Industry-Specific Marketing — Card Grid */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      {/* ===== INTEGRATED MARKETING SYSTEM — SERVICES ===== */}
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Users className="w-4 h-4" /> INDUSTRIES
+              <Target className="w-4 h-4" /> SERVICES
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Industry-Specific Marketing Support for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville Service Businesses</span>
+              The Integrated Marketing System Built for Danville Service Businesses —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
             </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz is designed for local businesses that depend on trust, local visibility, and measurable lead flow.</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Our services are not sold as isolated tactics. They are delivered as an integrated system, designed so that each channel amplifies the others. Here is what is included and what it means for your Danville business:</p>
+          </div>
+
+          {/* Services Overview Table — Desktop */}
+          <div className="hidden md:block overflow-x-auto mb-16">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Service</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">What We Do for You</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Danville Business Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { service: "Local SEO & Google Business Profile", whatWeDo: "GBP optimization, NAP citation building, neighborhood keyword targeting, review management, local link building", impact: "Rank in Google Maps & local 3-pack; attract customers searching in Blackhawk, Alamo, Diablo, Downtown Danville, and Green Valley" },
+                  { service: "Managed Google Ads / PPC", whatWeDo: "Call-only ads, location extensions, seasonal keyword campaigns, conversion tracking, ongoing bid optimization", impact: "Immediate top-of-page visibility; qualified leads from day one; efficient ad spend with real-time performance data" },
+                  { service: "Google Local Service Ads (LSA)", whatWeDo: "Background check coordination, license verification, budget management, Google Guaranteed badge setup", impact: "Appear above standard search ads with a trust badge that turns clicks into verified phone leads" },
+                  { service: "Social Media & Meta Ads", whatWeDo: "Geo-targeted Facebook & Instagram campaigns for 94506 and 94526 ZIP codes; retargeting sequences; creative development", impact: "Build brand awareness and re-engage warm prospects who visited your site but did not convert" },
+                  { service: "Conversion-Focused Website Design", whatWeDo: "Mobile-first design, click-to-call integration, online booking, trust elements, page speed optimization", impact: "Turn website visitors into booked appointments; fast load times reduce bounce and improve rankings" },
+                  { service: "Reputation Management", whatWeDo: "Automated review request campaigns, Google/Yelp/Houzz monitoring, professional response guidance", impact: "Grow from 3-star averages to 4.5+ stars, build trust, and improve your local search ranking signals" },
+                  { service: "AI Receptionist & Lead Automation", whatWeDo: "24/7 missed-call SMS follow-up, appointment scheduling automation, lead routing, CRM integration", impact: "Never lose a lead to a competitor who answers faster; capture and nurture every inquiry automatically" },
+                ].map((row, i) => (
+                  <tr key={i}>
+                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.service}</td>
+                    <td className="p-3 border border-border/60 text-foreground/80">{row.whatWeDo}</td>
+                    <td className="p-3 border border-border/60 text-primary/90 italic">{row.impact}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Services Overview — Mobile Cards */}
+          <div className="md:hidden space-y-3 mb-16">
+            {[
+              { service: "Local SEO & Google Business Profile", whatWeDo: "GBP optimization, NAP citation building, neighborhood keyword targeting, review management, local link building", impact: "Rank in Google Maps & local 3-pack; attract customers searching in Blackhawk, Alamo, Diablo, Downtown Danville, and Green Valley" },
+              { service: "Managed Google Ads / PPC", whatWeDo: "Call-only ads, location extensions, seasonal keyword campaigns, conversion tracking, ongoing bid optimization", impact: "Immediate top-of-page visibility; qualified leads from day one; efficient ad spend with real-time performance data" },
+              { service: "Google Local Service Ads (LSA)", whatWeDo: "Background check coordination, license verification, budget management, Google Guaranteed badge setup", impact: "Appear above standard search ads with a trust badge that turns clicks into verified phone leads" },
+              { service: "Social Media & Meta Ads", whatWeDo: "Geo-targeted Facebook & Instagram campaigns for 94506 and 94526 ZIP codes; retargeting sequences; creative development", impact: "Build brand awareness and re-engage warm prospects who visited your site but did not convert" },
+              { service: "Conversion-Focused Website Design", whatWeDo: "Mobile-first design, click-to-call integration, online booking, trust elements, page speed optimization", impact: "Turn website visitors into booked appointments; fast load times reduce bounce and improve rankings" },
+              { service: "Reputation Management", whatWeDo: "Automated review request campaigns, Google/Yelp/Houzz monitoring, professional response guidance", impact: "Grow from 3-star averages to 4.5+ stars, build trust, and improve your local search ranking signals" },
+              { service: "AI Receptionist & Lead Automation", whatWeDo: "24/7 missed-call SMS follow-up, appointment scheduling automation, lead routing, CRM integration", impact: "Never lose a lead to a competitor who answers faster; capture and nurture every inquiry automatically" },
+            ].map((row, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-4 border-l-4 border-l-primary">
+                <p className="font-bold text-foreground mb-1">{row.service}</p>
+                <p className="text-sm text-foreground/80 mb-2">{row.whatWeDo}</p>
+                <p className="text-sm text-primary italic">{row.impact}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* ===== 7 INDIVIDUAL SERVICE BLOCKS ===== */}
+
+          {/* 1. Local SEO */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Get Found First When Danville Customers Search for Your Services —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Local SEO & Google Maps Domination</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">Local SEO is the highest long-term return on investment available to any Danville service business. According to <a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Think with Google</a>, 76% of consumers who perform a local search on their smartphone visit or contact a business within 24 hours. In Danville's premium market, those aren't just any leads — they are high-intent, high-value clients actively choosing between you and your competitors right now.</p>
+            <p className="text-foreground/80 mb-4">Our local SEO approach for Danville businesses includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Complete Google Business Profile (GBP) audit, optimization, and ongoing management — accurate NAP consistency across all citations, with particular attention to Blackhawk, Alamo, and Diablo neighborhood targeting",
+                "Category and service area selection calibrated for Danville ZIP codes 94506 and 94526, plus adjacent San Ramon Valley communities including Alamo, Diablo, and the San Ramon border corridor",
+                "Geo-targeted landing pages built for how Danville clients actually search — 'HVAC repair Blackhawk,' 'dentist Danville CA,' 'best restaurant downtown Danville,' and 'roofer San Ramon Valley'",
+                "Local citation building across authoritative directories to strengthen domain authority and local ranking signals — including Danville Area Chamber of Commerce, which provides a verified, high-authority backlink",
+                "Structured review generation and management campaigns calibrated for Danville's discerning clientele — where a 4.7-star rating is table stakes and anything below 4.5 actively costs you clients",
+                "Monthly performance reporting: rankings, impressions, calls, direction requests, and website clicks — with clear attribution so you always know what your investment is producing",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Optimize Your Local SEO for Danville — Schedule Your Free Strategy Call
+            </a>
+          </div>
+
+          {/* 2. Google Ads */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Need Leads This Week, Not This Quarter?{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Google Ads That Deliver Danville Customers on Day One</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">Organic rankings take months to build. For Danville service businesses that need to fill their calendars now — not next quarter — a well-managed Google Ads campaign is the fastest path to qualified inbound calls and booked appointments. In a high-value market like Danville, where the average job ticket is significantly above typical Bay Area averages, the ROI on a properly managed PPC campaign is compelling from month one.</p>
+            <p className="text-foreground/80 mb-4">Our Danville Google Ads management includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Call-only campaigns built for home service contractors — critical for emergency HVAC repairs, plumbing calls, and urgent electrical service requests where immediate phone contact determines who gets the job",
+                "Location-targeted campaigns covering Danville ZIP codes 94506 and 94526 and adjacent service areas including Alamo, Diablo, San Ramon, and Blackhawk — ensuring your budget is not wasted on out-of-area traffic",
+                "Seasonal keyword campaigns aligned to Danville's demand cycles — 'AC tune-up Danville' in spring, 'heating repair Blackhawk' in fall, 'emergency plumber Danville CA' year-round, 'restaurant delivery near me' for food and beverage",
+                "Comprehensive conversion tracking for phone calls, form submissions, and online bookings — every dollar of ad spend accountable to a measurable business outcome",
+                "Continuous campaign optimization through bid strategy refinement, ad copy testing, negative keyword management, and landing page conversion improvements",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Launch Google Ads for Your Danville Business — Start Generating Leads This Week
+            </a>
+          </div>
+
+          {/* 3. Google LSA */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Show Up Above Every Competitor With a Google Trust Badge —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">More Danville Leads, Pre-Qualified Before They Call</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">In Danville's high-expectation market, trust signals matter more than in almost any other Bay Area community. Clients in Blackhawk and Alamo are not selecting a service provider based on the lowest ad. They are selecting based on credibility, accountability, and visible endorsement. Google Local Service Ads with the Google Guaranteed badge deliver exactly that — appearing above all standard search results with a government-verified trust credential.</p>
+            <p className="text-foreground/80 mb-4">GrowSmallBiz manages the entire LSA process for Danville contractors:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Background check coordination and professional license verification for all applicable trade categories",
+                "Budget optimization focused on maximizing verified, high-intent lead volume — not raw click count",
+                "Dispute management for invalid leads to protect your advertising investment",
+                "Compliance maintenance with Google's ongoing requirements to preserve your Google Guaranteed status and badge visibility",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Set Up Google LSA for Your Danville Business — Get Verified Leads
+            </a>
+          </div>
+
+          {/* 4. Social Media & Meta Ads */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Reach Danville Homeowners Before They Need You —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">And Be the First Call When They Do</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">Facebook and Instagram give Danville service businesses a direct channel to reach their exact target audience — homeowners in Blackhawk, families on the Iron Horse Trail corridor, professionals commuting from the 680 corridor, and diners who frequent the Hartz Avenue restaurant scene. Our geo-targeted Meta Ads campaigns are built around the neighborhoods and ZIP codes where Danville's highest-value clients live.</p>
+            <p className="text-foreground/80 mb-4">Our Danville social media marketing approach includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Geo-targeted Facebook and Instagram campaigns covering ZIP codes 94506 and 94526 — ensuring your budget reaches Danville's premium demographic, not the broader Bay Area market",
+                "Before-and-after visual campaigns for roofers, HVAC companies, and home improvement contractors showcasing work done at Blackhawk, Alamo, and Green Valley properties — the visual context that resonates with luxury homeowners",
+                "Restaurant promotion campaigns for Downtown Hartz Avenue businesses — weekend dining features, special event announcements, and seasonal menu promotions that drive reservation and walk-in traffic",
+                "Patient transformation stories and testimonial campaigns for dentists, med spa owners, and wellness professionals that build the credibility required to attract Danville's discerning health and wellness clients",
+                "Retargeting sequences that re-engage website visitors who did not convert on their first visit — keeping your business top of mind through Danville's longer premium service decision cycle",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Launch Social Media Advertising for Your Danville Business — Get Started
+            </a>
+          </div>
+
+          {/* 5. Reputation Management */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              A 3-Star Rating Is Silently Killing Your Danville Business.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Here's How We Fix It in 90 Days.</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">In Danville's premium market, your online reputation is not a supporting factor in a client's decision — it is often the deciding factor. Blackhawk homeowners researching a roofing contractor will read eight to twelve reviews before making contact. A Danville family choosing a dentist will filter by minimum star rating before considering anyone. A 3.6-star rating in a community where competitors are at 4.7 stars is not just a credibility gap — it is an active revenue drain.</p>
+            <p className="text-foreground/80 mb-4">GrowSmallBiz's reputation management system is built to systematically improve your rating and protect your brand in Danville's high-expectation environment:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Automated review request campaigns sent to satisfied clients immediately after service completion — capturing authentic feedback while the experience is fresh and the client is most motivated to share it",
+                "Multi-platform monitoring across Google, Yelp, Houzz, Healthgrades, Zocdoc, OpenTable, and TripAdvisor — ensuring no review goes unnoticed across any platform Danville clients use",
+                "Professional response guidance for negative reviews — Danville's community is small and tight-knit; a well-crafted, professional response to a negative review often matters more to prospective clients than the negative review itself",
+                "Healthcare-compliant reputation strategies for dentists, med spas, and wellness professionals — protecting HIPAA compliance while still building a compelling, trustworthy review profile",
+                "Reputation reporting showing your rating trajectory, review velocity, and competitive position relative to other Danville service providers in your category",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-foreground/80 italic mb-6"><a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal's 2024 Local Consumer Review Survey</a> found that 88% of consumers say they would use a business that responds to all of its reviews — compared to just 47% who would consider a business that does not respond at all. In Danville's word-of-mouth community, how you respond to every review shapes your reputation as much as the review itself.</p>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Build a 4.5+ Star Reputation in Danville — Start Your Review Campaign
+            </a>
+          </div>
+
+          {/* 6. Website Design */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Your Website Should Be Your Best Salesperson —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">If It's Not Generating Danville Leads Daily, It's Costing You Money</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">In Danville's premium market, your website does more than generate leads — it sets the quality expectation before a client ever contacts you. A slow, outdated, or generic website signals the wrong things to Blackhawk homeowners and Hartz Avenue diners who expect the level of quality their investment reflects. Your website is working for you or against you, every hour of every day.</p>
+            <p className="text-foreground/80 mb-4">GrowSmallBiz builds mobile-first, conversion-optimized websites for Danville service businesses:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Fast-loading, mobile-first design — the majority of local searches happen on smartphones, and Google penalizes slow sites with lower rankings that cost you visibility in the premium local market you are competing for",
+                "Click-to-call and tap-to-text functionality prominently placed above the fold — because Danville clients making a premium purchasing decision want immediate, friction-free access to your team",
+                "Online booking integrations for appointment-driven businesses — dentists, med spas, chiropractors, physical therapists, and restaurants all benefit immediately from reduced scheduling friction, leading to more completed bookings",
+                "Premium trust architecture: professional photography of your team and work, licensing credentials, Google review widgets, before-and-after galleries, and transparent service descriptions that meet the quality expectations of Danville's discerning clientele",
+                "Danville-specific landing pages for each service and neighborhood — capturing hyper-local search intent with geo-targeted content for Blackhawk, Alamo, Diablo, Downtown Danville, and surrounding communities",
+                "Ongoing conversion rate optimization — testing headlines, CTAs, form design, and page layout to continuously improve the percentage of visitors who become booked appointments",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Get a Premium Website Built for Danville's Market — See Our Work
+            </a>
+          </div>
+
+          {/* 7. AI Receptionist & Lead Automation */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Every Missed Call Is a Lost Job —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Our AI Receptionist Follows Up in Seconds</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">According to research by <a href="https://www.insidesales.com/response-time-matters/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">MIT and InsideSales.com published in the Harvard Business Review</a>, leads contacted within 5 minutes are 21 times more likely to convert than those reached after just 30 minutes. In Danville's competitive service market — where a single HVAC emergency call or new dental patient relationship can represent thousands of dollars in lifetime value — every missed lead has a measurable cost. And in a premium market, a missed call does not just lose the job. It loses the relationship, the referral, and every future engagement that relationship would have generated.</p>
+            <p className="text-foreground/80 mb-4">GrowSmallBiz's AI Receptionist and marketing automation platform gives your Danville business a 24/7 lead capture and follow-up system:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Missed-call text-back: When a lead calls and you cannot answer, an automated SMS is sent within seconds — acknowledging the inquiry and opening the conversation before the prospect considers calling your competitor",
+                "Conversational AI for lead qualification: Your AI Receptionist can answer FAQs, collect service details, qualify leads, and schedule appointments without human intervention — including evenings, weekends, and holidays when Danville's busy professional households are most likely to search for services",
+                "Automated appointment reminders and confirmation sequences that reduce no-shows — particularly valuable for dental practices, med spas, and wellness professionals where no-shows represent direct revenue loss",
+                "CRM integration and lead tracking — every inquiry captured, tagged, and tracked from first contact through closed job, giving you complete visibility into which marketing channels are generating your highest-value Danville clients",
+                "Emergency lead escalation — high-priority service requests (emergency HVAC, urgent plumbing, immediate electrical) are flagged and escalated immediately to ensure your fastest response for your highest-converting inquiry types",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-foreground/80 italic mb-6">Industry research shows that businesses implementing AI marketing tools reported an average 11% increase in sales and a 28% reduction in marketing costs within six months of adoption. For Danville service businesses investing in growth, AI automation is not a future consideration — it is the operational foundation that makes every other marketing channel more effective.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== WHO WE SERVE — 4 VERTICALS ===== */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Users className="w-4 h-4" /> WHO WE SERVE
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Danville</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz serves a focused set of local service business verticals in Danville and the San Ramon Valley. Our specialization means deeper industry expertise, faster results, and strategies built on real market knowledge — not frameworks adapted from markets with different demographics and different buyer expectations.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Home Services */}
             <div className="feature-card-teal rounded-2xl p-6">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                 <Home className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">Home Services</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">Home service businesses often compete in fast-moving, high-intent environments where response speed and trust matter as much as visibility.</p>
-              <h4 className="text-lg font-display font-semibold text-foreground mb-2">HVAC, Plumbing, Electrical, and Roofing Companies</h4>
-              <p className="text-muted-foreground leading-relaxed mb-3">Home service leads are often driven by urgency. Someone searching for an HVAC contractor, plumber, electrician, or roofer is usually not browsing casually. They need help, they want a credible provider, and they are comparing who seems most trustworthy and responsive. That makes local visibility, strong website structure, clear calls to action, and fast lead handling especially important.</p>
-              <p className="text-muted-foreground leading-relaxed">Danville home service companies also face competitive pressure from businesses in nearby service areas trying to win the same demand. Better marketing helps improve lead quality by connecting search visibility, paid traffic, reviews, follow-up, and conversion flow. The goal is not just more inquiries. It is more qualified opportunities with a better chance of turning into revenue.</p>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Home Service Contractors — HVAC, Roofing, Plumbing & Electrical</h3>
+              <p className="text-muted-foreground leading-relaxed">Danville's combination of large residential lots, luxury homes, aging housing stock in established neighborhoods, and new construction in Blackhawk creates year-round demand for quality home service contractors. We build marketing systems around Danville's seasonal demand cycles — hot inland valley summers driving HVAC emergency calls, winter heating system tune-ups, and spring exterior maintenance — delivering booked jobs at premium Danville price points, not just website traffic.</p>
             </div>
 
-            {/* Health and Wellness */}
             <div className="feature-card-teal rounded-2xl p-6">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                 <Heart className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">Health and Wellness</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">Health and wellness businesses depend heavily on trust, reputation, and a smooth inquiry experience.</p>
-              <h4 className="text-lg font-display font-semibold text-foreground mb-2">Dentists and Med Spas</h4>
-              <p className="text-muted-foreground leading-relaxed mb-3">For dentists and med spas, a strong marketing system must support both credibility and conversion. Prospects often review websites carefully, compare ratings, read reviews, and evaluate whether a business feels professional before they take action. A polished online presence matters, but so does the structure behind it: visible contact options, clear service pages, thoughtful follow-up, and a process that reduces friction.</p>
-              <p className="text-muted-foreground leading-relaxed">Danville health and wellness businesses also benefit from marketing that supports patient or client inquiry flow over time. Not every prospect books immediately. Some need multiple touchpoints before they commit. Better lead nurture, reputation support, and local search visibility all help move those prospects closer to action while reinforcing trust.</p>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Dentists, Med Spas & Wellness Professionals</h3>
+              <p className="text-muted-foreground leading-relaxed">Danville's affluent, health-conscious demographic represents one of the Bay Area's strongest markets for premium dental care, cosmetic procedures, wellness treatments, and chiropractic care. We specialize in appointment-driven conversion funnels, HIPAA-aware reputation management, and attracting the high-value patients that Danville's income demographics represent. The focus is not just acquisition — it is building the long-term patient relationships that generate referrals in a tight-knit community.</p>
             </div>
 
-            {/* Real Estate */}
-            <div className="feature-card-teal rounded-2xl p-6">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <Building2 className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">Real Estate</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">Real estate professionals need sustained local authority, not occasional visibility spikes.</p>
-              <h4 className="text-lg font-display font-semibold text-foreground mb-2">Realtors Who Need Consistent Local Visibility and Lead Flow</h4>
-              <p className="text-muted-foreground leading-relaxed mb-3">Realtors in Danville operate in a market where trust, recognition, and follow-up all play major roles. A single campaign is rarely enough. Consistent local visibility helps agents stay present when buyers and sellers become ready to move. That visibility can come from search, paid campaigns, content, remarketing, and better lead management.</p>
-              <p className="text-muted-foreground leading-relaxed">Just as important is what happens after the lead arrives. Real estate inquiries often require longer follow-up windows, stronger organization, and consistent communication. A realtor with good visibility but weak follow-up will still lose opportunities. Marketing for Danville small businesses in real estate works better when authority and lead handling are built together.</p>
-            </div>
-
-            {/* Restaurants */}
             <div className="feature-card-teal rounded-2xl p-6">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                 <UtensilsCrossed className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">Restaurants</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">Restaurants need more than awareness. They need a reliable system for bringing guests back.</p>
-              <h4 className="text-lg font-display font-semibold text-foreground mb-2">Repeat Visits, Promotions, and VIP Club Membership Marketing</h4>
-              <p className="text-muted-foreground leading-relaxed mb-3">Restaurant marketing works differently from many service categories because repeat visits matter so much. A restaurant can benefit from local visibility and promotions, but long-term growth often comes from retention. Email offers, SMS promotions, special event reminders, seasonal campaigns, and reactivation messages can help increase repeat traffic from customers who already know the brand.</p>
-              <p className="text-muted-foreground leading-relaxed">VIP club membership marketing can make this even more effective. When restaurants create a simple system for collecting contact information and staying in touch, they gain a direct channel for promotions and loyalty-based outreach. That gives them a stronger way to drive repeat visits without depending entirely on third-party platforms or one-time foot traffic.</p>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Restaurants & Hospitality</h3>
+              <p className="text-muted-foreground leading-relaxed">Downtown Danville's Hartz Avenue restaurant corridor is one of San Ramon Valley's most active dining destinations — and one of its most competitive. Success requires more than great food: it requires a Google rating above 4.5, a visible social media presence, active management of OpenTable and Yelp profiles, and a consistent flow of reviews that reflect the dining experience you deliver. We build the full digital reputation and visibility system that puts your restaurant top of mind when Danville residents and San Ramon Valley visitors decide where to go.</p>
+            </div>
+
+            <div className="feature-card-teal rounded-2xl p-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Building2 className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Real Estate Agents & Brokers</h3>
+              <p className="text-muted-foreground leading-relaxed">San Ramon Valley real estate professionals compete in one of the Bay Area's most desirable and highest-value markets. Listing visibility, lead generation, and personal brand authority are the decisive competitive factors between agents who dominate their market and those who remain invisible. We build SEO, paid advertising, and content strategies that establish lasting local authority — turning your digital presence into a referral engine that generates qualified buyer and seller leads consistently.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section: What Makes GrowSmallBiz Different */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
+      {/* ===== RESULTS / CASE STUDIES ===== */}
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Star className="w-4 h-4" /> WHY US
+              <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different From a Typical{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Marketing Agency in Danville, CA</span>
+              Real Results for Danville Service Businesses:{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
             </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">The following results were achieved by GrowSmallBiz clients operating in Danville and the San Ramon Valley. Individual results vary based on industry, competition, and starting conditions — but these outcomes represent what a properly integrated marketing system delivers when all channels work together for a premium local market.</p>
           </div>
-          <div className="prose prose-lg prose-invert max-w-none space-y-8">
-            <p>Many agencies still sell disconnected tactics. One offers SEO. Another builds websites. Another runs ads. Another schedules social content. The client is left trying to stitch together vendors, reports, and responsibilities while hoping the whole thing somehow produces better results. GrowSmallBiz takes a different approach by building a connected growth system designed to support the full path from awareness to retention.</p>
 
-            <p>That means strategy, execution, automation, and measurement work together instead of competing for attention. The website is not treated as a separate project from conversion. SEO is not separated from local intent and trust-building. Paid ads are not run without considering landing pages and follow-up. Marketing automation is not treated as an optional extra after leads are already being lost. The goal is to make each part of the system reinforce the others.</p>
+          {/* Case Study Cards */}
+          <div className="space-y-6 mb-14">
+            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | San Ramon Valley HVAC Company — Danville Service Area</p>
+              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">Page 3–4 → Local 3-Pack in 9 Weeks</p>
+              <p className="text-foreground/80 leading-relaxed">After a comprehensive Google Business Profile optimization and Danville-specific local citation cleanup campaign, this HVAC contractor moved to a top-3 local map pack position — capturing significantly more emergency HVAC calls from Blackhawk and Alamo homeowners during peak summer season. Inbound calls increased 87% month-over-month within 90 days.</p>
+            </div>
 
-            <p>GrowSmallBiz is built for local service businesses and restaurants that need real business outcomes, not vanity metrics. Danville business owners do not need more dashboards, random activity, or isolated deliverables. They need stronger lead flow, better inquiry handling, clearer performance visibility, and a system that supports actual growth.</p>
+            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Danville Dental Practice</p>
+              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+31 New Patient Leads in Month 1</p>
+              <p className="text-foreground/80 leading-relaxed">Combining a targeted Google Ads launch calibrated to Danville demographics with a proactive review management campaign, this dental practice generated 31 qualified new patient inquiries in its first full month — more than double its previous monthly average. The practice improved from a 3.6-star to a 4.6-star Google rating within 90 days, crossing the threshold at which Danville patients consistently select a new provider.</p>
+            </div>
+
+            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Downtown Danville Restaurant — Hartz Avenue</p>
+              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+131% Online Reservation Growth in 90 Days</p>
+              <p className="text-foreground/80 leading-relaxed">A coordinated local SEO, Google Business Profile optimization, and Meta Ads strategy transformed this Hartz Avenue restaurant's online visibility. Online table reservations grew from 45 per month to 104 per month — a 131% increase — while Google review volume tripled and average rating climbed to 4.7 stars, establishing the restaurant as the top-ranked dining option in its category for Danville searches.</p>
+            </div>
+          </div>
+
+          {/* Before/After Table */}
+          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6">What Happens to Danville Service Businesses After 90 Days with GrowSmallBiz</h3>
+          <div className="overflow-x-auto mb-14">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Performance Metric</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Before GrowSmallBiz</th>
+                  <th className="p-3 text-left font-bold text-primary bg-card/80 border border-border/60">After 90 Days</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
+                  { metric: "Monthly Inbound Calls", before: "90 calls / mo", after: "168 calls / mo (+87%)" },
+                  { metric: "New Patient Leads (Dental)", before: "12 leads / mo", after: "31 leads / mo (+158%)" },
+                  { metric: "Restaurant Table Reservations (Online)", before: "45 bookings / mo", after: "104 bookings / mo (+131%)" },
+                  { metric: "Avg. Google Review Rating", before: "3.6 stars", after: "4.6 stars (+1.0 stars)" },
+                ].map((row, i) => (
+                  <tr key={i}>
+                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.metric}</td>
+                    <td className="p-3 border border-border/60 text-foreground/70">{row.before}</td>
+                    <td className="p-3 border border-border/60 text-primary font-bold">{row.after}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Channel Compare */}
+          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">Single-Channel Marketing Doesn't Win in Danville Anymore. Here's What Actually Moves the Needle.</h3>
+          <p className="text-foreground/80 leading-relaxed mb-6">Danville's premium clients research before they commit. They check your Google ranking, read your reviews, visit your website, and may encounter you on social media — all before making contact. A single-channel approach captures only one of those touchpoints. An integrated system captures all of them, which is why our clients consistently outperform competitors who rely on SEO alone or ads alone.</p>
+        </div>
+      </section>
+
+      {/* ===== DIFFERENTIATORS — 4 CARDS ===== */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Shield className="w-4 h-4" /> WHY WE WIN
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville Business Before</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">There is no shortage of digital marketing agencies claiming to serve Danville businesses. Most will promise similar results with similar services. Here is why what GrowSmallBiz builds consistently outperforms what general-purpose agencies deliver in our hometown market:</p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
+            {[
+              { title: "Vertical Specialist", description: "We only serve contractors, health & wellness professionals, restaurants, and real estate pros. We know your buyer psychology, your seasonal cycles, and your Danville competitive landscape inside and out." },
+              { title: "Integrated System", description: "Every channel — SEO, Ads, Reputation, AI Automation — connects and feeds one goal: more booked appointments and service calls. Nothing runs in a silo." },
+              { title: "AI-Powered Speed", description: "Our AI Receptionist follows up with missed leads within minutes via SMS and email. In Danville's premium market, the first business to respond wins the client — every time." },
+              { title: "Hometown Advantage", description: "GrowSmallBiz is headquartered in Danville. We are Danville Area Chamber members. We know the neighborhoods, the client expectations, and the local competitive dynamics — because this is our market too." },
+            ].map((item, i) => (
+              <div key={i} className="rounded-xl overflow-hidden shadow-md">
+                <div className="bg-primary py-4 px-4 text-center">
+                  <p className="font-bold text-primary-foreground">{item.title}</p>
+                </div>
+                <div className="bg-card/50 border border-border/60 border-t-0 p-4 min-h-[140px]">
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-foreground/80 leading-relaxed mt-10 max-w-3xl">We do not use templates. We do not run your campaign from a checklist designed for a plumber in Phoenix. Every strategy is built from your specific competitive landscape, your Danville service area, your vertical, and your revenue goals. Our certified marketing strategists carry your account from day one through sustained growth — and because we live and work in this community, our reputation is on the line alongside yours.</p>
+        </div>
+      </section>
+
+      {/* ===== MID-PAGE PERSON CTA ===== */}
+      <PersonCTA
+        title="Let's Build Your Growth Engine"
+        description="If you want AI-powered client acquisition systems, done-for-you execution, adaptive strategy, and a clear multi-channel dashboard without patching together disconnected tools, start with a free strategy call."
+        buttonText="Schedule Strategy Call"
+        buttonHref={strategyCallUrl}
+        sectionClassName="py-16"
+      />
+
+      {/* ===== FAQ SECTION ===== */}
+      <FAQSection
+        title={<>Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Danville</span></>}
+        faqs={[
+          { question: "What types of businesses does GrowSmallBiz work with in Danville, CA?", answer: "GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, realtors, restaurants, and other Danville-area companies that depend on visibility, lead flow, follow-up, and retention." },
+          { question: "How much does digital marketing cost for a Danville local service business?", answer: "Investment levels vary based on your business size, revenue goals, competitive landscape, and the combination of services you need. Most Danville service businesses in our portfolio invest between $1,000 and $5,000 per month across SEO, Google Ads, reputation management, and AI automation — with our core AI Client Growth System starting at $797 per month plus a one-time setup fee. Given Danville's premium market dynamics — where a single new client relationship can represent several thousand dollars in lifetime value — the ROI threshold is typically reached faster here than in lower-value markets. We build custom packages aligned to your specific goals and service area." },
+          { question: "How long does it take to see results from local SEO in Danville?", answer: "Google Business Profile optimizations show measurable movement within 4 to 8 weeks. Full local 3-pack rankings for competitive Danville search terms are typically achieved within 3 to 6 months, depending on your industry and starting position. Google Ads campaigns generate qualified leads from day one. In Danville's market, the combination of immediate paid visibility with compounding organic SEO growth is the most effective approach — ads capture high-intent clients now while SEO builds the long-term authority that reduces your cost-per-lead over time." },
+          { question: "Does my Danville business need to be on social media?", answer: "For most Danville service businesses, yes — but the strategy differs significantly by vertical. Restaurants benefit enormously from Instagram and Facebook visibility given how Danville residents discover and choose dining experiences. Home service contractors benefit most from retargeting campaigns that re-engage website visitors and lookalike audience campaigns targeting homeowners in Blackhawk, Alamo, and Green Valley ZIP codes. Health and wellness professionals benefit from reputation-building content and before-and-after campaigns. We build social strategies calibrated to your specific vertical and Danville's audience, not generic social media management." },
+          { question: "How important are online reviews for Danville businesses specifically?", answer: "More important than in most other markets. Danville's affluent, research-oriented clientele reads reviews more thoroughly and weighs them more heavily in their decision-making than the average Bay Area consumer. A business with fewer than 4.5 stars is frequently filtered out before a Blackhawk homeowner ever visits the website. Our reputation management system is specifically designed for Danville's high-expectation environment — proactively building your review volume, protecting your rating during difficult situations, and ensuring your Google profile reflects the quality of service you actually deliver." },
+          { question: "Do I need Google Local Service Ads if I'm already running Google Ads?", answer: "For licensed home service contractors in Danville — HVAC, plumbing, electrical, roofing — LSA is a meaningful complement to traditional Google Ads, not a replacement. LSA ads appear above standard search ads and carry the Google Guaranteed badge, which sends a distinct trust signal to Danville's premium homeowners. The pay-per-verified-lead model also protects budget efficiency. For trades where LSA is available, running both simultaneously typically maximizes your total share of the Danville local search results page." },
+          { question: "Can digital marketing help my seasonal business in Danville?", answer: "Seasonal demand management is one of GrowSmallBiz's core specializations for Danville. We build campaigns that anticipate and capitalize on Danville's predictable seasonal patterns — HVAC marketing that ramps before summer heat waves and fall heating season, restaurant promotional campaigns for Danville's active holiday event calendar, and real estate lead generation aligned to the spring and fall transaction peaks that drive San Ramon Valley's market. Data-driven campaign timing and seasonal keyword targeting ensure your marketing investment works hardest exactly when demand is highest." },
+          { question: "How does AI automation specifically benefit Danville service businesses?", answer: "In Danville's premium market, the cost of a missed lead is higher than in most Bay Area markets — because each lead represents a higher average job value and a higher-value client relationship. Our AI Receptionist ensures that every inquiry is acknowledged and followed up within seconds, regardless of when it arrives. For a Blackhawk homeowner calling about emergency AC repair at 10 PM, an instant SMS follow-up from your business versus a voicemail from everyone else is frequently the difference between winning and losing a job that could represent $5,000 to $15,000 or more. Research from MIT and InsideSales.com confirms that leads contacted within 5 minutes are 21 times more likely to convert — AI automation makes that response window achievable for every single lead, around the clock." },
+        ]}
+        schemaType="FAQPage"
+        contactCTA={{
+          ...baseContactCTA,
+          title: "Have more questions about marketing in Danville?",
+          description: "We're here to help. Reach out to us for a personalized consultation.",
+          tagline: "Let's grow your Danville business together.",
+        }}
+      />
+
+      {/* ===== FINAL CTA ===== */}
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6">
+              Every Day You Wait, Your Competitors Book Another Danville Customer That{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Should Have Been Yours</span>
+            </h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">Danville's premium market rewards the businesses with the strongest digital presence — and moves quickly past those without one. While you are reading this, Danville homeowners are searching Google for services you offer. If you are not in the top three local results, you are invisible to them. If your reviews are below 4.5 stars, they are filtering you out before they see your website. If your phone goes to voicemail and you do not follow up within minutes, they have already called your competitor.</p>
+            <p className="text-foreground/80 leading-relaxed mb-4">GrowSmallBiz is the digital marketing agency that Danville local service businesses trust to dominate local search, generate qualified leads, and build the integrated marketing systems that produce sustainable revenue growth. We bring 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of premium local service business marketing — and as a Danville-headquartered business and Danville Area Chamber member, our commitment to this community's businesses is personal, not transactional.</p>
+            <p className="text-foreground/70 font-semibold mt-6">No long-term contracts. No cookie-cutter templates. No excuses. Just a hometown team that builds the marketing system your Danville business deserves.</p>
           </div>
         </div>
       </section>
 
-      {/* Section: Testimonials */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Users className="w-4 h-4" /> TESTIMONIALS
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Trusted by Local Service Businesses Across{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville and the Tri-Valley</span>
-            </h2>
-            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">Not every client wants to be publicly named on a marketing page. These quotes are written as safe placeholder copy in the same style as the visual proof cards, and can later be replaced with actual client testimonials inside your CMS.</p>
-          </div>
+      {/* ===== PRE-FORM PERSON CTA ===== */}
+      <PersonCTA
+        title="Schedule Your Free Strategy Call"
+        description="Receive a personalized strategy session — local SEO audit, competitive analysis, and a clear growth roadmap built specifically for your Danville service business."
+        buttonText="Schedule Strategy Call"
+        buttonHref={strategyCallUrl}
+        sectionClassName="py-16"
+      />
 
-          <div className="grid md:grid-cols-2 gap-6">
+      {/* ===== CONSULTATION FORM ===== */}
+      <ConsultationFormSection utmCampaign="danville-consultation" utmMedium="danville-ca" />
+
+      {/* ===== CROSS-LINK PILLS ===== */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
+          <div className="flex flex-wrap justify-center gap-3">
             {[
-              { initials: "AR", role: "Owner", company: "Danville-Area HVAC Company", quote: "GrowSmallBiz approached our marketing like one connected system instead of a collection of separate tasks. That made it much easier to understand how visibility, lead handling, and follow-up were supposed to work together." },
-              { initials: "MS", role: "Founder", company: "East Bay Med Spa", quote: "They were organized, responsive, and thoughtful in how they explained each step. What stood out most was their ability to connect branding, lead flow, and follow-up in a way that felt practical for a local business." },
-              { initials: "JP", role: "Office Manager", company: "Local Dental Practice", quote: "We appreciated that the focus was not just on getting traffic, but on improving the full patient inquiry experience. Their recommendations felt aligned with how a real service business needs to operate day to day." },
-              { initials: "DL", role: "Owner", company: "Tri-Valley Roofing Company", quote: "What we liked most was the emphasis on clarity and follow-through. The strategy felt more complete than what we had experienced before, especially around lead response, website performance, and local visibility." },
-              { initials: "KR", role: "Broker Associate", company: "Danville-Area Real Estate Business", quote: "They understood that consistent visibility is only one part of the equation. The way they think about follow-up, communication, and long-term lead handling made the overall approach feel much more useful." },
-              { initials: "ST", role: "Operator", company: "Danville-Area Restaurant", quote: "The conversation felt grounded in real business needs, not generic marketing talk. Their ideas around customer communication, promotions, and repeat-visit strategy were especially relevant for a local restaurant." },
-            ].map((t, i) => (
-              <div key={i} className="p-6 feature-card-teal rounded-2xl">
-                <p className="text-foreground/90 italic mb-4">"{t.quote}"</p>
-                <div className="flex items-center gap-3">
-                  <div className="relative">
-                    <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-primary via-orange-400 to-primary" />
-                    <div className="relative w-10 h-10 rounded-full bg-card flex items-center justify-center text-primary font-bold text-sm">{t.initials}</div>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-foreground">{t.role}</p>
-                    <p className="text-xs text-muted-foreground">{t.company}</p>
-                  </div>
-                </div>
-              </div>
+              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
+              { label: "Dublin", to: "/locations/dublin-ca/" },
+              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
+              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
+              { label: "Livermore", to: "/locations/livermore-ca/" },
+              { label: "Concord", to: "/locations/concord-ca/" },
+            ].map((city) => (
+              <Link
+                key={city.to}
+                to={city.to}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all text-sm font-medium"
+              >
+                <MapPin className="w-3.5 h-3.5" />
+                {city.label}
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section: Why Local Visibility Still Matters */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <Eye className="w-4 h-4" /> LOCAL VISIBILITY
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Local Visibility Still Matters for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville, CA Businesses</span>
-            </h2>
-          </div>
-          <div className="prose prose-lg prose-invert max-w-none space-y-8">
-            <p>Local visibility still determines who gets the call, booking, or visit. Buyers use search, maps, reviews, business profiles, service pages, and increasingly AI-assisted search experiences to compare options before they reach out. <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google's own guidance</a> makes clear that accurate profiles, reviews, and relevance still matter in local discovery.</p>
+      </main>
 
-            <p>That is why small business marketing in Danville, CA cannot rely on having a website alone. Businesses need a stronger local presence across search visibility, trust signals, conversion pathways, and follow-up systems if they want to turn attention into measurable revenue.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: Danville Business Resources */}
-      <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <BookOpen className="w-4 h-4" /> RESOURCES
-            </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Danville{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Business Resources</span>
-            </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Danville business owners can explore these local resources as they plan growth, expansion, or visibility improvements:</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
-              <h3 className="text-lg font-display font-semibold text-foreground mb-2">
-                <a href="https://www.danville.ca.gov/267/Economic-Development" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Economic Development</a>
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">The Town of Danville's Economic Development Division is a strong starting point for business owners who want to understand how Danville supports business growth. The Town says this division helps companies start, connect, and grow in Danville, and its Business Concierge can help businesses navigate the Town's development review process. That makes this a useful resource for owners who want a clearer path through local approvals, planning questions, or expansion-related steps.</p>
-            </div>
-
-            <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
-              <h3 className="text-lg font-display font-semibold text-foreground mb-2">
-                <a href="https://www.danville.ca.gov/270/Business-Resources" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Business Resources</a>
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">Danville's Business Resources page is useful for owners who need practical help beyond general marketing advice. It brings together items such as business funding support, permitting-related tools, startup guidance, and other assistance resources in one place. For a small business trying to move from idea to action, this page works well as a central operational reference rather than just a generic city information page.</p>
-            </div>
-
-            <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
-              <h3 className="text-lg font-display font-semibold text-foreground mb-2">
-                <a href="https://www.danville.ca.gov/818/Business-Library" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Town of Danville Business Library</a>
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">The Town's Business Library is especially helpful for small businesses that want to make better decisions before launching, relocating, or expanding. Danville describes it as a place for guiding documents, community information, market analysis, and regional business support tools. In practical terms, that means it can help owners research the local market, review planning materials, and get more context before investing in a new location or growth initiative.</p>
-            </div>
-
-            <div className="bg-card/50 border border-border/60 rounded-xl p-5 transition-all hover:border-primary/30 hover:shadow-lg">
-              <h3 className="text-lg font-display font-semibold text-foreground mb-2">
-                <a href="https://danvilleareachamber.com/business-resources/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Danville Area Chamber Business Resources</a>
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">The Danville Area Chamber's business resources are useful for owners who want stronger local connections in addition to Town resources. The Chamber highlights business resources, community connections, and visibility opportunities, and says it helps members connect with nearly 500 businesses across the greater Danville area and San Ramon Valley. For small businesses, that can support networking, referrals, regional awareness, and a better understanding of the local business ecosystem.</p>
-            </div>
-          </div>
-
-          {/* Cross-link pills */}
-          <div className="mt-12 text-center">
-            <p className="text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { label: "San Ramon", to: "/locations/san-ramon-ca/" },
-                { label: "Dublin", to: "/locations/dublin-ca/" },
-                { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-                { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
-                { label: "Livermore", to: "/locations/livermore-ca/" },
-                { label: "Concord", to: "/locations/concord-ca/" },
-              ].map((city) => (
-                <Link
-                  key={city.to}
-                  to={city.to}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all text-sm font-medium"
-                >
-                  <MapPin className="w-3.5 h-3.5" />
-                  {city.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <FAQSection
-        title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Small Business Marketing in Danville, CA</span></>}
-        faqs={[
-          { question: "What types of businesses does GrowSmallBiz work with in Danville, CA?", answer: "GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, realtors, restaurants, and other Danville-area companies that depend on visibility, lead flow, follow-up, and retention." },
-          { question: "Is GrowSmallBiz only an SEO company?", answer: "No. GrowSmallBiz is not just an SEO company. We combine website design, SEO and local SEO, paid ads, marketing automation, and AI-assisted lead handling into one connected growth system." },
-          { question: "Can GrowSmallBiz help if my business already has a website?", answer: "Yes. Many businesses already have a website but still need better messaging, stronger conversion flow, stronger local visibility, cleaner landing pages, or better CRM follow-up. We can improve what exists and connect it more effectively to lead generation and conversion." },
-          { question: "How does AI improve digital marketing for small businesses?", answer: "AI improves local marketing when it is used for faster lead response, smarter follow-up, more efficient optimization, and better customer communication. The value is practical: fewer missed opportunities, more consistent handling of inquiries, and better leverage from the marketing you are already paying for." },
-          { question: "Do you work with restaurants that want more repeat business?", answer: "Yes. Restaurants can benefit from retention-focused marketing such as promotions, email and SMS offers, reactivation campaigns, and VIP club membership systems that increase repeat visits and customer value." }
-        ]}
-        schemaType="FAQPage"
-        contactCTA={{
-          ...baseContactCTA,
-          title: "Have questions about marketing in Danville?",
-          description: "We're here to help you find the right strategy.",
-          tagline: "Let's grow your Danville business together.",
-        }}
-      />
-
-      <section id="final-cta" className="py-16" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-up">
-            <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-            <h2 className="section-title">
-              Ready to Build a Smarter Marketing System for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville Business</span>?
-            </h2>
-            <p className="section-description mt-4 mb-8">
-              GrowSmallBiz helps Danville businesses connect website performance, search visibility, paid ads, follow-up, conversion, retention, and AI-assisted marketing into one practical system. That is the difference between paying for activity and building a platform that supports real growth.
-            </p>
-          </div>
-          <CardCTA
-            title="Schedule Your Free Marketing Assessment"
-            description="If you want a marketing agency in Danville, CA that goes beyond disconnected tactics, GrowSmallBiz is built for that next step. Schedule a strategy conversation or marketing assessment to see where your current system is leaking leads and what a stronger local growth engine could look like."
-            buttonText="Schedule Strategy Call"
-            buttonHref={strategyCallUrl}
-            sectionClassName="pt-0 pb-0"
-          />
-        </div>
-      </section>
-
-      <ConsultationFormSection />
-    </main>
-
-    <Footer />
-  </div>
+      <Footer />
+    </div>
   );
 };
 
