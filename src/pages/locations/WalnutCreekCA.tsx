@@ -58,15 +58,23 @@ const WalnutCreekCA = () => {
 
             {/* H2 */}
             <h2
-              className="text-2xl md:text-3xl font-display font-semibold text-foreground/90 mb-8 animate-fade-up"
+              className="text-2xl md:text-3xl font-display font-semibold text-foreground/90 mb-6 animate-fade-up"
               style={{ animationDelay: "0.1s" }}
             >
               Turns Visibility Into Calls, Leads, and Revenue
             </h2>
 
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-foreground/80 leading-relaxed mb-4 animate-fade-up" style={{ animationDelay: "0.13s" }}>
+              Every day your competitors are capturing the leads that should belong to your business. In Walnut Creek's competitive East Bay market, the difference between a full appointment calendar and an empty phone isn't the quality of your work — it's your visibility online.
+            </p>
+
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-foreground/80 leading-relaxed mb-6 animate-fade-up" style={{ animationDelay: "0.16s" }}>
+              GrowSmallBiz is a specialized East Bay digital marketing agency built exclusively for local service businesses. Contractors, dentists, med spas, real estate professionals — if you serve Walnut Creek clients, we're built for you.
+            </p>
+
             {/* Trust line */}
-            <p className="max-w-3xl mx-auto text-sm md:text-base text-muted-foreground leading-relaxed animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              Walnut Creek · Danville · San Ramon Chamber Member | Certified Strategists | No Long-Term Contracts | Month-to-Month
+            <p className="max-w-3xl mx-auto text-sm md:text-base text-muted-foreground leading-relaxed animate-fade-up" style={{ animationDelay: "0.18s" }}>
+              Walnut Creek · Danville · San Ramon Chamber Member | Certified Strategists
             </p>
 
             {/* CTA row */}
