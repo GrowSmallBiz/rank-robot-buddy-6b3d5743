@@ -179,7 +179,7 @@ const DublinCA = () => {
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6 animate-fade-up">
             <p className="text-muted-foreground leading-relaxed">
-              According to <a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal's Local Consumer Review Survey</a>, 81% of consumers use Google to evaluate local businesses and 80% search on a weekly basis. Yet 56% of businesses have not fully optimized their online presence.
+              According to BrightLocal's Local Consumer Review Survey, <a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">81% of consumers use Google to evaluate local businesses</a> and <a href="https://www.brightlocal.com/resources/local-seo-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">80% of US consumers search for local businesses on a weekly basis</a>. Yet <a href="https://www.brightlocal.com/resources/local-seo-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">56% of businesses have not fully optimized their Google Business Profile</a>.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               There is no Dublin-rooted, integrated-system agency currently dominating these search results. That position is open.
