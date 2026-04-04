@@ -62,11 +62,7 @@ const DanvilleCA = () => {
             </p>
 
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-4" style={{ animationDelay: "0.15s" }}>
-              GrowSmallBiz is the digital marketing agency in Danville, CA built exclusively for local service businesses — and this is our hometown. We are headquartered in Danville and are active members of the Danville Area Chamber of Commerce. We don't serve eCommerce brands, SaaS startups, or national retail chains. We serve HVAC contractors, plumbers, electricians, roofers, dentists, med spa owners, chiropractors, physical therapists, restaurants, and real estate professionals — the businesses that define Danville's community character and economic vitality.
-            </p>
-
-            <p className="max-w-3xl mx-auto text-sm md:text-base text-muted-foreground leading-relaxed animate-fade-up mt-4" style={{ animationDelay: "0.18s" }}>
-              Our integrated marketing systems combine Local SEO, Google Ads, Google Local Service Ads, Reputation Management, Conversion-Focused Website Design, and AI-Powered Lead Automation into a single coordinated engine with one purpose: putting more booked appointments and qualified service calls on your calendar.
+              GrowSmallBiz is Danville's hometown digital marketing agency — headquartered here, Danville Area Chamber member, built exclusively for local service businesses. Contractors, dentists, med spas, restaurants, real estate professionals — if you serve Danville clients, we're built for you.
             </p>
 
             <div
