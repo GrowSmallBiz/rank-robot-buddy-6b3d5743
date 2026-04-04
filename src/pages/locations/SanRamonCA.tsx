@@ -74,7 +74,7 @@ const SanRamonCA = () => {
             >
               <Button variant="hero" size="lg" asChild>
                 <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer">
-                  Schedule Your Free Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                  Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
               </Button>
               <Button variant="heroOutline" size="lg" asChild>
