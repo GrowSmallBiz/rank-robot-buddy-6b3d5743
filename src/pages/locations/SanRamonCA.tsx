@@ -396,7 +396,7 @@ const SanRamonCA = () => {
                 <li>Professional response guidance for negative reviews — in San Ramon's tight-knit neighborhood communities, a well-crafted professional response to a negative review is visible to every prospect who reads it afterward</li>
                 <li>Healthcare-compliant reputation strategies for dental practices, med spas, and wellness professionals — HIPAA-aware review management that builds credibility without compromising compliance</li>
               </ul>
-              <p className="text-base md:text-lg text-foreground/90 leading-relaxed mt-4 italic">BrightLocal's 2024 Local Consumer Review Survey found that 88% of consumers say they would use a business that responds to all of its reviews — compared to just 47% who would consider a business that does not respond at all.</p>
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed mt-4 italic">BrightLocal's 2024 Local Consumer Review Survey found that <a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">88% of consumers say they would use a business that responds to all of its reviews</a> — compared to just 47% who would consider a business that does not respond at all.</p>
             </div>
             <div className="text-center">
               <Button variant="hero" size="lg" asChild>
