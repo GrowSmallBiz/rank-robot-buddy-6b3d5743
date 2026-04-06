@@ -15,6 +15,7 @@ export const Header = () => {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileCaseStudiesOpen, setMobileCaseStudiesOpen] = useState(false);
   const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false);
+  const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
   const [mobileSeoSubOpen, setMobileSeoSubOpen] = useState(false);
   const [mobileAdsSubOpen, setMobileAdsSubOpen] = useState(false);
   
