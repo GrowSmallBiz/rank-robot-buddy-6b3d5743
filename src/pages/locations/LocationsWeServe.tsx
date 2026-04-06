@@ -136,6 +136,11 @@ const LocationsWeServe = () => {
                     slug: "/locations/concord-ca/",
                     desc: "Concord's diverse small and medium business market thrives with localized SEO, social media engagement, and targeted advertising campaigns tailored to varied industries.",
                   },
+                  {
+                    city: "Martinez",
+                    slug: "/locations/martinez-ca/",
+                    desc: "As the seat of Contra Costa County, Martinez businesses operate in a distinct market with a historic downtown, waterfront district, and a community-oriented customer base that rewards local credibility and reputation above all else.",
+                  },
                 ].map((item) => (
                   <Link
                     key={item.city}
