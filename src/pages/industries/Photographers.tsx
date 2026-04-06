@@ -176,7 +176,7 @@ const Photographers = () => {
       <Head>
         <title>Digital Marketing for Photographers | SEO & Lead Generation | GrowSmallBiz</title>
         <meta name="description" content="Fill your photography calendar year-round with AI-powered SEO, portfolio optimization, and automated lead capture. Wedding, portrait, and headshot photographers." />
-        <link rel="canonical" href="https://growsmallbiz.io/industries/digital-marketing-for-photographers/" />
+        <link rel="canonical" href="https://growsmallbiz.io/professional-services/photography-marketing/" />
       </Head>
       <ServiceJsonLd
         serviceName="Digital Marketing for Photographers"
