@@ -165,7 +165,7 @@ const LocationsWeServe = () => {
               <h3 className="text-2xl font-display font-bold text-foreground mb-8 text-center">
                 <span className="text-transparent bg-clip-text bg-gradient-primary">Tri-Valley</span> & Extended Service Area
               </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
                     city: "Danville",
