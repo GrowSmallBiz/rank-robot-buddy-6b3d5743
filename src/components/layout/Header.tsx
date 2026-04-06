@@ -191,7 +191,7 @@ export const Header = () => {
             >
               <button
                 className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname.startsWith("/home-service-contractors") ? "text-primary" : "text-muted-foreground"
+                  location.pathname.includes("case-study") ? "text-primary" : "text-muted-foreground"
                 }`}
               >
                 Case Studies
