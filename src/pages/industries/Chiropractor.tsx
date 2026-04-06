@@ -105,7 +105,7 @@ const Chiropractor = () => {
       <Head>
         <title>Chiropractor SEO Services | Grow Your Practice | GrowSmallBiz</title>
         <meta name="description" content="Grow your chiropractic practice with specialized SEO. Rank #1 for back pain, neck pain, and 'chiropractor near me' searches. Get more new patients." />
-        <link rel="canonical" href="https://growsmallbiz.io/industries/digital-marketing-for-chiropractors/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/chiropractic-marketing/" />
       </Head>
       <ServiceJsonLd
         serviceName="Chiropractor Marketing"
