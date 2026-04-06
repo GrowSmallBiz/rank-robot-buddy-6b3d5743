@@ -108,7 +108,7 @@ const HVAC = () => {
       <Head>
         <title>HVAC, Plumbing & Electrical SEO Services | GrowSmallBiz</title>
         <meta name="description" content="Dominate local search for HVAC, plumbing, and electrical services. Get more emergency calls, rank #1 on Google Maps, and stop paying for leads." />
-        <link rel="canonical" href="https://growsmallbiz.io/industries/digital-marketing-for-hvac-contractors/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/hvac-marketing/" />
       </Head>
       <ServiceJsonLd
         serviceName="HVAC, Plumbing & Electrical Marketing"
