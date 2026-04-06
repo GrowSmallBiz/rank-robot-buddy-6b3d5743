@@ -4,42 +4,233 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Heart, Sparkles, Stethoscope, ArrowRight } from "lucide-react";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import {
+  Heart,
+  Sparkles,
+  Stethoscope,
+  ArrowRight,
+  CheckCircle2,
+  Shield,
+  Users,
+  Star,
+  Bot,
+  Search,
+  Globe,
+  MessageSquare,
+  ChevronRight,
+} from "lucide-react";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { CardCTA } from "@/components/services";
+import { baseContactCTA } from "@/config/contactCTA";
 
-const industries = [
+const challenges = [
   {
-    icon: Sparkles,
-    title: "Med Spa Marketing",
-    description: "Attract high-value aesthetic clients searching for Botox, fillers, laser treatments, and body contouring in your area.",
-    link: "/health-and-wellness-practices/med-spa-marketing/",
+    title: "Google YMYL Standards and E-E-A-T Requirements",
+    description: "Google classifies health content as \"Your Money or Your Life\" (YMYL) — meaning it holds health websites to stricter quality standards than any other category. To rank well, your website must demonstrate strong Experience, Expertise, Authoritativeness, and Trustworthiness (E-E-A-T).",
+  },
+  {
+    title: "HIPAA Advertising Restrictions",
+    description: "HIPAA regulations prohibit the use of patient photos or identifiable testimonials in advertising without explicit written consent. This limits common promotional tactics and requires careful compliance in every campaign. Agencies that are not HIPAA-aware create legal exposure for the practices they serve.",
+  },
+  {
+    title: "The Trust-First Patient Journey",
+    description: "Patients in health and wellness make highly personal decisions about their care. The typical journey requires 3 to 5 meaningful touchpoints before a patient commits to booking — significantly longer than most service categories. A single-channel strategy misses patients at every stage where they are still evaluating their options.",
+  },
+  {
+    title: "The Disproportionate Weight of Online Reviews",
+    description: "88% of patients read reviews before choosing a provider. Negative reviews impact health businesses approximately twice as much as other industries. A practice with a weak review profile loses patients to competitors at every stage of the funnel — search, click, and conversion. Reputation management is not a nice-to-have in health and wellness. It is infrastructure.",
+  },
+  {
+    title: "Elective vs. Insurance-Covered Services",
+    description: "Marketing elective services — cosmetic treatments, aesthetic procedures, premium dental work — requires a fundamentally different approach than insurance-covered care. Elective decisions are driven by emotional appeal, visual proof, and social validation. Insurance-covered decisions are driven by trust, credibility, and convenience. The same campaign does not serve both.",
+  },
+];
+
+const practices = [
+  {
+    icon: Stethoscope,
+    title: "Dental Practices",
+    description: "Dental patients research providers extensively before booking. They check Google rankings, read reviews, and compare websites before making a single phone call. The core dental growth system is Local SEO + Google Ads + Reputation Management: together, these channels drive consistent new patient acquisition through high-intent searches like \"dentist near me,\" \"teeth whitening near me,\" and \"emergency dentist.\"",
+    link: "/health-and-wellness-practices/dental-marketing/",
+    linkText: "Explore dental practice marketing services",
   },
   {
     icon: Heart,
-    title: "Chiropractic Marketing",
-    description: "Reach patients actively searching for pain relief, sports injury recovery, and wellness care in your community.",
+    title: "Chiropractic Practices",
+    description: "Chiropractic is a high-consideration category — patients research their condition and their provider before committing to care. Local SEO for condition-specific searches like \"back pain chiropractor near me,\" \"sports injury treatment,\" and \"sciatica relief\" captures patients at their highest point of intent. There is a real credibility gap in chiropractic search results across Contra Costa County and the Tri-Valley: well-optimized practices consistently outrank under-invested competitors and capture the bulk of local search traffic.",
     link: "/health-and-wellness-practices/chiropractic-marketing/",
+    linkText: "Explore chiropractic marketing services",
   },
   {
-    icon: Stethoscope,
-    title: "Dental Marketing",
-    description: "Fill your appointment book with new patients searching for dental cleanings, cosmetic dentistry, and emergency care.",
-    link: "/health-and-wellness-practices/dental-marketing/",
+    icon: Sparkles,
+    title: "Med Spas & Aesthetic Clinics",
+    description: "Med spa clients are visual-first and social-proof-driven. Before/after results, Google reviews, and social media presence influence their decisions above almost everything else. Google Ads for high-value treatments — Botox, dermal fillers, laser treatments, body contouring — delivers measurable ROI because these are high-intent, high-value searches from clients who are ready to book. A med spa without a strong paid and organic presence is invisible at exactly the moment a client is ready to spend.",
+    link: "/health-and-wellness-practices/med-spa-marketing/",
+    linkText: "Explore med spa marketing services",
+  },
+];
+
+const serviceCards = [
+  {
+    title: "Local SEO + Website Design",
+    description: "Rank at the top of Google when patients search \"dentist near me,\" \"chiropractor near me,\" or \"med spa near me.\" We build conversion-optimized websites and optimize your Google Business Profile, build authoritative local citations, and execute proven map pack strategies — all designed together from the ground up. SEO and website design built as one integrated system is the foundation of sustainable, long-term new patient acquisition. A website built for SEO from day one outperforms a retrofitted site every time.",
+  },
+  {
+    title: "Google Ads / PPC for Health & Wellness Practices",
+    description: "Get new patients immediately with precisely targeted Google Ads campaigns built around the treatments your patients are actively searching for. We manage dental, chiropractic, and med spa campaigns around high-intent searches — from teeth whitening to spinal adjustments to Botox — with every dollar tracked to patient bookings. No wasted spend. No guesswork. Every campaign is optimized to cost per booked appointment, not cost per click.",
+  },
+  {
+    title: "Reputation Management",
+    description: "88% of patients read reviews before choosing a provider. Practices with 50 or more Google reviews receive three times more appointment requests than those with fewer than 10. We automate your Google review generation, monitor patient feedback across all platforms, and help you build the 5-star profile that converts online searchers into booked appointments. A stronger reputation lifts conversion rates from every other marketing channel — SEO, ads, and direct traffic all perform better when your review profile is strong.",
+  },
+  {
+    title: "Social Media Management",
+    description: "For med spas and wellness practices especially, social media drives direct bookings by building visual proof of your results. We create and manage professional content that showcases your work, builds brand trust, and targets the clients most likely to book high-value treatments. Before/after content, treatment education, and patient social proof are your highest-converting social assets — when executed with HIPAA-compliant messaging.",
+  },
+  {
+    title: "AI Receptionist",
+    description: "Patients inquire after hours. A phone that goes unanswered at 9pm is a patient who books with your competitor at 9:01pm. Our AI Receptionist captures every inquiry 24/7 — answering questions, qualifying leads, and booking appointments automatically. You never lose a new patient because no one picked up the phone.",
+  },
+  {
+    title: "Answer Engine Optimization (AEO)",
+    description: "More patients are finding providers through voice search and AI assistants. When someone asks Google, Siri, or ChatGPT for a dentist, chiropractor, or med spa near them — AEO positions your practice as the trusted answer. This drives a new category of patient traffic that most practices are completely missing, and it is growing faster than traditional search.",
+  },
+];
+
+const channelData = [
+  { channel: "Google LSAs", bestFor: "Dental & Chiropractic", insight: "Captures emergency and family-oriented searches. Google Guaranteed badge drives trust and click-through." },
+  { channel: "Google Ads / PPC", bestFor: "All three practice types", insight: "Fastest ROI. High-intent treatment searches. Tracked to booked appointments, not clicks." },
+  { channel: "Meta Ads (Lead Forms)", bestFor: "Med Spas", insight: "Outperform landing pages for consultations. Simplified inquiry drives higher conversion rates." },
+  { channel: "Local SEO", bestFor: "All three practice types", insight: "Takes 4-6 months to mature. Delivers the lowest cost-per-patient acquisition over the long term." },
+  { channel: "Reputation Management", bestFor: "All three practice types", insight: "88% of patients read reviews before booking. Non-negotiable for conversion from every channel." },
+  { channel: "Social Media", bestFor: "Med Spas primarily", insight: "Before/after visual content drives bookings. Less critical for dental and chiropractic." },
+  { channel: "AEO / Voice Search", bestFor: "All three practice types", insight: "Growing channel. Positions practice as the answer in AI and voice search results." },
+];
+
+const funnelSteps = [
+  {
+    step: 1,
+    title: "Awareness",
+    description: "Local SEO and branded content ensure your practice appears prominently when patients begin their search. If you are not visible at this stage, the patient never reaches you.",
+  },
+  {
+    step: 2,
+    title: "Consideration",
+    description: "Google Ads and retargeting campaigns engage patients who are actively comparing their options. This is where most practices lose patients to competitors with stronger paid presence.",
+  },
+  {
+    step: 3,
+    title: "Conversion",
+    description: "Optimized booking pages, Google LSAs, and AI Receptionist make scheduling appointments seamless and immediate. Friction at this stage kills conversions that your ads already paid for.",
+  },
+  {
+    step: 4,
+    title: "Retention",
+    description: "Automated follow-ups, review requests, and recall campaigns post-appointment build the reputation and lifetime value that reduce your long-term cost of acquisition.",
+  },
+];
+
+const caseStudies = [
+  {
+    title: "Med Spa | Southern California — AI SEO",
+    period: "Campaign period: 6-9 months of consistent SEO",
+    metrics: [
+      "Website users increased by 552.7%",
+      "Sessions increased by 584.2%",
+      "Phone calls up 75.9% (to 190 calls/month)",
+      "Direction requests up 64.1% (to 302/month)",
+      "Multiple treatment keywords moved to Page 1 including \"laser skin treatment\" and \"skin laser for acne scars\" (Rank 1)",
+    ],
+    accent: "border-l-accent",
+  },
+  {
+    title: "Med Spa | Southern California — AI SEO",
+    period: "Campaign period: 9 months (Jan 2023 — Sep 2023 vs. Apr 2022 — Dec 2022)",
+    metrics: [
+      "Organic users increased by 78% year over year",
+      "Google Search Console impressions improved by 252%",
+      "GSC total clicks improved by 66.76%",
+      "Average search position improved from 31.8 to 25.5",
+      "19,880 Google Business Profile views in 12 months",
+      "583 direct calls + 924 direction requests generated from GBP",
+    ],
+    accent: "border-l-accent",
+  },
+  {
+    title: "Med Spa | Southern California — Google Ads (PPC)",
+    period: "Ongoing campaign. All conversions: inbound call leads.",
+    metrics: [
+      "$16.39 cost per inbound call lead (all-time average)",
+      "17.95% conversion rate (last 30 days)",
+      "Conversions increased by 48.8% vs. prior period",
+      "Cost per acquisition reduced by 31.1%",
+      "2,577 total call conversions generated over campaign lifetime",
+    ],
+    accent: "border-l-primary",
+  },
+];
+
+const credentials = [
+  { label: "30+ Years", description: "Fortune 500 experience in sales, marketing & digital transformation" },
+  { label: "AI-Powered Research", description: "Competitive market mapping before the first campaign launches" },
+  { label: "HIPAA-Aware Campaigns", description: "All advertising built for compliance — Google Ads, Meta, and social" },
+  { label: "Tri-Valley Anchored", description: "Serving practices across Contra Costa County and the Bay Area" },
+];
+
+const gettingStartedSteps = [
+  {
+    step: 1,
+    title: "Schedule Your Free Strategy Call",
+    description: "Tell us about your practice, your patient acquisition goals, and where your current marketing is falling short. No pitch. No pressure. A direct conversation about what is and is not working.",
+  },
+  {
+    step: 2,
+    title: "Get Your Custom Growth Plan",
+    description: "We audit your online presence, map your local competition, and build a tailored marketing plan for your specific practice type and market. You leave the call with a clear picture of your opportunity.",
+  },
+  {
+    step: 3,
+    title: "Watch Your Practice Grow",
+    description: "We execute across every channel — SEO, ads, website, AI automation — while you focus on delivering exceptional patient care. You see the results in your appointment book.",
+  },
+];
+
+const faqs = [
+  {
+    question: "How long does SEO take to show results for a dental practice or med spa?",
+    answer: "SEO typically begins to show meaningful ranking improvements within 60 to 90 days. For dental practices and med spas, significant new patient volume usually becomes noticeable within 4 to 6 months as your website gains authority and local search visibility. Consistent optimization accelerates this timeline — practices that invest in content and reputation management alongside SEO see faster results.",
+  },
+  {
+    question: "Does GrowSmallBiz handle HIPAA-compliant ad copy and marketing?",
+    answer: "Yes. All advertising campaigns — including Google Ads and social media — are built with HIPAA compliance as a baseline requirement. We do not use patient photos or identifiable information without explicit written consent, and we craft ad copy that maximizes performance within regulatory boundaries.",
+  },
+  {
+    question: "How is marketing a dental practice different from marketing a med spa?",
+    answer: "Dental marketing centers on trust, local search authority, and insurance-compatibility messaging. Local SEO, Google Ads, and reputation management are the core channels. Med spa marketing is visual and social-proof-driven, relying heavily on before/after content, Instagram, and Meta Ads to attract clients considering elective aesthetic treatments. The strategies are distinct and require different creative approaches, channel mixes, and compliance considerations.",
+  },
+  {
+    question: "Which marketing channels deliver the fastest ROI for health and wellness businesses?",
+    answer: "Google Ads delivers the fastest ROI — campaigns can generate new patient inquiries within days of launch by targeting high-intent treatment searches. Local SEO builds sustainable long-term growth but takes 4 to 6 months to mature. The highest-performing practices run both in parallel: paid search fills the appointment book immediately while SEO builds the organic foundation that reduces cost of acquisition over time.",
+  },
+  {
+    question: "Do you serve practices outside the Tri-Valley and Contra Costa County?",
+    answer: "Yes. While GrowSmallBiz is headquartered in Danville and has deep roots in the Tri-Valley — serving practices across Walnut Creek, San Ramon, Pleasanton, Concord, and surrounding communities — our digital marketing systems are built to perform in any local market. Our AI-powered research process maps the competitive landscape for your specific geography before we launch any campaign.",
   },
 ];
 
 const HealthAndWellness = () => {
   return (
-    <>
+    <div className="min-h-screen bg-background">
       <Head>
-        <title>Health & Wellness Practice Marketing | GrowSmallBiz</title>
-        <meta name="description" content="Digital marketing for med spas, chiropractors, and dental practices. Attract more patients, fill your schedule, and grow your health & wellness practice." />
+        <title>Health & Wellness Marketing Agency | GrowSmallBiz Digital Marketing</title>
+        <meta name="description" content="GrowSmallBiz helps dental practices, chiropractors, and med spas across the Tri-Valley and Bay Area attract more patients with AI-powered local SEO, Google Ads, and reputation management. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="Health & Wellness Practice Marketing"
-        description="Digital marketing for med spas, chiropractors, and dental practices."
+      <ServiceJsonLd
+        serviceName="Health & Wellness Marketing Agency"
+        serviceType="Digital Marketing for Health & Wellness Practices"
+        description="AI-powered local SEO, Google Ads, reputation management, and marketing automation for dental practices, chiropractors, and med spas."
         url="/health-and-wellness-practices"
         breadcrumbs={[
           { name: "Health & Wellness Practices", url: "/health-and-wellness-practices" },
@@ -48,59 +239,288 @@ const HealthAndWellness = () => {
 
       <Header />
 
-      <main id="main-content" className="min-h-screen pt-20">
-        {/* Hero */}
-        <section className="relative py-20 md:py-28 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
-          <div className="container mx-auto px-4 relative z-10 text-center max-w-4xl">
-            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6">
-              Health & Wellness Marketing
-            </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Grow Your Health & Wellness Practice
+      {/* Hero — Navy background, typography only */}
+      <section className="pt-32 pb-24 bg-[hsl(213,55%,23%)]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-8 leading-tight">
+              Health & Wellness Marketing Agency | Tri-Valley & Bay Area
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              From med spas to dental offices to chiropractic clinics — we help health and wellness practices attract more patients, fill schedules, and build lasting patient relationships through integrated digital marketing.
+            <p className="text-white/85 text-lg mb-4 leading-relaxed max-w-3xl mx-auto">
+              Your dental practice, chiropractic office, or med spa is losing new patients to competitors with a stronger digital presence right now. When someone searches "dentist near me," "chiropractor near me," or "med spa near me" in Walnut Creek, Danville, or San Ramon — they click the top result. If that is not you, it is your competitor. And that patient is gone.
             </p>
-            <Button variant="hero" size="xl" asChild>
-              <Link to="/contact/">Get Your Free Strategy Session <ArrowRight className="ml-2 w-5 h-5" /></Link>
+            <p className="text-white/85 text-lg mb-8 leading-relaxed max-w-3xl mx-auto">
+              GrowSmallBiz is an AI-powered digital marketing agency built specifically for health and wellness practices. We serve practices across Contra Costa County and the Tri-Valley region with local SEO, Google Ads, reputation management, and AI automation that fills appointment books and drives consistent new patient flow — month over month.
+            </p>
+            <Button className="bg-[#F4803A] hover:bg-[#e0712e] text-white font-semibold px-8 py-6 text-lg" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                Schedule Your Free Strategy Call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
+            <p className="text-[#2BA3A0] text-sm mt-4">No commitment. Free 30-minute strategy session for health and wellness practices.</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Industry Cards */}
-        <section className="py-16 md:py-24 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-              Choose Your Specialty
-            </h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Every health & wellness practice has unique marketing needs. Select your specialty to see how we can help.
+      {/* What Is a H&W Marketing Agency? */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">What Is a Health & Wellness Marketing Agency?</h2>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              A health and wellness marketing agency is a specialized digital marketing partner that helps medical and wellness practices attract new patients, build their online reputation, and grow revenue through targeted strategies. Services include local SEO, Google Ads management, reputation management, website design, and AI automation — all tailored to the healthcare and wellness environment.
             </p>
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {industries.map((industry) => (
-                <Link
-                  key={industry.title}
-                  to={industry.link}
-                  className="group bg-card border border-border rounded-2xl p-8 hover:border-primary/50 hover:shadow-xl transition-all duration-300"
-                >
-                  <industry.icon className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {industry.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4">{industry.description}</p>
-                  <span className="text-primary font-semibold inline-flex items-center gap-1">
-                    Learn More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Link>
+            <p className="text-muted-foreground leading-relaxed">
+              These agencies serve dental practices, chiropractors, med spas, and wellness clinics that need a consistent pipeline of new patients or clients. The outcome is measurable: more new patients, filled appointment books, and trackable ROI from every marketing dollar spent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Unique Challenges */}
+      <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">The Unique Challenges of Marketing Health & Wellness Businesses</h2>
+            <p className="text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
+              Health and wellness marketing faces regulatory and consumer behavior challenges that distinguish it from every other industry. Understanding these dynamics is the difference between a marketing strategy that fills your appointment book and one that produces traffic with no bookings.
+            </p>
+            <div className="space-y-4">
+              {challenges.map((challenge, index) => (
+                <div key={index} className="bg-accent/5 border-l-4 border-l-accent rounded-r-xl p-6">
+                  <h3 className="text-lg font-display font-bold text-foreground mb-2">{challenge.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{challenge.description}</p>
+                </div>
               ))}
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
+      {/* Practices We Serve — 3 columns */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Health & Wellness Practices We Serve</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {practices.map((practice) => (
+              <div key={practice.title} className="flex flex-col bg-card border border-border rounded-2xl overflow-hidden">
+                <div className="bg-[hsl(213,55%,23%)] p-4">
+                  <div className="flex items-center gap-3">
+                    <practice.icon className="w-6 h-6 text-white" />
+                    <h3 className="text-lg font-display font-bold text-white">{practice.title}</h3>
+                  </div>
+                </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <p className="text-muted-foreground text-sm leading-relaxed flex-1">{practice.description}</p>
+                  <Link to={practice.link} className="text-accent font-semibold text-sm inline-flex items-center gap-1 mt-4 hover:underline">
+                    {practice.linkText} <ChevronRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Marketing Services — 2x3 grid */}
+      <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Digital Marketing Services for Health & Wellness Practices</h2>
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {serviceCards.map((service) => (
+              <div key={service.title} className="bg-card border border-border border-t-4 border-t-accent rounded-xl p-6 shadow-sm">
+                <h3 className="text-lg font-display font-bold text-foreground mb-3">{service.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Button className="bg-[#F4803A] hover:bg-[#e0712e] text-white font-semibold" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                Schedule Your Free Strategy Call
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Channel Breakdown Table */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">What Works by Channel — Health & Wellness</h2>
+            <p className="text-muted-foreground mb-10 text-center max-w-3xl mx-auto">
+              Effective marketing for health and wellness practices requires channel-specific strategies matched to how patients actually search and decide. One channel does not serve all practice types equally.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-[hsl(213,55%,23%)]">
+                    <th className="text-left text-white font-bold p-4 text-sm">Channel</th>
+                    <th className="text-left text-white font-bold p-4 text-sm">Best For</th>
+                    <th className="text-left text-white font-bold p-4 text-sm">Key Insight</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {channelData.map((row, index) => (
+                    <tr key={index} className={index % 2 === 0 ? "bg-card" : "bg-secondary/30"}>
+                      <td className="p-4 font-bold text-foreground text-sm">{row.channel}</td>
+                      <td className="p-4 text-muted-foreground text-sm">{row.bestFor}</td>
+                      <td className="p-4 text-muted-foreground text-sm">{row.insight}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Patient Acquisition Funnel */}
+      <section className="py-20 bg-accent/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">The Patient Acquisition Funnel for Health Practices</h2>
+            <p className="text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
+              Every new patient moves through four stages before they are sitting in your chair. A complete marketing system touches all four — not just the top.
+            </p>
+            <div className="grid md:grid-cols-4 gap-6">
+              {funnelSteps.map((item, index) => (
+                <div key={item.step} className="relative text-center">
+                  <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl font-bold text-accent">{item.step}</span>
+                  </div>
+                  <h3 className="text-lg font-display font-bold text-foreground mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+                  {index < funnelSteps.length - 1 && (
+                    <div className="hidden md:block absolute top-7 -right-3 text-accent">
+                      <ArrowRight className="w-6 h-6" />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Verified Results */}
+      <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Results for Health & Wellness Practices</h2>
+            <div className="space-y-6">
+              {caseStudies.map((study, index) => (
+                <div key={index} className={`bg-card border border-border ${study.accent} border-l-4 rounded-r-xl p-6`}>
+                  <h3 className="text-lg font-display font-bold text-foreground mb-1">{study.title}</h3>
+                  <p className="text-muted-foreground text-sm italic mb-4">{study.period}</p>
+                  <ul className="space-y-2">
+                    {study.metrics.map((metric, mIndex) => (
+                      <li key={mIndex} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground text-sm">{metric}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why GrowSmallBiz — Navy section */}
+      <section className="py-20 bg-[hsl(213,55%,23%)]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-8 text-center">Why Health & Wellness Practices Choose GrowSmallBiz</h2>
+            <div className="space-y-6 text-white/85 leading-relaxed max-w-3xl mx-auto mb-12">
+              <p>
+                GrowSmallBiz is led by a practitioner with 30+ years of Fortune 500 experience in sales, marketing, and digital transformation — not a generalist agency that rotates health and wellness practices through a cookie-cutter playbook. We built and refined our methodology across dozens of health and wellness client engagements before bringing it directly to practices in the Tri-Valley and Bay Area.
+              </p>
+              <p>
+                Our AI-powered approach closes the local knowledge gap that stops most agencies: before we touch a single campaign, we use AI-driven competitive research to map your exact local market, identify the keyword opportunities your competitors are missing, and build a strategy calibrated to your specific practice type, service mix, and geography.
+              </p>
+              <p>
+                The result is a marketing system — not a collection of disconnected tactics. Every channel we run connects to every other channel: SEO builds the authority that makes your ads cheaper. Reputation management lifts conversion rates from your organic and paid traffic. The AI Receptionist captures the after-hours leads that your ads already paid for. Everything compounds.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {credentials.map((cred) => (
+                <div key={cred.label} className="bg-white/10 rounded-xl p-5 text-center">
+                  <div className="text-xl font-bold text-accent mb-2">{cred.label}</div>
+                  <p className="text-white/70 text-sm">{cred.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Getting Started */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Getting Started Is Simple</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {gettingStartedSteps.map((item, index) => (
+              <div key={item.step} className="text-center">
+                <div className="w-14 h-14 rounded-full bg-[hsl(213,55%,23%)] flex items-center justify-center mx-auto mb-4">
+                  <span className="text-xl font-bold text-accent">{item.step}</span>
+                </div>
+                <h3 className="text-lg font-display font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+                {index < gettingStartedSteps.length - 1 && (
+                  <div className="hidden md:block" />
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Button className="bg-[#F4803A] hover:bg-[#e0712e] text-white font-semibold" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                Schedule Your Free Strategy Call
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <FAQSection
+        faqs={faqs}
+        title="Frequently Asked Questions"
+        subtitle="Common questions about health and wellness marketing"
+        schemaType="FAQPage"
+        contactCTA={{
+          ...baseContactCTA,
+          title: "Have more questions about Health & Wellness Marketing?",
+          description: "We're here to help! Reach out for a personalized consultation.",
+          tagline: "Let's grow your health & wellness practice together.",
+        }}
+      />
+
+      {/* Closing CTA */}
+      <section className="py-20 bg-gradient-to-r from-accent to-[hsl(213,55%,23%)]">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">Ready to Grow Your Health & Wellness Practice?</h2>
+          <p className="text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Your competitors are investing in digital marketing right now. Every month without a strong online presence is another month of new patients choosing a practice that ranks above you on Google. GrowSmallBiz builds the complete patient acquisition system that fills your appointment book consistently — so you can focus on delivering exceptional care while we handle your growth.
+          </p>
+          <Button className="bg-[#F4803A] hover:bg-[#e0712e] text-white font-semibold px-8 py-6 text-lg shadow-lg" asChild>
+            <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+              Schedule Your Free Strategy Call
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
+          </Button>
+        </div>
+      </section>
+
+      <ConsultationFormSection />
       <Footer />
-    </>
+    </div>
   );
 };
 
