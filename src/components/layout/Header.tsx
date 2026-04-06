@@ -203,37 +203,37 @@ export const Header = () => {
                 }`}
               >
                 <Link
-                  to="/case-studies/local-seo-service/hvac-plumbing-electrical/"
+                  to="/home-service-contractors/hvac-marketing/seo-case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   HVAC, Plumbing & Electrical — Local SEO
                 </Link>
                 <Link
-                  to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/"
+                  to="/home-service-contractors/hvac-marketing/google-ads-case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   HVAC, Plumbing & Electrical — Google Ads
                 </Link>
                 <Link
-                  to="/case-studies/roofers/"
+                  to="/home-service-contractors/roofing-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Roofers
                 </Link>
                 <Link
-                  to="/case-studies/tree-lawn-landscaping/"
+                  to="/home-service-contractors/landscaping-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Tree Care, Lawn Care & Landscaping
                 </Link>
                 <Link
-                  to="/case-studies/home-remodeling/"
+                  to="/home-service-contractors/home-renovation-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Home Remodeling
                 </Link>
                 <Link
-                  to="/case-studies/cleaning-services/"
+                  to="/home-service-contractors/cleaning-service-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Cleaning Services
@@ -510,42 +510,42 @@ export const Header = () => {
             {mobileCaseStudiesOpen && (
               <div className="pl-4 space-y-2">
                 <Link
-                  to="/case-studies/local-seo-service/hvac-plumbing-electrical/"
+                  to="/home-service-contractors/hvac-marketing/seo-case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   HVAC, Plumbing & Electrical — Local SEO
                 </Link>
                 <Link
-                  to="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/"
+                  to="/home-service-contractors/hvac-marketing/google-ads-case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   HVAC, Plumbing & Electrical — Google Ads
                 </Link>
                 <Link
-                  to="/case-studies/roofers/"
+                  to="/home-service-contractors/roofing-marketing/case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Roofers
                 </Link>
                 <Link
-                  to="/case-studies/tree-lawn-landscaping/"
+                  to="/home-service-contractors/landscaping-marketing/case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Tree Care, Lawn Care & Landscaping
                 </Link>
                 <Link
-                  to="/case-studies/home-remodeling/"
+                  to="/home-service-contractors/home-renovation-marketing/case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Home Remodeling
                 </Link>
                 <Link
-                  to="/case-studies/cleaning-services/"
+                  to="/home-service-contractors/cleaning-service-marketing/case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
