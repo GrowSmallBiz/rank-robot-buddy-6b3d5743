@@ -187,6 +187,11 @@ const LocationsWeServe = () => {
                     slug: "/locations/livermore-ca/",
                     desc: "Livermore's unique blend of wine country tourism and industrial sectors requires specialized marketing strategies that highlight local attractions and B2B services.",
                   },
+                  {
+                    city: "Tracy",
+                    slug: "/locations/tracy-ca/",
+                    desc: "Tracy's fast-growing commuter market and Bay Area affordability migration wave create consistent demand across home services, healthcare, restaurants, and real estate — with digital competition well behind the Bay Area cities to the west.",
+                  },
                 ].map((item) => (
                   <Link
                     key={item.city}
