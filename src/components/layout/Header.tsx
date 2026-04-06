@@ -241,6 +241,54 @@ export const Header = () => {
               </div>
             </div>
 
+            {/* Industries Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsIndustriesOpen(true)}
+              onMouseLeave={() => setIsIndustriesOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname.startsWith("/industries") ? "text-primary" : "text-muted-foreground"
+                }`}
+                aria-expanded={isIndustriesOpen}
+                aria-haspopup="true"
+              >
+                Industries
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+              <div
+                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isIndustriesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                }`}
+              >
+                <Link
+                  to="/industries/digital-marketing-for-med-spas/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Med Spas
+                </Link>
+                <Link
+                  to="/industries/digital-marketing-for-chiropractors/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Chiropractors
+                </Link>
+                <Link
+                  to="/industries/digital-marketing-for-hvac-contractors/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  HVAC Contractors
+                </Link>
+                <Link
+                  to="/industries/digital-marketing-for-dentists/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Dentists
+                </Link>
+              </div>
+            </div>
+
             {/* Locations Dropdown */}
             <div 
               className="relative group"
