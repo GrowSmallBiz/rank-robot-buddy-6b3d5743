@@ -9,21 +9,27 @@ import {
   TrendingUp, 
   MapPin, 
   Star, 
-  Users, 
   Target, 
   Phone,
   CheckCircle2,
   ArrowRight,
   Bot,
-  Heart,
   Search,
   Zap,
-  Shield,
-  Hammer,
   Flame,
   Droplets,
   Plug,
-  Home
+  Home,
+  TreePine,
+  Paintbrush,
+  SprayCan,
+  Globe,
+  MessageSquare,
+  BarChart3,
+  Leaf,
+  Snowflake,
+  Sun,
+  CloudSun
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -33,61 +39,152 @@ import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import homeServicesHeroImage from "@/assets/industry-homeservices-hero.jpg";
-import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 
 const trades = [
   { icon: Flame, name: "HVAC" },
   { icon: Droplets, name: "Plumbing" },
   { icon: Plug, name: "Electrical" },
   { icon: Home, name: "Roofing" },
-  { icon: Hammer, name: "Remodeling" },
+  { icon: Paintbrush, name: "Remodeling" },
   { icon: Wrench, name: "General Contractors" },
-];
-
-const benefits = [
-  {
-    icon: MapPin,
-    title: "Dominate Local Search",
-    description: "Rank #1 for '[service] near me', 'emergency [trade] [city]', and service-area-specific searches."
-  },
-  {
-    icon: Phone,
-    title: "More Emergency Calls",
-    description: "Capture urgent service calls when homeowners need immediate help — broken AC, burst pipes, electrical issues."
-  },
-  {
-    icon: Bot,
-    title: "AI Search Visibility",
-    description: "Get recommended by ChatGPT, Google AI, and voice assistants when homeowners ask for help."
-  },
-  {
-    icon: Star,
-    title: "5-Star Reputation",
-    description: "Build and showcase reviews to become the trusted choice for home services in your community."
-  }
 ];
 
 const services = [
   {
-    title: "Local SEO & Map Pack Domination",
-    description: "Own the Google Map Pack for every service you offer in every city you serve.",
-    features: ["Google Business Profile optimization", "Service area page creation", "Local citation building", "Multi-location management"]
+    number: "1",
+    title: "Local SEO & Google Map Pack",
+    description: "Get in front of homeowners searching 'HVAC company near me' or 'emergency plumber [city].' We build your local authority through citation consistency, review velocity, and on-page optimization — so you rank in the Map Pack where 70% of clicks happen.",
+    features: ["Google Business Profile optimization and posting", "Service-area landing pages for every city you serve", "Local citation building and consistency audit", "Multi-location and multi-service GBP management"]
   },
   {
-    title: "Emergency & Urgent Service Visibility",
-    description: "Be the first call when something breaks — any time of day or night.",
-    features: ["24/7 emergency keyword targeting", "Mobile-first optimization", "Click-to-call integration", "Google Local Service Ads (LSA)"]
+    number: "2",
+    title: "Google Ads & Local Services Ads (LSA)",
+    description: "Stop overpaying for clicks on keywords your competitors have bid up. We build tightly structured campaigns by service type and zip code, with negative keyword management and conversion tracking so every dollar is accountable. LSAs carry Google's Guarantee badge and charge per lead — not per click.",
+    features: ["Campaign structure by trade and service type", "Zip-code-level bid management", "Google Local Services Ads setup and badge management", "Full conversion tracking to booked calls"]
   },
   {
-    title: "AI & Voice Search Optimization",
-    description: "Get recommended when homeowners ask Alexa, Siri, or ChatGPT for help.",
-    features: ["Answer Engine Optimization", "FAQ schema markup", "Conversational content", "Featured snippet targeting"]
+    number: "3",
+    title: "Website Design & Conversion Optimization",
+    description: "Your website is your 24/7 sales rep. We build fast, mobile-first contractor websites designed to convert — click-to-call above the fold, service-area pages, trust signals, and quote forms that turn visitors into calls.",
+    features: ["Mobile-first, fast-loading design", "Click-to-call and quote form above the fold", "Trust signals: licenses, reviews, guarantees, badges", "Service-area page architecture for local SEO"]
   },
   {
-    title: "AI Lead Capture & CRM Automation",
-    description: "Never miss a lead — capture, qualify, and book every inquiry automatically.",
-    features: ["AI Receptionist for 24/7 call handling", "Automated follow-up sequences", "CRM pipeline management", "Review request automation"]
+    number: "4",
+    title: "Reputation Management",
+    description: "Online reviews are your word-of-mouth. We automate review requests after every completed job and monitor your reputation across Google, Yelp, and Nextdoor — so your 4.8-star rating does the selling for you.",
+    features: ["Automated post-job review request sequences", "Review monitoring across Google, Yelp, Nextdoor", "Response templates and escalation protocols", "Review velocity strategy for Map Pack ranking"]
+  },
+  {
+    number: "5",
+    title: "AI Receptionist & Lead Capture",
+    description: "Never lose a lead because no one answered the phone. Our AI Receptionist handles after-hours inquiries, qualifies leads, and books appointments directly into your calendar — so you capture jobs even while you're on a job.",
+    features: ["24/7 inbound call and web chat handling", "Lead qualification by service type, location, and urgency", "Direct calendar booking with homeowner confirmation", "SMS and email follow-up sequences"]
+  },
+  {
+    number: "6",
+    title: "Answer Engine Optimization (AEO)",
+    description: "When homeowners ask Siri, ChatGPT, or Google AI 'who's the best HVAC company in [city]?', we position your business as the answer. AEO is the next frontier of local search — early movers capture the most territory.",
+    features: ["FAQ schema markup and structured data", "Conversational content targeting voice queries", "Featured snippet and AI overview optimization", "Brand mention building across authoritative sources"]
+  },
+  {
+    number: "7",
+    title: "Social Media Management",
+    description: "Before/after project photos. Seasonal promotions. Community presence. We manage your social channels so you stay top-of-mind with past customers — your best source of repeat and referral business.",
+    features: ["Before/after project content and photography direction", "Seasonal promotion campaigns", "Community engagement and local hashtag strategy", "Paid social for retargeting and lookalike audiences"]
+  },
+  {
+    number: "8",
+    title: "CRM & Lead Nurturing Automation",
+    description: "Most contractors lose jobs not because of price — but because they followed up too late. Our CRM automation sends immediate responses, follow-up sequences, and re-engagement campaigns so no lead goes cold.",
+    features: ["Immediate lead response automation (under 5 minutes)", "Multi-touch follow-up sequences via SMS, email, and call", "Past customer re-engagement campaigns", "Pipeline reporting: where every lead is in the booking cycle"]
   }
+];
+
+const seasonalCards = [
+  {
+    season: "Spring",
+    months: "March–May",
+    hook: "AC Tune-Up Season",
+    description: "Focus on preventive maintenance campaigns targeting homeowners searching 'AC tune-up near me' before summer heat arrives. Run Google Ads at 60–70% of peak budget — this is the lowest cost-per-lead window of the year.",
+    accentColor: "#16A34A",
+    icon: Leaf,
+  },
+  {
+    season: "Summer",
+    months: "June–August",
+    hook: "Emergency Cooling Demand",
+    description: "Ramp Google Ads to full budget. Emergency keywords convert at 3–5× the rate of informational keywords. Ensure 24/7 call coverage — an AI Receptionist that captures a 10 PM emergency call pays for months of service in one job. If you're not in the Map Pack top 3 when temperatures spike, you're handing calls to competitors.",
+    accentColor: "#EA580C",
+    icon: Sun,
+  },
+  {
+    season: "Fall",
+    months: "September–November",
+    hook: "Heating System Prep",
+    description: "Shift messaging to heating maintenance and furnace inspections. Homeowners who schedule a fall tune-up become loyal repeat customers. Retargeting past customers drives the highest close rates of the year during this window.",
+    accentColor: "#D97706",
+    icon: CloudSun,
+  },
+  {
+    season: "Winter",
+    months: "December–February",
+    hook: "Emergency Heating and Pipe Calls",
+    description: "Emergency heating repair and frozen pipe calls spike during cold snaps. These are your highest-ticket, fastest-close jobs. Response speed wins: contractors who respond within 5 minutes close 80% more leads than those who call back in an hour.",
+    accentColor: "#2563EB",
+    icon: Snowflake,
+  },
+];
+
+const spokeCards = [
+  {
+    trade: "HVAC Contractors",
+    description: "High-season domination strategy. Seasonal Google Ads ramp-ups timed to weather patterns, Map Pack authority for emergency cooling and heating calls, and Google LSA badge management to own the top position year-round.",
+    ctaText: "HVAC Contractor Marketing",
+    link: "/home-service-contractors/hvac-marketing/",
+    icon: Flame,
+  },
+  {
+    trade: "Plumbing Companies",
+    description: "Emergency-first, relationship-second approach. Dual campaigns for emergency calls (burst pipe, backed-up drain) and planned jobs (water heater replacement, remodel) — both require different messaging and different bid strategies.",
+    ctaText: "Plumbing Company Marketing",
+    link: "#",
+    icon: Droplets,
+  },
+  {
+    trade: "Electrical Contractors",
+    description: "Trust and compliance-led strategy. Homeowners want licensed, bonded, and reviewed electricians — and Google factors that into local rankings. For commercial expansion, we build B2B targeting that reaches property managers directly.",
+    ctaText: "Electrical Contractor Marketing",
+    link: "#",
+    icon: Plug,
+  },
+  {
+    trade: "Roofing Companies",
+    description: "Storm-response and project-volume strategy. Capture storm-damage leads immediately after weather events, build organic authority for planned projects, and maximize close rate with before/after photo campaigns.",
+    ctaText: "Roofing Company Marketing",
+    link: "#",
+    icon: Home,
+  },
+  {
+    trade: "Tree Care, Lawn Care & Landscaping",
+    description: "Seasonal campaign structure across spring cleanup, summer maintenance, fall leaf removal, and winter storm prep. Local Map Pack visibility for 'tree service near me' and 'lawn care [city].'",
+    ctaText: "Tree Care & Landscaping Marketing",
+    link: "#",
+    icon: TreePine,
+  },
+  {
+    trade: "Home Remodeling",
+    description: "Longer-cycle strategy for kitchen, bathroom, and whole-home remodeling. Leads take 3–6 months to close. We build retargeting campaigns and nurture sequences that keep your business top-of-mind through the full decision window.",
+    ctaText: "Home Remodeling Marketing",
+    link: "#",
+    icon: Paintbrush,
+  },
+  {
+    trade: "Cleaning Services",
+    description: "Recurring revenue model. A new cleaning client is worth $2,400–$4,800/year in recurring bookings. We build campaigns that attract quality homeowners and CRM sequences that convert first-time bookings into monthly recurring accounts.",
+    ctaText: "Cleaning Services Marketing",
+    link: "#",
+    icon: SprayCan,
+  },
 ];
 
 const painPoints = [
@@ -103,6 +200,15 @@ const results = [
   { metric: "47", label: "New reviews per month avg" },
   { metric: "$23", label: "Average cost per lead" },
   { metric: "4.2x", label: "Average ROAS" }
+];
+
+const aiReceptionistBullets = [
+  "After-hours and weekend emergency calls",
+  "Web chat and SMS lead capture",
+  "Lead qualification by service type, location, and urgency",
+  "Appointment scheduling directly into your calendar",
+  "Immediate confirmation texts to the homeowner",
+  "Follow-up sequences for leads that don't book on first contact",
 ];
 
 const testimonials = [
@@ -128,24 +234,28 @@ const testimonials = [
 
 const faqs = [
   {
-    question: "Which home service trades do you work with?",
-    answer: "We work with all home service trades including HVAC, plumbing, electrical, roofing, remodeling, general contracting, painting, landscaping, pest control, flooring, pressure washing, pool & spa, tree service, moving companies, and more. Our systems are built specifically for the home services industry."
+    question: "How long does it take to see results from contractor digital marketing?",
+    answer: "Google Ads and Local Services Ads typically produce booked calls within 2–4 weeks of launch. Local SEO and Map Pack rankings build over 3–6 months as your domain authority, citation consistency, and review count accumulate. Most clients see measurable improvement in lead quality and cost-per-lead within the first 60 days — even before organic rankings fully develop."
   },
   {
-    question: "Can you help me stop relying on HomeAdvisor and Angi leads?",
-    answer: "Absolutely. We build your own lead generation engine through SEO, Google Ads, and Google Local Service Ads so you own your leads instead of renting them. Most clients significantly reduce or eliminate their dependence on third-party lead platforms within 4-6 months."
+    question: "What is the best marketing strategy for HVAC companies?",
+    answer: "HVAC marketing performs best when it layers three channels: Google Local Services Ads for immediate lead volume, seasonal Google Ads campaigns timed to weather patterns, and local SEO for long-term Map Pack authority. Review velocity — maintaining a 4.7+ rating with consistent new reviews — is the single most underrated ranking factor in HVAC local search."
   },
   {
-    question: "How does the AI Receptionist work for home service businesses?",
-    answer: "The AI Receptionist answers calls 24/7, qualifies leads by asking about their service need and urgency, and books appointments directly into your calendar. For emergency services, it can prioritize urgent calls and immediately notify your on-call technician."
+    question: "How do I stop relying on HomeAdvisor and Angi for leads?",
+    answer: "The shift from lead aggregators to owned marketing follows a proven sequence: first, optimize your Google Business Profile and build review velocity (8–12 weeks); second, launch Google Local Services Ads targeting emergency and high-intent keywords (weeks 2–4); third, build service-area landing pages that rank organically (months 3–6). Most contractors reduce cost-per-lead by 50–70% within six months and eliminate aggregator dependence within 12 months."
   },
   {
-    question: "Do you manage Google Local Service Ads (LSA)?",
-    answer: "Yes! LSA is one of the most effective channels for home service businesses. We help you get the Google Guarantee badge, optimize your profile, manage your budget, and monitor lead quality to maximize your ROI from this channel."
+    question: "Are Google Local Services Ads worth it for home service contractors?",
+    answer: "Yes — LSAs are the highest-converting paid channel for most trades. They appear above standard Google Ads, carry Google's Guarantee badge which dramatically increases click trust, and charge per lead rather than per click. For HVAC, plumbing, and electrical, LSAs typically deliver a cost-per-lead 30–50% lower than standard Google Ads for the same service keywords."
   },
   {
-    question: "How long until I see results?",
-    answer: "Google Ads and LSA can generate leads within the first week. Local SEO improvements typically show within 60-90 days, with significant organic lead growth within 4-6 months. We set honest expectations during the strategy call based on your specific market and competition."
+    question: "Do you work with solo contractors or only larger companies?",
+    answer: "We specialize in independent contractors and small service companies with 1–20 employees. Our entire model is built to deliver enterprise-quality marketing without the enterprise price tag. We don't take $50,000/month enterprise accounts — our focus is contractors who want a full lead generation system that's actually affordable."
+  },
+  {
+    question: "Can you help contractors who serve multiple cities or counties?",
+    answer: "Yes — multi-area SEO and service-area page strategy is core to what we do. We build individual service-area landing pages for each city you serve, manage your Google Business Profile for multi-area operations, and structure your ad campaigns geographically so budget is concentrated in your highest-margin service areas. We also run campaigns for contractors operating in multiple states."
   }
 ];
 
@@ -188,12 +298,12 @@ const HomeServices = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing for Home Service Contractors | SEO & Lead Generation | GrowSmallBiz</title>
-        <meta name="description" content="Grow your home service business with local SEO, Google Ads, AI lead capture, and reputation management. HVAC, plumbing, electrical, roofing, and more." />
+        <title>Home Service Contractor Marketing Agency | GrowSmallBiz</title>
+        <meta name="description" content="GrowSmallBiz builds digital marketing systems for home service contractors — local SEO, Google Ads, AI automation, and reputation management. More booked jobs. Lower cost per lead. Serving contractors across the United States." />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/" />
       </Head>
       <ServiceJsonLd
-        serviceName="Digital Marketing for Home Service Contractors"
+        serviceName="Home Service Contractor Marketing Agency"
         serviceType="Digital Marketing for Home Services"
         description="Local SEO, Google Ads, AI lead capture, and CRM automation for HVAC, plumbing, electrical, roofing, and home service contractors."
         url="/home-service-contractors"
@@ -222,8 +332,11 @@ const HomeServices = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
               Stop Renting Leads. Start <span className="text-gradient">Owning Your Pipeline</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 animate-fade-up delay-200 max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               Replace expensive HomeAdvisor and Angi leads with your own lead generation engine. Local SEO, Google Ads, AI automation, and reputation management built for home service contractors.
+            </p>
+            <p className="text-sm text-muted-foreground/70 mb-8 animate-fade-up delay-200">
+              Serving home service contractors across the United States — with deep expertise in the Bay Area, California, and Western markets.
             </p>
 
             {/* Trades we serve */}
@@ -280,48 +393,107 @@ const HomeServices = () => {
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Why Home Service Contractors Choose Us</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">We specialize in building lead generation engines for home service businesses.</p>
+      {/* What Is a Home Services Marketing Agency? */}
+      <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">What Is a Home Services Marketing Agency?</h2>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              A home services marketing agency specializes in digital lead generation for contractors, tradespeople, and residential service companies. Unlike general marketing firms, a home services marketing agency understands the full booking cycle — from local search intent and Google Local Services Ads to reputation management and CRM follow-up. The goal isn't traffic. It's more booked jobs at a lower cost-per-acquisition.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Home service marketing requires a specialist because the buying cycle is different from retail or B2B. A homeowner with a broken AC or a burst pipe doesn't browse and compare — they search, scan the top 3 results, and call. That 90-second window is where your marketing either works or doesn't. GrowSmallBiz builds complete lead generation systems for home service contractors — combining local SEO, paid ads, AI automation, and reputation management into one integrated engine that fills your schedule with the right jobs at the right margins.
+            </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="bg-card border border-border rounded-2xl p-6 card-hover">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <benefit.icon className="w-7 h-7 text-primary" />
+        </div>
+      </section>
+
+      {/* Seasonal Marketing Playbook */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">The Seasonal Marketing Playbook for Home Service Contractors</h2>
+            <p className="text-muted-foreground">
+              Most contractors run the same marketing year-round. The ones who dominate adjust their budget, messaging, and channels to match when homeowners actually need their services. Here's how the calendar works.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {seasonalCards.map((card) => (
+              <div key={card.season} className="bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+                <div className="h-1.5" style={{ backgroundColor: card.accentColor }} />
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <card.icon className="w-6 h-6" style={{ color: card.accentColor }} />
+                    <div>
+                      <h3 className="text-lg font-display font-bold text-foreground">{card.season} <span className="text-sm font-normal text-muted-foreground">({card.months})</span></h3>
+                      <p className="text-sm font-semibold" style={{ color: card.accentColor }}>{card.hook}</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{card.description}</p>
                 </div>
-                <h3 className="text-xl font-display font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="max-w-3xl mx-auto mt-10 border-l-4 border-accent/50 bg-card/50 rounded-r-xl p-6">
+            <p className="text-muted-foreground italic">"We used to go dark on ads every January. GrowSmallBiz showed us that's exactly when our competitors back off — and when emergency heating calls are worth the most per job."</p>
+            <p className="text-sm text-muted-foreground/70 mt-2">— [Client Name, HVAC Owner] — PLACEHOLDER, replace before launch</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services — 8 cards */}
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Our Home Service Marketing Solutions</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to own your leads — not rent them. We deploy the channels that drive calls, form fills, and booked appointments, not vanity metrics.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {services.map((service) => (
+              <div key={service.number} className="bg-card border border-border rounded-2xl p-8 card-hover">
+                <div className="flex items-start gap-4 mb-3">
+                  <span className="text-2xl font-bold text-accent">{service.number}.</span>
+                  <h3 className="text-xl font-display font-semibold text-foreground">{service.title}</h3>
+                </div>
+                <p className="text-muted-foreground mb-6 text-sm">{service.description}</p>
+                <ul className="space-y-3">
+                  {service.features.map((feature, fIndex) => (
+                    <li key={fIndex} className="flex items-center gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                      <span className="text-foreground text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section className="py-24 bg-card/50">
+      {/* Specialized Marketing for Every Trade — Spoke Links */}
+      <section className="py-20" style={{ backgroundColor: 'hsl(var(--card))' }}>
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Our Home Service Marketing Solutions</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to own your leads instead of renting them.</p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Specialized Digital Marketing for Every Trade</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Home service marketing isn't one-size-fits-all. We've built trade-specific strategies that match how your customers search, compare, and hire.</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {services.map((service, index) => (
-              <div key={index} className="bg-card border border-border rounded-2xl p-8 card-hover">
-                <h3 className="text-2xl font-display font-semibold text-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground mb-6">{service.description}</p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, fIndex) => (
-                    <li key={fIndex} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span className="text-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {spokeCards.map((card) => (
+              <div key={card.trade} className="bg-card border border-border rounded-xl p-6 border-l-4 border-l-accent hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-3 mb-3">
+                  <card.icon className="w-6 h-6 text-primary" />
+                  <h3 className="text-lg font-display font-bold text-foreground">{card.trade}</h3>
+                </div>
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{card.description}</p>
+                {card.link !== "#" ? (
+                  <Link to={card.link} className="text-primary font-semibold text-sm inline-flex items-center gap-1 hover:underline">
+                    → {card.ctaText}
+                  </Link>
+                ) : (
+                  <span className="text-muted-foreground/50 font-semibold text-sm inline-flex items-center gap-1">
+                    → {card.ctaText} <span className="text-xs">(Coming Soon)</span>
+                  </span>
+                )}
               </div>
             ))}
           </div>
@@ -347,19 +519,69 @@ const HomeServices = () => {
         </div>
       </section>
 
-      <WhyChooseSection 
-        title="Why Choose GrowSmallBiz for Home Service Marketing"
-        subtitle="Your Home Service Growth Partner"
-        description="We work exclusively with local service businesses. We know the trades, the seasons, the competition, and the customers."
-        items={[
-          { title: "Trade Specialists", description: "We focus on home service contractors — HVAC, plumbing, electrical, roofing, remodeling, and more.", icon: Wrench },
-          { title: "Own Your Leads", description: "Stop paying per lead to third parties. Build your own lead engine that you control.", icon: Target },
-          { title: "Emergency Visibility", description: "Be the first call when something breaks — any time of day, any day of the week.", icon: Zap },
-          { title: "AI-Powered Follow-Up", description: "Never miss a lead with 24/7 AI Receptionist and automated CRM workflows.", icon: Bot },
-          { title: "Reputation Builder", description: "Generate 5-star reviews systematically and become the trusted choice in your community.", icon: Star },
-          { title: "Proven ROI", description: "Average 4.2x ROAS across home service clients with $23 average cost per lead.", icon: TrendingUp },
-        ]}
-      />
+      {/* AI Receptionist Spotlight */}
+      <section className="py-20 bg-[hsl(213,60%,15%)]">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
+            <div className="lg:col-span-3">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">Never Lose a Lead Because No One Answered</h2>
+              <p className="text-white/80 mb-4 leading-relaxed">
+                Home service contractors lose more jobs to missed calls than to price competition. A homeowner with a burst pipe or a broken AC at 10 PM calls two contractors. The first one to answer gets the job.
+              </p>
+              <p className="text-white/80 mb-8 leading-relaxed">
+                Our AI Receptionist handles every inbound call, web chat, and form fill — 24 hours a day, 7 days a week. It qualifies the lead, books the appointment directly into your calendar, and sends the homeowner an immediate confirmation text. By the time you start your morning, the job is already on the schedule.
+              </p>
+              <h3 className="text-lg font-display font-bold text-white mb-4">What the AI Receptionist Handles</h3>
+              <ul className="space-y-3 mb-8">
+                {aiReceptionistBullets.map((bullet, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-white/80">{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button className="bg-accent hover:bg-accent/90 text-white" asChild>
+                <Link to="/services/marketing-automation-for-small-business/">
+                  Learn About AI Receptionist
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
+            </div>
+            <div className="lg:col-span-2 flex items-center">
+              <div className="bg-accent/90 rounded-2xl p-8">
+                <p className="text-white italic text-lg leading-relaxed mb-4">
+                  "They set up the AI Receptionist for our plumbing company and we booked 3 jobs the first weekend from after-hours calls we were missing. That alone paid for six months of service."
+                </p>
+                <p className="text-white/80 font-semibold text-sm">
+                  — [Client Name, Plumbing Company Owner, East Bay]
+                </p>
+                <p className="text-white/60 text-xs mt-1">PLACEHOLDER: Replace with verified client name before launch</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Home Service Contractors Choose GrowSmallBiz — Narrative */}
+      <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">Why Home Service Contractors Choose GrowSmallBiz</h2>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              We don't work with e-commerce brands, SaaS companies, or enterprise clients. Every client we serve is a local service business — which means our keyword strategies, ad structures, landing page architecture, and automation workflows are all built for how contractors actually get jobs. Not adapted. Built.
+            </p>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              We're local where it matters. Our team is based in Danville, California, in the heart of the Bay Area. We understand the California contractor market — the density, the competition, the seasonal patterns, and the licensing signals that affect local search rankings. We also run campaigns for contractors across the United States in every major metro.
+            </p>
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              We're accountable to booked jobs, not impressions. Every campaign ties back to phone calls, form fills, and scheduled appointments. You'll see exactly what your marketing investment is generating — in plain language, not agency-speak about reach, engagement, or brand lift.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              We run the whole system. Local SEO, Google Ads, AI Receptionist, reputation management, and CRM — fully integrated into one lead engine. No juggling four vendors who don't talk to each other. No gaps between your ad spend and your lead follow-up.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <CaseStudySection 
         caseStudies={caseStudies}
