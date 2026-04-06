@@ -88,12 +88,12 @@ export const routes: RouteRecord[] = [
       { path: "locations/pleasant-hill-ca", lazy: lazy(() => import("./pages/locations/PleasantHillCA")) },
       { path: "locations/martinez-ca", lazy: lazy(() => import("./pages/locations/MartinezCA")) },
 
-      { path: "case-studies/local-seo-service/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
-      { path: "case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
-      { path: "case-studies/roofers", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
-      { path: "case-studies/tree-lawn-landscaping", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
-      { path: "case-studies/home-remodeling", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
-      { path: "case-studies/cleaning-services", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
+      { path: "home-service-contractors/hvac-marketing/seo-case-study", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
+      { path: "home-service-contractors/hvac-marketing/google-ads-case-study", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
+      { path: "home-service-contractors/roofing-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
+      { path: "home-service-contractors/landscaping-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
+      { path: "home-service-contractors/home-renovation-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
+      { path: "home-service-contractors/cleaning-service-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
 
       { path: "industries/digital-marketing-for-med-spas", lazy: lazy(() => import("./pages/industries/MedSpa")) },
       { path: "industries/digital-marketing-for-chiropractors", lazy: lazy(() => import("./pages/industries/Chiropractor")) },
