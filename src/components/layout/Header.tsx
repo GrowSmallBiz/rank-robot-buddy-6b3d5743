@@ -578,6 +578,15 @@ export const Header = () => {
                 <Link to="/industries/digital-marketing-for-dentists/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
                   Dentists
                 </Link>
+                <Link to="/industries/digital-marketing-for-realtors/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Realtors
+                </Link>
+                <Link to="/industries/digital-marketing-for-photographers/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Photographers
+                </Link>
+                <Link to="/industries/digital-marketing-for-home-service-contractors/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Home Service Contractors
+                </Link>
               </div>
             )}
           </div>
