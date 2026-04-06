@@ -537,6 +537,33 @@ export const Header = () => {
             )}
           </div>
 
+          {/* Mobile: Industries */}
+          <div className="space-y-2">
+            <button
+              onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
+              className="flex items-center justify-between w-full text-foreground font-medium"
+            >
+              Industries
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileIndustriesOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileIndustriesOpen && (
+              <div className="pl-4 space-y-2">
+                <Link to="/industries/digital-marketing-for-med-spas/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Med Spas
+                </Link>
+                <Link to="/industries/digital-marketing-for-chiropractors/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Chiropractors
+                </Link>
+                <Link to="/industries/digital-marketing-for-hvac-contractors/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  HVAC Contractors
+                </Link>
+                <Link to="/industries/digital-marketing-for-dentists/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Dentists
+                </Link>
+              </div>
+            )}
+          </div>
+
           {/* Mobile: Locations */}
           <div className="space-y-2">
             <button
