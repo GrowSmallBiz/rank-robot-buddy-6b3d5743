@@ -132,6 +132,11 @@ const LocationsWeServe = () => {
                     desc: "Walnut Creek's vibrant retail and professional services sectors require comprehensive local SEO and reputation management to capture both foot traffic and online leads.",
                   },
                   {
+                    city: "Pleasant Hill",
+                    slug: "/locations/pleasant-hill-ca/",
+                    desc: "Sitting at the heart of the 680 corridor between Walnut Creek and Concord, Pleasant Hill's affluent homeowner base, Diablo Valley College population, and BART-connected professional community create high-intent demand for local service businesses — with surprisingly thin digital competition.",
+                  },
+                  {
                     city: "Concord",
                     slug: "/locations/concord-ca/",
                     desc: "Concord's diverse small and medium business market thrives with localized SEO, social media engagement, and targeted advertising campaigns tailored to varied industries.",
