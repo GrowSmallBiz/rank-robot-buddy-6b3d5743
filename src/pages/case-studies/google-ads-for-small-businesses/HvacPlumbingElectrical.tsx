@@ -69,13 +69,13 @@ const GoogleAdsHvacPlumbingElectrical = () => {
           name="description"
           content="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses. Real proof from paid search performance, conversions, cost per acquisition, and conversion-focused lead generation strategy."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/hvac-marketing/google-ads-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Google Ads Case Studies for HVAC, Plumbing & Electrical Businesses"
         description="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses."
-        url="/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/"
+        url="/home-service-contractors/hvac-marketing/google-ads-case-study/"
         breadcrumbs={[
           { name: "Case Studies", url: "/case-studies/" },
           { name: "Google Ads", url: "/case-studies/google-ads-for-small-businesses/" },
@@ -100,7 +100,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
           <div className="container mx-auto px-4 text-center">
             <p className="text-muted-foreground text-sm">
               Also see:{" "}
-              <Link to="/case-studies/local-seo-service/hvac-plumbing-electrical/" className="text-primary hover:underline font-medium">
+              <Link to="/home-service-contractors/hvac-marketing/seo-case-study/" className="text-primary hover:underline font-medium">
                 Local SEO Case Studies for HVAC, Plumbing & Electrical →
               </Link>
             </p>
