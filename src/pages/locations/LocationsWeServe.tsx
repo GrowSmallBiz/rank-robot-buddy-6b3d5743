@@ -117,16 +117,6 @@ const LocationsWeServe = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
-                    city: "Danville",
-                    slug: "/locations/danville-ca/",
-                    desc: "Danville's affluent market supports high-value service businesses, making targeted digital marketing strategies focused on premium branding and lead generation essential for success.",
-                  },
-                  {
-                    city: "San Ramon",
-                    slug: "/locations/san-ramon-ca/",
-                    desc: "With a strong corporate and B2B presence, San Ramon businesses benefit from AI-driven marketing systems and professional content marketing to engage decision-makers effectively.",
-                  },
-                  {
                     city: "Walnut Creek",
                     slug: "/locations/walnut-creek-ca/",
                     desc: "Walnut Creek's vibrant retail and professional services sectors require comprehensive local SEO and reputation management to capture both foot traffic and online leads.",
