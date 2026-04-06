@@ -286,6 +286,24 @@ export const Header = () => {
                 >
                   Dentists
                 </Link>
+                <Link
+                  to="/industries/digital-marketing-for-realtors/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Realtors
+                </Link>
+                <Link
+                  to="/industries/digital-marketing-for-photographers/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Photographers
+                </Link>
+                <Link
+                  to="/industries/digital-marketing-for-home-service-contractors/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Home Service Contractors
+                </Link>
               </div>
             </div>
 
