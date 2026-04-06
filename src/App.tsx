@@ -84,6 +84,9 @@ export const routes: RouteRecord[] = [
       { path: "locations/dublin-ca", lazy: lazy(() => import("./pages/locations/DublinCA")) },
       { path: "locations/pleasanton-ca", lazy: lazy(() => import("./pages/locations/PleasantonCA")) },
       { path: "locations/livermore-ca", lazy: lazy(() => import("./pages/locations/LivermoreCA")) },
+      { path: "locations/tracy-ca", lazy: lazy(() => import("./pages/locations/TracyCA")) },
+      { path: "locations/pleasant-hill-ca", lazy: lazy(() => import("./pages/locations/PleasantHillCA")) },
+      { path: "locations/martinez-ca", lazy: lazy(() => import("./pages/locations/MartinezCA")) },
 
       { path: "case-studies/local-seo-service/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
       { path: "case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
