@@ -59,11 +59,7 @@ const LivermoreCA = () => {
             </h1>
 
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
-              Livermore is unlike any other city in the Tri-Valley. It carries three distinct economies simultaneously — a federal laboratories workforce anchored by Lawrence Livermore National Laboratory and Sandia National Laboratories, a thriving Livermore Valley wine country with 50+ wineries drawing regional tourism, and a growing I-580 corridor commuter community of professional households. Each economy creates different service demand, different buyer behavior, and different marketing requirements. A plumber serving Springtown homeowners and a hospitality business running a winery tasting room are operating in the same ZIP code but in completely different markets.
-            </p>
-
-            <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-4" style={{ animationDelay: "0.15s" }}>
-              GrowSmallBiz is a Tri-Valley digital marketing agency based in Danville — 20 minutes from Livermore. We build integrated marketing systems that run parallel tracks for Livermore's distinct audiences simultaneously. Contractors, dentists, restaurants and wineries, real estate professionals — if you serve Livermore clients, we are built for you.
+              Livermore runs three distinct economies simultaneously — federal labs workforce, wine country hospitality, and I-580 commuter households. GrowSmallBiz builds integrated marketing systems for all three from our Danville base, 20 minutes away.
             </p>
 
             <div
