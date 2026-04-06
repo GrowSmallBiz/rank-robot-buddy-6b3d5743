@@ -370,7 +370,10 @@ const Photographers = () => {
         subtitle="Tips and strategies to grow your photography business"
       />
 
-      <CardCTA />
+      <CardCTA
+        title="Ready to Fill Your Calendar with Premium Clients?"
+        description="Get a free strategy session and discover how to attract clients who value your artistry — not just your price."
+      />
 
       <ConsultationFormSection />
       <Footer />

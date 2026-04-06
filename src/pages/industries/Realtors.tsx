@@ -370,7 +370,10 @@ const Realtors = () => {
         subtitle="Tips and strategies to grow your real estate business"
       />
 
-      <CardCTA />
+      <CardCTA
+        title="Ready to Fill Your Pipeline with Qualified Buyers & Sellers?"
+        description="Get a free strategy session and discover how to build a predictable lead generation engine for your real estate business."
+      />
 
       <ConsultationFormSection />
       <Footer />

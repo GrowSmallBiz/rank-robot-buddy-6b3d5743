@@ -395,7 +395,10 @@ const HomeServices = () => {
         subtitle="Tips and strategies to grow your contracting business"
       />
 
-      <CardCTA />
+      <CardCTA
+        title="Ready to Own Your Lead Pipeline?"
+        description="Get a free strategy session and discover how to replace expensive third-party leads with your own lead generation engine."
+      />
 
       <ConsultationFormSection />
       <Footer />
