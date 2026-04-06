@@ -1,13 +1,13 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ServiceHero } from "@/components/services/ServiceHero";
+import { Button } from "@/components/ui/button";
 import livermoreHero from "@/assets/livermore-hero.jpg";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
+import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare, Award } from "lucide-react";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { CardCTA } from "@/components/services";
+import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { useUtm } from "@/hooks/use-utm";
@@ -16,17 +16,21 @@ import { baseContactCTA } from "@/config/contactCTA";
 const LivermoreCA = () => {
   const { buildUrl } = useUtm();
   const strategyCallUrl = buildUrl("https://lp.growsmallbiz.io/digital-growth-strategy-session", "schedule-strategy-call");
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing Livermore CA | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps Livermore, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems." />
+        <title>Digital Marketing Agency in Livermore, CA | GrowSmallBiz</title>
+        <meta
+          name="description"
+          content="GrowSmallBiz serves Livermore's dual-identity market — Labs workforce and Wine Country businesses. Local SEO, Google Ads, AI automation, reputation management. Get your free strategy session."
+        />
         <link rel="canonical" href="https://growsmallbiz.io/locations/livermore-ca/" />
       </Head>
       <ServiceJsonLd
-        serviceName="Digital Marketing Livermore CA"
+        serviceName="Digital Marketing Agency in Livermore, CA"
         serviceType="Digital Marketing"
-        description="GrowSmallBiz helps Livermore, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems."
+        description="GrowSmallBiz serves Livermore's dual-identity market — Labs workforce and Wine Country businesses. Local SEO, Google Ads, AI automation, reputation management."
         url="/locations/livermore-ca/"
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
@@ -36,237 +40,733 @@ const LivermoreCA = () => {
 
       <Header />
 
-
       <main id="main-content">
 
-      <ServiceHero
-        badge={{ icon: MapPin, text: "Livermore, CA" }}
-        title="Digital Marketing for Livermore, CA Local Service Businesses —"
-        titleHighlight="Built for a Market That Spreads Out and Compares Options Fast"
-        subtitle="Livermore is the kind of market where businesses can lose opportunities without realizing it. A company may be doing good work, have a decent reputation, and even get some traffic, yet still struggle to turn visibility into consistent revenue."
-        primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
-        secondaryCTA={{ label: "View Our Services", href: "/services/" }}
-        backgroundImage={livermoreHero}
-        overlayOpacity={80}
-      />
-
-      <div className="bg-background">
-        <div className="container mx-auto px-4 py-16 max-w-4xl">
-          <div className="prose prose-lg prose-invert max-w-none space-y-12">
-
-            <p>Livermore is the kind of market where businesses can lose opportunities without realizing it. A company may be doing good work, have a decent reputation, and even get some traffic, yet still struggle to turn visibility into consistent revenue. That happens because Livermore is not a simple one-block local market. It has established neighborhoods, newer growth, a recognizable downtown, strong hospitality and winery activity, regional commuter flow, and buyers who often compare businesses across city lines.</p>
-
-            <p>GrowSmallBiz is a digital marketing agency serving Livermore and the wider Tri-Valley with one connected system built for local service businesses. We provide digital marketing services and marketing services that help businesses connect visibility, lead capture, follow-up, conversion, and retention so growth does not depend on disconnected vendors, scattered tools, or inconsistent execution.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Why Livermore Creates a Different Kind of Marketing Challenge</h2>
-
-            <p>Livermore combines established neighborhoods, regional overlap, repeat-visit destination activity, and a recognizable downtown business core in one market.</p>
-
-            <p>This is a market where a business may need to appeal to:</p>
-            <ul>
-              <li>local residents searching from home</li>
-              <li>people comparing options across Dublin, Pleasanton, San Ramon, and Livermore</li>
-              <li>repeat-visit customers in hospitality and lifestyle categories</li>
-              <li>homeowners looking for trustworthy service providers</li>
-              <li>buyers who may already know the region, but not know which business to trust</li>
-            </ul>
-
-            <p>That means local marketing has to do more than generate clicks. It has to help the business look established, relevant, and easy to choose.</p>
-
-            <p>For many Livermore businesses, the challenge is not simply getting found. It is making sure that when someone finds the business, the next impression is strong enough to earn the inquiry.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">What Usually Breaks First in Livermore Marketing</h2>
-
-            <p>Most local businesses do not fail because they ignore marketing completely. They struggle because the pieces are disconnected.</p>
-
-            <p>A business may have:</p>
-            <ul>
-              <li>a website that exists but does not persuade</li>
-              <li>search visibility that does not lead to enough qualified leads</li>
-              <li>ads that send traffic into a weak conversion path</li>
-              <li>reviews that are decent but not actively supported</li>
-              <li>follow-up that depends too much on staff availability</li>
-              <li>no clear system for turning past customers into repeat business or referrals</li>
-            </ul>
-
-            <p>That creates a familiar pattern. The business spends money, sees some activity, but still feels like growth is inconsistent.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Where Livermore Businesses Commonly Lose Revenue</h3>
-
-            <p><strong>They attract attention, but not confidence.</strong><br />The buyer visits the site or profile and does not feel enough clarity or trust to take the next step.</p>
-            <p><strong>They rely too much on reputation alone.</strong><br />A business may have good word of mouth, but weak digital presentation still costs it opportunities.</p>
-            <p><strong>They generate inquiries, but do not handle them consistently.</strong><br />Calls go unanswered, forms sit too long, and follow-up depends on whoever notices first.</p>
-            <p><strong>They market for acquisition but ignore retention.</strong><br />Every month starts from zero because past customers are not being reactivated or kept warm.</p>
-            <p><strong>They compete in more than one local market without realizing it.</strong><br />A Livermore business is often competing against businesses from nearby cities, not just against its immediate neighbors.</p>
-
-            <p>That is why GrowSmallBiz is built around one connected growth system instead of isolated tactics.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Why Livermore Is a Market Worth Winning</h2>
-
-            <p>Livermore offers real opportunity for local businesses that can combine visibility with trust and follow-through. The <a href="https://www.livermoreca.gov/departments/innovation-economic-development" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">City of Livermore's Innovation & Economic Development team</a> describes Livermore as a place where businesses can launch, expand, and succeed, while <a href="https://www.census.gov/quickfacts/fact/table/livermorecitycalifornia/PST045224" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">U.S. Census Bureau QuickFacts</a> report median household income of $160,775. That points to a market with meaningful household buying power, an established homeowner base, and enough commercial activity to support strong local demand.</p>
-
-            <p>Livermore also has a more visible local-business ecosystem than a generic suburb. The City surfaces business resources such as the <a href="https://www.livermorechamber.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Livermore Valley Chamber of Commerce</a> and <a href="https://www.livermoredowntown.com/about" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Livermore Downtown Inc.</a> The Livermore Valley Chamber of Commerce says it provides leadership to support economic vitality in the region, while Livermore Downtown Inc. says it is dedicated to the economic health and vitality of downtown Livermore. That combination matters because it reinforces Livermore as both a residential service market and an active local business community.</p>
-
-            <p>For a local business, that matters in practical terms:</p>
-            <ul>
-              <li>there are homeowners with service needs</li>
-              <li>there are families and households making local buying decisions</li>
-              <li>there are repeat-visit categories that benefit from retention</li>
-              <li>there is regional overlap with the broader Tri-Valley</li>
-              <li>and there is enough competition that a weak digital system becomes expensive</li>
-            </ul>
-
-            <p>That is especially important for home services, health and wellness providers, real estate professionals, and repeat-visit local businesses that depend on visibility, responsiveness, and trust.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Digital Marketing Services for Livermore, CA Local Businesses</h2>
-            <p>GrowSmallBiz provides the digital marketing services most local businesses actually need, but as one connected system rather than separate projects.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Website Design for Small Businesses</h3>
-            <p>A website should do more than explain what the business does. It should make the business feel trustworthy, reduce confusion, and guide visitors toward the next step. Our <Link to="/services/website-design/" className="text-primary hover:underline">website design for small businesses</Link> focuses on stronger structure, better calls to action, mobile responsiveness, and clearer lead capture.</p>
-            <p>For Livermore businesses, that often means improving first impression and making the site feel more complete, more useful, and easier to act on.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">SEO and Local SEO Services</h3>
-            <p>Our <Link to="/services/seo-agency/" className="text-primary hover:underline">SEO and local SEO services</Link> help Livermore businesses improve visibility where local buyers are already searching. That includes Google Business Profile support, location relevance, service-page strength, technical structure, and trust signals that help a business earn the click or call.</p>
-            <p>Local SEO and search engine optimization work best when they are tied directly to how the business converts. The goal is not just to rank for a phrase. The goal is to show up where buyers are deciding and make the business look like the right option once it appears.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Paid Ads Management with Google Ads, Local Services Ads, and Meta Ads</h3>
-            <p><Link to="/services/paid-advertising/" className="text-primary hover:underline">Paid ads management</Link> helps Livermore businesses create faster visibility and more controlled lead generation. Google Ads can capture high-intent demand. Local Services Ads can strengthen trust in eligible categories. Meta Ads can support remarketing, local awareness, and targeted promotions when the business model fits.</p>
-            <p>Paid traffic works best when it is connected to strong landing pages, clearer offers, and better follow-up. Without that connection, ad spend often rises faster than results.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Marketing Automation, AI Receptionist, and Better Follow-Up</h3>
-            <p><Link to="/services/marketing-automation-for-small-business/" className="text-primary hover:underline">Marketing automation</Link> helps businesses respond faster, nurture leads more consistently, and convert more opportunities without relying only on manual follow-up. That can include CRM workflows, AI Receptionist support, missed-call text-back, email and SMS follow-up, and reactivation systems.</p>
-            <p>For many Livermore businesses, this is where the hidden lift is. The problem is often not that people are not interested. The problem is what happens after interest shows up.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Built for How Livermore Buyers Actually Search</h2>
-            <p>Livermore buyers do not always search with a neat city boundary in mind. Some are looking specifically for Livermore businesses. Others are comparing providers across nearby cities. Some are searching for urgent service. Others are researching options more slowly. Repeat-visit businesses may also be marketing to people who already know the area and only need the right reason to return.</p>
-            <p>That means a strong Livermore page should not feel generic. It should help the business feel relevant to the actual way people search and compare in this region.</p>
-            <p>A business can be visible and still underperform if the content feels thin, the trust signals feel weak, or the handoff from inquiry to response feels inconsistent.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Built for Livermore's Most Important Local Categories</h2>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Home Service Contractors</h3>
-            <p>Livermore homeowners create demand for HVAC, plumbing, electrical, roofing, landscaping, pest control, and related trades. These categories often depend on urgency, trust, and response speed. The business that feels credible and reachable usually has the edge.</p>
-            <p>GrowSmallBiz helps home service businesses improve local visibility, stronger lead capture, and better speed to lead so more searches become booked work.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Health and Wellness Businesses</h3>
-            <p>Dentists, med spas, chiropractors, physical therapists, and related providers depend heavily on reviews, clarity, and a smoother inquiry experience. A polished digital presence matters because many buyers compare carefully before booking.</p>
-            <p>GrowSmallBiz helps strengthen that path from discovery to inquiry so the business feels more trustworthy before the prospect ever calls.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Real Estate and Appointment-Driven Services</h3>
-            <p>Livermore's regional overlap makes visibility important, but lead handling matters just as much. Buyers and sellers, consultation prospects, and appointment-driven leads often require stronger nurture and more consistent follow-up over time.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Restaurants, Wineries, and Repeat-Visit Local Businesses</h3>
-            <p>Livermore has categories where repeat traffic matters just as much as first-time discovery. Restaurants, wineries, tasting rooms, and other repeat-visit businesses benefit from promotions, reactivation, customer communication, and retention systems that help keep people coming back.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Why Livermore Businesses Need an AI-First Marketing Platform</h2>
-            <p>An AI-first marketing platform should not mean replacing people with gimmicks. It should mean using <a href="https://www.census.gov/newsroom/blogs/research-matters/2024/12/ai-use-small-businesses.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">AI</a> where it creates practical leverage for a smaller team that wants to respond faster and operate more consistently.</p>
-            <p>In Livermore, that matters because many businesses still rely on a patchwork setup:</p>
-            <ul><li>one tool for forms</li><li>another for calls</li><li>another for ads</li><li>another for follow-up</li><li>and too much manual effort holding the whole thing together</li></ul>
-            <p>AI helps when it is used to reduce those gaps.</p>
-
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Where AI Helps Most in Livermore</h3>
-            <p><strong>Faster first response</strong><br />A business can keep more prospects engaged when it replies quickly.</p>
-            <p><strong>After-hours continuity</strong><br />The business still feels reachable when staff are unavailable.</p>
-            <p><strong>More consistent workflows</strong><br />Follow-up steps happen more reliably across calls, forms, and messages.</p>
-            <p><strong>Operational leverage</strong><br />A smaller team can manage more demand without the same level of manual overhead.</p>
-            <p><strong>Smarter campaign support</strong><br />Optimization becomes more disciplined instead of purely reactive.</p>
-            <p>The value of AI here is not novelty. It is that it helps the business lose fewer opportunities between visibility and conversion.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">AI Search Visibility Also Matters in Livermore</h2>
-            <p>AI search visibility is becoming part of local visibility, not a separate channel. <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google</a> says the same foundational SEO best practices still apply to AI features such as AI Overviews and AI Mode. That means the businesses most likely to benefit are still the ones with stronger fundamentals:</p>
-            <ul><li>better service pages</li><li>clearer local relevance</li><li>accurate business information</li><li>stronger trust signals</li><li>helpful content</li><li>and a technically sound site</li></ul>
-            <p>For Livermore businesses, that means thin local content is weak. Stronger, more useful, more trustworthy content is what helps the business hold visibility across both local search and AI-assisted discovery.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Why Local Visibility Still Matters for Livermore Businesses</h2>
-            <p><a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google's Business Profile guidance</a> says businesses with complete and accurate information are more likely to appear in local search results, and that local results are mainly based on relevance, distance, and popularity.</p>
-            <p>In Livermore, local visibility still affects who gets the inquiry, the booking, or the visit. Buyers compare options quickly. They look at business profiles, service pages, websites, and reviews before they act. The businesses that are easiest to understand and easiest to trust usually have the advantage.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">How GrowSmallBiz Helps Turn Attention Into Revenue</h2>
-            <p>GrowSmallBiz is built around a connected model: Awareness, Lead Capture, Lead Nurture, Conversion, and Retention.</p>
-            <p>Awareness comes from search visibility, paid reach, stronger positioning, and selective social media marketing support when it helps reinforce local recognition. Lead capture improves when websites, landing pages, forms, and contact paths reduce friction. Lead nurture uses CRM workflows, SMS, email, and AI-assisted follow-up so good prospects do not go cold. Conversion improves when response is faster and the handoff from inquiry to appointment is smoother. Retention grows through review generation, reactivation campaigns, ongoing customer communication, and reputation management that keeps the business top of mind.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">What Businesses Usually Want to Improve in Livermore</h2>
-            <p>Livermore businesses often want to improve a few connected parts of the system at the same time.</p>
-            <p><strong>Better visibility across a wider local market</strong><br />Not just one neighborhood or one search phrase.</p>
-            <p><strong>A stronger first impression once buyers find the business</strong><br />Because trust and clarity shape who gets chosen.</p>
-            <p><strong>More consistent handling of calls, forms, and follow-up</strong><br />So good inquiries do not drift away.</p>
-            <p><strong>More value from repeat customers and warm leads</strong><br />Especially for repeat-visit and service businesses that should not have to start from zero every month.</p>
-            <p><strong>A system that supports growth without creating more chaos</strong><br />Because scattered tools and scattered vendors usually create more friction, not less.</p>
-
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Representative Client Feedback</h2>
-            <p className="text-muted-foreground italic">The themes below reflect what local businesses often care about most in Livermore: trust, responsiveness, and stronger local coordination.</p>
-
-            <div className="grid md:grid-cols-1 gap-6 mt-8">
-              {[
-                { title: "Livermore-Area Home Services Owner", quote: "What helped most was seeing where the breakdown really was. We were not completely invisible. We were just losing too much between first contact and actual follow-up." },
-                { title: "Tri-Valley Health & Wellness Manager", quote: "The recommendations felt practical for a local business that needs both trust and consistency. It was less about marketing jargon and more about making the customer journey work." },
-                { title: "East Bay Repeat-Visit Business Owner", quote: "They understood that getting found is only one part of the job. The bigger difference came from improving how the business followed up and stayed in front of people over time." },
-              ].map((t, i) => (
-                <div key={i} className="p-6 feature-card-teal rounded-2xl">
-                  <h4 className="text-lg font-bold text-foreground mb-3">{t.title}</h4>
-                  <p className="text-foreground/90 italic">"{t.quote}"</p>
-                </div>
-              ))}
+      {/* ===== HERO SECTION ===== */}
+      <section className="hero-section">
+        <img src={livermoreHero} alt="GrowSmallBiz digital marketing agency serving Livermore CA Labs workforce and wine country local service businesses" width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0" style={{ backgroundColor: `hsl(var(--background) / 0.82)` }} />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="service-badge mb-4 animate-fade-up">
+              <MapPin className="w-4 h-4" />
+              <span>Livermore, CA — Local Service Business Marketing | Labs Economy + Wine Country + I-580 Corridor</span>
             </div>
 
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Why Livermore Businesses Choose GrowSmallBiz</h2>
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Built for Local Service Businesses</h3>
-            <p>GrowSmallBiz is built for businesses that depend on local visibility, trust, and measurable lead flow.</p>
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Better Fit for Regional-Overlap Markets</h3>
-            <p>Livermore buyers often compare across nearby cities. Stronger local relevance matters more in that kind of environment.</p>
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Less Fragmentation, More Coordination</h3>
-            <p>The goal is not one more tactic. It is to make the whole growth system work together.</p>
-            <h3 className="text-2xl font-display font-bold text-foreground mt-12">Measured by Business Movement</h3>
-            <p>The focus is not vanity metrics. It is better inquiries, better follow-up, better conversion, and better customer value.</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
+              Stop Losing Livermore Leads to Competitors —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            </h1>
 
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Serving Livermore and the Wider Tri-Valley</h2>
-            <p>GrowSmallBiz supports businesses in Livermore as well as nearby communities including Pleasanton, Dublin, San Ramon, Danville, and surrounding East Bay service areas. That overlap matters because buyers often compare across city lines even when local trust still drives the final choice.</p>
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
+              Livermore is unlike any other city in the Tri-Valley. It carries three distinct economies simultaneously — a federal laboratories workforce anchored by Lawrence Livermore National Laboratory and Sandia National Laboratories, a thriving Livermore Valley wine country with 50+ wineries drawing regional tourism, and a growing I-580 corridor commuter community of professional households. Each economy creates different service demand, different buyer behavior, and different marketing requirements. A plumber serving Springtown homeowners and a hospitality business running a winery tasting room are operating in the same ZIP code but in completely different markets.
+            </p>
+
+            <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-4" style={{ animationDelay: "0.15s" }}>
+              GrowSmallBiz is a Tri-Valley digital marketing agency based in Danville — 20 minutes from Livermore. We build integrated marketing systems that run parallel tracks for Livermore's distinct audiences simultaneously. Contractors, dentists, restaurants and wineries, real estate professionals — if you serve Livermore clients, we are built for you.
+            </p>
+
+            <div
+              className="flex flex-col sm:flex-row gap-4 justify-center pt-8 animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <Button variant="hero" size="lg" asChild>
+                <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer">
+                  Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
+              </Button>
+              <Button variant="heroOutline" size="lg" asChild>
+                <a href="tel:+19258863724">
+                  <Phone className="w-5 h-5 mr-2" /> Call +1 (925) 886-3724
+                </a>
+              </Button>
+            </div>
+            <p className="mt-3 text-sm text-primary font-medium animate-fade-up" style={{ animationDelay: "0.25s" }}>
+              No commitment. No pressure. Just a clear path forward for your business.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
+      {/* ===== TRUST BAR ===== */}
+      <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-accent-foreground">
+            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <span>Serving Livermore & the Tri-Valley</span>
+            <span className="text-accent-foreground/40">|</span>
+            <span>30+ Years Fortune 500 Experience</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== WHAT MAKES GROWSMALLBIZ DIFFERENT ===== */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Star className="w-4 h-4" /> WHY US
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Livermore Bottom Line</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Livermore's SERP landscape is led by Jives Media — a 3,367-word page with a content score of 95 that also dominates Pleasanton's SERPs with the same template. Boomcycle covers Livermore with a 2,297-word page. Neither competitor acknowledges that Livermore is two distinct markets operating simultaneously, or that the LLNL and Sandia demographic has a fundamentally different buyer psychology than the suburban household profiles these pages were built for. Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience — including deep familiarity with the research-oriented, credentialing-sensitive decision patterns of scientific and technical professional audiences.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              { label: "Tri-Valley proximity:", body: "Based in Danville, 20 minutes from Livermore on I-580. We know the Labs corridor, the wine country seasonal demand cycle, and the commuter household demographic that makes Livermore's service market structurally unlike any other Tri-Valley city." },
+              { label: "Dual-track strategy:", body: "Jives Media and Boomcycle treat Livermore as one market. We build simultaneous residential and commercial tracks — different keywords, different landing pages, different ad schedules, different retention systems — running from one integrated CRM. Both audience profiles captured without two separate agencies." },
+              { label: "Labs market intelligence:", body: "LLNL and Sandia employees are research-oriented buyers who read reviews in depth, verify licensing, and value the Google Guaranteed badge because it answers their trust question before they call. Most agencies don't know this. We build campaigns specifically around this behavior." },
+              { label: "AI-powered execution:", body: "AI Receptionist captures Labs homeowner inquiries after government work hours. AI QuadBots handle wine country emergency calls during summer harvest heat events. SMART nurture sequences manage both tracks. No lead lost regardless of when it arrives." },
+              { label: "Conversion-first reporting:", body: "We do not report on traffic or impressions unless those metrics connect directly to leads and revenue. Every metric we track has a line drawn to your bottom line." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable. We earn your business every single month." },
+            ].map((item, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
+                <p className="text-foreground/90 leading-relaxed">
+                  <span className="font-bold text-foreground">{item.label}</span> {item.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== THREE ECONOMIES — MARKET SECTION ===== */}
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <TrendingUp className="w-4 h-4" /> LOCAL MARKET
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Your Competitors Are Winning in Livermore Search Results.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Most agencies that rank for Livermore keywords built pages that treat it as another I-580 corridor suburb — comparable to Dublin or Pleasanton with a slightly different demographic mix. That framing fundamentally misreads the market. Livermore is not one market. It is three distinct economies operating simultaneously within the same ZIP codes, and understanding that structure is what separates effective local marketing from expensive, underperforming campaigns.</p>
+          </div>
+
+          <div className="space-y-5 max-w-4xl mx-auto">
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <h3 className="text-lg font-display font-semibold text-primary mb-3">The Labs Economy — LLNL and Sandia Workforce</h3>
+              <p className="text-foreground/90 leading-relaxed">Lawrence Livermore National Laboratory and Sandia National Laboratories collectively employ thousands of scientists, engineers, and support staff who live across Livermore's residential neighborhoods — Springtown, South Livermore, and the Tri-Valley-facing communities along Isabel Avenue. This is a high-income, highly educated, government-benefit-covered professional demographic with specific buyer behavior. They research before they buy. They read multiple reviews, verify licensing and insurance, and respond strongly to the Google Guaranteed badge because credentialing signals matter in their professional culture. They work government hours, meaning service searches spike evenings and weekends. They can afford premium — high-efficiency HVAC systems, premium dental care, top-tier real estate agents — and they expect quality to match.</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <h3 className="text-lg font-display font-semibold text-primary mb-3">The Wine Country Economy — Livermore Valley's 50+ Wineries</h3>
+              <p className="text-foreground/90 leading-relaxed">Livermore Valley is one of the Bay Area's most active wine tourism corridors, with over 50 wineries spanning South Livermore and the Arroyo Road wine trail. This economy creates a distinct B2B commercial service demand that is fundamentally different from any residential service market. Wineries need barrel room climate control — precise temperature and humidity management where a system failure during Livermore's July heat events (regularly exceeding 100°F inland) can damage an entire vintage. A barrel room HVAC failure is not an inconvenience — it is a six-figure catastrophe requiring immediate response. Tasting rooms and event venues need reliable climate control for visitor comfort during peak summer harvest season. Restaurants along First Street and the wine trail need review management calibrated for TripAdvisor and wine tourism platforms. These are B2B relationships, not homeowner transactions — built on demonstrated reliability, commercial expertise, and emergency availability.</p>
+            </div>
+
+            <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
+              <h3 className="text-lg font-display font-semibold text-primary mb-3">The I-580 Commuter Economy — Professional Households</h3>
+              <p className="text-foreground/90 leading-relaxed">Beyond the Labs and wine country, Livermore's growing commuter population — professionals using Livermore as an affordable Tri-Valley base and commuting to Pleasanton, Dublin, and the South Bay — creates standard suburban service demand for home services, dental care, restaurants, and real estate. This is the audience most agencies target when they build a Livermore page. It is real, but it is only one third of the opportunity.</p>
+            </div>
+          </div>
+
+          {/* Pull Quote */}
+          <div className="mt-10 bg-primary/5 border-l-4 border-primary rounded-r-xl px-6 py-5 max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl font-semibold italic text-foreground/90">"Livermore carries three distinct economies simultaneously — Labs workforce, Wine Country, and I-580 commuter households. Most agencies treat it as one market and build campaigns that capture one third of the available opportunity. GrowSmallBiz builds all three tracks."</p>
+          </div>
+
+          {/* Dual-Track HVAC Problem */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
+              The Dual-Track HVAC Problem —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">and How GrowSmallBiz Solves It</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-8">Consider a Livermore HVAC contractor. In Springtown, they serve LLNL employees who research providers carefully, value the Google Guaranteed badge, call in the evening when they get home from work, and can afford a $15,000 heat pump installation. In South Livermore's wine country corridor, they may be servicing barrel rooms for Wente Vineyards or McGrail Vineyards — commercial refrigeration work where failure during harvest season costs the client tens of thousands of dollars and where a 24/7 emergency response capability is the primary criterion for vendor selection.</p>
+            <p className="text-foreground/80 leading-relaxed mb-8">These are two completely different businesses requiring two different marketing approaches — different keywords, different ad schedules, different landing pages, different trust signals, different retention systems. Most HVAC contractors run one generic campaign and capture only a fraction of the available market. GrowSmallBiz builds both tracks simultaneously from one integrated CRM.</p>
+
+            {/* Dual Track Table */}
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr>
+                    <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60"></th>
+                    <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Labs-Residential Track — 94550/94551 Homeowners</th>
+                    <th className="p-3 text-left font-bold text-primary bg-card/80 border border-border/60">Wine Country-Commercial Track — Wineries & Venues</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { row: "Primary Buyer", labs: "LLNL/Sandia employees and Springtown/South Livermore homeowners — research-oriented, high-income, benefits-covered", wine: "Winery operators, tasting room managers, event venue owners — B2B relationship, not homeowner transaction" },
+                    { row: "Search Behavior", labs: "Evening and weekend — government worker hours; desktop research before mobile call", wine: "Business hours + emergency after-hours during summer harvest season heat events" },
+                    { row: "Purchase Driver", labs: "Quality, Google Guaranteed badge, licensing credentials, review depth — trust before price", wine: "Proven commercial experience, 24/7 emergency availability, harvest-season reliability — relationship before ranking" },
+                    { row: "HVAC Service Type", labs: "Residential installs, smart thermostats, energy-efficient replacements, tune-ups", wine: "Barrel room climate control, tasting room HVAC, event venue cooling, commercial refrigeration" },
+                    { row: "GrowSmallBiz Channel Mix", labs: "Google LSA (Guaranteed badge) + Local SEO + evening ad scheduling + reputation management", wine: "Google Ads (commercial terms) + targeted B2B social + pre-harvest maintenance campaign + AI emergency capture" },
+                    { row: "AI Receptionist Value", labs: "After-hours inquiry capture from homeowners while crew is off — returns leads by 8am Monday", wine: "Emergency call capture during heat events — barrel room failure at 10pm Sunday cannot wait until Monday" },
+                    { row: "Retention System", labs: "Annual tune-up reminders, SMART seasonal maintenance sequences, VIP Club", wine: "Pre-harvest commercial maintenance contracts, annual winery service agreements via automated nurture" },
+                  ].map((item, i) => (
+                    <tr key={i}>
+                      <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{item.row}</td>
+                      <td className="p-3 border border-border/60 text-foreground/80">{item.labs}</td>
+                      <td className="p-3 border border-border/60 text-primary/90 italic">{item.wine}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== LOCAL SEARCH GAP ===== */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Search className="w-4 h-4" /> SEARCH GAP
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Get Found First When Livermore Customers Search for Your Services —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO & Google Maps Domination</span>
+            </h2>
+          </div>
+          <div className="prose prose-lg prose-invert max-w-none space-y-6">
+            <p className="text-foreground/90 leading-relaxed">According to <a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-conversion-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Think with Google</a>, 76% of consumers who perform a local search visit or contact a business within 24 hours. In Livermore, where LLNL employees search on evenings and weekends and wine country business owners search during business hours, map pack visibility needs to perform across different peak windows. Yet <a href="https://www.brightlocal.com/resources/local-seo-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal research shows 56% of businesses have not fully optimized their Google Business Profile</a> — meaning a significant share of Livermore's service businesses are invisible at the highest-intent moment regardless of which audience track is searching.</p>
+
+            <p className="text-foreground/90 leading-relaxed">Local SEO in Livermore requires two distinct keyword clusters running simultaneously. The residential track targets homeowner-intent searches: 'HVAC repair Livermore,' 'dentist 94550,' 'plumber Springtown CA.' The wine country commercial track targets B2B searches: 'commercial HVAC livermore,' 'winery climate control,' 'restaurant marketing Livermore Valley.' Jives Media's 3,367-word Livermore page — the current SERP leader — contains neither winery nor wine country keyword targeting. That gap is the opportunity.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== INTEGRATED MARKETING SYSTEM — SERVICES ===== */}
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Target className="w-4 h-4" /> SERVICES
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              The Integrated Marketing System Built for Livermore Service Businesses —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Every component is engineered to work with every other component — and for Livermore, that means running dual-track campaigns across both audience profiles simultaneously from one coordinated system. That integration is what makes the difference between marketing that costs money and marketing that makes money across Livermore's uniquely complex market.</p>
+          </div>
+
+          {/* Services Overview Table — Desktop */}
+          <div className="hidden md:block overflow-x-auto mb-16">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Service</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">What We Do for You</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Livermore Business Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { service: "Local SEO & Google Business Profile", whatWeDo: "GBP optimization, dual-ZIP citation building (94550/94551), review velocity management, wine country directory citations, local link building", impact: "Rank in Google Maps 3-pack for Labs-adjacent residential AND wine country commercial searches — two distinct keyword clusters, one coordinated strategy" },
+                  { service: "Managed Google Ads / PPC", whatWeDo: "Residential and commercial campaign tracks, labs-worker ad scheduling, wine country seasonal campaigns, conversion tracking", impact: "Immediate top-of-page visibility for both homeowner and B2B winery searches — separate ad groups, separate landing pages, unified reporting" },
+                  { service: "Google Local Service Ads (LSA)", whatWeDo: "Background check coordination, license verification, budget management, Google Guaranteed badge setup", impact: "For LLNL/Sandia homeowners who research before calling, the Google Guaranteed badge answers the trust question before they read a single review" },
+                  { service: "Social Media & Meta Ads", whatWeDo: "Geo-targeted campaigns for ZIP codes 94550 and 94551; winery Instagram and Facebook community integration; retargeting sequences", impact: "Reach Labs-corridor households on evenings and weekends; reach wine country audience through harvest-season campaigns and event promotion content" },
+                  { service: "Conversion-Focused Website Design", whatWeDo: "Mobile-first design, dual-audience landing pages (residential + commercial), click-to-call, online booking, trust architecture", impact: "Separate conversion paths for homeowners searching 'HVAC repair Livermore' and winery operators searching 'commercial refrigeration Livermore' — one site, two distinct conversion journeys" },
+                  { service: "Reputation Management", whatWeDo: "Review velocity campaigns, Google/Yelp/TripAdvisor monitoring for wine tourism businesses, professional response guidance", impact: "In Livermore's research-oriented Labs demographic, review depth matters as much as star rating — analytical buyers read multiple reviews before calling" },
+                  { service: "AI Receptionist & Lead Automation", whatWeDo: "24/7 missed-call SMS follow-up, AI QuadBots, SMART nurture sequences, VIP Club, Reactivation campaigns, harvest-season emergency protocols, CRM integration", impact: "Captures Labs-adjacent homeowner inquiries after government work hours AND wine country emergency HVAC calls during summer harvest heat events — no lead lost regardless of when it arrives" },
+                ].map((row, i) => (
+                  <tr key={i}>
+                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.service}</td>
+                    <td className="p-3 border border-border/60 text-foreground/80">{row.whatWeDo}</td>
+                    <td className="p-3 border border-border/60 text-primary/90 italic">{row.impact}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Services Overview — Mobile Cards */}
+          <div className="md:hidden space-y-3 mb-16">
+            {[
+              { service: "Local SEO & Google Business Profile", whatWeDo: "GBP optimization, dual-ZIP citation building (94550/94551), review velocity management, wine country directory citations, local link building", impact: "Rank in Google Maps 3-pack for Labs-adjacent residential AND wine country commercial searches — two distinct keyword clusters, one coordinated strategy" },
+              { service: "Managed Google Ads / PPC", whatWeDo: "Residential and commercial campaign tracks, labs-worker ad scheduling, wine country seasonal campaigns, conversion tracking", impact: "Immediate top-of-page visibility for both homeowner and B2B winery searches — separate ad groups, separate landing pages, unified reporting" },
+              { service: "Google Local Service Ads (LSA)", whatWeDo: "Background check coordination, license verification, budget management, Google Guaranteed badge setup", impact: "For LLNL/Sandia homeowners who research before calling, the Google Guaranteed badge answers the trust question before they read a single review" },
+              { service: "Social Media & Meta Ads", whatWeDo: "Geo-targeted campaigns for ZIP codes 94550 and 94551; winery Instagram and Facebook community integration; retargeting sequences", impact: "Reach Labs-corridor households on evenings and weekends; reach wine country audience through harvest-season campaigns and event promotion content" },
+              { service: "Conversion-Focused Website Design", whatWeDo: "Mobile-first design, dual-audience landing pages (residential + commercial), click-to-call, online booking, trust architecture", impact: "Separate conversion paths for homeowners searching 'HVAC repair Livermore' and winery operators searching 'commercial refrigeration Livermore' — one site, two distinct conversion journeys" },
+              { service: "Reputation Management", whatWeDo: "Review velocity campaigns, Google/Yelp/TripAdvisor monitoring for wine tourism businesses, professional response guidance", impact: "In Livermore's research-oriented Labs demographic, review depth matters as much as star rating — analytical buyers read multiple reviews before calling" },
+              { service: "AI Receptionist & Lead Automation", whatWeDo: "24/7 missed-call SMS follow-up, AI QuadBots, SMART nurture sequences, VIP Club, Reactivation campaigns, harvest-season emergency protocols, CRM integration", impact: "Captures Labs-adjacent homeowner inquiries after government work hours AND wine country emergency HVAC calls during summer harvest heat events — no lead lost regardless of when it arrives" },
+            ].map((row, i) => (
+              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-4 border-l-4 border-l-primary">
+                <p className="font-bold text-foreground mb-1">{row.service}</p>
+                <p className="text-sm text-foreground/80 mb-2">{row.whatWeDo}</p>
+                <p className="text-sm text-primary italic">{row.impact}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* ===== 7 INDIVIDUAL SERVICE BLOCKS ===== */}
+
+          {/* 1. Local SEO */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Get Found First When Livermore Customers Search for Your Services —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Local SEO & Google Maps Domination</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">Local SEO in Livermore requires two distinct keyword clusters running simultaneously. The residential track targets homeowner-intent searches: 'HVAC repair Livermore,' 'dentist 94550,' 'plumber Springtown CA.' The wine country commercial track targets B2B searches: 'commercial HVAC livermore,' 'winery climate control,' 'restaurant marketing Livermore Valley.' Jives Media's 3,367-word Livermore page — the current SERP leader — contains neither winery nor wine country keyword targeting. That gap is the opportunity.</p>
+            <p className="text-foreground/80 mb-4">Our local SEO approach for Livermore businesses includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Google Business Profile optimization calibrated for Livermore's dual-ZIP market — service area covering 94550 and 94551, with category selections that address both residential and commercial service verticals",
+                "Residential keyword targeting: 'HVAC repair Springtown,' 'dentist Livermore 94550,' 'plumber South Livermore,' 'real estate agent 94551' — Labs-adjacent homeowner searches that drive evening and weekend call volume",
+                "Wine country commercial keyword targeting: 'barrel room climate control Livermore,' 'commercial refrigeration Livermore Valley,' 'winery HVAC Arroyo Road,' 'restaurant marketing Livermore wine country' — B2B searches that current SERP leaders completely miss",
+                "Wine country directory and tourism platform citations — Livermore Valley Winegrowers Association, wine tourism directories, TripAdvisor optimization for restaurant and tasting room businesses alongside standard Alameda County business citations",
+                "Review velocity management calibrated for Livermore's research-oriented Labs demographic — consistent new review acquisition that builds the review depth analytical buyers require before calling",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Optimize Your Local SEO for Livermore — Schedule Your Free Strategy Call
+            </a>
+          </div>
+
+          {/* 2. Google Ads / PPC */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Need Leads This Week, Not This Quarter?{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Google Ads That Deliver Livermore Customers on Day One.</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">Google Ads in Livermore require audience-aware campaign architecture. A residential campaign running 9am to 5pm misses the Labs-worker demographic who searches evenings and weekends. A commercial campaign targeting only homeowner keywords misses every wine country and B2B inquiry. The dual-track approach — separate ad groups with separate scheduling, separate landing pages, and separate conversion tracking — is what turns Livermore's budget into Livermore's leads.</p>
+            <p className="text-foreground/80 mb-4">Our Google Ads approach for Livermore includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Labs-residential track: call-only campaigns for emergency home services, evening and weekend scheduling emphasis, Labs-adjacent neighborhood geo-targeting, premium system keyword focus for high-income homeowner searches",
+                "Wine country commercial track: B2B keyword targeting for barrel room climate control, commercial refrigeration, tasting room HVAC, and winery event venue services — business hours scheduling with 24/7 emergency overlay during summer harvest season",
+                "Location-targeted campaigns covering ZIP codes 94550 and 94551 with separate bid adjustments for residential and commercial areas",
+                "Seasonal campaign alignment: harvest season commercial HVAC campaigns (July–October), spring wine tourism promotion for hospitality businesses, year-round residential emergency services",
+                "Complete conversion tracking: every dollar of ad spend accountable to phone calls, form submissions, and booked appointments across both audience tracks — unified reporting from one CRM",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Launch Google Ads for Your Livermore Business — Start Generating Leads This Week
+            </a>
+          </div>
+
+          {/* 3. Google LSA */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Show Up Above Every Competitor With a Google Trust Badge —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">More Livermore Leads, Pre-Qualified Before They Call</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">For LLNL and Sandia employees searching for a licensed home service contractor, the Google Guaranteed badge answers their trust question before they read a single review. This demographic specifically responds to verifiable credentialing signals — it is embedded in their professional culture. For a Livermore HVAC contractor or plumber targeting the Labs-adjacent residential market, LSA placement above all standard search results combined with the Guaranteed badge is the single highest-ROI paid channel available.</p>
+            <p className="text-foreground/80 mb-4">Our LSA management for Livermore includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Full LSA setup and verification — background checks, license documentation, insurance confirmation managed on your behalf for all applicable Livermore home service categories",
+                "Budget optimization focused on maximizing verified lead volume within ZIP codes 94550 and 94551",
+                "Labs-corridor residential emphasis for maximum ROI on the research-oriented buyer demographic",
+                "Dispute management for invalid leads — protecting your investment in Livermore's competitive HVAC, plumbing, and electrical market",
+                "Compliance maintenance to preserve Google Guaranteed status as verification requirements evolve",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Set Up Google LSA for Your Livermore Business — Get Verified Leads
+            </a>
+          </div>
+
+          {/* 4. Social Media & Meta Ads */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Reach Livermore Homeowners and Wine Country Audiences Before They Need You —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Social Media That Builds Both Tracks</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">Livermore's two primary audiences use social media very differently. Labs-corridor homeowners respond to neighborhood-specific Facebook campaigns on evenings and weekends — before-and-after home service transformations, seasonal maintenance reminders, and local professional community content. Wine country businesses respond to Instagram-driven harvest season promotion, event venue showcasing, and wine tourism audience engagement. Both tracks can run simultaneously from one coordinated social media system.</p>
+            <p className="text-foreground/80 mb-4">Our social media approach for Livermore includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Geo-targeted residential campaigns covering ZIP codes 94550 and 94551 with demographic filters calibrated to the Labs-adjacent professional household profile — evening and weekend delivery emphasis aligned with government worker schedules",
+                "Wine country Instagram and Facebook campaigns: harvest season promotion, winery event announcements, tasting room content, wine tourism audience targeting — reaching visitors searching Livermore Valley wine country before they arrive",
+                "Restaurant and hospitality promotion campaigns for First Street Downtown Livermore and Arroyo Road wine trail establishments — event-driven campaigns timed to wine country seasonal demand peaks",
+                "Retargeting sequences re-engaging website visitors who did not convert — particularly valuable for wine country businesses with longer decision cycles and for Labs-adjacent homeowners doing multi-provider research",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Launch Social Media Advertising for Your Livermore Business — Get Started
+            </a>
+          </div>
+
+          {/* 5. Reputation Management */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              A 3-Star Rating Is Silently Killing Your Livermore Business.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Here's How We Fix It in 90 Days.</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">The LLNL and Sandia demographic is Livermore's most valuable residential audience — and its most demanding. These are analytical professionals who read multiple reviews before calling, not just the star average. A business with 50 reviews averaging 4.8 stars consistently outperforms one with 200 reviews averaging 4.6 when the 50-review business has more recent, more detailed reviews. Review depth and recency both matter in this market — and most reputation management systems optimize for volume, not quality.</p>
+            <p className="text-foreground/80 mb-4">GrowSmallBiz's reputation management system for Livermore includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Automated review request campaigns timed to the moment of highest satisfaction — immediately after a completed HVAC service call, dental appointment, or dining experience — calibrated for Livermore's busy Labs professional demographic who respond best to frictionless, timely requests",
+                "Multi-platform monitoring: Google, Yelp, TripAdvisor, Houzz, Healthgrades, and wine tourism platforms — ensuring no review goes unnoticed across every platform Livermore's dual audiences use",
+                "HIPAA-compliant reputation management for dental practices and wellness professionals serving the Labs community, where patient privacy standards align with the professional community's data sensitivity expectations",
+                "Wine country reputation strategy for wineries, tasting rooms, and event venues — TripAdvisor optimization, harvest season review campaigns, and professional response guidance for tourism-facing hospitality businesses",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-foreground/80 italic mb-6"><a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">BrightLocal's 2024 survey found that 88% of consumers would use a business that responds to all of its reviews</a>, compared to 47% for businesses that do not respond at all. For wine country businesses, TripAdvisor and wine tourism platforms carry equal or greater weight than Google in driving hospitality bookings.</p>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Build a 4.5+ Star Reputation in Livermore — Start Your Review Campaign
+            </a>
+          </div>
+
+          {/* 6. Website Design */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Your Website Should Be Your Best Salesperson.{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">If It's Not Converting Both Livermore Audiences, It's Leaving Money Behind.</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">A Livermore service business website needs to serve two fundamentally different buyer profiles from the same domain. A Labs-corridor homeowner landing on your HVAC page at 7pm is looking for licensing credentials, Google Guaranteed verification, and review depth before calling. A winery operator landing on the same page during business hours wants to know if you have commercial refrigeration experience and whether you can respond to an emergency during harvest season. A generic website serves neither audience well. Separate landing pages built for each track convert both.</p>
+            <p className="text-foreground/80 mb-4">Our website design approach for Livermore includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Mobile-first, fast-loading design — Labs employees search on mobile during evenings; wine country visitors search on mobile during tasting room tours and weekend visits",
+                "Dual conversion paths: residential landing pages optimized for homeowner intent searches and commercial landing pages optimized for B2B winery and hospitality service searches — distinct CTAs, distinct trust signals, distinct content for each audience",
+                "Wine country trust architecture: commercial service credentials, winery client references, barrel room and commercial refrigeration portfolio, harvest season availability statements that directly address the wine country buyer's primary concerns",
+                "Labs-adjacent residential trust architecture: licensing credentials, Google Guaranteed badge display, review widgets with review depth visible, service area maps covering Springtown, South Livermore, and surrounding neighborhoods",
+                "Online booking integrations for appointment-driven businesses — dental practices, wellness providers, and restaurant reservations for Livermore's professional demographic who expect scheduling convenience",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
+              → Get a Conversion-Focused Website Built for Livermore — See Our Work
+            </a>
+          </div>
+
+          {/* 7. AI Receptionist & Lead Automation */}
+          <div className="mt-16 pt-10 border-t border-border/30">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+              Every Missed Call Is a Lost Livermore Job —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Our AI Receptionist Captures Both Tracks — Labs Homeowners After Hours and Wine Country Emergencies at Harvest.</span>
+            </h3>
+            <p className="text-foreground/90 leading-relaxed mb-6">Research from <a href="https://www.insidesales.com/response-time-matters/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">MIT and InsideSales.com confirms that leads contacted within 5 minutes are 21 times more likely to convert</a> than those reached after 30 minutes. In Livermore, this stat applies differently across the two audience tracks. For Labs-adjacent homeowners, after-hours response capability captures inquiries that arrive during government work hours when your team is unavailable. For wine country commercial clients, emergency response during summer heat events — when a barrel room HVAC failure at 10pm on a Sunday during harvest threatens an entire vintage — is the capability that wins long-term commercial relationships.</p>
+            <p className="text-foreground/80 mb-4">GrowSmallBiz's AI-powered automation for Livermore includes:</p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "AI Receptionist: answers missed calls 24/7 across both audience tracks — captures LLNL employee home service inquiries at 8pm and wine country emergency calls at midnight during July heat events with equal capability",
+                "AI QuadBots: conversational AI managing web chat, voice interactions, and lead qualification simultaneously — residential inquiries route to the residential CRM pipeline; commercial inquiries route to the commercial pipeline; both handled intelligently with no manual intervention",
+                "SMART nurture sequences: automated CRM workflows built for both tracks — appointment reminders and seasonal tune-up campaigns for residential clients; pre-harvest commercial maintenance outreach and annual contract renewal sequences for wine country commercial clients",
+                "VIP Club and reactivation campaigns: for restaurants, dental practices, and repeat-visit wine country businesses, structured loyalty systems that increase visit frequency and bring dormant clients back — built as infrastructure, not a one-time campaign",
+                "CRM integration and lead tracking: every inquiry from every channel, across both audience tracks, captured and tracked from first contact to closed job in a single unified dashboard",
+              ].map((bullet, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="text-primary mt-1 flex-shrink-0">●</span>
+                  <span className="text-foreground/80">{bullet}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-foreground/80 italic">Retention is the fastest path to revenue growth for established Livermore service businesses. In the wine country commercial track, a single retained winery service contract is worth years of recurring revenue. In the Labs residential track, a loyal LLNL employee household refers neighbors within a community that shares service provider recommendations through tight professional networks. Both tracks compound over time — and our retention infrastructure is built to accelerate that compounding.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== WHO WE SERVE — 4 VERTICALS ===== */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Users className="w-4 h-4" /> WHO WE SERVE
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Livermore</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz works exclusively with local service businesses in Livermore and the Tri-Valley. We do not work with eCommerce stores, national retailers, or product-based businesses. Our systems are purpose-built for the verticals below — with genuine understanding of Livermore's dual-identity market structure that generic agency pages never develop.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="feature-card-teal rounded-2xl p-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Home className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Home Service Contractors — HVAC, Roofing, Plumbing & Electrical: Capture Both Livermore Tracks Year-Round</h3>
+              <p className="text-muted-foreground leading-relaxed">A Livermore home service contractor operates in two markets simultaneously. The residential track — Springtown, South Livermore, Isabel Avenue neighborhoods — serves Labs-adjacent homeowners who research providers carefully, value licensing credentials and the Google Guaranteed badge, and can afford premium system installations and upgrades. The commercial track — Livermore Valley wineries, tasting rooms, event venues, and First Street commercial properties — serves B2B clients where barrel room climate control, commercial refrigeration, and harvest-season emergency availability are the primary service requirements. We build both tracks simultaneously from one integrated marketing system, so your Monday morning pipeline includes both a winery pre-harvest maintenance inquiry and three residential quote requests from Springtown homeowners — all captured while you were off the clock.</p>
+            </div>
+
+            <div className="feature-card-teal rounded-2xl p-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Dentists, Med Spas & Wellness Professionals: Attract Livermore's Analytical, High-Value Patients Who Stay</h3>
+              <p className="text-muted-foreground leading-relaxed">The Labs demographic is Livermore's most valuable patient population for dental care, wellness services, and specialty health practices. These are high-income, highly educated professionals with comprehensive benefits coverage — meaning they can access premium care and do. They also research their healthcare providers more thoroughly than almost any other demographic: reviewing credentials, reading patient reviews in depth, and evaluating online presence quality before making first contact. The competitive challenge for independent Livermore practices is the presence of larger East Bay and Pleasanton-area practices with stronger digital footprints. We build the complete digital presence — optimized Google Business Profile, review depth campaigns, HIPAA-compliant reputation management, and AI booking follow-up — that positions independent Livermore practices to compete on professional credibility and personalized care.</p>
+            </div>
+
+            <div className="feature-card-teal rounded-2xl p-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <UtensilsCrossed className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Restaurants & Hospitality: Own Livermore's Wine Country Dining Scene and Fill More Tables Year-Round</h3>
+              <p className="text-muted-foreground leading-relaxed">Livermore's restaurant and hospitality market operates on two calendars simultaneously. The First Street Downtown corridor serves the year-round local professional and family dining market — Labs employees, commuter households, local families. The wine country corridor serves a tourism-driven seasonal market: summer harvest visitors, weekend wine trail travelers, corporate event groups, and the growing wine tourism audience discovering Livermore Valley as a Bay Area wine destination. Success in this market requires a Google Maps presence optimized for both local dining searches and wine country tourism searches — plus the retention infrastructure (VIP Club, reactivation campaigns, review velocity systems) that fills tables on Tuesday evenings, not just during harvest festival weekends.</p>
+            </div>
+
+            <div className="feature-card-teal rounded-2xl p-6">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Building2 className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-display font-bold text-foreground mb-3">Real Estate Agents & Brokers: Own the Tri-Valley Market, Multiply Your Listing Inquiries, Build a Referral Engine</h3>
+              <p className="text-muted-foreground leading-relaxed">Livermore's real estate market offers an increasingly attractive value proposition compared to Pleasanton and San Ramon — comparable Tri-Valley quality of life at a more accessible price point, with strong appreciation driven by LLNL-area employment stability and growing wine country desirability. Agents competing here face both dominant online platforms and well-resourced regional brokerages. We build the local SEO, targeted paid campaigns for both the Labs-adjacent residential buyer profile and the wine country lifestyle buyer profile, and the personal branding systems that establish lasting Livermore market authority — generating qualified listing inquiries from the full spectrum of buyer profiles the city attracts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== RESULTS / CASE STUDIES ===== */}
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <BarChart3 className="w-4 h-4" /> RESULTS
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Real Results for Livermore Service Businesses:{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">The following results represent what GrowSmallBiz clients have achieved in Livermore and the Tri-Valley market. Metrics and client details must be replaced with verified Livermore data before publishing.</p>
+          </div>
+
+          {/* Case Study Cards */}
+          <div className="space-y-6 mb-14">
+            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Livermore HVAC Contractor — Dual-Track Campaign</p>
+              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+47% Qualified Leads Within 90 Days</p>
+              <p className="text-foreground/80 leading-relaxed">After launching a dual-track campaign targeting both Labs-adjacent residential homeowners and wine country commercial clients, this HVAC contractor saw a 47% increase in qualified leads within 90 days. The residential track captured evening and weekend inquiries from LLNL employees, while the commercial track generated pre-harvest maintenance inquiries from Livermore Valley wineries — both managed from one integrated CRM.</p>
+            </div>
+
+            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Livermore Restaurant — First Street Downtown</p>
+              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+35% Restaurant Reservations Within 3 Months</p>
+              <p className="text-foreground/80 leading-relaxed">A coordinated local SEO, Google Business Profile optimization, and Meta Ads strategy targeting both local dining searches and wine country tourism audiences grew online reservations by 35% within three months. Review velocity campaigns simultaneously improved the restaurant's Google rating and TripAdvisor presence, strengthening both local and tourism-facing discovery channels.</p>
+            </div>
+
+            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Livermore Professional Services — Labs-Adjacent Market</p>
+              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+60% Qualified Leads Within 6 Months</p>
+              <p className="text-foreground/80 leading-relaxed">By building a marketing system specifically calibrated for Livermore's research-oriented Labs demographic — review depth campaigns, credentialing-forward trust architecture, and AI-powered after-hours lead capture — this professional services business grew qualified leads by 60% within six months while reducing cost per acquisition through better targeting and higher conversion rates.</p>
+            </div>
+          </div>
+
+          {/* Before/After Table */}
+          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6">What Happens to Livermore Service Businesses After 90 Days with GrowSmallBiz</h3>
+          <div className="overflow-x-auto mb-14">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Performance Metric</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Before GrowSmallBiz</th>
+                  <th className="p-3 text-left font-bold text-primary bg-card/80 border border-border/60">After 90 Days</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
+                  { metric: "Qualified Leads (HVAC)", before: "Baseline", after: "+47% within 90 days" },
+                  { metric: "Restaurant Reservations", before: "Baseline", after: "+35% within 3 months" },
+                  { metric: "Qualified Leads (Biotech/Professional)", before: "Baseline", after: "+60% within 6 months" },
+                  { metric: "Avg. Google Review Rating", before: "Below 4.0 stars", after: "4.5+ stars" },
+                ].map((row, i) => (
+                  <tr key={i}>
+                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.metric}</td>
+                    <td className="p-3 border border-border/60 text-foreground/70">{row.before}</td>
+                    <td className="p-3 border border-border/60 text-primary font-bold">{row.after}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Channel Compare */}
+          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">Single-Channel Marketing Doesn't Win in Livermore. Here's What Actually Moves Both Tracks.</h3>
+          <p className="text-foreground/80 leading-relaxed mb-6">Jives Media's Livermore page dominates with a 95 content score and 3,367 words — but it targets one audience profile. Outperforming it requires not just more content but an integrated dual-track system that captures Livermore's full market opportunity simultaneously.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr>
+                  <th className="p-3 text-left font-bold text-foreground bg-primary/20 border border-border/60">Channel</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-primary/20 border border-border/60">Best For</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-primary/20 border border-border/60">Time to Results</th>
+                  <th className="p-3 text-left font-bold text-foreground bg-primary/20 border border-border/60">Long-Term Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { channel: "Local SEO", best: "Map pack rankings + wine country directory visibility", time: "3–6 months full impact", value: "High — Labs-demographic buyers research before calling; strong rankings build compounding trust" },
+                  { channel: "Google Ads / PPC", best: "Dual-track: residential evenings + commercial business hours", time: "Day 1", value: "Medium — requires ongoing investment; essential for both audience tracks" },
+                  { channel: "Google LSA", best: "LLNL/Sandia homeowners — trust badge answers pre-call research question", time: "2–4 weeks", value: "High — highest ROI for residential home service trades in a research-oriented demographic" },
+                  { channel: "Meta / Social Ads", best: "Labs-corridor homeowners + wine country event promotion", time: "1–2 weeks", value: "Medium — strong for seasonal wine country campaigns and Labs-adjacent brand building" },
+                  { channel: "Reputation Mgmt", best: "Review depth for analytical Labs buyers + TripAdvisor for wine tourism", time: "30–90 days", value: "High — LLNL/Sandia demographic reads multiple reviews before converting" },
+                  { channel: "AI & Automation", best: "After-hours Labs homeowner capture + emergency harvest-season response", time: "Immediate", value: "High — multiplies both tracks simultaneously without adding headcount" },
+                ].map((row, i) => (
+                  <tr key={i} className={i % 2 === 0 ? "" : "bg-card/30"}>
+                    <td className="p-3 border border-border/60 font-semibold text-foreground">{row.channel}</td>
+                    <td className="p-3 border border-border/60 text-foreground/80">{row.best}</td>
+                    <td className="p-3 border border-border/60 text-foreground/80">{row.time}</td>
+                    <td className="p-3 border border-border/60 text-primary italic">{row.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== DIFFERENTIATORS — 4 CARDS ===== */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <Shield className="w-4 h-4" /> WHY WE WIN
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Livermore Business Before.</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Livermore's SERPs are led by Jives Media and Boomcycle — agencies that treat Livermore as one market and miss two thirds of the available opportunity. Here is why the system GrowSmallBiz builds consistently outperforms them across both of Livermore's distinct audience tracks:</p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
+            {[
+              { title: "Tri-Valley Proximity", description: "GrowSmallBiz is based in Danville — 20 minutes from Livermore on I-580. We know the Tri-Valley, the difference between Labs-corridor residential demand and wine country commercial demand, and what Livermore business owners face daily. Not a national agency or a generic Bay Area shop." },
+              { title: "Dual-Track Strategy", description: "Jives Media and Boomcycle treat Livermore as one market. We build simultaneous residential and commercial tracks — different keywords, different landing pages, different ad schedules, different retention systems — running from one integrated CRM so you capture both audience profiles without managing two separate agencies." },
+              { title: "Labs Market Intelligence", description: "The LLNL and Sandia demographic is unlike any other Tri-Valley buyer profile. These are analytical, research-oriented professionals who read reviews in depth, verify licensing, and value the Google Guaranteed badge specifically because it pre-answers their trust question. Most agencies don't know this. We build campaigns around it." },
+              { title: "AI-Powered Execution", description: "AI Receptionist captures Labs-adjacent homeowner inquiries after government work hours. AI QuadBots handle wine country emergency inquiries during summer heat events. SMART nurture sequences manage both tracks simultaneously. VIP Club and harvest-season retention campaigns keep commercial wine country clients engaged year-round." },
+            ].map((item, i) => (
+              <div key={i} className="rounded-xl overflow-hidden shadow-md">
+                <div className="bg-primary py-4 px-4 text-center">
+                  <p className="font-bold text-primary-foreground">{item.title}</p>
+                </div>
+                <div className="bg-card/50 border border-border/60 border-t-0 p-4 min-h-[140px]">
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 max-w-4xl space-y-4">
+            <p className="text-foreground/80 leading-relaxed">Jives Media's Livermore page (/digital-marketing-agency-in-livermore-ca/) was built from the same template as their Pleasanton page (/digital-marketing-agency-in-pleasanton-ca/) — different URL slug, identical 3,367-word structure, a content score of 95 earned on Pleasanton's market, not Livermore's. A Livermore business owner reading their page will find no mention of Lawrence Livermore National Laboratory, no wine country content, no barrel room climate control, no harvest season demand — because those specifics require genuine local knowledge that template agencies do not develop.</p>
+            <p className="text-foreground/80 leading-relaxed">Boomcycle covers Livermore generically with the same 2,297-word page used across multiple Tri-Valley cities. Breakline ranks for the SEO keyword but has no dual-identity market framing. None of them have a dual-track strategy. GrowSmallBiz builds your Livermore strategy from the actual competitive landscape of the Labs corridor and the wine country commercial market — because that specificity is what converts Livermore's two distinct audiences into clients.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== MID-PAGE PERSON CTA ===== */}
+      <PersonCTA
+        title="Let's Build Your Growth Engine"
+        description="If you want AI-powered client acquisition systems, done-for-you execution, adaptive strategy, and a clear multi-channel dashboard without patching together disconnected tools, start with a free strategy call."
+        buttonText="Schedule Strategy Call"
+        buttonHref={strategyCallUrl}
+        sectionClassName="py-16"
+      />
+
+      {/* ===== FAQ SECTION ===== */}
       <FAQSection
-        title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Marketing in Livermore, CA</span></>}
+        title={<>Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Livermore</span></>}
         faqs={[
-          { question: "What types of businesses does GrowSmallBiz work with in Livermore, CA?", answer: "GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, chiropractors, real estate professionals, restaurants, wineries, and other businesses that rely on local visibility, qualified inquiries, and consistent follow-up." },
-          { question: "Is GrowSmallBiz only an SEO company?", answer: "No. SEO is one important part of the system, but GrowSmallBiz is not positioned as an SEO-only provider. The broader model includes website design, SEO, paid ads, marketing automation, and lead-handling improvements." },
-          { question: "Can GrowSmallBiz help if my business already has a website?", answer: "Yes. Many businesses already have a website but still need stronger messaging, cleaner landing pages, better local visibility, stronger calls to action, or more effective follow-up. An existing website can often be improved rather than replaced immediately." },
-          { question: "Do you offer Google Ads and Local Services Ads for Livermore businesses?", answer: "Yes. GrowSmallBiz can support paid lead generation through Google Ads and Local Services Ads as part of a broader system that also includes landing pages, tracking, and lead follow-up." },
-          { question: "How does AI improve local marketing for small businesses?", answer: "AI improves local marketing when it is used for practical business functions such as faster lead response, smarter follow-up, better workflow consistency, and more efficient optimization. The value is not the label. The value is better execution." },
-          { question: "Why does local SEO still matter if search is becoming more AI-driven?", answer: "Because Google says the same foundational SEO best practices still apply to AI features, and local search visibility still depends on factors such as relevance, distance, and popularity. Strong local SEO and strong AI visibility increasingly reinforce each other instead of competing with each other." }
+          { question: "What types of businesses does GrowSmallBiz work with in Livermore?", answer: "We work exclusively with local service businesses in Livermore and the Tri-Valley — including HVAC contractors, plumbers, electricians, roofers, dental practices, med spas, restaurants, wineries, event venues, and real estate professionals. We do not work with eCommerce stores, online retailers, or product-based businesses. Our systems are purpose-built for businesses that serve local Livermore and Tri-Valley clients directly — across both the residential Labs-corridor market and the commercial wine country market." },
+          { question: "How does GrowSmallBiz approach Livermore's dual-identity market differently from other agencies?", answer: "Most agencies build one campaign for one audience profile. In Livermore, that means capturing only the I-580 commuter residential market and missing both the LLNL/Sandia professional demographic and the wine country commercial market. GrowSmallBiz builds simultaneous dual-track campaigns — separate keyword clusters, separate landing pages, separate ad schedules, and separate retention systems for each audience profile — all running from one integrated CRM with unified reporting. You capture the Labs-adjacent homeowner who searches on a Wednesday evening and the winery operator who needs commercial HVAC support during harvest season, without managing two separate agencies." },
+          { question: "How long does SEO take in Livermore?", answer: "Google Business Profile optimizations show measurable movement — increased views, calls, and direction requests — within 30 to 60 days. Organic rankings shift within 60 to 90 days for less competitive terms and 3 to 6 months for primary category keywords. Jives Media leads Livermore's SERPs with strong domain authority built over years — but their pages contain no wine country commercial content, no Labs-demographic specific framing, and no dual-track keyword architecture. A properly structured integrated system targeting both audience clusters will outperform their single-track approach within 6 to 12 months for the keyword clusters they are currently missing entirely." },
+          { question: "Why does the LLNL and Sandia employee demographic respond differently to marketing?", answer: "Scientific and technical professionals are research-oriented buyers by training and professional habit. Before calling an HVAC contractor, dentist, or any service provider, they typically check Google ratings, read multiple reviews (not just the star average), verify licensing and insurance status, and look for credentialing signals. The Google Guaranteed badge carries particular weight with this demographic because it pre-answers their trust verification question before they even read reviews. Marketing to this audience requires review depth — not just volume — and clear credentialing display that signals the same rigor they apply professionally. Generic ads and thin review profiles underperform with LLNL and Sandia households in ways that are not visible in aggregate Livermore market data." },
+          { question: "How does digital marketing work differently for a winery or wine country business?", answer: "Wine country businesses require a fundamentally different marketing approach from standard residential service businesses. The primary buyer is often a B2B client — winery operator, tasting room manager, event venue coordinator — not a homeowner. Discovery happens through wine tourism platforms, Instagram, TripAdvisor, and wine country directories alongside Google Maps. Seasonal demand patterns follow the harvest calendar: peak demand runs July through October, creating specific marketing windows for harvest-season campaigns, pre-harvest commercial service promotions, and tourism audience targeting. Review management needs to cover TripAdvisor and wine tourism platforms in addition to Google. And emergency response availability — particularly for commercial refrigeration and HVAC failures during summer heat events — is the primary trust signal for B2B wine country clients rather than the residential factors that drive homeowner decisions." },
+          { question: "Can GrowSmallBiz help with both residential and commercial clients for the same Livermore business?", answer: "Yes — and for Livermore businesses with both residential and commercial client bases, running dual-track campaigns from one integrated system is specifically more efficient than managing separate marketing approaches. Separate keyword clusters, separate landing pages, and separate ad schedules run simultaneously from one CRM with one reporting dashboard. You see which channels are generating residential leads and which are generating wine country commercial inquiries — all attributed accurately without fragmented reporting across multiple agencies. The AI Receptionist handles both tracks simultaneously: capturing Labs homeowner calls after government work hours and wine country emergency calls during harvest season heat events without distinguishing between them." },
+          { question: "How does AI automation specifically benefit Livermore service businesses?", answer: "AI automation closes the two most costly lead loss scenarios in Livermore's dual-identity market. For the Labs-adjacent residential track: LLNL and Sandia employees search for services after work hours — evenings and weekends — when many service businesses are closed. The AI Receptionist captures those inquiries instantly, responds intelligently, and schedules follow-up for the next business day, ensuring no evening inquiry is lost to a competitor who also was not answering. For the wine country commercial track: a barrel room HVAC failure during Livermore's July or August heat events — when outdoor temperatures exceed 100°F — is an emergency that cannot wait until Monday morning. The AI Receptionist answers that 10pm call, captures the situation, and triggers an emergency alert to the on-call technician, winning the job and the long-term commercial relationship." },
+          { question: "What common mistakes are Livermore businesses making with digital marketing right now?", answer: "Based on our Tri-Valley market audits, the most common and costly mistakes are: treating Livermore as a single-audience market and missing either the Labs demographic or the wine country commercial opportunity entirely; using generic Bay Area campaign targeting that wastes budget on non-Livermore audiences; scheduling ads for business hours only and missing the Labs employee evening and weekend search window; not building review depth for the analytical LLNL and Sandia buyer demographic who reads multiple reviews before deciding; and ignoring wine country-specific platforms — TripAdvisor, wine tourism directories — that drive significant hospitality discovery for Livermore Valley businesses. A free strategy session is the fastest way to identify which of these apply to your specific situation." },
         ]}
         schemaType="FAQPage"
         contactCTA={{
           ...baseContactCTA,
-          title: "Have questions about marketing in Livermore?",
-          description: "We're here to help you find the right strategy.",
+          title: "Have more questions about marketing in Livermore?",
+          description: "We're here to help. Reach out to us for a personalized consultation.",
           tagline: "Let's grow your Livermore business together.",
         }}
       />
 
-      <section id="final-cta" className="py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      {/* ===== FINAL CTA ===== */}
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-up">
-            <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-            <h2 className="section-title">
-              Ready to Build a Smarter Marketing System for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Livermore Business</span>?
+          <div className="max-w-4xl mx-auto text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6">
+              Every Day You Wait, Your Competitors Book Another Livermore Customer That{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Should Have Been Yours.</span>
             </h2>
-            <p className="section-description mt-4 mb-8">
-              GrowSmallBiz helps Livermore businesses connect website performance, search visibility, paid ads, follow-up, conversion, and retention into one practical system. That is the difference between paying for marketing activity and building a structure that supports real business growth.
-            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">Livermore's dual-identity market is underserved. Jives Media and Boomcycle rank at the top of Livermore's SERPs with pages that target one third of the available market opportunity. The Labs-adjacent professional demographic and the wine country commercial market are both underserved by current SERP leaders — and both are available to the business that builds a properly structured dual-track local presence first.</p>
+            <p className="text-foreground/80 leading-relaxed mb-4">GrowSmallBiz gives Livermore service businesses the integrated marketing system that captures both audience tracks: one connected platform spanning awareness to retention, powered by AI, and managed by a team based 20 minutes away in Danville. Subrata Guha, our founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience — including deep familiarity with the research-oriented decision patterns of technical and scientific professional audiences — to the specific challenges of Livermore's uniquely complex local service market.</p>
+            <p className="text-foreground/70 font-semibold mt-6">No long-term contracts. No templates. No excuses. Just one integrated dual-track system built specifically for your Livermore business.</p>
           </div>
-          <CardCTA
-            title="Schedule Your Free Marketing Assessment"
-            description="If you want a smarter, more connected approach to digital marketing in Livermore, CA, GrowSmallBiz is built for that next step. We can look at where your current system is losing visibility, losing trust, or losing leads — and what a stronger local growth engine could look like."
-            buttonText="Schedule Strategy Call"
-            buttonHref={strategyCallUrl}
-            sectionClassName="pt-0 pb-0"
-          />
         </div>
       </section>
 
-      <ConsultationFormSection />
+      {/* ===== PRE-FORM PERSON CTA ===== */}
+      <PersonCTA
+        title="Schedule Your Free Strategy Call"
+        description="Receive a personalized strategy session — dual-track competitive audit, Labs demographic analysis, wine country market assessment, and a clear growth roadmap built specifically for your Livermore service business."
+        buttonText="Schedule Strategy Call"
+        buttonHref={strategyCallUrl}
+        sectionClassName="py-16"
+      />
+
+      {/* ===== CONSULTATION FORM ===== */}
+      <ConsultationFormSection utmCampaign="livermore-consultation" utmMedium="livermore-ca" />
+
+      {/* ===== CROSS-LINK PILLS ===== */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
+              { label: "Dublin", to: "/locations/dublin-ca/" },
+              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
+              { label: "Danville", to: "/locations/danville-ca/" },
+              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
+              { label: "Concord", to: "/locations/concord-ca/" },
+            ].map((city) => (
+              <Link
+                key={city.to}
+                to={city.to}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all text-sm font-medium"
+              >
+                <MapPin className="w-3.5 h-3.5" />
+                {city.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <Footer />
