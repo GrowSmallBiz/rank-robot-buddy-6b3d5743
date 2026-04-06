@@ -179,10 +179,10 @@ const MedSpa = () => {
         serviceName="Med Spa Marketing"
         serviceType="Digital Marketing for Med Spas"
         description="SEO and digital marketing for Botox, fillers, laser treatments, and aesthetic services."
-        url="/industries/digital-marketing-for-med-spas"
+        url="/health-and-wellness-practices/med-spa-marketing"
         breadcrumbs={[
-          { name: "Industries", url: "/industries/digital-marketing-for-home-service-contractors" },
-          { name: "Med Spa", url: "/industries/digital-marketing-for-med-spas" },
+          { name: "Health & Wellness", url: "/health-and-wellness-practices" },
+          { name: "Med Spa Marketing", url: "/health-and-wellness-practices/med-spa-marketing" },
         ]}
       />
       

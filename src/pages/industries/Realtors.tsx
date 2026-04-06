@@ -182,10 +182,10 @@ const Realtors = () => {
         serviceName="Digital Marketing for Realtors"
         serviceType="Digital Marketing for Real Estate Professionals"
         description="IDX websites, local SEO, AI lead generation, and CRM automation for realtors and real estate teams."
-        url="/industries/digital-marketing-for-realtors"
+        url="/professional-services/real-estate-marketing"
         breadcrumbs={[
-          { name: "Industries", url: "/industries/digital-marketing-for-realtors" },
-          { name: "Realtors", url: "/industries/digital-marketing-for-realtors" },
+          { name: "Professional Services", url: "/professional-services" },
+          { name: "Real Estate Marketing", url: "/professional-services/real-estate-marketing" },
         ]}
       />
       
