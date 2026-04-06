@@ -249,7 +249,7 @@ export const Header = () => {
             >
               <button
                 className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname.startsWith("/industries") ? "text-primary" : "text-muted-foreground"
+                  location.pathname.startsWith("/home-service-contractors") && !location.pathname.includes("case-study") || location.pathname.startsWith("/health-and-wellness-practices") || location.pathname.startsWith("/professional-services") ? "text-primary" : "text-muted-foreground"
                 }`}
                 aria-expanded={isIndustriesOpen}
                 aria-haspopup="true"
@@ -262,47 +262,66 @@ export const Header = () => {
                   isIndustriesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Home Services</p>
                 <Link
-                  to="/industries/digital-marketing-for-med-spas/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  to="/home-service-contractors/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors"
+                >
+                  Home Service Contractors
+                </Link>
+                <Link
+                  to="/home-service-contractors/hvac-marketing/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  HVAC Contractors
+                </Link>
+
+                <div className="border-t border-border my-2" />
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness</p>
+                <Link
+                  to="/health-and-wellness-practices/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors"
+                >
+                  All Health & Wellness
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/med-spa-marketing/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Med Spas
                 </Link>
                 <Link
-                  to="/industries/digital-marketing-for-chiropractors/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  to="/health-and-wellness-practices/chiropractic-marketing/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Chiropractors
                 </Link>
                 <Link
-                  to="/industries/digital-marketing-for-hvac-contractors/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  HVAC Contractors
-                </Link>
-                <Link
-                  to="/industries/digital-marketing-for-dentists/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  to="/health-and-wellness-practices/dental-marketing/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Dentists
                 </Link>
+
+                <div className="border-t border-border my-2" />
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Professional Services</p>
                 <Link
-                  to="/industries/digital-marketing-for-realtors/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  to="/professional-services/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors"
+                >
+                  All Professional Services
+                </Link>
+                <Link
+                  to="/professional-services/real-estate-marketing/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Realtors
                 </Link>
                 <Link
-                  to="/industries/digital-marketing-for-photographers/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  to="/professional-services/photography-marketing/"
+                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Photographers
-                </Link>
-                <Link
-                  to="/industries/digital-marketing-for-home-service-contractors/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Home Service Contractors
                 </Link>
               </div>
             </div>
