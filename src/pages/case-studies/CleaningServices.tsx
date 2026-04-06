@@ -99,16 +99,16 @@ const CleaningServices = () => {
           name="description"
           content="Explore documented local SEO case study results for cleaning service businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/case-studies/cleaning-services/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/cleaning-service-marketing/case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Case Studies for Cleaning Services Businesses"
         description="Explore documented local SEO case study results for cleaning service businesses."
-        url="/case-studies/cleaning-services/"
+        url="/home-service-contractors/cleaning-service-marketing/case-study/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies/" },
-          { name: "Cleaning Services", url: "/case-studies/cleaning-services/" },
+          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Cleaning Services", url: "/home-service-contractors/cleaning-service-marketing/case-study/" },
         ]}
       />
       <Header />

@@ -162,16 +162,16 @@ const Roofers = () => {
           name="description"
           content="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/case-studies/roofers/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/roofing-marketing/case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Case Studies for Roofing Businesses"
         description="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns."
-        url="/case-studies/roofers/"
+        url="/home-service-contractors/roofing-marketing/case-study/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies/" },
-          { name: "Roofers", url: "/case-studies/roofers/" },
+          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Roofers", url: "/home-service-contractors/roofing-marketing/case-study/" },
         ]}
       />
       <Header />
