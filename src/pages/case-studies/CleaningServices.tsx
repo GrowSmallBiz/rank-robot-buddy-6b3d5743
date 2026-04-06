@@ -107,8 +107,8 @@ const CleaningServices = () => {
         description="Explore documented local SEO case study results for cleaning service businesses."
         url="/home-service-contractors/cleaning-service-marketing/case-study/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies/" },
-          { name: "Cleaning Services", url: "/case-studies/cleaning-services/" },
+          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Cleaning Services", url: "/home-service-contractors/cleaning-service-marketing/case-study/" },
         ]}
       />
       <Header />

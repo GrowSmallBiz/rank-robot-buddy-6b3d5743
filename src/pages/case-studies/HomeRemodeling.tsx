@@ -117,8 +117,8 @@ const HomeRemodeling = () => {
         description="Explore documented Local SEO case study results for home remodeling and home renovation businesses."
         url="/home-service-contractors/home-renovation-marketing/case-study/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies/" },
-          { name: "Home Remodeling", url: "/case-studies/home-remodeling/" },
+          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Home Remodeling", url: "/home-service-contractors/home-renovation-marketing/case-study/" },
         ]}
       />
       <Header />

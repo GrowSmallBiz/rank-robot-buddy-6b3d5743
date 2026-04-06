@@ -170,8 +170,8 @@ const Roofers = () => {
         description="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns."
         url="/home-service-contractors/roofing-marketing/case-study/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies/" },
-          { name: "Roofers", url: "/case-studies/roofers/" },
+          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Roofers", url: "/home-service-contractors/roofing-marketing/case-study/" },
         ]}
       />
       <Header />

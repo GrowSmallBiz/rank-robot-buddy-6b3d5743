@@ -113,9 +113,9 @@ const LocalSEOHvacPlumbingElectrical = () => {
         description="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses."
         url="/home-service-contractors/hvac-marketing/seo-case-study/"
         breadcrumbs={[
-          { name: "Case Studies", url: "/case-studies/" },
-          { name: "Local SEO", url: "/case-studies/local-seo-service/" },
-          { name: "HVAC, Plumbing & Electrical", url: "/case-studies/local-seo-service/hvac-plumbing-electrical/" },
+          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Local SEO", url: "/home-service-contractors/hvac-marketing/" },
+          { name: "HVAC, Plumbing & Electrical", url: "/home-service-contractors/hvac-marketing/seo-case-study/" },
         ]}
       />
       <Header />
