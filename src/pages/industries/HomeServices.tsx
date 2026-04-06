@@ -200,7 +200,6 @@ const HomeServices = () => {
         breadcrumbs={[
           { name: "Home Service Contractors", url: "/home-service-contractors" },
         ]}
-        ]}
       />
       
       <Header />
