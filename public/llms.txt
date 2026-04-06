@@ -46,14 +46,6 @@ Canonical: https://growsmallbiz.io/
 - Technical SEO: https://growsmallbiz.io/services/seo-agency/technical-seo/
 - Website Design: https://growsmallbiz.io/services/website-design/
 
-## Case Studies
-- Cleaning Services: https://growsmallbiz.io/case-studies/cleaning-services/
-- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/
-- Home Remodeling: https://growsmallbiz.io/case-studies/home-remodeling/
-- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/local-seo-service/hvac-plumbing-electrical/
-- Roofers: https://growsmallbiz.io/case-studies/roofers/
-- Tree Lawn Landscaping: https://growsmallbiz.io/case-studies/tree-lawn-landscaping/
-
 ## Legal
 - Privacy Policy: https://growsmallbiz.io/privacy-policy/
 - Terms Of Service: https://growsmallbiz.io/terms-of-service/

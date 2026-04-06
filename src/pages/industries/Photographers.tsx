@@ -176,16 +176,16 @@ const Photographers = () => {
       <Head>
         <title>Digital Marketing for Photographers | SEO & Lead Generation | GrowSmallBiz</title>
         <meta name="description" content="Fill your photography calendar year-round with AI-powered SEO, portfolio optimization, and automated lead capture. Wedding, portrait, and headshot photographers." />
-        <link rel="canonical" href="https://growsmallbiz.io/industries/digital-marketing-for-photographers/" />
+        <link rel="canonical" href="https://growsmallbiz.io/professional-services/photography-marketing/" />
       </Head>
       <ServiceJsonLd
         serviceName="Digital Marketing for Photographers"
         serviceType="Digital Marketing for Photography Businesses"
         description="SEO, paid advertising, portfolio optimization, and AI lead capture for professional photographers."
-        url="/industries/digital-marketing-for-photographers"
+        url="/professional-services/photography-marketing"
         breadcrumbs={[
-          { name: "Industries", url: "/industries/digital-marketing-for-photographers" },
-          { name: "Photographers", url: "/industries/digital-marketing-for-photographers" },
+          { name: "Professional Services", url: "/professional-services" },
+          { name: "Photography Marketing", url: "/professional-services/photography-marketing" },
         ]}
       />
       

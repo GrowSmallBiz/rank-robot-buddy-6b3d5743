@@ -190,16 +190,15 @@ const HomeServices = () => {
       <Head>
         <title>Digital Marketing for Home Service Contractors | SEO & Lead Generation | GrowSmallBiz</title>
         <meta name="description" content="Grow your home service business with local SEO, Google Ads, AI lead capture, and reputation management. HVAC, plumbing, electrical, roofing, and more." />
-        <link rel="canonical" href="https://growsmallbiz.io/industries/digital-marketing-for-home-service-contractors/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/" />
       </Head>
       <ServiceJsonLd
         serviceName="Digital Marketing for Home Service Contractors"
         serviceType="Digital Marketing for Home Services"
         description="Local SEO, Google Ads, AI lead capture, and CRM automation for HVAC, plumbing, electrical, roofing, and home service contractors."
-        url="/industries/digital-marketing-for-home-service-contractors"
+        url="/home-service-contractors"
         breadcrumbs={[
-          { name: "Industries", url: "/industries/digital-marketing-for-home-service-contractors" },
-          { name: "Home Services", url: "/industries/digital-marketing-for-home-service-contractors" },
+          { name: "Home Service Contractors", url: "/home-service-contractors" },
         ]}
       />
       

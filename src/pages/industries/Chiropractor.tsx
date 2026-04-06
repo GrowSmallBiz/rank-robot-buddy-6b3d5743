@@ -105,16 +105,16 @@ const Chiropractor = () => {
       <Head>
         <title>Chiropractor SEO Services | Grow Your Practice | GrowSmallBiz</title>
         <meta name="description" content="Grow your chiropractic practice with specialized SEO. Rank #1 for back pain, neck pain, and 'chiropractor near me' searches. Get more new patients." />
-        <link rel="canonical" href="https://growsmallbiz.io/industries/digital-marketing-for-chiropractors/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/chiropractic-marketing/" />
       </Head>
       <ServiceJsonLd
         serviceName="Chiropractor Marketing"
         serviceType="Digital Marketing for Chiropractors"
         description="SEO and digital marketing to grow your chiropractic practice and attract new patients."
-        url="/industries/digital-marketing-for-chiropractors"
+        url="/health-and-wellness-practices/chiropractic-marketing"
         breadcrumbs={[
-          { name: "Industries", url: "/industries/digital-marketing-for-home-service-contractors" },
-          { name: "Chiropractor", url: "/industries/digital-marketing-for-chiropractors" },
+          { name: "Health & Wellness", url: "/health-and-wellness-practices" },
+          { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/chiropractic-marketing" },
         ]}
       />
       

@@ -173,16 +173,16 @@ const MedSpa = () => {
       <Head>
         <title>Med Spa SEO Services | Attract Aesthetic Clients | GrowSmallBiz</title>
         <meta name="description" content="Grow your med spa with specialized SEO. Rank #1 for Botox, fillers, laser treatments, and aesthetic services. Attract high-value clients." />
-        <link rel="canonical" href="https://growsmallbiz.io/industries/digital-marketing-for-med-spas/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/med-spa-marketing/" />
       </Head>
       <ServiceJsonLd
         serviceName="Med Spa Marketing"
         serviceType="Digital Marketing for Med Spas"
         description="SEO and digital marketing for Botox, fillers, laser treatments, and aesthetic services."
-        url="/industries/digital-marketing-for-med-spas"
+        url="/health-and-wellness-practices/med-spa-marketing"
         breadcrumbs={[
-          { name: "Industries", url: "/industries/digital-marketing-for-home-service-contractors" },
-          { name: "Med Spa", url: "/industries/digital-marketing-for-med-spas" },
+          { name: "Health & Wellness", url: "/health-and-wellness-practices" },
+          { name: "Med Spa Marketing", url: "/health-and-wellness-practices/med-spa-marketing" },
         ]}
       />
       
