@@ -174,7 +174,7 @@ const ChiropracticCaseStudy = () => {
               <div className="max-w-4xl mx-auto">
                 <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                    Chiropractic AI SEO — [City, State]
+                    Chiropractic AI SEO — Tracy, CA
                   </h3>
                   <div className="space-y-6">
                     <DetailLabel>Campaign Summary</DetailLabel>
@@ -208,7 +208,7 @@ const ChiropracticCaseStudy = () => {
                       '"back pain chiropractor" — first page achieved',
                     ]} />
 
-                    <PdfBlock src="/case-studies/ai-seo-chiropractic-case-study.pdf" />
+                    <PdfBlock src="/case-studies/AI-SEO-Chiropractic-Case-Study-Tracy-CA.pdf" />
                     <div className="mt-8 flex justify-center">
                       <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
                         <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">Request a Website &amp; SEO Audit</a>
@@ -275,7 +275,7 @@ const ChiropracticCaseStudy = () => {
                       </P>
                     </div>
 
-                    <PdfBlock src="/case-studies/ai-seo-chiropractic-case-study.pdf" title="View Full Case Study Report" />
+                    <PdfBlock src="/case-studies/AI-SEO-Chiropractic-Case-Study-Tracy-CA.pdf" title="View Full Case Study Report" />
                     <div className="mt-8 flex justify-center">
                       <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
                         <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">Request a Website &amp; SEO Audit</a>
