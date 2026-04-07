@@ -176,9 +176,7 @@ const Chiropractor = () => {
         </div>
       </section>
 
-            <p className="text-muted-foreground mb-8 text-lg">
-              Most marketing agencies treat chiropractors like restaurants or retail shops. They don't understand the difference between a new acute pain patient and a wellness plan conversion. They don't know that 'sciatica relief [city]' and 'chiropractor near me' require completely different landing pages.
-            </p>
+
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-display font-semibold text-foreground mb-3">Two Distinct Patient Types — Two Distinct Strategies</h3>

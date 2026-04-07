@@ -253,9 +253,7 @@ const MedSpa = () => {
         </div>
       </section>
 
-            <p className="text-muted-foreground mb-8 text-lg">
-              Med spa clients seek aesthetic enhancement and wellness — not pain relief. That distinction changes everything about how marketing works. Unlike dental or chiropractic patients driven by necessity, med spa clients are driven by desire, aspiration, and social validation.
-            </p>
+
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-display font-semibold text-foreground mb-3">Visual Proof Drives Decisions</h3>

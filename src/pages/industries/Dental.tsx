@@ -180,9 +180,7 @@ const Dental = () => {
         </div>
       </section>
 
-            <p className="text-muted-foreground mb-8 text-lg">
-              Dental marketing requires specialized knowledge of patient psychology, local search behavior, and healthcare compliance. Generic marketing agencies apply one-size-fits-all tactics that don't account for how dental patients actually make decisions.
-            </p>
+
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-display font-semibold text-foreground mb-3">77% of Patients Search Online Before Choosing a Dentist</h3>
