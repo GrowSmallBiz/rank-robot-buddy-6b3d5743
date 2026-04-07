@@ -280,16 +280,7 @@ const MedSpa = () => {
         </div>
       </section>
 
-      {/* What Does a Med Spa Marketing Agency Do? */}
-      <section className="py-24 bg-card/50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">What Does a Med Spa Marketing Agency Do?</h2>
-            <p className="text-muted-foreground mb-8 text-lg text-center max-w-3xl mx-auto">
-              A med spa marketing agency manages the full digital marketing ecosystem for medical aesthetic practices — social media content and Meta advertising, local SEO and Google Ads, reputation management and client retention automation, and website design optimized for consultation booking.
-            </p>
-            <div className="max-w-2xl mx-auto">
-              <h3 className="text-xl font-display font-semibold text-foreground mb-4">The full med spa client lifecycle:</h3>
+
               <div className="space-y-4">
                 <div className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl">
                   <span className="text-primary font-bold text-lg">1.</span>
