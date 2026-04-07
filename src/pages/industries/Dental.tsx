@@ -102,12 +102,84 @@ const Dental = () => {
         </div>
       </section>
 
+      {/* Pain Points */}
+      <section className="py-20 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <p className="text-muted-foreground">These are the challenges we hear from dental practice owners every day.</p>
+          </div>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {painPoints.map((point, index) => (
+              <div key={index} className="flex items-start gap-4 p-4 bg-destructive/10 border border-destructive/20 rounded-xl">
+                <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-destructive text-sm font-bold">✗</span>
+                </div>
+                <p className="text-foreground">{point}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-xl font-display font-semibold text-primary mb-4">We can help you grow.</p>
+            <Button variant="hero" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Why Dental Practices Need a Specialized Marketing Agency */}
       <section className="py-24 relative">
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Dental Practices Need a Specialized Marketing Agency</h2>
+            <p className="text-muted-foreground mb-8 text-lg">
+              Dental marketing requires specialized knowledge of patient psychology, local search behavior, and healthcare compliance. Generic marketing agencies apply one-size-fits-all tactics that don't account for how dental patients actually make decisions.
+            </p>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">77% of Patients Search Online Before Choosing a Dentist</h3>
+                <p className="text-muted-foreground">According to the American Dental Association, the overwhelming majority of prospective patients research online before booking. Your Google Business Profile, reviews, and website are doing the selling before you ever speak to a patient.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">HIPAA Compliance Is Non-Negotiable</h3>
+                <p className="text-muted-foreground">Dental advertising operates under HIPAA restrictions that limit what patient information can be used in marketing. Patient photos, testimonials, and identifiable information require explicit written consent. An agency without healthcare marketing experience creates legal exposure for your practice.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Procedure-Specific Marketing Requires Deep Niche Knowledge</h3>
+                <p className="text-muted-foreground">A patient searching 'dental implants' is at a completely different stage than one searching 'teeth cleaning near me.' Each requires a different landing page, different messaging, and different conversion strategy.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Trust Signals Determine Who Gets the Call</h3>
+                <p className="text-muted-foreground">Verified reviews, professional credentials, HIPAA compliance signals, and before/after imagery (with consent) are the trust indicators that convert a Google impression into a booked appointment.</p>
+              </div>
+            </div>
+            <div className="mt-10 p-6 bg-card border border-border rounded-2xl">
+              <div className="flex gap-3">
+                <Quote className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <p className="text-foreground italic">A dental patient checks your Google ranking, reads your reviews, and evaluates your website — all before they dial. Your marketing wins or loses the patient before you ever speak to them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Does a Dental Marketing Agency Do? */}
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">What Does a Dental Marketing Agency Do?</h2>
+            <p className="text-muted-foreground mb-6 text-lg text-center max-w-3xl mx-auto">
+              A dental marketing agency manages the full spectrum of digital patient acquisition for dental practices — from local SEO and Google Map Pack visibility to Google Ads management, website design, reputation management, and patient retention automation.
+            </p>
+            <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto">
+              For dental practices specifically, this means building strategies that address multiple patient types simultaneously: the emergency patient who needs care today, the cosmetic patient evaluating options over weeks, the family looking for a long-term practice, and the existing patient who needs recall and reactivation. Each requires a distinct approach.
+            </p>
+          </div>
+        </div>
+      </section>
+
             <p className="text-muted-foreground mb-8 text-lg">
               Dental marketing requires specialized knowledge of patient psychology, local search behavior, and healthcare compliance. Generic marketing agencies apply one-size-fits-all tactics that don't account for how dental patients actually make decisions.
             </p>
