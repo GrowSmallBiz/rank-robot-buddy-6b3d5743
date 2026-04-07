@@ -202,6 +202,7 @@ export const Header = () => {
                   isCaseStudiesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Home Service Contractors</p>
                 <Link
                   to="/home-service-contractors/hvac-marketing/seo-case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
@@ -245,19 +246,19 @@ export const Header = () => {
                   to="/health-and-wellness-practices/med-spa-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
-                  Med Spa — AI SEO & Google Ads
+                  Med Spa
                 </Link>
                 <Link
                   to="/health-and-wellness-practices/dental-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
-                  Dental — Google Ads
+                  Dental Practices
                 </Link>
                 <Link
                   to="/health-and-wellness-practices/chiropractic-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
-                  Chiropractic — AI SEO
+                  Chiropractic
                 </Link>
               </div>
             </div>
@@ -598,21 +599,21 @@ export const Header = () => {
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
-                  Med Spa — AI SEO & Google Ads
+                  Med Spa
                 </Link>
                 <Link
                   to="/health-and-wellness-practices/dental-marketing/case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
-                  Dental — Google Ads
+                  Dental Practices
                 </Link>
                 <Link
                   to="/health-and-wellness-practices/chiropractic-marketing/case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
-                  Chiropractic — AI SEO
+                  Chiropractic
                 </Link>
               </div>
             )}
