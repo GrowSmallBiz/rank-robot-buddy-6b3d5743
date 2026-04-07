@@ -29,6 +29,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { useUtm } from "@/hooks/use-utm";
 
 const benefits = [
   {
@@ -159,6 +160,8 @@ const caseStudies = [
 ];
 
 const Photographers = () => {
+  const { strategySessionUrl, freeAuditUrl } = useUtm();
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -202,7 +205,7 @@ const Photographers = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                <a href={strategySessionUrl}>
                   Schedule Strategy Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
@@ -238,7 +241,7 @@ const Photographers = () => {
           <div className="text-center mt-12">
             <p className="text-xl font-display font-semibold text-primary mb-4">Let's change that.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Get Your Growth Strategy</a>
+              <a href={strategySessionUrl}>Get Your Growth Strategy</a>
             </Button>
           </div>
         </div>
@@ -329,7 +332,7 @@ const Photographers = () => {
         caseStudies={caseStudies}
         title="Photography Success Stories"
         subtitle="See how we've helped photographers fill their calendars with premium clients"
-        ctaLink="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+        ctaLink=strategySessionUrl
         ctaText="Get Results Like These"
       />
 

@@ -24,6 +24,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
 import healthWellnessHeroImage from "@/assets/industry-healthwellness-hero.jpg";
+import { useUtm } from "@/hooks/use-utm";
 
 const practiceTypes = [
   { icon: Stethoscope, name: "Dental" },
@@ -231,6 +232,8 @@ const faqs = [
 ];
 
 const HealthAndWellness = () => {
+  const { strategySessionUrl, freeAuditUrl } = useUtm();
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -287,7 +290,7 @@ const HealthAndWellness = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                <a href={strategySessionUrl}>
                   Schedule Strategy Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
@@ -323,7 +326,7 @@ const HealthAndWellness = () => {
           <div className="text-center mt-12">
             <p className="text-xl font-display font-semibold text-primary mb-4">Let's change that.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Get Your Growth Strategy</a>
+              <a href={strategySessionUrl}>Get Your Growth Strategy</a>
             </Button>
           </div>
         </div>
@@ -408,7 +411,7 @@ const HealthAndWellness = () => {
           </div>
           <div className="text-center mt-10">
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+              <a href={strategySessionUrl}>
                 Schedule Your Free Strategy Call
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
@@ -547,7 +550,7 @@ const HealthAndWellness = () => {
           </div>
           <div className="text-center mt-10">
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+              <a href={strategySessionUrl}>
                 Schedule Your Free Strategy Call
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
@@ -578,7 +581,7 @@ const HealthAndWellness = () => {
             Your competitors are investing in digital marketing right now. Every month without a strong online presence is another month of new patients choosing a practice that ranks above you on Google. GrowSmallBiz builds the complete patient acquisition system that fills your appointment book consistently — so you can focus on delivering exceptional care while we handle your growth.
           </p>
           <Button variant="hero" size="lg" className="shadow-lg" asChild>
-            <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+            <a href={strategySessionUrl}>
               Schedule Your Free Strategy Call
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
