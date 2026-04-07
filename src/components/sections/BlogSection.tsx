@@ -175,7 +175,7 @@ export const dentalBlogPosts: BlogPost[] = [
     title: "Dental SEO: Attracting High-Value Cosmetic Patients",
     excerpt: "Learn how to rank for lucrative cosmetic dentistry keywords and attract patients seeking premium treatments.",
     category: "Dental SEO",
-    author: "Dr. Emily Parker",
+    author: "Subrata Guha",
     date: "Dec 28, 2025",
     readTime: "8 min read"
   },
