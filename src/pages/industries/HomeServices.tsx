@@ -46,7 +46,6 @@ const trades = [
   { icon: Plug, name: "Electrical" },
   { icon: Home, name: "Roofing" },
   { icon: Paintbrush, name: "Remodeling" },
-  { icon: Wrench, name: "General Contractors" },
 ];
 
 const services = [

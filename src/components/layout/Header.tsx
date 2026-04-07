@@ -238,6 +238,33 @@ export const Header = () => {
                 >
                   Cleaning Services
                 </Link>
+
+                <div className="border-t border-border my-2" />
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness</p>
+                <Link
+                  to="/health-and-wellness-practices/med-spa-marketing/seo-case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Med Spa — AI SEO
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/med-spa-marketing/google-ads-case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Med Spa — Google Ads
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/dental-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Dental — Google Ads
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/chiropractic-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Chiropractic — AI SEO
+                </Link>
               </div>
             </div>
 
@@ -570,6 +597,36 @@ export const Header = () => {
                 >
                   Cleaning Services
                 </Link>
+
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-3 pb-1">Health & Wellness</p>
+                <Link
+                  to="/health-and-wellness-practices/med-spa-marketing/seo-case-study/"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Med Spa — AI SEO
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/med-spa-marketing/google-ads-case-study/"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Med Spa — Google Ads
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/dental-marketing/case-study/"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Dental — Google Ads
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/chiropractic-marketing/case-study/"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  Chiropractic — AI SEO
+                </Link>
               </div>
             )}
           </div>
@@ -658,7 +715,7 @@ export const Header = () => {
           </Link>
 
           <Button variant="hero" size="lg" className="w-full mt-4" asChild>
-            <Link to="/contact/" onClick={() => setIsOpen(false)}>Get Free Audit</Link>
+            <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Schedule Strategy Call</a>
           </Button>
         </div>
       </div>
