@@ -95,6 +95,10 @@ export const routes: RouteRecord[] = [
       { path: "home-service-contractors/home-renovation-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
       { path: "home-service-contractors/cleaning-service-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
 
+      { path: "health-and-wellness-practices/med-spa-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/MedSpaCaseStudy")) },
+      { path: "health-and-wellness-practices/dental-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/DentalCaseStudy")) },
+      { path: "health-and-wellness-practices/chiropractic-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/ChiropracticCaseStudy")) },
+
       { path: "home-service-contractors", lazy: lazy(() => import("./pages/industries/HomeServices")) },
       { path: "home-service-contractors/hvac-marketing", lazy: lazy(() => import("./pages/industries/HVAC")) },
       { path: "health-and-wellness-practices", lazy: lazy(() => import("./pages/industries/HealthAndWellness")) },

@@ -295,12 +295,9 @@ const MedSpa = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/health-and-wellness-practices/med-spa-marketing/seo-case-study/">View AI SEO Case Studies →</Link>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <Link to="/health-and-wellness-practices/med-spa-marketing/google-ads-case-study/">View Google Ads Case Studies →</Link>
+              <Link to="/health-and-wellness-practices/med-spa-marketing/case-study/">View Med Spa Case Studies →</Link>
             </Button>
           </div>
         </div>
