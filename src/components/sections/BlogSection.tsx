@@ -245,7 +245,7 @@ export const chiropractorBlogPosts: BlogPost[] = [
     title: "How to Get More Patient Referrals Through SEO",
     excerpt: "Combine the power of referral marketing with SEO to create a sustainable patient acquisition strategy.",
     category: "Marketing",
-    author: "Emily Rodriguez",
+    author: "Subrata Guha",
     date: "Dec 18, 2025",
     readTime: "5 min read"
   }

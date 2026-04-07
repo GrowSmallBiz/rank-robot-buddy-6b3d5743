@@ -203,19 +203,20 @@ const Chiropractor = () => {
         ]}
       />
 
-      <CaseStudySection 
-        caseStudies={caseStudies}
-        title="Chiropractic Success Stories"
-        subtitle="See how we've helped practices like yours attract more patients"
-        ctaLink="https://lp.growsmallbiz.io/digital-growth-strategy-session"
-        ctaText="Get Results Like These"
-      />
-
-      <TestimonialsSection 
-        testimonials={chiroTestimonials}
-        title="What Chiropractors Say About Us"
-        subtitle="See how chiropractic practices transform their patient acquisition"
-      />
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Chiropractic Client Results</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Schedule a strategy call to discuss documented results we've achieved for chiropractic clients.</p>
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       <FAQSection 
         faqs={faqs}

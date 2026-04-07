@@ -255,19 +255,20 @@ const MedSpa = () => {
         ]}
       />
 
-      <CaseStudySection 
-        caseStudies={caseStudies}
-        title="Med Spa Success Stories"
-        subtitle="See how we've helped aesthetic practices attract premium clients"
-        ctaLink="https://lp.growsmallbiz.io/digital-growth-strategy-session"
-        ctaText="Get Results Like These"
-      />
-
-      <TestimonialsSection 
-        testimonials={medSpaTestimonials}
-        title="What Med Spa Owners Say"
-        subtitle="See how aesthetic practices attract premium clients"
-      />
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Med Spa Client Results</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Schedule a strategy call to discuss documented results we've achieved for med spa clients.</p>
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       <FAQSection 
         faqs={faqs}
