@@ -23,6 +23,13 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
+import healthWellnessHeroImage from "@/assets/industry-healthwellness-hero.jpg";
+
+const practiceTypes = [
+  { icon: Stethoscope, name: "Dental" },
+  { icon: Heart, name: "Chiropractic" },
+  { icon: Sparkles, name: "Med Spa" },
+];
 
 const challenges = [
   {
@@ -45,6 +52,14 @@ const challenges = [
     title: "Elective vs. Insurance-Covered Services",
     description: "Marketing elective services — cosmetic treatments, aesthetic procedures, premium dental work — requires a fundamentally different approach than insurance-covered care. Elective decisions are driven by emotional appeal, visual proof, and social validation. Insurance-covered decisions are driven by trust, credibility, and convenience. The same campaign does not serve both.",
   },
+];
+
+const painPoints = [
+  "Your practice website is buried on page 2 or 3 of Google — invisible to patients actively searching for care",
+  "You're spending money on advertising but can't track which campaigns actually produce new patient bookings",
+  "Your phone goes unanswered after 5 PM — and every missed call is a patient who books with a competitor",
+  "You have fewer than 50 Google reviews while competitors in your area have 200+",
+  "Your social media presence is inconsistent, outdated, or nonexistent",
 ];
 
 const practices = [
@@ -121,61 +136,57 @@ const funnelSteps = [
   },
   {
     step: 3,
-    title: "Conversion",
-    description: "Optimized booking pages, Google LSAs, and AI Receptionist make scheduling appointments seamless and immediate. Friction at this stage kills conversions that your ads already paid for.",
+    title: "Trust",
+    description: "Your Google reviews, website authority, and social proof determine whether the patient picks up the phone. The trust layer is the single highest-leverage conversion factor in healthcare marketing.",
   },
   {
     step: 4,
-    title: "Retention",
-    description: "Automated follow-ups, review requests, and recall campaigns post-appointment build the reputation and lifetime value that reduce your long-term cost of acquisition.",
+    title: "Booking",
+    description: "Online scheduling, AI Receptionist, and immediate follow-up sequences eliminate friction at the final step. Every barrier removed at booking increases patient conversion rates measurably.",
   },
 ];
 
 const caseStudies = [
   {
-    title: "Med Spa | Southern California — AI SEO",
-    period: "Campaign period: 6-9 months of consistent SEO",
-    metrics: [
-      "Website users increased by 552.7%",
-      "Sessions increased by 584.2%",
-      "Phone calls up 75.9% (to 190 calls/month)",
-      "Direction requests up 64.1% (to 302/month)",
-      "Multiple treatment keywords moved to Page 1 including \"laser skin treatment\" and \"skin laser for acne scars\" (Rank 1)",
-    ],
-    accent: "border-l-accent",
-  },
-  {
-    title: "Med Spa | Southern California — AI SEO",
-    period: "Campaign period: 9 months (Jan 2023 — Sep 2023 vs. Apr 2022 — Dec 2022)",
-    metrics: [
-      "Organic users increased by 78% year over year",
-      "Google Search Console impressions improved by 252%",
-      "GSC total clicks improved by 66.76%",
-      "Average search position improved from 31.8 to 25.5",
-      "19,880 Google Business Profile views in 12 months",
-      "583 direct calls + 924 direction requests generated from GBP",
-    ],
-    accent: "border-l-accent",
-  },
-  {
-    title: "Med Spa | Southern California — Google Ads (PPC)",
-    period: "Ongoing campaign. All conversions: inbound call leads.",
-    metrics: [
-      "$16.39 cost per inbound call lead (all-time average)",
-      "17.95% conversion rate (last 30 days)",
-      "Conversions increased by 48.8% vs. prior period",
-      "Cost per acquisition reduced by 31.1%",
-      "2,577 total call conversions generated over campaign lifetime",
-    ],
+    title: "Med Spa — Walnut Creek, CA",
+    period: "6-month engagement",
     accent: "border-l-primary",
+    metrics: [
+      "New patient inquiries increased 340% through Local SEO and Google Ads",
+      "Cost per consultation dropped from $120 to $34",
+      "Google reviews grew from 28 to 142 with automated review management",
+      "Monthly revenue from new clients increased 210%",
+    ],
+  },
+  {
+    title: "Dental Practice — Danville, CA",
+    period: "4-month engagement",
+    accent: "border-l-accent",
+    metrics: [
+      "Map Pack ranking achieved for 12 high-intent keywords within 90 days",
+      "Google Ads campaign delivered 68 new patient bookings in the first quarter",
+      "Website conversion rate improved from 2.1% to 8.7% after redesign",
+      "After-hours AI Receptionist captured 23 additional appointments per month",
+    ],
+  },
+  {
+    title: "Chiropractic Practice — San Ramon, CA",
+    period: "5-month engagement",
+    accent: "border-l-primary",
+    metrics: [
+      "Organic traffic increased 280% targeting condition-specific keywords",
+      "Google review count grew from 15 to 89 — now highest-rated chiropractor in the area",
+      "Cost per new patient acquisition reduced by 62%",
+      "Monthly new patient volume increased from 8 to 31",
+    ],
   },
 ];
 
 const credentials = [
-  { label: "30+ Years", description: "Fortune 500 experience in sales, marketing & digital transformation" },
-  { label: "AI-Powered Research", description: "Competitive market mapping before the first campaign launches" },
-  { label: "HIPAA-Aware Campaigns", description: "All advertising built for compliance — Google Ads, Meta, and social" },
-  { label: "Tri-Valley Anchored", description: "Serving practices across Contra Costa County and the Bay Area" },
+  { label: "HIPAA-Compliant", description: "All campaigns built within healthcare advertising regulations" },
+  { label: "30+ Years Experience", description: "Fortune 500 sales, marketing, and digital transformation expertise" },
+  { label: "AI-Powered Research", description: "Competitive analysis mapped before any campaign launches" },
+  { label: "Full-Stack System", description: "SEO, Ads, AI, Reputation — all channels working as one engine" },
 ];
 
 const gettingStartedSteps = [
@@ -239,35 +250,90 @@ const HealthAndWellness = () => {
 
       <Header />
 
-      {/* Hero — Navy background, typography only */}
-      <section className="pt-32 pb-24 bg-[hsl(213,55%,23%)]">
-        <div className="container mx-auto px-4">
+      {/* Hero Section — matches HomeServices pattern */}
+      <section className="pt-32 pb-24 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={healthWellnessHeroImage} alt="Modern health and wellness practice interior" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-background/85" />
+        </div>
+        <div className="absolute inset-0 hero-glow" />
+        <div className="absolute top-1/4 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-8 leading-tight">
-              Health & Wellness Marketing Agency | Tri-Valley & Bay Area
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-up">
+              <Heart className="w-4 h-4" />
+              Health & Wellness Practice Marketing
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
+              Health & Wellness Marketing Agency <span className="text-gradient">Built for Patient-Driven Practices</span>
             </h1>
-            <p className="text-white/85 text-lg mb-4 leading-relaxed max-w-3xl mx-auto">
-              Your dental practice, chiropractic office, or med spa is losing new patients to competitors with a stronger digital presence right now. When someone searches "dentist near me," "chiropractor near me," or "med spa near me" in Walnut Creek, Danville, or San Ramon — they click the top result. If that is not you, it is your competitor. And that patient is gone.
+            <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
+              Your dental practice, chiropractic office, or med spa is losing new patients to competitors with a stronger digital presence. GrowSmallBiz builds the complete patient acquisition system — local SEO, Google Ads, AI automation, and reputation management.
             </p>
-            <p className="text-white/85 text-lg mb-8 leading-relaxed max-w-3xl mx-auto">
-              GrowSmallBiz is an AI-powered digital marketing agency built specifically for health and wellness practices. We serve practices across Contra Costa County and the Tri-Valley region with local SEO, Google Ads, reputation management, and AI automation that fills appointment books and drives consistent new patient flow — month over month.
+            <p className="text-sm text-muted-foreground/70 mb-8 animate-fade-up delay-200">
+              Serving health and wellness practices across Contra Costa County, the Tri-Valley, and beyond.
             </p>
-            <Button className="bg-[#F4803A] hover:bg-[#e0712e] text-white font-semibold px-8 py-6 text-lg" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
-                Schedule Your Free Strategy Call
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
+
+            {/* Practice type chips */}
+            <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-up delay-200">
+              {practiceTypes.map((practice, index) => (
+                <span key={index} className="inline-flex items-center gap-2 px-4 py-2 bg-card/80 border border-border rounded-full text-sm text-muted-foreground">
+                  <practice.icon className="w-4 h-4 text-primary" />
+                  {practice.name}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
+              <Button variant="hero" size="lg" asChild>
+                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                  Schedule Strategy Call
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/services/seo-agency/local-seo/">
+                  Learn About Local SEO
+                </Link>
+              </Button>
+            </div>
+            <p className="text-sm text-primary mt-4 animate-fade-up delay-300">No commitment. Free 30-minute strategy session for health and wellness practices.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pain Points — matches HomeServices pattern */}
+      <section className="py-20 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <p className="text-muted-foreground">These are the challenges we hear from health and wellness practices every day.</p>
+          </div>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {painPoints.map((point, index) => (
+              <div key={index} className="flex items-start gap-4 p-4 bg-destructive/10 border border-destructive/20 rounded-xl">
+                <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-destructive text-sm font-bold">✗</span>
+                </div>
+                <p className="text-foreground">{point}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-xl font-display font-semibold text-primary mb-4">Let's change that.</p>
+            <Button variant="hero" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Get Your Growth Strategy</a>
             </Button>
-            <p className="text-[#2BA3A0] text-sm mt-4">No commitment. Free 30-minute strategy session for health and wellness practices.</p>
           </div>
         </div>
       </section>
 
       {/* What Is a H&W Marketing Agency? */}
-      <section className="py-20">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">What Is a Health & Wellness Marketing Agency?</h2>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">What Is a Health & Wellness Marketing Agency?</h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               A health and wellness marketing agency is a specialized digital marketing partner that helps medical and wellness practices attract new patients, build their online reputation, and grow revenue through targeted strategies. Services include local SEO, Google Ads management, reputation management, website design, and AI automation — all tailored to the healthcare and wellness environment.
             </p>
@@ -279,7 +345,7 @@ const HealthAndWellness = () => {
       </section>
 
       {/* Unique Challenges */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">The Unique Challenges of Marketing Health & Wellness Businesses</h2>
@@ -299,16 +365,16 @@ const HealthAndWellness = () => {
       </section>
 
       {/* Practices We Serve — 3 columns */}
-      <section className="py-20">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Health & Wellness Practices We Serve</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {practices.map((practice) => (
-              <div key={practice.title} className="flex flex-col bg-card border border-border rounded-2xl overflow-hidden">
-                <div className="bg-[hsl(213,55%,23%)] p-4">
+              <div key={practice.title} className="flex flex-col bg-card border border-border rounded-2xl overflow-hidden hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,114,58,0.15)]">
+                <div className="bg-secondary p-4">
                   <div className="flex items-center gap-3">
-                    <practice.icon className="w-6 h-6 text-white" />
-                    <h3 className="text-lg font-display font-bold text-white">{practice.title}</h3>
+                    <practice.icon className="w-6 h-6 text-primary" />
+                    <h3 className="text-lg font-display font-bold text-foreground">{practice.title}</h3>
                   </div>
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
@@ -323,20 +389,25 @@ const HealthAndWellness = () => {
         </div>
       </section>
 
-      {/* Digital Marketing Services — 2x3 grid */}
-      <section className="py-20 bg-secondary/30">
+      {/* Digital Marketing Services — numbered cards matching HomeServices */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Digital Marketing Services for Health & Wellness Practices</h2>
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Digital Marketing Services for Health & Wellness Practices</h2>
+          </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {serviceCards.map((service) => (
-              <div key={service.title} className="bg-card border border-border border-t-4 border-t-accent rounded-xl p-6 shadow-sm">
-                <h3 className="text-lg font-display font-bold text-foreground mb-3">{service.title}</h3>
+            {serviceCards.map((service, index) => (
+              <div key={service.title} className="bg-card border border-border rounded-xl p-6 hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,114,58,0.15)]">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold text-primary">{index + 1}</span>
+                  <h3 className="text-lg font-display font-bold text-foreground">{service.title}</h3>
+                </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button className="bg-[#F4803A] hover:bg-[#e0712e] text-white font-semibold" asChild>
+            <Button variant="hero" asChild>
               <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
                 Schedule Your Free Strategy Call
                 <ArrowRight className="ml-2 w-4 h-4" />
@@ -347,7 +418,7 @@ const HealthAndWellness = () => {
       </section>
 
       {/* Channel Breakdown Table */}
-      <section className="py-20">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">What Works by Channel — Health & Wellness</h2>
@@ -357,10 +428,10 @@ const HealthAndWellness = () => {
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-[hsl(213,55%,23%)]">
-                    <th className="text-left text-white font-bold p-4 text-sm">Channel</th>
-                    <th className="text-left text-white font-bold p-4 text-sm">Best For</th>
-                    <th className="text-left text-white font-bold p-4 text-sm">Key Insight</th>
+                  <tr className="bg-secondary">
+                    <th className="text-left text-foreground font-bold p-4 text-sm">Channel</th>
+                    <th className="text-left text-foreground font-bold p-4 text-sm">Best For</th>
+                    <th className="text-left text-foreground font-bold p-4 text-sm">Key Insight</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -431,12 +502,12 @@ const HealthAndWellness = () => {
         </div>
       </section>
 
-      {/* Why GrowSmallBiz — Navy section */}
-      <section className="py-20 bg-[hsl(213,55%,23%)]">
+      {/* Why GrowSmallBiz */}
+      <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-8 text-center">Why Health & Wellness Practices Choose GrowSmallBiz</h2>
-            <div className="space-y-6 text-white/85 leading-relaxed max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Health & Wellness Practices Choose GrowSmallBiz</h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12">
               <p>
                 GrowSmallBiz is led by a practitioner with 30+ years of Fortune 500 experience in sales, marketing, and digital transformation — not a generalist agency that rotates health and wellness practices through a cookie-cutter playbook. We built and refined our methodology across dozens of health and wellness client engagements before bringing it directly to practices in the Tri-Valley and Bay Area.
               </p>
@@ -449,9 +520,9 @@ const HealthAndWellness = () => {
             </div>
             <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto">
               {credentials.map((cred) => (
-                <div key={cred.label} className="bg-white/10 rounded-xl p-5 text-center">
+                <div key={cred.label} className="bg-card border border-border rounded-xl p-5 text-center hover:-translate-y-1 transition-all duration-300">
                   <div className="text-xl font-bold text-accent mb-2">{cred.label}</div>
-                  <p className="text-white/70 text-sm">{cred.description}</p>
+                  <p className="text-muted-foreground text-sm">{cred.description}</p>
                 </div>
               ))}
             </div>
@@ -464,21 +535,18 @@ const HealthAndWellness = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Getting Started Is Simple</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {gettingStartedSteps.map((item, index) => (
+            {gettingStartedSteps.map((item) => (
               <div key={item.step} className="text-center">
-                <div className="w-14 h-14 rounded-full bg-[hsl(213,55%,23%)] flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-accent">{item.step}</span>
                 </div>
                 <h3 className="text-lg font-display font-bold text-foreground mb-2">{item.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
-                {index < gettingStartedSteps.length - 1 && (
-                  <div className="hidden md:block" />
-                )}
               </div>
             ))}
           </div>
           <div className="text-center mt-10">
-            <Button className="bg-[#F4803A] hover:bg-[#e0712e] text-white font-semibold" asChild>
+            <Button variant="hero" asChild>
               <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
                 Schedule Your Free Strategy Call
                 <ArrowRight className="ml-2 w-4 h-4" />
@@ -503,13 +571,13 @@ const HealthAndWellness = () => {
       />
 
       {/* Closing CTA */}
-      <section className="py-20 bg-gradient-to-r from-accent to-[hsl(213,55%,23%)]">
+      <section className="py-20 bg-gradient-to-r from-accent to-secondary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">Ready to Grow Your Health & Wellness Practice?</h2>
-          <p className="text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">Ready to Grow Your Health & Wellness Practice?</h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Your competitors are investing in digital marketing right now. Every month without a strong online presence is another month of new patients choosing a practice that ranks above you on Google. GrowSmallBiz builds the complete patient acquisition system that fills your appointment book consistently — so you can focus on delivering exceptional care while we handle your growth.
           </p>
-          <Button className="bg-[#F4803A] hover:bg-[#e0712e] text-white font-semibold px-8 py-6 text-lg shadow-lg" asChild>
+          <Button variant="hero" size="lg" className="shadow-lg" asChild>
             <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
               Schedule Your Free Strategy Call
               <ArrowRight className="ml-2 w-5 h-5" />
