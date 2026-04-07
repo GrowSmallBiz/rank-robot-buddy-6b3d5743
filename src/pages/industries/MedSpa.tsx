@@ -20,7 +20,6 @@ import {
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection";
-import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import medSpaHeroImage from "@/assets/industry-medspa-hero.jpg";

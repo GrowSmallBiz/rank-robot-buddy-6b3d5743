@@ -20,7 +20,6 @@ import {
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSection";
-import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import chiroHeroImage from "@/assets/industry-chiro-hero.jpg";
