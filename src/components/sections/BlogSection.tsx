@@ -210,7 +210,7 @@ export const medSpaBlogPosts: BlogPost[] = [
     title: "Instagram vs SEO: Which Drives More Med Spa Clients?",
     excerpt: "Compare the ROI of social media marketing versus SEO for medical spas and learn where to invest your budget.",
     category: "Marketing",
-    author: "Amanda Roberts",
+    author: "Subrata Guha",
     date: "Dec 22, 2025",
     readTime: "6 min read"
   },
