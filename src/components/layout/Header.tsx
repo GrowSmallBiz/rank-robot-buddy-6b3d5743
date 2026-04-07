@@ -12,6 +12,11 @@ export const Header = () => {
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isSeoSubOpen, setIsSeoSubOpen] = useState(false);
   const [isAdsSubOpen, setIsAdsSubOpen] = useState(false);
+  const [isIndHomeOpen, setIsIndHomeOpen] = useState(false);
+  const [isIndHealthOpen, setIsIndHealthOpen] = useState(false);
+  const [isIndProfOpen, setIsIndProfOpen] = useState(false);
+  const [isCsHomeOpen, setIsCsHomeOpen] = useState(false);
+  const [isCsHealthOpen, setIsCsHealthOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileCaseStudiesOpen, setMobileCaseStudiesOpen] = useState(false);
   const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false);
