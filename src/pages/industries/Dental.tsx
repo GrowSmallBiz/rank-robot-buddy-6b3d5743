@@ -189,23 +189,6 @@ const Dental = () => {
         </div>
       </section>
 
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Real Results for Real Practices</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Average results from our dental clients after 6 months.</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((result, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">{result.metric}</div>
-                <p className="text-muted-foreground">{result.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <WhyChooseSection 
         title="Why Choose GrowSmallBiz for Dental Marketing"
