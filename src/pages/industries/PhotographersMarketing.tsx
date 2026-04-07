@@ -3893,7 +3893,7 @@ const PhotographersMarketing = () => {
         posts={photographerBlogPosts}
         title="Photography Marketing Insights"
         subtitle="Tips and strategies to grow your photography studio"
-        viewAllLink="/blog"
+        viewAllLink=""
       />
 
       <ConsultationFormSection />
