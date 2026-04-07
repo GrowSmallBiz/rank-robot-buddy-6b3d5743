@@ -16,6 +16,7 @@ import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSe
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import chiroHeroImage from "@/assets/industry-chiro-hero.jpg";
+import { useUtm } from "@/hooks/use-utm";
 
 const services = [
   { title: "Condition-Based SEO", description: "Rank for high-intent searches like back pain, neck pain, sports injuries, and sciatica relief.", features: ["Condition-specific landing pages", "Symptom-based keyword targeting", "Treatment explanation content", "Patient education resources"] },
@@ -44,6 +45,8 @@ const faqs = [
 ];
 
 const Chiropractor = () => {
+  const { strategySessionUrl, freeAuditUrl } = useUtm();
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -88,7 +91,7 @@ const Chiropractor = () => {
             <p className="text-sm text-muted-foreground mb-8 animate-fade-up delay-200">Serving chiropractic practices across the United States.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                <a href={strategySessionUrl}>
                   Schedule Strategy Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
@@ -122,7 +125,7 @@ const Chiropractor = () => {
           <div className="text-center mt-12">
             <p className="text-xl font-display font-semibold text-primary mb-4">We can help you grow.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
+              <a href={strategySessionUrl}>Schedule Strategy Call</a>
             </Button>
           </div>
         </div>
@@ -268,7 +271,7 @@ const Chiropractor = () => {
       <CardCTA
         title="Ready to Fill Your Schedule?"
         description="Get a free strategy session and discover how to attract more patients seeking relief to your chiropractic practice."
-        buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+        buttonHref=strategySessionUrl
         buttonText="Schedule Strategy Call"
       />
 

@@ -16,6 +16,7 @@ import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection"
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import dentalHeroImage from "@/assets/industry-dental-hero.jpg";
+import { useUtm } from "@/hooks/use-utm";
 
 const services = [
   { title: "New Patient SEO", description: "Attract high-value patients searching for cosmetic dentistry, implants, and specialty services.", features: ["High-intent keyword targeting", "Procedure-specific landing pages", "Before/after gallery optimization", "Insurance & financing page SEO"] },
@@ -44,6 +45,8 @@ const faqs = [
 ];
 
 const Dental = () => {
+  const { strategySessionUrl, freeAuditUrl } = useUtm();
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -88,7 +91,7 @@ const Dental = () => {
             <p className="text-sm text-muted-foreground mb-8 animate-fade-up delay-200">Serving dental practices across the United States.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                <a href={strategySessionUrl}>
                   Schedule Strategy Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
@@ -122,7 +125,7 @@ const Dental = () => {
           <div className="text-center mt-12">
             <p className="text-xl font-display font-semibold text-primary mb-4">We can help you grow.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
+              <a href={strategySessionUrl}>Schedule Strategy Call</a>
             </Button>
           </div>
         </div>
@@ -272,7 +275,7 @@ const Dental = () => {
       <CardCTA
         title="Ready to Grow Your Dental Practice?"
         description="Get a free strategy session and see exactly how we'll help you attract more high-value patients to your dental practice."
-        buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+        buttonHref=strategySessionUrl
         buttonText="Schedule Strategy Call"
       />
 

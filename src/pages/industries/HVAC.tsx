@@ -16,6 +16,7 @@ import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import hvacHeroImage from "@/assets/industry-hvac-hero.jpg";
+import { useUtm } from "@/hooks/use-utm";
 
 const painPoints = [
   "Your competitors are in the top 3 on Google Maps — and you're not",
@@ -69,6 +70,8 @@ const faqs = [
 ];
 
 const HVAC = () => {
+  const { strategySessionUrl, freeAuditUrl } = useUtm();
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
@@ -126,7 +129,7 @@ const HVAC = () => {
             <p className="text-sm text-muted-foreground mb-8 animate-fade-up delay-200">Based in Danville, CA. Serving HVAC contractors across Contra Costa County, the Tri-Valley, and the Bay Area.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                <a href={strategySessionUrl}>
                   Schedule Strategy Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
@@ -159,7 +162,7 @@ const HVAC = () => {
           <div className="text-center mt-8">
             <p className="text-muted-foreground mb-6">None of that is a business problem. It's a marketing infrastructure problem. We fix it.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
+              <a href={strategySessionUrl}>Schedule Strategy Call</a>
             </Button>
           </div>
         </div>
@@ -233,7 +236,7 @@ const HVAC = () => {
           </div>
           <div className="text-center mt-12">
             <Button variant="hero" size="lg" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+              <a href={strategySessionUrl}>
                 Schedule Strategy Call
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
@@ -343,7 +346,7 @@ const HVAC = () => {
       <CardCTA
         title="Ready to Own Your Local HVAC Market?"
         description="The Map Pack positions your competitors hold right now weren't built in July. They were built in February and March — while you were busy running service calls. Let's build yours before the next peak season hits."
-        buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+        buttonHref=strategySessionUrl
         buttonText="Schedule Strategy Call"
       />
 
