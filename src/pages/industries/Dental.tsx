@@ -51,11 +51,6 @@ const painPoints = [
 ];
 
 
-const dentalTestimonials = [
-  { quote: "We've doubled our new patient flow and are finally attracting the cosmetic cases we want. The ROI has been incredible.", author: "Dr. Jennifer Park", role: "Owner", company: "Park Family Dentistry" },
-  { quote: "GrowSmallBiz helped us rank #1 for 'dental implants' in our city. We're now booking implant consultations every week.", author: "Dr. Robert Martinez", role: "Lead Dentist", company: "Smile Design Studio" },
-  { quote: "Our online visibility transformed completely. New patient inquiries increased by 280% within the first 4 months.", author: "Dr. Lisa Chen", role: "Practice Owner", company: "Bright Smile Dental" },
-];
 
 const faqs = [
   { question: "How long does it take to see more new patients from SEO?", answer: "Most dental practices see measurable increases in website traffic and appointment requests within 3-4 months. Significant new patient growth typically occurs within 6 months as we build your local authority and rankings." },
