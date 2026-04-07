@@ -18,9 +18,7 @@ import {
   Activity
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
-import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
@@ -49,18 +47,7 @@ const painPoints = [
   "Dependent on referrals without a steady organic pipeline"
 ];
 
-const results = [
-  { metric: "256%", label: "Increase in new patients" },
-  { metric: "43", label: "First page keywords" },
-  { metric: "48%", label: "Reduction in cost per lead" },
-  { metric: "4.9", label: "Average Google rating achieved" }
-];
 
-const chiroTestimonials = [
-  { quote: "We went from struggling to find new patients to having a consistent flow of quality leads. Our schedule is now full weeks in advance.", author: "Dr. Michael Torres", role: "Clinic Director", company: "Align Chiropractic & Wellness" },
-  { quote: "GrowSmallBiz helped us rank #1 for 'chiropractor' and 'back pain relief' in our city. The ROI has been phenomenal.", author: "Dr. Lisa Chang", role: "Owner", company: "Vitality Spine Center" },
-  { quote: "New patient appointments increased 250% in 5 months. We now have a waitlist for new patients.", author: "Dr. James Park", role: "Practice Owner", company: "Peak Performance Chiropractic" },
-];
 
 const faqs = [
   { question: "How long does it take to see more new patients from SEO?", answer: "Most chiropractic practices see measurable increases in website traffic within 2-3 months and new patient growth within 4-6 months. Local map pack improvements often occur faster as we optimize your Google Business Profile." },
@@ -70,34 +57,6 @@ const faqs = [
   { question: "What makes chiropractic SEO different from general healthcare SEO?", answer: "Chiropractic SEO requires understanding patient pain points, treatment-seeking behavior, and the wellness vs. medical positioning. We specialize in this niche and understand the patient journey from pain to relief." }
 ];
 
-const caseStudies = [
-  {
-    company: "Align Chiropractic & Wellness", location: "Portland, OR", industry: "Chiropractic Care",
-    challenge: "New patient numbers had plateaued. Practice was too dependent on referrals without a steady organic pipeline of patients seeking pain relief.",
-    timeframe: "5 months",
-    metrics: [
-      { label: "New Patients/Month", before: "18", after: "64", improvement: "+256%" },
-      { label: "Organic Website Traffic", before: "450/mo", after: "2,800/mo", improvement: "+522%" },
-      { label: "Back Pain Keywords Ranking", before: "Page 4", after: "#2", improvement: "Top 3" },
-      { label: "Monthly Revenue", before: "$32K", after: "$89K", improvement: "+178%" }
-    ],
-    quote: "We went from struggling to find new patients to having a consistent flow of quality leads.",
-    quoteName: "Dr. Michael Torres", quoteRole: "Clinic Director, Align Chiropractic"
-  },
-  {
-    company: "Vitality Spine Center", location: "Charlotte, NC", industry: "Sports & Spine Chiropractic",
-    challenge: "Wanted to specialize in sports injuries but couldn't rank for athletic-related keywords. Losing potential patients to physical therapy clinics.",
-    timeframe: "7 months",
-    metrics: [
-      { label: "Sports Injury Inquiries", before: "6/mo", after: "38/mo", improvement: "+533%" },
-      { label: "Chiropractor Near Me Rank", before: "#12", after: "#1", improvement: "Top Spot" },
-      { label: "Cost Per New Patient", before: "$120", after: "$18", improvement: "-85%" },
-      { label: "Patient Retention Rate", before: "45%", after: "78%", improvement: "+73%" }
-    ],
-    quote: "GrowSmallBiz helped us rank #1 for 'chiropractor' and 'back pain relief' in our city. The ROI has been phenomenal.",
-    quoteName: "Dr. Lisa Chang", quoteRole: "Owner, Vitality Spine Center"
-  }
-];
 
 const Chiropractor = () => {
   return (
@@ -132,7 +91,7 @@ const Chiropractor = () => {
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-up">
               <Activity className="w-4 h-4" />
-              Chiropractic Practice SEO
+              Chiropractic Practice Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
               Help More Patients Find <span className="text-gradient">Relief Through You</span>
@@ -175,7 +134,7 @@ const Chiropractor = () => {
           <div className="text-center mt-12">
             <p className="text-xl font-display font-semibold text-primary mb-4">We can help you grow.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Get Your Growth Strategy</a>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
             </Button>
           </div>
         </div>
@@ -227,23 +186,6 @@ const Chiropractor = () => {
         </div>
       </section>
 
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Real Results for Real Practices</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Average results from our chiropractic clients after 6 months.</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((result, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">{result.metric}</div>
-                <p className="text-muted-foreground">{result.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <WhyChooseSection 
         title="Why Choose GrowSmallBiz for Chiropractic Marketing"
@@ -259,19 +201,20 @@ const Chiropractor = () => {
         ]}
       />
 
-      <CaseStudySection 
-        caseStudies={caseStudies}
-        title="Chiropractic Success Stories"
-        subtitle="See how we've helped practices like yours attract more patients"
-        ctaLink="https://lp.growsmallbiz.io/digital-growth-strategy-session"
-        ctaText="Get Results Like These"
-      />
-
-      <TestimonialsSection 
-        testimonials={chiroTestimonials}
-        title="What Chiropractors Say About Us"
-        subtitle="See how chiropractic practices transform their patient acquisition"
-      />
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Chiropractic Client Results</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Schedule a strategy call to discuss documented results we've achieved for chiropractic clients.</p>
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       <FAQSection 
         faqs={faqs}

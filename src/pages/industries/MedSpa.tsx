@@ -18,9 +18,7 @@ import {
   Heart
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
-import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
@@ -81,33 +79,6 @@ const painPoints = [
   "Wasting money on ads without sustainable growth"
 ];
 
-const results = [
-  { metric: "324%", label: "Increase in consultations" },
-  { metric: "67", label: "First page keywords" },
-  { metric: "$127K", label: "Average monthly revenue increase" },
-  { metric: "4.9", label: "Average Google rating achieved" }
-];
-
-const medSpaTestimonials = [
-  {
-    quote: "Our consultation bookings tripled within 4 months. We're now fully booked for injectables and have a waitlist for laser treatments.",
-    author: "Dr. Amanda Foster",
-    role: "Medical Director",
-    company: "Radiance Aesthetics",
-  },
-  {
-    quote: "GrowSmallBiz positioned us as THE luxury med spa in our area. We're attracting exactly the high-value clients we wanted.",
-    author: "Nicole Richards",
-    role: "Owner",
-    company: "Glow Med Spa & Wellness",
-  },
-  {
-    quote: "Premium treatment bookings increased 280%. Our average client value doubled in just 6 months.",
-    author: "Dr. Lisa Park",
-    role: "Aesthetic Director",
-    company: "Elegance Med Spa",
-  },
-];
 
 const faqs = [
   {
@@ -132,40 +103,6 @@ const faqs = [
   }
 ];
 
-const caseStudies = [
-  {
-    company: "Radiance Aesthetics",
-    location: "Miami, FL",
-    industry: "Medical Spa & Injectables",
-    challenge: "Heavy reliance on Instagram wasn't generating consistent consultations. Competitors with less experience were ranking higher on Google.",
-    timeframe: "5 months",
-    metrics: [
-      { label: "Monthly Consultations", before: "28", after: "112", improvement: "+300%" },
-      { label: "Injectable Appointments", before: "45/mo", after: "156/mo", improvement: "+247%" },
-      { label: "Avg. Treatment Package", before: "$800", after: "$2,400", improvement: "+200%" },
-      { label: "Monthly Revenue", before: "$68K", after: "$215K", improvement: "+216%" }
-    ],
-    quote: "Our consultation bookings tripled within 4 months. We're now fully booked for injectables.",
-    quoteName: "Dr. Amanda Foster",
-    quoteRole: "Medical Director, Radiance Aesthetics"
-  },
-  {
-    company: "Glow Med Spa & Wellness",
-    location: "Scottsdale, AZ",
-    industry: "Luxury Med Spa",
-    challenge: "Wanted to position as a premium destination but was attracting price-shoppers. Needed to rank for high-end treatment searches.",
-    timeframe: "6 months",
-    metrics: [
-      { label: "High-Value Inquiries", before: "12/mo", after: "67/mo", improvement: "+458%" },
-      { label: "Laser Treatment Bookings", before: "8/mo", after: "42/mo", improvement: "+425%" },
-      { label: "Avg. Client Lifetime Value", before: "$1,200", after: "$4,800", improvement: "+300%" },
-      { label: "Google Reviews", before: "48", after: "187", improvement: "+290%" }
-    ],
-    quote: "GrowSmallBiz positioned us as THE luxury med spa in our area. We're attracting exactly the high-value clients we wanted.",
-    quoteName: "Nicole Richards",
-    quoteRole: "Owner, Glow Med Spa & Wellness"
-  }
-];
 
 const MedSpa = () => {
   return (
@@ -201,7 +138,7 @@ const MedSpa = () => {
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-up">
               <Sparkles className="w-4 h-4" />
-              Med Spa & Aesthetics SEO
+              Med Spa Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
               Become the <span className="text-gradient">Premier Med Spa</span> in Your Market
@@ -247,7 +184,7 @@ const MedSpa = () => {
           <div className="text-center mt-12">
             <p className="text-xl font-display font-semibold text-primary mb-4">Let's change that.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Get Your Growth Strategy</a>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
             </Button>
           </div>
         </div>
@@ -301,24 +238,6 @@ const MedSpa = () => {
         </div>
       </section>
 
-      {/* Results */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Real Results for Real Med Spas</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Average results from our med spa clients after 6 months.</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((result, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">{result.metric}</div>
-                <p className="text-muted-foreground">{result.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <WhyChooseSection 
         title="Why Choose GrowSmallBiz for Med Spa Marketing"
@@ -334,19 +253,20 @@ const MedSpa = () => {
         ]}
       />
 
-      <CaseStudySection 
-        caseStudies={caseStudies}
-        title="Med Spa Success Stories"
-        subtitle="See how we've helped aesthetic practices attract premium clients"
-        ctaLink="https://lp.growsmallbiz.io/digital-growth-strategy-session"
-        ctaText="Get Results Like These"
-      />
-
-      <TestimonialsSection 
-        testimonials={medSpaTestimonials}
-        title="What Med Spa Owners Say"
-        subtitle="See how aesthetic practices attract premium clients"
-      />
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Med Spa Client Results</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Schedule a strategy call to discuss documented results we've achieved for med spa clients.</p>
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       <FAQSection 
         faqs={faqs}

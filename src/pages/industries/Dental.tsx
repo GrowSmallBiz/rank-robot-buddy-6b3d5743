@@ -19,9 +19,7 @@ import {
   Shield
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
-import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
@@ -50,18 +48,7 @@ const painPoints = [
   "Paying too much for ineffective marketing"
 ];
 
-const results = [
-  { metric: "287%", label: "Increase in new patients" },
-  { metric: "52", label: "First page keywords" },
-  { metric: "$85K", label: "Average monthly production increase" },
-  { metric: "4.8", label: "Average Google rating achieved" }
-];
 
-const dentalTestimonials = [
-  { quote: "We've doubled our new patient flow and are finally attracting the cosmetic cases we want. The ROI has been incredible.", author: "Dr. Jennifer Park", role: "Owner", company: "Park Family Dentistry" },
-  { quote: "GrowSmallBiz helped us rank #1 for 'dental implants' in our city. We're now booking implant consultations every week.", author: "Dr. Robert Martinez", role: "Lead Dentist", company: "Smile Design Studio" },
-  { quote: "Our online visibility transformed completely. New patient inquiries increased by 280% within the first 4 months.", author: "Dr. Lisa Chen", role: "Practice Owner", company: "Bright Smile Dental" },
-];
 
 const faqs = [
   { question: "How long does it take to see more new patients from SEO?", answer: "Most dental practices see measurable increases in website traffic and appointment requests within 3-4 months. Significant new patient growth typically occurs within 6 months as we build your local authority and rankings." },
@@ -71,34 +58,6 @@ const faqs = [
   { question: "What makes dental SEO different from regular SEO?", answer: "Dental SEO requires understanding patient psychology, procedure-specific search intent, and healthcare compliance. We specialize in dental and healthcare marketing, so we understand these nuances." }
 ];
 
-const caseStudies = [
-  {
-    company: "Park Family Dentistry", location: "Seattle, WA", industry: "General & Cosmetic Dentistry",
-    challenge: "New patient flow had plateaued at 25/month. Wanted to attract more high-value cosmetic cases like veneers and implants instead of just cleanings.",
-    timeframe: "6 months",
-    metrics: [
-      { label: "New Patients/Month", before: "25", after: "72", improvement: "+188%" },
-      { label: "Cosmetic Case Inquiries", before: "3/mo", after: "18/mo", improvement: "+500%" },
-      { label: "Average Case Value", before: "$450", after: "$2,800", improvement: "+522%" },
-      { label: "Monthly Production", before: "$85K", after: "$178K", improvement: "+109%" }
-    ],
-    quote: "We've doubled our new patient flow and are finally attracting the cosmetic cases we want.",
-    quoteName: "Dr. Jennifer Park", quoteRole: "Owner, Park Family Dentistry"
-  },
-  {
-    company: "Smile Design Studio", location: "Phoenix, AZ", industry: "Implant & Cosmetic Dentistry",
-    challenge: "Competitors were outranking them for 'dental implants' despite having more experience. Website wasn't generating implant consultations.",
-    timeframe: "7 months",
-    metrics: [
-      { label: "Implant Consultations", before: "4/mo", after: "28/mo", improvement: "+600%" },
-      { label: "'Dental Implants' Ranking", before: "Page 3", after: "#1", improvement: "Top Spot" },
-      { label: "Implant Case Starts", before: "2/mo", after: "12/mo", improvement: "+500%" },
-      { label: "Implant Revenue", before: "$18K/mo", after: "$96K/mo", improvement: "+433%" }
-    ],
-    quote: "GrowSmallBiz helped us rank #1 for 'dental implants' in our city. We're now booking implant consultations every week.",
-    quoteName: "Dr. Robert Martinez", quoteRole: "Lead Dentist, Smile Design Studio"
-  }
-];
 
 const Dental = () => {
   return (
@@ -133,7 +92,7 @@ const Dental = () => {
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-up">
               <Smile className="w-4 h-4" />
-              Dental Practice SEO
+              Dental Practice Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
               Attract More <span className="text-gradient">High-Value Patients</span> to Your Practice
@@ -176,7 +135,7 @@ const Dental = () => {
           <div className="text-center mt-12">
             <p className="text-xl font-display font-semibold text-primary mb-4">We can help you grow.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Get Your Custom Growth Strategy</a>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
             </Button>
           </div>
         </div>
@@ -228,23 +187,6 @@ const Dental = () => {
         </div>
       </section>
 
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Real Results for Real Practices</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Average results from our dental clients after 6 months.</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {results.map((result, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">{result.metric}</div>
-                <p className="text-muted-foreground">{result.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <WhyChooseSection 
         title="Why Choose GrowSmallBiz for Dental Marketing"
@@ -260,19 +202,20 @@ const Dental = () => {
         ]}
       />
 
-      <CaseStudySection 
-        caseStudies={caseStudies}
-        title="Dental Practice Success Stories"
-        subtitle="See how we've helped practices like yours attract more high-value patients"
-        ctaLink="https://lp.growsmallbiz.io/digital-growth-strategy-session"
-        ctaText="Get Results Like These"
-      />
-
-      <TestimonialsSection 
-        testimonials={dentalTestimonials}
-        title="What Dentists Say About Us"
-        subtitle="See how dental practices transform their patient acquisition"
-      />
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Dental Practice Client Results</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Schedule a strategy call to discuss documented results we've achieved for dental clients.</p>
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       <FAQSection 
         faqs={faqs}

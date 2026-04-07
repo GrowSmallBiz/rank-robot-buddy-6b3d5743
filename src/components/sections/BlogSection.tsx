@@ -175,7 +175,7 @@ export const dentalBlogPosts: BlogPost[] = [
     title: "Dental SEO: Attracting High-Value Cosmetic Patients",
     excerpt: "Learn how to rank for lucrative cosmetic dentistry keywords and attract patients seeking premium treatments.",
     category: "Dental SEO",
-    author: "Dr. Emily Parker",
+    author: "Subrata Guha",
     date: "Dec 28, 2025",
     readTime: "8 min read"
   },
@@ -183,7 +183,7 @@ export const dentalBlogPosts: BlogPost[] = [
     title: "How to Rank #1 for 'Dentist Near Me' Searches",
     excerpt: "Local search dominance is essential for dental practices. Here's your complete guide to local SEO success.",
     category: "Local SEO",
-    author: "Michael Chen",
+    author: "Subrata Guha",
     date: "Dec 22, 2025",
     readTime: "6 min read"
   },
@@ -191,7 +191,7 @@ export const dentalBlogPosts: BlogPost[] = [
     title: "Building Patient Trust Through Online Reviews",
     excerpt: "Discover how top dental practices leverage online reviews to build credibility and attract new patients.",
     category: "Reputation",
-    author: "Sarah Mitchell",
+    author: "Subrata Guha",
     date: "Dec 18, 2025",
     readTime: "5 min read"
   }
@@ -202,7 +202,7 @@ export const medSpaBlogPosts: BlogPost[] = [
     title: "Med Spa SEO: Ranking for Botox and Filler Keywords",
     excerpt: "Learn how to dominate search results for high-value aesthetic treatment keywords and attract premium clients.",
     category: "Med Spa SEO",
-    author: "Dr. Jessica Liu",
+    author: "Subrata Guha",
     date: "Dec 28, 2025",
     readTime: "8 min read"
   },
@@ -210,7 +210,7 @@ export const medSpaBlogPosts: BlogPost[] = [
     title: "Instagram vs SEO: Which Drives More Med Spa Clients?",
     excerpt: "Compare the ROI of social media marketing versus SEO for medical spas and learn where to invest your budget.",
     category: "Marketing",
-    author: "Amanda Roberts",
+    author: "Subrata Guha",
     date: "Dec 22, 2025",
     readTime: "6 min read"
   },
@@ -218,7 +218,7 @@ export const medSpaBlogPosts: BlogPost[] = [
     title: "HIPAA-Compliant Marketing for Med Spas",
     excerpt: "Navigate the complexities of healthcare marketing while staying compliant with HIPAA regulations.",
     category: "Compliance",
-    author: "Michael Chen",
+    author: "Subrata Guha",
     date: "Dec 18, 2025",
     readTime: "5 min read"
   }
@@ -229,7 +229,7 @@ export const chiropractorBlogPosts: BlogPost[] = [
     title: "Chiropractic SEO: Ranking for Back Pain Keywords",
     excerpt: "Learn how to capture patients searching for back pain, neck pain, and spinal health solutions in your area.",
     category: "Chiro SEO",
-    author: "Dr. James Wilson",
+    author: "Subrata Guha",
     date: "Dec 28, 2025",
     readTime: "7 min read"
   },
@@ -237,7 +237,7 @@ export const chiropractorBlogPosts: BlogPost[] = [
     title: "Content Marketing for Chiropractors: What Works",
     excerpt: "Discover the content strategies that help chiropractic practices build authority and attract new patients.",
     category: "Content",
-    author: "Sarah Mitchell",
+    author: "Subrata Guha",
     date: "Dec 22, 2025",
     readTime: "6 min read"
   },
@@ -245,7 +245,7 @@ export const chiropractorBlogPosts: BlogPost[] = [
     title: "How to Get More Patient Referrals Through SEO",
     excerpt: "Combine the power of referral marketing with SEO to create a sustainable patient acquisition strategy.",
     category: "Marketing",
-    author: "Emily Rodriguez",
+    author: "Subrata Guha",
     date: "Dec 18, 2025",
     readTime: "5 min read"
   }
