@@ -5,17 +5,10 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
-  Heart,
-  TrendingUp, 
-  MapPin, 
-  Star, 
-  Users, 
-  Target, 
-  Calendar,
+  Activity,
   CheckCircle2,
   ArrowRight,
-  Bot,
-  Activity
+  Quote
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
@@ -23,20 +16,15 @@ import { BlogSection, chiropractorBlogPosts } from "@/components/sections/BlogSe
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import chiroHeroImage from "@/assets/industry-chiro-hero.jpg";
-import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-
-const benefits = [
-  { icon: MapPin, title: "Local Patient Acquisition", description: "Rank #1 for 'chiropractor near me', 'back pain relief', and wellness searches in your service area." },
-  { icon: Calendar, title: "New Patient Flow", description: "Convert searchers into scheduled appointments with optimized landing pages and booking systems." },
-  { icon: Bot, title: "AI Search Visibility", description: "Get recommended when patients ask AI assistants 'Who's the best chiropractor for lower back pain?'" },
-  { icon: Star, title: "Trust & Authority", description: "Build credibility with patient reviews and educational content that positions you as the expert." }
-];
 
 const services = [
   { title: "Condition-Based SEO", description: "Rank for high-intent searches like back pain, neck pain, sports injuries, and sciatica relief.", features: ["Condition-specific landing pages", "Symptom-based keyword targeting", "Treatment explanation content", "Patient education resources"] },
   { title: "Local Practice Visibility", description: "Own the local search results when patients look for chiropractic care in your area.", features: ["Google Business Profile optimization", "Local citation consistency", "Review generation campaigns", "Community authority building"] },
   { title: "AI & Voice Search Ready", description: "Be the recommended chiropractor when patients ask smart devices about pain relief.", features: ["Answer Engine Optimization", "FAQ schema implementation", "Conversational content strategy", "Featured snippet targeting"] },
-  { title: "Patient Journey Optimization", description: "Guide potential patients from first search to scheduled appointment seamlessly.", features: ["Online scheduling integration", "New patient specials pages", "Insurance information SEO", "First visit preparation content"] }
+  { title: "Patient Journey Optimization", description: "Guide potential patients from first search to scheduled appointment seamlessly.", features: ["Online scheduling integration", "New patient specials pages", "Insurance information SEO", "First visit preparation content"] },
+  { title: "Google Local Services Ads (LSA)", description: "Google Guaranteed badge placement above standard Google Ads for high-intent chiropractic searches.", features: ["Trust-dependent decision support", "Google Guaranteed badge", "Pay-per-lead model", "Increased call rates for new patients"] },
+  { title: "Meta & Facebook Ads", description: "Reach wellness-minded patients before they're in acute pain.", features: ["Gym-goer & athlete targeting", "Health-conscious family outreach", "Wellness habit formation campaigns", "Community event promotion"] },
+  { title: "CRM & Wellness Plan Automation", description: "Close the recurring revenue gap with automated patient retention.", features: ["Wellness plan onboarding sequences", "Lapsed patient reactivation (30/60/90 day)", "Post-discharge follow-up", "Referral request automation"] }
 ];
 
 const painPoints = [
@@ -47,23 +35,20 @@ const painPoints = [
   "Dependent on referrals without a steady organic pipeline"
 ];
 
-
-
 const faqs = [
-  { question: "How long does it take to see more new patients from SEO?", answer: "Most chiropractic practices see measurable increases in website traffic within 2-3 months and new patient growth within 4-6 months. Local map pack improvements often occur faster as we optimize your Google Business Profile." },
-  { question: "Can you help us rank for specific conditions like sciatica or sports injuries?", answer: "Absolutely! We create dedicated landing pages for each condition and treatment you specialize in, targeting patients actively searching for relief from specific symptoms." },
-  { question: "Do you work with multi-location chiropractic groups?", answer: "Yes! We have experience with both single-location practices and multi-location chiropractic groups. We create location-specific strategies while maintaining brand consistency." },
-  { question: "How do you help us compete with larger chiropractic chains?", answer: "We focus on your unique strengths—personalized care, specific specialties, community presence—and build content and SEO strategies that highlight what makes your practice special." },
-  { question: "What makes chiropractic SEO different from general healthcare SEO?", answer: "Chiropractic SEO requires understanding patient pain points, treatment-seeking behavior, and the wellness vs. medical positioning. We specialize in this niche and understand the patient journey from pain to relief." }
+  { question: "How long does it take to see more new patients from SEO?", answer: "Most chiropractic clients see measurable Map Pack ranking improvement within 60 to 90 days. Significant new patient volume develops over 3 to 5 months in competitive markets. Condition-specific landing pages accelerate this by targeting lower-competition, higher-intent searches like 'sciatica chiropractor [city]' that rank faster than broad 'chiropractor near me' terms." },
+  { question: "Can you help us rank for specific conditions like sciatica or sports injuries?", answer: "Yes. Every condition your practice addresses deserves its own optimized page with its own local keyword target. We build condition-specific pages for back pain, neck pain, sciatica, sports injuries, prenatal chiropractic, headaches, and auto accident injury — each targeting the exact search intent of that patient type." },
+  { question: "Do you work with multi-location chiropractic groups?", answer: "Yes. Multi-location chiropractic practices require separate Google Business Profile management per location, location-specific landing pages, and a citation strategy that builds authority for each location independently while supporting the overall brand." },
+  { question: "How do you help us compete with larger chiropractic chains?", answer: "Larger chains have volume but lack the local community trust and personalization that independent practices can own. We build your local Map Pack authority, review velocity, and condition-specific content depth to outrank chain practices for the high-intent searches that drive the most new patient bookings." },
+  { question: "What makes chiropractic SEO different from general healthcare SEO?", answer: "Chiropractic SEO requires condition-specific page architecture that matches each patient's search intent — acute pain, sports injury, wellness care, prenatal. It also requires a dual-funnel approach: converting the patient searching for immediate pain relief while also building authority for wellness and maintenance care searches that attract longer-term, higher-value patients." }
 ];
-
 
 const Chiropractor = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Chiropractor SEO Services | Grow Your Practice | GrowSmallBiz</title>
-        <meta name="description" content="Grow your chiropractic practice with specialized SEO. Rank #1 for back pain, neck pain, and 'chiropractor near me' searches. Get more new patients." />
+        <title>Chiropractic Marketing Agency | Local SEO, Google Ads & Patient Retention</title>
+        <meta name="description" content="GrowSmallBiz is a chiropractic marketing agency delivering local SEO, condition-specific Google Ads, and CRM automation that fills your schedule and builds recurring wellness revenue. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/chiropractic-marketing/" />
       </Head>
       <ServiceJsonLd
@@ -94,11 +79,13 @@ const Chiropractor = () => {
               Chiropractic Practice Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Help More Patients Find <span className="text-gradient">Relief Through You</span>
+              Full-Service Chiropractic Marketing Built to{" "}
+              <span className="text-gradient">Fill Your Schedule</span> With New and Returning Patients
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 animate-fade-up delay-200 max-w-2xl mx-auto">
-              Rank #1 for back pain, neck pain, and chiropractic searches. Build a steady stream of new patients seeking your care.
+            <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
+              GrowSmallBiz gives chiropractic practices every digital marketing tool they need — to attract new patients through condition-specific local search, convert them to wellness plans, and build the recurring revenue model that makes your practice resilient.
             </p>
+            <p className="text-sm text-muted-foreground mb-8 animate-fade-up delay-200">Serving chiropractic practices across the United States.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
                 <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
@@ -115,6 +102,55 @@ const Chiropractor = () => {
         </div>
       </section>
 
+      {/* Why Chiropractic Practices Need a Specialized Marketing Partner */}
+      <section className="py-24 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Chiropractic Practices Need a Specialized Marketing Partner</h2>
+            <p className="text-muted-foreground mb-8 text-lg">
+              Most marketing agencies treat chiropractors like restaurants or retail shops. They don't understand the difference between a new acute pain patient and a wellness plan conversion. They don't know that 'sciatica relief [city]' and 'chiropractor near me' require completely different landing pages.
+            </p>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Two Distinct Patient Types — Two Distinct Strategies</h3>
+                <p className="text-muted-foreground">The acute pain patient is in pain now, needs help today, and makes a fast decision based on availability, location, and reviews. The wellness patient evaluates providers carefully and commits to ongoing care based on trust and demonstrated outcomes. A single-strategy approach serves neither well.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Condition-Specific Search Requires Condition-Specific Pages</h3>
+                <p className="text-muted-foreground">A patient searching 'back pain chiropractor near me' is different from 'sports injury chiropractor' or 'prenatal chiropractic.' Each search represents a distinct patient need and requires a distinct landing page. Practices with condition-specific pages consistently outrank those relying on a single homepage.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">The Recurring Revenue Gap Is the Biggest Missed Opportunity</h3>
+                <p className="text-muted-foreground">The 'I feel better, I'll stop coming' drop-off costs the average chiropractic practice tens of thousands of dollars in lost recurring revenue every year. Marketing that focuses only on new patient acquisition misses the retention revenue that makes a practice financially resilient.</p>
+              </div>
+            </div>
+            <div className="mt-10 p-6 bg-card border border-border rounded-2xl">
+              <div className="flex gap-3">
+                <Quote className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <p className="text-foreground italic">Most chiropractic practices grow on referrals — until something changes. The practices that survive and thrive are the ones that built an independent digital presence before they needed it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Does a Chiropractic Marketing Agency Do? */}
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">What Does a Chiropractic Marketing Agency Do?</h2>
+            <p className="text-muted-foreground mb-6 text-lg text-center max-w-3xl mx-auto">
+              A chiropractic marketing agency manages the full spectrum of digital marketing for chiropractic practices — from local SEO and Google Map Pack visibility to condition-specific paid advertising, patient retention automation, and reputation management.
+            </p>
+            <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto">
+              For chiropractic practices specifically, this means building strategies that address both emergency-intent searches and long-term patient retention — because the recurring wellness patient is where sustainable practice revenue is built.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pain Points */}
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -140,31 +176,11 @@ const Chiropractor = () => {
         </div>
       </section>
 
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Why Chiropractors Choose Us</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">We specialize in helping chiropractic practices attract more patients seeking relief.</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="bg-card border border-border rounded-2xl p-6 card-hover">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <benefit.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="text-xl font-display font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Services */}
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Our Chiropractic SEO Solutions</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Chiropractic Marketing Services from GrowSmallBiz</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to attract more patients seeking relief.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -186,39 +202,52 @@ const Chiropractor = () => {
         </div>
       </section>
 
+      {/* Chiropractic Practice Results */}
+      <section className="py-24 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Chiropractic Practice Results</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">The following results are drawn from verified client engagements.</p>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/health-and-wellness-practices/chiropractic-marketing/case-study/">
+                View AI SEO Case Study →
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
-      <WhyChooseSection 
-        title="Why Choose GrowSmallBiz for Chiropractic Marketing"
-        subtitle="Your Chiropractic Marketing Partner"
-        description="We specialize in helping chiropractic practices attract new patients, build trust through education, and become the go-to wellness provider in your community."
-        items={[
-          { title: "Chiropractic Experts", description: "We focus exclusively on chiropractic practices—we know what works for wellness and pain relief marketing.", icon: Heart },
-          { title: "New Patient Flow", description: "Attract patients seeking back pain relief, sports injuries, wellness care, and family chiropractic.", icon: Users },
-          { title: "Educational Authority", description: "Build trust through content that positions you as the expert in spinal health and wellness.", icon: Activity },
-          { title: "Local SEO Domination", description: "Rank #1 for 'chiropractor near me' and condition-specific searches in your area.", icon: MapPin },
-          { title: "AI Search Ready", description: "Get recommended when patients ask AI assistants about back pain and chiropractic care.", icon: Bot },
-          { title: "Proven Growth", description: "Our chiropractic clients typically see 2-3x more new patient inquiries within 90 days.", icon: TrendingUp },
-        ]}
-      />
-
+      {/* Why Chiropractic Practices Choose GrowSmallBiz */}
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Chiropractic Client Results</h2>
-            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Schedule a strategy call to discuss documented results we've achieved for chiropractic clients.</p>
-            <Button variant="hero" size="lg" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
-                Schedule Strategy Call
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Button>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Chiropractic Practices Choose GrowSmallBiz</h2>
+            <div className="space-y-6">
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">We Understand Both Patient Types</h3>
+                <p className="text-muted-foreground">We build chiropractic marketing systems designed around how patients actually find, evaluate, and commit to a chiropractor — and how to keep them coming back. Acute pain campaigns and wellness plan conversion are built as separate strategies that work together.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Exclusive Leads</h3>
+                <p className="text-muted-foreground">We don't sell shared leads. Everything we build generates exclusive patient inquiries that come directly to you — not to you and three competing practices simultaneously.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Complete System</h3>
+                <p className="text-muted-foreground">Local SEO, website design, Google Ads, LSA, reputation management, AI Receptionist, and CRM automation — fully integrated. No gaps between your ad spend and your patient follow-up system.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Experience</h3>
+                <p className="text-muted-foreground">GrowSmallBiz is led by a practitioner with 30+ years of Fortune 500 experience in sales, marketing, and digital transformation — applied directly to your patient acquisition and retention strategy.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <FAQSection 
         faqs={faqs}
-        title="Chiropractic SEO FAQs"
+        title="Chiropractic Marketing FAQs"
         subtitle="Common questions from chiropractors"
         schemaType="FAQPage"
         contactCTA={{
@@ -237,7 +266,7 @@ const Chiropractor = () => {
       />
 
       <CardCTA
-        title="Ready to Help More Patients?"
+        title="Ready to Fill Your Schedule?"
         description="Get a free strategy session and discover how to attract more patients seeking relief to your chiropractic practice."
         buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
         buttonText="Schedule Strategy Call"
