@@ -1284,7 +1284,7 @@ const PhotographersMarketing = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
-                <Link to="/free-assessment?industry=photographer">
+                <Link to={strategySessionUrl}>
                   Get Your Free Portfolio Audit
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
@@ -1479,7 +1479,7 @@ const PhotographersMarketing = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                     <Button variant="hero" size="xl" asChild>
-                      <Link to="/free-assessment?industry=photographer">
+                      <Link to={strategySessionUrl}>
                         Get Your Free Strategy Session
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </Link>
@@ -1627,7 +1627,7 @@ const PhotographersMarketing = () => {
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="hero" size="lg" asChild>
-                  <Link to="/free-assessment?industry=photographers" className="inline-flex items-center gap-2">
+                  <Link to={strategySessionUrl} className="inline-flex items-center gap-2">
                     Free AI + Google SEO Audit
                     <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -2080,7 +2080,7 @@ const PhotographersMarketing = () => {
         title="See Where You Rank — Free SEO Visibility Audit"
         description="Find out exactly where your photography studio appears in local search results. Get a detailed report showing your rankings, competitors, and quick wins to climb higher."
         buttonText="Get SEO Visibility Report"
-        buttonHref="/free-assessment"
+        buttonHref={strategySessionUrl}
         accentWords={["Free", "SEO Visibility Audit"]}
         sectionClassName="py-16"
       />
@@ -3736,7 +3736,7 @@ const PhotographersMarketing = () => {
         caseStudies={caseStudies}
         title="Photographer Success Stories"
         subtitle="See how we've helped photographers like you get found and booked"
-        ctaLink="/free-assessment?industry=photographer"
+        ctaLink={strategySessionUrl}
         ctaText="Get Results Like These"
       />
 
@@ -3922,7 +3922,7 @@ const PhotographersMarketing = () => {
         title="Ready for Photography Marketing That Fills Your Calendar?"
         description="Let's discuss a custom photography marketing strategy to attract dream clients and book more sessions consistently."
         buttonText="Get Your Custom Growth Strategy"
-        buttonHref="/free-assessment?industry=photographer"
+        buttonHref={strategySessionUrl}
         accentWords={["Fills", "Your", "Calendar"]}
         showAfterScroll={800}
       />
