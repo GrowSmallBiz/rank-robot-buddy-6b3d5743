@@ -60,34 +60,6 @@ const faqs = [
   { question: "What makes dental SEO different from regular SEO?", answer: "Dental SEO requires understanding patient psychology, procedure-specific search intent, and healthcare compliance. We specialize in dental and healthcare marketing, so we understand these nuances." }
 ];
 
-const caseStudies = [
-  {
-    company: "Park Family Dentistry", location: "Seattle, WA", industry: "General & Cosmetic Dentistry",
-    challenge: "New patient flow had plateaued at 25/month. Wanted to attract more high-value cosmetic cases like veneers and implants instead of just cleanings.",
-    timeframe: "6 months",
-    metrics: [
-      { label: "New Patients/Month", before: "25", after: "72", improvement: "+188%" },
-      { label: "Cosmetic Case Inquiries", before: "3/mo", after: "18/mo", improvement: "+500%" },
-      { label: "Average Case Value", before: "$450", after: "$2,800", improvement: "+522%" },
-      { label: "Monthly Production", before: "$85K", after: "$178K", improvement: "+109%" }
-    ],
-    quote: "We've doubled our new patient flow and are finally attracting the cosmetic cases we want.",
-    quoteName: "Dr. Jennifer Park", quoteRole: "Owner, Park Family Dentistry"
-  },
-  {
-    company: "Smile Design Studio", location: "Phoenix, AZ", industry: "Implant & Cosmetic Dentistry",
-    challenge: "Competitors were outranking them for 'dental implants' despite having more experience. Website wasn't generating implant consultations.",
-    timeframe: "7 months",
-    metrics: [
-      { label: "Implant Consultations", before: "4/mo", after: "28/mo", improvement: "+600%" },
-      { label: "'Dental Implants' Ranking", before: "Page 3", after: "#1", improvement: "Top Spot" },
-      { label: "Implant Case Starts", before: "2/mo", after: "12/mo", improvement: "+500%" },
-      { label: "Implant Revenue", before: "$18K/mo", after: "$96K/mo", improvement: "+433%" }
-    ],
-    quote: "GrowSmallBiz helped us rank #1 for 'dental implants' in our city. We're now booking implant consultations every week.",
-    quoteName: "Dr. Robert Martinez", quoteRole: "Lead Dentist, Smile Design Studio"
-  }
-];
 
 const Dental = () => {
   return (
