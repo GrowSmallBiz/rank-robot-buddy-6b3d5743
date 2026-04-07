@@ -237,7 +237,7 @@ export const chiropractorBlogPosts: BlogPost[] = [
     title: "Content Marketing for Chiropractors: What Works",
     excerpt: "Discover the content strategies that help chiropractic practices build authority and attract new patients.",
     category: "Content",
-    author: "Sarah Mitchell",
+    author: "Subrata Guha",
     date: "Dec 22, 2025",
     readTime: "6 min read"
   },
