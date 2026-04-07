@@ -356,7 +356,7 @@ export const Header = () => {
                 </Link>
 
                 <div className="border-t border-border my-2" />
-                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness</p>
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness Practices</p>
                 <Link
                   to="/health-and-wellness-practices/med-spa-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
@@ -653,7 +653,7 @@ export const Header = () => {
                   onClick={() => setMobileCsHealthOpen(!mobileCsHealthOpen)}
                   className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
                 >
-                  Health & Wellness
+                  Health & Wellness Practices
                   <ChevronDown className={`w-3 h-3 transition-transform ${mobileCsHealthOpen ? "rotate-180" : ""}`} />
                 </button>
                 {mobileCsHealthOpen && (

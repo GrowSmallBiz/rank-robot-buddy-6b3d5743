@@ -13,6 +13,7 @@ import { PdfViewer } from "@/components/PdfViewerWrapper";
 import { useState, useEffect, useRef } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import chiroHero from "@/assets/case-study-chiro-hero.jpg";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -112,6 +113,7 @@ const ChiropracticCaseStudy = () => {
           subtitle="Explore documented AI SEO results for a chiropractic practice across Google Analytics, Google Search Console, and Google Business Profile. 5-month campaign with verified data across all three measurement sources."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
+          backgroundImage={chiroHero}
           overlayOpacity={85}
         />
 
