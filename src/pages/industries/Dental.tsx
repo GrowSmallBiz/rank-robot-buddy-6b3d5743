@@ -6,17 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
   Smile,
-  TrendingUp, 
-  MapPin, 
-  Star, 
-  Users, 
-  Target, 
-  Calendar,
   CheckCircle2,
   ArrowRight,
-  Bot,
-  Search,
-  Shield
+  Quote
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
@@ -24,20 +16,15 @@ import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection"
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import dentalHeroImage from "@/assets/industry-dental-hero.jpg";
-import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-
-const benefits = [
-  { icon: MapPin, title: "Local Patient Acquisition", description: "Rank #1 for 'dentist near me', 'emergency dentist', and cosmetic procedure searches in your area." },
-  { icon: Calendar, title: "More Appointment Bookings", description: "Convert website visitors into booked appointments with optimized landing pages and clear calls-to-action." },
-  { icon: Bot, title: "AI Search Visibility", description: "Get recommended when patients ask AI assistants 'Who's the best dentist for veneers in [city]?'" },
-  { icon: Star, title: "Reputation Excellence", description: "Build and showcase your 5-star reviews to become the most trusted practice in your community." }
-];
 
 const services = [
   { title: "New Patient SEO", description: "Attract high-value patients searching for cosmetic dentistry, implants, and specialty services.", features: ["High-intent keyword targeting", "Procedure-specific landing pages", "Before/after gallery optimization", "Insurance & financing page SEO"] },
   { title: "Local Map Pack Domination", description: "Own the Google Map Pack when patients search for dentists in your area.", features: ["Google Business Profile optimization", "Local citation consistency", "Review generation campaigns", "Competitor displacement strategies"] },
   { title: "AI & Voice Search Ready", description: "Be the recommended dentist when patients ask Alexa, Siri, or ChatGPT for help.", features: ["Answer Engine Optimization", "FAQ schema implementation", "Conversational content strategy", "Featured snippet targeting"] },
-  { title: "Conversion Optimization", description: "Turn website visitors into booked appointments and consultations.", features: ["Online booking integration", "Mobile optimization", "Trust signal placement", "Patient journey optimization"] }
+  { title: "Conversion Optimization", description: "Turn website visitors into booked appointments and consultations.", features: ["Online booking integration", "Mobile optimization", "Trust signal placement", "Patient journey optimization"] },
+  { title: "Google Local Services Ads (LSA)", description: "Google Guaranteed badge placement above organic results for high-intent dental searches.", features: ["Highest-trust ad format for healthcare", "Pay per lead, not per click", "Google Guaranteed badge", "Emergency search prominence"] },
+  { title: "CRM & Recall Automation", description: "Automated patient follow-ups, recall reminders, reactivation campaigns, and referral request sequences.", features: ["Patient retention improvement", "Lifetime patient value increase", "Recall reminder automation", "Referral request sequences"] },
+  { title: "Answer Engine Optimization (AEO)", description: "Optimizes your content and schema markup for AI-powered search responses from Siri, ChatGPT, and Google AI.", features: ["AI search response optimization", "Voice search capture", "Schema markup implementation", "Growing AI patient discovery"] }
 ];
 
 const painPoints = [
@@ -48,23 +35,20 @@ const painPoints = [
   "Paying too much for ineffective marketing"
 ];
 
-
-
 const faqs = [
-  { question: "How long does it take to see more new patients from SEO?", answer: "Most dental practices see measurable increases in website traffic and appointment requests within 3-4 months. Significant new patient growth typically occurs within 6 months as we build your local authority and rankings." },
-  { question: "Can you help us rank for high-value procedures like implants and cosmetic dentistry?", answer: "Absolutely! We specialize in targeting high-intent, high-value procedure keywords. We create dedicated landing pages for each service and optimize them for both patients and search engines." },
-  { question: "Do you work with multi-location dental groups?", answer: "Yes! We have extensive experience with DSOs and multi-location practices. We create location-specific strategies while maintaining brand consistency across all locations." },
-  { question: "How do you help us get more Google reviews?", answer: "We implement review generation systems that make it easy for happy patients to leave reviews. This includes automated follow-up sequences, review request templates, and response strategies for all reviews." },
-  { question: "What makes dental SEO different from regular SEO?", answer: "Dental SEO requires understanding patient psychology, procedure-specific search intent, and healthcare compliance. We specialize in dental and healthcare marketing, so we understand these nuances." }
+  { question: "How long does it take to see more new patients from SEO?", answer: "Most dental practices see meaningful Map Pack ranking improvements within 60 to 90 days. Google Ads and Local Services Ads deliver new patient inquiries within 2 to 4 weeks of campaign launch — making the combination of paid and organic the fastest path to sustained patient growth." },
+  { question: "Can you help us rank for high-value procedures like implants and cosmetic dentistry?", answer: "Yes. Each high-value procedure requires its own dedicated landing page optimized for procedure-specific searches — 'dental implants [city],' 'veneers near me,' 'Invisalign [city].' We build and optimize procedure-specific pages for every service you offer, each targeting the right patient intent at the right stage of their decision." },
+  { question: "Do you work with multi-location dental groups?", answer: "Yes. Multi-location SEO requires separate Google Business Profile management per location, location-specific landing pages, and citation consistency across all locations. We build multi-location patient acquisition systems for growing dental groups." },
+  { question: "How do you help us get more Google reviews?", answer: "We automate review requests after every completed appointment through your CRM system. Patients receive a personalized request at the moment of highest satisfaction — immediately after a positive visit. We also monitor your reputation across Google and Healthgrades and manage your response strategy to build the review profile that converts Map Pack impressions into booked appointments." },
+  { question: "What makes dental SEO different from regular SEO?", answer: "Dental SEO operates under Google's YMYL (Your Money or Your Life) content standards, which apply stricter quality requirements to health-related websites. Strong E-E-A-T signals — Experience, Expertise, Authoritativeness, Trustworthiness — are required to rank well. Dental SEO also requires HIPAA-compliant content practices, procedure-specific page architecture, and local citation strategies that account for healthcare-specific directories like Healthgrades." }
 ];
-
 
 const Dental = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Dental Practice SEO Services | Attract More Patients | GrowSmallBiz</title>
-        <meta name="description" content="Grow your dental practice with specialized SEO. Rank #1 for cosmetic dentistry, dental implants, and 'dentist near me' searches. Get more new patients." />
+        <title>Dental Marketing Agency | Local SEO, Google Ads & Patient Acquisition</title>
+        <meta name="description" content="GrowSmallBiz is a dental marketing agency that helps independent dental practices attract new patients, build five-star reputations, and implement systems that increase revenue. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/dental-marketing/" />
       </Head>
       <ServiceJsonLd
@@ -95,11 +79,13 @@ const Dental = () => {
               Dental Practice Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Attract More <span className="text-gradient">High-Value Patients</span> to Your Practice
+              Full-Service Dental Marketing Agency Built to{" "}
+              <span className="text-gradient">Grow Your Practice</span> With Proven Patient Acquisition
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 animate-fade-up delay-200 max-w-2xl mx-auto">
-              Rank #1 for cosmetic procedures, implants, and new patient searches. Build a sustainable patient acquisition machine.
+            <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
+              GrowSmallBiz is a dental marketing agency that helps independent dental practices attract new patients, build five-star reputations, and implement systems that increase revenue — all managed through a single integrated vendor.
             </p>
+            <p className="text-sm text-muted-foreground mb-8 animate-fade-up delay-200">Serving dental practices across the United States.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
                 <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
@@ -116,6 +102,59 @@ const Dental = () => {
         </div>
       </section>
 
+      {/* Why Dental Practices Need a Specialized Marketing Agency */}
+      <section className="py-24 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Dental Practices Need a Specialized Marketing Agency</h2>
+            <p className="text-muted-foreground mb-8 text-lg">
+              Dental marketing requires specialized knowledge of patient psychology, local search behavior, and healthcare compliance. Generic marketing agencies apply one-size-fits-all tactics that don't account for how dental patients actually make decisions.
+            </p>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">77% of Patients Search Online Before Choosing a Dentist</h3>
+                <p className="text-muted-foreground">According to the American Dental Association, the overwhelming majority of prospective patients research online before booking. Your Google Business Profile, reviews, and website are doing the selling before you ever speak to a patient.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">HIPAA Compliance Is Non-Negotiable</h3>
+                <p className="text-muted-foreground">Dental advertising operates under HIPAA restrictions that limit what patient information can be used in marketing. Patient photos, testimonials, and identifiable information require explicit written consent. An agency without healthcare marketing experience creates legal exposure for your practice.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Procedure-Specific Marketing Requires Deep Niche Knowledge</h3>
+                <p className="text-muted-foreground">A patient searching 'dental implants' is at a completely different stage than one searching 'teeth cleaning near me.' Each requires a different landing page, different messaging, and different conversion strategy.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Trust Signals Determine Who Gets the Call</h3>
+                <p className="text-muted-foreground">Verified reviews, professional credentials, HIPAA compliance signals, and before/after imagery (with consent) are the trust indicators that convert a Google impression into a booked appointment.</p>
+              </div>
+            </div>
+            <div className="mt-10 p-6 bg-card border border-border rounded-2xl">
+              <div className="flex gap-3">
+                <Quote className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <p className="text-foreground italic">A dental patient checks your Google ranking, reads your reviews, and evaluates your website — all before they dial. Your marketing wins or loses the patient before you ever speak to them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Does a Dental Marketing Agency Do? */}
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">What Does a Dental Marketing Agency Do?</h2>
+            <p className="text-muted-foreground mb-6 text-lg text-center max-w-3xl mx-auto">
+              A dental marketing agency manages the full spectrum of digital patient acquisition for dental practices — from local SEO and Google Map Pack visibility to Google Ads management, website design, reputation management, and patient retention automation.
+            </p>
+            <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto">
+              For dental practices specifically, this means building strategies that address multiple patient types simultaneously: the emergency patient who needs care today, the cosmetic patient evaluating options over weeks, the family looking for a long-term practice, and the existing patient who needs recall and reactivation. Each requires a distinct approach.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pain Points */}
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -141,31 +180,11 @@ const Dental = () => {
         </div>
       </section>
 
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Why Dental Practices Choose Us</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">We specialize in helping dental practices attract more high-value patients.</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="bg-card border border-border rounded-2xl p-6 card-hover">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <benefit.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="text-xl font-display font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Services */}
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Our Dental Practice SEO Solutions</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Dental Marketing Services from GrowSmallBiz</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to attract, convert, and retain high-value patients.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -187,39 +206,52 @@ const Dental = () => {
         </div>
       </section>
 
+      {/* Dental Patient Acquisition Results */}
+      <section className="py-24 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Dental Patient Acquisition Results</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">The following results are drawn from verified client engagements.</p>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/health-and-wellness-practices/dental-marketing/case-study/">
+                View Dental Google Ads Case Study →
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
-      <WhyChooseSection 
-        title="Why Choose GrowSmallBiz for Dental Marketing"
-        subtitle="Your Dental Marketing Partner"
-        description="We specialize in helping dental practices attract high-value patients, fill appointment books, and build a reputation as the premier choice in your community."
-        items={[
-          { title: "Dental Industry Experts", description: "We focus exclusively on dental practices—we know what works for general, cosmetic, and specialty dentistry.", icon: Smile },
-          { title: "High-Value Patients", description: "Attract patients seeking implants, veneers, Invisalign, and other high-value procedures.", icon: Users },
-          { title: "Local SEO Domination", description: "Rank #1 for 'dentist near me' and procedure-specific searches in your service area.", icon: MapPin },
-          { title: "AI Search Ready", description: "Get recommended when patients ask AI assistants for the best dentist in your city.", icon: Bot },
-          { title: "Reputation Excellence", description: "Automated review systems build your 5-star reputation and trust in the community.", icon: Star },
-          { title: "Proven Patient Growth", description: "Our dental clients typically see 2-3x more new patient inquiries within 90 days.", icon: TrendingUp },
-        ]}
-      />
-
+      {/* Why Dental Practices Choose GrowSmallBiz */}
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Dental Practice Client Results</h2>
-            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Schedule a strategy call to discuss documented results we've achieved for dental clients.</p>
-            <Button variant="hero" size="lg" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
-                Schedule Strategy Call
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Button>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Dental Practices Choose GrowSmallBiz</h2>
+            <div className="space-y-6">
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">One Agency, Every Channel</h3>
+                <p className="text-muted-foreground">Local SEO, Google Ads, LSA, website design, reputation management, CRM automation, and AI tools — all integrated with unified reporting. No juggling four vendors who don't talk to each other.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Built for Independent Practices</h3>
+                <p className="text-muted-foreground">We don't take large group practice or DSO accounts. Our focus is independent dental practices that want enterprise-quality marketing at pricing designed for their scale.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">HIPAA-Aware Campaigns</h3>
+                <p className="text-muted-foreground">Every campaign we build for dental clients is constructed with HIPAA compliance in mind. Ad copy, landing pages, and patient communications are reviewed before launch. Patient privacy is protected throughout every campaign.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Experience</h3>
+                <p className="text-muted-foreground">GrowSmallBiz is led by a practitioner with 30+ years of Fortune 500 experience in sales, marketing, and digital transformation — applied directly to your patient acquisition strategy.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <FAQSection 
         faqs={faqs}
-        title="Dental SEO FAQs"
+        title="Dental Marketing FAQs"
         subtitle="Common questions from dental practice owners"
         schemaType="FAQPage"
         contactCTA={{

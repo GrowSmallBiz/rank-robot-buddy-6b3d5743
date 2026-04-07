@@ -6,16 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
   Sparkles,
-  TrendingUp, 
-  MapPin, 
-  Star, 
-  Users, 
-  Target, 
-  Calendar,
   CheckCircle2,
   ArrowRight,
-  Bot,
-  Heart
+  Quote
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
@@ -23,30 +16,6 @@ import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection"
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import medSpaHeroImage from "@/assets/industry-medspa-hero.jpg";
-import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-
-const benefits = [
-  {
-    icon: MapPin,
-    title: "Luxury Local Presence",
-    description: "Rank #1 for 'Botox near me', 'lip fillers [city]', and high-value aesthetic procedure searches."
-  },
-  {
-    icon: Calendar,
-    title: "Premium Consultations",
-    description: "Attract qualified clients ready to invest in themselves with optimized conversion funnels."
-  },
-  {
-    icon: Bot,
-    title: "AI-Powered Discovery",
-    description: "Get recommended when potential clients ask AI 'What's the best med spa for laser treatments?'"
-  },
-  {
-    icon: Star,
-    title: "5-Star Reputation",
-    description: "Showcase transformative results and glowing reviews to build trust and authority."
-  }
-];
 
 const services = [
   {
@@ -62,12 +31,22 @@ const services = [
   {
     title: "AI & Voice Search Optimization",
     description: "Be the recommended med spa when clients research treatments on AI platforms.",
-    features: ["Answer Engine Optimization", "Treatment FAQ schema", "Conversational content", "Expert positioning content"]
+    features: ["Answer Engine Optimization", "Treatment FAQ schema", "Conversational content strategy", "Expert positioning content"]
   },
   {
     title: "Consultation Conversion",
     description: "Turn website visitors into booked consultations and treatment packages.",
     features: ["Online booking optimization", "Lead magnet creation", "Trust signal integration", "Patient journey mapping"]
+  },
+  {
+    title: "Meta & Instagram Ads",
+    description: "Reach aesthetic clients before they search Google.",
+    features: ["Before/after content campaigns", "Seasonal promotions", "Membership offers", "Retargeting for treatment page visitors"]
+  },
+  {
+    title: "AI Receptionist",
+    description: "Capture every inquiry 24/7. Clients browse and decide outside business hours.",
+    features: ["Automated question answering", "Lead qualification", "Consultation booking", "After-hours capture"]
   }
 ];
 
@@ -79,37 +58,41 @@ const painPoints = [
   "Wasting money on ads without sustainable growth"
 ];
 
-
 const faqs = [
   {
     question: "How is med spa SEO different from regular healthcare SEO?",
-    answer: "Med spa SEO requires balancing medical credibility with luxury lifestyle marketing. We understand the aesthetic industry's unique needs—from treatment-specific keywords to before/after content optimization while maintaining compliance with advertising regulations."
+    answer: "Med spa marketing is visual-first and desire-driven rather than pain-driven. Clients seek aesthetic enhancement, not urgent medical care. Instagram and Facebook are primary acquisition channels alongside Google, and the buying decision often happens outside business hours. Before/after imagery, social proof, and visual brand building carry more conversion weight than clinical credentials alone."
   },
   {
-    question: "Can you help us rank for competitive terms like 'Botox' and 'lip fillers'?",
-    answer: "Absolutely! We develop comprehensive strategies for high-value procedure keywords, including location-specific targeting, long-tail variations, and content that positions you as the expert choice for each treatment."
+    question: "Can you help us rank for competitive terms like Botox and lip fillers?",
+    answer: "Yes. Treatment-specific SEO targets the exact searches your ideal clients are making — 'Botox near me', 'lip fillers [city]', 'laser hair removal [city]'. We build dedicated procedure pages optimized for each treatment, structured with the content depth and schema markup that Google requires to rank competitive aesthetic keywords."
   },
   {
     question: "How do you handle before/after image SEO?",
-    answer: "We optimize your before/after galleries with proper alt tags, schema markup, and page structure to help them rank in image search and drive qualified traffic to your treatment pages."
+    answer: "Before/after images are optimized with descriptive alt text, proper file naming, and treatment-specific schema markup so they appear in image search results. All before/after content is published only with explicit patient consent in compliance with HIPAA requirements."
   },
   {
     question: "Do you work with multi-location med spa brands?",
-    answer: "Yes! We work with both single-location boutique med spas and multi-location brands. Our strategies scale to maintain consistent branding while optimizing for each location's unique market."
+    answer: "Yes. Multi-location SEO requires a distinct strategy — separate Google Business Profiles per location, location-specific landing pages, and citation consistency across all locations. We build and manage multi-location systems for med spa groups expanding across markets."
   },
   {
     question: "How long until we see more consultations from SEO?",
-    answer: "Most med spa clients see increased website traffic within 2-3 months and measurable consultation growth within 4-6 months. High-value procedure keywords often take longer but deliver excellent ROI once ranking."
+    answer: "Most med spa clients see measurable improvement in Google Business Profile visibility within 60 to 90 days. Significant organic traffic growth typically develops over 4 to 6 months. Based on our documented case studies, med spa AI SEO campaigns have achieved 252% impression growth and 78% organic user increases within a 9-month campaign period."
   }
 ];
 
+const results = [
+  { metric: "$16.39", label: "Cost Per Inbound Call Lead", subtext: "Google Ads" },
+  { metric: "+252%", label: "Search Impressions", subtext: "AI SEO, 9-Month Campaign" },
+  { metric: "+552%", label: "Website Traffic", subtext: "AI SEO, Southern California" }
+];
 
 const MedSpa = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Med Spa SEO Services | Attract Aesthetic Clients | GrowSmallBiz</title>
-        <meta name="description" content="Grow your med spa with specialized SEO. Rank #1 for Botox, fillers, laser treatments, and aesthetic services. Attract high-value clients." />
+        <title>Med Spa Marketing Agency | Local SEO, Google Ads & Social Media</title>
+        <meta name="description" content="GrowSmallBiz is a med spa marketing agency delivering local SEO, Google Ads, Meta ads, and reputation management that fills your treatment rooms. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/med-spa-marketing/" />
       </Head>
       <ServiceJsonLd
@@ -141,11 +124,13 @@ const MedSpa = () => {
               Med Spa Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Become the <span className="text-gradient">Premier Med Spa</span> in Your Market
+              Full-Service Med Spa Marketing Built to{" "}
+              <span className="text-gradient">Fill Your Treatment Rooms</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 animate-fade-up delay-200 max-w-2xl mx-auto">
-              Attract high-value clients seeking injectables, laser treatments, and aesthetic services. Build a luxury brand that dominates search.
+            <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
+              GrowSmallBiz provides med spas with a complete digital marketing system designed to attract high-value clients, showcase compelling results, and build the recurring membership model that generates predictable revenue month over month.
             </p>
+            <p className="text-sm text-muted-foreground mb-8 animate-fade-up delay-200">Serving med spas across the United States.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
                 <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
@@ -160,6 +145,77 @@ const MedSpa = () => {
               </Button>
             </div>
             <p className="text-sm text-primary mt-4 animate-fade-up delay-300">No commitment. No pressure. Just a clear path forward for your business.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Med Spa Marketing Requires a Specialist */}
+      <section className="py-24 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Med Spa Marketing Requires a Specialist</h2>
+            <p className="text-muted-foreground mb-8 text-lg">
+              Med spa clients seek aesthetic enhancement and wellness — not pain relief. That distinction changes everything about how marketing works. Unlike dental or chiropractic patients driven by necessity, med spa clients are driven by desire, aspiration, and social validation.
+            </p>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Visual Proof Drives Decisions</h3>
+                <p className="text-muted-foreground">Before/after photos and video results outperform every other content type for med spas. A before/after of a successful Botox or filler treatment does more conversion work than three pages of written content. Your marketing system must be built around generating, showcasing, and amplifying visual proof — on Instagram, on your website, and in your Google Business Profile.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Multi-Channel Is Non-Negotiable</h3>
+                <p className="text-muted-foreground">Instagram and Facebook are primary acquisition channels for med spas alongside Google Search. A prospect might discover you on Instagram, validate your credibility on Google, and book through your website — all within the same session. Single-channel strategies miss clients at every stage of that journey.</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-display font-semibold text-foreground mb-3">Membership Revenue Changes the Economics</h3>
+                <p className="text-muted-foreground">A client who books a single Botox treatment is worth $500. A client on a monthly membership plan is worth $6,000 a year. Marketing strategies that focus only on new client acquisition miss the retention and membership revenue that makes a med spa business resilient.</p>
+              </div>
+            </div>
+            <div className="mt-10 p-6 bg-card border border-border rounded-2xl">
+              <div className="flex gap-3">
+                <Quote className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <p className="text-foreground italic">Med spa clients don't call because they're in pain. They call because they saw a result they want. Your marketing's job is to show them that result — repeatedly, across every channel they use.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Does a Med Spa Marketing Agency Do? */}
+      <section className="py-24 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">What Does a Med Spa Marketing Agency Do?</h2>
+            <p className="text-muted-foreground mb-8 text-lg text-center max-w-3xl mx-auto">
+              A med spa marketing agency manages the full digital marketing ecosystem for medical aesthetic practices — social media content and Meta advertising, local SEO and Google Ads, reputation management and client retention automation, and website design optimized for consultation booking.
+            </p>
+            <div className="max-w-2xl mx-auto">
+              <h3 className="text-xl font-display font-semibold text-foreground mb-4">The full med spa client lifecycle:</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl">
+                  <span className="text-primary font-bold text-lg">1.</span>
+                  <div>
+                    <span className="font-semibold text-foreground">Awareness</span>
+                    <span className="text-muted-foreground"> — Instagram and Meta ads spark initial interest in a treatment</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl">
+                  <span className="text-primary font-bold text-lg">2.</span>
+                  <div>
+                    <span className="font-semibold text-foreground">Trust Confirmation</span>
+                    <span className="text-muted-foreground"> — Google search validates your credentials, reviews, and results</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl">
+                  <span className="text-primary font-bold text-lg">3.</span>
+                  <div>
+                    <span className="font-semibold text-foreground">Conversion</span>
+                    <span className="text-muted-foreground"> — Your website turns curiosity into a booked consultation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -190,33 +246,11 @@ const MedSpa = () => {
         </div>
       </section>
 
-      {/* Benefits */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 section-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Why Med Spas Choose Us</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">We specialize in positioning aesthetic practices for premium client acquisition.</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="bg-card border border-border rounded-2xl p-6 card-hover">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <benefit.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="text-xl font-display font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Our Med Spa SEO Solutions</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Med Spa Marketing Services from GrowSmallBiz</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to attract premium aesthetic clients.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -238,39 +272,63 @@ const MedSpa = () => {
         </div>
       </section>
 
+      {/* Med Spa Marketing Results */}
+      <section className="py-24 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Med Spa Marketing Results</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {results.map((result, index) => (
+              <div key={index} className="text-center p-6 bg-card border border-border rounded-2xl">
+                <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">{result.metric}</div>
+                <p className="text-foreground font-medium mb-1">{result.label}</p>
+                <p className="text-sm text-muted-foreground">({result.subtext})</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/health-and-wellness-practices/med-spa-marketing/seo-case-study/">View AI SEO Case Studies →</Link>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/health-and-wellness-practices/med-spa-marketing/google-ads-case-study/">View Google Ads Case Studies →</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
-      <WhyChooseSection 
-        title="Why Choose GrowSmallBiz for Med Spa Marketing"
-        subtitle="Your Med Spa Marketing Partner"
-        description="We specialize in helping aesthetic practices attract premium clients who invest in themselves—building your reputation as the luxury choice in your market."
-        items={[
-          { title: "Aesthetics Experts", description: "We focus exclusively on med spas and aesthetic practices—we know what works for premium services.", icon: Sparkles },
-          { title: "Premium Client Attraction", description: "Attract clients ready to invest in Botox, fillers, laser treatments, and body contouring.", icon: Heart },
-          { title: "Luxury Brand Positioning", description: "Position your practice as the premier aesthetic destination in your community.", icon: Star },
-          { title: "Visual-First Marketing", description: "Showcase transformative results through Instagram, before/after galleries, and video content.", icon: Target },
-          { title: "AI Search Visibility", description: "Get recommended when potential clients ask AI for the best med spa in your city.", icon: Bot },
-          { title: "Proven ROI", description: "Our med spa clients typically see 3-5x return on marketing investment within 6 months.", icon: TrendingUp },
-        ]}
-      />
-
+      {/* Why Med Spas Choose GrowSmallBiz */}
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Med Spa Client Results</h2>
-            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Schedule a strategy call to discuss documented results we've achieved for med spa clients.</p>
-            <Button variant="hero" size="lg" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">
-                Schedule Strategy Call
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Button>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Med Spas Choose GrowSmallBiz</h2>
+            <div className="space-y-6">
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Specialist, Not Generalist</h3>
+                <p className="text-muted-foreground">We don't work with e-commerce brands, restaurants, or retail shops. Med spas, dental practices, and aesthetic clinics are our focus. Every strategy, campaign structure, and automation workflow is built for how aesthetic clients actually discover, evaluate, and book — not adapted from a different industry.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Exclusive Leads</h3>
+                <p className="text-muted-foreground">We don't sell shared leads. Everything we build generates exclusive client inquiries that come directly to you — not to you and five competitors simultaneously.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Complete System</h3>
+                <p className="text-muted-foreground">Local SEO, website design, Google Ads, Meta ads, reputation management, and AI Receptionist — fully integrated into one client acquisition system. No juggling multiple vendors who have never spoken to each other.</p>
+              </div>
+              <div className="p-6 bg-card border border-border rounded-2xl">
+                <h3 className="text-lg font-display font-semibold text-foreground mb-2">Experience</h3>
+                <p className="text-muted-foreground">GrowSmallBiz is led by a practitioner with 30+ years of Fortune 500 experience in sales, marketing, and digital transformation — applied directly to your med spa marketing strategy.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <FAQSection 
         faqs={faqs}
-        title="Med Spa SEO FAQs"
+        title="Med Spa Marketing FAQs"
         subtitle="Common questions from aesthetic practice owners"
         schemaType="FAQPage"
         contactCTA={{
@@ -289,7 +347,7 @@ const MedSpa = () => {
       />
 
       <CardCTA
-        title="Ready to Become the Premier Med Spa?"
+        title="Ready to Fill Your Treatment Rooms?"
         description="Get a free strategy session and discover how to attract more high-value aesthetic clients to your med spa."
         buttonHref="https://lp.growsmallbiz.io/digital-growth-strategy-session"
         buttonText="Schedule Strategy Call"
