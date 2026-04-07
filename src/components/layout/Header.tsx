@@ -185,86 +185,6 @@ export const Header = () => {
               </div>
             </div>
 
-            {/* Case Studies Dropdown */}
-            <div 
-              className="relative group"
-              onMouseEnter={() => setIsCaseStudiesOpen(true)}
-              onMouseLeave={() => setIsCaseStudiesOpen(false)}
-            >
-              <button
-                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
-                  location.pathname.includes("case-study") ? "text-primary" : "text-muted-foreground"
-                }`}
-              >
-                Case Studies
-                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-              </button>
-              <div
-                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
-                  isCaseStudiesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
-                }`}
-              >
-                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Home Service Contractors</p>
-                <Link
-                  to="/home-service-contractors/hvac-marketing/seo-case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  HVAC, Plumbing & Electrical — Local SEO
-                </Link>
-                <Link
-                  to="/home-service-contractors/hvac-marketing/google-ads-case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  HVAC, Plumbing & Electrical — Google Ads
-                </Link>
-                <Link
-                  to="/home-service-contractors/roofing-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Roofers
-                </Link>
-                <Link
-                  to="/home-service-contractors/landscaping-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Tree Care, Lawn Care & Landscaping
-                </Link>
-                <Link
-                  to="/home-service-contractors/home-renovation-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Home Remodeling
-                </Link>
-                <Link
-                  to="/home-service-contractors/cleaning-service-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Cleaning Services
-                </Link>
-
-                <div className="border-t border-border my-2" />
-                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness</p>
-                <Link
-                  to="/health-and-wellness-practices/med-spa-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Med Spa
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/dental-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Dental Practices
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/chiropractic-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Chiropractic
-                </Link>
-              </div>
-            </div>
-
             {/* Industries Dropdown */}
             <div 
               className="relative group"
@@ -374,6 +294,86 @@ export const Header = () => {
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
                   Locations We Serve
+                </Link>
+              </div>
+            </div>
+
+            {/* Case Studies Dropdown */}
+            <div 
+              className="relative group"
+              onMouseEnter={() => setIsCaseStudiesOpen(true)}
+              onMouseLeave={() => setIsCaseStudiesOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname.includes("case-study") ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                Case Studies
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+              <div
+                className={`absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-300 ${
+                  isCaseStudiesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                }`}
+              >
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Home Service Contractors</p>
+                <Link
+                  to="/home-service-contractors/hvac-marketing/seo-case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  HVAC, Plumbing & Electrical — Local SEO
+                </Link>
+                <Link
+                  to="/home-service-contractors/hvac-marketing/google-ads-case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  HVAC, Plumbing & Electrical — Google Ads
+                </Link>
+                <Link
+                  to="/home-service-contractors/roofing-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Roofers
+                </Link>
+                <Link
+                  to="/home-service-contractors/landscaping-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Tree Care, Lawn Care & Landscaping
+                </Link>
+                <Link
+                  to="/home-service-contractors/home-renovation-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Home Remodeling
+                </Link>
+                <Link
+                  to="/home-service-contractors/cleaning-service-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Cleaning Services
+                </Link>
+
+                <div className="border-t border-border my-2" />
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness</p>
+                <Link
+                  to="/health-and-wellness-practices/med-spa-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Med Spa
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/dental-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Dental Practices
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/chiropractic-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Chiropractic
                 </Link>
               </div>
             </div>
@@ -541,73 +541,6 @@ export const Header = () => {
             )}
           </div>
 
-          {/* Mobile: Case Studies */}
-          <div className="space-y-2">
-            <button
-              onClick={() => setMobileCaseStudiesOpen(!mobileCaseStudiesOpen)}
-              className="flex items-center justify-between w-full text-foreground font-medium"
-            >
-              Case Studies
-              <ChevronDown className={`w-4 h-4 transition-transform ${mobileCaseStudiesOpen ? "rotate-180" : ""}`} />
-            </button>
-            {mobileCaseStudiesOpen && (
-              <div className="pl-4 space-y-1">
-                {/* Home Service Contractors sub-group */}
-                <button
-                  onClick={() => setMobileCsHomeOpen(!mobileCsHomeOpen)}
-                  className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
-                >
-                  Home Service Contractors
-                  <ChevronDown className={`w-3 h-3 transition-transform ${mobileCsHomeOpen ? "rotate-180" : ""}`} />
-                </button>
-                {mobileCsHomeOpen && (
-                  <div className="pl-3 space-y-1">
-                    <Link to="/home-service-contractors/hvac-marketing/seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      HVAC, Plumbing & Electrical — Local SEO
-                    </Link>
-                    <Link to="/home-service-contractors/hvac-marketing/google-ads-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      HVAC, Plumbing & Electrical — Google Ads
-                    </Link>
-                    <Link to="/home-service-contractors/roofing-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      Roofers
-                    </Link>
-                    <Link to="/home-service-contractors/landscaping-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      Tree Care, Lawn Care & Landscaping
-                    </Link>
-                    <Link to="/home-service-contractors/home-renovation-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      Home Remodeling
-                    </Link>
-                    <Link to="/home-service-contractors/cleaning-service-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      Cleaning Services
-                    </Link>
-                  </div>
-                )}
-
-                {/* Health & Wellness sub-group */}
-                <button
-                  onClick={() => setMobileCsHealthOpen(!mobileCsHealthOpen)}
-                  className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
-                >
-                  Health & Wellness
-                  <ChevronDown className={`w-3 h-3 transition-transform ${mobileCsHealthOpen ? "rotate-180" : ""}`} />
-                </button>
-                {mobileCsHealthOpen && (
-                  <div className="pl-3 space-y-1">
-                    <Link to="/health-and-wellness-practices/med-spa-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      Med Spa
-                    </Link>
-                    <Link to="/health-and-wellness-practices/dental-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      Dental Practices
-                    </Link>
-                    <Link to="/health-and-wellness-practices/chiropractic-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      Chiropractic
-                    </Link>
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-
           {/* Mobile: Industries */}
           <div className="space-y-2">
             <button
@@ -671,6 +604,71 @@ export const Header = () => {
                 >
                   Locations We Serve
                 </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Mobile: Case Studies */}
+          <div className="space-y-2">
+            <button
+              onClick={() => setMobileCaseStudiesOpen(!mobileCaseStudiesOpen)}
+              className="flex items-center justify-between w-full text-foreground font-medium"
+            >
+              Case Studies
+              <ChevronDown className={`w-4 h-4 transition-transform ${mobileCaseStudiesOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileCaseStudiesOpen && (
+              <div className="pl-4 space-y-1">
+                <button
+                  onClick={() => setMobileCsHomeOpen(!mobileCsHomeOpen)}
+                  className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
+                >
+                  Home Service Contractors
+                  <ChevronDown className={`w-3 h-3 transition-transform ${mobileCsHomeOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileCsHomeOpen && (
+                  <div className="pl-3 space-y-1">
+                    <Link to="/home-service-contractors/hvac-marketing/seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      HVAC, Plumbing & Electrical — Local SEO
+                    </Link>
+                    <Link to="/home-service-contractors/hvac-marketing/google-ads-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      HVAC, Plumbing & Electrical — Google Ads
+                    </Link>
+                    <Link to="/home-service-contractors/roofing-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      Roofers
+                    </Link>
+                    <Link to="/home-service-contractors/landscaping-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      Tree Care, Lawn Care & Landscaping
+                    </Link>
+                    <Link to="/home-service-contractors/home-renovation-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      Home Remodeling
+                    </Link>
+                    <Link to="/home-service-contractors/cleaning-service-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      Cleaning Services
+                    </Link>
+                  </div>
+                )}
+
+                <button
+                  onClick={() => setMobileCsHealthOpen(!mobileCsHealthOpen)}
+                  className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
+                >
+                  Health & Wellness
+                  <ChevronDown className={`w-3 h-3 transition-transform ${mobileCsHealthOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileCsHealthOpen && (
+                  <div className="pl-3 space-y-1">
+                    <Link to="/health-and-wellness-practices/med-spa-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      Med Spa
+                    </Link>
+                    <Link to="/health-and-wellness-practices/dental-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      Dental Practices
+                    </Link>
+                    <Link to="/health-and-wellness-practices/chiropractic-marketing/case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                      Chiropractic
+                    </Link>
+                  </div>
+                )}
               </div>
             )}
           </div>
