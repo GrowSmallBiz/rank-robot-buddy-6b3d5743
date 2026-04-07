@@ -93,22 +93,10 @@ const results = [
 
 const testimonials = [
   {
-    quote: "I went from 2-3 inquiries a month to 15+. My calendar is consistently booked 3 months out now. GrowSmallBiz changed everything.",
-    author: "Jessica Morales",
-    role: "Owner",
-    company: "Jessica Morales Photography",
-  },
-  {
-    quote: "I was invisible on Google despite having an incredible portfolio. Now I rank #1 for wedding photographer in my city and I'm booking premium packages.",
-    author: "Ryan Mitchell",
+    quote: "For years we did what worked — great shoots, referrals, some Google ads. Business was decent, but the moment we paused ads, the phone got quieter. No real foundation underneath it all... A friend pointed us to GrowSmallBiz and what sold us was that they're a true one-stop shop — SEO, AI search optimization, paid ads, and campaign automation all under one roof. No juggling multiple vendors.",
+    author: "Babar R",
     role: "Wedding Photographer",
-    company: "Mitchell Visual",
-  },
-  {
-    quote: "The AI follow-up system is a game changer. I never miss an inquiry, even when I'm in the middle of a shoot.",
-    author: "Alicia Park",
-    role: "Portrait Photographer",
-    company: "Park Studios",
+    company: "Springfield, VA ★★★★★ Google Review",
   },
 ];
 
