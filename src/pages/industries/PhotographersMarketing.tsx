@@ -72,6 +72,7 @@ import { CardCTA, PersonCTA, StickyCardCTA } from "@/components/services";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
+import { useUtm } from "@/hooks/use-utm";
 import {
   Carousel,
   CarouselContent,
