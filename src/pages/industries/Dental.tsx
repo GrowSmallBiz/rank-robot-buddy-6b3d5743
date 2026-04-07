@@ -50,12 +50,6 @@ const painPoints = [
   "Paying too much for ineffective marketing"
 ];
 
-const results = [
-  { metric: "287%", label: "Increase in new patients" },
-  { metric: "52", label: "First page keywords" },
-  { metric: "$85K", label: "Average monthly production increase" },
-  { metric: "4.8", label: "Average Google rating achieved" }
-];
 
 const dentalTestimonials = [
   { quote: "We've doubled our new patient flow and are finally attracting the cosmetic cases we want. The ROI has been incredible.", author: "Dr. Jennifer Park", role: "Owner", company: "Park Family Dentistry" },
