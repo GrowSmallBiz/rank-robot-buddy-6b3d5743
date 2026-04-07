@@ -269,7 +269,7 @@ const MedSpaCaseStudy = () => {
                           "Website clicks YOY: +6.6%",
                         ]} />
 
-                        <PdfBlock src="/case-studies/ai-seo-med-spa-case-study-1.pdf" />
+                        <PdfBlock src="/case-studies/A-SEO-Med-Spa-Case-Study-Pleasanton-CA.pdf" />
                         <div className="mt-8 flex justify-center">
                           <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
                             <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">Request a Website &amp; SEO Audit</a>
@@ -323,7 +323,7 @@ const MedSpaCaseStudy = () => {
                           "hair removal → #6 (started #10, SV: 90,500)",
                         ]} />
 
-                        <PdfBlock src="/case-studies/ai-seo-med-spa-case-study-2.pdf" />
+                        <PdfBlock src="/case-studies/AI-SEO-Med-Spa-Case-Study-San-Gabriel-CA.pdf" />
                         <div className="mt-8 flex justify-center">
                           <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
                             <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">Request a Website &amp; SEO Audit</a>
@@ -429,7 +429,7 @@ const MedSpaCaseStudy = () => {
                       "CVR: 17.95% (+68.3%)",
                     ]} />
 
-                    <PdfBlock src="/case-studies/ppc-med-spa-case-study-1.pdf" title="View Full PPC Case Study Report" />
+                    <PdfBlock src="/case-studies/PPC_Med_Spa_-_Case_Study-San_Ramon-CA.pdf" title="View Full PPC Case Study Report" />
                     <div className="mt-8 flex justify-center">
                       <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
                         <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">Request a Website &amp; SEO Audit</a>
