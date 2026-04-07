@@ -242,16 +242,10 @@ export const Header = () => {
                 <div className="border-t border-border my-2" />
                 <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness</p>
                 <Link
-                  to="/health-and-wellness-practices/med-spa-marketing/seo-case-study/"
+                  to="/health-and-wellness-practices/med-spa-marketing/case-study/"
                   className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                 >
-                  Med Spa — AI SEO
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/med-spa-marketing/google-ads-case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Med Spa — Google Ads
+                  Med Spa — AI SEO & Google Ads
                 </Link>
                 <Link
                   to="/health-and-wellness-practices/dental-marketing/case-study/"
@@ -600,18 +594,11 @@ export const Header = () => {
 
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-3 pb-1">Health & Wellness</p>
                 <Link
-                  to="/health-and-wellness-practices/med-spa-marketing/seo-case-study/"
+                  to="/health-and-wellness-practices/med-spa-marketing/case-study/"
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
-                  Med Spa — AI SEO
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/med-spa-marketing/google-ads-case-study/"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
-                >
-                  Med Spa — Google Ads
+                  Med Spa — AI SEO & Google Ads
                 </Link>
                 <Link
                   to="/health-and-wellness-practices/dental-marketing/case-study/"
