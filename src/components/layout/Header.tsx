@@ -593,6 +593,9 @@ export const Header = () => {
                 <Link to="/professional-services/photography-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
                   Photographers
                 </Link>
+                <Link to="/professional-services/photographers-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Professional Photographers
+                </Link>
               </div>
             )}
           </div>
