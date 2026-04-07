@@ -59,34 +59,6 @@ const faqs = [
   { question: "What makes chiropractic SEO different from general healthcare SEO?", answer: "Chiropractic SEO requires understanding patient pain points, treatment-seeking behavior, and the wellness vs. medical positioning. We specialize in this niche and understand the patient journey from pain to relief." }
 ];
 
-const caseStudies = [
-  {
-    company: "Align Chiropractic & Wellness", location: "Portland, OR", industry: "Chiropractic Care",
-    challenge: "New patient numbers had plateaued. Practice was too dependent on referrals without a steady organic pipeline of patients seeking pain relief.",
-    timeframe: "5 months",
-    metrics: [
-      { label: "New Patients/Month", before: "18", after: "64", improvement: "+256%" },
-      { label: "Organic Website Traffic", before: "450/mo", after: "2,800/mo", improvement: "+522%" },
-      { label: "Back Pain Keywords Ranking", before: "Page 4", after: "#2", improvement: "Top 3" },
-      { label: "Monthly Revenue", before: "$32K", after: "$89K", improvement: "+178%" }
-    ],
-    quote: "We went from struggling to find new patients to having a consistent flow of quality leads.",
-    quoteName: "Dr. Michael Torres", quoteRole: "Clinic Director, Align Chiropractic"
-  },
-  {
-    company: "Vitality Spine Center", location: "Charlotte, NC", industry: "Sports & Spine Chiropractic",
-    challenge: "Wanted to specialize in sports injuries but couldn't rank for athletic-related keywords. Losing potential patients to physical therapy clinics.",
-    timeframe: "7 months",
-    metrics: [
-      { label: "Sports Injury Inquiries", before: "6/mo", after: "38/mo", improvement: "+533%" },
-      { label: "Chiropractor Near Me Rank", before: "#12", after: "#1", improvement: "Top Spot" },
-      { label: "Cost Per New Patient", before: "$120", after: "$18", improvement: "-85%" },
-      { label: "Patient Retention Rate", before: "45%", after: "78%", improvement: "+73%" }
-    ],
-    quote: "GrowSmallBiz helped us rank #1 for 'chiropractor' and 'back pain relief' in our city. The ROI has been phenomenal.",
-    quoteName: "Dr. Lisa Chang", quoteRole: "Owner, Vitality Spine Center"
-  }
-];
 
 const Chiropractor = () => {
   return (
