@@ -238,6 +238,33 @@ export const Header = () => {
                 >
                   Cleaning Services
                 </Link>
+
+                <div className="border-t border-border my-2" />
+                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness</p>
+                <Link
+                  to="/health-and-wellness-practices/med-spa-marketing/seo-case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Med Spa — AI SEO
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/med-spa-marketing/google-ads-case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Med Spa — Google Ads
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/dental-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Dental — Google Ads
+                </Link>
+                <Link
+                  to="/health-and-wellness-practices/chiropractic-marketing/case-study/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  Chiropractic — AI SEO
+                </Link>
               </div>
             </div>
 
