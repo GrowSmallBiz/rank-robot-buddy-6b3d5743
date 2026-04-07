@@ -47,7 +47,7 @@ const Dental = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Dental Marketing Agency | Local SEO, Google Ads & Patient Acquisition</title>
+        <title>Dental Marketing Agency | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz is a dental marketing agency that helps independent dental practices attract new patients, build five-star reputations, and implement systems that increase revenue. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/dental-marketing/" />
       </Head>

@@ -91,7 +91,7 @@ const MedSpa = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Med Spa Marketing Agency | Local SEO, Google Ads & Social Media</title>
+        <title>Med Spa Marketing Agency | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz is a med spa marketing agency delivering local SEO, Google Ads, Meta ads, and reputation management that fills your treatment rooms. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/med-spa-marketing/" />
       </Head>
@@ -212,6 +212,13 @@ const MedSpa = () => {
                   <div>
                     <span className="font-semibold text-foreground">Conversion</span>
                     <span className="text-muted-foreground"> — Your website turns curiosity into a booked consultation</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl">
+                  <span className="text-primary font-bold text-lg">4.</span>
+                  <div>
+                    <span className="font-semibold text-foreground">Retention</span>
+                    <span className="text-muted-foreground"> — CRM automation transforms first appointments into long-term memberships</span>
                   </div>
                 </div>
               </div>

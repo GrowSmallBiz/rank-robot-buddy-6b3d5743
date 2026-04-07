@@ -148,7 +148,7 @@ export const hvacBlogPosts: BlogPost[] = [
     title: "HVAC SEO: How to Rank #1 for Emergency AC Repair",
     excerpt: "Learn the strategies top HVAC companies use to capture emergency service calls and dominate local search results.",
     category: "HVAC SEO",
-    author: "Mike Thompson",
+    author: "Subrata Guha",
     date: "Dec 28, 2025",
     readTime: "7 min read"
   },
@@ -156,7 +156,7 @@ export const hvacBlogPosts: BlogPost[] = [
     title: "Google Business Profile Optimization for HVAC Companies",
     excerpt: "Your Google Business Profile is your digital storefront. Here's how to optimize it for maximum visibility and leads.",
     category: "Local SEO",
-    author: "Sarah Chen",
+    author: "Subrata Guha",
     date: "Dec 22, 2025",
     readTime: "6 min read"
   },
@@ -164,7 +164,7 @@ export const hvacBlogPosts: BlogPost[] = [
     title: "How to Get More 5-Star Reviews for Your HVAC Business",
     excerpt: "Reviews are crucial for local rankings. Discover ethical strategies to generate more positive reviews from happy customers.",
     category: "Reputation",
-    author: "David Martinez",
+    author: "Subrata Guha",
     date: "Dec 18, 2025",
     readTime: "5 min read"
   }
