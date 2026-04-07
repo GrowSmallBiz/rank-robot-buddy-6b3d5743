@@ -102,6 +102,32 @@ const Chiropractor = () => {
         </div>
       </section>
 
+      {/* Pain Points */}
+      <section className="py-20 bg-card/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <p className="text-muted-foreground">These are the challenges we hear from chiropractors every day.</p>
+          </div>
+          <div className="max-w-2xl mx-auto space-y-4">
+            {painPoints.map((point, index) => (
+              <div key={index} className="flex items-start gap-4 p-4 bg-destructive/10 border border-destructive/20 rounded-xl">
+                <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-destructive text-sm font-bold">✗</span>
+                </div>
+                <p className="text-foreground">{point}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-xl font-display font-semibold text-primary mb-4">We can help you grow.</p>
+            <Button variant="hero" asChild>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Why Chiropractic Practices Need a Specialized Marketing Partner */}
       <section className="py-24 relative">
         <div className="absolute inset-0 section-glow" />
@@ -146,32 +172,6 @@ const Chiropractor = () => {
             <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto">
               For chiropractic practices specifically, this means building strategies that address both emergency-intent searches and long-term patient retention — because the recurring wellness patient is where sustainable practice revenue is built.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Pain Points */}
-      <section className="py-20 bg-card/50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
-            <p className="text-muted-foreground">These are the challenges we hear from chiropractors every day.</p>
-          </div>
-          <div className="max-w-2xl mx-auto space-y-4">
-            {painPoints.map((point, index) => (
-              <div key={index} className="flex items-start gap-4 p-4 bg-destructive/10 border border-destructive/20 rounded-xl">
-                <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-destructive text-sm font-bold">✗</span>
-                </div>
-                <p className="text-foreground">{point}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-xl font-display font-semibold text-primary mb-4">We can help you grow.</p>
-            <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
-            </Button>
           </div>
         </div>
       </section>
