@@ -13,6 +13,7 @@ import {
 import { PdfViewer } from "@/components/PdfViewerWrapper";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import dentalHero from "@/assets/case-study-dental-hero.jpg";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -81,6 +82,7 @@ const DentalCaseStudy = () => {
           subtitle="Explore documented Google Ads campaign results for a dental practice. Real campaign data — conversion volume, cost-per-acquisition, conversion rate, and click-through rate performance."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
+          backgroundImage={dentalHero}
           overlayOpacity={85}
         />
 

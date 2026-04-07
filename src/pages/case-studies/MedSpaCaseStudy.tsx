@@ -16,6 +16,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useEffect, useRef } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import medSpaHero from "@/assets/case-study-medspa-hero.jpg";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -131,6 +132,7 @@ const MedSpaCaseStudy = () => {
           subtitle="Explore documented campaign results for med spa clients across AI SEO and Google Ads. This page showcases real proof drawn from Google Analytics, Google Search Console, Google Business Profile data, and Google Ads account performance."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
+          backgroundImage={medSpaHero}
           overlayOpacity={85}
         />
 
