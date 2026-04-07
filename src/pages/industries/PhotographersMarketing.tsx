@@ -1,5 +1,5 @@
+import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
-import { Helmet } from "react-helmet";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -1230,21 +1230,22 @@ const results = [
   { metric: "40%", label: "Time saved with automation" }
 ];
 
-const Photographers = () => {
+const PhotographersMarketing = () => {
+  const { buildUrl, strategySessionUrl } = useUtm();
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
+      <Head>
         <title>Photography Marketing & SEO Services | Book More Clients | GrowSmallBiz</title>
         <meta name="description" content="Complete marketing system for photographers. Website design, AI SEO, CRM, paid ads, and automation to fill your session calendar with dream clients." />
-      </Helmet>
+      </Head>
       <ServiceJsonLd
         serviceName="Photography Marketing & SEO"
         serviceType="Digital Marketing for Photographers"
         description="Complete marketing system for photographers including website design, AI SEO, CRM, and automation."
-        url="/industries/photographers"
+        url="/professional-services/photographers-marketing"
         breadcrumbs={[
-          { name: "Industries", url: "/industries/home-services" },
-          { name: "Photographers", url: "/industries/photographers" },
+          { name: "Professional Services", url: "/professional-services" },
+          { name: "Photographers Marketing", url: "/professional-services/photographers-marketing" },
         ]}
       />
       
@@ -3928,4 +3929,4 @@ const Photographers = () => {
   );
 };
 
-export default Photographers;
+export default PhotographersMarketing;
