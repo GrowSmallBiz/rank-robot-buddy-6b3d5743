@@ -93,7 +93,7 @@ const Chiropractor = () => {
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-up">
               <Activity className="w-4 h-4" />
-              Chiropractic Practice SEO
+              Chiropractic Practice Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
               Help More Patients Find <span className="text-gradient">Relief Through You</span>
