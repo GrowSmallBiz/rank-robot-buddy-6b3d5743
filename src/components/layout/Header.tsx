@@ -277,9 +277,6 @@ export const Header = () => {
                     <Link to="/professional-services/photography-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Photographers
                     </Link>
-                    <Link to="/professional-services/photographers-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
-                      Professional Photography
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -592,9 +589,6 @@ export const Header = () => {
                 </Link>
                 <Link to="/professional-services/photography-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
                   Photographers
-                </Link>
-                <Link to="/professional-services/photographers-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
-                  Professional Photography
                 </Link>
               </div>
             )}
