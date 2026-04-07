@@ -211,67 +211,74 @@ export const Header = () => {
                   isIndustriesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
-                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Home Services</p>
-                <Link
-                  to="/home-service-contractors/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors"
+                {/* Home Services - Flyout */}
+                <div
+                  className="relative group/ind-home"
+                  onMouseEnter={() => setIsIndHomeOpen(true)}
+                  onMouseLeave={() => setIsIndHomeOpen(false)}
                 >
-                  Home Service Contractors
-                </Link>
-                <Link
-                  to="/home-service-contractors/hvac-marketing/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  HVAC Contractors
-                </Link>
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Home Service Contractors
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isIndHomeOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/home-service-contractors/" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                      Overview
+                    </Link>
+                    <Link to="/home-service-contractors/hvac-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      HVAC Contractors
+                    </Link>
+                  </div>
+                </div>
 
-                <div className="border-t border-border my-2" />
-                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness</p>
-                <Link
-                  to="/health-and-wellness-practices/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors"
+                {/* Health & Wellness - Flyout */}
+                <div
+                  className="relative group/ind-health"
+                  onMouseEnter={() => setIsIndHealthOpen(true)}
+                  onMouseLeave={() => setIsIndHealthOpen(false)}
                 >
-                  All Health & Wellness
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/med-spa-marketing/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Med Spas
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/chiropractic-marketing/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Chiropractors
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/dental-marketing/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Dentists
-                </Link>
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Health & Wellness Practices
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isIndHealthOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/health-and-wellness-practices/" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                      Overview
+                    </Link>
+                    <Link to="/health-and-wellness-practices/med-spa-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Med Spas
+                    </Link>
+                    <Link to="/health-and-wellness-practices/chiropractic-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Chiropractors
+                    </Link>
+                    <Link to="/health-and-wellness-practices/dental-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Dentists
+                    </Link>
+                  </div>
+                </div>
 
-                <div className="border-t border-border my-2" />
-                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Professional Services</p>
-                <Link
-                  to="/professional-services/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors"
+                {/* Professional Services - Flyout */}
+                <div
+                  className="relative group/ind-prof"
+                  onMouseEnter={() => setIsIndProfOpen(true)}
+                  onMouseLeave={() => setIsIndProfOpen(false)}
                 >
-                  All Professional Services
-                </Link>
-                <Link
-                  to="/professional-services/real-estate-marketing/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Realtors
-                </Link>
-                <Link
-                  to="/professional-services/photography-marketing/"
-                  className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Photographers
-                </Link>
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Professional Services
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isIndProfOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/professional-services/" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
+                      Overview
+                    </Link>
+                    <Link to="/professional-services/real-estate-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Realtors
+                    </Link>
+                    <Link to="/professional-services/photography-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Photographers
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
 
