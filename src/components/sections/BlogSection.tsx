@@ -191,7 +191,7 @@ export const dentalBlogPosts: BlogPost[] = [
     title: "Building Patient Trust Through Online Reviews",
     excerpt: "Discover how top dental practices leverage online reviews to build credibility and attract new patients.",
     category: "Reputation",
-    author: "Sarah Mitchell",
+    author: "Subrata Guha",
     date: "Dec 18, 2025",
     readTime: "5 min read"
   }
