@@ -218,7 +218,7 @@ export const medSpaBlogPosts: BlogPost[] = [
     title: "HIPAA-Compliant Marketing for Med Spas",
     excerpt: "Navigate the complexities of healthcare marketing while staying compliant with HIPAA regulations.",
     category: "Compliance",
-    author: "Michael Chen",
+    author: "Subrata Guha",
     date: "Dec 18, 2025",
     readTime: "5 min read"
   }
