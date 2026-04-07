@@ -81,12 +81,6 @@ const painPoints = [
   "Wasting money on ads without sustainable growth"
 ];
 
-const results = [
-  { metric: "324%", label: "Increase in consultations" },
-  { metric: "67", label: "First page keywords" },
-  { metric: "$127K", label: "Average monthly revenue increase" },
-  { metric: "4.9", label: "Average Google rating achieved" }
-];
 
 const medSpaTestimonials = [
   {
