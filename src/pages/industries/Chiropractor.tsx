@@ -136,7 +136,7 @@ const Chiropractor = () => {
           <div className="text-center mt-12">
             <p className="text-xl font-display font-semibold text-primary mb-4">We can help you grow.</p>
             <Button variant="hero" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Get Your Growth Strategy</a>
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session">Schedule Strategy Call</a>
             </Button>
           </div>
         </div>
