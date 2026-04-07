@@ -221,18 +221,18 @@ const MedSpaCaseStudy = () => {
                 <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
                   <TabsList className="w-full h-auto flex-wrap bg-card/80 backdrop-blur-sm border border-border rounded-xl p-2 mb-10">
                     <TabsTrigger value="medspa-socal" className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg">
-                      Med Spa AI SEO — Southern California
+                      Med Spa AI SEO — Pleasanton, CA
                     </TabsTrigger>
                     <TabsTrigger value="medspa-sangabriel" className="flex-1 min-w-[180px] py-3 text-sm font-display font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-lg">
                       Med Spa Local SEO — San Gabriel, CA
                     </TabsTrigger>
                   </TabsList>
 
-                  {/* TAB 1: Southern California */}
+                  {/* TAB 1: Pleasanton, CA */}
                   <TabsContent value="medspa-socal">
                     <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                       <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                        Med Spa AI SEO — Southern California
+                        Med Spa AI SEO — Pleasanton, CA
                       </h3>
                       <div className="space-y-6">
                         <DetailLabel>Goals</DetailLabel>
@@ -252,7 +252,7 @@ const MedSpaCaseStudy = () => {
                         ]} />
 
                         <SubHead>Performance Highlights</SubHead>
-                        <P>This med spa client in Southern California experienced significant organic search growth over a 9-month AI SEO campaign (January 2023 – September 2023).</P>
+                        <P>This med spa client in Pleasanton, CA experienced significant organic search growth over a 9-month AI SEO campaign (January 2023 – September 2023).</P>
 
                         <DetailLabel>Key Metrics</DetailLabel>
                         <BulletList items={[
@@ -394,7 +394,7 @@ const MedSpaCaseStudy = () => {
               <div className="max-w-4xl mx-auto">
                 <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                    Med Spa <GoogleColoredText /> Ads — [City, State]
+                    Med Spa <GoogleColoredText /> Ads — San Ramon, CA
                   </h3>
                   <div className="space-y-6">
                     <DetailLabel>Goals</DetailLabel>
