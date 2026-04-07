@@ -140,7 +140,7 @@ const DentalCaseStudy = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-card border border-border rounded-2xl p-6 md:p-10">
                 <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 pb-4 border-b border-primary/30">
-                  Dental Practice <GoogleColoredText /> Ads — [City, State]
+                  Dental Practice <GoogleColoredText /> Ads — Concord, CA
                 </h3>
                 <div className="space-y-6">
                   <DetailLabel>Problem</DetailLabel>
@@ -189,7 +189,7 @@ const DentalCaseStudy = () => {
                   <SubHead>Verified Key Takeaway</SubHead>
                   <P>Campaign restructuring, call-only strategy, and negative keyword management more than doubled conversions while cutting cost-per-acquisition by nearly two-thirds. The implants and all-in-4 campaign created a new high-value lead stream.</P>
 
-                  <PdfBlock src="/case-studies/ppc-dental-case-study-1.pdf" title="View Full PPC Case Study Report" />
+                  <PdfBlock src="/case-studies/Google-PPC-Dental_-Case-Study-Concord-CA.pdf" title="View Full PPC Case Study Report" />
                   <div className="mt-8 flex justify-center">
                     <Button variant="heroOutline" size="xl" asChild className="rounded-full px-10">
                       <a href={freeAuditUrl} target="_blank" rel="noopener noreferrer">Request a Website &amp; SEO Audit</a>
