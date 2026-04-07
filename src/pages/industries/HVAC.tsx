@@ -346,7 +346,7 @@ const HVAC = () => {
       <CardCTA
         title="Ready to Own Your Local HVAC Market?"
         description="The Map Pack positions your competitors hold right now weren't built in July. They were built in February and March — while you were busy running service calls. Let's build yours before the next peak season hits."
-        buttonHref=strategySessionUrl
+        buttonHref={strategySessionUrl}
         buttonText="Schedule Strategy Call"
       />
 

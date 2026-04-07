@@ -275,7 +275,7 @@ const Dental = () => {
       <CardCTA
         title="Ready to Grow Your Dental Practice?"
         description="Get a free strategy session and see exactly how we'll help you attract more high-value patients to your dental practice."
-        buttonHref=strategySessionUrl
+        buttonHref={strategySessionUrl}
         buttonText="Schedule Strategy Call"
       />
 

@@ -589,7 +589,7 @@ const HomeServices = () => {
         caseStudies={caseStudies}
         title="Home Service Success Stories"
         subtitle="See how we've helped contractors build predictable lead pipelines"
-        ctaLink=strategySessionUrl
+        ctaLink={strategySessionUrl}
         ctaText="Get Results Like These"
       />
 

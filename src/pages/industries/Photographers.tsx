@@ -332,7 +332,7 @@ const Photographers = () => {
         caseStudies={caseStudies}
         title="Photography Success Stories"
         subtitle="See how we've helped photographers fill their calendars with premium clients"
-        ctaLink=strategySessionUrl
+        ctaLink={strategySessionUrl}
         ctaText="Get Results Like These"
       />
 

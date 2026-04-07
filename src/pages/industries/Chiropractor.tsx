@@ -271,7 +271,7 @@ const Chiropractor = () => {
       <CardCTA
         title="Ready to Fill Your Schedule?"
         description="Get a free strategy session and discover how to attract more patients seeking relief to your chiropractic practice."
-        buttonHref=strategySessionUrl
+        buttonHref={strategySessionUrl}
         buttonText="Schedule Strategy Call"
       />
 
