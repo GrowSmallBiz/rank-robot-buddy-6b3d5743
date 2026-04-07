@@ -277,6 +277,9 @@ export const Header = () => {
                     <Link to="/professional-services/photography-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Photographers
                     </Link>
+                    <Link to="/professional-services/photographers-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Professional Photographers
+                    </Link>
                   </div>
                 </div>
               </div>
