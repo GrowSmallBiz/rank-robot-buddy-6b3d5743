@@ -82,27 +82,6 @@ const painPoints = [
 ];
 
 
-const medSpaTestimonials = [
-  {
-    quote: "Our consultation bookings tripled within 4 months. We're now fully booked for injectables and have a waitlist for laser treatments.",
-    author: "Dr. Amanda Foster",
-    role: "Medical Director",
-    company: "Radiance Aesthetics",
-  },
-  {
-    quote: "GrowSmallBiz positioned us as THE luxury med spa in our area. We're attracting exactly the high-value clients we wanted.",
-    author: "Nicole Richards",
-    role: "Owner",
-    company: "Glow Med Spa & Wellness",
-  },
-  {
-    quote: "Premium treatment bookings increased 280%. Our average client value doubled in just 6 months.",
-    author: "Dr. Lisa Park",
-    role: "Aesthetic Director",
-    company: "Elegance Med Spa",
-  },
-];
-
 const faqs = [
   {
     question: "How is med spa SEO different from regular healthcare SEO?",
