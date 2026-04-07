@@ -214,6 +214,13 @@ const MedSpa = () => {
                     <span className="text-muted-foreground"> — Your website turns curiosity into a booked consultation</span>
                   </div>
                 </div>
+                <div className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl">
+                  <span className="text-primary font-bold text-lg">4.</span>
+                  <div>
+                    <span className="font-semibold text-foreground">Retention</span>
+                    <span className="text-muted-foreground"> — CRM automation transforms first appointments into long-term memberships</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

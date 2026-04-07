@@ -164,7 +164,7 @@ export const hvacBlogPosts: BlogPost[] = [
     title: "How to Get More 5-Star Reviews for Your HVAC Business",
     excerpt: "Reviews are crucial for local rankings. Discover ethical strategies to generate more positive reviews from happy customers.",
     category: "Reputation",
-    author: "David Martinez",
+    author: "Subrata Guha",
     date: "Dec 18, 2025",
     readTime: "5 min read"
   }

@@ -47,7 +47,7 @@ const Chiropractor = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Chiropractic Marketing Agency | Local SEO, Google Ads & Patient Retention</title>
+        <title>Chiropractic Marketing Agency | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz is a chiropractic marketing agency delivering local SEO, condition-specific Google Ads, and CRM automation that fills your schedule and builds recurring wellness revenue. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/chiropractic-marketing/" />
       </Head>
