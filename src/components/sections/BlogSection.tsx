@@ -156,7 +156,7 @@ export const hvacBlogPosts: BlogPost[] = [
     title: "Google Business Profile Optimization for HVAC Companies",
     excerpt: "Your Google Business Profile is your digital storefront. Here's how to optimize it for maximum visibility and leads.",
     category: "Local SEO",
-    author: "Sarah Chen",
+    author: "Subrata Guha",
     date: "Dec 22, 2025",
     readTime: "6 min read"
   },
