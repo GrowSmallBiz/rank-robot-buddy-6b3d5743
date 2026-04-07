@@ -229,7 +229,7 @@ export const chiropractorBlogPosts: BlogPost[] = [
     title: "Chiropractic SEO: Ranking for Back Pain Keywords",
     excerpt: "Learn how to capture patients searching for back pain, neck pain, and spinal health solutions in your area.",
     category: "Chiro SEO",
-    author: "Dr. James Wilson",
+    author: "Subrata Guha",
     date: "Dec 28, 2025",
     readTime: "7 min read"
   },
