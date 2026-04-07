@@ -148,7 +148,7 @@ export const hvacBlogPosts: BlogPost[] = [
     title: "HVAC SEO: How to Rank #1 for Emergency AC Repair",
     excerpt: "Learn the strategies top HVAC companies use to capture emergency service calls and dominate local search results.",
     category: "HVAC SEO",
-    author: "Mike Thompson",
+    author: "Subrata Guha",
     date: "Dec 28, 2025",
     readTime: "7 min read"
   },
