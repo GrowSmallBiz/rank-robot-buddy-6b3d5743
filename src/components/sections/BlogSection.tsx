@@ -183,7 +183,7 @@ export const dentalBlogPosts: BlogPost[] = [
     title: "How to Rank #1 for 'Dentist Near Me' Searches",
     excerpt: "Local search dominance is essential for dental practices. Here's your complete guide to local SEO success.",
     category: "Local SEO",
-    author: "Michael Chen",
+    author: "Subrata Guha",
     date: "Dec 22, 2025",
     readTime: "6 min read"
   },
