@@ -329,64 +329,60 @@ export const Header = () => {
                   isCaseStudiesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
-                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Home Service Contractors</p>
-                <Link
-                  to="/home-service-contractors/hvac-marketing/seo-case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                {/* Home Service Contractors - Flyout */}
+                <div
+                  className="relative group/cs-home"
+                  onMouseEnter={() => setIsCsHomeOpen(true)}
+                  onMouseLeave={() => setIsCsHomeOpen(false)}
                 >
-                  HVAC, Plumbing & Electrical — Local SEO
-                </Link>
-                <Link
-                  to="/home-service-contractors/hvac-marketing/google-ads-case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  HVAC, Plumbing & Electrical — Google Ads
-                </Link>
-                <Link
-                  to="/home-service-contractors/roofing-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Roofers
-                </Link>
-                <Link
-                  to="/home-service-contractors/landscaping-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Tree Care, Lawn Care & Landscaping
-                </Link>
-                <Link
-                  to="/home-service-contractors/home-renovation-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Home Remodeling
-                </Link>
-                <Link
-                  to="/home-service-contractors/cleaning-service-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Cleaning Services
-                </Link>
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Home Service Contractors
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-72 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isCsHomeOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/home-service-contractors/hvac-marketing/seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      HVAC, Plumbing & Electrical — Local SEO
+                    </Link>
+                    <Link to="/home-service-contractors/hvac-marketing/google-ads-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      HVAC, Plumbing & Electrical — Google Ads
+                    </Link>
+                    <Link to="/home-service-contractors/roofing-marketing/case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Roofers
+                    </Link>
+                    <Link to="/home-service-contractors/landscaping-marketing/case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Tree Care, Lawn Care & Landscaping
+                    </Link>
+                    <Link to="/home-service-contractors/home-renovation-marketing/case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Home Remodeling
+                    </Link>
+                    <Link to="/home-service-contractors/cleaning-service-marketing/case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Cleaning Services
+                    </Link>
+                  </div>
+                </div>
 
-                <div className="border-t border-border my-2" />
-                <p className="px-4 py-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Health & Wellness Practices</p>
-                <Link
-                  to="/health-and-wellness-practices/med-spa-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                {/* Health & Wellness Practices - Flyout */}
+                <div
+                  className="relative group/cs-health"
+                  onMouseEnter={() => setIsCsHealthOpen(true)}
+                  onMouseLeave={() => setIsCsHealthOpen(false)}
                 >
-                  Med Spa
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/dental-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Dental Practices
-                </Link>
-                <Link
-                  to="/health-and-wellness-practices/chiropractic-marketing/case-study/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                >
-                  Chiropractic
-                </Link>
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Health & Wellness Practices
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isCsHealthOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/health-and-wellness-practices/med-spa-marketing/case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Med Spa
+                    </Link>
+                    <Link to="/health-and-wellness-practices/dental-marketing/case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Dental Practices
+                    </Link>
+                    <Link to="/health-and-wellness-practices/chiropractic-marketing/case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Chiropractic
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
 
