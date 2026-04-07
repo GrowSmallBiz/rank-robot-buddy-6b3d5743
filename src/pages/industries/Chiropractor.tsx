@@ -50,11 +50,6 @@ const painPoints = [
 ];
 
 
-const chiroTestimonials = [
-  { quote: "We went from struggling to find new patients to having a consistent flow of quality leads. Our schedule is now full weeks in advance.", author: "Dr. Michael Torres", role: "Clinic Director", company: "Align Chiropractic & Wellness" },
-  { quote: "GrowSmallBiz helped us rank #1 for 'chiropractor' and 'back pain relief' in our city. The ROI has been phenomenal.", author: "Dr. Lisa Chang", role: "Owner", company: "Vitality Spine Center" },
-  { quote: "New patient appointments increased 250% in 5 months. We now have a waitlist for new patients.", author: "Dr. James Park", role: "Practice Owner", company: "Peak Performance Chiropractic" },
-];
 
 const faqs = [
   { question: "How long does it take to see more new patients from SEO?", answer: "Most chiropractic practices see measurable increases in website traffic within 2-3 months and new patient growth within 4-6 months. Local map pack improvements often occur faster as we optimize your Google Business Profile." },
