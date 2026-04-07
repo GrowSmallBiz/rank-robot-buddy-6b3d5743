@@ -202,7 +202,7 @@ export const medSpaBlogPosts: BlogPost[] = [
     title: "Med Spa SEO: Ranking for Botox and Filler Keywords",
     excerpt: "Learn how to dominate search results for high-value aesthetic treatment keywords and attract premium clients.",
     category: "Med Spa SEO",
-    author: "Dr. Jessica Liu",
+    author: "Subrata Guha",
     date: "Dec 28, 2025",
     readTime: "8 min read"
   },
