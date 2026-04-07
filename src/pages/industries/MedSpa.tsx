@@ -356,7 +356,7 @@ const MedSpa = () => {
       <CardCTA
         title="Ready to Fill Your Treatment Rooms?"
         description="Get a free strategy session and discover how to attract more high-value aesthetic clients to your med spa."
-        buttonHref=strategySessionUrl
+        buttonHref={strategySessionUrl}
         buttonText="Schedule Strategy Call"
       />
 

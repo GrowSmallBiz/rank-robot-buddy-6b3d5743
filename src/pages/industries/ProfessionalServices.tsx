@@ -59,7 +59,7 @@ const ProfessionalServices = () => {
               From real estate agents to photographers — we help professional service providers generate more leads, book more clients, and build a dominant local presence through integrated digital marketing.
             </p>
             <Button variant="hero" size="xl" asChild>
-              <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">Schedule Strategy Call <ArrowRight className="ml-2 w-5 h-5" /></Link>
+              <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">Schedule Strategy Call <ArrowRight className="ml-2 w-5 h-5" /></a>
             </Button>
           </div>
         </section>

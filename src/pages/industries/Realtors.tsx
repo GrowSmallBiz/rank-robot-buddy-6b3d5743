@@ -344,7 +344,7 @@ const Realtors = () => {
         caseStudies={caseStudies}
         title="Real Estate Success Stories"
         subtitle="See how we've helped realtors build predictable lead pipelines"
-        ctaLink=strategySessionUrl
+        ctaLink={strategySessionUrl}
         ctaText="Get Results Like These"
       />
 
