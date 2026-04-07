@@ -252,7 +252,7 @@ const MedSpaCaseStudy = () => {
                         ]} />
 
                         <SubHead>Performance Highlights</SubHead>
-                        <P>This med spa client in Southern California experienced significant organic search growth over a 9-month AI SEO campaign (January 2023 – September 2023).</P>
+                        <P>This med spa client in Pleasanton, CA experienced significant organic search growth over a 9-month AI SEO campaign (January 2023 – September 2023).</P>
 
                         <DetailLabel>Key Metrics</DetailLabel>
                         <BulletList items={[
