@@ -91,7 +91,7 @@ const MedSpa = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Med Spa Marketing Agency | Local SEO, Google Ads & Social Media</title>
+        <title>Med Spa Marketing Agency | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz is a med spa marketing agency delivering local SEO, Google Ads, Meta ads, and reputation management that fills your treatment rooms. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/med-spa-marketing/" />
       </Head>
