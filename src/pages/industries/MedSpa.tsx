@@ -105,40 +105,6 @@ const faqs = [
   }
 ];
 
-const caseStudies = [
-  {
-    company: "Radiance Aesthetics",
-    location: "Miami, FL",
-    industry: "Medical Spa & Injectables",
-    challenge: "Heavy reliance on Instagram wasn't generating consistent consultations. Competitors with less experience were ranking higher on Google.",
-    timeframe: "5 months",
-    metrics: [
-      { label: "Monthly Consultations", before: "28", after: "112", improvement: "+300%" },
-      { label: "Injectable Appointments", before: "45/mo", after: "156/mo", improvement: "+247%" },
-      { label: "Avg. Treatment Package", before: "$800", after: "$2,400", improvement: "+200%" },
-      { label: "Monthly Revenue", before: "$68K", after: "$215K", improvement: "+216%" }
-    ],
-    quote: "Our consultation bookings tripled within 4 months. We're now fully booked for injectables.",
-    quoteName: "Dr. Amanda Foster",
-    quoteRole: "Medical Director, Radiance Aesthetics"
-  },
-  {
-    company: "Glow Med Spa & Wellness",
-    location: "Scottsdale, AZ",
-    industry: "Luxury Med Spa",
-    challenge: "Wanted to position as a premium destination but was attracting price-shoppers. Needed to rank for high-end treatment searches.",
-    timeframe: "6 months",
-    metrics: [
-      { label: "High-Value Inquiries", before: "12/mo", after: "67/mo", improvement: "+458%" },
-      { label: "Laser Treatment Bookings", before: "8/mo", after: "42/mo", improvement: "+425%" },
-      { label: "Avg. Client Lifetime Value", before: "$1,200", after: "$4,800", improvement: "+300%" },
-      { label: "Google Reviews", before: "48", after: "187", improvement: "+290%" }
-    ],
-    quote: "GrowSmallBiz positioned us as THE luxury med spa in our area. We're attracting exactly the high-value clients we wanted.",
-    quoteName: "Nicole Richards",
-    quoteRole: "Owner, Glow Med Spa & Wellness"
-  }
-];
 
 const MedSpa = () => {
   return (
