@@ -49,12 +49,6 @@ const painPoints = [
   "Dependent on referrals without a steady organic pipeline"
 ];
 
-const results = [
-  { metric: "256%", label: "Increase in new patients" },
-  { metric: "43", label: "First page keywords" },
-  { metric: "48%", label: "Reduction in cost per lead" },
-  { metric: "4.9", label: "Average Google rating achieved" }
-];
 
 const chiroTestimonials = [
   { quote: "We went from struggling to find new patients to having a consistent flow of quality leads. Our schedule is now full weeks in advance.", author: "Dr. Michael Torres", role: "Clinic Director", company: "Align Chiropractic & Wellness" },
