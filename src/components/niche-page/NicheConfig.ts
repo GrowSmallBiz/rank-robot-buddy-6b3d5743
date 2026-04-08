@@ -191,6 +191,13 @@ export interface WhyChooseUsCard {
   icon: LucideIcon;
 }
 
+export interface CaseStudyLink {
+  title: string;
+  description: string;
+  url: string;
+  icon: LucideIcon;
+}
+
 export interface TrackingRetargetingItem {
   title: string;
   description: string;
@@ -354,4 +361,7 @@ export interface NicheConfig {
 
   // ── Sticky CTA ──
   stickyCtaConfig: StickyCtaConfig;
+
+  // ── Case Study Links (optional) ──
+  caseStudyLinks?: CaseStudyLink[];
 }

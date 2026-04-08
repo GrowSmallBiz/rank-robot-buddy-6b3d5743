@@ -612,4 +612,14 @@ export const chiropracticConfig: NicheConfig = {
     accentWords: ["Fills", "Your", "Schedule"],
     showAfterScroll: 60,
   },
+
+  // ── Case Study Links ──
+  caseStudyLinks: [
+    {
+      title: "Chiropractic SEO Case Study",
+      description: "How we helped a chiropractic clinic in Tracy, CA increase organic visibility and patient appointments.",
+      url: "/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/",
+      icon: Search,
+    },
+  ],
 };

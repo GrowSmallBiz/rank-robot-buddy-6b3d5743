@@ -609,4 +609,20 @@ export const hvacConfig: NicheConfig = {
     accentWords: ["Fills", "Your", "Calendar"],
     showAfterScroll: 60,
   },
+
+  // ── Case Study Links ──
+  caseStudyLinks: [
+    {
+      title: "HVAC SEO Case Study",
+      description: "How we helped an HVAC contractor dominate local search and increase organic leads by 312%.",
+      url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/",
+      icon: Search,
+    },
+    {
+      title: "HVAC Google Ads Case Study",
+      description: "How we generated exclusive, high-intent leads for an HVAC company through optimized Google Ads campaigns.",
+      url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/",
+      icon: Target,
+    },
+  ],
 };

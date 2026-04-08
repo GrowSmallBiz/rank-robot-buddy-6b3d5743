@@ -24,6 +24,7 @@ import { ReputationSection } from "./sections/ReputationSection";
 import { AiVoiceChatSection } from "./sections/AiVoiceChatSection";
 import { WhyChooseUsSection } from "./sections/WhyChooseUsSection";
 import { FaqSection } from "./sections/FaqSection";
+import { CaseStudyLinksSection } from "./sections/CaseStudyLinksSection";
 
 interface NichePageProps {
   config: NicheConfig;
@@ -113,6 +114,11 @@ const NichePage = ({ config }: NichePageProps) => {
 
       {/* 13. Why Choose Us */}
       <WhyChooseUsSection config={config} />
+
+      {/* Case Study Links (if configured) */}
+      {config.caseStudyLinks && config.caseStudyLinks.length > 0 && (
+        <CaseStudyLinksSection links={config.caseStudyLinks} />
+      )}
 
       {/* 14. FAQ */}
       <FaqSection config={config} />
