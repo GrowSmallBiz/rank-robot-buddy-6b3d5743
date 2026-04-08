@@ -274,7 +274,8 @@ const caseStudies = [
     ],
     quote: "Our phone rings constantly now — the AI Receptionist handles after-hours calls perfectly.",
     quoteName: "Mike Johnson",
-    quoteRole: "Owner, Johnson HVAC & Plumbing"
+    quoteRole: "Owner, Johnson HVAC & Plumbing",
+    link: "/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/"
   },
   {
     company: "Ramirez Roofing",
@@ -290,7 +291,59 @@ const caseStudies = [
     ],
     quote: "GrowSmallBiz replaced our HomeAdvisor leads with organic leads that close at 3x the rate.",
     quoteName: "Carlos Ramirez",
-    quoteRole: "Owner, Ramirez Roofing"
+    quoteRole: "Owner, Ramirez Roofing",
+    link: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/"
+  },
+  {
+    company: "GreenScape Landscaping",
+    location: "Bay Area, CA",
+    industry: "Tree Care, Lawn Care & Landscaping",
+    challenge: "Relying entirely on word-of-mouth with no online presence. Zero Google visibility for high-value landscaping keywords.",
+    timeframe: "6 months",
+    metrics: [
+      { label: "Organic Traffic", before: "120/mo", after: "1,450/mo", improvement: "+1,108%" },
+      { label: "Monthly Leads", before: "8", after: "42", improvement: "+425%" },
+      { label: "Google Map Pack", before: "Not ranking", after: "Top 3", improvement: "Top 3" },
+      { label: "Revenue Growth", before: "$28K/mo", after: "$67K/mo", improvement: "+139%" }
+    ],
+    quote: "We went from invisible online to the top landscaping company in our area.",
+    quoteName: "David Chen",
+    quoteRole: "Owner, GreenScape Landscaping",
+    link: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/"
+  },
+  {
+    company: "ProBuild Remodeling",
+    location: "East Bay, CA",
+    industry: "Home Remodeling",
+    challenge: "Low-quality leads from home improvement directories. No branded search presence for kitchen and bathroom remodeling.",
+    timeframe: "7 months",
+    metrics: [
+      { label: "Organic Leads", before: "6/mo", after: "28/mo", improvement: "+367%" },
+      { label: "Avg Project Value", before: "$12K", after: "$22K", improvement: "+83%" },
+      { label: "Google Reviews", before: "15", after: "67", improvement: "+347%" },
+      { label: "Close Rate", before: "15%", after: "35%", improvement: "+133%" }
+    ],
+    quote: "The quality of leads completely changed — homeowners now come to us ready to invest.",
+    quoteName: "James Park",
+    quoteRole: "Owner, ProBuild Remodeling",
+    link: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/"
+  },
+  {
+    company: "SparkleClean Services",
+    location: "Tri-Valley, CA",
+    industry: "Cleaning Services",
+    challenge: "Competing against national franchises with no SEO strategy. Spending heavily on Thumbtack with poor ROI.",
+    timeframe: "5 months",
+    metrics: [
+      { label: "Monthly Leads", before: "12", after: "55", improvement: "+358%" },
+      { label: "Cost Per Lead", before: "$65", after: "$18", improvement: "-72%" },
+      { label: "Recurring Clients", before: "25", after: "78", improvement: "+212%" },
+      { label: "Google Map Pack", before: "Not ranking", after: "Top 3", improvement: "Top 3" }
+    ],
+    quote: "We stopped competing on price and started winning on reputation and visibility.",
+    quoteName: "Maria Santos",
+    quoteRole: "Owner, SparkleClean Services",
+    link: "/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/"
   }
 ];
 
