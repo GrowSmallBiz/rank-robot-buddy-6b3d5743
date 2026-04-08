@@ -17,6 +17,7 @@ interface CaseStudy {
   quote?: string;
   quoteName?: string;
   quoteRole?: string;
+  link?: string;
 }
 
 interface CaseStudySectionProps {
@@ -118,6 +119,19 @@ export const CaseStudySection = ({
                   <p className="text-sm text-muted-foreground">
                     — {study.quoteName}, {study.quoteRole}
                   </p>
+                </div>
+              )}
+
+              {/* Link to full case study */}
+              {study.link && (
+                <div className="px-6 pb-6">
+                  <Link
+                    to={study.link}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    View Full Case Study
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
                 </div>
               )}
             </div>
