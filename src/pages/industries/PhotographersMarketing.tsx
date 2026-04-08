@@ -3708,8 +3708,8 @@ const PhotographersMarketing = () => {
       <CardCTA
         title="See Photography Studios's AI Client Growth System in Action"
         description="Watch how automated follow-ups, smart scheduling, and AI-powered nurturing can transform your photography studio. Book a personalized demo."
-        buttonText="Book Your Demo"
-        buttonHref="/contact"
+        buttonText="Schedule Strategy Call"
+        buttonHref={strategySessionUrl}
         accentWords={["Photography Studios's AI Client Growth System", "Action"]}
         sectionClassName="py-16"
       />
