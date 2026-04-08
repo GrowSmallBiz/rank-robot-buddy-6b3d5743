@@ -24,6 +24,7 @@ import { ReputationSection } from "./sections/ReputationSection";
 import { AiVoiceChatSection } from "./sections/AiVoiceChatSection";
 import { WhyChooseUsSection } from "./sections/WhyChooseUsSection";
 import { FaqSection } from "./sections/FaqSection";
+import { CaseStudyLinksSection } from "./sections/CaseStudyLinksSection";
 
 interface NichePageProps {
   config: NicheConfig;
