@@ -52,16 +52,16 @@ const Dental = () => {
       <Head>
         <title>Dental Marketing Agency | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz is a dental marketing agency that helps independent dental practices attract new patients, build five-star reputations, and implement systems that increase revenue. Schedule a free strategy call." />
-        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/dental-marketing/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-dentists/" />
       </Head>
       <ServiceJsonLd
         serviceName="Dental Practice Marketing"
         serviceType="Digital Marketing for Dentists"
         description="SEO, reputation management, and digital marketing to attract more dental patients."
-        url="/health-and-wellness-practices/dental-marketing"
+        url="/health-and-wellness-practices/marketing-for-dentists"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices" },
-          { name: "Dental Marketing", url: "/health-and-wellness-practices/dental-marketing" },
+          { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists" },
         ]}
       />
       
@@ -217,7 +217,7 @@ const Dental = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Dental Patient Acquisition Results</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">The following results are drawn from verified client engagements.</p>
             <Button variant="outline" size="lg" asChild>
-              <Link to="/health-and-wellness-practices/dental-marketing/case-study/">
+              <Link to="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/">
                 View Dental Google Ads Case Study →
               </Link>
             </Button>

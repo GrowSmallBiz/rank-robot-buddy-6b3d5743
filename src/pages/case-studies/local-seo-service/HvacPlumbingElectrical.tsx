@@ -105,17 +105,17 @@ const LocalSEOHvacPlumbingElectrical = () => {
           name="description"
           content="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused lead generation."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/hvac-marketing/seo-case-study/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses"
         description="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses."
-        url="/home-service-contractors/hvac-marketing/seo-case-study/"
+        url="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/"
         breadcrumbs={[
           { name: "Case Studies", url: "/home-service-contractors/" },
-          { name: "Local SEO", url: "/home-service-contractors/hvac-marketing/" },
-          { name: "HVAC, Plumbing & Electrical", url: "/home-service-contractors/hvac-marketing/seo-case-study/" },
+          { name: "Local SEO", url: "/home-service-contractors/marketing-for-hvac-contractors/" },
+          { name: "HVAC, Plumbing & Electrical", url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" },
         ]}
       />
       <Header />
@@ -136,7 +136,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
           <div className="container mx-auto px-4 text-center">
             <p className="text-muted-foreground text-sm">
               Also see:{" "}
-              <Link to="/home-service-contractors/hvac-marketing/google-ads-case-study/" className="text-primary hover:underline font-medium">
+              <Link to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" className="text-primary hover:underline font-medium">
                 Google PPC Case Studies for HVAC, Plumbing & Electrical →
               </Link>
             </p>

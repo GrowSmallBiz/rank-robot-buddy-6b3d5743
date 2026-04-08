@@ -60,17 +60,17 @@ const DentalCaseStudy = () => {
       <Head>
         <title>Dental Marketing Case Studies | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Documented Google Ads results for a dental practice — conversions, cost-per-acquisition, conversion rate, and CTR improvements year-over-year." />
-        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/dental-marketing/case-study/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Dental Marketing Case Studies"
         description="Documented Google Ads results for a dental practice."
-        url="/health-and-wellness-practices/dental-marketing/case-study/"
+        url="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
-          { name: "Dental Marketing", url: "/health-and-wellness-practices/dental-marketing/" },
-          { name: "Case Studies", url: "/health-and-wellness-practices/dental-marketing/case-study/" },
+          { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists/" },
+          { name: "Case Studies", url: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" },
         ]}
       />
       <Header />

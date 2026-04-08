@@ -96,16 +96,16 @@ const MedSpa = () => {
       <Head>
         <title>Med Spa Marketing Agency | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz is a med spa marketing agency delivering local SEO, Google Ads, Meta ads, and reputation management that fills your treatment rooms. Schedule a free strategy call." />
-        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/med-spa-marketing/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-med-spas/" />
       </Head>
       <ServiceJsonLd
         serviceName="Med Spa Marketing"
         serviceType="Digital Marketing for Med Spas"
         description="SEO and digital marketing for Botox, fillers, laser treatments, and aesthetic services."
-        url="/health-and-wellness-practices/med-spa-marketing"
+        url="/health-and-wellness-practices/marketing-for-med-spas"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices" },
-          { name: "Med Spa Marketing", url: "/health-and-wellness-practices/med-spa-marketing" },
+          { name: "Med Spa Marketing", url: "/health-and-wellness-practices/marketing-for-med-spas" },
         ]}
       />
       
@@ -300,7 +300,7 @@ const MedSpa = () => {
           </div>
           <div className="flex justify-center">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/health-and-wellness-practices/med-spa-marketing/case-study/">View Med Spa Case Studies →</Link>
+              <Link to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/">View Med Spa Case Studies →</Link>
             </Button>
           </div>
         </div>

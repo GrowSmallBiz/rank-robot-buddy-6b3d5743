@@ -109,16 +109,16 @@ const HomeRemodeling = () => {
           name="description"
           content="Explore documented Local SEO case study results for home remodeling and home renovation businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, conversions, and conversion-focused lead generation strategy."
         />
-        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/home-renovation-marketing/case-study/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Case Studies for Home Remodeling Businesses"
         description="Explore documented Local SEO case study results for home remodeling and home renovation businesses."
-        url="/home-service-contractors/home-renovation-marketing/case-study/"
+        url="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/"
         breadcrumbs={[
           { name: "Case Studies", url: "/home-service-contractors/" },
-          { name: "Home Remodeling", url: "/home-service-contractors/home-renovation-marketing/case-study/" },
+          { name: "Home Remodeling", url: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" },
         ]}
       />
       <Header />

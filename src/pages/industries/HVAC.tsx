@@ -77,17 +77,17 @@ const HVAC = () => {
       <Head>
         <title>HVAC Marketing Agency | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz is an HVAC marketing agency delivering Local SEO, Google Ads, and website design that puts your HVAC company in front of homeowners when they need you most." />
-        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/hvac-marketing/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/" />
       </Head>
       <ServiceJsonLd
         serviceName="HVAC Marketing"
         serviceType="Digital Marketing for HVAC"
         description="Local SEO, Google Ads, and digital marketing for HVAC companies."
-        url="/home-service-contractors/hvac-marketing"
+        url="/home-service-contractors/marketing-for-hvac-contractors"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Home Service Contractors", url: "/home-service-contractors" },
-          { name: "HVAC Marketing", url: "/home-service-contractors/hvac-marketing" },
+          { name: "HVAC Marketing", url: "/home-service-contractors/marketing-for-hvac-contractors" },
         ]}
       />
       
@@ -259,14 +259,14 @@ const HVAC = () => {
                 <h3 className="text-xl font-display font-semibold text-foreground mb-3">AI SEO Case Studies — HVAC</h3>
                 <p className="text-muted-foreground mb-4">Two documented AI SEO campaigns covering HVAC contractors across California and Alaska. Results include Google Business Profile visibility growth, organic traffic increases, keyword ranking improvements, and call volume data.</p>
                 <Button variant="outline" asChild>
-                  <Link to="/home-service-contractors/hvac-marketing/seo-case-study/">View AI SEO Case Studies →</Link>
+                  <Link to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/">View AI SEO Case Studies →</Link>
                 </Button>
               </div>
               <div className="p-6 bg-card border border-border rounded-2xl">
                 <h3 className="text-xl font-display font-semibold text-foreground mb-3">Google Ads Case Studies — HVAC</h3>
                 <p className="text-muted-foreground mb-4">Documented Google Ads campaigns showing cost-per-lead, conversion volume, and ROI for HVAC contractors. All conversions tracked to inbound calls and booked appointments.</p>
                 <Button variant="outline" asChild>
-                  <Link to="/home-service-contractors/hvac-marketing/google-ads-case-study/">View Google Ads Case Studies →</Link>
+                  <Link to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/">View Google Ads Case Studies →</Link>
                 </Button>
               </div>
             </div>

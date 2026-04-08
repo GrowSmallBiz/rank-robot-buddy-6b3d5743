@@ -12,13 +12,13 @@ const industries = [
     icon: Home,
     title: "Real Estate Marketing",
     description: "Generate qualified buyer and seller leads with hyperlocal SEO, targeted ads, and automated follow-up systems built for real estate professionals.",
-    link: "/professional-services/real-estate-marketing/",
+    link: "/professional-services/marketing-for-real-estate-agents-brokers/",
   },
   {
     icon: Building,
     title: "Real Estate Agents & Brokers",
     description: "IDX-integrated websites, AI-powered CRM, automated follow-ups, and lead generation tools built specifically for realtors and brokers.",
-    link: "/professional-services/realtor-marketing/",
+    link: "/professional-services/marketing-for-realtors/",
   },
   {
     icon: Camera,

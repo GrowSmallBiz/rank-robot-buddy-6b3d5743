@@ -454,17 +454,17 @@ const RealtorMarketing = () => {
       <Head>
         <title>Real Estate Marketing Solutions | GrowSmallBiz</title>
         <meta name="description" content="Grow your real estate business with IDX-integrated websites, AI-powered CRM, automated follow-ups, and lead generation tools. Built for realtors and brokers." />
-        <link rel="canonical" href="https://growsmallbiz.io/professional-services/realtor-marketing/" />
+        <link rel="canonical" href="https://growsmallbiz.io/professional-services/marketing-for-realtors/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="Real Estate Marketing Solutions"
         serviceType="Digital Marketing for Realtors"
         description="IDX-integrated websites, AI-powered CRM, automated follow-ups, and lead generation for realtors."
-        url="/professional-services/realtor-marketing"
+        url="/professional-services/marketing-for-realtors"
         breadcrumbs={[
           { name: "Professional Services", url: "/professional-services" },
-          { name: "Realtor Marketing", url: "/professional-services/realtor-marketing" },
+          { name: "Realtor Marketing", url: "/professional-services/marketing-for-realtors" },
         ]}
       />
       <Header />
