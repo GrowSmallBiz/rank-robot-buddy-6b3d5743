@@ -361,4 +361,7 @@ export interface NicheConfig {
 
   // ── Sticky CTA ──
   stickyCtaConfig: StickyCtaConfig;
+
+  // ── Case Study Links (optional) ──
+  caseStudyLinks?: CaseStudyLink[];
 }
