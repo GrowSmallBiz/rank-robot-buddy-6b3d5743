@@ -612,4 +612,14 @@ export const dentalConfig: NicheConfig = {
     accentWords: ["Fills", "Your", "Chair"],
     showAfterScroll: 60,
   },
+
+  // ── Case Study Links ──
+  caseStudyLinks: [
+    {
+      title: "Dental SEO Case Study",
+      description: "How we helped a dental practice in Concord, CA grow organic traffic and new patient bookings with local SEO.",
+      url: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/",
+      icon: Search,
+    },
+  ],
 };
