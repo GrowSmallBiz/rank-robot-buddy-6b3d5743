@@ -3,6 +3,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
 import ScrollToTop from "@/components/ScrollToTop";
+import Redirect from "@/components/Redirect";
 
 // Lazy-load toast components — they're rarely needed on initial render
 const Toaster = reactLazy(() => import("@/components/ui/toaster").then(m => ({ default: m.Toaster })));
@@ -88,28 +89,59 @@ export const routes: RouteRecord[] = [
       { path: "locations/pleasant-hill-ca", lazy: lazy(() => import("./pages/locations/PleasantHillCA")) },
       { path: "locations/martinez-ca", lazy: lazy(() => import("./pages/locations/MartinezCA")) },
 
-      { path: "home-service-contractors/hvac-marketing/seo-case-study", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
-      { path: "home-service-contractors/hvac-marketing/google-ads-case-study", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
-      { path: "home-service-contractors/roofing-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
-      { path: "home-service-contractors/landscaping-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
-      { path: "home-service-contractors/home-renovation-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
-      { path: "home-service-contractors/cleaning-service-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
-
-      { path: "health-and-wellness-practices/med-spa-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/MedSpaCaseStudy")) },
-      { path: "health-and-wellness-practices/dental-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/DentalCaseStudy")) },
-      { path: "health-and-wellness-practices/chiropractic-marketing/case-study", lazy: lazy(() => import("./pages/case-studies/ChiropracticCaseStudy")) },
-
+      // ── NEW niche page routes ──
       { path: "home-service-contractors", lazy: lazy(() => import("./pages/industries/HomeServices")) },
-      { path: "home-service-contractors/hvac-marketing", lazy: lazy(() => import("./pages/industries/hvac-marketing/index")) },
+      { path: "home-service-contractors/marketing-for-hvac-contractors", lazy: lazy(() => import("./pages/industries/hvac-marketing/index")) },
+
       { path: "health-and-wellness-practices", lazy: lazy(() => import("./pages/industries/HealthAndWellness")) },
-      { path: "health-and-wellness-practices/med-spa-marketing", lazy: lazy(() => import("./pages/industries/med-spa-marketing/index")) },
-      { path: "health-and-wellness-practices/chiropractic-marketing", lazy: lazy(() => import("./pages/industries/chiropractic-marketing/index")) },
-      { path: "health-and-wellness-practices/dental-marketing", lazy: lazy(() => import("./pages/industries/dental-marketing/index")) },
+      { path: "health-and-wellness-practices/marketing-for-med-spas", lazy: lazy(() => import("./pages/industries/med-spa-marketing/index")) },
+      { path: "health-and-wellness-practices/marketing-for-chiropractors", lazy: lazy(() => import("./pages/industries/chiropractic-marketing/index")) },
+      { path: "health-and-wellness-practices/marketing-for-dentists", lazy: lazy(() => import("./pages/industries/dental-marketing/index")) },
+
       { path: "professional-services", lazy: lazy(() => import("./pages/industries/ProfessionalServices")) },
-      { path: "professional-services/real-estate-marketing", lazy: lazy(() => import("./pages/industries/Realtors")) },
-      { path: "professional-services/realtor-marketing", lazy: lazy(() => import("./pages/industries/RealtorMarketing")) },
-      
-      { path: "professional-services/photographers-marketing", lazy: lazy(() => import("./pages/industries/photographers-marketing/index")) },
+      { path: "professional-services/marketing-for-real-estate-agents-brokers", lazy: lazy(() => import("./pages/industries/Realtors")) },
+      { path: "professional-services/marketing-for-realtors", lazy: lazy(() => import("./pages/industries/RealtorMarketing")) },
+      { path: "professional-services/marketing-for-photographers", lazy: lazy(() => import("./pages/industries/photographers-marketing/index")) },
+
+      // ── NEW case study routes ──
+      { path: "home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
+      { path: "home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
+      { path: "home-service-contractors/marketing-for-roofers/roofing-seo-case-study", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
+      { path: "home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
+      { path: "home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
+      { path: "home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
+
+      { path: "health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study", lazy: lazy(() => import("./pages/case-studies/MedSpaCaseStudy")) },
+      { path: "health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study", lazy: lazy(() => import("./pages/case-studies/DentalCaseStudy")) },
+      { path: "health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study", lazy: lazy(() => import("./pages/case-studies/ChiropracticCaseStudy")) },
+
+      // ── 301 REDIRECTS: old niche pages → new ──
+      { path: "home-service-contractors/hvac-marketing", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/" /> },
+      { path: "home-service-contractors/roofing-marketing", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/" /> },
+      { path: "home-service-contractors/landscaping-marketing", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/" /> },
+      { path: "home-service-contractors/home-renovation-marketing", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/" /> },
+      { path: "home-service-contractors/cleaning-service-marketing", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/" /> },
+
+      { path: "health-and-wellness-practices/med-spa-marketing", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/" /> },
+      { path: "health-and-wellness-practices/chiropractic-marketing", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-chiropractors/" /> },
+      { path: "health-and-wellness-practices/dental-marketing", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/" /> },
+
+      { path: "professional-services/realtor-marketing", Component: () => <Redirect to="/professional-services/marketing-for-realtors/" /> },
+      { path: "professional-services/real-estate-marketing", Component: () => <Redirect to="/professional-services/marketing-for-real-estate-agents-brokers/" /> },
+      { path: "professional-services/photographers-marketing", Component: () => <Redirect to="/professional-services/marketing-for-photographers/" /> },
+
+      // ── 301 REDIRECTS: old case study pages → new ──
+      { path: "home-service-contractors/hvac-marketing/seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
+      { path: "home-service-contractors/hvac-marketing/google-ads-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" /> },
+      { path: "home-service-contractors/roofing-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" /> },
+      { path: "home-service-contractors/landscaping-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/" /> },
+      { path: "home-service-contractors/home-renovation-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" /> },
+      { path: "home-service-contractors/cleaning-service-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" /> },
+
+      { path: "health-and-wellness-practices/med-spa-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" /> },
+      { path: "health-and-wellness-practices/dental-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" /> },
+      { path: "health-and-wellness-practices/chiropractic-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" /> },
+
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
       { path: "terms-of-service", lazy: lazy(() => import("./pages/TermsOfService")) },
