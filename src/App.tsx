@@ -107,7 +107,7 @@ export const routes: RouteRecord[] = [
       { path: "health-and-wellness-practices/dental-marketing", lazy: lazy(() => import("./pages/industries/Dental")) },
       { path: "professional-services", lazy: lazy(() => import("./pages/industries/ProfessionalServices")) },
       { path: "professional-services/real-estate-marketing", lazy: lazy(() => import("./pages/industries/Realtors")) },
-      { path: "professional-services/photography-marketing", lazy: lazy(() => import("./pages/industries/Photographers")) },
+      
       { path: "professional-services/photographers-marketing", lazy: lazy(() => import("./pages/industries/PhotographersMarketing")) },
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
