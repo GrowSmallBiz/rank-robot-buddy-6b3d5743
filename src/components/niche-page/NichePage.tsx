@@ -115,6 +115,11 @@ const NichePage = ({ config }: NichePageProps) => {
       {/* 13. Why Choose Us */}
       <WhyChooseUsSection config={config} />
 
+      {/* Case Study Links (if configured) */}
+      {config.caseStudyLinks && config.caseStudyLinks.length > 0 && (
+        <CaseStudyLinksSection links={config.caseStudyLinks} />
+      )}
+
       {/* 14. FAQ */}
       <FaqSection config={config} />
 
