@@ -1284,10 +1284,10 @@ const PhotographersMarketing = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button variant="hero" size="lg" asChild>
-                <Link to={strategySessionUrl}>
-                  Get Your Free Portfolio Audit
+                <a href={strategySessionUrl}>
+                  Schedule Strategy Call
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
+                </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a href="#solutions">
@@ -1295,6 +1295,7 @@ const PhotographersMarketing = () => {
                 </a>
               </Button>
             </div>
+            <p className="text-sm text-primary font-medium mt-4 animate-fade-up delay-300">No commitment. No pressure. Just a clear path forward for your business.</p>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 animate-fade-up delay-400">
@@ -1479,10 +1480,10 @@ const PhotographersMarketing = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                     <Button variant="hero" size="xl" asChild>
-                      <Link to={strategySessionUrl}>
-                        Get Your Free Strategy Session
+                      <a href={strategySessionUrl}>
+                        Schedule Strategy Call
                         <ArrowRight className="ml-2 w-5 h-5" />
-                      </Link>
+                      </a>
                     </Button>
                     <Button 
                       size="lg" 
@@ -1627,10 +1628,10 @@ const PhotographersMarketing = () => {
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="hero" size="lg" asChild>
-                  <Link to={strategySessionUrl} className="inline-flex items-center gap-2">
-                    Free AI + Google SEO Audit
+                  <a href={strategySessionUrl} className="inline-flex items-center gap-2">
+                    Schedule Strategy Call
                     <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  </a>
                 </Button>
                 <span className="text-sm text-muted-foreground">
                   If you want more booked sessions, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
@@ -2079,7 +2080,7 @@ const PhotographersMarketing = () => {
       <CardCTA
         title="See Where You Rank — Free SEO Visibility Audit"
         description="Find out exactly where your photography studio appears in local search results. Get a detailed report showing your rankings, competitors, and quick wins to climb higher."
-        buttonText="Get SEO Visibility Report"
+        buttonText="Schedule Strategy Call"
         buttonHref={strategySessionUrl}
         accentWords={["Free", "SEO Visibility Audit"]}
         sectionClassName="py-16"
