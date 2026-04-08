@@ -16,13 +16,13 @@ export const medSpaConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Med Spa Marketing Agency | Digital Marketing for Medical Spas | GrowSmallBiz",
   metaDescription: "GrowSmallBiz helps med spas attract high-value aesthetic clients with AI-powered SEO, Google Ads, Instagram strategy, and 24/7 AI Receptionist. Full-service digital marketing built for medical spas.",
-  canonicalUrl: "/health-and-wellness-practices/med-spa-marketing",
+  canonicalUrl: "/health-and-wellness-practices/marketing-for-med-spas",
   serviceName: "Med Spa Marketing Services",
   serviceType: "Digital Marketing for Medical Spas",
   serviceDescription: "AI-powered SEO, Google Ads, Instagram strategy, reputation management, and marketing automation for medical spas.",
   breadcrumbs: [
     { name: "Health & Wellness Practices", url: "/health-and-wellness-practices" },
-    { name: "Med Spa Marketing", url: "/health-and-wellness-practices/med-spa-marketing" },
+    { name: "Med Spa Marketing", url: "/health-and-wellness-practices/marketing-for-med-spas" },
   ],
 
   // ── Hero ──

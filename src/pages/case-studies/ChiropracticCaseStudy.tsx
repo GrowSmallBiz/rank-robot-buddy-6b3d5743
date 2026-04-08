@@ -91,17 +91,17 @@ const ChiropracticCaseStudy = () => {
       <Head>
         <title>Chiropractic Marketing Case Studies | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Documented AI SEO results for a chiropractic practice — organic traffic growth, keyword rankings, Google Search Console data, and Google Business Profile performance over 5 months." />
-        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/chiropractic-marketing/case-study/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Chiropractic Marketing Case Studies"
         description="Documented AI SEO results for a chiropractic practice."
-        url="/health-and-wellness-practices/chiropractic-marketing/case-study/"
+        url="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
-          { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/chiropractic-marketing/" },
-          { name: "Case Studies", url: "/health-and-wellness-practices/chiropractic-marketing/case-study/" },
+          { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/marketing-for-chiropractors/" },
+          { name: "Case Studies", url: "/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" },
         ]}
       />
       <Header />

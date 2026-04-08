@@ -140,7 +140,7 @@ const spokeCards = [
     trade: "HVAC Contractors",
     description: "High-season domination strategy. Seasonal Google Ads ramp-ups timed to weather patterns, Map Pack authority for emergency cooling and heating calls, and Google LSA badge management to own the top position year-round.",
     ctaText: "HVAC Contractor Marketing",
-    link: "/home-service-contractors/hvac-marketing/",
+    link: "/home-service-contractors/marketing-for-hvac-contractors/",
     icon: Flame,
   },
   {

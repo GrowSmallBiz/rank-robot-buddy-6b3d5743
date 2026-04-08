@@ -110,17 +110,17 @@ const MedSpaCaseStudy = () => {
       <Head>
         <title>Med Spa Marketing Case Studies | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Documented AI SEO and Google Ads results for med spa clients — organic traffic growth, keyword rankings, Google Business Profile performance, cost-per-lead, and conversion metrics." />
-        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/med-spa-marketing/case-study/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
         name="Med Spa Marketing Case Studies"
         description="Documented AI SEO and Google Ads results for med spa clients."
-        url="/health-and-wellness-practices/med-spa-marketing/case-study/"
+        url="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
-          { name: "Med Spa Marketing", url: "/health-and-wellness-practices/med-spa-marketing/" },
-          { name: "Case Studies", url: "/health-and-wellness-practices/med-spa-marketing/case-study/" },
+          { name: "Med Spa Marketing", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
+          { name: "Case Studies", url: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" },
         ]}
       />
       <Header />

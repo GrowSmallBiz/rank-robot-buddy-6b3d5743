@@ -52,16 +52,16 @@ const Chiropractor = () => {
       <Head>
         <title>Chiropractic Marketing Agency | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz is a chiropractic marketing agency delivering local SEO, condition-specific Google Ads, and CRM automation that fills your schedule and builds recurring wellness revenue. Schedule a free strategy call." />
-        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/chiropractic-marketing/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-chiropractors/" />
       </Head>
       <ServiceJsonLd
         serviceName="Chiropractor Marketing"
         serviceType="Digital Marketing for Chiropractors"
         description="SEO and digital marketing to grow your chiropractic practice and attract new patients."
-        url="/health-and-wellness-practices/chiropractic-marketing"
+        url="/health-and-wellness-practices/marketing-for-chiropractors"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices" },
-          { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/chiropractic-marketing" },
+          { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/marketing-for-chiropractors" },
         ]}
       />
       
@@ -213,7 +213,7 @@ const Chiropractor = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Chiropractic Practice Results</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">The following results are drawn from verified client engagements.</p>
             <Button variant="outline" size="lg" asChild>
-              <Link to="/health-and-wellness-practices/chiropractic-marketing/case-study/">
+              <Link to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/">
                 View AI SEO Case Study →
               </Link>
             </Button>

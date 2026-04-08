@@ -16,13 +16,13 @@ export const chiropracticConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Chiropractic Marketing Agency | Digital Marketing for Chiropractors | GrowSmallBiz",
   metaDescription: "GrowSmallBiz helps chiropractors attract new patients with AI-powered SEO, Google Ads, reputation management, and 24/7 AI Receptionist. Full-service digital marketing built for chiropractic practices.",
-  canonicalUrl: "/health-and-wellness-practices/chiropractic-marketing",
+  canonicalUrl: "/health-and-wellness-practices/marketing-for-chiropractors",
   serviceName: "Chiropractic Marketing Services",
   serviceType: "Digital Marketing for Chiropractors",
   serviceDescription: "AI-powered SEO, Google Ads, reputation management, and marketing automation for chiropractic practices.",
   breadcrumbs: [
     { name: "Health & Wellness Practices", url: "/health-and-wellness-practices" },
-    { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/chiropractic-marketing" },
+    { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/marketing-for-chiropractors" },
   ],
 
   // ── Hero ──
