@@ -28,24 +28,28 @@ export const StickyCardCTA = ({
   showAfterScroll = 600,
 }: StickyCardCTAProps) => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isDismissed, setIsDismissed] = useState(false);
+  const [isDismissed, setIsDismissed] = useState(() => {
+    try { return sessionStorage.getItem("sticky-cta-dismissed") === "1"; } catch { return false; }
+  });
 
   useEffect(() => {
+    if (isDismissed) return;
+
     const handleScroll = () => {
-      if (window.scrollY > showAfterScroll && !isDismissed) {
+      const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+      if (scrollPercent > 0.6) {
         setIsVisible(true);
-      } else if (window.scrollY <= showAfterScroll) {
-        setIsVisible(false);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [showAfterScroll, isDismissed]);
+  }, [isDismissed]);
 
   const handleDismiss = () => {
     setIsDismissed(true);
     setIsVisible(false);
+    try { sessionStorage.setItem("sticky-cta-dismissed", "1"); } catch {}
   };
 
   // Helper to render title with accent words highlighted
