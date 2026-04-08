@@ -191,6 +191,13 @@ export interface WhyChooseUsCard {
   icon: LucideIcon;
 }
 
+export interface CaseStudyLink {
+  title: string;
+  description: string;
+  url: string;
+  icon: LucideIcon;
+}
+
 export interface TrackingRetargetingItem {
   title: string;
   description: string;
