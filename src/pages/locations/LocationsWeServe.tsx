@@ -65,12 +65,17 @@ const LocationsWeServe = () => {
       <Head>
         <title>Digital Marketing Agency Bay Area — Local Marketing Services by City</title>
         <meta name="description" content="GrowSmallBiz serves local service businesses across the Bay Area — Walnut Creek, Danville, San Ramon, Dublin, Pleasanton, Concord, and more. Find your city for localized digital marketing services." />
-        <meta
-          name="description"
-          content="GrowSmallBiz Digital Marketing serves Bay Area cities including San Francisco, San Jose, Oakland, Fremont, Danville, San Ramon, Walnut Creek, and more. Tailored local marketing strategies for your city."
-        />
         <link rel="canonical" href="https://growsmallbiz.io/locations/locations-we-serve/" />
       </Head>
+      <PageJsonLd
+        pageType="WebPage"
+        name="Digital Marketing Agency Bay Area — Local Marketing Services by City"
+        description="GrowSmallBiz serves local service businesses across the Bay Area — Walnut Creek, Danville, San Ramon, Dublin, Pleasanton, Concord, and more."
+        url="/locations/locations-we-serve/"
+        breadcrumbs={[
+          { name: "Locations", url: "/locations/locations-we-serve/" },
+        ]}
+      />
 
       <Header />
 
