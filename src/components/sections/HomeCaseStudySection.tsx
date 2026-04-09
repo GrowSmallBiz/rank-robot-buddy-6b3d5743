@@ -1,4 +1,4 @@
-import { ArrowRight, TrendingUp, TrendingDown } from "lucide-react";
+import { ArrowRight, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -112,6 +112,31 @@ const campaigns: CampaignCard[] = [
   },
 ];
 
+const healthWellnessCards = [
+  {
+    title: "Med Spa Local SEO Growth",
+    subtitle: "Local SEO Campaign",
+    metrics: [
+      "+552.7% Users Year Over Year",
+      "+75.9% GBP Phone Calls",
+      "#1 Rankings — Laser Skin Treatment",
+      "Significant local pack visibility gains",
+    ],
+    link: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+  },
+  {
+    title: "Dental Practice Google Ads",
+    subtitle: "Google Ads Campaign",
+    metrics: [
+      "+175.51% Conversions Year Over Year",
+      "-64.62% Cost Per Acquisition",
+      "+187.04% Conversion Rate",
+      "+127.25% Account CTR",
+    ],
+    link: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/",
+  },
+];
+
 export const HomeCaseStudySection = () => {
   return (
     <section className="py-24 relative">
@@ -119,20 +144,20 @@ export const HomeCaseStudySection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            Real Results Across Home Service Campaigns
+            Real Results Across Industries
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            See how paid ads and AI SEO work together to generate more leads, improve local visibility, and lower acquisition costs.
+            Home service contractors, health &amp; wellness practices, and more.
           </p>
         </div>
 
+        {/* Home Service Campaign Cards */}
         <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {campaigns.map((campaign, index) => (
             <div
               key={index}
               className="bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col"
             >
-              {/* Header */}
               <div className="bg-gradient-primary p-6">
                 <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
                   Campaign Results
@@ -145,7 +170,6 @@ export const HomeCaseStudySection = () => {
                 </p>
               </div>
 
-              {/* Challenge */}
               <div className="p-5 border-b border-border">
                 <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
                   The Challenge
@@ -155,13 +179,9 @@ export const HomeCaseStudySection = () => {
                 </p>
               </div>
 
-              {/* Result Groups */}
               <div className="flex-1">
                 {campaign.resultGroups.map((group, gIndex) => (
-                  <div
-                    key={gIndex}
-                    className="p-5 border-b border-border"
-                  >
+                  <div key={gIndex} className="p-5 border-b border-border">
                     <h4 className="text-xs font-semibold text-primary uppercase tracking-wider mb-3 flex items-center gap-2">
                       <TrendingUp className="w-3.5 h-3.5" />
                       {group.title}
@@ -185,7 +205,6 @@ export const HomeCaseStudySection = () => {
                   </div>
                 ))}
 
-                {/* Overall Impact */}
                 <div className="p-5">
                   <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
                     Overall Impact
@@ -199,6 +218,42 @@ export const HomeCaseStudySection = () => {
                     ))}
                   </div>
                 </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Health & Wellness Campaign Cards */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-10">
+          {healthWellnessCards.map((card, i) => (
+            <div
+              key={i}
+              className="bg-card border border-border rounded-2xl overflow-hidden card-hover"
+            >
+              <div className="bg-gradient-primary p-6">
+                <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
+                  Campaign Results
+                </span>
+                <h3 className="text-xl font-display font-bold text-primary-foreground mt-2 mb-1">
+                  {card.title}
+                </h3>
+                <p className="text-sm text-primary-foreground/70">{card.subtitle}</p>
+              </div>
+              <div className="p-6">
+                <div className="space-y-3 mb-5">
+                  {card.metrics.map((metric, mi) => (
+                    <div key={mi} className="flex items-start gap-2">
+                      <TrendingUp className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-sm text-foreground/85">{metric}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link
+                  to={card.link}
+                  className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                >
+                  View Case Studies →
+                </Link>
               </div>
             </div>
           ))}
