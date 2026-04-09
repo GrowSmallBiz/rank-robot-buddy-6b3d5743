@@ -42,6 +42,8 @@ import {
 } from "lucide-react";
 import { Head } from "vite-react-ssg";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { SiteNavigationJsonLd } from "@/components/seo/SiteNavigationJsonLd";
+import { ReviewJsonLd } from "@/components/seo/ReviewJsonLd";
 
 // Stats data for homepage
 const homepageStats = [
