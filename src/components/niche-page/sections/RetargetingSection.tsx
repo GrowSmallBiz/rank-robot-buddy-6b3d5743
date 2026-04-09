@@ -106,13 +106,15 @@ export const RetargetingSection = ({ config }: RetargetingSectionProps) => {
               </div>
 
               <div className="flex justify-center">
-                <Link
-                  to="/contact"
+                <a
+                  href="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg shadow-primary/25"
                 >
-                  Get Your SEO + Retargeting Strategy
+                  Schedule Strategy Call
                   <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>

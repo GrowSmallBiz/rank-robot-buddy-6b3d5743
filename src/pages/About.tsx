@@ -296,8 +296,8 @@ const About = () => {
         caseStudies={aboutCaseStudies}
         title="Client Success Stories"
         subtitle="Real results from real businesses we've helped grow"
-        ctaLink="/contact/"
-        ctaText="Get Results Like These"
+        ctaLink="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+        ctaText="Schedule Strategy Call"
       />
 
       <BlogSection 

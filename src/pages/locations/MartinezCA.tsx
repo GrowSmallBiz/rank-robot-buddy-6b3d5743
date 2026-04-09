@@ -234,7 +234,7 @@ const MartinezCA = () => {
               ))}
             </ul>
             <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
-              → Optimize Your Local SEO for Martinez — Schedule Your Free Strategy Call
+              → Optimize Your Local SEO for Martinez — Schedule Strategy Call
             </a>
           </div>
 
@@ -388,7 +388,7 @@ const MartinezCA = () => {
         </div>
       </section>
 
-      <PersonCTA title="Schedule Your Free Strategy Call" description="Receive a personalized strategy session — local SEO audit, competitive analysis, and a clear growth roadmap built specifically for your Martinez service business." buttonText="Schedule Strategy Call" buttonHref={strategyCallUrl} sectionClassName="py-16" />
+      <PersonCTA title="Schedule Strategy Call" description="Receive a personalized strategy session — local SEO audit, competitive analysis, and a clear growth roadmap built specifically for your Martinez service business." buttonText="Schedule Strategy Call" buttonHref={strategyCallUrl} sectionClassName="py-16" />
 
       <ConsultationFormSection utmCampaign="martinez-consultation" utmMedium="martinez-ca" />
 

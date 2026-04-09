@@ -106,7 +106,7 @@ export const blankConfig: NicheConfig = {
   heroSubheadline: "TODO: Describe your value proposition in 1–2 sentences.",
 
   /** Primary CTA button label */
-  primaryCtaLabel: "Book a Free Strategy Call",
+  primaryCtaLabel: "Schedule Strategy Call",
 
   /** Secondary CTA (anchor link) */
   secondaryCtaLabel: "See What's Included",
@@ -560,8 +560,8 @@ export const blankConfig: NicheConfig = {
   stickyCtaConfig: {
     title: "TODO: Ready to Grow Your [Niche]?",
     description: "TODO: Short value prop for the sticky popup.",
-    buttonText: "Book Free Strategy Call",
-    accentWords: ["Free", "Strategy Call"],
+    buttonText: "Schedule Strategy Call",
+    accentWords: ["Strategy Call"],
     showAfterScroll: 60,
   },
 };

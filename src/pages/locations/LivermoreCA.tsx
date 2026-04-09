@@ -329,7 +329,7 @@ const LivermoreCA = () => {
               ))}
             </ul>
             <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
-              → Optimize Your Local SEO for Livermore — Schedule Your Free Strategy Call
+              → Optimize Your Local SEO for Livermore — Schedule Strategy Call
             </a>
           </div>
 
@@ -681,7 +681,7 @@ const LivermoreCA = () => {
 
       {/* ===== PRE-FORM PERSON CTA ===== */}
       <PersonCTA
-        title="Schedule Your Free Strategy Call"
+        title="Schedule Strategy Call"
         description="Receive a personalized strategy session — dual-track competitive audit, Labs demographic analysis, wine country market assessment, and a clear growth roadmap built specifically for your Livermore service business."
         buttonText="Schedule Strategy Call"
         buttonHref={strategyCallUrl}

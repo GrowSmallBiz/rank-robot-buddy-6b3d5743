@@ -261,10 +261,10 @@ export const HomeCaseStudySection = () => {
 
         <div className="text-center mt-12">
           <Button variant="hero" size="lg" asChild>
-            <Link to="/contact/">
-              See How We Can Grow Your Business
+            <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
+              Schedule Strategy Call
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
+            </a>
           </Button>
         </div>
       </div>

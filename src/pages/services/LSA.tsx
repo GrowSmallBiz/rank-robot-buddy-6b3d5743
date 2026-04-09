@@ -261,7 +261,7 @@ const LSA = () => {
             />
             <div className="space-y-6 mt-12">
               {[
-                { title: "Free Strategy Call and LSA Readiness Assessment", desc: "We review your current online presence, check your Google Business Profile, assess your review count, verify licensing and insurance status, and evaluate your competitive landscape in your specific service area." },
+                { title: "Strategy Call and LSA Readiness Assessment", desc: "We review your current online presence, check your Google Business Profile, assess your review count, verify licensing and insurance status, and evaluate your competitive landscape in your specific service area." },
                 { title: "Google Guarantee Application and Verification", desc: "We manage your entire Google Guarantee application — documentation collection, background check submission, license and insurance verification — through to badge approval." },
                 { title: "Profile Build and Category Optimization", desc: "We build out your LSA profile in full: service categories, service area zip codes, hours, photos, and business description. Categories are selected based on search volume data and competitive analysis." },
                 { title: "Budget Setting and Campaign Launch", desc: "We set your initial weekly budget, configure lead preferences and notification settings, then launch and monitor daily through the first two weeks to catch any early adjustments needed." },
@@ -444,7 +444,7 @@ const LSA = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Get My Free Strategy Call
+                  Schedule Strategy Call
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>

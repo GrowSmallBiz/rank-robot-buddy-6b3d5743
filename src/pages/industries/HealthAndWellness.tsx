@@ -193,7 +193,7 @@ const credentials = [
 const gettingStartedSteps = [
   {
     step: 1,
-    title: "Schedule Your Free Strategy Call",
+    title: "Schedule Strategy Call",
     description: "Tell us about your practice, your patient acquisition goals, and where your current marketing is falling short. No pitch. No pressure. A direct conversation about what is and is not working.",
   },
   {
@@ -412,7 +412,7 @@ const HealthAndWellness = () => {
           <div className="text-center mt-10">
             <Button variant="hero" asChild>
               <a href={strategySessionUrl}>
-                Schedule Your Free Strategy Call
+                Schedule Strategy Call
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
@@ -551,7 +551,7 @@ const HealthAndWellness = () => {
           <div className="text-center mt-10">
             <Button variant="hero" asChild>
               <a href={strategySessionUrl}>
-                Schedule Your Free Strategy Call
+                Schedule Strategy Call
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
@@ -582,7 +582,7 @@ const HealthAndWellness = () => {
           </p>
           <Button variant="hero" size="lg" className="shadow-lg" asChild>
             <a href={strategySessionUrl}>
-              Schedule Your Free Strategy Call
+              Schedule Strategy Call
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Button>

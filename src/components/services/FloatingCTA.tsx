@@ -20,8 +20,8 @@ interface FloatingCTAProps {
 export const FloatingCTA = ({
   title,
   description,
-  buttonText = "Schedule Strategy Session",
-  buttonHref = "/contact/",
+  buttonText = "Schedule Strategy Call",
+  buttonHref = "https://lp.growsmallbiz.io/digital-growth-strategy-session",
   showAfterScroll = 400,
 }: FloatingCTAProps) => {
   const [isVisible, setIsVisible] = useState(false);

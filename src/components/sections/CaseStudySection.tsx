@@ -32,8 +32,8 @@ export const CaseStudySection = ({
   caseStudies,
   title = "Real Results, Real Businesses",
   subtitle = "See how we've helped businesses like yours achieve measurable growth",
-  ctaLink = "/contact/",
-  ctaText = "Get Results Like These"
+  ctaLink = "https://lp.growsmallbiz.io/digital-growth-strategy-session",
+  ctaText = "Schedule Strategy Call"
 }: CaseStudySectionProps) => {
   return (
     <section className="py-24 relative">
@@ -140,10 +140,17 @@ export const CaseStudySection = ({
 
         <div className="text-center mt-12">
           <Button variant="hero" size="lg" asChild>
-            <Link to={ctaLink}>
-              {ctaText}
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
+            {ctaLink.startsWith('http') ? (
+              <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+                {ctaText}
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            ) : (
+              <Link to={ctaLink}>
+                {ctaText}
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+            )}
           </Button>
         </div>
       </div>
