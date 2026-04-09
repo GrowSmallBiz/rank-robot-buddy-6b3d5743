@@ -100,6 +100,15 @@ const visibilityServices = [
     image: realtorSeoImg
   },
   {
+    id: "ai-search-visibility",
+    icon: Globe,
+    title: "AI Search Visibility",
+    description: "Get recommended when buyers and sellers ask ChatGPT, Google AI, Gemini, or Perplexity for realtor recommendations in your market.",
+    features: ["GEO & AEO Optimization", "Brand Mention Tracking", "AI Citation Building", "Review Volume & Consistency Strategy", "Platform Authority Signals", "Competitive AI Positioning"],
+    color: "violet",
+    image: realtorAiSearchVisibilityImg
+  },
+  {
     id: "paid-ads",
     icon: BarChart3,
     title: "Paid Ads Management",
@@ -116,15 +125,6 @@ const visibilityServices = [
     features: ["Content Calendar Management", "Property Showcase Posts", "Market Update Graphics", "Community Engagement", "Story & Reel Creation", "Brand Voice Development"],
     color: "indigo",
     image: realtorSocialMediaImg
-  },
-  {
-    id: "ai-search-visibility",
-    icon: Globe,
-    title: "AI Search Visibility",
-    description: "Get recommended when buyers and sellers ask ChatGPT, Google AI, Gemini, or Perplexity for realtor recommendations in your market.",
-    features: ["GEO & AEO Optimization", "Brand Mention Tracking", "AI Citation Building", "Review Volume & Consistency Strategy", "Platform Authority Signals", "Competitive AI Positioning"],
-    color: "violet",
-    image: realtorAiSearchVisibilityImg
   }
 ];
 
