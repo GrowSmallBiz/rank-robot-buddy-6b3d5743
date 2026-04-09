@@ -1,5 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useUtm } from "@/hooks/use-utm";
 
 interface PricingCardProps {
   name: string;
@@ -30,6 +31,9 @@ export const PricingCard = ({
   className = "",
   cardStyle,
 }: PricingCardProps) => {
+  const { buildUrl } = useUtm();
+  const finalCtaLink = buildUrl(ctaLink, cta.toLowerCase().replace(/\s+/g, "-"));
+
   return (
     <div
       className={`pricing-card ${popular ? "pricing-card-popular" : ""} animate-fade-up ${className}`}
@@ -68,7 +72,7 @@ export const PricingCard = ({
         className="w-full"
         asChild
       >
-        <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+        <a href={finalCtaLink} target="_blank" rel="noopener noreferrer">
           {cta}
         </a>
       </Button>
