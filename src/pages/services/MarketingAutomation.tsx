@@ -2,7 +2,7 @@ import { useEffect, useMemo } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { useLocation } from "react-router-dom";
 import { Head } from "vite-react-ssg";
-import { ArrowRight, ArrowDown, ArrowUp } from "lucide-react";
+import { ArrowRight, ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
@@ -12,7 +12,7 @@ import { SectionHeader } from "@/components/services/SectionHeader";
 import { FeatureCard } from "@/components/services/FeatureCard";
 import { PricingCard, PricingGrid } from "@/components/services/PricingCard";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
-import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { TestimonialCard, TestimonialsGrid } from "@/components/services/TestimonialCard";
 import { createServiceContactCTA } from "@/config/contactCTA";
