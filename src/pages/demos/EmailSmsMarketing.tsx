@@ -16,7 +16,7 @@ export default function EmailSmsMarketingDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Turn Cold Leads Into Paying Customers With Automated Email and SMS Campaigns</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">95% of Text Messages Are Read in the 1st Five Minutes</p>
@@ -29,7 +29,7 @@ export default function EmailSmsMarketingDemo() {
         </section>
 
         {/* Stop Using Multiple Apps */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6">Stop Using Multiple Apps For Email &amp; SMS Marketing</h2>
             <p className="text-lg text-foreground text-center mb-8">Integrate them into one for a seamless experience.</p>
@@ -58,7 +58,7 @@ export default function EmailSmsMarketingDemo() {
         </section>
 
         {/* Personalize and Customize */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>
@@ -86,7 +86,7 @@ export default function EmailSmsMarketingDemo() {
         </section>
 
         {/* Combine marketing strategy */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Combine marketing strategy to increase effectiveness</h2>
             <p className="text-muted-foreground leading-relaxed">SMS messages have a 98% average open rate making it great for promotions and offers. Email messages are great relationship builders as well as promotional tools. Combined, they can be a force to be reckoned with.</p>

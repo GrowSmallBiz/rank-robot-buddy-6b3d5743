@@ -15,7 +15,7 @@ export default function MembershipsDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
               Memberships, Courses & Communities
@@ -27,7 +27,7 @@ export default function MembershipsDemo() {
         </section>
 
         {/* $336.98 Billion Stat */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -49,7 +49,7 @@ export default function MembershipsDemo() {
         </section>
 
         {/* Countless Ways */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4">
               Countless Ways To Increase The Value You Offer
@@ -100,7 +100,7 @@ export default function MembershipsDemo() {
         </section>
 
         {/* Flexible Offers */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -125,7 +125,7 @@ export default function MembershipsDemo() {
         </section>
 
         {/* Course Creation */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img

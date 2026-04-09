@@ -15,7 +15,7 @@ export default function WebsiteBuilderDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
               Website &amp; Landing Page Builder
@@ -33,7 +33,7 @@ export default function WebsiteBuilderDemo() {
         </section>
 
         {/* 93% of consumers */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center mb-16">
             <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
               93% of consumers use search engines for purchase and service decisions
@@ -95,7 +95,7 @@ export default function WebsiteBuilderDemo() {
         </section>
 
         {/* No Limits */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -116,7 +116,7 @@ export default function WebsiteBuilderDemo() {
         </section>
 
         {/* Intuitive Drag-and-drop builder */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
@@ -137,7 +137,7 @@ export default function WebsiteBuilderDemo() {
         </section>
 
         {/* Websites are where people go */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
               Websites are where people go if they want more information

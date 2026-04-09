@@ -16,7 +16,7 @@ export default function GenerateLeadsDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <p className="text-primary font-semibold uppercase tracking-widest mb-4">GENERATE LEADS LIVE</p>
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
@@ -29,7 +29,7 @@ export default function GenerateLeadsDemo() {
         </section>
 
         {/* Source URL embed - no video available, show features */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
               See It In Action
@@ -49,7 +49,7 @@ export default function GenerateLeadsDemo() {
         </section>
 
         {/* Features */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-12">
               Smart Prospecting Tools At Your Fingertips
@@ -72,7 +72,7 @@ export default function GenerateLeadsDemo() {
         </section>
 
         {/* Fill Pipeline */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6">
               Fill Your Pipeline With Qualified Leads

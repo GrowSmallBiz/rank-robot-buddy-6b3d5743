@@ -14,7 +14,7 @@ export default function CalendarSchedulingDemo() {
       </Head>
       <Header />
       <main id="main-content" className="pt-20">
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Fill Your Calendar and Cut No-Shows With Smart Appointment Scheduling</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">GrowSmallBiz is your scheduling automation platform for eliminating the back-and-forth emails to find the perfect time — and so much more.</p>
@@ -27,7 +27,7 @@ export default function CalendarSchedulingDemo() {
         </section>
 
         {/* Drive More Revenue */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="bg-card border border-border rounded-xl p-6">
@@ -47,7 +47,7 @@ export default function CalendarSchedulingDemo() {
         </section>
 
         {/* Online Scheduling */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img src="https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148549799.jpg?w=826" alt="Online Scheduling" className="w-full rounded-xl shadow-lg" loading="lazy" />
@@ -61,7 +61,7 @@ export default function CalendarSchedulingDemo() {
         </section>
 
         {/* Managing Schedules */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6">Managing Schedules Has Never Been More Simple</h2>
             <p className="text-lg text-foreground text-center mb-12">With calendar scheduling you have control over your time.</p>
@@ -97,7 +97,7 @@ export default function CalendarSchedulingDemo() {
         </section>
 
         {/* Scheduling Needs */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>

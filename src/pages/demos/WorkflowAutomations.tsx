@@ -15,7 +15,7 @@ export default function WorkflowAutomationsDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
               Workflow Automations
@@ -33,7 +33,7 @@ export default function WorkflowAutomationsDemo() {
         </section>
 
         {/* Put Your Business On Auto-Pilot */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-8">
               Put Your Business On Auto-Pilot
@@ -115,7 +115,7 @@ export default function WorkflowAutomationsDemo() {
         </section>
 
         {/* Automate Everything / Ultimate Flexibility */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
