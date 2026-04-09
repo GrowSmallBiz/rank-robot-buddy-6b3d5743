@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Head } from "vite-react-ssg";
+import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 const PrivacyPolicy = () => {
   return (
@@ -10,6 +11,13 @@ const PrivacyPolicy = () => {
         <meta name="description" content="Privacy Policy for GrowSmallBiz Digital Marketing. Learn how we collect, use, and protect your personal information." />
         <link rel="canonical" href="https://growsmallbiz.io/privacy-policy/" />
       </Head>
+      <PageJsonLd
+        pageType="WebPage"
+        name="Privacy Policy | GrowSmallBiz Digital Marketing"
+        description="Privacy Policy for GrowSmallBiz Digital Marketing. Learn how we collect, use, and protect your personal information."
+        url="/privacy-policy/"
+        breadcrumbs={[{ name: "Privacy Policy", url: "/privacy-policy/" }]}
+      />
       <Header />
       <main id="main-content" className="pt-20">
         <div className="container mx-auto px-4 pt-16 pb-8 max-w-4xl">

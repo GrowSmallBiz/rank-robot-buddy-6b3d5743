@@ -7,6 +7,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { useUtm } from "@/hooks/use-utm";
 import { baseContactCTA } from "@/config/contactCTA";
+import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
