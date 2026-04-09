@@ -558,6 +558,7 @@ const MarketingAutomation = () => {
           primaryCTA={{
             label: "Schedule Strategy Call",
             href: "https://lp.growsmallbiz.io/digital-growth-strategy-session",
+            external: true,
           }}
           secondaryCTA={{
             label: "See Pricing",

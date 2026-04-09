@@ -235,9 +235,15 @@ const ServiceCardLarge = ({
       ))}
     </ul>
     <Button variant="outline" size="lg" asChild className="w-fit">
-      <Link to={href}>
-        Learn More <ArrowRight className="w-4 h-4 ml-2" />
-      </Link>
+      {href.startsWith('http') ? (
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          Learn More <ArrowRight className="w-4 h-4 ml-2" />
+        </a>
+      ) : (
+        <Link to={href}>
+          Learn More <ArrowRight className="w-4 h-4 ml-2" />
+        </Link>
+      )}
     </Button>
   </div>
 );
