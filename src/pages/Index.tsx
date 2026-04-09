@@ -175,28 +175,6 @@ const Index = () => {
         url="/"
         breadcrumbs={[]}
       />
-      <Head>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "GrowSmallBiz Digital Marketing",
-            "url": "https://growsmallbiz.io",
-            "telephone": "+1-925-886-3724",
-            "description": "AI-powered SEO and digital marketing agency specializing in local service businesses.",
-            "priceRange": "$$",
-            "address": {
-              "@type": "PostalAddress",
-              "addressCountry": "US"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "United States"
-            },
-            "sameAs": []
-          })}
-        </script>
-      </Head>
       <Header />
       <main id="main-content">
       {/* Hero Section */}
