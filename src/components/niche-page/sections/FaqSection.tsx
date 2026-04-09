@@ -98,7 +98,7 @@ export const FaqSection = ({ config }: FaqSectionProps) => {
                 <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
                   Schedule Strategy Call
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
