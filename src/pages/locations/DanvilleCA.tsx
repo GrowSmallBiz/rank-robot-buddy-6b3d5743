@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { danvilleCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -506,61 +508,12 @@ const DanvilleCA = () => {
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Real Results for Danville Service Businesses:{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+              Real Client Results Across Our Service Areas
             </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">The following results were achieved by GrowSmallBiz clients operating in Danville and the San Ramon Valley. Individual results vary based on industry, competition, and starting conditions — but these outcomes represent what a properly integrated marketing system delivers when all channels work together for a premium local market.</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
 
-          {/* Case Study Cards */}
-          <div className="space-y-6 mb-14">
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | San Ramon Valley HVAC Company — Danville Service Area</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">Page 3–4 → Local 3-Pack in 9 Weeks</p>
-              <p className="text-foreground/80 leading-relaxed">After a comprehensive Google Business Profile optimization and Danville-specific local citation cleanup campaign, this HVAC contractor moved to a top-3 local map pack position — capturing significantly more emergency HVAC calls from Blackhawk and Alamo homeowners during peak summer season. Inbound calls increased 87% month-over-month within 90 days.</p>
-            </div>
-
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Danville Dental Practice</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+31 New Patient Leads in Month 1</p>
-              <p className="text-foreground/80 leading-relaxed">Combining a targeted Google Ads launch calibrated to Danville demographics with a proactive review management campaign, this dental practice generated 31 qualified new patient inquiries in its first full month — more than double its previous monthly average. The practice improved from a 3.6-star to a 4.6-star Google rating within 90 days, crossing the threshold at which Danville patients consistently select a new provider.</p>
-            </div>
-
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Downtown Danville Restaurant — Hartz Avenue</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+131% Online Reservation Growth in 90 Days</p>
-              <p className="text-foreground/80 leading-relaxed">A coordinated local SEO, Google Business Profile optimization, and Meta Ads strategy transformed this Hartz Avenue restaurant's online visibility. Online table reservations grew from 45 per month to 104 per month — a 131% increase — while Google review volume tripled and average rating climbed to 4.7 stars, establishing the restaurant as the top-ranked dining option in its category for Danville searches.</p>
-            </div>
-          </div>
-
-          {/* Before/After Table */}
-          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6">What Happens to Danville Service Businesses After 90 Days with GrowSmallBiz</h3>
-          <div className="overflow-x-auto mb-14">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr>
-                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Performance Metric</th>
-                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Before GrowSmallBiz</th>
-                  <th className="p-3 text-left font-bold text-primary bg-card/80 border border-border/60">After 90 Days</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
-                  { metric: "Monthly Inbound Calls", before: "90 calls / mo", after: "168 calls / mo (+87%)" },
-                  { metric: "New Patient Leads (Dental)", before: "12 leads / mo", after: "31 leads / mo (+158%)" },
-                  { metric: "Restaurant Table Reservations (Online)", before: "45 bookings / mo", after: "104 bookings / mo (+131%)" },
-                  { metric: "Avg. Google Review Rating", before: "3.6 stars", after: "4.6 stars (+1.0 stars)" },
-                ].map((row, i) => (
-                  <tr key={i}>
-                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.metric}</td>
-                    <td className="p-3 border border-border/60 text-foreground/70">{row.before}</td>
-                    <td className="p-3 border border-border/60 text-primary font-bold">{row.after}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <CampaignResultsCards cards={danvilleCards} />
 
           {/* Channel Compare */}
           <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">Single-Channel Marketing Doesn't Win in Danville Anymore. Here's What Actually Moves the Needle.</h3>

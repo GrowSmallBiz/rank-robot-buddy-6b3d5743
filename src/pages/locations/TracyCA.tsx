@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { tracyCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -492,61 +494,12 @@ const TracyCA = () => {
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Real Results for Tracy Service Businesses:{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+              Real Client Results Across Our Service Areas
             </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">The following results represent what GrowSmallBiz clients have achieved in Tracy and the San Joaquin Valley market.</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
 
-          <div className="space-y-6 mb-14">
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Tracy HVAC Contractor — Local SEO + AI Receptionist</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+47% Inbound Phone Calls + 35% More Booked Appointments Within 60 Days</p>
-              <p className="text-foreground/80 leading-relaxed">A targeted local SEO campaign combined with AI Receptionist implementation drove 47% growth in inbound phone calls within 60 days and a 35% increase in booked appointments. The AI Receptionist captured after-hours summer emergency calls that previously went to voicemail, converting peak-demand inquiries that would have gone to competitors into booked service appointments.</p>
-            </div>
-
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Tracy Dental Practice — Local SEO + Reputation Management</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+62% New Patient Inquiries in 4 Months | 4.8-Star Google Rating</p>
-              <p className="text-foreground/80 leading-relaxed">A targeted local SEO campaign combined with a systematic reputation management program drove 62% growth in new patient inquiries within four months. The practice's Google rating improved from below 4.0 stars to 4.8 stars — a critical threshold for Tracy's growing population of new residents actively choosing healthcare providers for the first time in a new city.</p>
-            </div>
-
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Tracy Restaurant — Local SEO + Google Business Profile</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">Significant Increase in Reservations and Walk-In Traffic Within 3 Months</p>
-              <p className="text-foreground/80 leading-relaxed">A targeted Google Business Profile optimization combined with a review velocity campaign and social media promotion drove measurable growth in reservations and walk-in traffic within three months. The campaign incorporated Tracy community content and evening dining promotions aligned with the commuter household demographic arriving home from Bay Area employment each evening.</p>
-            </div>
-          </div>
-
-          {/* Before/After Table */}
-          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6">What Happens to Tracy Service Businesses After 90 Days with GrowSmallBiz</h3>
-          <div className="overflow-x-auto mb-14">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr>
-                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Performance Metric</th>
-                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Before GrowSmallBiz</th>
-                  <th className="p-3 text-left font-bold text-primary bg-card/80 border border-border/60">After Campaign Launch</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
-                  { metric: "Inbound Phone Calls (HVAC)", before: "Baseline", after: "+47% within 60 days" },
-                  { metric: "Booked Appointments (HVAC)", before: "Baseline", after: "+35% within 60 days" },
-                  { metric: "New Patient Inquiries (Dental)", before: "Baseline", after: "+62% within 4 months" },
-                  { metric: "Avg. Google Review Rating (Dental)", before: "Below 4.0 stars", after: "4.8 stars" },
-                  { metric: "Online Reservations / Walk-In Traffic (Restaurant)", before: "Baseline", after: "Measurable increase within 3 months" },
-                ].map((row, i) => (
-                  <tr key={i}>
-                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.metric}</td>
-                    <td className="p-3 border border-border/60 text-foreground/70">{row.before}</td>
-                    <td className="p-3 border border-border/60 text-primary font-bold">{row.after}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <CampaignResultsCards cards={tracyCards} />
 
           <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">Single-Channel Marketing Doesn't Win in Tracy's Growing Market. Here's What Actually Moves the Needle.</h3>
           <p className="text-foreground/80 leading-relaxed mb-6">The agencies currently ranking for Tracy digital marketing keywords are running thin pages or domain-authority plays with no genuine Tracy market knowledge. Outperforming them requires not just better content — it requires an integrated system aligned with Tracy's specific commuter timing, first-mover opportunity, and seasonal demand patterns.</p>

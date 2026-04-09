@@ -6,6 +6,8 @@ import pleasantonHero from "@/assets/pleasanton-hero.jpg";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, TrendingUp, Star, Users, MessageSquare, Eye, BarChart3 } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { pleasantonCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -486,44 +488,12 @@ const PleasantonCA = () => {
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">PROVEN RESULTS</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Real Results for Pleasanton Service Businesses:{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+              Real Client Results Across Our Service Areas
             </h2>
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
-          <p className="text-muted-foreground mb-8 max-w-4xl mx-auto animate-fade-up">
-            The following results represent what GrowSmallBiz clients have achieved in Pleasanton and the Tri-Valley market. Client details will be updated with verified Pleasanton data before publishing.
-          </p>
 
-          {/* Before vs After Table */}
-          <div className="animate-fade-up">
-            <h3 className="text-2xl font-display font-bold text-foreground mb-6 text-center">What Happens to Pleasanton Service Businesses After 90 Days with GrowSmallBiz</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr style={{ backgroundColor: 'hsla(174, 100%, 24%, 0.2)' }}>
-                    <th className="p-4 text-foreground font-display font-bold border-b border-primary/20">Performance Metric</th>
-                    <th className="p-4 text-foreground font-display font-bold border-b border-primary/20">Before GrowSmallBiz</th>
-                    <th className="p-4 text-foreground font-display font-bold border-b border-primary/20">After 90 Days</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
-                    { metric: "Google Business Profile Calls", before: "Baseline", after: "Measurable increase within 30–60 days" },
-                    { metric: "Online Reservations (Restaurant)", before: "Baseline", after: "Significant increase within 3 months" },
-                    { metric: "Customer Inquiries (Home Services)", before: "Baseline", after: "Increased inquiries + higher overall rating" },
-                    { metric: "Avg. Google Review Rating", before: "Below 4.0 stars", after: "4.5+ stars" },
-                  ].map((row, i) => (
-                    <tr key={i} className="border-b border-foreground/10">
-                      <td className="p-4 text-foreground font-semibold">{row.metric}</td>
-                      <td className="p-4 text-muted-foreground">{row.before}</td>
-                      <td className="p-4 text-primary font-semibold">{row.after}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <CampaignResultsCards cards={pleasantonCards} />
 
           {/* Channel Comparison Table */}
           <div className="animate-fade-up mt-12">

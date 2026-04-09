@@ -5,7 +5,9 @@ import concordHero from "@/assets/concord-hero.jpg";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
+import { MapPin, BarChart3 } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { concordCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -196,21 +198,30 @@ const ConcordCA = () => {
             <p><strong>More value from existing customers and warm leads</strong><br />Especially for service businesses that should not have to restart from zero every month.</p>
             <p><strong>A system that supports growth without creating more chaos</strong><br />Because disconnected tools and disconnected vendors usually create more friction, not less.</p>
 
-            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Representative Client Feedback</h2>
-            <p className="text-muted-foreground italic">These are placeholder-style testimonials, but they are written to reflect the kinds of visibility, trust, and follow-up issues that often show up in a larger local market like Concord.</p>
+            <h2 className="text-3xl font-display font-bold text-foreground mt-16">Real Client Results Across Our Service Areas</h2>
+            <p>See what's possible when marketing runs as a complete, integrated system.</p>
+          </div>
+        </div>
+      </div>
 
-            <div className="grid md:grid-cols-1 gap-6 mt-8">
-              {[
-                { title: "Concord-Area Home Services Owner", quote: "What helped most was seeing that our issue was not only traffic. We were losing too much after the lead arrived because the follow-up side was not strong enough." },
-                { title: "Concord Wellness Practice Manager", quote: "The recommendations felt practical for a local business that needs both trust and consistency. It was less about marketing buzzwords and more about making the customer journey work." },
-                { title: "Concord-Area Professional Services Owner", quote: "They understood that visibility is only one part of the problem. The bigger change came from improving how the business responded and followed through." },
-              ].map((t, i) => (
-                <div key={i} className="p-6 feature-card-teal rounded-2xl">
-                  <h4 className="text-lg font-bold text-foreground mb-3">{t.title}</h4>
-                  <p className="text-foreground/90 italic">"{t.quote}"</p>
-                </div>
-              ))}
-            </div>
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+              <BarChart3 className="w-4 h-4" /> RESULTS
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              Real Client Results Across Our Service Areas
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
+          </div>
+          <CampaignResultsCards cards={concordCards} />
+        </div>
+      </section>
+
+      <div className="bg-background">
+        <div className="container mx-auto px-4 py-16 max-w-4xl">
+          <div className="prose prose-lg prose-invert max-w-none space-y-12">
 
             <h2 className="text-3xl font-display font-bold text-foreground mt-16">Why Concord Businesses Choose GrowSmallBiz</h2>
             <h3 className="text-2xl font-display font-bold text-foreground mt-12">Built for Local Service Businesses</h3>

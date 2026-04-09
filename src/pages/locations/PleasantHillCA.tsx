@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, TrendingUp } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { pleasantHillCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -392,52 +394,12 @@ const PleasantHillCA = () => {
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What GrowSmallBiz Delivers for Pleasant Hill{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local Service Businesses</span>
+              Real Client Results Across Our Service Areas
             </h2>
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
 
-          {/* 3 Case Study Cards */}
-          <div className="space-y-6 mb-14">
-            {[
-              { label: "CLIENT RESULT | HVAC & Home Services — Pleasant Hill, CA", metric: "+250% Inbound Calls in 6 Months", story: "A Pleasant Hill HVAC and home services contractor was invisible in local search despite years in business. After launching Managed AI SEO and Local SEO, inbound calls increased by 250% within six months. The AI Receptionist captured after-hours and weekend leads that previously went to voicemail — and to competitors." },
-              { label: "CLIENT RESULT | Dental Practice — Contra Costa Blvd Corridor", metric: "+180% New Patient Leads in 4 Months", story: "A dental practice along the Contra Costa Blvd corridor had tried digital marketing before without results. GrowSmallBiz explained what we were doing and why — and within four months, the practice saw a 180% increase in new patient leads through a combination of Local SEO, a new conversion-optimized website, and Google Ads. Transparent reporting showed exactly which campaigns were driving appointments." },
-              { label: "CLIENT RESULT | Chiropractic Practice — Pleasant Hill, CA", metric: "+150% New Patient Inquiries in 6 Months", story: "A Pleasant Hill chiropractic practice went from barely appearing in local search to ranking at the top for condition-specific and proximity-based queries. New patient inquiries increased by 150% within six months, and the practice was scheduling weeks in advance." },
-            ].map((card, i) => (
-              <div key={i} className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-                <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">{card.label}</p>
-                <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">{card.metric}</p>
-                <p className="text-foreground/80 leading-relaxed">{card.story}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Results Table */}
-          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6">What Happens to Pleasant Hill Service Businesses After 90 Days with GrowSmallBiz</h3>
-          <div className="overflow-x-auto mb-14">
-            <table className="w-full text-sm border-collapse">
-              <thead><tr>
-                <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Metric</th>
-                <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Typical Outcome by Month 3</th>
-                <th className="p-3 text-left font-bold text-primary bg-card/80 border border-border/60">Typical Outcome by Month 6</th>
-              </tr></thead>
-              <tbody>
-                {[
-                  { metric: "Organic search rankings", m3: "Meaningful improvement for primary keywords", m6: "Top 3–5 for target Pleasant Hill searches" },
-                  { metric: "Google Map Pack", m3: "Appears for target categories", m6: "Consistent top-3 for Pleasant Hill + 680 corridor" },
-                  { metric: "Inbound lead volume", m3: "25–40% increase over baseline", m6: "50–150%+ increase for home service / health verticals" },
-                  { metric: "Cost per lead (Paid)", m3: "20–30% reduction vs pre-campaign", m6: "41–48% average reduction at full optimization" },
-                  { metric: "Review rating", m3: "Review generation system active", m6: "4.5+ stars across Google, Yelp, and category platforms" },
-                ].map((row, i) => (
-                  <tr key={i}>
-                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.metric}</td>
-                    <td className="p-3 border border-border/60 text-foreground/70">{row.m3}</td>
-                    <td className="p-3 border border-border/60 text-primary font-bold">{row.m6}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <CampaignResultsCards cards={pleasantHillCards} />
 
           {/* Channel Comparison */}
           <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">Single-Channel Marketing Doesn't Win in Pleasant Hill's Competitive 680 Corridor. Here's What Actually Moves the Needle.</h3>

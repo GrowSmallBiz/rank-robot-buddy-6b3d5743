@@ -6,6 +6,8 @@ import walnutCreekHero from "@/assets/walnut-creek-hero.jpg";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Brain, Eye, BarChart3, Users, Star, Home, Heart, Building2, Shield, ArrowRight, CheckCircle } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { walnutCreekCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -522,58 +524,12 @@ const WalnutCreekCA = () => {
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Real Results for Walnut Creek Service Businesses:{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+              Real Client Results Across Our Service Areas
             </h2>
-            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">The following results were achieved by GrowSmallBiz clients operating in Walnut Creek and the greater East Bay market. Individual results vary based on industry, competition, and starting conditions — but these outcomes represent what a properly integrated marketing system delivers when all channels work together.</p>
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
 
-          {/* Case Studies */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {[
-              { title: "Walnut Creek HVAC Company", metric: "Page 3 → Local 3-Pack in 11 Weeks", story: "After a comprehensive Google Business Profile optimization and local citation cleanup campaign, this HVAC contractor moved from page 3 obscurity to a top-3 local map pack position — capturing significantly more inbound calls during peak summer AC season." },
-              { title: "Contra Costa County Dental Practice", metric: "+34 New Patient Leads in Month 1", story: "Combining a targeted Google Ads launch with a proactive reputation management campaign, this dental practice generated 34 qualified new patient inquiries in its first full month — more than double its previous monthly average. The practice grew from a 3.8 to a 4.7-star Google rating within 6 months." },
-              { title: "Bay Area Real Estate Agent", metric: "2× Listing Inquiry Volume in 90 Days", story: "A coordinated local SEO and Meta Ads strategy doubled this agent's monthly listing inquiries from 50 to 100 within 90 days — establishing a consistent pipeline of qualified buyer and seller leads across Contra Costa County." },
-            ].map((cs, i) => (
-              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-6">
-                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">CLIENT RESULT</p>
-                <h3 className="text-lg font-display font-bold text-foreground mb-2">{cs.title}</h3>
-                <p className="text-primary font-semibold mb-3">{cs.metric}</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">{cs.story}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Performance Table */}
-          <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8 mb-12">
-            <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-4">What Happens After 90 Days with GrowSmallBiz</p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-border/60">
-                    <th className="text-left py-3 px-4 text-foreground font-semibold">Performance Metric</th>
-                    <th className="text-left py-3 px-4 text-muted-foreground font-semibold">Before GrowSmallBiz</th>
-                    <th className="text-left py-3 px-4 text-primary font-semibold">After 90 Days</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["Google Local 3-Pack Ranking", "Page 3", "Top 3 — Local Map Pack"],
-                    ["Monthly Inbound Calls", "120 calls / mo", "210 calls / mo (+75%)"],
-                    ["New Patient Leads (Dental)", "15 leads / mo", "34 leads / mo (+127%)"],
-                    ["Real Estate Listing Inquiries", "50 inquiries / mo", "100 inquiries / mo (+100%)"],
-                    ["Avg. Google Review Rating", "3.8 stars", "4.7 stars (+0.9 stars)"],
-                  ].map(([metric, before, after], i) => (
-                    <tr key={i} className="border-b border-border/30">
-                      <td className="py-3 px-4 text-foreground/90 font-medium">{metric}</td>
-                      <td className="py-3 px-4 text-muted-foreground">{before}</td>
-                      <td className="py-3 px-4 text-primary font-semibold">{after}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <CampaignResultsCards cards={walnutCreekCards} />
 
           {/* Channel Comparison */}
           <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">

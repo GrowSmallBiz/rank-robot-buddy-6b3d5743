@@ -6,6 +6,8 @@ import livermoreHero from "@/assets/livermore-hero.jpg";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare, Award } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { livermoreCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -550,61 +552,12 @@ const LivermoreCA = () => {
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Real Results for Livermore Service Businesses:{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+              Real Client Results Across Our Service Areas
             </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">The following results represent what GrowSmallBiz clients have achieved in Livermore and the Tri-Valley market. Metrics and client details must be replaced with verified Livermore data before publishing.</p>
+            <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
 
-          {/* Case Study Cards */}
-          <div className="space-y-6 mb-14">
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Livermore HVAC Contractor — Dual-Track Campaign</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+47% Qualified Leads Within 90 Days</p>
-              <p className="text-foreground/80 leading-relaxed">After launching a dual-track campaign targeting both Labs-adjacent residential homeowners and wine country commercial clients, this HVAC contractor saw a 47% increase in qualified leads within 90 days. The residential track captured evening and weekend inquiries from LLNL employees, while the commercial track generated pre-harvest maintenance inquiries from Livermore Valley wineries — both managed from one integrated CRM.</p>
-            </div>
-
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Livermore Restaurant — First Street Downtown</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+35% Restaurant Reservations Within 3 Months</p>
-              <p className="text-foreground/80 leading-relaxed">A coordinated local SEO, Google Business Profile optimization, and Meta Ads strategy targeting both local dining searches and wine country tourism audiences grew online reservations by 35% within three months. Review velocity campaigns simultaneously improved the restaurant's Google rating and TripAdvisor presence, strengthening both local and tourism-facing discovery channels.</p>
-            </div>
-
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Livermore Professional Services — Labs-Adjacent Market</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+60% Qualified Leads Within 6 Months</p>
-              <p className="text-foreground/80 leading-relaxed">By building a marketing system specifically calibrated for Livermore's research-oriented Labs demographic — review depth campaigns, credentialing-forward trust architecture, and AI-powered after-hours lead capture — this professional services business grew qualified leads by 60% within six months while reducing cost per acquisition through better targeting and higher conversion rates.</p>
-            </div>
-          </div>
-
-          {/* Before/After Table */}
-          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6">What Happens to Livermore Service Businesses After 90 Days with GrowSmallBiz</h3>
-          <div className="overflow-x-auto mb-14">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr>
-                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Performance Metric</th>
-                  <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Before GrowSmallBiz</th>
-                  <th className="p-3 text-left font-bold text-primary bg-card/80 border border-border/60">After 90 Days</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
-                  { metric: "Qualified Leads (HVAC)", before: "Baseline", after: "+47% within 90 days" },
-                  { metric: "Restaurant Reservations", before: "Baseline", after: "+35% within 3 months" },
-                  { metric: "Qualified Leads (Biotech/Professional)", before: "Baseline", after: "+60% within 6 months" },
-                  { metric: "Avg. Google Review Rating", before: "Below 4.0 stars", after: "4.5+ stars" },
-                ].map((row, i) => (
-                  <tr key={i}>
-                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.metric}</td>
-                    <td className="p-3 border border-border/60 text-foreground/70">{row.before}</td>
-                    <td className="p-3 border border-border/60 text-primary font-bold">{row.after}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <CampaignResultsCards cards={livermoreCards} />
 
           {/* Channel Compare */}
           <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">Single-Channel Marketing Doesn't Win in Livermore. Here's What Actually Moves Both Tracks.</h3>
