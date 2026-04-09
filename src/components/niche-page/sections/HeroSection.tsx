@@ -16,6 +16,7 @@ export const HeroSection = ({ config, strategySessionUrl }: HeroSectionProps) =>
         <img
           src={config.heroImage}
           alt={config.h1Line1}
+          width={1920} height={1080}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-background/85" />

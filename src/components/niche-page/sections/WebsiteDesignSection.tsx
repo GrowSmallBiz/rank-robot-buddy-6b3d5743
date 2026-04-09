@@ -25,6 +25,7 @@ export const WebsiteDesignSection = ({ config, strategySessionUrl }: WebsiteDesi
             <img
               src={config.websiteDesignImage}
               alt={`${config.websiteDesignBadge} example`}
+              width={600} height={400}
               className="rounded-2xl shadow-2xl w-full"
             />
           </div>

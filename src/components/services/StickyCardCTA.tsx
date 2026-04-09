@@ -120,6 +120,7 @@ export const StickyCardCTA = ({
                   <img 
                     src={baseContactCTA.image} 
                     alt={baseContactCTA.name} 
+                    width={112} height={112}
                     className="w-full h-full object-cover"
                   />
                 </div>
