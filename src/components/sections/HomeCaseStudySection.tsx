@@ -1,4 +1,4 @@
-import { ArrowRight, TrendingUp, TrendingDown } from "lucide-react";
+import { ArrowRight, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
