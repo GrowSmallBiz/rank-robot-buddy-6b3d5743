@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { MapPin, BarChart3 } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { concordCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -25,11 +25,13 @@ const ConcordCA = () => {
         <meta name="description" content="GrowSmallBiz helps Concord, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/concord-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Concord CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Concord"
+        stateCode="CA"
         description="GrowSmallBiz helps Concord, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems."
         url="/locations/concord-ca/"
+        latitude={37.9780}
+        longitude={-122.0311}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Concord, CA", url: "/locations/concord-ca/" },

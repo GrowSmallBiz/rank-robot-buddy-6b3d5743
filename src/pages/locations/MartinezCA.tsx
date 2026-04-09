@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, TrendingUp } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { martinezCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -25,11 +25,13 @@ const MartinezCA = () => {
         <meta name="description" content="GrowSmallBiz serves Martinez CA local service businesses with integrated digital marketing — Local SEO, Google Ads, AI automation, reputation management. Contra Costa County specialists. Get your free strategy session." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/martinez-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Agency in Martinez, CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Martinez"
+        stateCode="CA"
         description="GrowSmallBiz serves Martinez CA local service businesses with integrated digital marketing — Local SEO, Google Ads, AI automation, reputation management."
         url="/locations/martinez-ca/"
+        latitude={38.0194}
+        longitude={-122.1341}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Martinez, CA", url: "/locations/martinez-ca/" },

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { tracyCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -29,11 +29,13 @@ const TracyCA = () => {
         />
         <link rel="canonical" href="https://growsmallbiz.io/locations/tracy-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Agency in Tracy, CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Tracy"
+        stateCode="CA"
         description="GrowSmallBiz serves Tracy CA local service businesses with integrated digital marketing — Local SEO, Google Ads, AI automation, reputation management."
         url="/locations/tracy-ca/"
+        latitude={37.7397}
+        longitude={-121.4252}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Tracy, CA", url: "/locations/tracy-ca/" },

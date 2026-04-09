@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare, Award } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { livermoreCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -30,11 +30,13 @@ const LivermoreCA = () => {
         />
         <link rel="canonical" href="https://growsmallbiz.io/locations/livermore-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Agency in Livermore, CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Livermore"
+        stateCode="CA"
         description="GrowSmallBiz serves Livermore's dual-identity market — Labs workforce and Wine Country businesses. Local SEO, Google Ads, AI automation, reputation management."
         url="/locations/livermore-ca/"
+        latitude={37.6819}
+        longitude={-121.7680}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Livermore, CA", url: "/locations/livermore-ca/" },

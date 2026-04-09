@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Brain, Eye, BarChart3, Users, Star, Home, Heart, Building2, Shield, ArrowRight, CheckCircle } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { walnutCreekCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -25,11 +25,13 @@ const WalnutCreekCA = () => {
         <meta name="description" content="GrowSmallBiz is Walnut Creek's specialized digital marketing agency for local service businesses. Local SEO, Google Ads, reputation management & AI automation. Get your free strategy session today." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/walnut-creek-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Agency in Walnut Creek, CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Walnut Creek"
+        stateCode="CA"
         description="GrowSmallBiz is Walnut Creek's specialized digital marketing agency for local service businesses. Local SEO, Google Ads, reputation management & AI automation."
         url="/locations/walnut-creek-ca/"
+        latitude={37.9101}
+        longitude={-122.0652}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Walnut Creek, CA", url: "/locations/walnut-creek-ca/" },
