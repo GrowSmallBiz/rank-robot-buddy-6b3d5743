@@ -532,38 +532,48 @@ const RealtorMarketing = () => {
             </div>
             {/* Change 4B — buyer/seller line */}
             <p className="text-muted-foreground max-w-3xl mx-auto text-center mb-16">
-              Whether you work with buyers, sellers, or both — every stage of this system is built to attract, capture, nurture, and close both sides of the transaction.
+              Whether you work with buyers, sellers, or both — every stage of this system is built to attract, capture, nurture, close, and grow your real estate business.
             </p>
 
-            {serviceGroups.map((group, idx) => (
+            {stageGroups.map((group, idx) => (
               <div key={idx} className="mb-16 last:mb-0">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-                    <group.icon className="w-5 h-5 text-primary" />
+                <div className="flex justify-center mb-8">
+                  <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-teal-500/10 border border-teal-500/30">
+                    <span className="text-teal-400 text-sm font-semibold tracking-wide">{group.label}</span>
                   </div>
-                  <span className="text-xl font-display font-bold text-foreground">
-                    {group.label}
-                  </span>
                 </div>
-                {group.introLine && (
-                  <p className="text-muted-foreground mb-8 max-w-3xl">{group.introLine}</p>
-                )}
-                {group.label === "Online Visibility" ? (
+
+                {group.layout === "3+2" ? (
                   <div className="space-y-8">
-                    <div className="flex justify-center">
-                      <div className="grid md:grid-cols-2 gap-8 w-full lg:max-w-[calc(66.666%+1rem)]">
-                        {group.services.slice(0, 2).map((service) => <ServiceCard key={service.id} service={service} />)}
-                      </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {group.services.slice(0, 3).map((service) => <ServiceCard key={service.id} service={service} />)}
                     </div>
                     <div className="flex justify-center">
                       <div className="grid md:grid-cols-2 gap-8 w-full lg:max-w-[calc(66.666%+1rem)]">
-                        {group.services.slice(2).map((service) => <ServiceCard key={service.id} service={service} />)}
+                        {group.services.slice(3).map((service) => <ServiceCard key={service.id} service={service} />)}
                       </div>
                     </div>
                   </div>
-                ) : (
+                ) : group.layout === "3+1" ? (
+                  <div className="space-y-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {group.services.slice(0, 3).map((service) => <ServiceCard key={service.id} service={service} />)}
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="grid md:grid-cols-1 gap-8 w-full lg:max-w-[calc(33.333%)]">
+                        {group.services.slice(3).map((service) => <ServiceCard key={service.id} service={service} />)}
+                      </div>
+                    </div>
+                  </div>
+                ) : group.layout === "3" ? (
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {group.services.map((service) => <ServiceCard key={service.id} service={service} />)}
+                  </div>
+                ) : (
+                  <div className="flex justify-center">
+                    <div className="grid md:grid-cols-2 gap-8 w-full lg:max-w-[calc(66.666%+1rem)]">
+                      {group.services.map((service) => <ServiceCard key={service.id} service={service} />)}
+                    </div>
                   </div>
                 )}
               </div>
