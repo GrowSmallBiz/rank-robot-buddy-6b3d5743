@@ -1,7 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import {
   TrendingUp,
@@ -93,15 +93,15 @@ const ChiropracticCaseStudy = () => {
         <meta name="description" content="Documented AI SEO results for a chiropractic practice — organic traffic growth, keyword rankings, Google Search Console data, and Google Business Profile performance over 5 months." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="Real Results for Chiropractic Practices — Not Projections"
+      <ArticleJsonLd
+        headline="Real Results for Chiropractic Practices — Not Projections"
         description="Documented AI SEO results for a chiropractic practice."
         url="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/"
+        datePublished="2025-01-15"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
           { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/marketing-for-chiropractors/" },
-          { name: "Case Studies", url: "/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" },
+          { name: "Case Study", url: "/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" },
         ]}
       />
       <Header />
