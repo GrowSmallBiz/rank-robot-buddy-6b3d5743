@@ -92,6 +92,9 @@ export const CardCTA = ({
                     <img 
                       src={baseContactCTA.image} 
                       alt={baseContactCTA.name} 
+                      width={160}
+                      height={160}
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </div>
