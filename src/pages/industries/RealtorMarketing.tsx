@@ -376,8 +376,8 @@ const RealtorMarketing = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                Stop Renting Leads from Zillow.{" "}
-                <span className="text-gradient">Start Owning Them.</span>
+                Real Estate Marketing Services Built for Independent Realtors{" "}
+                <span className="text-gradient">— Not Zillow</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
