@@ -34,6 +34,7 @@ export const SystemDiagramSection = ({ config }: SystemDiagramSectionProps) => {
             <img
               src={predictableMarketingSystem}
               alt="Predictable Marketing System showing the complete client acquisition and retention funnel"
+              width={900} height={600}
               className="w-full max-w-5xl rounded-xl shadow-2xl shadow-primary/10"
             />
           </div>

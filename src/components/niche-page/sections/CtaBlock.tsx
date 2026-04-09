@@ -19,6 +19,7 @@ export const CtaBlock = ({ headline, subtext, strategySessionUrl }: CtaBlockProp
               <img
                 src={baseContactCTA.image}
                 alt={baseContactCTA.name}
+                width={80} height={80}
                 className="w-full h-full object-cover"
               />
             </div>

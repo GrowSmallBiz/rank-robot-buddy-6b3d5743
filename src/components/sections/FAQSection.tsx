@@ -105,6 +105,7 @@ export const FAQSection = ({
                     <img 
                       src={contactCTA.image} 
                       alt={contactCTA.name}
+                      width={80} height={80}
                       className="w-full h-full rounded-full object-cover"
                     />
                   ) : (
