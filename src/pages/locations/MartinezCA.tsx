@@ -345,52 +345,12 @@ const MartinezCA = () => {
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"><BarChart3 className="w-4 h-4" /> RESULTS</span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Real Results for Martinez Service Businesses:{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+              Real Client Results Across Our Service Areas
             </h2>
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
-          <div className="space-y-6 mb-14">
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Martinez HVAC Contractor — Vine Hill Service Area</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+143% Local Search Visibility + 37% Qualified Lead Growth in 90 Days</p>
-              <p className="text-foreground/80 leading-relaxed">A comprehensive Google Business Profile optimization, Contra Costa County citation building, and targeted Google Ads campaign calibrated to Vine Hill and Alhambra Valley service area demand moved this Martinez HVAC contractor from page 3 to top-3 local pack positioning within 90 days. AI Receptionist follow-up captured emergency after-hours calls that previously went to voicemail and directly to competitors.</p>
-            </div>
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Martinez Dental Practice — Contra Costa County Regional Medical Center Proximity</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+120% Appointment Bookings in 6 Months</p>
-              <p className="text-foreground/80 leading-relaxed">A targeted local SEO campaign calibrated for Martinez's healthcare search behavior, combined with a systematic reputation management program and automated review generation, drove 120% growth in appointment bookings within six months. The practice's Google rating improved from below 4.0 stars to 4.6 stars.</p>
-            </div>
-            <div className="bg-primary/5 border border-primary/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">CLIENT RESULT | Martinez Waterfront Restaurant — Alhambra Avenue Corridor</p>
-              <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-3">+67% Foot Traffic via GBP Optimization + Community Campaign</p>
-              <p className="text-foreground/80 leading-relaxed">After optimizing the Google Business Profile with Waterfront Park and Marina District proximity keywords and launching a community-tied social media campaign aligned with the Martinez Farmers Market season, this Alhambra Avenue restaurant saw a 67% increase in foot traffic. Review velocity campaigns maintained consistent new review activity.</p>
-            </div>
-          </div>
-          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-6">What Happens to Martinez Service Businesses After 90 Days with GrowSmallBiz</h3>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse">
-              <thead><tr>
-                <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Performance Metric</th>
-                <th className="p-3 text-left font-bold text-foreground bg-card/80 border border-border/60">Before GrowSmallBiz</th>
-                <th className="p-3 text-left font-bold text-primary bg-card/80 border border-border/60">After 90 Days</th>
-              </tr></thead>
-              <tbody>
-                {[
-                  { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
-                  { metric: "Local Search Visibility (HVAC)", before: "Baseline", after: "+143% within 90 days" },
-                  { metric: "Qualified Leads (HVAC)", before: "Baseline", after: "+37% within 90 days" },
-                  { metric: "Appointment Bookings (Dental)", before: "Baseline", after: "+120% within 6 months" },
-                  { metric: "Restaurant Foot Traffic", before: "Baseline", after: "+67% after GBP optimization" },
-                ].map((row, i) => (
-                  <tr key={i}>
-                    <td className="p-3 border border-border/60 font-semibold text-foreground bg-card/30">{row.metric}</td>
-                    <td className="p-3 border border-border/60 text-foreground/70">{row.before}</td>
-                    <td className="p-3 border border-border/60 text-primary font-bold">{row.after}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+
+          <CampaignResultsCards cards={martinezCards} />
         </div>
       </section>
 

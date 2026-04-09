@@ -540,71 +540,12 @@ const SanRamonCA = () => {
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Real Results for San Ramon Service Businesses:{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+              Real Client Results Across Our Service Areas
             </h2>
-            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto italic">The following results were achieved by GrowSmallBiz clients operating in San Ramon and the Tri-Valley market. Individual results vary based on industry, competition, and starting conditions.</p>
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto italic">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
 
-          {/* Case Study Cards */}
-          <div className="space-y-6 mb-14">
-            {[
-              {
-                title: "San Ramon HVAC Contractor — Dougherty Valley Service Area",
-                metric: "+102% Inbound Calls in 90 Days",
-                story: "A comprehensive Google Business Profile optimization, local citation cleanup, and targeted Google Ads launch moved this San Ramon HVAC contractor from page 3 to the local 3-pack in under 10 weeks. Monthly inbound calls grew from 85 to 172 — with AI Receptionist follow-up capturing after-hours emergency calls that previously went to voicemail and directly to a competitor."
-              },
-              {
-                title: "San Ramon Dental Practice — Bishop Ranch Area",
-                metric: "+155% New Patient Leads in Month 1",
-                story: "Combining a targeted Google Ads campaign calibrated to San Ramon's professional demographic with a systematic reputation management program, this dental practice generated 28 qualified new patient inquiries in its first full month. The practice improved from a 3.7-star to a 4.6-star Google rating within 90 days, crossing the threshold at which San Ramon's research-oriented patients actively choose a new provider."
-              },
-              {
-                title: "San Ramon Restaurant — Bollinger Canyon Road Corridor",
-                metric: "+86% Repeat Visit Rate via VIP Club System",
-                story: "After implementing a VIP Club membership system, automated reactivation campaigns, and a systematic Google and Yelp review program, this Bollinger Canyon Road restaurant saw its repeat visit rate climb from 22% to 41% within 90 days. Google review volume tripled and average rating improved to 4.6 stars — establishing the restaurant as the top-rated option in its category for San Ramon local searches."
-              },
-            ].map((cs, i) => (
-              <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8 border-l-4 border-l-primary">
-                <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">{cs.title}</p>
-                <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-3">{cs.metric}</h3>
-                <p className="text-base text-foreground/90 leading-relaxed">{cs.story}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Before / After 90 Days Table */}
-          <div className="mb-14">
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center mb-8">
-              What Happens to San Ramon Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">After 90 Days with GrowSmallBiz</span>
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b border-border/60">
-                    <th className="text-left p-4 text-sm font-semibold text-primary">Performance Metric</th>
-                    <th className="text-left p-4 text-sm font-semibold text-muted-foreground">Before GrowSmallBiz</th>
-                    <th className="text-left p-4 text-sm font-semibold text-foreground">After 90 Days</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
-                    { metric: "Monthly Inbound Calls", before: "85 calls /mo", after: "172 calls /mo (+102%)" },
-                    { metric: "New Patient Leads (Dental)", before: "11 leads /mo", after: "28 leads /mo (+155%)" },
-                    { metric: "Restaurant Repeat Visit Rate", before: "22%", after: "41% (+86%) via VIP Club" },
-                    { metric: "Avg. Google Review Rating", before: "3.7 stars", after: "4.6 stars (+0.9 stars)" },
-                  ].map((row, i) => (
-                    <tr key={i} className="border-b border-border/30">
-                      <td className="p-4 text-sm font-medium text-foreground">{row.metric}</td>
-                      <td className="p-4 text-sm text-muted-foreground">{row.before}</td>
-                      <td className="p-4 text-sm font-semibold text-primary">{row.after}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          <CampaignResultsCards cards={sanRamonCards} />
           </div>
 
           {/* Channel Compare Table */}

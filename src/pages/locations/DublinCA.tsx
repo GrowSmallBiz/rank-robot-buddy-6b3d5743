@@ -448,61 +448,12 @@ const DublinCA = () => {
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">PROVEN RESULTS</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Real Results for Dublin Service Businesses:{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Calls, More Bookings, More Revenue</span>
+              Real Client Results Across Our Service Areas
             </h2>
+            <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
           </div>
 
-          {/* Case Studies */}
-          <div className="space-y-6 mb-12">
-            {[
-              { title: "Dublin HVAC Contractor — Jordan Ranch / Fallon Gateway Service Area", metric: "4 Calls Per Week → 14 Calls Per Week in 90 Days (+250%)", story: "A combination of Google Business Profile optimization, local SEO targeting Dublin's newer neighborhoods, and Google Ads calibrated to seasonal demand moved this Dublin HVAC contractor from inconsistent call volume to a predictable pipeline. AI Receptionist follow-up captured after-hours emergency calls that previously went to voicemail.", testimonial: "Since working with GrowSmallBiz, we went from 4 service calls a week to 12 — in just 3 months. Their local SEO and Google Ads expertise made all the difference.", author: "— MT, HVAC Contractor, Dublin CA" },
-              { title: "Dublin Dental Practice", metric: "+60% New Patient Bookings in 4 Months", story: "Targeted Google Ads calibrated to Dublin's ZIP code 94568 combined with a systematic reputation management program and automated review generation grew this dental practice's new patient bookings by 60% within four months.", testimonial: "Our dental practice saw a 60% increase in new patient bookings within 4 months thanks to GrowSmallBiz's targeted marketing strategies.", author: "— ER., Dentist, Dublin CA" },
-              { title: "Tri-Valley Real Estate Agent — Dublin Market", metric: "2× Listing Inquiry Volume in 90 Days", story: "A coordinated local SEO and targeted paid campaign strategy doubled listing inquiries from 50 per month to over 100 within 90 days — establishing a consistent pipeline of qualified buyer and seller leads across Dublin and the Tri-Valley.", testimonial: null, author: null },
-            ].map((cs, i) => (
-              <div key={i} className="feature-card-teal p-6 rounded-2xl animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                <h4 className="text-lg font-bold text-foreground mb-1">{cs.title}</h4>
-                <p className="text-primary font-semibold mb-3">{cs.metric}</p>
-                <p className="text-muted-foreground leading-relaxed mb-3">{cs.story}</p>
-                {cs.testimonial && (
-                  <div className="border-l-2 border-primary/40 pl-4 mt-4">
-                    <p className="text-foreground/90 italic">"{cs.testimonial}"</p>
-                    <p className="text-sm text-muted-foreground mt-2">{cs.author}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Before vs After Table */}
-          <div className="animate-fade-up">
-            <h3 className="text-2xl font-display font-bold text-foreground mb-6 text-center">What Happens to Dublin Service Businesses After 90 Days with GrowSmallBiz</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr style={{ backgroundColor: 'hsla(174, 100%, 24%, 0.2)' }}>
-                    <th className="p-4 text-foreground font-display font-bold border-b border-primary/20">Performance Metric</th>
-                    <th className="p-4 text-foreground font-display font-bold border-b border-primary/20">Before GrowSmallBiz</th>
-                    <th className="p-4 text-foreground font-display font-bold border-b border-primary/20">After 90 Days</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { metric: "Google Local 3-Pack Ranking", before: "Page 3–4", after: "Top 3 — Local Map Pack" },
-                    { metric: "Weekly Inbound Service Calls", before: "4 calls / week", after: "14 calls / week (+250%) (HVAC)" },
-                    { metric: "New Patient Bookings", before: "Baseline", after: "+60% within 4 months (Dental)" },
-                    { metric: "Real Estate Listing Inquiries", before: "Baseline", after: "2× in 90 days" },
-                    { metric: "Avg. Google Review Rating", before: "3.6–3.8 stars", after: "4.5+ stars" },
-                  ].map((row, i) => (
-                    <tr key={i} className="border-b border-foreground/10">
-                      <td className="p-4 text-foreground font-semibold">{row.metric}</td>
-                      <td className="p-4 text-muted-foreground">{row.before}</td>
-                      <td className="p-4 text-primary font-semibold">{row.after}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          <CampaignResultsCards cards={dublinCards} />
           </div>
 
           {/* Channel Comparison Table */}
