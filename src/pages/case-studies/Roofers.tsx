@@ -158,6 +158,7 @@ const Roofers = () => {
     <>
       <Head>
         <title>Real Results for Roofing Contractors — Not Projections | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz helped roofing contractors grow their pipeline with AI-powered digital marketing. Real results, real businesses." />
         <meta
           name="description"
           content="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."

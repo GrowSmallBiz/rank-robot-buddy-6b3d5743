@@ -101,6 +101,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
     <>
       <Head>
         <title>How Local SEO Helped HVAC, Plumbing & Electrical Contractors Own Local Search Businesses | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz used local SEO to put HVAC, plumbing, and electrical contractors at the top of local search — and keep them there." />
         <meta
           name="description"
           content="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused lead generation."

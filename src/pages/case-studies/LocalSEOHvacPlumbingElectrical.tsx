@@ -132,6 +132,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
     <>
       <Head>
         <title>Real Results for HVAC, Plumbing & Electrical Contractors — Not Projections | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz helped HVAC, plumbing, and electrical contractors rank higher and book more jobs with AI-powered digital marketing." />
         <meta
           name="description"
           content="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and Google PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."

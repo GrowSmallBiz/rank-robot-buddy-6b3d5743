@@ -95,6 +95,7 @@ const CleaningServices = () => {
     <>
       <Head>
         <title>Real Results for Cleaning Service Businesses — Not Projections | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz helped cleaning service businesses grow their client base with AI-powered digital marketing. Real results, real businesses." />
         <meta
           name="description"
           content="Explore documented local SEO case study results for cleaning service businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."

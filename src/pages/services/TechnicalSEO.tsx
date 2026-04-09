@@ -270,7 +270,7 @@ const TechnicalSEO = () => {
         {/* SECTION 1 — HERO (APPROVED REPLACEMENT) */}
         <ServiceHero
           badge={{ icon: Wrench, text: "Technical SEO for Local Service Businesses" }}
-          title={<>Technical SEO That Helps You Rank in as Little as{" "}</>}
+          title={<>Technical SEO That Removes Every Barrier Between You and Page One{" "}</>}
           titleHighlight="3 Months"
           subtitle="Traditional SEO often slows down because technical issues sit undetected for weeks or months. GrowSmallBiz uses Agentic AI Playbooks - an integrated framework where several specialized AI agents perform technical SEO tasks continuously - to detect issues faster, prioritize what matters, and accelerate implementation. When technical SEO is handled alongside the other core SEO pillars through a systematic strategy, businesses can often gain traction faster than with a slower, manual process."
           primaryCTA={{

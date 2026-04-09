@@ -269,7 +269,7 @@ const HealthAndWellness = () => {
               Health & Wellness Practice Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Health & Wellness Marketing Agency <span className="text-gradient">Built for Patient-Driven Practices</span>
+              Stop Losing Patients to Clinics With Worse Outcomes But Better Marketing
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               Your dental practice, chiropractic office, or med spa is losing new patients to competitors with a stronger digital presence. GrowSmallBiz builds the complete patient acquisition system — local SEO, Google Ads, AI automation, and reputation management.

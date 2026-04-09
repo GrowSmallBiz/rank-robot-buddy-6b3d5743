@@ -105,6 +105,7 @@ const HomeRemodeling = () => {
     <>
       <Head>
         <title>Real Results for Home Remodeling Contractors — Not Projections | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz helped home remodeling contractors win more projects with AI-powered digital marketing. Real results, real businesses." />
         <meta
           name="description"
           content="Explore documented Local SEO case study results for home remodeling and home renovation businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, conversions, and conversion-focused lead generation strategy."

@@ -14,6 +14,7 @@ const NotFound = () => {
       <Head>
         <title>Page Not Found | GrowSmallBiz</title>
         <meta name="robots" content="noindex, nofollow" />
+        <meta name="description" content="The page you're looking for has moved or no longer exists. Head back to explore our digital marketing services for local businesses." />
       </Head>
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
