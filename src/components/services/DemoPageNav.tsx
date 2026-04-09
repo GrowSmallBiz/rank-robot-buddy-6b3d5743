@@ -9,7 +9,7 @@ export const DemoPageNav = () => {
   return (
     <>
       {/* Schedule a Demo CTA */}
-      <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+      <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <Button variant="hero" size="xl" asChild>
             <a

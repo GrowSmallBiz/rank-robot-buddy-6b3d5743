@@ -31,8 +31,8 @@ export const IntegrationsSection = () => {
   const doubledLogos = [...integrationLogos, ...integrationLogos];
 
   return (
-    <section className="py-4 !my-0 overflow-hidden bg-white">
-      <div className="container mx-auto px-4 mb-10">
+    <section className="py-2 !my-0 overflow-hidden bg-white">
+      <div className="container mx-auto px-4 mb-6">
         <div className="text-center mb-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             Easily Integrates With<br />
