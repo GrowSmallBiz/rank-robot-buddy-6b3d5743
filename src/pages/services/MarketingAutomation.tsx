@@ -1,8 +1,8 @@
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { useLocation } from "react-router-dom";
 import { Head } from "vite-react-ssg";
-import { ArrowRight, ArrowDown, ArrowUp } from "lucide-react";
+import { ArrowRight, ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
@@ -12,7 +12,7 @@ import { SectionHeader } from "@/components/services/SectionHeader";
 import { FeatureCard } from "@/components/services/FeatureCard";
 import { PricingCard, PricingGrid } from "@/components/services/PricingCard";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
-import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { TestimonialCard, TestimonialsGrid } from "@/components/services/TestimonialCard";
 import { createServiceContactCTA } from "@/config/contactCTA";
@@ -500,10 +500,6 @@ const MarketingAutomation = () => {
   const { hash } = useLocation();
   const { buildUrl } = useUtm();
 
-  const formUrl = useMemo(() => 
-    buildUrl("https://api.leadconnectorhq.com/widget/form/vRKH9AO2IToQ38j4hyaN", "ma-consultation"),
-    [buildUrl]
-  );
 
   useEffect(() => {
     if (hash) {
@@ -556,8 +552,8 @@ const MarketingAutomation = () => {
           titleHighlight="Leads Into Sales"
           subtitle="GrowSmallBiz Digital Marketing helps you capture, nurture, and close leads on autopilot through SMS, Email, Live Chat, Phone Calls, and more!"
           primaryCTA={{
-            label: "Schedule Strategy Call",
-            href: "https://lp.growsmallbiz.io/digital-growth-strategy-session",
+            label: "Schedule a Demo",
+            href: "https://lp.growsmallbiz.io/ai-client-growth-system-demo",
             external: true,
           }}
           secondaryCTA={{
@@ -824,10 +820,9 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
-        {/* Demo Form - Single Column */}
+        {/* Schedule a Demo CTA */}
         <section id="ready-to-talk" className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
           <div className="container mx-auto px-4 relative z-10 max-w-4xl">
-            {/* Heading & Video */}
             <div className="flex flex-col items-center text-center mb-12">
               <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
@@ -850,51 +845,15 @@ const MarketingAutomation = () => {
                 </div>
               </div>
 
-              {/* Schedule Now Button */}
+              {/* Schedule a Demo Button */}
               <a
-                href="https://link.growsmallbiz.io/widget/booking/BItMexXVhoWvQOVKgmfH"
+                href={buildUrl("https://lp.growsmallbiz.io/ai-client-growth-system-demo", "schedule-demo")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ghl-btn inline-flex items-center gap-3 px-8 py-4 text-lg font-bold"
               >
-                Schedule Now
-                <ArrowDown className="w-5 h-5" />
+                Schedule a Demo
               </a>
-            </div>
-
-            {/* Form */}
-            <div
-              className="relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
-              style={{ border: '2px solid #17a2b8' }}
-            >
-              <div className="relative rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#191321' }}>
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-3">
-                    Schedule A <span className="text-accent">Consultation</span>
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Tell us about your business and we'll follow up with the next best step.
-                  </p>
-                </div>
-                <iframe
-                  src={formUrl}
-                  style={{ width: "100%", height: "900px", border: "none", borderRadius: "3px" }}
-                  id="inline-vRKH9AO2IToQ38j4hyaN"
-                  loading="lazy"
-                  data-layout="{'id':'INLINE'}"
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="GrowSmallBiz SaaS Demo Form"
-                  data-height="1645"
-                  data-layout-iframe-id="inline-vRKH9AO2IToQ38j4hyaN"
-                  data-form-id="vRKH9AO2IToQ38j4hyaN"
-                  title="GrowSmallBiz SaaS Demo Form"
-                />
-              </div>
             </div>
           </div>
         </section>
@@ -963,7 +922,7 @@ const MarketingAutomation = () => {
         <AutopilotCTASection />
 
         {/* Final CTA */}
-        <PersonCTA {...contactCTA} />
+        <PersonCTA {...contactCTA} buttonText="Schedule a Demo" buttonHref={buildUrl("https://lp.growsmallbiz.io/ai-client-growth-system-demo", "schedule-demo-footer")} />
       </main>
       <Footer />
     </>
