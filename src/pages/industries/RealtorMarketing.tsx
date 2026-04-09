@@ -226,7 +226,7 @@ const retainServices = [
 
 const stageGroups = [
   { stage: 1, label: "Stage 1 — Attract", services: attractServices, layout: "3+2" as const },
-  { stage: 2, label: "Stage 2 — Capture", services: captureServices, layout: "3+1" as const },
+  { stage: 2, label: "Stage 2 — Capture", services: captureServices, layout: "2x2" as const },
   { stage: 3, label: "Stage 3 — Nurture", services: nurtureServices, layout: "3" as const },
   { stage: 4, label: "Stage 4 — Close", services: closeServices, layout: "2" as const },
   { stage: 5, label: "Stage 5 — Retain & Grow", services: retainServices, layout: "2" as const },
@@ -554,14 +554,16 @@ const RealtorMarketing = () => {
                       </div>
                     </div>
                   </div>
-                ) : group.layout === "3+1" ? (
+                ) : group.layout === "2x2" ? (
                   <div className="space-y-8">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {group.services.slice(0, 3).map((service) => <ServiceCard key={service.id} service={service} />)}
+                    <div className="flex justify-center">
+                      <div className="grid md:grid-cols-2 gap-8 w-full lg:max-w-[calc(66.666%+1rem)]">
+                        {group.services.slice(0, 2).map((service) => <ServiceCard key={service.id} service={service} />)}
+                      </div>
                     </div>
                     <div className="flex justify-center">
-                      <div className="grid md:grid-cols-1 gap-8 w-full lg:max-w-[calc(33.333%)]">
-                        {group.services.slice(3).map((service) => <ServiceCard key={service.id} service={service} />)}
+                      <div className="grid md:grid-cols-2 gap-8 w-full lg:max-w-[calc(66.666%+1rem)]">
+                        {group.services.slice(2).map((service) => <ServiceCard key={service.id} service={service} />)}
                       </div>
                     </div>
                   </div>
