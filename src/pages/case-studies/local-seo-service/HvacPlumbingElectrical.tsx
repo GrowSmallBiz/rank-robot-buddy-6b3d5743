@@ -1,7 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
@@ -108,15 +108,15 @@ const LocalSEOHvacPlumbingElectrical = () => {
         />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="How Local SEO Helped HVAC, Plumbing & Electrical Contractors Own Local Search Businesses"
+      <ArticleJsonLd
+        headline="How Local SEO Helped HVAC, Plumbing & Electrical Contractors Own Local Search"
         description="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses."
         url="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/"
+        datePublished="2025-01-15"
         breadcrumbs={[
-          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Home Service Contractors", url: "/home-service-contractors/" },
           { name: "Local SEO", url: "/home-service-contractors/marketing-for-hvac-contractors/" },
-          { name: "HVAC, Plumbing & Electrical", url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" },
+          { name: "HVAC SEO Case Study", url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" },
         ]}
       />
       <Header />
