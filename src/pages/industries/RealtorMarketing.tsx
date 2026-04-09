@@ -522,15 +522,21 @@ const RealtorMarketing = () => {
               Whether you work with buyers, sellers, or both — every stage of this system is built to attract, capture, nurture, and close both sides of the transaction.
             </p>
 
-            {serviceStages.map((stage, idx) => (
+            {serviceGroups.map((group, idx) => (
               <div key={idx} className="mb-16 last:mb-0">
-                <div className="flex items-center gap-3 mb-8">
-                  <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold">
-                    {stage.label}
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
+                    <group.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-xl font-display font-bold text-foreground">
+                    {group.label}
                   </span>
                 </div>
+                {group.introLine && (
+                  <p className="text-muted-foreground mb-8 max-w-3xl">{group.introLine}</p>
+                )}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {stage.services.map((service) => <ServiceCard key={service.id} service={service} />)}
+                  {group.services.map((service) => <ServiceCard key={service.id} service={service} />)}
                 </div>
               </div>
             ))}
