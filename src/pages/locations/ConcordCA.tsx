@@ -5,7 +5,9 @@ import concordHero from "@/assets/concord-hero.jpg";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
+import { MapPin, BarChart3 } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { concordCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";

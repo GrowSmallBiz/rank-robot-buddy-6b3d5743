@@ -6,6 +6,8 @@ import pleasantonHero from "@/assets/pleasanton-hero.jpg";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, TrendingUp, Star, Users, MessageSquare, Eye, BarChart3 } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { pleasantonCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";

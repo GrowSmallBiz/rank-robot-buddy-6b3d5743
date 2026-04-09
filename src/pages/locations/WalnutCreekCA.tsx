@@ -6,6 +6,8 @@ import walnutCreekHero from "@/assets/walnut-creek-hero.jpg";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Brain, Eye, BarChart3, Users, Star, Home, Heart, Building2, Shield, ArrowRight, CheckCircle } from "lucide-react";
+import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
+import { walnutCreekCards } from "@/components/locations/campaignCardData";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
