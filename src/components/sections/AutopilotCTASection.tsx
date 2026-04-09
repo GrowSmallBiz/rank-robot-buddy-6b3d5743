@@ -20,8 +20,8 @@ export const AutopilotCTASection = () => {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
-              Schedule Strategy Call
+            <a href="https://lp.growsmallbiz.io/ai-client-growth-system-demo" target="_blank" rel="noopener noreferrer">
+              Schedule a Demo
             </a>
           </Button>
         </div>
