@@ -531,7 +531,6 @@ const RealtorMarketing = () => {
                   { bold: "They're pre-filtered.", rest: " Top producers get first access. You get what's left." },
                   { bold: "They arrive cold.", rest: " No context, no qualification. A name and a phone number." },
                   { bold: "The relationship belongs to the brokerage.", rest: " When you leave, those clients stay behind." },
-                  { bold: "You're still splitting the commission.", rest: " Even low-quality leads cost you a split." },
                   { bold: "Your brand stays invisible.", rest: " Clients know your broker's name first — not yours." },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
@@ -561,14 +560,13 @@ const RealtorMarketing = () => {
                 {[
                   ["Lead quality", "❌ Cold, unqualified, pre-screened", "✅ Inbound, motivated, intent-driven"],
                   ["Lead exclusivity", "❌ Distributed across the office", "✅ Direct to you only"],
-                  ["Commission", "❌ Split every time", "✅ You keep what you earn"],
                   ["Brand visibility", "❌ Broker's name first", "✅ Your name, your presence"],
                   ["Online identity", "❌ Tied to broker's website", "✅ Your own domain and profile"],
                   ["When you change firms", "❌ Start from zero", "✅ Take everything with you"],
                   ["Lead nurturing", "❌ Manual, falls through cracks", "✅ Automated 24/7"],
                   ["Market reports", "❌ Broker sends those", "✅ Your name on every one"],
                   ["Long-term equity", "❌ Built for the brokerage", "✅ Built for you"],
-                  ["Speed to lead", "❌ When you're available", "✅ AI responds in seconds"],
+                  ["Referrals", "❌ Stay with the brokerage when you leave", "✅ Follow you permanently"],
                 ].map(([feature, broker, gsb], i) => (
                   <div key={i} className="grid grid-cols-3 border-b border-border last:border-b-0 hover:bg-secondary/20 transition-colors">
                     <div className="p-4 text-foreground font-medium text-sm">{feature}</div>
