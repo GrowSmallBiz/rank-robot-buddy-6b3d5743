@@ -500,10 +500,6 @@ const MarketingAutomation = () => {
   const { hash } = useLocation();
   const { buildUrl } = useUtm();
 
-  const formUrl = useMemo(() => 
-    buildUrl("https://api.leadconnectorhq.com/widget/form/vRKH9AO2IToQ38j4hyaN", "ma-consultation"),
-    [buildUrl]
-  );
 
   useEffect(() => {
     if (hash) {
