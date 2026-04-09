@@ -236,7 +236,7 @@ const faqs = [
   }
 ];
 
-const campaignResults = [
+const seoCampaignResults = [
   {
     title: "HVAC & Plumbing Growth",
     subtitle: "Local SEO Campaign",
@@ -294,6 +294,41 @@ const campaignResults = [
   },
 ];
 
+const ppcCampaignResults = [
+  {
+    title: "HVAC Google PPC Growth",
+    subtitle: "Google Ads Lead Generation Campaign",
+    metrics: [
+      "+50.23% CTR",
+      "+83% Conversions",
+      "+56.3% Conversion Rate",
+      "-41% Cost Per Acquisition",
+    ],
+    link: "/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/",
+  },
+  {
+    title: "Roofing Google PPC Growth",
+    subtitle: "Google Ads Campaign",
+    metrics: [
+      "+93.3% Conversions",
+      "+123.4% Conversion Rate",
+      "-48.9% Cost Per Conversion",
+      "+17.7% Clicks",
+    ],
+    link: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+  },
+  {
+    title: "Tree & Lawn Google PPC Growth",
+    subtitle: "Google Ads Lead Generation Campaign",
+    metrics: [
+      "+169.5% Clicks",
+      "+211.5% Conversions",
+      "+16.7% Conversion Rate",
+      "299 Conversions — Last 90 Days",
+    ],
+    link: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/",
+  },
+];
 const HomeServices = () => {
   const { strategySessionUrl, freeAuditUrl } = useUtm();
 
