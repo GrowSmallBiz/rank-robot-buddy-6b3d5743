@@ -32,9 +32,7 @@ import {
   CloudSun
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { baseContactCTA } from "@/config/contactCTA";
-import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
@@ -209,27 +207,6 @@ const aiReceptionistBullets = [
   "Appointment scheduling directly into your calendar",
   "Immediate confirmation texts to the homeowner",
   "Follow-up sequences for leads that don't book on first contact",
-];
-
-const testimonials = [
-  {
-    quote: "We went from page 3 on Google to the top of the Map Pack. Our phone rings constantly now — and the AI Receptionist handles after-hours calls perfectly.",
-    author: "Mike Johnson",
-    role: "Owner",
-    company: "Johnson HVAC & Plumbing",
-  },
-  {
-    quote: "GrowSmallBiz replaced our HomeAdvisor leads with organic leads that close at 3x the rate. Best decision we made for the business.",
-    author: "Carlos Ramirez",
-    role: "Owner",
-    company: "Ramirez Roofing",
-  },
-  {
-    quote: "The marketing automation saves us 20+ hours a week on follow-ups. Every lead gets contacted within minutes, even on weekends.",
-    author: "Tom & Lisa Bradley",
-    role: "Co-Owners",
-    company: "Bradley Electrical Services",
-  },
 ];
 
 const faqs = [
