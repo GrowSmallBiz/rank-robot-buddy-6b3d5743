@@ -188,7 +188,7 @@ const pricingPlans = [
       "Reputation Management",
     ],
     cta: "Get Started",
-    ctaLink: "https://lp.growsmallbiz.io/ai-client-growth-system",
+    ctaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
     note: "No contracts. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
@@ -205,7 +205,7 @@ const pricingPlans = [
       "ZERO AI OVERAGE FEES",
     ],
     cta: "Go Unlimited",
-    ctaLink: "https://lp.growsmallbiz.io/ai-client-growth-system",
+    ctaLink: "https://lp.growsmallbiz.io/check-out-page---unlimited",
     popular: true,
     note: "Zero AI overage fees. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
@@ -223,7 +223,7 @@ const pricingPlans = [
       "Enhanced performance & visibility tools",
     ],
     cta: "Unlock Growth",
-    ctaLink: "https://lp.growsmallbiz.io/ai-client-growth-system",
+    ctaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
     note: "Save on Hosting & Ads. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
@@ -890,7 +890,7 @@ const MarketingAutomation = () => {
                     {category.services.map((service, i) => (
                       <div
                         key={i}
-                        className="bg-card/60 border border-border rounded-xl p-5 hover:border-primary/30 transition-all"
+                        className="feature-card-teal p-5"
                       >
                         <h4 className="text-sm font-bold text-foreground mb-2">
                           {service.name}
