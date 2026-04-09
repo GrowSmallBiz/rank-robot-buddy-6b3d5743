@@ -537,8 +537,10 @@ const RealtorMarketing = () => {
                 )}
                 {group.label === "Online Visibility" ? (
                   <div className="space-y-8">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      {group.services.slice(0, 2).map((service) => <ServiceCard key={service.id} service={service} />)}
+                    <div className="flex justify-center">
+                      <div className="grid md:grid-cols-2 gap-8 w-full lg:max-w-[calc(66.666%+1rem)]">
+                        {group.services.slice(0, 2).map((service) => <ServiceCard key={service.id} service={service} />)}
+                      </div>
                     </div>
                     <div className="flex justify-center">
                       <div className="grid md:grid-cols-2 gap-8 w-full lg:max-w-[calc(66.666%+1rem)]">
