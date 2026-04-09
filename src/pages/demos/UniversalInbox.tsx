@@ -16,7 +16,7 @@ export default function UniversalInboxDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
               Stop Missing Messages — Every SMS, Email, Social, and Webchat Response in One Inbox
@@ -38,7 +38,7 @@ export default function UniversalInboxDemo() {
         </section>
 
         {/* No more going to multiple websites */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-3xl font-black text-foreground text-center mb-8">
               No more going to multiple websites or checking multiple devices just to get your messages
@@ -65,7 +65,7 @@ export default function UniversalInboxDemo() {
         </section>
 
         {/* Be channel-agnostic / Chat with context / Get started */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl space-y-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
@@ -124,7 +124,7 @@ export default function UniversalInboxDemo() {
         </section>
 
         {/* Webchat, Facebook & Google Business Profile Integration */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -145,7 +145,7 @@ export default function UniversalInboxDemo() {
         </section>
 
         {/* Customizable Viewing Options */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
@@ -165,7 +165,7 @@ export default function UniversalInboxDemo() {
         </section>
 
         {/* All customer interactions */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -188,7 +188,7 @@ export default function UniversalInboxDemo() {
         </section>
 
         {/* 70% stat */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">
               70% of customers prefer to message with a business, rather than speaking on the phone
@@ -198,7 +198,7 @@ export default function UniversalInboxDemo() {
         </section>
 
         {/* Automate Text Back */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -219,7 +219,7 @@ export default function UniversalInboxDemo() {
         </section>
 
         {/* Stats: 3X, 95%, 10X */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h2 className="text-2xl md:text-3xl font-black text-foreground mb-12">
               Your business wins when you interact with customers

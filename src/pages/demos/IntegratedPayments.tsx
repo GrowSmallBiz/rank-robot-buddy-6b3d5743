@@ -16,7 +16,7 @@ export default function IntegratedPaymentsDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Stop Chasing Payments — Invoicing, Billing, and Collection All in One Place</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">Streamline Client Invoicing &amp; Collect Payments Anywhere</p>
@@ -29,7 +29,7 @@ export default function IntegratedPaymentsDemo() {
         </section>
 
         {/* Tracking Invoices */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6">Tracking Invoices &amp; Payments Has Never Been Easier</h2>
             <p className="text-lg text-foreground text-center mb-12">With Integrated Payments, you can get paid faster than ever.</p>
@@ -59,7 +59,7 @@ export default function IntegratedPaymentsDemo() {
         </section>
 
         {/* Customizable Payment Options & Data */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl space-y-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -79,7 +79,7 @@ export default function IntegratedPaymentsDemo() {
         </section>
 
         {/* Make payments part of the conversation */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Make payments part of the conversation</h2>

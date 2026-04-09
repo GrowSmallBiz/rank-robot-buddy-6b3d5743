@@ -16,7 +16,7 @@ export default function ReviewsDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <p className="text-primary font-semibold uppercase tracking-widest mb-4">REVIEWS</p>
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
@@ -37,7 +37,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Attract New Customers Section */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -84,7 +84,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Video Section */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_hsl(var(--ghl-card-border)/0.3)] border-2 border-[hsl(var(--ghl-card-border))]">
               <video controls className="w-full" preload="metadata" playsInline>
@@ -96,7 +96,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Get found on Facebook */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
@@ -124,7 +124,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Connect and manage review sites */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -152,7 +152,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Customer Reviews - Most effective marketing */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <img
@@ -198,7 +198,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Automate Your Online Reviews */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -221,7 +221,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* BrightLocal Stats */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">
               How Do Your Clients And Customers Use Reviews?
@@ -250,7 +250,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Win More Business */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-3xl font-black text-foreground text-center mb-4">
               Win More Business with GrowSmallBiz's
@@ -294,7 +294,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Turn customer reviews into competitive edge */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -316,7 +316,7 @@ export default function ReviewsDemo() {
         </section>
 
         {/* Review Monitoring */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>

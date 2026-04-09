@@ -14,7 +14,7 @@ export default function SocialMediaPlannerDemo() {
       </Head>
       <Header />
       <main id="main-content" className="pt-20">
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Schedule Weeks of Social Content in Minutes and Never Miss a Post</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">Create Content, Post, Respond to Comments, and DM's on Auto-Pilot</p>
@@ -27,7 +27,7 @@ export default function SocialMediaPlannerDemo() {
         </section>
 
         {/* Simplify Social Media */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>
@@ -41,7 +41,7 @@ export default function SocialMediaPlannerDemo() {
         </section>
 
         {/* Social Planner */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63e00606a486206e9c26506e.png" alt="Social Planner Calendar" className="w-full rounded-xl shadow-lg" loading="lazy" />
@@ -57,7 +57,7 @@ export default function SocialMediaPlannerDemo() {
         </section>
 
         {/* Post Now or Schedule */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>
@@ -71,7 +71,7 @@ export default function SocialMediaPlannerDemo() {
         </section>
 
         {/* Social media manager */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63e0087c6af2073eab5a8b48.png" alt="Social media manager login" className="w-full rounded-xl shadow-lg" loading="lazy" />

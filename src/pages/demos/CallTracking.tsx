@@ -17,7 +17,7 @@ export default function CallTrackingDemo() {
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <p className="text-primary font-semibold uppercase tracking-widest mb-4">CALL TRACKING</p>
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
@@ -30,7 +30,7 @@ export default function CallTrackingDemo() {
         </section>
 
         {/* Video Section */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_hsl(var(--ghl-card-border)/0.3)] border-2 border-[hsl(var(--ghl-card-border))]">
               <video controls className="w-full" preload="metadata" playsInline>
@@ -42,7 +42,7 @@ export default function CallTrackingDemo() {
         </section>
 
         {/* Features Grid */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-12">
               Everything You Need To Track & Optimize Calls
@@ -65,7 +65,7 @@ export default function CallTrackingDemo() {
         </section>
 
         {/* Know Your ROI */}
-        <section className="py-16" style={{ backgroundColor: "hsl(var(--background))" }}>
+        <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6">
               Know Your ROI On Every Marketing Dollar
