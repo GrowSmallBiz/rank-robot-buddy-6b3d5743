@@ -591,7 +591,7 @@ const MarketingAutomation = () => {
         </nav>
 
         {/* Why Choose Section */}
-        <section id="why-choose" className="section-padding">
+        <section id="why-choose" className="py-12 lg:py-16">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="WHY CHOOSE US"
@@ -616,7 +616,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* Benefits Section */}
-        <section id="what-you-get" className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="what-you-get" className="py-12 lg:py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="WHAT YOU GET"
@@ -675,7 +675,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* AI Features Section */}
-        <section id="ai-features" className="py-12">
+        <section id="ai-features" className="py-10 lg:py-14">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="AI FEATURES OVERVIEW"
@@ -706,7 +706,7 @@ const MarketingAutomation = () => {
         </div>
 
         {/* Industries Section */}
-        <section id="industries" className="py-12" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="industries" className="py-10 lg:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="TAILORED FOR YOUR INDUSTRY"
@@ -749,7 +749,7 @@ const MarketingAutomation = () => {
         </div>
 
         {/* Quick Demo Videos Section */}
-        <section id="demo-videos" className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="demo-videos" className="py-10 lg:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="QUICK DEMO VIDEOS"
@@ -791,7 +791,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* Testimonials */}
-        <section id="testimonials" className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="testimonials" className="py-12 lg:py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="CLIENT SUCCESS STORIES"
@@ -804,7 +804,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* Pricing Section */}
-        <section id="pricing" className="section-padding">
+        <section id="pricing" className="py-12 lg:py-16">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="CHOOSE A PLAN THAT FITS YOUR GROWTH"
@@ -860,7 +860,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* Complete Growth Suite */}
-        <section id="growth-suite" className="section-padding" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
+        <section id="growth-suite" className="py-12 lg:py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="COMPLETE GROWTH SUITE"
@@ -912,7 +912,7 @@ const MarketingAutomation = () => {
         </section>
 
         {/* FAQ */}
-        <section id="faq" className="section-padding">
+        <section id="faq" className="py-12 lg:py-16">
           <div className="container mx-auto px-4">
             <FAQSection faqs={faqs} />
             <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
