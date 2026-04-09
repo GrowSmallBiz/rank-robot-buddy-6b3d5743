@@ -7,30 +7,30 @@ import {
 import type { NicheConfig } from "../NicheConfig";
 
 // FIXED Technical SEO images
-import technicalSeoImage from "@/assets/technical-seo.png";
-import onPageSeoImage from "@/assets/on-page-seo.png";
-import linkBuildingImage from "@/assets/link-building.png";
-import localSeoImage from "@/assets/local-seo.png";
-import seoDashboardImage from "@/assets/seo-dashboard-metrics.png";
-import aeoServiceImage from "@/assets/aeo-service.png";
-import geoServiceImage from "@/assets/geo-service.png";
-import googlePpcScreenshot from "@/assets/ad-screenshot-google-ppc.png";
-import idxGoogleMap from "@/assets/idx-google-map.png";
-import localHeatmap from "@/assets/local-heatmap.png";
-import localCitationAggregators from "@/assets/local-citation-aggregators.png";
-import socialMediaHero from "@/assets/social-media-hero.jpg";
-import llmVisibilitySentiment from "@/assets/llm-visibility-sentiment.png";
-import llmVisibilityDashboard from "@/assets/llm-visibility-dashboard.png";
-import pressReleaseDistribution from "@/assets/press-release-distribution.png";
-import backlinkAnalyticsDashboard from "@/assets/backlink-analytics-dashboard.png";
-import articleQualityMetrics from "@/assets/article-quality-metrics.png";
-import topicalMapAuthority from "@/assets/topical-map-authority.png";
-import articleScoreInsights from "@/assets/article-score-insights.png";
-import articleStructure from "@/assets/article-structure.png";
-import articleKeywords from "@/assets/article-keywords.png";
-import articleCompetitors from "@/assets/article-competitors.png";
-import contentAgents from "@/assets/content-agents.png";
-import contentRefiners from "@/assets/content-refiners.png";
+import technicalSeoImage from "@/assets/technical-seo.webp";
+import onPageSeoImage from "@/assets/on-page-seo.webp";
+import linkBuildingImage from "@/assets/link-building.webp";
+import localSeoImage from "@/assets/local-seo.webp";
+import seoDashboardImage from "@/assets/seo-dashboard-metrics.webp";
+import aeoServiceImage from "@/assets/aeo-service.webp";
+import geoServiceImage from "@/assets/geo-service.webp";
+import googlePpcScreenshot from "@/assets/ad-screenshot-google-ppc.webp";
+import idxGoogleMap from "@/assets/idx-google-map.webp";
+import localHeatmap from "@/assets/local-heatmap.webp";
+import localCitationAggregators from "@/assets/local-citation-aggregators.webp";
+import socialMediaHero from "@/assets/social-media-hero.webp";
+import llmVisibilitySentiment from "@/assets/llm-visibility-sentiment.webp";
+import llmVisibilityDashboard from "@/assets/llm-visibility-dashboard.webp";
+import pressReleaseDistribution from "@/assets/press-release-distribution.webp";
+import backlinkAnalyticsDashboard from "@/assets/backlink-analytics-dashboard.webp";
+import articleQualityMetrics from "@/assets/article-quality-metrics.webp";
+import topicalMapAuthority from "@/assets/topical-map-authority.webp";
+import articleScoreInsights from "@/assets/article-score-insights.webp";
+import articleStructure from "@/assets/article-structure.webp";
+import articleKeywords from "@/assets/article-keywords.webp";
+import articleCompetitors from "@/assets/article-competitors.webp";
+import contentAgents from "@/assets/content-agents.webp";
+import contentRefiners from "@/assets/content-refiners.webp";
 
 // FIXED data
 const technicalSEOSections = [

@@ -1,5 +1,5 @@
 import { Header } from "@/components/layout/Header";
-import tracyHero from "@/assets/tracy-hero.jpg";
+import tracyHero from "@/assets/tracy-hero.webp";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Head } from "vite-react-ssg";

@@ -10,8 +10,8 @@ import {
   Sparkles, UserPlus,
 } from "lucide-react";
 
-import hvacHeroImage from "@/assets/industry-hvac-hero.jpg";
-import portfolioHvacWebsite from "@/assets/portfolio-hvac-website.jpg";
+import hvacHeroImage from "@/assets/industry-hvac-hero.webp";
+import portfolioHvacWebsite from "@/assets/portfolio-hvac-website.webp";
 
 export const hvacConfig: NicheConfig = {
   // ── Page Meta ──

@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
-import techSeoHeroBg from "@/assets/technical-seo-hero-bg.jpg";
+import techSeoHeroBg from "@/assets/technical-seo-hero-bg.webp";
 import {
   Wrench,
   ArrowRight,

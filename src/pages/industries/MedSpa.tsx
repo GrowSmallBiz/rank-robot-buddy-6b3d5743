@@ -15,7 +15,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, medSpaBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
-import medSpaHeroImage from "@/assets/industry-medspa-hero.jpg";
+import medSpaHeroImage from "@/assets/industry-medspa-hero.webp";
 import { useUtm } from "@/hooks/use-utm";
 
 const services = [

@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 import type { NicheConfig } from "../NicheConfig";
 import aiGrowthSystemFunnel from "@/assets/ai-growth-system-funnel.webp";
-import emailSmsWorkflowDiagram from "@/assets/email-sms-workflow-diagram.png";
+import emailSmsWorkflowDiagram from "@/assets/email-sms-workflow-diagram.webp";
 
 const colorConfig: Record<string, any> = {
   pink: { bg: "bg-pink-500", bgLight: "bg-pink-500/10", text: "text-pink-500", border: "border-pink-500/30", gradient: "from-pink-500 to-pink-600", steps: ["bg-pink-500", "bg-pink-500/85", "bg-pink-500/70", "bg-pink-500/55", "bg-pink-500/45", "bg-pink-500/35", "bg-pink-500/25"] },

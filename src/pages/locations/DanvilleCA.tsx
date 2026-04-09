@@ -1,5 +1,5 @@
 import { Header } from "@/components/layout/Header";
-import danvilleHero from "@/assets/danville-hero.jpg";
+import danvilleHero from "@/assets/danville-hero.webp";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Head } from "vite-react-ssg";

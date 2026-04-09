@@ -15,7 +15,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, dentalBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
-import dentalHeroImage from "@/assets/industry-dental-hero.jpg";
+import dentalHeroImage from "@/assets/industry-dental-hero.webp";
 import { useUtm } from "@/hooks/use-utm";
 
 const services = [

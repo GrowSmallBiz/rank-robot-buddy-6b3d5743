@@ -16,7 +16,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useEffect, useRef } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceHero } from "@/components/services/ServiceHero";
-import medSpaHero from "@/assets/case-study-medspa-hero.jpg";
+import medSpaHero from "@/assets/case-study-medspa-hero.webp";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";

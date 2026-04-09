@@ -8,22 +8,22 @@ import {
   UserPlus, Mic, Focus, Aperture, Images, Mail, CalendarCheck
 } from "lucide-react";
 
-import photographerHeroImage from "@/assets/industry-photographer-hero.jpg";
-import portfolioPhotographerWebsite from "@/assets/portfolio-photographer-website.jpg";
-import challengeEmptyCalendar from "@/assets/challenge-empty-calendar.jpg";
-import challengeReferralHandoff from "@/assets/challenge-referral-handoff.jpg";
-import challengeGoogleRankings from "@/assets/challenge-google-ranking-female.jpg";
-import challengePriceWar from "@/assets/challenge-price-war-female.jpg";
-import signalSocialBurnout from "@/assets/social-media-burnout-female.jpg";
+import photographerHeroImage from "@/assets/industry-photographer-hero.webp";
+import portfolioPhotographerWebsite from "@/assets/portfolio-photographer-website.webp";
+import challengeEmptyCalendar from "@/assets/challenge-empty-calendar.webp";
+import challengeReferralHandoff from "@/assets/challenge-referral-handoff.webp";
+import challengeGoogleRankings from "@/assets/challenge-google-ranking-female.webp";
+import challengePriceWar from "@/assets/challenge-price-war-female.webp";
+import signalSocialBurnout from "@/assets/social-media-burnout-female.webp";
 
-import adCreativeFamilyOutdoor from "@/assets/ad-creative-family-outdoor-cta.jpg";
-import adCreativeMaternity from "@/assets/ad-creative-maternity-newborn.jpg";
-import adCreativeSeniorFashion from "@/assets/ad-creative-senior-fashion-cta.jpg";
-import adCreativeWeddingCta from "@/assets/ad-creative-wedding-cta.jpg";
-import adCreativeHeadshotMale from "@/assets/ad-creative-headshot-female.jpg";
-import adCreativePortraitStudio from "@/assets/ad-creative-portrait-family-studio.jpg";
-import adCreativeWeddingClean from "@/assets/ad-creative-wedding-clean.jpg";
-import adCreativeHeadshotPro from "@/assets/ad-creative-headshot-professional.jpg";
+import adCreativeFamilyOutdoor from "@/assets/ad-creative-family-outdoor-cta.webp";
+import adCreativeMaternity from "@/assets/ad-creative-maternity-newborn.webp";
+import adCreativeSeniorFashion from "@/assets/ad-creative-senior-fashion-cta.webp";
+import adCreativeWeddingCta from "@/assets/ad-creative-wedding-cta.webp";
+import adCreativeHeadshotMale from "@/assets/ad-creative-headshot-female.webp";
+import adCreativePortraitStudio from "@/assets/ad-creative-portrait-family-studio.webp";
+import adCreativeWeddingClean from "@/assets/ad-creative-wedding-clean.webp";
+import adCreativeHeadshotPro from "@/assets/ad-creative-headshot-professional.webp";
 
 export const photographersConfig: NicheConfig = {
   // ── Page Meta ──

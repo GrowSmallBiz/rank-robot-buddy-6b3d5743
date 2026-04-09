@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import servicesHeroBg from "@/assets/services-hero-bg.jpg";
+import servicesHeroBg from "@/assets/services-hero-bg.webp";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";

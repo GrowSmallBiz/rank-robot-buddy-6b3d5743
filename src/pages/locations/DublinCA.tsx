@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import dublinHero from "@/assets/dublin-hero.jpg";
+import dublinHero from "@/assets/dublin-hero.webp";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";

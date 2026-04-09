@@ -15,7 +15,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
-import hvacHeroImage from "@/assets/industry-hvac-hero.jpg";
+import hvacHeroImage from "@/assets/industry-hvac-hero.webp";
 import { useUtm } from "@/hooks/use-utm";
 
 const painPoints = [

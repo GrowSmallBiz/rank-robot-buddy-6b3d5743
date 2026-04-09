@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
-import aeoHeroBg from "@/assets/aeo-hero-bg.jpg";
+import aeoHeroBg from "@/assets/aeo-hero-bg.webp";
 import {
   MessageCircleQuestion,
   ArrowRight,

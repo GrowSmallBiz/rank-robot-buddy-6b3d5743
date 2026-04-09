@@ -18,7 +18,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { createContactCTA } from "@/config/contactCTA";
-import heroBg from "@/assets/case-studies-hvac-hero-bg.jpg";
+import heroBg from "@/assets/case-studies-hvac-hero-bg.webp";
 
 /* ─── Typography helpers ─── */
 const P = ({ children }: { children: React.ReactNode }) => (

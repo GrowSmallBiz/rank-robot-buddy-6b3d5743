@@ -91,7 +91,7 @@ export const blankConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
 
   /** Hero background image URL */
-  heroImage: "TODO: /path/to/hero-image.jpg",
+  heroImage: "TODO: /path/to/hero-image.webp",
 
   /** Small badge above headline */
   badgeText: "TODO: #1 Niche Marketing Platform",
@@ -212,7 +212,7 @@ export const blankConfig: NicheConfig = {
   websiteDesignHeadline: "TODO: A Website That",
   websiteDesignHighlight: "Converts Visitors Into Clients",
   websiteDesignSubheadline: "TODO: Explain why a great website matters for this niche.",
-  websiteDesignImage: "TODO: /path/to/website-screenshot.jpg",
+  websiteDesignImage: "TODO: /path/to/website-screenshot.webp",
   websiteDesignFeatureHeadline: "TODO: Built for [Niche] Success",
   websiteDesignFeatureBody: "TODO: Describe the website features.",
   websiteDesignBullets: [
@@ -253,14 +253,14 @@ export const blankConfig: NicheConfig = {
     category1: {
       label: "TODO: Category 1",
       icon: Search,
-      image: "TODO: /path/to/image.jpg",
+      image: "TODO: /path/to/image.webp",
       keywords: ["TODO: keyword 1", "TODO: keyword 2", "TODO: keyword 3"],
       competitors: "TODO: Competitor landscape description",
     },
     category2: {
       label: "TODO: Category 2",
       icon: Camera,
-      image: "TODO: /path/to/image.jpg",
+      image: "TODO: /path/to/image.webp",
       keywords: ["TODO: keyword 1", "TODO: keyword 2", "TODO: keyword 3"],
       competitors: "TODO: Competitor landscape description",
     },
@@ -279,7 +279,7 @@ export const blankConfig: NicheConfig = {
     {
       id: "ad1",
       genre: "TODO: Genre",
-      image: "TODO: /path/to/ad-creative.jpg",
+      image: "TODO: /path/to/ad-creative.webp",
       platforms: ["Google Ads", "Meta"],
       description: "TODO: Describe this ad creative approach.",
     },

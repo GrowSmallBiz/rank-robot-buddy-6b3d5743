@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import livermoreHero from "@/assets/livermore-hero.jpg";
+import livermoreHero from "@/assets/livermore-hero.webp";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";

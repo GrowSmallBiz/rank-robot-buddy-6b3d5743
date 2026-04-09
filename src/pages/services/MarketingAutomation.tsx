@@ -19,7 +19,7 @@ import { createServiceContactCTA } from "@/config/contactCTA";
 import { FunnelBuilderSection } from "@/components/sections/FunnelBuilderSection";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { AutopilotCTASection } from "@/components/sections/AutopilotCTASection";
-import heroImage from "@/assets/marketing-automation-hero.jpg";
+import heroImage from "@/assets/marketing-automation-hero.webp";
 import whatYouGetSpeed from "@/assets/what-you-get-speed.svg";
 import whatYouGetCalendar from "@/assets/what-you-get-calendar.svg";
 import whatYouGetCalls from "@/assets/what-you-get-calls.svg";

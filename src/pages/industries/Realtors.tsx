@@ -27,7 +27,7 @@ import { CaseStudySection } from "@/components/sections/CaseStudySection";
 import { BlogSection, generalBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
-import realtorHeroImage from "@/assets/industry-realtor-hero.jpg";
+import realtorHeroImage from "@/assets/industry-realtor-hero.webp";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { useUtm } from "@/hooks/use-utm";
 

@@ -4,7 +4,7 @@ import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
-import authorityHeroBg from "@/assets/authority-building-hero-bg.jpg";
+import authorityHeroBg from "@/assets/authority-building-hero-bg.webp";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";

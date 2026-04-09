@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
-import geoHeroBg from "@/assets/geo-hero-bg.jpg";
+import geoHeroBg from "@/assets/geo-hero-bg.webp";
 import {
   Globe,
   ArrowRight,

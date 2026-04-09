@@ -52,33 +52,33 @@ import {
 import { useUtm } from "@/hooks/use-utm";
 
 // Import images for service cards
-import realtorWebsiteImg from "@/assets/realtor-website.jpg";
-import realtorCrmImg from "@/assets/realtor-crm.jpg";
-import realtorIdxIntegrationImg from "@/assets/realtor-idx-integration.jpg";
-import realtorLeadGenImg from "@/assets/realtor-lead-gen.jpg";
-import realtorIdxAddonsImg from "@/assets/realtor-idx-addons.jpg";
-import realtorMarketingImg from "@/assets/realtor-marketing.jpg";
-import realtorReputationImg from "@/assets/realtor-reputation.jpg";
-import realtorSeoImg from "@/assets/realtor-seo.jpg";
-import realtorPaidAdsImg from "@/assets/realtor-paid-ads.jpg";
-import realtorSocialMediaImg from "@/assets/realtor-social-media.jpg";
-import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.jpg";
-import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.jpg";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import realtorWebsiteImg from "@/assets/realtor-website.webp";
+import realtorCrmImg from "@/assets/realtor-crm.webp";
+import realtorIdxIntegrationImg from "@/assets/realtor-idx-integration.webp";
+import realtorLeadGenImg from "@/assets/realtor-lead-gen.webp";
+import realtorIdxAddonsImg from "@/assets/realtor-idx-addons.webp";
+import realtorMarketingImg from "@/assets/realtor-marketing.webp";
+import realtorReputationImg from "@/assets/realtor-reputation.webp";
+import realtorSeoImg from "@/assets/realtor-seo.webp";
+import realtorPaidAdsImg from "@/assets/realtor-paid-ads.webp";
+import realtorSocialMediaImg from "@/assets/realtor-social-media.webp";
+import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.webp";
+import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.webp";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.webp";
 
 // IDXAddons Featured Addon images
-import idxSearchTool from "@/assets/idx-search-tool.png";
-import idxGoogleMap from "@/assets/idx-google-map.png";
-import idxPlunkValuation from "@/assets/idx-plunk-valuation.png";
-import idxStylesColors from "@/assets/idx-styles-colors.png";
-import idxCountsWidget from "@/assets/idx-counts-widget.png";
+import idxSearchTool from "@/assets/idx-search-tool.webp";
+import idxGoogleMap from "@/assets/idx-google-map.webp";
+import idxPlunkValuation from "@/assets/idx-plunk-valuation.webp";
+import idxStylesColors from "@/assets/idx-styles-colors.webp";
+import idxCountsWidget from "@/assets/idx-counts-widget.webp";
 
 // IDX Premium Layouts images
-import idxTemplateResults from "@/assets/idx-template-results.png";
-import idxTemplateRoster from "@/assets/idx-template-roster.jpg";
-import idxTemplateSearch from "@/assets/idx-template-search.jpg";
-import idxTemplateDetails from "@/assets/idx-template-details.jpg";
-import idxTemplateMap from "@/assets/idx-template-map.jpg";
+import idxTemplateResults from "@/assets/idx-template-results.webp";
+import idxTemplateRoster from "@/assets/idx-template-roster.webp";
+import idxTemplateSearch from "@/assets/idx-template-search.webp";
+import idxTemplateDetails from "@/assets/idx-template-details.webp";
+import idxTemplateMap from "@/assets/idx-template-map.webp";
 
 // Pain Points for Realtors
 const painPoints = [
