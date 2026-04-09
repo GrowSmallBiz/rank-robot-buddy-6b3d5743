@@ -535,7 +535,7 @@ const RealtorMarketing = () => {
                 {group.introLine && (
                   <p className="text-muted-foreground mb-8 max-w-3xl">{group.introLine}</p>
                 )}
-                <div className={`grid md:grid-cols-2 ${group.services.length !== 4 ? 'lg:grid-cols-3' : ''} gap-8`}>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {group.services.map((service) => <ServiceCard key={service.id} service={service} />)}
                 </div>
               </div>
