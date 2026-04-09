@@ -546,7 +546,6 @@ const SanRamonCA = () => {
           </div>
 
           <CampaignResultsCards cards={sanRamonCards} />
-          </div>
 
           {/* Channel Compare Table */}
           <div>

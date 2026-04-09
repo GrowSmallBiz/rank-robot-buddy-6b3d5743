@@ -530,7 +530,6 @@ const WalnutCreekCA = () => {
           </div>
 
           <CampaignResultsCards cards={walnutCreekCards} />
-          </div>
 
           {/* Channel Comparison */}
           <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">

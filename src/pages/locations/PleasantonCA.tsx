@@ -494,7 +494,6 @@ const PleasantonCA = () => {
           </div>
 
           <CampaignResultsCards cards={pleasantonCards} />
-          </div>
 
           {/* Channel Comparison Table */}
           <div className="animate-fade-up mt-12">
