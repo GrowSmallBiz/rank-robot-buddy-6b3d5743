@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Head } from "vite-react-ssg";
+import { PageJsonLd } from "@/components/seo/PageJsonLd";
 
 const TermsOfService = () => {
   return (
@@ -10,6 +11,13 @@ const TermsOfService = () => {
         <meta name="description" content="Terms and Conditions for GrowSmallBiz Digital Marketing. Read our terms governing the use of our services and website." />
         <link rel="canonical" href="https://growsmallbiz.io/terms-of-service/" />
       </Head>
+      <PageJsonLd
+        pageType="WebPage"
+        name="Terms of Service | GrowSmallBiz Digital Marketing"
+        description="Terms and Conditions for GrowSmallBiz Digital Marketing. Read our terms governing the use of our services and website."
+        url="/terms-of-service/"
+        breadcrumbs={[{ name: "Terms of Service", url: "/terms-of-service/" }]}
+      />
       <Header />
       <main id="main-content" className="pt-20">
         <div className="container mx-auto px-4 pt-16 pb-8 max-w-4xl">
