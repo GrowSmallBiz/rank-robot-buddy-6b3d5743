@@ -517,6 +517,97 @@ const RealtorMarketing = () => {
           </div>
         </section>
 
+        {/* ═══ SECTION A — BROKER DEPENDENCY ═══ */}
+        <section className="py-24 lg:py-32 bg-card/50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10 text-center">
+                The Problem With Broker Leads Nobody Talks About
+              </h2>
+
+              <div className="space-y-6 mb-10">
+                {[
+                  { bold: "They're not exclusive.", rest: " Same lead, multiple agents. First to call wins — that's not a system, that's a race." },
+                  { bold: "They're pre-filtered.", rest: " Top producers get first access. You get what's left." },
+                  { bold: "They arrive cold.", rest: " No context, no qualification. A name and a phone number." },
+                  { bold: "The relationship belongs to the brokerage.", rest: " When you leave, those clients stay behind." },
+                  { bold: "You're still splitting the commission.", rest: " Even low-quality leads cost you a split." },
+                  { bold: "Your brand stays invisible.", rest: " Clients know your broker's name first — not yours." },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                    <XCircle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
+                    <p className="text-muted-foreground"><strong className="text-foreground">{item.bold}</strong>{item.rest}</p>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-center text-lg font-bold text-foreground mb-16">
+                The broker lead model was designed to benefit the brokerage. Not the agent.
+              </p>
+            </div>
+
+            {/* Broker Dependency vs. GrowSmallBiz Table */}
+            <div className="max-w-5xl mx-auto">
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 text-center">
+                Broker Dependency vs. Building With GrowSmallBiz
+              </h3>
+
+              <div className="bg-card border border-border rounded-2xl overflow-hidden animate-fade-up">
+                <div className="grid grid-cols-3 border-b border-border">
+                  <div className="p-5 font-medium text-foreground" />
+                  <div className="p-5 text-center font-bold text-muted-foreground border-x border-border bg-secondary/30">Broker Dependency</div>
+                  <div className="p-5 text-center font-bold text-teal-400 bg-teal-500/5">GrowSmallBiz</div>
+                </div>
+                {[
+                  ["Lead quality", "❌ Cold, unqualified, pre-screened", "✅ Inbound, motivated, intent-driven"],
+                  ["Lead exclusivity", "❌ Distributed across the office", "✅ Direct to you only"],
+                  ["Commission", "❌ Split every time", "✅ You keep what you earn"],
+                  ["Brand visibility", "❌ Broker's name first", "✅ Your name, your presence"],
+                  ["Online identity", "❌ Tied to broker's website", "✅ Your own domain and profile"],
+                  ["When you change firms", "❌ Start from zero", "✅ Take everything with you"],
+                  ["Lead nurturing", "❌ Manual, falls through cracks", "✅ Automated 24/7"],
+                  ["Market reports", "❌ Broker sends those", "✅ Your name on every one"],
+                  ["Long-term equity", "❌ Built for the brokerage", "✅ Built for you"],
+                  ["Speed to lead", "❌ When you're available", "✅ AI responds in seconds"],
+                ].map(([feature, broker, gsb], i) => (
+                  <div key={i} className="grid grid-cols-3 border-b border-border last:border-b-0 hover:bg-secondary/20 transition-colors">
+                    <div className="p-4 text-foreground font-medium text-sm">{feature}</div>
+                    <div className="p-4 text-sm text-muted-foreground border-x border-border">{broker}</div>
+                    <div className="p-4 text-sm text-foreground">{gsb}</div>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-center mt-8 text-xl font-bold text-primary">
+                Every lead you close through your broker builds their equity — not yours.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ═══ SECTION B — WHY MOST AGENCIES FAIL ═══ */}
+        <section className="py-24 lg:py-32">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10">
+                Why Most Real Estate Marketing Services Fail
+              </h2>
+
+              <div className="text-muted-foreground text-lg leading-relaxed space-y-6">
+                <p>
+                  Most marketing agencies sell realtors pieces of a solution. One vendor builds your website. Another manages your ads. A third sends emails. None of them talk to each other. None of them know what happens after the lead clicks.
+                </p>
+                <p className="text-xl font-bold text-primary">
+                  Traffic is not the goal. Closed deals are the goal.
+                </p>
+                <p>
+                  <strong className="text-foreground">Most marketing stops at the click.</strong> GrowSmallBiz builds what comes next — <strong className="text-teal-400">one connected system, one team, one goal: more closed deals.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ═══ CHANGE 4 — SERVICE CARDS BY FUNNEL STAGE ═══ */}
         <section id="services" className="py-24 lg:py-32 bg-card/50">
           <div className="container mx-auto px-4">
