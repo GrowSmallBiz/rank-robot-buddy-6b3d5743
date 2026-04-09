@@ -22,6 +22,7 @@ export const ServiceCard = ({ title, description, features, href, image, index }
         <img
           src={image}
           alt={title}
+          width={400} height={300}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />

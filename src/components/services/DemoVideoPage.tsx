@@ -101,6 +101,7 @@ export const DemoVideoPage = ({
                         <img
                           src={feature.image}
                           alt={feature.title}
+                          width={600} height={400}
                           className="w-full rounded-lg mb-4"
                           loading="lazy"
                         />
