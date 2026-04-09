@@ -548,7 +548,7 @@ export const photographersConfig: NicheConfig = {
 
   // ── Contact ──
   contactSectionHeadline: "Ready to Grow Your Photography Business?",
-  contactSectionBody: "Schedule a free strategy call to discuss your marketing goals.",
+  contactSectionBody: "Schedule a strategy call to discuss your marketing goals.",
 
   // ── Sticky CTA ──
   stickyCtaConfig: {

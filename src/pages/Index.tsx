@@ -250,7 +250,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up-safe delay-400">
               <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl">
-                  Get Free Strategy Call
+                  Schedule Strategy Call
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
@@ -373,7 +373,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg" className="animate-fade-up">
-                Get Free Strategy Call
+                Schedule Strategy Call
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </a>

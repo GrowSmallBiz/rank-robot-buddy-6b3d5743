@@ -278,7 +278,7 @@ const TracyCA = () => {
               ))}
             </ul>
             <a href={strategyCallUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-lg px-5 py-3 text-primary font-semibold hover:bg-primary/20 transition-colors">
-              → Optimize Your Local SEO for Tracy — Schedule Your Free Strategy Call
+              → Optimize Your Local SEO for Tracy — Schedule Strategy Call
             </a>
           </div>
 
@@ -588,7 +588,7 @@ const TracyCA = () => {
 
       {/* ===== PRE-FORM PERSON CTA ===== */}
       <PersonCTA
-        title="Schedule Your Free Strategy Call"
+        title="Schedule Strategy Call"
         description="Receive a personalized strategy session — Tracy local SEO audit, commuter timing analysis, and a clear growth roadmap built specifically for your San Joaquin Valley service business."
         buttonText="Schedule Strategy Call"
         buttonHref={strategyCallUrl}

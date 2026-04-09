@@ -476,7 +476,7 @@ const SanRamonCA = () => {
 
       {/* Mid-page CTA */}
       <CardCTA
-        title="Schedule Your Free Strategy Call"
+        title="Schedule Strategy Call"
         description="See how GrowSmallBiz can help your San Ramon business connect visibility, lead capture, follow-up, and conversion into one practical system."
         buttonText="Schedule Strategy Call"
         buttonHref={strategyCallUrl}
@@ -706,7 +706,7 @@ const SanRamonCA = () => {
             </p>
           </div>
           <CardCTA
-            title="Schedule Your Free Strategy Call"
+            title="Schedule Strategy Call"
             description="Receive a personalized strategy session — local SEO audit, competitive analysis, and a clear growth roadmap built specifically for your San Ramon service business."
             buttonText="Schedule Strategy Call"
             buttonHref={strategyCallUrl}
