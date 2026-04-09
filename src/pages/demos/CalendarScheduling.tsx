@@ -16,7 +16,7 @@ export default function CalendarSchedulingDemo() {
       <VideoJsonLd
         name="Calendar Scheduling Demo"
         description="See how GrowSmallBiz Calendar Scheduling automates appointment booking and reduces no-shows for small businesses."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697c25ed7c362a3f5fa8e9.mp4"
         uploadDate="2025-01-15"
       />

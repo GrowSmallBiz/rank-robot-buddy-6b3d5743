@@ -17,7 +17,7 @@ export default function EmailSmsMarketingDemo() {
       <VideoJsonLd
         name="Email & SMS Marketing Demo"
         description="See how GrowSmallBiz Email & SMS Marketing helps you engage leads with automated campaigns."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697c5302ec935366dea37a.mp4"
         uploadDate="2025-01-15"
       />

@@ -17,7 +17,7 @@ export default function IntegratedPaymentsDemo() {
       <VideoJsonLd
         name="Integrated Payments Demo"
         description="See how GrowSmallBiz Integrated Payments streamlines billing, invoicing, and payment collection."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697c7fc191e6dbb0e427de.mp4"
         uploadDate="2025-01-15"
       />

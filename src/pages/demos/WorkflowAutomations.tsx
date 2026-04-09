@@ -16,7 +16,7 @@ export default function WorkflowAutomationsDemo() {
       <VideoJsonLd
         name="Workflow Automations Demo"
         description="Simplify your business by automating follow-ups, reminders, and handoffs."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697d43ed7c36cfd35fffd0.mp4"
         uploadDate="2025-01-15"
       />

@@ -17,7 +17,7 @@ export default function ReviewsDemo() {
       <VideoJsonLd
         name="Reviews Management Demo"
         description="See how GrowSmallBiz automates 5-star review collection to build an unbeatable reputation."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697cb20f8a08e4aa6358b3.mp4"
         uploadDate="2025-01-15"
       />

@@ -16,7 +16,7 @@ export default function WebsiteBuilderDemo() {
       <VideoJsonLd
         name="Website Builder Demo"
         description="Build a fast, professional website that captures leads — no developer needed."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697bd00f8a085fea630af5.mp4"
         uploadDate="2025-01-15"
       />
