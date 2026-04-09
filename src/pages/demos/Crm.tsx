@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -13,6 +14,13 @@ export default function CrmDemo() {
         <meta name="description" content="Never let a lead slip through the cracks. GrowSmallBiz CRM tracks every customer, prospect, and job from first contact to closed deal." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/crm/" />
       </Head>
+      <VideoJsonLd
+        name="CRM Demo"
+        description="Never let a lead slip through the cracks. GrowSmallBiz CRM tracks every customer, prospect, and job from first contact to closed deal."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/SwP9BuV0qUOPa58lqK1y/media/649b4a9fc681291412876613.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}

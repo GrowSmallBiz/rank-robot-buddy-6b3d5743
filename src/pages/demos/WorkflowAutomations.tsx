@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoPageNav } from "@/components/services/DemoPageNav";
@@ -12,6 +13,13 @@ export default function WorkflowAutomationsDemo() {
         <meta name="description" content="Stop doing the same tasks over and over. GrowSmallBiz Workflow Automations handle your follow-ups, reminders, and handoffs so you can focus on the work." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/workflow-automations/" />
       </Head>
+      <VideoJsonLd
+        name="Workflow Automations Demo"
+        description="Simplify your business by automating follow-ups, reminders, and handoffs."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697d43ed7c36cfd35fffd0.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}

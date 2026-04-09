@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -13,6 +14,13 @@ export default function EmailSmsMarketingDemo() {
         <meta name="description" content="See how GrowSmallBiz Email & SMS Marketing helps you engage leads with automated campaigns." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/email-sms-marketing/" />
       </Head>
+      <VideoJsonLd
+        name="Email & SMS Marketing Demo"
+        description="See how GrowSmallBiz Email & SMS Marketing helps you engage leads with automated campaigns."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697c5302ec935366dea37a.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}

@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoPageNav } from "@/components/services/DemoPageNav";
@@ -12,6 +13,13 @@ export default function CalendarSchedulingDemo() {
         <meta name="description" content="See how GrowSmallBiz Calendar Scheduling automates appointment booking and reduces no-shows." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/calendar-scheduling/" />
       </Head>
+      <VideoJsonLd
+        name="Calendar Scheduling Demo"
+        description="See how GrowSmallBiz Calendar Scheduling automates appointment booking and reduces no-shows for small businesses."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697c25ed7c362a3f5fa8e9.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>

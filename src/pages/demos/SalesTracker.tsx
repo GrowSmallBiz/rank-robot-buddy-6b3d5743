@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -13,6 +14,13 @@ export default function SalesTrackerDemo() {
         <meta name="description" content="Know exactly which deals are ready to close, which need a follow-up, and where revenue is leaking — all in one visual pipeline." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-tracker/" />
       </Head>
+      <VideoJsonLd
+        name="Sales Tracker Demo"
+        description="Know exactly which deals are ready to close and where revenue is leaking — all in one visual pipeline."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/SwP9BuV0qUOPa58lqK1y/media/649b45f974a73015f562f32f.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}

@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -12,6 +13,13 @@ export default function SocialMediaPlannerDemo() {
         <meta name="description" content="Plan and schedule weeks of social content in minutes. GrowSmallBiz Social Media Planner keeps your business visible online without the daily grind." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/social-media-planner/" />
       </Head>
+      <VideoJsonLd
+        name="Social Media Planner Demo"
+        description="Plan and schedule weeks of social content in minutes. Keep your business visible online without the daily grind."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697d2002ec939081dee944.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>

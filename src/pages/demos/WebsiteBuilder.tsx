@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoPageNav } from "@/components/services/DemoPageNav";
@@ -12,6 +13,13 @@ export default function WebsiteBuilderDemo() {
         <meta name="description" content="Build a fast, professional website that captures leads — no developer needed. GrowSmallBiz Website Builder is designed for local service businesses." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/website-builder/" />
       </Head>
+      <VideoJsonLd
+        name="Website Builder Demo"
+        description="Build a fast, professional website that captures leads — no developer needed."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697bd00f8a085fea630af5.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}

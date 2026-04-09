@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -14,6 +15,13 @@ export default function CallTrackingDemo() {
         <meta name="description" content="Know which ads and channels are actually driving calls. GrowSmallBiz Call Tracking records every conversation and shows you exactly where your best leads are coming from." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking/" />
       </Head>
+      <VideoJsonLd
+        name="Call Tracking Demo"
+        description="Know which ads and channels are actually driving calls. Track, record, and analyze every call to optimize your marketing spend."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/SwP9BuV0qUOPa58lqK1y/media/649b4a9fc681295ac4876614.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
