@@ -61,9 +61,13 @@ export const ServiceHero = ({
     );
 
     if (cta.external) {
+      const isAnchor = cta.href.startsWith("#");
       return (
         <Button variant={variant} size="lg" asChild>
-          <a href={cta.href} target="_blank" rel="noopener noreferrer">
+          <a
+            href={cta.href}
+            {...(!isAnchor && { target: "_blank", rel: "noopener noreferrer" })}
+          >
             {content}
           </a>
         </Button>
