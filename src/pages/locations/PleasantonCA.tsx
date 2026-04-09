@@ -105,7 +105,7 @@ const PleasantonCA = () => {
             </h2>
           </div>
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto animate-fade-up">
-            Pleasanton's SERP landscape is led by Jives Media — a 3,369-word page scoring 89–91 that ranks #1 to #3 across primary keywords. Terzetto Digital is Pleasanton-based and explicitly covers the market. Neither competitor addresses the structural difference between Pleasanton's two ZIP codes or the review velocity dynamics that govern local map pack rankings here. Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of Pleasanton's premium local service market.
+            Pleasanton's SERPs are led by well-resourced agencies — one holding a 3,369-word page scoring 89–91 across primary keywords, another Pleasanton-based and explicitly covering the market. Neither addresses the structural difference between Pleasanton's two ZIP codes or the review velocity dynamics that govern local map pack rankings here. Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of Pleasanton's premium local service market.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -225,7 +225,7 @@ const PleasantonCA = () => {
               </thead>
               <tbody>
                 {[
-                  { service: "Local SEO & Google Business Profile", whatWeDo: "GBP service area optimization, dual-ZIP citation building, review velocity management, local link building", impact: "Rank in Google Maps 3-pack for both 94566 Downtown and 94588 Hacienda audiences; outperform Jives Media and Terzetto with hyper-local content" },
+                  { service: "Local SEO & Google Business Profile", whatWeDo: "GBP service area optimization, dual-ZIP citation building, review velocity management, local link building", impact: "Rank in Google Maps 3-pack for both 94566 Downtown and 94588 Hacienda audiences; outperform current SERP leaders with hyper-local dual-ZIP content" },
                   { service: "Managed Google Ads / PPC", whatWeDo: "Call-only ads, ZIP-targeted campaigns, quality score management, conversion tracking, ongoing bid optimization", impact: "Immediate top-of-page visibility in Pleasanton; geo-targeted to 94566 and 94588 with device and scheduling adjustments for each audience" },
                   { service: "Google Local Service Ads (LSA)", whatWeDo: "Background check coordination, license verification, budget management, Google Guaranteed badge setup", impact: "Google reports up to 25% increase in consumer trust with Google Guaranteed badge — critical for home service contractors in Pleasanton's competitive market" },
                   { service: "Social Media & Meta Ads", whatWeDo: "Geo-targeted campaigns for ZIP codes 94566 and 94588; Hacienda employee targeting; homeowner demographic filters; retargeting sequences", impact: "Reach Pleasanton's high-income households and Hacienda business park population — Meta reaches 70%+ of US adults monthly" },
@@ -292,7 +292,7 @@ const PleasantonCA = () => {
                 </tbody>
               </table>
             </div>
-            <p className="text-muted-foreground mt-6 max-w-4xl mx-auto">A roofing contractor serving both 94566 and 94588 needs separate GBP service area configurations, separate landing pages targeting neighborhood-level keywords, and separate paid campaign ad schedules — evening and weekend for residential 94566 homeowners, business-hour targeting for 94588 Hacienda commercial properties. This is not complexity for its own sake. It is the structural reason GrowSmallBiz pages consistently outperform the single-strategy approaches of Jives Media and Terzetto Digital in Pleasanton's local search results.</p>
+            <p className="text-muted-foreground mt-6 max-w-4xl mx-auto">A roofing contractor serving both 94566 and 94588 needs separate GBP service area configurations, separate landing pages targeting neighborhood-level keywords, and separate paid campaign ad schedules — evening and weekend for residential 94566 homeowners, business-hour targeting for 94588 Hacienda commercial properties. This is not complexity for its own sake. It is the structural reason GrowSmallBiz pages consistently outperform the single-strategy approaches of agencies currently ranking in Pleasanton's local search results.</p>
           </div>
 
           {/* Service Deep Dives */}
@@ -308,7 +308,7 @@ const PleasantonCA = () => {
               </p>
               <ul className="space-y-2 text-muted-foreground mb-6">
                 <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Google Business Profile optimization calibrated to Pleasanton's dual-ZIP market — service area configuration, category selection, photo cadence, Q&A, and post frequency aligned with Google's local ranking factors</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Neighborhood-level keyword targeting: 'HVAC repair Downtown Pleasanton,' 'dentist Hacienda Business Park,' 'plumber 94566,' 'restaurant Main Street Pleasanton' — hyper-local terms that Jives Media and Terzetto's templated pages never build</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Neighborhood-level keyword targeting: 'HVAC repair Downtown Pleasanton,' 'dentist Hacienda Business Park,' 'plumber 94566,' 'restaurant Main Street Pleasanton' — hyper-local terms that current SERP leaders' templated pages never build</li>
                 <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Review velocity management — systematic review request campaigns that generate consistent new review activity rather than occasional spikes, building the recency signal that Pleasanton's top map pack positions require</li>
                 <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Alameda County citation building — structured citations across local directories, aggregators, and business associations that establish geo-relevance for both ZIP codes</li>
                 <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>SAB (Service Area Business) track for contractors based outside Pleasanton — GBP service area configuration, geo-targeted landing pages, and Alameda County citations that establish Pleasanton map pack presence without a local address</li>
@@ -329,7 +329,7 @@ const PleasantonCA = () => {
               <p className="text-muted-foreground leading-relaxed mb-4">Google Ads in Pleasanton require careful audience and schedule management to reflect the dual-ZIP market reality. A campaign running flat across all hours and both ZIP codes wastes budget on the wrong audience at the wrong time. Our campaigns are architected around each audience's actual search behavior.</p>
               <ul className="space-y-2 text-muted-foreground mb-6">
                 <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Campaigns geo-targeted to ZIP codes 94566 and 94588 with separate ad scheduling — evening and weekend emphasis for residential 94566 homeowners; business-hour emphasis for 94588 Hacienda commercial searchers</li>
-                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Quality Score management to keep cost-per-click competitive against Jives Media and other well-funded Pleasanton advertisers</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Quality Score management to keep cost-per-click competitive against well-funded Pleasanton advertisers</li>
                 <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Ad extensions — call extensions, location extensions, sitelinks, and structured snippets — increasing click-through rate without increasing bids</li>
                 <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Call-only campaigns for emergency home service categories where immediate phone contact drives the booking decision</li>
                 <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Complete conversion tracking: every dollar of ad spend accountable to phone calls, form fills, and booked appointments — not just clicks and impressions</li>
@@ -528,7 +528,7 @@ const PleasantonCA = () => {
           {/* Channel Comparison Table */}
           <div className="animate-fade-up mt-12">
             <h3 className="text-2xl font-display font-bold text-foreground mb-4 text-center">Single-Channel Marketing Doesn't Win in Pleasanton Anymore. Here's What Actually Moves the Needle.</h3>
-            <p className="text-muted-foreground text-center mb-6 max-w-3xl mx-auto">Jives Media dominates Pleasanton's SERPs with a 3,369-word page because single-channel SEO investments from years ago built durable rankings. Outperforming those rankings requires not just better content — it requires a fully integrated system that compounds across every channel simultaneously.</p>
+            <p className="text-muted-foreground text-center mb-6 max-w-3xl mx-auto">The current SERP leaders for Pleasanton keywords built durable rankings through single-channel SEO investments made years ago. Outperforming those rankings requires not just better content — it requires a fully integrated system that compounds across every channel simultaneously.</p>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
@@ -572,7 +572,7 @@ const PleasantonCA = () => {
               <span className="text-transparent bg-clip-text bg-gradient-primary italic">Why GrowSmallBiz Outperforms Every Agency That's Failed Your Pleasanton Business Before.</span>
             </h2>
           </div>
-          <p className="text-muted-foreground text-center mb-8 max-w-4xl mx-auto animate-fade-up">Pleasanton's SERPs are led by Jives Media, Terzetto Digital, and Boomcycle. None of them build separate strategies for 94566 and 94588. None address review velocity as a distinct ranking lever. None are based in the Tri-Valley with the market-specific knowledge that comes from proximity.</p>
+          <p className="text-muted-foreground text-center mb-8 max-w-4xl mx-auto animate-fade-up">Pleasanton's SERPs are led by well-resourced agencies and national players. None of them build separate strategies for 94566 and 94588. None address review velocity as a distinct ranking lever. None are based in the Tri-Valley with the market-specific knowledge that comes from proximity.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: MapPin, title: "Tri-Valley Proximity", text: "GrowSmallBiz is based in Danville — minutes from Pleasanton. We know the I-580 corridor, the difference between 94566 and 94588, and what Pleasanton service business owners face daily. Not a national agency or a generic Bay Area shop." },
@@ -589,7 +589,7 @@ const PleasantonCA = () => {
               </div>
             ))}
           </div>
-          <p className="text-muted-foreground mt-8 max-w-4xl mx-auto animate-fade-up">Jives Media's Pleasanton page was built from a Bay Area template. Terzetto's was built from a Pleasanton base but treats both ZIP codes identically. GrowSmallBiz builds your Pleasanton strategy from the actual competitive landscape of your specific ZIP code, your specific vertical, and your specific competitive position — because that specificity is what wins in Pleasanton's high-scrutiny local search environment.</p>
+          <p className="text-muted-foreground mt-8 max-w-4xl mx-auto animate-fade-up">The agencies currently ranking for Pleasanton keywords were built from Bay Area templates that treat both ZIP codes identically. GrowSmallBiz builds your Pleasanton strategy from the actual competitive landscape of your specific ZIP code, your specific vertical, and your specific competitive position — because that specificity is what wins in Pleasanton's high-scrutiny local search environment.</p>
         </div>
       </section>
 
