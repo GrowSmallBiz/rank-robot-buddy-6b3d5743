@@ -226,7 +226,7 @@ const retainServices = [
 
 const stageGroups = [
   { stage: 1, label: "Stage 1 — Attract", services: attractServices, layout: "3+2" as const },
-  { stage: 2, label: "Stage 2 — Capture", services: captureServices, layout: "3+1" as const },
+  { stage: 2, label: "Stage 2 — Capture", services: captureServices, layout: "2x2" as const },
   { stage: 3, label: "Stage 3 — Nurture", services: nurtureServices, layout: "3" as const },
   { stage: 4, label: "Stage 4 — Close", services: closeServices, layout: "2" as const },
   { stage: 5, label: "Stage 5 — Retain & Grow", services: retainServices, layout: "2" as const },
