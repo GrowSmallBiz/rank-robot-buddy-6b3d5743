@@ -12,7 +12,6 @@ const AppLayout = () => (
   <TooltipProvider>
     <ScrollToTop />
     <Suspense fallback={null}>
-      <Toaster />
       <Sonner />
     </Suspense>
     <Outlet />
