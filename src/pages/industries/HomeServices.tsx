@@ -236,7 +236,7 @@ const faqs = [
   }
 ];
 
-const campaignResults = [
+const seoCampaignResults = [
   {
     title: "HVAC & Plumbing Growth",
     subtitle: "Local SEO Campaign",
@@ -294,6 +294,41 @@ const campaignResults = [
   },
 ];
 
+const ppcCampaignResults = [
+  {
+    title: "HVAC Google PPC Growth",
+    subtitle: "Google Ads Lead Generation Campaign",
+    metrics: [
+      "+50.23% CTR",
+      "+83% Conversions",
+      "+56.3% Conversion Rate",
+      "-41% Cost Per Acquisition",
+    ],
+    link: "/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/",
+  },
+  {
+    title: "Roofing Google PPC Growth",
+    subtitle: "Google Ads Campaign",
+    metrics: [
+      "+93.3% Conversions",
+      "+123.4% Conversion Rate",
+      "-48.9% Cost Per Conversion",
+      "+17.7% Clicks",
+    ],
+    link: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+  },
+  {
+    title: "Tree & Lawn Google PPC Growth",
+    subtitle: "Google Ads Lead Generation Campaign",
+    metrics: [
+      "+169.5% Clicks",
+      "+211.5% Conversions",
+      "+16.7% Conversion Rate",
+      "299 Conversions — Last 90 Days",
+    ],
+    link: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/",
+  },
+];
 const HomeServices = () => {
   const { strategySessionUrl, freeAuditUrl } = useUtm();
 
@@ -608,13 +643,16 @@ const HomeServices = () => {
             ))}
           </div>
 
+          {/* Local SEO Campaign Results */}
+          <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 text-center">
+            Local SEO Campaign Results
+          </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {campaignResults.map((campaign, index) => (
+            {seoCampaignResults.map((campaign, index) => (
               <div
                 key={index}
                 className="bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col"
               >
-                {/* Header */}
                 <div className="bg-gradient-primary p-6">
                   <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
                     Campaign Results
@@ -626,8 +664,6 @@ const HomeServices = () => {
                     {campaign.subtitle}
                   </p>
                 </div>
-
-                {/* Metrics */}
                 <div className="p-6 flex-1">
                   <div className="space-y-3">
                     {campaign.metrics.map((metric, mIndex) => (
@@ -638,8 +674,50 @@ const HomeServices = () => {
                     ))}
                   </div>
                 </div>
+                <div className="px-6 pb-6">
+                  <Link
+                    to={campaign.link}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    View Case Studies
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
 
-                {/* Link */}
+          {/* Google Ads Campaign Results */}
+          <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 mt-16 text-center">
+            Google Ads Campaign Results
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {ppcCampaignResults.map((campaign, index) => (
+              <div
+                key={index}
+                className="bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col"
+              >
+                <div className="bg-gradient-primary p-6">
+                  <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
+                    Campaign Results
+                  </span>
+                  <h3 className="text-xl font-display font-bold text-primary-foreground mt-2 mb-1">
+                    {campaign.title}
+                  </h3>
+                  <p className="text-sm text-primary-foreground/70">
+                    {campaign.subtitle}
+                  </p>
+                </div>
+                <div className="p-6 flex-1">
+                  <div className="space-y-3">
+                    {campaign.metrics.map((metric, mIndex) => (
+                      <div key={mIndex} className="flex items-start gap-3">
+                        <TrendingUp className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-foreground font-medium">{metric}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
                 <div className="px-6 pb-6">
                   <Link
                     to={campaign.link}
