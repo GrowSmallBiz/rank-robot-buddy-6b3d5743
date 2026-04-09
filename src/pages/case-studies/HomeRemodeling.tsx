@@ -1,7 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
@@ -112,13 +112,13 @@ const HomeRemodeling = () => {
         />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="Real Results for Home Remodeling Contractors — Not Projections"
+      <ArticleJsonLd
+        headline="Real Results for Home Remodeling Contractors — Not Projections"
         description="Explore documented Local SEO case study results for home remodeling and home renovation businesses."
         url="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/"
+        datePublished="2025-01-15"
         breadcrumbs={[
-          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Home Service Contractors", url: "/home-service-contractors/" },
           { name: "Home Remodeling", url: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" },
         ]}
       />

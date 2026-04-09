@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, Eye, BarChart3, Users, Star, ArrowRight, Phone, Shield, MessageSquare, Award } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { sanRamonCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -25,11 +25,13 @@ const SanRamonCA = () => {
         <meta name="description" content="GrowSmallBiz is San Ramon's local digital marketing agency for service businesses. One integrated system: Local SEO, Google Ads, AI automation, reputation management. Get your free strategy session." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/san-ramon-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing San Ramon CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="San Ramon"
+        stateCode="CA"
         description="GrowSmallBiz is San Ramon's local digital marketing agency for service businesses. One integrated system: Local SEO, Google Ads, AI automation, reputation management."
         url="/locations/san-ramon-ca/"
+        latitude={37.7799}
+        longitude={-121.9780}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "San Ramon, CA", url: "/locations/san-ramon-ca/" },

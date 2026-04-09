@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { danvilleCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -29,11 +29,13 @@ const DanvilleCA = () => {
         />
         <link rel="canonical" href="https://growsmallbiz.io/locations/danville-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Agency in Danville, CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Danville"
+        stateCode="CA"
         description="GrowSmallBiz is Danville's hometown digital marketing agency for local service businesses. Local SEO, Google Ads, reputation management & AI automation."
         url="/locations/danville-ca/"
+        latitude={37.8216}
+        longitude={-121.9999}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Danville, CA", url: "/locations/danville-ca/" },

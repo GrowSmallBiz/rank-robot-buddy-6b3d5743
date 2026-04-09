@@ -2,7 +2,7 @@ import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { GoogleColoredText } from "@/components/GoogleColoredText";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -165,13 +165,13 @@ const Roofers = () => {
         />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="Real Results for Roofing Contractors — Not Projections"
+      <ArticleJsonLd
+        headline="Real Results for Roofing Contractors — Not Projections"
         description="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns."
         url="/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/"
+        datePublished="2025-01-15"
         breadcrumbs={[
-          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Home Service Contractors", url: "/home-service-contractors/" },
           { name: "Roofers", url: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" },
         ]}
       />

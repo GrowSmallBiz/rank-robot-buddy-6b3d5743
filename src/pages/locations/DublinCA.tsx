@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { MapPin, TrendingUp, Briefcase, Globe, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, Eye, BarChart3, Users, Star, ArrowRight, Phone, Shield, MessageSquare, Award } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { dublinCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { PersonCTA, CardCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -25,11 +25,13 @@ const DublinCA = () => {
         <meta name="description" content="GrowSmallBiz is Dublin's Tri-Valley digital marketing agency for local service businesses. Local SEO, Google Ads, AI automation, reputation management. Get your free strategy session." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/dublin-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Dublin CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Dublin"
+        stateCode="CA"
         description="GrowSmallBiz is Dublin's Tri-Valley digital marketing agency for local service businesses. Local SEO, Google Ads, AI automation, reputation management."
         url="/locations/dublin-ca/"
+        latitude={37.7022}
+        longitude={-121.9358}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Dublin, CA", url: "/locations/dublin-ca/" },

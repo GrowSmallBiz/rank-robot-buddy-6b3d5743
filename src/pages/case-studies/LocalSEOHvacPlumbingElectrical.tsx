@@ -2,7 +2,7 @@ import { Head } from "vite-react-ssg";
 import { GoogleColoredText } from "@/components/GoogleColoredText";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -139,13 +139,13 @@ const LocalSEOHvacPlumbingElectrical = () => {
         />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="Real Results for HVAC, Plumbing & Electrical Contractors — Not Projections"
+      <ArticleJsonLd
+        headline="Real Results for HVAC, Plumbing & Electrical Contractors — Not Projections"
         description="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and Google PPC campaigns."
         url="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/"
+        datePublished="2025-01-15"
         breadcrumbs={[
-          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Home Service Contractors", url: "/home-service-contractors/" },
           { name: "HVAC, Plumbing & Electrical", url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" },
         ]}
       />

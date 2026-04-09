@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, TrendingUp } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { pleasantHillCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -25,11 +25,13 @@ const PleasantHillCA = () => {
         <meta name="description" content="GrowSmallBiz helps Pleasant Hill local service businesses rank higher, generate more leads, and grow faster with AI-powered digital marketing. Schedule your free strategy call today." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/pleasant-hill-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Agency in Pleasant Hill, CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Pleasant Hill"
+        stateCode="CA"
         description="GrowSmallBiz helps Pleasant Hill local service businesses rank higher, generate more leads, and grow faster with AI-powered digital marketing."
         url="/locations/pleasant-hill-ca/"
+        latitude={37.9483}
+        longitude={-122.0608}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Pleasant Hill, CA", url: "/locations/pleasant-hill-ca/" },

@@ -2,7 +2,7 @@ import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { GoogleColoredText } from "@/components/GoogleColoredText";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import {
   TrendingUp,
@@ -62,15 +62,15 @@ const DentalCaseStudy = () => {
         <meta name="description" content="Documented Google Ads results for a dental practice — conversions, cost-per-acquisition, conversion rate, and CTR improvements year-over-year." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="Real Results for Dental Practices — Not Projections"
-        description="Documented Google Ads results for a dental practice."
+      <ArticleJsonLd
+        headline="Real Results for Dental Practices — Not Projections"
+        description="Documented Google Ads results for a dental practice — conversions, cost-per-acquisition, conversion rate, and CTR improvements year-over-year."
         url="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/"
+        datePublished="2025-01-15"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
           { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists/" },
-          { name: "Case Studies", url: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" },
+          { name: "Case Study", url: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" },
         ]}
       />
       <Header />

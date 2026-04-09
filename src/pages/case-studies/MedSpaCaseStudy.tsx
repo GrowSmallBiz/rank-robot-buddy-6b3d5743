@@ -2,7 +2,7 @@ import { Head } from "vite-react-ssg";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { GoogleColoredText } from "@/components/GoogleColoredText";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
@@ -112,15 +112,15 @@ const MedSpaCaseStudy = () => {
         <meta name="description" content="Documented AI SEO and Google Ads results for med spa clients — organic traffic growth, keyword rankings, Google Business Profile performance, cost-per-lead, and conversion metrics." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="Real Results for Med Spa Businesses — Not Projections"
+      <ArticleJsonLd
+        headline="Real Results for Med Spa Businesses — Not Projections"
         description="Documented AI SEO and Google Ads results for med spa clients."
         url="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/"
+        datePublished="2025-01-15"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
           { name: "Med Spa Marketing", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
-          { name: "Case Studies", url: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" },
+          { name: "Case Study", url: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" },
         ]}
       />
       <Header />

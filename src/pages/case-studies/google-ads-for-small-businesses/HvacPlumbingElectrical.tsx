@@ -2,7 +2,7 @@ import { Head } from "vite-react-ssg";
 import { GoogleColoredText } from "@/components/GoogleColoredText";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { ArticleJsonLd } from "@/components/seo/ArticleJsonLd";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -72,15 +72,15 @@ const GoogleAdsHvacPlumbingElectrical = () => {
         />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" />
       </Head>
-      <PageJsonLd
-        pageType="WebPage"
-        name="How Google Ads Filled the Calendars of HVAC, Plumbing & Electrical Contractors Businesses"
+      <ArticleJsonLd
+        headline="How Google Ads Filled the Calendars of HVAC, Plumbing & Electrical Contractors"
         description="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses."
         url="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/"
+        datePublished="2025-01-15"
         breadcrumbs={[
-          { name: "Case Studies", url: "/home-service-contractors/" },
+          { name: "Home Service Contractors", url: "/home-service-contractors/" },
           { name: "Google Ads", url: "/home-service-contractors/marketing-for-hvac-contractors/" },
-          { name: "HVAC, Plumbing & Electrical", url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" },
+          { name: "HVAC Google Ads Case Study", url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" },
         ]}
       />
       <Header />

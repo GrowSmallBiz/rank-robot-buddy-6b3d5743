@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight, Phone, Shield, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, TrendingUp, Star, Users, MessageSquare, Eye, BarChart3 } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { pleasantonCards } from "@/components/locations/campaignCardData";
-import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
@@ -26,11 +26,13 @@ const PleasantonCA = () => {
         <meta name="description" content="GrowSmallBiz serves Pleasanton's two ZIP codes with integrated digital marketing for local service businesses. Local SEO, Google Ads, AI automation, reputation management. Get your free strategy session." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/pleasanton-ca/" />
       </Head>
-      <ServiceJsonLd
-        serviceName="Digital Marketing Agency in Pleasanton, CA"
-        serviceType="Digital Marketing"
+      <LocationJsonLd
+        cityName="Pleasanton"
+        stateCode="CA"
         description="GrowSmallBiz serves Pleasanton's two ZIP codes with integrated digital marketing for local service businesses. Local SEO, Google Ads, AI automation, reputation management."
         url="/locations/pleasanton-ca/"
+        latitude={37.6624}
+        longitude={-121.8747}
         breadcrumbs={[
           { name: "Locations We Serve", url: "/locations/locations-we-serve/" },
           { name: "Pleasanton, CA", url: "/locations/pleasanton-ca/" },

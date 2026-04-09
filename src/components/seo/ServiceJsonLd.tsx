@@ -28,7 +28,7 @@ export const ServiceJsonLd = ({
     serviceType,
     url: `${BASE_URL}${url}${url.endsWith('/') ? '' : '/'}`,
     provider: {
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       name: "GrowSmallBiz Digital Marketing",
       url: BASE_URL,
       telephone: "+1-925-886-3724",
