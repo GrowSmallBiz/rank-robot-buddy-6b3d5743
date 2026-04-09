@@ -32,7 +32,10 @@ import {
   Megaphone,
   Globe,
   XCircle,
-  Gift
+  Gift,
+  Sparkles,
+  DoorOpen,
+  FileBarChart
 } from "lucide-react";
 import { useUtm } from "@/hooks/use-utm";
 
