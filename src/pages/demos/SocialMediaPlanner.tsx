@@ -16,7 +16,7 @@ export default function SocialMediaPlannerDemo() {
       <VideoJsonLd
         name="Social Media Planner Demo"
         description="Plan and schedule weeks of social content in minutes. Keep your business visible online without the daily grind."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697d2002ec939081dee944.mp4"
         uploadDate="2025-01-15"
       />

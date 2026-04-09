@@ -17,7 +17,7 @@ export default function SalesFunnelsDemo() {
       <VideoJsonLd
         name="Sales Funnels Demo"
         description="Build landing pages and sales sequences that move prospects from first click to booked job."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697bd00f8a085fea630af5.mp4"
         uploadDate="2025-01-15"
       />

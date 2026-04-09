@@ -18,7 +18,7 @@ export default function CallTrackingDemo() {
       <VideoJsonLd
         name="Call Tracking Demo"
         description="Know which ads and channels are actually driving calls. Track, record, and analyze every call to optimize your marketing spend."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/SwP9BuV0qUOPa58lqK1y/media/649b4a9fc681295ac4876614.mp4"
         uploadDate="2025-01-15"
       />

@@ -17,7 +17,7 @@ export default function WebchatDemo() {
       <VideoJsonLd
         name="Webchat Demo"
         description="Convert website visitors into leads with live chat and AI chatbots."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697cdbbd180f262a3725d9.mp4"
         uploadDate="2025-01-15"
       />

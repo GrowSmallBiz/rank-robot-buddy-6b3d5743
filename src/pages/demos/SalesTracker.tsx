@@ -17,7 +17,7 @@ export default function SalesTrackerDemo() {
       <VideoJsonLd
         name="Sales Tracker Demo"
         description="Know exactly which deals are ready to close and where revenue is leaking — all in one visual pipeline."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/SwP9BuV0qUOPa58lqK1y/media/649b45f974a73015f562f32f.mp4"
         uploadDate="2025-01-15"
       />

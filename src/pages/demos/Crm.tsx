@@ -17,7 +17,7 @@ export default function CrmDemo() {
       <VideoJsonLd
         name="CRM Demo"
         description="Never let a lead slip through the cracks. GrowSmallBiz CRM tracks every customer, prospect, and job from first contact to closed deal."
-        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.webp"
         contentUrl="https://storage.googleapis.com/msgsndr/SwP9BuV0qUOPa58lqK1y/media/649b4a9fc681291412876613.mp4"
         uploadDate="2025-01-15"
       />
