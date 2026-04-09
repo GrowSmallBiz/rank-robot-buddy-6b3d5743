@@ -8,8 +8,8 @@ export default function WorkflowAutomationsDemo() {
   return (
     <>
       <Head>
-        <title>Workflow Automations Demo | GrowSmallBiz</title>
-        <meta name="description" content="See how GrowSmallBiz Workflow Automations simplify your business by automating repetitive tasks." />
+        <title>Workflow Automations Demo for Small Businesses | GrowSmallBiz</title>
+        <meta name="description" content="Stop doing the same tasks over and over. GrowSmallBiz Workflow Automations handle your follow-ups, reminders, and handoffs so you can focus on the work." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/workflow-automations/" />
       </Head>
       <Header />

@@ -8,7 +8,7 @@ export default function FormsSurveysDemo() {
   return (
     <>
       <Head>
-        <title>Forms & Surveys Demo | GrowSmallBiz</title>
+        <title>Forms & Surveys Demo for Small Businesses | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Forms & Surveys help you capture leads and collect valuable customer data." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/forms-surveys/" />
       </Head>
@@ -21,7 +21,7 @@ export default function FormsSurveysDemo() {
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-4">FORMS BUILDER</p>
                 <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
-                  Create Forms For Anything
+                  Turn Every Website Visit Into a Lead With Smart Forms and Surveys
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Create forms that you can integrate into websites or landing pages that you have built. Customize your form's layout, use custom fields, custom CSS, all the features you want in a form to capture the lead info you need for your nurture campaign.

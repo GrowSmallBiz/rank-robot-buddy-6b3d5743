@@ -8,7 +8,7 @@ export default function CalendarSchedulingDemo() {
   return (
     <>
       <Head>
-        <title>Calendar Scheduling Demo | GrowSmallBiz</title>
+        <title>Calendar Scheduling Demo for Small Businesses | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Calendar Scheduling automates appointment booking and reduces no-shows." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/calendar-scheduling/" />
       </Head>
@@ -16,7 +16,7 @@ export default function CalendarSchedulingDemo() {
       <main id="main-content" className="pt-20">
         <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Easy Scheduling Ahead</h1>
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Fill Your Calendar and Cut No-Shows With Smart Appointment Scheduling</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">GrowSmallBiz is your scheduling automation platform for eliminating the back-and-forth emails to find the perfect time — and so much more.</p>
             <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_hsl(var(--ghl-card-border)/0.3)] border-2 border-[hsl(var(--ghl-card-border))] mb-8">
               <video controls className="w-full" preload="metadata" playsInline>
