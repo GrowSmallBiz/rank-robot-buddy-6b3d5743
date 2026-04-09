@@ -95,8 +95,8 @@ export const FaqSection = ({ config }: FaqSectionProps) => {
                 className="w-full bg-gradient-to-r from-[hsl(199_89%_48%)] to-primary text-white rounded-full border-none hover:shadow-[0_0_30px_rgba(255,127,80,0.5),0_0_60px_rgba(255,127,80,0.3)] hover:scale-105 transition-all duration-300"
                 asChild
               >
-                <Link to="/contact">
-                  Schedule a Demo
+                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
+                  Schedule Strategy Call
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>

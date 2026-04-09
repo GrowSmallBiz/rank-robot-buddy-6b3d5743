@@ -23,7 +23,7 @@ export const StickyCardCTA = ({
   title,
   description,
   buttonText = "Schedule Strategy Call",
-  buttonHref = "/contact/",
+  buttonHref = "https://lp.growsmallbiz.io/digital-growth-strategy-session",
   accentWords = [],
   showAfterScroll = 600,
 }: StickyCardCTAProps) => {

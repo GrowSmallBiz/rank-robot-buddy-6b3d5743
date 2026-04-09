@@ -32,8 +32,8 @@ export const CaseStudySection = ({
   caseStudies,
   title = "Real Results, Real Businesses",
   subtitle = "See how we've helped businesses like yours achieve measurable growth",
-  ctaLink = "/contact/",
-  ctaText = "Get Results Like These"
+  ctaLink = "https://lp.growsmallbiz.io/digital-growth-strategy-session",
+  ctaText = "Schedule Strategy Call"
 }: CaseStudySectionProps) => {
   return (
     <section className="py-24 relative">

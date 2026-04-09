@@ -106,7 +106,7 @@ export const blankConfig: NicheConfig = {
   heroSubheadline: "TODO: Describe your value proposition in 1–2 sentences.",
 
   /** Primary CTA button label */
-  primaryCtaLabel: "Book a Free Strategy Call",
+  primaryCtaLabel: "Schedule Strategy Call",
 
   /** Secondary CTA (anchor link) */
   secondaryCtaLabel: "See What's Included",
