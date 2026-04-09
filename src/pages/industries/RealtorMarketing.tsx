@@ -383,7 +383,7 @@ const RealtorMarketing = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
                 <Button variant="hero" size="xl" asChild>
                   <a href={strategySessionUrl}>
-                    Get Your Free Realtor Marketing Assessment
+                    Schedule Strategy Call
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
@@ -446,7 +446,7 @@ const RealtorMarketing = () => {
               </p>
               <Button variant="hero" size="lg" asChild>
                 <a href={strategySessionUrl}>
-                  Get Your Free Marketing Assessment
+                  Schedule Strategy Call
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
@@ -829,7 +829,7 @@ const RealtorMarketing = () => {
             tagline: "Let's build your lead generation machine.",
             name: "Subrata Guha",
             role: "Founder, GrowSmallBiz",
-            buttonText: "Get Your Free Assessment →",
+            buttonText: "Schedule Strategy Call",
             buttonHref: strategySessionUrl,
             image: subrataHeadshot
           }}
@@ -861,7 +861,7 @@ const RealtorMarketing = () => {
                     </p>
                     <Button variant="hero" size="xl" asChild>
                       <a href={strategySessionUrl}>
-                        Get Your Free Realtor Marketing Assessment
+                        Schedule Strategy Call
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </a>
                     </Button>
