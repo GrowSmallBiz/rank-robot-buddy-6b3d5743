@@ -58,10 +58,10 @@ import realtorOpenHouseImg from "@/assets/realtor-open-house.jpg";
 import realtorReferralTrackingImg from "@/assets/realtor-referral-tracking.jpg";
 import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 
-// ── Service cards organized by group ──
+// ── Service cards organized by 5-stage funnel ──
 
-// Group 1 — Website
-const websiteServices = [
+// Stage 1 — Attract
+const attractServices = [
   {
     id: "website",
     icon: Home,
@@ -72,31 +72,9 @@ const websiteServices = [
     image: realtorWebsiteImg
   },
   {
-    id: "lead-gen",
-    icon: Target,
-    title: "Lead Generation Tools",
-    description: "Capture buyer and seller leads with high-converting funnels and landing pages.",
-    features: ["Property Valuation Pages", "Buyer/Seller Lead Funnels", "Seller CMA Reports", "Social Media Ad Integration", "Landing Page Builder", "QR Code Property Flyers", "Open House Sign-in Forms"],
-    color: "green",
-    image: realtorLeadGenImg
-  },
-  {
-    id: "idx-addons",
-    icon: Calculator,
-    title: "IDX Add-ons & Enhancements",
-    description: "Powerful tools to enhance your property search and keep visitors engaged.",
-    features: ["Mortgage Calculator Widget", "School District Maps", "Sold Data Display", "Market Statistics", "Saved Search Alerts", "Zestimate Lookup"],
-    color: "amber",
-    image: realtorIdxAddonsImg
-  }
-];
-
-// Group 2 — Online Visibility
-const visibilityServices = [
-  {
     id: "seo",
     icon: Search,
-    title: "AI SEO Optimization",
+    title: "AI SEO for Realtors",
     description: "Dominate local search results with AI-powered SEO strategies tailored for real estate.",
     features: ["Local Keyword Optimization", "Google Business Profile Management", "Content Strategy & Blog Posts", "Backlink Building", "Technical SEO Audits", "Competitor Analysis"],
     color: "teal",
@@ -104,7 +82,7 @@ const visibilityServices = [
   },
   {
     id: "ai-search-visibility",
-    icon: Globe,
+    icon: Sparkles,
     title: "AI Search Visibility",
     description: "Get recommended when buyers and sellers ask ChatGPT, Google AI, Gemini, or Perplexity for realtor recommendations in your market.",
     features: ["GEO & AEO Optimization", "Brand Mention Tracking", "AI Citation Building", "Review Volume & Consistency Strategy", "Platform Authority Signals", "Competitive AI Positioning"],
@@ -131,17 +109,48 @@ const visibilityServices = [
   }
 ];
 
-// Group 3 — CRM & Marketing Automation
-const crmServices = [
+// Stage 2 — Capture
+const captureServices = [
   {
-    id: "crm",
-    icon: Database,
-    title: "Realtor AI Growth System",
-    description: "All-in-one CRM with automated follow-ups, pipeline management, and AI conversations.",
-    features: ["Smart Lead Routing", "Automated Follow-ups (SMS, Email, Voicemail)", "Pipeline Management", "Appointment Scheduling", "AI-Powered Conversations", "Missed Call Text-Back"],
-    color: "violet",
-    image: realtorCrmImg
+    id: "lead-gen",
+    icon: Target,
+    title: "Lead Generation Tools",
+    description: "Capture buyer and seller leads with high-converting funnels and landing pages.",
+    features: ["Property Valuation Pages", "Buyer/Seller Lead Funnels", "Seller CMA Reports", "Social Media Ad Integration", "Landing Page Builder", "QR Code Property Flyers", "Open House Sign-in Forms"],
+    color: "green",
+    image: realtorLeadGenImg
   },
+  {
+    id: "idx-addons",
+    icon: Calculator,
+    title: "IDX Add-ons & Enhancements",
+    description: "Powerful tools to enhance your property search and keep visitors engaged.",
+    features: ["Mortgage Calculator Widget", "School District Maps", "Sold Data Display", "Market Statistics", "Saved Search Alerts", "Zestimate Lookup"],
+    color: "amber",
+    image: realtorIdxAddonsImg
+  },
+  {
+    id: "ai-receptionist",
+    icon: Phone,
+    title: "AI Receptionist",
+    description: "Never miss a call again. AI answers, qualifies leads, and books appointments 24/7.",
+    features: ["24/7 Call Answering", "Lead Qualification", "Voice AI for Buyer Property Inquiries", "Appointment Scheduling", "Call Transcription & Summaries", "CRM Integration", "Missed Call Text-Back"],
+    color: "violet",
+    image: realtorAiReceptionistImg
+  },
+  {
+    id: "conversational-ai",
+    icon: Bot,
+    title: "Conversational AI",
+    description: "Intelligent chatbots that engage visitors, answer property questions, and capture leads.",
+    features: ["Website Chat Widget", "Property Q&A Automation", "Lead Capture & Routing", "Multi-language Support", "SMS & Messenger Integration", "Handoff to Human Agent"],
+    color: "cyan",
+    image: realtorConversationalAiImg
+  }
+];
+
+// Stage 3 — Nurture
+const nurtureServices = [
   {
     id: "idx-integration",
     icon: RefreshCw,
@@ -161,44 +170,21 @@ const crmServices = [
     image: realtorMarketingImg
   },
   {
-    id: "market-reports",
-    icon: TrendingUp,
-    title: "Automated Market Reports",
-    description: "Every contact receives a branded monthly market report automatically — keeping your name in front of buyers, sellers, and past clients without any manual work.",
-    features: ["Branded Monthly Market Reports", "Past Client Re-engagement", "Market Trend & Price Alerts", "Automated Distribution to Full Database", "Neighborhood-Specific Data", "Year-over-Year Comparisons"],
-    color: "teal",
-    image: realtorMarketReportsImg
-  },
-  {
-    id: "ai-receptionist",
-    icon: Phone,
-    title: "AI Receptionist",
-    description: "Never miss a call again. AI answers, qualifies leads, and books appointments 24/7.",
-    features: ["24/7 Call Answering", "Lead Qualification", "Voice AI for Buyer Property Inquiries", "Appointment Scheduling", "Call Transcription & Summaries", "CRM Integration", "Missed Call Text-Back"],
+    id: "crm",
+    icon: Database,
+    title: "Realtor AI Growth System",
+    description: "All-in-one CRM with automated follow-ups, pipeline management, and AI conversations.",
+    features: ["Smart Lead Routing", "Automated Follow-ups (SMS, Email, Voicemail)", "Pipeline Management", "Appointment Scheduling", "AI-Powered Conversations", "Missed Call Text-Back"],
     color: "violet",
-    image: realtorAiReceptionistImg
-  },
-  {
-    id: "conversational-ai",
-    icon: Bot,
-    title: "Conversational AI",
-    description: "Intelligent chatbots that engage visitors, answer property questions, and capture leads.",
-    features: ["Website Chat Widget", "Property Q&A Automation", "Lead Capture & Routing", "Multi-language Support", "SMS & Messenger Integration", "Handoff to Human Agent"],
-    color: "cyan",
-    image: realtorConversationalAiImg
-  },
-  {
-    id: "reputation",
-    icon: Star,
-    title: "Reputation & Reviews",
-    description: "Build a 5-star online reputation that attracts referrals and builds trust.",
-    features: ["Google Review Management", "Testimonial Collection", "Review Response Automation", "Rating Widgets for Website"],
-    color: "emerald",
-    image: realtorReputationImg
-  },
+    image: realtorCrmImg
+  }
+];
+
+// Stage 4 — Close
+const closeServices = [
   {
     id: "open-house",
-    icon: Users,
+    icon: DoorOpen,
     title: "Open House Prospect Capture",
     description: "Digital sign-in routes every open house visitor into your nurture system automatically. No paper sign-in sheets that never get followed up.",
     features: ["Digital Open House Sign-in", "Auto CRM Entry & Tagging", "Instant Follow-up Sequence", "GHL Workflow Integration", "Visitor Analytics Dashboard", "Multi-Property Event Tracking"],
@@ -206,20 +192,44 @@ const crmServices = [
     image: realtorOpenHouseImg
   },
   {
+    id: "reputation",
+    icon: Star,
+    title: "Reputation & Reviews",
+    description: "Systematic review collection after every closing, AI-powered responses to Google reviews, and a reputation that converts browsers into booked consultations.",
+    features: ["Google Review Management", "Testimonial Collection", "Review Response Automation", "Rating Widgets for Website"],
+    color: "emerald",
+    image: realtorReputationImg
+  }
+];
+
+// Stage 5 — Retain & Grow
+const retainServices = [
+  {
     id: "referral-tracking",
-    icon: Heart,
+    icon: Gift,
     title: "Referral Tracking & Rewards",
     description: "Track who sends referrals, reward them automatically, and build a referral engine that generates warm pre-sold leads without cold outreach.",
     features: ["Referral Source Tracking", "Automated Reward Triggers", "Past Client Referral Campaigns", "Referral Pipeline Reporting", "Custom Reward Tiers", "Attribution Analytics"],
     color: "orange",
     image: realtorReferralTrackingImg
+  },
+  {
+    id: "market-reports",
+    icon: FileBarChart,
+    title: "Automated Market Reports",
+    description: "Every past client and active lead receives a branded monthly market report automatically — keeping your name in front of your entire database without any manual work.",
+    features: ["Branded Monthly Market Reports", "Past Client Re-engagement", "Market Trend & Price Alerts", "Automated Distribution to Full Database", "Neighborhood-Specific Data", "Year-over-Year Comparisons"],
+    color: "teal",
+    image: realtorMarketReportsImg
   }
 ];
 
-const serviceGroups = [
-  { label: "Website", icon: Home, services: websiteServices },
-  { label: "Online Visibility", icon: Globe, services: visibilityServices },
-  { label: "CRM & Marketing Automation", icon: Database, services: crmServices, introLine: "Buyers & Sellers Funnels — Automated lead nurturing paths designed specifically for buyer and seller journeys, from first inquiry to closing and beyond." },
+const stageGroups = [
+  { stage: 1, label: "Stage 1 — Attract", services: attractServices, layout: "3+2" as const },
+  { stage: 2, label: "Stage 2 — Capture", services: captureServices, layout: "3+1" as const },
+  { stage: 3, label: "Stage 3 — Nurture", services: nurtureServices, layout: "3" as const },
+  { stage: 4, label: "Stage 4 — Close", services: closeServices, layout: "2" as const },
+  { stage: 5, label: "Stage 5 — Retain & Grow", services: retainServices, layout: "2" as const },
 ];
 
 // Color configurations
