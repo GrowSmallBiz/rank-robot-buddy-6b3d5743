@@ -19,7 +19,7 @@ import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { createContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
-import heroBg from "@/assets/case-studies-hvac-hero-bg.jpg";
+import heroBg from "@/assets/case-studies-hvac-hero-bg.webp";
 
 /* ─── Summary Proof Cards ─── */
 const summaryCards = [

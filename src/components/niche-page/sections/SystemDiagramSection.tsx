@@ -1,5 +1,5 @@
 import type { NicheConfig } from "../NicheConfig";
-import predictableMarketingSystem from "@/assets/predictable-marketing-system.png";
+import predictableMarketingSystem from "@/assets/predictable-marketing-system.webp";
 
 interface SystemDiagramSectionProps {
   config: NicheConfig;

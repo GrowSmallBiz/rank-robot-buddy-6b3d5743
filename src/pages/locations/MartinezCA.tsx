@@ -1,5 +1,5 @@
 import { Header } from "@/components/layout/Header";
-import martinezHero from "@/assets/martinez-hero.jpg";
+import martinezHero from "@/assets/martinez-hero.webp";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Head } from "vite-react-ssg";

@@ -23,7 +23,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
-import healthWellnessHeroImage from "@/assets/industry-healthwellness-hero.jpg";
+import healthWellnessHeroImage from "@/assets/industry-healthwellness-hero.webp";
 import { useUtm } from "@/hooks/use-utm";
 
 const practiceTypes = [

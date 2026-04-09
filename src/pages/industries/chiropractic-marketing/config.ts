@@ -9,8 +9,8 @@ import {
   Sparkles, UserPlus, Heart, Activity,
 } from "lucide-react";
 
-import chiroHeroImage from "@/assets/industry-chiro-hero.jpg";
-import portfolioChiroWebsite from "@/assets/portfolio-chiro-website.jpg";
+import chiroHeroImage from "@/assets/industry-chiro-hero.webp";
+import portfolioChiroWebsite from "@/assets/portfolio-chiro-website.webp";
 
 export const chiropracticConfig: NicheConfig = {
   // ── Page Meta ──

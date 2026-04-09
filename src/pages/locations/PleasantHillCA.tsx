@@ -1,5 +1,5 @@
 import { Header } from "@/components/layout/Header";
-import pleasantHillHero from "@/assets/pleasant-hill-hero.jpg";
+import pleasantHillHero from "@/assets/pleasant-hill-hero.webp";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Head } from "vite-react-ssg";

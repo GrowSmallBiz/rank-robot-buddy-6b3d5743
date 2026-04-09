@@ -1,4 +1,4 @@
-import subrataHeadshot from "@/assets/subrata-guha-headshot-sm.jpg";
+import subrataHeadshot from "@/assets/subrata-guha-headshot-sm.webp";
 
 /**
  * Base contact CTA configuration with static fields.

@@ -14,16 +14,16 @@ import { Button } from "@/components/ui/button";
 import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import seoDashboardMetrics from "@/assets/seo-dashboard-metrics.png";
-import managedAiSeoHeroBg from "@/assets/managed-ai-seo-hero-bg.jpg";
-import pillarTechnicalSeo from "@/assets/pillar-technical-seo.jpg";
-import pillarOnPageSeo from "@/assets/pillar-on-page-seo.jpg";
-import pillarLocalSeo from "@/assets/pillar-local-seo.jpg";
-import pillarTopicalAuthority from "@/assets/pillar-topical-authority.jpg";
-import pillarAeo from "@/assets/pillar-aeo.jpg";
-import pillarGeo from "@/assets/pillar-geo.jpg";
-import pillarLinkBuilding from "@/assets/pillar-link-building.jpg";
-import pillarReporting from "@/assets/pillar-reporting.jpg";
+import seoDashboardMetrics from "@/assets/seo-dashboard-metrics.webp";
+import managedAiSeoHeroBg from "@/assets/managed-ai-seo-hero-bg.webp";
+import pillarTechnicalSeo from "@/assets/pillar-technical-seo.webp";
+import pillarOnPageSeo from "@/assets/pillar-on-page-seo.webp";
+import pillarLocalSeo from "@/assets/pillar-local-seo.webp";
+import pillarTopicalAuthority from "@/assets/pillar-topical-authority.webp";
+import pillarAeo from "@/assets/pillar-aeo.webp";
+import pillarGeo from "@/assets/pillar-geo.webp";
+import pillarLinkBuilding from "@/assets/pillar-link-building.webp";
+import pillarReporting from "@/assets/pillar-reporting.webp";
 import {
   Bot,
   ArrowRight,

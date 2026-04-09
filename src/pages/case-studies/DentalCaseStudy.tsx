@@ -13,7 +13,7 @@ import {
 import { PdfViewer } from "@/components/PdfViewerWrapper";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceHero } from "@/components/services/ServiceHero";
-import dentalHero from "@/assets/case-study-dental-hero.jpg";
+import dentalHero from "@/assets/case-study-dental-hero.webp";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";

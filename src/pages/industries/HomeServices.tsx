@@ -36,7 +36,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 import { BlogSection, hvacBlogPosts } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
-import homeServicesHeroImage from "@/assets/industry-homeservices-hero.jpg";
+import homeServicesHeroImage from "@/assets/industry-homeservices-hero.webp";
 import { useUtm } from "@/hooks/use-utm";
 
 const trades = [

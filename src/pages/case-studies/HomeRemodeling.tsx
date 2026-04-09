@@ -19,7 +19,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA, PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { createContactCTA } from "@/config/contactCTA";
-import heroBg from "@/assets/case-studies-home-remodeling-hero-bg.jpg";
+import heroBg from "@/assets/case-studies-home-remodeling-hero-bg.webp";
 
 /* ─── Summary Proof Cards ─── */
 const summaryCards = [

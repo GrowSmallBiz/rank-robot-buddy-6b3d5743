@@ -9,8 +9,8 @@ import {
   Sparkles, UserPlus, Heart, Stethoscope,
 } from "lucide-react";
 
-import dentalHeroImage from "@/assets/industry-dental-hero.jpg";
-import portfolioDentalWebsite from "@/assets/portfolio-dental-website.jpg";
+import dentalHeroImage from "@/assets/industry-dental-hero.webp";
+import portfolioDentalWebsite from "@/assets/portfolio-dental-website.webp";
 
 export const dentalConfig: NicheConfig = {
   // ── Page Meta ──

@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import pleasantonHero from "@/assets/pleasanton-hero.jpg";
+import pleasantonHero from "@/assets/pleasanton-hero.webp";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";

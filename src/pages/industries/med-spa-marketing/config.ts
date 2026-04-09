@@ -9,8 +9,8 @@ import {
   Sparkles, UserPlus, Heart, Palette,
 } from "lucide-react";
 
-import medSpaHeroImage from "@/assets/industry-medspa-hero.jpg";
-import portfolioMedSpaWebsite from "@/assets/portfolio-medspa-website.jpg";
+import medSpaHeroImage from "@/assets/industry-medspa-hero.webp";
+import portfolioMedSpaWebsite from "@/assets/portfolio-medspa-website.webp";
 
 export const medSpaConfig: NicheConfig = {
   // ── Page Meta ──

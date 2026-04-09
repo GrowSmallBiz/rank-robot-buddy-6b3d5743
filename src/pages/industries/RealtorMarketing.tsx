@@ -40,24 +40,24 @@ import {
 import { useUtm } from "@/hooks/use-utm";
 
 // Import images for service cards
-import industryRealtorHero from "@/assets/industry-realtor-hero.jpg";
-import realtorWebsiteImg from "@/assets/realtor-website.jpg";
-import realtorCrmImg from "@/assets/realtor-crm.jpg";
-import realtorIdxIntegrationImg from "@/assets/realtor-idx-integration.jpg";
-import realtorLeadGenImg from "@/assets/realtor-lead-gen.jpg";
-import realtorIdxAddonsImg from "@/assets/realtor-idx-addons.jpg";
-import realtorMarketingImg from "@/assets/realtor-marketing.jpg";
-import realtorReputationImg from "@/assets/realtor-reputation.jpg";
-import realtorSeoImg from "@/assets/realtor-seo.jpg";
-import realtorPaidAdsImg from "@/assets/realtor-paid-ads.jpg";
-import realtorSocialMediaImg from "@/assets/realtor-social-media.jpg";
-import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.jpg";
-import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.jpg";
-import realtorAiSearchVisibilityImg from "@/assets/realtor-ai-search-visibility.jpg";
-import realtorMarketReportsImg from "@/assets/realtor-market-reports.jpg";
-import realtorOpenHouseImg from "@/assets/realtor-open-house.jpg";
-import realtorReferralTrackingImg from "@/assets/realtor-referral-tracking.jpg";
-import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
+import industryRealtorHero from "@/assets/industry-realtor-hero.webp";
+import realtorWebsiteImg from "@/assets/realtor-website.webp";
+import realtorCrmImg from "@/assets/realtor-crm.webp";
+import realtorIdxIntegrationImg from "@/assets/realtor-idx-integration.webp";
+import realtorLeadGenImg from "@/assets/realtor-lead-gen.webp";
+import realtorIdxAddonsImg from "@/assets/realtor-idx-addons.webp";
+import realtorMarketingImg from "@/assets/realtor-marketing.webp";
+import realtorReputationImg from "@/assets/realtor-reputation.webp";
+import realtorSeoImg from "@/assets/realtor-seo.webp";
+import realtorPaidAdsImg from "@/assets/realtor-paid-ads.webp";
+import realtorSocialMediaImg from "@/assets/realtor-social-media.webp";
+import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.webp";
+import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.webp";
+import realtorAiSearchVisibilityImg from "@/assets/realtor-ai-search-visibility.webp";
+import realtorMarketReportsImg from "@/assets/realtor-market-reports.webp";
+import realtorOpenHouseImg from "@/assets/realtor-open-house.webp";
+import realtorReferralTrackingImg from "@/assets/realtor-referral-tracking.webp";
+import subrataHeadshot from "@/assets/subrata-guha-headshot.webp";
 
 // ── Service cards organized by 5-stage funnel ──
 
