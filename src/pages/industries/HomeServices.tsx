@@ -259,92 +259,62 @@ const faqs = [
   }
 ];
 
-const caseStudies = [
+const campaignResults = [
   {
-    company: "Johnson HVAC & Plumbing",
-    location: "Contra Costa County, CA",
-    industry: "HVAC & Plumbing",
-    challenge: "Page 3 on Google, heavy reliance on HomeAdvisor leads that were expensive and low quality. Missing after-hours emergency calls.",
-    timeframe: "5 months",
+    title: "HVAC & Plumbing Growth",
+    subtitle: "Local SEO Campaign",
     metrics: [
-      { label: "Monthly Leads", before: "22", after: "78", improvement: "+255%" },
-      { label: "Cost Per Lead", before: "$85", after: "$23", improvement: "-73%" },
-      { label: "Google Map Pack", before: "Not ranking", after: "Top 3", improvement: "Top 3" },
-      { label: "Monthly Revenue", before: "$45K", after: "$128K", improvement: "+184%" }
+      "+1,395.2% Phone Calls",
+      "+520% GMB Website Actions",
+      "Significant improvement for top service keywords",
+      "Core plumbing + location map pack rankings",
     ],
-    quote: "Our phone rings constantly now — the AI Receptionist handles after-hours calls perfectly.",
-    quoteName: "Mike Johnson",
-    quoteRole: "Owner, Johnson HVAC & Plumbing",
-    link: "/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/"
+    link: "/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/",
   },
   {
-    company: "Ramirez Roofing",
-    location: "Bay Area, CA",
-    industry: "Roofing",
-    challenge: "Spending $3,000/month on Angi and HomeAdvisor with a 12% close rate. No Google visibility for organic or map pack searches.",
-    timeframe: "6 months",
+    title: "Roofing Restoration Growth",
+    subtitle: "Local SEO Campaign",
     metrics: [
-      { label: "Organic Leads", before: "5/mo", after: "34/mo", improvement: "+580%" },
-      { label: "Close Rate", before: "12%", after: "38%", improvement: "+217%" },
-      { label: "Avg Job Value", before: "$4,200", after: "$7,800", improvement: "+86%" },
-      { label: "Google Reviews", before: "23", after: "89", improvement: "+287%" }
+      "+26% Organic Conversions",
+      "+76% GBP Searches",
+      "+127% GBP Views",
+      "90+ Spot Keyword Gains",
     ],
-    quote: "GrowSmallBiz replaced our HomeAdvisor leads with organic leads that close at 3x the rate.",
-    quoteName: "Carlos Ramirez",
-    quoteRole: "Owner, Ramirez Roofing",
-    link: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/"
+    link: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
   },
   {
-    company: "GreenScape Landscaping",
-    location: "Bay Area, CA",
-    industry: "Tree Care, Lawn Care & Landscaping",
-    challenge: "Relying entirely on word-of-mouth with no online presence. Zero Google visibility for high-value landscaping keywords.",
-    timeframe: "6 months",
+    title: "Tree & Lawn SEO Growth",
+    subtitle: "Local SEO Campaign",
     metrics: [
-      { label: "Organic Traffic", before: "120/mo", after: "1,450/mo", improvement: "+1,108%" },
-      { label: "Monthly Leads", before: "8", after: "42", improvement: "+425%" },
-      { label: "Google Map Pack", before: "Not ranking", after: "Top 3", improvement: "Top 3" },
-      { label: "Revenue Growth", before: "$28K/mo", after: "$67K/mo", improvement: "+139%" }
+      "+25.77% Clicks",
+      "+138.54% Impressions",
+      "1.1 Average Map Rank",
+      "+770% Phone Number Clicks",
     ],
-    quote: "We went from invisible online to the top landscaping company in our area.",
-    quoteName: "David Chen",
-    quoteRole: "Owner, GreenScape Landscaping",
-    link: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/"
+    link: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/",
   },
   {
-    company: "ProBuild Remodeling",
-    location: "East Bay, CA",
-    industry: "Home Remodeling",
-    challenge: "Low-quality leads from home improvement directories. No branded search presence for kitchen and bathroom remodeling.",
-    timeframe: "7 months",
+    title: "Home Remodeling Growth",
+    subtitle: "Local SEO Campaign",
     metrics: [
-      { label: "Organic Leads", before: "6/mo", after: "28/mo", improvement: "+367%" },
-      { label: "Avg Project Value", before: "$12K", after: "$22K", improvement: "+83%" },
-      { label: "Google Reviews", before: "15", after: "67", improvement: "+347%" },
-      { label: "Close Rate", before: "15%", after: "35%", improvement: "+133%" }
+      "+366.67% Goal Completions",
+      "+382.11% Website Clicks",
+      "+375.10% Impressions",
+      "+15% GBP Calls",
     ],
-    quote: "The quality of leads completely changed — homeowners now come to us ready to invest.",
-    quoteName: "James Park",
-    quoteRole: "Owner, ProBuild Remodeling",
-    link: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/"
+    link: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/",
   },
   {
-    company: "SparkleClean Services",
-    location: "Tri-Valley, CA",
-    industry: "Cleaning Services",
-    challenge: "Competing against national franchises with no SEO strategy. Spending heavily on Thumbtack with poor ROI.",
-    timeframe: "5 months",
+    title: "Cleaning Service SEO Growth",
+    subtitle: "Local SEO Campaign",
     metrics: [
-      { label: "Monthly Leads", before: "12", after: "55", improvement: "+358%" },
-      { label: "Cost Per Lead", before: "$65", after: "$18", improvement: "-72%" },
-      { label: "Recurring Clients", before: "25", after: "78", improvement: "+212%" },
-      { label: "Google Map Pack", before: "Not ranking", after: "Top 3", improvement: "Top 3" }
+      "+261.20% Clicks",
+      "+868.02% Impressions",
+      "+114.8% GBP Calls",
+      "+119.3% GBP Website Clicks",
     ],
-    quote: "We stopped competing on price and started winning on reputation and visibility.",
-    quoteName: "Maria Santos",
-    quoteRole: "Owner, SparkleClean Services",
-    link: "/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/"
-  }
+    link: "/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/",
+  },
 ];
 
 const HomeServices = () => {
@@ -638,19 +608,84 @@ const HomeServices = () => {
         </div>
       </section>
 
-      <CaseStudySection 
-        caseStudies={caseStudies}
-        title="Home Service Success Stories"
-        subtitle="See how we've helped contractors build predictable lead pipelines"
-        ctaLink={strategySessionUrl}
-        ctaText="Get Results Like These"
-      />
+      {/* Home Service Success Stories — Campaign Result Cards */}
+      <section className="py-24 relative">
+        <div className="absolute inset-0 section-glow" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+              Home Service Success Stories
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              See how we've helped contractors build predictable lead pipelines
+            </p>
+          </div>
 
-      <TestimonialsSection 
-        testimonials={testimonials}
-        title="What Contractors Say"
-        subtitle="See how home service businesses are growing with GrowSmallBiz"
-      />
+          {/* Aggregate Stats Bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+            {results.map((result, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">{result.metric}</div>
+                <p className="text-muted-foreground">{result.label}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {campaignResults.map((campaign, index) => (
+              <div
+                key={index}
+                className="bg-card border border-border rounded-2xl overflow-hidden card-hover flex flex-col"
+              >
+                {/* Header */}
+                <div className="bg-gradient-primary p-6">
+                  <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
+                    Campaign Results
+                  </span>
+                  <h3 className="text-xl font-display font-bold text-primary-foreground mt-2 mb-1">
+                    {campaign.title}
+                  </h3>
+                  <p className="text-sm text-primary-foreground/70">
+                    {campaign.subtitle}
+                  </p>
+                </div>
+
+                {/* Metrics */}
+                <div className="p-6 flex-1">
+                  <div className="space-y-3">
+                    {campaign.metrics.map((metric, mIndex) => (
+                      <div key={mIndex} className="flex items-start gap-3">
+                        <TrendingUp className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-foreground font-medium">{metric}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Link */}
+                <div className="px-6 pb-6">
+                  <Link
+                    to={campaign.link}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    View Case Studies
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button variant="hero" size="lg" asChild>
+              <a href={strategySessionUrl}>
+                Get Results Like These
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       <FAQSection 
         faqs={faqs}
