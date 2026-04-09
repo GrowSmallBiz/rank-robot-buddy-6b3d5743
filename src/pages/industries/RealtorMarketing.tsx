@@ -49,12 +49,47 @@ import realtorPaidAdsImg from "@/assets/realtor-paid-ads.jpg";
 import realtorSocialMediaImg from "@/assets/realtor-social-media.jpg";
 import realtorAiReceptionistImg from "@/assets/realtor-ai-receptionist.jpg";
 import realtorConversationalAiImg from "@/assets/realtor-conversational-ai.jpg";
+import realtorAiSearchVisibilityImg from "@/assets/realtor-ai-search-visibility.jpg";
+import realtorMarketReportsImg from "@/assets/realtor-market-reports.jpg";
+import realtorOpenHouseImg from "@/assets/realtor-open-house.jpg";
+import realtorReferralTrackingImg from "@/assets/realtor-referral-tracking.jpg";
 import subrataHeadshot from "@/assets/subrata-guha-headshot.jpg";
 
-// ── Service cards organized by funnel stage ──
+// ── Service cards organized by group ──
 
-// Stage 1 — Attract
-const attractServices = [
+// Group 1 — Website
+const websiteServices = [
+  {
+    id: "website",
+    icon: Home,
+    title: "Real Estate Website",
+    description: "Professional IDX-integrated website that showcases listings and captures leads 24/7.",
+    features: ["IDX Property Search Integration", "MLS Listing Sync", "Lead Capture Forms", "Mobile-Responsive Design", "Agent/Team Profiles", "Neighborhood Pages"],
+    color: "blue",
+    image: realtorWebsiteImg
+  },
+  {
+    id: "lead-gen",
+    icon: Target,
+    title: "Lead Generation Tools",
+    description: "Capture buyer and seller leads with high-converting funnels and landing pages.",
+    features: ["Property Valuation Pages", "Buyer/Seller Lead Funnels", "Seller CMA Reports", "Social Media Ad Integration", "Landing Page Builder", "QR Code Property Flyers", "Open House Sign-in Forms"],
+    color: "green",
+    image: realtorLeadGenImg
+  },
+  {
+    id: "idx-addons",
+    icon: Calculator,
+    title: "IDX Add-ons & Enhancements",
+    description: "Powerful tools to enhance your property search and keep visitors engaged.",
+    features: ["Mortgage Calculator Widget", "School District Maps", "Sold Data Display", "Market Statistics", "Saved Search Alerts", "Zestimate Lookup"],
+    color: "amber",
+    image: realtorIdxAddonsImg
+  }
+];
+
+// Group 2 — Online Visibility
+const visibilityServices = [
   {
     id: "seo",
     icon: Search,
@@ -81,46 +116,24 @@ const attractServices = [
     features: ["Content Calendar Management", "Property Showcase Posts", "Market Update Graphics", "Community Engagement", "Story & Reel Creation", "Brand Voice Development"],
     color: "indigo",
     image: realtorSocialMediaImg
+  },
+  {
+    id: "ai-search-visibility",
+    icon: Globe,
+    title: "AI Search Visibility",
+    description: "Get recommended when buyers and sellers ask ChatGPT, Google AI, Gemini, or Perplexity for realtor recommendations in your market.",
+    features: ["GEO & AEO Optimization", "Brand Mention Tracking", "AI Citation Building", "Review Volume & Consistency Strategy", "Platform Authority Signals", "Competitive AI Positioning"],
+    color: "violet",
+    image: realtorAiSearchVisibilityImg
   }
 ];
 
-// Stage 2 — Capture
-const captureServices = [
-  {
-    id: "website",
-    icon: Home,
-    title: "Real Estate Website",
-    description: "Professional IDX-integrated website that showcases listings and captures leads 24/7.",
-    features: ["IDX Property Search Integration", "MLS Listing Sync", "Lead Capture Forms", "Mobile-Responsive Design", "Agent/Team Profiles", "Neighborhood Pages"],
-    color: "blue",
-    image: realtorWebsiteImg
-  },
-  {
-    id: "lead-gen",
-    icon: Target,
-    title: "Lead Generation Tools",
-    description: "Capture buyer and seller leads with high-converting funnels and landing pages.",
-    features: ["Property Valuation Pages", "Buyer/Seller Lead Funnels", "Social Media Ad Integration", "Landing Page Builder", "QR Code Property Flyers", "Open House Sign-in Forms"],
-    color: "green",
-    image: realtorLeadGenImg
-  },
-  {
-    id: "idx-addons",
-    icon: Calculator,
-    title: "IDX Add-ons & Enhancements",
-    description: "Powerful tools to enhance your property search and keep visitors engaged.",
-    features: ["Mortgage Calculator Widget", "School District Maps", "Sold Data Display", "Market Statistics", "Saved Search Alerts", "Zestimate Lookup"],
-    color: "amber",
-    image: realtorIdxAddonsImg
-  }
-];
-
-// Stage 3 — Nurture
-const nurtureServices = [
+// Group 3 — CRM & Marketing Automation
+const crmServices = [
   {
     id: "crm",
     icon: Database,
-    title: "CRM & Marketing Automation",
+    title: "Realtor AI Growth System",
     description: "All-in-one CRM with automated follow-ups, pipeline management, and AI conversations.",
     features: ["Smart Lead Routing", "Automated Follow-ups (SMS, Email, Voicemail)", "Pipeline Management", "Appointment Scheduling", "AI-Powered Conversations", "Missed Call Text-Back"],
     color: "violet",
@@ -131,7 +144,7 @@ const nurtureServices = [
     icon: RefreshCw,
     title: "IDX + CRM Integration",
     description: "Seamless data flow from property searches directly into your CRM for intelligent follow-up.",
-    features: ["Real-time Lead Sync", "Saved Search Tracking", "Property Activity Alerts", "Custom Field Mapping", "Unified Dashboard", "Automated Workflow Triggers"],
+    features: ["Real-time Lead Sync", "Saved Search Tracking", "White-Label Property Update Emails", "SMS Property Match Alerts", "Property Activity Alerts", "Custom Field Mapping", "Unified Dashboard", "Automated Workflow Triggers"],
     color: "cyan",
     image: realtorIdxIntegrationImg
   },
@@ -143,17 +156,22 @@ const nurtureServices = [
     features: ["Drip Email Campaigns", "Birthday/Anniversary Reminders", "Market Update Newsletters", "Listing Alert Notifications", "Review Request Automation", "Social Media Scheduling"],
     color: "pink",
     image: realtorMarketingImg
-  }
-];
-
-// Stage 4 — Close
-const closeServices = [
+  },
+  {
+    id: "market-reports",
+    icon: TrendingUp,
+    title: "Automated Market Reports",
+    description: "Every contact receives a branded monthly market report automatically — keeping your name in front of buyers, sellers, and past clients without any manual work.",
+    features: ["Branded Monthly Market Reports", "Past Client Re-engagement", "Market Trend & Price Alerts", "Automated Distribution to Full Database", "Neighborhood-Specific Data", "Year-over-Year Comparisons"],
+    color: "teal",
+    image: realtorMarketReportsImg
+  },
   {
     id: "ai-receptionist",
     icon: Phone,
     title: "AI Receptionist",
     description: "Never miss a call again. AI answers, qualifies leads, and books appointments 24/7.",
-    features: ["24/7 Call Answering", "Lead Qualification", "Appointment Scheduling", "Call Transcription & Summaries", "CRM Integration", "Missed Call Text-Back"],
+    features: ["24/7 Call Answering", "Lead Qualification", "Voice AI for Buyer Property Inquiries", "Appointment Scheduling", "Call Transcription & Summaries", "CRM Integration", "Missed Call Text-Back"],
     color: "violet",
     image: realtorAiReceptionistImg
   },
@@ -174,14 +192,31 @@ const closeServices = [
     features: ["Google Review Management", "Testimonial Collection", "Review Response Automation", "Rating Widgets for Website"],
     color: "emerald",
     image: realtorReputationImg
+  },
+  {
+    id: "open-house",
+    icon: Users,
+    title: "Open House Prospect Capture",
+    description: "Digital sign-in routes every open house visitor into your nurture system automatically. No paper sign-in sheets that never get followed up.",
+    features: ["Digital Open House Sign-in", "Auto CRM Entry & Tagging", "Instant Follow-up Sequence", "GHL Workflow Integration", "Visitor Analytics Dashboard", "Multi-Property Event Tracking"],
+    color: "green",
+    image: realtorOpenHouseImg
+  },
+  {
+    id: "referral-tracking",
+    icon: Heart,
+    title: "Referral Tracking & Rewards",
+    description: "Track who sends referrals, reward them automatically, and build a referral engine that generates warm pre-sold leads without cold outreach.",
+    features: ["Referral Source Tracking", "Automated Reward Triggers", "Past Client Referral Campaigns", "Referral Pipeline Reporting", "Custom Reward Tiers", "Attribution Analytics"],
+    color: "orange",
+    image: realtorReferralTrackingImg
   }
 ];
 
-const serviceStages = [
-  { label: "Stage 1 — Attract", services: attractServices },
-  { label: "Stage 2 — Capture", services: captureServices },
-  { label: "Stage 3 — Nurture", services: nurtureServices },
-  { label: "Stage 4 — Close", services: closeServices },
+const serviceGroups = [
+  { label: "Website", icon: Home, services: websiteServices },
+  { label: "Online Visibility", icon: Globe, services: visibilityServices },
+  { label: "CRM & Marketing Automation", icon: Database, services: crmServices, introLine: "Buyers & Sellers Funnels — Automated lead nurturing paths designed specifically for buyer and seller journeys, from first inquiry to closing and beyond." },
 ];
 
 // Color configurations
