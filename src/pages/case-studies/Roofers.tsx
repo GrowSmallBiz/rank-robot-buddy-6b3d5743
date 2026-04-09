@@ -157,7 +157,7 @@ const Roofers = () => {
   return (
     <>
       <Head>
-        <title>Case Studies for Roofing Businesses | GrowSmallBiz</title>
+        <title>Real Results for Roofing Contractors — Not Projections | GrowSmallBiz</title>
         <meta
           name="description"
           content="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
@@ -166,7 +166,7 @@ const Roofers = () => {
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Case Studies for Roofing Businesses"
+        name="Real Results for Roofing Contractors — Not Projections"
         description="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns."
         url="/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/"
         breadcrumbs={[
@@ -179,7 +179,7 @@ const Roofers = () => {
         {/* ═══ SECTION 1: HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO + PPC" }}
-          title="Case Studies for Roofing Businesses"
+          title="Real Results for Roofing Contractors — Not Projections"
           subtitle="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

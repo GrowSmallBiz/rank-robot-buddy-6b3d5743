@@ -89,13 +89,13 @@ const ChiropracticCaseStudy = () => {
   return (
     <>
       <Head>
-        <title>Chiropractic Marketing Case Studies | GrowSmallBiz Digital Marketing</title>
+        <title>Real Results for Chiropractic Practices — Not Projections | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Documented AI SEO results for a chiropractic practice — organic traffic growth, keyword rankings, Google Search Console data, and Google Business Profile performance over 5 months." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Chiropractic Marketing Case Studies"
+        name="Real Results for Chiropractic Practices — Not Projections"
         description="Documented AI SEO results for a chiropractic practice."
         url="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/"
         breadcrumbs={[
@@ -109,7 +109,7 @@ const ChiropracticCaseStudy = () => {
         {/* HERO */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO + GBP" }}
-          title="Chiropractic Marketing Case Studies"
+          title="Real Results for Chiropractic Practices — Not Projections"
           subtitle="Explore documented AI SEO results for a chiropractic practice across Google Analytics, Google Search Console, and Google Business Profile. 5-month campaign with verified data across all three measurement sources."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

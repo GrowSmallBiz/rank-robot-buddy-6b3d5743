@@ -104,7 +104,7 @@ const HomeRemodeling = () => {
   return (
     <>
       <Head>
-        <title>Case Studies for Home Remodeling Businesses | GrowSmallBiz</title>
+        <title>Real Results for Home Remodeling Contractors — Not Projections | GrowSmallBiz</title>
         <meta
           name="description"
           content="Explore documented Local SEO case study results for home remodeling and home renovation businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, conversions, and conversion-focused lead generation strategy."
@@ -113,7 +113,7 @@ const HomeRemodeling = () => {
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Case Studies for Home Remodeling Businesses"
+        name="Real Results for Home Remodeling Contractors — Not Projections"
         description="Explore documented Local SEO case study results for home remodeling and home renovation businesses."
         url="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/"
         breadcrumbs={[
@@ -126,7 +126,7 @@ const HomeRemodeling = () => {
         {/* ═══ SECTION 1: HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}
-          title="Case Studies for Home Remodeling Businesses"
+          title="Real Results for Home Remodeling Contractors — Not Projections"
           subtitle="Explore documented Local SEO case study results for home remodeling and home renovation businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, calls, conversions, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

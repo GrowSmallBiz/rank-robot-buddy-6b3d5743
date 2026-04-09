@@ -131,7 +131,7 @@ const TreeLawnLandscaping = () => {
   return (
     <>
       <Head>
-        <title>Case Studies for Tree Care, Lawn Care & Landscaping Businesses | GrowSmallBiz</title>
+        <title>Real Results for Tree Care, Lawn Care & Landscaping Companies — Not Projections Businesses | GrowSmallBiz</title>
         <meta
           name="description"
           content="Explore documented case study results for tree care, lawn care, and landscaping businesses across Local SEO and Google PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
@@ -140,7 +140,7 @@ const TreeLawnLandscaping = () => {
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Case Studies for Tree Care, Lawn Care & Landscaping Businesses"
+        name="Real Results for Tree Care, Lawn Care & Landscaping Companies — Not Projections Businesses"
         description="Explore documented case study results for tree care, lawn care, and landscaping businesses across Local SEO and Google PPC campaigns."
         url="/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/"
         breadcrumbs={[
@@ -153,7 +153,7 @@ const TreeLawnLandscaping = () => {
         {/* ═══ SECTION 1: HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO + Google PPC" }}
-          title="Case Studies for Tree Care, Lawn Care & Landscaping Businesses"
+          title="Real Results for Tree Care, Lawn Care & Landscaping Companies — Not Projections Businesses"
           subtitle="Explore documented case study results for tree care, lawn care, and landscaping businesses across Local SEO and Google PPC campaigns. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
