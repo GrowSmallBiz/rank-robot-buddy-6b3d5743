@@ -260,6 +260,7 @@ const WebsiteDesign = () => {
       <Header />
       <Head>
         <title>Website Design for Local Businesses | GrowSmallBiz</title>
+        <meta name="description" content="GrowSmallBiz designs fast, mobile-optimized websites for local service businesses — built for SEO, lead capture, and conversion. No templates. No page builders. Just results." />
         <meta
           name="description"
           content="GrowSmallBiz builds conversion-focused websites for local service businesses — designed to turn visitors into calls, bookings, and leads. Schedule a free strategy call."

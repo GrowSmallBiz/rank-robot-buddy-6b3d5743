@@ -20,6 +20,7 @@ const TracyCA = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Agency in Tracy, CA | GrowSmallBiz</title>
+        <meta name="description" content="GrowSmallBiz helps Tracy local service businesses rank higher and generate more leads with local SEO, Google Ads, website design, and AI-powered marketing automation." />
         <meta
           name="description"
           content="GrowSmallBiz serves Tracy CA local service businesses with integrated digital marketing — Local SEO, Google Ads, AI automation, reputation management. San Joaquin Valley specialists. Get your free strategy session."
