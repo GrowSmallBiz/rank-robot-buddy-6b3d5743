@@ -40,6 +40,7 @@ import {
 import { useUtm } from "@/hooks/use-utm";
 
 // Import images for service cards
+import industryRealtorHero from "@/assets/industry-realtor-hero.jpg";
 import realtorWebsiteImg from "@/assets/realtor-website.jpg";
 import realtorCrmImg from "@/assets/realtor-crm.jpg";
 import realtorIdxIntegrationImg from "@/assets/realtor-idx-integration.jpg";
@@ -361,7 +362,10 @@ const RealtorMarketing = () => {
       <main className="pt-20">
         {/* ═══ CHANGE 1 — HERO ═══ */}
         <section className="relative py-24 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-background to-violet-900/20" />
+          <div className="absolute inset-0">
+            <img src={industryRealtorHero} alt="Real estate marketing for realtors" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-background/85" />
+          </div>
           <div className="hero-glow absolute inset-0" />
 
           <div className="container mx-auto px-4 relative z-10">
