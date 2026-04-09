@@ -481,33 +481,35 @@ const RealtorMarketing = () => {
                 Zillow Premier Agent vs. GrowSmallBiz
               </h3>
 
-              <div className="bg-card border border-border rounded-2xl overflow-hidden animate-fade-up">
-                {/* Header */}
-                <div className="grid grid-cols-3 border-b border-border">
-                  <div className="p-5 font-medium text-foreground" />
-                  <div className="p-5 text-center font-bold text-muted-foreground border-x border-border bg-secondary/30">Zillow Premier Agent</div>
-                  <div className="p-5 text-center font-bold text-teal-400 bg-teal-500/5">GrowSmallBiz</div>
-                </div>
-                {/* Rows */}
-                {[
-                  ["Lead exclusivity", "❌ Shared with 3–5 agents", "✅ 100% yours"],
-                  ["Monthly cost", "❌ $500–$1,500+/mo forever", "✅ Investment that compounds"],
-                  ["Lead ownership", "❌ Zillow's database", "✅ Your database, always"],
-                  ["Lead quality", "❌ Unverified, early funnel", "✅ Inbound, high intent"],
-                  ["Brand on the lead", "❌ Zillow's brand", "✅ Your name, your brand"],
-                  ["Follow-up speed", "❌ Manual — you vs. 4 others", "✅ AI responds in seconds"],
-                  ["Automated nurturing", "❌ None", "✅ Market reports + alerts"],
-                  ["CRM included", "❌ No", "✅ Yes, built in"],
-                  ["SEO value built", "❌ Zero", "✅ Grows every month"],
-                  ["If you pause/cancel", "❌ Pipeline disappears instantly", "✅ Your assets stay with you"],
-                  ["Portability", "❌ Leads stay with Zillow", "✅ Everything goes with you"],
-                ].map(([feature, zillow, gsb], i) => (
-                  <div key={i} className="grid grid-cols-3 border-b border-border last:border-b-0 hover:bg-secondary/20 transition-colors">
-                    <div className="p-4 text-foreground font-medium text-sm">{feature}</div>
-                    <div className="p-4 text-sm text-muted-foreground border-x border-border">{zillow}</div>
-                    <div className="p-4 text-sm text-foreground">{gsb}</div>
+              <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+                <div className="bg-card border border-white/10 rounded-lg overflow-hidden animate-fade-up min-w-[540px]">
+                  {/* Header */}
+                  <div className="grid grid-cols-3 border-b-2 border-teal-400/60" style={{ backgroundColor: '#0A1E3D' }}>
+                    <div className="px-5 py-4" />
+                    <div className="px-5 py-4 text-center font-bold text-white border-x border-white/6" style={{ backgroundColor: '#0A1E3D' }}>Zillow Premier Agent</div>
+                    <div className="px-5 py-4 text-center font-bold text-teal-400" style={{ backgroundColor: '#0A1E3D' }}>GrowSmallBiz</div>
                   </div>
-                ))}
+                  {/* Rows */}
+                  {[
+                    ["Lead exclusivity", "❌ Shared with 3–5 agents", "✅ 100% yours"],
+                    ["Monthly cost", "❌ $500–$1,500+/mo forever", "✅ Investment that compounds"],
+                    ["Lead ownership", "❌ Zillow's database", "✅ Your database, always"],
+                    ["Lead quality", "❌ Unverified, early funnel", "✅ Inbound, high intent"],
+                    ["Brand on the lead", "❌ Zillow's brand", "✅ Your name, your brand"],
+                    ["Follow-up speed", "❌ Manual — you vs. 4 others", "✅ AI responds in seconds"],
+                    ["Automated nurturing", "❌ None", "✅ Market reports + alerts"],
+                    ["CRM included", "❌ No", "✅ Yes, built in"],
+                    ["SEO value built", "❌ Zero", "✅ Grows every month"],
+                    ["If you pause/cancel", "❌ Pipeline disappears instantly", "✅ Your assets stay with you"],
+                    ["Portability", "❌ Leads stay with Zillow", "✅ Everything goes with you"],
+                  ].map(([feature, zillow, gsb], i) => (
+                    <div key={i} className={`grid grid-cols-3 border-b border-white/6 last:border-b-0 hover:transition-colors duration-150`} style={{ backgroundColor: i % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.06)' }} onMouseEnter={e => e.currentTarget.style.backgroundColor = 'rgba(43,163,160,0.08)'} onMouseLeave={e => e.currentTarget.style.backgroundColor = i % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.06)'}>
+                      <div className="px-5 py-3.5 text-white font-semibold text-sm" style={{ backgroundColor: 'rgba(255,255,255,0.04)' }}>{feature}</div>
+                      <div className="px-5 py-3.5 text-sm text-muted-foreground border-x border-white/6">{zillow}</div>
+                      <div className="px-5 py-3.5 text-sm text-foreground">{gsb}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <p className="text-center mt-8 text-xl font-bold text-primary">
@@ -551,29 +553,31 @@ const RealtorMarketing = () => {
                 Broker Dependency vs. Building With GrowSmallBiz
               </h3>
 
-              <div className="bg-card border border-border rounded-2xl overflow-hidden animate-fade-up">
-                <div className="grid grid-cols-3 border-b border-border">
-                  <div className="p-5 font-medium text-foreground" />
-                  <div className="p-5 text-center font-bold text-muted-foreground border-x border-border bg-secondary/30">Broker Dependency</div>
-                  <div className="p-5 text-center font-bold text-teal-400 bg-teal-500/5">GrowSmallBiz</div>
-                </div>
-                {[
-                  ["Lead quality", "❌ Cold, unqualified, pre-screened", "✅ Inbound, motivated, intent-driven"],
-                  ["Lead exclusivity", "❌ Distributed across the office", "✅ Direct to you only"],
-                  ["Brand visibility", "❌ Broker's name first", "✅ Your name, your presence"],
-                  ["Online identity", "❌ Tied to broker's website", "✅ Your own domain and profile"],
-                  ["When you change firms", "❌ Start from zero", "✅ Take everything with you"],
-                  ["Lead nurturing", "❌ Manual, falls through cracks", "✅ Automated 24/7"],
-                  ["Market reports", "❌ Broker sends those", "✅ Your name on every one"],
-                  ["Long-term equity", "❌ Built for the brokerage", "✅ Built for you"],
-                  ["Referrals", "❌ Stay with the brokerage when you leave", "✅ Follow you permanently"],
-                ].map(([feature, broker, gsb], i) => (
-                  <div key={i} className="grid grid-cols-3 border-b border-border last:border-b-0 hover:bg-secondary/20 transition-colors">
-                    <div className="p-4 text-foreground font-medium text-sm">{feature}</div>
-                    <div className="p-4 text-sm text-muted-foreground border-x border-border">{broker}</div>
-                    <div className="p-4 text-sm text-foreground">{gsb}</div>
+              <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+                <div className="bg-card border border-white/10 rounded-lg overflow-hidden animate-fade-up min-w-[540px]">
+                  <div className="grid grid-cols-3 border-b-2 border-teal-400/60" style={{ backgroundColor: '#0A1E3D' }}>
+                    <div className="px-5 py-4" />
+                    <div className="px-5 py-4 text-center font-bold text-white border-x border-white/6" style={{ backgroundColor: '#0A1E3D' }}>Broker Dependency</div>
+                    <div className="px-5 py-4 text-center font-bold text-teal-400" style={{ backgroundColor: '#0A1E3D' }}>GrowSmallBiz</div>
                   </div>
-                ))}
+                  {[
+                    ["Lead quality", "❌ Cold, unqualified, pre-screened", "✅ Inbound, motivated, intent-driven"],
+                    ["Lead exclusivity", "❌ Distributed across the office", "✅ Direct to you only"],
+                    ["Brand visibility", "❌ Broker's name first", "✅ Your name, your presence"],
+                    ["Online identity", "❌ Tied to broker's website", "✅ Your own domain and profile"],
+                    ["When you change firms", "❌ Start from zero", "✅ Take everything with you"],
+                    ["Lead nurturing", "❌ Manual, falls through cracks", "✅ Automated 24/7"],
+                    ["Market reports", "❌ Broker sends those", "✅ Your name on every one"],
+                    ["Long-term equity", "❌ Built for the brokerage", "✅ Built for you"],
+                    ["Referrals", "❌ Stay with the brokerage when you leave", "✅ Follow you permanently"],
+                  ].map(([feature, broker, gsb], i) => (
+                    <div key={i} className={`grid grid-cols-3 border-b border-white/6 last:border-b-0 hover:transition-colors duration-150`} style={{ backgroundColor: i % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.06)' }} onMouseEnter={e => e.currentTarget.style.backgroundColor = 'rgba(43,163,160,0.08)'} onMouseLeave={e => e.currentTarget.style.backgroundColor = i % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.06)'}>
+                      <div className="px-5 py-3.5 text-white font-semibold text-sm" style={{ backgroundColor: 'rgba(255,255,255,0.04)' }}>{feature}</div>
+                      <div className="px-5 py-3.5 text-sm text-muted-foreground border-x border-white/6">{broker}</div>
+                      <div className="px-5 py-3.5 text-sm text-foreground">{gsb}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <p className="text-center mt-8 text-xl font-bold text-primary">
