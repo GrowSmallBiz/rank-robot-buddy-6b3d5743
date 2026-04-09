@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -13,6 +14,13 @@ export default function ReviewsDemo() {
         <meta name="description" content="More 5-star reviews mean more calls, more bookings, and a reputation your competitors can't touch. See how GrowSmallBiz automates the entire process." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/reviews/" />
       </Head>
+      <VideoJsonLd
+        name="Reviews Management Demo"
+        description="See how GrowSmallBiz automates 5-star review collection to build an unbeatable reputation."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697cb20f8a08e4aa6358b3.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}

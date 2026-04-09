@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -13,6 +14,13 @@ export default function WebchatDemo() {
         <meta name="description" content="See how GrowSmallBiz Webchat converts website visitors into leads with live chat and AI chatbots." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/webchat/" />
       </Head>
+      <VideoJsonLd
+        name="Webchat Demo"
+        description="Convert website visitors into leads with live chat and AI chatbots."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697cdbbd180f262a3725d9.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}

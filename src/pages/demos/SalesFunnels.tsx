@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -13,6 +14,13 @@ export default function SalesFunnelsDemo() {
         <meta name="description" content="Build landing pages and sales sequences that move prospects from first click to booked job — without needing a funnel designer." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-funnels/" />
       </Head>
+      <VideoJsonLd
+        name="Sales Funnels Demo"
+        description="Build landing pages and sales sequences that move prospects from first click to booked job."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697bd00f8a085fea630af5.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero Section */}

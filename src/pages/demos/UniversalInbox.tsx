@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -13,6 +14,13 @@ export default function UniversalInboxDemo() {
         <meta name="description" content="See how GrowSmallBiz Universal Inbox consolidates SMS, email, social media, webchat and calls into one place." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/universal-inbox/" />
       </Head>
+      <VideoJsonLd
+        name="Universal Inbox Demo"
+        description="Consolidate SMS, email, social media, webchat and calls into one unified inbox."
+        thumbnailUrl="https://growsmallbiz.io/images/growsmallbiz-logo.png"
+        contentUrl="https://storage.googleapis.com/msgsndr/4KL47iKeJZ2Ee05j7FBh/media/69697cdbbd180f262a3725d9.mp4"
+        uploadDate="2025-01-15"
+      />
       <Header />
       <main id="main-content" className="pt-20">
         {/* Hero */}
