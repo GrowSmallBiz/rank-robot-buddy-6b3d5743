@@ -28,7 +28,7 @@ export const SectionHeader = ({
 
   return (
     <div
-      className={`${centered ? "text-center" : ""} mb-16 animate-fade-up ${className}`}
+      className={`${centered ? "text-center" : ""} mb-10 animate-fade-up ${className}`}
     >
       {subtitle && <p className="section-subtitle">{subtitle}</p>}
       
