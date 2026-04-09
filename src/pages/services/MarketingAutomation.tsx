@@ -553,13 +553,14 @@ const MarketingAutomation = () => {
           subtitle="GrowSmallBiz Digital Marketing helps you capture, nurture, and close leads on autopilot through SMS, Email, Live Chat, Phone Calls, and more!"
           primaryCTA={{
             label: "Schedule a Demo",
-            href: "https://lp.growsmallbiz.io/ai-client-growth-system-demo",
+            href: buildUrl("https://lp.growsmallbiz.io/ai-client-growth-system-demo", "schedule-demo-hero"),
             external: true,
           }}
           secondaryCTA={{
             label: "See Pricing",
             href: "#pricing",
             variant: "heroOutline",
+            external: true,
           }}
           backgroundImage={heroImage}
           overlayOpacity={88}
