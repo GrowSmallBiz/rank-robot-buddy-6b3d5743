@@ -19,7 +19,7 @@ export default function UniversalInboxDemo() {
         <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
-              Universal Inbox
+              Stop Missing Messages — Every SMS, Email, Social, and Webchat Response in One Inbox
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto">
               Bring All Communication From All Channels, Into One Universal Inbox
