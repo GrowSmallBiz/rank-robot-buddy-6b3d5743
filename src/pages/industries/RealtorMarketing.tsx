@@ -536,8 +536,13 @@ const RealtorMarketing = () => {
                   <p className="text-muted-foreground mb-8 max-w-3xl">{group.introLine}</p>
                 )}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {group.services.map((service) => <ServiceCard key={service.id} service={service} />)}
+                  {group.services.slice(0, 3).map((service) => <ServiceCard key={service.id} service={service} />)}
                 </div>
+                {group.services.length > 3 && (
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 lg:max-w-[calc(66.666%+1rem)] lg:mx-auto">
+                    {group.services.slice(3).map((service) => <ServiceCard key={service.id} service={service} />)}
+                  </div>
+                )}
               </div>
             ))}
           </div>
