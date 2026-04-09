@@ -617,7 +617,7 @@ const WebsiteDesign = () => {
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <Link to="/contact/">View Industries We Serve</Link>
+              <Link to="/services/">View Industries We Serve</Link>
             </Button>
           </div>
         </div>

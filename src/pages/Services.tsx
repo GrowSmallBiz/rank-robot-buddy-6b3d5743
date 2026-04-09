@@ -76,7 +76,7 @@ const coreServices = [
       "Missed call text-back and nurture workflows that keep prospects warm",
       "Pipeline visibility and booking automation that streamlines conversion",
     ],
-    href: "/contact/",
+    href: "https://lp.growsmallbiz.io/digital-growth-strategy-session",
     icon: Bot,
   },
 ];
@@ -90,7 +90,7 @@ const accelerationServices = [
       "Social presence that reinforces trust across your full digital footprint",
       "Community-facing campaigns designed for the markets you actually serve",
     ],
-    href: "/contact/",
+    href: "https://lp.growsmallbiz.io/digital-growth-strategy-session",
     cta: "Learn More",
     icon: Megaphone,
   },
@@ -113,7 +113,7 @@ const accelerationServices = [
       "Personalized messaging built around your offer and target audience",
       "Scalable B2B prospecting without the manual time investment",
     ],
-    href: "/contact/",
+    href: "https://lp.growsmallbiz.io/digital-growth-strategy-session",
     cta: "Ask About This Service",
     icon: Users,
   },
@@ -281,9 +281,9 @@ const Services = () => {
             </p>
             <div className="flex justify-center pt-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <Button variant="hero" size="xl" asChild>
-                <Link to="/contact/">
+                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
                   Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
+                </a>
               </Button>
             </div>
             <p className="mt-6 text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.25s" }}>
@@ -394,9 +394,9 @@ const Services = () => {
               The system works better when the pieces are connected. Great Managed AI SEO loses its value if leads land on a page that does not convert. A strong website means nothing if there is no follow-up. When each element is built to work with the others, results compound.
             </p>
             <Button variant="hero" size="xl" asChild>
-              <Link to="/contact/">
+              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
                 Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
@@ -438,9 +438,9 @@ const Services = () => {
                       {s.cta} <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   ) : (
-                    <Link to="/contact/">
+                    <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
                       {s.cta} <ArrowRight className="w-4 h-4 ml-2" />
-                    </Link>
+                    </a>
                   )}
                 </Button>
               </div>
@@ -479,9 +479,9 @@ const Services = () => {
                 <p className="text-sm text-foreground font-semibold mb-5">{pkg.includes}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-8 flex-1">{pkg.body}</p>
                 <Button variant={pkg.popular ? "hero" : "outline"} size="lg" asChild className="w-full">
-                  <Link to="/contact/">
+                  <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
                     Schedule Strategy Call <ArrowRight className="w-4 h-4 ml-2" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             ))}

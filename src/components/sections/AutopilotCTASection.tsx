@@ -20,9 +20,9 @@ export const AutopilotCTASection = () => {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link to="/contact/">
-              Schedule A Consultation
-            </Link>
+            <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
+              Schedule Strategy Call
+            </a>
           </Button>
         </div>
         <div className="flex items-center justify-center gap-6 mt-8 text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.3s" }}>
