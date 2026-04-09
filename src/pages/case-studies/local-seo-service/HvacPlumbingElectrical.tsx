@@ -100,7 +100,8 @@ const LocalSEOHvacPlumbingElectrical = () => {
   return (
     <>
       <Head>
-        <title>Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses | GrowSmallBiz</title>
+        <title>How Local SEO Helped HVAC, Plumbing & Electrical Contractors Own Local Search Businesses | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz used local SEO to put HVAC, plumbing, and electrical contractors at the top of local search — and keep them there." />
         <meta
           name="description"
           content="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused lead generation."
@@ -109,7 +110,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses"
+        name="How Local SEO Helped HVAC, Plumbing & Electrical Contractors Own Local Search Businesses"
         description="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses."
         url="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/"
         breadcrumbs={[
@@ -123,7 +124,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
         {/* ═══ HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}
-          title="Local SEO Case Studies for HVAC, Plumbing & Electrical Businesses"
+          title="How Local SEO Helped HVAC, Plumbing & Electrical Contractors Own Local Search Businesses"
           subtitle="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

@@ -15,7 +15,7 @@ import portfolioHvacWebsite from "@/assets/portfolio-hvac-website.jpg";
 
 export const hvacConfig: NicheConfig = {
   // ── Page Meta ──
-  pageTitle: "HVAC Marketing Agency | Digital Marketing for HVAC Contractors | GrowSmallBiz",
+  pageTitle: "HVAC Marketing Agency | GrowSmallBiz",
   metaDescription: "GrowSmallBiz helps HVAC contractors dominate Google Maps, generate exclusive leads, and automate follow-up. AI-powered SEO, Google Ads & LSA, and 24/7 AI Receptionist — built for HVAC.",
   canonicalUrl: "/home-service-contractors/marketing-for-hvac-contractors",
   serviceName: "HVAC Marketing Services",

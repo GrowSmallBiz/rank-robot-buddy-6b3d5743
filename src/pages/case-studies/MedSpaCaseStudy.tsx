@@ -108,13 +108,13 @@ const MedSpaCaseStudy = () => {
   return (
     <>
       <Head>
-        <title>Med Spa Marketing Case Studies | GrowSmallBiz Digital Marketing</title>
+        <title>Real Results for Med Spa Businesses — Not Projections | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Documented AI SEO and Google Ads results for med spa clients — organic traffic growth, keyword rankings, Google Business Profile performance, cost-per-lead, and conversion metrics." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Med Spa Marketing Case Studies"
+        name="Real Results for Med Spa Businesses — Not Projections"
         description="Documented AI SEO and Google Ads results for med spa clients."
         url="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/"
         breadcrumbs={[
@@ -128,7 +128,7 @@ const MedSpaCaseStudy = () => {
         {/* HERO */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO + PPC" }}
-          title="Med Spa Marketing Case Studies"
+          title="Real Results for Med Spa Businesses — Not Projections"
           subtitle="Explore documented campaign results for med spa clients across AI SEO and Google Ads. This page showcases real proof drawn from Google Analytics, Google Search Console, Google Business Profile data, and Google Ads account performance."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

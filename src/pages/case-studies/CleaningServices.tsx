@@ -94,7 +94,8 @@ const CleaningServices = () => {
   return (
     <>
       <Head>
-        <title>Case Studies for Cleaning Services Businesses | GrowSmallBiz</title>
+        <title>Real Results for Cleaning Service Businesses — Not Projections | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz helped cleaning service businesses grow their client base with AI-powered digital marketing. Real results, real businesses." />
         <meta
           name="description"
           content="Explore documented local SEO case study results for cleaning service businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."
@@ -103,7 +104,7 @@ const CleaningServices = () => {
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Case Studies for Cleaning Services Businesses"
+        name="Real Results for Cleaning Service Businesses — Not Projections"
         description="Explore documented local SEO case study results for cleaning service businesses."
         url="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/"
         breadcrumbs={[
@@ -116,7 +117,7 @@ const CleaningServices = () => {
         {/* ═══ SECTION 1: HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}
-          title="Case Studies for Cleaning Services Businesses"
+          title="Real Results for Cleaning Service Businesses — Not Projections"
           subtitle="Explore documented local SEO case study results for cleaning service businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

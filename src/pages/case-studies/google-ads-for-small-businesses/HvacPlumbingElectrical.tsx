@@ -64,7 +64,8 @@ const GoogleAdsHvacPlumbingElectrical = () => {
   return (
     <>
       <Head>
-        <title>Google Ads Case Studies for HVAC, Plumbing & Electrical Businesses | GrowSmallBiz</title>
+        <title>How Google Ads Filled the Calendars of HVAC, Plumbing & Electrical Contractors Businesses | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz used Google Ads to help HVAC, plumbing, and electrical contractors generate more calls and booked jobs." />
         <meta
           name="description"
           content="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses. Real proof from paid search performance, conversions, cost per acquisition, and conversion-focused lead generation strategy."
@@ -73,7 +74,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Google Ads Case Studies for HVAC, Plumbing & Electrical Businesses"
+        name="How Google Ads Filled the Calendars of HVAC, Plumbing & Electrical Contractors Businesses"
         description="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses."
         url="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/"
         breadcrumbs={[
@@ -87,7 +88,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
         {/* ═══ HERO ═══ */}
         <ServiceHero
           badge={{ icon: MousePointerClick, text: "Case Studies / Google PPC" }}
-          title="Google Ads Case Studies for HVAC, Plumbing & Electrical Businesses"
+          title="How Google Ads Filled the Calendars of HVAC, Plumbing & Electrical Contractors Businesses"
           subtitle="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses. This page showcases real proof from paid search performance, lead generation, conversion efficiency, and cost-effective growth through Google Ads."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

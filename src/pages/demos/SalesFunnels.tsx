@@ -9,8 +9,8 @@ export default function SalesFunnelsDemo() {
   return (
     <>
       <Head>
-        <title>Sales Funnels Demo | GrowSmallBiz</title>
-        <meta name="description" content="See how GrowSmallBiz Sales Funnels help you build high-converting funnels to close more deals." />
+        <title>Sales Funnels Demo for Small Businesses | GrowSmallBiz</title>
+        <meta name="description" content="Build landing pages and sales sequences that move prospects from first click to booked job — without needing a funnel designer." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-funnels/" />
       </Head>
       <Header />

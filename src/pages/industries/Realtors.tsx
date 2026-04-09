@@ -177,7 +177,7 @@ const Realtors = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing for Realtors | IDX Websites & Lead Generation | GrowSmallBiz</title>
+        <title>Digital Marketing for Realtors | GrowSmallBiz</title>
         <meta name="description" content="Grow your real estate business with IDX-integrated websites, AI-powered lead generation, local SEO, and CRM automation. Attract qualified buyers and sellers." />
         <link rel="canonical" href="https://growsmallbiz.io/professional-services/marketing-for-real-estate-agents-brokers/" />
       </Head>

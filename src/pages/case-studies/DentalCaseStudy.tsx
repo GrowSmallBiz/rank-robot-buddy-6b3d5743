@@ -58,13 +58,13 @@ const DentalCaseStudy = () => {
   return (
     <>
       <Head>
-        <title>Dental Marketing Case Studies | GrowSmallBiz Digital Marketing</title>
+        <title>Real Results for Dental Practices — Not Projections | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Documented Google Ads results for a dental practice — conversions, cost-per-acquisition, conversion rate, and CTR improvements year-over-year." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Dental Marketing Case Studies"
+        name="Real Results for Dental Practices — Not Projections"
         description="Documented Google Ads results for a dental practice."
         url="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/"
         breadcrumbs={[
@@ -78,7 +78,7 @@ const DentalCaseStudy = () => {
         {/* HERO */}
         <ServiceHero
           badge={{ icon: MousePointerClick, text: "Case Studies / Google PPC" }}
-          title="Dental Marketing Case Studies"
+          title="Real Results for Dental Practices — Not Projections"
           subtitle="Explore documented Google Ads campaign results for a dental practice. Real campaign data — conversion volume, cost-per-acquisition, conversion rate, and click-through rate performance."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

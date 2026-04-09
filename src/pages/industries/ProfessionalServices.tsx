@@ -59,7 +59,7 @@ const ProfessionalServices = () => {
               Professional Services Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Marketing for Professional Service Providers
+              Stop Being the Best-Kept Secret in Your Market
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               From real estate agents to photographers — we help professional service providers generate more leads, book more clients, and build a dominant local presence through integrated digital marketing.

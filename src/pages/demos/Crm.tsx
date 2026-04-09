@@ -9,8 +9,8 @@ export default function CrmDemo() {
   return (
     <>
       <Head>
-        <title>CRM Demo | GrowSmallBiz</title>
-        <meta name="description" content="See how GrowSmallBiz CRM keeps all your customers and prospects organized in one place." />
+        <title>CRM Demo for Small Businesses | GrowSmallBiz</title>
+        <meta name="description" content="Never let a lead slip through the cracks. GrowSmallBiz CRM tracks every customer, prospect, and job from first contact to closed deal." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/crm/" />
       </Head>
       <Header />
@@ -20,7 +20,7 @@ export default function CrmDemo() {
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <p className="text-primary font-semibold uppercase tracking-widest mb-4">CRM</p>
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
-              All Of Your Customers And Prospects In One Place
+              Stop Losing Track of Leads — Every Customer and Prospect Managed in One Place
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               When you are focused on turning leads into customers, having a powerful CRM is paramount. Using our CRM, you can truly integrate your business with all of your marketing and follow-up.

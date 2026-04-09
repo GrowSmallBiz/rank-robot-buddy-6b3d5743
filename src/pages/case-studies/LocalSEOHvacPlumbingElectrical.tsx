@@ -131,7 +131,8 @@ const LocalSEOHvacPlumbingElectrical = () => {
   return (
     <>
       <Head>
-        <title>Case Studies for HVAC, Plumbing & Electrical Businesses | GrowSmallBiz</title>
+        <title>Real Results for HVAC, Plumbing & Electrical Contractors — Not Projections | GrowSmallBiz</title>
+        <meta name="description" content="See how GrowSmallBiz helped HVAC, plumbing, and electrical contractors rank higher and book more jobs with AI-powered digital marketing." />
         <meta
           name="description"
           content="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and Google PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
@@ -140,7 +141,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
       </Head>
       <PageJsonLd
         pageType="WebPage"
-        name="Case Studies for HVAC, Plumbing & Electrical Businesses"
+        name="Real Results for HVAC, Plumbing & Electrical Contractors — Not Projections"
         description="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and Google PPC campaigns."
         url="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/"
         breadcrumbs={[
@@ -153,7 +154,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
         {/* ═══ SECTION 1: HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO + Google PPC" }}
-          title="Case Studies for HVAC, Plumbing & Electrical Businesses"
+          title="Real Results for HVAC, Plumbing & Electrical Contractors — Not Projections"
           subtitle="Explore documented case study results for HVAC, plumbing, and electrical businesses across Local SEO and Google PPC campaigns. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

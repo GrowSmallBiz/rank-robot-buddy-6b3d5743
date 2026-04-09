@@ -187,14 +187,14 @@ const ManagedAISEO = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Managed AI SEO for Local Service Businesses | GrowSmallBiz</title>
+        <title>AI-Powered SEO That Gets Local Service Businesses Found First | GrowSmallBiz</title>
         <meta name="description" content="The complete Managed AI SEO system for local service businesses. GrowSmallBiz runs your entire SEO program — technical, local, content, AEO, GEO, link building, and reporting — so you can focus on running your business." />
         <meta name="keywords" content="managed AI SEO, local SEO services, AI-powered SEO, local service business SEO, managed SEO program, technical SEO, on-page SEO, local SEO, AEO, GEO, link building, SEO for contractors, SEO for dentists, SEO for HVAC, GrowSmallBiz" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/" />
       </Head>
 
       <ServiceJsonLd
-        serviceName="Managed AI SEO for Local Service Businesses"
+        serviceName="AI-Powered SEO That Gets Local Service Businesses Found First"
         serviceType="Managed SEO"
         description="The complete Managed AI SEO system for local service businesses — covering technical SEO, on-page, local SEO, topical authority, AEO, GEO, link building, and monthly reporting."
         url="/services/seo-agency/"
@@ -521,7 +521,7 @@ const ManagedAISEO = () => {
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="INDUSTRIES"
-              title="Managed AI SEO for Local Service Businesses Across"
+              title="AI-Powered SEO That Gets Local Service Businesses Found First Across"
               titleHighlight="Key Industries"
             />
 

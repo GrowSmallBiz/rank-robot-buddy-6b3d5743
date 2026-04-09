@@ -41,7 +41,7 @@ const ConcordCA = () => {
 
       <ServiceHero
         badge={{ icon: MapPin, text: "Concord, CA" }}
-        title="Digital Marketing for Concord, CA Local Service Businesses —"
+        title="Stop Losing Concord Leads to Competitors — Full-Service Digital Marketing for Local Businesses"
         titleHighlight="Built for a Bigger Local Market With More Competition"
         subtitle="Concord is not a tiny local market where a business can rely on a basic website and occasional referrals forever. It is one of the larger cities in Contra Costa County."
         primaryCTA={{ label: "Schedule Strategy Call", href: strategyCallUrl, external: true }}
