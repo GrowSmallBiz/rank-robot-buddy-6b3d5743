@@ -16,13 +16,13 @@ export const dentalConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Dental Marketing Agency | GrowSmallBiz",
   metaDescription: "GrowSmallBiz helps dental practices attract new patients with AI-powered SEO, Google Ads, reputation management, and 24/7 AI Receptionist. Full-service digital marketing built for dentists.",
-  canonicalUrl: "/health-and-wellness-practices/marketing-for-dentists",
+  canonicalUrl: "/health-and-wellness-practices/marketing-for-dentists/",
   serviceName: "Dental Marketing Services",
   serviceType: "Digital Marketing for Dental Practices",
   serviceDescription: "AI-powered SEO, Google Ads, reputation management, and marketing automation for dental practices.",
   breadcrumbs: [
-    { name: "Health & Wellness Practices", url: "/health-and-wellness-practices" },
-    { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists" },
+    { name: "Health & Wellness Practices", url: "/health-and-wellness-practices/" },
+    { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists/" },
   ],
 
   // ── Hero ──
