@@ -58,10 +58,10 @@ const Dental = () => {
         serviceName="Dental Practice Marketing"
         serviceType="Digital Marketing for Dentists"
         description="SEO, reputation management, and digital marketing to attract more dental patients."
-        url="/health-and-wellness-practices/marketing-for-dentists"
+        url="/health-and-wellness-practices/marketing-for-dentists/"
         breadcrumbs={[
-          { name: "Health & Wellness", url: "/health-and-wellness-practices" },
-          { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists" },
+          { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
+          { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists/" },
         ]}
       />
       

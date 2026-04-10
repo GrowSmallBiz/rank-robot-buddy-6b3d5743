@@ -83,7 +83,7 @@ const HVAC = () => {
         serviceName="HVAC Marketing"
         serviceType="Digital Marketing for HVAC"
         description="Local SEO, Google Ads, and digital marketing for HVAC companies."
-        url="/home-service-contractors/marketing-for-hvac-contractors"
+        url="/home-service-contractors/marketing-for-hvac-contractors/"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Home Service Contractors", url: "/home-service-contractors/" },

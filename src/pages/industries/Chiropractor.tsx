@@ -58,10 +58,10 @@ const Chiropractor = () => {
         serviceName="Chiropractor Marketing"
         serviceType="Digital Marketing for Chiropractors"
         description="SEO and digital marketing to grow your chiropractic practice and attract new patients."
-        url="/health-and-wellness-practices/marketing-for-chiropractors"
+        url="/health-and-wellness-practices/marketing-for-chiropractors/"
         breadcrumbs={[
-          { name: "Health & Wellness", url: "/health-and-wellness-practices" },
-          { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/marketing-for-chiropractors" },
+          { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
+          { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/marketing-for-chiropractors/" },
         ]}
       />
       
