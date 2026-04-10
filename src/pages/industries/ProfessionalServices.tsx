@@ -42,9 +42,9 @@ const ProfessionalServices = () => {
         pageType="WebPage"
         name="Professional Services Marketing"
         description="Digital marketing for realtors, photographers, and professional service providers."
-        url="/professional-services"
+        url="/professional-services/"
         breadcrumbs={[
-          { name: "Professional Services", url: "/professional-services" },
+          { name: "Professional Services", url: "/professional-services/" },
         ]}
       />
 

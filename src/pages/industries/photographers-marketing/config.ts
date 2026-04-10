@@ -29,13 +29,13 @@ export const photographersConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Photography Marketing & SEO Services | GrowSmallBiz",
   metaDescription: "Complete marketing system for photographers. Website design, AI SEO, CRM, paid ads, and automation to fill your session calendar with dream clients.",
-  canonicalUrl: "/professional-services/marketing-for-photographers",
+  canonicalUrl: "/professional-services/marketing-for-photographers/",
   serviceName: "Photography Marketing & SEO",
   serviceType: "Digital Marketing for Photographers",
   serviceDescription: "Complete marketing system for photographers including website design, AI SEO, CRM, and automation.",
   breadcrumbs: [
-    { name: "Professional Services", url: "/professional-services" },
-    { name: "Photographers Marketing", url: "/professional-services/marketing-for-photographers" },
+    { name: "Professional Services", url: "/professional-services/" },
+    { name: "Photographers Marketing", url: "/professional-services/marketing-for-photographers/" },
   ],
 
   // ── Hero ──
