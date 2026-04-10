@@ -161,6 +161,7 @@ export const routes: RouteRecord[] = [
       { path: "health-and-wellness-practices/dental-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" /> },
       { path: "health-and-wellness-practices/chiropractic-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" /> },
 
+      { path: "blog", Component: () => <Redirect to="/" /> },
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
       { path: "terms-of-service", lazy: lazy(() => import("./pages/TermsOfService")) },
