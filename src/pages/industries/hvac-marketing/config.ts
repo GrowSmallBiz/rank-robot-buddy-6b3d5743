@@ -22,8 +22,8 @@ export const hvacConfig: NicheConfig = {
   serviceType: "Digital Marketing for HVAC Contractors",
   serviceDescription: "AI-powered SEO, Google Ads, LSA management, and marketing automation for HVAC contractors.",
   breadcrumbs: [
-    { name: "Home Service Contractors", url: "/home-service-contractors" },
-    { name: "HVAC Marketing", url: "/home-service-contractors/marketing-for-hvac-contractors" },
+    { name: "Home Service Contractors", url: "/home-service-contractors/" },
+    { name: "HVAC Marketing", url: "/home-service-contractors/marketing-for-hvac-contractors/" },
   ],
 
   // ── Hero ──

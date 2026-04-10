@@ -343,9 +343,9 @@ const HomeServices = () => {
         serviceName="Home Service Contractor Marketing Agency"
         serviceType="Digital Marketing for Home Services"
         description="Local SEO, Google Ads, AI lead capture, and CRM automation for HVAC, plumbing, electrical, roofing, and home service contractors."
-        url="/home-service-contractors"
+        url="/home-service-contractors/"
         breadcrumbs={[
-          { name: "Home Service Contractors", url: "/home-service-contractors" },
+          { name: "Home Service Contractors", url: "/home-service-contractors/" },
         ]}
       />
       

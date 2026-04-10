@@ -34,8 +34,8 @@ export const photographersConfig: NicheConfig = {
   serviceType: "Digital Marketing for Photographers",
   serviceDescription: "Complete marketing system for photographers including website design, AI SEO, CRM, and automation.",
   breadcrumbs: [
-    { name: "Professional Services", url: "/professional-services" },
-    { name: "Photographers Marketing", url: "/professional-services/marketing-for-photographers" },
+    { name: "Professional Services", url: "/professional-services/" },
+    { name: "Photographers Marketing", url: "/professional-services/marketing-for-photographers/" },
   ],
 
   // ── Hero ──

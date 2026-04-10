@@ -86,8 +86,8 @@ const HVAC = () => {
         url="/home-service-contractors/marketing-for-hvac-contractors"
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Home Service Contractors", url: "/home-service-contractors" },
-          { name: "HVAC Marketing", url: "/home-service-contractors/marketing-for-hvac-contractors" },
+          { name: "Home Service Contractors", url: "/home-service-contractors/" },
+          { name: "HVAC Marketing", url: "/home-service-contractors/marketing-for-hvac-contractors/" },
         ]}
       />
       
