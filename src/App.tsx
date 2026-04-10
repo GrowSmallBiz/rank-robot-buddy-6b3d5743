@@ -131,6 +131,18 @@ export const routes: RouteRecord[] = [
       { path: "professional-services/real-estate-marketing", Component: () => <Redirect to="/professional-services/marketing-for-real-estate-agents-brokers/" /> },
       { path: "professional-services/photographers-marketing", Component: () => <Redirect to="/professional-services/marketing-for-photographers/" /> },
 
+      // ── 301 REDIRECTS: ghost file-path URLs (SSG pre-renders physical .tsx paths) → canonical ──
+      { path: "case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" /> },
+      { path: "case-studies/local-seo-service/hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
+      { path: "case-studies/local-seo-hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
+      { path: "case-studies/roofers", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" /> },
+      { path: "case-studies/tree-lawn-landscaping", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/" /> },
+      { path: "case-studies/home-remodeling", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" /> },
+      { path: "case-studies/cleaning-services", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" /> },
+      { path: "case-studies/med-spa-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" /> },
+      { path: "case-studies/dental-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" /> },
+      { path: "case-studies/chiropractic-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" /> },
+
       // ── 301 REDIRECTS: old case study pages → new ──
       { path: "home-service-contractors/hvac-marketing/seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
       { path: "home-service-contractors/hvac-marketing/google-ads-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" /> },
