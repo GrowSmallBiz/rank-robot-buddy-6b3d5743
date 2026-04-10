@@ -131,6 +131,12 @@ export const routes: RouteRecord[] = [
       { path: "professional-services/real-estate-marketing", Component: () => <Redirect to="/professional-services/marketing-for-real-estate-agents-brokers/" /> },
       { path: "professional-services/photographers-marketing", Component: () => <Redirect to="/professional-services/marketing-for-photographers/" /> },
 
+      // ── 301 REDIRECTS: old flat service URLs → canonical nested paths ──
+      { path: "services/facebook-ads", Component: () => <Redirect to="/services/paid-advertising/facebook-ads/" /> },
+      { path: "services/google-ads", Component: () => <Redirect to="/services/paid-advertising/google-ads/" /> },
+      { path: "services/local-seo", Component: () => <Redirect to="/services/seo-agency/local-seo/" /> },
+      { path: "professional-services/photography-marketing", Component: () => <Redirect to="/professional-services/marketing-for-photographers/" /> },
+
       // ── 301 REDIRECTS: ghost file-path URLs (SSG pre-renders physical .tsx paths) → canonical ──
       { path: "case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" /> },
       { path: "case-studies/local-seo-service/hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
