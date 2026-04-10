@@ -32,6 +32,26 @@ export default defineConfig(({ mode }) => ({
   ssgOptions: {
     dirStyle: "nested",
     script: "async",
-    includedRoutes: (paths: string[]) => paths,
+    includedRoutes: (paths: string[]) => {
+      // Only pre-render routes explicitly defined with lazy() in App.tsx
+      // Exclude redirect (Component:) routes — they work client-side via SPA fallback
+      // Also exclude file-system "ghost" paths that vite-react-ssg auto-discovers
+      const fs = require("fs");
+      const appSrc = fs.readFileSync(
+        path.resolve(__dirname, "src/App.tsx"),
+        "utf-8"
+      );
+      const lazyPaths = new Set<string>();
+      const re = /path:\s*["']([^"'*]+)["']\s*,\s*lazy:/g;
+      let m: RegExpExecArray | null;
+      while ((m = re.exec(appSrc)) !== null) {
+        const p = "/" + m[1].replace(/^\//, "");
+        lazyPaths.add(p);
+        lazyPaths.add(p + "/");
+      }
+      lazyPaths.add("/");
+
+      return paths.filter((p) => lazyPaths.has(p) || lazyPaths.has(p + "/"));
+    },
   },
 }));
