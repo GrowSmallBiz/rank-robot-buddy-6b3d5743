@@ -11,12 +11,14 @@ const BASE_URL = 'https://growsmallbiz.io';
 
 const appFile = fs.readFileSync(path.resolve(__dirname, '../src/App.tsx'), 'utf-8');
 
-// Extract all path strings from route definitions
-const pathRegex = /path:\s*["']([^"'*]+)["']/g;
+// Extract only lazy-loaded routes (content pages), NOT Component-based redirect routes
+// Lazy routes look like: { path: "...", lazy: lazy(() => import(...)) }
+// Redirect routes look like: { path: "...", Component: () => <Redirect ... /> }
+const lazyPathRegex = /path:\s*["']([^"'*]+)["']\s*,\s*lazy:/g;
 const routes = [];
 let match;
 
-while ((match = pathRegex.exec(appFile)) !== null) {
+while ((match = lazyPathRegex.exec(appFile)) !== null) {
   const route = match[1];
   if (route && route !== '404') {
     routes.push('/' + route.replace(/^\//, ''));
@@ -38,9 +40,15 @@ function getPriority(route) {
   return '0.6';
 }
 
-// Filter out shortcut/alias routes (top-level duplicates of nested service pages)
+// Filter out shortcut/alias routes that duplicate nested service pages
 const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/seo-agency', '/seo-agency/aeo', '/seo-agency/geo', '/seo-agency/local-seo', '/seo-agency/authority-building', '/seo-agency/link-building', '/seo-agency/technical-seo', '/seo-agency/on-page-seo'];
-const filteredRoutes = uniqueRoutes.filter(r => !serviceAliases.includes(r));
+
+// Also filter out test/draft pages that should not be indexed
+const excludedPages = ['/professional-services/marketing-for-realtors-v2'];
+
+const filteredRoutes = uniqueRoutes.filter(r =>
+  !serviceAliases.includes(r) && !excludedPages.includes(r)
+);
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
 xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
@@ -58,4 +66,4 @@ xml += `</urlset>\n`;
 
 const outPath = path.resolve(__dirname, '../public/sitemap.xml');
 fs.writeFileSync(outPath, xml, 'utf-8');
-console.log(`✅ Generated sitemap.xml with ${filteredRoutes.length} routes`);
+console.log(`✅ Generated sitemap.xml with ${filteredRoutes.length} routes (redirect routes excluded)`);
