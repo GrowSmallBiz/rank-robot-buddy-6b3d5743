@@ -245,9 +245,9 @@ const HealthAndWellness = () => {
         serviceName="Health & Wellness Marketing Agency"
         serviceType="Digital Marketing for Health & Wellness Practices"
         description="AI-powered local SEO, Google Ads, reputation management, and marketing automation for dental practices, chiropractors, and med spas."
-        url="/health-and-wellness-practices"
+        url="/health-and-wellness-practices/"
         breadcrumbs={[
-          { name: "Health & Wellness Practices", url: "/health-and-wellness-practices" },
+          { name: "Health & Wellness Practices", url: "/health-and-wellness-practices/" },
         ]}
       />
 
