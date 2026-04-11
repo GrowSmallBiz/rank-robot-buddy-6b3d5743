@@ -9,6 +9,7 @@ const PrivacyPolicy = () => {
       <Head>
         <title>Privacy Policy | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="Privacy Policy for GrowSmallBiz Digital Marketing. Learn how we collect, use, and protect your personal information." />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://growsmallbiz.io/privacy-policy/" />
       </Head>
       <PageJsonLd
