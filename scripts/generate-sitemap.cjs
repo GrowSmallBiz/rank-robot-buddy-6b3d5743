@@ -58,9 +58,6 @@ for (const route of filteredRoutes.sort()) {
   xml += `  <url><loc>${loc}</loc><priority>${getPriority(route)}</priority></url>\n`;
 }
 
-// Static assets
-xml += `  <url><loc>${BASE_URL}/llms.txt</loc><priority>0.6</priority></url>\n`;
-xml += `  <url><loc>${BASE_URL}/llms-full.txt</loc><priority>0.6</priority></url>\n`;
 
 xml += `</urlset>\n`;
 
