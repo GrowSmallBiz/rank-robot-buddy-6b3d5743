@@ -13,11 +13,16 @@ export const HeroExtendedSection = ({ config }: HeroExtendedSectionProps) => {
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         {config.heroExtendedHeadline && (
-          <SectionHeader
-            title={config.heroExtendedHeadline}
-            titleHighlight={config.heroExtendedHighlight}
-            as="h2"
-          />
+          <div className="text-center mb-10 animate-fade-up">
+            <h2 className="section-title">
+              {config.heroExtendedHeadline}{" "}
+              {config.heroExtendedHighlight && (
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">
+                  {config.heroExtendedHighlight}
+                </span>
+              )}
+            </h2>
+          </div>
         )}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {config.heroExtended.map((item, i) => {
