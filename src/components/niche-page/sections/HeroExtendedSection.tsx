@@ -31,13 +31,13 @@ export const HeroExtendedSection = ({ config }: HeroExtendedSectionProps) => {
           {config.heroExtended.map((item, i) => {
             const Icon = item.icon;
             return (
-              <GlowCard key={i} className="p-6 text-center">
+              <div key={i} className="feature-card-teal text-center">
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <Icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{item.headline}</h3>
                 <p className="text-muted-foreground text-sm">{item.body}</p>
-              </GlowCard>
+              </div>
             );
           })}
         </div>
