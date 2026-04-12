@@ -1,5 +1,5 @@
 import type { NicheConfig } from "../NicheConfig";
-import { SectionHeader } from "@/components/services/SectionHeader";
+
 import { Badge } from "@/components/ui/badge";
 import { GlowCard } from "@/components/ui/glow-card";
 import { CheckCircle2, XCircle } from "lucide-react";
@@ -22,11 +22,16 @@ export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
           </div>
         )}
         {config.whoThisIsForHeadline && (
-          <SectionHeader
-            title={config.whoThisIsForHeadline}
-            titleHighlight={config.whoThisIsForHighlight}
-            as="h2"
-          />
+          <div className="text-center mb-10 animate-fade-up">
+            <h2 className="section-title">
+              {config.whoThisIsForHeadline}{" "}
+              {config.whoThisIsForHighlight && (
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">
+                  {config.whoThisIsForHighlight}
+                </span>
+              )}
+            </h2>
+          </div>
         )}
 
         <div className="grid md:grid-cols-2 gap-8 mt-12">
