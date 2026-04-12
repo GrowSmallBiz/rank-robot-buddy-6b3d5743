@@ -1,18 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import {
-  ArrowRight, CheckCircle2, MapPin, BarChart3, RefreshCw, Globe, Bot,
+  ArrowRight, CheckCircle2, MapPin, BarChart3, Bot,
   FileSearch, FileText, Target
 } from "lucide-react";
 import type { NicheConfig } from "../NicheConfig";
 
-import idxGoogleMap from "@/assets/idx-google-map.webp";
-import localHeatmap from "@/assets/local-heatmap.webp";
-import localCitationAggregators from "@/assets/local-citation-aggregators.webp";
-import socialMediaHero from "@/assets/social-media-hero.webp";
-import llmVisibilitySentiment from "@/assets/llm-visibility-sentiment.webp";
-import llmVisibilityDashboard from "@/assets/llm-visibility-dashboard.webp";
-import articleQualityMetrics from "@/assets/article-quality-metrics.webp";
 import topicalMapAuthority from "@/assets/topical-map-authority.webp";
 import articleScoreInsights from "@/assets/article-score-insights.webp";
 import articleCompetitors from "@/assets/article-competitors.webp";
@@ -22,18 +15,6 @@ import articleCompetitors from "@/assets/article-competitors.webp";
 const contentInsightsImages = [
   { src: articleScoreInsights, alt: "Content scoring insights" },
   { src: articleCompetitors, alt: "Competitor analysis" },
-];
-
-
-const localGBPServices = [
-  { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin, image: idxGoogleMap },
-  { title: "Run Heatmap for Local Business", description: "Visualize your local search presence and identify opportunities", icon: BarChart3, image: localHeatmap },
-  { title: "Enable GBP + Social Post Automation", description: "Automated posting to keep your profile active and engaging", icon: RefreshCw, image: socialMediaHero },
-  { title: "Local Citation Building", description: "Build consistent listings across 50+ directories", icon: Globe, image: localCitationAggregators },
-];
-
-const llmVisibilityServices = [
-  { title: "LLM Visibility & Rank Tracking", description: "Track how AI platforms like ChatGPT, Gemini, Perplexity, and Grok recommend your tree service, lawn care, or landscaping business. Monitor your visibility score and sentiment across all major AI search engines.", icon: Bot, images: [llmVisibilitySentiment, llmVisibilityDashboard] },
 ];
 
 
@@ -190,24 +171,19 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             We Analyze & Outrank Your Competitors
           </h3>
           <GlowCard className="p-6">
-            <div className="grid md:grid-cols-2 gap-6 items-center">
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  We reverse-engineer what's working for your top competitors—their keywords, backlinks, content gaps, and ad strategies—then build a plan to outperform them.
-                </p>
-                <ul className="space-y-2">
-                  {["Competitor keyword gap analysis", "Backlink profile comparison", "Content gap identification", "Ad spend & strategy intelligence", "Local pack positioning tactics"].map((item, i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                      <span className="text-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="rounded-lg overflow-hidden border border-border/50">
-                <img src={articleQualityMetrics} alt="Competitor analysis dashboard" className="w-full h-auto object-cover" />
-              </div>
-            </div>
+            <ul className="space-y-3">
+              {[
+                { bold: "Competitor keyword gap analysis", desc: "we identify which tree service and lawn care terms your top competitors rank for that you don't" },
+                { bold: "Backlink profile comparison", desc: "we find authoritative sites linking to competitors and target the same sources" },
+                { bold: "Content gap identification", desc: "we find the service and location pages driving competitor traffic that you're missing" },
+                { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span className="text-foreground"><strong>{item.bold}</strong> — {item.desc}</span>
+                </li>
+              ))}
+            </ul>
           </GlowCard>
         </div>
 
@@ -269,26 +245,42 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             <MapPin className="w-5 h-5 text-primary" />
             We Optimize Your Local SEO & Google Business Profile
           </h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {localGBPServices.map((service, i) => (
-              <GlowCard key={i} className="p-0 overflow-hidden">
-                <div className="relative h-32 bg-muted">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-contain" />
-                </div>
-                <div className="p-5 pt-3">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <service.icon className="w-5 h-5 text-blue-500" />
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
-                      <p className="text-sm text-muted-foreground">{service.description}</p>
-                    </div>
-                  </div>
-                </div>
-              </GlowCard>
-            ))}
-          </div>
+          <GlowCard className="p-6">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h5 className="font-bold text-foreground mb-3">GBP Optimization</h5>
+                <ul className="space-y-2">
+                  {[
+                    "Full Google Business Profile audit and optimization",
+                    "Category selection, service area setup, and photo optimization",
+                    "Weekly GBP posting cadence for Map Pack signals",
+                    "GBP heatmap tracking — visualize your local search presence across your service area",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h5 className="font-bold text-foreground mb-3">Citation & Local Authority</h5>
+                <ul className="space-y-2">
+                  {[
+                    "Local citation building across 50+ directories",
+                    "NAP consistency audit and cleanup",
+                    "GBP + social post automation",
+                    "Monthly local search performance reporting",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </GlowCard>
         </div>
 
         {/* 6. AI Visibility */}
@@ -297,28 +289,26 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             <Bot className="w-6 h-6 text-primary" />
             We Get Your Tree Service, Lawn Care & Landscaping Business Recommended by AI Search Engines
           </h3>
-          <div className="grid md:grid-cols-1 gap-6">
-            {llmVisibilityServices.map((service, i) => (
-              <GlowCard key={i} className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-violet-500/10 flex items-center justify-center shrink-0">
-                    <service.icon className="w-5 h-5 text-violet-500" />
-                  </div>
-                  <div>
-                    <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
-                    <p className="text-sm text-muted-foreground">{service.description}</p>
-                  </div>
-                </div>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {service.images.map((img, idx) => (
-                    <div key={idx} className="rounded-lg overflow-hidden bg-muted/30">
-                      <img src={img} alt={`${service.title} - ${idx + 1}`} className="w-full h-auto object-contain" />
-                    </div>
-                  ))}
-                </div>
-              </GlowCard>
-            ))}
-          </div>
+          <GlowCard className="p-6">
+            <p className="text-muted-foreground mb-2">
+              GrowSmallBiz tracks how AI platforms recommend your tree service, lawn care, and landscaping business across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              When a homeowner asks an AI assistant which tree service company to call in Danville or Walnut Creek, we make sure your business is the answer.
+            </p>
+            <ul className="space-y-2">
+              {[
+                "LLM visibility score tracking across 6 AI platforms — updated monthly",
+                "Sentiment monitoring — how AI engines describe your business to potential clients",
+                "Citation share tracking — which queries your business appears in vs. competitors",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span className="text-foreground">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </GlowCard>
         </div>
 
 
