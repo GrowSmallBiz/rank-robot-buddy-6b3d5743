@@ -2,57 +2,28 @@ import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import {
   ArrowRight, CheckCircle2, MapPin, BarChart3, RefreshCw, Globe, Bot,
-  Shield, Megaphone, Zap, Database, FileSearch, FileText, Share2, Target, Sparkles
+  FileSearch, FileText, Target
 } from "lucide-react";
 import type { NicheConfig } from "../NicheConfig";
 
-// FIXED Technical SEO images
-import technicalSeoImage from "@/assets/technical-seo.webp";
-import onPageSeoImage from "@/assets/on-page-seo.webp";
-import linkBuildingImage from "@/assets/link-building.webp";
-import localSeoImage from "@/assets/local-seo.webp";
-import seoDashboardImage from "@/assets/seo-dashboard-metrics.webp";
-import aeoServiceImage from "@/assets/aeo-service.webp";
-import geoServiceImage from "@/assets/geo-service.webp";
-import googlePpcScreenshot from "@/assets/ad-screenshot-google-ppc.webp";
 import idxGoogleMap from "@/assets/idx-google-map.webp";
 import localHeatmap from "@/assets/local-heatmap.webp";
 import localCitationAggregators from "@/assets/local-citation-aggregators.webp";
 import socialMediaHero from "@/assets/social-media-hero.webp";
 import llmVisibilitySentiment from "@/assets/llm-visibility-sentiment.webp";
 import llmVisibilityDashboard from "@/assets/llm-visibility-dashboard.webp";
-import pressReleaseDistribution from "@/assets/press-release-distribution.webp";
-import backlinkAnalyticsDashboard from "@/assets/backlink-analytics-dashboard.webp";
 import articleQualityMetrics from "@/assets/article-quality-metrics.webp";
 import topicalMapAuthority from "@/assets/topical-map-authority.webp";
 import articleScoreInsights from "@/assets/article-score-insights.webp";
-import articleStructure from "@/assets/article-structure.webp";
-import articleKeywords from "@/assets/article-keywords.webp";
 import articleCompetitors from "@/assets/article-competitors.webp";
-import contentAgents from "@/assets/content-agents.webp";
-import contentRefiners from "@/assets/content-refiners.webp";
 
 // FIXED data
-const technicalSEOSections = [
-  { title: "Core Technical SEO", icon: FileSearch, image: technicalSeoImage, items: ["Deep Technical Audit", "Speed Optimization Experts", "Mobile First Approach", "Schema & Structured Data", "Agentic AI SEO Workflow to deploy technical fixes"] },
-  { title: "On-Page Optimization", icon: FileText, image: onPageSeoImage, items: ["Title Tag & Meta Description Optimization", "Header Structure (H1-H6) Optimization", "Image Alt Text & Compression", "Internal Linking Strategy", "Content Optimization for Target Keywords"] },
-  { title: "Link Building", icon: Share2, image: linkBuildingImage, items: ["Internal Linking Opportunities", "Canonical Link Management", "Issues with Links Detection & Fix"] },
-  { title: "Cloud Stacks", icon: Globe, image: localSeoImage, items: ["AI-Generated Articles with Backlinks", "Published Across 14 Trusted Platforms", "AWS, Azure, GitHub & More", "Full Content Control & Publishing"], note: "Build authority with high-quality backlinks from trusted cloud platforms like AWS, Azure, and GitHub—domains that search engines already trust." },
-  { title: "WILDFIRE", icon: Zap, image: aeoServiceImage, items: ["Community Backlink Exchange Network", "2:1 Exchange System", "Links from Other Users' Sites", "Approval System for Quality Control"], note: "Earn real backlinks from relevant websites through our community exchange—you control which links appear on your site while building domain authority." },
-  { title: "Miscellaneous", icon: Database, image: geoServiceImage, items: ["Open Graph Optimization", "Twitter Card Setup", "Missing Lang Attribute Fix", "Custom HTML Content Validation"] },
-  { title: "Agentic AI Workflow", icon: Bot, image: seoDashboardImage, items: ["AI-Powered Issue Detection & Resolution", "Automated Technical Fix Deployment", "Real-Time SEO Health Monitoring", "Zero Manual Intervention Required"], note: "Our AI agents continuously scan your site for technical issues and deploy fixes automatically—saving you hours of manual work while keeping your SEO in peak condition." },
-  { title: "Instant Indexing", icon: Zap, image: googlePpcScreenshot, items: [{ text: "Google - GSC Instant Indexing", logo: "google" }, { text: "Bing - IndexNow Integration", logo: "bing" }], hasLogos: true, note: "Skip the waiting game—get your new pages indexed in hours instead of weeks, accelerating your SEO rankings faster than competitors." },
-];
 
 const contentInsightsImages = [
   { src: articleScoreInsights, alt: "Content scoring insights" },
   { src: articleCompetitors, alt: "Competitor analysis" },
 ];
 
-const contentAgentsRefinersImages = [
-  { src: contentAgents, alt: "Content Agents - Create and improve content" },
-  { src: contentRefiners, alt: "Content Refiners - Polish and optimize" },
-];
 
 const localGBPServices = [
   { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin, image: idxGoogleMap },
@@ -65,10 +36,6 @@ const llmVisibilityServices = [
   { title: "LLM Visibility & Rank Tracking", description: "Track how AI platforms like ChatGPT, Gemini, Perplexity, and Grok recommend your tree service, lawn care, or landscaping business. Monitor your visibility score and sentiment across all major AI search engines.", icon: Bot, images: [llmVisibilitySentiment, llmVisibilityDashboard] },
 ];
 
-const onlineAuthorityServices = [
-  { title: "Publish Press Release", description: "Get featured in news outlets to build credibility and backlinks", icon: Megaphone, image: pressReleaseDistribution },
-  { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe, image: backlinkAnalyticsDashboard },
-];
 
 const contentStrategy = [
   { title: "We Build Topical Maps—Interconnected Content Clusters of Topics Related to Your Photography Business That Boost Your Entire Site's Rankings", description: "Strategic content clusters around your photography specialties", icon: Target, note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings." },
@@ -163,11 +130,9 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             {[
               { id: "seo-keywords", label: "Keyword Research", icon: "🔑" },
               { id: "seo-competitors", label: "Competitor Analysis", icon: "🎯" },
-              { id: "seo-technical", label: "Technical SEO", icon: "⚙️" },
               { id: "seo-content", label: "Content Strategy", icon: "📝" },
               { id: "seo-local", label: "Local SEO & GBP", icon: "📍" },
               { id: "seo-ai-visibility", label: "AI Visibility", icon: "🤖" },
-              { id: "seo-authority", label: "Backlinks", icon: "🔗" },
             ].map((item) => (
               <a
                 key={item.id}
@@ -246,42 +211,6 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </GlowCard>
         </div>
 
-        {/* 3. Technical SEO */}
-        <div id="seo-technical" className="mb-12 scroll-mt-24">
-          <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-            <FileSearch className="w-5 h-5 text-primary" />
-            We Handle Your Technical SEO
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {technicalSEOSections.map((section, i) => {
-              const SIcon = section.icon;
-              return (
-                <GlowCard key={i} className="overflow-hidden">
-                  <div className="h-24 bg-muted/50">
-                    <img src={section.image} alt={section.title} className="w-full h-full object-contain" />
-                  </div>
-                  <div className="p-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <SIcon className="w-4 h-4 text-primary" />
-                      <h5 className="font-semibold text-foreground text-sm">{section.title}</h5>
-                    </div>
-                    <ul className="space-y-1">
-                      {section.items.map((item: any, j: number) => (
-                        <li key={j} className="text-xs text-muted-foreground flex items-start gap-1.5">
-                          <CheckCircle2 className="w-3 h-3 text-primary shrink-0 mt-0.5" />
-                          {typeof item === 'string' ? item : item.text}
-                        </li>
-                      ))}
-                    </ul>
-                    {section.note && (
-                      <p className="text-xs text-muted-foreground mt-2 border-l-2 border-primary/30 pl-2 italic">{section.note}</p>
-                    )}
-                  </div>
-                </GlowCard>
-              );
-            })}
-          </div>
-        </div>
 
         {/* 4. Content Strategy */}
         <div id="seo-content" className="mb-12 scroll-mt-24">
@@ -330,19 +259,6 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </div>
               </div>
 
-              <div>
-                <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
-                  Human Strategy + AI Tools for Content Excellence
-                </h6>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {contentAgentsRefinersImages.map((img, i) => (
-                    <div key={i} className="rounded-lg overflow-hidden border border-border/50">
-                      <img src={img.src} alt={img.alt} className="w-full h-auto object-cover" />
-                    </div>
-                  ))}
-                </div>
-              </div>
             </GlowCard>
           </div>
         </div>
@@ -405,33 +321,6 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </div>
         </div>
 
-        {/* 7. Backlinks */}
-        <div id="seo-authority" className="mb-12 scroll-mt-24">
-          <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-            <Shield className="w-5 h-5 text-primary" />
-            We Build Your Online Authority & Backlink Profile
-          </h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {onlineAuthorityServices.map((service, i) => (
-              <GlowCard key={i} className="overflow-hidden border-cyan-500/30">
-                <div className="h-40 bg-muted/30">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-contain" />
-                </div>
-                <div className="p-5 pt-3">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
-                      <service.icon className="w-5 h-5 text-cyan-500" />
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
-                      <p className="text-sm text-muted-foreground">{service.description}</p>
-                    </div>
-                  </div>
-                </div>
-              </GlowCard>
-            ))}
-          </div>
-        </div>
 
         {/* Back to SEO Top */}
         <div className="text-center pt-8 border-t border-border/50">
