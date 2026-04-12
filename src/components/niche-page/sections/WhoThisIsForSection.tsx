@@ -1,5 +1,5 @@
 import type { NicheConfig } from "../NicheConfig";
-import { SectionHeader } from "@/components/services/SectionHeader";
+
 import { Badge } from "@/components/ui/badge";
 import { GlowCard } from "@/components/ui/glow-card";
 import { CheckCircle2, XCircle } from "lucide-react";

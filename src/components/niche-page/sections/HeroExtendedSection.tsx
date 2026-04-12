@@ -1,5 +1,5 @@
 import type { NicheConfig } from "../NicheConfig";
-import { SectionHeader } from "@/components/services/SectionHeader";
+
 import { GlowCard } from "@/components/ui/glow-card";
 
 interface HeroExtendedSectionProps {
