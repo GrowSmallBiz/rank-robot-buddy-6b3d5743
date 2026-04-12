@@ -33,26 +33,12 @@ import contentAgents from "@/assets/content-agents.webp";
 import contentRefiners from "@/assets/content-refiners.webp";
 
 // FIXED data
-const technicalSEOSections = [
-  { title: "Core Technical SEO", icon: FileSearch, image: technicalSeoImage, items: ["Deep Technical Audit", "Speed Optimization Experts", "Mobile First Approach", "Schema & Structured Data", "Agentic AI SEO Workflow to deploy technical fixes"] },
-  { title: "On-Page Optimization", icon: FileText, image: onPageSeoImage, items: ["Title Tag & Meta Description Optimization", "Header Structure (H1-H6) Optimization", "Image Alt Text & Compression", "Internal Linking Strategy", "Content Optimization for Target Keywords"] },
-  { title: "Link Building", icon: Share2, image: linkBuildingImage, items: ["Internal Linking Opportunities", "Canonical Link Management", "Issues with Links Detection & Fix"] },
-  { title: "Cloud Stacks", icon: Globe, image: localSeoImage, items: ["AI-Generated Articles with Backlinks", "Published Across 14 Trusted Platforms", "AWS, Azure, GitHub & More", "Full Content Control & Publishing"], note: "Build authority with high-quality backlinks from trusted cloud platforms like AWS, Azure, and GitHub—domains that search engines already trust." },
-  { title: "WILDFIRE", icon: Zap, image: aeoServiceImage, items: ["Community Backlink Exchange Network", "2:1 Exchange System", "Links from Other Users' Sites", "Approval System for Quality Control"], note: "Earn real backlinks from relevant websites through our community exchange—you control which links appear on your site while building domain authority." },
-  { title: "Miscellaneous", icon: Database, image: geoServiceImage, items: ["Open Graph Optimization", "Twitter Card Setup", "Missing Lang Attribute Fix", "Custom HTML Content Validation"] },
-  { title: "Agentic AI Workflow", icon: Bot, image: seoDashboardImage, items: ["AI-Powered Issue Detection & Resolution", "Automated Technical Fix Deployment", "Real-Time SEO Health Monitoring", "Zero Manual Intervention Required"], note: "Our AI agents continuously scan your site for technical issues and deploy fixes automatically—saving you hours of manual work while keeping your SEO in peak condition." },
-  { title: "Instant Indexing", icon: Zap, image: googlePpcScreenshot, items: [{ text: "Google - GSC Instant Indexing", logo: "google" }, { text: "Bing - IndexNow Integration", logo: "bing" }], hasLogos: true, note: "Skip the waiting game—get your new pages indexed in hours instead of weeks, accelerating your SEO rankings faster than competitors." },
-];
 
 const contentInsightsImages = [
   { src: articleScoreInsights, alt: "Content scoring insights" },
   { src: articleCompetitors, alt: "Competitor analysis" },
 ];
 
-const contentAgentsRefinersImages = [
-  { src: contentAgents, alt: "Content Agents - Create and improve content" },
-  { src: contentRefiners, alt: "Content Refiners - Polish and optimize" },
-];
 
 const localGBPServices = [
   { title: "Connect GBP to Get More Local Traffic", description: "Optimize your Google Business Profile for maximum visibility", icon: MapPin, image: idxGoogleMap },
@@ -65,10 +51,6 @@ const llmVisibilityServices = [
   { title: "LLM Visibility & Rank Tracking", description: "Track how AI platforms like ChatGPT, Gemini, Perplexity, and Grok recommend your tree service, lawn care, or landscaping business. Monitor your visibility score and sentiment across all major AI search engines.", icon: Bot, images: [llmVisibilitySentiment, llmVisibilityDashboard] },
 ];
 
-const onlineAuthorityServices = [
-  { title: "Publish Press Release", description: "Get featured in news outlets to build credibility and backlinks", icon: Megaphone, image: pressReleaseDistribution },
-  { title: "Cloud Stack - Quality Backlink Building", description: "Build high-authority backlinks to boost domain authority", icon: Globe, image: backlinkAnalyticsDashboard },
-];
 
 const contentStrategy = [
   { title: "We Build Topical Maps—Interconnected Content Clusters of Topics Related to Your Photography Business That Boost Your Entire Site's Rankings", description: "Strategic content clusters around your photography specialties", icon: Target, note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings." },
