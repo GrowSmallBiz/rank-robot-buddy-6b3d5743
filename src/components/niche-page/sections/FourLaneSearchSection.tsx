@@ -35,7 +35,7 @@ export const FourLaneSearchSection = ({ config }: FourLaneSearchSectionProps) =>
 
         <SectionHeader
           title={config.fourLaneHeadline || "Four-Lane Search Dominance"}
-          highlight={config.fourLaneHighlight}
+          titleHighlight={config.fourLaneHighlight}
           description={config.fourLaneSubheadline}
           as="h2"
         />
