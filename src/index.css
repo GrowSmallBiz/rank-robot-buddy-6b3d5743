@@ -405,6 +405,7 @@
     @apply backdrop-blur-sm rounded-2xl p-6 transition-all;
     border: 2px solid #17a2b8;
     background-color: #2d465c;
+    box-shadow: 0 0 15px rgba(23, 162, 184, 0.3), 0 0 30px rgba(23, 162, 184, 0.15);
   }
 
   .feature-card-teal:hover {
