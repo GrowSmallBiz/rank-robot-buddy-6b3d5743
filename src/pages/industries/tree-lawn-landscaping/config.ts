@@ -131,6 +131,13 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       hasImage: false,
       showAILogos: false,
     },
+    {
+      icon: Layers,
+      title: "Design-Build Leads Lost to Competitors with Better Online Presence",
+      description: "Homeowners planning a landscaping project research over weeks and compare three or four companies before calling anyone. If your portfolio is not visible on Google, your website does not load fast on mobile, and you have fewer reviews than a nearby competitor — you lose the job before the first phone call.",
+      hasImage: false,
+      showAILogos: false,
+    },
   ],
   transitionText: "Sound familiar? There's a better way.",
   transitionSubtext: "Instead of juggling disconnected tools and chasing leads from aggregators, GrowSmallBiz builds a complete marketing system that generates exclusive, inbound leads from homeowners and commercial clients in your service area.",
@@ -580,7 +587,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   emailNurturePoints: [
     { title: "Stay Top-of-Mind Through the Full Season", icon: Eye, description: "Most tree service and lawn care decisions take days or weeks. Automated email and SMS sequences keep your company visible from first inquiry to booked job." },
     { title: "Convert Seasonal Planners Into Recurring Clients", icon: Heart, description: "A homeowner who books spring lawn prep is a candidate for fall cleanup, aeration, and annual maintenance. Automated sequences turn one-time jobs into recurring revenue." },
-    { title: "Win Back Lapsed Customers Before Competitors Do", icon: RefreshCw, description: "An automated re-engagement sequence reaches past clients before spring season with a seasonal offer — before they search for a new provider." },
+    { title: "Turn Happy Clients Into Your Best Lead Source", icon: Gift, description: "An automated referral system reaches satisfied tree service and lawn care clients with a referral offer — a discount on their next service for every new customer they send your way. Most clients refer one to three people when asked at the right moment with the right incentive. Zero ad spend required." },
   ],
   emailSequenceTitle: "5-Day Inquiry-to-Quote Automation:",
   emailSequenceHighlight: "From First Contact to Booked Job",
@@ -665,6 +672,29 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       topPlatforms: ["LinkedIn", "Google Ads", "Email"],
       seasonality: "Peak: Q4 (contract renewals) and Q1 (new contract season)",
     },
+    {
+      genre: "Landscaping Design-Build",
+      icon: Sprout,
+      color: "from-teal-500 to-teal-600",
+      offer: {
+        headline: "Spring Landscaping Design Consultation",
+        tagline: "[Season Launch] — Book your design-build project before the season fills up",
+        price: "Free Consultation",
+        originalPrice: "",
+        savings: "",
+        includes: [
+          "Full property design assessment",
+          "Project scope and timeline estimate",
+          "Material and plant selection recommendations",
+          "Design-build proposal with seasonal pricing",
+        ],
+        urgency: "Spring design slots limited",
+        cta: "Book Design Consultation",
+      },
+      funnel: ["Google Ads", "Landing page with portfolio", "Consultation booking", "Email confirmation", "Design consultation", "Proposal delivery", "Follow-up sequence"],
+      topPlatforms: ["Google Ads", "Houzz", "Pinterest"],
+      seasonality: "Peak: Spring Feb-Apr for installation season, Fall Sep-Oct for planning season",
+    },
   ],
   seasonalCampaigns: [
     { campaign: "Spring Lawn & Tree Prep", timing: "Launch 4-6 weeks before March", offer: "Early-bird spring packages + tree health assessment", channels: ["Google Ads", "Facebook", "Email"] },
@@ -676,7 +706,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   pastClientWorkflows: [
     { title: "Annual Seasonal Check-In", icon: Calendar, description: "Automated email sent 10 months after last service - before they start searching for a new provider." },
     { title: "Review Request (48hrs Post-Service)", icon: Star, description: "Automated SMS + email requesting a Google review 48 hours after job completion - when the experience is freshest." },
-    { title: "Referral Incentive", icon: Gift, description: "Automated referral offer sent to happy clients - discount on next service for every new customer they refer." },
+    { title: "Referral Incentive Automation", icon: Gift, description: "Automated referral offer sent to satisfied clients 2 weeks after job completion — a discount on their next tree service, lawn care, or landscaping job for every new customer they refer. Tracked automatically, reward delivered via SMS. No manual follow-up required from your team." },
   ],
 
   // ══════════════════════════════════════════════════════════════════════
@@ -909,6 +939,10 @@ export const treeLawnLandscapingConfig: NicheConfig = {
           question: "Does GrowSmallBiz handle seasonal marketing for tree service and lawn care companies?",
           answer: "Yes — GrowSmallBiz builds a 12-month seasonal marketing calendar for every tree service and lawn care client, ramping Google Ads budgets 4 to 6 weeks before each peak season rather than during it. This includes activating seasonal landing pages for spring lawn prep, fall cleanup, and storm damage removal, launching review push campaigns ahead of demand surges, and monitoring website performance before high-traffic months. Proactive seasonal management consistently outperforms reactive budgeting in the green industry.",
         },
+        {
+          question: "Does GrowSmallBiz work with landscaping design-build companies?",
+          answer: "Yes — GrowSmallBiz works with landscaping design-build companies whose primary challenge is converting long-cycle project research into booked consultations. The buyer journey for design-build is fundamentally different from emergency tree service: homeowners research over weeks, compare portfolios, and make decisions based on visual credibility, review count, and the quality of your website. Our approach combines portfolio-optimized website design, local SEO targeting design-intent queries like landscaping company near me and landscape design Danville CA, Google Ads campaigns targeting homeowners actively planning a project, and automated follow-up sequences for consultation requests — because most design-build leads go cold without a consistent follow-up system.",
+        },
       ],
     },
     {
@@ -1001,6 +1035,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     "Want a seasonal marketing calendar and proactive campaign management, not reactive ad spend",
     "Looking for a Bay Area agency that understands the green industry demand cycle, not a generalist",
     "Commercial contracts, HOA accounts, or property management relationships are part of your growth goal",
+    "Landscaping companies with active design-build, hardscape, or commercial portfolio projects looking to convert long-cycle project research into booked consultations",
   ],
   notFitItems: [
     "Solo operators in their first year who are not yet generating consistent revenue",
