@@ -120,7 +120,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </a>
               </Button>
               <span className="text-sm text-muted-foreground">
-                If you want more booked sessions, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
+                If you want more booked jobs, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
               </span>
             </div>
           </div>
@@ -379,7 +379,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
         <div id="seo-ai-visibility" className="mb-12 scroll-mt-24">
           <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
             <Bot className="w-6 h-6 text-primary" />
-            We Get Your Studio Recommended by AI Search Engines
+            We Get Your Tree Service, Lawn Care & Landscaping Business Recommended by AI Search Engines
           </h3>
           <div className="grid md:grid-cols-1 gap-6">
             {llmVisibilityServices.map((service, i) => (
