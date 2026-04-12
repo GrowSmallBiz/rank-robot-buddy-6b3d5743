@@ -204,6 +204,53 @@ export interface TrackingRetargetingItem {
   icon: LucideIcon;
 }
 
+// ───────────────────────────── New Extension Types ─────────────────────
+
+export interface HeroExtendedItem {
+  icon: LucideIcon;
+  headline: string;
+  body: string;
+}
+
+export interface ProcessStep {
+  step: string;
+  title: string;
+  description: string;
+  deliverable: string;
+  icon: LucideIcon;
+}
+
+export interface RealResultsCard {
+  campaignType: string;
+  headline: string;
+  period: string;
+  metrics: StatItem[];
+  bodyCopy: string;
+  caseStudyUrl?: string;
+}
+
+export interface CampaignCard {
+  title: string;
+  channel: string;
+  metrics: string[];
+  highlight?: string;
+}
+
+export interface CoreService {
+  title: string;
+  whatWeDo: string;
+  impact: string;
+  icon: LucideIcon;
+  url?: string;
+}
+
+export interface MidPageCta {
+  headline: string;
+  subtext: string;
+  primaryLabel: string;
+  position: "afterHowItWorks" | "afterWhoThisIsFor" | "afterServices";
+}
+
 // ───────────────────────────── CTA Config ─────────────────────────────
 
 export interface CtaBlockConfig {
@@ -364,4 +411,43 @@ export interface NicheConfig {
 
   // ── Case Study Links (optional) ──
   caseStudyLinks?: CaseStudyLink[];
+
+  // ── NEW EXTENSION FIELDS (all optional) ──
+
+  // ── Hero Extended ──
+  heroExtendedHeadline?: string;
+  heroExtendedHighlight?: string;
+  heroExtended?: HeroExtendedItem[];
+
+  // ── How It Works ──
+  howItWorksHeadline?: string;
+  howItWorksHighlight?: string;
+  howItWorksBadge?: string;
+  processSteps?: ProcessStep[];
+
+  // ── Who This Is For ──
+  whoThisIsForHeadline?: string;
+  whoThisIsForHighlight?: string;
+  whoThisIsForBadge?: string;
+  strongFitItems?: string[];
+  notFitItems?: string[];
+  strongFitLabel?: string;
+  notFitLabel?: string;
+
+  // ── Mid-Page CTA (injectable) ──
+  midPageCta?: MidPageCta;
+
+  // ── Real Results (embedded case study metrics) ──
+  realResultsHeadline?: string;
+  realResultsSubheadline?: string;
+  realResults?: RealResultsCard[];
+
+  // ── Campaign Results Cards (visual proof) ──
+  campaignResultsCardsHeadline?: string;
+  campaignResultsCards?: CampaignCard[];
+
+  // ── Core Services Overview ──
+  coreServicesHeadline?: string;
+  coreServicesSubheadline?: string;
+  coreServices?: CoreService[];
 }

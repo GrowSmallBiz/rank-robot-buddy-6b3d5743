@@ -10,6 +10,7 @@ import { useUtm } from "@/hooks/use-utm";
 import type { NicheConfig } from "./NicheConfig";
 
 import { HeroSection } from "./sections/HeroSection";
+import { HeroExtendedSection } from "./sections/HeroExtendedSection";
 import { PainPointsSection } from "./sections/PainPointsSection";
 import { SystemDiagramSection } from "./sections/SystemDiagramSection";
 import { CtaBlock } from "./sections/CtaBlock";
@@ -23,12 +24,40 @@ import { AiGrowthSystemSection } from "./sections/AiGrowthSystemSection";
 import { ReputationSection } from "./sections/ReputationSection";
 import { AiVoiceChatSection } from "./sections/AiVoiceChatSection";
 import { WhyChooseUsSection } from "./sections/WhyChooseUsSection";
-import { FaqSection } from "./sections/FaqSection";
+import { HowItWorksSection } from "./sections/HowItWorksSection";
+import { WhoThisIsForSection } from "./sections/WhoThisIsForSection";
 import { CaseStudyLinksSection } from "./sections/CaseStudyLinksSection";
+import { RealResultsSection } from "./sections/RealResultsSection";
+import { CampaignResultsCardsSection } from "./sections/CampaignResultsCardsSection";
+import { CoreServicesSection } from "./sections/CoreServicesSection";
+import { FaqSection } from "./sections/FaqSection";
 
 interface NichePageProps {
   config: NicheConfig;
 }
+
+/** Renders the injectable mid-page CTA if configured */
+const MidPageCtaSlot = ({
+  config,
+  position,
+  strategySessionUrl,
+}: {
+  config: NicheConfig;
+  position: string;
+  strategySessionUrl: string;
+}) => {
+  if (!config.midPageCta || config.midPageCta.position !== position) return null;
+  return (
+    <CardCTA
+      title={config.midPageCta.headline}
+      description={config.midPageCta.subtext}
+      buttonText={config.midPageCta.primaryLabel}
+      buttonHref={strategySessionUrl}
+      accentWords={[]}
+      sectionClassName="py-16"
+    />
+  );
+};
 
 const NichePage = ({ config }: NichePageProps) => {
   const { strategySessionUrl } = useUtm();
@@ -51,6 +80,9 @@ const NichePage = ({ config }: NichePageProps) => {
 
       {/* 1. Hero */}
       <HeroSection config={config} strategySessionUrl={strategySessionUrl} />
+
+      {/* A. Hero Extended (optional — after hero, before pain points) */}
+      <HeroExtendedSection config={config} />
 
       {/* 2. Pain Points + System Diagram */}
       <PainPointsSection config={config} />
@@ -112,13 +144,37 @@ const NichePage = ({ config }: NichePageProps) => {
         sectionClassName="py-16"
       />
 
+      {/* I. Core Services Overview (optional) */}
+      <CoreServicesSection config={config} />
+
+      {/* D. Mid-Page CTA — afterServices position */}
+      <MidPageCtaSlot config={config} position="afterServices" strategySessionUrl={strategySessionUrl} />
+
       {/* 13. Why Choose Us */}
       <WhyChooseUsSection config={config} />
+
+      {/* B. How It Works (optional — after Why Choose Us) */}
+      <HowItWorksSection config={config} />
+
+      {/* D. Mid-Page CTA — afterHowItWorks position */}
+      <MidPageCtaSlot config={config} position="afterHowItWorks" strategySessionUrl={strategySessionUrl} />
+
+      {/* C. Who This Is For (optional — after How It Works) */}
+      <WhoThisIsForSection config={config} />
+
+      {/* D. Mid-Page CTA — afterWhoThisIsFor position */}
+      <MidPageCtaSlot config={config} position="afterWhoThisIsFor" strategySessionUrl={strategySessionUrl} />
 
       {/* Case Study Links (if configured) */}
       {config.caseStudyLinks && config.caseStudyLinks.length > 0 && (
         <CaseStudyLinksSection links={config.caseStudyLinks} />
       )}
+
+      {/* G. Real Results (optional — after case study links, before FAQ) */}
+      <RealResultsSection config={config} />
+
+      {/* H. Campaign Results Cards (optional) */}
+      <CampaignResultsCardsSection config={config} />
 
       {/* 14. FAQ */}
       <FaqSection config={config} />
