@@ -163,11 +163,9 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             {[
               { id: "seo-keywords", label: "Keyword Research", icon: "🔑" },
               { id: "seo-competitors", label: "Competitor Analysis", icon: "🎯" },
-              { id: "seo-technical", label: "Technical SEO", icon: "⚙️" },
               { id: "seo-content", label: "Content Strategy", icon: "📝" },
               { id: "seo-local", label: "Local SEO & GBP", icon: "📍" },
               { id: "seo-ai-visibility", label: "AI Visibility", icon: "🤖" },
-              { id: "seo-authority", label: "Backlinks", icon: "🔗" },
             ].map((item) => (
               <a
                 key={item.id}
@@ -246,42 +244,6 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </GlowCard>
         </div>
 
-        {/* 3. Technical SEO */}
-        <div id="seo-technical" className="mb-12 scroll-mt-24">
-          <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-            <FileSearch className="w-5 h-5 text-primary" />
-            We Handle Your Technical SEO
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {technicalSEOSections.map((section, i) => {
-              const SIcon = section.icon;
-              return (
-                <GlowCard key={i} className="overflow-hidden">
-                  <div className="h-24 bg-muted/50">
-                    <img src={section.image} alt={section.title} className="w-full h-full object-contain" />
-                  </div>
-                  <div className="p-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <SIcon className="w-4 h-4 text-primary" />
-                      <h5 className="font-semibold text-foreground text-sm">{section.title}</h5>
-                    </div>
-                    <ul className="space-y-1">
-                      {section.items.map((item: any, j: number) => (
-                        <li key={j} className="text-xs text-muted-foreground flex items-start gap-1.5">
-                          <CheckCircle2 className="w-3 h-3 text-primary shrink-0 mt-0.5" />
-                          {typeof item === 'string' ? item : item.text}
-                        </li>
-                      ))}
-                    </ul>
-                    {section.note && (
-                      <p className="text-xs text-muted-foreground mt-2 border-l-2 border-primary/30 pl-2 italic">{section.note}</p>
-                    )}
-                  </div>
-                </GlowCard>
-              );
-            })}
-          </div>
-        </div>
 
         {/* 4. Content Strategy */}
         <div id="seo-content" className="mb-12 scroll-mt-24">
@@ -330,19 +292,6 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </div>
               </div>
 
-              <div>
-                <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
-                  Human Strategy + AI Tools for Content Excellence
-                </h6>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {contentAgentsRefinersImages.map((img, i) => (
-                    <div key={i} className="rounded-lg overflow-hidden border border-border/50">
-                      <img src={img.src} alt={img.alt} className="w-full h-auto object-cover" />
-                    </div>
-                  ))}
-                </div>
-              </div>
             </GlowCard>
           </div>
         </div>
@@ -405,33 +354,6 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </div>
         </div>
 
-        {/* 7. Backlinks */}
-        <div id="seo-authority" className="mb-12 scroll-mt-24">
-          <h3 className="text-xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
-            <Shield className="w-5 h-5 text-primary" />
-            We Build Your Online Authority & Backlink Profile
-          </h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {onlineAuthorityServices.map((service, i) => (
-              <GlowCard key={i} className="overflow-hidden border-cyan-500/30">
-                <div className="h-40 bg-muted/30">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-contain" />
-                </div>
-                <div className="p-5 pt-3">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center shrink-0">
-                      <service.icon className="w-5 h-5 text-cyan-500" />
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-foreground mb-1">{service.title}</h5>
-                      <p className="text-sm text-muted-foreground">{service.description}</p>
-                    </div>
-                  </div>
-                </div>
-              </GlowCard>
-            ))}
-          </div>
-        </div>
 
         {/* Back to SEO Top */}
         <div className="text-center pt-8 border-t border-border/50">
