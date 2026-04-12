@@ -5,7 +5,7 @@ import {
   Heart, Eye, Repeat, DollarSign, RefreshCw, MapPin, BarChart3,
   Gift, CalendarCheck, Leaf, Sprout, Lightbulb, UserPlus,
   FileText, ClipboardList, Building2, Linkedin, Instagram, Facebook,
-  Youtube,
+  Youtube, Zap, Layers,
 } from "lucide-react";
 
 import heroImage from "@/assets/tree-lawn-landscaping/tree-lawn-landscaping-hero.webp";
@@ -131,6 +131,13 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       hasImage: false,
       showAILogos: false,
     },
+    {
+      icon: Layers,
+      title: "Design-Build Leads Lost to Competitors with Better Online Presence",
+      description: "Homeowners planning a landscaping project research over weeks and compare three or four companies before calling anyone. If your portfolio is not visible on Google, your website does not load fast on mobile, and you have fewer reviews than a nearby competitor — you lose the job before the first phone call.",
+      hasImage: false,
+      showAILogos: false,
+    },
   ],
   transitionText: "Sound familiar? There's a better way.",
   transitionSubtext: "Instead of juggling disconnected tools and chasing leads from aggregators, GrowSmallBiz builds a complete marketing system that generates exclusive, inbound leads from homeowners and commercial clients in your service area.",
@@ -157,8 +164,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     secondaryLabel: "",
   },
   ctaAfterGrowthSystem: {
-    headline: "See the AI Client Growth System for Tree Service & Lawn Care in Action",
-    subtext: "Watch how automated lead capture, seasonal campaigns, and review generation work together to fill your schedule — without you chasing every call.",
+    headline: "See the AI Client Growth System for Tree Service, Lawn Care & Landscaping in Action",
+    subtext: "Watch how automated lead capture, seasonal campaigns, and referral automation work together to fill your schedule — without you chasing every call.",
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "",
   },
@@ -213,6 +220,62 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       title: "AI Receptionist & 24/7 Lead Capture",
       whatWeDo: "AI-powered voice and chat that answers, qualifies, and logs every lead – storm-damage calls at midnight, commercial inquiries on weekends.",
       impact: "Zero missed leads regardless of time of day, season, or call volume.",
+    },
+  ],
+
+  // ══════════════════════════════════════════════════════════════════════
+  // STAGED APPROACH — NEW
+  // ══════════════════════════════════════════════════════════════════════
+  stagedApproachBadge: "WHERE TO START",
+  stagedApproachHeadline: "You Don't Have to Do Everything at Once",
+  stagedApproachSubheadline: "Most tree service and lawn care companies try to launch SEO, Google Ads, a new website, and automation all at the same time — then wonder why nothing gets traction. GrowSmallBiz uses a staged approach that builds each layer on a solid foundation, so every dollar you invest compounds on the one before it.",
+  stagedApproachStages: [
+    {
+      stage: "Stage 1",
+      label: "Quick Wins",
+      timeline: "30–90 Days",
+      icon: Zap,
+      color: "emerald",
+      services: [
+        "Conversion-focused website design",
+        "Google Business Profile full optimization",
+        "Google Local Services Ads (LSA) setup and Google Guarantee verification",
+        "Reputation management + automated review requests (48-hour post-job)",
+        "AI Receptionist — 24/7 call and chat capture",
+        "Referral automation system setup",
+      ],
+      unlocks: "Immediate inbound calls, Map Pack presence, and zero missed leads — before investing in longer-term channels.",
+    },
+    {
+      stage: "Stage 2",
+      label: "Growth",
+      timeline: "3–6 Months",
+      icon: TrendingUp,
+      color: "blue",
+      services: [
+        "Managed AI SEO — local keyword rankings across your service area",
+        "Google Ads (PPC) — seasonal campaigns timed 4–6 weeks before each peak",
+        "City and service area landing pages for local keyword coverage",
+        "Review velocity building — Map Pack position consolidation",
+        "Seasonal campaign calendar — spring prep, storm season, fall cleanup",
+      ],
+      unlocks: "Organic rankings that generate leads without ad spend, and paid campaigns that compound on your established credibility.",
+    },
+    {
+      stage: "Stage 3",
+      label: "Scale",
+      timeline: "6–12 Months",
+      icon: BarChart3,
+      color: "orange",
+      services: [
+        "Full funnel marketing automation — inquiry to repeat client",
+        "Commercial and HOA contract acquisition campaigns",
+        "Content cluster and topical authority building — own every search in your market",
+        "AI search visibility tracking across 6 platforms",
+        "Social media organic campaign management",
+        "Retargeting across Google Display and Meta",
+      ],
+      unlocks: "Market dominance — appearing everywhere your customers search, across every channel, with a fully automated lead and retention system.",
     },
   ],
 
@@ -301,7 +364,96 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // 4.9  PAID MEDIA
+  // FOUR-LANE SEARCH DOMINANCE — NEW
+  // ══════════════════════════════════════════════════════════════════════
+  fourLaneBadge: "SEARCH DOMINANCE",
+  fourLaneHeadline: "One Search Market.",
+  fourLaneHighlight: "Four Ways to Win It.",
+  fourLaneSubheadline: "When a homeowner needs a tree removed, their lawn maintained, or a landscaping project designed, they search in four completely different ways — and each one requires a different strategy. GrowSmallBiz builds your presence across all four simultaneously so you own your market regardless of how your next customer searches.",
+  fourLaneLanes: [
+    {
+      lane: "Map Pack",
+      icon: MapPin,
+      color: "emerald",
+      headline: "Win the Local 3-Pack",
+      description: "The Map Pack appears above all organic results for local searches and is driven by Google Business Profile optimization, review velocity, citation consistency, and proximity signals — not your website alone. It is the highest-click position for tree service and lawn care near me searches.",
+      howWeDoIt: [
+        "Full GBP optimization — categories, services, photos, weekly posts",
+        "Systematic review generation — automated 48-hour post-job SMS and email request",
+        "Local citation building across 50+ directories for NAP consistency",
+        "GBP heatmap tracking — visualize your Map Pack rank across your entire service area",
+      ],
+    },
+    {
+      lane: "LSA",
+      icon: Shield,
+      color: "blue",
+      headline: "Appear Above All Ads",
+      description: "Google Local Services Ads appear above standard Google Ads and organic results with the Google Guarantee badge. They charge per verified lead, not per click. The highest-intent emergency buyers click here first.",
+      howWeDoIt: [
+        "LSA account setup and Google Guarantee verification",
+        "Budget optimization — pay per verified call lead, not per click",
+        "Review-gated eligibility — we build your review count to qualify and maintain status",
+        "Emergency and storm-damage keyword coverage — capture urgent searches instantly",
+      ],
+    },
+    {
+      lane: "Organic Search",
+      icon: Search,
+      color: "amber",
+      headline: "Own the Research Queries",
+      description: "Homeowners researching tree service costs, lawn care options, or landscaping project ideas find you through organic rankings. These buyers convert over days or weeks and represent the largest search volume and lowest long-term cost per acquisition.",
+      howWeDoIt: [
+        "Service pages optimized for tree service, lawn care, and landscaping keywords",
+        "City and neighborhood landing pages — rank for location-specific searches across your service area",
+        "Blog content targeting research queries — cost guides, seasonal tips, how-to content",
+        "Topical authority building — own every relevant search cluster in your local market",
+      ],
+    },
+    {
+      lane: "AI Search",
+      icon: Bot,
+      color: "purple",
+      headline: "Get Cited by AI Assistants",
+      description: "When a homeowner asks ChatGPT, Perplexity, or Google AI Overview which tree service company to call in Danville or Walnut Creek, the answer comes from AI-indexed content — not traditional search results. GrowSmallBiz structures your content to be cited by AI answer engines.",
+      howWeDoIt: [
+        "Entity optimization — ensure AI engines recognize your business as a verified local authority",
+        "Structured content — FAQ sections, entity blocks, and standalone citable sentences throughout your site",
+        "AI visibility tracking across 6 platforms — ChatGPT, Gemini, Perplexity, Grok, Copilot, Google AI",
+        "Citation monitoring — track which queries your business appears in vs. competitors monthly",
+      ],
+    },
+  ],
+  searchComparisonTitle: "Two Ways Homeowners Find You Today",
+  searchComparisonSubtitle: "Your business needs to show up in both — and most of your competitors are only optimized for one.",
+  searchComparisonPanels: [
+    {
+      type: "traditional",
+      label: "Traditional Google Search",
+      query: "tree service near me",
+      items: [
+        "[LSA] Bay Area Tree Co — Google Guaranteed ★★★★★ 412 reviews",
+        "[LSA] Peninsula Arborists — Google Guaranteed ★★★★☆",
+        "Map Pack — Green Valley Tree Service 89 reviews",
+        "Map Pack — Tri-Valley Tree and Lawn 167 reviews",
+        "Map Pack — East Bay Arborists 203 reviews",
+        "Organic results — 10 blue links below the fold",
+      ],
+      caption: "LSA + Map Pack + Page 1 organic = full search coverage. Miss any one and a competitor takes that click.",
+    },
+    {
+      type: "ai",
+      label: "AI Search — ChatGPT and Perplexity",
+      query: "Which tree service company should I call in Danville CA?",
+      items: [
+        "Based on local reviews, verified service history, and online presence, GrowSmallBiz clients are consistently cited for tree service in Danville and the Tri-Valley area.",
+        "Sources cited: Google Reviews, Yelp, GrowSmallBiz.io, local city pages, case studies",
+        "AI engines build answers from structured content, entity signals, and citation footprint — not keyword density.",
+      ],
+      caption: "AI search skips the link list entirely. If your content is not structured for citation, your business does not exist in this channel.",
+    },
+  ],
+
   // ══════════════════════════════════════════════════════════════════════
   paidMediaHeadline: "We Run High-Converting Google Ads for",
   paidMediaHighlight: "Tree Service & Lawn Care Companies",
@@ -354,7 +506,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       ],
     },
   ],
-  metaAdSetupHeadline: "How We Run Google Ads for Tree Service & Lawn Care Companies",
+  metaAdSetupHeadline: "How We Ramp Your Ads 6 Weeks Before the Rush",
   metaAdSetupSubheadline: "Seasonal campaign calendars, emergency keyword coverage, and conversion-optimized landing pages — built specifically for the green industry demand cycle.",
   trackingRetargetingEssentials: [
     { icon: Target, title: "Google Conversion Tracking", description: "Every call, form submission, and quote request tracked back to the keyword and campaign that generated it." },
@@ -435,7 +587,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   emailNurturePoints: [
     { title: "Stay Top-of-Mind Through the Full Season", icon: Eye, description: "Most tree service and lawn care decisions take days or weeks. Automated email and SMS sequences keep your company visible from first inquiry to booked job." },
     { title: "Convert Seasonal Planners Into Recurring Clients", icon: Heart, description: "A homeowner who books spring lawn prep is a candidate for fall cleanup, aeration, and annual maintenance. Automated sequences turn one-time jobs into recurring revenue." },
-    { title: "Win Back Lapsed Customers Before Competitors Do", icon: RefreshCw, description: "An automated re-engagement sequence reaches past clients before spring season with a seasonal offer — before they search for a new provider." },
+    { title: "Turn Happy Clients Into Your Best Lead Source", icon: Gift, description: "An automated referral system reaches satisfied tree service and lawn care clients with a referral offer — a discount on their next service for every new customer they send your way. Most clients refer one to three people when asked at the right moment with the right incentive. Zero ad spend required." },
   ],
   emailSequenceTitle: "5-Day Inquiry-to-Quote Automation:",
   emailSequenceHighlight: "From First Contact to Booked Job",
@@ -520,6 +672,29 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       topPlatforms: ["LinkedIn", "Google Ads", "Email"],
       seasonality: "Peak: Q4 (contract renewals) and Q1 (new contract season)",
     },
+    {
+      genre: "Landscaping Design-Build",
+      icon: Sprout,
+      color: "from-teal-500 to-teal-600",
+      offer: {
+        headline: "Spring Landscaping Design Consultation",
+        tagline: "[Season Launch] — Book your design-build project before the season fills up",
+        price: "Free Consultation",
+        originalPrice: "",
+        savings: "",
+        includes: [
+          "Full property design assessment",
+          "Project scope and timeline estimate",
+          "Material and plant selection recommendations",
+          "Design-build proposal with seasonal pricing",
+        ],
+        urgency: "Spring design slots limited",
+        cta: "Book Design Consultation",
+      },
+      funnel: ["Google Ads", "Landing page with portfolio", "Consultation booking", "Email confirmation", "Design consultation", "Proposal delivery", "Follow-up sequence"],
+      topPlatforms: ["Google Ads", "Houzz", "Pinterest"],
+      seasonality: "Peak: Spring Feb-Apr for installation season, Fall Sep-Oct for planning season",
+    },
   ],
   seasonalCampaigns: [
     { campaign: "Spring Lawn & Tree Prep", timing: "Launch 4-6 weeks before March", offer: "Early-bird spring packages + tree health assessment", channels: ["Google Ads", "Facebook", "Email"] },
@@ -531,14 +706,14 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   pastClientWorkflows: [
     { title: "Annual Seasonal Check-In", icon: Calendar, description: "Automated email sent 10 months after last service - before they start searching for a new provider." },
     { title: "Review Request (48hrs Post-Service)", icon: Star, description: "Automated SMS + email requesting a Google review 48 hours after job completion - when the experience is freshest." },
-    { title: "Referral Incentive", icon: Gift, description: "Automated referral offer sent to happy clients - discount on next service for every new customer they refer." },
+    { title: "Referral Incentive Automation", icon: Gift, description: "Automated referral offer sent to satisfied clients 2 weeks after job completion — a discount on their next tree service, lawn care, or landscaping job for every new customer they refer. Tracked automatically, reward delivered via SMS. No manual follow-up required from your team." },
   ],
 
   // ══════════════════════════════════════════════════════════════════════
   // 4.13  REPUTATION
   // ══════════════════════════════════════════════════════════════════════
-  reputationHeadline: "We Build Your Online Reputation,",
-  reputationHighlight: "Reviews & Referral System",
+  reputationHeadline: "More 5-Star Reviews.",
+  reputationHighlight: "Higher Map Pack. More Calls.",
   reputationSubheadline: "Turn satisfied tree service and lawn care clients into your most powerful marketing channel – a steady stream of 5-star reviews that drives Map Pack rankings and builds homeowner trust before the first phone call.",
   reputationBullets: [
     "Automated review requests sent via SMS and email 48 hours after job completion – when satisfaction is highest",
@@ -576,8 +751,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.14  AI VOICE & CHAT
   // ══════════════════════════════════════════════════════════════════════
-  aiVoiceChatSectionHeadline: "We Power Your 24/7 Tree Service & Lawn Care",
-  aiVoiceChatHighlight: "Lead Capture & Booking System",
+  aiVoiceChatSectionHeadline: "Never Miss a Storm-Damage Call",
+  aiVoiceChatHighlight: "Again.",
   aiVoiceChatSubheadline: "Never miss a storm-damage call at midnight, a commercial inquiry on Sunday, or an emergency tree removal request during your busiest week. Our AI Receptionist answers, qualifies, and logs every lead – automatically.",
   aiFeatures: [
     {
@@ -608,7 +783,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // 4.15  WHY CHOOSE US
   // ══════════════════════════════════════════════════════════════════════
   whyChooseUsHeadline: "Why Tree Service & Lawn Care Companies Choose GrowSmallBiz",
-  whyChooseUsSubtitle: "Your Green Industry Marketing Partner",
+  whyChooseUsSubtitle: "Your Green Industry Marketing Partner — Not a Generalist Agency",
   whyChooseUsBody: "GrowSmallBiz Digital Marketing, founded by Subrata Guha and headquartered in Danville, CA, specializes in marketing for tree service, lawn care, and landscaping companies across the San Francisco Bay Area and the United States. We bring 30+ years of enterprise marketing and digital transformation experience to the green industry – combined with the local market knowledge that national agencies cannot replicate.",
   whyChooseUsCards: [
     { icon: TreePine, title: "Green Industry Specialists", description: "We focus exclusively on tree service, lawn care, and landscaping companies – not plumbers one week and restaurants the next. That specialization means faster results and fewer learning-curve mistakes." },
@@ -764,6 +939,10 @@ export const treeLawnLandscapingConfig: NicheConfig = {
           question: "Does GrowSmallBiz handle seasonal marketing for tree service and lawn care companies?",
           answer: "Yes — GrowSmallBiz builds a 12-month seasonal marketing calendar for every tree service and lawn care client, ramping Google Ads budgets 4 to 6 weeks before each peak season rather than during it. This includes activating seasonal landing pages for spring lawn prep, fall cleanup, and storm damage removal, launching review push campaigns ahead of demand surges, and monitoring website performance before high-traffic months. Proactive seasonal management consistently outperforms reactive budgeting in the green industry.",
         },
+        {
+          question: "Does GrowSmallBiz work with landscaping design-build companies?",
+          answer: "Yes — GrowSmallBiz works with landscaping design-build companies whose primary challenge is converting long-cycle project research into booked consultations. The buyer journey for design-build is fundamentally different from emergency tree service: homeowners research over weeks, compare portfolios, and make decisions based on visual credibility, review count, and the quality of your website. Our approach combines portfolio-optimized website design, local SEO targeting design-intent queries like landscaping company near me and landscape design Danville CA, Google Ads campaigns targeting homeowners actively planning a project, and automated follow-up sequences for consultation requests — because most design-build leads go cold without a consistent follow-up system.",
+        },
       ],
     },
     {
@@ -805,8 +984,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // HOW IT WORKS
   // ══════════════════════════════════════════════════════════════════════
-  howItWorksHeadline: "What Working with GrowSmallBiz Actually Looks Like",
-  howItWorksHighlight: "Actually Looks Like",
+  howItWorksHeadline: "5 Steps From Invisible to Fully Booked",
+  howItWorksHighlight: "Fully Booked",
   howItWorksBadge: "HOW IT WORKS",
   processSteps: [
     {
@@ -856,6 +1035,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     "Want a seasonal marketing calendar and proactive campaign management, not reactive ad spend",
     "Looking for a Bay Area agency that understands the green industry demand cycle, not a generalist",
     "Commercial contracts, HOA accounts, or property management relationships are part of your growth goal",
+    "Landscaping companies with active design-build, hardscape, or commercial portfolio projects looking to convert long-cycle project research into booked consultations",
   ],
   notFitItems: [
     "Solo operators in their first year who are not yet generating consistent revenue",
