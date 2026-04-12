@@ -564,4 +564,84 @@ export const blankConfig: NicheConfig = {
     accentWords: ["Strategy Call"],
     showAfterScroll: 60,
   },
+
+  // ══════════════════════════════════════════════════════════════════════
+  // OPTIONAL EXTENSION SECTIONS
+  // All fields below are optional — if undefined, the section won't render.
+  // ══════════════════════════════════════════════════════════════════════
+
+  // ── A. Hero Extended (4-column icon narrative below hero) ──
+  // heroExtendedHeadline: "TODO: From Reactive to Predictable",
+  // heroExtendedHighlight: "Predictable",
+  // heroExtended: [
+  //   { icon: Clock, headline: "TODO: Statement 1", body: "TODO: 1–2 sentences." },
+  //   { icon: TrendingUp, headline: "TODO: Statement 2", body: "TODO: 1–2 sentences." },
+  //   { icon: Zap, headline: "TODO: Statement 3", body: "TODO: 1–2 sentences." },
+  //   { icon: Layers, headline: "TODO: Statement 4", body: "TODO: 1–2 sentences." },
+  // ],
+
+  // ── B. How It Works (zigzag process timeline) ──
+  // howItWorksHeadline: "TODO: From Strategy to Launch",
+  // howItWorksHighlight: "TODO: Working with GrowSmallBiz",
+  // howItWorksBadge: "HOW IT WORKS",
+  // processSteps: [
+  //   { step: "01", title: "TODO: Step 1", description: "TODO: Description", deliverable: "TODO: Deliverable", icon: Search },
+  //   { step: "02", title: "TODO: Step 2", description: "TODO: Description", deliverable: "TODO: Deliverable", icon: MapPin },
+  //   { step: "03", title: "TODO: Step 3", description: "TODO: Description", deliverable: "TODO: Deliverable", icon: TrendingUp },
+  // ],
+
+  // ── C. Who This Is For (fit / not-fit cards) ──
+  // whoThisIsForHeadline: "TODO: Is GrowSmallBiz Right for Your [Niche] Company?",
+  // whoThisIsForHighlight: "TODO: Your [Niche] Company",
+  // whoThisIsForBadge: "WHO THIS IS FOR",
+  // strongFitLabel: "Strong Fit",
+  // strongFitItems: ["TODO: Fit item 1", "TODO: Fit item 2"],
+  // notFitLabel: "Not the Right Fit",
+  // notFitItems: ["TODO: Not-fit item 1", "TODO: Not-fit item 2"],
+
+  // ── D. Mid-Page CTA (injectable, position-flexible) ──
+  // midPageCta: {
+  //   headline: "TODO: Ready to Fill Your Schedule?",
+  //   subtext: "TODO: Stop competing for shared leads.",
+  //   primaryLabel: "Schedule Strategy Call",
+  //   position: "afterServices",
+  // },
+
+  // ── G. Real Results (embedded case study metric cards) ──
+  // realResultsHeadline: "TODO: Real Results for [Niche] Companies",
+  // realResultsSubheadline: "TODO: Verified campaign data from GrowSmallBiz clients.",
+  // realResults: [
+  //   {
+  //     campaignType: "TODO: AI SEO Campaign",
+  //     headline: "TODO: Client Descriptor",
+  //     period: "TODO: Oct–Nov 2023 vs. Aug–Sep 2023",
+  //     metrics: [{ value: "+138%", label: "Impressions" }],
+  //     bodyCopy: "TODO: AEO-ready standalone sentence.",
+  //     caseStudyUrl: "/TODO-case-study-url/",
+  //   },
+  // ],
+
+  // ── H. Campaign Results Cards (visual proof cards) ──
+  // campaignResultsCardsHeadline: "TODO: Campaign Results",
+  // campaignResultsCards: [
+  //   {
+  //     title: "TODO: Campaign Title",
+  //     channel: "TODO: Local SEO Campaign",
+  //     metrics: ["+25% Clicks", "+138% Impressions"],
+  //     highlight: "$37",
+  //   },
+  // ],
+
+  // ── I. Core Services Overview ──
+  // coreServicesHeadline: "TODO: Our Integrated Marketing System for [Niche]",
+  // coreServicesSubheadline: "TODO: Every service works together.",
+  // coreServices: [
+  //   {
+  //     title: "TODO: Service Name",
+  //     whatWeDo: "TODO: What we do description.",
+  //     impact: "TODO: Impact statement.",
+  //     icon: Search,
+  //     url: "/TODO-service-url/",
+  //   },
+  // ],
 };
