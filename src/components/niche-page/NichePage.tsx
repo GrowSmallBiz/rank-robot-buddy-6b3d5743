@@ -100,6 +100,9 @@ const NichePage = ({ config }: NichePageProps) => {
       {/* 4. On This Page Nav */}
       <OnThisPageNav config={config} />
 
+      {/* I. Core Services Overview (optional) */}
+      <CoreServicesSection config={config} />
+
       {/* 5. Website Design */}
       <WebsiteDesignSection config={config} strategySessionUrl={strategySessionUrl} />
 
@@ -144,8 +147,6 @@ const NichePage = ({ config }: NichePageProps) => {
         sectionClassName="py-16"
       />
 
-      {/* I. Core Services Overview (optional) */}
-      <CoreServicesSection config={config} />
 
       {/* D. Mid-Page CTA — afterServices position */}
       <MidPageCtaSlot config={config} position="afterServices" strategySessionUrl={strategySessionUrl} />
