@@ -251,6 +251,37 @@ export interface MidPageCta {
   position: "afterHowItWorks" | "afterWhoThisIsFor" | "afterServices";
 }
 
+// ───────────────────────────── Staged Approach ─────────────────────────
+
+export interface StageItem {
+  stage: string;
+  label: string;
+  timeline: string;
+  services: string[];
+  unlocks: string;
+  icon: LucideIcon;
+  color: string;
+}
+
+// ───────────────────────────── Four-Lane Search ───────────────────────
+
+export interface SearchLane {
+  lane: string;
+  icon: LucideIcon;
+  color: string;
+  headline: string;
+  description: string;
+  howWeDoIt: string[];
+}
+
+export interface SearchComparisonPanel {
+  type: "traditional" | "ai";
+  label: string;
+  query: string;
+  items: string[];
+  caption: string;
+}
+
 // ───────────────────────────── CTA Config ─────────────────────────────
 
 export interface CtaBlockConfig {
@@ -450,4 +481,20 @@ export interface NicheConfig {
   coreServicesHeadline?: string;
   coreServicesSubheadline?: string;
   coreServices?: CoreService[];
+
+  // ── Staged Approach ──
+  stagedApproachHeadline?: string;
+  stagedApproachSubheadline?: string;
+  stagedApproachBadge?: string;
+  stagedApproachStages?: StageItem[];
+
+  // ── Four-Lane Search Dominance ──
+  fourLaneHeadline?: string;
+  fourLaneHighlight?: string;
+  fourLaneBadge?: string;
+  fourLaneSubheadline?: string;
+  fourLaneLanes?: SearchLane[];
+  searchComparisonTitle?: string;
+  searchComparisonSubtitle?: string;
+  searchComparisonPanels?: SearchComparisonPanel[];
 }
