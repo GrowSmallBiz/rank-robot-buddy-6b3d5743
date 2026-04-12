@@ -59,7 +59,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                 </div>
               </div>
               <div className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">Most studios use separate tools for email, booking, CRM, social media, reviews, and more. These tools don't talk to each other—leads fall through the cracks.</p>
+                <p className="text-muted-foreground leading-relaxed">Most tree service and lawn care companies use separate tools for lead capture, scheduling, CRM, reviews, and follow-up. These tools don't talk to each other—leads fall through the cracks.</p>
                 <div className="bg-card/50 border border-border/50 rounded-xl p-5">
                   <p className="text-foreground font-semibold mb-3">The All-in-One Difference:</p>
                   <ul className="space-y-3">
@@ -76,7 +76,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                 <div className="space-y-4">
                   {[{ label: "Attract", color: "bg-blue-500", desc: "Draw in ideal clients through SEO, paid ads, AI search visibility, social media, and reputation management." },
                     { label: "Nurture", color: "bg-purple-500", desc: "Automatically follow up with leads via email sequences, SMS, AI receptionist, and chat." },
-                    { label: "Convert & Retain", color: "bg-primary", desc: "Book sessions seamlessly, collect payments, deliver galleries, gather reviews, and trigger re-engagement campaigns." }
+                    { label: "Convert & Retain", color: "bg-primary", desc: "Book jobs seamlessly, collect payments, gather reviews, and trigger re-engagement campaigns." }
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-4">
                       <div className={`w-3 h-3 rounded-full ${item.color} mt-2 shrink-0`} />
@@ -229,11 +229,11 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
               </div>
               <div className="space-y-4">
                 {[
-                  { day: "0", label: "Immediate", channels: "Email + SMS", title: "Welcome & Availability Check", desc: "Thank them for reaching out, confirm receipt, ask about their date/event details" },
-                  { day: "1", label: "Day 1", channels: "Email", title: "Portfolio Showcase + Social Proof", desc: "Send curated portfolio samples matching their genre. Include 2-3 client testimonials" },
-                  { day: "2", label: "Day 2", channels: "SMS", title: "Quick Check-in", desc: "Friendly text: 'Did you get a chance to see the portfolio I sent? Happy to answer any questions!'" },
-                  { day: "3", label: "Day 3", channels: "Email", title: "FAQ + Investment Guide", desc: "Address common questions, share pricing overview, include what-to-expect guide" },
-                  { day: "5", label: "Day 5", channels: "Email + SMS", title: "Limited Availability + Final CTA", desc: "Show upcoming calendar availability, gentle urgency about booking popular dates/times" },
+                  { day: "0", label: "Immediate", channels: "Email + SMS", title: "Welcome & Availability Check", desc: "Thank them for reaching out, confirm receipt, ask about their service needs and timeline" },
+                  { day: "1", label: "Day 1", channels: "Email", title: "Service Overview + Social Proof", desc: "Share relevant service information and 2-3 Google review testimonials from past clients" },
+                  { day: "2", label: "Day 2", channels: "SMS", title: "Quick Check-in", desc: "\"Did you get a chance to review the information I sent? Happy to answer any questions about your project.\"" },
+                  { day: "3", label: "Day 3", channels: "Email", title: "FAQ + What to Expect", desc: "Address common questions about the process, timeline, and what to expect from the estimate" },
+                  { day: "5", label: "Day 5", channels: "Email + SMS", title: "Limited Availability + Final CTA", desc: "Seasonal availability notice, schedule filling up, easy booking link" },
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-4">
                     <div className="flex flex-col items-center">
