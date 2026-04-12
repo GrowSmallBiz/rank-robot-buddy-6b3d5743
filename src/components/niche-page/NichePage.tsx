@@ -30,6 +30,8 @@ import { CaseStudyLinksSection } from "./sections/CaseStudyLinksSection";
 import { RealResultsSection } from "./sections/RealResultsSection";
 import { CampaignResultsCardsSection } from "./sections/CampaignResultsCardsSection";
 import { CoreServicesSection } from "./sections/CoreServicesSection";
+import { StagedApproachSection } from "./sections/StagedApproachSection";
+import { FourLaneSearchSection } from "./sections/FourLaneSearchSection";
 import { FaqSection } from "./sections/FaqSection";
 
 interface NichePageProps {
@@ -103,11 +105,17 @@ const NichePage = ({ config }: NichePageProps) => {
       {/* I. Core Services Overview (optional) */}
       <CoreServicesSection config={config} />
 
+      {/* J. Staged Approach (optional — after Core Services, before Website Design) */}
+      <StagedApproachSection config={config} />
+
       {/* 5. Website Design */}
       <WebsiteDesignSection config={config} strategySessionUrl={strategySessionUrl} />
 
       {/* 6. SEO */}
       <SeoSection config={config} strategySessionUrl={strategySessionUrl} />
+
+      {/* K. Four-Lane Search Dominance (optional — after SEO, before CTA) */}
+      <FourLaneSearchSection config={config} />
 
       {/* CTA after SEO */}
       <CardCTA

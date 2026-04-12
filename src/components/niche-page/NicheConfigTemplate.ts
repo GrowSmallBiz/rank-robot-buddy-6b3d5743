@@ -644,4 +644,73 @@ export const blankConfig: NicheConfig = {
   //     url: "/TODO-service-url/",
   //   },
   // ],
+
+  // ── J. Staged Approach (after Core Services, before Website Design) ──
+  // stagedApproachHeadline: "TODO: We Don't Do Everything at Once",
+  // stagedApproachSubheadline: "TODO: A phased roadmap so you see ROI at every step.",
+  // stagedApproachBadge: "PHASED ROADMAP",
+  // stagedApproachStages: [
+  //   {
+  //     stage: "Stage 1", label: "Quick Wins", timeline: "30–90 days",
+  //     services: ["TODO: Service 1", "TODO: Service 2"],
+  //     unlocks: "TODO: What this stage enables",
+  //     icon: Rocket, color: "emerald",
+  //   },
+  //   {
+  //     stage: "Stage 2", label: "Growth", timeline: "90–180 days",
+  //     services: ["TODO: Service 3", "TODO: Service 4"],
+  //     unlocks: "TODO: What this stage enables",
+  //     icon: TrendingUp, color: "blue",
+  //   },
+  //   {
+  //     stage: "Stage 3", label: "Scale", timeline: "180+ days",
+  //     services: ["TODO: Service 5", "TODO: Service 6"],
+  //     unlocks: "TODO: What this stage enables",
+  //     icon: Layers, color: "orange",
+  //   },
+  // ],
+
+  // ── K. Four-Lane Search Dominance (after SEO, before CTA) ──
+  // fourLaneHeadline: "TODO: Own All Four Lanes of",
+  // fourLaneHighlight: "TODO: Search Results",
+  // fourLaneBadge: "SEARCH DOMINANCE",
+  // fourLaneSubheadline: "TODO: Most agencies focus on one lane. We fill all four.",
+  // fourLaneLanes: [
+  //   {
+  //     lane: "Map Pack", icon: MapPin, color: "emerald",
+  //     headline: "TODO: Local 3-Pack", description: "TODO: Description",
+  //     howWeDoIt: ["TODO: Tactic 1", "TODO: Tactic 2", "TODO: Tactic 3"],
+  //   },
+  //   {
+  //     lane: "LSA", icon: Shield, color: "blue",
+  //     headline: "TODO: Google Guaranteed", description: "TODO: Description",
+  //     howWeDoIt: ["TODO: Tactic 1", "TODO: Tactic 2", "TODO: Tactic 3"],
+  //   },
+  //   {
+  //     lane: "Organic", icon: Search, color: "purple",
+  //     headline: "TODO: Page 1 Rankings", description: "TODO: Description",
+  //     howWeDoIt: ["TODO: Tactic 1", "TODO: Tactic 2", "TODO: Tactic 3"],
+  //   },
+  //   {
+  //     lane: "AI Search", icon: BrainCircuit, color: "orange",
+  //     headline: "TODO: AI Recommendations", description: "TODO: Description",
+  //     howWeDoIt: ["TODO: Tactic 1", "TODO: Tactic 2", "TODO: Tactic 3"],
+  //   },
+  // ],
+  // searchComparisonTitle: "TODO: Traditional Search vs. AI Search",
+  // searchComparisonSubtitle: "TODO: Your business needs to show up in both.",
+  // searchComparisonPanels: [
+  //   {
+  //     type: "traditional", label: "Traditional Google Search",
+  //     query: "TODO: best [niche] near me",
+  //     items: ["TODO: Ad result 1", "TODO: Map Pack result", "TODO: Organic result"],
+  //     caption: "TODO: Caption explaining traditional results",
+  //   },
+  //   {
+  //     type: "ai", label: "AI Search (ChatGPT, Gemini, etc.)",
+  //     query: "TODO: which [niche] should I hire in [city]?",
+  //     items: ["TODO: Conversational AI response paragraph 1", "TODO: AI recommendation"],
+  //     caption: "TODO: Caption explaining AI search results",
+  //   },
+  // ],
 };

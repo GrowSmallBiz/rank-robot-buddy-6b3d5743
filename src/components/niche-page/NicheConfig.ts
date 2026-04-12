@@ -450,4 +450,20 @@ export interface NicheConfig {
   coreServicesHeadline?: string;
   coreServicesSubheadline?: string;
   coreServices?: CoreService[];
+
+  // ── Staged Approach ──
+  stagedApproachHeadline?: string;
+  stagedApproachSubheadline?: string;
+  stagedApproachBadge?: string;
+  stagedApproachStages?: StageItem[];
+
+  // ── Four-Lane Search Dominance ──
+  fourLaneHeadline?: string;
+  fourLaneHighlight?: string;
+  fourLaneBadge?: string;
+  fourLaneSubheadline?: string;
+  fourLaneLanes?: SearchLane[];
+  searchComparisonTitle?: string;
+  searchComparisonSubtitle?: string;
+  searchComparisonPanels?: SearchComparisonPanel[];
 }
