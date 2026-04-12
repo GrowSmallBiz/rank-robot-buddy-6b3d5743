@@ -162,12 +162,6 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "",
   },
-  ctaAfterGrowthSystem: {
-    headline: "See the AI Client Growth System for Tree Service & Lawn Care in Action",
-    subtext: "Watch how automated lead capture, seasonal campaigns, and review generation work together to fill your schedule — without you chasing every call.",
-    primaryLabel: "Schedule Strategy Call",
-    secondaryLabel: "",
-  },
 
   // ══════════════════════════════════════════════════════════════════════
   // 4.6  ON THIS PAGE NAV
