@@ -5,7 +5,7 @@ import {
   Heart, Eye, Repeat, DollarSign, RefreshCw, MapPin, BarChart3,
   Gift, CalendarCheck, Leaf, Sprout, Lightbulb, UserPlus,
   FileText, ClipboardList, Building2, Linkedin, Instagram, Facebook,
-  Youtube,
+  Youtube, Zap, Layers,
 } from "lucide-react";
 
 import heroImage from "@/assets/tree-lawn-landscaping/tree-lawn-landscaping-hero.webp";
@@ -157,6 +157,12 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     secondaryLabel: "",
   },
   ctaAfterGrowthSystem: {
+    headline: "See the AI Client Growth System for Tree Service, Lawn Care & Landscaping in Action",
+    subtext: "Watch how automated lead capture, seasonal campaigns, and referral automation work together to fill your schedule — without you chasing every call.",
+    primaryLabel: "Schedule Strategy Call",
+    secondaryLabel: "",
+  },
+  ctaAfterGrowthSystem: {
     headline: "See the AI Client Growth System for Tree Service & Lawn Care in Action",
     subtext: "Watch how automated lead capture, seasonal campaigns, and review generation work together to fill your schedule — without you chasing every call.",
     primaryLabel: "Schedule Strategy Call",
@@ -213,6 +219,62 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       title: "AI Receptionist & 24/7 Lead Capture",
       whatWeDo: "AI-powered voice and chat that answers, qualifies, and logs every lead – storm-damage calls at midnight, commercial inquiries on weekends.",
       impact: "Zero missed leads regardless of time of day, season, or call volume.",
+    },
+  ],
+
+  // ══════════════════════════════════════════════════════════════════════
+  // STAGED APPROACH — NEW
+  // ══════════════════════════════════════════════════════════════════════
+  stagedApproachBadge: "WHERE TO START",
+  stagedApproachHeadline: "You Don't Have to Do Everything at Once",
+  stagedApproachSubheadline: "Most tree service and lawn care companies try to launch SEO, Google Ads, a new website, and automation all at the same time — then wonder why nothing gets traction. GrowSmallBiz uses a staged approach that builds each layer on a solid foundation, so every dollar you invest compounds on the one before it.",
+  stagedApproachStages: [
+    {
+      stage: "Stage 1",
+      label: "Quick Wins",
+      timeline: "30–90 Days",
+      icon: Zap,
+      color: "emerald",
+      services: [
+        "Conversion-focused website design",
+        "Google Business Profile full optimization",
+        "Google Local Services Ads (LSA) setup and Google Guarantee verification",
+        "Reputation management + automated review requests (48-hour post-job)",
+        "AI Receptionist — 24/7 call and chat capture",
+        "Referral automation system setup",
+      ],
+      unlocks: "Immediate inbound calls, Map Pack presence, and zero missed leads — before investing in longer-term channels.",
+    },
+    {
+      stage: "Stage 2",
+      label: "Growth",
+      timeline: "3–6 Months",
+      icon: TrendingUp,
+      color: "blue",
+      services: [
+        "Managed AI SEO — local keyword rankings across your service area",
+        "Google Ads (PPC) — seasonal campaigns timed 4–6 weeks before each peak",
+        "City and service area landing pages for local keyword coverage",
+        "Review velocity building — Map Pack position consolidation",
+        "Seasonal campaign calendar — spring prep, storm season, fall cleanup",
+      ],
+      unlocks: "Organic rankings that generate leads without ad spend, and paid campaigns that compound on your established credibility.",
+    },
+    {
+      stage: "Stage 3",
+      label: "Scale",
+      timeline: "6–12 Months",
+      icon: BarChart3,
+      color: "orange",
+      services: [
+        "Full funnel marketing automation — inquiry to repeat client",
+        "Commercial and HOA contract acquisition campaigns",
+        "Content cluster and topical authority building — own every search in your market",
+        "AI search visibility tracking across 6 platforms",
+        "Social media organic campaign management",
+        "Retargeting across Google Display and Meta",
+      ],
+      unlocks: "Market dominance — appearing everywhere your customers search, across every channel, with a fully automated lead and retention system.",
     },
   ],
 
