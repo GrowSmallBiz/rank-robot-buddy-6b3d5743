@@ -28,7 +28,7 @@ interface PaidMediaSectionProps {
 
 export const PaidMediaSection = ({ config, strategySessionUrl }: PaidMediaSectionProps) => {
   return (
-    <section id="paid-media" className="py-24 bg-background scroll-mt-24">
+    <section id="paid-media" className="py-24 bg-background-alt scroll-mt-24">
       <div className="container mx-auto px-4">
         <SectionHeader
           subtitle="Paid Media"
