@@ -62,7 +62,7 @@ const localGBPServices = [
 ];
 
 const llmVisibilityServices = [
-  { title: "LLM Visibility & Rank Tracking", description: "Track how AI platforms like ChatGPT, Gemini, Perplexity, and Grok recommend your studio. Monitor your visibility score and sentiment across all major AI search engines.", icon: Bot, images: [llmVisibilitySentiment, llmVisibilityDashboard] },
+  { title: "LLM Visibility & Rank Tracking", description: "Track how AI platforms like ChatGPT, Gemini, Perplexity, and Grok recommend your tree service, lawn care, or landscaping business. Monitor your visibility score and sentiment across all major AI search engines.", icon: Bot, images: [llmVisibilitySentiment, llmVisibilityDashboard] },
 ];
 
 const onlineAuthorityServices = [
