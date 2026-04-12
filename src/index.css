@@ -36,6 +36,7 @@
   :root {
     /* Dark theme - GrowSmallBiz Style */
     --background: 210 50% 12%;
+    --background-alt: 210 45% 16%;
     --foreground: 210 20% 98%;
 
     --card: 210 45% 16%;

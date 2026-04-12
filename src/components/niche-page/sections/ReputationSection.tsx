@@ -9,7 +9,7 @@ interface ReputationSectionProps {
 
 export const ReputationSection = ({ config }: ReputationSectionProps) => {
   return (
-    <section id="reputation" className="py-24 relative bg-slate-800/40 scroll-mt-24">
+    <section id="reputation" className="py-24 relative bg-background-alt scroll-mt-24">
       <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-yellow-500/5" />
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeader

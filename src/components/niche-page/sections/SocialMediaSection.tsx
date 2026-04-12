@@ -15,7 +15,7 @@ interface SocialMediaSectionProps {
 
 export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
   return (
-    <section id="social-media" className="py-24 relative bg-slate-800/40 scroll-mt-24">
+    <section id="social-media" className="py-24 relative bg-background-alt scroll-mt-24">
       <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5" />
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeader

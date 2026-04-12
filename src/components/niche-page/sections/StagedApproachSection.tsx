@@ -19,7 +19,7 @@ export const StagedApproachSection = ({ config }: StagedApproachSectionProps) =>
   if (!config.stagedApproachStages || config.stagedApproachStages.length === 0) return null;
 
   return (
-    <section id="staged-approach" className="py-24 bg-muted/30 scroll-mt-24">
+    <section id="staged-approach" className="py-24 bg-background-alt scroll-mt-24">
       <div className="container mx-auto px-4">
         {config.stagedApproachBadge && (
           <div className="flex justify-center mb-6">

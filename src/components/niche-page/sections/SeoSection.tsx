@@ -32,7 +32,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
   const keywordCategories = Object.entries(config.seoKeywordCategories);
 
   return (
-    <section id="seo" className="py-24 relative bg-slate-800/40 scroll-mt-24">
+    <section id="seo" className="py-24 relative bg-background-alt scroll-mt-24">
       <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-teal-500/5" />
       <div className="container mx-auto px-4 relative z-10">
         {/* AI Search Ranking Banner */}
