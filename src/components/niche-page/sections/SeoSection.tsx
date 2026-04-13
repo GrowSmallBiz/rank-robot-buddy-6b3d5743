@@ -2,26 +2,11 @@ import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
 import {
   ArrowRight, CheckCircle2, MapPin, BarChart3, Bot,
-  FileSearch, FileText, Target
+  FileSearch, FileText, Target, Trophy, UserCheck
 } from "lucide-react";
 import type { NicheConfig } from "../NicheConfig";
-
-import topicalMapAuthority from "@/assets/topical-map-authority.webp";
-import articleScoreInsights from "@/assets/article-score-insights.webp";
-import articleCompetitors from "@/assets/article-competitors.webp";
-
-// FIXED data
-
-const contentInsightsImages = [
-  { src: articleScoreInsights, alt: "Content scoring insights" },
-  { src: articleCompetitors, alt: "Competitor analysis" },
-];
-
-
-const contentStrategy = [
-  { title: "We Build Topical Maps—Interconnected Content Clusters of Topics Related to Your Photography Business That Boost Your Entire Site's Rankings", description: "Strategic content clusters around your photography specialties", icon: Target, note: "AI-generated topical maps establish you as an authority by creating interconnected content clusters that signal expertise to search engines—boosting your entire site's rankings." },
-  { title: "We Create Articles That Rank on Google & AI Search", description: "AI-assisted content creation optimized for search and client education", icon: FileSearch, note: "Every article is measured for quality using readability scores, keyword optimization, and engagement metrics—ensuring your content ranks and converts." },
-];
+import { TopicMapVisual } from "./TopicMapVisual";
+import { ContentScoreDashboard } from "./ContentScoreDashboard";
 
 interface SeoSectionProps {
   config: NicheConfig;
@@ -194,48 +179,69 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             <FileText className="w-5 h-5 text-primary" />
             We Create Content That Ranks & Converts
           </h3>
-          <div className="space-y-6">
-            {/* Topical Maps */}
-            <GlowCard className="p-6">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <Target className="w-5 h-5 text-primary" />
-                </div>
-                <h5 className="font-bold text-foreground">{contentStrategy[0].title}</h5>
-              </div>
-              <p className="text-sm text-muted-foreground mb-2">{contentStrategy[0].description}</p>
-              <p className="text-sm text-muted-foreground border-l-2 border-primary/30 pl-3 mb-4">{contentStrategy[0].note}</p>
-              <div className="mt-4 rounded-lg overflow-hidden border border-border/50">
-                <img src={topicalMapAuthority} alt="Topical map authority" className="w-full h-auto object-cover" />
-              </div>
-            </GlowCard>
+          <div className="space-y-8">
+            {/* A: Authority Statement */}
+            <div className="p-6 rounded-xl bg-card border-l-4 border-l-[hsl(var(--accent))] border border-border">
+              <h4 className="text-lg font-display font-bold text-foreground mb-3">
+                We Don't Publish Bulk AI Blogs. We Build Digital Authority.
+              </h4>
+              <p className="text-muted-foreground leading-relaxed">
+                Most agencies use ChatGPT to generate hundreds of generic articles and hit publish. We don't. Every piece of content we create is produced by a highly trained AI content system built specifically for your business, your service area, and your target keywords — then reviewed and approved by a human expert before it goes live. The difference isn't just quality. It's whether the content actually builds your ranking authority or just adds noise.
+              </p>
+            </div>
 
-            {/* Articles */}
-            <GlowCard className="p-6">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center">
-                  <FileSearch className="w-5 h-5 text-amber-500" />
-                </div>
-                <h5 className="font-bold text-foreground">{contentStrategy[1].title}</h5>
-              </div>
-              <p className="text-sm text-muted-foreground mb-3">{contentStrategy[1].description}</p>
-              <p className="text-sm text-muted-foreground border-l-2 border-primary/30 pl-3 mb-6">{contentStrategy[1].note}</p>
+            {/* B: Topic Map Visual */}
+            <div>
+              <h4 className="text-lg font-display font-bold text-foreground mb-3">
+                We Build Topical Maps That Cover Your Entire Market
+              </h4>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                A topical map ensures Google sees your site as a complete authority on tree service, lawn care, and landscaping — not just a collection of random pages. We identify every topic cluster your ideal clients search across all three specialties, then systematically build the content that covers it.
+              </p>
+              <TopicMapVisual />
+            </div>
 
-              <div className="mb-6">
-                <h6 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
-                  <BarChart3 className="w-4 h-4 text-amber-500" />
-                  Content Insights — How We Measure What Works
-                </h6>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {contentInsightsImages.map((img, i) => (
-                    <div key={i} className="rounded-lg overflow-hidden border border-border/50">
-                      <img src={img.src} alt={img.alt} className="w-full h-auto object-cover" />
-                    </div>
-                  ))}
-                </div>
-              </div>
+            {/* C: Content Quality Score Dashboard */}
+            <div>
+              <h4 className="text-lg font-display font-bold text-foreground mb-3">
+                Every Article Scored Across Six Quality Dimensions Before Publishing
+              </h4>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Before any content goes live on your site, it is measured against six independent quality dimensions. Our goal is not to pass a content score — it is to build genuine digital authority that earns rankings and AI search citations in your market.
+              </p>
+              <ContentScoreDashboard />
+            </div>
 
-            </GlowCard>
+            {/* D: What This Means For You */}
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="feature-card-teal space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <FileText className="w-6 h-6 text-primary" />
+                </div>
+                <h5 className="font-display font-semibold text-foreground">AI-Trained on Your Business</h5>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Content is generated by an AI model trained on your specific services, service area, pricing structure, and competitive positioning — not a generic prompt.
+                </p>
+              </div>
+              <div className="feature-card-teal space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <UserCheck className="w-6 h-6 text-primary" />
+                </div>
+                <h5 className="font-display font-semibold text-foreground">Human Review Before Every Publish</h5>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Every article is reviewed by a human expert for accuracy, brand voice, and local relevance. Nothing goes live that has not passed both AI scoring and human approval.
+                </p>
+              </div>
+              <div className="feature-card-teal space-y-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Trophy className="w-6 h-6 text-primary" />
+                </div>
+                <h5 className="font-display font-semibold text-foreground">Built to Rank and Be Cited by AI</h5>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Content is structured for Google rankings and AI citation — so when a homeowner asks ChatGPT, Perplexity, or Google AI which tree service company to call, your business is the answer.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
