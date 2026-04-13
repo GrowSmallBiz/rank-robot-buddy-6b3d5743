@@ -8,6 +8,11 @@ interface ServiceJsonLdProps {
   breadcrumbs: { name: string; url: string }[];
   /** Optional aggregateRating */
   rating?: { ratingValue: string; reviewCount: string };
+  /** Optional offer catalog for Service schema */
+  offerCatalog?: {
+    name: string;
+    items: { name: string }[];
+  };
 }
 
 const BASE_URL = "https://growsmallbiz.io";
@@ -19,6 +24,7 @@ export const ServiceJsonLd = ({
   url,
   breadcrumbs,
   rating,
+  offerCatalog,
 }: ServiceJsonLdProps) => {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -47,6 +53,19 @@ export const ServiceJsonLd = ({
         "@type": "AggregateRating",
         ratingValue: rating.ratingValue,
         reviewCount: rating.reviewCount,
+      },
+    }),
+    ...(offerCatalog && {
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: offerCatalog.name,
+        itemListElement: offerCatalog.items.map((item) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: item.name,
+          },
+        })),
       },
     }),
   };
