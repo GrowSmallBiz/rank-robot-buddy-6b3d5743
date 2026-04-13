@@ -41,6 +41,17 @@ export const hvacConfig: NicheConfig = {
     { name: "Home Service Contractors", url: "/industries/digital-marketing-for-home-service-contractors/" },
     { name: "HVAC Contractor Marketing", url: "/home-service-contractors/marketing-for-hvac-contractors/" },
   ],
+  offerCatalog: {
+    name: "HVAC Contractor Marketing Services",
+    items: [
+      { name: "Local SEO \& Google Business Profile" },
+      { name: "Conversion-Focused Website Design" },
+      { name: "Google Ads (LSA + PPC) \& Meta Ads" },
+      { name: "Reputation Management" },
+      { name: "AI Receptionist \& 24/7 Lead Capture" },
+      { name: "Lead Nurture \& Client Reactivation" },
+    ],
+  },
 
   // ══════════════════════════════════════════════════════════════════════
   // HERO SECTION
