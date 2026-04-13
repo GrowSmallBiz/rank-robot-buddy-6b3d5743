@@ -1,4 +1,5 @@
 /* republish */ import { lazy as reactLazy, Suspense } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
@@ -10,14 +11,16 @@ const Toaster = reactLazy(() => import("@/components/ui/toaster").then(m => ({ d
 const Sonner = reactLazy(() => import("@/components/ui/sonner").then(m => ({ default: m.Toaster })));
 
 const AppLayout = () => (
-  <TooltipProvider>
-    <ScrollToTop />
-    <Suspense fallback={null}>
-      <Toaster />
-      <Sonner />
-    </Suspense>
-    <Outlet />
-  </TooltipProvider>
+  <HelmetProvider>
+    <TooltipProvider>
+      <ScrollToTop />
+      <Suspense fallback={null}>
+        <Toaster />
+        <Sonner />
+      </Suspense>
+      <Outlet />
+    </TooltipProvider>
+  </HelmetProvider>
 );
 
 const lazy = (importFn: () => Promise<{ default: React.ComponentType }>) =>
