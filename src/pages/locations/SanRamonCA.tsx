@@ -141,15 +141,12 @@ const SanRamonCA = () => {
 
           <div className="grid md:grid-cols-2 gap-5">
             {[
-              { label: "Martinez", to: "/locations/martinez-ca/" },
-              { label: "Concord", to: "/locations/concord-ca/" },
-              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
-              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
-              { label: "Danville", to: "/locations/danville-ca/" },
-              { label: "Dublin", to: "/locations/dublin-ca/" },
-              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-              { label: "Livermore", to: "/locations/livermore-ca/" },
-              { label: "Tracy", to: "/locations/tracy-ca/" },
+              { label: "We are local:", body: "GrowSmallBiz is headquartered in Danville — five minutes from San Ramon. We know the Tri-Valley competitive landscape, the Bishop Ranch business corridor, and what local service business owners face daily. We are not a national agency managing accounts they have never seen." },
+              { label: "One integrated system:", body: "When you hire separate vendors, each one optimizes for their own deliverable — not your revenue. Our integrated system connects every stage: traffic, conversion, CRM capture, AI follow-up, and automated nurture. One team, one outcome." },
+              { label: "Conversion-first reporting:", body: "We do not report on traffic, impressions, or follower growth unless those metrics connect directly to leads and revenue. Every metric we track has a line drawn to your bottom line." },
+              { label: "AI-powered execution:", body: "AI is built into how our systems operate — from the AI Receptionist answering missed calls to AI QuadBots qualifying website leads to SMART nurture sequences keeping prospects warm. Faster, smarter, more consistent than any manually managed approach." },
+              { label: "Specialized verticals:", body: "We work exclusively with local service businesses, licensed healthcare and wellness professionals, realtors, and brick-and-mortar restaurants. Our systems are purpose-built for businesses that serve local customers directly." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to your results. We earn your business every single month." },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-base text-foreground/90 leading-relaxed">

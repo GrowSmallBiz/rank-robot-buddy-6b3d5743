@@ -112,15 +112,11 @@ const PleasantHillCA = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { label: "Martinez", to: "/locations/martinez-ca/" },
-              { label: "Concord", to: "/locations/concord-ca/" },
-              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
-              { label: "Danville", to: "/locations/danville-ca/" },
-              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
-              { label: "Dublin", to: "/locations/dublin-ca/" },
-              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-              { label: "Livermore", to: "/locations/livermore-ca/" },
-              { label: "Tracy", to: "/locations/tracy-ca/" },
+              { label: "Closest integrated agency:", body: "Based in Danville, 15 miles from Pleasant Hill via I-680. The agencies currently ranking for Pleasant Hill keywords are out-of-state template providers or single-channel shops. GrowSmallBiz is the nearest full-service integrated marketing agency serving Contra Costa County local service businesses." },
+              { label: "Integrated, not fragmented:", body: "One system covering awareness, lead capture, AI follow-up, nurture, and reputation management. No separate vendors pointing fingers. One team accountable for your results across every channel." },
+              { label: "Diablo Valley market knowledge:", body: "We know Contra Costa Blvd, the competitive dynamics between Pleasant Hill, Walnut Creek, and Concord, and how Pleasant Hill's BART-connected, mobile-first professional community searches, compares, and decides." },
+              { label: "AI-powered execution:", body: "AI Receptionist captures evening and weekend leads from BART commuters and busy professionals. AI QuadBots handle multi-channel inquiries simultaneously. SMART nurture sequences follow up with every prospect automatically — capturing the 9 PM homeowner search that manual teams miss every day." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to results. We earn your business every single month." },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-foreground/90 leading-relaxed">

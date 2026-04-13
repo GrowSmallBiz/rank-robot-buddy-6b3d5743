@@ -138,15 +138,12 @@ const WalnutCreekCA = () => {
 
           <div className="grid md:grid-cols-2 gap-5">
             {[
-              { label: "Martinez", to: "/locations/martinez-ca/" },
-              { label: "Concord", to: "/locations/concord-ca/" },
-              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
-              { label: "Danville", to: "/locations/danville-ca/" },
-              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
-              { label: "Dublin", to: "/locations/dublin-ca/" },
-              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-              { label: "Livermore", to: "/locations/livermore-ca/" },
-              { label: "Tracy", to: "/locations/tracy-ca/" },
+              { label: "Exclusive vertical focus:", body: "We only serve contractors, health & wellness professionals, and real estate pros — not one of dozens of industries." },
+              { label: "Deep East Bay market knowledge:", body: "We understand Walnut Creek's competitive landscape, seasonal demand cycles, and neighborhood-level search behavior." },
+              { label: "Proven local results:", body: "HVAC clients rank in the Google local 3-pack within 90 days; dental practices average 30+ new patient inquiries per month." },
+              { label: "Integrated, not siloed:", body: "Every channel — SEO, Ads, Reputation, AI — feeds one coordinated goal: your growth." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to results. We earn your business every single month." },
+              { label: "AI-powered speed:", body: "Our AI Receptionist technology responds to missed leads within minutes — because in competitive trades, the first responder wins the job." },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-foreground">{item.label}</span> {item.body}</p>

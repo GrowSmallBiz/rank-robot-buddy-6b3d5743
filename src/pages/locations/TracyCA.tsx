@@ -130,15 +130,11 @@ const TracyCA = () => {
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { label: "Martinez", to: "/locations/martinez-ca/" },
-              { label: "Concord", to: "/locations/concord-ca/" },
-              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
-              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
-              { label: "Danville", to: "/locations/danville-ca/" },
-              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
-              { label: "Dublin", to: "/locations/dublin-ca/" },
-              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-              { label: "Livermore", to: "/locations/livermore-ca/" },
+              { label: "Closest integrated agency:", body: "Based in Danville, 40 miles from Tracy via I-205/I-580. The agencies currently ranking for Tracy keywords are either out-of-state template agencies or local single-channel providers. GrowSmallBiz is the nearest full-service integrated marketing agency serving Tracy's local service businesses." },
+              { label: "Integrated system:", body: "One system covering awareness, lead capture, AI follow-up, nurture, and retention. No separate vendors pointing fingers. One team accountable for your results across every channel." },
+              { label: "Central Valley market knowledge:", body: "Tracy's commuter timing pattern, affordability migration wave, and San Joaquin Valley summer heat create demand dynamics that Bay Area agency pages built from Tri-Valley templates completely miss." },
+              { label: "AI-powered execution:", body: "AI Receptionist, AI QuadBots, SMART nurture sequences, and VIP Club systems capture Tracy's commuter-hour inquiries — the 6am emergency call and the 9pm homeowner search that manual teams miss every day." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable. We earn your business every single month." },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-foreground/90 leading-relaxed">

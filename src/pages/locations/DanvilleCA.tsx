@@ -128,15 +128,12 @@ const DanvilleCA = () => {
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { label: "Martinez", to: "/locations/martinez-ca/" },
-              { label: "Concord", to: "/locations/concord-ca/" },
-              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
-              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
-              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
-              { label: "Dublin", to: "/locations/dublin-ca/" },
-              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-              { label: "Livermore", to: "/locations/livermore-ca/" },
-              { label: "Tracy", to: "/locations/tracy-ca/" },
+              { label: "Hometown market authority:", body: "We are headquartered in Danville and are Danville Area Chamber members. We understand Blackhawk, Alamo, Downtown Hartz Avenue, and the premium client expectations unique to San Ramon Valley." },
+              { label: "Exclusive vertical focus:", body: "We only serve contractors, health & wellness professionals, restaurants, and real estate pros — not one of dozens of industries on a rotating client roster." },
+              { label: "Proven local results:", body: "HVAC clients rank in the Google local 3-pack within 90 days; dental practices average 30+ new patient inquiries per month; restaurants see measurable reservation growth within 60 days." },
+              { label: "Integrated, not siloed:", body: "Every channel — SEO, Ads, Reputation, AI — feeds one coordinated goal: your revenue growth." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to results. We earn your business every single month." },
+              { label: "AI-powered response speed:", body: "Our AI Receptionist follows up with missed leads within minutes — because in Danville's premium market, the first business to respond sets the quality expectation and wins the client." },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-foreground/90 leading-relaxed">

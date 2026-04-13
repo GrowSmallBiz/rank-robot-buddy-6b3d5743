@@ -124,15 +124,12 @@ const ConcordCA = () => {
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { label: "Martinez", to: "/locations/martinez-ca/" },
-              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
-              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
-              { label: "Danville", to: "/locations/danville-ca/" },
-              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
-              { label: "Dublin", to: "/locations/dublin-ca/" },
-              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-              { label: "Livermore", to: "/locations/livermore-ca/" },
-              { label: "Tracy", to: "/locations/tracy-ca/" },
+              { label: "Connected system, not scattered vendors:", body: "Every channel — SEO, Ads, Reputation, AI — feeds one coordinated goal: your revenue growth. No more patching together five different tools from five different providers." },
+              { label: "Exclusive vertical focus:", body: "We only serve contractors, health & wellness professionals, restaurants, and real estate pros — not one of dozens of industries on a rotating client roster." },
+              { label: "Proven local results:", body: "Dental practices see +175% conversion growth; med spas gain +552% users year over year; HVAC clients rank in the Google local 3-pack. See our case studies below." },
+              { label: "AI-powered response speed:", body: "Our AI Receptionist follows up with missed leads within minutes — because in Concord's competitive market, the first business to respond wins the client." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to results. We earn your business every single month." },
+              { label: "Built for larger local markets:", body: "Concord is big enough that weak marketing gets exposed faster. Stronger systems matter more here, and that is exactly what we build." },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-foreground/90 leading-relaxed">

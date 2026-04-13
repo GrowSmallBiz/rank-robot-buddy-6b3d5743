@@ -128,15 +128,12 @@ const LivermoreCA = () => {
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { label: "Martinez", to: "/locations/martinez-ca/" },
-              { label: "Concord", to: "/locations/concord-ca/" },
-              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
-              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
-              { label: "Danville", to: "/locations/danville-ca/" },
-              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
-              { label: "Dublin", to: "/locations/dublin-ca/" },
-              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-              { label: "Tracy", to: "/locations/tracy-ca/" },
+              { label: "Tri-Valley proximity:", body: "Based in Danville, 20 minutes from Livermore on I-580. We know the Labs corridor, the wine country seasonal demand cycle, and the commuter household demographic that makes Livermore's service market structurally unlike any other Tri-Valley city." },
+              { label: "Dual-track strategy:", body: "The agencies currently ranking for Livermore keywords treat it as one market and miss two thirds of the available opportunity. We build simultaneous residential and commercial tracks — different keywords, different landing pages, different ad schedules, different retention systems — running from one integrated CRM. Both audience profiles captured without two separate agencies." },
+              { label: "Labs market intelligence:", body: "LLNL and Sandia employees are research-oriented buyers who read reviews in depth, verify licensing, and value the Google Guaranteed badge because it answers their trust question before they call. Most agencies don't know this. We build campaigns specifically around this behavior." },
+              { label: "AI-powered execution:", body: "AI Receptionist captures Labs homeowner inquiries after government work hours. AI QuadBots handle wine country emergency calls during summer harvest heat events. SMART nurture sequences manage both tracks. No lead lost regardless of when it arrives." },
+              { label: "Conversion-first reporting:", body: "We do not report on traffic or impressions unless those metrics connect directly to leads and revenue. Every metric we track has a line drawn to your bottom line." },
+              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable. We earn your business every single month." },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-foreground/90 leading-relaxed">
