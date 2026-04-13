@@ -927,6 +927,86 @@ export const treeLawnLandscapingConfig: NicheConfig = {
         },
       ],
     },
+    {
+      id: "website-design",
+      label: "Website Design",
+      icon: Palette,
+      color: "sky",
+      faqs: [
+        {
+          question: "Do I need a new website before starting SEO or Google Ads?",
+          answer: "Not always, but your website must meet minimum conversion standards — mobile speed under 3 seconds, click-to-call on every page, and service-specific landing pages. If your current site fails those, we build a new one first because sending paid traffic to a weak site wastes your budget.",
+        },
+        {
+          question: "How long does it take to build a tree service or lawn care website?",
+          answer: "Typically 3–4 weeks from kickoff to launch. We build conversion-focused sites specifically for green industry contractors — not generic templates — so the development timeline is tight and the output is immediately SEO-ready.",
+        },
+      ],
+    },
+    {
+      id: "social-media",
+      label: "Social Media",
+      icon: Megaphone,
+      color: "rose",
+      faqs: [
+        {
+          question: "Which social media platforms work best for tree service and lawn care companies?",
+          answer: "Facebook and Instagram are the primary platforms for residential tree service and lawn care — before-and-after photos and storm response posts drive the most engagement with homeowners aged 35–65. LinkedIn is the right platform for commercial landscaping and HOA contract acquisition. We allocate 80% of your social effort to your two highest-ROI platforms before expanding.",
+        },
+        {
+          question: "How often should a tree service or lawn care company post on social media?",
+          answer: "Three to four times per week on primary platforms is the effective range for most green industry contractors. Consistency matters more than volume — a company that posts three quality before-and-after photos per week outperforms one that posts daily generic content and then goes silent during busy season.",
+        },
+      ],
+    },
+    {
+      id: "reputation",
+      label: "Reputation",
+      icon: Star,
+      color: "amber",
+      faqs: [
+        {
+          question: "How many Google reviews does a tree service company need to rank in the Map Pack?",
+          answer: "It depends on your specific market and competitor review counts. We run a competitor review gap analysis for every client — if the top Map Pack position in your area has 180 reviews and you have 40, we build a systematic review velocity plan to close that gap within 6–9 months using automated post-job SMS and email requests.",
+        },
+        {
+          question: "What do we do about a negative Google review?",
+          answer: "We respond to every negative review within 24 hours using protocols that demonstrate professionalism to future clients reading your profile — because how you respond matters as much as the review itself. We also analyze the pattern of negative reviews to identify service or communication gaps before they compound.",
+        },
+      ],
+    },
+    {
+      id: "ai-receptionist",
+      label: "AI Receptionist",
+      icon: PhoneCall,
+      color: "emerald",
+      faqs: [
+        {
+          question: "What happens when a homeowner calls after hours during storm season?",
+          answer: "Your AI Receptionist answers every call 24/7 — storm damage calls at midnight, commercial inquiries on Sunday, emergency tree removal requests during your busiest week. It qualifies the lead by service type and urgency, captures contact details, books a callback, and sends you a lead summary via SMS within 60 seconds.",
+        },
+        {
+          question: "Can the AI Receptionist handle commercial landscaping inquiries differently from residential calls?",
+          answer: "Yes. The AI Receptionist is configured to route and qualify leads by service type — residential tree removal, lawn care scheduling, commercial property inquiries, and HOA requests are each handled with the appropriate qualification questions and escalation paths.",
+        },
+      ],
+    },
+    {
+      id: "ai-growth",
+      label: "AI Growth System",
+      icon: Zap,
+      color: "violet",
+      faqs: [
+        {
+          question: "What is the AI Client Growth System and how is it different from a regular CRM?",
+          answer: "A standard CRM stores contacts. The AI Client Growth System captures every lead automatically, sends instant follow-up sequences, qualifies leads by service type, books appointments, triggers review requests 48 hours after job completion, and runs seasonal re-engagement campaigns — without any manual input from your team. It replaces five or six disconnected tools with one integrated system.",
+        },
+        {
+          question: "How quickly can the AI Growth System be set up for a tree service or lawn care company?",
+          answer: "The core system — AI Receptionist, inquiry automation, and review request sequences — is live within 30 days. The full marketing automation suite including seasonal campaigns and referral incentive workflows is typically complete within 60 days of kickoff.",
+        },
+      ],
+    },
   ],
   faqCtaCard: {
     headline: "More Questions About Green Industry Marketing?",
