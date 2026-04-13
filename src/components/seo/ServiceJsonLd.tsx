@@ -24,6 +24,7 @@ export const ServiceJsonLd = ({
   url,
   breadcrumbs,
   rating,
+  offerCatalog,
 }: ServiceJsonLdProps) => {
   const serviceSchema = {
     "@context": "https://schema.org",
