@@ -988,7 +988,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // WHO THIS IS FOR
   // ══════════════════════════════════════════════════════════════════════
   whoThisIsForHeadline: "Is GrowSmallBiz Right for Your Tree Service, Lawn Care, or Landscaping Company?",
-  whoThisIsForHighlight: "Your Tree Service, Lawn Care, or Landscaping Company",
+  whoThisIsForHighlight: "Right for Your",
   whoThisIsForBadge: "WHO THIS IS FOR",
   strongFitLabel: "Strong Fit",
   notFitLabel: "Not the Right Fit",
