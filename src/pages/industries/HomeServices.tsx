@@ -40,11 +40,13 @@ import homeServicesHeroImage from "@/assets/industry-homeservices-hero.webp";
 import { useUtm } from "@/hooks/use-utm";
 
 const trades = [
-  { icon: Flame, name: "HVAC" },
+  { icon: Flame, name: "HVAC", link: "/home-service-contractors/marketing-for-hvac-contractors/" },
   { icon: Droplets, name: "Plumbing" },
   { icon: Plug, name: "Electrical" },
   { icon: Home, name: "Roofing" },
   { icon: Paintbrush, name: "Remodeling" },
+  { icon: TreePine, name: "Tree, Lawn & Landscaping", link: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
+  { icon: Paintbrush, name: "Painting" },
 ];
 
 const services = [
@@ -378,12 +380,17 @@ const HomeServices = () => {
 
             {/* Trades we serve */}
             <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-up delay-200">
-              {trades.map((trade, index) => (
-                <span key={index} className="inline-flex items-center gap-2 px-4 py-2 bg-card/80 border border-border rounded-full text-sm text-muted-foreground">
-                  <trade.icon className="w-4 h-4 text-primary" />
-                  {trade.name}
-                </span>
-              ))}
+              {trades.map((trade, index) => {
+                const pill = (
+                  <span key={index} className={`inline-flex items-center gap-2 px-4 py-2 bg-card/80 border border-border rounded-full text-sm text-muted-foreground ${trade.link ? "hover:border-primary/40 hover:text-foreground transition-colors cursor-pointer" : ""}`}>
+                    <trade.icon className="w-4 h-4 text-primary" />
+                    {trade.name}
+                  </span>
+                );
+                return trade.link ? (
+                  <Link key={index} to={trade.link}>{pill}</Link>
+                ) : pill;
+              })}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
