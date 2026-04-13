@@ -18,6 +18,8 @@ import springLawnCare from "@/assets/tree-lawn-landscaping/spring-lawn-care-ad.w
 import fallTreeService from "@/assets/tree-lawn-landscaping/fall-tree-service-ad.webp";
 import commercialLandscaping from "@/assets/tree-lawn-landscaping/commercial-landscaping-ad.webp";
 import localMapPack from "@/assets/tree-lawn-landscaping/local-map-pack-ad.webp";
+import aiReceptionistMulticall from "@/assets/tree-lawn-landscaping/ai-receptionist-multicall.webp";
+import aiWebsiteLivechat from "@/assets/tree-lawn-landscaping/ai-website-livechat.webp";
 
 export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
