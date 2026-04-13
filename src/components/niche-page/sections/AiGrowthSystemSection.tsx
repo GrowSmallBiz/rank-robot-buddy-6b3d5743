@@ -60,7 +60,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
               </div>
               <div className="space-y-6">
                 <p className="text-muted-foreground leading-relaxed">Most tree service and lawn care companies use separate tools for lead capture, scheduling, CRM, reviews, and follow-up. These tools don't talk to each other—leads fall through the cracks.</p>
-                <div className="bg-card/50 border border-border/50 rounded-xl p-5">
+                <div className="bg-[hsl(210_45%_14%)] border border-[hsl(188_78%_41%_/_0.2)] rounded-xl p-5">
                   <p className="text-foreground font-semibold mb-3">The All-in-One Difference:</p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
@@ -106,7 +106,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                 const bgColors: Record<string, string> = { blue: "bg-blue-500", purple: "bg-purple-500", primary: "bg-primary", emerald: "bg-emerald-500", amber: "bg-amber-500" };
                 const textColors: Record<string, string> = { blue: "text-blue-400", purple: "text-purple-400", primary: "text-primary", emerald: "text-emerald-400", amber: "text-amber-400" };
                 return (
-                  <div key={i} className={`relative bg-card border-2 ${borderColors[stage.color] || "border-border"} rounded-2xl p-6 transition-all hover:-translate-y-2 group`}>
+                  <div key={i} className={`relative bg-[hsl(210_45%_18%)] border-2 ${borderColors[stage.color] || "border-[hsl(188_78%_41%_/_0.25)]"} rounded-2xl p-6 transition-all hover:-translate-y-2 group`}>
                     <div className={`w-14 h-14 rounded-full ${bgColors[stage.color] || "bg-primary"} flex items-center justify-center mb-4 mx-auto lg:mx-0 group-hover:scale-110 transition-transform`}>
                       <StageIcon className="w-7 h-7 text-white" />
                     </div>
@@ -240,7 +240,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                       <div className={`w-10 h-10 rounded-full ${i === 0 ? 'bg-emerald-500' : 'bg-purple-500'} flex items-center justify-center text-white font-bold text-sm`}>{step.day}</div>
                       {i < 4 && <div className="w-0.5 h-8 bg-border/50 mt-2" />}
                     </div>
-                    <div className="flex-1 bg-muted/30 rounded-lg p-4 border border-border/50">
+                    <div className="flex-1 bg-[hsl(210_45%_14%)] rounded-lg p-4 border border-[hsl(188_78%_41%_/_0.15)]">
                       <div className="flex items-center justify-between mb-2">
                         <span className={`text-xs font-medium ${i === 0 ? 'text-emerald-400' : 'text-purple-400'} uppercase tracking-wider`}>{step.label}</span>
                         <span className="text-xs text-muted-foreground">{step.channels}</span>
@@ -290,7 +290,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                   </div>
                   <div className="space-y-3">
                     {workflow.reminders.map((reminder, j) => (
-                      <div key={j} className="bg-muted/30 rounded-lg p-3 border border-border/50">
+                      <div key={j} className="bg-[hsl(210_45%_14%)] rounded-lg p-3 border border-[hsl(188_78%_41%_/_0.15)]">
                         <div className="flex items-center justify-between mb-1">
                           <span className={`text-xs font-medium ${colors.text}`}>{reminder.timing}</span>
                           <div className="flex gap-1">
@@ -404,10 +404,10 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
           <h3 className="text-xl font-bold text-foreground mb-6 text-center">
             <span className="text-primary">Seasonal Campaigns</span> We Automate for Your Tree Service, Lawn Care & Landscaping Business
           </h3>
-          <div className="overflow-x-auto">
+            <div className="overflow-x-auto rounded-2xl border-2 border-[hsl(188_78%_41%_/_0.25)] bg-[hsl(210_45%_18%)]">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-border">
+                <tr className="border-b-2 border-[hsl(188_78%_41%_/_0.3)]">
                   <th className="text-left py-3 px-4 text-sm font-semibold text-muted-foreground">Campaign</th>
                   <th className="text-left py-3 px-4 text-sm font-semibold text-muted-foreground">Timing</th>
                   <th className="text-left py-3 px-4 text-sm font-semibold text-muted-foreground">Offer</th>
@@ -416,7 +416,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
               </thead>
               <tbody>
                 {config.seasonalCampaigns.map((campaign, i) => (
-                  <tr key={i} className="border-b border-border/50 hover:bg-muted/30 transition-colors">
+                  <tr key={i} className="border-b border-[hsl(188_78%_41%_/_0.15)] hover:bg-[hsl(210_45%_14%)] transition-colors">
                     <td className="py-4 px-4 font-medium text-foreground">{campaign.campaign}</td>
                     <td className="py-4 px-4 text-sm text-muted-foreground">{campaign.timing}</td>
                     <td className="py-4 px-4 text-sm text-muted-foreground">{campaign.offer}</td>

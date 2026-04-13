@@ -86,7 +86,7 @@ export const FourLaneSearchSection = ({ config }: FourLaneSearchSectionProps) =>
                 return (
                   <div
                     key={i}
-                    className="rounded-2xl border-2 border-border/50 bg-card overflow-hidden"
+                    className="rounded-2xl border-2 border-[hsl(188_78%_41%_/_0.25)] bg-[hsl(210_45%_18%)] overflow-hidden"
                   >
                     {/* Panel header */}
                     <div className={`px-6 py-4 border-b border-border/50 ${isTraditional ? "bg-muted/50" : "bg-primary/5"}`}>

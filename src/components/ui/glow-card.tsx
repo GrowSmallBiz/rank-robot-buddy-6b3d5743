@@ -31,12 +31,12 @@ const GlowCard = React.forwardRef<HTMLDivElement, GlowCardProps>(
       <div
         ref={ref}
         className={cn(
-          // Base styles
-          "bg-card border-2 border-border/50",
+          // Base styles — elevated bg for contrast against section backgrounds
+          "bg-[hsl(210_45%_18%)] border-2 border-[hsl(188_78%_41%_/_0.25)]",
           rounded,
           "transition-all duration-300",
           // Hover effects
-          glowOnHover && "hover:border-primary/50",
+          glowOnHover && "hover:border-[hsl(188_78%_41%_/_0.6)]",
           liftOnHover && "hover:-translate-y-2",
           className
         )}
