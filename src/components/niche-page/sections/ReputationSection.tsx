@@ -40,7 +40,7 @@ export const ReputationSection = ({ config }: ReputationSectionProps) => {
                   ))}
                 </ul>
               </div>
-              <div className="bg-muted/50 rounded-xl p-6">
+              <div className="bg-[hsl(210_45%_14%)] border border-[hsl(188_78%_41%_/_0.25)] rounded-xl p-6">
                 <h4 className="font-semibold text-foreground mb-4">Smart Review Request Flow</h4>
                 <div className="space-y-3">
                   {config.reviewFlowSteps.map((step, i) => (

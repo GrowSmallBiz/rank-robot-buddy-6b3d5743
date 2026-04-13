@@ -36,7 +36,7 @@ export const RealResultsSection = ({ config }: RealResultsSectionProps) => {
               <div className="p-6">
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   {card.metrics.map((metric, j) => (
-                    <div key={j} className="text-center p-3 rounded-lg bg-muted/50">
+                    <div key={j} className="text-center p-3 rounded-lg bg-[hsl(210_45%_14%)] border border-[hsl(188_78%_41%_/_0.2)]">
                       <p className="text-2xl font-black text-primary">{metric.value}</p>
                       <p className="text-xs text-muted-foreground mt-1">{metric.label}</p>
                     </div>

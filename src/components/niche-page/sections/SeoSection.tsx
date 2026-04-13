@@ -39,7 +39,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               {config.aiSearchStats.map((stat, i) => (
-                <div key={i} className="p-4 bg-background/60 backdrop-blur-sm rounded-xl border border-border">
+                <div key={i} className="p-4 bg-[hsl(210_45%_14%)] backdrop-blur-sm rounded-xl border border-[hsl(188_78%_41%_/_0.25)]">
                   <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </div>

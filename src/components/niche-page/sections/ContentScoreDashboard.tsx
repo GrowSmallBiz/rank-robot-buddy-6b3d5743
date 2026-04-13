@@ -32,7 +32,7 @@ export const ContentScoreDashboard = () => {
   const largeArcFill = filledAngle > 180 ? 1 : 0;
 
   return (
-    <div className="rounded-2xl border border-border bg-[hsl(210_50%_8%)] p-6 md:p-8">
+    <div className="rounded-2xl border-2 border-[hsl(188_78%_41%_/_0.25)] bg-[hsl(210_50%_8%)] p-6 md:p-8">
       {/* Overall Score Gauge */}
       <div className="flex flex-col items-center mb-8">
         <svg width="160" height="120" viewBox="0 0 160 120">
@@ -83,7 +83,7 @@ export const ContentScoreDashboard = () => {
         {scores.map((score) => (
           <div
             key={score.label}
-            className="rounded-xl border border-border bg-[hsl(210_45%_12%)] p-4"
+            className="rounded-xl border border-[hsl(188_78%_41%_/_0.2)] bg-[hsl(210_45%_12%)] p-4"
           >
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-medium text-foreground">{score.label}</span>
