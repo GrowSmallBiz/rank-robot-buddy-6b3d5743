@@ -832,32 +832,6 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     },
   ],
 
-  // ══════════════════════════════════════════════════════════════════════
-  // CAMPAIGN RESULTS CARDS
-  // ══════════════════════════════════════════════════════════════════════
-  campaignResultsCardsHeadline: "Campaign Results",
-  campaignResultsCards: [
-    {
-      title: "Tree & Lawn SEO Growth",
-      channel: "Local SEO Campaign",
-      metrics: [
-        "+25.77% Clicks",
-        "+138.54% Impressions",
-        "1.1 Average Map Rank",
-        "+770% Phone Number Clicks",
-      ],
-    },
-    {
-      title: "Tree & Lawn Google PPC Growth",
-      channel: "Google Ads Lead Generation Campaign",
-      metrics: [
-        "Clicks → +169.5%",
-        "Conversions → +211.5%",
-        "Conversion Rate → +16.7%",
-        "Last 90 Days → 299 Conversions",
-      ],
-    },
-  ],
 
   // ══════════════════════════════════════════════════════════════════════
   // CASE STUDY LINKS
