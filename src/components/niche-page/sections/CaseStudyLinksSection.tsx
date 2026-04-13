@@ -26,7 +26,7 @@ export const CaseStudyLinksSection = ({ links }: CaseStudyLinksSectionProps) => 
               <a
                 key={link.url}
                 href={link.url}
-                className="group flex items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-primary/40 hover:-translate-y-1"
+                className="group flex items-start gap-4 rounded-2xl border-2 border-[hsl(188_78%_41%_/_0.25)] bg-[hsl(210_45%_18%)] p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-[hsl(188_78%_41%_/_0.5)] hover:-translate-y-1"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                   <Icon className="w-6 h-6 text-primary" />
