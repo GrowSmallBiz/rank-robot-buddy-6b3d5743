@@ -24,12 +24,12 @@ export const CoreServicesSection = ({ config }: CoreServicesSectionProps) => {
           {config.coreServices.map((service, i) => {
             const Icon = service.icon;
             const content = (
-              <div className="feature-card-teal group hover:border-primary/30 transition-colors">
+              <div className="feature-card-teal group hover:border-primary/30 transition-colors h-full flex flex-col">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{service.title}</h3>
-                <p className="text-muted-foreground text-sm mb-3">{service.whatWeDo}</p>
+                <p className="text-muted-foreground text-sm mb-3 flex-grow">{service.whatWeDo}</p>
                 <p className="text-sm font-medium text-primary">{service.impact}</p>
                 {service.url && (
                   <div className="mt-4 flex items-center gap-1 text-primary text-sm font-medium group-hover:gap-2 transition-all">
@@ -40,11 +40,11 @@ export const CoreServicesSection = ({ config }: CoreServicesSectionProps) => {
             );
 
             return service.url ? (
-              <a key={i} href={service.url} className="block">
+              <a key={i} href={service.url} className="block h-full">
                 {content}
               </a>
             ) : (
-              <div key={i}>{content}</div>
+              <div key={i} className="h-full">{content}</div>
             );
           })}
         </div>
