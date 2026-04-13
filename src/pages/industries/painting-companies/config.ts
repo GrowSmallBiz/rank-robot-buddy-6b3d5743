@@ -8,19 +8,19 @@ import {
   Youtube, Zap, Layers, Palette, PhoneCall, Paintbrush, Home,
 } from "lucide-react";
 
-// Placeholder images — reuse tree-lawn-landscaping assets until painting-specific images are created
-import heroImage from "@/assets/tree-lawn-landscaping/tree-lawn-landscaping-hero.webp";
-import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-lawn-website-screenshot.webp";
-import residentialInteriorSeo from "@/assets/tree-lawn-landscaping/tree-service-seo-keywords.webp";
-import residentialExteriorSeo from "@/assets/tree-lawn-landscaping/lawn-care-seo-keywords.webp";
-import commercialPaintingSeo from "@/assets/tree-lawn-landscaping/landscaping-seo-keywords.webp";
-import springExteriorPainting from "@/assets/tree-lawn-landscaping/emergency-tree-removal-ad.webp";
-import fallInteriorPainting from "@/assets/tree-lawn-landscaping/spring-lawn-care-ad.webp";
-import commercialPainting from "@/assets/tree-lawn-landscaping/fall-tree-service-ad.webp";
-import residentialPainting from "@/assets/tree-lawn-landscaping/commercial-landscaping-ad.webp";
-import newConstructionPainting from "@/assets/tree-lawn-landscaping/local-map-pack-ad.webp";
-import aiReceptionistMulticall from "@/assets/tree-lawn-landscaping/ai-receptionist-multicall.webp";
-import aiWebsiteLivechat from "@/assets/tree-lawn-landscaping/ai-website-livechat.webp";
+// Painting-specific images
+import heroImage from "@/assets/painting-companies/painting-hero.jpg";
+import websiteScreenshot from "@/assets/painting-companies/painting-website-screenshot.jpg";
+import residentialInteriorSeo from "@/assets/painting-companies/residential-interior-seo.jpg";
+import residentialExteriorSeo from "@/assets/painting-companies/residential-exterior-seo.jpg";
+import commercialPaintingSeo from "@/assets/painting-companies/commercial-painting-seo.jpg";
+import springExteriorPainting from "@/assets/painting-companies/spring-exterior-painting.jpg";
+import fallInteriorPainting from "@/assets/painting-companies/fall-interior-painting.jpg";
+import commercialPainting from "@/assets/painting-companies/commercial-painting-ad.jpg";
+import residentialPainting from "@/assets/painting-companies/residential-painting.jpg";
+import newConstructionPainting from "@/assets/painting-companies/new-construction-painting.jpg";
+import aiReceptionistMulticall from "@/assets/painting-companies/ai-receptionist-painting.jpg";
+import aiWebsiteLivechat from "@/assets/painting-companies/ai-website-chat-painting.jpg";
 
 export const paintingCompaniesConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
