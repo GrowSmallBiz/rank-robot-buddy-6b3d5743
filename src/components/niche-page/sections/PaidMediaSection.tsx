@@ -93,11 +93,11 @@ export const PaidMediaSection = ({ config, strategySessionUrl }: PaidMediaSectio
         {/* Platform Recommendations Table */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-foreground text-center mb-6">Where We Run Your Ads — Platform Strategy by Genre</h3>
-          <div className="bg-card border border-border rounded-2xl overflow-hidden">
+          <div className="bg-[hsl(210_45%_18%)] border-2 border-[hsl(188_78%_41%_/_0.3)] rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(23,162,184,0.15)]">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b border-border bg-muted/30">
+                  <tr className="border-b-2 border-[hsl(188_78%_41%_/_0.3)] bg-[hsl(210_45%_14%)]">
                     <th className="px-6 py-4 text-left text-sm font-bold text-foreground">Genre</th>
                     <th className="px-6 py-4 text-left text-sm font-bold text-primary">
                       Primary Platforms
@@ -109,7 +109,7 @@ export const PaidMediaSection = ({ config, strategySessionUrl }: PaidMediaSectio
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-border">
+                <tbody className="divide-y divide-[hsl(188_78%_41%_/_0.15)]">
                   {config.paidMediaByGenre.map((genre, i) => {
                     const colors = colorConfig[genre.color] || colorConfig.blue;
                     const GenreIcon = genre.icon;
@@ -202,7 +202,7 @@ export const PaidMediaSection = ({ config, strategySessionUrl }: PaidMediaSectio
         </div>
 
         {/* Tracking & Retargeting */}
-        <div className="bg-card border border-border rounded-2xl p-8">
+        <div className="bg-[hsl(210_45%_18%)] border-2 border-[hsl(188_78%_41%_/_0.25)] rounded-2xl p-8">
           <h3 className="text-xl font-bold text-foreground mb-6 text-center">
             We Set Up Tracking & Retargeting for You
           </h3>

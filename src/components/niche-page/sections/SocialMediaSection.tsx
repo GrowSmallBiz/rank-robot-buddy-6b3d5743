@@ -46,10 +46,10 @@ export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
         <h3 className="text-xl font-bold text-foreground mb-6 text-center">
           Where We Focus Your Social Presence — By Genre
         </h3>
-        <GlowCard className="p-6 overflow-x-auto mb-16">
+        <GlowCard className="p-6 overflow-x-auto mb-16 border-[hsl(188_78%_41%_/_0.35)]">
           <table className="w-full min-w-[800px]">
             <thead>
-              <tr className="border-b border-border">
+              <tr className="border-b-2 border-[hsl(188_78%_41%_/_0.3)]">
                 <th className="text-left py-3 px-4 font-semibold text-foreground">Genre</th>
                 <th className="text-left py-3 px-4 font-semibold text-foreground">
                   <div className="flex items-center gap-2">
@@ -69,7 +69,7 @@ export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
               {config.socialMediaByGenre.map((genre, i) => {
                 const colors = colorConfig[genre.color] || colorConfig.blue;
                 return (
-                  <tr key={i} className="border-b border-border/50 last:border-0">
+                  <tr key={i} className="border-b border-[hsl(188_78%_41%_/_0.15)] last:border-0">
                     <td className={`py-4 px-4 font-semibold ${colors.text} whitespace-nowrap`}>{genre.genre}</td>
                     <td className="py-4 px-4">
                       <div className="space-y-3">
