@@ -15,6 +15,9 @@ Canonical: https://growsmallbiz.io/
 
 ## Services
 - Services: https://growsmallbiz.io/services/
+- Facebook Ads: https://growsmallbiz.io/services/facebook-ads/
+- Google Ads: https://growsmallbiz.io/services/google-ads/
+- Local SEO: https://growsmallbiz.io/services/local-seo/
 - Marketing Automation For Small Business: https://growsmallbiz.io/services/marketing-automation-for-small-business/
 - Calendar Scheduling: https://growsmallbiz.io/services/marketing-automation-for-small-business/calendar-scheduling/
 - Call Tracking: https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking/
@@ -46,6 +49,14 @@ Canonical: https://growsmallbiz.io/
 - Technical SEO: https://growsmallbiz.io/services/seo-agency/technical-seo/
 - Website Design: https://growsmallbiz.io/services/website-design/
 
-## Legal
-- Privacy Policy: https://growsmallbiz.io/privacy-policy/
-- Terms Of Service: https://growsmallbiz.io/terms-of-service/
+## Case Studies
+- Chiropractic Case Study: https://growsmallbiz.io/case-studies/chiropractic-case-study/
+- Cleaning Services: https://growsmallbiz.io/case-studies/cleaning-services/
+- Dental Case Study: https://growsmallbiz.io/case-studies/dental-case-study/
+- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/
+- Home Remodeling: https://growsmallbiz.io/case-studies/home-remodeling/
+- Local SEO Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/local-seo-hvac-plumbing-electrical/
+- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/local-seo-service/hvac-plumbing-electrical/
+- Med Spa Case Study: https://growsmallbiz.io/case-studies/med-spa-case-study/
+- Roofers: https://growsmallbiz.io/case-studies/roofers/
+- Tree Lawn Landscaping: https://growsmallbiz.io/case-studies/tree-lawn-landscaping/
