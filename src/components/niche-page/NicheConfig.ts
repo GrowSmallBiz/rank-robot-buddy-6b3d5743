@@ -465,6 +465,14 @@ export interface NicheConfig {
   // ── Case Study Links (optional) ──
   caseStudyLinks?: CaseStudyLink[];
 
+  // ── Industry Stats (optional) ──
+  industryStats?: {
+    headline: string;
+    headlineHighlight: string;
+    subheadline: string;
+    items: IndustryStatItem[];
+  };
+
   // ── NEW EXTENSION FIELDS (all optional) ──
 
   // ── Hero Extended ──

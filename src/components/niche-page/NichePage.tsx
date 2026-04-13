@@ -12,6 +12,7 @@ import type { NicheConfig } from "./NicheConfig";
 import { HeroSection } from "./sections/HeroSection";
 import { HeroExtendedSection } from "./sections/HeroExtendedSection";
 import { PainPointsSection } from "./sections/PainPointsSection";
+import { IndustryStatsSection } from "./sections/IndustryStatsSection";
 import { SystemDiagramSection } from "./sections/SystemDiagramSection";
 import { CtaBlock } from "./sections/CtaBlock";
 import { OnThisPageNav } from "./sections/OnThisPageNav";
