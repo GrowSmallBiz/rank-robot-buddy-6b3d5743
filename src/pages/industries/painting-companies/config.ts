@@ -37,6 +37,17 @@ export const paintingCompaniesConfig: NicheConfig = {
     { name: "Home Service Contractors", url: "/home-service-contractors/" },
     { name: "Painting Companies Marketing", url: "/home-service-contractors/painting-companies-marketing/" },
   ],
+  offerCatalog: {
+    name: "Painting Company Marketing Services",
+    items: [
+      { name: "Local SEO & Google Business Profile" },
+      { name: "Conversion-Focused Website Design" },
+      { name: "Google Ads (LSA + PPC) & Meta Ads" },
+      { name: "Reputation Management" },
+      { name: "AI Receptionist & 24/7 Lead Capture" },
+      { name: "Lead Nurture & Client Reactivation" },
+    ],
+  },
 
   // ══════════════════════════════════════════════════════════════════════
   // 4.2  HERO SECTION

@@ -36,6 +36,17 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     { name: "Home Service Contractors", url: "/home-service-contractors/" },
     { name: "Tree, Lawn Care & Landscaping Marketing", url: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
   ],
+  offerCatalog: {
+    name: "Tree Service & Lawn Care Marketing Services",
+    items: [
+      { name: "Local SEO & Google Business Profile" },
+      { name: "Conversion-Focused Website Design" },
+      { name: "Google Ads (LSA + PPC)" },
+      { name: "Reputation Management" },
+      { name: "AI Receptionist & 24/7 Lead Capture" },
+      { name: "Lead Nurture & Client Reactivation" },
+    ],
+  },
 
   // ══════════════════════════════════════════════════════════════════════
   // 4.2  HERO SECTION
@@ -897,7 +908,6 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       caseStudyUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-google-ads-case-study/",
     },
   ],
-
 
   // ══════════════════════════════════════════════════════════════════════
   // CASE STUDY LINKS
