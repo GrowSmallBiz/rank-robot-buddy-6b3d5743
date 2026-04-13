@@ -5,7 +5,7 @@ import {
   Heart, Eye, Repeat, DollarSign, RefreshCw, MapPin, BarChart3,
   Gift, CalendarCheck, Leaf, Sprout, Lightbulb, UserPlus,
   FileText, ClipboardList, Building2, Linkedin, Instagram, Facebook,
-  Youtube, Zap, Layers,
+  Youtube, Zap, Layers, Palette, PhoneCall,
 } from "lucide-react";
 
 import heroImage from "@/assets/tree-lawn-landscaping/tree-lawn-landscaping-hero.webp";
