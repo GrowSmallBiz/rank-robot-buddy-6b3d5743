@@ -260,6 +260,12 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       whatWeDo: "AI-powered voice and chat that answers, qualifies, and logs every lead – storm-damage calls at midnight, commercial inquiries on weekends.",
       impact: "Zero missed leads regardless of time of day, season, or call volume.",
     },
+    {
+      icon: RefreshCw,
+      title: "Lead Nurture & Client Reactivation",
+      whatWeDo: "Automated email and SMS sequences that convert unsold estimates into booked jobs, re-engage past clients before spring cleanup and storm season ramp-up, and maintain year-round contact with your recurring maintenance base.",
+      impact: "More recurring contracts and seasonal bookings from the leads and customers already in your database — not just the ones who called back unprompted.",
+    },
   ],
 
   // ══════════════════════════════════════════════════════════════════════
