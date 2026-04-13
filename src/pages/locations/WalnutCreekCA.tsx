@@ -608,7 +608,7 @@ const WalnutCreekCA = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
+            <p className="text-muted-foreground mb-6">Serving Businesses Across the East Bay and Tri-Valley</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 { label: "Danville", to: "/locations/danville-ca/" },
