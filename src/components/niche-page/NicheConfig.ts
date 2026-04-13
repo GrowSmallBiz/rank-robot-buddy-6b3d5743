@@ -326,6 +326,7 @@ export interface NicheConfig {
 
   // ── 4.3 Pain Points ──
   painPointsHeadline: string;
+  painPointsHighlight?: string;
   painPointsSubheadline: string;
   painPoints: PainPoint[];
   transitionText: string;
@@ -423,12 +424,14 @@ export interface NicheConfig {
 
   // ── 4.15 Why Choose Us ──
   whyChooseUsHeadline: string;
+  whyChooseUsHighlight?: string;
   whyChooseUsSubtitle: string;
   whyChooseUsBody: string;
   whyChooseUsCards: WhyChooseUsCard[];
 
   // ── 4.16 FAQ ──
   faqHeadline: string;
+  faqHighlight?: string;
   faqSubheadline: string;
   faqCategories: FaqCategory[];
   faqCtaCard: { headline: string; body: string; signoff: string };
@@ -470,6 +473,7 @@ export interface NicheConfig {
 
   // ── Real Results (embedded case study metrics) ──
   realResultsHeadline?: string;
+  realResultsHighlight?: string;
   realResultsSubheadline?: string;
   realResults?: RealResultsCard[];
 
@@ -479,11 +483,13 @@ export interface NicheConfig {
 
   // ── Core Services Overview ──
   coreServicesHeadline?: string;
+  coreServicesHighlight?: string;
   coreServicesSubheadline?: string;
   coreServices?: CoreService[];
 
   // ── Staged Approach ──
   stagedApproachHeadline?: string;
+  stagedApproachHighlight?: string;
   stagedApproachSubheadline?: string;
   stagedApproachBadge?: string;
   stagedApproachStages?: StageItem[];

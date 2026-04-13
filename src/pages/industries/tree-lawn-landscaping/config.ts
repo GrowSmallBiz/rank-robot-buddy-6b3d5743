@@ -86,7 +86,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.3  PAIN POINTS
   // ══════════════════════════════════════════════════════════════════════
-  painPointsHeadline: "Tree Service, Lawn Care & Landscaping Marketing Challenges",
+  painPointsHeadline: "Tree Service, Lawn Care & Landscaping",
+  painPointsHighlight: "Marketing Challenges",
   painPointsSubheadline: "Even the best crews in the Bay Area lose jobs every week to competitors who rank higher, respond faster, and have more reviews. Here is what we hear from tree service and lawn care owners in their first call with us.",
   painPoints: [
     {
@@ -188,7 +189,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // CORE SERVICES OVERVIEW
   // ══════════════════════════════════════════════════════════════════════
-  coreServicesHeadline: "Our Integrated Marketing System for Tree Service, Lawn Care & Landscaping Companies",
+  coreServicesHeadline: "Our Integrated Marketing System for",
+  coreServicesHighlight: "Tree Service, Lawn Care & Landscaping Companies",
   coreServicesSubheadline: "Every service works together. No gaps between channels. One team, one strategy, one dashboard.",
   coreServices: [
     {
@@ -227,7 +229,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // STAGED APPROACH — NEW
   // ══════════════════════════════════════════════════════════════════════
   stagedApproachBadge: "WHERE TO START",
-  stagedApproachHeadline: "You Don't Have to Do Everything at Once",
+  stagedApproachHeadline: "You Don't Have to Do",
+  stagedApproachHighlight: "Everything at Once",
   stagedApproachSubheadline: "Most tree service and lawn care companies try to launch SEO, Google Ads, a new website, and automation all at the same time — then wonder why nothing gets traction. GrowSmallBiz uses a staged approach that builds each layer on a solid foundation, so every dollar you invest compounds on the one before it.",
   stagedApproachStages: [
     {
@@ -782,7 +785,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.15  WHY CHOOSE US
   // ══════════════════════════════════════════════════════════════════════
-  whyChooseUsHeadline: "Why Tree Service, Lawn Care & Landscaping Companies Choose GrowSmallBiz",
+  whyChooseUsHeadline: "Why Tree Service, Lawn Care & Landscaping Companies",
+  whyChooseUsHighlight: "Choose GrowSmallBiz",
   whyChooseUsSubtitle: "Your Green Industry Marketing Partner — Not a Generalist Agency",
   whyChooseUsBody: "GrowSmallBiz Digital Marketing, founded by Subrata Guha and headquartered in Danville, CA, specializes in marketing for tree service, lawn care, and landscaping companies across the San Francisco Bay Area and the United States. We bring 30+ years of enterprise marketing and digital transformation experience to the green industry – combined with the local market knowledge that national agencies cannot replicate.",
   whyChooseUsCards: [
@@ -797,7 +801,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // REAL RESULTS
   // ══════════════════════════════════════════════════════════════════════
-  realResultsHeadline: "Real Results for Tree Service, Lawn Care & Landscaping Companies",
+  realResultsHeadline: "Real Results for Tree Service,",
+  realResultsHighlight: "Lawn Care & Landscaping Companies",
   realResultsSubheadline: "Verified campaign data from GrowSmallBiz clients in the tree service, lawn care, and landscaping industry. Two independently verified campaigns – AI SEO and Google Ads.",
   realResults: [
     {
@@ -854,7 +859,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.16  FAQ
   // ══════════════════════════════════════════════════════════════════════
-  faqHeadline: "Tree Service, Lawn Care & Landscaping Marketing FAQs",
+  faqHeadline: "Tree Service, Lawn Care & Landscaping",
+  faqHighlight: "Marketing FAQs",
   faqSubheadline: "Common questions from tree service and lawn care business owners — organized by topic",
   faqCategories: [
     {

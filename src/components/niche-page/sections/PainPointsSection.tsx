@@ -24,7 +24,12 @@ export const PainPointsSection = ({ config }: PainPointsSectionProps) => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-            {config.painPointsHeadline}
+            {config.painPointsHeadline}{" "}
+            {config.painPointsHighlight && (
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">
+                {config.painPointsHighlight}
+              </span>
+            )}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             {config.painPointsSubheadline}
