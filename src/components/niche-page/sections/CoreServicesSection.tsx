@@ -40,11 +40,11 @@ export const CoreServicesSection = ({ config }: CoreServicesSectionProps) => {
             );
 
             return service.url ? (
-              <a key={i} href={service.url} className="block">
+              <a key={i} href={service.url} className="block h-full">
                 {content}
               </a>
             ) : (
-              <div key={i}>{content}</div>
+              <div key={i} className="h-full">{content}</div>
             );
           })}
         </div>
