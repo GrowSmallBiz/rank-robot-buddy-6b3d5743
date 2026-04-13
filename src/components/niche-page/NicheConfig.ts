@@ -422,6 +422,16 @@ export interface NicheConfig {
   aiVoiceChatSubheadline: string;
   aiFeatures: AiFeature[];
 
+  // ── 4.14b AI Receptionist Extended (optional) ──
+  aiReceptionistComparisonH3?: string;
+  aiReceptionistComparisonBody?: string;
+  aiReceptionistComparison?: { human: string; ai: string }[];
+  aiReceptionistHighlightText?: string;
+  aiReceptionistImage?: string;
+  aiVoiceFeatureBullets?: string[];
+  aiChatImage?: string;
+  aiChatFeatureBullets?: string[];
+
   // ── 4.15 Why Choose Us ──
   whyChooseUsHeadline: string;
   whyChooseUsHighlight?: string;

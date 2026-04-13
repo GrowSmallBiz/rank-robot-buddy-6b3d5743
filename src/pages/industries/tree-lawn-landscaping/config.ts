@@ -756,30 +756,48 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   aiVoiceChatSectionHeadline: "Never Miss a Storm-Damage Call",
   aiVoiceChatHighlight: "Again.",
-  aiVoiceChatSubheadline: "Never miss a storm-damage call at midnight, a commercial inquiry on Sunday, or an emergency tree removal request during your busiest week. Our AI Receptionist answers, qualifies, and logs every lead – automatically.",
+  aiVoiceChatSubheadline: "Never miss a storm-damage call at midnight, a commercial inquiry on Sunday, or an emergency tree removal request during your busiest week. Your AI Receptionist and Website Live Chat work together — answering, qualifying, booking, and following up with every lead automatically, around the clock.",
   aiFeatures: [
-    {
-      title: "24/7 AI Voice Receptionist", icon: Phone, color: "from-violet-500/20 to-violet-600/10",
-      description: "Your AI Receptionist answers every call – storm-damage emergencies at 2am, quote requests during peak season, commercial inquiries on weekends. It qualifies the lead, captures contact details, and books a callback automatically.",
-      features: [
-        "Answers calls 24/7 including weekends and storm season",
-        "Qualifies leads by service type (tree removal, lawn care, landscaping, commercial)",
-        "Captures name, address, service needed, and urgency level",
-        "Books callback appointments directly into your calendar",
-        "Sends lead summary via SMS and email within 60 seconds",
-      ],
-    },
-    {
-      title: "Conversational AI Chat", icon: MessageSquare, color: "from-cyan-500/20 to-cyan-600/10",
-      description: "AI-powered website chat that answers common questions about tree service, lawn care, and landscaping – pricing, availability, service areas, emergency response times – and captures lead contact information around the clock.",
-      features: [
-        "Answers FAQs about services, pricing, and availability instantly",
-        "Captures lead info from website visitors at any hour",
-        "Handles seasonal inquiry spikes without staffing changes",
-        "Escalates emergency requests to on-call notification",
-        "Integrates with your CRM for automatic lead logging",
-      ],
-    },
+    { title: "24/7 AI Voice Receptionist", icon: Phone, color: "violet", description: "", features: [] },
+    { title: "Conversational AI Chat", icon: MessageSquare, color: "cyan", description: "", features: [] },
+  ],
+
+  // ── Extended AI Receptionist Section ──
+  aiReceptionistComparisonH3: "One AI Receptionist. Zero Sick Days. A Fraction of the Cost.",
+  aiReceptionistComparisonBody: "A full-time receptionist costs $38,000–$52,000 per year in salary alone — before benefits, payroll taxes, PTO, training, and turnover. And even the best human receptionist clocks out at 5pm, takes lunch breaks, calls in sick, and can only handle one call at a time. Your AI Receptionist works every hour of every day — and never puts a storm-damage caller on hold.",
+  aiReceptionistComparison: [
+    { human: "Works 9am–5pm Monday to Friday", ai: "Available 24/7/365 — midnight storm calls, Sunday commercial inquiries, holiday emergencies" },
+    { human: "One call at a time — callers get voicemail during peak volume", ai: "Handles unlimited simultaneous calls — every caller answered instantly" },
+    { human: "$38,000–$52,000/year salary + benefits, PTO, sick leave, payroll tax", ai: "Fraction of the cost — no benefits, no PTO, no sick days, no turnover" },
+    { human: "Takes lunch breaks, coffee breaks, personal time", ai: "Zero downtime — no breaks, no distractions, always at full capacity" },
+    { human: "Calls in sick — no coverage during storm season spikes", ai: "Never sick, never on vacation — always available when you need it most" },
+    { human: "Weeks of training before productive", ai: "Live in 30 days — pre-trained on your services, pricing, and service area" },
+    { human: "Cannot send payment links, booking confirmations, or SMS follow-ups", ai: "Books appointments, sends payment links, confirms arrival windows — automatically" },
+    { human: "Covers phone calls only — no website chat coverage", ai: "Covers phone calls and website live chat from one unified AI system" },
+    { human: "May misroute urgent after-hours requests", ai: "Detects urgency by service type — escalates emergencies to your on-call team instantly" },
+    { human: "Cannot transfer to a human outside business hours", ai: "Transfers to a live human when needed — flags after-hours emergencies for immediate callback" },
+  ],
+  aiReceptionistHighlightText: "When a homeowner calls at 11pm about a tree that fell on their fence during a storm — your competitor's voicemail gets the call. Your AI Receptionist answers, qualifies the job, books the estimate, and sends a confirmation SMS. That job is yours before sunrise.",
+  aiReceptionistImage: (await import("@/assets/tree-lawn-landscaping/ai-receptionist-multicall.webp")).default,
+  aiVoiceFeatureBullets: [
+    "Answers every call 24/7 — storm damage at midnight, commercial inquiries on Sunday, emergency removals during your busiest week",
+    "Qualifies the lead by service type (tree removal, lawn care, landscaping, commercial) and urgency level",
+    "Books estimate appointments directly into your calendar — no back-and-forth, no missed scheduling windows",
+    "Sends payment links for deposits or completed jobs via SMS — collect faster without chasing invoices",
+    "Confirms booked appointments automatically — arrival window SMS the day before and morning of, with crew name and contact number",
+    "Transfers to a live human team member when needed — and flags after-hours emergencies for immediate callback",
+    "Integrates with your CRM — every lead logged automatically with full conversation summary",
+    "Sends lead summary to your team via SMS and email within 60 seconds of every inquiry",
+  ],
+  aiChatImage: (await import("@/assets/tree-lawn-landscaping/ai-website-livechat.webp")).default,
+  aiChatFeatureBullets: [
+    "Answers service questions, pricing queries, and availability requests instantly — 24/7, no staffing required",
+    "Qualifies website visitors by service interest, location, and urgency before routing to your team",
+    "Captures lead contact information from visitors who are not ready to call but are actively researching",
+    "Books estimate appointments directly from the chat widget — no phone call required",
+    "Sends payment links for deposits via chat for clients who prefer not to call",
+    "Escalates emergency requests (storm damage, hazardous tree) to immediate callback notification",
+    "Hands off seamlessly to your AI Voice Receptionist — one unified system across phone and web",
   ],
 
   // ══════════════════════════════════════════════════════════════════════
