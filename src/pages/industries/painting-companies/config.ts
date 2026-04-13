@@ -9,18 +9,18 @@ import {
 } from "lucide-react";
 
 // Painting-specific images
-import heroImage from "@/assets/painting-companies/painting-hero.jpg";
-import websiteScreenshot from "@/assets/painting-companies/painting-website-screenshot.jpg";
-import residentialInteriorSeo from "@/assets/painting-companies/residential-interior-seo.jpg";
-import residentialExteriorSeo from "@/assets/painting-companies/residential-exterior-seo.jpg";
-import commercialPaintingSeo from "@/assets/painting-companies/commercial-painting-seo.jpg";
-import springExteriorPainting from "@/assets/painting-companies/spring-exterior-painting.jpg";
-import fallInteriorPainting from "@/assets/painting-companies/fall-interior-painting.jpg";
-import commercialPainting from "@/assets/painting-companies/commercial-painting-ad.jpg";
-import residentialPainting from "@/assets/painting-companies/residential-painting.jpg";
-import newConstructionPainting from "@/assets/painting-companies/new-construction-painting.jpg";
-import aiReceptionistMulticall from "@/assets/painting-companies/ai-receptionist-painting.jpg";
-import aiWebsiteLivechat from "@/assets/painting-companies/ai-website-chat-painting.jpg";
+import heroImage from "@/assets/painting-companies/painting-hero.webp";
+import websiteScreenshot from "@/assets/painting-companies/painting-website-screenshot.webp";
+import residentialInteriorSeo from "@/assets/painting-companies/residential-interior-seo.webp";
+import residentialExteriorSeo from "@/assets/painting-companies/residential-exterior-seo.webp";
+import commercialPaintingSeo from "@/assets/painting-companies/commercial-painting-seo.webp";
+import springExteriorPainting from "@/assets/painting-companies/spring-exterior-painting.webp";
+import fallInteriorPainting from "@/assets/painting-companies/fall-interior-painting.webp";
+import commercialPainting from "@/assets/painting-companies/commercial-painting-ad.webp";
+import residentialPainting from "@/assets/painting-companies/residential-painting.webp";
+import newConstructionPainting from "@/assets/painting-companies/new-construction-painting.webp";
+import aiReceptionistMulticall from "@/assets/painting-companies/ai-receptionist-painting.webp";
+import aiWebsiteLivechat from "@/assets/painting-companies/ai-website-chat-painting.webp";
 
 export const paintingCompaniesConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
