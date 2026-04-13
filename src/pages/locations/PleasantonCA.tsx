@@ -664,12 +664,15 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { name: "San Ramon", path: "/locations/san-ramon-ca/" },
-              { name: "Danville", path: "/locations/danville-ca/" },
+              { name: "Martinez", path: "/locations/martinez-ca/" },
+              { name: "Concord", path: "/locations/concord-ca/" },
+              { name: "Pleasant Hill", path: "/locations/pleasant-hill-ca/" },
               { name: "Walnut Creek", path: "/locations/walnut-creek-ca/" },
+              { name: "Danville", path: "/locations/danville-ca/" },
+              { name: "San Ramon", path: "/locations/san-ramon-ca/" },
               { name: "Dublin", path: "/locations/dublin-ca/" },
               { name: "Livermore", path: "/locations/livermore-ca/" },
-              { name: "Concord", path: "/locations/concord-ca/" },
+              { name: "Tracy", path: "/locations/tracy-ca/" },
             ].map((city) => (
               <Link
                 key={city.path}

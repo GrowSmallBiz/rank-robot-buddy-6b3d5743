@@ -540,11 +540,15 @@ const PleasantHillCA = () => {
           <p className="text-center text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
-              { label: "Concord", to: "/locations/concord-ca/" },
               { label: "Martinez", to: "/locations/martinez-ca/" },
+              { label: "Concord", to: "/locations/concord-ca/" },
+              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
               { label: "Danville", to: "/locations/danville-ca/" },
               { label: "San Ramon", to: "/locations/san-ramon-ca/" },
+              { label: "Dublin", to: "/locations/dublin-ca/" },
+              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
+              { label: "Livermore", to: "/locations/livermore-ca/" },
+              { label: "Tracy", to: "/locations/tracy-ca/" },
             ].map((city) => (
               <Link key={city.to} to={city.to} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all text-sm font-medium">
                 <MapPin className="w-3.5 h-3.5" />{city.label}

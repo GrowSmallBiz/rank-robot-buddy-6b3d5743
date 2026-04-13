@@ -636,12 +636,15 @@ const WalnutCreekCA = () => {
             <p className="text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
+                { label: "Martinez", to: "/locations/martinez-ca/" },
+                { label: "Concord", to: "/locations/concord-ca/" },
+                { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
                 { label: "Danville", to: "/locations/danville-ca/" },
                 { label: "San Ramon", to: "/locations/san-ramon-ca/" },
-                { label: "Concord", to: "/locations/concord-ca/" },
                 { label: "Dublin", to: "/locations/dublin-ca/" },
                 { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
                 { label: "Livermore", to: "/locations/livermore-ca/" },
+                { label: "Tracy", to: "/locations/tracy-ca/" },
               ].map((city) => (
                 <Link
                   key={city.to}
