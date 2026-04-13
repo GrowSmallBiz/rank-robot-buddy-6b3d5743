@@ -269,7 +269,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
               <GlowCard key={i} className="p-4 text-center">
                 <span className="text-xs text-primary font-medium uppercase tracking-wider">{citation.label}</span>
                 <p className="text-lg font-bold text-foreground my-2">{citation.stat}</p>
-                <p className="text-xs text-muted-foreground">{citation.source} — {citation.publication} ({citation.year})</p>
+                <p className="text-xs text-muted-foreground">{citation.source}{citation.publication ? ` — ${citation.publication}` : ''}{citation.year ? ` (${citation.year})` : ''}</p>
               </GlowCard>
             ))}
           </div>
