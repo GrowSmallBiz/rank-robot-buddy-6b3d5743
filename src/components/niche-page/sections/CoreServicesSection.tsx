@@ -24,7 +24,7 @@ export const CoreServicesSection = ({ config }: CoreServicesSectionProps) => {
           {config.coreServices.map((service, i) => {
             const Icon = service.icon;
             const content = (
-              <div className="feature-card-teal group hover:border-primary/30 transition-colors">
+              <div className="feature-card-teal group hover:border-primary/30 transition-colors h-full flex flex-col">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-primary" />
                 </div>
