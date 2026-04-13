@@ -8,6 +8,11 @@ interface ServiceJsonLdProps {
   breadcrumbs: { name: string; url: string }[];
   /** Optional aggregateRating */
   rating?: { ratingValue: string; reviewCount: string };
+  /** Optional offer catalog for Service schema */
+  offerCatalog?: {
+    name: string;
+    items: { name: string }[];
+  };
 }
 
 const BASE_URL = "https://growsmallbiz.io";
