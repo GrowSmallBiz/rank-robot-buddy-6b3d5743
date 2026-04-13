@@ -231,6 +231,9 @@ export const Header = () => {
                     <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Tree, Lawn & Landscaping
                     </Link>
+                    <Link to="/industries/painting-companies/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Painting
+                    </Link>
                   </div>
                 </div>
 
@@ -575,6 +578,9 @@ export const Header = () => {
                 </Link>
                 <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
                   Tree, Lawn & Landscaping
+                </Link>
+                <Link to="/industries/painting-companies/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Painting
                 </Link>
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-3 pb-1">Health & Wellness</p>
                 <Link to="/health-and-wellness-practices/" onClick={() => setIsOpen(false)} className="block py-2 text-primary hover:text-primary">
