@@ -262,14 +262,14 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         {/* No-Show Reduction */}
         <div className="mb-16">
           <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-            Automated <span className="text-primary">Session Reminders</span> — Reduce No-Shows
+            Automated <span className="text-primary">Appointment Windows</span> — Arrive Ready, Never Miss a Job
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {config.noShowResearchCitations.map((citation, i) => (
               <GlowCard key={i} className="p-4 text-center">
                 <span className="text-xs text-primary font-medium uppercase tracking-wider">{citation.label}</span>
                 <p className="text-lg font-bold text-foreground my-2">{citation.stat}</p>
-                <p className="text-xs text-muted-foreground">{citation.source} — {citation.publication} ({citation.year})</p>
+                <p className="text-xs text-muted-foreground">{citation.source}{citation.publication ? ` — ${citation.publication}` : ''}{citation.year ? ` (${citation.year})` : ''}</p>
               </GlowCard>
             ))}
           </div>
