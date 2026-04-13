@@ -5,7 +5,7 @@ import sanRamonHero from "@/assets/san-ramon-hero.webp";
 
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, Eye, BarChart3, Users, Star, ArrowRight, Phone, Shield, MessageSquare, Award } from "lucide-react";
+import { MapPin, TrendingUp, AlertTriangle, Briefcase, Globe, Search, Target, Zap, Home, Heart, Building2, UtensilsCrossed, Brain, Eye, BarChart3, Users, Star, ArrowRight, Phone, Shield, MessageSquare, Award, CheckCircle } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { sanRamonCards } from "@/components/locations/campaignCardData";
 import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
@@ -98,6 +98,29 @@ const SanRamonCA = () => {
               <span>|</span>
               <span>Certified Strategists</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== TRUST BAR ===== */}
+      <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-accent-foreground">
+            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Greater Concord Chamber of Commerce
+            </a>
           </div>
         </div>
       </section>
@@ -644,12 +667,15 @@ const SanRamonCA = () => {
             <p className="text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
+                { label: "Martinez", to: "/locations/martinez-ca/" },
+                { label: "Concord", to: "/locations/concord-ca/" },
+                { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
+                { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
                 { label: "Danville", to: "/locations/danville-ca/" },
                 { label: "Dublin", to: "/locations/dublin-ca/" },
                 { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
-                { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
                 { label: "Livermore", to: "/locations/livermore-ca/" },
-                { label: "Concord", to: "/locations/concord-ca/" },
+                { label: "Tracy", to: "/locations/tracy-ca/" },
               ].map((city) => (
                 <Link
                   key={city.to}
