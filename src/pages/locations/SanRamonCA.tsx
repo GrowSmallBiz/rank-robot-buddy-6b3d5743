@@ -102,6 +102,29 @@ const SanRamonCA = () => {
         </div>
       </section>
 
+      {/* ===== TRUST BAR ===== */}
+      <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-accent-foreground">
+            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Greater Concord Chamber of Commerce
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Section: What Makes GrowSmallBiz Different */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -118,12 +141,15 @@ const SanRamonCA = () => {
 
           <div className="grid md:grid-cols-2 gap-5">
             {[
-              { label: "We are local:", body: "GrowSmallBiz is headquartered in Danville — five minutes from San Ramon. We know the Tri-Valley competitive landscape, the Bishop Ranch business corridor, and what local service business owners face daily. We are not a national agency managing accounts they have never seen." },
-              { label: "One integrated system:", body: "When you hire separate vendors, each one optimizes for their own deliverable — not your revenue. Our integrated system connects every stage: traffic, conversion, CRM capture, AI follow-up, and automated nurture. One team, one outcome." },
-              { label: "Conversion-first reporting:", body: "We do not report on traffic, impressions, or follower growth unless those metrics connect directly to leads and revenue. Every metric we track has a line drawn to your bottom line." },
-              { label: "AI-powered execution:", body: "AI is built into how our systems operate — from the AI Receptionist answering missed calls to AI QuadBots qualifying website leads to SMART nurture sequences keeping prospects warm. Faster, smarter, more consistent than any manually managed approach." },
-              { label: "Specialized verticals:", body: "We work exclusively with local service businesses, licensed healthcare and wellness professionals, realtors, and brick-and-mortar restaurants. Our systems are purpose-built for businesses that serve local customers directly." },
-              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to your results. We earn your business every single month." },
+              { label: "Martinez", to: "/locations/martinez-ca/" },
+              { label: "Concord", to: "/locations/concord-ca/" },
+              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
+              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
+              { label: "Danville", to: "/locations/danville-ca/" },
+              { label: "Dublin", to: "/locations/dublin-ca/" },
+              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
+              { label: "Livermore", to: "/locations/livermore-ca/" },
+              { label: "Tracy", to: "/locations/tracy-ca/" },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-base text-foreground/90 leading-relaxed">

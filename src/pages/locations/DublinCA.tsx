@@ -100,6 +100,29 @@ const DublinCA = () => {
         </div>
       </section>
 
+      {/* ===== TRUST BAR ===== */}
+      <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-accent-foreground">
+            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Greater Concord Chamber of Commerce
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* What Makes GrowSmallBiz Different */}
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4 max-w-5xl">
@@ -571,12 +594,15 @@ const DublinCA = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { name: "San Ramon", path: "/locations/san-ramon-ca/" },
-              { name: "Danville", path: "/locations/danville-ca/" },
+              { name: "Martinez", path: "/locations/martinez-ca/" },
+              { name: "Concord", path: "/locations/concord-ca/" },
+              { name: "Pleasant Hill", path: "/locations/pleasant-hill-ca/" },
               { name: "Walnut Creek", path: "/locations/walnut-creek-ca/" },
+              { name: "Danville", path: "/locations/danville-ca/" },
+              { name: "San Ramon", path: "/locations/san-ramon-ca/" },
               { name: "Pleasanton", path: "/locations/pleasanton-ca/" },
               { name: "Livermore", path: "/locations/livermore-ca/" },
-              { name: "Concord", path: "/locations/concord-ca/" },
+              { name: "Tracy", path: "/locations/tracy-ca/" },
             ].map((city) => (
               <Link
                 key={city.path}

@@ -98,6 +98,29 @@ const PleasantonCA = () => {
         </div>
       </section>
 
+      {/* ===== TRUST BAR ===== */}
+      <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-accent-foreground">
+            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Greater Concord Chamber of Commerce
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ===== WHY DIFFERENT ===== */}
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4 max-w-5xl">
@@ -281,12 +304,16 @@ const PleasantonCA = () => {
                 </thead>
                 <tbody>
                   {[
-                    { label: "Primary Audience", zip1: "Long-time Pleasanton homeowners, Downtown Main Street shoppers, Fairgrounds-area residents", zip2: "Hacienda Business Park employees (Workday, Oracle, Ross Stores HQ), I-580 corridor new developments" },
-                    { label: "Top Service Demand", zip1: "Home services, dental/wellness, restaurants, retail, professional services", zip2: "Commercial HVAC/maintenance, lunch dining, auto service, healthcare, professional services" },
-                    { label: "Search Behavior", zip1: "Evening and weekend — homeowner research on desktop and mobile", zip2: "Daytime — mobile searches during business hours and BART commutes" },
-                    { label: "Review Profile Needed", zip1: "High volume, strong recency, Downtown community trust signals", zip2: "Fast response, commercial credibility, business-hour availability signals" },
-                    { label: "GrowSmallBiz Strategy", zip1: "Local SEO targeting Downtown Main Street and residential keywords; reputation management for community trust", zip2: "Hacienda Business Park proximity keywords; B2B service landing pages; business-hour campaign scheduling" },
-                  ].map((row, i) => (
+              { name: "Martinez", path: "/locations/martinez-ca/" },
+              { name: "Concord", path: "/locations/concord-ca/" },
+              { name: "Pleasant Hill", path: "/locations/pleasant-hill-ca/" },
+              { name: "Walnut Creek", path: "/locations/walnut-creek-ca/" },
+              { name: "Danville", path: "/locations/danville-ca/" },
+              { name: "San Ramon", path: "/locations/san-ramon-ca/" },
+              { name: "Dublin", path: "/locations/dublin-ca/" },
+              { name: "Livermore", path: "/locations/livermore-ca/" },
+              { name: "Tracy", path: "/locations/tracy-ca/" },
+            ].map((row, i) => (
                     <tr key={i} className="border-b border-foreground/10">
                       <td className="p-4 text-foreground font-semibold align-top">{row.label}</td>
                       <td className="p-4 text-muted-foreground align-top">{row.zip1}</td>

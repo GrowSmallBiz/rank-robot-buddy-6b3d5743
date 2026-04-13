@@ -76,11 +76,21 @@ const MartinezCA = () => {
       <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-accent-foreground">
-            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce</a>
+            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
+            </a>
             <span className="text-accent-foreground/40">|</span>
-            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce</a>
+            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
+            </a>
             <span className="text-accent-foreground/40">|</span>
-            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5"><CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce</a>
+            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Greater Concord Chamber of Commerce
+            </a>
           </div>
         </div>
       </section>
@@ -98,11 +108,15 @@ const MartinezCA = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { label: "Contra Costa proximity:", body: "Based in Danville, 20 minutes from Martinez. We know the difference between Vine Hill and Alhambra Valley, the waterfront corridor's seasonal demand, and the community-oriented buyer behavior that distinguishes Martinez from every I-680 corridor suburb." },
-              { label: "Integrated system:", body: "One system, one strategy, one team accountable for your results. Current SERP leaders run SEO-only or ads-only — no one owns the full picture. Every channel GrowSmallBiz manages feeds a single coordinated goal." },
-              { label: "Community-first reputation strategy:", body: "Martinez is not a transient market. Residents stay, refer neighbors, and choose service providers based on community trust signals. Our review velocity systems are built for markets where word-of-mouth carries more weight than in high-turnover suburban cities." },
-              { label: "AI-powered execution:", body: "AI Receptionist, AI QuadBots, SMART nurture sequences, and VIP Club systems operate 24/7. Over 68% of local searches in Contra Costa County happen on mobile — response speed and mobile-first execution are non-negotiable." },
-              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable. We earn your business every single month." },
+              { label: "Concord", to: "/locations/concord-ca/" },
+              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
+              { label: "Walnut Creek", to: "/locations/walnut-creek-ca/" },
+              { label: "Danville", to: "/locations/danville-ca/" },
+              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
+              { label: "Dublin", to: "/locations/dublin-ca/" },
+              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
+              { label: "Livermore", to: "/locations/livermore-ca/" },
+              { label: "Tracy", to: "/locations/tracy-ca/" },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-foreground">{item.label}</span> {item.body}</p>

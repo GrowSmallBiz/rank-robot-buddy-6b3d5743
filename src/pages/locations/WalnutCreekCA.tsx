@@ -99,6 +99,28 @@ const WalnutCreekCA = () => {
         </div>
       </section>
 
+      {/* ===== TRUST BAR ===== */}
+      <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-accent-foreground">
+            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
+            </a>
+            <span className="text-accent-foreground/40">|</span>
+            <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
+              <CheckCircle className="w-3.5 h-3.5" /> Greater Concord Chamber of Commerce
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Section: What Makes GrowSmallBiz Different */}
       <section className="py-20 bg-background">
@@ -116,12 +138,15 @@ const WalnutCreekCA = () => {
 
           <div className="grid md:grid-cols-2 gap-5">
             {[
-              { label: "Exclusive vertical focus:", body: "We only serve contractors, health & wellness professionals, and real estate pros — not one of dozens of industries." },
-              { label: "Deep East Bay market knowledge:", body: "We understand Walnut Creek's competitive landscape, seasonal demand cycles, and neighborhood-level search behavior." },
-              { label: "Proven local results:", body: "HVAC clients rank in the Google local 3-pack within 90 days; dental practices average 30+ new patient inquiries per month." },
-              { label: "Integrated, not siloed:", body: "Every channel — SEO, Ads, Reputation, AI — feeds one coordinated goal: your growth." },
-              { label: "No long-term contracts:", body: "Month-to-month agreements keep us accountable to results. We earn your business every single month." },
-              { label: "AI-powered speed:", body: "Our AI Receptionist technology responds to missed leads within minutes — because in competitive trades, the first responder wins the job." },
+              { label: "Martinez", to: "/locations/martinez-ca/" },
+              { label: "Concord", to: "/locations/concord-ca/" },
+              { label: "Pleasant Hill", to: "/locations/pleasant-hill-ca/" },
+              { label: "Danville", to: "/locations/danville-ca/" },
+              { label: "San Ramon", to: "/locations/san-ramon-ca/" },
+              { label: "Dublin", to: "/locations/dublin-ca/" },
+              { label: "Pleasanton", to: "/locations/pleasanton-ca/" },
+              { label: "Livermore", to: "/locations/livermore-ca/" },
+              { label: "Tracy", to: "/locations/tracy-ca/" },
             ].map((item, i) => (
               <div key={i} className="bg-card/50 border border-border/60 rounded-xl p-5 border-l-4 border-l-primary">
                 <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-foreground">{item.label}</span> {item.body}</p>
