@@ -204,6 +204,15 @@ export interface TrackingRetargetingItem {
   icon: LucideIcon;
 }
 
+// ───────────────────────────── Industry Stats ─────────────────────────
+
+export interface IndustryStatItem {
+  value: string;       // e.g. '$28.2B' or '45%'
+  label: string;       // e.g. 'U.S. painting contractor industry revenue'
+  source: string;      // e.g. 'IBISWorld 2025'
+  sourceUrl: string;   // full public URL — primary source page
+}
+
 // ───────────────────────────── New Extension Types ─────────────────────
 
 export interface HeroExtendedItem {
@@ -455,6 +464,14 @@ export interface NicheConfig {
 
   // ── Case Study Links (optional) ──
   caseStudyLinks?: CaseStudyLink[];
+
+  // ── Industry Stats (optional) ──
+  industryStats?: {
+    headline: string;
+    headlineHighlight: string;
+    subheadline: string;
+    items: IndustryStatItem[];
+  };
 
   // ── NEW EXTENSION FIELDS (all optional) ──
 
