@@ -90,7 +90,7 @@ export const RetargetingSection = ({ config }: RetargetingSectionProps) => {
               <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mb-5" />
 
               <p className="text-lg md:text-xl font-display leading-relaxed text-center mb-5">
-                <span className="text-foreground font-semibold">SEO helps your photography business show up</span>{" "}
+                <span className="text-foreground font-semibold">SEO helps your tree service or lawn care business show up</span>{" "}
                 <span className="text-muted-foreground">when someone is actively looking.</span>
                 <br className="hidden md:block" />
                 <span className="text-muted-foreground">But </span>

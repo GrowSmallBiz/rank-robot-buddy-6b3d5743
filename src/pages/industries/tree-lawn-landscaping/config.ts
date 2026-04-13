@@ -41,10 +41,10 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   heroImage: heroImage,
   badgeIcon: TreePine,
   badgeText: "Tree, Lawn Care & Landscaping Marketing",
-  h1Line1: "The Marketing Agency That Fills Your Tree Service and Lawn Care Schedule",
+  h1Line1: "The Marketing Agency That Fills Your Tree Service, Lawn Care & Landscaping Schedule",
   h1Highlight: "Year-Round",
   h1Line2: "",
-  heroSubheadline: "GrowSmallBiz combines Local SEO, Google Ads, and AI-powered lead capture to put your tree service or lawn care company in front of Bay Area homeowners the moment they need you — and convert that visibility into booked jobs.",
+  heroSubheadline: "GrowSmallBiz combines Local SEO, Google Ads, and AI-powered lead capture to put your tree service, lawn care, or landscaping company in front of homeowners the moment they need you — and convert that visibility into booked jobs.",
   primaryCtaLabel: "Schedule Strategy Call",
   secondaryCtaLabel: "See Our Services",
   secondaryCtaAnchor: "#solutions",
@@ -68,8 +68,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     },
     {
       icon: MapPin,
-      headline: "Bay Area Local Intelligence",
-      body: "We are based in Danville. We know the seasonal demand patterns, the competitive landscape, and the neighborhoods across Contra Costa County, the Tri-Valley, and the greater Bay Area. Your campaigns reflect real local intelligence — not national agency templates.",
+      headline: "Local Market Intelligence",
+      body: "We know the seasonal demand patterns, competitive landscape, and local conversion factors that drive tree service, lawn care, and landscaping bookings — so every strategy is built on market reality, not assumptions.",
     },
     {
       icon: Shield,
@@ -86,7 +86,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.3  PAIN POINTS
   // ══════════════════════════════════════════════════════════════════════
-  painPointsHeadline: "Tree Service & Lawn Care Marketing Challenges",
+  painPointsHeadline: "Tree Service, Lawn Care & Landscaping Marketing Challenges",
   painPointsSubheadline: "Even the best crews in the Bay Area lose jobs every week to competitors who rank higher, respond faster, and have more reviews. Here is what we hear from tree service and lawn care owners in their first call with us.",
   painPoints: [
     {
@@ -158,7 +158,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     secondaryLabel: "Call Us",
   },
   ctaAfterSeo: {
-    headline: "See Where Your Tree Service or Lawn Care Company Ranks – Free Local SEO Audit",
+    headline: "See Where Your Tree Service, Lawn Care & Landscaping Company Ranks – Free Local SEO Audit",
     subtext: "Find out exactly where your business appears across Google Search, Google Maps, and AI search platforms – and where your competitors are outranking you.",
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "",
@@ -188,7 +188,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // CORE SERVICES OVERVIEW
   // ══════════════════════════════════════════════════════════════════════
-  coreServicesHeadline: "Our Integrated Marketing System for Tree Service & Lawn Care Companies",
+  coreServicesHeadline: "Our Integrated Marketing System for Tree Service, Lawn Care & Landscaping Companies",
   coreServicesSubheadline: "Every service works together. No gaps between channels. One team, one strategy, one dashboard.",
   coreServices: [
     {
@@ -283,7 +283,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // 4.7  WEBSITE DESIGN
   // ══════════════════════════════════════════════════════════════════════
   websiteDesignBadge: "Tree & Lawn Care Website Design",
-  websiteDesignHeadline: "Websites Built to Convert Tree Service and Lawn Care Visitors",
+  websiteDesignHeadline: "Websites Built to Convert Tree Service, Lawn Care & Landscaping Visitors",
   websiteDesignHighlight: "Into Calls and Quote Requests",
   websiteDesignSubheadline: "Most tree service and lawn care websites look outdated, load slowly on mobile, and fail to convert the homeowner who found you on Google. We build fast, mobile-first websites that turn search traffic into booked jobs.",
   websiteDesignImage: websiteScreenshot,
@@ -312,11 +312,11 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // 4.8  SEO SECTION
   // ══════════════════════════════════════════════════════════════════════
   seoBadge: "AI-Powered SEO for Tree Service & Lawn Care",
-  seoHeadline: "Local SEO That Puts Your Tree Service or Lawn Care Company",
+  seoHeadline: "Local SEO That Puts Your Tree Service, Lawn Care & Landscaping Company",
   seoHighlight: "at the Top of Google Maps",
   seoSubheadline: "Comprehensive local search optimization that drives emergency calls, seasonal bookings, and commercial inquiries from homeowners and property managers across your service area.",
-  seoEditorialHeadline: "Why Tree Service & Lawn Care SEO Works",
-  seoEditorialHighlight: "Differently Than General SEO",
+  seoEditorialHeadline: "Why Tree Service, Lawn Care & Landscaping SEO Works",
+  seoEditorialHighlight: "Differently",
   seoEditorialBody: [
     "Local SEO for tree service and lawn care companies works because the search intent is urgent and geographically specific. A homeowner searching 'emergency tree removal near me' at 7am after a storm is ready to hire within minutes — not hours. The company that appears first in the Map Pack with 150+ reviews gets that call. The company on page two does not.",
     "The Map Pack algorithm rewards three signals above all others: proximity to the searcher, review count and recency, and relevance of your Google Business Profile to the search query. GrowSmallBiz optimizes all three systematically — not just your website, but your GBP, your citations, your review velocity, and your local content.",
@@ -574,7 +574,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.12  AI GROWTH SYSTEM
   // ══════════════════════════════════════════════════════════════════════
-  growthSystemHeadline: "for Tree Service & Lawn Care Companies",
+  growthSystemHeadline: "for Tree Service, Lawn Care & Landscaping",
   growthSystemHighlight: "AI Client Growth System",
   growthSystemSubheadline: "Stop chasing leads manually. GrowSmallBiz builds an automated marketing system that captures, qualifies, and follows up with every tree service and lawn care prospect — so your crew focuses on the work, not the phone.",
   clientJourneyStages: [
@@ -782,7 +782,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.15  WHY CHOOSE US
   // ══════════════════════════════════════════════════════════════════════
-  whyChooseUsHeadline: "Why Tree Service & Lawn Care Companies Choose GrowSmallBiz",
+  whyChooseUsHeadline: "Why Tree Service, Lawn Care & Landscaping Companies Choose GrowSmallBiz",
   whyChooseUsSubtitle: "Your Green Industry Marketing Partner — Not a Generalist Agency",
   whyChooseUsBody: "GrowSmallBiz Digital Marketing, founded by Subrata Guha and headquartered in Danville, CA, specializes in marketing for tree service, lawn care, and landscaping companies across the San Francisco Bay Area and the United States. We bring 30+ years of enterprise marketing and digital transformation experience to the green industry – combined with the local market knowledge that national agencies cannot replicate.",
   whyChooseUsCards: [
@@ -798,7 +798,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // REAL RESULTS
   // ══════════════════════════════════════════════════════════════════════
   realResultsHeadline: "Real Results for Tree Service, Lawn Care & Landscaping Companies",
-  realResultsSubheadline: "Verified campaign data from GrowSmallBiz clients in the tree service and lawn care industry. Two independently verified campaigns – AI SEO and Google Ads.",
+  realResultsSubheadline: "Verified campaign data from GrowSmallBiz clients in the tree service, lawn care, and landscaping industry. Two independently verified campaigns – AI SEO and Google Ads.",
   realResults: [
     {
       campaignType: "AI SEO Campaign",
@@ -857,16 +857,6 @@ export const treeLawnLandscapingConfig: NicheConfig = {
         "Last 90 Days → 299 Conversions",
       ],
     },
-    {
-      title: "Landscaping Local SEO Growth",
-      channel: "Local SEO Campaign",
-      metrics: [
-        "+43.14% Impressions",
-        "#1 landscape installation ashland ky",
-        "#1 landscaping service russel",
-        "Strong local rankings despite GBP verification roadblocks",
-      ],
-    },
   ],
 
   // ══════════════════════════════════════════════════════════════════════
@@ -890,7 +880,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.16  FAQ
   // ══════════════════════════════════════════════════════════════════════
-  faqHeadline: "Tree Service & Lawn Care Marketing FAQs",
+  faqHeadline: "Tree Service, Lawn Care & Landscaping Marketing FAQs",
   faqSubheadline: "Common questions from tree service and lawn care business owners — organized by topic",
   faqCategories: [
     {
@@ -959,7 +949,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     },
   ],
   faqCtaCard: {
-    headline: "Have More Questions About Tree Service & Lawn Care Marketing?",
+    headline: "More Questions About Green Industry Marketing?",
     body: "Get a personalized walkthrough of our SEO, Google Ads, and AI systems for your specific market and service mix.",
     signoff: "Let's build your exclusive lead pipeline.",
   },
@@ -1033,7 +1023,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     "Currently paying Angi, Thumbtack, or HomeAdvisor for shared leads and want to eliminate that dependency",
     "Ready to invest in owned marketing for at least 6 months — SEO and reputation building are not overnight results",
     "Want a seasonal marketing calendar and proactive campaign management, not reactive ad spend",
-    "Looking for a Bay Area agency that understands the green industry demand cycle, not a generalist",
+    "Looking for an experienced specialist agency that understands the green industry demand cycle — not a generalist who serves restaurants one month and contractors the next",
     "Commercial contracts, HOA accounts, or property management relationships are part of your growth goal",
     "Landscaping companies with active design-build, hardscape, or commercial portfolio projects looking to convert long-cycle project research into booked consultations",
   ],
@@ -1049,7 +1039,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   midPageCta: {
     headline: "Sound Like Your Business?",
-    subtext: "Let's talk about what owning your local tree service or lawn care market actually looks like. Free 30-minute strategy session, no commitment.",
+    subtext: "Let's talk about what owning your local tree service, lawn care, or landscaping market actually looks like. Free 30-minute strategy session, no commitment.",
     primaryLabel: "Schedule Your Free Strategy Call",
     position: "afterWhoThisIsFor",
   },
