@@ -11,14 +11,16 @@ const Toaster = reactLazy(() => import("@/components/ui/toaster").then(m => ({ d
 const Sonner = reactLazy(() => import("@/components/ui/sonner").then(m => ({ default: m.Toaster })));
 
 const AppLayout = () => (
-  <TooltipProvider>
-    <ScrollToTop />
-    <Suspense fallback={null}>
-      <Toaster />
-      <Sonner />
-    </Suspense>
-    <Outlet />
-  </TooltipProvider>
+  <HelmetProvider>
+    <TooltipProvider>
+      <ScrollToTop />
+      <Suspense fallback={null}>
+        <Toaster />
+        <Sonner />
+      </Suspense>
+      <Outlet />
+    </TooltipProvider>
+  </HelmetProvider>
 );
 
 const lazy = (importFn: () => Promise<{ default: React.ComponentType }>) =>
