@@ -780,7 +780,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     { human: "Cannot transfer to a human outside business hours", ai: "Transfers to a live human when needed — flags after-hours emergencies for immediate callback" },
   ],
   aiReceptionistHighlightText: "When a homeowner calls at 11pm about a tree that fell on their fence during a storm — your competitor's voicemail gets the call. Your AI Receptionist answers, qualifies the job, books the estimate, and sends a confirmation SMS. That job is yours before sunrise.",
-  aiReceptionistImage: (await import("@/assets/tree-lawn-landscaping/ai-receptionist-multicall.webp")).default,
+  aiReceptionistImage: aiReceptionistMulticall,
   aiVoiceFeatureBullets: [
     "Answers every call 24/7 — storm damage at midnight, commercial inquiries on Sunday, emergency removals during your busiest week",
     "Qualifies the lead by service type (tree removal, lawn care, landscaping, commercial) and urgency level",
@@ -791,7 +791,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     "Integrates with your CRM — every lead logged automatically with full conversation summary",
     "Sends lead summary to your team via SMS and email within 60 seconds of every inquiry",
   ],
-  aiChatImage: (await import("@/assets/tree-lawn-landscaping/ai-website-livechat.webp")).default,
+  aiChatImage: aiWebsiteLivechat,
   aiChatFeatureBullets: [
     "Answers service questions, pricing queries, and availability requests instantly — 24/7, no staffing required",
     "Qualifies website visitors by service interest, location, and urgency before routing to your team",
