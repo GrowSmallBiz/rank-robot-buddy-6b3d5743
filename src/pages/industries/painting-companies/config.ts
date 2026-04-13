@@ -254,6 +254,12 @@ export const paintingCompaniesConfig: NicheConfig = {
       whatWeDo: "AI-powered voice and chat that answers, qualifies, and logs every lead — after-hours calls, weekend inquiries, and commercial bid requests.",
       impact: "Zero missed leads regardless of when or how a homeowner or property manager reaches out.",
     },
+    {
+      icon: RefreshCw,
+      title: "Lead Nurture & Client Reactivation",
+      whatWeDo: "Automated email and SMS sequences that follow up with every open quote, re-engage past clients ahead of exterior repainting season, and keep your company top-of-mind for repeat projects and referrals between jobs.",
+      impact: "More booked projects from estimates already in your pipeline — and repeat revenue from homeowners and property managers who used you before.",
+    },
   ],
 
   // ══════════════════════════════════════════════════════════════════════
