@@ -58,5 +58,7 @@ export const CtaBlock = ({ headline, subtext, strategySessionUrl }: CtaBlockProp
         </div>
       </div>
     </div>
+    </div>
+    </section>
   );
 };
