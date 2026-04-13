@@ -29,7 +29,8 @@ const uniqueRoutes = [...new Set(['/', ...routes])];
 
 // Filter out shortcut aliases
 const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/seo-agency', '/seo-agency/aeo', '/seo-agency/geo', '/seo-agency/local-seo', '/seo-agency/authority-building', '/seo-agency/link-building', '/seo-agency/technical-seo', '/seo-agency/on-page-seo'];
-const filteredRoutes = uniqueRoutes.filter(r => !serviceAliases.includes(r));
+const excludedPages = ['/privacy-policy', '/terms-of-service'];
+const filteredRoutes = uniqueRoutes.filter(r => !serviceAliases.includes(r) && !excludedPages.includes(r));
 
 // Categorize routes
 const primaryPages = filteredRoutes.filter(r =>
