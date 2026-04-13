@@ -146,6 +146,41 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   transitionSubtext: "Instead of juggling disconnected tools and chasing leads from aggregators, GrowSmallBiz builds a complete marketing system that generates exclusive, inbound leads from homeowners and commercial clients in your service area.",
 
   // ══════════════════════════════════════════════════════════════════════
+  // INDUSTRY STATS
+  // ══════════════════════════════════════════════════════════════════════
+  industryStats: {
+    headline: "The Market You're",
+    headlineHighlight: "Competing In",
+    subheadline: "Verified industry data — the scale of the market your tree service, lawn care, and landscaping business operates in and why local visibility determines who wins.",
+    items: [
+      {
+        value: "$188.8B",
+        label: "U.S. landscaping services industry revenue in 2025",
+        source: "IBISWorld via NALP 2025",
+        sourceUrl: "https://www.landscapeprofessionals.org/LP/LP/Media/landscape-industry-statistics.aspx",
+      },
+      {
+        value: "692,777",
+        label: "landscaping and lawn care businesses competing for local market share",
+        source: "IBISWorld via NALP 2025",
+        sourceUrl: "https://www.landscapeprofessionals.org/LP/LP/Media/landscape-industry-statistics.aspx",
+      },
+      {
+        value: "<5%",
+        label: "market share held by any single firm — local Map Pack position is the primary differentiator",
+        source: "IBISWorld via LawnStarter 2025",
+        sourceUrl: "https://www.lawnstarter.com/blog/statistics/lawn-care-and-landscaping-industry-statistics/",
+      },
+      {
+        value: "45%",
+        label: "of consumers now use AI tools to find local services — up from 6% one year ago",
+        source: "BrightLocal Local Consumer Review Survey 2026",
+        sourceUrl: "https://www.brightlocal.com/research/lcrs-ai-trust/",
+      },
+    ],
+  },
+
+  // ══════════════════════════════════════════════════════════════════════
   // 4.4  SYSTEM DIAGRAM
   // ══════════════════════════════════════════════════════════════════════
   systemDiagramHeadline: "See How It All Works Together",
@@ -306,9 +341,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   ],
   aiSearchCalloutHeadline: "Google Still Drives Most Tree Service Leads.",
   aiSearchCalloutHighlight: "But AI Search Is Changing How Homeowners Find You.",
-  aiSearchCalloutBody: "When a homeowner asks ChatGPT or Perplexity which tree service company to call in Danville or Walnut Creek, the answer comes from AI-indexed content – not traditional search results. GrowSmallBiz optimizes your website and content for both Google and AI answer engines simultaneously, so you get found regardless of how your next customer searches.",
+  aiSearchCalloutBody: "According to BrightLocal's 2026 Local Consumer Review Survey, 45% of consumers now use AI tools like ChatGPT, Gemini, and Perplexity to find local services — up from just 6% one year ago. AI is now the third most popular source homeowners use when searching for a local business. SOCi's 2026 Local Visibility Index found that ChatGPT currently recommends just 1.2% of all local business locations. When a homeowner asks an AI assistant which tree service or lawn care company to call, the answer comes from AI-indexed content — not traditional search results. GrowSmallBiz optimizes your website and content for both Google and AI answer engines simultaneously, so your business is in the 1.2% that gets recommended — not the 98.8% that AI ignores.",
   aiSearchStats: [
-    { value: "40%+", label: "of consumers use AI for local service recommendations" },
+    { value: "45%", label: "of consumers now use AI to find local services — up from 6% one year ago (BrightLocal 2026)" },
     { value: "6", label: "AI platforms we track for your visibility" },
     { value: "24/7", label: "continuous AI search monitoring and optimization" },
   ],
@@ -323,7 +358,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   seoEditorialHeadline: "Why Tree Service, Lawn Care & Landscaping SEO Works",
   seoEditorialHighlight: "Differently",
   seoEditorialBody: [
-    "Local SEO for tree service and lawn care companies works because the search intent is urgent and geographically specific. A homeowner searching 'emergency tree removal near me' at 7am after a storm is ready to hire within minutes — not hours. The company that appears first in the Map Pack with 150+ reviews gets that call. The company on page two does not.",
+    "Local SEO for tree service and lawn care companies works because the search intent is urgent and geographically specific. A homeowner searching 'emergency tree removal near me' at 7am after a storm is ready to hire within minutes — not hours. The U.S. landscaping services industry generates $188.8 billion annually across 692,777 businesses, with no single firm controlling more than 5% of the market. In this highly fragmented industry, the company that appears first in the Map Pack with strong reviews gets that emergency call. The company on page two does not.",
     "The Map Pack algorithm rewards three signals above all others: proximity to the searcher, review count and recency, and relevance of your Google Business Profile to the search query. GrowSmallBiz optimizes all three systematically — not just your website, but your GBP, your citations, your review velocity, and your local content.",
     "Seasonal demand creates a specific SEO challenge that general agencies miss. Tree service and lawn care searches spike 300 to 400 percent in spring and fall. If your rankings aren't established before the surge, you miss the window. We build your local authority year-round so you own the Map Pack when it matters most.",
     "In the Chicagoland tree and lawn care campaign we managed, the client reached a 1.1 average Map Pack rank across 123 grid points — meaning they ranked first for tree service searches across their entire service area. Total impressions increased 138.54 percent and phone number clicks increased 770 percent in the first two months of the campaign.",
@@ -526,7 +561,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   retargetingHighlight: "Stay Top-of-Mind Until They're Ready to Hire.",
   retargetingSubheadline: "A homeowner researching tree removal or spring lawn care visits your site and leaves without calling. Retargeting brings them back when they're ready to make a decision.",
   retargetingBody: [
-    "Tree service and lawn care decisions are rarely made on the first website visit. A homeowner who gets three estimates will visit five or six websites before calling anyone. Retargeting ensures your company is visible throughout that entire decision window – not just during the first search.",
+    "Tree service and lawn care decisions are rarely made on the first website visit. According to BrightLocal's 2026 research, the average consumer uses six different platforms when evaluating a local business before hiring. A homeowner getting estimates for tree removal or lawn care will visit multiple websites, check reviews across platforms, and compare contractors over days before calling anyone. Retargeting ensures your company is visible throughout that entire decision window — not just during the first search.",
     "GrowSmallBiz sets up Google Display retargeting and Meta retargeting for every paid media client. Visitors who viewed your tree removal or lawn care service pages see your ads across the web and social platforms for up to 30 days after their visit – keeping your brand in front of them until they are ready to book.",
   ],
 
@@ -719,13 +754,13 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   reputationHeadline: "More 5-Star Reviews.",
   reputationHighlight: "Higher Map Pack. More Calls.",
-  reputationSubheadline: "Turn satisfied tree service and lawn care clients into your most powerful marketing channel – a steady stream of 5-star reviews that drives Map Pack rankings and builds homeowner trust before the first phone call.",
+  reputationSubheadline: "According to BrightLocal's 2026 Local Consumer Review Survey, 97% of consumers read reviews before making a hiring decision, 31% ignore any business with a rating below 4.5 stars, and 74% only trust reviews from the last 90 days. For tree service and lawn care companies, reviews determine whether a homeowner calls you or a competitor — before you've ever spoken.",
   reputationBullets: [
-    "Automated review requests sent via SMS and email 48 hours after job completion – when satisfaction is highest",
-    "Google Business Profile review monitoring and response management",
-    "Yelp profile optimization and review velocity management",
-    "Systematic competitor review gap analysis – know exactly how many reviews you need to take the top Map Pack spot",
-    "Negative review response protocols that demonstrate professionalism to future clients searching your name",
+    "97% of consumers read reviews before making a hiring decision — reviews determine whether a homeowner calls you or your competitor (BrightLocal 2026)",
+    "31% of consumers now ignore any business with a rating below 4.5 stars — Map Pack visibility means nothing if your rating disqualifies you on sight (BrightLocal 2026)",
+    "74% of consumers only trust reviews from the last 90 days — review recency matters as much as total count for Map Pack ranking and conversion (BrightLocal 2026)",
+    "89% of consumers expect a response to their reviews — unanswered reviews signal poor customer care to every future client searching your name (BrightLocal 2026)",
+    "Systematic competitor review gap analysis — know exactly how many reviews you need to take the top Map Pack spot",
   ],
   reviewFlowSteps: [
     { step: "1", title: "Job Complete", description: "Crew completes tree removal, lawn maintenance, or landscaping project" },
@@ -810,10 +845,10 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   whyChooseUsSubtitle: "Your Green Industry Marketing Partner — Not a Generalist Agency",
   whyChooseUsBody: "GrowSmallBiz Digital Marketing, founded by Subrata Guha and headquartered in Danville, CA, specializes in marketing for tree service, lawn care, and landscaping companies across the San Francisco Bay Area and the United States. We bring 30+ years of enterprise marketing and digital transformation experience to the green industry – combined with the local market knowledge that national agencies cannot replicate.",
   whyChooseUsCards: [
-    { icon: TreePine, title: "Green Industry Specialists", description: "We focus exclusively on tree service, lawn care, and landscaping companies – not plumbers one week and restaurants the next. That specialization means faster results and fewer learning-curve mistakes." },
+    { icon: TreePine, title: "Green Industry Specialists", description: "GrowSmallBiz focuses exclusively on tree service, lawn care, and landscaping companies — not plumbers one week and restaurants the next. Specialization in the green industry means we understand the emergency nature of storm-damage tree calls, the 300–400% seasonal demand spikes in spring and fall, and the specific Map Pack signals that drive bookings for tree service near me and lawn care near me searches." },
     { icon: MapPin, title: "Bay Area Local", description: "We are based in Danville. We know the seasonal patterns, the competitive landscape, and the neighborhoods across Contra Costa County, the Tri-Valley, and the greater Bay Area. Your campaigns use real local intelligence." },
     { icon: Shield, title: "Exclusive Territory", description: "We do not work with competing tree service or lawn care companies in the same service area. Your leads stay yours – no conflicts of interest, no shared client lists." },
-    { icon: TrendingUp, title: "Proactive Seasonal Management", description: "Every client gets a 12-month seasonal marketing calendar. We ramp before your peaks, not during them – so you own the Map Pack before competitors scramble to catch up." },
+    { icon: TrendingUp, title: "Proactive Seasonal Management", description: "Every client gets a 12-month seasonal marketing calendar built around the green industry's specific demand cycles. We ramp Google Ads budgets and seasonal landing pages 4–6 weeks before each peak — spring prep, storm season, fall cleanup — because tree service and lawn care searches spike 300–400% during these windows. By the time competitors scramble to catch up, you already own the Map Pack." },
     { icon: Bot, title: "AI-Powered Full Stack", description: "Local SEO, Google Ads, reputation management, AI receptionist, and website design – all managed under one roof. One strategy, one dashboard, one point of contact." },
     { icon: BarChart3, title: "Verified Results, Not Promises", description: "We publish verified case study data from real campaigns. The 1.1 Map Pack rank, the +770% phone click increase, the 553 Google Ads conversions – these are from actual GrowSmallBiz campaigns, not industry averages." },
   ],
