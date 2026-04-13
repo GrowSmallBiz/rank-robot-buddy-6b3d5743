@@ -44,12 +44,12 @@ export const hvacConfig: NicheConfig = {
   offerCatalog: {
     name: "HVAC Contractor Marketing Services",
     items: [
-      { name: "Local SEO \& Google Business Profile" },
+      { name: "Local SEO & Google Business Profile" },
       { name: "Conversion-Focused Website Design" },
-      { name: "Google Ads (LSA + PPC) \& Meta Ads" },
+      { name: "Google Ads (LSA + PPC) & Meta Ads" },
       { name: "Reputation Management" },
-      { name: "AI Receptionist \& 24/7 Lead Capture" },
-      { name: "Lead Nurture \& Client Reactivation" },
+      { name: "AI Receptionist & 24/7 Lead Capture" },
+      { name: "Lead Nurture & Client Reactivation" },
     ],
   },
 

@@ -37,14 +37,14 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     { name: "Tree, Lawn Care & Landscaping Marketing", url: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
   ],
   offerCatalog: {
-    name: "Tree Service \& Lawn Care Marketing Services",
+    name: "Tree Service & Lawn Care Marketing Services",
     items: [
-      { name: "Local SEO \& Google Business Profile" },
+      { name: "Local SEO & Google Business Profile" },
       { name: "Conversion-Focused Website Design" },
       { name: "Google Ads (LSA + PPC)" },
       { name: "Reputation Management" },
-      { name: "AI Receptionist \& 24/7 Lead Capture" },
-      { name: "Lead Nurture \& Client Reactivation" },
+      { name: "AI Receptionist & 24/7 Lead Capture" },
+      { name: "Lead Nurture & Client Reactivation" },
     ],
   },
 
