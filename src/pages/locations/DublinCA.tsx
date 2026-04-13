@@ -95,8 +95,6 @@ const DublinCA = () => {
               <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">✓ Danville Area Chamber of Commerce</a>
               <span>|</span>
               <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">✓ San Ramon Chamber of Commerce</a>
-              <span>|</span>
-              <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">✓ Greater Concord Chamber of Commerce</a>
             </div>
           </div>
         </div>

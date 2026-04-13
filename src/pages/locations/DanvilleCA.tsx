@@ -104,10 +104,6 @@ const DanvilleCA = () => {
             <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5">
               <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
             </a>
-            <span className="text-accent-foreground/40">|</span>
-            <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1.5">
-              <CheckCircle className="w-3.5 h-3.5" /> Greater Concord Chamber of Commerce
-            </a>
           </div>
         </div>
       </section>
@@ -624,7 +620,7 @@ const DanvilleCA = () => {
       {/* ===== CROSS-LINK PILLS ===== */}
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
-          <p className="text-center text-muted-foreground mb-6">Serving Businesses Across the East Bay and Tri-Valley</p>
+          <p className="text-center text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { label: "San Ramon", to: "/locations/san-ramon-ca/" },

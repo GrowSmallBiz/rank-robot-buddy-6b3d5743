@@ -96,8 +96,6 @@ const SanRamonCA = () => {
               <span>|</span>
               <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">✓ Walnut Creek Chamber</a>
               <span>|</span>
-              <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">✓ Concord Chamber</a>
-              <span>|</span>
               <span>Certified Strategists</span>
             </div>
           </div>
@@ -643,7 +641,7 @@ const SanRamonCA = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-muted-foreground mb-6">Serving Businesses Across the East Bay and Tri-Valley</p>
+            <p className="text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 { label: "Danville", to: "/locations/danville-ca/" },

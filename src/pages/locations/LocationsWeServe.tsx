@@ -841,9 +841,8 @@ const LocationsWeServe = () => {
                 <p className="text-foreground/90 leading-relaxed text-lg">
                   GrowSmallBiz is also connected to the local business community through membership in the{" "}
                   <a href="https://danvilleareachamber.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Danville Area Chamber</a>,{" "}
-                  <a href="https://sanramon.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">San Ramon Chamber of Commerce</a>,{" "}
-                  <a href="https://www.walnut-creek.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Walnut Creek Chamber of Commerce</a>, and{" "}
-                  <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Greater Concord Chamber of Commerce</a>, reinforcing our commitment to the Bay Area markets and service businesses we support.
+                  <a href="https://sanramon.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">San Ramon Chamber of Commerce</a>, and{" "}
+                  <a href="https://www.walnut-creek.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Walnut Creek Chamber of Commerce</a>, reinforcing our commitment to the Bay Area markets and service businesses we support.
                 </p>
               </div>
             </div>

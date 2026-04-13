@@ -78,7 +78,7 @@ const WalnutCreekCA = () => {
 
             {/* Trust line */}
             <p className="max-w-3xl mx-auto text-sm md:text-base text-muted-foreground leading-relaxed animate-fade-up" style={{ animationDelay: "0.18s" }}>
-              Walnut Creek · Danville · San Ramon · Concord Chamber Member | Certified Strategists
+              Walnut Creek · Danville · San Ramon Chamber Member | Certified Strategists
             </p>
 
             {/* CTA row */}
@@ -608,7 +608,7 @@ const WalnutCreekCA = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-muted-foreground mb-6">Serving Businesses Across the East Bay and Tri-Valley</p>
+            <p className="text-muted-foreground mb-6">If your business also serves nearby communities, explore our pages for:</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 { label: "Danville", to: "/locations/danville-ca/" },
