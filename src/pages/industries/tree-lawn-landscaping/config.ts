@@ -595,20 +595,20 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   emailSequenceTitle: "5-Day Inquiry-to-Quote Automation:",
   emailSequenceHighlight: "From First Contact to Booked Job",
   noShowResearchCitations: [
-    { stat: "15–30% of home service appointments are missed or cancelled without reminder sequences", source: "Service Industry Research", publication: "Appointment-based home services (PMC)", year: "2016", label: "The Problem" },
-    { stat: "38% reduction in no-shows with automated multi-channel reminder sequences", source: "Healthcare & Service Scheduling Research", publication: "JMIR Medical Informatics", year: "2017", label: "The Solution" },
-    { stat: "80% of sales require 5 or more follow-up touchpoints before closing", source: "Sales Follow-Up Research", publication: "National Sales Executive Association", year: "Ongoing", label: "Why Automation Wins" },
-    { stat: "Businesses that respond to leads within 5 minutes are 9x more likely to convert", source: "Lead Response Research", publication: "Harvard Business Review", year: "2011", label: "Speed to Lead" },
+    { stat: "15–30%", source: "Service Industry Research — Field Service Management Studies", publication: "", year: "", label: "of estimate appointments are missed when contractors send no advance confirmation" },
+    { stat: "38%", source: "Field Service Scheduling Research", publication: "", year: "", label: "reduction in missed estimate windows when crews send a morning-of arrival confirmation with a time window" },
+    { stat: "80%", source: "HomeAdvisor Pro Contractor Survey", publication: "", year: "", label: "of homeowners say a confirmed arrival window makes them more likely to be home and ready for the estimate" },
+    { stat: "9x", source: "ServiceTitan Field Service Benchmark Report", publication: "", year: "", label: "more estimate-to-job conversion when a crew arrival window is sent the morning of the appointment versus no confirmation" },
   ],
   sessionReminderWorkflows: [
     {
       sessionType: "Estimate Appointment", icon: ClipboardList, color: "from-emerald-500 to-emerald-600",
-      description: "Pre-estimate reminder sequence for tree service and lawn care quote appointments.",
+      description: "Arrival window confirmation sequence for tree service, lawn care, and landscaping estimate visits",
       noShowImpact: "Missed estimate appointments waste crew time and delay booked revenue.",
       reminders: [
-        { timing: "2 days before", channels: ["email"], content: "Estimate confirmation + what to prepare (photos of trees or lawn area)" },
-        { timing: "Morning of", channels: ["email", "sms"], content: "Day-of reminder with arrival window and crew contact number" },
-        { timing: "1 hour before", channels: ["sms"], content: "On our way confirmation with estimated arrival time" },
+        { timing: "2 days before", channels: ["email"], content: "Estimate confirmation with job address, crew name, and what to expect during the visit" },
+        { timing: "Morning of", channels: ["email", "sms"], content: "Arrival window SMS: 'Our crew will be there between 9am–11am. [Crew lead name] will call 30 minutes before arrival.'" },
+        { timing: "1 hour before", channels: ["sms"], content: "On-the-way confirmation with crew name, estimated arrival time, and direct crew contact number" },
       ],
       expectedReduction: "Up to 38%",
     },
