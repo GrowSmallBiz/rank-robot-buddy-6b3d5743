@@ -90,12 +90,6 @@ if (caseStudyPages.length) {
   }
 }
 
-if (legalPages.length) {
-  output += `\n## Legal\n`;
-  for (const route of legalPages.sort()) {
-    output += `- ${routeToName(route)}: ${BASE_URL}${route}/\n`;
-  }
-}
 
 const outPath = path.resolve(__dirname, '../public/llms.txt');
 fs.writeFileSync(outPath, output, 'utf-8');
