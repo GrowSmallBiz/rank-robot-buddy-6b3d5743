@@ -15,6 +15,7 @@ export const CoreServicesSection = ({ config }: CoreServicesSectionProps) => {
       <div className="container mx-auto px-4">
         <SectionHeader
           title={config.coreServicesHeadline || "Our Services"}
+          titleHighlight={config.coreServicesHighlight}
           description={config.coreServicesSubheadline}
           as="h2"
         />

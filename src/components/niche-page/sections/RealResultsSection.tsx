@@ -16,6 +16,7 @@ export const RealResultsSection = ({ config }: RealResultsSectionProps) => {
         <SectionHeader
           subtitle="Proven Results"
           title={config.realResultsHeadline || "Real Results"}
+          titleHighlight={config.realResultsHighlight}
           description={config.realResultsSubheadline}
           as="h2"
         />
