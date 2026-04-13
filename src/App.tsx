@@ -1,4 +1,5 @@
 /* republish */ import { lazy as reactLazy, Suspense } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
