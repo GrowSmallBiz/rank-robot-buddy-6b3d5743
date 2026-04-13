@@ -87,10 +87,13 @@ const NichePage = ({ config }: NichePageProps) => {
       {/* A. Hero Extended (optional — after hero, before pain points) */}
       <HeroExtendedSection config={config} />
 
-      {/* 2. Pain Points + System Diagram */}
+      {/* 2. Pain Points */}
       <PainPointsSection config={config} />
 
-      {/* 3. System Diagram (inside pain points bg) */}
+      {/* 2b. Industry Stats (optional — after pain points, before system diagram) */}
+      <IndustryStatsSection data={config.industryStats} />
+
+      {/* 3. System Diagram */}
       <SystemDiagramSection config={config} />
 
       {/* CTA after pain points */}
