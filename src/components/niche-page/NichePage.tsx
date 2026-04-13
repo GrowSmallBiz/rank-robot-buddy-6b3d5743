@@ -77,6 +77,7 @@ const NichePage = ({ config }: NichePageProps) => {
         description={config.serviceDescription}
         url={config.canonicalUrl}
         breadcrumbs={config.breadcrumbs}
+        offerCatalog={config.offerCatalog}
       />
 
       <Header />

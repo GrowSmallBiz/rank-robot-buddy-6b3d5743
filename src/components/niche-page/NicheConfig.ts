@@ -319,6 +319,10 @@ export interface NicheConfig {
   serviceType: string;
   serviceDescription: string;
   breadcrumbs: { name: string; url: string }[];
+  offerCatalog?: {
+    name: string;
+    items: { name: string }[];
+  };
 
   // ── 4.2 Hero Section ──
   heroImage: string;

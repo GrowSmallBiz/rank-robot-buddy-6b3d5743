@@ -897,7 +897,17 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       caseStudyUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-google-ads-case-study/",
     },
   ],
-
+  offerCatalog: {
+    name: "Tree Service & Lawn Care Marketing Services",
+    items: [
+      { name: "Local SEO & Google Business Profile" },
+      { name: "Conversion-Focused Website Design" },
+      { name: "Google Ads (LSA + PPC)" },
+      { name: "Reputation Management" },
+      { name: "AI Receptionist & 24/7 Lead Capture" },
+      { name: "Lead Nurture & Client Reactivation" },
+    ],
+  },
 
   // ══════════════════════════════════════════════════════════════════════
   // CASE STUDY LINKS
