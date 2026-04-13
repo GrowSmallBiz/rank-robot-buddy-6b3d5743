@@ -93,7 +93,8 @@ export const routes: RouteRecord[] = [
       { path: "home-service-contractors", lazy: lazy(() => import("./pages/industries/HomeServices")) },
       { path: "home-service-contractors/marketing-for-hvac-contractors", lazy: lazy(() => import("./pages/industries/hvac-marketing/index")) },
       { path: "home-service-contractors/tree-lawn-landscaping-marketing", lazy: lazy(() => import("./pages/industries/tree-lawn-landscaping/index")) },
-      { path: "industries/painting-companies", lazy: lazy(() => import("./pages/industries/painting-companies/index")) },
+      { path: "home-service-contractors/painting-companies-marketing", lazy: lazy(() => import("./pages/industries/painting-companies/index")) },
+      { path: "industries/painting-companies", Component: () => <Redirect to="/home-service-contractors/painting-companies-marketing/" /> },
 
       { path: "health-and-wellness-practices", lazy: lazy(() => import("./pages/industries/HealthAndWellness")) },
       { path: "health-and-wellness-practices/marketing-for-med-spas", lazy: lazy(() => import("./pages/industries/med-spa-marketing/index")) },

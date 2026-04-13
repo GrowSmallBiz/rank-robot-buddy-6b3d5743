@@ -28,14 +28,14 @@ export const paintingCompaniesConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   pageTitle: "Marketing Agency for Painting Companies | GrowSmallBiz Digital Marketing",
   metaDescription: "GrowSmallBiz helps painting contractors get more leads with SEO, Google Ads, AI tools, and reputation management. Book your free strategy call today.",
-  canonicalUrl: "/industries/painting-companies/",
+  canonicalUrl: "/home-service-contractors/painting-companies-marketing/",
   serviceName: "Marketing Agency for Painting Companies",
   serviceType: "Digital Marketing for Residential and Commercial Painting Contractors",
   serviceDescription: "GrowSmallBiz Digital Marketing is a digital marketing agency headquartered in Danville, CA, specializing in Local SEO, Google Ads, and AI-powered marketing systems for residential and commercial painting contractors across the United States.",
   breadcrumbs: [
     { name: "Home", url: "/" },
-    { name: "Home Service Contractors", url: "/industries/digital-marketing-for-home-service-contractors/" },
-    { name: "Painting Companies Marketing", url: "/industries/painting-companies/" },
+    { name: "Home Service Contractors", url: "/home-service-contractors/" },
+    { name: "Painting Companies Marketing", url: "/home-service-contractors/painting-companies-marketing/" },
   ],
 
   // ══════════════════════════════════════════════════════════════════════
