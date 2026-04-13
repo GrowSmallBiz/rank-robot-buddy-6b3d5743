@@ -55,6 +55,19 @@ export const ServiceJsonLd = ({
         reviewCount: rating.reviewCount,
       },
     }),
+    ...(offerCatalog && {
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: offerCatalog.name,
+        itemListElement: offerCatalog.items.map((item) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: item.name,
+          },
+        })),
+      },
+    }),
   };
 
   const breadcrumbSchema = {
