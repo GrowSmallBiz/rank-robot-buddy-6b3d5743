@@ -10,6 +10,7 @@ const colorStyles: Record<string, { bg: string; border: string; text: string; ac
   emerald: { bg: 'rgba(16, 185, 129, 0.1)', border: 'rgba(16, 185, 129, 0.4)', text: 'rgb(52, 211, 153)', activeBg: 'rgb(16, 185, 129)' },
   rose: { bg: 'rgba(244, 63, 94, 0.1)', border: 'rgba(244, 63, 94, 0.4)', text: 'rgb(251, 113, 133)', activeBg: 'rgb(244, 63, 94)' },
   amber: { bg: 'rgba(245, 158, 11, 0.1)', border: 'rgba(245, 158, 11, 0.4)', text: 'rgb(251, 191, 36)', activeBg: 'rgb(245, 158, 11)' },
+  blue: { bg: 'rgba(59, 130, 246, 0.1)', border: 'rgba(59, 130, 246, 0.4)', text: 'rgb(96, 165, 250)', activeBg: 'rgb(59, 130, 246)' },
   sky: { bg: 'rgba(14, 165, 233, 0.1)', border: 'rgba(14, 165, 233, 0.4)', text: 'rgb(56, 189, 248)', activeBg: 'rgb(14, 165, 233)' },
   violet: { bg: 'rgba(139, 92, 246, 0.1)', border: 'rgba(139, 92, 246, 0.4)', text: 'rgb(167, 139, 250)', activeBg: 'rgb(139, 92, 246)' },
 };
