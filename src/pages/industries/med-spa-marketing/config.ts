@@ -33,7 +33,7 @@ export const medSpaConfig: NicheConfig = {
   h1Line2: "High-Value Clients and Fills Your",
   h1Highlight: "Treatment Calendar",
   heroSubheadline: "Stop competing on price and discounts. AI-powered SEO, Google Ads, and automated client acquisition built for medical spas that want a full treatment calendar and a loyal membership base.",
-  heroReassurance: "No commitment. No pressure. Just a clear path forward for your practice.",
+  // heroReassurance: "No commitment. No pressure. Just a clear path forward for your practice.",
   primaryCtaLabel: "Schedule Strategy Call",
   secondaryCtaLabel: "Explore Solutions",
   secondaryCtaAnchor: "#on-this-page",
