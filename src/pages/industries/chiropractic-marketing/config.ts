@@ -668,4 +668,52 @@ export const chiropracticConfig: NicheConfig = {
       icon: Search,
     },
   ],
+
+  // ── Config-driven text overrides (Fix A: 7 instances) ──
+  seoCompetitorBullets: [
+    { bold: "Competitor keyword gap analysis", desc: "we identify which back pain, sciatica, sports injury, and PI terms your top competitors rank for that you don't" },
+    { bold: "Backlink profile comparison", desc: "we find authoritative health and chiropractic publications linking to competitors and target the same sources" },
+    { bold: "Content gap identification", desc: "we find the service and location pages driving competitor traffic that you're missing" },
+    { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
+  ],
+  seoContentAuthorityStatement: "We Don't Publish Bulk AI Blogs. We Build Chiropractic Authority.",
+  seoTopicalMapBody: "A topical map ensures Google sees your site as a complete authority on chiropractic care — not just a collection of random pages. We identify every topic cluster your ideal patients search across all treatment categories, then systematically build the content that covers it.",
+  topicMapCenterLine1: "Chiropractic Practice",
+  topicMapCenterLine2: "Authority",
+  topicMapSpokes: [
+    "Back Pain & Spine",
+    "Sports Injury & Rehabilitation",
+    "Auto Accident & Personal Injury",
+    "Prenatal & Pediatric",
+    "Wellness & Preventive Care",
+    "Headaches & Migraines",
+    "Neck Pain & Posture",
+  ],
+
+  // ── Config-driven text overrides (Fix B: 6 instances) ──
+  contentScoreLabel: "Chiropractic Content Quality Score",
+  contentScoreCaption: "Sample score for a GrowSmallBiz-managed chiropractic content article. All content must pass minimum thresholds across all six dimensions before publication.",
+  seoContentThirdCardBody: "Content is structured for Google rankings and AI citation — so when a patient asks ChatGPT, Perplexity, or Google AI which chiropractic practice to call, your practice is the answer.",
+  seoAiVisibilityHeading: "We Get Your Chiropractic Practice Recommended by AI Search Engines",
+  seoAiVisibilityBody1: "GrowSmallBiz tracks how AI platforms recommend your chiropractic practice across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode.",
+  seoAiVisibilityBody2: "When a patient asks an AI assistant 'what's the best chiropractor for back pain near me?' or 'which chiropractor handles auto accident cases in [city]?' — we make sure your practice is the answer.",
+
+  // ── Config-driven text overrides (Fix C: 2 instances) ──
+  paidMediaSetupBullets: [
+    "Google Ads account setup and campaign structure",
+    "Keyword research for chiropractic search terms — acute pain, wellness, sports injury, and PI segments",
+    "Google Local Services Ads (LSA) setup and Google Guarantee verification",
+    "Conversion tracking from click to call to booked appointment",
+    "Seasonal campaign calendar with pre-peak budget ramps",
+    "Service-specific landing page optimization",
+    "Ad creative copywriting for emergency and seasonal intent",
+    "Monthly performance reporting and optimization",
+  ],
+  retargetingDisplayLine: "SEO helps your chiropractic practice show up",
+  retargetingDisplaySubline: "when someone is actively searching for relief.",
+  retargetingStep1Desc: "Search for a chiropractor, like what they see",
+
+  // ── Additional overrides ──
+  reputationInnerH3: "We Handle Your Chiropractic Practice Reputation",
+  growthSystemDisconnectedToolsBody: "Most chiropractic practices use separate tools for new patient capture, appointment booking, recall management, and follow-up. These tools don't talk to each other — leads fall through the cracks.",
 };
