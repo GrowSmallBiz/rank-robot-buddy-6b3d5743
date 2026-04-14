@@ -24,6 +24,17 @@ export const dentalConfig: NicheConfig = {
     { name: "Health & Wellness Practices", url: "/health-and-wellness-practices/" },
     { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists/" },
   ],
+  offerCatalog: {
+    name: "Dental Marketing Services",
+    items: [
+      { name: "Local SEO & Google Business Profile" },
+      { name: "Conversion-Focused Website Design" },
+      { name: "Google Ads (LSA + PPC) & Meta Ads" },
+      { name: "Reputation Management" },
+      { name: "AI Receptionist & 24/7 Patient Capture" },
+      { name: "Patient Nurture & Recall Automation" },
+    ],
+  },
 
   // ── Hero ──
   heroImage: dentalHeroImage,
