@@ -397,7 +397,7 @@ const HealthAndWellness = () => {
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Health & Wellness Practices We Serve</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {practices.map((practice) => (
-              <div key={practice.title} className="flex flex-col bg-card border border-border rounded-2xl overflow-hidden hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,114,58,0.15)]">
+              <div key={practice.title} className="flex flex-col bg-surface-elevated border-2 border-[hsl(188_78%_41%_/_0.25)] rounded-2xl overflow-hidden hover:-translate-y-2 transition-all duration-300 hover:border-[hsl(188_78%_41%_/_0.6)] hover:shadow-[0_0_30px_hsl(188_78%_41%_/_0.3)]">
                 <div className="relative h-48 overflow-hidden">
                   <img src={practice.image} alt={practice.title} className="w-full h-full object-cover" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
@@ -426,7 +426,7 @@ const HealthAndWellness = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {serviceCards.map((service, index) => (
-              <div key={service.title} className="bg-card border border-border rounded-xl p-6 hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,114,58,0.15)]">
+              <div key={service.title} className="bg-surface-elevated border-2 border-[hsl(188_78%_41%_/_0.25)] rounded-xl p-6 hover:-translate-y-2 transition-all duration-300 hover:border-[hsl(188_78%_41%_/_0.6)] hover:shadow-[0_0_30px_hsl(188_78%_41%_/_0.3)]">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold text-primary">{index + 1}</span>
                   <h3 className="text-lg font-display font-bold text-foreground">{service.title}</h3>
@@ -513,7 +513,7 @@ const HealthAndWellness = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Results for Health & Wellness Practices</h2>
             <div className="space-y-6">
               {caseStudies.map((study, index) => (
-                <div key={index} className={`bg-card border border-border ${study.accent} border-l-4 rounded-r-xl p-6`}>
+                <div key={index} className={`bg-surface-elevated border-2 border-[hsl(188_78%_41%_/_0.25)] ${study.accent} border-l-4 rounded-r-xl p-6 transition-all duration-300 hover:border-[hsl(188_78%_41%_/_0.6)] hover:shadow-[0_0_30px_hsl(188_78%_41%_/_0.3)]`}>
                   <h3 className="text-lg font-display font-bold text-foreground mb-1">{study.title}</h3>
                   <p className="text-muted-foreground text-sm italic mb-4">{study.period}</p>
                   <ul className="space-y-2">
@@ -549,7 +549,7 @@ const HealthAndWellness = () => {
             </div>
             <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto">
               {credentials.map((cred) => (
-                <div key={cred.label} className="bg-card border border-border rounded-xl p-5 text-center hover:-translate-y-1 transition-all duration-300">
+                <div key={cred.label} className="bg-surface-elevated border-2 border-[hsl(188_78%_41%_/_0.25)] rounded-xl p-5 text-center hover:-translate-y-1 transition-all duration-300 hover:border-[hsl(188_78%_41%_/_0.6)] hover:shadow-[0_0_30px_hsl(188_78%_41%_/_0.3)]">
                   <div className="text-xl font-bold text-accent mb-2">{cred.label}</div>
                   <p className="text-muted-foreground text-sm">{cred.description}</p>
                 </div>
