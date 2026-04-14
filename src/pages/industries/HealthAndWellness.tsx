@@ -24,9 +24,9 @@ import funnelImage from "@/assets/health-wellness/patient-acquisition-funnel.web
 import { useUtm } from "@/hooks/use-utm";
 
 const practiceTypes = [
-  { icon: Stethoscope, name: "Dental" },
-  { icon: Heart, name: "Chiropractic" },
-  { icon: Sparkles, name: "Med Spa" },
+  { icon: Stethoscope, name: "Dental", link: "/dental-marketing/" },
+  { icon: Heart, name: "Chiropractic", link: "/chiropractic-marketing/" },
+  { icon: Sparkles, name: "Med Spa", link: "/med-spa-marketing/" },
 ];
 
 const challenges = [
@@ -291,10 +291,10 @@ const HealthAndWellness = () => {
             {/* Practice type chips */}
             <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-up delay-200">
               {practiceTypes.map((practice, index) => (
-                <span key={index} className="inline-flex items-center gap-2 px-4 py-2 bg-card/80 border border-border rounded-full text-sm text-muted-foreground">
+                <Link key={index} to={practice.link} className="inline-flex items-center gap-2 px-4 py-2 bg-card/80 border border-border rounded-full text-sm text-muted-foreground hover:border-primary/40 hover:text-foreground transition-colors">
                   <practice.icon className="w-4 h-4 text-primary" />
                   {practice.name}
-                </span>
+                </Link>
               ))}
             </div>
 
