@@ -215,8 +215,8 @@ const NichePage = ({ config }: NichePageProps) => {
 
       <Footer />
 
-      {/* Sticky CTA */}
-      <StickyCardCTA
+      {/* Sticky CTA - temporarily disabled for screenshots */}
+      {/* <StickyCardCTA
         title={config.stickyCtaConfig.title}
         description={config.stickyCtaConfig.description}
         buttonText={config.stickyCtaConfig.buttonText}
