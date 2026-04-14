@@ -1,12 +1,11 @@
 const spokes = [
-  "Emergency Tree Removal",
-  "Spring Lawn Care & Prep",
-  "Storm Season Response",
-  "Tree Health & Arborist",
-  "Lawn Maintenance Plans",
-  "Commercial Landscaping",
-  "Seasonal Cleanup",
-  "Landscape Design-Build",
+  "Implants & Restorative",
+  "Cosmetic Dentistry",
+  "Emergency Dental",
+  "Family & Pediatric",
+  "Invisalign & Ortho",
+  "Preventive Care",
+  "Oral Health Education",
 ];
 
 export const TopicMapVisual = () => {
@@ -57,7 +56,7 @@ export const TopicMapVisual = () => {
           fontSize="11"
           fontFamily="inherit"
         >
-          Tree Service &amp; Lawn Care
+          Dental Practice
         </text>
         <text
           x={cx}
