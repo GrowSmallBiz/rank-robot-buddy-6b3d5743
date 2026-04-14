@@ -104,7 +104,35 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </div>
         </div>
 
-        {/* SEO Content Header */}
+        {/* Entity Definition Block (AEO) — Prompt 6 */}
+        <div className="mb-16 max-w-5xl mx-auto grid md:grid-cols-3 gap-4">
+          {[
+            {
+              badge: "WHAT IS IT",
+              title: "What is dental marketing?",
+              body: "Dental marketing encompasses the digital strategies and systems a dental practice uses to attract new patients, rank in local search results, build online reputation, and convert inquiries into booked appointments. It includes SEO, paid advertising, social media management, and patient communication automation.",
+            },
+            {
+              badge: "WHO IT SERVES",
+              title: "Who does dental marketing serve?",
+              body: "Dental marketing serves general dentistry practices, cosmetic dental specialists, dental implant providers, Invisalign and orthodontic practices, pediatric dentists, and multi-location dental groups seeking to reduce insurance dependency and grow their private-pay patient base.",
+            },
+            {
+              badge: "WHAT WE DO",
+              title: "What does GrowSmallBiz do for dental practices?",
+              body: "GrowSmallBiz builds complete dental patient acquisition systems — combining conversion-focused practice websites, AI-powered SEO optimized for Google and AI search platforms, Google and Meta paid advertising, social media strategy, and an AI Client Growth System that automates patient follow-up, recall management, and reputation generation.",
+            },
+          ].map((card, i) => (
+            <div key={i} className="bg-[hsl(210_40%_18%)] border border-white/[0.08] rounded-xl p-6">
+              <span className="inline-block px-2.5 py-1 bg-[hsl(174_60%_40%)] text-white text-[11px] font-semibold uppercase rounded-[10px] mb-3">
+                {card.badge}
+              </span>
+              <h4 className="text-[15px] font-semibold text-foreground mb-2">{card.title}</h4>
+              <p className="text-foreground/80 text-[13px] leading-relaxed">{card.body}</p>
+            </div>
+          ))}
+        </div>
+
         <div className="mb-8 text-center">
           <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">{config.seoBadge}</p>
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
