@@ -213,8 +213,8 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           <GlowCard className="p-6">
             <ul className="space-y-3">
               {[
-                { bold: "Competitor keyword gap analysis", desc: "we identify which tree service and lawn care terms your top competitors rank for that you don't" },
-                { bold: "Backlink profile comparison", desc: "we find authoritative sites linking to competitors and target the same sources" },
+                { bold: "Competitor keyword gap analysis", desc: "we identify which dental implant, cosmetic, and emergency dental terms your top competitors rank for that you don't" },
+                { bold: "Backlink profile comparison", desc: "we find authoritative health and dental publications linking to competitors and target the same sources" },
                 { bold: "Content gap identification", desc: "we find the service and location pages driving competitor traffic that you're missing" },
                 { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
               ].map((item, i) => (
@@ -238,7 +238,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             {/* A: Authority Statement */}
             <div className="p-6 rounded-xl bg-card border-l-4 border-l-[hsl(var(--accent))] border border-border">
               <h4 className="text-lg font-display font-bold text-foreground mb-3">
-                We Don't Publish Bulk AI Blogs. We Build Digital Authority.
+                We Don't Publish Bulk AI Blogs. We Build Dental Authority.
               </h4>
               <p className="text-muted-foreground leading-relaxed">
                 Most agencies use ChatGPT to generate hundreds of generic articles and hit publish. We don't. Every piece of content we create is produced by a highly trained AI content system built specifically for your business, your service area, and your target keywords — then reviewed and approved by a human expert before it goes live. The difference isn't just quality. It's whether the content actually builds your ranking authority or just adds noise.
@@ -251,7 +251,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 We Build Topical Maps That Cover Your Entire Market
               </h4>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                A topical map ensures Google sees your site as a complete authority on tree service, lawn care, and landscaping — not just a collection of random pages. We identify every topic cluster your ideal clients search across all three specialties, then systematically build the content that covers it.
+                A topical map ensures Google sees your site as a complete authority on dental care — not just a collection of random pages. We identify every topic cluster your ideal patients search across all treatment categories, then systematically build the content that covers it.
               </p>
               <TopicMapVisual />
             </div>
@@ -293,7 +293,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </div>
                 <h5 className="font-display font-semibold text-foreground">Built to Rank and Be Cited by AI</h5>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Content is structured for Google rankings and AI citation — so when a homeowner asks ChatGPT, Perplexity, or Google AI which tree service company to call, your business is the answer.
+                  Content is structured for Google rankings and AI citation — so when a patient asks ChatGPT, Perplexity, or Google AI which dental practice to call, your practice is the answer.
                 </p>
               </div>
             </div>
@@ -348,20 +348,20 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
         <div id="seo-ai-visibility" className="mb-12 scroll-mt-24">
           <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
             <Bot className="w-6 h-6 text-primary" />
-            We Get Your Tree Service, Lawn Care & Landscaping Business Recommended by AI Search Engines
+            We Get Your Dental Practice Recommended by AI Search Engines
           </h3>
           <GlowCard className="p-6">
             <p className="text-muted-foreground mb-2">
-              GrowSmallBiz tracks how AI platforms recommend your tree service, lawn care, and landscaping business across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode.
+              GrowSmallBiz tracks how AI platforms recommend your dental practice across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode.
             </p>
             <p className="text-muted-foreground mb-4">
-              When a homeowner asks an AI assistant which tree service company to call in Danville or Walnut Creek, we make sure your business is the answer.
+              When a patient asks an AI assistant 'what's the best dentist for implants near me?' or 'which cosmetic dentist has the best reviews in [city]?' — we make sure your practice is the answer.
             </p>
             <ul className="space-y-2">
               {[
                 "LLM visibility score tracking across 6 AI platforms — updated monthly",
-                "Sentiment monitoring — how AI engines describe your business to potential clients",
-                "Citation share tracking — which queries your business appears in vs. competitors",
+                "Sentiment monitoring — how AI engines describe your practice to potential patients",
+                "Citation share tracking — which queries your practice appears in vs. competitors",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
