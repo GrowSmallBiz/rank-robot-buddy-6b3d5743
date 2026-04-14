@@ -186,7 +186,7 @@ export const PaidMediaSection = ({ config, strategySessionUrl }: PaidMediaSectio
               <div className="space-y-4">
                 <h4 className="font-bold text-foreground text-lg">Landing Page Included</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Every ad campaign includes a custom landing page designed to convert clicks into booked jobs.
+                  Every ad campaign includes a custom landing page designed to convert clicks into booked appointments.
                 </p>
                 <ul className="space-y-2">
                   {["Conversion Landing Page", "Thank You Page", "Development & Layout Only", "Copy Pulled From Existing Site"].map((item, i) => (
