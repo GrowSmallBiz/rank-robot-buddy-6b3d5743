@@ -435,7 +435,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         </div>
 
         {/* Past Client Workflows */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className={`grid gap-6 ${config.pastClientWorkflows.length === 2 ? 'md:grid-cols-2 max-w-3xl mx-auto' : 'md:grid-cols-3'}`}>
           {config.pastClientWorkflows.map((workflow, i) => {
             const WIcon = workflow.icon;
             return (
