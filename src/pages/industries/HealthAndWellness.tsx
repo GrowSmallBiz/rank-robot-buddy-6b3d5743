@@ -3,6 +3,7 @@ import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
+import { CardCTA } from "@/components/services/CardCTA";
 import { Link } from "react-router-dom";
 import {
   Heart,
@@ -599,21 +600,11 @@ const HealthAndWellness = () => {
         }}
       />
 
-      {/* Closing CTA */}
-      <section className="py-20 bg-gradient-to-r from-accent to-secondary">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">Ready to Grow Your Health & Wellness Practice?</h2>
-          <p className="text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Your competitors are investing in digital marketing right now. Every month without a strong online presence is another month of new patients choosing a practice that ranks above you on Google. GrowSmallBiz builds the complete patient acquisition system that fills your appointment book consistently — so you can focus on delivering exceptional care while we handle your growth.
-          </p>
-          <Button variant="hero" size="lg" className="shadow-lg" asChild>
-            <a href={strategySessionUrl}>
-              Schedule Strategy Call
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </a>
-          </Button>
-        </div>
-      </section>
+      <CardCTA
+        title="Ready to Grow Your Health & Wellness Practice?"
+        description="Your competitors are investing in digital marketing right now. Every month without a strong online presence is another month of new patients choosing a practice that ranks above you on Google. GrowSmallBiz builds the complete patient acquisition system that fills your appointment book consistently — so you can focus on delivering exceptional care while we handle your growth."
+        accentWords={["Health & Wellness Practice"]}
+      />
 
       <ConsultationFormSection />
       <Footer />
