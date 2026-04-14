@@ -63,7 +63,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
         {config.conversationalAiQueries && config.conversationalAiQueries.length > 0 && (
         <div className="mb-16 max-w-4xl mx-auto rounded-2xl border border-white/10 bg-[hsl(210_50%_10%)] p-8 md:p-10">
           <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">
-            Patients Are Already Asking AI These Questions About Your Practice
+            Patients Are <span className="bg-gradient-primary bg-clip-text text-transparent italic">Already Asking AI</span> These Questions About Your Practice
           </h3>
           <p className="text-foreground/80 mb-6">
             Before opening Google, patients are typing questions like these into ChatGPT, Gemini, and Perplexity:
