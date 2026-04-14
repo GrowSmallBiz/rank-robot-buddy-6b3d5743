@@ -192,9 +192,12 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </h3>
           <GlowCard className="p-6">
             <ul className="space-y-3">
-              {[
+              {(config.seoCompetitorBullets || [
                 { bold: "Competitor keyword gap analysis", desc: "we identify which dental implant, cosmetic, and emergency dental terms your top competitors rank for that you don't" },
                 { bold: "Backlink profile comparison", desc: "we find authoritative health and dental publications linking to competitors and target the same sources" },
+                { bold: "Content gap identification", desc: "we find the service and location pages driving competitor traffic that you're missing" },
+                { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
+              ]).map((item, i) => (
                 { bold: "Content gap identification", desc: "we find the service and location pages driving competitor traffic that you're missing" },
                 { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
               ].map((item, i) => (
@@ -218,7 +221,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             {/* A: Authority Statement */}
             <div className="p-6 rounded-xl bg-card border-l-4 border-l-[hsl(var(--accent))] border border-border">
               <h4 className="text-lg font-display font-bold text-foreground mb-3">
-                We Don't Publish Bulk AI Blogs. We Build Dental Authority.
+                {config.seoContentAuthorityStatement || "We Don't Publish Bulk AI Blogs. We Build Dental Authority."}
               </h4>
               <p className="text-muted-foreground leading-relaxed">
                 Most agencies use ChatGPT to generate hundreds of generic articles and hit publish. We don't. Every piece of content we create is produced by a highly trained AI content system built specifically for your business, your service area, and your target keywords — then reviewed and approved by a human expert before it goes live. The difference isn't just quality. It's whether the content actually builds your ranking authority or just adds noise.
@@ -231,9 +234,9 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 We Build Topical Maps That Cover Your Entire Market
               </h4>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                A topical map ensures Google sees your site as a complete authority on dental care — not just a collection of random pages. We identify every topic cluster your ideal patients search across all treatment categories, then systematically build the content that covers it.
+                {config.seoTopicalMapBody || "A topical map ensures Google sees your site as a complete authority on dental care — not just a collection of random pages. We identify every topic cluster your ideal patients search across all treatment categories, then systematically build the content that covers it."}
               </p>
-              <TopicMapVisual />
+              <TopicMapVisual centerLine1={config.topicMapCenterLine1} centerLine2={config.topicMapCenterLine2} spokes={config.topicMapSpokes} />
             </div>
 
             {/* C: Content Quality Score Dashboard */}
@@ -244,7 +247,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Before any content goes live on your site, it is measured against six independent quality dimensions. Our goal is not to pass a content score — it is to build genuine digital authority that earns rankings and AI search citations in your market.
               </p>
-              <ContentScoreDashboard />
+              <ContentScoreDashboard label={config.contentScoreLabel} caption={config.contentScoreCaption} />
             </div>
 
             {/* D: What This Means For You */}
@@ -273,7 +276,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </div>
                 <h5 className="font-display font-semibold text-foreground">Built to Rank and Be Cited by AI</h5>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Content is structured for Google rankings and AI citation — so when a patient asks ChatGPT, Perplexity, or Google AI which dental practice to call, your practice is the answer.
+                  {config.seoContentThirdCardBody || "Content is structured for Google rankings and AI citation — so when a patient asks ChatGPT, Perplexity, or Google AI which dental practice to call, your practice is the answer."}
                 </p>
               </div>
             </div>
@@ -328,14 +331,14 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
         <div id="seo-ai-visibility" className="mb-12 scroll-mt-24">
           <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
             <Bot className="w-6 h-6 text-primary" />
-            We Get Your Dental Practice Recommended by AI Search Engines
+            {config.seoAiVisibilityHeading || "We Get Your Dental Practice Recommended by AI Search Engines"}
           </h3>
           <GlowCard className="p-6">
             <p className="text-muted-foreground mb-2">
-              GrowSmallBiz tracks how AI platforms recommend your dental practice across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode.
+              {config.seoAiVisibilityBody1 || "GrowSmallBiz tracks how AI platforms recommend your dental practice across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode."}
             </p>
             <p className="text-muted-foreground mb-4">
-              When a patient asks an AI assistant 'what's the best dentist for implants near me?' or 'which cosmetic dentist has the best reviews in [city]?' — we make sure your practice is the answer.
+              {config.seoAiVisibilityBody2 || "When a patient asks an AI assistant 'what's the best dentist for implants near me?' or 'which cosmetic dentist has the best reviews in [city]?' — we make sure your practice is the answer."}
             </p>
             <ul className="space-y-2">
               {[
