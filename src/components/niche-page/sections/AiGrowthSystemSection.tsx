@@ -317,7 +317,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         <div className="border-t border-border/50 pt-16 mb-12">
           <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
           <h3 className="text-2xl font-display font-bold text-foreground text-center mb-4">
-            Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">We Build for Your Dental Practice</span>
+            Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">{config.marketingCampaignsHighlight || "We Build for Your Dental Practice"}</span>
           </h3>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto">Real offers paired with automated funnels—tailored to each specialty</p>
         </div>
@@ -402,7 +402,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         {/* Seasonal Campaigns */}
         <div className="mb-16">
           <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-            <span className="text-primary">Seasonal Campaigns</span> We Automate for Your Dental Practice
+            <span className="text-primary">Seasonal Campaigns</span> {config.seasonalCampaignsHeading || "We Automate for Your Dental Practice"}
           </h3>
             <div className="overflow-x-auto rounded-2xl border-2 border-[hsl(188_78%_41%_/_0.25)] bg-[hsl(210_45%_18%)]">
             <table className="w-full">

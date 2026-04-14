@@ -716,4 +716,6 @@ export const chiropracticConfig: NicheConfig = {
   // ── Additional overrides ──
   reputationInnerH3: "We Handle Your Chiropractic Practice Reputation",
   growthSystemDisconnectedToolsBody: "Most chiropractic practices use separate tools for new patient capture, appointment booking, recall management, and follow-up. These tools don't talk to each other — leads fall through the cracks.",
+  marketingCampaignsHighlight: "We Build for Your Chiropractic Practice",
+  seasonalCampaignsHeading: "We Automate for Your Chiropractic Practice",
 };

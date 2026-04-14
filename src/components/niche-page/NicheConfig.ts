@@ -583,4 +583,10 @@ export interface NicheConfig {
   reputationInnerH3?: string;
   /** Growth System disconnected tools paragraph */
   growthSystemDisconnectedToolsBody?: string;
+  /** Marketing Campaigns heading highlight (default: "We Build for Your Dental Practice") */
+  marketingCampaignsHighlight?: string;
+  /** Marketing Campaigns subheadline */
+  marketingCampaignsSubheadline?: string;
+  /** Seasonal Campaigns heading (default: "We Automate for Your Dental Practice") */
+  seasonalCampaignsHeading?: string;
 }
