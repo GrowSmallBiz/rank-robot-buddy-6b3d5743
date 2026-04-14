@@ -24,6 +24,16 @@ export const medSpaConfig: NicheConfig = {
     { name: "Health & Wellness Practices", url: "/health-and-wellness-practices/" },
     { name: "Med Spa Marketing", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
   ],
+  offerCatalog: {
+    name: "Med Spa Marketing Services",
+    services: [
+      { name: "AI-Powered SEO for Med Spas", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
+      { name: "Google Ads Management", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
+      { name: "Instagram & Social Strategy", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
+      { name: "AI Receptionist & Booking Automation", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
+      { name: "Reputation Management", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
+    ],
+  },
 
   // ── Hero (Prompt 2) ──
   heroImage: medSpaHeroImage,
