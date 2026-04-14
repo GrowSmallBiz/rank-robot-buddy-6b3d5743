@@ -37,7 +37,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               {config.aiSearchCalloutBody}
             </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               {config.aiSearchStats.map((stat, i) => (
                 <div key={i} className="p-4 bg-[hsl(210_45%_14%)] backdrop-blur-sm rounded-xl border border-[hsl(188_78%_41%_/_0.25)]">
                   <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
@@ -53,7 +53,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </a>
               </Button>
               <span className="text-sm text-muted-foreground">
-                If you want more booked jobs, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
+                If you want more booked patients, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
               </span>
             </div>
           </div>
