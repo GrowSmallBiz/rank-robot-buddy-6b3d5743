@@ -9,12 +9,12 @@ import {
   Sparkles, UserPlus, Heart, Palette,
 } from "lucide-react";
 
-import medSpaHeroImage from "@/assets/industry-medspa-hero.webp";
+import medSpaHeroImage from "@/assets/industry-medspa-hero-v2.jpg";
 import portfolioMedSpaWebsite from "@/assets/portfolio-medspa-website.webp";
 
 export const medSpaConfig: NicheConfig = {
   // ── Page Meta ──
-  pageTitle: "Med Spa Marketing Agency | GrowSmallBiz",
+  pageTitle: "Med Spa Marketing Agency | AI SEO, Google Ads & Client Acquisition | GrowSmallBiz",
   metaDescription: "GrowSmallBiz helps med spas attract high-value aesthetic clients with AI-powered SEO, Google Ads, Instagram strategy, and 24/7 AI Receptionist. Full-service digital marketing built for medical spas.",
   canonicalUrl: "/health-and-wellness-practices/marketing-for-med-spas/",
   serviceName: "Med Spa Marketing Services",
@@ -25,82 +25,85 @@ export const medSpaConfig: NicheConfig = {
     { name: "Med Spa Marketing", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
   ],
 
-  // ── Hero ──
+  // ── Hero (Prompt 2) ──
   heroImage: medSpaHeroImage,
-  badgeText: "Med Spa Marketing & Growth System",
+  badgeText: "Medical Spa Marketing & Growth System",
   badgeIcon: Sparkles,
-  h1Line1: "The Med Spa Marketing System",
-  h1Line2: "That Attracts Premium Aesthetic",
-  h1Highlight: "Clients Year-Round",
-  heroSubheadline: "Stop relying on Instagram alone. AI-powered SEO, Google Ads, and automated client acquisition built for medical spas that want consistent, predictable growth.",
+  h1Line1: "Med Spa Marketing That Attracts",
+  h1Line2: "High-Value Clients and Fills Your",
+  h1Highlight: "Treatment Calendar",
+  heroSubheadline: "Stop competing on price and discounts. AI-powered SEO, Google Ads, and automated client acquisition built for medical spas that want a full treatment calendar and a loyal membership base.",
+  // heroReassurance: "No commitment. No pressure. Just a clear path forward for your practice.",
   primaryCtaLabel: "Schedule Strategy Call",
   secondaryCtaLabel: "Explore Solutions",
   secondaryCtaAnchor: "#on-this-page",
   statsBar: [
-    { value: "3–6 mo", label: "To reach top Google rankings for aesthetic searches" },
+    { value: "3–6 mo", label: "To reach top Google rankings for med spa searches" },
     { value: "5 min", label: "AI response speed to every new client inquiry" },
-    { value: "24/7", label: "AI Receptionist coverage for booking requests" },
-    { value: "40%", label: "Time saved with marketing automation" },
+    { value: "24/7", label: "AI Receptionist coverage for after-hours booking requests" },
+    { value: "2–4×", label: "New client inquiry increase with Google Ads" },
   ],
 
-  // ── Pain Points ──
+  // ── Pain Points (Prompt 3) ──
   painPointsHeadline: "Med Spa Marketing Challenges",
-  painPointsSubheadline: "Even the most talented aesthetic providers struggle to build a consistent, predictable client base. If any of these feel familiar, your marketing infrastructure needs attention.",
+  painPointsSubheadline: "Even the most skilled aesthetic practitioners struggle to attract a consistent flow of high-value clients. If any of these resonate, your marketing infrastructure needs attention.",
   painPoints: [
     {
-      icon: Instagram,
-      title: "Your Business Lives and Dies by Your Instagram Feed",
-      description: "Likes and followers don't pay for treatments. Hours spent creating content with no predictable path to booked appointments — exhausting effort for inconsistent return.",
-      hasImage: false, showAILogos: false,
-    },
-    {
       icon: Search,
-      title: "Competitors Rank Above You When Clients Are Ready to Book",
-      description: "Potential clients searching 'Botox near me' or 'med spa [city]' find your competitors first — even if your results are superior.",
+      title: "Invisible in Treatment-Specific Search",
+      description: "Clients searching 'Botox near me' or 'lip filler [city]' find your competitors first — even if your injector credentials and clinical outcomes are superior.",
       hasImage: false, showAILogos: false,
     },
     {
-      icon: TrendingUp,
-      title: "Packed One Month, Quiet the Next",
-      description: "Revenue swings wildly because there's no system generating consistent new client flow. You're always either too busy or too slow.",
+      icon: Users,
+      title: "Relying on Existing Clients",
+      description: "Your current clients love you, but word-of-mouth can't scale a med spa. Without a predictable digital acquisition channel, growth stops the moment referrals slow down.",
       hasImage: false, showAILogos: false,
     },
     {
-      icon: Phone,
-      title: "Losing Leads After Hours",
-      description: "Aesthetic clients research and decide outside business hours. If your website can't capture and respond to those inquiries immediately, they book with whoever answers.",
+      icon: Instagram,
+      title: "Social Media Presence That Doesn't Convert",
+      description: "You have Instagram followers, but they're not booking. Organic social builds awareness — without a system to capture and convert that attention into appointments, it's brand spend with no ROI.",
+      hasImage: false, showAILogos: false,
+    },
+    {
+      icon: Star,
+      title: "Low Review Volume",
+      description: "84% of clients check online reviews before choosing a med spa. Without a consistent review generation system, your before/after results and injector expertise stay invisible to new clients. — rater8, 2025",
+      hasImage: false, showAILogos: false,
+    },
+    {
+      icon: RefreshCw,
+      title: "No Membership & Retention System",
+      description: "Recurring membership revenue is the biggest underutilized lever in med spas. Without an automated enrollment and retention system, you're constantly acquiring new clients instead of monetizing the ones you already have.",
       hasImage: false, showAILogos: false,
     },
     {
       icon: DollarSign,
       title: "No High-Value Treatment Visibility",
-      description: "Fillers, body contouring, and laser treatments drive your highest revenue — but most med spas have no targeted strategy to attract clients specifically seeking these services.",
-      hasImage: false, showAILogos: false,
-    },
-    {
-      icon: RefreshCw,
-      title: "One-Time Clients, Not Loyal Members",
-      description: "Aesthetic treatments require repeat visits for maintenance. Without automated follow-up and membership programs, most clients come once and don't return — leaving significant recurring revenue on the table.",
+      description: "General skincare keeps the schedule filled, but body contouring, laser treatments, and injectables drive your highest revenue per visit. Most med spas have no strategy to attract these high-value cases at scale.",
       hasImage: false, showAILogos: false,
     },
   ],
+
+  // ── Bridge (Prompt 4) ──
   transitionText: "Sound familiar? There's a better way.",
-  transitionSubtext: "Instead of chasing followers and hoping for bookings, imagine a predictable system that attracts premium clients, converts inquiries automatically, and turns first-time visitors into loyal members.",
+  transitionSubtext: "Instead of hoping clients find you and hoping they return, imagine a predictable system that attracts new clients through search, converts inquiries into booked appointments automatically, and builds the recurring membership revenue that stabilizes your practice.",
 
-  // ── System Diagram ──
+  // ── System Diagram (Prompt 4) ──
   systemDiagramHeadline: "GrowSmallBiz Predictable Marketing System",
-  systemDiagramBody: "A complete client acquisition engine that attracts new aesthetic clients through search and social, converts inquiries into booked appointments automatically, and turns one-time treatment clients into loyal membership holders and referral sources — all working in perfect harmony.",
+  systemDiagramBody: "A complete client acquisition engine that attracts new clients through search, converts inquiries into booked appointments automatically, and turns first-time visitors into loyal, recurring membership relationships.",
 
-  // ── CTAs ──
+  // ── CTAs (Prompt 4 / 12) ──
   ctaAfterPainPoints: {
-    headline: "Ready for Med Spa Marketing That Fills Your Treatment Rooms Consistently?",
-    subtext: "Let's build a custom med spa growth strategy to attract premium aesthetic clients and build a loyal membership base.",
+    headline: "Ready for Med Spa Marketing That Fills Your Treatment Calendar With the Right Clients?",
+    subtext: "Let's build a custom med spa growth strategy to attract high-value clients and build a recurring membership base.",
     primaryLabel: "Get Your Free Strategy Session",
     secondaryLabel: "Call +1 (925) 886-3724",
   },
   ctaAfterSeo: {
     headline: "See Where You Rank — Free Med Spa SEO Visibility Audit",
-    subtext: "Find out exactly where your med spa appears in local search and AI recommendations when clients research aesthetic treatments.",
+    subtext: "Find out exactly where your med spa appears in local search results and how clients are finding you.",
     primaryLabel: "Get SEO Visibility Report",
     secondaryLabel: "",
   },
@@ -125,48 +128,83 @@ export const medSpaConfig: NicheConfig = {
     { id: "faq", label: "FAQs", icon: "❓" },
   ],
 
-  // ── Website Design ──
-  websiteDesignBadge: "Med Spa Websites",
+  // ── Website Design (Prompt 5) ──
+  websiteDesignBadge: "Medical Spa Websites",
   websiteDesignHeadline: "Med Spa Websites That Convert",
-  websiteDesignHighlight: "Visitors Into Booked Consultations",
-  websiteDesignSubheadline: "Luxurious, fast, conversion-optimized websites built to showcase your aesthetic services and turn traffic into booked appointments.",
+  websiteDesignHighlight: "Visitors Into Booked Appointments",
+  websiteDesignSubheadline: "Fast, visually stunning med spa websites built to generate new client inquiries and showcase your full treatment menu with the trust signals aesthetic clients demand.",
   websiteDesignImage: portfolioMedSpaWebsite,
-  websiteDesignFeatureHeadline: "Med Spa Websites Built to Convert the Considered Buyer",
-  websiteDesignFeatureBody: "Aesthetic clients do their research before booking — browsing results, reading reviews, comparing providers, and assessing whether a med spa matches their expectations. We build med spa websites that win that consideration process: stunning visual design, treatment-specific landing pages, before/after galleries, and a frictionless path to consultation booking from any device.",
+  websiteDesignFeatureHeadline: "Med Spa Websites Built to Win the New Client Decision",
+  websiteDesignFeatureBody: "A prospective client researching a med spa visits your website with a simple question: can I trust this practice with my appearance? We build med spa websites that answer that question immediately — with professional before/after galleries, treatment-specific pages, injector credentials front and center, and a seamless path to book from any device.",
   websiteDesignBullets: [
-    "Treatment-specific pages for every service: Botox, fillers, laser, body contouring, facials",
-    "Before/after gallery optimized for visual impact and mobile viewing",
-    "Online booking and consultation request integrated into every page",
-    "Trust signals: provider credentials, certifications, Google reviews badge",
-    "Membership and package information with online enrollment capability",
-    "Mobile-first design — 75%+ of aesthetic searches happen on mobile",
-    "Fast load times — luxury positioning requires a fast, polished experience",
-    "Blog for SEO content and treatment education articles",
+    "Online booking integration — 24/7 new client appointment capability",
+    "Treatment pages for every service: Botox, fillers, CoolSculpting, laser, facials, microneedling",
+    "Before/after gallery with consent-compliant imagery",
+    "Injector and provider credentials and bio pages",
+    "Client reviews and testimonials integration",
+    "Membership and financing information page",
+    "Mobile-first design — majority of aesthetic searches on mobile",
+    "Blog and content hub for treatment education and SEO",
   ],
+
+  // ── AI Search Callout (Prompt 6) ──
   aiSearchCalloutHeadline: "Ranking on Google Still Matters.",
   aiSearchCalloutHighlight: "But AI Search Is Now Influencing Aesthetic Decisions.",
-  aiSearchCalloutBody: "Clients are asking ChatGPT and Gemini 'what's the best med spa near me for lip filler?' before they open Google. Your competitor may already be recommended by AI — even if you rank well organically. We track your AI visibility across 6 platforms and build the citations that get you recommended.",
+  aiSearchCalloutBody: "Clients are asking ChatGPT and Gemini 'who's the best med spa near me for Botox?' before they open Google. If you want more booked appointments, you need to rank on Google and show up in AI search.",
   aiSearchStats: [
     { value: "40%+", label: "of consumers now use AI for local service recommendations" },
     { value: "6 Platforms", label: "AI platforms we track for your visibility" },
     { value: "24/7", label: "continuous monitoring & sentiment tracking" },
+    { value: "73%", label: "of clients adopted new healthcare research behaviors in the past year — rater8, 2025" },
   ],
 
-  // ── SEO ──
+  // ── Conversational AI Queries (Prompt 7) ──
+  conversationalAiQueries: [
+    "Best med spa near me for Botox — reviews 2025",
+    "Which med spa offers CoolSculpting in [city]?",
+    "How much does lip filler cost at a med spa near me?",
+    "Best med spa for laser hair removal in [city]",
+    "What's the difference between Botox and Dysport?",
+    "Med spa with before and after photos near me",
+    "Med spa membership worth it — [city] options",
+  ],
+
+  // ── SEO (Prompt 8) ──
   seoBadge: "Med Spa SEO Services",
   seoHeadline: "AI-Powered SEO for",
   seoHighlight: "Medical Spas",
-  seoSubheadline: "Comprehensive search engine optimization designed for med spas — from local injectable services to high-value body contouring and laser treatments.",
+  seoSubheadline: "Comprehensive SEO designed for medical spas — from high-frequency injectable appointments to high-value body contouring and laser treatments.",
   seoEditorialHeadline: "Why Med Spa SEO Works",
-  seoEditorialHighlight: "Differently Than Other Aesthetic Marketing",
+  seoEditorialHighlight: "Differently Than Other Healthcare Marketing",
   seoEditorialBody: [
-    "Med spa is a high-consideration, visually-driven purchase — with pockets of urgency.",
-    "Most aesthetic treatment decisions unfold over weeks or months. A client researching lip filler for the first time browses Instagram, reads reviews, compares providers, asks friends, and waits for the right moment. There is no emergency. The decision is deliberate. Trust is the primary currency, and it accumulates across multiple touchpoints before a booking is made.",
-    "But urgency does exist in isolated moments — a client who wants to look her best for a wedding in three weeks, a regular who needs her Botox refreshed before a business trip. These clients search with high intent and book quickly. Missing them because you don't rank means losing high-value repeat clients to competitors who show up at the right moment.",
-    "Seasonality also matters in med spa more than most niches. Summer drives body contouring and laser hair removal. Pre-holiday season (October–November) spikes Botox and filler demand. Valentine's Day and Mother's Day create predictable gifting and self-care windows. An SEO content strategy that ignores seasonal intent leaves significant search volume uncaptured.",
-    "Our approach builds topical authority across your full service menu, maps content to seasonal demand, and integrates reputation management — because your Google rating and review recency are direct ranking factors in the Map Pack, and aesthetic clients are among the most review-sensitive consumers in any local service category.",
+    "Med spa is a visual-first, consideration-driven search category — and both dimensions require different strategies.",
+    "The first search type is treatment-specific: a client ready to book Botox, researching lip filler options, or looking for a CoolSculpting provider. These are high-intent commercial searches — 'Botox near me' or 'lip filler [city]' — where the decision is close and goes to whoever appears first with strong reviews and compelling before/after imagery.",
+    "The second search type is aspirational and educational: clients exploring available treatments, comparing providers, researching how procedures work, and building trust before they commit. These clients have high lifetime value but require a trust-building content strategy — educational treatment pages, provider spotlights, and before/after storytelling that converts consideration into consultation.",
+    "This dual-intent dynamic means your SEO strategy must work on two tracks simultaneously. Local SEO and Google Business Profile optimization wins the ready-to-book treatment search. Service-specific content authority and topical depth wins the consideration-phase client who is comparing multiple providers over weeks.",
+    "Our approach integrates all of it: treatment-specific local visibility, educational content authority, AI search citation building, and reputation management — all working together as a single client acquisition system.",
   ],
-  seoEditorialPullQuote: "Trust is the primary currency in med spa marketing, and it accumulates across multiple touchpoints before a booking is made.",
+  seoEditorialPullQuote: "A med spa with strong reviews, a consistent before/after content presence, and high AI citation share builds the kind of social proof that aesthetic clients trust before they ever walk through the door.",
+
+  // ── AEO Entity Block (Prompt 9) ──
+  aeoEntityBlock: [
+    {
+      badge: "WHAT IS IT",
+      title: "What is med spa marketing?",
+      body: "Med spa marketing encompasses the digital strategies and systems a medical spa uses to attract new clients, rank in local search results, build online reputation, and convert inquiries into booked appointments and membership relationships. It includes SEO, paid advertising, social media management, influencer strategy, and automated client communication — with FDA/FTC-compliant messaging across all treatment categories.",
+    },
+    {
+      badge: "WHO IT SERVES",
+      title: "Who does med spa marketing serve?",
+      body: "Med spa marketing serves solo medical spa practices, multi-location aesthetic clinics, botox and filler specialists, medical weight loss practices, laser and body contouring centers, and integrative wellness and aesthetics practices seeking to grow their high-value client base and build recurring membership revenue.",
+    },
+    {
+      badge: "WHAT WE DO",
+      title: "What does GrowSmallBiz do for medical spas?",
+      body: "GrowSmallBiz builds complete med spa client acquisition systems — combining conversion-focused websites, AI-powered SEO for Google and AI search platforms, Google and Meta paid advertising, Instagram and TikTok social media strategy, and an AI Client Growth System that automates follow-up, membership enrollment, recall, and reputation generation.",
+    },
+  ],
+
+  // ── Keyword Categories (Prompt 10) ──
   seoKeywordCategories: {
     injectables: {
       label: "Injectables & Neurotoxins", icon: Sparkles,
@@ -209,131 +247,189 @@ export const medSpaConfig: NicheConfig = {
     },
   },
 
-  // ── Paid Media ──
+  // ── Competitor Analysis + Topical Map + Content Score overrides (Prompt 11) ──
+  seoCompetitorBullets: [
+    { bold: "Competitor keyword gap analysis", desc: "we identify which injectable, body contouring, and laser terms your top competitors rank for that you don't" },
+    { bold: "Backlink profile comparison", desc: "we find authoritative beauty, wellness, and aesthetics publications linking to competitors and target the same sources" },
+    { bold: "Content gap identification", desc: "we find the treatment and location pages driving competitor traffic that you're missing" },
+    { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
+  ],
+  seoContentAuthorityStatement: "We Don't Publish Bulk AI Blogs. We Build Med Spa Authority.",
+  seoTopicalMapBody: "A topical map ensures Google sees your site as a complete authority on aesthetic treatments and medical spa services — not just a collection of random pages.",
+  topicMapCenterLine1: "Med Spa",
+  topicMapCenterLine2: "Authority",
+  topicMapSpokes: [
+    "Injectable Treatments",
+    "Body Contouring",
+    "Laser Services",
+    "Skin Rejuvenation",
+    "Wellness Memberships",
+    "Client Education",
+    "Treatment Comparisons",
+  ],
+  contentScoreLabel: "Med Spa Content Quality Score",
+  contentScoreCaption: "Sample score for a GrowSmallBiz-managed med spa content article. All content must pass minimum thresholds across all six dimensions before publication.",
+  seoContentThirdCardBody: "Content is structured for Google rankings and AI citation — so when a client asks ChatGPT, Perplexity, or Google AI which med spa to visit, your practice is the answer.",
+
+  // ── AI Visibility overrides (Prompt 12) ──
+  seoAiVisibilityHeading: "We Get Your Med Spa Recommended by AI Search Engines",
+  seoAiVisibilityBody1: "GrowSmallBiz tracks how AI platforms recommend your med spa across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode.",
+  seoAiVisibilityBody2: "When a client asks an AI assistant 'what's the best med spa for Botox near me?' or 'which med spa has the best before and after results in [city]?' — we make sure your practice is the answer.",
+
+  // ── Paid Media (Prompt 13) ──
   paidMediaHeadline: "We Run High-Converting Ads for",
   paidMediaHighlight: "Medical Spas",
-  paidMediaSubheadline: "Strategic ad platform recommendations by treatment category — injectables, body contouring, and skincare.",
+  paidMediaSubheadline: "Strategic ad platform recommendations by treatment category — injectables, body contouring, and new client acquisition.",
   adCreatives: [
     {
       id: "injectables",
-      genre: "Injectables & Neurotoxins",
+      genre: "Injectable Promotion",
       image: medSpaHeroImage,
-      platforms: ["Meta/Instagram", "Google PPC"],
-      description: "Before/after focused creative for Botox, lip filler, or dermal filler campaigns. Aspirational imagery, natural-looking results emphasis, promotion or consultation offer.",
+      platforms: ["Google PPC", "Meta/Instagram"],
+      description: "Before/after focused creative for Botox, lip filler, or dermal filler. FDA/FTC compliant claims: 'minimize lines,' 'enhance volume,' 'refresh your appearance.' Trust-forward with financing options.",
     },
     {
       id: "body-contouring",
       genre: "Body Contouring & Laser",
       image: portfolioMedSpaWebsite,
-      platforms: ["Meta/Instagram", "Google PPC", "Pinterest"],
-      description: "Results-focused creative for CoolSculpting, Emsculpt, or laser treatments. Seasonal relevance (summer body, holiday confidence). Free consultation offer.",
+      platforms: ["Google PPC", "Instagram/TikTok"],
+      description: "Treatment walkthrough creative for CoolSculpting, Emsculpt, or laser hair removal. Before/after imagery. 'Reduce stubborn fat' language — not 'eliminate.'",
     },
     {
-      id: "facial-offer",
-      genre: "Skincare & New Client Acquisition",
+      id: "new-client",
+      genre: "New Client Acquisition",
       image: medSpaHeroImage,
-      platforms: ["Meta/Facebook", "Google PPC", "Instagram"],
-      description: "Introductory offer for HydraFacial, chemical peel, or new client consultation. Lower barrier to entry — designed to introduce clients to the practice.",
+      platforms: ["Meta/Facebook", "Google Display"],
+      description: "First-time client consultation or introductory treatment offer. Targeted to adults who haven't visited a med spa in 12+ months.",
     },
   ],
   paidMediaByGenre: [
     {
       genre: "Injectables & Neurotoxins", icon: Sparkles,
       primary: [
-        { name: "Meta/Instagram", reason: "70-80% of budget — visual platform ideal for before/after results. Target women 25-55 in local radius with interest in beauty and aesthetics." },
-        { name: "Google PPC", reason: "Capture high-intent 'Botox near me' and 'lip filler [city]' searches." },
+        { name: "Google PPC", reason: "70-80% of budget — highest-intent 'near me' searches" },
+        { name: "Meta/Instagram", reason: "Before/after visual, retargeting" },
       ],
       secondary: [
-        { name: "TikTok", reason: "Treatment walkthrough videos and educational content for younger aesthetic audiences." },
+        { name: "Pinterest", reason: "Aspiration boards" },
+        { name: "TikTok", reason: "'Day of Botox' walkthrough content" },
       ],
       color: "blue",
     },
     {
       genre: "Body Contouring & Laser", icon: Target,
       primary: [
-        { name: "Meta/Instagram", reason: "Body transformation results content performs strongly on visual platforms. Seasonal summer and pre-holiday campaigns." },
-        { name: "Pinterest", reason: "Inspiration-driven searches for body goals and aesthetic treatments. High purchase intent audience." },
+        { name: "Instagram + Google PPC", reason: "Visual results + search intent" },
       ],
       secondary: [
-        { name: "Google PPC", reason: "Capture active searches for CoolSculpting, laser hair removal, and body contouring." },
+        { name: "YouTube", reason: "'What to expect from CoolSculpting' explainers" },
+        { name: "Pinterest", reason: "Body transformation inspiration" },
       ],
       color: "emerald",
     },
     {
-      genre: "Skincare & New Clients", icon: Heart,
+      genre: "Skin Care & Facials", icon: Heart,
       primary: [
-        { name: "Google PPC", reason: "Capture 'HydraFacial near me' and 'med spa near me' searches for high-intent new client acquisition." },
-        { name: "Meta/Facebook", reason: "New client offer targeting + retargeting website visitors who didn't book." },
+        { name: "Instagram + TikTok", reason: "Facial walkthroughs, skin transformation, provider spotlights" },
       ],
       secondary: [
-        { name: "Instagram", reason: "Visual platform for skincare results and new client introductory offers." },
+        { name: "Facebook", reason: "Educational content, community building" },
       ],
       color: "rose",
     },
   ],
+  paidMediaSetupBullets: [
+    "Google Ads account setup and campaign structure",
+    "Keyword research for med spa search terms — injectables, body contouring, laser, and facial treatment segments",
+    "Google Local Services Ads (LSA) setup where eligible",
+    "Conversion tracking from click to call to booked appointment",
+    "Seasonal campaign calendar — Valentine's, spring refresh, pre-holiday, membership drive",
+    "Treatment-specific landing page optimization",
+    "Ad creative copywriting — FDA/FTC compliant throughout",
+    "Monthly performance reporting and optimization",
+  ],
   metaAdSetupHeadline: "How We Help Med Spas with Meta Ad Setup",
-  metaAdSetupSubheadline: "Instagram and Facebook are the native platforms for aesthetic marketing — clients discover providers through visual content, build trust through results imagery, and book when the right offer appears at the right moment. We build scroll-stopping campaigns that drive consultation requests, promote seasonal offers, and retarget browsers who visited your website but didn't book.",
+  metaAdSetupSubheadline: "Facebook and Instagram ads reach clients before they need their next Botox appointment — building brand familiarity so when they're ready to book, your med spa feels like the obvious choice. We build cosmetic awareness campaigns, new client offer funnels, and retargeting sequences that keep your practice top-of-mind.",
   trackingRetargetingEssentials: [
     { title: "Facebook Pixel + Retargeting", description: "Track visitors, build retargeting audiences, and show ads to clients who visited your site but didn't book.", icon: Facebook },
     { title: "Google Analytics & GTM", description: "Track your full client journey, see which pages drive consultations, and manage all tracking codes centrally.", icon: BarChart3 },
     { title: "Call Tracking", description: "Know exactly which ad, keyword, or landing page generated each phone call and consultation booking.", icon: Phone },
   ],
 
-  // ── Retargeting ──
+  // ── Retargeting (Prompt 14) ──
   retargetingHeadline: "Be Found When They're Researching.",
   retargetingHighlight: "Stay Visible Until They're Ready to Book.",
-  retargetingSubheadline: "SEO brings them in. Retargeting keeps your results in front of them until timing is right.",
+  retargetingSubheadline: "SEO captures the ready-to-book treatment search. Retargeting closes the consideration-phase client.",
+  retargetingStep1Desc: "Client searches for a med spa or aesthetic treatment online",
+  retargetingDisplayLine: "SEO helps your med spa show up",
+  retargetingDisplaySubline: "when someone is actively searching for a treatment.",
   retargetingBody: [
-    "Aesthetic decisions take time. A client who discovered your lip filler results on Instagram today may not book for six weeks — she's comparing providers, thinking about timing, and waiting for the right moment.",
-    "Retargeting keeps your before/after imagery, your reviews, and your offers present across that entire consideration window. Your treatment results reappear in her Instagram feed. Your 5-star reviews show up alongside a targeted Facebook ad. When she finally decides to book — and she will — your med spa is the one that already feels familiar, trusted, and aspirational. That's not coincidence. That's a system.",
+    "Aesthetic decisions take time. A client researching CoolSculpting today may not book for months — they're comparing results, checking financing, looking at your before/after photos. Retargeting keeps your med spa visible across that entire consideration period. Your before/after imagery reappears on their Instagram. Your client reviews show up in their Facebook feed. When they finally decide, your name is the one they trust.",
+    "For clients who searched, visited your website, and didn't book, retargeting follows up with a gentle prompt when their consideration window reopens.",
   ],
 
-  // ── Social Media ──
+  // ── Social Media (Prompt 15) ──
   socialMediaHeadline: "We Build Your Social Media",
   socialMediaHighlight: "Strategy",
-  socialMediaSubheadline: "Platform-specific strategies for med spas — by treatment category and client acquisition goal.",
+  socialMediaSubheadline: "Platform-specific strategies for medical spas — by treatment category and client lifecycle stage.",
   socialMediaByGenre: [
     {
-      genre: "Injectables & Results Content",
+      genre: "Injectables & Cosmetic",
       primary: [
-        { name: "Instagram", icon: Instagram, strategy: "Before/after reveals, treatment process Reels, provider spotlights, client testimonials in video format — highest organic reach for aesthetic results." },
-        { name: "TikTok", icon: Globe, strategy: "Treatment walkthrough videos, 'day of Botox' content, educational aesthetic content — strong reach with younger audiences." },
+        { name: "Instagram [Priority]", icon: Instagram, strategy: "Before/after transformations, treatment process Reels, provider spotlights, client testimonial stories" },
+        { name: "TikTok [Priority]", icon: Globe, strategy: "'Day of Botox' walkthrough, 'I got lip filler' content, provider education" },
       ],
       secondary: [
-        { name: "Pinterest", icon: MapPin, strategy: "Aspirational beauty and aesthetic results boards." },
+        { name: "Pinterest", icon: MapPin, strategy: "Aspiration boards" },
+        { name: "YouTube", icon: Globe, strategy: "Treatment explanation videos" },
       ],
       color: "blue",
     },
     {
-      genre: "Brand Awareness & Trust",
+      genre: "Body Contouring & Laser",
       primary: [
-        { name: "Facebook", icon: Facebook, strategy: "Local community presence, practice culture content, special offers to local homeowner audiences." },
-        { name: "Instagram", icon: Instagram, strategy: "Practice behind-the-scenes, provider credentials, meet-the-team content — trust-building for considered buyers." },
+        { name: "Instagram [Priority]", icon: Instagram, strategy: "Before/after body transformation, results" },
+        { name: "TikTok [Priority]", icon: Globe, strategy: "Treatment process, 'what to expect' content" },
       ],
       secondary: [
-        { name: "YouTube", icon: Globe, strategy: "Longer treatment education content, provider expertise videos, client journey stories." },
+        { name: "YouTube", icon: Globe, strategy: "Longer-form treatment education" },
+        { name: "Facebook", icon: Facebook, strategy: "Awareness campaigns" },
       ],
       color: "emerald",
     },
     {
-      genre: "Client Retention & Membership",
+      genre: "Skin Care & Wellness",
       primary: [
-        { name: "Instagram", icon: Instagram, strategy: "Existing client appreciation content, membership benefits showcases, VIP event announcements — retention and referral activation." },
-        { name: "Email/SMS", icon: Mail, strategy: "Membership renewal prompts, seasonal treatment reminders, birthday offers — highest ROI retention channel." },
+        { name: "Instagram [Priority]", icon: Instagram, strategy: "Facial treatment process, skin transformation, team content" },
+        { name: "Facebook [Priority]", icon: Facebook, strategy: "Community groups, local awareness, client appreciation" },
       ],
       secondary: [
-        { name: "Facebook", icon: Facebook, strategy: "Loyalty program announcements, referral incentive campaigns." },
+        { name: "Pinterest", icon: MapPin, strategy: "Skincare routine inspiration" },
       ],
       color: "amber",
+    },
+    {
+      genre: "Membership & Retention",
+      primary: [
+        { name: "Email/SMS [Priority]", icon: Mail, strategy: "Membership enrollment, renewal reminders, treatment upgrades — highest ROI retention channel" },
+        { name: "Facebook [Priority]", icon: Facebook, strategy: "Client appreciation, updates, seasonal offers" },
+      ],
+      secondary: [
+        { name: "Instagram", icon: Instagram, strategy: "Member spotlights, loyalty content" },
+      ],
+      color: "rose",
     },
   ],
   linkedInOutreachEnabled: false,
   linkedInOutreach: undefined,
 
-  // ── AI Growth System ──
+  // ── AI Growth System (Prompt 16 — Section A) ──
   growthSystemHeadline: "for Medical Spas",
   growthSystemHighlight: "AI Client Growth System",
-  growthSystemSubheadline: "Stop losing bookings to slow follow-up and manual scheduling. Build an automated system that captures leads, books consultations, and turns first-time visitors into loyal membership clients.",
+  growthSystemSubheadline: "Stop losing bookings to slow follow-up and manual scheduling. Build an automated system that captures leads, books consultations, and turns first-time visitors into loyal, recurring membership clients.",
+  growthSystemDisconnectedToolsBody: "Most medical spas use separate tools for new client capture, appointment booking, membership management, and follow-up. These tools don't talk to each other — leads fall through the cracks.",
+  marketingCampaignsHighlight: "We Build for Your Medical Spa",
+  seasonalCampaignsHeading: "We Automate for Your Medical Spa",
   clientJourneyStages: [
     {
       stage: "Awareness", icon: Eye,
@@ -414,79 +510,85 @@ export const medSpaConfig: NicheConfig = {
       expectedReduction: "Up to 60%",
     },
   ],
+
+  // ── Marketing Campaign Cards (Prompt 16 — Section B/C) ──
   marketingCampaigns: [
     {
-      genre: "Spring Body Contouring Campaign", icon: Target, color: "from-blue-500 to-cyan-500",
+      genre: "New Client Special — General", icon: UserPlus, color: "from-blue-500 to-cyan-500",
       offer: {
-        headline: "Free Body Contouring Consultation + 15% Off First Treatment",
-        tagline: "Get summer-ready before peak season",
-        price: "15% Off",
+        headline: "New Client Consultation + Treatment Bundle",
+        tagline: "Introductory pricing for first-time clients",
+        price: "Intro Rate",
         originalPrice: "",
-        savings: "15% off first treatment package",
-        includes: ["Complimentary consultation", "Personalized treatment plan", "Package pricing overview"],
-        urgency: "Limited spring slots before summer — book before peak season",
+        savings: "First-time client pricing",
+        includes: ["30-min consultation", "Provider assessment", "Introductory treatment session", "Treatment plan overview"],
+        urgency: "Limited introductory slots available — book now",
         cta: "Book Consultation",
       },
-      funnel: ["Meta/Instagram ads → Body contouring landing page", "Consultation booking → Nurture sequence"],
-      topPlatforms: ["Meta/Instagram", "Google PPC"],
-      seasonality: "Peak: March–May (pre-summer body goals)",
+      funnel: ["Google PPC / Meta → Landing Page", "Booking Form → Nurture Sequence", "Recall Enrollment"],
+      topPlatforms: ["Google PPC", "Meta", "Landing Page"],
+      seasonality: "Peak: January, May (pre-summer)",
     },
     {
-      genre: "Pre-Holiday Injectable Special", icon: Sparkles, color: "from-rose-500 to-pink-500",
+      genre: "Membership — Recurring Revenue", icon: Heart, color: "from-emerald-500 to-teal-500",
       offer: {
-        headline: "'Holiday Ready' — Botox or Filler Treatment",
-        tagline: "Look your best for the holiday season",
-        price: "Special Rate",
-        originalPrice: "",
-        savings: "Complimentary consultation included",
-        includes: ["Provider consultation", "Treatment", "Touch-up scheduling", "Aftercare kit"],
-        urgency: "Book by deadline for results before the holidays",
-        cta: "Book Now",
-      },
-      funnel: ["Instagram/Facebook ads + email to existing clients", "Injectable landing page → Booking"],
-      topPlatforms: ["Instagram", "Facebook", "Email"],
-      seasonality: "Peak: October–November (pre-holiday demand spike)",
-    },
-    {
-      genre: "Membership Enrollment Campaign", icon: Heart, color: "from-emerald-500 to-teal-500",
-      offer: {
-        headline: "Founding Member Rate — Discounted Monthly Membership",
-        tagline: "Exclusive benefits for early members",
+        headline: "Monthly Treatment Membership",
+        tagline: "Monthly subscription pricing",
         price: "Member Rate",
         originalPrice: "",
         savings: "Discounted first 3 months",
-        includes: ["Monthly treatment credit", "Priority booking", "Exclusive member events", "Product discounts"],
+        includes: ["Monthly injectable or facial allowance", "Priority scheduling", "Member-only pricing on additional treatments", "Complimentary consultation upgrades"],
         urgency: "Founding member pricing closes soon",
         cta: "Join Now",
       },
-      funnel: ["Post-visit email sequence → Membership landing page", "Online enrollment + auto-billing"],
-      topPlatforms: ["Email", "SMS", "Meta Retargeting"],
-      seasonality: "Peak: January (New Year), September (fresh start post-summer)",
+      funnel: ["Email / Instagram / Facebook → Membership landing page", "Sign-up → Onboarding sequence"],
+      topPlatforms: ["Email", "Instagram", "Facebook"],
+      seasonality: "Peak: January and September",
+    },
+    {
+      genre: "Client Recall & Reactivation", icon: RefreshCw, color: "from-rose-500 to-pink-500",
+      offer: {
+        headline: "We Miss You — Overdue Treatment Visit",
+        tagline: "Priority Scheduling for returning clients",
+        price: "Priority Access",
+        originalPrice: "",
+        savings: "Returning client offer included",
+        includes: ["Personalized treatment recommendation based on prior visit", "Easy one-click booking", "Returning client offer"],
+        urgency: "Automated year-round — we never stop re-engaging",
+        cta: "Book Your Return Visit",
+      },
+      funnel: ["Email/SMS to clients 90+ days inactive", "Recall booking page → Confirmation", "Re-engagement"],
+      topPlatforms: ["Email", "SMS", "Retargeting"],
+      seasonality: "Automated year-round",
     },
   ],
+
+  // ── Seasonal Campaigns (Prompt 16 — Section C) ──
   seasonalCampaigns: [
-    { campaign: "Valentine's Day", timing: "Launch 3 weeks before", offer: "Couples packages, gift cards, lip + skin treatments", channels: ["Instagram", "Facebook", "Email to existing clients"] },
-    { campaign: "Spring Body Contouring", timing: "Launch late February", offer: "Body contouring + laser hair removal promo", channels: ["Meta ads", "Google PPC", "Retargeting"] },
-    { campaign: "Summer Skin Prep", timing: "Launch May", offer: "Sun protection, skin brightening, hydration treatments", channels: ["Instagram", "Email to existing clients"] },
-    { campaign: "Back-to-Confidence", timing: "Launch late August", offer: "Post-summer refresh + Botox/filler refresh", channels: ["Instagram", "Google PPC", "Email"] },
-    { campaign: "Pre-Holiday", timing: "Launch October", offer: "'Holiday Ready' injectable specials + gift cards", channels: ["Meta ads", "Email", "SMS to past clients"] },
-    { campaign: "Membership Drive", timing: "Launch first week (Jan & Sep)", offer: "Founding/renewal membership offer", channels: ["Email + SMS to existing clients", "Meta retargeting"] },
+    { campaign: "Valentine's Day", timing: "Launch 3 weeks before (Feb)", offer: "Gift cards + couples packages", channels: ["Google PPC", "Facebook", "Email to existing clients"] },
+    { campaign: "Spring Refresh", timing: "Launch Mar–Apr", offer: "Pre-summer skin + body prep", channels: ["Google PPC", "Instagram", "Retargeting"] },
+    { campaign: "Summer Glow", timing: "Launch Jun–Jul", offer: "Laser, facials, summer skin", channels: ["TikTok", "Instagram", "Google PPC"] },
+    { campaign: "Back to Confidence", timing: "Launch Sep", offer: "Post-summer treatment refresh", channels: ["Instagram", "Facebook", "Google PPC"] },
+    { campaign: "Pre-Holiday", timing: "Launch Oct–Nov", offer: "Botox, fillers, skin renewal", channels: ["Google PPC", "Instagram cosmetic ads", "Retargeting"] },
+    { campaign: "Membership Drive", timing: "Launch Nov–Dec + Jan", offer: "Holiday gifting + New Year memberships", channels: ["Email to lapsed clients", "Facebook"] },
   ],
   pastClientWorkflows: [
     { title: "Treatment Maintenance Reminder", description: "Automated reminder sent 8–12 weeks after Botox/filler appointments — prompting clients to schedule their maintenance visit before results fade, with direct booking link.", icon: Calendar },
     { title: "Re-engagement Campaign", description: "Clients inactive for 6+ months receive an automated 'We miss you' campaign with a return client offer and a one-click booking link. Lapsed members get a membership reactivation sequence.", icon: RefreshCw },
   ],
 
-  // ── Reputation ──
+  // ── Reputation (Prompt 16 — Section D) ──
   reputationHeadline: "We Build Your Reputation",
   reputationHighlight: "— Automatically After Every Treatment",
   reputationSubheadline: "Turn every satisfied client into a glowing review and a referral source.",
+  reputationInnerH3: "We Handle Your Med Spa Reputation",
   reputationBullets: [
-    "Aesthetic clients are among the most review-sensitive consumers — 90%+ check reviews before booking",
-    "Google reviews directly impact your Map Pack ranking — recency, volume, and rating all matter",
-    "Automated review requests sent after every completed treatment",
-    "Monitor all platforms: Google, Yelp, RealSelf, Healthgrades",
-    "Respond to every review professionally — public responses demonstrate care and build trust with future clients",
+    "84% of clients check online reviews before choosing a med spa — your rating is your first impression — rater8, 2025",
+    "40% of clients have abandoned a booking due to negative reviews — rater8, 2025. Every unaddressed review is a lost appointment.",
+    "Google reviews directly impact your Map Pack ranking — recency and volume both matter",
+    "Automated review requests sent after every completed appointment",
+    "Monitor all platforms: Google, Yelp, RealSelf, Healthgrades, Zocdoc",
+    "Respond to every review with professional templates that demonstrate client-first care",
   ],
   reviewFlowSteps: [
     { step: "1", title: "Treatment Complete", description: "Client marked as seen in system" },
@@ -502,16 +604,16 @@ export const medSpaConfig: NicheConfig = {
     { title: "Referral Rewards", description: "Incentivize referrals with treatment credits, product discounts, or VIP event invitations. Automate reward delivery.", icon: DollarSign, features: ["Automatic reward triggers", "Treatment credit system", "Thank-you emails", "Referral leaderboard"] },
   ],
 
-  // ── AI Voice & Chat ──
+  // ── AI Voice & Chat (Prompt 18) ──
   aiVoiceChatSectionHeadline: "We Power Your Med Spa",
   aiVoiceChatHighlight: "Around the Clock — 24/7",
-  aiVoiceChatSubheadline: "Never miss a new client inquiry — AI handles booking requests and treatment questions at any hour.",
+  aiVoiceChatSubheadline: "Never miss a new client inquiry again. AI answers calls, checks your calendar, qualifies leads, and books appointments — even after hours when clients are researching treatments on their phones.",
   aiFeatures: [
     {
       title: "24/7 AI Receptionist",
-      description: "Never miss a consultation request again. AI answers inquiries, checks your calendar, qualifies leads, and books appointments — even at 9pm when your front desk is closed.",
+      description: "Never miss a new client inquiry again. AI answers calls, checks your calendar, qualifies leads, and books appointments — even after hours when clients are researching treatments on their phones.",
       icon: Phone,
-      features: ["Answers calls in your brand voice", "Checks calendar availability in real-time", "Books consultation appointments", "Sends personalized follow-up with treatment info", "Sends confirmation texts/emails"],
+      features: ["Answers calls in your brand voice", "Checks calendar availability in real-time", "Books consultation appointments", "Flags high-intent client inquiries for immediate follow-up", "Sends confirmation texts/emails"],
       color: "violet",
     },
     {
@@ -523,36 +625,36 @@ export const medSpaConfig: NicheConfig = {
     },
   ],
 
-  // ── Why Choose Us ──
+  // ── Why Choose Us (Prompt 17) ──
   whyChooseUsHeadline: "Why Choose GrowSmallBiz for Med Spa Marketing",
   whyChooseUsSubtitle: "Your Med Spa Marketing Partner",
-  whyChooseUsBody: "We understand the aesthetic industry — the visual-first nature of client acquisition, the seasonal demand patterns, and the membership economics that separate thriving practices from struggling ones.",
+  whyChooseUsBody: "We understand med spa business dynamics — the visual-first nature of aesthetic client acquisition, the membership economics, and the FDA/FTC compliance requirements that most marketing agencies ignore.",
   whyChooseUsCards: [
-    { title: "Aesthetic Industry Specialists", description: "We focus on health and wellness practices — med spas, dental, chiropractic. We understand aesthetic client behavior, the visual trust signals that drive bookings, and the membership economics that build sustainable practices.", icon: Sparkles },
-    { title: "Visual-First Marketing Strategy", description: "Aesthetic marketing lives or dies on visual quality. We build before/after content strategies, Instagram campaigns, and website design that showcase your results in the aspirational way that converts browsers into clients.", icon: Palette },
-    { title: "24/7 Client Acquisition", description: "Your AI Receptionist captures consultation requests at 9pm, answers treatment questions, and books appointments before your front desk arrives. No more lost after-hours bookings.", icon: Phone },
-    { title: "Membership Revenue Architecture", description: "We build the systems that convert one-time clients into loyal members — automated follow-up, membership enrollment campaigns, and retention sequences that transform your monthly revenue.", icon: Heart },
-    { title: "Seasonal Campaign Expertise", description: "We map every campaign to the aesthetic demand calendar — spring body contouring, pre-holiday injectables, Valentine's gifting, and summer skin prep — so you capture seasonal demand before your competitors.", icon: Calendar },
-    { title: "Verified Case Study Results", description: "Verified AI SEO and Google Ads case study results available for med spa clients. Schedule a call to review the actual campaign data and metrics.", icon: BarChart3 },
+    { title: "Med Spa & Aesthetics Specialists", description: "We focus on health and wellness practices: med spa, dental, chiropractic. We understand aesthetic client acquisition dynamics, treatment upsell conversions, and the trust signals that move clients from social media follower to booked appointment.", icon: Sparkles },
+    { title: "Visual-First Content Strategy", description: "Our campaigns are built around the before/after imagery and treatment walkthrough content that aesthetic clients require before booking. We build the content infrastructure that Instagram and TikTok demand.", icon: Palette },
+    { title: "24/7 New Client Capture", description: "Your AI Receptionist captures new client inquiries at 9pm, qualifies them, and books appointments before your front desk arrives in the morning.", icon: Phone },
+    { title: "Membership Revenue Architecture", description: "Membership enrollment is built into every client touchpoint — not an afterthought. We systematically convert one-time visitors into recurring members that stabilize your monthly revenue.", icon: Heart },
+    { title: "FDA/FTC Compliant Marketing", description: "Every ad, landing page, and piece of content we produce uses compliant treatment result language. We protect your practice from regulatory risk while still converting effectively.", icon: Shield },
+    { title: "Verified Case Study Results", description: "Verified case study results available for med spa practices. Schedule a call to review the actual campaign data and metrics.", icon: BarChart3 },
   ],
 
-  // ── FAQ ──
+  // ── FAQ (Prompt 19) ──
   faqHeadline: "Med Spa Marketing FAQs",
   faqSubheadline: "Common questions organized by service",
   faqCategories: [
     {
       id: "ai-seo", label: "AI SEO", icon: Search, color: "emerald",
       faqs: [
-        { question: "How long does it take to rank on Google for med spa searches?", answer: "Most med spas see meaningful ranking improvements within 3–6 months depending on market competition. We prioritize high-value treatment keywords and build topical authority across your full service menu." },
-        { question: "Do I need separate pages for each treatment I offer?", answer: "Yes — treatment-specific pages (Botox, fillers, laser, body contouring, facials) are essential for ranking in treatment-based searches. Each page needs unique, clinically informed content." },
-        { question: "How do Google reviews affect my med spa's local ranking?", answer: "Review quantity, recency, and velocity are top Map Pack ranking factors. Aesthetic clients are especially review-sensitive — our automated review system ensures every treatment generates a review opportunity." },
-        { question: "What's the difference between local SEO and regular SEO for med spas?", answer: "Local SEO focuses on Google Maps and 'near me' searches where most aesthetic clients look first. Regular SEO targets broader organic rankings for treatment education content that builds long-term authority." },
-        { question: "How do you optimize my Google Business Profile for aesthetic services?", answer: "We optimize every field — categories, services, treatment photos, Q&A, posts, and review response strategy. We also build citations on aesthetic-specific directories like RealSelf." },
-        { question: "Can you help me rank for high-value searches like Botox or body contouring?", answer: "Absolutely. High-value treatment keywords require dedicated content strategy with topical depth. We build treatment cluster pages that establish your authority and outrank competitors." },
-        { question: "How does AI search (ChatGPT, Gemini) affect how clients find my med spa?", answer: "AI assistants are increasingly recommending local providers. We build structured content and citations that help AI platforms recognize and recommend your med spa when clients ask for aesthetic treatment recommendations." },
-        { question: "Will SEO work in a competitive aesthetic market?", answer: "Yes — we build compounding advantages through content velocity, treatment-specific authority, and review strategy. In competitive markets, systematic execution wins over time." },
-        { question: "How do you build topical authority for a full-service med spa?", answer: "We create treatment cluster content — a main service page plus supporting content (FAQ, comparison, preparation, aftercare) for each treatment category. This signals deep expertise to both Google and AI platforms." },
-        { question: "How do you track and report SEO results for med spas?", answer: "Monthly reports cover keyword rankings, Map Pack position, organic traffic, consultation requests, and phone calls. You also get access to a live dashboard for real-time progress monitoring." },
+        { question: "How long does it take to rank on Google for med spa searches in my area?", answer: "Most med spas see measurable ranking improvements within 3–6 months for local and long-tail treatment terms, with competitive terms like 'Botox near me' typically taking 6–12 months in established aesthetic markets.\n\nTreatment-specific long-tail terms ('lip filler [city],' 'HydraFacial near me') often rank faster than broad 'med spa near me' because most competitors haven't built dedicated treatment pages with genuine content depth.\n\nSeasonal search volume spikes for med spa keywords create accelerated ranking opportunities when targeted with content published 8–12 weeks before peak windows." },
+        { question: "Do I need separate pages for each treatment I offer?", answer: "Yes — each high-value treatment needs its own dedicated page. A single 'Services' page cannot rank simultaneously for 'Botox near me,' 'CoolSculpting [city],' 'lip filler [city],' and 'HydraFacial near me.'\n\nMed spas with dedicated pages for each treatment consistently outrank those consolidating services. Each treatment page builds independent keyword relevance, backlink targets, and trust content specific to that treatment's consideration journey.\n\nTreatment page depth matters as much as count — each page needs content covering the procedure, candidacy, what to expect, recovery, FDA/FTC-compliant result language, and before/after imagery." },
+        { question: "How do online reviews affect my med spa's local ranking?", answer: "Google reviews are a direct ranking factor for local pack and Maps results — a med spa with consistent recent 4.8+ star reviews consistently outranks competitors with fewer or older reviews.\n\n— rater8, 2025: 84% of clients check reviews before choosing a healthcare or aesthetic provider.\n\nReview content matters in med spa — clients mentioning 'Botox' or 'CoolSculpting' in reviews help your spa surface for those exact treatment searches. 40% of clients have abandoned a booking due to negative reviews — rater8, 2025.\n\nAesthetic clients are among the most review-sensitive consumers — the personal nature of treatments and cost elevates the importance of social proof." },
+        { question: "What's the difference between local SEO and regular SEO for med spas?", answer: "Local SEO targets clients with geographic intent — 'Botox near me,' 'med spa [city]' — through Google Business Profile, Map Pack, and local citations. Regular SEO targets treatment and educational intent — 'how long does Botox last,' 'CoolSculpting vs Emsculpt.'\n\nBoth are essential. Local SEO captures the ready-to-book client. Regular SEO captures the consideration-phase client researching treatments over weeks before booking.\n\nAesthetic treatments have longer consideration cycles. A client researching lip filler for the first time may spend 2–4 weeks comparing providers and building trust before booking." },
+        { question: "How do you optimize my Google Business Profile for my med spa?", answer: "We audit and optimize every GBP element: primary and secondary category selection, service listings for every treatment, business description with treatment keywords, photo volume (before/after where appropriate), Q&A population, and weekly posting cadence.\n\nAdding 'Medical Spa,' 'Laser Hair Removal Service,' or 'Skin Care Clinic' as categories unlocks Map Pack visibility for specific treatment searches. We install GBP heatmap tracking so you see where your med spa surfaces by neighborhood and treatment term.\n\nGBP before/after photos require compliance with Google healthcare imagery policies and client consent documentation." },
+        { question: "Can you help me rank for high-value terms like Botox or CoolSculpting?", answer: "Yes — and these terms are a specific focus because they carry the highest per-visit revenue and the longest client lifetime value when combined with a membership system.\n\nRanking requires a dedicated treatment page with genuine content depth — 1,500–2,500 words covering the treatment, candidacy, expected outcomes using FDA/FTC-compliant language, and client results.\n\nOur topical map builds the full supporting content cluster — treatment comparison guides, 'Botox vs Dysport,' pre/post care articles — that Google uses to assign sustained authority to your core treatment pages." },
+        { question: "How does AI search (ChatGPT, Gemini) affect med spa client discovery?", answer: "31% of patients now use generative AI to research healthcare and aesthetic providers before booking — rater8, 2025. When clients ask ChatGPT 'best med spa for Botox near me?' AI pulls from your indexed content, GBP data, and review platforms.\n\nMed spas with strong review volume, structured treatment content, and consistent before/after imagery are most likely to appear in AI answers. We track your citation share across 6 platforms.\n\n73% of patients adopted new healthcare research behaviors in the past year — rater8, 2025. Aesthetic clients in the 30–50 demographic are among the fastest adopters of AI-assisted provider discovery." },
+        { question: "Will SEO work for my med spa in a highly competitive market?", answer: "Yes — and competitive aesthetic markets are where systematic SEO creates the largest advantage, because most med spas rely on Instagram or paid ads and leave organic search unclaimed.\n\nThe primary med spa keyword cluster has KD 33. Thrive Agency dominates at 94 content score with 3,153 words — but a properly structured med spa website with genuine treatment depth and strong GBP signals competes effectively in most markets.\n\nWe sequence keyword targets by revenue impact — starting with high-value treatment terms your domain authority can reach fastest, then expanding into more competitive 'med spa near me' positions." },
+        { question: "Do you create educational content about treatments for my med spa?", answer: "Yes — treatment education content is core to our med spa SEO strategy. We build content that answers the specific questions clients search during the consideration phase.\n\nEducation content ranks for informational searches — 'how many Botox units for forehead,' 'what to expect from first CoolSculpting,' 'is RF microneedling painful.' All content is FDA/FTC compliant — result claims use 'reduce,' 'minimize,' 'improve' language.\n\nTreatment comparison content is particularly high-value — 'Botox vs Dysport,' 'CoolSculpting vs Emsculpt,' 'HydraFacial vs chemical peel.' Clients in the consideration phase actively seek this content." },
+        { question: "How do you track and report SEO results for med spas?", answer: "Monthly reporting covers keyword ranking movement, Google Business Profile performance, organic traffic by treatment landing page, and new client inquiry source attribution — which keywords and pages generate actual form submissions and calls.\n\nWe tie SEO to business outcomes — which treatment pages drive bookings, which GBP categories generate Map Pack clicks, and how review velocity affects local rank. AI citation share is reported monthly across 6 platforms.\n\nSeasonal reporting is critical for med spas — we flag which seasonal windows are approaching and ensure content is timed to peak search volume 8–12 weeks in advance." },
       ],
     },
     {
