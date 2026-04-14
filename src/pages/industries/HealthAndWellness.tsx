@@ -10,20 +10,16 @@ import {
   Stethoscope,
   ArrowRight,
   CheckCircle2,
-  Shield,
-  Users,
-  Star,
-  Bot,
-  Search,
-  Globe,
-  MessageSquare,
   ChevronRight,
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { CardCTA } from "@/components/services";
 import { baseContactCTA } from "@/config/contactCTA";
-import healthWellnessHeroImage from "@/assets/industry-healthwellness-hero.webp";
+import healthWellnessHeroImage from "@/assets/health-wellness/health-wellness-hero.webp";
+import dentalImage from "@/assets/health-wellness/dental-practice-marketing.webp";
+import chiroImage from "@/assets/health-wellness/chiropractic-marketing.webp";
+import medSpaImage from "@/assets/health-wellness/med-spa-marketing.webp";
+import funnelImage from "@/assets/health-wellness/patient-acquisition-funnel.webp";
 import { useUtm } from "@/hooks/use-utm";
 
 const practiceTypes = [
@@ -47,7 +43,9 @@ const challenges = [
   },
   {
     title: "The Disproportionate Weight of Online Reviews",
-    description: "88% of patients read reviews before choosing a provider. Negative reviews impact health businesses approximately twice as much as other industries. A practice with a weak review profile loses patients to competitors at every stage of the funnel — search, click, and conversion. Reputation management is not a nice-to-have in health and wellness. It is infrastructure.",
+    description: "", // Rendered with standalone stat paragraph below
+    stat: "84% of patients check online reviews before choosing a healthcare provider. (rater8, 2025 — nationwide survey of 1,008 U.S. adults)",
+    body: "Negative reviews impact health businesses approximately twice as much as other industries. A practice with a weak review profile loses patients to competitors at every stage of the funnel — search, click, and conversion. Reputation management is not a nice-to-have in health and wellness. It is infrastructure.",
   },
   {
     title: "Elective vs. Insurance-Covered Services",
@@ -67,20 +65,23 @@ const practices = [
   {
     icon: Stethoscope,
     title: "Dental Practices",
+    image: dentalImage,
     description: "Dental patients research providers extensively before booking. They check Google rankings, read reviews, and compare websites before making a single phone call. The core dental growth system is Local SEO + Google Ads + Reputation Management: together, these channels drive consistent new patient acquisition through high-intent searches like \"dentist near me,\" \"teeth whitening near me,\" and \"emergency dentist.\"",
-    link: "/health-and-wellness-practices/marketing-for-dentists/",
+    link: "/health-and-wellness-practices/dental-marketing/",
     linkText: "Explore dental practice marketing services",
   },
   {
     icon: Heart,
     title: "Chiropractic Practices",
-    description: "Chiropractic is a high-consideration category — patients research their condition and their provider before committing to care. Local SEO for condition-specific searches like \"back pain chiropractor near me,\" \"sports injury treatment,\" and \"sciatica relief\" captures patients at their highest point of intent. There is a real credibility gap in chiropractic search results across Contra Costa County and the Tri-Valley: well-optimized practices consistently outrank under-invested competitors and capture the bulk of local search traffic.",
+    image: chiroImage,
+    description: "Chiropractic is a high-consideration category — patients research their condition and their provider before committing to care. Local SEO for condition-specific searches like \"back pain chiropractor near me,\" \"sports injury treatment,\" and \"sciatica relief\" captures patients at their highest point of intent. There is a significant credibility gap in chiropractic search results nationwide: well-optimized practices consistently outrank under-invested competitors and capture the bulk of local search traffic.",
     link: "/health-and-wellness-practices/marketing-for-chiropractors/",
     linkText: "Explore chiropractic marketing services",
   },
   {
     icon: Sparkles,
     title: "Med Spas & Aesthetic Clinics",
+    image: medSpaImage,
     description: "Med spa clients are visual-first and social-proof-driven. Before/after results, Google reviews, and social media presence influence their decisions above almost everything else. Google Ads for high-value treatments — Botox, dermal fillers, laser treatments, body contouring — delivers measurable ROI because these are high-intent, high-value searches from clients who are ready to book. A med spa without a strong paid and organic presence is invisible at exactly the moment a client is ready to spend.",
     link: "/health-and-wellness-practices/marketing-for-med-spas/",
     linkText: "Explore med spa marketing services",
@@ -89,8 +90,8 @@ const practices = [
 
 const serviceCards = [
   {
-    title: "Local SEO + Website Design",
-    description: "Rank at the top of Google when patients search \"dentist near me,\" \"chiropractor near me,\" or \"med spa near me.\" We build conversion-optimized websites and optimize your Google Business Profile, build authoritative local citations, and execute proven map pack strategies — all designed together from the ground up. SEO and website design built as one integrated system is the foundation of sustainable, long-term new patient acquisition. A website built for SEO from day one outperforms a retrofitted site every time.",
+    title: "Managed AI SEO + Website Design",
+    description: "Rank at the top of Google, Google Maps, and AI-powered search when patients search for your services. Our Managed AI SEO system covers the complete stack: Technical SEO to ensure your site is crawlable and fast, On-Page SEO to optimize every page for the keywords patients use, Local SEO and Google Business Profile management to dominate the map pack, Link Building to build the domain authority that sustains rankings, AEO (Answer Engine Optimization) to position your practice as the trusted answer in voice and AI search, and GEO (Generative Engine Optimization) to get your practice cited by ChatGPT, Perplexity, and Google AI Overviews. Every element is built together with a conversion-optimized website — because SEO and site design built as one integrated system is the foundation of sustainable, long-term new patient acquisition.",
   },
   {
     title: "Google Ads / PPC for Health & Wellness Practices",
@@ -98,7 +99,7 @@ const serviceCards = [
   },
   {
     title: "Reputation Management",
-    description: "88% of patients read reviews before choosing a provider. Practices with 50 or more Google reviews receive three times more appointment requests than those with fewer than 10. We automate your Google review generation, monitor patient feedback across all platforms, and help you build the 5-star profile that converts online searchers into booked appointments. A stronger reputation lifts conversion rates from every other marketing channel — SEO, ads, and direct traffic all perform better when your review profile is strong.",
+    description: "84% of patients check online reviews before choosing a healthcare provider. (rater8, 2025) Patients consistently check reviews before booking any health or wellness provider. Practices with a strong review profile — volume, recency, and rating — consistently outperform those with weak ones at every stage: search rankings, click-through, and appointment conversion. We automate your Google review generation, monitor patient feedback across all platforms, and help you build the 5-star profile that converts online searchers into booked appointments. A stronger reputation lifts conversion rates from every other marketing channel — SEO, ads, and direct traffic all perform better when your review profile is strong.",
   },
   {
     title: "Social Media Management",
@@ -109,8 +110,8 @@ const serviceCards = [
     description: "Patients inquire after hours. A phone that goes unanswered at 9pm is a patient who books with your competitor at 9:01pm. Our AI Receptionist captures every inquiry 24/7 — answering questions, qualifying leads, and booking appointments automatically. You never lose a new patient because no one picked up the phone.",
   },
   {
-    title: "Answer Engine Optimization (AEO)",
-    description: "More patients are finding providers through voice search and AI assistants. When someone asks Google, Siri, or ChatGPT for a dentist, chiropractor, or med spa near them — AEO positions your practice as the trusted answer. This drives a new category of patient traffic that most practices are completely missing, and it is growing faster than traditional search.",
+    title: "Lead Nurture, Client Reactivation & Referrals",
+    description: "Getting a new patient inquiry is only half the battle. Most practices lose leads because no one follows up fast enough — and lose former patients because no one reaches out at all. Our Lead Nurture system automates multi-step follow-up sequences so every inquiry gets an immediate response, a next-day check-in, and a structured path to booking — without your front desk doing it manually. Client Reactivation campaigns re-engage patients who have not returned in 6, 12, or 18 months with personalized outreach that fills appointment gaps with patients who already trust your practice. Referral automation turns your happiest patients into a consistent referral source — systematically asking for introductions at the right moment in the patient journey. Together, these three systems maximize the revenue from every patient your marketing has already attracted.",
   },
 ];
 
@@ -119,7 +120,7 @@ const channelData = [
   { channel: "Google Ads / PPC", bestFor: "All three practice types", insight: "Fastest ROI. High-intent treatment searches. Tracked to booked appointments, not clicks." },
   { channel: "Meta Ads (Lead Forms)", bestFor: "Med Spas", insight: "Outperform landing pages for consultations. Simplified inquiry drives higher conversion rates." },
   { channel: "Local SEO", bestFor: "All three practice types", insight: "Takes 4-6 months to mature. Delivers the lowest cost-per-patient acquisition over the long term." },
-  { channel: "Reputation Management", bestFor: "All three practice types", insight: "88% of patients read reviews before booking. Non-negotiable for conversion from every channel." },
+  { channel: "Reputation Management", bestFor: "All three practice types", insight: "Patients check reviews before booking — non-negotiable for conversion from every channel. (rater8, 2025: 84% of patients check reviews before choosing a provider.)" },
   { channel: "Social Media", bestFor: "Med Spas primarily", insight: "Before/after visual content drives bookings. Less critical for dental and chiropractic." },
   { channel: "AEO / Voice Search", bestFor: "All three practice types", insight: "Growing channel. Positions practice as the answer in AI and voice search results." },
 ];
@@ -211,23 +212,31 @@ const gettingStartedSteps = [
 const faqs = [
   {
     question: "How long does SEO take to show results for a dental practice or med spa?",
-    answer: "SEO typically begins to show meaningful ranking improvements within 60 to 90 days. For dental practices and med spas, significant new patient volume usually becomes noticeable within 4 to 6 months as your website gains authority and local search visibility. Consistent optimization accelerates this timeline — practices that invest in content and reputation management alongside SEO see faster results.",
+    answer: "SEO for a health and wellness practice typically shows meaningful results in 90 to 120 days, with full competitive rankings reached in 4 to 6 months. The first visible wins are usually Google Business Profile improvements and map pack appearances for lower-competition keywords. High-intent terms like \"dentist near me\" or \"med spa near me\" in competitive markets take the full 4 to 6 month window. Paid advertising delivers results immediately while SEO builds in the background — running both together is the fastest path to consistent new patient flow.",
   },
   {
     question: "Does GrowSmallBiz handle HIPAA-compliant ad copy and marketing?",
-    answer: "Yes. All advertising campaigns — including Google Ads and social media — are built with HIPAA compliance as a baseline requirement. We do not use patient photos or identifiable information without explicit written consent, and we craft ad copy that maximizes performance within regulatory boundaries.",
+    answer: "Yes. Every campaign GrowSmallBiz manages is built within HIPAA advertising guidelines from the first draft. HIPAA restricts the use of patient photos and identifiable testimonials in advertising without explicit written consent. Our campaigns use compliant formats — treatment-focused creative, before/after content with proper consent documentation, and audience targeting that does not use Protected Health Information (PHI). Practices working with agencies that are not HIPAA-aware face legal and reputational exposure. GrowSmallBiz has built healthcare compliance into every campaign workflow.",
   },
   {
     question: "How is marketing a dental practice different from marketing a med spa?",
-    answer: "Dental marketing centers on trust, local search authority, and insurance-compatibility messaging. Local SEO, Google Ads, and reputation management are the core channels. Med spa marketing is visual and social-proof-driven, relying heavily on before/after content, Instagram, and Meta Ads to attract clients considering elective aesthetic treatments. The strategies are distinct and require different creative approaches, channel mixes, and compliance considerations.",
+    answer: "Dental marketing is primarily search-intent driven — patients search for a specific treatment or emergency and book quickly. Med spa marketing is visual and consideration-driven — clients research results, read reviews, and compare providers over a longer decision window. Dental campaigns are built around Google Ads and Local SEO for high-intent searches. Med spa campaigns rely more heavily on Meta Ads with before/after creative, Google Ads for specific treatments, and social media that builds visual proof of outcomes. The channels, creative formats, and messaging strategies are fundamentally different for each practice type.",
   },
   {
     question: "Which marketing channels deliver the fastest ROI for health and wellness businesses?",
-    answer: "Google Ads delivers the fastest ROI — campaigns can generate new patient inquiries within days of launch by targeting high-intent treatment searches. Local SEO builds sustainable long-term growth but takes 4 to 6 months to mature. The highest-performing practices run both in parallel: paid search fills the appointment book immediately while SEO builds the organic foundation that reduces cost of acquisition over time.",
+    answer: "Google Ads delivers the fastest ROI for health and wellness practices — typically within the first 30 days of campaign launch. Ads capture patients actively searching for treatments right now, with every dollar tracked to booked appointments. Google Local Service Ads (LSAs) are the second-fastest for dental and chiropractic practices, as the Google Guaranteed badge drives immediate trust and call volume. Local SEO takes 4 to 6 months to mature but delivers the lowest cost-per-patient acquisition over the long term. The highest-performing practices run paid advertising immediately while building SEO in parallel.",
   },
   {
-    question: "Do you serve practices outside the Tri-Valley and Contra Costa County?",
-    answer: "Yes. While GrowSmallBiz is headquartered in Danville and has deep roots in the Tri-Valley — serving practices across Walnut Creek, San Ramon, Pleasanton, Concord, and surrounding communities — our digital marketing systems are built to perform in any local market. Our AI-powered research process maps the competitive landscape for your specific geography before we launch any campaign.",
+    question: "Do you work with dental practices, chiropractors, and med spas outside California?",
+    answer: "Yes. GrowSmallBiz serves dental practices, chiropractic clinics, and med spas across the United States. The AI-powered competitive research and patient acquisition systems we build work in any local market — the process is the same regardless of geography: map your local competition, identify keyword gaps your competitors are missing, and build a strategy calibrated to your specific practice type, service mix, and city. We have run campaigns for health and wellness practices in multiple states and apply the same full-stack methodology to every engagement.",
+  },
+  {
+    question: "What does a health and wellness marketing agency do?",
+    answer: "A health and wellness marketing agency helps dental practices, chiropractic clinics, and med spas attract new patients through digital marketing. The core services are local SEO to rank on Google, Google Ads to capture high-intent searches, reputation management to build and protect the review profile that patients check before booking, and AI automation to respond to patient inquiries 24/7. The goal is a complete patient acquisition system — not individual tactics — so every channel reinforces the others and the practice fills its appointment book consistently.",
+  },
+  {
+    question: "How do I get more patients for my medical practice using digital marketing?",
+    answer: "The fastest way to get more patients through digital marketing is to run Google Ads targeting the treatments your patients are actively searching for, while simultaneously building your Google Business Profile and review count for local SEO. Google Ads fills your appointment book immediately. Local SEO builds a sustainable pipeline over 4 to 6 months that costs less per patient over time. Reputation management — specifically generating a consistent flow of 5-star Google reviews — amplifies the performance of every other channel. Adding an AI Receptionist to capture after-hours inquiries closes the gap on missed calls, which is where most practices lose patients they already paid to attract.",
   },
 ];
 
@@ -238,7 +247,7 @@ const HealthAndWellness = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Health & Wellness Marketing Agency | GrowSmallBiz Digital Marketing</title>
-        <meta name="description" content="GrowSmallBiz helps dental practices, chiropractors, and med spas across the Tri-Valley and Bay Area attract more patients with AI-powered local SEO, Google Ads, and reputation management. Schedule a free strategy call." />
+        <meta name="description" content="GrowSmallBiz helps dental practices, chiropractors, and med spas attract more patients with AI-powered local SEO, Google Ads, and reputation management. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/" />
       </Head>
       <ServiceJsonLd
@@ -253,7 +262,7 @@ const HealthAndWellness = () => {
 
       <Header />
 
-      {/* Hero Section — matches HomeServices pattern */}
+      {/* Hero Section */}
       <section className="pt-32 pb-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <img src={healthWellnessHeroImage} alt="Modern health and wellness practice interior" className="w-full h-full object-cover" />
@@ -272,10 +281,10 @@ const HealthAndWellness = () => {
               Stop Losing Patients to Clinics With Worse Outcomes But Better Marketing
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
-              Your dental practice, chiropractic office, or med spa is losing new patients to competitors with a stronger digital presence. GrowSmallBiz builds the complete patient acquisition system — local SEO, Google Ads, AI automation, and reputation management.
+              Your dental practice, chiropractic office, or med spa is losing new patients to competitors with a stronger digital presence. GrowSmallBiz builds the complete patient acquisition system – local SEO, Google Ads, AI automation, and reputation management.
             </p>
             <p className="text-sm text-muted-foreground/70 mb-8 animate-fade-up delay-200">
-              Serving health and wellness practices across Contra Costa County, the Tri-Valley, and beyond.
+              Serving dental practices, chiropractic clinics, and med spas across the United States.
             </p>
 
             {/* Practice type chips */}
@@ -306,7 +315,7 @@ const HealthAndWellness = () => {
         </div>
       </section>
 
-      {/* Pain Points — matches HomeServices pattern */}
+      {/* Pain Points — Sound Familiar */}
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -332,15 +341,23 @@ const HealthAndWellness = () => {
         </div>
       </section>
 
-      {/* What Is a H&W Marketing Agency? */}
+      {/* What Is a H&W Marketing Agency? + AEO Entity Block */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">What Is a Health & Wellness Marketing Agency?</h2>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">What Is a Health & Wellness Marketing Agency?</h2>
+
+            {/* AEO Entity Block */}
+            <div className="border-l-4 border-l-primary bg-primary/5 rounded-r-xl p-6 mb-8">
+              <p className="text-foreground font-semibold leading-relaxed">
+                GrowSmallBiz is a health and wellness marketing agency serving dental practices, chiropractic clinics, and med spas nationwide. The agency builds complete patient acquisition systems — combining local SEO, Google Ads, reputation management, AI automation, and lead nurture — so health and wellness practices attract more patients and fill their appointment books consistently.
+              </p>
+            </div>
+
+            <p className="text-muted-foreground mb-6 leading-relaxed text-center">
               A health and wellness marketing agency is a specialized digital marketing partner that helps medical and wellness practices attract new patients, build their online reputation, and grow revenue through targeted strategies. Services include local SEO, Google Ads management, reputation management, website design, and AI automation — all tailored to the healthcare and wellness environment.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-center">
               These agencies serve dental practices, chiropractors, med spas, and wellness clinics that need a consistent pipeline of new patients or clients. The outcome is measurable: more new patients, filled appointment books, and trackable ROI from every marketing dollar spent.
             </p>
           </div>
@@ -359,7 +376,14 @@ const HealthAndWellness = () => {
               {challenges.map((challenge, index) => (
                 <div key={index} className="bg-accent/5 border-l-4 border-l-accent rounded-r-xl p-6">
                   <h3 className="text-lg font-display font-bold text-foreground mb-2">{challenge.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{challenge.description}</p>
+                  {challenge.stat ? (
+                    <>
+                      <p className="text-primary font-semibold mb-3">{challenge.stat}</p>
+                      <p className="text-muted-foreground leading-relaxed">{challenge.body}</p>
+                    </>
+                  ) : (
+                    <p className="text-muted-foreground leading-relaxed">{challenge.description}</p>
+                  )}
                 </div>
               ))}
             </div>
@@ -367,16 +391,18 @@ const HealthAndWellness = () => {
         </div>
       </section>
 
-      {/* Practices We Serve — 3 columns */}
+      {/* Practices We Serve — 3 columns with images */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Health & Wellness Practices We Serve</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {practices.map((practice) => (
               <div key={practice.title} className="flex flex-col bg-card border border-border rounded-2xl overflow-hidden hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,114,58,0.15)]">
-                <div className="bg-secondary p-4">
-                  <div className="flex items-center gap-3">
-                    <practice.icon className="w-6 h-6 text-primary" />
+                <div className="relative h-48 overflow-hidden">
+                  <img src={practice.image} alt={practice.title} className="w-full h-full object-cover" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
+                  <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                    <practice.icon className="w-5 h-5 text-primary" />
                     <h3 className="text-lg font-display font-bold text-foreground">{practice.title}</h3>
                   </div>
                 </div>
@@ -392,7 +418,7 @@ const HealthAndWellness = () => {
         </div>
       </section>
 
-      {/* Digital Marketing Services — numbered cards matching HomeServices */}
+      {/* Digital Marketing Services — numbered cards */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -512,7 +538,7 @@ const HealthAndWellness = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Health & Wellness Practices Choose GrowSmallBiz</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12">
               <p>
-                GrowSmallBiz is led by a practitioner with 30+ years of Fortune 500 experience in sales, marketing, and digital transformation — not a generalist agency that rotates health and wellness practices through a cookie-cutter playbook. We built and refined our methodology across dozens of health and wellness client engagements before bringing it directly to practices in the Tri-Valley and Bay Area.
+                GrowSmallBiz is a health and wellness marketing agency led by Subrata Guha, a practitioner with 30+ years of Fortune 500 experience in sales, marketing, and digital transformation. Unlike generalist agencies that apply the same playbook to every client, GrowSmallBiz builds each engagement around AI-driven competitive research specific to your practice type, market, and geography. The methodology was refined across dozens of health and wellness client engagements before being brought directly to practices nationwide.
               </p>
               <p>
                 Our AI-powered approach closes the local knowledge gap that stops most agencies: before we touch a single campaign, we use AI-driven competitive research to map your exact local market, identify the keyword opportunities your competitors are missing, and build a strategy calibrated to your specific practice type, service mix, and geography.
