@@ -544,4 +544,43 @@ export interface NicheConfig {
     title: string;
     body: string;
   }[];
+
+  // ── Config-driven text overrides (shared section components) ──
+
+  /** Competitor analysis bullets in SEO section */
+  seoCompetitorBullets?: { bold: string; desc: string }[];
+  /** Blockquote in SEO content strategy */
+  seoContentAuthorityStatement?: string;
+  /** Topical map body text */
+  seoTopicalMapBody?: string;
+  /** Topical map center node label (line 1) */
+  topicMapCenterLine1?: string;
+  /** Topical map center node label (line 2) */
+  topicMapCenterLine2?: string;
+  /** Topical map spoke labels */
+  topicMapSpokes?: string[];
+  /** Content Score Dashboard label */
+  contentScoreLabel?: string;
+  /** Content Score Dashboard caption */
+  contentScoreCaption?: string;
+  /** Third card body text in content strategy ("which [X] practice to call") */
+  seoContentThirdCardBody?: string;
+  /** AI Visibility heading */
+  seoAiVisibilityHeading?: string;
+  /** AI Visibility body paragraph 1 */
+  seoAiVisibilityBody1?: string;
+  /** AI Visibility body paragraph 2 */
+  seoAiVisibilityBody2?: string;
+  /** Paid Media "What We Set Up" bullet list */
+  paidMediaSetupBullets?: string[];
+  /** Retargeting styled display line */
+  retargetingDisplayLine?: string;
+  /** Retargeting display subline */
+  retargetingDisplaySubline?: string;
+  /** Retargeting step 1 description */
+  retargetingStep1Desc?: string;
+  /** Reputation inner H3 */
+  reputationInnerH3?: string;
+  /** Growth System disconnected tools paragraph */
+  growthSystemDisconnectedToolsBody?: string;
 }
