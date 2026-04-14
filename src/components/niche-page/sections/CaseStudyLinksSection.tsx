@@ -19,7 +19,7 @@ export const CaseStudyLinksSection = ({ links }: CaseStudyLinksSectionProps) => 
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+        <div className={`grid gap-6 max-w-4xl mx-auto ${links.length === 1 ? 'md:grid-cols-1 max-w-xl' : 'md:grid-cols-2'}`}>
           {links.map((link) => {
             const Icon = link.icon;
             return (
