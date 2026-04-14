@@ -215,7 +215,7 @@ const NichePage = ({ config }: NichePageProps) => {
 
       <Footer />
 
-      {/* Sticky CTA */}
+      {/* Sticky CTA - temporarily disabled for screenshots
       <StickyCardCTA
         title={config.stickyCtaConfig.title}
         description={config.stickyCtaConfig.description}
@@ -224,6 +224,7 @@ const NichePage = ({ config }: NichePageProps) => {
         accentWords={config.stickyCtaConfig.accentWords}
         showAfterScroll={config.stickyCtaConfig.showAfterScroll}
       />
+      */}
     </div>
   );
 };
