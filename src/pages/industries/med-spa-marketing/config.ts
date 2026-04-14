@@ -469,13 +469,6 @@ export const medSpaConfig: NicheConfig = {
   ],
   emailSequenceTitle: "Med Spa Consultation Inquiry",
   emailSequenceHighlight: "Follow-Up Sequence",
-  emailSequenceSteps: [
-    { day: "Day 0", label: "Immediate Welcome", channels: "SMS + Email", description: "Confirm their inquiry, introduce the practice, ask about their treatment interest and when they'd like to come in" },
-    { day: "Day 1", label: "Treatment Overview", channels: "Email", description: "Educational content about their treatment of interest, before/after examples, and provider credentials" },
-    { day: "Day 2", label: "SMS Check-in", channels: "SMS", description: "Quick check-in with direct booking link and availability highlights" },
-    { day: "Day 3", label: "FAQ & Expectations", channels: "Email", description: "Common questions answered, what to expect during treatment, aftercare preview" },
-    { day: "Day 5", label: "Seasonal Availability", channels: "Email + SMS", description: "Limited availability notice with seasonal treatment relevance and direct booking CTA" },
-  ],
   noShowResearchCitations: [
     { stat: "15–30% of aesthetic consultations are no-shows — costing practices $200–$500+ per lost appointment slot", source: "Healthcare Research", publication: "PMC", year: "2016", label: "The Problem" },
     { stat: "98% of text messages are opened", source: "Industry Research", publication: "Mobile Marketing Association", year: "2023", label: "Why SMS Works" },
