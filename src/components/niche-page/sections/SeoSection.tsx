@@ -198,9 +198,6 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 { bold: "Content gap identification", desc: "we find the service and location pages driving competitor traffic that you're missing" },
                 { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
               ]).map((item, i) => (
-                { bold: "Content gap identification", desc: "we find the service and location pages driving competitor traffic that you're missing" },
-                { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
-              ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   <span className="text-foreground"><strong>{item.bold}</strong> — {item.desc}</span>
