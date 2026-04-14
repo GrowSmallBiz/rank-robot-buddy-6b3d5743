@@ -37,7 +37,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               {config.aiSearchCalloutBody}
             </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               {config.aiSearchStats.map((stat, i) => (
                 <div key={i} className="p-4 bg-[hsl(210_45%_14%)] backdrop-blur-sm rounded-xl border border-[hsl(188_78%_41%_/_0.25)]">
                   <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
@@ -53,12 +53,39 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </a>
               </Button>
               <span className="text-sm text-muted-foreground">
-                If you want more booked jobs, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
+                If you want more booked patients, you need to rank on Google <strong className="text-foreground">and</strong> show up in AI search.
               </span>
             </div>
           </div>
         </div>
 
+        {/* Conversational AI Query Examples Block — Prompt 5 */}
+        <div className="mb-16 max-w-4xl mx-auto rounded-2xl border border-white/10 bg-[hsl(210_50%_10%)] p-8 md:p-10">
+          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">
+            Patients Are Already Asking AI These Questions About Your Practice
+          </h3>
+          <p className="text-foreground/80 mb-6">
+            Before opening Google, patients are typing questions like these into ChatGPT, Gemini, and Perplexity:
+          </p>
+          <div className="space-y-2">
+            {[
+              "Which dentist near me is accepting new patients?",
+              "Best dentist for dental implants in [city] — reviews 2025",
+              "Is Invisalign better than braces for adults?",
+              "How much do veneers cost at a dentist near me?",
+              "Emergency dentist open on weekends in [city]",
+              "Which cosmetic dentist has the best before and after results?",
+              "What's the difference between a dental crown and a veneer?",
+            ].map((query, i) => (
+              <div key={i} className="border-l-[3px] border-l-primary bg-[hsl(210_40%_18%)] rounded-lg px-4 py-2.5">
+                <span className="text-foreground text-sm md:text-[15px]">{query}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-foreground/80 mt-6">
+            If your practice isn't showing up in these AI-generated answers, you're invisible to a growing segment of patients before they ever open Google. We change that.
+          </p>
+        </div>
         {/* Editorial SEO Explanation */}
         <div className="mb-16 max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8">
@@ -77,7 +104,35 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </div>
         </div>
 
-        {/* SEO Content Header */}
+        {/* Entity Definition Block (AEO) — Prompt 6 */}
+        <div className="mb-16 max-w-5xl mx-auto grid md:grid-cols-3 gap-4">
+          {[
+            {
+              badge: "WHAT IS IT",
+              title: "What is dental marketing?",
+              body: "Dental marketing encompasses the digital strategies and systems a dental practice uses to attract new patients, rank in local search results, build online reputation, and convert inquiries into booked appointments. It includes SEO, paid advertising, social media management, and patient communication automation.",
+            },
+            {
+              badge: "WHO IT SERVES",
+              title: "Who does dental marketing serve?",
+              body: "Dental marketing serves general dentistry practices, cosmetic dental specialists, dental implant providers, Invisalign and orthodontic practices, pediatric dentists, and multi-location dental groups seeking to reduce insurance dependency and grow their private-pay patient base.",
+            },
+            {
+              badge: "WHAT WE DO",
+              title: "What does GrowSmallBiz do for dental practices?",
+              body: "GrowSmallBiz builds complete dental patient acquisition systems — combining conversion-focused practice websites, AI-powered SEO optimized for Google and AI search platforms, Google and Meta paid advertising, social media strategy, and an AI Client Growth System that automates patient follow-up, recall management, and reputation generation.",
+            },
+          ].map((card, i) => (
+            <div key={i} className="bg-[hsl(210_40%_18%)] border border-white/[0.08] rounded-xl p-6">
+              <span className="inline-block px-2.5 py-1 bg-[hsl(174_60%_40%)] text-white text-[11px] font-semibold uppercase rounded-[10px] mb-3">
+                {card.badge}
+              </span>
+              <h4 className="text-[15px] font-semibold text-foreground mb-2">{card.title}</h4>
+              <p className="text-foreground/80 text-[13px] leading-relaxed">{card.body}</p>
+            </div>
+          ))}
+        </div>
+
         <div className="mb-8 text-center">
           <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">{config.seoBadge}</p>
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
@@ -158,8 +213,8 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           <GlowCard className="p-6">
             <ul className="space-y-3">
               {[
-                { bold: "Competitor keyword gap analysis", desc: "we identify which tree service and lawn care terms your top competitors rank for that you don't" },
-                { bold: "Backlink profile comparison", desc: "we find authoritative sites linking to competitors and target the same sources" },
+                { bold: "Competitor keyword gap analysis", desc: "we identify which dental implant, cosmetic, and emergency dental terms your top competitors rank for that you don't" },
+                { bold: "Backlink profile comparison", desc: "we find authoritative health and dental publications linking to competitors and target the same sources" },
                 { bold: "Content gap identification", desc: "we find the service and location pages driving competitor traffic that you're missing" },
                 { bold: "Local pack positioning tactics", desc: "we analyze competitor GBP profiles, review velocity, and citation consistency to build a plan to outrank them in the Map Pack" },
               ].map((item, i) => (
@@ -183,7 +238,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             {/* A: Authority Statement */}
             <div className="p-6 rounded-xl bg-card border-l-4 border-l-[hsl(var(--accent))] border border-border">
               <h4 className="text-lg font-display font-bold text-foreground mb-3">
-                We Don't Publish Bulk AI Blogs. We Build Digital Authority.
+                We Don't Publish Bulk AI Blogs. We Build Dental Authority.
               </h4>
               <p className="text-muted-foreground leading-relaxed">
                 Most agencies use ChatGPT to generate hundreds of generic articles and hit publish. We don't. Every piece of content we create is produced by a highly trained AI content system built specifically for your business, your service area, and your target keywords — then reviewed and approved by a human expert before it goes live. The difference isn't just quality. It's whether the content actually builds your ranking authority or just adds noise.
@@ -196,7 +251,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 We Build Topical Maps That Cover Your Entire Market
               </h4>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                A topical map ensures Google sees your site as a complete authority on tree service, lawn care, and landscaping — not just a collection of random pages. We identify every topic cluster your ideal clients search across all three specialties, then systematically build the content that covers it.
+                A topical map ensures Google sees your site as a complete authority on dental care — not just a collection of random pages. We identify every topic cluster your ideal patients search across all treatment categories, then systematically build the content that covers it.
               </p>
               <TopicMapVisual />
             </div>
@@ -238,7 +293,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </div>
                 <h5 className="font-display font-semibold text-foreground">Built to Rank and Be Cited by AI</h5>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Content is structured for Google rankings and AI citation — so when a homeowner asks ChatGPT, Perplexity, or Google AI which tree service company to call, your business is the answer.
+                  Content is structured for Google rankings and AI citation — so when a patient asks ChatGPT, Perplexity, or Google AI which dental practice to call, your practice is the answer.
                 </p>
               </div>
             </div>
@@ -293,20 +348,20 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
         <div id="seo-ai-visibility" className="mb-12 scroll-mt-24">
           <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-2">
             <Bot className="w-6 h-6 text-primary" />
-            We Get Your Tree Service, Lawn Care & Landscaping Business Recommended by AI Search Engines
+            We Get Your Dental Practice Recommended by AI Search Engines
           </h3>
           <GlowCard className="p-6">
             <p className="text-muted-foreground mb-2">
-              GrowSmallBiz tracks how AI platforms recommend your tree service, lawn care, and landscaping business across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode.
+              GrowSmallBiz tracks how AI platforms recommend your dental practice across 6 major AI search engines — including ChatGPT, Gemini, Perplexity, Grok, Copilot, and Google AI Mode.
             </p>
             <p className="text-muted-foreground mb-4">
-              When a homeowner asks an AI assistant which tree service company to call in Danville or Walnut Creek, we make sure your business is the answer.
+              When a patient asks an AI assistant 'what's the best dentist for implants near me?' or 'which cosmetic dentist has the best reviews in [city]?' — we make sure your practice is the answer.
             </p>
             <ul className="space-y-2">
               {[
                 "LLM visibility score tracking across 6 AI platforms — updated monthly",
-                "Sentiment monitoring — how AI engines describe your business to potential clients",
-                "Citation share tracking — which queries your business appears in vs. competitors",
+                "Sentiment monitoring — how AI engines describe your practice to potential patients",
+                "Citation share tracking — which queries your practice appears in vs. competitors",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />

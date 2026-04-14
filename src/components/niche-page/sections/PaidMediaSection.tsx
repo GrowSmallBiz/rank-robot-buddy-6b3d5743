@@ -175,7 +175,7 @@ export const PaidMediaSection = ({ config, strategySessionUrl }: PaidMediaSectio
               <div className="space-y-4">
                 <h4 className="font-bold text-foreground text-lg">What We Set Up for You</h4>
                 <ul className="space-y-2">
-                  {["Google Ads account setup and campaign structure", "Keyword research for tree service and lawn care search terms", "Google Local Services Ads (LSA) setup and Google Guarantee verification", "Conversion tracking from click to call to booked job", "Seasonal campaign calendar with pre-peak budget ramps", "Service-specific landing page optimization", "Ad creative copywriting for emergency and seasonal intent", "Monthly performance reporting and optimization"].map((item, i) => (
+                  {["Google Ads account setup and campaign structure", "Keyword research for dental search terms — general dentistry, cosmetic, implants, and emergency", "Google Local Services Ads (LSA) setup and Google Guarantee verification", "Conversion tracking from click to call to booked appointment", "Seasonal campaign calendar with pre-peak budget ramps", "Service-specific landing page optimization", "Ad creative copywriting for emergency and seasonal intent", "Monthly performance reporting and optimization"].map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0 mt-1" />
                       <span className="text-foreground text-sm">{item}</span>
@@ -186,7 +186,7 @@ export const PaidMediaSection = ({ config, strategySessionUrl }: PaidMediaSectio
               <div className="space-y-4">
                 <h4 className="font-bold text-foreground text-lg">Landing Page Included</h4>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Every ad campaign includes a custom landing page designed to convert clicks into booked jobs.
+                  Every ad campaign includes a custom landing page designed to convert clicks into booked appointments.
                 </p>
                 <ul className="space-y-2">
                   {["Conversion Landing Page", "Thank You Page", "Development & Layout Only", "Copy Pulled From Existing Site"].map((item, i) => (

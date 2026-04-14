@@ -75,7 +75,7 @@ export const ContentScoreDashboard = () => {
             / 100
           </text>
         </svg>
-        <p className="text-sm font-semibold text-foreground mt-1">Tree Service Content Quality Score</p>
+        <p className="text-sm font-semibold text-foreground mt-1">Dental Content Quality Score</p>
       </div>
 
       {/* Six Score Cards */}
@@ -106,7 +106,7 @@ export const ContentScoreDashboard = () => {
 
       {/* Footer note */}
       <p className="text-xs text-muted-foreground mt-6 text-center leading-relaxed">
-        Sample score for a GrowSmallBiz-managed tree service content article. All content must pass minimum thresholds across all six dimensions before publication.
+        Sample score for a GrowSmallBiz-managed dental content article. All content must pass minimum thresholds across all six dimensions before publication.
       </p>
     </div>
   );
