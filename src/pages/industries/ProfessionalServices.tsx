@@ -3,17 +3,11 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Home, Camera, Building, ArrowRight } from "lucide-react";
+import { Camera, Building, ArrowRight } from "lucide-react";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { useUtm } from "@/hooks/use-utm";
 
 const industries = [
-  {
-    icon: Home,
-    title: "Real Estate Marketing",
-    description: "Generate qualified buyer and seller leads with hyperlocal SEO, targeted ads, and automated follow-up systems built for real estate professionals.",
-    link: "/professional-services/marketing-for-real-estate-agents-brokers/",
-  },
   {
     icon: Building,
     title: "Real Estate Agents & Brokers",

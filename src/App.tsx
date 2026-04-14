@@ -105,7 +105,7 @@ export const routes: RouteRecord[] = [
       { path: "health-and-wellness-practices/marketing-for-dentists", lazy: lazy(() => import("./pages/industries/dental-marketing/index")) },
 
       { path: "professional-services", lazy: lazy(() => import("./pages/industries/ProfessionalServices")) },
-      { path: "professional-services/marketing-for-real-estate-agents-brokers", lazy: lazy(() => import("./pages/industries/Realtors")) },
+      
       { path: "professional-services/marketing-for-realtors", lazy: lazy(() => import("./pages/industries/RealtorMarketing")) },
       { path: "professional-services/marketing-for-realtors-v2", lazy: lazy(() => import("./pages/industries/RealtorMarketingV2")) },
       { path: "professional-services/marketing-for-photographers", lazy: lazy(() => import("./pages/industries/photographers-marketing/index")) },
@@ -134,7 +134,7 @@ export const routes: RouteRecord[] = [
       { path: "health-and-wellness-practices/dental-marketing", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/" /> },
 
       { path: "professional-services/realtor-marketing", Component: () => <Redirect to="/professional-services/marketing-for-realtors/" /> },
-      { path: "professional-services/real-estate-marketing", Component: () => <Redirect to="/professional-services/marketing-for-real-estate-agents-brokers/" /> },
+      { path: "professional-services/real-estate-marketing", Component: () => <Redirect to="/professional-services/" /> },
       { path: "professional-services/photographers-marketing", Component: () => <Redirect to="/professional-services/marketing-for-photographers/" /> },
 
       // ── 301 REDIRECTS: old flat service URLs → canonical nested paths ──
