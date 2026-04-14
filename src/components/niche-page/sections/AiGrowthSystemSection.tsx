@@ -59,7 +59,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                 </div>
               </div>
               <div className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">Most tree service and lawn care companies use separate tools for lead capture, scheduling, CRM, reviews, and follow-up. These tools don't talk to each other—leads fall through the cracks.</p>
+                <p className="text-muted-foreground leading-relaxed">Most dental practices use separate tools for new patient capture, appointment booking, recall management, and follow-up. These tools don't talk to each other — leads fall through the cracks.</p>
                 <div className="bg-[hsl(210_45%_14%)] border border-[hsl(188_78%_41%_/_0.2)] rounded-xl p-5">
                   <p className="text-foreground font-semibold mb-3">The All-in-One Difference:</p>
                   <ul className="space-y-3">
@@ -230,9 +230,9 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
               <div className="space-y-4">
                 {[
                   { day: "0", label: "Immediate", channels: "Email + SMS", title: "Welcome & Availability Check", desc: "Thank them for reaching out, confirm receipt, ask about their service needs and timeline" },
-                  { day: "1", label: "Day 1", channels: "Email", title: "Service Overview + Social Proof", desc: "Share relevant service information and 2-3 Google review testimonials from past clients" },
-                  { day: "2", label: "Day 2", channels: "SMS", title: "Quick Check-in", desc: "\"Did you get a chance to review the information I sent? Happy to answer any questions about your project.\"" },
-                  { day: "3", label: "Day 3", channels: "Email", title: "FAQ + What to Expect", desc: "Address common questions about the process, timeline, and what to expect from the estimate" },
+                  { day: "1", label: "Day 1", channels: "Email", title: "Service Overview + Social Proof", desc: "Share relevant service information and 2-3 Google review testimonials from past patients" },
+                  { day: "2", label: "Day 2", channels: "SMS", title: "Quick Check-in", desc: "\"Did you get a chance to review the information I sent? Happy to answer any questions about your treatment options.\"" },
+                  { day: "3", label: "Day 3", channels: "Email", title: "FAQ + What to Expect", desc: "Address common questions about the process, timeline, and what to expect from the consultation" },
                   { day: "5", label: "Day 5", channels: "Email + SMS", title: "Limited Availability + Final CTA", desc: "Seasonal availability notice, schedule filling up, easy booking link" },
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-4">
@@ -317,7 +317,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         <div className="border-t border-border/50 pt-16 mb-12">
           <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
           <h3 className="text-2xl font-display font-bold text-foreground text-center mb-4">
-            Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">We Build for Your Tree Service, Lawn Care & Landscaping Business</span>
+            Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">We Build for Your Dental Practice</span>
           </h3>
           <p className="text-center text-muted-foreground max-w-2xl mx-auto">Real offers paired with automated funnels—tailored to each specialty</p>
         </div>
@@ -402,7 +402,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         {/* Seasonal Campaigns */}
         <div className="mb-16">
           <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-            <span className="text-primary">Seasonal Campaigns</span> We Automate for Your Tree Service, Lawn Care & Landscaping Business
+            <span className="text-primary">Seasonal Campaigns</span> We Automate for Your Dental Practice
           </h3>
             <div className="overflow-x-auto rounded-2xl border-2 border-[hsl(188_78%_41%_/_0.25)] bg-[hsl(210_45%_18%)]">
             <table className="w-full">
