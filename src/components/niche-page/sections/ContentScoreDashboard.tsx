@@ -9,7 +9,12 @@ const scores = [
 
 const overallScore = 91;
 
-export const ContentScoreDashboard = () => {
+interface ContentScoreDashboardProps {
+  label?: string;
+  caption?: string;
+}
+
+export const ContentScoreDashboard = ({ label, caption }: ContentScoreDashboardProps) => {
   // Arc for the gauge
   const r = 60;
   const cx = 80;
@@ -75,7 +80,7 @@ export const ContentScoreDashboard = () => {
             / 100
           </text>
         </svg>
-        <p className="text-sm font-semibold text-foreground mt-1">Dental Content Quality Score</p>
+        <p className="text-sm font-semibold text-foreground mt-1">{label || "Dental Content Quality Score"}</p>
       </div>
 
       {/* Six Score Cards */}
@@ -106,7 +111,7 @@ export const ContentScoreDashboard = () => {
 
       {/* Footer note */}
       <p className="text-xs text-muted-foreground mt-6 text-center leading-relaxed">
-        Sample score for a GrowSmallBiz-managed dental content article. All content must pass minimum thresholds across all six dimensions before publication.
+        {caption || "Sample score for a GrowSmallBiz-managed dental content article. All content must pass minimum thresholds across all six dimensions before publication."}
       </p>
     </div>
   );

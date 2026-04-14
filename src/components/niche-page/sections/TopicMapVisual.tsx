@@ -1,4 +1,4 @@
-const spokes = [
+const defaultSpokes = [
   "Implants & Restorative",
   "Cosmetic Dentistry",
   "Emergency Dental",
@@ -8,7 +8,14 @@ const spokes = [
   "Oral Health Education",
 ];
 
-export const TopicMapVisual = () => {
+interface TopicMapVisualProps {
+  centerLine1?: string;
+  centerLine2?: string;
+  spokes?: string[];
+}
+
+export const TopicMapVisual = ({ centerLine1, centerLine2, spokes: customSpokes }: TopicMapVisualProps) => {
+  const spokes = customSpokes || defaultSpokes;
   const cx = 300;
   const cy = 200;
   const hubRx = 110;
@@ -56,7 +63,7 @@ export const TopicMapVisual = () => {
           fontSize="11"
           fontFamily="inherit"
         >
-          Dental Practice
+          {centerLine1 || "Dental Practice"}
         </text>
         <text
           x={cx}
@@ -67,7 +74,7 @@ export const TopicMapVisual = () => {
           fontSize="11"
           fontFamily="inherit"
         >
-          Authority
+          {centerLine2 || "Authority"}
         </text>
 
         {/* Spoke nodes */}

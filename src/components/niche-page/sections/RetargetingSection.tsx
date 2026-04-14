@@ -41,7 +41,7 @@ export const RetargetingSection = ({ config }: RetargetingSectionProps) => {
                       <Search className="w-7 h-7 md:w-8 md:h-8 text-blue-500" />
                     </div>
                     <h4 className="font-bold text-foreground text-sm mb-0.5">They Find You</h4>
-                    <p className="text-xs text-muted-foreground leading-tight">Search for a dentist, like what they see</p>
+                    <p className="text-xs text-muted-foreground leading-tight">{config.retargetingStep1Desc || "Search for a dentist, like what they see"}</p>
                   </div>
                   <div className="md:hidden flex justify-center py-1"><ArrowDown className="w-5 h-5 text-muted-foreground/50" /></div>
                   {/* Step 2 */}
@@ -90,8 +90,8 @@ export const RetargetingSection = ({ config }: RetargetingSectionProps) => {
               <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mb-5" />
 
               <p className="text-lg md:text-xl font-display leading-relaxed text-center mb-5">
-                <span className="text-foreground font-semibold">SEO helps your dental practice show up</span>{" "}
-                <span className="text-muted-foreground">when someone is actively looking.</span>
+                <span className="text-foreground font-semibold">{config.retargetingDisplayLine || "SEO helps your dental practice show up"}</span>{" "}
+                <span className="text-muted-foreground">{config.retargetingDisplaySubline || "when someone is actively looking."}</span>
                 <br className="hidden md:block" />
                 <span className="text-muted-foreground">But </span>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-500 font-bold italic">retargeting is what keeps the connection alive.</span>

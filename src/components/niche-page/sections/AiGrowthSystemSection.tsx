@@ -59,7 +59,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                 </div>
               </div>
               <div className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">Most dental practices use separate tools for new patient capture, appointment booking, recall management, and follow-up. These tools don't talk to each other — leads fall through the cracks.</p>
+                <p className="text-muted-foreground leading-relaxed">{config.growthSystemDisconnectedToolsBody || "Most dental practices use separate tools for new patient capture, appointment booking, recall management, and follow-up. These tools don't talk to each other — leads fall through the cracks."}</p>
                 <div className="bg-[hsl(210_45%_14%)] border border-[hsl(188_78%_41%_/_0.2)] rounded-xl p-5">
                   <p className="text-foreground font-semibold mb-3">The All-in-One Difference:</p>
                   <ul className="space-y-3">

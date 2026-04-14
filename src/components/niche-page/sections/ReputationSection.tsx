@@ -27,7 +27,7 @@ export const ReputationSection = ({ config }: ReputationSectionProps) => {
               <div className="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center">
                 <Star className="w-6 h-6 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-foreground">We Handle Your Dental Practice Reputation</h4>
+              <h4 className="text-xl font-bold text-foreground">{config.reputationInnerH3 || "We Handle Your Dental Practice Reputation"}</h4>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
