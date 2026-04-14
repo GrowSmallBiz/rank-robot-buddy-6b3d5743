@@ -85,7 +85,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           <p className="text-foreground/80 mt-6">
             If your practice isn't showing up in these AI-generated answers, you're invisible to a growing segment of patients before they ever open Google. We change that.
           </p>
-
+        </div>
         {/* Editorial SEO Explanation */}
         <div className="mb-16 max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8">
