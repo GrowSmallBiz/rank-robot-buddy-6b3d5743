@@ -59,6 +59,33 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </div>
         </div>
 
+        {/* Conversational AI Query Examples Block — Prompt 5 */}
+        <div className="mb-16 max-w-4xl mx-auto rounded-2xl border border-white/10 bg-[hsl(210_50%_10%)] p-8 md:p-10">
+          <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">
+            Patients Are Already Asking AI These Questions About Your Practice
+          </h3>
+          <p className="text-foreground/80 mb-6">
+            Before opening Google, patients are typing questions like these into ChatGPT, Gemini, and Perplexity:
+          </p>
+          <div className="space-y-2">
+            {[
+              "Which dentist near me is accepting new patients?",
+              "Best dentist for dental implants in [city] — reviews 2025",
+              "Is Invisalign better than braces for adults?",
+              "How much do veneers cost at a dentist near me?",
+              "Emergency dentist open on weekends in [city]",
+              "Which cosmetic dentist has the best before and after results?",
+              "What's the difference between a dental crown and a veneer?",
+            ].map((query, i) => (
+              <div key={i} className="border-l-[3px] border-l-primary bg-[hsl(210_40%_18%)] rounded-lg px-4 py-2.5">
+                <span className="text-foreground text-sm md:text-[15px]">{query}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-foreground/80 mt-6">
+            If your practice isn't showing up in these AI-generated answers, you're invisible to a growing segment of patients before they ever open Google. We change that.
+          </p>
+
         {/* Editorial SEO Explanation */}
         <div className="mb-16 max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8">
