@@ -277,9 +277,6 @@ export const Header = () => {
                     <Link to="/professional-services/" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
                       Overview
                     </Link>
-                    <Link to="/professional-services/marketing-for-real-estate-agents-brokers/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
-                      Realtors
-                    </Link>
                     <Link to="/professional-services/marketing-for-realtors/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Real Estate Agents & Brokers
                     </Link>
@@ -598,9 +595,6 @@ export const Header = () => {
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-3 pb-1">Professional Services</p>
                 <Link to="/professional-services/" onClick={() => setIsOpen(false)} className="block py-2 text-primary hover:text-primary">
                   All Professional Services
-                </Link>
-                <Link to="/professional-services/marketing-for-real-estate-agents-brokers/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
-                  Realtors
                 </Link>
                 <Link to="/professional-services/marketing-for-realtors/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
                   Real Estate Agents & Brokers
