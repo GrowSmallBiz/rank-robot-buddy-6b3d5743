@@ -134,7 +134,7 @@ export const routes: RouteRecord[] = [
       { path: "health-and-wellness-practices/dental-marketing", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/" /> },
 
       { path: "professional-services/realtor-marketing", Component: () => <Redirect to="/professional-services/marketing-for-realtors/" /> },
-      { path: "professional-services/real-estate-marketing", Component: () => <Redirect to="/professional-services/" /> },
+      
       { path: "professional-services/photographers-marketing", Component: () => <Redirect to="/professional-services/marketing-for-photographers/" /> },
 
       // ── 301 REDIRECTS: old flat service URLs → canonical nested paths ──
