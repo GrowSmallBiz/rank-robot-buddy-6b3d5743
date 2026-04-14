@@ -40,7 +40,7 @@ const challenges = [
   },
   {
     title: "The Trust-First Patient Journey",
-    description: "Patients in health and wellness make highly personal decisions about their care. The typical journey requires 3 to 5 meaningful touchpoints before a patient commits to booking — significantly longer than most service categories. A single-channel strategy misses patients at every stage where they are still evaluating their options.",
+    description: "Patients in health and wellness make highly personal decisions about their care. In the past year alone, 73% of patients reported adopting new behaviors or tools to research providers — including AI chatbots, voice search, and social media — before committing to a booking. (rater8, 2025) A single-channel strategy misses patients at every stage where they are still evaluating their options.",
   },
   {
     title: "The Disproportionate Weight of Online Reviews",
