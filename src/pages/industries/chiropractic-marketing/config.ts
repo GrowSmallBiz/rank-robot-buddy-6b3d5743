@@ -9,8 +9,8 @@ import {
   Sparkles, UserPlus, Heart, Activity,
 } from "lucide-react";
 
-import chiroHeroImage from "@/assets/industry-chiro-hero.webp";
-import portfolioChiroWebsite from "@/assets/portfolio-chiro-website.webp";
+import chiroHeroImage from "@/assets/chiropractic/chiro-hero.webp";
+import portfolioChiroWebsite from "@/assets/chiropractic/portfolio-chiro-website.webp";
 
 export const chiropracticConfig: NicheConfig = {
   // ── Page Meta ──
@@ -22,15 +22,26 @@ export const chiropracticConfig: NicheConfig = {
   serviceDescription: "AI-powered SEO, Google Ads, reputation management, and marketing automation for chiropractic practices.",
   breadcrumbs: [
     { name: "Health & Wellness Practices", url: "/health-and-wellness-practices/" },
-    { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/marketing-for-chiropractors/" },
+    { name: "Chiropractic Marketing", url: "/health-and-wellness-practices/chiropractic-marketing/" },
   ],
+  offerCatalog: {
+    name: "Chiropractic Marketing Services",
+    items: [
+      { name: "Local SEO & Google Business Profile" },
+      { name: "Conversion-Focused Website Design" },
+      { name: "Google Ads (LSA + PPC) & Meta Ads" },
+      { name: "Reputation Management" },
+      { name: "AI Receptionist & 24/7 Patient Capture" },
+      { name: "Patient Nurture & Recall Automation" },
+    ],
+  },
 
-  // ── Hero ──
+  // ── Hero (Prompt 2) ──
   heroImage: chiroHeroImage,
   badgeText: "Chiropractic Practice Marketing & Growth System",
   badgeIcon: Activity,
-  h1Line1: "The Chiropractic Marketing System",
-  h1Line2: "That Builds a Practice Full of",
+  h1Line1: "Chiropractic Marketing That Builds a Practice Full of",
+  h1Line2: "",
   h1Highlight: "Loyal, Long-Term Patients",
   heroSubheadline: "Stop relying on word-of-mouth alone. AI-powered SEO, Google Ads, and automated patient acquisition built for chiropractic practices that want predictable, sustainable growth.",
   primaryCtaLabel: "Schedule Strategy Call",
@@ -43,9 +54,9 @@ export const chiropracticConfig: NicheConfig = {
     { value: "2–4×", label: "New patient inquiry increase with Google Ads" },
   ],
 
-  // ── Pain Points ──
+  // ── Pain Points (Prompt 3) ──
   painPointsHeadline: "Chiropractic Practice Marketing Challenges",
-  painPointsSubheadline: "Even the most skilled chiropractors struggle to build a consistent flow of new patients. If any of these resonate, your marketing infrastructure needs attention.",
+  painPointsSubheadline: "Even the most skilled chiropractors struggle to build consistent new patient flow. If any of these resonate, your marketing infrastructure needs attention.",
   painPoints: [
     {
       icon: Search,
@@ -56,51 +67,51 @@ export const chiropracticConfig: NicheConfig = {
     {
       icon: Users,
       title: "Referral Dependency",
-      description: "Word-of-mouth built your practice, but it can't scale it. Without a predictable digital acquisition system, new patient volume is entirely outside your control.",
-      hasImage: false, showAILogos: false,
-    },
-    {
-      icon: DollarSign,
-      title: "Insurance Reimbursement Pressure",
-      description: "Declining insurance reimbursements make every new patient critical. Without a steady flow of new patients — including cash-pay and PI cases — margin pressure compounds.",
+      description: "Word-of-mouth built your practice, but it can't scale it. Without a digital acquisition channel you own, new patient flow stops the moment referrals dry up.",
       hasImage: false, showAILogos: false,
     },
     {
       icon: Phone,
-      title: "Missing After-Hours Inquiries",
-      description: "A patient in pain at 8pm doesn't wait until morning. If your practice can't capture and respond to inquiries immediately, they book with whoever answers first.",
+      title: "Missed After-Hours Inquiries",
+      description: "Acute pain searches happen at 10pm. If your practice can't capture and respond immediately, the patient books with whoever answers first — and that's rarely you.",
       hasImage: false, showAILogos: false,
     },
     {
       icon: Star,
       title: "Low Review Volume",
-      description: "80%+ of patients check reviews before choosing a chiropractor. Without a systematic review generation process, your best clinical outcomes stay invisible to new patients searching online.",
+      description: "84% of patients check online reviews before choosing a chiropractor. Without a consistent review generation system, even the best clinical outcomes stay invisible. — rater8, 2025",
       hasImage: false, showAILogos: false,
     },
     {
       icon: RefreshCw,
-      title: "Poor Patient Retention",
-      description: "Most chiropractic revenue is lost not at acquisition — but at retention. Without automated recall and wellness care campaigns, patients complete their acute plan and never return for maintenance.",
+      title: "The 'I Feel Better' Drop-Off",
+      description: "Patients come in for acute pain, get relief, and disappear — never converting to the wellness care that generates recurring revenue. Most practices have no system to prevent this churn.",
+      hasImage: false, showAILogos: false,
+    },
+    {
+      icon: Target,
+      title: "No High-Value Condition Visibility",
+      description: "General chiropractic keeps the schedule filled, but auto accident cases, sports injury rehabilitation, and prenatal care are your highest-value segments. Most practices have no strategy to attract them.",
       hasImage: false, showAILogos: false,
     },
   ],
   transitionText: "Sound familiar? There's a better way.",
-  transitionSubtext: "Instead of depending on referrals and hoping patients return, imagine a predictable system that attracts new patients, books them automatically, and keeps them returning for wellness care.",
+  transitionSubtext: "Instead of hoping patients find you and hoping they stay, imagine a predictable system that attracts new patients through search, converts inquiries automatically, and keeps your schedule full with both acute and long-term wellness patients.",
 
-  // ── System Diagram ──
+  // ── System Diagram (Prompt 4) ──
   systemDiagramHeadline: "GrowSmallBiz Predictable Marketing System",
-  systemDiagramBody: "A complete patient acquisition engine that attracts new patients through search and paid ads, converts inquiries into booked appointments automatically, and turns acute-care patients into loyal wellness care patients — including automated recall systems and referral program activation.",
+  systemDiagramBody: "A complete patient acquisition engine that attracts new patients through search, converts inquiries into booked appointments automatically, and turns one-time acute care patients into loyal, recurring wellness relationships.",
 
-  // ── CTAs ──
+  // ── CTAs (Prompt 5 + 14) ──
   ctaAfterPainPoints: {
     headline: "Ready for Chiropractic Marketing That Fills Your Schedule With the Right Patients?",
-    subtext: "Let's build a custom chiropractic growth strategy to attract new patients and convert them into long-term wellness care relationships.",
+    subtext: "Let's build a custom chiropractic growth strategy to attract new patients and convert them into long-term wellness relationships.",
     primaryLabel: "Get Your Free Strategy Session",
     secondaryLabel: "Call +1 (925) 886-3724",
   },
   ctaAfterSeo: {
     headline: "See Where You Rank — Free Chiropractic SEO Visibility Audit",
-    subtext: "Find out exactly where your chiropractic practice appears in local search results and what it would take to reach the top 3.",
+    subtext: "Find out exactly where your chiropractic practice appears in local search results and how patients are finding you.",
     primaryLabel: "Get SEO Visibility Report",
     secondaryLabel: "",
   },
@@ -125,204 +136,234 @@ export const chiropracticConfig: NicheConfig = {
     { id: "faq", label: "FAQs", icon: "❓" },
   ],
 
-  // ── Website Design ──
+  // ── Website Design (Prompt 6) ──
   websiteDesignBadge: "Chiropractic Practice Websites",
   websiteDesignHeadline: "Chiropractic Websites That Convert",
   websiteDesignHighlight: "Visitors Into Booked Appointments",
-  websiteDesignSubheadline: "Fast, patient-friendly websites built to generate new patient inquiries and clearly communicate your approach to pain relief and wellness care.",
+  websiteDesignSubheadline: "Fast, patient-friendly chiropractic websites built to generate new patient inquiries and showcase your full range of conditions and care plans.",
   websiteDesignImage: portfolioChiroWebsite,
   websiteDesignFeatureHeadline: "Chiropractic Websites Built to Win the New Patient Decision",
-  websiteDesignFeatureBody: "A patient searching for back pain relief is often in real discomfort and looking for someone they can trust quickly. We build chiropractic websites that establish that trust immediately — with clear condition and treatment pages, patient education content, strong reviews, and a frictionless path to booking an appointment from any device.",
+  websiteDesignFeatureBody: "A patient researching a chiropractor visits your website with a simple question: can I trust this practice with my pain? We build chiropractic websites that answer that question immediately — with professional imagery, condition-specific pages for every patient type, patient reviews front and center, and an easy path to book an appointment from any device.",
   websiteDesignBullets: [
-    "Condition-specific pages: back pain, neck pain, sciatica, headaches, auto injury",
-    "Online appointment request — 24/7 new patient booking capability",
-    "Trust signals: credentials, years in practice, patient outcome descriptions, reviews",
-    "Mobile-first design — 70%+ of chiropractic searches happen on mobile",
-    "Personal injury and auto accident landing pages for PI referral traffic",
-    "Patient education blog for condition-based search content",
-    "Wellness care and maintenance plan information pages",
-    "Fast load times and technical SEO foundation built in from day one",
+    "Online appointment request forms — 24/7 new patient booking capability",
+    "Condition pages for every patient type: back pain, neck pain, sciatica, sports injuries, auto accident, prenatal, headaches",
+    "Trust signals: credentials, care plan overviews, Google reviews integration",
+    "Mobile-first design — majority of chiropractic searches happen on mobile",
+    "Patient intake forms and new patient paperwork available online",
+    "Insurance and financing information page",
+    "Fast load times — under 2 seconds for mobile visitors",
+    "Blog and content hub for condition-specific SEO and patient education",
   ],
+
+  // ── AI Search Callout (Prompt 7) ──
   aiSearchCalloutHeadline: "Ranking on Google Still Matters.",
-  aiSearchCalloutHighlight: "But AI Search Is Now Influencing How Patients Find Pain Relief.",
-  aiSearchCalloutBody: "Patients in pain are asking ChatGPT 'what's the best chiropractor near me for sciatica?' before they open Google. Your competitor may already be recommended by AI — even if you rank well organically. We track and build your AI visibility across 6 platforms.",
+  aiSearchCalloutHighlight: "But AI Search Is Now Influencing Patient Decisions.",
+  aiSearchCalloutBody: "Patients are asking ChatGPT and Gemini 'who's the best chiropractor near me for sciatica?' before they open Google. Your competitor may already be showing up in those AI recommendations — even if you rank well on traditional search.",
   aiSearchStats: [
     { value: "40%+", label: "of consumers now use AI for local service recommendations" },
     { value: "6 Platforms", label: "AI platforms we track for your visibility" },
     { value: "24/7", label: "continuous monitoring & sentiment tracking" },
+    { value: "73%", label: "of patients adopted new healthcare research behaviors in the past year — rater8, 2025" },
   ],
 
-  // ── SEO ──
+  // ── Conversational AI Queries (Prompt 8 — GEO) ──
+  conversationalAiQueries: [
+    "Which chiropractor near me is accepting new patients?",
+    "Best chiropractor for sciatica in [city] — reviews 2025",
+    "Can a chiropractor help with my herniated disc?",
+    "Chiropractor for auto accident injury near me",
+    "How many chiropractic sessions does back pain take?",
+    "Is chiropractic care covered by my insurance in [city]?",
+    "Prenatal chiropractor near me — safe during pregnancy?",
+  ],
+
+  // ── AEO Entity Block (Prompt 10) ──
+  aeoEntityBlock: [
+    {
+      badge: "WHAT IS IT",
+      title: "What is chiropractic marketing?",
+      body: "Chiropractic marketing encompasses the digital strategies and systems a chiropractic practice uses to attract new patients, rank in local search results, build online reputation, and convert inquiries into booked appointments. It includes SEO, paid advertising, social media management, and patient communication automation — with specific strategies for acute pain patients, wellness care patients, and personal injury cases.",
+    },
+    {
+      badge: "WHO IT SERVES",
+      title: "Who does chiropractic marketing serve?",
+      body: "Chiropractic marketing serves solo chiropractic practices, multi-practitioner clinics, sports chiropractic specialists, family wellness practices, prenatal chiropractic providers, and practices seeking to reduce referral dependency and build a predictable digital patient acquisition system.",
+    },
+    {
+      badge: "WHAT WE DO",
+      title: "What does GrowSmallBiz do for chiropractic practices?",
+      body: "GrowSmallBiz builds complete chiropractic patient acquisition systems — combining conversion-focused practice websites, AI-powered SEO optimized for Google and AI search platforms, Google and Meta paid advertising, social media strategy, and an AI Client Growth System that automates new patient follow-up, wellness care enrollment, recall management, and reputation generation.",
+    },
+  ],
+
+  // ── SEO (Prompts 9, 11, 12, 13) ──
   seoBadge: "Chiropractic SEO Services",
   seoHeadline: "AI-Powered SEO for",
   seoHighlight: "Chiropractic Practices",
-  seoSubheadline: "Comprehensive search engine optimization designed for chiropractic practices — from general pain relief and wellness care to personal injury and auto accident cases.",
+  seoSubheadline: "Comprehensive search engine optimization designed for chiropractic practices — from acute pain relief and general wellness to high-value personal injury cases.",
   seoEditorialHeadline: "Why Chiropractic SEO Works",
   seoEditorialHighlight: "Differently Than Other Healthcare Marketing",
   seoEditorialBody: [
-    "Chiropractic sits at the intersection of pain urgency and considered trust.",
-    "Some patients find a chiropractor in genuine crisis — acute back pain after a weekend project gone wrong, neck pain following a car accident, sciatica that's made the workday unbearable. These are high-urgency searches that mirror emergency HVAC behavior: the patient opens Google, scans the Map Pack, reads a handful of reviews, and calls whoever appears most trustworthy in the top 3 results. Speed of visibility and review quality win these cases.",
-    "Other patients are in a longer consideration phase — researching chronic pain management options, exploring chiropractic for the first time, or evaluating providers for ongoing wellness care. These patients visit multiple websites, read extensively, and take days or weeks to decide. Educational content, condition-specific pages, and visible clinical expertise win these cases.",
-    "There's also a third patient type that most chiropractic marketing ignores: the personal injury and auto accident patient. This segment is distinctly high-value — treatment duration is longer, insurance billing is often third-party, and attorney referral relationships can create consistent case volume. PI-focused content and landing pages capture a segment your competitors likely aren't targeting specifically.",
-    "Our approach covers all three patient types simultaneously — Map Pack optimization for urgent local searchers, condition and wellness content authority for considered buyers, and PI-specific landing pages for the high-value injury segment — while building the review velocity that makes all three channels convert at their highest rate.",
+    "Chiropractic is a dual-intent search category with three distinct patient types — and each requires a different strategy.",
+    "The first patient type is in acute pain: a thrown-out back, a stiff neck that won't turn, a sports injury from the weekend. These are high-urgency searches — 'chiropractor near me' or 'back pain doctor [city]' — where the decision happens in minutes and goes to whoever appears first with strong reviews and an open appointment.",
+    "The second patient type is in planning mode: researching wellness care options, exploring chiropractic for ongoing headaches or posture concerns, or looking for a long-term maintenance provider. These patients have higher lifetime value but require more trust-building — patient education content, condition-specific pages, and a clear explanation of care plan philosophy.",
+    "The third patient type is the personal injury or auto accident patient — a high-value, legally-complex segment that most chiropractic marketing completely ignores. PI patients are searching for documentation, expertise, and a practice experienced with insurance billing and legal referrals. This segment has its own keyword cluster and requires dedicated landing pages.",
+    "This three-type dynamic means your SEO strategy must run on three tracks simultaneously. Local SEO and Google Business Profile wins acute cases. Service-specific content authority wins wellness patients. PI-specific pages win auto accident referrals.",
   ],
-  seoEditorialPullQuote: "Chiropractic is one of the most referral-driven healthcare niches — which creates both an opportunity and a risk. Digital acquisition supplements referrals with a predictable channel you own.",
+  seoEditorialPullQuote: "A practice with strong reviews across all three patient types — acute pain, wellness, and PI — builds a referral network that other chiropractors cannot replicate, because it is trusted by patients, physicians, and attorneys simultaneously.",
   seoKeywordCategories: {
     painRelief: {
-      label: "Pain Relief & Injury Treatment", icon: AlertTriangle,
+      label: "Pain Relief & Injury", icon: AlertTriangle,
       image: chiroHeroImage,
       keywords: [
         "chiropractor near me",
         "back pain chiropractor [city]",
-        "neck pain treatment [city]",
+        "neck pain doctor [city]",
         "sciatica chiropractor [city]",
-        "headache relief chiropractor near me",
-        "sports injury chiropractor [city]",
+        "herniated disc treatment [city]",
+        "headache chiropractor near me",
       ],
-      competitors: "Other local chiropractors, physical therapy practices, orthopedic urgent care, pain management clinics",
+      competitors: "Multi-location chiropractic chains, urgent care facilities offering chiropractic, hospital spine departments, physical therapy clinics",
     },
     wellness: {
       label: "Wellness & Preventive Care", icon: Heart,
       image: portfolioChiroWebsite,
       keywords: [
-        "chiropractic wellness care [city]",
-        "maintenance chiropractic adjustments near me",
+        "wellness chiropractor [city]",
+        "prenatal chiropractic near me",
+        "sports chiropractor [city]",
+        "chiropractic adjustment near me",
         "family chiropractor [city]",
-        "prenatal chiropractor [city]",
         "pediatric chiropractor near me",
-        "chiropractic care for posture [city]",
       ],
-      competitors: "Wellness-focused chiropractic chains, functional medicine practices, massage therapy + chiro combos",
+      competitors: "Wellness-focused chiropractic chains, integrative health clinics, physical therapy and chiropractic combined practices",
     },
     personalInjury: {
       label: "Auto Accident & Personal Injury", icon: Shield,
       image: chiroHeroImage,
       keywords: [
-        "auto accident chiropractor [city]",
-        "car accident injury treatment near me",
-        "whiplash chiropractor [city]",
-        "personal injury chiropractic [city]",
-        "chiropractor that accepts liens near me",
-        "slip and fall injury chiropractor",
+        "chiropractor for car accident [city]",
+        "auto accident injury chiropractor near me",
+        "personal injury chiropractor [city]",
+        "whiplash treatment near me",
+        "accident injury doctor [city]",
       ],
-      competitors: "PI-focused chiropractic chains, multi-disciplinary injury clinics, attorney referral networks, MRI + chiro combo clinics",
+      competitors: "PI-focused chiropractic practices, personal injury medical clinics, attorney-referred medical providers, urgent care with PI billing",
     },
   },
 
-  // ── Paid Media ──
+  // ── Paid Media (Prompt 15) ──
   paidMediaHeadline: "We Run High-Converting Ads for",
   paidMediaHighlight: "Chiropractic Practices",
-  paidMediaSubheadline: "Strategic ad platform recommendations by patient type — acute pain cases, wellness care, and personal injury.",
+  paidMediaSubheadline: "Strategic ad platform recommendations by patient type — acute pain cases, wellness patients, and personal injury acquisition.",
   adCreatives: [
     {
       id: "acute-pain",
-      genre: "Pain Relief & Injury",
+      genre: "Acute Pain Cases",
       image: chiroHeroImage,
       platforms: ["Google PPC", "Google LSA"],
-      description: "High-urgency creative for back pain, neck pain, and sciatica sufferers. Same-day availability, new patient offer, credibility signals front and center.",
+      description: "High-urgency creative for back pain, neck pain, and sciatica. Same-day availability, prominent phone number, conditions treated.",
     },
     {
-      id: "new-patient",
-      genre: "New Patient Acquisition",
+      id: "wellness",
+      genre: "Wellness & Ongoing Care",
       image: portfolioChiroWebsite,
-      platforms: ["Google PPC", "Meta/Facebook"],
-      description: "New patient special — exam, consultation, and first adjustment offer. Targeted to adults in local radius who have searched for pain relief or chiropractic recently.",
+      platforms: ["Meta/Facebook", "Google PPC"],
+      description: "Awareness creative targeting patients exploring long-term chiropractic care or sports performance improvements.",
     },
     {
       id: "personal-injury",
-      genre: "Personal Injury",
+      genre: "Auto Accident & PI",
       image: chiroHeroImage,
-      platforms: ["Google PPC", "Meta/Facebook"],
-      description: "Targeted creative for auto accident and personal injury patients. Emphasize lien acceptance, no out-of-pocket cost, same-day evaluation availability.",
+      platforms: ["Google PPC", "Google LSA"],
+      description: "'Injured in an accident?' messaging. Documentation support, insurance billing expertise, attorney referral positioning.",
     },
   ],
   paidMediaByGenre: [
     {
       genre: "Pain Relief & Acute Care", icon: AlertTriangle,
       primary: [
-        { name: "Google PPC", reason: "70-80% of budget — highest-intent searches like 'chiropractor near me,' 'back pain doctor,' 'sciatica treatment.' Patients in pain convert quickly." },
-        { name: "Google LSA", reason: "Google Guaranteed badge adds trust signal for patients choosing between local providers." },
+        { name: "Google PPC + Google LSA (70–80% of budget)", reason: "Google PPC: highest urgency search intent. Google LSA: Google Guaranteed badge builds instant trust." },
       ],
       secondary: [
-        { name: "Meta/Facebook", reason: "Retarget website visitors + pain relief content for brand awareness." },
+        { name: "Nextdoor", reason: "Hyperlocal trust building." },
       ],
       color: "blue",
     },
     {
-      genre: "Wellness & Preventive Care", icon: Heart,
+      genre: "Wellness & Preventive", icon: Heart,
       primary: [
-        { name: "Meta/Facebook", reason: "Re-engage past patients with wellness care messaging. Target local homeowners and families with preventive chiropractic content." },
-        { name: "Google PPC", reason: "Wellness keyword campaigns ('maintenance chiropractic,' 'family chiropractor') for planned-care searches." },
+        { name: "Meta/Facebook + Google PPC", reason: "Meta/Facebook: awareness campaigns, wellness education, retargeting. Google PPC: capture active wellness search intent." },
       ],
       secondary: [
-        { name: "Instagram", reason: "Practice culture and wellness tips content for community building." },
+        { name: "YouTube", reason: "Treatment education and wellness explainer videos." },
       ],
       color: "emerald",
     },
     {
-      genre: "Auto Accident / Personal Injury", icon: Shield,
+      genre: "Auto Accident & PI", icon: Shield,
       primary: [
-        { name: "Google PPC", reason: "'Auto accident chiropractor [city]' and 'whiplash treatment near me' searches have very high case value — dedicated campaign with PI-specific landing page." },
-        { name: "Meta/Facebook", reason: "Retarget auto accident searches and build PI attorney referral awareness." },
+        { name: "Google PPC call-only ads + Google LSA", reason: "Google PPC: immediate contact for PI patients — call-only format. Google LSA: Google Guaranteed badge builds legal trust." },
       ],
       secondary: [
-        { name: "Google LSA", reason: "Additional trust signal for PI-related searches." },
+        { name: "Google Posts", reason: "Real-time availability during peak windows." },
       ],
       color: "red",
     },
   ],
   metaAdSetupHeadline: "How We Help Chiropractic Practices with Meta Ad Setup",
-  metaAdSetupSubheadline: "Facebook and Instagram reach patients before they're in acute pain — building brand familiarity so when a pain episode strikes, your practice is already top of mind. We build wellness care campaigns targeting past patients, new patient offer funnels for local homeowners, and retargeting sequences that re-engage website visitors who didn't book.",
+  metaAdSetupSubheadline: "Facebook and Instagram ads reach patients before they need urgent chiropractic care — building brand familiarity so when back pain or a sports injury arises, your practice feels like the obvious choice. We build wellness awareness campaigns, new patient offer funnels, and retargeting sequences that keep your practice top-of-mind.",
   trackingRetargetingEssentials: [
     { title: "Facebook Pixel + Retargeting", description: "Track visitors, build retargeting audiences, and show ads to patients who visited your site but didn't book.", icon: Facebook },
     { title: "Google Analytics & GTM", description: "Track your full patient journey, see which pages drive appointments, and manage all tracking codes centrally.", icon: BarChart3 },
     { title: "Call Tracking", description: "Know exactly which ad, keyword, or landing page generated each phone call and appointment booking.", icon: Phone },
   ],
 
-  // ── Retargeting ──
-  retargetingHeadline: "Be Found When They're in Pain.",
-  retargetingHighlight: "Stay Present Until They Book.",
-  retargetingSubheadline: "SEO captures the urgent search. Retargeting closes the considered decision.",
+  // ── Retargeting (Prompt 16) ──
+  retargetingHeadline: "Be Found When They Search.",
+  retargetingHighlight: "Be Remembered When They're Ready.",
+  retargetingSubheadline: "SEO captures the acute pain patient. Retargeting closes the wellness case.",
   retargetingBody: [
-    "Chiropractic decisions often follow a cycle: a pain episode triggers research, the patient visits a few websites, feels better temporarily, and puts the decision off. Retargeting interrupts that cycle.",
-    "Your practice reappears in their Facebook feed with a patient testimonial about back pain relief. Your Google Display ad shows up while they're reading about sciatica. When the pain episode returns — and it always does — your practice is already the most familiar name in their consideration set. For wellness care patients who've completed their acute plan, retargeting serves a different function: the gentle, timely reminder that maintenance care prevents the next episode before it starts.",
+    "SEO helps your chiropractic practice show up when someone is actively searching for relief.",
+    "Wellness care decisions take time. A patient exploring chiropractic for posture or headaches today may not book for weeks — they're researching, comparing, asking their physician. Retargeting keeps your practice visible across that entire consideration period. Your patient education content reappears on their Instagram. Your reviews show up in their Facebook feed. When they finally decide, your name is the one they trust.",
+    "For emergency cases, retargeting catches patients who searched, visited your website, and didn't book — following up with a gentle prompt when their urgency resurfaces.",
   ],
 
-  // ── Social Media ──
+  // ── Social Media (Prompt 17) ──
   socialMediaHeadline: "We Build Your Social Media",
   socialMediaHighlight: "Strategy",
-  socialMediaSubheadline: "Platform-specific strategies for chiropractic practices — by patient type and content goal.",
+  socialMediaSubheadline: "Platform-specific strategies for chiropractic practices — by patient type and care category.",
   socialMediaByGenre: [
     {
-      genre: "Patient Education & Trust",
+      genre: "Pain Relief & Acute Care",
       primary: [
-        { name: "Facebook", icon: Facebook, strategy: "Condition explainers, pain relief tips, posture content, and patient Q&A — highest reach for educational content with local homeowner audiences." },
-        { name: "YouTube", icon: Globe, strategy: "Condition education videos, adjustment demonstrations, patient testimonials — builds authority for considered buyers doing deep research." },
+        { name: "Facebook", icon: Facebook, strategy: "Community groups, neighborhood associations, local parent groups — highest organic reach for new patient acquisition." },
+        { name: "Instagram", icon: Instagram, strategy: "Team content, before/after mobility content, patient education posts." },
       ],
       secondary: [
-        { name: "Instagram", icon: Instagram, strategy: "Practice culture, team content, and patient success stories in Reels format." },
+        { name: "Nextdoor", icon: MapPin, strategy: "Hyperlocal trust for neighborhood acquisition." },
       ],
       color: "blue",
     },
     {
-      genre: "New Patient Acquisition",
+      genre: "Wellness & Sports",
       primary: [
-        { name: "Facebook", icon: Facebook, strategy: "New patient offers, referral campaigns, community presence — broad local reach with targeting by age, location, and health interest." },
-        { name: "Instagram", icon: Instagram, strategy: "Practice culture and patient outcome content targeting younger demographics." },
+        { name: "Instagram", icon: Instagram, strategy: "Before/after posture transformation, treatment walkthrough Reels, provider spotlights." },
+        { name: "Facebook", icon: Facebook, strategy: "Wellness awareness campaigns, care plan education, patient testimonials." },
       ],
       secondary: [
-        { name: "Nextdoor", icon: MapPin, strategy: "Hyperlocal community trust building for neighborhood-level patient acquisition." },
+        { name: "YouTube", icon: Globe, strategy: "Treatment education videos, wellness care explainers, sports performance content." },
       ],
       color: "emerald",
     },
     {
-      genre: "Wellness & Retention",
+      genre: "Patient Retention & Recall",
       primary: [
-        { name: "Facebook", icon: Facebook, strategy: "Wellness care reminders, seasonal pain prevention content (ergonomics for winter shoveling, summer sports prep), maintenance plan promotion." },
-        { name: "Email/SMS", icon: Mail, strategy: "Recall reminders, wellness content newsletters, appointment follow-ups — highest ROI retention channel." },
+        { name: "Email/SMS", icon: Mail, strategy: "Recall reminders at 30/60/90 days post-discharge, wellness plan enrollment — highest ROI retention channel." },
+        { name: "Facebook", icon: Facebook, strategy: "Existing patient appreciation, practice updates, seasonal spine health tips." },
       ],
       secondary: [
-        { name: "Instagram", icon: Instagram, strategy: "Ongoing wellness tips and practice community content." },
+        { name: "Instagram", icon: Instagram, strategy: "Spine health tips, team celebrations, practice milestone content." },
       ],
       color: "amber",
     },
@@ -330,10 +371,10 @@ export const chiropracticConfig: NicheConfig = {
   linkedInOutreachEnabled: false,
   linkedInOutreach: undefined,
 
-  // ── AI Growth System ──
+  // ── AI Growth System (Prompt 18 — Section A) ──
   growthSystemHeadline: "for Chiropractic Practices",
   growthSystemHighlight: "AI Client Growth System",
-  growthSystemSubheadline: "Stop losing new patients to slow follow-up and missed calls. Build an automated system that captures inquiries, books appointments, and turns acute-care patients into loyal wellness care relationships.",
+  growthSystemSubheadline: "Stop losing new patient inquiries to slow follow-up. Build an automated system that captures leads, books appointments, and turns one-time patients into long-term wellness relationships.",
   clientJourneyStages: [
     {
       stage: "Awareness", icon: Eye,
@@ -361,15 +402,15 @@ export const chiropracticConfig: NicheConfig = {
     },
     {
       stage: "Loyal Patient", icon: RefreshCw,
-      description: "Long-term wellness care relationship. Patients on maintenance plans visit 6–12 times per year, refer actively, and are far more resilient to competitive poaching. This segment is the foundation of a sustainable practice.",
+      description: "Long-term wellness care relationship. Patients on maintenance plans visit regularly, refer actively, and are far more resilient to competitive poaching. This segment is the foundation of a sustainable practice.",
       goal: "Keep patients engaged through recall automation, wellness content, and referral program activation",
       color: "amber",
     },
   ],
   emailNurturePoints: [
-    { title: "Speed-to-Lead", description: "AI Receptionist auto-responds to every inquiry within seconds — 24/7. Answers questions about conditions treated, insurance, and availability; books new patient appointments directly; and routes urgent pain cases to your emergency line.", icon: Zap },
+    { title: "Speed-to-Lead", description: "AI Receptionist auto-responds to every inquiry within seconds — 24/7. Answers questions about conditions treated, insurance, and availability; books new patient appointments directly.", icon: Zap },
     { title: "Automated Lead Nurturing", description: "5–7 touchpoints over 2–3 weeks with condition education, patient testimonials, and booking prompts that convert researching patients into scheduled appointments.", icon: Mail },
-    { title: "Past Client Re-engagement", description: "Recall reminders at 30, 60, and 90 days post-treatment, wellness care enrollment campaigns, seasonal pain prevention content, and birthday outreach keep your existing patient base engaged.", icon: RefreshCw },
+    { title: "Past Client Re-engagement", description: "Recall reminders at 30, 60, and 90 days post-discharge, wellness care enrollment campaigns, and seasonal content keep your existing patient base engaged.", icon: RefreshCw },
   ],
   emailSequenceTitle: "New Patient Inquiry",
   emailSequenceHighlight: "Follow-Up Sequence",
@@ -413,79 +454,84 @@ export const chiropracticConfig: NicheConfig = {
       expectedReduction: "Up to 60%",
     },
   ],
+
+  // ── Marketing Campaigns (Prompt 18 — Section C) ──
   marketingCampaigns: [
     {
-      genre: "New Patient Special — Acute Care", icon: AlertTriangle, color: "from-blue-500 to-cyan-500",
+      genre: "New Patient Special — General", icon: Activity, color: "from-blue-500 to-cyan-500",
       offer: {
-        headline: "New Patient Exam + Consultation + First Adjustment",
+        headline: "New Patient Exam + Consultation",
         tagline: "Start your pain relief journey today",
-        price: "$79",
+        price: "$49–$99",
         originalPrice: "$200+",
-        savings: "Save $120+",
-        includes: ["Health history review", "Orthopedic/neurological exam", "Posture assessment", "First adjustment", "Care plan discussion"],
+        savings: "Vary by market",
+        includes: ["Comprehensive exam", "Postural assessment", "X-rays if clinically indicated", "Treatment plan overview"],
         urgency: "Limited new patient slots per week",
         cta: "Book Now",
       },
-      funnel: ["Google PPC → New Patient Landing Page", "Booking Form → Confirmation", "Nurture Sequence → Wellness Plan Upsell"],
-      topPlatforms: ["Google PPC", "Google LSA"],
-      seasonality: "Peak: January (New Year), September (back-to-school)",
-    },
-    {
-      genre: "Auto Accident Free Evaluation", icon: Shield, color: "from-red-500 to-orange-500",
-      offer: {
-        headline: "Free Same-Day Auto Accident Evaluation",
-        tagline: "Injury documentation within 72 hours is critical",
-        price: "Free",
-        originalPrice: "$200+",
-        savings: "No out-of-pocket cost",
-        includes: ["Injury assessment", "Documentation for insurance/attorney", "Same-day treatment if indicated", "Lien-based billing available"],
-        urgency: "Time-sensitive — injury documentation best within 72 hours of accident",
-        cta: "Get Evaluated Today",
-      },
-      funnel: ["Google PPC (PI keywords) → Auto Accident Landing Page", "AI Receptionist booking → Same-day confirmation"],
+      funnel: ["Google PPC / Meta → Landing Page", "Booking Form → Nurture Sequence", "Recall Enrollment"],
       topPlatforms: ["Google PPC", "Meta/Facebook"],
-      seasonality: "Year-round, increases with winter weather conditions",
+      seasonality: "Peak: January (New Year), September (back-to-school/work)",
     },
     {
-      genre: "Wellness Care Enrollment", icon: Heart, color: "from-emerald-500 to-teal-500",
+      genre: "Wellness Consultation — New Patients", icon: Heart, color: "from-emerald-500 to-teal-500",
       offer: {
-        headline: "Wellness Care Package — 12 Monthly Maintenance Visits",
-        tagline: "Keep your spine healthy year-round",
-        price: "Reduced Rate",
-        originalPrice: "",
-        savings: "Reduced per-visit rate",
-        includes: ["Monthly adjustment", "Postural reassessment every 3 months", "Priority scheduling"],
-        urgency: "Package rate only available to current or recently discharged patients",
-        cta: "Enroll Now",
+        headline: "Free Spinal Health Screening",
+        tagline: "See what's possible for your spine health",
+        price: "Free",
+        originalPrice: "$75+",
+        savings: "Complimentary screening",
+        includes: ["20-min consultation", "Postural analysis", "Spinal health overview", "Treatment recommendations"],
+        urgency: "Limited complimentary screenings per month",
+        cta: "Book Screening",
       },
-      funnel: ["Post-discharge Email → Wellness Care Landing Page", "Package Enrollment → Auto-billing"],
-      topPlatforms: ["Email", "SMS", "Retargeting"],
-      seasonality: "After acute care discharge — highest conversion within 30 days of final acute visit",
+      funnel: ["Google PPC / Instagram → Cosmetic Landing Page", "Form → AI follow-up sequence"],
+      topPlatforms: ["Google PPC", "Instagram"],
+      seasonality: "Year-round, peaks January and May",
+    },
+    {
+      genre: "Patient Recall & Reactivation", icon: RefreshCw, color: "from-rose-500 to-pink-500",
+      offer: {
+        headline: "Your Spine Doesn't Take a Break — Overdue Wellness Visit",
+        tagline: "Priority scheduling for returning patients",
+        price: "Priority Scheduling",
+        originalPrice: "",
+        savings: "Priority scheduling",
+        includes: ["Adjustment + reassessment", "Updated posture analysis", "Updated care plan review"],
+        urgency: "Limited recall availability for returning patients",
+        cta: "Schedule Now",
+      },
+      funnel: ["Email/SMS to dormant patients → Recall booking page", "Confirmation → Re-engagement"],
+      topPlatforms: ["Email", "SMS"],
+      seasonality: "Peak: September–October (post-summer), January",
     },
   ],
+
+  // ── Seasonal Campaigns (Prompt 18 — Section C) ──
   seasonalCampaigns: [
-    { campaign: "New Year Health Campaign", timing: "Launch first week Jan", offer: "New patient exam special + wellness care intro", channels: ["Google PPC", "Facebook", "Email to lapsed patients"] },
-    { campaign: "Spring Sports & Activity", timing: "Launch early March", offer: "Sports injury prevention + new patient offer", channels: ["Google PPC", "Facebook local targeting"] },
-    { campaign: "Back-to-School", timing: "Launch late July", offer: "Backpack posture + student athlete sports injuries", channels: ["Facebook parent groups", "Google PPC"] },
-    { campaign: "Fall Maintenance Campaign", timing: "Launch September", offer: "Wellness care enrollment for existing patients", channels: ["Email + SMS to recently discharged patients"] },
-    { campaign: "Winter Slip & Fall / Shoveling", timing: "Always-on (Dec–Feb)", offer: "Acute injury and prevention content", channels: ["Google PPC", "Facebook", "Google Posts"] },
-    { campaign: "Wellness Recall", timing: "Automated (Year-round)", offer: "30/60/90-day post-discharge reminders", channels: ["SMS + email sequence to all discharged patients"] },
+    { campaign: "January New Year Campaign", timing: "Launch first week Jan", offer: "New patient exam special", channels: ["Google PPC", "Facebook", "Email to lapsed patients"] },
+    { campaign: "Spring Wellness Push", timing: "Launch mid-March", offer: "Free spinal screening", channels: ["Google PPC", "Instagram", "Retargeting"] },
+    { campaign: "Pre-Summer Sports Prep", timing: "Launch late April", offer: "Sports performance + injury prevention", channels: ["Instagram", "Facebook sports groups", "Google PPC"] },
+    { campaign: "Back-to-School", timing: "Launch late July", offer: "Backpack posture + pediatric chiropractic", channels: ["Facebook parent groups", "Google PPC"] },
+    { campaign: "Winter Injury Season", timing: "Always-on (Dec–Feb)", offer: "Slip-and-fall + shoveling injuries", channels: ["Google PPC emergency", "Google LSA"] },
+    { campaign: "Patient Recall", timing: "Automated (Year-round)", offer: "Post-discharge wellness enrollment", channels: ["SMS + email at 30/60/90 days post-discharge"] },
   ],
   pastClientWorkflows: [
     { title: "Annual Check-In", description: "Automated annual wellness check-in sent 11 months after last visit — prompting patients who haven't been in for maintenance care to schedule a reassessment, with direct booking link.", icon: Calendar },
     { title: "Re-engagement Campaign", description: "Patients inactive for 12+ months receive an automated 'Your spine doesn't take a year off' reactivation campaign with a returning patient offer and a one-click booking link.", icon: RefreshCw },
   ],
 
-  // ── Reputation ──
-  reputationHeadline: "We Build Your Online Reputation",
-  reputationHighlight: "— Automatically After Every Visit",
+  // ── Reputation (Prompt 18 — Section D) ──
+  reputationHeadline: "We Handle Your Chiropractic Practice",
+  reputationHighlight: "Reputation",
   reputationSubheadline: "Turn every satisfied patient into a 5-star review and a referral source.",
   reputationBullets: [
-    "80%+ of patients read reviews before choosing a chiropractor — your rating is your most visible trust signal",
-    "Google reviews directly impact your Map Pack ranking — more recent reviews = higher placement",
-    "Automated review requests sent after every completed treatment episode",
-    "Monitor all platforms: Google, Yelp, Healthgrades, Zocdoc, Facebook",
-    "Respond to every review professionally — responses demonstrate care and build trust with prospective patients",
+    "84% of patients check online reviews before choosing a chiropractor — your rating is your first impression — rater8, 2025",
+    "40% of patients have abandoned a booking due to negative reviews — rater8, 2025. Every unaddressed review is a lost appointment.",
+    "Google reviews directly impact your Map Pack ranking — recency and volume both matter",
+    "Automated review requests sent after every completed appointment",
+    "Monitor all platforms: Google, Yelp, Healthgrades, Zocdoc",
+    "Respond to every review with professional templates that demonstrate patient-first care",
   ],
   reviewFlowSteps: [
     { step: "1", title: "Treatment Episode Complete", description: "Patient marked as discharged or milestone reached in CRM" },
@@ -508,7 +554,7 @@ export const chiropracticConfig: NicheConfig = {
   aiFeatures: [
     {
       title: "24/7 AI Receptionist",
-      description: "Never miss a new patient inquiry again. AI answers calls in your brand voice, checks your calendar, qualifies leads, and routes urgent pain cases directly to your emergency line — even at 8pm.",
+      description: "Never miss a new patient inquiry again. AI answers calls in your brand voice, checks your calendar, qualifies leads, and routes urgent pain cases directly to your emergency line — even at 10pm.",
       icon: Phone,
       features: ["Answers calls in your brand voice", "Checks calendar availability in real-time", "Books new patient appointments", "Routes urgent pain cases to emergency line", "Sends confirmation texts/emails"],
       color: "violet",
@@ -522,36 +568,36 @@ export const chiropracticConfig: NicheConfig = {
     },
   ],
 
-  // ── Why Choose Us ──
+  // ── Why Choose Us (Prompt 19 — Part 1) ──
   whyChooseUsHeadline: "Why Choose GrowSmallBiz for Chiropractic Marketing",
   whyChooseUsSubtitle: "Your Chiropractic Marketing Partner",
-  whyChooseUsBody: "We understand chiropractic practice dynamics — the mix of acute, PI, and wellness patients, the referral dependency that limits growth, and the retention economics that determine whether a practice thrives or plateaus.",
+  whyChooseUsBody: "We understand chiropractic practice dynamics — the mix of acute and wellness patients, the referral dependency risk, and the retention economics that make or break a practice.",
   whyChooseUsCards: [
-    { title: "Chiropractic Practice Specialists", description: "We focus on health and wellness practices — chiropractic, dental, med spa. We understand patient acquisition across acute, PI, and wellness care segments, and the trust signals that convert pain sufferers into long-term patients.", icon: Activity },
-    { title: "Multi-Segment Patient Strategy", description: "We build separate campaigns for acute pain, wellness care, and personal injury — because each patient type searches differently, converts differently, and has a different lifetime value.", icon: Target },
-    { title: "24/7 After-Hours Capture", description: "Pain doesn't follow office hours. Your AI Receptionist captures new patient inquiries at 7pm, answers questions about conditions and insurance, and books appointments — so you never lose an after-hours patient.", icon: Phone },
-    { title: "Patient Retention Architecture", description: "We build the systems that convert acute-care patients into long-term wellness care relationships — automated recall, wellness enrollment campaigns, and retention sequences.", icon: RefreshCw },
-    { title: "Review Velocity System", description: "We systematically generate reviews at the right moment in the patient journey — building the review volume and recency that directly improves your Map Pack ranking.", icon: Star },
-    { title: "Verified Case Study Results", description: "Verified AI SEO case study results available for chiropractic practices. Schedule a call to review the actual campaign data and patient acquisition metrics.", icon: BarChart3 },
+    { title: "Chiropractic Practice Specialists", description: "We focus on health and wellness practices: chiropractic, med spa, dental. We understand acute vs. wellness patient acquisition dynamics, care plan conversions, and the trust signals that move patients from inquiry to table.", icon: Activity },
+    { title: "All Three Patient Types", description: "Our campaigns are built for acute pain patients, long-term wellness patients, and personal injury cases. Most chiropractic marketing agencies build for one. We build for all three simultaneously.", icon: Target },
+    { title: "24/7 New Patient Capture", description: "Your AI Receptionist captures new patient inquiries at 10pm, qualifies them, and books appointments before your front desk arrives in the morning.", icon: Phone },
+    { title: "Retention-First Strategy", description: "Wellness plan enrollment is built into every patient touchpoint — not an afterthought. We systematically convert acute care patients into long-term wellness relationships that multiply your lifetime patient value.", icon: RefreshCw },
+    { title: "Referral Independence", description: "We help practices reduce dependency on physician and attorney referrals by building a direct digital acquisition channel that generates exclusive patient inquiries you own.", icon: Shield },
+    { title: "Verified Case Study Results", description: "Verified case study results available for chiropractic practices. Schedule a call to review the actual campaign data and metrics.", icon: BarChart3 },
   ],
 
-  // ── FAQ ──
+  // ── FAQ (Prompt 19 — Part 2) ──
   faqHeadline: "Chiropractic Practice Marketing FAQs",
   faqSubheadline: "Common questions organized by service",
   faqCategories: [
     {
       id: "ai-seo", label: "AI SEO", icon: Search, color: "emerald",
       faqs: [
-        { question: "How long does it take to rank on Google for chiropractic searches in my area?", answer: "Most chiropractic practices see meaningful ranking improvements within 3–6 months depending on market competition, current review velocity, and baseline authority. We front-load citation building, review strategy, and GBP optimization to accelerate results." },
-        { question: "Do I need separate pages for each condition I treat?", answer: "Yes — condition-specific pages (back pain, neck pain, sciatica, headaches, auto injury) are critical for ranking in condition-based searches. Each page is uniquely written with clinical depth and local signals." },
-        { question: "How do Google reviews affect my chiropractic practice's local ranking?", answer: "Review quantity, recency, and velocity are top Map Pack ranking factors. Our automated review request system ensures every completed treatment episode has an opportunity to generate a 5-star review." },
-        { question: "What's the difference between local SEO and regular SEO for chiropractors?", answer: "Local SEO focuses on Google Maps, the Map Pack, and 'near me' searches — where the majority of chiropractic patients search. Regular SEO targets broader organic rankings for condition-based content." },
-        { question: "How do you optimize my Google Business Profile for chiropractic?", answer: "We optimize every field — categories, services, service areas, photos, Q&A, posts, and review response strategy. We also build local citations and ensure NAP consistency across all directories." },
-        { question: "Can you help me rank for personal injury and auto accident keywords?", answer: "Absolutely. PI keywords like 'auto accident chiropractor' and 'whiplash treatment' are high-value terms. We build dedicated PI landing pages and optimize your GBP for accident-related services." },
-        { question: "How does AI search (ChatGPT, Gemini) affect how patients find chiropractors?", answer: "AI assistants are increasingly recommending local providers. We build structured content and citations that help AI platforms recognize and recommend your practice when patients ask for chiropractic recommendations." },
-        { question: "Will SEO work in a competitive chiropractic market?", answer: "Yes, but strategy matters. We start with less competitive long-tail keywords and build authority systematically. In competitive markets, the combination of content velocity, review strategy, and technical SEO creates compounding advantages." },
-        { question: "How do you build condition-specific content for my practice?", answer: "We create clinically informed content for each condition you treat — using search intent data, competitive analysis, and your clinical expertise to build pages that rank and convert." },
-        { question: "How do you track and report SEO results for chiropractic practices?", answer: "Monthly reports cover keyword rankings, Map Pack position, organic traffic, phone calls, and form submissions. You also get access to a live dashboard to check progress anytime." },
+        { question: "How long does it take to rank on Google for chiropractic searches in my area?", answer: "Most chiropractic practices see measurable ranking improvements within 3–6 months for local and long-tail terms, with competitive terms like \"chiropractor near me\" typically taking 6–9 months in contested markets.\n\nTimeline depends on your starting domain authority, local competition, and how consistently new condition-specific content and citations are built. Acute pain searches like \"back pain doctor [city]\" often rank faster because competitor pages are thinner on the long-tail variants.\n\nPersonal injury and auto accident keywords often have the fastest ranking path — most chiropractic practices ignore this segment entirely, creating genuine low-competition opportunity with high per-patient value." },
+        { question: "Do I need separate pages for each condition I treat?", answer: "Yes — each high-value condition needs its own dedicated page. A single \"Services\" page cannot rank simultaneously for \"sciatica chiropractor [city],\" \"auto accident chiropractor near me,\" \"prenatal chiropractic [city],\" and \"back pain doctor [city].\"\n\nPractices with dedicated pages for back pain, sciatica, sports injuries, headaches, prenatal care, and PI cases consistently outrank those consolidating conditions, because each page builds independent relevance signals and backlink targets.\n\nCondition page depth matters more than count — each page needs 1,000–2,000 words covering the condition, how chiropractic addresses it, care plan expectations, and patient outcome signals." },
+        { question: "How do Google reviews affect my chiropractic practice's local ranking?", answer: "Google reviews are a direct ranking factor for local pack and Maps results — a practice with consistent recent reviews at 4.8+ stars outranks practices with older or fewer reviews in competitive markets.\n\n— rater8, 2025: 84% of patients check reviews before choosing a healthcare provider.\n\nReview velocity signals active practice status to Google. Review content also matters — patients mentioning \"sciatica\" or \"auto accident\" help your practice surface for those exact searches. Chiropractic patients are particularly review-sensitive because they're trusting you with physical pain management." },
+        { question: "What's the difference between local SEO and regular SEO for chiropractors?", answer: "Local SEO targets patients with geographic intent — \"chiropractor near me,\" \"back pain doctor [city]\" — through Google Business Profile, Map Pack rankings, and local citations. Regular SEO targets informational and condition intent — \"how many chiropractic sessions for sciatica,\" \"is chiropractic safe during pregnancy.\"\n\nBoth are necessary. Local SEO captures the acute pain patient who has already decided to book. Regular SEO captures the research-phase patient comparing care options before they're ready.\n\nPI and auto accident cases have a hybrid profile — they use both local and informational search. A comprehensive strategy addresses all three tracks simultaneously." },
+        { question: "How do you optimize my Google Business Profile for my chiropractic practice?", answer: "We audit and optimize every GBP element: primary and secondary category selection, service area configuration, condition-specific service listings, photo volume and quality, Q&A population, and weekly posting cadence for Map Pack freshness signals.\n\nAdding \"Sports Chiropractor\" or \"Prenatal Chiropractor\" as secondary categories unlocks Map Pack visibility for those specific searches immediately. We install GBP heatmap tracking so you see exactly where your practice surfaces across your service area.\n\nGBP optimization is not a one-time setup. Weekly posts, responding to every review, and updating service information seasonally all contribute to sustained Map Pack positioning." },
+        { question: "Can you help me rank for personal injury and auto accident chiropractic searches?", answer: "Yes — and PI/auto accident searches represent one of the highest-value, most underserved keyword clusters in chiropractic. Most practices ignore this segment entirely.\n\nRanking requires dedicated landing pages covering the PI patient journey — documentation requirements, billing with PI attorneys, lien-based treatment, and what to expect from the process.\n\nPI SEO is a relationship-building exercise as much as a search exercise. Practices that become the trusted provider cited by local PI attorneys see compounding referral growth that paid ads cannot replicate." },
+        { question: "How does AI search (ChatGPT, Gemini) affect chiropractic patient discovery?", answer: "31% of patients now use generative AI tools to research healthcare providers before booking — rater8, 2025. When patients ask ChatGPT \"best chiropractor for sciatica near me?\" AI platforms pull from your indexed content, GBP data, and review platforms.\n\nPractices with strong review volume and recency, and structured condition-specific content are most likely to appear in AI answers. We track your AI citation share across 6 platforms.\n\n73% of patients adopted new healthcare research behaviors in the past year — rater8, 2025. Chiropractic patients who ask AI tools for provider recommendations are often in the early research phase — a practice that appears in AI answers gets the first-impression advantage before the patient ever visits Google." },
+        { question: "Will SEO work for my chiropractic practice in a highly competitive market?", answer: "Yes — and competitive markets are exactly where a systematic SEO strategy creates the largest advantage, because most practices rely on referrals or paid ads and leave organic search share unclaimed.\n\nThe chiropractic marketing keyword cluster has a KD of 21–32 — the lowest difficulty in the Health & Wellness set. Most SERP competitors are thin pages under 1,500 words. A properly built 2,500-word page with genuine condition depth is the most competitive page in this SERP the moment it goes live.\n\nWe start with PI and long-tail condition terms where your domain authority gives you the fastest path to page one, then expand into more competitive \"chiropractor near me\" positions." },
+        { question: "Do you create condition-specific content for my chiropractic practice?", answer: "Yes — condition-specific content is the core of our chiropractic SEO strategy. We build content that answers the specific questions patients search at every stage of their care decision.\n\nCondition content ranks for informational searches — \"how many adjustments for sciatica,\" \"chiropractic for herniated disc vs surgery,\" \"is it safe to see a chiropractor during pregnancy.\" Every article passes a six-dimension quality scoring process before publication.\n\nWe don't publish generic spine health articles. Every piece is built around your specific conditions, service area, and competitive positioning." },
+        { question: "How do you track and report SEO results for chiropractic practices?", answer: "Monthly reporting covers keyword ranking movement across your full condition and local term set, Google Business Profile performance, organic traffic trends by landing page, and new patient inquiry source attribution — which keywords and pages are generating actual form submissions and calls.\n\nWe tie SEO activity directly to practice outcomes. You see which condition pages drive new patient inquiries, which GBP categories generate Map Pack clicks, and how your review velocity affects your local rank.\n\nFor PI practices, we additionally track which PI-specific pages and keywords generate attorney-referred patient inquiries — a separate value profile from direct patient searches." },
       ],
     },
     {
@@ -617,7 +663,7 @@ export const chiropracticConfig: NicheConfig = {
   caseStudyLinks: [
     {
       title: "Chiropractic SEO Case Study",
-      description: "How we helped a chiropractic clinic in Tracy, CA increase organic visibility and patient appointments.",
+      description: "How we helped a chiropractic clinic grow organic visibility and patient appointments with AI-powered SEO.",
       url: "/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/",
       icon: Search,
     },

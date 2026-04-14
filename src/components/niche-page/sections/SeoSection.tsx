@@ -59,7 +59,8 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </div>
         </div>
 
-        {/* Conversational AI Query Examples Block — Prompt 5 */}
+        {/* Conversational AI Query Examples Block */}
+        {config.conversationalAiQueries && config.conversationalAiQueries.length > 0 && (
         <div className="mb-16 max-w-4xl mx-auto rounded-2xl border border-white/10 bg-[hsl(210_50%_10%)] p-8 md:p-10">
           <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-4">
             Patients Are Already Asking AI These Questions About Your Practice
@@ -68,15 +69,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             Before opening Google, patients are typing questions like these into ChatGPT, Gemini, and Perplexity:
           </p>
           <div className="space-y-2">
-            {[
-              "Which dentist near me is accepting new patients?",
-              "Best dentist for dental implants in [city] — reviews 2025",
-              "Is Invisalign better than braces for adults?",
-              "How much do veneers cost at a dentist near me?",
-              "Emergency dentist open on weekends in [city]",
-              "Which cosmetic dentist has the best before and after results?",
-              "What's the difference between a dental crown and a veneer?",
-            ].map((query, i) => (
+            {config.conversationalAiQueries.map((query, i) => (
               <div key={i} className="border-l-[3px] border-l-primary bg-[hsl(210_40%_18%)] rounded-lg px-4 py-2.5">
                 <span className="text-foreground text-sm md:text-[15px]">{query}</span>
               </div>
@@ -86,6 +79,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             If your practice isn't showing up in these AI-generated answers, you're invisible to a growing segment of patients before they ever open Google. We change that.
           </p>
         </div>
+        )}
         {/* Editorial SEO Explanation */}
         <div className="mb-16 max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8">
@@ -104,25 +98,10 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           </div>
         </div>
 
-        {/* Entity Definition Block (AEO) — Prompt 6 */}
+        {/* Entity Definition Block (AEO) */}
+        {config.aeoEntityBlock && config.aeoEntityBlock.length > 0 && (
         <div className="mb-16 max-w-5xl mx-auto grid md:grid-cols-3 gap-4">
-          {[
-            {
-              badge: "WHAT IS IT",
-              title: "What is dental marketing?",
-              body: "Dental marketing encompasses the digital strategies and systems a dental practice uses to attract new patients, rank in local search results, build online reputation, and convert inquiries into booked appointments. It includes SEO, paid advertising, social media management, and patient communication automation.",
-            },
-            {
-              badge: "WHO IT SERVES",
-              title: "Who does dental marketing serve?",
-              body: "Dental marketing serves general dentistry practices, cosmetic dental specialists, dental implant providers, Invisalign and orthodontic practices, pediatric dentists, and multi-location dental groups seeking to reduce insurance dependency and grow their private-pay patient base.",
-            },
-            {
-              badge: "WHAT WE DO",
-              title: "What does GrowSmallBiz do for dental practices?",
-              body: "GrowSmallBiz builds complete dental patient acquisition systems — combining conversion-focused practice websites, AI-powered SEO optimized for Google and AI search platforms, Google and Meta paid advertising, social media strategy, and an AI Client Growth System that automates patient follow-up, recall management, and reputation generation.",
-            },
-          ].map((card, i) => (
+          {config.aeoEntityBlock.map((card, i) => (
             <div key={i} className="bg-[hsl(210_40%_18%)] border border-white/[0.08] rounded-xl p-6">
               <span className="inline-block px-2.5 py-1 bg-[hsl(174_60%_40%)] text-white text-[11px] font-semibold uppercase rounded-[10px] mb-3">
                 {card.badge}
@@ -132,6 +111,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
             </div>
           ))}
         </div>
+        )}
 
         <div className="mb-8 text-center">
           <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">{config.seoBadge}</p>

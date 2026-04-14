@@ -534,4 +534,14 @@ export interface NicheConfig {
   searchComparisonTitle?: string;
   searchComparisonSubtitle?: string;
   searchComparisonPanels?: SearchComparisonPanel[];
+
+  // ── Conversational AI Queries (GEO) ──
+  conversationalAiQueries?: string[];
+
+  // ── AEO Entity Block ──
+  aeoEntityBlock?: {
+    badge: string;
+    title: string;
+    body: string;
+  }[];
 }

@@ -164,6 +164,36 @@ export const dentalConfig: NicheConfig = {
     { value: "73%", label: "of patients adopted new healthcare research behaviors in the past year — rater8, 2025" },
   ],
 
+  // ── Conversational AI Queries (GEO) ──
+  conversationalAiQueries: [
+    "Which dentist near me is accepting new patients?",
+    "Best dentist for dental implants in [city] — reviews 2025",
+    "Is Invisalign better than braces for adults?",
+    "How much do veneers cost at a dentist near me?",
+    "Emergency dentist open on weekends in [city]",
+    "Which cosmetic dentist has the best before and after results?",
+    "What's the difference between a dental crown and a veneer?",
+  ],
+
+  // ── AEO Entity Block ──
+  aeoEntityBlock: [
+    {
+      badge: "WHAT IS IT",
+      title: "What is dental marketing?",
+      body: "Dental marketing encompasses the digital strategies and systems a dental practice uses to attract new patients, rank in local search results, build online reputation, and convert inquiries into booked appointments. It includes SEO, paid advertising, social media management, and patient communication automation.",
+    },
+    {
+      badge: "WHO IT SERVES",
+      title: "Who does dental marketing serve?",
+      body: "Dental marketing serves general dentistry practices, cosmetic dental specialists, dental implant providers, Invisalign and orthodontic practices, pediatric dentists, and multi-location dental groups seeking to reduce insurance dependency and grow their private-pay patient base.",
+    },
+    {
+      badge: "WHAT WE DO",
+      title: "What does GrowSmallBiz do for dental practices?",
+      body: "GrowSmallBiz builds complete dental patient acquisition systems — combining conversion-focused practice websites, AI-powered SEO optimized for Google and AI search platforms, Google and Meta paid advertising, social media strategy, and an AI Client Growth System that automates patient follow-up, recall management, and reputation generation.",
+    },
+  ],
+
   // ── SEO ──
   seoBadge: "Dental SEO Services",
   seoHeadline: "AI-Powered SEO for",
