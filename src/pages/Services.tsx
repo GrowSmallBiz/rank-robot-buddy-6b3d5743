@@ -20,8 +20,6 @@ import {
   Users,
   Building2,
   Stethoscope,
-  Scale,
-  Car,
   Briefcase,
   CheckCircle,
   Layers,
