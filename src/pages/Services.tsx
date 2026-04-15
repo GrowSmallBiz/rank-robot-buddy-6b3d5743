@@ -20,8 +20,6 @@ import {
   Users,
   Building2,
   Stethoscope,
-  Scale,
-  Car,
   Briefcase,
   CheckCircle,
   Layers,
@@ -174,8 +172,6 @@ const packages = [
 const industries = [
   { title: "Home Services", desc: "HVAC, plumbing, roofing, electrical, landscaping, pest control, general contracting", body: "Homeowners searching online for local service providers need to find you fast and trust you quickly. The GrowSmallBiz system is built to make that happen — from search visibility to instant lead follow-up.", icon: Building2 },
   { title: "Healthcare & Wellness", desc: "Dental practices, chiropractic, physical therapy, primary care, wellness clinics", body: "Patients are searching for providers they trust in their local area. A strong website, consistent online presence, and fast follow-up make the difference between a new appointment and a missed opportunity.", icon: Stethoscope },
-  { title: "Legal", desc: "Personal injury, family law, estate planning, criminal defense, local practices", body: "Legal clients are often making urgent, high-stakes decisions. Showing up in search at the right moment — and following up immediately — is how practices turn online searches into consultations.", icon: Scale },
-  { title: "Automotive", desc: "Auto repair, detailing, collision, tire and service centers", body: "Local automotive businesses compete on trust, convenience, and visibility. The system helps you get found first, make a strong first impression, and stay top of mind in the community you serve.", icon: Car },
   { title: "Professional & B2B Services", desc: "Financial advisors, CPAs, consultants, agencies, local professional firms", body: "For businesses that sell expertise and relationships, credibility is everything online. GrowSmallBiz builds the digital presence and outreach systems that support consistent new business development.", icon: Briefcase },
 ];
 
