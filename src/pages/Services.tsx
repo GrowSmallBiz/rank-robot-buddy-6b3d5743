@@ -281,7 +281,6 @@ const ServiceCardLarge = ({
   <div
     className="rounded-2xl p-8 flex flex-col card-hover animate-fade-up"
     style={{ animationDelay: `${index * 0.1}s`, backgroundColor: "#2d465c", border: "2px solid #17a2b8", boxShadow: "0 0 15px rgba(23, 162, 184, 0.3), 0 0 30px rgba(23, 162, 184, 0.15)" }}
-    style={{ animationDelay: `${index * 0.1}s` }}
   >
     <div className="flex items-center gap-4 mb-5">
       <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
