@@ -9,6 +9,8 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { PersonCTA } from "@/components/services/PersonCTA";
 import { Head } from "vite-react-ssg";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { baseContactCTA } from "@/config/contactCTA";
+import { useUtm } from "@/hooks/use-utm";
 import {
   ArrowRight,
   Globe,
@@ -28,9 +30,68 @@ import {
   Zap,
   Shield,
   TrendingUp,
+  Wrench,
+  MessageCircle,
+  Star,
+  Phone,
+  Rocket,
+  ChevronRight,
 } from "lucide-react";
 
 /* ───────── data ───────── */
+
+const heroStats = [
+  { number: "3–6 mo", description: "To reach top Google rankings for local service searches" },
+  { number: "5 min", description: "AI response speed to every new lead inquiry" },
+  { number: "24/7", description: "AI Receptionist coverage for after-hours lead capture" },
+  { number: "3", description: "Industries — home services, health & wellness, professional" },
+];
+
+const proofMetrics = [
+  { metric: "+1,395%", label: "Phone calls from local search", attribution: "HVAC Contractor — AI SEO Campaign" },
+  { metric: "-64.6%", label: "Cost per acquisition", attribution: "Dental Practice — Google Ads Campaign" },
+  { metric: "+552.7%", label: "Website users year over year", attribution: "Med Spa — Local SEO Campaign" },
+];
+
+const conversationalQueries = [
+  "What's the best digital marketing agency for local service businesses?",
+  "How do I get more leads for my HVAC company without spending more on ads?",
+  "What does a local SEO agency actually do for a service business?",
+  "How do I set up automated follow-up for leads that don't book right away?",
+  "Which marketing services should a local contractor start with?",
+  "How do I know if my Google Ads are actually generating booked jobs?",
+  "What's the difference between SEO and paid ads for a local service business?",
+];
+
+const entityCards = [
+  {
+    badge: "WHAT IS IT",
+    title: "What is GrowSmallBiz?",
+    body: "GrowSmallBiz is an AI-powered digital marketing agency that builds complete client acquisition systems for local service businesses. It combines website design, managed AI SEO, paid advertising, CRM automation, and AI-powered lead follow-up into one connected growth system — so local business owners can capture more leads, respond faster, and convert more inquiries into booked jobs without managing a stack of disconnected tools.",
+  },
+  {
+    badge: "WHO IT SERVES",
+    title: "Who does GrowSmallBiz serve?",
+    body: "GrowSmallBiz works exclusively with local service businesses — including home service contractors (HVAC, plumbing, roofing, electrical, landscaping), health and wellness practices (chiropractors, med spas, dental practices), and professional service firms (photographers, real estate agents). The system is designed for business owners who need consistent lead flow but don't have time to manage their own marketing.",
+  },
+  {
+    badge: "WHAT WE DO",
+    title: "What does GrowSmallBiz do?",
+    body: "GrowSmallBiz builds and manages digital marketing systems that attract qualified leads through search, capture and follow up with them automatically, and convert more of them into booked appointments and jobs. Services include conversion-focused website design, AI-powered SEO for Google and AI search platforms, Google and Meta paid advertising, CRM automation, and AI receptionist and chat — all designed to work together as one connected system.",
+  },
+];
+
+const navTiles = [
+  { icon: Globe, label: "Core Services", anchor: "#core-services" },
+  { icon: Search, label: "How It Works", anchor: "#how-it-works" },
+  { icon: BarChart3, label: "Growth Packages", anchor: "#growth-packages" },
+  { icon: Users, label: "Who We Serve", anchor: "#who-we-serve" },
+  { icon: Shield, label: "Why GrowSmallBiz", anchor: "#why-growsmallbiz" },
+  { icon: Star, label: "Client Results", anchor: "#client-results" },
+  { icon: MessageCircle, label: "FAQs", anchor: "#faqs" },
+  { icon: Phone, label: "Get a Consultation", anchor: "#consultation" },
+  { icon: Rocket, label: "Schedule Strategy Call", anchor: "external" },
+];
 
 const coreServices = [
   {
@@ -117,10 +178,11 @@ const accelerationServices = [
   },
 ];
 
-const systemStages = [
+const systemSteps = [
   {
-    label: "Capture",
-    color: "from-primary to-orange-400",
+    number: 1,
+    title: "Capture",
+    tag: "Get Found & Generate Leads",
     items: [
       { name: "Website", desc: "Built to convert visitors into leads" },
       { name: "Managed AI SEO", desc: "Gets you found by the right people at the right moment" },
@@ -128,8 +190,9 @@ const systemStages = [
     ],
   },
   {
-    label: "Nurture",
-    color: "from-blue-500 to-cyan-400",
+    number: 2,
+    title: "Nurture",
+    tag: "Follow Up Automatically",
     items: [
       { name: "CRM Automation", desc: "Follows up instantly, keeps leads warm between touchpoints" },
       { name: "Social Media Campaigns", desc: "Maintains brand visibility and builds trust over time" },
@@ -137,8 +200,9 @@ const systemStages = [
     ],
   },
   {
-    label: "Convert",
-    color: "from-emerald-500 to-green-400",
+    number: 3,
+    title: "Convert",
+    tag: "Turn Leads Into Booked Jobs",
     items: [
       { name: "CRM Automation", desc: "Automates booking workflows and manages your pipeline" },
       { name: "AI Lead Generation", desc: "Identifies and surfaces new opportunities before competitors do" },
@@ -175,26 +239,29 @@ const industries = [
   { title: "Professional & B2B Services", desc: "Financial advisors, CPAs, consultants, agencies, local professional firms", body: "For businesses that sell expertise and relationships, credibility is everything online. GrowSmallBiz builds the digital presence and outreach systems that support consistent new business development.", icon: Briefcase },
 ];
 
-const whyBlocks = [
-  { icon: Layers, title: "One connected strategy, not a stack of disconnected vendors.", body: "Most local businesses end up managing multiple vendors, each owning a piece of the picture. When those pieces do not connect, leads fall through the cracks and nobody is accountable for the whole result. GrowSmallBiz builds and manages the full system — so every piece is designed to work with every other piece." },
-  { icon: Zap, title: "AI-powered execution at a speed and scale that changes what is possible.", body: "The tools available today let smaller businesses move faster, optimize smarter, and compete at a level that previously required significantly larger budgets and teams. GrowSmallBiz is built to take advantage of those tools — as a genuine operational advantage, not a marketing claim." },
-  { icon: Target, title: "Conversion-first thinking, not just traffic and impressions.", body: "Visitors, clicks, and followers are outputs. What matters is whether those activities generate leads, bookings, and revenue. Every service GrowSmallBiz offers is evaluated through that lens — not whether it looks busy, but whether it moves the business forward." },
-  { icon: Shield, title: "Built exclusively for local service businesses.", body: "GrowSmallBiz focuses specifically on local service businesses — which means the strategies, messaging frameworks, SEO systems, and CRM automations are all built around how local service businesses actually grow. There is no one-size-fits-all approach here because local service businesses do not have one-size-fits-all problems." },
-  { icon: Handshake, title: "Lead capture and follow-up treated as seriously as lead generation.", body: "Getting leads is only valuable if you do something with them quickly. A meaningful percentage of local business leads are lost simply because nobody responded fast enough. The GrowSmallBiz system treats follow-up speed and consistency as core priorities — not afterthoughts." },
-  { icon: TrendingUp, title: "Practical growth systems, not vanity marketing.", body: "Rankings, likes, and brand awareness matter — but only because they lead to something. GrowSmallBiz focuses on building systems that generate actual pipeline, not impressive-looking reports that do not translate to business results." },
+const whyCards = [
+  { icon: Layers, title: "One connected strategy, not a stack of disconnected vendors.", body: "Every service is designed to work with every other. No gaps, no finger-pointing between vendors, no leads falling through the cracks." },
+  { icon: Zap, title: "AI-powered execution at a speed and scale that changes what is possible.", body: "GrowSmallBiz uses AI across visibility, follow-up, lead handling, and conversion — as operational infrastructure, not a marketing claim." },
+  { icon: Target, title: "Conversion-first thinking, not just traffic and impressions.", body: "Every service is evaluated by whether it generates leads, bookings, and revenue — not whether it looks busy." },
+  { icon: Shield, title: "Built exclusively for local service businesses.", body: "The strategies, messaging, and automation systems are built around how local service businesses actually generate and convert leads." },
+  { icon: Handshake, title: "Lead capture and follow-up treated as seriously as lead generation.", body: "Speed of response determines whether you win or lose the lead. The system ensures no inquiry waits more than 5 minutes for a response." },
+  { icon: TrendingUp, title: "Practical growth systems, not vanity marketing.", body: "Rankings and impressions matter only because they lead to something. GrowSmallBiz builds systems that generate actual pipeline." },
 ];
 
 const faqs = [
-  { question: "What services does GrowSmallBiz offer?", answer: "GrowSmallBiz offers a connected suite of digital marketing services for local service businesses. The Core Growth System includes Website Design, Managed AI SEO, Paid Ads, and CRM Automation. Growth Acceleration Services — Social Media Campaigns, AI Lead Generation, and LinkedIn Outreach Automation — layer on top to expand visibility and build outbound momentum. Every service is designed to work together as part of a single system that captures leads, nurtures them automatically, and converts more opportunities into booked jobs." },
-  { question: "Do I need all services at once?", answer: "No. Most clients start with a foundation — typically a conversion-focused website paired with CRM automation — and add services as they grow. The GrowSmallBiz system is designed to be built incrementally, so you are never paying for capability you are not ready to use. A strategy call helps identify the right starting point based on where your business is today, what your goals are, and where the biggest gaps exist." },
-  { question: "What is the difference between Core Growth System and Growth Acceleration Services?", answer: "The Core Growth System covers the foundational services every local service business needs to generate leads, capture interest, and convert opportunities: website, Managed AI SEO, paid ads, and CRM automation. Growth Acceleration Services — social media campaigns, AI lead generation, and LinkedIn outreach automation — expand reach and build outbound momentum. They work best when the core foundation is already in place, which is why they are treated as the second layer rather than the starting point." },
-  { question: "Which services are best for a new business?", answer: "For a business starting from scratch, the priority is a credible, conversion-focused digital presence paired with immediate lead follow-up. That typically means starting with Website Design and CRM Automation. Once the foundation is solid, adding Managed AI SEO builds long-term organic visibility and a compounding inbound channel. A strategy call will help map the right sequence based on your budget, timeline, and market." },
-  { question: "Which services are best if I already have a website?", answer: "If you already have a website, the most common next priorities are visibility and lead flow. Managed AI SEO improves how well you show up in search — both traditional and AI-powered. CRM Automation ensures those leads are followed up with instantly and consistently. If you need leads faster, Paid Ads can generate immediate, high-intent traffic while Managed AI SEO builds over time. The right combination depends on where your biggest gaps are." },
-  { question: "Does GrowSmallBiz work with local service businesses only?", answer: "Yes. GrowSmallBiz works exclusively with local service businesses — those that serve customers in a defined geographic market. That focus is intentional. The systems, strategies, and frameworks are all built around how local service businesses grow, which means the work is more targeted and the results are more directly applicable than what you would get from a generalist agency." },
-  { question: "Can GrowSmallBiz help with lead follow-up and CRM automation?", answer: "Yes — and it is one of the areas where most local businesses have the most immediate opportunity. The CRM Automation service builds automated follow-up systems that respond to new leads instantly, send missed call text-back messages, run nurture workflows, and manage your pipeline from lead to booked appointment. Most businesses are surprised by how many leads they were losing simply due to slow or inconsistent follow-up. Getting that fixed often produces visible results quickly, regardless of what other services are in place." },
+  { question: "What services does GrowSmallBiz offer?", answer: "GrowSmallBiz offers a complete digital marketing system for local service businesses, organized into two groups. The Core Growth System includes website design, managed AI SEO, paid advertising (Google and Meta), and CRM marketing automation. Growth Acceleration Services include social media campaigns, AI lead generation, and LinkedIn outreach automation for B2B-adjacent service businesses.\n\nEach service is designed to work as part of a connected system — not as a standalone tactic. The website converts the traffic that SEO and ads bring in. CRM automation follows up with every lead the website captures. Every piece feeds the same conversion path.\n\nThe right combination depends on where your business currently stands. A new business with no digital presence starts with a different foundation than an established business that needs more lead flow." },
+  { question: "Do I need all services at once?", answer: "No — most businesses start with two or three services and expand as results build. The most common starting combination is Website Design plus Managed AI SEO plus CRM Automation — which connects visibility, conversion, and follow-up in one foundation.\n\nIf you need leads faster than organic SEO allows, adding Paid Ads alongside SEO creates both immediate traffic and long-term organic momentum simultaneously.\n\nThe strategy call is designed to identify which combination creates the most impact for your specific situation — not to sell you more than you need." },
+  { question: "What is the difference between Core Growth System and Growth Acceleration Services?", answer: "The Core Growth System is the foundation every local service business needs to get found online, capture leads, and follow up consistently. It includes website design, SEO, paid advertising, and CRM automation — the services that directly generate and convert new business opportunities.\n\nGrowth Acceleration Services layer on top of a working core system to expand reach and create more top-of-funnel volume. Social media campaigns build brand visibility. AI lead generation surfaces new prospecting opportunities. LinkedIn outreach automation is for businesses that sell to other businesses.\n\nThe simplest way to think about it: Core Growth System generates and captures leads. Growth Acceleration Services feed more people into that system." },
+  { question: "Which services are best for a new business?", answer: "For a business starting from scratch, the most important first step is a conversion-focused website paired with CRM automation. A professional website establishes credibility and gives every marketing channel a place to send traffic. CRM automation ensures every lead gets followed up with immediately.\n\nOnce the foundation is in place, Managed AI SEO builds organic visibility over 3–6 months. If you need leads before SEO develops momentum, Google Ads or Google Local Services Ads create immediate traffic from day one.\n\nThe Starter Growth System package is designed specifically for this stage: website plus CRM automation as the foundation, with SEO and ads added as the business grows." },
+  { question: "Which services are best if I already have a website?", answer: "If your website exists but is not generating consistent leads, the issue is usually one of three things: low traffic, poor conversion, or slow follow-up.\n\nLow traffic means your site is not visible enough in search results — Managed AI SEO or Paid Ads addresses this. Poor conversion means visitors arrive but do not contact you — a conversion audit and website improvements fix this. Slow follow-up means leads come in but go cold — CRM automation with AI receptionist integration addresses this.\n\nMost established businesses with an existing website benefit most from Managed AI SEO plus CRM Automation — building the organic visibility they are missing while ensuring every lead gets an immediate, automated response." },
+  { question: "Does GrowSmallBiz work with local service businesses only?", answer: "Yes — GrowSmallBiz focuses exclusively on local service businesses. This means businesses that serve customers in a defined geographic area and rely on phone calls, form submissions, and appointments to generate revenue.\n\nThis includes home service contractors (HVAC, plumbing, electrical, roofing, landscaping, cleaning, remodeling), health and wellness practices (chiropractic, med spa, dental), and professional services (photographers, real estate agents).\n\nThis specialization matters because local service business marketing requires a fundamentally different approach than e-commerce or SaaS. The conversion path, search intent, follow-up cadence, and local visibility requirements are all distinct — and GrowSmallBiz systems are built specifically for that context." },
+  { question: "Can GrowSmallBiz help with lead follow-up and CRM automation?", answer: "Yes — CRM and marketing automation is one of the four core services in the GrowSmallBiz system. The automation layer handles immediate lead response, multi-step follow-up sequences across email and SMS, missed-call text-back, appointment scheduling, review request workflows, and reactivation campaigns for lapsed customers.\n\nThe AI Receptionist component handles after-hours inquiries — answering calls, qualifying leads, and booking appointments before your team arrives in the morning.\n\nSpeed of response is the single biggest driver of lead conversion for local service businesses. The automation system ensures no lead waits more than five minutes for a response, regardless of when they reach out." },
+  { question: "How does AI SEO differ from regular SEO for local businesses?", answer: "Traditional SEO focuses on Google rankings through keyword optimization, backlinks, and technical improvements. AI SEO is built for the current search landscape, where ChatGPT, Gemini, Perplexity, and other AI platforms are actively recommending local businesses alongside traditional Google results.\n\nFor local service businesses, this means optimizing for AI citation eligibility — the structured content, entity definitions, and reputation signals that AI engines use to decide which businesses to recommend when someone asks \"what's the best HVAC company near me\" or \"which chiropractor handles auto accident cases in [city].\"\n\nGrowSmallBiz tracks citation share across 6 AI platforms monthly alongside traditional ranking metrics, so visibility across the full search landscape is measured and improved together." },
+  { question: "How long does it take to see results from digital marketing?", answer: "Timeline depends on which services are active. Paid ads — Google PPC, Google LSA, and Meta ads — generate traffic and leads within days of launching, with results improving as campaigns optimize over the first 30–60 days.\n\nManaged AI SEO builds momentum over 3–6 months for local and long-tail search terms. Competitive terms may take 6–12 months to reach top positions. The trade-off is that SEO compounds over time — unlike paid ads, which stop generating traffic the moment the budget stops.\n\nCRM automation delivers impact immediately upon setup. The first missed call that gets texted back within 60 seconds, the first lead that receives a nurture sequence instead of going cold, the first review request that goes out automatically — these often produce the fastest visible revenue impact regardless of channel." },
+  { question: "What makes GrowSmallBiz different from other local marketing agencies?", answer: "Three things distinguish GrowSmallBiz. First, it builds systems rather than running campaigns — every service works as part of a connected acquisition engine, not a standalone tactic with no accountability for the full result. Second, it works exclusively with local service businesses, which means strategies and automation are built around how local service businesses actually generate and convert leads — not adapted from enterprise or e-commerce templates. Third, AI is integrated at every stage: AI-powered SEO for both traditional and AI search platforms, AI receptionist for 24/7 lead capture, AI content systems for consistent quality, and AI-assisted lead generation — as operational infrastructure, not a marketing claim.\n\nThe 30+ years of Fortune 500 experience behind the strategy means every engagement is approached with enterprise-level rigor applied specifically to local business scale and budget." },
 ];
 
-/* ───────── Component ───────── */
+/* ───────── Components ───────── */
 
 const ServiceCardLarge = ({
   title,
@@ -245,6 +312,17 @@ const ServiceCardLarge = ({
 );
 
 const Services = () => {
+  const { strategySessionUrl } = useUtm();
+
+  const handleNavClick = (anchor: string) => {
+    if (anchor === "external") {
+      window.open(strategySessionUrl, "_blank", "noopener,noreferrer");
+      return;
+    }
+    const el = document.querySelector(anchor);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Head>
@@ -261,7 +339,7 @@ const Services = () => {
       />
       <Header />
       <main id="main-content">
-      {/* ─── SECTION 1: HERO ─── */}
+      {/* ─── HERO ─── */}
       <section className="hero-section">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -275,7 +353,7 @@ const Services = () => {
               <span>Full-Service Growth System</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight">
-              AI-Powered Growth System for{" "}
+              AI-Powered Digital Marketing Services for{" "}
               <span className="text-transparent bg-clip-text bg-gradient-primary">Local Service Businesses</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 mb-4 animate-fade-up max-w-3xl mx-auto leading-relaxed" style={{ animationDelay: "0.1s" }}>
@@ -283,19 +361,69 @@ const Services = () => {
             </p>
             <div className="flex justify-center pt-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <Button variant="hero" size="xl" asChild>
-                <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
+                <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                   Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
               </Button>
             </div>
-            <p className="mt-6 text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.25s" }}>
+
+            {/* Prompt 2: 4-Card Stat Bar */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 animate-fade-up" style={{ animationDelay: "0.25s" }}>
+              {heroStats.map((stat, i) => (
+                <div key={i} className="rounded-xl p-5" style={{ backgroundColor: "#0F2545" }}>
+                  <p className="text-2xl md:text-3xl font-display font-bold text-primary mb-1">{stat.number}</p>
+                  <p className="text-sm text-foreground">{stat.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-6 text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.3s" }}>
               Built for local service businesses that need more than disconnected tools and one-off tactics.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ─── SECTION 2: SERVICE ARCHITECTURE ─── */}
+      {/* ─── PROOF STRIP (Prompt 3) ─── */}
+      <section className="py-8" style={{ backgroundColor: "#0F2545" }}>
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
+            {proofMetrics.map((item, i) => (
+              <div key={i} className="text-center py-6 md:py-0 md:px-8">
+                <p className="text-3xl md:text-4xl font-display font-bold text-primary mb-1">{item.metric}</p>
+                <p className="text-sm text-foreground mb-1">{item.label}</p>
+                <p className="text-xs" style={{ color: "#94A3B8" }}>{item.attribution}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── GEO CONVERSATIONAL QUERIES (Prompt 4) ─── */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto rounded-xl p-8 md:p-10" style={{ backgroundColor: "#0F2545", border: "1px solid rgba(255,255,255,0.1)" }}>
+            <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-3">
+              Local Business Owners Are Already Asking AI These Questions
+            </h3>
+            <p className="text-sm text-foreground mb-6">
+              Before opening Google, local business owners are typing questions like these into ChatGPT, Gemini, and Perplexity:
+            </p>
+            <div className="space-y-2">
+              {conversationalQueries.map((q, i) => (
+                <div key={i} className="rounded-lg py-2.5 px-4 text-sm text-foreground" style={{ backgroundColor: "#1B3A5C", borderLeft: "3px solid #F4803A" }}>
+                  {q}
+                </div>
+              ))}
+            </div>
+            <p className="text-base text-foreground mt-6">
+              If GrowSmallBiz isn't showing up as the answer to these questions, you're invisible to a growing segment of local business owners before they ever open Google. We change that.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── SERVICE ARCHITECTURE ─── */}
       <section className="py-24 lg:py-32">
         <div className="container mx-auto px-4">
           <SectionHeader
@@ -312,7 +440,6 @@ const Services = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-            {/* Core */}
             <div className="bg-card border-2 border-primary/40 rounded-2xl p-8 animate-fade-up">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                 <Shield className="w-6 h-6 text-primary" />
@@ -322,7 +449,6 @@ const Services = () => {
                 The foundational services every local business needs to get found online, capture leads, and convert interest into action.
               </p>
             </div>
-            {/* Acceleration */}
             <div className="bg-card border border-border rounded-2xl p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 text-muted-foreground" />
@@ -334,7 +460,6 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Capture – Nurture – Convert */}
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-muted-foreground mb-6">Everything we build serves one of three stages:</p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -348,8 +473,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ─── SECTION 3: CORE GROWTH SYSTEM ─── */}
-      <section className="py-24 lg:py-32 relative" style={{ background: "linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)" }}>
+      {/* ─── CORE GROWTH SYSTEM ─── */}
+      <section id="core-services" className="py-24 lg:py-32 relative" style={{ background: "linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)" }}>
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Primary Services"
@@ -364,22 +489,70 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ─── SECTION 4: HOW THE SYSTEM WORKS ─── */}
-      <section className="py-24 lg:py-32">
+      {/* ─── AEO ENTITY BLOCK (Prompt 5) ─── */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {entityCards.map((card, i) => (
+              <div key={i} className="rounded-xl p-6" style={{ backgroundColor: "#1B3A5C", border: "1px solid rgba(255,255,255,0.08)" }}>
+                <span className="inline-block px-3 py-1 rounded-lg text-xs font-semibold uppercase tracking-wider text-white mb-3" style={{ backgroundColor: "#2BA3A0", fontSize: "11px" }}>
+                  {card.badge}
+                </span>
+                <h4 className="text-base font-display font-semibold text-foreground mb-2">{card.title}</h4>
+                <p className="text-sm text-foreground/80 leading-relaxed">{card.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── ON THIS PAGE NAV (Prompt 6) ─── */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">QUICK NAVIGATION</p>
+            <h3 className="text-xl font-display font-bold text-foreground mb-8">On This Page</h3>
+            <div className="grid grid-cols-3 gap-3 max-w-3xl mx-auto">
+              {navTiles.map((tile, i) => (
+                <button
+                  key={i}
+                  onClick={() => handleNavClick(tile.anchor)}
+                  className="flex items-center gap-2 px-4 py-3 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors text-left"
+                >
+                  <tile.icon className="w-4 h-4 text-primary shrink-0" />
+                  <span className="text-sm text-foreground font-medium">{tile.label}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── HOW THE SYSTEM WORKS (Prompt 7 — Step Flow) ─── */}
+      <section id="how-it-works" className="py-24 lg:py-32">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="The Framework"
             title="How the System Works"
             description="GrowSmallBiz does not sell isolated tactics. Every service is part of a connected system designed to move prospects through the full growth journey."
           />
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
-            {systemStages.map((stage, si) => (
-              <div key={stage.label} className="feature-card-teal rounded-2xl overflow-hidden animate-fade-up" style={{ animationDelay: `${si * 0.1}s` }}>
-                <div className={`h-2 bg-gradient-to-r ${stage.color}`} />
-                <div className="p-8">
-                  <h3 className="text-2xl font-display font-bold text-foreground mb-6">{stage.label}</h3>
-                  <ul className="space-y-5">
-                    {stage.items.map((item, ii) => (
+          <div className="max-w-6xl mx-auto mb-16">
+            <div className="grid md:grid-cols-3 gap-0 relative">
+              {/* Connecting line */}
+              <div className="hidden md:block absolute top-10 left-[16.67%] right-[16.67%] h-0.5 bg-gradient-to-r from-primary via-muted-foreground/30 to-primary" />
+
+              {systemSteps.map((step, si) => (
+                <div key={step.title} className="relative flex flex-col items-center text-center px-6 animate-fade-up" style={{ animationDelay: `${si * 0.15}s` }}>
+                  {/* Numbered circle */}
+                  <div className="relative z-10 w-20 h-20 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: "#F4803A" }}>
+                    <span className="text-2xl font-display font-bold text-white">{step.number}</span>
+                  </div>
+                  <h3 className="text-2xl font-display font-bold text-foreground mb-2">{step.title}</h3>
+                  <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold mb-6" style={{ backgroundColor: "rgba(244,128,58,0.15)", color: "#F4803A" }}>
+                    {step.tag}
+                  </span>
+                  <ul className="space-y-4 text-left w-full">
+                    {step.items.map((item, ii) => (
                       <li key={ii}>
                         <p className="font-semibold text-foreground text-sm">{item.name}</p>
                         <p className="text-muted-foreground text-sm">{item.desc}</p>
@@ -387,8 +560,8 @@ const Services = () => {
                     ))}
                   </ul>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           <div className="max-w-3xl mx-auto text-center space-y-8">
@@ -396,7 +569,7 @@ const Services = () => {
               The system works better when the pieces are connected. Great Managed AI SEO loses its value if leads land on a page that does not convert. A strong website means nothing if there is no follow-up. When each element is built to work with the others, results compound.
             </p>
             <Button variant="hero" size="xl" asChild>
-              <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
+              <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                 Schedule Strategy Call <ArrowRight className="w-5 h-5 ml-2" />
               </a>
             </Button>
@@ -404,7 +577,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ─── SECTION 5: GROWTH ACCELERATION SERVICES ─── */}
+      {/* ─── GROWTH ACCELERATION SERVICES ─── */}
       <section className="py-24 lg:py-32 relative" style={{ background: "linear-gradient(180deg, hsl(210 50% 10%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 10%) 100%)" }}>
         <div className="container mx-auto px-4">
           <SectionHeader
@@ -440,7 +613,7 @@ const Services = () => {
                       {s.cta} <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   ) : (
-                    <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
+                    <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                       {s.cta} <ArrowRight className="w-4 h-4 ml-2" />
                     </a>
                   )}
@@ -451,8 +624,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ─── SECTION 6: GROWTH SYSTEM PACKAGES ─── */}
-      <section className="py-24 lg:py-32">
+      {/* ─── GROWTH SYSTEM PACKAGES ─── */}
+      <section id="growth-packages" className="py-24 lg:py-32">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Growth Systems"
@@ -481,7 +654,7 @@ const Services = () => {
                 <p className="text-sm text-foreground font-semibold mb-5">{pkg.includes}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-8 flex-1">{pkg.body}</p>
                 <Button variant={pkg.popular ? "hero" : "outline"} size="lg" asChild className="w-full">
-                  <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer">
+                  <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
                     Schedule Strategy Call <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                 </Button>
@@ -494,8 +667,16 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ─── SECTION 7: INDUSTRIES ─── */}
-      <section className="py-24 lg:py-32 relative" style={{ background: "linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)" }}>
+      {/* ─── MID-PAGE SUBRATA CTA (Prompt 8) ─── */}
+      <PersonCTA
+        title="Ready to See Which Growth System Is Right for Your Business?"
+        description="Book a free strategy call. We'll review your current marketing gaps and identify the highest-impact starting point for your specific business."
+        buttonHref={strategySessionUrl}
+        buttonText="Schedule Strategy Call"
+      />
+
+      {/* ─── INDUSTRIES ─── */}
+      <section id="who-we-serve" className="py-24 lg:py-32 relative" style={{ background: "linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)" }}>
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Who We Serve"
@@ -522,24 +703,20 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ─── SECTION 8: WHY GROWSMALLBIZ ─── */}
-      <section className="py-24 lg:py-32">
+      {/* ─── WHY GROWSMALLBIZ (Prompt 9 — Icon Card Grid) ─── */}
+      <section id="why-growsmallbiz" className="py-24 lg:py-32">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="Why Us"
             title="Why Businesses Choose"
             titleHighlight="GrowSmallBiz"
           />
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
-            {whyBlocks.map((block, i) => (
-              <div key={i} className="flex gap-5 animate-fade-up" style={{ animationDelay: `${i * 0.08}s` }}>
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                  <block.icon className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">{block.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{block.body}</p>
-                </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+            {whyCards.map((card, i) => (
+              <div key={i} className="rounded-xl p-6 animate-fade-up" style={{ backgroundColor: "#1B3A5C", borderRadius: "12px", animationDelay: `${i * 0.08}s` }}>
+                <card.icon className="w-8 h-8 text-primary mb-4" />
+                <h3 className="text-[15px] font-display font-semibold text-foreground mb-2">{card.title}</h3>
+                <p className="text-[13px] text-foreground/80 leading-relaxed">{card.body}</p>
               </div>
             ))}
           </div>
@@ -551,11 +728,24 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ─── SECTION 9: FAQ ─── */}
-      <FAQSection title="Frequently Asked Questions" faqs={faqs} />
+      {/* ─── FAQ (Prompts 10 & 11) ─── */}
+      <div id="faqs">
+        <FAQSection
+          title="Frequently Asked Questions"
+          faqs={faqs}
+          contactCTA={{
+            ...baseContactCTA,
+            title: "Have more questions about growing your local service business?",
+            description: "Get a personalized review of your current marketing setup and a clear recommendation for where to start. No obligation.",
+            tagline: "— Subrata Guha, Founder, GrowSmallBiz",
+          }}
+        />
+      </div>
 
-      {/* ─── SECTION 10: CONSULTATION FORM ─── */}
-      <ConsultationFormSection />
+      {/* ─── CONSULTATION FORM ─── */}
+      <div id="consultation">
+        <ConsultationFormSection />
+      </div>
       </main>
       <Footer />
     </>
