@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import type { NicheConfig } from "../NicheConfig";
 
 interface HeroSectionProps {
@@ -49,9 +49,9 @@ export const HeroSection = ({ config, strategySessionUrl }: HeroSectionProps) =>
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
-            <Button variant="outline" size="lg" asChild>
-              <a href={config.secondaryCtaAnchor}>
-                {config.secondaryCtaLabel}
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href="tel:+19258863724">
+                <Phone className="w-5 h-5 mr-2" /> Call +1 (925) 886-3724
               </a>
             </Button>
           </div>

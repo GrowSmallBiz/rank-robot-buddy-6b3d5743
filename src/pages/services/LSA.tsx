@@ -128,8 +128,8 @@ const LSA = () => {
                 </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="#how-lsa-works">
-                  See How LSA Management Works
+                <a href="tel:+19258863724">
+                  <Phone className="w-5 h-5 mr-2" /> Call +1 (925) 886-3724
                 </a>
               </Button>
             </div>

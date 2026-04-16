@@ -39,6 +39,7 @@ import {
   Target,
   LayoutDashboard,
   Award,
+  Phone,
 } from "lucide-react";
 import { Head } from "vite-react-ssg";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
@@ -243,11 +244,11 @@ const Index = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
-              <Link to="#services">
-                <Button variant="heroOutline" size="xl">
-                  Explore Services
-                </Button>
-              </Link>
+              <Button variant="heroOutline" size="xl" asChild>
+                <a href="tel:+19258863724">
+                  <Phone className="w-5 h-5 mr-2" /> Call +1 (925) 886-3724
+                </a>
+              </Button>
             </div>
 
             <p className="text-sm text-muted-foreground animate-fade-up-safe" style={{ animationDelay: "0.5s" }}>

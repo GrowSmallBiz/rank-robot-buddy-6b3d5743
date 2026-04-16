@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, LucideIcon } from "lucide-react";
+import { ArrowRight, Phone, LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { AnimatedStat } from "./AnimatedStat";
 
@@ -136,7 +136,11 @@ export const ServiceHero = ({
             style={{ animationDelay: "0.2s" }}
           >
             {renderCTA(primaryCTA, true)}
-            {secondaryCTA && renderCTA(secondaryCTA, false)}
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href="tel:+19258863724">
+                <Phone className="w-5 h-5 mr-2" /> Call +1 (925) 886-3724
+              </a>
+            </Button>
           </div>
 
           <p
