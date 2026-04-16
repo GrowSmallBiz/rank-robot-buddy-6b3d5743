@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { ServiceHero } from "@/components/services/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import seoAgencyHero from "@/assets/managed-ai-seo-hero-bg.webp";
