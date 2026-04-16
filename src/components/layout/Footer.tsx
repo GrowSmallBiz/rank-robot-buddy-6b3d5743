@@ -27,14 +27,7 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPinned size={16} className="mt-0.5 shrink-0 text-primary" />
-                <a
-                  href="https://maps.app.goo.gl/oSLNhYTJwXn4ixuX8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
-                  52 Antelope CT, Danville, CA 94506
-                </a>
+                <span>52 Antelope CT, Danville, CA 94506</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="shrink-0 text-primary" />
