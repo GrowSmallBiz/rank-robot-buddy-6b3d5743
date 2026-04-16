@@ -309,17 +309,23 @@ const WebsiteDesign = () => {
                   <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
                     <Clock className="h-5 w-5 text-primary" />
                   </div>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else.
-                  </p>
+                  <div>
+                    <h4 className="text-lg font-bold text-foreground mb-2">8 Seconds to Win or Lose a Local Lead</h4>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else.
+                    </p>
+                  </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
                     <TrendingUp className="h-5 w-5 text-primary" />
                   </div>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them.
-                  </p>
+                  <div>
+                    <h4 className="text-lg font-bold text-foreground mb-2">Your Website Is Your Highest-Leverage Small Business Sales Asset</h4>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="space-y-6">
@@ -327,19 +333,48 @@ const WebsiteDesign = () => {
                   <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
                     <Wrench className="h-5 w-5 text-primary" />
                   </div>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you.
-                  </p>
+                  <div>
+                    <h4 className="text-lg font-bold text-foreground mb-2">Built for Service Businesses — Not Templates, Not Guesswork</h4>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you.
+                    </p>
+                  </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
                     <Layers className="h-5 w-5 text-primary" />
                   </div>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call.
-                  </p>
+                  <div>
+                    <h4 className="text-lg font-bold text-foreground mb-2">The Conversion Foundation Your Entire Growth Strategy Runs Through</h4>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call.
+                    </p>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TOPICAL AUTHORITY BLOCK */}
+      <section className="py-20 lg:py-28 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 text-center">
+              What Small Business Website Design Actually Means for a{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Service-Based Company</span>
+            </h2>
+            <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+              <p>
+                Small business website design is not the same as e-commerce website design or enterprise web development — and the difference matters more than most business owners realize. E-commerce sites are optimized for product browsing, cart conversion, and transaction volume. Enterprise sites are built for brand positioning and investor relations. Small business website design, especially for service-based companies, is built around a completely different objective: generating qualified local leads. That means phone calls, appointment bookings, quote requests, and form submissions from real prospective customers in your market.
+              </p>
+              <p>
+                Service businesses face a conversion challenge that product businesses don't. A customer buying a product can evaluate it directly — they see it, read reviews, and add it to a cart. A customer hiring a service is buying something they cannot see before they commit: your reliability, your expertise, your professionalism. The entire job of your website is to make that invisible thing feel visible and trustworthy enough to prompt a call. That requires a fundamentally different approach to layout, copy, trust signals, and calls to action than a retail or template-based website will ever produce.
+              </p>
+              <p>
+                A well-executed small business website design for a service company does five things consistently: it communicates what you do and who you serve within the first few seconds of arrival; it establishes credibility through real, specific proof — reviews, credentials, licensing, years in business; it guides visitors toward a single clear action through strategic placement of calls to action; it performs as well on a mobile phone at 9pm as it does on a desktop browser at noon; and it is built on a technical foundation that supports your SEO investment from day one. When all five are working together, the website stops being a cost and starts being your most reliable lead generation channel.
+              </p>
             </div>
           </div>
         </div>
@@ -467,9 +502,17 @@ const WebsiteDesign = () => {
 
               <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
                 <h3 className="text-xl font-bold text-foreground mb-4">Why GrowSmallBiz:</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Most web design agencies hand you a finished site and move on. GrowSmallBiz works exclusively with local service businesses — which means we're not learning your industry on your dime. We know what makes a roofing lead different from a med spa inquiry. We know what trust signals matter to a patient choosing a specialist versus a homeowner vetting a contractor. That specificity is what separates a website that looks right from one that actually performs — and it's built into every engagement we take on.
-                </p>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    GrowSmallBiz was built on over 30 years of hands-on experience in sales, marketing, and digital transformation — including Fortune 500 engagements across supply chain, revenue operations, and go-to-market strategy. That background informs everything about how we approach a local service business website: with the same strategic rigor applied to enterprise growth, scaled and focused on what actually moves the needle for a contractor, a med spa, a dental practice, or a professional services firm.
+                  </p>
+                  <p>
+                    We work exclusively with local service businesses — which means we are not learning your industry on your dime. We know what makes a homeowner choose one roofing contractor over another. We know what a patient needs to see before booking an aesthetic treatment. We know what trust signals matter to someone vetting a financial advisor versus a plumber. That specificity is not learned from a course — it is earned from building and optimizing websites, SEO campaigns, and lead generation systems for service businesses across the San Francisco Bay Area and nationally.
+                  </p>
+                  <p>
+                    Most web design agencies hand you a finished site and move on. We build websites as the foundation of a broader digital growth system — and we stay in the engagement. If you are looking for a partner who understands your market, has built in your verticals, and brings strategic depth alongside technical execution, the strategy call is where that conversation starts.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
