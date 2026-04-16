@@ -153,11 +153,6 @@ const industries = [
   { icon: Building, title: "Real Estate Agents & Brokers", description: "Buyers and sellers research extensively before choosing an agent. Managed AI SEO builds your local search presence across the neighborhoods and transaction types you specialize in — attracting motivated clients already in the market." },
 ];
 
-const caseStudies = [
-  { industry: "HVAC / Home Services", challenge: "Near-zero organic visibility in a competitive metro market; relying entirely on paid ads with no organic fallback.", strategy: "Full 8-pillar buildout: technical audit and cleanup, Google Business Profile optimization, service area page development, citation consolidation, and ongoing local authority building.", outcome: "Placeholder — replace with verified ranking improvements, traffic growth, lead volume changes, and timeline." },
-  { industry: "Roofing / Home Remodeling", challenge: "Inconsistent NAP citations, weak topical authority, no presence in Google's local pack for primary service keywords.", strategy: "Citation cleanup, local landing page development for service areas, topical authority content build, and link acquisition from local and industry sources.", outcome: "Placeholder — replace with verified local pack rankings, organic traffic lift, lead quality changes, and timeline." },
-  { industry: "Dental / Med Spa / Local Professional Service", challenge: "New practice location with no established domain authority, competing against well-established local providers.", strategy: "Structured onboarding audit, prioritized technical and on-page foundation work, AEO content strategy, GBP optimization, and authority building through local and niche-relevant sources.", outcome: "Placeholder — replace with verified ranking timeline, patient/client inquiry growth, and visibility benchmarks." },
-];
 
 const whyGSBItems = [
   { icon: Target, title: "Built for Local Service Businesses", description: "We do not serve e-commerce brands, SaaS companies, or national retailers. Every service and process in our system is designed for local service businesses competing in defined geographic markets." },
@@ -547,42 +542,6 @@ const ManagedAISEO = () => {
           </div>
         </section>
 
-        {/* SECTION 8 — RESULTS IN ACTION */}
-        <section className="py-20 lg:py-28 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="PROOF"
-              title="Results in"
-              titleHighlight="Action"
-            />
-            <p className="text-center text-sm text-muted-foreground -mt-10 mb-12 italic">
-              Case study placeholders shown below. Verified client results will be inserted before final public launch.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {caseStudies.map((cs, index) => (
-                <div key={index} className="bg-card border-2 border-border rounded-2xl overflow-hidden animate-fade-up hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)]" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="h-1 bg-gradient-to-r from-primary to-accent" />
-                  <div className="p-8 space-y-5">
-                    <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary">{cs.industry}</span>
-                    <div>
-                      <h4 className="text-sm font-semibold text-foreground mb-1">Challenge</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{cs.challenge}</p>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-foreground mb-1">Strategy</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{cs.strategy}</p>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-semibold text-foreground mb-1">Outcome</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed italic">{cs.outcome}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* SECTION 9 — WHY GROWSMALLBIZ */}
         <WhyChooseSection
