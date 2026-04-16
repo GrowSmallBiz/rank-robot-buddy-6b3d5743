@@ -7,7 +7,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import seoAgencyHero from "@/assets/seo-agency/seo-agency-hero.jpg";
+import seoAgencyHero from "@/assets/managed-ai-seo-hero-bg.webp";
 import {
   ArrowRight,
   Search,
