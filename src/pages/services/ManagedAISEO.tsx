@@ -3,608 +3,770 @@ import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ServiceHero } from "@/components/services/ServiceHero";
-import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
-import { CardCTA } from "@/components/services";
-import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
-import { GlowCard } from "@/components/ui/glow-card";
 import { Button } from "@/components/ui/button";
-import { baseContactCTA } from "@/config/contactCTA";
 import { Link } from "react-router-dom";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import seoDashboardMetrics from "@/assets/seo-dashboard-metrics.webp";
-import managedAiSeoHeroBg from "@/assets/managed-ai-seo-hero-bg.webp";
-import pillarTechnicalSeo from "@/assets/pillar-technical-seo.webp";
-import pillarOnPageSeo from "@/assets/pillar-on-page-seo.webp";
-import pillarLocalSeo from "@/assets/pillar-local-seo.webp";
-import pillarTopicalAuthority from "@/assets/pillar-topical-authority.webp";
-import pillarAeo from "@/assets/pillar-aeo.webp";
-import pillarGeo from "@/assets/pillar-geo.webp";
-import pillarLinkBuilding from "@/assets/pillar-link-building.webp";
-import pillarReporting from "@/assets/pillar-reporting.webp";
+import seoAgencyHero from "@/assets/seo-agency/seo-agency-hero.jpg";
 import {
-  Bot,
   ArrowRight,
-  Code,
-  FileText,
-  MapPin,
-  BookOpen,
-  MessageCircleQuestion,
-  Globe,
-  Link2,
-  BarChart3,
-  Zap,
-  Target,
-  RefreshCw,
-  Layers,
-  CheckCircle2,
-  Home,
-  Heart,
-  Sparkles,
-  Scale,
-  Building,
-  ClipboardList,
   Search,
-  Settings,
-  Rocket,
-  LineChart,
-  CalendarDays,
-  Shield,
-  Users,
-  Eye,
-  Puzzle,
+  MapPin,
+  Sparkles,
+  Phone,
+  AlertCircle,
+  Target,
+  Link as LinkIcon,
+  Globe,
+  FileText,
+  Wrench,
+  Heart,
+  Home,
+  UtensilsCrossed,
+  Camera,
+  CheckCircle2,
 } from "lucide-react";
 
-const PRIMARY_CTA_BASE = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
-const SECONDARY_CTA_BASE = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page";
+// -----------------------------------------------------------------------------
+// Data
+// -----------------------------------------------------------------------------
 
-const pillarImages = [
-  pillarTechnicalSeo,
-  pillarOnPageSeo,
-  pillarLocalSeo,
-  pillarTopicalAuthority,
-  pillarAeo,
-  pillarGeo,
-  pillarLinkBuilding,
-  pillarReporting,
+const trustBar = [
+  { icon: Search, label: "Managed AI SEO", desc: "Every signal Google uses, every week" },
+  { icon: MapPin, label: "Local Pack Dominance", desc: "Rank in the 3-pack where calls happen" },
+  { icon: Sparkles, label: "AEO + GEO Ready", desc: "Found in ChatGPT, Perplexity, Gemini" },
+  { icon: Phone, label: "Leads, Not Just Traffic", desc: "Pipeline metrics, not vanity stats" },
+];
+
+const problemCards = [
+  {
+    title: "Traffic without conversion infrastructure",
+    body: "An SEO agency drives visitors to a site that wasn't built to convert them. The leads leak out and nobody tracks where.",
+  },
+  {
+    title: "Google Business Profile on autopilot",
+    body: "The GBP listing is claimed once and forgotten. Meanwhile, 64% of local searches convert through GBP — not the website.",
+  },
+  {
+    title: "Rankings in a vacuum",
+    body: "The agency reports on a keyword that ranks #4 — but the keyword has no search volume and no buyer intent. Progress on paper, silence on the phone.",
+  },
+  {
+    title: "No answer engine presence",
+    body: "Customers are asking ChatGPT, Perplexity, and Google AI Overviews for recommendations. Traditional SEO never optimized for that — and the business is invisible to AI.",
+  },
 ];
 
 const pillars = [
   {
-    icon: Code,
-    title: "Technical SEO",
-    description: "If your website's foundation is broken, nothing else in your SEO program will perform. Technical SEO is the infrastructure layer — ensuring search engines can properly access, crawl, index, and understand your site. GrowSmallBiz conducts ongoing technical audits using AI-assisted tools to identify and resolve issues before they suppress your rankings.",
-    covers: ["Site health audits", "Crawlability", "Indexation", "Page speed / Core Web Vitals", "Schema markup", "Internal site structure", "Technical issue cleanup", "Mobile usability", "Canonicalization and duplicate-content controls"],
-    link: "/services/seo-agency/technical-seo/",
-  },
-  {
-    icon: FileText,
-    title: "On-Page SEO",
-    description: "On-page SEO is how your website communicates relevance to both search engines and real people. GrowSmallBiz optimizes your pages for keyword alignment, search intent, and conversion — improving how they are structured, how they communicate value, and how they guide visitors toward action.",
-    covers: ["Title tags", "Meta descriptions", "Header structure", "Keyword-to-page alignment", "Service page optimization", "Internal linking", "Image optimization", "Semantic content improvements", "Conversion-focused page enhancements"],
-    link: "/services/seo-agency/on-page-seo/",
+    icon: Target,
+    number: "PILLAR 01",
+    title: "Keyword Strategy",
+    desc: "Extensive keyword research with full competitive analysis. We find the queries your real buyers type — not the ones agencies chase for bragging rights.",
   },
   {
     icon: MapPin,
-    title: "Local SEO",
-    description: "For local service businesses, local SEO is the most direct path to new customers. GrowSmallBiz manages the full local SEO ecosystem: your Google Business Profile, local citations, service area pages, and the trust signals that establish your business as the credible, established provider in your market.",
-    covers: ["Google Business Profile optimization", "Citation building", "Citation cleanup / NAP consistency", "Local landing pages", "Local relevance optimization", "Service area optimization", "Local trust signals", "Review signal support"],
-    link: "/services/seo-agency/local-seo/",
+    number: "PILLAR 02",
+    title: "Google Business Profile",
+    desc: "Top-to-bottom GBP optimization, weekly posting, category refinement, photo strategy. This is where 60%+ of local conversions happen.",
   },
   {
-    icon: BookOpen,
-    title: "Topical Authority",
-    description: "Google rewards websites that demonstrate genuine depth and expertise in their subject area. GrowSmallBiz develops and executes a topical authority strategy that positions your website as the definitive local resource in your category.",
-    covers: ["Topic cluster planning", "Service topic expansion", "Supporting content strategy", "FAQ content strategy", "Entity/topic coverage", "Blog/topic ecosystem planning", "Content depth and breadth for authority", "Content mapping around buyer intent"],
-  },
-  {
-    icon: MessageCircleQuestion,
-    title: "AEO (Answer Engine Optimization)",
-    description: "Search behavior has shifted. People ask questions and expect direct answers — in featured snippets, in People Also Ask results, and increasingly through AI-assisted search interfaces. GrowSmallBiz structures your content to be surfaced as the answer.",
-    covers: ["FAQ optimization", "Question-and-answer content structure", "Featured snippet targeting", "Direct-answer formatting", "Semantic answer blocks", "Structured response formatting", "Content optimized for answer engines and AI assistants"],
-    link: "/services/seo-agency/aeo/",
+    icon: LinkIcon,
+    number: "PILLAR 03",
+    title: "Local Citations",
+    desc: "Niche-relevant and geo-relevant citations built across the directories that actually move the map pack. Consistency at scale.",
   },
   {
     icon: Globe,
-    title: "GEO / AI-Search Visibility",
-    description: "AI-driven search is no longer a future consideration — it is here. Generative Engine Optimization (GEO) is the discipline of ensuring your business is visible and credible within AI-driven search environments. GrowSmallBiz structures your content, entities, and online presence so AI search systems can accurately identify what you do, where you operate, and why you are a trusted choice.",
-    covers: ["AI-search readiness", "Entity clarity", "Structured content for AI discovery", "Brand/entity reinforcement", "Citation-worthy content structure", "Content formatting for LLM discovery", "Visibility across emerging AI-driven search environments"],
-    link: "/services/seo-agency/geo/",
+    number: "PILLAR 04",
+    title: "On-Site Location Signals",
+    desc: "Schema markup, location entities, internal linking, service-area landing pages. Every signal Google needs to trust the geography.",
   },
   {
-    icon: Link2,
-    title: "Authority Building, Link Building, Press Releases & Brand Mentions",
-    description: "Your rankings reflect how the broader internet perceives your authority. GrowSmallBiz builds off-site authority through a deliberate, quality-first approach — earning links and mentions from local sources, niche-relevant directories, industry associations, chambers of commerce, and digital PR.",
-    covers: ["Backlink strategy", "Link acquisition", "Local authority links", "Niche-relevant links", "Partner / association / chamber links", "Brand mentions", "Digital PR", "Press release strategy", "Press release distribution support", "Off-site authority signals"],
-    link: "/services/seo-agency/authority-building/",
+    icon: FileText,
+    number: "PILLAR 05",
+    title: "Content Engine",
+    desc: "Monthly blogs mapped to the content silo, supplementary topic coverage, and ongoing relevance signals. Google rewards sites that ship.",
+  },
+];
+
+const caseStudies = [
+  {
+    label: "HOME SERVICE CONTRACTORS",
+    attribution: "HVAC & Plumbing — Fairbanks, AK",
+    accent: "teal" as const,
+    summary:
+      "An HVAC and plumbing contractor needed leads fast. Most of their category's calls come from Google Business Profile, so we rebuilt the GBP from the ground up, layered niche and local citations, optimized on-site for location signals, and posted weekly to feed Google fresh engagement data. Within months, the phones didn't stop ringing.",
+    stats: [
+      { value: "+1,395%", label: "Phone Calls From GBP" },
+      { value: "+594%", label: "Website Visits From GBP" },
+      { value: "#2", label: "Boiler Installation (from #45)" },
+      { value: "#1", label: "Plumbing Fairbanks (from #13)" },
+    ],
+    wins: [
+      "boiler installation climbed 43 positions — from #45 to #2",
+      "plumbing fairbanks moved 12 positions into the #1 spot",
+      "plumber fairbanks moved 12 positions into the #2 spot",
+      "furnace repair fairbanks ak improved 12 positions",
+      "heating system repair climbed 8 positions to #5",
+    ],
   },
   {
-    icon: BarChart3,
-    title: "Monthly Optimization & Reporting",
-    description: "SEO without visibility into what is actually happening is not a service — it is a black box. Every month, GrowSmallBiz delivers a clear, actionable performance review covering your rankings, local visibility, page-level improvements, and strategic recommendations for the period ahead.",
-    covers: ["Monthly performance reviews", "Ranking and visibility tracking", "Local visibility monitoring", "Page-level optimization updates", "Ongoing technical adjustments", "Ongoing content refinement", "Strategic recommendations", "Reporting dashboards / summaries"],
+    label: "ROOFING & HOME REMODELING",
+    attribution: "Roofing & Hail Restoration — Florida",
+    accent: "orange" as const,
+    summary:
+      "A roofing and hail restoration company wanted to grow their commercial roofing book — their most profitable service line. We optimized on-page elements, produced localized content for every service area, and scaled their local presence. Six months later, the qualified-lead conversion rate climbed sharply and high-volume commercial keywords moved from obscurity to the front page.",
+    stats: [
+      { value: "+26.79%", label: "Organic Conversions (6 mo.)" },
+      { value: "+127%", label: "GBP Views" },
+      { value: "+76%", label: "GBP Searches" },
+      { value: "+99 pos.", label: "Hail Damage Roof" },
+    ],
+    wins: [
+      "hail damage roof climbed 99 positions (6,600 monthly searches)",
+      "roof tarping gained 97 positions (5,400 monthly searches)",
+      "siding installation gained 93 positions (6,600 monthly searches)",
+      "roof installation gained 90 positions (6,600 monthly searches)",
+      "metal roof installation gained 47 positions (12,100 monthly searches)",
+    ],
+  },
+  {
+    label: "HEALTH & WELLNESS",
+    attribution: "Med Spa — San Gabriel, CA",
+    accent: "navy" as const,
+    summary:
+      "A high-end med spa was struggling to generate organic leads to their clinic. We ran a 6-9 month local campaign combining content production, on-site technical SEO (including product schema), GBP optimization, and conversion rate optimization. The result: traffic multiplied several times over and competitive service keywords landed in the top three.",
+    stats: [
+      { value: "+553%", label: "Organic Users YoY" },
+      { value: "+584%", label: "Organic Sessions YoY" },
+      { value: "+76%", label: "Phone Calls From GBP" },
+      { value: "#1", label: "Laser Skin Treatment (14.8K/mo)" },
+    ],
+    wins: [
+      "laser skin treatment reached #1 from off-the-map (14,800 monthly searches)",
+      "skin laser for acne scars reached #1 from off-the-map",
+      "skincare treatment for acne scars reached #1 from off-the-map",
+      "hair removal laser for men reached #2 (9,900 monthly searches)",
+      "skincare clinic near me moved to #4",
+    ],
   },
 ];
 
-const processSteps = [
-  { title: "Discovery and Onboarding", text: "A structured strategy session covers your business, service area, competitive landscape, and growth goals. This is a working session, not a sales call — it establishes the foundation for everything that follows." },
-  { title: "AI-Assisted SEO Audit", text: "Before any optimization begins, we conduct a comprehensive audit across all eight pillars: technical health, on-page performance, local SEO standing, content gaps, backlink profile, and AI-search readiness. You know exactly where you stand before we start a single task." },
-  { title: "Strategy and Roadmap", text: "We develop a prioritized roadmap specific to your business — what we are working on, in what order, and why. Clear focus on the highest-impact activities in your market, sequenced for compounding results." },
-  { title: "Execution", text: "We implement — and AI-powered workflows mean we move faster and cover more ground than traditional SEO execution allows. Technical fixes are identified and resolved quickly. Content plans are built and executed. Cross-pillar optimization decisions are made in real time. The result is broader monthly coverage with no pillar left unattended." },
-  { title: "Ongoing Optimization", text: "As rankings improve, new opportunities emerge. As search engines update, adjustments are required. GrowSmallBiz monitors your program continuously and makes optimization decisions in real time — so you are never standing still while competitors move." },
-  { title: "Monthly Review and Reporting", text: "Each month, you receive a clear performance summary: what moved, what was completed, what is planned next, and where your program stands against its goals. Written for a business owner, not an SEO analyst." },
-];
-
-const whyAIPowered = [
-  { icon: Zap, title: "Speed of execution", description: "Traditional SEO relies on manual audits, slow content pipelines, and sequential task execution. GrowSmallBiz's AI-powered workflows compress that timeline significantly. Technical issues are identified and resolved in days, not weeks. Content plans are built and validated rapidly. The result: more implementation, more iteration, and faster compounding results." },
-  { icon: Layers, title: "Breadth of coverage", description: "All eight SEO pillars are actively maintained every month — not selectively, not one at a time." },
-  { icon: RefreshCw, title: "Consistency", description: "AI-assisted workflows eliminate the gap-and-burst pattern that prevents most local SEO programs from compounding over time." },
-  { icon: Target, title: "Smarter targeting", description: "AI-driven research surfaces keyword opportunities, competitor gaps, and content angles genuinely relevant to your specific service area and buyer intent." },
-  { icon: Settings, title: "Adaptability", description: "Search is evolving across traditional results, answer engines, and AI-driven discovery. This system keeps your program current across all of it." },
-];
-
-const industries = [
-  { icon: Home, title: "Home Services & Contractors", description: "Homeowners search locally before they call — and your visibility in that moment determines whether the lead goes to you or a competitor. Managed AI SEO ensures you appear in Google's local pack, in Maps, and in organic results for the specific services you offer." },
-  { icon: Heart, title: "Healthcare & Wellness", description: "Patients research extensively before booking, and a strong search presence builds credibility before you have spoken to a single prospective patient. Managed AI SEO ensures your practice appears for the conditions, services, and locations you serve." },
-  { icon: Sparkles, title: "Med Spas & Aesthetic Practices", description: "The aesthetic market is highly competitive, and local search visibility often determines which practice a new client chooses. Managed AI SEO positions your practice for high-intent local searches while GEO and AEO strategies extend visibility into AI-driven discovery environments." },
-  { icon: Scale, title: "Legal & Financial Professionals", description: "Attorneys, financial advisors, and CPAs compete for high-value relationships where credibility is everything. A structured, authoritative SEO program signals expertise to prospective clients before they make first contact." },
-  { icon: Building, title: "Real Estate Agents & Brokers", description: "Buyers and sellers research extensively before choosing an agent. Managed AI SEO builds your local search presence across the neighborhoods and transaction types you specialize in — attracting motivated clients already in the market." },
-];
-
-
-const whyGSBItems = [
-  { icon: Target, title: "Built for Local Service Businesses", description: "We do not serve e-commerce brands, SaaS companies, or national retailers. Every service and process in our system is designed for local service businesses competing in defined geographic markets." },
-  { icon: Layers, title: "A Complete 8-Pillar System", description: "Most agencies lead with what they do well and quietly neglect the rest. GrowSmallBiz manages all eight pillars simultaneously — so nothing goes unaddressed and every component reinforces the others." },
-  { icon: Bot, title: "Strategic Execution, Not Just Software", description: "AI-assisted tools allow us to move faster and cover more ground. Experienced strategists make the judgment calls that require local market knowledge and business context. You get efficiency and accountability — not a self-serve dashboard." },
-  { icon: Eye, title: "Transparent Reporting, Every Month", description: "You will never wonder what we are working on or whether it is working. Monthly performance reviews give you a clear view of what moved, what was completed, and what is planned — written for a business owner, not an analyst." },
-  { icon: Puzzle, title: "Integrated with the Digital Dominance Method", description: "Managed AI SEO works in coordination with your broader marketing channels through the GrowSmallBiz Digital Dominance Method — not in isolation from them." },
-  { icon: Shield, title: "Engagement Built on Performance", description: "We earn your business every month. The engagement begins with a 3-month commitment to build a proper foundation, then continues month-to-month — because the relationship should be built on performance and trust, not obligation." },
+const verticalCards = [
+  {
+    icon: Wrench,
+    title: "Home Service Contractors",
+    desc: "HVAC, plumbing, electrical, roofing, tree and lawn care, painting. High-intent emergency and scheduled-service searches.",
+  },
+  {
+    icon: Heart,
+    title: "Health & Wellness Practices",
+    desc: "Dental, chiropractic, med spas, and wellness clinics. Service-based, geographically bounded, competitive for high-value keywords.",
+  },
+  {
+    icon: Home,
+    title: "Real Estate",
+    desc: "Brokers and agents building authority in a local farm area. Niche pages, neighborhood content, and GBP dominance.",
+  },
+  {
+    icon: UtensilsCrossed,
+    title: "Restaurants",
+    desc: "Independent restaurants fighting for local map pack visibility, reviews, and direct bookings.",
+  },
+  {
+    icon: Camera,
+    title: "Photographers",
+    desc: "Wedding, portrait, and event photographers competing for high-commercial-intent local queries.",
+  },
 ];
 
 const faqs = [
-  { question: "What is Managed AI SEO?", answer: "Managed AI SEO is a fully managed SEO service in which GrowSmallBiz handles your entire program — strategy, implementation, content, technical maintenance, local optimization, authority building, and reporting — using AI-assisted tools and workflows. You do not manage vendors, learn SEO tools, or supervise execution. We own it." },
-  { question: "How is this different from traditional SEO?", answer: "Traditional SEO is typically project-based, manual, and focused on a narrow set of tactics. Managed AI SEO is continuous, AI-assisted, and comprehensive — covering all eight pillars simultaneously. The AI layer surfaces and acts on opportunities faster. The managed layer means you have a team running the system, not a consultant sending monthly recommendations." },
-  { question: "How long does it take to see results?", answer: "SEO is a long-term channel. Most local service businesses see measurable movement in rankings and local visibility within three to six months, with more substantial results building from six to twelve months onward. The timeline depends on your starting point, competitive landscape, and scope of work. We set realistic expectations from day one." },
-  { question: "What is the commitment structure?", answer: "The engagement begins with a 3-month initial commitment. This ensures enough time to complete the foundational audit, build the strategy, and execute the early implementation work that produces lasting results. After the initial 3 months, the engagement continues on a month-to-month basis. Additional details about engagement options are discussed on the strategy call." },
-  { question: "Do I need to be involved day-to-day?", answer: "No — that is the point of a managed service. You are involved in the initial onboarding and strategy session, you review your monthly performance summary, and you make decisions about your business direction. The SEO program runs without requiring your ongoing attention." },
-  { question: "Can you work with my existing website?", answer: "In most cases, yes. We begin with a thorough audit and work within your current platform where possible. If we identify structural or technical limitations that significantly constrain SEO performance, we will flag them clearly and discuss options. A full rebuild is not a prerequisite for getting started." },
-  { question: "How do you report results?", answer: "Each month you receive a performance summary covering keyword rankings, local visibility, traffic trends, the specific work completed, and strategic recommendations for the upcoming period. Reports are written to be understood by a business owner, not an SEO analyst." },
-  { question: "Does SEO work with paid advertising?", answer: "Yes — and they work better together. Paid ads deliver immediate visibility while SEO builds sustained organic presence. Over time, strong organic rankings reduce dependence on paid traffic and lower your overall cost per lead." },
-  { question: "What makes your approach different from a standard SEO agency?", answer: "Three things: specialization, completeness, and integration. We specialize exclusively in local service businesses. We manage all eight pillars of SEO simultaneously. And the program is integrated with your broader marketing channels through the Digital Dominance Method — so everything works together rather than in silos." },
+  {
+    question: "How long does it take to see SEO results?",
+    answer:
+      "Most campaigns show measurable keyword and GBP movement within 60 to 90 days, with meaningful lead volume by month four to six. The timeline depends on three factors: how competitive the geography is, how much technical debt the current site has, and whether the Google Business Profile is already claimed and verified. We report weekly so you see the trajectory long before the leads arrive.",
+  },
+  {
+    question: "What makes Managed AI SEO different from traditional SEO?",
+    answer:
+      "Managed AI SEO combines traditional ranking work with AEO and GEO so the business is found inside ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews — not just on the blue-link results page. Traditional SEO optimizes for a 2015 search experience. Managed AI SEO optimizes for how customers are actually searching in 2026.",
+  },
+  {
+    question: "Do I need a new website to start SEO?",
+    answer:
+      "Not always, but conversion infrastructure has to be in place or SEO leaks leads. If the current site loads fast, tracks conversions, and has clear calls to action, we start with SEO. If it doesn't, we'll be direct about it — we offer a conversion-focused website rebuild if that's the bottleneck, because driving traffic to a broken site wastes your budget.",
+  },
+  {
+    question: "How much does Managed AI SEO cost?",
+    answer:
+      "Pricing depends on the competitive difficulty of your market and the number of service areas targeted. We scope after a free audit so you see the specific gap analysis before committing to anything. There are no long-term contracts — we work month-to-month and earn the renewal every time.",
+  },
+  {
+    question: "What is AEO and why does it matter for small businesses?",
+    answer:
+      "AEO — Answer Engine Optimization — is the practice of structuring content so AI chat assistants like ChatGPT and Perplexity cite your business when users ask for recommendations. It matters because a growing share of buyers now ask an AI before they ask Google, and small businesses without AEO presence are invisible to that entire audience.",
+  },
+  {
+    question: "Will I own my content and Google Business Profile?",
+    answer:
+      "Yes — you own every asset we create, including blog content, landing pages, and the GBP listing itself. We require admin access during the engagement, but ownership is always yours. If you end the engagement, everything stays with you.",
+  },
+  {
+    question: "How do you report results?",
+    answer:
+      "You get a monthly report covering rankings, organic traffic, GBP interactions (calls, direction requests, website clicks), form conversions, and phone tracking. We also hold a weekly 20-minute check-in if you want one. We report on pipeline metrics — the ones that tie to revenue — not vanity metrics.",
+  },
+  {
+    question: "What if my vertical isn't a fit for GrowSmallBiz?",
+    answer:
+      "We'll tell you on the audit call. We specialize in small service businesses with a local footprint — home service contractors, health and wellness practices, real estate, restaurants, and photographers. If your business is national e-commerce, enterprise B2B, or SaaS, we're not the right agency and we'll refer you to someone who is.",
+  },
 ];
 
+// Teal accent uses semantic token --ghl-card-border (188 78% 41%)
+const TEAL = "hsl(var(--ghl-card-border))";
+
+// -----------------------------------------------------------------------------
+// Page
+// -----------------------------------------------------------------------------
+
 const ManagedAISEO = () => {
-  const { buildUrl } = useUtm();
-  const PRIMARY_CTA_URL = buildUrl(PRIMARY_CTA_BASE, "strategy-session");
-  const SECONDARY_CTA_URL = buildUrl(SECONDARY_CTA_BASE, "free-seo-audit");
+  const { strategySessionUrl } = useUtm();
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
         <title>AI-Powered SEO That Gets Local Service Businesses Found First | GrowSmallBiz</title>
-        <meta name="description" content="The complete Managed AI SEO system for local service businesses. GrowSmallBiz runs your entire SEO program — technical, local, content, AEO, GEO, link building, and reporting — so you can focus on running your business." />
-        <meta name="keywords" content="managed AI SEO, local SEO services, AI-powered SEO, local service business SEO, managed SEO program, technical SEO, on-page SEO, local SEO, AEO, GEO, link building, SEO for contractors, SEO for dentists, SEO for HVAC, GrowSmallBiz" />
+        <meta
+          name="description"
+          content="Managed AI SEO for small service businesses. Rank where your customers are already searching — Google, ChatGPT, Perplexity, Gemini — and turn local search into qualified phone calls and form fills."
+        />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/" />
       </Head>
 
       <ServiceJsonLd
-        serviceName="AI-Powered SEO That Gets Local Service Businesses Found First"
+        serviceName="Managed AI SEO for Small Service Businesses"
         serviceType="Managed SEO"
-        description="The complete Managed AI SEO system for local service businesses — covering technical SEO, on-page, local SEO, topical authority, AEO, GEO, link building, and monthly reporting."
+        description="AI-powered SEO for small businesses that turns local search into qualified phone calls, form submissions, and foot traffic — covering technical, on-page, local SEO, AEO, GEO, link building, and reporting."
         url="/services/seo-agency/"
-        breadcrumbs={[
-          { name: "Services", url: "/services/" },
-        ]}
+        breadcrumbs={[{ name: "Services", url: "/services/" }]}
       />
+
       <Header />
 
-      <main id="main-content" className="min-h-screen bg-background pt-20">
-        {/* SECTION 1 — HERO */}
-        <section className="relative overflow-hidden py-16 lg:py-24">
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${managedAiSeoHeroBg})` }}
-          />
-          <div className="absolute inset-0 bg-background/85" />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
-
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary mb-6 animate-fade-up">
-                <Bot className="w-4 h-4" />
-                <span className="text-sm font-medium">Managed AI SEO</span>
-              </div>
-
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-foreground leading-tight animate-fade-up">
-                The Complete Managed AI SEO System for{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary">
-                  Local Service Businesses
-                </span>
-              </h1>
-
-              <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                Most local service businesses are invisible online — not because they do bad work, but because their SEO is incomplete, inconsistent, or simply not running. Managed AI SEO changes that. GrowSmallBiz runs your entire SEO program for you — from technical site health and local visibility to content authority, answer engine optimization, and link building — using an AI-powered system built specifically for local service businesses.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
-                <Button variant="hero" size="lg" asChild>
-                  <a href={PRIMARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                    Schedule Strategy Session
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </a>
-                </Button>
-                <Button variant="heroOutline" size="lg" asChild>
-                  <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                    Free SEO Audit
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION 2 — WHAT IS MANAGED AI SEO? */}
-        <section className="py-20 lg:py-28" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      <main id="main-content" className="pt-20">
+        {/* =============================================================== */}
+        {/* PROMPT 1 — HERO                                                  */}
+        {/* =============================================================== */}
+        <section className="relative overflow-hidden bg-background py-16 lg:py-24">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="THE SERVICE"
-              title="What Is Managed AI SEO — and Why Does It"
-              titleHighlight="Matter Now?"
-            />
+            <div className="grid lg:grid-cols-5 gap-10 lg:gap-14 items-center">
+              {/* Text column (60%) */}
+              <div className="lg:col-span-3">
+                <p
+                  className="text-xs font-semibold tracking-[0.18em] uppercase mb-5"
+                  style={{ color: TEAL }}
+                >
+                  Managed AI SEO
+                </p>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-[1.05] mb-6">
+                  Rank Where Your Customers Are Already Searching.
+                </h1>
+                <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-8 max-w-2xl">
+                  AI-powered SEO for small businesses that turns local search into qualified phone
+                  calls, form submissions, and foot traffic — not just rankings.
+                </p>
 
-            <div className="max-w-5xl mx-auto animate-fade-up">
-              <div className="rounded-2xl border border-border bg-card/40 p-8 md:p-12">
-                <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
-                  <div className="space-y-6">
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      Traditional SEO was a project. You hired someone to optimize a few pages, build some links, maybe write some blog posts — and hoped it held. That model no longer works in a search environment that changes faster than any single consultant can manually track.
-                    </p>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      Managed AI SEO is a different model: an ongoing, fully managed service in which AI-assisted tools and strategic human oversight work together to continuously audit, optimize, and expand your search presence — across every layer that matters.
-                    </p>
-                  </div>
-                  <div className="space-y-6">
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      For local service businesses, that means your website, Google Business Profile, service pages, content, local citations, and off-site authority are all being monitored and improved on an ongoing basis — not just when something breaks.
-                    </p>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      GrowSmallBiz owns strategy, implementation, optimization, and reporting. You get a clear, consistent picture of what is working and where you are growing — without becoming an SEO expert.
-                    </p>
-                  </div>
+                {/* Trust row */}
+                <ul className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-foreground/75 mb-8">
+                  <li>6-month campaigns avg +260% organic clicks</li>
+                  <li className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: TEAL }} />
+                  <li>GBP calls climbing 100%+ YoY</li>
+                  <li className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: TEAL }} />
+                  <li>Hero keywords moving 90+ positions</li>
+                </ul>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button variant="hero" size="lg" asChild>
+                    <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
+                      Book Free SEO Audit
+                      <ArrowRight className="w-5 h-5 ml-2" />
+                    </a>
+                  </Button>
+                  <Button variant="heroOutline" size="lg" asChild>
+                    <a href="#methodology">See How It Works</a>
+                  </Button>
                 </div>
-                <div className="mt-8 pt-8 border-t border-border">
-                  <p className="text-lg font-medium text-foreground text-center max-w-3xl mx-auto">
-                    The result is a search presence that compounds month over month, building lasting visibility and a reliable flow of qualified local leads.
-                  </p>
+
+                <p className="mt-3 text-sm text-primary font-medium">
+                  No commitment. No pressure. Just a clear path forward for your business.
+                </p>
+              </div>
+
+              {/* Image column (40%) */}
+              <div className="lg:col-span-2">
+                <div className="relative rounded-2xl overflow-hidden ring-1 ring-border shadow-2xl">
+                  <img
+                    src={seoAgencyHero}
+                    alt="Small business owner reviewing SEO analytics and incoming calls on laptop and phone"
+                    width={1920}
+                    height={1080}
+                    fetchPriority="high"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* SECTION 3 — THE 8-PILLAR MANAGED AI SEO SYSTEM */}
-        <section className="py-20 lg:py-28 bg-card" id="pillars">
+        {/* =============================================================== */}
+        {/* PROMPT 2 — TRUST BAR                                             */}
+        {/* =============================================================== */}
+        <section className="bg-background-alt py-12 lg:py-14 border-y border-border">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="THE SYSTEM"
-              title="The 8-Pillar Managed AI SEO"
-              titleHighlight="System"
-              description="Effective SEO for local service businesses is not a single tactic — it is a coordinated system. Most agencies focus on one or two things and neglect the rest. GrowSmallBiz manages all eight pillars simultaneously, ensuring every component reinforces the others."
-            />
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto -mt-10 mb-16">
-              Each pillar below links to a dedicated service page where you can go deeper. Together, they form an integrated system built to deliver lasting local search authority and a consistent flow of qualified leads.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-              {pillars.map((pillar, index) => (
-                <GlowCard key={index} className="border-2 border-border/60 p-0 overflow-hidden animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
-                  <div className="h-40 overflow-hidden">
-                    <img
-                      src={pillarImages[index]}
-                      alt={pillar.title}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+              {trustBar.map((cell) => {
+                const Icon = cell.icon;
+                return (
+                  <div
+                    key={cell.label}
+                    className="flex flex-col items-center text-center px-2"
+                  >
+                    <Icon className="w-7 h-7 mb-3" style={{ color: TEAL }} aria-hidden="true" />
+                    <p className="text-base md:text-lg font-display font-semibold text-foreground mb-1">
+                      {cell.label}
+                    </p>
+                    <p className="text-sm text-muted-foreground leading-snug">{cell.desc}</p>
                   </div>
-                  <div className="p-8">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="p-3 rounded-xl bg-primary/10 shrink-0">
-                        <pillar.icon className="h-6 w-6 text-primary" />
-                      </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* =============================================================== */}
+        {/* PROMPT 3 — PROBLEM                                               */}
+        {/* =============================================================== */}
+        <section className="bg-background py-20 lg:py-24">
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+              <div className="lg:col-span-2">
+                <p
+                  className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
+                  style={{ color: TEAL }}
+                >
+                  The Problem
+                </p>
+                <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-display font-bold text-foreground leading-tight mb-6">
+                  Most Small Businesses Are Paying For SEO That Doesn't Produce Leads.
+                </h2>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  You've probably heard the promises. Rankings. Traffic. Authority scores. Every SEO
+                  agency hands out a different scorecard — but none of those metrics pay the bills.
+                  What pays the bills is a phone that rings, a form that gets filled out, and a
+                  customer walking through the door. Most SEO engagements never connect those dots.
+                </p>
+              </div>
+
+              <div className="lg:col-span-3 space-y-4">
+                {problemCards.map((card) => (
+                  <div
+                    key={card.title}
+                    className="bg-card border border-border rounded-xl p-6 hover:border-primary/40 transition-colors"
+                  >
+                    <div className="flex items-start gap-4">
+                      <AlertCircle className="w-5 h-5 text-primary mt-1 shrink-0" aria-hidden="true" />
                       <div>
-                        <h3 className="text-xl font-bold text-foreground">{pillar.title}</h3>
+                        <h3 className="text-lg md:text-xl font-display font-semibold text-foreground mb-2">
+                          {card.title}
+                        </h3>
+                        <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                          {card.body}
+                        </p>
                       </div>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-4 text-sm">{pillar.description}</p>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
-                      {pillar.covers.map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                    {pillar.link && (
-                      <Link to={pillar.link} className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-                        Learn more <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    )}
                   </div>
-                </GlowCard>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* SECTION 4 — WHO THIS IS FOR */}
-        <section className="py-20 lg:py-28">
-          <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="IS IT RIGHT FOR YOU?"
-              title="Is Managed AI SEO Right for"
-              titleHighlight="Your Business?"
-              description="Managed AI SEO is built for local service businesses where each new customer — a booked appointment, a signed contract, a completed project — represents meaningful revenue and justifies a real investment in sustainable growth."
-            />
-
-            <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8 animate-fade-up">
-              {/* Strong fit */}
-              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <CheckCircle2 className="w-5 h-5 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold font-display text-foreground">Strong Fit</h3>
-                </div>
-                <ul className="space-y-3">
-                  {[
-                    "You operate a local service business competing in a defined geographic market",
-                    "Each new client, patient, case, or project represents significant revenue",
-                    "You have little to no organic traffic, or your local SEO presence is inconsistent",
-                    "You have tried SEO before but never experienced a systematic, fully managed approach",
-                    "You want your marketing running without requiring your daily involvement",
-                    "You are building a long-term growth channel, not chasing a short-term traffic spike",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Not the right fit */}
-              <div className="rounded-2xl border border-border bg-card/50 p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
-                    <Users className="w-5 h-5 text-muted-foreground" />
-                  </div>
-                  <h3 className="text-xl font-bold font-display text-foreground">Not the Right Fit</h3>
-                </div>
-                <ul className="space-y-3">
-                  {[
-                    "National e-commerce brands",
-                    "Startups without an established service area",
-                    "Businesses seeking one-time consulting only",
-                    "Businesses where per-transaction margin does not support an ongoing SEO investment",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50 shrink-0 mt-1.5" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* SECTION 5 — HOW IT WORKS */}
-        <section className="py-20 lg:py-28 bg-secondary/30">
+        {/* =============================================================== */}
+        {/* PROMPT 4 — METHODOLOGY (5 PILLARS)                               */}
+        {/* =============================================================== */}
+        <section
+          id="methodology"
+          className="bg-background-alt py-24 lg:py-28 border-y border-border"
+        >
           <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="HOW IT WORKS"
-              title="What Working with GrowSmallBiz on Managed AI SEO"
-              titleHighlight="Actually Looks Like"
-            />
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <p
+                className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
+                style={{ color: TEAL }}
+              >
+                How It Works
+              </p>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground leading-[1.1] mb-5">
+                Every Signal Google Uses. Every Week.
+              </h2>
+              <p className="text-lg md:text-xl text-foreground/80">
+                Five pillars working in concert. Miss one and the whole engine stalls.
+              </p>
+            </div>
 
-            <div className="relative max-w-5xl mx-auto">
-              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-primary/30 -translate-x-1/2" />
+            <div className="relative max-w-6xl mx-auto">
+              {/* Connecting line on desktop */}
+              <div
+                className="hidden lg:block absolute top-9 left-[10%] right-[10%] h-px"
+                style={{ backgroundColor: TEAL, opacity: 0.3 }}
+                aria-hidden="true"
+              />
 
-              <div className="space-y-16">
-                {processSteps.map((step, index) => {
-                  const isLeft = index % 2 === 0;
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 relative">
+                {pillars.map((pillar) => {
+                  const Icon = pillar.icon;
                   return (
-                    <div key={index} className="relative animate-fade-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                      <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-primary z-10" />
-                      <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 h-px bg-primary/30 ${isLeft ? 'right-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]' : 'left-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]'}`} />
-
-                      <div className={`md:w-[calc(50%-2rem)] ${isLeft ? 'md:mr-auto' : 'md:ml-auto'}`}>
-                        <div className="bg-card/50 border-2 border-border/60 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all duration-300">
-                          <div className="flex items-center gap-3 mb-4">
-                            <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                              <span className="text-sm font-bold text-primary-foreground">{index + 1}</span>
-                            </div>
-                            <span className="text-sm font-semibold text-primary">Step {index + 1}</span>
-                          </div>
-                          <h3 className="text-xl font-bold text-foreground mb-4">{step.title}</h3>
-                          <p className="text-muted-foreground leading-relaxed">{step.text}</p>
-                        </div>
+                    <div key={pillar.number} className="text-center">
+                      <div
+                        className="w-[72px] h-[72px] mx-auto rounded-full flex items-center justify-center mb-4 relative z-10"
+                        style={{ backgroundColor: TEAL }}
+                      >
+                        <Icon className="w-8 h-8 text-white" aria-hidden="true" />
                       </div>
+                      <p
+                        className="text-xs font-semibold tracking-[0.16em] uppercase mb-2"
+                        style={{ color: TEAL }}
+                      >
+                        {pillar.number}
+                      </p>
+                      <h3 className="text-lg md:text-xl font-display font-semibold text-foreground mb-3">
+                        {pillar.title}
+                      </h3>
+                      <p className="text-sm text-foreground/75 leading-relaxed">{pillar.desc}</p>
                     </div>
                   );
                 })}
               </div>
             </div>
+
+            <p className="text-center italic text-foreground/70 mt-14 max-w-2xl mx-auto">
+              All five, every month, reported transparently — with a weekly check-in call if you
+              want one.
+            </p>
           </div>
         </section>
 
-        {/* COMMAND CENTER SECTION */}
-        <section className="py-20 lg:py-28 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl md:text-3xl font-bold font-display mb-4 text-foreground">
-                  Your Holistic AI SEO Command Center
+        {/* =============================================================== */}
+        {/* PROMPT 5 — AEO + GEO                                             */}
+        {/* =============================================================== */}
+        <section className="bg-background py-20 lg:py-24">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <p className="text-xs font-semibold tracking-[0.18em] uppercase mb-4 text-primary">
+                Built For The AI Search Era
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight mb-5">
+                When Customers Ask ChatGPT, Your Business Should Be The Answer.
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground">
+                AEO and GEO are the two disciplines traditional SEO agencies haven't caught up to.
+                We lead with both.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-10">
+              {/* AEO card */}
+              <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 flex flex-col">
+                <span
+                  className="inline-block self-start text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-5 text-white"
+                  style={{ backgroundColor: TEAL }}
+                >
+                  AEO
+                </span>
+                <h3 className="text-2xl md:text-[1.75rem] font-display font-bold text-foreground mb-4">
+                  Answer Engine Optimization
                 </h3>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Monitor your complete digital presence in real-time—track domain authority growth, measure your visibility across AI platforms like ChatGPT, Gemini, Perplexity & Claude, and optimize all eight SEO pillars from one powerful dashboard. Make data-driven decisions that drive measurable ROI.
+                <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                  Structured content, schema markup, and conversational query framing so ChatGPT,
+                  Perplexity, Claude, and Gemini cite your business when buyers ask for
+                  recommendations. Answer-engine traffic is the fastest-growing referral source of
+                  2026 — and most small businesses have zero presence there.
                 </p>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "FAQ blocks formatted for answer-engine extraction",
+                    "Entity-rich content that AI models can parse",
+                    "Schema coverage for LocalBusiness, Service, FAQ",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-foreground/85">
+                      <CheckCircle2
+                        className="w-5 h-5 mt-0.5 shrink-0"
+                        style={{ color: TEAL }}
+                        aria-hidden="true"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  to="/services/seo-agency/aeo/"
+                  className="mt-auto inline-flex items-center gap-1 text-sm font-semibold hover:underline"
+                  style={{ color: TEAL }}
+                >
+                  Learn more about AEO <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <div className="relative group cursor-pointer">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-primary via-purple-500 to-cyan-500 rounded-2xl blur-md opacity-40 group-hover:opacity-60 transition-opacity duration-500" />
-                    <img 
-                      src={seoDashboardMetrics} 
-                      alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
-                      className="relative w-full rounded-2xl border border-primary/30 shadow-2xl transition-transform duration-300 group-hover:scale-[1.01]"
+
+              {/* GEO card */}
+              <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 flex flex-col">
+                <span className="inline-block self-start text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-5 bg-primary text-primary-foreground">
+                  GEO
+                </span>
+                <h3 className="text-2xl md:text-[1.75rem] font-display font-bold text-foreground mb-4">
+                  Generative Engine Optimization
+                </h3>
+                <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                  Google AI Overviews and AI Mode are reshaping what the first page looks like. GEO
+                  ensures your content is structured to be surfaced, quoted, and cited inside
+                  generative results — not buried beneath them.
+                </p>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "Content architecture optimized for AI Overview inclusion",
+                    "Citation-worthy formatting and authority signals",
+                    "Monitoring for AI-result visibility across query clusters",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-foreground/85">
+                      <CheckCircle2
+                        className="w-5 h-5 mt-0.5 shrink-0 text-primary"
+                        aria-hidden="true"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  to="/services/seo-agency/geo/"
+                  className="mt-auto inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+                >
+                  Learn more about GEO <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+
+            <p className="text-center italic text-foreground/85 text-lg mt-12 max-w-2xl mx-auto">
+              Traditional SEO ranks pages. AEO and GEO rank answers. You need all three.
+            </p>
+          </div>
+        </section>
+
+        {/* =============================================================== */}
+        {/* PROMPT 6 — CASE STUDIES                                          */}
+        {/* =============================================================== */}
+        <section className="bg-background-alt py-24 lg:py-28 border-y border-border">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <p
+                className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
+                style={{ color: TEAL }}
+              >
+                Proven Outcomes Across Verticals
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight mb-5">
+                SEO That Moves The Needle On Leads. Not Just Rankings.
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground">
+                Rankings are a means, not an end. Every case study below shows what happens when
+                Managed AI SEO is paired with a conversion-ready site and a fully claimed Google
+                Business Profile. Client names are withheld per our white-label agency agreements.
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              {caseStudies.map((cs) => {
+                const accentColor =
+                  cs.accent === "teal"
+                    ? TEAL
+                    : cs.accent === "orange"
+                      ? "hsl(var(--primary))"
+                      : "hsl(var(--foreground))";
+                return (
+                  <article
+                    key={cs.label}
+                    className="bg-card border border-border rounded-2xl p-6 md:p-10 relative overflow-hidden"
+                  >
+                    {/* Vertical bar */}
+                    <div
+                      className="absolute left-0 top-0 bottom-0 w-1"
+                      style={{ backgroundColor: accentColor }}
+                      aria-hidden="true"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="bg-background/80 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/30 flex items-center gap-2">
-                        <Search className="w-4 h-4 text-primary" />
-                        <span className="text-sm font-medium">Click to expand</span>
+
+                    <div className="pl-2">
+                      <p
+                        className="text-xs font-semibold tracking-[0.16em] uppercase mb-2"
+                        style={{ color: accentColor }}
+                      >
+                        {cs.label}
+                      </p>
+                      <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground mb-5">
+                        {cs.attribution}
+                      </h3>
+                      <p className="text-base text-muted-foreground leading-relaxed mb-8 max-w-3xl">
+                        {cs.summary}
+                      </p>
+
+                      {/* Stat grid */}
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        {cs.stats.map((s) => (
+                          <div
+                            key={s.label}
+                            className="bg-background/60 rounded-xl p-5 text-center"
+                          >
+                            <p className="text-3xl md:text-4xl font-display font-bold text-primary mb-1 leading-none">
+                              {s.value}
+                            </p>
+                            <p className="text-[11px] md:text-xs font-semibold tracking-wider uppercase text-foreground/75 leading-tight">
+                              {s.label}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Keyword wins */}
+                      <div>
+                        <p
+                          className="text-xs font-semibold tracking-[0.16em] uppercase mb-3"
+                          style={{ color: TEAL }}
+                        >
+                          Keyword Wins
+                        </p>
+                        <ul className="space-y-2">
+                          {cs.wins.map((w) => (
+                            <li
+                              key={w}
+                              className="flex items-start gap-2 text-sm md:text-base text-muted-foreground"
+                            >
+                              <span
+                                className="font-bold mt-0.5 shrink-0"
+                                style={{ color: TEAL }}
+                                aria-hidden="true"
+                              >
+                                →
+                              </span>
+                              <span>{w}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
-                  </div>
-                </DialogTrigger>
-                <DialogContent className="max-w-[95vw] max-h-[95vh] p-2 bg-background/95 backdrop-blur-xl border-primary/30">
-                  <img 
-                    src={seoDashboardMetrics} 
-                    alt="SEO Dashboard showing domain metrics, LLM visibility across AI platforms, and holistic SEO pillars" 
-                    className="w-full h-auto rounded-xl"
-                  />
-                </DialogContent>
-              </Dialog>
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        <section className="py-20 lg:py-28 bg-card">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <p className="text-primary font-medium mb-2">THE AI ADVANTAGE</p>
-              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
-                Why AI-Powered SEO Outperforms Traditional Manual SEO for{" "}
-                <span className="text-primary">Local Service Businesses</span>
+        {/* =============================================================== */}
+        {/* PROMPT 7 — WHO THIS IS FOR                                       */}
+        {/* =============================================================== */}
+        <section className="bg-background py-20 lg:py-24">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <p
+                className="text-xs font-semibold tracking-[0.18em] uppercase mb-4"
+                style={{ color: TEAL }}
+              >
+                Ideal Client Fit
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-display font-bold text-foreground leading-tight mb-5">
+                Managed AI SEO Is Built For Small Service Businesses.
               </h2>
-              <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-                Manual SEO is slow to implement, difficult to scale, and typically concentrated in one or two areas while the rest goes unaddressed. For local service businesses in competitive markets, that incomplete coverage is a direct liability.
+              <p className="text-base md:text-lg text-muted-foreground">
+                If you sell a service in a specific geography and win customers through phone calls,
+                form submissions, or foot traffic — you're our sweet spot.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {whyAIPowered.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-background/80 border-2 border-border/60 rounded-xl p-6 space-y-4 animate-fade-up hover:shadow-[0_0_40px_rgba(255,127,80,0.4)] hover:border-primary/50 transition-all duration-300"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-primary" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {verticalCards.map((v, idx) => {
+                const Icon = v.icon;
+                // Center the last two cards on desktop (3+2 layout)
+                const isLastRow = idx >= 3;
+                return (
+                  <div
+                    key={v.title}
+                    className={`bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition-colors ${
+                      isLastRow && idx === 3 ? "lg:col-start-1 lg:ml-[16.667%]" : ""
+                    }`}
+                  >
+                    <Icon
+                      className="w-7 h-7 mb-4"
+                      style={{ color: TEAL }}
+                      aria-hidden="true"
+                    />
+                    <h3 className="text-lg md:text-xl font-display font-semibold text-foreground mb-2">
+                      {v.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{v.desc}</p>
                   </div>
-                  <h3 className="font-display font-semibold text-foreground">{item.title}</h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">{item.description}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
+
+            <p className="text-center italic text-muted-foreground mt-12 max-w-xl mx-auto">
+              Not sure if your vertical fits? Book a 20-minute call — if we're not the right agency
+              for you, we'll say so.
+            </p>
           </div>
         </section>
 
-        {/* SECTION 7 — INDUSTRIES WE SERVE */}
-        <section className="py-20 lg:py-28">
+        {/* =============================================================== */}
+        {/* PROMPT 8 — FAQ                                                   */}
+        {/* =============================================================== */}
+        <FAQSection title="Frequently Asked Questions" faqs={faqs} schemaType="FAQPage" />
+
+        {/* =============================================================== */}
+        {/* PROMPT 9 — FINAL CTA                                             */}
+        {/* =============================================================== */}
+        <section className="bg-background-alt py-24 lg:py-28 border-t border-border">
           <div className="container mx-auto px-4">
-            <SectionHeader
-              subtitle="INDUSTRIES"
-              title="AI-Powered SEO That Gets Local Service Businesses Found First Across"
-              titleHighlight="Key Industries"
-            />
-
-            <div className="space-y-6 max-w-4xl mx-auto">
-              {industries.map((industry, index) => (
-                <div
-                  key={index}
-                  className="bg-card/50 border-2 border-border/60 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all duration-300 animate-fade-up"
-                  style={{ animationDelay: `${index * 0.05}s` }}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-xl bg-primary/10 shrink-0">
-                      <industry.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground mb-3">{industry.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{industry.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-
-        {/* SECTION 9 — WHY GROWSMALLBIZ */}
-        <WhyChooseSection
-          title="Why GrowSmallBiz — and Not a Generalist SEO Agency"
-          subtitle="OUR DIFFERENCE"
-          description="Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth."
-          items={whyGSBItems}
-        />
-
-        {/* SECTION 10 — FAQ */}
-        <FAQSection
-          title="Frequently Asked Questions"
-          faqs={faqs}
-          schemaType="FAQPage"
-          contactCTA={{
-            ...baseContactCTA,
-            title: "Have questions about Managed AI SEO?",
-            description: "We're here to help. Let's talk about how a managed SEO program fits your business.",
-            tagline: "Let's build your search presence together.",
-          }}
-        />
-
-        {/* SECTION 11 — FINAL CTA */}
-        <section className="py-20 lg:py-28" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center animate-fade-up">
-              <p className="text-primary font-medium mb-4">READY TO GROW?</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Ready to Build a Search Presence That Actually{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Grows Your Business?</span>
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-xs font-semibold tracking-[0.18em] uppercase mb-5 text-primary">
+                Your Market Is Next
+              </p>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-[1.05] mb-6">
+                Let's Build Your Case Study.
               </h2>
-              <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-                If you depend on a consistent flow of qualified local leads, you need more than a website and hope. You need a managed, AI-powered SEO system that works every month — building visibility, authority, and trust in your market over time.
+              <p className="text-lg md:text-xl text-foreground/85 leading-relaxed mb-10 max-w-xl mx-auto">
+                Every number on this page started with a strategy call. A free SEO audit reveals
+                exactly where your market is leaving leads on the table — and what it will take to
+                capture them.
               </p>
-              <p className="text-muted-foreground mb-10 max-w-3xl mx-auto">
-                Your strategy session includes a review of your current SEO standing, a look at your local competitive landscape, and a clear picture of what a Managed AI SEO program could produce for your business. No obligation. No pressure. A direct, honest conversation about where you are and what is possible.
+
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button variant="hero" size="lg" asChild>
+                  <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
+                    Book Free Strategy Call
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </a>
+                </Button>
+                <Button variant="heroOutline" size="lg" asChild>
+                  <a href="#methodology">See Our Managed AI SEO Service</a>
+                </Button>
+              </div>
+
+              <p className="mt-6 text-sm text-foreground/65">
+                No contracts. Month-to-month. We earn the renewal every time.
               </p>
-            </div>
-
-            <CardCTA
-              title="Let's Build Your SEO Growth Engine"
-              description="Schedule your free strategy session or get a no-obligation SEO audit to see where you stand."
-              buttonText="Schedule Strategy Call"
-              buttonHref={PRIMARY_CTA_URL}
-              sectionClassName="pt-0 pb-0"
-            />
-
-            <div className="flex justify-center mt-6 animate-fade-up">
-              <Button variant="heroOutline" size="lg" asChild>
-                <a href={SECONDARY_CTA_URL} target="_blank" rel="noopener noreferrer">
-                  Free SEO Audit
-                </a>
-              </Button>
-            </div>
-
-            <div className="text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-              <p>GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide</p>
-              <p>The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI.</p>
             </div>
           </div>
         </section>
 
-        {/* SECTION 12 — CONSULTATION FORM */}
+        {/* CONSULTATION FORM — DO NOT MODIFY (per Prompt 9 constraint) */}
         <ConsultationFormSection />
       </main>
 
