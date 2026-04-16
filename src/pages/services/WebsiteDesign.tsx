@@ -491,29 +491,47 @@ const WebsiteDesign = () => {
               </GlowCard>
             </div>
 
-            {/* Callout boxes */}
-            <div className="grid lg:grid-cols-2 gap-8">
+            {/* Callout box - How We Work only */}
+            <div className="max-w-4xl mx-auto">
               <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up">
                 <h3 className="text-xl font-bold text-foreground mb-4">A note on how we work:</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   GrowSmallBiz builds websites as part of a broader digital growth engagement. We don't take on design-only or website-only projects. The reason is straightforward: a high-converting website, built in isolation from your SEO strategy, your paid traffic, and your lead generation infrastructure, is a foundation with nothing built on top of it. Our clients get the website and the growth system it's designed to support. If you're looking for that kind of partnership — not just a new site — the strategy call is the right place to start.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <h3 className="text-xl font-bold text-foreground mb-4">Why GrowSmallBiz:</h3>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    GrowSmallBiz was built on over 30 years of hands-on experience in sales, marketing, and digital transformation — including Fortune 500 engagements across supply chain, revenue operations, and go-to-market strategy. That background informs everything about how we approach a local service business website: with the same strategic rigor applied to enterprise growth, scaled and focused on what actually moves the needle for a contractor, a med spa, a dental practice, or a professional services firm.
-                  </p>
-                  <p>
-                    We work exclusively with local service businesses — which means we are not learning your industry on your dime. We know what makes a homeowner choose one roofing contractor over another. We know what a patient needs to see before booking an aesthetic treatment. We know what trust signals matter to someone vetting a financial advisor versus a plumber. That specificity is not learned from a course — it is earned from building and optimizing websites, SEO campaigns, and lead generation systems for service businesses across the San Francisco Bay Area and nationally.
-                  </p>
-                  <p>
-                    Most web design agencies hand you a finished site and move on. We build websites as the foundation of a broader digital growth system — and we stay in the engagement. If you are looking for a partner who understands your market, has built in your verticals, and brings strategic depth alongside technical execution, the strategy call is where that conversation starts.
-                  </p>
-                </div>
+      {/* SECTION — WHY GROWSMALLBIZ (H2) */}
+      <section className="py-20 lg:py-28 bg-secondary/30 border-y border-primary/10">
+        <div className="container mx-auto px-4">
+          <SectionHeader
+            subtitle="YOUR GROWTH PARTNER"
+            title="Why GrowSmallBiz"
+            titleHighlight=""
+            description=""
+          />
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8">
+              <div className="animate-fade-up">
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  GrowSmallBiz was built on over 30 years of hands-on experience in sales, marketing, and digital transformation — including Fortune 500 engagements across supply chain, revenue operations, and go-to-market strategy. That background informs everything about how we approach a local service business website: with the same strategic rigor applied to enterprise growth, scaled and focused on what actually moves the needle for a contractor, a med spa, a dental practice, or a professional services firm.
+                </p>
               </div>
+              <div className="animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  We work exclusively with local service businesses — which means we are not learning your industry on your dime. We know what makes a homeowner choose one roofing contractor over another. We know what a patient needs to see before booking an aesthetic treatment. We know what trust signals matter to someone vetting a financial advisor versus a plumber. That specificity is not learned from a course — it is earned from building and optimizing websites, SEO campaigns, and lead generation systems for service businesses across the San Francisco Bay Area and nationally.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <p className="text-muted-foreground leading-relaxed text-lg">
+                Most web design agencies hand you a finished site and move on. We build websites as the foundation of a broader digital growth system — and we stay in the engagement. If you are looking for a partner who understands your market, has built in your verticals, and brings strategic depth alongside technical execution, the strategy call is where that conversation starts.
+              </p>
             </div>
           </div>
         </div>
