@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { ServiceHero } from "@/components/services/ServiceHero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import seoAgencyHero from "@/assets/managed-ai-seo-hero-bg.webp";
@@ -255,71 +256,28 @@ const ManagedAISEO = () => {
 
       <Header />
 
-      <main id="main-content" className="pt-20">
+      <main id="main-content">
         {/* =============================================================== */}
         {/* PROMPT 1 — HERO                                                  */}
         {/* =============================================================== */}
-        <section className="relative overflow-hidden bg-background py-16 lg:py-24">
-          <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-5 gap-10 lg:gap-14 items-center">
-              {/* Text column (60%) */}
-              <div className="lg:col-span-3">
-                <p
-                  className="text-xs font-semibold tracking-[0.18em] uppercase mb-5"
-                  style={{ color: TEAL }}
-                >
-                  Managed AI SEO
-                </p>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-[1.05] mb-6">
-                  Rank Where Your Customers Are Already Searching.
-                </h1>
-                <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-8 max-w-2xl">
-                  AI-powered SEO for small businesses that turns local search into qualified phone
-                  calls, form submissions, and foot traffic — not just rankings.
-                </p>
-
-                {/* Trust row */}
-                <ul className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-foreground/75 mb-8">
-                  <li>6-month campaigns avg +260% organic clicks</li>
-                  <li className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: TEAL }} />
-                  <li>GBP calls climbing 100%+ YoY</li>
-                  <li className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: TEAL }} />
-                  <li>Hero keywords moving 90+ positions</li>
-                </ul>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="hero" size="lg" asChild>
-                    <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
-                      Book Free SEO Audit
-                      <ArrowRight className="w-5 h-5 ml-2" />
-                    </a>
-                  </Button>
-                  <Button variant="heroOutline" size="lg" asChild>
-                    <a href="#methodology">See How It Works</a>
-                  </Button>
-                </div>
-
-                <p className="mt-3 text-sm text-primary font-medium">
-                  No commitment. No pressure. Just a clear path forward for your business.
-                </p>
-              </div>
-
-              {/* Image column (40%) */}
-              <div className="lg:col-span-2">
-                <div className="relative rounded-2xl overflow-hidden ring-1 ring-border shadow-2xl">
-                  <img
-                    src={seoAgencyHero}
-                    alt="Small business owner reviewing SEO analytics and incoming calls on laptop and phone"
-                    width={1920}
-                    height={1080}
-                    fetchPriority="high"
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ServiceHero
+          badge={{ icon: Search, text: "Managed AI SEO" }}
+          title={<>Rank Where Your Customers Are Already</>}
+          titleHighlight="Searching"
+          subtitle="AI-powered SEO for small businesses that turns local search into qualified phone calls, form submissions, and foot traffic — not just rankings."
+          backgroundImage={seoAgencyHero}
+          primaryCTA={{
+            label: "Book Free SEO Audit",
+            href: strategySessionUrl,
+            external: true,
+          }}
+          stats={[
+            { value: "+260%", label: "Avg Organic Clicks (6 mo)" },
+            { value: "+100%", label: "GBP Calls YoY" },
+            { value: "90+", label: "Hero Keyword Positions" },
+            { value: "AEO+GEO", label: "ChatGPT / Perplexity Ready" },
+          ]}
+        />
 
         {/* =============================================================== */}
         {/* PROMPT 2 — TRUST BAR                                             */}
