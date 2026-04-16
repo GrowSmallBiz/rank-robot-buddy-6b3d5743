@@ -13,8 +13,10 @@ import { ServiceHero } from "@/components/services/ServiceHero";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { GlowCard } from "@/components/ui/glow-card";
+import { Badge } from "@/components/ui/badge";
 import {
   ArrowRight,
+  ArrowDown,
   Globe,
   AlertTriangle,
   Wrench,
@@ -37,6 +39,7 @@ import {
   Building,
   CheckCircle2,
   Clock,
+  FileText,
 } from "lucide-react";
 
 const CTA_BASE =
@@ -120,7 +123,7 @@ const includedFeatures = [
     icon: MousePointerClick,
     title: "Strategic Calls to Action",
     description:
-      "A call to action is not just a button. It's a specific prompt, placed at the right moment in the visitor's experience, written in a way that reduces hesitation and makes the next step feel easy. We place CTAs strategically throughout your site and write them to reflect what your ideal customer actually needs to hear before they reach out.",
+      "A call to action is not just a button. It's a specific prompt, placed at the right moment in the visitor's experience, written in a way that reduces hesitation and makes the next step feel easy. We place CTAs strategically throughout your site and write them to reduce hesitation — and make the next step feel easy.",
   },
   {
     icon: Search,
@@ -139,6 +142,7 @@ const includedFeatures = [
 const processSteps = [
   {
     step: "Step 1",
+    icon: Search,
     title: "Strategy and Discovery",
     description:
       "Before anything is designed or written, we spend time understanding your business, your market, and your goals. We look at who your ideal customer is, what they need to see and hear before they trust you enough to reach out, and what specific actions you need your website to drive. We also look at the broader growth picture — how your website will connect to your SEO, your paid advertising, and your lead generation infrastructure.",
@@ -147,6 +151,7 @@ const processSteps = [
   },
   {
     step: "Step 2",
+    icon: FileText,
     title: "Structure and Copy",
     description:
       "We build the wireframes before a single color is chosen or a font is considered. This forces every layout decision to be made on the basis of conversion logic, not visual preference. Alongside the structure, we develop the copy: headlines, service descriptions, trust language, and calls to action, all written to move your specific customer toward contacting you.",
@@ -155,6 +160,7 @@ const processSteps = [
   },
   {
     step: "Step 3",
+    icon: Layout,
     title: "Design and Build",
     description:
       "Once strategy, structure, and copy are locked, design begins. Your site is built to reflect your brand with intention — not with generic templates adapted to fit. We build for mobile-first performance, fast load speed, and the technical standards required for clean SEO architecture. Every design decision is made in service of the conversion goal.",
@@ -163,6 +169,7 @@ const processSteps = [
   },
   {
     step: "Step 4",
+    icon: Link2,
     title: "Launch and Integration",
     description:
       "Before we go live, we connect your site to the systems it needs to function as a lead generation asset: your CRM, booking platform, analytics tools, and any campaign-specific integrations tied to your paid or SEO programs. For clients in a full growth engagement, this is also when the SEO and paid traffic strategies go live on top of the new foundation.",
@@ -298,139 +305,121 @@ const WebsiteDesign = () => {
         overlayOpacity={88}
       />
 
-      {/* Hero extended body copy */}
-      <section className="py-16 lg:py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      {/* HERO EXTENDED — 4-col teal cards (HVAC pattern) */}
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            {/* Lead statement */}
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 animate-fade-up">
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
-                    <Clock className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-foreground mb-2">8 Seconds to Win or Lose a Local Lead</h4>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else.
-                    </p>
-                  </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: Clock, headline: "8 Seconds to Win or Lose a Local Lead", body: "When a potential customer lands on your site, you have roughly eight seconds before they decide whether to stay or leave. If your phone number isn't obvious, your services aren't immediately clear, and there's no compelling reason to reach out — they're gone. And they're calling someone else." },
+              { icon: TrendingUp, headline: "Your Website Is Your Highest-Leverage Small Business Sales Asset", body: "Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them." },
+              { icon: Wrench, headline: "Built for Service Businesses — Not Templates, Not Guesswork", body: "At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you." },
+              { icon: Layers, headline: "The Conversion Foundation Your Entire Growth Strategy Runs Through", body: "But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call." },
+            ].map((item, i) => (
+              <div key={i} className="feature-card-teal text-center animate-fade-up" style={{ animationDelay: `${i * 0.1}s` }}>
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-7 h-7 text-primary" />
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
-                    <TrendingUp className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-foreground mb-2">Your Website Is Your Highest-Leverage Small Business Sales Asset</h4>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      Your website is not a brochure. It's your highest-leverage sales asset. It works around the clock, and within seconds of someone arriving, it either builds confidence or quietly loses them.
-                    </p>
-                  </div>
-                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">{item.headline}</h3>
+                <p className="text-muted-foreground text-sm">{item.body}</p>
               </div>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
-                    <Wrench className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-foreground mb-2">Built for Service Businesses — Not Templates, Not Guesswork</h4>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      At GrowSmallBiz, we build websites specifically for local service businesses — contractors, healthcare practices, med spas, professional services — where every lead represents real revenue. We start with strategy, not templates. Every layout decision, every line of copy, and every call to action is designed to move a visitor toward contacting you.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10 shrink-0 mt-1">
-                    <Layers className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-foreground mb-2">The Conversion Foundation Your Entire Growth Strategy Runs Through</h4>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      But a high-converting website doesn't operate in isolation. It's the conversion foundation of a broader digital growth system — the hub that makes your SEO investment produce actual leads, your paid traffic convert instead of bounce, and your referrals close faster. That's the conversation we start on our free growth strategy call.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* TOPICAL AUTHORITY BLOCK */}
-      <section className="py-20 lg:py-28 bg-secondary/30">
+      {/* TOPICAL AUTHORITY — styled as readable two-column with a sidebar highlight */}
+      <section className="py-20 lg:py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 text-center">
-              What Small Business Website Design Actually Means for a{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Service-Based Company</span>
-            </h2>
-            <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+          <SectionHeader
+            subtitle="TOPICAL DEPTH"
+            title="What Small Business Website Design Actually Means for a"
+            titleHighlight="Service-Based Company"
+          />
+
+          <div className="grid lg:grid-cols-5 gap-10 max-w-6xl mx-auto">
+            <div className="lg:col-span-3 space-y-6 text-muted-foreground leading-relaxed animate-fade-up">
               <p>
                 Small business website design is not the same as e-commerce website design or enterprise web development — and the difference matters more than most business owners realize. E-commerce sites are optimized for product browsing, cart conversion, and transaction volume. Enterprise sites are built for brand positioning and investor relations. Small business website design, especially for service-based companies, is built around a completely different objective: generating qualified local leads. That means phone calls, appointment bookings, quote requests, and form submissions from real prospective customers in your market.
               </p>
               <p>
                 Service businesses face a conversion challenge that product businesses don't. A customer buying a product can evaluate it directly — they see it, read reviews, and add it to a cart. A customer hiring a service is buying something they cannot see before they commit: your reliability, your expertise, your professionalism. The entire job of your website is to make that invisible thing feel visible and trustworthy enough to prompt a call. That requires a fundamentally different approach to layout, copy, trust signals, and calls to action than a retail or template-based website will ever produce.
               </p>
-              <p>
-                A well-executed small business website design for a service company does five things consistently: it communicates what you do and who you serve within the first few seconds of arrival; it establishes credibility through real, specific proof — reviews, credentials, licensing, years in business; it guides visitors toward a single clear action through strategic placement of calls to action; it performs as well on a mobile phone at 9pm as it does on a desktop browser at noon; and it is built on a technical foundation that supports your SEO investment from day one. When all five are working together, the website stops being a cost and starts being your most reliable lead generation channel.
-              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 2 — THE PROBLEM */}
-      <section className="py-20 lg:py-28">
-        <div className="container mx-auto px-4">
-          <SectionHeader
-            subtitle="THE PROBLEM"
-            title="Most Local Business Websites Were Built to Exist —"
-            titleHighlight="Not to Convert"
-            description="There's a difference between a website that looks good and a website that works. Most local businesses have the first kind."
-          />
-
-          <div className="max-w-5xl mx-auto animate-fade-up">
-            {/* Two-column narrative */}
-            <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 mb-12">
-              <div className="lg:col-span-3 space-y-6 text-muted-foreground text-lg leading-relaxed">
-                <p>
-                  Here's how most local business websites get built: a developer creates something visually clean, the owner approves it, and it goes live. Nobody asks whether the page structure guides visitors toward a decision. Nobody asks whether trust is being established quickly enough — or whether a prospect on a mobile phone at 9pm can find a phone number in under three seconds.
-                </p>
-                <p>
-                  The result is a site that sits there — looking fine, doing nothing.
-                </p>
-                <p>
-                  This is not a minor issue. Every visitor who lands on your site and leaves without contacting you is a missed opportunity. And when you're running Google Ads, investing in SEO, or counting on referrals to drive traffic, a website that doesn't convert is quietly draining every dollar you spend on marketing.
-                </p>
-              </div>
-              <div className="lg:col-span-2">
-                <div className="rounded-2xl border-2 border-destructive/30 bg-destructive/5 p-6 lg:p-8 h-full">
-                  <p className="font-semibold text-foreground mb-4 text-lg">Here's what a non-converting website typically looks like:</p>
-                  <ul className="space-y-3">
-                    {problemBullets.map((bullet, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <AlertTriangle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
-                        <span className="text-muted-foreground text-sm leading-relaxed">{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
+            <div className="lg:col-span-2 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+              <GlowCard className="p-8 h-full border-primary/20">
+                <div className="p-3 rounded-xl bg-primary/10 w-fit mb-4">
+                  <CheckCircle2 className="h-6 w-6 text-primary" />
                 </div>
-              </div>
-            </div>
-
-            {/* Closing callout */}
-            <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 lg:p-8 text-center">
-              <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-                A website that doesn't convert isn't a neutral investment. It's an active liability — costing you leads, bookings, and revenue every day it stays the way it is. And it's undermining every other marketing channel you're running at the same time.
-              </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  A well-executed small business website design for a service company does five things consistently: it communicates what you do and who you serve within the first few seconds of arrival; it establishes credibility through real, specific proof — reviews, credentials, licensing, years in business; it guides visitors toward a single clear action through strategic placement of calls to action; it performs as well on a mobile phone at 9pm as it does on a desktop browser at noon; and it is built on a technical foundation that supports your SEO investment from day one. When all five are working together, the website stops being a cost and starts being your most reliable lead generation channel.
+                </p>
+              </GlowCard>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 3 — WHAT WE BUILD */}
-      <section className="py-20 lg:py-28 bg-secondary/30">
+      {/* SECTION 2 — THE PROBLEM (Pain Points pattern from HVAC) */}
+      <section id="the-problem" className="py-24 relative bg-slate-800/40 scroll-mt-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-orange-500/5" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
+              Most Local Business Websites Were Built to Exist —{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Not to Convert</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              There's a difference between a website that looks good and a website that works. Most local businesses have the first kind.
+            </p>
+          </div>
+
+          {/* Two-column: Narrative + Problem bullets in GlowCard */}
+          <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 mb-12 max-w-6xl mx-auto">
+            <div className="lg:col-span-3 space-y-6 text-muted-foreground text-lg leading-relaxed animate-fade-up">
+              <p>
+                Here's how most local business websites get built: a developer creates something visually clean, the owner approves it, and it goes live. Nobody asks whether the page structure guides visitors toward a decision. Nobody asks whether trust is being established quickly enough — or whether a prospect on a mobile phone at 9pm can find a phone number in under three seconds.
+              </p>
+              <p>
+                The result is a site that sits there — looking fine, doing nothing.
+              </p>
+              <p>
+                This is not a minor issue. Every visitor who lands on your site and leaves without contacting you is a missed opportunity. And when you're running Google Ads, investing in SEO, or counting on referrals to drive traffic, a website that doesn't convert is quietly draining every dollar you spend on marketing.
+              </p>
+            </div>
+            <div className="lg:col-span-2 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+              <GlowCard className="p-6 lg:p-8 h-full border-red-500/20 hover:border-red-500/40">
+                <p className="font-semibold text-foreground mb-4 text-lg">Here's what a non-converting website typically looks like:</p>
+                <ul className="space-y-3">
+                  {problemBullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <AlertTriangle className="h-5 w-5 text-red-400 mt-0.5 shrink-0" />
+                      <span className="text-muted-foreground text-sm leading-relaxed">{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </GlowCard>
+            </div>
+          </div>
+
+          {/* Transition arrow (HVAC pattern) */}
+          <div className="relative py-8">
+            <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-amber-500/50 via-primary to-primary/50" />
+            <div className="relative z-10 flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-primary flex items-center justify-center shadow-lg shadow-primary/30 mb-4">
+                <ArrowDown className="w-6 h-6 text-white animate-bounce" />
+              </div>
+              <div className="bg-card/90 backdrop-blur-sm border border-primary/30 rounded-2xl px-8 py-4 text-center max-w-xl shadow-xl">
+                <p className="text-lg font-semibold text-foreground mb-1">
+                  A website that doesn't convert isn't a neutral investment. It's an active liability — costing you leads, bookings, and revenue every day it stays the way it is. And it's undermining every other marketing channel you're running at the same time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3 — WHAT WE BUILD (teal card grid) */}
+      <section className="py-20 lg:py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="WHAT WE BUILD"
@@ -439,106 +428,87 @@ const WebsiteDesign = () => {
             description="Every site we deliver is purpose-built around one question: what do you need a visitor to do — and what does it take to make that easy? The answer to that question shapes your website. And your website shapes everything else."
           />
 
-          <div className="max-w-5xl mx-auto animate-fade-up">
-            {/* Staggered two-column narrative */}
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
-              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2.5 rounded-lg bg-primary/10">
-                    <Search className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground">Strategy First</h3>
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+            {[
+              { icon: Search, title: "Strategy First", body: "Before we touch a design or write a line of copy, we do strategy. We look at your business, your market, your ideal customer, and the specific action you need your website to drive — whether that's a phone call, a form submission, a booking, or a quote request. Every decision after that is made in service of that outcome." },
+              { icon: MousePointerClick, title: "Built for Real People", body: "That means your website isn't built around what looks attractive to a designer. It's built around what moves a real person — someone who found you on Google or clicked your ad — to trust you quickly, understand your value clearly, and take the next step without friction." },
+              { icon: CheckCircle2, title: "Clarity at Every Level", body: "In practice, that looks like this: your homepage communicates exactly what you do and who you serve within seconds of arrival. Your services are described in terms of outcomes, not just tasks. Your credibility is established through proof — real reviews, verifiable credentials, and specifics that matter to a buyer in your market. Your calls to action are clear, well-placed, and written to reduce hesitation. And your site performs just as well on a phone as it does on a desktop." },
+              { icon: Link2, title: "Connected From Day One", body: "Your website is also built from day one to integrate with the rest of your marketing — connecting to your CRM, booking system, and tracking tools. It's the conversion hub of the Digital Dominance Method, designed to work alongside your SEO, paid advertising, and lead generation efforts — not as a standalone project handed off and forgotten." },
+            ].map((item, i) => (
+              <div key={i} className="feature-card-teal animate-fade-up" style={{ animationDelay: `${i * 0.1}s` }}>
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-primary" />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  Before we touch a design or write a line of copy, we do strategy. We look at your business, your market, your ideal customer, and the specific action you need your website to drive — whether that's a phone call, a form submission, a booking, or a quote request. Every decision after that is made in service of that outcome.
-                </p>
-              </GlowCard>
-
-              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2.5 rounded-lg bg-primary/10">
-                    <MousePointerClick className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground">Built for Real People</h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  That means your website isn't built around what looks attractive to a designer. It's built around what moves a real person — someone who found you on Google or clicked your ad — to trust you quickly, understand your value clearly, and take the next step without friction.
-                </p>
-              </GlowCard>
-
-              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2.5 rounded-lg bg-primary/10">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground">Clarity at Every Level</h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  In practice, that looks like this: your homepage communicates exactly what you do and who you serve within seconds of arrival. Your services are described in terms of outcomes, not just tasks. Your credibility is established through proof — real reviews, verifiable credentials, and specifics that matter to a buyer in your market. Your calls to action are clear, well-placed, and written to reduce hesitation. And your site performs just as well on a phone as it does on a desktop.
-                </p>
-              </GlowCard>
-
-              <GlowCard className="p-8" glowOnHover liftOnHover={false}>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2.5 rounded-lg bg-primary/10">
-                    <Link2 className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground">Connected From Day One</h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  Your website is also built from day one to integrate with the rest of your marketing — connecting to your CRM, booking system, and tracking tools. It's the conversion hub of the Digital Dominance Method, designed to work alongside your SEO, paid advertising, and lead generation efforts — not as a standalone project handed off and forgotten.
-                </p>
-              </GlowCard>
-            </div>
-
-            {/* Callout box - How We Work only */}
-            <div className="max-w-4xl mx-auto">
-              <div className="rounded-2xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm p-8 animate-fade-up">
-                <h3 className="text-xl font-bold text-foreground mb-4">A note on how we work:</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  GrowSmallBiz builds websites as part of a broader digital growth engagement. We don't take on design-only or website-only projects. The reason is straightforward: a high-converting website, built in isolation from your SEO strategy, your paid traffic, and your lead generation infrastructure, is a foundation with nothing built on top of it. Our clients get the website and the growth system it's designed to support. If you're looking for that kind of partnership — not just a new site — the strategy call is the right place to start.
-                </p>
+                <h3 className="font-display font-semibold text-foreground mb-3">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{item.body}</p>
               </div>
-            </div>
+            ))}
+          </div>
+
+          {/* How We Work callout */}
+          <div className="max-w-3xl mx-auto animate-fade-up">
+            <GlowCard className="p-8 border-primary/20">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-xl bg-primary/10 shrink-0">
+                  <FileText className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-3">A note on how we work:</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    GrowSmallBiz builds websites as part of a broader digital growth engagement. We don't take on design-only or website-only projects. The reason is straightforward: a high-converting website, built in isolation from your SEO strategy, your paid traffic, and your lead generation infrastructure, is a foundation with nothing built on top of it. Our clients get the website and the growth system it's designed to support. If you're looking for that kind of partnership — not just a new site — the strategy call is the right place to start.
+                  </p>
+                </div>
+              </div>
+            </GlowCard>
           </div>
         </div>
       </section>
 
-      {/* SECTION — WHY GROWSMALLBIZ (H2) */}
-      <section className="py-20 lg:py-28 bg-secondary/30 border-y border-primary/10">
-        <div className="container mx-auto px-4">
-          <SectionHeader
-            subtitle="YOUR GROWTH PARTNER"
-            title="Why GrowSmallBiz"
-            titleHighlight=""
-            description=""
-          />
+      {/* MID-PAGE CTA #1 */}
+      <CardCTA
+        title="Your Website Should Be Your Best Salesperson"
+        description="If it's not generating leads, that's a solvable problem — and it's usually just the beginning. Let's talk strategy."
+        buttonText="Schedule Strategy Call"
+        buttonHref={CTA_URL}
+        accentWords={["Best Salesperson"]}
+        sectionClassName="py-16"
+      />
 
-          <div className="max-w-4xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-8">
-              <div className="animate-fade-up">
-                <p className="text-muted-foreground leading-relaxed text-lg">
-                  GrowSmallBiz was built on over 30 years of hands-on experience in sales, marketing, and digital transformation — including Fortune 500 engagements across supply chain, revenue operations, and go-to-market strategy. That background informs everything about how we approach a local service business website: with the same strategic rigor applied to enterprise growth, scaled and focused on what actually moves the needle for a contractor, a med spa, a dental practice, or a professional services firm.
-                </p>
-              </div>
-              <div className="animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <p className="text-muted-foreground leading-relaxed text-lg">
-                  We work exclusively with local service businesses — which means we are not learning your industry on your dime. We know what makes a homeowner choose one roofing contractor over another. We know what a patient needs to see before booking an aesthetic treatment. We know what trust signals matter to someone vetting a financial advisor versus a plumber. That specificity is not learned from a course — it is earned from building and optimizing websites, SEO campaigns, and lead generation systems for service businesses across the San Francisco Bay Area and nationally.
-                </p>
-              </div>
-            </div>
+      {/* SECTION — WHY GROWSMALLBIZ (WhyChooseUs pattern from HVAC) */}
+      <section className="py-24 relative overflow-hidden border-t bg-card/80 border-primary/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-transparent opacity-50" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <p className="text-primary font-medium mb-4">YOUR GROWTH PARTNER</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-foreground">
+              Why GrowSmallBiz
+            </h2>
+          </div>
 
-            <div className="mt-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                Most web design agencies hand you a finished site and move on. We build websites as the foundation of a broader digital growth system — and we stay in the engagement. If you are looking for a partner who understands your market, has built in your verticals, and brings strategic depth alongside technical execution, the strategy call is where that conversation starts.
-              </p>
-            </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: Shield, title: "30+ Years of Growth Experience", description: "GrowSmallBiz was built on over 30 years of hands-on experience in sales, marketing, and digital transformation — including Fortune 500 engagements across supply chain, revenue operations, and go-to-market strategy. That background informs everything about how we approach a local service business website: with the same strategic rigor applied to enterprise growth, scaled and focused on what actually moves the needle for a contractor, a med spa, a dental practice, or a professional services firm." },
+              { icon: Eye, title: "We Know Your Industry", description: "We work exclusively with local service businesses — which means we are not learning your industry on your dime. We know what makes a homeowner choose one roofing contractor over another. We know what a patient needs to see before booking an aesthetic treatment. We know what trust signals matter to someone vetting a financial advisor versus a plumber. That specificity is not learned from a course — it is earned from building and optimizing websites, SEO campaigns, and lead generation systems for service businesses across the San Francisco Bay Area and nationally." },
+              { icon: Link2, title: "We Stay in the Engagement", description: "Most web design agencies hand you a finished site and move on. We build websites as the foundation of a broader digital growth system — and we stay in the engagement. If you are looking for a partner who understands your market, has built in your verticals, and brings strategic depth alongside technical execution, the strategy call is where that conversation starts." },
+            ].map((card, index) => (
+              <div
+                key={index}
+                className="feature-card-teal space-y-4 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <card.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-display font-semibold text-foreground">{card.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{card.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 4 — WHAT'S INCLUDED */}
-      <section className="py-20 lg:py-28">
+      {/* SECTION 4 — WHAT'S INCLUDED (alternating icon+card pattern from HVAC HowItWorks) */}
+      <section className="py-20 lg:py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="WHAT'S INCLUDED"
@@ -547,20 +517,33 @@ const WebsiteDesign = () => {
             description={`These aren't add-ons or upgrade tiers. Every site we build includes the full conversion architecture — because a website missing any of these elements has a hole in it. And because every site we deliver is designed to function as the foundation of a larger growth system, the bar for what \u201Ccomplete\u201D means is set accordingly.`}
           />
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {includedFeatures.map((feature, index) => (
-              <GlowCard key={index} className="p-8 animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10 shrink-0">
-                    <feature.icon className="h-6 w-6 text-primary" />
+          <div className="mt-16 space-y-12 max-w-5xl mx-auto">
+            {includedFeatures.map((feature, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <div
+                  key={index}
+                  className={`flex flex-col md:flex-row items-center gap-8 animate-fade-up ${
+                    !isEven ? "md:flex-row-reverse" : ""
+                  }`}
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  {/* Step number + icon */}
+                  <div className="flex-shrink-0 flex flex-col items-center gap-3">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center shadow-lg">
+                      <feature.icon className="w-10 h-10 text-primary-foreground" />
+                    </div>
+                    <span className="text-4xl font-black text-primary/20">{String(index + 1).padStart(2, '0')}</span>
                   </div>
-                  <div>
+
+                  {/* Content */}
+                  <GlowCard className="flex-1 p-8">
                     <h3 className="text-xl font-bold text-foreground mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
-                  </div>
+                  </GlowCard>
                 </div>
-              </GlowCard>
-            ))}
+              );
+            })}
           </div>
 
           <div className="text-center mt-12 animate-fade-up">
@@ -575,7 +558,7 @@ const WebsiteDesign = () => {
       </section>
 
       {/* SECTION 5 — WHY THIS MATTERS */}
-      <section className="py-20 lg:py-28 bg-secondary/30">
+      <section className="py-20 lg:py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="WHY THIS MATTERS"
@@ -587,22 +570,22 @@ const WebsiteDesign = () => {
           <div className="max-w-5xl mx-auto animate-fade-up">
             {/* Opening narrative — two-column */}
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
-              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                <p>
+              <GlowCard className="p-8">
+                <p className="text-muted-foreground leading-relaxed">
                   Think through the path a new customer takes before they contact you. Maybe they searched for a service in your area and found you on Google. Maybe a neighbor mentioned your name. Maybe they clicked your ad. In almost every case, the next thing they do is visit your website. That visit is the moment. And it's almost entirely within your control.
                 </p>
-                <p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
                   If your site communicates clearly — here's who we are, here's what we do, here's why we're the right choice, here's how to reach us — a meaningful percentage of those visitors will contact you. If it doesn't, they'll hesitate. And hesitation almost always ends the same way: a closed tab and a competitor's number getting dialed instead.
                 </p>
-              </div>
-              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                <p>
+              </GlowCard>
+              <GlowCard className="p-8" style={{ animationDelay: "0.1s" }}>
+                <p className="text-muted-foreground leading-relaxed">
                   This is why your website isn't just one marketing asset among many — it's the conversion layer that your entire growth strategy runs through. Every channel feeds it. Every dollar you spend on visibility, traffic, and reach either pays off or gets wasted based on what happens when a prospect arrives.
                 </p>
-                <p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
                   A strong website makes your Google Ads more profitable — because the traffic you're paying for actually converts. It makes your SEO investment produce real leads instead of just rankings. It makes your referrals close faster, because the prospect arrives informed and leaves ready to book. It gives your social media a destination worth sending people to.
                 </p>
-              </div>
+              </GlowCard>
             </div>
 
             {/* Contrast callouts */}
@@ -622,52 +605,64 @@ const WebsiteDesign = () => {
         </div>
       </section>
 
-      {/* SECTION 6 — HOW IT WORKS */}
-      <section className="py-20 lg:py-28">
+      {/* MID-PAGE CTA #2 */}
+      <CardCTA
+        title="Let's Talk About Your Website"
+        description="If your website isn't generating leads, that's a solvable problem. Schedule a free strategy call and we'll show you where the gaps are."
+        buttonText="Schedule Strategy Call"
+        buttonHref={CTA_URL}
+        accentWords={["Free", "Strategy Call"]}
+        sectionClassName="py-16"
+      />
+
+      {/* SECTION 6 — HOW IT WORKS (alternating zigzag from HVAC) */}
+      <section className="py-20 lg:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <SectionHeader
-            subtitle="HOW IT WORKS"
-            title="From Strategy to Launch: What the Process"
-            titleHighlight="Looks Like"
-            description="Every project follows the same four-phase process — because the order matters. Strategy before design. Structure before aesthetics. Launch into a connected system, not into a vacuum."
-          />
+          <div className="flex justify-center mb-6">
+            <Badge variant="outline" className="text-primary border-primary/30 px-4 py-1.5 text-sm">
+              HOW IT WORKS
+            </Badge>
+          </div>
+          <div className="text-center mb-10 animate-fade-up">
+            <h2 className="section-title">
+              From Strategy to Launch: What the Process{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Looks Like</span>
+            </h2>
+          </div>
+          <p className="section-description text-center mt-4 mb-16 max-w-3xl mx-auto">
+            Every project follows the same four-phase process — because the order matters. Strategy before design. Structure before aesthetics. Launch into a connected system, not into a vacuum.
+          </p>
 
-          <div className="relative max-w-5xl mx-auto">
-            {/* Vertical center line */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-primary/30 -translate-x-1/2" />
-
-            <div className="space-y-16">
-              {processSteps.map((step, index) => {
-                const isLeft = index % 2 === 0;
-                return (
-                  <div
-                    key={index}
-                    className="relative animate-fade-up"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {/* Dot on the center line */}
-                    <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-primary z-10" />
-
-                    {/* Horizontal connector from dot to card */}
-                    <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 h-px bg-primary/30 ${isLeft ? 'right-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]' : 'left-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]'}`} />
-
-                    <div className={`md:w-[calc(50%-2rem)] ${isLeft ? 'md:mr-auto' : 'md:ml-auto'}`}>
-                      <div className="feature-card-teal rounded-2xl p-8">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                            <span className="text-sm font-bold text-primary-foreground">{index + 1}</span>
-                          </div>
-                          <span className="text-sm font-semibold text-primary">{step.step}</span>
-                        </div>
-                        <h3 className="text-xl font-bold text-foreground mb-4">{step.title}</h3>
-                        <p className="text-muted-foreground leading-relaxed mb-4">{step.description}</p>
-                        <p className="text-sm font-medium text-primary/80 italic">{step.deliverable}</p>
-                      </div>
+          <div className="mt-16 space-y-16 max-w-5xl mx-auto">
+            {processSteps.map((step, i) => {
+              const StepIcon = step.icon;
+              const isEven = i % 2 === 0;
+              return (
+                <div
+                  key={i}
+                  className={`flex flex-col md:flex-row items-center gap-8 animate-fade-up ${
+                    !isEven ? "md:flex-row-reverse" : ""
+                  }`}
+                  style={{ animationDelay: `${i * 0.1}s` }}
+                >
+                  <div className="flex-shrink-0 flex flex-col items-center gap-3">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center shadow-lg">
+                      <StepIcon className="w-10 h-10 text-primary-foreground" />
                     </div>
+                    <span className="text-4xl font-black text-primary/20">{step.step.replace("Step ", "")}</span>
                   </div>
-                );
-              })}
-            </div>
+
+                  <GlowCard className="flex-1 p-8">
+                    <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
+                    <p className="text-muted-foreground mb-4">{step.description}</p>
+                    <div className="flex items-start gap-2 p-3 rounded-lg bg-primary/5 border border-primary/10">
+                      <FileText className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <p className="text-sm text-foreground font-medium">{step.deliverable}</p>
+                    </div>
+                  </GlowCard>
+                </div>
+              );
+            })}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-up">
@@ -684,8 +679,8 @@ const WebsiteDesign = () => {
         </div>
       </section>
 
-      {/* SECTION 7 — AFTER LAUNCH */}
-      <section className="py-20 lg:py-28 bg-secondary/30">
+      {/* SECTION 7 — AFTER LAUNCH (3-col teal cards) */}
+      <section className="py-20 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="AFTER LAUNCH"
@@ -694,22 +689,26 @@ const WebsiteDesign = () => {
             description="A high-converting website doesn't just perform better in isolation. It raises the performance ceiling on every other part of your marketing."
           />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {afterLaunchItems.map((item, index) => (
-              <GlowCard key={index} className="p-8 animate-fade-up" style={{ animationDelay: `${index * 0.05}s` }}>
-                <div className="p-3 rounded-xl bg-primary/10 w-fit mb-4">
-                  <item.icon className="h-6 w-6 text-primary" />
+              <div
+                key={index}
+                className="feature-card-teal space-y-4 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <item.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">{item.description}</p>
-              </GlowCard>
+                <h3 className="font-display font-semibold text-foreground">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 8 — WHO THIS IS FOR */}
-      <section className="py-20 lg:py-28">
+      {/* SECTION 8 — WHO THIS IS FOR (industry teal cards in 2-col + 1) */}
+      <section className="py-20 lg:py-24 bg-background">
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="WHO THIS IS FOR"
@@ -718,22 +717,18 @@ const WebsiteDesign = () => {
             description="We work exclusively with local service businesses — which means every framework we apply, every trust signal we build in, and every conversion decision we make is based on what actually moves customers in your category. Not generic best practices. Specific, earned knowledge of what works in your market."
           />
 
-          <div className="space-y-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {industries.map((industry, index) => (
               <div
                 key={index}
-                className="feature-card-teal rounded-2xl p-8 animate-fade-up"
-                style={{ animationDelay: `${index * 0.05}s` }}
+                className="feature-card-teal space-y-4 animate-fade-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10 shrink-0">
-                    <industry.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">{industry.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{industry.description}</p>
-                  </div>
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <industry.icon className="w-6 h-6 text-primary" />
                 </div>
+                <h3 className="font-display font-semibold text-foreground">{industry.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{industry.description}</p>
               </div>
             ))}
           </div>
@@ -755,7 +750,7 @@ const WebsiteDesign = () => {
       />
 
       {/* SECTION 10 — FINAL CTA */}
-      <section className="py-20 lg:py-28" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+      <section className="py-20 lg:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
             <p className="text-primary font-medium mb-4">READY TO TALK STRATEGY?</p>
@@ -770,20 +765,20 @@ const WebsiteDesign = () => {
 
           <div className="max-w-4xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-              <div className="space-y-6">
-                <p className="text-xl font-semibold text-foreground">That's what the free growth strategy call is for.</p>
-                <p className="text-muted-foreground text-lg leading-relaxed">
+              <GlowCard className="p-8">
+                <p className="text-xl font-semibold text-foreground mb-4">That's what the free growth strategy call is for.</p>
+                <p className="text-muted-foreground leading-relaxed">
                   In 30 minutes, we'll look at your current website, identify the specific gaps that are costing you leads, and walk you through what a conversion-focused rebuild would look like for your business. We'll also look at the bigger picture: how your website connects to your SEO, your paid traffic, and your lead generation system — and where the highest-leverage opportunities are in your specific market.
                 </p>
-              </div>
-              <div className="space-y-6">
-                <p className="text-muted-foreground text-lg leading-relaxed">
+              </GlowCard>
+              <GlowCard className="p-8" style={{ animationDelay: "0.2s" }}>
+                <p className="text-muted-foreground leading-relaxed mb-4">
                   This isn't a website consultation. It's a growth strategy conversation. The website is almost always where it starts — because without a strong conversion foundation, nothing else performs the way it should. But the call covers the full picture: website, AI SEO, paid search, conversion strategy, and what a complete digital growth system looks like for a business like yours.
                 </p>
                 <p className="text-lg font-medium text-foreground border-l-4 border-primary pl-4">
                   No pitch deck. No pressure. No obligation. Just clarity on where you are, where you could be, and what it would take to get there.
                 </p>
-              </div>
+              </GlowCard>
             </div>
           </div>
 
