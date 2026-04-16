@@ -384,20 +384,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ─── PROOF STRIP (Prompt 3) ─── */}
-      <section className="py-8" style={{ backgroundColor: "#0F2545" }}>
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
-            {proofMetrics.map((item, i) => (
-              <div key={i} className="text-center py-6 md:py-0 md:px-8">
-                <p className="text-3xl md:text-4xl font-display font-bold text-primary mb-1">{item.metric}</p>
-                <p className="text-sm text-foreground mb-1">{item.label}</p>
-                <p className="text-xs" style={{ color: "#94A3B8" }}>{item.attribution}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ─── GEO CONVERSATIONAL QUERIES (Prompt 4) ─── */}
       <section className="py-16">
