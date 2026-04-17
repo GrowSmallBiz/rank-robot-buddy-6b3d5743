@@ -31,6 +31,8 @@ interface FAQSectionProps {
   faqs: FAQItem[];
   schemaType?: string;
   contactCTA?: ContactCTA;
+  /** Optional stable @id URI for the FAQPage entity (e.g. for entity-graph cross-referencing). */
+  schemaId?: string;
 }
 
 export const FAQSection = ({ 
@@ -38,12 +40,14 @@ export const FAQSection = ({
   subtitle,
   faqs,
   schemaType = "FAQPage",
-  contactCTA
+  contactCTA,
+  schemaId,
 }: FAQSectionProps) => {
   // Generate FAQ Schema for SEO
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": schemaType,
+    ...(schemaId && { "@id": schemaId }),
     "mainEntity": faqs.map((faq) => ({
       "@type": "Question",
       "name": faq.question,
