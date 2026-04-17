@@ -261,7 +261,7 @@ const ManagedAISEO = () => {
             />
 
             <div className="max-w-5xl mx-auto animate-fade-up">
-              <div className="rounded-2xl border border-border bg-card/40 p-8 md:p-12">
+              <div className="feature-card-teal p-8 md:p-12">
                 <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
@@ -280,7 +280,7 @@ const ManagedAISEO = () => {
                     </p>
                   </div>
                 </div>
-                <div className="mt-8 pt-8 border-t border-border">
+                <div className="mt-8 pt-8 border-t border-[hsl(188_78%_41%_/_0.3)]">
                   <p className="text-lg font-medium text-foreground text-center max-w-3xl mx-auto">
                     The result is a search presence that compounds month over month, building lasting visibility and a reliable flow of qualified local leads.
                   </p>
@@ -356,7 +356,7 @@ const ManagedAISEO = () => {
 
             <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8 animate-fade-up">
               {/* Strong fit */}
-              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-8">
+              <div className="feature-card-teal p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
@@ -381,7 +381,7 @@ const ManagedAISEO = () => {
               </div>
 
               {/* Not the right fit */}
-              <div className="rounded-2xl border border-border bg-card/50 p-8">
+              <div className="feature-card-teal p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
                     <Users className="w-5 h-5 text-muted-foreground" />
@@ -427,7 +427,7 @@ const ManagedAISEO = () => {
                       <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 h-px bg-primary/30 ${isLeft ? 'right-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]' : 'left-[calc(50%+0.375rem)] w-[calc(2rem-0.375rem)]'}`} />
 
                       <div className={`md:w-[calc(50%-2rem)] ${isLeft ? 'md:mr-auto' : 'md:ml-auto'}`}>
-                        <div className="bg-card/50 border-2 border-border/60 rounded-2xl p-8 hover:shadow-[0_0_30px_rgba(255,127,80,0.3)] hover:border-primary/50 transition-all duration-300">
+                        <div className="feature-card-teal p-8">
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
                               <span className="text-sm font-bold text-primary-foreground">{index + 1}</span>
