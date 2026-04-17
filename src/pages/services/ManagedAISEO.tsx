@@ -102,14 +102,14 @@ const pillars = [
   {
     icon: MessageCircleQuestion,
     title: "AEO (Answer Engine Optimization)",
-    description: "Search behavior has shifted. People ask questions and expect direct answers — in featured snippets, in People Also Ask results, and increasingly through AI-assisted search interfaces. GrowSmallBiz structures your content to be surfaced as the answer.",
+    description: "Buyers ask questions — and they expect direct answers. Featured snippets, People Also Ask, and AI-assisted search interfaces reward content structured to be cited as the answer. GrowSmallBiz builds that structure into every page we touch, so when a prospect asks a question in your category, your business is the one Google pulls the answer from.",
     covers: ["FAQ optimization", "Question-and-answer content structure", "Featured snippet targeting", "Direct-answer formatting", "Semantic answer blocks", "Structured response formatting", "Content optimized for answer engines and AI assistants"],
     link: "/services/seo-agency/aeo/",
   },
   {
     icon: Globe,
     title: "GEO / AI-Search Visibility",
-    description: "AI-driven search is no longer a future consideration — it is here. Generative Engine Optimization (GEO) is the discipline of ensuring your business is visible and credible within AI-driven search environments. GrowSmallBiz structures your content, entities, and online presence so AI search systems can accurately identify what you do, where you operate, and why you are a trusted choice.",
+    description: "ChatGPT, Perplexity, Gemini, and Google AI Overviews are already answering the questions prospects used to type into Google. If your business is not structured to be discovered and cited by these engines, you are invisible to a rapidly growing share of the market. GrowSmallBiz engineers your content, entity signals, and online presence to be surfaced, quoted, and cited across every major AI search environment.",
     covers: ["AI-search readiness", "Entity clarity", "Structured content for AI discovery", "Brand/entity reinforcement", "Citation-worthy content structure", "Content formatting for LLM discovery", "Visibility across emerging AI-driven search environments"],
     link: "/services/seo-agency/geo/",
   },
@@ -173,6 +173,9 @@ const faqs = [
   { question: "How do you report results?", answer: "Each month you receive a performance summary covering keyword rankings, local visibility, traffic trends, the specific work completed, and strategic recommendations for the upcoming period. Reports are written to be understood by a business owner, not an SEO analyst." },
   { question: "Does SEO work with paid advertising?", answer: "Yes — and they work better together. Paid ads deliver immediate visibility while SEO builds sustained organic presence. Over time, strong organic rankings reduce dependence on paid traffic and lower your overall cost per lead." },
   { question: "What makes your approach different from a standard SEO agency?", answer: "Three things: specialization, completeness, and integration. We specialize exclusively in local service businesses. We manage all eight pillars of SEO simultaneously. And the program is integrated with your broader marketing channels through the Digital Dominance Method — so everything works together rather than in silos." },
+  { question: "How much does Managed AI SEO cost?", answer: "Managed AI SEO pricing is a flat monthly fee based on two factors: the number of Google Business Profiles we optimize (single-location vs multi-location) and the number of services within the campaign. We do not publish tiered pricing on the website because every business has a different competitive landscape, service mix, and starting baseline. Pricing is presented during a discovery call after we understand your market, current SEO standing, and growth goals — so the scope is defined and the quote matches the work. There are no long-term contracts. The engagement starts with a 3-month foundation commitment, then continues month-to-month." },
+  { question: "Do I need a Google Business Profile to work with GrowSmallBiz?", answer: "Yes — a claimed and verified Google Business Profile is foundational. For local service businesses, 60%+ of conversions come through GBP, not the website. If you do not have a GBP or it is not verified, that is the first thing we fix during onboarding. If you have a GBP that is claimed but underoptimized (missing categories, incomplete services, no photos, no posts, inconsistent NAP), that is also standard onboarding work. Businesses without a physical location can use a service-area business (SAB) profile — we work with both." },
+  { question: "Will AI search like ChatGPT and Google AI Overviews replace traditional SEO?", answer: "No — they are additive, not replacement. Traditional SEO (ranking pages in Google's blue-link results) still drives the largest share of qualified local traffic. What is changing is that ChatGPT, Perplexity, Gemini, and Google AI Overviews are now surfacing answers before a user even clicks a link. Businesses that are structured for AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) get cited in those AI answers. Businesses that are not, get skipped. Managed AI SEO covers all three — traditional SEO, AEO, and GEO — as one integrated system." },
 ];
 
 const ManagedAISEO = () => {
@@ -217,7 +220,7 @@ const ManagedAISEO = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-foreground leading-tight animate-fade-up">
-                The Complete Managed AI SEO System for{" "}
+                The Complete Managed AI SEO Agency for{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-primary">
                   Local Service Businesses
                 </span>
@@ -547,7 +550,7 @@ const ManagedAISEO = () => {
         <WhyChooseSection
           title="Why GrowSmallBiz — and Not a Generalist SEO Agency"
           subtitle="OUR DIFFERENCE"
-          description="Founded by a marketing strategist with a background in Fortune 500 brand building and local service growth."
+          description="Founded by Subrata Guha — 30+ years leading enterprise business applications across Sales & Marketing and Supply Chain for Fortune 500 organizations. Now bringing that same AI-driven discipline to local service businesses: faster execution, measurable pipeline growth, and the kind of operational accountability most agencies never deliver."
           items={whyGSBItems}
         />
 
