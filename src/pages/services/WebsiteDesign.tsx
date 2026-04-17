@@ -10,6 +10,14 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { GlowCard } from "@/components/ui/glow-card";
