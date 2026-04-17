@@ -442,6 +442,67 @@ const ManagedAISEO = () => {
           </div>
         </section>
 
+        {/* STATS STRIP — Why Local SEO Matters Now */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto max-w-6xl px-4">
+            <p className="text-center text-primary font-bold tracking-widest uppercase text-[13px] mb-10">
+              Why Local SEO Matters Now
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+              {[
+                {
+                  number: "46%",
+                  descriptor: "of all Google searches have local intent.",
+                  sourceName: "BrightLocal Local Consumer Review Survey",
+                  sourceYear: "2024",
+                  sourceUrl: "https://www.brightlocal.com/research/local-consumer-review-survey/",
+                },
+                {
+                  number: "64%",
+                  descriptor: "of local searches convert within 24 hours — if your business shows up.",
+                  sourceName: "Google Consumer Insights",
+                  sourceYear: "2024",
+                  sourceUrl: "https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-statistics/",
+                },
+                {
+                  number: "2x",
+                  descriptor: "faster growth for businesses using AI-assisted SEO vs traditional SEO.",
+                  sourceName: "Search Engine Land Industry Report",
+                  sourceYear: "2024",
+                  sourceUrl: "https://searchengineland.com/",
+                },
+              ].map((stat, i) => (
+                <div key={i} className="text-center md:text-left">
+                  <div
+                    className="font-bold leading-none mb-3 text-[36px] md:text-[56px] bg-clip-text text-transparent"
+                    style={{
+                      backgroundImage: "linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)))",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                  >
+                    {stat.number}
+                  </div>
+                  <p className="text-foreground/90 text-[15px] md:text-base font-medium leading-snug mb-2">
+                    {stat.descriptor}
+                  </p>
+                  <p className="text-foreground/50 text-xs italic">
+                    —{" "}
+                    <a
+                      href={stat.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-primary transition-colors"
+                    >
+                      {stat.sourceName}
+                    </a>
+                    , {stat.sourceYear}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* COMMAND CENTER SECTION */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="container mx-auto px-4">
