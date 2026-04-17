@@ -49,6 +49,7 @@
     {
       "@context": "https://schema.org",
       "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://growsmallbiz.io/#organization",
       "name": "GrowSmallBiz Digital Marketing",
       "url": "https://growsmallbiz.io",
       "logo": "https://growsmallbiz.io/images/growsmallbiz-logo.webp",
@@ -58,11 +59,23 @@
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "52 Antelope CT.",
+        "streetAddress": "52 Antelope CT",
         "addressLocality": "Danville",
         "addressRegion": "CA",
+        "postalCode": "94506",
         "addressCountry": "US"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.8216,
+        "longitude": -121.9999
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }],
       "areaServed": {
         "@type": "Country",
         "name": "United States"
@@ -77,6 +90,7 @@
         "telephone": "+1-925-886-3724",
         "url": "https://growsmallbiz.io/contact/"
       },
+      "founder": { "@id": "https://growsmallbiz.io/#person-subrata-guha" },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Digital Marketing Services",
@@ -94,9 +108,25 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://growsmallbiz.io/#website",
       "name": "GrowSmallBiz Digital Marketing",
       "url": "https://growsmallbiz.io",
-      "description": "AI-powered SEO and digital marketing services for local service businesses."
+      "description": "AI-powered SEO and digital marketing services for local service businesses.",
+      "publisher": { "@id": "https://growsmallbiz.io/#organization" }
+    }
+    </script>
+
+    <!-- Person Schema — Founder -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://growsmallbiz.io/#person-subrata-guha",
+      "name": "Subrata Guha",
+      "jobTitle": "Founder",
+      "affiliation": { "@id": "https://growsmallbiz.io/#organization" },
+      "description": "Founder of GrowSmallBiz Digital Marketing. 30+ years leading enterprise business applications across Sales & Marketing and Supply Chain for Fortune 500 organizations, now applying AI-driven discipline to help local service businesses grow.",
+      "url": "https://growsmallbiz.io/about/"
     }
     </script>
     <meta property="og:title" content="AI-Powered Growth System for Local Service Businesses | GrowSmallBiz">
