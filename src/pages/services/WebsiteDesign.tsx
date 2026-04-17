@@ -10,6 +10,14 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { ServiceHero } from "@/components/services/ServiceHero";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { GlowCard } from "@/components/ui/glow-card";
@@ -267,7 +275,6 @@ const WebsiteDesign = () => {
       <Header />
       <Head>
         <title>Website Design for Local Businesses | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz designs fast, mobile-optimized websites for local service businesses — built for SEO, lead capture, and conversion. No templates. No page builders. Just results." />
         <meta
           name="description"
           content="GrowSmallBiz builds conversion-focused websites for local service businesses — designed to turn visitors into calls, bookings, and leads. Schedule a free strategy call."
@@ -286,24 +293,43 @@ const WebsiteDesign = () => {
         ]}
       />
 
-      {/* SECTION 1 — HERO */}
-      <ServiceHero
-        badge={{ icon: Globe, text: "WEBSITE THAT CONVERTS" }}
-        title={<>Websites Built to Turn Visitors Into <span className="text-transparent bg-clip-text bg-gradient-primary">Calls, Bookings,</span> and <span className="text-transparent bg-clip-text bg-gradient-primary">Leads.</span></>}
-        subtitle="Most local service business websites look the part. The problem is they were built to impress — not to convert.<br/><br/>GrowSmallBiz designs and builds websites engineered around a single outcome: turning visitors into calls, bookings, and quote requests.<br/><br/>And for our clients, the website is never the end of the conversation — it's the beginning."
-        primaryCTA={{
-          label: "Schedule Strategy Call",
-          href: CTA_URL,
-          external: true,
-        }}
-        secondaryCTA={{
-          label: "Explore All Services",
-          href: "/services/seo-agency/",
-          variant: "heroOutline",
-        }}
-        backgroundImage={websiteDesignHeroBg}
-        overlayOpacity={88}
-      />
+      <main id="main-content">
+        {/* SECTION 1 — HERO */}
+        <ServiceHero
+          badge={{ icon: Globe, text: "WEBSITE THAT CONVERTS" }}
+          title={<>Websites Built to Turn Visitors Into <span className="text-transparent bg-clip-text bg-gradient-primary">Calls, Bookings,</span> and <span className="text-transparent bg-clip-text bg-gradient-primary">Leads.</span></>}
+          subtitle="Most local service business websites look the part. The problem is they were built to impress — not to convert.<br/><br/>GrowSmallBiz designs and builds websites engineered around a single outcome: turning visitors into calls, bookings, and quote requests.<br/><br/>And for our clients, the website is never the end of the conversation — it's the beginning."
+          primaryCTA={{
+            label: "Schedule Strategy Call",
+            href: CTA_URL,
+            external: true,
+          }}
+          backgroundImage={websiteDesignHeroBg}
+          overlayOpacity={88}
+        />
+
+        {/* BREADCRUMBS */}
+        <nav aria-label="Breadcrumb" className="container mx-auto px-4 pt-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services/seo-agency/">Services</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Website Design</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </nav>
 
       {/* HERO EXTENDED — 4-col teal cards (HVAC pattern) */}
       <section className="py-20 bg-muted/30">
@@ -649,7 +675,7 @@ const WebsiteDesign = () => {
                     <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center shadow-lg">
                       <StepIcon className="w-10 h-10 text-primary-foreground" />
                     </div>
-                    <span className="text-4xl font-black text-primary/20">{step.step.replace("Step ", "")}</span>
+                    <span className="text-4xl font-black text-primary/20">{String(i + 1).padStart(2, '0')}</span>
                   </div>
 
                   <GlowCard className="flex-1 p-8">
@@ -673,7 +699,7 @@ const WebsiteDesign = () => {
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <Link to="/services/">View Industries We Serve</Link>
+              <Link to="/#industries">View Industries We Serve</Link>
             </Button>
           </div>
         </div>
@@ -795,9 +821,10 @@ const WebsiteDesign = () => {
             <p>The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI.</p>
           </div>
         </div>
-      </section>
+        </section>
 
-      <ConsultationFormSection />
+        <ConsultationFormSection />
+      </main>
       <Footer />
     </div>
   );
