@@ -821,9 +821,10 @@ const WebsiteDesign = () => {
             <p>The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI.</p>
           </div>
         </div>
-      </section>
+        </section>
 
-      <ConsultationFormSection />
+        <ConsultationFormSection />
+      </main>
       <Footer />
     </div>
   );
