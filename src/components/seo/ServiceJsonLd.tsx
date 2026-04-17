@@ -13,6 +13,19 @@ interface ServiceJsonLdProps {
     name: string;
     items: { name: string }[];
   };
+  /**
+   * When true, uses cross-referenced @id graph:
+   * - Service.provider → sitewide Organization @id (no inline duplicate)
+   * - Adds @id to Service and BreadcrumbList
+   * - Emits a WebPage wrapper linking Service, BreadcrumbList, and (optionally) FAQPage
+   */
+  useEntityGraph?: boolean;
+  /** Page name for WebPage entity (used when useEntityGraph). Falls back to serviceName. */
+  pageName?: string;
+  /** Page description for WebPage entity (used when useEntityGraph). Falls back to description. */
+  pageDescription?: string;
+  /** When set with useEntityGraph, WebPage.mainEntity references the FAQPage @id on this URL. */
+  hasFaqPage?: boolean;
 }
 
 const BASE_URL = "https://growsmallbiz.io";
@@ -25,25 +38,40 @@ export const ServiceJsonLd = ({
   breadcrumbs,
   rating,
   offerCatalog,
+  useEntityGraph = false,
+  pageName,
+  pageDescription,
+  hasFaqPage = false,
 }: ServiceJsonLdProps) => {
+  const pageUrl = `${BASE_URL}${url}${url.endsWith("/") ? "" : "/"}`;
+  const serviceId = `${pageUrl}#service`;
+  const breadcrumbId = `${pageUrl}#breadcrumb`;
+  const webpageId = `${pageUrl}#webpage`;
+  const faqpageId = `${pageUrl}#faqpage`;
+
+  const provider = useEntityGraph
+    ? { "@id": `${BASE_URL}/#organization` }
+    : {
+        "@type": "ProfessionalService",
+        name: "GrowSmallBiz Digital Marketing",
+        url: BASE_URL,
+        telephone: "+1-925-886-3724",
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "US",
+        },
+        priceRange: "$$",
+      };
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    ...(useEntityGraph && { "@id": serviceId }),
     name: serviceName,
     description,
     serviceType,
-    url: `${BASE_URL}${url}${url.endsWith('/') ? '' : '/'}`,
-    provider: {
-      "@type": "ProfessionalService",
-      name: "GrowSmallBiz Digital Marketing",
-      url: BASE_URL,
-      telephone: "+1-925-886-3724",
-      address: {
-        "@type": "PostalAddress",
-        addressCountry: "US",
-      },
-      priceRange: "$$",
-    },
+    url: pageUrl,
+    provider,
     areaServed: {
       "@type": "Country",
       name: "United States",
@@ -73,6 +101,7 @@ export const ServiceJsonLd = ({
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    ...(useEntityGraph && { "@id": breadcrumbId }),
     itemListElement: [
       {
         "@type": "ListItem",
@@ -89,6 +118,21 @@ export const ServiceJsonLd = ({
     ],
   };
 
+  const webpageSchema = useEntityGraph
+    ? {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": webpageId,
+        url: pageUrl,
+        name: pageName || serviceName,
+        description: pageDescription || description,
+        isPartOf: { "@id": `${BASE_URL}/#website` },
+        about: { "@id": serviceId },
+        breadcrumb: { "@id": breadcrumbId },
+        ...(hasFaqPage && { mainEntity: { "@id": faqpageId } }),
+      }
+    : null;
+
   return (
     <Head>
       <script type="application/ld+json">
@@ -97,6 +141,11 @@ export const ServiceJsonLd = ({
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
       </script>
+      {webpageSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(webpageSchema)}
+        </script>
+      )}
     </Head>
   );
 };
