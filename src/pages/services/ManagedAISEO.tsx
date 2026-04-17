@@ -624,6 +624,7 @@ const ManagedAISEO = () => {
           title="Frequently Asked Questions"
           faqs={faqs}
           schemaType="FAQPage"
+          schemaId="https://growsmallbiz.io/services/seo-agency/#faqpage"
           contactCTA={{
             ...baseContactCTA,
             title: "Have questions about Managed AI SEO?",
