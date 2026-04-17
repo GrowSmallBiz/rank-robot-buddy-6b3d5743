@@ -199,6 +199,10 @@ const ManagedAISEO = () => {
         breadcrumbs={[
           { name: "Services", url: "/services/" },
         ]}
+        useEntityGraph
+        pageName="The Complete Managed AI SEO Agency for Local Service Businesses"
+        pageDescription="The complete Managed AI SEO system for local service businesses. GrowSmallBiz runs your entire SEO program — technical, local, content, AEO, GEO, link building, and reporting — so you can focus on running your business."
+        hasFaqPage
       />
       <Header />
 
