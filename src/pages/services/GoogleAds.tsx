@@ -572,26 +572,26 @@ const GoogleAds = () => {
               title="From Strategy to Leads in"
               titleHighlight="Days, Not Months"
             />
-            <div className="space-y-6 mt-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {[
                 { title: "Discovery and Business Analysis", desc: "We start with a deep-dive consultation to understand your business, your service area, your competitive landscape, and your revenue goals. We audit your existing digital assets — website, current ads if any, Google Business Profile — to identify opportunities and gaps before we build anything." },
                 { title: "Strategic Campaign Planning", desc: "Based on our analysis, we develop a tailored Google Ads strategy — selecting campaign types, defining targeting parameters, establishing budget allocation, and mapping out the keyword universe we will go after. You review and approve the plan before any dollar is spent." },
-                // PROMPT 6 — channel reference: "paid advertising" → "Google Ads"
                 { title: "Campaign Build and Launch", desc: "Our team builds your campaigns from the ground up — writing ad copy, configuring targeting, setting up conversion tracking, and connecting all reporting. We typically launch Google Ads campaigns within 2–3 weeks of onboarding, once tracking and conversion systems are fully in place." },
                 { title: "Optimization and Scaling", desc: "Once live, we monitor performance daily and run systematic optimization cycles — testing ad variations, refining bids, pruning underperforming keywords, and reallocating budget to what is working. You receive monthly performance reviews with full transparency into results and next steps." },
                 { title: "Ongoing Partnership", desc: "Your assigned Account Relationship Manager is your dedicated point of contact. We hold monthly strategy meetings to review performance, discuss market changes, and plan for continued growth. As your results compound, we help you scale your investment strategically." },
               ].map((step, i) => (
-                <div key={i} className="flex gap-6 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
-                      <span className="text-sm font-bold text-primary">{i + 1}</span>
-                    </div>
-                    {i < 4 && <div className="w-px flex-1 bg-border mt-2" />}
+                <div
+                  key={i}
+                  className="feature-card-teal rounded-xl p-6 animate-fade-up flex flex-col h-full"
+                  style={{ animationDelay: `${i * 0.05}s` }}
+                >
+                  <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mb-4">
+                    <span className="text-sm font-bold text-primary">{i + 1}</span>
                   </div>
-                  <div className="pb-6">
-                    <h4 className="text-base font-display font-semibold text-foreground mb-2">Step {i + 1} — {step.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
-                  </div>
+                  <h4 className="text-base font-display font-semibold text-foreground mb-2">
+                    Step {i + 1} — {step.title}
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
                 </div>
               ))}
             </div>
