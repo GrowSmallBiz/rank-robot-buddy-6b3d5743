@@ -52,6 +52,10 @@ const faqs: FAQItem[] = [
     answer: "LSA operates on a pay-per-lead basis — you pay only when a customer contacts you directly through the ad, not per click. Your weekly budget determines how many leads you can receive. Actual cost per lead varies by industry and geographic market. GrowSmallBiz sets and adjusts your budget based on competitive data, your service area, and your lead volume targets.",
   },
   {
+    question: "How long does it take to start getting leads from LSA?",
+    answer: "Once your Google Guarantee or Google Screened verification is complete — typically 2 to 4 weeks for background checks, license verification, and insurance confirmation — leads usually begin arriving within 24 to 72 hours of going live. The first 30 to 60 days focus on building review velocity, tightening response time, and refining service categories and service area, since those are the factors Google uses to rank your LSA profile and grow your lead volume over time.",
+  },
+  {
     question: "What happens if I receive spam calls or invalid leads through LSA?",
     answer: "Google's LSA platform has a built-in dispute process for invalid leads. GrowSmallBiz reviews every lead your campaign generates, identifies invalid contacts, and submits disputes on your behalf as standard practice. You should never be paying for leads that don't count.",
   },
