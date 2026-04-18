@@ -8,7 +8,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 
 
 // Lazy-load below-the-fold sections to improve FCP
-const TestimonialsSection = lazy(() => import("@/components/sections/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
+
 const FAQSection = lazy(() => import("@/components/sections/FAQSection").then(m => ({ default: m.FAQSection })));
 const AnimatedStatsSection = lazy(() => import("@/components/sections/AnimatedStatsSection").then(m => ({ default: m.AnimatedStatsSection })));
 
