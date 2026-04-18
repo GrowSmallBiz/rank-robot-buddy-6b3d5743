@@ -30,6 +30,9 @@ import {
   PersonStanding,
   Key,
   Camera,
+  Repeat,
+  Mail,
+  MessageSquare,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
@@ -708,6 +711,73 @@ const GoogleAds = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PROMPT 12: POST-CLICK SECTION — "Turning Google Ads Traffic Into Revenue" ─── */}
+      <section className="py-24 bg-background-alt">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <SectionHeader
+              title="Turning Google Ads Traffic"
+              titleHighlight="Into Revenue"
+              description="The best Google Ads campaign still fails if the leads it generates never convert. Paid traffic is only half the system — what happens after the click decides whether ad spend turns into revenue. Here is how we close that gap."
+            />
+            <div className="grid md:grid-cols-3 gap-6 mt-12">
+              {/* Card 1: Retargeting */}
+              <div
+                className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-4 transition-all hover:border-primary/30 hover:shadow-lg animate-fade-up"
+                style={{ animationDelay: "0s" }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Repeat className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-display font-bold text-foreground">
+                  Retargeting That Closes the Loop
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Most clicks do not convert on the first visit. Retargeting keeps your business in front of the people who already showed intent — across Google's display network, YouTube, and social — so the lead you paid for the first time has a second, third, and fourth chance to come back and book.
+                </p>
+              </div>
+
+              {/* Card 2: Lead Nurture (Email + SMS) */}
+              <div
+                className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-4 transition-all hover:border-primary/30 hover:shadow-lg animate-fade-up"
+                style={{ animationDelay: "0.08s" }}
+              >
+                <div className="flex items-center gap-2">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <MessageSquare className="w-6 h-6 text-primary" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-display font-bold text-foreground">
+                  Lead Nurture That Converts Inquiries Into Bookings
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  A lead is not a customer until they book. Automated email and SMS sequences move new prospects from inquiry to appointment with the right message at the right moment. For past customers who went quiet, reactivation campaigns pull them back without new ad spend.
+                </p>
+              </div>
+
+              {/* Card 3: Instant Response */}
+              <div
+                className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-4 transition-all hover:border-primary/30 hover:shadow-lg animate-fade-up"
+                style={{ animationDelay: "0.16s" }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-display font-bold text-foreground">
+                  Instant Lead Response, 24/7
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Most local service leads are lost in the first five minutes because no one picks up the phone. AI-powered call handling and conversational AI respond to every inquiry within seconds — day or night, weekends, holidays — so your Google Ads budget produces booked appointments instead of missed calls.
+                </p>
+              </div>
             </div>
           </div>
         </div>
