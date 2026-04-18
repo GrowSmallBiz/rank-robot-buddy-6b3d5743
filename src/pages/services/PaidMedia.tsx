@@ -676,6 +676,60 @@ const PaidMedia = () => {
           </div>
         </section>
 
+        {/* Prompt 12 — THE MARKET YOU'RE COMPETING IN (Stats Band) */}
+        <section className="py-20 bg-background-alt">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12 animate-fade-up">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight mb-4">
+                  The Market You're{" "}
+                  <span className="text-primary">Competing In</span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Verified industry data — the paid advertising landscape for small service businesses in 2025 and 2026.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+                {[
+                  {
+                    value: "$70.11",
+                    label: "Average Google Ads cost per lead across industries in 2025",
+                    source: "WordStream by LocaliQ 2025 Benchmarks",
+                  },
+                  {
+                    value: "$27.66",
+                    label: "Average Meta Ads cost per lead — up 21% year over year",
+                    source: "WordStream by LocaliQ 2025 Facebook Ads Benchmarks",
+                  },
+                  {
+                    value: "25%",
+                    label: "Of Google searches now include AI Overviews — up from 13% a year ago",
+                    source: "Conductor 2026 AI Overviews Benchmark",
+                  },
+                  {
+                    value: "7.7%",
+                    label: "Of company revenue allocated to marketing in 2025",
+                    source: "Gartner 2025 CMO Spend Survey",
+                  },
+                ].map((stat, i) => (
+                  <div key={i} className="text-center space-y-4">
+                    <p className="text-5xl md:text-6xl font-display font-bold text-primary leading-none">
+                      {stat.value}
+                    </p>
+                    <p className="text-base md:text-lg text-foreground leading-snug">
+                      {stat.label}
+                    </p>
+                    <p className="text-xs md:text-sm text-muted-foreground">
+                      Source: {stat.source}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Prompt 4 — CHANNEL COMPARISON TABLE */}
         <section className="py-24">
           <div className="container mx-auto px-4">
