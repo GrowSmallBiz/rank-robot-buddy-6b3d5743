@@ -32,6 +32,14 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // PROMPT 9 — FAQ data (8 Q&As). Single source of truth: this array drives BOTH
@@ -263,11 +271,82 @@ const GoogleAds = () => {
           { name: "Paid Advertising", url: "/services/paid-advertising/" },
           { name: "Google Ads", url: "/services/paid-advertising/google-ads/" },
         ]}
+        useEntityGraph
+        pageName="Google Ads Management for Small Businesses"
+        pageDescription="Google Ads for HVAC, dental, med spa, roofing, and landscape businesses. Precision-targeted PPC with conversion tracking, transparent reporting, and a performance guarantee."
+        hasFaqPage
+        offerCatalog={{
+          name: "Google Ads Management Services",
+          items: [
+            {
+              name: "Google Search Ads (Pay-Per-Click) Management",
+              description: "Managed Google Search campaigns for local service businesses, including high-intent keyword research, ad copywriting, smart bidding, negative keyword management, and ongoing optimization.",
+              url: "https://growsmallbiz.io/services/paid-advertising/google-ads/",
+              category: "PPC Management",
+              areaServed: { "@type": "Country", name: "United States" },
+              availability: "https://schema.org/InStock",
+            },
+            {
+              name: "Performance Max & Shopping Campaigns",
+              description: "Performance Max campaign build and management across Search, Display, YouTube, Gmail, and Maps, including asset group management, audience signal configuration, and creative rotation.",
+              url: "https://growsmallbiz.io/services/paid-advertising/google-ads/",
+              category: "PPC Management",
+              areaServed: { "@type": "Country", name: "United States" },
+              availability: "https://schema.org/InStock",
+            },
+            {
+              name: "Google Display & Retargeting Ads",
+              description: "Display and retargeting campaigns to re-engage prior website visitors and build brand awareness across the Google Display Network, including custom audience creation and cross-device targeting.",
+              url: "https://growsmallbiz.io/services/paid-advertising/google-ads/",
+              category: "Display Advertising",
+              areaServed: { "@type": "Country", name: "United States" },
+              availability: "https://schema.org/InStock",
+            },
+            {
+              name: "Conversion Tracking & Analytics Setup",
+              description: "Google Ads and Google Analytics 4 integration, call tracking and call recording setup, form fill and booking conversion tracking, and monthly performance reporting.",
+              url: "https://growsmallbiz.io/services/paid-advertising/google-ads/",
+              category: "Marketing Analytics",
+              areaServed: { "@type": "Country", name: "United States" },
+              availability: "https://schema.org/InStock",
+            },
+          ],
+        }}
       />
       <Header />
 
+      <main id="main-content">
+        {/* Breadcrumbs — parity with /services/paid-advertising/ */}
+        <nav aria-label="Breadcrumb" className="container mx-auto px-4 pt-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services/">Services</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services/paid-advertising/">Paid Advertising</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Google Ads</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </nav>
+
       {/* ─── PROMPT 1: HERO — H1 swap (Local→Small) + credential line ─── */}
-      <section className="relative pt-32 pb-24 overflow-hidden">
+      <section className="relative pt-12 pb-24 overflow-hidden">
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
@@ -676,6 +755,7 @@ const GoogleAds = () => {
       </section>
 
       <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
+      </main>
       <Footer />
     </div>
   );
