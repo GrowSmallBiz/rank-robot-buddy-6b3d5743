@@ -19,8 +19,6 @@ import {
   BarChart3,
   Phone,
   Link2,
-  CheckCircle2,
-  XCircle,
   AlertTriangle,
   Eye,
   Zap,
@@ -28,15 +26,28 @@ import {
   TrendingUp,
   Clock,
   MessageSquare,
+  MessageCircle,
   Megaphone,
   MousePointerClick,
   Home,
   Heart,
-  Scale,
-  Car,
+  HardHat,
+  Stethoscope,
+  Camera,
+  RotateCw,
+  ShieldCheck,
+  Award,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const faqs: FAQItem[] = [
   {
@@ -86,6 +97,19 @@ const faqs: FAQItem[] = [
   {
     question: "Which ad platform is usually the best fit for my business?",
     answer: "It depends on how your customers search and how quickly they are ready to act. Google Search Ads are usually best for high-intent demand. Local Service Ads can work well for eligible service categories that want direct calls and leads. Meta Ads are useful for awareness, offer promotion, and retargeting. In many cases, the strongest results come from using the right combination rather than relying on one platform alone."
+  },
+  // Prompt 8 — three new FAQs
+  {
+    question: "What industries do you specialize in?",
+    answer: "We specialize in five verticals for local service businesses: home service contractors (HVAC, plumbing, electrical, roofing, painting, landscaping, cleaning, remodeling), health and wellness practices (med spas, dental, chiropractic, allied health), real estate brokers and agents, restaurants, and photographers. We do not take clients outside these verticals – specialization is how we deliver below-average cost per lead."
+  },
+  {
+    question: "Do you work with businesses outside the San Francisco Bay Area?",
+    answer: "Yes. We serve local service businesses nationally across all five verticals. Our Bay Area roots mean we know small-market local advertising economics especially well, and that expertise transfers directly to similar markets anywhere in the United States."
+  },
+  {
+    question: "How do I know if paid advertising is a fit for my business?",
+    answer: "Paid ads are a strong fit for local service businesses with meaningful customer value per job and a clear need for qualified, trackable leads. Specifically, paid ads work well when you want more qualified calls and booked appointments, you have tried ads before but lacked clear ROI visibility, you need better tracking and follow-up, and you want campaigns managed by people who understand local service conversion. Paid ads are not the right fit for businesses looking for the cheapest possible ad management without landing page, tracking, or follow-up infrastructure."
   },
 ];
 
@@ -144,8 +168,6 @@ const adChannelsSecondary = [
     brandLogo: (
       <svg viewBox="0 0 24 24" className="w-7 h-7" fill="none">
         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.86a8.28 8.28 0 0 0 4.85 1.56V6.97a4.84 4.84 0 0 1-1.09-.28z" fill="#000000"/>
-        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.86a8.28 8.28 0 0 0 4.85 1.56V6.97a4.84 4.84 0 0 1-1.09-.28z" fill="#25F4EE" opacity="0.5" transform="translate(-0.5, -0.5)"/>
-        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.86a8.28 8.28 0 0 0 4.85 1.56V6.97a4.84 4.84 0 0 1-1.09-.28z" fill="#FE2C55" opacity="0.5" transform="translate(0.5, 0.5)"/>
       </svg>
     ),
   },
@@ -208,6 +230,110 @@ const failureReasons = [
   "Slow or inconsistent lead follow-up",
 ];
 
+// Prompt 2 — Four campaign result cards
+const resultsCards = [
+  {
+    eyebrow: "HVAC Contractor — Florida",
+    title: "Stronger Visibility, Lower CPA",
+    timeframe: "5-month campaign (Aug 2022 – Jan 2023)",
+    challenge: "Needed stronger visibility, more qualified leads, and lower acquisition costs in a competitive local market.",
+    strategy: "Refined keyword targeting, stronger ad copy, geographic focus, ad extensions, and ongoing optimization.",
+    stats: [
+      { value: "+83%", label: "Conversions" },
+      { value: "−41%", label: "CPA" },
+      { value: "+50.23%", label: "CTR" },
+      { value: "+56.3%", label: "Conversion Rate" },
+    ],
+    href: "/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/",
+  },
+  {
+    eyebrow: "Roofing Contractor — Florida",
+    title: "Better Estimates, Better Efficiency",
+    timeframe: "Month-over-month (Sept 2023 vs Aug 2023)",
+    challenge: "Needed stronger estimate flow and better efficiency from existing ad spend.",
+    strategy: "Improved campaign structure, tighter optimization, and continuous performance refinement.",
+    stats: [
+      { value: "+93.3%", label: "Conversions" },
+      { value: "−48.9%", label: "Cost/Conversion" },
+      { value: "+123.4%", label: "Conversion Rate" },
+    ],
+    href: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+  },
+  {
+    eyebrow: "Dental Practice — Concord, CA",
+    title: "Surge in High-Value Patient Leads",
+    timeframe: "Q4 year-over-year comparison",
+    challenge: "Client needed more non-branded general dentistry leads plus high-value patients for implants and all-on-4 treatments.",
+    strategy: "Full account audit, campaign rebuild, call-only campaign for phone leads, dedicated implants/all-on-4 campaign, aggressive negative-keyword list, and extension testing.",
+    stats: [
+      { value: "+175.51%", label: "Conversions" },
+      { value: "−64.62%", label: "CPA" },
+      { value: "+187.04%", label: "Conversion Rate" },
+      { value: "+127.25%", label: "CTR" },
+    ],
+    href: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/",
+  },
+  {
+    eyebrow: "Med Spa — San Ramon, CA",
+    title: "Long-Term Growth, Efficient CPA",
+    timeframe: "All-time + recent 30 days",
+    challenge: "The goal was long-term lead growth at a stable and efficient cost per acquisition.",
+    strategy: "Multi-campaign Google Ads structure across Search and Display with ongoing optimization.",
+    stats: [
+      { value: "2,577", label: "Total Conversions" },
+      { value: "$16.39", label: "All-Time CPA" },
+      { value: "+48.8%", label: "30-Day Conversions" },
+      { value: "−31.1%", label: "30-Day CPA" },
+    ],
+    href: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+  },
+];
+
+// Prompt 4 — Channel comparison table
+const channelComparison = [
+  ["Pricing model", "Pay per click", "Pay per qualified lead", "Pay per click/impression"],
+  ["Buyer intent", "High (active search)", "Highest (local search)", "Medium (interest-based)"],
+  ["Setup complexity", "Medium", "Low (Google does most)", "Medium"],
+  ["Trust signal", "Ad label only", "Google Guaranteed badge", "Ad label only"],
+  ["Best for", "Most service niches", "Home services, some H&W", "Visual services, retargeting"],
+  ["Typical time to results", "2–4 weeks", "Days to 1 week", "2–6 weeks"],
+  ["Primary KPI", "Cost per lead", "Cost per qualified lead", "Cost per result / ROAS"],
+  ["Creative required", "Text + assets", "Minimal (business profile)", "Heavy (image / video)"],
+];
+
+// Prompt 5 — Vertical hub callouts
+const verticalHubs = [
+  {
+    icon: HardHat,
+    title: "For Home Service Contractors",
+    body: "HVAC, plumbing, electrical, roofing, painting, landscaping, cleaning, and remodeling. Recommended stack: Google Local Services Ads as primary (pay per qualified lead, Google Guaranteed badge), Google Search Ads for overflow demand, Meta retargeting for longer-consideration jobs.",
+    cta: "See Marketing for Contractors",
+    href: "/home-service-contractors/",
+  },
+  {
+    icon: Stethoscope,
+    title: "For Health & Wellness Practices",
+    body: "Med spas, dental, chiropractic, and allied health. All creative is written FDA- and FTC-compliant. Med spa leans TikTok and Meta. Dental and chiropractic lean Google Search Ads and LSA where eligible. Compliance-first campaigns without generic \"permanent\" or \"guaranteed\" language.",
+    cta: "See Marketing for Health & Wellness",
+    href: "/health-and-wellness-practices/",
+  },
+  {
+    icon: Camera,
+    title: "For Professional Services",
+    body: "Realtors, photographers, and visual creative professionals. Meta and Instagram Ads for brand and lead generation. Google Search Ads for buyer-intent and branded search protection. Retargeting layered across the full funnel.",
+    cta: "See Marketing for Professional Services",
+    href: "/professional-services/",
+  },
+];
+
+// Prompt 9 — Visibility/Trust right-column rows (paid-ads framing)
+const trustRows = [
+  { icon: Target, label: "First-touch ads capture active demand" },
+  { icon: RotateCw, label: "Retargeting keeps you top-of-mind" },
+  { icon: MessageCircle, label: "Ad creative rotation prevents fatigue" },
+  { icon: TrendingUp, label: "Multiple touchpoints increase conversion" },
+];
+
 const PaidMedia = () => {
   const { buildUrl, pageMedium } = useUtm();
   const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
@@ -230,620 +356,643 @@ const PaidMedia = () => {
       />
       <Header />
 
-      {/* SECTION 1 — HERO */}
-      <section className="relative pt-32 pb-24 overflow-hidden">
-        <div className="absolute inset-0 hero-glow" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="animate-fade-up">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-                <Target className="w-4 h-4" />
-                Paid Advertising
-              </span>
-            </div>
+      <main id="main-content">
+        {/* Prompt 7 — BREADCRUMBS (above hero, below header) */}
+        <nav aria-label="Breadcrumb" className="container mx-auto px-4 pt-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services/">Services</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Paid Advertising</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </nav>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
-              Stop Paying for Clicks.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">
-                Start Generating Qualified Leads.
-              </span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              We build full-funnel paid ad systems for local service businesses — combining campaign strategy, landing pages, call tracking, CRM follow-up, and retargeting so your ad spend turns into qualified leads you can actually track.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              <Button variant="hero" size="xl" asChild>
-                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Schedule Strategy Session
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-              <Button variant="heroOutline" size="xl" asChild>
-                <a href="tel:+19258863724">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call +1 (925) 886-3724
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* AD PLATFORMS SCROLLING BAR */}
-      <section className="py-4 overflow-hidden bg-white">
-        <div className="container mx-auto px-4 mb-4">
-          <p className="text-center text-sm font-bold text-primary tracking-wide uppercase">
-            Platforms We Manage
-          </p>
-        </div>
-        <div className="relative w-full">
-          <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
-          <div className="py-4">
-            <div className="flex animate-marquee gap-16 items-center">
-              {[0, 1].map((dupeIdx) => (
-                <React.Fragment key={dupeIdx}>
-                  {/* Google Ads - Official logo */}
-                  <div className="flex-shrink-0 flex items-center gap-2">
-                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#4285F4" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z"/>
-                    </svg>
-                    <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google Ads</span>
-                  </div>
-                  {/* Google LSA - Google Guaranteed checkmark shield */}
-                  <div className="flex-shrink-0 flex items-center gap-2">
-                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
-                      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#34A853"/>
-                      <path d="M10.5 15.5l-3-3 1.41-1.41L10.5 12.67l4.59-4.58L16.5 9.5l-6 6z" fill="white"/>
-                    </svg>
-                    <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google LSA</span>
-                  </div>
-                  {/* Facebook - Official logo */}
-                  <div className="flex-shrink-0 flex items-center gap-2">
-                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="#1877F2">
-                      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.017 1.793-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
-                    </svg>
-                    <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Facebook Ads</span>
-                  </div>
-                  {/* Instagram - Gradient logo */}
-                  <div className="flex-shrink-0 flex items-center gap-2">
-                    <svg className="w-8 h-8" viewBox="0 0 24 24">
-                      <defs>
-                        <radialGradient id={`ig-grad-${dupeIdx}`} cx="30%" cy="107%" r="150%">
-                          <stop offset="0%" stopColor="#fdf497"/>
-                          <stop offset="5%" stopColor="#fdf497"/>
-                          <stop offset="45%" stopColor="#fd5949"/>
-                          <stop offset="60%" stopColor="#d6249f"/>
-                          <stop offset="90%" stopColor="#285AEB"/>
-                        </radialGradient>
-                      </defs>
-                      <rect width="24" height="24" rx="6" fill={`url(#ig-grad-${dupeIdx})`}/>
-                      <circle cx="12" cy="12" r="4.5" stroke="white" strokeWidth="1.5" fill="none"/>
-                      <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
-                    </svg>
-                    <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Instagram Ads</span>
-                  </div>
-                  {/* TikTok */}
-                  <div className="flex-shrink-0 flex items-center gap-2">
-                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
-                      <rect width="24" height="24" rx="6" fill="#010101"/>
-                      <path d="M16.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S5.5 11 5.5 8.5 7.5 4 10 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S2.5 16 2.5 13 5 7.5 8 7.5" fill="#25F4EE"/>
-                      <path d="M17.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S6.5 11 6.5 8.5 8.5 4 11 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S3.5 16 3.5 13 6 7.5 9 7.5" fill="#FE2C55"/>
-                    </svg>
-                    <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">TikTok Ads</span>
-                  </div>
-                  {/* Bing / Microsoft Ads */}
-                  <div className="flex-shrink-0 flex items-center gap-2">
-                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
-                      <path d="M4 0v17.5l4.5 2.5 7.5-4.5v-4L8.5 8V0H4z" fill="#00897B"/>
-                      <path d="M8.5 8l7.5 3.5v4l-7.5 4.5L4 17.5" fill="#00ACC1"/>
-                      <path d="M4 0l4.5 3v5L4 5.5V0z" fill="#004D40"/>
-                    </svg>
-                    <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Bing Ads</span>
-                  </div>
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 2 — THE REAL PROBLEM */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12 animate-fade-up">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight">
-                Most Local Ad Campaigns Don't Have a Traffic Problem.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary">
-                  They Have a System Problem.
+        {/* SECTION 1 — HERO */}
+        <section className="relative pt-12 pb-24 overflow-hidden">
+          <div className="absolute inset-0 hero-glow" />
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+              <div className="animate-fade-up">
+                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
+                  <Target className="w-4 h-4" />
+                  Paid Advertising
                 </span>
-              </h2>
-            </div>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center mb-12 animate-fade-up" style={{ animationDelay: "0.05s" }}>
-              Paid ads should be one of the fastest ways to generate demand — but many local businesses still end up frustrated. The issue usually is not the platform. It is the missing system behind it.
-            </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              {[
-                { icon: LayoutTemplate, text: "Weak landing pages" },
-                { icon: Phone, text: "No call tracking" },
-                { icon: Zap, text: "Poor follow-up" },
-                { icon: BarChart3, text: "Limited ROI visibility" },
-              ].map((item, i) => (
-                <div key={i} className="bg-background border border-border rounded-xl p-6 text-center space-y-3">
-                  <div className="w-10 h-10 mx-auto rounded-lg bg-primary/10 flex items-center justify-center">
-                    <item.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <p className="text-sm font-medium text-foreground">{item.text}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-muted-foreground text-center mt-8 animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              GrowSmallBiz builds paid ads as part of a conversion system, not as a standalone traffic tactic.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* NEW SECTION — WHY LOCAL SERVICE BUSINESSES INVEST IN PAID ADS */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <SectionHeader
-              title="Why Local Service Businesses Invest in"
-              titleHighlight="Paid Ads"
-              description="Paid ads are not the only way to grow, but they are often the fastest way to create visibility when timing matters. SEO builds momentum over time. Referrals are valuable, but unpredictable. Organic social can support awareness, but it does not always create immediate demand. Paid ads help local businesses show up when people are actively searching, comparing, or ready to take action."
-            />
-
-            {/* 4 Comparison Cards */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-              {[
-                { icon: Clock, title: "SEO Builds Over Time", body: "SEO is essential for long-term visibility, but it usually takes time to build rankings, authority, and traffic. Paid ads can help create demand while SEO gains momentum." },
-                { icon: MessageSquare, title: "Referrals Are Valuable, But Unpredictable", body: "Word-of-mouth leads can be strong, but they are hard to scale consistently. Paid ads give you more control over timing, targeting, and lead flow." },
-                { icon: Megaphone, title: "Organic Social Builds Awareness", body: "Social media helps people notice your brand, but not every local business owner has time to create content consistently. Paid campaigns help put the right offer in front of the right audience faster." },
-                { icon: MousePointerClick, title: "Paid Ads Create Faster Market Visibility", body: "When campaigns are built correctly, paid ads help you test offers, target service areas, control budgets, and generate qualified calls or leads with much more predictability." },
-              ].map((card, i) => (
-                <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <card.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{card.body}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* 2 Educational Sub-Blocks */}
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
-              <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
-                <h4 className="text-base font-display font-semibold text-foreground mb-3">How Google PPC Works</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Google Search Ads help you appear when people are actively searching for services like yours. You bid on relevant keywords, control where your ads appear, and send traffic to focused pages built to convert. This is usually the strongest fit when demand already exists and you want to capture it quickly.
-                </p>
               </div>
-              <div className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: "0.05s" }}>
-                <h4 className="text-base font-display font-semibold text-foreground mb-3">How Meta Retargeting Works</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Most visitors do not contact a business the first time they land on a website. Meta retargeting helps you stay visible on Facebook and Instagram after they leave. That repeated exposure builds familiarity, supports trust, and brings warm prospects back when they are ready to act.
-                </p>
-              </div>
-            </div>
 
-            {/* PPC vs PPL Comparison */}
-            <div className="mb-16">
-              <h4 className="text-lg font-display font-semibold text-foreground text-center mb-6 animate-fade-up">Pay-Per-Click vs Pay-Per-Lead</h4>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
-                  <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Click</h5>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    With PPC, you pay for the click and control the landing page, targeting, messaging, and conversion path. This usually gives you more flexibility and better optimization potential when the campaign structure is strong.
-                  </p>
-                </div>
-                <div className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: "0.05s" }}>
-                  <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Lead</h5>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    With pay-per-lead, you pay when a lead comes through rather than for every click. This model is most commonly associated with Local Service Ads. For eligible businesses, it can work well when lead quality is strong and the category is a good fit.
-                  </p>
-                </div>
-              </div>
-              <p className="text-sm text-muted-foreground text-center mt-6 max-w-3xl mx-auto animate-fade-up">
-                For many local service businesses, the best approach is not choosing only one model. It is choosing the right mix based on your niche, service area, urgency of demand, and how your leads are tracked and followed up.
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
+                Stop Paying for Clicks.{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary">
+                  Start Generating Qualified Leads.
+                </span>
+              </h1>
+
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                We build full-funnel paid ad systems for local service businesses — combining campaign strategy, landing pages, call tracking, CRM follow-up, and retargeting so your ad spend turns into qualified leads you can actually track.
               </p>
-            </div>
 
-            {/* Best Fit by Business Type */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {[
-                { icon: Home, title: "Home Services", body: "Best fit: Google Search Ads, Local Service Ads when eligible, and retargeting." },
-                { icon: Heart, title: "Health & Wellness", body: "Best fit: Google Search Ads, Meta Ads, and retargeting for repeat exposure and nurturing." },
-                { icon: Scale, title: "Legal", body: "Best fit: Google Search Ads, Local Service Ads when eligible, and retargeting." },
-                { icon: Car, title: "Automotive / Repair", body: "Best fit: Google Search Ads and retargeting, with Meta used when offer-driven promotion makes sense." },
-              ].map((card, i) => (
-                <div key={i} className="bg-primary/5 border border-primary/20 rounded-xl p-5 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <card.icon className="w-4 h-4 text-primary" />
-                  </div>
-                  <h5 className="text-sm font-display font-semibold text-foreground mb-1">{card.title}</h5>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{card.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.2s" }}>
+                <Button variant="hero" size="xl" asChild>
+                  <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
+                    Schedule Strategy Session
+                    <ArrowRight className="w-5 h-5" />
+                  </a>
+                </Button>
+                <Button variant="heroOutline" size="xl" asChild>
+                  <a href="tel:+19258863724">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call +1 (925) 886-3724
+                  </a>
+                </Button>
+              </div>
 
-      {/* SECTION 3 — WHO THIS IS FOR */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <SectionHeader
-              title="Built for Local Service Businesses That Need"
-              titleHighlight="Better Leads, Not Just More Clicks"
-              className="mb-12"
-            />
-
-            <div className="space-y-4 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              {[
-                "You have a meaningful customer value per job, case, patient, or project",
-                "You want more qualified calls, form leads, and booked appointments",
-                "You have tried paid ads before but lacked clear ROI visibility",
-                "You need better tracking, better follow-up, and fewer wasted clicks",
-                "You want campaigns managed by people who understand local service conversion",
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3 bg-card border border-border rounded-xl p-4">
-                  <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                  <p className="text-foreground text-sm">{item}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex items-start gap-3 bg-muted/50 border border-border rounded-xl p-4 animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              <XCircle className="w-5 h-5 text-muted-foreground mt-0.5 shrink-0" />
-              <p className="text-sm text-muted-foreground">
-                <span className="font-medium text-foreground">Not ideal fit:</span> This is not the right fit for businesses looking for the cheapest possible ad management without landing page, tracking, or follow-up infrastructure.
+              {/* Prompt 10 — Hero microcopy below CTAs */}
+              <p className="text-sm text-muted-foreground animate-fade-up" style={{ animationDelay: "0.25s" }}>
+                Most of our clients combine Paid Ads with Website and SEO — we will map the full picture in your session.
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* SECTION 4 — SERVICES WE OFFER */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <SectionHeader
-              title="A Complete Paid Advertising System —"
-              titleHighlight="Not Just Ad Setup"
-              description="Every engagement includes both channel management and the performance infrastructure that makes campaigns convert."
-            />
+        {/* AD PLATFORMS BAR — Prompt 3: deduplicated 5-platform row */}
+        <section className="py-6 overflow-hidden bg-white">
+          <div className="container mx-auto px-4 mb-4">
+            <p className="text-center text-sm font-bold text-primary tracking-wide uppercase">
+              Platforms We Manage
+            </p>
+          </div>
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 overflow-x-auto md:overflow-visible">
+              {/* Google Ads */}
+              <div className="flex-shrink-0 flex items-center gap-2">
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google Ads</span>
+              </div>
+              {/* Google LSA */}
+              <div className="flex-shrink-0 flex items-center gap-2">
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#34A853"/>
+                  <path d="M10.5 15.5l-3-3 1.41-1.41L10.5 12.67l4.59-4.58L16.5 9.5l-6 6z" fill="white"/>
+                </svg>
+                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google LSA</span>
+              </div>
+              {/* Facebook */}
+              <div className="flex-shrink-0 flex items-center gap-2">
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="#1877F2">
+                  <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.017 1.793-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                </svg>
+                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Facebook Ads</span>
+              </div>
+              {/* Instagram */}
+              <div className="flex-shrink-0 flex items-center gap-2">
+                <svg className="w-7 h-7" viewBox="0 0 24 24">
+                  <defs>
+                    <radialGradient id="ig-grad-hero" cx="30%" cy="107%" r="150%">
+                      <stop offset="0%" stopColor="#fdf497"/>
+                      <stop offset="5%" stopColor="#fdf497"/>
+                      <stop offset="45%" stopColor="#fd5949"/>
+                      <stop offset="60%" stopColor="#d6249f"/>
+                      <stop offset="90%" stopColor="#285AEB"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="24" height="24" rx="6" fill="url(#ig-grad-hero)"/>
+                  <circle cx="12" cy="12" r="4.5" stroke="white" strokeWidth="1.5" fill="none"/>
+                  <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+                </svg>
+                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Instagram Ads</span>
+              </div>
+              {/* TikTok with Coming Soon pill */}
+              <div className="flex-shrink-0 flex items-center gap-2">
+                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="6" fill="#010101"/>
+                  <path d="M16.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S5.5 11 5.5 8.5 7.5 4 10 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S2.5 16 2.5 13 5 7.5 8 7.5" fill="#25F4EE"/>
+                  <path d="M17.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S6.5 11 6.5 8.5 8.5 4 11 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S3.5 16 3.5 13 6 7.5 9 7.5" fill="#FE2C55"/>
+                </svg>
+                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">TikTok Ads</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                  Coming Soon
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            {/* Row 1 — Primary Ad Channels (with links) */}
-            <div className="mb-8">
-              <h3 className="text-lg font-display font-semibold text-primary mb-6 animate-fade-up">Ad Channels We Manage</h3>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {adChannelsPrimary.map((card, i) => (
-                  <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-4 animate-fade-up flex flex-col" style={{ animationDelay: `${i * 0.05}s`, borderTopColor: card.borderColor, borderTopWidth: '3px' }}>
-                    <div className="flex items-center gap-3">
-                      {card.brandLogo}
-                      <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+        {/* SECTION 2 — THE REAL PROBLEM */}
+        <section className="py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12 animate-fade-up">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight">
+                  Most Local Ad Campaigns Don't Have a Traffic Problem.{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary">
+                    They Have a System Problem.
+                  </span>
+                </h2>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center mb-12 animate-fade-up" style={{ animationDelay: "0.05s" }}>
+                Paid ads should be one of the fastest ways to generate demand — but many local businesses still end up frustrated. The issue usually is not the platform. It is the missing system behind it.
+              </p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                {[
+                  { icon: LayoutTemplate, text: "Weak landing pages" },
+                  { icon: Phone, text: "No call tracking" },
+                  { icon: Zap, text: "Poor follow-up" },
+                  { icon: BarChart3, text: "Limited ROI visibility" },
+                ].map((item, i) => (
+                  <div key={i} className="bg-background border border-border rounded-xl p-6 text-center space-y-3">
+                    <div className="w-10 h-10 mx-auto rounded-lg bg-primary/10 flex items-center justify-center">
+                      <item.icon className="w-5 h-5 text-primary" />
                     </div>
-                    <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
-                    <Button variant="outline" size="sm" asChild className="w-fit">
-                      <Link to={card.href}>
-                        Explore Service <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </Button>
+                    <p className="text-sm font-medium text-foreground">{item.text}</p>
                   </div>
                 ))}
               </div>
+              <p className="text-muted-foreground text-center mt-8 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+                GrowSmallBiz builds paid ads as part of a conversion system, not as a standalone traffic tactic.
+              </p>
             </div>
+          </div>
+        </section>
 
-            {/* Row 2 — Secondary Ad Channels (retargeting + coming soon) */}
-            <div className="mb-12">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {adChannelsSecondary.map((card, i) => (
-                  <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-4 animate-fade-up flex flex-col relative overflow-hidden" style={{ animationDelay: `${(i + 3) * 0.05}s` }}>
-                    {'comingSoon' in card && card.comingSoon && (
-                      <span className="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
-                        Coming Soon
-                      </span>
-                    )}
-                    <div className="flex items-center gap-3">
-                      {card.brandLogo}
-                      <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
-                    </div>
-                    <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+        {/* WHY LOCAL SERVICE BUSINESSES INVEST IN PAID ADS */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <SectionHeader
+                title="Why Local Service Businesses Invest in"
+                titleHighlight="Paid Ads"
+                description="Paid ads are not the only way to grow, but they are often the fastest way to create visibility when timing matters. SEO builds momentum over time. Referrals are valuable, but unpredictable. Organic social can support awareness, but it does not always create immediate demand. Paid ads help local businesses show up when people are actively searching, comparing, or ready to take action."
+              />
 
-            {/* Row 2 — Conversion & Performance Systems */}
-            <div>
-              <h3 className="text-lg font-display font-semibold text-primary mb-6 animate-fade-up">Conversion & Performance Systems</h3>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {conversionSystems.map((card, i) => (
-                  <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-3 animate-fade-up flex flex-col" style={{ animationDelay: `${i * 0.05}s` }}>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                {[
+                  { icon: Clock, title: "SEO Builds Over Time", body: "SEO is essential for long-term visibility, but it usually takes time to build rankings, authority, and traffic. Paid ads can help create demand while SEO gains momentum." },
+                  { icon: MessageSquare, title: "Referrals Are Valuable, But Unpredictable", body: "Word-of-mouth leads can be strong, but they are hard to scale consistently. Paid ads give you more control over timing, targeting, and lead flow." },
+                  { icon: Megaphone, title: "Organic Social Builds Awareness", body: "Social media helps people notice your brand, but not every local business owner has time to create content consistently. Paid campaigns help put the right offer in front of the right audience faster." },
+                  { icon: MousePointerClick, title: "Paid Ads Create Faster Market Visibility", body: "When campaigns are built correctly, paid ads help you test offers, target service areas, control budgets, and generate qualified calls or leads with much more predictability." },
+                ].map((card, i) => (
+                  <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <card.icon className="w-5 h-5 text-primary" />
                     </div>
                     <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
-                    <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{card.body}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-16">
+                <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
+                  <h4 className="text-base font-display font-semibold text-foreground mb-3">How Google PPC Works</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Google Search Ads help you appear when people are actively searching for services like yours. You bid on relevant keywords, control where your ads appear, and send traffic to focused pages built to convert. This is usually the strongest fit when demand already exists and you want to capture it quickly.
+                  </p>
+                </div>
+                <div className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: "0.05s" }}>
+                  <h4 className="text-base font-display font-semibold text-foreground mb-3">How Meta Retargeting Works</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Most visitors do not contact a business the first time they land on a website. Meta retargeting helps you stay visible on Facebook and Instagram after they leave. That repeated exposure builds familiarity, supports trust, and brings warm prospects back when they are ready to act.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <h4 className="text-lg font-display font-semibold text-foreground text-center mb-6 animate-fade-up">Pay-Per-Click vs Pay-Per-Lead</h4>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
+                    <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Click</h5>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      With PPC, you pay for the click and control the landing page, targeting, messaging, and conversion path. This usually gives you more flexibility and better optimization potential when the campaign structure is strong.
+                    </p>
+                  </div>
+                  <div className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: "0.05s" }}>
+                    <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Lead</h5>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      With pay-per-lead, you pay when a lead comes through rather than for every click. This model is most commonly associated with Local Service Ads. For eligible businesses, it can work well when lead quality is strong and the category is a good fit.
+                    </p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground text-center mt-6 max-w-3xl mx-auto animate-fade-up">
+                  For many local service businesses, the best approach is not choosing only one model. It is choosing the right mix based on your niche, service area, urgency of demand, and how your leads are tracked and followed up.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Prompt 1 — REMOVED: "Built for Local Service Businesses That Need Better Leads" section */}
+
+        {/* SECTION — SERVICES WE OFFER */}
+        <section className="py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <SectionHeader
+                title="A Complete Paid Advertising System —"
+                titleHighlight="Not Just Ad Setup"
+                description="Every engagement includes both channel management and the performance infrastructure that makes campaigns convert."
+              />
+
+              <div className="mb-8">
+                <h3 className="text-lg font-display font-semibold text-primary mb-6 animate-fade-up">Ad Channels We Manage</h3>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {adChannelsPrimary.map((card, i) => (
+                    <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-4 animate-fade-up flex flex-col" style={{ animationDelay: `${i * 0.05}s`, borderTopColor: card.borderColor, borderTopWidth: '3px' }}>
+                      <div className="flex items-center gap-3">
+                        {card.brandLogo}
+                        <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                      </div>
+                      <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
+                      <Button variant="outline" size="sm" asChild className="w-fit">
+                        <Link to={card.href}>
+                          Explore Service <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </Button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-12">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {adChannelsSecondary.map((card, i) => (
+                    <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-4 animate-fade-up flex flex-col relative overflow-hidden" style={{ animationDelay: `${(i + 3) * 0.05}s` }}>
+                      {'comingSoon' in card && card.comingSoon && (
+                        <span className="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                          Coming Soon
+                        </span>
+                      )}
+                      <div className="flex items-center gap-3">
+                        {card.brandLogo}
+                        <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                      </div>
+                      <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-display font-semibold text-primary mb-6 animate-fade-up">Conversion & Performance Systems</h3>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {conversionSystems.map((card, i) => (
+                    <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-3 animate-fade-up flex flex-col" style={{ animationDelay: `${i * 0.05}s` }}>
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                        <card.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                      <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Prompt 4 — CHANNEL COMPARISON TABLE */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-10 animate-fade-up">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-3">
+                  Google Ads vs. Local Services Ads vs.{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary">Meta Ads — Which Do You Need?</span>
+                </h2>
+                <p className="italic text-muted-foreground">Short answer — probably more than one. Here is how they actually differ.</p>
+              </div>
+
+              <div className="overflow-x-auto rounded-2xl border border-border bg-card animate-fade-up">
+                <table className="w-full text-left text-sm">
+                  <thead>
+                    <tr className="bg-background">
+                      <th className="px-4 py-4 font-display font-bold text-foreground">Factor</th>
+                      <th className="px-4 py-4 font-display font-bold text-foreground">Google Ads (PPC)</th>
+                      <th className="px-4 py-4 font-display font-bold text-foreground">Local Services Ads</th>
+                      <th className="px-4 py-4 font-display font-bold text-foreground">Meta Ads</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {channelComparison.map((row, i) => (
+                      <tr key={i} className={`border-t border-border ${i % 2 === 1 ? "bg-background/40" : ""}`}>
+                        <td className="px-4 py-4 font-semibold text-foreground">{row[0]}</td>
+                        <td className="px-4 py-4 text-muted-foreground">{row[1]}</td>
+                        <td className="px-4 py-4 text-muted-foreground">{row[2]}</td>
+                        <td className="px-4 py-4 text-muted-foreground">{row[3]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <p className="italic text-xs text-muted-foreground mt-4 text-center max-w-3xl mx-auto">
+                General framework based on common industry observations. Your specific results will vary by niche, geography, creative quality, and budget.
+              </p>
+
+              <div className="mt-8 text-center animate-fade-up">
+                <p className="font-display font-bold text-foreground mb-2">Not sure which combination fits your business?</p>
+                <a
+                  href={strategyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
+                >
+                  Schedule Strategy Session <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Prompt 5 — VERTICAL HUB CALLOUTS */}
+        <section className="py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12 animate-fade-up">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
+                  Paid Ads Built for{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary">Your Industry</span>
+                </h2>
+                <p className="italic text-muted-foreground max-w-3xl mx-auto">
+                  We don't run the same campaigns for an HVAC contractor that we run for a med spa. Here is how we specialize by vertical.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {verticalHubs.map((hub, i) => {
+                  const Icon = hub.icon;
+                  return (
+                    <div
+                      key={i}
+                      className="bg-background border border-border rounded-2xl p-6 flex flex-col gap-4 transition-all hover:border-primary/40 hover:shadow-[0_0_30px_rgba(45,200,200,0.15)] animate-fade-up"
+                      style={{ animationDelay: `${i * 0.08}s` }}
+                    >
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-display font-bold text-foreground">{hub.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed flex-1">{hub.body}</p>
+                      <Link
+                        to={hub.href}
+                        className="inline-flex items-center gap-1 text-primary font-semibold text-sm hover:underline"
+                      >
+                        {hub.cta} <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION — HOW THE CHANNELS WORK TOGETHER */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <SectionHeader
+                title="How Paid Traffic Becomes"
+                titleHighlight="Booked Jobs"
+              />
+
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                {processSteps.map((step, i) => (
+                  <div key={i} className="text-center space-y-3 animate-fade-up relative" style={{ animationDelay: `${i * 0.08}s` }}>
+                    <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
+                      <step.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="text-xs font-bold text-primary uppercase tracking-wider">Step {i + 1}</div>
+                    <h4 className="text-base font-display font-semibold text-foreground">{step.label}</h4>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{step.description}</p>
+                    {i < processSteps.length - 1 && (
+                      <div className="hidden md:block absolute top-6 -right-2 text-border">
+                        <ArrowRight className="w-4 h-4" />
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* SECTION 5 — HOW THE CHANNELS WORK TOGETHER */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <SectionHeader
-              title="How Paid Traffic Becomes"
-              titleHighlight="Booked Jobs"
-            />
+        {/* SECTION — WHY MOST LOCAL PAID ADS FAIL */}
+        <section className="py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <SectionHeader
+                title="It's Not the Budget."
+                titleHighlight="It's the System."
+                className="mb-12"
+              />
 
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-              {processSteps.map((step, i) => (
-                <div key={i} className="text-center space-y-3 animate-fade-up relative" style={{ animationDelay: `${i * 0.08}s` }}>
-                  <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
-                    <step.icon className="w-5 h-5 text-primary" />
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                {failureReasons.map((reason, i) => (
+                  <div key={i} className="flex items-center gap-3 bg-background border border-border rounded-xl p-4 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                    <AlertTriangle className="w-4 h-4 text-primary shrink-0" />
+                    <p className="text-sm text-foreground">{reason}</p>
                   </div>
-                  <div className="text-xs font-bold text-primary uppercase tracking-wider">Step {i + 1}</div>
-                  <h4 className="text-base font-display font-semibold text-foreground">{step.label}</h4>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{step.description}</p>
-                  {i < processSteps.length - 1 && (
-                    <div className="hidden md:block absolute top-6 -right-2 text-border">
-                      <ArrowRight className="w-4 h-4" />
+                ))}
+              </div>
+
+              <p className="text-center text-muted-foreground animate-fade-up">
+                Each of these is fixable when campaigns are built with the right structure from day one.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Prompt 2 — REAL RESULTS (4-card grid w/ city attribution + case study links) */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <SectionHeader
+                title="Real Results Across"
+                titleHighlight="Local Service Campaigns"
+                description="These examples show what happens when paid ads are paired with better structure, sharper targeting, and stronger conversion systems."
+                className="mb-6"
+              />
+
+              <div className="grid md:grid-cols-2 gap-6 mt-12">
+                {resultsCards.map((card, i) => (
+                  <div
+                    key={i}
+                    className="bg-card border border-border rounded-2xl overflow-hidden flex flex-col animate-fade-up"
+                    style={{ animationDelay: `${i * 0.08}s` }}
+                  >
+                    <div className="bg-gradient-primary px-6 py-4">
+                      <p className="text-xs font-bold text-primary-foreground/90 uppercase tracking-wider mb-1">
+                        Campaign Results — {card.eyebrow}
+                      </p>
+                      <h3 className="text-lg font-display font-bold text-primary-foreground">{card.title}</h3>
+                      <p className="text-xs text-primary-foreground/80 mt-1">{card.timeframe}</p>
                     </div>
-                  )}
-                </div>
-              ))}
+                    <div className="p-6 flex-1 flex flex-col gap-4">
+                      <div>
+                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Challenge</p>
+                        <p className="text-sm text-foreground">{card.challenge}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Strategy</p>
+                        <p className="text-sm text-foreground">{card.strategy}</p>
+                      </div>
+                      <div className={`grid ${card.stats.length === 3 ? "grid-cols-3" : "grid-cols-2"} gap-3 pt-2`}>
+                        {card.stats.map((m, mi) => (
+                          <div key={mi} className="bg-background rounded-lg p-3 text-center">
+                            <p className="text-lg font-display font-bold text-primary">{m.value}</p>
+                            <p className="text-xs text-muted-foreground">{m.label}</p>
+                          </div>
+                        ))}
+                      </div>
+                      <Link
+                        to={card.href}
+                        className="inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline mt-auto pt-2"
+                      >
+                        Read Full Case Study <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* SECTION 6 — WHY MOST LOCAL PAID ADS FAIL */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <SectionHeader
-              title="It's Not the Budget."
-              titleHighlight="It's the System."
-              className="mb-12"
-            />
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-              {failureReasons.map((reason, i) => (
-                <div key={i} className="flex items-center gap-3 bg-background border border-border rounded-xl p-4 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <AlertTriangle className="w-4 h-4 text-primary shrink-0" />
-                  <p className="text-sm text-foreground">{reason}</p>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-center text-muted-foreground animate-fade-up">
-              Each of these is fixable when campaigns are built with the right structure from day one.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 7 — REAL RESULTS */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <SectionHeader
-              title="Real Results Across"
-              titleHighlight="Local Service Campaigns"
-              description="These examples show what happens when paid ads are paired with better structure, sharper targeting, and stronger conversion systems."
-              className="mb-6"
-            />
-
-            <div className="grid lg:grid-cols-3 gap-8 mt-12">
-              {/* HVAC */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden flex flex-col animate-fade-up">
-                <div className="p-1.5">
-                  <div className="bg-primary/10 rounded-xl px-5 py-4">
-                    <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">HVAC</p>
-                    <h3 className="text-lg font-display font-semibold text-foreground">Stronger Visibility, Lower CPA</h3>
+        {/* Prompt 9 — VISIBILITY/TRUST (paid-ads framing) */}
+        <section className="py-24 bg-card">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="animate-fade-up">
+                  <SectionHeader
+                    title="Visibility Gets You Seen."
+                    titleHighlight="Trust Gets Them to Convert."
+                    centered={false}
+                    className="mb-6"
+                  />
+                  <div className="space-y-4 text-muted-foreground leading-relaxed">
+                    <p>
+                      Paid ads create immediate visibility, but most local buyers do not convert on their first visit. Strong paid advertising is not just about getting clicks — it is about staying in front of the right audience long enough for them to trust you, remember you, and choose you.
+                    </p>
+                    <p>
+                      That is why every GrowSmallBiz paid campaign is built with retargeting, creative rotation, and conversion-tracking baked in from day one. Repeated exposure builds familiarity. Familiarity builds trust. Trust improves conversion. The strongest paid campaigns are not built on traffic alone — they are built on multiple touchpoints working together.
+                    </p>
                   </div>
                 </div>
-                <div className="p-6 flex-1 space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Challenge</p>
-                    <p className="text-sm text-foreground">Needed stronger visibility, more qualified leads, and lower acquisition costs in a competitive local market.</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Strategy</p>
-                    <p className="text-sm text-foreground">Refined keyword targeting, stronger ad copy, geographic focus, ad extensions, and ongoing optimization.</p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3 pt-2">
-                    {[
-                      { value: "+83%", label: "Conversions" },
-                      { value: "-41%", label: "CPA" },
-                      { value: "+50.23%", label: "CTR" },
-                      { value: "+56.3%", label: "Conversion Rate" },
-                    ].map((m, i) => (
-                      <div key={i} className="bg-background rounded-lg p-3 text-center">
-                        <p className="text-lg font-display font-bold text-primary">{m.value}</p>
-                        <p className="text-xs text-muted-foreground">{m.label}</p>
+                <div className="space-y-4 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+                  {trustRows.map((item, i) => (
+                    <div key={i} className="flex items-center gap-4 bg-background border border-border rounded-xl p-4">
+                      <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                        <item.icon className="w-4 h-4 text-primary" />
                       </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Roofing */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden flex flex-col animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                <div className="p-1.5">
-                  <div className="bg-primary/10 rounded-xl px-5 py-4">
-                    <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">Roofing</p>
-                    <h3 className="text-lg font-display font-semibold text-foreground">Better Estimates, Better Efficiency</h3>
-                  </div>
-                </div>
-                <div className="p-6 flex-1 space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Challenge</p>
-                    <p className="text-sm text-foreground">Needed stronger estimate flow and better efficiency from existing ad spend.</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Strategy</p>
-                    <p className="text-sm text-foreground">Improved campaign structure, tighter optimization, and continuous performance refinement.</p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3 pt-2">
-                    {[
-                      { value: "+93.3%", label: "Conversions" },
-                      { value: "-48.9%", label: "Cost/Conversion" },
-                      { value: "+123.4%", label: "Conversion Rate" },
-                    ].map((m, i) => (
-                      <div key={i} className="bg-background rounded-lg p-3 text-center">
-                        <p className="text-lg font-display font-bold text-primary">{m.value}</p>
-                        <p className="text-xs text-muted-foreground">{m.label}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Med Spa */}
-              <div className="bg-card border border-border rounded-2xl overflow-hidden flex flex-col animate-fade-up" style={{ animationDelay: "0.2s" }}>
-                <div className="p-1.5">
-                  <div className="bg-primary/10 rounded-xl px-5 py-4">
-                    <p className="text-xs font-bold text-primary uppercase tracking-wider mb-1">Med Spa</p>
-                    <h3 className="text-lg font-display font-semibold text-foreground">Long-Term Growth, Efficient CPA</h3>
-                  </div>
-                </div>
-                <div className="p-6 flex-1 space-y-4">
-                  <div>
-                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Challenge</p>
-                    <p className="text-sm text-foreground">The goal was long-term lead growth at a stable and efficient cost per acquisition.</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Strategy</p>
-                    <p className="text-sm text-foreground">Multi-campaign Google Ads structure across Search and Display with ongoing optimization.</p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3 pt-2">
-                    {[
-                      { value: "2,577", label: "Total Conversions" },
-                      { value: "$16.39", label: "All-Time CPA" },
-                      { value: "+48.8%", label: "30-Day Conversions" },
-                      { value: "-31.1%", label: "30-Day CPA" },
-                    ].map((m, i) => (
-                      <div key={i} className="bg-background rounded-lg p-3 text-center">
-                        <p className="text-lg font-display font-bold text-primary">{m.value}</p>
-                        <p className="text-xs text-muted-foreground">{m.label}</p>
-                      </div>
-                    ))}
-                  </div>
+                      <p className="text-sm text-foreground font-medium">{item.label}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* SECTION 8 — SEO + RETARGETING */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="animate-fade-up">
-                <SectionHeader
-                  title="Visibility Gets You Seen."
-                  titleHighlight="Trust Gets You Chosen."
-                  centered={false}
-                  className="mb-6"
-                />
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    Paid ads create immediate visibility, but many buyers do not act on the first visit. SEO helps your business show up organically as prospects continue researching. Retargeting keeps you visible after they leave.
-                  </p>
-                  <p>
-                    Repeated exposure builds familiarity. Familiarity builds trust. Trust improves conversion. That is why the strongest campaigns are not built on traffic alone — they are built on multiple touchpoints working together.
-                  </p>
-                </div>
-              </div>
-              <div className="space-y-4 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+        {/* SECTION — WHY GROWSMALLBIZ */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <SectionHeader
+                title="Why Local Businesses Choose GrowSmallBiz for"
+                titleHighlight="Paid Ads"
+                className="mb-12"
+              />
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { icon: Eye, label: "SEO builds organic trust over time" },
-                  { icon: Target, label: "Paid ads capture high-intent demand now" },
-                  { icon: RefreshCw, label: "Retargeting keeps you top-of-mind" },
-                  { icon: TrendingUp, label: "Multiple touchpoints increase conversion" },
+                  { icon: MapPin, title: "Built for local service businesses" },
+                  { icon: TrendingUp, title: "Full-funnel thinking, not isolated ad buying" },
+                  { icon: BarChart3, title: "Tracking and transparency from click to lead" },
+                  { icon: Link2, title: "Campaigns connected to follow-up and CRM systems" },
+                  { icon: Target, title: "Practical strategy with ongoing optimization" },
+                  { icon: RefreshCw, title: "Retargeting strategy to recapture warm visitors and increase conversions" },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-4 bg-background border border-border rounded-xl p-4">
+                  <div key={i} className="flex items-start gap-4 bg-card border border-border rounded-xl p-5 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                     <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <item.icon className="w-4 h-4 text-primary" />
                     </div>
-                    <p className="text-sm text-foreground font-medium">{item.label}</p>
+                    <p className="text-sm font-medium text-foreground">{item.title}</p>
                   </div>
                 ))}
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* SECTION 9 — WHY GROWSMALLBIZ */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <SectionHeader
-              title="Why Local Businesses Choose GrowSmallBiz for"
-              titleHighlight="Paid Ads"
-              className="mb-12"
-            />
+        {/* SECTION — FAQ (Prompt 11: rename CTA in sidebar) */}
+        <FAQSection
+          faqs={faqs}
+          subtitle="Common questions about our paid advertising services"
+          contactCTA={{
+            ...baseContactCTA,
+            title: "Have more questions about Paid Ads?",
+            description: "We're here to help you build a paid advertising system that actually works.",
+            tagline: "Let's turn your ad spend into qualified leads.",
+            buttonText: "Schedule Strategy Session",
+            buttonHref: strategyUrl,
+          }}
+        />
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { icon: MapPin, title: "Built for local service businesses" },
-                { icon: TrendingUp, title: "Full-funnel thinking, not isolated ad buying" },
-                { icon: BarChart3, title: "Tracking and transparency from click to lead" },
-                { icon: Link2, title: "Campaigns connected to follow-up and CRM systems" },
-                { icon: Target, title: "Practical strategy with ongoing optimization" },
-                { icon: RefreshCw, title: "Retargeting strategy to recapture warm visitors and increase conversions" },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 bg-card border border-border rounded-xl p-5 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <item.icon className="w-4 h-4 text-primary" />
-                  </div>
-                  <p className="text-sm font-medium text-foreground">{item.title}</p>
+        {/* Prompt 6 — TRUST ROW (Google Partner + 4 chambers) */}
+        <section className="py-12 bg-card border-y border-border">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <p className="text-center text-xs font-bold text-primary uppercase tracking-wider mb-6">Trusted &amp; Recognized</p>
+              <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+                <div className="flex items-center gap-2 text-foreground">
+                  <ShieldCheck className="w-5 h-5 text-primary" />
+                  <span className="text-sm font-semibold">Google Partner</span>
                 </div>
-              ))}
+                {[
+                  "Walnut Creek Chamber of Commerce",
+                  "Pleasanton Chamber of Commerce",
+                  "Danville Area Chamber of Commerce",
+                  "San Ramon Chamber of Commerce",
+                ].map((chamber) => (
+                  <div key={chamber} className="flex items-center gap-2 text-muted-foreground">
+                    <Award className="w-4 h-4 text-primary/70" />
+                    <span className="text-sm">{chamber}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* SECTION 10 — FAQ */}
-      <FAQSection
-        faqs={faqs}
-        subtitle="Common questions about our paid advertising services"
-        contactCTA={{
-          ...baseContactCTA,
-          title: "Have more questions about Paid Ads?",
-          description: "We're here to help you build a paid advertising system that actually works.",
-          tagline: "Let's turn your ad spend into qualified leads.",
-        }}
-      />
+        {/* SECTION — FINAL CTA (Prompt 10 body + Prompt 11 button label) */}
+        <PersonCTA
+          title="Ready to Run Ads That Actually Generate Leads?"
+          description="Stop guessing. Stop wasting budget. Schedule a 30-minute strategy session and we will walk through your current marketing, identify the 3–5 highest-leverage moves across Website, SEO, and Paid Ads, and give you a clear roadmap — whether or not you hire us."
+          buttonText="Schedule Strategy Session"
+          buttonHref={strategyUrl}
+          sectionClassName="py-24"
+        />
 
-      {/* SECTION 11 — FINAL CTA */}
-      <PersonCTA
-        title="Ready to Run Ads That Actually Generate Leads?"
-        description="Stop guessing. Stop wasting budget. Start building a paid advertising system that turns visibility into qualified leads, better follow-up, and clearer ROI."
-        buttonText="Schedule Strategy Call"
-        buttonHref={strategyUrl}
-        sectionClassName="py-24"
-      />
-
-      {/* CONSULTATION FORM */}
-      <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
+        {/* CONSULTATION FORM */}
+        <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
+      </main>
 
       <Footer />
     </div>
