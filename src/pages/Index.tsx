@@ -465,12 +465,6 @@ const Index = () => {
         {/* Stats */}
         <AnimatedStatsSection stats={homepageStats} columns={4} />
 
-        {/* Testimonials */}
-        <TestimonialsSection 
-          title="What Our Clients Say"
-          subtitle="Real feedback from business owners who wanted better visibility, better systems, and better follow-up."
-        />
-
         {/* Real Results Across Home Service Campaigns */}
         <HomeCaseStudySection />
 
