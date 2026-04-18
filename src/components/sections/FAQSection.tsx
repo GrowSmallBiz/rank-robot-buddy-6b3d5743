@@ -11,8 +11,17 @@ import { Link } from "react-router-dom";
 
 export interface FAQItem {
   question: string;
+  /**
+   * Answer text. When the string contains HTML markup (e.g. <strong>, <a>),
+   * it will be rendered via dangerouslySetInnerHTML AND used byte-for-byte
+   * as the JSON-LD acceptedAnswer text — preserving rendered/schema parity
+   * for FAQPage rich results.
+   */
   answer: string;
 }
+
+// Detect whether an answer contains HTML markup that must be rendered as such.
+const isHtmlAnswer = (s: string) => /<\/?(strong|em|a|br|b|i|code)\b/i.test(s);
 
 export interface ContactCTA {
   title: string;
@@ -91,8 +100,12 @@ export const FAQSection = ({
                   <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-5 hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                    {faq.answer}
+                  <AccordionContent className="text-muted-foreground pb-5 leading-relaxed [&_strong]:text-foreground [&_strong]:font-semibold [&_a]:text-primary [&_a]:underline [&_a:hover]:text-primary/80">
+                    {isHtmlAnswer(faq.answer) ? (
+                      <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                    ) : (
+                      faq.answer
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               ))}
