@@ -48,6 +48,10 @@ const faqs: FAQItem[] = [
     answer: "The Google Guarantee badge is a green checkmark that appears next to your business name in your LSA listing. It tells customers that Google has verified your business — including a background check, license verification, and insurance confirmation. GrowSmallBiz manages this entire process for you, from application submission to document collection to monitoring approval status. Once active, the badge dramatically increases customer trust and click-through rate.",
   },
   {
+    question: "Do Google Local Service Ads work for my type of business?",
+    answer: "LSA is available for specific service categories — and GrowSmallBiz works exclusively within those categories: HVAC, dental, med spa, home services, chiropractic, auto repair, realtors, and photographers. In your free strategy call, we confirm your eligibility, review the competitive landscape, and give an honest assessment of what LSA can realistically deliver for your business.",
+  },
+  {
     question: "How much does it cost to run Google Local Service Ads?",
     answer: "LSA operates on a pay-per-lead basis — you pay only when a customer contacts you directly through the ad, not per click. Your weekly budget determines how many leads you can receive. Actual cost per lead varies by industry and geographic market. GrowSmallBiz sets and adjusts your budget based on competitive data, your service area, and your lead volume targets.",
   },
@@ -62,10 +66,6 @@ const faqs: FAQItem[] = [
   {
     question: "How does GrowSmallBiz improve my LSA ranking over time?",
     answer: "Google ranks LSA profiles based on review count and recency, responsiveness to leads, profile completeness, service area relevance, and business hours. We actively optimize every one of these ranking factors ongoing — review generation campaigns, response metric monitoring, profile updates, and category/service area adjustments based on performance data.",
-  },
-  {
-    question: "Do Google Local Service Ads work for my type of business?",
-    answer: "LSA is available for specific service categories — and GrowSmallBiz works exclusively within those categories: HVAC, dental, med spa, home services, chiropractic, auto repair, realtors, and photographers. In your free strategy call, we confirm your eligibility, review the competitive landscape, and give an honest assessment of what LSA can realistically deliver for your business.",
   },
   {
     question: "Can I run Google Local Service Ads alongside my regular Google Ads (PPC)?",
