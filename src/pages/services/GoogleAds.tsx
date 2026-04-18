@@ -357,7 +357,7 @@ const GoogleAds = () => {
             fetchPriority="high"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-background/30" />
+          <div className="absolute inset-0 bg-background/60" />
         </div>
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
