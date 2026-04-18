@@ -32,6 +32,14 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // PROMPT 9 — FAQ data (8 Q&As). Single source of truth: this array drives BOTH
