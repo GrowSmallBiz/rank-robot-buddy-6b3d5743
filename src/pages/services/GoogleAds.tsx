@@ -728,10 +728,10 @@ const GoogleAds = () => {
             <div className="grid md:grid-cols-3 gap-6 mt-12">
               {/* Card 1: Retargeting */}
               <div
-                className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-4 transition-all hover:border-primary/30 hover:shadow-lg animate-fade-up"
+                className="bg-background border-2 border-primary/20 rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(255,127,80,0.4)] hover:-translate-y-1 animate-fade-up"
                 style={{ animationDelay: "0s" }}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center">
                   <Repeat className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-foreground">
@@ -744,14 +744,14 @@ const GoogleAds = () => {
 
               {/* Card 2: Lead Nurture (Email + SMS) */}
               <div
-                className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-4 transition-all hover:border-primary/30 hover:shadow-lg animate-fade-up"
+                className="bg-background border-2 border-primary/20 rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(255,127,80,0.4)] hover:-translate-y-1 animate-fade-up"
                 style={{ animationDelay: "0.08s" }}
               >
                 <div className="flex items-center gap-2">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center">
                     <MessageSquare className="w-6 h-6 text-primary" />
                   </div>
                 </div>
@@ -765,10 +765,10 @@ const GoogleAds = () => {
 
               {/* Card 3: Instant Response */}
               <div
-                className="bg-card border border-border rounded-2xl p-6 flex flex-col gap-4 transition-all hover:border-primary/30 hover:shadow-lg animate-fade-up"
+                className="bg-background border-2 border-primary/20 rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(255,127,80,0.4)] hover:-translate-y-1 animate-fade-up"
                 style={{ animationDelay: "0.16s" }}
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center">
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-foreground">
