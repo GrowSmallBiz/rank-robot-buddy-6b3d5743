@@ -44,7 +44,7 @@ import {
 import { Head } from "vite-react-ssg";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { SiteNavigationJsonLd } from "@/components/seo/SiteNavigationJsonLd";
-import { ReviewJsonLd } from "@/components/seo/ReviewJsonLd";
+
 
 // Stats data for homepage
 const homepageStats = [
@@ -179,14 +179,6 @@ const Index = () => {
         breadcrumbs={[]}
       />
       <SiteNavigationJsonLd />
-      <ReviewJsonLd
-        reviews={[
-          { author: "Jamie L.", reviewBody: "GrowSmallBiz transformed our online presence. Our traffic doubled, and we saw a 200% increase in qualified leads within just three months.", ratingValue: 5 },
-          { author: "Marcus R.", reviewBody: "The AI-powered approach to SEO is revolutionary. We're now ranking for keywords we never thought possible. The ROI has been exceptional.", ratingValue: 5 },
-          { author: "Sarah K.", reviewBody: "Their technical SEO audit revealed issues we'd missed for years. After implementing their recommendations, our Core Web Vitals are now all in the green.", ratingValue: 5 },
-        ]}
-        itemReviewed={{ name: "GrowSmallBiz Digital Marketing", url: "/" }}
-      />
       <Header />
       <main id="main-content">
       {/* Hero Section */}
