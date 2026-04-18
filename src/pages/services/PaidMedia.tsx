@@ -971,20 +971,22 @@ const PaidMedia = () => {
             <div className="max-w-5xl mx-auto">
               <p className="text-center text-xs font-bold text-primary uppercase tracking-wider mb-6">Trusted &amp; Recognized</p>
               <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-                <div className="flex items-center gap-2 text-foreground">
-                  <ShieldCheck className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-semibold">Google Partner</span>
-                </div>
                 {[
-                  "Walnut Creek Chamber of Commerce",
-                  "Pleasanton Chamber of Commerce",
-                  "Danville Area Chamber of Commerce",
-                  "San Ramon Chamber of Commerce",
+                  { name: "Walnut Creek Chamber of Commerce", url: "https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" },
+                  { name: "Danville Area Chamber of Commerce", url: "https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" },
+                  { name: "San Ramon Chamber of Commerce", url: "https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" },
+                  { name: "Greater Concord Chamber of Commerce", url: "https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" },
                 ].map((chamber) => (
-                  <div key={chamber} className="flex items-center gap-2 text-muted-foreground">
+                  <a
+                    key={chamber.name}
+                    href={chamber.url}
+                    target="_blank"
+                    rel="noopener"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  >
                     <Award className="w-4 h-4 text-primary/70" />
-                    <span className="text-sm">{chamber}</span>
-                  </div>
+                    <span className="text-sm">{chamber.name}</span>
+                  </a>
                 ))}
               </div>
             </div>
