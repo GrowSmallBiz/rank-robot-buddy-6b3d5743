@@ -315,8 +315,38 @@ const GoogleAds = () => {
       />
       <Header />
 
+      <main id="main-content">
+        {/* Breadcrumbs — parity with /services/paid-advertising/ */}
+        <nav aria-label="Breadcrumb" className="container mx-auto px-4 pt-6">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services/">Services</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services/paid-advertising/">Paid Advertising</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Google Ads</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </nav>
+
       {/* ─── PROMPT 1: HERO — H1 swap (Local→Small) + credential line ─── */}
-      <section className="relative pt-32 pb-24 overflow-hidden">
+      <section className="relative pt-12 pb-24 overflow-hidden">
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
