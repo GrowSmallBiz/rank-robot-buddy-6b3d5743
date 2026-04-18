@@ -570,7 +570,7 @@ const GoogleAds = () => {
           <div className="max-w-5xl mx-auto">
             <SectionHeader
               title="From Strategy to Leads in"
-              titleHighlight="Weeks, Not Months"
+              titleHighlight="Days, Not Months"
             />
             <div className="space-y-6 mt-12">
               {[
