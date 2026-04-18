@@ -31,7 +31,6 @@ import {
   Home,
   Stethoscope,
   Wrench,
-  Car,
   Camera,
   Scale,
 } from "lucide-react";
