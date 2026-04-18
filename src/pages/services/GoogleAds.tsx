@@ -348,6 +348,17 @@ const GoogleAds = () => {
 
       {/* ─── PROMPT 1: HERO — H1 swap (Local→Small) + credential line ─── */}
       <section className="relative pt-12 pb-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={heroGoogleAdsRoofing}
+            alt="Roofer on a residential roof at golden hour with abstract Google Ads analytics overlay"
+            width={1920}
+            height={1080}
+            fetchPriority="high"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/85" />
+        </div>
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
