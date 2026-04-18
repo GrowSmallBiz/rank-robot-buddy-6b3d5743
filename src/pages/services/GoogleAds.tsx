@@ -13,7 +13,6 @@ import {
   ArrowRight,
   Target,
   Search,
-  ShieldCheck,
   Eye,
   Zap,
   MapPin,
@@ -22,48 +21,206 @@ import {
   Phone,
   RefreshCw,
   CheckCircle2,
-  Monitor,
-  Settings,
-  Users,
-  Star,
-  Wrench,
-  Stethoscope,
+  LayoutGrid,
   Home,
-  Scale,
-  Car,
+  Wrench,
+  Sparkles,
+  Smile,
+  PersonStanding,
+  Key,
   Camera,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
 
+// ─────────────────────────────────────────────────────────────────────────────
+// PROMPT 9 — FAQ data (8 Q&As). Single source of truth: this array drives BOTH
+// the rendered accordion AND the FAQPage JSON-LD inside FAQSection — kept in
+// byte-for-byte sync. Q4 contains <strong> + inline anchor that round-trip
+// through both surfaces (rendered + acceptedAnswer text).
+// ─────────────────────────────────────────────────────────────────────────────
 const faqs: FAQItem[] = [
   {
-    question: "How much should a local business spend on Google Ads?",
-    answer: "The right budget depends on your market, your industry, and your goals. For most local service businesses, we recommend starting with a minimum of $500–$1,500/month in ad spend. We will give you a realistic projection of what that budget can generate for your specific market during your free strategy session.",
+    question: "Are Google Ads worth it for a small business?",
+    answer:
+      "For local service businesses, Google Ads delivers high ROI when campaigns are built correctly — industry-wide conversion rates average 7.52% (WordStream by LocaliQ, 2025). The key is strategy: broad targeting without conversion tracking produces waste; precision-targeted campaigns with proper measurement produce positive unit economics. Most local service businesses see clear positive returns within 90 days of optimized management.",
+  },
+  {
+    question: "How much should a small business spend on Google Ads?",
+    answer:
+      "Most local service businesses budget $2,000–$5,000 per month on Google Ads to generate meaningful lead volume. Gartner's 2025 CMO Spend Survey shows companies allocate 7.7% of revenue to marketing on average — use that as a planning floor when deciding Google Ads budget. Conversion systems need to prove out before scaling, so we always audit your situation before recommending a specific number.",
   },
   {
     question: "How long does it take to see results from Google Ads?",
-    answer: "Unlike SEO, Google Ads can generate leads within days of launch. Most of our clients see qualified inbound leads within the first 1–2 weeks of a campaign going live. The first 60–90 days are a learning period where we optimize aggressively to lower your cost per lead and increase conversion rates.",
+    answer:
+      "Google Ads delivers immediate visibility — campaigns can go live within 2–3 weeks of onboarding, and first leads typically arrive within 30 days. Meaningful CPA improvement compounds over the first 90 days as we gather enough conversion data to refine bids, keywords, and audiences. Unlike SEO, Google Ads does not require months of indexing to start producing leads.",
   },
   {
     question: "What is the difference between Google Ads and Google Local Service Ads?",
-    answer: "Google Ads (PPC) charges you per click, regardless of whether that click converts. Google Local Service Ads charge you per qualified lead — meaning you only pay when a potential customer actually calls or messages your business. Many of our clients benefit from running both simultaneously for maximum coverage.",
+    // HTML answer — bold emphasis + inline LSA hyperlink. The exact same string
+    // is used in the JSON-LD acceptedAnswer text (no stripping).
+    answer:
+      'Google Ads and Google Local Service Ads are both Google paid channels, but they work differently. Google Ads lets you bid on any keyword with full control over targeting and messaging — you pay per click. Google Local Service Ads appear above Google Ads with the Google Guaranteed badge — you pay per qualified lead, but only specific service categories qualify. <strong>Google Ads is best when</strong> you want keyword-level control, retargeting, or your service is not LSA-eligible. <strong>LSA is best when</strong> you qualify for the badge and want pay-per-lead pricing on pre-qualified calls. Per The Media Captain\'s 2025 analysis, 29% of searchers prefer clicking LSA listings vs 11% who prefer Google Ads — most local service businesses run both. Learn more about <a href="/services/paid-advertising/google-local-services-ads/">Google Local Service Ads management</a> to see if your business qualifies.',
   },
   {
     question: "Do I need a new website to run Google Ads?",
-    answer: "Not necessarily, but your website's landing pages need to be conversion-optimized to get the most out of your ad spend. We audit your existing site during onboarding and will recommend improvements — or build dedicated landing pages — if needed to maximize your campaign performance.",
+    answer:
+      "Not necessarily — but your landing pages matter more than most people realize. Google Ads traffic needs to land on pages that load fast, match the ad intent, and make it easy to call or submit a form. If your current site converts well, we will optimize existing pages. If it does not, we will recommend landing page improvements or purpose-built PPC landing pages before scaling spend.",
   },
   {
     question: "Can you manage Google Ads for my business even if I am not in the Bay Area?",
-    answer: "Yes. While GrowSmallBiz is Bay Area-based in Danville, CA, we work with local service businesses nationwide. Our strategies are always tailored to your specific local market, regardless of geography.",
+    answer:
+      "Yes — we manage Google Ads campaigns for local service businesses nationally. While GrowSmallBiz is headquartered in Danville, California, our case studies span California, Florida, and the Chicagoland region. Google Ads is a digital channel — what matters is campaign strategy, not our physical location.",
   },
   {
     question: "How is GrowSmallBiz different from other PPC agencies?",
-    answer: "We specialize exclusively in local service businesses, integrate paid ads into a broader marketing ecosystem, provide a performance guarantee, and assign every client a dedicated Account Relationship Manager.",
+    answer:
+      "Three differences: we only work with local service businesses, we build integrated systems (not just ads), and we stand behind our work with a performance guarantee. Specialization means we understand your customer's search behavior and competitive landscape. Integration means Google Ads connects to CRM, call tracking, and lead handling so leads actually convert. The guarantee: if we do not generate leads within the agreed timeframe and scope, we continue management at no additional fee.",
   },
   {
     question: "What do I need to get started?",
-    answer: "Just your time for a free strategy session. We will review your current situation, define your goals, and outline exactly what a campaign for your business would look like — with no obligation to move forward.",
+    answer:
+      "Schedule a free strategy session — no cost, no obligation. We audit your current digital presence, review any existing Google Ads history, identify your biggest opportunities, and show you exactly what a Google Ads campaign would look like for your business. If it is a fit, campaigns can be live within 2–3 weeks.",
+  },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PROMPT 2 — Market Stats Band (WordStream 2025 verified benchmarks)
+// ─────────────────────────────────────────────────────────────────────────────
+const marketStats = [
+  {
+    value: "7.52%",
+    label: "Average Google Ads conversion rate across industries in 2025",
+  },
+  {
+    value: "$70.11",
+    label: "Average Google Ads cost per lead across industries",
+  },
+  {
+    value: "$5.26",
+    label: "Average Google Ads cost per click",
+  },
+  {
+    value: "6.66%",
+    label: "Average click-through rate — up from 1.35% in 2015",
+  },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PROMPT 8 — Real case study cards (4 cards, hub-format)
+// ─────────────────────────────────────────────────────────────────────────────
+const caseStudyCards = [
+  {
+    badge: "Dental Practice — Concord, CA",
+    title: "Surge in High-Value Patient Leads",
+    timeframe: "Q4 year-over-year comparison",
+    challenge:
+      "Client needed more non-branded general dentistry leads plus high-value patients for implants and all-on-4 treatments.",
+    strategy:
+      "Full account audit, campaign rebuild, call-only campaign for phone leads, dedicated implants/all-on-4 campaign, aggressive negative-keyword list, and extension testing.",
+    metrics: [
+      { value: "+175.51%", label: "Conversions" },
+      { value: "−64.62%", label: "CPA" },
+      { value: "+187.04%", label: "Conversion Rate" },
+      { value: "+127.25%", label: "CTR" },
+    ],
+    href: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/",
+  },
+  {
+    badge: "Med Spa — San Ramon, CA",
+    title: "Long-Term Growth, Efficient CPA",
+    timeframe: "All-time + recent 30 days",
+    challenge:
+      "Long-term lead growth at a stable and efficient cost per acquisition, with phone calls as the primary conversion.",
+    strategy:
+      "Multi-campaign Google Ads structure across Search and Display, service-line differentiation, tiered daily budgets, and ongoing optimization sustained over 3+ years.",
+    metrics: [
+      { value: "2,577", label: "Total Conversions" },
+      { value: "$16.39", label: "All-Time CPA" },
+      { value: "+48.8%", label: "30-Day Conversions" },
+      { value: "−31.1%", label: "30-Day CPA" },
+    ],
+    href: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+  },
+  {
+    badge: "Roofing Contractor — Palm Beach County, FL",
+    title: "Multi-Regional Campaign Mastery",
+    timeframe: "Live since August 2023 — multi-regional rollout",
+    challenge:
+      "Scaling Google Ads across multiple Florida metros (West Palm Beach, Martin/St Lucie, Lakeland) with distinct market dynamics and competitive intensity in each.",
+    strategy:
+      "SKAG structure per metro, STAG for broader thematic reach, Performance Max for volume, Smart Campaign for automation — mixed campaign types matched to conversion intent per region.",
+    metrics: [
+      { value: "1,225", label: "Martin/St Lucie Clicks" },
+      { value: "258", label: "Martin/St Lucie Conversions" },
+      { value: "$70.13", label: "Martin/St Lucie CPA" },
+      { value: "21.06%", label: "Martin/St Lucie Conv. Rate" },
+    ],
+    href: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+  },
+  {
+    badge: "Tree & Lawn Care — Chicagoland",
+    title: "10x Budget Scale, Compounding Returns",
+    timeframe: "Live since September 2023",
+    challenge:
+      "Starting at a modest $2,500/month budget, the client needed proof that spend could scale without CPA spiraling — and needed both form-submission and call-lead conversions tracked.",
+    strategy:
+      "Search + Performance Max dual campaign type, budget scaling based on performance confidence (adjusted from $2,500 → $500 → back to $2,500 → $5,000), and dual-conversion tracking for forms and calls.",
+    metrics: [
+      { value: "553", label: "Total Conversions" },
+      { value: "$53.70", label: "CPA" },
+      { value: "+169.5%", label: "90-Day Clicks" },
+      { value: "+211.5%", label: "90-Day Conversions" },
+    ],
+    href: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/",
+  },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// PROMPT 7 — Industry tiles (7 tiles, descriptions, real URLs)
+// ─────────────────────────────────────────────────────────────────────────────
+const industryTiles = [
+  {
+    icon: Home,
+    title: "HVAC Contractors",
+    description: "Seasonal demand capture for residential and commercial HVAC service calls.",
+    href: "/home-service-contractors/marketing-for-hvac-contractors/",
+  },
+  {
+    icon: Wrench,
+    title: "Plumbing & Home Services",
+    description: "Emergency and scheduled-service campaigns with geo-targeted call extensions.",
+    href: "/home-service-contractors/",
+  },
+  {
+    icon: Sparkles,
+    title: "Med Spas & Aesthetics",
+    description: "High-value treatment inquiries with landing pages tuned to aesthetic buyer intent.",
+    href: "/health-and-wellness-practices/marketing-for-med-spas/",
+  },
+  {
+    icon: Smile,
+    title: "Dental Practices",
+    description: "General dentistry, implants, and high-value procedures with negative-keyword discipline.",
+    href: "/health-and-wellness-practices/marketing-for-dentists/",
+  },
+  {
+    icon: PersonStanding,
+    title: "Chiropractic Practices",
+    description: "Patient-acquisition campaigns built around local search and wellness-curious audiences.",
+    href: "/health-and-wellness-practices/marketing-for-chiropractors/",
+  },
+  {
+    icon: Key,
+    title: "Realtors & Real Estate",
+    description: "Buyer and seller lead generation with multi-touch funnel strategy.",
+    href: "/professional-services/marketing-for-realtors/",
+  },
+  {
+    icon: Camera,
+    title: "Photographers",
+    description: "Bookings campaigns for wedding, portrait, and commercial photography search intent.",
+    href: "/professional-services/marketing-for-photographers/",
   },
 ];
 
@@ -72,24 +229,44 @@ const GoogleAds = () => {
   const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
   return (
     <div className="min-h-screen bg-background">
+      {/* PROMPT 10 — Meta tags (Path B: Lovable codebase) */}
       <Head>
-        <title>Google Ads for Local Businesses | Local PPC Management | GrowSmallBiz</title>
-        <meta name="description" content="Stop paying for clicks that go nowhere. GrowSmallBiz builds and manages Google Ads campaigns for local service businesses — so every dollar you spend works harder to fill your calendar, your phone line, and your revenue goals." />
+        <title>Google Ads Management for Small Businesses | GrowSmallBiz</title>
+        <meta
+          name="description"
+          content="Google Ads for HVAC, dental, med spa, roofing, and landscape businesses. Precision-targeted PPC with conversion tracking, transparent reporting, and a performance guarantee. Free strategy session."
+        />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/google-ads/" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Google Ads Management for Small Businesses — GrowSmallBiz" />
+        <meta
+          property="og:description"
+          content="Local service businesses running Google Ads that actually generate leads. Transparent reporting, performance guarantee, and proven case studies across dental, med spa, HVAC, roofing, and landscaping."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://growsmallbiz.io/services/paid-advertising/google-ads/" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Google Ads Management for Small Businesses — GrowSmallBiz" />
+        <meta
+          name="twitter:description"
+          content="Local service businesses running Google Ads that actually generate leads. Transparent reporting, performance guarantee, and proven case studies across dental, med spa, HVAC, roofing, and landscaping."
+        />
       </Head>
       <ServiceJsonLd
-        serviceName="Google Ads for Local Businesses"
+        serviceName="Google Ads Management for Small Businesses"
         serviceType="Google Ads Management"
         description="Google Ads campaigns built and managed specifically for local service businesses. High-intent keyword targeting, conversion tracking, and ongoing optimization."
         url="/services/paid-advertising/google-ads/"
         breadcrumbs={[
           { name: "Services", url: "/services/" },
-          { name: "Google Ads for Local Businesses", url: "/services/paid-advertising/google-ads/" },
+          { name: "Paid Advertising", url: "/services/paid-advertising/" },
+          { name: "Google Ads", url: "/services/paid-advertising/google-ads/" },
         ]}
       />
       <Header />
 
-      {/* HERO */}
+      {/* ─── PROMPT 1: HERO — H1 swap (Local→Small) + credential line ─── */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
@@ -101,7 +278,7 @@ const GoogleAds = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
-              Google Ads for Local Businesses That{" "}
+              Google Ads for Small Businesses That{" "}
               <span className="text-transparent bg-clip-text bg-gradient-primary">
                 Actually Bring in Customers
               </span>
@@ -128,39 +305,71 @@ const GoogleAds = () => {
                 </a>
               </Button>
             </div>
+            {/* PROMPT 1 — Credential line under CTAs */}
+            <p
+              className="text-base md:text-lg text-muted-foreground text-center mx-auto animate-fade-up"
+              style={{ maxWidth: "40rem", marginTop: "1.5rem", animationDelay: "0.3s" }}
+            >
+              Managing Google Ads campaigns for local service businesses since 2021 — across the Bay Area, Florida, and the Chicagoland region.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* STATS BAR */}
-      <section className="py-16 bg-card">
+      {/* ─── PROMPT 2: MARKET STATS BAND (replaces fabricated stats) ─── */}
+      <section className="py-16" style={{ backgroundColor: "#1B2A4E" }}>
         <div className="container mx-auto px-4">
-          <SectionHeader title="Proven Results for" titleHighlight="Local Service Businesses" className="mb-12" />
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {[
-              { value: "324%", label: "Average Increase in Consultations" },
-              { value: "$127K", label: "Average Monthly Revenue Growth" },
-              { value: "67", label: "First-Page Keywords Achieved" },
-              { value: "4.9 stars", label: "Average Google Rating Achieved" },
-            ].map((stat, i) => (
+          <SectionHeader
+            title="Google Ads"
+            titleHighlight="by the Numbers in 2025"
+            className="mb-4 [&_h2]:text-white"
+          />
+          <p className="text-sm md:text-base text-white/70 text-center max-w-2xl mx-auto mb-12">
+            Verified benchmarks from WordStream's analysis of 16,000+ U.S. Google Ads campaigns.
+          </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            {marketStats.map((stat, i) => (
               <div key={i} className="text-center animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                <p className="text-3xl md:text-4xl font-display font-bold text-primary">{stat.value}</p>
-                <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
+                <p className="text-4xl md:text-5xl font-display font-bold text-primary mb-3">{stat.value}</p>
+                <p className="text-sm md:text-base text-white leading-snug mb-3">{stat.label}</p>
+                <p className="text-xs italic text-white/50">Source: WordStream by LocaliQ 2025 Benchmarks</p>
               </div>
             ))}
           </div>
-          <p className="text-sm text-muted-foreground text-center mt-8">
-            Results from GrowSmallBiz client campaigns across HVAC, Med Spa, Home Services, Dental, and more.
-          </p>
         </div>
       </section>
 
-      {/* PROBLEM SECTION */}
+      {/* ─── PROMPT 3: AEO CONTEXT CALLOUT (NEW) ─── */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div
+              className="relative rounded-2xl p-8 md:p-10 border-l-4 border-primary"
+              style={{ backgroundColor: "hsl(210 50% 12%)" }}
+            >
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center mb-6">
+                Why Google Ads{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary">Matters Now</span>
+              </h2>
+              <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                <p>
+                  GrowSmallBiz manages Google Ads for local service businesses in a market where paid visibility matters more than ever. AI Overviews now appear in 25% of Google searches, and organic click-through rates drop 58% on queries affected by them (Conductor 2026; Ahrefs 2026).
+                </p>
+                <p>
+                  For local services, only 7.9% of searches currently trigger an AI Overview (Ahrefs, November 2025) — so high-intent local queries still route through traditional results, where Google Ads claim the top placement. The AI shift is coming for local search, but paid visibility is the surface that protects against it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PROMPT 4 (H2 #1): PROBLEM SECTION — 'Local'→'Small' ─── */}
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
-              title="Why Most Local Businesses"
+              title="Why Most Small Businesses"
               titleHighlight="Lose Money on Google Ads"
               description="Running Google Ads without a local-focused strategy is one of the fastest ways to burn through a marketing budget. Here is what we see every day from businesses that come to us after trying it on their own or with a generic agency:"
             />
@@ -185,13 +394,13 @@ const GoogleAds = () => {
         </div>
       </section>
 
-      {/* BENEFITS */}
+      {/* ─── PROMPT 4 (H2 #2): BENEFITS SECTION — 'Local'→'Small' ─── */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
               title="What You Get When Google Ads Are Done Right for"
-              titleHighlight="Your Local Business"
+              titleHighlight="Your Small Business"
               description="When your Google Ads campaign is built and managed specifically for your local market, the results speak for themselves."
             />
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -215,13 +424,13 @@ const GoogleAds = () => {
         </div>
       </section>
 
-      {/* SERVICES */}
+      {/* ─── PROMPT 5: SERVICES — H2 'Local'→'Small'; remove LSA, add Performance Max ─── */}
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
               title="Our Google Ads Services for"
-              titleHighlight="Local Businesses"
+              titleHighlight="Small Businesses"
               description="We offer a complete suite of Google advertising solutions built for local service businesses."
             />
             <div className="grid sm:grid-cols-2 gap-8 mt-12">
@@ -232,9 +441,16 @@ const GoogleAds = () => {
                   bullets: ["High-intent, locally targeted keyword research", "Compelling ad copy written to drive calls and form fills", "Smart bidding strategies aligned to your revenue goals", "Negative keyword management to eliminate wasted spend", "Continuous performance monitoring and optimization"],
                 },
                 {
-                  icon: ShieldCheck, title: "Google Local Service Ads (LSA) Management",
-                  desc: "Google Local Service Ads appear above traditional pay-per-click results and charge only for qualified leads — calls and messages from real potential customers. For eligible local service businesses, LSAs are among the highest-ROI ad products available.",
-                  bullets: ["Account setup, verification, and Google Guarantee badge management", "Profile optimization to maximize your visibility and lead volume", "Lead quality review and dispute management", "Budget management to control your cost per lead", "Integration with your broader Google Ads strategy"],
+                  // PROMPT 5 — LSA card replaced with Performance Max & Shopping
+                  icon: LayoutGrid, title: "Performance Max & Shopping Campaigns",
+                  desc: "Performance Max extends your Google Ads reach beyond search — running across Search, Display, YouTube, Gmail, and Maps from a single campaign. For local service businesses, PMax is a powerful volume channel when combined with traditional search campaigns.",
+                  bullets: [
+                    "Performance Max campaign build and asset group management",
+                    "Conversion goal alignment — calls, form fills, booked appointments",
+                    "Audience signal configuration to guide the AI",
+                    "Creative asset rotation — headlines, descriptions, images, video",
+                    "Cross-campaign coordination with your search strategy",
+                  ],
                 },
                 {
                   icon: RefreshCw, title: "Google Display and Retargeting Ads",
@@ -268,7 +484,7 @@ const GoogleAds = () => {
         </div>
       </section>
 
-      {/* PROCESS */}
+      {/* ─── PROCESS — PROMPT 6: Step 3 'paid advertising'→'Google Ads' ─── */}
       <section id="how-it-works" className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -280,7 +496,8 @@ const GoogleAds = () => {
               {[
                 { title: "Discovery and Business Analysis", desc: "We start with a deep-dive consultation to understand your business, your service area, your competitive landscape, and your revenue goals. We audit your existing digital assets — website, current ads if any, Google Business Profile — to identify opportunities and gaps before we build anything." },
                 { title: "Strategic Campaign Planning", desc: "Based on our analysis, we develop a tailored Google Ads strategy — selecting campaign types, defining targeting parameters, establishing budget allocation, and mapping out the keyword universe we will go after. You review and approve the plan before any dollar is spent." },
-                { title: "Campaign Build and Launch", desc: "Our team builds your campaigns from the ground up — writing ad copy, configuring targeting, setting up conversion tracking, and connecting all reporting. We typically launch paid advertising campaigns within 2–3 weeks of onboarding, once tracking and conversion systems are fully in place." },
+                // PROMPT 6 — channel reference: "paid advertising" → "Google Ads"
+                { title: "Campaign Build and Launch", desc: "Our team builds your campaigns from the ground up — writing ad copy, configuring targeting, setting up conversion tracking, and connecting all reporting. We typically launch Google Ads campaigns within 2–3 weeks of onboarding, once tracking and conversion systems are fully in place." },
                 { title: "Optimization and Scaling", desc: "Once live, we monitor performance daily and run systematic optimization cycles — testing ad variations, refining bids, pruning underperforming keywords, and reallocating budget to what is working. You receive monthly performance reviews with full transparency into results and next steps." },
                 { title: "Ongoing Partnership", desc: "Your assigned Account Relationship Manager is your dedicated point of contact. We hold monthly strategy meetings to review performance, discuss market changes, and plan for continued growth. As your results compound, we help you scale your investment strategically." },
               ].map((step, i) => (
@@ -302,7 +519,7 @@ const GoogleAds = () => {
         </div>
       </section>
 
-      {/* INDUSTRIES */}
+      {/* ─── PROMPT 7: INDUSTRY GRID — 7 tiles + descriptions + real URLs ─── */}
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -311,34 +528,31 @@ const GoogleAds = () => {
               titleHighlight="Local Service Industries"
             />
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-              {[
-                { icon: Home, title: "HVAC and Home Services" },
-                { icon: Stethoscope, title: "Med Spas and Aesthetic Practices" },
-                { icon: Star, title: "Dental Practices" },
-                { icon: Wrench, title: "General Contractors" },
-                { icon: Scale, title: "Legal Services" },
-                { icon: Car, title: "Auto Repair Shops" },
-                { icon: Users, title: "Realtors" },
-                { icon: Camera, title: "Photographers" },
-              ].map((ind, i) => (
-                <div key={i} className="feature-card-teal rounded-xl p-5 text-center space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <div className="w-10 h-10 mx-auto rounded-lg bg-primary/10 flex items-center justify-center">
+              {industryTiles.map((ind, i) => (
+                <Link
+                  key={i}
+                  to={ind.href}
+                  className="feature-card-teal rounded-xl p-5 text-center space-y-3 animate-fade-up flex flex-col items-center min-h-[180px] transition-transform hover:scale-[1.02]"
+                  style={{ animationDelay: `${i * 0.05}s` }}
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <ind.icon className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-sm font-display font-semibold text-foreground">{ind.title}</p>
-                </div>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{ind.description}</p>
+                </Link>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* WHY GROWSMALLBIZ */}
+      {/* ─── PROMPT 4 (H2 #3): WHY GROWSMALLBIZ — 'Local'→'Small' ─── */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
-              title="Why Local Businesses Choose GrowSmallBiz Over"
+              title="Why Small Businesses Choose GrowSmallBiz Over"
               titleHighlight="Generic Agencies"
               className="mb-12"
             />
@@ -360,23 +574,58 @@ const GoogleAds = () => {
         </div>
       </section>
 
-      {/* CASE STUDIES PLACEHOLDER */}
+      {/* ─── PROMPT 8: REAL CASE STUDY CARDS (4 cards, hub format) ─── */}
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <SectionHeader
-              title="Real Results Across"
-              titleHighlight="Local Google Ads Campaigns"
-              description="Case studies coming soon — showcasing measurable results from our Google Ads management for local service businesses."
+              title="Real Results From Our"
+              titleHighlight="Google Ads Campaigns"
+              description="Measurable outcomes from Google Ads management engagements across dental, med spa, roofing, and landscape services — in the Bay Area, Florida, and the Chicagoland region."
             />
-            <div className="grid lg:grid-cols-3 gap-8 mt-12">
-              {["HVAC Company", "Roofing Contractor", "Med Spa"].map((name, i) => (
-                <div key={i} className="bg-card border border-border rounded-2xl p-8 text-center animate-fade-up" style={{ animationDelay: `${i * 0.1}s` }}>
-                  <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <TrendingUp className="w-6 h-6 text-primary" />
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
+              {caseStudyCards.map((card, i) => (
+                <div
+                  key={i}
+                  className="bg-card border border-border rounded-2xl overflow-hidden flex flex-col animate-fade-up"
+                  style={{ animationDelay: `${i * 0.08}s` }}
+                >
+                  {/* Orange gradient header badge */}
+                  <div className="bg-gradient-primary px-6 py-4">
+                    <p className="text-xs font-bold text-primary-foreground/90 uppercase tracking-wider mb-1">
+                      Campaign Results — {card.badge}
+                    </p>
+                    <h3 className="text-lg font-display font-bold text-primary-foreground">{card.title}</h3>
+                    <p className="text-xs italic text-primary-foreground/80 mt-1">{card.timeframe}</p>
                   </div>
-                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">{name}</h3>
-                  <p className="text-sm text-muted-foreground">Case study coming soon</p>
+                  <div className="p-6 flex-1 flex flex-col gap-4">
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "hsl(180 60% 50%)" }}>
+                        Challenge
+                      </p>
+                      <p className="text-sm text-foreground leading-relaxed">{card.challenge}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "hsl(180 60% 50%)" }}>
+                        Strategy
+                      </p>
+                      <p className="text-sm text-foreground leading-relaxed">{card.strategy}</p>
+                    </div>
+                    <div className="grid grid-cols-2 gap-3 pt-2">
+                      {card.metrics.map((m, mi) => (
+                        <div key={mi} className="bg-background rounded-lg p-3 text-center">
+                          <p className="text-lg font-display font-bold text-primary">{m.value}</p>
+                          <p className="text-xs text-muted-foreground mt-1">{m.label}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <Link
+                      to={card.href}
+                      className="inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline mt-auto pt-2"
+                    >
+                      Read Full Case Study <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>
@@ -393,11 +642,12 @@ const GoogleAds = () => {
         sectionClassName="py-24"
       />
 
-      {/* FAQ */}
+      {/* ─── PROMPT 9: FAQ — 8 Q&As + JSON-LD synced via single FAQItem source ─── */}
       <FAQSection
         faqs={faqs}
-        title="Frequently Asked Questions About Google Ads for Local Businesses"
+        title="Frequently Asked Questions About Google Ads for Small Businesses"
         subtitle="Common questions about our Google Ads management services"
+        schemaId="https://growsmallbiz.io/services/paid-advertising/google-ads/#faqpage"
         contactCTA={{
           ...baseContactCTA,
           title: "Have more questions about Google Ads?",
@@ -406,7 +656,7 @@ const GoogleAds = () => {
         }}
       />
 
-      {/* FOOTER CTA */}
+      {/* FOOTER CTA — H2 'Local' intentionally retained per Final Validation Checklist */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6">
