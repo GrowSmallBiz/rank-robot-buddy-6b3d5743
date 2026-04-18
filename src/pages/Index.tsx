@@ -8,7 +8,7 @@ import { baseContactCTA } from "@/config/contactCTA";
 
 
 // Lazy-load below-the-fold sections to improve FCP
-const TestimonialsSection = lazy(() => import("@/components/sections/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
+
 const FAQSection = lazy(() => import("@/components/sections/FAQSection").then(m => ({ default: m.FAQSection })));
 const AnimatedStatsSection = lazy(() => import("@/components/sections/AnimatedStatsSection").then(m => ({ default: m.AnimatedStatsSection })));
 
@@ -464,12 +464,6 @@ const Index = () => {
 
         {/* Stats */}
         <AnimatedStatsSection stats={homepageStats} columns={4} />
-
-        {/* Testimonials */}
-        <TestimonialsSection 
-          title="What Our Clients Say"
-          subtitle="Real feedback from business owners who wanted better visibility, better systems, and better follow-up."
-        />
 
         {/* Real Results Across Home Service Campaigns */}
         <HomeCaseStudySection />

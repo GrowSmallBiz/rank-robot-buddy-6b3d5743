@@ -1,3 +1,7 @@
+// DISABLED — Contains fabricated placeholder testimonials
+// (Jamie L., Marcus R., Sarah K.). Do not import or render
+// this component until the content is replaced with real
+// Google Reviews data via feed integration.
 import { Star } from "lucide-react";
 
 export interface Testimonial {
