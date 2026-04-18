@@ -682,9 +682,8 @@ const PaidMedia = () => {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10 animate-fade-up">
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-3">
-                  Google Ads vs. Local Services Ads vs.{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary">Meta Ads</span>
-                  {" "}— Which Do You Need?
+                  Google Ads vs. Local Services Ads vs. Meta Ads —{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary">Which Do You Need?</span>
                 </h2>
                 <p className="italic text-muted-foreground">Short answer — probably more than one. Here is how they actually differ.</p>
               </div>
