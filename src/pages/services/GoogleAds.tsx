@@ -755,6 +755,7 @@ const GoogleAds = () => {
       </section>
 
       <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
+      </main>
       <Footer />
     </div>
   );
