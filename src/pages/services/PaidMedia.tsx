@@ -426,69 +426,79 @@ const PaidMedia = () => {
           </div>
         </section>
 
-        {/* AD PLATFORMS BAR — Prompt 3: deduplicated 5-platform row */}
+        {/* AD PLATFORMS BAR — Prompt 3: deduplicated 5-platform marquee */}
         <section className="py-6 overflow-hidden bg-white">
           <div className="container mx-auto px-4 mb-4">
             <p className="text-center text-sm font-bold text-primary tracking-wide uppercase">
               Platforms We Manage
             </p>
           </div>
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 overflow-x-auto md:overflow-visible">
-              {/* Google Ads */}
-              <div className="flex-shrink-0 flex items-center gap-2">
-                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                </svg>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google Ads</span>
-              </div>
-              {/* Google LSA */}
-              <div className="flex-shrink-0 flex items-center gap-2">
-                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#34A853"/>
-                  <path d="M10.5 15.5l-3-3 1.41-1.41L10.5 12.67l4.59-4.58L16.5 9.5l-6 6z" fill="white"/>
-                </svg>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google LSA</span>
-              </div>
-              {/* Facebook */}
-              <div className="flex-shrink-0 flex items-center gap-2">
-                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="#1877F2">
-                  <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.017 1.793-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
-                </svg>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Facebook Ads</span>
-              </div>
-              {/* Instagram */}
-              <div className="flex-shrink-0 flex items-center gap-2">
-                <svg className="w-7 h-7" viewBox="0 0 24 24">
-                  <defs>
-                    <radialGradient id="ig-grad-hero" cx="30%" cy="107%" r="150%">
-                      <stop offset="0%" stopColor="#fdf497"/>
-                      <stop offset="5%" stopColor="#fdf497"/>
-                      <stop offset="45%" stopColor="#fd5949"/>
-                      <stop offset="60%" stopColor="#d6249f"/>
-                      <stop offset="90%" stopColor="#285AEB"/>
-                    </radialGradient>
-                  </defs>
-                  <rect width="24" height="24" rx="6" fill="url(#ig-grad-hero)"/>
-                  <circle cx="12" cy="12" r="4.5" stroke="white" strokeWidth="1.5" fill="none"/>
-                  <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
-                </svg>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Instagram Ads</span>
-              </div>
-              {/* TikTok with Coming Soon pill */}
-              <div className="flex-shrink-0 flex items-center gap-2">
-                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
-                  <rect width="24" height="24" rx="6" fill="#010101"/>
-                  <path d="M16.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S5.5 11 5.5 8.5 7.5 4 10 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S2.5 16 2.5 13 5 7.5 8 7.5" fill="#25F4EE"/>
-                  <path d="M17.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S6.5 11 6.5 8.5 8.5 4 11 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S3.5 16 3.5 13 6 7.5 9 7.5" fill="#FE2C55"/>
-                </svg>
-                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">TikTok Ads</span>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
-                  Coming Soon
-                </span>
+          <div className="relative w-full">
+            {/* Fade edges */}
+            <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none" />
+
+            <div className="bg-white py-3">
+              <div className="flex animate-marquee gap-10 items-center w-max">
+                {[0, 1].map((dupIdx) => (
+                  <div key={dupIdx} className="flex gap-10 items-center flex-shrink-0">
+                    {/* Google Ads */}
+                    <div className="flex-shrink-0 flex items-center gap-2">
+                      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                      </svg>
+                      <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google Ads</span>
+                    </div>
+                    {/* Google LSA */}
+                    <div className="flex-shrink-0 flex items-center gap-2">
+                      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#34A853"/>
+                        <path d="M10.5 15.5l-3-3 1.41-1.41L10.5 12.67l4.59-4.58L16.5 9.5l-6 6z" fill="white"/>
+                      </svg>
+                      <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Google LSA</span>
+                    </div>
+                    {/* Facebook */}
+                    <div className="flex-shrink-0 flex items-center gap-2">
+                      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="#1877F2">
+                        <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.017 1.793-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                      </svg>
+                      <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Facebook Ads</span>
+                    </div>
+                    {/* Instagram */}
+                    <div className="flex-shrink-0 flex items-center gap-2">
+                      <svg className="w-7 h-7" viewBox="0 0 24 24">
+                        <defs>
+                          <radialGradient id={`ig-grad-hero-${dupIdx}`} cx="30%" cy="107%" r="150%">
+                            <stop offset="0%" stopColor="#fdf497"/>
+                            <stop offset="5%" stopColor="#fdf497"/>
+                            <stop offset="45%" stopColor="#fd5949"/>
+                            <stop offset="60%" stopColor="#d6249f"/>
+                            <stop offset="90%" stopColor="#285AEB"/>
+                          </radialGradient>
+                        </defs>
+                        <rect width="24" height="24" rx="6" fill={`url(#ig-grad-hero-${dupIdx})`}/>
+                        <circle cx="12" cy="12" r="4.5" stroke="white" strokeWidth="1.5" fill="none"/>
+                        <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+                      </svg>
+                      <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">Instagram Ads</span>
+                    </div>
+                    {/* TikTok with Coming Soon pill */}
+                    <div className="flex-shrink-0 flex items-center gap-2">
+                      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="6" fill="#010101"/>
+                        <path d="M16.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S5.5 11 5.5 8.5 7.5 4 10 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S2.5 16 2.5 13 5 7.5 8 7.5" fill="#25F4EE"/>
+                        <path d="M17.5 4.5c-.2-1-.8-2-2-2.5v6.5c0 2.5-2 4.5-4.5 4.5S6.5 11 6.5 8.5 8.5 4 11 4v2.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V4h2c0 1.7 1.3 3 3 3v2.5c-1.5 0-2.8-.5-3.5-1.5v5c0 3-2.5 5.5-5.5 5.5S3.5 16 3.5 13 6 7.5 9 7.5" fill="#FE2C55"/>
+                      </svg>
+                      <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">TikTok Ads</span>
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                        Coming Soon
+                      </span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -673,7 +683,8 @@ const PaidMedia = () => {
               <div className="text-center mb-10 animate-fade-up">
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-3">
                   Google Ads vs. Local Services Ads vs.{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary">Meta Ads — Which Do You Need?</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-primary">Meta Ads</span>
+                  {" "}— Which Do You Need?
                 </h2>
                 <p className="italic text-muted-foreground">Short answer — probably more than one. Here is how they actually differ.</p>
               </div>
