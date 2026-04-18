@@ -374,7 +374,6 @@ const PaidMedia = () => {
               url: "https://growsmallbiz.io/services/paid-advertising/",
               category: "Pay-Per-Lead Advertising",
               areaServed: { "@type": "Country", name: "United States" },
-              eligibleCustomerType: "BusinessAudience",
               availability: "https://schema.org/InStock",
             },
             {
@@ -383,7 +382,6 @@ const PaidMedia = () => {
               url: "https://growsmallbiz.io/services/paid-advertising/",
               category: "Social Advertising",
               areaServed: { "@type": "Country", name: "United States" },
-              eligibleCustomerType: "BusinessAudience",
               availability: "https://schema.org/InStock",
             },
             {
@@ -392,7 +390,6 @@ const PaidMedia = () => {
               url: "https://growsmallbiz.io/services/paid-advertising/",
               category: "Social Advertising",
               areaServed: { "@type": "Country", name: "United States" },
-              eligibleCustomerType: "BusinessAudience",
               availability: "https://schema.org/PreOrder",
             },
             {
@@ -401,7 +398,6 @@ const PaidMedia = () => {
               url: "https://growsmallbiz.io/services/paid-advertising/",
               category: "PPC Management",
               areaServed: { "@type": "Country", name: "United States" },
-              eligibleCustomerType: "BusinessAudience",
               availability: "https://schema.org/PreOrder",
             },
           ],
