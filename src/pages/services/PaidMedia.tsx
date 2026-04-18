@@ -353,6 +353,60 @@ const PaidMedia = () => {
           { name: "Services", url: "/services/" },
           { name: "Paid Advertising", url: "/services/paid-advertising/" },
         ]}
+        useEntityGraph
+        pageName="Paid Advertising for Local Service Businesses"
+        pageDescription="Stop paying for clicks. Start generating qualified leads with full-funnel paid ad systems for local service businesses. Google Ads, LSA, Meta Ads, retargeting, and conversion tracking."
+        hasFaqPage
+        offerCatalog={{
+          name: "Paid Advertising Services",
+          items: [
+            {
+              name: "Google Ads Management",
+              description: "Managed Google Ads campaigns (Search, Display, Performance Max) for local service businesses, including campaign strategy, keyword research, ad copy, bid management, conversion tracking, and ongoing optimization.",
+              url: "https://growsmallbiz.io/services/paid-advertising/",
+              category: "PPC Management",
+              areaServed: { "@type": "Country", name: "United States" },
+              eligibleCustomerType: "BusinessAudience",
+              availability: "https://schema.org/InStock",
+            },
+            {
+              name: "Google Local Services Ads Management",
+              description: "Pay-per-lead advertising through Google's Local Services Ads platform, including Google Guaranteed verification, profile optimization, lead dispute handling, and budget pacing for eligible local service categories.",
+              url: "https://growsmallbiz.io/services/paid-advertising/",
+              category: "Pay-Per-Lead Advertising",
+              areaServed: { "@type": "Country", name: "United States" },
+              eligibleCustomerType: "BusinessAudience",
+              availability: "https://schema.org/InStock",
+            },
+            {
+              name: "Facebook & Instagram Ads Management",
+              description: "Managed Meta (Facebook and Instagram) advertising for local service businesses, including campaign strategy, creative production coordination, audience targeting, retargeting, and conversion tracking.",
+              url: "https://growsmallbiz.io/services/paid-advertising/",
+              category: "Social Advertising",
+              areaServed: { "@type": "Country", name: "United States" },
+              eligibleCustomerType: "BusinessAudience",
+              availability: "https://schema.org/InStock",
+            },
+            {
+              name: "TikTok Ads Management",
+              description: "Managed TikTok advertising campaigns for local service businesses. Currently in pre-launch availability.",
+              url: "https://growsmallbiz.io/services/paid-advertising/",
+              category: "Social Advertising",
+              areaServed: { "@type": "Country", name: "United States" },
+              eligibleCustomerType: "BusinessAudience",
+              availability: "https://schema.org/PreOrder",
+            },
+            {
+              name: "Microsoft Ads (Bing) Management",
+              description: "Managed Microsoft Advertising (Bing) campaigns for local service businesses. Currently in pre-launch availability.",
+              url: "https://growsmallbiz.io/services/paid-advertising/",
+              category: "PPC Management",
+              areaServed: { "@type": "Country", name: "United States" },
+              eligibleCustomerType: "BusinessAudience",
+              availability: "https://schema.org/PreOrder",
+            },
+          ],
+        }}
       />
       <Header />
 
@@ -1008,6 +1062,7 @@ const PaidMedia = () => {
         {/* SECTION — FAQ (Prompt 11: rename CTA in sidebar) */}
         <FAQSection
           faqs={faqs}
+          schemaId="https://growsmallbiz.io/services/paid-advertising/#faqpage"
           subtitle="Common questions about our paid advertising services"
           contactCTA={{
             ...baseContactCTA,

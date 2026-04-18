@@ -11,7 +11,15 @@ interface ServiceJsonLdProps {
   /** Optional offer catalog for Service schema */
   offerCatalog?: {
     name: string;
-    items: { name: string }[];
+    items: {
+      name: string;
+      description?: string;
+      url?: string;
+      category?: string;
+      areaServed?: { "@type": string; name: string };
+      eligibleCustomerType?: string;
+      availability?: string;
+    }[];
   };
   /**
    * When true, uses cross-referenced @id graph:
@@ -89,9 +97,15 @@ export const ServiceJsonLd = ({
         name: offerCatalog.name,
         itemListElement: offerCatalog.items.map((item) => ({
           "@type": "Offer",
+          ...(item.availability && { availability: item.availability }),
+          ...(item.eligibleCustomerType && { eligibleCustomerType: item.eligibleCustomerType }),
+          ...(item.areaServed && { areaServed: item.areaServed }),
           itemOffered: {
             "@type": "Service",
             name: item.name,
+            ...(item.description && { description: item.description }),
+            ...(item.url && { url: item.url }),
+            ...(item.category && { category: item.category }),
           },
         })),
       },
