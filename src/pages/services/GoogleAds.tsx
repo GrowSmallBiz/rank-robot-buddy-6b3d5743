@@ -271,26 +271,15 @@ const GoogleAds = () => {
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="animate-fade-up">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-                <Target className="w-4 h-4" />
-                Google Ads Management
-              </span>
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
               Google Ads for Small Businesses That{" "}
               <span className="text-transparent bg-clip-text bg-gradient-primary">
-                Actually Bring in Customers
-              </span>
+                Actually
+              </span>{" "}
+              Bring in Customers
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              Stop paying for clicks that go nowhere. GrowSmallBiz builds and manages Google Ads campaigns for local service businesses — so every dollar you spend works harder to fill your calendar, your phone line, and your revenue goals.
-            </p>
-            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              Most local businesses run Google Ads and get disappointed. The ads run, the budget drains, and the phone stays quiet. That is not a Google problem — it is a strategy problem.
-            </p>
-            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              At GrowSmallBiz, we specialize exclusively in local service businesses. We build campaigns that target the right customers in your area, at the right moment, with the right message — and we track every lead back to its source so you always know what is working.
+              Stop paying for clicks that go nowhere. GrowSmallBiz builds and manages Google Ads campaigns exclusively for local service businesses — every dollar targeted, every lead tracked, every campaign tuned to grow your revenue.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.25s" }}>
               <Button variant="hero" size="xl" asChild>
