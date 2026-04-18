@@ -351,11 +351,11 @@ const GoogleAds = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
-              Google Ads for Small Businesses That{" "}
+              Google Ads Services for Small Businesses That{" "}
               <span className="text-transparent bg-clip-text bg-gradient-primary">
                 Actually
               </span>{" "}
-              Bring in Customers
+              Generate Leads
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Stop paying for clicks that go nowhere. GrowSmallBiz builds and manages Google Ads campaigns exclusively for local service businesses — every dollar targeted, every lead tracked, every campaign tuned to grow your revenue.
@@ -363,13 +363,13 @@ const GoogleAds = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.25s" }}>
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Get Your Free Ad Strategy Session
+                  Schedule Strategy Session
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="#how-it-works">
-                  See How It Works
+                <a href="tel:+19258863724">
+                  <Phone className="w-5 h-5 mr-2" /> Call +1 (925) 886-3724
                 </a>
               </Button>
             </div>
