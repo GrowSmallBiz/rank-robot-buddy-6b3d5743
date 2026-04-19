@@ -255,14 +255,14 @@ const LSA = () => {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-col items-center text-center space-y-3 animate-fade-up rounded-xl p-6 border border-[#17a2b8]/40"
-                  style={{ animationDelay: `${i * 0.05}s`, backgroundColor: "#17a2b8" }}
+                  className="flex flex-col text-left space-y-4 animate-fade-up rounded-2xl p-6 bg-card border-2 border-[#17a2b8] shadow-[0_0_30px_rgba(23,162,184,0.25)] hover:shadow-[0_0_40px_rgba(23,162,184,0.45)] transition-shadow"
+                  style={{ animationDelay: `${i * 0.05}s` }}
                 >
-                  <div className="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center">
-                    <item.icon className="w-7 h-7 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <item.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-base font-display font-bold text-white">{item.label}</h3>
-                  <p className="text-sm text-white/90 leading-relaxed">{item.body}</p>
+                  <h3 className="text-base font-display font-bold text-foreground">{item.label}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>
