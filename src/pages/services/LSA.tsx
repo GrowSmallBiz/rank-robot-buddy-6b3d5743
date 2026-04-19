@@ -2,8 +2,6 @@ import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import lsaHeroImage from "@/assets/lsa-hero-split-screen.jpg";
-import lsaHeroSearch1 from "@/assets/lsa-hero-google-search-1.jpg";
-import lsaHeroSearch2 from "@/assets/lsa-hero-google-search-2.jpg";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
@@ -102,44 +100,13 @@ const LSA = () => {
       {/* HERO */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0">
-          {/* Desktop: three-image collage L → C → R, all blurred and darkened equally */}
-          <div className="absolute inset-0 hidden md:flex">
-            <img
-              src={lsaHeroSearch1}
-              alt=""
-              aria-hidden="true"
-              width={1024}
-              height={1280}
-              className="w-1/3 h-full object-cover object-top scale-110"
-              style={{ filter: "blur(6px)" }}
-            />
-            <img
-              src={lsaHeroSearch2}
-              alt=""
-              aria-hidden="true"
-              width={1024}
-              height={1280}
-              className="w-1/3 h-full object-cover object-top scale-110"
-              style={{ filter: "blur(6px)" }}
-            />
-            <img
-              src={lsaHeroImage}
-              alt="Google Local Service Ads at the top of search delivering verified leads"
-              width={1920}
-              height={1080}
-              fetchPriority="high"
-              className="w-1/3 h-full object-cover scale-110"
-              style={{ filter: "blur(6px)" }}
-            />
-          </div>
-          {/* Mobile: single hero image as before */}
           <img
             src={lsaHeroImage}
             alt="Google Local Service Ads at the top of search delivering verified leads"
             width={1920}
             height={1080}
             fetchPriority="high"
-            className="w-full h-full object-cover scale-110 md:hidden"
+            className="w-full h-full object-cover scale-110"
             style={{ filter: "blur(6px)" }}
           />
           {/* Mobile: near-opaque overlay so the device fades into a textural accent */}
