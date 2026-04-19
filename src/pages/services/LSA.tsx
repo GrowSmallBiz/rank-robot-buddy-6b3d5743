@@ -204,14 +204,14 @@ const LSA = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
-              title="If Your Business Isn't Running Google Local Service Ads,"
-              titleHighlight="You're Invisible Where It Matters Most"
+              title="Why Most Small Businesses"
+              titleHighlight="Are Losing to LSA Competitors"
               description="Google search results have changed. At the very top of the page — above every paid search ad, above every organic result — there is now a new section reserved exclusively for Google Local Service Ads. If you are not in that section, you are not just losing visibility. You are losing the most valuable real estate in digital advertising to competitors who are."
             />
             <div className="space-y-6 mt-12">
               {[
                 { title: "You're Paying Per Click, Not Per Lead.", desc: "Traditional Google Ads charge you every time someone clicks your ad — regardless of whether they call you, book a job, or immediately leave your site. That means you are funding bounced traffic, accidental clicks, and tire-kickers. LSA flips this model entirely: you only pay when a qualified customer contacts you directly." },
-                { title: "Your Competitors Have the Google Guarantee Badge — You Don't.", desc: "The green checkmark badge signals to every potential customer that Google has verified your business, your licenses, and your background. It is the most powerful trust signal in local search. Without it, your business looks unverified next to competitors who have it, and customers click theirs first." },
+                { title: "Your Competitors Have the Google Verified Badge — You Don't.", desc: "The blue checkmark Google Verified badge signals to potential customers that Google has confirmed your business identity, licenses, insurance, and background. It is one of the clearest trust signals Google offers in local search. Without it, your business looks unverified next to competitors who carry it — and prospects click theirs first, especially for high-trust service categories like home services and healthcare." },
                 { title: "Your LSA Profile Is Not Optimized — So Your Ranking Suffers.", desc: "Google's LSA algorithm ranks businesses based on review count, responsiveness, service area relevance, and profile completeness. Most businesses set up their LSA profile once and never touch it again. That means you are being ranked below competitors who are actively managing their profile every single week." },
                 { title: "You're Getting Charged for Leads You Should Never Have Paid For.", desc: "Invalid leads happen — spam calls, wrong numbers, calls from outside your service area. If you do not know how to dispute these leads and claim credits through Google's system, you are simply paying for them. Effective LSA management means auditing every lead and recovering every dollar you should not have spent." },
                 { title: "You Have No Idea What Your Cost Per Lead Actually Is.", desc: "Without proper LSA tracking and reporting, you cannot measure what is working, which service categories drive the most leads, or whether your budget is set correctly. You are flying blind — and that means you cannot grow with confidence." },
@@ -242,7 +242,7 @@ const LSA = () => {
               {[
                 { icon: Eye, title: "You Show Up First", desc: "LSA ads appear at the absolute top of Google search results, above sponsored PPC ads and above the local map pack. When a customer in your area searches for your service, they see your business first." },
                 { icon: DollarSign, title: "You Pay Only for Verified, Real Customer Leads", desc: "Unlike traditional PPC where you pay per click, LSA charges you only when a customer directly calls, messages, or books through your ad. Every dollar is spent on genuine customer contact." },
-                { icon: ShieldCheck, title: "The Google Guarantee Badge Builds Instant Trust", desc: "Businesses in the Google Guarantee program display a green checkmark badge verified by Google. Customers see that badge and know your business has been background-checked, licensed, and verified. This single trust signal dramatically increases click-through and call rates." },
+                { icon: ShieldCheck, title: "The Google Verified Badge Adds a Layer of Trust", desc: "Businesses that pass Google's screening display the Google Verified badge — a blue checkmark confirming that Google has background-checked the business, verified active licenses, and confirmed required insurance. The badge works alongside your review count, response time, and profile completeness to help customers choose your business in a crowded LSA lineup." },
                 { icon: FileCheck, title: "Invalid Leads Get Disputed — You Get Your Money Back", desc: "We review every lead, dispute every invalid charge, and recover credits on your behalf. You only pay for the leads that actually count." },
                 { icon: TrendingUp, title: "Your Profile Ranks Higher Over Time", desc: "We actively optimize every ranking factor week over week — reviews, response times, profile completeness, and service area accuracy — so your position improves continuously." },
                 { icon: Settings, title: "Your Budget Is Managed to Maximize Lead Volume", desc: "We calibrate your budget based on search volume, competition, and your lead goals — and adjust it as the market changes. No overspending, no underdelivering." },
@@ -305,7 +305,7 @@ const LSA = () => {
             <div className="space-y-6 mt-12">
               {[
                 { title: "Strategy Call and LSA Readiness Assessment", desc: "We review your current online presence, check your Google Business Profile, assess your review count, verify licensing and insurance status, and evaluate your competitive landscape in your specific service area." },
-                { title: "Google Guarantee Application and Verification", desc: "We manage your entire Google Guarantee application — documentation collection, background check submission, license and insurance verification — through to badge approval." },
+                { title: "Google Verified Application and Screening", desc: "We manage your entire Google Verified application — documentation collection, background check submission, license and insurance verification — through to badge approval. Average timeline is three to four weeks from submission to badge activation." },
                 { title: "Profile Build and Category Optimization", desc: "We build out your LSA profile in full: service categories, service area zip codes, hours, photos, and business description. Categories are selected based on search volume data and competitive analysis." },
                 { title: "Budget Setting and Campaign Launch", desc: "We set your initial weekly budget, configure lead preferences and notification settings, then launch and monitor daily through the first two weeks to catch any early adjustments needed." },
                 { title: "Lead Monitoring, Dispute Filing, and Review Building", desc: "From launch, we monitor every lead, review calls, categorize contacts, dispute invalid leads immediately, and activate your review generation strategy to grow your ranking." },
@@ -340,12 +340,11 @@ const LSA = () => {
             <div className="grid sm:grid-cols-2 gap-6 mt-12">
               {[
                 { icon: Home, title: "HVAC Companies", desc: "Seasonal demand, emergency calls, and maintenance agreements all require different campaign strategies. We optimize your LSA profile to capture both routine service calls and high-margin emergency requests." },
-                { icon: Star, title: "Dental Practices", desc: "The Google Guarantee badge gives your dental practice a credibility signal that turns search traffic into new patient appointments. We manage your profile to showcase specialties and generate reviews that move you to the top." },
+                { icon: Star, title: "Dental Practices", desc: "The Google Verified badge gives your dental practice a credibility signal that turns search traffic into new patient appointments. We manage your profile to showcase specialties and generate reviews that move you to the top." },
                 { icon: Stethoscope, title: "Med Spas", desc: "An optimized LSA profile with strong reviews and clear service categories positions your med spa as the obvious choice before prospects visit your website. We manage your entire LSA presence to drive consultation bookings." },
                 { icon: Wrench, title: "Home Services Contractors", desc: "Plumbers, electricians, roofers, general contractors, landscapers, pest control operators, and flooring professionals — we know what it takes to rank at the top in crowded markets and generate consistent, bookable leads." },
                 { icon: Scale, title: "Chiropractic Practices", desc: "LSA positioning puts your practice front and center the moment patients search for relief. We optimize for the service categories and geographic areas that bring in new patients." },
-                { icon: Car, title: "Auto Repair Shops", desc: "We position your shop at the top for your most profitable services, manage your service area accurately, and build the review count that drives trust and calls." },
-                { icon: Users, title: "Realtors", desc: "We manage the Google Screened application process for qualifying real estate professionals and optimize your profile to generate direct buyer and seller leads from local search." },
+                { icon: Users, title: "Realtors", desc: "We manage the Google Verified application process for qualifying real estate professionals and optimize your profile to generate direct buyer and seller leads from local search." },
                 { icon: Camera, title: "Photographers", desc: "We build and manage your profile to reach clients actively searching for a photographer in your area — generating booking inquiries from people ready to hire, not just browse." },
               ].map((ind, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
@@ -368,7 +367,7 @@ const LSA = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
-              title="Why Local Service Businesses Choose GrowSmallBiz to"
+              title="Why Small Service Businesses Choose GrowSmallBiz to"
               titleHighlight="Manage Their LSA Campaigns"
               className="mb-12"
             />
@@ -408,7 +407,7 @@ const LSA = () => {
                 {[
                   "A complete review of your current LSA presence (or a clean-slate plan if you have not started)",
                   "A competitive analysis of who is ranking above you and why",
-                  "A Google Guarantee eligibility assessment for your business category",
+                  "A Google Verified eligibility assessment for your business category",
                   "A realistic cost-per-lead projection for your specific service area",
                   "A custom campaign structure recommendation — service categories, budget, and targeting",
                   "A clear explanation of what GrowSmallBiz will manage, optimize, and report every month",
