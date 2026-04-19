@@ -2,6 +2,7 @@ import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import lsaHeroImage from "@/assets/lsa-hero-split-screen.jpg";
+import googleVerifiedBadge from "@/assets/google-verified-badge.png";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
@@ -241,6 +242,7 @@ const LSA = () => {
                   icon: ShieldCheck,
                   label: "Build Trust with the Google Verified Badge",
                   body: "Display the Google Verified Badge on your profile to help new customers choose your business with confidence.",
+                  badgeImage: googleVerifiedBadge,
                 },
                 {
                   icon: MapPin,
@@ -258,9 +260,20 @@ const LSA = () => {
                   className="flex flex-col text-left space-y-4 animate-fade-up rounded-2xl p-6 border-2 border-[#17a2b8] shadow-[0_0_30px_rgba(23,162,184,0.25)] hover:shadow-[0_0_40px_rgba(23,162,184,0.45)] transition-shadow"
                   style={{ animationDelay: `${i * 0.05}s`, backgroundColor: "#2D465C" }}
                 >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-primary" />
-                  </div>
+                  {item.badgeImage ? (
+                    <img
+                      src={item.badgeImage}
+                      alt="Google Verified Badge"
+                      width={48}
+                      height={48}
+                      loading="lazy"
+                      className="w-12 h-12 object-contain"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <item.icon className="w-6 h-6 text-primary" />
+                    </div>
+                  )}
                   <h3 className="text-base font-display font-bold text-foreground">{item.label}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
                 </div>
