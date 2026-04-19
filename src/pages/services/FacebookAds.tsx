@@ -745,36 +745,22 @@ const FacebookAds = () => {
       />
 
       {/* FOOTER CTA */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Local Market Is Active on Facebook and Instagram Right Now.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Are You Showing Up?</span>
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              The question is whether your business is showing up — and whether the campaigns driving that visibility are built to convert. GrowSmallBiz manages Facebook and Instagram Ads exclusively for local service businesses. We know your customer, we know your market, and we know how to build campaigns that turn ad spend into revenue.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Schedule your free strategy session today. There's no obligation, no contract pitch, and no fluff — just a direct conversation about what your Meta Ads should be doing for your business and how we'll get you there.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl" asChild>
-                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Schedule Strategy Session
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-              <Button variant="heroOutline" size="xl" asChild>
-                <a href="tel:+19258863724">
-                  <Phone className="w-5 h-5 mr-2" />
-                  +1 (925) 886-3724
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PersonCTA
+        sectionClassName="py-24"
+        buttonHref={strategyUrl}
+        buttonText="Schedule Strategy Session"
+        title={
+          <>
+            Your Local Market Is Active on Facebook and Instagram Right Now.{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-primary">Are You Showing Up?</span>
+          </>
+        }
+        description={
+          <>
+            GrowSmallBiz manages Facebook and Instagram Ads exclusively for local service businesses. We know your customer, we know your market, and we know how to build campaigns that turn ad spend into revenue. Schedule your free strategy session — no obligation, no contract pitch, just a direct conversation about what your Meta Ads should be doing for your business.
+          </>
+        }
+      />
 
       <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
       <Footer />
