@@ -48,7 +48,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "Do Google Local Service Ads work for my type of business?",
-    answer: "LSA is available for specific service categories — and GrowSmallBiz works exclusively within those categories: HVAC, dental, med spa, home services, chiropractic, realtors, and photographers. In your free strategy call, we confirm your eligibility, review the competitive landscape, and give an honest assessment of what LSA can realistically deliver for your business.",
+    answer: "LSA is available for specific service categories — and GrowSmallBiz works exclusively within those categories: HVAC, dental, home services, chiropractic, and realtors. In your free strategy call, we confirm your eligibility, review the competitive landscape, and give an honest assessment of what LSA can realistically deliver for your business.",
   },
   {
     question: "How much does it cost to run Google Local Service Ads?",
