@@ -342,11 +342,9 @@ const LSA = () => {
               {[
                 { icon: Home, title: "HVAC Companies", desc: "Seasonal demand, emergency calls, and maintenance agreements all require different campaign strategies. We optimize your LSA profile to capture both routine service calls and high-margin emergency requests." },
                 { icon: Star, title: "Dental Practices", desc: "The Google Verified badge gives your dental practice a credibility signal that turns search traffic into new patient appointments. We manage your profile to showcase specialties and generate reviews that move you to the top." },
-                { icon: Stethoscope, title: "Med Spas", desc: "An optimized LSA profile with strong reviews and clear service categories positions your med spa as the obvious choice before prospects visit your website. We manage your entire LSA presence to drive consultation bookings." },
                 { icon: Wrench, title: "Home Services Contractors", desc: "Plumbers, electricians, roofers, general contractors, landscapers, pest control operators, and flooring professionals — we know what it takes to rank at the top in crowded markets and generate consistent, bookable leads." },
                 { icon: Scale, title: "Chiropractic Practices", desc: "LSA positioning puts your practice front and center the moment patients search for relief. We optimize for the service categories and geographic areas that bring in new patients." },
                 { icon: Users, title: "Realtors", desc: "We manage the Google Verified application process for qualifying real estate professionals and optimize your profile to generate direct buyer and seller leads from local search." },
-                { icon: Camera, title: "Photographers", desc: "We build and manage your profile to reach clients actively searching for a photographer in your area — generating booking inquiries from people ready to hire, not just browse." },
               ].map((ind, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                   <div className="flex items-center gap-3">
