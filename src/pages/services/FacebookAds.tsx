@@ -124,8 +124,8 @@ const FacebookAds = () => {
         <meta name="twitter:image:alt" content="GrowSmallBiz — Facebook and Instagram Ads management for local service businesses" />
       </Head>
       <ServiceJsonLd
-        serviceName="Facebook Ads Management"
-        serviceType="Facebook Ads Management"
+        serviceName="Facebook & Instagram Ads Management"
+        serviceType="Facebook & Instagram Ads Management"
         description="Facebook & Instagram Ads management for local service businesses. Precision targeting, conversion-focused creative, full-funnel tracking, and retargeting."
         url="/services/paid-advertising/facebook-ads/"
         breadcrumbs={[
@@ -133,6 +133,10 @@ const FacebookAds = () => {
           { name: "Paid Advertising", url: "/services/paid-advertising/" },
           { name: "Facebook & Instagram Ads", url: "/services/paid-advertising/facebook-ads/" },
         ]}
+        useEntityGraph={true}
+        pageName="Facebook & Instagram Ads Management for Small Businesses | GrowSmallBiz"
+        pageDescription="Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics."
+        hasFaqPage={true}
       />
       <Header />
 
@@ -735,6 +739,7 @@ const FacebookAds = () => {
         faqs={faqs}
         title="FAQs: Your Questions Answered: Facebook & Instagram Ads for Small Businesses"
         subtitle="Common questions about our Meta Ads management for local service businesses."
+        schemaId="https://growsmallbiz.io/services/paid-advertising/facebook-ads/#faqpage"
         contactCTA={{
           ...baseContactCTA,
           title: "Have more questions about Meta Ads?",
