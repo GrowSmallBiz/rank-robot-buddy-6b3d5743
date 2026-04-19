@@ -40,6 +40,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
+import heroBg from "@/assets/facebook-ads/hero-bg.jpg";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -165,6 +166,16 @@ const FacebookAds = () => {
 
       {/* HERO */}
       <section className="relative pt-8 pb-24 overflow-hidden">
+        <img
+          src={heroBg}
+          alt=""
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-background/70" />
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
