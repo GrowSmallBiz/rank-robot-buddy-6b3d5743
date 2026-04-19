@@ -205,25 +205,22 @@ const FacebookAds = () => {
         </div>
       </section>
 
-      {/* BENEFITS */}
+      {/* BENEFITS — 5 outcome cards */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
-              title="What You Get When GrowSmallBiz Manages Your"
+              title="What You Actually Get When GrowSmallBiz Manages Your"
               titleHighlight="Facebook & Instagram Ads"
               description="We don't just run ads. We build a full-funnel paid social system designed to generate consistent, qualified leads for your local service business — every single month."
             />
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {[
-                { icon: Target, title: "Qualified Leads, Not Vanity Metrics", desc: "Every campaign we build is structured around one goal: generating real business outcomes. Phone calls, form fills, booked appointments, and service requests — not likes, shares, or impressions." },
-                { icon: Users, title: "Precision Audience Targeting", desc: "We build custom audiences based on your ideal customer profile — location, demographics, behaviors, and life events — so your ads reach people who are actually in the market for your services. Then we layer in lookalike audiences built from your existing client list to scale what's working." },
-                { icon: Image, title: "Scroll-Stopping Ad Creative", desc: "Our team develops 3–4 ad creatives with copy specifically written for your service, your market, and your customer's pain points. We A/B test every ad to identify the combinations that drive the lowest cost per lead." },
-                { icon: RefreshCw, title: "Full-Funnel Retargeting", desc: "We set up your Facebook Pixel, build retargeting audiences from website visitors and video viewers, and run sequential ad campaigns that nurture prospects from first touch to booked appointment." },
-                { icon: MousePointerClick, title: "Conversion Tracking & Pixel Setup", desc: "You can't optimize what you can't measure. We implement complete conversion tracking so you know exactly which ads, audiences, and placements are generating real results — and which ones to cut." },
-                { icon: Settings, title: "Ongoing Campaign Optimization", desc: "Every week, we monitor performance, adjust bids, refresh creative, and optimize targeting. Campaigns are never left on autopilot. If something isn't working, we fix it. If something is working, we scale it." },
-                { icon: FileText, title: "Monthly Reporting That Makes Sense", desc: "No cryptic dashboards or vanity slides. You get clear, plain-English reports showing exactly how your campaigns performed, what we tested, what we changed, and what's next." },
-                { icon: Layers, title: "Instagram Ads Integration", desc: "Your campaigns run across both Facebook and Instagram, giving you maximum reach within your local market. We optimize placement and format for each platform so your budget works harder." },
+                { icon: Target, title: "Qualified leads, not vanity metrics", desc: "Every campaign is structured around one goal: generating real business outcomes. Phone calls, form fills, booked appointments, and service requests — not likes, shares, or impressions." },
+                { icon: Users, title: "Precision audience targeting", desc: "Custom audiences built from your ideal customer profile (location, demographics, behaviors, life events), layered with lookalike audiences built from your existing client list to scale what's already working." },
+                { icon: Image, title: "Scroll-stopping ad creative", desc: "Three to four ad creatives per campaign, written for your service, your market, and your customer's pain points. Primary copy, headlines, CTAs, and visual direction — all A/B tested to identify the combinations that drive the lowest cost per lead." },
+                { icon: RefreshCw, title: "Full-funnel retargeting", desc: "Meta Pixel setup, retargeting audiences built from website visitors and video viewers, and sequential retargeting campaigns that nurture prospects from first touch to booked appointment." },
+                { icon: FileText, title: "Transparent monthly reporting", desc: "No cryptic dashboards, no vanity slides. Clear monthly reports: cost per lead, lead volume, click-through rate, reach, frequency, and ROAS. Plus a summary of optimizations made and the plan for the following month." },
               ].map((card, i) => (
                 <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -238,30 +235,124 @@ const FacebookAds = () => {
         </div>
       </section>
 
-      {/* SERVICES */}
+      {/* WHAT'S INCLUDED — deliverables checklist */}
+      <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <SectionHeader
+              title="What's Included in Every"
+              titleHighlight="Engagement"
+              description="A structured scope of work — applied consistently across every Meta Ads engagement we manage."
+            />
+            <ul className="mt-12 space-y-3">
+              {[
+                "Full campaign strategy and account architecture — business goals, service area, competitive landscape, and ideal customer profile",
+                "Meta Business Manager and Meta Ads Manager setup and access configuration",
+                "Meta Pixel installation and Conversions API integration — server-side event tracking for iOS 14.5+ attribution",
+                "Custom audience creation — website visitors, video viewers, customer list uploads, and engagement audiences",
+                "Lookalike audience generation — 1%, 3%, and 5% tiers based on best-fit source audiences",
+                "Campaign structure design — awareness, consideration, and conversion layering",
+                "Ad creative development — three to four ad variants per campaign (primary copy, headline, CTA, visual direction)",
+                "Systematic A/B testing — creative, audience, placement, and bidding strategy",
+                "Conversion event configuration — form fills, phone calls, and booking completions",
+                "Advantage+ campaign deployment where the data supports it",
+                "Retargeting funnel architecture — sequential creative tuned by audience temperature",
+                "Weekly performance monitoring and active optimization — bid adjustments, creative refreshes, budget pacing",
+                "Monthly reporting with plain-English analysis of performance, optimizations made, and next-30-day plan",
+                "Lead follow-up integration with your CRM or notification system — speed to lead is one of the biggest drivers of conversion",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 animate-fade-up" style={{ animationDelay: `${i * 0.03}s` }}>
+                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm md:text-base text-muted-foreground leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* META ADS COST */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <SectionHeader
+              title="What Facebook & Instagram Ads Actually Cost for"
+              titleHighlight="Small Businesses"
+            />
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center mt-6">
+              Meta advertising is generally the lowest cost-per-lead paid channel available to small businesses — substantially cheaper than Google Search Ads. The tradeoff is lead intent: Meta is a demand-generation channel, not a demand-capture channel. Prospects arrive earlier in the buying process.
+            </p>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto mt-10">
+              {[
+                { value: "$27.66", label: "Meta Leads CPL — industry avg" },
+                { value: "$1.92", label: "Meta Leads CPC — industry avg" },
+                { value: "$0.70", label: "Meta traffic CPC — industry avg" },
+                { value: "+21%", label: "Meta Leads CPL YoY 2025" },
+              ].map((stat, i) => (
+                <div key={i} className="text-center bg-background border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                  <p className="text-3xl md:text-4xl font-display font-bold text-transparent bg-clip-text bg-gradient-primary">{stat.value}</p>
+                  <p className="text-xs text-muted-foreground mt-2 leading-relaxed">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center mt-10">
+              Meta's 2025 CPL is roughly 2.5× lower than Google Ads at $70.11. The +21% year-over-year cost increase reflects rising ad competition — which is why campaign strategy, creative quality, and active optimization matter more every year. Paying less per lead requires doing the work the generalists skip.
+            </p>
+            <p className="text-xs italic text-muted-foreground/70 max-w-3xl mx-auto text-center mt-4">
+              Industry benchmarks: WordStream by LocaliQ 2025 Facebook Ads Benchmarks and 2025 Google Ads Benchmarks (1,000+ campaigns analyzed per report). Your specific CPL depends on your vertical, service area, creative quality, and funnel maturity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* META vs GOOGLE COMPARISON */}
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
-              title="Our Facebook & Instagram Ads"
-              titleHighlight="Management Services"
+              title="Meta Ads vs Google Ads for Small Businesses:"
+              titleHighlight="Where Each Channel Wins"
+              description="The two channels aren't substitutes — they work differently and win on different metrics. Most of our clients run both. Here's the honest breakdown."
             />
-            <div className="grid sm:grid-cols-2 gap-6 mt-12">
-              {[
-                { title: "Campaign Strategy & Setup", desc: "We start with your business goals, service area, competitive landscape, and ideal customer profile. Then we build a campaign architecture designed around those specific inputs — not a recycled template. Includes campaign structure, ad set configuration, objective selection, and full account setup." },
-                { title: "Audience Research & Targeting", desc: "We identify and build the audience segments most likely to convert for your specific service. Core audiences based on location and demographics, interest and behavior targeting, custom audiences from your existing customer data, and lookalike audiences to expand reach intelligently." },
-                { title: "Ad Creative Development", desc: "We write and design 3–4 ad creatives per campaign, including primary copy, headlines, and call-to-action text. Creative is built around your customer's pain points and tested systematically to find the best performers. Formats include image ads, carousel ads, and lead generation ads." },
-                { title: "Facebook Pixel & Conversion Tracking Setup", desc: "Full pixel implementation on your website, custom conversion event configuration, and integration with your contact forms, phone tracking, and booking system so every lead is attributed correctly." },
-                { title: "Retargeting Campaign Management", desc: "We build and manage dedicated retargeting campaigns targeting your website visitors, video viewers, and lead form openers. Sequential retargeting moves prospects through a structured funnel from awareness to conversion." },
-                { title: "Ongoing Campaign Management & Optimization", desc: "Active management of up to five ad sets, with weekly performance reviews, bid adjustments, audience refinements, creative refreshes, and budget pacing. We manage the campaign so it performs — not just runs." },
-                { title: "Monthly Performance Reporting", desc: "Clear monthly reports covering key metrics: cost per lead, lead volume, click-through rate, reach, frequency, and ROAS. Plus a summary of optimizations made and the plan for the following month." },
-                { title: "Lead Follow-Up Integration", desc: "We connect your ads to your CRM or lead notification system so new leads are followed up with immediately. Speed to lead is one of the biggest drivers of conversion — we make sure no lead goes cold." },
-              ].map((svc, i) => (
-                <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <h4 className="text-base font-display font-semibold text-foreground">{svc.title}</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{svc.desc}</p>
-                </div>
-              ))}
+            <div className="mt-12 overflow-x-auto rounded-xl border border-border">
+              <table className="w-full text-sm md:text-base">
+                <thead className="bg-card">
+                  <tr>
+                    <th className="text-left p-4 font-display font-semibold text-foreground border-b border-border">Dimension</th>
+                    <th className="text-left p-4 font-display font-semibold text-foreground border-b border-border">Meta Ads (Facebook & Instagram)</th>
+                    <th className="text-left p-4 font-display font-semibold text-foreground border-b border-border">Google Search Ads</th>
+                  </tr>
+                </thead>
+                <tbody className="text-muted-foreground">
+                  {[
+                    ["Primary function", "Demand generation", "Demand capture"],
+                    ["Audience intent", "Low–moderate (scrolling, open to discovery)", "High (actively searching, commercial intent)"],
+                    ["Avg CPL", "$27.66¹", "$70.11²"],
+                    ["Avg CPC", "$1.92 leads · $0.70 traffic¹", "$5.26²"],
+                    ["Best for", "Visual / lifestyle services, retargeting, brand-building", "High-intent local search, urgent-need services"],
+                    ["Strongest verticals", "Med spa, photography, restaurants, real estate", "HVAC, plumbing, dental, chiropractic, “near me” services"],
+                    ["Lead quality", "Cheaper, earlier in funnel", "More expensive, further in funnel"],
+                    ["Complementary role", "Nurtures, retargets, builds brand", "Captures active searchers, drives phone/form leads"],
+                  ].map((row, i) => (
+                    <tr key={i} className={i % 2 === 0 ? "bg-card/30" : "bg-transparent"}>
+                      <td className="p-4 font-medium text-foreground border-b border-border align-top">{row[0]}</td>
+                      <td className="p-4 border-b border-border align-top leading-relaxed">{row[1]}</td>
+                      <td className="p-4 border-b border-border align-top leading-relaxed">{row[2]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs italic text-muted-foreground/70 mt-4">
+              ¹ WordStream by LocaliQ 2025 Facebook Ads Benchmarks. ² WordStream by LocaliQ 2025 Google Ads Benchmarks.
+            </p>
+            <div className="mt-8 max-w-3xl mx-auto rounded-xl border-l-4 border-primary bg-card/50 p-6 animate-fade-up">
+              <h4 className="text-lg font-display font-bold text-foreground mb-2">We manage both.</h4>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                Most local service businesses get their best ROI by running Meta and{" "}
+                <Link to="/services/paid-advertising/google-ads/" className="text-primary underline hover:text-primary/80">Google</Link>{" "}
+                Ads together — Google captures the 'I need a dentist today' searches; Meta reaches the other 10× who haven't started searching yet.
+              </p>
             </div>
           </div>
         </div>
