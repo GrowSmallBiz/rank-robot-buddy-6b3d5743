@@ -113,16 +113,7 @@ const LSA = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              Google Local Service Ads Put Your Business at the Very Top of Search — Above PPC and Above Organic. We Handle Every Detail So You Focus on the Jobs.
-            </p>
-            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              Most local business owners are burning money on Google Ads that charge per click — whether that click turns into a customer or not. Google Local Service Ads are different. You pay only when a real, verified customer contacts you directly through your ad. No wasted clicks. No guesswork.
-            </p>
-            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              GrowSmallBiz manages your entire LSA campaign — from Google Guarantee verification to profile optimization, budget control, lead review, and dispute management. You show up first. You pay for leads, not traffic. And you grow.
-            </p>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.25s" }}>
-              We work exclusively with local service businesses: HVAC companies, dental practices, med spas, home service contractors, chiropractors, auto repair shops, realtors, and photographers. This is not a general marketing agency. We know your industry, your competition, and exactly how to position your business to win the Google Guarantee badge and dominate your local market.
+              Google Local Service Ads put your business at the very top of search — above PPC, above organic. You pay only when a verified customer contacts you directly. GrowSmallBiz manages every detail: Google Verified setup, profile optimization, lead review, and dispute management.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero" size="xl" asChild>
@@ -137,6 +128,9 @@ const LSA = () => {
                 </a>
               </Button>
             </div>
+            <p className="text-sm text-muted-foreground/80 font-sans animate-fade-up" style={{ animationDelay: "0.35s" }}>
+              Managing Google Local Service Ads for small service businesses nationally since 2021.
+            </p>
           </div>
         </div>
       </section>
