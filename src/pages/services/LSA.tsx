@@ -31,7 +31,6 @@ import {
   Home,
   Stethoscope,
   Wrench,
-  Car,
   Camera,
   Scale,
 } from "lucide-react";
@@ -41,15 +40,15 @@ import { SectionHeader } from "@/components/services/SectionHeader";
 const faqs: FAQItem[] = [
   {
     question: "What are Google Local Service Ads and how are they different from regular Google Ads?",
-    answer: "Google Local Service Ads (LSA) are a distinct advertising product from Google's traditional PPC search ads. Regular Google Ads charge you every time someone clicks your ad — whether they become a customer or not. LSA charges you only when a verified customer contacts you directly through the ad, making it a pay-per-lead model. LSA ads also appear above traditional PPC ads and above organic search results. Additionally, LSA participants can earn the Google Guarantee or Google Screened badge — a verification mark that builds trust before customers ever click.",
+    answer: "Google Local Service Ads (LSA) are a distinct advertising product from Google's traditional PPC search ads. Regular Google Ads charge you every time someone clicks your ad — whether they become a customer or not. LSA charges you only when a verified customer contacts you directly through the ad, making it a pay-per-lead model. LSA ads also appear above traditional PPC ads and above organic search results. Additionally, LSA participants can earn the Google Verified badge — a verification mark that builds trust before customers ever click.",
   },
   {
-    question: "What is the Google Guarantee badge and how do I qualify for it?",
-    answer: "The Google Guarantee badge is a green checkmark that appears next to your business name in your LSA listing. It tells customers that Google has verified your business — including a background check, license verification, and insurance confirmation. GrowSmallBiz manages this entire process for you, from application submission to document collection to monitoring approval status. Once active, the badge dramatically increases customer trust and click-through rate.",
+    question: "What is the Google Verified badge and how do I qualify for it?",
+    answer: "The Google Verified badge is a blue checkmark displayed on your Google Local Service Ads profile. It confirms that Google has screened your business — including background check, license verification, insurance confirmation, and identity verification. GrowSmallBiz manages this entire process for you, from application submission through document collection to monitoring approval status. The unified Google Verified badge replaced the older Google Guaranteed, Google Screened, and License Verified badges in October 2025.",
   },
   {
     question: "Do Google Local Service Ads work for my type of business?",
-    answer: "LSA is available for specific service categories — and GrowSmallBiz works exclusively within those categories: HVAC, dental, med spa, home services, chiropractic, auto repair, realtors, and photographers. In your free strategy call, we confirm your eligibility, review the competitive landscape, and give an honest assessment of what LSA can realistically deliver for your business.",
+    answer: "LSA is available for specific service categories — and GrowSmallBiz works exclusively within those categories: HVAC, dental, med spa, home services, chiropractic, realtors, and photographers. In your free strategy call, we confirm your eligibility, review the competitive landscape, and give an honest assessment of what LSA can realistically deliver for your business.",
   },
   {
     question: "How much does it cost to run Google Local Service Ads?",
@@ -57,7 +56,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How long does it take to start getting leads from LSA?",
-    answer: "Once your Google Guarantee or Google Screened verification is complete — typically 2 to 4 weeks for background checks, license verification, and insurance confirmation — leads usually begin arriving within 24 to 72 hours of going live. The first 30 to 60 days focus on building review velocity, tightening response time, and refining service categories and service area, since those are the factors Google uses to rank your LSA profile and grow your lead volume over time.",
+    answer: "Once your Google Verified screening is complete — typically 2 to 4 weeks for background checks, license verification, and insurance confirmation — leads usually begin arriving within 24 to 72 hours of going live. The first 30 to 60 days focus on building review velocity, tightening response time, and refining service categories and service area, since those are the factors Google uses to rank your LSA profile and grow your lead volume over time.",
   },
   {
     question: "What happens if I receive spam calls or invalid leads through LSA?",
@@ -79,8 +78,10 @@ const LSA = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Google Local Service Ads Management | LSA Agency for Local Businesses | GrowSmallBiz</title>
-        <meta name="description" content="Stop paying for clicks that never convert. GrowSmallBiz manages your Google Local Service Ads so you pay only for real, verified leads. Google Guarantee badge included. Get started today." />
+        <title>Google Local Service Ads Management for Small Businesses | GrowSmallBiz</title>
+        <meta name="description" content="Google Local Service Ads management for HVAC, dental, med spa, home services, and other small service businesses. Pay-per-lead pricing, Google Verified badge, verified leads only. Free strategy call." />
+        <meta property="og:title" content="Google Local Service Ads Management for Small Businesses — GrowSmallBiz" />
+        <meta property="og:description" content="Small service businesses running Google LSA campaigns that generate pre-qualified leads at pay-per-lead pricing. Google Verified badge activation, profile optimization, dispute management, and transparent reporting." />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/" />
       </Head>
       <ServiceJsonLd
@@ -432,29 +433,6 @@ const LSA = () => {
         </div>
       </section>
 
-      {/* CASE STUDIES PLACEHOLDER */}
-      <section className="py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <SectionHeader
-              title="Real Results from"
-              titleHighlight="LSA Campaigns"
-              description="Case studies coming soon — showcasing measurable results from our Google Local Service Ads management."
-            />
-            <div className="grid lg:grid-cols-3 gap-8 mt-12">
-              {["HVAC Company", "Dental Practice", "Home Services"].map((name, i) => (
-                <div key={i} className="bg-background border border-border rounded-2xl p-8 text-center animate-fade-up" style={{ animationDelay: `${i * 0.1}s` }}>
-                  <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <TrendingUp className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">{name}</h3>
-                  <p className="text-sm text-muted-foreground">Case study coming soon</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ */}
       <FAQSection
@@ -465,7 +443,7 @@ const LSA = () => {
           ...baseContactCTA,
           title: "Have more questions about Local Service Ads?",
           description: "We're here to help you get the most from your LSA campaign.",
-          tagline: "Let's get your Google Guarantee badge and start generating leads.",
+          tagline: "Let's get your Google Verified badge and start generating leads.",
         }}
       />
 
@@ -478,7 +456,7 @@ const LSA = () => {
               <span className="text-transparent bg-clip-text bg-gradient-primary">Are You?</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Right now, in your service area, your competitors are capturing leads through Google Local Service Ads that you are not even competing for. The businesses with the Google Guarantee badge, the most reviews, and the most optimized profiles are collecting calls from customers who never scroll past the top three results. Every day without an active, well-managed LSA campaign is revenue that belongs to someone else.
+              Right now, in your service area, your competitors are capturing leads through Google Local Service Ads that you are not even competing for. The businesses with the Google Verified badge, the most reviews, and the most optimized profiles are collecting calls from customers who never scroll past the top three results. Every day without an active, well-managed LSA campaign is revenue that belongs to someone else.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
               GrowSmallBiz manages your complete LSA presence — verification, profile optimization, budget management, lead review, dispute filing, and performance reporting — so you capture your share of that demand starting now. Book your free strategy call today. No obligation, no contract pressure, no fluff. Just a direct conversation about what LSA can do for your business.
