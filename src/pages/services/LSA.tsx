@@ -2,6 +2,7 @@ import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
 import lsaHeroImage from "@/assets/lsa-hero-split-screen.jpg";
+import googleVerifiedBadge from "@/assets/google-verified-badge.png";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
@@ -241,6 +242,7 @@ const LSA = () => {
                   icon: ShieldCheck,
                   label: "Build Trust with the Google Verified Badge",
                   body: "Display the Google Verified Badge on your profile to help new customers choose your business with confidence.",
+                  badgeImage: googleVerifiedBadge,
                 },
                 {
                   icon: MapPin,
