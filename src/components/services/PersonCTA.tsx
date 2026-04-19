@@ -70,7 +70,7 @@ export const PersonCTA = ({
                 <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-display font-bold text-foreground mb-5 leading-tight">
                   {title}
                 </h2>
-                <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
+                <p className="text-lg md:text-xl text-muted-foreground mb-8">
                   {description}
                 </p>
                 {showUrgency && (
