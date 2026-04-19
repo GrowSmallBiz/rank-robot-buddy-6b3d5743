@@ -129,7 +129,7 @@ const LSA = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
-              Get More Calls. Pay Only for Real Leads.{" "}
+              Google Local Service Ads: Get More Calls. Pay Only for Real Leads.{" "}
               <span className="text-transparent bg-clip-text bg-gradient-primary">
                 Not Clicks.
               </span>
