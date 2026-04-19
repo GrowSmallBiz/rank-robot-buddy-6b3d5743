@@ -224,12 +224,12 @@ const LSA = () => {
       </section>
 
       {/* ─── LSA BENEFIT STRIP — supporting band between AEO callout and pain points ─── */}
-      <section className="py-12 md:py-14">
+      <section className="py-16 md:py-20 bg-background-alt border-y border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <p className="text-center text-sm font-semibold uppercase tracking-[0.15em] text-primary mb-10">
-              What Google Local Service Ads Deliver
-            </p>
+            <h2 className="text-center text-2xl md:text-3xl font-display font-bold text-foreground mb-12">
+              What Google Local Service Ads <span className="text-transparent bg-clip-text bg-gradient-primary">Deliver</span>
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
