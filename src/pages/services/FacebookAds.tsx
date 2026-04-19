@@ -167,7 +167,7 @@ const FacebookAds = () => {
       <section className="relative pt-8 pb-24 overflow-hidden">
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
             <div className="animate-fade-up">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
                 <Users className="w-4 h-4" />
@@ -186,13 +186,7 @@ const FacebookAds = () => {
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Most small businesses waste thousands on Facebook and Instagram Ads chasing likes and impressions. You need leads. We build, manage, and optimize Meta ad campaigns that turn your ad spend into booked appointments, service calls, and paying customers.
             </p>
-            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              We don't run 'social media campaigns.' We build precision paid social systems for local service businesses — with audience targeting, scroll-stopping creative, pixel-based conversion tracking, structured retargeting funnels, and weekly active optimization.
-            </p>
-            <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              If you've tried running Facebook Ads on your own — or handed them off to an agency that sent you vanity metrics instead of phone calls — you already know the problem. Targeting without strategy, creative without direction, and campaigns running on autopilot with no one watching the results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.25s" }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.15s" }}>
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
                   Schedule Strategy Session
