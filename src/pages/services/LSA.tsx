@@ -88,14 +88,19 @@ const LSA = () => {
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/" />
       </Head>
       <ServiceJsonLd
-        serviceName="Google Local Service Ads Management"
-        serviceType="LSA Management"
-        description="Complete Google Local Service Ads management for small service businesses. Google Verified activation, profile optimization, lead review, dispute management, and performance reporting."
+        serviceName="Google Local Services Ads Management"
+        serviceType="Google Local Services Ads Management"
+        description="Pay-per-lead advertising through Google's Local Services Ads platform for local service businesses — including Google Guaranteed verification support, profile optimization, lead dispute handling, and budget pacing for eligible service categories."
         url="/services/paid-advertising/google-local-services-ads/"
         breadcrumbs={[
           { name: "Services", url: "/services/" },
-          { name: "Google Local Service Ads Management", url: "/services/paid-advertising/google-local-services-ads/" },
+          { name: "Paid Advertising", url: "/services/paid-advertising/" },
+          { name: "Google Local Services Ads", url: "/services/paid-advertising/google-local-services-ads/" },
         ]}
+        useEntityGraph
+        pageName="Google Local Service Ads Management for Small Businesses | GrowSmallBiz"
+        pageDescription="Google Local Service Ads management for HVAC, dental, med spa, home services, and other small service businesses. Pay-per-lead pricing, Google Verified badge, verified leads only. Free strategy call."
+        hasFaqPage
       />
       <Header />
 
@@ -525,6 +530,7 @@ const LSA = () => {
         faqs={faqs}
         title="Frequently Asked Questions About Google Local Service Ads"
         subtitle="Common questions about LSA management"
+        schemaId="https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/#faqpage"
         contactCTA={{
           ...baseContactCTA,
           title: "Have more questions about Local Service Ads?",
