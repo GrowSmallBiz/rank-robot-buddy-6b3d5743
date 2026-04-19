@@ -29,10 +29,14 @@ import {
   Home,
   Stethoscope,
   Wrench,
-  Car,
   Camera,
-  Scale,
   Briefcase,
+  Sparkles,
+  Building2,
+  Utensils,
+  Video,
+  Clock,
+  LayoutGrid,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
