@@ -106,7 +106,8 @@ const LSA = () => {
             width={1920}
             height={1080}
             fetchPriority="high"
-            className="w-full h-full object-cover blur-md scale-110"
+            className="w-full h-full object-cover scale-110"
+            style={{ filter: "blur(6px)" }}
           />
           {/* Mobile: near-opaque overlay so the device fades into a textural accent */}
           <div className="absolute inset-0 bg-background/97 md:hidden" />
