@@ -446,36 +446,18 @@ const LSA = () => {
       />
 
       {/* FOOTER CTA */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Already Running Google Local Service Ads.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Are You?</span>
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Right now, in your service area, your competitors are capturing leads through Google Local Service Ads that you are not even competing for. The businesses with the Google Verified badge, the most reviews, and the most optimized profiles are collecting calls from customers who never scroll past the top three results. Every day without an active, well-managed LSA campaign is revenue that belongs to someone else.
-            </p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              GrowSmallBiz manages your complete LSA presence — verification, profile optimization, budget management, lead review, dispute filing, and performance reporting — so you capture your share of that demand starting now. Book your free strategy call today. No obligation, no contract pressure, no fluff. Just a direct conversation about what LSA can do for your business.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl" asChild>
-                <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Schedule Strategy Call
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
-              <Button variant="heroOutline" size="xl" asChild>
-                <a href="tel:+19258863724">
-                  <Phone className="w-5 h-5 mr-2" />
-                  +1 (925) 886-3724
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PersonCTA
+        title={
+          <>
+            Your Competitors Are Already Running Google Local Service Ads.{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-primary">Are You?</span>
+          </>
+        as unknown as string}
+        description="Right now, in your service area, your competitors are capturing leads through Google Local Service Ads that you are not even competing for. GrowSmallBiz manages your complete LSA presence — verification, profile optimization, budget management, lead review, dispute filing, and performance reporting — so you capture your share of that demand starting now."
+        buttonHref={strategyUrl}
+        buttonText="Schedule Strategy Call"
+        sectionClassName="py-24"
+      />
 
       <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
       <Footer />
