@@ -257,25 +257,25 @@ const LSA = () => {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="flex flex-col text-left space-y-4 animate-fade-up rounded-2xl p-6 border-2 border-[#17a2b8] shadow-[0_0_30px_rgba(23,162,184,0.25)] hover:shadow-[0_0_40px_rgba(23,162,184,0.45)] transition-shadow"
+                  className="flex flex-col text-left space-y-4 animate-fade-up rounded-2xl p-6 border-2 border-[#17a2b8]/70 shadow-[0_0_15px_rgba(23,162,184,0.12)] hover:shadow-[0_0_25px_rgba(23,162,184,0.25)] transition-shadow"
                   style={{ animationDelay: `${i * 0.05}s`, backgroundColor: "#2D465C" }}
                 >
-                  {item.badgeImage ? (
-                    <img
-                      src={item.badgeImage}
-                      alt="Google Verified Badge"
-                      width={48}
-                      height={48}
-                      loading="lazy"
-                      className="w-12 h-12 object-contain"
-                    />
-                  ) : (
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    {item.badgeImage ? (
+                      <img
+                        src={item.badgeImage}
+                        alt="Google Verified Badge"
+                        width={28}
+                        height={28}
+                        loading="lazy"
+                        className="w-7 h-7 object-contain"
+                      />
+                    ) : (
                       <item.icon className="w-6 h-6 text-primary" />
-                    </div>
-                  )}
-                  <h3 className="text-base font-display font-bold text-foreground">{item.label}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+                    )}
+                  </div>
+                  <h3 className="text-base font-display font-bold text-foreground text-balance min-h-[3.25rem]">{item.label}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed text-balance">{item.body}</p>
                 </div>
               ))}
             </div>
