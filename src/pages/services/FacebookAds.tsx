@@ -107,19 +107,22 @@ const FacebookAds = () => {
                 Not Just Your Feed
               </span>
             </h1>
+            <p className="text-base md:text-lg italic text-muted-foreground/80 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.05s" }}>
+              Facebook & Instagram Ads management for small businesses that need qualified leads, not impressions.
+            </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              Most local businesses waste thousands on Facebook Ads chasing likes and impressions. You need leads. We build, manage, and optimize Meta ad campaigns that turn your ad spend into booked appointments, service calls, and paying customers.
+              Most small businesses waste thousands on Facebook and Instagram Ads chasing likes and impressions. You need leads. We build, manage, and optimize Meta ad campaigns that turn your ad spend into booked appointments, service calls, and paying customers.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              If you've tried running Facebook Ads on your own — or handed them off to an agency that sent you vanity metrics instead of phone calls — you already know the problem. Targeting without strategy, creative without direction, and campaigns running on autopilot with no one watching the results.
+              We don't run 'social media campaigns.' We build precision paid social systems for local service businesses — with audience targeting, scroll-stopping creative, pixel-based conversion tracking, structured retargeting funnels, and weekly active optimization.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              At GrowSmallBiz, we manage Facebook and Instagram Ads the way they were meant to be used: as a precision lead-generation engine for local service businesses. From audience research and ad creative to pixel tracking, retargeting, and monthly reporting, we handle every layer so you can focus on serving the customers we send you.
+              If you've tried running Facebook Ads on your own — or handed them off to an agency that sent you vanity metrics instead of phone calls — you already know the problem. Targeting without strategy, creative without direction, and campaigns running on autopilot with no one watching the results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.25s" }}>
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Get My Free Facebook Ads Strategy Session
+                  Schedule Strategy Session
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
@@ -139,10 +142,10 @@ const FacebookAds = () => {
           <p className="text-sm text-muted-foreground text-center mb-8">Trusted by Local Service Businesses Across the Bay Area and Nationwide</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {[
-              { value: "2x – 4x", label: "Client Growth Reported" },
-              { value: "200%", label: "Increase in Qualified Leads (3 Months)" },
-              { value: "30+", label: "Years Founder's Business & Marketing Experience" },
-              { value: "100%", label: "Done-For-You Campaign Management" },
+              { value: "30+", label: "Years Fortune 500 sales & marketing leadership" },
+              { value: "5", label: "Local service industries served" },
+              { value: "Weekly", label: "Active campaign optimization" },
+              { value: "100%", label: "Done-for-you management" },
             ].map((stat, i) => (
               <div key={i} className="text-center animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                 <p className="text-3xl md:text-4xl font-display font-bold text-primary">{stat.value}</p>
@@ -159,14 +162,14 @@ const FacebookAds = () => {
           <div className="max-w-4xl mx-auto">
             <SectionHeader
               title="Why Most Facebook Ad Campaigns Fail"
-              titleHighlight="Local Businesses"
+              titleHighlight="Small Businesses"
               description="Facebook and Instagram have over 3 billion combined monthly active users. The audience is there. The targeting tools are there. So why are so many local businesses still burning through budgets with nothing to show for it?"
             />
             <div className="space-y-6 mt-12">
               {[
                 { title: "You're paying for the wrong outcomes.", desc: "Boosting posts for likes and reach is not advertising — it's brand awareness spending without brand-awareness budgets. If your campaigns aren't structured around lead generation and conversion goals, you're funding Meta's revenue, not yours." },
                 { title: "Your targeting is too broad — or too narrow.", desc: "Generic interest targeting reaches people who will never call you. Hyper-local targeting without the right audience signals means you're guessing. Without a data-driven audience strategy built around your actual customer profile, your budget disappears into impressions that convert to nothing." },
-                { title: "You have no retargeting system.", desc: "The majority of people who see your ad for the first time won't book immediately. Without a structured retargeting funnel — using pixel data, website visitors, and custom audiences — you're letting warm leads go cold every single day." },
+                { title: "You have no retargeting system.", desc: "Most people who see your ad for the first time won't book immediately. Without a structured retargeting funnel — using Meta Pixel data, website visitors, and custom audiences — you're letting warm leads go cold every single day." },
                 { title: "Your creative doesn't speak to your customer.", desc: "A blurry stock photo and a generic caption don't stop the scroll. Local service businesses need ad creative that addresses the specific pain points of their ideal customer, with a clear message and a compelling reason to act now." },
                 { title: "There's no one watching the numbers.", desc: "Facebook Ads require continuous optimization. Audience fatigue, creative burnout, budget pacing, and bidding strategy all need active management. Set-it-and-forget-it campaigns are money drains." },
               ].map((item, i) => (
@@ -175,6 +178,28 @@ const FacebookAds = () => {
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LEAKY BUCKET CALLOUT */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto rounded-2xl border-2 border-primary/60 bg-card/50 backdrop-blur-sm p-8 md:p-12 shadow-[0_0_30px_rgba(255,127,80,0.15)] animate-fade-up">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
+              Fixing the leaky bucket: where most of your future customers actually live
+            </h3>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Only a small fraction of people who visit your website take action on their first visit. Most leave without calling, filling out the form, or booking. That isn't a website problem — it's a follow-up problem. It's the leaky bucket every local business has.
+              </p>
+              <p>
+                Meta's retargeting capabilities are built to fix exactly that. Your Meta Pixel captures every website visitor. We build custom audiences from those visitors, from people who engaged with your ads, from people who watched your video content but didn't book. Then we run sequential retargeting campaigns that keep your business on top of their mind — until they're ready to take action.
+              </p>
+              <p>
+                Most of our clients' best-performing campaigns aren't prospecting. They're retargeting. The leads are already in your funnel. Retargeting is how you actually convert them.
+              </p>
             </div>
           </div>
         </div>
