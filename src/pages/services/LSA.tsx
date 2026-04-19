@@ -259,7 +259,7 @@ const LSA = () => {
                   style={{ animationDelay: `${i * 0.05}s`, backgroundColor: "#17a2b8" }}
                 >
                   <div className="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center">
-                    <item.icon className="w-7 h-7 text-white" />
+                    <item.icon className="w-7 h-7 text-primary" />
                   </div>
                   <h3 className="text-base font-display font-bold text-white">{item.label}</h3>
                   <p className="text-sm text-white/90 leading-relaxed">{item.body}</p>
