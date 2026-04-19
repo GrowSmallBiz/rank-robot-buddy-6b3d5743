@@ -183,6 +183,28 @@ const FacebookAds = () => {
         </div>
       </section>
 
+      {/* LEAKY BUCKET CALLOUT */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto rounded-2xl border-2 border-primary/60 bg-card/50 backdrop-blur-sm p-8 md:p-12 shadow-[0_0_30px_rgba(255,127,80,0.15)] animate-fade-up">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
+              Fixing the leaky bucket: where most of your future customers actually live
+            </h3>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Only a small fraction of people who visit your website take action on their first visit. Most leave without calling, filling out the form, or booking. That isn't a website problem — it's a follow-up problem. It's the leaky bucket every local business has.
+              </p>
+              <p>
+                Meta's retargeting capabilities are built to fix exactly that. Your Meta Pixel captures every website visitor. We build custom audiences from those visitors, from people who engaged with your ads, from people who watched your video content but didn't book. Then we run sequential retargeting campaigns that keep your business on top of their mind — until they're ready to take action.
+              </p>
+              <p>
+                Most of our clients' best-performing campaigns aren't prospecting. They're retargeting. The leads are already in your funnel. Retargeting is how you actually convert them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* BENEFITS */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
