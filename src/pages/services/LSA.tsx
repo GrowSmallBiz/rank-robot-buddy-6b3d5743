@@ -106,16 +106,16 @@ const LSA = () => {
             width={1920}
             height={1080}
             fetchPriority="high"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover blur-md scale-110"
           />
           {/* Mobile: near-opaque overlay so the device fades into a textural accent */}
-          <div className="absolute inset-0 bg-background/95 md:hidden" />
-          {/* Desktop: left-to-right gradient — dark left for text, transparent right reveals device mockup */}
+          <div className="absolute inset-0 bg-background/97 md:hidden" />
+          {/* Desktop: heavier left-to-right gradient — text always sits on near-solid navy */}
           <div
             className="absolute inset-0 hidden md:block"
             style={{
               background:
-                "linear-gradient(to right, hsl(var(--background) / 0.95) 0%, hsl(var(--background) / 0.92) 45%, hsl(var(--background) / 0.7) 65%, hsl(var(--background) / 0.15) 100%)",
+                "linear-gradient(to right, hsl(var(--background) / 0.98) 0%, hsl(var(--background) / 0.96) 55%, hsl(var(--background) / 0.85) 75%, hsl(var(--background) / 0.55) 100%)",
             }}
           />
         </div>
