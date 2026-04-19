@@ -94,9 +94,24 @@ const FacebookAds = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Facebook Ads Management for Local Businesses — GrowSmallBiz</title>
-        <meta name="description" content="Stop wasting ad spend on clicks that never convert. GrowSmallBiz manages your Facebook & Instagram Ads with precision targeting, conversion-focused creative, and full-funnel tracking — so every dollar drives real leads for your local business." />
+        <title>Facebook & Instagram Ads Management for Small Businesses | GrowSmallBiz</title>
+        <meta name="description" content="Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics." />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/facebook-ads/" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Facebook & Instagram Ads Management for Small Businesses" />
+        <meta property="og:description" content="Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics." />
+        <meta property="og:url" content="https://growsmallbiz.io/services/paid-advertising/facebook-ads/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://growsmallbiz.io/og-image.jpg" />
+        <meta property="og:image:alt" content="GrowSmallBiz — Facebook and Instagram Ads management for local service businesses" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Facebook & Instagram Ads Management for Small Businesses" />
+        <meta name="twitter:description" content="Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics." />
+        <meta name="twitter:image" content="https://growsmallbiz.io/og-image.jpg" />
+        <meta name="twitter:image:alt" content="GrowSmallBiz — Facebook and Instagram Ads management for local service businesses" />
       </Head>
       <ServiceJsonLd
         serviceName="Facebook Ads Management"
@@ -105,10 +120,40 @@ const FacebookAds = () => {
         url="/services/paid-advertising/facebook-ads/"
         breadcrumbs={[
           { name: "Services", url: "/services/" },
-          { name: "Facebook Ads Management", url: "/services/paid-advertising/facebook-ads/" },
+          { name: "Paid Advertising", url: "/services/paid-advertising/" },
+          { name: "Facebook & Instagram Ads", url: "/services/paid-advertising/facebook-ads/" },
         ]}
       />
       <Header />
+
+      {/* Breadcrumbs — 4-level parity with /services/paid-advertising/ */}
+      <nav aria-label="Breadcrumb" className="container mx-auto px-4 pt-6">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link to="/">Home</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link to="/services/">Services</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink asChild>
+                <Link to="/services/paid-advertising/">Paid Advertising</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Facebook &amp; Instagram Ads</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </nav>
 
       {/* HERO */}
       <section className="relative pt-32 pb-24 overflow-hidden">
