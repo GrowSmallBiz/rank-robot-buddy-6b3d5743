@@ -363,15 +363,15 @@ const FacebookAds = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
-              title="How We Manage Your Facebook Ads:"
+              title="How We Manage Your Meta Ads:"
               titleHighlight="From Strategy to Results"
             />
             <div className="space-y-6 mt-12">
               {[
-                { title: "Discovery & Strategy Session", desc: "We start with a deep-dive strategy session to understand your business, your target customer, your service area, and your growth goals. We audit your existing ad account (if you have one), review your competitors' ad activity, and identify the biggest opportunities in your market. This session defines everything that follows." },
-                { title: "Audience Build & Campaign Architecture", desc: "Based on your strategy session, we build your core audience segments — custom, interest-based, and lookalike — and structure your campaign architecture around your specific conversion goal. We configure your ad account, Business Manager, and pixel at this stage." },
-                { title: "Ad Creative Development & A/B Testing Setup", desc: "We develop 3–4 ad creatives with full copywriting, headlines, and visual direction. Each creative is built to speak directly to your ideal customer's situation and motivate a specific action. We set up systematic A/B testing so every creative is evaluated on real performance data." },
-                { title: "Campaign Launch & Conversion Tracking Verification", desc: "We launch your campaigns and run a full conversion tracking verification to confirm that every lead, form fill, and phone call is being recorded accurately. No assumptions — we verify the data before scaling any budget." },
+                { title: "Discovery & Strategy Session", desc: "We start with a deep-dive strategy session to understand your business, your target customer, your service area, and your growth goals. We audit your existing ad account (if you have one), review your competitors' ad activity using Meta Ad Library, and identify the biggest opportunities in your market. This session defines everything that follows." },
+                { title: "Audience Build & Campaign Architecture", desc: "Based on your strategy session, we build your core audience segments — custom, interest-based, and lookalike — and structure your campaign architecture around your specific conversion goal. We configure your Meta Business Manager, Meta Pixel, and Conversions API integration at this stage." },
+                { title: "Ad Creative Development & A/B Testing Setup", desc: "We develop three to four ad creatives with full copywriting, headlines, and visual direction across image, carousel, and Reels formats. Each creative is built to speak directly to your ideal customer's situation and motivate a specific action. We set up systematic A/B testing so every creative is evaluated on real performance data." },
+                { title: "Campaign Launch & Conversion Tracking Verification", desc: "We launch your campaigns and run a full conversion tracking verification to confirm that every lead, form fill, and phone call is being recorded accurately through both the Meta Pixel and Conversions API. No assumptions — we verify the data before scaling any budget." },
                 { title: "Weekly Monitoring & Active Optimization", desc: "Every week, we review performance across all active ad sets. We adjust bids, refresh underperforming creative, expand winning audiences, and reallocate budget toward the highest-performing combinations. Your campaign is always improving." },
                 { title: "Monthly Reporting & Strategy Review", desc: "At the end of each month, you receive a clear performance report with all key metrics and a plain-English explanation of results. We review what worked, what we're changing, and what the plan is for the next 30 days." },
               ].map((step, i) => (
