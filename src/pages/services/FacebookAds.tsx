@@ -739,6 +739,7 @@ const FacebookAds = () => {
         faqs={faqs}
         title="FAQs: Your Questions Answered: Facebook & Instagram Ads for Small Businesses"
         subtitle="Common questions about our Meta Ads management for local service businesses."
+        schemaId="https://growsmallbiz.io/services/paid-advertising/facebook-ads/#faqpage"
         contactCTA={{
           ...baseContactCTA,
           title: "Have more questions about Meta Ads?",
