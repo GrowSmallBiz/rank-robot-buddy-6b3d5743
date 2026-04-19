@@ -87,7 +87,7 @@ const LSA = () => {
       <ServiceJsonLd
         serviceName="Google Local Service Ads Management"
         serviceType="LSA Management"
-        description="Complete Google Local Service Ads management for local businesses. Google Guarantee verification, profile optimization, lead review, dispute management, and performance reporting."
+        description="Complete Google Local Service Ads management for small service businesses. Google Verified activation, profile optimization, lead review, dispute management, and performance reporting."
         url="/services/paid-advertising/google-local-services-ads/"
         breadcrumbs={[
           { name: "Services", url: "/services/" },
