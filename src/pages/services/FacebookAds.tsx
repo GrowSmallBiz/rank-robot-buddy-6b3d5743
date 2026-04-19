@@ -29,10 +29,14 @@ import {
   Home,
   Stethoscope,
   Wrench,
-  Car,
   Camera,
-  Scale,
   Briefcase,
+  Sparkles,
+  Building2,
+  Utensils,
+  Video,
+  Clock,
+  LayoutGrid,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
@@ -363,15 +367,15 @@ const FacebookAds = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
-              title="How We Manage Your Facebook Ads:"
+              title="How We Manage Your Meta Ads:"
               titleHighlight="From Strategy to Results"
             />
             <div className="space-y-6 mt-12">
               {[
-                { title: "Discovery & Strategy Session", desc: "We start with a deep-dive strategy session to understand your business, your target customer, your service area, and your growth goals. We audit your existing ad account (if you have one), review your competitors' ad activity, and identify the biggest opportunities in your market. This session defines everything that follows." },
-                { title: "Audience Build & Campaign Architecture", desc: "Based on your strategy session, we build your core audience segments — custom, interest-based, and lookalike — and structure your campaign architecture around your specific conversion goal. We configure your ad account, Business Manager, and pixel at this stage." },
-                { title: "Ad Creative Development & A/B Testing Setup", desc: "We develop 3–4 ad creatives with full copywriting, headlines, and visual direction. Each creative is built to speak directly to your ideal customer's situation and motivate a specific action. We set up systematic A/B testing so every creative is evaluated on real performance data." },
-                { title: "Campaign Launch & Conversion Tracking Verification", desc: "We launch your campaigns and run a full conversion tracking verification to confirm that every lead, form fill, and phone call is being recorded accurately. No assumptions — we verify the data before scaling any budget." },
+                { title: "Discovery & Strategy Session", desc: "We start with a deep-dive strategy session to understand your business, your target customer, your service area, and your growth goals. We audit your existing ad account (if you have one), review your competitors' ad activity using Meta Ad Library, and identify the biggest opportunities in your market. This session defines everything that follows." },
+                { title: "Audience Build & Campaign Architecture", desc: "Based on your strategy session, we build your core audience segments — custom, interest-based, and lookalike — and structure your campaign architecture around your specific conversion goal. We configure your Meta Business Manager, Meta Pixel, and Conversions API integration at this stage." },
+                { title: "Ad Creative Development & A/B Testing Setup", desc: "We develop three to four ad creatives with full copywriting, headlines, and visual direction across image, carousel, and Reels formats. Each creative is built to speak directly to your ideal customer's situation and motivate a specific action. We set up systematic A/B testing so every creative is evaluated on real performance data." },
+                { title: "Campaign Launch & Conversion Tracking Verification", desc: "We launch your campaigns and run a full conversion tracking verification to confirm that every lead, form fill, and phone call is being recorded accurately through both the Meta Pixel and Conversions API. No assumptions — we verify the data before scaling any budget." },
                 { title: "Weekly Monitoring & Active Optimization", desc: "Every week, we review performance across all active ad sets. We adjust bids, refresh underperforming creative, expand winning audiences, and reallocate budget toward the highest-performing combinations. Your campaign is always improving." },
                 { title: "Monthly Reporting & Strategy Review", desc: "At the end of each month, you receive a clear performance report with all key metrics and a plain-English explanation of results. We review what worked, what we're changing, and what the plan is for the next 30 days." },
               ].map((step, i) => (
@@ -401,51 +405,125 @@ const FacebookAds = () => {
               title="Facebook Ads Management for"
               titleHighlight="Local Service Industries"
             />
-            <div className="grid sm:grid-cols-2 gap-6 mt-12">
-              {[
-                { icon: Home, title: "HVAC & Home Services", desc: "Seasonal demand, emergency calls, and maintenance agreements all require different campaign strategies. We build HVAC ad campaigns that generate service calls when they matter most." },
-                { icon: Star, title: "Dental Practices", desc: "New patient acquisition on Facebook requires trust-building creative and precise geographic targeting. We build dental ad campaigns that attract high-value patients to your practice." },
-                { icon: Stethoscope, title: "Med Spas & Aesthetic Services", desc: "Visual services require visual advertising. We develop scroll-stopping creative for med spa and aesthetic service providers that drives consultation bookings." },
-                { icon: Wrench, title: "Chiropractic & Physical Therapy", desc: "Pain-point driven ad creative that speaks directly to the conditions your patients are suffering from. We target the right audience at the moment they're looking for relief." },
-                { icon: Car, title: "Auto Repair & Detailing", desc: "Urgency and local trust drive auto service decisions. We build campaigns that establish credibility and drive service appointments within your target radius." },
-                { icon: Scale, title: "Realtors & Real Estate Professionals", desc: "Buyer and seller lead generation on Facebook requires sophisticated targeting and compelling lead magnets. We manage campaigns that fill your pipeline with qualified prospects." },
-                { icon: Camera, title: "Photographers & Creative Professionals", desc: "Showcase your work with visually-led ad campaigns designed to book consultations, sessions, and engagements." },
-                { icon: Briefcase, title: "Other Local Professional Services", desc: "CPAs, attorneys, financial advisors, consultants, and other local professionals — if you serve a local market and need a consistent pipeline of qualified leads, we can build and manage the campaigns that deliver them." },
-              ].map((ind, i) => (
-                <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <ind.icon className="w-5 h-5 text-primary" />
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto mt-6">
+              Meta Ads don't perform the same way for every vertical. Visual and consideration-stage services benefit most from Meta as a primary channel. Other verticals use Meta as a complementary channel alongside Google Ads. We set your strategy based on what your vertical actually needs.
+            </p>
+
+            {/* Subsection A: Primary Fit */}
+            <div className="mt-14">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-primary mb-6 text-center md:text-left">
+                Primary Fit — Meta as the lead-generation channel
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {[
+                  { icon: Sparkles, title: "Med Spas & Aesthetic Services", desc: "Visual results drive demand. Before/after creative (FDA/FTC-compliant framing: reduce, minimize, improve — never eliminate or guarantee), Instagram-forward Reels, and consultation-focused lead forms. Med spa clients often see Meta deliver more leads than Google at a lower CPL." },
+                  { icon: Camera, title: "Photographers & Creative Professionals", desc: "Visual-first advertising for a visual-first service. Portfolio-driven Reels, engagement retargeting, and consultation funnels designed to book sessions and weddings." },
+                  { icon: Utensils, title: "Restaurants", desc: "Local awareness, event promotion, reservation drives, and daily-special campaigns. Meta's local targeting combined with mouth-watering creative moves covers when Google Ads can't reach people who haven't decided where to eat yet." },
+                  { icon: Building2, title: "Real Estate Brokers & Agents", desc: "Buyer and seller lead generation through video walkthroughs, market update Reels, and neighborhood-targeted lead magnets. Meta captures the 'just starting to look' buyer Google can't reach." },
+                ].map((ind, i) => (
+                  <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                        <ind.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <h4 className="text-base font-display font-semibold text-foreground">{ind.title}</h4>
                     </div>
-                    <h4 className="text-base font-display font-semibold text-foreground">{ind.title}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{ind.desc}</p>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{ind.desc}</p>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+
+            {/* Subsection B: Complementary Channel */}
+            <div className="mt-14">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-primary mb-6 text-center md:text-left">
+                Complementary Channel — Meta alongside Google Ads
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {[
+                  { icon: Home, title: "HVAC & Home Services", desc: "Google Ads captures 'AC repair near me' urgent-need searches; Meta reaches homeowners during off-season for maintenance agreements, replacement planning, and brand building." },
+                  { icon: Star, title: "Dental Practices", desc: "Google Ads captures active patient searches; Meta builds practice awareness, retargets website visitors, and promotes cosmetic services (Invisalign, whitening) where the consideration cycle is longer." },
+                  { icon: Stethoscope, title: "Chiropractic Care", desc: "Google Ads captures 'back pain relief' searches; Meta reaches people earlier — before they've decided chiropractic is the answer — with educational content and patient stories." },
+                  { icon: Briefcase, title: "Other Local Professional Services", desc: "CPAs, attorneys, financial advisors, consultants. If you serve a local market and need a consistent pipeline of qualified leads, we can build and manage campaigns that deliver them." },
+                ].map((ind, i) => (
+                  <div key={i} className="feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                        <ind.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <h4 className="text-base font-display font-semibold text-foreground">{ind.title}</h4>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{ind.desc}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WHY GROWSMALLBIZ */}
+      {/* INSTAGRAM ISN'T AN ADD-ON */}
       <section className="py-24 bg-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <SectionHeader
+              title="Instagram Isn't an Add-On."
+              titleHighlight="It's Half the Opportunity."
+            />
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto mt-6">
+              Most agencies run Facebook-first campaigns and auto-place them on Instagram as an afterthought. For visual service businesses, that's backwards. Instagram's format library is different, the audience behavior is different, and the creative requirements are different.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mt-12">
+              {[
+                { icon: Video, title: "Reels for awareness", desc: "Short-form vertical video is where discovery happens on Instagram in 2026. Reels campaigns reach audiences outside your existing following and are often the cheapest way to build top-of-funnel awareness for visual verticals." },
+                { icon: Clock, title: "Stories for retargeting", desc: "Full-screen, time-limited, high-engagement. Stories placements work best for warm audiences — retargeting website visitors, video viewers, and custom audiences with time-sensitive offers." },
+                { icon: LayoutGrid, title: "Feed for consideration", desc: "High-resolution static and carousel formats for before/afters, portfolio work, testimonials (where available), and educational content. The feed is where prospects evaluate you." },
+              ].map((card, i) => (
+                <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                      <card.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <h4 className="text-base font-display font-semibold text-foreground">{card.title}</h4>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-base md:text-lg text-foreground leading-relaxed text-center max-w-3xl mx-auto mt-12">
+              We build creative for all three formats natively — not cropped from Facebook feed ads — and configure campaign structure to optimize each placement on its own performance data.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY GROWSMALLBIZ */}
+      <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
-              title="Why Local Businesses Choose GrowSmallBiz for"
-              titleHighlight="Facebook Ads Management"
+              title="Why Small Businesses Choose GrowSmallBiz for"
+              titleHighlight="Meta Ads Management"
               className="mb-12"
             />
             <div className="space-y-6">
               {[
-                { title: "We Specialize in Local Service Businesses — Period", desc: "We don't manage ad campaigns for e-commerce brands, SaaS companies, or national retailers. Our entire agency is built around one type of client: local service businesses. That specialization means we understand your customer, your competitive landscape, and your growth levers in a way a generalist agency never will." },
-                { title: "30+ Years of Real Business Experience", desc: "GrowSmallBiz was founded by Subrata Guha — a 30+ year veteran of Fortune 500 sales, marketing, supply chain, and digital transformation. He didn't build this agency to learn on your budget. The strategic thinking, business judgment, and marketing frameworks we apply come from decades of real-world business leadership." },
-                { title: "Full-Funnel, Not Just Ads", desc: "Anyone can run an ad. We build the entire system: audience targeting, ad creative, pixel setup, conversion tracking, retargeting sequences, and lead follow-up integration. Your ads are connected to your business — not just running in isolation." },
-                { title: "AI-Powered Campaign Management", desc: "We use AI-powered tools to enhance audience analysis, creative optimization, and performance monitoring. That means faster decisions, smarter targeting, and more efficient use of your budget — at every stage of your campaign." },
-                { title: "Integrated with Your Broader Marketing System", desc: "Your Facebook Ads don't operate in a silo. We integrate your paid social campaigns with your SEO strategy, website conversion rate, reputation management, and CRM — so every channel amplifies the others and every lead is captured and nurtured." },
-                { title: "The Performance Guarantee", desc: "We stand behind our work. If we don't generate leads within the agreed timeframe and scope, we keep working at no additional management fee until we do." },
+                { title: "We specialize in local service businesses — period", desc: "We don't manage ad campaigns for e-commerce brands, SaaS companies, or national retailers. Our entire agency is built around one type of client: local service businesses. That specialization means we understand your customer, your competitive landscape, and your growth levers in a way a generalist agency never will.", featured: false },
+                { title: "30+ years of real business experience", desc: "GrowSmallBiz was founded by Subrata Guha — a 30+ year veteran of Fortune 500 sales, marketing, supply chain, and digital transformation. He didn't build this agency to learn on your budget. The strategic thinking, business judgment, and marketing frameworks we apply come from decades of real-world business leadership.", featured: false },
+                { title: "Full-funnel, not just ads", desc: "Anyone can run an ad. We build the entire system: audience targeting, ad creative, Meta Pixel setup, Conversions API integration, conversion tracking, retargeting sequences, and lead follow-up integration. Your ads are connected to your business — not just running in isolation.", featured: false },
+                { title: "AI-powered campaign management", desc: "We use AI-powered tools to enhance audience analysis, creative optimization, and performance monitoring. That means faster decisions, smarter targeting, and more efficient use of your budget — at every stage of your campaign.", featured: false },
+                { title: "Integrated with your broader marketing system", desc: "Your Meta Ads don't operate in a silo. We integrate your paid social campaigns with your SEO strategy, website conversion rate, reputation management, and CRM — so every channel amplifies the others and every lead is captured and nurtured.", featured: false },
+                { title: "The Performance Guarantee", desc: "If we don't generate leads within the agreed timeframe and scope, we keep working at no additional management fee — you only cover the ad spend — until we do. Timeframe and lead-volume thresholds are defined during your strategy session and documented in your service agreement.", featured: true },
               ].map((item, i) => (
-                <div key={i} className="bg-background border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                <div
+                  key={i}
+                  className={
+                    item.featured
+                      ? "bg-card border-l-4 border-primary border-y border-r border-border rounded-xl p-6 animate-fade-up shadow-[0_0_30px_rgba(255,127,80,0.15)]"
+                      : "bg-card border border-border rounded-xl p-6 animate-fade-up"
+                  }
+                  style={{ animationDelay: `${i * 0.05}s` }}
+                >
                   <h4 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
