@@ -1,11 +1,12 @@
+import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import { baseContactCTA } from "@/config/contactCTA";
 
 interface PersonCTAProps {
-  title: string;
-  description: string;
+  title: ReactNode;
+  description: ReactNode;
   buttonText?: string;
   buttonHref?: string;
   /** Show animated gradient ring around photo */

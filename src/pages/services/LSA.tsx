@@ -452,7 +452,7 @@ const LSA = () => {
             Your Competitors Are Already Running Google Local Service Ads.{" "}
             <span className="text-transparent bg-clip-text bg-gradient-primary">Are You?</span>
           </>
-        as unknown as string}
+        }
         description="Right now, in your service area, your competitors are capturing leads through Google Local Service Ads that you are not even competing for. GrowSmallBiz manages your complete LSA presence — verification, profile optimization, budget management, lead review, dispute filing, and performance reporting — so you capture your share of that demand starting now."
         buttonHref={strategyUrl}
         buttonText="Schedule Strategy Call"
