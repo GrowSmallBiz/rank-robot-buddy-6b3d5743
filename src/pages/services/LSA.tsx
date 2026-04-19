@@ -530,6 +530,7 @@ const LSA = () => {
         faqs={faqs}
         title="Frequently Asked Questions About Google Local Service Ads"
         subtitle="Common questions about LSA management"
+        schemaId="https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/#faqpage"
         contactCTA={{
           ...baseContactCTA,
           title: "Have more questions about Local Service Ads?",
