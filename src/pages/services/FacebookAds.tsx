@@ -267,7 +267,7 @@ const FacebookAds = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto rounded-2xl border-2 border-primary/60 bg-card/50 backdrop-blur-sm p-6 md:p-10 shadow-[0_0_30px_rgba(255,127,80,0.15)] animate-fade-up">
             <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6 text-center">
-              Fixing the leaky bucket: where most of your future customers actually live
+              <span className="text-transparent bg-clip-text bg-gradient-primary">Fixing the leaky bucket:</span> where most of your future customers actually live
             </h3>
             <div className="my-8 flex justify-center">
               <img
