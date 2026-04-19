@@ -135,7 +135,7 @@ const FacebookAds = () => {
       <Header />
 
       {/* Breadcrumbs — 4-level parity with /services/paid-advertising/ */}
-      <nav aria-label="Breadcrumb" className="container mx-auto px-4 pt-6">
+      <nav aria-label="Breadcrumb" className="container mx-auto px-4 pt-28">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -164,7 +164,7 @@ const FacebookAds = () => {
       </nav>
 
       {/* HERO */}
-      <section className="relative pt-32 pb-24 overflow-hidden">
+      <section className="relative pt-8 pb-24 overflow-hidden">
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
