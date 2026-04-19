@@ -534,7 +534,7 @@ const FacebookAds = () => {
       </section>
 
       {/* CASE STUDIES PLACEHOLDER */}
-      <section className="py-24">
+      <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
