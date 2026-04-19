@@ -455,16 +455,21 @@ const LSA = () => {
             />
             <div className="space-y-6">
               {[
-                { title: "We Work Exclusively with Local Service Businesses.", desc: "We don't serve e-commerce brands, SaaS companies, or national retailers. Our entire agency is built around local service businesses. That focus means deep, practical experience in the exact industries and competitive dynamics that determine whether your LSA campaign succeeds or fails." },
-                { title: "Founded by a 30-Year Fortune 500 Executive.", desc: "GrowSmallBiz was founded by Subrata Guha — a digital transformation leader with over 30 years of Fortune 500 experience. You get enterprise-level marketing strategy applied to your local market." },
-                { title: "We Manage the Entire Ecosystem — Not Just One Channel.", desc: "We coordinate your LSA with your Google Search Ads, local SEO, website, reputation management, and AI-powered lead follow-up systems. Every dollar works harder because every channel reinforces the others." },
-                { title: "We Dispute Invalid Leads and Recover Your Budget.", desc: "Every invalid lead gets reviewed and disputed. Every recoverable credit gets claimed. That discipline alone can recover a meaningful percentage of your monthly ad spend." },
-                { title: "We Guarantee Results — In Writing.", desc: "If we commit to a lead generation target and don't hit it within the agreed timeframe, we continue working at no additional management fee until we do." },
-                { title: "You Always Know Exactly What Is Happening.", desc: "Plain-English monthly reports covering leads, cost per lead, dispute outcomes, review growth, and ranking position — plus a direct conversation with your account team. No black boxes." },
+                { icon: Target, title: "We Work Exclusively with Local Service Businesses.", desc: "We don't serve e-commerce brands, SaaS companies, or national retailers. Our entire agency is built around local service businesses. That focus means deep, practical experience in the exact industries and competitive dynamics that determine whether your LSA campaign succeeds or fails." },
+                { icon: Users, title: "Founded by a 30-Year Fortune 500 Executive.", desc: "GrowSmallBiz was founded by Subrata Guha — a digital transformation leader with over 30 years of Fortune 500 experience. You get enterprise-level marketing strategy applied to your local market." },
+                { icon: Settings, title: "We Manage the Entire Ecosystem — Not Just One Channel.", desc: "We coordinate your LSA with your Google Search Ads, local SEO, website, reputation management, and AI-powered lead follow-up systems. Every dollar works harder because every channel reinforces the others." },
+                { icon: FileCheck, title: "We Dispute Invalid Leads and Recover Your Budget.", desc: "Every invalid lead gets reviewed and disputed. Every recoverable credit gets claimed. That discipline alone can recover a meaningful percentage of your monthly ad spend." },
+                { icon: ShieldCheck, title: "We Guarantee Results — In Writing.", desc: "If we commit to a lead generation target and don't hit it within the agreed timeframe, we continue working at no additional management fee until we do." },
+                { icon: BarChart3, title: "You Always Know Exactly What Is Happening.", desc: "Plain-English monthly reports covering leads, cost per lead, dispute outcomes, review growth, and ranking position — plus a direct conversation with your account team. No black boxes." },
               ].map((item, i) => (
-                <div key={i} className="bg-background border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <h4 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                <div key={i} className="bg-background border border-border rounded-xl p-6 animate-fade-up flex gap-4 items-start" style={{ animationDelay: `${i * 0.05}s` }}>
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <item.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
