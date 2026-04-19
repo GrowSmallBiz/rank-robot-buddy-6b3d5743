@@ -59,6 +59,10 @@ const faqs: FAQItem[] = [
     answer: "Yes. Facebook and Instagram advertising are managed through the same Meta Ads Manager platform, and we manage campaigns across both platforms simultaneously. We optimize placement, format, and creative for each platform independently to maximize performance on both.",
   },
   {
+    question: "What's the difference between Meta Ads and Facebook Ads?",
+    answer: "\"Meta Ads\" is the current brand name covering all advertising across Facebook, Instagram, Messenger, and Meta Audience Network. \"Facebook Ads\" is the legacy term. They refer to the same advertising platform — now called Meta Ads Manager.",
+  },
+  {
     question: "Do I need a Facebook Business Page and Meta Business Suite account before we start?",
     answer: "Yes. You'll need an active Facebook Business Page and a Meta Business Manager account. If you don't have these set up, we walk you through the setup process during onboarding. We also configure your Facebook Pixel on your website as part of the initial campaign setup.",
   },
@@ -67,8 +71,20 @@ const faqs: FAQItem[] = [
     answer: "Yes, completely. You'll receive monthly performance reports with all key metrics explained in plain English. You'll always know exactly how your budget is being spent, what your cost per lead is, how many leads were generated, and what we're doing to improve results.",
   },
   {
+    question: "How does Meta Ads compare to Google Ads for lead generation?",
+    answer: "Meta Ads and Google Ads serve different funnel stages. Meta averages $27.66 CPL (WordStream, 2025) at lower intent — it reaches people who aren't yet searching. Google Search Ads average $70.11 CPL at higher intent — it captures people actively looking. Most of our clients run both; the channel mix depends on vertical and stage of business.",
+  },
+  {
+    question: "What ad creative do I need to provide?",
+    answer: "We handle all ad copy, headlines, and CTA development. For creative assets (photos, video), we work with what you have, source stock where appropriate, or develop custom creative briefs for your own production. Med spa and photography verticals typically need original visual assets; most other verticals can start with a mix of existing and stock.",
+  },
+  {
     question: "Can you take over campaigns that another agency or I was already running?",
     answer: "Absolutely. We take over underperforming accounts regularly. We start with a full audit of your existing campaign structure, audience settings, creative performance, and conversion tracking configuration. Then we restructure what's broken and build on what's working. Transitioning management to GrowSmallBiz typically results in improved performance within the first 30 to 60 days.",
+  },
+  {
+    question: "What's your contract structure?",
+    answer: "Month-to-month. No long-term contracts. If we're not delivering, you shouldn't be locked in.",
   },
 ];
 
@@ -533,25 +549,73 @@ const FacebookAds = () => {
         </div>
       </section>
 
-      {/* CASE STUDIES PLACEHOLDER */}
+      {/* CASE STUDY — Single centered card (3-Tier Funnel Methodology) */}
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
-              title="Real Results from"
-              titleHighlight="Facebook Ads Campaigns"
-              description="Case studies coming soon — showcasing measurable results from our Facebook & Instagram Ads management for local service businesses."
+              title="Real Results From Our"
+              titleHighlight="Meta Ads Campaigns"
+              description="A measurable outcome from a Facebook lead generation campaign we managed — structured around a three-tier funnel with active optimization."
             />
-            <div className="grid lg:grid-cols-3 gap-8 mt-12">
-              {["Med Spa", "Dental Practice", "Home Services"].map((name, i) => (
-                <div key={i} className="bg-card border border-border rounded-2xl p-8 text-center animate-fade-up" style={{ animationDelay: `${i * 0.1}s` }}>
-                  <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <TrendingUp className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">{name}</h3>
-                  <p className="text-sm text-muted-foreground">Case study coming soon</p>
+            <div className="max-w-3xl mx-auto mt-12 animate-fade-up">
+              <div className="rounded-2xl overflow-hidden border border-border shadow-[0_0_40px_rgba(255,127,80,0.12)]">
+                {/* Gradient header band */}
+                <div className="bg-gradient-to-r from-primary to-primary/70 p-8">
+                  <p className="text-primary-foreground/80 text-xs font-semibold uppercase tracking-wider mb-2">
+                    Campaign Results — Facebook Lead Generation
+                  </p>
+                  <h3 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground">
+                    3-Tier Funnel Methodology
+                  </h3>
+                  <p className="text-primary-foreground/70 italic text-sm mt-2">22-day campaign window</p>
                 </div>
-              ))}
+
+                {/* Body — dark navy */}
+                <div className="bg-[hsl(210_50%_8%)] p-8 md:p-10 space-y-6">
+                  <div>
+                    <p className="text-[hsl(188_78%_55%)] uppercase text-xs font-bold tracking-wider mb-2">
+                      Challenge
+                    </p>
+                    <p className="text-foreground leading-relaxed">
+                      Client needed high-quality leads at efficient CPL, with disciplined budget allocation across awareness, consideration, and conversion stages.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-[hsl(188_78%_55%)] uppercase text-xs font-bold tracking-wider mb-2">
+                      Strategy
+                    </p>
+                    <p className="text-foreground leading-relaxed">
+                      Three-tiered funnel architecture — TOFU broad-reach awareness, MOFU retargeting of site visitors and ad engagers, BOFU high-intent conversion push. Continuous ad creative testing, dynamic bid and budget adjustments, and audience segmentation across demographics, interests, and behavior.
+                    </p>
+                  </div>
+
+                  {/* Metric grid 2×2 */}
+                  <div className="grid grid-cols-2 gap-4 pt-2">
+                    {[
+                      { value: "$2.67", label: "Final Cost Per Lead" },
+                      { value: "−30%", label: "CPL Reduction" },
+                      { value: "50", label: "Qualified Leads" },
+                      { value: "$191", label: "Total Ad Spend" },
+                    ].map((m, i) => (
+                      <div
+                        key={i}
+                        className="bg-[hsl(210_45%_14%)] border border-[hsl(188_78%_41%_/_0.2)] rounded-lg p-5 text-center"
+                      >
+                        <p className="text-3xl md:text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400">
+                          {m.value}
+                        </p>
+                        <p className="text-xs text-muted-foreground mt-2">{m.label}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-center text-sm italic text-muted-foreground mt-6">
+                Industry benchmark for Meta Leads campaigns in 2025: $27.66 CPL (WordStream by LocaliQ). Our campaign achieved $2.67 — more than 10× below benchmark.
+              </p>
             </div>
           </div>
         </div>
@@ -588,7 +652,7 @@ const FacebookAds = () => {
               <p className="text-sm text-muted-foreground mb-4">No contracts. No pressure. Just strategy.</p>
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Book My Free Strategy Session
+                  Schedule Strategy Session
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
@@ -600,13 +664,14 @@ const FacebookAds = () => {
       {/* FAQ */}
       <FAQSection
         faqs={faqs}
-        title="Frequently Asked Questions About Facebook Ads Management for Local Businesses"
-        subtitle="Common questions about our Facebook & Instagram Ads management"
+        title="FAQs: Your Questions Answered: Facebook & Instagram Ads for Small Businesses"
+        subtitle="Common questions about our Meta Ads management for local service businesses."
         contactCTA={{
           ...baseContactCTA,
-          title: "Have more questions about Facebook Ads?",
-          description: "We're here to help you build a Facebook Ads campaign that drives real leads.",
+          title: "Have more questions about Meta Ads?",
+          description: "We're here to help you build a Meta Ads campaign that drives real leads.",
           tagline: "Let's turn your social ad spend into booked appointments.",
+          buttonText: "Schedule Strategy Session",
         }}
       />
 
@@ -621,13 +686,13 @@ const FacebookAds = () => {
             <p className="text-muted-foreground leading-relaxed">
               The question is whether your business is showing up — and whether the campaigns driving that visibility are built to convert. GrowSmallBiz manages Facebook and Instagram Ads exclusively for local service businesses. We know your customer, we know your market, and we know how to build campaigns that turn ad spend into revenue.
             </p>
-            <p className="text-sm text-muted-foreground">
-              Schedule your free strategy session today. There's no obligation, no contract pitch, and no fluff — just a direct conversation about what your Facebook Ads should be doing for your business and how we'll get you there.
+            <p className="text-muted-foreground leading-relaxed">
+              Schedule your free strategy session today. There's no obligation, no contract pitch, and no fluff — just a direct conversation about what your Meta Ads should be doing for your business and how we'll get you there.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Get My Free Facebook Ads Strategy Session
+                  Schedule Strategy Session
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
