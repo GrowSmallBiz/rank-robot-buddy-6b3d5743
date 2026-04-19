@@ -135,21 +135,66 @@ const LSA = () => {
         </div>
       </section>
 
-      {/* STATS BAR */}
-      <section className="py-16 bg-card">
+      {/* ─── PROMPT 2: MARKET STATS BAND (replaces fabricated stats) ─── */}
+      <section className="py-16" style={{ backgroundColor: "#1B2A4E" }}>
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <SectionHeader
+            title="Google LSA"
+            titleHighlight="by the Numbers"
+            className="mb-4 [&_h2]:text-white"
+          />
+          <p className="text-sm md:text-base text-white/70 text-center max-w-3xl mx-auto mb-12">
+            Benchmarks from The Media Captain, Mediagistic (Google Premier Partner), and Blue Grid Media — specialist LSA agencies managing 100+ client accounts.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
-              { value: "324%", label: "Increase in Consultations for Our Clients" },
-              { value: "$127K", label: "Average Monthly Revenue Growth" },
-              { value: "67", label: "First-Page Keywords Achieved" },
-              { value: "4.9", label: "Average Google Rating Achieved" },
+              {
+                value: "29%",
+                label: "of searchers prefer clicking Google Local Service Ads vs 11% who prefer Google Ads",
+                source: "Source: The Media Captain 2025 (100+ LSA + PPC client accounts)",
+              },
+              {
+                value: "$25–$80",
+                label: "typical LSA cost per qualified lead for home service businesses",
+                source: "Source: Mediagistic (Google Premier Partner) · Blue Grid Media 2026",
+              },
+              {
+                value: "2–5x",
+                label: "variation in LSA cost per lead by service category — roofing vs cleaning vs landscaping",
+                source: "Source: Blue Grid Media 2026 (managed-account data across 100+ clients)",
+              },
             ].map((stat, i) => (
               <div key={i} className="text-center animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                <p className="text-3xl md:text-4xl font-display font-bold text-primary">{stat.value}</p>
-                <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
+                <p className="text-4xl md:text-5xl font-display font-bold text-primary mb-3">{stat.value}</p>
+                <p className="text-sm md:text-base text-white leading-snug mb-3">{stat.label}</p>
+                <p className="text-xs italic text-white/50">{stat.source}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PROMPT 3: AEO CONTEXT CALLOUT — Why LSA Matters Now ─── */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div
+              className="relative rounded-2xl p-8 md:p-10 border-l-4 border-primary"
+              style={{ backgroundColor: "hsl(210 50% 12%)" }}
+            >
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center mb-6">
+                Why LSA{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary">Matters Now</span>
+              </h2>
+              <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                <p>
+                  GrowSmallBiz manages Google Local Service Ads for small service businesses in a search landscape that is fundamentally shifting. AI Overviews now appear in 25% of Google searches, and organic click-through rates drop 58% on queries affected by them (Conductor 2026; Ahrefs 2026). The top of the SERP has never been more valuable.
+                </p>
+                <p>
+                  For local services, only 7.9% of searches currently trigger an AI Overview (Ahrefs, November 2025) — so high-intent local queries still route through traditional results. And at the very top of those results, above every Google Ads placement, Google Local Service Ads claim position zero. As AI pushes organic down and paid visibility becomes more valuable, LSA's position above paid becomes the most valuable real estate on the page.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
