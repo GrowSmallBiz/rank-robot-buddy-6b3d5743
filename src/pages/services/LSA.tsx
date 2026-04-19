@@ -29,6 +29,7 @@ import {
   MessageSquare,
   ClipboardCheck,
   Search,
+  CircleDollarSign,
   Home,
   Stethoscope,
   Wrench,
@@ -217,6 +218,49 @@ const LSA = () => {
                   For local services, only 7.9% of searches currently trigger an AI Overview (Ahrefs, November 2025) — so high-intent local queries still route through traditional results. And at the very top of those results, above every Google Ads placement, Google Local Service Ads claim position zero. As AI pushes organic down and paid visibility becomes more valuable, LSA's position above paid becomes the most valuable real estate on the page.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── LSA BENEFIT STRIP — supporting band between AEO callout and pain points ─── */}
+      <section className="py-12 md:py-14">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <p className="text-center text-sm font-semibold uppercase tracking-[0.15em] text-primary mb-10">
+              What Google Local Service Ads Deliver
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                {
+                  icon: Search,
+                  label: "Stand Out on Google Search",
+                  body: "Show up at the very top of Google and get discovered by more local customers searching for your services.",
+                },
+                {
+                  icon: ShieldCheck,
+                  label: "Build Trust with the Google Verified Badge",
+                  body: "Display the Google Verified Badge on your profile to help new customers choose your business with confidence.",
+                },
+                {
+                  icon: MapPin,
+                  label: "Reach Customers in Your Service Area",
+                  body: "Connect with local customers the moment they search for the services you provide in the communities you serve.",
+                },
+                {
+                  icon: CircleDollarSign,
+                  label: "Pay for Results, Not Clicks",
+                  body: "Pay only when a qualified customer contacts you directly through your ad — no charges for clicks that never convert.",
+                },
+              ].map((item, i) => (
+                <div key={i} className="flex flex-col items-center text-center space-y-3 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <item.icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="text-base font-display font-bold text-foreground">{item.label}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
