@@ -119,7 +119,7 @@ const LSA = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Get Your Free LSA Strategy Call
+                  Schedule Strategy Call
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
@@ -422,7 +422,7 @@ const LSA = () => {
             <div className="text-center">
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Book My Free LSA Strategy Call
+                  Schedule Strategy Call
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
