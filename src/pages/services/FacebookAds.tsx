@@ -107,19 +107,22 @@ const FacebookAds = () => {
                 Not Just Your Feed
               </span>
             </h1>
+            <p className="text-base md:text-lg italic text-muted-foreground/80 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.05s" }}>
+              Facebook & Instagram Ads management for small businesses that need qualified leads, not impressions.
+            </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              Most local businesses waste thousands on Facebook Ads chasing likes and impressions. You need leads. We build, manage, and optimize Meta ad campaigns that turn your ad spend into booked appointments, service calls, and paying customers.
+              Most small businesses waste thousands on Facebook and Instagram Ads chasing likes and impressions. You need leads. We build, manage, and optimize Meta ad campaigns that turn your ad spend into booked appointments, service calls, and paying customers.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.15s" }}>
-              If you've tried running Facebook Ads on your own — or handed them off to an agency that sent you vanity metrics instead of phone calls — you already know the problem. Targeting without strategy, creative without direction, and campaigns running on autopilot with no one watching the results.
+              We don't run 'social media campaigns.' We build precision paid social systems for local service businesses — with audience targeting, scroll-stopping creative, pixel-based conversion tracking, structured retargeting funnels, and weekly active optimization.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              At GrowSmallBiz, we manage Facebook and Instagram Ads the way they were meant to be used: as a precision lead-generation engine for local service businesses. From audience research and ad creative to pixel tracking, retargeting, and monthly reporting, we handle every layer so you can focus on serving the customers we send you.
+              If you've tried running Facebook Ads on your own — or handed them off to an agency that sent you vanity metrics instead of phone calls — you already know the problem. Targeting without strategy, creative without direction, and campaigns running on autopilot with no one watching the results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.25s" }}>
               <Button variant="hero" size="xl" asChild>
                 <a href={strategyUrl} target="_blank" rel="noopener noreferrer">
-                  Get My Free Facebook Ads Strategy Session
+                  Schedule Strategy Session
                   <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
@@ -139,10 +142,10 @@ const FacebookAds = () => {
           <p className="text-sm text-muted-foreground text-center mb-8">Trusted by Local Service Businesses Across the Bay Area and Nationwide</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {[
-              { value: "2x – 4x", label: "Client Growth Reported" },
-              { value: "200%", label: "Increase in Qualified Leads (3 Months)" },
-              { value: "30+", label: "Years Founder's Business & Marketing Experience" },
-              { value: "100%", label: "Done-For-You Campaign Management" },
+              { value: "30+", label: "Years Fortune 500 sales & marketing leadership" },
+              { value: "5", label: "Local service industries served" },
+              { value: "Weekly", label: "Active campaign optimization" },
+              { value: "100%", label: "Done-for-you management" },
             ].map((stat, i) => (
               <div key={i} className="text-center animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
                 <p className="text-3xl md:text-4xl font-display font-bold text-primary">{stat.value}</p>
@@ -159,7 +162,7 @@ const FacebookAds = () => {
           <div className="max-w-4xl mx-auto">
             <SectionHeader
               title="Why Most Facebook Ad Campaigns Fail"
-              titleHighlight="Local Businesses"
+              titleHighlight="Small Businesses"
               description="Facebook and Instagram have over 3 billion combined monthly active users. The audience is there. The targeting tools are there. So why are so many local businesses still burning through budgets with nothing to show for it?"
             />
             <div className="space-y-6 mt-12">
