@@ -1,6 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { Header } from "@/components/layout/Header";
+import lsaHeroImage from "@/assets/lsa-hero-split-screen.jpg";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { FAQSection, FAQItem } from "@/components/sections/FAQSection";
@@ -98,6 +99,17 @@ const LSA = () => {
 
       {/* HERO */}
       <section className="relative pt-32 pb-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={lsaHeroImage}
+            alt="Google Local Service Ads at the top of search delivering verified leads"
+            width={1920}
+            height={1080}
+            fetchPriority="high"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/85" />
+        </div>
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
