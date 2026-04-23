@@ -20,7 +20,7 @@ let match;
 
 while ((match = lazyPathRegex.exec(appFile)) !== null) {
   const route = match[1];
-  if (route && route !== '404') {
+  if (route && route !== '404' && route !== 'h1-check') {
     routes.push('/' + route.replace(/^\//, ''));
   }
 }
