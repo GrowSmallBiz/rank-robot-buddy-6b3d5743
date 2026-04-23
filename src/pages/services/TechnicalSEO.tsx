@@ -267,26 +267,58 @@ const TechnicalSEO = () => {
       <Header />
 
       <main id="main-content">
-        {/* SECTION 1 — HERO (APPROVED REPLACEMENT) */}
-        <ServiceHero
-          badge={{ icon: Wrench, text: "Technical SEO for Local Service Businesses" }}
-          title="Technical SEO That Removes Every Barrier Between You and Page One — 3 Months"
-          subtitle="Traditional SEO often slows down because technical issues sit undetected for weeks or months. GrowSmallBiz uses Agentic AI Playbooks - an integrated framework where several specialized AI agents perform technical SEO tasks continuously - to detect issues faster, prioritize what matters, and accelerate implementation. When technical SEO is handled alongside the other core SEO pillars through a systematic strategy, businesses can often gain traction faster than with a slower, manual process."
-          primaryCTA={{
-            label: "Schedule Strategy Call",
-            href: PRIMARY_CTA_URL,
-            variant: "hero",
-            external: true,
-          }}
-          secondaryCTA={{
-            label: "Get Your Free SEO Audit",
-            href: SECONDARY_CTA_URL,
-            variant: "heroOutline",
-            external: true,
-          }}
-          backgroundImage={techSeoHeroBg}
-          overlayOpacity={82}
-        />
+        {/* SECTION 1 — HERO (INLINE: pure-text H1 for HTMLRewriter test) */}
+        <section className="hero-section">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${techSeoHeroBg})` }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{ backgroundColor: `hsl(var(--background) / 0.82)` }}
+          />
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="service-badge mb-6 animate-fade-up">
+                <Wrench className="w-4 h-4" />
+                <span>Technical SEO for Local Service Businesses</span>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight">Technical SEO That Removes Every Barrier Between You and Page One — 3 Months</h1>
+
+              <p
+                className="text-lg md:text-xl text-foreground/80 mb-4 animate-fade-up max-w-3xl mx-auto leading-relaxed"
+                style={{ animationDelay: "0.1s" }}
+              >
+                Traditional SEO often slows down because technical issues sit undetected for weeks or months. GrowSmallBiz uses Agentic AI Playbooks - an integrated framework where several specialized AI agents perform technical SEO tasks continuously - to detect issues faster, prioritize what matters, and accelerate implementation. When technical SEO is handled alongside the other core SEO pillars through a systematic strategy, businesses can often gain traction faster than with a slower, manual process.
+              </p>
+
+              <div
+                className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-up"
+                style={{ animationDelay: "0.2s" }}
+              >
+                <Button variant="hero" size="lg" asChild>
+                  <a href={PRIMARY_CTA_URL} target="_blank" rel="noopener noreferrer">
+                    Schedule Strategy Call
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </a>
+                </Button>
+                <Button variant="heroOutline" size="lg" asChild>
+                  <a href="tel:+19258863724">
+                    <Phone className="w-5 h-5 mr-2" /> Call +1 (925) 886-3724
+                  </a>
+                </Button>
+              </div>
+
+              <p
+                className="mt-3 text-sm text-primary font-medium animate-fade-up"
+                style={{ animationDelay: "0.25s" }}
+              >
+                No commitment. No pressure. Just a clear path forward for your business.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* SECTION 2 — WHY TECHNICAL SEO MATTERS (ATLAS BRAIN) */}
         <section className="py-24">
