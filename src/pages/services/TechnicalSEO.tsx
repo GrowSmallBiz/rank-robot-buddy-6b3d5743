@@ -284,7 +284,7 @@ const TechnicalSEO = () => {
                 <span>Technical SEO for Local Service Businesses</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight">Technical SEO That Removes Every Barrier Between You and Page One — 3 Months</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up leading-tight text-transparent bg-clip-text bg-gradient-primary">Technical SEO That Removes Every Barrier Between You and Page One — 3 Months</h1>
 
               <p
                 className="text-lg md:text-xl text-foreground/80 mb-4 animate-fade-up max-w-3xl mx-auto leading-relaxed"
@@ -326,10 +326,7 @@ const TechnicalSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE FOUNDATION</p>
-                <h2 className="section-title">
-                  If Your Foundation Is Broken,{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Nothing Else Works</span>
-                </h2>
+                <h2 className="section-title text-transparent bg-clip-text bg-gradient-primary">If Your Foundation Is Broken, Nothing Else Works</h2>
               </div>
 
               <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -361,10 +358,7 @@ const TechnicalSEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">THE SCOPE</p>
-              <h2 className="section-title">
-                A Fully Managed Technical SEO Practice —{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Not a One-Time Fix</span>
-              </h2>
+              <h2 className="section-title text-transparent bg-clip-text bg-gradient-primary">A Fully Managed Technical SEO Practice — Not a One-Time Fix</h2>
               <p className="section-description mt-4">
                 Technical SEO is not a checklist you run through once and forget. It is an ongoing practice that requires initial cleanup, systematic monitoring, and continuous refinement as your site grows and as search engine requirements evolve. Here is what GrowSmallBiz manages on your behalf.
               </p>
@@ -398,10 +392,7 @@ const TechnicalSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE PROBLEMS</p>
-                <h2 className="section-title">
-                  The Problems Most Local Business Websites Are{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Carrying Right Now</span>
-                </h2>
+                <h2 className="section-title text-transparent bg-clip-text bg-gradient-primary">The Problems Most Local Business Websites Are Carrying Right Now</h2>
               </div>
 
               <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -437,10 +428,7 @@ const TechnicalSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE EXECUTION</p>
-                <h2 className="section-title">
-                  How GrowSmallBiz Executes Technical SEO Faster With{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI Playbooks</span>
-                </h2>
+                <h2 className="section-title text-transparent bg-clip-text bg-gradient-primary">How GrowSmallBiz Executes Technical SEO Faster With Agentic AI Playbooks</h2>
                 <p className="text-lg text-foreground font-semibold mt-6">
                   Agentic AI Playbooks. Faster Detection. Smarter Prioritization. Human-Guided Execution.
                 </p>
@@ -512,10 +500,7 @@ const TechnicalSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE PROCESS</p>
-                <h2 className="section-title">
-                  Here Is What Happens{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">When You Work With Us</span>
-                </h2>
+                <h2 className="section-title text-transparent bg-clip-text bg-gradient-primary">Here Is What Happens When You Work With Us</h2>
               </div>
 
               <div className="space-y-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -549,10 +534,7 @@ const TechnicalSEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">WHO IT'S FOR</p>
-              <h2 className="section-title">
-                Built for Local Service Businesses That Are Serious About{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Growth</span>
-              </h2>
+              <h2 className="section-title text-transparent bg-clip-text bg-gradient-primary">Built for Local Service Businesses That Are Serious About Growth</h2>
               <p className="section-description mt-4">
                 Technical SEO delivers its highest return for businesses that are actively competing for local search visibility and where organic rankings translate directly into service inquiries. If you recognize yourself in any of the following, this service was designed for you.
               </p>
@@ -582,10 +564,7 @@ const TechnicalSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OUR DIFFERENCE</p>
-                <h2 className="section-title">
-                  What Makes{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">GrowSmallBiz Different</span>
-                </h2>
+                <h2 className="section-title text-transparent bg-clip-text bg-gradient-primary">What Makes GrowSmallBiz Different</h2>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -635,10 +614,7 @@ const TechnicalSEO = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Your Website Foundation Is Either Working For You or{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Against You</span>
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 leading-tight text-transparent bg-clip-text bg-gradient-primary">Your Website Foundation Is Either Working For You or Against You</h2>
               <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
                 Every day your site runs with unresolved technical SEO issues is another day your competitors have an advantage you are unknowingly giving them. Crawl errors don't fix themselves. Indexation problems don't self-correct. Page speed doesn't improve without intervention.
               </p>
