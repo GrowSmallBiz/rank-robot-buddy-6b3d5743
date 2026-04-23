@@ -279,12 +279,12 @@ const TechnicalSEO = () => {
           />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="service-badge mb-6 animate-fade-up">
+              <div className="service-badge mb-6 animate-fade-up" style={{ backgroundColor: 'hsl(188 78% 41% / 0.12)', color: 'hsl(188 78% 55%)' }}>
                 <Wrench className="w-4 h-4" />
                 <span>Technical SEO for Local Service Businesses</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up leading-tight text-transparent bg-clip-text bg-gradient-primary">Technical SEO That Removes Every Barrier Between You and Page One — 3 Months</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up leading-tight text-transparent bg-clip-text bg-gradient-heading">Technical SEO That Removes Every Barrier Between You and Page One — 3 Months</h1>
 
               <p
                 className="text-lg md:text-xl text-foreground/80 mb-4 animate-fade-up max-w-3xl mx-auto leading-relaxed"
