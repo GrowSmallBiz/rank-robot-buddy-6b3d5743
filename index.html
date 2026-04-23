@@ -26,6 +26,34 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="GrowSmallBiz Digital Marketing" />
 
+    <!-- Host-aware noindex: prevent staging/preview *.lovable.app mirrors from being indexed -->
+    <script>
+      (function () {
+        try {
+          var host = window.location.hostname;
+          // Block indexing on any non-production host (lovable.app previews, published staging, localhost)
+          var isProduction = host === 'growsmallbiz.io' || host === 'www.growsmallbiz.io';
+          if (!isProduction) {
+            // Force-replace the default robots meta with noindex,nofollow
+            var existing = document.querySelector('meta[name="robots"]');
+            if (existing) existing.parentNode.removeChild(existing);
+            var m = document.createElement('meta');
+            m.name = 'robots';
+            m.content = 'noindex, nofollow';
+            document.head.appendChild(m);
+
+            // Point canonical at the production equivalent so any link equity consolidates there
+            var canonical = document.querySelector('link[rel="canonical"]');
+            if (canonical) canonical.parentNode.removeChild(canonical);
+            var link = document.createElement('link');
+            link.rel = 'canonical';
+            link.href = 'https://growsmallbiz.io' + window.location.pathname + window.location.search;
+            document.head.appendChild(link);
+          }
+        } catch (e) { /* no-op */ }
+      })();
+    </script>
+
     
     
     <meta property="og:type" content="website" />
