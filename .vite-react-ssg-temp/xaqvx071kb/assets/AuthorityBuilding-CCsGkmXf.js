@@ -1,0 +1,470 @@
+import { jsxs, jsx, Fragment } from "react/jsx-runtime";
+import { Head } from "vite-react-ssg";
+import { u as useUtm } from "./use-utm-CiJKCMCk.js";
+import { S as ServiceJsonLd } from "./ServiceJsonLd-62JZkfim.js";
+import { H as Header, B as Button } from "./Header-Dct2bBAe.js";
+import { F as Footer } from "./Footer-5rMz2U4O.js";
+import { S as ServiceHero } from "./ServiceHero-Z03OcfAP.js";
+import { S as SectionHeader } from "./SectionHeader-m0RetmVk.js";
+import { FAQSection } from "./FAQSection-Knk-AyWr.js";
+import { ConsultationFormSection } from "./ConsultationFormSection-DDNhkaf7.js";
+import { Shield, CheckCircle2, BrainCircuit, Map, BookOpen, Network, Zap, Layers, Newspaper, Globe, LinkIcon, FileText, Target, Bot, Users } from "lucide-react";
+import { Link } from "react-router-dom";
+import { b as baseContactCTA } from "./contactCTA-DlNQ95Kc.js";
+import { C as CardCTA } from "./CardCTA-lztA_Zrf.js";
+import "react";
+import { G as GlowCard } from "./glow-card-DLstjNul.js";
+import "@radix-ui/react-slot";
+import "class-variance-authority";
+import "../main.mjs";
+import "react-helmet-async";
+import "@radix-ui/react-tooltip";
+import "clsx";
+import "tailwind-merge";
+import "./accordion-b6vWRJCV.js";
+import "@radix-ui/react-accordion";
+const authorityHeroBg = "/assets/authority-building-hero-bg-8a1icOU8.webp";
+const PRIMARY_CTA_BASE = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
+const SECONDARY_CTA_BASE = "https://lp.growsmallbiz.io/growsmallbiz-seo-optimization-page";
+const authorityServices = [
+  {
+    icon: BrainCircuit,
+    title: "DKN-Driven Authority Planning",
+    description: "Map the full universe of topics, subtopics, entities, and questions that define your category before any content or off-site work begins."
+  },
+  {
+    icon: Map,
+    title: "Topical Maps and Topic Clustering",
+    description: "Organize core topics, supporting topics, and subtopics into a coherent framework that guides content creation and reveals authority-building opportunities."
+  },
+  {
+    icon: BookOpen,
+    title: "Topical Authority Blog Strategy",
+    description: "A strategic content program designed to expand coverage, reinforce entity associations, support core pages, and demonstrate genuine expertise at scale."
+  },
+  {
+    icon: Layers,
+    title: "Authority-Supporting Content Ecosystems",
+    description: "Build interconnected content assets that reinforce each other and create a cohesive knowledge architecture search engines and AI systems can trust."
+  },
+  {
+    icon: Newspaper,
+    title: "Press Release Strategy and Distribution",
+    description: "Premium national press release distribution and selective local and regional targeting to strengthen brand presence and digital authority signals."
+  },
+  {
+    icon: Globe,
+    title: "Brand Mentions and Digital Authority Signals",
+    description: "Strengthen your brand's credibility and entity clarity across the web through strategic mentions, associations, and trust-building references."
+  },
+  {
+    icon: LinkIcon,
+    title: "Authority Link Opportunities",
+    description: "Selective, legitimate link opportunities through press coverage, expert placements, partner mentions, and editorial citations that reinforce authority."
+  }
+];
+const whyGSBItems = [
+  {
+    icon: Layers,
+    title: "We build systems, not disconnected campaigns.",
+    description: "Many authority services are sold as batches of links, press releases, or content. GrowSmallBiz builds a structured authority system designed to strengthen rankings, trust, and long-term visibility over time."
+  },
+  {
+    icon: FileText,
+    title: "We start with planning, not random execution.",
+    description: "The most common failure in authority building is doing tactics without a strategic foundation. We build the planning layer first so content, mentions, press activity, and authority signals work together instead of creating scattered results."
+  },
+  {
+    icon: Target,
+    title: "We understand local business economics.",
+    description: "GrowSmallBiz is built for local service businesses, not enterprise marketing departments. That affects how we prioritize, how we execute, and how we build strategies that support real business growth."
+  },
+  {
+    icon: Bot,
+    title: "We combine agentic AI efficiency with human judgment.",
+    description: "We use AI to accelerate research, mapping, prioritization, and scale. We use human judgment to protect quality, strategy, credibility, and business alignment."
+  },
+  {
+    icon: Users,
+    title: "We are managed and done-for-you.",
+    description: "You do not need to coordinate vendors, manage an SEO content machine, or learn authority strategy yourself. GrowSmallBiz manages the process for you as part of the broader Managed AI SEO system."
+  },
+  {
+    icon: Shield,
+    title: "We keep the work transparent.",
+    description: "You should always understand what is being done, why it matters, and how it supports the bigger search strategy."
+  }
+];
+const faqs = [
+  {
+    question: "What is the difference between Authority Building and link building?",
+    answer: "Link building is one tactic within a broader authority strategy. Authority Building, as GrowSmallBiz defines it, is the full coordinated system — topical coverage, entity clarity, brand presence, press releases, digital PR, brand mentions, and selective link acquisition — that collectively signals expertise and trust to search engines. Focusing only on links while ignoring the other dimensions of authority is one of the most common mistakes in local SEO."
+  },
+  {
+    question: "How long does it take to see results from Authority Building?",
+    answer: "Authority Building timelines depend on your starting authority, competition, topic depth, existing content ecosystem, and how much supporting trust infrastructure is already in place. Many businesses begin seeing meaningful progress within the first few months, with stronger gains building over time as authority signals, topical coverage, and brand reinforcement compound."
+  },
+  {
+    question: "Do I need a certain size website or business to benefit from Authority Building?",
+    answer: "No. In fact, businesses with smaller or thinner digital footprints often see the most dramatic improvements, because they are starting from a lower baseline and the incremental impact of each new signal is higher. Our DKN planning process adapts to your current situation and builds a strategy appropriate to where you are starting from."
+  },
+  {
+    question: "Does Authority Building replace on-page SEO or Local SEO?",
+    answer: "No. Authority Building is one pillar of the broader Managed AI SEO system, and it works best in combination with strong on-page optimization and Local SEO. On-page SEO makes your pages relevant. Local SEO makes your presence visible in local results. Authority Building makes your brand credible and trustworthy across the broader search environment. Each pillar supports the others."
+  },
+  {
+    question: "What kinds of press release placements does GrowSmallBiz pursue?",
+    answer: "We distribute through premium national press release channels that place your news on high-authority media properties with genuine editorial credibility. For businesses where local visibility is particularly important, we also pursue placement through relevant local and regional channels. Specific outlets are selected based on your industry, geography, and strategic goals."
+  },
+  {
+    question: "Are the links generated through Authority Building safe and sustainable?",
+    answer: "Yes. Every link we pursue is earned through legitimate methods — press coverage, expert placements, partner and association mentions, and editorial citations. We do not buy links, participate in link schemes, or use tactics that violate search engine guidelines. Our approach is designed to build sustainable authority that holds its value over time."
+  },
+  {
+    question: "How does the topical authority blog strategy work?",
+    answer: "Our topical authority blog strategy is not a generic content calendar. It is a structured execution of the topical map we build for your business. Every article is selected because it fills a specific gap in your topical coverage, supports a specific cluster in your authority architecture, or addresses a specific question your target audience is asking. Each piece is planned, written, reviewed, and published as part of a coherent strategy — not as isolated blog posts."
+  },
+  {
+    question: "What is a DKN and why does it matter for Authority Building?",
+    answer: "DKN stands for Domain Knowledge Network — our framework for mapping the full universe of topics, subtopics, entities, questions, and associations relevant to your business and market. Without understanding that full topic territory, it is impossible to know what content to create, what off-site associations to pursue, or where the most impactful authority gaps are. The DKN ensures our strategy is comprehensive and purposeful from day one."
+  },
+  {
+    question: "Can Authority Building help with AI-generated search results and answer engines?",
+    answer: "Yes. AI-powered search systems draw from sources that have demonstrated genuine expertise, consistent brand presence, and broad topic coverage. The same signals that build authority with traditional search engines — topical depth, entity clarity, trusted brand mentions, press references — also improve your visibility with AI-generated search experiences. As AI plays a larger role in how prospective customers find and evaluate local businesses, Authority Building becomes more important, not less."
+  },
+  {
+    question: 'What does "done-for-you" mean in practice?',
+    answer: "It means GrowSmallBiz handles every aspect of the authority-building process — from strategic planning and DKN development through topical mapping, content creation, press release writing and distribution, digital PR outreach, and off-site placement management. You are kept informed through regular reporting, but you do not need to manage the process, coordinate vendors, or make tactical decisions. We handle the execution so you can focus on running your business."
+  }
+];
+const AuthorityBuilding = () => {
+  const { buildUrl } = useUtm();
+  const PRIMARY_CTA_URL = buildUrl(PRIMARY_CTA_BASE, "strategy-session");
+  const SECONDARY_CTA_URL = buildUrl(SECONDARY_CTA_BASE, "free-seo-audit");
+  return /* @__PURE__ */ jsxs("div", { className: "min-h-screen bg-background", children: [
+    /* @__PURE__ */ jsxs(Head, { children: [
+      /* @__PURE__ */ jsx("title", { children: "Authority Building for Local Service Businesses | GrowSmallBiz" }),
+      /* @__PURE__ */ jsx("meta", { name: "description", content: "GrowSmallBiz builds search authority for local service businesses through DKN planning, topical maps, authority blogs, press releases, brand mentions, and digital trust signals." }),
+      /* @__PURE__ */ jsx("link", { rel: "canonical", href: "https://growsmallbiz.io/services/seo-agency/authority-building/" })
+    ] }),
+    /* @__PURE__ */ jsx(
+      ServiceJsonLd,
+      {
+        serviceName: "Authority Building for Local Service Businesses",
+        serviceType: "Authority Building SEO",
+        description: "Systematic authority building for local service businesses through DKN-driven planning, topical maps, authority blogs, press releases, brand mentions, and digital trust signals.",
+        url: "/services/seo-agency/authority-building/",
+        breadcrumbs: [
+          { name: "Services", url: "/services/" },
+          { name: "Managed AI SEO", url: "/services/seo-agency/" },
+          { name: "Authority Building", url: "/services/seo-agency/authority-building/" }
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsx(Header, {}),
+    /* @__PURE__ */ jsxs("main", { id: "main-content", children: [
+      /* @__PURE__ */ jsx(
+        ServiceHero,
+        {
+          badge: { icon: Shield, text: "Authority Building for Local Service Businesses" },
+          title: /* @__PURE__ */ jsxs(Fragment, { children: [
+            "Build the Authority That Turns Search Visibility Into",
+            " ",
+            /* @__PURE__ */ jsx("br", { className: "hidden md:inline" })
+          ] }),
+          titleHighlight: "Market Trust",
+          subtitle: '<h2 class="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">Most local service businesses do not have a keyword problem. They have an authority problem.</h2>Your competitors are <strong>NOT</strong> always better — they are simply seen as more established, more credible, and more trustworthy by search engines, AI systems, and prospective customers.<br/><br/>As one strategic pillar of our Managed AI SEO system, Authority Building helps position your business as the trusted local expert across search results, the broader web, and the minds of prospective customers.<br/><br/>This is not about buying links or gaming algorithms. It is about building a credible presence that signals expertise, earns trust, and compounds over time.',
+          primaryCTA: {
+            label: "Schedule Strategy Call",
+            href: PRIMARY_CTA_URL,
+            variant: "hero",
+            external: true
+          },
+          secondaryCTA: {
+            label: "Free SEO Audit",
+            href: SECONDARY_CTA_URL,
+            variant: "heroOutline",
+            external: true
+          },
+          backgroundImage: authorityHeroBg,
+          overlayOpacity: 60
+        }
+      ),
+      /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto", children: [
+        /* @__PURE__ */ jsxs("div", { className: "text-center mb-16 animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { className: "section-subtitle", children: "THE FUNDAMENTALS" }),
+          /* @__PURE__ */ jsxs("h2", { className: "section-title", children: [
+            "What Authority Building Means in",
+            " ",
+            /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary italic", children: "Modern SEO" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { children: "Authority in SEO is no longer measured by backlinks alone. While links still matter, modern search authority is built through multiple interconnected signals — and that makes it far more achievable for local service businesses that approach it strategically." }),
+          /* @__PURE__ */ jsx("p", { className: "text-foreground font-semibold", children: "Search systems evaluate authority through:" }),
+          /* @__PURE__ */ jsx("div", { className: "space-y-4", children: [
+            { label: "Topical depth", text: "Does your website demonstrate genuine expertise across the services, problems, and questions your audience cares about?" },
+            { label: "Entity clarity", text: "Is it clear who you are, what you do, where you operate, and how your business connects to your market?" },
+            { label: "Content breadth", text: "Do you cover your topic space with enough depth and range to be viewed as a reliable resource?" },
+            { label: "Brand presence", text: "Do reputable sources across the web mention, reference, or connect with your business?" },
+            { label: "Trust signals", text: "Are there consistent, credible references to your business across media, associations, press, and community platforms?" },
+            { label: "Semantic relevance", text: "Does your overall digital presence send cohesive signals about your expertise, services, locations, and market relevance?" }
+          ].map((item, i) => /* @__PURE__ */ jsxs("div", { className: "flex items-start gap-3", children: [
+            /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-primary mt-0.5 shrink-0" }),
+            /* @__PURE__ */ jsxs("p", { children: [
+              /* @__PURE__ */ jsx("strong", { className: "text-foreground", children: item.label }),
+              " — ",
+              item.text
+            ] })
+          ] }, i)) }),
+          /* @__PURE__ */ jsx("p", { children: "Authority building is not a single tactic. It is a coordinated system that strengthens how your business is understood, trusted, and surfaced across modern search environments. That coordinated system is what GrowSmallBiz builds as part of your broader Managed AI SEO strategy." }),
+          /* @__PURE__ */ jsx("p", { children: "For a local roofing contractor, HVAC company, plumbing business, med spa, personal injury attorney, or real estate team, authority building is not a single tactic. It is a coordinated system that helps your business cover its topic space more deeply, reinforce brand credibility beyond your website, and build the trust signals that influence both visibility and conversion in competitive local markets." })
+        ] })
+      ] }) }) }),
+      /* @__PURE__ */ jsx("section", { className: "py-24 bg-card", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto", children: [
+        /* @__PURE__ */ jsxs("div", { className: "text-center mb-16 animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { className: "section-subtitle", children: "THE STAKES" }),
+          /* @__PURE__ */ jsxs("h2", { className: "section-title", children: [
+            "Why Authority Matters for",
+            " ",
+            /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary italic", children: "Rankings, Trust, and Conversion" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { children: "Local service businesses operate in one of the most competitive search environments that exists. You are not just competing against nearby providers. You are also competing against directories, marketplaces, aggregators, and established brands that already have stronger trust signals across the web." }),
+          /* @__PURE__ */ jsx("p", { children: "In that environment, the businesses that win are not always the ones with the most optimized pages. They are the ones search systems have more reason to trust." }),
+          /* @__PURE__ */ jsx("p", { className: "text-foreground font-display font-bold text-xl mt-8", children: "Rankings are only part of the story." }),
+          /* @__PURE__ */ jsx("p", { children: "High authority improves every downstream metric that matters to your business." }),
+          /* @__PURE__ */ jsxs("div", { className: "space-y-6 mt-4", children: [
+            /* @__PURE__ */ jsxs("div", { className: "rounded-2xl p-6 border-l-4 border-primary", style: { backgroundColor: "hsl(210 40% 16%)" }, children: [
+              /* @__PURE__ */ jsx("p", { className: "text-foreground font-semibold mb-2", children: "Conversion rates improve" }),
+              /* @__PURE__ */ jsx("p", { children: "because prospective customers who encounter your brand through trusted sources, stronger content coverage, and credible third-party references often arrive with greater confidence before they ever contact you." })
+            ] }),
+            /* @__PURE__ */ jsxs("div", { className: "rounded-2xl p-6 border-l-4 border-primary", style: { backgroundColor: "hsl(210 40% 16%)" }, children: [
+              /* @__PURE__ */ jsx("p", { className: "text-foreground font-semibold mb-2", children: "AI visibility improves" }),
+              /* @__PURE__ */ jsx("p", { children: "because AI-assisted discovery and answer-generation systems tend to favor businesses with broader, more consistent, and more credible authority signals — not just a single well-optimized page. The stronger your authority footprint, the easier it becomes for your business to be understood, cited, and surfaced across newer search experiences as well as traditional search." })
+            ] }),
+            /* @__PURE__ */ jsxs("div", { className: "rounded-2xl p-6 border-l-4 border-primary", style: { backgroundColor: "hsl(210 40% 16%)" }, children: [
+              /* @__PURE__ */ jsx("p", { className: "text-foreground font-semibold mb-2", children: "Long-term stability improves" }),
+              /* @__PURE__ */ jsx("p", { children: "because authority creates staying power. It is harder to displace a business with real topical depth, brand presence, and off-site trust than one relying on thin on-page optimization alone." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "rounded-2xl p-6 space-y-4 border-l-4 border-primary mt-4", style: { backgroundColor: "hsl(210 40% 16%)" }, children: [
+            /* @__PURE__ */ jsx("p", { className: "text-foreground font-semibold", children: "The opportunity most local businesses are missing" }),
+            /* @__PURE__ */ jsx("p", { children: "is that many still have only a shallow authority footprint: a website, a few citations, and some basic SEO. The deeper structure of topical coverage, brand reinforcement, and off-site trust is often missing. That is not just a weakness. It is a competitive opportunity for businesses willing to build authority systematically." }),
+            /* @__PURE__ */ jsx("p", { className: "text-foreground font-medium", children: "GrowSmallBiz exists to close that gap efficiently, intelligently, and sustainably." })
+          ] })
+        ] })
+      ] }) }) }),
+      /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsxs("div", { className: "container mx-auto px-4", children: [
+        /* @__PURE__ */ jsxs("div", { className: "text-center mb-16 animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { className: "section-subtitle", children: "OUR AUTHORITY METHODOLOGY" }),
+          /* @__PURE__ */ jsxs("h2", { className: "section-title", children: [
+            "What GrowSmallBiz Includes Under",
+            " ",
+            /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary italic", children: "Authority Building" })
+          ] }),
+          /* @__PURE__ */ jsx("p", { className: "section-description mt-4", children: "Authority Building at GrowSmallBiz is a multi-layer service, not a single deliverable. It addresses every major dimension of search authority for local service businesses." })
+        ] }),
+        /* @__PURE__ */ jsx("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto", children: authorityServices.map((service, index) => /* @__PURE__ */ jsxs(
+          GlowCard,
+          {
+            className: "p-6 animate-fade-up",
+            style: { animationDelay: `${index * 0.05}s` },
+            children: [
+              /* @__PURE__ */ jsx("div", { className: "w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4", children: /* @__PURE__ */ jsx(service.icon, { className: "w-5 h-5 text-primary" }) }),
+              /* @__PURE__ */ jsx("h3", { className: "text-base font-semibold text-foreground mb-2", children: service.title }),
+              /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: service.description })
+            ]
+          },
+          index
+        )) })
+      ] }) }),
+      /* @__PURE__ */ jsx("section", { className: "py-24 bg-card", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto", children: [
+        /* @__PURE__ */ jsxs("div", { className: "text-center mb-16 animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { className: "section-subtitle", children: "THE FOUNDATION" }),
+          /* @__PURE__ */ jsxs("h2", { className: "section-title", children: [
+            "How DKN, Topical Maps, and Topical Authority Blogs Support",
+            " ",
+            /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary italic", children: "Authority Growth" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "space-y-0 max-w-3xl mx-auto", children: [
+          /* @__PURE__ */ jsxs("div", { className: "animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50", children: [
+            /* @__PURE__ */ jsxs("h3", { className: "text-xl md:text-2xl font-display font-bold text-foreground mb-4 flex items-start gap-3", children: [
+              /* @__PURE__ */ jsx(BrainCircuit, { className: "w-6 h-6 text-primary mt-1 shrink-0" }),
+              "DKN-Driven Authority Planning"
+            ] }),
+            /* @__PURE__ */ jsx("div", { className: "space-y-4 text-muted-foreground leading-relaxed pl-9", children: /* @__PURE__ */ jsx("p", { children: "Every authority strategy begins with GrowSmallBiz's Domain Knowledge Network (DKN) planning process. Before content is created or off-site placements are pursued, we map the full territory of topics, subtopics, entities, and questions that define your category and market. This creates the structural foundation for every authority-building action that follows." }) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "border-b border-primary/10 mx-8" }),
+          /* @__PURE__ */ jsxs("div", { className: "animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50", style: { animationDelay: "0.1s" }, children: [
+            /* @__PURE__ */ jsxs("h3", { className: "text-xl md:text-2xl font-display font-bold text-foreground mb-4 flex items-start gap-3", children: [
+              /* @__PURE__ */ jsx(Map, { className: "w-6 h-6 text-primary mt-1 shrink-0" }),
+              "Topical Maps and Topic Clustering"
+            ] }),
+            /* @__PURE__ */ jsx("div", { className: "space-y-4 text-muted-foreground leading-relaxed pl-9", children: /* @__PURE__ */ jsx("p", { children: "Once the topic territory is mapped, GrowSmallBiz builds a topical map that organizes core topics, supporting topics, and related subtopics into a coherent framework. This helps guide content creation and reveals the clusters where meaningful authority can be built." }) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "border-b border-primary/10 mx-8" }),
+          /* @__PURE__ */ jsxs("div", { className: "animate-fade-up rounded-2xl p-8 bg-background/60 border border-border/50", style: { animationDelay: "0.2s" }, children: [
+            /* @__PURE__ */ jsxs("h3", { className: "text-xl md:text-2xl font-display font-bold text-foreground mb-4 flex items-start gap-3", children: [
+              /* @__PURE__ */ jsx(BookOpen, { className: "w-6 h-6 text-primary mt-1 shrink-0" }),
+              "Topical Authority Blog Strategy"
+            ] }),
+            /* @__PURE__ */ jsx("div", { className: "space-y-4 text-muted-foreground leading-relaxed pl-9", children: /* @__PURE__ */ jsx("p", { children: "A topical authority blog is not a generic publishing calendar. It is a strategic content program designed to expand coverage, reinforce entity associations, support core pages through internal linking, and demonstrate genuine expertise at scale. Every article serves a purpose inside the broader authority architecture." }) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "border-b border-primary/10 mx-8" }),
+          /* @__PURE__ */ jsx("div", { className: "animate-fade-up p-8", style: { animationDelay: "0.3s" }, children: /* @__PURE__ */ jsxs("div", { className: "rounded-2xl p-6 space-y-4 border-l-4 border-primary", style: { backgroundColor: "hsl(210 40% 16%)" }, children: [
+            /* @__PURE__ */ jsxs("h3", { className: "text-xl font-display font-bold text-foreground flex items-start gap-3", children: [
+              /* @__PURE__ */ jsx(Network, { className: "w-6 h-6 text-primary mt-0.5 shrink-0" }),
+              "Authority Is Architectural"
+            ] }),
+            /* @__PURE__ */ jsx("p", { className: "text-muted-foreground leading-relaxed", children: "These three pillars — DKN planning, topical mapping, and authority blogging — form the structural foundation of every authority strategy. Without this architecture, off-site efforts like press releases and brand mentions lack the on-site depth to be fully effective." })
+          ] }) })
+        ] })
+      ] }) }) }),
+      /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto", children: [
+        /* @__PURE__ */ jsxs("div", { className: "text-center mb-16 animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { className: "section-subtitle", children: "OFF-SITE REINFORCEMENT" }),
+          /* @__PURE__ */ jsxs("h2", { className: "section-title", children: [
+            "How Press Releases, Brand Mentions, and Digital Authority Signals",
+            " ",
+            /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary italic", children: "Reinforce Authority" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { children: "Authority is strengthened when your business is referenced, mentioned, and associated with credible sources beyond your own website." }),
+          /* @__PURE__ */ jsx("p", { children: "GrowSmallBiz manages:" })
+        ] }),
+        /* @__PURE__ */ jsx("div", { className: "mt-8 max-w-3xl mx-auto", children: /* @__PURE__ */ jsx("ul", { className: "space-y-4 animate-fade-up", style: { animationDelay: "0.1s" }, children: [
+          "Press release strategy and distribution through premium national channels",
+          "Selective local and regional press targeting where relevant",
+          "Expert commentary opportunities",
+          "Editorial mentions",
+          "Community and association references",
+          "Broader digital authority signals that reinforce your brand's credibility and entity clarity across the web"
+        ].map((point, i) => /* @__PURE__ */ jsxs("li", { className: "flex items-start gap-3", children: [
+          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-primary mt-0.5 shrink-0" }),
+          /* @__PURE__ */ jsx("span", { className: "text-foreground/90", children: point })
+        ] }, i)) }) }),
+        /* @__PURE__ */ jsx("div", { className: "mt-10 max-w-3xl mx-auto animate-fade-up", style: { animationDelay: "0.15s" }, children: /* @__PURE__ */ jsx("div", { className: "rounded-2xl p-6 space-y-4 border-l-4 border-primary", style: { backgroundColor: "hsl(210 40% 16%)" }, children: /* @__PURE__ */ jsx("p", { className: "text-muted-foreground leading-relaxed", children: "These off-site signals work best when supported by the on-site authority architecture described above. Together, they create a comprehensive trust profile that search engines and AI systems recognize and reward." }) }) })
+      ] }) }) }),
+      /* @__PURE__ */ jsx("section", { className: "py-24 bg-card", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto", children: [
+        /* @__PURE__ */ jsxs("div", { className: "text-center mb-16 animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { className: "section-subtitle", children: "OUR APPROACH" }),
+          /* @__PURE__ */ jsxs("h2", { className: "section-title", children: [
+            "How GrowSmallBiz Uses",
+            " ",
+            /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary italic", children: "Agentic AI SEO Playbooks" }),
+            " ",
+            "to Accelerate Authority Building"
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { children: "Building real authority at the scale required to move the needle in competitive local markets has historically been slow, fragmented, and resource-intensive. Many providers either charge rates that are difficult for local businesses to justify or cut corners in ways that produce shallow, inconsistent results." }),
+          /* @__PURE__ */ jsx("p", { children: "GrowSmallBiz solves this by using agentic AI playbooks and AI-assisted workflows — combined with human strategy, editorial judgment, and quality control at every stage." }),
+          /* @__PURE__ */ jsx("p", { className: "text-foreground font-semibold", children: "Here is what that means in practice:" }),
+          /* @__PURE__ */ jsx("div", { className: "space-y-4", children: [
+            { label: "Identify topic gaps faster", text: "Our AI-assisted planning systems help map your topic territory more comprehensively and efficiently than manual research alone, surfacing authority gaps that might otherwise take weeks to uncover." },
+            { label: "Build smarter topical maps", text: "AI workflows help us organize and refine topical structures that better support how modern search systems evaluate depth, relevance, and coverage." },
+            { label: "Plan authority-supporting content more efficiently", text: "We can align supporting content, authority assets, and topical priorities faster without sacrificing strategy or editorial standards." },
+            { label: "Surface entity and reputation gaps", text: "By analyzing competitive positioning and off-site presence at scale, AI-assisted workflows help identify brand, entity, and credibility gaps that manual review can miss." },
+            { label: "Accelerate authority-asset planning", text: "Press release angles, digital PR opportunities, mention opportunities, and supporting authority assets can be prioritized faster, helping the program move with greater consistency." },
+            { label: "Maintain broader monthly coverage", text: "AI-assisted management helps keep content, press, mentions, and link opportunities aligned so the authority strategy stays coherent as it grows." }
+          ].map((item, i) => /* @__PURE__ */ jsxs("div", { className: "flex items-start gap-3 rounded-xl p-4 bg-background/60 border border-border/50", children: [
+            /* @__PURE__ */ jsx(Zap, { className: "w-5 h-5 text-primary mt-0.5 shrink-0" }),
+            /* @__PURE__ */ jsxs("p", { children: [
+              /* @__PURE__ */ jsx("strong", { className: "text-foreground", children: item.label }),
+              " — ",
+              item.text
+            ] })
+          ] }, i)) }),
+          /* @__PURE__ */ jsx("p", { children: "The result is an authority-building program that delivers more coverage, more consistency, and more strategic depth than a traditionally resourced program of similar cost — without sacrificing the human judgment and editorial quality that genuine authority requires." })
+        ] })
+      ] }) }) }),
+      /* @__PURE__ */ jsx(
+        CardCTA,
+        {
+          title: "Ready to Build Real Search Authority?",
+          description: "Schedule a strategy session to learn how Authority Building fits into your growth plan.",
+          buttonText: "Schedule Strategy Call",
+          buttonHref: PRIMARY_CTA_URL,
+          sectionClassName: "py-16"
+        }
+      ),
+      /* @__PURE__ */ jsx("section", { className: "py-24 bg-card", children: /* @__PURE__ */ jsxs("div", { className: "container mx-auto px-4", children: [
+        /* @__PURE__ */ jsx(
+          SectionHeader,
+          {
+            subtitle: "OUR DIFFERENCE",
+            title: "Why",
+            titleHighlight: "GrowSmallBiz"
+          }
+        ),
+        /* @__PURE__ */ jsx("div", { className: "max-w-3xl mx-auto mb-12 animate-fade-up", children: /* @__PURE__ */ jsx("p", { className: "text-muted-foreground leading-relaxed text-center", children: "There is no shortage of agencies offering some version of link building, content marketing, or digital PR. What makes GrowSmallBiz different is that we do not treat authority building as an isolated tactic. We build it as part of a broader Managed AI SEO system designed specifically for local service businesses." }) }),
+        /* @__PURE__ */ jsx("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto", children: whyGSBItems.map((item, i) => /* @__PURE__ */ jsxs(
+          "div",
+          {
+            className: "flex items-start gap-4 bg-background border border-border rounded-xl p-5 animate-fade-up",
+            style: { animationDelay: `${i * 0.05}s` },
+            children: [
+              /* @__PURE__ */ jsx("div", { className: "w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsx(item.icon, { className: "w-4 h-4 text-primary" }) }),
+              /* @__PURE__ */ jsxs("div", { children: [
+                /* @__PURE__ */ jsx("p", { className: "text-sm font-semibold text-foreground mb-1", children: item.title }),
+                /* @__PURE__ */ jsx("p", { className: "text-xs text-muted-foreground leading-relaxed", children: item.description })
+              ] })
+            ]
+          },
+          i
+        )) }),
+        /* @__PURE__ */ jsx("div", { className: "text-center mt-8 animate-fade-up", style: { animationDelay: "0.35s" }, children: /* @__PURE__ */ jsx(Link, { to: "/services/seo-agency/", className: "text-primary hover:underline text-sm font-medium inline-flex items-center gap-1", children: "← Back to Managed AI SEO Overview" }) })
+      ] }) }),
+      /* @__PURE__ */ jsx(
+        FAQSection,
+        {
+          title: "Frequently Asked Questions",
+          faqs,
+          schemaType: "FAQPage",
+          contactCTA: {
+            ...baseContactCTA,
+            title: "Have questions about Authority Building?",
+            description: "We're here to help you understand how authority building fits your business.",
+            tagline: "Let's build your search authority together."
+          }
+        }
+      ),
+      /* @__PURE__ */ jsx("section", { id: "final-cta", className: "py-20 lg:py-28", style: { background: "linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)" }, children: /* @__PURE__ */ jsxs("div", { className: "container mx-auto px-4", children: [
+        /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto text-center animate-fade-up", children: [
+          /* @__PURE__ */ jsx("p", { className: "text-primary font-medium mb-4", children: "THE NEXT STEP" }),
+          /* @__PURE__ */ jsxs("h2", { className: "text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight", children: [
+            "Build Authority That Lasts.",
+            " ",
+            /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary italic", children: "Start Today." })
+          ] }),
+          /* @__PURE__ */ jsx("p", { className: "text-lg text-muted-foreground mb-8 max-w-3xl mx-auto", children: "Search engines do not rank businesses they do not trust. AI systems do not recommend brands they cannot verify. Prospective customers do not choose providers they are not confident in." }),
+          /* @__PURE__ */ jsx("p", { className: "text-base text-muted-foreground mb-10 max-w-3xl mx-auto", children: "Authority is not a luxury. It is the foundation of sustainable search visibility, lead generation, and market credibility. GrowSmallBiz builds that authority for you — systematically, intelligently, and without requiring you to become an SEO expert." })
+        ] }),
+        /* @__PURE__ */ jsx(
+          CardCTA,
+          {
+            title: "Let's Build Your Search Authority",
+            description: "Schedule your free strategy session or get a no-obligation SEO audit to see where you stand.",
+            buttonText: "Schedule Strategy Call",
+            buttonHref: PRIMARY_CTA_URL,
+            sectionClassName: "pt-0 pb-0"
+          }
+        ),
+        /* @__PURE__ */ jsx("div", { className: "flex justify-center mt-6 animate-fade-up", children: /* @__PURE__ */ jsx(Button, { variant: "heroOutline", size: "lg", asChild: true, children: /* @__PURE__ */ jsx("a", { href: SECONDARY_CTA_URL, target: "_blank", rel: "noopener noreferrer", children: "Free SEO Audit" }) }) }),
+        /* @__PURE__ */ jsxs("div", { className: "text-center mt-12 text-sm text-muted-foreground space-y-1 animate-fade-up", style: { animationDelay: "0.3s" }, children: [
+          /* @__PURE__ */ jsx("p", { children: "GrowSmallBiz Digital Marketing — Danville, CA — Serving Local Service Businesses Nationwide" }),
+          /* @__PURE__ */ jsx("p", { children: "The Digital Dominance Method: Website. SEO. Ads. Reputation. Automation. AI." })
+        ] })
+      ] }) }),
+      /* @__PURE__ */ jsx(ConsultationFormSection, {})
+    ] }),
+    /* @__PURE__ */ jsx(Footer, {})
+  ] });
+};
+export {
+  AuthorityBuilding as default
+};

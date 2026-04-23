@@ -1,0 +1,557 @@
+import { jsxs, jsx, Fragment } from "react/jsx-runtime";
+import { Head } from "vite-react-ssg";
+import { S as ServiceJsonLd } from "./ServiceJsonLd-62JZkfim.js";
+import { H as Header, B as Button } from "./Header-Dct2bBAe.js";
+import { F as Footer } from "./Footer-5rMz2U4O.js";
+import { FAQSection } from "./FAQSection-Knk-AyWr.js";
+import { ConsultationFormSection } from "./ConsultationFormSection-DDNhkaf7.js";
+import { P as PersonCTA } from "./PersonCTA-CEFUSvtj.js";
+import { b as baseContactCTA } from "./contactCTA-DlNQ95Kc.js";
+import { u as useUtm, C as CTA_URLS } from "./use-utm-CiJKCMCk.js";
+import { Users, ArrowRight, Target, Image, RefreshCw, FileText, CheckCircle2, Sparkles, Camera, Utensils, Building2, Home, Star, Stethoscope, Briefcase, Video, Clock, LayoutGrid } from "lucide-react";
+import { Link } from "react-router-dom";
+import { S as SectionHeader } from "./SectionHeader-m0RetmVk.js";
+import { B as Breadcrumb, a as BreadcrumbList, b as BreadcrumbItem, c as BreadcrumbLink, d as BreadcrumbSeparator, e as BreadcrumbPage } from "./breadcrumb-C_ATU6ud.js";
+import "react";
+import "@radix-ui/react-slot";
+import "class-variance-authority";
+import "../main.mjs";
+import "react-helmet-async";
+import "@radix-ui/react-tooltip";
+import "clsx";
+import "tailwind-merge";
+import "./accordion-b6vWRJCV.js";
+import "@radix-ui/react-accordion";
+const heroBg = "/assets/hero-bg-Cl38uuq1.jpg";
+const leakyBucket = "/assets/leaky-bucket-Snb62jjU.jpg";
+const faqs = [
+  {
+    question: "How much should I spend on Facebook Ads as a local business?",
+    answer: "The right budget depends on your market, your service, your competition, and your growth goals. As a general benchmark, most local service businesses generating meaningful results are spending between $500 and $2,000 per month in ad spend, separate from management fees. During your strategy session, we'll recommend a realistic budget based on your specific market and goals."
+  },
+  {
+    question: "How long does it take to see results from Facebook Ads?",
+    answer: "Most of our clients begin seeing leads within the first two to four weeks of launching a properly structured campaign. The first month is typically a data-gathering and optimization phase where we identify the highest-performing audiences and creatives. Results improve consistently through months two and three as we refine targeting and creative based on real performance data. This is why our performance guarantee exists — if we haven't generated leads within the agreed timeframe, we keep working until we do."
+  },
+  {
+    question: "What's the difference between boosting posts and running Facebook Ads?",
+    answer: `Boosting posts is a simplified advertising feature designed for reach and engagement — it prioritizes impressions and likes. Managed Facebook Ad campaigns are built around specific business objectives: lead generation, website conversions, or calls. A boosted post is a shortcut. A properly structured campaign is a lead generation system. Most local businesses who feel like "Facebook Ads don't work" have only ever boosted posts.`
+  },
+  {
+    question: "Do you manage Instagram Ads as well as Facebook Ads?",
+    answer: "Yes. Facebook and Instagram advertising are managed through the same Meta Ads Manager platform, and we manage campaigns across both platforms simultaneously. We optimize placement, format, and creative for each platform independently to maximize performance on both."
+  },
+  {
+    question: "What's the difference between Meta Ads and Facebook Ads?",
+    answer: '"Meta Ads" is the current brand name covering all advertising across Facebook, Instagram, Messenger, and Meta Audience Network. "Facebook Ads" is the legacy term. They refer to the same advertising platform — now called Meta Ads Manager.'
+  },
+  {
+    question: "Do I need a Facebook Business Page and Meta Business Suite account before we start?",
+    answer: "Yes. You'll need an active Facebook Business Page and a Meta Business Manager account. If you don't have these set up, we walk you through the setup process during onboarding. We also configure your Facebook Pixel on your website as part of the initial campaign setup."
+  },
+  {
+    question: "Will I have visibility into my campaign performance?",
+    answer: "Yes, completely. You'll receive monthly performance reports with all key metrics explained in plain English. You'll always know exactly how your budget is being spent, what your cost per lead is, how many leads were generated, and what we're doing to improve results."
+  },
+  {
+    question: "How does Meta Ads compare to Google Ads for lead generation?",
+    answer: "Meta Ads and Google Ads serve different funnel stages. Meta averages $27.66 CPL (WordStream, 2025) at lower intent — it reaches people who aren't yet searching. Google Search Ads average $70.11 CPL at higher intent — it captures people actively looking. Most of our clients run both; the channel mix depends on vertical and stage of business."
+  },
+  {
+    question: "What ad creative do I need to provide?",
+    answer: "We handle all ad copy, headlines, and CTA development. For creative assets (photos, video), we work with what you have, source stock where appropriate, or develop custom creative briefs for your own production. Med spa and photography verticals typically need original visual assets; most other verticals can start with a mix of existing and stock."
+  },
+  {
+    question: "Can you take over campaigns that another agency or I was already running?",
+    answer: "Absolutely. We take over underperforming accounts regularly. We start with a full audit of your existing campaign structure, audience settings, creative performance, and conversion tracking configuration. Then we restructure what's broken and build on what's working. Transitioning management to GrowSmallBiz typically results in improved performance within the first 30 to 60 days."
+  },
+  {
+    question: "What's your contract structure?",
+    answer: "Month-to-month. No long-term contracts. If we're not delivering, you shouldn't be locked in."
+  }
+];
+const FacebookAds = () => {
+  const { buildUrl, pageMedium } = useUtm();
+  const strategyUrl = buildUrl(CTA_URLS.strategySession, "strategy-session");
+  return /* @__PURE__ */ jsxs("div", { className: "min-h-screen bg-background", children: [
+    /* @__PURE__ */ jsxs(Head, { children: [
+      /* @__PURE__ */ jsx("title", { children: "Facebook & Instagram Ads Management for Small Businesses | GrowSmallBiz" }),
+      /* @__PURE__ */ jsx("meta", { name: "description", content: "Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics." }),
+      /* @__PURE__ */ jsx("link", { rel: "canonical", href: "https://growsmallbiz.io/services/paid-advertising/facebook-ads/" }),
+      /* @__PURE__ */ jsx("meta", { property: "og:title", content: "Facebook & Instagram Ads Management for Small Businesses" }),
+      /* @__PURE__ */ jsx("meta", { property: "og:description", content: "Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics." }),
+      /* @__PURE__ */ jsx("meta", { property: "og:url", content: "https://growsmallbiz.io/services/paid-advertising/facebook-ads/" }),
+      /* @__PURE__ */ jsx("meta", { property: "og:type", content: "website" }),
+      /* @__PURE__ */ jsx("meta", { property: "og:image", content: "https://growsmallbiz.io/og-image.jpg" }),
+      /* @__PURE__ */ jsx("meta", { property: "og:image:alt", content: "GrowSmallBiz — Facebook and Instagram Ads management for local service businesses" }),
+      /* @__PURE__ */ jsx("meta", { name: "twitter:card", content: "summary_large_image" }),
+      /* @__PURE__ */ jsx("meta", { name: "twitter:title", content: "Facebook & Instagram Ads Management for Small Businesses" }),
+      /* @__PURE__ */ jsx("meta", { name: "twitter:description", content: "Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics." }),
+      /* @__PURE__ */ jsx("meta", { name: "twitter:image", content: "https://growsmallbiz.io/og-image.jpg" }),
+      /* @__PURE__ */ jsx("meta", { name: "twitter:image:alt", content: "GrowSmallBiz — Facebook and Instagram Ads management for local service businesses" })
+    ] }),
+    /* @__PURE__ */ jsx(
+      ServiceJsonLd,
+      {
+        serviceName: "Facebook & Instagram Ads Management",
+        serviceType: "Facebook & Instagram Ads Management",
+        description: "Facebook & Instagram Ads management for local service businesses. Precision targeting, conversion-focused creative, full-funnel tracking, and retargeting.",
+        url: "/services/paid-advertising/facebook-ads/",
+        breadcrumbs: [
+          { name: "Services", url: "/services/" },
+          { name: "Paid Advertising", url: "/services/paid-advertising/" },
+          { name: "Facebook & Instagram Ads", url: "/services/paid-advertising/facebook-ads/" }
+        ],
+        useEntityGraph: true,
+        pageName: "Facebook & Instagram Ads Management for Small Businesses | GrowSmallBiz",
+        pageDescription: "Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics.",
+        hasFaqPage: true
+      }
+    ),
+    /* @__PURE__ */ jsx(Header, {}),
+    /* @__PURE__ */ jsx("nav", { "aria-label": "Breadcrumb", className: "container mx-auto px-4 pt-28", children: /* @__PURE__ */ jsx(Breadcrumb, { children: /* @__PURE__ */ jsxs(BreadcrumbList, { children: [
+      /* @__PURE__ */ jsx(BreadcrumbItem, { children: /* @__PURE__ */ jsx(BreadcrumbLink, { asChild: true, children: /* @__PURE__ */ jsx(Link, { to: "/", children: "Home" }) }) }),
+      /* @__PURE__ */ jsx(BreadcrumbSeparator, {}),
+      /* @__PURE__ */ jsx(BreadcrumbItem, { children: /* @__PURE__ */ jsx(BreadcrumbLink, { asChild: true, children: /* @__PURE__ */ jsx(Link, { to: "/services/", children: "Services" }) }) }),
+      /* @__PURE__ */ jsx(BreadcrumbSeparator, {}),
+      /* @__PURE__ */ jsx(BreadcrumbItem, { children: /* @__PURE__ */ jsx(BreadcrumbLink, { asChild: true, children: /* @__PURE__ */ jsx(Link, { to: "/services/paid-advertising/", children: "Paid Advertising" }) }) }),
+      /* @__PURE__ */ jsx(BreadcrumbSeparator, {}),
+      /* @__PURE__ */ jsx(BreadcrumbItem, { children: /* @__PURE__ */ jsx(BreadcrumbPage, { children: "Facebook & Instagram Ads" }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsxs("section", { className: "relative pt-8 pb-24 overflow-hidden", children: [
+      /* @__PURE__ */ jsx(
+        "img",
+        {
+          src: heroBg,
+          alt: "",
+          width: 1920,
+          height: 1080,
+          fetchPriority: "high",
+          "aria-hidden": "true",
+          className: "absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
+        }
+      ),
+      /* @__PURE__ */ jsx("div", { className: "absolute inset-0 bg-background/70" }),
+      /* @__PURE__ */ jsx("div", { className: "absolute inset-0 hero-glow" }),
+      /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4 relative z-10", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto text-center space-y-6", children: [
+        /* @__PURE__ */ jsx("div", { className: "animate-fade-up", children: /* @__PURE__ */ jsxs("span", { className: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium", children: [
+          /* @__PURE__ */ jsx(Users, { className: "w-4 h-4" }),
+          "Facebook & Instagram Ads"
+        ] }) }),
+        /* @__PURE__ */ jsxs("h1", { className: "text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up", children: [
+          "Facebook & Instagram Ads That Fill Your Calendar —",
+          " ",
+          /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary", children: "Not Just Your Feed" })
+        ] }),
+        /* @__PURE__ */ jsx("p", { className: "text-base md:text-lg italic text-muted-foreground/80 max-w-3xl mx-auto animate-fade-up", style: { animationDelay: "0.05s" }, children: "Facebook & Instagram Ads management for small businesses that need qualified leads, not impressions." }),
+        /* @__PURE__ */ jsx("p", { className: "text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up", style: { animationDelay: "0.1s" }, children: "Most small businesses waste thousands on Facebook and Instagram Ads chasing likes and impressions. You need leads. We build, manage, and optimize Meta ad campaigns that turn your ad spend into booked appointments, service calls, and paying customers." }),
+        /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4 justify-center animate-fade-up", style: { animationDelay: "0.15s" }, children: [
+          /* @__PURE__ */ jsx(Button, { variant: "hero", size: "xl", asChild: true, children: /* @__PURE__ */ jsxs("a", { href: strategyUrl, target: "_blank", rel: "noopener noreferrer", children: [
+            "Schedule Strategy Session",
+            /* @__PURE__ */ jsx(ArrowRight, { className: "w-5 h-5" })
+          ] }) }),
+          /* @__PURE__ */ jsx(Button, { variant: "heroOutline", size: "xl", asChild: true, children: /* @__PURE__ */ jsx("a", { href: "#how-it-works", children: "See How It Works" }) })
+        ] })
+      ] }) })
+    ] }),
+    /* @__PURE__ */ jsx("section", { className: "py-16 bg-card", children: /* @__PURE__ */ jsxs("div", { className: "container mx-auto px-4", children: [
+      /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground text-center mb-8", children: "Trusted by Local Service Businesses Across the Bay Area and Nationwide" }),
+      /* @__PURE__ */ jsx("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto", children: [
+        { value: "30+", label: "Years Fortune 500 sales & marketing leadership" },
+        { value: "5", label: "Local service industries served" },
+        { value: "Weekly", label: "Active campaign optimization" },
+        { value: "100%", label: "Done-for-you management" }
+      ].map((stat, i) => /* @__PURE__ */ jsxs("div", { className: "text-center animate-fade-up", style: { animationDelay: `${i * 0.05}s` }, children: [
+        /* @__PURE__ */ jsx("p", { className: "text-3xl md:text-4xl font-display font-bold text-primary", children: stat.value }),
+        /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground mt-1", children: stat.label })
+      ] }, i)) })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "Why Most Facebook Ad Campaigns Fail",
+          titleHighlight: "Small Businesses",
+          description: "Facebook and Instagram have over 3 billion combined monthly active users. The audience is there. The targeting tools are there. So why are so many local businesses still burning through budgets with nothing to show for it?"
+        }
+      ),
+      /* @__PURE__ */ jsx("div", { className: "space-y-6 mt-12", children: [
+        { title: "You're paying for the wrong outcomes.", desc: "Boosting posts for likes and reach is not advertising — it's brand awareness spending without brand-awareness budgets. If your campaigns aren't structured around lead generation and conversion goals, you're funding Meta's revenue, not yours." },
+        { title: "Your targeting is too broad — or too narrow.", desc: "Generic interest targeting reaches people who will never call you. Hyper-local targeting without the right audience signals means you're guessing. Without a data-driven audience strategy built around your actual customer profile, your budget disappears into impressions that convert to nothing." },
+        { title: "You have no retargeting system.", desc: "Most people who see your ad for the first time won't book immediately. Without a structured retargeting funnel — using Meta Pixel data, website visitors, and custom audiences — you're letting warm leads go cold every single day." },
+        { title: "Your creative doesn't speak to your customer.", desc: "A blurry stock photo and a generic caption don't stop the scroll. Local service businesses need ad creative that addresses the specific pain points of their ideal customer, with a clear message and a compelling reason to act now." },
+        { title: "There's no one watching the numbers.", desc: "Facebook Ads require continuous optimization. Audience fatigue, creative burnout, budget pacing, and bidding strategy all need active management. Set-it-and-forget-it campaigns are money drains." }
+      ].map((item, i) => /* @__PURE__ */ jsxs("div", { className: "bg-card border border-border rounded-xl p-6 animate-fade-up", style: { animationDelay: `${i * 0.05}s` }, children: [
+        /* @__PURE__ */ jsx("h4", { className: "text-base font-display font-semibold text-foreground mb-2", children: item.title }),
+        /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: item.desc })
+      ] }, i)) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-16", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto rounded-2xl border-2 border-primary/60 bg-card/50 backdrop-blur-sm p-6 md:p-10 shadow-[0_0_30px_rgba(255,127,80,0.15)] animate-fade-up", children: [
+      /* @__PURE__ */ jsxs("h3", { className: "text-2xl md:text-3xl font-display font-bold text-foreground mb-6 text-center", children: [
+        /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary", children: "Fixing the leaky bucket:" }),
+        " where most of your future customers actually live"
+      ] }),
+      /* @__PURE__ */ jsx("div", { className: "my-8 flex justify-center", children: /* @__PURE__ */ jsx(
+        "img",
+        {
+          src: leakyBucket,
+          alt: "Galvanized metal bucket leaking water from holes on all sides — visual metaphor for losing prospective customers without retargeting",
+          width: 1024,
+          height: 1024,
+          loading: "lazy",
+          className: "w-full max-w-md h-auto rounded-xl shadow-lg"
+        }
+      ) }),
+      /* @__PURE__ */ jsxs("div", { className: "space-y-4 text-muted-foreground leading-relaxed", children: [
+        /* @__PURE__ */ jsx("p", { children: "Only a small fraction of people who visit your website take action on their first visit. Most leave without calling, filling out the form, or booking. That isn't a website problem — it's a follow-up problem. It's the leaky bucket every local business has." }),
+        /* @__PURE__ */ jsx("p", { children: "Meta's retargeting capabilities are built to fix exactly that. Your Meta Pixel captures every website visitor. We build custom audiences from those visitors, from people who engaged with your ads, from people who watched your video content but didn't book. Then we run sequential retargeting campaigns that keep your business on top of their mind — until they're ready to take action." }),
+        /* @__PURE__ */ jsx("p", { children: "Most of our clients' best-performing campaigns aren't prospecting. They're retargeting. The leads are already in your funnel. Retargeting is how you actually convert them." })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24 bg-card", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-5xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "What You Actually Get When GrowSmallBiz Manages Your",
+          titleHighlight: "Facebook & Instagram Ads",
+          description: "We don't just run ads. We build a full-funnel paid social system designed to generate consistent, qualified leads for your local service business — every single month."
+        }
+      ),
+      /* @__PURE__ */ jsx("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12", children: [
+        { icon: Target, title: "Qualified leads, not vanity metrics", desc: "Every campaign is structured around one goal: generating real business outcomes. Phone calls, form fills, booked appointments, and service requests — not likes, shares, or impressions." },
+        { icon: Users, title: "Precision audience targeting", desc: "Custom audiences built from your ideal customer profile (location, demographics, behaviors, life events), layered with lookalike audiences built from your existing client list to scale what's already working." },
+        { icon: Image, title: "Scroll-stopping ad creative", desc: "Three to four ad creatives per campaign, written for your service, your market, and your customer's pain points. Primary copy, headlines, CTAs, and visual direction — all A/B tested to identify the combinations that drive the lowest cost per lead." },
+        { icon: RefreshCw, title: "Full-funnel retargeting", desc: "Meta Pixel setup, retargeting audiences built from website visitors and video viewers, and sequential retargeting campaigns that nurture prospects from first touch to booked appointment." },
+        { icon: FileText, title: "Transparent monthly reporting", desc: "No cryptic dashboards, no vanity slides. Clear monthly reports: cost per lead, lead volume, click-through rate, reach, frequency, and ROAS. Plus a summary of optimizations made and the plan for the following month." }
+      ].map((card, i) => /* @__PURE__ */ jsxs("div", { className: "bg-background border border-border rounded-xl p-6 space-y-3 animate-fade-up", style: { animationDelay: `${i * 0.05}s` }, children: [
+        /* @__PURE__ */ jsx("div", { className: "w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center", children: /* @__PURE__ */ jsx(card.icon, { className: "w-5 h-5 text-primary" }) }),
+        /* @__PURE__ */ jsx("h4", { className: "text-sm font-display font-semibold text-foreground", children: card.title }),
+        /* @__PURE__ */ jsx("p", { className: "text-xs text-muted-foreground leading-relaxed", children: card.desc })
+      ] }, i)) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "What's Included in Every",
+          titleHighlight: "Engagement",
+          description: "A structured scope of work — applied consistently across every Meta Ads engagement we manage."
+        }
+      ),
+      /* @__PURE__ */ jsx("ul", { className: "mt-12 space-y-3", children: [
+        "Full campaign strategy and account architecture — business goals, service area, competitive landscape, and ideal customer profile",
+        "Meta Business Manager and Meta Ads Manager setup and access configuration",
+        "Meta Pixel installation and Conversions API integration — server-side event tracking for iOS 14.5+ attribution",
+        "Custom audience creation — website visitors, video viewers, customer list uploads, and engagement audiences",
+        "Lookalike audience generation — 1%, 3%, and 5% tiers based on best-fit source audiences",
+        "Campaign structure design — awareness, consideration, and conversion layering",
+        "Ad creative development — three to four ad variants per campaign (primary copy, headline, CTA, visual direction)",
+        "Systematic A/B testing — creative, audience, placement, and bidding strategy",
+        "Conversion event configuration — form fills, phone calls, and booking completions",
+        "Advantage+ campaign deployment where the data supports it",
+        "Retargeting funnel architecture — sequential creative tuned by audience temperature",
+        "Weekly performance monitoring and active optimization — bid adjustments, creative refreshes, budget pacing",
+        "Monthly reporting with plain-English analysis of performance, optimizations made, and next-30-day plan",
+        "Lead follow-up integration with your CRM or notification system — speed to lead is one of the biggest drivers of conversion"
+      ].map((item, i) => /* @__PURE__ */ jsxs("li", { className: "flex items-start gap-3 animate-fade-up", style: { animationDelay: `${i * 0.03}s` }, children: [
+        /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-primary flex-shrink-0 mt-0.5" }),
+        /* @__PURE__ */ jsx("span", { className: "text-sm md:text-base text-muted-foreground leading-relaxed", children: item })
+      ] }, i)) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24 bg-card", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-5xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "What Facebook & Instagram Ads Actually Cost for",
+          titleHighlight: "Small Businesses"
+        }
+      ),
+      /* @__PURE__ */ jsx("p", { className: "text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center mt-6", children: "Meta advertising is generally the lowest cost-per-lead paid channel available to small businesses — substantially cheaper than Google Search Ads. The tradeoff is lead intent: Meta is a demand-generation channel, not a demand-capture channel. Prospects arrive earlier in the buying process." }),
+      /* @__PURE__ */ jsx("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto mt-10", children: [
+        { value: "$27.66", label: "Meta Leads CPL — industry avg" },
+        { value: "$1.92", label: "Meta Leads CPC — industry avg" },
+        { value: "$0.70", label: "Meta traffic CPC — industry avg" },
+        { value: "+21%", label: "Meta Leads CPL YoY 2025" }
+      ].map((stat, i) => /* @__PURE__ */ jsxs("div", { className: "text-center bg-background border border-border rounded-xl p-6 animate-fade-up", style: { animationDelay: `${i * 0.05}s` }, children: [
+        /* @__PURE__ */ jsx("p", { className: "text-3xl md:text-4xl font-display font-bold text-transparent bg-clip-text bg-gradient-primary", children: stat.value }),
+        /* @__PURE__ */ jsx("p", { className: "text-xs text-muted-foreground mt-2 leading-relaxed", children: stat.label })
+      ] }, i)) }),
+      /* @__PURE__ */ jsx("p", { className: "text-base text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center mt-10", children: "Meta's 2025 CPL is roughly 2.5× lower than Google Ads at $70.11. The +21% year-over-year cost increase reflects rising ad competition — which is why campaign strategy, creative quality, and active optimization matter more every year. Paying less per lead requires doing the work the generalists skip." }),
+      /* @__PURE__ */ jsx("p", { className: "text-xs italic text-muted-foreground/70 max-w-3xl mx-auto text-center mt-4", children: "Industry benchmarks: WordStream by LocaliQ 2025 Facebook Ads Benchmarks and 2025 Google Ads Benchmarks (1,000+ campaigns analyzed per report). Your specific CPL depends on your vertical, service area, creative quality, and funnel maturity." })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-5xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "Meta Ads vs Google Ads for Small Businesses:",
+          titleHighlight: "Where Each Channel Wins",
+          description: "The two channels aren't substitutes — they work differently and win on different metrics. Most of our clients run both. Here's the honest breakdown."
+        }
+      ),
+      /* @__PURE__ */ jsx("div", { className: "mt-12 overflow-x-auto rounded-xl border border-border", children: /* @__PURE__ */ jsxs("table", { className: "w-full text-sm md:text-base", children: [
+        /* @__PURE__ */ jsx("thead", { className: "bg-card", children: /* @__PURE__ */ jsxs("tr", { children: [
+          /* @__PURE__ */ jsx("th", { className: "text-left p-4 font-display font-semibold text-foreground border-b border-border", children: "Dimension" }),
+          /* @__PURE__ */ jsx("th", { className: "text-left p-4 font-display font-semibold text-foreground border-b border-border", children: "Meta Ads (Facebook & Instagram)" }),
+          /* @__PURE__ */ jsx("th", { className: "text-left p-4 font-display font-semibold text-foreground border-b border-border", children: "Google Search Ads" })
+        ] }) }),
+        /* @__PURE__ */ jsx("tbody", { className: "text-muted-foreground", children: [
+          ["Primary function", "Demand generation", "Demand capture"],
+          ["Audience intent", "Low–moderate (scrolling, open to discovery)", "High (actively searching, commercial intent)"],
+          ["Avg CPL", "$27.66¹", "$70.11²"],
+          ["Avg CPC", "$1.92 leads · $0.70 traffic¹", "$5.26²"],
+          ["Best for", "Visual / lifestyle services, retargeting, brand-building", "High-intent local search, urgent-need services"],
+          ["Strongest verticals", "Med spa, photography, restaurants, real estate", "HVAC, plumbing, dental, chiropractic, “near me” services"],
+          ["Lead quality", "Cheaper, earlier in funnel", "More expensive, further in funnel"],
+          ["Complementary role", "Nurtures, retargets, builds brand", "Captures active searchers, drives phone/form leads"]
+        ].map((row, i) => /* @__PURE__ */ jsxs("tr", { className: i % 2 === 0 ? "bg-card/30" : "bg-transparent", children: [
+          /* @__PURE__ */ jsx("td", { className: "p-4 font-medium text-foreground border-b border-border align-top", children: row[0] }),
+          /* @__PURE__ */ jsx("td", { className: "p-4 border-b border-border align-top leading-relaxed", children: row[1] }),
+          /* @__PURE__ */ jsx("td", { className: "p-4 border-b border-border align-top leading-relaxed", children: row[2] })
+        ] }, i)) })
+      ] }) }),
+      /* @__PURE__ */ jsx("p", { className: "text-xs italic text-muted-foreground/70 mt-4", children: "¹ WordStream by LocaliQ 2025 Facebook Ads Benchmarks. ² WordStream by LocaliQ 2025 Google Ads Benchmarks." }),
+      /* @__PURE__ */ jsxs("div", { className: "mt-8 max-w-3xl mx-auto rounded-xl border-l-4 border-primary bg-card/50 p-6 animate-fade-up", children: [
+        /* @__PURE__ */ jsx("h4", { className: "text-lg font-display font-bold text-foreground mb-2", children: "We manage both." }),
+        /* @__PURE__ */ jsxs("p", { className: "text-sm md:text-base text-muted-foreground leading-relaxed", children: [
+          "Most local service businesses get their best ROI by running Meta and",
+          " ",
+          /* @__PURE__ */ jsx(Link, { to: "/services/paid-advertising/google-ads/", className: "text-primary underline hover:text-primary/80", children: "Google" }),
+          " ",
+          "Ads together — Google captures the 'I need a dentist today' searches; Meta reaches the other 10× who haven't started searching yet."
+        ] })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { id: "how-it-works", className: "py-24 bg-card", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-5xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "How We Manage Your Meta Ads:",
+          titleHighlight: "From Strategy to Results"
+        }
+      ),
+      /* @__PURE__ */ jsx("div", { className: "space-y-6 mt-12", children: [
+        { title: "Discovery & Strategy Session", desc: "We start with a deep-dive strategy session to understand your business, your target customer, your service area, and your growth goals. We audit your existing ad account (if you have one), review your competitors' ad activity using Meta Ad Library, and identify the biggest opportunities in your market. This session defines everything that follows." },
+        { title: "Audience Build & Campaign Architecture", desc: "Based on your strategy session, we build your core audience segments — custom, interest-based, and lookalike — and structure your campaign architecture around your specific conversion goal. We configure your Meta Business Manager, Meta Pixel, and Conversions API integration at this stage." },
+        { title: "Ad Creative Development & A/B Testing Setup", desc: "We develop three to four ad creatives with full copywriting, headlines, and visual direction across image, carousel, and Reels formats. Each creative is built to speak directly to your ideal customer's situation and motivate a specific action. We set up systematic A/B testing so every creative is evaluated on real performance data." },
+        { title: "Campaign Launch & Conversion Tracking Verification", desc: "We launch your campaigns and run a full conversion tracking verification to confirm that every lead, form fill, and phone call is being recorded accurately through both the Meta Pixel and Conversions API. No assumptions — we verify the data before scaling any budget." },
+        { title: "Weekly Monitoring & Active Optimization", desc: "Every week, we review performance across all active ad sets. We adjust bids, refresh underperforming creative, expand winning audiences, and reallocate budget toward the highest-performing combinations. Your campaign is always improving." },
+        { title: "Monthly Reporting & Strategy Review", desc: "At the end of each month, you receive a clear performance report with all key metrics and a plain-English explanation of results. We review what worked, what we're changing, and what the plan is for the next 30 days." }
+      ].map((step, i) => /* @__PURE__ */ jsxs("div", { className: "flex gap-6 animate-fade-up", style: { animationDelay: `${i * 0.05}s` }, children: [
+        /* @__PURE__ */ jsxs("div", { className: "flex flex-col items-center", children: [
+          /* @__PURE__ */ jsx("div", { className: "w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsx("span", { className: "text-sm font-bold text-primary", children: i + 1 }) }),
+          i < 5 && /* @__PURE__ */ jsx("div", { className: "w-px flex-1 bg-border mt-2" })
+        ] }),
+        /* @__PURE__ */ jsxs("div", { className: "pb-6", children: [
+          /* @__PURE__ */ jsxs("h4", { className: "text-base font-display font-semibold text-foreground mb-2", children: [
+            "Step ",
+            i + 1,
+            ": ",
+            step.title
+          ] }),
+          /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: step.desc })
+        ] })
+      ] }, i)) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-5xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "Facebook Ads Management for",
+          titleHighlight: "Local Service Industries"
+        }
+      ),
+      /* @__PURE__ */ jsx("p", { className: "text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto mt-6", children: "Meta Ads don't perform the same way for every vertical. Visual and consideration-stage services benefit most from Meta as a primary channel. Other verticals use Meta as a complementary channel alongside Google Ads. We set your strategy based on what your vertical actually needs." }),
+      /* @__PURE__ */ jsxs("div", { className: "mt-14", children: [
+        /* @__PURE__ */ jsx("h3", { className: "text-xl md:text-2xl font-display font-bold text-primary mb-6 text-center md:text-left", children: "Primary Fit — Meta as the lead-generation channel" }),
+        /* @__PURE__ */ jsx("div", { className: "grid sm:grid-cols-2 gap-6", children: [
+          { icon: Sparkles, title: "Med Spas & Aesthetic Services", desc: "Visual results drive demand. Before/after creative (FDA/FTC-compliant framing: reduce, minimize, improve — never eliminate or guarantee), Instagram-forward Reels, and consultation-focused lead forms. Med spa clients often see Meta deliver more leads than Google at a lower CPL." },
+          { icon: Camera, title: "Photographers & Creative Professionals", desc: "Visual-first advertising for a visual-first service. Portfolio-driven Reels, engagement retargeting, and consultation funnels designed to book sessions and weddings." },
+          { icon: Utensils, title: "Restaurants", desc: "Local awareness, event promotion, reservation drives, and daily-special campaigns. Meta's local targeting combined with mouth-watering creative moves covers when Google Ads can't reach people who haven't decided where to eat yet." },
+          { icon: Building2, title: "Real Estate Brokers & Agents", desc: "Buyer and seller lead generation through video walkthroughs, market update Reels, and neighborhood-targeted lead magnets. Meta captures the 'just starting to look' buyer Google can't reach." }
+        ].map((ind, i) => /* @__PURE__ */ jsxs("div", { className: "feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up", style: { animationDelay: `${i * 0.05}s` }, children: [
+          /* @__PURE__ */ jsxs("div", { className: "flex items-center gap-3", children: [
+            /* @__PURE__ */ jsx("div", { className: "w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsx(ind.icon, { className: "w-5 h-5 text-primary" }) }),
+            /* @__PURE__ */ jsx("h4", { className: "text-base font-display font-semibold text-foreground", children: ind.title })
+          ] }),
+          /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: ind.desc })
+        ] }, i)) })
+      ] }),
+      /* @__PURE__ */ jsxs("div", { className: "mt-14", children: [
+        /* @__PURE__ */ jsx("h3", { className: "text-xl md:text-2xl font-display font-bold text-primary mb-6 text-center md:text-left", children: "Complementary Channel — Meta alongside Google Ads" }),
+        /* @__PURE__ */ jsx("div", { className: "grid sm:grid-cols-2 gap-6", children: [
+          { icon: Home, title: "HVAC & Home Services", desc: "Google Ads captures 'AC repair near me' urgent-need searches; Meta reaches homeowners during off-season for maintenance agreements, replacement planning, and brand building." },
+          { icon: Star, title: "Dental Practices", desc: "Google Ads captures active patient searches; Meta builds practice awareness, retargets website visitors, and promotes cosmetic services (Invisalign, whitening) where the consideration cycle is longer." },
+          { icon: Stethoscope, title: "Chiropractic Care", desc: "Google Ads captures 'back pain relief' searches; Meta reaches people earlier — before they've decided chiropractic is the answer — with educational content and patient stories." },
+          { icon: Briefcase, title: "Other Local Professional Services", desc: "CPAs, attorneys, financial advisors, consultants. If you serve a local market and need a consistent pipeline of qualified leads, we can build and manage campaigns that deliver them." }
+        ].map((ind, i) => /* @__PURE__ */ jsxs("div", { className: "feature-card-teal rounded-xl p-6 space-y-3 animate-fade-up", style: { animationDelay: `${i * 0.05}s` }, children: [
+          /* @__PURE__ */ jsxs("div", { className: "flex items-center gap-3", children: [
+            /* @__PURE__ */ jsx("div", { className: "w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsx(ind.icon, { className: "w-5 h-5 text-primary" }) }),
+            /* @__PURE__ */ jsx("h4", { className: "text-base font-display font-semibold text-foreground", children: ind.title })
+          ] }),
+          /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: ind.desc })
+        ] }, i)) })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24 bg-card", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-5xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "Instagram Isn't an Add-On.",
+          titleHighlight: "It's Half the Opportunity."
+        }
+      ),
+      /* @__PURE__ */ jsx("p", { className: "text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto mt-6", children: "Most agencies run Facebook-first campaigns and auto-place them on Instagram as an afterthought. For visual service businesses, that's backwards. Instagram's format library is different, the audience behavior is different, and the creative requirements are different." }),
+      /* @__PURE__ */ jsx("div", { className: "grid md:grid-cols-3 gap-6 mt-12", children: [
+        { icon: Video, title: "Reels for awareness", desc: "Short-form vertical video is where discovery happens on Instagram in 2026. Reels campaigns reach audiences outside your existing following and are often the cheapest way to build top-of-funnel awareness for visual verticals." },
+        { icon: Clock, title: "Stories for retargeting", desc: "Full-screen, time-limited, high-engagement. Stories placements work best for warm audiences — retargeting website visitors, video viewers, and custom audiences with time-sensitive offers." },
+        { icon: LayoutGrid, title: "Feed for consideration", desc: "High-resolution static and carousel formats for before/afters, portfolio work, testimonials (where available), and educational content. The feed is where prospects evaluate you." }
+      ].map((card, i) => /* @__PURE__ */ jsxs("div", { className: "bg-background border border-border rounded-xl p-6 space-y-3 animate-fade-up", style: { animationDelay: `${i * 0.05}s` }, children: [
+        /* @__PURE__ */ jsxs("div", { className: "flex items-center gap-3", children: [
+          /* @__PURE__ */ jsx("div", { className: "w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsx(card.icon, { className: "w-5 h-5 text-primary" }) }),
+          /* @__PURE__ */ jsx("h4", { className: "text-base font-display font-semibold text-foreground", children: card.title })
+        ] }),
+        /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: card.desc })
+      ] }, i)) }),
+      /* @__PURE__ */ jsx("p", { className: "text-base md:text-lg text-foreground leading-relaxed text-center max-w-3xl mx-auto mt-12", children: "We build creative for all three formats natively — not cropped from Facebook feed ads — and configure campaign structure to optimize each placement on its own performance data." })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "Why Small Businesses Choose GrowSmallBiz for",
+          titleHighlight: "Meta Ads Management",
+          className: "mb-12"
+        }
+      ),
+      /* @__PURE__ */ jsx("div", { className: "space-y-6", children: [
+        { title: "We specialize in local service businesses — period", desc: "We don't manage ad campaigns for e-commerce brands, SaaS companies, or national retailers. Our entire agency is built around one type of client: local service businesses. That specialization means we understand your customer, your competitive landscape, and your growth levers in a way a generalist agency never will.", featured: false },
+        { title: "30+ years of real business experience", desc: "GrowSmallBiz was founded by Subrata Guha — a 30+ year veteran of Fortune 500 sales, marketing, supply chain, and digital transformation. He didn't build this agency to learn on your budget. The strategic thinking, business judgment, and marketing frameworks we apply come from decades of real-world business leadership.", featured: false },
+        { title: "Full-funnel, not just ads", desc: "Anyone can run an ad. We build the entire system: audience targeting, ad creative, Meta Pixel setup, Conversions API integration, conversion tracking, retargeting sequences, and lead follow-up integration. Your ads are connected to your business — not just running in isolation.", featured: false },
+        { title: "AI-powered campaign management", desc: "We use AI-powered tools to enhance audience analysis, creative optimization, and performance monitoring. That means faster decisions, smarter targeting, and more efficient use of your budget — at every stage of your campaign.", featured: false },
+        { title: "Integrated with your broader marketing system", desc: "Your Meta Ads don't operate in a silo. We integrate your paid social campaigns with your SEO strategy, website conversion rate, reputation management, and CRM — so every channel amplifies the others and every lead is captured and nurtured.", featured: false },
+        { title: "The Performance Guarantee", desc: "If we don't generate leads within the agreed timeframe and scope, we keep working at no additional management fee — you only cover the ad spend — until we do. Timeframe and lead-volume thresholds are defined during your strategy session and documented in your service agreement.", featured: true }
+      ].map((item, i) => /* @__PURE__ */ jsxs(
+        "div",
+        {
+          className: item.featured ? "bg-card border-l-4 border-primary border-y border-r border-border rounded-xl p-6 animate-fade-up shadow-[0_0_30px_rgba(255,127,80,0.15)]" : "bg-card border border-border rounded-xl p-6 animate-fade-up",
+          style: { animationDelay: `${i * 0.05}s` },
+          children: [
+            /* @__PURE__ */ jsx("h4", { className: "text-base font-display font-semibold text-foreground mb-2", children: item.title }),
+            /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground leading-relaxed", children: item.desc })
+          ]
+        },
+        i
+      )) })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-5xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "Real Results From Our",
+          titleHighlight: "Meta Ads Campaigns",
+          description: "A measurable outcome from a Facebook lead generation campaign we managed — structured around a three-tier funnel with active optimization."
+        }
+      ),
+      /* @__PURE__ */ jsxs("div", { className: "max-w-3xl mx-auto mt-12 animate-fade-up", children: [
+        /* @__PURE__ */ jsxs("div", { className: "rounded-2xl overflow-hidden border border-border shadow-[0_0_40px_rgba(255,127,80,0.12)]", children: [
+          /* @__PURE__ */ jsxs("div", { className: "bg-gradient-to-r from-primary to-primary/70 p-8", children: [
+            /* @__PURE__ */ jsx("p", { className: "text-primary-foreground/80 text-xs font-semibold uppercase tracking-wider mb-2", children: "Campaign Results — Facebook Lead Generation" }),
+            /* @__PURE__ */ jsx("h3", { className: "text-2xl md:text-3xl font-display font-bold text-primary-foreground", children: "3-Tier Funnel Methodology" }),
+            /* @__PURE__ */ jsx("p", { className: "text-primary-foreground/70 italic text-sm mt-2", children: "22-day campaign window" })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "bg-[hsl(210_50%_8%)] p-8 md:p-10 space-y-6", children: [
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("p", { className: "text-[hsl(188_78%_55%)] uppercase text-xs font-bold tracking-wider mb-2", children: "Challenge" }),
+              /* @__PURE__ */ jsx("p", { className: "text-foreground leading-relaxed", children: "Client needed high-quality leads at efficient CPL, with disciplined budget allocation across awareness, consideration, and conversion stages." })
+            ] }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("p", { className: "text-[hsl(188_78%_55%)] uppercase text-xs font-bold tracking-wider mb-2", children: "Strategy" }),
+              /* @__PURE__ */ jsx("p", { className: "text-foreground leading-relaxed", children: "Three-tiered funnel architecture — TOFU broad-reach awareness, MOFU retargeting of site visitors and ad engagers, BOFU high-intent conversion push. Continuous ad creative testing, dynamic bid and budget adjustments, and audience segmentation across demographics, interests, and behavior." })
+            ] }),
+            /* @__PURE__ */ jsx("div", { className: "grid grid-cols-2 gap-4 pt-2", children: [
+              { value: "$2.67", label: "Final Cost Per Lead" },
+              { value: "−30%", label: "CPL Reduction" },
+              { value: "50", label: "Qualified Leads" },
+              { value: "$191", label: "Total Ad Spend" }
+            ].map((m, i) => /* @__PURE__ */ jsxs(
+              "div",
+              {
+                className: "bg-[hsl(210_45%_14%)] border border-[hsl(188_78%_41%_/_0.2)] rounded-lg p-5 text-center",
+                children: [
+                  /* @__PURE__ */ jsx("p", { className: "text-3xl md:text-4xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-400", children: m.value }),
+                  /* @__PURE__ */ jsx("p", { className: "text-xs text-muted-foreground mt-2", children: m.label })
+                ]
+              },
+              i
+            )) })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsx("p", { className: "text-center text-sm italic text-muted-foreground mt-6", children: "Industry benchmark for Meta Leads campaigns in 2025: $27.66 CPL (WordStream by LocaliQ). Our campaign achieved $2.67 — more than 10× below benchmark." })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx("section", { className: "py-24 bg-card", children: /* @__PURE__ */ jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxs("div", { className: "max-w-3xl mx-auto", children: [
+      /* @__PURE__ */ jsx(
+        SectionHeader,
+        {
+          title: "Ready to Stop Wasting Ad Spend and Start",
+          titleHighlight: "Generating Real Leads?"
+        }
+      ),
+      /* @__PURE__ */ jsx("p", { className: "text-muted-foreground leading-relaxed text-center mt-6 mb-8", children: "Your competitors are already running Facebook and Instagram Ads in your market. The question isn't whether to advertise on social media — it's whether your campaigns are built to win. Schedule a free strategy session and we'll show you exactly what a properly structured Facebook Ads campaign looks like for your business." }),
+      /* @__PURE__ */ jsxs("div", { className: "bg-background border border-border rounded-xl p-6 mb-8", children: [
+        /* @__PURE__ */ jsx("h4", { className: "text-base font-display font-semibold text-foreground mb-4", children: "What you'll get in the session:" }),
+        /* @__PURE__ */ jsx("ul", { className: "space-y-3", children: [
+          "A review of your current Facebook Ads account (or a blank-slate plan if you're starting fresh)",
+          "An analysis of your top local competitors' ad activity",
+          "A recommended campaign structure, targeting approach, and creative direction",
+          "A realistic projection of what a properly managed campaign can deliver for your business"
+        ].map((item, i) => /* @__PURE__ */ jsxs("li", { className: "flex items-start gap-3 text-sm text-muted-foreground", children: [
+          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-4 h-4 text-primary mt-0.5 shrink-0" }),
+          item
+        ] }, i)) })
+      ] }),
+      /* @__PURE__ */ jsxs("div", { className: "text-center", children: [
+        /* @__PURE__ */ jsx("p", { className: "text-sm text-muted-foreground mb-4", children: "No contracts. No pressure. Just strategy." }),
+        /* @__PURE__ */ jsx(Button, { variant: "hero", size: "xl", asChild: true, children: /* @__PURE__ */ jsxs("a", { href: strategyUrl, target: "_blank", rel: "noopener noreferrer", children: [
+          "Schedule Strategy Session",
+          /* @__PURE__ */ jsx(ArrowRight, { className: "w-5 h-5" })
+        ] }) })
+      ] })
+    ] }) }) }),
+    /* @__PURE__ */ jsx(
+      FAQSection,
+      {
+        faqs,
+        title: "FAQs: Your Questions Answered: Facebook & Instagram Ads for Small Businesses",
+        subtitle: "Common questions about our Meta Ads management for local service businesses.",
+        schemaId: "https://growsmallbiz.io/services/paid-advertising/facebook-ads/#faqpage",
+        contactCTA: {
+          ...baseContactCTA,
+          title: "Have more questions about Meta Ads?",
+          description: "We're here to help you build a Meta Ads campaign that drives real leads.",
+          tagline: "Let's turn your social ad spend into booked appointments.",
+          buttonText: "Schedule Strategy Session"
+        }
+      }
+    ),
+    /* @__PURE__ */ jsx(
+      PersonCTA,
+      {
+        sectionClassName: "py-24",
+        buttonHref: strategyUrl,
+        buttonText: "Schedule Strategy Session",
+        title: /* @__PURE__ */ jsxs(Fragment, { children: [
+          "Your Local Market Is Active on Facebook and Instagram Right Now.",
+          " ",
+          /* @__PURE__ */ jsx("span", { className: "text-transparent bg-clip-text bg-gradient-primary", children: "Are You Showing Up?" })
+        ] }),
+        description: /* @__PURE__ */ jsx(Fragment, { children: "GrowSmallBiz manages Facebook and Instagram Ads exclusively for local service businesses. We know your customer, we know your market, and we know how to build campaigns that turn ad spend into revenue. Schedule your free strategy session — no obligation, no contract pitch, just a direct conversation about what your Meta Ads should be doing for your business." })
+      }
+    ),
+    /* @__PURE__ */ jsx(ConsultationFormSection, { utmCampaign: "consultation-form", utmMedium: pageMedium }),
+    /* @__PURE__ */ jsx(Footer, {})
+  ] });
+};
+export {
+  FacebookAds as default
+};
