@@ -171,6 +171,7 @@ export const routes: RouteRecord[] = [
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
       { path: "terms-of-service", lazy: lazy(() => import("./pages/TermsOfService")) },
+      { path: "h1-check", lazy: lazy(() => import("./pages/H1Check")) },
       { path: "404", lazy: lazy(() => import("./pages/NotFound")) },
       { path: "*", lazy: lazy(() => import("./pages/NotFound")) },
     ],
