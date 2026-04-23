@@ -102,15 +102,14 @@ export const ServiceHero = ({
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight">
-            {titleHighlight ? (
+            {title}
+            {titleHighlight && (
               <>
-                {title}{" "}
+                {" "}
                 <span className="text-transparent bg-clip-text bg-gradient-primary">
                   {titleHighlight}
                 </span>
               </>
-            ) : (
-              title
             )}
           </h1>
 
