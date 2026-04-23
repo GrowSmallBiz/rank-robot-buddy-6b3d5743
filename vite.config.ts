@@ -45,7 +45,13 @@ export default defineConfig(({ mode }) => ({
   ssgOptions: {
     dirStyle: "nested",
     script: "async",
-    includedRoutes: (paths: string[]) =>
-      paths.filter((p) => lazyPaths.has(p) || lazyPaths.has(p + "/")),
+    includedRoutes: (paths: string[]) => {
+      console.log("[ssg-audit] paths from ssg:", paths.length, "lazyPaths:", lazyPaths.size);
+      console.log("[ssg-audit] sample ssg paths:", paths.slice(0, 8));
+      const filtered = paths.filter((p) => lazyPaths.has(p) || lazyPaths.has(p + "/"));
+      console.log("[ssg-audit] kept after filter:", filtered.length);
+      console.log("[ssg-audit] dropped sample:", paths.filter((p) => !lazyPaths.has(p) && !lazyPaths.has(p + "/")).slice(0, 8));
+      return filtered;
+    },
   },
 }));
