@@ -598,7 +598,7 @@ const TechnicalSEO = () => {
 
         {/* SECTION 9 — FAQ (ATLAS BRAIN + 1 NEW FAQ INSERTED) */}
         <FAQSection
-          title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Technical SEO</span></>}
+          title="Frequently Asked Questions About Technical SEO"
           faqs={faqs}
           schemaType="FAQPage"
           contactCTA={{
