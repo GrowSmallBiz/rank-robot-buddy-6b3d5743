@@ -46,6 +46,11 @@ export default defineConfig(({ mode }) => ({
     dirStyle: "nested",
     script: "async",
     includedRoutes: (paths: string[]) =>
-      paths.filter((p) => lazyPaths.has(p) || lazyPaths.has(p + "/")),
+      paths.filter((raw) => {
+        // vite-react-ssg may pass paths with or without a leading slash.
+        // Normalize to leading-slash form before checking against lazyPaths.
+        const p = raw.startsWith("/") ? raw : "/" + raw;
+        return lazyPaths.has(p) || lazyPaths.has(p + "/");
+      }),
   },
 }));
