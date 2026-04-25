@@ -487,7 +487,7 @@ const Index = () => {
           buttonHref={strategySessionUrl}
         />
 
-        <ConsultationFormSection utmCampaign="home-consultation" utmMedium="home" />
+        <ConsultationFormSection utmCampaign="home-consultation" utmMedium="home" headingOverride="Get Your Free Local Growth Strategy Consultation" />
 
       </Suspense>
 
