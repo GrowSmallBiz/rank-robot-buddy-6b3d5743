@@ -286,7 +286,7 @@ const Index = () => {
                     width={800}
                     height={800}
                     loading="lazy"
-                    className="w-full h-56 object-cover"
+                    className="w-full h-72 object-contain"
                   />
                 </div>
                 <figcaption className="text-xs text-muted-foreground italic text-center mt-2">
@@ -328,7 +328,7 @@ const Index = () => {
                     width={1024}
                     height={1024}
                     loading="lazy"
-                    className="w-full h-56 object-cover"
+                    className="w-full h-72 object-contain"
                   />
                 </div>
                 <figcaption className="text-xs text-muted-foreground italic text-center mt-2">
