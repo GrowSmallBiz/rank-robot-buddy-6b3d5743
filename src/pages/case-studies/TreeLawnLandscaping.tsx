@@ -259,7 +259,7 @@ const TreeLawnLandscaping = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
-                Consistent Local SEO Methodology Across Tree, Lawn & Landscaping Campaigns
+                Proven Local SEO Methodology for Tree, Lawn & Landscaping Businesses
               </h2>
               <P>
                 Across these campaigns, the work consistently included internal linking improvements, advanced schema markup, Google Business Profile optimization, local and niche citation building, onsite location signal improvements, content support, and local visibility enhancements designed to improve rankings, engagement, and lead generation for high-intent service businesses.

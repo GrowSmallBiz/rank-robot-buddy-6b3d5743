@@ -239,8 +239,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // CORE SERVICES OVERVIEW
   // ══════════════════════════════════════════════════════════════════════
-  coreServicesHeadline: "Our Integrated Marketing System for",
-  coreServicesHighlight: "Tree Service, Lawn Care & Landscaping Companies",
+  coreServicesHeadline: "AI-Powered Marketing System for Tree Service, Lawn & Landscaping",
+  coreServicesHighlight: "",
   coreServicesSubheadline: "Every service works together. No gaps between channels. One team, one strategy, one dashboard.",
   coreServices: [
     {

@@ -231,8 +231,8 @@ export const hvacConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // CORE SERVICES GRID
   // ══════════════════════════════════════════════════════════════════════
-  coreServicesHeadline: "Our Integrated Marketing System for",
-  coreServicesHighlight: "Residential and Commercial HVAC Contractors",
+  coreServicesHeadline: "HVAC Marketing Success Stories: Filling Service Calendars",
+  coreServicesHighlight: "",
   coreServicesSubheadline: "Every service works together. No gaps between channels. One team, one strategy, one dashboard.",
   coreServices: [
     { icon: Search, title: "Local SEO & Google Business Profile", whatWeDo: "Rank in the Map Pack for HVAC contractors near me, AC repair, and furnace repair searches — the high-intent queries that convert directly to booked service calls.", impact: "More inbound calls from homeowners and property managers actively searching for HVAC service right now." },

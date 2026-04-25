@@ -417,7 +417,7 @@ const HomeServices = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
-  Sound Familiar?
+  The Biggest Marketing Challenges for Home Service Contractors
 </h2>
             <p className="text-muted-foreground">These are the challenges we hear from home service contractors every day.</p>
           </div>
