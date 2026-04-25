@@ -102,6 +102,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
       <Head>
         <title>HVAC SEO Case Study: How GrowSmallBiz Boosts Contractor Visibility</title>
         <meta name="description" content="GrowSmallBiz's HVAC SEO case study: Boost your contractor visibility with proven local SEO strategies. Get more calls and book jobs. Contact us!" />
+        <meta name="keywords" content="local SEO, HVAC marketing, plumbing SEO, electrical contractor SEO, digital marketing for contractors, lead generation strategies, case study, GrowSmallBiz" />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" />
       </Head>
       <ArticleJsonLd

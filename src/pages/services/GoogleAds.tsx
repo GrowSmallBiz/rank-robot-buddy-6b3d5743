@@ -245,6 +245,7 @@ const GoogleAds = () => {
       <Head>
         <title>Google Ads Management for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Get more phone calls, fill your calendar, and exceed your revenue goals with AI optimized Google Ads campaigns for local businesses. Contact us." />
+        <meta name="keywords" content="Google Ads management, local service advertising, pay-per-click marketing, targeted ad campaigns, advertising optimization, conversion tracking, small business marketing, lead generation strategies" />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/google-ads/" />
         {/* Open Graph */}
         <meta property="og:title" content="Google Ads Management for Small Businesses — GrowSmallBiz" />

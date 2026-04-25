@@ -520,6 +520,7 @@ const MarketingAutomation = () => {
       <Head>
         <title>Marketing Automation for Small Business | GrowSmallBiz</title>
         <meta name="description" content="Boost sales with AI powered marketing automation that automates lead follow-up, appointment reminders, review requests, & nurture campaigns." />
+        <meta name="keywords" content="marketing automation, small business marketing, lead generation, AI marketing solutions, customer engagement, email marketing, SMS marketing, sales automation" />
         <link
           rel="canonical"
           href="https://growsmallbiz.io/services/marketing-automation-for-small-business/"

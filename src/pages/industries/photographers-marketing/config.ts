@@ -29,6 +29,7 @@ export const photographersConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Photography Marketing & SEO Services | GrowSmallBiz",
   metaDescription: "GrowSmallBiz: Photography marketing solutions. Website design, AI SEO, and paid ads to fill your photography bookings. Schedule Strategy Session!",
+  metaKeywords: "photography marketing, photographer SEO, website design for photographers, client engagement strategies, marketing solutions for photographers, paid advertising for photography, CRM for photographers, booking automation",
   canonicalUrl: "/professional-services/marketing-for-photographers/",
   serviceName: "Photography Marketing & SEO",
   serviceType: "Digital Marketing for Photographers",

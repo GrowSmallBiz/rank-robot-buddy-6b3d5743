@@ -12,6 +12,7 @@ export default function WebchatDemo() {
       <Head>
         <title>Webchat: Engage Website Visitors, Capture Leads & Schedule Appointments</title>
         <meta name="description" content="Webchat: Engage & capture leads with AI Livechat. Convert website visitors into a booked appointment even when you sleep. Sign up today!" />
+        <meta name="keywords" content="web chat, live chat services, AI chatbots, marketing automation, lead capture, customer engagement, online communication, small business solutions" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/webchat/" />
       </Head>
       <VideoJsonLd

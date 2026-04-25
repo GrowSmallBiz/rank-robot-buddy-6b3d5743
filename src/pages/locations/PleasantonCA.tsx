@@ -24,6 +24,7 @@ const PleasantonCA = () => {
       <Head>
         <title>Digital Marketing Services in Pleasanton, CA | GrowSmallBiz</title>
         <meta name="description" content="Pleasanton, CA digital marketing services by GrowSmallBiz: Grow your business with AI SEO, AI optimized paid ads, and AI marketing automation." />
+        <meta name="keywords" content="local SEO, digital marketing Pleasanton, Google Ads management, reputation management services, local business growth, AI-powered marketing, lead generation strategies, Pleasanton marketing agency" />
         <link rel="canonical" href="https://growsmallbiz.io/locations/pleasanton-ca/" />
       </Head>
       <LocationJsonLd

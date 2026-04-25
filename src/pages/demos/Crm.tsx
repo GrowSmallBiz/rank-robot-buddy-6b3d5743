@@ -12,6 +12,7 @@ export default function CrmDemo() {
       <Head>
         <title>CRM for Small Businesses: Manage Customers & Marketing | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz CRM: Manage customers & marketing in one place. Fix your leaky bucket - Never let a lead slip through the cracks. Sign up today!" />
+        <meta name="keywords" content="CRM solutions, customer relationship management, marketing integration, small business CRM, contact tracking, smart lists, customer management software, GrowSmallBiz" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/crm/" />
       </Head>
       <VideoJsonLd

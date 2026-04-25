@@ -314,6 +314,7 @@ export interface NicheConfig {
   // ── 4.1 Page Meta ──
   pageTitle: string;
   metaDescription: string;
+  metaKeywords?: string;
   canonicalUrl: string;
   serviceName: string;
   serviceType: string;

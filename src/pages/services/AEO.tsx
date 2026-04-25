@@ -222,6 +222,7 @@ const AEO = () => {
       <Head>
         <title>Answer Engine Optimization (AEO) Services - Improve AI Visibility</title>
         <meta name="description" content="AEO services by GrowSmallBiz: Improve your AI visibility and answer customer questions directly. Built for local service businesses. Contact us." />
+        <meta name="keywords" content="Answer Engine Optimization, AEO services, local SEO, digital marketing agency, content optimization, customer query answers, online visibility, structured content" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/aeo/" />
       </Head>
 

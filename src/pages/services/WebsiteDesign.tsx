@@ -276,6 +276,7 @@ const WebsiteDesign = () => {
       <Head>
         <title>Website Design for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Mobile-optimized website with AI website chat, that boosts SEO for local businesses, built to convert visitors into leads. Contact us now." />
+        <meta name="keywords" content="website design, conversion optimization, local service businesses, lead generation, mobile-first design, fast loading websites, marketing integration, customer engagement" />
         <link rel="canonical" href="https://growsmallbiz.io/services/website-design/" />
       </Head>
 

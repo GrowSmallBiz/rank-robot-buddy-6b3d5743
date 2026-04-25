@@ -12,6 +12,7 @@ export default function SalesFunnelsDemo() {
       <Head>
         <title>Sales Funnels Demo for Small Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz builds sales funnels that turn clicks into clients. Create high-converting landing pages and get more booked jobs. Sign up today!" />
+        <meta name="keywords" content="sales funnels, marketing automation, conversion optimization, small business marketing, AI-powered marketing, funnel templates, A/B testing, online sales strategies" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-funnels/" />
       </Head>
       <VideoJsonLd

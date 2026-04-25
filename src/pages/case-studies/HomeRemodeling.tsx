@@ -106,6 +106,7 @@ const HomeRemodeling = () => {
       <Head>
         <title>Home Remodeling SEO Case Study: Real Results for Contractors</title>
         <meta name="description" content="Home remodeling contractors: GrowSmallBiz delivers real Local SEO results. See how we boost leads and website clicks. Schedule Strategy Call." />
+        <meta name="keywords" content="local SEO, home remodeling marketing, digital marketing for contractors, SEO case study, lead generation for remodelers, Google Business Profile optimization, home improvement SEO, AI-powered marketing strategies" />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" />
       </Head>
       <ArticleJsonLd

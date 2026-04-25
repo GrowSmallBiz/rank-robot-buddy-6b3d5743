@@ -242,6 +242,7 @@ const OnPageSEO = () => {
       <Head>
         <title>On-Page SEO Services for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz provides on-page SEO services, optimizing your website for higher rankings and conversions. Start with your free SEO audit today!" />
+        <meta name="keywords" content="on-page SEO, SEO services, local SEO, website optimization, search engine rankings, digital marketing agency, conversion rate optimization, SEO audit" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/on-page-seo/" />
       </Head>
 

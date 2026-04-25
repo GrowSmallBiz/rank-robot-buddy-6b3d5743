@@ -249,6 +249,7 @@ const HealthAndWellness = () => {
       <Head>
         <title>Marketing for Health & Wellness Practices | GrowSmallBiz</title>
         <meta name="description" content="Attract more patients with GrowSmallBiz AI-powered marketing for dental, chiropractic, and med spa practices. Serving nationwide. Contact us." />
+        <meta name="keywords" content="digital marketing for health practices, SEO for wellness businesses, patient acquisition strategies, reputation management for dental practices, Google Ads for chiropractors, local SEO for med spas, marketing solutions for healthcare, GrowSmallBiz services" />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/" />
       </Head>
       <ServiceJsonLd
