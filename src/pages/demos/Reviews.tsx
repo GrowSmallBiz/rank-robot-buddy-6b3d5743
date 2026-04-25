@@ -11,7 +11,7 @@ export default function ReviewsDemo() {
     <>
       <Head>
         <title>Marketing Automation for Reviews: Enhance Your Online Reputation</title>
-        <meta name="description" content="More 5-star reviews mean more calls, more bookings, and a reputation your competitors can't touch. See how GrowSmallBiz automates the entire process." />
+        <meta name="description" content="Enhance your online reputation with automated review management. Get more 5-star reviews and attract more customers. Sign up today!" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/reviews/" />
       </Head>
       <VideoJsonLd

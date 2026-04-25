@@ -186,7 +186,7 @@ const LocalSEO = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Local SEO for Local Service Businesses | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps local service businesses improve visibility in Google Business Profile, map pack, and local search results through managed Local SEO." />
+        <meta name="description" content="Local SEO: GrowSmallBiz helps local businesses get found. Improve your Google ranking and attract more customers today! Get Free SEO Audit." />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/local-seo/" />
       </Head>
 

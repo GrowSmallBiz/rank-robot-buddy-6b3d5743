@@ -82,7 +82,7 @@ const LSA = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Google Local Service Ads Management for Local Businesses | GrowSmallBiz</title>
-        <meta name="description" content="Google Local Service Ads management for HVAC, dental, med spa, home services, and other small service businesses. Pay-per-lead pricing, Google Verified badge, verified leads only. Free strategy call." />
+        <meta name="description" content="GrowSmallBiz manages Google Local Service Ads for local small businesses, so you get real qualified leads, don't pay for clicks. Contact us!" />
         <meta property="og:title" content="Google Local Service Ads Management for Small Businesses — GrowSmallBiz" />
         <meta property="og:description" content="Small service businesses running Google LSA campaigns that generate pre-qualified leads at pay-per-lead pricing. Google Verified badge activation, profile optimization, dispute management, and transparent reporting." />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/" />

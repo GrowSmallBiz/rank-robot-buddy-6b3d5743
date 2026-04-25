@@ -248,7 +248,7 @@ const TechnicalSEO = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Technical SEO for Local Service Businesses | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz provides managed technical SEO for local service businesses. Crawlability, indexation, schema, site speed, and ongoing monitoring powered by Agentic AI Playbooks." />
+        <meta name="description" content="Technical SEO for local businesses: Boosts your site's performance with Technical SEO powered by Agentic AI Playbooks. Get a free SEO audit!" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/technical-seo/" />
       </Head>
 

@@ -172,7 +172,7 @@ const GEO = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Managed GEO for Local Businesses: Get Found in AI Search | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps local service businesses become easier for AI systems to identify, understand, and surface — through managed GEO built for the new reality of search." />
+        <meta name="description" content="GrowSmallBiz's GEO services help local businesses become easier for AI systems to identify, understand, and get found in AI search. Contact us today!" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/geo/" />
       </Head>
 
