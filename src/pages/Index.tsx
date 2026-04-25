@@ -279,18 +279,9 @@ const Index = () => {
                 loading="lazy"
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent pointer-events-none" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                <p className="text-xl md:text-2xl font-display font-bold text-foreground leading-tight">
-                  Your Marketing Is a <span className="text-primary">Leaky Bucket</span>
-                </p>
-                <p className="text-sm md:text-base text-muted-foreground mt-2">
-                  Every gap between your tools is a lead walking away.
-                </p>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
-
 
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Fragmented Approach */}
