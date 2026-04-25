@@ -65,7 +65,7 @@ const Contact = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
-              Let's Grow Together
+              Contact GrowSmallBiz for Your Free AI-Powered Local SEO Consultation
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed animate-fade-up delay-200">
