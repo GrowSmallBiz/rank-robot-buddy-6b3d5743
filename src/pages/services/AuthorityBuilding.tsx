@@ -186,7 +186,7 @@ const AuthorityBuilding = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: Shield, text: "Authority Building for Local Service Businesses" }}
-          title={<>Build the Authority That Turns Search Visibility Into{" "}<br className="hidden md:inline" /></>}
+          title="Build the Authority That Turns Search Visibility Into"
           titleHighlight="Market Trust"
           subtitle='<h2 className="bg-gradient-heading bg-clip-text text-transparent" class="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
   Most local service businesses do not have a keyword problem. They have an authority problem.

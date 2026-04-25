@@ -203,7 +203,7 @@ const LinkBuilding = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: LinkIcon, text: "Link Building for Local Service Businesses" }}
-          title={<>Build the Backlink Profile Your Competitors{" "}<br className="hidden md:inline" />Wish They </>}
+          title="Build the Backlink Profile Your Competitors Wish They"
           titleHighlight="Had"
           subtitle="Build the Backlink Profile That Helps Local Service Businesses Rank, Get Discovered, and Earn Trust<br /><br />Link building is one part of a stronger SEO system. GrowSmallBiz helps local service businesses earn relevant, editorially placed links that strengthen local authority, support visibility across search ecosystems, and reinforce the pages that drive leads, calls, and booked jobs."
           primaryCTA={{

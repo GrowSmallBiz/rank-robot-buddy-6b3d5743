@@ -195,7 +195,7 @@ const GEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: Globe, text: "Managed AI SEO" }}
-          title={<>Managed GEO Services for Local{" "}<br className="hidden md:inline" /></>}
+          title="Managed GEO Services for Local"
           titleHighlight="Service Businesses"
           subtitle="Get Found Where Your Next Customer Is Already Searching"
           description="Search behavior is shifting. More consumers are turning to AI-powered tools — Google AI Overviews, conversational search assistants, generative discovery engines — to find, compare, and choose local service providers. If your business is not visible in those environments, competitors who are will take the work."
