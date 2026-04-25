@@ -61,20 +61,18 @@ export default function WorkflowAutomationsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/0kD0zUIt0n5b23xP6gbC/media/1a19bcb3-10ef-436f-8ada-3c679593c42b.png"
-                alt="Automate Many Processes"
+                alt="Workflow automation icon illustrating streamlined business processes and task automation for small businesses."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
 
             {/* Prospect Interactions */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/0kD0zUIt0n5b23xP6gbC/media/4d72dfec-a22c-4d9a-8379-bb190a272462.png"
-                alt="Prospect Interactions"
+                alt="Workflow automation icon representing team interactions and communication processes for business efficiency."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h3 className="text-xl md:text-2xl font-black text-foreground mb-4">Prospect Interactions</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -93,20 +91,18 @@ export default function WorkflowAutomationsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/0kD0zUIt0n5b23xP6gbC/media/fba63086-75b6-493a-af98-12438a8b3791.png"
-                alt="Team Interactions"
+                alt="Workflow automation icon featuring checklists and a calendar, symbolizing task management and scheduling for business efficiency."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
 
             {/* Project Management */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/0kD0zUIt0n5b23xP6gbC/media/96bece65-1dfa-40fe-bb77-1079cb6073fe.png"
-                alt="Project Management"
+                alt="Illustration of a robot performing data extraction, with documents, graphs, and digital interfaces representing workflow automation and data management for business processes."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h3 className="text-xl md:text-2xl font-black text-foreground mb-4">Project Management</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
@@ -145,10 +141,9 @@ export default function WorkflowAutomationsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/0kD0zUIt0n5b23xP6gbC/media/1dd36b24-6a34-4703-8a37-f16b2b496367.png"
-                alt="Multi-channel campaigns"
+                alt="Person holding a tablet beside a performance gauge with red and green segments, gears, and icons representing quality, balance, and analytics, illustrating workflow automation and business efficiency for GrowSmallBiz services."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>

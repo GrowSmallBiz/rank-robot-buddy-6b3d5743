@@ -60,10 +60,9 @@ export default function SalesTrackerDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b2d0783d-eac3-46e4-96bb-bc87f6d93dce.png"
-                alt="Sales pipeline tracking"
+                alt="Sales pipeline interface with customizable settings and automation features for tracking leads and managing sales opportunities."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -74,10 +73,9 @@ export default function SalesTrackerDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/89eacbc8-536d-4e0f-9923-da1253d726b4.png"
-                alt="Fully customizable pipeline"
+                alt="Flowchart illustrating customizable sales pipeline process for tracking leads and opportunities."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Fully Customizable
@@ -104,10 +102,9 @@ export default function SalesTrackerDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/8507820d-2c47-466d-85e3-9af88b082e82.png"
-                alt="Multiple pipelines"
+                alt="Computer screen with a gear icon, symbolizing automation and customization in sales tracking for optimizing lead management and sales pipelines."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -147,10 +144,9 @@ export default function SalesTrackerDemo() {
               </div>
               <img
                 src="https://img.freepik.com/free-vector/business-people-with-magnifying-glass-diagrams_1262-18919.jpg?w=900"
-                alt="Pipeline reporting"
+                alt="Business professionals analyzing sales pipeline metrics with a magnifying glass, showcasing graphs and charts for tracking leads and opportunities."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -182,10 +178,9 @@ export default function SalesTrackerDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63def1c4a486204c7825fd66.png"
-                alt="Sales opportunities at a glance"
+                alt="Dashboard displaying sales pipeline metrics, including opportunities, pipeline value, and conversion rate, with visual representations of the sales funnel and stages distribution for tax preparation services."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>

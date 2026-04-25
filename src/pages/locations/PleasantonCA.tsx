@@ -46,7 +46,7 @@ const PleasantonCA = () => {
 
       {/* ===== HERO SECTION ===== */}
       <section className="hero-section">
-        <img src={pleasantonHero} alt="GrowSmallBiz digital marketing agency serving Pleasanton CA dual-ZIP local service businesses" width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
+        <img src={pleasantonHero} alt="Pleasanton downtown view featuring Pleasanton Arch, lined with trees and historic buildings, with rolling hills in the background, representing local business community in Pleasanton, CA." width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ backgroundColor: `hsl(var(--background) / 0.82)` }} />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">

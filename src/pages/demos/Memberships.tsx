@@ -41,10 +41,9 @@ export default function MembershipsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dd453ea48620f215253f22.png"
-                alt="Online education market growth"
+                alt="Illustration of diverse individuals engaging with digital content, including online courses in medical, finance, and music subjects, surrounded by books and educational materials, representing the growth of online education and membership offerings."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -63,10 +62,9 @@ export default function MembershipsDemo() {
               <div className="bg-card border border-border rounded-xl p-8">
                 <img
                   src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/e8b601f9-0375-4d0a-8d83-94f30b71dda7.png"
-                  alt="Membership Offers"
+                  alt="Icon representing user profile and settings for online memberships and courses."
                   className="w-24 h-24 mx-auto mb-4 object-contain"
-                  loading="lazy"
-                />
+                  loading="lazy" />
                 <h3 className="text-xl font-bold text-foreground mb-3">Membership Offers</h3>
                 <p className="text-muted-foreground">
                   Grow your customer base by offering free or paid memberships to exclusive content or offers.
@@ -75,10 +73,9 @@ export default function MembershipsDemo() {
               <div className="bg-card border border-border rounded-xl p-8">
                 <img
                   src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/af7bb20f-8e29-479a-b1f4-b9d932640594.png"
-                  alt="Courses"
+                  alt="Image depicting a digital interface showcasing online course creation tools and membership options for GrowSmallBiz, emphasizing features for building unlimited courses and memberships."
                   className="w-24 h-24 mx-auto mb-4 object-contain"
-                  loading="lazy"
-                />
+                  loading="lazy" />
                 <h3 className="text-xl font-bold text-foreground mb-3">Courses</h3>
                 <p className="text-muted-foreground">
                   Increase revenue by selling courses in your area of expertise. Help yourself by helping others grow.
@@ -87,10 +84,9 @@ export default function MembershipsDemo() {
               <div className="bg-card border border-border rounded-xl p-8">
                 <img
                   src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/3fede551-a2d5-4fe2-ac1b-90f104aaed04.png"
-                  alt="Employee Training"
+                  alt="Two figures discussing in front of a presentation screen with a growth chart, representing employee training and course creation for online education."
                   className="w-24 h-24 mx-auto mb-4 object-contain"
-                  loading="lazy"
-                />
+                  loading="lazy" />
                 <h3 className="text-xl font-bold text-foreground mb-3">Employee Training</h3>
                 <p className="text-muted-foreground">
                   Create online training courses for employees and reduce the time and manpower required to onboard staff.
@@ -131,10 +127,9 @@ export default function MembershipsDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dd40d2077c9a6293488d29.png"
-                alt="Course creation templates"
+                alt="Two women collaborating on a laptop, discussing online course creation and membership options, with visual prompts for building sprint and marathon courses, and membership offers."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
                   Course Creation

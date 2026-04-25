@@ -38,10 +38,9 @@ export default function ReviewsDemo() {
             {/* Hero Image */}
             <img
               src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/31e31ab8-658f-4140-9ea9-01b50ed9448b.jpeg"
-              alt="AI-Powered Reviews Dashboard"
+              alt="Man smiling while holding smartphone, receiving a text message prompting for a review, with a truck in the background, illustrating customer engagement and review solicitation for GrowSmallBiz's services."
               className="w-full rounded-2xl shadow-lg mb-8"
-              loading="lazy"
-            />
+              loading="lazy" />
           </div>
         </section>
 
@@ -68,10 +67,9 @@ export default function ReviewsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/d3584017-5df7-4803-a9c5-26cd5ce701a3.png"
-                alt="5-star reviews dashboard"
+                alt="AI-generated review reminder message with user profile, 5-star review from Bonnie Adamson, and text highlighting automated review request features for enhancing online reputation."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -110,10 +108,9 @@ export default function ReviewsDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b4ad0a90-8fc4-490a-af57-6f3d17320664.png"
-                alt="Facebook reviews"
+                alt="Joe's Fix N Repair Facebook listing showing 4.8 out of 5 rating for auto services, emphasizing online reputation and customer reviews."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
                   Get found on Facebook faster by new customers
@@ -152,10 +149,9 @@ export default function ReviewsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/eab49fa4-0ce9-4499-b009-612bdf637e0c.png"
-                alt="Review sites management"
+                alt="Graphic illustrating various review platforms, including BBB, Yellow Pages (YP), DealerRater, GoodBed, and Cars.com, connected to a central logo representing GrowSmallBiz, emphasizing online reputation management and review integration."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -166,10 +162,9 @@ export default function ReviewsDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/SwP9BuV0qUOPa58lqK1y/media/645d6aa555bb621d7ba10f43.png"
-                alt="Customer reviews impact"
+                alt="Woman smiling while using a laptop, surrounded by review stars and customer feedback, illustrating online reputation management for businesses by GrowSmallBiz."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Customer reviews are the single most effective bit of marketing you can do for your company
@@ -198,10 +193,9 @@ export default function ReviewsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/5dc0e53a-d05d-4870-a8cc-4725c1a8588a.png"
-                alt="Automatic review collection"
+                alt="Facebook and Google logos representing key online review platforms for managing customer feedback and enhancing business visibility."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -221,10 +215,9 @@ export default function ReviewsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/0d1a6195-f982-4b5d-ae2c-a248e574ec26.png"
-                alt="Automate online reviews"
+                alt="Hands holding smartphones displaying social media icons and a star symbol, illustrating the importance of customer reviews and online reputation management for businesses."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -278,19 +271,17 @@ export default function ReviewsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/7028f907-6ad8-460f-9ded-32b9da29c7bb.jpeg"
-                alt="Win more business with reviews"
+                alt="Illustration of two people interacting with a smartphone displaying customer reviews, featuring five stars and chat bubbles, representing online reputation management and review collection for businesses."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/02cd0758-4067-4dd7-9912-10eaa20de089.png"
-                alt="Protect your reputation"
+                alt="Data visualization and analysis, illustrated with a smartphone displaying &quot;DATA&quot; and a character holding printed reports with graphs and charts, emphasizing review management and reputation building for businesses."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h4 className="text-lg font-bold text-foreground mb-2">Protect</h4>
                 <p className="text-primary font-semibold mb-4">Protect your reputation</p>
@@ -316,10 +307,9 @@ export default function ReviewsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/af1df8e8-fe64-4a2c-8ee6-892e6d92a4ba.png"
-                alt="Reviews dashboard"
+                alt="Hands holding smartphones displaying customer reviews and ratings, illustrating review management and reputation enhancement for businesses."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -339,10 +329,9 @@ export default function ReviewsDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/0d1a6195-f982-4b5d-ae2c-a248e574ec26.png"
-                alt="Review monitoring dashboard"
+                alt="Hands holding smartphones displaying social media icons and a star symbol, illustrating the importance of customer reviews and online reputation management for businesses."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>

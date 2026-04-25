@@ -107,7 +107,7 @@ const HVAC = () => {
       {/* Hero Section */}
       <section className="pt-8 pb-24 relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={hvacHeroImage} alt="HVAC technician working on air conditioning unit" className="w-full h-full object-cover" />
+          <img src={hvacHeroImage} alt="HVAC technician working on an air conditioning unit, demonstrating hands-on service and maintenance in a modern outdoor setting." className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-background/85" />
         </div>
         <div className="absolute inset-0 hero-glow" />

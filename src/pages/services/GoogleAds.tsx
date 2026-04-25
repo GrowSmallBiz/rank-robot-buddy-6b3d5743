@@ -352,12 +352,11 @@ const GoogleAds = () => {
         <div className="absolute inset-0">
           <img
             src={heroGoogleAdsRoofing}
-            alt="Roofer on a residential roof at golden hour with abstract Google Ads analytics overlay"
+            alt="Couple analyzing Google search results on laptop, focused on local service business leads and advertising strategies."
             width={1920}
             height={1080}
             fetchPriority="high"
-            className="w-full h-full object-cover"
-          />
+            className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-background/60" />
         </div>
         <div className="absolute inset-0 hero-glow" />

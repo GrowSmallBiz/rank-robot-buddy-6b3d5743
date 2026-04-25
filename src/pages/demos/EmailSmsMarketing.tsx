@@ -51,7 +51,7 @@ export default function EmailSmsMarketingDemo() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b4085ff4-1374-4759-9e0d-934e265e51eb.png" alt="Email & SMS integration" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b4085ff4-1374-4759-9e0d-934e265e51eb.png" alt="Icon representing integrated email and SMS marketing solutions on a computer screen, featuring email, SMS, and multimedia elements, emphasizing automation and customization for small businesses." className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-black text-foreground mb-2">Email Marketing</h3>
@@ -81,7 +81,7 @@ export default function EmailSmsMarketingDemo() {
 </h2>
                 <p className="text-muted-foreground leading-relaxed">Easily create customized email and text campaigns using the drag-and-drop template builder. Personalize all of your messages using a simple drop-down menu to personalize each message so your contacts will feel you are talking directly to them.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/bc643623-9d6f-470d-bfab-57f7e13995c8.png" alt="Personalize and Customize" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/bc643623-9d6f-470d-bfab-57f7e13995c8.png" alt="Smartphone displaying messaging icons and features, symbolizing email and SMS marketing integration for GrowSmallBiz, emphasizing automation and communication tools." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
 
             <div className="text-center mb-16">
@@ -97,7 +97,7 @@ export default function EmailSmsMarketingDemo() {
                 <h3 className="text-xl font-bold text-foreground mb-4">Communicate Efficiently With Customers and Leads</h3>
                 <p className="text-muted-foreground leading-relaxed">Reach your customers wherever they are with text or email messaging. Request reviews, connect with website visitors, collect payments, respond to Facebook &amp; Google Messages, and market to customers and leads all from your app.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b979a746-720d-414a-b37f-f2596589b4e0.png" alt="Communicate Efficiently" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b979a746-720d-414a-b37f-f2596589b4e0.png" alt="Group of diverse professionals smiling together, with graphical elements representing marketing analytics and growth, emphasizing team collaboration and effectiveness in marketing strategies." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
           </div>
         </section>

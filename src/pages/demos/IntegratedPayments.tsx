@@ -49,17 +49,17 @@ export default function IntegratedPaymentsDemo() {
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="bg-card border border-border rounded-xl p-6 text-center">
-                <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/ac6f240f-56e3-4dac-b9b2-062f4b0058c9.png" alt="Flexible Payment Options" className="w-full rounded-lg mb-4" loading="lazy" />
+                <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/ac6f240f-56e3-4dac-b9b2-062f4b0058c9.png" alt="Integrated payment solutions logo representing GrowSmallBiz, emphasizing streamlined invoicing and payment collection for small businesses." className="w-full rounded-lg mb-4" loading="lazy" />
                 <h3 className="text-lg font-bold text-foreground mb-2">Flexible Payment Options</h3>
                 <p className="text-sm text-muted-foreground">Sell right on your website or even send a SMS link to close deals. Let customers purchase whenever they are ready.</p>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 text-center">
-                <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/5c6d0158-8905-4876-95de-56911f59400b.png" alt="Stop Pushing Paper" className="w-full rounded-lg mb-4" loading="lazy" />
+                <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/5c6d0158-8905-4876-95de-56911f59400b.png" alt="Integrated payment solutions icon symbolizing streamlined invoicing and faster payment collection for small businesses." className="w-full rounded-lg mb-4" loading="lazy" />
                 <h3 className="text-lg font-bold text-foreground mb-2">Stop Pushing Paper</h3>
                 <p className="text-sm text-muted-foreground">No postage. No paper. No phone tag. Cut back on the wasted time and resources associated with gathering payment.</p>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 text-center">
-                <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/fb11cf4a-a785-40aa-8dc4-1b58eaf27650.png" alt="Get Paid Faster" className="w-full rounded-lg mb-4" loading="lazy" />
+                <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/fb11cf4a-a785-40aa-8dc4-1b58eaf27650.png" alt="Integrated payment solutions icon representing streamlined invoicing and payment collection for small businesses." className="w-full rounded-lg mb-4" loading="lazy" />
                 <h3 className="text-lg font-bold text-foreground mb-2">Get Paid Faster</h3>
                 <p className="text-sm text-muted-foreground">By texting invoice payment links, you'll see much faster response rates than with traditional methods.</p>
               </div>
@@ -79,10 +79,10 @@ export default function IntegratedPaymentsDemo() {
                 <h3 className="text-xl font-bold text-foreground mb-4">Customizable Payment Options</h3>
                 <p className="text-muted-foreground leading-relaxed">Whether you sell one-time purchases or recurring subscriptions, you can manage it all. Bringing revenue in has never been easier.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/6575d13e-e94d-4590-8b54-4c454fa4713b.png" alt="Customizable Payment Options" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/6575d13e-e94d-4590-8b54-4c454fa4713b.png" alt="Person using a printer to print an invoice, emphasizing streamlined payment processes for small businesses with integrated payment solutions." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b3b53dd6-f35e-41af-81c7-d8ea3fd59d9f.png" alt="Data At A Glance" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b3b53dd6-f35e-41af-81c7-d8ea3fd59d9f.png" alt="Person holding a tablet next to a performance gauge, with icons representing quality, balance, and analytics, illustrating efficient payment tracking and management for small businesses." className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-4">Data At A Glance</h3>
                 <p className="text-muted-foreground leading-relaxed">Easily see who has completed payment, and who needs follow up. Quickly export to your accounting software with integration-friendly data formats.</p>
@@ -107,7 +107,7 @@ export default function IntegratedPaymentsDemo() {
                 <h3 className="text-xl font-bold text-foreground mb-4">Get Paid Faster Than Ever</h3>
                 <p className="text-muted-foreground leading-relaxed">Collecting payments isn't anyone's favorite job. Make paying as quick and convenient as possible for your customers with a secure payment link delivered right to their phone.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/a71430fb-499c-405b-ba6e-94a121c0e6cd.png" alt="Get Paid Faster" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/a71430fb-499c-405b-ba6e-94a121c0e6cd.png" alt="Woman smiling while holding a credit card and using a tablet, illustrating easy and fast payment solutions for businesses with integrated payment systems." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">

@@ -65,10 +65,9 @@ export default function UniversalInboxDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/55418823-fcfc-429e-afd0-f94cdbf6da52.png"
-                alt="Every Message In One Place"
+                alt="Smartphone displaying email notification with an envelope and paper airplane, symbolizing unified communication channels for SMS, email, and social media integration in GrowSmallBiz's Universal Inbox service."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -79,10 +78,9 @@ export default function UniversalInboxDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/f47426db-1317-42a5-8757-84f7b26c7c1b.png"
-                alt="Be channel-agnostic"
+                alt="Universal Inbox icon representing centralized communication for SMS, email, social media, webchat, and calls, enhancing customer engagement and streamlining interactions."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
   Be channel-agnostic
@@ -104,19 +102,17 @@ export default function UniversalInboxDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/7b984ed6-e18c-4462-9fa8-42dd247f2f0e.png"
-                alt="Chat with context"
+                alt="Universal Inbox icon representing centralized communication across channels like SMS, email, and social media for enhanced customer engagement."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/1d7598c5-6793-4963-a282-4b133e104881.png"
-                alt="Get started in seconds"
+                alt="Universal Inbox icon representing seamless communication across email, SMS, social media, and webchat for GrowSmallBiz's customer engagement solutions."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
   Get started in seconds.
@@ -153,10 +149,9 @@ export default function UniversalInboxDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/1ef4f199-bada-4727-a437-be65b78a0318.png"
-                alt="Turn Messages Into Revenue"
+                alt="Two professionals analyzing data on a digital screen, one holding a laptop and the other a pie chart, with bar graphs in the background, representing data-driven communication solutions for small businesses."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -198,10 +193,9 @@ export default function UniversalInboxDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/554c6e80-bffd-4e97-bc92-e60cb088c65a.png"
-                alt="All customer interactions"
+                alt="Unified Inbox interface displaying customer messages, SMS and email options, showcasing GrowSmallBiz's communication features for small businesses."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -231,10 +225,9 @@ export default function UniversalInboxDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/a2e2cc13-a3b9-4f3a-9403-4590e95bda02.png"
-                alt="Automate Text Back"
+                alt="Illustration of diverse individuals engaging with data visualization and analytics tools, emphasizing communication and customer interaction in a unified digital platform."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
