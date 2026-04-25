@@ -16,6 +16,7 @@ export const medSpaConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Med Spa Marketing: AI-Powered Client Acquisition | GrowSmallBiz",
   metaDescription: "AI-powered marketing for med spas. Attract clients with SEO, AI Optimized Google Ads, Meta ads and 24/7 AI Marketing Automation. Contact us.",
+  metaKeywords: "medical spa marketing, digital marketing for med spas, AI marketing solutions, SEO for medical spas, client acquisition strategies, Google Ads for med spas, marketing challenges in med spas, attract high-value clients",
   canonicalUrl: "/health-and-wellness-practices/marketing-for-med-spas/",
   serviceName: "Med Spa Marketing Services",
   serviceType: "Digital Marketing for Medical Spas",
