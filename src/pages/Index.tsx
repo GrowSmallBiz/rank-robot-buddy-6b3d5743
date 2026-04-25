@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { baseContactCTA } from "@/config/contactCTA";
+import leakyBucket from "@/assets/facebook-ads/leaky-bucket.jpg";
 
 
 // Lazy-load below-the-fold sections to improve FCP
