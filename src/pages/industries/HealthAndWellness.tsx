@@ -247,7 +247,7 @@ const HealthAndWellness = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title> Marketing for Health & Wellness Practices | GrowSmallBiz</title>
+        <title>Marketing for Health & Wellness Practices | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps dental practices, chiropractors, and med spas attract more patients with AI-powered local SEO, Google Ads, and reputation management. Schedule a free strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/" />
       </Head>
