@@ -344,6 +344,7 @@ const RealtorMarketing = () => {
       <Head>
         <title>Real Estate Marketing Solutions for Realtors | GrowSmallBiz</title>
         <meta name="description" content="Realtor marketing solutions by GrowSmallBiz: Get an AI-powered CRM, lead generation, and IDX websites. Schedule Strategy Session!" />
+        <meta name="keywords" content="real estate marketing, realtor lead generation, IDX websites, AI-powered CRM, marketing solutions for realtors, client engagement strategies, brand ownership, lead capture tools" />
         <link rel="canonical" href="https://growsmallbiz.io/professional-services/marketing-for-realtors/" />
       </Head>
 

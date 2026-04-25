@@ -23,6 +23,7 @@ const DanvilleCA = () => {
       <Head>
         <title>Digital Marketing Services in Danville, CA | GrowSmallBiz</title>
         <meta name="description" content="Danville, CA digital marketing services by GrowSmallBiz: Grow your business with AI SEO, AI optimized paid ads, and AI marketing automation." />
+        <meta name="keywords" content="local SEO, digital marketing Danville, GrowSmallBiz, website design, Google Ads management, local service businesses, AI-powered marketing, online visibility" />
         <link rel="canonical" href="https://growsmallbiz.io/locations/danville-ca/" />
       </Head>
       <LocationJsonLd

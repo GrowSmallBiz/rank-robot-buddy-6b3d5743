@@ -13,6 +13,7 @@ export default function CallTrackingDemo() {
       <Head>
         <title>Call Tracking Demo for Small Businesses | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz Call Tracking helps your small business track calls & improve ROI. Get real-time insights and call recordings. Contact us now." />
+        <meta name="keywords" content="call tracking, phone call analytics, marketing attribution, call recording, lead tracking, small business marketing, real-time call insights, performance analytics" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking/" />
       </Head>
       <VideoJsonLd

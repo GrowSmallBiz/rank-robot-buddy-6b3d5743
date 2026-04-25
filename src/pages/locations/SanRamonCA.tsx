@@ -23,6 +23,7 @@ const SanRamonCA = () => {
       <Head>
         <title>Digital Marketing Services in San Ramon, CA | GrowSmallBiz</title>
         <meta name="description" content="Digital marketing services in San Ramon, CA. Grow your business with AI Local SEO, AI optimized Google Ads, and AI marketing automation." />
+        <meta name="keywords" content="digital marketing San Ramon, local SEO services, lead generation San Ramon, reputation management, Google Ads management, AI-powered marketing, small business marketing, integrated marketing solutions" />
         <link rel="canonical" href="https://growsmallbiz.io/locations/san-ramon-ca/" />
       </Head>
       <LocationJsonLd

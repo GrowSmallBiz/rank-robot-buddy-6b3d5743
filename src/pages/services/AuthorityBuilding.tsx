@@ -164,6 +164,7 @@ const AuthorityBuilding = () => {
       <Head>
         <title>Authority Building for Local Businesses: Enhance Your SEO!</title>
         <meta name="description" content="GrowSmallBiz builds authority and trust for your local business. Authority blogs, press releases, and brand mentions. Get your Free SEO Audit!" />
+        <meta name="keywords" content="authority building, SEO services, local business SEO, search visibility, online credibility, trust signals, content strategy, digital marketing agency" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/authority-building/" />
       </Head>
 

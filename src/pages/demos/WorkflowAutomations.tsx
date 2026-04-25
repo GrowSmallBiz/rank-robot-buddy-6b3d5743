@@ -11,6 +11,7 @@ export default function WorkflowAutomationsDemo() {
       <Head>
         <title>Workflow Automations for Small Businesses: Streamline Operations</title>
         <meta name="description" content="GrowSmallBiz Workflow Automations: Automate your follow-ups, reminders, and handoffs to focus on growing your business. Sign up today!" />
+        <meta name="keywords" content="workflow automation, business process automation, marketing automation, small business solutions, automate tasks, enhance business efficiency, streamline communications, GrowSmallBiz services" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/workflow-automations/" />
       </Head>
       <VideoJsonLd

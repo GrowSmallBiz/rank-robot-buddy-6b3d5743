@@ -12,6 +12,7 @@ export default function IntegratedPaymentsDemo() {
       <Head>
         <title>Integrated Payments for Small Business: Get Paid Faster</title>
         <meta name="description" content="Integrated Payments: Get paid faster. Streamline billing, invoicing, and payment collection. Leading payment processors are integrated. Sign up today!" />
+        <meta name="keywords" content="integrated payment solutions, small business invoicing, payment collection, streamline billing, customizable payment options, invoice tracking, reduce paperwork, payment management" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/integrated-payments/" />
       </Head>
       <VideoJsonLd

@@ -65,6 +65,7 @@ const LocationsWeServe = () => {
       <Head>
         <title>Digital Marketing & SEO Services in Bay Area and Nationwide</title>
         <meta name="description" content="GrowSmallBiz serves local service businesses across Greater San Francisco Bay Area (Sacramento to San Jose) and the entire United States. Contact us." />
+        <meta name="keywords" content="local digital marketing, Bay Area marketing services, SEO for local businesses, paid advertising Bay Area, reputation management services, GrowSmallBiz Digital Marketing, localized marketing strategies, small business marketing solutions" />
         <link rel="canonical" href="https://growsmallbiz.io/locations/locations-we-serve/" />
       </Head>
       <PageJsonLd

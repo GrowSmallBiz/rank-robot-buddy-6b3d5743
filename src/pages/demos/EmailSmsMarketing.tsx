@@ -12,6 +12,7 @@ export default function EmailSmsMarketingDemo() {
       <Head>
         <title>Email & SMS Marketing for Small Businesses | GrowSmallBiz</title>
         <meta name="description" content="Email & SMS marketing for small businesses. Automate campaigns and stay on top of the mind of new leads and past clients. Sign up today!" />
+        <meta name="keywords" content="email marketing, SMS marketing, marketing automation, small business marketing, lead engagement, integrated marketing solutions, campaign management, customer communication" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/email-sms-marketing/" />
       </Head>
       <VideoJsonLd

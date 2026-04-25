@@ -169,6 +169,7 @@ const Index = () => {
       <Head>
         <title>AI Powered Digital Marketing for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="AI-powered digital marketing for local businesses. Get more leads with website, AI-SEO, paid ads, and AI marketing automation. Contact us!" />
+        <meta name="keywords" content="digital marketing, local SEO, lead generation, website design, CRM automation, paid advertising, marketing solutions, growth system" />
         <link rel="canonical" href="https://growsmallbiz.io/" />
       </Head>
       <PageJsonLd

@@ -23,6 +23,7 @@ const WalnutCreekCA = () => {
       <Head>
         <title>Digital Marketing Services in Walnut Creek, CA | GrowSmallBiz</title>
         <meta name="description" content="Walnut Creek digital marketing services: AI SEO, AI optimized Google Ads, and 24x7 marketing automation powered by AI for your business." />
+        <meta name="keywords" content="local SEO, digital marketing Walnut Creek, Google Ads services, reputation management, lead generation, AI-powered marketing, local business growth, marketing strategy Walnut Creek" />
         <link rel="canonical" href="https://growsmallbiz.io/locations/walnut-creek-ca/" />
       </Head>
       <LocationJsonLd

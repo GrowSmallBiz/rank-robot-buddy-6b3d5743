@@ -249,6 +249,7 @@ const TechnicalSEO = () => {
       <Head>
         <title>Technical SEO for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="Technical SEO for local businesses: Boosts your site's performance with Technical SEO powered by Agentic AI Playbooks. Get a free SEO audit!" />
+        <meta name="keywords" content="technical SEO, SEO services, local SEO, website performance, SEO audit, crawlability, indexation, site speed, digital marketing agency, AI-driven SEO" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/technical-seo/" />
       </Head>
 

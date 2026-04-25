@@ -39,6 +39,7 @@ const Contact = () => {
       <Head>
         <title>Contact Us | GrowSmallBiz Digital Marketing</title>
         <meta name="description" content="GrowSmallBiz helps local businesses grow with AI-powered marketing. Get a free consultation and boost your SEO. Schedule strategy call!" />
+        <meta name="keywords" content="digital marketing, SEO strategies, local service businesses, AI-powered marketing, free consultation, contact GrowSmallBiz, marketing assessment, business growth services" />
         <link rel="canonical" href="https://growsmallbiz.io/contact/" />
       </Head>
       <PageJsonLd

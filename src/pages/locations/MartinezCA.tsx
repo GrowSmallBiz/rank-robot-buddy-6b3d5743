@@ -23,6 +23,7 @@ const MartinezCA = () => {
       <Head>
         <title>Digital Marketing Services in Martinez, CA | GrowSmallBiz</title>
         <meta name="description" content="Martinez, CA digital marketing services by GrowSmallBiz: Grow your business with AI SEO, AI optimized paid ads, and AI marketing automation." />
+        <meta name="keywords" content="local digital marketing, Martinez CA marketing services, AI-powered SEO, reputation management Martinez, Google Ads for local businesses, local SEO strategies, small business marketing, integrated marketing solutions" />
         <link rel="canonical" href="https://growsmallbiz.io/locations/martinez-ca/" />
       </Head>
       <LocationJsonLd

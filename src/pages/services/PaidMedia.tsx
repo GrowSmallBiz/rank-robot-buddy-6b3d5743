@@ -342,6 +342,7 @@ const PaidMedia = () => {
       <Head>
         <title>Paid Advertising for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Generate leads with AI-powered paid ads for local businesses. GrowSmallBiz manages Google, Meta Ads, and conversion tracking. Contact us now." />
+        <meta name="keywords" content="paid advertising, local service business ads, lead generation strategies, ad campaign management, digital marketing services, conversion optimization, retargeting ads, call tracking solutions" />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/" />
       </Head>
       <ServiceJsonLd
