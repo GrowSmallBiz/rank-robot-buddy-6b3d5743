@@ -7,6 +7,8 @@ interface ConsultationFormSectionProps {
   utmCampaign?: string;
   /** Optional UTM medium override */
   utmMedium?: string;
+  /** Optional override for the H2 heading text */
+  headingOverride?: string;
 }
 
 const BASE_FORM_URL = "https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV";
@@ -15,6 +17,7 @@ export const ConsultationFormSection = ({
   iframeHeight = "1006px",
   utmCampaign = "consultation-form",
   utmMedium,
+  headingOverride,
 }: ConsultationFormSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
