@@ -241,7 +241,7 @@ const LocalSEO = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12 animate-fade-up">
-                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                <h2 className="section-title">
                   Why Local Visibility Matters Before a Prospect Ever Calls
                 </h2>
               </div>
@@ -261,8 +261,10 @@ const LocalSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE FUNDAMENTALS</p>
-                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                  Why Local SEO Still Drives Some of the Highest-Intent Opportunities for Local Service Businesses
+                <h2 className="section-title">
+                  Why{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO</span>
+                  {" "}Still Drives Some of the Highest-Intent Opportunities for Local Service Businesses
                 </h2>
               </div>
 
@@ -298,8 +300,9 @@ const LocalSEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">OUR LOCAL SEO SYSTEM</p>
-              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                What GrowSmallBiz Includes in Local SEO
+              <h2 className="section-title">
+                What GrowSmallBiz Includes in{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO</span>
               </h2>
               <p className="section-description mt-4">Local SEO is one of the core pillars inside GrowSmallBiz's Managed AI SEO system. On its own, it improves local visibility. Connected with technical SEO, authority building, service-page strategy, and conversion-focused website improvements, it becomes stronger, more durable, and more commercially useful.</p>
               <p className="section-description mt-3">Within the Local SEO pillar, we manage the assets and signals that help local service businesses become easier to find, easier to trust, and easier to choose in their service area.</p>
@@ -330,8 +333,10 @@ const LocalSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE STRATEGY</p>
-                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                  Why GBP, Citations, and Local Landing Pages Work Better Together as a Connected System
+                <h2 className="section-title">
+                  Why GBP, Citations, and Local Landing Pages{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic whitespace-nowrap">Work Better Together</span>
+                  {" "}as a Connected System
                 </h2>
               </div>
 
@@ -397,8 +402,10 @@ const LocalSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OUR APPROACH</p>
-                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                  How GrowSmallBiz Uses Agentic AI Playbooks for Local SEO
+                <h2 className="section-title">
+                  How GrowSmallBiz Uses{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI Playbooks</span>
+                  {" "}for Local SEO
                 </h2>
               </div>
 
@@ -449,10 +456,12 @@ const LocalSEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">INDUSTRY RELEVANCE</p>
-              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                How Local SEO Impacts
+              <h2 className="section-title">
+                How{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO</span>
+                {" "}Impacts
               </h2>
-              <h2 className="section-title -mt-2 bg-gradient-heading bg-clip-text text-transparent">
+              <h2 className="section-title -mt-2">
                 Different Types of Service Businesses
               </h2>
               <p className="section-description mt-4">The mechanics of Local SEO are similar across industries, but buyer behavior is not. The way someone chooses an HVAC company, med spa, dentist, attorney, or real estate professional can vary significantly based on urgency, trust, price sensitivity, and how much comparison happens before contact.</p>
@@ -535,8 +544,9 @@ const LocalSEO = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight bg-gradient-heading bg-clip-text text-transparent">
-                Ready to Strengthen Your Local Visibility Where Buying Decisions Happen?
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
+                Ready to Strengthen Your Local Visibility Where{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Buying Decisions Happen?</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-4 max-w-3xl mx-auto">
                 If your business is not consistently showing up for your priority local searches, the problem is usually not one isolated issue. It is the combined effect of profile gaps, weak local pages, inconsistent citations, limited review momentum, or missing trust signals.
