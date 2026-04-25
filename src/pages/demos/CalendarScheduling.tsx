@@ -25,7 +25,9 @@ export default function CalendarSchedulingDemo() {
       <main id="main-content" className="pt-20">
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Fill Your Calendar and Cut No-Shows With Smart Appointment Scheduling</h1>
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Fill Your Calendar and Cut No-Shows With Smart Appointment Scheduling
+</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">GrowSmallBiz is your scheduling automation platform for eliminating the back-and-forth emails to find the perfect time — and so much more.</p>
             <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_hsl(var(--ghl-card-border)/0.3)] border-2 border-[hsl(var(--ghl-card-border))] mb-8">
               <video controls className="w-full" preload="metadata" playsInline>
@@ -62,7 +64,9 @@ export default function CalendarSchedulingDemo() {
               <img src="https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148549799.jpg?w=826" alt="Online Scheduling" className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Online Scheduling</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Make scheduling easy</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Make scheduling easy
+</h2>
                 <p className="text-muted-foreground leading-relaxed">Replace software like Calendly and automate and manage multiple team calendars in one place.</p>
               </div>
             </div>
@@ -72,7 +76,9 @@ export default function CalendarSchedulingDemo() {
         {/* Managing Schedules */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6">Managing Schedules Has Never Been More Simple</h2>
+            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Managing Schedules Has Never Been More Simple
+</h2>
             <p className="text-lg text-foreground text-center mb-12">With calendar scheduling you have control over your time.</p>
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -111,7 +117,9 @@ export default function CalendarSchedulingDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Scheduling Needs</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">How it best fits for you</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  How it best fits for you
+</h2>
                 <p className="text-muted-foreground leading-relaxed">Automate reminder campaigns that include links to reschedule and cancel. You can also manually or automatically confirm appointments. Integrate your Google calendar or Outlook calendar so that you are never double-booked.</p>
               </div>
               <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dfdf206af207be095a7b88.png" alt="Scheduling Needs" className="w-full rounded-xl shadow-lg" loading="lazy" />
@@ -120,7 +128,9 @@ export default function CalendarSchedulingDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dfdd91077c9a6bd049a3d0.png" alt="Flexibility" className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Flexibility for your needs</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Flexibility for your needs
+</h2>
                 <p className="text-muted-foreground leading-relaxed">You have complete control over each calendar's availability, the ability to round-robin leads or appointments to users, take payment prior to booking an appointment, and multiple options when it comes to integrating forms with your appointment calendar.</p>
               </div>
             </div>

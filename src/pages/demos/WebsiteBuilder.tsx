@@ -26,7 +26,7 @@ export default function WebsiteBuilderDemo() {
         {/* Hero */}
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
               Website &amp; Landing Page Builder
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
@@ -44,7 +44,7 @@ export default function WebsiteBuilderDemo() {
         {/* 93% of consumers */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center mb-16">
-            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
               93% of consumers use search engines for purchase and service decisions
             </h2>
             <p className="text-muted-foreground text-lg">
@@ -108,7 +108,9 @@ export default function WebsiteBuilderDemo() {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">No Limits</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  No Limits
+</h2>
                 <h3 className="text-xl font-bold text-foreground mb-6">Build all the websites you need</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   As a business, you have ideas. They don't always fall into the category of one site. There is no need to pay for multiple hosting accounts to build the variety of sites you need for your business. Build as many as you need on our platform.
@@ -136,7 +138,9 @@ export default function WebsiteBuilderDemo() {
               />
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Intuitive</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Drag-and-drop builder</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Drag-and-drop builder
+</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Using our intuitive builder is as simple as drag and drop. Customize and add a multitude of elements, including countdown timers, videos, a calendar, and more.
                 </p>
@@ -148,7 +152,7 @@ export default function WebsiteBuilderDemo() {
         {/* Websites are where people go */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
               Websites are where people go if they want more information
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">

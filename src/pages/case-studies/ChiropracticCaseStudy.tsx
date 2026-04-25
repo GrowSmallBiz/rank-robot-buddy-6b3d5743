@@ -140,8 +140,8 @@ const ChiropracticCaseStudy = () => {
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
                   <Search className="w-4 h-4" />Local SEO Case Studies
                 </span>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  AI SEO + Search Console <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                  AI SEO + Search Console Case Studies
                 </h2>
                 <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                   This section highlights organic search campaign performance for a chiropractic practice, combining Google Analytics traffic data and Google Search Console click and impression metrics from a 5-month AI SEO campaign.
@@ -230,8 +230,8 @@ const ChiropracticCaseStudy = () => {
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
                   <MapPin className="w-4 h-4" />Google Business Profile Results
                 </span>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  Google Business Profile <span className="text-transparent bg-clip-text bg-gradient-primary">Performance</span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                  Google Business Profile Performance
                 </h2>
                 <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                   GBP performance data from March 2023 – June 2023, compared against March 2022 – June 2022.
@@ -309,8 +309,8 @@ const ChiropracticCaseStudy = () => {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-                Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-primary">Chiropractic Practice</span>?
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
+                Ready to Build Your Chiropractic Practice?
               </h2>
               <div className="space-y-6 text-foreground/85 leading-relaxed text-lg">
                 <p>Schedule a strategy call to see how AI SEO, Google Ads, and GBP management can grow your chiropractic patient base.</p>

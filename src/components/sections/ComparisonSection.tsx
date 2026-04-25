@@ -49,9 +49,8 @@ export const ComparisonSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-up">
           <p className="text-primary font-medium mb-4">Why Choose Us</p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            Traditional SEO vs{" "}
-            <span className="text-gradient">AI-Powered SEO</span>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+            Traditional SEO vs AI-Powered SEO
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             See how our AI-powered approach outperforms traditional SEO methods

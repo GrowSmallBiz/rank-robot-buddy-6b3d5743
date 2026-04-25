@@ -51,9 +51,8 @@ const MartinezCA = () => {
               <MapPin className="w-4 h-4" />
               <span>Martinez, CA — Local Service Business Marketing | Contra Costa County Seat</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Martinez Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Martinez Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
               Martinez is not a suburban market. As the seat of Contra Costa County, it has its own distinct identity: a historic downtown with Victorian architecture, a working waterfront along the Carquinez Strait, residential neighborhoods ranging from blue-collar Vine Hill to semi-rural Alhambra Valley, and a legal and financial services cluster centered on the county courthouse. The businesses that serve Martinez's community deserve marketing built for this market — not repurposed from a Bay Area template. GrowSmallBiz is a Contra Costa County digital marketing agency based in Danville — 20 minutes from Martinez. We build integrated marketing systems for local service businesses across Martinez and the broader County. Contractors, dentists, restaurants, real estate professionals — if you serve Martinez clients, we are built for you.
@@ -102,9 +101,8 @@ const MartinezCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"><Star className="w-4 h-4" /> WHY US</span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Martinez Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Martinez Bottom Line
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Martinez's SERP landscape is dominated by national agencies with no local roots. The current SERP leaders are national agencies running the same page templates across Sacramento, Fresno, and dozens of other California cities. Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of Martinez's community-oriented local service market — combined with genuine Contra Costa County proximity that national agencies cannot replicate.</p>
           </div>
@@ -129,9 +127,8 @@ const MartinezCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"><TrendingUp className="w-4 h-4" /> LOCAL MARKET</span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Winning in Martinez Search Results.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Competitors Are Winning in Martinez Search Results. Here's Exactly Why — and How to Take It Back.
             </h2>
           </div>
           <div className="space-y-5 max-w-4xl mx-auto">
@@ -155,9 +152,8 @@ const MartinezCA = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"><Search className="w-4 h-4" /> SEARCH GAP</span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Local Search Gap Costing Most Martinez Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">10–15 Leads Every Month</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Local Search Gap Costing Most Martinez Service Businesses 10–15 Leads Every Month
             </h2>
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6">
@@ -175,9 +171,8 @@ const MartinezCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"><Target className="w-4 h-4" /> SERVICES</span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for Martinez Service Businesses —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for Martinez Service Businesses — Fills Your Calendar, Not Just Your Dashboard
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Martinez's community-oriented market rewards businesses that are genuinely visible, consistently responsive, and authentically trusted. An integrated marketing system delivers all three simultaneously.</p>
           </div>
@@ -322,9 +317,8 @@ const MartinezCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"><Users className="w-4 h-4" /> WHO WE SERVE</span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Martinez</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for Martinez
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz works exclusively with local service businesses in Martinez and surrounding Contra Costa County. We do not work with eCommerce stores, national retailers, or product-based businesses. Our systems are purpose-built for the verticals below — with genuine knowledge of Martinez's neighborhoods, seasonal demand patterns, and community culture.</p>
           </div>
@@ -358,7 +352,7 @@ const MartinezCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"><BarChart3 className="w-4 h-4" /> RESULTS</span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -391,9 +385,8 @@ const MartinezCA = () => {
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6">
-              Every Day You Wait, Your Competitors Book Another Martinez Customer That{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Should Have Been Yours</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              Every Day You Wait, Your Competitors Book Another Martinez Customer That Should Have Been Yours
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-4">Martinez's local search landscape is open. The dominant SERP competitor is a national template agency with no genuine knowledge of this community. The map pack positions for most local service categories in Martinez are not locked — they are available to the business that builds a properly structured local presence first and maintains it consistently.</p>
             <p className="text-foreground/80 leading-relaxed mb-4">GrowSmallBiz gives Martinez service businesses the integrated marketing system that wins in a community-oriented market: one connected platform spanning awareness to retention, powered by AI, and managed by a team based 20 minutes away in Danville.</p>

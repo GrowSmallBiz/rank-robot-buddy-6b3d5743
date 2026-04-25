@@ -27,7 +27,9 @@ export default function EmailSmsMarketingDemo() {
         {/* Hero */}
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Turn Cold Leads Into Paying Customers With Automated Email and SMS Campaigns</h1>
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Turn Cold Leads Into Paying Customers With Automated Email and SMS Campaigns
+</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">95% of Text Messages Are Read in the 1st Five Minutes</p>
             <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_hsl(var(--ghl-card-border)/0.3)] border-2 border-[hsl(var(--ghl-card-border))] mb-8">
               <video controls className="w-full" preload="metadata" playsInline>
@@ -40,7 +42,9 @@ export default function EmailSmsMarketingDemo() {
         {/* Stop Using Multiple Apps */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6">Stop Using Multiple Apps For Email &amp; SMS Marketing</h2>
+            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Stop Using Multiple Apps For Email &amp; SMS Marketing
+</h2>
             <p className="text-lg text-foreground text-center mb-8">Integrate them into one for a seamless experience.</p>
             <p className="text-muted-foreground text-center max-w-4xl mx-auto leading-relaxed mb-12">
               Whether you have used MailChimp, Constant Contact, Aweber, GetResponse, HubSpot, Keap, Textedly, or other email/SMS marketing software, this is now fully integrated into your marketing system through our dashboard. Our simple-to-use, drag-and-drop builder has all the features you need to build and send out custom emails or SMS messages to your customers.
@@ -72,14 +76,18 @@ export default function EmailSmsMarketingDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Email &amp; SMS</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Personalize and Customize</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Personalize and Customize
+</h2>
                 <p className="text-muted-foreground leading-relaxed">Easily create customized email and text campaigns using the drag-and-drop template builder. Personalize all of your messages using a simple drop-down menu to personalize each message so your contacts will feel you are talking directly to them.</p>
               </div>
               <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/bc643623-9d6f-470d-bfab-57f7e13995c8.png" alt="Personalize and Customize" className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
 
             <div className="text-center mb-16">
-              <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Create automated replies for booking appointments</h2>
+              <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Create automated replies for booking appointments
+</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">It's not always possible to physically answer a phone or message, but you don't want to miss the opportunity to make a booking. This is where the AI booking bot steps in and takes care of it for you.</p>
             </div>
 
@@ -97,7 +105,9 @@ export default function EmailSmsMarketingDemo() {
         {/* Combine marketing strategy */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Combine marketing strategy to increase effectiveness</h2>
+            <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Combine marketing strategy to increase effectiveness
+</h2>
             <p className="text-muted-foreground leading-relaxed">SMS messages have a 98% average open rate making it great for promotions and offers. Email messages are great relationship builders as well as promotional tools. Combined, they can be a force to be reckoned with.</p>
           </div>
         </section>

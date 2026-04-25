@@ -27,7 +27,7 @@ export default function UniversalInboxDemo() {
         {/* Hero */}
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
               Stop Missing Messages — Every SMS, Email, Social, and Webchat Response in One Inbox
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto">
@@ -49,7 +49,7 @@ export default function UniversalInboxDemo() {
         {/* No more going to multiple websites */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-3xl font-black text-foreground text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-black text-foreground text-center mb-8 bg-gradient-heading bg-clip-text text-transparent">
               No more going to multiple websites or checking multiple devices just to get your messages
             </h2>
             <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto leading-relaxed mb-12">
@@ -84,7 +84,9 @@ export default function UniversalInboxDemo() {
                 loading="lazy"
               />
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Be channel-agnostic</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Be channel-agnostic
+</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   No matter where it started, you can keep it organized.
                 </p>
@@ -93,7 +95,9 @@ export default function UniversalInboxDemo() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Chat with context</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Chat with context
+</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   See the history of every conversation and interaction.
                 </p>
@@ -114,7 +118,9 @@ export default function UniversalInboxDemo() {
                 loading="lazy"
               />
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Get started in seconds.</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Get started in seconds.
+</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Connect your channels and start messaging right away.
                 </p>
@@ -138,7 +144,9 @@ export default function UniversalInboxDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Webchat, Facebook &amp; Google Business Profile Integration</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Turn Messages Into Revenue</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Turn Messages Into Revenue
+</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Convert website, Facebook, and Google Business Profile visitors into customers. Engage visitors immediately with live chat, or save time by auto-responding with our AI chatbot.
                 </p>
@@ -164,7 +172,9 @@ export default function UniversalInboxDemo() {
                 loading="lazy"
               />
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Customizable Viewing Options</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Customizable Viewing Options
+</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   With your mobile and desktop apps, you can communicate with your leads, customers, and teams from anywhere.
                 </p>
@@ -179,7 +189,7 @@ export default function UniversalInboxDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-lg font-bold text-foreground mb-2">Every Message In One Place</h3>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   All customer interactions in one Unified Inbox
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
@@ -199,7 +209,7 @@ export default function UniversalInboxDemo() {
         {/* 70% stat */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
               70% of customers prefer to message with a business, rather than speaking on the phone
             </h2>
             <p className="text-muted-foreground text-lg">- The Washington Post</p>
@@ -212,7 +222,9 @@ export default function UniversalInboxDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Automate Text Back For Missed Calls</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">Never miss a customer call</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Never miss a customer call
+</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Engage callers immediately with auto-missed call text back to keep the conversation alive so you never lose business because you were unavailable.
                 </p>
@@ -230,7 +242,7 @@ export default function UniversalInboxDemo() {
         {/* Stats: 3X, 95%, 10X */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h2 className="text-2xl md:text-3xl font-black text-foreground mb-12">
+            <h2 className="text-2xl md:text-3xl font-black text-foreground mb-12 bg-gradient-heading bg-clip-text text-transparent">
               Your business wins when you interact with customers
             </h2>
             <div className="grid md:grid-cols-3 gap-8">

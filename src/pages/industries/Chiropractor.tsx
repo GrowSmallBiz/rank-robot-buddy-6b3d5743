@@ -81,9 +81,8 @@ const Chiropractor = () => {
               <Activity className="w-4 h-4" />
               Chiropractic Practice Marketing
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Full-Service Chiropractic Marketing Built to{" "}
-              <span className="text-gradient">Fill Your Schedule</span> With New and Returning Patients
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              Full-Service Chiropractic Marketing Built to Fill Your Schedule With New and Returning Patients
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               GrowSmallBiz gives chiropractic practices every digital marketing tool they need — to attract new patients through condition-specific local search, convert them to wellness plans, and build the recurring revenue model that makes your practice resilient.
@@ -109,7 +108,9 @@ const Chiropractor = () => {
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Sound Familiar?
+</h2>
             <p className="text-muted-foreground">These are the challenges we hear from chiropractors every day.</p>
           </div>
           <div className="max-w-2xl mx-auto space-y-4">
@@ -136,7 +137,9 @@ const Chiropractor = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Chiropractic Practices Need a Specialized Marketing Partner</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Why Chiropractic Practices Need a Specialized Marketing Partner
+</h2>
             <p className="text-muted-foreground mb-8 text-lg">
               Most marketing agencies treat chiropractors like restaurants or retail shops. They don't understand the difference between a new acute pain patient and a wellness plan conversion. They don't know that 'sciatica relief [city]' and 'chiropractor near me' require completely different landing pages.
             </p>
@@ -168,7 +171,9 @@ const Chiropractor = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">What Does a Chiropractic Marketing Agency Do?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center bg-gradient-heading bg-clip-text text-transparent">
+  What Does a Chiropractic Marketing Agency Do?
+</h2>
             <p className="text-muted-foreground mb-6 text-lg text-center max-w-3xl mx-auto">
               A chiropractic marketing agency manages the full spectrum of digital marketing for chiropractic practices — from local SEO and Google Map Pack visibility to condition-specific paid advertising, patient retention automation, and reputation management.
             </p>
@@ -183,7 +188,9 @@ const Chiropractor = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Chiropractic Marketing Services from GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Chiropractic Marketing Services from GrowSmallBiz
+</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to attract more patients seeking relief.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -210,7 +217,9 @@ const Chiropractor = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Chiropractic Practice Results</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Chiropractic Practice Results
+</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">The following results are drawn from verified client engagements.</p>
             <Button variant="outline" size="lg" asChild>
               <Link to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/">
@@ -225,7 +234,9 @@ const Chiropractor = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Chiropractic Practices Choose GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Why Chiropractic Practices Choose GrowSmallBiz
+</h2>
             <div className="space-y-6">
               <div className="p-6 bg-card border border-border rounded-2xl">
                 <h3 className="text-lg font-display font-semibold text-foreground mb-2">We Understand Both Patient Types</h3>

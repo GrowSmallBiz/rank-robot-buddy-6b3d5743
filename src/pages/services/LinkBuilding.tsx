@@ -228,9 +228,8 @@ const LinkBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE FUNDAMENTALS</p>
-                <h2 className="section-title">
-                  Why Link Building Still Matters Inside a{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Holistic SEO Strategy</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Why Link Building Still Matters Inside a Holistic SEO Strategy
                 </h2>
               </div>
 
@@ -287,9 +286,8 @@ const LinkBuilding = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">COMPLETE CAMPAIGN</p>
-              <h2 className="section-title">
-                What GrowSmallBiz Includes in Your{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Link Building Campaign</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                What GrowSmallBiz Includes in Your Link Building Campaign
               </h2>
               <p className="section-description mt-4">Link building is not treated here as a disconnected tactic. It supports the broader Managed AI SEO strategy by strengthening the authority behind your service pages, location pages, and supporting content. Our campaign includes the research, outreach, content support, profile monitoring, and ongoing optimization needed to make link acquisition contribute to broader visibility and business growth.</p>
             </div>
@@ -326,9 +324,8 @@ const LinkBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">QUALITY MATTERS</p>
-                <h2 className="section-title">
-                  There Are Two Ways to Build Backlinks.{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Only One of Them Works.</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  There Are Two Ways to Build Backlinks. Only One of Them Works.
                 </h2>
                 <p className="section-description mt-4">The link-building industry has a reputation problem because a lot of agencies still sell tactics that Google has explicitly penalized for over a decade. It is important to understand the difference.</p>
               </div>
@@ -382,10 +379,8 @@ const LinkBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OUR APPROACH</p>
-                <h2 className="section-title">
-                  How GrowSmallBiz Uses{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI Playbooks</span>
-                  {" "}+ Human Strategy
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  How GrowSmallBiz Uses Agentic AI Playbooks + Human Strategy
                 </h2>
               </div>
 
@@ -443,9 +438,8 @@ const LinkBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">LOCAL IMPACT</p>
-                <h2 className="section-title">
-                  Why Local Service Businesses Benefit From{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Link Building</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Why Local Service Businesses Benefit From Link Building
                 </h2>
               </div>
 
@@ -543,9 +537,8 @@ const LinkBuilding = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Ready to Build the Backlink Profile That Puts You{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Ahead?</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                Ready to Build the Backlink Profile That Puts You Ahead?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
                 Your competitors are not standing still. Every month without a consistent link-building strategy is a month they are widening the authority gap. GrowSmallBiz makes it easy to close that gap — with a fully managed campaign, transparent reporting, and a team that treats your rankings like their own.

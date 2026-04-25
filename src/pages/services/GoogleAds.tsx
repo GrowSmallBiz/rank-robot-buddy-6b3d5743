@@ -369,12 +369,8 @@ const GoogleAds = () => {
                 Google Ads Management
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
-              Google Ads Services for Small Businesses That{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">
-                Actually
-              </span>{" "}
-              Generate Leads
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up bg-gradient-heading bg-clip-text text-transparent">
+              Google Ads Services for Small Businesses That Actually Generate Leads
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Stop paying for clicks that go nowhere. GrowSmallBiz builds and manages Google Ads campaigns exclusively for local service businesses — every dollar targeted, every lead tracked, every campaign tuned to grow your revenue.
@@ -434,9 +430,8 @@ const GoogleAds = () => {
               className="relative rounded-2xl p-8 md:p-10 border-l-4 border-primary"
               style={{ backgroundColor: "hsl(210 50% 12%)" }}
             >
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center mb-6">
-                Why Google Ads{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary">Matters Now</span>
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center mb-6 bg-gradient-heading bg-clip-text text-transparent">
+                Why Google Ads Matters Now
               </h2>
               <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
                 <p>
@@ -814,9 +809,8 @@ const GoogleAds = () => {
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Local Competitors Are Already Running Google Ads.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Are You?</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Local Competitors Are Already Running Google Ads. Are You?
             </h2>
             <p className="text-muted-foreground leading-relaxed">
               Do not let them win the top spot on every search in your market. GrowSmallBiz builds and manages Google Ads campaigns that put local service businesses front and center — exactly when customers are ready to hire.

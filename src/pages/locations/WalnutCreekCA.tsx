@@ -56,14 +56,13 @@ const WalnutCreekCA = () => {
             </div>
 
             {/* H1 */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Walnut Creek Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Walnut Creek Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
 
             {/* H2 */}
             <h2
-              className="text-2xl md:text-3xl font-display font-semibold text-foreground/90 mb-6 animate-fade-up"
+              className="text-2xl md:text-3xl font-display font-semibold text-foreground/90 mb-6 animate-fade-up bg-gradient-heading bg-clip-text text-transparent"
               style={{ animationDelay: "0.1s" }}
             >
               Turns Visibility Into Calls, Leads, and Revenue
@@ -131,9 +130,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> WHY US
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Bottom Line
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Choosing the right digital marketing partner is one of the most important decisions you'll make for your business. Here's what sets GrowSmallBiz apart from general-purpose agencies:</p>
           </div>
@@ -162,9 +160,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Winning in Walnut Creek Search Results.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Competitors Are Winning in Walnut Creek Search Results. Here's Exactly Why — and How to Take It Back.
             </h2>
           </div>
 
@@ -221,9 +218,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Briefcase className="w-4 h-4" /> SERVICES
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Our Integrated Marketing System —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Just Your Dashboard</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Our Integrated Marketing System — Just Your Dashboard
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Our services are not sold as isolated tactics. They are delivered as an integrated system, designed so that each channel amplifies the others. Here is what's included and what it means for your business:</p>
           </div>
@@ -263,9 +259,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Search className="w-4 h-4" /> LOCAL SEO
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Get Found First When Walnut Creek Customers Search for Your Services —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO & Google Maps Domination</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Get Found First When Walnut Creek Customers Search for Your Services — Local SEO & Google Maps Domination
             </h2>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -295,9 +290,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Target className="w-4 h-4" /> GOOGLE ADS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Need Leads This Week, Not This Quarter?{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Google Ads That Deliver Walnut Creek Customers on Day One.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Need Leads This Week, Not This Quarter? Google Ads That Deliver Walnut Creek Customers on Day One.
             </h2>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -326,9 +320,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" /> GOOGLE LSA
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Show Up Above Every Competitor With a Google Trust Badge —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Walnut Creek Leads, Pre-Qualified Before They Call</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Show Up Above Every Competitor With a Google Trust Badge — More Walnut Creek Leads, Pre-Qualified Before They Call
             </h2>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -356,9 +349,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> SOCIAL MEDIA
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Reach Walnut Creek Homeowners Before They Need You —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">And Be the First Call When They Do</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Reach Walnut Creek Homeowners Before They Need You — And Be the First Call When They Do
             </h2>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -387,9 +379,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> REPUTATION
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              A 3-Star Rating Is Silently Killing Your Walnut Creek Business.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's How We Fix It in 90 Days.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              A 3-Star Rating Is Silently Killing Your Walnut Creek Business. Here's How We Fix It in 90 Days.
             </h2>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -421,9 +412,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Globe className="w-4 h-4" /> WEBSITE DESIGN
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Website Should Be Your Best Salesperson.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">If It's Not Generating Walnut Creek Leads Daily, It's Costing You Money.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Website Should Be Your Best Salesperson. If It's Not Generating Walnut Creek Leads Daily, It's Costing You Money.
             </h2>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -460,9 +450,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Zap className="w-4 h-4" /> AI AUTOMATION
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Every Missed Call Is a Lost Job.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Our AI Receptionist Follows Up in Seconds.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Every Missed Call Is a Lost Job. Our AI Receptionist Follows Up in Seconds.
             </h2>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -504,9 +493,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> INDUSTRIES
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Someone Else's Playbook</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz serves a focused set of local service business verticals in Walnut Creek and surrounding East Bay communities. Our specialization means deeper expertise, faster results, and strategies that reflect real market knowledge — not generic agency assumptions.</p>
           </div>
@@ -549,7 +537,7 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -602,9 +590,8 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> DIFFERENTIATORS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Why GrowSmallBiz Outperforms Every Agency That's Failed You Before.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed You Before.
             </h2>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -622,9 +609,8 @@ const WalnutCreekCA = () => {
       <section className="py-20" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Serving Walnut Creek and the{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Surrounding East Bay</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Serving Walnut Creek and the Surrounding East Bay
             </h2>
           </div>
           <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8 mb-10">
@@ -684,9 +670,8 @@ const WalnutCreekCA = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
             <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-            <h2 className="section-title">
-              Every Day You Wait, Your Competitors Book Another Walnut Creek Customer{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Should Have Been Yours.</span>
+            <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+              Every Day You Wait, Your Competitors Book Another Walnut Creek Customer That Should Have Been Yours.
             </h2>
             <p className="section-description mt-4 mb-8">
               Every day without a comprehensive marketing strategy is another day your competitors capture the leads that should belong to you. Walnut Creek's local service market rewards the businesses with the strongest digital presence — and penalizes those who remain invisible online. No long-term contracts. No cookie-cutter templates. No generalist agency assumptions. Just a focused team that builds the marketing system your Walnut Creek business deserves.

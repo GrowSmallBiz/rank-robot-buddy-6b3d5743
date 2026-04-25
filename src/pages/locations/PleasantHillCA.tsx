@@ -51,11 +51,10 @@ const PleasantHillCA = () => {
               <MapPin className="w-4 h-4" />
               <span>Pleasant Hill, CA — Local Service Business Marketing | 680 Corridor | Contra Costa County</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Pleasant Hill Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing for Local Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Pleasant Hill Leads to Competitors — Full-Service Digital Marketing for Local Businesses
             </h1>
-            <h2 className="max-w-3xl mx-auto text-xl md:text-2xl text-foreground/90 font-display font-semibold animate-fade-up mt-4" style={{ animationDelay: "0.05s" }}>
+            <h2 className="max-w-3xl mx-auto text-xl md:text-2xl text-foreground/90 font-display font-semibold animate-fade-up mt-4 bg-gradient-heading bg-clip-text text-transparent" style={{ animationDelay: "0.05s" }}>
               Sitting at the heart of the 680 corridor, Pleasant Hill's affluent homeowner base, BART-connected professionals, and Diablo Valley College population create high-intent demand for local service businesses — with the lowest keyword competition of any city we serve.
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
@@ -106,9 +105,8 @@ const PleasantHillCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> WHY US
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Pleasant Hill Business</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Pleasant Hill Business
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Concord and Walnut Creek competitors are outranking Pleasant Hill service businesses right now — not because their work is better, but because their digital presence is stronger. The primary keyword carries a Keyword Difficulty of 8, the lowest of any city in our Contra Costa County footprint. The SERP leaders are thin template pages with scores under 50 and fewer than 600 words. Here is what GrowSmallBiz brings that no template agency can.</p>
           </div>
@@ -137,9 +135,8 @@ const PleasantHillCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Winning in Pleasant Hill Search Results.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Competitors Are Winning in Pleasant Hill Search Results. Here's Exactly Why — and How to Take It Back.
             </h2>
           </div>
 
@@ -195,9 +192,8 @@ const PleasantHillCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Target className="w-4 h-4" /> SERVICES
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for Pleasant Hill Service Businesses —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for Pleasant Hill Service Businesses — Fills Your Calendar, Not Just Your Dashboard
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Pleasant Hill's 680 corridor competition and BART-connected, review-driven consumer base reward businesses that are visible across the right channels, trusted by an affluent audience, and responsive at the speed the market demands. An integrated system delivers all three simultaneously — not as separate investments, but as a coordinated engine that compounds as your market presence matures.</p>
           </div>
@@ -343,9 +339,8 @@ const PleasantHillCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> WHO WE SERVE
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Pleasant Hill</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for Pleasant Hill
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz works exclusively with local service businesses in Pleasant Hill and surrounding Contra Costa County. We do not work with eCommerce stores, national retailers, or product-based businesses. Our systems are purpose-built for the verticals below — with genuine knowledge of Pleasant Hill's commercial corridors, competitive landscape, and the specific challenges of serving a BART-connected, high-income, review-driven market.</p>
           </div>
@@ -401,7 +396,7 @@ const PleasantHillCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -447,9 +442,8 @@ const PleasantHillCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" /> WHY WE WIN
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Pleasant Hill Business Before.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your Pleasant Hill Business Before.
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Pleasant Hill's SERP leaders are template agencies with no knowledge of Contra Costa Blvd, Diablo Valley College's daily population impact, or the BART-connected mobile search behavior that defines how Pleasant Hill residents find and hire service providers. Here is what makes the GrowSmallBiz system consistently outperform them in this market:</p>
           </div>
@@ -506,9 +500,8 @@ const PleasantHillCA = () => {
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6">
-              Every Day You Wait, Your Competitors Book Another Pleasant Hill Customer That{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Should Have Been Yours.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              Every Day You Wait, Your Competitors Book Another Pleasant Hill Customer That Should Have Been Yours.
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-4">Pleasant Hill's local search landscape is open. The dominant SERP competitors are thin template pages from agencies with no genuine knowledge of this community. The map pack positions for most local service categories in Pleasant Hill are not locked — they are available to the business that builds a properly structured local presence first and maintains it consistently.</p>
             <p className="text-foreground/80 leading-relaxed mb-4">The businesses investing in digital marketing today are building advantages that compound over time. Every month your Pleasant Hill competitors spend outranking you online is another month of qualified leads going to someone else. The businesses that act now are the ones who own their market a year from now.</p>

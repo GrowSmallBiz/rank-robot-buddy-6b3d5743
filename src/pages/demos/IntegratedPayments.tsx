@@ -27,7 +27,9 @@ export default function IntegratedPaymentsDemo() {
         {/* Hero */}
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">Stop Chasing Payments — Invoicing, Billing, and Collection All in One Place</h1>
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Stop Chasing Payments — Invoicing, Billing, and Collection All in One Place
+</h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">Streamline Client Invoicing &amp; Collect Payments Anywhere</p>
             <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_hsl(var(--ghl-card-border)/0.3)] border-2 border-[hsl(var(--ghl-card-border))] mb-8">
               <video controls className="w-full" preload="metadata" playsInline>
@@ -40,7 +42,9 @@ export default function IntegratedPaymentsDemo() {
         {/* Tracking Invoices */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6">Tracking Invoices &amp; Payments Has Never Been Easier</h2>
+            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Tracking Invoices &amp; Payments Has Never Been Easier
+</h2>
             <p className="text-lg text-foreground text-center mb-12">With Integrated Payments, you can get paid faster than ever.</p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -91,7 +95,9 @@ export default function IntegratedPaymentsDemo() {
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">Make payments part of the conversation</h2>
+              <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Make payments part of the conversation
+</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">Get paid fast and keep the conversation alive. Whether you're at home, in-store, or in the field. Our text-to-pay and invoicing system has you covered.</p>
             </div>
 

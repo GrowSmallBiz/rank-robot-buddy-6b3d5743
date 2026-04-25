@@ -54,9 +54,8 @@ const ConcordCA = () => {
               <span>Concord, CA — Local Service Business Marketing | GrowSmallBiz</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Concord Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Concord Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
 
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
@@ -117,9 +116,8 @@ const ConcordCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> WHY US
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Concord Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Concord Bottom Line
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">In a city this large, good-enough marketing often underperforms. Here is what sets GrowSmallBiz apart from every general-purpose agency competing for your attention:</p>
           </div>
@@ -150,9 +148,8 @@ const ConcordCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Concord Is a Market Worth Winning — and Why It Creates a Different Kind of{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Marketing Challenge</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Why Concord Is a Market Worth Winning — and Why It Creates a Different Kind of Marketing Challenge
             </h2>
           </div>
 
@@ -179,9 +176,8 @@ const ConcordCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Search className="w-4 h-4" /> SEARCH GAP
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Local Search Gap Costing Most Concord Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">10–15 Leads Every Month</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Local Search Gap Costing Most Concord Service Businesses 10–15 Leads Every Month
             </h2>
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6">
@@ -205,9 +201,8 @@ const ConcordCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Target className="w-4 h-4" /> SERVICES
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for Concord Service Businesses —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for Concord Service Businesses — Fills Your Calendar, Not Just Your Dashboard
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Our services are not sold as isolated tactics. They are delivered as an integrated system, designed so that each channel amplifies the others. Here is what is included and what it means for your Concord business:</p>
           </div>
@@ -461,9 +456,8 @@ const ConcordCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> WHO WE SERVE
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Concord</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for Concord
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz serves a focused set of local service business verticals in Concord and the wider East Bay. Our specialization means deeper industry expertise, faster results, and strategies built on real market knowledge.</p>
           </div>
@@ -511,7 +505,7 @@ const ConcordCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -532,9 +526,8 @@ const ConcordCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" /> WHY WE WIN
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Concord Business Before</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your Concord Business Before
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">There is no shortage of digital marketing agencies claiming to serve Concord businesses. Here is why what GrowSmallBiz builds consistently outperforms what general-purpose agencies deliver:</p>
           </div>
@@ -596,9 +589,8 @@ const ConcordCA = () => {
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6">
-              Every Day You Wait, Your Competitors Book Another Concord Customer That{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Should Have Been Yours</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              Every Day You Wait, Your Competitors Book Another Concord Customer That Should Have Been Yours
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-4">Concord's size and competitive overlap reward the businesses with the strongest digital presence — and move quickly past those without one. While you are reading this, Concord homeowners are searching Google for services you offer. If you are not in the top three local results, you are invisible to them. If your reviews are weak, they are filtering you out. If your phone goes to voicemail and you do not follow up within minutes, they have already called your competitor.</p>
             <p className="text-foreground/80 leading-relaxed mb-4">GrowSmallBiz is the digital marketing agency that Concord local service businesses trust to dominate local search, generate qualified leads, and build the integrated marketing systems that produce sustainable revenue growth. We bring 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of local service business marketing in one of Contra Costa County's most competitive markets.</p>

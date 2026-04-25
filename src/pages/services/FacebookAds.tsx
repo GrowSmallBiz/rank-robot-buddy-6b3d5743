@@ -191,11 +191,8 @@ const FacebookAds = () => {
                 Facebook & Instagram Ads
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
-              Facebook & Instagram Ads That Fill Your Calendar —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">
-                Not Just Your Feed
-              </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up bg-gradient-heading bg-clip-text text-transparent">
+              Facebook & Instagram Ads That Fill Your Calendar — Not Just Your Feed
             </h1>
             <p className="text-base md:text-lg italic text-muted-foreground/80 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.05s" }}>
               Facebook & Instagram Ads management for small businesses that need qualified leads, not impressions.

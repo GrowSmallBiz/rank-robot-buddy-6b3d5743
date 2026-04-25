@@ -154,7 +154,7 @@ export const AnimatedStatsSection = ({
           <div className="text-center mb-16 animate-fade-up">
             {subtitle && <p className="text-primary font-medium mb-4">{subtitle}</p>}
             {title && (
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4 bg-gradient-heading bg-clip-text text-transparent">
                 {title}
               </h2>
             )}

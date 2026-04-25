@@ -119,9 +119,8 @@ const HVAC = () => {
               <Wrench className="w-4 h-4" />
               HVAC Contractor Marketing
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              The HVAC Marketing Agency That Gets You to the{" "}
-              <span className="text-gradient">Top of Google Maps</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              The HVAC Marketing Agency That Gets You to the Top of Google Maps
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               GrowSmallBiz combines Local SEO, Website Design, and Google Ads to put your HVAC company in front of Bay Area homeowners the moment they need you — and convert that visibility into booked service calls.
@@ -147,7 +146,9 @@ const HVAC = () => {
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Sound Familiar?
+</h2>
           </div>
           <div className="max-w-2xl mx-auto space-y-4">
             {painPoints.map((point, index) => (
@@ -173,7 +174,9 @@ const HVAC = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">What Is HVAC Digital Marketing?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  What Is HVAC Digital Marketing?
+</h2>
             <p className="text-muted-foreground mb-6 text-lg">
               HVAC digital marketing is a specialized approach to online lead generation for heating, ventilation, and air conditioning companies. It includes Local SEO to rank in Google's Map Pack for emergency 'near me' searches, Google Ads and Local Services Ads (LSA) for immediate paid lead generation, website design optimized for mobile call conversions, reputation management to build and protect online reviews, and AI automation to capture leads 24/7 and nurture maintenance plan customers.
             </p>
@@ -194,7 +197,9 @@ const HVAC = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">The Seasonal Surge Problem — And How We Solve It</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center bg-gradient-heading bg-clip-text text-transparent">
+  The Seasonal Surge Problem — And How We Solve It
+</h2>
             <p className="text-muted-foreground mb-8 text-lg text-center">
               HVAC search volume spikes 300–400% in summer. The companies dominating June, July, and August started building their Map Pack presence in March — not June. We run a seasonal marketing calendar for every HVAC client:
             </p>
@@ -215,7 +220,9 @@ const HVAC = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">HVAC Marketing Services from GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  HVAC Marketing Services from GrowSmallBiz
+</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to own your local market — not rent it.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -251,7 +258,9 @@ const HVAC = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Real Results for HVAC Contractors</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Real Results for HVAC Contractors
+</h2>
               <p className="text-muted-foreground">The following results are drawn from verified client engagements. Full campaign detail and metrics are on the dedicated case study pages.</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -278,7 +287,9 @@ const HVAC = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why HVAC Contractors Choose GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Why HVAC Contractors Choose GrowSmallBiz
+</h2>
             <div className="space-y-6">
               <div className="p-6 bg-card border border-border rounded-2xl">
                 <h3 className="text-lg font-display font-semibold text-foreground mb-2">Local</h3>
@@ -306,7 +317,9 @@ const HVAC = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">What HVAC Contractors Say</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  What HVAC Contractors Say
+</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="p-6 bg-card border border-border rounded-2xl">
                 <Quote className="w-6 h-6 text-primary mb-4" />

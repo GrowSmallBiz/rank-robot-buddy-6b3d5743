@@ -223,11 +223,8 @@ const ManagedAISEO = () => {
                 <span className="text-sm font-medium">Managed AI SEO</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-foreground leading-tight animate-fade-up">
-                The Complete Managed AI SEO Agency for{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary">
-                  Local Service Businesses
-                </span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-foreground leading-tight animate-fade-up bg-gradient-heading bg-clip-text text-transparent">
+                The Complete Managed AI SEO Agency for Local Service Businesses
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -552,9 +549,8 @@ const ManagedAISEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <p className="text-primary font-medium mb-2">THE AI ADVANTAGE</p>
-              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground">
-                Why AI-Powered SEO Outperforms Traditional Manual SEO for{" "}
-                <span className="text-primary">Local Service Businesses</span>
+              <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground bg-gradient-heading bg-clip-text text-transparent">
+                Why AI-Powered SEO Outperforms Traditional Manual SEO for Local Service Businesses
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
                 Manual SEO is slow to implement, difficult to scale, and typically concentrated in one or two areas while the rest goes unaddressed. For local service businesses in competitive markets, that incomplete coverage is a direct liability.
@@ -638,9 +634,8 @@ const ManagedAISEO = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">READY TO GROW?</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Ready to Build a Search Presence That Actually{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Grows Your Business?</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                Ready to Build a Search Presence That Actually Grows Your Business?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
                 If you depend on a consistent flow of qualified local leads, you need more than a website and hope. You need a managed, AI-powered SEO system that works every month — building visibility, authority, and trust in your market over time.

@@ -54,9 +54,8 @@ const DublinCA = () => {
               <span>Dublin, CA — Local Service Business Marketing | Tri-Valley's Fastest-Growing Market</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Dublin Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Dublin Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
 
             <p
@@ -130,9 +129,8 @@ const DublinCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">WHY US</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Dublin Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Dublin Bottom Line
             </h2>
           </div>
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto animate-fade-up">
@@ -166,9 +164,8 @@ const DublinCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">MARKET INSIGHTS</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Winning in Dublin Search Results.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Competitors Are Winning in Dublin Search Results. Here's Exactly Why — and How to Take It Back.
             </h2>
           </div>
 
@@ -201,9 +198,8 @@ const DublinCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">THE SEARCH GAP</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Local Search Gap Costing Most Dublin Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">10–15 Leads Every Month</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Local Search Gap Costing Most Dublin Service Businesses 10–15 Leads Every Month
             </h2>
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6 animate-fade-up">
@@ -228,9 +224,8 @@ const DublinCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">OUR SERVICES</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Dublin Service Businesses</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for Dublin Service Businesses
             </h2>
             <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">Fills Your Calendar, Not Just Your Dashboard — Every component is engineered to work with every other component. That integration is what makes the difference between marketing that costs money and marketing that makes money.</p>
           </div>
@@ -438,9 +433,8 @@ const DublinCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">WHO WE SERVE</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Dublin</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for Dublin
             </h2>
           </div>
           <p className="text-muted-foreground text-lg mb-8 max-w-4xl mx-auto animate-fade-up">
@@ -474,7 +468,7 @@ const DublinCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">PROVEN RESULTS</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -524,9 +518,8 @@ const DublinCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">WHY GROWSMALLBIZ</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Why GrowSmallBiz Outperforms Every Agency That's Failed Your Dublin Business Before.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your Dublin Business Before.
             </h2>
           </div>
           <p className="text-muted-foreground text-center mb-8 max-w-4xl mx-auto animate-fade-up">Dublin's current SERPs are dominated by national agencies with no local presence and regional competitors based in adjacent cities. Here is why the system GrowSmallBiz builds consistently outperforms them:</p>

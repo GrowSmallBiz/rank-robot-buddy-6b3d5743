@@ -54,9 +54,8 @@ const SanRamonCA = () => {
               <span>San Ramon, CA — Local Service Business Marketing | Tri-Valley's Integrated Growth Partner</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing San Ramon Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing San Ramon Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
 
             <p
@@ -134,9 +133,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> WHY DIFFERENT
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">San Ramon Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your San Ramon Bottom Line
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Every agency says they are different. Here is what it actually means for GrowSmallBiz — and why it matters specifically for San Ramon service businesses competing in one of the East Bay's most active local markets.</p>
           </div>
@@ -167,9 +165,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Winning in San Ramon Search Results.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Competitors Are Winning in San Ramon Search Results. Here's Exactly Why — and How to Take It Back.
             </h2>
           </div>
 
@@ -216,9 +213,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Search className="w-4 h-4" /> SEARCH GAP
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Local Search Gap Costing Most San Ramon Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">10–15 Leads Every Month</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Local Search Gap Costing Most San Ramon Service Businesses 10–15 Leads Every Month
             </h2>
           </div>
           <div className="space-y-6">
@@ -240,9 +236,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Briefcase className="w-4 h-4" /> SERVICES
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for San Ramon Service Businesses —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for San Ramon Service Businesses — Fills Your Calendar, Not Just Your Dashboard
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">This is not a menu of services you mix and match. It is a system. Every component is engineered to work with every other component. That integration is what makes the difference between marketing that costs money and marketing that makes money.</p>
           </div>
@@ -275,9 +270,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Search className="w-4 h-4" /> LOCAL SEO
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Get Found First When San Ramon Customers Search for Your Services —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO & Google Maps Domination</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Get Found First When San Ramon Customers Search for Your Services — Local SEO & Google Maps Domination
             </h2>
           </div>
           <div className="space-y-6">
@@ -310,9 +304,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Target className="w-4 h-4" /> GOOGLE ADS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Need Leads This Week, Not This Quarter?{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Google Ads That Deliver San Ramon Customers on Day One</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Need Leads This Week, Not This Quarter? Google Ads That Deliver San Ramon Customers on Day One
             </h2>
           </div>
           <div className="space-y-6">
@@ -345,9 +338,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" /> GOOGLE LSA
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Show Up Above Every Competitor With a Google Trust Badge —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">More San Ramon Leads, Pre-Qualified Before They Call</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Show Up Above Every Competitor With a Google Trust Badge — More San Ramon Leads, Pre-Qualified Before They Call
             </h2>
           </div>
           <div className="space-y-6">
@@ -378,9 +370,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> SOCIAL & META ADS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Reach San Ramon Homeowners Before They Need You —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">And Be the First Call When They Do</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Reach San Ramon Homeowners Before They Need You — And Be the First Call When They Do
             </h2>
           </div>
           <div className="space-y-6">
@@ -411,9 +402,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> REPUTATION
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              A 3-Star Rating Is Silently Killing Your San Ramon Business.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's How We Fix It in 90 Days.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              A 3-Star Rating Is Silently Killing Your San Ramon Business. Here's How We Fix It in 90 Days.
             </h2>
           </div>
           <div className="space-y-6">
@@ -445,9 +435,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Globe className="w-4 h-4" /> WEBSITE DESIGN
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Website Should Be Your Best Salesperson.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">If It's Not Generating San Ramon Leads Daily, It's Costing You Money.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Website Should Be Your Best Salesperson. If It's Not Generating San Ramon Leads Daily, It's Costing You Money.
             </h2>
           </div>
           <div className="space-y-6">
@@ -479,9 +468,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Brain className="w-4 h-4" /> AI AUTOMATION
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Every Missed Call Is a Lost Job.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Our AI Receptionist Follows Up in Seconds — So You Never Lose Another San Ramon Lead to a Faster Competitor.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Every Missed Call Is a Lost Job. Our AI Receptionist Follows Up in Seconds — So You Never Lose Another San Ramon Lead to a Faster Competitor.
             </h2>
           </div>
           <div className="space-y-6">
@@ -516,9 +504,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> WHO WE SERVE
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for San Ramon</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for San Ramon
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz works exclusively with local service businesses that serve San Ramon and the Tri-Valley community directly. We do not work with eCommerce stores, online retailers, or product-based businesses. Our systems are purpose-built for the verticals below — which means faster results, deeper playbooks, and strategies built on real market knowledge rather than generic agency frameworks.</p>
           </div>
@@ -566,7 +553,7 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-muted-foreground mt-4 max-w-3xl mx-auto italic">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -621,9 +608,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Award className="w-4 h-4" /> WHY US
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Why GrowSmallBiz Outperforms Every Agency That's Failed Your San Ramon Business Before.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your San Ramon Business Before.
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">San Ramon is served by several active digital marketing agencies — all visible in local search results. Here is what makes the system GrowSmallBiz builds consistently outperform the competition in our own backyard:</p>
           </div>
@@ -655,9 +641,8 @@ const SanRamonCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <MapPin className="w-4 h-4" /> COMMUNITY
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Serving San Ramon and the{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Wider Tri-Valley</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Serving San Ramon and the Wider Tri-Valley
             </h2>
           </div>
           <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8 max-w-4xl mx-auto mb-8">
@@ -721,9 +706,8 @@ const SanRamonCA = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
             <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-            <h2 className="section-title">
-              Every Day You Wait, Your Competitors Book Another San Ramon Customer{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Should Have Been Yours.</span>
+            <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+              Every Day You Wait, Your Competitors Book Another San Ramon Customer That Should Have Been Yours.
             </h2>
             <p className="section-description mt-4 mb-4">
               San Ramon's most competitive local businesses are not winning because they have bigger budgets. They are winning because they have better systems — faster follow-up, stronger visibility, smarter retention, and one integrated strategy that works across every channel simultaneously.

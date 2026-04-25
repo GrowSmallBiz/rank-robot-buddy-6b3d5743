@@ -82,9 +82,8 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
         )}
         {/* Editorial SEO Explanation */}
         <div className="mb-16 max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8">
-            {config.seoEditorialHeadline}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-primary italic">{config.seoEditorialHighlight}</span>
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
+            {config.seoEditorialHeadline} {config.seoEditorialHighlight}
           </h2>
           <div className="space-y-4 text-foreground/90 leading-relaxed">
             {config.seoEditorialBody.map((paragraph, i) => (
@@ -115,8 +114,8 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
 
         <div className="mb-8 text-center">
           <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">{config.seoBadge}</p>
-          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-            {config.seoHeadline} <span className="text-transparent bg-clip-text bg-gradient-primary italic">{config.seoHighlight}</span>
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            {config.seoHeadline} {config.seoHighlight}
           </h2>
           <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">{config.seoSubheadline}</p>
         </div>

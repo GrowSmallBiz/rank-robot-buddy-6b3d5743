@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 export const DemoGuarantee = () => (
   <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
     <div className="container mx-auto px-4 max-w-3xl text-center">
-      <h2 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-6">
-        "No Risk <span className="text-accent">Guarantee</span>"
+      <h2 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+        "No Risk Guarantee"
       </h2>
       <h3 className="text-xl font-semibold text-foreground mb-6">The Choice Is Yours</h3>
 

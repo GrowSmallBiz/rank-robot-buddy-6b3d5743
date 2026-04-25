@@ -21,7 +21,7 @@ export default function FormsSurveysDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-4">FORMS BUILDER</p>
-                <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
+                <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Turn Every Website Visit Into a Lead With Smart Forms and Surveys
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -44,7 +44,7 @@ export default function FormsSurveysDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-4">SURVEY BUILDER</p>
-                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Learn More About Your Prospects And Customers
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -73,7 +73,7 @@ export default function FormsSurveysDemo() {
               />
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-4">FULL FEATURED AND EASY</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Simple drag-and-drop builder
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">

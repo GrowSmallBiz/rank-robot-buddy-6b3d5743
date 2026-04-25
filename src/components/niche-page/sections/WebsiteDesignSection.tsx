@@ -13,9 +13,8 @@ export const WebsiteDesignSection = ({ config, strategySessionUrl }: WebsiteDesi
       <div className="container mx-auto px-4">
         <div className="mb-8 text-center">
           <p className="text-primary font-medium text-sm uppercase tracking-wider mb-2">{config.websiteDesignBadge}</p>
-          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-            {config.websiteDesignHeadline}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-primary italic">{config.websiteDesignHighlight}</span>
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            {config.websiteDesignHeadline} {config.websiteDesignHighlight}
           </h2>
           <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">{config.websiteDesignSubheadline}</p>
         </div>

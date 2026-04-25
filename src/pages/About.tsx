@@ -169,9 +169,8 @@ const About = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              Helping Local Service Businesses{" "}
-              <span className="text-gradient">Dominate Online</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              Helping Local Service Businesses Dominate Online
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-200">
@@ -191,7 +190,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6 animate-fade-up">
               <p className="text-primary font-medium">Our Story</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
                 Born from a Simple Belief
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -243,7 +242,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Our Values</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
               What We Stand For
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">

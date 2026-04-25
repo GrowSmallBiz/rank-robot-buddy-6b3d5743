@@ -108,9 +108,8 @@ const LocationsWeServe = () => {
                 <Building2 className="w-4 h-4" />
                 <span>East Bay Coverage</span>
               </div>
-              <h2 className="section-title">
-                Digital Marketing Services Across the{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">East Bay</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                Digital Marketing Services Across the East Bay
               </h2>
               <p className="section-description mt-4">
                 GrowSmallBiz Digital Marketing proudly serves all East Bay communities, covering both the Diablo Valley and Tri-Valley regions. Our tailored digital marketing services address the unique business landscapes and growth opportunities in each city, ensuring local businesses thrive in their specific markets.
@@ -240,9 +239,8 @@ const LocationsWeServe = () => {
                   <Brain className="w-4 h-4" />
                   <span>AI-Powered Marketing</span>
                 </div>
-                <h2 className="section-title">
-                  Understanding AI-Powered Marketing Systems in the{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Bay Area</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Understanding AI-Powered Marketing Systems in the Bay Area
                 </h2>
                 <p className="section-description mt-4">
                   AI-powered marketing systems utilize advanced algorithms to analyze consumer behavior and optimize marketing strategies, a critical advantage in the data-driven Bay Area market. These systems process vast datasets to identify patterns and trends, enabling businesses to deliver personalized content and targeted advertising that resonates with local audiences. According to Google research, 76% of people who search for something nearby on their smartphone visit a business within a day, underscoring the importance of timely, personalized marketing efforts.
@@ -289,9 +287,8 @@ const LocationsWeServe = () => {
                   <Brain className="w-4 h-4" />
                   <span>AI-Powered Digital Marketing Automation</span>
                 </div>
-                <h2 className="section-title">
-                  How AI-Powered Marketing Systems Help Small and Mid-Sized Bay Area Businesses{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Grow</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  How AI-Powered Marketing Systems Help Small and Mid-Sized Bay Area Businesses Grow
                 </h2>
                 <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground mt-4">
                   Get More Calls, More Booked Jobs, and Grow Revenue
@@ -324,11 +321,8 @@ const LocationsWeServe = () => {
                   <Search className="w-4 h-4" />
                   <span>AI Powered Local SEO</span>
                 </div>
-                <h2 className="section-title">
-                  Local SEO Strategies for Bay Area Cities:{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-                    San Francisco, San Jose, Oakland, and Fremont
-                  </span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Local SEO Strategies for Bay Area Cities: San Francisco, San Jose, Oakland, and Fremont
                 </h2>
                 <p className="section-description mt-4">
                   Local SEO is vital for businesses targeting customers within specific Bay Area cities. Effective local SEO enhances online visibility, making it easier for potential customers to find services nearby. BrightLocal research shows that 87% of consumers read online reviews for local businesses, highlighting the importance of reputation alongside SEO. Below are city-specific strategies and insights for optimizing local SEO in 2025-2026.
@@ -490,9 +484,8 @@ const LocationsWeServe = () => {
                   <Target className="w-4 h-4" />
                   <span>Strategic Framework</span>
                 </div>
-                <h2 className="section-title">
-                  A Unique Framework for Choosing the Right Digital Marketing Mix for{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Bay Area Businesses</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  A Unique Framework for Choosing the Right Digital Marketing Mix for Bay Area Businesses
                 </h2>
                 <p className="section-description mt-4">
                   Given the Bay Area's diverse economy and competitive landscape, selecting the right digital marketing mix is critical. Our proprietary framework helps businesses evaluate and prioritize marketing channels based on:
@@ -564,9 +557,8 @@ const LocationsWeServe = () => {
                   <Star className="w-4 h-4" />
                   <span>Reputation Management</span>
                 </div>
-                <h2 className="section-title">
-                  Reputation Management and Social Proof in the{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Bay Area Market</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Reputation Management and Social Proof in the Bay Area Market
                 </h2>
                 <p className="section-description mt-4">
                   Online reputation management is critical in the Bay Area, where consumers heavily rely on reviews and ratings. BrightLocal's Local Consumer Review Survey reveals that 91% of consumers regularly or occasionally read online reviews, making reputation management a key competitive factor. Effective strategies include:
@@ -622,9 +614,8 @@ const LocationsWeServe = () => {
                   <Smartphone className="w-4 h-4" />
                   <span>Website Optimization</span>
                 </div>
-                <h2 className="section-title">
-                  Website Optimization for Lead Conversion in{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Bay Area Businesses</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Website Optimization for Lead Conversion in Bay Area Businesses
                 </h2>
                 <p className="section-description mt-4">
                   Optimizing your website is essential for converting visitors into leads, especially in the Bay Area's competitive market. BrightEdge research shows that organic search is the largest driver of website traffic, making SEO and site performance critical. Key elements include:
@@ -694,9 +685,8 @@ const LocationsWeServe = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="section-title">
-                  Comparison Table: Digital Marketing Services by{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">City and Business Size</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Comparison Table: Digital Marketing Services by City and Business Size
                 </h2>
               </div>
 
@@ -760,9 +750,8 @@ const LocationsWeServe = () => {
                   <TrendingUp className="w-4 h-4" />
                   <span>Proof Points</span>
                 </div>
-                <h2 className="section-title">
-                  Case Studies and Proof Points Demonstrating Success in the{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Bay Area</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Case Studies and Proof Points Demonstrating Success in the Bay Area
                 </h2>
                 <p className="section-description mt-4">
                   Real-world examples illustrate the impact of targeted digital marketing strategies executed by GrowSmallBiz Digital Marketing:
@@ -830,9 +819,8 @@ const LocationsWeServe = () => {
                   <Shield className="w-4 h-4" />
                   <span>Why Trust Us</span>
                 </div>
-                <h2 className="section-title">
-                  Why Businesses Trust{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">GrowSmallBiz</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Why Businesses Trust GrowSmallBiz
                 </h2>
               </div>
               <div className="p-8 rounded-2xl bg-card border border-primary/30 shadow-[0_0_40px_rgba(255,127,80,0.1)]">
@@ -871,9 +859,8 @@ const LocationsWeServe = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-              <h2 className="section-title">
-                Unlock Your Bay Area Business's{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Potential</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                Unlock Your Bay Area Business's Digital Potential
               </h2>
               <p className="section-description mt-4 mb-6">
                 GrowSmallBiz Digital Marketing offers a Free Marketing Assessment tailored to Bay Area businesses. This assessment provides personalized insights into your current marketing strategies and identifies opportunities for growth.

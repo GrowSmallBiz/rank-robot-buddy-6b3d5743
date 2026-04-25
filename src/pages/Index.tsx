@@ -213,9 +213,8 @@ const Index = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up-safe delay-100">
-              More Leads. Stronger Visibility.{" "}
-              <span className="text-gradient">A System That Works While You Work.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up-safe delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              More Leads. Stronger Visibility. A System That Works While You Work.
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-medium animate-fade-up-safe delay-200">
@@ -260,7 +259,7 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">From Fragmented to Focused</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
               Most Local Businesses Are Losing Leads They Never Knew They Had
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -328,9 +327,8 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">How It Works</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              A Clear Path from Strategy to{" "}
-              <span className="text-gradient">Results</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              A Clear Path from Strategy to Results
             </h2>
             <p className="text-lg text-muted-foreground">
               You do not need everything at once. We focus on the priorities most likely to create meaningful impact first.
@@ -371,9 +369,8 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">Core Services</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              A Connected Growth System for{" "}
-              <span className="text-gradient">Local Service Businesses</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              A Connected Growth System for Local Service Businesses
             </h2>
             <p className="text-lg text-muted-foreground">
               GrowSmallBiz combines AI-powered systems and done-for-you services to help you capture leads, nurture them automatically, convert more of them into booked jobs, and retain more customers — without forcing you to manage a stack of disconnected tools yourself.

@@ -482,9 +482,8 @@ const RealtorMarketing = () => {
                 <span className="text-primary text-sm font-medium">For Real Estate Professionals</span>
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                Grow Your Real Estate Business with{" "}
-                <span className="text-gradient">AI-Powered Marketing</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up bg-gradient-heading bg-clip-text text-transparent" style={{ animationDelay: "0.1s" }}>
+                Grow Your Real Estate Business with AI-Powered Marketing
               </h1>
               
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
@@ -527,7 +526,9 @@ const RealtorMarketing = () => {
         <section className="py-20 bg-card/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Sound Familiar?
+</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">These challenges hold back even the most talented real estate professionals</p>
             </div>
             
@@ -553,9 +554,8 @@ const RealtorMarketing = () => {
                 <Zap className="w-4 h-4 text-primary" />
                 <span className="text-primary text-sm font-medium">Complete Solution</span>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-                Everything You Need to{" "}
-                <span className="text-gradient">Dominate Your Real Estate Market</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Everything You Need to Dominate Your Real Estate Market
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">From property search websites to automated nurturing—we've got every stage of your client journey covered</p>
             </div>
@@ -612,8 +612,8 @@ const RealtorMarketing = () => {
                 <Home className="w-4 h-4 text-blue-500" />
                 <span className="text-blue-500 text-sm font-medium">IDX Integration</span>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-                Your IDX Website, <span className="text-gradient">Supercharged</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Your IDX Website, Supercharged
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Everything you need to turn your real estate website into a lead generation machine
@@ -842,8 +842,8 @@ const RealtorMarketing = () => {
         <section className="py-24 lg:py-32 bg-card/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Your Client Journey, <span className="text-gradient">Automated</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Your Client Journey, Automated
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">From first click to closing day, every touchpoint is optimized for conversion</p>
             </div>
@@ -882,9 +882,8 @@ const RealtorMarketing = () => {
                 <Star className="w-4 h-4 text-emerald-500" />
                 <span className="text-emerald-500 text-sm font-medium">Success Stories</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Real Estate Professionals{" "}
-                <span className="text-emerald-500">Thriving</span> with Our Platform
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Real Estate Professionals Thriving with Our Platform
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">See live examples of agents and offices using IDX + CRM integration to grow their business</p>
             </div>
@@ -918,7 +917,9 @@ const RealtorMarketing = () => {
         <section className="py-24 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">What Realtors Are Saying</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  What Realtors Are Saying
+</h2>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -949,7 +950,9 @@ const RealtorMarketing = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <p className="text-primary font-medium mb-4">FAQ</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Frequently Asked Questions
+</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to know about our real estate marketing solutions</p>
             </div>
 
@@ -1047,9 +1050,8 @@ const RealtorMarketing = () => {
                     <p className="text-sm text-muted-foreground">Founder, GrowSmallBiz</p>
                   </div>
                   <div className="flex-1 text-center md:text-left">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-                      Ready to Transform Your{" "}
-                      <span className="text-gradient">Real Estate Business</span>?
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                      Ready to Transform Your Real Estate Business?
                     </h2>
                     <p className="text-xl text-muted-foreground mb-6">
                       Schedule a free strategy session and discover how our platform can help you generate more leads, close more deals, and grow your business.

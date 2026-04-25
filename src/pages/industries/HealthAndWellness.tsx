@@ -279,8 +279,8 @@ const HealthAndWellness = () => {
               <Heart className="w-4 h-4" />
               Health & Wellness Practice Marketing
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Stop Losing Patients to Clinics With Worse Outcomes But <span className="text-gradient">Better Marketing</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Patients to Clinics With Worse Outcomes But Better Marketing
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               Your dental practice, chiropractic office, or med spa is losing new patients to competitors with a stronger digital presence. GrowSmallBiz builds the complete patient acquisition system – local SEO, Google Ads, AI automation, and reputation management.
@@ -321,7 +321,9 @@ const HealthAndWellness = () => {
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Sound Familiar?
+</h2>
             <p className="text-muted-foreground">These are the challenges we hear from health and wellness practices every day.</p>
           </div>
           <div className="max-w-2xl mx-auto space-y-4">
@@ -347,7 +349,9 @@ const HealthAndWellness = () => {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">What Is a Health & Wellness Marketing Agency?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  What Is a Health & Wellness Marketing Agency?
+</h2>
 
             {/* AEO Entity Block */}
             <div className="border-l-4 border-l-primary bg-primary/5 rounded-r-xl p-6 mb-8">
@@ -370,7 +374,9 @@ const HealthAndWellness = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">The Unique Challenges of Marketing Health & Wellness Businesses</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center bg-gradient-heading bg-clip-text text-transparent">
+  The Unique Challenges of Marketing Health & Wellness Businesses
+</h2>
             <p className="text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
               Health and wellness marketing faces regulatory and consumer behavior challenges that distinguish it from every other industry. Understanding these dynamics is the difference between a marketing strategy that fills your appointment book and one that produces traffic with no bookings.
             </p>
@@ -396,7 +402,9 @@ const HealthAndWellness = () => {
       {/* Practices We Serve — 3 columns with images */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Health & Wellness Practices We Serve</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Health & Wellness Practices We Serve
+</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {practices.map((practice) => (
               <div key={practice.title} className="flex flex-col bg-surface-elevated border-2 border-[hsl(188_78%_41%_/_0.25)] rounded-2xl overflow-hidden hover:-translate-y-2 transition-all duration-300 hover:border-[hsl(188_78%_41%_/_0.6)] hover:shadow-[0_0_30px_hsl(188_78%_41%_/_0.3)]">
@@ -424,7 +432,9 @@ const HealthAndWellness = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Digital Marketing Services for Health & Wellness Practices</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Digital Marketing Services for Health & Wellness Practices
+</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {serviceCards.map((service, index) => (
@@ -452,7 +462,9 @@ const HealthAndWellness = () => {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">What Works by Channel — Health & Wellness</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center bg-gradient-heading bg-clip-text text-transparent">
+  What Works by Channel — Health & Wellness
+</h2>
             <p className="text-muted-foreground mb-10 text-center max-w-3xl mx-auto">
               Effective marketing for health and wellness practices requires channel-specific strategies matched to how patients actually search and decide. One channel does not serve all practice types equally.
             </p>
@@ -484,7 +496,9 @@ const HealthAndWellness = () => {
       <section className="py-20 bg-accent/5">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center">The Patient Acquisition Funnel for Health Practices</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 text-center bg-gradient-heading bg-clip-text text-transparent">
+  The Patient Acquisition Funnel for Health Practices
+</h2>
             <p className="text-muted-foreground mb-12 text-center max-w-3xl mx-auto">
               Every new patient moves through four stages before they are sitting in your chair. A complete marketing system touches all four — not just the top.
             </p>
@@ -512,7 +526,9 @@ const HealthAndWellness = () => {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Results for Health & Wellness Practices</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Results for Health & Wellness Practices
+</h2>
             <div className="space-y-6">
               {caseStudies.map((study, index) => (
                 <div key={index} className={`bg-surface-elevated border-2 border-[hsl(188_78%_41%_/_0.25)] ${study.accent} border-l-4 rounded-r-xl p-6 transition-all duration-300 hover:border-[hsl(188_78%_41%_/_0.6)] hover:shadow-[0_0_30px_hsl(188_78%_41%_/_0.3)]`}>
@@ -537,7 +553,9 @@ const HealthAndWellness = () => {
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Health & Wellness Practices Choose GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Why Health & Wellness Practices Choose GrowSmallBiz
+</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12">
               <p>
                 GrowSmallBiz is a health and wellness marketing agency led by Subrata Guha, a practitioner with 30+ years of Fortune 500 experience in sales, marketing, and digital transformation. Unlike generalist agencies that apply the same playbook to every client, GrowSmallBiz builds each engagement around AI-driven competitive research specific to your practice type, market, and geography. The methodology was refined across dozens of health and wellness client engagements before being brought directly to practices nationwide.
@@ -564,7 +582,9 @@ const HealthAndWellness = () => {
       {/* Getting Started */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">Getting Started Is Simple</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Getting Started Is Simple
+</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {gettingStartedSteps.map((item) => (
               <div key={item.step} className="text-center">

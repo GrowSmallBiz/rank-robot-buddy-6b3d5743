@@ -126,9 +126,8 @@ const MedSpa = () => {
               <Sparkles className="w-4 h-4" />
               Med Spa Marketing
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Full-Service Med Spa Marketing Built to{" "}
-              <span className="text-gradient">Fill Your Treatment Rooms</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              Full-Service Med Spa Marketing Built to Fill Your Treatment Rooms
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               GrowSmallBiz provides med spas with a complete digital marketing system designed to attract high-value clients, showcase compelling results, and build the recurring membership model that generates predictable revenue month over month.
@@ -156,7 +155,9 @@ const MedSpa = () => {
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Sound Familiar?
+</h2>
             <p className="text-muted-foreground">These are the challenges we hear from med spa owners every day.</p>
           </div>
           <div className="max-w-2xl mx-auto space-y-4">
@@ -183,7 +184,9 @@ const MedSpa = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Med Spa Marketing Requires a Specialist</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Why Med Spa Marketing Requires a Specialist
+</h2>
             <p className="text-muted-foreground mb-8 text-lg">
               Med spa clients seek aesthetic enhancement and wellness — not pain relief. That distinction changes everything about how marketing works. Unlike dental or chiropractic patients driven by necessity, med spa clients are driven by desire, aspiration, and social validation.
             </p>
@@ -215,7 +218,9 @@ const MedSpa = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">What Does a Med Spa Marketing Agency Do?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center bg-gradient-heading bg-clip-text text-transparent">
+  What Does a Med Spa Marketing Agency Do?
+</h2>
             <p className="text-muted-foreground mb-8 text-lg text-center max-w-3xl mx-auto">
               A med spa marketing agency manages the full digital marketing ecosystem for medical aesthetic practices — social media content and Meta advertising, local SEO and Google Ads, reputation management and client retention automation, and website design optimized for consultation booking.
             </p>
@@ -260,7 +265,9 @@ const MedSpa = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Med Spa Marketing Services from GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Med Spa Marketing Services from GrowSmallBiz
+</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to attract premium aesthetic clients.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -287,7 +294,9 @@ const MedSpa = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Med Spa Marketing Results</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Med Spa Marketing Results
+</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {results.map((result, index) => (
@@ -310,7 +319,9 @@ const MedSpa = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Med Spas Choose GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Why Med Spas Choose GrowSmallBiz
+</h2>
             <div className="space-y-6">
               <div className="p-6 bg-card border border-border rounded-2xl">
                 <h3 className="text-lg font-display font-semibold text-foreground mb-2">Specialist, Not Generalist</h3>
