@@ -143,7 +143,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>About GrowSmallBiz | AI-Powered Marketing Agency</title>
-        <meta name="description" content="Learn about GrowSmallBiz — a digital marketing agency helping local service businesses grow with AI-powered SEO, automation, and lead generation strategies." />
+        <meta name="description" content="GrowSmallBiz: AI-powered marketing for local businesses. Get more leads with AI SEO, AI optimized ads, and marketing automation. Contact us!" />
         <link rel="canonical" href="https://growsmallbiz.io/about/" />
       </Head>
       <PageJsonLd
