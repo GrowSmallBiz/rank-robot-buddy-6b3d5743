@@ -82,7 +82,7 @@ export default function FormsSurveysDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="Try Our Drag-and-Drop Survey Builder Risk-Free" />
         <DemoPageNav />
       </main>
     </>

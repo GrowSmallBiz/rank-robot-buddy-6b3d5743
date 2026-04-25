@@ -85,7 +85,7 @@ export default function WebchatDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="Experience Risk-Free Chat With 30-Day Money-Back Guarantee" />
         <DemoPageNav />
       </main>
     </>

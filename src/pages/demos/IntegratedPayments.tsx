@@ -130,7 +130,7 @@ export default function IntegratedPaymentsDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="No-Risk Guarantee: Streamline Integrated Payments and Get Paid Faster" />
         <DemoPageNav />
       </main>
     </>
