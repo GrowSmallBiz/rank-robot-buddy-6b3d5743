@@ -58,6 +58,7 @@ export const hvacConfig: NicheConfig = {
   // HERO SECTION
   // ══════════════════════════════════════════════════════════════════════
   heroImage: hvacHeroImage,
+  heroImageAlt: "HVAC technician working on an air conditioning unit, demonstrating hands-on service and maintenance in a modern outdoor setting.",
   badgeIcon: Thermometer,
   badgeText: "HVAC Contractor Marketing",
   h1Line1: "The Marketing Agency That Fills Your HVAC Schedule",
@@ -295,6 +296,7 @@ export const hvacConfig: NicheConfig = {
   websiteDesignHighlight: "Into Booked Service Calls",
   websiteDesignSubheadline: "Most HVAC websites load slowly on mobile, bury the phone number, and fail to convert the homeowner who found you at 2 PM in a hot house. We build fast, mobile-first websites that turn emergency search traffic into booked service calls.",
   websiteDesignImage: hvacWebsiteScreenshot,
+  websiteDesignImageAlt: "Laptop and smartphone displaying HVAC emergency service website, featuring service details, star ratings, and contact options, emphasizing digital marketing solutions for HVAC contractors.",
   websiteDesignFeatureHeadline: "Websites That Convert Emergency Intent Into Booked Jobs",
   websiteDesignFeatureBody: "84% of consumers contact an HVAC company after first searching online (leads4build.com) — meaning your website is the destination for nearly every lead your Map Pack, Google Ads, and LSA campaigns generate. According to BrightLocal's 2026 Local Consumer Review Survey, 97% of consumers also read reviews before hiring — and 31% ignore any HVAC company below 4.5 stars. An HVAC website that loads in under 3 seconds on mobile, features click-to-call above the fold on every page, and integrates Google reviews prominently converts emergency search intent into booked service calls. GrowSmallBiz builds sites that accomplish all three from day one.",
   websiteDesignBullets: [
@@ -724,6 +726,7 @@ export const hvacConfig: NicheConfig = {
   ],
   aiReceptionistHighlightText: "78% of HVAC customers hire the first contractor to respond — not the best technician, not the lowest price. When a homeowner's AC stops working at 2 PM and they call your number, your AI Receptionist answers within seconds, qualifies the urgency, books the service call, and sends a confirmation SMS. That job is yours before they dial the next company. Every call that goes to voicemail has an 85% chance of becoming a lost lead — a job your competitor is booking right now (ACHR News).",
   aiReceptionistImage: aiReceptionistMulticall,
+  aiReceptionistImageAlt: "Smartphone displaying HVAC service notifications, including \"AC Emergency,\" \"No Heat,\" and \"Lead Captured,\" against a backdrop of a service vehicle, illustrating automated marketing solutions for HVAC contractors.",
   aiVoiceFeatureBullets: [
     "Answers every call 24/7 — midnight emergency calls, weekend system failures, peak season overflow",
     "Qualifies the lead by service type (emergency repair, tune-up, installation, commercial service) and urgency level",
@@ -735,6 +738,7 @@ export const hvacConfig: NicheConfig = {
     "Sends lead summary to your team via SMS and email within 60 seconds of every inquiry",
   ],
   aiChatImage: aiWebsiteLivechat,
+  aiChatImageAlt: "Computer screen displaying HVAC service website with emergency chat feature and HVAC unit image.",
   aiChatFeatureBullets: [
     "Answers service questions, pricing queries, and availability requests instantly — 24/7, no staffing required",
     "Qualifies website visitors by service type (emergency, scheduled maintenance, installation, commercial) before routing",

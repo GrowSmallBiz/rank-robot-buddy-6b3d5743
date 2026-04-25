@@ -41,6 +41,7 @@ export const photographersConfig: NicheConfig = {
 
   // ── Hero ──
   heroImage: photographerHeroImage,
+  heroImageAlt: "Photographer capturing a romantic moment between a bride and groom in a sunlit field, showcasing wedding photography expertise.",
   badgeText: "Photography Marketing & Growth System",
   badgeIcon: Camera,
   h1Line1: "Photography Marketing That Fills Your Calendar with",
@@ -114,6 +115,7 @@ export const photographersConfig: NicheConfig = {
   websiteDesignHighlight: "That Books Clients",
   websiteDesignSubheadline: "Custom portfolio websites built to showcase your work beautifully and convert visitors into paying clients",
   websiteDesignImage: portfolioPhotographerWebsite,
+  websiteDesignImageAlt: "Computer monitor displaying a photographer's portfolio website featuring wedding photography images, including couples in formal attire, showcasing various poses and settings, emphasizing marketing solutions for photographers.",
   websiteDesignFeatureHeadline: "Portfolio Websites That Convert Visitors Into Booked Clients",
   websiteDesignFeatureBody: "We build fast, beautiful portfolio sites designed specifically for photographers. Every element is optimized to showcase your work and guide potential clients toward booking.",
   websiteDesignBullets: [

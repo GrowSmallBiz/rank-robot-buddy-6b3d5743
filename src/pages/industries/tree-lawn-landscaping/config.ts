@@ -53,6 +53,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // 4.2  HERO SECTION
   // ══════════════════════════════════════════════════════════════════════
   heroImage: heroImage,
+  heroImageAlt: "Tree service professionals pruning trees along a residential street, showcasing landscaping work in a vibrant neighborhood, emphasizing local tree care and maintenance.",
   badgeIcon: TreePine,
   badgeText: "Tree, Lawn Care & Landscaping Marketing",
   h1Line1: "The Marketing Agency That Fills Your Tree Service, Lawn Care & Landscaping Schedule",
@@ -345,6 +346,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   websiteDesignHighlight: "Into Calls and Quote Requests",
   websiteDesignSubheadline: "Most tree service and lawn care websites look outdated, load slowly on mobile, and fail to convert the homeowner who found you on Google. We build fast, mobile-first websites that turn search traffic into booked jobs.",
   websiteDesignImage: websiteScreenshot,
+  websiteDesignImageAlt: "Tree service professional using a chainsaw while standing on a ladder, surrounded by greenery, featured on a website for tree service and lawn care marketing solutions.",
   websiteDesignFeatureHeadline: "Websites That Work as Hard as Your Crew",
   websiteDesignFeatureBody: "A conversion-focused website for a tree service or lawn care company does three things: it loads in under 3 seconds on mobile, it makes it effortless for a homeowner to call or request a quote, and it signals enough credibility – through reviews, photos, and service pages – that a first-time visitor trusts you before they pick up the phone. GrowSmallBiz builds websites that accomplish all three from day one.",
   websiteDesignBullets: [
@@ -834,6 +836,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   ],
   aiReceptionistHighlightText: "When a homeowner calls at 11pm about a tree that fell on their fence during a storm — your competitor's voicemail gets the call. Your AI Receptionist answers, qualifies the job, books the estimate, and sends a confirmation SMS. That job is yours before sunrise.",
   aiReceptionistImage: aiReceptionistMulticall,
+  aiReceptionistImageAlt: "AI-driven multi-call interface for tree service and landscaping businesses, featuring emergency tree removal, lawn care estimates, property management, and landscaping design.",
   aiVoiceFeatureBullets: [
     "Answers every call 24/7 — storm damage at midnight, commercial inquiries on Sunday, emergency removals during your busiest week",
     "Qualifies the lead by service type (tree removal, lawn care, landscaping, commercial) and urgency level",
@@ -845,6 +848,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     "Sends lead summary to your team via SMS and email within 60 seconds of every inquiry",
   ],
   aiChatImage: aiWebsiteLivechat,
+  aiChatImageAlt: "Tree service website showcasing before-and-after images of tree removal, with a live chat feature on a smartphone for customer inquiries, emphasizing local landscaping solutions.",
   aiChatFeatureBullets: [
     "Answers service questions, pricing queries, and availability requests instantly — 24/7, no staffing required",
     "Qualifies website visitors by service interest, location, and urgency before routing to your team",
