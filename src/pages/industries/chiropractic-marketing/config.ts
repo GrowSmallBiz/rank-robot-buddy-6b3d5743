@@ -106,7 +106,7 @@ export const chiropracticConfig: NicheConfig = {
 
   // ── CTAs (Prompt 5 + 14) ──
   ctaAfterPainPoints: {
-    headline: "Ready for Chiropractic Marketing That Fills Your Schedule With the Right Patients?",
+    headline: "Custom Chiropractic Marketing Strategy to Attract and Convert Patients",
     subtext: "Let's build a custom chiropractic growth strategy to attract new patients and convert them into long-term wellness relationships.",
     primaryLabel: "Get Your Free Strategy Session",
     secondaryLabel: "Call +1 (925) 886-3724",

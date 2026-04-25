@@ -86,7 +86,7 @@ export default function CallTrackingDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="Risk-Free 30-Day Money-Back Guarantee on Call Tracking" />
         <DemoPageNav />
       </main>
     </>

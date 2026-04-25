@@ -233,8 +233,8 @@ export const paintingCompaniesConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // CORE SERVICES OVERVIEW
   // ══════════════════════════════════════════════════════════════════════
-  coreServicesHeadline: "Our Integrated Marketing System for",
-  coreServicesHighlight: "Residential and Commercial Painting Companies",
+  coreServicesHeadline: "Integrated Marketing System for Residential & Commercial Painters",
+  coreServicesHighlight: "",
   coreServicesSubheadline: "Every service works together. No gaps between channels. One team, one strategy, one dashboard.",
   coreServices: [
     {

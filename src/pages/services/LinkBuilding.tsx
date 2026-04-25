@@ -572,7 +572,7 @@ const LinkBuilding = () => {
         </section>
 
         {/* SECTION 10 — CONSULTATION FORM */}
-        <ConsultationFormSection />
+        <ConsultationFormSection headingOverride="Schedule a Free AI SEO & Link Building Strategy Session" />
       </main>
 
       <Footer />

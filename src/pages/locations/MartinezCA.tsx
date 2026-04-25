@@ -102,7 +102,7 @@ const MartinezCA = () => {
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6"><Star className="w-4 h-4" /> WHY US</span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your Martinez Bottom Line
+              Why GrowSmallBiz's Martinez Roots Boost Your Local Marketing ROI
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Martinez's SERP landscape is dominated by national agencies with no local roots. The current SERP leaders are national agencies running the same page templates across Sacramento, Fresno, and dozens of other California cities. Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of Martinez's community-oriented local service market — combined with genuine Contra Costa County proximity that national agencies cannot replicate.</p>
           </div>

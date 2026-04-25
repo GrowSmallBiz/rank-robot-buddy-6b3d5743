@@ -106,7 +106,7 @@ export default function WebsiteBuilderDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
-  No Limits
+  Build Unlimited Websites with Our Intuitive Drag-and-Drop Platform
 </h2>
                 <h3 className="text-xl font-bold text-foreground mb-6">Build all the websites you need</h3>
                 <p className="text-muted-foreground leading-relaxed">

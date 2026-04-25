@@ -288,7 +288,7 @@ const LocationsWeServe = () => {
                   <span>AI-Powered Digital Marketing Automation</span>
                 </div>
                 <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                  How AI-Powered Marketing Systems Help Small and Mid-Sized Bay Area Businesses Grow
+                  Boost Greater Bay Area SMB Growth with Agentic AI Marketing Playbooks
                 </h2>
                 <h3 className="text-xl md:text-2xl font-display font-semibold text-foreground mt-4">
                   Get More Calls, More Booked Jobs, and Grow Revenue

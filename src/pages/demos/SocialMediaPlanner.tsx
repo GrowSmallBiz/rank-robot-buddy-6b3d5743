@@ -101,7 +101,7 @@ export default function SocialMediaPlannerDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="Get Started Risk-Free with Our 30-Day Money-Back Guarantee" />
         <DemoPageNav />
       </main>
     </>

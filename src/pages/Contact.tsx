@@ -87,7 +87,7 @@ const Contact = () => {
                 style={{ backgroundColor: '#191321', border: '2px solid #17a2b8' }}
               >
                 <h2 className="text-2xl font-display font-bold text-white mb-6 bg-gradient-heading bg-clip-text text-transparent">
-                  Send Us a Message
+                  Contact GrowSmallBiz for a Digital Growth Strategy Session
                 </h2>
 
                 {showIframe ? (

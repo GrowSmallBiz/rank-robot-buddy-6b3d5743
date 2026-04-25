@@ -337,7 +337,7 @@ export default function ReviewsDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="Turn 5 Star Customer Reviews into Your Most Effective Marketing Tool" />
         <DemoPageNav />
       </main>
     </>

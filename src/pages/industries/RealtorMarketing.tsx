@@ -425,7 +425,7 @@ const RealtorMarketing = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
-  Sound Familiar?
+  Fed Up Paying Zillow for Leads That Vanish Overnight?
 </h2>
             </div>
 

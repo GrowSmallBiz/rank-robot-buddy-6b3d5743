@@ -211,7 +211,7 @@ const LSA = () => {
               style={{ backgroundColor: "hsl(210 50% 12%)" }}
             >
               <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center mb-6 bg-gradient-heading bg-clip-text text-transparent">
-                Why LSA Matters Now
+                Stop Being Invisible: Run Google Local Service Ads To Get Qualified Leads
               </h2>
               <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
                 <p>

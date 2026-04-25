@@ -85,7 +85,7 @@ export default function SalesFunnelsDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="Risk-Free Sales Funnel Guarantee with Templates & A/B Testing" />
         <DemoPageNav />
       </main>
     </>

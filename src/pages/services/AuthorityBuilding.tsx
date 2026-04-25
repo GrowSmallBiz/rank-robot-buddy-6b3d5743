@@ -189,7 +189,7 @@ const AuthorityBuilding = () => {
           title="Build the Authority That Turns Search Visibility Into"
           titleHighlight="Market Trust"
           subtitle='<h2 className="bg-gradient-heading bg-clip-text text-transparent" class="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
-  Most local service businesses do not have a keyword problem. They have an authority problem.
+  Local Service Businesses Have an Authority Problem, Not Keywords problems
 </h2>Your competitors are <strong>NOT</strong> always better — they are simply seen as more established, more credible, and more trustworthy by search engines, AI systems, and prospective customers.<br/><br/>As one strategic pillar of our Managed AI SEO system, Authority Building helps position your business as the trusted local expert across search results, the broader web, and the minds of prospective customers.<br/><br/>This is not about buying links or gaming algorithms. It is about building a credible presence that signals expertise, earns trust, and compounds over time.'
           primaryCTA={{
             label: "Schedule Strategy Call",

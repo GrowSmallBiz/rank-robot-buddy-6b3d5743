@@ -128,7 +128,7 @@ const PleasantonCA = () => {
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">WHY US</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your Pleasanton Bottom Line
+              How GrowSmallBiz's Dual-ZIP Strategy Elevates Your Pleasanton ROI
             </h2>
           </div>
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto animate-fade-up">

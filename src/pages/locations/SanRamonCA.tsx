@@ -134,7 +134,7 @@ const SanRamonCA = () => {
               <Star className="w-4 h-4" /> WHY DIFFERENT
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your San Ramon Bottom Line
+              How GrowSmallBiz's Local Insights Increase Your San Ramon Revenue
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Every agency says they are different. Here is what it actually means for GrowSmallBiz — and why it matters specifically for San Ramon service businesses competing in one of the East Bay's most active local markets.</p>
           </div>

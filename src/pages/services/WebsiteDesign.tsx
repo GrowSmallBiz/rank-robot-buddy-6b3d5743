@@ -356,8 +356,7 @@ const WebsiteDesign = () => {
         <div className="container mx-auto px-4">
           <SectionHeader
             subtitle="TOPICAL DEPTH"
-            title="What Small Business Website Design Actually Means for a"
-            titleHighlight="Service-Based Company"
+            title="More Than Websites: Conversion Focused Foundations for Your Entire Growth Strategy"
           />
 
           <div className="grid lg:grid-cols-5 gap-10 max-w-6xl mx-auto">

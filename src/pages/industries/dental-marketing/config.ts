@@ -106,7 +106,7 @@ export const dentalConfig: NicheConfig = {
 
   // ── CTAs ──
   ctaAfterPainPoints: {
-    headline: "Ready for Dental Marketing That Fills Your Schedule With the Right Patients?",
+    headline: "Custom Dental Marketing to Attract High-Value Patients",
     subtext: "Let's build a custom dental growth strategy to attract high-value patients and reduce insurance dependency.",
     primaryLabel: "Get Your Free Strategy Session",
     secondaryLabel: "Call +1 (925) 886-3724",

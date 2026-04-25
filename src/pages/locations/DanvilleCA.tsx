@@ -117,7 +117,7 @@ const DanvilleCA = () => {
               <Star className="w-4 h-4" /> WHY US
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your Danville Bottom Line
+              How GrowSmallBiz's Danville Expertise Boosts Local Service ROI
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Choosing the right digital marketing partner is one of the most consequential decisions you will make for your Danville business. Here is what sets GrowSmallBiz apart from every general-purpose agency competing for your attention:</p>
           </div>

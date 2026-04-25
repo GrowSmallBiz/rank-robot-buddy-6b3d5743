@@ -118,7 +118,7 @@ const TracyCA = () => {
               <Star className="w-4 h-4" /> WHY US
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your Tracy Bottom Line
+              What Sets GrowSmallBiz Apart and Boosts Your Tracy Bottom Line
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Tracy's SERP landscape is occupied by thin local pages and out-of-state template agencies ranking on domain authority alone. No agency currently offers Tracy service businesses an integrated marketing system — local SEO, paid ads, AI automation, and retention — under one coordinated strategy.</p>
             <p className="text-base text-muted-foreground mt-3 max-w-3xl mx-auto">Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of Tracy's commuter city market.</p>

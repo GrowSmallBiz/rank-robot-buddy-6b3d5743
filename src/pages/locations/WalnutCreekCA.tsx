@@ -131,7 +131,7 @@ const WalnutCreekCA = () => {
               <Star className="w-4 h-4" /> WHY US
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your Bottom Line
+              How GrowSmallBiz's AI Marketing System Boosts Walnut Creek Revenue
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Choosing the right digital marketing partner is one of the most important decisions you'll make for your business. Here's what sets GrowSmallBiz apart from general-purpose agencies:</p>
           </div>

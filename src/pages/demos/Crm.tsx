@@ -85,7 +85,7 @@ export default function CrmDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="Try GrowSmallBiz CRM Risk-Free with 30-Day Money-Back Guarantee" />
         <DemoPageNav />
       </main>
     </>

@@ -117,7 +117,7 @@ const ConcordCA = () => {
               <Star className="w-4 h-4" /> WHY US
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your Concord Bottom Line
+              GrowSmallBiz's Digital Marketing Edge in Concord — Boost Your Revenue
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">In a city this large, good-enough marketing often underperforms. Here is what sets GrowSmallBiz apart from every general-purpose agency competing for your attention:</p>
           </div>

@@ -299,8 +299,7 @@ const FacebookAds = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <SectionHeader
-              title="What You Actually Get When GrowSmallBiz Manages Your"
-              titleHighlight="Facebook & Instagram Ads"
+              title="FAQs: Your Questions Answered: Facebook & Instagram Ads for Local Businesses"
               description="We don't just run ads. We build a full-funnel paid social system designed to generate consistent, qualified leads for your local service business — every single month."
             />
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">

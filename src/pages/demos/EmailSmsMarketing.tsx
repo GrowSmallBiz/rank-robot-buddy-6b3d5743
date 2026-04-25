@@ -113,7 +113,7 @@ export default function EmailSmsMarketingDemo() {
         </section>
 
         <IntegrationsSection />
-        <DemoGuarantee />
+        <DemoGuarantee headingOverride="Seamless Integration and 100% Risk-Free Guarantee" />
         <DemoPageNav />
       </main>
     </>
