@@ -18,7 +18,7 @@ const industries = [
     icon: Camera,
     title: "Photography Marketing",
     description: "Attract engaged couples, families, and commercial clients searching for professional photographers in your area.",
-    link: "/professional-services/photography-marketing/",
+    link: "/professional-services/marketing-for-photographers/",
   },
 ];
 
