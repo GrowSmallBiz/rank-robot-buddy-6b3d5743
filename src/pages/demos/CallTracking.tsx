@@ -30,7 +30,7 @@ export default function CallTrackingDemo() {
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <p className="text-primary font-semibold uppercase tracking-widest mb-4">CALL TRACKING</p>
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
-              Track Every Call, Record Conversations, And Attribute Leads To Their Source
+              Track Every Call, Recording & Attribution for Small Businesses
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               Know exactly where your phone leads come from. Track, record, and analyze every call to optimize your marketing spend and improve your team's performance.

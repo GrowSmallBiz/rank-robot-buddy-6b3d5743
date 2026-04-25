@@ -138,7 +138,7 @@ const LSA = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up bg-gradient-heading bg-clip-text text-transparent">
-              Google Local Service Ads: Get More Calls. Pay Only for Real Leads. Not Clicks.
+              GrowSmallBiz: Google Local Service Ads - Pay Only for Qualified Leads
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Google Local Service Ads put your business at the very top of search — above PPC, above organic. You pay only when a verified customer contacts you directly. GrowSmallBiz manages every detail: Google Verified setup, profile optimization, lead review, and dispute management.

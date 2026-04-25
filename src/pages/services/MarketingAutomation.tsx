@@ -545,8 +545,8 @@ const MarketingAutomation = () => {
         {/* Hero Section */}
         <ServiceHero
           badge={{ icon: Bot, text: "START CLOSING MORE DEALS!" }}
-          title="Stop Letting Leads Go Cold — Automate Your Follow-Up and Close More Jobs"
-          titleHighlight="Leads Into Sales"
+          title="AI-Powered Marketing Automation: Turn Cold Leads into Sales"
+          titleHighlight=""
           subtitle="GrowSmallBiz Digital Marketing helps you capture, nurture, and close leads on autopilot through SMS, Email, Live Chat, Phone Calls, and more!"
           primaryCTA={{
             label: "Schedule a Demo",
