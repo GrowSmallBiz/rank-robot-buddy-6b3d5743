@@ -23,13 +23,8 @@ export const HowItWorksSection = ({ config }: HowItWorksSectionProps) => {
         )}
         {config.howItWorksHeadline && (
           <div className="text-center mb-10 animate-fade-up">
-            <h2 className="section-title">
-              {config.howItWorksHeadline}{" "}
-              {config.howItWorksHighlight && (
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-                  {config.howItWorksHighlight}
-                </span>
-              )}
+            <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+              {[config.howItWorksHeadline, config.howItWorksHighlight].filter(Boolean).join(" ")}
             </h2>
           </div>
         )}

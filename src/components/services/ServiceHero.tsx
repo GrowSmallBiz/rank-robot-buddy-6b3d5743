@@ -101,16 +101,8 @@ export const ServiceHero = ({
             <span>{badge.text}</span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight">
-            {title}
-            {titleHighlight && (
-              <>
-                {" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary">
-                  {titleHighlight}
-                </span>
-              </>
-            )}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+            {[title, titleHighlight].filter(Boolean).join(" ")}
           </h1>
 
           <div

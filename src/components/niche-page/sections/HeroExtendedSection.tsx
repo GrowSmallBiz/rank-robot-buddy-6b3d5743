@@ -14,16 +14,8 @@ export const HeroExtendedSection = ({ config }: HeroExtendedSectionProps) => {
       <div className="container mx-auto px-4">
         {config.heroExtendedHeadline && (
           <div className="text-center mb-10 animate-fade-up">
-            <h2 className="section-title">
-              {config.heroExtendedHighlight && config.heroExtendedHeadline?.includes(config.heroExtendedHighlight)
-                ? <>
-                    {config.heroExtendedHeadline.split(config.heroExtendedHighlight)[0]}
-                    <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-                      {config.heroExtendedHighlight}
-                    </span>
-                    {config.heroExtendedHeadline.split(config.heroExtendedHighlight)[1]}
-                  </>
-                : config.heroExtendedHeadline}
+            <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+              {config.heroExtendedHeadline}
             </h2>
           </div>
         )}
