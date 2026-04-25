@@ -744,7 +744,7 @@ const Services = () => {
 
       {/* ─── CONSULTATION FORM ─── */}
       <div id="consultation">
-        <ConsultationFormSection />
+        <ConsultationFormSection headingOverride="Core Growth System: Website Design, SEO, Paid Ads & CRM Automation" />
       </div>
       </main>
       <Footer />

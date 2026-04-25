@@ -833,7 +833,7 @@ const GoogleAds = () => {
         </div>
       </section>
 
-      <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} />
+      <ConsultationFormSection utmCampaign="consultation-form" utmMedium={pageMedium} headingOverride="Claim Your Free Google Ads Consultation for Local Businesses" />
       </main>
       <Footer />
     </div>
