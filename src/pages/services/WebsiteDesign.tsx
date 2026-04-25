@@ -295,7 +295,7 @@ const WebsiteDesign = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: Globe, text: "WEBSITE THAT CONVERTS" }}
-          title={<>Websites Built to Turn Visitors Into <span className="text-transparent bg-clip-text bg-gradient-primary">Calls, Bookings,</span> and <span className="text-transparent bg-clip-text bg-gradient-primary">Leads.</span></>}
+          title="Websites Built to Turn Visitors Into Calls, Bookings, and Leads."
           subtitle="Most local service business websites look the part. The problem is they were built to impress — not to convert.<br/><br/>GrowSmallBiz designs and builds websites engineered around a single outcome: turning visitors into calls, bookings, and quote requests.<br/><br/>And for our clients, the website is never the end of the conversation — it's the beginning."
           primaryCTA={{
             label: "Schedule Strategy Call",

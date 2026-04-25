@@ -476,7 +476,7 @@ const GEO = () => {
 
         {/* SECTION 8 — FAQ */}
         <FAQSection
-          title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO and AI-Search Visibility</span></>}
+          title="Frequently Asked Questions About GEO and AI-Search Visibility"
           faqs={faqs.map(f => ({
             question: f.question,
             answer: f.answer,

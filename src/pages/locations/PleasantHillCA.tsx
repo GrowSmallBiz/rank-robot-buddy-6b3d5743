@@ -482,7 +482,7 @@ const PleasantHillCA = () => {
 
       {/* ===== SECTION 8 — FAQ ===== */}
       <FAQSection
-        title={<>Frequently Asked Questions — <span className="text-transparent bg-clip-text bg-gradient-primary italic">Pleasant Hill Digital Marketing</span></>}
+        title="Frequently Asked Questions — Pleasant Hill Digital Marketing"
         faqs={[
           { question: "How long does it take to see SEO results in Pleasant Hill?", answer: "Local SEO and organic rankings typically show meaningful movement within 60–90 days. Significant lead volume growth is usually seen within 6 months. Paid advertising can generate qualified leads within days of campaign launch. We set realistic, honest expectations during the strategy call based on your specific starting point and the Pleasant Hill competitive landscape — which, for the primary keyword at KD 8, is unusually open compared to every other city in our service area." },
           { question: "Do you serve areas beyond Pleasant Hill?", answer: "Yes. GrowSmallBiz serves businesses throughout the Diablo Valley and 680 corridor — Pleasant Hill, Walnut Creek, Concord, Martinez, Danville, San Ramon, and surrounding communities. We understand this specific market and the competitive dynamics between these cities because we are headquartered in Contra Costa County." },

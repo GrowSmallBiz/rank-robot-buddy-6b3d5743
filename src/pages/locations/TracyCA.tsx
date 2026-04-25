@@ -548,7 +548,7 @@ const TracyCA = () => {
 
       {/* ===== FAQ SECTION ===== */}
       <FAQSection
-        title={<>Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Tracy</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Tracy"
         faqs={[
           { question: "What types of businesses does GrowSmallBiz work with in Tracy?", answer: "We work exclusively with local service businesses in Tracy and the surrounding San Joaquin Valley — including HVAC contractors, plumbers, electricians, roofers, dental practices, med spas, real estate professionals, restaurants, and other local service providers. We do not work with eCommerce stores, national retailers, product-based businesses, or law firms. Our systems are purpose-built for businesses that serve local Tracy clients directly." },
           { question: "How far is GrowSmallBiz from Tracy?", answer: "GrowSmallBiz is based in Danville, California — approximately 40 miles from Tracy via I-205 and I-580. We are the nearest full-service integrated digital marketing agency serving Tracy's local service businesses. Our team regularly serves clients across the I-580 corridor from the Tri-Valley through the San Joaquin Valley gateway cities." },

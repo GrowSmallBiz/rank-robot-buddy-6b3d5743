@@ -565,7 +565,7 @@ const DanvilleCA = () => {
 
       {/* ===== FAQ SECTION ===== */}
       <FAQSection
-        title={<>Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Danville</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Danville"
         faqs={[
           { question: "What types of businesses does GrowSmallBiz work with in Danville, CA?", answer: "GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, realtors, restaurants, and other Danville-area companies that depend on visibility, lead flow, follow-up, and retention." },
           { question: "How much does digital marketing cost for a Danville local service business?", answer: "Investment levels vary based on your business size, revenue goals, competitive landscape, and the combination of services you need. Most Danville service businesses in our portfolio invest between $1,000 and $5,000 per month across SEO, Google Ads, reputation management, and AI automation — with our core AI Client Growth System starting at $797 per month plus a one-time setup fee. Given Danville's premium market dynamics — where a single new client relationship can represent several thousand dollars in lifetime value — the ROI threshold is typically reached faster here than in lower-value markets. We build custom packages aligned to your specific goals and service area." },

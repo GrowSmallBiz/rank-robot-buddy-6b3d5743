@@ -840,7 +840,7 @@ const LocationsWeServe = () => {
 
         {/* FAQs */}
         <FAQSection
-          title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Bay Area Digital Marketing</span></>}
+          title="Frequently Asked Questions About Bay Area Digital Marketing"
           faqs={faqs.map(f => ({
             question: f.question,
             answer: f.answer,

@@ -553,7 +553,7 @@ const DublinCA = () => {
 
       {/* FAQ Section */}
       <FAQSection
-        title={<>Your Questions Answered — <span className="text-transparent bg-clip-text bg-gradient-primary italic">No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Dublin</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Dublin"
         subtitle="The questions below reflect what Dublin service business owners ask most commonly before starting a marketing engagement."
         faqs={[
           { question: "What types of businesses does GrowSmallBiz work with in Dublin?", answer: "We work exclusively with local service businesses and brick-and-mortar establishments in Dublin and the Tri-Valley — including HVAC contractors, plumbers, electricians, roofers, dental practices, med spas, real estate professionals, and restaurants. We do not work with eCommerce stores, online retailers, or product-based businesses. Our systems are purpose-built for businesses that serve local Dublin clients directly." },

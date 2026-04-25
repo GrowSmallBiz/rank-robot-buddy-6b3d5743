@@ -366,7 +366,7 @@ const MartinezCA = () => {
 
       {/* ===== FAQ ===== */}
       <FAQSection
-        title={<>Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Martinez</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Martinez"
         faqs={[
           { question: "What types of businesses does GrowSmallBiz work with in Martinez?", answer: "We work exclusively with local service businesses and brick-and-mortar establishments in Martinez and the surrounding Contra Costa County area — including HVAC contractors, plumbers, electricians, roofers, dental practices, med spas, real estate professionals, and restaurants. We do not work with law firms, eCommerce stores, or product-based businesses. Our systems are purpose-built for businesses that serve local Martinez and Contra Costa County clients directly." },
           { question: "How long does SEO take in Martinez?", answer: "Google Business Profile optimizations show measurable movement — increased views, calls, and direction requests — within 30 to 60 days. Organic rankings shift within 60 to 90 days for less competitive terms and 3 to 6 months for primary category keywords. Martinez is competitive but not saturated: the current SERP leader is a national template agency that can be outperformed with a well-executed local strategy within 6 to 12 months." },

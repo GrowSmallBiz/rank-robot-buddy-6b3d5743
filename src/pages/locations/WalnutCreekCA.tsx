@@ -646,7 +646,7 @@ const WalnutCreekCA = () => {
       </section>
 
       <FAQSection
-        title={<>Your Questions Answered — <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Walnut Creek</span></>}
+        title="Your Questions Answered — Digital Marketing in Walnut Creek"
         faqs={[
           { question: "How much does digital marketing cost for a Walnut Creek local service business?", answer: "Investment levels vary based on your business size, revenue goals, competitive landscape, and the combination of services you need. Most Walnut Creek service businesses in our client portfolio invest between $1,000 and $5,000 per month across SEO, Google Ads, reputation management, and AI automation — with our core AI Client Growth System starting at $797 per month plus a one-time setup fee. We build custom packages aligned to your goals and service area to ensure maximum return on marketing investment." },
           { question: "How long does it take to see results from local SEO in Walnut Creek?", answer: "Google Business Profile optimizations typically show measurable movement within 4 to 8 weeks. Full local 3-pack rankings for competitive Walnut Creek search terms are usually achieved within 3 to 6 months, depending on your industry and starting position. Google Ads campaigns generate qualified leads from day one. A combined SEO and Ads strategy delivers both immediate lead flow and sustainable long-term organic growth." },

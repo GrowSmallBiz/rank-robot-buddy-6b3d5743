@@ -618,7 +618,7 @@ const PleasantonCA = () => {
 
       {/* FAQ Section */}
       <FAQSection
-        title={<>Your Questions Answered — <span className="text-transparent bg-clip-text bg-gradient-primary italic">No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Pleasanton</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Pleasanton"
         subtitle="The questions below reflect what Pleasanton service business owners ask most commonly before starting a marketing engagement."
         faqs={[
           { question: "Can I rank in Pleasanton without a Pleasanton address?", answer: "Yes. Service area businesses without a physical Pleasanton location rank in Pleasanton's map pack by configuring their Google Business Profile service area to include Pleasanton, building geo-targeted landing pages for Pleasanton-specific queries, and developing citations in Alameda County directories. Proximity matters but can be offset by relevance and prominence. Contractors in Dublin, San Ramon, and Danville are already ranking competitively for HVAC, plumbing, electrical, and roofing searches in Pleasanton without a local address — the time to start is now." },

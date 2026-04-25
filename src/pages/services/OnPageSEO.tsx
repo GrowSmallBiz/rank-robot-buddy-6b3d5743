@@ -264,7 +264,7 @@ const OnPageSEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: FileText, text: "On-Page SEO for Local Service Businesses" }}
-          title={<>On-Page SEO That Makes All Money Pages Easier to Rank — and Easier to{" "}</>}
+          title="On-Page SEO That Makes All Money Pages Easier to Rank — and Easier to"
           titleHighlight="Choose"
           subtitle="Your website may already have the right services. But if your key pages do not clearly communicate what you do, where you do it, and why a prospect should trust you, they can underperform in search and lose leads after the click."
           description="GrowSmallBiz uses Agentic AI SEO Playbooks with expert human oversight to strengthen the on-page signals that influence rankings, improve clarity for potential customers, and build a stronger foundation for both traditional search visibility and AI-assisted discovery. This is managed, ongoing execution for local service businesses — not a one-time audit with recommendations left for you to implement."

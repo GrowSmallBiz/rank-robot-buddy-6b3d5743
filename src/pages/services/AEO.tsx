@@ -244,7 +244,7 @@ const AEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MessageCircleQuestion, text: "Managed AI SEO — AEO Pillar" }}
-          title={<>AEO Services That Help Local Service Businesses Become the{" "}</>}
+          title="AEO Services That Help Local Service Businesses Become the"
           titleHighlight="Answer"
           subtitle="Search behavior has shifted. Local buyers are asking full questions, and modern search experiences increasingly surface direct answers instead of just lists of links."
           description="GrowSmallBiz helps local service businesses build answer-ready content architecture that improves visibility across search ecosystems, strengthens trust early, and turns more search impressions into calls, inquiries, and booked jobs."
@@ -523,7 +523,7 @@ const AEO = () => {
 
         {/* SECTION 8 — FAQ */}
         <FAQSection
-          title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">AEO</span></>}
+          title="Frequently Asked Questions About AEO"
           faqs={faqs}
           schemaType="FAQPage"
           contactCTA={{

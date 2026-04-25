@@ -680,7 +680,7 @@ const SanRamonCA = () => {
 
       {/* FAQ Section */}
       <FAQSection
-        title={<>Your Questions Answered — <span className="text-transparent bg-clip-text bg-gradient-primary italic">No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in San Ramon</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in San Ramon"
         subtitle="The questions below reflect what San Ramon service business owners ask most commonly before starting a marketing engagement."
         faqs={[
           { question: "What types of businesses does GrowSmallBiz work with?", answer: "We work exclusively with local service businesses and brick-and-mortar establishments — including HVAC contractors, plumbers, electricians, roofers, dental practices, med spas, real estate professionals, and restaurants. We do not work with eCommerce stores, online retailers, or product-based businesses. Our systems are purpose-built for businesses that serve local San Ramon and Tri-Valley customers directly." },

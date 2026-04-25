@@ -209,9 +209,7 @@ const LocalSEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MapPin, text: "Local SEO for Local Service Businesses" }}
-          title={<>Local SEO That Makes Your Local Service Business the{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-primary">First Call</span>
-          </>}
+          title="Local SEO That Makes Your Local Service Business the First Call"
           subtitle="Show up where local buying decisions happen — and turn more visibility into calls, inquiries, and booked jobs."
           preCtaContent={
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mt-2 mb-2">
