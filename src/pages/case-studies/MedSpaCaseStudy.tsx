@@ -159,8 +159,8 @@ const MedSpaCaseStudy = () => {
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
                   <Search className="w-4 h-4" />Local SEO Case Studies
                 </span>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  Local SEO <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                  Local SEO Case Studies
                 </h2>
                 <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                   This section highlights AI SEO campaign performance for med spa clients, with a focus on Google Business Profile visibility, organic search growth, keyword movement, and lead generation.
@@ -205,8 +205,8 @@ const MedSpaCaseStudy = () => {
           <section className="py-16 relative">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
-                  Consistent Local SEO <span className="text-transparent bg-clip-text bg-gradient-primary">Methodology</span> Across Med Spa Campaigns
+                <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+                  Consistent Local SEO Methodology Across Med Spa Campaigns
                 </h2>
                 <P>
                   Across these campaigns, the work consistently included Google Business Profile optimization, localized content creation, technical SEO improvements, on-page optimization, and citation building — designed to improve rankings, GBP visibility, and engagement for high-intent med spa searches.
@@ -347,8 +347,8 @@ const MedSpaCaseStudy = () => {
                 <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
                   <MousePointerClick className="w-4 h-4" /><GoogleColoredText /> PPC Case Studies
                 </span>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  <GoogleColoredText /> PPC <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                  Google PPC Case Studies
                 </h2>
                 <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                   This section highlights Google Ads campaign performance for a med spa client, with a focus on lead generation efficiency, conversion volume, and cost-per-lead optimization.
@@ -464,8 +464,8 @@ const MedSpaCaseStudy = () => {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-                What These <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span> Show
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
+                What These Case Studies Show
               </h2>
               <div className="space-y-6 text-foreground/85 leading-relaxed text-lg">
                 <p>Across med spa campaigns, the pattern is consistent — practices that invest in structured local visibility and high-intent search strategy see measurable improvements in consultations, calls, and treatment bookings over time.</p>

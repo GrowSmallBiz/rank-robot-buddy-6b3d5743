@@ -18,7 +18,7 @@ export default function MembershipsDemo() {
         {/* Hero Section */}
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
               Memberships, Courses & Communities
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto">
@@ -32,7 +32,7 @@ export default function MembershipsDemo() {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   $336.98 Billion By 2026
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -52,7 +52,7 @@ export default function MembershipsDemo() {
         {/* Countless Ways */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4">
+            <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
               Countless Ways To Increase The Value You Offer
             </h2>
             <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
@@ -105,7 +105,7 @@ export default function MembershipsDemo() {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4">
+                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
                   Flexible Offers
                 </h2>
                 <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
@@ -136,7 +136,7 @@ export default function MembershipsDemo() {
                 loading="lazy"
               />
               <div>
-                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4">
+                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
                   Course Creation
                 </h2>
                 <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">

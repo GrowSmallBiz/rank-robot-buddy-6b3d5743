@@ -70,7 +70,7 @@ export const TestimonialsSection = ({
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-up">
           <p className="text-primary font-medium mb-4">Testimonials</p>
-          <h2 className={`text-3xl md:text-4xl font-display font-bold ${isLight ? "text-slate-800" : "text-foreground"}`}>
+          <h2 className={`text-3xl md:text-4xl font-display font-bold ${isLight ? "text-slate-800" : "text-foreground"} bg-gradient-heading bg-clip-text text-transparent`}>
             {title}
           </h2>
           {subtitle && (

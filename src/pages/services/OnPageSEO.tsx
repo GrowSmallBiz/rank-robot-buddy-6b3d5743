@@ -264,7 +264,7 @@ const OnPageSEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: FileText, text: "On-Page SEO for Local Service Businesses" }}
-          title={<>On-Page SEO That Makes All Money Pages Easier to Rank — and Easier to{" "}</>}
+          title="On-Page SEO That Makes All Money Pages Easier to Rank — and Easier to"
           titleHighlight="Choose"
           subtitle="Your website may already have the right services. But if your key pages do not clearly communicate what you do, where you do it, and why a prospect should trust you, they can underperform in search and lose leads after the click."
           description="GrowSmallBiz uses Agentic AI SEO Playbooks with expert human oversight to strengthen the on-page signals that influence rankings, improve clarity for potential customers, and build a stronger foundation for both traditional search visibility and AI-assisted discovery. This is managed, ongoing execution for local service businesses — not a one-time audit with recommendations left for you to implement."
@@ -290,9 +290,8 @@ const OnPageSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">WHY IT MATTERS</p>
-                <h2 className="section-title">
-                  Having a Website Is Not the Same as Having Pages That{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Rank, Get Understood, and Convert</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Having a Website Is Not the Same as Having Pages That Rank, Get Understood, and Convert
                 </h2>
               </div>
 
@@ -340,9 +339,8 @@ const OnPageSEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">OUR ON-PAGE SEO METHODOLOGY</p>
-              <h2 className="section-title">
-                Managed On-Page SEO Execution Across{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Every Important Page</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                Managed On-Page SEO Execution Across Every Important Page
               </h2>
               <p className="section-description mt-4">On-page SEO is not just adding a keyword to a title tag and calling it done. It is a systematic, multi-element optimization of the pages that matter most to your growth — your service pages, location pages, and homepage.</p>
               <p className="text-muted-foreground mt-2">Here is what GrowSmallBiz optimizes as part of your managed program.</p>
@@ -372,9 +370,8 @@ const OnPageSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">COMMON ISSUES</p>
-                <h2 className="section-title">
-                  The On-Page Problems Silently{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Suppressing Your Search Rankings</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  The On-Page Problems Silently Suppressing Your Search Rankings
                 </h2>
               </div>
 
@@ -411,9 +408,8 @@ const OnPageSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OUR APPROACH</p>
-                <h2 className="section-title">
-                  Faster, More Precise Optimization Across{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Service and Location Pages</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Faster, More Precise Optimization Across Service and Location Pages
                 </h2>
               </div>
 
@@ -485,9 +481,8 @@ const OnPageSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE PROCESS</p>
-                <h2 className="section-title">
-                  Your On-Page SEO Execution,{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Step by Step</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Your On-Page SEO Execution, Step by Step
                 </h2>
               </div>
 
@@ -516,9 +511,8 @@ const OnPageSEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">INDUSTRY RELEVANCE</p>
-              <h2 className="section-title">
-                Built for Local Service Businesses{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">That Need to Win on Search</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                Built for Local Service Businesses That Need to Win on Search
               </h2>
               <p className="section-description mt-4">
                 On-page SEO delivers the greatest impact for businesses where search visibility translates directly to phone calls, form fills, appointment bookings, and revenue. If your customers search for what you offer before they buy, this service is built for you.
@@ -555,9 +549,8 @@ const OnPageSEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OUR DIFFERENCE</p>
-                <h2 className="section-title">
-                  Why GrowSmallBiz for{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">On-Page SEO</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Why GrowSmallBiz for On-Page SEO
                 </h2>
               </div>
 
@@ -620,9 +613,8 @@ const OnPageSEO = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Your Most Important Pages Should Be Driving More Rankings, More Trust, and{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">More Leads</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                Your Most Important Pages Should Be Driving More Rankings, More Trust, and More Leads
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
                 If your key service pages and location pages are unclear, under-optimized, or poorly aligned with search intent, they can hold back both your rankings and your conversion rate. That means lost visibility, lost clicks, and lost business.

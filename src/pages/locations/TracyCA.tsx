@@ -54,9 +54,8 @@ const TracyCA = () => {
               <span>Tracy, CA — Local Service Business Marketing | San Joaquin Valley Gateway City</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Tracy Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Tracy Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
 
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
@@ -118,9 +117,8 @@ const TracyCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> WHY US
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Tracy Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Tracy Bottom Line
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Tracy's SERP landscape is occupied by thin local pages and out-of-state template agencies ranking on domain authority alone. No agency currently offers Tracy service businesses an integrated marketing system — local SEO, paid ads, AI automation, and retention — under one coordinated strategy.</p>
             <p className="text-base text-muted-foreground mt-3 max-w-3xl mx-auto">Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of Tracy's commuter city market.</p>
@@ -151,9 +149,8 @@ const TracyCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Winning in Tracy Search Results.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Competitors Are Winning in Tracy Search Results. Here's Exactly Why — and How to Take It Back.
             </h2>
           </div>
 
@@ -180,9 +177,8 @@ const TracyCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Search className="w-4 h-4" /> SEARCH GAP
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Local Search Gap Costing Most Tracy Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">10–15 Leads Every Month</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Local Search Gap Costing Most Tracy Service Businesses 10–15 Leads Every Month
             </h2>
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6">
@@ -202,9 +198,8 @@ const TracyCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Target className="w-4 h-4" /> SERVICES
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for Tracy Service Businesses —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for Tracy Service Businesses — Fills Your Calendar, Not Just Your Dashboard
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Tracy's market rewards businesses that are visible at the right moment, responsive at the right speed, and trusted before first contact. An integrated system delivers all three — not as separate channel investments, but as a coordinated engine that compounds over time as Tracy's population continues to grow.</p>
           </div>
@@ -447,9 +442,8 @@ const TracyCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> WHO WE SERVE
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Tracy</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for Tracy
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz works exclusively with local service businesses in Tracy and the surrounding San Joaquin Valley. We do not work with eCommerce stores, national retailers, or product-based businesses. Our systems are purpose-built for the verticals below — with genuine knowledge of Tracy's commuter timing pattern, affordability migration wave, and Central Valley seasonal demand.</p>
           </div>
@@ -497,7 +491,7 @@ const TracyCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -517,9 +511,8 @@ const TracyCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" /> WHY WE WIN
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Tracy Business Before</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your Tracy Business Before
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Tracy's SERPs are occupied by a thin local competitor and out-of-state agencies ranking on domain authority with no Central Valley market knowledge. Here is what makes the system GrowSmallBiz builds consistently outperform them in San Joaquin County's fastest-growing city:</p>
           </div>
@@ -555,7 +548,7 @@ const TracyCA = () => {
 
       {/* ===== FAQ SECTION ===== */}
       <FAQSection
-        title={<>Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Tracy</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Tracy"
         faqs={[
           { question: "What types of businesses does GrowSmallBiz work with in Tracy?", answer: "We work exclusively with local service businesses in Tracy and the surrounding San Joaquin Valley — including HVAC contractors, plumbers, electricians, roofers, dental practices, med spas, real estate professionals, restaurants, and other local service providers. We do not work with eCommerce stores, national retailers, product-based businesses, or law firms. Our systems are purpose-built for businesses that serve local Tracy clients directly." },
           { question: "How far is GrowSmallBiz from Tracy?", answer: "GrowSmallBiz is based in Danville, California — approximately 40 miles from Tracy via I-205 and I-580. We are the nearest full-service integrated digital marketing agency serving Tracy's local service businesses. Our team regularly serves clients across the I-580 corridor from the Tri-Valley through the San Joaquin Valley gateway cities." },
@@ -579,9 +572,8 @@ const TracyCA = () => {
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6">
-              Every Day You Wait, Your Competitors Book Another Tracy Customer That{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Should Have Been Yours</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              Every Day You Wait, Your Competitors Book Another Tracy Customer That Should Have Been Yours
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-4">Tracy's growth means new households are choosing local service providers right now — today. The HVAC contractor, dentist, restaurant, and real estate agent they find first in Google becomes their default choice, often for years. The businesses that establish digital authority in Tracy's local search results now build a compounding advantage as each new wave of Bay Area relocations arrives and searches for exactly what you offer.</p>
             <p className="text-foreground/80 leading-relaxed mb-4">GrowSmallBiz gives Tracy service businesses the integrated marketing system that wins in a fast-growing market: one connected platform spanning awareness to retention, powered by AI, and managed by a team based 40 miles away in Danville. Subrata Guha, our founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of Tracy's commuter city market — the timing dynamics, the first-mover opportunity, and the seasonal demand patterns that agencies running Bay Area templates simply do not understand.</p>

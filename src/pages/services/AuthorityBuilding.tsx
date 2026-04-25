@@ -186,9 +186,11 @@ const AuthorityBuilding = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: Shield, text: "Authority Building for Local Service Businesses" }}
-          title={<>Build the Authority That Turns Search Visibility Into{" "}<br className="hidden md:inline" /></>}
+          title="Build the Authority That Turns Search Visibility Into"
           titleHighlight="Market Trust"
-          subtitle='<h2 class="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">Most local service businesses do not have a keyword problem. They have an authority problem.</h2>Your competitors are <strong>NOT</strong> always better — they are simply seen as more established, more credible, and more trustworthy by search engines, AI systems, and prospective customers.<br/><br/>As one strategic pillar of our Managed AI SEO system, Authority Building helps position your business as the trusted local expert across search results, the broader web, and the minds of prospective customers.<br/><br/>This is not about buying links or gaming algorithms. It is about building a credible presence that signals expertise, earns trust, and compounds over time.'
+          subtitle='<h2 className="bg-gradient-heading bg-clip-text text-transparent" class="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+  Most local service businesses do not have a keyword problem. They have an authority problem.
+</h2>Your competitors are <strong>NOT</strong> always better — they are simply seen as more established, more credible, and more trustworthy by search engines, AI systems, and prospective customers.<br/><br/>As one strategic pillar of our Managed AI SEO system, Authority Building helps position your business as the trusted local expert across search results, the broader web, and the minds of prospective customers.<br/><br/>This is not about buying links or gaming algorithms. It is about building a credible presence that signals expertise, earns trust, and compounds over time.'
           primaryCTA={{
             label: "Schedule Strategy Call",
             href: PRIMARY_CTA_URL,
@@ -211,9 +213,8 @@ const AuthorityBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE FUNDAMENTALS</p>
-                <h2 className="section-title">
-                  What Authority Building Means in{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Modern SEO</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  What Authority Building Means in Modern SEO
                 </h2>
               </div>
 
@@ -254,9 +255,8 @@ const AuthorityBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE STAKES</p>
-                <h2 className="section-title">
-                  Why Authority Matters for{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Rankings, Trust, and Conversion</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Why Authority Matters for Rankings, Trust, and Conversion
                 </h2>
               </div>
 
@@ -301,9 +301,8 @@ const AuthorityBuilding = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">OUR AUTHORITY METHODOLOGY</p>
-              <h2 className="section-title">
-                What GrowSmallBiz Includes Under{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Authority Building</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                What GrowSmallBiz Includes Under Authority Building
               </h2>
               <p className="section-description mt-4">Authority Building at GrowSmallBiz is a multi-layer service, not a single deliverable. It addresses every major dimension of search authority for local service businesses.</p>
             </div>
@@ -332,9 +331,8 @@ const AuthorityBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE FOUNDATION</p>
-                <h2 className="section-title">
-                  How DKN, Topical Maps, and Topical Authority Blogs Support{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Authority Growth</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  How DKN, Topical Maps, and Topical Authority Blogs Support Authority Growth
                 </h2>
               </div>
 
@@ -407,9 +405,8 @@ const AuthorityBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OFF-SITE REINFORCEMENT</p>
-                <h2 className="section-title">
-                  How Press Releases, Brand Mentions, and Digital Authority Signals{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Reinforce Authority</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  How Press Releases, Brand Mentions, and Digital Authority Signals Reinforce Authority
                 </h2>
               </div>
 
@@ -457,10 +454,8 @@ const AuthorityBuilding = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OUR APPROACH</p>
-                <h2 className="section-title">
-                  How GrowSmallBiz Uses{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI SEO Playbooks</span>
-                  {" "}to Accelerate Authority Building
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  How GrowSmallBiz Uses Agentic AI SEO Playbooks to Accelerate Authority Building
                 </h2>
               </div>
 
@@ -564,9 +559,8 @@ const AuthorityBuilding = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Build Authority That Lasts.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Start Today.</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                Build Authority That Lasts. Start Today.
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
                 Search engines do not rank businesses they do not trust. AI systems do not recommend brands they cannot verify. Prospective customers do not choose providers they are not confident in.

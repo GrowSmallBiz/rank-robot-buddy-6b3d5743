@@ -353,9 +353,8 @@ const Services = () => {
               <Layers className="w-4 h-4" />
               <span>Full-Service Growth System</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight">
-              AI-Powered Digital Marketing Services for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              AI-Powered Digital Marketing Services for Local Service Businesses
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 mb-4 animate-fade-up max-w-3xl mx-auto leading-relaxed" style={{ animationDelay: "0.1s" }}>
               One connected system — websites, Managed AI SEO, paid ads, CRM automation, and growth campaigns — built to help local service businesses capture more leads, nurture them automatically, and convert more opportunities into booked jobs.

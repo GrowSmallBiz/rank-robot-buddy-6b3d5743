@@ -16,9 +16,8 @@ export const IndustryStatsSection = ({ data }: Props) => {
     >
       <div className="container mx-auto px-4">
         {/* Headline */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-white">
-          {headline}{" "}
-          <span className="text-primary">{headlineHighlight}</span>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-white bg-gradient-heading bg-clip-text text-transparent">
+          {headline} {headlineHighlight}
         </h2>
 
         {/* Subheadline */}

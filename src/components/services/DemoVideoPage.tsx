@@ -44,7 +44,7 @@ export const DemoVideoPage = ({
         {/* Hero + Video Section */}
         <section className="py-16 md:py-24" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
               {title}
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -119,8 +119,8 @@ export const DemoVideoPage = ({
         {/* No Risk Guarantee */}
         <section className="py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-3xl text-center">
-            <h2 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-6">
-              "No Risk <span className="text-accent">Guarantee</span>"
+            <h2 className="text-2xl md:text-3xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              "No Risk Guarantee"
             </h2>
             <h3 className="text-xl font-semibold text-foreground mb-6">The Choice Is Yours</h3>
 

@@ -28,7 +28,7 @@ export default function WebchatDemo() {
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <p className="text-primary font-semibold uppercase tracking-widest mb-4">WEBCHAT</p>
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
               Engage Website Visitors Instantly With Live Chat And AI-Powered Chatbot Responses
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
@@ -52,7 +52,7 @@ export default function WebchatDemo() {
         {/* Features */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-12">
+            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-12 bg-gradient-heading bg-clip-text text-transparent">
               Never Miss A Website Visitor Again
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -75,7 +75,7 @@ export default function WebchatDemo() {
         {/* Convert Visitors */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6">
+            <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
               Turn Every Website Visit Into An Opportunity
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">

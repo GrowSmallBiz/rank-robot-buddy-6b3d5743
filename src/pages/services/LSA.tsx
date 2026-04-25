@@ -137,11 +137,8 @@ const LSA = () => {
                 Google Local Service Ads
               </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
-              Google Local Service Ads: Get More Calls. Pay Only for Real Leads.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">
-                Not Clicks.
-              </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up bg-gradient-heading bg-clip-text text-transparent">
+              Google Local Service Ads: Get More Calls. Pay Only for Real Leads. Not Clicks.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Google Local Service Ads put your business at the very top of search — above PPC, above organic. You pay only when a verified customer contacts you directly. GrowSmallBiz manages every detail: Google Verified setup, profile optimization, lead review, and dispute management.
@@ -213,9 +210,8 @@ const LSA = () => {
               className="relative rounded-2xl p-8 md:p-10 border-l-4 border-primary"
               style={{ backgroundColor: "hsl(210 50% 12%)" }}
             >
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center mb-6">
-                Why LSA{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary">Matters Now</span>
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center mb-6 bg-gradient-heading bg-clip-text text-transparent">
+                Why LSA Matters Now
               </h2>
               <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
                 <p>
@@ -234,8 +230,8 @@ const LSA = () => {
       <section className="py-16 md:py-20 bg-background-alt border-y border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-center text-2xl md:text-3xl font-display font-bold text-foreground mb-12">
-              What Google Local Service Ads <span className="text-transparent bg-clip-text bg-gradient-primary">Deliver</span>
+            <h2 className="text-center text-2xl md:text-3xl font-display font-bold text-foreground mb-12 bg-gradient-heading bg-clip-text text-transparent">
+              What Google Local Service Ads Deliver
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[

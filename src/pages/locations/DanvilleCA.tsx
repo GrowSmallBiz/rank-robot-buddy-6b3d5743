@@ -54,9 +54,8 @@ const DanvilleCA = () => {
               <span>Danville, CA — Local Service Business Marketing | GrowSmallBiz Hometown Market</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Danville Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Danville Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
 
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
@@ -117,9 +116,8 @@ const DanvilleCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> WHY US
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Danville Bottom Line
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Choosing the right digital marketing partner is one of the most consequential decisions you will make for your Danville business. Here is what sets GrowSmallBiz apart from every general-purpose agency competing for your attention:</p>
           </div>
@@ -150,9 +148,8 @@ const DanvilleCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Why Danville Is the San Ramon Valley's Most Valuable — and Most Competitive — Market for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local Service Businesses</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Why Danville Is the San Ramon Valley's Most Valuable — and Most Competitive — Market for Local Service Businesses
             </h2>
           </div>
 
@@ -179,9 +176,8 @@ const DanvilleCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Search className="w-4 h-4" /> SEARCH GAP
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Local Search Gap Costing Most Danville Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">10–15 Leads Every Month</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Local Search Gap Costing Most Danville Service Businesses 10–15 Leads Every Month
             </h2>
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6">
@@ -205,9 +201,8 @@ const DanvilleCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Target className="w-4 h-4" /> SERVICES
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for Danville Service Businesses —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for Danville Service Businesses — Fills Your Calendar, Not Just Your Dashboard
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Our services are not sold as isolated tactics. They are delivered as an integrated system, designed so that each channel amplifies the others. Here is what is included and what it means for your Danville business:</p>
           </div>
@@ -461,9 +456,8 @@ const DanvilleCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> WHO WE SERVE
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Danville</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for Danville
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz serves a focused set of local service business verticals in Danville and the San Ramon Valley. Our specialization means deeper industry expertise, faster results, and strategies built on real market knowledge — not frameworks adapted from markets with different demographics and different buyer expectations.</p>
           </div>
@@ -511,7 +505,7 @@ const DanvilleCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -532,9 +526,8 @@ const DanvilleCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" /> WHY WE WIN
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Danville Business Before</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your Danville Business Before
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">There is no shortage of digital marketing agencies claiming to serve Danville businesses. Most will promise similar results with similar services. Here is why what GrowSmallBiz builds consistently outperforms what general-purpose agencies deliver in our hometown market:</p>
           </div>
@@ -572,7 +565,7 @@ const DanvilleCA = () => {
 
       {/* ===== FAQ SECTION ===== */}
       <FAQSection
-        title={<>Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Danville</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Danville"
         faqs={[
           { question: "What types of businesses does GrowSmallBiz work with in Danville, CA?", answer: "GrowSmallBiz primarily works with local service businesses and repeat-visit local businesses, including home services, dentists, med spas, realtors, restaurants, and other Danville-area companies that depend on visibility, lead flow, follow-up, and retention." },
           { question: "How much does digital marketing cost for a Danville local service business?", answer: "Investment levels vary based on your business size, revenue goals, competitive landscape, and the combination of services you need. Most Danville service businesses in our portfolio invest between $1,000 and $5,000 per month across SEO, Google Ads, reputation management, and AI automation — with our core AI Client Growth System starting at $797 per month plus a one-time setup fee. Given Danville's premium market dynamics — where a single new client relationship can represent several thousand dollars in lifetime value — the ROI threshold is typically reached faster here than in lower-value markets. We build custom packages aligned to your specific goals and service area." },
@@ -596,9 +589,8 @@ const DanvilleCA = () => {
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6">
-              Every Day You Wait, Your Competitors Book Another Danville Customer That{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Should Have Been Yours</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              Every Day You Wait, Your Competitors Book Another Danville Customer That Should Have Been Yours
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-4">Danville's premium market rewards the businesses with the strongest digital presence — and moves quickly past those without one. While you are reading this, Danville homeowners are searching Google for services you offer. If you are not in the top three local results, you are invisible to them. If your reviews are below 4.5 stars, they are filtering you out before they see your website. If your phone goes to voicemail and you do not follow up within minutes, they have already called your competitor.</p>
             <p className="text-foreground/80 leading-relaxed mb-4">GrowSmallBiz is the digital marketing agency that Danville local service businesses trust to dominate local search, generate qualified leads, and build the integrated marketing systems that produce sustainable revenue growth. We bring 30+ years of Fortune 500 sales, marketing, and growth strategy experience to the specific challenges of premium local service business marketing — and as a Danville-headquartered business and Danville Area Chamber member, our commitment to this community's businesses is personal, not transactional.</p>

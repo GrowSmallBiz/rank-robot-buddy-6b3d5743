@@ -32,10 +32,8 @@ export const HeroSection = ({ config, strategySessionUrl }: HeroSectionProps) =>
             {config.badgeText}
           </span>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-            {config.h1Line1}{" "}
-            <span className="text-gradient">{config.h1Highlight}</span>
-            {config.h1Line2 && <>{" "}{config.h1Line2}</>}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+            {[config.h1Line1, config.h1Highlight, config.h1Line2].filter(Boolean).join(" ")}
           </h1>
 
           <p className="text-xl text-muted-foreground mb-8 animate-fade-up delay-200 max-w-2xl mx-auto">

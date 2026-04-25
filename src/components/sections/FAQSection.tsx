@@ -76,7 +76,7 @@ export const FAQSection = ({
         {/* Centered Section Header */}
         <div className="text-center mb-12 animate-fade-up">
           <p className="text-primary font-medium mb-4">FAQ</p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
             {title}
           </h2>
           {subtitle && (

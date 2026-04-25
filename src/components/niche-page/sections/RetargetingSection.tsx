@@ -15,9 +15,8 @@ export const RetargetingSection = ({ config }: RetargetingSectionProps) => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-center mb-4">
-            {config.retargetingHeadline}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-primary italic">{config.retargetingHighlight}</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground text-center mb-4 bg-gradient-heading bg-clip-text text-transparent">
+            {config.retargetingHeadline} {config.retargetingHighlight}
           </h2>
 
           <h3 className="text-xl md:text-2xl font-display font-medium text-muted-foreground text-center mb-12">

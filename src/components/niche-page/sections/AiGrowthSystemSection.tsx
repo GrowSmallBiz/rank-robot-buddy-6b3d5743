@@ -28,8 +28,8 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
       <div className="container mx-auto px-4">
         {/* Title */}
         <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-            <span className="text-transparent bg-clip-text bg-gradient-primary italic">{config.growthSystemHighlight}</span> {config.growthSystemHeadline}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+            {config.growthSystemHighlight} {config.growthSystemHeadline}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{config.growthSystemSubheadline}</p>
         </div>
@@ -37,8 +37,8 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         {/* FIXED Funnel Visual */}
         <div className="mb-20">
           <div className="p-8 md:p-12 rounded-2xl shadow-[0_0_30px_rgba(255,127,80,0.6),0_0_60px_rgba(255,127,80,0.4)]" style={{ border: '2px solid rgb(255, 127, 80)', backgroundColor: 'rgba(25, 19, 33, 0.95)', backgroundImage: 'linear-gradient(to bottom right, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.9))' }}>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-4 relative z-10">
-              Stop Juggling <span className="text-transparent bg-clip-text bg-gradient-primary">Hundreds of Disconnected Tools</span>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-4 relative z-10 bg-gradient-heading bg-clip-text text-transparent">
+              Stop Juggling Hundreds of Disconnected Tools
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground text-center mb-10 relative z-10">
               All the tools you need in one platform without having to <span className="text-primary font-semibold italic">"duct-tape"</span> multiple platforms together!

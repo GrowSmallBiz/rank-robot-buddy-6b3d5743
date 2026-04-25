@@ -26,7 +26,7 @@ export default function WorkflowAutomationsDemo() {
         {/* Hero */}
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4">
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
               Workflow Automations
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
@@ -44,7 +44,7 @@ export default function WorkflowAutomationsDemo() {
         {/* Put Your Business On Auto-Pilot */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-8">
+            <h2 className="text-2xl md:text-4xl font-black text-foreground text-center mb-8 bg-gradient-heading bg-clip-text text-transparent">
               Put Your Business On Auto-Pilot
             </h2>
             <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto leading-relaxed mb-16">

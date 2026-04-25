@@ -229,8 +229,8 @@ const Roofers = () => {
                 <Search className="w-4 h-4" />
                 Local SEO Case Studies
               </span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Local SEO <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Local SEO Case Studies
               </h2>
               <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                 This section highlights local SEO campaign performance for roofing businesses, with a focus on Google Business Profile visibility, map rankings, organic search growth, keyword movement, calls, and conversion-focused lead generation.
@@ -284,8 +284,8 @@ const Roofers = () => {
         <section className="py-16 relative">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
-                Consistent Local SEO <span className="text-transparent bg-clip-text bg-gradient-primary">Methodology</span> Across Roofing Campaigns
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+                Consistent Local SEO Methodology Across Roofing Campaigns
               </h2>
               <P>
                 Across these campaigns, the work consistently included on-page optimization, localized content creation, service page expansion, homepage optimization, local visibility improvements, and keyword growth efforts designed to improve rankings, engagement, and lead generation for high-intent roofing searches.
@@ -548,8 +548,8 @@ const Roofers = () => {
                   <MousePointerClick className="w-4 h-4" />
                   <GoogleColoredText /> PPC Case Studies
                 </span>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                  <GoogleColoredText /> PPC <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                  Google PPC Case Studies
                 </h2>
                 <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                   This section highlights paid search campaign performance for roofing businesses, with a focus on lead generation, conversion efficiency, and cost-effective growth through Google Ads.
@@ -795,8 +795,8 @@ const Roofers = () => {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-                What These <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span> Show
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
+                What These Case Studies Show
               </h2>
               <div className="space-y-6 text-foreground/85 leading-relaxed text-lg">
                 <p>

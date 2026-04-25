@@ -64,8 +64,8 @@ const Contact = () => {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100">
-              Let's <span className="text-gradient">Grow Together</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              Let's Grow Together
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed animate-fade-up delay-200">
@@ -86,7 +86,7 @@ const Contact = () => {
                 className="relative rounded-2xl p-8 animate-fade-up shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
                 style={{ backgroundColor: '#191321', border: '2px solid #17a2b8' }}
               >
-                <h2 className="text-2xl font-display font-bold text-white mb-6">
+                <h2 className="text-2xl font-display font-bold text-white mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Send Us a Message
                 </h2>
 

@@ -442,11 +442,8 @@ const PaidMedia = () => {
                 </span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up">
-                Stop Paying for Clicks.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary">
-                  Start Generating Qualified Leads.
-                </span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight animate-fade-up bg-gradient-heading bg-clip-text text-transparent">
+                Stop Paying for Clicks. Start Generating Qualified Leads.
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
@@ -559,11 +556,8 @@ const PaidMedia = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12 animate-fade-up">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight">
-                  Most Local Ad Campaigns Don't Have a Traffic Problem.{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary">
-                    They Have a System Problem.
-                  </span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                  Most Local Ad Campaigns Don't Have a Traffic Problem. They Have a System Problem.
                 </h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto text-center mb-12 animate-fade-up" style={{ animationDelay: "0.05s" }}>
@@ -731,9 +725,8 @@ const PaidMedia = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12 animate-fade-up">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight mb-4">
-                  The Market You're{" "}
-                  <span className="text-primary">Competing In</span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground leading-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                  The Market You're Competing In
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                   Verified industry data — the paid advertising landscape for small service businesses in 2025 and 2026.
@@ -785,9 +778,8 @@ const PaidMedia = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-10 animate-fade-up">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-3">
-                  Google Ads vs. Local Services Ads vs. Meta Ads —{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary">Which Do You Need?</span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-3 bg-gradient-heading bg-clip-text text-transparent">
+                  Google Ads vs. Local Services Ads vs. Meta Ads — Which Do You Need?
                 </h2>
                 <p className="italic text-muted-foreground">Short answer — probably more than one. Here is how they actually differ.</p>
               </div>
@@ -839,9 +831,8 @@ const PaidMedia = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12 animate-fade-up">
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
-                  Paid Ads Built for{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary">Your Industry</span>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3 bg-gradient-heading bg-clip-text text-transparent">
+                  Paid Ads Built for Your Industry
                 </h2>
                 <p className="italic text-muted-foreground max-w-3xl mx-auto">
                   We don't run the same campaigns for an HVAC contractor that we run for a med spa. Here is how we specialize by vertical.

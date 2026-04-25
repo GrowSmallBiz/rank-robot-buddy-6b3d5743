@@ -113,8 +113,8 @@ const GoogleAdsHvacPlumbingElectrical = () => {
                 <MousePointerClick className="w-4 h-4" />
                 <GoogleColoredText /> PPC Case Studies
               </span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                <GoogleColoredText /> PPC <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Google PPC Case Studies
               </h2>
               <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                 This section highlights paid search campaign performance for HVAC, plumbing, and electrical businesses, with a focus on lead generation, conversion efficiency, and cost-effective growth through Google Ads.
@@ -316,8 +316,8 @@ const GoogleAdsHvacPlumbingElectrical = () => {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-                What This <span className="text-transparent bg-clip-text bg-gradient-primary">Case Study</span> Shows
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
+                What This Case Study Shows
               </h2>
               <div className="space-y-6 text-foreground/85 leading-relaxed text-lg">
                 <p>

@@ -22,26 +22,23 @@ export const SectionHeader = ({
   children,
   as: HeadingTag = "h2",
 }: SectionHeaderProps) => {
-  const headingClass = HeadingTag === "h3" 
-    ? "text-2xl md:text-3xl font-display font-bold text-foreground"
-    : "section-title";
+  const baseHeadingClass =
+    HeadingTag === "h3"
+      ? "text-2xl md:text-3xl font-display font-bold text-foreground"
+      : "section-title";
+  const headingClass = HeadingTag === "h3"
+    ? baseHeadingClass
+    : `${baseHeadingClass} bg-gradient-heading bg-clip-text text-transparent`;
+  const headingText = titleHighlight ? `${title} ${titleHighlight}` : title;
 
   return (
     <div
       className={`${centered ? "text-center" : ""} mb-10 animate-fade-up ${className}`}
     >
       {subtitle && <p className="section-subtitle">{subtitle}</p>}
-      
+
       <HeadingTag className={headingClass}>
-        {titleHighlight ? title : title}
-        {titleHighlight && (
-          <>
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-              {titleHighlight}
-            </span>
-          </>
-        )}
+        {headingText}
       </HeadingTag>
       
       {description && (

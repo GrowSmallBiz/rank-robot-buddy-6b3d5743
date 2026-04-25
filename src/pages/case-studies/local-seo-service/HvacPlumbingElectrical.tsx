@@ -149,8 +149,8 @@ const LocalSEOHvacPlumbingElectrical = () => {
                 <Search className="w-4 h-4" />
                 Local SEO Case Studies
               </span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Local SEO <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Local SEO Case Studies
               </h2>
               <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                 This section highlights local SEO campaign performance for HVAC, plumbing, and electrical businesses, with a focus on Google Business Profile visibility, map rankings, organic search growth, keyword movement, calls, and conversion-focused lead generation.
@@ -203,8 +203,8 @@ const LocalSEOHvacPlumbingElectrical = () => {
         <section className="py-16 relative">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
-                Consistent Local SEO <span className="text-transparent bg-clip-text bg-gradient-primary">Methodology</span> Across Trades Campaigns
+              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
+                Consistent Local SEO Methodology Across Trades Campaigns
               </h2>
               <P>
                 Across these campaigns, the work consistently included extensive keyword research, Google Business Profile optimization, local and niche citation building, onsite location signal improvements, content support, and local visibility enhancements designed to improve rankings, engagement, and lead generation for high-intent service businesses.
@@ -532,8 +532,8 @@ const LocalSEOHvacPlumbingElectrical = () => {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-                What These <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span> Show
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
+                What These Case Studies Show
               </h2>
               <div className="space-y-6 text-foreground/85 leading-relaxed text-lg">
                 <p>

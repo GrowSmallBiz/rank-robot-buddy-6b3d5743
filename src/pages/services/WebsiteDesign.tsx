@@ -295,7 +295,7 @@ const WebsiteDesign = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: Globe, text: "WEBSITE THAT CONVERTS" }}
-          title={<>Websites Built to Turn Visitors Into <span className="text-transparent bg-clip-text bg-gradient-primary">Calls, Bookings,</span> and <span className="text-transparent bg-clip-text bg-gradient-primary">Leads.</span></>}
+          title="Websites Built to Turn Visitors Into Calls, Bookings, and Leads."
           subtitle="Most local service business websites look the part. The problem is they were built to impress — not to convert.<br/><br/>GrowSmallBiz designs and builds websites engineered around a single outcome: turning visitors into calls, bookings, and quote requests.<br/><br/>And for our clients, the website is never the end of the conversation — it's the beginning."
           primaryCTA={{
             label: "Schedule Strategy Call",
@@ -388,9 +388,8 @@ const WebsiteDesign = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-orange-500/5" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-              Most Local Business Websites Were Built to Exist —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Not to Convert</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+              Most Local Business Websites Were Built to Exist — Not to Convert
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               There's a difference between a website that looks good and a website that works. Most local businesses have the first kind.
@@ -504,7 +503,7 @@ const WebsiteDesign = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">YOUR GROWTH PARTNER</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Why GrowSmallBiz
             </h2>
           </div>
@@ -648,9 +647,8 @@ const WebsiteDesign = () => {
             </Badge>
           </div>
           <div className="text-center mb-10 animate-fade-up">
-            <h2 className="section-title">
-              From Strategy to Launch: What the Process{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Looks Like</span>
+            <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+              From Strategy to Launch: What the Process Looks Like
             </h2>
           </div>
           <p className="section-description text-center mt-4 mb-16 max-w-3xl mx-auto">
@@ -778,9 +776,8 @@ const WebsiteDesign = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
             <p className="text-primary font-medium mb-4">READY TO TALK STRATEGY?</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-              If Your Website Isn't Generating Leads, That's a Solvable Problem — and It's Usually Just the{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Beginning.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              If Your Website Isn't Generating Leads, That's a Solvable Problem — and It's Usually Just the Beginning.
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
               Many local businesses have been sitting on underperforming websites for years — not because there's no solution, but because no one showed them what a strategically built site looks like, what it can do, or how it fits into a growth strategy that actually compounds over time.

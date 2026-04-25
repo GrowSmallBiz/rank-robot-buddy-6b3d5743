@@ -23,13 +23,8 @@ export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
         )}
         {config.whoThisIsForHeadline && (
           <div className="text-center mb-10 animate-fade-up">
-            <h2 className="section-title">
-              {config.whoThisIsForHeadline}{" "}
-              {config.whoThisIsForHighlight && (
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-                  {config.whoThisIsForHighlight}
-                </span>
-              )}
+            <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+              {[config.whoThisIsForHeadline, config.whoThisIsForHighlight].filter(Boolean).join(" ")}
             </h2>
           </div>
         )}

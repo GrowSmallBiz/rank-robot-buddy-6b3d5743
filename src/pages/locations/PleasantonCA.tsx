@@ -55,9 +55,8 @@ const PleasantonCA = () => {
               <span>Pleasanton, CA — Local Service Business Marketing | Dual-ZIP Tri-Valley Market</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Pleasanton Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Pleasanton Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
 
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
@@ -128,9 +127,8 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">WHY US</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Pleasanton Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Pleasanton Bottom Line
             </h2>
           </div>
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto animate-fade-up">
@@ -167,9 +165,8 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">MARKET INSIGHTS</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Winning in Pleasanton Search Results.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Competitors Are Winning in Pleasanton Search Results. Here's Exactly Why — and How to Take It Back.
             </h2>
           </div>
 
@@ -208,9 +205,8 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">THE SEARCH GAP</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Local Search Gap Costing Most Pleasanton Service Businesses{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">10–15 Leads Every Month</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Local Search Gap Costing Most Pleasanton Service Businesses 10–15 Leads Every Month
             </h2>
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6 animate-fade-up">
@@ -235,9 +231,8 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">OUR SERVICES</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Pleasanton Service Businesses</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for Pleasanton Service Businesses
             </h2>
             <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">Fills Your Calendar, Not Just Your Dashboard — If you are running marketing through a mix of disconnected vendors, freelancers, and DIY tools, you already know the problem — no one owns the full picture. GrowSmallBiz manages every growth channel under one strategy, so your SEO, ads, website, and automation are pulling in the same direction across both Pleasanton ZIP codes.</p>
           </div>
@@ -478,9 +473,8 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">WHO WE SERVE</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Pleasanton</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for Pleasanton
             </h2>
           </div>
           <p className="text-muted-foreground text-lg mb-8 max-w-4xl mx-auto animate-fade-up">
@@ -514,7 +508,7 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">PROVEN RESULTS</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -564,9 +558,8 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">WHY GROWSMALLBIZ</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Why GrowSmallBiz Outperforms Every Agency That's Failed Your Pleasanton Business Before.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your Pleasanton Business Before.
             </h2>
           </div>
           <p className="text-muted-foreground text-center mb-8 max-w-4xl mx-auto animate-fade-up">Pleasanton's SERPs are led by well-resourced agencies and national players. None of them build separate strategies for 94566 and 94588. None address review velocity as a distinct ranking lever. None are based in the Tri-Valley with the market-specific knowledge that comes from proximity.</p>
@@ -595,9 +588,8 @@ const PleasantonCA = () => {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12 animate-fade-up">
             <p className="text-primary font-medium mb-3 text-sm">OUR PROCESS</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Working With GrowSmallBiz Actually Looks Like —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Three Steps from Assessment to Growth</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Working With GrowSmallBiz Actually Looks Like — Three Steps from Assessment to Growth
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -626,7 +618,7 @@ const PleasantonCA = () => {
 
       {/* FAQ Section */}
       <FAQSection
-        title={<>Your Questions Answered — <span className="text-transparent bg-clip-text bg-gradient-primary italic">No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Pleasanton</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Pleasanton"
         subtitle="The questions below reflect what Pleasanton service business owners ask most commonly before starting a marketing engagement."
         faqs={[
           { question: "Can I rank in Pleasanton without a Pleasanton address?", answer: "Yes. Service area businesses without a physical Pleasanton location rank in Pleasanton's map pack by configuring their Google Business Profile service area to include Pleasanton, building geo-targeted landing pages for Pleasanton-specific queries, and developing citations in Alameda County directories. Proximity matters but can be offset by relevance and prominence. Contractors in Dublin, San Ramon, and Danville are already ranking competitively for HVAC, plumbing, electrical, and roofing searches in Pleasanton without a local address — the time to start is now." },

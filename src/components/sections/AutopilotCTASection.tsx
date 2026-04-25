@@ -6,9 +6,8 @@ export const AutopilotCTASection = () => {
   return (
     <section className="py-12 bg-gradient-to-br from-primary/10 via-background to-primary/5">
       <div className="container mx-auto px-4 text-center max-w-3xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 animate-fade-up">
-          See How Your Sales Can Run on{" "}
-          <span className="text-primary">Autopilot</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 animate-fade-up bg-gradient-heading bg-clip-text text-transparent">
+          See How Your Sales Can Run on Autopilot
         </h2>
         <p className="text-lg text-muted-foreground mb-10 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           Experience how AI instantly responds to leads, books appointments for you, follows up automatically, and keeps your pipeline moving 24/7.

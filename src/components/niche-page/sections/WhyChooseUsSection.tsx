@@ -12,13 +12,8 @@ export const WhyChooseUsSection = ({ config }: WhyChooseUsSectionProps) => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
             <p className="text-primary font-medium mb-4">{config.whyChooseUsSubtitle}</p>
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-foreground">
-              {config.whyChooseUsHeadline}{" "}
-              {config.whyChooseUsHighlight && (
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">
-                  {config.whyChooseUsHighlight}
-                </span>
-              )}
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              {[config.whyChooseUsHeadline, config.whyChooseUsHighlight].filter(Boolean).join(" ")}
             </h2>
             <p className="text-lg text-muted-foreground">
               {config.whyChooseUsBody}

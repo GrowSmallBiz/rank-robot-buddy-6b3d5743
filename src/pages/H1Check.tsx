@@ -122,7 +122,7 @@ const H1Check = () => {
       </Helmet>
       <div className="max-w-2xl mx-auto space-y-6">
         <div>
-          <h1 className="text-3xl font-bold text-foreground">Live H1 Verifier</h1>
+          <h1 className="text-3xl font-bold bg-gradient-heading bg-clip-text text-transparent">Live H1 Verifier</h1>
           <p className="text-muted-foreground mt-1">
             Fetches the raw HTML of a live page and checks the first &lt;h1&gt;.
           </p>

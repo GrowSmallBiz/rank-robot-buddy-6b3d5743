@@ -195,7 +195,7 @@ const GEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: Globe, text: "Managed AI SEO" }}
-          title={<>Managed GEO Services for Local{" "}<br className="hidden md:inline" /></>}
+          title="Managed GEO Services for Local"
           titleHighlight="Service Businesses"
           subtitle="Get Found Where Your Next Customer Is Already Searching"
           description="Search behavior is shifting. More consumers are turning to AI-powered tools — Google AI Overviews, conversational search assistants, generative discovery engines — to find, compare, and choose local service providers. If your business is not visible in those environments, competitors who are will take the work."
@@ -222,10 +222,8 @@ const GEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE FOUNDATION</p>
-                <h2 className="section-title">
-                  What Is{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Generative Engine Optimization</span>
-                  {" "}— and Why Should You Care?
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  What Is Generative Engine Optimization — and Why Should You Care?
                 </h2>
               </div>
 
@@ -256,9 +254,8 @@ const GEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE SHIFT</p>
-                <h2 className="section-title">
-                   The AI Search Shift Is Already Happening — What It Means for{" "}
-                   <span className="text-transparent bg-clip-text bg-gradient-primary italic">Your Business</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  The AI Search Shift Is Already Happening — What It Means for Your Business
                 </h2>
               </div>
 
@@ -318,10 +315,8 @@ const GEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">WHAT WE BUILD</p>
-              <h2 className="section-title">
-                What GrowSmallBiz's{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO Optimization Methodology</span>
-                {" "}Includes
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                What GrowSmallBiz's GEO Optimization Methodology Includes
               </h2>
               <p className="section-description mt-4">
                 GEO at GrowSmallBiz is a coordinated set of actions that work together to make your business easier for AI systems to find, understand, and recommend. Every component is managed as part of your ongoing AI SEO engagement.
@@ -356,9 +351,8 @@ const GEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE EXECUTION</p>
-                <h2 className="section-title">
-                  Managed GEO — Expert Strategy Backed by{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI SEO Playbook</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  Managed GEO — Expert Strategy Backed by Agentic AI SEO Playbook
                 </h2>
               </div>
 
@@ -403,9 +397,8 @@ const GEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">WHY IT MATTERS</p>
-              <h2 className="section-title">
-                Why GEO Optimization Matters for{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local Service Businesses</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                Why GEO Optimization Matters for Local Service Businesses
               </h2>
               <p className="section-description mt-4">
                 For local service businesses, visibility is not just about traffic. It is about being included in the consideration set when someone nearby needs help.
@@ -436,9 +429,8 @@ const GEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">OUR DIFFERENCE</p>
-                <h2 className="section-title">
-                   Why Local Service Businesses Choose{" "}
-                   <span className="text-transparent bg-clip-text bg-gradient-primary italic">GrowSmallBiz for GEO</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                   Why Local Service Businesses Choose GrowSmallBiz for GEO
                  </h2>
               </div>
 
@@ -484,7 +476,7 @@ const GEO = () => {
 
         {/* SECTION 8 — FAQ */}
         <FAQSection
-          title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">GEO and AI-Search Visibility</span></>}
+          title="Frequently Asked Questions About GEO and AI-Search Visibility"
           faqs={faqs.map(f => ({
             question: f.question,
             answer: f.answer,
@@ -503,9 +495,8 @@ const GEO = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">THE NEXT STEP</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Your Customers Are Already Using AI to Find Local Businesses.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Is AI Recommending Your Business?</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                Your Customers Are Already Using AI to Find Local Businesses. Is AI Recommending Your Business?
               </h2>
               <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
                 AI-assisted discovery is not a trend to monitor from a distance. It is happening now, and the businesses building strong GEO foundations today will hold a compounding advantage over those that wait.

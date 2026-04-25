@@ -55,9 +55,8 @@ const LivermoreCA = () => {
               <span>Livermore, CA — Local Service Business Marketing | Labs Economy + Wine Country + I-580 Corridor</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight">
-              Stop Losing Livermore Leads to Competitors —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary">Full-Service Digital Marketing Built for Local Service Businesses</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+              Stop Losing Livermore Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
             </h1>
 
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
@@ -117,9 +116,8 @@ const LivermoreCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> WHY US
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Livermore Bottom Line</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              What Makes GrowSmallBiz Different — And Why It Matters for Your Livermore Bottom Line
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Livermore's SERP landscape is led by well-resourced agencies running high-volume pages built from Bay Area templates — none of which acknowledge that Livermore is two distinct markets operating simultaneously, or that the LLNL and Sandia demographic has a fundamentally different buyer psychology than the suburban household profiles these pages were built for. Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience — including deep familiarity with the research-oriented, credentialing-sensitive decision patterns of scientific and technical professional audiences.</p>
           </div>
@@ -150,9 +148,8 @@ const LivermoreCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <TrendingUp className="w-4 h-4" /> LOCAL MARKET
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Your Competitors Are Winning in Livermore Search Results.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Here's Exactly Why — and How to Take It Back.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Your Competitors Are Winning in Livermore Search Results. Here's Exactly Why — and How to Take It Back.
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Most agencies that rank for Livermore keywords built pages that treat it as another I-580 corridor suburb — comparable to Dublin or Pleasanton with a slightly different demographic mix. That framing fundamentally misreads the market. Livermore is not one market. It is three distinct economies operating simultaneously within the same ZIP codes, and understanding that structure is what separates effective local marketing from expensive, underperforming campaigns.</p>
           </div>
@@ -228,9 +225,8 @@ const LivermoreCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Search className="w-4 h-4" /> SEARCH GAP
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Get Found First When Livermore Customers Search for Your Services —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Local SEO & Google Maps Domination</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Get Found First When Livermore Customers Search for Your Services — Local SEO & Google Maps Domination
             </h2>
           </div>
           <div className="prose prose-lg prose-invert max-w-none space-y-6">
@@ -248,9 +244,8 @@ const LivermoreCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Target className="w-4 h-4" /> SERVICES
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              The Integrated Marketing System Built for Livermore Service Businesses —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Fills Your Calendar, Not Just Your Dashboard</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              The Integrated Marketing System Built for Livermore Service Businesses — Fills Your Calendar, Not Just Your Dashboard
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Every component is engineered to work with every other component — and for Livermore, that means running dual-track campaigns across both audience profiles simultaneously from one coordinated system. That integration is what makes the difference between marketing that costs money and marketing that makes money across Livermore's uniquely complex market.</p>
           </div>
@@ -501,9 +496,8 @@ const LivermoreCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> WHO WE SERVE
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              Built for Your Industry, Not Adapted From Someone Else's Playbook —{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">See If We're the Right Fit for Livermore</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              Built for Your Industry, Not Adapted From Someone Else's Playbook — See If We're the Right Fit for Livermore
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">GrowSmallBiz works exclusively with local service businesses in Livermore and the Tri-Valley. We do not work with eCommerce stores, national retailers, or product-based businesses. Our systems are purpose-built for the verticals below — with genuine understanding of Livermore's dual-identity market structure that generic agency pages never develop.</p>
           </div>
@@ -551,7 +545,7 @@ const LivermoreCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <BarChart3 className="w-4 h-4" /> RESULTS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Real Client Results Across Our Service Areas
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">See what's possible when marketing runs as a complete, integrated system.</p>
@@ -601,9 +595,8 @@ const LivermoreCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" /> WHY WE WIN
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Livermore Business Before.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+              No Templates. No Generalists. No Excuses. Why GrowSmallBiz Outperforms Every Agency That's Failed Your Livermore Business Before.
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Livermore's SERPs are led by agencies that treat Livermore as one market and miss two thirds of the available opportunity. Here is why the system GrowSmallBiz builds consistently outperforms them across both of Livermore's distinct audience tracks:</p>
           </div>
@@ -644,7 +637,7 @@ const LivermoreCA = () => {
 
       {/* ===== FAQ SECTION ===== */}
       <FAQSection
-        title={<>Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About <span className="text-transparent bg-clip-text bg-gradient-primary italic">Digital Marketing in Livermore</span></>}
+        title="Your Questions Answered — No Jargon, No Sales Pitch, Just Straight Answers About Digital Marketing in Livermore"
         faqs={[
           { question: "What types of businesses does GrowSmallBiz work with in Livermore?", answer: "We work exclusively with local service businesses in Livermore and the Tri-Valley — including HVAC contractors, plumbers, electricians, roofers, dental practices, med spas, restaurants, wineries, event venues, and real estate professionals. We do not work with eCommerce stores, online retailers, or product-based businesses. Our systems are purpose-built for businesses that serve local Livermore and Tri-Valley clients directly — across both the residential Labs-corridor market and the commercial wine country market." },
           { question: "How does GrowSmallBiz approach Livermore's dual-identity market differently from other agencies?", answer: "Most agencies build one campaign for one audience profile. In Livermore, that means capturing only the I-580 commuter residential market and missing both the LLNL/Sandia professional demographic and the wine country commercial market. GrowSmallBiz builds simultaneous dual-track campaigns — separate keyword clusters, separate landing pages, separate ad schedules, and separate retention systems for each audience profile — all running from one integrated CRM with unified reporting. You capture the Labs-adjacent homeowner who searches on a Wednesday evening and the winery operator who needs commercial HVAC support during harvest season, without managing two separate agencies." },
@@ -668,9 +661,8 @@ const LivermoreCA = () => {
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6">
-              Every Day You Wait, Your Competitors Book Another Livermore Customer That{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-primary italic">Should Have Been Yours.</span>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground leading-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+              Every Day You Wait, Your Competitors Book Another Livermore Customer That Should Have Been Yours.
             </h2>
             <p className="text-foreground/80 leading-relaxed mb-4">Livermore's dual-identity market is underserved. The agencies currently ranking for Livermore keywords target only one third of the available market opportunity. The Labs-adjacent professional demographic and the wine country commercial market are both underserved by current SERP leaders — and both are available to the business that builds a properly structured dual-track local presence first.</p>
             <p className="text-foreground/80 leading-relaxed mb-4">GrowSmallBiz gives Livermore service businesses the integrated marketing system that captures both audience tracks: one connected platform spanning awareness to retention, powered by AI, and managed by a team based 20 minutes away in Danville. Subrata Guha, our founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience — including deep familiarity with the research-oriented decision patterns of technical and scientific professional audiences — to the specific challenges of Livermore's uniquely complex local service market.</p>

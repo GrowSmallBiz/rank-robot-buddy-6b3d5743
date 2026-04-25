@@ -81,9 +81,8 @@ const Dental = () => {
               <Smile className="w-4 h-4" />
               Dental Practice Marketing
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Full-Service Dental Marketing Agency Built to{" "}
-              <span className="text-gradient">Grow Your Practice</span> With Proven Patient Acquisition
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              Full-Service Dental Marketing Agency Built to Grow Your Practice With Proven Patient Acquisition
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               GrowSmallBiz is a dental marketing agency that helps independent dental practices attract new patients, build five-star reputations, and implement systems that increase revenue — all managed through a single integrated vendor.
@@ -109,7 +108,9 @@ const Dental = () => {
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Sound Familiar?
+</h2>
             <p className="text-muted-foreground">These are the challenges we hear from dental practice owners every day.</p>
           </div>
           <div className="max-w-2xl mx-auto space-y-4">
@@ -136,7 +137,9 @@ const Dental = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Dental Practices Need a Specialized Marketing Agency</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Why Dental Practices Need a Specialized Marketing Agency
+</h2>
             <p className="text-muted-foreground mb-8 text-lg">
               Dental marketing requires specialized knowledge of patient psychology, local search behavior, and healthcare compliance. Generic marketing agencies apply one-size-fits-all tactics that don't account for how dental patients actually make decisions.
             </p>
@@ -172,7 +175,9 @@ const Dental = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">What Does a Dental Marketing Agency Do?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center bg-gradient-heading bg-clip-text text-transparent">
+  What Does a Dental Marketing Agency Do?
+</h2>
             <p className="text-muted-foreground mb-6 text-lg text-center max-w-3xl mx-auto">
               A dental marketing agency manages the full spectrum of digital patient acquisition for dental practices — from local SEO and Google Map Pack visibility to Google Ads management, website design, reputation management, and patient retention automation.
             </p>
@@ -187,7 +192,9 @@ const Dental = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Dental Marketing Services from GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Dental Marketing Services from GrowSmallBiz
+</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to attract, convert, and retain high-value patients.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -214,7 +221,9 @@ const Dental = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Dental Patient Acquisition Results</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Dental Patient Acquisition Results
+</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">The following results are drawn from verified client engagements.</p>
             <Button variant="outline" size="lg" asChild>
               <Link to="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/">
@@ -229,7 +238,9 @@ const Dental = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">Why Dental Practices Choose GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
+  Why Dental Practices Choose GrowSmallBiz
+</h2>
             <div className="space-y-6">
               <div className="p-6 bg-card border border-border rounded-2xl">
                 <h3 className="text-lg font-display font-semibold text-foreground mb-2">One Agency, Every Channel</h3>

@@ -11,8 +11,8 @@ export const CaseStudyLinksSection = ({ links }: CaseStudyLinksSectionProps) => 
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-            Client <span className="text-primary">Results</span>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            Client Results
           </h2>
           <p className="mt-3 text-lg text-muted-foreground max-w-2xl mx-auto">
             See the real data behind our strategies

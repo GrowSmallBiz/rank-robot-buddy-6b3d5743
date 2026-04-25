@@ -34,9 +34,8 @@ export const IntegrationsSection = () => {
     <section className="py-2 !my-0 overflow-hidden bg-white">
       <div className="container mx-auto px-4 mb-6">
         <div className="text-center mb-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-            Easily Integrates With<br />
-            <span className="text-primary italic">100+ Leading Apps</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 bg-gradient-heading bg-clip-text text-transparent">
+            Easily Integrates With 100+ Leading Apps
           </h2>
         </div>
       </div>

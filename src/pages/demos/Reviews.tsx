@@ -28,7 +28,7 @@ export default function ReviewsDemo() {
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <p className="text-primary font-semibold uppercase tracking-widest mb-4">REVIEWS</p>
-            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6">
+            <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
               AI-Powered reviews to grow your business
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
@@ -50,7 +50,7 @@ export default function ReviewsDemo() {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-4xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Attract new customers with more 5-star reviews
                 </h2>
                 <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
@@ -171,7 +171,7 @@ export default function ReviewsDemo() {
                 loading="lazy"
               />
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Customer reviews are the single most effective bit of marketing you can do for your company
                 </h2>
                 <h3 className="text-lg font-semibold text-foreground mb-4">
@@ -189,7 +189,7 @@ export default function ReviewsDemo() {
             {/* Get Customer Reviews Automatically */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Get Customer Reviews Automatically
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -212,7 +212,7 @@ export default function ReviewsDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Online Reviews</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Automate Your Online Reviews
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
@@ -232,7 +232,7 @@ export default function ReviewsDemo() {
         {/* BrightLocal Stats */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
-            <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">
+            <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
               How Do Your Clients And Customers Use Reviews?
             </h2>
             <p className="text-muted-foreground mb-12">- BrightLocal Study Results</p>
@@ -261,7 +261,7 @@ export default function ReviewsDemo() {
         {/* Win More Business */}
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
-            <h2 className="text-2xl md:text-3xl font-black text-foreground text-center mb-4">
+            <h2 className="text-2xl md:text-3xl font-black text-foreground text-center mb-4 bg-gradient-heading bg-clip-text text-transparent">
               Win More Business with GrowSmallBiz's
             </h2>
             <h3 className="text-xl md:text-2xl font-bold text-primary text-center mb-12">
@@ -307,7 +307,7 @@ export default function ReviewsDemo() {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Turn customer reviews into your competitive edge
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -330,7 +330,7 @@ export default function ReviewsDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Review Monitoring</p>
-                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6">
+                <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Monitor all your reviews in one place
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">

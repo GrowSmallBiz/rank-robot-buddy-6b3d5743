@@ -376,9 +376,8 @@ const RealtorMarketing = () => {
                 <span className="text-primary text-sm font-medium">For Independent Residential Realtors</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-                Real Estate Marketing Services Built for Independent Realtors{" "}
-                <span className="text-gradient">— Not Zillow</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up bg-gradient-heading bg-clip-text text-transparent" style={{ animationDelay: "0.1s" }}>
+                Real Estate Marketing Services Built for Independent Realtors — Not Zillow
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.2s" }}>
@@ -425,7 +424,9 @@ const RealtorMarketing = () => {
         <section className="py-20 bg-card/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Sound Familiar?
+</h2>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-5 mb-12">
@@ -464,7 +465,7 @@ const RealtorMarketing = () => {
           <div className="container mx-auto px-4">
             {/* Part 1 — The Dependency Trap */}
             <div className="max-w-4xl mx-auto mb-20">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 text-center bg-gradient-heading bg-clip-text text-transparent">
                 The Lead Dependency Trap Is Costing You More Than You Think
               </h2>
               <div className="text-muted-foreground space-y-4 text-lg leading-relaxed">
@@ -528,7 +529,7 @@ const RealtorMarketing = () => {
         <section className="py-24 lg:py-32 bg-card/50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10 text-center">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10 text-center bg-gradient-heading bg-clip-text text-transparent">
                 The Problem With Broker Leads Nobody Talks About
               </h2>
 
@@ -596,7 +597,7 @@ const RealtorMarketing = () => {
         <section className="py-24 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10 bg-gradient-heading bg-clip-text text-transparent">
                 Why Most Real Estate Marketing Services Fail
               </h2>
 
@@ -623,9 +624,8 @@ const RealtorMarketing = () => {
                 <Zap className="w-4 h-4 text-primary" />
                 <span className="text-primary text-sm font-medium">Complete Solution</span>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-                Everything You Need to{" "}
-                <span className="text-gradient">Dominate Your Real Estate Market</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Everything You Need to Dominate Your Real Estate Market
               </h2>
             </div>
             {/* Change 4B — buyer/seller line */}
@@ -687,8 +687,8 @@ const RealtorMarketing = () => {
         <section className="py-24 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">
-                Show Up When Buyers Ask <span className="text-gradient">ChatGPT or Google AI</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center bg-gradient-heading bg-clip-text text-transparent">
+                Show Up When Buyers Ask ChatGPT or Google AI
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto text-center mb-12">
                 The next generation of home buyers isn't just Googling — they're asking AI. Here's a search happening right now: <em>"Who is the best realtor in [city] for first-time home buyers?"</em> — typed not into Google, but into ChatGPT, Gemini, or Perplexity. Most realtors have no idea their AI visibility even exists. Most competing agencies aren't addressing it at all.
@@ -725,8 +725,8 @@ const RealtorMarketing = () => {
         <section id="how-it-works" className="py-24 lg:py-32 bg-card/50 scroll-mt-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Your Client Journey, <span className="text-gradient">Automated</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Your Client Journey, Automated
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">From first click to closing day, every touchpoint is optimized for conversion</p>
             </div>
@@ -763,7 +763,7 @@ const RealtorMarketing = () => {
         <section className="py-24 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 text-center bg-gradient-heading bg-clip-text text-transparent">
                 Can I Actually Compete With Zillow on Google?
               </h2>
               <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto mb-4">
@@ -807,8 +807,8 @@ const RealtorMarketing = () => {
         <section className="py-20 bg-card/50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10 text-center">
-                We Know You've Been <span className="text-primary">Burned Before</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-10 text-center bg-gradient-heading bg-clip-text text-transparent">
+                We Know You've Been Burned Before
               </h2>
               <div className="space-y-6">
                 {[
@@ -859,8 +859,8 @@ const RealtorMarketing = () => {
                     <p className="text-sm text-muted-foreground">Founder, GrowSmallBiz</p>
                   </div>
                   <div className="flex-1 text-center md:text-left">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-                      Ready to <span className="text-gradient">Own Your Pipeline</span>?
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                      Ready to Own Your Pipeline?
                     </h2>
                     <p className="text-xl text-muted-foreground mb-6">
                       No long-term contracts. No per-lead fees. No Zillow. No fragmented vendors.

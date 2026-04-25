@@ -244,7 +244,7 @@ const AEO = () => {
         {/* SECTION 1 — HERO */}
         <ServiceHero
           badge={{ icon: MessageCircleQuestion, text: "Managed AI SEO — AEO Pillar" }}
-          title={<>AEO Services That Help Local Service Businesses Become the{" "}</>}
+          title="AEO Services That Help Local Service Businesses Become the"
           titleHighlight="Answer"
           subtitle="Search behavior has shifted. Local buyers are asking full questions, and modern search experiences increasingly surface direct answers instead of just lists of links."
           description="GrowSmallBiz helps local service businesses build answer-ready content architecture that improves visibility across search ecosystems, strengthens trust early, and turns more search impressions into calls, inquiries, and booked jobs."
@@ -271,10 +271,8 @@ const AEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">The Shift You Cannot Ignore</p>
-                <h2 className="section-title">
-                  What Is{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Answer Engine Optimization</span>
-                  ?
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  What Is Answer Engine Optimization?
                 </h2>
               </div>
 
@@ -341,9 +339,8 @@ const AEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">Search Has Changed</p>
-                <h2 className="section-title">
-                  How Local Service Buyers Research and Choose{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Providers Now</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  How Local Service Buyers Research and Choose Providers Now
                 </h2>
               </div>
 
@@ -381,9 +378,8 @@ const AEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">What We Build</p>
-              <h2 className="section-title">
-                What GrowSmallBiz Includes in{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">AEO</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                What GrowSmallBiz Includes in AEO
               </h2>
               <p className="section-description mt-4">Our AEO work is not a checklist or a one-time content drop. It is an ongoing content structuring process built around how your specific buyers search.</p>
             </div>
@@ -410,9 +406,8 @@ const AEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">Faster. Broader. More Consistent.</p>
-                <h2 className="section-title">
-                  How GrowSmallBiz Executes AEO with an{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Agentic AI SEO Playbook</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  How GrowSmallBiz Executes AEO with an Agentic AI SEO Playbook
                 </h2>
               </div>
 
@@ -454,9 +449,8 @@ const AEO = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">Real-World Application</p>
-                <h2 className="section-title">
-                  What AEO Looks Like in{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-primary italic">Real Local Buying Situations</span>
+                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                  What AEO Looks Like in Real Local Buying Situations
                 </h2>
               </div>
 
@@ -498,9 +492,8 @@ const AEO = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">Why GrowSmallBiz</p>
-              <h2 className="section-title">
-                Built for Local Service Businesses.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Designed to Improve Visibility Where Buying Decisions Start.</span>
+              <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                Built for Local Service Businesses. Designed to Improve Visibility Where Buying Decisions Start.
               </h2>
               <p className="section-description mt-4">GrowSmallBiz does not treat AEO as a disconnected tactic. We treat it as one part of a broader managed SEO system built to help local service businesses earn trust, visibility, and qualified inquiries across modern search environments.</p>
             </div>
@@ -530,7 +523,7 @@ const AEO = () => {
 
         {/* SECTION 8 — FAQ */}
         <FAQSection
-          title={<>Frequently Asked Questions About <span className="text-transparent bg-clip-text bg-gradient-primary italic">AEO</span></>}
+          title="Frequently Asked Questions About AEO"
           faqs={faqs}
           schemaType="FAQPage"
           contactCTA={{
@@ -546,9 +539,8 @@ const AEO = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <p className="text-primary font-medium mb-4">Ready to Become the Answer?</p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-                Your Buyers Are Already Asking the Questions.{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary italic">Make Sure Your Business Is Answer Engine Optimized (AEO).</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                Your Buyers Are Already Asking the Questions. Make Sure Your Business Is Answer Engine Optimized (AEO).
               </h2>
               <p className="text-lg text-muted-foreground mb-10 max-w-3xl mx-auto">
                 GrowSmallBiz will map the questions your buyers are asking, structure content that positions your business as the authoritative answer, and build the coverage that earns featured placement across modern search environments. Start with a strategy session or let us audit what you have right now.

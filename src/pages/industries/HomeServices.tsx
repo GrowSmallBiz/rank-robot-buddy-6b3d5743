@@ -369,8 +369,8 @@ const HomeServices = () => {
               <Wrench className="w-4 h-4" />
               Home Service Contractor Marketing
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Stop Renting Leads. Start <span className="text-gradient">Owning Your Pipeline</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
+              Stop Renting Leads. Start Owning Your Pipeline
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               Replace expensive HomeAdvisor and Angi leads with your own lead generation engine. Local SEO, Google Ads, AI automation, and reputation management built for home service contractors.
@@ -416,7 +416,9 @@ const HomeServices = () => {
       <section className="py-20 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Sound Familiar?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Sound Familiar?
+</h2>
             <p className="text-muted-foreground">These are the challenges we hear from home service contractors every day.</p>
           </div>
           <div className="max-w-2xl mx-auto space-y-4">
@@ -442,7 +444,9 @@ const HomeServices = () => {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">What Is a Home Services Marketing Agency?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
+  What Is a Home Services Marketing Agency?
+</h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               A home services marketing agency specializes in digital lead generation for contractors, tradespeople, and residential service companies. Unlike general marketing firms, a home services marketing agency understands the full booking cycle — from local search intent and Google Local Services Ads to reputation management and CRM follow-up. The goal isn't traffic. It's more booked jobs at a lower cost-per-acquisition.
             </p>
@@ -457,7 +461,9 @@ const HomeServices = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">The Seasonal Marketing Playbook for Home Service Contractors</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  The Seasonal Marketing Playbook for Home Service Contractors
+</h2>
             <p className="text-muted-foreground">
               Most contractors run the same marketing year-round. The ones who dominate adjust their budget, messaging, and channels to match when homeowners actually need their services. Here's how the calendar works.
             </p>
@@ -490,7 +496,9 @@ const HomeServices = () => {
       <section className="py-24 bg-card/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Our Home Service Marketing Solutions</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Our Home Service Marketing Solutions
+</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to own your leads — not rent them. We deploy the channels that drive calls, form fills, and booked appointments, not vanity metrics.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -519,7 +527,9 @@ const HomeServices = () => {
       <section className="py-20" style={{ backgroundColor: 'hsl(var(--card))' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Specialized Digital Marketing for Every Trade</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Specialized Digital Marketing for Every Trade
+</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Home service marketing isn't one-size-fits-all. We've built trade-specific strategies that match how your customers search, compare, and hire.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -550,7 +560,9 @@ const HomeServices = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Real Results for Real Contractors</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+  Real Results for Real Contractors
+</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Average results from our home service clients.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -569,7 +581,9 @@ const HomeServices = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
             <div className="lg:col-span-3">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">Never Lose a Lead Because No One Answered</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6 bg-gradient-heading bg-clip-text text-transparent">
+  Never Lose a Lead Because No One Answered
+</h2>
               <p className="text-white/80 mb-4 leading-relaxed">
                 Home service contractors lose more jobs to missed calls than to price competition. A homeowner with a burst pipe or a broken AC at 10 PM calls two contractors. The first one to answer gets the job.
               </p>
@@ -611,7 +625,9 @@ const HomeServices = () => {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">Why Home Service Contractors Choose GrowSmallBiz</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
+  Why Home Service Contractors Choose GrowSmallBiz
+</h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               We don't work with e-commerce brands, SaaS companies, or enterprise clients. Every client we serve is a local service business — which means our keyword strategies, ad structures, landing page architecture, and automation workflows are all built for how contractors actually get jobs. Not adapted. Built.
             </p>
@@ -633,7 +649,7 @@ const HomeServices = () => {
         <div className="absolute inset-0 section-glow" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
               Home Service Success Stories
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
