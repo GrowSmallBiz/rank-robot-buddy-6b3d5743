@@ -174,13 +174,12 @@ const FacebookAds = () => {
       <section className="relative pt-8 pb-24 overflow-hidden">
         <img
           src={heroBg}
-          alt=""
+          alt="Abstract digital background with colorful geometric shapes and icons representing social media engagement, emphasizing Facebook and Instagram advertising strategies for local businesses by GrowSmallBiz."
           width={1920}
           height={1080}
           fetchPriority="high"
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
-        />
+          className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none" />
         <div className="absolute inset-0 bg-background/70" />
         <div className="absolute inset-0 hero-glow" />
         <div className="container mx-auto px-4 relative z-10">
@@ -274,12 +273,11 @@ const FacebookAds = () => {
             <div className="my-8 flex justify-center">
               <img
                 src={leakyBucket}
-                alt="Galvanized metal bucket leaking water from holes on all sides — visual metaphor for losing prospective customers without retargeting"
+                alt="Metal bucket with holes leaking water, symbolizing inefficiency in ad spend for local businesses, relevant to GrowSmallBiz's focus on optimizing Facebook and Instagram Ads."
                 width={1024}
                 height={1024}
                 loading="lazy"
-                className="w-full max-w-md h-auto rounded-xl shadow-lg"
-              />
+                className="w-full max-w-md h-auto rounded-xl shadow-lg" />
             </div>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>

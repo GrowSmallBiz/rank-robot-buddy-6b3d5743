@@ -61,7 +61,7 @@ export default function CalendarSchedulingDemo() {
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <img src="https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148549799.jpg?w=826" alt="Online Scheduling" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://img.freepik.com/free-vector/appointment-booking-with-calendar_23-2148549799.jpg?w=826" alt="Woman interacting with a digital calendar displaying October, emphasizing appointment scheduling and automation for business efficiency." className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Online Scheduling</p>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
@@ -86,11 +86,11 @@ export default function CalendarSchedulingDemo() {
                 <h3 className="text-xl font-black text-foreground mb-4">Complete Control</h3>
                 <p className="text-muted-foreground leading-relaxed">You have full control over all your bookings and appointments. You can embed calendars in your site for easy booking or manually schedule any of your contacts from within the app.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/5e7d3e76-3d84-4ad0-9cc1-8472986d0226.png" alt="Complete Control" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/5e7d3e76-3d84-4ad0-9cc1-8472986d0226.png" alt="Calendar scheduling interface with automation features, demonstrating easy appointment management and team integration for enhanced business operations." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/81cab6f2-6830-4556-bf52-0e15bb34135d.png" alt="Unlimited Team Members" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/81cab6f2-6830-4556-bf52-0e15bb34135d.png" alt="Icon representing automated scheduling and team collaboration, emphasizing efficient calendar management and appointment bookings for businesses." className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div>
                 <h3 className="text-xl font-black text-foreground mb-4">Unlimited Team Members</h3>
                 <p className="text-muted-foreground leading-relaxed">Unlike other scheduling software, there is no charge for extra team members. Whether you have a team of 1 or 40, add as many calendars as you need for your business.</p>
@@ -102,7 +102,7 @@ export default function CalendarSchedulingDemo() {
                 <h3 className="text-xl font-black text-foreground mb-4">Automate</h3>
                 <p className="text-muted-foreground leading-relaxed">Make the booking process for your events smooth. In conjunction with our workflows, you can schedule both appointments and follow ups to make it easy for your team and customers.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b7d35116-f795-4dff-8722-e641fa0f7075.png" alt="Automate scheduling" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/b7d35116-f795-4dff-8722-e641fa0f7075.png" alt="Digital calendar scheduling interface with settings gear, illustrating GrowSmallBiz's marketing automation solutions for appointment management and team collaboration." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
 
             <div className="text-center">
@@ -122,11 +122,11 @@ export default function CalendarSchedulingDemo() {
 </h2>
                 <p className="text-muted-foreground leading-relaxed">Automate reminder campaigns that include links to reschedule and cancel. You can also manually or automatically confirm appointments. Integrate your Google calendar or Outlook calendar so that you are never double-booked.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dfdf206af207be095a7b88.png" alt="Scheduling Needs" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dfdf206af207be095a7b88.png" alt="Email composition interface displaying appointment confirmation template with placeholders for contact name and appointment details, illustrating automated scheduling features for GrowSmallBiz's marketing automation services." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dfdd91077c9a6bd049a3d0.png" alt="Flexibility" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dfdd91077c9a6bd049a3d0.png" alt="Illustration of a diverse group of people interacting with a large digital calendar, showcasing scheduling activities and collaboration, emphasizing automation and efficiency in appointment management for businesses." className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
   Flexibility for your needs
@@ -141,7 +141,7 @@ export default function CalendarSchedulingDemo() {
                 <h3 className="text-xl font-bold text-foreground mb-4">Integrate for online meetings</h3>
                 <p className="text-muted-foreground leading-relaxed">Integrate your calendars with Zoom or Google Meet to automatically schedule your virtual appointments.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dfe1466af20770935a7be7.png" alt="Web Meetings" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dfe1466af20770935a7be7.png" alt="Person sitting at a desk engaging in a virtual meeting, with two video call windows displaying participants, a clock, books, and a coffee mug, illustrating online appointment integration for business scheduling." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
           </div>
         </section>

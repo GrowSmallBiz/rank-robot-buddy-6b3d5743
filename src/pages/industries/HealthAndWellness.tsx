@@ -267,7 +267,7 @@ const HealthAndWellness = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-24 relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={healthWellnessHeroImage} alt="Modern health and wellness practice interior" className="w-full h-full object-cover" />
+          <img src={healthWellnessHeroImage} alt="Modern health and wellness practice interior featuring treatment chair, waiting area with plants, and kitchenette, emphasizing patient comfort and professional environment." className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-background/85" />
         </div>
         <div className="absolute inset-0 hero-glow" />

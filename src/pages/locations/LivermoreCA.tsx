@@ -46,7 +46,7 @@ const LivermoreCA = () => {
 
       {/* ===== HERO SECTION ===== */}
       <section className="hero-section">
-        <img src={livermoreHero} alt="GrowSmallBiz digital marketing agency serving Livermore CA Labs workforce and wine country local service businesses" width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
+        <img src={livermoreHero} alt="Vineyard landscape in Livermore, CA, featuring rolling hills, lush grapevines, and a Mediterranean-style building, highlighting the region's agricultural beauty and local business potential." width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ backgroundColor: `hsl(var(--background) / 0.82)` }} />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">

@@ -46,7 +46,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="relative flex justify-center">
                 <div className="relative w-full max-w-lg">
-                  <img src={aiGrowthSystemFunnel} alt="Marketing funnel stages" width={800} height={600} className="w-full rounded-2xl shadow-2xl shadow-primary/20" />
+                  <img src={aiGrowthSystemFunnel} alt="Funnel diagram illustrating digital marketing tools and platforms, including social media icons and lead generation applications, relevant to GrowSmallBiz's services for painting contractors." width={800} height={600} className="w-full rounded-2xl shadow-2xl shadow-primary/20" />
                   {["Awareness", "Capture", "Nurture", "Close"].map((label, idx) => {
                     const tops = ["2%", "28%", "55%", "78%"];
                     const bgs = ["bg-blue-600/90", "bg-slate-700/90", "bg-indigo-600/90", "bg-emerald-600/90"];
@@ -188,7 +188,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
           <div className="grid lg:grid-cols-2 gap-8 items-center mb-10">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-primary/20 rounded-3xl blur-xl" />
-              <img src={emailSmsWorkflowDiagram} alt="Email and SMS automation workflow diagram" width={800} height={500} className="relative rounded-2xl border border-border/50 shadow-2xl w-full" />
+              <img src={emailSmsWorkflowDiagram} alt="Email and SMS marketing workflow diagram with icons representing lead generation, customer engagement, and conversion processes, designed for digital marketing strategies aimed at painting contractors." width={800} height={500} className="relative rounded-2xl border border-border/50 shadow-2xl w-full" />
               <div className="absolute -bottom-4 -right-4 bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">5-Day Automation</div>
             </div>
             <div className="space-y-4">

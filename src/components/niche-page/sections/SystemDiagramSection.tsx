@@ -33,10 +33,9 @@ export const SystemDiagramSection = ({ config }: SystemDiagramSectionProps) => {
           <div className="relative z-10 flex justify-center">
             <img
               src={predictableMarketingSystem}
-              alt="Predictable Marketing System showing the complete client acquisition and retention funnel"
+              alt="GrowSmallBiz Predictable Marketing System diagram showcasing digital marketing tools for painting contractors, including Facebook Ads, Instagram Ads, Google Ads, Google Business Profile, website optimization, LinkedIn, SMS and email marketing, AI receptionist, and reputation management."
               width={900} height={600}
-              className="w-full max-w-5xl rounded-xl shadow-2xl shadow-primary/10"
-            />
+              className="w-full max-w-5xl rounded-xl shadow-2xl shadow-primary/10" />
           </div>
         </div>
       </div>

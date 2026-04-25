@@ -45,7 +45,7 @@ const DublinCA = () => {
 
       {/* Hero Section */}
       <section className="hero-section">
-        <img src={dublinHero} alt="GrowSmallBiz digital marketing agency serving Dublin CA Tri-Valley local service businesses" width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
+        <img src={dublinHero} alt="Aerial view of Dublin, California, showcasing modern commercial buildings, residential neighborhoods, and rolling hills with Mount Diablo in the background, highlighting the local landscape and community." width={1920} height={768} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0" style={{ backgroundColor: `hsl(var(--background) / 0.82)` }} />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">

@@ -69,7 +69,7 @@ const Dental = () => {
 
       <section className="pt-32 pb-24 relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={dentalHeroImage} alt="Modern dental clinic with dentist and patient" className="w-full h-full object-cover" />
+          <img src={dentalHeroImage} alt="Dentist consulting with patient in modern dental office, discussing treatment options and patient care, emphasizing dental marketing services by GrowSmallBiz." className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-background/85" />
         </div>
         <div className="absolute inset-0 hero-glow" />

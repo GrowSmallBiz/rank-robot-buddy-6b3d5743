@@ -47,11 +47,10 @@ export const Header = () => {
           <Link to="/" className="flex items-center gap-3">
             <img 
               src={growsmallbizLogo} 
-              alt="GrowSmallBiz Digital Marketing" 
+              alt="GrowSmallBiz logo featuring digital marketing services for painting contractors, emphasizing AI SEO, PPC, web, social media, and automation." 
               className="h-16 w-auto"
               width={64}
-              height={64}
-            />
+              height={64} />
           </Link>
 
           {/* Desktop Navigation */}

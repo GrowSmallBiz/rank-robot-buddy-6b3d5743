@@ -48,7 +48,7 @@ export default function SocialMediaPlannerDemo() {
 </h2>
                 <p className="text-muted-foreground leading-relaxed">Connect multiple Social Media channels like Google Business Profile, Facebook, Instagram, TikTok, and LinkedIn. Build out your posts for multiple channels and you will be able to immediately post it, schedule the post, or, if needed, have it approved by an admin.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/9e9b8e77-e832-45d2-858f-0faf6ac9b842.png" alt="Simplify Social Media" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/9e9b8e77-e832-45d2-858f-0faf6ac9b842.png" alt="Illustration of a person with a megaphone emerging from a tablet, surrounded by social media icons, with three individuals engaging with their phones, representing social media automation and interaction." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
           </div>
         </section>
@@ -57,7 +57,7 @@ export default function SocialMediaPlannerDemo() {
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63e00606a486206e9c26506e.png" alt="Social Planner Calendar" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63e00606a486206e9c26506e.png" alt="Social media calendar view displaying scheduled posts for February 2023, featuring content management tools for efficient social media automation." className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Social Planner</p>
                 <h3 className="text-xl font-bold text-foreground mb-4">Use the Calendar for Planning Posts</h3>
@@ -80,7 +80,7 @@ export default function SocialMediaPlannerDemo() {
 </h2>
                 <p className="text-muted-foreground leading-relaxed">Instead of logging into each platform and posting content every day, you can use the scheduling tool to prepare as many posts as you want and schedule them for any point in the future.</p>
               </div>
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63e007016af20710a55a8ae2.png" alt="Schedule posts" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63e007016af20710a55a8ae2.png" alt="Calendar interface for scheduling social media posts, featuring February 2023 dates, time selection, and timezone settings." className="w-full rounded-xl shadow-lg" loading="lazy" />
             </div>
           </div>
         </section>
@@ -89,7 +89,7 @@ export default function SocialMediaPlannerDemo() {
         <section className="py-10" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63e0087c6af2073eab5a8b48.png" alt="Social media manager login" className="w-full rounded-xl shadow-lg" loading="lazy" />
+              <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63e0087c6af2073eab5a8b48.png" alt="Illustration of a social media marketing scene featuring a woman holding a smartphone, a megaphone on a tablet, and various social media icons representing engagement metrics and content sharing." className="w-full rounded-xl shadow-lg" loading="lazy" />
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
   Do you have a social media manager?

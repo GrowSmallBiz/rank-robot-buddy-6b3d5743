@@ -12,11 +12,10 @@ export const Footer = () => {
             <Link to="/" className="flex items-center gap-3">
               <img
                 src={growsmallbizLogo}
-                alt="GrowSmallBiz Digital Marketing"
+                alt="GrowSmallBiz logo featuring digital marketing services for painting contractors, emphasizing AI SEO, PPC, web, social media, and automation."
                 className="h-12 w-auto"
                 width={48}
-                height={48}
-              />
+                height={48} />
               <span className="text-xl font-bold font-display text-foreground">
                 GrowSmallBiz Digital Marketing
               </span>

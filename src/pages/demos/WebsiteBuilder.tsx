@@ -57,10 +57,9 @@ export default function WebsiteBuilderDemo() {
               <div className="bg-card border border-border rounded-xl p-6 text-center">
                 <img
                   src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/0677a927-c51e-4f2e-a056-3748c6375f68.png"
-                  alt="Build Beautiful Websites"
+                  alt="Website builder interface showcasing drag-and-drop functionality for creating mobile-friendly websites, emphasizing user-friendly design and marketing automation features."
                   className="w-full rounded-lg mb-4"
-                  loading="lazy"
-                />
+                  loading="lazy" />
                 <h3 className="text-lg font-bold text-foreground mb-2">Build Beautiful Websites</h3>
                 <p className="text-sm text-muted-foreground">
                   Using our simple, drag-and-drop interface, you don't have to be a professional coder to build beautiful websites.
@@ -69,10 +68,9 @@ export default function WebsiteBuilderDemo() {
               <div className="bg-card border border-border rounded-xl p-6 text-center">
                 <img
                   src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/5354c873-a198-45b7-87d7-ee7ca83fa7c1.png"
-                  alt="Mobile Friendly"
+                  alt="Mobile-friendly website builder interface with drag-and-drop functionality for easy website creation."
                   className="w-full rounded-lg mb-4"
-                  loading="lazy"
-                />
+                  loading="lazy" />
                 <h3 className="text-lg font-bold text-foreground mb-2">Mobile Friendly</h3>
                 <p className="text-sm text-muted-foreground">
                   With more and more people moving to viewing websites on mobile devices, our builder helps you build a mobile-friendly site.
@@ -81,10 +79,9 @@ export default function WebsiteBuilderDemo() {
               <div className="bg-card border border-border rounded-xl p-6 text-center">
                 <img
                   src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/a52e1470-c95e-48e8-8dcb-3a57bbb2106b.png"
-                  alt="Fully Secure"
+                  alt="Computer screen with a shield and lock icon representing website security and SSL protection for online businesses."
                   className="w-full rounded-lg mb-4"
-                  loading="lazy"
-                />
+                  loading="lazy" />
                 <h3 className="text-lg font-bold text-foreground mb-2">Fully Secure</h3>
                 <p className="text-sm text-muted-foreground">
                   While many website companies offer website security for an extra cost, SSL is included on all of our websites at no charge.
@@ -118,10 +115,9 @@ export default function WebsiteBuilderDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/413b40ed-58d2-4863-a36a-dd5399e801ed.png"
-                alt="No Limits - Build all websites"
+                alt="Dashboard interface of Level Up Pipeline website builder displaying various editable page options like Home Page, About Us, CRM, and more, emphasizing user-friendly design for small business website creation."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -132,10 +128,9 @@ export default function WebsiteBuilderDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dae1244ded97cc059e157b.png"
-                alt="Drag-and-drop builder"
+                alt="Image of a website builder interface showcasing a wellness-themed layout with the text &quot;Healing Body, Mind and Spirit,&quot; featuring floral decorations and buttons for &quot;READ MORE&quot; and &quot;PURCHASE,&quot; illustrating customizable options for creating mobile-friendly sites."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-2">Intuitive</p>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">

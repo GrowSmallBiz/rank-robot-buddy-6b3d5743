@@ -30,10 +30,9 @@ export default function FormsSurveysDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/4KL47iKeJZ2Ee05j7FBh/media/e5c171eb-d513-449d-af8a-8990b3a4e2ab.png"
-                alt="Forms Builder"
+                alt="Free week offer claim form with fields for first name, last name, email, and cell phone, featuring a prominent green &quot;CLAIM OFFER!!&quot; button."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -53,10 +52,9 @@ export default function FormsSurveysDemo() {
               </div>
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dd852da486209e88257da3.png"
-                alt="Survey Builder"
+                alt="Illustration of a woman with a pencil next to a laptop displaying a form, featuring options for &quot;YES&quot; and &quot;NO,&quot; surrounded by gears and greenery, representing form and survey creation for marketing automation."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
             </div>
           </div>
         </section>
@@ -67,10 +65,9 @@ export default function FormsSurveysDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BdnD3TjkxQR9s3Yi5FPM/media/63dee200a48620c04a25f818.png"
-                alt="Drag and drop form builder"
+                alt="Drag-and-drop survey builder interface displaying fields for first name, last name, email, and phone, emphasizing customizable form creation for lead generation."
                 className="w-full rounded-xl shadow-lg"
-                loading="lazy"
-              />
+                loading="lazy" />
               <div>
                 <p className="text-primary font-semibold uppercase tracking-widest mb-4">FULL FEATURED AND EASY</p>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
