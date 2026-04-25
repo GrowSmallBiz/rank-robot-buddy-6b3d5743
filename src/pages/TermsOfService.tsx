@@ -31,7 +31,7 @@ const TermsOfService = () => {
             <p>Our website address is: https://growsmallbiz.io.</p>
 
             <h2 className="text-2xl font-semibold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-  Comments
+  Visitor Comments & Data Collection Practices
 </h2>
             <p>When visitors leave comments on the site, we collect the data shown in the comments form, and the visitor's IP address and browser user agent string to help spam detection.</p>
             <p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>
