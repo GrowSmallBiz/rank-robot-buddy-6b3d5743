@@ -26,7 +26,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // 4.1  PAGE META
   // ══════════════════════════════════════════════════════════════════════
   pageTitle: "Tree & Lawn Care Marketing: GrowSmallBiz's AI-Powered Solutions",
-  metaDescription: "Get more tree service, lawn care, and landscaping customers. GrowSmallBiz builds Local SEO, Google Ads, and AI-powered marketing for green industry contractors across the Bay Area.",
+  metaDescription: "Get more tree service, lawn care, and landscaping calls with Local SEO, Google ads and converts visitors into booked jobs. Schedule strategy call.",
   canonicalUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/",
   serviceName: "Tree & Lawn Care Marketing Agency",
   serviceType: "Digital Marketing for Tree Service, Lawn Care & Landscaping Companies",

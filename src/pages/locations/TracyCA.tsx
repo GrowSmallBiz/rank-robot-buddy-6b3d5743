@@ -22,11 +22,7 @@ const TracyCA = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Services in Tracy, CA | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps Tracy local service businesses rank higher and generate more leads with local SEO, Google Ads, website design, and AI-powered marketing automation." />
-        <meta
-          name="description"
-          content="GrowSmallBiz serves Tracy CA local service businesses with integrated digital marketing — Local SEO, Google Ads, AI automation, reputation management. San Joaquin Valley specialists. Get your free strategy session."
-        />
+        <meta name="description" content="Digital Marketing in Tracy, CA: Grow your business with AI Local SEO, AI optimized Google Ads, and 24x7 AI marketing automation." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/tracy-ca/" />
       </Head>
       <LocationJsonLd

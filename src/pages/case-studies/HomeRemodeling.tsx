@@ -105,11 +105,7 @@ const HomeRemodeling = () => {
     <>
       <Head>
         <title>Home Remodeling SEO Case Study: Real Results for Contractors</title>
-        <meta name="description" content="See how GrowSmallBiz helped home remodeling contractors win more projects with AI-powered digital marketing. Real results, real businesses." />
-        <meta
-          name="description"
-          content="Explore documented Local SEO case study results for home remodeling and home renovation businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, calls, conversions, and conversion-focused lead generation strategy."
-        />
+        <meta name="description" content="Home remodeling contractors: GrowSmallBiz delivers real Local SEO results. See how we boost leads and website clicks. Schedule Strategy Call." />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" />
       </Head>
       <ArticleJsonLd

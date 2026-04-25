@@ -65,11 +65,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
     <>
       <Head>
         <title>HVAC Google Ads Case Study: How We Increased Leads & Revenue</title>
-        <meta name="description" content="See how GrowSmallBiz used Google Ads to help HVAC, plumbing, and electrical contractors generate more calls and booked jobs." />
-        <meta
-          name="description"
-          content="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses. Real proof from paid search performance, conversions, cost per acquisition, and conversion-focused lead generation strategy."
-        />
+        <meta name="description" content="GrowSmallBiz helps HVAC contractors generate more calls and booked jobs with AI optimized Google PPC and LSA Ads. Schedule Strategy Call." />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" />
       </Head>
       <ArticleJsonLd

@@ -22,7 +22,7 @@ const MartinezCA = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Services in Martinez, CA | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz serves Martinez CA local service businesses with integrated digital marketing — Local SEO, Google Ads, AI automation, reputation management. Contra Costa County specialists. Get your free strategy session." />
+        <meta name="description" content="Martinez, CA digital marketing services by GrowSmallBiz: Grow your business with AI SEO, AI optimized paid ads, and AI marketing automation." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/martinez-ca/" />
       </Head>
       <LocationJsonLd

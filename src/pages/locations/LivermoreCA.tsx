@@ -23,11 +23,7 @@ const LivermoreCA = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Services in Livermore, CA | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps Livermore local service businesses generate more leads with AI-powered SEO, Google Ads, reputation management, and marketing automation. Serving the Tri-Valley and beyond." />
-        <meta
-          name="description"
-          content="GrowSmallBiz serves Livermore's dual-identity market — Labs workforce and Wine Country businesses. Local SEO, Google Ads, AI automation, reputation management. Get your free strategy session."
-        />
+        <meta name="description" content="Livermore, CA digital marketing services by GrowSmallBiz: Grow your business with AI SEO, AI optimized paid ads, and AI marketing automation." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/livermore-ca/" />
       </Head>
       <LocationJsonLd

@@ -109,7 +109,7 @@ const MedSpaCaseStudy = () => {
     <>
       <Head>
         <title>Med Spa SEO Case Study: Real Results & Revenue Growth | GrowSmallBiz</title>
-        <meta name="description" content="Documented AI SEO and Google Ads results for med spa clients — organic traffic growth, keyword rankings, Google Business Profile performance, cost-per-lead, and conversion metrics." />
+        <meta name="description" content="GrowSmallBiz's med spa AI SEO case study: See how we drive organic growth, improve rankings, and generate leads with AI-powered marketing." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" />
       </Head>
       <ArticleJsonLd

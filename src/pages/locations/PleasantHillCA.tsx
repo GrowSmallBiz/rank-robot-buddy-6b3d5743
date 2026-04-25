@@ -22,7 +22,7 @@ const PleasantHillCA = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Services in Pleasant Hill, CA | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps Pleasant Hill local service businesses rank higher, generate more leads, and grow faster with AI-powered digital marketing. Schedule your free strategy call today." />
+        <meta name="description" content="Pleasant Hill, CA digital marketing services by GrowSmallBiz: Grow your business with AI SEO, AI optimized paid ads, and AI marketing automation." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/pleasant-hill-ca/" />
       </Head>
       <LocationJsonLd

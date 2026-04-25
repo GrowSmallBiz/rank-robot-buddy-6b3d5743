@@ -27,7 +27,7 @@ export const paintingCompaniesConfig: NicheConfig = {
   // 4.1  PAGE META
   // ══════════════════════════════════════════════════════════════════════
   pageTitle: "Marketing Agency for Painting Companies | GrowSmallBiz",
-  metaDescription: "GrowSmallBiz helps painting contractors get more leads with SEO, Google Ads, AI tools, and reputation management. Book your free strategy call today.",
+  metaDescription: "GrowSmallBiz: Digital marketing for painting companies: Get more leads with AI SEO, Google Ads, and AI marketing solution. Book your strategy call!",
   canonicalUrl: "/home-service-contractors/painting-companies-marketing/",
   serviceName: "Marketing Agency for Painting Companies",
   serviceType: "Digital Marketing for Residential and Commercial Painting Contractors",

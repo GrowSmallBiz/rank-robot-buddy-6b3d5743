@@ -23,7 +23,7 @@ const PleasantonCA = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Services in Pleasanton, CA | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz serves Pleasanton's two ZIP codes with integrated digital marketing for local service businesses. Local SEO, Google Ads, AI automation, reputation management. Get your free strategy session." />
+        <meta name="description" content="Pleasanton, CA digital marketing services by GrowSmallBiz: Grow your business with AI SEO, AI optimized paid ads, and AI marketing automation." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/pleasanton-ca/" />
       </Head>
       <LocationJsonLd

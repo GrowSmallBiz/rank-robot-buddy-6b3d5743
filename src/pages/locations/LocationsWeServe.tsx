@@ -64,7 +64,7 @@ const LocationsWeServe = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing & SEO Services in Bay Area and Nationwide</title>
-        <meta name="description" content="GrowSmallBiz serves local service businesses across the Bay Area — Walnut Creek, Danville, San Ramon, Dublin, Pleasanton, Concord, and more. Find your city for localized digital marketing services." />
+        <meta name="description" content="GrowSmallBiz serves local service businesses across Greater San Francisco Bay Area (Sacramento to San Jose) and the entire United States. Contact us." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/locations-we-serve/" />
       </Head>
       <PageJsonLd
