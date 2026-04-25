@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-redirects.cjs && node scripts/generate-sitemap.cjs && node scripts/generate-llms-txt.cjs && vite-react-ssg build",
+    "build": "node scripts/generate-redirects.cjs && node scripts/generate-sitemap.cjs && node scripts/generate-llms-txt.cjs && vite-react-ssg build && node scripts/verify-prerender.cjs",
+    "verify:prerender": "node scripts/verify-prerender.cjs",
     "build:dev": "vite-react-ssg build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
