@@ -108,7 +108,7 @@ export const medSpaConfig: NicheConfig = {
 
   // ── CTAs (Prompt 4 / 12) ──
   ctaAfterPainPoints: {
-    headline: "Ready for Med Spa Marketing That Fills Your Treatment Calendar With the Right Clients?",
+    headline: "Fill Your Med Spa Treatment Calendar with High-Value Clients",
     subtext: "Let's build a custom med spa growth strategy to attract high-value clients and build a recurring membership base.",
     primaryLabel: "Get Your Free Strategy Session",
     secondaryLabel: "Call +1 (925) 886-3724",
