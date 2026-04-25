@@ -289,7 +289,7 @@ const Index = () => {
                     className="w-full h-72 object-contain"
                   />
                 </div>
-                <figcaption className="text-xs text-muted-foreground italic text-center mt-2">
+                <figcaption className="text-xs text-destructive italic text-center mt-2 font-medium">
                   Leads slip through the cracks of disconnected tools.
                 </figcaption>
               </figure>
@@ -331,7 +331,7 @@ const Index = () => {
                     className="w-full h-72 object-contain"
                   />
                 </div>
-                <figcaption className="text-xs text-muted-foreground italic text-center mt-2">
+                <figcaption className="text-xs text-success italic text-center mt-2 font-medium">
                   One connected system captures every lead and overflows with growth.
                 </figcaption>
               </figure>
