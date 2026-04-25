@@ -117,7 +117,7 @@ const LivermoreCA = () => {
               <Star className="w-4 h-4" /> WHY US
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
-              What Makes GrowSmallBiz Different — And Why It Matters for Your Livermore Bottom Line
+              What Sets GrowSmallBiz's AI System Apart for Your Livermore ROI
             </h2>
             <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">Livermore's SERP landscape is led by well-resourced agencies running high-volume pages built from Bay Area templates — none of which acknowledge that Livermore is two distinct markets operating simultaneously, or that the LLNL and Sandia demographic has a fundamentally different buyer psychology than the suburban household profiles these pages were built for. Subrata Guha, GrowSmallBiz founder, brings 30+ years of Fortune 500 sales, marketing, and growth strategy experience — including deep familiarity with the research-oriented, credentialing-sensitive decision patterns of scientific and technical professional audiences.</p>
           </div>
