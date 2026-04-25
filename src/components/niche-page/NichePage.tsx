@@ -70,6 +70,7 @@ const NichePage = ({ config }: NichePageProps) => {
       <Head>
         <title>{config.pageTitle}</title>
         <meta name="description" content={config.metaDescription} />
+        {config.metaKeywords && <meta name="keywords" content={config.metaKeywords} />}
       </Head>
       <ServiceJsonLd
         serviceName={config.serviceName}
