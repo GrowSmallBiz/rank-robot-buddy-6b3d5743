@@ -189,7 +189,7 @@ const Index = () => {
           <source media="(min-width: 769px)" srcSet="/images/homepage-hero-bg.webp" />
           <img
             src="/images/homepage-hero-bg.webp"
-            alt=""
+            alt="Analytics dashboard displaying SEO metrics, CRM automation graphs, and marketing performance statistics, ilustrating GrowSmallBiz's digital marketing solutions for local service businesses."
             role="presentation"
             fetchPriority="high"
             loading="eager"

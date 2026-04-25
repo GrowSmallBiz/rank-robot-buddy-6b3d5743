@@ -162,7 +162,7 @@ export default function UniversalInboxDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <img
                 src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48087692052/original/cHxVNz-bkXEPjlbMI6bxwTHMO5PU1ni4Og.jpg?1613574964"
-                alt="Customizable Viewing Options"
+                alt="Contact management interface displaying customer information, chat history, and options for booking appointments through a chat widget, emphasizing centralized communication for small businesses."
                 className="w-full rounded-xl shadow-lg"
                 loading="lazy"
               />
