@@ -52,7 +52,7 @@ const MartinezCA = () => {
               <span>Martinez, CA — Local Service Business Marketing | Contra Costa County Seat</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
-              Stop Losing Martinez Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
+              Digital Marketing in Martinez for Local Service Businesses
             </h1>
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
               Martinez is not a suburban market. As the seat of Contra Costa County, it has its own distinct identity: a historic downtown with Victorian architecture, a working waterfront along the Carquinez Strait, residential neighborhoods ranging from blue-collar Vine Hill to semi-rural Alhambra Valley, and a legal and financial services cluster centered on the county courthouse. The businesses that serve Martinez's community deserve marketing built for this market — not repurposed from a Bay Area template. GrowSmallBiz is a Contra Costa County digital marketing agency based in Danville — 20 minutes from Martinez. We build integrated marketing systems for local service businesses across Martinez and the broader County. Contractors, dentists, restaurants, real estate professionals — if you serve Martinez clients, we are built for you.

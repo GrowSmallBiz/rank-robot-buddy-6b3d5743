@@ -52,7 +52,7 @@ const PleasantHillCA = () => {
               <span>Pleasant Hill, CA — Local Service Business Marketing | 680 Corridor | Contra Costa County</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
-              Stop Losing Pleasant Hill Leads to Competitors — Full-Service Digital Marketing for Local Businesses
+              AI-Powered Digital Marketing for Service Businesses in Pleasant Hill
             </h1>
             <h2 className="max-w-3xl mx-auto text-xl md:text-2xl text-foreground/90 font-display font-semibold animate-fade-up mt-4 bg-gradient-heading bg-clip-text text-transparent" style={{ animationDelay: "0.05s" }}>
               Sitting at the heart of the 680 corridor, Pleasant Hill's affluent homeowner base, BART-connected professionals, and Diablo Valley College population create high-intent demand for local service businesses — with the lowest keyword competition of any city we serve.

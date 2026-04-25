@@ -56,7 +56,7 @@ const PleasantonCA = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
-              Stop Losing Pleasanton Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
+              Stop Losing Pleasanton Leads: Local SEO &amp; Ads
             </h1>
 
             <p className="max-w-3xl mx-auto text-base md:text-lg text-muted-foreground leading-relaxed animate-fade-up mt-6" style={{ animationDelay: "0.1s" }}>
