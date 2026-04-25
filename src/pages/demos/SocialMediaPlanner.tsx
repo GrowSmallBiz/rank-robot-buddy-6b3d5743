@@ -10,7 +10,7 @@ export default function SocialMediaPlannerDemo() {
     <>
       <Head>
         <title>Social Media Automation Demo: Schedule & Manage Posts</title>
-        <meta name="description" content="Plan and schedule weeks of social content in minutes. GrowSmallBiz Social Media Planner keeps your business visible online without the daily grind." />
+        <meta name="description" content="GrowSmallBiz Social Media Planner: Automate your social media and schedule posts in minutes. Grow your online presence with ease. Sign up today!" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/social-media-planner/" />
       </Head>
       <VideoJsonLd

@@ -95,11 +95,7 @@ const CleaningServices = () => {
     <>
       <Head>
         <title>Cleaning Service SEO Case Study: Real Results for Local Businesses</title>
-        <meta name="description" content="See how GrowSmallBiz helped cleaning service businesses grow their client base with AI-powered digital marketing. Real results, real businesses." />
-        <meta
-          name="description"
-          content="Explore documented local SEO case study results for cleaning service businesses. Real proof from Google Business Profile visibility, organic search growth, keyword movement, local pack performance, website clicks, calls, and conversion-focused lead generation strategy."
-        />
+        <meta name="description" content="Cleaning Services SEO Case Study: GrowSmallBiz delivers results. See how we improve rankings and generate leads. Schedule Strategy Call." />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" />
       </Head>
       <ArticleJsonLd

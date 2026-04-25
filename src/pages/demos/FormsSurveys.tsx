@@ -9,7 +9,7 @@ export default function FormsSurveysDemo() {
     <>
       <Head>
         <title>Forms & Surveys for Small Business: Capture Leads & Insights</title>
-        <meta name="description" content="See how GrowSmallBiz Forms & Surveys help you capture leads and collect valuable customer data." />
+        <meta name="description" content="Forms & surveys help you to capture leads and gather customer data. Get qualified leads and start growing your business today! Sign up today!" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/forms-surveys/" />
       </Head>
       <Header />

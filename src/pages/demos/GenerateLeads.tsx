@@ -10,7 +10,7 @@ export default function GenerateLeadsDemo() {
     <>
       <Head>
         <title>Generate Leads, Nurture, Close & Retain for Small Businesses</title>
-        <meta name="description" content="Attract, capture, and nurture leads automatically — so your pipeline stays full even when you're out on the job." />
+        <meta name="description" content="GrowSmallBiz helps small businesses generate leads automatically. Discover smart prospecting tools and fill your pipeline. Sign up today!" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/generate-leads/" />
       </Head>
       <Header />

@@ -158,11 +158,7 @@ const Roofers = () => {
     <>
       <Head>
         <title>Roofing SEO Case Study: Real Results for Contractors | GrowSmallBiz</title>
-        <meta name="description" content="See how GrowSmallBiz helped roofing contractors grow their pipeline with AI-powered digital marketing. Real results, real businesses." />
-        <meta
-          name="description"
-          content="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns. Real proof from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
-        />
+        <meta name="description" content="GrowSmallBiz helps roofing contractors get real AI SEO and AI optimized PPC results. See our case studies for real growth. Call us today!" />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" />
       </Head>
       <ArticleJsonLd

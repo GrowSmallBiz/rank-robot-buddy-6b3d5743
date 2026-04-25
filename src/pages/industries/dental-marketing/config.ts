@@ -15,7 +15,7 @@ import portfolioDentalWebsite from "@/assets/portfolio-dental-website.webp";
 export const dentalConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Dental Marketing for Dental Practices | GrowSmallBiz",
-  metaDescription: "GrowSmallBiz helps dental practices attract new patients with AI-powered SEO, Google Ads, reputation management, and 24/7 AI Receptionist. Full-service digital marketing built for dentists.",
+  metaDescription: "Attract new patients: AI-powered marketing for US dentists. Get AI SEO, AI Optimized Google Ads, and 24/7 AI Marketing Automation. Contact us.",
   canonicalUrl: "/health-and-wellness-practices/marketing-for-dentists/",
   serviceName: "Dental Marketing Services",
   serviceType: "Digital Marketing for Dental Practices",

@@ -22,7 +22,7 @@ const DublinCA = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Digital Marketing Services in Dublin, CA | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz is Dublin's Tri-Valley digital marketing agency for local service businesses. Local SEO, Google Ads, AI automation, reputation management. Get your free strategy session." />
+        <meta name="description" content="Dublin, CA digital marketing services by GrowSmallBiz: Grow your business with AI SEO, AI optimized paid ads, and AI marketing automation." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/dublin-ca/" />
       </Head>
       <LocationJsonLd

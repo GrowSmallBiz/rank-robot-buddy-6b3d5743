@@ -105,7 +105,7 @@ const FacebookAds = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Facebook Ads Management for Local Businesses | GrowSmallBiz</title>
-        <meta name="description" content="Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics." />
+        <meta name="description" content="Facebook & Instagram Ads that generate leads for local service businesses. Expert targeting & conversion strategies. Schedule strategy call." />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/facebook-ads/" />
 
         {/* Open Graph */}

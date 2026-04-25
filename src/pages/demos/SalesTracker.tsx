@@ -11,7 +11,7 @@ export default function SalesTrackerDemo() {
     <>
       <Head>
         <title>Sales Tracker Demo for Small Businesses | GrowSmallBiz</title>
-        <meta name="description" content="Know exactly which deals are ready to close, which need a follow-up, and where revenue is leaking — all in one visual pipeline." />
+        <meta name="description" content="Sales Tracker for complete pipeline visibility. Deals are ready to close, need a follow-up, or where revenue is leaking — all in one visual. Sign up today!" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-tracker/" />
       </Head>
       <VideoJsonLd

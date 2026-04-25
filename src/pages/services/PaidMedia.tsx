@@ -341,7 +341,7 @@ const PaidMedia = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Paid Advertising for Local Businesses | GrowSmallBiz</title>
-        <meta name="description" content="Stop paying for clicks. Start generating qualified leads with full-funnel paid ad systems for local service businesses. Google Ads, LSA, Meta Ads, retargeting, and conversion tracking." />
+        <meta name="description" content="Generate leads with AI-powered paid ads for local businesses. GrowSmallBiz manages Google, Meta Ads, and conversion tracking. Contact us now." />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/" />
       </Head>
       <ServiceJsonLd

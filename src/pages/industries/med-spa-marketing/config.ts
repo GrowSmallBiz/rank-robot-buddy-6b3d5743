@@ -15,7 +15,7 @@ import portfolioMedSpaWebsite from "@/assets/portfolio-medspa-website.webp";
 export const medSpaConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Med Spa Marketing: AI-Powered Client Acquisition | GrowSmallBiz",
-  metaDescription: "GrowSmallBiz helps med spas attract high-value aesthetic clients with AI-powered SEO, Google Ads, Instagram strategy, and 24/7 AI Receptionist. Full-service digital marketing built for medical spas.",
+  metaDescription: "AI-powered marketing for med spas. Attract clients with SEO, AI Optimized Google Ads, Meta ads and 24/7 AI Marketing Automation. Contact us.",
   canonicalUrl: "/health-and-wellness-practices/marketing-for-med-spas/",
   serviceName: "Med Spa Marketing Services",
   serviceType: "Digital Marketing for Medical Spas",

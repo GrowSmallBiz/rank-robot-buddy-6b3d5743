@@ -248,7 +248,7 @@ const HealthAndWellness = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Marketing for Health & Wellness Practices | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz helps dental practices, chiropractors, and med spas attract more patients with AI-powered local SEO, Google Ads, and reputation management. Schedule a free strategy call." />
+        <meta name="description" content="Attract more patients with GrowSmallBiz AI-powered marketing for dental, chiropractic, and med spa practices. Serving nationwide. Contact us." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/" />
       </Head>
       <ServiceJsonLd

@@ -241,7 +241,7 @@ const OnPageSEO = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>On-Page SEO Services for Local Businesses | GrowSmallBiz</title>
-        <meta name="description" content="Managed on-page SEO execution for local service businesses. GrowSmallBiz optimizes title tags, headings, content, internal links, and page structure to improve rankings and conversions." />
+        <meta name="description" content="GrowSmallBiz provides on-page SEO services, optimizing your website for higher rankings and conversions. Start with your free SEO audit today!" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/on-page-seo/" />
       </Head>
 

@@ -38,7 +38,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Head>
         <title>Contact Us | GrowSmallBiz Digital Marketing</title>
-        <meta name="description" content="Get in touch with GrowSmallBiz for a free consultation. Let us help your local service business grow with AI-powered marketing and SEO strategies." />
+        <meta name="description" content="GrowSmallBiz helps local businesses grow with AI-powered marketing. Get a free consultation and boost your SEO. Schedule strategy call!" />
         <link rel="canonical" href="https://growsmallbiz.io/contact/" />
       </Head>
       <PageJsonLd
