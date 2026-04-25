@@ -102,7 +102,7 @@ export default function MembershipsDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-2xl md:text-4xl font-black text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
-                  Flexible Offers
+                  Unlimited Flexible Membership Offers & Courses
                 </h2>
                 <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
                   Build what you need without limits

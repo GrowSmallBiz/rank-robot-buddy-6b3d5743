@@ -50,7 +50,7 @@ export default function UniversalInboxDemo() {
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-2xl md:text-3xl font-black text-foreground text-center mb-8 bg-gradient-heading bg-clip-text text-transparent">
-              No more going to multiple websites or checking multiple devices just to get your messages
+              Centralize All Customer Messages Across Multiple Channels in a Single Inbox
             </h2>
             <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto leading-relaxed mb-12">
               Communicate with your customers and prospects from one inbox, regardless if they are communicating via Email, Phone, SMS, Facebook Messenger, Facebook or Instagram Comments, Google Business, and Instagram DM. You never have to leave your inbox. Pick up the conversation seamlessly right inside the contact record with one centralized inbox. This brings all forms of communication into one spot.

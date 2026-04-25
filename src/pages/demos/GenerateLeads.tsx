@@ -33,7 +33,7 @@ export default function GenerateLeadsDemo() {
         <section className="py-10" style={{ backgroundColor: "hsl(var(--background))" }}>
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
-              See It In Action
+              Watch Our Smart Prospecting Demo for Real-Time Lead Generation
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Watch how the lead generation engine finds and captures prospects in real time.

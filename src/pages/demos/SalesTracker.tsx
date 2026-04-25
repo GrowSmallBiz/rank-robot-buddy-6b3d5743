@@ -94,7 +94,7 @@ export default function SalesTrackerDemo() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-2xl md:text-3xl font-black text-foreground mb-6 bg-gradient-heading bg-clip-text text-transparent">
-                  Multiple Pipelines
+                  Customize Your Sales Pipeline to Fit Any Sales Cycle
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Create pipelines for any or all products/services you offer and even additional pipelines for internal operations to help your team stay organized.

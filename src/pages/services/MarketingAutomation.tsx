@@ -824,7 +824,7 @@ const MarketingAutomation = () => {
             <div className="flex flex-col items-center text-center mb-12">
               <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
-                See How It Works
+                See How Our AI Powered CRM & Marketing Automation Streamlines Your Sales
               </h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl">
                 Watch a quick overview of how GrowSmallBiz helps local service businesses attract more leads and grow faster.
