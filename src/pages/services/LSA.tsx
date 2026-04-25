@@ -110,7 +110,7 @@ const LSA = () => {
         <div className="absolute inset-0">
           <img
             src={lsaHeroImage}
-            alt="Google Local Service Ads at the top of search delivering verified leads"
+            alt="Smartphone screen displaying Google Local Service Ads with verified badges and star ratings for service businesses, emphasizing lead generation and visibility."
             width={1920}
             height={1080}
             fetchPriority="high"

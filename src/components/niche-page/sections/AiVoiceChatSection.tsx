@@ -139,7 +139,7 @@ export const AiVoiceChatSection = ({ config }: AiVoiceChatSectionProps) => {
                 <div>
                   <img
                     src={config.aiReceptionistImage}
-                    alt="AI Receptionist handling multiple simultaneous calls"
+                    alt={config.aiReceptionistImageAlt ?? "AI Receptionist handling multiple simultaneous calls"}
                     className="rounded-xl border border-border w-full"
                     loading="lazy"
                     width={1024}
@@ -198,7 +198,7 @@ export const AiVoiceChatSection = ({ config }: AiVoiceChatSectionProps) => {
                 <div>
                   <img
                     src={config.aiChatImage}
-                    alt="Website live AI chat capturing leads 24/7"
+                    alt={config.aiChatImageAlt ?? "Website live AI chat capturing leads 24/7"}
                     className="rounded-xl border border-border w-full"
                     loading="lazy"
                     width={1024}

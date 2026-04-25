@@ -54,6 +54,7 @@ export const paintingCompaniesConfig: NicheConfig = {
   // 4.2  HERO SECTION
   // ══════════════════════════════════════════════════════════════════════
   heroImage: heroImage,
+  heroImageAlt: "Painting contractors working on a residential home, using ladders and spray equipment, showcasing professional painting services for enhanced property appearance.",
   badgeIcon: Paintbrush,
   badgeText: "Painting Companies Marketing",
   h1Line1: "The Marketing Agency That Fills Your Painting Schedule",
@@ -339,6 +340,7 @@ export const paintingCompaniesConfig: NicheConfig = {
   websiteDesignHighlight: "Into Calls and Quote Requests",
   websiteDesignSubheadline: "Most painting company websites look outdated, load slowly on mobile, and fail to convert the homeowner who found you on Google. We build fast, mobile-first websites that turn search traffic into booked bids.",
   websiteDesignImage: websiteScreenshot,
+  websiteDesignImageAlt: "Laptop and smartphone displaying a website for a painting contractor, featuring images of homes, a prominent \"Get Free Estimates\" button, and branding for GrowSmallBiz, focused on marketing solutions for painting companies.",
   websiteDesignFeatureHeadline: "Websites That Work as Hard as Your Crew",
   websiteDesignFeatureBody: "A conversion-focused website for a painting contractor must accomplish three specific things: load in under 3 seconds on mobile, make it effortless for a homeowner to call or request a quote, and signal enough credibility that a first-time visitor trusts you before picking up the phone. According to BrightLocal's 2026 Local Consumer Review Survey, 97% of consumers read reviews before making a hiring decision — and 31% now ignore any business with a rating below 4.5 stars. A painting company website that integrates Google and Yelp reviews prominently, displays before-and-after project photos, and loads fast on mobile converts research intent into quote requests. GrowSmallBiz builds sites that accomplish all three from day one.",
   websiteDesignBullets: [
@@ -804,6 +806,7 @@ export const paintingCompaniesConfig: NicheConfig = {
   ],
   aiReceptionistHighlightText: "Painting leads convert to the first or second contractor who responds — not necessarily the best painter or the lowest price. When a homeowner calls at 9 PM to get a quote on their exterior repaint, your competitor's voicemail gets the call. Your AI Receptionist answers within seconds, qualifies the job, captures the contact details, and sends a confirmation SMS. That bid is yours before they call anyone else.",
   aiReceptionistImage: aiReceptionistMulticall,
+  aiReceptionistImageAlt: "Smartphone displaying \"Lead Captured\" notification with painter in background, emphasizing AI lead capture for painting contractors.",
   aiVoiceFeatureBullets: [
     "Answers every call 24/7 — evening quote requests, weekend commercial inquiries, and busy-season overflow calls",
     "Qualifies the lead by service type (interior painting, exterior painting, commercial, cabinet painting) and project timeline",
@@ -815,6 +818,7 @@ export const paintingCompaniesConfig: NicheConfig = {
     "Sends lead summary to your team via SMS and email within 60 seconds of every inquiry",
   ],
   aiChatImage: aiWebsiteLivechat,
+  aiChatImageAlt: "Professional painting contractor using a paint roller on a website showcasing painting services, with a smartphone displaying chat features for customer inquiries.",
   aiChatFeatureBullets: [
     "Answers service questions, pricing queries, and availability requests instantly — 24/7, no staffing required",
     "Qualifies website visitors by service interest, location, and project timeline before routing to your team",

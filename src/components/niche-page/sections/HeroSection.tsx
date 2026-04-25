@@ -15,7 +15,7 @@ export const HeroSection = ({ config, strategySessionUrl }: HeroSectionProps) =>
       <div className="absolute inset-0">
         <img
           src={config.heroImage}
-          alt={config.h1Line1}
+          alt={config.heroImageAlt ?? config.h1Line1}
           width={1920} height={1080}
           className="w-full h-full object-cover"
         />

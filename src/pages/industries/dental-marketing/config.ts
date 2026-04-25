@@ -39,6 +39,7 @@ export const dentalConfig: NicheConfig = {
 
   // ── Hero ──
   heroImage: dentalHeroImage,
+  heroImageAlt: "Dentist consulting with patient in modern dental office, discussing treatment options and patient care, emphasizing dental marketing services by GrowSmallBiz.",
   badgeText: "Dental Practice Marketing & Growth System",
   badgeIcon: Stethoscope,
   h1Line1: "Dental Marketing",
@@ -143,6 +144,7 @@ export const dentalConfig: NicheConfig = {
   websiteDesignHighlight: "Visitors Into Booked Appointments",
   websiteDesignSubheadline: "Fast, patient-friendly dental websites built to generate new patient inquiries and showcase your full range of services.",
   websiteDesignImage: portfolioDentalWebsite,
+  websiteDesignImageAlt: "Dental website design featuring a smiling dentist on a computer screen and appointment booking interface on a smartphone, showcasing GrowSmallBiz's digital marketing services for dental practices.",
   websiteDesignFeatureHeadline: "Dental Websites Built to Win the New Patient Decision",
   websiteDesignFeatureBody: "A patient researching a new dentist visits your website with a simple question: can I trust this practice? We build dental websites that answer that question immediately — with professional imagery, clear service pages for every treatment, patient reviews front and center, and an easy path to book an appointment from any device.",
   websiteDesignBullets: [

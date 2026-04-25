@@ -39,6 +39,7 @@ export const chiropracticConfig: NicheConfig = {
 
   // ── Hero (Prompt 2) ──
   heroImage: chiroHeroImage,
+  heroImageAlt: "Chiropractor performing treatment on patient in clinic, emphasizing patient care and chiropractic services.",
   badgeText: "Chiropractic Practice Marketing & Growth System",
   badgeIcon: Activity,
   h1Line1: "Chiropractic Marketing That Builds a Practice Full of",
@@ -143,6 +144,7 @@ export const chiropracticConfig: NicheConfig = {
   websiteDesignHighlight: "Visitors Into Booked Appointments",
   websiteDesignSubheadline: "Fast, patient-friendly chiropractic websites built to generate new patient inquiries and showcase your full range of conditions and care plans.",
   websiteDesignImage: portfolioChiroWebsite,
+  websiteDesignImageAlt: "Chiropractic website interface on a computer screen, featuring a male figure with visible back muscles, emphasizing chiropractic services and patient engagement.",
   websiteDesignFeatureHeadline: "Chiropractic Websites Built to Win the New Patient Decision",
   websiteDesignFeatureBody: "A patient researching a chiropractor visits your website with a simple question: can I trust this practice with my pain? We build chiropractic websites that answer that question immediately — with professional imagery, condition-specific pages for every patient type, patient reviews front and center, and an easy path to book an appointment from any device.",
   websiteDesignBullets: [

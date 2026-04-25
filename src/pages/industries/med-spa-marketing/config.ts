@@ -38,6 +38,7 @@ export const medSpaConfig: NicheConfig = {
 
   // ── Hero (Prompt 2) ──
   heroImage: medSpaHeroImage,
+  heroImageAlt: "Woman receiving a skincare treatment in a med spa, with a technician using advanced equipment, highlighting AI-powered beauty solutions for client acquisition.",
   badgeText: "Medical Spa Marketing & Growth System",
   badgeIcon: Sparkles,
   h1Line1: "Med Spa Marketing That Attracts",
@@ -145,6 +146,7 @@ export const medSpaConfig: NicheConfig = {
   websiteDesignHighlight: "Visitors Into Booked Appointments",
   websiteDesignSubheadline: "Fast, visually stunning med spa websites built to generate new client inquiries and showcase your full treatment menu with the trust signals aesthetic clients demand.",
   websiteDesignImage: portfolioMedSpaWebsite,
+  websiteDesignImageAlt: "Computer display showcasing a vibrant med spa website with AI-powered marketing solutions, featuring a woman with a headwrap, promotional text for microneedling services, and a call-to-action button.",
   websiteDesignFeatureHeadline: "Med Spa Websites Built to Win the New Client Decision",
   websiteDesignFeatureBody: "A prospective client researching a med spa visits your website with a simple question: can I trust this practice with my appearance? We build med spa websites that answer that question immediately — with professional before/after galleries, treatment-specific pages, injector credentials front and center, and a seamless path to book from any device.",
   websiteDesignBullets: [
