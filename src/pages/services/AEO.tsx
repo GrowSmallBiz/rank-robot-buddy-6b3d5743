@@ -272,7 +272,7 @@ const AEO = () => {
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">The Shift You Cannot Ignore</p>
                 <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                  What Is Answer Engine Optimization ?
+                  What Is Answer Engine Optimization?
                 </h2>
               </div>
 
