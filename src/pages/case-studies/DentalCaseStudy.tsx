@@ -105,8 +105,8 @@ const DentalCaseStudy = () => {
               <span className="inline-flex items-center gap-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6">
                 <MousePointerClick className="w-4 h-4" /><GoogleColoredText /> PPC Case Studies
               </span>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                <GoogleColoredText /> Ads <span className="text-transparent bg-clip-text bg-gradient-primary">Case Studies</span>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                Google Ads Case Studies
               </h2>
               <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
                 This section highlights paid search campaign performance for a dental practice, with a focus on lead generation efficiency, cost-per-acquisition, conversion volume, and year-over-year improvement.
