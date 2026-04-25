@@ -85,7 +85,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
         {/* ═══ HERO ═══ */}
         <ServiceHero
           badge={{ icon: MousePointerClick, text: "Case Studies / Google PPC" }}
-          title="How Google Ads Filled the Calendars of HVAC, Plumbing & Electrical Contractors Businesses"
+          title="Google Ads Case Study: HVAC, Plumbing & Electrical Lead Generation"
           subtitle="Explore documented Google PPC case study results for HVAC, plumbing, and electrical businesses. This page showcases real proof from paid search performance, lead generation, conversion efficiency, and cost-effective growth through Google Ads."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}
