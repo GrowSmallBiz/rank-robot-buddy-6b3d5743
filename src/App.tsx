@@ -1,5 +1,4 @@
 /* republish */ import { lazy as reactLazy, Suspense } from "react";
-import { HelmetProvider } from "react-helmet-async";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
@@ -10,18 +9,22 @@ import Redirect from "@/components/Redirect";
 const Toaster = reactLazy(() => import("@/components/ui/toaster").then(m => ({ default: m.Toaster })));
 const Sonner = reactLazy(() => import("@/components/ui/sonner").then(m => ({ default: m.Toaster })));
 
+// NOTE: Do NOT wrap this layout in <HelmetProvider>. vite-react-ssg installs its
+// own HelmetProvider at the SSG root and uses its context to extract per-page
+// <Head> output for static HTML injection. Adding a nested HelmetProvider here
+// would shadow that context, leaving every pre-rendered page without a
+// <title>, meta description, canonical, or OG tags.
 const AppLayout = () => (
-  <HelmetProvider>
-    <TooltipProvider>
-      <ScrollToTop />
-      <Suspense fallback={null}>
-        <Toaster />
-        <Sonner />
-      </Suspense>
-      <Outlet />
-    </TooltipProvider>
-  </HelmetProvider>
+  <TooltipProvider>
+    <ScrollToTop />
+    <Suspense fallback={null}>
+      <Toaster />
+      <Sonner />
+    </Suspense>
+    <Outlet />
+  </TooltipProvider>
 );
+
 
 const lazy = (importFn: () => Promise<{ default: React.ComponentType }>) =>
   async () => {

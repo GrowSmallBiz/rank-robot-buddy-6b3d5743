@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Per-page title, meta description, canonical, OG/Twitter, and JSON-LD are injected here at build time by vite-react-ssg, sourced from each route's <Head> component (react-helmet-async). Do NOT add static title/description/canonical here. -->
     <!-- Google Tag Manager - deferred to not block rendering -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -22,7 +23,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
-    <!-- Title and description managed by Head component per route -->
     <meta name="robots" content="index, follow" />
     <meta name="author" content="GrowSmallBiz Digital Marketing" />
 
@@ -160,12 +160,8 @@
       "url": "https://growsmallbiz.io/about/"
     }
     </script>
-    <meta property="og:title" content="AI-Powered Growth System for Local Service Businesses | GrowSmallBiz">
-  <meta name="twitter:title" content="AI-Powered Growth System for Local Service Businesses | GrowSmallBiz">
-  <meta property="og:description" content="AI-powered digital growth for local businesses through websites, SEO, paid ads, reputation management, and lead automation.">
-  <meta name="twitter:description" content="AI-powered digital growth for local businesses through websites, SEO, paid ads, reputation management, and lead automation.">
 
-
+    <!-- Note: per-page og:title, og:description, twitter:title, twitter:description are injected via %LINKS% above from each route's <Head> component. Do not hardcode them here. -->
 
     <!-- Juhi AI Concierge Chatbot - deferred until after user interaction to avoid forced reflow -->
     <script>
