@@ -44,7 +44,7 @@ function getPriority(route) {
 const serviceAliases = ['/service', '/services/paid-ads', '/website-design', '/seo-agency', '/seo-agency/aeo', '/seo-agency/geo', '/seo-agency/local-seo', '/seo-agency/authority-building', '/seo-agency/link-building', '/seo-agency/technical-seo', '/seo-agency/on-page-seo'];
 
 // Also filter out test/draft pages that should not be indexed
-const excludedPages = ['/professional-services/marketing-for-realtors-v2', '/privacy-policy', '/terms-of-service'];
+const excludedPages = ['/privacy-policy', '/terms-of-service'];
 
 const filteredRoutes = uniqueRoutes.filter(r =>
   !serviceAliases.includes(r) && !excludedPages.includes(r)

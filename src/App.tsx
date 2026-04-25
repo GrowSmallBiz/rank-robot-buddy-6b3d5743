@@ -110,7 +110,6 @@ export const routes: RouteRecord[] = [
       { path: "professional-services", lazy: lazy(() => import("./pages/industries/ProfessionalServices")) },
       
       { path: "professional-services/marketing-for-realtors", lazy: lazy(() => import("./pages/industries/RealtorMarketing")) },
-      { path: "professional-services/marketing-for-realtors-v2", lazy: lazy(() => import("./pages/industries/RealtorMarketingV2")) },
       { path: "professional-services/marketing-for-photographers", lazy: lazy(() => import("./pages/industries/photographers-marketing/index")) },
 
       // ── NEW case study routes ──
