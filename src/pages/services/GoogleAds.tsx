@@ -243,7 +243,7 @@ const GoogleAds = () => {
     <div className="min-h-screen bg-background">
       {/* PROMPT 10 — Meta tags (Path B: Lovable codebase) */}
       <Head>
-        <title>Google Ads Management for Small Businesses | GrowSmallBiz</title>
+        <title>Google Ads Management for Local Businesses | GrowSmallBiz</title>
         <meta
           name="description"
           content="Google Ads for HVAC, dental, med spa, roofing, and landscape businesses. Precision-targeted PPC with conversion tracking, transparent reporting, and a performance guarantee. Free strategy session."

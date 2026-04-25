@@ -10,7 +10,7 @@ export default function CrmDemo() {
   return (
     <>
       <Head>
-        <title>CRM Demo for Small Businesses | GrowSmallBiz</title>
+        <title>CRM for Small Businesses: Manage Customers & Marketing | GrowSmallBiz</title>
         <meta name="description" content="Never let a lead slip through the cracks. GrowSmallBiz CRM tracks every customer, prospect, and job from first contact to closed deal." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/crm/" />
       </Head>

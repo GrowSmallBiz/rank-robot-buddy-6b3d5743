@@ -104,7 +104,7 @@ const FacebookAds = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Facebook & Instagram Ads Management for Small Businesses | GrowSmallBiz</title>
+        <title>Facebook Ads Management for Local Businesses | GrowSmallBiz</title>
         <meta name="description" content="Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics." />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/facebook-ads/" />
 

@@ -9,7 +9,7 @@ export default function CalendarSchedulingDemo() {
   return (
     <>
       <Head>
-        <title>Calendar Scheduling Demo for Small Businesses | GrowSmallBiz</title>
+        <title>Calendar Scheduling for Small Business | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Calendar Scheduling automates appointment booking and reduces no-shows." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/calendar-scheduling/" />
       </Head>
