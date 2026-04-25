@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { baseContactCTA } from "@/config/contactCTA";
 import leakyBucket from "@/assets/facebook-ads/leaky-bucket.jpg";
+import connectedBucket from "@/assets/facebook-ads/connected-bucket.jpg";
 
 
 // Lazy-load below-the-fold sections to improve FCP
@@ -268,30 +269,30 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Leaky Bucket Visual — illustrates the lead-loss problem */}
-          <div className="max-w-md mx-auto mb-12 animate-fade-up">
-            <div className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_60px_rgba(255,127,80,0.15)]">
-              <img
-                src={leakyBucket}
-                alt="Leaky bucket illustrating local businesses losing leads through gaps in their marketing"
-                width={800}
-                height={800}
-                loading="lazy"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent pointer-events-none" />
-            </div>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
             {/* Fragmented Approach */}
-            <div className="bg-background/80 border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.3)]">
+            <div className="bg-background/80 border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.3)] flex flex-col">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center">
                   <XCircle className="w-6 h-6 text-destructive" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-foreground">The Fragmented Approach</h3>
               </div>
+              <figure className="mb-6">
+                <div className="relative rounded-xl overflow-hidden border border-destructive/20 bg-background/40">
+                  <img
+                    src={leakyBucket}
+                    alt="Leaky bucket illustrating local businesses losing leads through gaps in their marketing"
+                    width={800}
+                    height={800}
+                    loading="lazy"
+                    className="w-full h-56 object-cover"
+                  />
+                </div>
+                <figcaption className="text-xs text-muted-foreground italic text-center mt-2">
+                  Leads slip through the cracks of disconnected tools.
+                </figcaption>
+              </figure>
               <ul className="space-y-4">
                 {[
                   "Separate tools and platforms that do not work together.",
@@ -309,7 +310,7 @@ const Index = () => {
             </div>
 
             {/* Connected Growth System */}
-            <div className="bg-background/80 border-2 border-primary/30 rounded-2xl p-8 relative animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]" style={{ animationDelay: "0.1s" }}>
+            <div className="bg-background/80 border-2 border-primary/30 rounded-2xl p-8 relative animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] flex flex-col" style={{ animationDelay: "0.1s" }}>
               <div className="absolute -top-4 left-8 px-4 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">
                 Our Solution
               </div>
@@ -319,6 +320,21 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-display font-bold text-foreground">A Connected Growth System</h3>
               </div>
+              <figure className="mb-6">
+                <div className="relative rounded-xl overflow-hidden border border-primary/20 bg-background/40 shadow-[0_0_40px_rgba(255,127,80,0.15)]">
+                  <img
+                    src={connectedBucket}
+                    alt="Sealed bucket overflowing with leads, illustrating a connected growth system that captures every opportunity"
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
+                    className="w-full h-56 object-cover"
+                  />
+                </div>
+                <figcaption className="text-xs text-muted-foreground italic text-center mt-2">
+                  One connected system captures every lead and overflows with growth.
+                </figcaption>
+              </figure>
               <ul className="space-y-4">
                 {[
                   "Website, SEO, ads, reviews, and follow-up all support one conversion path.",
