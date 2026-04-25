@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
       <main id="main-content" className="pt-20">
         <div className="container mx-auto px-4 pt-16 pb-8 max-w-4xl">
           <h1 className="text-4xl font-bold font-display text-foreground mb-8 bg-gradient-heading bg-clip-text text-transparent">
-  Privacy Policy
+  GrowSmallBiz Privacy Policy: How We Collect, Use & Protect Data
 </h1>
           
           <div className="prose prose-lg dark:prose-invert max-w-none space-y-6 text-muted-foreground">

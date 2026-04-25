@@ -286,7 +286,7 @@ const TechnicalSEO = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up leading-tight text-transparent bg-clip-text bg-gradient-heading">
-  Technical SEO That Removes Every Barrier Between You and Page One — 3 Months
+  AI-Powered Technical SEO to Remove Every Barrier to Page One
 </h1>
 
               <p

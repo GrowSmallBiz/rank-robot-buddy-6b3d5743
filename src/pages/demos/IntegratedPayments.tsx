@@ -28,7 +28,7 @@ export default function IntegratedPaymentsDemo() {
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
-  Stop Chasing Payments — Invoicing, Billing, and Collection All in One Place
+  Streamline Small Business Payments: Invoicing, Billing & Collection
 </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">Streamline Client Invoicing &amp; Collect Payments Anywhere</p>
             <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_hsl(var(--ghl-card-border)/0.3)] border-2 border-[hsl(var(--ghl-card-border))] mb-8">

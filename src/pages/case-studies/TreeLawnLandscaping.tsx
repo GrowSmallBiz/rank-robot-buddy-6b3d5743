@@ -151,7 +151,7 @@ const TreeLawnLandscaping = () => {
         {/* ═══ SECTION 1: HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO + Google PPC" }}
-          title="Real Results for Tree Care, Lawn Care & Landscaping Companies — Not Projections Businesses"
+          title="GrowSmallBiz Case Study: SEO & PPC Results for Landscaping Businesses"
           subtitle="Explore documented case study results for tree care, lawn care, and landscaping businesses across Local SEO and Google PPC campaigns. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, paid search performance, calls, conversions, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

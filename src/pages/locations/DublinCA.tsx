@@ -55,7 +55,7 @@ const DublinCA = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-3 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
-              Stop Losing Dublin Leads to Competitors — Full-Service Digital Marketing Built for Local Service Businesses
+              Dominate Dublin Leads with GrowSmallBiz Digital Marketing
             </h1>
 
             <p

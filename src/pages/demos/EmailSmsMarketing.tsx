@@ -28,7 +28,7 @@ export default function EmailSmsMarketingDemo() {
         <section className="py-10 md:py-14" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
-  Turn Cold Leads Into Paying Customers With Automated Email and SMS Campaigns
+  Automated Email & SMS Campaigns to Convert Cold Leads to Customers
 </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">95% of Text Messages Are Read in the 1st Five Minutes</p>
             <div className="w-full rounded-2xl overflow-hidden shadow-[0_0_30px_hsl(var(--ghl-card-border)/0.3)] border-2 border-[hsl(var(--ghl-card-border))] mb-8">

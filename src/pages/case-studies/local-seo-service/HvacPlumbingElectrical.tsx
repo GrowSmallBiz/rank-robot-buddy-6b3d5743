@@ -121,7 +121,7 @@ const LocalSEOHvacPlumbingElectrical = () => {
         {/* ═══ HERO ═══ */}
         <ServiceHero
           badge={{ icon: Search, text: "Case Studies / Local SEO" }}
-          title="How Local SEO Helped HVAC, Plumbing & Electrical Contractors Own Local Search Businesses"
+          title="How Local SEO Transformed HVAC, Plumbing & Electrical Contractors"
           subtitle="Explore documented Local SEO case study results for HVAC, plumbing, and electrical businesses. This page showcases real proof drawn from Google Business Profile visibility, organic search growth, keyword movement, calls, and conversion-focused lead generation strategy."
           primaryCTA={{ label: "Schedule Strategy Call", href: strategySessionUrl }}
           secondaryCTA={{ label: "Request a Website & SEO Audit", href: freeAuditUrl }}

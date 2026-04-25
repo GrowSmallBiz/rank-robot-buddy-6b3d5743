@@ -29,7 +29,7 @@ export default function WebchatDemo() {
           <div className="container mx-auto px-4 max-w-5xl text-center">
             <p className="text-primary font-semibold uppercase tracking-widest mb-4">WEBCHAT</p>
             <h1 className="text-3xl md:text-5xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
-              Engage Website Visitors Instantly With Live Chat And AI-Powered Chatbot Responses
+              Instantly Capture Leads with Live Chat & AI Chatbots
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               Convert website visitors into leads with live chat and AI-powered chatbots. Engage visitors immediately and capture their contact information before they leave.
