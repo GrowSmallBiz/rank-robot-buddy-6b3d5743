@@ -9,7 +9,7 @@ export default function WebsiteBuilderDemo() {
   return (
     <>
       <Head>
-        <title>Website Builder Demo for Small Businesses | GrowSmallBiz</title>
+        <title>Website Builder Demo for Small Businesses: Build a Website Without Code</title>
         <meta name="description" content="Build a fast, professional website that captures leads — no developer needed. GrowSmallBiz Website Builder is designed for local service businesses." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/website-builder/" />
       </Head>

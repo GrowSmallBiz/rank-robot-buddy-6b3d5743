@@ -22,7 +22,7 @@ const LivermoreCA = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing Agency in Livermore, CA | GrowSmallBiz</title>
+        <title>Digital Marketing Services in Livermore, CA | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps Livermore local service businesses generate more leads with AI-powered SEO, Google Ads, reputation management, and marketing automation. Serving the Tri-Valley and beyond." />
         <meta
           name="description"

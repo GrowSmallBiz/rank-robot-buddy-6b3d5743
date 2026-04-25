@@ -10,7 +10,7 @@ export default function IntegratedPaymentsDemo() {
   return (
     <>
       <Head>
-        <title>Integrated Payments Demo for Small Businesses | GrowSmallBiz</title>
+        <title>Integrated Payments for Small Business: Get Paid Faster</title>
         <meta name="description" content="See how GrowSmallBiz Integrated Payments streamlines billing, invoicing, and payment collection." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/integrated-payments/" />
       </Head>

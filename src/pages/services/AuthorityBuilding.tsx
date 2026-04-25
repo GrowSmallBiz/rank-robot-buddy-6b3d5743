@@ -162,7 +162,7 @@ const AuthorityBuilding = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Authority Building for Local Service Businesses | GrowSmallBiz</title>
+        <title>Authority Building for Local Businesses: Enhance Your SEO!</title>
         <meta name="description" content="GrowSmallBiz builds search authority for local service businesses through DKN planning, topical maps, authority blogs, press releases, brand mentions, and digital trust signals." />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/authority-building/" />
       </Head>

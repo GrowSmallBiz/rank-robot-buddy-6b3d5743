@@ -10,7 +10,7 @@ export default function EmailSmsMarketingDemo() {
   return (
     <>
       <Head>
-        <title>Email & SMS Marketing Demo for Small Businesses | GrowSmallBiz</title>
+        <title>Email & SMS Marketing for Small Businesses | GrowSmallBiz</title>
         <meta name="description" content="See how GrowSmallBiz Email & SMS Marketing helps you engage leads with automated campaigns." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/email-sms-marketing/" />
       </Head>

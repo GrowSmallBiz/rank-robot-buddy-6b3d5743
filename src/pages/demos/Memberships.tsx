@@ -8,7 +8,7 @@ export default function MembershipsDemo() {
   return (
     <>
       <Head>
-        <title>Memberships & Courses Demo for Small Businesses | GrowSmallBiz</title>
+        <title>GrowSmallBiz Memberships & Courses: Create & Sell Online Courses</title>
         <meta name="description" content="Launch a course or membership program that generates recurring revenue. Build it once and let GrowSmallBiz handle the delivery." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/memberships/" />
       </Head>

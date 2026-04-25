@@ -28,7 +28,7 @@ const ProfessionalServices = () => {
   return (
     <>
       <Head>
-        <title>Professional Services Marketing | GrowSmallBiz</title>
+        <title>AI Powered Professional Services Marketing | GrowSmallBiz</title>
         <meta name="description" content="Digital marketing for realtors, photographers, and professional service providers. Generate more leads, book more clients, and grow your business." />
         <link rel="canonical" href="https://growsmallbiz.io/professional-services/" />
       </Head>

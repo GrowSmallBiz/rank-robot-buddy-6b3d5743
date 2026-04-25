@@ -337,7 +337,7 @@ const HomeServices = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Home Service Contractor Marketing Agency | GrowSmallBiz</title>
+        <title>AI Powered Marketing for Home Service Contractors | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz builds digital marketing systems for home service contractors — local SEO, Google Ads, AI automation, and reputation management. More booked jobs. Lower cost per lead. Serving contractors across the United States." />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/" />
       </Head>

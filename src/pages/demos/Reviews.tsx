@@ -10,7 +10,7 @@ export default function ReviewsDemo() {
   return (
     <>
       <Head>
-        <title>Reviews Demo for Small Businesses | GrowSmallBiz</title>
+        <title>Marketing Automation for Reviews: Enhance Your Online Reputation</title>
         <meta name="description" content="More 5-star reviews mean more calls, more bookings, and a reputation your competitors can't touch. See how GrowSmallBiz automates the entire process." />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/reviews/" />
       </Head>
