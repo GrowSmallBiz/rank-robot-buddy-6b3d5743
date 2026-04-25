@@ -268,6 +268,21 @@ const Index = () => {
             </p>
           </div>
 
+          {/* Leaky Bucket Visual — illustrates the lead-loss problem */}
+          <div className="max-w-md mx-auto mb-12 animate-fade-up">
+            <div className="relative rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_60px_rgba(255,127,80,0.15)]">
+              <img
+                src={leakyBucket}
+                alt="Leaky bucket illustrating local businesses losing leads through gaps in their marketing"
+                width={800}
+                height={800}
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent pointer-events-none" />
+            </div>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Fragmented Approach */}
             <div className="bg-background/80 border border-ghl-icon rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.3)]">
