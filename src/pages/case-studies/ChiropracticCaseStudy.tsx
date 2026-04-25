@@ -89,7 +89,7 @@ const ChiropracticCaseStudy = () => {
   return (
     <>
       <Head>
-        <title>Real Results for Chiropractic Practices — Not Projections | GrowSmallBiz Digital Marketing</title>
+        <title>Chiropractic SEO Case Study: Real Results for Local Practices</title>
         <meta name="description" content="Documented AI SEO results for a chiropractic practice — organic traffic growth, keyword rankings, Google Search Console data, and Google Business Profile performance over 5 months." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" />
       </Head>

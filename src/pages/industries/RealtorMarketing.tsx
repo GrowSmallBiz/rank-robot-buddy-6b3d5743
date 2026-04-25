@@ -342,7 +342,7 @@ const RealtorMarketing = () => {
   return (
     <>
       <Head>
-        <title>Real Estate Marketing Solutions | GrowSmallBiz</title>
+        <title>Real Estate Marketing Solutions for Realtors | GrowSmallBiz</title>
         <meta name="description" content="Grow your real estate business with IDX-integrated websites, AI-powered CRM, automated follow-ups, and lead generation tools. Built for realtors and brokers." />
         <link rel="canonical" href="https://growsmallbiz.io/professional-services/marketing-for-realtors/" />
       </Head>

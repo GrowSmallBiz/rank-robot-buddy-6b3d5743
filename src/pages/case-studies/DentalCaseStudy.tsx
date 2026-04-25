@@ -58,7 +58,7 @@ const DentalCaseStudy = () => {
   return (
     <>
       <Head>
-        <title>Real Results for Dental Practices — Not Projections | GrowSmallBiz Digital Marketing</title>
+        <title>Dental SEO Case Study: Real Results for Practices | GrowSmallBiz</title>
         <meta name="description" content="Documented Google Ads results for a dental practice — conversions, cost-per-acquisition, conversion rate, and CTR improvements year-over-year." />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" />
       </Head>

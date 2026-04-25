@@ -21,7 +21,7 @@ const TracyCA = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing Agency in Tracy, CA | GrowSmallBiz</title>
+        <title>Digital Marketing Services in Tracy, CA | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps Tracy local service businesses rank higher and generate more leads with local SEO, Google Ads, website design, and AI-powered marketing automation." />
         <meta
           name="description"

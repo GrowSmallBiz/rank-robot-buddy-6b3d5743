@@ -64,7 +64,7 @@ const GoogleAdsHvacPlumbingElectrical = () => {
   return (
     <>
       <Head>
-        <title>How Google Ads Filled the Calendars of HVAC, Plumbing & Electrical Contractors Businesses | GrowSmallBiz</title>
+        <title>HVAC Google Ads Case Study: How We Increased Leads & Revenue</title>
         <meta name="description" content="See how GrowSmallBiz used Google Ads to help HVAC, plumbing, and electrical contractors generate more calls and booked jobs." />
         <meta
           name="description"

@@ -131,7 +131,7 @@ const TreeLawnLandscaping = () => {
   return (
     <>
       <Head>
-        <title>Real Results for Tree Care, Lawn Care & Landscaping Companies — Not Projections Businesses | GrowSmallBiz</title>
+        <title>Landscaping SEO Case Study: Real Results for Local Businesses</title>
         <meta name="description" content="See how GrowSmallBiz helped tree care, lawn care, and landscaping companies book more recurring clients with AI-powered digital marketing." />
         <meta
           name="description"

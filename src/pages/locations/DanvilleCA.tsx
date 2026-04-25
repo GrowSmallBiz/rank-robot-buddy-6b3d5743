@@ -21,7 +21,7 @@ const DanvilleCA = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing Agency in Danville, CA | GrowSmallBiz</title>
+        <title>Digital Marketing Services n Danville, CA | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz is Danville's hometown digital marketing agency. Local SEO, Google Ads, website design, and AI automation for contractors, dentists, med spas, and realtors in Danville, Blackhawk, and Alamo." />
         <meta
           name="description"

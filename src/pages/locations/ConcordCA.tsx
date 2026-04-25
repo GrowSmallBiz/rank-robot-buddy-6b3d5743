@@ -21,7 +21,7 @@ const ConcordCA = () => {
   return (
     <div className="min-h-screen bg-background">
       <Head>
-        <title>Digital Marketing Agency in Concord, CA | GrowSmallBiz</title>
+        <title>Digital Marketing Services in Concord, CA | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps Concord, CA local service businesses grow with website design, local SEO, paid ads, marketing automation, and AI-assisted lead conversion systems." />
         <link rel="canonical" href="https://growsmallbiz.io/locations/concord-ca/" />
       </Head>
