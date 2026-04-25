@@ -260,7 +260,7 @@ const LocalSEO = () => {
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE FUNDAMENTALS</p>
                 <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                  Why Local SEO Still Drives Some of the Highest-Intent Opportunities for Local Service Businesses
+                  Why Local SEO Generates Highest-Intent Leads for Local Service Businesses
                 </h2>
               </div>
 

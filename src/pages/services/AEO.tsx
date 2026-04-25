@@ -493,7 +493,7 @@ const AEO = () => {
             <div className="text-center mb-16 animate-fade-up">
               <p className="section-subtitle">Why GrowSmallBiz</p>
               <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                Built for Local Service Businesses. Designed to Improve Visibility Where Buying Decisions Start.
+                Local Service Businesses: Gain Visibility Where Buying Decisions Begin
               </h2>
               <p className="section-description mt-4">GrowSmallBiz does not treat AEO as a disconnected tactic. We treat it as one part of a broader managed SEO system built to help local service businesses earn trust, visibility, and qualified inquiries across modern search environments.</p>
             </div>

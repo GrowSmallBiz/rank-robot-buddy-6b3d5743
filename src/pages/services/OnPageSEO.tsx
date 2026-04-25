@@ -291,7 +291,7 @@ const OnPageSEO = () => {
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">WHY IT MATTERS</p>
                 <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
-                  Having a Website Is Not the Same as Having Pages That Rank, Get Understood, and Convert
+                  Why On-Page SEO Is Essential for Ranking and Converting Your Local Service Business Leads
                 </h2>
               </div>
 

@@ -548,7 +548,7 @@ const ManagedAISEO = () => {
             <div className="text-center mb-12">
               <p className="text-primary font-medium mb-2">THE AI ADVANTAGE</p>
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 text-foreground bg-gradient-heading bg-clip-text text-transparent">
-                Why AI-Powered SEO Outperforms Traditional Manual SEO for Local Service Businesses
+                Why AI-Powered SEO Outperforms Manual SEO for Local Service Businesses
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
                 Manual SEO is slow to implement, difficult to scale, and typically concentrated in one or two areas while the rest goes unaddressed. For local service businesses in competitive markets, that incomplete coverage is a direct liability.

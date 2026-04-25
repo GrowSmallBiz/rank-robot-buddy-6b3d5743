@@ -438,7 +438,7 @@ const TechnicalSEO = () => {
               <div className="text-center mb-16 animate-fade-up">
                 <p className="section-subtitle">THE EXECUTION</p>
                 <h2 className="section-title text-transparent bg-clip-text bg-gradient-heading">
-  How GrowSmallBiz Executes Technical SEO Faster With Agentic AI Playbooks
+  How GrowSmallBiz Accelerates Technical SEO with Agentic AI Playbooks
 </h2>
                 <p className="text-lg text-foreground font-semibold mt-6">
                   Agentic AI Playbooks. Faster Detection. Smarter Prioritization. Human-Guided Execution.
