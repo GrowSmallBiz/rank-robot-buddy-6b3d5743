@@ -327,6 +327,7 @@ export interface NicheConfig {
 
   // ── 4.2 Hero Section ──
   heroImage: string;
+  heroImageAlt?: string;
   badgeText: string;
   badgeIcon: LucideIcon;
   h1Line1: string;
@@ -364,6 +365,7 @@ export interface NicheConfig {
   websiteDesignHighlight: string;
   websiteDesignSubheadline: string;
   websiteDesignImage: string;
+  websiteDesignImageAlt?: string;
   websiteDesignFeatureHeadline: string;
   websiteDesignFeatureBody: string;
   websiteDesignBullets: string[];
@@ -442,8 +444,10 @@ export interface NicheConfig {
   aiReceptionistComparison?: { human: string; ai: string }[];
   aiReceptionistHighlightText?: string;
   aiReceptionistImage?: string;
+  aiReceptionistImageAlt?: string;
   aiVoiceFeatureBullets?: string[];
   aiChatImage?: string;
+  aiChatImageAlt?: string;
   aiChatFeatureBullets?: string[];
 
   // ── 4.15 Why Choose Us ──
