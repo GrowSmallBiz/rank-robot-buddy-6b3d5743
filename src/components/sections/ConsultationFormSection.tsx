@@ -54,7 +54,7 @@ export const ConsultationFormSection = ({
             <div className="text-center mb-8">
               <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
-                Get a Consultation
+                {headingOverride ?? "Get a Consultation"}
               </h2>
               <p className="text-white/80 text-lg">
                 Tell us a little about your business and what kind of growth support you need. We will review your inquiry and follow up with the next best step.
