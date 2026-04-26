@@ -91,11 +91,7 @@ export const RelatedQuestionsSection = ({
             contains every Q&A for AI/search crawlers. Toggle visibility
             via CSS only — do NOT conditionally mount.
           */}
-          <div
-            id={panelId}
-            hidden={!open}
-            className={cn("mt-4", !open && "sr-only")}
-          >
+          <div id={panelId} hidden={!open} className="mt-4">
             <Accordion type="single" collapsible className="space-y-3">
               {items.map((item, index) => (
                 <AccordionItem
