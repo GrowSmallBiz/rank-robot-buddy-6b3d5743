@@ -191,6 +191,7 @@ const LocalSEO = () => {
         <meta name="description" content="Local SEO: GrowSmallBiz helps local businesses get found. Improve your Google ranking and attract more customers today! Get Free SEO Audit." />
         <meta name="keywords" content="local SEO, local search optimization, Google Business Profile, local visibility, SEO strategies, citation building, service business marketing, local landing pages" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/local-seo/" />
+        <meta property="og:title" content="Grow Locally with AI Local SEO Expert | GrowSmallBiz" />
       </Head>
 
       <ServiceJsonLd

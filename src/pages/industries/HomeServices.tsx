@@ -341,6 +341,7 @@ const HomeServices = () => {
         <meta name="description" content="GrowSmallBiz: Digital marketing for home service contractors. Get more leads with local SEO and AI Optimized Google Ads. Serving the US." />
         <meta name="keywords" content="home service marketing, local SEO for contractors, Google Ads management, reputation management services, lead generation strategies, digital marketing for home services, AI automation in marketing, contractor marketing solutions" />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/" />
+        <meta property="og:title" content="AI-Driven Growth for Local Service Businesses | GrowSmallBiz" />
       </Head>
       <ServiceJsonLd
         serviceName="Home Service Contractor Marketing Agency"

@@ -185,6 +185,7 @@ const LinkBuilding = () => {
         <meta name="description" content="GrowSmallBiz provides premium link building services from relevant sites for local businesses. Strongest signals Google uses to rank pages." />
         <meta name="keywords" content="link building, local SEO, SEO services, high-quality backlinks, digital marketing agency, authority building, personalized outreach, SEO strategy" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/link-building/" />
+        <meta property="og:title" content="SEO Link Building For Service Business Growth | GrowSmallBiz" />
       </Head>
 
       <ServiceJsonLd

@@ -135,6 +135,7 @@ const TreeLawnLandscaping = () => {
         <meta name="description" content="GrowSmallBiz delivers results for landscaping companies with SEO and PPC. See our case study and get more clients. Schedule Strategy Call." />
         <meta name="keywords" content="landscaping SEO, digital marketing for landscapers, AI-powered marketing, local service business marketing, SEO case study, online visibility for landscapers, paid ads management, GrowSmallBiz services" />
         <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/" />
+        <meta property="og:title" content="Boost Local Business Growth with AI-Powered Marketing" />
       </Head>
       <ArticleJsonLd
         headline="Real Results for Tree Care, Lawn Care & Landscaping Companies — Not Projections"

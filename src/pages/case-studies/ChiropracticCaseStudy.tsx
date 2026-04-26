@@ -93,6 +93,7 @@ const ChiropracticCaseStudy = () => {
         <meta name="description" content="Chiropractic AI SEO Case Study: GrowSmallBiz increased organic traffic & rankings for a chiropractic practice. See the results!" />
         <meta name="keywords" content="chiropractic SEO, digital marketing for chiropractors, SEO case study, local service marketing, GrowSmallBiz, AI-powered marketing solutions, organic traffic growth, Google Business Profile optimization" />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" />
+        <meta property="og:title" content="Boost Local Business Growth with AI-Driven SEO Solutions" />
       </Head>
       <ArticleJsonLd
         headline="Real Results for Chiropractic Practices — Not Projections"

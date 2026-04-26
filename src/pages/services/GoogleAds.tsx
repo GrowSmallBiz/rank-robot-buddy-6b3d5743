@@ -250,7 +250,7 @@ const GoogleAds = () => {
         <meta name="keywords" content="Google Ads management, local service advertising, pay-per-click marketing, targeted ad campaigns, advertising optimization, conversion tracking, small business marketing, lead generation strategies" />
         <link rel="canonical" href="https://growsmallbiz.io/services/paid-advertising/google-ads/" />
         {/* Open Graph */}
-        <meta property="og:title" content="Google Ads Management for Small Businesses — GrowSmallBiz" />
+        <meta property="og:title" content="AI-Optimized Google Ads For Small Businesses  | GrowSmallBiz" />
         <meta
           property="og:description"
           content="Local service businesses running Google Ads that actually generate leads. Transparent reporting, performance guarantee, and proven case studies across dental, med spa, HVAC, roofing, and landscaping."

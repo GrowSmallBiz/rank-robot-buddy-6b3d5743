@@ -313,6 +313,8 @@ export interface StickyCtaConfig {
 export interface NicheConfig {
   // ── 4.1 Page Meta ──
   pageTitle: string;
+  /** Optional Open Graph title override. Falls back to pageTitle when omitted. */
+  ogTitle?: string;
   metaDescription: string;
   metaKeywords?: string;
   canonicalUrl: string;

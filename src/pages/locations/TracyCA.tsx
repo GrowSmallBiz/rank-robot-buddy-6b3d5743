@@ -25,6 +25,7 @@ const TracyCA = () => {
         <meta name="description" content="Digital Marketing in Tracy, CA: Grow your business with AI Local SEO, AI optimized Google Ads, and 24x7 AI marketing automation." />
         <meta name="keywords" content="digital marketing Tracy, local SEO Tracy, Google Ads management, reputation management Tracy, AI marketing automation, lead generation services, small business marketing, integrated marketing solutions" />
         <link rel="canonical" href="https://growsmallbiz.io/locations/tracy-ca/" />
+        <meta property="og:title" content="AI-Powered Growth Solutions for Local Service Businesses" />
       </Head>
       <LocationJsonLd
         cityName="Tracy"

@@ -15,6 +15,7 @@ import portfolioChiroWebsite from "@/assets/chiropractic/portfolio-chiro-website
 export const chiropracticConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Chiropractor Marketing: AI SEO, Ads & Growth | GrowSmallBiz",
+  ogTitle: "AI-Driven Growth for Chiropractic Clinics | GrowSmallBiz",
   metaDescription: "Attract new patients with AI-powered marketing for chiropractors. Get AI powered Website, Local SEO, Google Ads, and AI receptionist. Contact us.",
   metaKeywords: "chiropractor marketing, patient acquisition strategies, digital marketing for chiropractors, AI-powered SEO, automated marketing solutions, chiropractic practice growth, Google Ads for chiropractors, online presence for chiropractors",
   canonicalUrl: "/health-and-wellness-practices/marketing-for-chiropractors/",

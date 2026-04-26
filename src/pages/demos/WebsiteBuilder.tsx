@@ -13,6 +13,7 @@ export default function WebsiteBuilderDemo() {
         <meta name="description" content="GrowSmallBiz DIY website builder: Build a fast, mobile-friendly website without coding for small businesses. Sign up today!" />
         <meta name="keywords" content="website builder, small business website, drag-and-drop website builder, mobile-friendly website, marketing automation, user-friendly website tools, no coding website creation, secure website solutions" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/website-builder/" />
+        <meta property="og:title" content="DIY Website Builder For Small Businesses  | GrowSmallBiz" />
       </Head>
       <VideoJsonLd
         name="Website Builder Demo"

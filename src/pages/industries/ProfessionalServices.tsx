@@ -32,6 +32,7 @@ const ProfessionalServices = () => {
         <meta name="description" content="Digital marketing for professional services. Generate more leads and grow your business with AI SEO, paid ads and marketing automation. Contact us!" />
         <meta name="keywords" content="digital marketing, professional services marketing, lead generation, local SEO, marketing for realtors, marketing for photographers, online presence, GrowSmallBiz" />
         <link rel="canonical" href="https://growsmallbiz.io/professional-services/" />
+        <meta property="og:title" content="AI-Driven Growth Solutions for Local Service Businesses" />
       </Head>
       <PageJsonLd
         pageType="WebPage"
