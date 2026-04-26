@@ -12,6 +12,7 @@ export default function MembershipsDemo() {
         <meta name="description" content="Launch a course or membership program that generates recurring revenue. Build it once and let GrowSmallBiz handle the delivery." />
         <meta name="keywords" content="online courses, membership sites, digital marketing solutions, GrowSmallBiz memberships, create memberships, manage online courses, benefits of memberships, course creation tools" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/memberships/" />
+        <meta property="og:title" content="Boost Local Business Growth with AI | GrowSmallBiz" />
       </Head>
       <Header />
       <main id="main-content" className="pt-20">

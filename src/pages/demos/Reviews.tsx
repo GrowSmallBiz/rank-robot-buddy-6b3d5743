@@ -14,6 +14,7 @@ export default function ReviewsDemo() {
         <meta name="description" content="Enhance your online reputation with automated review management. Get more 5-star reviews and attract more customers. Sign up today!" />
         <meta name="keywords" content="online reviews, review management, reputation management, marketing automation, customer feedback, AI review responses, local business visibility, automated review requests" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/reviews/" />
+        <meta property="og:title" content="Automates sending Review Requests & Replies | GrowSmallBiz" />
       </Head>
       <VideoJsonLd
         name="Reviews Management Demo"

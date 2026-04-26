@@ -13,6 +13,7 @@ export default function CalendarSchedulingDemo() {
         <meta name="description" content="Calendar Scheduling automates bookings & reduces no-shows by sending automated meeting reminders. Increase revenue, save time. Sign up today!" />
         <meta name="keywords" content="marketing automation, calendar scheduling, appointment booking, small business solutions, scheduling software, reduce no-shows, team calendar management, streamline appointments" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/calendar-scheduling/" />
+        <meta property="og:title" content="Automates Bookings & reduces No-Shows | GrowSmallBiz" />
       </Head>
       <VideoJsonLd
         name="Calendar Scheduling Demo"
