@@ -196,6 +196,8 @@ const ManagedAISEO = () => {
         hasFaqPage
       />
 
+      <FaqJsonLd items={faqs} pageUrl="https://growsmallbiz.io/services/seo-agency/" />
+
       <ImageObjectJsonLd
         pageUrl="/services/seo-agency/"
         images={[
