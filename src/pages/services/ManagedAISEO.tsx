@@ -3,6 +3,8 @@ import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
 import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { seoAgencyHubFaqItems } from "@/data/faq/seo-agency-hub";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -165,20 +167,7 @@ const whyGSBItems = [
   { icon: Shield, title: "Engagement Built on Performance", description: "We earn your business every month. The engagement begins with a 3-month commitment to build a proper foundation, then continues month-to-month — because the relationship should be built on performance and trust, not obligation." },
 ];
 
-const faqs = [
-  { question: "What is Managed AI SEO?", answer: "Managed AI SEO is a fully managed SEO service in which GrowSmallBiz handles your entire program — strategy, implementation, content, technical maintenance, local optimization, authority building, and reporting — using AI-assisted tools and workflows. You do not manage vendors, learn SEO tools, or supervise execution. We own it." },
-  { question: "How is this different from traditional SEO?", answer: "Traditional SEO is typically project-based, manual, and focused on a narrow set of tactics. Managed AI SEO is continuous, AI-assisted, and comprehensive — covering all eight pillars simultaneously. The AI layer surfaces and acts on opportunities faster. The managed layer means you have a team running the system, not a consultant sending monthly recommendations." },
-  { question: "How long does it take to see results?", answer: "SEO is a long-term channel. Most local service businesses see measurable movement in rankings and local visibility within three to six months, with more substantial results building from six to twelve months onward. The timeline depends on your starting point, competitive landscape, and scope of work. We set realistic expectations from day one." },
-  { question: "What is the commitment structure?", answer: "The engagement begins with a 3-month initial commitment. This ensures enough time to complete the foundational audit, build the strategy, and execute the early implementation work that produces lasting results. After the initial 3 months, the engagement continues on a month-to-month basis. Additional details about engagement options are discussed on the strategy call." },
-  { question: "Do I need to be involved day-to-day?", answer: "No — that is the point of a managed service. You are involved in the initial onboarding and strategy session, you review your monthly performance summary, and you make decisions about your business direction. The SEO program runs without requiring your ongoing attention." },
-  { question: "Can you work with my existing website?", answer: "In most cases, yes. We begin with a thorough audit and work within your current platform where possible. If we identify structural or technical limitations that significantly constrain SEO performance, we will flag them clearly and discuss options. A full rebuild is not a prerequisite for getting started." },
-  { question: "How do you report results?", answer: "Each month you receive a performance summary covering keyword rankings, local visibility, traffic trends, the specific work completed, and strategic recommendations for the upcoming period. Reports are written to be understood by a business owner, not an SEO analyst." },
-  { question: "Does SEO work with paid advertising?", answer: "Yes — and they work better together. Paid ads deliver immediate visibility while SEO builds sustained organic presence. Over time, strong organic rankings reduce dependence on paid traffic and lower your overall cost per lead." },
-  { question: "What makes your approach different from a standard SEO agency?", answer: "Three things: specialization, completeness, and integration. We specialize exclusively in local service businesses. We manage all eight pillars of SEO simultaneously. And the program is integrated with your broader marketing channels through the Digital Dominance Method — so everything works together rather than in silos." },
-  { question: "How much does Managed AI SEO cost?", answer: "Managed AI SEO pricing is a flat monthly fee based on two factors: the number of Google Business Profiles we optimize (single-location vs multi-location) and the number of services within the campaign. We do not publish tiered pricing on the website because every business has a different competitive landscape, service mix, and starting baseline. Pricing is presented during a discovery call after we understand your market, current SEO standing, and growth goals — so the scope is defined and the quote matches the work. There are no long-term contracts. The engagement starts with a 3-month foundation commitment, then continues month-to-month." },
-  { question: "Do I need a Google Business Profile to work with GrowSmallBiz?", answer: "Yes — a claimed and verified Google Business Profile is foundational. For local service businesses, 60%+ of conversions come through GBP, not the website. If you do not have a GBP or it is not verified, that is the first thing we fix during onboarding. If you have a GBP that is claimed but underoptimized (missing categories, incomplete services, no photos, no posts, inconsistent NAP), that is also standard onboarding work. Businesses without a physical location can use a service-area business (SAB) profile — we work with both." },
-  { question: "Will AI search like ChatGPT and Google AI Overviews replace traditional SEO?", answer: "No — they are additive, not replacement. Traditional SEO (ranking pages in Google's blue-link results) still drives the largest share of qualified local traffic. What is changing is that ChatGPT, Perplexity, Gemini, and Google AI Overviews are now surfacing answers before a user even clicks a link. Businesses that are structured for AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) get cited in those AI answers. Businesses that are not, get skipped. Managed AI SEO covers all three — traditional SEO, AEO, and GEO — as one integrated system." },
-];
+const faqs = seoAgencyHubFaqItems;
 
 const ManagedAISEO = () => {
   const { buildUrl } = useUtm();
@@ -698,8 +687,7 @@ const ManagedAISEO = () => {
         <FAQSection
           title="Frequently Asked Questions"
           faqs={faqs}
-          schemaType="FAQPage"
-          schemaId="https://growsmallbiz.io/services/seo-agency/#faqpage"
+          disableSchema
           contactCTA={{
             ...baseContactCTA,
             title: "Have questions about Managed AI SEO?",
