@@ -28,6 +28,7 @@ import adCreativeHeadshotPro from "@/assets/ad-creative-headshot-professional.we
 export const photographersConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Photography Marketing & SEO Services | GrowSmallBiz",
+  ogTitle: "AI-Driven Growth for Local Service Businesses",
   metaDescription: "GrowSmallBiz: Photography marketing solutions. Website design, AI SEO, and paid ads to fill your photography bookings. Schedule Strategy Session!",
   metaKeywords: "photography marketing, photographer SEO, website design for photographers, client engagement strategies, marketing solutions for photographers, paid advertising for photography, CRM for photographers, booking automation",
   canonicalUrl: "/professional-services/marketing-for-photographers/",

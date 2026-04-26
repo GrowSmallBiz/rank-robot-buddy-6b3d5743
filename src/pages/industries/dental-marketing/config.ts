@@ -15,6 +15,7 @@ import portfolioDentalWebsite from "@/assets/portfolio-dental-website.webp";
 export const dentalConfig: NicheConfig = {
   // ── Page Meta ──
   pageTitle: "Dental Marketing for Dental Practices | GrowSmallBiz",
+  ogTitle: "AI-Driven Growth Solutions for Local Service Businesses",
   metaDescription: "Attract new patients: AI-powered marketing for US dentists. Get AI SEO, AI Optimized Google Ads, and 24/7 AI Marketing Automation. Contact us.",
   metaKeywords: "dental marketing, dental SEO, patient acquisition, AI-driven marketing, reputation management, Google Ads for dentists, dental practice visibility, online marketing strategies",
   canonicalUrl: "/health-and-wellness-practices/marketing-for-dentists/",

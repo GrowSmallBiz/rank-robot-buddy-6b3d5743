@@ -31,6 +31,7 @@ export const hvacConfig: NicheConfig = {
   // PAGE META
   // ══════════════════════════════════════════════════════════════════════
   pageTitle: "AI Powered Marketing for HVAC Contractors | GrowSmallBiz",
+  ogTitle: "AI-Driven Growth for Local Service Businesses | GrowSmallBiz",
   metaDescription: "HVAC marketing: Get more calls and book jobs with AI SEO, Google ads and 24x7 AI powered marketing that converts visitors into booked jobs.",
   metaKeywords: "HVAC marketing, digital marketing for HVAC, lead generation for HVAC contractors, SEO for HVAC businesses, Google Ads HVAC, automated marketing solutions, HVAC online presence, marketing strategies for HVAC",
   canonicalUrl: "/home-service-contractors/marketing-for-hvac-contractors/",
