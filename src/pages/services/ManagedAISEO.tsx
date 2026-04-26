@@ -8,6 +8,9 @@ import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { RelatedQuestionsSection } from "@/components/sections/RelatedQuestionsSection";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { relatedFaqs as seoAgencyRelatedFaqs } from "@/data/faq/seo-agency-related";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
@@ -700,12 +703,21 @@ const ManagedAISEO = () => {
           faqs={faqs}
           schemaType="FAQPage"
           schemaId="https://growsmallbiz.io/services/seo-agency/#faqpage"
+          suppressSchema
           contactCTA={{
             ...baseContactCTA,
             title: "Have questions about Managed AI SEO?",
             description: "We're here to help. Let's talk about how a managed SEO program fits your business.",
             tagline: "Let's build your search presence together.",
           }}
+        />
+
+        {/* Related Questions — closed-by-default accordion. Combined FAQPage schema below. */}
+        <RelatedQuestionsSection items={seoAgencyRelatedFaqs} />
+
+        <FaqJsonLd
+          items={[...faqs, ...seoAgencyRelatedFaqs]}
+          pageUrl="https://growsmallbiz.io/services/seo-agency/"
         />
 
         {/* SECTION 11 — FINAL CTA */}

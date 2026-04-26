@@ -12,6 +12,9 @@ import connectedBucket from "@/assets/facebook-ads/connected-bucket.jpg";
 // Lazy-load below-the-fold sections to improve FCP
 
 const FAQSection = lazy(() => import("@/components/sections/FAQSection").then(m => ({ default: m.FAQSection })));
+const RelatedQuestionsSection = lazy(() => import("@/components/sections/RelatedQuestionsSection").then(m => ({ default: m.RelatedQuestionsSection })));
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { relatedFaqs as homepageRelatedFaqs } from "@/data/faq/home-related";
 const AnimatedStatsSection = lazy(() => import("@/components/sections/AnimatedStatsSection").then(m => ({ default: m.AnimatedStatsSection })));
 
 const CardCTA = lazy(() => import("@/components/services").then(m => ({ default: m.CardCTA })));
@@ -503,12 +506,21 @@ const Index = () => {
           title="Frequently Asked Questions"
           subtitle="Answers to common questions local service business owners ask before getting started."
           faqs={homepageFAQs}
+          suppressSchema
           contactCTA={{
             ...baseContactCTA,
             title: "Have more questions?",
             description: "We're here to help. Reach out to us for a personalized consultation.",
             tagline: "Let's grow your business together.",
           }}
+        />
+
+        {/* Related Questions — closed-by-default accordion. Schema below covers both sets. */}
+        <RelatedQuestionsSection items={homepageRelatedFaqs} />
+
+        <FaqJsonLd
+          items={[...homepageFAQs, ...homepageRelatedFaqs]}
+          pageUrl="https://growsmallbiz.io/"
         />
 
         {/* Final CTA Strip */}

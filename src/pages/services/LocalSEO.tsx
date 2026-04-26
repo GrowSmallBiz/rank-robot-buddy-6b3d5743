@@ -10,6 +10,9 @@ import { ServiceHero } from "@/components/services/ServiceHero";
 import localSeoHeroBg from "@/assets/local-seo-hero-bg.webp";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { RelatedQuestionsSection } from "@/components/sections/RelatedQuestionsSection";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { relatedFaqs as localSeoRelatedFaqs } from "@/data/faq/local-seo-related";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import { Button } from "@/components/ui/button";
@@ -538,12 +541,21 @@ const LocalSEO = () => {
           title="Frequently Asked Questions"
           faqs={faqs}
           schemaType="FAQPage"
+          suppressSchema
           contactCTA={{
             ...baseContactCTA,
             title: "Have questions about Local SEO?",
             description: "We're here to help you understand how Local SEO fits your business.",
             tagline: "Let's build your local search visibility together.",
           }}
+        />
+
+        {/* Related Questions — closed-by-default accordion. Combined FAQPage schema below. */}
+        <RelatedQuestionsSection items={localSeoRelatedFaqs} />
+
+        <FaqJsonLd
+          items={[...faqs, ...localSeoRelatedFaqs]}
+          pageUrl="https://growsmallbiz.io/services/seo-agency/local-seo/"
         />
 
         {/* SECTION 9 — FINAL CTA */}

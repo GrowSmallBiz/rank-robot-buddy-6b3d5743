@@ -42,6 +42,13 @@ interface FAQSectionProps {
   contactCTA?: ContactCTA;
   /** Optional stable @id URI for the FAQPage entity (e.g. for entity-graph cross-referencing). */
   schemaId?: string;
+  /**
+   * When true, the built-in FAQPage JSON-LD is NOT emitted. Use this when
+   * the host page renders its own combined FAQPage schema via FaqJsonLd
+   * (e.g. visible FAQs + Related Questions in a single mainEntity array)
+   * to prevent duplicate FAQPage schema on the same URL.
+   */
+  suppressSchema?: boolean;
 }
 
 export const FAQSection = ({ 
@@ -51,6 +58,7 @@ export const FAQSection = ({
   schemaType = "FAQPage",
   contactCTA,
   schemaId,
+  suppressSchema = false,
 }: FAQSectionProps) => {
   // Generate FAQ Schema for SEO
   const faqSchema = {
@@ -168,11 +176,13 @@ export const FAQSection = ({
         </div>
       </div>
 
-      {/* JSON-LD Schema for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {/* JSON-LD Schema for SEO (suppressed when host page emits combined FaqJsonLd) */}
+      {!suppressSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
     </section>
   );
 };
