@@ -1,6 +1,7 @@
 import React from "react";
 import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -404,6 +405,9 @@ const PaidMedia = () => {
           ],
         }}
       />
+
+      <SpeakableJsonLd pageUrl="/services/paid-advertising/" />
+
       <Header />
 
       <main id="main-content">

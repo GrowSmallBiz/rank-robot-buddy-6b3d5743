@@ -1,5 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -139,6 +141,29 @@ const FacebookAds = () => {
         pageDescription="Done-for-you Meta Ads management for local service businesses. Audience targeting, Meta Pixel, retargeting, creative, and weekly optimization — built for lead generation, not vanity metrics."
         hasFaqPage={true}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/paid-advertising/facebook-ads/"
+        images={[
+          {
+            url: heroBg,
+            caption: "Facebook & Instagram Ads management for local service businesses",
+            description: "Hero image for GrowSmallBiz's Meta Ads management service — done-for-you Facebook and Instagram lead-generation campaigns built for local service businesses, with audience targeting, creative production, Meta Pixel setup, and weekly optimization.",
+            width: 1920,
+            height: 1080,
+          },
+          {
+            url: leakyBucket,
+            caption: "Leaky bucket diagram showing wasted Meta Ads spend without proper follow-up",
+            description: "Conceptual diagram illustrating how Meta Ads leads are lost when there is no automated follow-up system in place — visualized as a leaky bucket where ad spend pours in but most leads leak out before becoming booked work.",
+            width: 1024,
+            height: 1024,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/paid-advertising/facebook-ads/" />
+
       <Header />
 
       {/* Breadcrumbs — 4-level parity with /services/paid-advertising/ */}

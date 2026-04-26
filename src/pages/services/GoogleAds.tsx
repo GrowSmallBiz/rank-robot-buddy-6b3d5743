@@ -1,5 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -315,6 +317,22 @@ const GoogleAds = () => {
           ],
         }}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/paid-advertising/google-ads/"
+        images={[
+          {
+            url: heroGoogleAdsRoofing,
+            caption: "Google Ads management for local service businesses",
+            description: "Hero image for GrowSmallBiz's Google Ads management service — featuring a roofing contractor as an example local service business that uses Google Ads (Search, LSA, Performance Max) to generate booked jobs and qualified leads.",
+            width: 1376,
+            height: 768,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/paid-advertising/google-ads/" />
+
       <Header />
 
       <main id="main-content">

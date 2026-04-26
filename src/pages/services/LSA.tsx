@@ -1,5 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import lsaHeroImage from "@/assets/lsa-hero-split-screen.jpg";
 import googleVerifiedBadge from "@/assets/google-verified-badge.png";
@@ -103,6 +105,29 @@ const LSA = () => {
         pageDescription="Google Local Service Ads management for HVAC, dental, med spa, home services, and other small service businesses. Pay-per-lead pricing, Google Verified badge, verified leads only. Free strategy call."
         hasFaqPage
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/paid-advertising/local-service-ads/"
+        images={[
+          {
+            url: lsaHeroImage,
+            caption: "Google Local Service Ads management for small service businesses",
+            description: "Split-screen hero image for GrowSmallBiz's Local Service Ads (LSA) management service — pay-per-lead Google ads for HVAC, dental, med spa, plumbing, and other small service businesses, including Google Verified setup and verified-lead-only billing.",
+            width: 1920,
+            height: 1080,
+          },
+          {
+            url: googleVerifiedBadge,
+            caption: "Google Verified badge for Local Service Ads",
+            description: "Official Google Verified / Google Guaranteed badge that appears next to businesses approved for Local Service Ads — a critical trust signal that increases lead conversion and click-through rates for service businesses.",
+            width: 1024,
+            height: 1024,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/paid-advertising/local-service-ads/" />
+
       <Header />
 
       {/* HERO */}
