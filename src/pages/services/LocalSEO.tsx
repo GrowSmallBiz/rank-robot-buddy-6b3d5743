@@ -1,5 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { useUtm } from "@/hooks/use-utm";
 import { CTA_URLS } from "@/lib/utm";
 import { Header } from "@/components/layout/Header";
@@ -202,6 +204,21 @@ const LocalSEO = () => {
           { name: "Local SEO", url: "/services/seo-agency/local-seo/" },
         ]}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/seo-agency/local-seo/"
+        images={[
+          {
+            url: localSeoHeroBg,
+            caption: "Local SEO service for local service businesses",
+            description: "Hero illustration for GrowSmallBiz's Local SEO service — Google Business Profile optimization, citation building, NAP consistency, local landing pages, and map-pack visibility for service businesses.",
+            width: 1920,
+            height: 1080,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/seo-agency/local-seo/" />
 
       <Header />
 

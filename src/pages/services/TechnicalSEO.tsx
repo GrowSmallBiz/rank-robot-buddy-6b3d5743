@@ -1,6 +1,8 @@
 import { Head } from "vite-react-ssg";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Phone } from "lucide-react";
@@ -264,6 +266,21 @@ const TechnicalSEO = () => {
           { name: "Technical SEO", url: "/services/seo-agency/technical-seo/" },
         ]}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/seo-agency/technical-seo/"
+        images={[
+          {
+            url: techSeoHeroBg,
+            caption: "Technical SEO service for local service business websites",
+            description: "Hero illustration for GrowSmallBiz's Technical SEO service — fixing crawlability, indexability, Core Web Vitals, structured data, and site architecture issues that prevent local service business websites from ranking.",
+            width: 1920,
+            height: 1080,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/seo-agency/technical-seo/" />
 
       <Header />
 

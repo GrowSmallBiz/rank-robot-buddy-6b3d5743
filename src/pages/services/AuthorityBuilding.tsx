@@ -1,6 +1,8 @@
 import { Head } from "vite-react-ssg";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -179,6 +181,21 @@ const AuthorityBuilding = () => {
           { name: "Authority Building", url: "/services/seo-agency/authority-building/" },
         ]}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/seo-agency/authority-building/"
+        images={[
+          {
+            url: authorityHeroBg,
+            caption: "Topical Authority Building for local service businesses",
+            description: "Hero illustration for GrowSmallBiz's Authority Building service — building topical depth, expert content clusters, and credible signals that establish a local service business as the expert search engines and AI platforms trust.",
+            width: 1376,
+            height: 768,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/seo-agency/authority-building/" />
 
       <Header />
 

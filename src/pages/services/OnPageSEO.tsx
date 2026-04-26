@@ -1,6 +1,8 @@
 import { Head } from "vite-react-ssg";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -257,6 +259,21 @@ const OnPageSEO = () => {
           { name: "On-Page SEO", url: "/services/seo-agency/on-page-seo/" },
         ]}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/seo-agency/on-page-seo/"
+        images={[
+          {
+            url: geoHeroBg,
+            caption: "On-Page SEO service for local service businesses",
+            description: "Hero illustration for GrowSmallBiz's On-Page SEO service — optimizing titles, meta descriptions, headings, content depth, internal linking, and entity signals so each service page is fully optimized for both Google and AI answer engines.",
+            width: 1920,
+            height: 1080,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/seo-agency/on-page-seo/" />
 
       <Header />
 

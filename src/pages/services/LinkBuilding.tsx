@@ -1,6 +1,8 @@
 import { Head } from "vite-react-ssg";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -196,6 +198,21 @@ const LinkBuilding = () => {
           { name: "Link Building", url: "/services/seo-agency/link-building/" },
         ]}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/seo-agency/link-building/"
+        images={[
+          {
+            url: linkBuildingHeroBg,
+            caption: "Editorial Link Building service for local businesses",
+            description: "Hero illustration for GrowSmallBiz's Link Building service — earning relevant, editorial backlinks from credible publications and niche-aligned sites that strengthen domain authority and local search visibility.",
+            width: 1920,
+            height: 1080,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/seo-agency/link-building/" />
 
       <Header />
 
