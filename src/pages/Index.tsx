@@ -46,6 +46,8 @@ import {
 import { Head } from "vite-react-ssg";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { SiteNavigationJsonLd } from "@/components/seo/SiteNavigationJsonLd";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { homeFaqItems } from "@/data/faq/home";
 
 
 // Stats data for homepage
@@ -100,45 +102,8 @@ const coreServices = [
   },
 ];
 
-// Homepage FAQs
-const homepageFAQs = [
-  {
-    question: "What types of businesses do you work with?",
-    answer: "We work primarily with local service businesses, including home services, healthcare, legal, accounting, and other businesses that rely on visibility, trust, and fast lead follow-up."
-  },
-  {
-    question: "Do I need every service at once?",
-    answer: "No. We focus first on the areas most likely to create impact, then build from there as your growth system matures."
-  },
-  {
-    question: "How soon can we get started?",
-    answer: "We can usually begin with a strategy call and initial review quickly, then prioritize the right next steps based on your goals and current setup."
-  },
-  {
-    question: "How long does it take to see results?",
-    answer: "Timelines vary by service. Paid ads and follow-up improvements can create results faster, while SEO and long-term visibility strategies build over time."
-  },
-  {
-    question: "Is this done-for-you or do I have to manage it myself?",
-    answer: "GrowSmallBiz is designed as a done-for-you service. We handle the strategy, setup, execution, and optimization so you do not have to juggle the marketing systems yourself."
-  },
-  {
-    question: "How do you use AI in the system?",
-    answer: "We use AI-powered systems across the client acquisition process, including search visibility support, follow-up automation, AI lead handling, and faster response workflows."
-  },
-  {
-    question: "Will I be able to see what is working?",
-    answer: "Yes. We provide a clear multi-channel performance dashboard so you can track how your visibility, leads, follow-up, and conversion activity are performing."
-  },
-  {
-    question: "Is marketing performance guaranteed?",
-    answer: "No marketing channel performs perfectly all the time. That is why we track performance closely, recalibrate strategy when needed, and keep improving the system based on real data."
-  },
-  {
-    question: "Do you offer any kind of performance guarantee?",
-    answer: "Yes. If we do not generate leads within a pre-agreed timeframe and scope, we continue working at no additional management fee until results are delivered."
-  },
-];
+// Homepage FAQs — sourced from src/data/faq/home.ts (single source of truth shared with FaqJsonLd)
+const homepageFAQs = homeFaqItems;
 
 // How It Works steps
 const howItWorksSteps = [
@@ -182,6 +147,7 @@ const Index = () => {
         breadcrumbs={[]}
       />
       <SiteNavigationJsonLd />
+      <FaqJsonLd items={homepageFAQs} pageUrl="https://growsmallbiz.io/" />
       <Header />
       <main id="main-content">
       {/* Hero Section */}
@@ -503,6 +469,7 @@ const Index = () => {
           title="Frequently Asked Questions"
           subtitle="Answers to common questions local service business owners ask before getting started."
           faqs={homepageFAQs}
+          disableSchema
           contactCTA={{
             ...baseContactCTA,
             title: "Have more questions?",
