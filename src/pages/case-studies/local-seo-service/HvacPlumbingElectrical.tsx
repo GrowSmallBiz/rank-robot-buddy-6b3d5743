@@ -525,20 +525,21 @@ const LocalSEOHvacPlumbingElectrical = () => {
         <FAQSection
           title="Frequently Asked Questions"
           subtitle="Answers to common questions about how GrowSmallBiz approaches Local SEO strategy for HVAC, plumbing, and electrical businesses."
-          faqs={[
-            { question: "Can GrowSmallBiz create a similar strategy for my HVAC, plumbing, or electrical business?", answer: "Yes. Every business starts from a different baseline, market, service area, level of competition, and budget, so no two campaigns are identical. But the same strategic thinking behind these case studies can be adapted to your business. GrowSmallBiz builds tailored Local SEO strategies around your goals, your market, and the specific opportunities available in your service area.\n\nWe conduct a complimentary audit to determine what could be realistically possible, cost and ROI before we undertake any assignment." },
-            { question: "Can Local SEO really help HVAC, plumbing, and electrical businesses get more calls?", answer: "Yes. Local SEO improves visibility in map results, Google Business Profile, and localized search—helping generate high-intent calls and inquiries." },
-            { question: "How long does it take to see results from Local SEO?", answer: "Local SEO builds momentum over time depending on competition, website quality, and local authority. Most businesses start seeing measurable improvements within 3-6 months." },
-            { question: "What is included in your Local SEO strategy?", answer: "Keyword research, Google Business Profile optimization, citations, onsite optimization, content support, and ongoing performance improvements." },
-            { question: "How much do SEO services cost?", answer: "SEO pricing can vary widely, but the lowest-cost option is rarely the one that produces the best business outcome. The real investment depends on your market, competition, service area, goals, and how much strategy, execution, tracking, and optimization are required to generate profitable growth.\n\nSome providers sell isolated tactics or generic packages. GrowSmallBiz takes a more complete approach by looking at the full picture — visibility, lead quality, conversion path, tracking, and return on investment. That means pricing is based on what your business actually needs to compete and grow, not on a one-size-fits-all template.\n\nWe begin with a complimentary audit to determine what could be realistically possible, the likely cost, and the ROI potential before we recommend any assignment." },
-            { question: "Do you offer a performance guarantee?", answer: "Yes. If GrowSmallBiz does not deliver the agreed-upon performance within the agreed-upon time frame, we will continue working for free until we do. No questions asked." },
-            { question: "Can you review my current marketing performance?", answer: "Yes. You can request a website and SEO audit or book a strategy session to identify improvement opportunities." },
-          ]}
+          faqs={hvacSeoVisibleFaqs}
+          suppressSchema
           contactCTA={createContactCTA({
             title: "Need Better Lead Flow from Search?",
             description: "If your HVAC, plumbing, or electrical business depends on calls, form fills, and high-intent search traffic, GrowSmallBiz can help identify where Local SEO improvements can drive better results.",
             tagline: "Get clarity on your visibility, traffic quality, and conversion performance.",
           })}
+        />
+
+        {/* Related Questions — closed-by-default accordion. Combined FAQPage schema below. */}
+        <RelatedQuestionsSection title="Additional FAQs" items={hvacSeoRelatedFaqs} />
+
+        <FaqJsonLd
+          items={[...hvacSeoVisibleFaqs, ...hvacSeoRelatedFaqs]}
+          pageUrl="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/"
         />
 
         {/* ═══ CONCLUSION SECTION ═══ */}
