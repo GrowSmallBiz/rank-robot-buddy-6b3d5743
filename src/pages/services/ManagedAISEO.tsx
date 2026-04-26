@@ -1,6 +1,8 @@
 import { Head } from "vite-react-ssg";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -204,6 +206,85 @@ const ManagedAISEO = () => {
         pageDescription="The complete Managed AI SEO system for local service businesses. GrowSmallBiz runs your entire SEO program — technical, local, content, AEO, GEO, link building, and reporting — so you can focus on running your business."
         hasFaqPage
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/seo-agency/"
+        images={[
+          {
+            url: managedAiSeoHeroBg,
+            caption: "Managed AI SEO system for local service businesses",
+            description: "Hero illustration for GrowSmallBiz's flagship Managed AI SEO service — a fully managed SEO program combining technical, local, on-page, AEO, GEO, link building, and reporting into a single growth system.",
+            width: 1920,
+            height: 1080,
+          },
+          {
+            url: seoDashboardMetrics,
+            caption: "SEO performance dashboard with traffic and ranking metrics",
+            description: "Screenshot of the GrowSmallBiz SEO reporting dashboard showing organic traffic growth, keyword position changes, local pack visibility, and conversion-tied SEO metrics for a managed client.",
+            width: 1920,
+            height: 992,
+          },
+          {
+            url: pillarTechnicalSeo,
+            caption: "Technical SEO pillar icon",
+            description: "Visual pillar marker representing the Technical SEO component of GrowSmallBiz's Managed AI SEO system — covering crawlability, indexability, Core Web Vitals, and structured data.",
+            width: 512,
+            height: 512,
+          },
+          {
+            url: pillarOnPageSeo,
+            caption: "On-Page SEO pillar icon",
+            description: "Visual pillar marker representing the On-Page SEO component — title, meta, heading, content, and entity optimization for service pages.",
+            width: 512,
+            height: 512,
+          },
+          {
+            url: pillarLocalSeo,
+            caption: "Local SEO pillar icon",
+            description: "Visual pillar marker representing the Local SEO component — Google Business Profile, citations, NAP, and map-pack visibility.",
+            width: 512,
+            height: 512,
+          },
+          {
+            url: pillarTopicalAuthority,
+            caption: "Topical Authority pillar icon",
+            description: "Visual pillar marker representing the Topical Authority component — content clusters and expert depth that establish a service business as the trusted authority in its niche.",
+            width: 512,
+            height: 512,
+          },
+          {
+            url: pillarAeo,
+            caption: "Answer Engine Optimization (AEO) pillar icon",
+            description: "Visual pillar marker representing the AEO component — featured snippet, People Also Ask, and AI answer optimization.",
+            width: 512,
+            height: 512,
+          },
+          {
+            url: pillarGeo,
+            caption: "Generative Engine Optimization (GEO) pillar icon",
+            description: "Visual pillar marker representing the GEO component — making content citable inside ChatGPT, Perplexity, Gemini, and Claude answers.",
+            width: 512,
+            height: 512,
+          },
+          {
+            url: pillarLinkBuilding,
+            caption: "Editorial Link Building pillar icon",
+            description: "Visual pillar marker representing the Link Building component — earning relevant editorial backlinks that strengthen domain authority.",
+            width: 512,
+            height: 512,
+          },
+          {
+            url: pillarReporting,
+            caption: "SEO Reporting pillar icon",
+            description: "Visual pillar marker representing the Reporting component — transparent SEO reporting tied to traffic, rankings, and revenue outcomes.",
+            width: 512,
+            height: 512,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/seo-agency/" />
+
       <Header />
 
       <main id="main-content" className="min-h-screen bg-background pt-20">
