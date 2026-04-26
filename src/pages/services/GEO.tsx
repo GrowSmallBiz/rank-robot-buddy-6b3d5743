@@ -177,6 +177,7 @@ const GEO = () => {
         <meta name="description" content="GrowSmallBiz's GEO services help local businesses become easier for AI systems to identify, understand, and get found in AI search. Contact us today!" />
         <meta name="keywords" content="AI SEO, Generative Engine Optimization, local business visibility, digital marketing agency, local SEO services, AI-driven search, SEO audits, online presence enhancement" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/geo/" />
+        <meta property="og:title" content="Be the answer AI gives your ideal customer | GrowSmallBiz" />
       </Head>
 
       <ServiceJsonLd

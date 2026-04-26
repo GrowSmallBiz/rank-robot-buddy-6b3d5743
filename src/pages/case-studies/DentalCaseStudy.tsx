@@ -62,6 +62,7 @@ const DentalCaseStudy = () => {
         <meta name="description" content="Dental Marketing Case Study: GrowSmallBiz delivers real results for dental practices with AI SEO and Google Ads. Schedule Strategy Session!" />
         <meta name="keywords" content="dental marketing, Google Ads for dentists, dental SEO strategies, dental practice case study, improve dental conversions, cost-per-acquisition dental ads, digital marketing for dentists, AI-powered dental marketing" />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" />
+        <meta property="og:title" content="Boost Conversions with AI-Driven Google Ads for Dentists" />
       </Head>
       <ArticleJsonLd
         headline="Real Results for Dental Practices — Not Projections"

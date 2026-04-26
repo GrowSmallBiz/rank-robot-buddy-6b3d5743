@@ -528,6 +528,7 @@ const MarketingAutomation = () => {
           rel="canonical"
           href="https://growsmallbiz.io/services/marketing-automation-for-small-business/"
         />
+        <meta property="og:title" content="Grow With AI-Powered SMB Marketing Automation | GrowSmallBiz" />
       </Head>
       <ServiceJsonLd
         serviceName="Marketing Automation for Small Business"
