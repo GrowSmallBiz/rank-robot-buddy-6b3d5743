@@ -3,8 +3,6 @@ import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
 import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
-import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
-import { authorityBuildingFaqItems } from "@/data/faq/authority-building";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -115,7 +113,48 @@ const whyGSBItems = [
   },
 ];
 
-const faqs = authorityBuildingFaqItems;
+const faqs = [
+  {
+    question: "What is the difference between Authority Building and link building?",
+    answer: "Link building is one tactic within a broader authority strategy. Authority Building, as GrowSmallBiz defines it, is the full coordinated system — topical coverage, entity clarity, brand presence, press releases, digital PR, brand mentions, and selective link acquisition — that collectively signals expertise and trust to search engines. Focusing only on links while ignoring the other dimensions of authority is one of the most common mistakes in local SEO.",
+  },
+  {
+    question: "How long does it take to see results from Authority Building?",
+    answer: "Authority Building timelines depend on your starting authority, competition, topic depth, existing content ecosystem, and how much supporting trust infrastructure is already in place. Many businesses begin seeing meaningful progress within the first few months, with stronger gains building over time as authority signals, topical coverage, and brand reinforcement compound.",
+  },
+  {
+    question: "Do I need a certain size website or business to benefit from Authority Building?",
+    answer: "No. In fact, businesses with smaller or thinner digital footprints often see the most dramatic improvements, because they are starting from a lower baseline and the incremental impact of each new signal is higher. Our DKN planning process adapts to your current situation and builds a strategy appropriate to where you are starting from.",
+  },
+  {
+    question: "Does Authority Building replace on-page SEO or Local SEO?",
+    answer: "No. Authority Building is one pillar of the broader Managed AI SEO system, and it works best in combination with strong on-page optimization and Local SEO. On-page SEO makes your pages relevant. Local SEO makes your presence visible in local results. Authority Building makes your brand credible and trustworthy across the broader search environment. Each pillar supports the others.",
+  },
+  {
+    question: "What kinds of press release placements does GrowSmallBiz pursue?",
+    answer: "We distribute through premium national press release channels that place your news on high-authority media properties with genuine editorial credibility. For businesses where local visibility is particularly important, we also pursue placement through relevant local and regional channels. Specific outlets are selected based on your industry, geography, and strategic goals.",
+  },
+  {
+    question: "Are the links generated through Authority Building safe and sustainable?",
+    answer: "Yes. Every link we pursue is earned through legitimate methods — press coverage, expert placements, partner and association mentions, and editorial citations. We do not buy links, participate in link schemes, or use tactics that violate search engine guidelines. Our approach is designed to build sustainable authority that holds its value over time.",
+  },
+  {
+    question: "How does the topical authority blog strategy work?",
+    answer: "Our topical authority blog strategy is not a generic content calendar. It is a structured execution of the topical map we build for your business. Every article is selected because it fills a specific gap in your topical coverage, supports a specific cluster in your authority architecture, or addresses a specific question your target audience is asking. Each piece is planned, written, reviewed, and published as part of a coherent strategy — not as isolated blog posts.",
+  },
+  {
+    question: "What is a DKN and why does it matter for Authority Building?",
+    answer: "DKN stands for Domain Knowledge Network — our framework for mapping the full universe of topics, subtopics, entities, questions, and associations relevant to your business and market. Without understanding that full topic territory, it is impossible to know what content to create, what off-site associations to pursue, or where the most impactful authority gaps are. The DKN ensures our strategy is comprehensive and purposeful from day one.",
+  },
+  {
+    question: "Can Authority Building help with AI-generated search results and answer engines?",
+    answer: "Yes. AI-powered search systems draw from sources that have demonstrated genuine expertise, consistent brand presence, and broad topic coverage. The same signals that build authority with traditional search engines — topical depth, entity clarity, trusted brand mentions, press references — also improve your visibility with AI-generated search experiences. As AI plays a larger role in how prospective customers find and evaluate local businesses, Authority Building becomes more important, not less.",
+  },
+  {
+    question: "What does \"done-for-you\" mean in practice?",
+    answer: "It means GrowSmallBiz handles every aspect of the authority-building process — from strategic planning and DKN development through topical mapping, content creation, press release writing and distribution, digital PR outreach, and off-site placement management. You are kept informed through regular reporting, but you do not need to manage the process, coordinate vendors, or make tactical decisions. We handle the execution so you can focus on running your business.",
+  },
+];
 
 const AuthorityBuilding = () => {
   const { buildUrl } = useUtm();
@@ -158,8 +197,6 @@ const AuthorityBuilding = () => {
       />
 
       <SpeakableJsonLd pageUrl="/services/seo-agency/authority-building/" />
-
-      <FaqJsonLd items={faqs} pageUrl="https://growsmallbiz.io/services/seo-agency/authority-building/" />
 
       <Header />
 
@@ -526,7 +563,7 @@ const AuthorityBuilding = () => {
         <FAQSection
           title="Frequently Asked Questions"
           faqs={faqs}
-          disableSchema
+          schemaType="FAQPage"
           contactCTA={{
             ...baseContactCTA,
             title: "Have questions about Authority Building?",

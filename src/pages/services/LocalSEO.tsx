@@ -2,8 +2,6 @@ import { Head } from "vite-react-ssg";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
 import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
 import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
-import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
-import { localSeoFaqItems } from "@/data/faq/local-seo";
 import { useUtm } from "@/hooks/use-utm";
 import { CTA_URLS } from "@/lib/utm";
 import { Header } from "@/components/layout/Header";
@@ -153,7 +151,36 @@ const whyGSBItems = [
   },
 ];
 
-const faqs = localSeoFaqItems;
+const faqs = [
+  {
+    question: "What is Local SEO?",
+    answer: "Local SEO is the process of improving how visible your business is in location-based search results, including Google Business Profile, the map pack, and local organic listings. It helps local customers find and trust your business when they are actively searching for services in your area.",
+  },
+  {
+    question: "Is Google Business Profile part of Local SEO?",
+    answer: "Yes. Google Business Profile optimization is one of the most important parts of Local SEO, but it works best when supported by citation consistency, local landing pages, service-area relevance, and strong trust signals.",
+  },
+  {
+    question: "Are citations still important?",
+    answer: "Yes. Citation consistency helps search engines confirm your business identity and location details across the web. Strong citation hygiene supports credibility, trust, and local relevance.",
+  },
+  {
+    question: "How long does Local SEO take to work?",
+    answer: "Local SEO timelines depend on your market, competition, current Google Business Profile strength, citation consistency, website quality, and starting visibility. Many businesses begin seeing early movement within the first few months, with stronger gains building over time as local trust signals, content relevance, and location authority improve.",
+  },
+  {
+    question: "Do I need local landing pages if I already have a Google Business Profile?",
+    answer: "Usually, yes. Your Google Business Profile helps with map-driven visibility, but local landing pages help connect your services to the locations you serve and give search engines more context to rank your business for local-intent searches.",
+  },
+  {
+    question: "Does Local SEO only help Google Maps?",
+    answer: "No. Local SEO supports visibility across Google Business Profile, the map pack, local organic results, and the broader local discovery process. It helps reinforce your local relevance across the search journey.",
+  },
+  {
+    question: "How do I get started?",
+    answer: "The first step is a strategy session with GrowSmallBiz. We review your local visibility, identify your biggest Local SEO gaps, and outline a clear plan for improving how your business appears in the markets that matter most.",
+  },
+];
 
 const LocalSEO = () => {
   const { strategySessionUrl: PRIMARY_CTA_URL, freeAuditUrl: SECONDARY_CTA_URL } = useUtm();
@@ -193,8 +220,6 @@ const LocalSEO = () => {
       />
 
       <SpeakableJsonLd pageUrl="/services/seo-agency/local-seo/" />
-
-      <FaqJsonLd items={faqs} pageUrl="https://growsmallbiz.io/services/seo-agency/local-seo/" />
 
       <Header />
 
@@ -512,7 +537,7 @@ const LocalSEO = () => {
         <FAQSection
           title="Frequently Asked Questions"
           faqs={faqs}
-          disableSchema
+          schemaType="FAQPage"
           contactCTA={{
             ...baseContactCTA,
             title: "Have questions about Local SEO?",
