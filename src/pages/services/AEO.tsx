@@ -1,6 +1,8 @@
 import { Head } from "vite-react-ssg";
 import { useUtm } from "@/hooks/use-utm";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -237,6 +239,21 @@ const AEO = () => {
           { name: "Answer Engine Optimization", url: "/services/seo-agency/aeo/" },
         ]}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/seo-agency/aeo/"
+        images={[
+          {
+            url: aeoHeroBg,
+            caption: "Answer Engine Optimization for local service businesses",
+            description: "Hero illustration for GrowSmallBiz's Answer Engine Optimization (AEO) service — structuring content to win featured snippets, People Also Ask boxes, and AI-assisted search answers across Google, ChatGPT, Perplexity, and Gemini.",
+            width: 1920,
+            height: 1080,
+          },
+        ]}
+      />
+
+      <SpeakableJsonLd pageUrl="/services/seo-agency/aeo/" />
 
       <Header />
 
