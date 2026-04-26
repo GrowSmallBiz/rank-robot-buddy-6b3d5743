@@ -9,6 +9,9 @@ import { ServiceHero } from "@/components/services/ServiceHero";
 import authorityHeroBg from "@/assets/authority-building-hero-bg.webp";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { RelatedQuestionsSection } from "@/components/sections/RelatedQuestionsSection";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { relatedFaqs as authorityRelatedFaqs } from "@/data/faq/authority-building-related";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { CardCTA } from "@/components/services";
 import { Button } from "@/components/ui/button";
@@ -564,12 +567,21 @@ const AuthorityBuilding = () => {
           title="Frequently Asked Questions"
           faqs={faqs}
           schemaType="FAQPage"
+          suppressSchema
           contactCTA={{
             ...baseContactCTA,
             title: "Have questions about Authority Building?",
             description: "We're here to help you understand how authority building fits your business.",
             tagline: "Let's build your search authority together.",
           }}
+        />
+
+        {/* Related Questions — closed-by-default accordion. Combined FAQPage schema below. */}
+        <RelatedQuestionsSection items={authorityRelatedFaqs} />
+
+        <FaqJsonLd
+          items={[...faqs, ...authorityRelatedFaqs]}
+          pageUrl="https://growsmallbiz.io/services/seo-agency/authority-building/"
         />
 
         {/* SECTION 10 — FINAL CTA */}
