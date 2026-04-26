@@ -5,6 +5,9 @@ import { Head } from "vite-react-ssg";
 import { ArrowRight, ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ServiceJsonLd } from "@/components/seo/ServiceJsonLd";
+import { ImageObjectJsonLd } from "@/components/seo/ImageObjectJsonLd";
+import { SpeakableJsonLd } from "@/components/seo/SpeakableJsonLd";
+import { VideoJsonLd } from "@/components/seo/VideoJsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceHero } from "@/components/services/ServiceHero";
@@ -540,6 +543,30 @@ const MarketingAutomation = () => {
         ]}
         rating={{ ratingValue: "4.9", reviewCount: "127" }}
       />
+
+      <ImageObjectJsonLd
+        pageUrl="/services/marketing-automation-for-small-business/"
+        images={[
+          {
+            url: heroImage,
+            caption: "AI-Powered Marketing Automation for local service businesses",
+            description: "Hero illustration for GrowSmallBiz's Marketing Automation service — turning cold leads into sales with AI-driven workflows, instant lead response, multi-channel follow-up, and unified CRM, calendar, and pipeline tools.",
+            width: 1920,
+            height: 1080,
+          },
+        ]}
+      />
+
+      <VideoJsonLd
+        name="GrowSmallBiz Marketing Automation Overview"
+        description="A short overview of how GrowSmallBiz's AI-powered CRM and marketing automation system helps local service businesses attract more leads, follow up instantly, and convert prospects into booked work."
+        thumbnailUrl="https://i.ytimg.com/vi/IkA8jPWgHxk/maxresdefault.jpg"
+        contentUrl="https://www.youtube.com/watch?v=IkA8jPWgHxk"
+        uploadDate="2024-09-01T00:00:00+00:00"
+      />
+
+      <SpeakableJsonLd pageUrl="/services/marketing-automation-for-small-business/" />
+
       <Header />
       <main id="main-content">
         {/* Hero Section */}
