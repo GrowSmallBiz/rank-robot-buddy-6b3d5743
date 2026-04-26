@@ -788,21 +788,21 @@ const Roofers = () => {
         <FAQSection
           title="Frequently Asked Questions"
           subtitle="Answers to common questions about how GrowSmallBiz approaches Local SEO and PPC strategy for roofing businesses."
-          faqs={[
-            { question: "Can GrowSmallBiz create a similar strategy for my roofing business?", answer: "Yes. Every business starts from a different baseline, market, service area, level of competition, and budget, so no two campaigns are identical. But the same strategic thinking behind these case studies can be adapted to your business. GrowSmallBiz builds tailored Local SEO and paid ads strategies around your goals, your market, and the specific opportunities available in your service area.\n\nWe conduct a complimentary audit to determine what could be realistically possible, cost and ROI before we undertake any assignment." },
-            { question: "Can Local SEO really help roofing businesses get more calls and estimate requests?", answer: "Yes. Roofing is a high-intent search category. When your company appears more often in Google Business Profile results, localized organic search results, and service-area searches, you improve the chance of earning calls, form submissions, and estimate requests from people already looking for roofing help." },
-            { question: "Can PPC help roofing businesses generate leads faster?", answer: "Yes. Google Ads can put a roofing company in front of prospects quickly, especially for urgent searches tied to roof repair, roof replacement, storm damage, leaks, and commercial roofing needs. PPC often works best when paired with strong landing pages and conversion tracking." },
-            { question: "How long does it take to see results from Local SEO or PPC?", answer: "PPC can begin generating data and leads quickly once campaigns go live, while Local SEO typically builds over time. The exact timeline depends on market competition, starting visibility, budget, website quality, service-area coverage, and conversion readiness." },
-            { question: "What is included in your Local SEO strategy for roofers?", answer: "The strategy may include Google Business Profile optimization, local visibility improvements, onsite optimization, localized content, service page expansion, citation support, keyword tracking, and conversion-focused recommendations tied to how roofing buyers actually search." },
-            { question: "How much do SEO and PPC services cost?", answer: "SEO and PPC pricing can vary widely, but the lowest-cost option is rarely the one that produces the best business outcome. The real investment depends on your market, competition, service area, goals, and how much strategy, execution, tracking, and optimization are required to generate profitable growth.\n\nSome providers sell isolated tactics or generic packages. GrowSmallBiz takes a more complete approach by looking at the full picture — visibility, lead quality, conversion path, tracking, and return on investment. That means pricing is based on what your business actually needs to compete and grow, not on a one-size-fits-all template.\n\nWe begin with a complimentary audit to determine what could be realistically possible, the likely cost, and the ROI potential before we recommend any assignment." },
-            { question: "Do you offer a performance guarantee?", answer: "Yes. If GrowSmallBiz does not deliver the agreed-upon performance within the agreed-upon time frame, we will continue working for free until we do. No questions asked." },
-            { question: "Can you review my current marketing performance?", answer: "Yes. GrowSmallBiz can review your current Local SEO visibility, Google Ads performance, website conversion path, and competitive positioning to identify where lead generation is being lost and where the biggest opportunities exist." },
-          ]}
+          faqs={roofersVisibleFaqs}
+          suppressSchema
           contactCTA={createContactCTA({
             title: "Need Better Lead Flow from Search?",
             description: "If your roofing business depends on calls, form fills, estimate requests, and high-intent search traffic, GrowSmallBiz can help identify where Local SEO or PPC improvements can drive better results.",
             tagline: "Get clarity on your visibility, traffic quality, and conversion performance.",
           })}
+        />
+
+        {/* Related Questions — closed-by-default accordion. Combined FAQPage schema below. */}
+        <RelatedQuestionsSection title="Additional FAQs" items={roofersRelatedFaqs} />
+
+        <FaqJsonLd
+          items={[...roofersVisibleFaqs, ...roofersRelatedFaqs]}
+          pageUrl="https://growsmallbiz.io/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/"
         />
 
         {/* ═══ CONCLUSION SECTION ═══ */}
