@@ -17,6 +17,8 @@ import { ServiceHero } from "@/components/services/ServiceHero";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
+import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { hvacGoogleAdsCaseStudyFaqItems } from "@/data/faq/hvac-google-ads-case-study";
 import { createContactCTA } from "@/config/contactCTA";
 import heroBg from "@/assets/case-studies-hvac-hero-bg.webp";
 
@@ -79,6 +81,10 @@ const GoogleAdsHvacPlumbingElectrical = () => {
           { name: "Google Ads", url: "/home-service-contractors/marketing-for-hvac-contractors/" },
           { name: "HVAC Google Ads Case Study", url: "/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" },
         ]}
+      />
+      <FaqJsonLd
+        items={hvacGoogleAdsCaseStudyFaqItems}
+        pageUrl="https://growsmallbiz.io/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/"
       />
       <Header />
       <main id="main-content">
@@ -297,14 +303,8 @@ const GoogleAdsHvacPlumbingElectrical = () => {
         <FAQSection
           title="Frequently Asked Questions"
           subtitle="Answers to common questions about how GrowSmallBiz approaches Google PPC strategy for HVAC, plumbing, and electrical businesses."
-          faqs={[
-            { question: "Can GrowSmallBiz create a similar Google Ads strategy for my HVAC, plumbing, or electrical business?", answer: "Yes. Every business starts from a different baseline, market, service area, level of competition, and budget, so no two campaigns are identical. But the same strategic thinking behind these case studies can be adapted to your business. GrowSmallBiz builds tailored paid ads strategies around your goals, your market, and the specific opportunities available in your service area.\n\nWe conduct a complimentary audit to determine what could be realistically possible, cost and ROI before we undertake any assignment." },
-            { question: "Can Google PPC help HVAC businesses generate leads faster?", answer: "Yes. Google PPC enables immediate visibility for high-intent searches, helping generate qualified leads quickly while supporting broader marketing efforts." },
-            { question: "How long does it take to see results from Google PPC?", answer: "Google PPC can generate results quickly, though we recommend waiting at least 45 days for the campaign to start performing as Google's algorithm takes time to collect data." },
-            { question: "How much do PPC services cost?", answer: "PPC pricing can vary widely, but the lowest-cost option is rarely the one that produces the best business outcome. The real investment depends on your market, competition, service area, goals, and how much strategy, execution, tracking, and optimization are required to generate profitable growth.\n\nWe begin with a complimentary audit to determine what could be realistically possible, the likely cost, and the ROI potential before we recommend any assignment." },
-            { question: "Do you offer a performance guarantee?", answer: "Yes. If GrowSmallBiz does not deliver the agreed-upon performance within the agreed-upon time frame, we will continue working for free until we do. No questions asked." },
-            { question: "Can you review my current Google Ads performance?", answer: "Yes. You can request a website and SEO audit or book a strategy session to identify improvement opportunities in your paid search campaigns." },
-          ]}
+          faqs={hvacGoogleAdsCaseStudyFaqItems}
+          disableSchema
           contactCTA={createContactCTA({
             title: "Need Better Lead Flow from Google Ads?",
             description: "If your HVAC, plumbing, or electrical business depends on calls, form fills, and high-intent search traffic, GrowSmallBiz can help identify where Google PPC improvements can drive better results.",
