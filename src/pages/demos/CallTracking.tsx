@@ -15,7 +15,7 @@ export default function CallTrackingDemo() {
         <meta name="description" content="GrowSmallBiz Call Tracking helps your small business track calls & improve ROI. Get real-time insights and call recordings. Contact us now." />
         <meta name="keywords" content="call tracking, phone call analytics, marketing attribution, call recording, lead tracking, small business marketing, real-time call insights, performance analytics" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking/" />
-        <meta property="og:title" content="Tack every calls & improve Marketing ROI  | GrowSmallBiz" />
+        <meta property="og:title" content="Track Every Call & Improve Marketing ROI | GrowSmallBiz" />
       </Head>
       <VideoJsonLd
         name="Call Tracking Demo"
