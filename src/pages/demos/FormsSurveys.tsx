@@ -12,7 +12,7 @@ export default function FormsSurveysDemo() {
         <meta name="description" content="Forms & surveys help you to capture leads and gather customer data. Get qualified leads and start growing your business today! Sign up today!" />
         <meta name="keywords" content="forms, surveys, marketing automation, lead generation, customer engagement, small business tools, customizable forms, drag-and-drop builder" />
         <link rel="canonical" href="https://growsmallbiz.io/services/marketing-automation-for-small-business/forms-surveys/" />
-        <meta property="og:title" content="Forms & Surveys: Get only Qualified Clients  | GrowSmallBiz" />
+        <meta property="og:title" content="Forms & Surveys: Get Only Qualified Clients | GrowSmallBiz" />
       </Head>
       <Header />
       <main id="main-content" className="pt-20">
