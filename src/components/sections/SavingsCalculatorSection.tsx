@@ -354,7 +354,7 @@ export const SavingsCalculatorSection = () => {
             </summary>
             <div className="mt-4 text-xs text-slate-400 space-y-2 leading-relaxed">
               <p>
-                <strong className="text-slate-300">Recovery assumptions:</strong> A single full-time human receptionist recovers ~50% of currently-missed calls (still misses after-hours, lunch, sick days, and simultaneous calls). AI Receptionist recovers ~95% (24/7, instant answer, parallel calls).
+                <strong className="text-slate-300">Recovery vs. conversion:</strong> "Recovery" means the call is <em>answered</em>. AI answers ~95% of currently-missed calls; a single FT human recovers ~50% (still misses after-hours, lunch, sick days, simultaneous calls). Answered callers then convert to paying customers at <em>your normal lead-to-customer rate</em> (the slider above) — not 100%. Revenue numbers are calculated as <code className="text-slate-300">missed calls × recovery rate × conversion rate × avg customer value</code>.
               </p>
               <p>
                 <strong className="text-slate-300">Why instant answer matters:</strong> Harvard Business Review research shows responding to inbound leads within 5 minutes makes you 21× more likely to qualify them.
