@@ -164,13 +164,18 @@ export const SavingsCalculatorSection = () => {
   const ctaUrl = buildUrl(PRIMARY_CTA_URL, "savings-calculator");
 
   return (
-    <div className="mt-12 max-w-6xl mx-auto animate-fade-up">
+    <div className="mt-16 max-w-6xl mx-auto animate-fade-up">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-display font-bold bg-gradient-heading bg-clip-text text-transparent">
+          Is an AI Receptionist Right for Your Small Business?
+        </h2>
+      </div>
       <div className="bg-[#0f1f33]/80 border border-primary/20 rounded-3xl p-6 md:p-10 backdrop-blur-sm">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Calculator className="w-5 h-5 text-primary" />
           <p className="text-primary font-medium text-sm uppercase tracking-wider">Interactive Calculator</p>
         </div>
-        <h3 className="text-3xl md:text-4xl font-display font-bold text-center text-white mb-2">
+        <h3 className="text-2xl md:text-3xl font-display font-bold text-center text-white mb-2">
           Calculate Your Missed-Revenue Opportunity
         </h3>
         <p className="text-center text-slate-400 mb-10 max-w-2xl mx-auto">
