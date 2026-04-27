@@ -111,12 +111,30 @@ const ScenarioCard = ({
 export const SavingsCalculatorSection = () => {
   const { buildUrl } = useUtm();
 
-  const [missedCallsPerMonth, setMissedCallsPerMonth] = useState(60);
-  const [avgValue, setAvgValue] = useState(500);
-  const [conversionRate, setConversionRate] = useState(25);
-  const [hasHuman, setHasHuman] = useState(false);
-  const [humanCost, setHumanCost] = useState(3500);
-  const [aiCost, setAiCost] = useState(399);
+  const DEFAULTS = {
+    missedCallsPerMonth: 60,
+    avgValue: 500,
+    conversionRate: 25,
+    hasHuman: false,
+    humanCost: 3500,
+    aiCost: 399,
+  };
+
+  const [missedCallsPerMonth, setMissedCallsPerMonth] = useState(DEFAULTS.missedCallsPerMonth);
+  const [avgValue, setAvgValue] = useState(DEFAULTS.avgValue);
+  const [conversionRate, setConversionRate] = useState(DEFAULTS.conversionRate);
+  const [hasHuman, setHasHuman] = useState(DEFAULTS.hasHuman);
+  const [humanCost, setHumanCost] = useState(DEFAULTS.humanCost);
+  const [aiCost, setAiCost] = useState(DEFAULTS.aiCost);
+
+  const resetToDefaults = () => {
+    setMissedCallsPerMonth(DEFAULTS.missedCallsPerMonth);
+    setAvgValue(DEFAULTS.avgValue);
+    setConversionRate(DEFAULTS.conversionRate);
+    setHasHuman(DEFAULTS.hasHuman);
+    setHumanCost(DEFAULTS.humanCost);
+    setAiCost(DEFAULTS.aiCost);
+  };
 
   const results = useMemo(() => {
     // Total revenue at risk from currently-missed calls
