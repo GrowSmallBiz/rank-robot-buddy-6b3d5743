@@ -328,11 +328,11 @@ export const SavingsCalculatorSection = () => {
                 <span>Net gain {hasHuman ? "vs. your current setup" : "with AI Receptionist"}</span>
               </div>
               <p className="text-5xl md:text-6xl font-display font-bold bg-gradient-heading bg-clip-text text-transparent leading-none">
-                {results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}
-                <span className="text-2xl text-slate-400 font-normal">/mo</span>
+                {results.aiAdvantage * 12 >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage * 12)}
+                <span className="text-2xl text-slate-400 font-normal">/yr</span>
               </p>
               <p className="text-sm text-slate-400 mt-3">
-                ≈ <span className="text-white font-semibold">{results.aiAdvantage * 12 >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage * 12)}/year</span> in your pocket
+                ≈ <span className="text-white font-semibold">{results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}/month</span> in your pocket
               </p>
             </div>
 
