@@ -655,7 +655,7 @@ const AIReceptionist = () => {
           title="Frequently Asked Questions"
           subtitle="Everything you need to know about AI Receptionist & Conversational AI"
           faqs={faqs}
-          schemaId={`${PAGE_URL}#FAQPage`}
+          schemaId={`${PAGE_URL}#faqpage`}
           contactCTA={{
             ...baseContactCTA,
             title: "Have more questions about AI Receptionist?",
