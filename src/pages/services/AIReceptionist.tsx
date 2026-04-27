@@ -216,9 +216,8 @@ const AIReceptionist = () => {
                 <span className="text-sm font-medium">AI Client Growth System</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up leading-tight">
-                AI Receptionist & Conversational AI That Works{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-primary">24/7</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                AI Receptionist & Conversational AI That Works 24/7
               </h1>
 
               <p
@@ -266,7 +265,7 @@ const AIReceptionist = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="font-medium mb-4 text-primary">The Hidden Cost of Missed Opportunities</p>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
                 Industry Statistics That Will Shock You
               </h2>
               <p className="text-slate-400 max-w-2xl mx-auto">
@@ -311,7 +310,7 @@ const AIReceptionist = () => {
                   <Phone className="w-4 h-4" />
                   AI Virtual Receptionist
                 </div>
-                <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+                <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Never Miss Another Call, Ever Again
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
@@ -431,7 +430,7 @@ const AIReceptionist = () => {
                   <MessageSquare className="w-4 h-4" />
                   Conversational AI
                 </div>
-                <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+                <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-gradient-heading bg-clip-text text-transparent">
                   Turn Every Digital Interaction Into Revenue
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
@@ -464,7 +463,7 @@ const AIReceptionist = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Complete Capabilities</p>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
                 Everything You Need for 24/7 Customer Coverage
               </h2>
             </div>
@@ -491,7 +490,7 @@ const AIReceptionist = () => {
         <section className="relative py-20 bg-card/40 border-t border-border/40">
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
                 Why Everyone Wins With AI
               </h2>
             </div>
@@ -550,7 +549,7 @@ const AIReceptionist = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16 animate-fade-up">
               <p className="text-primary font-medium mb-4">Industry Applications</p>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
                 Built for Service-Based Businesses
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -586,7 +585,7 @@ const AIReceptionist = () => {
                 <Clock className="w-4 h-4" />
                 Done-For-You Service
               </div>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-gradient-heading bg-clip-text text-transparent">
                 White Glove Setup & Support
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
