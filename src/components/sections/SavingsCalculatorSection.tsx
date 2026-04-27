@@ -301,44 +301,39 @@ export const SavingsCalculatorSection = () => {
 
           {/* Results */}
           <div className="space-y-5" aria-live="polite">
-            {/* Headline */}
+            {/* Cost vs. Savings cards */}
+            <div className="grid md:grid-cols-2 gap-4">
+              <MoneyCard
+                title="Extra cost of AI Receptionist"
+                subtitle={hasHuman ? "On top of your current receptionist" : "New monthly investment"}
+                monthly={Math.max(0, aiCost - results.baselineCost)}
+                annual={Math.max(0, (aiCost - results.baselineCost) * 12)}
+                variant="cost"
+                icon={Wallet}
+              />
+              <MoneyCard
+                title="Revenue you recover"
+                subtitle={hasHuman ? "Calls your human still misses" : "Calls that go to voicemail today"}
+                monthly={Math.max(0, results.baselineRevenueLost - results.aiRevenueLost)}
+                annual={Math.max(0, (results.baselineRevenueLost - results.aiRevenueLost) * 12)}
+                variant="savings"
+                icon={PiggyBank}
+              />
+            </div>
+
+            {/* Headline net gain */}
             <div className="text-center bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 rounded-2xl p-6">
               <div className="flex items-center justify-center gap-2 text-slate-300 text-sm mb-3">
                 <TrendingUp className="w-4 h-4" />
-                <span>You'd be better off by</span>
+                <span>Net gain {hasHuman ? "vs. your current setup" : "with AI Receptionist"}</span>
               </div>
               <p className="text-5xl md:text-6xl font-display font-bold bg-gradient-heading bg-clip-text text-transparent leading-none">
-                {results.aiAdvantage * 12 >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage * 12)}
-                <span className="text-2xl text-slate-400 font-normal">/year</span>
+                {results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}
+                <span className="text-2xl text-slate-400 font-normal">/mo</span>
               </p>
               <p className="text-sm text-slate-400 mt-3">
-                ≈ <span className="text-white font-semibold">{results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}/mo</span> vs. {hasHuman ? "your current human receptionist" : "doing nothing"}
+                ≈ <span className="text-white font-semibold">{results.aiAdvantage * 12 >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage * 12)}/year</span> in your pocket
               </p>
-            </div>
-
-            {/* Scenario cards */}
-            <div className="grid md:grid-cols-2 gap-4 pt-2">
-              <ScenarioCard
-                title={hasHuman ? "With Human Receptionist" : "Without AI Receptionist"}
-                subtitle={hasHuman ? "Recovers ~50% of missed calls" : "All missed calls = lost revenue"}
-                cost={results.baselineCost}
-                callsStillMissed={results.baselineMissed}
-                revenueLost={results.baselineRevenueLost}
-                net={results.baselineNet}
-                variant="danger"
-                icon={AlertTriangle}
-              />
-              <ScenarioCard
-                title="With AI Receptionist"
-                subtitle="Recovers ~95% of missed calls"
-                cost={aiCost}
-                callsStillMissed={results.aiMissed}
-                revenueLost={results.aiRevenueLost}
-                net={results.aiNet}
-                variant="success"
-                badge="24/7 coverage"
-                icon={CheckCircle2}
-              />
             </div>
 
             {/* CTA */}
