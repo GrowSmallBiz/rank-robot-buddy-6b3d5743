@@ -2,19 +2,17 @@ import { useState, useMemo } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
-import { Phone, TrendingUp, Calculator, Info } from "lucide-react";
+import { Phone, TrendingUp, Calculator, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { useUtm } from "@/hooks/use-utm";
 
 const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
 
-// Coverage assumptions (research-backed; see footnote citations)
-// Human receptionist (single FT, business hours only) ~ captures 40% of total monthly calls
-const HUMAN_COVERAGE = 0.4;
-// "Do nothing" scenario (no receptionist, owner/staff catch some) ~ captures 38% of calls
-// Derived from Invoca: ~62% of business calls go unanswered.
-const DO_NOTHING_COVERAGE = 0.38;
-// AI receptionist: 24/7 coverage, ~97% answer rate
-const AI_COVERAGE = 0.97;
+// Capture-rate assumptions for MISSED calls (i.e. of the calls you currently miss, what % does each option recover?)
+// A single FT human receptionist still misses after-hours, lunch, sick days, simultaneous calls.
+// Realistic recovery of currently-missed calls: ~50%.
+const HUMAN_RECOVERY_OF_MISSED = 0.5;
+// AI Receptionist: 24/7, instant, parallel — recovers ~95% of currently-missed calls.
+const AI_RECOVERY_OF_MISSED = 0.95;
 
 const fmtMoney = (n: number) =>
   n.toLocaleString("en-US", {
@@ -25,37 +23,43 @@ const fmtMoney = (n: number) =>
 
 interface ScenarioCardProps {
   title: string;
+  subtitle: string;
   cost: number;
-  captured: number;
-  totalLeads: number;
+  callsStillMissed: number;
+  revenueLost: number;
   net: number;
-  variant: "danger" | "warning" | "success";
+  variant: "danger" | "success";
   badge?: string;
+  icon: typeof AlertTriangle;
 }
 
-const ScenarioCard = ({ title, cost, captured, totalLeads, net, variant, badge }: ScenarioCardProps) => {
+const ScenarioCard = ({
+  title,
+  subtitle,
+  cost,
+  callsStillMissed,
+  revenueLost,
+  net,
+  variant,
+  badge,
+  icon: Icon,
+}: ScenarioCardProps) => {
   const styles = {
     danger: {
       border: "border-destructive/30",
       bg: "bg-destructive/5",
       accent: "text-destructive",
+      iconBg: "bg-destructive/15 text-destructive",
       badgeBg: "bg-destructive/15 text-destructive border-destructive/30",
-    },
-    warning: {
-      border: "border-amber-500/30",
-      bg: "bg-amber-500/5",
-      accent: "text-amber-400",
-      badgeBg: "bg-amber-500/15 text-amber-400 border-amber-500/30",
     },
     success: {
       border: "border-primary/40",
       bg: "bg-primary/5",
       accent: "text-primary",
+      iconBg: "bg-primary/15 text-primary",
       badgeBg: "bg-primary/15 text-primary border-primary/40",
     },
   }[variant];
-
-  const lostLeads = totalLeads - captured;
 
   return (
     <div className={`relative rounded-2xl border ${styles.border} ${styles.bg} p-6 flex flex-col h-full`}>
@@ -66,20 +70,31 @@ const ScenarioCard = ({ title, cost, captured, totalLeads, net, variant, badge }
           {badge}
         </span>
       )}
-      <h4 className="text-lg font-semibold text-white text-center mb-4">{title}</h4>
 
-      <div className="space-y-3 text-sm flex-1">
+      <div className="flex items-center gap-3 mb-4">
+        <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${styles.iconBg}`}>
+          <Icon className="w-5 h-5" />
+        </div>
+        <div>
+          <h4 className="text-base font-semibold text-white leading-tight">{title}</h4>
+          <p className="text-xs text-slate-400">{subtitle}</p>
+        </div>
+      </div>
+
+      <div className="space-y-2.5 text-sm flex-1">
         <div className="flex justify-between text-slate-300">
           <span>Monthly cost</span>
           <span className="font-semibold text-white">{fmtMoney(cost)}</span>
         </div>
         <div className="flex justify-between text-slate-300">
-          <span>Leads captured</span>
-          <span className="font-semibold text-white">{Math.round(captured)} / {Math.round(totalLeads)}</span>
+          <span>Calls still missed</span>
+          <span className="font-semibold text-white">{Math.round(callsStillMissed)}/mo</span>
         </div>
         <div className="flex justify-between text-slate-300">
-          <span>Leads lost</span>
-          <span className="font-semibold text-destructive/90">{Math.round(lostLeads)}</span>
+          <span>Revenue still lost</span>
+          <span className={`font-semibold ${variant === "danger" ? "text-destructive/90" : "text-slate-400"}`}>
+            {fmtMoney(revenueLost)}
+          </span>
         </div>
       </div>
 
@@ -96,7 +111,7 @@ const ScenarioCard = ({ title, cost, captured, totalLeads, net, variant, badge }
 export const SavingsCalculatorSection = () => {
   const { buildUrl } = useUtm();
 
-  const [callsPerMonth, setCallsPerMonth] = useState(200);
+  const [missedCallsPerMonth, setMissedCallsPerMonth] = useState(60);
   const [avgValue, setAvgValue] = useState(500);
   const [conversionRate, setConversionRate] = useState(25);
   const [hasHuman, setHasHuman] = useState(false);
@@ -104,38 +119,46 @@ export const SavingsCalculatorSection = () => {
   const [aiCost, setAiCost] = useState(399);
 
   const results = useMemo(() => {
-    const totalLeads = callsPerMonth * (conversionRate / 100);
+    // Total revenue at risk from currently-missed calls
+    const lostLeadsCurrent = missedCallsPerMonth * (conversionRate / 100);
+    const revenueAtRisk = lostLeadsCurrent * avgValue;
 
-    // Captured leads per scenario (calls answered × conversion already in totalLeads scale)
-    const doNothingCaptured = totalLeads * DO_NOTHING_COVERAGE;
-    const humanCaptured = totalLeads * HUMAN_COVERAGE;
-    const aiCaptured = totalLeads * AI_COVERAGE;
+    // "Without AI" baseline — depends on whether they have a human receptionist
+    let baselineCost = 0;
+    let baselineMissed = missedCallsPerMonth;
+    let baselineRevenueLost = revenueAtRisk;
 
-    // Revenue per scenario
-    const doNothingRevenue = doNothingCaptured * avgValue;
-    const humanRevenue = humanCaptured * avgValue;
-    const aiRevenue = aiCaptured * avgValue;
+    if (hasHuman) {
+      // Human recovers ~50% of currently-missed calls (still misses after-hours, lunch, sick days)
+      baselineCost = humanCost;
+      baselineMissed = missedCallsPerMonth * (1 - HUMAN_RECOVERY_OF_MISSED);
+      baselineRevenueLost = revenueAtRisk * (1 - HUMAN_RECOVERY_OF_MISSED);
+    }
 
-    // Net = revenue captured − cost of that scenario
-    const doNothingNet = doNothingRevenue - 0;
-    const humanNet = humanRevenue - humanCost;
-    const aiNet = aiRevenue - aiCost;
+    // With AI — recovers ~95% of currently-missed calls
+    const aiMissed = missedCallsPerMonth * (1 - AI_RECOVERY_OF_MISSED);
+    const aiRevenueLost = revenueAtRisk * (1 - AI_RECOVERY_OF_MISSED);
 
-    // Headline savings (AI vs best alternative the user has today)
-    const baseline = hasHuman ? humanNet : doNothingNet;
-    const aiAdvantage = aiNet - baseline;
+    // Net positions (revenue recovered − cost)
+    // Baseline net = -(revenue still lost + cost)
+    const baselineNet = -(baselineRevenueLost + baselineCost);
+    const aiNet = -(aiRevenueLost + aiCost);
+
+    // Headline: how much better is AI than the current baseline?
+    const aiAdvantage = aiNet - baselineNet;
 
     return {
-      totalLeads,
-      doNothingCaptured,
-      humanCaptured,
-      aiCaptured,
-      doNothingNet,
-      humanNet,
+      revenueAtRisk,
+      baselineCost,
+      baselineMissed,
+      baselineRevenueLost,
+      baselineNet,
+      aiMissed,
+      aiRevenueLost,
       aiNet,
       aiAdvantage,
     };
-  }, [callsPerMonth, avgValue, conversionRate, hasHuman, humanCost, aiCost]);
+  }, [missedCallsPerMonth, avgValue, conversionRate, hasHuman, humanCost, aiCost]);
 
   const ctaUrl = buildUrl(PRIMARY_CTA_URL, "savings-calculator");
 
@@ -156,20 +179,23 @@ export const SavingsCalculatorSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Inputs */}
           <div className="space-y-7">
-            {/* Calls per month */}
+            {/* Missed calls per month */}
             <div>
               <div className="flex justify-between items-baseline mb-3">
-                <label className="text-sm font-medium text-white">Inbound calls per month</label>
-                <span className="text-lg font-display font-bold text-primary">{callsPerMonth}</span>
+                <label className="text-sm font-medium text-white">Missed calls per month</label>
+                <span className="text-lg font-display font-bold text-primary">{missedCallsPerMonth}</span>
               </div>
               <Slider
-                value={[callsPerMonth]}
-                onValueChange={(v) => setCallsPerMonth(v[0])}
-                min={20}
-                max={2000}
-                step={10}
-                aria-label="Inbound calls per month"
+                value={[missedCallsPerMonth]}
+                onValueChange={(v) => setMissedCallsPerMonth(v[0])}
+                min={5}
+                max={500}
+                step={5}
+                aria-label="Missed calls per month"
               />
+              <p className="text-xs text-slate-500 mt-2 leading-relaxed">
+                Most owners underestimate this. Industry research shows 40–60% of inbound calls go unanswered. No exact number? Estimate ~30% of your total monthly call volume.
+              </p>
             </div>
 
             {/* Avg customer value */}
@@ -228,7 +254,7 @@ export const SavingsCalculatorSection = () => {
                   <label htmlFor="has-human" className="text-sm font-medium text-white">
                     I currently employ a human receptionist
                   </label>
-                  <p className="text-xs text-slate-500 mt-0.5">Adds a side-by-side cost comparison</p>
+                  <p className="text-xs text-slate-500 mt-0.5">Adjusts the baseline comparison</p>
                 </div>
                 <Switch id="has-human" checked={hasHuman} onCheckedChange={setHasHuman} />
               </div>
@@ -248,7 +274,7 @@ export const SavingsCalculatorSection = () => {
                     aria-label="Human receptionist monthly cost"
                   />
                   <p className="text-xs text-slate-500 mt-1">
-                    Fully-loaded: wages + payroll tax + benefits. One FT receptionist, ~40 hrs/week.
+                    Fully-loaded: wages + payroll tax + benefits. One FT receptionist, ~40 hrs/week. A human still misses ~50% of currently-missed calls (after-hours, lunch, sick days, simultaneous calls).
                   </p>
                 </div>
               )}
@@ -261,45 +287,39 @@ export const SavingsCalculatorSection = () => {
             <div className="text-center bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 rounded-2xl p-6">
               <div className="flex items-center justify-center gap-2 text-slate-300 text-sm mb-2">
                 <TrendingUp className="w-4 h-4" />
-                <span>AI advantage vs. {hasHuman ? "your current human receptionist" : "doing nothing"}</span>
+                <span>You'd be better off by</span>
               </div>
               <p className="text-4xl md:text-5xl font-display font-bold bg-gradient-heading bg-clip-text text-transparent">
                 {results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}
                 <span className="text-xl text-slate-400 font-normal">/mo</span>
               </p>
               <p className="text-sm text-slate-400 mt-2">
-                = {fmtMoney(results.aiAdvantage * 12)} per year
+                = {fmtMoney(results.aiAdvantage * 12)} per year vs. {hasHuman ? "your current human receptionist" : "doing nothing"}
               </p>
             </div>
 
             {/* Scenario cards */}
-            <div className={`grid gap-4 ${hasHuman ? "md:grid-cols-3" : "md:grid-cols-2"} pt-2`}>
+            <div className="grid md:grid-cols-2 gap-4 pt-2">
               <ScenarioCard
-                title="Do Nothing"
-                cost={0}
-                captured={results.doNothingCaptured}
-                totalLeads={results.totalLeads}
-                net={results.doNothingNet}
+                title={hasHuman ? "With Human Receptionist" : "Without AI Receptionist"}
+                subtitle={hasHuman ? "Recovers ~50% of missed calls" : "All missed calls = lost revenue"}
+                cost={results.baselineCost}
+                callsStillMissed={results.baselineMissed}
+                revenueLost={results.baselineRevenueLost}
+                net={results.baselineNet}
                 variant="danger"
+                icon={AlertTriangle}
               />
-              {hasHuman && (
-                <ScenarioCard
-                  title="Human Receptionist"
-                  cost={humanCost}
-                  captured={results.humanCaptured}
-                  totalLeads={results.totalLeads}
-                  net={results.humanNet}
-                  variant="warning"
-                />
-              )}
               <ScenarioCard
-                title="AI Receptionist"
+                title="With AI Receptionist"
+                subtitle="Recovers ~95% of missed calls"
                 cost={aiCost}
-                captured={results.aiCaptured}
-                totalLeads={results.totalLeads}
+                callsStillMissed={results.aiMissed}
+                revenueLost={results.aiRevenueLost}
                 net={results.aiNet}
                 variant="success"
                 badge="24/7 coverage"
+                icon={CheckCircle2}
               />
             </div>
 
@@ -331,7 +351,7 @@ export const SavingsCalculatorSection = () => {
             </summary>
             <div className="mt-4 text-xs text-slate-400 space-y-2 leading-relaxed">
               <p>
-                <strong className="text-slate-300">Coverage assumptions:</strong> "Do nothing" captures ~38% of leads (industry research shows ~62% of business calls go unanswered). A single full-time human receptionist captures ~40% (business hours only, ~40 of 168 weekly hours, weighted for daytime call density). AI captures 97% (24/7, instant answer).
+                <strong className="text-slate-300">Recovery assumptions:</strong> A single full-time human receptionist recovers ~50% of currently-missed calls (still misses after-hours, lunch, sick days, and simultaneous calls). AI Receptionist recovers ~95% (24/7, instant answer, parallel calls).
               </p>
               <p>
                 <strong className="text-slate-300">Why instant answer matters:</strong> Harvard Business Review research shows responding to inbound leads within 5 minutes makes you 21× more likely to qualify them.
