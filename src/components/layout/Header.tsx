@@ -186,6 +186,14 @@ export const Header = () => {
                   Marketing Automation
                 </Link>
 
+                {/* AI Receptionist & Conversational AI */}
+                <Link
+                  to="/services/ai-receptionist-and-conversational-ai/"
+                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                >
+                  AI Receptionist & Conversational AI
+                </Link>
+
               </div>
             </div>
 
@@ -548,6 +556,15 @@ export const Header = () => {
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   Marketing Automation
+                </Link>
+
+                {/* AI Receptionist & Conversational AI */}
+                <Link
+                  to="/services/ai-receptionist-and-conversational-ai/"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-muted-foreground hover:text-primary"
+                >
+                  AI Receptionist & Conversational AI
                 </Link>
 
               </div>
