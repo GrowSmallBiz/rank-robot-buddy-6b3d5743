@@ -81,10 +81,10 @@ const AIReceptionist = () => {
   ];
 
   const stats = [
-    { value: "47%", label: "of Small Businesses Miss Calls", subtext: "Source: Alliance Virtual Offices" },
-    { value: "85%", label: "Never Call Back After Being Missed", subtext: "Source: Swingpointmedia" },
-    { value: "$1,200", label: "Average Lost Revenue Per Missed Call", subtext: "Source: Invoca (Home Services)" },
-    { value: "96.7%", label: "AI Success Rate", subtext: "Real Client Performance" },
+    { value: "$1T", label: "In U.S. Consumer Spending Influenced By Phone Calls", subtext: "Source: BIA/Kelsey" },
+    { value: "21x", label: "More Likely To Qualify Leads When You Respond In 5 Minutes", subtext: "Source: Harvard Business Review" },
+    { value: "60%", label: "Of Customers Prefer To Call Small Businesses About Purchases", subtext: "Source: Google / Ipsos" },
+    { value: "$1,200", label: "Average Lost Revenue Per Missed Call (Home Services)", subtext: "Source: Invoca" },
   ];
 
   const industries = [
