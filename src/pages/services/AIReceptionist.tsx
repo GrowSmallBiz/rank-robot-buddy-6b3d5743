@@ -170,23 +170,33 @@ const AIReceptionist = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Head>
-        <title>AI Receptionist & Conversational AI | 24/7 Virtual Receptionist | GrowSmallBiz</title>
+        <title>AI Receptionist & Conversational AI 24/7 | GrowSmallBiz</title>
         <meta
           name="description"
-          content="Deploy AI Receptionist that handles every call 24/7 and Conversational AI that manages SMS, Facebook, Instagram & website chat. Never miss a lead again."
+          content="AI Receptionist answers every call 24/7. Conversational AI handles SMS, Facebook, Instagram & website chat. Capture every lead—never miss one."
         />
         <meta
           name="keywords"
           content="AI receptionist, virtual receptionist, conversational AI, AI chat, 24/7 answering service, automated phone system, lead capture, appointment booking, business automation"
         />
         <link rel="canonical" href={PAGE_URL} />
-        <meta property="og:title" content="AI Receptionist & Conversational AI | 24/7 Virtual Receptionist" />
+        <meta property="og:title" content="AI Receptionist & Conversational AI 24/7 | GrowSmallBiz" />
         <meta
           property="og:description"
-          content="Deploy AI Receptionist that handles every call 24/7 and Conversational AI for SMS, Facebook, Instagram & website chat."
+          content="AI Receptionist answers every call 24/7. Conversational AI handles SMS, Facebook, Instagram & website chat. Capture every lead."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={PAGE_URL} />
+        <meta property="og:image" content={`https://growsmallbiz.io${heroImage}`} />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI Receptionist & Conversational AI 24/7 | GrowSmallBiz" />
+        <meta
+          name="twitter:description"
+          content="AI Receptionist answers every call 24/7. Conversational AI handles SMS, Facebook, Instagram & website chat."
+        />
+        <meta name="twitter:image" content={`https://growsmallbiz.io${heroImage}`} />
       </Head>
 
       <ServiceJsonLd
@@ -195,7 +205,7 @@ const AIReceptionist = () => {
         description="24/7 AI-powered phone answering, SMS, and chat automation for lead capture and appointment booking."
         url={PAGE_PATH}
         breadcrumbs={[
-          { name: "Services", url: "/services" },
+          { name: "Services", url: "/services/" },
           { name: "AI Receptionist & Conversational AI", url: PAGE_PATH },
         ]}
         offerCatalog={{
@@ -222,10 +232,17 @@ const AIReceptionist = () => {
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
         <section className="relative py-24 lg:py-32 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          />
+          <div className="absolute inset-0">
+            <img
+              src={heroImage}
+              alt="AI Receptionist and Conversational AI handling 24/7 calls and chats for small businesses"
+              width={1920}
+              height={1080}
+              fetchPriority="high"
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <div className="absolute inset-0 bg-background/85" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
