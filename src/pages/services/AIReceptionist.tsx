@@ -368,36 +368,54 @@ const AIReceptionist = () => {
         </section>
 
         {/* Conversational AI Section */}
-        <section
-          className="relative py-20"
-          style={{
-            background: "linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)",
-          }}
-        >
+        <section className="relative py-20" style={{ background: 'linear-gradient(180deg, #0a1628 0%, #0f172a 50%, #0a1628 100%)' }}>
+          <div className="absolute inset-0 opacity-30" style={{ background: 'radial-gradient(ellipse at center, #17a2b820 0%, transparent 70%)' }} />
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div
-                className="order-2 lg:order-1 backdrop-blur-sm rounded-2xl p-8 animate-fade-up border border-primary/30 bg-card/80"
+                className="order-2 lg:order-1 backdrop-blur-sm rounded-2xl p-8 animate-fade-up transition-all hover:shadow-[0_0_40px_#17a2b880,0_0_80px_#17a2b840]"
+                style={{ border: '2px solid #17a2b8', backgroundColor: '#050a10', boxShadow: '0 0 30px #17a2b830' }}
               >
-                <h3 className="text-2xl font-semibold text-foreground mb-6">
-                  Unified Multi-Channel Platform
-                </h3>
+                <h3 className="text-2xl font-semibold text-foreground mb-6">Unified Multi-Channel Platform</h3>
                 <div className="space-y-4">
-                  {(
-                    [
-                      { channel: "SMS", desc: "Instant text message responses and follow-ups", Icon: Smartphone },
-                      { channel: "Website Live Chat", desc: "Engage visitors the moment they arrive", Icon: Globe },
-                      { channel: "Facebook", desc: "Respond to Messenger inquiries automatically", Icon: Facebook },
-                      { channel: "Instagram", desc: "Handle DMs and convert followers to customers", Icon: Instagram },
-                      { channel: "Google Business Profile", desc: "Manage profile messages seamlessly", Icon: MapPin },
-                    ] as { channel: string; desc: string; Icon: LucideIcon }[]
-                  ).map((item, index) => (
+                  {([
+                    { channel: "SMS", desc: "Instant text message responses and follow-ups", bgColor: "#0d2818", borderColor: "#22c55e", iconColor: "#22c55e", Icon: Smartphone },
+                    { channel: "Website Live Chat", desc: "Engage visitors the moment they arrive", bgColor: "#0d1f2d", borderColor: "#17a2b8", iconColor: "#17a2b8", Icon: Globe },
+                    { channel: "Facebook", desc: "Respond to Messenger inquiries automatically", bgColor: "#0d1a33", borderColor: "#1877f2", iconColor: "#1877f2", Icon: Facebook },
+                    { channel: "Instagram", desc: "Handle DMs and convert followers to customers", bgColor: "#2d0d1f", borderColor: "#e1306c", iconColor: "#e1306c", Icon: Instagram },
+                    { channel: "Google Business Profile", desc: "Manage profile messages seamlessly", bgColor: "#0f1419", borderColor: "", iconColor: "#4285f4", Icon: MapPin, isGoogle: true },
+                  ] as { channel: string; desc: string; bgColor: string; borderColor: string; iconColor: string; Icon: LucideIcon; isGoogle?: boolean }[]).map((item, index) => (
                     <div
                       key={index}
-                      className="flex items-start gap-4 p-4 rounded-lg bg-secondary/40 border border-border/50 transition-all hover:border-primary/40"
+                      className={`flex items-start gap-4 p-4 rounded-lg transition-all hover:scale-[1.02] ${item.isGoogle ? 'relative overflow-hidden' : ''}`}
+                      style={{
+                        background: item.isGoogle ? 'linear-gradient(135deg, rgba(66,133,244,0.12), rgba(234,67,53,0.12), rgba(251,188,5,0.12), rgba(52,168,83,0.12))' : item.bgColor,
+                        border: item.isGoogle ? 'none' : `1px solid ${item.borderColor}`,
+                        boxShadow: item.isGoogle ? '0 0 20px rgba(66,133,244,0.2), 0 0 20px rgba(234,67,53,0.1), 0 0 20px rgba(52,168,83,0.1)' : `0 0 20px ${item.borderColor}40`
+                      }}
                     >
-                      <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 bg-primary/15">
-                        <item.Icon className="w-5 h-5 text-primary" />
+                      {item.isGoogle && (
+                        <div
+                          className="absolute inset-0 rounded-lg pointer-events-none animate-gradient-rotate"
+                          style={{
+                            background: 'linear-gradient(90deg, #4285f4, #ea4335, #fbbc05, #34a853, #4285f4)',
+                            backgroundSize: '300% 100%',
+                            padding: '1px',
+                            WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                            WebkitMaskComposite: 'xor',
+                            maskComposite: 'exclude'
+                          }}
+                        />
+                      )}
+                      <div
+                        className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+                        style={{
+                          background: item.isGoogle
+                            ? 'linear-gradient(135deg, rgba(66,133,244,0.3), rgba(234,67,53,0.3), rgba(251,188,5,0.3), rgba(52,168,83,0.3))'
+                            : `${item.iconColor}20`
+                        }}
+                      >
+                        <item.Icon className="w-5 h-5" style={{ color: item.iconColor }} />
                       </div>
                       <div>
                         <p className="font-medium text-foreground">{item.channel}</p>
