@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
-import { Phone, TrendingUp, Calculator, Info, AlertTriangle, CheckCircle2, RotateCcw } from "lucide-react";
+import { Phone, TrendingUp, Calculator, Info, Wallet, PiggyBank, RotateCcw } from "lucide-react";
 import { useUtm } from "@/hooks/use-utm";
 
 const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
