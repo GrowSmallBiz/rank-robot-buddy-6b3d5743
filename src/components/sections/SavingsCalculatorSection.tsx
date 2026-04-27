@@ -197,6 +197,18 @@ export const SavingsCalculatorSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Inputs */}
           <div className="space-y-7">
+            <div className="flex justify-end -mb-3">
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={resetToDefaults}
+                className="text-slate-400 hover:text-white hover:bg-white/5 h-8 px-2.5 text-xs"
+              >
+                <RotateCcw className="w-3.5 h-3.5 mr-1.5" />
+                Reset to defaults
+              </Button>
+            </div>
             {/* Missed calls per month */}
             <div>
               <div className="flex justify-between items-baseline mb-3">
