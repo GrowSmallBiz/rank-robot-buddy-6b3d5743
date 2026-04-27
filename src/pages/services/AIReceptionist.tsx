@@ -87,41 +87,6 @@ const AIReceptionist = () => {
     { value: "96.7%", label: "AI Success Rate", subtext: "Real Client Performance" },
   ];
 
-  const aiReceptionistCaseStudies = [
-    {
-      company: "Thompson HVAC Services",
-      location: "Nashville, TN",
-      industry: "HVAC Services",
-      challenge:
-        "Missing 40%+ of after-hours calls. Competitors were capturing emergency repair jobs worth $500-2,000 each.",
-      timeframe: "3 months",
-      metrics: [
-        { label: "Calls Captured", before: "58%", after: "97%", improvement: "+67%" },
-        { label: "After-Hours Bookings", before: "4/mo", after: "28/mo", improvement: "+600%" },
-        { label: "Monthly Revenue", before: "$68K", after: "$142K", improvement: "+109%" },
-      ],
-      quote: "No more missed calls or delayed responses. The voice AI handles after-hours calls perfectly.",
-      quoteName: "Mike Thompson",
-      quoteRole: "Owner, Thompson HVAC Services",
-    },
-    {
-      company: "Chen Family Dental",
-      location: "Austin, TX",
-      industry: "Dental Practice",
-      challenge:
-        "Receptionist overwhelmed with calls. New patient inquiries going to voicemail and never returning.",
-      timeframe: "4 months",
-      metrics: [
-        { label: "Missed Calls", before: "35/week", after: "2/week", improvement: "-94%" },
-        { label: "New Patient Bookings", before: "18/mo", after: "52/mo", improvement: "+189%" },
-        { label: "Staff Hours Saved", before: "0", after: "25/week", improvement: "New" },
-      ],
-      quote: "The AI books appointments while we focus on patient care. Our new patient flow has tripled.",
-      quoteName: "Dr. Sarah Chen",
-      quoteRole: "Owner, Chen Family Dental",
-    },
-  ];
-
   const industries = [
     { icon: Wrench, name: "HVAC Contractors", benefit: "Capture after-hours service calls worth $500-2,000 each" },
     { icon: Stethoscope, name: "Dental Offices", benefit: "Manage appointment requests and emergency consultations" },
