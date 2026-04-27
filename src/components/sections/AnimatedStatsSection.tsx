@@ -73,6 +73,11 @@ const AnimatedStatCard = ({ stat, index, variant = "default" }: AnimatedStatCard
   const displayValue = isDecimal ? count.toFixed(1) : count;
 
   if (variant === "card") {
+    const isSourceCitation = stat.subtext?.trim().toLowerCase().startsWith("source:");
+    const sourceLabel = isSourceCitation
+      ? stat.subtext!.replace(/^\s*source\s*:\s*/i, "")
+      : null;
+
     return (
       <div
         ref={ref}
@@ -82,8 +87,16 @@ const AnimatedStatCard = ({ stat, index, variant = "default" }: AnimatedStatCard
         <div className="text-4xl md:text-5xl font-display font-bold mb-2" style={{ color: '#FC8253' }}>
           {prefix}{displayValue}{suffix}
         </div>
-        <p className="text-foreground font-medium mb-2">{stat.label}</p>
-        {stat.subtext && <p className="text-xs text-muted-foreground">{stat.subtext}</p>}
+        <p className="text-foreground font-medium mb-3">{stat.label}</p>
+        {stat.subtext && (
+          isSourceCitation ? (
+            <span className="inline-block bg-white/5 border border-white/10 text-slate-300 px-2.5 py-1 rounded-full text-[10px] font-medium uppercase tracking-wider">
+              {sourceLabel}
+            </span>
+          ) : (
+            <p className="text-xs text-muted-foreground">{stat.subtext}</p>
+          )
+        )}
       </div>
     );
   }
