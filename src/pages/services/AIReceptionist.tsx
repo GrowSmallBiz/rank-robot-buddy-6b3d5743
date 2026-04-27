@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
-import { CaseStudySection } from "@/components/sections/CaseStudySection";
-import { BlogSection, type BlogPost } from "@/components/sections/BlogSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { CardCTA } from "@/components/services";
@@ -89,41 +87,6 @@ const AIReceptionist = () => {
     { value: "96.7%", label: "AI Success Rate", subtext: "Real Client Performance" },
   ];
 
-  const aiReceptionistCaseStudies = [
-    {
-      company: "Thompson HVAC Services",
-      location: "Nashville, TN",
-      industry: "HVAC Services",
-      challenge:
-        "Missing 40%+ of after-hours calls. Competitors were capturing emergency repair jobs worth $500-2,000 each.",
-      timeframe: "3 months",
-      metrics: [
-        { label: "Calls Captured", before: "58%", after: "97%", improvement: "+67%" },
-        { label: "After-Hours Bookings", before: "4/mo", after: "28/mo", improvement: "+600%" },
-        { label: "Monthly Revenue", before: "$68K", after: "$142K", improvement: "+109%" },
-      ],
-      quote: "No more missed calls or delayed responses. The voice AI handles after-hours calls perfectly.",
-      quoteName: "Mike Thompson",
-      quoteRole: "Owner, Thompson HVAC Services",
-    },
-    {
-      company: "Chen Family Dental",
-      location: "Austin, TX",
-      industry: "Dental Practice",
-      challenge:
-        "Receptionist overwhelmed with calls. New patient inquiries going to voicemail and never returning.",
-      timeframe: "4 months",
-      metrics: [
-        { label: "Missed Calls", before: "35/week", after: "2/week", improvement: "-94%" },
-        { label: "New Patient Bookings", before: "18/mo", after: "52/mo", improvement: "+189%" },
-        { label: "Staff Hours Saved", before: "0", after: "25/week", improvement: "New" },
-      ],
-      quote: "The AI books appointments while we focus on patient care. Our new patient flow has tripled.",
-      quoteName: "Dr. Sarah Chen",
-      quoteRole: "Owner, Chen Family Dental",
-    },
-  ];
-
   const industries = [
     { icon: Wrench, name: "HVAC Contractors", benefit: "Capture after-hours service calls worth $500-2,000 each" },
     { icon: Stethoscope, name: "Dental Offices", benefit: "Manage appointment requests and emergency consultations" },
@@ -183,36 +146,6 @@ const AIReceptionist = () => {
       question: "What if the AI gives wrong information to customers?",
       answer:
         "GrowSmallBiz extensively trains your AI on your specific business information, services, and pricing before going live. We test all responses thoroughly and program the AI to say 'Let me connect you with a team member' for any questions it's unsure about. You can review and update the AI's knowledge base anytime.",
-    },
-  ];
-
-  const blogPosts: BlogPost[] = [
-    {
-      title: "How AI Receptionists Are Revolutionizing Small Business",
-      excerpt:
-        "Discover how AI-powered virtual receptionists help small businesses capture more leads, reduce costs, and provide 24/7 customer service.",
-      category: "AI Technology",
-      author: "Subrata Guha",
-      date: "Dec 30, 2025",
-      readTime: "7 min read",
-    },
-    {
-      title: "The True Cost of Missed Calls for Service Businesses",
-      excerpt:
-        "Every missed call represents lost revenue. Learn how much missed calls are really costing your business and how to prevent it.",
-      category: "Business Growth",
-      author: "Subrata Guha",
-      date: "Dec 26, 2025",
-      readTime: "5 min read",
-    },
-    {
-      title: "AI vs Human Receptionists: Which Is Right for Your Business?",
-      excerpt:
-        "Compare the pros and cons of AI and human receptionists to find the perfect solution for your business needs and budget.",
-      category: "Comparison",
-      author: "Subrata Guha",
-      date: "Dec 22, 2025",
-      readTime: "6 min read",
     },
   ];
 
@@ -678,15 +611,6 @@ const AIReceptionist = () => {
           ]}
         />
 
-        {/* Case Studies Section */}
-        <CaseStudySection
-          caseStudies={aiReceptionistCaseStudies}
-          title="AI Receptionist Success Stories"
-          subtitle="Real results from businesses that never miss a call"
-          ctaLink={PRIMARY_CTA_URL}
-          ctaText="Get Results Like These"
-        />
-
         {/* FAQ Section */}
         <FAQSection
           title="Frequently Asked Questions"
@@ -699,14 +623,6 @@ const AIReceptionist = () => {
             description: "We're here to help! Reach out for a personalized walkthrough.",
             tagline: "Let's automate your customer service together.",
           }}
-        />
-
-        {/* Blog Section */}
-        <BlogSection
-          posts={blogPosts}
-          title="AI Receptionist Insights"
-          subtitle="Tips and strategies to maximize your AI-powered customer service"
-          showViewAll={false}
         />
 
         {/* Final CTA */}
