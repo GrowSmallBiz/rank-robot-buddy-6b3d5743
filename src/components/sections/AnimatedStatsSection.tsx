@@ -24,6 +24,7 @@ interface StatItem {
   value: string;
   label: string;
   subtext?: string;
+  sourceUrl?: string;
   icon?: LucideIcon;
 }
 
@@ -77,6 +78,8 @@ const AnimatedStatCard = ({ stat, index, variant = "default" }: AnimatedStatCard
     const sourceLabel = isSourceCitation
       ? stat.subtext!.replace(/^\s*source\s*:\s*/i, "")
       : null;
+    const pillBaseClass = "inline-block bg-white/5 border border-white/10 text-slate-300 px-2.5 py-1 rounded-full text-[10px] font-medium uppercase tracking-wider";
+    const pillLinkClass = `${pillBaseClass} hover:bg-primary/15 hover:border-primary/40 hover:text-primary transition-colors cursor-pointer`;
 
     return (
       <div
@@ -90,9 +93,19 @@ const AnimatedStatCard = ({ stat, index, variant = "default" }: AnimatedStatCard
         <p className="text-foreground font-medium mb-3">{stat.label}</p>
         {stat.subtext && (
           isSourceCitation ? (
-            <span className="inline-block bg-white/5 border border-white/10 text-slate-300 px-2.5 py-1 rounded-full text-[10px] font-medium uppercase tracking-wider">
-              {sourceLabel}
-            </span>
+            stat.sourceUrl ? (
+              <a
+                href={stat.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className={pillLinkClass}
+                aria-label={`Verify source: ${sourceLabel} (opens in new tab)`}
+              >
+                {sourceLabel} ↗
+              </a>
+            ) : (
+              <span className={pillBaseClass}>{sourceLabel}</span>
+            )
           ) : (
             <p className="text-xs text-muted-foreground">{stat.subtext}</p>
           )
