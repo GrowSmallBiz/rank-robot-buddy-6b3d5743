@@ -66,6 +66,7 @@ export const routes: RouteRecord[] = [
       { path: "services/seo-agency/on-page-seo", lazy: lazy(() => import("./pages/services/OnPageSEO")) },
       { path: "services/paid-ads", Component: () => <Redirect to="/services/paid-advertising/" /> },
       { path: "services/marketing-automation-for-small-business", lazy: lazy(() => import("./pages/services/MarketingAutomation")) },
+      { path: "services/ai-receptionist-and-conversational-ai", lazy: lazy(() => import("./pages/services/AIReceptionist")) },
       { path: "services/marketing-automation-for-small-business/universal-inbox", lazy: lazy(() => import("./pages/demos/UniversalInbox")) },
       { path: "services/marketing-automation-for-small-business/workflow-automations", lazy: lazy(() => import("./pages/demos/WorkflowAutomations")) },
       { path: "services/marketing-automation-for-small-business/website-builder", lazy: lazy(() => import("./pages/demos/WebsiteBuilder")) },
