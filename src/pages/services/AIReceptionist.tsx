@@ -678,15 +678,6 @@ const AIReceptionist = () => {
           ]}
         />
 
-        {/* Case Studies Section */}
-        <CaseStudySection
-          caseStudies={aiReceptionistCaseStudies}
-          title="AI Receptionist Success Stories"
-          subtitle="Real results from businesses that never miss a call"
-          ctaLink={PRIMARY_CTA_URL}
-          ctaText="Get Results Like These"
-        />
-
         {/* FAQ Section */}
         <FAQSection
           title="Frequently Asked Questions"
@@ -699,14 +690,6 @@ const AIReceptionist = () => {
             description: "We're here to help! Reach out for a personalized walkthrough.",
             tagline: "Let's automate your customer service together.",
           }}
-        />
-
-        {/* Blog Section */}
-        <BlogSection
-          posts={blogPosts}
-          title="AI Receptionist Insights"
-          subtitle="Tips and strategies to maximize your AI-powered customer service"
-          showViewAll={false}
         />
 
         {/* Final CTA */}
