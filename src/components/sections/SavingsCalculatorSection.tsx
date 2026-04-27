@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
-import { Phone, TrendingUp, Calculator, Info, AlertTriangle, CheckCircle2, RotateCcw } from "lucide-react";
+import { Phone, TrendingUp, Calculator, Info, Wallet, PiggyBank, RotateCcw } from "lucide-react";
 import { useUtm } from "@/hooks/use-utm";
 
 const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
@@ -21,57 +21,47 @@ const fmtMoney = (n: number) =>
     maximumFractionDigits: 0,
   });
 
-interface ScenarioCardProps {
+interface MoneyCardProps {
   title: string;
   subtitle: string;
-  cost: number;
-  callsStillMissed: number;
-  revenueLost: number;
-  net: number;
-  variant: "danger" | "success";
-  badge?: string;
-  icon: typeof AlertTriangle;
+  monthly: number;
+  annual: number;
+  monthlyLabel?: string;
+  annualLabel?: string;
+  variant: "cost" | "savings";
+  icon: typeof Wallet;
 }
 
-const ScenarioCard = ({
+const MoneyCard = ({
   title,
   subtitle,
-  cost,
-  callsStillMissed,
-  revenueLost,
-  net,
+  monthly,
+  annual,
+  monthlyLabel = "Per month",
+  annualLabel = "Per year",
   variant,
-  badge,
   icon: Icon,
-}: ScenarioCardProps) => {
+}: MoneyCardProps) => {
   const styles = {
-    danger: {
-      border: "border-destructive/30",
-      bg: "bg-destructive/5",
-      accent: "text-destructive",
-      iconBg: "bg-destructive/15 text-destructive",
-      badgeBg: "bg-destructive/15 text-destructive border-destructive/30",
+    cost: {
+      border: "border-amber-500/30",
+      bg: "bg-amber-500/5",
+      accent: "text-amber-400",
+      iconBg: "bg-amber-500/15 text-amber-400",
+      sign: "−",
     },
-    success: {
-      border: "border-primary/40",
-      bg: "bg-primary/5",
-      accent: "text-primary",
-      iconBg: "bg-primary/15 text-primary",
-      badgeBg: "bg-primary/15 text-primary border-primary/40",
+    savings: {
+      border: "border-emerald-500/40",
+      bg: "bg-emerald-500/5",
+      accent: "text-emerald-400",
+      iconBg: "bg-emerald-500/15 text-emerald-400",
+      sign: "+",
     },
   }[variant];
 
   return (
     <div className={`relative rounded-2xl border ${styles.border} ${styles.bg} p-6 flex flex-col h-full`}>
-      {badge && (
-        <span
-          className={`absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-semibold px-3 py-1 rounded-full border ${styles.badgeBg}`}
-        >
-          {badge}
-        </span>
-      )}
-
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex items-center gap-3 mb-5">
         <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${styles.iconBg}`}>
           <Icon className="w-5 h-5" />
         </div>
@@ -81,28 +71,21 @@ const ScenarioCard = ({
         </div>
       </div>
 
-      <div className="space-y-2.5 text-sm flex-1">
-        <div className="flex justify-between text-slate-300">
-          <span>Monthly cost</span>
-          <span className="font-semibold text-white">{fmtMoney(cost)}</span>
+      <div className="flex-1 space-y-4">
+        <div>
+          <p className="text-xs uppercase tracking-wider text-slate-500 mb-1">{monthlyLabel}</p>
+          <p className={`text-3xl md:text-4xl font-display font-bold ${styles.accent} leading-none`}>
+            {styles.sign}{fmtMoney(monthly)}
+            <span className="text-sm text-slate-400 font-normal ml-1">/mo</span>
+          </p>
         </div>
-        <div className="flex justify-between text-slate-300">
-          <span>Calls still missed</span>
-          <span className="font-semibold text-white">{Math.round(callsStillMissed)}/mo</span>
+        <div className="pt-3 border-t border-white/10">
+          <p className="text-xs uppercase tracking-wider text-slate-500 mb-1">{annualLabel}</p>
+          <p className={`text-2xl md:text-3xl font-display font-bold ${styles.accent} leading-none`}>
+            {styles.sign}{fmtMoney(annual)}
+            <span className="text-sm text-slate-400 font-normal ml-1">/yr</span>
+          </p>
         </div>
-        <div className="flex justify-between text-slate-300">
-          <span>Revenue still lost</span>
-          <span className={`font-semibold ${variant === "danger" ? "text-destructive/90" : "text-slate-400"}`}>
-            {fmtMoney(revenueLost)}
-          </span>
-        </div>
-      </div>
-
-      <div className="mt-5 pt-4 border-t border-white/10 text-center">
-        <p className="text-xs text-slate-400 mb-1">Net monthly position</p>
-        <p className={`text-3xl font-display font-bold ${styles.accent}`}>
-          {net >= 0 ? "+" : ""}{fmtMoney(net)}
-        </p>
       </div>
     </div>
   );
@@ -318,44 +301,39 @@ export const SavingsCalculatorSection = () => {
 
           {/* Results */}
           <div className="space-y-5" aria-live="polite">
-            {/* Headline */}
+            {/* Cost vs. Savings cards */}
+            <div className="grid md:grid-cols-2 gap-4">
+              <MoneyCard
+                title="Extra cost of AI Receptionist"
+                subtitle={hasHuman ? "On top of your current receptionist" : "New monthly investment"}
+                monthly={Math.max(0, aiCost - results.baselineCost)}
+                annual={Math.max(0, (aiCost - results.baselineCost) * 12)}
+                variant="cost"
+                icon={Wallet}
+              />
+              <MoneyCard
+                title="Revenue you recover"
+                subtitle={hasHuman ? "Calls your human still misses" : "Calls that go to voicemail today"}
+                monthly={Math.max(0, results.baselineRevenueLost - results.aiRevenueLost)}
+                annual={Math.max(0, (results.baselineRevenueLost - results.aiRevenueLost) * 12)}
+                variant="savings"
+                icon={PiggyBank}
+              />
+            </div>
+
+            {/* Headline net gain */}
             <div className="text-center bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 rounded-2xl p-6">
               <div className="flex items-center justify-center gap-2 text-slate-300 text-sm mb-3">
                 <TrendingUp className="w-4 h-4" />
-                <span>You'd be better off by</span>
+                <span>Net gain {hasHuman ? "vs. your current setup" : "with AI Receptionist"}</span>
               </div>
               <p className="text-5xl md:text-6xl font-display font-bold bg-gradient-heading bg-clip-text text-transparent leading-none">
-                {results.aiAdvantage * 12 >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage * 12)}
-                <span className="text-2xl text-slate-400 font-normal">/year</span>
+                {results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}
+                <span className="text-2xl text-slate-400 font-normal">/mo</span>
               </p>
               <p className="text-sm text-slate-400 mt-3">
-                ≈ <span className="text-white font-semibold">{results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}/mo</span> vs. {hasHuman ? "your current human receptionist" : "doing nothing"}
+                ≈ <span className="text-white font-semibold">{results.aiAdvantage * 12 >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage * 12)}/year</span> in your pocket
               </p>
-            </div>
-
-            {/* Scenario cards */}
-            <div className="grid md:grid-cols-2 gap-4 pt-2">
-              <ScenarioCard
-                title={hasHuman ? "With Human Receptionist" : "Without AI Receptionist"}
-                subtitle={hasHuman ? "Recovers ~50% of missed calls" : "All missed calls = lost revenue"}
-                cost={results.baselineCost}
-                callsStillMissed={results.baselineMissed}
-                revenueLost={results.baselineRevenueLost}
-                net={results.baselineNet}
-                variant="danger"
-                icon={AlertTriangle}
-              />
-              <ScenarioCard
-                title="With AI Receptionist"
-                subtitle="Recovers ~95% of missed calls"
-                cost={aiCost}
-                callsStillMissed={results.aiMissed}
-                revenueLost={results.aiRevenueLost}
-                net={results.aiNet}
-                variant="success"
-                badge="24/7 coverage"
-                icon={CheckCircle2}
-              />
             </div>
 
             {/* CTA */}
