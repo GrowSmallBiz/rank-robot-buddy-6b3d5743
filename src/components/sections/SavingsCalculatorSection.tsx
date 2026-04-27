@@ -203,7 +203,7 @@ export const SavingsCalculatorSection = () => {
                 variant="ghost"
                 size="sm"
                 onClick={resetToDefaults}
-                className="text-slate-400 hover:text-white hover:bg-white/5 h-8 px-2.5 text-xs"
+                className="text-emerald-400 hover:text-emerald-300 hover:bg-emerald-500/10 h-8 px-2.5 text-xs"
               >
                 <RotateCcw className="w-3.5 h-3.5 mr-1.5" />
                 Reset to defaults
