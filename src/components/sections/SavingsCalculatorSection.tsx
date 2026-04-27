@@ -147,7 +147,7 @@ export const SavingsCalculatorSection = () => {
           <p className="text-primary font-medium text-sm uppercase tracking-wider">Interactive Calculator</p>
         </div>
         <h3 className="text-3xl md:text-4xl font-display font-bold text-center text-white mb-2">
-          See What Missed Calls Are Costing You
+          Calculate Your Missed-Revenue Opportunity
         </h3>
         <p className="text-center text-slate-400 mb-10 max-w-2xl mx-auto">
           Drag the sliders to match your business. The math updates in real time.

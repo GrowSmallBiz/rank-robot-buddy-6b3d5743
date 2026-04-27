@@ -86,25 +86,21 @@ const AIReceptionist = () => {
       value: "$1T",
       label: "In U.S. Consumer Spending Influenced By Phone Calls",
       subtext: "Source: BIA/Kelsey",
-      sourceUrl: "https://www.invoca.com/blog/the-state-of-call-marketing",
     },
     {
       value: "21x",
       label: "More Likely To Qualify Leads When You Respond In 5 Minutes",
       subtext: "Source: Harvard Business Review",
-      sourceUrl: "https://hbr.org/2011/03/the-short-life-of-online-sales-leads",
     },
     {
       value: "60%",
       label: "Of Customers Prefer To Call Small Businesses About Purchases",
       subtext: "Source: Google / Ipsos",
-      sourceUrl: "https://www.thinkwithgoogle.com/marketing-strategies/search/click-to-call-mobile-search-ads-research/",
     },
     {
       value: "$1,200",
       label: "Average Lost Revenue Per Missed Call (Home Services)",
       subtext: "Source: Invoca",
-      sourceUrl: "https://www.invoca.com/blog/how-many-phone-calls-are-you-missing",
     },
   ];
 
