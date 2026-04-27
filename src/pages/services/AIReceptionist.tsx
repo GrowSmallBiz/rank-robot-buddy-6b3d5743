@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
+import { SavingsCalculatorSection } from "@/components/sections/SavingsCalculatorSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { CardCTA } from "@/components/services";
@@ -81,10 +82,10 @@ const AIReceptionist = () => {
   ];
 
   const stats = [
-    { value: "47%", label: "of Small Businesses Miss Calls", subtext: "Source: Alliance Virtual Offices" },
-    { value: "85%", label: "Never Call Back After Being Missed", subtext: "Source: Swingpointmedia" },
-    { value: "$1,200", label: "Average Lost Revenue Per Missed Call", subtext: "Source: Invoca (Home Services)" },
-    { value: "96.7%", label: "AI Success Rate", subtext: "Real Client Performance" },
+    { value: "$1T", label: "In U.S. Consumer Spending Influenced By Phone Calls", subtext: "Source: BIA/Kelsey" },
+    { value: "21x", label: "More Likely To Qualify Leads When You Respond In 5 Minutes", subtext: "Source: Harvard Business Review" },
+    { value: "60%", label: "Of Customers Prefer To Call Small Businesses About Purchases", subtext: "Source: Google / Ipsos" },
+    { value: "$1,200", label: "Average Lost Revenue Per Missed Call (Home Services)", subtext: "Source: Invoca" },
   ];
 
   const industries = [
@@ -268,10 +269,10 @@ const AIReceptionist = () => {
             <div className="text-center mb-16 animate-fade-up">
               <p className="font-medium mb-4 text-primary">The Hidden Cost of Missed Opportunities</p>
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
-                Industry Statistics That Will Shock You
+                What Missed Calls Are Really Costing You
               </h2>
               <p className="text-slate-400 max-w-2xl mx-auto">
-                Every missed call and delayed response costs your business real money
+                The research is clear — every unanswered call is revenue walking out the door
               </p>
             </div>
 
@@ -281,25 +282,7 @@ const AIReceptionist = () => {
               ))}
             </div>
 
-            <div className="mt-12 bg-destructive/10 border border-destructive/20 rounded-2xl p-6 max-w-3xl mx-auto animate-fade-up">
-              <h3 className="text-2xl font-semibold text-white mb-4 text-center">The Math That Matters</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="text-center">
-                  <p className="text-slate-400 mb-2">
-                    <strong>Without AI:</strong>
-                  </p>
-                  <p className="text-white">100 calls → 47 missed → 40 lost forever</p>
-                  <p className="text-destructive font-bold">= $48,000 lost monthly</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-slate-400 mb-2">
-                    <strong>With AI:</strong>
-                  </p>
-                  <p className="text-white">100 calls → 97 handled → 71 resolved</p>
-                  <p className="font-bold text-primary">= $0 lost revenue</p>
-                </div>
-              </div>
-            </div>
+            <SavingsCalculatorSection />
           </div>
         </section>
 
