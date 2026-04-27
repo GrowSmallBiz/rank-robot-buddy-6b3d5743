@@ -288,16 +288,16 @@ export const SavingsCalculatorSection = () => {
           <div className="space-y-5" aria-live="polite">
             {/* Headline */}
             <div className="text-center bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 rounded-2xl p-6">
-              <div className="flex items-center justify-center gap-2 text-slate-300 text-sm mb-2">
+              <div className="flex items-center justify-center gap-2 text-slate-300 text-sm mb-3">
                 <TrendingUp className="w-4 h-4" />
                 <span>You'd be better off by</span>
               </div>
-              <p className="text-4xl md:text-5xl font-display font-bold bg-gradient-heading bg-clip-text text-transparent">
-                {results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}
-                <span className="text-xl text-slate-400 font-normal">/mo</span>
+              <p className="text-5xl md:text-6xl font-display font-bold bg-gradient-heading bg-clip-text text-transparent leading-none">
+                {results.aiAdvantage * 12 >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage * 12)}
+                <span className="text-2xl text-slate-400 font-normal">/year</span>
               </p>
-              <p className="text-sm text-slate-400 mt-2">
-                = {fmtMoney(results.aiAdvantage * 12)} per year vs. {hasHuman ? "your current human receptionist" : "doing nothing"}
+              <p className="text-sm text-slate-400 mt-3">
+                ≈ <span className="text-white font-semibold">{results.aiAdvantage >= 0 ? "+" : ""}{fmtMoney(results.aiAdvantage)}/mo</span> vs. {hasHuman ? "your current human receptionist" : "doing nothing"}
               </p>
             </div>
 
