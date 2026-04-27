@@ -15,6 +15,7 @@ Canonical: https://growsmallbiz.io/
 
 ## Services
 - Services: https://growsmallbiz.io/services/
+- AI Receptionist And Conversational Ai: https://growsmallbiz.io/services/ai-receptionist-and-conversational-ai/
 - Facebook Ads: https://growsmallbiz.io/services/facebook-ads/
 - Google Ads: https://growsmallbiz.io/services/google-ads/
 - Local SEO: https://growsmallbiz.io/services/local-seo/
