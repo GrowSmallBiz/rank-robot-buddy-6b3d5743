@@ -147,7 +147,7 @@ export const SavingsCalculatorSection = () => {
           <p className="text-primary font-medium text-sm uppercase tracking-wider">Interactive Calculator</p>
         </div>
         <h3 className="text-3xl md:text-4xl font-display font-bold text-center text-white mb-2">
-          See What Missed Calls Are Costing You
+          Calculate Your Missed-Revenue Opportunity
         </h3>
         <p className="text-center text-slate-400 mb-10 max-w-2xl mx-auto">
           Drag the sliders to match your business. The math updates in real time.
@@ -331,40 +331,13 @@ export const SavingsCalculatorSection = () => {
             </summary>
             <div className="mt-4 text-xs text-slate-400 space-y-2 leading-relaxed">
               <p>
-                <strong className="text-slate-300">Coverage assumptions:</strong> "Do nothing" captures ~38% of leads (
-                <a
-                  href="https://www.invoca.com/blog/how-many-phone-calls-are-you-missing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Invoca, 2023
-                </a>
-                : ~62% of business calls go unanswered). A single full-time human receptionist captures ~40% (business hours only, ~40 of 168 weekly hours, weighted for daytime call density). AI captures 97% (24/7, instant answer).
+                <strong className="text-slate-300">Coverage assumptions:</strong> "Do nothing" captures ~38% of leads (industry research shows ~62% of business calls go unanswered). A single full-time human receptionist captures ~40% (business hours only, ~40 of 168 weekly hours, weighted for daytime call density). AI captures 97% (24/7, instant answer).
               </p>
               <p>
-                <strong className="text-slate-300">Why instant answer matters:</strong> Responding to inbound leads within 5 minutes makes you{" "}
-                <a
-                  href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  21× more likely to qualify them
-                </a>{" "}
-                (Harvard Business Review).
+                <strong className="text-slate-300">Why instant answer matters:</strong> Harvard Business Review research shows responding to inbound leads within 5 minutes makes you 21× more likely to qualify them.
               </p>
               <p>
-                <strong className="text-slate-300">Phone calls drive purchases:</strong> Phone calls influence over $1 trillion in U.S. consumer spending annually (
-                <a
-                  href="https://biakelsey.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  BIA/Kelsey
-                </a>
-                ), and 60% of customers prefer to call small businesses about purchases (Google/Ipsos).
+                <strong className="text-slate-300">Phone calls drive purchases:</strong> Phone calls influence over $1 trillion in U.S. consumer spending annually (BIA/Kelsey), and 60% of customers prefer to call small businesses about purchases (Google/Ipsos).
               </p>
               <p className="text-slate-500 italic">
                 Estimates only — actual results vary by industry, lead quality, and operational factors. Not a guarantee.
