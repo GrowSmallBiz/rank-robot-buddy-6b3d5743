@@ -99,19 +99,12 @@ export const IndustryCallBenchmarksSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-14 max-w-3xl mx-auto">
-          <p className="text-primary font-semibold text-sm uppercase tracking-[0.2em] mb-4">
-            Industry Benchmarks
-          </p>
-          <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-6 leading-[1.05]">
-            <span className="bg-gradient-heading bg-clip-text text-transparent">
-              The Numbers Don't Lie.
-            </span>
-            <br />
-            <span className="text-white">Your Industry Is Bleeding Calls.</span>
+          <p className="font-medium mb-4 text-primary">Industry Benchmarks</p>
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
+            The Numbers Don't Lie — Your Industry Is Bleeding Calls
           </h2>
           <p className="text-lg text-slate-300 leading-relaxed">
-            Real benchmarks from millions of analyzed calls across 6 industries.
-            <br className="hidden md:block" />
+            Real benchmarks from millions of analyzed calls across 6 industries.{" "}
             <span className="text-white font-semibold">1 in 4 calls go unanswered</span> — every single one is a customer your competitor will gladly take.
           </p>
         </div>
