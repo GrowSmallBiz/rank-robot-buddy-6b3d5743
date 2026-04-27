@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
-import { Phone, TrendingUp, Calculator, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
+import { Phone, TrendingUp, Calculator, Info, AlertTriangle, CheckCircle2, RotateCcw } from "lucide-react";
 import { useUtm } from "@/hooks/use-utm";
 
 const PRIMARY_CTA_URL = "https://lp.growsmallbiz.io/digital-growth-strategy-session";
@@ -111,12 +111,30 @@ const ScenarioCard = ({
 export const SavingsCalculatorSection = () => {
   const { buildUrl } = useUtm();
 
-  const [missedCallsPerMonth, setMissedCallsPerMonth] = useState(60);
-  const [avgValue, setAvgValue] = useState(500);
-  const [conversionRate, setConversionRate] = useState(25);
-  const [hasHuman, setHasHuman] = useState(false);
-  const [humanCost, setHumanCost] = useState(3500);
-  const [aiCost, setAiCost] = useState(399);
+  const DEFAULTS = {
+    missedCallsPerMonth: 60,
+    avgValue: 500,
+    conversionRate: 25,
+    hasHuman: false,
+    humanCost: 3500,
+    aiCost: 399,
+  };
+
+  const [missedCallsPerMonth, setMissedCallsPerMonth] = useState(DEFAULTS.missedCallsPerMonth);
+  const [avgValue, setAvgValue] = useState(DEFAULTS.avgValue);
+  const [conversionRate, setConversionRate] = useState(DEFAULTS.conversionRate);
+  const [hasHuman, setHasHuman] = useState(DEFAULTS.hasHuman);
+  const [humanCost, setHumanCost] = useState(DEFAULTS.humanCost);
+  const [aiCost, setAiCost] = useState(DEFAULTS.aiCost);
+
+  const resetToDefaults = () => {
+    setMissedCallsPerMonth(DEFAULTS.missedCallsPerMonth);
+    setAvgValue(DEFAULTS.avgValue);
+    setConversionRate(DEFAULTS.conversionRate);
+    setHasHuman(DEFAULTS.hasHuman);
+    setHumanCost(DEFAULTS.humanCost);
+    setAiCost(DEFAULTS.aiCost);
+  };
 
   const results = useMemo(() => {
     // Total revenue at risk from currently-missed calls
@@ -179,6 +197,18 @@ export const SavingsCalculatorSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Inputs */}
           <div className="space-y-7">
+            <div className="flex justify-end -mb-3">
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={resetToDefaults}
+                className="text-slate-400 hover:text-white hover:bg-white/5 h-8 px-2.5 text-xs"
+              >
+                <RotateCcw className="w-3.5 h-3.5 mr-1.5" />
+                Reset to defaults
+              </Button>
+            </div>
             {/* Missed calls per month */}
             <div>
               <div className="flex justify-between items-baseline mb-3">
