@@ -274,7 +274,9 @@ export const SavingsCalculatorSection = () => {
                 step={10}
                 aria-label="AI Receptionist monthly cost"
               />
-              <p className="text-xs text-slate-500 mt-1">Typical GrowSmallBiz AI Receptionist plan range</p>
+              <p className="text-xs text-slate-500 mt-1">
+                <span className="text-amber-400/90 font-medium">Illustrative only</span> — typical plan range. Actual cost varies by implementation, call volume, and integrations.
+              </p>
               <p className="text-xs text-slate-500 mt-2 leading-relaxed">
                 Note: AI answers ~95% of missed calls 24/7, but recovered callers still convert at <strong className="text-slate-300">your normal {conversionRate}% rate</strong> set above — not 100%. The math already factors this in.
               </p>
