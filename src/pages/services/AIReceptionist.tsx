@@ -269,10 +269,10 @@ const AIReceptionist = () => {
             <div className="text-center mb-16 animate-fade-up">
               <p className="font-medium mb-4 text-primary">The Hidden Cost of Missed Opportunities</p>
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
-                Industry Statistics That Will Shock You
+                What Missed Calls Are Really Costing You
               </h2>
               <p className="text-slate-400 max-w-2xl mx-auto">
-                Every missed call and delayed response costs your business real money
+                The research is clear — every unanswered call is revenue walking out the door
               </p>
             </div>
 
