@@ -180,7 +180,10 @@ export const SavingsCalculatorSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Inputs */}
           <div className="space-y-7">
-            <div className="flex justify-end -mb-3">
+            <div className="flex items-center justify-between gap-4 -mb-3">
+              <h4 className="text-base md:text-lg font-display font-semibold text-primary">
+                Adjust the sliders to match your business scenario
+              </h4>
               <Button
                 type="button"
                 variant="ghost"
