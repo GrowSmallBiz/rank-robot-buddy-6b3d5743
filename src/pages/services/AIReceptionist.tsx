@@ -232,10 +232,17 @@ const AIReceptionist = () => {
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
         <section className="relative py-24 lg:py-32 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          />
+          <div className="absolute inset-0">
+            <img
+              src={heroImage}
+              alt="AI Receptionist and Conversational AI handling 24/7 calls and chats for small businesses"
+              width={1920}
+              height={1080}
+              fetchPriority="high"
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <div className="absolute inset-0 bg-background/85" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
