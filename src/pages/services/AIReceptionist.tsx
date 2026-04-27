@@ -149,36 +149,6 @@ const AIReceptionist = () => {
     },
   ];
 
-  const blogPosts: BlogPost[] = [
-    {
-      title: "How AI Receptionists Are Revolutionizing Small Business",
-      excerpt:
-        "Discover how AI-powered virtual receptionists help small businesses capture more leads, reduce costs, and provide 24/7 customer service.",
-      category: "AI Technology",
-      author: "Subrata Guha",
-      date: "Dec 30, 2025",
-      readTime: "7 min read",
-    },
-    {
-      title: "The True Cost of Missed Calls for Service Businesses",
-      excerpt:
-        "Every missed call represents lost revenue. Learn how much missed calls are really costing your business and how to prevent it.",
-      category: "Business Growth",
-      author: "Subrata Guha",
-      date: "Dec 26, 2025",
-      readTime: "5 min read",
-    },
-    {
-      title: "AI vs Human Receptionists: Which Is Right for Your Business?",
-      excerpt:
-        "Compare the pros and cons of AI and human receptionists to find the perfect solution for your business needs and budget.",
-      category: "Comparison",
-      author: "Subrata Guha",
-      date: "Dec 22, 2025",
-      readTime: "6 min read",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Head>
