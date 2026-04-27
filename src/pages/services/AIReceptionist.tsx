@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
+import { SavingsCalculatorSection } from "@/components/sections/SavingsCalculatorSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { CardCTA } from "@/components/services";
@@ -281,25 +282,7 @@ const AIReceptionist = () => {
               ))}
             </div>
 
-            <div className="mt-12 bg-destructive/10 border border-destructive/20 rounded-2xl p-6 max-w-3xl mx-auto animate-fade-up">
-              <h3 className="text-2xl font-semibold text-white mb-4 text-center">The Math That Matters</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="text-center">
-                  <p className="text-slate-400 mb-2">
-                    <strong>Without AI:</strong>
-                  </p>
-                  <p className="text-white">100 calls → 47 missed → 40 lost forever</p>
-                  <p className="text-destructive font-bold">= $48,000 lost monthly</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-slate-400 mb-2">
-                    <strong>With AI:</strong>
-                  </p>
-                  <p className="text-white">100 calls → 97 handled → 71 resolved</p>
-                  <p className="font-bold text-primary">= $0 lost revenue</p>
-                </div>
-              </div>
-            </div>
+            <SavingsCalculatorSection />
           </div>
         </section>
 
