@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { AnimatedStatCard } from "@/components/sections/AnimatedStatsSection";
 import { SavingsCalculatorSection } from "@/components/sections/SavingsCalculatorSection";
+import { IndustryCallBenchmarksSection } from "@/components/sections/IndustryCallBenchmarksSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
 import { CardCTA } from "@/components/services";
