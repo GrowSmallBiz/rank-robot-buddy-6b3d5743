@@ -173,7 +173,8 @@ export const routes: RouteRecord[] = [
 
       // ── 301 REDIRECTS: -seo-case-study → -marketing-case-study (combined SEO+PPC content) ──
       { path: "home-service-contractors/marketing-for-roofers/roofing-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" /> },
-      { path: "home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" /> },
+      { path: "home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
+      { path: "home-service-contractors/tree-lawn-landscaping-marketing/landscaping-seo-case-study", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
       { path: "home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" /> },
       { path: "home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" /> },
       { path: "health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" /> },
