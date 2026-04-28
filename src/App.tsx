@@ -170,6 +170,14 @@ export const routes: RouteRecord[] = [
       { path: "health-and-wellness-practices/dental-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/" /> },
       { path: "health-and-wellness-practices/chiropractic-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/" /> },
 
+      // ── 301 REDIRECTS: -seo-case-study → -marketing-case-study (combined SEO+PPC content) ──
+      { path: "home-service-contractors/marketing-for-roofers/roofing-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" /> },
+      { path: "home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" /> },
+      { path: "home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" /> },
+      { path: "health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" /> },
+      { path: "health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/" /> },
+      { path: "health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/" /> },
+
       { path: "blog", Component: () => <Redirect to="/" /> },
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
