@@ -117,7 +117,8 @@ export const routes: RouteRecord[] = [
       { path: "home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
       { path: "home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
       { path: "home-service-contractors/marketing-for-roofers/roofing-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
-      { path: "home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
+      { path: "home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
+      { path: "home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
       { path: "home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
       { path: "home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
 
@@ -151,7 +152,7 @@ export const routes: RouteRecord[] = [
       { path: "case-studies/local-seo-service/hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
       { path: "case-studies/local-seo-hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
       { path: "case-studies/roofers", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" /> },
-      { path: "case-studies/tree-lawn-landscaping", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" /> },
+      { path: "case-studies/tree-lawn-landscaping", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
       { path: "case-studies/home-remodeling", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" /> },
       { path: "case-studies/cleaning-services", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" /> },
       { path: "case-studies/med-spa-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" /> },
@@ -162,7 +163,7 @@ export const routes: RouteRecord[] = [
       { path: "home-service-contractors/hvac-marketing/seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
       { path: "home-service-contractors/hvac-marketing/google-ads-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" /> },
       { path: "home-service-contractors/roofing-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" /> },
-      { path: "home-service-contractors/landscaping-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" /> },
+      { path: "home-service-contractors/landscaping-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
       { path: "home-service-contractors/home-renovation-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" /> },
       { path: "home-service-contractors/cleaning-service-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" /> },
 
@@ -172,7 +173,8 @@ export const routes: RouteRecord[] = [
 
       // ── 301 REDIRECTS: -seo-case-study → -marketing-case-study (combined SEO+PPC content) ──
       { path: "home-service-contractors/marketing-for-roofers/roofing-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" /> },
-      { path: "home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" /> },
+      { path: "home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
+      { path: "home-service-contractors/tree-lawn-landscaping-marketing/landscaping-seo-case-study", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
       { path: "home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" /> },
       { path: "home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" /> },
       { path: "health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" /> },

@@ -270,7 +270,7 @@ const seoCampaignResults = [
       "1.1 Average Map Rank",
       "+770% Phone Number Clicks",
     ],
-    link: "/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/",
+    link: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
   },
   {
     title: "Home Remodeling Growth",
@@ -328,7 +328,7 @@ const ppcCampaignResults = [
       "+16.7% Conversion Rate",
       "299 Conversions — Last 90 Days",
     ],
-    link: "/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/",
+    link: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
   },
 ];
 const HomeServices = () => {
