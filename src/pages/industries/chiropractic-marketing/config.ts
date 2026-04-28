@@ -666,7 +666,7 @@ export const chiropracticConfig: NicheConfig = {
   // ── Case Study Links ──
   caseStudyLinks: [
     {
-      title: "Chiropractic SEO Case Study",
+      title: "Chiropractic Marketing Case Study",
       description: "How we helped a chiropractic clinic grow organic visibility and patient appointments with AI-powered SEO.",
       url: "/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/",
       icon: Search,
