@@ -117,7 +117,8 @@ export const routes: RouteRecord[] = [
       { path: "home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study", lazy: lazy(() => import("./pages/case-studies/local-seo-service/HvacPlumbingElectrical")) },
       { path: "home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study", lazy: lazy(() => import("./pages/case-studies/google-ads-for-small-businesses/HvacPlumbingElectrical")) },
       { path: "home-service-contractors/marketing-for-roofers/roofing-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
-      { path: "home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
+      { path: "home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
+      { path: "home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
       { path: "home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
       { path: "home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
 
