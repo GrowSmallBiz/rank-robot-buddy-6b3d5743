@@ -292,7 +292,7 @@ const seoCampaignResults = [
       "+114.8% GBP Calls",
       "+119.3% GBP Website Clicks",
     ],
-    link: "/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/",
+    link: "/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/",
   },
 ];
 
