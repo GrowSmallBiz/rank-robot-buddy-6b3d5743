@@ -43,7 +43,7 @@ import {
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/services/SectionHeader";
 import heroBg from "@/assets/facebook-ads/hero-bg.jpg";
-import leakyBucket from "@/assets/facebook-ads/leaky-bucket.jpg";
+import leakyBucket from "@/assets/facebook-ads/leaky-bucket.webp";
 import {
   Breadcrumb,
   BreadcrumbItem,

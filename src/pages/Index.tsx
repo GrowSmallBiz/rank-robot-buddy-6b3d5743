@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { baseContactCTA } from "@/config/contactCTA";
-import leakyBucket from "@/assets/facebook-ads/leaky-bucket.jpg";
+import leakyBucket from "@/assets/facebook-ads/leaky-bucket.webp";
 import connectedBucket from "@/assets/facebook-ads/connected-bucket.jpg";
 
 
