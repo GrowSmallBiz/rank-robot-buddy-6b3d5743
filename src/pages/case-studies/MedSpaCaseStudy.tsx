@@ -108,8 +108,8 @@ const MedSpaCaseStudy = () => {
   return (
     <>
       <Head>
-        <title>Med Spa SEO Case Study: Real Results & Revenue Growth | GrowSmallBiz</title>
-        <meta name="description" content="GrowSmallBiz's med spa AI SEO case study: See how we drive organic growth, improve rankings, and generate leads with AI-powered marketing." />
+        <title>Med Spa Marketing Case Study: Real Results & Revenue Growth | GrowSmallBiz</title>
+        <meta name="description" content="GrowSmallBiz's med spa AI marketing case study: See how we drive organic growth, improve rankings, and generate leads with AI-powered marketing." />
         <meta name="keywords" content="med spa marketing, SEO for med spas, PPC advertising for med spas, digital marketing agency, lead generation strategies, case studies med spas, organic traffic growth, keyword rankings med spas" />
         <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" />
         <meta property="og:title" content="Grow Your Med Spa: Proven SEO &amp; Google Ads Solutions" />
