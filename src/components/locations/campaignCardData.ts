@@ -107,7 +107,7 @@ const treeLawnSEO: CampaignCard = {
     "1.1 Average Map Rank",
     "+770% Phone Number Clicks",
   ],
-  link: "/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/",
+  link: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
 };
 
 // ── Per-city card sets (2 Health & Wellness + 2 Home Service) ──

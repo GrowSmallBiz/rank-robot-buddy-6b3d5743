@@ -362,7 +362,7 @@ export const Header = () => {
                     <Link to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Roofers
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Tree Care, Lawn Care & Landscaping
                     </Link>
                     <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
@@ -673,7 +673,7 @@ export const Header = () => {
                     <Link to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Roofers
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                    <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Tree Care, Lawn Care & Landscaping
                     </Link>
                     <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">

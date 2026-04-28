@@ -186,7 +186,7 @@ const caseStudyCards = [
       { value: "+169.5%", label: "90-Day Clicks" },
       { value: "+211.5%", label: "90-Day Conversions" },
     ],
-    href: "/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/",
+    href: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
   },
 ];
 
