@@ -111,18 +111,18 @@ const MedSpaCaseStudy = () => {
         <title>Med Spa SEO Case Study: Real Results & Revenue Growth | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz's med spa AI SEO case study: See how we drive organic growth, improve rankings, and generate leads with AI-powered marketing." />
         <meta name="keywords" content="med spa marketing, SEO for med spas, PPC advertising for med spas, digital marketing agency, lead generation strategies, case studies med spas, organic traffic growth, keyword rankings med spas" />
-        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" />
+        <link rel="canonical" href="https://growsmallbiz.io/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" />
         <meta property="og:title" content="Grow Your Med Spa: Proven SEO &amp; Google Ads Solutions" />
       </Head>
       <ArticleJsonLd
         headline="Real Results for Med Spa Businesses — Not Projections"
         description="Documented AI SEO and Google Ads results for med spa clients."
-        url="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/"
+        url="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/"
         datePublished="2025-01-15"
         breadcrumbs={[
           { name: "Health & Wellness", url: "/health-and-wellness-practices/" },
           { name: "Med Spa Marketing", url: "/health-and-wellness-practices/marketing-for-med-spas/" },
-          { name: "Case Study", url: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" },
+          { name: "Case Study", url: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" },
         ]}
       />
       <Header />

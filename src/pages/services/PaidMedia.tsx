@@ -258,7 +258,7 @@ const resultsCards = [
       { value: "−48.9%", label: "Cost/Conversion" },
       { value: "+123.4%", label: "Conversion Rate" },
     ],
-    href: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+    href: "/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/",
   },
   {
     eyebrow: "Dental Practice — Concord, CA",
@@ -272,7 +272,7 @@ const resultsCards = [
       { value: "+187.04%", label: "Conversion Rate" },
       { value: "+127.25%", label: "CTR" },
     ],
-    href: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/",
+    href: "/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/",
   },
   {
     eyebrow: "Med Spa — San Ramon, CA",
@@ -286,7 +286,7 @@ const resultsCards = [
       { value: "+48.8%", label: "30-Day Conversions" },
       { value: "−31.1%", label: "30-Day CPA" },
     ],
-    href: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+    href: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/",
   },
 ];
 

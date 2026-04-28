@@ -11,7 +11,7 @@ const medSpaLocalSEO: CampaignCard = {
     "#1 Rankings — Laser Skin Treatment",
     "Significant local pack visibility gains",
   ],
-  link: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+  link: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/",
 };
 
 const medSpaAISEO: CampaignCard = {
@@ -23,7 +23,7 @@ const medSpaAISEO: CampaignCard = {
     "+66.76% Total Clicks (GSC)",
     "Average position improved from 31.8 to 25.5",
   ],
-  link: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+  link: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/",
 };
 
 const dentalGoogleAds: CampaignCard = {
@@ -35,7 +35,7 @@ const dentalGoogleAds: CampaignCard = {
     "+187.04% Conversion Rate",
     "+127.25% Account CTR",
   ],
-  link: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/",
+  link: "/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/",
 };
 
 const chiroAISEO: CampaignCard = {
@@ -47,7 +47,7 @@ const chiroAISEO: CampaignCard = {
     "#1 Emergency Chiropractic Care",
     "+33.4% GBP Website Visits YOY",
   ],
-  link: "/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/",
+  link: "/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/",
 };
 
 const roofingSEO: CampaignCard = {
@@ -59,7 +59,7 @@ const roofingSEO: CampaignCard = {
     "+127% GBP Views",
     "90+ Spot Keyword Gains",
   ],
-  link: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+  link: "/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/",
 };
 
 const cleaningSEO: CampaignCard = {
@@ -95,7 +95,7 @@ const homeRemodelingGrowth: CampaignCard = {
     "+375.10% Impressions",
     "+15% GBP Calls",
   ],
-  link: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/",
+  link: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/",
 };
 
 const treeLawnSEO: CampaignCard = {
@@ -107,7 +107,7 @@ const treeLawnSEO: CampaignCard = {
     "1.1 Average Map Rank",
     "+770% Phone Number Clicks",
   ],
-  link: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/",
+  link: "/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/",
 };
 
 // ── Per-city card sets (2 Health & Wellness + 2 Home Service) ──

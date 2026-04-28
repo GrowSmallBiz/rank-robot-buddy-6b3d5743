@@ -734,7 +734,7 @@ export const medSpaConfig: NicheConfig = {
     {
       title: "Med Spa SEO Case Study",
       description: "How we helped med spas in Pleasanton, San Gabriel, and San Ramon grow organic traffic and treatment bookings.",
-      url: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+      url: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/",
       icon: Search,
     },
   ],

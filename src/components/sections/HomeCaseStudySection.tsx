@@ -122,7 +122,7 @@ const healthWellnessCards = [
       "#1 Rankings — Laser Skin Treatment",
       "Significant local pack visibility gains",
     ],
-    link: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+    link: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/",
   },
   {
     title: "Dental Practice Google Ads",
@@ -133,7 +133,7 @@ const healthWellnessCards = [
       "+187.04% Conversion Rate",
       "+127.25% Account CTR",
     ],
-    link: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/",
+    link: "/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/",
   },
 ];
 

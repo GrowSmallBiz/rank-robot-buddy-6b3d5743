@@ -138,7 +138,7 @@ const caseStudyCards = [
       { value: "+187.04%", label: "Conversion Rate" },
       { value: "+127.25%", label: "CTR" },
     ],
-    href: "/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/",
+    href: "/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/",
   },
   {
     badge: "Med Spa — San Ramon, CA",
@@ -154,7 +154,7 @@ const caseStudyCards = [
       { value: "+48.8%", label: "30-Day Conversions" },
       { value: "−31.1%", label: "30-Day CPA" },
     ],
-    href: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/",
+    href: "/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/",
   },
   {
     badge: "Roofing Contractor — Palm Beach County, FL",
@@ -170,7 +170,7 @@ const caseStudyCards = [
       { value: "$70.13", label: "Martin/St Lucie CPA" },
       { value: "21.06%", label: "Martin/St Lucie Conv. Rate" },
     ],
-    href: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+    href: "/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/",
   },
   {
     badge: "Tree & Lawn Care — Chicagoland",
@@ -186,7 +186,7 @@ const caseStudyCards = [
       { value: "+169.5%", label: "90-Day Clicks" },
       { value: "+211.5%", label: "90-Day Conversions" },
     ],
-    href: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/",
+    href: "/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/",
   },
 ];
 

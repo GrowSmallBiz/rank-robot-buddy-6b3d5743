@@ -359,13 +359,13 @@ export const Header = () => {
                     <Link to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       HVAC, Plumbing & Electrical — Google Ads
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Roofers
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Tree Care, Lawn Care & Landscaping
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Home Remodeling
                     </Link>
                     <Link to="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
@@ -385,13 +385,13 @@ export const Header = () => {
                     <ChevronRight className="w-3.5 h-3.5" />
                   </button>
                   <div className={`absolute left-full top-0 ml-1 w-64 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isCsHealthOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
-                    <Link to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Med Spa
                     </Link>
-                    <Link to="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Dental Practices
                     </Link>
-                    <Link to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Chiropractic
                     </Link>
                   </div>
@@ -670,13 +670,13 @@ export const Header = () => {
                     <Link to="/home-service-contractors/marketing-for-hvac-contractors/hvac-google-ads-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       HVAC, Plumbing & Electrical — Google Ads
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                    <Link to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Roofers
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                    <Link to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Tree Care, Lawn Care & Landscaping
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                    <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Home Remodeling
                     </Link>
                     <Link to="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
@@ -694,13 +694,13 @@ export const Header = () => {
                 </button>
                 {mobileCsHealthOpen && (
                   <div className="pl-3 space-y-1">
-                    <Link to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                    <Link to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Med Spa
                     </Link>
-                    <Link to="/health-and-wellness-practices/marketing-for-dentists/dental-seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                    <Link to="/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Dental Practices
                     </Link>
-                    <Link to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                    <Link to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Chiropractic
                     </Link>
                   </div>
