@@ -222,7 +222,7 @@ const Chiropractor = () => {
 </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">The following results are drawn from verified client engagements.</p>
             <Button variant="outline" size="lg" asChild>
-              <Link to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study/">
+              <Link to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/">
                 View AI SEO Case Study →
               </Link>
             </Button>

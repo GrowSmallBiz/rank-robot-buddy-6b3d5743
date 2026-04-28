@@ -259,7 +259,7 @@ const seoCampaignResults = [
       "+127% GBP Views",
       "90+ Spot Keyword Gains",
     ],
-    link: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+    link: "/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/",
   },
   {
     title: "Tree & Lawn SEO Growth",
@@ -270,7 +270,7 @@ const seoCampaignResults = [
       "1.1 Average Map Rank",
       "+770% Phone Number Clicks",
     ],
-    link: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/",
+    link: "/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/",
   },
   {
     title: "Home Remodeling Growth",
@@ -281,7 +281,7 @@ const seoCampaignResults = [
       "+375.10% Impressions",
       "+15% GBP Calls",
     ],
-    link: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/",
+    link: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/",
   },
   {
     title: "Cleaning Service SEO Growth",
@@ -317,7 +317,7 @@ const ppcCampaignResults = [
       "-48.9% Cost Per Conversion",
       "+17.7% Clicks",
     ],
-    link: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/",
+    link: "/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/",
   },
   {
     title: "Tree & Lawn Google PPC Growth",
@@ -328,7 +328,7 @@ const ppcCampaignResults = [
       "+16.7% Conversion Rate",
       "299 Conversions — Last 90 Days",
     ],
-    link: "/home-service-contractors/marketing-for-landscapers/landscaping-seo-case-study/",
+    link: "/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/",
   },
 ];
 const HomeServices = () => {

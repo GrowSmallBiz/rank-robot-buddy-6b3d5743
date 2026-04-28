@@ -23,7 +23,7 @@ import { CardCTA, PersonCTA } from "@/components/services";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { RelatedQuestionsSection } from "@/components/sections/RelatedQuestionsSection";
 import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
-import { relatedFaqs as roofersRelatedFaqs } from "@/data/faq/roofing-seo-case-study-related";
+import { relatedFaqs as roofersRelatedFaqs } from "@/data/faq/roofing-marketing-case-study-related";
 
 const roofersVisibleFaqs = [
   { question: "Can GrowSmallBiz create a similar strategy for my roofing business?", answer: "Yes. Every business starts from a different baseline, market, service area, level of competition, and budget, so no two campaigns are identical. But the same strategic thinking behind these case studies can be adapted to your business. GrowSmallBiz builds tailored Local SEO and paid ads strategies around your goals, your market, and the specific opportunities available in your service area.\n\nWe conduct a complimentary audit to determine what could be realistically possible, cost and ROI before we undertake any assignment." },
@@ -171,19 +171,19 @@ const Roofers = () => {
   return (
     <>
       <Head>
-        <title>Roofing SEO Case Study: Real Results for Contractors | GrowSmallBiz</title>
+        <title>Roofing Marketing Case Study: Real Contractor Results | GrowSmallBiz</title>
         <meta name="description" content="GrowSmallBiz helps roofing contractors get real AI SEO and AI optimized PPC results. See our case studies for real growth. Call us today!" />
         <meta name="keywords" content="roofing SEO, PPC for roofers, digital marketing for roofing contractors, local SEO strategies, lead generation for roofing businesses, AI-powered marketing solutions, case studies for roofers, GrowSmallBiz marketing services" />
-        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" />
       </Head>
       <ArticleJsonLd
         headline="Real Results for Roofing Contractors — Not Projections"
         description="Explore documented case study results for roofing businesses across Local SEO and PPC campaigns."
-        url="/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/"
+        url="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/"
         datePublished="2025-01-15"
         breadcrumbs={[
           { name: "Home Service Contractors", url: "/home-service-contractors/" },
-          { name: "Roofers", url: "/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/" },
+          { name: "Roofers", url: "/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" },
         ]}
       />
       <Header />
@@ -802,7 +802,7 @@ const Roofers = () => {
 
         <FaqJsonLd
           items={[...roofersVisibleFaqs, ...roofersRelatedFaqs]}
-          pageUrl="https://growsmallbiz.io/home-service-contractors/marketing-for-roofers/roofing-seo-case-study/"
+          pageUrl="https://growsmallbiz.io/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/"
         />
 
         {/* ═══ CONCLUSION SECTION ═══ */}

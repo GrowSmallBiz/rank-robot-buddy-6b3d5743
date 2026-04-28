@@ -896,7 +896,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
         { value: "123/123", label: "High-Ranking Map Pack Grid Points" },
       ],
       bodyCopy: "A Chicagoland tree and lawn care company managed by GrowSmallBiz achieved a 1.1 average Map Pack rank across all 123 local search grid points within six months of starting an AI SEO campaign – with total impressions increasing 138.54 percent and phone number clicks increasing 770 percent in the first two months.",
-      caseStudyUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-seo-case-study/",
+      caseStudyUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
     },
     {
       campaignType: "Google Ads PPC Campaign",
@@ -920,9 +920,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   caseStudyLinks: [
     {
-      title: "AI SEO Case Study: Tree & Lawn Care",
+      title: "Marketing Case Study: Tree & Lawn Care",
       description: "How a Chicagoland tree and lawn care company achieved a 1.1 average Map Pack rank, +138.54% impressions, and +770% phone clicks with AI SEO.",
-      url: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-seo-case-study/",
+      url: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
       icon: Search,
     },
     {

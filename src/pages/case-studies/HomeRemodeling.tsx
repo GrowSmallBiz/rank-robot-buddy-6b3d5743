@@ -104,19 +104,19 @@ const HomeRemodeling = () => {
   return (
     <>
       <Head>
-        <title>Home Remodeling SEO Case Study: Real Results for Contractors</title>
+        <title>Home Remodeling Marketing Case Study: Real Results for Contractors</title>
         <meta name="description" content="Home remodeling contractors: GrowSmallBiz delivers real Local SEO results. See how we boost leads and website clicks. Schedule Strategy Call." />
-        <meta name="keywords" content="local SEO, home remodeling marketing, digital marketing for contractors, SEO case study, lead generation for remodelers, Google Business Profile optimization, home improvement SEO, AI-powered marketing strategies" />
-        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" />
+        <meta name="keywords" content="local SEO, home remodeling marketing, digital marketing for contractors, marketing case study, lead generation for remodelers, Google Business Profile optimization, home improvement SEO, AI-powered marketing strategies" />
+        <link rel="canonical" href="https://growsmallbiz.io/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" />
       </Head>
       <ArticleJsonLd
         headline="Real Results for Home Remodeling Contractors — Not Projections"
         description="Explore documented Local SEO case study results for home remodeling and home renovation businesses."
-        url="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/"
+        url="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/"
         datePublished="2025-01-15"
         breadcrumbs={[
           { name: "Home Service Contractors", url: "/home-service-contractors/" },
-          { name: "Home Remodeling", url: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-seo-case-study/" },
+          { name: "Home Remodeling", url: "/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" },
         ]}
       />
       <Header />

@@ -309,7 +309,7 @@ const MedSpa = () => {
           </div>
           <div className="flex justify-center">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-seo-case-study/">View Med Spa Case Studies →</Link>
+              <Link to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/">View Med Spa Case Studies →</Link>
             </Button>
           </div>
         </div>
