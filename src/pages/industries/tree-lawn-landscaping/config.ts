@@ -920,7 +920,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   caseStudyLinks: [
     {
-      title: "AI SEO Case Study: Tree & Lawn Care",
+      title: "Marketing Case Study: Tree & Lawn Care",
       description: "How a Chicagoland tree and lawn care company achieved a 1.1 average Map Pack rank, +138.54% impressions, and +770% phone clicks with AI SEO.",
       url: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
       icon: Search,
