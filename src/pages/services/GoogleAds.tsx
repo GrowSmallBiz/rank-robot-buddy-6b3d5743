@@ -11,7 +11,7 @@ import { PersonCTA } from "@/components/services/PersonCTA";
 import { baseContactCTA } from "@/config/contactCTA";
 import { useUtm } from "@/hooks/use-utm";
 import { CTA_URLS } from "@/lib/utm";
-import heroGoogleAdsRoofing from "@/assets/hero-google-ads-roofing.jpg";
+import heroGoogleAdsRoofing from "@/assets/hero-google-ads-roofing.webp";
 import {
   ArrowRight,
   Target,
