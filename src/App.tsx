@@ -119,7 +119,7 @@ export const routes: RouteRecord[] = [
       { path: "home-service-contractors/marketing-for-roofers/roofing-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/Roofers")) },
       { path: "home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/TreeLawnLandscaping")) },
       { path: "home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/HomeRemodeling")) },
-      { path: "home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
+      { path: "home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/CleaningServices")) },
 
       { path: "health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/MedSpaCaseStudy")) },
       { path: "health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study", lazy: lazy(() => import("./pages/case-studies/DentalCaseStudy")) },
@@ -153,7 +153,7 @@ export const routes: RouteRecord[] = [
       { path: "case-studies/roofers", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" /> },
       { path: "case-studies/tree-lawn-landscaping", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" /> },
       { path: "case-studies/home-remodeling", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" /> },
-      { path: "case-studies/cleaning-services", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" /> },
+      { path: "case-studies/cleaning-services", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" /> },
       { path: "case-studies/med-spa-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" /> },
       { path: "case-studies/dental-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/" /> },
       { path: "case-studies/chiropractic-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/" /> },
@@ -164,7 +164,7 @@ export const routes: RouteRecord[] = [
       { path: "home-service-contractors/roofing-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" /> },
       { path: "home-service-contractors/landscaping-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" /> },
       { path: "home-service-contractors/home-renovation-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" /> },
-      { path: "home-service-contractors/cleaning-service-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" /> },
+      { path: "home-service-contractors/cleaning-service-marketing/case-study", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" /> },
 
       { path: "health-and-wellness-practices/med-spa-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" /> },
       { path: "health-and-wellness-practices/dental-marketing/case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-dentists/dental-marketing-case-study/" /> },

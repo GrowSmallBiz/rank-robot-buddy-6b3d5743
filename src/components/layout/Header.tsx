@@ -368,7 +368,7 @@ export const Header = () => {
                     <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Home Remodeling
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    <Link to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Cleaning Services
                     </Link>
                   </div>
@@ -679,7 +679,7 @@ export const Header = () => {
                     <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Home Remodeling
                     </Link>
-                    <Link to="/home-service-contractors/marketing-for-cleaning-services/cleaning-seo-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
+                    <Link to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Cleaning Services
                     </Link>
                   </div>
