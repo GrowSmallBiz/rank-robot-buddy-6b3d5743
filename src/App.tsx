@@ -152,7 +152,7 @@ export const routes: RouteRecord[] = [
       { path: "case-studies/local-seo-service/hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
       { path: "case-studies/local-seo-hvac-plumbing-electrical", Component: () => <Redirect to="/home-service-contractors/marketing-for-hvac-contractors/hvac-seo-case-study/" /> },
       { path: "case-studies/roofers", Component: () => <Redirect to="/home-service-contractors/marketing-for-roofers/roofing-marketing-case-study/" /> },
-      { path: "case-studies/tree-lawn-landscaping", Component: () => <Redirect to="/home-service-contractors/marketing-for-landscapers/landscaping-marketing-case-study/" /> },
+      { path: "case-studies/tree-lawn-landscaping", Component: () => <Redirect to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" /> },
       { path: "case-studies/home-remodeling", Component: () => <Redirect to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" /> },
       { path: "case-studies/cleaning-services", Component: () => <Redirect to="/home-service-contractors/marketing-for-cleaning-services/cleaning-marketing-case-study/" /> },
       { path: "case-studies/med-spa-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-med-spas/med-spa-marketing-case-study/" /> },
