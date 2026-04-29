@@ -249,15 +249,8 @@ const ManagedAISEO = () => {
           },
           {
             url: pillarAeo,
-            caption: "Answer Engine Optimization (AEO) pillar icon",
-            description: "Visual pillar marker representing the AEO component — featured snippet, People Also Ask, and AI answer optimization.",
-            width: 512,
-            height: 512,
-          },
-          {
-            url: pillarGeo,
-            caption: "Generative Engine Optimization (GEO) pillar icon",
-            description: "Visual pillar marker representing the GEO component — making content citable inside ChatGPT, Perplexity, Gemini, and Claude answers.",
+            caption: "AI Search Optimization pillar icon",
+            description: "Visual pillar marker representing the AI Search Optimization component — combining AEO and GEO so the business is surfaced and cited across ChatGPT, Perplexity, Gemini, and Google AI Overviews.",
             width: 512,
             height: 512,
           },
