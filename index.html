@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
-    <meta name="robots" content="index, follow" />
+    <!-- Robots meta is injected per-route via react-helmet-async (see <Head> components). Do NOT add a static robots meta here — it would duplicate the helmet-injected one. The host-aware script below overrides it on non-production hosts. -->
     <meta name="author" content="GrowSmallBiz Digital Marketing" />
 
     <!-- Host-aware noindex: prevent staging/preview *.lovable.app mirrors from being indexed -->
@@ -34,9 +34,9 @@
           // Block indexing on any non-production host (lovable.app previews, published staging, localhost)
           var isProduction = host === 'growsmallbiz.io' || host === 'www.growsmallbiz.io';
           if (!isProduction) {
-            // Force-replace the default robots meta with noindex,nofollow
-            var existing = document.querySelector('meta[name="robots"]');
-            if (existing) existing.parentNode.removeChild(existing);
+            // Remove any existing robots meta (helmet-injected or otherwise) and force noindex,nofollow
+            var existingRobots = document.querySelectorAll('meta[name="robots"]');
+            existingRobots.forEach(function (el) { el.parentNode.removeChild(el); });
             var m = document.createElement('meta');
             m.name = 'robots';
             m.content = 'noindex, nofollow';
