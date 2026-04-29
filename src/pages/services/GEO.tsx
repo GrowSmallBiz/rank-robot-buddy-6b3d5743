@@ -178,6 +178,12 @@ const GEO = () => {
         <meta name="keywords" content="AI SEO, Generative Engine Optimization, local business visibility, digital marketing agency, local SEO services, AI-driven search, SEO audits, online presence enhancement" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/geo/" />
         <meta property="og:title" content="Be the answer AI gives your ideal customer | GrowSmallBiz" />
+        <meta property="og:description" content="Managed GEO services help local service businesses get identified, understood, and surfaced by ChatGPT, Gemini, Perplexity, and Google AI Overviews." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://growsmallbiz.io/services/seo-agency/geo/" />
+        <meta property="og:image:alt" content="Generative Engine Optimization (GEO) services for local service businesses — GrowSmallBiz" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="author" content="Subrata Guha" />
       </Head>
 
       <ServiceJsonLd
@@ -188,8 +194,11 @@ const GEO = () => {
         breadcrumbs={[
           { name: "Services", url: "/services/" },
           { name: "Managed AI SEO", url: "/services/seo-agency/" },
+          { name: "AI Search Optimization", url: "/services/seo-agency/ai-search-optimization/" },
           { name: "GEO", url: "/services/seo-agency/geo/" },
         ]}
+        useEntityGraph={true}
+        hasFaqPage={true}
       />
 
       <ImageObjectJsonLd

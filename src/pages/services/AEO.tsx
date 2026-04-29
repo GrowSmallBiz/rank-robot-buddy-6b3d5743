@@ -226,6 +226,13 @@ const AEO = () => {
         <meta name="description" content="AEO services by GrowSmallBiz: Improve your AI visibility and answer customer questions directly. Built for local service businesses. Contact us." />
         <meta name="keywords" content="Answer Engine Optimization, AEO services, local SEO, digital marketing agency, content optimization, customer query answers, online visibility, structured content" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/aeo/" />
+        <meta property="og:title" content="Answer Engine Optimization (AEO) Services | GrowSmallBiz" />
+        <meta property="og:description" content="Become the answer in featured snippets, People Also Ask, and AI-assisted search. AEO services built for local service businesses." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://growsmallbiz.io/services/seo-agency/aeo/" />
+        <meta property="og:image:alt" content="Answer Engine Optimization (AEO) services for local service businesses — GrowSmallBiz" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="author" content="Subrata Guha" />
       </Head>
 
       <ServiceJsonLd
@@ -236,8 +243,11 @@ const AEO = () => {
         breadcrumbs={[
           { name: "Services", url: "/services/" },
           { name: "Managed AI SEO", url: "/services/seo-agency/" },
+          { name: "AI Search Optimization", url: "/services/seo-agency/ai-search-optimization/" },
           { name: "Answer Engine Optimization", url: "/services/seo-agency/aeo/" },
         ]}
+        useEntityGraph={true}
+        hasFaqPage={true}
       />
 
       <ImageObjectJsonLd
