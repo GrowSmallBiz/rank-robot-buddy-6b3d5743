@@ -26,7 +26,7 @@ import pillarOnPageSeo from "@/assets/pillar-on-page-seo.webp";
 import pillarLocalSeo from "@/assets/pillar-local-seo.webp";
 import pillarTopicalAuthority from "@/assets/pillar-topical-authority.webp";
 import pillarAeo from "@/assets/pillar-aeo.webp";
-import pillarGeo from "@/assets/pillar-geo.webp";
+
 import pillarLinkBuilding from "@/assets/pillar-link-building.webp";
 import pillarReporting from "@/assets/pillar-reporting.webp";
 import {
@@ -71,7 +71,6 @@ const pillarImages = [
   pillarLocalSeo,
   pillarTopicalAuthority,
   pillarAeo,
-  pillarGeo,
   pillarLinkBuilding,
   pillarReporting,
 ];
@@ -105,18 +104,11 @@ const pillars = [
     covers: ["Topic cluster planning", "Service topic expansion", "Supporting content strategy", "FAQ content strategy", "Entity/topic coverage", "Blog/topic ecosystem planning", "Content depth and breadth for authority", "Content mapping around buyer intent"],
   },
   {
-    icon: MessageCircleQuestion,
-    title: "AEO (Answer Engine Optimization)",
-    description: "Buyers ask questions — and they expect direct answers. Featured snippets, People Also Ask, and AI-assisted search interfaces reward content structured to be cited as the answer. GrowSmallBiz builds that structure into every page we touch, so when a prospect asks a question in your category, your business is the one Google pulls the answer from.",
-    covers: ["FAQ optimization", "Question-and-answer content structure", "Featured snippet targeting", "Direct-answer formatting", "Semantic answer blocks", "Structured response formatting", "Content optimized for answer engines and AI assistants"],
-    link: "/services/seo-agency/aeo/",
-  },
-  {
-    icon: Globe,
-    title: "GEO / AI-Search Visibility",
-    description: "ChatGPT, Perplexity, Gemini, and Google AI Overviews are already answering the questions prospects used to type into Google. If your business is not structured to be discovered and cited by these engines, you are invisible to a rapidly growing share of the market. GrowSmallBiz engineers your content, entity signals, and online presence to be surfaced, quoted, and cited across every major AI search environment.",
-    covers: ["AI-search readiness", "Entity clarity", "Structured content for AI discovery", "Brand/entity reinforcement", "Citation-worthy content structure", "Content formatting for LLM discovery", "Visibility across emerging AI-driven search environments"],
-    link: "/services/seo-agency/geo/",
+    icon: Sparkles,
+    title: "AI Search Optimization",
+    description: "ChatGPT, Perplexity, Gemini, and Google's AI Overviews are answering the questions prospects used to type into Google. GrowSmallBiz combines Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) into one program — engineering your content, entity signals, and citation network so your business is surfaced, quoted, and cited across every major AI search environment.",
+    covers: ["Answer Engine Optimization (AEO)", "Generative Engine Optimization (GEO)", "AI-search readiness audit", "Structured content for AI discovery", "Entity clarity & brand reinforcement", "Citation-worthy content structure", "Visibility across emerging AI search environments"],
+    link: "/services/seo-agency/ai-search-optimization/",
   },
   {
     icon: Link2,
@@ -257,15 +249,8 @@ const ManagedAISEO = () => {
           },
           {
             url: pillarAeo,
-            caption: "Answer Engine Optimization (AEO) pillar icon",
-            description: "Visual pillar marker representing the AEO component — featured snippet, People Also Ask, and AI answer optimization.",
-            width: 512,
-            height: 512,
-          },
-          {
-            url: pillarGeo,
-            caption: "Generative Engine Optimization (GEO) pillar icon",
-            description: "Visual pillar marker representing the GEO component — making content citable inside ChatGPT, Perplexity, Gemini, and Claude answers.",
+            caption: "AI Search Optimization pillar icon",
+            description: "Visual pillar marker representing the AI Search Optimization component — combining AEO and GEO so the business is surfaced and cited across ChatGPT, Perplexity, Gemini, and Google AI Overviews.",
             width: 512,
             height: 512,
           },
@@ -371,14 +356,14 @@ const ManagedAISEO = () => {
           </div>
         </section>
 
-        {/* SECTION 3 — THE 8-PILLAR MANAGED AI SEO SYSTEM */}
+        {/* SECTION 3 — THE 7-PILLAR MANAGED AI SEO SYSTEM */}
         <section className="py-20 lg:py-28 bg-card" id="pillars">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="THE SYSTEM"
-              title="The 8-Pillar Managed AI SEO"
+              title="The 7-Pillar Managed AI SEO"
               titleHighlight="System"
-              description="Effective SEO for local service businesses is not a single tactic — it is a coordinated system. Most agencies focus on one or two things and neglect the rest. GrowSmallBiz manages all eight pillars simultaneously, ensuring every component reinforces the others."
+              description="Effective SEO for local service businesses is not a single tactic — it is a coordinated system. Most agencies focus on one or two things and neglect the rest. GrowSmallBiz manages all seven pillars simultaneously, ensuring every component reinforces the others."
             />
             <p className="text-center text-muted-foreground max-w-3xl mx-auto -mt-10 mb-16">
               Each pillar below links to a dedicated service page where you can go deeper. Together, they form an integrated system built to deliver lasting local search authority and a consistent flow of qualified leads.
