@@ -359,15 +359,13 @@ const ManagedAISEO = () => {
         {/* COMMAND CENTER SECTION */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="THE DASHBOARD"
+              title="Your Holistic AI SEO"
+              titleHighlight="Command Center"
+              description="Monitor your complete digital presence in real-time—track domain authority growth, measure your visibility across AI platforms like ChatGPT, Gemini, Perplexity & Claude, and optimize all seven SEO pillars from one powerful dashboard. Make data-driven decisions that drive measurable ROI."
+            />
             <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl md:text-3xl font-bold font-display mb-4 text-foreground">
-                  Your Holistic AI SEO Command Center
-                </h3>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Monitor your complete digital presence in real-time—track domain authority growth, measure your visibility across AI platforms like ChatGPT, Gemini, Perplexity & Claude, and optimize all seven SEO pillars from one powerful dashboard. Make data-driven decisions that drive measurable ROI.
-                </p>
-              </div>
               <Dialog>
                 <DialogTrigger asChild>
                   <div className="relative group cursor-pointer">
