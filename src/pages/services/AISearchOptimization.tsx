@@ -411,15 +411,9 @@ const AISearchOptimization = () => {
                   <h4 className="text-xl font-display font-bold text-foreground mb-3">
                     Answer Engine Optimization (AEO)
                   </h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-5">
-                    AEO structures your content to be the direct answer to a question. When a homeowner asks ChatGPT "what's the best HVAC company near me," AEO determines whether the model has clean, structured information about your business available to retrieve, evaluate, and quote. AEO covers question-format content, schema markup, FAQ structures, voice search compatibility, and content chunking — the mechanics of how AI engines extract specific answers from web content.
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    AEO structures your content as direct, extractable answers — so when a customer asks an AI assistant a specific question about your category, the model retrieves and quotes your content. It is the discipline of making your business legible to AI engines.
                   </p>
-                  <Link
-                    to="/services/seo-agency/aeo/"
-                    className="inline-flex items-center gap-1 text-primary font-semibold text-sm hover:underline"
-                  >
-                    Explore AEO services <ArrowRight className="w-4 h-4" />
-                  </Link>
                 </GlowCard>
 
                 <GlowCard className="p-8 animate-fade-up" style={{ animationDelay: "0.05s" }}>
@@ -429,17 +423,15 @@ const AISearchOptimization = () => {
                   <h4 className="text-xl font-display font-bold text-foreground mb-3">
                     Generative Engine Optimization (GEO)
                   </h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-5">
-                    GEO ensures your business appears in synthesized AI answers — the multi-paragraph responses ChatGPT and Perplexity generate when a user asks a comparison or recommendation question. GEO addresses the broader citation ecosystem: how your brand is mentioned across third-party platforms (Reddit, YouTube, LinkedIn, industry publications), how authoritative your content is judged to be, and how often AI engines select you as one of the sources used to compose the answer.
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    GEO earns citations and brand mentions across the AI ecosystem — so when ChatGPT and Perplexity synthesize answers, your business is one of the sources the model uses to compose the response. It is the discipline of becoming a trusted reference inside AI-generated answers.
                   </p>
-                  <Link
-                    to="/services/seo-agency/geo/"
-                    className="inline-flex items-center gap-1 text-primary font-semibold text-sm hover:underline"
-                  >
-                    Explore GEO services <ArrowRight className="w-4 h-4" />
-                  </Link>
                 </GlowCard>
               </div>
+
+              <p className="text-center italic text-muted-foreground max-w-3xl mx-auto mb-12 animate-fade-up">
+                We'll cover what each discipline includes — and how to choose between them — further down this page.
+              </p>
 
               <h3 className="text-2xl md:text-3xl font-display font-bold text-center mb-8 animate-fade-up">
                 How AI Search Optimization works alongside your traditional SEO foundation
