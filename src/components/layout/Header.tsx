@@ -122,6 +122,9 @@ export const Header = () => {
                     <Link to="/services/seo-agency/" className="block px-4 py-2.5 rounded-lg text-sm text-primary hover:bg-secondary transition-colors">
                       Overview
                     </Link>
+                    <Link to="/services/seo-agency/ai-search-optimization/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      AI Search Optimization
+                    </Link>
                     <Link to="/services/seo-agency/aeo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Answer Engine Optimization (AEO)
                     </Link>
@@ -499,6 +502,9 @@ export const Header = () => {
                   <div className={`overflow-hidden transition-all duration-200 ${mobileSeoSubOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
                     <Link to="/services/seo-agency/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-primary hover:text-primary">
                       Overview
+                    </Link>
+                    <Link to="/services/seo-agency/ai-search-optimization/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
+                      AI Search Optimization
                     </Link>
                     <Link to="/services/seo-agency/aeo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Answer Engine Optimization (AEO)
