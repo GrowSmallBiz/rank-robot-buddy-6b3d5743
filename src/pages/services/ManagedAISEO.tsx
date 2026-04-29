@@ -71,7 +71,6 @@ const pillarImages = [
   pillarLocalSeo,
   pillarTopicalAuthority,
   pillarAeo,
-  pillarGeo,
   pillarLinkBuilding,
   pillarReporting,
 ];
