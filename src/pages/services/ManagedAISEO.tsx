@@ -136,7 +136,7 @@ const processSteps = [
 
 const whyAIPowered = [
   { icon: Zap, title: "Speed of execution", description: "Traditional SEO relies on manual audits, slow content pipelines, and sequential task execution. GrowSmallBiz's AI-powered workflows compress that timeline significantly. Technical issues are identified and resolved in days, not weeks. Content plans are built and validated rapidly. The result: more implementation, more iteration, and faster compounding results." },
-  { icon: Layers, title: "Breadth of coverage", description: "All eight SEO pillars are actively maintained every month — not selectively, not one at a time." },
+  { icon: Layers, title: "Breadth of coverage", description: "All seven SEO pillars are actively maintained every month — not selectively, not one at a time." },
   { icon: RefreshCw, title: "Consistency", description: "AI-assisted workflows eliminate the gap-and-burst pattern that prevents most local SEO programs from compounding over time." },
   { icon: Target, title: "Smarter targeting", description: "AI-driven research surfaces keyword opportunities, competitor gaps, and content angles genuinely relevant to your specific service area and buyer intent." },
   { icon: Settings, title: "Adaptability", description: "Search is evolving across traditional results, answer engines, and AI-driven discovery. This system keeps your program current across all of it." },
