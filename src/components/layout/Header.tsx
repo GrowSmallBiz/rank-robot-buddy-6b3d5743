@@ -125,11 +125,11 @@ export const Header = () => {
                     <Link to="/services/seo-agency/ai-search-optimization/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       AI Search Optimization
                     </Link>
-                    <Link to="/services/seo-agency/aeo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
-                      Answer Engine Optimization (AEO)
+                    <Link to="/services/seo-agency/aeo/" className="block pl-8 pr-4 py-2 rounded-lg text-xs text-muted-foreground/80 hover:text-foreground hover:bg-secondary transition-colors">
+                      ↳ Answer Engine Optimization (AEO)
                     </Link>
-                    <Link to="/services/seo-agency/geo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
-                      Generative Engine Optimization (GEO)
+                    <Link to="/services/seo-agency/geo/" className="block pl-8 pr-4 py-2 rounded-lg text-xs text-muted-foreground/80 hover:text-foreground hover:bg-secondary transition-colors">
+                      ↳ Generative Engine Optimization (GEO)
                     </Link>
                     <Link to="/services/seo-agency/local-seo/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Local SEO
