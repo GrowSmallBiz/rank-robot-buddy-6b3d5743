@@ -66,8 +66,13 @@ export const Footer = () => {
               <li><Link to="/services/website-design/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Website Design</Link></li>
               <li><Link to="/services/seo-agency/" className="text-sm text-muted-foreground hover:text-primary transition-colors">AI SEO</Link></li>
               <li><Link to="/services/seo-agency/local-seo/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Local SEO</Link></li>
-              <li><Link to="/services/seo-agency/aeo/" className="text-sm text-muted-foreground hover:text-primary transition-colors">AEO</Link></li>
-              <li><Link to="/services/seo-agency/geo/" className="text-sm text-muted-foreground hover:text-primary transition-colors">GEO</Link></li>
+              <li>
+                <Link to="/services/seo-agency/ai-search-optimization/" className="text-sm text-muted-foreground hover:text-primary transition-colors">AI Search Optimization</Link>
+                <ul className="mt-2 ml-4 space-y-2 border-l border-border/40 pl-3">
+                  <li><Link to="/services/seo-agency/aeo/" className="text-xs text-muted-foreground/80 hover:text-primary transition-colors">↳ AEO</Link></li>
+                  <li><Link to="/services/seo-agency/geo/" className="text-xs text-muted-foreground/80 hover:text-primary transition-colors">↳ GEO</Link></li>
+                </ul>
+              </li>
               <li><Link to="/services/paid-advertising/google-ads/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Google Ads</Link></li>
               <li><Link to="/services/paid-advertising/facebook-ads/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Facebook & Instagram Ads</Link></li>
               <li><Link to="/services/marketing-automation-for-small-business/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Marketing Automation</Link></li>
