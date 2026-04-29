@@ -506,11 +506,11 @@ export const Header = () => {
                     <Link to="/services/seo-agency/ai-search-optimization/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       AI Search Optimization
                     </Link>
-                    <Link to="/services/seo-agency/aeo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
-                      Answer Engine Optimization (AEO)
+                    <Link to="/services/seo-agency/aeo/" onClick={() => setIsOpen(false)} className="block py-1.5 pl-8 text-xs text-muted-foreground/80 hover:text-primary">
+                      ↳ Answer Engine Optimization (AEO)
                     </Link>
-                    <Link to="/services/seo-agency/geo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
-                      Generative Engine Optimization (GEO)
+                    <Link to="/services/seo-agency/geo/" onClick={() => setIsOpen(false)} className="block py-1.5 pl-8 text-xs text-muted-foreground/80 hover:text-primary">
+                      ↳ Generative Engine Optimization (GEO)
                     </Link>
                     <Link to="/services/seo-agency/local-seo/" onClick={() => setIsOpen(false)} className="block py-2 pl-4 text-sm text-muted-foreground hover:text-primary">
                       Local SEO
