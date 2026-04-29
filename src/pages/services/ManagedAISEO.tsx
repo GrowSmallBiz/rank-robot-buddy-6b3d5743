@@ -153,7 +153,7 @@ const industries = [
 
 const whyGSBItems = [
   { icon: Target, title: "Built for Local Service Businesses", description: "We do not serve e-commerce brands, SaaS companies, or national retailers. Every service and process in our system is designed for local service businesses competing in defined geographic markets." },
-  { icon: Layers, title: "A Complete 8-Pillar System", description: "Most agencies lead with what they do well and quietly neglect the rest. GrowSmallBiz manages all eight pillars simultaneously — so nothing goes unaddressed and every component reinforces the others." },
+  { icon: Layers, title: "A Complete 7-Pillar System", description: "Most agencies lead with what they do well and quietly neglect the rest. GrowSmallBiz manages all seven pillars simultaneously — so nothing goes unaddressed and every component reinforces the others." },
   { icon: Bot, title: "Strategic Execution, Not Just Software", description: "AI-assisted tools allow us to move faster and cover more ground. Experienced strategists make the judgment calls that require local market knowledge and business context. You get efficiency and accountability — not a self-serve dashboard." },
   { icon: Eye, title: "Transparent Reporting, Every Month", description: "You will never wonder what we are working on or whether it is working. Monthly performance reviews give you a clear view of what moved, what was completed, and what is planned — written for a business owner, not an analyst." },
   { icon: Puzzle, title: "Integrated with the Digital Dominance Method", description: "Managed AI SEO works in coordination with your broader marketing channels through the GrowSmallBiz Digital Dominance Method — not in isolation from them." },
