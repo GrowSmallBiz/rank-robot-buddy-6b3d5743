@@ -184,7 +184,7 @@ const ManagedAISEO = () => {
       <Head>
         <title>AI-Powered SEO for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="AI-powered SEO agency for local service businesses. GrowSmallBiz drives calls, leads, and growth with a fully managed SEO system. Get free SEO audit." />
-        <meta name="keywords" content="managed AI SEO, local SEO services, AI-powered SEO, local service business SEO, managed SEO program, technical SEO, on-page SEO, local SEO, AEO, GEO, link building, SEO for contractors, SEO for dentists, SEO for HVAC, GrowSmallBiz" />
+        <meta name="keywords" content="managed AI SEO, local SEO services, AI-powered SEO, local service business SEO, managed SEO program, technical SEO, on-page SEO, local SEO, AI search optimization, AEO, GEO, link building, SEO for contractors, SEO for dentists, SEO for HVAC, GrowSmallBiz" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/" />
       </Head>
 
