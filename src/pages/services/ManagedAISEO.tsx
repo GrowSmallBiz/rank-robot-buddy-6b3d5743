@@ -70,8 +70,8 @@ const pillarImages = [
   pillarOnPageSeo,
   pillarLocalSeo,
   pillarTopicalAuthority,
-  pillarAeo,
   pillarLinkBuilding,
+  pillarAeo,
   pillarReporting,
 ];
 
