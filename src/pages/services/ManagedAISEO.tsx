@@ -26,7 +26,7 @@ import pillarOnPageSeo from "@/assets/pillar-on-page-seo.webp";
 import pillarLocalSeo from "@/assets/pillar-local-seo.webp";
 import pillarTopicalAuthority from "@/assets/pillar-topical-authority.webp";
 import pillarAeo from "@/assets/pillar-aeo.webp";
-import pillarGeo from "@/assets/pillar-geo.webp";
+
 import pillarLinkBuilding from "@/assets/pillar-link-building.webp";
 import pillarReporting from "@/assets/pillar-reporting.webp";
 import {
