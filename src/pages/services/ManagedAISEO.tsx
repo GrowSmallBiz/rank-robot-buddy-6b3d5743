@@ -293,7 +293,7 @@ const ManagedAISEO = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-foreground leading-tight animate-fade-up bg-gradient-heading bg-clip-text text-transparent">
-                The Complete Managed AI SEO Agency for Local Service Businesses
+                Managed AI SEO Agency for Local Service Businesses
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
