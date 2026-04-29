@@ -127,7 +127,7 @@ const pillars = [
 
 const processSteps = [
   { title: "Discovery and Onboarding", text: "A structured strategy session covers your business, service area, competitive landscape, and growth goals. This is a working session, not a sales call — it establishes the foundation for everything that follows." },
-  { title: "AI-Assisted SEO Audit", text: "Before any optimization begins, we conduct a comprehensive audit across all eight pillars: technical health, on-page performance, local SEO standing, content gaps, backlink profile, and AI-search readiness. You know exactly where you stand before we start a single task." },
+  { title: "AI-Assisted SEO Audit", text: "Before any optimization begins, we conduct a comprehensive audit across all seven pillars: technical health, on-page performance, local SEO standing, content gaps, backlink profile, and AI-search readiness. You know exactly where you stand before we start a single task." },
   { title: "Strategy and Roadmap", text: "We develop a prioritized roadmap specific to your business — what we are working on, in what order, and why. Clear focus on the highest-impact activities in your market, sequenced for compounding results." },
   { title: "Execution", text: "We implement — and AI-powered workflows mean we move faster and cover more ground than traditional SEO execution allows. Technical fixes are identified and resolved quickly. Content plans are built and executed. Cross-pillar optimization decisions are made in real time. The result is broader monthly coverage with no pillar left unattended." },
   { title: "Ongoing Optimization", text: "As rankings improve, new opportunities emerge. As search engines update, adjustments are required. GrowSmallBiz monitors your program continuously and makes optimization decisions in real time — so you are never standing still while competitors move." },
@@ -136,7 +136,7 @@ const processSteps = [
 
 const whyAIPowered = [
   { icon: Zap, title: "Speed of execution", description: "Traditional SEO relies on manual audits, slow content pipelines, and sequential task execution. GrowSmallBiz's AI-powered workflows compress that timeline significantly. Technical issues are identified and resolved in days, not weeks. Content plans are built and validated rapidly. The result: more implementation, more iteration, and faster compounding results." },
-  { icon: Layers, title: "Breadth of coverage", description: "All eight SEO pillars are actively maintained every month — not selectively, not one at a time." },
+  { icon: Layers, title: "Breadth of coverage", description: "All seven SEO pillars are actively maintained every month — not selectively, not one at a time." },
   { icon: RefreshCw, title: "Consistency", description: "AI-assisted workflows eliminate the gap-and-burst pattern that prevents most local SEO programs from compounding over time." },
   { icon: Target, title: "Smarter targeting", description: "AI-driven research surfaces keyword opportunities, competitor gaps, and content angles genuinely relevant to your specific service area and buyer intent." },
   { icon: Settings, title: "Adaptability", description: "Search is evolving across traditional results, answer engines, and AI-driven discovery. This system keeps your program current across all of it." },
@@ -153,7 +153,7 @@ const industries = [
 
 const whyGSBItems = [
   { icon: Target, title: "Built for Local Service Businesses", description: "We do not serve e-commerce brands, SaaS companies, or national retailers. Every service and process in our system is designed for local service businesses competing in defined geographic markets." },
-  { icon: Layers, title: "A Complete 8-Pillar System", description: "Most agencies lead with what they do well and quietly neglect the rest. GrowSmallBiz manages all eight pillars simultaneously — so nothing goes unaddressed and every component reinforces the others." },
+  { icon: Layers, title: "A Complete 7-Pillar System", description: "Most agencies lead with what they do well and quietly neglect the rest. GrowSmallBiz manages all seven pillars simultaneously — so nothing goes unaddressed and every component reinforces the others." },
   { icon: Bot, title: "Strategic Execution, Not Just Software", description: "AI-assisted tools allow us to move faster and cover more ground. Experienced strategists make the judgment calls that require local market knowledge and business context. You get efficiency and accountability — not a self-serve dashboard." },
   { icon: Eye, title: "Transparent Reporting, Every Month", description: "You will never wonder what we are working on or whether it is working. Monthly performance reviews give you a clear view of what moved, what was completed, and what is planned — written for a business owner, not an analyst." },
   { icon: Puzzle, title: "Integrated with the Digital Dominance Method", description: "Managed AI SEO works in coordination with your broader marketing channels through the GrowSmallBiz Digital Dominance Method — not in isolation from them." },
@@ -162,14 +162,14 @@ const whyGSBItems = [
 
 const faqs = [
   { question: "What is Managed AI SEO?", answer: "Managed AI SEO is a fully managed SEO service in which GrowSmallBiz handles your entire program — strategy, implementation, content, technical maintenance, local optimization, authority building, and reporting — using AI-assisted tools and workflows. You do not manage vendors, learn SEO tools, or supervise execution. We own it." },
-  { question: "How is this different from traditional SEO?", answer: "Traditional SEO is typically project-based, manual, and focused on a narrow set of tactics. Managed AI SEO is continuous, AI-assisted, and comprehensive — covering all eight pillars simultaneously. The AI layer surfaces and acts on opportunities faster. The managed layer means you have a team running the system, not a consultant sending monthly recommendations." },
+  { question: "How is this different from traditional SEO?", answer: "Traditional SEO is typically project-based, manual, and focused on a narrow set of tactics. Managed AI SEO is continuous, AI-assisted, and comprehensive — covering all seven pillars simultaneously. The AI layer surfaces and acts on opportunities faster. The managed layer means you have a team running the system, not a consultant sending monthly recommendations." },
   { question: "How long does it take to see results?", answer: "SEO is a long-term channel. Most local service businesses see measurable movement in rankings and local visibility within three to six months, with more substantial results building from six to twelve months onward. The timeline depends on your starting point, competitive landscape, and scope of work. We set realistic expectations from day one." },
   { question: "What is the commitment structure?", answer: "The engagement begins with a 3-month initial commitment. This ensures enough time to complete the foundational audit, build the strategy, and execute the early implementation work that produces lasting results. After the initial 3 months, the engagement continues on a month-to-month basis. Additional details about engagement options are discussed on the strategy call." },
   { question: "Do I need to be involved day-to-day?", answer: "No — that is the point of a managed service. You are involved in the initial onboarding and strategy session, you review your monthly performance summary, and you make decisions about your business direction. The SEO program runs without requiring your ongoing attention." },
   { question: "Can you work with my existing website?", answer: "In most cases, yes. We begin with a thorough audit and work within your current platform where possible. If we identify structural or technical limitations that significantly constrain SEO performance, we will flag them clearly and discuss options. A full rebuild is not a prerequisite for getting started." },
   { question: "How do you report results?", answer: "Each month you receive a performance summary covering keyword rankings, local visibility, traffic trends, the specific work completed, and strategic recommendations for the upcoming period. Reports are written to be understood by a business owner, not an SEO analyst." },
   { question: "Does SEO work with paid advertising?", answer: "Yes — and they work better together. Paid ads deliver immediate visibility while SEO builds sustained organic presence. Over time, strong organic rankings reduce dependence on paid traffic and lower your overall cost per lead." },
-  { question: "What makes your approach different from a standard SEO agency?", answer: "Three things: specialization, completeness, and integration. We specialize exclusively in local service businesses. We manage all eight pillars of SEO simultaneously. And the program is integrated with your broader marketing channels through the Digital Dominance Method — so everything works together rather than in silos." },
+  { question: "What makes your approach different from a standard SEO agency?", answer: "Three things: specialization, completeness, and integration. We specialize exclusively in local service businesses. We manage all seven pillars of SEO simultaneously. And the program is integrated with your broader marketing channels through the Digital Dominance Method — so everything works together rather than in silos." },
   { question: "How much does Managed AI SEO cost?", answer: "Managed AI SEO pricing is a flat monthly fee based on two factors: the number of Google Business Profiles we optimize (single-location vs multi-location) and the number of services within the campaign. We do not publish tiered pricing on the website because every business has a different competitive landscape, service mix, and starting baseline. Pricing is presented during a discovery call after we understand your market, current SEO standing, and growth goals — so the scope is defined and the quote matches the work. There are no long-term contracts. The engagement starts with a 3-month foundation commitment, then continues month-to-month." },
   { question: "Do I need a Google Business Profile to work with GrowSmallBiz?", answer: "Yes — a claimed and verified Google Business Profile is foundational. For local service businesses, 60%+ of conversions come through GBP, not the website. If you do not have a GBP or it is not verified, that is the first thing we fix during onboarding. If you have a GBP that is claimed but underoptimized (missing categories, incomplete services, no photos, no posts, inconsistent NAP), that is also standard onboarding work. Businesses without a physical location can use a service-area business (SAB) profile — we work with both." },
   { question: "Will AI search like ChatGPT and Google AI Overviews replace traditional SEO?", answer: "No — they are additive, not replacement. Traditional SEO (ranking pages in Google's blue-link results) still drives the largest share of qualified local traffic. What is changing is that ChatGPT, Perplexity, Gemini, and Google AI Overviews are now surfacing answers before a user even clicks a link. Businesses that are structured for AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) get cited in those AI answers. Businesses that are not, get skipped. Managed AI SEO covers all three — traditional SEO, AEO, and GEO — as one integrated system." },
@@ -184,21 +184,21 @@ const ManagedAISEO = () => {
       <Head>
         <title>AI-Powered SEO for Local Service Businesses | GrowSmallBiz</title>
         <meta name="description" content="AI-powered SEO agency for local service businesses. GrowSmallBiz drives calls, leads, and growth with a fully managed SEO system. Get free SEO audit." />
-        <meta name="keywords" content="managed AI SEO, local SEO services, AI-powered SEO, local service business SEO, managed SEO program, technical SEO, on-page SEO, local SEO, AEO, GEO, link building, SEO for contractors, SEO for dentists, SEO for HVAC, GrowSmallBiz" />
+        <meta name="keywords" content="managed AI SEO, local SEO services, AI-powered SEO, local service business SEO, managed SEO program, technical SEO, on-page SEO, local SEO, AI search optimization, AEO, GEO, link building, SEO for contractors, SEO for dentists, SEO for HVAC, GrowSmallBiz" />
         <link rel="canonical" href="https://growsmallbiz.io/services/seo-agency/" />
       </Head>
 
       <ServiceJsonLd
         serviceName="AI-Powered SEO That Gets Local Service Businesses Found First"
         serviceType="Managed SEO"
-        description="The complete Managed AI SEO system for local service businesses — covering technical SEO, on-page, local SEO, topical authority, AEO, GEO, link building, and monthly reporting."
+        description="The complete Managed AI SEO system for local service businesses — covering technical SEO, on-page, local SEO, topical authority, AI search optimization (AEO + GEO), link building, and monthly reporting."
         url="/services/seo-agency/"
         breadcrumbs={[
           { name: "Services", url: "/services/" },
         ]}
         useEntityGraph
         pageName="The Complete Managed AI SEO Agency for Local Service Businesses"
-        pageDescription="The complete Managed AI SEO system for local service businesses. GrowSmallBiz runs your entire SEO program — technical, local, content, AEO, GEO, link building, and reporting — so you can focus on running your business."
+        pageDescription="The complete Managed AI SEO system for local service businesses. GrowSmallBiz runs your entire SEO program — technical, local, content, AI search optimization (AEO + GEO), link building, and reporting — so you can focus on running your business."
         hasFaqPage
       />
 
@@ -208,7 +208,7 @@ const ManagedAISEO = () => {
           {
             url: managedAiSeoHeroBg,
             caption: "Managed AI SEO system for local service businesses",
-            description: "Hero illustration for GrowSmallBiz's flagship Managed AI SEO service — a fully managed SEO program combining technical, local, on-page, AEO, GEO, link building, and reporting into a single growth system.",
+            description: "Hero illustration for GrowSmallBiz's flagship Managed AI SEO service — a fully managed SEO program combining technical, local, on-page, AI search optimization (AEO + GEO), link building, and reporting into a single growth system.",
             width: 1920,
             height: 1080,
           },
