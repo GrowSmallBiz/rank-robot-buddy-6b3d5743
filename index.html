@@ -34,9 +34,9 @@
           // Block indexing on any non-production host (lovable.app previews, published staging, localhost)
           var isProduction = host === 'growsmallbiz.io' || host === 'www.growsmallbiz.io';
           if (!isProduction) {
-            // Force-replace the default robots meta with noindex,nofollow
-            var existing = document.querySelector('meta[name="robots"]');
-            if (existing) existing.parentNode.removeChild(existing);
+            // Remove any existing robots meta (helmet-injected or otherwise) and force noindex,nofollow
+            var existingRobots = document.querySelectorAll('meta[name="robots"]');
+            existingRobots.forEach(function (el) { el.parentNode.removeChild(el); });
             var m = document.createElement('meta');
             m.name = 'robots';
             m.content = 'noindex, nofollow';
