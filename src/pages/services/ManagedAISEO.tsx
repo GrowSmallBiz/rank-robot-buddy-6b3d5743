@@ -70,8 +70,8 @@ const pillarImages = [
   pillarOnPageSeo,
   pillarLocalSeo,
   pillarTopicalAuthority,
-  pillarAeo,
   pillarLinkBuilding,
+  pillarAeo,
   pillarReporting,
 ];
 
@@ -104,18 +104,18 @@ const pillars = [
     covers: ["Topic cluster planning", "Service topic expansion", "Supporting content strategy", "FAQ content strategy", "Entity/topic coverage", "Blog/topic ecosystem planning", "Content depth and breadth for authority", "Content mapping around buyer intent"],
   },
   {
-    icon: Sparkles,
-    title: "AI Search Optimization",
-    description: "ChatGPT, Perplexity, Gemini, and Google's AI Overviews are answering the questions prospects used to type into Google. GrowSmallBiz combines Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) into one program — engineering your content, entity signals, and citation network so your business is surfaced, quoted, and cited across every major AI search environment.",
-    covers: ["Answer Engine Optimization (AEO)", "Generative Engine Optimization (GEO)", "AI-search readiness audit", "Structured content for AI discovery", "Entity clarity & brand reinforcement", "Citation-worthy content structure", "Visibility across emerging AI search environments"],
-    link: "/services/seo-agency/ai-search-optimization/",
-  },
-  {
     icon: Link2,
     title: "Authority Building, Link Building, Press Releases & Brand Mentions",
     description: "Your rankings reflect how the broader internet perceives your authority. GrowSmallBiz builds off-site authority through a deliberate, quality-first approach — earning links and mentions from local sources, niche-relevant directories, industry associations, chambers of commerce, and digital PR.",
     covers: ["Backlink strategy", "Link acquisition", "Local authority links", "Niche-relevant links", "Partner / association / chamber links", "Brand mentions", "Digital PR", "Press release strategy", "Press release distribution support", "Off-site authority signals"],
     link: "/services/seo-agency/authority-building/",
+  },
+  {
+    icon: Sparkles,
+    title: "AI Search Optimization",
+    description: "ChatGPT, Perplexity, Gemini, and Google's AI Overviews are answering the questions prospects used to type into Google. GrowSmallBiz combines Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) into one program — engineering your content, entity signals, and citation network so your business is surfaced, quoted, and cited across every major AI search environment.",
+    covers: ["Answer Engine Optimization (AEO)", "Generative Engine Optimization (GEO)", "AI-search readiness audit", "Structured content for AI discovery", "Entity clarity & brand reinforcement", "Citation-worthy content structure", "Visibility across emerging AI search environments"],
+    link: "/services/seo-agency/ai-search-optimization/",
   },
   {
     icon: BarChart3,
