@@ -208,7 +208,7 @@ const ManagedAISEO = () => {
           {
             url: managedAiSeoHeroBg,
             caption: "Managed AI SEO system for local service businesses",
-            description: "Hero illustration for GrowSmallBiz's flagship Managed AI SEO service — a fully managed SEO program combining technical, local, on-page, AEO, GEO, link building, and reporting into a single growth system.",
+            description: "Hero illustration for GrowSmallBiz's flagship Managed AI SEO service — a fully managed SEO program combining technical, local, on-page, AI search optimization (AEO + GEO), link building, and reporting into a single growth system.",
             width: 1920,
             height: 1080,
           },
