@@ -363,14 +363,14 @@ const ManagedAISEO = () => {
           </div>
         </section>
 
-        {/* SECTION 3 — THE 8-PILLAR MANAGED AI SEO SYSTEM */}
+        {/* SECTION 3 — THE 7-PILLAR MANAGED AI SEO SYSTEM */}
         <section className="py-20 lg:py-28 bg-card" id="pillars">
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="THE SYSTEM"
-              title="The 8-Pillar Managed AI SEO"
+              title="The 7-Pillar Managed AI SEO"
               titleHighlight="System"
-              description="Effective SEO for local service businesses is not a single tactic — it is a coordinated system. Most agencies focus on one or two things and neglect the rest. GrowSmallBiz manages all eight pillars simultaneously, ensuring every component reinforces the others."
+              description="Effective SEO for local service businesses is not a single tactic — it is a coordinated system. Most agencies focus on one or two things and neglect the rest. GrowSmallBiz manages all seven pillars simultaneously, ensuring every component reinforces the others."
             />
             <p className="text-center text-muted-foreground max-w-3xl mx-auto -mt-10 mb-16">
               Each pillar below links to a dedicated service page where you can go deeper. Together, they form an integrated system built to deliver lasting local search authority and a consistent flow of qualified leads.
