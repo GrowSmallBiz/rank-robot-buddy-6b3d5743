@@ -104,18 +104,11 @@ const pillars = [
     covers: ["Topic cluster planning", "Service topic expansion", "Supporting content strategy", "FAQ content strategy", "Entity/topic coverage", "Blog/topic ecosystem planning", "Content depth and breadth for authority", "Content mapping around buyer intent"],
   },
   {
-    icon: MessageCircleQuestion,
-    title: "AEO (Answer Engine Optimization)",
-    description: "Buyers ask questions — and they expect direct answers. Featured snippets, People Also Ask, and AI-assisted search interfaces reward content structured to be cited as the answer. GrowSmallBiz builds that structure into every page we touch, so when a prospect asks a question in your category, your business is the one Google pulls the answer from.",
-    covers: ["FAQ optimization", "Question-and-answer content structure", "Featured snippet targeting", "Direct-answer formatting", "Semantic answer blocks", "Structured response formatting", "Content optimized for answer engines and AI assistants"],
-    link: "/services/seo-agency/aeo/",
-  },
-  {
-    icon: Globe,
-    title: "GEO / AI-Search Visibility",
-    description: "ChatGPT, Perplexity, Gemini, and Google AI Overviews are already answering the questions prospects used to type into Google. If your business is not structured to be discovered and cited by these engines, you are invisible to a rapidly growing share of the market. GrowSmallBiz engineers your content, entity signals, and online presence to be surfaced, quoted, and cited across every major AI search environment.",
-    covers: ["AI-search readiness", "Entity clarity", "Structured content for AI discovery", "Brand/entity reinforcement", "Citation-worthy content structure", "Content formatting for LLM discovery", "Visibility across emerging AI-driven search environments"],
-    link: "/services/seo-agency/geo/",
+    icon: Sparkles,
+    title: "AI Search Optimization",
+    description: "ChatGPT, Perplexity, Gemini, and Google's AI Overviews are answering the questions prospects used to type into Google. GrowSmallBiz combines Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) into one program — engineering your content, entity signals, and citation network so your business is surfaced, quoted, and cited across every major AI search environment.",
+    covers: ["Answer Engine Optimization (AEO)", "Generative Engine Optimization (GEO)", "AI-search readiness audit", "Structured content for AI discovery", "Entity clarity & brand reinforcement", "Citation-worthy content structure", "Visibility across emerging AI search environments"],
+    link: "/services/seo-agency/ai-search-optimization/",
   },
   {
     icon: Link2,
