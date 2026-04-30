@@ -26,7 +26,7 @@ export default function FormsSurveysDemo() {
                   Turn Every Website Visit Into a Lead With Smart Forms and Surveys
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Create forms that you can integrate into websites or landing pages that you have built. Customize your form's layout, use custom fields, custom CSS, all the features you want in a form to capture the lead info you need for your nurture campaign.
+                  Create forms that you can integrate into <a href="/services/marketing-automation-for-small-business/website-builder/" className="text-primary hover:underline">websites or landing pages</a> that you have built. Customize your form's layout, use custom fields, custom CSS, all the features you want in a form to capture the lead info you need for your nurture campaign.
                 </p>
               </div>
               <img

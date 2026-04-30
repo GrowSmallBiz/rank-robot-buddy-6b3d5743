@@ -174,7 +174,7 @@ const About = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-200">
-              We're a team of SEO specialists, AI strategists, and digital marketers 
+              We're a team of <Link to="/services/seo-agency/" className="text-primary hover:underline">SEO specialists</Link>, AI strategists, and digital marketers 
               dedicated to helping small and medium local businesses compete and win 
               in the digital landscape.
             </p>
