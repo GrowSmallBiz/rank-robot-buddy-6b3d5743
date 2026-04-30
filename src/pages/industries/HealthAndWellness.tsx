@@ -25,7 +25,7 @@ import { useUtm } from "@/hooks/use-utm";
 
 const practiceTypes = [
   { icon: Stethoscope, name: "Dental", link: "/dental-marketing/" },
-  { icon: Heart, name: "Chiropractic", link: "/chiropractic-marketing/" },
+  { icon: Heart, name: "Chiropractic", link: "/health-and-wellness-practices/marketing-for-chiropractors/" },
   { icon: Sparkles, name: "Med Spa", link: "/med-spa-marketing/" },
 ];
 
