@@ -329,7 +329,7 @@ const GEO = () => {
                 <div>
                   <h3 className="text-xl font-display font-semibold text-foreground mb-4">GEO Is an Opportunity You Can Act on Now</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    The businesses that build strong GEO foundations today will hold a meaningful advantage as AI-driven discovery grows. GrowSmallBiz has built a managed methodology specifically for local service businesses to capture that advantage — systematically, and without disrupting what is already working in traditional search.
+                    The businesses that build strong GEO foundations today will hold a meaningful advantage as AI-driven discovery grows. GrowSmallBiz has built a managed methodology specifically for local service businesses to capture that advantage — systematically, and without disrupting what is already working in traditional search. Pair GEO with our <Link to="/services/seo-agency/local-seo/" className="text-primary hover:underline">Local SEO Services for Businesses</Link> to dominate both classic and AI-driven discovery.
                   </p>
                 </div>
               </div>
