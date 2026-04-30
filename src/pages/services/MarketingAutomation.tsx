@@ -855,7 +855,7 @@ const MarketingAutomation = () => {
                 See How Our AI Powered CRM & Marketing Automation Streamlines Your Sales
               </h2>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl">
-                Watch a quick overview of how GrowSmallBiz helps local service businesses attract more leads and grow faster.
+                Watch a quick overview of how GrowSmallBiz helps local service businesses attract more leads and grow faster. For the bigger picture, browse our <Link to="/services/" className="text-primary hover:underline">Digital Marketing Services Overview</Link>.
               </p>
 
               {/* YouTube Video */}

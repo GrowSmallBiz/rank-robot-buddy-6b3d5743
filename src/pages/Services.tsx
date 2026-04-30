@@ -456,7 +456,7 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-display font-bold text-foreground mb-3">Growth Acceleration Services</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Additional visibility, outreach, and campaign services that expand reach and create more opportunities — layered on once the core foundation is solid.
+                Additional visibility, outreach, and campaign services that expand reach and create more opportunities — layered on once the core foundation is solid. See our full suite of <Link to="/services/paid-advertising/" className="text-primary hover:underline">Paid Advertising Services for Growth</Link> to accelerate this layer.
               </p>
             </div>
           </div>

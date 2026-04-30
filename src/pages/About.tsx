@@ -197,7 +197,7 @@ const About = () => {
                 <p>
                   GrowSmallBiz was founded on a simple belief: local businesses deserve 
                   the same caliber of digital marketing that enterprise companies enjoy, 
-                  without the enterprise price tag.
+                  without the enterprise price tag. Explore our full <Link to="/services/" className="text-primary hover:underline">Digital Marketing Services Overview</Link> to see how each piece fits together.
                 </p>
                 <p>
                   We saw too many local businesses struggling to compete online—not because 
@@ -208,7 +208,7 @@ const About = () => {
                   Today, we've helped over 150 local businesses across industries like 
                   HVAC, dental, med spas, and more to establish dominant online presences. 
                   Our approach combines proven SEO strategies with cutting-edge AI optimization 
-                  to ensure our clients stay ahead of the curve.
+                  to ensure our clients stay ahead of the curve. Learn more about our <Link to="/services/seo-agency/" className="text-primary hover:underline">Managed AI SEO Services</Link> built specifically for local service brands.
                 </p>
               </div>
             </div>
@@ -246,7 +246,7 @@ const About = () => {
               What We Stand For
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our core values guide every decision we make and every strategy we implement.
+              Our core values guide every decision we make and every strategy we implement. Have a question about how we'd apply them to your business? <Link to="/contact/" className="text-primary hover:underline">Contact GrowSmallBiz for Consultation</Link>.
             </p>
           </div>
 
