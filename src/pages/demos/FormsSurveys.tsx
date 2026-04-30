@@ -1,4 +1,5 @@
 import { Head } from "vite-react-ssg";
+import { Link } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { IntegrationsSection } from "@/components/sections/IntegrationsSection";
 import { DemoGuarantee } from "@/components/services/DemoGuarantee";
@@ -26,7 +27,7 @@ export default function FormsSurveysDemo() {
                   Turn Every Website Visit Into a Lead With Smart Forms and Surveys
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Create forms that you can integrate into <a href="/services/marketing-automation-for-small-business/website-builder/" className="text-primary hover:underline">websites or landing pages</a> that you have built. Customize your form's layout, use custom fields, custom CSS, all the features you want in a form to capture the lead info you need for your nurture campaign.
+                  Create forms that you can integrate into <Link to="/services/marketing-automation-for-small-business/website-builder/" className="text-primary hover:underline">websites or landing pages</Link> that you have built. Customize your form's layout, use custom fields, custom CSS, all the features you want in a form to capture the lead info you need for your nurture campaign.
                 </p>
               </div>
               <img
