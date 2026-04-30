@@ -911,7 +911,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
         { value: "+169.5%", label: "90-Day Click Growth" },
       ],
       bodyCopy: "A GrowSmallBiz Google Ads campaign for a tree and lawn care company generated 553 total conversions at a $53.70 cost per acquisition – with 394 of those conversions from call leads. In the 90 days following campaign scaling, conversions increased 211.5 percent compared to the prior 90-day period.",
-      caseStudyUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-google-ads-case-study/",
+      caseStudyUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
     },
   ],
 
@@ -928,7 +928,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     {
       title: "Google Ads Case Study: Tree & Lawn Care",
       description: "How GrowSmallBiz generated 553 conversions at $53.70 CPA for a tree and lawn care company — with a 211.5% lift in 90-day conversions after campaign scaling.",
-      url: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-google-ads-case-study/",
+      url: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
       icon: Target,
     },
   ],
