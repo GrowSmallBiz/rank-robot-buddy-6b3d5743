@@ -550,7 +550,7 @@ const FacebookAds = () => {
               </h3>
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
-                  { icon: Home, title: "HVAC & Home Services", desc: "Google Ads captures 'AC repair near me' urgent-need searches; Meta reaches homeowners during off-season for maintenance agreements, replacement planning, and brand building." },
+                  { icon: Home, title: "HVAC & Home Services", desc: <><Link to="/services/paid-advertising/google-ads/" className="text-primary hover:underline">Google Ads</Link> captures 'AC repair near me' urgent-need searches; Meta reaches homeowners during off-season for maintenance agreements, replacement planning, and brand building.</> },
                   { icon: Star, title: "Dental Practices", desc: "Google Ads captures active patient searches; Meta builds practice awareness, retargets website visitors, and promotes cosmetic services (Invisalign, whitening) where the consideration cycle is longer." },
                   { icon: Stethoscope, title: "Chiropractic Care", desc: "Google Ads captures 'back pain relief' searches; Meta reaches people earlier — before they've decided chiropractic is the answer — with educational content and patient stories." },
                   { icon: Briefcase, title: "Other Local Professional Services", desc: "CPAs, attorneys, financial advisors, consultants. If you serve a local market and need a consistent pipeline of qualified leads, we can build and manage campaigns that deliver them." },
