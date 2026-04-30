@@ -152,7 +152,7 @@ export default function WebsiteBuilderDemo() {
               Websites are where people go if they want more information
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              You can showcase examples of work, testimonials, information about upcoming promotions, and more.
+              You can showcase examples of work, testimonials, information about upcoming promotions, and more. Pair your site with built-in lead capture — <Link to="/services/marketing-automation-for-small-business/forms-surveys/" className="text-primary hover:underline">Create Forms and Surveys</Link> that turn every visit into a qualified lead.
             </p>
           </div>
         </section>
