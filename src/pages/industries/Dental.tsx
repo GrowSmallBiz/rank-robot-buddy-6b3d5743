@@ -82,7 +82,7 @@ const Dental = () => {
               Dental Practice Marketing
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 animate-fade-up delay-100 bg-gradient-heading bg-clip-text text-transparent">
-              Full-Service Dental Marketing Agency Built to Grow Your Practice With Proven Patient Acquisition
+              Dental Marketing That Fills Your Chair with High-Value Patients
             </h1>
             <p className="text-xl text-muted-foreground mb-4 animate-fade-up delay-200 max-w-2xl mx-auto">
               GrowSmallBiz is a dental marketing agency that helps independent dental practices attract new patients, build five-star reputations, and implement systems that increase revenue — all managed through a single integrated vendor.
