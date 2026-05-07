@@ -684,10 +684,44 @@ export const Header = () => {
                 <Link
                   to="/locations/locations-we-serve/"
                   onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
+                  className="block py-2 text-primary font-medium"
                 >
                   Locations We Serve
                 </Link>
+
+                <button
+                  onClick={() => setMobileLocDiabloOpen(!mobileLocDiabloOpen)}
+                  className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
+                >
+                  Diablo Valley Region
+                  <ChevronDown className={`w-3 h-3 transition-transform ${mobileLocDiabloOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileLocDiabloOpen && (
+                  <div className="pl-3 space-y-1">
+                    <Link to="/locations/walnut-creek-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Walnut Creek</Link>
+                    <Link to="/locations/pleasant-hill-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Pleasant Hill</Link>
+                    <Link to="/locations/concord-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Concord</Link>
+                    <Link to="/locations/martinez-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Martinez</Link>
+                  </div>
+                )}
+
+                <button
+                  onClick={() => setMobileLocTriOpen(!mobileLocTriOpen)}
+                  className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
+                >
+                  Tri Valley Extended
+                  <ChevronDown className={`w-3 h-3 transition-transform ${mobileLocTriOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileLocTriOpen && (
+                  <div className="pl-3 space-y-1">
+                    <Link to="/locations/danville-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Danville</Link>
+                    <Link to="/locations/san-ramon-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">San Ramon</Link>
+                    <Link to="/locations/dublin-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Dublin</Link>
+                    <Link to="/locations/pleasanton-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Pleasanton</Link>
+                    <Link to="/locations/livermore-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Livermore</Link>
+                    <Link to="/locations/tracy-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Tracy</Link>
+                  </div>
+                )}
               </div>
             )}
           </div>
