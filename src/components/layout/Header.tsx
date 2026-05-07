@@ -9,6 +9,10 @@ export const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isCaseStudiesOpen, setIsCaseStudiesOpen] = useState(false);
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
+  const [isLocDiabloOpen, setIsLocDiabloOpen] = useState(false);
+  const [isLocTriOpen, setIsLocTriOpen] = useState(false);
+  const [mobileLocDiabloOpen, setMobileLocDiabloOpen] = useState(false);
+  const [mobileLocTriOpen, setMobileLocTriOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isSeoSubOpen, setIsSeoSubOpen] = useState(false);
   const [isAdsSubOpen, setIsAdsSubOpen] = useState(false);
@@ -319,10 +323,48 @@ export const Header = () => {
               >
                 <Link
                   to="/locations/locations-we-serve/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
                 >
                   Locations We Serve
                 </Link>
+
+                {/* Diablo Valley Region - Flyout */}
+                <div
+                  className="relative group/loc-diablo"
+                  onMouseEnter={() => setIsLocDiabloOpen(true)}
+                  onMouseLeave={() => setIsLocDiabloOpen(false)}
+                >
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Diablo Valley Region
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-56 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isLocDiabloOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/locations/walnut-creek-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Walnut Creek</Link>
+                    <Link to="/locations/pleasant-hill-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Pleasant Hill</Link>
+                    <Link to="/locations/concord-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Concord</Link>
+                    <Link to="/locations/martinez-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Martinez</Link>
+                  </div>
+                </div>
+
+                {/* Tri Valley Extended - Flyout */}
+                <div
+                  className="relative group/loc-tri"
+                  onMouseEnter={() => setIsLocTriOpen(true)}
+                  onMouseLeave={() => setIsLocTriOpen(false)}
+                >
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Tri Valley Extended
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-56 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isLocTriOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/locations/danville-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Danville</Link>
+                    <Link to="/locations/san-ramon-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">San Ramon</Link>
+                    <Link to="/locations/dublin-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Dublin</Link>
+                    <Link to="/locations/pleasanton-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Pleasanton</Link>
+                    <Link to="/locations/livermore-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Livermore</Link>
+                    <Link to="/locations/tracy-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Tracy</Link>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -642,10 +684,44 @@ export const Header = () => {
                 <Link
                   to="/locations/locations-we-serve/"
                   onClick={() => setIsOpen(false)}
-                  className="block py-2 text-muted-foreground hover:text-primary"
+                  className="block py-2 text-primary font-medium"
                 >
                   Locations We Serve
                 </Link>
+
+                <button
+                  onClick={() => setMobileLocDiabloOpen(!mobileLocDiabloOpen)}
+                  className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
+                >
+                  Diablo Valley Region
+                  <ChevronDown className={`w-3 h-3 transition-transform ${mobileLocDiabloOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileLocDiabloOpen && (
+                  <div className="pl-3 space-y-1">
+                    <Link to="/locations/walnut-creek-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Walnut Creek</Link>
+                    <Link to="/locations/pleasant-hill-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Pleasant Hill</Link>
+                    <Link to="/locations/concord-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Concord</Link>
+                    <Link to="/locations/martinez-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Martinez</Link>
+                  </div>
+                )}
+
+                <button
+                  onClick={() => setMobileLocTriOpen(!mobileLocTriOpen)}
+                  className="flex items-center justify-between w-full text-xs font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1"
+                >
+                  Tri Valley Extended
+                  <ChevronDown className={`w-3 h-3 transition-transform ${mobileLocTriOpen ? "rotate-180" : ""}`} />
+                </button>
+                {mobileLocTriOpen && (
+                  <div className="pl-3 space-y-1">
+                    <Link to="/locations/danville-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Danville</Link>
+                    <Link to="/locations/san-ramon-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">San Ramon</Link>
+                    <Link to="/locations/dublin-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Dublin</Link>
+                    <Link to="/locations/pleasanton-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Pleasanton</Link>
+                    <Link to="/locations/livermore-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Livermore</Link>
+                    <Link to="/locations/tracy-ca/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">Tracy</Link>
+                  </div>
+                )}
               </div>
             )}
           </div>
