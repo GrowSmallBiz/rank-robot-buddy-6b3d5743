@@ -9,6 +9,10 @@ export const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isCaseStudiesOpen, setIsCaseStudiesOpen] = useState(false);
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
+  const [isLocDiabloOpen, setIsLocDiabloOpen] = useState(false);
+  const [isLocTriOpen, setIsLocTriOpen] = useState(false);
+  const [mobileLocDiabloOpen, setMobileLocDiabloOpen] = useState(false);
+  const [mobileLocTriOpen, setMobileLocTriOpen] = useState(false);
   const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isSeoSubOpen, setIsSeoSubOpen] = useState(false);
   const [isAdsSubOpen, setIsAdsSubOpen] = useState(false);
