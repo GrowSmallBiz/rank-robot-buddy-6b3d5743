@@ -542,7 +542,6 @@ const MarketingAutomation = () => {
             url: "/services/marketing-automation-for-small-business/",
           },
         ]}
-        rating={{ ratingValue: "4.9", reviewCount: "127" }}
       />
 
       <ImageObjectJsonLd
