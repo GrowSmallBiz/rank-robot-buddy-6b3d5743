@@ -323,10 +323,48 @@ export const Header = () => {
               >
                 <Link
                   to="/locations/locations-we-serve/"
-                  className="block px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  className="block px-4 py-3 rounded-lg text-sm font-semibold text-foreground hover:bg-primary hover:text-primary-foreground transition-colors border-b border-border mb-2"
                 >
                   Locations We Serve
                 </Link>
+
+                {/* Diablo Valley Region - Flyout */}
+                <div
+                  className="relative group/loc-diablo"
+                  onMouseEnter={() => setIsLocDiabloOpen(true)}
+                  onMouseLeave={() => setIsLocDiabloOpen(false)}
+                >
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Diablo Valley Region
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-56 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isLocDiabloOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/locations/walnut-creek-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Walnut Creek</Link>
+                    <Link to="/locations/pleasant-hill-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Pleasant Hill</Link>
+                    <Link to="/locations/concord-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Concord</Link>
+                    <Link to="/locations/martinez-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Martinez</Link>
+                  </div>
+                </div>
+
+                {/* Tri Valley Extended - Flyout */}
+                <div
+                  className="relative group/loc-tri"
+                  onMouseEnter={() => setIsLocTriOpen(true)}
+                  onMouseLeave={() => setIsLocTriOpen(false)}
+                >
+                  <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                    Tri Valley Extended
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </button>
+                  <div className={`absolute left-full top-0 ml-1 w-56 bg-card border border-border rounded-xl shadow-2xl p-2 transition-all duration-200 ${isLocTriOpen ? "opacity-100 visible translate-x-0" : "opacity-0 invisible -translate-x-2"}`}>
+                    <Link to="/locations/danville-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Danville</Link>
+                    <Link to="/locations/san-ramon-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">San Ramon</Link>
+                    <Link to="/locations/dublin-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Dublin</Link>
+                    <Link to="/locations/pleasanton-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Pleasanton</Link>
+                    <Link to="/locations/livermore-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Livermore</Link>
+                    <Link to="/locations/tracy-ca/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">Tracy</Link>
+                  </div>
+                </div>
               </div>
             </div>
 
