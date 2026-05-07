@@ -27,11 +27,22 @@ const parseStatValue = (value: string): { number: number; prefix: string; suffix
 };
 
 export const AnimatedStat = ({ value, label, showDivider = false }: AnimatedStatProps) => {
-  const [count, setCount] = useState(0);
-  const [hasStarted, setHasStarted] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  
   const { number: endValue, prefix, suffix } = parseStatValue(value);
+
+  // SEO: render the final value in the SSG/initial HTML so crawlers (Googlebot,
+  // Rich Results Test, etc.) never see "0%/0x/0/7" placeholders — that pattern
+  // can cause Google to classify the page as a Soft 404. We only "rewind" to 0
+  // and animate up once the component has mounted on the client.
+  const [count, setCount] = useState(endValue);
+  const [hasStarted, setHasStarted] = useState(false);
+  const hasMounted = useRef(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // After hydration, reset to 0 so the count-up animation has somewhere to go.
+  useEffect(() => {
+    hasMounted.current = true;
+    setCount(0);
+  }, []);
 
   useEffect(() => {
     const element = ref.current;

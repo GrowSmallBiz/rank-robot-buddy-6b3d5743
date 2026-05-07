@@ -15,9 +15,16 @@ export const useCountUp = ({
   suffix = "",
   prefix = "",
 }: UseCountUpOptions) => {
-  const [count, setCount] = useState(0);
+  // SEO: render the final value in the SSG/initial HTML so crawlers never see
+  // "0" placeholders (which can trigger Soft 404 classification). After
+  // hydration, rewind to 0 and animate up when the element becomes visible.
+  const [count, setCount] = useState(end);
   const [hasStarted, setHasStarted] = useState(false);
   const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    setCount(0);
+  }, []);
 
   useEffect(() => {
     const element = ref.current;
