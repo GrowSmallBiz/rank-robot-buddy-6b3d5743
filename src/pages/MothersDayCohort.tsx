@@ -302,7 +302,7 @@ const MothersDayCohort = () => {
         </div>
       </header>
 
-      <main id="main-content">
+      <main id="main-content" className="pb-28 md:pb-24">
         {/* HERO */}
         <section className="relative overflow-hidden bg-[linear-gradient(135deg,hsl(210_55%_8%)_0%,hsl(210_50%_12%)_55%,hsl(20_45%_18%)_100%)]">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,210,190,0.16),transparent_55%)] pointer-events-none" />
