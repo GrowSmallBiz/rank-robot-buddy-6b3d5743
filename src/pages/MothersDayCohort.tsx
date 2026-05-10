@@ -1075,7 +1075,7 @@ const MothersDayCohort = () => {
           <div className="absolute -bottom-20 right-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.22)] blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-3xl relative z-10">
             <div className="text-center mb-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(22_85%_42%)] mb-3">Common Questions</p>
+              
               <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)]">
                 Frequently Asked Questions
               </h2>
