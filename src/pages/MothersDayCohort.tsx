@@ -1,5 +1,6 @@
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
 import {
@@ -41,6 +42,7 @@ const SECONDARY_CTA_LABEL = "See What’s Included";
 
 const sectionNav = [
   { id: "offer", label: "The Offer" },
+  { id: "system", label: "The System" },
   { id: "pricing", label: "Pricing" },
   { id: "leads", label: "Stop Losing Leads" },
   { id: "guarantee", label: "Guarantee" },
@@ -75,6 +77,16 @@ const PrimaryCTA = ({
 const MothersDayCohort = () => {
   const { buildUrl } = useUtm();
   const ctaUrl = buildUrl(APPLICATION_FORM_URL, "mothers-day-cohort");
+
+  // Inject Google Reviews widget script client-side to avoid SSR/hydration mismatch
+  useEffect(() => {
+    const SRC = "https://reputationhub.site/reputation/assets/review-widget.js";
+    if (document.querySelector(`script[src="${SRC}"]`)) return;
+    const s = document.createElement("script");
+    s.src = SRC;
+    s.async = true;
+    document.body.appendChild(s);
+  }, []);
 
   const offerWebsite = [
     "5-page professional website: Home, About, Services, Contact, plus 1 custom page",
@@ -165,14 +177,6 @@ const MothersDayCohort = () => {
     "Not ready to respond to new leads",
     "Not comfortable with a 12-month commitment",
     "Looking for the cheapest possible website",
-  ];
-
-  const differentBullets = [
-    "A website alone does not follow up with leads",
-    "A contact form alone does not organize opportunities",
-    "A phone number alone does not prevent missed calls",
-    "A happy customer alone does not guarantee a review",
-    "A CRM alone does not help unless it is set up properly",
   ];
 
   const steps = [
@@ -398,7 +402,6 @@ const MothersDayCohort = () => {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1px] h-24 bg-gradient-to-b from-transparent via-[hsl(20_85%_55%/0.4)] to-transparent pointer-events-none hidden md:block" />
           <div className="container mx-auto px-4 max-w-4xl relative z-10">
             <div className="text-center mb-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(20_85%_42%)] mb-3">A Note From GrowSmallBiz</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)]">
                 Why This Offer Exists
               </h2>
@@ -560,6 +563,85 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        {/* SEE THE SYSTEM BEHIND YOUR WEBSITE */}
+        <section id="system" className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]">
+          <div className="absolute -top-20 right-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 left-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 max-w-6xl relative z-10">
+            <div className="text-center mb-10 max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
+                See the System Behind Your Website
+              </h2>
+              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
+                Your website is only the front door. GrowSmallBiz also sets up the connected system behind it — lead capture, CRM, follow-up automation, reviews, and AI-powered response tools.
+              </p>
+            </div>
+
+            {/* Google Reviews */}
+            <div className="mb-14">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-center text-[hsl(210_55%_14%)] mb-6">
+                Recent Google Reviews
+              </h3>
+              <div className="max-w-4xl mx-auto rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] p-3 md:p-6 overflow-hidden">
+                <iframe
+                  className="lc_reviews_widget w-full block"
+                  src="https://reputationhub.site/reputation/widgets/review_widget/4KL47iKeJZ2Ee05j7FBh"
+                  frameBorder={0}
+                  scrolling="no"
+                  style={{ minWidth: "100%", width: "100%" }}
+                  title="Recent Google Reviews"
+                />
+              </div>
+            </div>
+
+            {/* Videos */}
+            <div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-center text-[hsl(210_55%_14%)] mb-6">
+                Watch How the System Works
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                {[
+                  {
+                    title: "Client Growth System Overview",
+                    sub: "See how the system helps organize leads, conversations, follow-up, reviews, and customer communication in one place.",
+                    src: "https://www.youtube-nocookie.com/embed/rJ289MZ0ugU",
+                  },
+                  {
+                    title: "AI Employee Demo",
+                    sub: "See how AI-powered response tools can help answer questions, capture information, and support faster follow-up.",
+                    src: "https://www.youtube-nocookie.com/embed/IkA8jPWgHxk",
+                  },
+                ].map((v) => (
+                  <div
+                    key={v.src}
+                    className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] overflow-hidden flex flex-col"
+                  >
+                    <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
+                      <iframe
+                        src={v.src}
+                        title={v.title}
+                        loading="lazy"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                        frameBorder={0}
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="font-display font-bold text-lg text-[hsl(210_55%_14%)] mb-2">
+                        {v.title}
+                      </h4>
+                      <p className="text-sm text-[hsl(210_30%_30%)] leading-relaxed">
+                        {v.sub}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* PRICING */}
         <section id="pricing" className="py-20 bg-background-alt scroll-mt-20">
           <div className="container mx-auto px-4">
@@ -615,10 +697,7 @@ const MothersDayCohort = () => {
                   MOST POPULAR
                 </div>
                 <div className="relative">
-                  <div className="flex items-baseline justify-between mb-1">
-                    <h3 className="text-2xl font-display font-bold">Growth</h3>
-                    <span className="text-[11px] uppercase tracking-wider font-semibold text-primary px-2 py-0.5 rounded-full bg-primary/10 border border-primary/30">Recommended</span>
-                  </div>
+                  <h3 className="text-2xl font-display font-bold mb-1">Growth</h3>
                   <div className="flex items-baseline gap-1 mb-4">
                     <span className="text-4xl font-bold">$297</span>
                     <span className="text-muted-foreground">/month</span>
@@ -901,22 +980,28 @@ const MothersDayCohort = () => {
                 What Makes This Different
               </h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 mb-8 items-stretch">
+            <div className="grid md:grid-cols-2 gap-6 mb-10 items-stretch">
               <div className="relative rounded-2xl border border-dashed border-border bg-background-alt p-8 opacity-90">
                 <div className="absolute top-4 right-4">
                   <XCircle className="w-5 h-5 text-muted-foreground/60" />
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-3">
-                  Most website offers
+                <p className="text-lg md:text-xl font-display font-bold text-muted-foreground mb-5">
+                  Most basic website offers:
                 </p>
-                <p className="text-2xl font-display font-bold text-muted-foreground/90 mb-5">
-                  Give you a website.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground/80">
-                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />Just a website</li>
-                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No CRM</li>
-                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No follow-up automation</li>
-                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No AI response tools</li>
+                <ul className="space-y-2.5 text-sm text-muted-foreground/90">
+                  {[
+                    "Just a website",
+                    "No CRM setup",
+                    "No follow-up automation",
+                    "No AI response tools",
+                    "No review automation",
+                    "No connected lead tracking",
+                  ].map((b) => (
+                    <li key={b} className="flex items-start gap-2">
+                      <XCircle className="w-4 h-4 mt-0.5 text-muted-foreground/60 shrink-0" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="relative rounded-2xl border-2 border-primary bg-card p-8 shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.4)] overflow-hidden">
@@ -924,36 +1009,39 @@ const MothersDayCohort = () => {
                 <div className="absolute top-4 right-4">
                   <CheckCircle2 className="w-5 h-5 text-primary" />
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-                  This program
+                <p className="text-lg md:text-xl font-display font-bold mb-5">
+                  This program:
                 </p>
-                <p className="text-2xl font-display font-bold mb-5">
-                  Gives you the system behind the website.
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Website + CRM</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Lead capture & follow-up automation</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Review automation</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />AI-powered response tools</li>
+                <ul className="space-y-2.5 text-sm">
+                  {[
+                    "Website + CRM",
+                    "Lead capture + follow-up automation",
+                    "Review automation",
+                    "AI-powered response tools",
+                    "Unified inbox",
+                    "Connected client growth system",
+                  ].map((b) => (
+                    <li key={b} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            <ul className="space-y-3 max-w-3xl mx-auto">
-              {differentBullets.map((b) => (
-                <li key={b} className="flex items-start gap-3">
-                  <XCircle className="w-5 h-5 mt-0.5 text-muted-foreground shrink-0" />
-                  <span className="text-muted-foreground">{b}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-center mt-8 text-muted-foreground max-w-3xl mx-auto">
-              GrowSmallBiz combines the website, CRM, automation, review system,
-              and AI-powered response tools into one connected setup for local
-              service businesses.
-            </p>
-            <p className="text-center mt-3 font-semibold">
-              Built for business owners — not marketing teams.
-            </p>
+            <div className="max-w-3xl mx-auto space-y-3 text-muted-foreground">
+              <p>A website alone does not follow up with leads.</p>
+              <p>A contact form alone does not organize opportunities.</p>
+              <p>A phone number alone does not prevent missed calls.</p>
+              <p>A happy customer alone does not guarantee a review.</p>
+              <p>A CRM alone does not help unless it is set up properly.</p>
+              <p className="pt-2 text-foreground">
+                GrowSmallBiz combines the website, CRM, automation, review system, and AI-powered response tools into one connected setup for local service businesses.
+              </p>
+              <p className="font-semibold text-foreground">
+                Built for business owners — not marketing teams.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -988,7 +1076,7 @@ const MothersDayCohort = () => {
           <div className="absolute -bottom-20 right-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.22)] blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-3xl relative z-10">
             <div className="text-center mb-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(22_85%_42%)] mb-3">Common Questions</p>
+              
               <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)]">
                 Frequently Asked Questions
               </h2>
