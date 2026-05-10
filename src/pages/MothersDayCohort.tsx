@@ -983,27 +983,34 @@ const MothersDayCohort = () => {
         </section>
 
         {/* FAQ */}
-        <section id="faq" className="py-20 scroll-mt-20">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-10 text-center">
-              Frequently Asked Questions
-            </h2>
-            <Accordion type="single" collapsible className="w-full">
-              {faqs.map((f, i) => (
-                <AccordionItem
-                  key={f.q}
-                  value={`item-${i}`}
-                  className="border-border"
-                >
-                  <AccordionTrigger className="text-left font-display font-semibold text-base md:text-lg">
-                    {f.q}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    {f.a}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+        <section id="faq" className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]">
+          <div className="absolute -top-20 left-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 right-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.22)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 max-w-3xl relative z-10">
+            <div className="text-center mb-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(22_85%_42%)] mb-3">Common Questions</p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)]">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/80 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] p-4 md:p-6">
+              <Accordion type="single" collapsible className="w-full">
+                {faqs.map((f, i) => (
+                  <AccordionItem
+                    key={f.q}
+                    value={`item-${i}`}
+                    className="border-[hsl(30_45%_82%)] last:border-b-0"
+                  >
+                    <AccordionTrigger className="text-left font-display font-semibold text-base md:text-lg text-[hsl(210_55%_14%)] hover:text-[hsl(22_85%_45%)] py-5 px-2">
+                      {f.q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-[hsl(210_30%_28%)] px-2 pb-5 leading-relaxed">
+                      {f.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
           </div>
         </section>
 
