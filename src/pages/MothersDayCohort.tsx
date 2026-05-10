@@ -1017,15 +1017,21 @@ const MothersDayCohort = () => {
         {/* FINAL CTA */}
         <section
           id="apply"
-          className="relative py-20 scroll-mt-20 overflow-hidden bg-[linear-gradient(135deg,hsl(210_50%_10%),hsl(210_55%_14%))]"
+          className="relative py-20 scroll-mt-20 overflow-hidden bg-[linear-gradient(135deg,hsl(210_55%_10%)_0%,hsl(210_50%_14%)_50%,hsl(20_50%_20%)_100%)]"
         >
-          <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[hsl(350_70%_70%/0.10)] blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-[hsl(280_60%_70%/0.10)] blur-3xl pointer-events-none" />
+          <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-[hsl(22_85%_60%/0.18)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full bg-[hsl(280_60%_70%/0.14)] blur-3xl pointer-events-none" />
+          <div className="absolute top-12 left-1/4 w-3 h-3 rotate-45 bg-[hsl(350_70%_75%/0.4)] pointer-events-none" />
+          <div className="absolute bottom-16 right-1/3 w-2 h-2 rounded-full bg-[hsl(22_85%_70%/0.5)] pointer-events-none" />
+          <div className="absolute top-1/3 right-12 w-4 h-4 rotate-12 rounded-sm bg-[hsl(280_55%_75%/0.35)] pointer-events-none hidden md:block" />
           <div className="container mx-auto px-4 max-w-3xl relative z-10 text-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-sm font-semibold mb-5">
-              <Clock className="w-4 h-4" />5 Spots. Applications Close May 31, 2026.
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[linear-gradient(135deg,hsl(22_85%_60%/0.2),hsl(350_70%_72%/0.2))] border border-[hsl(22_85%_60%/0.5)] text-foreground text-sm md:text-base font-bold mb-6 shadow-[0_0_30px_hsl(22_85%_50%/0.25)]">
+              <Clock className="w-4 h-4 text-primary" />
+              <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] to-[hsl(350_75%_82%)] bg-clip-text text-transparent">
+                Only 5 Spots · Applications Close May 31, 2026
+              </span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-5 text-foreground">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-5 text-foreground leading-tight">
               Apply for One of the 5 Mother’s Day Cohort Spots
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
@@ -1034,7 +1040,7 @@ const MothersDayCohort = () => {
               Mother’s Day cohort spots.
             </p>
 
-            <div className="rounded-2xl border border-border bg-card/60 backdrop-blur p-6 md:p-8 mb-8 text-left">
+            <div className="rounded-2xl border border-[hsl(22_85%_60%/0.25)] bg-card/70 backdrop-blur p-6 md:p-8 mb-8 text-left shadow-2xl">
               <p className="font-semibold mb-4 text-center">
                 What happens next:
               </p>
