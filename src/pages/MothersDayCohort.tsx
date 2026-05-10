@@ -1,4 +1,4 @@
-import { Head, Link as SsgLink } from "vite-react-ssg";
+import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
 import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
@@ -13,8 +13,6 @@ import {
   CheckCircle2,
   XCircle,
   Globe,
-  Search,
-  MapPin,
   Database,
   MessageSquare,
   Bot,
@@ -26,8 +24,8 @@ import {
   Gift,
   Sparkles,
   Clock,
-  TrendingUp,
 } from "lucide-react";
+import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
 
 const PAGE_PATH = "/mothers-day-mom-owned-business-cohort/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
@@ -36,9 +34,7 @@ const APPLICATION_FORM_URL =
 const PAGE_TITLE = "Mother’s Day Mom-Owned Business Cohort | GrowSmallBiz";
 const PAGE_DESC =
   "Apply for GrowSmallBiz’s Mother’s Day cohort for mom-owned local service businesses. Website build included, plus CRM, lead capture, follow-up automation, reviews, and AI-powered response tools.";
-const HERO_IMG = "/src/assets/mothers-day-cohort-hero.jpg";
 
-import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
 
 const PRIMARY_CTA_LABEL = "Apply for One of the 5 Spots";
 const SECONDARY_CTA_LABEL = "See What’s Included";
