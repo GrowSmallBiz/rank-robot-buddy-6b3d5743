@@ -304,23 +304,27 @@ const MothersDayCohort = () => {
 
       <main id="main-content">
         {/* HERO */}
-        <section className={`relative overflow-hidden ${softGrad}`}>
-          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(18_85%_65%/0.12)] blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.12)] blur-3xl pointer-events-none" />
-          <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <section className="relative overflow-hidden bg-[linear-gradient(135deg,hsl(210_55%_8%)_0%,hsl(210_50%_12%)_55%,hsl(20_45%_18%)_100%)]">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,210,190,0.16),transparent_55%)] pointer-events-none" />
+          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(18_85%_65%/0.18)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.14)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 py-14 lg:py-20 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(350_70%_85%/0.15)] border border-[hsl(350_70%_75%/0.3)] text-foreground/90 text-xs md:text-sm font-medium mb-5">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(350_70%_85%/0.15)] border border-[hsl(350_70%_75%/0.35)] text-foreground/90 text-xs md:text-sm font-medium mb-5">
                   <Sparkles className="w-3.5 h-3.5 text-primary" />
                   Mother’s Day Cohort · 5 Spots for Mom-Owned Local Service Businesses
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6">
-                  Get a Professional Website — and the Follow-Up System That
-                  Helps Turn Inquiries Into Clients
+                <h1 className="text-[1.875rem] md:text-[2.375rem] lg:text-5xl font-display font-bold leading-[1.15] tracking-tight mb-6">
+                  Get a Professional Website —{" "}
+                  <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(280_55%_82%)] bg-clip-text text-transparent">
+                    and the Follow-Up System
+                  </span>{" "}
+                  That Helps Turn Inquiries Into Clients
                 </h1>
 
-                <p className="text-lg md:text-xl text-muted-foreground mb-8">
+                <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed">
                   In honor of Mother’s Day, GrowSmallBiz is opening 5 onboarding
                   spots for mom-owned local service businesses. Your website
                   build is included, and we set up the system behind it — lead
@@ -329,7 +333,7 @@ const MothersDayCohort = () => {
                   conversations and paying clients.
                 </p>
 
-                <div className="flex flex-wrap gap-3 mb-8">
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
                   <PrimaryCTA href={ctaUrl} />
                   <Button
                     asChild
@@ -364,16 +368,17 @@ const MothersDayCohort = () => {
               </div>
 
               <div className="relative">
-                <div className="absolute -top-4 -left-4 z-20 px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-bold shadow-lg">
+                <div className="absolute -inset-4 rounded-[2rem] bg-[linear-gradient(135deg,hsl(22_85%_68%/0.35),hsl(350_75%_80%/0.28),hsl(280_55%_80%/0.28))] blur-2xl pointer-events-none" />
+                <div className="absolute -top-3 -left-3 z-20 px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-bold shadow-xl">
                   5 Spots
                 </div>
-                <div className="absolute -bottom-4 -right-4 z-20 px-4 py-2 rounded-full bg-card border border-border text-foreground text-sm font-semibold shadow-lg">
+                <div className="absolute -bottom-3 -right-3 z-20 px-4 py-2 rounded-full bg-[hsl(40_70%_96%)] text-[hsl(210_55%_12%)] text-sm font-semibold shadow-xl border border-[hsl(30_60%_80%)]">
                   Applications Close May 31, 2026
                 </div>
-                <div className="rounded-3xl overflow-hidden border border-border shadow-2xl">
+                <div className="relative rounded-3xl overflow-hidden border border-[hsl(30_60%_80%/0.35)] shadow-2xl bg-card">
                   <img
                     src={heroImage}
-                    alt="Mom-owned local service business owner reviewing leads from her unified GrowSmallBiz dashboard"
+                    alt="Mom-owned local service business owner with website, calls, chat, reviews, and CRM dashboard cards floating around her"
                     width={1536}
                     height={1024}
                     fetchPriority="high"
