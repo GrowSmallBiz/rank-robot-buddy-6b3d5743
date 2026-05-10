@@ -901,22 +901,41 @@ const MothersDayCohort = () => {
                 What Makes This Different
               </h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="rounded-2xl border border-border bg-background-alt p-8">
-                <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+            <div className="grid md:grid-cols-2 gap-6 mb-8 items-stretch">
+              <div className="relative rounded-2xl border border-dashed border-border bg-background-alt p-8 opacity-90">
+                <div className="absolute top-4 right-4">
+                  <XCircle className="w-5 h-5 text-muted-foreground/60" />
+                </div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-3">
                   Most website offers
                 </p>
-                <p className="text-2xl font-display font-bold">
+                <p className="text-2xl font-display font-bold text-muted-foreground/90 mb-5">
                   Give you a website.
                 </p>
+                <ul className="space-y-2 text-sm text-muted-foreground/80">
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />Just a website</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No CRM</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No follow-up automation</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No AI response tools</li>
+                </ul>
               </div>
-              <div className="rounded-2xl border-2 border-primary bg-card p-8">
-                <p className="text-sm font-semibold uppercase tracking-wider text-primary mb-3">
+              <div className="relative rounded-2xl border-2 border-primary bg-card p-8 shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.4)] overflow-hidden">
+                <div className="absolute top-0 inset-x-0 h-1 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
+                <div className="absolute top-4 right-4">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                </div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
                   This program
                 </p>
-                <p className="text-2xl font-display font-bold">
+                <p className="text-2xl font-display font-bold mb-5">
                   Gives you the system behind the website.
                 </p>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Website + CRM</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Lead capture & follow-up automation</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Review automation</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />AI-powered response tools</li>
+                </ul>
               </div>
             </div>
             <ul className="space-y-3 max-w-3xl mx-auto">
