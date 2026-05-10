@@ -42,6 +42,7 @@ const SECONDARY_CTA_LABEL = "See What’s Included";
 
 const sectionNav = [
   { id: "offer", label: "The Offer" },
+  { id: "system", label: "The System" },
   { id: "pricing", label: "Pricing" },
   { id: "leads", label: "Stop Losing Leads" },
   { id: "guarantee", label: "Guarantee" },
