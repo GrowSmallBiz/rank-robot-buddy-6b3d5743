@@ -77,6 +77,16 @@ const MothersDayCohort = () => {
   const { buildUrl } = useUtm();
   const ctaUrl = buildUrl(APPLICATION_FORM_URL, "mothers-day-cohort");
 
+  // Inject Google Reviews widget script client-side to avoid SSR/hydration mismatch
+  useEffect(() => {
+    const SRC = "https://reputationhub.site/reputation/assets/review-widget.js";
+    if (document.querySelector(`script[src="${SRC}"]`)) return;
+    const s = document.createElement("script");
+    s.src = SRC;
+    s.async = true;
+    document.body.appendChild(s);
+  }, []);
+
   const offerWebsite = [
     "5-page professional website: Home, About, Services, Contact, plus 1 custom page",
     "Mobile-friendly and desktop-friendly layout",
