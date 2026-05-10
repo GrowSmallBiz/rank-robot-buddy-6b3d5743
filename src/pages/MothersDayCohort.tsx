@@ -987,22 +987,28 @@ const MothersDayCohort = () => {
                 What Makes This Different
               </h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 mb-8 items-stretch">
+            <div className="grid md:grid-cols-2 gap-6 mb-10 items-stretch">
               <div className="relative rounded-2xl border border-dashed border-border bg-background-alt p-8 opacity-90">
                 <div className="absolute top-4 right-4">
                   <XCircle className="w-5 h-5 text-muted-foreground/60" />
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-3">
-                  Most website offers
+                <p className="text-lg md:text-xl font-display font-bold text-muted-foreground mb-5">
+                  Most basic website offers:
                 </p>
-                <p className="text-2xl font-display font-bold text-muted-foreground/90 mb-5">
-                  Give you a website.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground/80">
-                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />Just a website</li>
-                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No CRM</li>
-                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No follow-up automation</li>
-                  <li className="flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-muted-foreground/60" />No AI response tools</li>
+                <ul className="space-y-2.5 text-sm text-muted-foreground/90">
+                  {[
+                    "Just a website",
+                    "No CRM setup",
+                    "No follow-up automation",
+                    "No AI response tools",
+                    "No review automation",
+                    "No connected lead tracking",
+                  ].map((b) => (
+                    <li key={b} className="flex items-start gap-2">
+                      <XCircle className="w-4 h-4 mt-0.5 text-muted-foreground/60 shrink-0" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="relative rounded-2xl border-2 border-primary bg-card p-8 shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.4)] overflow-hidden">
@@ -1010,36 +1016,39 @@ const MothersDayCohort = () => {
                 <div className="absolute top-4 right-4">
                   <CheckCircle2 className="w-5 h-5 text-primary" />
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
-                  This program
+                <p className="text-lg md:text-xl font-display font-bold mb-5">
+                  This program:
                 </p>
-                <p className="text-2xl font-display font-bold mb-5">
-                  Gives you the system behind the website.
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Website + CRM</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Lead capture & follow-up automation</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />Review automation</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />AI-powered response tools</li>
+                <ul className="space-y-2.5 text-sm">
+                  {[
+                    "Website + CRM",
+                    "Lead capture + follow-up automation",
+                    "Review automation",
+                    "AI-powered response tools",
+                    "Unified inbox",
+                    "Connected client growth system",
+                  ].map((b) => (
+                    <li key={b} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            <ul className="space-y-3 max-w-3xl mx-auto">
-              {differentBullets.map((b) => (
-                <li key={b} className="flex items-start gap-3">
-                  <XCircle className="w-5 h-5 mt-0.5 text-muted-foreground shrink-0" />
-                  <span className="text-muted-foreground">{b}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-center mt-8 text-muted-foreground max-w-3xl mx-auto">
-              GrowSmallBiz combines the website, CRM, automation, review system,
-              and AI-powered response tools into one connected setup for local
-              service businesses.
-            </p>
-            <p className="text-center mt-3 font-semibold">
-              Built for business owners — not marketing teams.
-            </p>
+            <div className="max-w-3xl mx-auto space-y-3 text-muted-foreground">
+              <p>A website alone does not follow up with leads.</p>
+              <p>A contact form alone does not organize opportunities.</p>
+              <p>A phone number alone does not prevent missed calls.</p>
+              <p>A happy customer alone does not guarantee a review.</p>
+              <p>A CRM alone does not help unless it is set up properly.</p>
+              <p className="pt-2 text-foreground">
+                GrowSmallBiz combines the website, CRM, automation, review system, and AI-powered response tools into one connected setup for local service businesses.
+              </p>
+              <p className="font-semibold text-foreground">
+                Built for business owners — not marketing teams.
+              </p>
+            </div>
           </div>
         </section>
 
