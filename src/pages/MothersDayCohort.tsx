@@ -178,14 +178,6 @@ const MothersDayCohort = () => {
     "Looking for the cheapest possible website",
   ];
 
-  const differentBullets = [
-    "A website alone does not follow up with leads",
-    "A contact form alone does not organize opportunities",
-    "A phone number alone does not prevent missed calls",
-    "A happy customer alone does not guarantee a review",
-    "A CRM alone does not help unless it is set up properly",
-  ];
-
   const steps = [
     "Apply online in 2–3 minutes",
     "Schedule a short discovery call",
