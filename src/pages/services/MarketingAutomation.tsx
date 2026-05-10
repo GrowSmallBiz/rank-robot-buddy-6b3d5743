@@ -176,7 +176,7 @@ const faqs: FAQItem[] = [
 
 const pricingPlans = [
   {
-    name: "Essentials",
+    name: "Growth",
     price: "$297",
     description: "Perfect for Solopreneurs",
     features: [
@@ -192,6 +192,7 @@ const pricingPlans = [
     ],
     cta: "Get Started",
     ctaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
+    popular: true,
     note: "No contracts. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
@@ -209,7 +210,6 @@ const pricingPlans = [
     ],
     cta: "Go Unlimited",
     ctaLink: "https://lp.growsmallbiz.io/check-out-page---unlimited",
-    popular: true,
     note: "Zero AI overage fees. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
