@@ -1,5 +1,6 @@
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
 import {
