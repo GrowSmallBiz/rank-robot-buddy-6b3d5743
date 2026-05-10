@@ -196,8 +196,24 @@ const pricingPlans = [
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
   {
-    name: "Unlimited",
+    name: "Growth",
     price: "$397",
+    description: "Scale Conversations with AI",
+    features: [
+      "Everything in Essentials +",
+      "AI Receptionist",
+      "Website Live Chat",
+      "Conversational AI across SMS & Social Media Channels",
+    ],
+    cta: "Get Started",
+    ctaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
+    popular: true,
+    note: "No contracts. Cancel anytime.",
+    cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
+  },
+  {
+    name: "Unlimited",
+    price: "$497",
     description: "Maximum Power, Zero Limits",
     features: [
       "Everything in Essentials +",
@@ -209,7 +225,6 @@ const pricingPlans = [
     ],
     cta: "Go Unlimited",
     ctaLink: "https://lp.growsmallbiz.io/check-out-page---unlimited",
-    popular: true,
     note: "Zero AI overage fees. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
@@ -819,7 +834,7 @@ const MarketingAutomation = () => {
               titleHighlight="Keep Them For Life"
               description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
             />
-            <PricingGrid plans={pricingPlans} columns={2} />
+            <PricingGrid plans={pricingPlans} columns={3} />
             <p className="text-center mt-8 text-muted-foreground animate-fade-up">
               <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
               30 Days Money Back Guarantee
