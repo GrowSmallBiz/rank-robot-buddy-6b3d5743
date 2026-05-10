@@ -260,7 +260,7 @@ const MothersDayCohort = () => {
         <meta property="og:description" content={PAGE_DESC} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={PAGE_URL} />
-        <meta property="og:image" content={`https://growsmallbiz.io${HERO_IMG}`} />
+        <meta property="og:image" content={`https://growsmallbiz.io${heroImage}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={PAGE_TITLE} />
         <meta name="twitter:description" content={PAGE_DESC} />
