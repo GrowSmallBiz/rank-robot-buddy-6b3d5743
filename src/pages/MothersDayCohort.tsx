@@ -704,10 +704,7 @@ const MothersDayCohort = () => {
                   MOST POPULAR
                 </div>
                 <div className="relative">
-                  <div className="flex items-baseline justify-between mb-1">
-                    <h3 className="text-2xl font-display font-bold">Growth</h3>
-                    <span className="text-[11px] uppercase tracking-wider font-semibold text-primary px-2 py-0.5 rounded-full bg-primary/10 border border-primary/30">Recommended</span>
-                  </div>
+                  <h3 className="text-2xl font-display font-bold mb-1">Growth</h3>
                   <div className="flex items-baseline gap-1 mb-4">
                     <span className="text-4xl font-bold">$297</span>
                     <span className="text-muted-foreground">/month</span>
