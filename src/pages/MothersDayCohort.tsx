@@ -409,7 +409,6 @@ const MothersDayCohort = () => {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1px] h-24 bg-gradient-to-b from-transparent via-[hsl(20_85%_55%/0.4)] to-transparent pointer-events-none hidden md:block" />
           <div className="container mx-auto px-4 max-w-4xl relative z-10">
             <div className="text-center mb-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(20_85%_42%)] mb-3">A Note From GrowSmallBiz</p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)]">
                 Why This Offer Exists
               </h2>
