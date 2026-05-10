@@ -213,23 +213,6 @@ const pricingPlans = [
     note: "Zero AI overage fees. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
-  {
-    name: "Growth",
-    price: "$497",
-    description: "Traffic, SEO & Scale",
-    features: [
-      "Everything in Unlimited +",
-      "Cross-Channel AI Manager",
-      "Listings & Local SEO Sync",
-      "Premium WordPress Hosting",
-      "Multi-site & high-traffic optimization",
-      "Enhanced performance & visibility tools",
-    ],
-    cta: "Unlock Growth",
-    ctaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
-    note: "Save on Hosting & Ads. Cancel anytime.",
-    cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
-  },
 ];
 
 const whyChooseFeatures = [
