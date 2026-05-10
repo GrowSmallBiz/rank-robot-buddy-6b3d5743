@@ -213,23 +213,6 @@ const pricingPlans = [
     note: "Zero AI overage fees. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
-  {
-    name: "Growth",
-    price: "$497",
-    description: "Traffic, SEO & Scale",
-    features: [
-      "Everything in Unlimited +",
-      "Cross-Channel AI Manager",
-      "Listings & Local SEO Sync",
-      "Premium WordPress Hosting",
-      "Multi-site & high-traffic optimization",
-      "Enhanced performance & visibility tools",
-    ],
-    cta: "Unlock Growth",
-    ctaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
-    note: "Save on Hosting & Ads. Cancel anytime.",
-    cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
-  },
 ];
 
 const whyChooseFeatures = [
@@ -836,7 +819,7 @@ const MarketingAutomation = () => {
               titleHighlight="Keep Them For Life"
               description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
             />
-            <PricingGrid plans={pricingPlans} columns={3} />
+            <PricingGrid plans={pricingPlans} columns={2} />
             <p className="text-center mt-8 text-muted-foreground animate-fade-up">
               <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
               30 Days Money Back Guarantee
