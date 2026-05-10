@@ -766,25 +766,31 @@ const MothersDayCohort = () => {
         {/* GUARANTEE */}
         <section
           id="guarantee"
-          className="py-20 bg-background-alt scroll-mt-20"
+          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(30_50%_90%)_100%)]"
         >
-          <div className="container mx-auto px-4 max-w-3xl">
-            <div className="rounded-2xl border border-border bg-card p-8 md:p-10 text-center">
-              <div className="w-16 h-16 mx-auto rounded-full bg-primary/15 flex items-center justify-center mb-5">
-                <ShieldCheck className="w-8 h-8 text-primary" />
+          <div className="absolute -top-16 -right-16 w-72 h-72 rounded-full bg-[hsl(22_85%_70%/0.2)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-16 -left-16 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 max-w-3xl relative z-10">
+            <div className="relative rounded-3xl border border-[hsl(30_55%_75%)] bg-white/85 backdrop-blur-sm p-8 md:p-12 text-center shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.3)]">
+              <div className="absolute top-0 inset-x-0 h-1.5 rounded-t-3xl bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
+              <div className="relative w-20 h-20 mx-auto mb-5">
+                <div className="absolute inset-0 rounded-full bg-[linear-gradient(135deg,hsl(22_85%_60%/0.25),hsl(350_70%_75%/0.25))] blur-md" />
+                <div className="relative w-20 h-20 rounded-full bg-white border border-[hsl(30_55%_80%)] flex items-center justify-center shadow-md">
+                  <ShieldCheck className="w-9 h-9 text-[hsl(22_85%_50%)]" />
+                </div>
               </div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-primary mb-2">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(22_85%_42%)] mb-2">
                 30-Day Onboarding Guarantee
               </p>
-              <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl font-display font-bold mb-4 text-[hsl(210_55%_12%)]">
                 Your Onboarding Is Protected
               </h2>
-              <p className="text-muted-foreground mb-3">
+              <p className="text-[hsl(210_30%_25%)] mb-3">
                 If your website is not delivered, or if you are not satisfied
                 with the onboarding experience within the first 30 days, your
                 onboarding fee will be refunded.
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-[hsl(210_25%_40%)]">
                 This guarantee is designed to remove risk while keeping the
                 program focused on serious business owners who are ready to
                 launch.
