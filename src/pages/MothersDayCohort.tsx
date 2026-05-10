@@ -392,18 +392,24 @@ const MothersDayCohort = () => {
         </section>
 
         {/* WHY THIS OFFER EXISTS */}
-        <section className="py-20 bg-background-alt">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-8 text-center">
-              Why This Offer Exists
-            </h2>
-            <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
+        <section className="py-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_60%_95%)_0%,hsl(20_55%_92%)_100%)]">
+          <div className="absolute -top-20 right-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.28)] blur-3xl pointer-events-none" />
+          <div className="absolute bottom-0 -left-20 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.25)] blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1px] h-24 bg-gradient-to-b from-transparent via-[hsl(20_85%_55%/0.4)] to-transparent pointer-events-none hidden md:block" />
+          <div className="container mx-auto px-4 max-w-4xl relative z-10">
+            <div className="text-center mb-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(20_85%_42%)] mb-3">A Note From GrowSmallBiz</p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)]">
+                Why This Offer Exists
+              </h2>
+            </div>
+            <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/75 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] p-8 md:p-12 space-y-5 text-lg text-[hsl(210_30%_22%)] leading-relaxed">
               <p>
                 Mom-owned businesses are already doing the hard part: earning
                 trust, serving clients, building relationships, and keeping the
                 business moving while life keeps moving too.
               </p>
-              <blockquote className="border-l-4 border-primary pl-5 py-2 text-foreground text-xl md:text-2xl font-display italic">
+              <blockquote className="relative pl-6 py-3 my-2 text-[hsl(210_55%_14%)] text-xl md:text-2xl font-display italic before:absolute before:left-0 before:top-1 before:bottom-1 before:w-1 before:rounded-full before:bg-[linear-gradient(180deg,hsl(20_85%_60%),hsl(350_70%_70%),hsl(280_55%_72%))]">
                 The problem is usually not effort. It is the system around the
                 business.
               </blockquote>
@@ -414,7 +420,7 @@ const MothersDayCohort = () => {
                 Follow-up depends on memory. Messages arrive from different
                 places and get lost.
               </p>
-              <p>That is why this Mother’s Day cohort exists.</p>
+              <p className="text-[hsl(210_55%_14%)] font-medium">That is why this Mother’s Day cohort exists.</p>
               <p>
                 GrowSmallBiz is reserving 5 onboarding spots for mom-owned
                 local service businesses that want a stronger online presence
