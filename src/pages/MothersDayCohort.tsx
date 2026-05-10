@@ -604,12 +604,12 @@ const MothersDayCohort = () => {
                   {
                     title: "Client Growth System Overview",
                     sub: "See how the system helps organize leads, conversations, follow-up, reviews, and customer communication in one place.",
-                    src: "https://www.youtube-nocookie.com/embed/rJ289MZ0ugU",
+                    src: "https://www.youtube-nocookie.com/embed/IkA8jPWgHxk",
                   },
                   {
                     title: "AI Employee Demo",
                     sub: "See how AI-powered response tools can help answer questions, capture information, and support faster follow-up.",
-                    src: "https://www.youtube-nocookie.com/embed/IkA8jPWgHxk",
+                    src: "https://www.youtube-nocookie.com/embed/rJ289MZ0ugU",
                   },
                 ].map((v) => (
                   <div
