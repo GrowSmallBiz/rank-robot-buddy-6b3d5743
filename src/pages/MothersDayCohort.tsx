@@ -449,9 +449,10 @@ const MothersDayCohort = () => {
 
             <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {/* Website */}
-              <div className="rounded-2xl border border-border bg-card p-8">
+              <div className="relative rounded-2xl border border-border bg-card p-8 overflow-hidden">
+                <div className="absolute top-0 inset-x-0 h-1 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[hsl(22_85%_60%/0.15)] border border-[hsl(22_85%_60%/0.3)] flex items-center justify-center">
                     <Globe className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-xl md:text-2xl font-display font-bold">
@@ -472,7 +473,7 @@ const MothersDayCohort = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="rounded-lg bg-background-alt p-4 text-sm text-muted-foreground">
+                <div className="rounded-lg bg-[hsl(35_50%_92%/0.08)] border border-[hsl(30_55%_70%/0.18)] p-4 text-sm text-muted-foreground">
                   <span className="font-semibold text-foreground">
                     Why the website build is included:
                   </span>{" "}
@@ -484,9 +485,10 @@ const MothersDayCohort = () => {
               </div>
 
               {/* Setup */}
-              <div className="rounded-2xl border border-border bg-card p-8">
+              <div className="relative rounded-2xl border border-border bg-card p-8 overflow-hidden">
+                <div className="absolute top-0 inset-x-0 h-1 bg-[linear-gradient(90deg,hsl(280_55%_72%),hsl(350_70%_72%),hsl(22_85%_60%))]" />
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[hsl(280_55%_70%/0.15)] border border-[hsl(280_55%_70%/0.3)] flex items-center justify-center">
                     <Database className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-xl md:text-2xl font-display font-bold">
@@ -494,8 +496,8 @@ const MothersDayCohort = () => {
                   </h3>
                 </div>
                 <p className="text-muted-foreground mb-2">
-                  Standard onboarding is $1,500. For this Mother’s Day cohort,
-                  onboarding is reduced to $1,000.
+                  Standard onboarding is <span className="line-through">$1,500</span>. For this Mother’s Day cohort,
+                  onboarding is reduced to <span className="font-bold text-foreground">$1,000</span>.
                 </p>
                 <p className="text-muted-foreground mb-5">
                   This is where we configure the system behind your website so
