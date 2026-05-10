@@ -570,6 +570,85 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        {/* SEE THE SYSTEM BEHIND YOUR WEBSITE */}
+        <section id="system" className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]">
+          <div className="absolute -top-20 right-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 left-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 max-w-6xl relative z-10">
+            <div className="text-center mb-10 max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
+                See the System Behind Your Website
+              </h2>
+              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
+                Your website is only the front door. GrowSmallBiz also sets up the connected system behind it — lead capture, CRM, follow-up automation, reviews, and AI-powered response tools.
+              </p>
+            </div>
+
+            {/* Google Reviews */}
+            <div className="mb-14">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-center text-[hsl(210_55%_14%)] mb-6">
+                Recent Google Reviews
+              </h3>
+              <div className="max-w-4xl mx-auto rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] p-3 md:p-6 overflow-hidden">
+                <iframe
+                  className="lc_reviews_widget w-full block"
+                  src="https://reputationhub.site/reputation/widgets/review_widget/4KL47iKeJZ2Ee05j7FBh"
+                  frameBorder={0}
+                  scrolling="no"
+                  style={{ minWidth: "100%", width: "100%" }}
+                  title="Recent Google Reviews"
+                />
+              </div>
+            </div>
+
+            {/* Videos */}
+            <div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-center text-[hsl(210_55%_14%)] mb-6">
+                Watch How the System Works
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                {[
+                  {
+                    title: "Client Growth System Overview",
+                    sub: "See how the system helps organize leads, conversations, follow-up, reviews, and customer communication in one place.",
+                    src: "https://www.youtube-nocookie.com/embed/rJ289MZ0ugU",
+                  },
+                  {
+                    title: "AI Employee Demo",
+                    sub: "See how AI-powered response tools can help answer questions, capture information, and support faster follow-up.",
+                    src: "https://www.youtube-nocookie.com/embed/IkA8jPWgHxk",
+                  },
+                ].map((v) => (
+                  <div
+                    key={v.src}
+                    className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] overflow-hidden flex flex-col"
+                  >
+                    <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
+                      <iframe
+                        src={v.src}
+                        title={v.title}
+                        loading="lazy"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                        frameBorder={0}
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="font-display font-bold text-lg text-[hsl(210_55%_14%)] mb-2">
+                        {v.title}
+                      </h4>
+                      <p className="text-sm text-[hsl(210_30%_30%)] leading-relaxed">
+                        {v.sub}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* PRICING */}
         <section id="pricing" className="py-20 bg-background-alt scroll-mt-20">
           <div className="container mx-auto px-4">
