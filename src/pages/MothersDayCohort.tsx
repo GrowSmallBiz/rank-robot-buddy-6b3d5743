@@ -1092,13 +1092,13 @@ const MothersDayCohort = () => {
         </div>
       </footer>
 
-      {/* STICKY MOBILE CTA */}
-      <div className="md:hidden fixed bottom-0 inset-x-0 z-40 p-3 bg-background/95 backdrop-blur border-t border-border">
+      {/* STICKY MOBILE CTA — sits above bottom-right chat widget */}
+      <div className="md:hidden fixed bottom-0 inset-x-0 z-40 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] bg-background/95 backdrop-blur border-t border-border">
         <a
           href={ctaUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-md bg-primary text-primary-foreground font-semibold shadow-lg"
+          className="flex items-center justify-center gap-2 w-[calc(100%-4.5rem)] px-4 py-3 rounded-md bg-primary text-primary-foreground font-semibold shadow-lg text-sm"
         >
           {PRIMARY_CTA_LABEL} <ArrowRight className="w-4 h-4" />
         </a>
