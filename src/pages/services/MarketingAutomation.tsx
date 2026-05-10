@@ -819,7 +819,7 @@ const MarketingAutomation = () => {
               titleHighlight="Keep Them For Life"
               description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
             />
-            <PricingGrid plans={pricingPlans} columns={3} />
+            <PricingGrid plans={pricingPlans} columns={2} />
             <p className="text-center mt-8 text-muted-foreground animate-fade-up">
               <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
               30 Days Money Back Guarantee
