@@ -202,7 +202,7 @@ const pricingPlans = [
     features: [
       "Everything in Essentials +",
       "AI Receptionist",
-      "Website Live Chat",
+      "Website AI Livechat",
       "Conversational AI across SMS & Social Media Channels",
     ],
     cta: "Get Started",
