@@ -848,21 +848,31 @@ const MothersDayCohort = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-8 text-center">
               About GrowSmallBiz
             </h2>
-            <div className="rounded-2xl border border-border bg-card p-8 md:p-10">
-              <div className="flex items-start gap-4 mb-5">
-                <div className="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
-                  <span className="text-xl font-display font-bold text-primary">
-                    SG
-                  </span>
+            <div className="relative rounded-2xl border border-border bg-card p-8 md:p-10 overflow-hidden shadow-xl">
+              <div className="absolute top-0 inset-x-0 h-1 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
+              <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-[hsl(22_85%_60%/0.08)] blur-3xl pointer-events-none" />
+              <div className="relative flex flex-col sm:flex-row items-start gap-5 mb-6">
+                <div className="relative shrink-0">
+                  <div className="absolute -inset-1 rounded-full bg-[linear-gradient(135deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))] blur-sm opacity-70" />
+                  <div className="relative w-16 h-16 rounded-full bg-card border-2 border-[hsl(22_85%_60%/0.5)] flex items-center justify-center">
+                    <span className="text-xl font-display font-bold text-primary">
+                      SG
+                    </span>
+                  </div>
                 </div>
-                <div>
+                <div className="flex-1">
                   <p className="font-display font-bold text-lg">Subrata Guha</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground mb-2">
                     Founder · Danville, CA
                   </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-[11px] uppercase tracking-wider font-semibold text-primary px-2 py-0.5 rounded-full bg-primary/10 border border-primary/30">Danville-Based</span>
+                    <span className="text-[11px] uppercase tracking-wider font-semibold text-foreground px-2 py-0.5 rounded-full bg-[hsl(280_55%_72%/0.15)] border border-[hsl(280_55%_72%/0.35)]">Chamber Member</span>
+                    <span className="text-[11px] uppercase tracking-wider font-semibold text-foreground px-2 py-0.5 rounded-full bg-[hsl(350_70%_72%/0.15)] border border-[hsl(350_70%_72%/0.35)]">30+ Years Experience</span>
+                  </div>
                 </div>
               </div>
-              <div className="space-y-4 text-muted-foreground">
+              <div className="space-y-4 text-muted-foreground relative">
                 <p>
                   GrowSmallBiz is a Danville-based digital marketing agency
                   built for local service businesses.
