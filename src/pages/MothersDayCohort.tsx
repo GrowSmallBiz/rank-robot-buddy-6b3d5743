@@ -609,37 +609,43 @@ const MothersDayCohort = () => {
               </div>
 
               {/* Growth */}
-              <div className="relative rounded-2xl border-2 border-primary bg-card p-8 flex flex-col shadow-2xl">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold tracking-wide">
+              <div className="relative lg:-my-2 rounded-2xl border-2 border-primary bg-card p-8 flex flex-col shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.45)] ring-1 ring-[hsl(22_85%_60%/0.3)]">
+                <div className="absolute -inset-px rounded-2xl bg-[linear-gradient(135deg,hsl(22_85%_60%/0.18),transparent_60%)] pointer-events-none" />
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold tracking-wide shadow-lg">
                   MOST POPULAR
                 </div>
-                <h3 className="text-2xl font-display font-bold mb-1">Growth</h3>
-                <div className="flex items-baseline gap-1 mb-4">
-                  <span className="text-4xl font-bold">$297</span>
-                  <span className="text-muted-foreground">/month</span>
+                <div className="relative">
+                  <div className="flex items-baseline justify-between mb-1">
+                    <h3 className="text-2xl font-display font-bold">Growth</h3>
+                    <span className="text-[11px] uppercase tracking-wider font-semibold text-primary px-2 py-0.5 rounded-full bg-primary/10 border border-primary/30">Recommended</span>
+                  </div>
+                  <div className="flex items-baseline gap-1 mb-4">
+                    <span className="text-4xl font-bold">$297</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-muted-foreground mb-6">
+                    For businesses that want more automation and faster response
+                    when leads call, message, or visit the website.
+                  </p>
+                  <p className="font-semibold mb-3">Everything in Starter, plus:</p>
+                  <ul className="space-y-2 mb-6 flex-1">
+                    {growthExtras.map((b) => (
+                      <li key={b} className="flex items-start gap-2 text-sm">
+                        <Sparkles className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                        <span className="font-medium">{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-sm text-muted-foreground mb-5">
+                    <span className="font-semibold text-foreground">
+                      Best for:
+                    </span>{" "}
+                    Businesses that miss calls, receive after-hours inquiries, or
+                    want leads handled faster without hiring a full-time
+                    receptionist.
+                  </p>
+                  <PrimaryCTA href={ctaUrl} full />
                 </div>
-                <p className="text-muted-foreground mb-6">
-                  For businesses that want more automation and faster response
-                  when leads call, message, or visit the website.
-                </p>
-                <p className="font-semibold mb-3">Everything in Starter, plus:</p>
-                <ul className="space-y-2 mb-6 flex-1">
-                  {growthExtras.map((b) => (
-                    <li key={b} className="flex items-start gap-2 text-sm">
-                      <Sparkles className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                      <span className="font-medium">{b}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-sm text-muted-foreground mb-5">
-                  <span className="font-semibold text-foreground">
-                    Best for:
-                  </span>{" "}
-                  Businesses that miss calls, receive after-hours inquiries, or
-                  want leads handled faster without hiring a full-time
-                  receptionist.
-                </p>
-                <PrimaryCTA href={ctaUrl} full />
               </div>
             </div>
 
