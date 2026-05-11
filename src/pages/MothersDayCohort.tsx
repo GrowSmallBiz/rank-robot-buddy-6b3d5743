@@ -230,7 +230,7 @@ const MothersDayCohort = () => {
   const faqs = [
     {
       q: "What qualifies as mom-owned?",
-      a: "For this cohort, mom-owned means the business is owned or co-owned by a mother who is actively involved in running the business.",
+      a: "For this offer, mom-owned means the business is owned or co-owned by a mother who is actively involved in running the business.",
     },
     {
       q: "What types of businesses are a good fit?",
