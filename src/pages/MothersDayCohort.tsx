@@ -371,7 +371,7 @@ const MothersDayCohort = () => {
 
             {/* Two-column: bullets/CTAs + image */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-6xl mx-auto">
-              <div className="order-2 lg:order-1">
+              <div className="order-2 lg:order-1 min-w-0">
                 <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
                   Mother’s Day may be over, but mom-owned businesses deserve more than one day of recognition. For 5 local service businesses owned by moms, GrowSmallBiz is including:
                 </p>
