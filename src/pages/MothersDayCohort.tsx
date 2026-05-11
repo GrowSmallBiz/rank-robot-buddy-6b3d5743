@@ -35,6 +35,7 @@ import {
   PhoneMissed,
 } from "lucide-react";
 import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
+import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 
 const PAGE_PATH = "/mothers-day-mom-owned-business-cohort/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
@@ -306,12 +307,18 @@ const MothersDayCohort = () => {
       {/* Minimal campaign top bar */}
       <header className="sticky top-0 z-40 bg-background/85 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 h-14 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-5 h-5 text-primary" />
-            <span className="font-display font-semibold text-foreground text-sm md:text-base">
+          <Link to="/" className="flex items-center gap-2 min-w-0">
+            <img
+              src={growsmallbizLogo}
+              alt="GrowSmallBiz logo"
+              width={36}
+              height={36}
+              className="h-9 w-auto shrink-0"
+            />
+            <span className="font-display font-semibold text-foreground text-sm md:text-base truncate">
               GrowSmallBiz · Mother’s Day Appreciation Offer
             </span>
-          </div>
+          </Link>
           <nav
             aria-label="On this page"
             className="hidden lg:flex items-center gap-5 text-sm text-muted-foreground"
@@ -378,19 +385,19 @@ const MothersDayCohort = () => {
 
                 <ul className="space-y-2.5 mb-7">
                   {[
-                    { text: "A complimentary Starter Website valued at $2,500", highlight: false },
-                    { text: "$500 off Client Growth System Setup", highlight: false },
-                    { text: "Done For You Implementation Service", highlight: true },
-                    { text: "Guided Onboarding & Training", highlight: true },
-                    { text: "24x7 Technical Support via Chat", highlight: true },
-                  ].map((b) => (
+                    "A complimentary Starter Website valued at $2,500",
+                    "$500 off Client Growth System Setup",
+                    "Done For You Implementation Service",
+                    "Guided Onboarding & Training",
+                    "24x7 Technical Support via Chat",
+                  ].map((text) => (
                     <li
-                      key={b.text}
+                      key={text}
                       className="flex items-start gap-3 px-4 py-3 rounded-lg bg-primary/15 border-2 border-primary/60 shadow-[0_0_18px_hsl(22_85%_60%/0.18)]"
                     >
                       <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0 text-primary" />
-                      <span className={`text-sm md:text-base ${b.highlight ? "text-foreground font-semibold" : "text-foreground/90"}`}>
-                        {b.text}
+                      <span className="text-sm md:text-base text-foreground font-semibold">
+                        {text}
                       </span>
                     </li>
                   ))}
@@ -1119,17 +1126,75 @@ const MothersDayCohort = () => {
 
       {/* MINIMAL FOOTER */}
       <footer className="bg-card border-t border-border" role="contentinfo">
-        <div className="container mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} GrowSmallBiz. All rights reserved.</p>
-            <nav aria-label="Legal" className="flex items-center gap-6">
-              <Link to="/terms-of-service/" className="hover:text-primary transition-colors">
-                Terms &amp; Conditions
+        <div className="container mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+            {/* Brand */}
+            <div className="space-y-4">
+              <Link to="/" className="flex items-center gap-3">
+                <img
+                  src={growsmallbizLogo}
+                  alt="GrowSmallBiz logo"
+                  width={48}
+                  height={48}
+                  className="h-12 w-auto"
+                />
+                <span className="text-lg font-bold font-display text-foreground">
+                  GrowSmallBiz
+                </span>
               </Link>
-              <Link to="/privacy-policy/" className="hover:text-primary transition-colors">
-                Privacy Policy
-              </Link>
-            </nav>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Mother’s Day Appreciation Offer for 5 mom-owned local service businesses.
+              </p>
+            </div>
+
+            {/* On this page */}
+            <div>
+              <h4 className="font-display font-semibold text-foreground mb-4 border-b-2 border-primary/40 pb-2 inline-block">
+                On This Page
+              </h4>
+              <ul className="grid grid-cols-2 gap-y-2 gap-x-4">
+                {sectionNav.map((s) => (
+                  <li key={s.id}>
+                    <a
+                      href={`#${s.id}`}
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal / Company */}
+            <div>
+              <h4 className="font-display font-semibold text-foreground mb-4 border-b-2 border-primary/40 pb-2 inline-block">
+                Company
+              </h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Claim Your Spot
+                  </a>
+                </li>
+                <li>
+                  <Link to="/terms-of-service/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Terms &amp; Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy-policy/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="pt-6 border-t border-border text-center">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} GrowSmallBiz. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
