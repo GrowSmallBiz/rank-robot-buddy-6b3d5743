@@ -172,21 +172,21 @@ const MothersDayCohort = () => {
     { icon: ShieldCheck, text: "Hands-on launch support" },
   ];
 
-  const integrations = [
-    "Google Calendar",
-    "Google account connection",
-    "Google Business Profile",
-    "Google Lead Ads",
-    "Facebook & Instagram",
-    "LinkedIn lead forms",
-    "TikTok messaging or lead ads",
-    "WhatsApp",
-    "Stripe, PayPal, Square, or other payment providers",
-    "QuickBooks",
-    "Slack",
-    "Canva",
-    "ClickUp",
-    "Fathom",
+  const integrations: { name: string; color: string }[] = [
+    { name: "Google Calendar", color: "#4285F4" },
+    { name: "Google account connection", color: "#EA4335" },
+    { name: "Google Business Profile", color: "#34A853" },
+    { name: "Google Lead Ads", color: "#FBBC05" },
+    { name: "Facebook & Instagram", color: "#E1306C" },
+    { name: "LinkedIn lead forms", color: "#0A66C2" },
+    { name: "TikTok messaging or lead ads", color: "#25F4EE" },
+    { name: "WhatsApp", color: "#25D366" },
+    { name: "Stripe, PayPal, Square, or other payment providers", color: "#635BFF" },
+    { name: "QuickBooks", color: "#2CA01C" },
+    { name: "Slack", color: "#ECB22E" },
+    { name: "Canva", color: "#00C4CC" },
+    { name: "ClickUp", color: "#7B68EE" },
+    { name: "Fathom", color: "#9333EA" },
   ];
 
   const essentialsIncludes = [
