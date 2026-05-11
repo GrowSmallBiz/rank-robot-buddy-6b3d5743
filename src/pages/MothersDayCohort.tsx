@@ -381,9 +381,9 @@ const MothersDayCohort = () => {
                 Get a Complimentary Starter Small Business Website
               </h1>
 
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold leading-snug max-w-4xl mx-auto bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Plus the System That Helps Turn Inquiries Into Booked Clients
-              </h2>
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold leading-snug max-w-4xl mx-auto bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Free Website + Lead Automation System for Small Businesses
+              </p>
 
               {/* Prominent deadline */}
               <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary/15 border-2 border-primary text-primary font-bold text-sm md:text-base shadow-[0_0_30px_hsl(22_85%_60%/0.25)]">
