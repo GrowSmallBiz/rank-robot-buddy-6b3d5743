@@ -309,7 +309,7 @@ const MothersDayCohort = () => {
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-primary" />
             <span className="font-display font-semibold text-foreground text-sm md:text-base">
-              GrowSmallBiz · Mother’s Day Cohort
+              GrowSmallBiz · Mother’s Day Appreciation Offer
             </span>
           </div>
           <nav
