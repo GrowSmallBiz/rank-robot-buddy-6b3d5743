@@ -1055,14 +1055,14 @@ const MothersDayCohort = () => {
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[linear-gradient(135deg,hsl(22_85%_60%/0.2),hsl(350_70%_72%/0.2))] border border-[hsl(22_85%_60%/0.5)] text-foreground text-sm md:text-base font-bold mb-6 shadow-[0_0_30px_hsl(22_85%_50%/0.25)]">
               <Clock className="w-4 h-4 text-primary" />
               <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] to-[hsl(350_75%_82%)] bg-clip-text text-transparent">
-                Applications Close May 31, 2026
+                Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-5 text-foreground leading-tight">
               5 Spots. This Deal Will Not Be Repeated.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, apply for one of the 5 Mother’s Day cohort spots.
+              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, apply for one of the 5 spots in this Mother’s Day Appreciation Offer.
             </p>
 
             <div className="rounded-2xl border border-[hsl(22_85%_60%/0.25)] bg-card/70 backdrop-blur p-6 md:p-8 mb-8 text-left shadow-2xl">
@@ -1072,7 +1072,7 @@ const MothersDayCohort = () => {
                   "Client Growth System Setup reduced to $1,000",
                   "Essentials Cohort: $197/month",
                   "Growth Cohort: $297/month",
-                  "Applications close May 31, 2026",
+                  "Extended through May 31, 2026 — or until 5 spots are filled",
                   "Spots are filled first-paid after the discovery call",
                 ].map((s) => (
                   <li key={s} className="flex items-start gap-3">
@@ -1087,7 +1087,7 @@ const MothersDayCohort = () => {
               <PrimaryCTA href={ctaUrl} />
             </div>
             <p className="text-xs text-muted-foreground italic">
-              Once these 5 spots are filled, this Mother’s Day cohort offer will close.
+              Once these 5 spots are filled, this Mother’s Day Appreciation Offer will close.
             </p>
           </div>
         </section>
