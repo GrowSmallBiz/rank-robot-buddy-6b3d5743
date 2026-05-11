@@ -208,17 +208,17 @@ const MothersDayCohort = () => {
   ];
 
   const automationCards = [
-    { icon: Smartphone, title: "Missed-call text-back", desc: "Instantly texts back missed callers so leads never go cold." },
-    { icon: PhoneCall, title: "AI Voice Receptionist", desc: "Answers calls 24/7, books appointments, and captures details." },
-    { icon: Bot, title: "AI Livechat on your website", desc: "Engages visitors in real time and turns clicks into conversations." },
-    { icon: Mail, title: "Lead form follow-up", desc: "Replies within seconds — when buying intent is highest." },
-    { icon: MessageSquare, title: "Email & SMS nurture", desc: "Stays in front of leads until they're ready to book." },
-    { icon: Calendar, title: "Calendar scheduling", desc: "Lets clients self-book without the back-and-forth." },
-    { icon: Clock, title: "Appointment reminders", desc: "Cuts no-shows with automated reminders by text and email." },
-    { icon: Star, title: "Review requests", desc: "Asks happy clients for reviews on autopilot to build trust." },
-    { icon: Inbox, title: "Unified inbox", desc: "All calls, texts, emails, and DMs in one place." },
-    { icon: Database, title: "CRM pipeline tracking", desc: "See every lead's stage so nothing slips through the cracks." },
-    { icon: CreditCard, title: "Payment acceptance when applicable", desc: "Collect deposits and payments without extra tools." },
+    { icon: Smartphone, title: "Missed-Call Text-Back System", desc: "Automatically text back missed calls so no lead slips away.", quote: "Never lose a customer because you missed a call again." },
+    { icon: PhoneCall, title: "AI Voice Receptionist", desc: "Answers every call 24/7, books appointments, and captures lead details.", quote: "Your business sounds open even when you're with the kids." },
+    { icon: Bot, title: "AI Livechat on Your Website", desc: "Engages visitors instantly and turns clicks into conversations.", quote: "Talk to every visitor — without lifting a finger." },
+    { icon: Mail, title: "Lead Form Follow-Up", desc: "Replies within seconds, when buying intent is highest.", quote: "Speed-to-lead wins the job." },
+    { icon: MessageSquare, title: "Email & SMS Nurture", desc: "Stays in front of leads until they're ready to book.", quote: "Turn maybes into yeses, automatically." },
+    { icon: Calendar, title: "Calendar Scheduling", desc: "Lets clients self-book without the back-and-forth.", quote: "No more phone tag — just booked appointments." },
+    { icon: Clock, title: "Appointment Reminders", desc: "Cuts no-shows with automated text and email reminders.", quote: "Fewer no-shows. More revenue." },
+    { icon: Star, title: "Review Requests", desc: "Asks happy clients for reviews on autopilot to build trust.", quote: "Build a 5-star reputation while you sleep." },
+    { icon: Inbox, title: "Unified Inbox", desc: "All calls, texts, emails, and DMs in one place.", quote: "Stop juggling apps. See every message in one view." },
+    { icon: Database, title: "CRM Pipeline Tracking", desc: "See every lead's stage so nothing slips through the cracks.", quote: "Know exactly who to follow up with next." },
+    { icon: CreditCard, title: "Payment Acceptance", desc: "Collect deposits and payments without extra tools.", quote: "Get paid faster — right inside the system." },
   ];
 
   const automationFlow = [
