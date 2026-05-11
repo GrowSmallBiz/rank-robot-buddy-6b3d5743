@@ -1197,7 +1197,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Choose the Plan That Fits Your Business
+                Choose the GrowSmallBiz Plan That Fits Your Small Business
               </h2>
               <p className="text-muted-foreground">
                 Both plans include your complimentary Starter Website and discounted Client Growth System Setup. Choose how much automation you want behind your business.
