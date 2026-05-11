@@ -44,7 +44,7 @@ const PAGE_TITLE = "Mother’s Day Appreciation Offer | GrowSmallBiz";
 const PAGE_DESC =
   "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special cohort pricing that will not be repeated.";
 
-const PRIMARY_CTA_LABEL = "Apply for One of the 5 Spots";
+const PRIMARY_CTA_LABEL = "Claim Your Spot — First Come, First Served";
 const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
 
 const sectionNav = [
