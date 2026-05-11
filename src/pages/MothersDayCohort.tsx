@@ -43,6 +43,10 @@ import bizCleaning from "@/assets/cohort/biz-cleaning.jpg";
 import bizTutoring from "@/assets/cohort/biz-tutoring.jpg";
 import bizPetcare from "@/assets/cohort/biz-petcare.jpg";
 import bizFitness from "@/assets/cohort/biz-fitness.jpg";
+import chamberDanville from "@/assets/cohort/chamber-danville.webp";
+import chamberSanRamon from "@/assets/cohort/chamber-sanramon.webp";
+import chamberWalnutCreek from "@/assets/cohort/chamber-walnutcreek.webp";
+import chamberConcord from "@/assets/cohort/chamber-concord.png";
 
 const BUILT_FOR = [
   { img: bizSalon, label: "Hair & Beauty Salons" },
