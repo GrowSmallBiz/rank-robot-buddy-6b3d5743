@@ -716,16 +716,19 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
               {automationCards.map((c) => (
                 <div
                   key={c.title}
-                  className="rounded-xl border border-border bg-card p-5 flex items-start gap-3 hover:border-primary/40 transition-colors"
+                  className="rounded-xl border-2 border-[hsl(188_78%_41%_/_0.35)] bg-[hsl(188_60%_14%)] p-5 flex items-start gap-3 hover:border-[hsl(188_78%_55%_/_0.7)] hover:shadow-[0_0_25px_hsl(188_78%_41%_/_0.25)] transition-all"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/25 flex items-center justify-center shrink-0">
-                    <c.icon className="w-5 h-5 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-[hsl(188_78%_41%_/_0.2)] border border-[hsl(188_78%_55%_/_0.4)] flex items-center justify-center shrink-0">
+                    <c.icon className="w-5 h-5 text-[hsl(188_78%_65%)]" />
                   </div>
-                  <span className="text-sm font-medium pt-1.5">{c.title}</span>
+                  <div className="flex-1">
+                    <h3 className="text-sm font-semibold text-foreground mb-1">{c.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{c.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
