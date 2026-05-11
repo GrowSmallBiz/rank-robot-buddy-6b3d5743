@@ -58,12 +58,23 @@ export const PricingCard = ({
       </div>
 
       <ul className="space-y-3 mb-8">
-        {features.map((feature, index) => (
-          <li key={index} className="flex items-start gap-3">
-            <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-            <span className="text-foreground text-sm">{feature}</span>
-          </li>
-        ))}
+        {features.map((feature, index) => {
+          const isHeading = /^everything in/i.test(feature);
+          return (
+            <li key={index} className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+              <span
+                className={
+                  isHeading
+                    ? "text-foreground text-base md:text-lg font-bold"
+                    : "text-foreground text-sm"
+                }
+              >
+                {feature}
+              </span>
+            </li>
+          );
+        })}
       </ul>
 
       <Button
@@ -78,7 +89,15 @@ export const PricingCard = ({
       </Button>
 
       {note && (
-        <p className="text-xs text-center text-muted-foreground mt-4">{note}</p>
+        /^save\b/i.test(note) ? (
+          <div className="mt-4 flex justify-center">
+            <span className="inline-block px-4 py-2 rounded-full bg-primary/15 border border-primary/40 text-primary font-bold text-sm md:text-base text-center">
+              {note}
+            </span>
+          </div>
+        ) : (
+          <p className="text-xs text-center text-muted-foreground mt-4">{note}</p>
+        )
       )}
     </div>
   );
