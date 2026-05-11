@@ -40,9 +40,9 @@ const PAGE_PATH = "/mothers-day-mom-owned-business-cohort/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
 const APPLICATION_FORM_URL =
   "https://lp.growsmallbiz.io/digital-growth-strategy-session";
-const PAGE_TITLE = "Mother’s Day Mom-Owned Business Cohort | GrowSmallBiz";
+const PAGE_TITLE = "Mother’s Day Appreciation Offer | GrowSmallBiz";
 const PAGE_DESC =
-  "A limited Mother’s Day cohort for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus discounted cohort pricing.";
+  "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special cohort pricing that will not be repeated.";
 
 const PRIMARY_CTA_LABEL = "Apply for One of the 5 Spots";
 const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
