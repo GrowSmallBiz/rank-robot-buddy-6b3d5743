@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { MapPin, ArrowRight, Phone, Shield, CheckCircle, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare } from "lucide-react";
+import { MapPin, ArrowRight, Phone, Shield, Search, Target, Zap, Globe, Star, Users, Home, Heart, Building2, UtensilsCrossed, BarChart3, Brain, TrendingUp, MessageSquare } from "lucide-react";
 import { CampaignResultsCards } from "@/components/locations/CampaignResultsCards";
 import { concordCards } from "@/components/locations/campaignCardData";
 import { LocationJsonLd } from "@/components/seo/LocationJsonLd";
@@ -13,6 +13,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { useUtm } from "@/hooks/use-utm";
 import { baseContactCTA } from "@/config/contactCTA";
+import { ChamberTrustBar } from "@/components/locations/ChamberTrustBar";
 
 const ConcordCA = () => {
   const { buildUrl } = useUtm();
@@ -85,29 +86,7 @@ const ConcordCA = () => {
         </div>
       </section>
 
-      {/* ===== TRUST BAR ===== */}
-      <section className="py-4" style={{ backgroundColor: 'hsl(var(--accent))' }}>
-        <div className="container mx-auto px-4">
-          <p className="text-center text-xs font-bold text-accent-foreground mb-2 uppercase tracking-wider">Proud Members Of</p>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-bold text-accent-foreground">
-            <a href="https://members.walnut-creek.com/list/Details/growsmallbiz-digital-marketing-4248068" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
-              <CheckCircle className="w-3.5 h-3.5" /> Walnut Creek Chamber of Commerce
-            </a>
-            <span className="text-accent-foreground/60">|</span>
-            <a href="https://business.danvilleareachamber.com/list/member/growsmallbiz-digital-marketing-10687" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
-              <CheckCircle className="w-3.5 h-3.5" /> Danville Area Chamber of Commerce
-            </a>
-            <span className="text-accent-foreground/60">|</span>
-            <a href="https://members.sanramon.org/list/member/growsmallbiz-digital-marketing-4986" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
-              <CheckCircle className="w-3.5 h-3.5" /> San Ramon Chamber of Commerce
-            </a>
-            <span className="text-accent-foreground/60">|</span>
-            <a href="https://www.concordchamber.com/list/member/growsmallbiz-digital-marketing-12991" target="_blank" rel="noopener" className="hover:underline flex items-center gap-1.5">
-              <CheckCircle className="w-3.5 h-3.5" /> Greater Concord Chamber of Commerce
-            </a>
-          </div>
-        </div>
-      </section>
+      <ChamberTrustBar />
 
       {/* ===== WHAT MAKES GROWSMALLBIZ DIFFERENT ===== */}
       <section className="py-16 md:py-24 bg-background">
