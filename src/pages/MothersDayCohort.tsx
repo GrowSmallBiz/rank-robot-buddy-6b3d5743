@@ -36,6 +36,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
+import leakyBucket from "@/assets/leaky-bucket.webp";
 
 const PAGE_PATH = "/mothers-day-mom-owned-business-cohort/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
