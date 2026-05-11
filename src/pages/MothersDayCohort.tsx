@@ -344,7 +344,7 @@ const MothersDayCohort = () => {
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(350_70%_85%/0.15)] border border-[hsl(350_70%_75%/0.35)] text-foreground/90 text-xs md:text-sm font-medium mb-5">
                   <Sparkles className="w-3.5 h-3.5 text-primary" />
-                  Mother’s Day Cohort · 5 Mom-Owned Businesses · This Deal Will Not Be Repeated
+                  Mother’s Day Appreciation Offer · Extended Through May 31 · 5 Mom-Owned Businesses
                 </div>
 
                 <h1 className="text-[1.875rem] md:text-[2.375rem] lg:text-5xl font-display font-bold leading-[1.15] tracking-tight mb-6">
@@ -356,7 +356,9 @@ const MothersDayCohort = () => {
                 </h1>
 
                 <p className="text-base md:text-lg text-muted-foreground mb-7 max-w-xl leading-relaxed">
-                  For 5 mom-owned local service businesses, GrowSmallBiz is including a complimentary Starter Website valued at $2,500, reducing Client Growth System Setup to $1,000, and offering special cohort pricing that will not be repeated. We set up the website and the system behind it — CRM, lead capture, follow-up automation, reviews, AI Livechat, and AI-powered response tools — so more opportunities turn into real conversations, booked appointments, and paying clients.
+                  Mother’s Day may be over, but mom-owned businesses deserve more than one day of recognition. For 5 local service businesses owned by moms, GrowSmallBiz is including a complimentary Starter Website valued at $2,500, reducing Client Growth System Setup to $1,000, and offering special cohort pricing that will not be repeated.
+                  <br /><br />
+                  We set up the website and the system behind it — CRM, lead capture, follow-up automation, reviews, AI Livechat, and AI-powered response tools — so more opportunities turn into real conversations, booked appointments, and paying clients.
                 </p>
 
                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-7">
