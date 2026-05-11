@@ -492,7 +492,7 @@ const MothersDayCohort = () => {
                   COHORT PRICING
                 </div>
                 <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(22_85%_42%)] mb-4">
-                  Mother’s Day Cohort
+                  Mother’s Day Appreciation Offer
                 </p>
                 <ul className="divide-y divide-[hsl(30_45%_85%)]">
                   {cohortValues.map((row) => (
