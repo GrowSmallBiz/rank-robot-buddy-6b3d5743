@@ -711,7 +711,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Stop Choosing Between Being Present and Being Responsive
+                Free Lead Automation for Small Businesses — Be Present and Responsive
               </h2>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-3">
                 You should not have to answer texts while giving a massage, step out of a client session to return a missed call, or skip your daughter’s basketball game because someone might reach out after hours.
