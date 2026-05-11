@@ -352,7 +352,9 @@ const MothersDayCohort = () => {
             <div className="max-w-5xl mx-auto text-center mb-10 md:mb-14">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/15 border border-primary/50 text-primary text-xs md:text-sm font-bold uppercase tracking-wider mb-5 shadow-[0_0_20px_hsl(22_85%_60%/0.2)]">
                 <Sparkles className="w-3.5 h-3.5" />
-                Complimentary Starter Website For Mom-Owned Businesses
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                  Complimentary Starter Website For Mom-Owned Businesses
+                </span>
               </div>
 
               <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight mb-5">
