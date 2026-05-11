@@ -357,7 +357,7 @@ const MothersDayCohort = () => {
 
               <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight mb-5">
                 Get a{" "}
-                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(280_55%_82%)] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                   Complimentary Starter Website
                 </span>
               </h1>
