@@ -443,6 +443,136 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        {/* THE PROBLEM — leaks unique to mom-owned businesses */}
+        <section id="problem" className="relative overflow-hidden py-20 md:py-24 scroll-mt-20 bg-[linear-gradient(180deg,hsl(210_55%_8%)_0%,hsl(210_50%_11%)_100%)]">
+          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(22_85%_60%/0.10)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.08)] blur-3xl pointer-events-none" />
+
+          <div className="container mx-auto px-4 max-w-6xl relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <p className="text-primary font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4">
+                The Problem
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5">
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                  Why Leads Slip Through the Cracks
+                </span>
+                <br />
+                for Mom-Owned Businesses
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                You are great at what you do — and you are also the mom, the operator, and the front desk. The family priorities you cannot ignore are exactly when your business is quietly leaking revenue.
+              </p>
+            </div>
+
+            {/* Cause → Consequence pairs */}
+            <div className="space-y-4 md:space-y-5">
+              {[
+                {
+                  causeIcon: PhoneCall,
+                  causeTitle: "School pickup, doctor visits, sick days",
+                  causeBody: "You can't answer the phone in the middle of carpool or a pediatrician waiting room.",
+                  leakIcon: PhoneMissed,
+                  leak: "Missed calls go to voicemail — and voicemails don't get returned fast enough.",
+                },
+                {
+                  causeIcon: Heart,
+                  causeTitle: "Cooking dinner, helping with homework",
+                  causeBody: "Evenings belong to your kids — not to refreshing your inbox.",
+                  leakIcon: Clock,
+                  leak: "Inquiries sit in an inbox for hours (or days) before someone responds.",
+                },
+                {
+                  causeIcon: Users,
+                  causeTitle: "Bedtime routine while buyers browse at night",
+                  causeBody: "Your best prospects research after 8pm — exactly when you are off the clock.",
+                  leakIcon: MessageSquare,
+                  leak: "Your website has no live chat — visitors leave without a trace.",
+                },
+                {
+                  causeIcon: Calendar,
+                  causeTitle: "Weekend family time, no bandwidth to chase",
+                  causeBody: "Saturdays are for soccer games, not for chasing leads who didn't book.",
+                  leakIcon: Mail,
+                  leak: "No system to follow up with leads who didn't book the first time.",
+                },
+                {
+                  causeIcon: Smartphone,
+                  causeTitle: "Juggling clients and kids — no time to ask",
+                  causeBody: "By the time the day ends, asking for a review is the last thing on your mind.",
+                  leakIcon: Star,
+                  leak: "Happy clients aren't being asked for reviews or referrals in a repeatable way.",
+                },
+                {
+                  causeIcon: Sparkles,
+                  causeTitle: "Running on intuition — no time to analyze",
+                  causeBody: "You feel where leads come from, but you have never had time to actually measure it.",
+                  leakIcon: TrendingUp,
+                  leak: "No dashboard showing where your leads come from, what converts, and what doesn't.",
+                },
+              ].map((row) => {
+                const CauseIcon = row.causeIcon;
+                const LeakIcon = row.leakIcon;
+                return (
+                  <div
+                    key={row.causeTitle}
+                    className="grid md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-5 items-stretch"
+                  >
+                    {/* Cause */}
+                    <div className="flex gap-3 p-4 md:p-5 rounded-xl border border-[hsl(280_50%_75%/0.25)] bg-[hsl(280_40%_18%/0.35)]">
+                      <div className="w-10 h-10 shrink-0 rounded-lg bg-[hsl(280_60%_70%/0.15)] border border-[hsl(280_60%_70%/0.35)] flex items-center justify-center">
+                        <CauseIcon className="w-5 h-5 text-[hsl(280_70%_82%)]" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-[hsl(280_60%_78%)] mb-1">
+                          Mom-life moment
+                        </p>
+                        <h3 className="text-sm md:text-base font-display font-semibold text-foreground leading-snug mb-1">
+                          {row.causeTitle}
+                        </h3>
+                        <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                          {row.causeBody}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Connector */}
+                    <div className="hidden md:flex items-center justify-center">
+                      <div className="w-9 h-9 rounded-full bg-primary/15 border border-primary/40 flex items-center justify-center">
+                        <ArrowRight className="w-4 h-4 text-primary" />
+                      </div>
+                    </div>
+
+                    {/* Consequence */}
+                    <div className="flex gap-3 p-4 md:p-5 rounded-xl border-2 border-primary/40 bg-primary/10 shadow-[0_0_18px_hsl(22_85%_60%/0.12)]">
+                      <div className="w-10 h-10 shrink-0 rounded-lg bg-primary/20 border border-primary/50 flex items-center justify-center">
+                        <LeakIcon className="w-5 h-5 text-primary" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-primary mb-1">
+                          Revenue leak
+                        </p>
+                        <p className="text-sm md:text-base font-semibold text-foreground leading-snug">
+                          {row.leak}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Closer */}
+            <div className="mt-12 max-w-3xl mx-auto text-center">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                Each one of these is a leak. Together, they cost{" "}
+                <span className="text-foreground font-semibold">thousands every month</span>{" "}
+                — and most mom-owned businesses don't even realize it.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* WHY WE EXTENDED */}
         <section className="py-16 md:py-20 relative overflow-hidden">
           <div className="absolute -top-16 -left-16 w-72 h-72 rounded-full bg-[hsl(22_85%_60%/0.08)] blur-3xl pointer-events-none" />
