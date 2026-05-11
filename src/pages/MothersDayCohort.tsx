@@ -589,7 +589,7 @@ const MothersDayCohort = () => {
                   </p>
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4">
                     We Help You Fix Your{" "}
-                    <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                       Leaky Bucket
                     </span>
                   </h3>
