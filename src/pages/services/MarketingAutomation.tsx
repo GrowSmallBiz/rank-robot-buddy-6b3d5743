@@ -897,7 +897,14 @@ const MarketingAutomation = () => {
               title="Real Stories From"
               titleHighlight="Real Teams"
             />
-            <TestimonialsGrid testimonials={testimonials} columns={3} />
+            <iframe
+              className="lc_reviews_widget"
+              src="https://reputationhub.site/reputation/widgets/review_widget/4KL47iKeJZ2Ee05j7FBh"
+              frameBorder={0}
+              scrolling="no"
+              title="Google Reviews"
+              style={{ minWidth: "100%", width: "100%", minHeight: "800px", border: 0 }}
+            />
             <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
