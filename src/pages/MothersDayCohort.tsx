@@ -74,7 +74,7 @@ const PrimaryCTA = ({
   <Button
     asChild
     size="lg"
-    className={`bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg ${
+    className={`bg-gradient-to-r from-[hsl(22_92%_70%)] via-[hsl(22_88%_58%)] to-[hsl(22_85%_50%)] text-white hover:brightness-110 shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.55)] border-0 transition-all ${
       full ? "w-full" : ""
     } ${className}`}
   >
@@ -1432,7 +1432,7 @@ const MothersDayCohort = () => {
           href={ctaUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 w-[calc(100%-4.5rem)] px-4 py-3 rounded-md bg-primary text-primary-foreground font-semibold shadow-lg text-sm"
+          className="flex items-center justify-center gap-2 w-[calc(100%-4.5rem)] px-4 py-3 rounded-md bg-gradient-to-r from-[hsl(22_92%_70%)] via-[hsl(22_88%_58%)] to-[hsl(22_85%_50%)] text-white font-semibold shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.55)] text-sm"
         >
           {PRIMARY_CTA_LABEL} <ArrowRight className="w-4 h-4" />
         </a>
