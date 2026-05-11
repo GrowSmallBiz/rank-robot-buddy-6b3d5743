@@ -454,12 +454,8 @@ const MothersDayCohort = () => {
               <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 The Problem
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5">
-                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  Why Leads Slip Through the Cracks
-                </span>
-                <br />
-                for Mom-Owned Businesses
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Why Leads Slip Through the Cracks for Mom-Owned Businesses
               </h2>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 You are great at what you do — and you are also the mom, the operator, and the front desk. The family priorities you cannot ignore are exactly when your business is quietly leaking revenue.
