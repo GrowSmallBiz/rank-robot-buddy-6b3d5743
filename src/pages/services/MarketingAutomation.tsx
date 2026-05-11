@@ -821,7 +821,7 @@ const MarketingAutomation = () => {
               titleHighlight="Keep Them For Life"
               description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
             />
-            <PricingGrid plans={pricingPlans} columns={3} />
+            <PricingSection plans={pricingPlans} />
             <div className="mt-12 max-w-3xl mx-auto animate-fade-up">
               <div className="relative rounded-2xl p-8 md:p-10 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, hsl(var(--primary) / 0.15), hsl(var(--ghl-card-border) / 0.15))', border: '2px solid hsl(var(--primary))', boxShadow: '0 0 40px hsl(var(--primary) / 0.35)' }}>
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4">
