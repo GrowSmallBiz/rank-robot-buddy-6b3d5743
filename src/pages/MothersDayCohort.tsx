@@ -1117,6 +1117,49 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        <section className="py-16 md:py-20 relative">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-10 max-w-2xl mx-auto">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Built For Mom-Owned Local Service Businesses
+              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Made For Businesses Like Yours
+              </h2>
+              <p className="text-muted-foreground">
+                If you run a local service business and juggle it alongside motherhood, this offer was designed with you in mind.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {BUILT_FOR.map((biz) => (
+                <div
+                  key={biz.label}
+                  className="rounded-2xl overflow-hidden border border-border bg-card group hover:border-primary/50 transition-colors"
+                >
+                  <div className="aspect-[4/3] overflow-hidden bg-muted">
+                    <img
+                      src={biz.img}
+                      alt={biz.label}
+                      width={1024}
+                      height={768}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-5 text-center">
+                    <h3 className="text-base md:text-lg font-semibold text-foreground">
+                      {biz.label}
+                    </h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-sm text-muted-foreground mt-8 max-w-xl mx-auto">
+              Not on the list? If you run a mom-owned local service business, this is still for you.
+            </p>
+          </div>
+        </section>
+
         <section id="pricing" className="py-20 scroll-mt-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 max-w-2xl mx-auto">
