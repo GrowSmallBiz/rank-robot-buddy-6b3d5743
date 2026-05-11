@@ -385,19 +385,19 @@ const MothersDayCohort = () => {
 
                 <ul className="space-y-2.5 mb-7">
                   {[
-                    { text: "A complimentary Starter Website valued at $2,500", highlight: false },
-                    { text: "$500 off Client Growth System Setup", highlight: false },
-                    { text: "Done For You Implementation Service", highlight: true },
-                    { text: "Guided Onboarding & Training", highlight: true },
-                    { text: "24x7 Technical Support via Chat", highlight: true },
-                  ].map((b) => (
+                    "A complimentary Starter Website valued at $2,500",
+                    "$500 off Client Growth System Setup",
+                    "Done For You Implementation Service",
+                    "Guided Onboarding & Training",
+                    "24x7 Technical Support via Chat",
+                  ].map((text) => (
                     <li
-                      key={b.text}
+                      key={text}
                       className="flex items-start gap-3 px-4 py-3 rounded-lg bg-primary/15 border-2 border-primary/60 shadow-[0_0_18px_hsl(22_85%_60%/0.18)]"
                     >
                       <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0 text-primary" />
-                      <span className={`text-sm md:text-base ${b.highlight ? "text-foreground font-semibold" : "text-foreground/90"}`}>
-                        {b.text}
+                      <span className="text-sm md:text-base text-foreground font-semibold">
+                        {text}
                       </span>
                     </li>
                   ))}
