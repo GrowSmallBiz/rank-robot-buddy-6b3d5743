@@ -208,17 +208,17 @@ const MothersDayCohort = () => {
   ];
 
   const automationCards = [
-    { icon: Smartphone, title: "Missed-call text-back", desc: "Instantly texts back missed callers so leads never go cold." },
-    { icon: PhoneCall, title: "AI Voice Receptionist", desc: "Answers calls 24/7, books appointments, and captures details." },
-    { icon: Bot, title: "AI Livechat on your website", desc: "Engages visitors in real time and turns clicks into conversations." },
-    { icon: Mail, title: "Lead form follow-up", desc: "Replies within seconds — when buying intent is highest." },
-    { icon: MessageSquare, title: "Email & SMS nurture", desc: "Stays in front of leads until they're ready to book." },
-    { icon: Calendar, title: "Calendar scheduling", desc: "Lets clients self-book without the back-and-forth." },
-    { icon: Clock, title: "Appointment reminders", desc: "Cuts no-shows with automated reminders by text and email." },
-    { icon: Star, title: "Review requests", desc: "Asks happy clients for reviews on autopilot to build trust." },
-    { icon: Inbox, title: "Unified inbox", desc: "All calls, texts, emails, and DMs in one place." },
-    { icon: Database, title: "CRM pipeline tracking", desc: "See every lead's stage so nothing slips through the cracks." },
-    { icon: CreditCard, title: "Payment acceptance when applicable", desc: "Collect deposits and payments without extra tools." },
+    { icon: Smartphone, title: "Missed-Call Text-Back System", desc: "Automatically text back missed calls so no lead slips away.", quote: "Never lose a customer because you missed a call again." },
+    { icon: PhoneCall, title: "AI Voice Receptionist", desc: "Answers every call 24/7, books appointments, and captures lead details.", quote: "Your business sounds open even when you're with the kids." },
+    { icon: Bot, title: "AI Livechat on Your Website", desc: "Engages visitors instantly and turns clicks into conversations.", quote: "Talk to every visitor — without lifting a finger." },
+    { icon: Mail, title: "Lead Form Follow-Up", desc: "Replies within seconds, when buying intent is highest.", quote: "Speed-to-lead wins the job." },
+    { icon: MessageSquare, title: "Email & SMS Nurture", desc: "Stays in front of leads until they're ready to book.", quote: "Turn maybes into yeses, automatically." },
+    { icon: Calendar, title: "Calendar Scheduling", desc: "Lets clients self-book without the back-and-forth.", quote: "No more phone tag — just booked appointments." },
+    { icon: Clock, title: "Appointment Reminders", desc: "Cuts no-shows with automated text and email reminders.", quote: "Fewer no-shows. More revenue." },
+    { icon: Star, title: "Review Requests", desc: "Asks happy clients for reviews on autopilot to build trust.", quote: "Build a 5-star reputation while you sleep." },
+    { icon: Inbox, title: "Unified Inbox", desc: "All calls, texts, emails, and DMs in one place.", quote: "Stop juggling apps. See every message in one view." },
+    { icon: Database, title: "CRM Pipeline Tracking", desc: "See every lead's stage so nothing slips through the cracks.", quote: "Know exactly who to follow up with next." },
+    { icon: CreditCard, title: "Payment Acceptance", desc: "Collect deposits and payments without extra tools.", quote: "Get paid faster — right inside the system." },
   ];
 
   const automationFlow = [
@@ -716,19 +716,20 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
               {automationCards.map((c) => (
                 <div
                   key={c.title}
-                  className="rounded-xl border-2 border-[hsl(188_78%_41%_/_0.35)] bg-[hsl(188_60%_14%)] p-5 flex items-start gap-3 hover:border-[hsl(188_78%_55%_/_0.7)] hover:shadow-[0_0_25px_hsl(188_78%_41%_/_0.25)] transition-all"
+                  className="rounded-2xl border-2 border-[hsl(188_78%_50%_/_0.5)] bg-[hsl(210_45%_18%)] p-6 hover:border-[hsl(188_78%_60%_/_0.8)] hover:shadow-[0_0_30px_hsl(188_78%_45%_/_0.35)] transition-all"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-[hsl(188_78%_41%_/_0.2)] border border-[hsl(188_78%_55%_/_0.4)] flex items-center justify-center shrink-0">
-                    <c.icon className="w-5 h-5 text-[hsl(188_78%_65%)]" />
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-[hsl(188_78%_41%_/_0.2)] border border-[hsl(188_78%_55%_/_0.4)] flex items-center justify-center shrink-0">
+                      <c.icon className="w-5 h-5 text-[hsl(188_78%_70%)]" />
+                    </div>
+                    <h3 className="text-lg font-bold text-foreground leading-tight">{c.title}</h3>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-foreground mb-1">{c.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{c.desc}</p>
-                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">{c.desc}</p>
+                  <p className="text-sm italic text-primary leading-relaxed">"{c.quote}"</p>
                 </div>
               ))}
             </div>
