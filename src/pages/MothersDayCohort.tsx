@@ -342,8 +342,8 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20 relative z-10">
             {/* Full-width header block */}
             <div className="max-w-5xl mx-auto text-center mb-10 md:mb-14">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(350_70%_85%/0.15)] border border-[hsl(350_70%_75%/0.35)] text-foreground/90 text-xs md:text-sm font-medium mb-5">
-                <Sparkles className="w-3.5 h-3.5 text-primary" />
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/15 border border-primary/50 text-primary text-xs md:text-sm font-bold uppercase tracking-wider mb-5 shadow-[0_0_20px_hsl(22_85%_60%/0.2)]">
+                <Sparkles className="w-3.5 h-3.5" />
                 Complimentary Starter Website For Mom-Owned Businesses
               </div>
 
