@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import {
   ArrowRight,
+  ArrowDown,
   CheckCircle2,
   XCircle,
   Globe,
@@ -619,8 +620,10 @@ const MothersDayCohort = () => {
                       decoding="async"
                       className="w-full h-auto"
                     />
-                    <p className="mt-4 text-center font-display font-semibold text-base md:text-lg bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                    <p className="mt-4 flex items-center justify-center gap-2 text-center font-display font-semibold text-base md:text-lg bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                       We Fix Your Leaky Bucket
+                      <ArrowRight aria-hidden="true" className="hidden lg:inline w-5 h-5 shrink-0 text-[hsl(22_90%_72%)]" style={{ WebkitTextFillColor: 'currentColor' }} />
+                      <ArrowDown aria-hidden="true" className="lg:hidden w-5 h-5 shrink-0 text-[hsl(22_90%_72%)]" style={{ WebkitTextFillColor: 'currentColor' }} />
                     </p>
                   </div>
                 </div>
