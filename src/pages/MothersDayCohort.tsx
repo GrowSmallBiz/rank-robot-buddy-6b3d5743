@@ -208,17 +208,17 @@ const MothersDayCohort = () => {
   ];
 
   const automationCards = [
-    { icon: Smartphone, title: "Missed-call text-back" },
-    { icon: PhoneCall, title: "AI Voice Receptionist" },
-    { icon: Bot, title: "AI Livechat on your website" },
-    { icon: Mail, title: "Lead form follow-up" },
-    { icon: MessageSquare, title: "Email & SMS nurture" },
-    { icon: Calendar, title: "Calendar scheduling" },
-    { icon: Clock, title: "Appointment reminders" },
-    { icon: Star, title: "Review requests" },
-    { icon: Inbox, title: "Unified inbox" },
-    { icon: Database, title: "CRM pipeline tracking" },
-    { icon: CreditCard, title: "Payment acceptance when applicable" },
+    { icon: Smartphone, title: "Missed-call text-back", desc: "Instantly texts back missed callers so leads never go cold." },
+    { icon: PhoneCall, title: "AI Voice Receptionist", desc: "Answers calls 24/7, books appointments, and captures details." },
+    { icon: Bot, title: "AI Livechat on your website", desc: "Engages visitors in real time and turns clicks into conversations." },
+    { icon: Mail, title: "Lead form follow-up", desc: "Replies within seconds — when buying intent is highest." },
+    { icon: MessageSquare, title: "Email & SMS nurture", desc: "Stays in front of leads until they're ready to book." },
+    { icon: Calendar, title: "Calendar scheduling", desc: "Lets clients self-book without the back-and-forth." },
+    { icon: Clock, title: "Appointment reminders", desc: "Cuts no-shows with automated reminders by text and email." },
+    { icon: Star, title: "Review requests", desc: "Asks happy clients for reviews on autopilot to build trust." },
+    { icon: Inbox, title: "Unified inbox", desc: "All calls, texts, emails, and DMs in one place." },
+    { icon: Database, title: "CRM pipeline tracking", desc: "See every lead's stage so nothing slips through the cracks." },
+    { icon: CreditCard, title: "Payment acceptance when applicable", desc: "Collect deposits and payments without extra tools." },
   ];
 
   const automationFlow = [
