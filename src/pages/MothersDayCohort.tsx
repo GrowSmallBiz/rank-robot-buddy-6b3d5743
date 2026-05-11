@@ -957,7 +957,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-12 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why This Can Pay for Itself Quickly
+                Why This Free Website + Automation Pays for Itself Quickly
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg">
                 For many local service businesses, one or two additional booked clients per month can cover the monthly subscription.
