@@ -40,9 +40,9 @@ const PAGE_PATH = "/mothers-day-mom-owned-business-cohort/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
 const APPLICATION_FORM_URL =
   "https://lp.growsmallbiz.io/digital-growth-strategy-session";
-const PAGE_TITLE = "Mother’s Day Mom-Owned Business Cohort | GrowSmallBiz";
+const PAGE_TITLE = "Mother’s Day Appreciation Offer | GrowSmallBiz";
 const PAGE_DESC =
-  "A limited Mother’s Day cohort for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus discounted cohort pricing.";
+  "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special cohort pricing that will not be repeated.";
 
 const PRIMARY_CTA_LABEL = "Apply for One of the 5 Spots";
 const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
@@ -100,7 +100,7 @@ const MothersDayCohort = () => {
     "Complimentary Starter Website — $2,500 Value",
     "Setup Reduced from $1,500 to $1,000",
     "Cohort Pricing Will Not Be Repeated",
-    "Applications Close May 31, 2026",
+    "Extended Through May 31, 2026 — or Until 5 Spots Are Filled",
   ];
 
   const standardValues = [
@@ -230,7 +230,7 @@ const MothersDayCohort = () => {
   const faqs = [
     {
       q: "What qualifies as mom-owned?",
-      a: "For this cohort, mom-owned means the business is owned or co-owned by a mother who is actively involved in running the business.",
+      a: "For this offer, mom-owned means the business is owned or co-owned by a mother who is actively involved in running the business.",
     },
     {
       q: "What types of businesses are a good fit?",
@@ -242,7 +242,7 @@ const MothersDayCohort = () => {
     },
     {
       q: "Is the website really complimentary?",
-      a: "Yes. The Starter Website (a $2,500 value) is included for the 5 selected Mother’s Day cohort businesses. The $1,000 fee is for Client Growth System Setup — not the website.",
+      a: "Yes. The Starter Website (a $2,500 value) is included for the 5 selected mom-owned businesses in this Mother’s Day Appreciation Offer. The $1,000 fee is for Client Growth System Setup — not the website.",
     },
     {
       q: "When does billing start?",
@@ -254,7 +254,7 @@ const MothersDayCohort = () => {
     },
     {
       q: "What happens after this campaign closes?",
-      a: "Once the 5 spots are filled, this exact Mother’s Day cohort offer will not be repeated. Standard GrowSmallBiz pricing will apply afterward.",
+      a: "Once the 5 spots are filled, this Mother’s Day Appreciation Offer will not be repeated. Standard GrowSmallBiz pricing will apply afterward.",
     },
   ];
 
@@ -271,7 +271,7 @@ const MothersDayCohort = () => {
   const offerJsonLd = {
     "@context": "https://schema.org",
     "@type": "Offer",
-    name: "Mother’s Day Mom-Owned Business Cohort",
+    name: "Mother’s Day Appreciation Offer",
     description: PAGE_DESC,
     url: PAGE_URL,
     availability: "https://schema.org/LimitedAvailability",
@@ -309,7 +309,7 @@ const MothersDayCohort = () => {
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-primary" />
             <span className="font-display font-semibold text-foreground text-sm md:text-base">
-              GrowSmallBiz · Mother’s Day Cohort
+              GrowSmallBiz · Mother’s Day Appreciation Offer
             </span>
           </div>
           <nav
@@ -344,7 +344,7 @@ const MothersDayCohort = () => {
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(350_70%_85%/0.15)] border border-[hsl(350_70%_75%/0.35)] text-foreground/90 text-xs md:text-sm font-medium mb-5">
                   <Sparkles className="w-3.5 h-3.5 text-primary" />
-                  Mother’s Day Cohort · 5 Mom-Owned Businesses · This Deal Will Not Be Repeated
+                  Mother’s Day Appreciation Offer · Extended Through May 31 · 5 Mom-Owned Businesses
                 </div>
 
                 <h1 className="text-[1.875rem] md:text-[2.375rem] lg:text-5xl font-display font-bold leading-[1.15] tracking-tight mb-6">
@@ -356,7 +356,9 @@ const MothersDayCohort = () => {
                 </h1>
 
                 <p className="text-base md:text-lg text-muted-foreground mb-7 max-w-xl leading-relaxed">
-                  For 5 mom-owned local service businesses, GrowSmallBiz is including a complimentary Starter Website valued at $2,500, reducing Client Growth System Setup to $1,000, and offering special cohort pricing that will not be repeated. We set up the website and the system behind it — CRM, lead capture, follow-up automation, reviews, AI Livechat, and AI-powered response tools — so more opportunities turn into real conversations, booked appointments, and paying clients.
+                  Mother’s Day may be over, but mom-owned businesses deserve more than one day of recognition. For 5 local service businesses owned by moms, GrowSmallBiz is including a complimentary Starter Website valued at $2,500, reducing Client Growth System Setup to $1,000, and offering special cohort pricing that will not be repeated.
+                  <br /><br />
+                  We set up the website and the system behind it — CRM, lead capture, follow-up automation, reviews, AI Livechat, and AI-powered response tools — so more opportunities turn into real conversations, booked appointments, and paying clients.
                 </p>
 
                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-7">
@@ -385,7 +387,7 @@ const MothersDayCohort = () => {
                   5 Spots
                 </div>
                 <div className="absolute -bottom-3 -right-3 z-20 px-4 py-2 rounded-full bg-[hsl(40_70%_96%)] text-[hsl(210_55%_12%)] text-sm font-semibold shadow-xl border border-[hsl(30_60%_80%)]">
-                  Applications Close May 31, 2026
+                  Extended Through May 31, 2026
                 </div>
                 <div className="relative rounded-3xl overflow-hidden border border-[hsl(30_60%_80%/0.35)] shadow-2xl bg-card">
                   <img
@@ -410,6 +412,36 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        {/* WHY WE EXTENDED */}
+        <section className="py-16 md:py-20 relative overflow-hidden">
+          <div className="absolute -top-16 -left-16 w-72 h-72 rounded-full bg-[hsl(22_85%_60%/0.08)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-[hsl(350_70%_72%/0.08)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 max-w-3xl relative z-10">
+            <div className="text-center mb-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
+                Extended Through May 31, 2026 — or Until 5 Spots Are Filled
+              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+                Why We Extended This Offer
+              </h2>
+            </div>
+            <div className="rounded-3xl border border-border bg-card/70 backdrop-blur p-7 md:p-10 space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
+              <p className="text-foreground font-medium">
+                Mother’s Day is one day. Running a business while being a mom is every day.
+              </p>
+              <p>
+                Many mom-owned businesses are built in the margins — between client appointments, school schedules, family commitments, late-night planning, and constant follow-up.
+              </p>
+              <p className="text-foreground">
+                That is why this offer stays open through May 31.
+              </p>
+              <p>
+                This is a limited appreciation offer for 5 mom-owned local service businesses that want a professional website, faster follow-up, better lead tracking, and more time back in their day.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* VALUE STACK */}
         <section
           id="value"
@@ -421,7 +453,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-10 max-w-3xl mx-auto">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(22_85%_42%)] mb-3">
-                Mother’s Day Cohort · Limited to 5 Businesses
+                Mother’s Day Appreciation Offer · Limited to 5 Businesses
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
                 A Real Mother’s Day Business Growth Deal
@@ -460,7 +492,7 @@ const MothersDayCohort = () => {
                   COHORT PRICING
                 </div>
                 <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(22_85%_42%)] mb-4">
-                  Mother’s Day Cohort
+                  Mother’s Day Appreciation Offer
                 </p>
                 <ul className="divide-y divide-[hsl(30_45%_85%)]">
                   {cohortValues.map((row) => (
@@ -534,7 +566,7 @@ const MothersDayCohort = () => {
             </div>
 
             <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic">
-              This cohort pricing is only available to the 5 selected Mother’s Day applicants and will not be repeated after this campaign closes.
+              This cohort pricing is only available to the 5 selected mom-owned businesses in this Mother’s Day Appreciation Offer and will not be repeated after this campaign closes.
             </p>
 
             <div className="flex justify-center mt-8">
@@ -1023,14 +1055,14 @@ const MothersDayCohort = () => {
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[linear-gradient(135deg,hsl(22_85%_60%/0.2),hsl(350_70%_72%/0.2))] border border-[hsl(22_85%_60%/0.5)] text-foreground text-sm md:text-base font-bold mb-6 shadow-[0_0_30px_hsl(22_85%_50%/0.25)]">
               <Clock className="w-4 h-4 text-primary" />
               <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] to-[hsl(350_75%_82%)] bg-clip-text text-transparent">
-                Applications Close May 31, 2026
+                Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-5 text-foreground leading-tight">
               5 Spots. This Deal Will Not Be Repeated.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, apply for one of the 5 Mother’s Day cohort spots.
+              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, apply for one of the 5 spots in this Mother’s Day Appreciation Offer.
             </p>
 
             <div className="rounded-2xl border border-[hsl(22_85%_60%/0.25)] bg-card/70 backdrop-blur p-6 md:p-8 mb-8 text-left shadow-2xl">
@@ -1040,7 +1072,7 @@ const MothersDayCohort = () => {
                   "Client Growth System Setup reduced to $1,000",
                   "Essentials Cohort: $197/month",
                   "Growth Cohort: $297/month",
-                  "Applications close May 31, 2026",
+                  "Extended through May 31, 2026 — or until 5 spots are filled",
                   "Spots are filled first-paid after the discovery call",
                 ].map((s) => (
                   <li key={s} className="flex items-start gap-3">
@@ -1055,7 +1087,7 @@ const MothersDayCohort = () => {
               <PrimaryCTA href={ctaUrl} />
             </div>
             <p className="text-xs text-muted-foreground italic">
-              Once these 5 spots are filled, this Mother’s Day cohort offer will close.
+              Once these 5 spots are filled, this Mother’s Day Appreciation Offer will close.
             </p>
           </div>
         </section>
