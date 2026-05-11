@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { useLocation } from "react-router-dom";
 import { Head } from "vite-react-ssg";
