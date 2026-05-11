@@ -89,7 +89,15 @@ export const PricingCard = ({
       </Button>
 
       {note && (
-        <p className="text-xs text-center text-muted-foreground mt-4">{note}</p>
+        /^save\b/i.test(note) ? (
+          <div className="mt-4 flex justify-center">
+            <span className="inline-block px-4 py-2 rounded-full bg-primary/15 border border-primary/40 text-primary font-bold text-sm md:text-base text-center">
+              {note}
+            </span>
+          </div>
+        ) : (
+          <p className="text-xs text-center text-muted-foreground mt-4">{note}</p>
+        )
       )}
     </div>
   );
