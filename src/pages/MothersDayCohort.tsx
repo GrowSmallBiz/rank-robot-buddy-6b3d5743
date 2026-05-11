@@ -1312,7 +1312,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-3xl relative z-10 text-center">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[linear-gradient(135deg,hsl(22_85%_60%/0.2),hsl(350_70%_72%/0.2))] border border-[hsl(22_85%_60%/0.5)] text-foreground text-sm md:text-base font-bold mb-6 shadow-[0_0_30px_hsl(22_85%_50%/0.25)]">
               <Clock className="w-4 h-4 text-primary" />
-              <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] to-[hsl(350_75%_82%)] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </span>
             </div>
