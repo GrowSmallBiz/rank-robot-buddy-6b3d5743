@@ -44,7 +44,7 @@ const PAGE_TITLE = "Mother’s Day Appreciation Offer | GrowSmallBiz";
 const PAGE_DESC =
   "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special cohort pricing that will not be repeated.";
 
-const PRIMARY_CTA_LABEL = "Apply for One of the 5 Spots";
+const PRIMARY_CTA_LABEL = "Claim Your Spot — First Come, First Served";
 const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
 
 const sectionNav = [
@@ -98,9 +98,9 @@ const MothersDayCohort = () => {
 
   const heroBadges = [
     "Complimentary Starter Website — $2,500 Value",
-    "Setup Reduced from $1,500 to $1,000",
+    "$500 off Client Growth System Setup",
     "Cohort Pricing Will Not Be Repeated",
-    "Extended Through May 31, 2026 — or Until 5 Spots Are Filled",
+    "First Come, First Served — Only 5 Spots",
   ];
 
   const standardValues = [
@@ -328,7 +328,7 @@ const MothersDayCohort = () => {
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
           >
-            Apply <ArrowRight className="w-4 h-4" />
+            Claim Spot <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </header>
@@ -339,55 +339,75 @@ const MothersDayCohort = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,210,190,0.16),transparent_55%)] pointer-events-none" />
           <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(18_85%_65%/0.18)] blur-3xl pointer-events-none" />
           <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.14)] blur-3xl pointer-events-none" />
-          <div className="container mx-auto px-4 py-14 lg:py-20 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(350_70%_85%/0.15)] border border-[hsl(350_70%_75%/0.35)] text-foreground/90 text-xs md:text-sm font-medium mb-5">
-                  <Sparkles className="w-3.5 h-3.5 text-primary" />
-                  Mother’s Day Appreciation Offer · Extended Through May 31 · 5 Mom-Owned Businesses
-                </div>
+          <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20 relative z-10">
+            {/* Full-width header block */}
+            <div className="max-w-5xl mx-auto text-center mb-10 md:mb-14">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[hsl(350_70%_85%/0.15)] border border-[hsl(350_70%_75%/0.35)] text-foreground/90 text-xs md:text-sm font-medium mb-5">
+                <Sparkles className="w-3.5 h-3.5 text-primary" />
+                Complimentary Starter Website For Mom-Owned Businesses
+              </div>
 
-                <h1 className="text-[1.875rem] md:text-[2.375rem] lg:text-5xl font-display font-bold leading-[1.15] tracking-tight mb-6">
-                  Get a{" "}
-                  <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(280_55%_82%)] bg-clip-text text-transparent">
-                    Complimentary Starter Website
-                  </span>{" "}
-                  — and the System That Helps Turn Inquiries Into Booked Clients
-                </h1>
+              <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight mb-5">
+                Get a{" "}
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(280_55%_82%)] bg-clip-text text-transparent">
+                  Complimentary Starter Website
+                </span>
+              </h1>
 
-                <p className="text-base md:text-lg text-muted-foreground mb-7 max-w-xl leading-relaxed">
-                  Mother’s Day may be over, but mom-owned businesses deserve more than one day of recognition. For 5 local service businesses owned by moms, GrowSmallBiz is including a complimentary Starter Website valued at $2,500, reducing Client Growth System Setup to $1,000, and offering special cohort pricing that will not be repeated.
-                  <br /><br />
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold text-foreground/90 leading-snug max-w-4xl mx-auto">
+                Plus the System That Helps Turn Inquiries Into Booked Clients
+              </h2>
+
+              {/* Prominent deadline */}
+              <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary/15 border-2 border-primary text-primary font-bold text-sm md:text-base shadow-[0_0_30px_hsl(22_85%_60%/0.25)]">
+                <Clock className="w-4 h-4 md:w-5 md:h-5" />
+                <span className="uppercase tracking-wide">
+                  Extended Through May 31, 2026
+                </span>
+                <span className="hidden sm:inline opacity-70">·</span>
+                <span>or Until 5 Spots Are Filled</span>
+              </div>
+            </div>
+
+            {/* Two-column: bullets/CTAs + image */}
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-6xl mx-auto">
+              <div className="order-2 lg:order-1">
+                <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
+                  Mother’s Day may be over, but mom-owned businesses deserve more than one day of recognition. For 5 local service businesses owned by moms, GrowSmallBiz is including:
+                </p>
+
+                <ul className="space-y-2.5 mb-7">
+                  {[
+                    "A complimentary Starter Website valued at $2,500",
+                    "$500 off Client Growth System Setup",
+                    "Special cohort pricing that will not be repeated",
+                  ].map((b) => (
+                    <li
+                      key={b}
+                      className="flex items-start gap-3 px-4 py-3 rounded-lg bg-white/5 border border-[hsl(30_55%_70%/0.18)]"
+                    >
+                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-primary shrink-0" />
+                      <span className="text-foreground/90 text-sm md:text-base">{b}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="text-sm md:text-base text-muted-foreground mb-7 leading-relaxed">
                   We set up the website and the system behind it — CRM, lead capture, follow-up automation, reviews, AI Livechat, and AI-powered response tools — so more opportunities turn into real conversations, booked appointments, and paying clients.
                 </p>
 
-                <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-7">
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3">
                   <PrimaryCTA href={ctaUrl} />
                   <Button asChild size="lg" variant="outline" className="border-border">
                     <a href="#value">{SECONDARY_CTA_LABEL}</a>
                   </Button>
                 </div>
-
-                <ul className="grid sm:grid-cols-2 gap-2.5 text-sm">
-                  {heroBadges.map((b) => (
-                    <li
-                      key={b}
-                      className="flex items-start gap-2 px-3 py-2 rounded-lg bg-white/5 border border-[hsl(30_55%_70%/0.18)]"
-                    >
-                      <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                      <span className="text-foreground/90">{b}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
 
-              <div className="relative">
+              <div className="relative order-1 lg:order-2">
                 <div className="absolute -inset-4 rounded-[2rem] bg-[linear-gradient(135deg,hsl(22_85%_68%/0.35),hsl(350_75%_80%/0.28),hsl(280_55%_80%/0.28))] blur-2xl pointer-events-none" />
                 <div className="absolute -top-3 -left-3 z-20 px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-bold shadow-xl">
                   5 Spots
-                </div>
-                <div className="absolute -bottom-3 -right-3 z-20 px-4 py-2 rounded-full bg-[hsl(40_70%_96%)] text-[hsl(210_55%_12%)] text-sm font-semibold shadow-xl border border-[hsl(30_60%_80%)]">
-                  Extended Through May 31, 2026
                 </div>
                 <div className="relative rounded-3xl overflow-hidden border border-[hsl(30_60%_80%/0.35)] shadow-2xl bg-card">
                   <img
@@ -404,7 +424,7 @@ const MothersDayCohort = () => {
                 <div className="hidden md:flex absolute -left-6 top-1/4 z-20 items-center gap-2 px-3 py-2 rounded-xl bg-white text-[hsl(210_55%_12%)] text-xs font-semibold shadow-xl border border-[hsl(30_60%_80%)]">
                   <Calendar className="w-4 h-4 text-primary" /> Appointment booked
                 </div>
-                <div className="hidden md:flex absolute -right-4 top-2/3 z-20 items-center gap-2 px-3 py-2 rounded-xl bg-white text-[hsl(210_55%_12%)] text-xs font-semibold shadow-xl border border-[hsl(30_60%_80%)]">
+                <div className="hidden md:flex absolute -right-4 bottom-8 z-20 items-center gap-2 px-3 py-2 rounded-xl bg-white text-[hsl(210_55%_12%)] text-xs font-semibold shadow-xl border border-[hsl(30_60%_80%)]">
                   <Star className="w-4 h-4 text-primary" /> New 5-star review
                 </div>
               </div>
