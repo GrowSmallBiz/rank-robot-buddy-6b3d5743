@@ -566,7 +566,7 @@ const MothersDayCohort = () => {
             </div>
 
             <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic">
-              This cohort pricing is only available to the 5 selected Mother’s Day applicants and will not be repeated after this campaign closes.
+              This cohort pricing is only available to the 5 selected mom-owned businesses in this Mother’s Day Appreciation Offer and will not be repeated after this campaign closes.
             </p>
 
             <div className="flex justify-center mt-8">
