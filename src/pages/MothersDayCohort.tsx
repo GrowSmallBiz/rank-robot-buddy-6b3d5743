@@ -1126,17 +1126,75 @@ const MothersDayCohort = () => {
 
       {/* MINIMAL FOOTER */}
       <footer className="bg-card border-t border-border" role="contentinfo">
-        <div className="container mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} GrowSmallBiz. All rights reserved.</p>
-            <nav aria-label="Legal" className="flex items-center gap-6">
-              <Link to="/terms-of-service/" className="hover:text-primary transition-colors">
-                Terms &amp; Conditions
+        <div className="container mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+            {/* Brand */}
+            <div className="space-y-4">
+              <Link to="/" className="flex items-center gap-3">
+                <img
+                  src={growsmallbizLogo}
+                  alt="GrowSmallBiz logo"
+                  width={48}
+                  height={48}
+                  className="h-12 w-auto"
+                />
+                <span className="text-lg font-bold font-display text-foreground">
+                  GrowSmallBiz
+                </span>
               </Link>
-              <Link to="/privacy-policy/" className="hover:text-primary transition-colors">
-                Privacy Policy
-              </Link>
-            </nav>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Mother’s Day Appreciation Offer for 5 mom-owned local service businesses.
+              </p>
+            </div>
+
+            {/* On this page */}
+            <div>
+              <h4 className="font-display font-semibold text-foreground mb-4 border-b-2 border-primary/40 pb-2 inline-block">
+                On This Page
+              </h4>
+              <ul className="grid grid-cols-2 gap-y-2 gap-x-4">
+                {sectionNav.map((s) => (
+                  <li key={s.id}>
+                    <a
+                      href={`#${s.id}`}
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {s.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal / Company */}
+            <div>
+              <h4 className="font-display font-semibold text-foreground mb-4 border-b-2 border-primary/40 pb-2 inline-block">
+                Company
+              </h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Claim Your Spot
+                  </a>
+                </li>
+                <li>
+                  <Link to="/terms-of-service/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Terms &amp; Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy-policy/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="pt-6 border-t border-border text-center">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} GrowSmallBiz. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
