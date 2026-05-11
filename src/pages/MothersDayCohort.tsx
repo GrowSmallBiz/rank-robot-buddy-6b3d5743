@@ -358,14 +358,11 @@ const MothersDayCohort = () => {
                 </span>
               </div>
 
-              <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight mb-5">
-                Get a{" "}
-                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  Complimentary Starter Website
-                </span>
+              <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Get a Complimentary Starter Website
               </h1>
 
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold text-foreground/90 leading-snug max-w-4xl mx-auto">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold leading-snug max-w-4xl mx-auto bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Plus the System That Helps Turn Inquiries Into Booked Clients
               </h2>
 
@@ -457,12 +454,8 @@ const MothersDayCohort = () => {
               <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 The Problem
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5">
-                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  Why Leads Slip Through the Cracks
-                </span>
-                <br />
-                for Mom-Owned Businesses
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Why Leads Slip Through the Cracks for Mom-Owned Businesses
               </h2>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 You are great at what you do — and you are also the mom, the operator, and the front desk. The family priorities you cannot ignore are exactly when your business is quietly leaking revenue.
@@ -590,12 +583,9 @@ const MothersDayCohort = () => {
                   <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                     What You Get
                   </p>
-                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4">
-                    We Help You Fix Your{" "}
-                    <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                      Leaky Bucket
-                    </span>
-                  </h3>
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                    We Help You Fix Your Leaky Bucket
+                  </h2>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
                     One connected system — built inside your own account — that captures enquiries, follows up instantly, books calls, and tracks everything. Here's what's included:
                   </p>
@@ -682,7 +672,7 @@ const MothersDayCohort = () => {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Why We Extended This Offer
               </h2>
             </div>
@@ -716,7 +706,7 @@ const MothersDayCohort = () => {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Mother’s Day Appreciation Offer · Limited to 5 Businesses
               </p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 A Real Mother’s Day Business Growth Deal
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
@@ -840,7 +830,7 @@ const MothersDayCohort = () => {
         <section id="presence" className="py-20 scroll-mt-20">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-5">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Stop Choosing Between Being Present and Being Responsive
               </h2>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-3">
@@ -884,7 +874,7 @@ const MothersDayCohort = () => {
         >
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-12 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Why This Can Pay for Itself Quickly
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg">
@@ -918,7 +908,7 @@ const MothersDayCohort = () => {
         <section id="pricing" className="py-20 scroll-mt-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Choose the Plan That Fits Your Business
               </h2>
               <p className="text-muted-foreground">
@@ -1133,7 +1123,7 @@ const MothersDayCohort = () => {
         >
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 What Gets Automated for You
               </h2>
               <p className="text-muted-foreground text-base md:text-lg">
@@ -1186,7 +1176,7 @@ const MothersDayCohort = () => {
           <div className="absolute -bottom-20 left-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-10 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 See the System Behind Your Website
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
@@ -1261,7 +1251,7 @@ const MothersDayCohort = () => {
         <section id="different" className="py-20 scroll-mt-20">
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 What Makes This Different
               </h2>
             </div>
@@ -1337,7 +1327,7 @@ const MothersDayCohort = () => {
           <div className="absolute -bottom-20 right-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.22)] blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-3xl relative z-10">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)]">
+              <h2 className="text-3xl md:text-4xl font-display font-bold bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -1376,7 +1366,7 @@ const MothersDayCohort = () => {
                 Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-5 text-foreground leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-5 leading-tight bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
               5 Spots. This Deal Will Not Be Repeated.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
