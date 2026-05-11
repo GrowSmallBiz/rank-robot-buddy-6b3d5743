@@ -1127,7 +1127,7 @@ const MothersDayCohort = () => {
                 Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why We Extended This Offer
+                Why We Extended This Mother’s Day Offer for Small Businesses
               </h2>
             </div>
             <div className="rounded-3xl border border-border bg-card/70 backdrop-blur p-7 md:p-10 space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
