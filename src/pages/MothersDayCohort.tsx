@@ -1,6 +1,6 @@
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
 import {
@@ -87,6 +87,7 @@ const PrimaryCTA = ({
 const MothersDayCohort = () => {
   const { buildUrl } = useUtm();
   const ctaUrl = buildUrl(APPLICATION_FORM_URL, "mothers-day-cohort");
+  const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
 
   // Inject Google Reviews widget script client-side to avoid SSR/hydration mismatch
   useEffect(() => {
@@ -925,71 +926,128 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {/* Essentials */}
-              <div className="rounded-2xl border border-border bg-card p-8 flex flex-col">
-                <h3 className="text-2xl font-display font-bold mb-1">Essentials Cohort</h3>
-                <div className="flex items-baseline gap-2 mb-1">
-                  <span className="text-4xl font-bold">$197</span>
-                  <span className="text-muted-foreground">/month</span>
-                </div>
-                <p className="text-xs text-muted-foreground mb-5">
-                  Normally <span className="line-through">$297/month</span>
-                </p>
-                <p className="text-muted-foreground mb-6">
-                  For mom-owned businesses that want the website, CRM, reviews, unified inbox, and follow-up foundation in place.
-                </p>
-                <p className="font-semibold mb-3">Includes:</p>
-                <ul className="space-y-2 mb-6 flex-1">
-                  {essentialsIncludes.map((b) => (
-                    <li key={b} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-sm text-muted-foreground mb-5">
-                  <span className="font-semibold text-foreground">Best for:</span>{" "}
-                  Businesses that want to look professional, stay organized, and start capturing and following up with leads more consistently.
-                </p>
-                <PrimaryCTA href={ctaUrl} full />
-              </div>
-
-              {/* Growth */}
-              <div className="relative rounded-2xl border-2 border-primary bg-card p-8 flex flex-col shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.45)] ring-1 ring-[hsl(22_85%_60%/0.3)]">
-                <div className="absolute -inset-px rounded-2xl bg-[linear-gradient(135deg,hsl(22_85%_60%/0.18),transparent_60%)] pointer-events-none" />
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold tracking-wide shadow-lg">
-                  MOST POPULAR
-                </div>
-                <div className="relative flex flex-col flex-1">
-                  <h3 className="text-2xl font-display font-bold mb-1">Growth Cohort</h3>
-                  <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-4xl font-bold">$297</span>
-                    <span className="text-muted-foreground">/month</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground mb-5">
-                    Normally <span className="line-through">$497/month</span>
-                  </p>
-                  <p className="text-muted-foreground mb-6">
-                    For mom-owned businesses that want faster response, AI-powered lead handling, and more automation.
-                  </p>
-                  <p className="font-semibold mb-3">Everything in Essentials, plus:</p>
-                  <ul className="space-y-2 mb-6 flex-1">
-                    {growthExtras.map((b) => (
-                      <li key={b} className="flex items-start gap-2 text-sm">
-                        <Sparkles className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                        <span className="font-medium">{b}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-sm text-muted-foreground mb-5">
-                    <span className="font-semibold text-foreground">Best for:</span>{" "}
-                    Businesses that miss calls, receive after-hours inquiries, or want leads handled faster without hiring a receptionist.
-                  </p>
-                  <PrimaryCTA href={ctaUrl} full />
-                </div>
+            {/* Billing toggle */}
+            <div className="flex justify-center mb-10">
+              <div
+                role="radiogroup"
+                aria-label="Billing cycle"
+                className="inline-flex items-center gap-1 p-1 rounded-full border border-border bg-card/60 backdrop-blur"
+              >
+                {(["monthly", "annual"] as const).map((option) => {
+                  const selected = billing === option;
+                  return (
+                    <button
+                      key={option}
+                      type="button"
+                      role="radio"
+                      aria-checked={selected}
+                      onClick={() => setBilling(option)}
+                      className={`relative px-5 md:px-6 py-2 rounded-full text-sm font-semibold transition-colors ${
+                        selected
+                          ? "bg-primary text-primary-foreground shadow"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {option === "monthly" ? "Monthly" : "Annual"}
+                      {option === "annual" && (
+                        <span
+                          className={`ml-2 text-[10px] uppercase tracking-wide font-bold ${
+                            selected ? "text-primary-foreground/90" : "text-primary"
+                          }`}
+                        >
+                          2 mo free
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
+
+            {(() => {
+              const isAnnual = billing === "annual";
+              const essPrice = isAnnual ? "$1,970" : "$197";
+              const essRegular = isAnnual ? "$2,970/year" : "$297/month";
+              const growPrice = isAnnual ? "$2,970" : "$297";
+              const growRegular = isAnnual ? "$4,970/year" : "$497/month";
+              const period = isAnnual ? "/year" : "/month";
+              return (
+                <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                  {/* Essentials Cohort */}
+                  <div
+                    className="rounded-2xl border-2 border-[hsl(199_89%_48%/0.5)] p-8 flex flex-col"
+                    style={{ background: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)" }}
+                  >
+                    <div className="text-center mb-2">
+                      <h3 className="text-3xl font-display font-bold text-foreground">Essentials Cohort</h3>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        For mom-owned businesses that want the website, CRM, reviews, unified inbox, and follow-up foundation in place.
+                      </p>
+                    </div>
+                    <div className="text-center my-6">
+                      <span className="text-5xl md:text-6xl font-display font-bold text-primary">{essPrice}</span>
+                      <span className="text-muted-foreground text-lg">{period}</span>
+                      <p className="mt-3 text-sm text-muted-foreground">
+                        Normally{" "}
+                        <span className="line-through text-red-500 font-semibold">{essRegular}</span>
+                      </p>
+                    </div>
+                    <p className="font-semibold text-foreground mb-3">Includes:</p>
+                    <ul className="space-y-3 mb-8 flex-1">
+                      {essentialsIncludes.map((b) => (
+                        <li key={b} className="flex items-start gap-3 text-sm">
+                          <CheckCircle2 className="w-5 h-5 mt-0.5 text-primary shrink-0" />
+                          <span className="text-foreground">{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-sm text-muted-foreground mb-5">
+                      <span className="font-semibold text-foreground">Best for:</span>{" "}
+                      Businesses that want to look professional, stay organized, and start capturing and following up with leads more consistently.
+                    </p>
+                    <PrimaryCTA href={ctaUrl} full />
+                  </div>
+
+                  {/* Growth Cohort */}
+                  <div
+                    className="relative rounded-2xl border-2 border-primary p-8 flex flex-col shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.45)]"
+                    style={{ background: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)" }}
+                  >
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold tracking-wide shadow-lg">
+                      Most Popular
+                    </div>
+                    <div className="text-center mb-2">
+                      <h3 className="text-3xl font-display font-bold text-foreground">Growth Cohort</h3>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        For mom-owned businesses that want faster response, AI-powered lead handling, and more automation.
+                      </p>
+                    </div>
+                    <div className="text-center my-6">
+                      <span className="text-5xl md:text-6xl font-display font-bold text-primary">{growPrice}</span>
+                      <span className="text-muted-foreground text-lg">{period}</span>
+                      <p className="mt-3 text-sm text-muted-foreground">
+                        Normally{" "}
+                        <span className="line-through text-red-500 font-semibold">{growRegular}</span>
+                      </p>
+                    </div>
+                    <p className="font-semibold text-foreground mb-3">Everything in Essentials, plus:</p>
+                    <ul className="space-y-3 mb-8 flex-1">
+                      {growthExtras.map((b) => (
+                        <li key={b} className="flex items-start gap-3 text-sm">
+                          <Sparkles className="w-5 h-5 mt-0.5 text-primary shrink-0" />
+                          <span className="text-foreground font-medium">{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-sm text-muted-foreground mb-5">
+                      <span className="font-semibold text-foreground">Best for:</span>{" "}
+                      Businesses that miss calls, receive after-hours inquiries, or want leads handled faster without hiring a receptionist.
+                    </p>
+                    <PrimaryCTA href={ctaUrl} full />
+                  </div>
+                </div>
+              );
+            })()}
 
             {/* Investment Details */}
             <div className="max-w-5xl mx-auto mt-10 grid md:grid-cols-2 gap-6">
