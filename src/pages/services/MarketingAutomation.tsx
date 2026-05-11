@@ -194,7 +194,7 @@ const pricingPlans = [
     cta: "Get Started",
     monthlyCtaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
     annualCtaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
-    note: "No contracts. Cancel anytime.",
+    note: "",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
   {
@@ -212,7 +212,7 @@ const pricingPlans = [
     monthlyCtaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
     annualCtaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
     popular: true,
-    note: "No contracts. Cancel anytime.",
+    note: "",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
 ];
@@ -902,6 +902,20 @@ const MarketingAutomation = () => {
               description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
             />
             <PricingSection plans={pricingPlans} />
+            <div className="mt-10 text-center animate-fade-up">
+              <p className="text-base md:text-lg text-muted-foreground mb-3">
+                Not ready to sign up yet?
+              </p>
+              <a
+                href={buildUrl("https://lp.growsmallbiz.io/digital-growth-strategy-session", "pricing-consultation")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                Schedule a Free Consultation
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
             <div className="mt-12 max-w-3xl mx-auto animate-fade-up">
               <div className="relative rounded-2xl p-8 md:p-10 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, hsl(var(--primary) / 0.15), hsl(var(--ghl-card-border) / 0.15))', border: '2px solid hsl(var(--primary))', boxShadow: '0 0 40px hsl(var(--primary) / 0.35)' }}>
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4">
