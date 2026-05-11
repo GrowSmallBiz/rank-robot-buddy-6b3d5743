@@ -98,9 +98,9 @@ const MothersDayCohort = () => {
 
   const heroBadges = [
     "Complimentary Starter Website — $2,500 Value",
-    "Setup Reduced from $1,500 to $1,000",
+    "$500 off Client Growth System Setup",
     "Cohort Pricing Will Not Be Repeated",
-    "Extended Through May 31, 2026 — or Until 5 Spots Are Filled",
+    "First Come, First Served — Only 5 Spots",
   ];
 
   const standardValues = [
