@@ -484,6 +484,83 @@ const testimonials = [
   },
 ];
 
+type PricingPlanData = {
+  name: string;
+  monthlyPrice: number;
+  annualPrice: number;
+  description: string;
+  features: string[];
+  cta: string;
+  monthlyCtaLink: string;
+  annualCtaLink: string;
+  popular?: boolean;
+  note: string;
+  cardStyle: string;
+};
+
+const PricingSection = ({ plans }: { plans: PricingPlanData[] }) => {
+  const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
+
+  const mapped = plans.map((p) => {
+    const isAnnual = billing === "annual";
+    return {
+      name: p.name,
+      price: isAnnual ? `$${p.annualPrice.toLocaleString()}` : `$${p.monthlyPrice}`,
+      period: isAnnual ? "/year" : "/month",
+      description: p.description,
+      features: p.features,
+      cta: p.cta,
+      ctaLink: isAnnual ? p.annualCtaLink : p.monthlyCtaLink,
+      popular: p.popular,
+      note: isAnnual ? "2 months free. Cancel anytime." : p.note,
+      cardStyle: p.cardStyle,
+    };
+  });
+
+  return (
+    <>
+      <div className="flex justify-center mb-10">
+        <div
+          role="radiogroup"
+          aria-label="Billing cycle"
+          className="inline-flex items-center gap-1 p-1 rounded-full border border-border bg-card/60 backdrop-blur"
+        >
+          {(["monthly", "annual"] as const).map((option) => {
+            const selected = billing === option;
+            return (
+              <button
+                key={option}
+                type="button"
+                role="radio"
+                aria-checked={selected}
+                onClick={() => setBilling(option)}
+                className={`relative px-5 md:px-6 py-2 rounded-full text-sm font-semibold transition-colors ${
+                  selected
+                    ? "bg-primary text-primary-foreground shadow"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {option === "monthly" ? "Monthly" : "Annual"}
+                {option === "annual" && (
+                  <span
+                    className={`ml-2 text-[10px] uppercase tracking-wide font-bold ${
+                      selected ? "text-primary-foreground/90" : "text-primary"
+                    }`}
+                  >
+                    2 mo free
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+      <PricingGrid plans={mapped} columns={2} className="max-w-4xl mx-auto" />
+    </>
+  );
+};
+
+
 const MarketingAutomation = () => {
   const { hash } = useLocation();
   const { buildUrl } = useUtm();
