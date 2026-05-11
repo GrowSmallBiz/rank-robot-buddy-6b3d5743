@@ -242,7 +242,7 @@ const MothersDayCohort = () => {
     },
     {
       q: "Is the website really complimentary?",
-      a: "Yes. The Starter Website (a $2,500 value) is included for the 5 selected Mother’s Day cohort businesses. The $1,000 fee is for Client Growth System Setup — not the website.",
+      a: "Yes. The Starter Website (a $2,500 value) is included for the 5 selected mom-owned businesses in this Mother’s Day Appreciation Offer. The $1,000 fee is for Client Growth System Setup — not the website.",
     },
     {
       q: "When does billing start?",
