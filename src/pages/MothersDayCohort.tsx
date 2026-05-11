@@ -1073,7 +1073,7 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        <section className="py-16 md:py-20 relative overflow-hidden">
+        <section className="py-16 md:py-20 relative overflow-hidden bg-background-alt">
           <div className="absolute -top-16 -left-16 w-72 h-72 rounded-full bg-[hsl(22_85%_60%/0.08)] blur-3xl pointer-events-none" />
           <div className="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-[hsl(350_70%_72%/0.08)] blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-3xl relative z-10">
