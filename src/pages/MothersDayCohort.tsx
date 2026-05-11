@@ -1295,14 +1295,19 @@ const MothersDayCohort = () => {
                 ))}
               </ul>
 
-              <p className="font-semibold mb-2 text-sm">Core integrations may include:</p>
+              <p className="font-semibold mb-3 text-base">Core integrations may include:</p>
               <div className="flex flex-wrap gap-2 mb-3">
                 {integrations.map((i) => (
                   <span
-                    key={i}
-                    className="text-xs px-3 py-1.5 rounded-full bg-background border border-border text-muted-foreground"
+                    key={i.name}
+                    className="text-sm font-semibold px-3.5 py-2 rounded-full bg-background border-2 transition-all hover:scale-105"
+                    style={{
+                      borderColor: `${i.color}80`,
+                      color: i.color,
+                      boxShadow: `0 0 12px ${i.color}33`,
+                    }}
                   >
-                    {i}
+                    {i.name}
                   </span>
                 ))}
               </div>
