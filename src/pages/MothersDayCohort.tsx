@@ -628,7 +628,7 @@ const MothersDayCohort = () => {
                     What You Get
                   </p>
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                    We Help You Fix Your Leaky Bucket
+                    How GrowSmallBiz Helps Your Small Business Stop Losing Leads
                   </h2>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
                     One connected system — built inside your own account — that captures enquiries, follows up instantly, books calls, and tracks everything. Here's what's included:
