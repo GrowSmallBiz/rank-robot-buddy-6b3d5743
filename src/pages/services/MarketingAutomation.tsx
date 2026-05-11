@@ -514,7 +514,7 @@ const PricingSection = ({ plans }: { plans: PricingPlanData[] }) => {
       ctaLink: isAnnual ? p.annualCtaLink : p.monthlyCtaLink,
       popular: p.popular,
       note: isAnnual
-        ? `Save $${savings.toLocaleString()}/year — 2 months free. Cancel anytime.`
+        ? `Save $${savings.toLocaleString()}/year — 2 months free.`
         : p.note,
       cardStyle: p.cardStyle,
     };
