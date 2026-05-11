@@ -208,17 +208,17 @@ const MothersDayCohort = () => {
   ];
 
   const automationCards = [
-    { icon: Smartphone, title: "Missed-call text-back" },
-    { icon: PhoneCall, title: "AI Voice Receptionist" },
-    { icon: Bot, title: "AI Livechat on your website" },
-    { icon: Mail, title: "Lead form follow-up" },
-    { icon: MessageSquare, title: "Email & SMS nurture" },
-    { icon: Calendar, title: "Calendar scheduling" },
-    { icon: Clock, title: "Appointment reminders" },
-    { icon: Star, title: "Review requests" },
-    { icon: Inbox, title: "Unified inbox" },
-    { icon: Database, title: "CRM pipeline tracking" },
-    { icon: CreditCard, title: "Payment acceptance when applicable" },
+    { icon: Smartphone, title: "Missed-call text-back", desc: "Instantly texts back missed callers so leads never go cold." },
+    { icon: PhoneCall, title: "AI Voice Receptionist", desc: "Answers calls 24/7, books appointments, and captures details." },
+    { icon: Bot, title: "AI Livechat on your website", desc: "Engages visitors in real time and turns clicks into conversations." },
+    { icon: Mail, title: "Lead form follow-up", desc: "Replies within seconds — when buying intent is highest." },
+    { icon: MessageSquare, title: "Email & SMS nurture", desc: "Stays in front of leads until they're ready to book." },
+    { icon: Calendar, title: "Calendar scheduling", desc: "Lets clients self-book without the back-and-forth." },
+    { icon: Clock, title: "Appointment reminders", desc: "Cuts no-shows with automated reminders by text and email." },
+    { icon: Star, title: "Review requests", desc: "Asks happy clients for reviews on autopilot to build trust." },
+    { icon: Inbox, title: "Unified inbox", desc: "All calls, texts, emails, and DMs in one place." },
+    { icon: Database, title: "CRM pipeline tracking", desc: "See every lead's stage so nothing slips through the cracks." },
+    { icon: CreditCard, title: "Payment acceptance when applicable", desc: "Collect deposits and payments without extra tools." },
   ];
 
   const automationFlow = [
@@ -716,16 +716,19 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
               {automationCards.map((c) => (
                 <div
                   key={c.title}
-                  className="rounded-xl border border-border bg-card p-5 flex items-start gap-3 hover:border-primary/40 transition-colors"
+                  className="rounded-xl border-2 border-[hsl(188_78%_41%_/_0.35)] bg-[hsl(188_60%_14%)] p-5 flex items-start gap-3 hover:border-[hsl(188_78%_55%_/_0.7)] hover:shadow-[0_0_25px_hsl(188_78%_41%_/_0.25)] transition-all"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/25 flex items-center justify-center shrink-0">
-                    <c.icon className="w-5 h-5 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-[hsl(188_78%_41%_/_0.2)] border border-[hsl(188_78%_55%_/_0.4)] flex items-center justify-center shrink-0">
+                    <c.icon className="w-5 h-5 text-[hsl(188_78%_65%)]" />
                   </div>
-                  <span className="text-sm font-medium pt-1.5">{c.title}</span>
+                  <div className="flex-1">
+                    <h3 className="text-sm font-semibold text-foreground mb-1">{c.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{c.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
