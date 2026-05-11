@@ -401,8 +401,8 @@ const MothersDayCohort = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:justify-center">
-                  <PrimaryCTA href={ctaUrl} />
-                  <Button asChild size="lg" variant="outline" className="border-border">
+                  <PrimaryCTA href={ctaUrl} className="w-full sm:w-auto whitespace-normal text-center leading-tight h-auto py-3" />
+                  <Button asChild size="lg" variant="outline" className="border-border w-full sm:w-auto">
                     <a href="#value">{SECONDARY_CTA_LABEL}</a>
                   </Button>
                 </div>
