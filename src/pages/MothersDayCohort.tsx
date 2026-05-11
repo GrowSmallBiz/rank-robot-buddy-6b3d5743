@@ -453,7 +453,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-10 max-w-3xl mx-auto">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(22_85%_42%)] mb-3">
-                Mother’s Day Cohort · Limited to 5 Businesses
+                Mother’s Day Appreciation Offer · Limited to 5 Businesses
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
                 A Real Mother’s Day Business Growth Deal
