@@ -503,6 +503,7 @@ const PricingSection = ({ plans }: { plans: PricingPlanData[] }) => {
 
   const mapped = plans.map((p) => {
     const isAnnual = billing === "annual";
+    const savings = p.monthlyPrice * 12 - p.annualPrice;
     return {
       name: p.name,
       price: isAnnual ? `$${p.annualPrice.toLocaleString()}` : `$${p.monthlyPrice}`,
@@ -512,7 +513,9 @@ const PricingSection = ({ plans }: { plans: PricingPlanData[] }) => {
       cta: p.cta,
       ctaLink: isAnnual ? p.annualCtaLink : p.monthlyCtaLink,
       popular: p.popular,
-      note: isAnnual ? "2 months free. Cancel anytime." : p.note,
+      note: isAnnual
+        ? `Save $${savings.toLocaleString()}/year — 2 months free. Cancel anytime.`
+        : p.note,
       cardStyle: p.cardStyle,
     };
   });
