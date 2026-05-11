@@ -371,11 +371,11 @@ const MothersDayCohort = () => {
               {/* Prominent deadline */}
               <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary/15 border-2 border-primary text-primary font-bold text-sm md:text-base shadow-[0_0_30px_hsl(22_85%_60%/0.25)]">
                 <Clock className="w-4 h-4 md:w-5 md:h-5" />
-                <span className="uppercase tracking-wide">
+                <span className="uppercase tracking-wide bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                   Extended Through May 31, 2026
                 </span>
                 <span className="hidden sm:inline opacity-70">·</span>
-                <span>or Until 5 Spots Are Filled</span>
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">or Until 5 Spots Are Filled</span>
               </div>
             </div>
 
