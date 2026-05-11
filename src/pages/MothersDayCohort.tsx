@@ -44,7 +44,7 @@ const APPLICATION_FORM_URL =
   "https://lp.growsmallbiz.io/digital-growth-strategy-session";
 const PAGE_TITLE = "Mother’s Day Appreciation Offer | GrowSmallBiz";
 const PAGE_DESC =
-  "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special cohort pricing that will not be repeated.";
+  "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special Mother’s Day pricing that will not be repeated.";
 
 const PRIMARY_CTA_LABEL = "Claim Your Spot — First Come, First Served";
 const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
@@ -102,7 +102,7 @@ const MothersDayCohort = () => {
   const heroBadges = [
     "Complimentary Starter Website — $2,500 Value",
     "$500 off Client Growth System Setup",
-    "Cohort Pricing Will Not Be Repeated",
+    "Mother’s Day Pricing Will Not Be Repeated",
     "First Come, First Served — Only 5 Spots",
   ];
 
@@ -116,8 +116,8 @@ const MothersDayCohort = () => {
   const cohortValues = [
     { label: "Starter Website", value: "Complimentary" },
     { label: "Client Growth System Setup", value: "$1,000" },
-    { label: "Essentials Cohort Plan", value: "$197/month" },
-    { label: "Growth Cohort Plan", value: "$297/month" },
+    { label: "Essentials Plan", value: "$197/month" },
+    { label: "Growth Plan", value: "$297/month" },
   ];
 
   const presenceCards = [
@@ -253,7 +253,7 @@ const MothersDayCohort = () => {
     },
     {
       q: "Can I choose annual?",
-      a: "Yes. Annual options are available and include the Mother’s Day spa bonus. Essentials Cohort: $1,970/year. Growth Cohort: $2,970/year. That’s 2 months free at the cohort rate.",
+      a: "Yes. Annual options are available and include the Mother’s Day spa bonus. Essentials Plan: $1,970/year. Growth Plan: $2,970/year. That’s 2 months free at the Mother’s Day rate.",
     },
     {
       q: "What happens after this campaign closes?",
@@ -720,7 +720,7 @@ const MothersDayCohort = () => {
                 A Real Mother’s Day Business Growth Deal
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
-                This is not standard GrowSmallBiz pricing. This is a limited cohort offer created for 5 mom-owned local service businesses.
+                This is not standard GrowSmallBiz pricing. This is a limited Mother’s Day offer created for 5 mom-owned local service businesses.
               </p>
             </div>
 
@@ -750,7 +750,7 @@ const MothersDayCohort = () => {
               <div className="relative rounded-3xl border-2 border-[hsl(22_85%_60%)] bg-white shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.4)] p-7 md:p-8 overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
                 <div className="absolute -top-2 right-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg">
-                  COHORT PRICING
+                  MOTHER’S DAY PRICING
                 </div>
                 <p className="text-xs font-semibold uppercase tracking-wider mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                   Mother’s Day Appreciation Offer
@@ -827,7 +827,7 @@ const MothersDayCohort = () => {
             </div>
 
             <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic">
-              This cohort pricing is only available to the 5 selected mom-owned businesses in this Mother’s Day Appreciation Offer and will not be repeated after this campaign closes.
+              This Mother’s Day pricing is only available to the 5 selected mom-owned businesses in this Mother’s Day Appreciation Offer and will not be repeated after this campaign closes.
             </p>
 
             <div className="flex justify-center mt-8">
@@ -919,7 +919,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-3">
-                Choose the Cohort Plan That Fits Your Business
+                Choose the Plan That Fits Your Business
               </h2>
               <p className="text-muted-foreground">
                 Both plans include your complimentary Starter Website and discounted Client Growth System Setup. Choose how much automation you want behind your business.
@@ -973,13 +973,13 @@ const MothersDayCohort = () => {
               const period = isAnnual ? "/year" : "/month";
               return (
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                  {/* Essentials Cohort */}
+                  {/* Essentials Plan */}
                   <div
                     className="rounded-2xl border-2 border-[hsl(199_89%_48%/0.5)] p-8 flex flex-col"
                     style={{ background: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)" }}
                   >
                     <div className="text-center mb-2">
-                      <h3 className="text-3xl font-display font-bold text-foreground">Essentials Cohort</h3>
+                      <h3 className="text-3xl font-display font-bold text-foreground">Essentials Plan</h3>
                       <p className="text-sm text-muted-foreground mt-2">
                         For mom-owned businesses that want the website, CRM, reviews, unified inbox, and follow-up foundation in place.
                       </p>
@@ -1008,7 +1008,7 @@ const MothersDayCohort = () => {
                     <PrimaryCTA href={ctaUrl} full />
                   </div>
 
-                  {/* Growth Cohort */}
+                  {/* Growth Plan */}
                   <div
                     className="relative rounded-2xl border-2 border-primary p-8 flex flex-col shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.45)]"
                     style={{ background: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)" }}
@@ -1017,7 +1017,7 @@ const MothersDayCohort = () => {
                       Most Popular
                     </div>
                     <div className="text-center mb-2">
-                      <h3 className="text-3xl font-display font-bold text-foreground">Growth Cohort</h3>
+                      <h3 className="text-3xl font-display font-bold text-foreground">Growth Plan</h3>
                       <p className="text-sm text-muted-foreground mt-2">
                         For mom-owned businesses that want faster response, AI-powered lead handling, and more automation.
                       </p>
@@ -1058,8 +1058,8 @@ const MothersDayCohort = () => {
                     "Complimentary Starter Website — $2,500 value",
                     "Client Growth System Setup — $1,000 (normally $1,500)",
                     "12-month growth program",
-                    "Essentials Cohort: $197/month",
-                    "Growth Cohort: $297/month",
+                    "Essentials Plan: $197/month",
+                    "Growth Plan: $297/month",
                     "Subscription begins when your website goes live",
                   ].map((b) => (
                     <li key={b} className="flex items-start gap-2">
@@ -1077,9 +1077,9 @@ const MothersDayCohort = () => {
                 </div>
                 <ul className="space-y-2 text-sm">
                   {[
-                    "Essentials Cohort: $1,970/year",
-                    "Growth Cohort: $2,970/year",
-                    "Includes 2 months free at the cohort rate",
+                    "Essentials Plan: $1,970/year",
+                    "Growth Plan: $2,970/year",
+                    "Includes 2 months free at the Mother’s Day rate",
                     "Includes Mother’s Day spa bonus",
                   ].map((b) => (
                     <li key={b} className="flex items-start gap-2">
@@ -1388,8 +1388,8 @@ const MothersDayCohort = () => {
                 {[
                   "Complimentary Starter Website — $2,500 value",
                   "Client Growth System Setup reduced to $1,000",
-                  "Essentials Cohort: $197/month",
-                  "Growth Cohort: $297/month",
+                  "Essentials Plan: $197/month",
+                  "Growth Plan: $297/month",
                   "Extended through May 31, 2026 — or until 5 spots are filled",
                   "Spots are filled first-paid after the discovery call",
                 ].map((s) => (
