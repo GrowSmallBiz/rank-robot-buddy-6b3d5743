@@ -889,6 +889,63 @@ const MarketingAutomation = () => {
           </div>
         </section>
 
+        {/* Schedule a Demo CTA */}
+        <section id="ready-to-talk" className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: '#2d465c' }}>
+          <div className="container mx-auto px-4 relative z-10 max-w-4xl">
+            <div className="flex flex-col items-center text-center mb-12">
+              <p className="text-primary font-medium mb-3 text-sm">Ready to Talk?</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground uppercase tracking-tight mb-6 bg-gradient-heading bg-clip-text text-transparent">
+                See How Our AI Powered CRM & Marketing Automation Streamlines Your Sales
+              </h2>
+              <p className="text-muted-foreground text-lg mb-8 max-w-2xl">
+                Watch a quick overview of how GrowSmallBiz helps local service businesses attract more leads and grow faster. For the bigger picture, browse our <Link to="/services/" className="text-primary hover:underline">Digital Marketing Services Overview</Link>.
+              </p>
+
+              {/* YouTube Videos */}
+              <div className="grid md:grid-cols-2 gap-6 w-full mb-8">
+                <div>
+                  <h3 className="text-base md:text-lg font-bold text-foreground mb-3">Platform Overview</h3>
+                  <div className="rounded-2xl overflow-hidden shadow-[0_0_30px_#17a2b850]" style={{ border: '2px solid #17a2b8' }}>
+                    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                      <iframe
+                        className="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/IkA8jPWgHxk"
+                        title="GrowSmallBiz Overview"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-base md:text-lg font-bold text-foreground mb-3">Meet Your AI Employee</h3>
+                  <div className="rounded-2xl overflow-hidden shadow-[0_0_30px_#17a2b850]" style={{ border: '2px solid #17a2b8' }}>
+                    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                      <iframe
+                        className="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/rJ289MZ0ugU"
+                        title="AI Employee — GrowSmallBiz"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Schedule a Demo Button */}
+              <a
+                href={buildUrl("https://lp.growsmallbiz.io/ai-client-growth-system-demo", "schedule-demo")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ghl-btn inline-flex items-center gap-3 px-8 py-4 text-lg font-bold"
+              >
+                Schedule a Demo
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Testimonials */}
         <section id="testimonials" className="py-12 lg:py-16" style={{ backgroundColor: "hsl(var(--ghl-section-bg))" }}>
           <div className="container mx-auto px-4">
