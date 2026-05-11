@@ -61,7 +61,7 @@ const PAGE_PATH = "/mothers-day-mom-owned-business-cohort/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
 const APPLICATION_FORM_URL =
   "https://lp.growsmallbiz.io/digital-growth-strategy-session";
-const PAGE_TITLE = "Mother’s Day Appreciation Offer | GrowSmallBiz";
+const PAGE_TITLE = "Free Website for Small Businesses | Mother’s Day Offer";
 const PAGE_DESC =
   "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special Mother’s Day pricing that will not be repeated.";
 
@@ -381,9 +381,9 @@ const MothersDayCohort = () => {
                 Get a Complimentary Starter Small Business Website
               </h1>
 
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold leading-snug max-w-4xl mx-auto bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Plus the System That Helps Turn Inquiries Into Booked Clients
-              </h2>
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold leading-snug max-w-4xl mx-auto bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Free Website + Lead Automation System for Small Businesses
+              </p>
 
               {/* Prominent deadline */}
               <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary/15 border-2 border-primary text-primary font-bold text-sm md:text-base shadow-[0_0_30px_hsl(22_85%_60%/0.25)]">
@@ -499,7 +499,7 @@ const MothersDayCohort = () => {
                 The Problem
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why Leads Slip Through the Cracks for Mom-Owned Businesses
+                Why Leads Slip Through the Cracks for Small Businesses
               </h2>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 You are great at what you do — and you are also the mom, the operator, and the front desk. The family priorities you cannot ignore are exactly when your business is quietly leaking revenue.
@@ -628,7 +628,7 @@ const MothersDayCohort = () => {
                     What You Get
                   </p>
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                    We Help You Fix Your Leaky Bucket
+                    How GrowSmallBiz Helps Your Small Business Stop Losing Leads
                   </h2>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
                     One connected system — built inside your own account — that captures enquiries, follows up instantly, books calls, and tracks everything. Here's what's included:
@@ -711,7 +711,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Stop Choosing Between Being Present and Being Responsive
+                Free Lead Automation for Small Businesses — Be Present and Responsive
               </h2>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-3">
                 You should not have to answer texts while giving a massage, step out of a client session to return a missed call, or skip your daughter’s basketball game because someone might reach out after hours.
@@ -754,7 +754,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                What Gets Automated for You
+                What Lead Automation Handles for Your Small Business
               </h2>
               <p className="text-muted-foreground text-base md:text-lg">
                 This is where the system starts saving time — not just generating leads.
@@ -810,7 +810,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-10 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                See the System Behind Your Website
+                The Lead Automation System Behind Your Free Small Business Website
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
                 Your website is only the front door. GrowSmallBiz also sets up the connected system behind it — lead capture, CRM, follow-up automation, reviews, and AI-powered response tools.
@@ -884,7 +884,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                What Makes This Different
+                What Makes This Mother’s Day Offer Different for Small Businesses
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6 mb-10 items-stretch">
@@ -957,7 +957,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-12 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why This Can Pay for Itself Quickly
+                Why This Free Website + Automation Pays for Itself Quickly
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg">
                 For many local service businesses, one or two additional booked clients per month can cover the monthly subscription.
@@ -1127,7 +1127,7 @@ const MothersDayCohort = () => {
                 Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why We Extended This Offer
+                Why We Extended This Mother’s Day Offer for Small Businesses
               </h2>
             </div>
             <div className="rounded-3xl border border-border bg-card/70 backdrop-blur p-7 md:p-10 space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
@@ -1197,7 +1197,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Choose the Plan That Fits Your Business
+                Choose the GrowSmallBiz Plan That Fits Your Small Business
               </h2>
               <p className="text-muted-foreground">
                 Both plans include your complimentary Starter Website and discounted Client Growth System Setup. Choose how much automation you want behind your business.
