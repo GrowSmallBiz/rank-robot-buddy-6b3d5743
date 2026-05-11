@@ -177,7 +177,8 @@ const faqs: FAQItem[] = [
 const pricingPlans = [
   {
     name: "Essentials",
-    price: "$297",
+    monthlyPrice: 297,
+    annualPrice: 2970,
     description: "Perfect for Solopreneurs",
     features: [
       "Smart CRM & Unified Inbox",
@@ -191,13 +192,15 @@ const pricingPlans = [
       "Reputation Management",
     ],
     cta: "Get Started",
-    ctaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
+    monthlyCtaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
+    annualCtaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
     note: "No contracts. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
   {
     name: "Growth",
-    price: "$397",
+    monthlyPrice: 397,
+    annualPrice: 3970,
     description: "Scale Conversations with AI",
     features: [
       "Everything in Essentials +",
@@ -206,26 +209,10 @@ const pricingPlans = [
       "Conversational AI across SMS & Social Media Channels",
     ],
     cta: "Get Started",
-    ctaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
+    monthlyCtaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
+    annualCtaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
     popular: true,
     note: "No contracts. Cancel anytime.",
-    cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
-  },
-  {
-    name: "Unlimited",
-    price: "$497",
-    description: "Maximum Power, Zero Limits",
-    features: [
-      "Everything in Essentials +",
-      "UNLIMITED Image AI",
-      "UNLIMITED Content AI",
-      "UNLIMITED Voice AI",
-      "UNLIMITED Conversation AI",
-      "ZERO AI OVERAGE FEES",
-    ],
-    cta: "Go Unlimited",
-    ctaLink: "https://lp.growsmallbiz.io/check-out-page---unlimited",
-    note: "Zero AI overage fees. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
 ];
