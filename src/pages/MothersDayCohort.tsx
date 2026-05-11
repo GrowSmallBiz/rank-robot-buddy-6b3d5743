@@ -386,13 +386,9 @@ const MothersDayCohort = () => {
                   ].map((b) => (
                     <li
                       key={b.text}
-                      className={
-                        b.highlight
-                          ? "flex items-start gap-3 px-4 py-3 rounded-lg bg-primary/15 border-2 border-primary/60 shadow-[0_0_18px_hsl(22_85%_60%/0.18)]"
-                          : "flex items-start gap-3 px-4 py-3 rounded-lg bg-white/5 border border-[hsl(30_55%_70%/0.18)]"
-                      }
+                      className="flex items-start gap-3 px-4 py-3 rounded-lg bg-primary/15 border-2 border-primary/60 shadow-[0_0_18px_hsl(22_85%_60%/0.18)]"
                     >
-                      <CheckCircle2 className={`w-5 h-5 mt-0.5 shrink-0 ${b.highlight ? "text-primary" : "text-primary"}`} />
+                      <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0 text-primary" />
                       <span className={`text-sm md:text-base ${b.highlight ? "text-foreground font-semibold" : "text-foreground/90"}`}>
                         {b.text}
                       </span>
