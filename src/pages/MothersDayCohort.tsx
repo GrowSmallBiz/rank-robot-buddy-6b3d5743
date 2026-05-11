@@ -172,21 +172,21 @@ const MothersDayCohort = () => {
     { icon: ShieldCheck, text: "Hands-on launch support" },
   ];
 
-  const integrations = [
-    "Google Calendar",
-    "Google account connection",
-    "Google Business Profile",
-    "Google Lead Ads",
-    "Facebook & Instagram",
-    "LinkedIn lead forms",
-    "TikTok messaging or lead ads",
-    "WhatsApp",
-    "Stripe, PayPal, Square, or other payment providers",
-    "QuickBooks",
-    "Slack",
-    "Canva",
-    "ClickUp",
-    "Fathom",
+  const integrations: { name: string; color: string }[] = [
+    { name: "Google Calendar", color: "#4285F4" },
+    { name: "Google account connection", color: "#EA4335" },
+    { name: "Google Business Profile", color: "#34A853" },
+    { name: "Google Lead Ads", color: "#FBBC05" },
+    { name: "Facebook & Instagram", color: "#E1306C" },
+    { name: "LinkedIn lead forms", color: "#0A66C2" },
+    { name: "TikTok messaging or lead ads", color: "#25F4EE" },
+    { name: "WhatsApp", color: "#25D366" },
+    { name: "Stripe, PayPal, Square, or other payment providers", color: "#635BFF" },
+    { name: "QuickBooks", color: "#2CA01C" },
+    { name: "Slack", color: "#ECB22E" },
+    { name: "Canva", color: "#00C4CC" },
+    { name: "ClickUp", color: "#7B68EE" },
+    { name: "Fathom", color: "#9333EA" },
   ];
 
   const essentialsIncludes = [
@@ -1295,14 +1295,19 @@ const MothersDayCohort = () => {
                 ))}
               </ul>
 
-              <p className="font-semibold mb-2 text-sm">Core integrations may include:</p>
+              <p className="font-semibold mb-3 text-base">Core integrations may include:</p>
               <div className="flex flex-wrap gap-2 mb-3">
                 {integrations.map((i) => (
                   <span
-                    key={i}
-                    className="text-xs px-3 py-1.5 rounded-full bg-background border border-border text-muted-foreground"
+                    key={i.name}
+                    className="text-sm font-semibold px-3.5 py-2 rounded-full bg-background border-2 transition-all hover:scale-105"
+                    style={{
+                      borderColor: `${i.color}80`,
+                      color: i.color,
+                      boxShadow: `0 0 12px ${i.color}33`,
+                    }}
                   >
-                    {i}
+                    {i.name}
                   </span>
                 ))}
               </div>
