@@ -179,7 +179,7 @@ const pricingPlans = [
     name: "Essentials",
     monthlyPrice: 297,
     annualPrice: 2970,
-    description: "Perfect for Solopreneurs",
+    description: "Run Your Entire Business in One Place",
     features: [
       "Smart CRM & Unified Inbox",
       "Sales Pipelines",
