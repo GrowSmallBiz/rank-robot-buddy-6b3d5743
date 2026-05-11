@@ -43,6 +43,10 @@ import bizCleaning from "@/assets/cohort/biz-cleaning.jpg";
 import bizTutoring from "@/assets/cohort/biz-tutoring.jpg";
 import bizPetcare from "@/assets/cohort/biz-petcare.jpg";
 import bizFitness from "@/assets/cohort/biz-fitness.jpg";
+import chamberDanville from "@/assets/cohort/chamber-danville.webp";
+import chamberSanRamon from "@/assets/cohort/chamber-sanramon.webp";
+import chamberWalnutCreek from "@/assets/cohort/chamber-walnutcreek.webp";
+import chamberConcord from "@/assets/cohort/chamber-concord.png";
 
 const BUILT_FOR = [
   { img: bizSalon, label: "Hair & Beauty Salons" },
@@ -459,7 +463,33 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        {/* Chamber trust badges */}
+        <section aria-label="Proud Chamber of Commerce member" className="bg-white py-6 md:py-8 border-y border-black/5">
+          <div className="container mx-auto px-4">
+            <p className="text-center text-[11px] md:text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-5">
+              Proud Member Of
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-14">
+              {[
+                { src: chamberDanville, alt: "Danville Area Chamber of Commerce" },
+                { src: chamberSanRamon, alt: "San Ramon Chamber of Commerce" },
+                { src: chamberWalnutCreek, alt: "Walnut Creek Chamber of Commerce" },
+                { src: chamberConcord, alt: "Greater Concord Chamber of Commerce" },
+              ].map((logo) => (
+                <img
+                  key={logo.alt}
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:-translate-y-0.5"
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="problem" className="relative overflow-hidden py-20 md:py-24 scroll-mt-20 bg-[linear-gradient(180deg,hsl(210_55%_8%)_0%,hsl(210_50%_11%)_100%)]">
+
           <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(22_85%_60%/0.10)] blur-3xl pointer-events-none" />
           <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.08)] blur-3xl pointer-events-none" />
 
