@@ -100,7 +100,7 @@ const MothersDayCohort = () => {
     "Complimentary Starter Website — $2,500 Value",
     "Setup Reduced from $1,500 to $1,000",
     "Cohort Pricing Will Not Be Repeated",
-    "Applications Close May 31, 2026",
+    "Extended Through May 31, 2026 — or Until 5 Spots Are Filled",
   ];
 
   const standardValues = [
