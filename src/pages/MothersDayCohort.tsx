@@ -37,6 +37,21 @@ import {
 import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 import leakyBucket from "@/assets/leaky-bucket.webp";
+import bizSalon from "@/assets/cohort/biz-salon.jpg";
+import bizMedspa from "@/assets/cohort/biz-medspa.jpg";
+import bizCleaning from "@/assets/cohort/biz-cleaning.jpg";
+import bizTutoring from "@/assets/cohort/biz-tutoring.jpg";
+import bizPetcare from "@/assets/cohort/biz-petcare.jpg";
+import bizFitness from "@/assets/cohort/biz-fitness.jpg";
+
+const BUILT_FOR = [
+  { img: bizSalon, label: "Hair & Beauty Salons" },
+  { img: bizMedspa, label: "Med Spas & Esthetics" },
+  { img: bizCleaning, label: "Home Cleaning Services" },
+  { img: bizTutoring, label: "Tutoring & Learning Studios" },
+  { img: bizPetcare, label: "Pet Care & Grooming" },
+  { img: bizFitness, label: "Boutique Fitness & Yoga" },
+];
 
 const PAGE_PATH = "/mothers-day-mom-owned-business-cohort/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
