@@ -400,7 +400,7 @@ const MothersDayCohort = () => {
                   We set up the website and the system behind it — CRM, lead capture, follow-up automation, reviews, AI Livechat, and AI-powered response tools — so more opportunities turn into real conversations, booked appointments, and paying clients.
                 </p>
 
-                <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:justify-center">
                   <PrimaryCTA href={ctaUrl} />
                   <Button asChild size="lg" variant="outline" className="border-border">
                     <a href="#value">{SECONDARY_CTA_LABEL}</a>
