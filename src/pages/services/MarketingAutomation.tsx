@@ -835,10 +835,19 @@ const MarketingAutomation = () => {
               description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
             />
             <PricingGrid plans={pricingPlans} columns={3} />
-            <p className="text-center mt-8 text-muted-foreground animate-fade-up">
-              <Shield className="w-5 h-5 inline-block mr-2 text-primary" />
-              30 Days Money Back Guarantee
-            </p>
+            <div className="mt-12 max-w-3xl mx-auto animate-fade-up">
+              <div className="relative rounded-2xl p-8 md:p-10 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, hsl(var(--primary) / 0.15), hsl(var(--ghl-card-border) / 0.15))', border: '2px solid hsl(var(--primary))', boxShadow: '0 0 40px hsl(var(--primary) / 0.35)' }}>
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4">
+                  <Shield className="w-9 h-9 text-primary" />
+                </div>
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                  30 Days Money Back Guarantee
+                </h3>
+                <p className="text-lg md:text-xl text-foreground leading-relaxed">
+                  If you're <strong>not satisfied for any reason</strong> within the first 30 days, we'll refund your money — <strong>no questions asked.</strong>
+                </p>
+              </div>
+            </div>
             <div className="text-center mt-6"><a href="#page-top" className="inline-flex items-center gap-1 text-xs text-accent hover:text-primary transition-colors"><ArrowUp className="w-3 h-3" />Go To Top</a></div>
           </div>
         </section>
