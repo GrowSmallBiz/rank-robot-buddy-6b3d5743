@@ -387,7 +387,7 @@ const MothersDayCohort = () => {
                   5 Spots
                 </div>
                 <div className="absolute -bottom-3 -right-3 z-20 px-4 py-2 rounded-full bg-[hsl(40_70%_96%)] text-[hsl(210_55%_12%)] text-sm font-semibold shadow-xl border border-[hsl(30_60%_80%)]">
-                  Applications Close May 31, 2026
+                  Extended Through May 31, 2026
                 </div>
                 <div className="relative rounded-3xl overflow-hidden border border-[hsl(30_60%_80%/0.35)] shadow-2xl bg-card">
                   <img
