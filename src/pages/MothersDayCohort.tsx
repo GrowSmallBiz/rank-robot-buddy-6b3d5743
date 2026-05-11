@@ -1174,9 +1174,9 @@ const MothersDayCohort = () => {
                     <div className="text-center my-6">
                       <span className="text-5xl md:text-6xl font-display font-bold text-primary">{essPrice}</span>
                       <span className="text-muted-foreground text-lg">{period}</span>
-                      <p className="mt-3 text-sm text-muted-foreground">
+                      <p className="mt-3 text-lg md:text-xl text-muted-foreground">
                         Normally{" "}
-                        <span className="line-through text-red-500 font-semibold">{essRegular}</span>
+                        <span className="line-through text-red-500 font-bold text-xl md:text-2xl">{essRegular}</span>
                       </p>
                     </div>
                     <p className="font-semibold text-foreground mb-3">Includes:</p>
@@ -1212,9 +1212,9 @@ const MothersDayCohort = () => {
                     <div className="text-center my-6">
                       <span className="text-5xl md:text-6xl font-display font-bold text-primary">{growPrice}</span>
                       <span className="text-muted-foreground text-lg">{period}</span>
-                      <p className="mt-3 text-sm text-muted-foreground">
+                      <p className="mt-3 text-lg md:text-xl text-muted-foreground">
                         Normally{" "}
-                        <span className="line-through text-red-500 font-semibold">{growRegular}</span>
+                        <span className="line-through text-red-500 font-bold text-xl md:text-2xl">{growRegular}</span>
                       </p>
                     </div>
                     <p className="font-semibold text-foreground mb-3">Everything in Essentials, plus:</p>
