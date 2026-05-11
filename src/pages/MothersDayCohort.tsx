@@ -74,7 +74,7 @@ const PrimaryCTA = ({
   <Button
     asChild
     size="lg"
-    className={`bg-gradient-to-r from-[hsl(22_92%_70%)] via-[hsl(22_88%_58%)] to-[hsl(22_85%_50%)] text-white hover:brightness-110 shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.55)] border-0 transition-all ${
+    className={`bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold hover:brightness-110 shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] border-0 transition-all ${
       full ? "w-full" : ""
     } ${className}`}
   >
