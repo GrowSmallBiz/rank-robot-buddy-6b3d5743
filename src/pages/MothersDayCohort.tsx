@@ -514,7 +514,7 @@ const MothersDayCohort = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 {
-                  title: "Essentials Cohort Value",
+                  title: "Essentials Plan — Total Savings",
                   total: "$4,200",
                   rows: [
                     "$2,500 Starter Website included",
@@ -523,7 +523,7 @@ const MothersDayCohort = () => {
                   ],
                 },
                 {
-                  title: "Growth Cohort Value",
+                  title: "Growth Plan — Total Savings",
                   total: "$5,400",
                   rows: [
                     "$2,500 Starter Website included",
