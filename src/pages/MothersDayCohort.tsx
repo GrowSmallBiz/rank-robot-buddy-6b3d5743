@@ -810,7 +810,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-10 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                See the System Behind Your Website
+                The Lead Automation System Behind Your Free Small Business Website
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
                 Your website is only the front door. GrowSmallBiz also sets up the connected system behind it — lead capture, CRM, follow-up automation, reviews, and AI-powered response tools.
