@@ -1157,6 +1157,9 @@ const MothersDayCohort = () => {
             <p className="text-center text-sm text-muted-foreground mt-8 max-w-xl mx-auto">
               Not on the list? If you run a mom-owned local service business, this is still for you.
             </p>
+            <p className="text-center text-sm italic text-foreground/80 mt-2 max-w-xl mx-auto">
+              Mom of humans, pets, or plants? You qualify. 🌿🐾
+            </p>
           </div>
         </section>
 
