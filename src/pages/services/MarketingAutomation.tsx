@@ -199,8 +199,8 @@ const pricingPlans = [
   },
   {
     name: "Growth",
-    monthlyPrice: 397,
-    annualPrice: 3970,
+    monthlyPrice: 497,
+    annualPrice: 4970,
     description: "Scale Conversations with AI",
     features: [
       "Everything in Essentials +",
