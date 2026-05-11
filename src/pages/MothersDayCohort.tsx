@@ -884,7 +884,7 @@ const MothersDayCohort = () => {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center mb-10">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                What Makes This Different
+                What Makes This Mother’s Day Offer Different for Small Businesses
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6 mb-10 items-stretch">
