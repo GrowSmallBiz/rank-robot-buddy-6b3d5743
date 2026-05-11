@@ -254,7 +254,7 @@ const MothersDayCohort = () => {
     },
     {
       q: "What happens after this campaign closes?",
-      a: "Once the 5 spots are filled, this exact Mother’s Day cohort offer will not be repeated. Standard GrowSmallBiz pricing will apply afterward.",
+      a: "Once the 5 spots are filled, this Mother’s Day Appreciation Offer will not be repeated. Standard GrowSmallBiz pricing will apply afterward.",
     },
   ];
 
