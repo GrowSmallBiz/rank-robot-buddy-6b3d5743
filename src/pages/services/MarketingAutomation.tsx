@@ -583,6 +583,16 @@ const MarketingAutomation = () => {
     }
   }, [hash]);
 
+  // Inject the reputation hub review widget script once
+  useEffect(() => {
+    const src = "https://reputationhub.site/reputation/assets/review-widget.js";
+    if (document.querySelector(`script[src="${src}"]`)) return;
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <>
       <Head>
