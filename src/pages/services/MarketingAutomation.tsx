@@ -177,7 +177,8 @@ const faqs: FAQItem[] = [
 const pricingPlans = [
   {
     name: "Essentials",
-    price: "$297",
+    monthlyPrice: 297,
+    annualPrice: 2970,
     description: "Perfect for Solopreneurs",
     features: [
       "Smart CRM & Unified Inbox",
@@ -191,13 +192,15 @@ const pricingPlans = [
       "Reputation Management",
     ],
     cta: "Get Started",
-    ctaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
+    monthlyCtaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
+    annualCtaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
     note: "No contracts. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
   {
     name: "Growth",
-    price: "$397",
+    monthlyPrice: 397,
+    annualPrice: 3970,
     description: "Scale Conversations with AI",
     features: [
       "Everything in Essentials +",
@@ -206,26 +209,10 @@ const pricingPlans = [
       "Conversational AI across SMS & Social Media Channels",
     ],
     cta: "Get Started",
-    ctaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
+    monthlyCtaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
+    annualCtaLink: "https://lp.growsmallbiz.io/check-out-page---growth",
     popular: true,
     note: "No contracts. Cancel anytime.",
-    cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
-  },
-  {
-    name: "Unlimited",
-    price: "$497",
-    description: "Maximum Power, Zero Limits",
-    features: [
-      "Everything in Essentials +",
-      "UNLIMITED Image AI",
-      "UNLIMITED Content AI",
-      "UNLIMITED Voice AI",
-      "UNLIMITED Conversation AI",
-      "ZERO AI OVERAGE FEES",
-    ],
-    cta: "Go Unlimited",
-    ctaLink: "https://lp.growsmallbiz.io/check-out-page---unlimited",
-    note: "Zero AI overage fees. Cancel anytime.",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
 ];
@@ -496,6 +483,83 @@ const testimonials = [
     rating: 5,
   },
 ];
+
+type PricingPlanData = {
+  name: string;
+  monthlyPrice: number;
+  annualPrice: number;
+  description: string;
+  features: string[];
+  cta: string;
+  monthlyCtaLink: string;
+  annualCtaLink: string;
+  popular?: boolean;
+  note: string;
+  cardStyle: string;
+};
+
+const PricingSection = ({ plans }: { plans: PricingPlanData[] }) => {
+  const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
+
+  const mapped = plans.map((p) => {
+    const isAnnual = billing === "annual";
+    return {
+      name: p.name,
+      price: isAnnual ? `$${p.annualPrice.toLocaleString()}` : `$${p.monthlyPrice}`,
+      period: isAnnual ? "/year" : "/month",
+      description: p.description,
+      features: p.features,
+      cta: p.cta,
+      ctaLink: isAnnual ? p.annualCtaLink : p.monthlyCtaLink,
+      popular: p.popular,
+      note: isAnnual ? "2 months free. Cancel anytime." : p.note,
+      cardStyle: p.cardStyle,
+    };
+  });
+
+  return (
+    <>
+      <div className="flex justify-center mb-10">
+        <div
+          role="radiogroup"
+          aria-label="Billing cycle"
+          className="inline-flex items-center gap-1 p-1 rounded-full border border-border bg-card/60 backdrop-blur"
+        >
+          {(["monthly", "annual"] as const).map((option) => {
+            const selected = billing === option;
+            return (
+              <button
+                key={option}
+                type="button"
+                role="radio"
+                aria-checked={selected}
+                onClick={() => setBilling(option)}
+                className={`relative px-5 md:px-6 py-2 rounded-full text-sm font-semibold transition-colors ${
+                  selected
+                    ? "bg-primary text-primary-foreground shadow"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {option === "monthly" ? "Monthly" : "Annual"}
+                {option === "annual" && (
+                  <span
+                    className={`ml-2 text-[10px] uppercase tracking-wide font-bold ${
+                      selected ? "text-primary-foreground/90" : "text-primary"
+                    }`}
+                  >
+                    2 mo free
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+      <PricingGrid plans={mapped} columns={2} className="max-w-4xl mx-auto" />
+    </>
+  );
+};
+
 
 const MarketingAutomation = () => {
   const { hash } = useLocation();
@@ -834,7 +898,7 @@ const MarketingAutomation = () => {
               titleHighlight="Keep Them For Life"
               description="Everything You Need To Capture, Nurture, and Close Leads — All In One Place"
             />
-            <PricingGrid plans={pricingPlans} columns={3} />
+            <PricingSection plans={pricingPlans} />
             <div className="mt-12 max-w-3xl mx-auto animate-fade-up">
               <div className="relative rounded-2xl p-8 md:p-10 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, hsl(var(--primary) / 0.15), hsl(var(--ghl-card-border) / 0.15))', border: '2px solid hsl(var(--primary))', boxShadow: '0 0 40px hsl(var(--primary) / 0.35)' }}>
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-4">
