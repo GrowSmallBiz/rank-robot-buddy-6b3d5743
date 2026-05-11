@@ -1321,6 +1321,19 @@ const MothersDayCohort = () => {
                 Core integrations are configured based on what your business actually uses.
               </p>
             </div>
+
+            {/* 30-day money back guarantee */}
+            <div className="max-w-5xl mx-auto mt-10 rounded-2xl border-2 border-primary/60 bg-card p-8 md:p-10 text-center shadow-[0_0_40px_hsl(22_85%_55%/0.25)]">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/15 border border-primary/40 mb-5">
+                <ShieldCheck className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="font-display font-black uppercase tracking-tight text-3xl md:text-5xl mb-4 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                30 Days Money Back Guarantee
+              </h3>
+              <p className="text-base md:text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
+                If you're <strong>not satisfied for any reason</strong> within the first 30 days, we'll refund your money — <strong>no questions asked.</strong>
+              </p>
+            </div>
           </div>
         </section>
 
