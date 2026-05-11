@@ -271,7 +271,7 @@ const MothersDayCohort = () => {
   const offerJsonLd = {
     "@context": "https://schema.org",
     "@type": "Offer",
-    name: "Mother’s Day Mom-Owned Business Cohort",
+    name: "Mother’s Day Appreciation Offer",
     description: PAGE_DESC,
     url: PAGE_URL,
     availability: "https://schema.org/LimitedAvailability",
