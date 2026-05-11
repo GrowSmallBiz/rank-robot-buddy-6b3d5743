@@ -716,19 +716,20 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
               {automationCards.map((c) => (
                 <div
                   key={c.title}
-                  className="rounded-xl border-2 border-[hsl(188_78%_41%_/_0.35)] bg-[hsl(188_60%_14%)] p-5 flex items-start gap-3 hover:border-[hsl(188_78%_55%_/_0.7)] hover:shadow-[0_0_25px_hsl(188_78%_41%_/_0.25)] transition-all"
+                  className="rounded-2xl border-2 border-[hsl(188_78%_50%_/_0.5)] bg-[hsl(210_45%_18%)] p-6 hover:border-[hsl(188_78%_60%_/_0.8)] hover:shadow-[0_0_30px_hsl(188_78%_45%_/_0.35)] transition-all"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-[hsl(188_78%_41%_/_0.2)] border border-[hsl(188_78%_55%_/_0.4)] flex items-center justify-center shrink-0">
-                    <c.icon className="w-5 h-5 text-[hsl(188_78%_65%)]" />
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-[hsl(188_78%_41%_/_0.2)] border border-[hsl(188_78%_55%_/_0.4)] flex items-center justify-center shrink-0">
+                      <c.icon className="w-5 h-5 text-[hsl(188_78%_70%)]" />
+                    </div>
+                    <h3 className="text-lg font-bold text-foreground leading-tight">{c.title}</h3>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-foreground mb-1">{c.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{c.desc}</p>
-                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">{c.desc}</p>
+                  <p className="text-sm italic text-primary leading-relaxed">"{c.quote}"</p>
                 </div>
               ))}
             </div>
