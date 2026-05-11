@@ -1178,6 +1178,11 @@ const MothersDayCohort = () => {
                         Normally{" "}
                         <span className="line-through text-red-500 font-bold text-xl md:text-2xl">{essRegular}</span>
                       </p>
+                      {isAnnual && (
+                        <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-400 text-sm font-bold">
+                          💰 Save $1,000/year
+                        </div>
+                      )}
                     </div>
                     <p className="font-semibold text-foreground mb-3">Includes:</p>
                     <ul className="space-y-3 mb-8 flex-1">
@@ -1216,6 +1221,11 @@ const MothersDayCohort = () => {
                         Normally{" "}
                         <span className="line-through text-red-500 font-bold text-xl md:text-2xl">{growRegular}</span>
                       </p>
+                      {isAnnual && (
+                        <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-400 text-sm font-bold">
+                          💰 Save $2,000/year
+                        </div>
+                      )}
                     </div>
                     <p className="font-semibold text-foreground mb-3">Everything in Essentials, plus:</p>
                     <ul className="space-y-3 mb-8 flex-1">
