@@ -194,7 +194,7 @@ const pricingPlans = [
     cta: "Get Started",
     monthlyCtaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
     annualCtaLink: "https://lp.growsmallbiz.io/check-out-page---essential",
-    note: "No contracts. Cancel anytime.",
+    note: "",
     cardStyle: "linear-gradient(180deg, hsl(210 45% 13%) 0%, hsl(210 50% 9%) 100%)",
   },
   {
