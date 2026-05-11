@@ -352,7 +352,9 @@ const MothersDayCohort = () => {
             <div className="max-w-5xl mx-auto text-center mb-10 md:mb-14">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/15 border border-primary/50 text-primary text-xs md:text-sm font-bold uppercase tracking-wider mb-5 shadow-[0_0_20px_hsl(22_85%_60%/0.2)]">
                 <Sparkles className="w-3.5 h-3.5" />
-                Complimentary Starter Website For Mom-Owned Businesses
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                  Complimentary Starter Website For Mom-Owned Businesses
+                </span>
               </div>
 
               <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight mb-5">
@@ -369,11 +371,11 @@ const MothersDayCohort = () => {
               {/* Prominent deadline */}
               <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary/15 border-2 border-primary text-primary font-bold text-sm md:text-base shadow-[0_0_30px_hsl(22_85%_60%/0.25)]">
                 <Clock className="w-4 h-4 md:w-5 md:h-5" />
-                <span className="uppercase tracking-wide">
+                <span className="uppercase tracking-wide bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                   Extended Through May 31, 2026
                 </span>
                 <span className="hidden sm:inline opacity-70">·</span>
-                <span>or Until 5 Spots Are Filled</span>
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">or Until 5 Spots Are Filled</span>
               </div>
             </div>
 
@@ -451,7 +453,7 @@ const MothersDayCohort = () => {
 
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-12">
-              <p className="text-primary font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4">
+              <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 The Problem
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5">
@@ -584,7 +586,7 @@ const MothersDayCohort = () => {
 
                 {/* The Fix — Minimum AI Package */}
                 <div className="order-2 min-w-0">
-                  <p className="text-primary font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3">
+                  <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                     What You Get
                   </p>
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4">
@@ -676,7 +678,7 @@ const MothersDayCohort = () => {
           <div className="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-[hsl(350_70%_72%/0.08)] blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-3xl relative z-10">
             <div className="text-center mb-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
@@ -710,7 +712,7 @@ const MothersDayCohort = () => {
 
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
             <div className="text-center mb-10 max-w-3xl mx-auto">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[hsl(22_85%_42%)] mb-3">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Mother’s Day Appreciation Offer · Limited to 5 Businesses
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
@@ -749,7 +751,7 @@ const MothersDayCohort = () => {
                 <div className="absolute -top-2 right-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg">
                   COHORT PRICING
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(22_85%_42%)] mb-4">
+                <p className="text-xs font-semibold uppercase tracking-wider mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                   Mother’s Day Appreciation Offer
                 </p>
                 <ul className="divide-y divide-[hsl(30_45%_85%)]">
@@ -799,7 +801,7 @@ const MothersDayCohort = () => {
                       : "border-[hsl(30_55%_82%)] bg-white/80"
                   }`}
                 >
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(22_85%_42%)] mb-2">
+                  <p className="text-xs font-semibold uppercase tracking-wider mb-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                     {c.title}
                   </p>
                   <p className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-1">
@@ -1097,7 +1099,7 @@ const MothersDayCohort = () => {
 
             {/* Automation flow */}
             <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-5 text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-5 text-center bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Automation Flow
               </p>
               <div className="flex flex-wrap items-center justify-center gap-3">
