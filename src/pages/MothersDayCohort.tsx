@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import {
   ArrowRight,
+  ArrowDown,
   CheckCircle2,
   XCircle,
   Globe,
