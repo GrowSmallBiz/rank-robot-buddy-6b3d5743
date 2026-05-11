@@ -307,12 +307,18 @@ const MothersDayCohort = () => {
       {/* Minimal campaign top bar */}
       <header className="sticky top-0 z-40 bg-background/85 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 h-14 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-5 h-5 text-primary" />
-            <span className="font-display font-semibold text-foreground text-sm md:text-base">
+          <Link to="/" className="flex items-center gap-2 min-w-0">
+            <img
+              src={growsmallbizLogo}
+              alt="GrowSmallBiz logo"
+              width={36}
+              height={36}
+              className="h-9 w-auto shrink-0"
+            />
+            <span className="font-display font-semibold text-foreground text-sm md:text-base truncate">
               GrowSmallBiz · Mother’s Day Appreciation Offer
             </span>
-          </div>
+          </Link>
           <nav
             aria-label="On this page"
             className="hidden lg:flex items-center gap-5 text-sm text-muted-foreground"
