@@ -547,7 +547,7 @@ const MothersDayCohort = () => {
                   <p className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-1">
                     {c.total}{" "}
                     <span className="text-base md:text-lg font-medium text-[hsl(210_25%_40%)]">
-                      total promotional value over 12 months
+                      in total savings over 12 months
                     </span>
                   </p>
                   <ul className="mt-4 space-y-2">
