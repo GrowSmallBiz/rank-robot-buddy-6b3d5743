@@ -1281,10 +1281,10 @@ const MothersDayCohort = () => {
             {/* Setup includes / integrations */}
             <div className="max-w-5xl mx-auto mt-10 rounded-2xl border border-border bg-card p-7 md:p-8">
               <h3 className="font-display font-bold text-xl md:text-2xl mb-2">
-                What’s in the $1,000 Client Growth System Setup
+                What the Onboarding Setup Includes
               </h3>
               <p className="text-sm text-muted-foreground mb-5">
-                The $1,000 setup is for system configuration — not for website design. Your Starter Website is included separately.
+                The one-time setup fee covers system configuration — not website design. Your Starter Website is included separately.
               </p>
               <ul className="grid md:grid-cols-2 gap-3 mb-7">
                 {setupIncludes.map((s) => (
