@@ -3,6 +3,7 @@ import { buildCtaUrl } from "@/lib/utm";
 
 interface ConsultationFormSectionProps {
   iframeHeight?: string;
+  iframeBorderRadius?: string;
   /** Optional UTM campaign label for this form */
   utmCampaign?: string;
   /** Optional UTM medium override */
@@ -15,6 +16,10 @@ interface ConsultationFormSectionProps {
   descriptionOverride?: string;
   /** Optional override for the form iframe URL */
   formUrlOverride?: string;
+  /** Optional override for the form name (data-form-name & title) */
+  formNameOverride?: string;
+  /** Optional override for the data-height attribute */
+  dataHeightOverride?: string;
   /** Optional className for the section background */
   sectionClassName?: string;
   /** Optional Tailwind gradient classes for the H2 */
