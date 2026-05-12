@@ -42,6 +42,7 @@ Canonical: https://growsmallbiz.io/
 - Google Local Services Ads: https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/
 - SEO Agency: https://growsmallbiz.io/services/seo-agency/
 - AEO: https://growsmallbiz.io/services/seo-agency/aeo/
+- AI Search Optimization: https://growsmallbiz.io/services/seo-agency/ai-search-optimization/
 - Authority Building: https://growsmallbiz.io/services/seo-agency/authority-building/
 - GEO: https://growsmallbiz.io/services/seo-agency/geo/
 - Link Building: https://growsmallbiz.io/services/seo-agency/link-building/
