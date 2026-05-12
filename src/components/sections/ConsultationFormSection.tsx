@@ -19,6 +19,12 @@ interface ConsultationFormSectionProps {
   sectionClassName?: string;
   /** Optional Tailwind gradient classes for the H2 */
   headingGradientClass?: string;
+  /** Optional override for the card border color (CSS color) */
+  cardBorderColor?: string;
+  /** Optional override for the card outer glow shadow class */
+  cardGlowClass?: string;
+  /** When true, render hero-style radial glow overlays on the section background */
+  heroOverlay?: boolean;
 }
 
 const BASE_FORM_URL = "https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV";
@@ -33,6 +39,9 @@ export const ConsultationFormSection = ({
   formUrlOverride,
   sectionClassName,
   headingGradientClass,
+  cardBorderColor = "#17a2b8",
+  cardGlowClass = "shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]",
+  heroOverlay = false,
 }: ConsultationFormSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -76,10 +85,17 @@ export const ConsultationFormSection = ({
 
   return (
     <section ref={sectionRef} className={`py-16 md:py-24 relative overflow-hidden ${sectionClassName ?? "bg-[#2d465c]"}`}>
+      {heroOverlay && (
+        <>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,210,190,0.16),transparent_55%)] pointer-events-none" />
+          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(18_85%_65%/0.18)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.14)] blur-3xl pointer-events-none" />
+        </>
+      )}
       <div className="container mx-auto px-4 relative z-10">
         <div
-          className="max-w-3xl mx-auto relative rounded-2xl shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]"
-          style={{ border: '2px solid #17a2b8' }}
+          className={`max-w-3xl mx-auto relative rounded-2xl ${cardGlowClass}`}
+          style={{ border: `2px solid ${cardBorderColor}` }}
         >
           <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
             <div className="text-center mb-8">
