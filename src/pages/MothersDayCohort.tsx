@@ -78,7 +78,7 @@ const sectionNav = [
   { id: "automation", label: "What's Automated" },
   { id: "system", label: "The System" },
   { id: "different", label: "Why Different" },
-  { id: "apply", label: "Apply" },
+  { id: "apply", label: "Claim" },
 ];
 
 const PrimaryCTA = ({
@@ -1485,7 +1485,7 @@ const MothersDayCohort = () => {
               5 Spots. This Offer Will Not Be Repeated.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, apply for one of the 5 spots in this Mother’s Day Appreciation Offer.
+              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, claim one of the 5 spots in this Mother’s Day Appreciation Offer.
             </p>
 
             <div className="rounded-2xl border border-[hsl(22_85%_60%/0.25)] bg-card/70 backdrop-blur p-6 md:p-8 mb-8 text-left shadow-2xl">
@@ -1520,7 +1520,7 @@ const MothersDayCohort = () => {
       <ConsultationFormSection
         headingOverride="Claim Your Spot - Free Website & Lead System"
         eyebrowOverride="No Credit Card Required"
-        descriptionOverride="Apply now for your complimentary Starter Website and discounted Client Growth System setup. Only 5 spots available — we will review your application and follow up within 24 hours."
+        descriptionOverride="Claim your spot for a complimentary Starter Website and discounted Client Growth System setup. Only 5 spots available — we will review your submission and follow up within 24 hours."
         formUrlOverride="https://api.leadconnectorhq.com/widget/form/hFTESAZxuks4QvC0lcrp"
         iframeHeight="1301px"
         utmCampaign="mothers-day-cohort"
