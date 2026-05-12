@@ -36,12 +36,15 @@ const BASE_FORM_URL = "https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwc
 
 export const ConsultationFormSection = ({
   iframeHeight = "1006px",
+  iframeBorderRadius = "0px",
   utmCampaign = "consultation-form",
   utmMedium,
   headingOverride,
   eyebrowOverride,
   descriptionOverride,
   formUrlOverride,
+  formNameOverride,
+  dataHeightOverride,
   sectionClassName,
   headingGradientClass,
   cardBorderColor = "#17a2b8",
@@ -87,6 +90,8 @@ export const ConsultationFormSection = ({
     ? iframeSrc.split("/").pop() ?? ""
     : "8qUn6xE0v2Jwcs63q0uV";
   const inlineId = `inline-${formId}`;
+  const formName = formNameOverride ?? "GrowSmallBiz Website Contact";
+  const dataHeight = dataHeightOverride ?? "1126";
 
   return (
     <section ref={sectionRef} className={`py-16 md:py-24 relative overflow-hidden ${sectionClassName ?? "bg-[#2d465c]"}`}>
