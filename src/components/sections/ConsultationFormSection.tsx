@@ -31,6 +31,8 @@ export const ConsultationFormSection = ({
   eyebrowOverride,
   descriptionOverride,
   formUrlOverride,
+  sectionClassName,
+  headingGradientClass,
 }: ConsultationFormSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
