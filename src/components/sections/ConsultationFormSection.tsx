@@ -121,7 +121,7 @@ export const ConsultationFormSection = ({
             {isVisible ? (
               <iframe
                 src={iframeSrc}
-                style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: "0px" }}
+                style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: iframeBorderRadius }}
                 id={inlineId}
                 loading="lazy"
                 data-layout="{'id':'INLINE'}"
@@ -131,11 +131,11 @@ export const ConsultationFormSection = ({
                 data-activation-value=""
                 data-deactivation-type="neverDeactivate"
                 data-deactivation-value=""
-                data-form-name="GrowSmallBiz Website Contact"
-                data-height="1126"
+                data-form-name={formName}
+                data-height={dataHeight}
                 data-layout-iframe-id={inlineId}
                 data-form-id={formId}
-                title="GrowSmallBiz Website Contact"
+                title={formName}
               />
             ) : (
               <div style={{ width: "100%", height: iframeHeight }} />
