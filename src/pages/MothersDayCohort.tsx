@@ -1517,6 +1517,11 @@ const MothersDayCohort = () => {
 
       </main>
 
+      <ConsultationFormSection
+        headingOverride="Apply for Your Free Website & Lead System"
+        utmCampaign="mothers-day-cohort"
+      />
+
       {/* MINIMAL FOOTER */}
       <footer className="bg-card border-t border-border" role="contentinfo">
         <div className="container mx-auto px-4 py-12">
