@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
+import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import {
   Accordion,
   AccordionContent,
@@ -1515,6 +1516,11 @@ const MothersDayCohort = () => {
         </section>
 
       </main>
+
+      <ConsultationFormSection
+        headingOverride="Apply for Your Free Website & Lead System"
+        utmCampaign="mothers-day-cohort"
+      />
 
       {/* MINIMAL FOOTER */}
       <footer className="bg-card border-t border-border" role="contentinfo">
