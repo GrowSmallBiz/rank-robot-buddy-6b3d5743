@@ -78,7 +78,7 @@ const sectionNav = [
   { id: "automation", label: "What's Automated" },
   { id: "system", label: "The System" },
   { id: "different", label: "Why Different" },
-  { id: "apply", label: "Apply" },
+  { id: "apply", label: "Claim" },
 ];
 
 const PrimaryCTA = ({
