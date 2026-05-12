@@ -15,6 +15,10 @@ interface ConsultationFormSectionProps {
   descriptionOverride?: string;
   /** Optional override for the form iframe URL */
   formUrlOverride?: string;
+  /** Optional className for the section background */
+  sectionClassName?: string;
+  /** Optional Tailwind gradient classes for the H2 */
+  headingGradientClass?: string;
 }
 
 const BASE_FORM_URL = "https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV";
