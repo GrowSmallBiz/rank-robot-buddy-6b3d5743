@@ -39,6 +39,9 @@ export const ConsultationFormSection = ({
   formUrlOverride,
   sectionClassName,
   headingGradientClass,
+  cardBorderColor = "#17a2b8",
+  cardGlowClass = "shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]",
+  heroOverlay = false,
 }: ConsultationFormSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
