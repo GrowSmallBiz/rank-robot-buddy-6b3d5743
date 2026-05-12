@@ -1485,7 +1485,7 @@ const MothersDayCohort = () => {
               5 Spots. This Offer Will Not Be Repeated.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, apply for one of the 5 spots in this Mother’s Day Appreciation Offer.
+              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, claim one of the 5 spots in this Mother’s Day Appreciation Offer.
             </p>
 
             <div className="rounded-2xl border border-[hsl(22_85%_60%/0.25)] bg-card/70 backdrop-blur p-6 md:p-8 mb-8 text-left shadow-2xl">
