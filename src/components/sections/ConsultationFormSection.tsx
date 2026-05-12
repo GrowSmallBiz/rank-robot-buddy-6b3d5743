@@ -3,6 +3,7 @@ import { buildCtaUrl } from "@/lib/utm";
 
 interface ConsultationFormSectionProps {
   iframeHeight?: string;
+  iframeBorderRadius?: string;
   /** Optional UTM campaign label for this form */
   utmCampaign?: string;
   /** Optional UTM medium override */
@@ -15,6 +16,10 @@ interface ConsultationFormSectionProps {
   descriptionOverride?: string;
   /** Optional override for the form iframe URL */
   formUrlOverride?: string;
+  /** Optional override for the form name (data-form-name & title) */
+  formNameOverride?: string;
+  /** Optional override for the data-height attribute */
+  dataHeightOverride?: string;
   /** Optional className for the section background */
   sectionClassName?: string;
   /** Optional Tailwind gradient classes for the H2 */
@@ -31,12 +36,15 @@ const BASE_FORM_URL = "https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwc
 
 export const ConsultationFormSection = ({
   iframeHeight = "1006px",
+  iframeBorderRadius = "0px",
   utmCampaign = "consultation-form",
   utmMedium,
   headingOverride,
   eyebrowOverride,
   descriptionOverride,
   formUrlOverride,
+  formNameOverride,
+  dataHeightOverride,
   sectionClassName,
   headingGradientClass,
   cardBorderColor = "#17a2b8",
@@ -82,6 +90,8 @@ export const ConsultationFormSection = ({
     ? iframeSrc.split("/").pop() ?? ""
     : "8qUn6xE0v2Jwcs63q0uV";
   const inlineId = `inline-${formId}`;
+  const formName = formNameOverride ?? "GrowSmallBiz Website Contact";
+  const dataHeight = dataHeightOverride ?? "1126";
 
   return (
     <section ref={sectionRef} className={`py-16 md:py-24 relative overflow-hidden ${sectionClassName ?? "bg-[#2d465c]"}`}>
@@ -111,7 +121,7 @@ export const ConsultationFormSection = ({
             {isVisible ? (
               <iframe
                 src={iframeSrc}
-                style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: "0px" }}
+                style={{ width: "100%", height: iframeHeight, border: "none", borderRadius: iframeBorderRadius }}
                 id={inlineId}
                 loading="lazy"
                 data-layout="{'id':'INLINE'}"
@@ -121,11 +131,11 @@ export const ConsultationFormSection = ({
                 data-activation-value=""
                 data-deactivation-type="neverDeactivate"
                 data-deactivation-value=""
-                data-form-name="GrowSmallBiz Website Contact"
-                data-height="1126"
+                data-form-name={formName}
+                data-height={dataHeight}
                 data-layout-iframe-id={inlineId}
                 data-form-id={formId}
-                title="GrowSmallBiz Website Contact"
+                title={formName}
               />
             ) : (
               <div style={{ width: "100%", height: iframeHeight }} />
