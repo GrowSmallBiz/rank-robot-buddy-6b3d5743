@@ -1524,6 +1524,8 @@ const MothersDayCohort = () => {
         formUrlOverride="https://api.leadconnectorhq.com/widget/form/hFTESAZxuks4QvC0lcrp"
         iframeHeight="1301px"
         utmCampaign="mothers-day-cohort"
+        sectionClassName="bg-[linear-gradient(135deg,hsl(210_55%_8%)_0%,hsl(210_50%_12%)_55%,hsl(20_45%_18%)_100%)]"
+        headingGradientClass="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)]"
       />
 
       {/* MINIMAL FOOTER */}
