@@ -19,6 +19,12 @@ interface ConsultationFormSectionProps {
   sectionClassName?: string;
   /** Optional Tailwind gradient classes for the H2 */
   headingGradientClass?: string;
+  /** Optional override for the card border color (CSS color) */
+  cardBorderColor?: string;
+  /** Optional override for the card outer glow shadow class */
+  cardGlowClass?: string;
+  /** When true, render hero-style radial glow overlays on the section background */
+  heroOverlay?: boolean;
 }
 
 const BASE_FORM_URL = "https://api.leadconnectorhq.com/widget/form/8qUn6xE0v2Jwcs63q0uV";
