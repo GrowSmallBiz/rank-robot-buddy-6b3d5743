@@ -75,9 +75,9 @@ const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
 
 const sectionNav = [
   { id: "value", label: "The Offer" },
-  
   { id: "built-for", label: "Built For" },
   { id: "problem", label: "Lead Leaks" },
+  { id: "leaky-bucket", label: "The Fix" },
   { id: "system", label: "The System" },
   { id: "different", label: "Why Different" },
   { id: "roi", label: "ROI" },
