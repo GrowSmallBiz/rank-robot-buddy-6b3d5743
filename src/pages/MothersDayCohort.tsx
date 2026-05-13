@@ -1756,7 +1756,21 @@ const MothersDayCohort = () => {
                 <div className="flex items-center gap-2.5 mb-2">
                   <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[hsl(22_90%_92%)] to-[hsl(350_75%_94%)] flex items-center justify-center flex-shrink-0">
                     <Icon className="w-4 h-4 text-[hsl(22_85%_45%)]" />
-                  </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <p className="text-sm text-[hsl(210_25%_35%)] mb-3">
+              Ready to add SEO, paid ads, or AI lead generation to your plan?
+            </p>
+            <a
+              href="https://calendly.com/growsmallbiz/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] hover:shadow-[0_14px_40px_-8px_hsl(22_85%_55%/0.6)] hover:-translate-y-0.5 transition-all duration-300 text-sm"
+            >
+              Schedule Strategy Call <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
                   <h3 className="text-base font-bold text-[hsl(210_55%_15%)] leading-tight">
                     {title}
                   </h3>
