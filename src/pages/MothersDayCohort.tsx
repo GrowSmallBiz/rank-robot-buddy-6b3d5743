@@ -1655,7 +1655,7 @@ const MothersDayCohort = () => {
               </span>
             </h2>
             <p className="text-base text-[hsl(210_30%_30%)] leading-relaxed">
-              Once your client growth system is live, we help you dominate your local market with the full suite of AI SEO, local search, paid advertising, and conversational AI services.
+              Your Mother's Day offer covers the foundation — website, marketing automation, and AI receptionist. When you're ready to dominate your local market, we also handle the full suite of AI SEO, local search, and paid advertising.
             </p>
           </div>
 
