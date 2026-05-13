@@ -1372,8 +1372,8 @@ const MothersDayCohort = () => {
                 </div>
                 <ul className="space-y-2 text-sm">
                   {[
-                    "Essentials Plan: $1,970/year",
-                    "Growth Plan: $2,970/year",
+                    "Essentials Plan: $970/year",
+                    "Growth Plan: $1,970/year",
                     "Includes 2 months free at the Mother’s Day rate",
                     "Includes Mother’s Day spa bonus",
                   ].map((b) => (
