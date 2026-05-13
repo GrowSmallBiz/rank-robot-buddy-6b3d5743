@@ -51,45 +51,19 @@ export const ConsultationFormSection = ({
   cardGlowClass = "shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]",
   heroOverlay = false,
 }: ConsultationFormSectionProps) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const sectionRef = useRef<HTMLDivElement>(null);
 
+  // Inject GHL form embed script once when an override form is used.
   useEffect(() => {
-    const el = sectionRef.current;
-    if (!el) {
-      setIsVisible(true);
-      return;
-    }
-    // If the section is already in or near the viewport on mount, show immediately.
-    const rect = el.getBoundingClientRect();
-    const vh = window.innerHeight || document.documentElement.clientHeight;
-    if (rect.top < vh + 400 && rect.bottom > -400) {
-      setIsVisible(true);
-      return;
-    }
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "400px" }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  // Inject form embed script when visible and using an override form
-  useEffect(() => {
-    if (!isVisible || !formUrlOverride) return;
+    if (!formUrlOverride) return;
     const scriptSrc = "https://link.msgsndr.com/js/form_embed.js";
     if (document.querySelector(`script[src="${scriptSrc}"]`)) return;
     const s = document.createElement("script");
     s.src = scriptSrc;
     s.async = true;
     document.body.appendChild(s);
-  }, [isVisible, formUrlOverride]);
+  }, [formUrlOverride]);
 
   const iframeSrc = useMemo(
     () => formUrlOverride ?? buildCtaUrl(BASE_FORM_URL, utmCampaign, utmMedium),
