@@ -67,18 +67,18 @@ const PAGE_TITLE = "Complimentary Starter Website for Mom-Owned Small Businesses
 const PAGE_DESC =
   "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special Mother’s Day pricing that will not be repeated.";
 
-const PRIMARY_CTA_LABEL = "Claim Your Spot — First Come, First Served";
+const PRIMARY_CTA_LABEL = "Apply for One of the 5 Spots →";
 const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
 
 const sectionNav = [
   { id: "value", label: "The Offer" },
-  { id: "presence", label: "Time Back" },
-  { id: "roi", label: "ROI" },
-  { id: "pricing", label: "Pricing" },
-  { id: "automation", label: "What's Automated" },
+  { id: "extended", label: "Why Extended" },
+  { id: "built-for", label: "Built For" },
+  { id: "problem", label: "Lead Leaks" },
   { id: "system", label: "The System" },
   { id: "different", label: "Why Different" },
-  { id: "apply", label: "Claim" },
+  { id: "roi", label: "ROI" },
+  { id: "apply", label: "Apply" },
 ];
 
 const PrimaryCTA = ({
