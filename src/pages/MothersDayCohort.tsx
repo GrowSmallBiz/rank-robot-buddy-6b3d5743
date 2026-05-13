@@ -1010,22 +1010,27 @@ const MothersDayCohort = () => {
                 Mother’s Day Appreciation Offer · Limited to 5 Businesses
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                A Real Mother’s Day Business Growth Deal
+                A Real Business Growth Deal for Mom-Owned Businesses
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
-                This is not standard GrowSmallBiz pricing. This is a limited Mother’s Day offer created for 5 mom-owned local service businesses.
+                This is not standard GrowSmallBiz pricing. This is a limited annual-only appreciation offer created for 5 mom-owned local service businesses.
               </p>
             </div>
 
-            {/* Comparison table */}
-            <div className="grid md:grid-cols-2 gap-6 mb-10">
+            {/* Comparison cards */}
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
               {/* Standard */}
               <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/70 backdrop-blur-sm p-7 md:p-8">
                 <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(210_25%_45%)] mb-4">
-                  Standard Value
+                  Standard GrowSmallBiz Value
                 </p>
                 <ul className="divide-y divide-[hsl(30_45%_85%)]">
-                  {standardValues.map((row) => (
+                  {[
+                    { label: "Starter Website", value: "$2,500" },
+                    { label: "Client Growth System Setup", value: "$1,500" },
+                    { label: "Essentials Plan", value: "$297/month" },
+                    { label: "Growth Plan", value: "$497/month" },
+                  ].map((row) => (
                     <li
                       key={row.label}
                       className="flex items-center justify-between py-3 text-[hsl(210_30%_25%)]"
@@ -1039,23 +1044,28 @@ const MothersDayCohort = () => {
                 </ul>
               </div>
 
-              {/* Cohort */}
+              {/* Mother's Day Appreciation Offer */}
               <div className="relative rounded-3xl border-2 border-[hsl(22_85%_60%)] bg-white shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.4)] p-7 md:p-8 overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
                 <div className="absolute -top-2 right-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg">
-                  MOTHER’S DAY PRICING
+                  ANNUAL ENROLLMENT ONLY
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-wider mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                <p className="text-xs font-semibold uppercase tracking-wider mb-4 mt-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                   Mother’s Day Appreciation Offer
                 </p>
                 <ul className="divide-y divide-[hsl(30_45%_85%)]">
-                  {cohortValues.map((row) => (
+                  {[
+                    { label: "Starter Website", value: "Complimentary" },
+                    { label: "Client Growth System Setup", value: "$1,000" },
+                    { label: "Essentials Special", value: "$97/month equivalent" },
+                    { label: "Growth Special", value: "$197/month equivalent" },
+                  ].map((row) => (
                     <li
                       key={row.label}
-                      className="flex items-center justify-between py-3 text-[hsl(210_55%_14%)]"
+                      className="flex items-center justify-between gap-3 py-3 text-[hsl(210_55%_14%)]"
                     >
                       <span className="text-sm md:text-base font-medium">{row.label}</span>
-                      <span className="text-sm md:text-base font-bold text-[hsl(22_85%_42%)]">
+                      <span className="text-sm md:text-base font-bold text-[hsl(22_85%_42%)] text-right">
                         {row.value}
                       </span>
                     </li>
@@ -1064,67 +1074,141 @@ const MothersDayCohort = () => {
               </div>
             </div>
 
-            {/* Value callouts */}
-            <div className="grid md:grid-cols-2 gap-6">
+            {/* Plan / value cards */}
+            <div className="grid md:grid-cols-2 gap-6 items-stretch">
               {[
                 {
-                  title: "Essentials Plan — Total Savings",
-                  total: "$4,200",
-                  rows: [
-                    "$2,500 Starter Website included",
-                    "$500 setup savings",
-                    "$1,200 subscription savings over 12 months",
-                  ],
-                },
-                {
-                  title: "Growth Plan — Total Savings",
-                  total: "$5,400",
+                  title: "Essentials Special",
+                  price: "$97/month equivalent",
+                  payment: "Paid annually: $1,164/year",
+                  emotional: "Less than one nice dinner out — but working for your business all month.",
+                  firstYear: "First-year investment with setup: $2,164",
+                  valueTotal: "$5,400",
+                  valueLabel: "in total promotional value",
                   rows: [
                     "$2,500 Starter Website included",
                     "$500 setup savings",
                     "$2,400 subscription savings over 12 months",
                   ],
+                  bestFor:
+                    "Best for mom-owned businesses that want a professional website, CRM, reviews, unified inbox, and follow-up foundation in place.",
+                  highlight: false,
+                },
+                {
+                  title: "Growth Special",
+                  price: "$197/month equivalent",
+                  payment: "Paid annually: $2,364/year",
+                  emotional:
+                    "About the cost of one spa visit — but designed to help your business respond, follow up, and book appointments all month.",
+                  firstYear: "First-year investment with setup: $3,364",
+                  valueTotal: "$6,600",
+                  valueLabel: "in total promotional value",
+                  rows: [
+                    "$2,500 Starter Website included",
+                    "$500 setup savings",
+                    "$3,600 subscription savings over 12 months",
+                  ],
+                  bestFor:
+                    "Best for mom-owned businesses that want AI-powered response, missed-call text-back, AI Livechat, faster lead handling, and after-hours support.",
                   highlight: true,
                 },
               ].map((c) => (
                 <div
                   key={c.title}
-                  className={`relative rounded-3xl p-7 md:p-8 border ${
+                  className={`relative rounded-3xl p-7 md:p-9 border flex flex-col ${
                     c.highlight
-                      ? "border-[hsl(22_85%_60%)] bg-[linear-gradient(135deg,hsl(22_85%_60%/0.08),hsl(350_75%_80%/0.08))] shadow-[0_20px_60px_-30px_hsl(20_60%_40%/0.4)]"
-                      : "border-[hsl(30_55%_82%)] bg-white/80"
+                      ? "border-2 border-[hsl(22_85%_60%)] bg-[linear-gradient(135deg,hsl(22_85%_60%/0.10),hsl(350_75%_80%/0.10))] shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.45)] md:scale-[1.02]"
+                      : "border-[hsl(30_55%_82%)] bg-white/85"
                   }`}
                 >
-                  <p className="text-xs font-semibold uppercase tracking-wider mb-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                  {c.highlight && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg whitespace-nowrap">
+                      MOST POPULAR
+                    </div>
+                  )}
+                  <h3 className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)] mb-3">
                     {c.title}
-                  </p>
-                  <p className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-1">
-                    {c.total}{" "}
-                    <span className="text-base md:text-lg font-medium text-[hsl(210_25%_40%)]">
-                      in total savings over 12 months
+                  </h3>
+                  <div className="mb-2">
+                    <span className="text-4xl md:text-5xl font-display font-bold text-[hsl(22_85%_42%)]">
+                      {c.price.split(" ")[0]}
                     </span>
+                    <span className="text-sm md:text-base text-[hsl(210_25%_40%)] ml-1">
+                      /month equivalent
+                    </span>
+                  </div>
+                  <p className="text-sm md:text-base font-medium text-[hsl(210_30%_25%)]">
+                    {c.payment}
                   </p>
-                  <ul className="mt-4 space-y-2">
-                    {c.rows.map((r) => (
-                      <li
-                        key={r}
-                        className="flex items-start gap-2 text-sm text-[hsl(210_30%_25%)]"
-                      >
-                        <CheckCircle2 className="w-4 h-4 mt-0.5 text-[hsl(22_85%_50%)] shrink-0" />
-                        <span>{r}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="mt-3 text-sm md:text-base italic text-[hsl(210_30%_30%)] leading-relaxed">
+                    {c.emotional}
+                  </p>
+                  <div className="mt-4 inline-flex self-start px-3 py-1.5 rounded-full bg-[hsl(210_55%_14%)] text-white text-xs md:text-sm font-semibold">
+                    {c.firstYear}
+                  </div>
+
+                  <div className="mt-5 rounded-2xl bg-white/80 border border-[hsl(30_55%_85%)] p-4">
+                    <p className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)]">
+                      {c.valueTotal}{" "}
+                      <span className="text-sm md:text-base font-medium text-[hsl(210_25%_40%)]">
+                        {c.valueLabel}
+                      </span>
+                    </p>
+                    <ul className="mt-3 space-y-2">
+                      {c.rows.map((r) => (
+                        <li
+                          key={r}
+                          className="flex items-start gap-2 text-sm text-[hsl(210_30%_25%)]"
+                        >
+                          <CheckCircle2 className="w-4 h-4 mt-0.5 text-[hsl(22_85%_50%)] shrink-0" />
+                          <span>{r}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <p className="mt-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
+                    <span className="font-semibold text-[hsl(210_55%_14%)]">Best for: </span>
+                    {c.bestFor}
+                  </p>
                 </div>
               ))}
             </div>
 
-            <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic">
-              This Mother’s Day pricing is only available to the 5 selected mom-owned businesses in this Mother’s Day Appreciation Offer and will not be repeated after this campaign closes.
+            {/* Perspective callout */}
+            <div className="mt-10 rounded-3xl border border-[hsl(30_55%_82%)] bg-white/80 p-7 md:p-9">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Put the Cost in Perspective
+              </p>
+              <div className="space-y-3 text-base md:text-lg leading-relaxed text-[hsl(210_30%_25%)]">
+                <p>
+                  <span className="font-semibold text-[hsl(210_55%_14%)]">Essentials Special</span> is $97/month equivalent — less than one nice dinner out.
+                </p>
+                <p>
+                  <span className="font-semibold text-[hsl(210_55%_14%)]">Growth Special</span> is $197/month equivalent — about the cost of one spa visit.
+                </p>
+                <p>
+                  But instead of being gone in a few hours, this system works for your business all month: capturing leads, organizing conversations, following up, requesting reviews, and helping customers take the next step.
+                </p>
+              </div>
+            </div>
+
+            {/* Clarifications */}
+            <div className="mt-6 grid md:grid-cols-2 gap-4">
+              <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
+                The complimentary Starter Website is included only when you enroll in either the Essentials Special or Growth Special annual plan. It is not available as a standalone website-only offer.
+              </p>
+              <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
+                The $1,000 Client Growth System Setup covers the configuration of the system behind your website — CRM, lead capture, pipeline setup, email and SMS follow-up, phone and calendar integration, review request automation, and hands-on launch support.
+              </p>
+            </div>
+
+            <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic max-w-3xl mx-auto">
+              This Mother’s Day Appreciation Offer is limited to 5 selected mom-owned businesses and will not be repeated after this campaign closes.
             </p>
 
             <div className="flex justify-center mt-8">
-              <PrimaryCTA href={ctaUrl} />
+              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
             </div>
           </div>
         </section>
