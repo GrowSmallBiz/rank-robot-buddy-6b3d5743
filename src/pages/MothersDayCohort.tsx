@@ -380,18 +380,18 @@ const MothersDayCohort = () => {
               </div>
             </div>
 
-            {/* H1 */}
+            {/* H1 + H2 */}
             <div className="max-w-5xl mx-auto text-center mb-5">
-              <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight text-foreground">
-                Get a{" "}
+              <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight">
                 <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  Complimentary Starter Website
-                </span>
-                {" "}&mdash; and a System That Helps You{" "}
-                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  Win Clients Without Living on Your Phone
+                  Get a Complimentary Starter Small Business Website
                 </span>
               </h1>
+              <h2 className="mt-3 text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-display font-semibold leading-[1.2] tracking-tight">
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                  a System That Helps You Win Clients Without Living on Your Phone
+                </span>
+              </h2>
             </div>
 
             {/* Subhead */}
