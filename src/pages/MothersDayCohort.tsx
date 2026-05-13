@@ -137,8 +137,8 @@ const MothersDayCohort = () => {
   const cohortValues = [
     { label: "Starter Website", value: "Complimentary" },
     { label: "Client Growth System Setup", value: "$1,000" },
-    { label: "Essentials Plan", value: "$197/month" },
-    { label: "Growth Plan", value: "$297/month" },
+    { label: "Essentials Plan", value: "$97/month" },
+    { label: "Growth Plan", value: "$197/month" },
   ];
 
   const presenceCards = [
@@ -274,7 +274,7 @@ const MothersDayCohort = () => {
     },
     {
       q: "Can I choose annual?",
-      a: "Yes. Annual options are available and include the Mother’s Day spa bonus. Essentials Plan: $1,970/year. Growth Plan: $2,970/year. That’s 2 months free at the Mother’s Day rate.",
+      a: "Yes. Annual options are available and include the Mother’s Day spa bonus. Essentials Plan: $970/year. Growth Plan: $1,970/year. That’s 2 months free at the Mother’s Day rate.",
     },
     {
       q: "What happens after this campaign closes?",
@@ -1255,9 +1255,9 @@ const MothersDayCohort = () => {
 
             {(() => {
               const isAnnual = billing === "annual";
-              const essPrice = isAnnual ? "$1,970" : "$197";
+              const essPrice = isAnnual ? "$970" : "$97";
               const essRegular = isAnnual ? "$2,970/year" : "$297/month";
-              const growPrice = isAnnual ? "$2,970" : "$297";
+              const growPrice = isAnnual ? "$1,970" : "$197";
               const growRegular = isAnnual ? "$4,970/year" : "$497/month";
               const period = isAnnual ? "/year" : "/month";
               return (
@@ -1353,8 +1353,8 @@ const MothersDayCohort = () => {
                     "Complimentary Starter Website — $2,500 value",
                     "Client Growth System Setup — $1,000 (normally $1,500)",
                     "12-month growth program",
-                    "Essentials Plan: $197/month",
-                    "Growth Plan: $297/month",
+                    "Essentials Plan: $97/month",
+                    "Growth Plan: $197/month",
                     "Subscription begins when your website goes live",
                   ].map((b) => (
                     <li key={b} className="flex items-start gap-2">
@@ -1372,8 +1372,8 @@ const MothersDayCohort = () => {
                 </div>
                 <ul className="space-y-2 text-sm">
                   {[
-                    "Essentials Plan: $1,970/year",
-                    "Growth Plan: $2,970/year",
+                    "Essentials Plan: $970/year",
+                    "Growth Plan: $1,970/year",
                     "Includes 2 months free at the Mother’s Day rate",
                     "Includes Mother’s Day spa bonus",
                   ].map((b) => (
@@ -1497,8 +1497,8 @@ const MothersDayCohort = () => {
                 {[
                   "Complimentary Starter Website — $2,500 value",
                   "Client Growth System Setup reduced to $1,000",
-                  "Essentials Plan: $197/month",
-                  "Growth Plan: $297/month",
+                  "Essentials Plan: $97/month",
+                  "Growth Plan: $197/month",
                   "Extended through May 31, 2026 — or until 5 spots are filled",
                   "Spots are filled first-paid after the discovery call",
                 ].map((s) => (
