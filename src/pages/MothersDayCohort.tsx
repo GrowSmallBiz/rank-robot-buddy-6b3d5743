@@ -764,33 +764,7 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        {/* 2. WHY WE EXTENDED THIS OFFER */}
-        <section id="extended" className="py-16 md:py-20 relative overflow-hidden bg-background-alt scroll-mt-20">
-          <div className="absolute -top-16 -left-16 w-72 h-72 rounded-full bg-[hsl(22_85%_60%/0.08)] blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-[hsl(350_70%_72%/0.08)] blur-3xl pointer-events-none" />
-          <div className="container mx-auto px-4 max-w-3xl relative z-10">
-            <div className="text-center mb-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Extended Through May 31, 2026 — or Until 5 Spots Are Filled
-              </p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why We Extended This Mother’s Day Offer
-              </h2>
-            </div>
-            <div className="rounded-3xl border border-border bg-card/70 backdrop-blur p-7 md:p-10 space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
-              <p className="text-foreground font-medium">
-                Mother’s Day is one day. Running a business while being a mom is every day.
-              </p>
-              <p>
-                Many mom-owned businesses are built in the margins — between client appointments, school schedules, family commitments, late-night planning, and constant follow-up.
-              </p>
-              <p className="text-foreground">That is why this offer stays open through May 31.</p>
-              <p>
-                This is a limited appreciation offer for 5 mom-owned local service businesses that want a professional website, faster follow-up, better lead tracking, and more time back in their day.
-              </p>
-            </div>
-          </div>
-        </section>
+        {/* 2. WHY WE EXTENDED — replaced by inline callout in pricing section */}
 
         {/* 3. MADE FOR MOM-OWNED SERVICE BUSINESSES LIKE YOURS */}
         <section id="built-for" className="py-16 md:py-20 relative scroll-mt-20">
