@@ -38,6 +38,7 @@ import {
   Mail,
   Zap,
   PhoneMissed,
+  Target,
 } from "lucide-react";
 import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
