@@ -1637,6 +1637,7 @@ const MothersDayCohort = () => {
         cardGlowClass="shadow-[0_0_30px_hsl(22_85%_60%/0.35),0_0_60px_hsl(22_85%_60%/0.2)]"
         heroOverlay
       />
+      </div>
 
       {/* OUR OTHER SERVICES */}
       <section
