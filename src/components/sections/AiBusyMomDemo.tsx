@@ -1,15 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { Bot, CheckCircle2, Calendar, Phone, PhoneCall, MessageSquare } from "lucide-react";
+import { Bot, CheckCircle2, Calendar, Phone, PhoneCall } from "lucide-react";
 import therapistImage from "@/assets/cohort/therapist-in-session.webp";
 
 type Msg = { from: "user" | "ai"; text: string };
-
-const VOICE_SCRIPT: Msg[] = [
-  { from: "user", text: "Hi, do you have anything Saturday?" },
-  { from: "ai", text: "Yes — I have 1pm and 3pm open. May I get your name and number?" },
-  { from: "user", text: "Maya — 925-555-0118" },
-  { from: "ai", text: "Booked for 1pm Saturday. Confirmation text sent." },
-];
 
 const CHAT_SCRIPT: Msg[] = [
   { from: "user", text: "Do you offer prenatal massage?" },
