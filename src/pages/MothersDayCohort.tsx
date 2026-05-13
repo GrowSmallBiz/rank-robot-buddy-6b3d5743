@@ -96,19 +96,22 @@ const PrimaryCTA = ({
   className?: string;
   full?: boolean;
   label?: string;
-}) => (
-  <Button
-    asChild
-    size="lg"
-    className={`bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold hover:brightness-110 shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] border-0 transition-all ${
-      full ? "w-full" : ""
-    } ${className}`}
-  >
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      {label} <ArrowRight className="w-5 h-5 ml-2" />
-    </a>
-  </Button>
-);
+}) => {
+  const isAnchor = href.startsWith("#");
+  return (
+    <Button
+      asChild
+      size="lg"
+      className={`bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold hover:brightness-110 shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] border-0 transition-all ${
+        full ? "w-full" : ""
+      } ${className}`}
+    >
+      <a href={href} {...(!isAnchor ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+        {label} <ArrowRight className="w-5 h-5 ml-2" />
+      </a>
+    </Button>
+  );
+};
 
 const MothersDayCohort = () => {
   const { buildUrl } = useUtm();
