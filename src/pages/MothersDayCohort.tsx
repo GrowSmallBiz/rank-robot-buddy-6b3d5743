@@ -109,6 +109,7 @@ const MothersDayCohort = () => {
   const { buildUrl } = useUtm();
   const ctaUrl = buildUrl(APPLICATION_FORM_URL, "mothers-day-cohort");
   const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
+  const [demoOpen, setDemoOpen] = useState(false);
 
   // Inject Google Reviews widget script client-side to avoid SSR/hydration mismatch
   useEffect(() => {
