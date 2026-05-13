@@ -53,7 +53,6 @@ import chamberDanville from "@/assets/cohort/chamber-danville.webp";
 import chamberSanRamon from "@/assets/cohort/chamber-sanramon.webp";
 import chamberWalnutCreek from "@/assets/cohort/chamber-walnutcreek.webp";
 import chamberConcord from "@/assets/cohort/chamber-concord.png";
-
 const BUILT_FOR = [
   { img: bizSalon, label: "Hair & Beauty Salons" },
   { img: bizMedspa, label: "Med Spas & Esthetics" },
