@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Bot, CheckCircle2, Calendar, Phone, PhoneCall } from "lucide-react";
+import { Bot, CheckCircle2, Calendar, Phone, PhoneCall, Smartphone } from "lucide-react";
 import therapistImage from "@/assets/cohort/therapist-in-session.webp";
 
 type Msg = { from: "user" | "ai"; text: string };
