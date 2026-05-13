@@ -1227,33 +1227,53 @@ const MothersDayCohort = () => {
         {/* 11. ROI / PAYS FOR ITSELF */}
         <section
           id="roi"
-          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
+          className="py-24 md:py-28 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
         >
-          <div className="container mx-auto px-4 max-w-6xl relative z-10">
-            <div className="text-center mb-12 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why the Website + Automation System Can Pay for Itself Quickly
+          <div className="absolute -top-24 right-10 w-80 h-80 rounded-full bg-[hsl(22_85%_70%/0.18)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 left-10 w-80 h-80 rounded-full bg-[hsl(350_70%_80%/0.18)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 max-w-7xl relative z-10">
+            <div className="text-center mb-14 max-w-3xl mx-auto">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] mb-4 text-[hsl(210_55%_14%)]">
+                Return on Investment
+              </p>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-5 leading-tight text-[hsl(210_55%_14%)]">
+                One or Two Extra Clients Can{" "}
+                <span className="bg-gradient-to-r from-[hsl(22_90%_58%)] via-[hsl(350_75%_62%)] to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
+                  Change the Math
+                </span>
               </h2>
-              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg">
-                For many local service businesses, one or two additional booked clients per month can cover the monthly subscription.
+              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
+                For many local service businesses, one additional booked client can offset a meaningful part of the annual investment. The goal is simple: capture more opportunities, respond faster, and reduce the number of leads that quietly disappear.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-12">
               {roiCards.map((c, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm p-7 text-center shadow-[0_20px_60px_-30px_hsl(20_60%_40%/0.25)]"
+                  className="rounded-2xl border border-[hsl(30_55%_82%)] bg-white p-8 md:p-9 shadow-[0_20px_60px_-25px_hsl(20_60%_40%/0.25)] flex flex-col"
                 >
-                  <div className="w-14 h-14 rounded-2xl bg-[hsl(22_85%_60%/0.12)] border border-[hsl(22_85%_60%/0.3)] flex items-center justify-center mx-auto mb-4">
+                  <div className="w-14 h-14 rounded-2xl bg-[hsl(22_85%_60%/0.12)] border border-[hsl(22_85%_60%/0.3)] flex items-center justify-center mb-5">
                     <c.icon className="w-7 h-7 text-[hsl(22_85%_45%)]" />
                   </div>
-                  <p className="text-[hsl(210_30%_22%)] text-base leading-relaxed">{c.body}</p>
+                  <h3 className="text-xl md:text-2xl font-display font-bold text-[hsl(210_55%_14%)] mb-3 leading-snug">
+                    {c.title}
+                  </h3>
+                  <p className="text-[hsl(210_30%_28%)] text-base leading-relaxed">{c.body}</p>
                 </div>
               ))}
             </div>
 
-            <p className="text-xs text-[hsl(210_25%_40%)] text-center mt-8 max-w-3xl mx-auto">
+            <div className="max-w-4xl mx-auto rounded-3xl p-8 md:p-10 bg-[linear-gradient(135deg,hsl(210_55%_14%)_0%,hsl(210_50%_18%)_100%)] border border-[hsl(22_85%_60%/0.4)] shadow-[0_30px_80px_-30px_hsl(210_60%_10%/0.5)] text-center">
+              <h3 className="text-2xl md:text-3xl font-display font-bold mb-4 leading-snug bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_60%)] bg-clip-text text-transparent">
+                The real value is not just more leads. It is fewer lost opportunities.
+              </h3>
+              <p className="text-base md:text-lg text-[hsl(0_0%_92%)] leading-relaxed max-w-3xl mx-auto">
+                When your website, CRM, AI Livechat, missed-call text-back, follow-up, reviews, and booking tools work together, your business has a better chance of turning interest into action.
+              </p>
+            </div>
+
+            <p className="text-sm text-[hsl(210_25%_35%)] text-center mt-8 max-w-3xl mx-auto leading-relaxed">
               Results vary by business, offer, pricing, responsiveness, and market demand. GrowSmallBiz does not guarantee a specific number of clients or revenue.
             </p>
           </div>
