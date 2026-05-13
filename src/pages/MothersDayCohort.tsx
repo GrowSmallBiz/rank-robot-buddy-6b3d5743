@@ -1364,17 +1364,27 @@ const MothersDayCohort = () => {
         {/* 15. FAQ */}
         <section
           id="faq"
-          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
+          className="py-24 md:py-28 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
         >
           <div className="absolute -top-20 left-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
           <div className="absolute -bottom-20 right-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.22)] blur-3xl pointer-events-none" />
-          <div className="container mx-auto px-4 max-w-3xl relative z-10">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-display font-bold bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Frequently Asked Questions
+          <div className="container mx-auto px-4 max-w-5xl relative z-10">
+            <div className="text-center mb-10 max-w-3xl mx-auto">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] mb-4 text-[hsl(210_55%_14%)]">
+                FAQ
+              </p>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 leading-tight text-[hsl(210_55%_14%)]">
+                Questions Before{" "}
+                <span className="bg-gradient-to-r from-[hsl(22_90%_58%)] via-[hsl(350_75%_62%)] to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
+                  You Apply
+                </span>
               </h2>
+              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
+                A few important details about the offer, the website, the setup, and what happens after you apply.
+              </p>
             </div>
-            <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/80 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] p-4 md:p-6">
+
+            <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] p-4 md:p-8">
               <Accordion type="single" collapsible className="w-full">
                 {faqs.map((f, i) => (
                   <AccordionItem
@@ -1382,15 +1392,25 @@ const MothersDayCohort = () => {
                     value={`item-${i}`}
                     className="border-[hsl(30_45%_82%)] last:border-b-0"
                   >
-                    <AccordionTrigger className="text-left font-display font-semibold text-base md:text-lg text-[hsl(210_55%_14%)] hover:text-[hsl(22_85%_45%)] py-5 px-2">
+                    <AccordionTrigger className="text-left font-display font-semibold text-base md:text-lg text-[hsl(210_55%_14%)] hover:text-[hsl(22_85%_45%)] py-6 px-2 md:px-3">
                       {f.q}
                     </AccordionTrigger>
-                    <AccordionContent className="text-[hsl(210_30%_28%)] px-2 pb-5 leading-relaxed">
+                    <AccordionContent className="text-[hsl(210_30%_28%)] px-2 md:px-3 pb-6 leading-relaxed text-base">
                       {f.a}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>
+            </div>
+
+            <div className="max-w-3xl mx-auto mt-10 rounded-2xl border border-[hsl(22_85%_60%/0.35)] bg-white/75 backdrop-blur-sm p-6 md:p-7 text-center">
+              <p className="text-[hsl(210_30%_22%)] text-base md:text-lg leading-relaxed">
+                <strong className="text-[hsl(210_55%_14%)]">Still have questions?</strong> Apply first. If your business looks like a fit, we’ll review the details with you before you commit.
+              </p>
+            </div>
+
+            <div className="mt-8 flex justify-center">
+              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
             </div>
           </div>
         </section>
