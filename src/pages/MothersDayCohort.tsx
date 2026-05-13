@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
 import { AiLivechatDemo } from "@/components/sections/AiLivechatDemo";
+import { baseContactCTA } from "@/config/contactCTA";
 import {
   Accordion,
   AccordionContent,
@@ -1241,9 +1242,46 @@ const MothersDayCohort = () => {
               <p>
                 The goal is simple: help local business owners capture more opportunities, respond faster, save time, and turn more inquiries into booked clients.
               </p>
-              <p className="text-foreground">
-                Founded by Subrata Guha after 30+ years in enterprise technology and marketing systems, GrowSmallBiz brings practical growth infrastructure to small businesses without enterprise complexity.
-              </p>
+            </div>
+
+            {/* Founder card — photo left, bio right (no CTA buttons) */}
+            <div className="mt-8">
+              <div
+                className="relative rounded-2xl p-8 md:p-10 transition-all duration-300 group"
+                style={{
+                  backgroundColor: 'hsl(215 40% 13%)',
+                  border: '1px solid hsla(25, 90%, 55%, 0.5)',
+                  boxShadow: '0 0 50px -10px hsla(25, 90%, 55%, 0.25)',
+                }}
+              >
+                <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                  <div className="flex-shrink-0 text-center">
+                    <div className="relative inline-block">
+                      <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary via-orange-400 to-primary" />
+                      <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden">
+                        <img
+                          src={baseContactCTA.image}
+                          alt={baseContactCTA.name}
+                          width={160}
+                          height={160}
+                          loading="lazy"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    <h4 className="mt-5 text-lg font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
+                    <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
+                  </div>
+                  <div className="flex-1 text-center md:text-left">
+                    <h3 className="text-2xl md:text-3xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
+                      Meet the Founder
+                    </h3>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                      Founded by Subrata Guha after 30+ years in enterprise technology and marketing systems, GrowSmallBiz brings practical growth infrastructure to small businesses without enterprise complexity.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
