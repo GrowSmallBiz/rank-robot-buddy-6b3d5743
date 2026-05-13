@@ -1339,9 +1339,9 @@ const MothersDayCohort = () => {
 
             {(() => {
               const isAnnual = billing === "annual";
-              const essPrice = isAnnual ? "$970" : "$97";
+              const essPrice = isAnnual ? "$1,164" : "$97";
               const essRegular = isAnnual ? "$2,970/year" : "$297/month";
-              const growPrice = isAnnual ? "$1,970" : "$197";
+              const growPrice = isAnnual ? "$2,364" : "$197";
               const growRegular = isAnnual ? "$4,970/year" : "$497/month";
               const period = isAnnual ? "/year" : "/month";
               return (
@@ -1357,19 +1357,56 @@ const MothersDayCohort = () => {
                         For mom-owned businesses that want the website, CRM, reviews, unified inbox, and follow-up foundation in place.
                       </p>
                     </div>
-                    <div className="text-center my-6">
+                    <div className="text-center my-4">
                       <span className="text-5xl md:text-6xl font-display font-bold text-primary">{essPrice}</span>
                       <span className="text-muted-foreground text-lg">{period}</span>
-                      <p className="mt-3 text-lg md:text-xl text-muted-foreground">
+                      {isAnnual && (
+                        <p className="mt-1 text-base text-muted-foreground">Only $97/month equivalent</p>
+                      )}
+                      <p className="mt-2 text-lg md:text-xl text-muted-foreground">
                         Normally{" "}
                         <span className="line-through text-red-500 font-bold text-xl md:text-2xl">{essRegular}</span>
                       </p>
-                      <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-400 text-sm font-bold">
-                        💰 Save {isAnnual ? "$1,000" : "$1,200"}/year
+                      <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-400 text-sm font-bold">
+                        💰 Save {isAnnual ? "$1,806" : "$2,400"}/year
                       </div>
                     </div>
-                    <p className="font-semibold text-foreground mb-3">Includes:</p>
-                    <ul className="space-y-3 mb-8 flex-1">
+
+                    {/* Callout block */}
+                    <div className="relative rounded-xl overflow-hidden my-4 border border-[hsl(25_50%_45%/0.3)]">
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[hsl(22_85%_55%)] via-[hsl(350_70%_60%)] to-[hsl(30_75%_55%)]" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(25_60%_55%/0.12)] via-[hsl(350_45%_50%/0.08)] to-[hsl(30_50%_45%/0.10)]" />
+                      <div className="relative z-10 p-5">
+                        <p className="text-[11px] uppercase tracking-[0.15em] font-bold text-[hsl(22_80%_65%)] mb-2">
+                          Put That in Perspective
+                        </p>
+                        <h4 className="text-xl md:text-2xl font-display font-bold text-foreground mb-2 leading-tight">
+                          Less Than One Nice Dinner Out
+                        </h4>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          For less than one dinner out each month, your business gets a website, CRM, unified inbox, review automation, and follow-up foundation working behind the scenes.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* First-year investment */}
+                    <div className="rounded-lg border border-border bg-background-alt/60 p-4 my-2">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground font-semibold mb-1">First-Year Investment</p>
+                      <p className="text-base text-foreground">
+                        <span className="font-bold">$1,000</span> setup + <span className="font-bold">$1,164</span> plan = <span className="font-bold text-primary">$2,164</span>
+                      </p>
+                    </div>
+
+                    {/* Promotional value */}
+                    <div className="rounded-lg border border-primary/30 bg-primary/5 p-4 my-2">
+                      <p className="text-xs uppercase tracking-wide text-primary font-semibold mb-1">Total Promotional Value</p>
+                      <p className="text-base text-foreground">
+                        You save <span className="font-bold text-primary">$5,400</span> in your first year compared to standard pricing
+                      </p>
+                    </div>
+
+                    <p className="font-semibold text-foreground mb-3 mt-4">Includes:</p>
+                    <ul className="space-y-3 mb-6 flex-1">
                       {essentialsIncludes.map((b) => (
                         <li key={b} className="flex items-start gap-3 text-sm">
                           <CheckCircle2 className="w-5 h-5 mt-0.5 text-primary shrink-0" />
@@ -1398,19 +1435,56 @@ const MothersDayCohort = () => {
                         For mom-owned businesses that want faster response, AI-powered lead handling, and more automation.
                       </p>
                     </div>
-                    <div className="text-center my-6">
+                    <div className="text-center my-4">
                       <span className="text-5xl md:text-6xl font-display font-bold text-primary">{growPrice}</span>
                       <span className="text-muted-foreground text-lg">{period}</span>
-                      <p className="mt-3 text-lg md:text-xl text-muted-foreground">
+                      {isAnnual && (
+                        <p className="mt-1 text-base text-muted-foreground">Only $197/month equivalent</p>
+                      )}
+                      <p className="mt-2 text-lg md:text-xl text-muted-foreground">
                         Normally{" "}
                         <span className="line-through text-red-500 font-bold text-xl md:text-2xl">{growRegular}</span>
                       </p>
-                      <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-400 text-sm font-bold">
-                        💰 Save {isAnnual ? "$2,000" : "$2,400"}/year
+                      <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-400 text-sm font-bold">
+                        💰 Save {isAnnual ? "$2,606" : "$3,600"}/year
                       </div>
                     </div>
-                    <p className="font-semibold text-foreground mb-3">Everything in Essentials, plus:</p>
-                    <ul className="space-y-3 mb-8 flex-1">
+
+                    {/* Callout block */}
+                    <div className="relative rounded-xl overflow-hidden my-4 border border-[hsl(25_50%_45%/0.3)]">
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[hsl(22_85%_55%)] via-[hsl(350_70%_60%)] to-[hsl(30_75%_55%)]" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(25_60%_55%/0.12)] via-[hsl(350_45%_50%/0.08)] to-[hsl(30_50%_45%/0.10)]" />
+                      <div className="relative z-10 p-5">
+                        <p className="text-[11px] uppercase tracking-[0.15em] font-bold text-[hsl(22_80%_65%)] mb-2">
+                          Put That in Perspective
+                        </p>
+                        <h4 className="text-xl md:text-2xl font-display font-bold text-foreground mb-2 leading-tight">
+                          About the Cost of One Spa Visit
+                        </h4>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          For about the cost of one spa visit each month, your business gets AI-powered response tools that help answer questions, capture leads, follow up, and book appointments — even when you are with a client, with your family, or finally taking a break.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* First-year investment */}
+                    <div className="rounded-lg border border-border bg-background-alt/60 p-4 my-2">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground font-semibold mb-1">First-Year Investment</p>
+                      <p className="text-base text-foreground">
+                        <span className="font-bold">$1,000</span> setup + <span className="font-bold">$2,364</span> plan = <span className="font-bold text-primary">$3,364</span>
+                      </p>
+                    </div>
+
+                    {/* Promotional value */}
+                    <div className="rounded-lg border border-primary/30 bg-primary/5 p-4 my-2">
+                      <p className="text-xs uppercase tracking-wide text-primary font-semibold mb-1">Total Promotional Value</p>
+                      <p className="text-base text-foreground">
+                        You save <span className="font-bold text-primary">$6,600</span> in your first year compared to standard pricing
+                      </p>
+                    </div>
+
+                    <p className="font-semibold text-foreground mb-3 mt-4">Everything in Essentials, plus:</p>
+                    <ul className="space-y-3 mb-6 flex-1">
                       {growthExtras.map((b) => (
                         <li key={b} className="flex items-start gap-3 text-sm">
                           <Sparkles className="w-5 h-5 mt-0.5 text-primary shrink-0" />
