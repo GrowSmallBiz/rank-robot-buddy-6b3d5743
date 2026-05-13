@@ -380,18 +380,18 @@ const MothersDayCohort = () => {
               </div>
             </div>
 
-            {/* H1 */}
+            {/* H1 + H2 */}
             <div className="max-w-5xl mx-auto text-center mb-5">
-              <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight text-foreground">
-                Get a{" "}
+              <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-display font-bold leading-[1.1] tracking-tight">
                 <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  Complimentary Starter Website
-                </span>
-                {" "}&mdash; and a System That Helps You{" "}
-                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  Win Clients Without Living on Your Phone
+                  Get a Complimentary Starter Small Business Website
                 </span>
               </h1>
+              <h2 className="mt-3 text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-display font-semibold leading-[1.2] tracking-tight">
+                <span className="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                  a System That Helps You Win Clients Without Living on Your Phone
+                </span>
+              </h2>
             </div>
 
             {/* Subhead */}
@@ -422,11 +422,11 @@ const MothersDayCohort = () => {
               </div>
             </div>
 
-            {/* Two-column: bullets/CTAs + image */}
+            {/* Two-column: bullets + image */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-6xl mx-auto">
               <div className="order-2 lg:order-1 min-w-0">
                 {/* Offer bullets */}
-                <ul className="space-y-3 mb-7">
+                <ul className="space-y-3">
                   {[
                     "Complimentary Starter Website valued at $2,500",
                     "$500 off Client Growth System Setup",
@@ -445,23 +445,6 @@ const MothersDayCohort = () => {
                     </li>
                   ))}
                 </ul>
-
-                {/* CTAs */}
-                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:justify-center mb-4">
-                  <PrimaryCTA
-                    href={ctaUrl}
-                    label="Apply for One of the 5 Spots"
-                    className="w-full sm:w-auto whitespace-normal text-center leading-tight h-auto py-3"
-                  />
-                  <Button asChild size="lg" variant="outline" className="border-border w-full sm:w-auto">
-                    <a href="#value">{SECONDARY_CTA_LABEL}</a>
-                  </Button>
-                </div>
-
-                {/* Clarification */}
-                <p className="text-xs sm:text-sm text-muted-foreground text-center leading-relaxed">
-                  The complimentary Starter Website is included only with Essentials Special or Growth Special annual enrollment. It is not available as a standalone website-only offer.
-                </p>
               </div>
 
               <div className="relative order-1 lg:order-2">
@@ -488,6 +471,23 @@ const MothersDayCohort = () => {
                   <Star className="w-4 h-4 text-primary" /> New 5-star review
                 </div>
               </div>
+            </div>
+
+            {/* CTAs (centered below grid) */}
+            <div className="max-w-3xl mx-auto mt-10 md:mt-12 text-center">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center mb-4">
+                <PrimaryCTA
+                  href={ctaUrl}
+                  label="Apply for One of the 5 Spots"
+                  className="w-full sm:w-auto whitespace-normal text-center leading-tight h-auto py-3"
+                />
+                <Button asChild size="lg" variant="outline" className="border-border w-full sm:w-auto">
+                  <a href="#value">{SECONDARY_CTA_LABEL}</a>
+                </Button>
+              </div>
+              <p className="text-xs sm:text-sm text-muted-foreground text-center leading-relaxed">
+                The complimentary Starter Website is included only with Essentials Special or Growth Special annual enrollment. It is not available as a standalone website-only offer.
+              </p>
             </div>
           </div>
         </section>
