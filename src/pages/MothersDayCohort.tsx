@@ -711,14 +711,6 @@ const MothersDayCohort = () => {
             <div className="flex justify-center mt-8">
               <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
             </div>
-
-            <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic max-w-3xl mx-auto">
-              This Mother’s Day Appreciation Offer is limited to 5 selected mom-owned businesses and will not be repeated after this campaign closes.
-            </p>
-
-            <div className="flex justify-center mt-8">
-              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
-            </div>
           </div>
         </section>
 
