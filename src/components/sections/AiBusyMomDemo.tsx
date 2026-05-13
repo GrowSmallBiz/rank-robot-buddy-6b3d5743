@@ -116,7 +116,7 @@ export const AiBusyMomDemo = () => {
       </div>
       <h3 className="mt-10 text-center text-xl md:text-2xl font-display font-semibold text-foreground max-w-2xl mx-auto flex items-center justify-center gap-2.5">
         <Sparkles className="w-5 h-5 text-primary shrink-0" />
-        Your next appointment is booked while you give uninterrupted attention to your client.
+        Your hands never left your client. Your calendar filled itself.
       </h3>
     </>
   );
