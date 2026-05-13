@@ -40,6 +40,7 @@ import {
 import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 import leakyBucket from "@/assets/leaky-bucket.webp";
+import demoPreview from "@/assets/cohort/demo-website-preview.png";
 import bizSalon from "@/assets/cohort/biz-salon.jpg";
 import bizMedspa from "@/assets/cohort/biz-medspa.jpg";
 import bizCleaning from "@/assets/cohort/biz-cleaning.jpg";
@@ -1020,6 +1021,16 @@ const MothersDayCohort = () => {
             <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-8">
               See an example of the kind of professional, mobile-friendly service-business website GrowSmallBiz can build as part of this offer.
             </p>
+            <div className="mb-8 max-w-3xl mx-auto rounded-2xl overflow-hidden border border-border shadow-[0_30px_80px_-30px_hsl(22_85%_55%/0.35)]">
+              <img
+                src={demoPreview}
+                alt="Sample starter website preview — Lumière Medical Spa demo"
+                width={1920}
+                height={1006}
+                loading="lazy"
+                className="w-full h-auto block"
+              />
+            </div>
             <Button
               size="lg"
               onClick={() => setDemoOpen(true)}
