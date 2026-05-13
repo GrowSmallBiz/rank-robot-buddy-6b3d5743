@@ -976,6 +976,10 @@ const MothersDayCohort = () => {
                 </ul>
               </div>
             </div>
+            <p className="mt-10 max-w-2xl mx-auto text-center text-base md:text-lg text-muted-foreground leading-relaxed">
+              <span className="text-foreground font-semibold">One connected system.</span>{" "}
+              Set up for you. Ready to work the day it goes live.
+            </p>
           </div>
         </section>
 
