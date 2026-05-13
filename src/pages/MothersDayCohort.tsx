@@ -235,32 +235,44 @@ const MothersDayCohort = () => {
 
   const faqs = [
     {
-      q: "What qualifies as mom-owned?",
+      q: "What qualifies as a mom-owned business?",
       a: "For this offer, mom-owned means the business is owned or co-owned by a mother who is actively involved in running the business.",
     },
     {
       q: "What types of businesses are a good fit?",
-      a: "This offer is best for local service businesses such as wellness providers, beauty businesses, home service providers, consultants, coaches, professional services, photographers, event services, and similar client-based businesses.",
+      a: "This offer is best for local service businesses such as beauty and wellness providers, med spas, massage therapists, home service providers, consultants, coaches, photographers, event services, pet care businesses, tutoring studios, boutique fitness businesses, and similar client-based businesses.",
+    },
+    {
+      q: "Is the Starter Website really complimentary?",
+      a: "Yes, the Starter Website is complimentary as part of this limited Mother’s Day Appreciation Offer. It is valued at $2,500 and is included only when you enroll in either the Essentials Special or Growth Special annual plan.",
+    },
+    {
+      q: "Is this available without an annual plan?",
+      a: "No. The complimentary Starter Website is not available as a standalone website-only offer. It is included with annual enrollment in Essentials Special or Growth Special.",
     },
     {
       q: "What is included in the Client Growth System Setup?",
-      a: "Brand and business discovery, CRM setup, lead capture, follow-up automation, phone and calendar integration, review automation, and hands-on launch support. Core integrations are configured based on what your business actually uses.",
+      a: "The Client Growth System Setup includes CRM setup, lead capture, pipeline setup, email and SMS follow-up, phone and calendar integration, review request automation, and hands-on launch support.",
     },
     {
-      q: "Is the website really complimentary?",
-      a: "Yes. The Starter Website (a $2,500 value) is included for the 5 selected mom-owned businesses in this Mother’s Day Appreciation Offer. The $1,000 fee is for Client Growth System Setup — not the website.",
+      q: "What does the $1,000 setup cover?",
+      a: "The $1,000 setup is not a website design fee. It covers the configuration of the system behind your website so your leads, conversations, follow-up, reviews, and booking tools work together.",
     },
     {
       q: "When does billing start?",
-      a: "Your monthly or annual subscription begins when your website goes live, not before.",
-    },
-    {
-      q: "Can I choose annual?",
-      a: "Yes. Annual options are available and include the Mother’s Day spa bonus. Essentials Plan: $970/year. Growth Plan: $1,970/year. That’s 2 months free at the Mother’s Day rate.",
+      a: "Your annual plan begins when your website goes live. The Client Growth System Setup payment is required to reserve your spot and begin onboarding.",
     },
     {
       q: "What happens after this campaign closes?",
-      a: "Once the 5 spots are filled, this Mother’s Day Appreciation Offer will not be repeated. Standard GrowSmallBiz pricing will apply afterward.",
+      a: "Once the 5 spots are filled or the campaign closes, this Mother’s Day Appreciation Offer will no longer be available. This exact deal will not be repeated.",
+    },
+    {
+      q: "What happens after the first year?",
+      a: "After the first year, you can continue with the appropriate GrowSmallBiz plan based on your business needs and current pricing at that time.",
+    },
+    {
+      q: "Do I pay before the website is built?",
+      a: "After your application is reviewed and your business is confirmed as a fit, you will receive the payment link to reserve your spot. Work begins after payment and onboarding are completed.",
     },
   ];
 
