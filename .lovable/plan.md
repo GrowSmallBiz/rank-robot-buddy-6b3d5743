@@ -1,34 +1,82 @@
+# Redesign: "AI Livechat" Section → "While You're With a Client, AI Handles the Rest"
 
+## Goal
+Replace the current single-chat demo with a split, parallel-scenario visual that shows:
+- **Center stage**: A massage therapist actively in a session (calm, "do not disturb" framing).
+- **Left panel**: Voice AI answering an incoming call and booking an appointment.
+- **Right panel**: Website Live Chat answering a visitor question and booking an appointment.
 
-## Regenerate Painting Companies Images as WebP
+Both AI panels animate in parallel so the user sees two leads being captured **at the same moment** the therapist can't pick up.
 
-The document specifies regenerating all 12 painting company images in `.webp` format with detailed photorealistic scene descriptions, matching the quality of the tree-lawn-landscaping assets.
+## Scope
+Only the section currently at `src/pages/MothersDayCohort.tsx` lines 937–954 (the `<AiLivechatDemo />` block) and the `AiLivechatDemo` component. Nothing else on the page changes.
 
-### What Changes
+## New copy
 
-1. **Generate 12 images** using the AI image generation API (Nano banana 2 for speed + quality), saving each as `.webp` to `src/assets/painting-companies/`:
+- Eyebrow: `AI That Works While You Work`
+- Headline: `While You're With a Client, AI Answers Every Call and Chat`
+- Subhead: `You can't pause a massage to grab the phone or reply to a website visitor. Your Voice AI and Website Live Chat handle both — answering questions, qualifying leads, and booking appointments — so no opportunity slips by while you're in session.`
 
-| # | Filename | Dimensions | Scene |
-|---|----------|-----------|-------|
-| 01 | painting-hero.webp | 1920x1080 | Professional crew painting exterior of large suburban home, branded uniforms, ladders, bright daylight |
-| 02 | painting-website-screenshot.webp | 1200x800 | MacBook + iPhone mockup of painting contractor website with before/after gallery, CTA, reviews |
-| 03 | residential-interior-seo.webp | 800x600 | Painter applying paint to living room accent wall, roller, drop cloth, warm light |
-| 04 | residential-exterior-seo.webp | 800x600 | Freshly painted two-story suburban home, painter on ladder, white/gray siding, blue sky |
-| 05 | commercial-painting-seo.webp | 800x600 | Crew on scaffolding painting 3-4 story apartment/commercial building |
-| 06 | spring-exterior-painting.webp | 900x600 | Spring neighborhood, freshly painted house, blooming trees, neighbors admiring |
-| 07 | fall-interior-painting.webp | 900x600 | Freshly painted living room in warm greige tones, cozy autumn light |
-| 08 | commercial-painting-ad.webp | 900x600 | HOA property manager in front of freshly painted apartment complex |
-| 09 | residential-painting.webp | 900x600 | Two-person crew painting suburban home exterior, company van visible |
-| 10 | new-construction-painting.webp | 900x600 | Painter applying primer to fresh drywall in new construction |
-| 11 | ai-receptionist-painting.webp | 800x900 | Digital composite: floating phone icons, AI "Lead Captured" overlay, painter at work |
-| 12 | ai-website-chat-painting.webp | 1200x800 | Monitor showing painting website with live chat widget, iPhone with SMS notification |
+## Layout (desktop)
 
-2. **Delete old `.jpg` files** from `src/assets/painting-companies/`
+```text
+┌────────────────────────────────────────────────────────────────┐
+│  [Eyebrow] [Headline] [Subhead]                                │
+├──────────────┬───────────────────────────┬─────────────────────┤
+│  VOICE AI    │   THERAPIST IN SESSION    │   WEBSITE CHAT      │
+│  (call UI)   │   (image + status badge)  │   (chat UI)         │
+│              │   "In session • Do not    │                     │
+│  Incoming    │    disturb"               │   Visitor typing    │
+│  call → AI   │   Soft pulse ring         │   → AI replies      │
+│  picks up    │                           │                     │
+│  → books     │                           │   → books           │
+│  appointment │                           │   appointment       │
+│              │                           │                     │
+│  ✓ Booked    │                           │   ✓ Booked          │
+└──────────────┴───────────────────────────┴─────────────────────┘
+        ↑ both panels animate in parallel, looping
+```
 
-3. **Update `config.ts` imports** to reference `.webp` extensions instead of `.jpg`
+Mobile: stacks vertically — Voice AI → Therapist image → Website Chat.
 
-### Technical Details
-- Uses `google/gemini-3.1-flash-image-preview` model for fast, high-quality generation
-- Images saved as WebP via base64 decode and ImageMagick conversion
-- Config import paths updated from `.jpg` to `.webp` across all 12 references
+## Animation behavior
 
+Single shared timeline driven by `IntersectionObserver`, respects `prefers-reduced-motion`:
+
+1. Both panels reset.
+2. Therapist card shows "In session" pulse from t=0.
+3. **Left (Voice AI)** plays a 4-line transcript with typing dots:
+   - Caller: "Hi, do you have anything Saturday?"
+   - AI: "Yes — I have 1pm and 3pm open. May I get your name and number?"
+   - Caller: "Maya — 925-555-0118"
+   - AI: "Booked for 1pm Saturday. Confirmation text sent."
+   - Ends with badge: `✓ Appointment booked` + `✓ Added to CRM`.
+4. **Right (Website Chat)** plays a 4-line transcript in parallel (offset ~600ms):
+   - Visitor: "Do you offer prenatal massage?"
+   - AI: "Yes! 60 and 90-minute prenatal sessions available. Want me to book one?"
+   - Visitor: "Saturday afternoon if possible"
+   - AI: "Booking link sent. 2pm Saturday is open — tap to confirm."
+   - Ends with badge: `✓ Lead captured` + `✓ Booking link sent`.
+5. Hold ~3s, loop.
+
+Reduced motion: render final state (both transcripts complete, both badges visible) with no animation.
+
+## Visuals
+
+- **Voice AI panel**: phone-call card UI — avatar with `Phone` icon, "Incoming call" → "On call 0:24" timer, transcript bubbles styled distinctly from chat (caller bubbles right-aligned, AI left-aligned, slightly different tint to read as "voice transcript" vs chat).
+- **Therapist center card**: existing massage/spa imagery if available in `src/assets`; otherwise generate a warm, on-brand image (`src/assets/cohort/therapist-in-session.webp`) — soft lighting, hands on shoulder, no faces required, premium spa aesthetic. Overlay a small status chip: `● In session — Do not disturb`.
+- **Website Chat panel**: reuses current chat aesthetic from `AiLivechatDemo` (kept as the right column treatment).
+- All cards: `rounded-3xl`, `border-border`, soft warm shadow consistent with existing section.
+
+## Technical implementation
+
+- Rename/replace `src/components/sections/AiLivechatDemo.tsx` with a new `AiBusyMomDemo.tsx` (keep old file deleted) exporting `AiBusyMomDemo`. Update the import + usage in `MothersDayCohort.tsx`.
+- Internally, factor two small subcomponents: `<VoiceCallPanel script={...} />` and `<ChatPanel script={...} />`, plus `<TherapistCard />`. Single parent owns the timeline so both panels stay in sync.
+- Generate one new image asset: `src/assets/cohort/therapist-in-session.webp` (premium quality, transparent_background false, ~1024×1024). Imported as ES6.
+- Use semantic Tailwind tokens only (`bg-card`, `text-foreground`, `text-primary`, `border-border`, `text-muted-foreground`). No hardcoded colors except the existing brand gradient already used in eyebrow/headline.
+- Section copy update inline in `MothersDayCohort.tsx` (eyebrow / h2 / subhead text only).
+
+## Out of scope
+- Pricing section, nav, other sections.
+- No new data, routes, or backend.
+- No CTA changes.
