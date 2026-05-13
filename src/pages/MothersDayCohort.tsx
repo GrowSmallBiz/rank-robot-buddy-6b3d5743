@@ -658,13 +658,13 @@ const MothersDayCohort = () => {
 
                 {/* The Fix — Minimum AI Package */}
                 <div className="order-2 min-w-0">
-                  <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                  <p className="text-center font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                     What You Get
                   </p>
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                  <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                     How GrowSmallBiz Helps Your Small Business Stop Losing Leads
                   </h2>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-center text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
                     One connected system — built inside your own account — that captures enquiries, follows up instantly, books calls, and tracks everything. Here's what's included:
                   </p>
 
