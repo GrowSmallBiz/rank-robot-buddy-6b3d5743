@@ -634,9 +634,9 @@ const MothersDayCohort = () => {
 
             {/* Closer + Fix block */}
             <div className="mt-14 md:mt-16">
-              <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-10 lg:gap-14 items-start">
-                {/* Leaky bucket image — sticky on desktop */}
-                <div className="relative order-1 lg:sticky lg:top-24 self-start">
+              <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-10 lg:gap-14 items-center">
+                {/* Leaky bucket image */}
+                <div className="relative order-1">
                   <div className="absolute -inset-6 rounded-[2rem] bg-[linear-gradient(135deg,hsl(22_85%_60%/0.18),hsl(188_78%_45%/0.18))] blur-3xl pointer-events-none" />
                   <div className="relative rounded-2xl overflow-hidden border border-primary/25 bg-card/40 p-4 md:p-6">
                     <img
