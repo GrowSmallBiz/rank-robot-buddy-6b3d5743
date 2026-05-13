@@ -1655,7 +1655,7 @@ const MothersDayCohort = () => {
               </span>
             </h2>
             <p className="text-base text-[hsl(210_30%_30%)] leading-relaxed">
-              Once your client growth system is live, we help you dominate your local market with the full suite of AI SEO, local search, paid advertising, and conversational AI services.
+              Your Mother's Day offer covers the foundation — website, marketing automation, and AI receptionist. When you're ready to dominate your local market, we also handle the full suite of AI SEO, local search, and paid advertising.
             </p>
           </div>
 
@@ -1665,16 +1665,19 @@ const MothersDayCohort = () => {
                 icon: Globe,
                 title: "Website Design",
                 desc: "Conversion-focused websites built for speed, SEO, and lead capture.",
+                included: true,
               },
               {
                 icon: Database,
                 title: "Marketing Automation",
                 desc: "CRM, missed-call text-back, follow-up workflows, reviews, and booking.",
+                included: true,
               },
               {
                 icon: Bot,
                 title: "AI Receptionist",
                 desc: "AI voice and chat agents that answer, qualify, and book leads 24/7.",
+                included: true,
               },
               {
                 icon: Sparkles,
@@ -1736,11 +1739,20 @@ const MothersDayCohort = () => {
                 title: "Google Ads & Facebook Ads",
                 desc: "Search and social campaigns built for local service businesses.",
               },
-            ].map(({ icon: Icon, title, desc }) => (
+            ].map(({ icon: Icon, title, desc, included }) => (
               <div
                 key={title}
-                className="group bg-white rounded-xl p-4 border border-[hsl(20_30%_88%)] shadow-[0_4px_20px_-8px_hsl(22_60%_50%/0.15)] hover:shadow-[0_12px_40px_-12px_hsl(22_85%_50%/0.35)] hover:-translate-y-1 hover:border-[hsl(22_85%_60%/0.5)] transition-all duration-300"
+                className={`group relative rounded-xl p-4 border transition-all duration-300 hover:-translate-y-1 ${
+                  included
+                    ? "bg-gradient-to-br from-[hsl(22_90%_96%)] to-[hsl(350_75%_97%)] border-[hsl(22_85%_60%/0.55)] shadow-[0_6px_24px_-10px_hsl(22_85%_50%/0.35)] hover:shadow-[0_14px_40px_-12px_hsl(22_85%_50%/0.45)]"
+                    : "bg-white border-[hsl(20_30%_88%)] shadow-[0_4px_20px_-8px_hsl(22_60%_50%/0.15)] hover:shadow-[0_12px_40px_-12px_hsl(22_85%_50%/0.35)] hover:border-[hsl(22_85%_60%/0.5)]"
+                }`}
               >
+                {included && (
+                  <span className="absolute -top-2 right-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-gradient-to-r from-[hsl(22_85%_55%)] to-[hsl(350_75%_60%)] text-white text-[10px] font-bold uppercase tracking-wide shadow-sm">
+                    <CheckCircle2 className="w-3 h-3" /> Included
+                  </span>
+                )}
                 <div className="flex items-center gap-2.5 mb-2">
                   <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[hsl(22_90%_92%)] to-[hsl(350_75%_94%)] flex items-center justify-center flex-shrink-0">
                     <Icon className="w-4 h-4 text-[hsl(22_85%_45%)]" />
@@ -1755,6 +1767,7 @@ const MothersDayCohort = () => {
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
