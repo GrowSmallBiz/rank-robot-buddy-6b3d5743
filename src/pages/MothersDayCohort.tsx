@@ -1037,6 +1037,9 @@ const MothersDayCohort = () => {
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
                 This is not standard GrowSmallBiz pricing. This is a limited annual-only appreciation offer created for 5 mom-owned local service businesses.
               </p>
+              <p className="mt-3 text-sm md:text-base font-semibold text-[hsl(210_30%_25%)]">
+                Marketing investment may be tax deductible — consult your tax advisor.
+              </p>
             </div>
 
             {/* Annual-only badge */}
