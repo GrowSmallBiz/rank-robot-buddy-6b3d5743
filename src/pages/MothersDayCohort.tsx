@@ -1353,8 +1353,8 @@ const MothersDayCohort = () => {
                     "Complimentary Starter Website — $2,500 value",
                     "Client Growth System Setup — $1,000 (normally $1,500)",
                     "12-month growth program",
-                    "Essentials Plan: $197/month",
-                    "Growth Plan: $297/month",
+                    "Essentials Plan: $97/month",
+                    "Growth Plan: $197/month",
                     "Subscription begins when your website goes live",
                   ].map((b) => (
                     <li key={b} className="flex items-start gap-2">
@@ -1497,8 +1497,8 @@ const MothersDayCohort = () => {
                 {[
                   "Complimentary Starter Website — $2,500 value",
                   "Client Growth System Setup reduced to $1,000",
-                  "Essentials Plan: $197/month",
-                  "Growth Plan: $297/month",
+                  "Essentials Plan: $97/month",
+                  "Growth Plan: $197/month",
                   "Extended through May 31, 2026 — or until 5 spots are filled",
                   "Spots are filled first-paid after the discovery call",
                 ].map((s) => (
