@@ -504,19 +504,30 @@ const MothersDayCohort = () => {
           <div className="absolute -top-20 right-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
           <div className="absolute -bottom-20 left-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
 
-          <div className="container mx-auto px-4 max-w-6xl relative z-10">
-            <div className="text-center mb-10 max-w-3xl mx-auto">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+          <div className="container mx-auto px-4 max-w-7xl relative z-10">
+            {/* Header */}
+            <div className="text-center mb-8 max-w-4xl mx-auto">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
                 Mother’s Day Appreciation Offer · Limited to 5 Businesses
               </p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                A Real Business Growth Deal for Mom-Owned Businesses
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-5 leading-[1.1]">
+                <span className="text-[hsl(210_55%_14%)]">A Real Business Growth Deal for </span>
+                <span className="bg-gradient-to-r from-[hsl(22_90%_58%)] via-[hsl(350_75%_62%)] to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
+                  Mom-Owned Businesses
+                </span>
               </h2>
               <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
                 This is not standard GrowSmallBiz pricing. This is a limited annual-only appreciation offer created for 5 mom-owned local service businesses.
               </p>
-              <p className="mt-3 text-sm md:text-base font-semibold text-[hsl(210_30%_25%)]">
-                Your investment may qualify as a business expense. Please consult your tax advisor.
+            </div>
+
+            {/* Why this is still open — directly under subhead */}
+            <div className="max-w-4xl mx-auto mb-10 rounded-2xl border border-[hsl(22_85%_60%/0.35)] bg-white/75 backdrop-blur-sm p-5 md:p-6 shadow-[0_15px_40px_-20px_hsl(20_60%_40%/0.3)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
+                Why this is still open
+              </p>
+              <p className="text-sm md:text-base text-[hsl(210_30%_22%)] leading-relaxed">
+                Mother’s Day is one day. Running a business while being a mom is every day. We extended this appreciation offer through May 31 for 5 mom-owned local service businesses.
               </p>
             </div>
 
@@ -527,7 +538,7 @@ const MothersDayCohort = () => {
             </div>
 
             {/* Top comparison cards */}
-            <div className="grid md:grid-cols-2 gap-6 mb-10">
+            <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-6xl mx-auto">
               <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/70 backdrop-blur-sm p-7 md:p-8">
                 <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(210_25%_45%)] mb-4">
                   Standard GrowSmallBiz Annual Value
@@ -571,18 +582,8 @@ const MothersDayCohort = () => {
               </div>
             </div>
 
-            {/* Why this is still open — small inline callout */}
-            <div className="max-w-4xl mx-auto mb-12 rounded-2xl border border-[hsl(22_85%_60%/0.35)] bg-white/75 backdrop-blur-sm p-5 md:p-6 shadow-[0_15px_40px_-20px_hsl(20_60%_40%/0.3)]">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
-                Why this is still open
-              </p>
-              <p className="text-sm md:text-base text-[hsl(210_30%_22%)] leading-relaxed">
-                Mother’s Day is one day. Running a business while being a mom is every day. We extended this appreciation offer through May 31 for 5 mom-owned local service businesses.
-              </p>
-            </div>
-
             {/* Plan cards */}
-            <div className="grid md:grid-cols-2 gap-6 items-stretch">
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-8 items-stretch">
               {[
                 {
                   title: "Essentials Special",
@@ -591,7 +592,7 @@ const MothersDayCohort = () => {
                   calloutHeadline: "Less Than One Nice Dinner Out Each Month",
                   calloutBody:
                     "For less than one dinner out each month, your business gets a website, CRM, unified inbox, review automation, and follow-up foundation working behind the scenes.",
-                  firstYear: "First-year investment with setup: $1,970",
+                  firstYearAmount: "$1,970",
                   savingsTotal: "$5,000",
                   savingsRows: [
                     "$2,500 Starter Website included",
@@ -609,7 +610,7 @@ const MothersDayCohort = () => {
                   calloutHeadline: "About the Cost of One Spa Visit Each Month",
                   calloutBody:
                     "For about the cost of one spa visit each month, your business gets AI-powered response tools that help answer questions, capture leads, follow up, and book appointments — even when you are with a client, with your family, or finally taking a break.",
-                  firstYear: "First-year investment with setup: $2,970",
+                  firstYearAmount: "$2,970",
                   savingsTotal: "$6,000",
                   savingsRows: [
                     "$2,500 Starter Website included",
@@ -635,10 +636,12 @@ const MothersDayCohort = () => {
                     </div>
                   )}
 
+                  {/* 1. Plan name */}
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
                     {c.title}
                   </h3>
 
+                  {/* 2. Annual price */}
                   <div className="mb-2">
                     <span className="text-5xl md:text-6xl font-display font-black text-[hsl(22_85%_42%)] leading-none">
                       {c.annual}
@@ -646,12 +649,13 @@ const MothersDayCohort = () => {
                     <span className="text-xl md:text-2xl font-bold text-[hsl(22_85%_42%)] ml-1">/year</span>
                   </div>
 
+                  {/* 3. Monthly equivalent badge */}
                   <div className="mt-2 inline-flex self-start items-center px-3 py-1 rounded-full bg-[hsl(210_55%_14%/0.06)] border border-[hsl(210_55%_14%/0.12)] text-xs md:text-sm font-semibold text-[hsl(210_45%_25%)]">
                     Equivalent to {c.monthlyEq} with 2 months included
                   </div>
 
+                  {/* 4. Put That in Perspective */}
                   <div className="relative mt-5 rounded-2xl overflow-hidden border-2 border-[hsl(22_85%_60%/0.5)] bg-[linear-gradient(135deg,hsl(30_85%_92%)_0%,hsl(350_75%_94%)_50%,hsl(22_85%_92%)_100%)] shadow-[0_15px_40px_-15px_hsl(20_60%_40%/0.3)]">
-                    <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_55%),hsl(350_70%_60%),hsl(30_75%_55%)]" />
                     <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[linear-gradient(180deg,hsl(22_85%_55%),hsl(350_70%_60%))]" />
                     <div className="relative p-5 md:p-6 pl-6 md:pl-7">
                       <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold text-[hsl(22_85%_38%)] mb-2">
@@ -666,10 +670,20 @@ const MothersDayCohort = () => {
                     </div>
                   </div>
 
-                  <div className="mt-5 inline-flex self-start px-4 py-2 rounded-full bg-[hsl(210_55%_14%)] text-white text-xs md:text-sm font-semibold">
-                    {c.firstYear}
+                  {/* 5. First-Year Investment block */}
+                  <div className="mt-5 rounded-2xl border-2 border-[hsl(210_55%_14%)] bg-[hsl(210_55%_14%)] text-white p-5 md:p-6">
+                    <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold text-white/70 mb-2">
+                      First-Year Investment
+                    </p>
+                    <p className="text-3xl md:text-4xl font-display font-black leading-none">
+                      {c.firstYearAmount}
+                    </p>
+                    <p className="mt-2 text-xs md:text-sm text-white/80">
+                      Includes setup + annual plan
+                    </p>
                   </div>
 
+                  {/* 6. Total first-year savings */}
                   <div className="mt-5 rounded-2xl bg-white/85 border border-[hsl(30_55%_85%)] p-5">
                     <p className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)]">
                       {c.savingsTotal}{" "}
@@ -687,15 +701,22 @@ const MothersDayCohort = () => {
                     </ul>
                   </div>
 
+                  {/* 7. Best for */}
                   <p className="mt-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
                     <span className="font-semibold text-[hsl(210_55%_14%)]">Best for: </span>
                     {c.bestFor}
                   </p>
+
+                  {/* 8. CTA inside each card */}
+                  <div className="mt-auto pt-6">
+                    <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" full />
+                  </div>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 grid md:grid-cols-2 gap-4">
+            {/* Clarification blocks */}
+            <div className="mt-10 grid md:grid-cols-2 gap-4 max-w-6xl mx-auto">
               <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
                 The Complimentary Starter Website is included only when you enroll in either the Essentials Special or Growth Special annual plan. It is not available as a standalone website-only offer.
               </p>
@@ -711,6 +732,11 @@ const MothersDayCohort = () => {
             <div className="flex justify-center mt-8">
               <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
             </div>
+
+            {/* Tax footnote */}
+            <p className="text-center text-xs md:text-sm mt-6 text-[hsl(210_25%_40%)] max-w-2xl mx-auto">
+              Your investment may qualify as a business expense. Please consult your tax advisor.
+            </p>
           </div>
         </section>
 
