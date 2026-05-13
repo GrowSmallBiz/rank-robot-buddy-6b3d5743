@@ -900,39 +900,7 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            <div className="relative rounded-3xl border border-border bg-card p-6 md:p-10 overflow-hidden">
-              <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-1 bg-[linear-gradient(90deg,transparent,hsl(22_85%_60%/0.5),transparent)] hidden md:block" />
-              <div className="grid md:grid-cols-3 gap-6 relative">
-                {[
-                  { icon: Globe, title: "Website Form Submitted", body: "Visitor fills out the form on your site." },
-                  { icon: Database, title: "Contact Created in CRM", body: "The lead is added, tagged, and routed automatically." },
-                  { icon: Mail, title: "Email + Text Sent Automatically", body: "An instant reply lands in their inbox and on their phone." },
-                ].map((step, i) => (
-                  <div key={step.title} className="relative">
-                    <div className="rounded-2xl border-2 border-primary/40 bg-background p-6 text-center shadow-[0_10px_30px_-12px_hsl(22_85%_55%/0.35)]">
-                      <div className="mx-auto w-14 h-14 rounded-2xl bg-primary/15 border border-primary/40 flex items-center justify-center mb-4 animate-pulse">
-                        <step.icon className="w-7 h-7 text-primary" />
-                      </div>
-                      <p className="text-[11px] font-bold uppercase tracking-widest text-primary mb-2">Step {i + 1}</p>
-                      <h3 className="font-display font-bold text-lg text-foreground mb-2">{step.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{step.body}</p>
-                    </div>
-                    {i < 2 && (
-                      <div className="hidden md:flex absolute top-1/2 -right-3 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-primary text-primary-foreground items-center justify-center shadow-lg">
-                        <ArrowRight className="w-4 h-4" />
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8 text-center">
-                <p className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-primary/10 border-2 border-primary/40 text-foreground font-semibold text-sm md:text-base">
-                  <Zap className="w-4 h-4 text-primary" />
-                  No copying. No chasing. No forgetting.
-                </p>
-              </div>
-            </div>
+            <SpeedToLeadFlow />
           </div>
         </section>
 
