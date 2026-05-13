@@ -137,8 +137,8 @@ const MothersDayCohort = () => {
   const cohortValues = [
     { label: "Starter Website", value: "Complimentary" },
     { label: "Client Growth System Setup", value: "$1,000" },
-    { label: "Essentials Plan", value: "$197/month" },
-    { label: "Growth Plan", value: "$297/month" },
+    { label: "Essentials Plan", value: "$97/month" },
+    { label: "Growth Plan", value: "$197/month" },
   ];
 
   const presenceCards = [
