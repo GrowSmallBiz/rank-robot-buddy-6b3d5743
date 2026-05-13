@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
 import { AiLivechatDemo } from "@/components/sections/AiLivechatDemo";
+import { baseContactCTA } from "@/config/contactCTA";
 import {
   Accordion,
   AccordionContent,
