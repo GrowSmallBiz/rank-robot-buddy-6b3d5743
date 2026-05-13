@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef, useEffect } from "react";
+import { useMemo } from "react";
 import { buildCtaUrl } from "@/lib/utm";
 
 interface ConsultationFormSectionProps {
@@ -51,19 +51,12 @@ export const ConsultationFormSection = ({
   cardGlowClass = "shadow-[0_0_30px_#17a2b8,0_0_60px_#17a2b8]",
   heroOverlay = false,
 }: ConsultationFormSectionProps) => {
-  const [isVisible, setIsVisible] = useState(true);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  // Inject GHL form embed script once when an override form is used.
-  useEffect(() => {
-    if (!formUrlOverride) return;
-    const scriptSrc = "https://link.msgsndr.com/js/form_embed.js";
-    if (document.querySelector(`script[src="${scriptSrc}"]`)) return;
-    const s = document.createElement("script");
-    s.src = scriptSrc;
-    s.async = true;
-    document.body.appendChild(s);
-  }, [formUrlOverride]);
+  // GHL iframes are rendered with a fixed height (see project memory:
+  // "GHL iframes require fixed heights — cross-origin limitation").
+  // We intentionally do NOT inject https://link.msgsndr.com/js/form_embed.js
+  // because its auto-resize logic has repeatedly collapsed the iframe to 0px
+  // on this page, causing the form to disappear.
+  const isVisible = true;
 
   const iframeSrc = useMemo(
     () => formUrlOverride ?? buildCtaUrl(BASE_FORM_URL, utmCampaign, utmMedium),
@@ -78,7 +71,7 @@ export const ConsultationFormSection = ({
   const dataHeight = dataHeightOverride ?? "1126";
 
   return (
-    <section ref={sectionRef} className={`py-16 md:py-24 relative overflow-hidden ${sectionClassName ?? "bg-[#2d465c]"}`}>
+    <section className={`py-16 md:py-24 relative overflow-hidden ${sectionClassName ?? "bg-[#2d465c]"}`}>
       {heroOverlay && (
         <>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,210,190,0.16),transparent_55%)] pointer-events-none" />
