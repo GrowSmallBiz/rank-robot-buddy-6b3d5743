@@ -5,6 +5,7 @@ import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
+import { AiLivechatDemo } from "@/components/sections/AiLivechatDemo";
 import {
   Accordion,
   AccordionContent,
@@ -921,50 +922,7 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            <div className="max-w-2xl mx-auto rounded-3xl border border-border bg-card p-5 md:p-7 shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)]">
-              <div className="flex items-center gap-3 pb-4 border-b border-border mb-4">
-                <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center">
-                  <Bot className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground text-sm">Your Website Assistant</p>
-                  <p className="text-xs text-muted-foreground flex items-center gap-1">
-                    <span className="w-2 h-2 rounded-full bg-green-500 inline-block" /> Online now
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-end">
-                  <div className="max-w-[80%] rounded-2xl rounded-tr-sm px-4 py-2.5 bg-primary text-primary-foreground">
-                    Hi! Do you have any openings this Saturday?
-                  </div>
-                </div>
-                <div className="flex justify-start">
-                  <div className="max-w-[80%] rounded-2xl rounded-tl-sm px-4 py-2.5 bg-muted text-foreground">
-                    Hi there! Yes — we have a few openings on Saturday afternoon. May I grab your name and best phone number so I can hold a spot for you?
-                  </div>
-                </div>
-                <div className="flex justify-end">
-                  <div className="max-w-[80%] rounded-2xl rounded-tr-sm px-4 py-2.5 bg-primary text-primary-foreground">
-                    Sara — 925-555-0143
-                  </div>
-                </div>
-                <div className="flex justify-start">
-                  <div className="max-w-[80%] rounded-2xl rounded-tl-sm px-4 py-2.5 bg-muted text-foreground">
-                    Thanks Sara! I’ve sent a booking link to your phone. Would 1pm or 3pm work better?
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 pt-2">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary">
-                    <CheckCircle2 className="w-3.5 h-3.5" /> Contact captured in CRM
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary">
-                    <Calendar className="w-3.5 h-3.5" /> Booking link sent
-                  </span>
-                </div>
-              </div>
-            </div>
+            <AiLivechatDemo />
           </div>
         </section>
 
