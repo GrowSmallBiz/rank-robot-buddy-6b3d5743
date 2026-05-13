@@ -6,9 +6,10 @@ interface CtaBlockProps {
   headline: string;
   subtext: string;
   strategySessionUrl: string;
+  showPhoneButton?: boolean;
 }
 
-export const CtaBlock = ({ headline, subtext, strategySessionUrl }: CtaBlockProps) => {
+export const CtaBlock = ({ headline, subtext, strategySessionUrl, showPhoneButton = true }: CtaBlockProps) => {
   return (
     <section className="pt-8 pb-16">
     <div className="container mx-auto px-4">
@@ -42,17 +43,19 @@ export const CtaBlock = ({ headline, subtext, strategySessionUrl }: CtaBlockProp
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="border-muted-foreground/30 hover:bg-muted/50 transition-all duration-300"
-              >
-                <a href="tel:+19258863724" className="inline-flex items-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  Call +1 (925) 886-3724
-                </a>
-              </Button>
+              {showPhoneButton && (
+                <Button
+                  size="lg"
+                  variant="outline"
+                  asChild
+                  className="border-muted-foreground/30 hover:bg-muted/50 transition-all duration-300"
+                >
+                  <a href="tel:+19258863724" className="inline-flex items-center gap-2">
+                    <Phone className="w-4 h-4" />
+                    Call +1 (925) 886-3724
+                  </a>
+                </Button>
+              )}
             </div>
           </div>
         </div>
