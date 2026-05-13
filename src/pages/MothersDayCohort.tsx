@@ -518,508 +518,7 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        <section id="problem" className="relative overflow-hidden py-20 md:py-24 scroll-mt-20 bg-[linear-gradient(180deg,hsl(210_55%_8%)_0%,hsl(210_50%_11%)_100%)]">
-
-          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(22_85%_60%/0.10)] blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.08)] blur-3xl pointer-events-none" />
-
-          <div className="container mx-auto px-4 max-w-6xl relative z-10">
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                The Problem
-              </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why Leads Slip Through the Cracks for Small Businesses
-              </h2>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                You are great at what you do — and you are also the mom, the operator, and the front desk. The family priorities you cannot ignore are exactly when your business is quietly leaking revenue.
-              </p>
-            </div>
-
-            {/* Cause → Consequence pairs */}
-            <div className="space-y-4 md:space-y-5">
-              {[
-                {
-                  causeIcon: PhoneCall,
-                  causeTitle: "School pickup, doctor visits, sick days",
-                  causeBody: "You can't answer the phone in the middle of carpool or a pediatrician waiting room.",
-                  leakIcon: PhoneMissed,
-                  leak: "Missed calls go to voicemail — and voicemails don't get returned fast enough.",
-                },
-                {
-                  causeIcon: Heart,
-                  causeTitle: "Cooking dinner, helping with homework",
-                  causeBody: "Evenings belong to your kids — not to refreshing your inbox.",
-                  leakIcon: Clock,
-                  leak: "Inquiries sit in an inbox for hours (or days) before someone responds.",
-                },
-                {
-                  causeIcon: Users,
-                  causeTitle: "Bedtime routine while buyers browse at night",
-                  causeBody: "Your best prospects research after 8pm — exactly when you are off the clock.",
-                  leakIcon: MessageSquare,
-                  leak: "Your website has no live chat — visitors leave without a trace.",
-                },
-                {
-                  causeIcon: Calendar,
-                  causeTitle: "Weekend family time, no bandwidth to chase",
-                  causeBody: "Saturdays are for soccer games, not for chasing leads who didn't book.",
-                  leakIcon: Mail,
-                  leak: "No system to follow up with leads who didn't book the first time.",
-                },
-                {
-                  causeIcon: Smartphone,
-                  causeTitle: "Juggling clients and kids — no time to ask",
-                  causeBody: "By the time the day ends, asking for a review is the last thing on your mind.",
-                  leakIcon: Star,
-                  leak: "Happy clients aren't being asked for reviews or referrals in a repeatable way.",
-                },
-                {
-                  causeIcon: Sparkles,
-                  causeTitle: "Running on intuition — no time to analyze",
-                  causeBody: "You feel where leads come from, but you have never had time to actually measure it.",
-                  leakIcon: TrendingUp,
-                  leak: "No dashboard showing where your leads come from, what converts, and what doesn't.",
-                },
-              ].map((row) => {
-                const CauseIcon = row.causeIcon;
-                const LeakIcon = row.leakIcon;
-                return (
-                  <div
-                    key={row.causeTitle}
-                    className="grid md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-5 items-stretch"
-                  >
-                    {/* Cause */}
-                    <div className="flex gap-3 p-4 md:p-5 rounded-xl border border-[hsl(280_50%_75%/0.25)] bg-[hsl(280_40%_18%/0.35)]">
-                      <div className="w-10 h-10 shrink-0 rounded-lg bg-[hsl(280_60%_70%/0.15)] border border-[hsl(280_60%_70%/0.35)] flex items-center justify-center">
-                        <CauseIcon className="w-5 h-5 text-[hsl(280_70%_82%)]" />
-                      </div>
-                      <div className="min-w-0">
-                        <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-[hsl(280_60%_78%)] mb-1">
-                          Mom-life moment
-                        </p>
-                        <h3 className="text-sm md:text-base font-display font-semibold text-foreground leading-snug mb-1">
-                          {row.causeTitle}
-                        </h3>
-                        <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                          {row.causeBody}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Connector */}
-                    <div className="hidden md:flex items-center justify-center">
-                      <div className="w-9 h-9 rounded-full bg-primary/15 border border-primary/40 flex items-center justify-center">
-                        <ArrowRight className="w-4 h-4 text-primary" />
-                      </div>
-                    </div>
-
-                    {/* Consequence */}
-                    <div className="flex gap-3 p-4 md:p-5 rounded-xl border-2 border-primary/40 bg-primary/10 shadow-[0_0_18px_hsl(22_85%_60%/0.12)]">
-                      <div className="w-10 h-10 shrink-0 rounded-lg bg-primary/20 border border-primary/50 flex items-center justify-center">
-                        <LeakIcon className="w-5 h-5 text-primary" />
-                      </div>
-                      <div className="min-w-0">
-                        <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-primary mb-1">
-                          Revenue leak
-                        </p>
-                        <p className="text-sm md:text-base font-semibold text-foreground leading-snug">
-                          {row.leak}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* Closer + Fix block */}
-            <div className="mt-14 md:mt-16">
-              {/* Section heading — full width, centered */}
-              <div className="max-w-3xl mx-auto text-center mb-10 md:mb-12">
-                <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  What You Get
-                </p>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                  How GrowSmallBiz Helps Your Small Business Stop Losing Leads
-                </h2>
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                  One connected system — built inside your own account — that captures enquiries, follows up instantly, books calls, and tracks everything. Here's what's included:
-                </p>
-              </div>
-
-              <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-10 lg:gap-14 items-center">
-                {/* Leaky bucket image */}
-                <div className="relative order-1">
-                  <div className="absolute -inset-6 rounded-[2rem] bg-[linear-gradient(135deg,hsl(22_85%_60%/0.18),hsl(188_78%_45%/0.18))] blur-3xl pointer-events-none" />
-                  <div className="relative rounded-2xl overflow-hidden border border-primary/25 bg-card/40 p-4 md:p-6">
-                    <img
-                      src={leakyBucket}
-                      alt="Leaky bucket illustration showing local business leads spilling out through gaps in disconnected marketing tools"
-                      width={800}
-                      height={800}
-                      loading="lazy"
-                      decoding="async"
-                      className="w-full h-auto"
-                    />
-                    <p className="mt-4 flex items-center justify-center gap-2 text-center font-display font-semibold text-base md:text-lg bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                      We Fix Your Leaky Bucket
-                      <ArrowRight aria-hidden="true" className="hidden lg:inline w-5 h-5 shrink-0 text-[hsl(22_90%_72%)]" style={{ WebkitTextFillColor: 'currentColor' }} />
-                      <ArrowDown aria-hidden="true" className="lg:hidden w-5 h-5 shrink-0 text-[hsl(22_90%_72%)]" style={{ WebkitTextFillColor: 'currentColor' }} />
-                    </p>
-                  </div>
-                </div>
-
-                {/* The Fix — Minimum AI Package */}
-                <div className="order-2 min-w-0">
-
-                  <ul className="space-y-3">
-                    {[
-                      {
-                        icon: PhoneCall,
-                        title: "AI Voice (Missed Call Handling)",
-                        body: "When you miss a call, AI picks up. It answers common questions, qualifies the caller, and books appointments — so you never lose a lead to voicemail again.",
-                      },
-                      {
-                        icon: MessageSquare,
-                        title: "Missed Call SMS Text Back",
-                        body: "If a call goes unanswered, the system instantly texts the caller back. Most people reply to a text faster than they listen to a voicemail.",
-                      },
-                      {
-                        icon: Globe,
-                        title: "AI Website / Landing Page + Opt-in",
-                        body: "A high-converting one-page website designed to capture leads. Built to load fast, look professional, and drive action.",
-                      },
-                      {
-                        icon: Bot,
-                        title: "AI Webchat",
-                        body: "A chat widget on your website that engages visitors in real time, answers questions, and captures contact details — even when you're not online.",
-                      },
-                      {
-                        icon: Database,
-                        title: "CRM Setup (Basic)",
-                        body: "Your leads, conversations, and pipeline — all in one place. No more spreadsheets or scattered notes.",
-                      },
-                      {
-                        icon: Star,
-                        title: "Reviews System",
-                        body: "Automatically requests reviews from happy clients and follows up if they haven't left one. A repeatable process, not a one-off ask.",
-                      },
-                      {
-                        icon: Users,
-                        title: "Referrals System",
-                        body: "Prompts satisfied clients to refer others, with automated follow-up. Turns word of mouth into a system.",
-                      },
-                      {
-                        icon: TrendingUp,
-                        title: "KPI Dashboard & Tracking",
-                        body: "See where your leads come from, what converts, and what needs attention. One screen. Real-time data.",
-                      },
-                    ].map((item) => {
-                      const ItemIcon = item.icon;
-                      return (
-                        <li key={item.title} className="flex gap-3">
-                          <div className="w-9 h-9 shrink-0 rounded-lg bg-primary/15 border border-primary/40 flex items-center justify-center">
-                            <ItemIcon className="w-4.5 h-4.5 text-primary" />
-                          </div>
-                          <div className="min-w-0">
-                            <h4 className="text-sm md:text-base font-display font-bold text-foreground leading-snug">
-                              {item.title}
-                            </h4>
-                            <p className="text-xs md:text-sm text-muted-foreground leading-relaxed mt-0.5">
-                              {item.body}
-                            </p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
-
-              <p className="mt-12 max-w-3xl mx-auto text-center text-base md:text-lg text-muted-foreground leading-relaxed">
-                Each one of these is a leak. Together, they cost{" "}
-                <span className="text-foreground font-semibold">thousands every month</span>{" "}
-                — and most mom-owned businesses don't even realize it.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="presence" className="py-20 scroll-mt-20">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center mb-12 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Free Lead Automation for Small Businesses — Be Present and Responsive
-              </h2>
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-3">
-                You should not have to answer texts while giving a massage, step out of a client session to return a missed call, or skip your daughter’s basketball game because someone might reach out after hours.
-              </p>
-              <p className="text-foreground text-base md:text-lg leading-relaxed">
-                The right system lets your business keep responding even when you are with a client, with your family, at dinner, or finally taking a break.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {presenceCards.map((c) => (
-                <div
-                  key={c.title}
-                  className="relative rounded-2xl border border-border bg-card p-7 overflow-hidden"
-                >
-                  <div className="absolute top-0 inset-x-0 h-0.5 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center shrink-0">
-                      <c.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-display font-bold text-lg md:text-xl mb-2">
-                        {c.title}
-                      </h3>
-                      <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                        {c.body}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="automation"
-          className="py-20 scroll-mt-20 bg-background-alt relative overflow-hidden"
-        >
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center mb-12 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                What Lead Automation Handles for Your Small Business
-              </h2>
-              <p className="text-muted-foreground text-base md:text-lg">
-                This is where the system starts saving time — not just generating leads.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
-              {automationCards.map((c) => (
-                <div
-                  key={c.title}
-                  className="rounded-2xl border-2 border-[hsl(188_78%_50%_/_0.5)] bg-[hsl(210_45%_18%)] p-6 hover:border-[hsl(188_78%_60%_/_0.8)] hover:shadow-[0_0_30px_hsl(188_78%_45%_/_0.35)] transition-all"
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-[hsl(188_78%_41%_/_0.2)] border border-[hsl(188_78%_55%_/_0.4)] flex items-center justify-center shrink-0">
-                      <c.icon className="w-5 h-5 text-[hsl(188_78%_70%)]" />
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground leading-tight">{c.title}</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">{c.desc}</p>
-                  <p className="text-sm italic text-primary leading-relaxed">"{c.quote}"</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Automation flow */}
-            <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-5 text-center bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Automation Flow
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                {automationFlow.map((step, i) => (
-                  <div key={step} className="flex items-center gap-3">
-                    <div className="px-4 py-2.5 rounded-xl bg-background border border-primary/30 text-sm font-medium shadow-sm">
-                      <Zap className="w-3.5 h-3.5 inline-block mr-2 text-primary" />
-                      {step}
-                    </div>
-                    {i < automationFlow.length - 1 && (
-                      <ArrowRight className="w-4 h-4 text-muted-foreground hidden md:inline" />
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="system"
-          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
-        >
-          <div className="absolute -top-20 right-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-20 left-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
-          <div className="container mx-auto px-4 max-w-6xl relative z-10">
-            <div className="text-center mb-10 max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                The Lead Automation System Behind Your Free Small Business Website
-              </h2>
-              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
-                Your website is only the front door. GrowSmallBiz also sets up the connected system behind it — lead capture, CRM, follow-up automation, reviews, and AI-powered response tools.
-              </p>
-            </div>
-
-            {/* Google Reviews */}
-            <div className="mb-14">
-              <h3 className="text-xl md:text-2xl font-display font-bold text-center text-[hsl(210_55%_14%)] mb-6">
-                Recent Google Reviews
-              </h3>
-              <div className="max-w-4xl mx-auto rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] p-3 md:p-6 overflow-hidden">
-                <iframe
-                  className="lc_reviews_widget w-full block"
-                  src="https://reputationhub.site/reputation/widgets/review_widget/4KL47iKeJZ2Ee05j7FBh"
-                  frameBorder={0}
-                  scrolling="no"
-                  style={{ minWidth: "100%", width: "100%" }}
-                  title="Recent Google Reviews"
-                />
-              </div>
-            </div>
-
-            {/* Videos */}
-            <div>
-              <h3 className="text-xl md:text-2xl font-display font-bold text-center text-[hsl(210_55%_14%)] mb-6">
-                Watch How the System Works
-              </h3>
-              <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-                {[
-                  {
-                    title: "Client Growth System Overview",
-                    sub: "See how the system helps organize leads, conversations, follow-up, reviews, and customer communication in one place.",
-                    src: "https://www.youtube-nocookie.com/embed/rJ289MZ0ugU",
-                  },
-                  {
-                    title: "AI Employee Demo",
-                    sub: "See how AI-powered response tools can help answer questions, capture information, and support faster follow-up.",
-                    src: "https://www.youtube-nocookie.com/embed/IkA8jPWgHxk",
-                  },
-                ].map((v) => (
-                  <div
-                    key={v.src}
-                    className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] overflow-hidden flex flex-col"
-                  >
-                    <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
-                      <iframe
-                        src={v.src}
-                        title={v.title}
-                        loading="lazy"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="absolute inset-0 w-full h-full"
-                        frameBorder={0}
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h4 className="font-display font-bold text-lg text-[hsl(210_55%_14%)] mb-2">
-                        {v.title}
-                      </h4>
-                      <p className="text-sm text-[hsl(210_30%_30%)] leading-relaxed">{v.sub}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="different" className="py-20 scroll-mt-20">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <div className="text-center mb-10">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Compare
-              </p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                The Difference This Mother’s Day Offer Makes for Small Businesses
-              </h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-10 items-stretch">
-              <div className="relative rounded-2xl border border-dashed border-border bg-background-alt p-8 opacity-90">
-                <div className="absolute top-4 right-4">
-                  <XCircle className="w-5 h-5 text-muted-foreground/60" />
-                </div>
-                <p className="text-lg md:text-xl font-display font-bold text-muted-foreground mb-5">
-                  Most basic website offers:
-                </p>
-                <ul className="space-y-2.5 text-sm text-muted-foreground/90">
-                  {[
-                    "A website alone does not follow up with leads.",
-                    "A contact form alone does not organize opportunities.",
-                    "A phone number alone does not prevent missed calls.",
-                    "A happy customer alone does not guarantee a review.",
-                    "A CRM alone does not help unless it is set up properly.",
-
-                  ].map((b) => (
-                    <li key={b} className="flex items-start gap-2">
-                      <XCircle className="w-4 h-4 mt-0.5 text-muted-foreground/60 shrink-0" />
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="relative rounded-2xl border-2 border-primary bg-card p-8 shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.4)] overflow-hidden">
-                <div className="absolute top-0 inset-x-0 h-1 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
-                <div className="absolute top-4 right-4">
-                  <CheckCircle2 className="w-5 h-5 text-primary" />
-                </div>
-                <p className="text-lg md:text-xl font-display font-bold mb-5">This program:</p>
-                <ul className="space-y-2.5 text-sm">
-                  {[
-                    "Website + CRM",
-                    "Lead capture + follow-up automation",
-                    "Review automation",
-                    "AI-powered response tools",
-                    "Unified inbox",
-                    "Connected client growth system",
-                  ].map((b) => (
-                    <li key={b} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <p className="mt-10 max-w-2xl mx-auto text-center text-base md:text-lg text-muted-foreground leading-relaxed">
-              <span className="text-foreground font-semibold">One connected system.</span>{" "}
-              Set up for you. Ready to work the day it goes live.
-            </p>
-          </div>
-        </section>
-
-        <section
-          id="roi"
-          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
-        >
-          <div className="container mx-auto px-4 max-w-6xl relative z-10">
-            <div className="text-center mb-12 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why This Free Website + Automation Pays for Itself Quickly
-              </h2>
-              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg">
-                For many local service businesses, one or two additional booked clients per month can cover the monthly subscription.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {roiCards.map((c, i) => (
-                <div
-                  key={i}
-                  className="rounded-2xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm p-7 text-center shadow-[0_20px_60px_-30px_hsl(20_60%_40%/0.25)]"
-                >
-                  <div className="w-14 h-14 rounded-2xl bg-[hsl(22_85%_60%/0.12)] border border-[hsl(22_85%_60%/0.3)] flex items-center justify-center mx-auto mb-4">
-                    <c.icon className="w-7 h-7 text-[hsl(22_85%_45%)]" />
-                  </div>
-                  <p className="text-[hsl(210_30%_22%)] text-base leading-relaxed">
-                    {c.body}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-xs text-[hsl(210_25%_40%)] text-center mt-8 max-w-3xl mx-auto">
-              Results vary by business, offer, pricing, responsiveness, and market demand. GrowSmallBiz does not guarantee a specific number of clients or revenue.
-            </p>
-          </div>
-        </section>
-
+        {/* 1. PRICING / VALUE STACK */}
         <section
           id="value"
           className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_60%_95%)_0%,hsl(20_55%_92%)_100%)]"
@@ -1043,7 +542,6 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            {/* Annual-only badge */}
             <div className="flex justify-center mb-10">
               <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[hsl(22_85%_50%)] text-white text-sm md:text-base font-bold shadow-[0_15px_40px_-10px_hsl(20_60%_40%/0.45)] uppercase tracking-wider">
                 <Sparkles className="w-4 h-4" /> Annual Enrollment Only
@@ -1052,7 +550,6 @@ const MothersDayCohort = () => {
 
             {/* Top comparison cards */}
             <div className="grid md:grid-cols-2 gap-6 mb-14">
-              {/* Standard */}
               <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/70 backdrop-blur-sm p-7 md:p-8">
                 <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(210_25%_45%)] mb-4">
                   Standard GrowSmallBiz Value
@@ -1064,20 +561,14 @@ const MothersDayCohort = () => {
                     { label: "Essentials Plan", value: "$297/month" },
                     { label: "Growth Plan", value: "$497/month" },
                   ].map((row) => (
-                    <li
-                      key={row.label}
-                      className="flex items-center justify-between py-3 text-[hsl(210_30%_25%)]"
-                    >
+                    <li key={row.label} className="flex items-center justify-between py-3 text-[hsl(210_30%_25%)]">
                       <span className="text-sm md:text-base">{row.label}</span>
-                      <span className="text-sm md:text-base line-through opacity-70">
-                        {row.value}
-                      </span>
+                      <span className="text-sm md:text-base line-through opacity-70">{row.value}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              {/* Mother's Day Appreciation Offer */}
               <div className="relative rounded-3xl border-2 border-[hsl(22_85%_60%)] bg-white shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.4)] p-7 md:p-8 overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
                 <p className="text-xs font-semibold uppercase tracking-wider mb-4 mt-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
@@ -1090,14 +581,9 @@ const MothersDayCohort = () => {
                     { label: "Essentials Special", value: "$1,164/year" },
                     { label: "Growth Special", value: "$2,364/year" },
                   ].map((row) => (
-                    <li
-                      key={row.label}
-                      className="flex items-center justify-between gap-3 py-3 text-[hsl(210_55%_14%)]"
-                    >
+                    <li key={row.label} className="flex items-center justify-between gap-3 py-3 text-[hsl(210_55%_14%)]">
                       <span className="text-sm md:text-base font-medium">{row.label}</span>
-                      <span className="text-sm md:text-base font-bold text-[hsl(22_85%_42%)] text-right">
-                        {row.value}
-                      </span>
+                      <span className="text-sm md:text-base font-bold text-[hsl(22_85%_42%)] text-right">{row.value}</span>
                     </li>
                   ))}
                 </ul>
@@ -1161,27 +647,21 @@ const MothersDayCohort = () => {
                     </div>
                   )}
 
-                  {/* 1. Plan name */}
                   <h3 className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
                     {c.title}
                   </h3>
 
-                  {/* 2. Annual price (LARGEST) */}
                   <div className="mb-2">
                     <span className="text-5xl md:text-6xl font-display font-black text-[hsl(22_85%_42%)] leading-none">
                       {c.annual}
                     </span>
-                    <span className="text-xl md:text-2xl font-bold text-[hsl(22_85%_42%)] ml-1">
-                      /year
-                    </span>
+                    <span className="text-xl md:text-2xl font-bold text-[hsl(22_85%_42%)] ml-1">/year</span>
                   </div>
 
-                  {/* 3. Monthly equivalent (smaller supporting badge) */}
                   <div className="mt-2 inline-flex self-start items-center px-3 py-1 rounded-full bg-[hsl(210_55%_14%/0.06)] border border-[hsl(210_55%_14%/0.12)] text-xs md:text-sm font-semibold text-[hsl(210_45%_25%)]">
                     Only {c.monthlyEq} equivalent
                   </div>
 
-                  {/* 4. Bold cost-perspective callout */}
                   <div className="relative mt-5 rounded-2xl overflow-hidden border-2 border-[hsl(22_85%_60%/0.5)] bg-[linear-gradient(135deg,hsl(30_85%_92%)_0%,hsl(350_75%_94%)_50%,hsl(22_85%_92%)_100%)] shadow-[0_15px_40px_-15px_hsl(20_60%_40%/0.3)]">
                     <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_55%),hsl(350_70%_60%),hsl(30_75%_55%)]" />
                     <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[linear-gradient(180deg,hsl(22_85%_55%),hsl(350_70%_60%))]" />
@@ -1198,12 +678,10 @@ const MothersDayCohort = () => {
                     </div>
                   </div>
 
-                  {/* 5. First-year investment */}
                   <div className="mt-5 inline-flex self-start px-4 py-2 rounded-full bg-[hsl(210_55%_14%)] text-white text-xs md:text-sm font-semibold">
                     {c.firstYear}
                   </div>
 
-                  {/* 6. Total first-year savings */}
                   <div className="mt-5 rounded-2xl bg-white/85 border border-[hsl(30_55%_85%)] p-5">
                     <p className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)]">
                       {c.savingsTotal}{" "}
@@ -1213,10 +691,7 @@ const MothersDayCohort = () => {
                     </p>
                     <ul className="mt-3 space-y-2">
                       {c.savingsRows.map((r) => (
-                        <li
-                          key={r}
-                          className="flex items-start gap-2 text-sm text-[hsl(210_30%_25%)]"
-                        >
+                        <li key={r} className="flex items-start gap-2 text-sm text-[hsl(210_30%_25%)]">
                           <CheckCircle2 className="w-4 h-4 mt-0.5 text-[hsl(22_85%_50%)] shrink-0" />
                           <span>{r}</span>
                         </li>
@@ -1224,7 +699,6 @@ const MothersDayCohort = () => {
                     </ul>
                   </div>
 
-                  {/* 7. Best for */}
                   <p className="mt-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
                     <span className="font-semibold text-[hsl(210_55%_14%)]">Best for: </span>
                     {c.bestFor}
@@ -1233,13 +707,12 @@ const MothersDayCohort = () => {
               ))}
             </div>
 
-            {/* Clarifications */}
             <div className="mt-8 grid md:grid-cols-2 gap-4">
               <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
-                The complimentary Starter Website is included only when you enroll in either the Essentials Special or Growth Special annual plan. It is not available as a standalone website-only offer.
+                The Complimentary Starter Website is included only when you enroll in either the Essentials Special or Growth Special annual plan. It is not available as a standalone website-only offer.
               </p>
               <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
-                The $1,000 Client Growth System Setup covers the configuration of the system behind your website — CRM, lead capture, pipeline setup, email and SMS follow-up, phone and calendar integration, review request automation, and hands-on launch support.
+                The $1,000 Client Growth System Setup covers the configuration of the Lead Automation System Included With Your Annual Plan — CRM, lead capture, pipeline setup, email and SMS follow-up, phone and calendar integration, review request automation, and hands-on launch support.
               </p>
             </div>
 
@@ -1253,7 +726,8 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        <section className="py-16 md:py-20 relative overflow-hidden bg-background-alt">
+        {/* 2. WHY WE EXTENDED THIS OFFER */}
+        <section id="extended" className="py-16 md:py-20 relative overflow-hidden bg-background-alt scroll-mt-20">
           <div className="absolute -top-16 -left-16 w-72 h-72 rounded-full bg-[hsl(22_85%_60%/0.08)] blur-3xl pointer-events-none" />
           <div className="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-[hsl(350_70%_72%/0.08)] blur-3xl pointer-events-none" />
           <div className="container mx-auto px-4 max-w-3xl relative z-10">
@@ -1262,7 +736,7 @@ const MothersDayCohort = () => {
                 Extended Through May 31, 2026 — or Until 5 Spots Are Filled
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why We Extended This Mother’s Day Offer for Small Businesses
+                Why We Extended This Mother’s Day Offer
               </h2>
             </div>
             <div className="rounded-3xl border border-border bg-card/70 backdrop-blur p-7 md:p-10 space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
@@ -1272,9 +746,7 @@ const MothersDayCohort = () => {
               <p>
                 Many mom-owned businesses are built in the margins — between client appointments, school schedules, family commitments, late-night planning, and constant follow-up.
               </p>
-              <p className="text-foreground">
-                That is why this offer stays open through May 31.
-              </p>
+              <p className="text-foreground">That is why this offer stays open through May 31.</p>
               <p>
                 This is a limited appreciation offer for 5 mom-owned local service businesses that want a professional website, faster follow-up, better lead tracking, and more time back in their day.
               </p>
@@ -1282,14 +754,15 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        <section className="py-16 md:py-20 relative">
+        {/* 3. MADE FOR MOM-OWNED SERVICE BUSINESSES LIKE YOURS */}
+        <section id="built-for" className="py-16 md:py-20 relative scroll-mt-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10 max-w-2xl mx-auto">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 Built For Mom-Owned Local Service Businesses
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Made For Businesses Like Yours
+                Made for Mom-Owned Service Businesses Like Yours
               </h2>
               <p className="text-muted-foreground">
                 If you run a local service business and juggle it alongside motherhood, this offer was designed with you in mind.
@@ -1312,9 +785,7 @@ const MothersDayCohort = () => {
                     />
                   </div>
                   <div className="p-5 text-center">
-                    <h3 className="text-base md:text-lg font-semibold text-foreground">
-                      {biz.label}
-                    </h3>
+                    <h3 className="text-base md:text-lg font-semibold text-foreground">{biz.label}</h3>
                   </div>
                 </div>
               ))}
@@ -1328,15 +799,482 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        <section id="pricing" className="py-20 scroll-mt-20">
-          <div className="container mx-auto px-4">
-            {/* Setup includes / integrations */}
-            <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-card p-7 md:p-8">
-              <h3 className="font-display font-bold text-xl md:text-2xl mb-2">
-                What the Onboarding Setup Includes
+        {/* 4. WHY LEADS SLIP THROUGH THE CRACKS */}
+        <section id="problem" className="relative overflow-hidden py-20 md:py-24 scroll-mt-20 bg-[linear-gradient(180deg,hsl(210_55%_8%)_0%,hsl(210_50%_11%)_100%)]">
+          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(22_85%_60%/0.10)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.08)] blur-3xl pointer-events-none" />
+
+          <div className="container mx-auto px-4 max-w-6xl relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                The Problem
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Why Leads Slip Through the Cracks for Small Businesses
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                You are great at what you do — and you are also the mom, the operator, and the front desk. The family priorities you cannot ignore are exactly when your business is quietly leaking revenue.
+              </p>
+            </div>
+
+            <div className="space-y-4 md:space-y-5">
+              {[
+                {
+                  causeIcon: PhoneCall,
+                  causeTitle: "School pickup, doctor visits, sick days",
+                  causeBody: "You can't answer the phone in the middle of carpool or a pediatrician waiting room.",
+                  leakIcon: PhoneMissed,
+                  leak: "Missed calls go to voicemail — and voicemails don't get returned fast enough.",
+                },
+                {
+                  causeIcon: Heart,
+                  causeTitle: "Cooking dinner, helping with homework",
+                  causeBody: "Evenings belong to your kids — not to refreshing your inbox.",
+                  leakIcon: Clock,
+                  leak: "Inquiries sit in an inbox for hours (or days) before someone responds.",
+                },
+                {
+                  causeIcon: Users,
+                  causeTitle: "Bedtime routine while buyers browse at night",
+                  causeBody: "Your best prospects research after 8pm — exactly when you are off the clock.",
+                  leakIcon: MessageSquare,
+                  leak: "Your website has no live chat — visitors leave without a trace.",
+                },
+                {
+                  causeIcon: Calendar,
+                  causeTitle: "Weekend family time, no bandwidth to chase",
+                  causeBody: "Saturdays are for soccer games, not for chasing leads who didn't book.",
+                  leakIcon: Mail,
+                  leak: "No system to follow up with leads who didn't book the first time.",
+                },
+                {
+                  causeIcon: Smartphone,
+                  causeTitle: "Juggling clients and kids — no time to ask",
+                  causeBody: "By the time the day ends, asking for a review is the last thing on your mind.",
+                  leakIcon: Star,
+                  leak: "Happy clients aren't being asked for reviews or referrals in a repeatable way.",
+                },
+                {
+                  causeIcon: Sparkles,
+                  causeTitle: "Running on intuition — no time to analyze",
+                  causeBody: "You feel where leads come from, but you have never had time to actually measure it.",
+                  leakIcon: TrendingUp,
+                  leak: "No dashboard showing where your leads come from, what converts, and what doesn't.",
+                },
+              ].map((row) => {
+                const CauseIcon = row.causeIcon;
+                const LeakIcon = row.leakIcon;
+                return (
+                  <div key={row.causeTitle} className="grid md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-5 items-stretch">
+                    <div className="flex gap-3 p-4 md:p-5 rounded-xl border border-[hsl(280_50%_75%/0.25)] bg-[hsl(280_40%_18%/0.35)]">
+                      <div className="w-10 h-10 shrink-0 rounded-lg bg-[hsl(280_60%_70%/0.15)] border border-[hsl(280_60%_70%/0.35)] flex items-center justify-center">
+                        <CauseIcon className="w-5 h-5 text-[hsl(280_70%_82%)]" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-[hsl(280_60%_78%)] mb-1">
+                          Mom-life moment
+                        </p>
+                        <h3 className="text-sm md:text-base font-display font-semibold text-foreground leading-snug mb-1">
+                          {row.causeTitle}
+                        </h3>
+                        <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{row.causeBody}</p>
+                      </div>
+                    </div>
+
+                    <div className="hidden md:flex items-center justify-center">
+                      <div className="w-9 h-9 rounded-full bg-primary/15 border border-primary/40 flex items-center justify-center">
+                        <ArrowRight className="w-4 h-4 text-primary" />
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3 p-4 md:p-5 rounded-xl border-2 border-primary/40 bg-primary/10 shadow-[0_0_18px_hsl(22_85%_60%/0.12)]">
+                      <div className="w-10 h-10 shrink-0 rounded-lg bg-primary/20 border border-primary/50 flex items-center justify-center">
+                        <LeakIcon className="w-5 h-5 text-primary" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-primary mb-1">
+                          Revenue leak
+                        </p>
+                        <p className="text-sm md:text-base font-semibold text-foreground leading-snug">{row.leak}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <p className="mt-12 max-w-3xl mx-auto text-center text-base md:text-lg text-muted-foreground leading-relaxed">
+              Each one of these is a leak. Together, they cost{" "}
+              <span className="text-foreground font-semibold">thousands every month</span>{" "}
+              — and most mom-owned businesses don't even realize it.
+            </p>
+          </div>
+        </section>
+
+        {/* 5. SPEED-TO-LEAD ANIMATION */}
+        <section className="py-20 scroll-mt-20 bg-background-alt">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Speed-to-Lead
+              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                From Website Form to Follow-Up in Seconds
+              </h2>
+              <p className="text-muted-foreground text-base md:text-lg">
+                The moment someone submits a form, the system takes over — so the lead is never sitting in a tab waiting for you.
+              </p>
+            </div>
+
+            <div className="relative rounded-3xl border border-border bg-card p-6 md:p-10 overflow-hidden">
+              <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-1 bg-[linear-gradient(90deg,transparent,hsl(22_85%_60%/0.5),transparent)] hidden md:block" />
+              <div className="grid md:grid-cols-3 gap-6 relative">
+                {[
+                  { icon: Globe, title: "Website Form Submitted", body: "Visitor fills out the form on your site." },
+                  { icon: Database, title: "Contact Created in CRM", body: "The lead is added, tagged, and routed automatically." },
+                  { icon: Mail, title: "Email + Text Sent Automatically", body: "An instant reply lands in their inbox and on their phone." },
+                ].map((step, i) => (
+                  <div key={step.title} className="relative">
+                    <div className="rounded-2xl border-2 border-primary/40 bg-background p-6 text-center shadow-[0_10px_30px_-12px_hsl(22_85%_55%/0.35)]">
+                      <div className="mx-auto w-14 h-14 rounded-2xl bg-primary/15 border border-primary/40 flex items-center justify-center mb-4 animate-pulse">
+                        <step.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <p className="text-[11px] font-bold uppercase tracking-widest text-primary mb-2">Step {i + 1}</p>
+                      <h3 className="font-display font-bold text-lg text-foreground mb-2">{step.title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{step.body}</p>
+                    </div>
+                    {i < 2 && (
+                      <div className="hidden md:flex absolute top-1/2 -right-3 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-primary text-primary-foreground items-center justify-center shadow-lg">
+                        <ArrowRight className="w-4 h-4" />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-primary/10 border-2 border-primary/40 text-foreground font-semibold text-sm md:text-base">
+                  <Zap className="w-4 h-4 text-primary" />
+                  No copying. No chasing. No forgetting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. AI LIVECHAT DEMO */}
+        <section className="py-20 scroll-mt-20">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                AI Livechat
+              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Let Your Website Answer Questions Even When You’re Busy
+              </h2>
+              <p className="text-muted-foreground text-base md:text-lg">
+                A live chat widget engages every visitor, captures their contact details, and guides them toward booking — without you having to be online.
+              </p>
+            </div>
+
+            <div className="max-w-2xl mx-auto rounded-3xl border border-border bg-card p-5 md:p-7 shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)]">
+              <div className="flex items-center gap-3 pb-4 border-b border-border mb-4">
+                <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center">
+                  <Bot className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground text-sm">Your Website Assistant</p>
+                  <p className="text-xs text-muted-foreground flex items-center gap-1">
+                    <span className="w-2 h-2 rounded-full bg-green-500 inline-block" /> Online now
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-3 text-sm">
+                <div className="flex justify-end">
+                  <div className="max-w-[80%] rounded-2xl rounded-tr-sm px-4 py-2.5 bg-primary text-primary-foreground">
+                    Hi! Do you have any openings this Saturday?
+                  </div>
+                </div>
+                <div className="flex justify-start">
+                  <div className="max-w-[80%] rounded-2xl rounded-tl-sm px-4 py-2.5 bg-muted text-foreground">
+                    Hi there! Yes — we have a few openings on Saturday afternoon. May I grab your name and best phone number so I can hold a spot for you?
+                  </div>
+                </div>
+                <div className="flex justify-end">
+                  <div className="max-w-[80%] rounded-2xl rounded-tr-sm px-4 py-2.5 bg-primary text-primary-foreground">
+                    Sara — 925-555-0143
+                  </div>
+                </div>
+                <div className="flex justify-start">
+                  <div className="max-w-[80%] rounded-2xl rounded-tl-sm px-4 py-2.5 bg-muted text-foreground">
+                    Thanks Sara! I’ve sent a booking link to your phone. Would 1pm or 3pm work better?
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 pt-2">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary">
+                    <CheckCircle2 className="w-3.5 h-3.5" /> Contact captured in CRM
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary">
+                    <Calendar className="w-3.5 h-3.5" /> Booking link sent
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 7. WHAT LEAD AUTOMATION HANDLES — visual system map */}
+        <section id="automation" className="py-20 scroll-mt-20 bg-background-alt relative overflow-hidden">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12 max-w-2xl mx-auto">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                One Connected System
+              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                What Lead Automation Handles
+              </h2>
+              <p className="text-muted-foreground text-base md:text-lg">
+                Lead Automation System Included With Your Annual Plan — every piece works together so nothing slips through.
+              </p>
+            </div>
+
+            <div className="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              {[
+                { icon: Smartphone, label: "Missed-call text-back" },
+                { icon: PhoneCall, label: "AI Voice Receptionist" },
+                { icon: Bot, label: "AI Livechat" },
+                { icon: Mail, label: "Lead form follow-up" },
+                { icon: MessageSquare, label: "Email & SMS nurture" },
+                { icon: Calendar, label: "Calendar scheduling" },
+                { icon: Star, label: "Review requests" },
+                { icon: Database, label: "CRM pipeline tracking" },
+                { icon: CreditCard, label: "Payment acceptance (when applicable)" },
+              ].map((node) => (
+                <div
+                  key={node.label}
+                  className="rounded-2xl border-2 border-[hsl(188_78%_50%_/_0.4)] bg-[hsl(210_45%_18%)] p-5 text-center hover:border-[hsl(188_78%_60%_/_0.8)] hover:shadow-[0_0_30px_hsl(188_78%_45%_/_0.35)] transition-all"
+                >
+                  <div className="mx-auto w-12 h-12 rounded-xl bg-[hsl(188_78%_41%_/_0.2)] border border-[hsl(188_78%_55%_/_0.4)] flex items-center justify-center mb-3">
+                    <node.icon className="w-6 h-6 text-[hsl(188_78%_70%)]" />
+                  </div>
+                  <p className="text-sm font-semibold text-foreground leading-tight">{node.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 8. DEMO WEBSITE PREVIEW */}
+        <section className="py-20 scroll-mt-20">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+              See It Live
+            </p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+              Preview a Sample Starter Website
+            </h2>
+            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-8">
+              See an example of the kind of professional, mobile-friendly service-business website GrowSmallBiz can build as part of this offer.
+            </p>
+            <Button
+              size="lg"
+              onClick={() => setDemoOpen(true)}
+              className="bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold hover:brightness-110 shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] border-0"
+            >
+              Preview Demo Website <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+            <p className="text-xs text-muted-foreground mt-5 max-w-2xl mx-auto italic">
+              Sample website shown for demonstration purposes. Final website is customized for your business, services, and brand.
+            </p>
+          </div>
+        </section>
+
+        {/* 9. REVIEWS + VIDEOS */}
+        <section
+          id="system"
+          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
+        >
+          <div className="absolute -top-20 right-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 left-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 max-w-6xl relative z-10">
+            <div className="text-center mb-10 max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                See the System Behind Your Complimentary Starter Website
+              </h2>
+              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
+                Your website is only the front door. GrowSmallBiz also sets up the connected system behind it — lead capture, CRM, follow-up automation, reviews, and AI-powered response tools.
+              </p>
+            </div>
+
+            <div className="mb-14">
+              <h3 className="text-xl md:text-2xl font-display font-bold text-center text-[hsl(210_55%_14%)] mb-6">
+                Recent Google Reviews
               </h3>
+              <div className="max-w-4xl mx-auto rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] p-3 md:p-6 overflow-hidden">
+                <iframe
+                  className="lc_reviews_widget w-full block"
+                  src="https://reputationhub.site/reputation/widgets/review_widget/4KL47iKeJZ2Ee05j7FBh"
+                  frameBorder={0}
+                  scrolling="no"
+                  style={{ minWidth: "100%", width: "100%" }}
+                  title="Recent Google Reviews"
+                />
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl md:text-2xl font-display font-bold text-center text-[hsl(210_55%_14%)] mb-6">
+                Watch How the System Works
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                {[
+                  {
+                    title: "Client Growth System Overview",
+                    sub: "See how the system helps organize leads, conversations, follow-up, reviews, and customer communication in one place.",
+                    src: "https://www.youtube-nocookie.com/embed/rJ289MZ0ugU",
+                  },
+                  {
+                    title: "AI Employee Demo",
+                    sub: "See how AI-powered response tools can help answer questions, capture information, and support faster follow-up.",
+                    src: "https://www.youtube-nocookie.com/embed/IkA8jPWgHxk",
+                  },
+                ].map((v) => (
+                  <div
+                    key={v.src}
+                    className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] overflow-hidden flex flex-col"
+                  >
+                    <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
+                      <iframe
+                        src={v.src}
+                        title={v.title}
+                        loading="lazy"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                        frameBorder={0}
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h4 className="font-display font-bold text-lg text-[hsl(210_55%_14%)] mb-2">{v.title}</h4>
+                      <p className="text-sm text-[hsl(210_30%_30%)] leading-relaxed">{v.sub}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 10. WHAT MAKES THIS DIFFERENT */}
+        <section id="different" className="py-20 scroll-mt-20">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <div className="text-center mb-10">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Compare
+              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Why This Is Not Just Another Website Offer
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-10 items-stretch">
+              <div className="relative rounded-2xl border border-dashed border-border bg-background-alt p-8 opacity-90">
+                <div className="absolute top-4 right-4">
+                  <XCircle className="w-5 h-5 text-muted-foreground/60" />
+                </div>
+                <p className="text-lg md:text-xl font-display font-bold text-muted-foreground mb-5">
+                  Most basic website offers:
+                </p>
+                <ul className="space-y-2.5 text-sm text-muted-foreground/90">
+                  {[
+                    "A website alone does not follow up with leads.",
+                    "A contact form alone does not organize opportunities.",
+                    "A phone number alone does not prevent missed calls.",
+                    "A happy customer alone does not guarantee a review.",
+                    "A CRM alone does not help unless it is set up properly.",
+                  ].map((b) => (
+                    <li key={b} className="flex items-start gap-2">
+                      <XCircle className="w-4 h-4 mt-0.5 text-muted-foreground/60 shrink-0" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="relative rounded-2xl border-2 border-primary bg-card p-8 shadow-[0_30px_70px_-20px_hsl(22_85%_50%/0.4)] overflow-hidden">
+                <div className="absolute top-0 inset-x-0 h-1 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
+                <div className="absolute top-4 right-4">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                </div>
+                <p className="text-lg md:text-xl font-display font-bold mb-5">This program:</p>
+                <ul className="space-y-2.5 text-sm">
+                  {[
+                    "Website + CRM",
+                    "Lead capture + follow-up automation",
+                    "Review automation",
+                    "AI-powered response tools",
+                    "Unified inbox",
+                    "Connected client growth system",
+                  ].map((b) => (
+                    <li key={b} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <p className="mt-10 max-w-2xl mx-auto text-center text-base md:text-lg text-muted-foreground leading-relaxed">
+              <span className="text-foreground font-semibold">One connected system.</span>{" "}
+              Set up for you. Ready to work the day it goes live.
+            </p>
+          </div>
+        </section>
+
+        {/* 11. ROI / PAYS FOR ITSELF */}
+        <section
+          id="roi"
+          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
+        >
+          <div className="container mx-auto px-4 max-w-6xl relative z-10">
+            <div className="text-center mb-12 max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Why the Website + Automation System Can Pay for Itself Quickly
+              </h2>
+              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg">
+                For many local service businesses, one or two additional booked clients per month can cover the monthly subscription.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {roiCards.map((c, i) => (
+                <div
+                  key={i}
+                  className="rounded-2xl border border-[hsl(30_55%_82%)] bg-white/85 backdrop-blur-sm p-7 text-center shadow-[0_20px_60px_-30px_hsl(20_60%_40%/0.25)]"
+                >
+                  <div className="w-14 h-14 rounded-2xl bg-[hsl(22_85%_60%/0.12)] border border-[hsl(22_85%_60%/0.3)] flex items-center justify-center mx-auto mb-4">
+                    <c.icon className="w-7 h-7 text-[hsl(22_85%_45%)]" />
+                  </div>
+                  <p className="text-[hsl(210_30%_22%)] text-base leading-relaxed">{c.body}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-xs text-[hsl(210_25%_40%)] text-center mt-8 max-w-3xl mx-auto">
+              Results vary by business, offer, pricing, responsiveness, and market demand. GrowSmallBiz does not guarantee a specific number of clients or revenue.
+            </p>
+          </div>
+        </section>
+
+        {/* 12. WHAT ONBOARDING SETUP INCLUDES */}
+        <section id="setup" className="py-20 scroll-mt-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-card p-7 md:p-8">
+              <h2 className="font-display font-bold text-2xl md:text-3xl mb-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                What the Onboarding Setup Includes
+              </h2>
               <p className="text-sm text-muted-foreground mb-5">
-                The one-time setup fee covers system configuration — not website design. Your Starter Website is included separately.
+                The one-time setup fee covers system configuration — not website design. Your Complimentary Starter Website is included separately.
               </p>
               <ul className="grid md:grid-cols-2 gap-3 mb-7">
                 {setupIncludes.map((s) => (
@@ -1367,15 +1305,47 @@ const MothersDayCohort = () => {
                 Core integrations are configured based on what your business actually uses.
               </p>
             </div>
+          </div>
+        </section>
 
-            {/* 30-day money back guarantee */}
-            <div className="max-w-5xl mx-auto mt-10 rounded-2xl border-2 border-primary/60 bg-card p-8 md:p-10 text-center shadow-[0_0_40px_hsl(22_85%_55%/0.25)]">
+        {/* 13. ABOUT GROWSMALLBIZ */}
+        <section id="about" className="py-20 scroll-mt-20 bg-background-alt">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                About GrowSmallBiz
+              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-bold bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                Built by a Local Agency That Understands Small Business Growth Systems
+              </h2>
+            </div>
+            <div className="rounded-3xl border border-border bg-card p-7 md:p-10 space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
+              <p>
+                GrowSmallBiz is a Danville-based digital marketing agency built for local service businesses that want more than a website.
+              </p>
+              <p>
+                We help small businesses connect the pieces that usually stay disconnected — website, CRM, lead capture, follow-up automation, reviews, AI Livechat, missed-call text-back, booking, and customer communication.
+              </p>
+              <p>
+                The goal is simple: help local business owners capture more opportunities, respond faster, save time, and turn more inquiries into booked clients.
+              </p>
+              <p className="text-foreground">
+                Founded by Subrata Guha after 30+ years in enterprise technology and marketing systems, GrowSmallBiz brings practical growth infrastructure to small businesses without enterprise complexity.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 14. GUARANTEE */}
+        <section id="guarantee" className="py-16 md:py-20 scroll-mt-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto rounded-2xl border-2 border-primary/60 bg-card p-8 md:p-10 text-center shadow-[0_0_40px_hsl(22_85%_55%/0.25)]">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/15 border border-primary/40 mb-5">
                 <ShieldCheck className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-display font-black uppercase tracking-tight text-3xl md:text-5xl mb-4 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+              <h2 className="font-display font-black uppercase tracking-tight text-3xl md:text-5xl mb-4 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
                 30 Days Money Back Guarantee
-              </h3>
+              </h2>
               <p className="text-base md:text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
                 If you're <strong>not satisfied for any reason</strong> within the first 30 days, we'll refund your money — <strong>no questions asked.</strong>
               </p>
@@ -1383,6 +1353,7 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        {/* 15. FAQ */}
         <section
           id="faq"
           className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_55%_94%)_0%,hsl(20_50%_92%)_100%)]"
@@ -1416,6 +1387,7 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        {/* 16. FINAL CTA */}
         <section
           id="apply"
           className="relative py-20 scroll-mt-20 overflow-hidden bg-[linear-gradient(135deg,hsl(210_55%_10%)_0%,hsl(210_50%_14%)_50%,hsl(20_50%_20%)_100%)]"
@@ -1433,18 +1405,18 @@ const MothersDayCohort = () => {
               5 Spots. This Offer Will Not Be Repeated.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, claim one of the 5 spots in this Mother’s Day Appreciation Offer.
+              If you are a mom-owned local service business and you are ready for a professional website, faster follow-up, fewer missed opportunities, and more time back in your day, apply for one of the 5 spots in this Mother’s Day Appreciation Offer.
             </p>
 
             <div className="rounded-2xl border border-[hsl(22_85%_60%/0.25)] bg-card/70 backdrop-blur p-6 md:p-8 mb-8 text-left shadow-2xl">
               <ul className="space-y-2.5 text-sm">
                 {[
-                  "Complimentary Starter Website — $2,500 value",
+                  "Complimentary Starter Website — $2,500 value (annual enrollment only)",
+                  "Lead Automation System Included With Your Annual Plan",
                   "Client Growth System Setup reduced to $1,000",
-                  "Essentials Plan: $97/month",
-                  "Growth Plan: $197/month",
+                  "Essentials Special: $1,164/year ($97/month equivalent)",
+                  "Growth Special: $2,364/year ($197/month equivalent)",
                   "Extended through May 31, 2026 — or until 5 spots are filled",
-                  "Spots are filled first-paid after the discovery call",
                 ].map((s) => (
                   <li key={s} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -1455,13 +1427,52 @@ const MothersDayCohort = () => {
             </div>
 
             <div className="flex justify-center mb-4">
-              <PrimaryCTA href={ctaUrl} />
+              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
             </div>
-            <p className="text-xs text-muted-foreground italic">
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              No credit card required. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot.
+            </p>
+            <p className="text-xs text-muted-foreground italic mt-3">
               Once these 5 spots are filled, this Mother’s Day Appreciation Offer will close.
             </p>
           </div>
         </section>
+
+        {/* DEMO WEBSITE MODAL */}
+        {demoOpen && (
+          <div
+            className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 md:p-6"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Sample Starter Website Preview"
+            onClick={() => setDemoOpen(false)}
+          >
+            <div
+              className="relative w-full max-w-6xl h-[90vh] bg-background rounded-2xl overflow-hidden border border-border shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="absolute top-0 inset-x-0 h-12 bg-card border-b border-border flex items-center justify-between px-4 z-10">
+                <p className="text-sm font-semibold text-foreground truncate">
+                  Sample Starter Website Preview · medspa-demo.growsmallbiz.io
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setDemoOpen(false)}
+                  className="text-sm font-bold text-muted-foreground hover:text-foreground px-3 py-1 rounded hover:bg-background"
+                  aria-label="Close preview"
+                >
+                  ✕ Close
+                </button>
+              </div>
+              <iframe
+                src="https://medspa-demo.growsmallbiz.io/"
+                title="Sample Starter Website Preview"
+                className="absolute inset-0 w-full h-full pt-12"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        )}
 
       </main>
 
