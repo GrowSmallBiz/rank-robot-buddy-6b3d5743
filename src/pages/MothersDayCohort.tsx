@@ -496,7 +496,7 @@ const MothersDayCohort = () => {
         <section aria-label="Proud Chamber of Commerce member" className="bg-white py-6 md:py-8 border-y border-black/5">
           <div className="container mx-auto px-4">
             <p className="text-center text-[11px] md:text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 mb-5">
-              Proud Member Of
+              GrowSmallBiz is Proud Member Of
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-14">
               {[
