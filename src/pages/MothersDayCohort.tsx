@@ -704,6 +704,48 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
+        {/* 1b. WHAT ONBOARDING SETUP INCLUDES (moved to follow pricing) */}
+        <section id="setup" className="py-20 scroll-mt-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-card p-7 md:p-8">
+              <h2 className="font-display font-bold text-2xl md:text-3xl mb-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                What the Onboarding Setup Includes
+              </h2>
+              <p className="text-sm text-muted-foreground mb-5">
+                The one-time setup fee covers system configuration — not website design. Your Complimentary Starter Website is included separately.
+              </p>
+              <ul className="grid md:grid-cols-2 gap-3 mb-7">
+                {setupIncludes.map((s) => (
+                  <li key={s.text} className="flex items-start gap-3 text-sm">
+                    <s.icon className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                    <span>{s.text}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="font-semibold mb-3 text-base">Core integrations may include:</p>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {integrations.map((i) => (
+                  <span
+                    key={i.name}
+                    className="text-sm font-semibold px-3.5 py-2 rounded-full bg-background border-2 transition-all hover:scale-105"
+                    style={{
+                      borderColor: `${i.color}80`,
+                      color: i.color,
+                      boxShadow: `0 0 12px ${i.color}33`,
+                    }}
+                  >
+                    {i.name}
+                  </span>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground italic">
+                Core integrations are configured based on what your business actually uses.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 2. WHY WE EXTENDED THIS OFFER */}
         <section id="extended" className="py-16 md:py-20 relative overflow-hidden bg-background-alt scroll-mt-20">
           <div className="absolute -top-16 -left-16 w-72 h-72 rounded-full bg-[hsl(22_85%_60%/0.08)] blur-3xl pointer-events-none" />
@@ -1176,48 +1218,6 @@ const MothersDayCohort = () => {
             <p className="text-xs text-[hsl(210_25%_40%)] text-center mt-8 max-w-3xl mx-auto">
               Results vary by business, offer, pricing, responsiveness, and market demand. GrowSmallBiz does not guarantee a specific number of clients or revenue.
             </p>
-          </div>
-        </section>
-
-        {/* 12. WHAT ONBOARDING SETUP INCLUDES */}
-        <section id="setup" className="py-20 scroll-mt-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-card p-7 md:p-8">
-              <h2 className="font-display font-bold text-2xl md:text-3xl mb-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                What the Onboarding Setup Includes
-              </h2>
-              <p className="text-sm text-muted-foreground mb-5">
-                The one-time setup fee covers system configuration — not website design. Your Complimentary Starter Website is included separately.
-              </p>
-              <ul className="grid md:grid-cols-2 gap-3 mb-7">
-                {setupIncludes.map((s) => (
-                  <li key={s.text} className="flex items-start gap-3 text-sm">
-                    <s.icon className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                    <span>{s.text}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <p className="font-semibold mb-3 text-base">Core integrations may include:</p>
-              <div className="flex flex-wrap gap-2 mb-3">
-                {integrations.map((i) => (
-                  <span
-                    key={i.name}
-                    className="text-sm font-semibold px-3.5 py-2 rounded-full bg-background border-2 transition-all hover:scale-105"
-                    style={{
-                      borderColor: `${i.color}80`,
-                      color: i.color,
-                      boxShadow: `0 0 12px ${i.color}33`,
-                    }}
-                  >
-                    {i.name}
-                  </span>
-                ))}
-              </div>
-              <p className="text-xs text-muted-foreground italic">
-                Core integrations are configured based on what your business actually uses.
-              </p>
-            </div>
           </div>
         </section>
 
