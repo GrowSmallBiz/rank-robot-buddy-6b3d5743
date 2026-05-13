@@ -387,6 +387,10 @@ const MothersDayCohort = () => {
                 Free Website + Lead Automation System for Small Businesses
               </p>
 
+              <p className="text-sm sm:text-base text-primary/80 mt-3 max-w-3xl mx-auto">
+                Complimentary Starter Website — $2,500 Value | Included when you enroll in an Essentials or Growth plan as part of this limited Mother’s Day Appreciation Offer.
+              </p>
+
               {/* Prominent deadline */}
               <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary/15 border-2 border-primary text-primary font-bold text-sm md:text-base shadow-[0_0_30px_hsl(22_85%_60%/0.25)]">
                 <Clock className="w-4 h-4 md:w-5 md:h-5" />
