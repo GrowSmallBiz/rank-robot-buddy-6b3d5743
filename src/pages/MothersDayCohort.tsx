@@ -75,9 +75,9 @@ const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
 
 const sectionNav = [
   { id: "value", label: "The Offer" },
-  
   { id: "built-for", label: "Built For" },
   { id: "problem", label: "Lead Leaks" },
+  { id: "leaky-bucket", label: "The Fix" },
   { id: "system", label: "The System" },
   { id: "different", label: "Why Different" },
   { id: "roi", label: "ROI" },
@@ -945,6 +945,120 @@ const MothersDayCohort = () => {
                   </div>
                 );
               })}
+            </div>
+
+            <p className="mt-12 max-w-3xl mx-auto text-center text-base md:text-lg text-muted-foreground leading-relaxed">
+              Each one of these is a leak. Together, they cost{" "}
+              <span className="text-foreground font-semibold">thousands every month</span>{" "}
+              — and most mom-owned businesses don't even realize it.
+            </p>
+          </div>
+        </section>
+
+        {/* LEAKY BUCKET FIX SECTION */}
+        <section id="leaky-bucket" className="relative overflow-hidden py-20 md:py-24 scroll-mt-20 bg-[linear-gradient(180deg,hsl(210_50%_11%)_0%,hsl(210_55%_8%)_100%)]">
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[hsl(22_85%_60%/0.10)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.08)] blur-3xl pointer-events-none" />
+
+          <div className="container mx-auto px-4 max-w-6xl relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <p className="font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                What You Get
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold leading-tight mb-5 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                How GrowSmallBiz Helps Your Small Business Stop Losing Leads
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                One connected system — built inside your own account — that captures enquiries, follows up instantly, books calls, and tracks everything. Here's what's included:
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-10 lg:gap-14 items-center">
+              {/* Leaky bucket image */}
+              <div className="relative order-1">
+                <div className="absolute -inset-6 rounded-[2rem] bg-[linear-gradient(135deg,hsl(22_85%_60%/0.18),hsl(188_78%_45%/0.18))] blur-3xl pointer-events-none" />
+                <div className="relative rounded-2xl overflow-hidden border border-primary/25 bg-card/40 p-4 md:p-6">
+                  <img
+                    src={leakyBucket}
+                    alt="Leaky bucket illustration showing local business leads spilling out through gaps in disconnected marketing tools"
+                    width={800}
+                    height={800}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-auto"
+                  />
+                  <p className="mt-4 flex items-center justify-center gap-2 text-center font-display font-semibold text-base md:text-lg bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                    We Fix Your Leaky Bucket
+                    <ArrowRight aria-hidden="true" className="hidden lg:inline w-5 h-5 shrink-0 text-[hsl(22_90%_72%)]" />
+                    <ArrowDown aria-hidden="true" className="lg:hidden w-5 h-5 shrink-0 text-[hsl(22_90%_72%)]" />
+                  </p>
+                </div>
+              </div>
+
+              {/* The Fix — Minimum AI Package */}
+              <div className="order-2 min-w-0">
+                <ul className="space-y-3">
+                  {[
+                    {
+                      icon: PhoneCall,
+                      title: "AI Voice (Missed Call Handling)",
+                      body: "When you miss a call, AI picks up. It answers common questions, qualifies the caller, and books appointments — so you never lose a lead to voicemail again.",
+                    },
+                    {
+                      icon: MessageSquare,
+                      title: "Missed Call SMS Text Back",
+                      body: "If a call goes unanswered, the system instantly texts the caller back. Most people reply to a text faster than they listen to a voicemail.",
+                    },
+                    {
+                      icon: Globe,
+                      title: "AI Website / Landing Page + Opt-in",
+                      body: "A high-converting one-page website designed to capture leads. Built to load fast, look professional, and drive action.",
+                    },
+                    {
+                      icon: Bot,
+                      title: "AI Webchat",
+                      body: "A chat widget on your website that engages visitors in real time, answers questions, and captures contact details — even when you're not online.",
+                    },
+                    {
+                      icon: Database,
+                      title: "CRM Setup (Basic)",
+                      body: "Your leads, conversations, and pipeline — all in one place. No more spreadsheets or scattered notes.",
+                    },
+                    {
+                      icon: Star,
+                      title: "Reviews System",
+                      body: "Automatically requests reviews from happy clients and follows up if they haven't left one. A repeatable process, not a one-off ask.",
+                    },
+                    {
+                      icon: Users,
+                      title: "Referrals System",
+                      body: "Prompts satisfied clients to refer others, with automated follow-up. Turns word of mouth into a system.",
+                    },
+                    {
+                      icon: TrendingUp,
+                      title: "KPI Dashboard & Tracking",
+                      body: "See where your leads come from, what converts, and what needs attention. One screen. Real-time data.",
+                    },
+                  ].map((item) => {
+                    const ItemIcon = item.icon;
+                    return (
+                      <li key={item.title} className="flex gap-3">
+                        <div className="w-9 h-9 shrink-0 rounded-lg bg-primary/15 border border-primary/40 flex items-center justify-center">
+                          <ItemIcon className="w-[18px] h-[18px] text-primary" />
+                        </div>
+                        <div className="min-w-0">
+                          <h4 className="text-sm md:text-base font-display font-bold text-foreground leading-snug">
+                            {item.title}
+                          </h4>
+                          <p className="text-xs md:text-sm text-muted-foreground leading-relaxed mt-0.5">
+                            {item.body}
+                          </p>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
 
             <p className="mt-12 max-w-3xl mx-auto text-center text-base md:text-lg text-muted-foreground leading-relaxed">
