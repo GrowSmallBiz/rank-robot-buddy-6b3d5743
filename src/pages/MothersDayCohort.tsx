@@ -1471,7 +1471,7 @@ const MothersDayCohort = () => {
                     <div className="rounded-lg border border-border bg-background-alt/60 p-4 my-2">
                       <p className="text-xs uppercase tracking-wide text-muted-foreground font-semibold mb-1">First-Year Investment</p>
                       <p className="text-base text-foreground">
-                        <span className="font-bold">$1,000</span> setup + <span className="font-bold">${isAnnual ? '1,970' : '2,364'}</span> plan = <span className="font-bold text-primary">${isAnnual ? '2,970' : '3,364'}</span>
+                        <span className="font-bold">$1,000</span> setup + <span className="font-bold">$2,364</span> plan = <span className="font-bold text-primary">$3,364</span>
                       </p>
                     </div>
 
@@ -1479,7 +1479,7 @@ const MothersDayCohort = () => {
                     <div className="rounded-lg border border-primary/30 bg-primary/5 p-4 my-2">
                       <p className="text-xs uppercase tracking-wide text-primary font-semibold mb-1">Total Promotional Value</p>
                       <p className="text-base text-foreground">
-                        You save <span className="font-bold text-primary">${isAnnual ? '6,994' : '6,600'}</span> in your first year compared to standard pricing
+                        You save <span className="font-bold text-primary">$6,600</span> in your first year compared to standard pricing
                       </p>
                     </div>
 
