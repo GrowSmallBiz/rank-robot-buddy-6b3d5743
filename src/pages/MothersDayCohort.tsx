@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
+import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
 import {
   Accordion,
   AccordionContent,
