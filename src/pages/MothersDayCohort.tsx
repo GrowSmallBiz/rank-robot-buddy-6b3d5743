@@ -1446,7 +1446,7 @@ const MothersDayCohort = () => {
                         <span className="line-through text-red-500 font-bold text-xl md:text-2xl">{growRegular}</span>
                       </p>
                       <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-500/15 border border-green-500/40 text-green-400 text-sm font-bold">
-                        💰 Save {isAnnual ? "$2,000" : "$2,400"}/year
+                        💰 Save {isAnnual ? "$2,606" : "$3,600"}/year
                       </div>
                     </div>
 
