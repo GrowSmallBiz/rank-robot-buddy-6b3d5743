@@ -5,7 +5,7 @@ import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
-import { AiLivechatDemo } from "@/components/sections/AiLivechatDemo";
+import { AiBusyMomDemo } from "@/components/sections/AiBusyMomDemo";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
   Accordion,
@@ -934,22 +934,22 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        {/* 6. AI LIVECHAT DEMO */}
+        {/* 6. AI WHILE WITH A CLIENT — Voice + Chat in parallel */}
         <section className="py-20 scroll-mt-20">
-          <div className="container mx-auto px-4 max-w-5xl">
+          <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-12 max-w-3xl mx-auto">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                AI Livechat
+                AI That Works While You Work
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Let Your Website Answer Questions Even When You’re Busy
+                While You’re With a Client, AI Answers Every Call and Chat
               </h2>
               <p className="text-muted-foreground text-base md:text-lg">
-                A live chat widget engages every visitor, captures their contact details, and guides them toward booking — without you having to be online.
+                You can’t pause a massage to grab the phone or reply to a website visitor. Your Voice AI and Website Live Chat handle both — answering questions, qualifying leads, and booking appointments — so no opportunity slips by while you’re in session.
               </p>
             </div>
 
-            <AiLivechatDemo />
+            <AiBusyMomDemo />
           </div>
         </section>
 
