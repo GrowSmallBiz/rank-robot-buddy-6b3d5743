@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Bot, CheckCircle2, Calendar, Phone, PhoneCall, Smartphone } from "lucide-react";
+import { Bot, CheckCircle2, Calendar, Phone, PhoneCall, Smartphone, Sparkles } from "lucide-react";
 import therapistImage from "@/assets/cohort/therapist-in-session.webp";
 
 type Msg = { from: "user" | "ai"; text: string };
@@ -105,14 +105,20 @@ export const AiBusyMomDemo = () => {
   }, [reduced]);
 
   return (
-    <div
-      ref={containerRef}
-      className="grid lg:grid-cols-[1fr_1.1fr_1fr] gap-5 md:gap-6 items-stretch"
-    >
-      <VoiceCallPanel />
-      <TherapistCard />
-      <ChatPanel state={chat} />
-    </div>
+    <>
+      <div
+        ref={containerRef}
+        className="grid lg:grid-cols-[1fr_1.1fr_1fr] gap-5 md:gap-6 items-stretch"
+      >
+        <VoiceCallPanel />
+        <TherapistCard />
+        <ChatPanel state={chat} />
+      </div>
+      <h3 className="mt-10 text-center text-xl md:text-2xl font-display font-semibold text-foreground max-w-2xl mx-auto flex items-center justify-center gap-2.5">
+        <Sparkles className="w-5 h-5 text-primary shrink-0" />
+        Your next appointment is booked while you give uninterrupted attention to your client.
+      </h3>
+    </>
   );
 };
 
