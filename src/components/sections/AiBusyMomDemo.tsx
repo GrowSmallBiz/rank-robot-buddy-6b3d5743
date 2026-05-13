@@ -266,7 +266,10 @@ const VoiceCallPanel = () => {
 
                 {/* Name + status */}
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-foreground truncate">{caller.name}</p>
+                  <p className="text-sm font-medium text-foreground truncate flex items-center gap-1.5">
+                    <Smartphone className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
+                    {caller.name}
+                  </p>
                   <p className="text-[11px] text-muted-foreground">
                     {isConnected ? "Appointment booked" : isActive ? "Speaking with AI..." : "Waiting..."}
                   </p>
