@@ -1543,7 +1543,7 @@ const MothersDayCohort = () => {
               <ul className="space-y-2">
                 <li>
                   <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Claim Your Spot
+                    Apply for a Spot
                   </a>
                 </li>
                 <li>
