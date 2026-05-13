@@ -25,7 +25,6 @@ type PanelState = {
 const initialPanel: PanelState = { visible: 0, typing: null, done: false };
 
 export const AiBusyMomDemo = () => {
-  const [voice, setVoice] = useState<PanelState>(initialPanel);
   const [chat, setChat] = useState<PanelState>(initialPanel);
   const [reduced, setReduced] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -54,7 +53,6 @@ export const AiBusyMomDemo = () => {
 
   useEffect(() => {
     if (reduced) {
-      setVoice({ visible: VOICE_SCRIPT.length, typing: null, done: true });
       setChat({ visible: CHAT_SCRIPT.length, typing: null, done: true });
       return;
     }
@@ -72,7 +70,7 @@ export const AiBusyMomDemo = () => {
 
     const playPanel = async (
       script: Msg[],
-      setter: typeof setVoice,
+      setter: typeof setChat,
       offsetMs: number
     ) => {
       if (offsetMs) await wait(offsetMs);
@@ -90,14 +88,10 @@ export const AiBusyMomDemo = () => {
 
     const run = async () => {
       while (!cancelled) {
-        setVoice(initialPanel);
         setChat(initialPanel);
         await waitForView();
         await wait(400);
-        await Promise.all([
-          playPanel(VOICE_SCRIPT, setVoice, 0),
-          playPanel(CHAT_SCRIPT, setChat, CHAT_OFFSET_MS),
-        ]);
+        await playPanel(CHAT_SCRIPT, setChat, 0);
         if (cancelled) return;
         await wait(HOLD_MS);
       }
@@ -115,7 +109,7 @@ export const AiBusyMomDemo = () => {
       ref={containerRef}
       className="grid lg:grid-cols-[1fr_1.1fr_1fr] gap-5 md:gap-6 items-stretch"
     >
-      <VoiceCallPanel state={voice} />
+      <VoiceCallPanel />
       <TherapistCard />
       <ChatPanel state={chat} />
     </div>
