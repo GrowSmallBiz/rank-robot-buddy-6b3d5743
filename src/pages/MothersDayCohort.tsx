@@ -76,7 +76,7 @@ const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
 
 const sectionNav = [
   { id: "value", label: "The Offer" },
-  { id: "extended", label: "Why Extended" },
+  
   { id: "built-for", label: "Built For" },
   { id: "problem", label: "Lead Leaks" },
   { id: "system", label: "The System" },
@@ -527,17 +527,17 @@ const MothersDayCohort = () => {
             </div>
 
             {/* Top comparison cards */}
-            <div className="grid md:grid-cols-2 gap-6 mb-14">
+            <div className="grid md:grid-cols-2 gap-6 mb-10">
               <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/70 backdrop-blur-sm p-7 md:p-8">
                 <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(210_25%_45%)] mb-4">
-                  Standard GrowSmallBiz Value
+                  Standard GrowSmallBiz Annual Value
                 </p>
                 <ul className="divide-y divide-[hsl(30_45%_85%)]">
                   {[
                     { label: "Starter Website", value: "$2,500" },
                     { label: "Client Growth System Setup", value: "$1,500" },
-                    { label: "Essentials Plan", value: "$297/month" },
-                    { label: "Growth Plan", value: "$497/month" },
+                    { label: "Essentials Annual Plan", value: "$2,970/year" },
+                    { label: "Growth Annual Plan", value: "$4,970/year" },
                   ].map((row) => (
                     <li key={row.label} className="flex items-center justify-between py-3 text-[hsl(210_30%_25%)]">
                       <span className="text-sm md:text-base">{row.label}</span>
@@ -556,8 +556,8 @@ const MothersDayCohort = () => {
                   {[
                     { label: "Starter Website", value: "Complimentary" },
                     { label: "Client Growth System Setup", value: "$1,000" },
-                    { label: "Essentials Special", value: "$1,164/year" },
-                    { label: "Growth Special", value: "$2,364/year" },
+                    { label: "Essentials Special", value: "$970/year" },
+                    { label: "Growth Special", value: "$1,970/year" },
                   ].map((row) => (
                     <li key={row.label} className="flex items-center justify-between gap-3 py-3 text-[hsl(210_55%_14%)]">
                       <span className="text-sm md:text-base font-medium">{row.label}</span>
@@ -566,9 +566,19 @@ const MothersDayCohort = () => {
                   ))}
                 </ul>
                 <p className="mt-4 text-xs md:text-sm text-[hsl(210_30%_30%)] italic">
-                  Monthly equivalents: Essentials $97/month · Growth $197/month
+                  Annual-only special pricing. Equivalent to $97/month for Essentials and $197/month for Growth, with 2 months included.
                 </p>
               </div>
+            </div>
+
+            {/* Why this is still open — small inline callout */}
+            <div className="max-w-4xl mx-auto mb-12 rounded-2xl border border-[hsl(22_85%_60%/0.35)] bg-white/75 backdrop-blur-sm p-5 md:p-6 shadow-[0_15px_40px_-20px_hsl(20_60%_40%/0.3)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
+                Why this is still open
+              </p>
+              <p className="text-sm md:text-base text-[hsl(210_30%_22%)] leading-relaxed">
+                Mother’s Day is one day. Running a business while being a mom is every day. We extended this appreciation offer through May 31 for 5 mom-owned local service businesses.
+              </p>
             </div>
 
             {/* Plan cards */}
@@ -576,17 +586,17 @@ const MothersDayCohort = () => {
               {[
                 {
                   title: "Essentials Special",
-                  annual: "$1,164",
+                  annual: "$970",
                   monthlyEq: "$97/month",
                   calloutHeadline: "Less Than One Nice Dinner Out Each Month",
                   calloutBody:
                     "For less than one dinner out each month, your business gets a website, CRM, unified inbox, review automation, and follow-up foundation working behind the scenes.",
-                  firstYear: "First-year investment with setup: $2,164",
-                  savingsTotal: "$5,400",
+                  firstYear: "First-year investment with setup: $1,970",
+                  savingsTotal: "$5,000",
                   savingsRows: [
                     "$2,500 Starter Website included",
                     "$500 setup savings",
-                    "$2,400 subscription savings over 12 months",
+                    "$2,000 annual plan savings",
                   ],
                   bestFor:
                     "Best for mom-owned businesses that want a professional website, CRM, reviews, unified inbox, and follow-up foundation in place.",
@@ -594,17 +604,17 @@ const MothersDayCohort = () => {
                 },
                 {
                   title: "Growth Special",
-                  annual: "$2,364",
+                  annual: "$1,970",
                   monthlyEq: "$197/month",
                   calloutHeadline: "About the Cost of One Spa Visit Each Month",
                   calloutBody:
                     "For about the cost of one spa visit each month, your business gets AI-powered response tools that help answer questions, capture leads, follow up, and book appointments — even when you are with a client, with your family, or finally taking a break.",
-                  firstYear: "First-year investment with setup: $3,364",
-                  savingsTotal: "$6,600",
+                  firstYear: "First-year investment with setup: $2,970",
+                  savingsTotal: "$6,000",
                   savingsRows: [
                     "$2,500 Starter Website included",
                     "$500 setup savings",
-                    "$3,600 subscription savings over 12 months",
+                    "$3,000 annual plan savings",
                   ],
                   bestFor:
                     "Best for mom-owned businesses that want AI-powered response, missed-call text-back, AI Livechat, faster lead handling, and after-hours support.",
@@ -637,7 +647,7 @@ const MothersDayCohort = () => {
                   </div>
 
                   <div className="mt-2 inline-flex self-start items-center px-3 py-1 rounded-full bg-[hsl(210_55%_14%/0.06)] border border-[hsl(210_55%_14%/0.12)] text-xs md:text-sm font-semibold text-[hsl(210_45%_25%)]">
-                    Only {c.monthlyEq} equivalent
+                    Equivalent to {c.monthlyEq} with 2 months included
                   </div>
 
                   <div className="relative mt-5 rounded-2xl overflow-hidden border-2 border-[hsl(22_85%_60%/0.5)] bg-[linear-gradient(135deg,hsl(30_85%_92%)_0%,hsl(350_75%_94%)_50%,hsl(22_85%_92%)_100%)] shadow-[0_15px_40px_-15px_hsl(20_60%_40%/0.3)]">
@@ -690,8 +700,16 @@ const MothersDayCohort = () => {
                 The Complimentary Starter Website is included only when you enroll in either the Essentials Special or Growth Special annual plan. It is not available as a standalone website-only offer.
               </p>
               <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
-                The $1,000 Client Growth System Setup covers the configuration of the Lead Automation System Included With Your Annual Plan — CRM, lead capture, pipeline setup, email and SMS follow-up, phone and calendar integration, review request automation, and hands-on launch support.
+                The $1,000 Client Growth System Setup covers the configuration of the system behind your website — CRM, lead capture, pipeline setup, email and SMS follow-up, phone and calendar integration, review request automation, and hands-on launch support.
               </p>
+            </div>
+
+            <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic max-w-3xl mx-auto">
+              This Mother’s Day Appreciation Offer is limited to 5 selected mom-owned businesses and will not be repeated after this campaign closes.
+            </p>
+
+            <div className="flex justify-center mt-8">
+              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
             </div>
 
             <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic max-w-3xl mx-auto">
@@ -746,33 +764,7 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        {/* 2. WHY WE EXTENDED THIS OFFER */}
-        <section id="extended" className="py-16 md:py-20 relative overflow-hidden bg-background-alt scroll-mt-20">
-          <div className="absolute -top-16 -left-16 w-72 h-72 rounded-full bg-[hsl(22_85%_60%/0.08)] blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-[hsl(350_70%_72%/0.08)] blur-3xl pointer-events-none" />
-          <div className="container mx-auto px-4 max-w-3xl relative z-10">
-            <div className="text-center mb-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Extended Through May 31, 2026 — or Until 5 Spots Are Filled
-              </p>
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Why We Extended This Mother’s Day Offer
-              </h2>
-            </div>
-            <div className="rounded-3xl border border-border bg-card/70 backdrop-blur p-7 md:p-10 space-y-5 text-base md:text-lg leading-relaxed text-muted-foreground">
-              <p className="text-foreground font-medium">
-                Mother’s Day is one day. Running a business while being a mom is every day.
-              </p>
-              <p>
-                Many mom-owned businesses are built in the margins — between client appointments, school schedules, family commitments, late-night planning, and constant follow-up.
-              </p>
-              <p className="text-foreground">That is why this offer stays open through May 31.</p>
-              <p>
-                This is a limited appreciation offer for 5 mom-owned local service businesses that want a professional website, faster follow-up, better lead tracking, and more time back in their day.
-              </p>
-            </div>
-          </div>
-        </section>
+        {/* 2. WHY WE EXTENDED — replaced by inline callout in pricing section */}
 
         {/* 3. MADE FOR MOM-OWNED SERVICE BUSINESSES LIKE YOURS */}
         <section id="built-for" className="py-16 md:py-20 relative scroll-mt-20">
