@@ -351,9 +351,7 @@ const MothersDayCohort = () => {
             ))}
           </nav>
           <a
-            href={ctaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#apply-form"
             className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
           >
             Claim Spot <ArrowRight className="w-4 h-4" />
@@ -475,7 +473,7 @@ const MothersDayCohort = () => {
             <div className="max-w-3xl mx-auto mt-10 md:mt-12 text-center">
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center mb-4">
                 <PrimaryCTA
-                  href={ctaUrl}
+                  href="#apply-form"
                   label="Apply for One of the 5 Spots"
                   className="w-full sm:w-auto whitespace-normal text-center leading-tight h-auto py-3"
                 />
@@ -728,7 +726,7 @@ const MothersDayCohort = () => {
 
                   {/* 8. CTA inside each card */}
                   <div className="mt-auto pt-6">
-                    <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" full />
+                    <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" full />
                   </div>
                 </div>
               ))}
@@ -749,7 +747,7 @@ const MothersDayCohort = () => {
             </p>
 
             <div className="flex justify-center mt-8">
-              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
+              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
             </div>
 
             {/* Tax footnote */}
@@ -1528,7 +1526,7 @@ const MothersDayCohort = () => {
             </div>
 
             <div className="mt-8 flex justify-center">
-              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
+              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
             </div>
           </div>
         </section>
@@ -1573,7 +1571,7 @@ const MothersDayCohort = () => {
             </div>
 
             <div className="flex justify-center mb-4">
-              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
+              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
             </div>
             <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               No credit card required. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot.
