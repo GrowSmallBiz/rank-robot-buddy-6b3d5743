@@ -118,15 +118,94 @@ export const AiBusyMomDemo = () => {
 
 /* ---------------- Voice Call Panel ---------------- */
 
-const VoiceCallPanel = ({ state }: { state: PanelState }) => {
-  const scrollRef = useRef<HTMLDivElement>(null);
+const CALLERS = [
+  { name: "Sarah", initial: "S", gender: "female" as const },
+  { name: "Mike", initial: "M", gender: "male" as const },
+  { name: "Jen", initial: "J", gender: "female" as const },
+];
+
+const VoiceCallPanel = () => {
+  const [activeIdx, setActiveIdx] = useState<number | null>(null);
+  const [connectedMask, setConnectedMask] = useState(0);
+  const [reduced, setReduced] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const inViewRef = useRef(false);
+
   useEffect(() => {
-    const sc = scrollRef.current;
-    if (sc) sc.scrollTo({ top: sc.scrollHeight, behavior: "smooth" });
-  }, [state.visible, state.typing, state.done]);
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduced(mq.matches);
+    const h = (e: MediaQueryListEvent) => setReduced(e.matches);
+    mq.addEventListener("change", h);
+    return () => mq.removeEventListener("change", h);
+  }, []);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        inViewRef.current = entry.isIntersecting;
+      },
+      { threshold: 0.3 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (reduced) {
+      setConnectedMask(0b111);
+      setActiveIdx(null);
+      return;
+    }
+
+    let cancelled = false;
+    const timeouts: number[] = [];
+    const wait = (ms: number) =>
+      new Promise<void>((resolve) => {
+        const id = window.setTimeout(resolve, ms);
+        timeouts.push(id);
+      });
+    const waitForView = async () => {
+      while (!inViewRef.current && !cancelled) await wait(300);
+    };
+
+    const run = async () => {
+      while (!cancelled) {
+        setActiveIdx(null);
+        setConnectedMask(0);
+        await waitForView();
+        await wait(500);
+
+        for (let i = 0; i < CALLERS.length; i++) {
+          if (cancelled) return;
+          setActiveIdx(i);
+          await wait(1600);
+          if (cancelled) return;
+          setConnectedMask((m) => m | (1 << i));
+          await wait(500);
+        }
+
+        setActiveIdx(null);
+        if (cancelled) return;
+        await wait(3200);
+      }
+    };
+
+    run();
+    return () => {
+      cancelled = true;
+      timeouts.forEach((id) => clearTimeout(id));
+    };
+  }, [reduced]);
+
+  const allConnected = connectedMask === 0b111;
 
   return (
-    <div className="rounded-3xl border border-border bg-card p-5 md:p-6 shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] flex flex-col">
+    <div
+      ref={containerRef}
+      className="rounded-3xl border border-border bg-card p-5 md:p-6 shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.25)] flex flex-col"
+    >
       <div className="flex items-center gap-3 pb-4 border-b border-border mb-4">
         <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center">
           <PhoneCall className="w-5 h-5 text-primary" />
@@ -135,7 +214,7 @@ const VoiceCallPanel = ({ state }: { state: PanelState }) => {
           <p className="font-semibold text-foreground text-sm">AI Voice Receptionist</p>
           <p className="text-xs text-muted-foreground flex items-center gap-1">
             <span className="w-2 h-2 rounded-full bg-green-500 inline-block animate-pulse" />
-            {state.done ? "Call ended" : "On call"}
+            {allConnected ? "All calls connected" : "Answering calls..."}
           </p>
         </div>
         <span className="text-[10px] uppercase tracking-wider font-semibold text-primary/80 bg-primary/10 px-2 py-1 rounded-md">
@@ -143,40 +222,95 @@ const VoiceCallPanel = ({ state }: { state: PanelState }) => {
         </span>
       </div>
 
-      <div
-        ref={scrollRef}
-        className="space-y-3 text-sm min-h-[300px] md:min-h-[340px] max-h-[400px] overflow-hidden flex-1"
-      >
-        {VOICE_SCRIPT.slice(0, state.visible).map((m, i) => (
-          <div
-            key={i}
-            className={`flex ${m.from === "user" ? "justify-end" : "justify-start"} animate-fade-in`}
-          >
-            <div
-              className={`max-w-[85%] rounded-2xl px-3.5 py-2 text-[13px] leading-snug ${
-                m.from === "user"
-                  ? "rounded-tr-sm bg-muted/80 text-foreground border border-border"
-                  : "rounded-tl-sm bg-primary/15 text-foreground border border-primary/30"
-              }`}
-            >
-              <span className="block text-[10px] uppercase tracking-wider opacity-60 mb-0.5">
-                {m.from === "user" ? "Caller" : "AI"}
-              </span>
-              {m.text}
-            </div>
+      {/* Robot center */}
+      <div className="flex flex-col items-center flex-1 min-h-[280px]">
+        <div className="relative mb-6">
+          <div className="w-16 h-16 rounded-2xl bg-primary/20 border-2 border-primary/40 flex items-center justify-center shadow-lg shadow-primary/20">
+            <Bot className="w-8 h-8 text-primary" />
           </div>
-        ))}
+          {allConnected && (
+            <>
+              <div className="absolute inset-0 rounded-2xl border-2 border-primary/30 animate-[ping_1.5s_ease-out_infinite]" />
+              <div className="absolute -inset-3 rounded-2xl border border-primary/20 animate-[ping_1.5s_ease-out_infinite_0.4s]" />
+            </>
+          )}
+        </div>
 
-        {state.typing && (
-          <TypingBubble side={state.typing === "user" ? "right" : "left"} tone="voice" />
-        )}
+        {/* Caller lanes */}
+        <div className="w-full space-y-2.5">
+          {CALLERS.map((caller, i) => {
+            const isActive = activeIdx === i;
+            const isConnected = (connectedMask & (1 << i)) !== 0;
 
-        {state.done && (
-          <div className="flex flex-wrap items-center gap-2.5 pt-2 animate-fade-in">
-            <Badge icon={Calendar} text="Appointment booked" />
-            <Badge icon={CheckCircle2} text="Added to CRM" />
+            return (
+              <div
+                key={caller.name}
+                className={`flex items-center gap-3 rounded-xl px-3 py-2 border transition-all duration-500 ${
+                  isConnected
+                    ? "border-primary/40 bg-primary/5"
+                    : isActive
+                    ? "border-border bg-muted/30"
+                    : "border-transparent bg-transparent"
+                }`}
+              >
+                {/* Avatar */}
+                <div
+                  className={`w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold shrink-0 transition-colors duration-500 ${
+                    caller.gender === "female"
+                      ? "bg-[hsl(350_75%_82%_/_0.18)] text-[hsl(350_75%_82%)] border border-[hsl(350_75%_82%_/_0.35)]"
+                      : "bg-[hsl(199_89%_48%_/_0.18)] text-[hsl(199_89%_48%)] border border-[hsl(199_89%_48%_/_0.35)]"
+                  }`}
+                >
+                  {caller.initial}
+                </div>
+
+                {/* Name + status */}
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-medium text-foreground truncate">{caller.name}</p>
+                  <p className="text-[11px] text-muted-foreground">
+                    {isConnected ? "Appointment booked" : isActive ? "Speaking with AI..." : "Waiting..."}
+                  </p>
+                </div>
+
+                {/* Sound wave bars */}
+                <div className="flex items-end gap-[3px] h-5">
+                  {[0, 1, 2, 3, 4].map((bar) => (
+                    <div
+                      key={bar}
+                      className={`w-[3px] rounded-full ${
+                        isActive || isConnected
+                          ? "bg-primary/70 animate-bounce"
+                          : "bg-muted-foreground/20"
+                      }`}
+                      style={{
+                        height: bar % 2 === 0 ? "60%" : "40%",
+                        animationDelay: `${bar * 120}ms`,
+                      }}
+                    />
+                  ))}
+                </div>
+
+                {/* Check when connected */}
+                {isConnected && (
+                  <CheckCircle2 className="w-5 h-5 text-primary shrink-0 animate-fade-in" />
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Bottom stats */}
+        <div className="mt-auto pt-3 border-t border-border w-full">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-semibold text-primary flex items-center gap-1.5">
+              <Phone className="w-3.5 h-3.5" />
+              {allConnected ? "3 calls answered simultaneously" : "Handling calls..."}
+            </span>
+            {allConnected && (
+              <span className="text-[11px] text-muted-foreground">2 booked • 0 missed</span>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
