@@ -1769,6 +1769,11 @@ const MothersDayCohort = () => {
             ))}
           </div>
 
+          <CtaBlock
+            headline="Ready to Dominate Your Local Market?"
+            subtext="Your website and automation are just the beginning. Let's build the full growth engine."
+            strategySessionUrl="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+          />
         </div>
       </section>
 
