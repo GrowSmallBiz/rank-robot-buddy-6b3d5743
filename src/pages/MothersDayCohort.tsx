@@ -1038,7 +1038,7 @@ const MothersDayCohort = () => {
                 This is not standard GrowSmallBiz pricing. This is a limited annual-only appreciation offer created for 5 mom-owned local service businesses.
               </p>
               <p className="mt-3 text-sm md:text-base font-semibold text-[hsl(210_30%_25%)]">
-                Marketing investment may be tax deductible — consult your tax advisor.
+                Your investment may qualify as a business expense. Please consult your tax advisor.
               </p>
             </div>
 
