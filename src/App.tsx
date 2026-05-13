@@ -183,7 +183,8 @@ export const routes: RouteRecord[] = [
       { path: "health-and-wellness-practices/marketing-for-chiropractors/chiropractic-seo-case-study", Component: () => <Redirect to="/health-and-wellness-practices/marketing-for-chiropractors/chiropractic-marketing-case-study/" /> },
 
       { path: "blog", Component: () => <Redirect to="/" /> },
-      { path: "mothers-day-mom-owned-business-cohort", lazy: lazy(() => import("./pages/MothersDayCohort")) },
+      { path: "specials/mothers-day", lazy: lazy(() => import("./pages/MothersDayCohort")) },
+      { path: "mothers-day-mom-owned-business-cohort", Component: () => <Redirect to="/specials/mothers-day/" /> },
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
       { path: "terms-of-service", lazy: lazy(() => import("./pages/TermsOfService")) },

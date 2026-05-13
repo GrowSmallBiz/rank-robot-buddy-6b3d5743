@@ -64,7 +64,7 @@ const BUILT_FOR = [
   { img: bizFitness, label: "Boutique Fitness & Yoga" },
 ];
 
-const PAGE_PATH = "/mothers-day-mom-owned-business-cohort/";
+const PAGE_PATH = "/specials/mothers-day/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
 const APPLICATION_FORM_URL =
   "https://lp.growsmallbiz.io/digital-growth-strategy-session";
