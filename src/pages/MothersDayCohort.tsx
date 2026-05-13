@@ -38,6 +38,7 @@ import {
   Mail,
   Zap,
   PhoneMissed,
+  Target,
 } from "lucide-react";
 import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
@@ -1636,152 +1637,123 @@ const MothersDayCohort = () => {
 
       {/* OUR OTHER SERVICES */}
       <section
-        className="py-20 md:py-28 relative overflow-hidden bg-[linear-gradient(180deg,hsl(28_55%_96%)_0%,hsl(20_50%_94%)_100%)]"
+        className="py-16 md:py-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(28_55%_96%)_0%,hsl(20_50%_94%)_100%)]"
         aria-labelledby="other-services-heading"
       >
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center mb-14">
+          <div className="max-w-3xl mx-auto text-center mb-10">
             <p className="text-[hsl(22_85%_45%)] font-semibold uppercase tracking-wider text-sm mb-3">
               Our Other Services
             </p>
             <h2
               id="other-services-heading"
-              className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mb-5 text-[hsl(210_55%_15%)]"
+              className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight mb-4 text-[hsl(210_55%_15%)]"
             >
-              Your Website &amp; Automation Are the{" "}
+              Website &amp; Marketing Automation Are the{" "}
               <span className="bg-gradient-to-r from-[hsl(22_90%_55%)] via-[hsl(350_75%_60%)] to-[hsl(188_78%_42%)] bg-clip-text text-transparent">
                 Foundation
               </span>
             </h2>
-            <p className="text-lg text-[hsl(210_30%_30%)] leading-relaxed">
+            <p className="text-base text-[hsl(210_30%_30%)] leading-relaxed">
               Once your client growth system is live, we help you dominate your local market with the full suite of AI SEO, local search, paid advertising, and conversational AI services.
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               {
                 icon: Globe,
                 title: "Website Design",
-                desc: "Conversion-focused small business websites built for speed, SEO, and lead capture.",
-                href: "/services/website-design/",
+                desc: "Conversion-focused websites built for speed, SEO, and lead capture.",
               },
               {
                 icon: Database,
                 title: "Marketing Automation",
-                desc: "CRM, missed-call text-back, follow-up workflows, reviews, and booking — all in one place.",
-                href: "/services/marketing-automation-for-small-business/",
+                desc: "CRM, missed-call text-back, follow-up workflows, reviews, and booking.",
               },
               {
                 icon: Bot,
-                title: "AI Receptionist & Conversational AI",
-                desc: "AI voice and chat agents that answer, qualify, and book leads 24/7 across phone, web, and SMS.",
-                href: "/services/ai-receptionist-and-conversational-ai/",
+                title: "AI Receptionist",
+                desc: "AI voice and chat agents that answer, qualify, and book leads 24/7.",
               },
               {
                 icon: Sparkles,
                 title: "Managed AI SEO",
-                desc: "Full-service SEO program built for the AI search era — strategy, content, and execution.",
-                href: "/services/seo-agency/",
+                desc: "Full-service SEO program built for the AI search era.",
               },
               {
                 icon: TrendingUp,
                 title: "AI Search Optimization",
-                desc: "Get cited and recommended inside ChatGPT, Perplexity, Gemini, and Google AI Overviews.",
-                href: "/services/seo-agency/ai-search-optimization/",
+                desc: "Get cited inside ChatGPT, Perplexity, Gemini, and Google AI Overviews.",
               },
               {
                 icon: MessageSquare,
                 title: "Answer Engine Optimization (AEO)",
                 desc: "Structured content that answers buyer questions and earns featured placements.",
-                href: "/services/seo-agency/aeo/",
               },
               {
                 icon: Zap,
                 title: "Generative Engine Optimization (GEO)",
-                desc: "Get your business surfaced inside generative AI answers and recommendations.",
-                href: "/services/seo-agency/geo/",
+                desc: "Get your business surfaced inside generative AI answers.",
               },
               {
                 icon: Users,
                 title: "Local SEO",
-                desc: "Rank in the Google Map Pack and win nearby high-intent customers in your service area.",
-                href: "/services/seo-agency/local-seo/",
+                desc: "Rank in the Google Map Pack and win nearby high-intent customers.",
               },
               {
                 icon: ShieldCheck,
                 title: "Authority Building",
-                desc: "Build the brand signals, mentions, and trust that search engines and AI models reward.",
-                href: "/services/seo-agency/authority-building/",
+                desc: "Brand signals, mentions, and trust that search engines and AI models reward.",
               },
               {
                 icon: Star,
                 title: "Link Building",
-                desc: "Editorial, relevant backlinks that strengthen your domain authority the right way.",
-                href: "/services/seo-agency/link-building/",
+                desc: "Editorial, relevant backlinks that strengthen domain authority.",
               },
               {
                 icon: CheckCircle2,
                 title: "Technical SEO",
-                desc: "Site speed, crawlability, indexing, schema, and Core Web Vitals — fixed and monitored.",
-                href: "/services/seo-agency/technical-seo/",
+                desc: "Site speed, crawlability, indexing, schema, and Core Web Vitals.",
               },
               {
                 icon: Mail,
                 title: "On-Page SEO",
-                desc: "Keyword-mapped pages, internal linking, and on-page optimization that actually moves rankings.",
-                href: "/services/seo-agency/on-page-seo/",
+                desc: "Keyword-mapped pages and on-page optimization that moves rankings.",
               },
               {
-                icon: CreditCard,
-                title: "Paid Advertising",
-                desc: "Full-funnel paid media across Google, Local Services, and Meta — managed for ROI.",
-                href: "/services/paid-advertising/",
+                icon: Target,
+                title: "AI Lead Generation",
+                desc: "AI-powered prospecting and lead capture across multiple channels.",
               },
               {
                 icon: PhoneCall,
                 title: "Google Local Services Ads",
-                desc: "Google Guaranteed leads at the very top of search — pay only for qualified contacts.",
-                href: "/services/paid-advertising/google-local-services-ads/",
+                desc: "Google Guaranteed leads at the top of search — pay per qualified contact.",
               },
               {
                 icon: Smartphone,
                 title: "Google Ads & Facebook Ads",
-                desc: "Search and social campaigns built for local service businesses — no wasted spend.",
-                href: "/services/paid-advertising/google-ads/",
+                desc: "Search and social campaigns built for local service businesses.",
               },
-            ].map(({ icon: Icon, title, desc, href }) => (
-              <Link
-                key={href}
-                to={href}
-                className="group bg-white rounded-2xl p-6 border border-[hsl(20_30%_88%)] shadow-[0_4px_20px_-8px_hsl(22_60%_50%/0.15)] hover:shadow-[0_12px_40px_-12px_hsl(22_85%_50%/0.35)] hover:-translate-y-1 hover:border-[hsl(22_85%_60%/0.5)] transition-all duration-300"
+            ].map(({ icon: Icon, title, desc }) => (
+              <div
+                key={title}
+                className="group bg-white rounded-xl p-4 border border-[hsl(20_30%_88%)] shadow-[0_4px_20px_-8px_hsl(22_60%_50%/0.15)] hover:shadow-[0_12px_40px_-12px_hsl(22_85%_50%/0.35)] hover:-translate-y-1 hover:border-[hsl(22_85%_60%/0.5)] transition-all duration-300"
               >
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[hsl(22_90%_92%)] to-[hsl(350_75%_94%)] flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-5 h-5 text-[hsl(22_85%_45%)]" />
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[hsl(22_90%_92%)] to-[hsl(350_75%_94%)] flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-4 h-4 text-[hsl(22_85%_45%)]" />
                   </div>
-                  <h3 className="text-lg font-bold text-[hsl(210_55%_15%)] leading-tight">
+                  <h3 className="text-base font-bold text-[hsl(210_55%_15%)] leading-tight">
                     {title}
                   </h3>
                 </div>
-                <p className="text-sm text-[hsl(210_25%_35%)] leading-relaxed mb-4">
+                <p className="text-sm text-[hsl(210_25%_35%)] leading-relaxed">
                   {desc}
                 </p>
-                <span className="inline-flex items-center gap-1 text-sm font-semibold text-[hsl(22_85%_45%)] group-hover:gap-2 transition-all">
-                  Learn more <ArrowRight className="w-4 h-4" />
-                </span>
-              </Link>
+              </div>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link
-              to="/services/"
-              className="inline-flex items-center gap-2 text-[hsl(210_55%_15%)] font-semibold underline underline-offset-4 decoration-[hsl(22_85%_60%)] decoration-2 hover:decoration-[hsl(350_75%_60%)] transition-colors"
-            >
-              See all GrowSmallBiz services
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
         </div>
       </section>
