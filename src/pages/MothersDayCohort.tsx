@@ -1017,8 +1017,15 @@ const MothersDayCohort = () => {
               </p>
             </div>
 
-            {/* Comparison cards */}
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {/* Annual-only badge */}
+            <div className="flex justify-center mb-10">
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[hsl(22_85%_50%)] text-white text-sm md:text-base font-bold shadow-[0_15px_40px_-10px_hsl(20_60%_40%/0.45)] uppercase tracking-wider">
+                <Sparkles className="w-4 h-4" /> Annual Enrollment Only
+              </div>
+            </div>
+
+            {/* Top comparison cards */}
+            <div className="grid md:grid-cols-2 gap-6 mb-14">
               {/* Standard */}
               <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/70 backdrop-blur-sm p-7 md:p-8">
                 <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(210_25%_45%)] mb-4">
@@ -1047,18 +1054,15 @@ const MothersDayCohort = () => {
               {/* Mother's Day Appreciation Offer */}
               <div className="relative rounded-3xl border-2 border-[hsl(22_85%_60%)] bg-white shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.4)] p-7 md:p-8 overflow-hidden">
                 <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
-                <div className="absolute -top-2 right-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg">
-                  ANNUAL ENROLLMENT ONLY
-                </div>
-                <p className="text-xs font-semibold uppercase tracking-wider mb-4 mt-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                <p className="text-xs font-semibold uppercase tracking-wider mb-4 mt-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
                   Mother’s Day Appreciation Offer
                 </p>
                 <ul className="divide-y divide-[hsl(30_45%_85%)]">
                   {[
                     { label: "Starter Website", value: "Complimentary" },
                     { label: "Client Growth System Setup", value: "$1,000" },
-                    { label: "Essentials Special", value: "$97/month equivalent" },
-                    { label: "Growth Special", value: "$197/month equivalent" },
+                    { label: "Essentials Special", value: "$1,164/year" },
+                    { label: "Growth Special", value: "$2,364/year" },
                   ].map((row) => (
                     <li
                       key={row.label}
@@ -1071,21 +1075,25 @@ const MothersDayCohort = () => {
                     </li>
                   ))}
                 </ul>
+                <p className="mt-4 text-xs md:text-sm text-[hsl(210_30%_30%)] italic">
+                  Monthly equivalents: Essentials $97/month · Growth $197/month
+                </p>
               </div>
             </div>
 
-            {/* Plan / value cards */}
+            {/* Plan cards */}
             <div className="grid md:grid-cols-2 gap-6 items-stretch">
               {[
                 {
                   title: "Essentials Special",
-                  price: "$97/month equivalent",
-                  payment: "Paid annually: $1,164/year",
-                  emotional: "Less than one nice dinner out — but working for your business all month.",
+                  annual: "$1,164",
+                  monthlyEq: "$97/month",
+                  calloutHeadline: "Less Than One Nice Dinner Out Each Month",
+                  calloutBody:
+                    "For less than one dinner out each month, your business gets a website, CRM, unified inbox, review automation, and follow-up foundation working behind the scenes.",
                   firstYear: "First-year investment with setup: $2,164",
-                  valueTotal: "$5,400",
-                  valueLabel: "in total promotional value",
-                  rows: [
+                  savingsTotal: "$5,400",
+                  savingsRows: [
                     "$2,500 Starter Website included",
                     "$500 setup savings",
                     "$2,400 subscription savings over 12 months",
@@ -1096,14 +1104,14 @@ const MothersDayCohort = () => {
                 },
                 {
                   title: "Growth Special",
-                  price: "$197/month equivalent",
-                  payment: "Paid annually: $2,364/year",
-                  emotional:
-                    "About the cost of one spa visit — but designed to help your business respond, follow up, and book appointments all month.",
+                  annual: "$2,364",
+                  monthlyEq: "$197/month",
+                  calloutHeadline: "About the Cost of One Spa Visit Each Month",
+                  calloutBody:
+                    "For about the cost of one spa visit each month, your business gets AI-powered response tools that help answer questions, capture leads, follow up, and book appointments — even when you are with a client, with your family, or finally taking a break.",
                   firstYear: "First-year investment with setup: $3,364",
-                  valueTotal: "$6,600",
-                  valueLabel: "in total promotional value",
-                  rows: [
+                  savingsTotal: "$6,600",
+                  savingsRows: [
                     "$2,500 Starter Website included",
                     "$500 setup savings",
                     "$3,600 subscription savings over 12 months",
@@ -1126,36 +1134,59 @@ const MothersDayCohort = () => {
                       MOST POPULAR
                     </div>
                   )}
-                  <h3 className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)] mb-3">
+
+                  {/* 1. Plan name */}
+                  <h3 className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
                     {c.title}
                   </h3>
+
+                  {/* 2. Annual price (LARGEST) */}
                   <div className="mb-2">
-                    <span className="text-4xl md:text-5xl font-display font-bold text-[hsl(22_85%_42%)]">
-                      {c.price.split(" ")[0]}
+                    <span className="text-5xl md:text-6xl font-display font-black text-[hsl(22_85%_42%)] leading-none">
+                      {c.annual}
                     </span>
-                    <span className="text-sm md:text-base text-[hsl(210_25%_40%)] ml-1">
-                      /month equivalent
+                    <span className="text-xl md:text-2xl font-bold text-[hsl(22_85%_42%)] ml-1">
+                      /year
                     </span>
                   </div>
-                  <p className="text-sm md:text-base font-medium text-[hsl(210_30%_25%)]">
-                    {c.payment}
-                  </p>
-                  <p className="mt-3 text-sm md:text-base italic text-[hsl(210_30%_30%)] leading-relaxed">
-                    {c.emotional}
-                  </p>
-                  <div className="mt-4 inline-flex self-start px-3 py-1.5 rounded-full bg-[hsl(210_55%_14%)] text-white text-xs md:text-sm font-semibold">
+
+                  {/* 3. Monthly equivalent (smaller supporting badge) */}
+                  <div className="mt-2 inline-flex self-start items-center px-3 py-1 rounded-full bg-[hsl(210_55%_14%/0.06)] border border-[hsl(210_55%_14%/0.12)] text-xs md:text-sm font-semibold text-[hsl(210_45%_25%)]">
+                    Only {c.monthlyEq} equivalent
+                  </div>
+
+                  {/* 4. Bold cost-perspective callout */}
+                  <div className="relative mt-5 rounded-2xl overflow-hidden border-2 border-[hsl(22_85%_60%/0.5)] bg-[linear-gradient(135deg,hsl(30_85%_92%)_0%,hsl(350_75%_94%)_50%,hsl(22_85%_92%)_100%)] shadow-[0_15px_40px_-15px_hsl(20_60%_40%/0.3)]">
+                    <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_55%),hsl(350_70%_60%),hsl(30_75%_55%)]" />
+                    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[linear-gradient(180deg,hsl(22_85%_55%),hsl(350_70%_60%))]" />
+                    <div className="relative p-5 md:p-6 pl-6 md:pl-7">
+                      <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold text-[hsl(22_85%_38%)] mb-2">
+                        Put That in Perspective
+                      </p>
+                      <h4 className="text-xl md:text-2xl font-display font-bold text-[hsl(210_55%_12%)] mb-2 leading-tight">
+                        {c.calloutHeadline}
+                      </h4>
+                      <p className="text-sm md:text-base text-[hsl(210_30%_22%)] leading-relaxed">
+                        {c.calloutBody}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* 5. First-year investment */}
+                  <div className="mt-5 inline-flex self-start px-4 py-2 rounded-full bg-[hsl(210_55%_14%)] text-white text-xs md:text-sm font-semibold">
                     {c.firstYear}
                   </div>
 
-                  <div className="mt-5 rounded-2xl bg-white/80 border border-[hsl(30_55%_85%)] p-4">
+                  {/* 6. Total first-year savings */}
+                  <div className="mt-5 rounded-2xl bg-white/85 border border-[hsl(30_55%_85%)] p-5">
                     <p className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)]">
-                      {c.valueTotal}{" "}
+                      {c.savingsTotal}{" "}
                       <span className="text-sm md:text-base font-medium text-[hsl(210_25%_40%)]">
-                        {c.valueLabel}
+                        in total first-year savings
                       </span>
                     </p>
                     <ul className="mt-3 space-y-2">
-                      {c.rows.map((r) => (
+                      {c.savingsRows.map((r) => (
                         <li
                           key={r}
                           className="flex items-start gap-2 text-sm text-[hsl(210_30%_25%)]"
@@ -1167,6 +1198,7 @@ const MothersDayCohort = () => {
                     </ul>
                   </div>
 
+                  {/* 7. Best for */}
                   <p className="mt-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
                     <span className="font-semibold text-[hsl(210_55%_14%)]">Best for: </span>
                     {c.bestFor}
@@ -1175,26 +1207,8 @@ const MothersDayCohort = () => {
               ))}
             </div>
 
-            {/* Perspective callout */}
-            <div className="mt-10 rounded-3xl border border-[hsl(30_55%_82%)] bg-white/80 p-7 md:p-9">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                Put the Cost in Perspective
-              </p>
-              <div className="space-y-3 text-base md:text-lg leading-relaxed text-[hsl(210_30%_25%)]">
-                <p>
-                  <span className="font-semibold text-[hsl(210_55%_14%)]">Essentials Special</span> is $97/month equivalent — less than one nice dinner out.
-                </p>
-                <p>
-                  <span className="font-semibold text-[hsl(210_55%_14%)]">Growth Special</span> is $197/month equivalent — about the cost of one spa visit.
-                </p>
-                <p>
-                  But instead of being gone in a few hours, this system works for your business all month: capturing leads, organizing conversations, following up, requesting reviews, and helping customers take the next step.
-                </p>
-              </div>
-            </div>
-
             {/* Clarifications */}
-            <div className="mt-6 grid md:grid-cols-2 gap-4">
+            <div className="mt-8 grid md:grid-cols-2 gap-4">
               <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
                 The complimentary Starter Website is included only when you enroll in either the Essentials Special or Growth Special annual plan. It is not available as a standalone website-only offer.
               </p>
