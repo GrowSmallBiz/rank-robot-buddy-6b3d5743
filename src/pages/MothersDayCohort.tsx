@@ -142,32 +142,6 @@ const MothersDayCohort = () => {
     { label: "Growth Plan", value: "$197/month" },
   ];
 
-  const presenceCards = [
-    {
-      icon: Heart,
-      title: "While You’re With a Client",
-      body:
-        "AI-powered response tools can help answer questions, capture lead information, and keep the conversation moving while you stay focused on the person in front of you.",
-    },
-    {
-      icon: Users,
-      title: "While You’re With Your Family",
-      body:
-        "Missed-call text-back, AI Livechat, and automated follow-up help reduce the pressure to constantly check your phone.",
-    },
-    {
-      icon: Globe,
-      title: "After Dinner, When Buyers Are Browsing",
-      body:
-        "Many people research services at night. Your website can answer questions, guide visitors, collect information, and help them take the next step.",
-    },
-    {
-      icon: Calendar,
-      title: "When Someone Is Ready to Book",
-      body:
-        "Calendar and payment connections can help prospects schedule, confirm, and pay without waiting for a manual reply.",
-    },
-  ];
 
   const roiCards = [
     {
