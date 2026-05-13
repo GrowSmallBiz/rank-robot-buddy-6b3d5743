@@ -96,19 +96,22 @@ const PrimaryCTA = ({
   className?: string;
   full?: boolean;
   label?: string;
-}) => (
-  <Button
-    asChild
-    size="lg"
-    className={`bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold hover:brightness-110 shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] border-0 transition-all ${
-      full ? "w-full" : ""
-    } ${className}`}
-  >
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      {label} <ArrowRight className="w-5 h-5 ml-2" />
-    </a>
-  </Button>
-);
+}) => {
+  const isAnchor = href.startsWith("#");
+  return (
+    <Button
+      asChild
+      size="lg"
+      className={`bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold hover:brightness-110 shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] border-0 transition-all ${
+        full ? "w-full" : ""
+      } ${className}`}
+    >
+      <a href={href} {...(!isAnchor ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+        {label} <ArrowRight className="w-5 h-5 ml-2" />
+      </a>
+    </Button>
+  );
+};
 
 const MothersDayCohort = () => {
   const { buildUrl } = useUtm();
@@ -348,9 +351,7 @@ const MothersDayCohort = () => {
             ))}
           </nav>
           <a
-            href={ctaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#apply-form"
             className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
           >
             Claim Spot <ArrowRight className="w-4 h-4" />
@@ -472,7 +473,7 @@ const MothersDayCohort = () => {
             <div className="max-w-3xl mx-auto mt-10 md:mt-12 text-center">
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center mb-4">
                 <PrimaryCTA
-                  href={ctaUrl}
+                  href="#apply-form"
                   label="Apply for One of the 5 Spots"
                   className="w-full sm:w-auto whitespace-normal text-center leading-tight h-auto py-3"
                 />
@@ -725,7 +726,7 @@ const MothersDayCohort = () => {
 
                   {/* 8. CTA inside each card */}
                   <div className="mt-auto pt-6">
-                    <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" full />
+                    <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" full />
                   </div>
                 </div>
               ))}
@@ -746,7 +747,7 @@ const MothersDayCohort = () => {
             </p>
 
             <div className="flex justify-center mt-8">
-              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
+              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
             </div>
 
             {/* Tax footnote */}
@@ -1525,7 +1526,7 @@ const MothersDayCohort = () => {
             </div>
 
             <div className="mt-8 flex justify-center">
-              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
+              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
             </div>
           </div>
         </section>
@@ -1570,7 +1571,7 @@ const MothersDayCohort = () => {
             </div>
 
             <div className="flex justify-center mb-4">
-              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
+              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
             </div>
             <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               No credit card required. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot.
@@ -1619,7 +1620,8 @@ const MothersDayCohort = () => {
 
       </main>
 
-      <ConsultationFormSection
+      <div id="apply-form">
+        <ConsultationFormSection
         headingOverride="Apply for One of the 5 Spots"
         eyebrowOverride="No Credit Card Required"
         descriptionOverride="Apply for one of the 5 spots in this Mother’s Day Appreciation Offer. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot."
@@ -1635,6 +1637,7 @@ const MothersDayCohort = () => {
         cardGlowClass="shadow-[0_0_30px_hsl(22_85%_60%/0.35),0_0_60px_hsl(22_85%_60%/0.2)]"
         heroOverlay
       />
+      </div>
 
       {/* OUR OTHER SERVICES */}
       <section
@@ -1772,7 +1775,7 @@ const MothersDayCohort = () => {
           <CtaBlock
             headline="Ready to Dominate Your Local Market?"
             subtext="Your website and automation are just the beginning. Let's build the full growth engine."
-            strategySessionUrl="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+            strategySessionUrl="#apply-form"
             showPhoneButton={false}
           />
         </div>
@@ -1827,7 +1830,7 @@ const MothersDayCohort = () => {
               </h4>
               <ul className="space-y-2">
                 <li>
-                  <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#apply-form" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Apply for a Spot
                   </a>
                 </li>
@@ -1856,9 +1859,7 @@ const MothersDayCohort = () => {
       {/* STICKY MOBILE CTA */}
       <div className="md:hidden fixed bottom-0 inset-x-0 z-40 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] bg-background/95 backdrop-blur border-t border-border">
         <a
-          href={ctaUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#apply-form"
           className="flex items-center justify-center gap-2 w-[calc(100%-4.5rem)] px-4 py-3 rounded-md bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] text-sm"
         >
           {PRIMARY_CTA_LABEL} <ArrowRight className="w-4 h-4" />
