@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
 import { AiBusyMomDemo } from "@/components/sections/AiBusyMomDemo";
+import { CtaBlock } from "@/components/niche-page/sections/CtaBlock";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
   Accordion,
@@ -1768,6 +1769,11 @@ const MothersDayCohort = () => {
             ))}
           </div>
 
+          <CtaBlock
+            headline="Ready to Dominate Your Local Market?"
+            subtext="Your website and automation are just the beginning. Let's build the full growth engine."
+            strategySessionUrl="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+          />
         </div>
       </section>
 
