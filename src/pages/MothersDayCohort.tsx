@@ -1339,9 +1339,9 @@ const MothersDayCohort = () => {
 
             {(() => {
               const isAnnual = billing === "annual";
-              const essPrice = isAnnual ? "$970" : "$97";
+              const essPrice = isAnnual ? "$1,164" : "$97";
               const essRegular = isAnnual ? "$2,970/year" : "$297/month";
-              const growPrice = isAnnual ? "$1,970" : "$197";
+              const growPrice = isAnnual ? "$2,364" : "$197";
               const growRegular = isAnnual ? "$4,970/year" : "$497/month";
               const period = isAnnual ? "/year" : "/month";
               return (
