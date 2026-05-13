@@ -40,6 +40,7 @@ import {
 import heroImage from "@/assets/mothers-day-cohort-hero.jpg";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 import leakyBucket from "@/assets/leaky-bucket.webp";
+import demoPreview from "@/assets/cohort/demo-website-preview.png";
 import bizSalon from "@/assets/cohort/biz-salon.jpg";
 import bizMedspa from "@/assets/cohort/biz-medspa.jpg";
 import bizCleaning from "@/assets/cohort/biz-cleaning.jpg";
