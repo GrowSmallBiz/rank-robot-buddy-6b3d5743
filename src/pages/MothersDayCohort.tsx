@@ -1477,9 +1477,9 @@ const MothersDayCohort = () => {
       </main>
 
       <ConsultationFormSection
-        headingOverride="Claim Your Spot - Free Website & Lead System"
+        headingOverride="Apply for One of the 5 Spots"
         eyebrowOverride="No Credit Card Required"
-        descriptionOverride="Claim your spot for a complimentary Starter Website and discounted Client Growth System setup. Only 5 spots available — we will review your submission and follow up within 24 hours."
+        descriptionOverride="Apply for one of the 5 spots in this Mother’s Day Appreciation Offer. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot."
         formUrlOverride="https://api.leadconnectorhq.com/widget/form/hFTESAZxuks4QvC0lcrp"
         iframeHeight="1301px"
         iframeBorderRadius="3px"
