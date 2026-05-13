@@ -186,6 +186,7 @@ export const routes: RouteRecord[] = [
       { path: "specials/current-offers", lazy: lazy(() => import("./pages/specials/CurrentOffers")) },
       { path: "specials", Component: () => <Redirect to="/specials/current-offers/" /> },
       { path: "specials/mothers-day", lazy: lazy(() => import("./pages/MothersDayCohort")) },
+      { path: "mothers-day-special/danville-chamber", Component: () => <Redirect to="/specials/mothers-day/" utm={{ source: "danville-chamber", medium: "web-specials", campaign: "mothers-day-offer" }} /> },
       { path: "mothers-day-mom-owned-business-cohort", Component: () => <Redirect to="/specials/mothers-day/" /> },
       { path: "contact", lazy: lazy(() => import("./pages/Contact")) },
       { path: "privacy-policy", lazy: lazy(() => import("./pages/PrivacyPolicy")) },
