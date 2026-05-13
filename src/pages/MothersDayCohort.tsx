@@ -274,7 +274,7 @@ const MothersDayCohort = () => {
     },
     {
       q: "Can I choose annual?",
-      a: "Yes. Annual options are available and include the Mother’s Day spa bonus. Essentials Plan: $1,970/year. Growth Plan: $2,970/year. That’s 2 months free at the Mother’s Day rate.",
+      a: "Yes. Annual options are available and include the Mother’s Day spa bonus. Essentials Plan: $970/year. Growth Plan: $1,970/year. That’s 2 months free at the Mother’s Day rate.",
     },
     {
       q: "What happens after this campaign closes?",
