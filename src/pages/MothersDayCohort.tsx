@@ -422,11 +422,11 @@ const MothersDayCohort = () => {
               </div>
             </div>
 
-            {/* Two-column: bullets/CTAs + image */}
+            {/* Two-column: bullets + image */}
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-6xl mx-auto">
               <div className="order-2 lg:order-1 min-w-0">
                 {/* Offer bullets */}
-                <ul className="space-y-3 mb-7">
+                <ul className="space-y-3">
                   {[
                     "Complimentary Starter Website valued at $2,500",
                     "$500 off Client Growth System Setup",
@@ -445,23 +445,6 @@ const MothersDayCohort = () => {
                     </li>
                   ))}
                 </ul>
-
-                {/* CTAs */}
-                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:justify-center mb-4">
-                  <PrimaryCTA
-                    href={ctaUrl}
-                    label="Apply for One of the 5 Spots"
-                    className="w-full sm:w-auto whitespace-normal text-center leading-tight h-auto py-3"
-                  />
-                  <Button asChild size="lg" variant="outline" className="border-border w-full sm:w-auto">
-                    <a href="#value">{SECONDARY_CTA_LABEL}</a>
-                  </Button>
-                </div>
-
-                {/* Clarification */}
-                <p className="text-xs sm:text-sm text-muted-foreground text-center leading-relaxed">
-                  The complimentary Starter Website is included only with Essentials Special or Growth Special annual enrollment. It is not available as a standalone website-only offer.
-                </p>
               </div>
 
               <div className="relative order-1 lg:order-2">
@@ -488,6 +471,23 @@ const MothersDayCohort = () => {
                   <Star className="w-4 h-4 text-primary" /> New 5-star review
                 </div>
               </div>
+            </div>
+
+            {/* CTAs (centered below grid) */}
+            <div className="max-w-3xl mx-auto mt-10 md:mt-12 text-center">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center mb-4">
+                <PrimaryCTA
+                  href={ctaUrl}
+                  label="Apply for One of the 5 Spots"
+                  className="w-full sm:w-auto whitespace-normal text-center leading-tight h-auto py-3"
+                />
+                <Button asChild size="lg" variant="outline" className="border-border w-full sm:w-auto">
+                  <a href="#value">{SECONDARY_CTA_LABEL}</a>
+                </Button>
+              </div>
+              <p className="text-xs sm:text-sm text-muted-foreground text-center leading-relaxed">
+                The complimentary Starter Website is included only with Essentials Special or Growth Special annual enrollment. It is not available as a standalone website-only offer.
+              </p>
             </div>
           </div>
         </section>
