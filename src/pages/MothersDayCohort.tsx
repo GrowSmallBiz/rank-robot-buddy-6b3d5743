@@ -150,15 +150,18 @@ const MothersDayCohort = () => {
   const roiCards = [
     {
       icon: PhoneMissed,
-      body: "If one missed call becomes a booked client, the system starts paying for itself.",
+      title: "One Missed Call Becomes a Booked Client",
+      body: "If one missed call turns into a paying customer instead of going to voicemail, the system starts justifying itself.",
     },
     {
       icon: Globe,
-      body: "If one after-hours website visitor books instead of leaving, that can cover a large part of the monthly cost.",
+      title: "One After-Hours Visitor Takes Action",
+      body: "People browse after dinner, on weekends, and between appointments. AI Livechat and booking tools help your website keep working when you are unavailable.",
     },
     {
       icon: Mail,
-      body: "If automated follow-up brings back one lead who would have gone cold, the system has already done its job.",
+      title: "One Cold Lead Gets Recovered",
+      body: "Automated follow-up can bring back leads who asked once, got distracted, and would have otherwise gone cold.",
     },
   ];
 
