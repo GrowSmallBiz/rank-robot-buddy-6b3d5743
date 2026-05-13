@@ -935,12 +935,12 @@ const MothersDayCohort = () => {
                 </p>
                 <ul className="space-y-2.5 text-sm text-muted-foreground/90">
                   {[
-                    "Just a website",
-                    "No CRM setup",
-                    "No follow-up automation",
-                    "No AI response tools",
-                    "No review automation",
-                    "No connected lead tracking",
+                    "A website alone does not follow up with leads.",
+                    "A contact form alone does not organize opportunities.",
+                    "A phone number alone does not prevent missed calls.",
+                    "A happy customer alone does not guarantee a review.",
+                    "A CRM alone does not help unless it is set up properly.",
+
                   ].map((b) => (
                     <li key={b} className="flex items-start gap-2">
                       <XCircle className="w-4 h-4 mt-0.5 text-muted-foreground/60 shrink-0" />
@@ -971,19 +971,6 @@ const MothersDayCohort = () => {
                   ))}
                 </ul>
               </div>
-            </div>
-            <div className="max-w-3xl mx-auto space-y-3 text-muted-foreground">
-              <p>A website alone does not follow up with leads.</p>
-              <p>A contact form alone does not organize opportunities.</p>
-              <p>A phone number alone does not prevent missed calls.</p>
-              <p>A happy customer alone does not guarantee a review.</p>
-              <p>A CRM alone does not help unless it is set up properly.</p>
-              <p className="pt-2 text-foreground">
-                GrowSmallBiz combines the website, CRM, automation, review system, and AI-powered response tools into one connected setup for local service businesses.
-              </p>
-              <p className="font-semibold text-foreground">
-                Built for business owners — not marketing teams.
-              </p>
             </div>
           </div>
         </section>
