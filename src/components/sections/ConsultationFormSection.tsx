@@ -71,7 +71,7 @@ export const ConsultationFormSection = ({
   const dataHeight = dataHeightOverride ?? "1126";
 
   return (
-    <section ref={sectionRef} className={`py-16 md:py-24 relative overflow-hidden ${sectionClassName ?? "bg-[#2d465c]"}`}>
+    <section className={`py-16 md:py-24 relative overflow-hidden ${sectionClassName ?? "bg-[#2d465c]"}`}>
       {heroOverlay && (
         <>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,210,190,0.16),transparent_55%)] pointer-events-none" />
