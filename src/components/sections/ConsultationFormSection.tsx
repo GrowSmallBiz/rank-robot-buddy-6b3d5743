@@ -56,7 +56,17 @@ export const ConsultationFormSection = ({
 
   useEffect(() => {
     const el = sectionRef.current;
-    if (!el) return;
+    if (!el) {
+      setIsVisible(true);
+      return;
+    }
+    // If the section is already in or near the viewport on mount, show immediately.
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    if (rect.top < vh + 400 && rect.bottom > -400) {
+      setIsVisible(true);
+      return;
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -64,7 +74,7 @@ export const ConsultationFormSection = ({
           observer.disconnect();
         }
       },
-      { rootMargin: "200px" }
+      { rootMargin: "400px" }
     );
     observer.observe(el);
     return () => observer.disconnect();
