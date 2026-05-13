@@ -267,7 +267,13 @@ const VoiceCallPanel = () => {
                 {/* Name + status */}
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-foreground truncate flex items-center gap-1.5">
-                    <Smartphone className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
+                    <Smartphone
+                      className={`w-3.5 h-3.5 shrink-0 ${
+                        caller.gender === "female"
+                          ? "text-[hsl(350_75%_72%)]"
+                          : "text-[hsl(199_89%_58%)]"
+                      }`}
+                    />
                     {caller.name}
                   </p>
                   <p className="text-[11px] text-muted-foreground">
