@@ -963,7 +963,7 @@ const MothersDayCohort = () => {
                 Speed-to-Lead
               </p>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                From Website Form to Follow-Up in Seconds
+                Follow-Up Call/Email/SMS in Minutes
               </h2>
               <p className="text-muted-foreground text-base md:text-lg">
                 The moment someone submits a form, the system takes over — so the lead is never sitting in a tab waiting for you.
