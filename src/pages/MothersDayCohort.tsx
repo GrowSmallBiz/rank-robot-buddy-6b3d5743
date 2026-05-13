@@ -935,12 +935,12 @@ const MothersDayCohort = () => {
                 </p>
                 <ul className="space-y-2.5 text-sm text-muted-foreground/90">
                   {[
-                    "Just a website",
-                    "No CRM setup",
-                    "No follow-up automation",
-                    "No AI response tools",
-                    "No review automation",
-                    "No connected lead tracking",
+                    "A website alone does not follow up with leads.",
+                    "A contact form alone does not organize opportunities.",
+                    "A phone number alone does not prevent missed calls.",
+                    "A happy customer alone does not guarantee a review.",
+                    "A CRM alone does not help unless it is set up properly.",
+
                   ].map((b) => (
                     <li key={b} className="flex items-start gap-2">
                       <XCircle className="w-4 h-4 mt-0.5 text-muted-foreground/60 shrink-0" />
