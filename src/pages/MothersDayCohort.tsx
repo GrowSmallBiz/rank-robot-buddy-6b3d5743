@@ -1773,7 +1773,7 @@ const MothersDayCohort = () => {
           <CtaBlock
             headline="Ready to Dominate Your Local Market?"
             subtext="Your website and automation are just the beginning. Let's build the full growth engine."
-            strategySessionUrl="https://lp.growsmallbiz.io/digital-growth-strategy-session"
+            strategySessionUrl="#apply-form"
             showPhoneButton={false}
           />
         </div>
@@ -1828,7 +1828,7 @@ const MothersDayCohort = () => {
               </h4>
               <ul className="space-y-2">
                 <li>
-                  <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#apply-form" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Apply for a Spot
                   </a>
                 </li>
@@ -1857,9 +1857,7 @@ const MothersDayCohort = () => {
       {/* STICKY MOBILE CTA */}
       <div className="md:hidden fixed bottom-0 inset-x-0 z-40 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] bg-background/95 backdrop-blur border-t border-border">
         <a
-          href={ctaUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#apply-form"
           className="flex items-center justify-center gap-2 w-[calc(100%-4.5rem)] px-4 py-3 rounded-md bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] text-sm"
         >
           {PRIMARY_CTA_LABEL} <ArrowRight className="w-4 h-4" />
