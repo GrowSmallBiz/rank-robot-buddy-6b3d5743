@@ -5,6 +5,7 @@ import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
+import { AiLivechatDemo } from "@/components/sections/AiLivechatDemo";
 import {
   Accordion,
   AccordionContent,
