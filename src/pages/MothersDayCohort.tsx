@@ -1764,7 +1764,7 @@ const MothersDayCohort = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <p className="text-[hsl(22_85%_45%)] font-semibold uppercase tracking-wider text-sm mb-3">
-              Our Other Services
+              Our Complete Local Dominance Services
             </p>
             <h2
               id="other-services-heading"
