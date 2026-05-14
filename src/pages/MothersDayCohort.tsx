@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useUtm } from "@/hooks/use-utm";
 import { Button } from "@/components/ui/button";
-import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
 import { AiBusyMomDemo } from "@/components/sections/AiBusyMomDemo";
 import { CardCTA } from "@/components/services/CardCTA";
@@ -1773,19 +1772,48 @@ const MothersDayCohort = () => {
 
       </main>
 
-      <div id="apply-form">
-        <ConsultationFormSection
-        headingOverride="Apply for One of the 5 Spots"
-        eyebrowOverride="No Credit Card Required To Apply"
-        descriptionOverride="Apply for one of the 5 spots in this Mother’s Day Appreciation Offer. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot."
-        iframeBorderRadius="3px"
-        utmCampaign="mothers-day-cohort"
-        sectionClassName="bg-[linear-gradient(135deg,hsl(210_55%_8%)_0%,hsl(210_50%_12%)_55%,hsl(20_45%_18%)_100%)]"
-        headingGradientClass="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)]"
-        cardBorderColor="hsl(22 85% 60% / 0.6)"
-        cardGlowClass="shadow-[0_0_30px_hsl(22_85%_60%/0.35),0_0_60px_hsl(22_85%_60%/0.2)]"
-        heroOverlay
-      />
+            <div id="apply-form">
+        <section className="py-16 md:py-24 relative overflow-hidden bg-[linear-gradient(135deg,hsl(210_55%_8%)_0%,hsl(210_50%_12%)_55%,hsl(20_45%_18%)_100%)]">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,210,190,0.16),transparent_55%)] pointer-events-none" />
+          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-[hsl(18_85%_65%/0.18)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[hsl(280_60%_70%/0.14)] blur-3xl pointer-events-none" />
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-3xl mx-auto relative rounded-2xl shadow-[0_0_30px_hsl(22_85%_60%/0.35),0_0_60px_hsl(22_85%_60%/0.2)]" style={{ border: "2px solid hsl(22 85% 60% / 0.6)" }}>
+              <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
+                <div className="text-center mb-8">
+                  <p className="text-primary font-medium mb-3 text-sm">No Credit Card Required To Apply</p>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)]">
+                    Apply for One of the 5 Spots
+                  </h2>
+                  <p className="text-white/80 text-lg">
+                    Apply for one of the 5 spots in this Mother’s Day Appreciation Offer. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot.
+                  </p>
+                </div>
+
+                <div style={{ width: "100%", height: "1301px", borderRadius: "3px", overflow: "hidden" }}>
+                  <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/hFTESAZxuks4QvC0lcrp"
+                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
+                    id="inline-hFTESAZxuks4QvC0lcrp"
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="GrowSmallBiz SaaS Demo Form - Mothers Day"
+                    data-height="1301"
+                    data-layout-iframe-id="inline-hFTESAZxuks4QvC0lcrp"
+                    data-form-id="hFTESAZxuks4QvC0lcrp"
+                    title="GrowSmallBiz SaaS Demo Form - Mothers Day"
+                  />
+                </div>
+                <script src="https://link.msgsndr.com/js/form_embed.js" />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* OUR OTHER SERVICES */}
