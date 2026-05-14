@@ -399,7 +399,6 @@ const MothersDayCohort = () => {
                 For 5 mom-owned local service businesses, GrowSmallBiz is including a complimentary Starter Website valued at $2,500, reducing Client Growth System Setup by $500, and offering annual-only appreciation pricing that will not be repeated.
               </p>
             </div>
-            </div>
 
             {/* Supporting line */}
             <div className="max-w-3xl mx-auto text-center mb-6">
