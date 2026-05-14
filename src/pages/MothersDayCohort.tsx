@@ -975,20 +975,16 @@ const MothersDayCohort = () => {
               {[
                 {
                   title: "Essentials",
-                  subtitle: "Run Your Entire Business in One Place",
+                  subtitle: "Run Your Entire Business in All-in-One Platform",
                   highlight: false,
                   features: [
-                    "Smart CRM & Unified Inbox",
-                    "Calendars & Appointment Scheduling",
-                    "Funnels, Websites & Forms Builder",
-                    "Email & Social Media Marketing",
-                    "Reputation Management",
+                    { title: "Unified Inbox", desc: "Email, SMS and Social Media communication in one place" },
+                    { title: "Calendars & Appointment Scheduling", desc: "Integrated with Google, Outlook and Apple Calendar" },
+                    { title: "Promotional Landing Pages and Form Builder", desc: "" },
+                    { title: "Email & SMS Marketing", desc: "Follow-up happens while you're cooking dinner or at a soccer game" },
+                    { title: "Reputation Management", desc: "Automated review requests and AI replies to Google Reviews" },
                   ],
-                  footer: (
-                    <>
-                      Includes automated review requests and AI replies to Google Reviews — so you never miss a chance to build trust.
-                    </>
-                  ),
+                  footer: null,
                 },
                 {
                   title: "Growth",
@@ -1004,7 +1000,7 @@ const MothersDayCohort = () => {
                     <>
                       Best for moms who want AI to{" "}
                       <span className="font-semibold text-[hsl(22_85%_42%)]">answer, qualify, and book</span>{" "}
-                      — even when you&rsquo;re with a client, with family, or finally taking a break.
+                      — even when you're with a client, with family, or finally taking a break.
                     </>
                   ),
                 },
@@ -1028,18 +1024,22 @@ const MothersDayCohort = () => {
                   <p className="italic text-[hsl(210_30%_30%)] mb-5">{c.subtitle}</p>
                   <ul className="space-y-3">
                     {c.features.map((f, i) => {
-                      const isHeading = /^everything in/i.test(f);
+                      const isHeading = typeof f === "string" && /^everything in/i.test(f);
+                      const isObject = typeof f === "object" && f !== null && "title" in f;
                       return (
-                        <li key={f} className="flex items-start gap-3">
+                        <li key={isObject ? f.title : f} className="flex items-start gap-3">
                           <CheckCircle2 className="w-5 h-5 mt-0.5 text-[hsl(22_85%_50%)] shrink-0" />
-                          <span
-                            className={
-                              isHeading
-                                ? "text-[hsl(210_55%_12%)] font-bold"
-                                : "text-[hsl(210_30%_22%)]"
-                            }
-                          >
-                            {f}
+                          <span className={isHeading ? "text-[hsl(210_55%_12%)] font-bold" : "text-[hsl(210_30%_22%)]"}>
+                            {isObject ? (
+                              <>
+                                <span className="font-semibold">{f.title}</span>
+                                {f.desc && (
+                                  <span className="block text-sm text-[hsl(210_30%_35%)] mt-0.5">{f.desc}</span>
+                                )}
+                              </>
+                            ) : (
+                              f
+                            )}
                           </span>
                         </li>
                       );
