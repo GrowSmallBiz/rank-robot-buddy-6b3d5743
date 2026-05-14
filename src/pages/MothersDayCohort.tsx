@@ -1740,7 +1740,7 @@ const MothersDayCohort = () => {
       <div id="apply-form">
         <ConsultationFormSection
         headingOverride="Apply for One of the 5 Spots"
-        eyebrowOverride="No Credit Card Required"
+        eyebrowOverride="No Credit Card Required To Apply"
         descriptionOverride="Apply for one of the 5 spots in this Mother’s Day Appreciation Offer. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot."
         formUrlOverride="https://api.leadconnectorhq.com/widget/form/hFTESAZxuks4QvC0lcrp"
         iframeHeight="1301px"
