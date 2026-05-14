@@ -114,14 +114,25 @@ export function buildCtaUrl(
     utm_campaign: campaignSlug(campaign),
   };
 
-  // Strip any existing UTM params from the base URL
+  // Strip any existing UTM params and click IDs from the base URL
   const url = new URL(baseUrl);
   for (const key of UTM_KEYS) {
+    url.searchParams.delete(key);
+  }
+  for (const key of CLICK_KEYS) {
     url.searchParams.delete(key);
   }
 
   // Append UTMs
   for (const key of UTM_KEYS) {
+    const val = utms[key];
+    if (val) {
+      url.searchParams.set(key, val);
+    }
+  }
+
+  // Append click IDs if present
+  for (const key of CLICK_KEYS) {
     const val = utms[key];
     if (val) {
       url.searchParams.set(key, val);
