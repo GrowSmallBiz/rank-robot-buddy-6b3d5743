@@ -32,6 +32,7 @@ export const Header = () => {
   const [mobileAdsSubOpen, setMobileAdsSubOpen] = useState(false);
   
   const location = useLocation();
+  const { strategySessionUrl } = useUtm();
 
   const isServiceActive = 
     location.pathname.startsWith("/services") ||
