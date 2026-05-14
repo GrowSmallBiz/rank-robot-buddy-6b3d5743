@@ -297,7 +297,7 @@ const MothersDayCohort = () => {
     description: PAGE_DESC,
     url: PAGE_URL,
     serviceType: "Local small business website and marketing automation",
-    areaServed: "United States",
+    areaServed: { "@type": "Country", name: "United States" },
     provider: {
       "@type": "Organization",
       name: "GrowSmallBiz",
