@@ -1725,7 +1725,7 @@ const MothersDayCohort = () => {
             </div>
 
             <div className="flex justify-center mb-4">
-              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
+              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
             </div>
             <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               No credit card required. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot.
