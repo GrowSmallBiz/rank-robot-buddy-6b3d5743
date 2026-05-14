@@ -970,6 +970,90 @@ const MothersDayCohort = () => {
               </div>
             </div>
 
+            {/* What's included — feature cards */}
+            <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-6xl mx-auto">
+              {[
+                {
+                  title: "Essentials",
+                  subtitle: "Run Your Entire Business in One Place",
+                  highlight: false,
+                  features: [
+                    "Smart CRM & Unified Inbox",
+                    "Sales Pipelines",
+                    "Calendars & Appointment Scheduling",
+                    "Funnels, Websites & Forms Builder",
+                    "Email & Social Media Marketing",
+                    "Memberships & Courses",
+                    "Invoicing, Proposals & Contracts",
+                    "Workflow Automations",
+                    "Reputation Management",
+                  ],
+                  footer: null,
+                },
+                {
+                  title: "Growth",
+                  subtitle: "Scale Conversations with AI",
+                  highlight: true,
+                  features: [
+                    "Everything in Essentials +",
+                    "AI Receptionist",
+                    "Website AI Livechat",
+                    "Conversational AI across SMS & Social Media Channels",
+                  ],
+                  footer: (
+                    <>
+                      Best for moms who want AI to{" "}
+                      <span className="font-semibold text-[hsl(22_85%_42%)]">answer, qualify, and book</span>{" "}
+                      — even when you&rsquo;re with a client, with family, or finally taking a break.
+                    </>
+                  ),
+                },
+              ].map((c) => (
+                <div
+                  key={c.title}
+                  className={`relative rounded-3xl p-7 md:p-8 border flex flex-col ${
+                    c.highlight
+                      ? "border-2 border-[hsl(22_85%_60%)] bg-[linear-gradient(135deg,hsl(22_85%_60%/0.08),hsl(350_75%_80%/0.10))] shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.4)]"
+                      : "border-[hsl(30_55%_82%)] bg-white"
+                  }`}
+                >
+                  {c.highlight && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[hsl(22_85%_50%)] text-white text-xs font-bold shadow-lg whitespace-nowrap uppercase tracking-wider">
+                      Most Popular
+                    </div>
+                  )}
+                  <h3 className="text-3xl md:text-4xl font-display font-bold text-[hsl(210_55%_12%)] mb-1">
+                    {c.title}
+                  </h3>
+                  <p className="italic text-[hsl(210_30%_30%)] mb-5">{c.subtitle}</p>
+                  <ul className="space-y-3">
+                    {c.features.map((f, i) => {
+                      const isHeading = /^everything in/i.test(f);
+                      return (
+                        <li key={f} className="flex items-start gap-3">
+                          <CheckCircle2 className="w-5 h-5 mt-0.5 text-[hsl(22_85%_50%)] shrink-0" />
+                          <span
+                            className={
+                              isHeading
+                                ? "text-[hsl(210_55%_12%)] font-bold"
+                                : "text-[hsl(210_30%_22%)]"
+                            }
+                          >
+                            {f}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  {c.footer && (
+                    <div className="mt-6 pt-5 border-t border-[hsl(22_85%_60%/0.3)]">
+                      <p className="italic text-[hsl(210_30%_25%)] leading-relaxed">{c.footer}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
             {/* Top comparison cards */}
             <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-6xl mx-auto">
               <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/70 backdrop-blur-sm p-7 md:p-8">
