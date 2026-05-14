@@ -537,6 +537,9 @@ const MothersDayCohort = () => {
                   </li>
                 ))}
               </ul>
+              <p className="text-center text-sm font-bold uppercase tracking-[0.2em] text-primary mt-6">
+                This Offer Will Not Be Repeated in 2026
+              </p>
             </div>
           </div>
         </section>
