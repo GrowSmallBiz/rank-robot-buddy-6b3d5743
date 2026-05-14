@@ -1799,6 +1799,7 @@ const MothersDayCohort = () => {
                 title: "AI Receptionist",
                 desc: "AI voice and chat agents that answer, qualify, and book leads 24/7.",
                 included: true,
+                growthOnly: true,
               },
               {
                 icon: Sparkles,
@@ -1860,7 +1861,7 @@ const MothersDayCohort = () => {
                 title: "Google Ads & Facebook Ads",
                 desc: "Search and social campaigns built for local service businesses.",
               },
-            ].map(({ icon: Icon, title, desc, included }) => (
+            ].map(({ icon: Icon, title, desc, included, growthOnly }) => (
               <div
                 key={title}
                 className={`group relative rounded-xl p-4 border transition-all duration-300 hover:-translate-y-1 ${
@@ -1871,7 +1872,7 @@ const MothersDayCohort = () => {
               >
                 {included && (
                   <span className="absolute -top-2 right-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-gradient-to-r from-[hsl(22_85%_55%)] to-[hsl(350_75%_60%)] text-white text-[10px] font-bold uppercase tracking-wide shadow-sm">
-                    <CheckCircle2 className="w-3 h-3" /> Included
+                    <CheckCircle2 className="w-3 h-3" /> {growthOnly ? "Growth Plan Only" : "Included"}
                   </span>
                 )}
                 <div className="flex items-center gap-2.5 mb-2">
