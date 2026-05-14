@@ -27,6 +27,7 @@ export const CardCTA = ({
   buttonHref = "https://lp.growsmallbiz.io/digital-growth-strategy-session",
   sectionClassName = "py-24 lg:py-32",
   accentWords = [],
+  showPhoneButton = true,
 }: CardCTAProps) => {
   // Helper to render title with accent words highlighted
   const renderTitle = () => {
