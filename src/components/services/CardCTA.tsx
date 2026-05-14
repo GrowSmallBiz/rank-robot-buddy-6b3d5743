@@ -135,17 +135,19 @@ export const CardCTA = ({
                     )}
                   </Button>
                   {/* Outlined Phone Button - subtle border like reference */}
-                  <Button 
-                    variant="outline" 
-                    size="xl" 
-                    asChild 
-                    className="border-muted-foreground/40 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent px-6 rounded-full"
-                  >
-                    <a href="tel:+19258863724">
-                      <Phone className="mr-2 w-5 h-5" />
-                      Call +1 (925) 886-3724
-                    </a>
-                  </Button>
+                  {showPhoneButton && (
+                    <Button 
+                      variant="outline" 
+                      size="xl" 
+                      asChild 
+                      className="border-muted-foreground/40 hover:border-foreground/50 hover:bg-transparent text-foreground bg-transparent px-6 rounded-full"
+                    >
+                      <a href="tel:+19258863724">
+                        <Phone className="mr-2 w-5 h-5" />
+                        Call +1 (925) 886-3724
+                      </a>
+                    </Button>
+                  )}
                 </div>
                 <p className="mt-4 text-sm text-primary font-medium">
                   No commitment. No pressure. Just a clear path forward for your business.
