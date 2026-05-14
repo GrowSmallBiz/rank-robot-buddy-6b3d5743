@@ -1267,7 +1267,7 @@ const MothersDayCohort = () => {
 
                   {/* 8. CTA inside each card */}
                   <div className="mt-auto pt-6">
-                    <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" full />
+                    <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" full />
                   </div>
                 </div>
               ))}
