@@ -978,12 +978,11 @@ const MothersDayCohort = () => {
                   subtitle: "Run Your Entire Business in All-in-One Platform",
                   highlight: false,
                   features: [
-                    { title: "Unified Inbox", desc: "Email, SMS and Social Media communication in one place" },
                     { title: "Missed Call Text Back", desc: "If you miss a call, an instant text is sent automatically — no lead slips away" },
-                    { title: "Calendars & Appointment Scheduling", desc: "Integrated with Google, Outlook and Apple Calendar" },
-                    { title: "Promotional Landing Pages and Form Builder", desc: "Describe your offer in plain words, AI builds the page in minutes — no designer needed" },
-                    { title: "Email & SMS Marketing", desc: "Nurture leads and send appointment reminders automatically — fewer no-shows, fuller calendar" },
                     { title: "Reputation Management", desc: "Automated review requests and AI replies to Google Reviews" },
+                    { title: "Calendars & Appointment Scheduling", desc: "Integrated with Google, Outlook and Apple Calendar" },
+                    { title: "Unified Inbox", desc: "Email, SMS and Social Media communication in one place" },
+                    { title: "Email & SMS Marketing", desc: "Nurture leads and send appointment reminders automatically — fewer no-shows, fuller calendar" },
                   ],
                   footer: (
                     <>
