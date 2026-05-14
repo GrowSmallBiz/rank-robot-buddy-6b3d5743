@@ -1774,21 +1774,6 @@ const MothersDayCohort = () => {
 
       </main>
 
-      <div id="apply-form">
-        <ConsultationFormSection
-        headingOverride="Apply for One of the 5 Spots"
-        eyebrowOverride="No Credit Card Required To Apply"
-        descriptionOverride="Apply for one of the 5 spots in this Mother’s Day Appreciation Offer. If your business is a fit, we’ll review the offer, confirm the right plan, and send the payment link to reserve your spot."
-        iframeBorderRadius="3px"
-        utmCampaign="mothers-day-cohort"
-        sectionClassName="bg-[linear-gradient(135deg,hsl(210_55%_8%)_0%,hsl(210_50%_12%)_55%,hsl(20_45%_18%)_100%)]"
-        headingGradientClass="bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)]"
-        cardBorderColor="hsl(22 85% 60% / 0.6)"
-        cardGlowClass="shadow-[0_0_30px_hsl(22_85%_60%/0.35),0_0_60px_hsl(22_85%_60%/0.2)]"
-        heroOverlay
-      />
-      </div>
-
       {/* OUR OTHER SERVICES */}
       <section
         className="py-16 md:py-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(28_55%_96%)_0%,hsl(20_50%_94%)_100%)]"
