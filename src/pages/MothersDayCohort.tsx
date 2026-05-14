@@ -1790,25 +1790,13 @@ const MothersDayCohort = () => {
                   </p>
                 </div>
 
-                <div style={{ width: "100%", height: "1006px", borderRadius: "3px", overflow: "hidden" }}>
-                  <iframe
-                    src={buildUrl("https://api.leadconnectorhq.com/widget/form/hFTESAZxuks4QvC0lcrp", "mothers-day-form")}
-                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
-                    id="inline-hFTESAZxuks4QvC0lcrp"
-                    data-layout="{'id':'INLINE'}"
-                    data-trigger-type="alwaysShow"
-                    data-trigger-value=""
-                    data-activation-type="alwaysActivated"
-                    data-activation-value=""
-                    data-deactivation-type="neverDeactivate"
-                    data-deactivation-value=""
-                    data-form-name="GrowSmallBiz SaaS Demo Form - Mothers Day"
-                    data-height="1301"
-                    data-layout-iframe-id="inline-hFTESAZxuks4QvC0lcrp"
-                    data-form-id="hFTESAZxuks4QvC0lcrp"
-                    title="GrowSmallBiz SaaS Demo Form - Mothers Day"
-                  />
-                </div>
+                <iframe
+                  src={buildUrl("https://api.leadconnectorhq.com/widget/survey/FGhQ2ZPenaK8C06xPnTa", "mothers-day-survey")}
+                  style={{ border: "none", width: "100%", minHeight: "600px" }}
+                  scrolling="no"
+                  id="FGhQ2ZPenaK8C06xPnTa"
+                  title="survey"
+                />
                 <script src="https://link.msgsndr.com/js/form_embed.js" />
               </div>
             </div>
