@@ -292,18 +292,44 @@ const MothersDayCohort = () => {
 
   const offerJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Offer",
-    name: "Mother’s Day Appreciation Offer",
+    "@type": "Service",
+    name: "Mother’s Day Appreciation Offer — Starter Website + Client Growth System",
     description: PAGE_DESC,
     url: PAGE_URL,
-    availability: "https://schema.org/LimitedAvailability",
-    inventoryLevel: { "@type": "QuantitativeValue", value: 5 },
-    validThrough: "2026-05-31",
-    seller: {
+    serviceType: "Local small business website and marketing automation",
+    areaServed: "United States",
+    provider: {
       "@type": "Organization",
       name: "GrowSmallBiz",
       url: "https://growsmallbiz.io",
+      logo: "https://growsmallbiz.io/images/growsmallbiz-logo.webp",
     },
+    offers: {
+      "@type": "Offer",
+      name: "Mother’s Day Appreciation Offer",
+      description: PAGE_DESC,
+      url: PAGE_URL,
+      availability: "https://schema.org/LimitedAvailability",
+      inventoryLevel: { "@type": "QuantitativeValue", value: 5 },
+      validThrough: "2026-05-31",
+      priceCurrency: "USD",
+      price: "1000",
+      seller: {
+        "@type": "Organization",
+        name: "GrowSmallBiz",
+        url: "https://growsmallbiz.io",
+      },
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://growsmallbiz.io/" },
+      { "@type": "ListItem", position: 2, name: "Specials", item: "https://growsmallbiz.io/specials/" },
+      { "@type": "ListItem", position: 3, name: "Mother’s Day Offer", item: PAGE_URL },
+    ],
   };
 
   return (
@@ -318,11 +344,14 @@ const MothersDayCohort = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={PAGE_URL} />
         <meta property="og:image" content={`https://growsmallbiz.io${heroImage}`} />
+        <meta property="og:site_name" content="GrowSmallBiz" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={PAGE_TITLE} />
         <meta name="twitter:description" content={PAGE_DESC} />
+        <meta name="twitter:image" content={`https://growsmallbiz.io${heroImage}`} />
         <script type="application/ld+json">{JSON.stringify(offerJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
       </Head>
 
       {/* Minimal campaign top bar */}
