@@ -834,7 +834,7 @@ export const Header = () => {
           </Link>
 
           <Button variant="hero" size="lg" className="w-full mt-4" asChild>
-            <a href="https://lp.growsmallbiz.io/digital-growth-strategy-session" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Schedule Strategy Call</a>
+            <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Schedule Strategy Call</a>
           </Button>
         </div>
       </div>
