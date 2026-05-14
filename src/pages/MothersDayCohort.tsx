@@ -975,7 +975,7 @@ const MothersDayCohort = () => {
               {[
                 {
                   title: "Essentials",
-                  subtitle: "Run Your Entire Business in All-in-One Platform",
+                  subtitle: "So no lead slips through the cracks — even when you're juggling everything else",
                   highlight: false,
                   features: [
                     { title: "Missed Call Text Back", desc: "If you miss a call, an instant text is sent automatically — no lead slips away" },
