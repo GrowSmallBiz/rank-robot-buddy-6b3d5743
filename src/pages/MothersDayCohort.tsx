@@ -979,16 +979,16 @@ const MothersDayCohort = () => {
                   highlight: false,
                   features: [
                     "Smart CRM & Unified Inbox",
-                    "Sales Pipelines",
                     "Calendars & Appointment Scheduling",
                     "Funnels, Websites & Forms Builder",
                     "Email & Social Media Marketing",
-                    "Memberships & Courses",
-                    "Invoicing, Proposals & Contracts",
-                    "Workflow Automations",
                     "Reputation Management",
                   ],
-                  footer: null,
+                  footer: (
+                    <>
+                      Includes automated review requests and AI replies to Google Reviews — so you never miss a chance to build trust.
+                    </>
+                  ),
                 },
                 {
                   title: "Growth",
