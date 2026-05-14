@@ -513,7 +513,7 @@ const MothersDayCohort = () => {
             <div className="max-w-3xl mx-auto mt-10 md:mt-12 text-center">
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center mb-4">
                 <PrimaryCTA
-                  href="#apply-form"
+                  href={ctaUrl}
                   label="Apply for One of the 5 Spots"
                   className="w-full sm:w-auto whitespace-normal text-center leading-tight h-auto py-3"
                 />
