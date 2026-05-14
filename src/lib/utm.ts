@@ -20,7 +20,7 @@ export interface UtmParams {
   facebook_click_id?: string;
 }
 
-/** Capture inbound UTMs from the current URL on first page load */
+/** Capture inbound UTMs and click IDs from the current URL on first page load */
 export function captureInboundUtms(): UtmParams | null {
   if (typeof window === "undefined") return null;
 
@@ -38,6 +38,18 @@ export function captureInboundUtms(): UtmParams | null {
       utms[key] = val;
       hasUtm = true;
     }
+  }
+
+  // Capture ad platform click IDs when present
+  const gclid = params.get("gclid");
+  if (gclid) {
+    utms.google_click_id = gclid;
+    hasUtm = true;
+  }
+  const fbclid = params.get("fbclid");
+  if (fbclid) {
+    utms.facebook_click_id = fbclid;
+    hasUtm = true;
   }
 
   if (hasUtm) {
