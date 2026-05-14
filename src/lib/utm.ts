@@ -7,6 +7,7 @@
  */
 
 const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"] as const;
+const CLICK_KEYS = ["google_click_id", "facebook_click_id"] as const;
 const STORAGE_KEY = "gsb_inbound_utms";
 
 export interface UtmParams {
@@ -15,9 +16,11 @@ export interface UtmParams {
   utm_campaign?: string;
   utm_content?: string;
   utm_term?: string;
+  google_click_id?: string;
+  facebook_click_id?: string;
 }
 
-/** Capture inbound UTMs from the current URL on first page load */
+/** Capture inbound UTMs and click IDs from the current URL on first page load */
 export function captureInboundUtms(): UtmParams | null {
   if (typeof window === "undefined") return null;
 
@@ -35,6 +38,18 @@ export function captureInboundUtms(): UtmParams | null {
       utms[key] = val;
       hasUtm = true;
     }
+  }
+
+  // Capture ad platform click IDs when present
+  const gclid = params.get("gclid");
+  if (gclid) {
+    utms.google_click_id = gclid;
+    hasUtm = true;
+  }
+  const fbclid = params.get("fbclid");
+  if (fbclid) {
+    utms.facebook_click_id = fbclid;
+    hasUtm = true;
   }
 
   if (hasUtm) {
@@ -99,14 +114,25 @@ export function buildCtaUrl(
     utm_campaign: campaignSlug(campaign),
   };
 
-  // Strip any existing UTM params from the base URL
+  // Strip any existing UTM params and click IDs from the base URL
   const url = new URL(baseUrl);
   for (const key of UTM_KEYS) {
+    url.searchParams.delete(key);
+  }
+  for (const key of CLICK_KEYS) {
     url.searchParams.delete(key);
   }
 
   // Append UTMs
   for (const key of UTM_KEYS) {
+    const val = utms[key];
+    if (val) {
+      url.searchParams.set(key, val);
+    }
+  }
+
+  // Append click IDs if present
+  for (const key of CLICK_KEYS) {
     const val = utms[key];
     if (val) {
       url.searchParams.set(key, val);
