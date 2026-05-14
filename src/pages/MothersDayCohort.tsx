@@ -388,6 +388,9 @@ const MothersDayCohort = () => {
                   a System That Helps You Win Clients Without Living on Your Phone
                 </span>
               </h2>
+              <p className="mt-2 text-sm md:text-base font-semibold text-foreground/90 tracking-wide uppercase">
+                Built for moms who mean business.
+              </p>
             </div>
 
             {/* Subhead */}
@@ -395,6 +398,7 @@ const MothersDayCohort = () => {
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
                 For 5 mom-owned local service businesses, GrowSmallBiz is including a complimentary Starter Website valued at $2,500, reducing Client Growth System Setup by $500, and offering annual-only appreciation pricing that will not be repeated.
               </p>
+            </div>
             </div>
 
             {/* Supporting line */}
