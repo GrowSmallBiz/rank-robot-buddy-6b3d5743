@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Sparkles } from "lucide-react";
 import { useState } from "react";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 
@@ -45,6 +45,24 @@ export const Header = () => {
       Skip to main content
     </a>
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
+      {/* Top promo bar */}
+      <Link
+        to="/specials/current-offers/"
+        className="block bg-primary/15 border-b border-primary/30 hover:bg-primary/25 transition-colors"
+      >
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center gap-2 py-2 text-xs md:text-sm text-foreground">
+            <Sparkles className="w-3.5 h-3.5 text-primary shrink-0" />
+            <span className="font-medium">
+              <span className="text-primary font-bold">Current Specials:</span>{" "}
+              Limited-time offers for local service businesses
+            </span>
+            <span className="hidden sm:inline underline text-primary font-semibold ml-2">
+              View Offers
+            </span>
+          </div>
+        </div>
+      </Link>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
