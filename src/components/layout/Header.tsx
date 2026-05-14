@@ -483,15 +483,21 @@ export const Header = () => {
             </Link>
           </nav>
 
-          {/* Phone CTA */}
-          <div className="hidden lg:block">
-            <a 
-              href="tel:+19258863724" 
+          {/* Phone + Strategy Call CTAs */}
+          <div className="hidden lg:flex items-center gap-3">
+            <a
+              href="tel:+19258863724"
               className="flex flex-col items-center justify-center px-5 py-2 border-2 border-foreground/80 rounded-lg hover:bg-foreground/10 transition-colors"
             >
               <span className="text-sm text-foreground font-semibold tracking-wide uppercase">Call Now <span className="text-xs">24x7</span></span>
               <span className="text-foreground text-lg font-bold">+1 (925) 886-3724</span>
             </a>
+            <Button variant="hero" size="lg" asChild>
+              <a href={strategySessionUrl} target="_blank" rel="noopener noreferrer">
+                Schedule Strategy Call
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
