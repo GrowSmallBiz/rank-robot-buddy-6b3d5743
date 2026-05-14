@@ -1969,7 +1969,7 @@ const MothersDayCohort = () => {
               </h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#apply-form" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href={ctaUrl} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Apply for a Spot
                   </a>
                 </li>
