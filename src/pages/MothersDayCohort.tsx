@@ -1799,6 +1799,7 @@ const MothersDayCohort = () => {
                 title: "AI Receptionist",
                 desc: "AI voice and chat agents that answer, qualify, and book leads 24/7.",
                 included: true,
+                growthOnly: true,
               },
               {
                 icon: Sparkles,
