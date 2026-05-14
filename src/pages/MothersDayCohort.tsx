@@ -980,8 +980,8 @@ const MothersDayCohort = () => {
                   features: [
                     { title: "Unified Inbox", desc: "Email, SMS and Social Media communication in one place" },
                     { title: "Calendars & Appointment Scheduling", desc: "Integrated with Google, Outlook and Apple Calendar" },
-                    { title: "Promotional Landing Pages and Form Builder", desc: "" },
-                    { title: "Email & SMS Marketing", desc: "Follow-up happens while you're cooking dinner or at a soccer game" },
+                    { title: "Promotional Landing Pages and Form Builder", desc: "Describe your offer in plain words, AI builds the page in minutes — no designer needed" },
+                    { title: "Email & SMS Marketing", desc: "Nurture leads and send appointment reminders automatically — fewer no-shows, fuller calendar" },
                     { title: "Reputation Management", desc: "Automated review requests and AI replies to Google Reviews" },
                   ],
                   footer: null,
