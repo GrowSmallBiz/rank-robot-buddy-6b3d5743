@@ -149,6 +149,30 @@ const MothersDayCohort = () => {
     { label: "Essentials Plan", value: "$97/month" },
     { label: "Growth Plan", value: "$197/month" },
   ];
+		{/* Value teaser */}
+		<section className="py-10 md:py-12 bg-background border-b border-border/40">
+		  <div className="container mx-auto px-4">
+			<div className="max-w-3xl mx-auto">
+			  <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6">
+				This limited offer includes
+			  </p>
+			  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+				{[
+				  "Complimentary Starter Website — $2,500 value",
+				  "$500 off Client Growth System Setup",
+				  "Annual-only Mom Appreciation Pricing",
+				  "30 Days Money Back Guarantee",
+				  "Limited to 5 mom-owned businesses",
+				].map((item) => (
+				  <li key={item} className="flex items-start gap-3 text-foreground/90">
+					<CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+					<span className="text-sm md:text-base leading-snug">{item}</span>
+				  </li>
+				))}
+			  </ul>
+			</div>
+		  </div>
+		</section>
 
 
   const roiCards = [
