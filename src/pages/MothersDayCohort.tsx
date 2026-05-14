@@ -68,9 +68,9 @@ const PAGE_PATH = "/specials/mothers-day/";
 const PAGE_URL = `https://growsmallbiz.io${PAGE_PATH}`;
 const APPLICATION_FORM_URL =
   "https://lp.growsmallbiz.io/digital-growth-strategy-session";
-const PAGE_TITLE = "Complimentary Starter Website for Mom-Owned Small Businesses | Mother’s Day Offer";
+const PAGE_TITLE = "Mother’s Day Offer: Free Starter Website for Mom-Owned Businesses";
 const PAGE_DESC =
-  "Mother’s Day Appreciation Offer extended through May 31 for 5 mom-owned local service businesses. Complimentary Starter Website ($2,500 value), Client Growth System Setup reduced to $1,000, plus special Mother’s Day pricing that will not be repeated.";
+  "Mother’s Day Appreciation Offer through May 31 for 5 mom-owned local service businesses: complimentary Starter Website ($2,500 value) plus reduced Client Growth System setup.";
 
 const PRIMARY_CTA_LABEL = "Apply for One of the 5 Spots →";
 const SECONDARY_CTA_LABEL = "See the Offer Breakdown";
