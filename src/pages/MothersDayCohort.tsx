@@ -1790,7 +1790,7 @@ const MothersDayCohort = () => {
                   </p>
                 </div>
 
-                <div style={{ width: "100%", height: "1301px", borderRadius: "3px", overflow: "hidden" }}>
+                <div style={{ width: "100%", height: "1006px", borderRadius: "3px", overflow: "hidden" }}>
                   <iframe
                     src="https://api.leadconnectorhq.com/widget/form/hFTESAZxuks4QvC0lcrp"
                     style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
