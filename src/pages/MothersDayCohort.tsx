@@ -388,6 +388,9 @@ const MothersDayCohort = () => {
                   a System That Helps You Win Clients Without Living on Your Phone
                 </span>
               </h2>
+              <p className="mt-2 text-sm md:text-base font-semibold text-foreground/90 tracking-wide uppercase">
+                Built for moms who mean business.
+              </p>
             </div>
 
             {/* Subhead */}
