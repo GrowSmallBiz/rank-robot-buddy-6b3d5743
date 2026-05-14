@@ -16,6 +16,8 @@ interface CardCTAProps {
   sectionClassName?: string;
   /** Accent words to highlight in title (will be colored with gradient) */
   accentWords?: string[];
+  /** Whether to show the phone call button */
+  showPhoneButton?: boolean;
 }
 
 export const CardCTA = ({
