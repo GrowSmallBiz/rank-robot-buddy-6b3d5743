@@ -516,294 +516,6 @@ const MothersDayCohort = () => {
           </div>
         </section>
 
-        {/* 1. PRICING / VALUE STACK */}
-        <section
-          id="value"
-          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_60%_95%)_0%,hsl(20_55%_92%)_100%)]"
-        >
-          <div className="absolute -top-20 right-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-20 left-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
-
-          <div className="container mx-auto px-4 max-w-7xl relative z-10">
-            {/* Header */}
-            <div className="text-center mb-8 max-w-4xl mx-auto">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
-                Mother’s Day Appreciation Offer · Limited to 5 Businesses
-              </p>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-5 leading-[1.1]">
-                <span className="text-[hsl(210_55%_14%)]">A Real Business Growth Deal for </span>
-                <span className="bg-gradient-to-r from-[hsl(22_90%_58%)] via-[hsl(350_75%_62%)] to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
-                  Mom-Owned Businesses
-                </span>
-              </h2>
-              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
-                This is not standard GrowSmallBiz pricing. This is a limited annual-only appreciation offer created for 5 mom-owned local service businesses.
-              </p>
-            </div>
-
-            {/* Why this is still open — directly under subhead */}
-            <div className="max-w-4xl mx-auto mb-10 rounded-2xl border border-[hsl(22_85%_60%/0.35)] bg-white/75 backdrop-blur-sm p-5 md:p-6 shadow-[0_15px_40px_-20px_hsl(20_60%_40%/0.3)]">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
-                Why this is still open
-              </p>
-              <p className="text-sm md:text-base text-[hsl(210_30%_22%)] leading-relaxed">
-                Mother’s Day is one day. Running a business while being a mom is every day. We extended this appreciation offer through May 31 for 5 mom-owned local service businesses.
-              </p>
-            </div>
-
-            <div className="flex justify-center mb-10">
-              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[hsl(22_85%_50%)] text-white text-sm md:text-base font-bold shadow-[0_15px_40px_-10px_hsl(20_60%_40%/0.45)] uppercase tracking-wider">
-                <Sparkles className="w-4 h-4" /> Annual Enrollment Only
-              </div>
-            </div>
-
-            {/* Top comparison cards */}
-            <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-6xl mx-auto">
-              <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/70 backdrop-blur-sm p-7 md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(210_25%_45%)] mb-4">
-                  Standard GrowSmallBiz Annual Value
-                </p>
-                <ul className="divide-y divide-[hsl(30_45%_85%)]">
-                  {[
-                    { label: "Starter Website", value: "$2,500" },
-                    { label: "Client Growth System Setup", value: "$1,500" },
-                    { label: "Essentials Annual Plan", value: "$2,970/year" },
-                    { label: "Growth Annual Plan", value: "$4,970/year" },
-                  ].map((row) => (
-                    <li key={row.label} className="flex items-center justify-between py-3 text-[hsl(210_30%_25%)]">
-                      <span className="text-sm md:text-base">{row.label}</span>
-                      <span className="text-sm md:text-base line-through opacity-70">{row.value}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="relative rounded-3xl border-2 border-[hsl(22_85%_60%)] bg-white shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.4)] p-7 md:p-8 overflow-hidden">
-                <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
-                <p className="text-xs font-semibold uppercase tracking-wider mb-4 mt-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
-                  Mother’s Day Appreciation Offer
-                </p>
-                <ul className="divide-y divide-[hsl(30_45%_85%)]">
-                  {[
-                    { label: "Starter Website", value: "Complimentary" },
-                    { label: "Client Growth System Setup", value: "$1,000" },
-                    { label: "Essentials Special", value: "$970/year" },
-                    { label: "Growth Special", value: "$1,970/year" },
-                  ].map((row) => (
-                    <li key={row.label} className="flex items-center justify-between gap-3 py-3 text-[hsl(210_55%_14%)]">
-                      <span className="text-sm md:text-base font-medium">{row.label}</span>
-                      <span className="text-sm md:text-base font-bold text-[hsl(22_85%_42%)] text-right">{row.value}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-4 text-xs md:text-sm text-[hsl(210_30%_30%)] italic">
-                  Annual-only special pricing. Equivalent to $97/month for Essentials and $197/month for Growth, with 2 months included.
-                </p>
-              </div>
-            </div>
-
-            {/* Plan cards */}
-            <div className="grid md:grid-cols-2 gap-6 lg:gap-8 items-stretch">
-              {[
-                {
-                  title: "Essentials Special",
-                  annual: "$970",
-                  monthlyEq: "$97/month",
-                  calloutHeadline: "Less Than One Nice Dinner Out Each Month",
-                  calloutBody:
-                    "For less than one dinner out each month, your business gets a website, CRM, unified inbox, review automation, and follow-up foundation working behind the scenes.",
-                  firstYearAmount: "$1,970",
-                  savingsTotal: "$5,000",
-                  savingsRows: [
-                    "$2,500 Starter Website included",
-                    "$500 setup savings",
-                    "$2,000 annual plan savings",
-                  ],
-                  bestFor:
-                    "Best for mom-owned businesses that want a professional website, CRM, reviews, unified inbox, and follow-up foundation in place.",
-                  highlight: false,
-                },
-                {
-                  title: "Growth Special",
-                  annual: "$1,970",
-                  monthlyEq: "$197/month",
-                  calloutHeadline: "About the Cost of One Spa Visit Each Month",
-                  calloutBody:
-                    "For about the cost of one spa visit each month, your business gets AI-powered response tools that help answer questions, capture leads, follow up, and book appointments — even when you are with a client, with your family, or finally taking a break.",
-                  firstYearAmount: "$2,970",
-                  savingsTotal: "$6,000",
-                  savingsRows: [
-                    "$2,500 Starter Website included",
-                    "$500 setup savings",
-                    "$3,000 annual plan savings",
-                  ],
-                  bestFor:
-                    "Best for mom-owned businesses that want AI-powered response, missed-call text-back, AI Livechat, faster lead handling, and after-hours support.",
-                  highlight: true,
-                },
-              ].map((c) => (
-                <div
-                  key={c.title}
-                  className={`relative rounded-3xl p-7 md:p-9 border flex flex-col ${
-                    c.highlight
-                      ? "border-2 border-[hsl(22_85%_60%)] bg-[linear-gradient(135deg,hsl(22_85%_60%/0.10),hsl(350_75%_80%/0.10))] shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.45)] md:scale-[1.02]"
-                      : "border-[hsl(30_55%_82%)] bg-white/85"
-                  }`}
-                >
-                  {c.highlight && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg whitespace-nowrap">
-                      MOST POPULAR
-                    </div>
-                  )}
-
-                  {/* 1. Plan name */}
-                  <h3 className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
-                    {c.title}
-                  </h3>
-
-                  {/* 2. Annual price */}
-                  <div className="mb-2">
-                    <span className="text-5xl md:text-6xl font-display font-black text-[hsl(22_85%_42%)] leading-none">
-                      {c.annual}
-                    </span>
-                    <span className="text-xl md:text-2xl font-bold text-[hsl(22_85%_42%)] ml-1">/year</span>
-                  </div>
-
-                  {/* 3. Monthly equivalent badge */}
-                  <div className="mt-2 inline-flex self-start items-center px-3 py-1 rounded-full bg-[hsl(210_55%_14%/0.06)] border border-[hsl(210_55%_14%/0.12)] text-xs md:text-sm font-semibold text-[hsl(210_45%_25%)]">
-                    Equivalent to {c.monthlyEq} with 2 months included
-                  </div>
-
-                  {/* 4. Put That in Perspective */}
-                  <div className="relative mt-5 rounded-2xl overflow-hidden border-2 border-[hsl(22_85%_60%/0.5)] bg-[linear-gradient(135deg,hsl(30_85%_92%)_0%,hsl(350_75%_94%)_50%,hsl(22_85%_92%)_100%)] shadow-[0_15px_40px_-15px_hsl(20_60%_40%/0.3)]">
-                    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[linear-gradient(180deg,hsl(22_85%_55%),hsl(350_70%_60%))]" />
-                    <div className="relative p-5 md:p-6 pl-6 md:pl-7">
-                      <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold text-[hsl(22_85%_38%)] mb-2">
-                        Put That in Perspective
-                      </p>
-                      <h4 className="text-xl md:text-2xl font-display font-bold text-[hsl(210_55%_12%)] mb-2 leading-tight">
-                        {c.calloutHeadline}
-                      </h4>
-                      <p className="text-sm md:text-base text-[hsl(210_30%_22%)] leading-relaxed">
-                        {c.calloutBody}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* 5. First-Year Investment block */}
-                  <div className="mt-5 rounded-2xl border-2 border-[hsl(210_55%_14%)] bg-[hsl(210_55%_14%)] text-white p-5 md:p-6">
-                    <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold text-white/70 mb-2">
-                      First-Year Investment
-                    </p>
-                    <p className="text-3xl md:text-4xl font-display font-black leading-none">
-                      {c.firstYearAmount}
-                    </p>
-                    <p className="mt-2 text-xs md:text-sm text-white/80">
-                      Includes setup + annual plan
-                    </p>
-                  </div>
-
-                  {/* 6. Total first-year savings */}
-                  <div className="mt-5 rounded-2xl bg-white/85 border border-[hsl(30_55%_85%)] p-5">
-                    <p className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)]">
-                      {c.savingsTotal}{" "}
-                      <span className="text-sm md:text-base font-medium text-[hsl(210_25%_40%)]">
-                        in total first-year savings
-                      </span>
-                    </p>
-                    <ul className="mt-3 space-y-2">
-                      {c.savingsRows.map((r) => (
-                        <li key={r} className="flex items-start gap-2 text-sm text-[hsl(210_30%_25%)]">
-                          <CheckCircle2 className="w-4 h-4 mt-0.5 text-[hsl(22_85%_50%)] shrink-0" />
-                          <span>{r}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* 7. Best for */}
-                  <p className="mt-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
-                    <span className="font-semibold text-[hsl(210_55%_14%)]">Best for: </span>
-                    {c.bestFor}
-                  </p>
-
-                  {/* 8. CTA inside each card */}
-                  <div className="mt-auto pt-6">
-                    <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" full />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Clarification blocks */}
-            <div className="mt-10 grid md:grid-cols-2 gap-4 max-w-6xl mx-auto">
-              <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
-                The Complimentary Starter Website is included only when you enroll in either the Essentials Special or Growth Special annual plan. It is not available as a standalone website-only offer.
-              </p>
-              <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
-                The $1,000 Client Growth System Setup covers the configuration of the system behind your website — CRM, lead capture, pipeline setup, email and SMS follow-up, phone and calendar integration, review request automation, and hands-on launch support.
-              </p>
-            </div>
-
-            <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic max-w-3xl mx-auto">
-              This Mother’s Day Appreciation Offer is limited to 5 selected mom-owned businesses and will not be repeated after this campaign closes.
-            </p>
-
-            <div className="flex justify-center mt-8">
-              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
-            </div>
-
-            {/* Tax footnote */}
-            <p className="text-center text-xs md:text-sm mt-6 text-[hsl(210_25%_40%)] max-w-2xl mx-auto">
-              Your investment may qualify as a business expense. Please consult your tax advisor.
-            </p>
-          </div>
-        </section>
-
-        {/* 1b. WHAT ONBOARDING SETUP INCLUDES (moved to follow pricing) */}
-        <section id="setup" className="py-20 scroll-mt-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-card p-7 md:p-8">
-              <h2 className="font-display font-bold text-2xl md:text-3xl mb-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                What the Onboarding Setup Includes
-              </h2>
-              <p className="text-sm text-muted-foreground mb-5">
-                The one-time setup fee covers system configuration — not website design. Your Complimentary Starter Website is included separately.
-              </p>
-              <ul className="grid md:grid-cols-2 gap-3 mb-7">
-                {setupIncludes.map((s) => (
-                  <li key={s.text} className="flex items-start gap-3 text-sm">
-                    <s.icon className="w-4 h-4 mt-0.5 text-primary shrink-0" />
-                    <span>{s.text}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <p className="font-semibold mb-3 text-base">Core integrations may include:</p>
-              <div className="flex flex-wrap gap-2 mb-3">
-                {integrations.map((i) => (
-                  <span
-                    key={i.name}
-                    className="text-sm font-semibold px-3.5 py-2 rounded-full bg-background border-2 transition-all hover:scale-105"
-                    style={{
-                      borderColor: `${i.color}80`,
-                      color: i.color,
-                      boxShadow: `0 0 12px ${i.color}33`,
-                    }}
-                  >
-                    {i.name}
-                  </span>
-                ))}
-              </div>
-              <p className="text-xs text-muted-foreground italic">
-                Core integrations are configured based on what your business actually uses.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* 2. WHY WE EXTENDED — replaced by inline callout in pricing section */}
-
         {/* 3. MADE FOR MOM-OWNED SERVICE BUSINESSES LIKE YOURS */}
         <section id="built-for" className="py-16 md:py-20 relative scroll-mt-20">
           <div className="container mx-auto px-4">
@@ -1186,6 +898,292 @@ const MothersDayCohort = () => {
             <p className="text-xs text-muted-foreground mt-5 max-w-2xl mx-auto italic">
               Sample website shown for demonstration purposes. Final website is customized for your business, services, and brand.
             </p>
+          </div>
+        </section>
+
+        {/* 1. PRICING / VALUE STACK */}
+        <section
+          id="value"
+          className="py-20 scroll-mt-20 relative overflow-hidden bg-[linear-gradient(180deg,hsl(35_60%_95%)_0%,hsl(20_55%_92%)_100%)]"
+        >
+          <div className="absolute -top-20 right-10 w-72 h-72 rounded-full bg-[hsl(350_70%_80%/0.22)] blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 left-10 w-72 h-72 rounded-full bg-[hsl(280_50%_82%/0.2)] blur-3xl pointer-events-none" />
+
+          <div className="container mx-auto px-4 max-w-7xl relative z-10">
+            {/* Header */}
+            <div className="text-center mb-8 max-w-4xl mx-auto">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] mb-3 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
+                Mother’s Day Appreciation Offer · Limited to 5 Businesses
+              </p>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-5 leading-[1.1]">
+                <span className="text-[hsl(210_55%_14%)]">A Real Business Growth Deal for </span>
+                <span className="bg-gradient-to-r from-[hsl(22_90%_58%)] via-[hsl(350_75%_62%)] to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
+                  Mom-Owned Businesses
+                </span>
+              </h2>
+              <p className="text-[hsl(210_30%_25%)] text-base md:text-lg leading-relaxed">
+                This is not standard GrowSmallBiz pricing. This is a limited annual-only appreciation offer created for 5 mom-owned local service businesses.
+              </p>
+            </div>
+
+            {/* Why this is still open — directly under subhead */}
+            <div className="max-w-4xl mx-auto mb-10 rounded-2xl border border-[hsl(22_85%_60%/0.35)] bg-white/75 backdrop-blur-sm p-5 md:p-6 shadow-[0_15px_40px_-20px_hsl(20_60%_40%/0.3)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] mb-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
+                Why this is still open
+              </p>
+              <p className="text-sm md:text-base text-[hsl(210_30%_22%)] leading-relaxed">
+                Mother’s Day is one day. Running a business while being a mom is every day. We extended this appreciation offer through May 31 for 5 mom-owned local service businesses.
+              </p>
+            </div>
+
+            <div className="flex justify-center mb-10">
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[hsl(22_85%_50%)] text-white text-sm md:text-base font-bold shadow-[0_15px_40px_-10px_hsl(20_60%_40%/0.45)] uppercase tracking-wider">
+                <Sparkles className="w-4 h-4" /> Annual Enrollment Only
+              </div>
+            </div>
+
+            {/* Top comparison cards */}
+            <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-6xl mx-auto">
+              <div className="rounded-3xl border border-[hsl(30_55%_82%)] bg-white/70 backdrop-blur-sm p-7 md:p-8">
+                <p className="text-xs font-semibold uppercase tracking-wider text-[hsl(210_25%_45%)] mb-4">
+                  Standard GrowSmallBiz Annual Value
+                </p>
+                <ul className="divide-y divide-[hsl(30_45%_85%)]">
+                  {[
+                    { label: "Starter Website", value: "$2,500" },
+                    { label: "Client Growth System Setup", value: "$1,500" },
+                    { label: "Essentials Annual Plan", value: "$2,970/year" },
+                    { label: "Growth Annual Plan", value: "$4,970/year" },
+                  ].map((row) => (
+                    <li key={row.label} className="flex items-center justify-between py-3 text-[hsl(210_30%_25%)]">
+                      <span className="text-sm md:text-base">{row.label}</span>
+                      <span className="text-sm md:text-base line-through opacity-70">{row.value}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="relative rounded-3xl border-2 border-[hsl(22_85%_60%)] bg-white shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.4)] p-7 md:p-8 overflow-hidden">
+                <div className="absolute top-0 inset-x-0 h-1.5 bg-[linear-gradient(90deg,hsl(22_85%_60%),hsl(350_70%_72%),hsl(280_55%_72%))]" />
+                <p className="text-xs font-semibold uppercase tracking-wider mb-4 mt-2 bg-gradient-to-r from-[hsl(22_90%_60%)] via-[hsl(350_70%_60%)] to-[hsl(188_78%_45%)] bg-clip-text text-transparent">
+                  Mother’s Day Appreciation Offer
+                </p>
+                <ul className="divide-y divide-[hsl(30_45%_85%)]">
+                  {[
+                    { label: "Starter Website", value: "Complimentary" },
+                    { label: "Client Growth System Setup", value: "$1,000" },
+                    { label: "Essentials Special", value: "$970/year" },
+                    { label: "Growth Special", value: "$1,970/year" },
+                  ].map((row) => (
+                    <li key={row.label} className="flex items-center justify-between gap-3 py-3 text-[hsl(210_55%_14%)]">
+                      <span className="text-sm md:text-base font-medium">{row.label}</span>
+                      <span className="text-sm md:text-base font-bold text-[hsl(22_85%_42%)] text-right">{row.value}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 text-xs md:text-sm text-[hsl(210_30%_30%)] italic">
+                  Annual-only special pricing. Equivalent to $97/month for Essentials and $197/month for Growth, with 2 months included.
+                </p>
+              </div>
+            </div>
+
+            {/* Plan cards */}
+            <div className="grid md:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+              {[
+                {
+                  title: "Essentials Special",
+                  annual: "$970",
+                  monthlyEq: "$97/month",
+                  calloutHeadline: "Less Than One Nice Dinner Out Each Month",
+                  calloutBody:
+                    "For less than one dinner out each month, your business gets a website, CRM, unified inbox, review automation, and follow-up foundation working behind the scenes.",
+                  firstYearAmount: "$1,970",
+                  savingsTotal: "$5,000",
+                  savingsRows: [
+                    "$2,500 Starter Website included",
+                    "$500 setup savings",
+                    "$2,000 annual plan savings",
+                  ],
+                  bestFor:
+                    "Best for mom-owned businesses that want a professional website, CRM, reviews, unified inbox, and follow-up foundation in place.",
+                  highlight: false,
+                },
+                {
+                  title: "Growth Special",
+                  annual: "$1,970",
+                  monthlyEq: "$197/month",
+                  calloutHeadline: "About the Cost of One Spa Visit Each Month",
+                  calloutBody:
+                    "For about the cost of one spa visit each month, your business gets AI-powered response tools that help answer questions, capture leads, follow up, and book appointments — even when you are with a client, with your family, or finally taking a break.",
+                  firstYearAmount: "$2,970",
+                  savingsTotal: "$6,000",
+                  savingsRows: [
+                    "$2,500 Starter Website included",
+                    "$500 setup savings",
+                    "$3,000 annual plan savings",
+                  ],
+                  bestFor:
+                    "Best for mom-owned businesses that want AI-powered response, missed-call text-back, AI Livechat, faster lead handling, and after-hours support.",
+                  highlight: true,
+                },
+              ].map((c) => (
+                <div
+                  key={c.title}
+                  className={`relative rounded-3xl p-7 md:p-9 border flex flex-col ${
+                    c.highlight
+                      ? "border-2 border-[hsl(22_85%_60%)] bg-[linear-gradient(135deg,hsl(22_85%_60%/0.10),hsl(350_75%_80%/0.10))] shadow-[0_30px_80px_-30px_hsl(20_60%_40%/0.45)] md:scale-[1.02]"
+                      : "border-[hsl(30_55%_82%)] bg-white/85"
+                  }`}
+                >
+                  {c.highlight && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg whitespace-nowrap">
+                      MOST POPULAR
+                    </div>
+                  )}
+
+                  {/* 1. Plan name */}
+                  <h3 className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)] mb-4">
+                    {c.title}
+                  </h3>
+
+                  {/* 2. Annual price */}
+                  <div className="mb-2">
+                    <span className="text-5xl md:text-6xl font-display font-black text-[hsl(22_85%_42%)] leading-none">
+                      {c.annual}
+                    </span>
+                    <span className="text-xl md:text-2xl font-bold text-[hsl(22_85%_42%)] ml-1">/year</span>
+                  </div>
+
+                  {/* 3. Monthly equivalent badge */}
+                  <div className="mt-2 inline-flex self-start items-center px-3 py-1 rounded-full bg-[hsl(210_55%_14%/0.06)] border border-[hsl(210_55%_14%/0.12)] text-xs md:text-sm font-semibold text-[hsl(210_45%_25%)]">
+                    Equivalent to {c.monthlyEq} with 2 months included
+                  </div>
+
+                  {/* 4. Put That in Perspective */}
+                  <div className="relative mt-5 rounded-2xl overflow-hidden border-2 border-[hsl(22_85%_60%/0.5)] bg-[linear-gradient(135deg,hsl(30_85%_92%)_0%,hsl(350_75%_94%)_50%,hsl(22_85%_92%)_100%)] shadow-[0_15px_40px_-15px_hsl(20_60%_40%/0.3)]">
+                    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[linear-gradient(180deg,hsl(22_85%_55%),hsl(350_70%_60%))]" />
+                    <div className="relative p-5 md:p-6 pl-6 md:pl-7">
+                      <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold text-[hsl(22_85%_38%)] mb-2">
+                        Put That in Perspective
+                      </p>
+                      <h4 className="text-xl md:text-2xl font-display font-bold text-[hsl(210_55%_12%)] mb-2 leading-tight">
+                        {c.calloutHeadline}
+                      </h4>
+                      <p className="text-sm md:text-base text-[hsl(210_30%_22%)] leading-relaxed">
+                        {c.calloutBody}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* 5. First-Year Investment block */}
+                  <div className="mt-5 rounded-2xl border-2 border-[hsl(210_55%_14%)] bg-[hsl(210_55%_14%)] text-white p-5 md:p-6">
+                    <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] font-bold text-white/70 mb-2">
+                      First-Year Investment
+                    </p>
+                    <p className="text-3xl md:text-4xl font-display font-black leading-none">
+                      {c.firstYearAmount}
+                    </p>
+                    <p className="mt-2 text-xs md:text-sm text-white/80">
+                      Includes setup + annual plan
+                    </p>
+                  </div>
+
+                  {/* 6. Total first-year savings */}
+                  <div className="mt-5 rounded-2xl bg-white/85 border border-[hsl(30_55%_85%)] p-5">
+                    <p className="text-2xl md:text-3xl font-display font-bold text-[hsl(210_55%_12%)]">
+                      {c.savingsTotal}{" "}
+                      <span className="text-sm md:text-base font-medium text-[hsl(210_25%_40%)]">
+                        in total first-year savings
+                      </span>
+                    </p>
+                    <ul className="mt-3 space-y-2">
+                      {c.savingsRows.map((r) => (
+                        <li key={r} className="flex items-start gap-2 text-sm text-[hsl(210_30%_25%)]">
+                          <CheckCircle2 className="w-4 h-4 mt-0.5 text-[hsl(22_85%_50%)] shrink-0" />
+                          <span>{r}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* 7. Best for */}
+                  <p className="mt-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
+                    <span className="font-semibold text-[hsl(210_55%_14%)]">Best for: </span>
+                    {c.bestFor}
+                  </p>
+
+                  {/* 8. CTA inside each card */}
+                  <div className="mt-auto pt-6">
+                    <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" full />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Clarification blocks */}
+            <div className="mt-10 grid md:grid-cols-2 gap-4 max-w-6xl mx-auto">
+              <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
+                The Complimentary Starter Website is included only when you enroll in either the Essentials Special or Growth Special annual plan. It is not available as a standalone website-only offer.
+              </p>
+              <p className="rounded-2xl border border-[hsl(30_55%_85%)] bg-white/70 p-5 text-sm md:text-base text-[hsl(210_30%_25%)] leading-relaxed">
+                The $1,000 Client Growth System Setup covers the configuration of the system behind your website — CRM, lead capture, pipeline setup, email and SMS follow-up, phone and calendar integration, review request automation, and hands-on launch support.
+              </p>
+            </div>
+
+            <p className="text-center text-sm md:text-base mt-8 text-[hsl(210_30%_25%)] italic max-w-3xl mx-auto">
+              This Mother’s Day Appreciation Offer is limited to 5 selected mom-owned businesses and will not be repeated after this campaign closes.
+            </p>
+
+            <div className="flex justify-center mt-8">
+              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
+            </div>
+
+            {/* Tax footnote */}
+            <p className="text-center text-xs md:text-sm mt-6 text-[hsl(210_25%_40%)] max-w-2xl mx-auto">
+              Your investment may qualify as a business expense. Please consult your tax advisor.
+            </p>
+          </div>
+        </section>
+
+        {/* 1b. WHAT ONBOARDING SETUP INCLUDES (moved to follow pricing) */}
+        <section id="setup" className="py-20 scroll-mt-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto rounded-2xl border border-border bg-card p-7 md:p-8">
+              <h2 className="font-display font-bold text-2xl md:text-3xl mb-2 bg-gradient-to-r from-[hsl(22_90%_72%)] via-[hsl(350_75%_82%)] to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
+                What the Onboarding Setup Includes
+              </h2>
+              <p className="text-sm text-muted-foreground mb-5">
+                The one-time setup fee covers system configuration — not website design. Your Complimentary Starter Website is included separately.
+              </p>
+              <ul className="grid md:grid-cols-2 gap-3 mb-7">
+                {setupIncludes.map((s) => (
+                  <li key={s.text} className="flex items-start gap-3 text-sm">
+                    <s.icon className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                    <span>{s.text}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="font-semibold mb-3 text-base">Core integrations may include:</p>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {integrations.map((i) => (
+                  <span
+                    key={i.name}
+                    className="text-sm font-semibold px-3.5 py-2 rounded-full bg-background border-2 transition-all hover:scale-105"
+                    style={{
+                      borderColor: `${i.color}80`,
+                      color: i.color,
+                      boxShadow: `0 0 12px ${i.color}33`,
+                    }}
+                  >
+                    {i.name}
+                  </span>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground italic">
+                Core integrations are configured based on what your business actually uses.
+              </p>
+            </div>
           </div>
         </section>
 
