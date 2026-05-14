@@ -1,8 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, ChevronRight, Sparkles } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Sparkles, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
+import { useUtm } from "@/hooks/use-utm";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
