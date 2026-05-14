@@ -7,6 +7,7 @@
  */
 
 const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"] as const;
+const CLICK_KEYS = ["google_click_id", "facebook_click_id"] as const;
 const STORAGE_KEY = "gsb_inbound_utms";
 
 export interface UtmParams {
@@ -15,6 +16,8 @@ export interface UtmParams {
   utm_campaign?: string;
   utm_content?: string;
   utm_term?: string;
+  google_click_id?: string;
+  facebook_click_id?: string;
 }
 
 /** Capture inbound UTMs from the current URL on first page load */
