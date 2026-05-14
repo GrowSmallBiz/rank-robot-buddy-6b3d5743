@@ -117,6 +117,20 @@ const MothersDayCohort = () => {
   const ctaUrl = buildUrl(APPLICATION_FORM_URL, "mothers-day-cohort");
   const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
   const [demoOpen, setDemoOpen] = useState(false);
+  const [formInView, setFormInView] = useState(false);
+
+  // Hide mobile sticky CTA when the application/survey form is in view
+  // so it doesn't overlap the GHL survey's bottom Next/Submit buttons.
+  useEffect(() => {
+    const el = document.getElementById("apply-form");
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      ([entry]) => setFormInView(entry.isIntersecting),
+      { rootMargin: "0px 0px -20% 0px", threshold: 0 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   // Inject Google Reviews widget script client-side to avoid SSR/hydration mismatch
   useEffect(() => {
