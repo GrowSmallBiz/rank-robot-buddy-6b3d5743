@@ -114,7 +114,7 @@ const PrimaryCTA = ({
 };
 
 const MothersDayCohort = () => {
-  const { buildUrl } = useUtm();
+  const { buildUrl, strategySessionUrl } = useUtm();
   const ctaUrl = buildUrl(APPLICATION_FORM_URL, "mothers-day-cohort");
   const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
   const [demoOpen, setDemoOpen] = useState(false);
@@ -1893,7 +1893,7 @@ const MothersDayCohort = () => {
           <CtaBlock
             headline="Ready to Dominate Your Local Market?"
             subtext="Your website and automation are just the beginning. Let's build the full growth engine."
-            strategySessionUrl="#apply-form"
+            strategySessionUrl={strategySessionUrl}
             showPhoneButton={false}
           />
         </div>
