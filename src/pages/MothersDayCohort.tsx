@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ConsultationFormSection } from "@/components/sections/ConsultationFormSection";
 import { SpeedToLeadFlow } from "@/components/sections/SpeedToLeadFlow";
 import { AiBusyMomDemo } from "@/components/sections/AiBusyMomDemo";
-import { CtaBlock } from "@/components/niche-page/sections/CtaBlock";
+import { CardCTA } from "@/components/services/CardCTA";
 import { baseContactCTA } from "@/config/contactCTA";
 import {
   Accordion,
