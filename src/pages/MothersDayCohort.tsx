@@ -1899,6 +1899,7 @@ const MothersDayCohort = () => {
         buttonHref={strategySessionUrl}
         accentWords={["Dominate Your Local Market"]}
         sectionClassName="py-16 md:py-20"
+        showPhoneButton={false}
       />
 
       {/* MINIMAL FOOTER */}
