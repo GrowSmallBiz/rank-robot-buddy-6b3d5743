@@ -297,7 +297,7 @@ const MothersDayCohort = () => {
     description: PAGE_DESC,
     url: PAGE_URL,
     serviceType: "Local small business website and marketing automation",
-    areaServed: "United States",
+    areaServed: { "@type": "Country", name: "United States" },
     provider: {
       "@type": "Organization",
       name: "GrowSmallBiz",
@@ -314,6 +314,13 @@ const MothersDayCohort = () => {
       validThrough: "2026-05-31",
       priceCurrency: "USD",
       price: "1000",
+      category: "Promotion",
+      eligibleRegion: { "@type": "Country", name: "United States" },
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "1000",
+        priceCurrency: "USD",
+      },
       seller: {
         "@type": "Organization",
         name: "GrowSmallBiz",
