@@ -1792,7 +1792,7 @@ const MothersDayCohort = () => {
 
                 <iframe
                   src={buildUrl("https://api.leadconnectorhq.com/widget/survey/FGhQ2ZPenaK8C06xPnTa", "mothers-day-survey")}
-                  style={{ border: "none", width: "100%", minHeight: "600px" }}
+                  style={{ border: "none", width: "100%", minHeight: "1000px", height: "1000px" }}
                   scrolling="no"
                   id="FGhQ2ZPenaK8C06xPnTa"
                   title="survey"
