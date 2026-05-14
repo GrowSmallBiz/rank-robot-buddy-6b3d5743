@@ -117,6 +117,20 @@ const MothersDayCohort = () => {
   const ctaUrl = buildUrl(APPLICATION_FORM_URL, "mothers-day-cohort");
   const [billing, setBilling] = useState<"monthly" | "annual">("monthly");
   const [demoOpen, setDemoOpen] = useState(false);
+  const [formInView, setFormInView] = useState(false);
+
+  // Hide mobile sticky CTA when the application/survey form is in view
+  // so it doesn't overlap the GHL survey's bottom Next/Submit buttons.
+  useEffect(() => {
+    const el = document.getElementById("apply-form");
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      ([entry]) => setFormInView(entry.isIntersecting),
+      { rootMargin: "0px 0px -20% 0px", threshold: 0 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   // Inject Google Reviews widget script client-side to avoid SSR/hydration mismatch
   useEffect(() => {
@@ -2026,7 +2040,7 @@ const MothersDayCohort = () => {
       </footer>
 
       {/* STICKY MOBILE CTA */}
-      <div className="md:hidden fixed bottom-0 inset-x-0 z-40 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] bg-background/95 backdrop-blur border-t border-border">
+      <div className={`md:hidden fixed bottom-0 inset-x-0 z-40 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] bg-background/95 backdrop-blur border-t border-border transition-opacity duration-200 ${formInView ? "opacity-0 pointer-events-none" : "opacity-100"}`}>
         <a
           href="#apply-form"
           className="flex items-center justify-center gap-2 w-[calc(100%-4.5rem)] px-4 py-3 rounded-md bg-gradient-to-r from-[hsl(22_88%_65%)] via-[hsl(280_30%_60%)] to-[hsl(200_70%_60%)] text-[hsl(220_40%_15%)] font-bold shadow-[0_10px_30px_-8px_hsl(22_85%_55%/0.45)] text-sm"
