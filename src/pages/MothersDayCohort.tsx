@@ -1889,15 +1889,17 @@ const MothersDayCohort = () => {
               </div>
             ))}
           </div>
-
-          <CtaBlock
-            headline="Ready to Dominate Your Local Market?"
-            subtext="Your website and automation are just the beginning. Let's build the full growth engine."
-            strategySessionUrl={strategySessionUrl}
-            showPhoneButton={false}
-          />
         </div>
       </section>
+
+      <CardCTA
+        title="Ready to Dominate Your Local Market?"
+        description="Your website and automation are just the beginning. Let's build the full growth engine."
+        buttonText="Schedule Strategy Call"
+        buttonHref={strategySessionUrl}
+        accentWords={["Dominate Your Local Market"]}
+        sectionClassName="py-16 md:py-20"
+      />
 
       {/* MINIMAL FOOTER */}
       <footer className="bg-card border-t border-border" role="contentinfo">
