@@ -1288,7 +1288,7 @@ const MothersDayCohort = () => {
             </p>
 
             <div className="flex justify-center mt-8">
-              <PrimaryCTA href="#apply-form" label="Apply for One of the 5 Spots →" />
+              <PrimaryCTA href={ctaUrl} label="Apply for One of the 5 Spots →" />
             </div>
 
             {/* Tax footnote */}
