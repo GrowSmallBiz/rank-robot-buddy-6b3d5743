@@ -386,7 +386,9 @@ const MothersDayCohort = () => {
             ))}
           </nav>
           <a
-            href="#apply-form"
+            href={ctaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 transition-colors"
           >
             Claim Spot <ArrowRight className="w-4 h-4" />
