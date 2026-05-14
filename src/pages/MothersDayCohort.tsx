@@ -984,7 +984,11 @@ const MothersDayCohort = () => {
                     { title: "Email & SMS Marketing", desc: "Nurture leads and send appointment reminders automatically — fewer no-shows, fuller calendar" },
                     { title: "Reputation Management", desc: "Automated review requests and AI replies to Google Reviews" },
                   ],
-                  footer: null,
+                  footer: (
+                    <>
+                      Plus many more advanced features — all included in one flat subscription fee.
+                    </>
+                  ),
                 },
                 {
                   title: "Growth",
