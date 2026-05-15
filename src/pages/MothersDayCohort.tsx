@@ -1015,7 +1015,7 @@ const MothersDayCohort = () => {
 
             <div className="flex justify-center mb-10">
               <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[hsl(22_85%_50%)] text-white text-sm md:text-base font-bold shadow-[0_15px_40px_-10px_hsl(20_60%_40%/0.45)] uppercase tracking-wider">
-                <Sparkles className="w-4 h-4" /> Annual Enrollment Only
+                <Sparkles className="w-4 h-4" /> Two Plans to Choose From
               </div>
             </div>
 
