@@ -251,9 +251,7 @@ const AIReceptionist = () => {
                 <span className="text-sm font-medium">AI Client Growth System</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">
-                AI Receptionist and Conversational AI That Works 24/7 - The Best Solution for Speed to Lead
-              </h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 animate-fade-up leading-tight bg-gradient-heading bg-clip-text text-transparent">AI Receptionist and Conversational AI That Works 24/7 - The Best Solution for Speed to Lead</h1>
 
               <p
                 className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-up"
