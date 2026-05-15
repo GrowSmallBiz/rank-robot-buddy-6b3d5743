@@ -1723,8 +1723,9 @@ const MothersDayCohort = () => {
                   "Complimentary Starter Website — $2,500 value (annual enrollment only)",
                   "Lead Automation System Included With Your Annual Plan",
                   "Client Growth System Setup reduced to $1,000",
-                  "Essentials Special: $1,164/year ($97/month equivalent)",
-                  "Growth Special: $2,364/year ($197/month equivalent)",
+                  "Essentials Special: $970/year ($97/month equivalent)",
+                  "Growth Special: $1,970/year ($197/month equivalent)",
+                  "Annual plan includes 2 months free — pay for 10 months, get 12 months",
                   "Extended through May 31, 2026 — or until 5 spots are filled",
                 ].map((s) => (
                   <li key={s} className="flex items-start gap-3">
