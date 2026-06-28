@@ -409,11 +409,11 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  ],
  competitors: "National tree service franchises, local arborists, Thumbtack/Angi contractor listings",
  },
- landscapeCare: {
- label: "Landscape Remodeling",
- icon: Leaf,
- image: landscapeCareSeo,
- keywords: [
+  landscapeRemodeling: {
+    label: "Landscape Remodeling",
+    icon: Leaf,
+    image: landscapeRemodelingSeo,
+    keywords: [
  "landscape remodeling near me",
  "landscape remodeling service",
  "landscape remodeling company",
