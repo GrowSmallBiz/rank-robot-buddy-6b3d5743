@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 import heroImage from "@/assets/tree-lawn-landscaping/tree-lawn-landscaping-hero.webp";
-import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-lawn-website-screenshot.webp";
+import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-stump-removal-website-screenshot.webp";
 import treeServiceSeo from "@/assets/tree-lawn-landscaping/tree-service-seo-keywords.webp";
 import landscapeCareSeo from "@/assets/tree-lawn-landscaping/lawn-care-seo-keywords.webp";
 import landscapingSeo from "@/assets/tree-lawn-landscaping/landscaping-seo-keywords.webp";
@@ -346,8 +346,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  websiteDesignHeadline: "Websites Built to Convert Tree Service & Removal and Landscape Remodeling Visitors",
  websiteDesignHighlight: "Into Calls and Quote Requests",
  websiteDesignSubheadline: "Most tree service and landscape remodeling websites look outdated, load slowly on mobile, and fail to convert the homeowner who found you on Google. We build fast, mobile-first websites that turn search traffic into booked jobs.",
- websiteDesignImage: websiteScreenshot,
- websiteDesignImageAlt: "Tree service professional using a chainsaw while standing on a ladder, surrounded by greenery, featured on a website for tree service and landscape remodeling marketing solutions.",
+  websiteDesignImage: websiteScreenshot,
+  websiteDesignImageAlt: "Responsive website preview for a tree service and stump removal company, showing desktop and mobile versions with emergency tree removal, stump grinding, tree trimming, and storm damage cleanup services.",
  websiteDesignFeatureHeadline: "Websites That Work as Hard as Your Crew",
  websiteDesignFeatureBody: "A conversion-focused website for a tree service or landscape remodeling company does three things: it loads in under 3 seconds on mobile, it makes it effortless for a homeowner to call or request a quote, and it signals enough credibility – through reviews, photos, and service pages – that a first-time visitor trusts you before they pick up the phone. GrowSmallBiz builds websites that accomplish all three from day one.",
  websiteDesignBullets: [
