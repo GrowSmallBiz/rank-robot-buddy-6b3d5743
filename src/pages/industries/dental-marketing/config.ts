@@ -462,6 +462,7 @@ export const dentalConfig: NicheConfig = {
   ],
   marketingCampaignsHighlight: "High-Ticket Patient Campaigns We Build for Dental Practices",
   marketingCampaignsSubheadline: "Real high-ticket offers paired with automated funnels—designed to attract dental implant, smile makeover, and Invisalign patients.",
+  marketingCampaigns: [
     {
       genre: "Dental Implants & All-on-4", icon: Stethoscope, color: "from-rose-500 to-pink-500",
       offer: {
