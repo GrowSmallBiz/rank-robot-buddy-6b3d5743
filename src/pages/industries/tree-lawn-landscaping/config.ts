@@ -25,18 +25,18 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.1  PAGE META
   // ══════════════════════════════════════════════════════════════════════
-  pageTitle: "Tree & Lawn Care Marketing: GrowSmallBiz's AI-Powered Solutions",
-  ogTitle: "AI-Powered Growth Solutions for Local Service Businesses",
-  metaDescription: "Get more tree service, lawn care, and landscaping calls with Local SEO, Google ads and converts visitors into booked jobs. Schedule strategy call.",
-  metaKeywords: "local SEO, tree service marketing, lawn care advertising, landscaping digital marketing, AI lead generation, Google Ads for landscapers, home service marketing, customer acquisition strategies",
+  pageTitle: "Tree Service & Removal and Landscape Remodeling Marketing | GrowSmallBiz",
+  ogTitle: "AI-Powered Growth for Tree Service & Removal and Landscape Remodeling",
+  metaDescription: "Get more tree service, emergency tree removal, and landscape remodeling calls with Local SEO, Google Ads, and AI-powered lead capture. Schedule strategy call.",
+  metaKeywords: "tree service marketing, tree removal advertising, landscape remodeling digital marketing, local SEO for tree companies, Google Ads for landscapers, emergency tree removal leads, AI lead generation",
   canonicalUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/",
-  serviceName: "Tree & Lawn Care Marketing Agency",
-  serviceType: "Digital Marketing for Tree Service, Lawn Care & Landscaping Companies",
-  serviceDescription: "GrowSmallBiz Digital Marketing is a Bay Area digital marketing agency headquartered in Danville, CA, specializing in Local SEO, Google Ads, and AI-powered marketing systems for tree service, lawn care, and landscaping companies across the United States.",
+  serviceName: "Tree Service & Removal and Landscape Remodeling Marketing Agency",
+  serviceType: "Digital Marketing for Tree Service & Removal and Landscape Remodeling Companies",
+  serviceDescription: "GrowSmallBiz Digital Marketing is a Bay Area digital marketing agency headquartered in Danville, CA, specializing in Local SEO, Google Ads, and AI-powered marketing systems for tree service, emergency tree removal, and landscape remodeling companies across the United States.",
   breadcrumbs: [
     { name: "Home", url: "/" },
     { name: "Home Service Contractors", url: "/home-service-contractors/" },
-    { name: "Tree, Lawn Care & Landscaping Marketing", url: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
+    { name: "Tree Service & Removal and Landscape Remodeling Marketing", url: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
   ],
   offerCatalog: {
     name: "Tree Service & Lawn Care Marketing Services",
