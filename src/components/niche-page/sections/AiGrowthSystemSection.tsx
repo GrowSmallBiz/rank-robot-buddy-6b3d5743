@@ -317,9 +317,9 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         <div className="border-t border-border/50 pt-16 mb-12">
           <p className="text-center text-sm text-muted-foreground uppercase tracking-wider mb-2">See It In Action</p>
           <h3 className="text-2xl font-display font-bold text-foreground text-center mb-4">
-            Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">{config.marketingCampaignsHighlight || "We Build for Your Dental Practice"}</span>
+            Marketing Campaigns <span className="text-transparent bg-clip-text bg-gradient-primary italic">{config.marketingCampaignsHighlight || "We Build for Your Business"}</span>
           </h3>
-          <p className="text-center text-muted-foreground max-w-2xl mx-auto">Real offers paired with automated funnels—tailored to each specialty</p>
+          <p className="text-center text-muted-foreground max-w-2xl mx-auto">{config.marketingCampaignsSubheadline || "Real offers paired with automated funnels—tailored to each specialty"}</p>
         </div>
         <div className="space-y-12 mb-16">
           {config.marketingCampaigns.map((campaign, i) => {
