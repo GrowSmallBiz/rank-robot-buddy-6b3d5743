@@ -517,8 +517,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
 
   // ══════════════════════════════════════════════════════════════════════
   paidMediaHeadline: "We Run High-Converting Google Ads for",
-  paidMediaHighlight: "Tree Service & Lawn Care Companies",
-  paidMediaSubheadline: "Strategic paid advertising recommendations by service type and buyer intent – emergency removal, seasonal maintenance, and commercial contract acquisition each require a different campaign approach.",
+  paidMediaHighlight: "Tree Service & Removal and Landscape Remodeling Companies",
+  paidMediaSubheadline: "Strategic paid advertising recommendations by service type and buyer intent – emergency tree removal, seasonal landscape projects, and commercial contract acquisition each require a different campaign approach.",
   adCreatives: [
     { id: "emergency", genre: "Emergency Tree Removal", image: emergencyTreeRemoval, platforms: ["Google Ads (Search)", "Google LSA"], description: "High-intent storm and emergency searches. Call-only campaigns. 24/7 AI receptionist backup." },
     { id: "seasonal-lawn", genre: "Spring Lawn Care", image: springLawnCare, platforms: ["Google Ads (Search)", "Facebook Ads"], description: "Pre-season lawn prep campaigns. Launch 4–6 weeks before spring. Highest volume period of year." },
