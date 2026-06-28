@@ -863,9 +863,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.15  WHY CHOOSE US
   // ══════════════════════════════════════════════════════════════════════
-  whyChooseUsHeadline: "Why Tree Service, Lawn Care & Landscaping Companies",
+  whyChooseUsHeadline: "Why Tree Service & Removal and Landscape Remodeling Companies",
   whyChooseUsHighlight: "Choose GrowSmallBiz",
-  whyChooseUsSubtitle: "Your Green Industry Marketing Partner — Not a Generalist Agency",
+  whyChooseUsSubtitle: "Your High-Ticket Home Service Marketing Partner — Not a Generalist Agency",
   whyChooseUsBody: "GrowSmallBiz Digital Marketing, founded by Subrata Guha and headquartered in Danville, CA, specializes in marketing for tree service, lawn care, and landscaping companies across the San Francisco Bay Area and the United States. We bring 30+ years of enterprise marketing and digital transformation experience to the green industry – combined with the local market knowledge that national agencies cannot replicate.",
   whyChooseUsCards: [
     { icon: TreePine, title: "Green Industry Specialists", description: "GrowSmallBiz focuses exclusively on tree service, lawn care, and landscaping companies — not plumbers one week and restaurants the next. Specialization in the green industry means we understand the emergency nature of storm-damage tree calls, the 300–400% seasonal demand spikes in spring and fall, and the specific Map Pack signals that drive bookings for tree service near me and lawn care near me searches." },
