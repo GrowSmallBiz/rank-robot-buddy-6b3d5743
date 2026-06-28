@@ -38,6 +38,7 @@ import { ConsultationFormSection } from "@/components/sections/ConsultationFormS
 import { CardCTA } from "@/components/services";
 import homeServicesHeroImage from "@/assets/industry-homeservices-hero.webp";
 import { useUtm } from "@/hooks/use-utm";
+// Triggered rebuild after Cloudflare Pages source reconnection
 
 const trades = [
   { icon: Flame, name: "HVAC", link: "/home-service-contractors/marketing-for-hvac-contractors/" },
