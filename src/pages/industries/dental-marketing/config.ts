@@ -513,11 +513,11 @@ export const dentalConfig: NicheConfig = {
     },
   ],
   seasonalCampaigns: [
-    { campaign: "January New Year Campaign", timing: "Launch first week Jan", offer: "New patient special", channels: ["Google PPC", "Facebook", "Email to lapsed patients"] },
-    { campaign: "Spring Cosmetic Push", timing: "Launch mid-February", offer: "Free smile consultation", channels: ["Google PPC", "Instagram cosmetic ads", "Retargeting"] },
-    { campaign: "Back-to-School", timing: "Launch late July", offer: "Kids checkups + new family patients", channels: ["Facebook parent groups", "Google PPC"] },
-    { campaign: "Insurance Deadline", timing: "Launch October", offer: "'Use your benefits before they expire'", channels: ["Email to existing patients", "Google PPC"] },
-    { campaign: "Patient Recall", timing: "Automated (Year-round)", offer: "Overdue recall reminder", channels: ["SMS + email sequence to patients 6+ months past due"] },
+    { campaign: "January New Year Campaign", timing: "Launch first week Jan", offer: "New Year, New Smile — free implant or cosmetic consultation", channels: ["Google PPC", "Facebook", "Email to lapsed patients"] },
+    { campaign: "Spring Cosmetic Push", timing: "Launch mid-February", offer: "Free smile design & veneers consultation", channels: ["Google PPC", "Instagram cosmetic ads", "Retargeting"] },
+    { campaign: "Adult Orthodontic Awareness", timing: "Launch late July", offer: "Free Invisalign assessment for adults & teens", channels: ["Facebook parent groups", "Google PPC", "Instagram"] },
+    { campaign: "Insurance Deadline", timing: "Launch October", offer: "'Use your benefits before they expire — implants, crowns, cosmetic work'", channels: ["Email to existing patients", "Google PPC"] },
+    { campaign: "High-Value Treatment Reactivation", timing: "Automated (Year-round)", offer: "Personalized follow-up for unfinished implant, cosmetic, or Invisalign treatment plans", channels: ["SMS + email sequence to patients with open treatment plans"] },
   ],
   pastClientWorkflows: [
     { title: "Recall Reminder", description: "Automated recall reminder 5.5 months after last cleaning — prompting patients to schedule before their 6-month window closes, with direct booking link.", icon: Calendar },
