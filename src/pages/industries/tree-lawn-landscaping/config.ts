@@ -102,9 +102,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.3  PAIN POINTS
   // ══════════════════════════════════════════════════════════════════════
-  painPointsHeadline: "Tree Service, Lawn Care & Landscaping",
+  painPointsHeadline: "Tree Service & Removal and Landscape Remodeling",
   painPointsHighlight: "Marketing Challenges",
-  painPointsSubheadline: "Even the best crews in the Bay Area lose jobs every week to competitors who rank higher, respond faster, and have more reviews. Here is what we hear from tree service and lawn care owners in their first call with us.",
+  painPointsSubheadline: "Even the best crews in the Bay Area lose high-ticket jobs every week to competitors who rank higher, respond faster, and have more reviews. Here is what we hear from tree service and landscape remodeling owners in their first call with us.",
   painPoints: [
     {
       icon: Search,
