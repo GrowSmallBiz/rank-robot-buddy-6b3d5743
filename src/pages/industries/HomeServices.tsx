@@ -519,10 +519,14 @@ const HomeServices = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service) => (
-              <div key={service.number} className="bg-card border border-border rounded-2xl p-8 card-hover">
+              <Link
+                key={service.number}
+                to={service.url}
+                className="group block bg-card border border-border rounded-2xl p-8 card-hover hover:border-primary/40 transition-colors"
+              >
                 <div className="flex items-start gap-4 mb-3">
                   <span className="text-2xl font-bold text-accent">{service.number}.</span>
-                  <h3 className="text-xl font-display font-semibold text-foreground">{service.title}</h3>
+                  <h3 className="text-xl font-display font-semibold text-foreground group-hover:text-primary transition-colors">{service.title}</h3>
                 </div>
                 <p className="text-muted-foreground mb-6 text-sm">{service.description}</p>
                 <ul className="space-y-3">
@@ -533,9 +537,13 @@ const HomeServices = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+                <div className="mt-6 inline-flex items-center gap-1 text-primary text-sm font-medium group-hover:gap-2 transition-all">
+                  Learn More <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
             ))}
           </div>
+
         </div>
       </section>
 
