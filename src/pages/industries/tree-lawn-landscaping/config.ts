@@ -8,13 +8,13 @@ import {
  Youtube, Zap, Layers, Palette, PhoneCall,
 } from "lucide-react";
 
-import heroImage from "@/assets/tree-lawn-landscaping/tree-lawn-landscaping-hero.webp";
+import heroImage from "@/assets/tree-lawn-landscaping/tree-service-landscape-remodeling-hero.webp";
 import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-stump-removal-website-screenshot.webp";
 import treeServiceSeo from "@/assets/tree-lawn-landscaping/tree-service-seo-keywords.webp";
-import landscapeCareSeo from "@/assets/tree-lawn-landscaping/lawn-care-seo-keywords.webp";
+import landscapeRemodelingSeo from "@/assets/tree-lawn-landscaping/landscape-remodeling-seo-keywords.webp";
 import landscapingSeo from "@/assets/tree-lawn-landscaping/landscaping-seo-keywords.webp";
 import emergencyTreeRemoval from "@/assets/tree-lawn-landscaping/emergency-tree-removal-ad.webp";
-import springLandscapeCare from "@/assets/tree-lawn-landscaping/spring-lawn-care-ad.webp";
+import springLandscapeRemodeling from "@/assets/tree-lawn-landscaping/spring-landscape-remodeling-ad.webp";
 import fallTreeService from "@/assets/tree-lawn-landscaping/fall-tree-service-ad.webp";
 import commercialLandscaping from "@/assets/tree-lawn-landscaping/commercial-landscaping-ad.webp";
 import localMapPack from "@/assets/tree-lawn-landscaping/local-map-pack-ad.webp";
@@ -409,11 +409,11 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  ],
  competitors: "National tree service franchises, local arborists, Thumbtack/Angi contractor listings",
  },
- landscapeCare: {
- label: "Landscape Remodeling",
- icon: Leaf,
- image: landscapeCareSeo,
- keywords: [
+  landscapeRemodeling: {
+    label: "Landscape Remodeling",
+    icon: Leaf,
+    image: landscapeRemodelingSeo,
+    keywords: [
  "landscape remodeling near me",
  "landscape remodeling service",
  "landscape remodeling company",
@@ -532,7 +532,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  paidMediaSubheadline: "Strategic paid advertising recommendations by service type and buyer intent – emergency tree removal, seasonal landscape projects, and commercial contract acquisition each require a different campaign approach.",
  adCreatives: [
  { id: "emergency", genre: "Emergency Tree Removal", image: emergencyTreeRemoval, platforms: ["Google Ads (Search)", "Google LSA"], description: "High-intent storm and emergency searches. Call-only campaigns. 24/7 AI receptionist backup." },
- { id: "seasonal-landscape", genre: "Spring Landscape Remodeling", image: springLandscapeCare, platforms: ["Google Ads (Search)", "Facebook Ads"], description: "Pre-season landscape prep campaigns. Launch 4–6 weeks before spring. Highest volume period of year." },
+  { id: "seasonal-landscape", genre: "Spring Landscape Remodeling", image: springLandscapeRemodeling, platforms: ["Google Ads (Search)", "Facebook Ads"], description: "Pre-season landscape prep campaigns. Launch 4–6 weeks before spring. Highest volume period of year." },
  { id: "seasonal-tree", genre: "Fall Tree Service", image: fallTreeService, platforms: ["Google Ads (Search)", "Google LSA"], description: "Fall cleanup and leaf removal. Ramp in August before October peak. Tree removal before winter." },
  { id: "commercial", genre: "Commercial Landscape Remodeling", image: commercialLandscaping, platforms: ["Google Ads (Search)", "LinkedIn"], description: "HOA and property management targeting. Longer sales cycle but highest lifetime value." },
  { id: "local-seo", genre: "Local Map Pack", image: localMapPack, platforms: ["Google LSA", "Google Ads"], description: "Year-round Map Pack presence. Review-gated click-through. Emergency and planned searches." },
