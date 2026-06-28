@@ -181,10 +181,10 @@ const spokeCards = [
     icon: Home,
   },
   {
-    trade: "Tree Care, Lawn Care & Landscaping",
-    description: "Seasonal campaign structure across spring cleanup, summer maintenance, fall leaf removal, and winter storm prep. Local Map Pack visibility for 'tree service near me' and 'lawn care [city].'",
-    ctaText: "Tree Care & Landscaping Marketing",
-    link: "#",
+    trade: "Tree Service & Removal and Landscape Remodeling",
+    description: "High-ticket campaign structure for emergency tree removal, storm damage, and landscape remodeling projects. Local Map Pack visibility for 'tree service near me' and 'landscape remodeling [city].'",
+    ctaText: "Tree Service & Landscape Remodeling Marketing",
+    link: "/home-service-contractors/tree-lawn-landscaping-marketing/",
     icon: TreePine,
   },
   {
