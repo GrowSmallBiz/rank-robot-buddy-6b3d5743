@@ -261,7 +261,7 @@ export const Header = () => {
                       HVAC Contractors
                     </Link>
                     <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
-                      Tree, Lawn & Landscaping
+                      Tree Service & Removal and Landscape Remodeling
                     </Link>
                     <Link to="/home-service-contractors/painting-companies-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Painting
@@ -426,7 +426,7 @@ export const Header = () => {
                       Roofers
                     </Link>
                     <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
-                      Tree Care, Lawn Care & Landscaping
+                      Tree Service & Removal and Landscape Remodeling
                     </Link>
                     <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Home Remodeling
@@ -656,7 +656,7 @@ export const Header = () => {
                   HVAC Contractors
                 </Link>
                 <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
-                  Tree, Lawn & Landscaping
+                  Tree Service & Removal and Landscape Remodeling
                 </Link>
                 <Link to="/home-service-contractors/painting-companies-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
                   Painting
@@ -774,7 +774,7 @@ export const Header = () => {
                       Roofers
                     </Link>
                     <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
-                      Tree Care, Lawn Care & Landscaping
+                      Tree Service & Removal and Landscape Remodeling
                     </Link>
                     <Link to="/home-service-contractors/marketing-for-home-remodelers/home-remodeling-marketing-case-study/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary text-sm">
                       Home Remodeling
