@@ -54,13 +54,13 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // 4.2  HERO SECTION
   // ══════════════════════════════════════════════════════════════════════
   heroImage: heroImage,
-  heroImageAlt: "Tree service professionals pruning trees along a residential street, showcasing landscaping work in a vibrant neighborhood, emphasizing local tree care and maintenance.",
+  heroImageAlt: "Tree service crew removing a damaged tree and a landscape remodeling project in a residential neighborhood, showcasing high-ticket tree and landscape work.",
   badgeIcon: TreePine,
-  badgeText: "Tree, Lawn Care & Landscaping Marketing",
-  h1Line1: "Year-Round Marketing & Leads for Tree Service, Lawn Care & Landscaping",
+  badgeText: "Tree Service & Removal and Landscape Remodeling Marketing",
+  h1Line1: "High-Ticket Marketing & Leads for Tree Service & Removal and Landscape Remodeling",
   h1Highlight: "",
   h1Line2: "",
-  heroSubheadline: "GrowSmallBiz combines Local SEO, Google Ads, and AI-powered lead capture to put your tree service, lawn care, or landscaping company in front of homeowners the moment they need you — and convert that visibility into booked jobs.",
+  heroSubheadline: "GrowSmallBiz combines Local SEO, Google Ads, and AI-powered lead capture to put your tree service & removal or landscape remodeling company in front of homeowners the moment they need high-ticket work — and convert that visibility into booked jobs.",
   primaryCtaLabel: "Schedule Strategy Call",
   secondaryCtaLabel: "See Our Services",
   secondaryCtaAnchor: "#solutions",
