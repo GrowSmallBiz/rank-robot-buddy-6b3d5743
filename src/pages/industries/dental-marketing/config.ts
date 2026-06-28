@@ -6,7 +6,7 @@ import {
   Eye, Megaphone, Shield, MapPin,
   AlertTriangle, DollarSign, Globe,
   Star, BarChart3, Facebook, Instagram,
-  Sparkles, UserPlus, Heart, Stethoscope,
+  Sparkles, UserPlus, Heart, Stethoscope, Smile,
 } from "lucide-react";
 
 import dentalHeroImage from "@/assets/industry-dental-hero.webp";
