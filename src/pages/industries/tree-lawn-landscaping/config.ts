@@ -80,17 +80,17 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     {
       icon: Calendar,
       headline: "Seasonal Campaigns That Run Ahead of Demand",
-      body: "Most tree service and lawn care companies start marketing when the phone goes quiet. We build your campaign calendar 4 to 6 weeks before each demand surge — spring prep, fall cleanup, storm season — so you own the Map Pack before competitors ramp up.",
+      body: "Most tree service and landscape remodeling companies start marketing when the phone goes quiet. We build your campaign calendar 4 to 6 weeks before each demand surge — spring prep, fall cleanup, storm season — so you own the Map Pack before competitors ramp up.",
     },
     {
       icon: MapPin,
       headline: "Local Market Intelligence",
-      body: "We know the seasonal demand patterns, competitive landscape, and local conversion factors that drive tree service, lawn care, and landscaping bookings — so every strategy is built on market reality, not assumptions.",
+      body: "We know the seasonal demand patterns, competitive landscape, and local conversion factors that drive tree service, emergency tree removal, and landscape remodeling bookings — so every strategy is built on market reality, not assumptions.",
     },
     {
       icon: Shield,
       headline: "Exclusive Territory — Your Leads Stay Yours",
-      body: "We do not work with competing tree service or lawn care companies in the same service area. When you partner with GrowSmallBiz, we work exclusively for you in your market. No shared leads, no conflicts of interest.",
+      body: "We do not work with competing tree service or landscape remodeling companies in the same service area. When you partner with GrowSmallBiz, we work exclusively for you in your market. No shared leads, no conflicts of interest.",
     },
     {
       icon: TrendingUp,
