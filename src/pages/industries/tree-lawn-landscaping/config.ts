@@ -936,9 +936,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.16  FAQ
   // ══════════════════════════════════════════════════════════════════════
-  faqHeadline: "Tree Service, Lawn Care & Landscaping",
+  faqHeadline: "Tree Service & Removal and Landscape Remodeling",
   faqHighlight: "Marketing FAQs",
-  faqSubheadline: "Common questions from tree service and lawn care business owners — organized by topic",
+  faqSubheadline: "Common questions from tree service and landscape remodeling business owners — organized by topic",
   faqCategories: [
     {
       id: "local-seo",
