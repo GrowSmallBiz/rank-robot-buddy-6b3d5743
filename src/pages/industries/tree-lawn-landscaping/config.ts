@@ -25,21 +25,21 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.1  PAGE META
   // ══════════════════════════════════════════════════════════════════════
-  pageTitle: "Tree & Lawn Care Marketing: GrowSmallBiz's AI-Powered Solutions",
-  ogTitle: "AI-Powered Growth Solutions for Local Service Businesses",
-  metaDescription: "Get more tree service, lawn care, and landscaping calls with Local SEO, Google ads and converts visitors into booked jobs. Schedule strategy call.",
-  metaKeywords: "local SEO, tree service marketing, lawn care advertising, landscaping digital marketing, AI lead generation, Google Ads for landscapers, home service marketing, customer acquisition strategies",
+  pageTitle: "Tree Service & Removal and Landscape Remodeling Marketing | GrowSmallBiz",
+  ogTitle: "AI-Powered Growth for Tree Service & Removal and Landscape Remodeling",
+  metaDescription: "Get more tree service, emergency tree removal, and landscape remodeling calls with Local SEO, Google Ads, and AI-powered lead capture. Schedule strategy call.",
+  metaKeywords: "tree service marketing, tree removal advertising, landscape remodeling digital marketing, local SEO for tree companies, Google Ads for landscapers, emergency tree removal leads, AI lead generation",
   canonicalUrl: "/home-service-contractors/tree-lawn-landscaping-marketing/",
-  serviceName: "Tree & Lawn Care Marketing Agency",
-  serviceType: "Digital Marketing for Tree Service, Lawn Care & Landscaping Companies",
-  serviceDescription: "GrowSmallBiz Digital Marketing is a Bay Area digital marketing agency headquartered in Danville, CA, specializing in Local SEO, Google Ads, and AI-powered marketing systems for tree service, lawn care, and landscaping companies across the United States.",
+  serviceName: "Tree Service & Removal and Landscape Remodeling Marketing Agency",
+  serviceType: "Digital Marketing for Tree Service & Removal and Landscape Remodeling Companies",
+  serviceDescription: "GrowSmallBiz Digital Marketing is a Bay Area digital marketing agency headquartered in Danville, CA, specializing in Local SEO, Google Ads, and AI-powered marketing systems for tree service, emergency tree removal, and landscape remodeling companies across the United States.",
   breadcrumbs: [
     { name: "Home", url: "/" },
     { name: "Home Service Contractors", url: "/home-service-contractors/" },
-    { name: "Tree, Lawn Care & Landscaping Marketing", url: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
+    { name: "Tree Service & Removal and Landscape Remodeling Marketing", url: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
   ],
   offerCatalog: {
-    name: "Tree Service & Lawn Care Marketing Services",
+    name: "Tree Service & Removal and Landscape Remodeling Marketing Services",
     items: [
       { name: "Local SEO & Google Business Profile" },
       { name: "Conversion-Focused Website Design" },
@@ -54,13 +54,13 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // 4.2  HERO SECTION
   // ══════════════════════════════════════════════════════════════════════
   heroImage: heroImage,
-  heroImageAlt: "Tree service professionals pruning trees along a residential street, showcasing landscaping work in a vibrant neighborhood, emphasizing local tree care and maintenance.",
+  heroImageAlt: "Tree service crew removing a damaged tree and a landscape remodeling project in a residential neighborhood, showcasing high-ticket tree and landscape work.",
   badgeIcon: TreePine,
-  badgeText: "Tree, Lawn Care & Landscaping Marketing",
-  h1Line1: "Year-Round Marketing & Leads for Tree Service, Lawn Care & Landscaping",
+  badgeText: "Tree Service & Removal and Landscape Remodeling Marketing",
+  h1Line1: "High-Ticket Marketing & Leads for Tree Service & Removal and Landscape Remodeling",
   h1Highlight: "",
   h1Line2: "",
-  heroSubheadline: "GrowSmallBiz combines Local SEO, Google Ads, and AI-powered lead capture to put your tree service, lawn care, or landscaping company in front of homeowners the moment they need you — and convert that visibility into booked jobs.",
+  heroSubheadline: "GrowSmallBiz combines Local SEO, Google Ads, and AI-powered lead capture to put your tree service & removal or landscape remodeling company in front of homeowners the moment they need high-ticket work — and convert that visibility into booked jobs.",
   primaryCtaLabel: "Schedule Strategy Call",
   secondaryCtaLabel: "See Our Services",
   secondaryCtaAnchor: "#solutions",
@@ -80,17 +80,17 @@ export const treeLawnLandscapingConfig: NicheConfig = {
     {
       icon: Calendar,
       headline: "Seasonal Campaigns That Run Ahead of Demand",
-      body: "Most tree service and lawn care companies start marketing when the phone goes quiet. We build your campaign calendar 4 to 6 weeks before each demand surge — spring prep, fall cleanup, storm season — so you own the Map Pack before competitors ramp up.",
+      body: "Most tree service and landscape remodeling companies start marketing when the phone goes quiet. We build your campaign calendar 4 to 6 weeks before each demand surge — spring prep, fall cleanup, storm season — so you own the Map Pack before competitors ramp up.",
     },
     {
       icon: MapPin,
       headline: "Local Market Intelligence",
-      body: "We know the seasonal demand patterns, competitive landscape, and local conversion factors that drive tree service, lawn care, and landscaping bookings — so every strategy is built on market reality, not assumptions.",
+      body: "We know the seasonal demand patterns, competitive landscape, and local conversion factors that drive tree service, emergency tree removal, and landscape remodeling bookings — so every strategy is built on market reality, not assumptions.",
     },
     {
       icon: Shield,
       headline: "Exclusive Territory — Your Leads Stay Yours",
-      body: "We do not work with competing tree service or lawn care companies in the same service area. When you partner with GrowSmallBiz, we work exclusively for you in your market. No shared leads, no conflicts of interest.",
+      body: "We do not work with competing tree service or landscape remodeling companies in the same service area. When you partner with GrowSmallBiz, we work exclusively for you in your market. No shared leads, no conflicts of interest.",
     },
     {
       icon: TrendingUp,
@@ -102,9 +102,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.3  PAIN POINTS
   // ══════════════════════════════════════════════════════════════════════
-  painPointsHeadline: "Tree Service, Lawn Care & Landscaping",
+  painPointsHeadline: "Tree Service & Removal and Landscape Remodeling",
   painPointsHighlight: "Marketing Challenges",
-  painPointsSubheadline: "Even the best crews in the Bay Area lose jobs every week to competitors who rank higher, respond faster, and have more reviews. Here is what we hear from tree service and lawn care owners in their first call with us.",
+  painPointsSubheadline: "Even the best crews in the Bay Area lose high-ticket jobs every week to competitors who rank higher, respond faster, and have more reviews. Here is what we hear from tree service and landscape remodeling owners in their first call with us.",
   painPoints: [
     {
       icon: Search,
@@ -205,18 +205,18 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   ctaAfterPainPoints: {
     headline: "Ready to Stop Competing for Shared Leads?",
-    subtext: "Let's build your exclusive, inbound lead pipeline for tree service and lawn care.",
+    subtext: "Let's build your exclusive, inbound lead pipeline for tree service and landscape remodeling.",
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "Call Us",
   },
   ctaAfterSeo: {
-    headline: "See Where Your Tree Service, Lawn Care & Landscaping Company Ranks – Free Local SEO Audit",
+    headline: "See Where Your Tree Service & Removal and Landscape Remodeling Company Ranks – Free Local SEO Audit",
     subtext: "Find out exactly where your business appears across Google Search, Google Maps, and AI search platforms – and where your competitors are outranking you.",
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "",
   },
   ctaAfterGrowthSystem: {
-    headline: "See the AI Client Growth System for Tree Service, Lawn Care & Landscaping in Action",
+    headline: "See the AI Client Growth System for Tree Service & Removal and Landscape Remodeling in Action",
     subtext: "Watch how automated lead capture, seasonal campaigns, and referral automation work together to fill your schedule — without you chasing every call.",
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "",
@@ -240,7 +240,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // CORE SERVICES OVERVIEW
   // ══════════════════════════════════════════════════════════════════════
-  coreServicesHeadline: "AI-Powered Marketing System for Tree Service, Lawn & Landscaping",
+  coreServicesHeadline: "AI-Powered Marketing System for Tree Service & Removal and Landscape Remodeling",
   coreServicesHighlight: "",
   coreServicesSubheadline: "Every service works together. No gaps between channels. One team, one strategy, one dashboard.",
   coreServices: [
@@ -517,8 +517,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
 
   // ══════════════════════════════════════════════════════════════════════
   paidMediaHeadline: "We Run High-Converting Google Ads for",
-  paidMediaHighlight: "Tree Service & Lawn Care Companies",
-  paidMediaSubheadline: "Strategic paid advertising recommendations by service type and buyer intent – emergency removal, seasonal maintenance, and commercial contract acquisition each require a different campaign approach.",
+  paidMediaHighlight: "Tree Service & Removal and Landscape Remodeling Companies",
+  paidMediaSubheadline: "Strategic paid advertising recommendations by service type and buyer intent – emergency tree removal, seasonal landscape projects, and commercial contract acquisition each require a different campaign approach.",
   adCreatives: [
     { id: "emergency", genre: "Emergency Tree Removal", image: emergencyTreeRemoval, platforms: ["Google Ads (Search)", "Google LSA"], description: "High-intent storm and emergency searches. Call-only campaigns. 24/7 AI receptionist backup." },
     { id: "seasonal-lawn", genre: "Spring Lawn Care", image: springLawnCare, platforms: ["Google Ads (Search)", "Facebook Ads"], description: "Pre-season lawn prep campaigns. Launch 4–6 weeks before spring. Highest volume period of year." },
@@ -635,9 +635,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.12  AI GROWTH SYSTEM
   // ══════════════════════════════════════════════════════════════════════
-  growthSystemHeadline: "for Tree Service, Lawn Care & Landscaping",
+  growthSystemHeadline: "for Tree Service & Removal and Landscape Remodeling",
   growthSystemHighlight: "AI Client Growth System",
-  growthSystemSubheadline: "Stop chasing leads manually. GrowSmallBiz builds an automated marketing system that captures, qualifies, and follows up with every tree service and lawn care prospect — so your crew focuses on the work, not the phone.",
+  growthSystemSubheadline: "Stop chasing leads manually. GrowSmallBiz builds an automated marketing system that captures, qualifies, and follows up with every tree service and landscape remodeling prospect — so your crew focuses on the work, not the phone.",
   clientJourneyStages: [
     { stage: "Awareness", icon: Eye, color: "from-blue-500 to-blue-600", description: "A homeowner notices a damaged tree or overgrown lawn after a storm or season change.", goal: "Get discovered by homeowners at the exact moment they need your services" },
     { stage: "Research", icon: Search, color: "from-purple-500 to-purple-600", description: "They search Google or ask an AI assistant for tree service or lawn care companies near them.", goal: "Appear first in Map Pack, Google Ads, and AI search results" },
@@ -863,9 +863,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.15  WHY CHOOSE US
   // ══════════════════════════════════════════════════════════════════════
-  whyChooseUsHeadline: "Why Tree Service, Lawn Care & Landscaping Companies",
+  whyChooseUsHeadline: "Why Tree Service & Removal and Landscape Remodeling Companies",
   whyChooseUsHighlight: "Choose GrowSmallBiz",
-  whyChooseUsSubtitle: "Your Green Industry Marketing Partner — Not a Generalist Agency",
+  whyChooseUsSubtitle: "Your High-Ticket Home Service Marketing Partner — Not a Generalist Agency",
   whyChooseUsBody: "GrowSmallBiz Digital Marketing, founded by Subrata Guha and headquartered in Danville, CA, specializes in marketing for tree service, lawn care, and landscaping companies across the San Francisco Bay Area and the United States. We bring 30+ years of enterprise marketing and digital transformation experience to the green industry – combined with the local market knowledge that national agencies cannot replicate.",
   whyChooseUsCards: [
     { icon: TreePine, title: "Green Industry Specialists", description: "GrowSmallBiz focuses exclusively on tree service, lawn care, and landscaping companies — not plumbers one week and restaurants the next. Specialization in the green industry means we understand the emergency nature of storm-damage tree calls, the 300–400% seasonal demand spikes in spring and fall, and the specific Map Pack signals that drive bookings for tree service near me and lawn care near me searches." },
@@ -879,9 +879,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // REAL RESULTS
   // ══════════════════════════════════════════════════════════════════════
-  realResultsHeadline: "Real Results for Tree Service,",
-  realResultsHighlight: "Lawn Care & Landscaping Companies",
-  realResultsSubheadline: "Verified campaign data from GrowSmallBiz clients in the tree service, lawn care, and landscaping industry. Two independently verified campaigns – AI SEO and Google Ads.",
+  realResultsHeadline: "Real Results for Tree Service",
+  realResultsHighlight: "& Removal and Landscape Remodeling Companies",
+  realResultsSubheadline: "Verified campaign data from GrowSmallBiz clients in the tree service and landscape remodeling industry. Two independently verified campaigns – AI SEO and Google Ads.",
   realResults: [
     {
       campaignType: "AI SEO Campaign",
@@ -936,9 +936,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.16  FAQ
   // ══════════════════════════════════════════════════════════════════════
-  faqHeadline: "Tree Service, Lawn Care & Landscaping",
+  faqHeadline: "Tree Service & Removal and Landscape Remodeling",
   faqHighlight: "Marketing FAQs",
-  faqSubheadline: "Common questions from tree service and lawn care business owners — organized by topic",
+  faqSubheadline: "Common questions from tree service and landscape remodeling business owners — organized by topic",
   faqCategories: [
     {
       id: "local-seo",
