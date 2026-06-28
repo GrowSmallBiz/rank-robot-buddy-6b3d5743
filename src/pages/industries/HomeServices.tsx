@@ -53,48 +53,63 @@ const services = [
   {
     number: "1",
     title: "Local SEO & Google Map Pack",
+    url: "/services/seo-agency/local-seo/",
     description: "Get in front of homeowners searching 'HVAC company near me' or 'emergency plumber [city].' We build your local authority through citation consistency, review velocity, and on-page optimization — so you rank in the Map Pack where 70% of clicks happen.",
     features: ["Google Business Profile optimization and posting", "Service-area landing pages for every city you serve", "Local citation building and consistency audit", "Multi-location and multi-service GBP management"]
   },
   {
     number: "2",
+    title: "AI Search Visibility",
+    url: "/services/seo-agency/ai-search-optimization/",
+    description: "Search is shifting from a list of links to a decision engine. We optimize your business to be cited in ChatGPT, Gemini, Perplexity, and Google AI Overviews — so when homeowners ask AI for the best contractor near them, your business is the one it recommends.",
+    features: ["AI Search Optimization across ChatGPT, Gemini, Perplexity, and Google AI Overviews", "Answer Engine Optimization (AEO) for conversational \"best near me\" queries", "Structured data and entity optimization so AI engines cite your business", "Brand mention and authority building across the sources AI trusts"]
+  },
+  {
+    number: "3",
     title: "Google Ads & Local Services Ads (LSA)",
+    url: "/services/paid-advertising/google-ads/",
     description: "Stop overpaying for clicks on keywords your competitors have bid up. We build tightly structured campaigns by service type and zip code, with negative keyword management and conversion tracking so every dollar is accountable. LSAs carry Google's Guarantee badge and charge per lead — not per click.",
     features: ["Campaign structure by trade and service type", "Zip-code-level bid management", "Google Local Services Ads setup and badge management", "Full conversion tracking to booked calls"]
   },
   {
-    number: "3",
+    number: "4",
     title: "Website Design & Conversion Optimization",
+    url: "/services/website-design/",
     description: "Your website is your 24/7 sales rep. We build fast, mobile-first contractor websites designed to convert — click-to-call above the fold, service-area pages, trust signals, and quote forms that turn visitors into calls.",
     features: ["Mobile-first, fast-loading design", "Click-to-call and quote form above the fold", "Trust signals: licenses, reviews, guarantees, badges", "Service-area page architecture for local SEO"]
   },
   {
-    number: "4",
+    number: "5",
     title: "Reputation Management",
+    url: "/services/marketing-automation-for-small-business/reviews/",
     description: "Online reviews are your word-of-mouth. We automate review requests after every completed job and monitor your reputation across Google, Yelp, and Nextdoor — so your 4.8-star rating does the selling for you.",
     features: ["Automated post-job review request sequences", "Review monitoring across Google, Yelp, Nextdoor", "Response templates and escalation protocols", "Review velocity strategy for Map Pack ranking"]
   },
   {
-    number: "5",
+    number: "6",
     title: "AI Receptionist & Lead Capture",
+    url: "/services/ai-receptionist/",
     description: "Never lose a lead because no one answered the phone. Our AI Receptionist handles after-hours inquiries, qualifies leads, and books appointments directly into your calendar — so you capture jobs even while you're on a job.",
     features: ["24/7 inbound call and web chat handling", "Lead qualification by service type, location, and urgency", "Direct calendar booking with homeowner confirmation", "SMS and email follow-up sequences"]
   },
   {
-    number: "6",
+    number: "7",
     title: "Answer Engine Optimization (AEO)",
+    url: "/services/seo-agency/aeo/",
     description: "When homeowners ask Siri, ChatGPT, or Google AI 'who's the best HVAC company in [city]?', we position your business as the answer. AEO is the next frontier of local search — early movers capture the most territory.",
     features: ["FAQ schema markup and structured data", "Conversational content targeting voice queries", "Featured snippet and AI overview optimization", "Brand mention building across authoritative sources"]
   },
   {
-    number: "7",
+    number: "8",
     title: "Social Media Management",
+    url: "/services/marketing-automation-for-small-business/reviews/",
     description: "Before/after project photos. Seasonal promotions. Community presence. We manage your social channels so you stay top-of-mind with past customers — your best source of repeat and referral business.",
     features: ["Before/after project content and photography direction", "Seasonal promotion campaigns", "Community engagement and local hashtag strategy", "Paid social for retargeting and lookalike audiences"]
   },
   {
-    number: "8",
+    number: "9",
     title: "CRM & Lead Nurturing Automation",
+    url: "/services/marketing-automation-for-small-business/",
     description: "Most contractors lose jobs not because of price — but because they followed up too late. Our CRM automation sends immediate responses, follow-up sequences, and re-engagement campaigns so no lead goes cold.",
     features: ["Immediate lead response automation (under 5 minutes)", "Multi-touch follow-up sequences via SMS, email, and call", "Past customer re-engagement campaigns", "Pipeline reporting: where every lead is in the booking cycle"]
   }
@@ -504,10 +519,14 @@ const HomeServices = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service) => (
-              <div key={service.number} className="bg-card border border-border rounded-2xl p-8 card-hover">
+              <Link
+                key={service.number}
+                to={service.url}
+                className="group block bg-card border border-border rounded-2xl p-8 card-hover hover:border-primary/40 transition-colors"
+              >
                 <div className="flex items-start gap-4 mb-3">
                   <span className="text-2xl font-bold text-accent">{service.number}.</span>
-                  <h3 className="text-xl font-display font-semibold text-foreground">{service.title}</h3>
+                  <h3 className="text-xl font-display font-semibold text-foreground group-hover:text-primary transition-colors">{service.title}</h3>
                 </div>
                 <p className="text-muted-foreground mb-6 text-sm">{service.description}</p>
                 <ul className="space-y-3">
@@ -518,9 +537,13 @@ const HomeServices = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+                <div className="mt-6 inline-flex items-center gap-1 text-primary text-sm font-medium group-hover:gap-2 transition-all">
+                  Learn More <ArrowRight className="w-4 h-4" />
+                </div>
+              </Link>
             ))}
           </div>
+
         </div>
       </section>
 
