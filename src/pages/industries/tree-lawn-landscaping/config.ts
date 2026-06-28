@@ -879,9 +879,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // REAL RESULTS
   // ══════════════════════════════════════════════════════════════════════
-  realResultsHeadline: "Real Results for Tree Service,",
-  realResultsHighlight: "Lawn Care & Landscaping Companies",
-  realResultsSubheadline: "Verified campaign data from GrowSmallBiz clients in the tree service, lawn care, and landscaping industry. Two independently verified campaigns – AI SEO and Google Ads.",
+  realResultsHeadline: "Real Results for Tree Service",
+  realResultsHighlight: "& Removal and Landscape Remodeling Companies",
+  realResultsSubheadline: "Verified campaign data from GrowSmallBiz clients in the tree service and landscape remodeling industry. Two independently verified campaigns – AI SEO and Google Ads.",
   realResults: [
     {
       campaignType: "AI SEO Campaign",
