@@ -635,9 +635,9 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // 4.12  AI GROWTH SYSTEM
   // ══════════════════════════════════════════════════════════════════════
-  growthSystemHeadline: "for Tree Service, Lawn Care & Landscaping",
+  growthSystemHeadline: "for Tree Service & Removal and Landscape Remodeling",
   growthSystemHighlight: "AI Client Growth System",
-  growthSystemSubheadline: "Stop chasing leads manually. GrowSmallBiz builds an automated marketing system that captures, qualifies, and follows up with every tree service and lawn care prospect — so your crew focuses on the work, not the phone.",
+  growthSystemSubheadline: "Stop chasing leads manually. GrowSmallBiz builds an automated marketing system that captures, qualifies, and follows up with every tree service and landscape remodeling prospect — so your crew focuses on the work, not the phone.",
   clientJourneyStages: [
     { stage: "Awareness", icon: Eye, color: "from-blue-500 to-blue-600", description: "A homeowner notices a damaged tree or overgrown lawn after a storm or season change.", goal: "Get discovered by homeowners at the exact moment they need your services" },
     { stage: "Research", icon: Search, color: "from-purple-500 to-purple-600", description: "They search Google or ask an AI assistant for tree service or lawn care companies near them.", goal: "Appear first in Map Pack, Google Ads, and AI search results" },
