@@ -205,18 +205,18 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   ctaAfterPainPoints: {
     headline: "Ready to Stop Competing for Shared Leads?",
-    subtext: "Let's build your exclusive, inbound lead pipeline for tree service and lawn care.",
+    subtext: "Let's build your exclusive, inbound lead pipeline for tree service and landscape remodeling.",
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "Call Us",
   },
   ctaAfterSeo: {
-    headline: "See Where Your Tree Service, Lawn Care & Landscaping Company Ranks – Free Local SEO Audit",
+    headline: "See Where Your Tree Service & Removal and Landscape Remodeling Company Ranks – Free Local SEO Audit",
     subtext: "Find out exactly where your business appears across Google Search, Google Maps, and AI search platforms – and where your competitors are outranking you.",
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "",
   },
   ctaAfterGrowthSystem: {
-    headline: "See the AI Client Growth System for Tree Service, Lawn Care & Landscaping in Action",
+    headline: "See the AI Client Growth System for Tree Service & Removal and Landscape Remodeling in Action",
     subtext: "Watch how automated lead capture, seasonal campaigns, and referral automation work together to fill your schedule — without you chasing every call.",
     primaryLabel: "Schedule Strategy Call",
     secondaryLabel: "",
