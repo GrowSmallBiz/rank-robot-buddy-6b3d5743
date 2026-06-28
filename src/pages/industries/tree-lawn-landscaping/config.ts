@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 import heroImage from "@/assets/tree-lawn-landscaping/tree-lawn-landscaping-hero.webp";
-import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-lawn-website-screenshot.webp";
+import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-stump-removal-website-screenshot.webp";
 import treeServiceSeo from "@/assets/tree-lawn-landscaping/tree-service-seo-keywords.webp";
 import landscapeCareSeo from "@/assets/tree-lawn-landscaping/lawn-care-seo-keywords.webp";
 import landscapingSeo from "@/assets/tree-lawn-landscaping/landscaping-seo-keywords.webp";
