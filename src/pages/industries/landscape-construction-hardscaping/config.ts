@@ -340,7 +340,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   websiteDesignHeadline: "Websites Built to Convert Landscape Construction Visitors",
   websiteDesignHighlight: "Into Consultations and Signed Contracts",
   websiteDesignSubheadline: "Most landscape construction and hardscaping websites look outdated, load slowly on mobile, and bury the portfolio. We build fast, mobile-first websites with portfolio-forward design that turn search traffic into booked consultations.",
-  websiteDesignImage: websiteScreenshot,
+  websiteDesignImage: croWebsiteDesign,
   websiteDesignImageAlt: "Responsive website preview for a landscape construction and hardscaping company, showing desktop and mobile versions with paver patios, outdoor kitchens, retaining walls, and full backyard remodel portfolio.",
   websiteDesignFeatureHeadline: "Websites That Work as Hard as Your Design-Build Crew",
   websiteDesignFeatureBody: "A conversion-focused website for a landscape construction or hardscaping company does three things: it loads in under 3 seconds on mobile, it makes it effortless for a homeowner to request a consultation, and it signals enough credibility — through portfolio photos, reviews, and service pages — that a first-time visitor trusts you with a six-figure project before they pick up the phone. GrowSmallBiz builds websites that accomplish all three from day one.",
