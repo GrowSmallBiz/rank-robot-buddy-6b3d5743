@@ -441,7 +441,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  fourLaneBadge: "SEARCH DOMINANCE",
  fourLaneHeadline: "One Search Market.",
  fourLaneHighlight: "Four Ways to Win It.",
- fourLaneSubheadline: "When a homeowner needs a tree removed, their landscape maintained, or a landscape maintenance project designed, they search in four completely different ways — and each one requires a different strategy. GrowSmallBiz builds your presence across all four simultaneously so you own your market regardless of how your next customer searches.",
+ fourLaneSubheadline: "When a homeowner needs a tree removed, a stump ground down, seasonal pruning, or ongoing landscape maintenance, they search in four completely different ways — and each one requires a different strategy. GrowSmallBiz builds your presence across all four simultaneously so you own your market regardless of how your next customer searches.",
  fourLaneLanes: [
  {
  lane: "Map Pack",
