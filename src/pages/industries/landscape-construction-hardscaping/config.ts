@@ -11,7 +11,8 @@ import {
 // NOTE: Placeholder imagery reused from tree-lawn-landscaping until hardscape-specific
 // creatives are produced. Swap file paths in-place when new WebP assets are added.
 import heroImage from "@/assets/tree-lawn-landscaping/tree-service-landscape-remodeling-hero.webp";
-import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-stump-removal-website-screenshot.webp";
+import websiteScreenshotAsset from "@/assets/industries/landscape-construction-hardscaping/website-mockup.png.asset.json";
+const websiteScreenshot = websiteScreenshotAsset.url;
 import hardscapeSeo from "@/assets/tree-lawn-landscaping/landscape-remodeling-seo-keywords.webp";
 import outdoorLivingSeo from "@/assets/tree-lawn-landscaping/landscaping-seo-keywords.webp";
 import retainingWallSeo from "@/assets/tree-lawn-landscaping/stump-grinding-seo-keywords.webp";
