@@ -8,36 +8,21 @@ import {
   Youtube, Zap, Hammer, Palette, PhoneCall, Flame, TreePine, Home as HomeIcon,
 } from "lucide-react";
 
-import heroImageAsset from "@/assets/industries/landscape-construction-hardscaping/hero.png.asset.json";
-const heroImage = heroImageAsset.url;
-import croWebsiteDesignAsset from "@/assets/industries/landscape-construction-hardscaping/cro-website-design.png.asset.json";
-const croWebsiteDesign = croWebsiteDesignAsset.url;
-import fullRemodelSeoAsset from "@/assets/industries/landscape-construction-hardscaping/full-remodel.png.asset.json";
-const remodelingSeo = fullRemodelSeoAsset.url;
-import hardscapeSeoAsset from "@/assets/industries/landscape-construction-hardscaping/hardscape.png.asset.json";
-const hardscapeSeo = hardscapeSeoAsset.url;
-import outdoorLivingSeoAsset from "@/assets/industries/landscape-construction-hardscaping/outdoor-living.png.asset.json";
-const outdoorLivingSeo = outdoorLivingSeoAsset.url;
-import hillsideSeoAsset from "@/assets/industries/landscape-construction-hardscaping/hillside.png.asset.json";
-const retainingWallSeo = hillsideSeoAsset.url;
-import decksSeoAsset from "@/assets/industries/landscape-construction-hardscaping/decks.png.asset.json";
-const deckPergolaSeo = decksSeoAsset.url;
-import foundationSeoAsset from "@/assets/industries/landscape-construction-hardscaping/foundation.png.asset.json";
-const foundationSeo = foundationSeoAsset.url;
-import fullRemodelAdAsset from "@/assets/industries/landscape-construction-hardscaping/full-remodel-ad.jpg.asset.json";
-import hardscapeAdAsset from "@/assets/industries/landscape-construction-hardscaping/hardscape-ad.jpg.asset.json";
-import outdoorKitchenAdAsset from "@/assets/industries/landscape-construction-hardscaping/outdoor-kitchen-ad.jpg.asset.json";
-import commercialAdAsset from "@/assets/industries/landscape-construction-hardscaping/commercial-ad.jpg.asset.json";
-import localMapPackAsset from "@/assets/industries/landscape-construction-hardscaping/local-map-pack-ad.jpg.asset.json";
-const fullRemodelAd = fullRemodelAdAsset.url;
-const hardscapeAd = hardscapeAdAsset.url;
-const outdoorKitchenAd = outdoorKitchenAdAsset.url;
-const commercialAd = commercialAdAsset.url;
-const localMapPack = localMapPackAsset.url;
-import aiReceptionistAsset from "@/assets/industries/landscape-construction-hardscaping/ai-receptionist.jpg.asset.json";
-const aiReceptionistImage = aiReceptionistAsset.url;
-import aiWebsiteLivechatAsset from "@/assets/industries/landscape-construction-hardscaping/ai-website-livechat.jpg.asset.json";
-const aiWebsiteLivechatImage = aiWebsiteLivechatAsset.url;
+import heroImage from "@/assets/industries/landscape-construction-hardscaping/hero.png";
+import croWebsiteDesign from "@/assets/industries/landscape-construction-hardscaping/cro-website-design.png";
+import remodelingSeo from "@/assets/industries/landscape-construction-hardscaping/full-remodel.png";
+import hardscapeSeo from "@/assets/industries/landscape-construction-hardscaping/hardscape.png";
+import outdoorLivingSeo from "@/assets/industries/landscape-construction-hardscaping/outdoor-living.png";
+import retainingWallSeo from "@/assets/industries/landscape-construction-hardscaping/hillside.png";
+import deckPergolaSeo from "@/assets/industries/landscape-construction-hardscaping/decks.png";
+import foundationSeo from "@/assets/industries/landscape-construction-hardscaping/foundation.png";
+import fullRemodelAd from "@/assets/industries/landscape-construction-hardscaping/full-remodel-ad.jpg";
+import hardscapeAd from "@/assets/industries/landscape-construction-hardscaping/hardscape-ad.jpg";
+import outdoorKitchenAd from "@/assets/industries/landscape-construction-hardscaping/outdoor-kitchen-ad.jpg";
+import commercialAd from "@/assets/industries/landscape-construction-hardscaping/commercial-ad.jpg";
+import localMapPack from "@/assets/industries/landscape-construction-hardscaping/local-map-pack-ad.jpg";
+import aiReceptionistImage from "@/assets/industries/landscape-construction-hardscaping/ai-receptionist.jpg";
+import aiWebsiteLivechatImage from "@/assets/industries/landscape-construction-hardscaping/ai-website-livechat.jpg";
 
 export const landscapeConstructionHardscapingConfig: NicheConfig = {
   // ── PAGE META ──
