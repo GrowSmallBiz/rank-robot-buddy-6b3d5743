@@ -556,7 +556,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  icon: Leaf,
  color: "from-green-500/20 to-green-600/10",
  primary: [
- { name: "Google Ads (Search)", reason: "Seasonal keyword campaigns ramped before spring and fall. Landscape remodeling near me and landscape maintenance company targeting." },
+ { name: "Google Ads (Search)", reason: "Seasonal keyword campaigns ramped before spring and fall. Landscape maintenance near me and landscape maintenance company targeting." },
  { name: "Google LSA", reason: "Pay per verified lead. Strong for seasonal project and maintenance searches. Google Guarantee builds trust." },
  ],
  secondary: [
