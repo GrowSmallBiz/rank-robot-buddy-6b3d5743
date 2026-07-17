@@ -8,13 +8,13 @@ import {
  Youtube, Zap, Layers, Palette, PhoneCall,
 } from "lucide-react";
 
-import heroImage from "@/assets/tree-lawn-landscaping/tree-service-landscape-maintenance-hero.webp";
+import heroImage from "@/assets/tree-lawn-landscaping/tree-service-landscape-remodeling-hero.webp";
 import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-stump-removal-website-screenshot.webp";
 import treeServiceSeo from "@/assets/tree-lawn-landscaping/tree-service-seo-keywords.webp";
-import landscapeRemodelingSeo from "@/assets/tree-lawn-landscaping/landscape-maintenance-seo-keywords.webp";
+import landscapeRemodelingSeo from "@/assets/tree-lawn-landscaping/landscape-remodeling-seo-keywords.webp";
 import landscapingSeo from "@/assets/tree-lawn-landscaping/landscaping-seo-keywords.webp";
 import emergencyTreeRemoval from "@/assets/tree-lawn-landscaping/emergency-tree-removal-ad.webp";
-import springLandscapeRemodeling from "@/assets/tree-lawn-landscaping/spring-landscape-maintenance-ad.webp";
+import springLandscapeRemodeling from "@/assets/tree-lawn-landscaping/spring-landscape-remodeling-ad.webp";
 import fallTreeService from "@/assets/tree-lawn-landscaping/fall-tree-service-ad.webp";
 import commercialLandscaping from "@/assets/tree-lawn-landscaping/commercial-landscaping-ad.webp";
 import localMapPack from "@/assets/tree-lawn-landscaping/local-map-pack-ad.webp";
