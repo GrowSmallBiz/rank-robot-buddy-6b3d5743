@@ -2,63 +2,63 @@
 
 > AI-powered digital marketing for local service businesses. We provide integrated website design, SEO, paid media, social media, AI receptionist, CRM, and lead nurturing services.
 
-Canonical: https://growsmallbiz.io/
+Canonical: https://rank-robot-buddy.lovable.app/
 
 ## Read this first
-- Full machine-readable content: https://growsmallbiz.io/llms-full.txt
-- XML sitemap: https://growsmallbiz.io/sitemap.xml
+- Full machine-readable content: https://rank-robot-buddy.lovable.app/llms-full.txt
+- XML sitemap: https://rank-robot-buddy.lovable.app/sitemap.xml
 
 ## Primary Pages
-- Home: https://growsmallbiz.io/
-- About: https://growsmallbiz.io/about/
-- Contact: https://growsmallbiz.io/contact/
+- Home: https://rank-robot-buddy.lovable.app/
+- About: https://rank-robot-buddy.lovable.app/about/
+- Contact: https://rank-robot-buddy.lovable.app/contact/
 
 ## Services
-- Services: https://growsmallbiz.io/services/
-- AI Receptionist And Conversational Ai: https://growsmallbiz.io/services/ai-receptionist-and-conversational-ai/
-- Facebook Ads: https://growsmallbiz.io/services/facebook-ads/
-- Google Ads: https://growsmallbiz.io/services/google-ads/
-- Local SEO: https://growsmallbiz.io/services/local-seo/
-- Marketing Automation For Small Business: https://growsmallbiz.io/services/marketing-automation-for-small-business/
-- Calendar Scheduling: https://growsmallbiz.io/services/marketing-automation-for-small-business/calendar-scheduling/
-- Call Tracking: https://growsmallbiz.io/services/marketing-automation-for-small-business/call-tracking/
-- Crm: https://growsmallbiz.io/services/marketing-automation-for-small-business/crm/
-- Email Sms Marketing: https://growsmallbiz.io/services/marketing-automation-for-small-business/email-sms-marketing/
-- Forms Surveys: https://growsmallbiz.io/services/marketing-automation-for-small-business/forms-surveys/
-- Generate Leads: https://growsmallbiz.io/services/marketing-automation-for-small-business/generate-leads/
-- Integrated Payments: https://growsmallbiz.io/services/marketing-automation-for-small-business/integrated-payments/
-- Memberships: https://growsmallbiz.io/services/marketing-automation-for-small-business/memberships/
-- Reviews: https://growsmallbiz.io/services/marketing-automation-for-small-business/reviews/
-- Sales Funnels: https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-funnels/
-- Sales Tracker: https://growsmallbiz.io/services/marketing-automation-for-small-business/sales-tracker/
-- Social Media Planner: https://growsmallbiz.io/services/marketing-automation-for-small-business/social-media-planner/
-- Universal Inbox: https://growsmallbiz.io/services/marketing-automation-for-small-business/universal-inbox/
-- Webchat: https://growsmallbiz.io/services/marketing-automation-for-small-business/webchat/
-- Website Builder: https://growsmallbiz.io/services/marketing-automation-for-small-business/website-builder/
-- Workflow Automations: https://growsmallbiz.io/services/marketing-automation-for-small-business/workflow-automations/
-- Paid Advertising: https://growsmallbiz.io/services/paid-advertising/
-- Facebook Ads: https://growsmallbiz.io/services/paid-advertising/facebook-ads/
-- Google Ads: https://growsmallbiz.io/services/paid-advertising/google-ads/
-- Google Local Services Ads: https://growsmallbiz.io/services/paid-advertising/google-local-services-ads/
-- SEO Agency: https://growsmallbiz.io/services/seo-agency/
-- AEO: https://growsmallbiz.io/services/seo-agency/aeo/
-- AI Search Optimization: https://growsmallbiz.io/services/seo-agency/ai-search-optimization/
-- Authority Building: https://growsmallbiz.io/services/seo-agency/authority-building/
-- GEO: https://growsmallbiz.io/services/seo-agency/geo/
-- Link Building: https://growsmallbiz.io/services/seo-agency/link-building/
-- Local SEO: https://growsmallbiz.io/services/seo-agency/local-seo/
-- On Page SEO: https://growsmallbiz.io/services/seo-agency/on-page-seo/
-- Technical SEO: https://growsmallbiz.io/services/seo-agency/technical-seo/
-- Website Design: https://growsmallbiz.io/services/website-design/
+- Services: https://rank-robot-buddy.lovable.app/services/
+- AI Receptionist And Conversational Ai: https://rank-robot-buddy.lovable.app/services/ai-receptionist-and-conversational-ai/
+- Facebook Ads: https://rank-robot-buddy.lovable.app/services/facebook-ads/
+- Google Ads: https://rank-robot-buddy.lovable.app/services/google-ads/
+- Local SEO: https://rank-robot-buddy.lovable.app/services/local-seo/
+- Marketing Automation For Small Business: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/
+- Calendar Scheduling: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/calendar-scheduling/
+- Call Tracking: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/call-tracking/
+- Crm: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/crm/
+- Email Sms Marketing: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/email-sms-marketing/
+- Forms Surveys: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/forms-surveys/
+- Generate Leads: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/generate-leads/
+- Integrated Payments: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/integrated-payments/
+- Memberships: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/memberships/
+- Reviews: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/reviews/
+- Sales Funnels: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/sales-funnels/
+- Sales Tracker: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/sales-tracker/
+- Social Media Planner: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/social-media-planner/
+- Universal Inbox: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/universal-inbox/
+- Webchat: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/webchat/
+- Website Builder: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/website-builder/
+- Workflow Automations: https://rank-robot-buddy.lovable.app/services/marketing-automation-for-small-business/workflow-automations/
+- Paid Advertising: https://rank-robot-buddy.lovable.app/services/paid-advertising/
+- Facebook Ads: https://rank-robot-buddy.lovable.app/services/paid-advertising/facebook-ads/
+- Google Ads: https://rank-robot-buddy.lovable.app/services/paid-advertising/google-ads/
+- Google Local Services Ads: https://rank-robot-buddy.lovable.app/services/paid-advertising/google-local-services-ads/
+- SEO Agency: https://rank-robot-buddy.lovable.app/services/seo-agency/
+- AEO: https://rank-robot-buddy.lovable.app/services/seo-agency/aeo/
+- AI Search Optimization: https://rank-robot-buddy.lovable.app/services/seo-agency/ai-search-optimization/
+- Authority Building: https://rank-robot-buddy.lovable.app/services/seo-agency/authority-building/
+- GEO: https://rank-robot-buddy.lovable.app/services/seo-agency/geo/
+- Link Building: https://rank-robot-buddy.lovable.app/services/seo-agency/link-building/
+- Local SEO: https://rank-robot-buddy.lovable.app/services/seo-agency/local-seo/
+- On Page SEO: https://rank-robot-buddy.lovable.app/services/seo-agency/on-page-seo/
+- Technical SEO: https://rank-robot-buddy.lovable.app/services/seo-agency/technical-seo/
+- Website Design: https://rank-robot-buddy.lovable.app/services/website-design/
 
 ## Case Studies
-- Chiropractic Case Study: https://growsmallbiz.io/case-studies/chiropractic-case-study/
-- Cleaning Services: https://growsmallbiz.io/case-studies/cleaning-services/
-- Dental Case Study: https://growsmallbiz.io/case-studies/dental-case-study/
-- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/
-- Home Remodeling: https://growsmallbiz.io/case-studies/home-remodeling/
-- Local SEO Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/local-seo-hvac-plumbing-electrical/
-- Hvac Plumbing Electrical: https://growsmallbiz.io/case-studies/local-seo-service/hvac-plumbing-electrical/
-- Med Spa Case Study: https://growsmallbiz.io/case-studies/med-spa-case-study/
-- Roofers: https://growsmallbiz.io/case-studies/roofers/
-- Tree Lawn Landscaping: https://growsmallbiz.io/case-studies/tree-lawn-landscaping/
+- Chiropractic Case Study: https://rank-robot-buddy.lovable.app/case-studies/chiropractic-case-study/
+- Cleaning Services: https://rank-robot-buddy.lovable.app/case-studies/cleaning-services/
+- Dental Case Study: https://rank-robot-buddy.lovable.app/case-studies/dental-case-study/
+- Hvac Plumbing Electrical: https://rank-robot-buddy.lovable.app/case-studies/google-ads-for-small-businesses/hvac-plumbing-electrical/
+- Home Remodeling: https://rank-robot-buddy.lovable.app/case-studies/home-remodeling/
+- Local SEO Hvac Plumbing Electrical: https://rank-robot-buddy.lovable.app/case-studies/local-seo-hvac-plumbing-electrical/
+- Hvac Plumbing Electrical: https://rank-robot-buddy.lovable.app/case-studies/local-seo-service/hvac-plumbing-electrical/
+- Med Spa Case Study: https://rank-robot-buddy.lovable.app/case-studies/med-spa-case-study/
+- Roofers: https://rank-robot-buddy.lovable.app/case-studies/roofers/
+- Tree Lawn Landscaping: https://rank-robot-buddy.lovable.app/case-studies/tree-lawn-landscaping/
