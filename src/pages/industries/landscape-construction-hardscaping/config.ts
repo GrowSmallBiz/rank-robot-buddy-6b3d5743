@@ -8,21 +8,21 @@ import {
   Youtube, Zap, Hammer, Palette, PhoneCall, Flame, TreePine, Home as HomeIcon,
 } from "lucide-react";
 
-import heroImage from "@/assets/industries/landscape-construction-hardscaping/hero.png";
-import croWebsiteDesign from "@/assets/industries/landscape-construction-hardscaping/cro-website-design.png";
-import remodelingSeo from "@/assets/industries/landscape-construction-hardscaping/full-remodel.png";
-import hardscapeSeo from "@/assets/industries/landscape-construction-hardscaping/hardscape.png";
-import outdoorLivingSeo from "@/assets/industries/landscape-construction-hardscaping/outdoor-living.png";
-import retainingWallSeo from "@/assets/industries/landscape-construction-hardscaping/hillside.png";
-import deckPergolaSeo from "@/assets/industries/landscape-construction-hardscaping/decks.png";
-import foundationSeo from "@/assets/industries/landscape-construction-hardscaping/foundation.png";
-import fullRemodelAd from "@/assets/industries/landscape-construction-hardscaping/full-remodel-ad.jpg";
-import hardscapeAd from "@/assets/industries/landscape-construction-hardscaping/hardscape-ad.jpg";
-import outdoorKitchenAd from "@/assets/industries/landscape-construction-hardscaping/outdoor-kitchen-ad.jpg";
-import commercialAd from "@/assets/industries/landscape-construction-hardscaping/commercial-ad.jpg";
-import localMapPack from "@/assets/industries/landscape-construction-hardscaping/local-map-pack-ad.jpg";
-import aiReceptionistImage from "@/assets/industries/landscape-construction-hardscaping/ai-receptionist.jpg";
-import aiWebsiteLivechatImage from "@/assets/industries/landscape-construction-hardscaping/ai-website-livechat.jpg";
+import heroImage from "@/assets/industries/landscape-construction-hardscaping/hero.webp";
+import croWebsiteDesign from "@/assets/industries/landscape-construction-hardscaping/cro-website-design.webp";
+import remodelingSeo from "@/assets/industries/landscape-construction-hardscaping/full-remodel.webp";
+import hardscapeSeo from "@/assets/industries/landscape-construction-hardscaping/hardscape.webp";
+import outdoorLivingSeo from "@/assets/industries/landscape-construction-hardscaping/outdoor-living.webp";
+import retainingWallSeo from "@/assets/industries/landscape-construction-hardscaping/hillside.webp";
+import deckPergolaSeo from "@/assets/industries/landscape-construction-hardscaping/decks.webp";
+import foundationSeo from "@/assets/industries/landscape-construction-hardscaping/foundation.webp";
+import fullRemodelAd from "@/assets/industries/landscape-construction-hardscaping/full-remodel-ad.webp";
+import hardscapeAd from "@/assets/industries/landscape-construction-hardscaping/hardscape-ad.webp";
+import outdoorKitchenAd from "@/assets/industries/landscape-construction-hardscaping/outdoor-kitchen-ad.webp";
+import commercialAd from "@/assets/industries/landscape-construction-hardscaping/commercial-ad.webp";
+import localMapPack from "@/assets/industries/landscape-construction-hardscaping/local-map-pack-ad.webp";
+import aiReceptionistImage from "@/assets/industries/landscape-construction-hardscaping/ai-receptionist.webp";
+import aiWebsiteLivechatImage from "@/assets/industries/landscape-construction-hardscaping/ai-website-livechat.webp";
 
 export const landscapeConstructionHardscapingConfig: NicheConfig = {
   // ── PAGE META ──
