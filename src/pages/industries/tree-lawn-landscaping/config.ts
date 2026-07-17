@@ -841,7 +841,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  ],
  aiReceptionistHighlightText: "When a homeowner calls at 11pm about a tree that fell on their fence during a storm — your competitor's voicemail gets the call. Your AI Receptionist answers, qualifies the job, books the estimate, and sends a confirmation SMS. That job is yours before sunrise.",
  aiReceptionistImage: aiReceptionistMulticall,
- aiReceptionistImageAlt: "AI-driven multi-call interface for tree service and landscape maintenance businesses, featuring emergency tree removal, landscape maintenance estimates, property management, and design-build consultations.",
+ aiReceptionistImageAlt: "AI-driven multi-call interface for tree service and landscape maintenance businesses, featuring emergency tree removal, stump grinding, seasonal pruning, and recurring maintenance estimate requests.",
  aiVoiceFeatureBullets: [
  "Answers every call 24/7 — storm damage at midnight, commercial inquiries on Sunday, emergency removals during your busiest week",
  "Qualifies the lead by service type (tree removal, landscape maintenance, commercial) and urgency level",
