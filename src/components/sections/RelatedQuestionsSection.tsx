@@ -75,11 +75,7 @@ export const RelatedQuestionsSection = ({
   return (
     <section
       id={id}
-      className="py-16 lg:py-20 relative overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)",
-      }}
+      className="py-16 lg:py-20 relative overflow-hidden bg-faq-gradient"
       aria-labelledby={headingId}
     >
       <div className="absolute top-0 left-1/3 w-72 h-40 bg-primary/5 rounded-full blur-3xl" />
@@ -92,11 +88,10 @@ export const RelatedQuestionsSection = ({
             aria-expanded={open}
             aria-controls={panelId}
             className={cn(
-              "w-full flex items-center justify-between gap-4 px-6 py-5 rounded-xl bg-black border text-left transition-all",
+              "w-full flex items-center justify-between gap-4 px-6 py-5 rounded-xl bg-black border border-coral text-left transition-all",
               "hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]",
               "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background",
             )}
-            style={{ borderColor: "#ff7f50ff" }}
           >
             <div>
               <p className="text-primary font-medium text-sm mb-1">
@@ -146,8 +141,7 @@ export const RelatedQuestionsSection = ({
                 <AccordionItem
                   key={index}
                   value={`related-${index}`}
-                  className="bg-black border rounded-xl px-6 transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                  style={{ borderColor: "#ff7f50ff" }}
+                  className="bg-black border border-coral rounded-xl px-6 transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                 >
                   <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-4 hover:no-underline">
                     {item.question}

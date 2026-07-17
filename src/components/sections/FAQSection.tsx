@@ -76,7 +76,7 @@ export const FAQSection = ({
   };
 
   return (
-    <section className="py-24 lg:py-32 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)' }}>
+    <section className="py-24 lg:py-32 relative overflow-hidden bg-faq-gradient">
       {/* Subtle glow effects */}
       <div className="absolute top-0 right-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-1/4 w-80 h-48 bg-primary/5 rounded-full blur-3xl" />
@@ -102,8 +102,8 @@ export const FAQSection = ({
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="bg-black border rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                  style={{ animationDelay: `${index * 0.05}s`, borderColor: '#ff7f50ff' }}
+                  className="bg-black border border-coral rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
+                  style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-5 hover:no-underline">
                     {faq.question}

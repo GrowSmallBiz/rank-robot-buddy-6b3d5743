@@ -21,14 +21,7 @@ export const SystemDiagramSection = ({ config }: SystemDiagramSectionProps) => {
           </p>
         </div>
 
-        <div
-          className="relative p-6 md:p-10 rounded-2xl overflow-hidden"
-          style={{
-            border: '2px solid rgba(255, 127, 80, 0.4)',
-            backgroundColor: 'rgba(15, 23, 42, 0.95)',
-            boxShadow: '0 0 40px rgba(255, 127, 80, 0.15), 0 0 80px rgba(255, 127, 80, 0.1)',
-          }}
-        >
+        <div className="relative p-6 md:p-10 rounded-2xl overflow-hidden card-diagram-glow">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 pointer-events-none" />
           <div className="relative z-10 flex justify-center">
             <img
