@@ -78,7 +78,21 @@ function checkHtml(file) {
     if (bodyText.length < 500) {
       err(`rendered body text too short (${bodyText.length} chars) — possible empty SSG output`);
     }
+
+    // ── Hard check: react-router / React error-boundary crash markers ──
+    // If SSG rendered a router/hydration crash into #root, the page ships
+    // an "Unexpected Application Error!" (react-router default boundary)
+    // or a bare React error dialog. Fail the build — never deploy that.
+    const rootMatch = html.match(/<div\s+id=["']root["'][^>]*>([\s\S]*?)<\/div>\s*<script/i);
+    const rootHtml = rootMatch ? rootMatch[1] : '';
+    if (/Unexpected Application Error!?/i.test(rootHtml)) {
+      err('react-router crash boundary rendered into #root ("Unexpected Application Error!")');
+    }
+    if (/data-server-rendered=["']true["']/i.test(html) && rootHtml.trim().length < 200) {
+      err('#root marked server-rendered but body is nearly empty — SSG crashed silently');
+    }
   }
+
 
   // ── Soft SEO-quality checks (warnings only, never block build) ──
 
