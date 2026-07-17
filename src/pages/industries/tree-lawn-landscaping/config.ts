@@ -658,7 +658,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  ],
  emailNurturePoints: [
  { title: "Stay Top-of-Mind Through the Full Season", icon: Eye, description: "Most tree service and landscape maintenance decisions take days or weeks. Automated email and SMS sequences keep your company visible from first inquiry to booked job." },
- { title: "Convert Seasonal Planners Into Recurring Clients", icon: Heart, description: "A homeowner who books a spring landscape refresh is a candidate for fall cleanup, hardscape installation, and seasonal maintenance. Automated sequences turn one-time jobs into recurring revenue." },
+ { title: "Convert Seasonal Planners Into Recurring Clients", icon: Heart, description: "A homeowner who books a spring landscape refresh is a candidate for fall cleanup, tree pruning, and seasonal maintenance contracts. Automated sequences turn one-time jobs into recurring revenue." },
  { title: "Turn Happy Clients Into Your Best Lead Source", icon: Gift, description: "An automated referral system reaches satisfied tree service and landscape maintenance clients with a referral offer — a discount on their next service for every new customer they send your way. Most clients refer one to three people when asked at the right moment with the right incentive. Zero ad spend required." },
  ],
  emailSequenceTitle: "5-Day Inquiry-to-Quote Automation:",
