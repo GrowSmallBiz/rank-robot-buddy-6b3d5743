@@ -933,20 +933,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   ],
 
   // ── CASE STUDY LINKS ──
-  caseStudyLinks: [
-    {
-      title: "Marketing Case Study: Outdoor Living & Landscape",
-      description: "How a Chicagoland outdoor-living and landscape company achieved a 1.1 average Map Pack rank, +138.54% impressions, and +770% phone clicks with AI SEO.",
-      url: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
-      icon: Search,
-    },
-    {
-      title: "Google Ads Case Study: Landscape & Hardscape",
-      description: "How GrowSmallBiz generated 553 conversions at $53.70 CPA for a landscape and hardscape company — with a 211.5% lift in 90-day conversions after campaign scaling.",
-      url: "/home-service-contractors/tree-lawn-landscaping-marketing/landscaping-marketing-case-study/",
-      icon: Target,
-    },
-  ],
+  caseStudyLinks: [],
 
   // ── FAQ ──
   faqHeadline: "Landscape Construction & Hardscaping",
