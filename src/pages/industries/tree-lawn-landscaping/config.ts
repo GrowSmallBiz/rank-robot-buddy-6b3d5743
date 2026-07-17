@@ -150,8 +150,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  },
  {
  icon: Layers,
- title: "Design-Build Leads Lost to Competitors with Better Online Presence",
- description: "Homeowners planning a landscape maintenance project research over weeks and compare three or four companies before calling anyone. If your portfolio is not visible on Google, your website does not load fast on mobile, and you have fewer reviews than a nearby competitor — you lose the job before the first phone call.",
+ title: "Recurring Maintenance Contracts Lost to Better-Ranked Competitors",
+ description: "Homeowners and property managers looking for a reliable landscape maintenance company compare three or four providers before signing a recurring contract. If your Google Business Profile is thin, your website loads slowly on mobile, and you have fewer reviews than a nearby competitor — you lose the account before the first phone call.",
  hasImage: false,
  showAILogos: false,
  },
