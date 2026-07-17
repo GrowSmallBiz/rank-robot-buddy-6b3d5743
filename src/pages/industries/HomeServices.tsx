@@ -47,6 +47,7 @@ const trades = [
   { icon: Home, name: "Roofing" },
   { icon: Paintbrush, name: "Remodeling" },
   { icon: TreePine, name: "Tree Removal Service and Landscaping Remodeling", link: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
+  { icon: Layers, name: "Landscape Construction & Hardscaping", link: "/home-service-contractors/landscape-construction-hardscaping-marketing/" },
   { icon: Paintbrush, name: "Painting" },
 ];
 
