@@ -34,8 +34,10 @@ const hardscapeAd = hardscapeAdAsset.url;
 const outdoorKitchenAd = outdoorKitchenAdAsset.url;
 const commercialAd = commercialAdAsset.url;
 const localMapPack = localMapPackAsset.url;
-import aiReceptionistMulticall from "@/assets/tree-lawn-landscaping/ai-receptionist-multicall.webp";
-import aiWebsiteLivechat from "@/assets/tree-lawn-landscaping/ai-website-livechat.webp";
+import aiReceptionistAsset from "@/assets/industries/landscape-construction-hardscaping/ai-receptionist.jpg.asset.json";
+const aiReceptionistImage = aiReceptionistAsset.url;
+import aiWebsiteLivechatAsset from "@/assets/industries/landscape-construction-hardscaping/ai-website-livechat.jpg.asset.json";
+const aiWebsiteLivechatImage = aiWebsiteLivechatAsset.url;
 
 export const landscapeConstructionHardscapingConfig: NicheConfig = {
   // ── PAGE META ──
@@ -867,7 +869,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
     { human: "Cannot transfer to a human outside business hours", ai: "Transfers to a live human when needed — flags after-hours emergencies for immediate callback" },
   ],
   aiReceptionistHighlightText: "When a homeowner submits a $100K outdoor kitchen inquiry at 10pm — your competitor's voicemail gets that call. Your AI Receptionist answers, qualifies the project scope, books the design consultation, and sends a confirmation SMS. That project is yours before sunrise.",
-  aiReceptionistImage: aiReceptionistMulticall,
+  aiReceptionistImage: aiReceptionistImage,
   aiReceptionistImageAlt: "AI-driven multi-call interface for landscape construction and hardscaping businesses, featuring full backyard remodel, outdoor kitchen, retaining wall, and commercial site work inquiries.",
   aiVoiceFeatureBullets: [
     "Answers every call 24/7 — evening design inquiries, weekend commercial calls, urgent wall or drainage failures",
@@ -879,7 +881,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
     "Integrates with your CRM — every lead logged automatically with full conversation summary",
     "Sends lead summary to your team via SMS and email within 60 seconds of every inquiry",
   ],
-  aiChatImage: aiWebsiteLivechat,
+  aiChatImage: aiWebsiteLivechatImage,
   aiChatImageAlt: "Landscape construction website showcasing hardscape and outdoor living portfolio, with a live chat feature on a smartphone for design consultation inquiries.",
   aiChatFeatureBullets: [
     "Answers service questions, project scope questions, and availability requests instantly — 24/7, no staffing required",
