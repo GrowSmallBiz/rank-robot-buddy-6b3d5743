@@ -10,8 +10,8 @@ import {
 
 import heroImageAsset from "@/assets/industries/landscape-construction-hardscaping/hero.png.asset.json";
 const heroImage = heroImageAsset.url;
-import websiteScreenshotAsset from "@/assets/industries/landscape-construction-hardscaping/website-mockup.png.asset.json";
-const websiteScreenshot = websiteScreenshotAsset.url;
+import croWebsiteDesignAsset from "@/assets/industries/landscape-construction-hardscaping/cro-website-design.png.asset.json";
+const croWebsiteDesign = croWebsiteDesignAsset.url;
 import fullRemodelSeoAsset from "@/assets/industries/landscape-construction-hardscaping/full-remodel.png.asset.json";
 const remodelingSeo = fullRemodelSeoAsset.url;
 import hardscapeSeoAsset from "@/assets/industries/landscape-construction-hardscaping/hardscape.png.asset.json";
