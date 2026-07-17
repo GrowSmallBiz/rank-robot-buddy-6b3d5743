@@ -43,13 +43,9 @@
             m.content = 'noindex, nofollow';
             document.head.appendChild(m);
 
-            // Point canonical at the production equivalent so any link equity consolidates there
-            var canonical = document.querySelector('link[rel="canonical"]');
-            if (canonical) canonical.parentNode.removeChild(canonical);
-            var link = document.createElement('link');
-            link.rel = 'canonical';
-            link.href = 'https://growsmallbiz.io' + window.location.pathname + window.location.search;
-            document.head.appendChild(link);
+            // Canonical is managed per-route via react-helmet-async (see NichePage <Head>),
+            // which already emits the production URL — no need to rewrite here.
+
           }
         } catch (e) { /* no-op */ }
       })();
