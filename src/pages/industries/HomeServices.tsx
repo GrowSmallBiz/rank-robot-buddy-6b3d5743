@@ -46,7 +46,7 @@ const trades = [
   { icon: Plug, name: "Electrical" },
   { icon: Home, name: "Roofing" },
   { icon: Paintbrush, name: "Remodeling" },
-  { icon: TreePine, name: "Tree Service, Removal, and Landscaping Remodeling", link: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
+  { icon: TreePine, name: "Tree Removal Service and Landscaping Remodeling", link: "/home-service-contractors/tree-lawn-landscaping-marketing/" },
   { icon: Paintbrush, name: "Painting" },
 ];
 
@@ -181,7 +181,7 @@ const spokeCards = [
     icon: Home,
   },
   {
-    trade: "Tree Service, Removal, and Landscaping Remodeling",
+    trade: "Tree Removal Service and Landscaping Remodeling",
     description: "High-ticket campaign structure for emergency tree removal, storm damage, and landscape remodeling projects. Local Map Pack visibility for 'tree service near me' and 'landscape remodeling [city].'",
     ctaText: "Tree Service & Landscape Remodeling Marketing",
     link: "/home-service-contractors/tree-lawn-landscaping-marketing/",
