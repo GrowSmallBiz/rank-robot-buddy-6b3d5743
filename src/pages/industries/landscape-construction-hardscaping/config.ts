@@ -34,8 +34,10 @@ const hardscapeAd = hardscapeAdAsset.url;
 const outdoorKitchenAd = outdoorKitchenAdAsset.url;
 const commercialAd = commercialAdAsset.url;
 const localMapPack = localMapPackAsset.url;
-import aiReceptionistMulticall from "@/assets/tree-lawn-landscaping/ai-receptionist-multicall.webp";
-import aiWebsiteLivechat from "@/assets/tree-lawn-landscaping/ai-website-livechat.webp";
+import aiReceptionistAsset from "@/assets/industries/landscape-construction-hardscaping/ai-receptionist.jpg.asset.json";
+const aiReceptionistImage = aiReceptionistAsset.url;
+import aiWebsiteLivechatAsset from "@/assets/industries/landscape-construction-hardscaping/ai-website-livechat.jpg.asset.json";
+const aiWebsiteLivechatImage = aiWebsiteLivechatAsset.url;
 
 export const landscapeConstructionHardscapingConfig: NicheConfig = {
   // ── PAGE META ──
