@@ -1168,7 +1168,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
 
   // ── WHO THIS IS FOR ──
   whoThisIsForHeadline: "Is GrowSmallBiz Right for Your Landscape Construction or Hardscaping Company?",
-  whoThisIsForHighlight: "Right for Your",
+  whoThisIsForHighlight: "",
   whoThisIsForBadge: "WHO THIS IS FOR",
   strongFitLabel: "Strong Fit",
   notFitLabel: "Not the Right Fit",
