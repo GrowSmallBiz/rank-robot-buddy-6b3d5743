@@ -881,7 +881,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
     "Integrates with your CRM — every lead logged automatically with full conversation summary",
     "Sends lead summary to your team via SMS and email within 60 seconds of every inquiry",
   ],
-  aiChatImage: aiWebsiteLivechat,
+  aiChatImage: aiWebsiteLivechatImage,
   aiChatImageAlt: "Landscape construction website showcasing hardscape and outdoor living portfolio, with a live chat feature on a smartphone for design consultation inquiries.",
   aiChatFeatureBullets: [
     "Answers service questions, project scope questions, and availability requests instantly — 24/7, no staffing required",
