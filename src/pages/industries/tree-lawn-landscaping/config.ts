@@ -410,67 +410,67 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  "In the Chicagoland tree and landscape campaign we managed, the client reached a 1.1 average Map Pack rank across 123 grid points — meaning they ranked first for tree and landscape searches across their entire service area. Total impressions increased 138.54 percent and phone number clicks increased 770 percent in the first two months of the campaign.",
  ],
  seoEditorialPullQuote: "A Chicagoland tree and landscape company managed by GrowSmallBiz achieved a 1.1 average Map Pack rank across all 123 local search grid points within six months — with 123 of 123 grid points ranking in position 1 or 2.",
- seoKeywordCategories: {
- treeService: {
- label: "Tree Service",
- icon: TreePine,
- image: treeServiceSeo,
- keywords: [
- "tree service near me",
- "emergency tree removal",
- "tree removal cost",
- "arborist near me",
- ],
- competitors: "National tree service franchises, local arborists, Thumbtack/Angi contractor listings",
- },
-  landscapeRemodeling: {
-    label: "Landscape Maintenance",
-    icon: Leaf,
-    image: landscapeRemodelingSeo,
-    keywords: [
- "landscape maintenance near me",
- "landscape maintenance service",
- "landscape maintenance company",
- "landscape maintenance company near me",
- ],
- competitors: "Local landscape maintenance firms, lawn care companies, Yelp and Nextdoor listings",
- },
-  landscaping: {
-    label: "Lawn Care & Grounds",
- icon: Sprout,
- image: landscapingSeo,
- keywords: [
- "lawn care near me",
- "lawn care service",
- "yard cleanup service",
- "commercial grounds maintenance",
- ],
- competitors: "Local lawn care companies, grounds maintenance providers, Yelp listings",
-  },
-   stumpGrinding: {
-     label: "Stump Grinding",
-     icon: Sprout,
-     image: stumpGrindingSeo,
-     keywords: [
-  "stump grinding near me",
-  "stump removal cost",
-  "stump grinder rental vs service",
-  "tree stump removal service",
-  ],
-  competitors: "Local tree services offering stump grinding as add-on, standalone stump grinding specialists, equipment rental competitors",
-  },
-   treePruning: {
-     label: "Tree Pruning & Trimming",
-     icon: Leaf,
-     image: treePruningSeo,
-     keywords: [
-  "tree pruning near me",
-  "tree trimming service",
-  "tree pruning cost",
-  "certified arborist pruning",
-  ],
-  competitors: "Local arborists, tree service franchises, landscape maintenance companies bundling pruning",
-  },
+  seoKeywordCategories: {
+    treeService: {
+      label: "Tree Service",
+      icon: TreePine,
+      image: treeServiceSeo,
+      keywords: [
+        "tree service near me",
+        "emergency tree removal",
+        "tree removal cost",
+        "arborist near me",
+      ],
+      competitors: "National tree service franchises, local arborists, Thumbtack/Angi contractor listings",
+    },
+    stumpGrinding: {
+      label: "Stump Grinding",
+      icon: Sprout,
+      image: stumpGrindingSeo,
+      keywords: [
+        "stump grinding near me",
+        "stump removal cost",
+        "stump grinder rental vs service",
+        "tree stump removal service",
+      ],
+      competitors: "Local tree services offering stump grinding as add-on, standalone stump grinding specialists, equipment rental competitors",
+    },
+    treePruning: {
+      label: "Tree Pruning & Trimming",
+      icon: Leaf,
+      image: treePruningSeo,
+      keywords: [
+        "tree pruning near me",
+        "tree trimming service",
+        "tree pruning cost",
+        "certified arborist pruning",
+      ],
+      competitors: "Local arborists, tree service franchises, landscape maintenance companies bundling pruning",
+    },
+    landscapeRemodeling: {
+      label: "Landscape Maintenance",
+      icon: Leaf,
+      image: landscapeRemodelingSeo,
+      keywords: [
+        "landscape maintenance near me",
+        "landscape maintenance service",
+        "landscape maintenance company",
+        "landscape maintenance company near me",
+      ],
+      competitors: "Local landscape maintenance firms, lawn care companies, Yelp and Nextdoor listings",
+    },
+    landscaping: {
+      label: "Lawn Care & Grounds",
+      icon: Sprout,
+      image: landscapingSeo,
+      keywords: [
+        "lawn care near me",
+        "lawn care service",
+        "yard cleanup service",
+        "commercial grounds maintenance",
+      ],
+      competitors: "Local lawn care companies, grounds maintenance providers, Yelp listings",
+    },
   },
 
  // ══════════════════════════════════════════════════════════════════════
