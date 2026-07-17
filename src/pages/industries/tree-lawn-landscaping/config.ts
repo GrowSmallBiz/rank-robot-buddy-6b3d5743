@@ -13,6 +13,8 @@ import websiteScreenshot from "@/assets/tree-lawn-landscaping/tree-stump-removal
 import treeServiceSeo from "@/assets/tree-lawn-landscaping/tree-service-seo-keywords.webp";
 import landscapeRemodelingSeo from "@/assets/tree-lawn-landscaping/landscape-remodeling-seo-keywords.webp";
 import landscapingSeo from "@/assets/tree-lawn-landscaping/landscaping-seo-keywords.webp";
+import stumpGrindingSeo from "@/assets/tree-lawn-landscaping/stump-grinding-seo-keywords.webp";
+import treePruningSeo from "@/assets/tree-lawn-landscaping/tree-pruning-trimming-seo-keywords.webp";
 import emergencyTreeRemoval from "@/assets/tree-lawn-landscaping/emergency-tree-removal-ad.webp";
 import springLandscapeRemodeling from "@/assets/tree-lawn-landscaping/spring-landscape-remodeling-ad.webp";
 import fallTreeService from "@/assets/tree-lawn-landscaping/fall-tree-service-ad.webp";
@@ -444,8 +446,32 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  "commercial grounds maintenance",
  ],
  competitors: "Local lawn care companies, grounds maintenance providers, Yelp listings",
- },
- },
+  },
+   stumpGrinding: {
+     label: "Stump Grinding",
+     icon: Sprout,
+     image: stumpGrindingSeo,
+     keywords: [
+  "stump grinding near me",
+  "stump removal cost",
+  "stump grinder rental vs service",
+  "tree stump removal service",
+  ],
+  competitors: "Local tree services offering stump grinding as add-on, standalone stump grinding specialists, equipment rental competitors",
+  },
+   treePruning: {
+     label: "Tree Pruning & Trimming",
+     icon: Leaf,
+     image: treePruningSeo,
+     keywords: [
+  "tree pruning near me",
+  "tree trimming service",
+  "tree pruning cost",
+  "certified arborist pruning",
+  ],
+  competitors: "Local arborists, tree service franchises, landscape maintenance companies bundling pruning",
+  },
+  },
 
  // ══════════════════════════════════════════════════════════════════════
  // FOUR-LANE SEARCH DOMINANCE — NEW
