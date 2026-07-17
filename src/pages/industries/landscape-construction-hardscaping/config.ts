@@ -266,24 +266,6 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
       whatWeDo: "Marketing for the invisible layer — French drains, dry wells, low-voltage landscape lighting, and irrigation infrastructure that protects and elevates every finished landscape.",
       impact: "Foundation-service revenue that attaches to nearly every remodel and generates standalone leads for problem-solving homeowners.",
     },
-    {
-      icon: Star,
-      title: "Reputation Management",
-      whatWeDo: "Systematic review generation across Google and Yelp that builds the review count and recency your Map Pack ranking depends on — critical for winning six-figure projects.",
-      impact: "Higher Map Pack position, stronger click-through, and more homeowner trust before the first consultation.",
-    },
-    {
-      icon: Phone,
-      title: "AI Receptionist & 24/7 Lead Capture",
-      whatWeDo: "AI-powered voice and chat that answers, qualifies, and logs every lead — evening design inquiries, commercial calls on weekends, urgent drainage or wall failures.",
-      impact: "Zero missed leads regardless of time of day, season, or call volume.",
-    },
-    {
-      icon: RefreshCw,
-      title: "Lead Nurture & Client Reactivation",
-      whatWeDo: "Automated email and SMS sequences that convert unsold design proposals into signed contracts, re-engage past clients for phase-two projects, and maintain year-round contact with your referral network.",
-      impact: "More signed contracts and phase-two revenue from the leads and customers already in your database.",
-    },
   ],
 
   // ── STAGED APPROACH ──
