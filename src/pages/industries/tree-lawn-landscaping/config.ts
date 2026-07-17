@@ -762,11 +762,11 @@ export const treeLawnLandscapingConfig: NicheConfig = {
   ],
   seasonalCampaignsHeading: "We Automate for Tree Service & Landscape Maintenance",
   seasonalCampaigns: [
-    { campaign: "Spring Design-Build Push", timing: "Launch 4-6 weeks before February", offer: "Free landscape design-build consultations + early-bird install pricing", channels: ["Google Ads", "Houzz", "Email"] },
+    { campaign: "Spring Landscape Maintenance Push", timing: "Launch 4-6 weeks before February", offer: "Free landscape maintenance plans + early-bird recurring-contract pricing", channels: ["Google Ads", "Facebook", "Email"] },
     { campaign: "Storm Season Emergency Response", timing: "Active December-February", offer: "24/7 emergency tree removal assessment + insurance documentation support", channels: ["Google LSA", "Google Ads", "SMS"] },
     { campaign: "Fall Tree Pruning & Removal", timing: "Launch in August for October peak", offer: "Complimentary tree removal + stump grinding quotes before winter", channels: ["Google Ads", "Facebook", "Email"] },
-    { campaign: "Commercial Contract Season", timing: "Active September-November", offer: "Annual maintenance and renovation proposals for HOAs and property managers", channels: ["LinkedIn", "Google Ads", "Email"] },
-    { campaign: "Capital Improvement Push", timing: "Active May-June", offer: "HOA and property manager capital improvement proposals — hardscape, irrigation, renovation", channels: ["LinkedIn", "Google Ads", "Email"] },
+    { campaign: "Commercial Contract Season", timing: "Active September-November", offer: "Annual recurring maintenance proposals for HOAs and property managers", channels: ["LinkedIn", "Google Ads", "Email"] },
+    { campaign: "Mid-Season Add-On Push", timing: "Active May-June", offer: "HOA and property manager mid-season add-ons — mulching, irrigation tune-ups, seasonal cleanups", channels: ["LinkedIn", "Google Ads", "Email"] },
   ],
   pastClientWorkflows: [
  { title: "Annual Seasonal Check-In", icon: Calendar, description: "Automated email sent 10 months after last service - before they start searching for a new provider." },
