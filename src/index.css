@@ -750,3 +750,28 @@
   color: white !important;
   box-shadow: 0 0 25px rgba(139, 92, 246, 0.5), 0 0 50px rgba(139, 92, 246, 0.3);
 }
+
+/* ==================================================================
+   FAQ / RelatedQuestions shared utilities
+   Extracted from inline style attributes to reduce inline-style flags
+   from on-page SEO tools and keep DOM markup lighter.
+   ================================================================== */
+.bg-faq-gradient {
+  background: linear-gradient(
+    180deg,
+    hsl(210 50% 8%) 0%,
+    hsl(210 45% 14%) 50%,
+    hsl(210 50% 8%) 100%
+  );
+}
+
+.border-coral {
+  border-color: #ff7f50;
+}
+
+.card-diagram-glow {
+  border: 2px solid rgba(255, 127, 80, 0.4);
+  background-color: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 0 40px rgba(255, 127, 80, 0.15),
+    0 0 80px rgba(255, 127, 80, 0.1);
+}
