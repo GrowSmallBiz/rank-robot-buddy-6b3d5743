@@ -75,11 +75,7 @@ export const RelatedQuestionsSection = ({
   return (
     <section
       id={id}
-      className="py-16 lg:py-20 relative overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(180deg, hsl(210 50% 8%) 0%, hsl(210 45% 14%) 50%, hsl(210 50% 8%) 100%)",
-      }}
+      className="py-16 lg:py-20 relative overflow-hidden bg-faq-gradient"
       aria-labelledby={headingId}
     >
       <div className="absolute top-0 left-1/3 w-72 h-40 bg-primary/5 rounded-full blur-3xl" />
