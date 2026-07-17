@@ -141,8 +141,7 @@ export const RelatedQuestionsSection = ({
                 <AccordionItem
                   key={index}
                   value={`related-${index}`}
-                  className="bg-black border rounded-xl px-6 transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                  style={{ borderColor: "#ff7f50ff" }}
+                  className="bg-black border border-coral rounded-xl px-6 transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                 >
                   <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-4 hover:no-underline">
                     {item.question}
