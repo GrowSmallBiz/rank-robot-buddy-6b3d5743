@@ -1166,7 +1166,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  "Want a seasonal marketing calendar and proactive campaign management, not reactive ad spend",
  "Looking for an experienced specialist agency that understands the home service industry demand cycle — not a generalist who serves restaurants one month and contractors the next",
  "Commercial contracts, HOA accounts, or property management relationships are part of your growth goal",
- "Landscape remodeling companies with active design-build, hardscape, or commercial portfolio projects looking to convert long-cycle project research into booked consultations",
+ "Landscape maintenance companies with recurring residential routes, HOA contracts, or commercial grounds accounts looking to add new properties and expand routes efficiently",
  ],
  notFitItems: [
  "Solo operators in their first year who are not yet generating consistent revenue",
