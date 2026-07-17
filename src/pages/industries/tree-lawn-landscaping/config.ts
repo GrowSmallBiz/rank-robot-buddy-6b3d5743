@@ -621,7 +621,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  color: "from-green-500/20 to-green-600/10",
  primary: [
  { name: "Facebook", icon: Facebook, strategy: "Before-and-after landscape maintenance photos, seasonal tips, spring prep announcements. Homeowner community engagement." },
- { name: "Instagram", icon: Instagram, strategy: "Before-and-after landscape maintenance photos, hardscape project showcases, seasonal transformation content. Visual brand building." },
+ { name: "Instagram", icon: Instagram, strategy: "Before-and-after landscape maintenance photos, crew-at-work shots, seasonal transformation content. Visual brand building." },
  ],
  secondary: [
  { name: "Nextdoor", icon: MapPin, strategy: "Neighborhood home improvement recommendations. Seasonal availability announcements. Local trust signal." },
