@@ -815,6 +815,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   reputationHeadline: "More 5-Star Reviews.",
   reputationHighlight: "Higher Map Pack. More High-Ticket Consultations.",
   reputationSubheadline: "According to BrightLocal's 2026 Local Consumer Review Survey, 97% of consumers read reviews before making a hiring decision, 31% ignore any business with a rating below 4.5 stars, and 74% only trust reviews from the last 90 days. For landscape construction and hardscaping contractors, reviews determine whether a homeowner books a consultation or hires a competitor — before you've ever spoken.",
+  reputationInnerH3: "We Handle Your Landscape Construction & Hardscaping Reputation",
   reputationBullets: [
     "97% of consumers read reviews before making a hiring decision — reviews determine whether a homeowner calls you or your competitor (BrightLocal 2026)",
     "31% of consumers now ignore any business with a rating below 4.5 stars — Map Pack visibility means nothing if your rating disqualifies you on sight (BrightLocal 2026)",
