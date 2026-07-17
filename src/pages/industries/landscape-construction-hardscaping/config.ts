@@ -43,7 +43,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   // ── PAGE META ──
   pageTitle: "Landscape Construction & Hardscaping Contractor Marketing | GrowSmallBiz",
   ogTitle: "AI-Powered Growth for Landscape Construction & Hardscaping Contractors",
-  metaDescription: "Get more high-ticket outdoor living, hardscape, retaining wall, and full backyard remodel leads with Local SEO, Google Ads, and AI-powered lead capture. Schedule strategy call.",
+  metaDescription: "High-ticket outdoor living, hardscape, retaining wall, and backyard remodel leads via Local SEO, Google Ads, and AI lead capture. Schedule a strategy call.",
   metaKeywords: "landscape construction marketing, hardscaping contractor advertising, outdoor living marketing, retaining wall leads, deck and pergola marketing, backyard remodel digital marketing, hardscape SEO",
   canonicalUrl: "/home-service-contractors/landscape-construction-hardscaping-marketing/",
   serviceName: "Landscape Construction & Hardscaping Contractor Marketing Agency",

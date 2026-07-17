@@ -43,13 +43,9 @@
             m.content = 'noindex, nofollow';
             document.head.appendChild(m);
 
-            // Point canonical at the production equivalent so any link equity consolidates there
-            var canonical = document.querySelector('link[rel="canonical"]');
-            if (canonical) canonical.parentNode.removeChild(canonical);
-            var link = document.createElement('link');
-            link.rel = 'canonical';
-            link.href = 'https://growsmallbiz.io' + window.location.pathname + window.location.search;
-            document.head.appendChild(link);
+            // Canonical is managed per-route via react-helmet-async (see NichePage <Head>),
+            // which already emits the production URL — no need to rewrite here.
+
           }
         } catch (e) { /* no-op */ }
       })();
@@ -57,8 +53,8 @@
 
     
     
+    <!-- og:url is set per-route via react-helmet-async so social crawlers attribute each page to its own URL. Sitewide fallback below only for the homepage/no-route case. -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://growsmallbiz.io/" />
     <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8e092966-c718-4bf0-a0e3-2de8ef029b58/id-preview-200cfc41--9fbe2ca3-4084-400e-a8a4-35fee5032fdf.lovable.app-1774136419789.png">
 
     <meta name="twitter:card" content="summary_large_image" />
