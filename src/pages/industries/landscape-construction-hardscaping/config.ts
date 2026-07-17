@@ -869,7 +869,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
     { human: "Cannot transfer to a human outside business hours", ai: "Transfers to a live human when needed — flags after-hours emergencies for immediate callback" },
   ],
   aiReceptionistHighlightText: "When a homeowner submits a $100K outdoor kitchen inquiry at 10pm — your competitor's voicemail gets that call. Your AI Receptionist answers, qualifies the project scope, books the design consultation, and sends a confirmation SMS. That project is yours before sunrise.",
-  aiReceptionistImage: aiReceptionistMulticall,
+  aiReceptionistImage: aiReceptionistImage,
   aiReceptionistImageAlt: "AI-driven multi-call interface for landscape construction and hardscaping businesses, featuring full backyard remodel, outdoor kitchen, retaining wall, and commercial site work inquiries.",
   aiVoiceFeatureBullets: [
     "Answers every call 24/7 — evening design inquiries, weekend commercial calls, urgent wall or drainage failures",
