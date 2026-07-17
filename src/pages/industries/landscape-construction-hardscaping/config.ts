@@ -71,7 +71,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   heroImageAlt: "Landscape construction crew installing a paver patio and retaining wall for a full backyard remodel, showcasing high-ticket hardscape and outdoor living work.",
   badgeIcon: Layers,
   badgeText: "Landscape Construction & Hardscaping Marketing",
-  h1Line1: "We Generate High-Ticket Leads for Landscape Construction & Hardscaping Contractors",
+  h1Line1: "We Generate High-Ticket, Pre-Qualified Leads for Landscape Construction, Hardscaping, Outdoor Living, Retaining Wall, and Backyard Remodel Contractors Across the Bay Area",
   h1Highlight: "",
   h1Line2: "",
   heroSubheadline: "GrowSmallBiz combines Local SEO, Google Ads, and AI-powered lead capture to put your landscape construction or hardscaping company in front of homeowners planning full backyard remodels, outdoor kitchens, retaining walls, and luxury outdoor living projects — and convert that visibility into signed contracts.",
