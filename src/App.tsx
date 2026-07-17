@@ -32,10 +32,11 @@ const lazy = (importFn: () => Promise<{ default: React.ComponentType }>) =>
       const mod = await importFn();
       return { Component: mod.default };
     } catch (err) {
-      // Stale chunk after deploy — reload once to fetch fresh assets
-      const key = "chunk-reload";
-      if (!sessionStorage.getItem(key)) {
-        sessionStorage.setItem(key, "1");
+      // Stale chunk after deploy — reload with cooldown to fetch fresh assets
+      const key = "chunk-reload-at";
+      const last = Number(sessionStorage.getItem(key) ?? 0);
+      if (Date.now() - last >= 10_000) {
+        sessionStorage.setItem(key, String(Date.now()));
         window.location.reload();
       }
       throw err;
