@@ -750,7 +750,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
       genre: "Commercial Grounds", icon: Building2, color: "from-blue-500 to-blue-600",
       offer: {
         headline: "Free Commercial Grounds Maintenance Proposal",
-        tagline: "[Annual Contract] — Maintenance and capital improvement plan for HOAs and property managers",
+        tagline: "[Annual Contract] — Recurring grounds maintenance plan for HOAs and property managers",
         price: "Free", originalPrice: "", savings: "",
         includes: ["Full property walk-through", "12-month maintenance + renovation proposal", "Seasonal service calendar", "HOA compliance assessment"],
         urgency: "Annual contracts booked Q4–Q1", cta: "Request Proposal",
