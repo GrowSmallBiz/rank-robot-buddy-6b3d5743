@@ -1131,7 +1131,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
 
   // ── HOW IT WORKS ──
   howItWorksHeadline: "5 Steps From Invisible to Fully Booked",
-  howItWorksHighlight: "Fully Booked",
+  howItWorksHighlight: "",
   howItWorksBadge: "HOW IT WORKS",
   processSteps: [
     {
