@@ -57,7 +57,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  heroImageAlt: "Tree service crew removing a damaged tree and a landscape remodeling project in a residential neighborhood, showcasing high-ticket tree and landscape work.",
  badgeIcon: TreePine,
  badgeText: "Tree Service & Removal and Landscape Remodeling Marketing",
- h1Line1: "High-Ticket Leads for Tree Removal & Landscape Remodeling Contractors",
+ h1Line1: "High-Ticket Marketing Leads for Tree Removal, Stumping & Hardscaping Contractors",
  h1Highlight: "",
  h1Line2: "",
  heroSubheadline: "GrowSmallBiz combines Local SEO, Google Ads, and AI-powered lead capture to put your tree service & removal or landscape remodeling company in front of homeowners the moment they need high-ticket work — and convert that visibility into booked jobs.",
