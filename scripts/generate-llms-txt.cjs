@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://rank-robot-buddy.lovable.app';
+const BASE_URL = 'https://growsmallbiz.io';
 
 const appFile = fs.readFileSync(path.resolve(__dirname, '../src/App.tsx'), 'utf-8');
 

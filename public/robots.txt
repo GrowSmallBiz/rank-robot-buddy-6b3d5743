@@ -28,4 +28,4 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-Sitemap: https://rank-robot-buddy.lovable.app/sitemap.xml
+Sitemap: https://growsmallbiz.io/sitemap.xml
