@@ -8,16 +8,22 @@ import {
   Youtube, Zap, Hammer, Palette, PhoneCall, Flame, TreePine, Home as HomeIcon,
 } from "lucide-react";
 
-// NOTE: Placeholder imagery reused from tree-lawn-landscaping until hardscape-specific
-// creatives are produced. Swap file paths in-place when new WebP assets are added.
-import heroImage from "@/assets/tree-lawn-landscaping/tree-service-landscape-remodeling-hero.webp";
+import heroImageAsset from "@/assets/industries/landscape-construction-hardscaping/hero.png.asset.json";
+const heroImage = heroImageAsset.url;
 import websiteScreenshotAsset from "@/assets/industries/landscape-construction-hardscaping/website-mockup.png.asset.json";
 const websiteScreenshot = websiteScreenshotAsset.url;
-import hardscapeSeo from "@/assets/tree-lawn-landscaping/landscape-remodeling-seo-keywords.webp";
-import outdoorLivingSeo from "@/assets/tree-lawn-landscaping/landscaping-seo-keywords.webp";
-import retainingWallSeo from "@/assets/tree-lawn-landscaping/stump-grinding-seo-keywords.webp";
-import deckPergolaSeo from "@/assets/tree-lawn-landscaping/tree-pruning-trimming-seo-keywords.webp";
-import remodelingSeo from "@/assets/tree-lawn-landscaping/tree-service-seo-keywords.webp";
+import fullRemodelSeoAsset from "@/assets/industries/landscape-construction-hardscaping/full-remodel.png.asset.json";
+const remodelingSeo = fullRemodelSeoAsset.url;
+import hardscapeSeoAsset from "@/assets/industries/landscape-construction-hardscaping/hardscape.png.asset.json";
+const hardscapeSeo = hardscapeSeoAsset.url;
+import outdoorLivingSeoAsset from "@/assets/industries/landscape-construction-hardscaping/outdoor-living.png.asset.json";
+const outdoorLivingSeo = outdoorLivingSeoAsset.url;
+import hillsideSeoAsset from "@/assets/industries/landscape-construction-hardscaping/hillside.png.asset.json";
+const retainingWallSeo = hillsideSeoAsset.url;
+import decksSeoAsset from "@/assets/industries/landscape-construction-hardscaping/decks.png.asset.json";
+const deckPergolaSeo = decksSeoAsset.url;
+import foundationSeoAsset from "@/assets/industries/landscape-construction-hardscaping/foundation.png.asset.json";
+const foundationSeo = foundationSeoAsset.url;
 import fullRemodelAd from "@/assets/tree-lawn-landscaping/spring-landscape-remodeling-ad.webp";
 import hardscapeAd from "@/assets/tree-lawn-landscaping/emergency-tree-removal-ad.webp";
 import outdoorKitchenAd from "@/assets/tree-lawn-landscaping/fall-tree-service-ad.webp";
@@ -379,7 +385,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   seoEditorialPullQuote: "A Chicagoland outdoor-living company managed by GrowSmallBiz achieved a 1.1 average Map Pack rank across all 123 local search grid points within six months — with 123 of 123 grid points ranking in position 1 or 2.",
   seoKeywordCategories: {
     fullRemodel: {
-      label: "Full Backyard Remodels",
+      label: "Full Front & Backyard Remodeling",
       icon: HomeIcon,
       image: remodelingSeo,
       keywords: [
@@ -391,7 +397,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
       competitors: "Design-build landscape firms, national landscape franchises, Houzz/Thumbtack listings",
     },
     hardscape: {
-      label: "Hardscape & Concrete",
+      label: "Architectural Hardscape & Concrete",
       icon: Layers,
       image: hardscapeSeo,
       keywords: [
@@ -403,7 +409,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
       competitors: "Local hardscape specialists, concrete contractors, national paver-authorized dealers",
     },
     outdoorLiving: {
-      label: "Outdoor Living & Kitchens",
+      label: "Luxury Outdoor Living & Kitchens",
       icon: Flame,
       image: outdoorLivingSeo,
       keywords: [
@@ -415,7 +421,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
       competitors: "Outdoor kitchen specialists, design-build firms, custom pergola companies",
     },
     retainingWalls: {
-      label: "Retaining Walls & Hillside",
+      label: "Hillside Stabilization & Retaining Walls",
       icon: Shield,
       image: retainingWallSeo,
       keywords: [
@@ -427,7 +433,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
       competitors: "Structural wall specialists, general landscape firms bundling walls, engineering-adjacent contractors",
     },
     decksPergolas: {
-      label: "Decks, Pergolas & Carpentry",
+      label: "Decks, Pergolas, & Carpentry",
       icon: Hammer,
       image: deckPergolaSeo,
       keywords: [
@@ -437,6 +443,18 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
         "custom outdoor carpentry",
       ],
       competitors: "Deck-only builders, general contractors, TimberTech/Trex dealer networks",
+    },
+    foundationSystems: {
+      label: "Foundation Systems (Drainage & Lighting)",
+      icon: Zap,
+      image: foundationSeo,
+      keywords: [
+        "french drain installation near me",
+        "landscape drainage contractor",
+        "low voltage landscape lighting installer",
+        "yard drainage solutions",
+      ],
+      competitors: "Drainage specialists, landscape lighting companies, irrigation contractors",
     },
   },
 
