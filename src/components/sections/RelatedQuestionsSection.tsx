@@ -88,11 +88,10 @@ export const RelatedQuestionsSection = ({
             aria-expanded={open}
             aria-controls={panelId}
             className={cn(
-              "w-full flex items-center justify-between gap-4 px-6 py-5 rounded-xl bg-black border text-left transition-all",
+              "w-full flex items-center justify-between gap-4 px-6 py-5 rounded-xl bg-black border border-coral text-left transition-all",
               "hover:shadow-[0_0_60px_rgba(255,127,80,0.5)]",
               "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background",
             )}
-            style={{ borderColor: "#ff7f50ff" }}
           >
             <div>
               <p className="text-primary font-medium text-sm mb-1">
