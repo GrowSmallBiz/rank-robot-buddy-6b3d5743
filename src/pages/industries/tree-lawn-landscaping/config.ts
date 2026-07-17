@@ -280,6 +280,18 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  whatWeDo: "Automated email and SMS sequences that convert unsold estimates into booked jobs, re-engage past clients before spring cleanup and storm season ramp-up, and maintain year-round contact with your recurring maintenance base.",
  impact: "More recurring contracts and seasonal bookings from the leads and customers already in your database — not just the ones who called back unprompted.",
  },
+ {
+ icon: Sprout,
+ title: "Stump Grinding Lead Campaigns",
+ whatWeDo: "Dedicated landing pages, Google Ads, and Local SEO targeting homeowners searching stump grinding near me and stump removal cost — often as a follow-up to a recent tree removal.",
+ impact: "Capture add-on stump grinding revenue from homeowners who otherwise call a different contractor after their tree comes down.",
+ },
+ {
+ icon: Leaf,
+ title: "Tree Pruning & Trimming Campaigns",
+ whatWeDo: "Seasonal Google Ads, Google Business Profile posts, and content targeting tree pruning near me and tree trimming service searches — timed to spring and fall demand windows.",
+ impact: "Steady, seasonal pruning bookings that fill crew calendars between larger removal and maintenance jobs.",
+ },
  ],
 
  // ══════════════════════════════════════════════════════════════════════
