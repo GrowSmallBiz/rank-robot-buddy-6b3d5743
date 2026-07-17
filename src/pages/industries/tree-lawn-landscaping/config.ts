@@ -705,7 +705,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  },
  ],
   marketingCampaignsHighlight: "High-Ticket Campaigns We Build for Tree Service & Landscape Maintenance",
-  marketingCampaignsSubheadline: "Real high-ticket offers paired with automated funnels—designed to attract emergency tree removal, tree removal + stump grinding, landscape design-build, and commercial grounds contracts.",
+  marketingCampaignsSubheadline: "Real high-ticket offers paired with automated funnels—designed to attract emergency tree removal, tree removal + stump grinding, seasonal pruning, and recurring landscape maintenance contracts.",
   marketingCampaigns: [
     {
       genre: "Emergency Tree Removal", icon: Zap, color: "from-red-500 to-rose-500",
