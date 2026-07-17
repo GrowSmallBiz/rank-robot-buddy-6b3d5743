@@ -636,7 +636,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  { name: "Facebook", icon: Facebook, strategy: "Commercial property before-and-after. Seasonal maintenance contracts. Property management company targeting." },
  ],
  secondary: [
- { name: "Instagram", icon: Instagram, strategy: "Commercial landscape portfolio. Design-build project showcase. Visual credibility for B2B buyers." },
+ { name: "Instagram", icon: Instagram, strategy: "Commercial landscape portfolio and seasonal maintenance showcases. Visual credibility for B2B buyers." },
  { name: "YouTube", icon: Youtube, strategy: "Commercial project walkthroughs. Maintenance program explainers. Searchable video content." },
  ],
  },
