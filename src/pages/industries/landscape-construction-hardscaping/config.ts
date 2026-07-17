@@ -24,11 +24,16 @@ import decksSeoAsset from "@/assets/industries/landscape-construction-hardscapin
 const deckPergolaSeo = decksSeoAsset.url;
 import foundationSeoAsset from "@/assets/industries/landscape-construction-hardscaping/foundation.png.asset.json";
 const foundationSeo = foundationSeoAsset.url;
-import fullRemodelAd from "@/assets/tree-lawn-landscaping/spring-landscape-remodeling-ad.webp";
-import hardscapeAd from "@/assets/tree-lawn-landscaping/emergency-tree-removal-ad.webp";
-import outdoorKitchenAd from "@/assets/tree-lawn-landscaping/fall-tree-service-ad.webp";
-import commercialAd from "@/assets/tree-lawn-landscaping/commercial-landscaping-ad.webp";
-import localMapPack from "@/assets/tree-lawn-landscaping/local-map-pack-ad.webp";
+import fullRemodelAdAsset from "@/assets/industries/landscape-construction-hardscaping/full-remodel-ad.jpg.asset.json";
+import hardscapeAdAsset from "@/assets/industries/landscape-construction-hardscaping/hardscape-ad.jpg.asset.json";
+import outdoorKitchenAdAsset from "@/assets/industries/landscape-construction-hardscaping/outdoor-kitchen-ad.jpg.asset.json";
+import commercialAdAsset from "@/assets/industries/landscape-construction-hardscaping/commercial-ad.jpg.asset.json";
+import localMapPackAsset from "@/assets/industries/landscape-construction-hardscaping/local-map-pack-ad.jpg.asset.json";
+const fullRemodelAd = fullRemodelAdAsset.url;
+const hardscapeAd = hardscapeAdAsset.url;
+const outdoorKitchenAd = outdoorKitchenAdAsset.url;
+const commercialAd = commercialAdAsset.url;
+const localMapPack = localMapPackAsset.url;
 import aiReceptionistMulticall from "@/assets/tree-lawn-landscaping/ai-receptionist-multicall.webp";
 import aiWebsiteLivechat from "@/assets/tree-lawn-landscaping/ai-website-livechat.webp";
 
