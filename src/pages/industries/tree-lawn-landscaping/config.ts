@@ -955,8 +955,8 @@ export const treeLawnLandscapingConfig: NicheConfig = {
  answer: "Most tree service and landscape maintenance companies see measurable movement in Google Map Pack rankings within 60 to 90 days of starting a managed SEO program. Top 3 Map Pack positions in competitive Bay Area markets typically take 4 to 6 months of consistent optimization. Emergency and near me keywords tend to rank faster than broad service terms because intent is immediate and Google weights proximity heavily. In a Chicagoland tree service and landscape maintenance campaign managed by GrowSmallBiz, the client reached a 1.1 average Map Pack rank across 123 grid points within six months.",
  },
  {
- question: "Is local SEO worth it for a small landscape maintenance or design-build business?",
- answer: "Yes — local SEO is the highest-ROI long-term marketing investment for a small landscape maintenance or design-build business because it builds organic visibility that compounds over time without a per-click cost. A well-optimized Google Business Profile with strong review velocity consistently generates inbound calls without ongoing ad spend. The tradeoff is time: local SEO takes 60 to 90 days to show measurable movement. For faster results in the first 90 days, run local SEO in parallel with Google Local Services Ads.",
+ question: "Is local SEO worth it for a small tree service or landscape maintenance business?",
+ answer: "Yes — local SEO is the highest-ROI long-term marketing investment for a small tree service or landscape maintenance business because it builds organic visibility that compounds over time without a per-click cost. A well-optimized Google Business Profile with strong review velocity consistently generates inbound calls without ongoing ad spend. The tradeoff is time: local SEO takes 60 to 90 days to show measurable movement. For faster results in the first 90 days, run local SEO in parallel with Google Local Services Ads.",
  },
  ],
  },
