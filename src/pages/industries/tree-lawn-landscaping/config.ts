@@ -752,7 +752,7 @@ export const treeLawnLandscapingConfig: NicheConfig = {
         headline: "Free Commercial Grounds Maintenance Proposal",
         tagline: "[Annual Contract] — Recurring grounds maintenance plan for HOAs and property managers",
         price: "Free", originalPrice: "", savings: "",
-        includes: ["Full property walk-through", "12-month maintenance + renovation proposal", "Seasonal service calendar", "HOA compliance assessment"],
+        includes: ["Full property walk-through", "12-month recurring maintenance proposal", "Seasonal service calendar", "HOA compliance assessment"],
         urgency: "Annual contracts booked Q4–Q1", cta: "Request Proposal",
       },
       funnel: ["LinkedIn Ads", "Landing page", "Proposal request form", "Email nurture", "Sales call", "Contract signed", "Annual renewal"],
