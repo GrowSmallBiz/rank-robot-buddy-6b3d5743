@@ -370,6 +370,8 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   seoHeadline: "Local SEO That Puts Your Landscape Construction & Hardscaping Company",
   seoHighlight: "at the Top of Google Maps",
   seoSubheadline: "Comprehensive local search optimization that drives high-ticket design consultations, hardscape inquiries, and commercial bids from homeowners and property managers across your service area.",
+  seoContentAuthorityStatement: "We Don't Publish Bulk AI Blogs. We Build Landscape Construction Authority.",
+  seoAiVisibilityHeading: "We Get Your Landscape Construction & Hardscaping Company Recommended by AI Search Engines",
   topicMapCenterLine1: "Hardscape &",
   topicMapCenterLine2: "Outdoor Living",
   topicMapSpokes: [
