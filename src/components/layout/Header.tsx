@@ -263,6 +263,9 @@ export const Header = () => {
                     <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Tree Removal Service and Landscaping Remodeling
                     </Link>
+                    <Link to="/home-service-contractors/landscape-construction-hardscaping-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
+                      Landscape Construction & Hardscaping
+                    </Link>
                     <Link to="/home-service-contractors/painting-companies-marketing/" className="block px-4 py-2.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors">
                       Painting
                     </Link>
@@ -657,6 +660,9 @@ export const Header = () => {
                 </Link>
                 <Link to="/home-service-contractors/tree-lawn-landscaping-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
                   Tree Removal Service and Landscaping Remodeling
+                </Link>
+                <Link to="/home-service-contractors/landscape-construction-hardscaping-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
+                  Landscape Construction & Hardscaping
                 </Link>
                 <Link to="/home-service-contractors/painting-companies-marketing/" onClick={() => setIsOpen(false)} className="block py-2 text-muted-foreground hover:text-primary">
                   Painting
