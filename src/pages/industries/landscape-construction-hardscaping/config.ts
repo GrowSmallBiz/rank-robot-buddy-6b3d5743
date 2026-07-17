@@ -370,6 +370,8 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   seoHeadline: "Local SEO That Puts Your Landscape Construction & Hardscaping Company",
   seoHighlight: "at the Top of Google Maps",
   seoSubheadline: "Comprehensive local search optimization that drives high-ticket design consultations, hardscape inquiries, and commercial bids from homeowners and property managers across your service area.",
+  seoContentAuthorityStatement: "We Don't Publish Bulk AI Blogs. We Build Landscape Construction Authority.",
+  seoAiVisibilityHeading: "We Get Your Landscape Construction & Hardscaping Company Recommended by AI Search Engines",
   topicMapCenterLine1: "Hardscape &",
   topicMapCenterLine2: "Outdoor Living",
   topicMapSpokes: [
@@ -813,6 +815,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
   reputationHeadline: "More 5-Star Reviews.",
   reputationHighlight: "Higher Map Pack. More High-Ticket Consultations.",
   reputationSubheadline: "According to BrightLocal's 2026 Local Consumer Review Survey, 97% of consumers read reviews before making a hiring decision, 31% ignore any business with a rating below 4.5 stars, and 74% only trust reviews from the last 90 days. For landscape construction and hardscaping contractors, reviews determine whether a homeowner books a consultation or hires a competitor — before you've ever spoken.",
+  reputationInnerH3: "We Handle Your Landscape Construction & Hardscaping Reputation",
   reputationBullets: [
     "97% of consumers read reviews before making a hiring decision — reviews determine whether a homeowner calls you or your competitor (BrightLocal 2026)",
     "31% of consumers now ignore any business with a rating below 4.5 stars — Map Pack visibility means nothing if your rating disqualifies you on sight (BrightLocal 2026)",
@@ -1131,7 +1134,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
 
   // ── HOW IT WORKS ──
   howItWorksHeadline: "5 Steps From Invisible to Fully Booked",
-  howItWorksHighlight: "Fully Booked",
+  howItWorksHighlight: "",
   howItWorksBadge: "HOW IT WORKS",
   processSteps: [
     {
@@ -1168,7 +1171,7 @@ export const landscapeConstructionHardscapingConfig: NicheConfig = {
 
   // ── WHO THIS IS FOR ──
   whoThisIsForHeadline: "Is GrowSmallBiz Right for Your Landscape Construction or Hardscaping Company?",
-  whoThisIsForHighlight: "Right for Your",
+  whoThisIsForHighlight: "",
   whoThisIsForBadge: "WHO THIS IS FOR",
   strongFitLabel: "Strong Fit",
   notFitLabel: "Not the Right Fit",
