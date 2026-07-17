@@ -29,7 +29,8 @@ import {
   Leaf,
   Snowflake,
   Sun,
-  CloudSun
+  CloudSun,
+  Layers
 } from "lucide-react";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
