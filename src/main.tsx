@@ -11,12 +11,20 @@ if (typeof window !== "undefined") {
       msg.includes("Importing a module script failed") ||
       msg.includes("error loading dynamically imported module"));
 
+  const KEY = "chunk-reload-at";
+  const COOLDOWN_MS = 10_000;
+
+  // Clear the flag once the page has successfully loaded — allows a fresh
+  // reload attempt on the next stale-chunk error instead of getting stuck.
+  window.addEventListener("load", () => {
+    setTimeout(() => sessionStorage.removeItem(KEY), 2_000);
+  });
+
   const reloadOnce = () => {
-    const key = "chunk-reload";
-    if (!sessionStorage.getItem(key)) {
-      sessionStorage.setItem(key, "1");
-      window.location.reload();
-    }
+    const last = Number(sessionStorage.getItem(KEY) ?? 0);
+    if (Date.now() - last < COOLDOWN_MS) return; // avoid reload loop
+    sessionStorage.setItem(KEY, String(Date.now()));
+    window.location.reload();
   };
 
   window.addEventListener("unhandledrejection", (e) => {
