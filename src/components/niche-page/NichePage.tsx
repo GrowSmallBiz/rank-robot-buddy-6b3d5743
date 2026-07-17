@@ -73,6 +73,10 @@ const NichePage = ({ config }: NichePageProps) => {
         {config.metaKeywords && <meta name="keywords" content={config.metaKeywords} />}
         <link rel="canonical" href={`https://growsmallbiz.io${config.canonicalUrl}`} />
         <meta property="og:title" content={config.ogTitle ?? config.pageTitle} />
+        <meta property="og:description" content={config.metaDescription} />
+        <meta property="og:url" content={`https://growsmallbiz.io${config.canonicalUrl}`} />
+        <meta name="twitter:title" content={config.ogTitle ?? config.pageTitle} />
+        <meta name="twitter:description" content={config.metaDescription} />
       </Head>
       <ServiceJsonLd
         serviceName={config.serviceName}
