@@ -13,6 +13,8 @@ import dentalHeroImage from "@/assets/industry-dental-hero.webp";
 import portfolioDentalWebsite from "@/assets/portfolio-dental-website.webp";
 
 export const dentalConfig: NicheConfig = {
+  // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
+  flattenHeadings: true,
   // ── Page Meta ──
   pageTitle: "Dental Marketing for Dental Practices | GrowSmallBiz",
   ogTitle: "AI-Driven Growth Solutions for Local Service Businesses",

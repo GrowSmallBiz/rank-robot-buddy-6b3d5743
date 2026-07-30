@@ -27,6 +27,8 @@ import aiReceptionistMulticall from "@/assets/hvac/hvac-ai-receptionist.webp";
 import aiWebsiteLivechat from "@/assets/hvac/hvac-ai-website-chat.webp";
 
 export const hvacConfig: NicheConfig = {
+  // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
+  flattenHeadings: true,
   // ══════════════════════════════════════════════════════════════════════
   // PAGE META
   // ══════════════════════════════════════════════════════════════════════
