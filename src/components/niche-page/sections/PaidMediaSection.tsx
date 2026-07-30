@@ -81,7 +81,7 @@ export const PaidMediaSection = ({ config, strategySessionUrl }: PaidMediaSectio
               <Target className="w-5 h-5 text-amber-500" />
             </div>
             <div>
-              <h4 className="font-semibold text-foreground mb-2">Why Primary & Secondary Ad Platforms?</h4>
+              <h3 className="font-semibold text-foreground mb-2">Why Primary & Secondary Ad Platforms?</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 <strong className="text-foreground">Budget allocation matters.</strong> Primary platforms have the highest ROI for your genre—allocate 70-80% of your ad spend here.
                 Secondary platforms are for testing, seasonal campaigns, or retargeting. Starting with $500-1,000/month? Focus exclusively on primary platforms until you've optimized those results.

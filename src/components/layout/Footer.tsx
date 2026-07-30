@@ -61,7 +61,7 @@ export const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4 border-b-2 border-primary/40 pb-2 inline-block">Services</h4>
+            <h3 className="font-display font-semibold text-foreground mb-4 border-b-2 border-primary/40 pb-2 inline-block">Services</h3>
             <ul className="space-y-3">
               <li><Link to="/services/website-design/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Website Design</Link></li>
               <li><Link to="/services/seo-agency/" className="text-sm text-muted-foreground hover:text-primary transition-colors">AI SEO</Link></li>
@@ -81,7 +81,7 @@ export const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-display font-semibold text-foreground mb-4 border-b-2 border-primary/40 pb-2 inline-block">Company</h4>
+            <h3 className="font-display font-semibold text-foreground mb-4 border-b-2 border-primary/40 pb-2 inline-block">Company</h3>
             <ul className="space-y-3">
               <li><Link to="/about/" className="text-sm text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/services/" className="text-sm text-muted-foreground hover:text-primary transition-colors">All Services</Link></li>

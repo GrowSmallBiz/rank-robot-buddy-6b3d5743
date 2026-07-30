@@ -82,7 +82,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                     <div key={i} className="flex items-start gap-4">
                       <div className={`w-3 h-3 rounded-full ${item.color} mt-2 shrink-0`} />
                       <div>
-                        <h4 className="font-bold text-foreground text-lg">{item.label}</h4>
+                        <h3 className="font-bold text-foreground text-lg">{item.label}</h3>
                         <p className="text-sm text-muted-foreground">{item.desc}</p>
                       </div>
                     </div>
