@@ -87,7 +87,7 @@ export const ConsultationFormSection = ({
           <div className="relative rounded-2xl p-8" style={{ backgroundColor: '#191321' }}>
             <div className="text-center mb-8">
               <p className="text-primary font-medium mb-3 text-sm">{eyebrowOverride ?? "Ready to Talk?"}</p>
-              <h2 className={`text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4 bg-clip-text text-transparent ${headingGradientClass ?? "bg-gradient-heading text-white"}`}>
+              <h3 className={`text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4 bg-clip-text text-transparent ${headingGradientClass ?? "bg-gradient-heading text-white"}`}>
                 {headingOverride ?? "Get a Consultation"}
               </h2>
               <p className="text-white/80 text-lg">
