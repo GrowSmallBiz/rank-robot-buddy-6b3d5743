@@ -404,7 +404,7 @@ const Services = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto rounded-xl p-8 md:p-10" style={{ backgroundColor: "#0F2545", border: "1px solid rgba(255,255,255,0.1)" }}>
-            <h3 className="text-xl md:text-2xl font-display font-bold text-foreground mb-3">
+            <h2 className="text-xl md:text-2xl font-display font-bold text-foreground mb-3">
               Local Business Owners Are Already Asking AI These Questions
             </h3>
             <p className="text-sm text-foreground mb-6">
