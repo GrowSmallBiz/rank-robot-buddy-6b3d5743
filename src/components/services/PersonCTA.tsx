@@ -61,7 +61,7 @@ export const PersonCTA = ({
                     />
                   </div>
                 </div>
-                <h4 className="mt-5 text-lg font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
+                <h3 className="mt-5 text-lg font-display font-semibold text-foreground">{baseContactCTA.name}</h3>
                 <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
               </div>
               
