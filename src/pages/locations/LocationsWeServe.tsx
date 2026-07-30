@@ -253,21 +253,21 @@ const LocationsWeServe = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <TrendingUp className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Key Benefits</h4>
+                  <h3 className="font-bold text-foreground mb-2">Key Benefits</h3>
                   <p className="text-muted-foreground text-sm">Enhanced visibility, improved engagement, and efficient lead generation.</p>
                 </div>
                 <div className="p-6 rounded-2xl bg-card border border-border text-center">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <BarChart3 className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Bay Area Impact</h4>
+                  <h3 className="font-bold text-foreground mb-2">Bay Area Impact</h3>
                   <p className="text-muted-foreground text-sm">According to a 2024 report by BrightLocal, AI marketing adoption has increased by 35% among local businesses since 2023, with tech startups leading the way.</p>
                 </div>
                 <div className="p-6 rounded-2xl bg-card border border-border text-center">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Zap className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Performance Benchmarks</h4>
+                  <h3 className="font-bold text-foreground mb-2">Performance Benchmarks</h3>
                   <p className="text-muted-foreground text-sm">Businesses using AI-driven marketing report an average 25% increase in customer retention and a 30% boost in conversion rates, as documented in HubSpot's 2024 Marketing Statistics.</p>
                 </div>
               </div>
@@ -525,7 +525,7 @@ const LocationsWeServe = () => {
                         <span className="text-primary font-bold">{item.num}</span>
                       </div>
                       <div>
-                        <h4 className="text-lg font-bold text-foreground mb-2">{item.title}</h4>
+                        <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
                         <p className="text-muted-foreground">{item.desc}</p>
                       </div>
                     </div>
@@ -571,21 +571,21 @@ const LocationsWeServe = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <MessageSquare className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Monitoring Online Mentions</h4>
+                  <h3 className="font-bold text-foreground mb-2">Monitoring Online Mentions</h3>
                   <p className="text-muted-foreground text-sm">Use tools like Google Alerts and ReviewTrackers to stay informed.</p>
                 </div>
                 <div className="p-6 rounded-2xl bg-card border border-border text-center">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Users className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Engaging with Customers</h4>
+                  <h3 className="font-bold text-foreground mb-2">Engaging with Customers</h3>
                   <p className="text-muted-foreground text-sm">Respond promptly to both positive and negative feedback. SEJ research emphasizes that businesses responding to reviews see higher customer loyalty and improved local rankings.</p>
                 </div>
                 <div className="p-6 rounded-2xl bg-card border border-border text-center">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Star className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Promoting Positive Testimonials</h4>
+                  <h3 className="font-bold text-foreground mb-2">Promoting Positive Testimonials</h3>
                   <p className="text-muted-foreground text-sm">Share success stories on websites and social media.</p>
                 </div>
               </div>
@@ -628,27 +628,27 @@ const LocationsWeServe = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Target className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Clear Call-to-Action (CTA)</h4>
+                  <h3 className="font-bold text-foreground mb-2">Clear Call-to-Action (CTA)</h3>
                   <p className="text-muted-foreground text-sm">Prominent and compelling CTAs encourage user engagement.</p>
                 </div>
                 <div className="p-6 rounded-2xl bg-card border border-border text-center">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Smartphone className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Mobile Responsiveness</h4>
+                  <h3 className="font-bold text-foreground mb-2">Mobile Responsiveness</h3>
                   <p className="text-muted-foreground text-sm">With over 60% of local searches on mobile devices, responsive design is critical, as reported by Statista and supported by Google's findings on mobile search behavior.</p>
                 </div>
                 <div className="p-6 rounded-2xl bg-card border border-border text-center">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Zap className="w-6 h-6 text-primary" />
                   </div>
-                  <h4 className="font-bold text-foreground mb-2">Fast Loading Speed</h4>
+                  <h3 className="font-bold text-foreground mb-2">Fast Loading Speed</h3>
                   <p className="text-muted-foreground text-sm">Optimized images and server response times improve user experience and SEO rankings.</p>
                 </div>
               </div>
 
               <div className="space-y-4">
-                <h4 className="text-xl font-bold text-foreground">Additional conversion-focused elements include:</h4>
+                <h3 className="text-xl font-bold text-foreground">Additional conversion-focused elements include:</h3>
                 {[
                   {
                     num: "1",
@@ -801,7 +801,7 @@ const LocationsWeServe = () => {
                     key={cs.title}
                     className="p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
                   >
-                    <h4 className="font-bold text-foreground mb-2">{cs.title}</h4>
+                    <h3 className="font-bold text-foreground mb-2">{cs.title}</h3>
                     <p className="text-primary font-semibold mb-2">{cs.result}</p>
                     <p className="text-muted-foreground text-sm">{cs.detail}</p>
                   </div>
@@ -890,7 +890,7 @@ const LocationsWeServe = () => {
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <span className="text-primary font-bold">{item.num}</span>
                   </div>
-                  <h4 className="font-bold text-foreground mb-2 text-center">{item.title}</h4>
+                  <h3 className="font-bold text-foreground mb-2 text-center">{item.title}</h3>
                   <p className="text-muted-foreground text-sm text-center">{item.desc}</p>
                 </div>
               ))}

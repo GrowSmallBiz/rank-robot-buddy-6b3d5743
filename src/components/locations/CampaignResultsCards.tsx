@@ -24,7 +24,7 @@ export const CampaignResultsCards = ({ cards }: CampaignResultsCardsProps) => {
             <span className="text-xs font-medium text-primary-foreground/80 uppercase tracking-wider">
               Campaign Results
             </span>
-            <h4 className="text-lg font-display font-bold text-primary-foreground mt-2 mb-1">
+            <h3 className="text-lg font-display font-bold text-primary-foreground mt-2 mb-1">
               {card.title}
             </h4>
             <p className="text-xs text-primary-foreground/70">{card.subtitle}</p>

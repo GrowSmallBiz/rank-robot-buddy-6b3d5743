@@ -155,17 +155,17 @@ const DublinCA = () => {
 
             <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="feature-card-teal p-6 rounded-2xl">
-                <h4 className="text-lg font-bold text-foreground mb-3">B2C Residential Market</h4>
+                <h3 className="text-lg font-bold text-foreground mb-3">B2C Residential Market</h3>
                 <p className="text-muted-foreground text-base leading-relaxed">A B2C residential market defined by growth: Jordan Ranch, Fallon Gateway, Heritage Park, and the communities surrounding Emerald Glen Park represent some of the most concentrated new residential development in Alameda County. These are primarily Millennial and Gen X dual-income households — tech workers, remote professionals, and Bay Area commuters using BART — who are digitally native, mobile-first, and choosing their HVAC contractor, dentist, and real estate agent based primarily on Google search results and review ratings. The demographic is younger than Danville or Pleasanton, more price-aware, and highly responsive to social proof. For local service businesses, this is a new market being built in real time.</p>
               </div>
               <div className="feature-card-teal p-6 rounded-2xl">
-                <h4 className="text-lg font-bold text-foreground mb-3">B2B Commercial Market</h4>
+                <h3 className="text-lg font-bold text-foreground mb-3">B2B Commercial Market</h3>
                 <p className="text-muted-foreground text-base leading-relaxed">A growing B2B commercial market: Dublin's I-580/I-680 corridor creates meaningful commercial service demand alongside the residential market. The Hacienda Business Park (spanning Dublin and Pleasanton) houses hundreds of businesses requiring commercial HVAC maintenance, cleaning services, catering, and property management. The Dublin Boulevard commercial corridor and growing retail footprint generate restaurant, retail, and professional services demand. For GrowSmallBiz clients who serve both residential and commercial accounts — HVAC contractors, cleaning services, electricians, plumbers — Dublin's dual-market structure requires campaigns built to capture both homeowner intent searches and commercial property manager searches.</p>
               </div>
             </div>
 
             <div className="feature-card-teal p-6 rounded-2xl mt-6">
-              <h4 className="text-lg font-bold text-foreground mb-3">Alameda County vs Contra Costa — A Different Competitive Landscape</h4>
+              <h3 className="text-lg font-bold text-foreground mb-3">Alameda County vs Contra Costa — A Different Competitive Landscape</h3>
               <p className="text-muted-foreground text-base leading-relaxed">Dublin is the only Alameda County city in GrowSmallBiz's core service area. This matters because the Dublin Chamber of Commerce directory ranks organically for Dublin marketing keywords — the same pattern we see with the San Ramon Chamber. Being a Tri-Valley Chamber member provides cross-county citation authority that generic Bay Area agencies cannot replicate.</p>
             </div>
           </div>
@@ -251,7 +251,7 @@ const DublinCA = () => {
               { service: "AI Receptionist & Lead Automation", whatWeDo: "24/7 missed-call SMS follow-up, AI QuadBots, SMART nurture sequences, VIP Club, Reactivation campaigns, CRM integration", impact: "Capture every lead the moment it arrives — critical in Dublin's fast-growing market where first responders win first-time homeowner relationships" },
             ].map((row, i) => (
               <div key={i} className="feature-card-teal p-5 rounded-2xl">
-                <h4 className="text-foreground font-bold mb-2">{row.service}</h4>
+                <h3 className="text-foreground font-bold mb-2">{row.service}</h3>
                 <p className="text-muted-foreground text-sm mb-2"><strong className="text-foreground/80">What We Do:</strong> {row.whatWeDo}</p>
                 <p className="text-muted-foreground text-sm"><strong className="text-foreground/80">Dublin Impact:</strong> {row.impact}</p>
               </div>
