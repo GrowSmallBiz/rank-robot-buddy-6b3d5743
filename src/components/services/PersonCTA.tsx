@@ -61,15 +61,15 @@ export const PersonCTA = ({
                     />
                   </div>
                 </div>
-                <h4 className="mt-5 text-lg font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
+                <h3 className="mt-5 text-lg font-display font-semibold text-foreground">{baseContactCTA.name}</h3>
                 <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
               </div>
               
               {/* Right: Content */}
               <div className="flex-1 text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-display font-bold text-foreground mb-5 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                <h3 className="text-3xl md:text-4xl lg:text-[2.75rem] font-display font-bold text-foreground mb-5 leading-tight bg-gradient-heading bg-clip-text text-transparent">
                   {title}
-                </h2>
+                </h3>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8">
                   {description}
                 </p>

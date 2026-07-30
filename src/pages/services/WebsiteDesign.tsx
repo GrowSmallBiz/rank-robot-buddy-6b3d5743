@@ -360,7 +360,7 @@ const WebsiteDesign = () => {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <item.icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{item.headline}</h3>
+                <h2 className="text-lg font-bold text-foreground mb-2">{item.headline}</h2>
                 <p className="text-muted-foreground text-sm">{item.body}</p>
               </div>
             ))}
