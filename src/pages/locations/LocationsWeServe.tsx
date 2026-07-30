@@ -322,9 +322,9 @@ const LocationsWeServe = () => {
                   <Search className="w-4 h-4" />
                   <span>AI Powered Local SEO</span>
                 </div>
-                <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+                <h3 className="section-title bg-gradient-heading bg-clip-text text-transparent">
                   Local SEO Strategies for Bay Area Cities: San Francisco, San Jose, Oakland, and Fremont
-                </h2>
+                </h3>
                 <p className="section-description mt-4">
                   Local SEO is vital for businesses targeting customers within specific Bay Area cities. Effective local SEO enhances online visibility, making it easier for potential customers to find services nearby. BrightLocal research shows that 87% of consumers read online reviews for local businesses, highlighting the importance of reputation alongside SEO. Below are city-specific strategies and insights for optimizing local SEO in 2025-2026.
                 </p>
