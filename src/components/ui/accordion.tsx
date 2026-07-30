@@ -40,6 +40,13 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
+    /**
+     * forceMount keeps every answer in the rendered/prerendered HTML so
+     * crawlers (Googlebot, GPTBot, PerplexityBot) read all FAQ answers,
+     * not just the open one. Radix still applies the `hidden` attribute
+     * when collapsed, so visual behaviour is unchanged.
+     */
+    forceMount
     className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
   >

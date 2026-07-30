@@ -31,7 +31,7 @@ const SubHead = ({ children }: { children: React.ReactNode }) => (
   <h4 className="text-lg font-display font-semibold text-foreground mt-8 mb-3">{children}</h4>
 );
 const DetailLabel = ({ children }: { children: React.ReactNode }) => (
-  <h5 className="text-sm font-semibold text-primary uppercase tracking-wider mt-6 mb-2">{children}</h5>
+  <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mt-6 mb-2">{children}</h4>
 );
 const BulletList = ({ items }: { items: string[] }) => (
   <ul className="space-y-2 ml-1">
