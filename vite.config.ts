@@ -22,7 +22,12 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [
+    react(),
+    // Disable lovable-tagger during SSG prerendering; it references `window`,
+    // which does not exist in Node.js. Keep it for the regular `vite` dev server.
+    mode === "development" && !process.env.VITE_SSG_BUILD && componentTagger(),
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
