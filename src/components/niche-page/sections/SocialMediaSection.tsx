@@ -34,7 +34,7 @@ export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
               <Target className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <h4 className="font-semibold text-foreground mb-2">Why Primary & Secondary Platforms?</h4>
+              <h3 className="font-semibold text-foreground mb-2">Why Primary & Secondary Platforms?</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 <strong className="text-foreground">Focus beats scatter.</strong> Primary platforms are where your ideal clients actively search for your genre—invest 80% of your time here.
                 Secondary platforms offer supplemental reach or work well for specific campaigns, but spreading too thin dilutes your impact.

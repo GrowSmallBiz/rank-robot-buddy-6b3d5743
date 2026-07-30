@@ -106,7 +106,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
               <span className="inline-block px-2.5 py-1 bg-[hsl(174_60%_40%)] text-white text-[11px] font-semibold uppercase rounded-[10px] mb-3">
                 {card.badge}
               </span>
-              <h4 className="text-[15px] font-semibold text-foreground mb-2">{card.title}</h4>
+              <h3 className="text-[15px] font-semibold text-foreground mb-2">{card.title}</h3>
               <p className="text-foreground/80 text-[13px] leading-relaxed">{card.body}</p>
             </div>
           ))}
@@ -125,7 +125,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
         <div className="mb-12 p-8 bg-gradient-to-br from-primary/10 via-emerald-500/5 to-teal-500/10 rounded-2xl border-2 border-primary/30 shadow-lg shadow-primary/5">
           <div className="text-center mb-5">
             <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-semibold rounded-full mb-2">📚 Quick Navigation</span>
-            <h4 className="text-lg font-display font-bold text-foreground">Jump to SEO Topic</h4>
+            <h3 className="text-lg font-display font-bold text-foreground">Jump to SEO Topic</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
             {[
@@ -164,7 +164,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                   <div className="p-5">
                     <div className="flex items-center gap-2 mb-3">
                       <CatIcon className="w-5 h-5 text-primary" />
-                      <h5 className="font-bold text-foreground">{cat.label}</h5>
+                      <h4 className="font-bold text-foreground">{cat.label}</h4>
                     </div>
                     <ul className="space-y-1.5 mb-3">
                       {cat.keywords.map((kw, i) => (
@@ -289,7 +289,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
           <GlowCard className="p-6">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h5 className="font-bold text-foreground mb-3">GBP Optimization</h5>
+                <h4 className="font-bold text-foreground mb-3">GBP Optimization</h4>
                 <ul className="space-y-2">
                   {[
                     "Full Google Business Profile audit and optimization",
@@ -305,7 +305,7 @@ export const SeoSection = ({ config, strategySessionUrl }: SeoSectionProps) => {
                 </ul>
               </div>
               <div>
-                <h5 className="font-bold text-foreground mb-3">Citation & Local Authority</h5>
+                <h4 className="font-bold text-foreground mb-3">Citation & Local Authority</h4>
                 <ul className="space-y-2">
                   {[
                     "Local citation building across 50+ directories",

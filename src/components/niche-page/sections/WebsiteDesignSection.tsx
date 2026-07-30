@@ -29,9 +29,9 @@ export const WebsiteDesignSection = ({ config, strategySessionUrl }: WebsiteDesi
             />
           </div>
           <div>
-            <h4 className="text-xl font-display font-bold text-foreground mb-4">
+            <h3 className="text-xl font-display font-bold text-foreground mb-4">
               {config.websiteDesignFeatureHeadline}
-            </h4>
+            </h3>
             <p className="text-muted-foreground mb-6">{config.websiteDesignFeatureBody}</p>
             <ul className="space-y-3">
               {config.websiteDesignBullets.map((feature, i) => (
