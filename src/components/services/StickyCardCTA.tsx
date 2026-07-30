@@ -133,7 +133,7 @@ export const StickyCardCTA = ({
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-3 leading-tight bg-gradient-heading bg-clip-text text-transparent">
                 {title}
-              </h2>
+              </h3>
               <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-xl">
                 {description}
               </p>

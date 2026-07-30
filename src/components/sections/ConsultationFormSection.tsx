@@ -89,7 +89,7 @@ export const ConsultationFormSection = ({
               <p className="text-primary font-medium mb-3 text-sm">{eyebrowOverride ?? "Ready to Talk?"}</p>
               <h3 className={`text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4 bg-clip-text text-transparent ${headingGradientClass ?? "bg-gradient-heading text-white"}`}>
                 {headingOverride ?? "Get a Consultation"}
-              </h2>
+              </h3>
               <p className="text-white/80 text-lg">
                 {descriptionOverride ?? "Tell us a little about your business and what kind of growth support you need. We will review your inquiry and follow up with the next best step."}
               </p>
