@@ -19,6 +19,8 @@ export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
       <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5" />
       <div className="container mx-auto px-4 relative z-10">
         <SectionHeader
+          as={config.flattenHeadings ? "h3" : "h2"}
+          styleAs="h2"
           subtitle="Organic Social"
           title={config.socialMediaHeadline}
           titleHighlight={config.socialMediaHighlight}

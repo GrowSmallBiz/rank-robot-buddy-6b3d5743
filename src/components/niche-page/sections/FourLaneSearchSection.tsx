@@ -34,6 +34,8 @@ export const FourLaneSearchSection = ({ config }: FourLaneSearchSectionProps) =>
         )}
 
         <SectionHeader
+          as={config.flattenHeadings ? "h3" : "h2"}
+          styleAs="h2"
           title={config.fourLaneHeadline || "Four-Lane Search Dominance"}
           titleHighlight={config.fourLaneHighlight}
           description={config.fourLaneSubheadline}

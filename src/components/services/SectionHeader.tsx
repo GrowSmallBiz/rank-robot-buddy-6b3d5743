@@ -10,6 +10,9 @@ interface SectionHeaderProps {
   children?: ReactNode;
   /** Heading level - defaults to h2, use h3 for sub-sections */
   as?: "h2" | "h3";
+  /** Visual size of the heading. Defaults to match `as`; set to "h2" to demote the
+   *  semantic level without changing how the heading looks. */
+  styleAs?: "h2" | "h3";
 }
 
 export const SectionHeader = ({
@@ -21,12 +24,14 @@ export const SectionHeader = ({
   className = "",
   children,
   as: HeadingTag = "h2",
+  styleAs,
 }: SectionHeaderProps) => {
+  const visualLevel = styleAs ?? HeadingTag;
   const baseHeadingClass =
-    HeadingTag === "h3"
+    visualLevel === "h3"
       ? "text-2xl md:text-3xl font-display font-bold text-foreground"
       : "section-title";
-  const headingClass = HeadingTag === "h3"
+  const headingClass = visualLevel === "h3"
     ? baseHeadingClass
     : `${baseHeadingClass} bg-gradient-heading bg-clip-text text-transparent`;
   const headingText = titleHighlight ? `${title} ${titleHighlight}` : title;

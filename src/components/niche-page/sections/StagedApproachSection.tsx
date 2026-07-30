@@ -30,6 +30,8 @@ export const StagedApproachSection = ({ config }: StagedApproachSectionProps) =>
         )}
 
         <SectionHeader
+          as={config.flattenHeadings ? "h3" : "h2"}
+          styleAs="h2"
           title={config.stagedApproachHeadline || "Our Staged Approach"}
           titleHighlight={config.stagedApproachHighlight}
           description={config.stagedApproachSubheadline}
