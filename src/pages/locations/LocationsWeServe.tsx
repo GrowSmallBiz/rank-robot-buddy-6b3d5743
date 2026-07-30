@@ -332,7 +332,7 @@ const LocationsWeServe = () => {
 
               {/* San Francisco */}
               <div className="mb-12 p-8 rounded-2xl bg-card border border-border">
-                <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
+                <h4 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
                   <Globe className="w-6 h-6 text-primary" />
                   San Francisco: Tech and Professional Services Hub
                 </h3>
@@ -366,7 +366,7 @@ const LocationsWeServe = () => {
 
               {/* San Jose */}
               <div className="mb-12 p-8 rounded-2xl bg-card border border-border">
-                <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
+                <h4 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
                   <Building2 className="w-6 h-6 text-primary" />
                   San Jose: Focus on Healthcare and Tech Startups
                 </h3>
@@ -400,7 +400,7 @@ const LocationsWeServe = () => {
 
               {/* Oakland */}
               <div className="mb-12 p-8 rounded-2xl bg-card border border-border">
-                <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
+                <h4 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
                   <Users className="w-6 h-6 text-primary" />
                   Oakland: Diverse Market with Growing Restaurant Scene
                 </h3>
@@ -434,7 +434,7 @@ const LocationsWeServe = () => {
 
               {/* Fremont */}
               <div className="mb-12 p-8 rounded-2xl bg-card border border-border">
-                <h3 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
+                <h4 className="text-2xl font-display font-bold text-foreground mb-6 flex items-center gap-3">
                   <MapPin className="w-6 h-6 text-primary" />
                   Fremont: Residential and Professional Services Focus
                 </h3>
