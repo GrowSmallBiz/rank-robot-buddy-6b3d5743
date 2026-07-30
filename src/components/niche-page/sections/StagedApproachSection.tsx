@@ -35,7 +35,6 @@ export const StagedApproachSection = ({ config }: StagedApproachSectionProps) =>
           title={config.stagedApproachHeadline || "Our Staged Approach"}
           titleHighlight={config.stagedApproachHighlight}
           description={config.stagedApproachSubheadline}
-          as="h2"
         />
 
         <div className="grid md:grid-cols-3 gap-8 mt-12">
