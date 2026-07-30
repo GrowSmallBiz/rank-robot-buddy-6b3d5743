@@ -635,13 +635,13 @@ const PaidMedia = () => {
                 <h3 className="text-lg font-display font-semibold text-foreground text-center mb-6 animate-fade-up">Pay-Per-Click vs Pay-Per-Lead</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
-                    <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Click</h5>
+                    <h4 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Click</h4>
                     <p className="text-xs text-muted-foreground leading-relaxed">
                       With PPC, you pay for the click and control the landing page, targeting, messaging, and conversion path. This usually gives you more flexibility and better optimization potential when the campaign structure is strong.
                     </p>
                   </div>
                   <div className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: "0.05s" }}>
-                    <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Lead</h5>
+                    <h4 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Lead</h4>
                     <p className="text-xs text-muted-foreground leading-relaxed">
                       With pay-per-lead, you pay when a lead comes through rather than for every click. This model is most commonly associated with Local Service Ads. For eligible businesses, it can work well when lead quality is strong and the category is a good fit.
                     </p>
