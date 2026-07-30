@@ -25,6 +25,8 @@ import aiReceptionistImage from "@/assets/industries/landscape-construction-hard
 import aiWebsiteLivechatImage from "@/assets/industries/landscape-construction-hardscaping/ai-website-livechat.webp";
 
 export const landscapeConstructionHardscapingConfig: NicheConfig = {
+  // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
+  flattenHeadings: true,
   // ── PAGE META ──
   pageTitle: "Landscape Construction & Hardscaping Contractor Marketing | GrowSmallBiz",
   ogTitle: "AI-Powered Growth for Landscape Construction & Hardscaping Contractors",

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { baseContactCTA } from "@/config/contactCTA";
 import type { NicheConfig } from "../NicheConfig";
@@ -37,32 +36,24 @@ export const FaqSection = ({ config }: FaqSectionProps) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           <div className="lg:col-span-2">
-            <Tabs defaultValue={config.faqCategories[0]?.id} className="w-full">
-              <TabsList className="w-full flex flex-wrap justify-start gap-2 bg-transparent h-auto mb-8 p-0">
-                {config.faqCategories.map((category) => {
-                  const IconComponent = category.icon;
-                  const colors = colorStyles[category.color] || colorStyles.emerald;
-                  return (
-                    <TabsTrigger
-                      key={category.id}
-                      value={category.id}
-                      className="flex items-center gap-2 px-4 py-2.5 rounded-full transition-all duration-300"
-                      style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', borderWidth: '1px', borderStyle: 'solid', borderColor: colors.border, color: colors.text }}
-                    >
-                      <IconComponent className="w-4 h-4" />
-                      <span className="text-sm font-medium">{category.label}</span>
-                    </TabsTrigger>
-                  );
-                })}
-              </TabsList>
+            {config.faqCategories.map((category) => {
+              const IconComponent = category.icon;
+              const colors = colorStyles[category.color] || colorStyles.emerald;
+              return (
+                <div key={category.id} id={`faq-${category.id}`} className="mb-10 last:mb-0 scroll-mt-24">
+                  <div
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full mb-5"
+                    style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', borderWidth: '1px', borderStyle: 'solid', borderColor: colors.border, color: colors.text }}
+                  >
+                    <IconComponent className="w-4 h-4" />
+                    <span className="text-sm font-medium">{category.label}</span>
+                  </div>
 
-              {config.faqCategories.map((category) => (
-                <TabsContent key={category.id} value={category.id} className="mt-0">
                   <Accordion type="single" collapsible className="space-y-4">
                     {category.faqs.map((faq, index) => (
                       <AccordionItem
                         key={index}
-                        value={`item-${index}`}
+                        value={`${category.id}-item-${index}`}
                         className="bg-black border rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                         style={{ animationDelay: `${index * 0.05}s`, borderColor: '#ff7f50ff' }}
                       >
@@ -75,9 +66,9 @@ export const FaqSection = ({ config }: FaqSectionProps) => {
                       </AccordionItem>
                     ))}
                   </Accordion>
-                </TabsContent>
-              ))}
-            </Tabs>
+                </div>
+              );
+            })}
           </div>
 
           {/* Sidebar CTA */}
