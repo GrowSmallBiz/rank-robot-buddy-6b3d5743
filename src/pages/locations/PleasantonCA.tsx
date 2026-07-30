@@ -156,22 +156,22 @@ const PleasantonCA = () => {
 
             <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="feature-card-teal p-6 rounded-2xl">
-                <h4 className="text-lg font-bold text-foreground mb-3">A Tale of Two ZIP Codes</h4>
+                <h3 className="text-lg font-bold text-foreground mb-3">A Tale of Two ZIP Codes</h3>
                 <p className="text-muted-foreground text-base leading-relaxed">The 94566 ZIP covers historic Downtown Main Street — one of the most charming and commercially active small-town downtowns in the East Bay — along with established residential neighborhoods, the Alameda County Fairgrounds, and a rooted community of long-time Pleasanton homeowners. The 94588 ZIP covers Hacienda Business Park and newer I-580 corridor developments. These two populations have different schedules, different search behaviors, different peak hours, and different decision drivers. Businesses serving both need local SEO strategies that reflect these behavioral differences rather than treating Pleasanton as a single unified market.</p>
               </div>
               <div className="feature-card-teal p-6 rounded-2xl">
-                <h4 className="text-lg font-bold text-foreground mb-3">The Hacienda Business Park B2B Opportunity</h4>
+                <h3 className="text-lg font-bold text-foreground mb-3">The Hacienda Business Park B2B Opportunity</h3>
                 <p className="text-muted-foreground text-base leading-relaxed">Hacienda Business Park hosts headquarters or major offices of Workday, Oracle, Ross Stores, and others — creating a daytime population of tens of thousands in the 94588 ZIP code. This workforce generates consistent local search behavior during business hours: lunch restaurants, auto service, healthcare, and professional services. Businesses optimized for 'near Hacienda Business Park' queries capture a consistent daytime audience that standard residential SEO strategies entirely miss. For GrowSmallBiz clients serving both residential and commercial accounts — HVAC contractors, cleaning services, electricians, plumbers — Pleasanton's dual-market structure requires campaigns built to capture both homeowner intent searches and business-hour commercial searches.</p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="feature-card-teal p-6 rounded-2xl">
-                <h4 className="text-lg font-bold text-foreground mb-3">BART Commuter Mobile Search Behavior</h4>
+                <h3 className="text-lg font-bold text-foreground mb-3">BART Commuter Mobile Search Behavior</h3>
                 <p className="text-muted-foreground text-base leading-relaxed">The Dublin/Pleasanton BART station — physically located in Dublin — is the primary transit gateway for Pleasanton commuters. Many service searches originate on mobile devices during BART commutes, making Google Maps visibility and click-to-call optimization critical for businesses targeting Pleasanton's professional commuter population. Desktop-first website design is a conversion disadvantage for this segment.</p>
               </div>
               <div className="feature-card-teal p-6 rounded-2xl">
-                <h4 className="text-lg font-bold text-foreground mb-3">The SAB Opportunity — Ranking Without a Pleasanton Address</h4>
+                <h3 className="text-lg font-bold text-foreground mb-3">The SAB Opportunity — Ranking Without a Pleasanton Address</h3>
                 <p className="text-muted-foreground text-base leading-relaxed">Service area businesses without a physical Pleasanton location regularly rank in Pleasanton's map pack by configuring their Google Business Profile service area correctly, building geo-targeted landing pages for Pleasanton-specific queries, and developing citations in Alameda County directories.</p>
               </div>
             </div>
@@ -258,7 +258,7 @@ const PleasantonCA = () => {
               { service: "AI Receptionist & Lead Automation", whatWeDo: "24/7 missed-call SMS follow-up, AI QuadBots, SMART nurture sequences, VIP Club, CRM integration", impact: "Capture every lead the moment it arrives — each missed call is a missed paycheck" },
             ].map((row, i) => (
               <div key={i} className="feature-card-teal p-5 rounded-2xl">
-                <h4 className="text-foreground font-bold mb-2">{row.service}</h4>
+                <h3 className="text-foreground font-bold mb-2">{row.service}</h3>
                 <p className="text-muted-foreground text-sm mb-2"><strong className="text-foreground/80">What We Do:</strong> {row.whatWeDo}</p>
                 <p className="text-muted-foreground text-sm"><strong className="text-foreground/80">Pleasanton Impact:</strong> {row.impact}</p>
               </div>

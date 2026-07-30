@@ -238,9 +238,9 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Search className="w-4 h-4" /> LOCAL SEO
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Get Found First When Walnut Creek Customers Search for Your Services — Local SEO & Google Maps Domination
-            </h2>
+            </h3>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
@@ -269,9 +269,9 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Target className="w-4 h-4" /> GOOGLE ADS
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Need Leads This Week, Not This Quarter? Google Ads That Deliver Walnut Creek Customers on Day One.
-            </h2>
+            </h3>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
@@ -299,9 +299,9 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Shield className="w-4 h-4" /> GOOGLE LSA
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Show Up Above Every Competitor With a Google Trust Badge — More Walnut Creek Leads, Pre-Qualified Before They Call
-            </h2>
+            </h3>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
@@ -328,9 +328,9 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Users className="w-4 h-4" /> SOCIAL MEDIA
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Reach Walnut Creek Homeowners Before They Need You — And Be the First Call When They Do
-            </h2>
+            </h3>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
@@ -358,9 +358,9 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Star className="w-4 h-4" /> REPUTATION
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               A 3-Star Rating Is Silently Killing Your Walnut Creek Business. Here's How We Fix It in 90 Days.
-            </h2>
+            </h3>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
@@ -391,9 +391,9 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Globe className="w-4 h-4" /> WEBSITE DESIGN
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Your Website Should Be Your Best Salesperson. If It's Not Generating Walnut Creek Leads Daily, It's Costing You Money.
-            </h2>
+            </h3>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
@@ -429,9 +429,9 @@ const WalnutCreekCA = () => {
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
               <Zap className="w-4 h-4" /> AI AUTOMATION
             </span>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground bg-gradient-heading bg-clip-text text-transparent">
               Every Missed Call Is a Lost Job. Our AI Receptionist Follows Up in Seconds.
-            </h2>
+            </h3>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
             <div className="bg-card/50 border border-border/60 rounded-xl p-6 md:p-8">
