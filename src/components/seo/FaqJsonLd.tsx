@@ -14,6 +14,13 @@ import { Head } from "vite-react-ssg";
 export interface FaqItem {
   question: string;
   answer: string;
+  /**
+   * Optional grouping label. Used only for rendering (an <h3> category
+   * heading above a set of <h4> questions). schema.org FAQPage has no
+   * category concept, so this field is intentionally omitted from the
+   * emitted JSON-LD — mainEntity stays a flat Question array.
+   */
+  category?: string;
 }
 
 interface FaqJsonLdProps {

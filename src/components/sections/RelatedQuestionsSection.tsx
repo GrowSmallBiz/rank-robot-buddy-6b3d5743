@@ -53,6 +53,28 @@ export const RelatedQuestionsSection = ({
 
   if (!items?.length) return null;
 
+  /**
+   * Group items by their optional `category` label (first-appearance order).
+   * With categories: H2 section title > H3 category > H4 question.
+   * Without: falls back to a single unlabelled group (questions stay H3).
+   */
+  const groups = (() => {
+    const ordered: { label?: string; items: { item: FaqItem; index: number }[] }[] = [];
+    const byLabel = new Map<string, { label?: string; items: { item: FaqItem; index: number }[] }>();
+    items.forEach((item, index) => {
+      const label = item.category;
+      const key = label ?? "__uncategorized__";
+      let bucket = byLabel.get(key);
+      if (!bucket) {
+        bucket = { label, items: [] };
+        byLabel.set(key, bucket);
+        ordered.push(bucket);
+      }
+      bucket.items.push({ item, index });
+    });
+    return ordered;
+  })();
+
   const baseId = id ?? `related-questions-${reactId.replace(/:/g, "")}`;
   const panelId = `${baseId}-panel`;
   const headingId = `${baseId}-heading`;
@@ -137,19 +159,31 @@ export const RelatedQuestionsSection = ({
             className="mt-4"
           >
             <Accordion type="single" collapsible className="space-y-3">
-              {items.map((item, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`related-${index}`}
-                  className="bg-black border border-coral rounded-xl px-6 transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
-                >
-                  <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-4 hover:no-underline">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
+              {groups.map((group, groupIndex) => (
+                <div key={group.label ?? groupIndex} className="space-y-3">
+                  {group.label && (
+                    <h3 className="text-base md:text-lg font-display font-semibold text-primary pt-6 first:pt-0">
+                      {group.label}
+                    </h3>
+                  )}
+                  {group.items.map(({ item, index }) => (
+                    <AccordionItem
+                      key={index}
+                      value={`related-${index}`}
+                      className="bg-black border border-coral rounded-xl px-6 transition-all hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
+                    >
+                      <AccordionTrigger
+                        headingLevel={group.label ? "h4" : undefined}
+                        className="text-left text-foreground hover:text-primary font-medium py-4 hover:no-underline"
+                      >
+                        {item.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                        {item.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </div>
               ))}
             </Accordion>
           </div>

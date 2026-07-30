@@ -16,9 +16,17 @@ AccordionItem.displayName = "AccordionItem";
 
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> & {
+    /**
+     * Heading element used for the Radix Accordion Header.
+     * Radix defaults to <h3>; pass "h4" when the accordion sits under an
+     * H3 category label so the document outline stays H2 > H3 > H4.
+     */
+    headingLevel?: "h2" | "h3" | "h4" | "h5" | "h6";
+  }
+>(({ className, children, headingLevel, ...props }, ref) => {
+  const Heading = headingLevel ?? "h3";
+  const trigger = (
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
@@ -30,8 +38,20 @@ const AccordionTrigger = React.forwardRef<
       {children}
       <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
     </AccordionPrimitive.Trigger>
-  </AccordionPrimitive.Header>
-));
+  );
+
+  if (!headingLevel) {
+    return (
+      <AccordionPrimitive.Header className="flex">{trigger}</AccordionPrimitive.Header>
+    );
+  }
+
+  return (
+    <AccordionPrimitive.Header asChild>
+      <Heading className="flex">{trigger}</Heading>
+    </AccordionPrimitive.Header>
+  );
+});
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 
 const AccordionContent = React.forwardRef<
