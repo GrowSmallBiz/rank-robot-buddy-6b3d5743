@@ -17,7 +17,9 @@ interface PainPointsSectionProps {
 }
 
 export const PainPointsSection = ({ config }: PainPointsSectionProps) => {
-  const H2 = config.flattenHeadings ? "h3" : "h2";
+  // Keep this as a top-level H2: it is the first major topical section on
+  // pages that don't render a transformation block above it.
+  const H2 = "h2";
   return (
     <section id="solutions" className="py-24 relative bg-slate-800/40 scroll-mt-24">
       <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-orange-500/5" />
