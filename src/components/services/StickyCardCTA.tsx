@@ -125,7 +125,7 @@ export const StickyCardCTA = ({
                   />
                 </div>
               </div>
-              <h4 className="mt-3 text-base font-display font-semibold text-foreground">{baseContactCTA.name}</h4>
+              <h3 className="mt-3 text-base font-display font-semibold text-foreground">{baseContactCTA.name}</h3>
               <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
             </div>
             
