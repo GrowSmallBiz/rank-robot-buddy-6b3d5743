@@ -328,7 +328,7 @@ const LSA = () => {
                 { title: "You Have No Idea What Your Cost Per Lead Actually Is.", desc: "Without proper LSA tracking and reporting, you cannot measure what is working, which service categories drive the most leads, or whether your budget is set correctly. You are flying blind — and that means you cannot grow with confidence." },
               ].map((item, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <h4 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h4>
+                  <h3 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -364,7 +364,7 @@ const LSA = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <card.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                  <h3 className="text-sm font-display font-semibold text-foreground">{card.title}</h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">{card.desc}</p>
                 </div>
               ))}
@@ -396,7 +396,7 @@ const LSA = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <svc.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h4 className="text-base font-display font-semibold text-foreground">{svc.title}</h4>
+                  <h3 className="text-base font-display font-semibold text-foreground">{svc.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{svc.desc}</p>
                 </div>
               ))}
@@ -430,7 +430,7 @@ const LSA = () => {
                     {i < 5 && <div className="w-px flex-1 bg-border mt-2" />}
                   </div>
                   <div className="pb-6">
-                    <h4 className="text-base font-display font-semibold text-foreground mb-2">Step {i + 1} — {step.title}</h4>
+                    <h3 className="text-base font-display font-semibold text-foreground mb-2">Step {i + 1} — {step.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
@@ -461,7 +461,7 @@ const LSA = () => {
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <ind.icon className="w-5 h-5 text-primary" />
                     </div>
-                    <h4 className="text-base font-display font-semibold text-foreground">{ind.title}</h4>
+                    <h3 className="text-base font-display font-semibold text-foreground">{ind.title}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">{ind.desc}</p>
                 </div>
@@ -494,7 +494,7 @@ const LSA = () => {
                     <item.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h4>
+                    <h3 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
@@ -516,7 +516,7 @@ const LSA = () => {
               Most local businesses are leaving the most valuable advertising real estate in Google search completely unoccupied — or running LSA campaigns that cost more than they should because no one is actively managing them. A free strategy call takes 30 minutes. You will walk away knowing exactly what your LSA opportunity looks like, what it will cost, and what results you can realistically expect in your market.
             </p>
             <div className="bg-card border border-border rounded-xl p-6 mb-8">
-              <h4 className="text-base font-display font-semibold text-foreground mb-4">What you get on the call:</h4>
+              <h3 className="text-base font-display font-semibold text-foreground mb-4">What you get on the call:</h3>
               <ul className="space-y-3">
                 {[
                   "A complete review of your current LSA presence (or a clean-slate plan if you have not started)",

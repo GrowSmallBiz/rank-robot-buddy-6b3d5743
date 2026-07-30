@@ -279,7 +279,7 @@ const FacebookAds = () => {
                 { title: "There's no one watching the numbers.", desc: "Facebook Ads require continuous optimization. Audience fatigue, creative burnout, budget pacing, and bidding strategy all need active management. Set-it-and-forget-it campaigns are money drains." },
               ].map((item, i) => (
                 <div key={i} className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <h4 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h4>
+                  <h3 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -339,7 +339,7 @@ const FacebookAds = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <card.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                  <h3 className="text-sm font-display font-semibold text-foreground">{card.title}</h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">{card.desc}</p>
                 </div>
               ))}
@@ -460,7 +460,7 @@ const FacebookAds = () => {
               ¹ WordStream by LocaliQ 2025 Facebook Ads Benchmarks. ² WordStream by LocaliQ 2025 Google Ads Benchmarks.
             </p>
             <div className="mt-8 max-w-3xl mx-auto rounded-xl border-l-4 border-primary bg-card/50 p-6 animate-fade-up">
-              <h4 className="text-lg font-display font-bold text-foreground mb-2">We manage both.</h4>
+              <h3 className="text-lg font-display font-bold text-foreground mb-2">We manage both.</h3>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 Most local service businesses get their best ROI by running Meta and{" "}
                 <Link to="/services/paid-advertising/google-ads/" className="text-primary underline hover:text-primary/80">Google</Link>{" "}
@@ -496,7 +496,7 @@ const FacebookAds = () => {
                     {i < 5 && <div className="w-px flex-1 bg-border mt-2" />}
                   </div>
                   <div className="pb-6">
-                    <h4 className="text-base font-display font-semibold text-foreground mb-2">Step {i + 1}: {step.title}</h4>
+                    <h3 className="text-base font-display font-semibold text-foreground mb-2">Step {i + 1}: {step.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
@@ -535,7 +535,7 @@ const FacebookAds = () => {
                       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                         <ind.icon className="w-5 h-5 text-primary" />
                       </div>
-                      <h4 className="text-base font-display font-semibold text-foreground">{ind.title}</h4>
+                      <h3 className="text-base font-display font-semibold text-foreground">{ind.title}</h3>
                     </div>
                     <p className="text-sm text-muted-foreground leading-relaxed">{ind.desc}</p>
                   </div>
@@ -560,7 +560,7 @@ const FacebookAds = () => {
                       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                         <ind.icon className="w-5 h-5 text-primary" />
                       </div>
-                      <h4 className="text-base font-display font-semibold text-foreground">{ind.title}</h4>
+                      <h3 className="text-base font-display font-semibold text-foreground">{ind.title}</h3>
                     </div>
                     <p className="text-sm text-muted-foreground leading-relaxed">{ind.desc}</p>
                   </div>
@@ -593,7 +593,7 @@ const FacebookAds = () => {
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <card.icon className="w-5 h-5 text-primary" />
                     </div>
-                    <h4 className="text-base font-display font-semibold text-foreground">{card.title}</h4>
+                    <h3 className="text-base font-display font-semibold text-foreground">{card.title}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
                 </div>
@@ -633,7 +633,7 @@ const FacebookAds = () => {
                   }
                   style={{ animationDelay: `${i * 0.05}s` }}
                 >
-                  <h4 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h4>
+                  <h3 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -726,7 +726,7 @@ const FacebookAds = () => {
               Your competitors are already running Facebook and Instagram Ads in your market. The question isn't whether to advertise on social media — it's whether your campaigns are built to win. Schedule a free strategy session and we'll show you exactly what a properly structured Facebook Ads campaign looks like for your business.
             </p>
             <div className="bg-background border border-border rounded-xl p-6 mb-8">
-              <h4 className="text-base font-display font-semibold text-foreground mb-4">What you'll get in the session:</h4>
+              <h3 className="text-base font-display font-semibold text-foreground mb-4">What you'll get in the session:</h3>
               <ul className="space-y-3">
                 {[
                   "A review of your current Facebook Ads account (or a blank-slate plan if you're starting fresh)",

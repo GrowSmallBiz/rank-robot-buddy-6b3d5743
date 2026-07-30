@@ -514,7 +514,7 @@ const GoogleAds = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <card.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                  <h3 className="text-sm font-display font-semibold text-foreground">{card.title}</h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">{card.desc}</p>
                 </div>
               ))}
@@ -566,7 +566,7 @@ const GoogleAds = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <svc.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h4 className="text-base font-display font-semibold text-foreground">{svc.title}</h4>
+                  <h3 className="text-base font-display font-semibold text-foreground">{svc.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{svc.desc}</p>
                   <ul className="space-y-2">
                     {svc.bullets.map((b, j) => (
@@ -607,9 +607,9 @@ const GoogleAds = () => {
                   <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mb-4">
                     <span className="text-sm font-bold text-primary">{i + 1}</span>
                   </div>
-                  <h4 className="text-base font-display font-semibold text-foreground mb-2">
+                  <h3 className="text-base font-display font-semibold text-foreground mb-2">
                     Step {i + 1} — {step.title}
-                  </h4>
+                  </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
                 </div>
               ))}
@@ -664,7 +664,7 @@ const GoogleAds = () => {
                 { title: "Transparent Reporting — Always", desc: "You will never wonder what your money is doing. Every client gets a multi-channel dashboard with real-time visibility into leads, spend, and performance — and a dedicated Account Manager who walks you through the numbers every month." },
               ].map((item, i) => (
                 <div key={i} className="bg-background border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: `${i * 0.05}s` }}>
-                  <h4 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h4>
+                  <h3 className="text-base font-display font-semibold text-foreground mb-2">{item.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
               ))}

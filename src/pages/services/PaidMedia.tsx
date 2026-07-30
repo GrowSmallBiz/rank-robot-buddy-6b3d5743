@@ -610,7 +610,7 @@ const PaidMedia = () => {
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <card.icon className="w-5 h-5 text-primary" />
                     </div>
-                    <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                    <h3 className="text-sm font-display font-semibold text-foreground">{card.title}</h3>
                     <p className="text-xs text-muted-foreground leading-relaxed">{card.body}</p>
                   </div>
                 ))}
@@ -618,13 +618,13 @@ const PaidMedia = () => {
 
               <div className="grid md:grid-cols-2 gap-6 mb-16">
                 <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
-                  <h4 className="text-base font-display font-semibold text-foreground mb-3">How Google PPC Works</h4>
+                  <h3 className="text-base font-display font-semibold text-foreground mb-3">How Google PPC Works</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Google Search Ads help you appear when people are actively searching for services like yours. You bid on relevant keywords, control where your ads appear, and send traffic to focused pages built to convert. This is usually the strongest fit when demand already exists and you want to capture it quickly.
                   </p>
                 </div>
                 <div className="bg-card border border-border rounded-xl p-6 animate-fade-up" style={{ animationDelay: "0.05s" }}>
-                  <h4 className="text-base font-display font-semibold text-foreground mb-3">How Meta Retargeting Works</h4>
+                  <h3 className="text-base font-display font-semibold text-foreground mb-3">How Meta Retargeting Works</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Most visitors do not contact a business the first time they land on a website. Meta retargeting helps you stay visible on Facebook and Instagram after they leave. That repeated exposure builds familiarity, supports trust, and brings warm prospects back when they are ready to act.
                   </p>
@@ -632,7 +632,7 @@ const PaidMedia = () => {
               </div>
 
               <div className="mb-4">
-                <h4 className="text-lg font-display font-semibold text-foreground text-center mb-6 animate-fade-up">Pay-Per-Click vs Pay-Per-Lead</h4>
+                <h3 className="text-lg font-display font-semibold text-foreground text-center mb-6 animate-fade-up">Pay-Per-Click vs Pay-Per-Lead</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-card border border-border rounded-xl p-6 animate-fade-up">
                     <h5 className="text-sm font-display font-semibold text-foreground mb-3">Pay-Per-Click</h5>
@@ -674,7 +674,7 @@ const PaidMedia = () => {
                     <div key={i} className="bg-background border border-border rounded-xl p-6 space-y-4 animate-fade-up flex flex-col" style={{ animationDelay: `${i * 0.05}s`, borderTopColor: card.borderColor, borderTopWidth: '3px' }}>
                       <div className="flex items-center gap-3">
                         {card.brandLogo}
-                        <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                        <h3 className="text-sm font-display font-semibold text-foreground">{card.title}</h3>
                       </div>
                       <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
                       <Button variant="outline" size="sm" asChild className="w-fit">
@@ -698,7 +698,7 @@ const PaidMedia = () => {
                       )}
                       <div className="flex items-center gap-3">
                         {card.brandLogo}
-                        <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                        <h3 className="text-sm font-display font-semibold text-foreground">{card.title}</h3>
                       </div>
                       <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
                     </div>
@@ -714,7 +714,7 @@ const PaidMedia = () => {
                       <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                         <card.icon className="w-5 h-5 text-primary" />
                       </div>
-                      <h4 className="text-sm font-display font-semibold text-foreground">{card.title}</h4>
+                      <h3 className="text-sm font-display font-semibold text-foreground">{card.title}</h3>
                       <p className="text-xs text-muted-foreground leading-relaxed flex-1">{card.description}</p>
                     </div>
                   ))}
@@ -887,7 +887,7 @@ const PaidMedia = () => {
                       <step.icon className="w-5 h-5 text-primary" />
                     </div>
                     <div className="text-xs font-bold text-primary uppercase tracking-wider">Step {i + 1}</div>
-                    <h4 className="text-base font-display font-semibold text-foreground">{step.label}</h4>
+                    <h3 className="text-base font-display font-semibold text-foreground">{step.label}</h3>
                     <p className="text-xs text-muted-foreground leading-relaxed">{step.description}</p>
                     {i < processSteps.length - 1 && (
                       <div className="hidden md:block absolute top-6 -right-2 text-border">
