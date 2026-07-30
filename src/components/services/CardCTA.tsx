@@ -18,6 +18,8 @@ interface CardCTAProps {
   accentWords?: string[];
   /** Whether to show the phone call button */
   showPhoneButton?: boolean;
+  /** Heading level for the CTA title. Defaults to h2; use "p" to keep it out of the heading outline. */
+  headingAs?: "h2" | "p";
 }
 
 export const CardCTA = ({
@@ -28,6 +30,7 @@ export const CardCTA = ({
   sectionClassName = "py-24 lg:py-32",
   accentWords = [],
   showPhoneButton = true,
+  headingAs: Heading = "h2",
 }: CardCTAProps) => {
   // Helper to render title with accent words highlighted
   const renderTitle = () => {
@@ -108,9 +111,9 @@ export const CardCTA = ({
               
               {/* Right: Content */}
               <div className="flex-1 text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-display font-bold mb-5 leading-tight bg-gradient-heading bg-clip-text text-transparent">
+                <Heading className="text-3xl md:text-4xl lg:text-[2.75rem] font-display font-bold mb-5 leading-tight bg-gradient-heading bg-clip-text text-transparent">
                   {title}
-                </h2>
+                </Heading>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
                   {description}
                 </p>
