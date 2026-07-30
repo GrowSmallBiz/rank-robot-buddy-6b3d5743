@@ -58,12 +58,14 @@ const MidPageCtaSlot = ({
       buttonHref={strategySessionUrl}
       accentWords={[]}
       sectionClassName="py-16"
+      headingAs={config.flattenHeadings ? "p" : "h2"}
     />
   );
 };
 
 const NichePage = ({ config }: NichePageProps) => {
   const { strategySessionUrl } = useUtm();
+  const ctaHeadingAs = config.flattenHeadings ? "p" : "h2";
 
   return (
     <div className="min-h-screen bg-background">
@@ -99,7 +101,7 @@ const NichePage = ({ config }: NichePageProps) => {
       <PainPointsSection config={config} />
 
       {/* 2b. Industry Stats (optional — after pain points, before system diagram) */}
-      <IndustryStatsSection data={config.industryStats} />
+      <IndustryStatsSection data={config.industryStats} headingAs={config.flattenHeadings ? "h3" : "h2"} />
 
       {/* 3. System Diagram */}
       <SystemDiagramSection config={config} />
@@ -109,6 +111,7 @@ const NichePage = ({ config }: NichePageProps) => {
         headline={config.ctaAfterPainPoints.headline}
         subtext={config.ctaAfterPainPoints.subtext}
         strategySessionUrl={strategySessionUrl}
+        headingAs={ctaHeadingAs}
       />
 
       {/* 4. On This Page Nav */}
@@ -137,6 +140,7 @@ const NichePage = ({ config }: NichePageProps) => {
         buttonHref={strategySessionUrl}
         accentWords={["Free", "SEO Visibility Audit"]}
         sectionClassName="py-16"
+        headingAs={ctaHeadingAs}
       />
 
       {/* 7. Paid Media */}
@@ -165,6 +169,7 @@ const NichePage = ({ config }: NichePageProps) => {
         buttonHref={strategySessionUrl}
         accentWords={config.stickyCtaConfig.accentWords}
         sectionClassName="py-16"
+        headingAs={ctaHeadingAs}
       />
 
 

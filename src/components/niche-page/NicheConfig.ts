@@ -311,6 +311,11 @@ export interface StickyCtaConfig {
 // ───────────────────────────── Main Config ─────────────────────────────
 
 export interface NicheConfig {
+  /** When true, flattens the heading hierarchy: only the first section of each
+   *  topical group keeps an <h2>; supporting sections and CTA headlines drop to
+   *  <h3>/<p>. Visual styling is unchanged. */
+  flattenHeadings?: boolean;
+
   // ── 4.1 Page Meta ──
   pageTitle: string;
   /** Optional Open Graph title override. Falls back to pageTitle when omitted. */

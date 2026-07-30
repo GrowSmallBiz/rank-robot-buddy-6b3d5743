@@ -21,6 +21,7 @@ interface AiGrowthSystemSectionProps {
 }
 
 export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) => {
+  const H2 = config.flattenHeadings ? "h3" : "h2";
   const widthClasses = ["w-full", "w-[94%]", "w-[88%]", "w-[82%]", "w-[76%]", "w-[70%]", "w-[64%]"];
 
   return (
@@ -37,9 +38,9 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
         {/* FIXED Funnel Visual */}
         <div className="mb-20">
           <div className="p-8 md:p-12 rounded-2xl shadow-[0_0_30px_rgba(255,127,80,0.6),0_0_60px_rgba(255,127,80,0.4)]" style={{ border: '2px solid rgb(255, 127, 80)', backgroundColor: 'rgba(25, 19, 33, 0.95)', backgroundImage: 'linear-gradient(to bottom right, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.9))' }}>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-4 relative z-10 bg-gradient-heading bg-clip-text text-transparent">
+            <H2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground text-center mb-4 relative z-10 bg-gradient-heading bg-clip-text text-transparent">
               Stop Juggling Hundreds of Disconnected Tools
-            </h2>
+            </H2>
             <p className="text-lg md:text-xl text-muted-foreground text-center mb-10 relative z-10">
               All the tools you need in one platform without having to <span className="text-primary font-semibold italic">"duct-tape"</span> multiple platforms together!
             </p>

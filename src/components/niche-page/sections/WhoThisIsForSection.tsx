@@ -9,6 +9,7 @@ interface WhoThisIsForSectionProps {
 }
 
 export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
+  const H2 = config.flattenHeadings ? "h3" : "h2";
   if (!config.strongFitItems || config.strongFitItems.length === 0) return null;
 
   return (
@@ -23,9 +24,9 @@ export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
         )}
         {config.whoThisIsForHeadline && (
           <div className="text-center mb-10 animate-fade-up">
-            <h2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
+            <H2 className="section-title bg-gradient-heading bg-clip-text text-transparent">
               {[config.whoThisIsForHeadline, config.whoThisIsForHighlight].filter(Boolean).join(" ")}
-            </h2>
+            </H2>
           </div>
         )}
 

@@ -2,9 +2,11 @@ import type { NicheConfig } from "../NicheConfig";
 
 interface Props {
   data: NicheConfig["industryStats"];
+  /** Heading level for the section title. Defaults to h2. */
+  headingAs?: "h2" | "h3";
 }
 
-export const IndustryStatsSection = ({ data }: Props) => {
+export const IndustryStatsSection = ({ data, headingAs: H2 = "h2" }: Props) => {
   if (!data) return null;
 
   const { headline, headlineHighlight, subheadline, items } = data;
@@ -16,9 +18,9 @@ export const IndustryStatsSection = ({ data }: Props) => {
     >
       <div className="container mx-auto px-4">
         {/* Headline */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-white bg-gradient-heading bg-clip-text text-transparent">
+        <H2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-white bg-gradient-heading bg-clip-text text-transparent">
           {headline} {headlineHighlight}
-        </h2>
+        </H2>
 
         {/* Subheadline */}
         <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-16 text-lg">

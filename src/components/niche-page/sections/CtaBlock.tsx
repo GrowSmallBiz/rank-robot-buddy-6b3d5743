@@ -7,9 +7,11 @@ interface CtaBlockProps {
   subtext: string;
   strategySessionUrl: string;
   showPhoneButton?: boolean;
+  /** Heading level for the CTA headline. Defaults to h2; use "p" to keep it out of the heading outline. */
+  headingAs?: "h2" | "p";
 }
 
-export const CtaBlock = ({ headline, subtext, strategySessionUrl, showPhoneButton = true }: CtaBlockProps) => {
+export const CtaBlock = ({ headline, subtext, strategySessionUrl, showPhoneButton = true, headingAs: Heading = "h2" }: CtaBlockProps) => {
   return (
     <section className="pt-8 pb-16">
     <div className="container mx-auto px-4">
@@ -32,9 +34,9 @@ export const CtaBlock = ({ headline, subtext, strategySessionUrl, showPhoneButto
 
           {/* Content */}
           <div className="flex-1 text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+            <Heading className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
               {headline}
-            </h2>
+            </Heading>
             <p className="text-xl text-muted-foreground mb-6">{subtext}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
               <Button variant="hero" size="xl" asChild>

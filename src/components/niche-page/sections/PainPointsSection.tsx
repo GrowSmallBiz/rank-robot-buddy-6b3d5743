@@ -17,15 +17,16 @@ interface PainPointsSectionProps {
 }
 
 export const PainPointsSection = ({ config }: PainPointsSectionProps) => {
+  const H2 = config.flattenHeadings ? "h3" : "h2";
   return (
     <section id="solutions" className="py-24 relative bg-slate-800/40 scroll-mt-24">
       <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-orange-500/5" />
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
+          <H2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 bg-gradient-heading bg-clip-text text-transparent">
             {[config.painPointsHeadline, config.painPointsHighlight].filter(Boolean).join(" ")}
-          </h2>
+          </H2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             {config.painPointsSubheadline}
           </p>
