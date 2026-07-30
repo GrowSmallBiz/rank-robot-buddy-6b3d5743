@@ -13,6 +13,8 @@ import chiroHeroImage from "@/assets/chiropractic/chiro-hero.webp";
 import portfolioChiroWebsite from "@/assets/chiropractic/portfolio-chiro-website.webp";
 
 export const chiropracticConfig: NicheConfig = {
+  // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
+  flattenHeadings: true,
   // ── Page Meta ──
   pageTitle: "Chiropractor Marketing: AI SEO, Ads & Growth | GrowSmallBiz",
   ogTitle: "AI-Driven Growth for Chiropractic Clinics | GrowSmallBiz",

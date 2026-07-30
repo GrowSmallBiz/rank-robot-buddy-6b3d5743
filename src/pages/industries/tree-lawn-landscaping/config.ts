@@ -24,6 +24,8 @@ import aiReceptionistMulticall from "@/assets/tree-lawn-landscaping/ai-reception
 import aiWebsiteLivechat from "@/assets/tree-lawn-landscaping/ai-website-livechat.webp";
 
 export const treeLawnLandscapingConfig: NicheConfig = {
+  // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
+  flattenHeadings: true,
  // ══════════════════════════════════════════════════════════════════════
  // 4.1 PAGE META
  // ══════════════════════════════════════════════════════════════════════

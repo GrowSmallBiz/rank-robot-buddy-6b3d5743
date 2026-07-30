@@ -26,6 +26,8 @@ import adCreativeWeddingClean from "@/assets/ad-creative-wedding-clean.webp";
 import adCreativeHeadshotPro from "@/assets/ad-creative-headshot-professional.webp";
 
 export const photographersConfig: NicheConfig = {
+  // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
+  flattenHeadings: true,
   // ── Page Meta ──
   pageTitle: "Photography Marketing & SEO Services | GrowSmallBiz",
   ogTitle: "AI-Driven Growth for Local Service Businesses",

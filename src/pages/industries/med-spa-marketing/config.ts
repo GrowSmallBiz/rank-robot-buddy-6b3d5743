@@ -13,6 +13,8 @@ import medSpaHeroImage from "@/assets/industry-medspa-hero-v2.jpg";
 import portfolioMedSpaWebsite from "@/assets/portfolio-medspa-website.webp";
 
 export const medSpaConfig: NicheConfig = {
+  // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
+  flattenHeadings: true,
   // ── Page Meta ──
   pageTitle: "Med Spa Marketing: AI-Powered Client Acquisition | GrowSmallBiz",
   ogTitle: "Boost Med Spa Growth with AI-Driven Marketing Solutions",
