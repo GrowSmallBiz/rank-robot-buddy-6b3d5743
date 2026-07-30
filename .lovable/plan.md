@@ -1,82 +1,53 @@
-# Redesign: "AI Livechat" Section → "While You're With a Client, AI Handles the Rest"
+## Landscape Page SEO Structure — To-Do
 
-## Goal
-Replace the current single-chat demo with a split, parallel-scenario visual that shows:
-- **Center stage**: A massage therapist actively in a session (calm, "do not disturb" framing).
-- **Left panel**: Voice AI answering an incoming call and booking an appointment.
-- **Right panel**: Website Live Chat answering a visitor question and booking an appointment.
+Three approved items, plus the revised heading outline. No code changes until you approve this plan.
 
-Both AI panels animate in parallel so the user sees two leads being captured **at the same moment** the therapist can't pick up.
+### 1. Remove FAQ category tabs
+Show all 18 Q&A in one continuous accordion so every answer is visible by default (no `hidden` tab panes). Keep the existing `FAQPage` JSON-LD untouched.
 
-## Scope
-Only the section currently at `src/pages/MothersDayCohort.tsx` lines 937–954 (the `<AiLivechatDemo />` block) and the `AiLivechatDemo` component. Nothing else on the page changes.
+- File: `src/components/niche-page/sections/FaqSection.tsx`
+- Drop the Radix `Tabs` wrapper; render categories as labelled groups in a single column.
+- Optional: keep the first accordion item open, rest collapsed (accordion content stays in the DOM and visible on expand).
 
-## New copy
+### 2. Fix the duplicate H1
+The `<noscript>` fallback in `index.html` outputs a second, sitewide, off-topic H1.
 
-- Eyebrow: `AI That Works While You Work`
-- Headline: `While You're With a Client, AI Answers Every Call and Chat`
-- Subhead: `You can't pause a massage to grab the phone or reply to a website visitor. Your Voice AI and Website Live Chat handle both — answering questions, qualifying leads, and booking appointments — so no opportunity slips by while you're in session.`
+- File: `index.html`
+- Demote `GrowSmallBiz Digital Marketing — AI-Powered SEO & Marketing Services` from `<h1>` to `<p>`.
+- Result: exactly one H1 per page (the Otto-optimized one).
 
-## Layout (desktop)
+### 3. Flatten the heading hierarchy
+Cut ~26 H2s down to 5–6 topical pillars; everything else becomes H3/H4 or plain text. Visual styling stays identical — only the tag level changes.
+
+Target outline:
 
 ```text
-┌────────────────────────────────────────────────────────────────┐
-│  [Eyebrow] [Headline] [Subhead]                                │
-├──────────────┬───────────────────────────┬─────────────────────┤
-│  VOICE AI    │   THERAPIST IN SESSION    │   WEBSITE CHAT      │
-│  (call UI)   │   (image + status badge)  │   (chat UI)         │
-│              │   "In session • Do not    │                     │
-│  Incoming    │    disturb"               │   Visitor typing    │
-│  call → AI   │   Soft pulse ring         │   → AI replies      │
-│  picks up    │                           │                     │
-│  → books     │                           │   → books           │
-│  appointment │                           │   appointment       │
-│              │                           │                     │
-│  ✓ Booked    │                           │   ✓ Booked          │
-└──────────────┴───────────────────────────┴─────────────────────┘
-        ↑ both panels animate in parallel, looping
+H1  High-Ticket Marketing for Landscape Construction & Hardscape Contractors
+H2  Why Landscape & Hardscape Contractors Struggle to Scale
+    H3  pain points, hero-extended cards, industry stats (stats become <p>)
+H2  Services We Market for Landscape & Hardscape Contractors
+    H3  the 6 service cards
+H2  The Marketing Channels That Drive Six-Figure Projects
+    H3  Website Design   H3  SEO   H3  Paid Media
+    H3  Retargeting      H3  Social Media
+H2  AI Automation & Client Retention
+    H3  AI Growth System   H3  Reputation
+    H3  AI Voice Receptionist   H3  Website Live AI Chat
+H2  How It Works & Who It's For
+    H3  process steps   H3  qualification criteria
+H2  Frequently Asked Questions
+    H3  each question (kept, since tabs are being removed)
+H2  Why Choose GrowSmallBiz
 ```
 
-Mobile: stacks vertically — Voice AI → Therapist image → Website Chat.
+CTA block headlines (`Ready to…`) drop from H2 to `<p>`/`<strong>` with identical styling.
 
-## Animation behavior
+### Technical notes
+- Heading levels are driven by shared niche-page section components, so each section gets an optional `headingLevel` prop (default unchanged) to avoid affecting other verticals (dental, roofing, etc.).
+- Files touched: `HeroSection.tsx`, `PainPointsSection.tsx`, `IndustryStatsSection.tsx`, `WebsiteDesignSection.tsx`, `SeoSection.tsx`, `PaidMediaSection.tsx`, `RetargetingSection.tsx`, `SocialMediaSection.tsx`, `AiGrowthSystemSection.tsx`, `ReputationSection.tsx`, `AiVoiceChatSection.tsx`, `HowItWorksSection.tsx`, `WhoThisIsForSection.tsx`, `FaqSection.tsx`, CTA components, plus the landscape `config.ts` for the new grouping headings.
+- No design-token, color, or layout changes.
+- After the edits: run the prerender verification script and re-check the rendered heading tree.
 
-Single shared timeline driven by `IntersectionObserver`, respects `prefers-reduced-motion`:
-
-1. Both panels reset.
-2. Therapist card shows "In session" pulse from t=0.
-3. **Left (Voice AI)** plays a 4-line transcript with typing dots:
-   - Caller: "Hi, do you have anything Saturday?"
-   - AI: "Yes — I have 1pm and 3pm open. May I get your name and number?"
-   - Caller: "Maya — 925-555-0118"
-   - AI: "Booked for 1pm Saturday. Confirmation text sent."
-   - Ends with badge: `✓ Appointment booked` + `✓ Added to CRM`.
-4. **Right (Website Chat)** plays a 4-line transcript in parallel (offset ~600ms):
-   - Visitor: "Do you offer prenatal massage?"
-   - AI: "Yes! 60 and 90-minute prenatal sessions available. Want me to book one?"
-   - Visitor: "Saturday afternoon if possible"
-   - AI: "Booking link sent. 2pm Saturday is open — tap to confirm."
-   - Ends with badge: `✓ Lead captured` + `✓ Booking link sent`.
-5. Hold ~3s, loop.
-
-Reduced motion: render final state (both transcripts complete, both badges visible) with no animation.
-
-## Visuals
-
-- **Voice AI panel**: phone-call card UI — avatar with `Phone` icon, "Incoming call" → "On call 0:24" timer, transcript bubbles styled distinctly from chat (caller bubbles right-aligned, AI left-aligned, slightly different tint to read as "voice transcript" vs chat).
-- **Therapist center card**: existing massage/spa imagery if available in `src/assets`; otherwise generate a warm, on-brand image (`src/assets/cohort/therapist-in-session.webp`) — soft lighting, hands on shoulder, no faces required, premium spa aesthetic. Overlay a small status chip: `● In session — Do not disturb`.
-- **Website Chat panel**: reuses current chat aesthetic from `AiLivechatDemo` (kept as the right column treatment).
-- All cards: `rounded-3xl`, `border-border`, soft warm shadow consistent with existing section.
-
-## Technical implementation
-
-- Rename/replace `src/components/sections/AiLivechatDemo.tsx` with a new `AiBusyMomDemo.tsx` (keep old file deleted) exporting `AiBusyMomDemo`. Update the import + usage in `MothersDayCohort.tsx`.
-- Internally, factor two small subcomponents: `<VoiceCallPanel script={...} />` and `<ChatPanel script={...} />`, plus `<TherapistCard />`. Single parent owns the timeline so both panels stay in sync.
-- Generate one new image asset: `src/assets/cohort/therapist-in-session.webp` (premium quality, transparent_background false, ~1024×1024). Imported as ES6.
-- Use semantic Tailwind tokens only (`bg-card`, `text-foreground`, `text-primary`, `border-border`, `text-muted-foreground`). No hardcoded colors except the existing brand gradient already used in eyebrow/headline.
-- Section copy update inline in `MothersDayCohort.tsx` (eyebrow / h2 / subhead text only).
-
-## Out of scope
-- Pricing section, nav, other sections.
-- No new data, routes, or backend.
-- No CTA changes.
+### Out of scope (flagged separately)
+- Shortening the 73-char meta title — needs your call on the new wording, or an Otto title rule.
+- The route-delivery check on `growsmallbiz.io` (SPA fallback vs. per-route prerendered HTML) — Cloudflare-side, not a code change.
