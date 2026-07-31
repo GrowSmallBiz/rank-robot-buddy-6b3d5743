@@ -1051,6 +1051,10 @@ export const paintingCompaniesConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // CONTACT SECTION
   // ══════════════════════════════════════════════════════════════════════
+  seoContentAuthorityStatement: "We Don't Publish Bulk AI Blogs. We Build Painting Contractor Authority.",
+  seoAiVisibilityHeading: "We Get Your Painting Company Recommended by AI Search Engines",
+  seasonalCampaignsHeading: "We Automate for Your Painting Company",
+  reputationInnerH3: "We Handle Your Painting Company Reputation",
   contactSectionHeadline: "Ready to Grow Your Painting Business?",
   contactSectionBody: "Schedule a strategy call to discuss your marketing goals, service area, and what a seasonal campaign calendar looks like for your specific market.",
 };
