@@ -34,6 +34,7 @@ import { CoreServicesSection } from "./sections/CoreServicesSection";
 import { StagedApproachSection } from "./sections/StagedApproachSection";
 import { FourLaneSearchSection } from "./sections/FourLaneSearchSection";
 import { FaqSection } from "./sections/FaqSection";
+import { SectionGroupHeading } from "./sections/SectionGroupHeading";
 
 interface NichePageProps {
   config: NicheConfig;
