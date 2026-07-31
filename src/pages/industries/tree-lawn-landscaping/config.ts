@@ -25,7 +25,14 @@ import aiWebsiteLivechat from "@/assets/tree-lawn-landscaping/ai-website-livecha
 
 export const treeLawnLandscapingConfig: NicheConfig = {
   // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
-  flattenHeadings: true,
+ flattenHeadings: true,
+ deepNesting: true,
+ sectionGroupHeadings: {
+   seo: "SEO & AI Search Visibility for Tree Service Companies",
+   social: "Social Media & Retargeting for Tree Removal Contractors",
+   aiAutomation: "AI Automation & Reputation for Landscape Maintenance Companies",
+   howItWorks: "How We Work With Tree Service Contractors — And Who It's For",
+ },
  // ══════════════════════════════════════════════════════════════════════
  // 4.1 PAGE META
  // ══════════════════════════════════════════════════════════════════════
