@@ -208,7 +208,7 @@ const NichePage = ({ config }: NichePageProps) => {
 
       {/* Case Study Links (if configured) */}
       {config.caseStudyLinks && config.caseStudyLinks.length > 0 && (
-        <CaseStudyLinksSection links={config.caseStudyLinks} />
+        <CaseStudyLinksSection links={config.caseStudyLinks} headingLevel={config.deepNesting ? "h3" : "h2"} />
       )}
 
       {/* G. Real Results (optional — after case study links, before FAQ) */}
