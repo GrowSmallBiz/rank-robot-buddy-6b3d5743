@@ -46,7 +46,7 @@ export const FaqSection = ({ config }: FaqSectionProps) => {
                     style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', borderWidth: '1px', borderStyle: 'solid', borderColor: colors.border, color: colors.text }}
                   >
                     <IconComponent className="w-4 h-4" />
-                    <span className="text-sm font-medium">{category.label}</span>
+                    <h3 className="text-sm font-medium">{category.label}</h3>
                   </div>
 
                   <Accordion type="single" collapsible className="space-y-4">
