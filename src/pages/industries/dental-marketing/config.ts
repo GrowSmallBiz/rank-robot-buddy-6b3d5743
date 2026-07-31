@@ -13,8 +13,8 @@ import dentalHeroImage from "@/assets/industry-dental-hero.webp";
 import portfolioDentalWebsite from "@/assets/portfolio-dental-website.webp";
 
 export const dentalConfig: NicheConfig = {
-  // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
-  flattenHeadings: true,
+  // Nest item-level headings under keyword-rich group H2s (H2 > H3 category > H4 item).
+  deepNesting: true,
   // ── Page Meta ──
   pageTitle: "Dental Marketing for Dental Practices | GrowSmallBiz",
   ogTitle: "AI-Driven Growth Solutions for Local Service Businesses",
@@ -28,6 +28,12 @@ export const dentalConfig: NicheConfig = {
     { name: "Health & Wellness Practices", url: "/health-and-wellness-practices/" },
     { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists/" },
   ],
+  sectionGroupHeadings: {
+    seo: "SEO & AI Search Visibility for Dental Practices",
+    social: "Marketing Channels That Fill a Dentist's Appointment Book",
+    aiAutomation: "AI Automation & Patient Retention for Dental Practices",
+    howItWorks: "How We Work With Dental Practices — And Who It's For",
+  },
   offerCatalog: {
     name: "Dental Marketing Services",
     items: [
