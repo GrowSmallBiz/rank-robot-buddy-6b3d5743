@@ -37,7 +37,7 @@ export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
             <H3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <CheckCircle2 className="w-6 h-6 text-green-500" />
               {config.strongFitLabel || "Strong Fit"}
-            </h3>
+            </H3>
             <ul className="space-y-4">
               {config.strongFitItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
@@ -54,7 +54,7 @@ export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
               <H3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
                 <XCircle className="w-6 h-6 text-red-500" />
                 {config.notFitLabel || "Not the Right Fit"}
-              </h3>
+              </H3>
               <ul className="space-y-4">
                 {config.notFitItems.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">

@@ -14,6 +14,7 @@ interface SocialMediaSectionProps {
 }
 
 export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
+  const H3 = config.deepNesting ? "h4" : "h3";
   return (
     <section id="social-media" className="py-24 relative bg-background-alt scroll-mt-24">
       <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-purple-500/5" />
@@ -34,7 +35,7 @@ export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
               <Target className="w-5 h-5 text-primary" />
             </div>
             <div>
-              <h3 className="font-semibold text-foreground mb-2">Why Primary & Secondary Platforms?</h3>
+              <H3 className="font-semibold text-foreground mb-2">Why Primary &amp; Secondary Platforms?</H3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 <strong className="text-foreground">Focus beats scatter.</strong> Primary platforms are where your ideal clients actively search for your genre—invest 80% of your time here.
                 Secondary platforms offer supplemental reach or work well for specific campaigns, but spreading too thin dilutes your impact.
@@ -45,7 +46,7 @@ export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
         </div>
 
         {/* Social Media Strategy Table */}
-        <h3 className="text-xl font-bold text-foreground mb-6 text-center">
+        <H3 className="text-xl font-bold text-foreground mb-6 text-center">
           Where We Focus Your Social Presence — By Genre
         </h3>
         <GlowCard className="p-6 overflow-x-auto mb-16 border-[hsl(188_78%_41%_/_0.35)]">
