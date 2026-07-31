@@ -29,6 +29,14 @@ import aiWebsiteLivechat from "@/assets/hvac/hvac-ai-website-chat.webp";
 export const hvacConfig: NicheConfig = {
   // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
   flattenHeadings: true,
+  // Re-parent item-level H3s under keyword-bearing group H2s (H3 category > H4 item).
+  deepNesting: true,
+  sectionGroupHeadings: {
+    seo: "SEO & AI Search Visibility for HVAC Contractors",
+    social: "Marketing Channels That Fill a Heating & Cooling Company's Schedule",
+    aiAutomation: "AI Automation & Customer Retention for Air Conditioning Contractors",
+    howItWorks: "How We Work With HVAC Contractors — And Who It's For",
+  },
   // ══════════════════════════════════════════════════════════════════════
   // PAGE META
   // ══════════════════════════════════════════════════════════════════════
