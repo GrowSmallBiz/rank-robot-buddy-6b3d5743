@@ -28,12 +28,12 @@ export const dentalConfig: NicheConfig = {
     { name: "Health & Wellness Practices", url: "/health-and-wellness-practices/" },
     { name: "Dental Marketing", url: "/health-and-wellness-practices/marketing-for-dentists/" },
   ],
-  sectionGroupHeadings: [
-    { id: "group-seo", title: "SEO & AI Search Visibility for Dental Practices" },
-    { id: "group-channels", title: "Marketing Channels That Fill a Dentist's Appointment Book" },
-    { id: "group-automation", title: "AI Automation & Patient Retention for Dental Practices" },
-    { id: "group-how-we-work", title: "How We Work With Dental Practices — And Who It's For" },
-  ],
+  sectionGroupHeadings: {
+    seo: "SEO & AI Search Visibility for Dental Practices",
+    social: "Marketing Channels That Fill a Dentist's Appointment Book",
+    aiAutomation: "AI Automation & Patient Retention for Dental Practices",
+    howItWorks: "How We Work With Dental Practices — And Who It's For",
+  },
   offerCatalog: {
     name: "Dental Marketing Services",
     items: [
