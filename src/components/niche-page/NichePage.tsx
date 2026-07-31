@@ -128,7 +128,12 @@ const NichePage = ({ config }: NichePageProps) => {
       <WebsiteDesignSection config={config} strategySessionUrl={strategySessionUrl} />
 
       {/* 6. SEO */}
+      {/* Group H2 — SEO block */}
+      <SectionGroupHeading title={config.sectionGroupHeadings?.seo} />
+
+      {/* 6. SEO */}
       <SeoSection config={config} strategySessionUrl={strategySessionUrl} />
+
 
       {/* K. Four-Lane Search Dominance (optional — after SEO, before CTA) */}
       <FourLaneSearchSection config={config} />
