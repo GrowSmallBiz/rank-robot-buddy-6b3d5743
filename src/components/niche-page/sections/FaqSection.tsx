@@ -57,7 +57,7 @@ export const FaqSection = ({ config }: FaqSectionProps) => {
                         className="bg-black border rounded-xl px-6 transition-all animate-fade-up hover:shadow-[0_0_60px_rgba(255,127,80,0.5)] data-[state=open]:shadow-[0_0_60px_rgba(255,127,80,0.5)]"
                         style={{ animationDelay: `${index * 0.05}s`, borderColor: '#ff7f50ff' }}
                       >
-                        <AccordionTrigger className="text-left text-foreground hover:text-primary font-medium py-5 hover:no-underline">
+                        <AccordionTrigger headingLevel="h4" className="text-left text-foreground hover:text-primary font-medium py-5 hover:no-underline">
                           {faq.question}
                         </AccordionTrigger>
                         <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
