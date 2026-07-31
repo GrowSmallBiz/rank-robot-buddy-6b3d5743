@@ -48,7 +48,7 @@ export const SocialMediaSection = ({ config }: SocialMediaSectionProps) => {
         {/* Social Media Strategy Table */}
         <H3 className="text-xl font-bold text-foreground mb-6 text-center">
           Where We Focus Your Social Presence — By Genre
-        </h3>
+        </H3>
         <GlowCard className="p-6 overflow-x-auto mb-16 border-[hsl(188_78%_41%_/_0.35)]">
           <table className="w-full min-w-[800px]">
             <thead>
