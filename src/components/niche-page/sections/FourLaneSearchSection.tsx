@@ -18,6 +18,7 @@ const laneColorMap: Record<string, { bg: string; border: string; icon: string }>
 };
 
 export const FourLaneSearchSection = ({ config }: FourLaneSearchSectionProps) => {
+  const H3 = config.deepNesting ? "h4" : "h3";
   if (!config.fourLaneLanes || config.fourLaneLanes.length === 0) return null;
 
   const hasComparison = config.searchComparisonPanels && config.searchComparisonPanels.length > 0;
@@ -52,7 +53,7 @@ export const FourLaneSearchSection = ({ config }: FourLaneSearchSectionProps) =>
                 <div className={`w-12 h-12 rounded-xl ${colors.bg} flex items-center justify-center mb-4`}>
                   <Icon className={`w-6 h-6 ${colors.icon}`} />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-1">{lane.lane}</h3>
+                <H3 className="text-lg font-bold text-foreground mb-1">{lane.lane}</H3>
                 <p className="text-sm font-medium text-primary mb-2">{lane.headline}</p>
                 <p className="text-sm text-muted-foreground mb-4">{lane.description}</p>
                 <ul className="space-y-2">
@@ -73,7 +74,7 @@ export const FourLaneSearchSection = ({ config }: FourLaneSearchSectionProps) =>
           <div className="mt-16">
             {config.searchComparisonTitle && (
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-foreground">{config.searchComparisonTitle}</h3>
+                <H3 className="text-2xl font-bold text-foreground">{config.searchComparisonTitle}</H3>
                 {config.searchComparisonSubtitle && (
                   <p className="text-muted-foreground mt-2">{config.searchComparisonSubtitle}</p>
                 )}

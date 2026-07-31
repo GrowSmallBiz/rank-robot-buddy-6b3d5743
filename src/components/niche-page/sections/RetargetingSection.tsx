@@ -20,9 +20,9 @@ export const RetargetingSection = ({ config }: RetargetingSectionProps) => {
             {config.retargetingHeadline} {config.retargetingHighlight}
           </H2>
 
-          <h3 className="text-xl md:text-2xl font-display font-medium text-muted-foreground text-center mb-12">
+          <p className="text-xl md:text-2xl font-display font-medium text-muted-foreground text-center mb-12">
             {config.retargetingSubheadline}
-          </h3>
+          </p>
 
           {/* FIXED 5-step journey */}
           <div className="relative animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>

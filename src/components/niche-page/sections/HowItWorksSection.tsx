@@ -10,6 +10,7 @@ interface HowItWorksSectionProps {
 
 export const HowItWorksSection = ({ config }: HowItWorksSectionProps) => {
   const H2 = config.flattenHeadings ? "h3" : "h2";
+  const H3 = config.deepNesting ? "h4" : "h3";
   if (!config.processSteps || config.processSteps.length === 0) return null;
 
   return (
@@ -51,7 +52,7 @@ export const HowItWorksSection = ({ config }: HowItWorksSectionProps) => {
 
                 {/* Content */}
                 <GlowCard className="flex-1 p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
+                  <H3 className="text-xl font-bold text-foreground mb-3">{step.title}</H3>
                   <p className="text-muted-foreground mb-4">{step.description}</p>
                   <div className="flex items-start gap-2 p-3 rounded-lg bg-primary/5 border border-primary/10">
                     <FileText className="w-5 h-5 text-primary shrink-0 mt-0.5" />

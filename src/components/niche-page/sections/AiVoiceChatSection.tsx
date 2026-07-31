@@ -13,6 +13,7 @@ interface AiVoiceChatSectionProps {
 }
 
 export const AiVoiceChatSection = ({ config }: AiVoiceChatSectionProps) => {
+  const H3 = config.deepNesting ? "h4" : "h3";
   const hasExtended = config.aiReceptionistComparison && config.aiReceptionistComparison.length > 0;
 
   if (!hasExtended) {
@@ -156,9 +157,9 @@ export const AiVoiceChatSection = ({ config }: AiVoiceChatSectionProps) => {
                 <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-display font-bold text-foreground">
+                <H3 className="text-2xl font-display font-bold text-foreground">
                   24/7 AI Voice Receptionist
-                </h3>
+                </H3>
               </div>
               <ul className="space-y-4">
                 {config.aiVoiceFeatureBullets.map((bullet, i) => (
@@ -180,9 +181,9 @@ export const AiVoiceChatSection = ({ config }: AiVoiceChatSectionProps) => {
                 <div className="w-12 h-12 rounded-xl bg-cyan-500 flex items-center justify-center">
                   <MessageSquare className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-display font-bold text-foreground">
+                <H3 className="text-2xl font-display font-bold text-foreground">
                   Website Live AI Chat — Always Capturing
-                </h3>
+                </H3>
               </div>
               <ul className="space-y-4">
                 {config.aiChatFeatureBullets.map((bullet, i) => (

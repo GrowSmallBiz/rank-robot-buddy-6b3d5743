@@ -34,6 +34,7 @@ import { CoreServicesSection } from "./sections/CoreServicesSection";
 import { StagedApproachSection } from "./sections/StagedApproachSection";
 import { FourLaneSearchSection } from "./sections/FourLaneSearchSection";
 import { FaqSection } from "./sections/FaqSection";
+import { SectionGroupHeading } from "./sections/SectionGroupHeading";
 
 interface NichePageProps {
   config: NicheConfig;
@@ -127,7 +128,12 @@ const NichePage = ({ config }: NichePageProps) => {
       <WebsiteDesignSection config={config} strategySessionUrl={strategySessionUrl} />
 
       {/* 6. SEO */}
+      {/* Group H2 — SEO block */}
+      <SectionGroupHeading title={config.sectionGroupHeadings?.seo} />
+
+      {/* 6. SEO */}
       <SeoSection config={config} strategySessionUrl={strategySessionUrl} />
+
 
       {/* K. Four-Lane Search Dominance (optional — after SEO, before CTA) */}
       <FourLaneSearchSection config={config} />
@@ -146,6 +152,9 @@ const NichePage = ({ config }: NichePageProps) => {
       {/* 7. Paid Media */}
       <PaidMediaSection config={config} strategySessionUrl={strategySessionUrl} />
 
+      {/* Group H2 — Retargeting + Social */}
+      <SectionGroupHeading title={config.sectionGroupHeadings?.social} />
+
       {/* 8. Retargeting */}
       <RetargetingSection config={config} />
 
@@ -154,6 +163,9 @@ const NichePage = ({ config }: NichePageProps) => {
 
       {/* 10. AI Growth System */}
       <AiGrowthSystemSection config={config} />
+
+      {/* Group H2 — Reputation + AI Communication */}
+      <SectionGroupHeading title={config.sectionGroupHeadings?.aiAutomation} />
 
       {/* 11. Reputation */}
       <ReputationSection config={config} />
@@ -178,6 +190,9 @@ const NichePage = ({ config }: NichePageProps) => {
 
       {/* 13. Why Choose Us */}
       <WhyChooseUsSection config={config} />
+
+      {/* Group H2 — How It Works + Who This Is For */}
+      <SectionGroupHeading title={config.sectionGroupHeadings?.howItWorks} />
 
       {/* B. How It Works (optional — after Why Choose Us) */}
       <HowItWorksSection config={config} />

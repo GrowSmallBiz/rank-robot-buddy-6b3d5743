@@ -10,6 +10,7 @@ interface WhoThisIsForSectionProps {
 
 export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
   const H2 = config.flattenHeadings ? "h3" : "h2";
+  const H3 = config.deepNesting ? "h4" : "h3";
   if (!config.strongFitItems || config.strongFitItems.length === 0) return null;
 
   return (
@@ -33,10 +34,10 @@ export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
         <div className="grid md:grid-cols-2 gap-8 mt-12">
           {/* Strong Fit */}
           <GlowCard className="p-8 border-green-500/20">
-            <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
+            <H3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
               <CheckCircle2 className="w-6 h-6 text-green-500" />
               {config.strongFitLabel || "Strong Fit"}
-            </h3>
+            </H3>
             <ul className="space-y-4">
               {config.strongFitItems.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
@@ -50,10 +51,10 @@ export const WhoThisIsForSection = ({ config }: WhoThisIsForSectionProps) => {
           {/* Not a Fit */}
           {config.notFitItems && config.notFitItems.length > 0 && (
             <GlowCard className="p-8 border-red-500/20">
-              <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
+              <H3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
                 <XCircle className="w-6 h-6 text-red-500" />
                 {config.notFitLabel || "Not the Right Fit"}
-              </h3>
+              </H3>
               <ul className="space-y-4">
                 {config.notFitItems.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">

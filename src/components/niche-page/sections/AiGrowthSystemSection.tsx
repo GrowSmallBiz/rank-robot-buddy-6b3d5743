@@ -22,6 +22,7 @@ interface AiGrowthSystemSectionProps {
 
 export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) => {
   const H2 = config.flattenHeadings ? "h3" : "h2";
+  const H3 = config.deepNesting ? "h4" : "h3";
   const widthClasses = ["w-full", "w-[94%]", "w-[88%]", "w-[82%]", "w-[76%]", "w-[70%]", "w-[64%]"];
 
   return (
@@ -29,9 +30,9 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
       <div className="container mx-auto px-4">
         {/* Title */}
         <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
+          <H2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4 bg-gradient-heading bg-clip-text text-transparent">
             {config.growthSystemHighlight} {config.growthSystemHeadline}
-          </h2>
+          </H2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{config.growthSystemSubheadline}</p>
         </div>
 
@@ -82,7 +83,7 @@ export const AiGrowthSystemSection = ({ config }: AiGrowthSystemSectionProps) =>
                     <div key={i} className="flex items-start gap-4">
                       <div className={`w-3 h-3 rounded-full ${item.color} mt-2 shrink-0`} />
                       <div>
-                        <h3 className="font-bold text-foreground text-lg">{item.label}</h3>
+                        <H3 className="font-bold text-foreground text-lg">{item.label}</H3>
                         <p className="text-sm text-muted-foreground">{item.desc}</p>
                       </div>
                     </div>
