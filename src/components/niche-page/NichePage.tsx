@@ -191,6 +191,9 @@ const NichePage = ({ config }: NichePageProps) => {
       {/* 13. Why Choose Us */}
       <WhyChooseUsSection config={config} />
 
+      {/* Group H2 — How It Works + Who This Is For */}
+      <SectionGroupHeading title={config.sectionGroupHeadings?.howItWorks} />
+
       {/* B. How It Works (optional — after Why Choose Us) */}
       <HowItWorksSection config={config} />
 
