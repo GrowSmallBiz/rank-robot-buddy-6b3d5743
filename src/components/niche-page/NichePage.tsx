@@ -152,6 +152,9 @@ const NichePage = ({ config }: NichePageProps) => {
       {/* 7. Paid Media */}
       <PaidMediaSection config={config} strategySessionUrl={strategySessionUrl} />
 
+      {/* Group H2 — Retargeting + Social */}
+      <SectionGroupHeading title={config.sectionGroupHeadings?.social} />
+
       {/* 8. Retargeting */}
       <RetargetingSection config={config} />
 
@@ -160,6 +163,9 @@ const NichePage = ({ config }: NichePageProps) => {
 
       {/* 10. AI Growth System */}
       <AiGrowthSystemSection config={config} />
+
+      {/* Group H2 — Reputation + AI Communication */}
+      <SectionGroupHeading title={config.sectionGroupHeadings?.aiAutomation} />
 
       {/* 11. Reputation */}
       <ReputationSection config={config} />
