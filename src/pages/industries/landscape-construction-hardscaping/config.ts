@@ -27,6 +27,13 @@ import aiWebsiteLivechatImage from "@/assets/industries/landscape-construction-h
 export const landscapeConstructionHardscapingConfig: NicheConfig = {
   // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
   flattenHeadings: true,
+  deepNesting: true,
+  sectionGroupHeadings: {
+    seo: "SEO & AI Search Visibility for Landscape Construction Contractors",
+    social: "Marketing Channels That Win Six-Figure Projects",
+    aiAutomation: "AI Automation & Client Retention for Hardscaping Contractors",
+    howItWorks: "How We Work With Outdoor Living Contractors — And Who It's For",
+  },
   // ── PAGE META ──
   pageTitle: "Landscape Construction & Hardscaping Contractor Marketing | GrowSmallBiz",
   ogTitle: "AI-Powered Growth for Landscape Construction & Hardscaping Contractors",
