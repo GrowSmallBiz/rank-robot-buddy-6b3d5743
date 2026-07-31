@@ -316,6 +316,22 @@ export interface NicheConfig {
    *  <h3>/<p>. Visual styling is unchanged. */
   flattenHeadings?: boolean;
 
+  /** When true, demotes item-level card/step headings one further level so they
+   *  nest under their block's lead heading (H3 parent > H4 items) instead of
+   *  sitting as flat siblings. Tag-level only — no copy or styling change. */
+  deepNesting?: boolean;
+
+  /** Optional group-level <h2> banners inserted before sections that otherwise
+   *  have no H2 parent of their own. Omit a key to skip that banner. */
+  sectionGroupHeadings?: {
+    seo?: string;
+    social?: string;
+    aiAutomation?: string;
+    howItWorks?: string;
+  };
+
+
+
   // ── 4.1 Page Meta ──
   pageTitle: string;
   /** Optional Open Graph title override. Falls back to pageTitle when omitted. */
