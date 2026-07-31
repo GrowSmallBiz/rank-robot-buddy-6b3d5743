@@ -25,6 +25,13 @@ import aiWebsiteLivechat from "@/assets/painting-companies/ai-website-chat-paint
 export const paintingCompaniesConfig: NicheConfig = {
   // Flatten the heading outline for this page (single H1, 5-6 topical H2s).
   flattenHeadings: true,
+  deepNesting: true,
+  sectionGroupHeadings: {
+    seo: "SEO & AI Search Visibility for Painting Contractors",
+    social: "Social Media & Retargeting for Residential Painting Companies",
+    aiAutomation: "AI Automation & Client Retention for Commercial Painting Contractors",
+    howItWorks: "How We Work With Painting Contractors — And Who It's For",
+  },
   // ══════════════════════════════════════════════════════════════════════
   // 4.1  PAGE META
   // ══════════════════════════════════════════════════════════════════════
@@ -1044,6 +1051,10 @@ export const paintingCompaniesConfig: NicheConfig = {
   // ══════════════════════════════════════════════════════════════════════
   // CONTACT SECTION
   // ══════════════════════════════════════════════════════════════════════
+  seoContentAuthorityStatement: "We Don't Publish Bulk AI Blogs. We Build Painting Contractor Authority.",
+  seoAiVisibilityHeading: "We Get Your Painting Company Recommended by AI Search Engines",
+  seasonalCampaignsHeading: "We Automate for Your Painting Company",
+  reputationInnerH3: "We Handle Your Painting Company Reputation",
   contactSectionHeadline: "Ready to Grow Your Painting Business?",
   contactSectionBody: "Schedule a strategy call to discuss your marketing goals, service area, and what a seasonal campaign calendar looks like for your specific market.",
 };
