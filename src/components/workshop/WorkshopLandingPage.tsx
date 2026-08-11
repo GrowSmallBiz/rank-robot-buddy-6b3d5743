@@ -26,7 +26,7 @@ import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
-import workshopHero from "@/assets/workshop-ai-visibility-hero.jpg";
+
 import visibilityDashboard from "@/assets/workshop-ai-visibility-dashboard.webp";
 import citationsDashboard from "@/assets/workshop-ai-citations-dashboard.webp";
 
@@ -276,15 +276,25 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
         <section className="relative overflow-hidden py-20 md:py-28">
           <div className="absolute inset-0">
             <img
-              src={workshopHero}
+              src={visibilityDashboard}
               alt=""
               aria-hidden="true"
               width={1920}
-              height={1088}
+              height={1179}
               fetchPriority="high"
-              className="h-full w-full object-cover opacity-40"
+              className="h-full w-full object-cover opacity-20"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
+            <img
+              src={citationsDashboard}
+              alt=""
+              aria-hidden="true"
+              width={1920}
+              height={1096}
+              loading="lazy"
+              className="absolute right-0 top-1/2 hidden h-3/5 w-2/5 -translate-y-1/2 object-cover opacity-[0.12] mix-blend-screen lg:block"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
           </div>
           <div className="pointer-events-none absolute inset-0 hero-glow" />
           <div className="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
@@ -339,31 +349,28 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                 </div>
               </div>
 
-              {/* Real AI visibility dashboards */}
+              {/* What you'll learn — summary bullets */}
               <div className="relative mx-auto w-full max-w-xl animate-fade-up lg:max-w-none">
-                <div className="overflow-hidden rounded-2xl border border-primary/30 bg-card shadow-2xl shadow-primary/10">
-                  <img
-                    src={visibilityDashboard}
-                    alt="AI visibility score dashboard showing brand mentions and share of voice across AI platforms"
-                    width={1920}
-                    height={1179}
-                    fetchPriority="high"
-                    className="w-full"
-                  />
+                <div className="rounded-2xl border border-primary/30 bg-card/80 p-6 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-8">
+                  <h2 className="flex items-center gap-2 font-display text-xl font-bold text-foreground">
+                    <ListChecks className="h-5 w-5 text-primary" />
+                    What You'll Learn
+                  </h2>
+                  <ul className="mt-5 space-y-4">
+                    {[
+                      "What AI visibility is and why it now matters for local service businesses",
+                      "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
+                      "How to audit your current visibility across all six major AI platforms",
+                      "The content and signals that make AI platforms cite and recommend you",
+                      "A practical, step-by-step playbook to get recommended consistently",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                        <span className="text-base text-foreground/90">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="mt-[-3rem] ml-6 overflow-hidden rounded-2xl border border-[hsl(188_78%_41%_/_0.5)] bg-card shadow-2xl shadow-[hsl(188_78%_41%_/_0.15)] sm:ml-12">
-                  <img
-                    src={citationsDashboard}
-                    alt="Citations by AI platform chart showing Google AI Mode, ChatGPT, Perplexity, Gemini and Copilot citation share"
-                    width={1920}
-                    height={1096}
-                    loading="lazy"
-                    className="w-full"
-                  />
-                </div>
-                <p className="mt-5 text-center text-xs text-muted-foreground">
-                  Real AI visibility tracking: who AI mentions, and which sources it cites.
-                </p>
               </div>
             </div>
 
