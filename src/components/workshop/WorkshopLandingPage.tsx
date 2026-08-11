@@ -27,6 +27,8 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 import workshopHero from "@/assets/workshop-ai-visibility-hero.jpg";
+import visibilityDashboard from "@/assets/workshop-ai-visibility-dashboard.webp";
+import citationsDashboard from "@/assets/workshop-ai-citations-dashboard.webp";
 
 const BASE_URL = "https://growsmallbiz.io";
 
