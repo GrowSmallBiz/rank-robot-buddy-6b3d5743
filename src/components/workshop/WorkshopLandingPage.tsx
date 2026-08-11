@@ -271,87 +271,117 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
 
       <main id="main-content">
         {/* ── Hero ── */}
-        <section className="relative overflow-hidden py-24 md:py-32">
+        <section className="relative overflow-hidden py-20 md:py-28">
           <div className="absolute inset-0">
             <img
               src={workshopHero}
-              alt="AI search dashboards glowing in a dark workspace"
+              alt=""
+              aria-hidden="true"
               width={1920}
               height={1088}
               fetchPriority="high"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover opacity-40"
             />
-            <div className="absolute inset-0 bg-background/80" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
           </div>
           <div className="pointer-events-none absolute inset-0 hero-glow" />
           <div className="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
           <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-[hsl(188_78%_41%_/_0.15)] blur-3xl" />
 
           <div className="container relative z-10 mx-auto px-4">
-            <div className="mx-auto max-w-4xl text-center animate-fade-up">
-              <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
-                <Sparkles className="h-4 w-4" />
-                Free 90-Minute AI Visibility Workshop {isOnline ? "· Online" : "· In Person"}
-              </span>
-
-              <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] md:text-6xl lg:text-7xl">
-                <span className="block text-foreground">Your Business Needs</span>
-                <span className="block bg-gradient-to-r from-primary via-primary to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
-                  to Be Found by AI.
+            <div className="grid items-center gap-12 lg:grid-cols-2">
+              <div className="animate-fade-up text-center lg:text-left">
+                <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                  <Sparkles className="h-4 w-4" />
+                  Free 90-Minute AI Visibility Workshop {isOnline ? "· Online" : "· In Person"}
                 </span>
-              </h1>
 
-              <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground md:text-2xl">
-                When someone asks ChatGPT, Gemini, Perplexity, Claude, Grok, or Google AI
-                to recommend a business like yours, the answer names just a few. This free
-                workshop shows you how to be one of them.
-              </p>
-
-              <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-                <Button variant="hero" size="xl" asChild>
-                  <a href="#register">
-                    Save My Seat — It's Free
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-                <Button variant="heroOutline" size="xl" asChild>
-                  <a href="#what-you-learn">See What's Covered</a>
-                </Button>
-              </div>
-
-              <div className="mt-7 flex flex-wrap justify-center gap-2">
-                {[
-                  "ChatGPT · Gemini · Perplexity",
-                  "Claude · Grok · Google AI Overviews",
-                  "Built for local service businesses",
-                ].map((chip) => (
-                  <span
-                    key={chip}
-                    className="rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm text-primary"
-                  >
-                    {chip}
+                <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] md:text-6xl">
+                  <span className="block text-foreground">Your Business Needs</span>
+                  <span className="block bg-gradient-to-r from-primary via-primary to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
+                    to Be Found by AI.
                   </span>
-                ))}
+                </h1>
+
+                <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl lg:mx-0">
+                  When someone asks ChatGPT, Gemini, Perplexity, Claude, Grok, or Google AI
+                  to recommend a business like yours, the answer names just a few. This free
+                  workshop shows you how to be one of them.
+                </p>
+
+                <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+                  <Button variant="hero" size="xl" asChild>
+                    <a href="#register">
+                      Save My Seat — It's Free
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </a>
+                  </Button>
+                  <Button variant="heroOutline" size="xl" asChild>
+                    <a href="#what-you-learn">See What's Covered</a>
+                  </Button>
+                </div>
+
+                <div className="mt-7 flex flex-wrap justify-center gap-2 lg:justify-start">
+                  {[
+                    "ChatGPT · Gemini · Perplexity",
+                    "Claude · Grok · Google AI Overviews",
+                    "Built for local service businesses",
+                  ].map((chip) => (
+                    <span
+                      key={chip}
+                      className="rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm text-primary"
+                    >
+                      {chip}
+                    </span>
+                  ))}
+                </div>
               </div>
 
-              <div className="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
-                {detailChips.map(({ icon: Icon, label, value }) => (
-                  <div
-                    key={label}
-                    className="rounded-xl border border-border bg-card/70 px-4 py-4 text-center backdrop-blur-sm"
-                  >
-                    <Icon className="mx-auto mb-2 h-5 w-5 text-primary" />
-                    <p className="text-[11px] font-semibold uppercase tracking-wider text-primary">
-                      {label}
-                    </p>
-                    <p className="mt-1 text-sm text-foreground">{value}</p>
-                  </div>
-                ))}
+              {/* Real AI visibility dashboards */}
+              <div className="relative mx-auto w-full max-w-xl animate-fade-up lg:max-w-none">
+                <div className="overflow-hidden rounded-2xl border border-primary/30 bg-card shadow-2xl shadow-primary/10">
+                  <img
+                    src={visibilityDashboard}
+                    alt="AI visibility score dashboard showing brand mentions and share of voice across AI platforms"
+                    width={1920}
+                    height={1179}
+                    fetchPriority="high"
+                    className="w-full"
+                  />
+                </div>
+                <div className="mt-[-3rem] ml-6 overflow-hidden rounded-2xl border border-[hsl(188_78%_41%_/_0.5)] bg-card shadow-2xl shadow-[hsl(188_78%_41%_/_0.15)] sm:ml-12">
+                  <img
+                    src={citationsDashboard}
+                    alt="Citations by AI platform chart showing Google AI Mode, ChatGPT, Perplexity, Gemini and Copilot citation share"
+                    width={1920}
+                    height={1096}
+                    loading="lazy"
+                    className="w-full"
+                  />
+                </div>
+                <p className="mt-5 text-center text-xs text-muted-foreground">
+                  Real AI visibility tracking: who AI mentions, and which sources it cites.
+                </p>
               </div>
+            </div>
+
+            <div className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
+              {detailChips.map(({ icon: Icon, label, value }) => (
+                <div
+                  key={label}
+                  className="rounded-xl border border-border bg-card/70 px-4 py-4 text-center backdrop-blur-sm"
+                >
+                  <Icon className="mx-auto mb-2 h-5 w-5 text-primary" />
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-primary">
+                    {label}
+                  </p>
+                  <p className="mt-1 text-sm text-foreground">{value}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
+
 
         {/* ── What is AI visibility ── */}
         <section className="bg-background-alt py-20 md:py-24">
