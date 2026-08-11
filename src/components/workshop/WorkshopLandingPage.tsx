@@ -26,6 +26,7 @@ import { SectionHeader } from "@/components/services/SectionHeader";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { baseContactCTA } from "@/config/contactCTA";
 import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
+import workshopHero from "@/assets/workshop-ai-visibility-hero.jpg";
 
 const BASE_URL = "https://growsmallbiz.io";
 
