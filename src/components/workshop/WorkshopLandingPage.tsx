@@ -276,15 +276,25 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
         <section className="relative overflow-hidden py-20 md:py-28">
           <div className="absolute inset-0">
             <img
-              src={workshopHero}
+              src={visibilityDashboard}
               alt=""
               aria-hidden="true"
               width={1920}
-              height={1088}
+              height={1179}
               fetchPriority="high"
-              className="h-full w-full object-cover opacity-40"
+              className="h-full w-full object-cover opacity-20"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
+            <img
+              src={citationsDashboard}
+              alt=""
+              aria-hidden="true"
+              width={1920}
+              height={1096}
+              loading="lazy"
+              className="absolute right-0 top-1/2 hidden h-3/5 w-2/5 -translate-y-1/2 object-cover opacity-[0.12] mix-blend-screen lg:block"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
           </div>
           <div className="pointer-events-none absolute inset-0 hero-glow" />
           <div className="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
