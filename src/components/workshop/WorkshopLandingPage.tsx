@@ -349,31 +349,28 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                 </div>
               </div>
 
-              {/* Real AI visibility dashboards */}
+              {/* What you'll learn — summary bullets */}
               <div className="relative mx-auto w-full max-w-xl animate-fade-up lg:max-w-none">
-                <div className="overflow-hidden rounded-2xl border border-primary/30 bg-card shadow-2xl shadow-primary/10">
-                  <img
-                    src={visibilityDashboard}
-                    alt="AI visibility score dashboard showing brand mentions and share of voice across AI platforms"
-                    width={1920}
-                    height={1179}
-                    fetchPriority="high"
-                    className="w-full"
-                  />
+                <div className="rounded-2xl border border-primary/30 bg-card/80 p-6 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-8">
+                  <h2 className="flex items-center gap-2 font-display text-xl font-bold text-foreground">
+                    <ListChecks className="h-5 w-5 text-primary" />
+                    What You'll Learn
+                  </h2>
+                  <ul className="mt-5 space-y-4">
+                    {[
+                      "What AI visibility is and why it now matters for local service businesses",
+                      "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
+                      "How to audit your current visibility across all six major AI platforms",
+                      "The content and signals that make AI platforms cite and recommend you",
+                      "A practical, step-by-step playbook to get recommended consistently",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                        <span className="text-base text-foreground/90">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="mt-[-3rem] ml-6 overflow-hidden rounded-2xl border border-[hsl(188_78%_41%_/_0.5)] bg-card shadow-2xl shadow-[hsl(188_78%_41%_/_0.15)] sm:ml-12">
-                  <img
-                    src={citationsDashboard}
-                    alt="Citations by AI platform chart showing Google AI Mode, ChatGPT, Perplexity, Gemini and Copilot citation share"
-                    width={1920}
-                    height={1096}
-                    loading="lazy"
-                    className="w-full"
-                  />
-                </div>
-                <p className="mt-5 text-center text-xs text-muted-foreground">
-                  Real AI visibility tracking: who AI mentions, and which sources it cites.
-                </p>
               </div>
             </div>
 
