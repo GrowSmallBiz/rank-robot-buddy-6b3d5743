@@ -299,16 +299,16 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                 </span>
 
                 <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] md:text-6xl">
-                  <span className="block text-foreground">Your Business Needs</span>
+                  <span className="block text-foreground">Is Your Business Ready</span>
                   <span className="block bg-gradient-to-r from-primary via-primary to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
-                    to Be Found by AI.
+                    to Be Recommended by AI?
                   </span>
                 </h1>
 
                 <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl lg:mx-0">
-                  When someone asks ChatGPT, Gemini, Perplexity, Claude, Grok, or Google AI
-                  to recommend a business like yours, the answer names just a few. This free
-                  workshop shows you how to be one of them.
+                  Learn how to evaluate your business's true AI visibility, understand what
+                  influences AI recommendations, and implement practical strategies to increase
+                  your chances of being recommended consistently.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
