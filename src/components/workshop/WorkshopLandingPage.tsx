@@ -1,4 +1,5 @@
-import { Head, Link } from "vite-react-ssg";
+import { Head } from "vite-react-ssg";
+import { Link } from "react-router-dom";
 import {
   Sparkles,
   Search,
