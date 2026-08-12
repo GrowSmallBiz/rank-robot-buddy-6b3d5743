@@ -103,7 +103,12 @@ export const FAQSection = ({
         <div className={`${contactCTA ? 'grid grid-cols-1 lg:grid-cols-3 gap-12 items-start' : 'max-w-4xl mx-auto'}`}>
           {/* FAQ Column */}
           <div className={contactCTA ? 'lg:col-span-2' : ''}>
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion
+              type="single"
+              collapsible
+              defaultValue={defaultOpenFirst ? "item-0" : undefined}
+              className={`space-y-4 ${accordionClassName}`}
+            >
               {faqs.map((faq, index) => (
                 <AccordionItem
                   key={index}
