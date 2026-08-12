@@ -109,7 +109,7 @@ export const WorkbookMockup = () => (
     </div>
 
     <p className="mt-5 max-w-sm text-center text-sm leading-relaxed text-muted-foreground">
-      Work through this playbook live during the session and leave with your personalized AI
+      Receive this playbook at the end of the session and leave with your personalized AI
       Visibility Action Plan — yours to keep when you stay through the end of the workshop.
     </p>
 
