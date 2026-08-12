@@ -379,27 +379,22 @@ export const WorkshopLandingPageRefined = ({
                 </div>
 
                 <div className="mt-12 flex flex-wrap justify-center gap-2 lg:justify-start">
-                  {["ChatGPT", "Gemini", "Claude", "Google AI", "Perplexity", "Grok"].map(
-                    (chip) => (
-                      <span
-                        key={chip}
-                        className="rounded-full border border-border/70 bg-card/50 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm"
-                      >
-                        {chip}
-                      </span>
-                    ),
-                  )}
+                  <span className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-card/50 px-4 py-2 text-xs font-medium text-muted-foreground backdrop-blur-sm">
+                    <Bot className="h-4 w-4 text-primary/80" />
+                    Supports all major AI platforms
+                  </span>
                 </div>
 
                 <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-primary/90">
-                  Built for Local Service Businesses
+                  Designed for Local Service Businesses
                 </p>
               </div>
 
               {/* RIGHT COLUMN — single hero visual: the workbook */}
-              <div className="relative mx-auto w-full max-w-md animate-fade-up lg:mx-0 lg:justify-self-end">
+              <div className="relative mx-auto w-full max-w-lg animate-fade-up lg:mx-0 lg:mt-10 lg:justify-self-end">
                 <WorkbookMockup />
               </div>
+
             </div>
           </div>
         </section>
