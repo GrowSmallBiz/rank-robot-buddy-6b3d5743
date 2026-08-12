@@ -19,6 +19,9 @@ import {
   Download,
   Wrench,
   Store,
+  Gift,
+  Timer,
+  Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
@@ -190,9 +193,31 @@ const faqs = [
   },
 ];
 
+const speakerBadges = [
+  "AI Search Optimization",
+  "Local SEO",
+  "Digital Transformation",
+  "AI Visibility",
+];
+
+/** Small eyebrow used to carry the narrative from one section to the next. */
+const StoryStep = ({ step, label }: { step: string; label: string }) => (
+  <div className="mb-8 flex items-center justify-center gap-3">
+    <span className="flex h-7 w-7 items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-xs font-bold text-primary">
+      {step}
+    </span>
+    <span className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
+      {label}
+    </span>
+  </div>
+);
+
 /* ─── Component ──────────────────────────────────────────────────── */
 
-export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) => {
+export const WorkshopLandingPageRefined = ({
+  format,
+  path,
+}: WorkshopLandingPageProps) => {
   const isOnline = format === "online";
 
   const title = isOnline
@@ -212,6 +237,16 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
     isOnline
       ? { icon: Video, label: "Format", value: "Live online — 90 minutes" }
       : { icon: Building2, label: "Format", value: "Live in person — 90 minutes" },
+  ];
+
+  const infoBadges = [
+    { icon: Ticket, label: "FREE Workshop" },
+    { icon: Timer, label: "90 Minutes" },
+    isOnline
+      ? { icon: Video, label: "Live on Zoom" }
+      : { icon: Building2, label: "Live & In Person" },
+    { icon: Users, label: "Interactive Q&A" },
+    { icon: Gift, label: "AI Visibility Playbook Included" },
   ];
 
   const eventSchema = {
@@ -256,7 +291,11 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
       {/* ── Minimal, distraction-free header ── */}
       <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/90 backdrop-blur-md">
         <div className="container mx-auto flex h-20 items-center justify-between px-4">
-          <Link to="/" className="flex items-center" aria-label="GrowSmallBiz home">
+          <Link
+            to="/"
+            className="flex items-center rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            aria-label="GrowSmallBiz home"
+          >
             <img
               src={growsmallbizLogo}
               alt="GrowSmallBiz Digital Marketing"
@@ -265,15 +304,20 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
               className="h-12 w-auto"
             />
           </Link>
-          <Button variant="hero" size="lg" asChild>
-            <a href="#register">Save My Seat</a>
+          <Button
+            variant="hero"
+            size="lg"
+            className="min-h-11 transition-transform duration-300 hover:scale-[1.03]"
+            asChild
+          >
+            <a href="#register">Reserve My Free Seat</a>
           </Button>
         </div>
       </header>
 
       <main id="main-content">
         {/* ── Hero ── */}
-        <section className="relative overflow-hidden py-20 md:py-28">
+        <section className="relative overflow-hidden py-24 md:py-32">
           <div className="absolute inset-0">
             <img
               src={visibilityDashboard}
@@ -301,7 +345,7 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
           <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-[hsl(188_78%_41%_/_0.15)] blur-3xl" />
 
           <div className="container relative z-10 mx-auto px-4">
-            <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+            <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
               <div className="animate-fade-up text-center lg:max-w-[36rem] lg:text-left">
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
                   <Sparkles className="h-4 w-4" />
@@ -315,16 +359,35 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                   </span>
                 </h1>
 
-                <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground md:text-lg lg:mx-0">
-                  Learn how to evaluate your business's true AI visibility, understand what
-                  influences AI recommendations, and implement practical strategies to increase
-                  your chances of being recommended consistently.
+                <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
+                  Learn how to accurately measure your business's AI visibility, understand
+                  why AI recommends some businesses over others, and leave with a practical
+                  action plan to improve your chances of being recommended consistently
+                  across today's leading AI platforms.
                 </p>
 
+                {/* Workshop information badges */}
+                <ul className="mt-8 flex flex-wrap justify-center gap-2.5 lg:justify-start">
+                  {infoBadges.map(({ icon: Icon, label }) => (
+                    <li
+                      key={label}
+                      className="inline-flex items-center gap-2 rounded-xl border border-border/70 bg-card/60 px-3.5 py-2.5 text-sm font-medium text-foreground shadow-sm backdrop-blur-md transition-colors duration-300 hover:border-primary/50"
+                    >
+                      <Icon className="h-4 w-4 shrink-0 text-primary" />
+                      {label}
+                    </li>
+                  ))}
+                </ul>
+
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
-                  <Button variant="hero" size="xl" asChild>
+                  <Button
+                    variant="hero"
+                    size="xl"
+                    className="transition-transform duration-300 hover:scale-[1.03]"
+                    asChild
+                  >
                     <a href="#register">
-                      Save My Seat — It's Free
+                      Reserve My Free Seat
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
                   </Button>
@@ -332,6 +395,10 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                     <a href="#what-you-learn">See What's Covered</a>
                   </Button>
                 </div>
+
+                <p className="mt-4 text-sm text-muted-foreground">
+                  Limited to a small group to allow live demonstrations and audience Q&amp;A.
+                </p>
 
                 <div className="mt-7 flex flex-wrap justify-center gap-2 lg:justify-start">
                   {[
@@ -351,12 +418,12 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
 
               {/* What you'll learn — summary bullets */}
               <div className="relative mx-auto w-full max-w-xl animate-fade-up lg:mx-0 lg:max-w-[34rem] lg:justify-self-end">
-                <div className="rounded-2xl border border-primary/30 bg-card/80 p-6 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-8">
+                <div className="rounded-2xl border border-primary/30 bg-card/80 p-7 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-9">
                   <h2 className="flex items-center gap-2 font-display text-xl font-bold text-foreground">
                     <ListChecks className="h-5 w-5 text-primary" />
                     What You'll Learn
                   </h2>
-                  <ul className="mt-5 space-y-4">
+                  <ul className="mt-6 space-y-5">
                     {[
                       "What AI visibility is and why it now matters for local service businesses",
                       "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
@@ -365,7 +432,9 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3">
                         <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                        <span className="text-base text-foreground/90">{item}</span>
+                        <span className="text-base leading-relaxed text-foreground/90">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -392,7 +461,7 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                       AI Visibility Playbook
                     </span>
                   </h2>
-                  <p className="mt-3 text-base text-foreground/85 md:text-lg">
+                  <p className="mt-3 text-base leading-relaxed text-foreground/85 md:text-lg">
                     Every attendee leaves with a practical, step-by-step playbook to get
                     recommended consistently — the exact checklist we use to move a local
                     service business from <span className="font-semibold text-foreground">invisible</span> to{" "}
@@ -419,11 +488,11 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
               </div>
             </div>
 
-            <div className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
+            <div className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
               {detailChips.map(({ icon: Icon, label, value }) => (
                 <div
                   key={label}
-                  className="rounded-xl border border-border bg-card/70 px-4 py-4 text-center backdrop-blur-sm"
+                  className="rounded-xl border border-border bg-card/70 px-4 py-5 text-center backdrop-blur-sm transition-colors duration-300 hover:border-primary/50"
                 >
                   <Icon className="mx-auto mb-2 h-5 w-5 text-primary" />
                   <p className="text-[11px] font-semibold uppercase tracking-wider text-primary">
@@ -436,10 +505,45 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
           </div>
         </section>
 
+        {/* ── Credibility strip ── */}
+        <section className="border-y border-border/60 bg-card/40 py-8">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center md:flex-row md:text-left">
+              <img
+                src={baseContactCTA.image}
+                alt={`${baseContactCTA.name}, workshop host`}
+                width={80}
+                height={80}
+                loading="lazy"
+                className="h-20 w-20 shrink-0 rounded-full border-2 border-primary/40 object-cover"
+              />
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
+                  Presented by
+                </p>
+                <p className="mt-1 font-display text-xl font-bold text-foreground">
+                  {baseContactCTA.name}
+                </p>
+                <p className="text-sm text-muted-foreground">{baseContactCTA.role}</p>
+                <ul className="mt-3 flex flex-wrap justify-center gap-2 md:justify-start">
+                  {speakerBadges.map((badge) => (
+                    <li
+                      key={badge}
+                      className="rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"
+                    >
+                      {badge}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* ── What is AI visibility ── */}
-        <section className="bg-background-alt py-20 md:py-24">
+        <section className="bg-background-alt py-24 md:py-28">
           <div className="container mx-auto px-4">
+            <StoryStep step="1" label="Customers Are Searching Differently" />
             <SectionHeader
               subtitle="The New Front Door"
               title="What Is AI Visibility?"
@@ -447,25 +551,25 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
             />
 
             {/* Ask → Answer visual */}
-            <div className="mx-auto mb-12 grid max-w-5xl items-center gap-4 md:grid-cols-[1fr_auto_1fr]">
-              <div className="rounded-2xl border border-border bg-card/70 p-6 md:p-8">
+            <div className="mx-auto mb-16 mt-4 grid max-w-5xl items-stretch gap-5 md:grid-cols-[1fr_auto_1fr]">
+              <div className="flex flex-col justify-center rounded-2xl border border-border bg-card/70 p-8 md:p-10">
                 <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
                   They ask
                 </p>
-                <p className="font-mono text-lg text-foreground md:text-xl">
+                <p className="font-mono text-xl leading-relaxed text-foreground md:text-2xl">
                   "Who's the best <span className="text-[hsl(188_78%_55%)]">[plumber]</span> near me?"
                 </p>
               </div>
 
-              <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-primary/40 bg-primary/10">
+              <div className="mx-auto flex h-12 w-12 items-center justify-center self-center rounded-full border border-primary/40 bg-primary/10">
                 <ArrowRight className="h-5 w-5 text-primary" />
               </div>
 
-              <div className="rounded-2xl border border-primary/50 bg-card/80 p-6 shadow-lg shadow-primary/10 md:p-8">
+              <div className="flex flex-col justify-center rounded-2xl border border-primary/50 bg-card/80 p-8 shadow-lg shadow-primary/10 md:p-10">
                 <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">
                   AI answers
                 </p>
-                <p className="text-lg text-foreground md:text-xl">
+                <p className="text-xl leading-relaxed text-foreground md:text-2xl">
                   "You're in great hands with{" "}
                   <span className="rounded bg-primary/20 px-1.5 py-0.5 font-semibold text-primary">
                     your business
@@ -476,16 +580,16 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
             </div>
 
             <div className="mx-auto max-w-4xl">
-              <GlowCard className="p-8 md:p-10">
-                <p className="text-lg text-muted-foreground">
+              <GlowCard className="p-9 md:p-12">
+                <p className="text-lg leading-relaxed text-muted-foreground">
                   A homeowner used to type{" "}
                   <span className="text-foreground">"plumber Walnut Creek"</span> and scan a
                   list of links. Today they type or say:
                 </p>
-                <p className="my-6 border-l-4 border-primary pl-5 text-2xl font-display font-semibold text-foreground md:text-3xl">
+                <p className="my-8 border-l-4 border-primary bg-primary/5 py-4 pl-6 pr-4 text-2xl font-display font-semibold leading-snug text-foreground md:text-3xl">
                   "Who's the best plumber near me, and who should I actually call first?"
                 </p>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg leading-relaxed text-muted-foreground">
                   They get back a short, confident answer with two or three business names
                   and a reason for each. There is no page two. Either the AI knows enough
                   about your business to name you — or, as far as that customer is
@@ -496,41 +600,40 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
           </div>
         </section>
 
-
-
         {/* ── Old vs new ── */}
-        <section className="py-20 md:py-24">
+        <section className="py-24 md:py-28">
           <div className="container mx-auto px-4">
+            <StoryStep step="2" label="AI Gives One Answer, Not Ten Links" />
             <SectionHeader
               subtitle="The Shift"
               title="Ten Blue Links vs. One Written Answer"
               description="Nothing about search broke. The interface changed — and with it, what it takes to get found."
             />
 
-            <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
-              <div className="rounded-2xl border border-border bg-card/60 p-8">
-                <h3 className="mb-6 font-display text-2xl font-bold text-muted-foreground">
+            <div className="mx-auto grid max-w-5xl items-stretch gap-8 md:grid-cols-2">
+              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-9 transition-colors duration-300 hover:border-border">
+                <h3 className="mb-7 font-display text-2xl font-bold text-muted-foreground">
                   How search used to work
                 </h3>
-                <ul className="space-y-4">
+                <ul className="space-y-5">
                   {oldWay.map((item) => (
                     <li key={item} className="flex gap-3">
                       <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-destructive" />
-                      <span className="text-muted-foreground">{item}</span>
+                      <span className="leading-relaxed text-muted-foreground">{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="rounded-2xl border-2 border-primary/50 bg-card/80 p-8 shadow-lg shadow-primary/10">
-                <h3 className="mb-6 font-display text-2xl font-bold text-foreground">
+              <div className="flex h-full flex-col rounded-2xl border-2 border-primary/50 bg-card/80 p-9 shadow-lg shadow-primary/10 transition-colors duration-300 hover:border-primary/70">
+                <h3 className="mb-7 font-display text-2xl font-bold text-foreground">
                   How search works now
                 </h3>
-                <ul className="space-y-4">
+                <ul className="space-y-5">
                   {newWay.map((item) => (
                     <li key={item} className="flex gap-3">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <span className="text-muted-foreground">{item}</span>
+                      <span className="leading-relaxed text-muted-foreground">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -540,29 +643,30 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
         </section>
 
         {/* ── Six platforms ── */}
-        <section className="bg-background-alt py-20 md:py-24">
+        <section className="bg-background-alt py-24 md:py-28">
           <div className="container mx-auto px-4">
+            <StoryStep step="3" label="Why AI Recommendations Matter" />
             <SectionHeader
               subtitle="Six Front Doors"
               title="Six Places People Ask. One Question Every Day."
               description="Each of these platforms builds its answer from a slightly different mix of sources. The workshop covers what each one reads — and what it means for a local business."
             />
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid items-stretch gap-7 md:grid-cols-2 lg:grid-cols-3">
               {platforms.map(({ icon: Icon, name, copy }) => (
-                <GlowCard key={name} className="p-6">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15">
-                    <Icon className="h-6 w-6 text-primary" />
+                <GlowCard key={name} className="flex h-full flex-col p-8">
+                  <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-primary/15">
+                    <Icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mb-2 font-display text-xl font-semibold text-foreground">
+                  <h3 className="mb-3 font-display text-xl font-semibold text-foreground">
                     {name}
                   </h3>
-                  <p className="text-muted-foreground">{copy}</p>
+                  <p className="leading-relaxed text-muted-foreground">{copy}</p>
                 </GlowCard>
               ))}
             </div>
 
-            <p className="mt-10 text-center text-xl font-display font-semibold text-foreground">
+            <p className="mx-auto mt-12 max-w-3xl text-center text-xl font-display font-semibold leading-relaxed text-foreground">
               Six places. One question every day. The workshop is about making sure your
               business is the answer.
             </p>
@@ -570,27 +674,28 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
         </section>
 
         {/* ── What you'll learn ── */}
-        <section id="what-you-learn" className="py-20 md:py-24">
+        <section id="what-you-learn" className="py-24 md:py-28">
           <div className="container mx-auto px-4">
+            <StoryStep step="4" label="How AI Chooses Businesses" />
             <SectionHeader
               subtitle="The Agenda"
               title="What You'll Learn in 90 Minutes"
               description="No slideware theory. You will leave able to check your own AI visibility and fix the gaps yourself."
             />
 
-            <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
+            <div className="mx-auto grid max-w-5xl items-stretch gap-7 md:grid-cols-2">
               {agenda.map(({ icon: Icon, title: t, copy }) => (
                 <div
                   key={t}
-                  className="rounded-2xl border border-border bg-card/60 p-6 transition-all duration-300 hover:border-primary/50"
+                  className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50"
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-primary/15">
+                    <Icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mb-2 font-display text-xl font-semibold text-foreground">
+                  <h3 className="mb-3 font-display text-xl font-semibold text-foreground">
                     {t}
                   </h3>
-                  <p className="text-muted-foreground">{copy}</p>
+                  <p className="max-w-prose leading-relaxed text-muted-foreground">{copy}</p>
                 </div>
               ))}
             </div>
@@ -598,20 +703,21 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
         </section>
 
         {/* ── Takeaway playbook ── */}
-        <section className="bg-background-alt py-20 md:py-24">
+        <section className="bg-background-alt py-24 md:py-28">
           <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-4xl">
-              <div className="rounded-3xl border-2 border-primary/50 bg-card/80 p-8 shadow-xl md:p-12">
-                <div className="flex flex-col items-center gap-8 md:flex-row">
-                  <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-2xl bg-primary/15">
-                    <Download className="h-12 w-12 text-primary" />
+            <div className="mx-auto max-w-5xl">
+              <div className="relative overflow-hidden rounded-3xl border-2 border-primary bg-gradient-to-br from-primary/15 via-card/90 to-[hsl(188_78%_41%_/_0.12)] p-10 shadow-2xl shadow-primary/20 md:p-14">
+                <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-primary/25 blur-3xl" />
+                <div className="relative z-10 flex flex-col items-center gap-10 md:flex-row">
+                  <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-primary shadow-lg shadow-primary/40">
+                    <Download className="h-16 w-16 text-primary-foreground" />
                   </div>
                   <div className="text-center md:text-left">
                     <p className="section-subtitle">Stay to the End</p>
-                    <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
+                    <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
                       Take Home the AI Visibility Playbook
                     </h2>
-                    <p className="mt-4 text-lg text-muted-foreground">
+                    <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
                       Every attendee who stays through to the end of the session receives
                       the AI Visibility Playbook in digital format — the same step-by-step
                       checks and fixes we walk through together, written out so you can
@@ -626,28 +732,29 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
         </section>
 
         {/* ── Who this is for ── */}
-        <section className="py-20 md:py-24">
+        <section className="py-24 md:py-28">
           <div className="container mx-auto px-4">
+            <StoryStep step="5" label="What You'll Learn" />
             <SectionHeader
               subtitle="Who Should Attend"
               title="Built for Local Businesses and DIY Marketers"
               description="If you own the outcome of your own marketing, this session is for you."
             />
 
-            <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
+            <div className="mx-auto grid max-w-5xl items-stretch gap-10 md:grid-cols-2">
               {forWho.map(({ icon: Icon, title: t, points }) => (
-                <GlowCard key={t} className="p-8">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15">
-                    <Icon className="h-6 w-6 text-primary" />
+                <GlowCard key={t} className="flex h-full flex-col p-9 md:p-10">
+                  <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-primary/15">
+                    <Icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="mb-4 font-display text-2xl font-bold text-foreground">
+                  <h3 className="mb-5 font-display text-2xl font-bold text-foreground">
                     {t}
                   </h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-4">
                     {points.map((p) => (
                       <li key={p} className="flex gap-3">
                         <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                        <span className="text-muted-foreground">{p}</span>
+                        <span className="leading-relaxed text-muted-foreground">{p}</span>
                       </li>
                     ))}
                   </ul>
@@ -658,36 +765,48 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
         </section>
 
         {/* ── Host ── */}
-        <section className="bg-background-alt py-20 md:py-24">
+        <section className="bg-background-alt py-24 md:py-28">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl">
-              <div className="rounded-3xl border-2 border-primary/50 bg-card/80 p-8 shadow-xl md:p-12">
-                <div className="flex flex-col items-center gap-8 md:flex-row">
+              <div className="rounded-3xl border-2 border-primary/50 bg-card/80 p-9 shadow-xl md:p-14">
+                <div className="flex flex-col items-center gap-10 md:flex-row md:items-start">
                   <div className="shrink-0 text-center">
-                    <div className="h-36 w-36 overflow-hidden rounded-full border-4 border-primary/30 shadow-lg md:h-40 md:w-40">
+                    <div className="h-44 w-44 overflow-hidden rounded-full border-4 border-primary/30 shadow-lg md:h-52 md:w-52">
                       <img
                         src={baseContactCTA.image}
                         alt={`${baseContactCTA.name}, workshop host`}
-                        width={160}
-                        height={160}
+                        width={208}
+                        height={208}
                         loading="lazy"
                         className="h-full w-full object-cover"
                       />
                     </div>
+                    <ul className="mt-5 flex flex-wrap justify-center gap-2">
+                      {["AI Search Optimization", "Local SEO", "AI Visibility", "Digital Marketing"].map(
+                        (badge) => (
+                          <li
+                            key={badge}
+                            className="rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium text-primary"
+                          >
+                            {badge}
+                          </li>
+                        )
+                      )}
+                    </ul>
                   </div>
                   <div className="text-center md:text-left">
                     <p className="section-subtitle">Your Host</p>
                     <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
                       {baseContactCTA.name}, {baseContactCTA.role}
                     </h2>
-                    <p className="mt-4 text-lg text-muted-foreground">
+                    <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
                       Subrata leads GrowSmallBiz, a Bay Area digital marketing practice that
                       works with local service businesses on local SEO, AI search
                       optimization, and marketing automation. He runs these sessions the
                       same way he works with clients: show the evidence first, explain the
                       mechanics in plain language, then hand over the steps.
                     </p>
-                    <p className="mt-4 text-muted-foreground">
+                    <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
                       Sessions are hosted in partnership with local chambers of commerce.
                     </p>
                   </div>
@@ -698,8 +817,10 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
         </section>
 
         {/* ── Registration (GHL form goes here) ── */}
-        <section id="register" className="py-20 md:py-24">
-          <div className="container mx-auto px-4">
+        <section id="register" className="relative overflow-hidden py-24 md:py-28">
+          <div className="pointer-events-none absolute left-1/2 top-1/2 h-[32rem] w-[32rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-3xl" />
+          <div className="container relative z-10 mx-auto px-4">
+            <StoryStep step="6" label="Register" />
             <SectionHeader
               subtitle="Reserve Your Seat"
               title="Register for the Free AI Visibility Workshop"
@@ -717,14 +838,14 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                 Per project convention, cross-origin GHL iframes require a fixed height.
               */}
               <div
-                className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-primary/40 bg-card/40 p-10 text-center"
-                style={{ minHeight: "560px" }}
+                className="flex flex-col items-center justify-center rounded-3xl border-2 border-primary/60 bg-card/70 p-10 text-center shadow-2xl shadow-primary/20 backdrop-blur-sm"
+                style={{ minHeight: "480px" }}
               >
-                <Sparkles className="mb-4 h-10 w-10 text-primary" />
-                <p className="font-display text-xl font-semibold text-foreground">
+                <Sparkles className="mb-4 h-12 w-12 text-primary" />
+                <p className="font-display text-2xl font-bold text-foreground">
                   Registration form coming soon
                 </p>
-                <p className="mt-3 max-w-md text-muted-foreground">
+                <p className="mt-3 max-w-md leading-relaxed text-muted-foreground">
                   Seats for the next session open shortly. In the meantime, call{" "}
                   <a
                     href="tel:+19258863724"
@@ -734,6 +855,17 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
                   </a>{" "}
                   to be added to the invite list.
                 </p>
+                <Button
+                  variant="hero"
+                  size="xl"
+                  className="mt-8 min-h-11 transition-transform duration-300 hover:scale-[1.03]"
+                  asChild
+                >
+                  <a href="tel:+19258863724">
+                    Reserve My Free Seat
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
               </div>
 
               <p className="mt-6 text-center text-sm text-muted-foreground">
@@ -749,11 +881,13 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
           title="Workshop Questions, Answered"
           subtitle="Everything people ask before they register."
           faqs={faqs}
+          defaultOpenFirst
+          accordionClassName="!space-y-5 [&_[data-state]]:leading-relaxed"
         />
       </main>
 
       {/* ── Minimal footer ── */}
-      <footer className="border-t border-border bg-card py-10">
+      <footer className="border-t border-border bg-card py-12">
         <div className="container mx-auto px-4 text-center">
           <img
             src={growsmallbizLogo}
@@ -784,4 +918,4 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
   );
 };
 
-export default WorkshopLandingPage;
+export default WorkshopLandingPageRefined;
