@@ -339,6 +339,9 @@ export const WorkshopLandingPageRefined = ({
           <div className="container relative z-10 mx-auto px-4">
             <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-24">
               <div className="animate-fade-up text-center lg:max-w-[36rem] lg:text-left">
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground/80">
+                  Customers are increasingly asking AI which local business to hire.
+                </p>
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
                   <Sparkles className="h-4 w-4" />
                   Free 90-Minute AI Visibility Workshop {isOnline ? "· Online" : "· In Person"}
