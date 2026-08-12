@@ -316,6 +316,46 @@ export const WorkshopLandingPageRefined = ({
     },
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.answer,
+      },
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${BASE_URL}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Workshops",
+        item: `${BASE_URL}/workshops/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: isOnline
+          ? "AI Visibility Workshop — Online"
+          : "AI Visibility Workshop — In Person",
+        item: canonical,
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Head>
