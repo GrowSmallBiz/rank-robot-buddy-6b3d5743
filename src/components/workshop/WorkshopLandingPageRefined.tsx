@@ -475,7 +475,7 @@ export const WorkshopLandingPageRefined = ({
               description="Customers are increasingly using AI to research, compare, and choose local businesses. These three trends explain why AI Visibility is becoming an important part of modern digital marketing."
             />
 
-            <div className="mx-auto grid max-w-[86rem] items-stretch gap-6 md:grid-cols-[1.18fr_1fr_1fr]">
+            <div className="mx-auto grid max-w-[86rem] items-stretch gap-6 md:grid-cols-[1.25fr_1fr_1fr]">
               {shiftCards.map((card) => (
                 <div
                   key={card.title}
@@ -495,14 +495,13 @@ export const WorkshopLandingPageRefined = ({
                     />
                   </div>
                   <p className="mt-3 text-sm text-muted-foreground">{card.caption}</p>
-                  {card.source && (
-                    <p className="mt-auto pt-3 text-[10px] leading-snug text-muted-foreground/50">
-                      {card.source}
-                    </p>
-                  )}
                 </div>
               ))}
             </div>
+
+            <p className="mx-auto mt-10 max-w-3xl text-center text-[11px] leading-snug text-muted-foreground/60">
+              Sources: Similarweb • Datos • SparkToro • Company Reports (2025–2026)
+            </p>
 
           </div>
         </section>
