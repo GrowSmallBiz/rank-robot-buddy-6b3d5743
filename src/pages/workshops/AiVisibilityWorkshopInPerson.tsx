@@ -1,7 +1,7 @@
-import { WorkshopLandingPage } from "@/components/workshop/WorkshopLandingPage";
+import { WorkshopLandingPageRefined } from "@/components/workshop/WorkshopLandingPageRefined";
 
 const AiVisibilityWorkshopInPerson = () => (
-  <WorkshopLandingPage format="in-person" path="/workshops/in-person/" />
+  <WorkshopLandingPageRefined format="in-person" path="/workshops/in-person/" />
 );
 
 export default AiVisibilityWorkshopInPerson;
