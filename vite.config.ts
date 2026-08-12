@@ -14,6 +14,14 @@ while ((m = re.exec(appSrc)) !== null) {
   lazyPaths.add(p);
   lazyPaths.add(p + "/");
 }
+// Also include redirect routes (declared with `Component:` instead of `lazy:`)
+// so their pre-rendered HTML (meta refresh + canonical) is emitted.
+const reRedirect = /path:\s*["']([^"'*]+)["']\s*,\s*Component:/g;
+while ((m = reRedirect.exec(appSrc)) !== null) {
+  const p = "/" + m[1].replace(/^\//, "");
+  lazyPaths.add(p);
+  lazyPaths.add(p + "/");
+}
 lazyPaths.add("/");
 
 // https://vitejs.dev/config/
