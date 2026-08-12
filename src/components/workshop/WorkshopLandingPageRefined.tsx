@@ -21,7 +21,6 @@ import {
   Wrench,
   Store,
   Users,
-  Image as ImageIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
@@ -32,6 +31,9 @@ import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 
 import visibilityDashboard from "@/assets/workshop-ai-visibility-dashboard.webp";
 import citationsDashboard from "@/assets/workshop-ai-citations-dashboard.webp";
+import shiftKeywordsImg from "@/assets/shift-keywords-to-conversations.webp";
+import shiftGrowthImg from "@/assets/shift-search-growth-rate.webp";
+import shiftShareImg from "@/assets/shift-share-of-search.webp";
 
 const BASE_URL = "https://growsmallbiz.io";
 
@@ -224,17 +226,35 @@ const SectionTransition = ({ text }: { text: string }) => (
   </p>
 );
 
-/** Temporary placeholder marking where a custom graphic will be inserted later. */
-const GraphicPlaceholder = ({ title }: { title: string }) => (
-  <div className="mt-auto flex min-h-[180px] flex-col items-center justify-center rounded-xl border border-dashed border-border/80 bg-background/40 p-6 text-center">
-    <ImageIcon className="mb-3 h-7 w-7 text-muted-foreground/60" aria-hidden="true" />
-    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground/80">
-      Graphic Placeholder
-    </p>
-    <p className="mt-2 text-sm font-medium text-foreground/80">{title}</p>
-    <p className="mt-1 text-xs text-muted-foreground">Graphic will be inserted here.</p>
-  </div>
-);
+/** Graphics for the customer-behavior shift section. */
+const shiftCards = [
+  {
+    title: "From Keywords to Conversations",
+    image: shiftKeywordsImg,
+    alt: "Comparison of keyword search yesterday versus conversational AI questions today",
+    width: 1200,
+    height: 800,
+    caption: "Customers are asking complete questions instead of searching with keywords.",
+  },
+  {
+    title: "AI Search Is Growing Rapidly",
+    image: shiftGrowthImg,
+    alt: "Bar chart of year-over-year growth rates across search and AI platforms",
+    width: 1200,
+    height: 617,
+    caption:
+      "AI-powered search platforms are growing significantly faster than traditional search.",
+  },
+  {
+    title: "Google Still Leads Search",
+    image: shiftShareImg,
+    alt: "Bar chart of search share across Google, YouTube, Bing and AI platforms",
+    width: 1200,
+    height: 620,
+    caption: "Google remains dominant today while AI search continues to grow rapidly.",
+  },
+];
+
 
 /* ─── Component ──────────────────────────────────────────────────── */
 
@@ -447,36 +467,34 @@ export const WorkshopLandingPageRefined = ({
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="The Shift in Customer Behavior"
-              title="The Way Customers Find Local Businesses Is Changing"
-              description="Customers are no longer relying solely on traditional search engines. They're increasingly asking AI platforms which business to hire, what service to choose, and who they can trust. Understanding this shift is the first step toward improving your AI visibility."
+              title="AI Is Changing How Customers Choose Local Businesses"
+              description="Customers are increasingly using AI to research, compare, and choose local businesses. These three trends explain why AI Visibility is becoming an important part of modern digital marketing."
             />
 
-            <div className="mx-auto grid max-w-6xl items-stretch gap-7 md:grid-cols-3">
-              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
-                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
-                  Customers Are Searching Differently
-                </h3>
-                <GraphicPlaceholder title="Customer Search Journey Graphic" />
-              </div>
-              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
-                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
-                  AI Search Is Growing Rapidly
-                </h3>
-                <GraphicPlaceholder title="AI Search Growth Statistics" />
-              </div>
-              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
-                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
-                  AI Gives One Answer Instead of Ten Blue Links
-                </h3>
-                <GraphicPlaceholder title="Traditional Search vs AI Recommendations" />
-              </div>
+            <div className="mx-auto grid max-w-[86rem] items-stretch gap-6 md:grid-cols-3">
+              {shiftCards.map((card) => (
+                <div
+                  key={card.title}
+                  className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-5"
+                >
+                  <h3 className="mb-4 font-display text-xl font-semibold text-foreground">
+                    {card.title}
+                  </h3>
+                  <img
+                    src={card.image}
+                    alt={card.alt}
+                    width={card.width}
+                    height={card.height}
+                    loading="lazy"
+                    className="w-full rounded-xl border border-border/60 bg-background/60 object-contain"
+                  />
+                  <p className="mt-4 text-sm text-muted-foreground">{card.caption}</p>
+                </div>
+              ))}
             </div>
-
-            <p className="mx-auto mt-10 max-w-3xl text-center text-sm italic text-muted-foreground">
-              Understanding how search is changing naturally leads to the next question...
-            </p>
           </div>
         </section>
+
 
 
         {/* ── Credibility strip ── */}
@@ -517,7 +535,7 @@ export const WorkshopLandingPageRefined = ({
         {/* ── What is AI visibility ── */}
         <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
-            <SectionTransition text="Understanding the shift in customer behavior naturally leads to the next question." />
+            <SectionTransition text="If customer search behavior is changing, what does that mean for your business?" />
             <StoryStep step="1" label="Customers Are Searching Differently" />
             <SectionHeader
               subtitle="The New Front Door"
