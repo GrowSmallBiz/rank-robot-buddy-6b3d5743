@@ -234,26 +234,32 @@ const shiftCards = [
     alt: "Comparison of keyword search yesterday versus conversational AI questions today",
     width: 1200,
     height: 800,
-    caption: "Customers are asking complete questions instead of searching with keywords.",
+    caption:
+      "Customers are increasingly asking complete questions instead of searching with keywords.",
+    source: "",
   },
   {
-    title: "AI Search Is Growing Rapidly",
+    title: "AI Search Is Growing Faster Than Traditional Search",
     image: shiftGrowthImg,
     alt: "Bar chart of year-over-year growth rates across search and AI platforms",
     width: 1200,
     height: 617,
     caption:
-      "AI-powered search platforms are growing significantly faster than traditional search.",
+      "AI-powered search platforms are growing significantly faster than traditional search, making early adoption an important competitive advantage.",
+    source: "Sources: Similarweb • Datos • SparkToro • Company Reports",
   },
   {
-    title: "Google Still Leads Search",
+    title: "Google Still Dominates Search",
     image: shiftShareImg,
     alt: "Bar chart of search share across Google, YouTube, Bing and AI platforms",
     width: 1200,
     height: 620,
-    caption: "Google remains dominant today while AI search continues to grow rapidly.",
+    caption:
+      "Google remains the primary source of search traffic today while AI search continues to grow rapidly. Businesses should prepare for both.",
+    source: "Sources: Similarweb • Datos • SparkToro • Company Reports",
   },
 ];
+
 
 
 /* ─── Component ──────────────────────────────────────────────────── */
