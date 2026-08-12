@@ -475,6 +475,15 @@ export const Header = () => {
             </Link>
 
             <Link
+              to="/workshops/ai-visibility-in-person/"
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname.startsWith("/workshops") ? "text-primary" : "text-muted-foreground"
+              }`}
+            >
+              Workshops
+            </Link>
+
+            <Link
               to="/contact/"
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 location.pathname === "/contact/" || location.pathname === "/contact" ? "text-primary" : "text-muted-foreground"
@@ -821,6 +830,14 @@ export const Header = () => {
             className="block text-foreground font-medium"
           >
             About
+          </Link>
+
+          <Link
+            to="/workshops/ai-visibility-in-person/"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            Workshops
           </Link>
 
           <Link
