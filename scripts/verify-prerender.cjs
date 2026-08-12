@@ -58,8 +58,10 @@ function checkArtifact(file, minBytes = 100) {
 
 function checkHtml(file) {
   const rel = path.relative(DIST, file).replace(/\\/g, '/');
-  const isSoft = SOFT_PAGES.has(rel);
   const html = fs.readFileSync(file, 'utf8');
+  // Redirect stubs (meta refresh) are intentionally near-empty — treat as soft.
+  const isRedirectStub = /<meta[^>]+http-equiv=["']refresh["']/i.test(html);
+  const isSoft = SOFT_PAGES.has(rel) || isRedirectStub;
   const err = (msg) => errors.push(`[${rel}] ${msg}`);
   const warn = (msg) => warnings.push(`[${rel}] ${msg}`);
 
