@@ -309,7 +309,7 @@ export const WorkshopLandingPageRefined = ({
 
       <main id="main-content">
         {/* ── Hero ── */}
-        <section className="relative overflow-hidden py-28 md:py-36">
+        <section className="relative overflow-hidden pt-28 pb-12 md:pt-36 md:pb-16">
           <div className="absolute inset-0">
             <img
               src={visibilityDashboard}
@@ -378,7 +378,7 @@ export const WorkshopLandingPageRefined = ({
                   </Button>
                 </div>
 
-                <div className="mt-12 flex flex-wrap justify-center gap-2 lg:justify-start">
+                <div className="mt-10 flex flex-wrap justify-center gap-2 lg:justify-start">
                   <span className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-card/50 px-4 py-2 text-xs font-medium text-muted-foreground backdrop-blur-sm">
                     <Bot className="h-4 w-4 text-primary/80" />
                     Supports all major AI platforms
@@ -404,7 +404,7 @@ export const WorkshopLandingPageRefined = ({
           <div className="container mx-auto px-4">
             <dl className="grid grid-cols-2 divide-border/50 sm:grid-cols-3 lg:grid-cols-5 lg:divide-x">
               {detailChips.map(({ icon: Icon, label, value }) => (
-                <div key={label} className="flex items-center gap-3 px-4 py-4">
+                <div key={label} className="flex items-center gap-3 px-4 py-3">
                   <Icon className="h-4 w-4 shrink-0 text-primary/80" />
                   <div>
                     <dt className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
