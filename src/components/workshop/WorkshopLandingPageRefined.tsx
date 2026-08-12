@@ -354,12 +354,12 @@ export const WorkshopLandingPageRefined = ({
                   </span>
                 </h1>
 
-                <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
-                  Learn how to accurately measure your business's AI visibility, understand
-                  why AI recommends some businesses over others, and leave with a practical
-                  action plan to improve your chances of being recommended consistently
-                  across today's leading AI platforms.
+                <p className="mx-auto mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground lg:mx-0">
+                  Learn how to accurately measure your AI visibility, understand why AI
+                  recommends some businesses over others, and leave with a practical action
+                  plan you can implement immediately.
                 </p>
+
 
                 <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
                   <Button
