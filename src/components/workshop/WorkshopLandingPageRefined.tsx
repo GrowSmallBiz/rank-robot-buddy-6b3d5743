@@ -234,26 +234,32 @@ const shiftCards = [
     alt: "Comparison of keyword search yesterday versus conversational AI questions today",
     width: 1200,
     height: 800,
-    caption: "Customers are asking complete questions instead of searching with keywords.",
+    caption:
+      "Customers are increasingly asking complete questions instead of searching with keywords.",
+    source: "",
   },
   {
-    title: "AI Search Is Growing Rapidly",
+    title: "AI Search Is Growing Faster Than Traditional Search",
     image: shiftGrowthImg,
     alt: "Bar chart of year-over-year growth rates across search and AI platforms",
     width: 1200,
     height: 617,
     caption:
-      "AI-powered search platforms are growing significantly faster than traditional search.",
+      "AI-powered search platforms are growing significantly faster than traditional search, making early adoption an important competitive advantage.",
+    source: "Sources: Similarweb • Datos • SparkToro • Company Reports",
   },
   {
-    title: "Google Still Leads Search",
+    title: "Google Still Dominates Search",
     image: shiftShareImg,
     alt: "Bar chart of search share across Google, YouTube, Bing and AI platforms",
     width: 1200,
     height: 620,
-    caption: "Google remains dominant today while AI search continues to grow rapidly.",
+    caption:
+      "Google remains the primary source of search traffic today while AI search continues to grow rapidly. Businesses should prepare for both.",
+    source: "Sources: Similarweb • Datos • SparkToro • Company Reports",
   },
 ];
+
 
 
 /* ─── Component ──────────────────────────────────────────────────── */
@@ -466,32 +472,41 @@ export const WorkshopLandingPageRefined = ({
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-4">
             <SectionHeader
-              subtitle="The Shift in Customer Behavior"
+              className="mx-auto max-w-4xl"
+              subtitle="Why AI Visibility Matters"
               title="AI Is Changing How Customers Choose Local Businesses"
               description="Customers are increasingly using AI to research, compare, and choose local businesses. These three trends explain why AI Visibility is becoming an important part of modern digital marketing."
             />
 
-            <div className="mx-auto grid max-w-[86rem] items-stretch gap-6 md:grid-cols-3">
+            <div className="mx-auto grid max-w-[86rem] items-stretch gap-6 md:grid-cols-[1.18fr_1fr_1fr]">
               {shiftCards.map((card) => (
                 <div
                   key={card.title}
                   className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-5"
                 >
-                  <h3 className="mb-4 font-display text-xl font-semibold text-foreground">
+                  <h3 className="mb-3 min-h-[3.5rem] font-display text-xl font-semibold leading-snug text-foreground">
                     {card.title}
                   </h3>
-                  <img
-                    src={card.image}
-                    alt={card.alt}
-                    width={card.width}
-                    height={card.height}
-                    loading="lazy"
-                    className="w-full rounded-xl border border-border/60 bg-background/60 object-contain"
-                  />
-                  <p className="mt-4 text-sm text-muted-foreground">{card.caption}</p>
+                  <div className="rounded-xl border border-border/60 bg-background p-2">
+                    <img
+                      src={card.image}
+                      alt={card.alt}
+                      width={card.width}
+                      height={card.height}
+                      loading="lazy"
+                      className="w-full rounded-lg object-contain mix-blend-screen"
+                    />
+                  </div>
+                  <p className="mt-3 text-sm text-muted-foreground">{card.caption}</p>
+                  {card.source && (
+                    <p className="mt-auto pt-3 text-[11px] text-muted-foreground/70">
+                      {card.source}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
+
           </div>
         </section>
 
