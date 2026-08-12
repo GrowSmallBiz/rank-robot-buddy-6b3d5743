@@ -108,8 +108,10 @@ export const WorkbookMockup = () => (
       <div className="pointer-events-none mx-auto mt-5 h-6 w-[80%] rounded-[100%] bg-background/90 blur-xl transition-all duration-500 group-hover:w-[86%] group-hover:opacity-80" />
     </div>
 
-    <p className="mt-4 max-w-md text-center text-sm leading-relaxed text-muted-foreground md:text-base">
-      Provided to attendees who participate through the end of the live workshop.
+    <p className="mt-5 max-w-sm text-center text-sm leading-relaxed text-muted-foreground">
+      Exclusive resource provided only to attendees who participate through the end of the
+      live workshop.
     </p>
+
   </div>
 );
