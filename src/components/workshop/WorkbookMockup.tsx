@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 
 /**
  * Premium 3D spiral-bound workbook mockup used as the hero bonus visual.
@@ -10,12 +10,12 @@ export const WorkbookMockup = () => (
       {/* Bonus badge */}
       <span className="absolute -left-3 -top-3 z-20 inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-primary-foreground shadow-lg shadow-primary/40 md:-left-5 md:-top-4">
         <Sparkles className="h-3.5 w-3.5" />
-        Exclusive Attendee Resource
+        Workshop Exclusive
       </span>
 
 
       {/* Book */}
-      <div className="relative w-[15.5rem] transition-transform duration-500 ease-out [transform:rotateY(17deg)_rotateX(6deg)] group-hover:-translate-y-2 group-hover:[transform:rotateY(15deg)_rotateX(5deg)] md:w-[17rem]">
+      <div className="relative w-[17.8rem] transition-transform duration-500 ease-out [transform:rotateY(17deg)_rotateX(6deg)] group-hover:-translate-y-2 group-hover:[transform:rotateY(15deg)_rotateX(5deg)] md:w-[19.5rem]">
         {/* Page stack (thickness) */}
         <div className="absolute inset-y-2 -right-2 rounded-r-md bg-gradient-to-r from-foreground/70 to-foreground/25 [width:14px]" />
         <div className="absolute inset-y-3 -right-3 rounded-r-md bg-foreground/20 [width:14px]" />
@@ -73,7 +73,7 @@ export const WorkbookMockup = () => (
               <h3 className="mt-5 font-display text-[1.5rem] font-extrabold leading-[1.1] text-foreground md:text-[1.75rem]">
                 AI Visibility
                 <br />
-                Action Workbook
+                Workshop Workbook
               </h3>
               <div className="mt-3 h-[3px] w-14 rounded-full bg-primary" />
               <p className="mt-3 text-[11px] font-medium leading-relaxed tracking-wide text-foreground/75 md:text-xs">
@@ -109,9 +109,22 @@ export const WorkbookMockup = () => (
     </div>
 
     <p className="mt-5 max-w-sm text-center text-sm leading-relaxed text-muted-foreground">
-      Exclusive resource provided only to attendees who participate through the end of the
-      live workshop.
+      Complete this workbook during the session and leave with your personalized AI Visibility
+      Action Plan.
     </p>
+
+    <ul className="mt-4 space-y-1.5 text-left">
+      {[
+        "AI Visibility Checklist",
+        "AI Recommendation Scorecard",
+        "90-Day Action Plan",
+      ].map((item) => (
+        <li key={item} className="flex items-center gap-2 text-xs text-muted-foreground/80">
+          <Check className="h-3.5 w-3.5 shrink-0 text-primary/70" />
+          {item}
+        </li>
+      ))}
+    </ul>
 
   </div>
 );

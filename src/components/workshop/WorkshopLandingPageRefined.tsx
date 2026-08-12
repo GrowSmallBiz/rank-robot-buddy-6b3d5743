@@ -236,7 +236,7 @@ export const WorkshopLandingPageRefined = ({
     isOnline
       ? { icon: Video, label: "Format", value: "Live online • 90 minutes" }
       : { icon: Building2, label: "Format", value: "Live in person • 90 minutes" },
-    { icon: Ticket, label: "Admission", value: "Free" },
+    { icon: Ticket, label: "Cost", value: "Free" },
     { icon: Users, label: "Seats", value: "Limited" },
   ];
 
@@ -339,6 +339,9 @@ export const WorkshopLandingPageRefined = ({
           <div className="container relative z-10 mx-auto px-4">
             <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-24">
               <div className="animate-fade-up text-center lg:max-w-[36rem] lg:text-left">
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground/80">
+                  Customers are increasingly asking AI which local business to hire.
+                </p>
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
                   <Sparkles className="h-4 w-4" />
                   Free 90-Minute AI Visibility Workshop {isOnline ? "· Online" : "· In Person"}
@@ -351,12 +354,12 @@ export const WorkshopLandingPageRefined = ({
                   </span>
                 </h1>
 
-                <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
-                  Learn how to accurately measure your business's AI visibility, understand
-                  why AI recommends some businesses over others, and leave with a practical
-                  action plan to improve your chances of being recommended consistently
-                  across today's leading AI platforms.
+                <p className="mx-auto mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground lg:mx-0">
+                  Learn how to accurately measure your AI visibility, understand why AI
+                  recommends some businesses over others, and leave with a practical action
+                  plan you can implement immediately.
                 </p>
+
 
                 <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
                   <Button
@@ -376,27 +379,22 @@ export const WorkshopLandingPageRefined = ({
                 </div>
 
                 <div className="mt-12 flex flex-wrap justify-center gap-2 lg:justify-start">
-                  {["ChatGPT", "Gemini", "Claude", "Google AI", "Perplexity", "Grok"].map(
-                    (chip) => (
-                      <span
-                        key={chip}
-                        className="rounded-full border border-border/70 bg-card/50 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm"
-                      >
-                        {chip}
-                      </span>
-                    ),
-                  )}
+                  <span className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-card/50 px-4 py-2 text-xs font-medium text-muted-foreground backdrop-blur-sm">
+                    <Bot className="h-4 w-4 text-primary/80" />
+                    Supports all major AI platforms
+                  </span>
                 </div>
 
                 <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-primary/90">
-                  Built for Local Service Businesses
+                  Designed for Local Service Businesses
                 </p>
               </div>
 
               {/* RIGHT COLUMN — single hero visual: the workbook */}
-              <div className="relative mx-auto w-full max-w-md animate-fade-up lg:mx-0 lg:justify-self-end">
+              <div className="relative mx-auto w-full max-w-lg animate-fade-up lg:mx-0 lg:mt-10 lg:justify-self-end">
                 <WorkbookMockup />
               </div>
+
             </div>
           </div>
         </section>
