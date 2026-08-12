@@ -24,58 +24,92 @@ export const WorkbookMockup = () => (
 
         {/* Cover */}
         <div className="relative overflow-hidden rounded-md rounded-l-sm border border-primary/25 bg-[hsl(210_55%_10%)] shadow-2xl shadow-background/80 ring-1 ring-inset ring-foreground/5">
-          {/* Cover art */}
-          <div className="pointer-events-none absolute inset-0">
-            <div className="absolute inset-x-4 bottom-[18%] overflow-hidden rounded-md border border-foreground/10 bg-[hsl(210_55%_7%)] shadow-lg">
+          {/* Subtle network / grid texture */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 opacity-[0.16]"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 1px 1px, hsl(var(--primary)/0.55) 1px, transparent 0), linear-gradient(hsl(var(--foreground)/0.05) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)/0.05) 1px, transparent 1px)",
+              backgroundSize: "34px 34px, 34px 34px, 34px 34px",
+            }}
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 opacity-[0.12]"
+            style={{
+              backgroundImage:
+                "linear-gradient(115deg, transparent 48%, hsl(var(--primary)/0.5) 49%, transparent 50%), linear-gradient(60deg, transparent 62%, hsl(190 70% 55% / 0.4) 63%, transparent 64%)",
+            }}
+          />
+
+          {/* Cover content */}
+          <div className="relative z-10 flex aspect-[3/4] flex-col p-6 md:p-7">
+            {/* Attendee Exclusive ribbon */}
+            <span
+              className="inline-block self-start bg-primary px-3.5 py-1 text-[9px] font-bold uppercase leading-[1.4] tracking-[0.18em] text-primary-foreground shadow"
+              style={{
+                clipPath:
+                  "polygon(0 0, 100% 0, calc(100% - 7px) 50%, 100% 100%, 0 100%)",
+              }}
+            >
+              Attendee Exclusive
+            </span>
+
+            {/* Title */}
+            <h3 className="mt-7 font-display leading-[1.05] text-foreground">
+              <span className="block text-[1.75rem] font-extrabold tracking-tight md:text-[2rem]">
+                AI Visibility
+              </span>
+              <span className="mt-1.5 block text-[0.95rem] font-semibold tracking-[0.06em] text-foreground/70 md:text-base">
+                Workshop Playbook
+              </span>
+            </h3>
+            <div className="mt-4 h-[3px] w-14 rounded-full bg-primary" />
+            <p className="mt-4 text-[11px] font-medium leading-relaxed tracking-wide text-foreground/70 md:text-xs">
+              Measure • Understand • Improve
+            </p>
+
+            {/* Chart — integrated as a designed graphic */}
+            <div className="mt-7 overflow-hidden rounded-md border border-primary/15 bg-[hsl(210_55%_7%)]/80 p-2 shadow-lg">
               <img
                 src={coverArt}
                 alt="Citations by platform chart showing AI visibility share across ChatGPT, Google AI Mode, Perplexity, Gemini and Copilot"
                 width={1574}
                 height={456}
                 loading="lazy"
-                className="w-full"
+                className="w-full rounded-sm opacity-90"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(210_55%_10%)] via-transparent to-[hsl(210_55%_10%)]/85" />
-          </div>
 
-
-
-          {/* Cover content */}
-          <div className="relative z-10 flex aspect-[3/4] flex-col justify-between p-6 md:p-7">
-            <div>
-              {/* Attendee Exclusive ribbon */}
-              <span
-                className="inline-block bg-primary px-3 py-1 text-[9px] font-bold uppercase tracking-[0.18em] text-primary-foreground shadow"
-                style={{
-                  clipPath:
-                    "polygon(0 0, 100% 0, calc(100% - 7px) 50%, 100% 100%, 0 100%)",
-                }}
-              >
-                Attendee Exclusive
-              </span>
-              <h3 className="mt-5 font-display text-[1.5rem] font-extrabold leading-[1.1] text-foreground md:text-[1.75rem]">
-                AI Visibility
-                <br />
-                Workshop Playbook
-              </h3>
-              <div className="mt-3 h-[3px] w-14 rounded-full bg-primary" />
-              <p className="mt-3 text-[11px] font-medium leading-relaxed tracking-wide text-foreground/75 md:text-xs">
-                Measure • Improve • Get Recommended by AI
+            {/* Branding */}
+            <div className="mt-auto pt-7">
+              <p className="text-[9px] uppercase tracking-[0.2em] text-foreground/45">
+                GrowSmallBiz Playbook Series
               </p>
-            </div>
-
-            <div className="border-t border-foreground/15 pt-3">
-              <p className="font-display text-sm font-bold text-foreground">GrowSmallBiz</p>
-              <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-                Workshop Edition
-              </p>
+              <div className="mt-2 flex items-end justify-between border-t border-foreground/15 pt-3">
+                <div>
+                  <p className="font-display text-sm font-bold text-foreground">GrowSmallBiz</p>
+                  <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                    Workshop Edition
+                  </p>
+                </div>
+                <div className="text-right">
+                  <p className="text-[9px] uppercase tracking-[0.16em] text-foreground/55">
+                    First Edition
+                  </p>
+                  <p className="font-display text-[11px] font-semibold tracking-[0.1em] text-primary">
+                    2026
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Spine sheen */}
           <div className="pointer-events-none absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-background/70 to-transparent" />
         </div>
+
 
         {/* Spiral binding */}
         <div className="absolute -left-2 inset-y-6 flex flex-col justify-between">
