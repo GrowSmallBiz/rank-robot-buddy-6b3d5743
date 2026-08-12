@@ -21,7 +21,6 @@ import {
   Wrench,
   Store,
   Users,
-  Image as ImageIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
@@ -32,6 +31,9 @@ import growsmallbizLogo from "@/assets/growsmallbiz-logo.webp";
 
 import visibilityDashboard from "@/assets/workshop-ai-visibility-dashboard.webp";
 import citationsDashboard from "@/assets/workshop-ai-citations-dashboard.webp";
+import shiftKeywordsImg from "@/assets/shift-keywords-to-conversations.webp";
+import shiftGrowthImg from "@/assets/shift-search-growth-rate.webp";
+import shiftShareImg from "@/assets/shift-share-of-search.webp";
 
 const BASE_URL = "https://growsmallbiz.io";
 
@@ -533,7 +535,7 @@ export const WorkshopLandingPageRefined = ({
         {/* ── What is AI visibility ── */}
         <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
-            <SectionTransition text="Understanding the shift in customer behavior naturally leads to the next question." />
+            <SectionTransition text="If customer search behavior is changing, what does that mean for your business?" />
             <StoryStep step="1" label="Customers Are Searching Differently" />
             <SectionHeader
               subtitle="The New Front Door"
