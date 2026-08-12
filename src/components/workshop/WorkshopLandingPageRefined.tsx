@@ -1,5 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
+import { WorkbookMockup } from "@/components/workshop/WorkbookMockup";
+
 import {
   Sparkles,
   Search,
@@ -441,51 +443,9 @@ export const WorkshopLandingPageRefined = ({
                 </div>
               </div>
 
-              {/* ── Bonus playbook banner — aggressive takeaway pitch ── */}
-              <div className="relative mt-6 overflow-hidden rounded-2xl border-2 border-primary/70 bg-gradient-to-br from-primary/15 via-card/90 to-[hsl(188_78%_41%_/_0.15)] p-6 shadow-2xl shadow-primary/20 md:p-7">
-                <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-primary/25 blur-3xl" />
-                <div className="pointer-events-none absolute -left-10 -bottom-10 h-40 w-40 rounded-full bg-[hsl(188_78%_41%_/_0.2)] blur-3xl" />
-                <div className="relative z-10">
-                  <div className="flex items-center gap-3">
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-primary-foreground shadow-lg shadow-primary/40">
-                      <Download className="h-3.5 w-3.5" />
-                      Free Bonus
-                    </span>
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-                      Yours to keep — even if you never book a call
-                    </span>
-                  </div>
-                  <h2 className="mt-4 font-display text-2xl font-bold leading-tight text-foreground md:text-3xl">
-                    Walk Out With the{" "}
-                    <span className="bg-gradient-to-r from-primary to-[hsl(188_78%_55%)] bg-clip-text text-transparent">
-                      AI Visibility Playbook
-                    </span>
-                  </h2>
-                  <p className="mt-3 text-base leading-relaxed text-foreground/85 md:text-lg">
-                    Every attendee leaves with a practical, step-by-step playbook to get
-                    recommended consistently — the exact checklist we use to move a local
-                    service business from <span className="font-semibold text-foreground">invisible</span> to{" "}
-                    <span className="font-semibold text-primary">named and cited</span> across ChatGPT, Gemini,
-                    Perplexity, Claude, Grok, and Google AI Overviews. No fluff. No upsell. Just
-                    the plays, in order, you can run the same week.
-                  </p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {[
-                      "The 6-platform audit template",
-                      "Week-by-week action plan",
-                      "Done-for-you prompt library",
-                      "Citation & entity checklist",
-                    ].map((item) => (
-                      <span
-                        key={item}
-                        className="rounded-full border border-primary/40 bg-background/60 px-3 py-1.5 text-sm font-medium text-foreground"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              {/* ── Bonus: premium AI Visibility Workbook mockup ── */}
+              <WorkbookMockup />
+
             </div>
 
             <div className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
