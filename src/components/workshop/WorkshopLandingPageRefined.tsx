@@ -236,7 +236,7 @@ export const WorkshopLandingPageRefined = ({
     isOnline
       ? { icon: Video, label: "Format", value: "Live online • 90 minutes" }
       : { icon: Building2, label: "Format", value: "Live in person • 90 minutes" },
-    { icon: Ticket, label: "Admission", value: "Free" },
+    { icon: Ticket, label: "Cost", value: "Free" },
     { icon: Users, label: "Seats", value: "Limited" },
   ];
 
