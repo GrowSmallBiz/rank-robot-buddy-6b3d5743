@@ -282,7 +282,7 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
               width={1920}
               height={1179}
               fetchPriority="high"
-              className="h-full w-full object-cover opacity-40"
+              className="h-full w-full object-cover opacity-60"
             />
             <img
               src={citationsDashboard}
@@ -291,10 +291,10 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
               width={1920}
               height={1096}
               loading="lazy"
-              className="absolute right-0 top-1/2 hidden h-3/5 w-2/5 -translate-y-1/2 object-cover opacity-30 mix-blend-screen lg:block"
+              className="absolute right-0 top-1/2 hidden h-3/5 w-2/5 -translate-y-1/2 object-cover opacity-50 mix-blend-screen lg:block"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/50 to-background/80" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/10 to-transparent" />
           </div>
           <div className="pointer-events-none absolute inset-0 hero-glow" />
           <div className="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
