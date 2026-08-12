@@ -67,12 +67,12 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img 
-              src={growsmallbizLogo} 
-              alt="GrowSmallBiz logo featuring digital marketing services for painting contractors, emphasizing AI SEO, PPC, web, social media, and automation." 
-              className="h-16 w-auto"
-              width={64}
-              height={64} />
+            <img
+              src={growsmallbizLogo}
+              alt="GrowSmallBiz logo featuring digital marketing services for painting contractors, emphasizing AI SEO, PPC, web, social media, and automation."
+              className="h-24 w-auto"
+              width={96}
+              height={96} />
           </Link>
 
           {/* Desktop Navigation */}

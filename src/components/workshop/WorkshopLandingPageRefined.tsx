@@ -333,7 +333,7 @@ export const WorkshopLandingPageRefined = ({
 
       <main id="main-content">
         {/* ── Hero ── */}
-        <section className="relative overflow-hidden pt-16 pb-10 md:pt-36 md:pb-16">
+        <section className="relative overflow-hidden pt-8 pb-10 md:pt-20 md:pb-16">
           <div className="absolute inset-0">
             <img
               src={visibilityDashboard}
