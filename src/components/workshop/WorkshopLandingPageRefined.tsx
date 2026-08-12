@@ -421,7 +421,7 @@ export const WorkshopLandingPageRefined = ({
                     </a>
                   </Button>
                   <Button variant="heroOutline" size="xl" asChild>
-                    <a href="#what-youll-learn">See What's Covered</a>
+                    <a href="#workshop-takeaways">See What's Covered</a>
                   </Button>
                 </div>
 
