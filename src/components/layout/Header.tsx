@@ -833,6 +833,14 @@ export const Header = () => {
           </Link>
 
           <Link
+            to="/workshops/ai-visibility-in-person/"
+            onClick={() => setIsOpen(false)}
+            className="block text-foreground font-medium"
+          >
+            Workshops
+          </Link>
+
+          <Link
             to="/contact/"
             onClick={() => setIsOpen(false)}
             className="block text-foreground font-medium"
