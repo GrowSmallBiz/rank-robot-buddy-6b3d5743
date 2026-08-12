@@ -224,17 +224,35 @@ const SectionTransition = ({ text }: { text: string }) => (
   </p>
 );
 
-/** Temporary placeholder marking where a custom graphic will be inserted later. */
-const GraphicPlaceholder = ({ title }: { title: string }) => (
-  <div className="mt-auto flex min-h-[180px] flex-col items-center justify-center rounded-xl border border-dashed border-border/80 bg-background/40 p-6 text-center">
-    <ImageIcon className="mb-3 h-7 w-7 text-muted-foreground/60" aria-hidden="true" />
-    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground/80">
-      Graphic Placeholder
-    </p>
-    <p className="mt-2 text-sm font-medium text-foreground/80">{title}</p>
-    <p className="mt-1 text-xs text-muted-foreground">Graphic will be inserted here.</p>
-  </div>
-);
+/** Graphics for the customer-behavior shift section. */
+const shiftCards = [
+  {
+    title: "From Keywords to Conversations",
+    image: shiftKeywordsImg,
+    alt: "Comparison of keyword search yesterday versus conversational AI questions today",
+    width: 1200,
+    height: 800,
+    caption: "Customers are asking complete questions instead of searching with keywords.",
+  },
+  {
+    title: "AI Search Is Growing Rapidly",
+    image: shiftGrowthImg,
+    alt: "Bar chart of year-over-year growth rates across search and AI platforms",
+    width: 1200,
+    height: 617,
+    caption:
+      "AI-powered search platforms are growing significantly faster than traditional search.",
+  },
+  {
+    title: "Google Still Leads Search",
+    image: shiftShareImg,
+    alt: "Bar chart of search share across Google, YouTube, Bing and AI platforms",
+    width: 1200,
+    height: 620,
+    caption: "Google remains dominant today while AI search continues to grow rapidly.",
+  },
+];
+
 
 /* ─── Component ──────────────────────────────────────────────────── */
 
