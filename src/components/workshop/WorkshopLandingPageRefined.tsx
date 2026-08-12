@@ -18,7 +18,6 @@ import {
   Building2,
   CheckCircle2,
   XCircle,
-  Download,
   Wrench,
   Store,
   Users,
@@ -797,32 +796,8 @@ export const WorkshopLandingPageRefined = ({
           </div>
         </section>
 
-        {/* ── Workbook ── */}
-        <section className="py-14 md:py-28">
-          <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-5xl">
-              <div className="relative overflow-hidden rounded-3xl border-2 border-primary bg-gradient-to-br from-primary/15 via-card/90 to-[hsl(188_78%_41%_/_0.12)] p-10 shadow-2xl shadow-primary/20 md:p-14">
-                <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-primary/25 blur-3xl" />
-                <div className="relative z-10 flex flex-col items-center gap-10 md:flex-row">
-                  <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-primary shadow-lg shadow-primary/40">
-                    <Download className="h-16 w-16 text-primary-foreground" />
-                  </div>
-                  <div className="text-center md:text-left">
-                    <p className="section-subtitle">Stay to the End</p>
-                    <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-                      AI Visibility Workshop Workbook
-                    </h2>
-                    <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-                      Complete this workbook during the live workshop and leave with a
-                      personalized AI Visibility Action Plan you can immediately put into
-                      practice.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+
 
         {/* ── Outcomes ── */}
         <section className="bg-background-alt py-14 md:py-28">
@@ -900,53 +875,60 @@ export const WorkshopLandingPageRefined = ({
               }
             />
 
-            <div className="mx-auto max-w-3xl">
-              {/*
-                GHL SIGN-UP FORM GOES HERE.
-                Replace the placeholder block below with the GoHighLevel iframe embed.
-                Per project convention, cross-origin GHL iframes require a fixed height.
-              */}
-              <div
-                className="flex flex-col items-center justify-center rounded-3xl border-2 border-primary/60 bg-card/70 p-10 text-center shadow-2xl shadow-primary/20 backdrop-blur-sm"
-                style={{ minHeight: "480px" }}
-              >
-                <Sparkles className="mb-4 h-12 w-12 text-primary" />
-                <p className="font-display text-2xl font-bold text-foreground">
-                  Registration form coming soon
-                </p>
-                <p className="mt-3 max-w-md leading-relaxed text-muted-foreground">
-                  Seats for the next session open shortly. In the meantime, call{" "}
-                  <a
-                    href="tel:+19258863724"
-                    className="text-primary underline-offset-4 hover:underline"
-                  >
-                    +1 (925) 886-3724
-                  </a>{" "}
-                  to be added to the invite list.
-                </p>
-                <Button
-                  variant="hero"
-                  size="xl"
-                  className="mt-8 min-h-11 transition-transform duration-300 hover:scale-[1.03]"
-                  asChild
+            <div className="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]">
+              <div>
+                {/*
+                  GHL SIGN-UP FORM GOES HERE.
+                  Replace the placeholder block below with the GoHighLevel iframe embed.
+                  Per project convention, cross-origin GHL iframes require a fixed height.
+                */}
+                <div
+                  className="flex flex-col items-center justify-center rounded-3xl border-2 border-primary/60 bg-card/70 p-10 text-center shadow-2xl shadow-primary/20 backdrop-blur-sm"
+                  style={{ minHeight: "480px" }}
                 >
-                  <a href="tel:+19258863724">
-                    Reserve My Free Seat
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
+                  <Sparkles className="mb-4 h-12 w-12 text-primary" />
+                  <p className="font-display text-2xl font-bold text-foreground">
+                    Registration form coming soon
+                  </p>
+                  <p className="mt-3 max-w-md leading-relaxed text-muted-foreground">
+                    Seats for the next session open shortly. In the meantime, call{" "}
+                    <a
+                      href="tel:+19258863724"
+                      className="text-primary underline-offset-4 hover:underline"
+                    >
+                      +1 (925) 886-3724
+                    </a>{" "}
+                    to be added to the invite list.
+                  </p>
+                  <Button
+                    variant="hero"
+                    size="xl"
+                    className="mt-8 min-h-11 transition-transform duration-300 hover:scale-[1.03]"
+                    asChild
+                  >
+                    <a href="tel:+19258863724">
+                      Reserve My Free Seat
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </a>
+                  </Button>
+                </div>
+
+                <p className="mt-6 text-center text-sm text-muted-foreground">
+                  No sales pitch. Practical education. Live Q&amp;A. The AI Visibility
+                  Workshop Workbook will be provided exclusively to attendees who
+                  participate through the end of the live workshop.
+                </p>
+                <p className="mt-3 text-center text-sm text-muted-foreground">
+                  No commitment. No pressure. Just a straight explanation of how AI search
+                  works and what to do about it.
+                </p>
               </div>
 
-              <p className="mt-6 text-center text-sm text-muted-foreground">
-                No sales pitch. Practical education. Live Q&amp;A. The AI Visibility
-                Workshop Workbook will be provided exclusively to attendees who
-                participate through the end of the live workshop.
-              </p>
-              <p className="mt-3 text-center text-sm text-muted-foreground">
-                No commitment. No pressure. Just a straight explanation of how AI search
-                works and what to do about it.
-              </p>
+              <div className="flex justify-center lg:pt-4">
+                <WorkbookMockup />
+              </div>
             </div>
+
           </div>
         </section>
 
