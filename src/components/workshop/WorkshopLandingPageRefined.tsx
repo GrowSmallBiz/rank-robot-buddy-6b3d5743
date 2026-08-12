@@ -18,7 +18,6 @@ import {
   Building2,
   CheckCircle2,
   XCircle,
-  Download,
   Wrench,
   Store,
   Users,
