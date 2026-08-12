@@ -499,7 +499,7 @@ export const WorkshopLandingPageRefined = ({
                   </div>
                   <p className="mt-3 text-sm text-muted-foreground">{card.caption}</p>
                   {card.source && (
-                    <p className="mt-auto pt-3 text-[11px] text-muted-foreground/70">
+                    <p className="mt-auto pt-3 text-[10px] leading-snug text-muted-foreground/50">
                       {card.source}
                     </p>
                   )}
