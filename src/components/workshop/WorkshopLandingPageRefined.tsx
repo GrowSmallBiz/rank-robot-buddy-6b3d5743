@@ -17,6 +17,7 @@ import {
   Video,
   Building2,
   CheckCircle2,
+  ChevronDown,
   XCircle,
   Download,
   Wrench,
@@ -418,14 +419,15 @@ export const WorkshopLandingPageRefined = ({
                 </div>
               </div>
 
-              {/* What you'll learn — summary bullets */}
-              <div className="relative mx-auto w-full max-w-xl animate-fade-up lg:mx-0 lg:max-w-[34rem] lg:justify-self-end">
+              {/* RIGHT COLUMN — vertical progression: Learn → Receive → Attend */}
+              <div className="relative mx-auto flex w-full max-w-xl animate-fade-up flex-col gap-10 lg:mx-0 lg:max-w-[34rem] lg:justify-self-end lg:gap-12">
+                {/* What You'll Learn */}
                 <div className="rounded-2xl border border-primary/30 bg-card/80 p-7 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-9">
                   <h2 className="flex items-center gap-2 font-display text-xl font-bold text-foreground">
                     <ListChecks className="h-5 w-5 text-primary" />
                     What You'll Learn
                   </h2>
-                  <ul className="mt-6 space-y-5">
+                  <ul className="mt-6 space-y-4">
                     {[
                       "What AI visibility is and why it now matters for local service businesses",
                       "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
@@ -441,26 +443,36 @@ export const WorkshopLandingPageRefined = ({
                     ))}
                   </ul>
                 </div>
-              </div>
 
-              {/* ── Bonus: premium AI Visibility Workbook mockup ── */}
-              <WorkbookMockup />
-
-            </div>
-
-            <div className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
-              {detailChips.map(({ icon: Icon, label, value }) => (
-                <div
-                  key={label}
-                  className="rounded-xl border border-border bg-card/70 px-4 py-5 text-center backdrop-blur-sm transition-colors duration-300 hover:border-primary/50"
-                >
-                  <Icon className="mx-auto mb-2 h-5 w-5 text-primary" />
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-primary">
-                    {label}
-                  </p>
-                  <p className="mt-1 text-sm text-foreground">{value}</p>
+                {/* progression: Learn → Receive */}
+                <div className="flex justify-center" aria-hidden="true">
+                  <ChevronDown className="h-5 w-5 text-primary/40" />
                 </div>
-              ))}
+
+                {/* Bonus: AI Visibility Action Workbook */}
+                <WorkbookMockup />
+
+                {/* progression: Receive → Attend */}
+                <div className="flex justify-center" aria-hidden="true">
+                  <ChevronDown className="h-5 w-5 text-primary/40" />
+                </div>
+
+                {/* Workshop logistics — secondary to the workbook */}
+                <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+                  {detailChips.map(({ icon: Icon, label, value }) => (
+                    <div
+                      key={label}
+                      className="rounded-lg border border-border/50 bg-card/50 px-3 py-3 text-center backdrop-blur-sm transition-colors duration-300 hover:border-primary/40"
+                    >
+                      <Icon className="mx-auto mb-1.5 h-4 w-4 text-primary/80" />
+                      <p className="text-[10px] font-semibold uppercase tracking-wider text-primary/80">
+                        {label}
+                      </p>
+                      <p className="mt-0.5 text-xs text-foreground/80">{value}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>

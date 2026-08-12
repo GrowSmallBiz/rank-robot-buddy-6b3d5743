@@ -5,16 +5,16 @@ import { Sparkles } from "lucide-react";
  * Pure CSS/SVG so it stays crisp, themable and prerender-safe.
  */
 export const WorkbookMockup = () => (
-  <div className="mt-8 flex flex-col items-center">
+  <div className="flex flex-col items-center">
     <div className="group relative [perspective:1400px]">
       {/* Bonus badge */}
-      <span className="absolute -right-3 -top-3 z-20 inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-primary-foreground shadow-lg shadow-primary/40 md:-right-5 md:-top-4">
+      <span className="absolute -left-3 -top-3 z-20 inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-primary-foreground shadow-lg shadow-primary/40 md:-left-5 md:-top-4">
         <Sparkles className="h-3.5 w-3.5" />
-        Included FREE with Registration
+        Exclusive Workshop Resource
       </span>
 
       {/* Book */}
-      <div className="relative w-[17rem] transition-transform duration-500 ease-out [transform:rotateY(17deg)_rotateX(6deg)] group-hover:-translate-y-2 group-hover:[transform:rotateY(15deg)_rotateX(5deg)] md:w-[19rem]">
+      <div className="relative w-[15.5rem] transition-transform duration-500 ease-out [transform:rotateY(17deg)_rotateX(6deg)] group-hover:-translate-y-2 group-hover:[transform:rotateY(15deg)_rotateX(5deg)] md:w-[17rem]">
         {/* Page stack (thickness) */}
         <div className="absolute inset-y-2 -right-2 rounded-r-md bg-gradient-to-r from-foreground/70 to-foreground/25 [width:14px]" />
         <div className="absolute inset-y-3 -right-3 rounded-r-md bg-foreground/20 [width:14px]" />
@@ -59,13 +59,20 @@ export const WorkbookMockup = () => (
           {/* Cover content */}
           <div className="relative z-10 flex aspect-[3/4] flex-col justify-between p-6 md:p-7">
             <div>
-              <span className="inline-block rounded-full border border-primary/50 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.2em] text-primary">
-                Workshop Edition
+              {/* Workshop Exclusive ribbon */}
+              <span
+                className="inline-block bg-primary px-3 py-1 text-[9px] font-bold uppercase tracking-[0.18em] text-primary-foreground shadow"
+                style={{
+                  clipPath:
+                    "polygon(0 0, 100% 0, calc(100% - 7px) 50%, 100% 100%, 0 100%)",
+                }}
+              >
+                Workshop Exclusive
               </span>
-              <h3 className="mt-5 font-display text-[1.65rem] font-extrabold leading-[1.1] text-foreground md:text-3xl">
+              <h3 className="mt-5 font-display text-[1.5rem] font-extrabold leading-[1.1] text-foreground md:text-[1.75rem]">
                 AI Visibility
                 <br />
-                Workbook
+                Action Workbook
               </h3>
               <div className="mt-3 h-[3px] w-14 rounded-full bg-primary" />
               <p className="mt-3 text-[11px] font-medium leading-relaxed tracking-wide text-foreground/75 md:text-xs">
@@ -101,8 +108,7 @@ export const WorkbookMockup = () => (
     </div>
 
     <p className="mt-4 max-w-md text-center text-sm leading-relaxed text-muted-foreground md:text-base">
-      Leave with a practical workbook, checklists, and an action plan you can use long
-      after the workshop ends.
+      Provided to attendees who participate through the end of the live workshop.
     </p>
   </div>
 );
