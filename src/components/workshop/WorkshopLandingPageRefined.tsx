@@ -234,23 +234,15 @@ export const WorkshopLandingPageRefined = ({
   const canonical = `${BASE_URL}${path}`;
 
   const detailChips = [
-    { icon: CalendarDays, label: "Date", value: "Date to be announced" },
-    { icon: Clock, label: "Time", value: "Time to be announced" },
-    { icon: Ticket, label: "Admission", value: "Free — seats limited" },
+    { icon: CalendarDays, label: "Date", value: "To be announced" },
+    { icon: Clock, label: "Time", value: "To be announced" },
     isOnline
-      ? { icon: Video, label: "Format", value: "Live online — 90 minutes" }
-      : { icon: Building2, label: "Format", value: "Live in person — 90 minutes" },
+      ? { icon: Video, label: "Format", value: "Live online • 90 minutes" }
+      : { icon: Building2, label: "Format", value: "Live in person • 90 minutes" },
+    { icon: Ticket, label: "Admission", value: "Free" },
+    { icon: Users, label: "Seats", value: "Limited" },
   ];
 
-  const infoBadges = [
-    { icon: Ticket, label: "FREE Workshop" },
-    { icon: Timer, label: "90 Minutes" },
-    isOnline
-      ? { icon: Video, label: "Live on Zoom" }
-      : { icon: Building2, label: "Live & In Person" },
-    { icon: Users, label: "Interactive Q&A" },
-    { icon: Gift, label: "AI Visibility Playbook Included" },
-  ];
 
   const eventSchema = {
     "@context": "https://schema.org",
