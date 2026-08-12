@@ -63,6 +63,8 @@ export const FAQSection = ({
   contactCTA,
   schemaId,
   suppressSchema = false,
+  defaultOpenFirst = false,
+  accordionClassName = "",
 }: FAQSectionProps) => {
   // Generate FAQ Schema for SEO
   const faqSchema = {
