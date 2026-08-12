@@ -52,6 +52,7 @@ export const routes: RouteRecord[] = [
       { path: "about", lazy: lazy(() => import("./pages/About")) },
       { path: "workshops", lazy: lazy(() => import("./pages/workshops/AiVisibilityWorkshopOnline")) },
       { path: "workshops/ai-visibility-in-person", lazy: lazy(() => import("./pages/workshops/AiVisibilityWorkshopInPerson")) },
+      { path: "workshops/in-person", Component: () => <Redirect to="/workshops/ai-visibility-in-person/" /> },
       { path: "services", lazy: lazy(() => import("./pages/Services")) },
       { path: "service", lazy: lazy(() => import("./pages/Services")) },
       { path: "services/paid-advertising", lazy: lazy(() => import("./pages/services/PaidMedia")) },
