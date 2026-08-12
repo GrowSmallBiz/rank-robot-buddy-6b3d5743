@@ -44,7 +44,7 @@ export const WorkbookMockup = () => (
           {/* Cover content */}
           <div className="relative z-10 flex aspect-[3/4] flex-col justify-between p-6 md:p-7">
             <div>
-              {/* Workshop Exclusive ribbon */}
+              {/* Attendee Exclusive ribbon */}
               <span
                 className="inline-block bg-primary px-3 py-1 text-[9px] font-bold uppercase tracking-[0.18em] text-primary-foreground shadow"
                 style={{
