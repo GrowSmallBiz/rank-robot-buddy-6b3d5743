@@ -447,36 +447,34 @@ export const WorkshopLandingPageRefined = ({
           <div className="container mx-auto px-4">
             <SectionHeader
               subtitle="The Shift in Customer Behavior"
-              title="The Way Customers Find Local Businesses Is Changing"
-              description="Customers are no longer relying solely on traditional search engines. They're increasingly asking AI platforms which business to hire, what service to choose, and who they can trust. Understanding this shift is the first step toward improving your AI visibility."
+              title="AI Is Changing How Customers Choose Local Businesses"
+              description="Customers are increasingly using AI to research, compare, and choose local businesses. These three trends explain why AI Visibility is becoming an important part of modern digital marketing."
             />
 
-            <div className="mx-auto grid max-w-6xl items-stretch gap-7 md:grid-cols-3">
-              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
-                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
-                  Customers Are Searching Differently
-                </h3>
-                <GraphicPlaceholder title="Customer Search Journey Graphic" />
-              </div>
-              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
-                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
-                  AI Search Is Growing Rapidly
-                </h3>
-                <GraphicPlaceholder title="AI Search Growth Statistics" />
-              </div>
-              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
-                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
-                  AI Gives One Answer Instead of Ten Blue Links
-                </h3>
-                <GraphicPlaceholder title="Traditional Search vs AI Recommendations" />
-              </div>
+            <div className="mx-auto grid max-w-[86rem] items-stretch gap-6 md:grid-cols-3">
+              {shiftCards.map((card) => (
+                <div
+                  key={card.title}
+                  className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-5"
+                >
+                  <h3 className="mb-4 font-display text-xl font-semibold text-foreground">
+                    {card.title}
+                  </h3>
+                  <img
+                    src={card.image}
+                    alt={card.alt}
+                    width={card.width}
+                    height={card.height}
+                    loading="lazy"
+                    className="w-full rounded-xl border border-border/60 bg-background/60 object-contain"
+                  />
+                  <p className="mt-4 text-sm text-muted-foreground">{card.caption}</p>
+                </div>
+              ))}
             </div>
-
-            <p className="mx-auto mt-10 max-w-3xl text-center text-sm italic text-muted-foreground">
-              Understanding how search is changing naturally leads to the next question...
-            </p>
           </div>
         </section>
+
 
 
         {/* ── Credibility strip ── */}
