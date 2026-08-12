@@ -915,8 +915,8 @@ export const WorkshopLandingPageRefined = ({
 
                 <p className="mt-6 text-center text-sm text-muted-foreground">
                   No sales pitch. Practical education. Live Q&amp;A. The AI Visibility
-                  Workshop Workbook will be provided exclusively to attendees who
-                  participate through the end of the live workshop.
+                  Workshop Playbook will be provided exclusively to attendees who
+                  stay through the end of the live workshop.
                 </p>
                 <p className="mt-3 text-center text-sm text-muted-foreground">
                   No commitment. No pressure. Just a straight explanation of how AI search
