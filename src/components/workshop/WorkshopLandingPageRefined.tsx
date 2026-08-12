@@ -22,6 +22,7 @@ import {
   Wrench,
   Store,
   Users,
+  Image as ImageIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
@@ -157,14 +158,29 @@ const faqs = [
       "Yes. There is no cost to attend and no purchase required. It is an educational session about how AI search works and what you can do about it.",
   },
   {
-    question: "Is this a sales pitch in disguise?",
+    question: "Who should attend?",
     answer:
-      "No. The session is built to teach. You will leave able to check your own AI visibility and fix the most common gaps yourself. If you later want help implementing it, GrowSmallBiz does that work — but nothing in the workshop depends on hiring anyone.",
+      "Local service business owners, DIY marketers, and in-house SEOs who own the outcome of their own marketing and want to understand how AI platforms decide which businesses to recommend.",
   },
   {
     question: "Do I need any technical or SEO background?",
     answer:
       "No. Everything is explained in plain language. If you can edit your website and log in to your Google Business Profile, you can act on everything covered.",
+  },
+  {
+    question: "Will the session be recorded?",
+    answer:
+      "The live walkthrough and Q&A are best experienced live, and the takeaway playbook is only sent to people who attend through to the end.",
+  },
+  {
+    question: "Do I get anything to take away?",
+    answer:
+      "Yes. Everyone who stays to the end receives the AI Visibility Playbook — a digital, step-by-step guide covering the same checks and fixes we walk through together, so you can repeat them on your own schedule.",
+  },
+  {
+    question: "Is this a sales pitch in disguise?",
+    answer:
+      "No. The session is built to teach. You will leave able to check your own AI visibility and fix the most common gaps yourself. If you later want help implementing it, GrowSmallBiz does that work — but nothing in the workshop depends on hiring anyone.",
   },
   {
     question: "What is AI visibility, in one sentence?",
@@ -180,16 +196,6 @@ const faqs = [
     question: "Which AI platforms are covered?",
     answer:
       "Google AI Overviews, Google Gemini, ChatGPT, Perplexity, Claude, and Grok, plus the local map results that AI answers frequently draw from.",
-  },
-  {
-    question: "Do I get anything to take away?",
-    answer:
-      "Yes. Everyone who stays to the end receives the AI Visibility Playbook — a digital, step-by-step guide covering the same checks and fixes we walk through together, so you can repeat them on your own schedule.",
-  },
-  {
-    question: "Will the session be recorded?",
-    answer:
-      "The live walkthrough and Q&A are best experienced live, and the takeaway playbook is only sent to people who attend through to the end.",
   },
 ];
 
@@ -209,6 +215,25 @@ const StoryStep = ({ step, label }: { step: string; label: string }) => (
     <span className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
       {label}
     </span>
+  </div>
+);
+
+/** Subtle connective sentence between major sections. */
+const SectionTransition = ({ text }: { text: string }) => (
+  <p className="mx-auto mb-8 max-w-3xl text-center text-sm italic text-muted-foreground">
+    {text}
+  </p>
+);
+
+/** Temporary placeholder marking where a custom graphic will be inserted later. */
+const GraphicPlaceholder = ({ title }: { title: string }) => (
+  <div className="mt-auto flex min-h-[180px] flex-col items-center justify-center rounded-xl border border-dashed border-border/80 bg-background/40 p-6 text-center">
+    <ImageIcon className="mb-3 h-7 w-7 text-muted-foreground/60" aria-hidden="true" />
+    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground/80">
+      Graphic Placeholder
+    </p>
+    <p className="mt-2 text-sm font-medium text-foreground/80">{title}</p>
+    <p className="mt-1 text-xs text-muted-foreground">Graphic will be inserted here.</p>
   </div>
 );
 
@@ -418,30 +443,39 @@ export const WorkshopLandingPageRefined = ({
           </div>
         </section>
 
-        {/* ── What you'll learn (moved out of the hero) ── */}
-        <section id="what-youll-learn" className="py-14 md:py-24">
+        {/* ── The way customers find local businesses is changing ── */}
+        <section className="py-14 md:py-24">
           <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-4xl rounded-2xl border border-primary/30 bg-card/70 p-8 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-10">
-              <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-foreground">
-                <ListChecks className="h-6 w-6 text-primary" />
-                What You'll Learn
-              </h2>
-              <ul className="mt-8 grid gap-5 md:grid-cols-2">
-                {[
-                  "What AI visibility is and why it now matters for local service businesses",
-                  "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
-                  "How to audit your current visibility across all six major AI platforms",
-                  "The content and signals that make AI platforms cite and recommend you",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                    <span className="text-base leading-relaxed text-foreground/90">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+            <SectionHeader
+              subtitle="The Shift in Customer Behavior"
+              title="The Way Customers Find Local Businesses Is Changing"
+              description="Customers are no longer relying solely on traditional search engines. They're increasingly asking AI platforms which business to hire, what service to choose, and who they can trust. Understanding this shift is the first step toward improving your AI visibility."
+            />
+
+            <div className="mx-auto grid max-w-6xl items-stretch gap-7 md:grid-cols-3">
+              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
+                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
+                  Customers Are Searching Differently
+                </h3>
+                <GraphicPlaceholder title="Customer Search Journey Graphic" />
+              </div>
+              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
+                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
+                  AI Search Is Growing Rapidly
+                </h3>
+                <GraphicPlaceholder title="AI Search Growth Statistics" />
+              </div>
+              <div className="flex h-full flex-col rounded-2xl border border-border bg-card/60 p-8">
+                <h3 className="mb-5 font-display text-xl font-semibold text-foreground">
+                  AI Gives One Answer Instead of Ten Blue Links
+                </h3>
+                <GraphicPlaceholder title="Traditional Search vs AI Recommendations" />
+              </div>
             </div>
+
+            <p className="mx-auto mt-10 max-w-3xl text-center text-sm italic text-muted-foreground">
+              Understanding how search is changing naturally leads to the next question...
+            </p>
           </div>
         </section>
 
@@ -484,6 +518,7 @@ export const WorkshopLandingPageRefined = ({
         {/* ── What is AI visibility ── */}
         <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
+            <SectionTransition text="Understanding the shift in customer behavior naturally leads to the next question." />
             <StoryStep step="1" label="Customers Are Searching Differently" />
             <SectionHeader
               subtitle="The New Front Door"
@@ -544,6 +579,7 @@ export const WorkshopLandingPageRefined = ({
         {/* ── Old vs new ── */}
         <section className="py-14 md:py-28">
           <div className="container mx-auto px-4">
+            <SectionTransition text="To understand AI recommendations, it's important to understand how AI search differs from traditional search." />
             <StoryStep step="2" label="AI Gives One Answer, Not Ten Links" />
             <SectionHeader
               subtitle="The Shift"
@@ -586,6 +622,7 @@ export const WorkshopLandingPageRefined = ({
         {/* ── Six platforms ── */}
         <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
+            <SectionTransition text="Customers don't rely on just one AI platform." />
             <StoryStep step="3" label="Why AI Recommendations Matter" />
             <SectionHeader
               subtitle="Six Front Doors"
@@ -614,8 +651,35 @@ export const WorkshopLandingPageRefined = ({
           </div>
         </section>
 
-        {/* ── What you'll learn ── */}
-        <section id="what-you-learn" className="py-14 md:py-28">
+        {/* ── What you'll learn (summary card) ── */}
+        <section id="what-youll-learn" className="py-14 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-4xl rounded-2xl border border-primary/30 bg-card/70 p-8 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-10">
+              <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-foreground">
+                <ListChecks className="h-6 w-6 text-primary" />
+                What You'll Learn
+              </h2>
+              <ul className="mt-8 grid gap-5 md:grid-cols-2">
+                {[
+                  "What AI visibility is and why it now matters for local service businesses",
+                  "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
+                  "How to audit your current visibility across all six major AI platforms",
+                  "The content and signals that make AI platforms cite and recommend you",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                    <span className="text-base leading-relaxed text-foreground/90">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Agenda ── */}
+        <section id="what-you-learn" className="pb-14 md:pb-28">
           <div className="container mx-auto px-4">
             <StoryStep step="4" label="How AI Chooses Businesses" />
             <SectionHeader
@@ -643,69 +707,7 @@ export const WorkshopLandingPageRefined = ({
           </div>
         </section>
 
-        {/* ── Takeaway playbook ── */}
-        <section className="bg-background-alt py-14 md:py-28">
-          <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-5xl">
-              <div className="relative overflow-hidden rounded-3xl border-2 border-primary bg-gradient-to-br from-primary/15 via-card/90 to-[hsl(188_78%_41%_/_0.12)] p-10 shadow-2xl shadow-primary/20 md:p-14">
-                <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-primary/25 blur-3xl" />
-                <div className="relative z-10 flex flex-col items-center gap-10 md:flex-row">
-                  <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-primary shadow-lg shadow-primary/40">
-                    <Download className="h-16 w-16 text-primary-foreground" />
-                  </div>
-                  <div className="text-center md:text-left">
-                    <p className="section-subtitle">Stay to the End</p>
-                    <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-                      Take Home the AI Visibility Playbook
-                    </h2>
-                    <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-                      Every attendee who stays through to the end of the session receives
-                      the AI Visibility Playbook in digital format — the same step-by-step
-                      checks and fixes we walk through together, written out so you can
-                      work through them on your own schedule. It is free, and it is yours
-                      to keep.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ── Who this is for ── */}
-        <section className="py-14 md:py-28">
-          <div className="container mx-auto px-4">
-            <StoryStep step="5" label="What You'll Learn" />
-            <SectionHeader
-              subtitle="Who Should Attend"
-              title="Built for Local Businesses and DIY Marketers"
-              description="If you own the outcome of your own marketing, this session is for you."
-            />
-
-            <div className="mx-auto grid max-w-5xl items-stretch gap-10 md:grid-cols-2">
-              {forWho.map(({ icon: Icon, title: t, points }) => (
-                <GlowCard key={t} className="flex h-full flex-col p-9 md:p-10">
-                  <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-primary/15">
-                    <Icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="mb-5 font-display text-2xl font-bold text-foreground">
-                    {t}
-                  </h3>
-                  <ul className="space-y-4">
-                    {points.map((p) => (
-                      <li key={p} className="flex gap-3">
-                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                        <span className="leading-relaxed text-muted-foreground">{p}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </GlowCard>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Host ── */}
+        {/* ── Host / speaker (moved up for credibility before the ask) ── */}
         <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl">
@@ -753,6 +755,94 @@ export const WorkshopLandingPageRefined = ({
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Workbook ── */}
+        <section className="py-14 md:py-28">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-5xl">
+              <div className="relative overflow-hidden rounded-3xl border-2 border-primary bg-gradient-to-br from-primary/15 via-card/90 to-[hsl(188_78%_41%_/_0.12)] p-10 shadow-2xl shadow-primary/20 md:p-14">
+                <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-primary/25 blur-3xl" />
+                <div className="relative z-10 flex flex-col items-center gap-10 md:flex-row">
+                  <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-2xl bg-primary shadow-lg shadow-primary/40">
+                    <Download className="h-16 w-16 text-primary-foreground" />
+                  </div>
+                  <div className="text-center md:text-left">
+                    <p className="section-subtitle">Stay to the End</p>
+                    <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+                      AI Visibility Workshop Workbook
+                    </h2>
+                    <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+                      Complete this workbook during the live workshop and leave with a
+                      personalized AI Visibility Action Plan you can immediately put into
+                      practice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Outcomes ── */}
+        <section className="bg-background-alt py-14 md:py-28">
+          <div className="container mx-auto px-4">
+            <SectionHeader
+              subtitle="Outcomes"
+              title="After This Workshop You'll Be Able To"
+              description="Not an agenda — the practical outcomes you walk away with."
+            />
+            <div className="mx-auto grid max-w-5xl items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                "Evaluate your business's AI visibility across today's leading AI platforms",
+                "Understand why AI recommends some businesses more consistently than others",
+                "Identify your biggest AI visibility gaps",
+                "Prioritize practical improvements that can increase AI recommendations",
+                "Build a personalized AI Visibility Action Plan",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex h-full items-start gap-3 rounded-2xl border border-border bg-card/60 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50"
+                >
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                  <span className="leading-relaxed text-foreground/90">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Who this is for ── */}
+        <section className="py-14 md:py-28">
+          <div className="container mx-auto px-4">
+            <StoryStep step="5" label="Who Should Attend" />
+            <SectionHeader
+              subtitle="Who Should Attend"
+              title="Built for Local Businesses and DIY Marketers"
+              description="If you own the outcome of your own marketing, this session is for you."
+            />
+
+            <div className="mx-auto grid max-w-5xl items-stretch gap-10 md:grid-cols-2">
+              {forWho.map(({ icon: Icon, title: t, points }) => (
+                <GlowCard key={t} className="flex h-full flex-col p-9 md:p-10">
+                  <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-primary/15">
+                    <Icon className="h-8 w-8 text-primary" />
+                  </div>
+                  <h3 className="mb-5 font-display text-2xl font-bold text-foreground">
+                    {t}
+                  </h3>
+                  <ul className="space-y-4">
+                    {points.map((p) => (
+                      <li key={p} className="flex gap-3">
+                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                        <span className="leading-relaxed text-muted-foreground">{p}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </GlowCard>
+              ))}
             </div>
           </div>
         </section>
@@ -810,6 +900,11 @@ export const WorkshopLandingPageRefined = ({
               </div>
 
               <p className="mt-6 text-center text-sm text-muted-foreground">
+                No sales pitch. Practical education. Live Q&amp;A. The AI Visibility
+                Workshop Workbook will be provided exclusively to attendees who
+                participate through the end of the live workshop.
+              </p>
+              <p className="mt-3 text-center text-sm text-muted-foreground">
                 No commitment. No pressure. Just a straight explanation of how AI search
                 works and what to do about it.
               </p>
@@ -841,14 +936,35 @@ export const WorkshopLandingPageRefined = ({
           <p className="mt-4 text-sm text-muted-foreground">
             AI visibility education for local businesses in the Greater Bay Area.
           </p>
-          <p className="mt-2 text-sm">
+          <nav
+            aria-label="Footer"
+            className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm"
+          >
+            <Link
+              to="/privacy-policy/"
+              className="text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms-of-service/"
+              className="text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+            >
+              Terms of Service
+            </Link>
+            <a
+              href="mailto:contact@growsmallbiz.io"
+              className="text-primary underline-offset-4 hover:underline"
+            >
+              contact@growsmallbiz.io
+            </a>
             <a
               href="tel:+19258863724"
               className="text-primary underline-offset-4 hover:underline"
             >
               +1 (925) 886-3724
             </a>
-          </p>
+          </nav>
           <p className="mt-6 text-xs text-muted-foreground">
             © {new Date().getFullYear()} GrowSmallBiz Digital Marketing. All rights
             reserved.
