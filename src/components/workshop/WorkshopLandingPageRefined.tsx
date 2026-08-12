@@ -17,13 +17,10 @@ import {
   Video,
   Building2,
   CheckCircle2,
-  ChevronDown,
   XCircle,
   Download,
   Wrench,
   Store,
-  Gift,
-  Timer,
   Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
