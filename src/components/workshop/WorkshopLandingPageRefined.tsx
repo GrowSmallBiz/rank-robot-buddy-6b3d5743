@@ -309,7 +309,7 @@ export const WorkshopLandingPageRefined = ({
 
       <main id="main-content">
         {/* ── Hero ── */}
-        <section className="relative overflow-hidden pt-28 pb-12 md:pt-36 md:pb-16">
+        <section className="relative overflow-hidden pt-16 pb-10 md:pt-36 md:pb-16">
           <div className="absolute inset-0">
             <img
               src={visibilityDashboard}
@@ -337,7 +337,7 @@ export const WorkshopLandingPageRefined = ({
           <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-[hsl(188_78%_41%_/_0.15)] blur-3xl" />
 
           <div className="container relative z-10 mx-auto px-4">
-            <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-24">
+            <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-24">
               <div className="animate-fade-up text-center lg:max-w-[36rem] lg:text-left">
                 <p className="mb-4 text-sm leading-relaxed text-muted-foreground/80">
                   Customers are increasingly asking AI which local business to hire.
@@ -347,21 +347,21 @@ export const WorkshopLandingPageRefined = ({
                   Free 90-Minute AI Visibility Workshop {isOnline ? "· Online" : "· In Person"}
                 </span>
 
-                <h1 className="mt-8 font-display text-4xl font-bold leading-[1.08] md:text-5xl xl:text-6xl">
+                <h1 className="mt-6 md:mt-8 font-display text-4xl font-bold leading-[1.08] md:text-5xl xl:text-6xl">
                   <span className="block text-foreground">Is Your Business Ready</span>
                   <span className="block bg-gradient-to-r from-primary via-primary to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
                     to Be Recommended by AI?
                   </span>
                 </h1>
 
-                <p className="mx-auto mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground lg:mx-0">
+                <p className="mx-auto mt-6 md:mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground lg:mx-0">
                   Learn how to accurately measure your AI visibility, understand why AI
                   recommends some businesses over others, and leave with a practical action
                   plan you can implement immediately.
                 </p>
 
 
-                <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+                <div className="mt-8 md:mt-12 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
                   <Button
                     variant="hero"
                     size="xl"
@@ -378,7 +378,7 @@ export const WorkshopLandingPageRefined = ({
                   </Button>
                 </div>
 
-                <div className="mt-10 flex flex-wrap justify-center gap-2 lg:justify-start">
+                <div className="mt-8 md:mt-10 flex flex-wrap justify-center gap-2 lg:justify-start">
                   <span className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-card/50 px-4 py-2 text-xs font-medium text-muted-foreground backdrop-blur-sm">
                     <Bot className="h-4 w-4 text-primary/80" />
                     Supports all major AI platforms
@@ -419,7 +419,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── What you'll learn (moved out of the hero) ── */}
-        <section id="what-youll-learn" className="py-20 md:py-24">
+        <section id="what-youll-learn" className="py-14 md:py-24">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl rounded-2xl border border-primary/30 bg-card/70 p-8 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-10">
               <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-foreground">
@@ -482,7 +482,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── What is AI visibility ── */}
-        <section className="bg-background-alt py-24 md:py-28">
+        <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
             <StoryStep step="1" label="Customers Are Searching Differently" />
             <SectionHeader
@@ -492,7 +492,7 @@ export const WorkshopLandingPageRefined = ({
             />
 
             {/* Ask → Answer visual */}
-            <div className="mx-auto mb-16 mt-4 grid max-w-5xl items-stretch gap-5 md:grid-cols-[1fr_auto_1fr]">
+            <div className="mx-auto mb-10 md:mb-16 mt-4 grid max-w-5xl items-stretch gap-5 md:grid-cols-[1fr_auto_1fr]">
               <div className="flex flex-col justify-center rounded-2xl border border-border bg-card/70 p-8 md:p-10">
                 <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
                   They ask
@@ -542,7 +542,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── Old vs new ── */}
-        <section className="py-24 md:py-28">
+        <section className="py-14 md:py-28">
           <div className="container mx-auto px-4">
             <StoryStep step="2" label="AI Gives One Answer, Not Ten Links" />
             <SectionHeader
@@ -584,7 +584,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── Six platforms ── */}
-        <section className="bg-background-alt py-24 md:py-28">
+        <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
             <StoryStep step="3" label="Why AI Recommendations Matter" />
             <SectionHeader
@@ -607,7 +607,7 @@ export const WorkshopLandingPageRefined = ({
               ))}
             </div>
 
-            <p className="mx-auto mt-12 max-w-3xl text-center text-xl font-display font-semibold leading-relaxed text-foreground">
+            <p className="mx-auto mt-8 md:mt-12 max-w-3xl text-center text-xl font-display font-semibold leading-relaxed text-foreground">
               Six places. One question every day. The workshop is about making sure your
               business is the answer.
             </p>
@@ -615,7 +615,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── What you'll learn ── */}
-        <section id="what-you-learn" className="py-24 md:py-28">
+        <section id="what-you-learn" className="py-14 md:py-28">
           <div className="container mx-auto px-4">
             <StoryStep step="4" label="How AI Chooses Businesses" />
             <SectionHeader
@@ -644,7 +644,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── Takeaway playbook ── */}
-        <section className="bg-background-alt py-24 md:py-28">
+        <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-5xl">
               <div className="relative overflow-hidden rounded-3xl border-2 border-primary bg-gradient-to-br from-primary/15 via-card/90 to-[hsl(188_78%_41%_/_0.12)] p-10 shadow-2xl shadow-primary/20 md:p-14">
@@ -673,7 +673,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── Who this is for ── */}
-        <section className="py-24 md:py-28">
+        <section className="py-14 md:py-28">
           <div className="container mx-auto px-4">
             <StoryStep step="5" label="What You'll Learn" />
             <SectionHeader
@@ -706,7 +706,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── Host ── */}
-        <section className="bg-background-alt py-24 md:py-28">
+        <section className="bg-background-alt py-14 md:py-28">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl">
               <div className="rounded-3xl border-2 border-primary/50 bg-card/80 p-9 shadow-xl md:p-14">
@@ -758,7 +758,7 @@ export const WorkshopLandingPageRefined = ({
         </section>
 
         {/* ── Registration (GHL form goes here) ── */}
-        <section id="register" className="relative overflow-hidden py-24 md:py-28">
+        <section id="register" className="relative overflow-hidden py-14 md:py-28">
           <div className="pointer-events-none absolute left-1/2 top-1/2 h-[32rem] w-[32rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-3xl" />
           <div className="container relative z-10 mx-auto px-4">
             <StoryStep step="6" label="Register" />
@@ -828,7 +828,7 @@ export const WorkshopLandingPageRefined = ({
       </main>
 
       {/* ── Minimal footer ── */}
-      <footer className="border-t border-border bg-card py-12">
+      <footer className="border-t border-border bg-card py-10">
         <div className="container mx-auto px-4 text-center">
           <img
             src={growsmallbizLogo}
