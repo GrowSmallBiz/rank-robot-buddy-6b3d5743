@@ -374,6 +374,8 @@ export const WorkshopLandingPageRefined = ({
         <meta name="twitter:image" content={`${BASE_URL}/images/ai-visibility-workshop-og.jpg`} />
         <meta name="twitter:image:alt" content="Free AI Visibility Workshop — get named by ChatGPT, Gemini and Google AI" />
         <script type="application/ld+json">{JSON.stringify(eventSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Head>
 
       {/* ── Minimal, distraction-free header ── */}
