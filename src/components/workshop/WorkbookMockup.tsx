@@ -73,7 +73,7 @@ export const WorkbookMockup = () => (
               <h3 className="mt-5 font-display text-[1.5rem] font-extrabold leading-[1.1] text-foreground md:text-[1.75rem]">
                 AI Visibility
                 <br />
-                Workshop Workbook
+                Workshop Playbook
               </h3>
               <div className="mt-3 h-[3px] w-14 rounded-full bg-primary" />
               <p className="mt-3 text-[11px] font-medium leading-relaxed tracking-wide text-foreground/75 md:text-xs">
@@ -109,8 +109,8 @@ export const WorkbookMockup = () => (
     </div>
 
     <p className="mt-5 max-w-sm text-center text-sm leading-relaxed text-muted-foreground">
-      Complete this workbook during the session and leave with your personalized AI Visibility
-      Action Plan.
+      Work through this playbook live during the session and leave with your personalized AI
+      Visibility Action Plan — yours to keep when you stay through the end of the workshop.
     </p>
 
     <ul className="mt-4 space-y-1.5 text-left">
