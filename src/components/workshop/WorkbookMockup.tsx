@@ -1,4 +1,6 @@
 import { Check, Sparkles } from "lucide-react";
+import coverArt from "@/assets/citations-by-platform-cover.webp";
+
 
 /**
  * Premium 3D spiral-bound workbook mockup used as the hero bonus visual.
