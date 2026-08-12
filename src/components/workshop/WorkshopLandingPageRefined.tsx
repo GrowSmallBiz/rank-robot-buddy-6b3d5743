@@ -1,5 +1,7 @@
 import { Head } from "vite-react-ssg";
 import { Link } from "react-router-dom";
+import { WorkbookMockup } from "@/components/workshop/WorkbookMockup";
+
 import {
   Sparkles,
   Search,
