@@ -26,16 +26,19 @@ export const WorkbookMockup = () => (
         <div className="relative overflow-hidden rounded-md rounded-l-sm border border-primary/25 bg-[hsl(210_55%_10%)] shadow-2xl shadow-background/80 ring-1 ring-inset ring-foreground/5">
           {/* Cover art */}
           <div className="pointer-events-none absolute inset-0">
-            <img
-              src={coverArt}
-              alt="Citations by platform chart showing AI visibility share across ChatGPT, Google AI Mode, Perplexity, Gemini and Copilot"
-              width={1574}
-              height={456}
-              loading="lazy"
-              className="absolute inset-x-0 bottom-[16%] w-full opacity-70"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(210_55%_10%)] via-[hsl(210_55%_10%)]/55 to-[hsl(210_55%_10%)]" />
+            <div className="absolute inset-x-4 bottom-[18%] overflow-hidden rounded-md border border-foreground/10 bg-[hsl(210_55%_7%)] shadow-lg">
+              <img
+                src={coverArt}
+                alt="Citations by platform chart showing AI visibility share across ChatGPT, Google AI Mode, Perplexity, Gemini and Copilot"
+                width={1574}
+                height={456}
+                loading="lazy"
+                className="w-full"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(210_55%_10%)] via-transparent to-[hsl(210_55%_10%)]/85" />
           </div>
+
 
 
           {/* Cover content */}
