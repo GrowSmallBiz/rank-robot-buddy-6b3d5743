@@ -12,7 +12,7 @@ export const WorkbookMockup = () => (
       {/* Bonus badge */}
       <span className="absolute -left-3 -top-3 z-20 inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-primary-foreground shadow-lg shadow-primary/40 md:-left-5 md:-top-4">
         <Sparkles className="h-3.5 w-3.5" />
-        Attendee Exclusive
+        Workshop Bonus
       </span>
 
 
