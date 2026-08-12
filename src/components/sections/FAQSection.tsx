@@ -49,6 +49,10 @@ interface FAQSectionProps {
    * to prevent duplicate FAQPage schema on the same URL.
    */
   suppressSchema?: boolean;
+  /** Open the first FAQ item by default. */
+  defaultOpenFirst?: boolean;
+  /** Extra classes applied to the accordion wrapper (e.g. wider item spacing). */
+  accordionClassName?: string;
 }
 
 export const FAQSection = ({ 
