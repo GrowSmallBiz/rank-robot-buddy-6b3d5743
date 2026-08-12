@@ -12,7 +12,7 @@ export const WorkbookMockup = () => (
       {/* Bonus badge */}
       <span className="absolute -left-3 -top-3 z-20 inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-primary-foreground shadow-lg shadow-primary/40 md:-left-5 md:-top-4">
         <Sparkles className="h-3.5 w-3.5" />
-        Workshop Exclusive
+        Attendee Exclusive
       </span>
 
 
@@ -44,7 +44,7 @@ export const WorkbookMockup = () => (
           {/* Cover content */}
           <div className="relative z-10 flex aspect-[3/4] flex-col justify-between p-6 md:p-7">
             <div>
-              {/* Workshop Exclusive ribbon */}
+              {/* Attendee Exclusive ribbon */}
               <span
                 className="inline-block bg-primary px-3 py-1 text-[9px] font-bold uppercase tracking-[0.18em] text-primary-foreground shadow"
                 style={{
@@ -52,7 +52,7 @@ export const WorkbookMockup = () => (
                     "polygon(0 0, 100% 0, calc(100% - 7px) 50%, 100% 100%, 0 100%)",
                 }}
               >
-                Workshop Exclusive
+                Attendee Exclusive
               </span>
               <h3 className="mt-5 font-display text-[1.5rem] font-extrabold leading-[1.1] text-foreground md:text-[1.75rem]">
                 AI Visibility
