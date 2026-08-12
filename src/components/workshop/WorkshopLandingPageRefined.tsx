@@ -398,10 +398,7 @@ export const WorkshopLandingPageRefined = ({
                 </span>
 
                 <h1 className="mt-6 md:mt-8 font-display text-4xl font-bold leading-[1.08] md:text-5xl xl:text-6xl">
-                  <span className="block text-foreground">Is Your Business Ready</span>
-                  <span className="block bg-gradient-to-r from-primary via-primary to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
-                    to Be Recommended by AI?
-                  </span>
+                  <span className="block bg-gradient-heading bg-clip-text text-transparent">Is Your Business Ready to Be Recommended by AI?</span>
                 </h1>
 
                 <p className="mx-auto mt-6 md:mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground lg:mx-0">
