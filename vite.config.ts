@@ -24,6 +24,10 @@ while ((m = reRedirect.exec(appSrc)) !== null) {
 }
 lazyPaths.add("/");
 
+// Paths handled by a hard 301 in public/_redirects. They must NOT be
+// pre-rendered — a static asset would shadow the redirect rule.
+const PRERENDER_EXCLUDE = new Set(["/workshops/in-person", "/workshops/in-person/"]);
+
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
@@ -63,6 +67,7 @@ export default defineConfig(({ mode }) => ({
         // vite-react-ssg may pass paths with or without a leading slash.
         // Normalize to leading-slash form before checking against lazyPaths.
         const p = raw.startsWith("/") ? raw : "/" + raw;
+        if (PRERENDER_EXCLUDE.has(p)) return false;
         return lazyPaths.has(p) || lazyPaths.has(p + "/");
       }),
   },
