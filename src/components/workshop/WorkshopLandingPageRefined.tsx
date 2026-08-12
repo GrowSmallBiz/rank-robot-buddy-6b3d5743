@@ -17,13 +17,10 @@ import {
   Video,
   Building2,
   CheckCircle2,
-  ChevronDown,
   XCircle,
   Download,
   Wrench,
   Store,
-  Gift,
-  Timer,
   Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -234,23 +231,15 @@ export const WorkshopLandingPageRefined = ({
   const canonical = `${BASE_URL}${path}`;
 
   const detailChips = [
-    { icon: CalendarDays, label: "Date", value: "Date to be announced" },
-    { icon: Clock, label: "Time", value: "Time to be announced" },
-    { icon: Ticket, label: "Admission", value: "Free — seats limited" },
+    { icon: CalendarDays, label: "Date", value: "To be announced" },
+    { icon: Clock, label: "Time", value: "To be announced" },
     isOnline
-      ? { icon: Video, label: "Format", value: "Live online — 90 minutes" }
-      : { icon: Building2, label: "Format", value: "Live in person — 90 minutes" },
+      ? { icon: Video, label: "Format", value: "Live online • 90 minutes" }
+      : { icon: Building2, label: "Format", value: "Live in person • 90 minutes" },
+    { icon: Ticket, label: "Admission", value: "Free" },
+    { icon: Users, label: "Seats", value: "Limited" },
   ];
 
-  const infoBadges = [
-    { icon: Ticket, label: "FREE Workshop" },
-    { icon: Timer, label: "90 Minutes" },
-    isOnline
-      ? { icon: Video, label: "Live on Zoom" }
-      : { icon: Building2, label: "Live & In Person" },
-    { icon: Users, label: "Interactive Q&A" },
-    { icon: Gift, label: "AI Visibility Playbook Included" },
-  ];
 
   const eventSchema = {
     "@context": "https://schema.org",
@@ -320,7 +309,7 @@ export const WorkshopLandingPageRefined = ({
 
       <main id="main-content">
         {/* ── Hero ── */}
-        <section className="relative overflow-hidden py-24 md:py-32">
+        <section className="relative overflow-hidden py-28 md:py-36">
           <div className="absolute inset-0">
             <img
               src={visibilityDashboard}
@@ -329,7 +318,7 @@ export const WorkshopLandingPageRefined = ({
               width={1920}
               height={1179}
               fetchPriority="high"
-              className="h-full w-full object-cover opacity-60"
+              className="h-full w-full object-cover opacity-25 blur-[3px]"
             />
             <img
               src={citationsDashboard}
@@ -338,51 +327,38 @@ export const WorkshopLandingPageRefined = ({
               width={1920}
               height={1096}
               loading="lazy"
-              className="absolute right-0 top-1/2 hidden h-3/5 w-2/5 -translate-y-1/2 object-cover opacity-50 mix-blend-screen lg:block"
+              className="absolute right-0 top-1/2 hidden h-3/5 w-2/5 -translate-y-1/2 object-cover opacity-20 blur-[3px] mix-blend-screen lg:block"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/50 to-background/80" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/70 to-background/90" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
           </div>
           <div className="pointer-events-none absolute inset-0 hero-glow" />
           <div className="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
           <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-[hsl(188_78%_41%_/_0.15)] blur-3xl" />
 
           <div className="container relative z-10 mx-auto px-4">
-            <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+            <div className="grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-24">
               <div className="animate-fade-up text-center lg:max-w-[36rem] lg:text-left">
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
                   <Sparkles className="h-4 w-4" />
                   Free 90-Minute AI Visibility Workshop {isOnline ? "· Online" : "· In Person"}
                 </span>
 
-                <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] md:text-5xl xl:text-6xl">
+                <h1 className="mt-8 font-display text-4xl font-bold leading-[1.08] md:text-5xl xl:text-6xl">
                   <span className="block text-foreground">Is Your Business Ready</span>
                   <span className="block bg-gradient-to-r from-primary via-primary to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
                     to Be Recommended by AI?
                   </span>
                 </h1>
 
-                <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
+                <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground lg:mx-0">
                   Learn how to accurately measure your business's AI visibility, understand
                   why AI recommends some businesses over others, and leave with a practical
                   action plan to improve your chances of being recommended consistently
                   across today's leading AI platforms.
                 </p>
 
-                {/* Workshop information badges */}
-                <ul className="mt-8 flex flex-wrap justify-center gap-2.5 lg:justify-start">
-                  {infoBadges.map(({ icon: Icon, label }) => (
-                    <li
-                      key={label}
-                      className="inline-flex items-center gap-2 rounded-xl border border-border/70 bg-card/60 px-3.5 py-2.5 text-sm font-medium text-foreground shadow-sm backdrop-blur-md transition-colors duration-300 hover:border-primary/50"
-                    >
-                      <Icon className="h-4 w-4 shrink-0 text-primary" />
-                      {label}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+                <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
                   <Button
                     variant="hero"
                     size="xl"
@@ -395,87 +371,82 @@ export const WorkshopLandingPageRefined = ({
                     </a>
                   </Button>
                   <Button variant="heroOutline" size="xl" asChild>
-                    <a href="#what-you-learn">See What's Covered</a>
+                    <a href="#what-youll-learn">See What's Covered</a>
                   </Button>
                 </div>
 
-                <p className="mt-4 text-sm text-muted-foreground">
-                  Limited to a small group to allow live demonstrations and audience Q&amp;A.
-                </p>
-
-                <div className="mt-7 flex flex-wrap justify-center gap-2 lg:justify-start">
-                  {[
-                    "ChatGPT · Gemini · Perplexity",
-                    "Claude · Grok · Google AI Overviews",
-                    "Built for local service businesses",
-                  ].map((chip) => (
-                    <span
-                      key={chip}
-                      className="rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm text-primary"
-                    >
-                      {chip}
-                    </span>
-                  ))}
+                <div className="mt-12 flex flex-wrap justify-center gap-2 lg:justify-start">
+                  {["ChatGPT", "Gemini", "Claude", "Google AI", "Perplexity", "Grok"].map(
+                    (chip) => (
+                      <span
+                        key={chip}
+                        className="rounded-full border border-border/70 bg-card/50 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm"
+                      >
+                        {chip}
+                      </span>
+                    ),
+                  )}
                 </div>
+
+                <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-primary/90">
+                  Built for Local Service Businesses
+                </p>
               </div>
 
-              {/* RIGHT COLUMN — vertical progression: Learn → Receive → Attend */}
-              <div className="relative mx-auto flex w-full max-w-xl animate-fade-up flex-col gap-10 lg:mx-0 lg:max-w-[34rem] lg:justify-self-end lg:gap-12">
-                {/* What You'll Learn */}
-                <div className="rounded-2xl border border-primary/30 bg-card/80 p-7 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-9">
-                  <h2 className="flex items-center gap-2 font-display text-xl font-bold text-foreground">
-                    <ListChecks className="h-5 w-5 text-primary" />
-                    What You'll Learn
-                  </h2>
-                  <ul className="mt-6 space-y-4">
-                    {[
-                      "What AI visibility is and why it now matters for local service businesses",
-                      "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
-                      "How to audit your current visibility across all six major AI platforms",
-                      "The content and signals that make AI platforms cite and recommend you",
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                        <span className="text-base leading-relaxed text-foreground/90">
-                          {item}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* progression: Learn → Receive */}
-                <div className="flex justify-center" aria-hidden="true">
-                  <ChevronDown className="h-5 w-5 text-primary/40" />
-                </div>
-
-                {/* Bonus: AI Visibility Action Workbook */}
+              {/* RIGHT COLUMN — single hero visual: the workbook */}
+              <div className="relative mx-auto w-full max-w-md animate-fade-up lg:mx-0 lg:justify-self-end">
                 <WorkbookMockup />
-
-                {/* progression: Receive → Attend */}
-                <div className="flex justify-center" aria-hidden="true">
-                  <ChevronDown className="h-5 w-5 text-primary/40" />
-                </div>
-
-                {/* Workshop logistics — secondary to the workbook */}
-                <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
-                  {detailChips.map(({ icon: Icon, label, value }) => (
-                    <div
-                      key={label}
-                      className="rounded-lg border border-border/50 bg-card/50 px-3 py-3 text-center backdrop-blur-sm transition-colors duration-300 hover:border-primary/40"
-                    >
-                      <Icon className="mx-auto mb-1.5 h-4 w-4 text-primary/80" />
-                      <p className="text-[10px] font-semibold uppercase tracking-wider text-primary/80">
-                        {label}
-                      </p>
-                      <p className="mt-0.5 text-xs text-foreground/80">{value}</p>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
         </section>
+
+        {/* ── Workshop information strip ── */}
+        <section className="border-y border-border/60 bg-card/30">
+          <div className="container mx-auto px-4">
+            <dl className="grid grid-cols-2 divide-border/50 sm:grid-cols-3 lg:grid-cols-5 lg:divide-x">
+              {detailChips.map(({ icon: Icon, label, value }) => (
+                <div key={label} className="flex items-center gap-3 px-4 py-4">
+                  <Icon className="h-4 w-4 shrink-0 text-primary/80" />
+                  <div>
+                    <dt className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                      {label}
+                    </dt>
+                    <dd className="text-sm font-medium text-foreground/90">{value}</dd>
+                  </div>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
+        {/* ── What you'll learn (moved out of the hero) ── */}
+        <section id="what-youll-learn" className="py-20 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-4xl rounded-2xl border border-primary/30 bg-card/70 p-8 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-10">
+              <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-foreground">
+                <ListChecks className="h-6 w-6 text-primary" />
+                What You'll Learn
+              </h2>
+              <ul className="mt-8 grid gap-5 md:grid-cols-2">
+                {[
+                  "What AI visibility is and why it now matters for local service businesses",
+                  "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
+                  "How to audit your current visibility across all six major AI platforms",
+                  "The content and signals that make AI platforms cite and recommend you",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                    <span className="text-base leading-relaxed text-foreground/90">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
 
         {/* ── Credibility strip ── */}
         <section className="border-y border-border/60 bg-card/40 py-8">
