@@ -22,6 +22,7 @@ import {
   Wrench,
   Store,
   Users,
+  Image as ImageIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GlowCard } from "@/components/ui/glow-card";
