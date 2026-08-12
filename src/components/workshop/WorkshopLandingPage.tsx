@@ -301,21 +301,21 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
           <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-[hsl(188_78%_41%_/_0.15)] blur-3xl" />
 
           <div className="container relative z-10 mx-auto px-4">
-            <div className="grid items-center gap-12 lg:grid-cols-2">
-              <div className="animate-fade-up text-center lg:text-left">
+            <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+              <div className="animate-fade-up text-center lg:max-w-[36rem] lg:text-left">
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
                   <Sparkles className="h-4 w-4" />
                   Free 90-Minute AI Visibility Workshop {isOnline ? "· Online" : "· In Person"}
                 </span>
 
-                <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] md:text-6xl">
+                <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] md:text-5xl xl:text-6xl">
                   <span className="block text-foreground">Is Your Business Ready</span>
                   <span className="block bg-gradient-to-r from-primary via-primary to-[hsl(188_78%_48%)] bg-clip-text text-transparent">
                     to Be Recommended by AI?
                   </span>
                 </h1>
 
-                <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl lg:mx-0">
+                <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground md:text-lg lg:mx-0">
                   Learn how to evaluate your business's true AI visibility, understand what
                   influences AI recommendations, and implement practical strategies to increase
                   your chances of being recommended consistently.
@@ -350,7 +350,7 @@ export const WorkshopLandingPage = ({ format, path }: WorkshopLandingPageProps) 
               </div>
 
               {/* What you'll learn — summary bullets */}
-              <div className="relative mx-auto w-full max-w-xl animate-fade-up lg:max-w-none">
+              <div className="relative mx-auto w-full max-w-xl animate-fade-up lg:mx-0 lg:max-w-[34rem] lg:justify-self-end">
                 <div className="rounded-2xl border border-primary/30 bg-card/80 p-6 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-8">
                   <h2 className="flex items-center gap-2 font-display text-xl font-bold text-foreground">
                     <ListChecks className="h-5 w-5 text-primary" />
