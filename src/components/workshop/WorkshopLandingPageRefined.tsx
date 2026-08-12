@@ -421,7 +421,7 @@ export const WorkshopLandingPageRefined = ({
                     </a>
                   </Button>
                   <Button variant="heroOutline" size="xl" asChild>
-                    <a href="#what-youll-learn">See What's Covered</a>
+                    <a href="#workshop-takeaways">See What's Covered</a>
                   </Button>
                 </div>
 
@@ -679,25 +679,41 @@ export const WorkshopLandingPageRefined = ({
           </div>
         </section>
 
-        {/* ── What you'll learn (summary card) ── */}
-        <section id="what-youll-learn" className="py-14 md:py-24">
+        {/* ── Workshop Takeaways (summary card) ── */}
+        <section id="workshop-takeaways" className="py-14 md:py-24">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl rounded-2xl border border-primary/30 bg-card/70 p-8 shadow-2xl shadow-primary/10 backdrop-blur-md md:p-10">
               <h2 className="flex items-center gap-2 font-display text-2xl font-bold text-foreground">
                 <ListChecks className="h-6 w-6 text-primary" />
-                What You'll Learn
+                Workshop Takeaways
               </h2>
+              <p className="mt-3 text-base font-medium text-muted-foreground">
+                By the end of the workshop, you'll understand:
+              </p>
               <ul className="mt-8 grid gap-5 md:grid-cols-2">
                 {[
-                  "What AI visibility is and why it now matters for local service businesses",
-                  "How ChatGPT, Gemini, Perplexity, Claude, Grok & Google AI Overviews choose which businesses to recommend",
-                  "How to audit your current visibility across all six major AI platforms",
-                  "The content and signals that make AI platforms cite and recommend you",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
+                  {
+                    t: "Understand AI Visibility",
+                    d: "What AI Visibility is, why it matters, and how AI is changing the way customers discover and choose local businesses.",
+                  },
+                  {
+                    t: "Understand How AI Chooses Businesses",
+                    d: "How leading AI platforms evaluate information and why some businesses are recommended more consistently than others.",
+                  },
+                  {
+                    t: "Know How to Assess Your AI Visibility",
+                    d: "How to determine whether your business is showing up in relevant AI recommendations and what those results can—and cannot—tell you.",
+                  },
+                  {
+                    t: "Know What to Do Next",
+                    d: "The key signals that influence AI recommendations and the logical steps you can take to improve your AI Visibility over time.",
+                  },
+                ].map(({ t, d }) => (
+                  <li key={t} className="flex items-start gap-3">
                     <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                     <span className="text-base leading-relaxed text-foreground/90">
-                      {item}
+                      <span className="font-semibold text-foreground">{t}.</span>{" "}
+                      {d}
                     </span>
                   </li>
                 ))}
