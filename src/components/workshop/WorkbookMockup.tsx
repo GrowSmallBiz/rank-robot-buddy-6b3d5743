@@ -56,13 +56,13 @@ export const WorkbookMockup = () => (
               Attendee Exclusive
             </span>
 
-            {/* Title */}
-            <h3 className="mt-7 font-display leading-[1.05] text-foreground">
-              <span className="block text-[1.75rem] font-extrabold tracking-tight md:text-[2rem]">
+            {/* Title — two-level hierarchy */}
+            <h3 className="mt-7 font-display leading-[1.0] text-foreground">
+              <span className="block text-[1.9rem] font-extrabold tracking-tight md:text-[2.15rem]">
                 AI Visibility
               </span>
-              <span className="mt-1.5 block text-[0.95rem] font-semibold tracking-[0.06em] text-foreground/70 md:text-base">
-                Workshop Playbook
+              <span className="mt-1 block text-[1.25rem] font-semibold tracking-[0.04em] text-foreground/65 md:text-[1.4rem]">
+                Playbook
               </span>
             </h3>
             <div className="mt-4 h-[3px] w-14 rounded-full bg-primary" />
